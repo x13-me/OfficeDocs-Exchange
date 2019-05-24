@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 When you add a server to a database availability group (DAG), it works with the other servers in the DAG to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, it's no longer automatically protected from failures.
 
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md).
@@ -39,27 +38,24 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to manage database availability group membership
 
-1.  In the EAC, go to **Servers** \> **Database Availability Groups**.
+1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2.  Select the DAG you want to configure, and then click ![Manage DAG members](images/Dd351278.d567ae56-d6cd-4edb-ab67-ad8f7c58f337(EXCHG.150).gif "Manage DAG members").
-    
+2. Select the DAG you want to configure, and then click ![Manage DAG members](images/Dd351278.d567ae56-d6cd-4edb-ab67-ad8f7c58f337(EXCHG.150).gif "Manage DAG members").
+
       - To add one or more Mailbox servers to the DAG, click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), select the servers from the list, click **Add**, and then click **OK**.
-    
+
       - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
 
-3.  Click **Save** to save the changes.
+3. Click **Save** to save the changes.
 
-4.  When the task has completed successfully, click **Close**.
+4. When the task has completed successfully, click **Close**.
 
 ## Use the Shell to manage database availability group membership
 
@@ -88,7 +84,7 @@ To verify that you've successfully managed DAG membership, do one of the followi
   - In the EAC, navigate to **Servers** \> **Database Availability Groups**. The current DAG membership is displayed in the **Member Servers** column.
 
   - In the Shell, run the following command to display DAG membership information.
-    
+
     ```powershell
     Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
     ```
@@ -98,4 +94,3 @@ To verify that you've successfully managed DAG membership, do one of the followi
 [Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd298049\(v=exchg.150\))
 
 [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd297956\(v=exchg.150\))
-

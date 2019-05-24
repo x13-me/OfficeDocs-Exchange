@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The check(s) on this page will help identify some of the most common configuration challenges. You can use the automatic check(s) below to validate your configuration and help you update your environment.
 
 If you already have an Office 365 user account, select **Sign In**. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of username@youroffice365login.domain and your password.
@@ -32,7 +31,6 @@ The Azure Active Directory Sign-in Assistant comes in two versions: [32 bit](htt
 The Azure Active Directory Module for Windows PowerShell comes in two versions: [32 bit](https://go.microsoft.com/fwlink/?linkid=286258) and [64 bit](https://go.microsoft.com/fwlink/?linkid=286259).
 
 ## SSO Checks
-
 
 <table>
 <colgroup>
@@ -68,4 +66,3 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 </tr>
 </tbody>
 </table>
-

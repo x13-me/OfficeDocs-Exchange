@@ -11,7 +11,7 @@ title: Change the branding of Clutter notifications
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
-ms.audience: Admin
+audience: Admin
 ms.custom:
 - Adm_O365
 - Adm_O365_Setup

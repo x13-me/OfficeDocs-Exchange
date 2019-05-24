@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2010, the Mailbox server role hosted both mailbox and public folder databases and also provided email message storage. Now, in Exchange Server 2013, the Mailbox server role also includes the Client Access protocols, Transport service, mailbox databases, and Unified Messaging components.
 
 In Exchange 2013, the Mailbox server role interacts directly with Active Directory, the Client Access server, and Microsoft Outlook clients in the following process:
@@ -46,9 +45,9 @@ For more details, see the "Exchange 2013 architecture" section in [What's new in
 The following list briefly describes some new and some improved features in the Mailbox role for Exchange 2013:
 
   - Evolution of the Exchange 2010 database availability group (DAG):
-    
+
       - Transaction log code has been refactored for fast failover with deep checkpoint on passive database copies.
-    
+
       - To support enhanced site resiliency, servers can be in different locations.
 
   - Exchange 2013 now hosts some Client Access components, the Transport components, and the Unified Messaging components.
@@ -82,4 +81,3 @@ By default, HTTP, Microsoft Exchange ActiveSync, POP3, and IMAP4 communication b
 [Recipients](recipients-exchange-2013-help.md)
 
 [Collaboration](collaboration-exchange-2013-help.md)
-

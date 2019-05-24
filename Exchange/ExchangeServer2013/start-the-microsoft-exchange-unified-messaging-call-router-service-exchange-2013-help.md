@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the Services snap-in in Microsoft Management Console (MMC) or cmd.exe at a command prompt to start the Microsoft Exchange Unified Messaging Call Router service on a Client Access server. By default, the Microsoft Exchange Unified Messaging Call Router service is started after a Client Access server is installed. However, there may be times when you have to restart or stop the Microsoft Exchange Unified Messaging Call Router service manually, for example, when you've taken the Client Access server offline and have to bring it back online.
 
 When the Microsoft Exchange Unified Messaging Call Router service is started on a Client Access server, the Client Access server is available to answer and process incoming UM calls.
@@ -35,31 +34,27 @@ For additional management tasks related to Client Access servers, see [UM servic
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the MMC Services snap-in to start the Microsoft Exchange Unified Messaging Call Router service
 
-1.  Click **Start**, and then click **Control Panel**.
+1. Click **Start**, and then click **Control Panel**.
 
-2.  In Control Panel, double-click **Administrative Tools**.
+2. In Control Panel, double-click **Administrative Tools**.
 
-3.  In **Administrative Tools**, double-click **Services**.
+3. In **Administrative Tools**, double-click **Services**.
 
-4.  In the **Services** details pane, right-click **Microsoft Exchange Unified Messaging Call Router**, and then click **Start**.
+4. In the **Services** details pane, right-click **Microsoft Exchange Unified Messaging Call Router**, and then click **Start**.
 
 ## Use a command prompt to start the Microsoft Exchange Unified Messaging Call Router service
 
-1.  Click **Start**, and then click **Run**.
+1. Click **Start**, and then click **Run**.
 
-2.  In the **Open** box, type the following command, and then press Enter.
-    
+2. In the **Open** box, type the following command, and then press Enter.
+
     ```powershell
     net start MSExchangeUMCR
     ```
-

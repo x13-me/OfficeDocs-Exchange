@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Add an address list to or remove an address list from an offline address book in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

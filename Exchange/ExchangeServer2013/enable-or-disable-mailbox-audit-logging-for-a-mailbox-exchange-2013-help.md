@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 With mailbox audit logging, you can track logons to a mailbox as well as what actions are taken while the user is logged on. When you enable mailbox audit logging for a mailbox, some actions performed by administrators and delegates are logged by default. None of the actions performed by the mailbox owner are logged. To learn more about mailbox audit logging, see [Mailbox audit logging](mailbox-audit-logging-exchange-2013-help.md).
-
 
 > [!WARNING]
 > Auditing of mailbox owner actions can generate a large number of mailbox audit log entries and is therefore disabled by default. We recommend that you only enable auditing of specific owner actions needed to meet business or security requirements.
-
-
 
 For additional tasks related to mailbox audit logging, see [Mailbox audit logging procedures](mailbox-audit-logging-procedures-exchange-2013-help.md).
 
@@ -40,20 +36,17 @@ For additional tasks related to mailbox audit logging, see [Mailbox audit loggin
   - An administrator who has been assigned the Full Access permission to a user's mailbox is considered a delegate user.
 
   - Mailboxes are considered to be accessed by an administrator only in the following scenarios:
-    
+
       - In-Place eDiscovery is used to search a mailbox.
-    
+
       - The **New-MailboxExportRequest** cmdlet is used to export a mailbox.
-    
+
       - Microsoft Exchange Server MAPI Editor is used to access the mailbox.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -108,4 +101,3 @@ This example retrieves Ben Smith's mailbox settings and pipes the specified audi
 ```powershell
     Get-Mailbox "Ben Smith" | Format-List *audit*
 ```
-

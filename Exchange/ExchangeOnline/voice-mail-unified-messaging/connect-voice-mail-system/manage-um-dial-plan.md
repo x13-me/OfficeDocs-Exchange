@@ -11,7 +11,7 @@ ms.date: 4/26/2018
 ms.reviewer: 
 title: Manage a UM dial plan
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

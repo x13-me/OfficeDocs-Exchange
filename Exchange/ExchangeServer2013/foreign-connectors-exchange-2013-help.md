@@ -18,16 +18,12 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 A Foreign connector delivers messages to a server or foreign system that does not use SMTP as its primary transport mechanism. An example of this can be a fax-gateway server. A Foreign connector uses a local or shared Drop directory to send outbound messages, by means of a file transfer, to the foreign system. Foreign connectors are created in the Transport service of a Microsoft Exchange Server 2013 Mailbox server.
 
 Foreign gateway servers can send messages into the Exchange 2013 organization by using the Pickup or Replay directories that exist in the Transport service of a Mailbox server. Correctly formatted email message files that you copy to each directory are submitted for delivery to an Exchange mailbox.
 
-
 > [!TIP]
 > In most cases where you must deliver outbound messages to a non-SMTP system, we recommend Delivery Agent connectors, because they allow for queue management of messages, messages do not have to be written to the file system, and other benefits. The <A href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Delivery agents and Delivery Agent connectors</A> topic provides more details.
-
-
 
 ## For more information
 
@@ -38,4 +34,3 @@ Foreign gateway servers can send messages into the Exchange 2013 organization by
 [New-ForeignConnector](https://technet.microsoft.com/en-us/library/aa996310\(v=exchg.150\))
 
 [Set-ForeignConnector](https://technet.microsoft.com/en-us/library/bb123789\(v=exchg.150\))
-

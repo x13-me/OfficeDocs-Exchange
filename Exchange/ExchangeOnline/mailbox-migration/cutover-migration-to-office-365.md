@@ -17,7 +17,7 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -178,11 +178,11 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes:
 
-  - **Email address**: Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox.
+  - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox.
 
-  - **Account with privileges**: Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
+  - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 
-  - **Password of account with privileges**: Type the *password*  for the account with privileges that is the administrator account.
+  - **Password of account with privileges**: Type the *password* for the account with privileges that is the administrator account.
 
 7. Choose **Next** and do one of the following:
 
@@ -192,9 +192,9 @@ A migration endpoint contains the settings and credentials needed to connect the
 
   - If the test connection to the source server isn't successful, provide the following information:
 
-  - **Exchange server**: Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com.
+  - **Exchange server**: Type the *fully qualified domain name* (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com.
 
-  - **RPC proxy server**: Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
+  - **RPC proxy server**: Type the *FQDN* for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
 
 8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 
@@ -220,7 +220,7 @@ In a cutover migration, on-premises mailboxes are migrated to Office 365 in a si
 
     ![New migration batch with confirmed endpoint.](media/1c7ff17e-6754-4c98-8b29-5a479239df13.JPG)
 
-5. On the **Move configuration** page, type the *name*  (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch.
+5. On the **Move configuration** page, type the *name* (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch.
 
 6. On the **Start the batch** page, choose one of the following:
 

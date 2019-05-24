@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,4 +29,3 @@ Exchange 2007 setup requires that the domain controller specified in the setup c
 To resolve this issue, run setup again, specifying the statically mapped domain controller for the **/DomainController: \<***FQDN of the* *statically mapped domain controller***\>** parameter.
 
 For more information about DSAccess and directory services detection, see Microsoft Knowledge Base article 250570, "Directory Service Server Detection and DSAccess Usage" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)).
-

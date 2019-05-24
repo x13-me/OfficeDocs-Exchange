@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
 
 Organizations must also create policies to manage email lifecycle, retain messages for the length of time based on business, legal, and regulatory requirements, preserve email records for litigation and investigation purposes, and be prepared to search and provide the required email records to fulfill eDiscovery requests.
@@ -28,7 +27,6 @@ Leakage of sensitive information such as intellectual property, trade secrets, b
 ## Messaging policy and compliance in Exchange 2013
 
 The following table provides an overview of the messaging policy and compliance features in Microsoft Exchange Server 2013 and includes links to topics that will help you learn about and manage these features.
-
 
 <table>
 <colgroup>
@@ -108,4 +106,3 @@ The following table provides an overview of the messaging policy and compliance 
 </tr>
 </tbody>
 </table>
-

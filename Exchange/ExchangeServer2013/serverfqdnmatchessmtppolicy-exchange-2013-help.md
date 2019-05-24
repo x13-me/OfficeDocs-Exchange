@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -33,29 +32,25 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 
 **To rename the local computer**
 
-1.  Open **System** in **Control Panel**.
+1. Open **System** in **Control Panel**.
 
-2.  On the **Computer Name** tab, click **Change**.
+2. On the **Computer Name** tab, click **Change**.
 
-3.  Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a user name and user password to rename the computer in the domain.
+3. Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a user name and user password to rename the computer in the domain.
 
-4.  Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
-
+4. Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
 
 > [!IMPORTANT]
 > If the computer that you want to rename is a domain controller, see "Rename a domain controller" (<A href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</A>).
 
-
-
 **To modify the recipient policy SMTP address**
 
-1.  Start Exchange System Manager.
+1. Start Exchange System Manager.
 
-2.  Click **Organization**, click **Recipients**, and then click **Recipient Policies**.
+2. Click **Organization**, click **Recipients**, and then click **Recipient Policies**.
 
-3.  Double-click the policy that you want to change.
+3. Double-click the policy that you want to change.
 
-4.  Click the **E-Mail Addresses** tab, and then change the appropriate SMTP address
+4. Click the **E-Mail Addresses** tab, and then change the appropriate SMTP address
 
 For more information about Recipient Policy naming issues, see Microsoft Knowledge Base article 288175, "XCON: Recipient Policy Cannot Match the FQDN of Any Server in the Organization, 5.4.8 NDRs" ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)).
-

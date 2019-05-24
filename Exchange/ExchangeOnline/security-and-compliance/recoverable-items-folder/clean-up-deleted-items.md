@@ -11,7 +11,7 @@ title: Clean up or delete items from the Recoverable Items folder in Exchange On
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

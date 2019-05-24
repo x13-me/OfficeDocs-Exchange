@@ -18,13 +18,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, the five server roles from Exchange 2010 have been replaced by two main types of servers: Mailbox servers and Client Access servers. The Client Access server is a thin, stateless server that serves as a proxy for client connections to the Mailbox server. The Mailbox server handles the processing for all client connections to the active mailbox database.
 
 ## Mailbox and Client Access server documentation
 
 The following table contains links to topics that will help you learn about and manage Mailbox and Client Access servers in Exchange 2013.
-
 
 <table>
 <colgroup>
@@ -56,4 +54,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-

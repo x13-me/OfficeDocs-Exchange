@@ -9,7 +9,7 @@ ms.date: 6/24/2018
 ms.reviewer: 
 title: UM hunt groups
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

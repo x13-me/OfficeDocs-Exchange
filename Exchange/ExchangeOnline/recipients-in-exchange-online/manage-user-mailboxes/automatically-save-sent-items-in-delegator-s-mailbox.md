@@ -13,7 +13,7 @@ ms.collection:
 search.appverid:
 - BCS160
 - MET150
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

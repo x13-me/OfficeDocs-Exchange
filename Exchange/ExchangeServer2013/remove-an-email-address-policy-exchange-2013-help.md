@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 By default, Exchange contains an email address policy that specifies the recipient's alias as the local part of the email address and uses the default accepted domain. The local part of an email address is the name that appears before the "at" sign (@).This email address policy applies to all users in the organization. You can't remove this email address policy.
 
 For additional management tasks related to e-mail address policies, see [Email address policy procedures](email-address-policy-procedures-exchange-2013-help.md).
@@ -37,21 +36,18 @@ For additional management tasks related to e-mail address policies, see [Email a
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!WARNING]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to remove an email address policy
 
-1.  Navigate to **Mail flow** \> **Email address policies**.
+1. Navigate to **Mail flow** \> **Email address policies**.
 
-2.  In the list view, select the email address policy that you want to delete and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list view, select the email address policy that you want to delete and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
-3.  In the warning, click **Yes** to remove the policy.
+3. In the warning, click **Yes** to remove the policy.
 
 ## Use the Shell to remove an email address policy
 
@@ -64,4 +60,3 @@ Remove-EmailAddressPolicy -Identity "South East Offices"
 Type **Y** to confirm that you want to remove the policy, and then press ENTER.
 
 For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://technet.microsoft.com/en-us/library/bb124504\(v=exchg.150\)).
-

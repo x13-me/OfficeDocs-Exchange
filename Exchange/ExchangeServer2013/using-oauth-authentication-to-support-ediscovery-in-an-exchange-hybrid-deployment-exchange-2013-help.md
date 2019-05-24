@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 To successfully perform cross-premises eDiscovery searches in an Exchange 2013 hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication supports the following eDiscovery scenarios in an Exchange hybrid deployment:
 
@@ -36,7 +35,6 @@ OAuth authentication typically involves three parties: a single authorization se
 ## eDiscovery scenarios in a hybrid deployment
 
 The follow table identifies the eDiscovery scenarios in an Exchange hybrid deployment that require OAuth authentication.
-
 
 <table>
 <colgroup>
@@ -69,7 +67,6 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 > [!NOTE]
 > As previously discussed, OAuth authentication would be required if the on-premises mailboxes were configured with cloud-based archive mailboxes.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -78,7 +75,6 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </tr>
 </tbody>
 </table>
-
 
 ## Configuring OAuth authentication to support eDiscovery
 
@@ -93,4 +89,3 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use eDi
   - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
   - You can configure an Exchange hybrid deployment using the Hybrid Configuration Wizard in Exchange 2013. For a customized, step-by-step hybrid deployment configuration checklist, see the [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
-

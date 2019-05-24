@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer: 
 title: Information Rights Management in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

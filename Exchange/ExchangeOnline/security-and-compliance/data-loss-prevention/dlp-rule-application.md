@@ -11,7 +11,7 @@ title: How DLP rules are applied to evaluate messages
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

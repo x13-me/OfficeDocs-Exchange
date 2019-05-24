@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 We recommend you use the Edge Subscription process to establish mail flow between your Exchange organization and an Edge Transport server. However, certain situations may prevent you from subscribing the Edge Transport server to your Exchange organization using the Edge Subscription process. To manually establish mail flow between your Exchange organization and an Edge Transport server, you must create and configure the Send connectors and Receive connectors on the Edge Transport server and on the Mailbox servers in your Exchange organization.
 
 ## Before you begin
@@ -34,12 +33,9 @@ We recommend you use the Edge Subscription process to establish mail flow betwee
   - An Edge Transport server is typically *multihomed*. This means that the Edge Transport server has network adapters connected to multiple network segments. Each of these network adapters has a unique IP configuration. The network adapter that's connected to the external, or public, network segment should be configured to use a public Domain Name System (DNS) server for name resolution. This enables the server to resolve SMTP domain names to MX resource records and route mail to the Internet. The network adapter that's connected to the internal, or private, network segment should be configured to use a DNS server in the perimeter network or should have a Hosts file available.
 
   - You need to create a user account in Active Directory and add the account to the universal security group on the Exchange Server computer. This account is used by the Send connector on the Edge Transport server to authenticate to the destination Mailbox server in the Exchange organization.
-    
 
     > [!IMPORTANT]
     > This account is granted the permissions associated with the computers running Exchange Server. Make sure you safeguard the account credentials to prevent misuse of the account. You can configure the account to allow logon to specific computers only.
-
-
 
 ## Edge Transport Server Procedures
 
@@ -57,23 +53,20 @@ By default, a single Receive connector is created during the installation of the
 
 The following sections walk you through all the configuration steps required to prepare your Edge Transport server to communicate with your Exchange organization.
 
-
 > [!NOTE]
 > You can only use the Shell to perform these procedures on Edge Transport servers.
-
-
 
 ## Step 1: Create a Send connector configured to send messages to the Internet
 
 This Send connector requires the following configuration:
 
-  - **Name**   To Internet (or any descriptive name)
+  - **Name**: To Internet (or any descriptive name)
 
-  - **Usage type**   Internet
+  - **Usage type**: Internet
 
-  - **Address spaces**   "\*" (all domains)
+  - **Address spaces**: "\*" (all domains)
 
-  - **Network settings**   Use DNS MX records to route mail automatically. Depending on your network configuration, you can also route mail through a smart host. The smart host then routes mail to the Internet.
+  - **Network settings**: Use DNS MX records to route mail automatically. Depending on your network configuration, you can also route mail through a smart host. The smart host then routes mail to the Internet.
 
 To create a Send connector that's configured to send messages to the Internet, run the following command.
 
@@ -87,27 +80,24 @@ For detailed syntax and parameter information, see [New-SendConnector](https://t
 
 Use the **New-SendConnector** cmdlet to create a Send connector.
 
-
 > [!NOTE]
 > Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the user name and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
 
-
-
 This Send connector requires the following configuration:
 
-  - **Name**   To Internal Org (or any descriptive name)
+  - **Name**: To Internal Org (or any descriptive name)
 
-  - **Usage type**   Internal
+  - **Usage type**: Internal
 
-  - **Address spaces**   All accepted domains for the Exchange organization. For example, \*.contoso.com.
+  - **Address spaces**: All accepted domains for the Exchange organization. For example, \*.contoso.com.
 
   - DNS routing disabled (smart host routing enabled)
 
-  - **Smart hosts**   FQDN of one or more Mailbox servers as smart hosts. For example, mbxserver01.contoso.com and mbxserver02.contoso.com.
+  - **Smart hosts**: FQDN of one or more Mailbox servers as smart hosts. For example, mbxserver01.contoso.com and mbxserver02.contoso.com.
 
-  - **Smart host authentication methods**   Basic authentication over TLS
+  - **Smart host authentication methods**: Basic authentication over TLS
 
-  - **Smart host authentication credentials**   Credentials for the user account in the internal domain. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+  - **Smart host authentication credentials**: Credentials for the user account in the internal domain. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send messages to the Exchange organization, run the following commands.
 
@@ -138,15 +128,15 @@ For detailed syntax and parameter information, see [Set-ReceiveConnector](https:
 
 This Receive connector requires the following configuration:
 
-  - **Name**   From Internal Org (or any descriptive name)
+  - **Name**: From Internal Org (or any descriptive name)
 
-  - **Usage type**   Internal
+  - **Usage type**: Internal
 
-  - **Local network bindings**   Internal network-facing network adapter. For example, 10.1.1.2 and the standard SMTP TCP port value of 25.
+  - **Local network bindings**: Internal network-facing network adapter. For example, 10.1.1.2 and the standard SMTP TCP port value of 25.
 
-  - **Remote network settings**   IP address of one or more Mailbox servers in the Exchange organization. For example, 192.168.5.10 and 192.168.5.20.
+  - **Remote network settings**: IP address of one or more Mailbox servers in the Exchange organization. For example, 192.168.5.10 and 192.168.5.20.
 
-  - **Authentication methods**   TLS, Basic authentication, Basic authentication over TLS, and Exchange Server authentication.
+  - **Authentication methods**: TLS, Basic authentication, Basic authentication over TLS, and Exchange Server authentication.
 
 To create a Receive connector configured to only accept messages from the Exchange organization, run the following command.
 
@@ -175,21 +165,21 @@ By default, two Receive connectors are created during the installation of the Ma
 
 This Send connector requires the following configuration:
 
-  - **Name**   To Edge (or any descriptive name)
+  - **Name**: To Edge (or any descriptive name)
 
-  - **Usage type**   Internal
+  - **Usage type**: Internal
 
-  - **Address spaces**   "\*" (all domains)
+  - **Address spaces**: "\*" (all domains)
 
   - DNS routing disabled (smart host routing enabled)
 
-  - **Smart hosts**   IP address or FQDN of the Edge Transport server. For example, edge01.contoso.net.
+  - **Smart hosts**: IP address or FQDN of the Edge Transport server. For example, edge01.contoso.net.
 
-  - **Source Mailbox servers**   FQDN of one or more Mailbox servers. For example, mbxserver01.contoso.com and mbxserver02.contoso.com.
+  - **Source Mailbox servers**: FQDN of one or more Mailbox servers. For example, mbxserver01.contoso.com and mbxserver02.contoso.com.
 
-  - **Smart host authentication method**   Basic authentication over TLS.
+  - **Smart host authentication method**: Basic authentication over TLS.
 
-  - **Smart host authentication credentials**   Credentials for the user account on the Edge Transport server. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+  - **Smart host authentication credentials**: Credentials for the user account on the Edge Transport server. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send outgoing messages to the Edge Transport server, run the following commands.
 

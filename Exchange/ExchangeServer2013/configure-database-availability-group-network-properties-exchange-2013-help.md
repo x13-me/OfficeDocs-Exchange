@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Each database availability group (DAG) network has several properties that you can configure, including the name of the DAG network, a description field for the DAG network, a list of subnets that are used by the DAG network, and whether the DAG network is enabled for replication.
 
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md).
@@ -33,25 +32,22 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to configure database availability group network properties
 
-1.  In the EAC, go to **Servers** \> **Database Availability Groups**.
+1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2.  Select the DAG you want to configure, and in the Details pane, under the DAG network you want to configure, choose:
-    
-      - **Disable Replication** or **Enable Replication**   Configures the replication settings for the DAG network.
-    
-      - **Remove**   Removes a DAG network. Before you can remove a DAG network, you must first remove all associated subnets from the DAG network.
-    
-      - **View details**   Configures DAG network properties, such as the name, description, and associated subnets for the DAG network. You can also view the network interfaces associated with those subnets, and enable or disable replication for the DAG network.
+2. Select the DAG you want to configure, and in the Details pane, under the DAG network you want to configure, choose:
+
+      - **Disable Replication** or **Enable Replication**: Configures the replication settings for the DAG network.
+
+      - **Remove**: Removes a DAG network. Before you can remove a DAG network, you must first remove all associated subnets from the DAG network.
+
+      - **View details**: Configures DAG network properties, such as the name, description, and associated subnets for the DAG network. You can also view the network interfaces associated with those subnets, and enable or disable replication for the DAG network.
 
 ## Use the Shell to configure database availability group network properties
 
@@ -66,7 +62,7 @@ Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagN
 To verify that you've successfully configured the DAG network, do the following:
 
   - In the Shell, run the following command to display DAG network configuration settings and verify the DAG network was configured successfully.
-    
+
     ```powershell
     Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
     ```
@@ -80,4 +76,3 @@ To verify that you've successfully configured the DAG network, do the following:
 [New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd335225\(v=exchg.150\))
 
 [Remove-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd298131\(v=exchg.150\))
-

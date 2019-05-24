@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Transport agents let you install custom software that is created by Microsoft, by third-party vendors, or by your organization, on an Exchange server. This software can then process email messages that pass through the transport pipeline. In Microsoft Exchange Server 2013, the transport pipeline is made of the following processes:
 
   - The Front End Transport service on Client Access servers
@@ -193,7 +192,6 @@ The following tables list the SMTP events that provide access to messages in the
 </tbody>
 </table>
 
-
 \*\* These events can occur at any time after **OnConnectEvent** but before **OnDisconnectEvent**.
 
 ### Categorizer events
@@ -235,16 +233,15 @@ The following tables list the SMTP events that provide access to messages in the
 </tbody>
 </table>
 
-
 Return to top
 
 ## Priority of transport agents
 
 There are two factors that determine the order that transport agents act on messages in the transport pipeline:
 
-1.  The SMTP event where the transport agent is registered, and when that SMTP event encounters messages.
+1. The SMTP event where the transport agent is registered, and when that SMTP event encounters messages.
 
-2.  The priority value that's assigned to the transport agent if there are multiple agents registered to the same SMTP event. The highest priority is 1. A higher integer value indicates a lower agent priority.
+2. The priority value that's assigned to the transport agent if there are multiple agents registered to the same SMTP event. The highest priority is 1. A higher integer value indicates a lower agent priority.
 
 For example, suppose you configured the following transport agents:
 
@@ -335,7 +332,6 @@ The more interesting built-in transport agents on Mailbox servers are described 
 </tbody>
 </table>
 
-
 On Edge Transport servers, most of the built-in transport agents are visible and manageable by the transport agent management cmdlets or by other feature-specific cmdlets.
 
 The more interesting built-in transport agents on Edge Transport servers are described in the following table. Note that this table doesn't include invisible or unmanageable transport agents.
@@ -421,7 +417,6 @@ The more interesting built-in transport agents on Edge Transport servers are des
 </tbody>
 </table>
 
-
 \* You can also install and configure these anti-spam agents on Mailbox servers. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
 Return to top
@@ -430,9 +425,8 @@ Return to top
 
 To help you troubleshoot issues with transport agents, you can use the following features:
 
-  - **Get-TransportPipeline**   This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md).
+  - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md).
 
-  - **Pipeline Tracing**   Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](pipeline-tracing-exchange-2013-help.md).
+  - **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](pipeline-tracing-exchange-2013-help.md).
 
 Return to top
-

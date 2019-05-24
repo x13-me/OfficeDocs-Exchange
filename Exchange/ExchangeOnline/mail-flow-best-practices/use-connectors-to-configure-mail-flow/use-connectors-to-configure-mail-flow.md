@@ -11,7 +11,7 @@ ms.date:
 ms.reviewer: 
 title: Configure mail flow using connectors in Office 365
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

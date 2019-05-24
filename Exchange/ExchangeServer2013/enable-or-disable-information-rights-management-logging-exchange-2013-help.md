@@ -18,20 +18,19 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Exchange Server 2013, you can use Information Rights Management (IRM) logs to monitor and troubleshoot IRM operations. IRM logging is enabled by default.
 
 IRM logs use the following common set of parameters:
 
-  - *IrmLogEnabled*   Enables or disables IRM logging. Default: `$true`.
+  - *IrmLogEnabled*: Enables or disables IRM logging. Default: `$true`.
 
-  - *IrmLogMaxAge*   Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
+  - *IrmLogMaxAge*: Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
 
-  - *IrmLogMaxDirectorySize*   Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
+  - *IrmLogMaxDirectorySize*: Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
 
-  - *IrmLogMaxFileSize*   Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
+  - *IrmLogMaxFileSize*: Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
 
-  - *IrmLogPath*   Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
+  - *IrmLogPath*: Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -45,11 +44,8 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to enable IRM logging on a server
 
@@ -80,4 +76,3 @@ This example retrieves all IRM logging properties on the server EXCH01.
 ```powershell
     Get-TransportService -Identity EXCH01 | Format-List IRMLog*
 ```
-

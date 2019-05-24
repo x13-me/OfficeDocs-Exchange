@@ -11,7 +11,7 @@ title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -109,9 +109,9 @@ In on-premises deployments, Exchange 2016, SharePoint Server 2016, and Skype for
 
 |**Server**|**AuthMetadataUrl**|
 |:-----|:-----|
-| Exchange 2016  <br/> | `https://<serverfqdn>/autodiscover/metadata/json/1` <br/> |
-|SharePoint Server 2016  <br/> | `https://<serverfqdn>/_layouts/15/metadata/json/1` <br/> |
-|Skype for Business  <br/> | `https://<serverfqdn>/metadata/json/1` <br/> |
+| Exchange 2016| `https://<serverfqdn>/autodiscover/metadata/json/1`|
+|SharePoint Server 2016| `https://<serverfqdn>/_layouts/15/metadata/json/1`|
+|Skype for Business| `https://<serverfqdn>/metadata/json/1`|
 
 In hybrid deployments, you need to configure OAuth authorization protocol between your on-premises Exchange 2016 and Exchange Online organizations. Hybrid deployments by default continue to use the federation trust process.
 

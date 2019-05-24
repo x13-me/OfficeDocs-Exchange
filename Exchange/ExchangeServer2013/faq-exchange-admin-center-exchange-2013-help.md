@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic provides you with a list of frequently asked questions for the new Exchange admin center (EAC) in Microsoft Exchange Server 2013. Have other questions about EAC not answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).
 
 ## Was the EAC developed solely for Exchange Online?
@@ -51,11 +50,11 @@ No. We fully support the EAC experience.
 
 No. You can't use the Exchange 2010 EMC to manage Exchange 2013 objects and servers. While customers upgrade to Exchange 2013, we encourage them to use the EAC to:
 
-1.  Manage Exchange 2013 mailboxes, servers, and corresponding services.
+1. Manage Exchange 2013 mailboxes, servers, and corresponding services.
 
-2.  View and update Exchange 2010 mailboxes and properties.
+2. View and update Exchange 2010 mailboxes and properties.
 
-3.  View and update Exchange 2007 mailboxes and properties.
+3. View and update Exchange 2007 mailboxes and properties.
 
 We encourage customers to use Exchange 2010 EMC to create and manage Exchange 2010 mailboxes.
 
@@ -84,7 +83,6 @@ To limit Internet versus intranet access, Exchange provides partitioning at the 
 In Exchange 2007 and Exchange 2010, the EMC contained the Toolbox, which provided access to various tools for managing your Exchange organization. The Exchange 2013 Toolbox is considerably pared down from the previous versions. The Details Templates Editor, Remote Connectivity Analyzer, and the Queue Viewer are still available in the Exchange 2013 Toolbox. The remaining tools were either repurposed or moved into the EAC.
 
 The following table lists the changes to the Exchange 2013 Toolbox:
-
 
 <table>
 <colgroup>
@@ -128,4 +126,3 @@ The following table lists the changes to the Exchange 2013 Toolbox:
 </tr>
 </tbody>
 </table>
-

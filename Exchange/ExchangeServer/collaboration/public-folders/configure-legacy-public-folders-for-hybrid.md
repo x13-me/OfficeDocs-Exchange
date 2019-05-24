@@ -12,7 +12,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: Use the steps in this article to synchronize public folders between Exchange Online and your on-premises Exchange deployment.'
-ms.audience: ITPro
+audience: ITPro
 title: Configure legacy on-premises public folders for a hybrid deployment
 
 ---
@@ -40,9 +40,9 @@ The following table describes the supported version and location combinations of
 
 |**Scenario**|**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2016/2019 User Mailbox**|**Exchange Online User Mailbox**|
 |:-----|:-----|:-----|:-----|
-|On-Premises Exchange 2010 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
-|On-Premises Exchange 2013, Exchange 2016, or Exchange 2019 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
-|Exchange Online Public Folders  <br/> |Not supported  <br/> |Supported  <br/> |Hybrid not applicable  <br/> |
+|On-Premises Exchange 2010 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
+|On-Premises Exchange 2013, Exchange 2016, or Exchange 2019 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
+|Exchange Online Public Folders|Not supported|Supported|Hybrid not applicable|
 
 A hybrid configuration with Exchange 2003 public folders is not supported. If you're running Exchange 2003 in your organization, you must move all public folder databases and replicas to Exchange 2010 SP3 or later. No public folder replicas can remain on Exchange 2003.
 

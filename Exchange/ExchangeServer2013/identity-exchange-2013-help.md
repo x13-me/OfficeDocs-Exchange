@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The *Identity* parameter is a special parameter that you can use with most cmdlets. The *Identity* parameter gives you access to the unique identifiers that refer to a specific object in Microsoft Exchange Server 2013. This capability lets you perform actions on a specific Exchange 2013 object.
 
 The following sections describe the Identity parameter and provide examples of how you can use it effectively:
@@ -115,4 +114,3 @@ With role entries you can use the wildcard character in a variety of ways to que
 For more information about management roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
 Return to top
-

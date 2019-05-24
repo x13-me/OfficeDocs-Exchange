@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the EAC or the Shell to configure the connection time-out limits for idle authenticated and unauthenticated IMAP4 connections.
 
 For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
@@ -31,31 +30,28 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
-> [!TIP]  
+> [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to set connection time-out limits for IMAP4
 
-1.  In the EAC, navigate to **Servers** **\>** **Servers**.
+1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2.  In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the server properties page, click **IMAP4**.
+3. On the server properties page, click **IMAP4**.
 
-4.  Scroll down and click **More options**.
+4. Scroll down and click **More options**.
 
-5.  Under **Time-out settings**, use the following settings:
-    
-      - **Authenticated time-out (seconds)**    Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
-    
-      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
+5. Under **Time-out settings**, use the following settings:
 
-6.  Click **Apply**, and then click **OK** to save your changes.
+      - **Authenticated time-out (seconds)**:  Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
+
+      - **Unauthenticated time-out (seconds)**: Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
+
+6. Click **Apply**, and then click **OK** to save your changes.
 
 After you've set the connection time-out limits for IMAP4, you must restart the IMAP4 services for the settings to take effect. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
@@ -81,25 +77,25 @@ For more information about syntax and parameters, see [Set-ImapSettings](https:/
 
 To verify that you've successfully set connection limits, do one of the following:
 
-1.  In the EAC, navigate to **Servers** **\>** **Servers**.
+1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2.  In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the server properties page, click **IMAP4**.
+3. On the server properties page, click **IMAP4**.
 
-4.  Scroll down and click **More options**.
+4. Scroll down and click **More options**.
 
-5.  Under **Time-out settings**, verify the connection settings are correct.
+5. Under **Time-out settings**, verify the connection settings are correct.
 
 Or
 
-1.  Run the following command in the Shell.
-    
+1. Run the following command in the Shell.
+
     ```powershell
     Get-ImapSettings | format-list
     ```
 
-2.  Verify the connection settings are correct.
+2. Verify the connection settings are correct.
 
 ## For more information
 

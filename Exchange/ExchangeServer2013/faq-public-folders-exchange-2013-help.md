@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic provides you with a list of frequently asked questions regarding public folders in Exchange Server 2013. To learn more about public folders, see [Public folders](public-folders-exchange-2013-help.md).
 
 Have questions about public folders that aren't answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).
@@ -93,11 +92,8 @@ Outlook Web App is supported, but with some limitations. You can add and remove 
 
   - Access public folders located on servers running previous versions of Exchange
 
-
 > [!NOTE]
 > You can only create public folder rules that contain the element <STRONG>reply using a specific template</STRONG> in mail-enabled public folders. It is possible that pre-existing rules containing <STRONG>reply using a specific template</STRONG> will continue to work on non-mail-enabled public folders, but on those folders you cannot create new rules with this template element, or edit existing rules with this element.
-
-
 
 In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://technet.microsoft.com/en-us/library/jj200788\(v=exchg.150\).aspx) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
 
@@ -172,4 +168,3 @@ No. If you try to change the master hierarchy mailbox, you'll receive an error.
 ## Do public folders have full text searching capabilities?
 
 Yes, full text search is available for public folders in Exchange 2013. However, you can't search across multiple public folders.
-

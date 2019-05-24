@@ -11,7 +11,7 @@ ms.date: 7/11/2018
 ms.reviewer: 
 title: View queued message properties in Queue Viewer
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

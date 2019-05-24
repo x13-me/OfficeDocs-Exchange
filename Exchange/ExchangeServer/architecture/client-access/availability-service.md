@@ -9,7 +9,7 @@ ms.date: 4/19/2018
 ms.reviewer: 
 title: Availability service in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -50,8 +50,8 @@ The following table lists the methods used to retrieve free/busy information in 
 
 |**Client**|**Source mailbox retrieving free/busy information**|**Target mailbox**|**Free/busy retrieval method**|
 |:-----|:-----|:-----|:-----|
-|Outlook 2010 or later  <br/> |Exchange 2010 or later <br/> |Exchange 2010 or later <br/> |The Availability service reads free/busy information from the target mailbox.  <br/> |
-|Outlook on the web or Outlook Web App <br/> |Exchange 2010 or later <br/> |Exchange 2010 or later <br/> |Outlook on the web or Outlook Web App calls the Availability service API, which reads the free/busy information from the target mailbox.  <br/> |
+|Outlook 2010 or later|Exchange 2010 or later|Exchange 2010 or later|The Availability service reads free/busy information from the target mailbox.|
+|Outlook on the web or Outlook Web App|Exchange 2010 or later|Exchange 2010 or later|Outlook on the web or Outlook Web App calls the Availability service API, which reads the free/busy information from the target mailbox.|
 
 
 

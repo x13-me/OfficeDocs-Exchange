@@ -9,7 +9,7 @@ ms.date: 3/9/2015
 ms.reviewer: 
 title: Create dialing rules for users
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

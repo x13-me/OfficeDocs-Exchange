@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Secure Sockets Layer (SSL) is a method for securing communications between a client and a server. For Exchange Server 2013, SSL is used to help secure communications between the server and clients. Clients include mobile phones, computers inside an organization's network, and computers outside an organization's network.
 
 By default, when you install Exchange 2013, client communications are encrypted using SSL when you use Outlook Web App, Exchange ActiveSync, and Outlook Anywhere.
@@ -57,11 +56,8 @@ There are three primary types of digital certificates: self-signed certificates,
 
 When you install Exchange 2013, a self-signed certificate is automatically configured on the Mailbox servers. A self-signed certificate is signed by the application that created it. The subject and the name of the certificate match. The issuer and the subject are defined on the certificate. This self-signed certificate is used to encrypt communications between the Client Access server and the Mailbox server. The Client Access server trusts the self-signed certificate on the Mailbox server automatically, so no third-party certificate is needed on the Mailbox server. When you install Exchange 2013, a self-signed certificate is also created on the Client Access server. This self-signed certificate will allow some client protocols to use SSL for their communications. Exchange ActiveSync and Outlook Web App can establish an SSL connection by using a self-signed certificate. Outlook Anywhere won't work with a self-signed certificate on the Client Access server. Self-signed certificates must be manually copied to the trusted root certificate store on the client computer or mobile device. When a client connects to a server over SSL and the server presents a self-signed certificate, the client will be prompted to verify that the certificate was issued by a trusted authority. The client must explicitly trust the issuing authority. If the client confirms the trust, then SSL communications can continue.
 
-
 > [!NOTE]
 > By default, the digital certificate installed on the Mailbox server or servers is a self-signed certificate. You don't need to replace the self-signed certificate on the Mailbox servers in your organization with a trusted third-party certificate. The Client Access server automatically trusts the self-signed certificate on the Mailbox server and no other configuration is needed for certificates on the Mailbox server.
-
-
 
 Frequently, small organizations decide not to use a third-party certificate or not to install their own PKI to issue their own certificates. They might make this decision because those solutions are too expensive, because their administrators lack the experience and knowledge to create their own certificate hierarchy, or for both reasons. The cost is minimal and the setup is simple when you use self-signed certificates. However, it's much more difficult to establish an infrastructure for certificate life-cycle management, renewal, trust management, and revocation when you use self-signed certificates.
 
@@ -191,15 +187,14 @@ The most important step you can take to reduce the number of host names that you
 
 The host names you must include in your Exchange certificates are the host names used by client applications to connect to Exchange. The following is a list of typical host names that would be required for a company named Contoso:
 
-  - **Mail.contoso.com**   This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
+  - **Mail.contoso.com**: This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
 
-  - **Autodiscover.contoso.com**   This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
+  - **Autodiscover.contoso.com**: This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
 
-  - **Legacy.contoso.com**   This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
+  - **Legacy.contoso.com**: This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
 
 ## Understanding wildcard certificates
 
 A wildcard certificate is designed to support a domain and multiple subdomains. For example, configuring a wildcard certificate for \*.contoso.com results in a certificate that will work for mail.contoso.com, web.contoso.com, and autodiscover.contoso.com.
 
 Return to top
-

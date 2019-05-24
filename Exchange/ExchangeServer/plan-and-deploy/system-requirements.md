@@ -12,7 +12,7 @@ title: Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exc
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

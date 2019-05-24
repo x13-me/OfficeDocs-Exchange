@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Sender ID agent is an anti-spam agent that's available in Microsoft Exchange Server 2013. The Sender ID agent relies on the RECEIVED SMTP header and a query to the sending system's DNS service to determine what action, if any, to take on an inbound message.
 
 Sender ID is intended to combat the impersonation of a sender and a domain, a practice that's frequently called *spoofing*. A *spoofed mail* is an email message that has a sending address that was modified to appear as if it originates from a sender other than the actual sender of the message.
@@ -45,19 +44,19 @@ The Exchange server updates the message metadata with the Sender ID status based
 
 The Sender ID evaluation process generates a Sender ID status for the message. The Sender ID status is used to evaluate the spam confidence level (SCL) rating for the message. This status can be set to one of the following values:
 
-  - **Pass**   Both the IP address and Purported Responsible Address (PRA) passed the Sender ID verification check.
+  - **Pass**: Both the IP address and Purported Responsible Address (PRA) passed the Sender ID verification check.
 
-  - **Neutral**   Published Sender ID data is explicitly inconclusive.
+  - **Neutral**: Published Sender ID data is explicitly inconclusive.
 
-  - **Soft fail**   The IP address for the PRA may be in the not permitted set.
+  - **Soft fail**: The IP address for the PRA may be in the not permitted set.
 
-  - **Fail**   The IP Address is not permitted; no PRA is found in the incoming mail or the sending domain does not exist.
+  - **Fail**: The IP Address is not permitted; no PRA is found in the incoming mail or the sending domain does not exist.
 
-  - **None**   No published SPF data exists in the sender's DNS.
+  - **None**: No published SPF data exists in the sender's DNS.
 
-  - **TempError**   A temporary DNS failure occurred, such as an unavailable DNS server.
+  - **TempError**: A temporary DNS failure occurred, such as an unavailable DNS server.
 
-  - **PermError**   The DNS record is invalid, such as an error in the record format.
+  - **PermError**: The DNS record is invalid, such as an error in the record format.
 
 The Sender ID status is added to the message metadata and is later converted to a MAPI property. The junk email filter in Microsoft Outlook uses the MAPI property during the generation of the SCL value.
 
@@ -71,11 +70,11 @@ For more information about how the Sender ID status is displayed in messages, se
 
 You can also define how the Exchange server handles messages that are identified as spoofed mail and how the Exchange server handles messages when a DNS server can't be reached. The options for how the Exchange server handles spoofed mail and unreachable DNS servers include the following actions:
 
-  - **Stamp the status**   This option is the default action. All inbound messages to your organization have the Sender ID status included in the metadata of the message.
+  - **Stamp the status**: This option is the default action. All inbound messages to your organization have the Sender ID status included in the metadata of the message.
 
-  - **Reject**   This option rejects the message and sends an SMTP error response to the sending server. The SMTP error response is a 5*xx* level protocol response with text that corresponds to the Sender ID status.
+  - **Reject**: This option rejects the message and sends an SMTP error response to the sending server. The SMTP error response is a 5*xx* level protocol response with text that corresponds to the Sender ID status.
 
-  - **Delete**   This option deletes the message without informing the sending system of the deletion. In fact, the Exchange server sends a fake OK SMTP command to the sending server and then deletes the message. Because the sending server assumes the message was sent, it doesn't retry sending the message in the same session.
+  - **Delete**: This option deletes the message without informing the sending system of the deletion. In fact, the Exchange server sends a fake OK SMTP command to the sending server and then deletes the message. Because the sending server assumes the message was sent, it doesn't retry sending the message in the same session.
 
 For more information about how to configure the Sender ID agent, see [Manage Sender ID](manage-sender-id-exchange-2013-help.md).
 
@@ -94,4 +93,3 @@ Return to top
 You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://technet.microsoft.com/en-us/library/aa998859\(v=exchg.150\)).
 
 Return to top
-
