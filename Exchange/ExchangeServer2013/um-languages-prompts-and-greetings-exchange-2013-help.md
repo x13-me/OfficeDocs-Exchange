@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can install and configure language packs to support multiple languages in Unified Messaging (UM) environments.
 
 UM language packs enable callers and Outlook Voice Access users to interact with the voice mail system in multiple languages. After you install an additional language on a Mailbox server, callers and Outlook Voice Access users can hear email messages and interact with the voice mail system in that language.
@@ -63,29 +62,23 @@ Unified Messaging language packs allow a Mailbox server to speak additional lang
 
 UM language packs include pre-recorded prompts, TTS conversion support for a specific language, and in some cases, support for ASR. In multiple-language environments, you may have to install additional UM language packs because some callers prefer to be prompted in a different language, or because they receive email in more than one language. You must install multiple UM language packs to support the ability of the Mailbox server to read an email message that contains more than one language, because the TTS conversion system must be instructed which language to select based on the text of the message to be read. If the Unified Messaging language pack hasn't been installed, the email message will be illogical and incoherent when it's read back to the user. Installing the appropriate language pack enables the TTS engine to read email and calendar items to the Outlook Voice Access user by using the correct language and also provides language-specific pre-recorded prompts for Unified Messaging. In some cases, they may also provide support for ASR.
 
-
 > [!NOTE]
 > The TTS engine converts text to speech, but it doesn't convert speech to text. UM-enabled users can send an email message that has a voice file attached to another user. However, they can't create and send a text-based email message to another user.
 
-
-
 When you install a language pack, the installation program does the following:
 
-1.  Copies the language prompts that will be used to configure UM dial plans and auto attendants.
+1. Copies the language prompts that will be used to configure UM dial plans and auto attendants.
 
-2.  Allows the TTS engine to read messages when Outlook Voice Access users access their Inbox.
+2. Allows the TTS engine to read messages when Outlook Voice Access users access their Inbox.
 
-3.  Enables ASR for speech-enabled UM dial plans and auto attendants for the language installed.
+3. Enables ASR for speech-enabled UM dial plans and auto attendants for the language installed.
 
-4.  Enables Voice Mail Preview for clients in other languages.
+4. Enables Voice Mail Preview for clients in other languages.
 
 You can add UM language packs by using the **Setup.exe** command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md). For more information about how to remove a UM language pack, see [Remove a UM language pack](remove-a-um-language-pack-exchange-2013-help.md).
 
-
 > [!NOTE]
 > By default, when you install a Mailbox server, the U.S. English (en-US) language pack is installed. It can't be removed unless you remove the Mailbox server from the computer.
-
-
 
 Return to top
 
@@ -296,7 +289,6 @@ The following table lists the Unified Messaging language packs that are currentl
 </tbody>
 </table>
 
-
 Return to top
 
 ## UM language components and features
@@ -321,11 +313,8 @@ Unified Messaging relies on a Text-to-Speech (TTS) engine. TTS functionality is 
 
   - Users' default voice mail greetings
 
-
 > [!NOTE]
 > After a user has recorded personalized voice mail greetings, the TTS version of the voice greetings are no longer used.
-
-
 
 ## Automatic Speech Recognition
 
@@ -640,6 +629,4 @@ The following table includes a list of client languages and the fallback languag
 </tbody>
 </table>
 
-
 Return to top
-

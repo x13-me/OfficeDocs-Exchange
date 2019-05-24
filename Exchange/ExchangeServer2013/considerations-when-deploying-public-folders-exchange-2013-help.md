@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Although there are many advantages to using Exchange 2013 public folders, there are some things to consider before implementing them in your organization.
 
 ## Deployment considerations for public folders
@@ -26,13 +25,13 @@ Although there are many advantages to using Exchange 2013 public folders, there 
 This article contains factors to consider before you deploy public folders in your organization, especially if you plan to have a large number of public folders. Exchange 2013 now supports up to one million public folders.
 
   - Activity in a public folder directly impacts the load that's placed on the public folder mailbox where the folder is located. To avoid client connectivity issues, such as high latency or the inability to access a public folder, we recommend you do the following:
-    
+
       - Don't let public folder mailboxes exceed 50% of the mailbox size limit. If this happens consider using the `Split-PublicFolderMailbox.ps1` script located in C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts folder on the Exchange 2013 server to move some public folders to a new public folder mailbox.
-    
+
       - Consider moving heavily-used public folders to a dedicated public folder mailbox.
-    
+
       - Exclude heavily-used public folders from serving public folder hierarchy. You can do this by setting the *IsExcludedFromServingHierarchy* property on the public folder mailbox using the **Set-Mailbox** cmdlet.
-    
+
       - For large organizations with many public folders, consider adding additional public folder mailboxes to distribute the load of servicing public folder hierarchy requests.
 
   - Place the primary public folder mailbox in a DAG to improve availability of the mailbox. The primary public folder mailbox is the authoritative copy of the public folder hierarchy.
@@ -54,4 +53,3 @@ This article contains factors to consider before you deploy public folders in yo
   - You must use Outlook 2007 or later to access public folders on Exchange 2013 servers.
 
   - Retention policies aren't supported for public folder mailboxes.
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Routing table logging periodically records a snapshot of the routing table used by Microsoft Exchange Server 2013 to route messages to their destinations.
 
 ## What do you need to know before you begin?
@@ -35,11 +34,8 @@ Routing table logging periodically records a snapshot of the routing table used 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -65,48 +61,45 @@ This example sets the following routing table log settings on the Mailbox server
     Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
 ```
 
-
 > [!NOTE]
 > Setting the <EM>RoutingTableLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of routing table log files because of their age.
-
-
 
 ## How do you know this worked?
 
 To verify that you have successfully configured routing table logging, do the following:
 
-1.  In the Shell, run the following command:
-    
+1. In the Shell, run the following command:
+
     ```powershell
         Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
     ```
 
-2.  Verify the values displayed are the values you configured.
+2. Verify the values displayed are the values you configured.
 
 ## Use the Command Prompt to configure the interval for automatic recalculation of the routing table in the EdgeTransport.exe.config file
 
-1.  In a Command prompt window, open the EdgeTransport.exe.config application configuration file in Notepad by running the following command:
-    
+1. In a Command prompt window, open the EdgeTransport.exe.config application configuration file in Notepad by running the following command:
+
     ```powershell
     Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
     ```
 
-2.  Modify the following key in the `<appSettings>` section.
-    
+2. Modify the following key in the `<appSettings>` section.
+
     ```command line
     <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
     ```
-    
+
     For example, to change the interval for automatic recalculation of the routing table to 10 hours, use the following value:
-    
+
     ```command line
     <add key="RoutingConfigReloadInterval" value="10:00:00" />
     ```
 
-3.  When you are finished, save and close the EdgeTransport.exe.config file.
+3. When you are finished, save and close the EdgeTransport.exe.config file.
 
-4.  Restart the Microsoft Exchange Transport service by running the following command:
-    
+4. Restart the Microsoft Exchange Transport service by running the following command:
+
     ```powershell
     net stop MSExchangeTransport && net start MSExchangeTransport
     ```
@@ -120,4 +113,3 @@ Note that the routing table will be recalculated and logged earlier than the val
   - A routing configuration change is detected. For example, a Send connector or a Receive connector is added, removed, or modified, or the 6 hour Kerberos token renewal occurs.
 
   - The Microsoft Exchange Transport service is started.
-

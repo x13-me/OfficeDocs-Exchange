@@ -9,7 +9,7 @@ ms.date: 7/13/2018
 ms.reviewer: 
 title: Mail flow rules in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

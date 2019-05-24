@@ -11,7 +11,7 @@ ms.date: 8/3/2018
 ms.reviewer: 
 title: ExecutionPolicy GPO is defined [PowerShellExecutionPolicyCheckSet]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

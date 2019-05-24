@@ -18,21 +18,19 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Filtering generates different views of queues. You use the queue properties as filter options. By specifying filter criteria, you can quickly locate queues and take action on them. The following scenarios are examples of how you might use queue filtering to manage mail flow:
 
   - You receive a message from the Microsoft System Center Operations Manager that indicates that a queue length has exceeded the established threshold. You want to investigate whether a server-wide mail flow problem exists.
-    
+
     You can create a filter to view all the queues that have a message count that exceeds what you consider typical. If a mail flow problem is indicated, you can select all the queues in the filter results and suspend the queues while you continue to investigate.
 
   - You suspend several queues to investigate the cause of mail flow problems. You determine that the problem was caused by an incorrect connector configuration and is now fixed.
-    
+
     You can create a filter to view all the queues that have a status of Suspended, and then select all the queues in the filter results and resume the queues.
 
 ## Queue properties to use when filtering queues
 
 You can use the queue properties to create a filter and locate queues that meet specified criteria. You can create filters in Queue Viewer, or by using the *Filter* parameter on the queue management cmdlets. Note that the queue management cmdlets support more filterable properties than the Queue Viewer. The following table lists the queue properties by which you can filter and the valid values for those properties.
-
 
 <table>
 <colgroup>
@@ -135,4 +133,3 @@ You can use the queue properties to create a filter and locate queues that meet 
 </tr>
 </tbody>
 </table>
-

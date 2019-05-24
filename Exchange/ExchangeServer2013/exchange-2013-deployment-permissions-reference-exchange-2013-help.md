@@ -18,39 +18,37 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic describes the permissions that are required to set up a Microsoft Exchange Server 2013 organization. The universal security groups (USGs) that are associated with management role groups, and other Windows security groups and security principals, are added to the access control lists (ACLs) of various Active Directory objects. ACLs control what operations can be performed on each object. By understanding what permissions are granted to each role group, security group, or security principal, you can determine what minimum permissions are required to install Exchange 2013.
 
 In some cases, the ACL isn't applied on the usual property, **ntSecurityDescriptor**, but on another property, such as **msExchMailboxSecurityDescriptor**. The directory service can't enforce security that isn't specified in the Windows security descriptor. In most cases, these ACLs are replicated to store ACLs on appropriate objects by the store service. Unfortunately, there is no tool to view these ACLs as anything other than raw binary data.
 
 The columns of each permissions table include the following information:
 
-  - **Account**   The security principal granted or denied the permissions.
+  - **Account**: The security principal granted or denied the permissions.
 
-  - **ACE type**   Access control entry (ACE) type
-    
-      - **Allow ACE**   An allow ACE allows the user or group associated with the ACE to access an item.
-    
-      - **Deny ACE**   A deny ACE prevents the user or group associated with the ACE from accessing an item.
+  - **ACE type**: Access control entry (ACE) type
 
-  - **Inheritance**   The type of inheritance used for child objects.
-    
+      - **Allow ACE**: An allow ACE allows the user or group associated with the ACE to access an item.
+
+      - **Deny ACE**: A deny ACE prevents the user or group associated with the ACE from accessing an item.
+
+  - **Inheritance**: The type of inheritance used for child objects.
+
       - **All** indicates that the permissions apply to the object and all sub-objects.
-    
+
       - **Desc** indicates the permissions apply to the object class listed in the On Property/Applies To row.
-    
+
       - **None** indicates those permissions only apply the object.
 
-  - **Permissions**   The permissions granted to the account.
+  - **Permissions**: The permissions granted to the account.
 
-  - **On Property/Applies To**   In some cases, permissions apply only to a given property, property set, or object class. These limited permissions are specified here.
+  - **On Property/Applies To**: In some cases, permissions apply only to a given property, property set, or object class. These limited permissions are specified here.
 
-  - **Comments**   When applicable, this column explains why the permissions are required or provides other information about the permissions.
+  - **Comments**: When applicable, this column explains why the permissions are required or provides other information about the permissions.
 
 The permissions are generally listed in the table by the names that are used on the Active Directory Service Interfaces (ADSI) Edit (AdsiEdit.msc) **Security** property page in the **Advanced** view on the **View/Edit** tab. The ADSI Edit **Security** property page lists a much more condensed view of the permissions. The LDP tool (Ldp.exe) displays the access mask directly as a numeric value. The setup code refers to the permissions by predefined constants.
 
 The following table shows the relationships between these values.
-
 
 <table>
 <colgroup>
@@ -167,7 +165,6 @@ The following table shows the relationships between these values.
 </tbody>
 </table>
 
-
 Extended rights are custom rights specified by individual applications. They are specified in the ACL. However, they are meaningless to Active Directory. The specific application enforces any extended rights. Examples of Exchange extended rights are "Create public folder" or "Create named properties in the information store."
 
 For information about permissions that are set during a Microsoft Exchange Server 2010 installation, see [Exchange 2010 Deployment Permissions Reference](https://go.microsoft.com/fwlink/p/?linkid=402924).
@@ -176,11 +173,8 @@ For information about permissions that are set during a Microsoft Exchange Serve
 
 The permissions tables in this section show the permissions set when you execute the `Setup /PrepareAD` command.
 
-
 > [!NOTE]
 > The permissions described in this section are the default permissions that are configured when you deploy Exchange 2013 using the shared permissions model. If you've deployed Exchange 2013 using the Active Directory split permissions model, the default permission are different. For more information on the changes to the default permissions when using Active Directory split permissions and the shared and split permissions models in general, see <A href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</A> in <A href="understanding-split-permissions-exchange-2013-help.md">Understanding split permissions</A>. If you don't choose to use Active Directory split permissions when you install Exchange, Exchange will use shared permissions.
-
-
 
 ## Microsoft Exchange Container Permissions
 
@@ -278,7 +272,6 @@ The following table shows the permissions that are set on the Microsoft Exchange
 </tbody>
 </table>
 
-
 ## Microsoft Exchange Autodiscover Container Permissions
 
 The following table shows the permissions set on the Microsoft Exchange Autodiscover container within the configuration partition.
@@ -312,7 +305,6 @@ The following table shows the permissions set on the Microsoft Exchange Autodisc
 </tr>
 </tbody>
 </table>
-
 
 ## Microsoft Exchange Organization Container Permissions
 
@@ -880,7 +872,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=All Address Lists,CN=Address Lists Container,CN=\<organization\>
 
 <table>
@@ -927,7 +918,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Offline Address Lists,CN=Address Lists Container, CN=\<organization\>
 
 <table>
@@ -958,7 +948,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Addressing,CN=\<organization\>
 
 <table>
@@ -988,7 +977,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Recipient Policies,CN=\<organization\>
 
@@ -1028,7 +1016,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tr>
 </tbody>
 </table>
-
 
 ## Configuration Partition Container Permissions
 
@@ -1182,7 +1169,6 @@ The permissions tables in this section show the permissions set by the `Setup /
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Deleted Objects,CN=Configuration,DC=\<domain\>
 
 <table style="width:100%;">
@@ -1254,7 +1240,6 @@ The permissions tables in this section show the permissions set by the `Setup /
 </tbody>
 </table>
 
-
 ## Exchange Administrative Group Permissions
 
 The `Setup /PrepareAD` command also configures the following permissions on the administrative groups within the organization.
@@ -1308,7 +1293,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Advanced Security Settings,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
 <table>
@@ -1338,7 +1322,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Encryption,CN=Advanced Security Settings,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
@@ -1370,7 +1353,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Arrays,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
 <table>
@@ -1400,7 +1382,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Database Availability Groups,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
@@ -1432,7 +1413,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Databases,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
 <table>
@@ -1462,7 +1442,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Servers,CN=\<admin group\>,CN=Administrative Groups,CN=\<organization\>
 
@@ -1504,7 +1483,6 @@ The `Setup /PrepareAD` command also configures the following permissions on the
 </tr>
 </tbody>
 </table>
-
 
 ## Microsoft Exchange Security Groups Container Permissions
 
@@ -1561,7 +1539,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Organization Management,OU=Microsoft Exchange Security Groups,DC=\<root domain\>
 
 <table>
@@ -1591,7 +1568,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Public Folder Management,OU=Microsoft Exchange Security Groups,DC=\<root domain\>
 
@@ -1623,7 +1599,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=ExchangeLegacyInterop,OU=Microsoft Exchange Security Groups,DC=\<root domain\>
 
 <table>
@@ -1653,7 +1628,6 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Exchange Servers,OU=Microsoft Exchange Security Groups,DC=\<root domain\>
 
@@ -1701,16 +1675,12 @@ The permissions tables in this section show the permissions set on the Microsoft
 </tbody>
 </table>
 
-
 ## Prepare Domain
 
 The following tables show the permissions set when you execute the `Setup /PrepareDomain` command.
 
-
 > [!NOTE]
 > The permissions described in this section are the default permissions that are configured when you deploy Exchange 2013 using the shared permissions model. If you've deployed Exchange 2013 using the Active Directory split permissions model, the default permission are different. For more information on the changes to the default permissions when using Active Directory split permissions and the shared and split permissions models in general, see <A href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</A> in <A href="understanding-split-permissions-exchange-2013-help.md">Understanding split permissions</A>. If you don't choose to use Active Directory split permissions when you install Exchange, Exchange will use shared permissions.
-
-
 
 ### Distinguished name of the object: DC=\<domain\>
 
@@ -2351,7 +2321,6 @@ The following tables show the permissions set when you execute the `Setup /Prep
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=AdminSDHolder,CN=System,DC=\<domain\>
 
 <table style="width:100%;">
@@ -2887,7 +2856,6 @@ The following tables show the permissions set when you execute the `Setup /Prep
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Deleted Objects,DC=\<domain\>
 
 <table>
@@ -2917,7 +2885,6 @@ The following tables show the permissions set when you execute the `Setup /Prep
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Microsoft Exchange System Objects,DC=\<domain\>
 
@@ -3481,7 +3448,6 @@ The following tables show the permissions set when you execute the `Setup /Prep
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Exchange Install Domain Servers,CN=Microsoft Exchange System Objects,DC=\<domain\>
 
 <table>
@@ -3511,7 +3477,6 @@ The following tables show the permissions set when you execute the `Setup /Prep
 </tr>
 </tbody>
 </table>
-
 
 ## Server Role Installation
 
@@ -3640,7 +3605,6 @@ The following permissions table shows the permissions set when you install the C
 </tbody>
 </table>
 
-
 ## Database Availability Groups
 
 The permissions tables in this section show the permissions set with regards to the database availability groups and its members.
@@ -3674,7 +3638,6 @@ The permissions tables in this section show the permissions set with regards to 
 </tr>
 </tbody>
 </table>
-
 
 ## Edge Transport
 
@@ -3721,7 +3684,6 @@ If you install an Edge Transport server and establish an Edge Subscription with 
 </tbody>
 </table>
 
-
 ## Mailbox Server Installation
 
 During installation of the first Mailbox server, the following containers are created, if they do not already exist. The following permissions table shows the permissions that are applied.
@@ -3758,7 +3720,6 @@ During installation of the first Mailbox server, the following containers are cr
 </tr>
 </tbody>
 </table>
-
 
 ### Distinguished name of the object: CN=Default \<Server\>,CN=SMTP Receive Connectors,CN=Protocols,CN=\<Server\>,CN=Servers,CN=\<admin group\>,CN=\<organization\>
 
@@ -4425,7 +4386,6 @@ During installation of the first Mailbox server, the following containers are cr
 </tbody>
 </table>
 
-
 ### Distinguished name of the object: CN=Client \<Server\>,CN=SMTP Receive Connectors,CN=Protocols,CN=\<Server\>,CN=Servers,CN=\<admin group\>,CN=\<organization\>
 
 <table style="width:100%;">
@@ -5035,7 +4995,6 @@ During installation of the first Mailbox server, the following containers are cr
 </tbody>
 </table>
 
-
 ## SMTP Send Connector Creation
 
 The following table shows the permissions set when you create Send connectors.
@@ -5232,4 +5191,3 @@ The following table shows the permissions set when you create Send connectors.
 </tr>
 </tbody>
 </table>
-

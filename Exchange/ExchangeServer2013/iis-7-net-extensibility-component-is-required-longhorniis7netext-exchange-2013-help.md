@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -31,15 +30,14 @@ To address this error, use Server Manager to install the IIS 7 .NET Extensibilit
 
 **Install the IIS 7 .NET Extensibility component in Windows Server 2008 or in Windows Server 2008 R2 by using the Server Manager tool**
 
-1.  Click **Start**, click **Administrative Tools** and then **Server Manager**.
+1. Click **Start**, click **Administrative Tools** and then **Server Manager**.
 
-2.  In the left navigation pane, expand **Roles**, and then right-click **Web Server (IIS)** and select **Add Role Services**.
+2. In the left navigation pane, expand **Roles**, and then right-click **Web Server (IIS)** and select **Add Role Services**.
 
-3.  On the **Select Role Services** pane, scroll down to **Application Development**.
+3. On the **Select Role Services** pane, scroll down to **Application Development**.
 
-4.  Select the check box under **.NET Extensibility**.
+4. Select the check box under **.NET Extensibility**.
 
-5.  Click **Next** from the **Select Role Services** pane, and then click **Install** at the **Confirm Installations Selections** pane.
+5. Click **Next** from the **Select Role Services** pane, and then click **Install** at the **Confirm Installations Selections** pane.
 
-6.  Click **Close** to exit the Add Role Services wizard.
-
+6. Click **Close** to exit the Add Role Services wizard.

@@ -18,37 +18,29 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The permissions required to perform tasks to configure various components of Microsoft Exchange Server 2013 depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 
-1.  In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
+1. In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
 
-2.  Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
+2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
-3.  Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
-    
+3. Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
 
     > [!NOTE]
     > You must be assigned the Role Management management role to run the <STRONG>Get-ManagementRoleAssignment</STRONG> cmdlet. If you don't have permissions to run the <STRONG>Get-ManagementRoleAssignment</STRONG> cmdlet, ask your Exchange administrator to retrieve the role groups or management roles assigned to you.
 
-
-
 If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](delegate-role-assignments-exchange-2013-help.md).
-
 
 > [!NOTE]
 > Some features may require that you have local administrator permissions on the server you want to manage. To manage these features, you must be a member of the Local Administrators group on that server.
-
-
 
 ## Exchange infrastructure permissions
 
 The following table lists the permissions required to perform tasks that configure general Exchange 2013 settings.
 
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](view-only-organization-management-exchange-2013-help.md).
-
 
 <table>
 <colgroup>
@@ -109,7 +101,6 @@ Users who are assigned the View-Only Management role group can view the configur
 > [!NOTE]
 > You can also manually assign the View-Only Audit Logs management role to a management role group. For more information, see <A href="view-only-audit-logs-role-exchange-2013-help.md">View-Only Audit Logs role</A>.
 
-
 </td>
 </tr>
 <tr class="even">
@@ -119,13 +110,11 @@ Users who are assigned the View-Only Management role group can view the configur
 </tbody>
 </table>
 
-
 ## Shell infrastructure permissions
 
 The following table lists the permissions required to perform tasks that configure features that control how the Exchange Management Shell runs.
 
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](view-only-organization-management-exchange-2013-help.md).
-
 
 <table>
 <colgroup>
@@ -166,13 +155,11 @@ Users who are assigned the View-Only Management role group can view the configur
 </tbody>
 </table>
 
-
 ## Federation and certificates permissions
 
 The following table lists permissions required for performing tasks related to federation trusts, OAuth configuration, certificate management, and hybrid deployment configuration.
 
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](view-only-organization-management-exchange-2013-help.md).
-
 
 <table>
 <colgroup>
@@ -213,4 +200,3 @@ Users who are assigned the View-Only Management role group can view the configur
 </tr>
 </tbody>
 </table>
-

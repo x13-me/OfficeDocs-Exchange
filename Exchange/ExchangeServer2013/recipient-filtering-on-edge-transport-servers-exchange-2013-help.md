@@ -18,22 +18,21 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Recipient filtering is an anti-spam feature in Microsoft Exchange Server 2013 that relies on the RCPT TO SMTP header to determine what action, if any, to take on an inbound message. Recipient filtering is performed by the Recipient Filter agent.
 
 The Recipient Filter agent blocks messages according to the characteristics of the intended recipient in the organization. The Recipient Filter agent can help you prevent the acceptance of messages in the following scenarios:
 
-  - **Nonexistent recipients**   You can prevent delivery to recipients that aren't in the organization's address book. For example, you may want to stop delivery to frequently misused account names, such as administrator@contoso.com or support@contoso.com.
+  - **Nonexistent recipients**: You can prevent delivery to recipients that aren't in the organization's address book. For example, you may want to stop delivery to frequently misused account names, such as administrator@contoso.com or support@contoso.com.
 
-  - **Restricted distribution lists**   You can prevent delivery of Internet mail to distribution lists that should be used only by internal users.
+  - **Restricted distribution lists**: You can prevent delivery of Internet mail to distribution lists that should be used only by internal users.
 
-  - **Mailboxes that should never receive messages from the Internet**   You can prevent delivery of Internet mail to a specific mailbox or alias that's typically used inside the organization, such as Helpdesk.
+  - **Mailboxes that should never receive messages from the Internet**: You can prevent delivery of Internet mail to a specific mailbox or alias that's typically used inside the organization, such as Helpdesk.
 
 The Recipient Filter agent acts on recipients stored in one or both of the following data sources:
 
-  - **Recipient Block list**   An administrator-defined list of recipients who should never receive messages from the Internet.
+  - **Recipient Block list**: An administrator-defined list of recipients who should never receive messages from the Internet.
 
-  - **Recipient Lookup**   Queries Active Directory to verify the recipient exists in the organization. On an Edge Transport server, Recipient Lookup requires access to Active Directory information provided by EdgeSync to the local instance of Active Directory Lightweight Directory Services (AD LDS).
+  - **Recipient Lookup**: Queries Active Directory to verify the recipient exists in the organization. On an Edge Transport server, Recipient Lookup requires access to Active Directory information provided by EdgeSync to the local instance of Active Directory Lightweight Directory Services (AD LDS).
 
 When you enable the Recipient Filter agent, one of the following actions is taken on inbound messages according to the characteristics of the recipients. These recipients are indicated by the RCPT TO header.
 
@@ -88,4 +87,3 @@ The Recipient Filter agent performs recipient lookups only for authoritative dom
 Note that you can also configure accepted domains locally on an Edge Transport server. If the domain is configured as internal relay or external relay domain, the Recipient Filter agent on the Edge Transport server also doesn't perform a recipient lookup on recipients in those domains.
 
 Return to top
-

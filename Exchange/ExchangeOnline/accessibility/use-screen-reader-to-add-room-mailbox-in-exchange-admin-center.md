@@ -12,7 +12,7 @@ title: Use a screen reader to add a new room mailbox in the Exchange admin cente
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

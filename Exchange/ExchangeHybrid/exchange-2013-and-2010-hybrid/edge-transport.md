@@ -3,7 +3,7 @@ title: "Edge Transport servers in Exchange 2013/Exchange 2010 hybrid deployments
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

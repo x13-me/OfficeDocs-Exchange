@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can test for end-to-end client Outlook Anywhere connectivity by using either the Shell or the Exchange Remote Connectivity Analyzer (ExRCA). This includes testing for connectivity through the Autodiscover service, creating a user profile, and signing in to the user's mailbox. All the required values are retrieved from the Autodiscover service.
 
 For additional management tasks related to Outlook Anywhere, see [Outlook Anywhere](outlook-anywhere-exchange-2013-help.md).
@@ -31,11 +30,8 @@ For additional management tasks related to Outlook Anywhere, see [Outlook Anywhe
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
@@ -52,23 +48,20 @@ Run the following command.
 > [!NOTE]
 > The <EM>OutlookMailboxDeepTestProbe</EM> parameter value tests connectivity from the Mailbox server. To test connectivity from the Client Access server, use <EM>OutlookMailboxCTPProbe</EM> for the <EM>ProbeIdentity</EM> parameter value.
 
-
-
 ## Use the Exchange Remote Connectivity Analyzer to test Outlook Anywhere connectivity
 
 The Exchange Remote Connectivity Analyzer (ExRCA) is a web-based tool designed to test connectivity with a variety of Exchange protocols. You can access the ExRCA [here](https://go.microsoft.com/fwlink/p/?linkid=167905).
 
-1.  On the ExRCA website, under **Microsoft Office Outlook Connectivity Tests**, select **Outlook Anywhere**, and then select Next at the bottom of the page.
+1. On the ExRCA website, under **Microsoft Office Outlook Connectivity Tests**, select **Outlook Anywhere**, and then select Next at the bottom of the page.
 
-2.  Enter the required information on the next screen, including email address, domain and user name, and password.
+2. Enter the required information on the next screen, including email address, domain and user name, and password.
 
-3.  Choose whether to use Autodiscover to detect server settings or to manually specify server settings.
+3. Choose whether to use Autodiscover to detect server settings or to manually specify server settings.
 
-4.  Accept the disclaimer, enter the verification code, and then select **Verify**.
+4. Accept the disclaimer, enter the verification code, and then select **Verify**.
 
-5.  Select **Perform Test**.
+5. Select **Perform Test**.
 
 ## How do you know this worked?
 
 When the ExRCA tests complete, the output will be displayed on the web page. Any failures will be listed.
-

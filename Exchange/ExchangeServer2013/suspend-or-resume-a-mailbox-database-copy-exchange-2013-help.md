@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You may need to suspend or resume a database copy for a variety of reasons, such as maintenance on the disk that contains a database copy, or suspend an individual database copy from activation for disaster recovery purposes.
 
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md).
@@ -31,37 +30,34 @@ Looking for other management tasks related to mailbox database copies? Check out
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to suspend a mailbox database copy
 
-1.  In the EAC, go to **Servers** \> **Databases**.
+1. In the EAC, go to **Servers** \> **Databases**.
 
-2.  Select the database whose copy you want to suspend.
+2. Select the database whose copy you want to suspend.
 
-3.  In the Details pane, under **Database Copies**, click **Suspend** under the database copy you want to suspend.
+3. In the Details pane, under **Database Copies**, click **Suspend** under the database copy you want to suspend.
 
-4.  In the **Comments** field, add an optional comment of up to 512 characters specifying the reason for the suspension.
+4. In the **Comments** field, add an optional comment of up to 512 characters specifying the reason for the suspension.
 
-5.  To suspend the database copy from automatic activation, select the **This copy can only be activated by manual intervention** check box.
+5. To suspend the database copy from automatic activation, select the **This copy can only be activated by manual intervention** check box.
 
-6.  Click **save** to suspend the database copy.
+6. Click **save** to suspend the database copy.
 
 ## Use the EAC to resume a mailbox database copy
 
-1.  In the EAC, go to **Servers** \> **Databases**.
+1. In the EAC, go to **Servers** \> **Databases**.
 
-2.  Select the database whose copy you want to resume.
+2. Select the database whose copy you want to resume.
 
-3.  In the Details pane, under **Database Copies**, click **Resume** under the database copy you want to resume.
+3. In the Details pane, under **Database Copies**, click **Resume** under the database copy you want to resume.
 
-4.  Click **yes** to resume the database copy.
+4. Click **yes** to resume the database copy.
 
 ## Use the Shell to suspend a mailbox database copy
 
@@ -98,8 +94,7 @@ To verify that you have successfully suspended or resumed a mailbox database cop
   - In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, click **View details** to view the database copy properties.
 
   - In the Shell, run the following command to display status information for a database copy.
-    
+
     ```powershell
     Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
     ```
-

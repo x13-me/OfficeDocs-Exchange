@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Use this checklist to help you upgrade Exchange 2010 Unified Messaging (UM) to Exchange 2013 UM. Be sure to refer to this information when you're upgrading your Exchange 2010 organization and your UM deployment to Exchange 2013. For step-by-step instructions for upgrading to Exchange 2013 UM, see [Upgrade Exchange 2010 UM to Exchange 2013 UM](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md).
 
 Before you start working with this checklist, make sure you're familiar with the concepts in:
@@ -32,7 +31,6 @@ Before you start working with this checklist, make sure you're familiar with the
 For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange 2013 UM, see [Upgrade Exchange 2007 UM to Exchange 2013 UM](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md). 
 
 ## Checklist for upgrading Exchange 2010 UM to Exchange 2013 UM
-
 
 <table>
 <colgroup>
@@ -70,7 +68,6 @@ For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange
 > [!WARNING]
 > You must deploy at least one Exchange 2013 Mailbox server in your organization before you configure the VoIP gateways or IP PBXs to send UM SIP and RTP traffic to the Exchange 2013 Client Access servers.
 
-
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">Install Exchange 2013 using the Setup wizard</a></p></td>
 </tr>
@@ -91,7 +88,6 @@ For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange
 
 > [!NOTE]
 > If the system mailbox has already been moved, you can still manually import/export custom prompts from Exchange 2010 using <A href="import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md">Import and export custom greetings, announcements, menus, and prompts</A>.
-
 
 </td>
 </tr>
@@ -167,4 +163,3 @@ For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange
 </tr>
 </tbody>
 </table>
-

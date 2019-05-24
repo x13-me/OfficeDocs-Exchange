@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2010, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 An offline address book (OAB) is a copy of an address list collection that's been downloaded so a Microsoft Outlook user can access the address book while disconnected from the server. Microsoft Exchange generates the new OAB files and then compresses the files and places them on a local share. You can decide which address lists are made available to users who work offline, and you can also configure the method by which the address books are distributed.
 
 To learn more about address lists, see [Address lists](https://docs.microsoft.com/en-us/exchange/address-books/address-lists/address-lists).
 
-
 > [!IMPORTANT]
 > OAB data is produced by the Microsoft Exchange OABGen service, which is a mailbox assistant. If you use the security descriptor to prevent users from viewing certain recipients in Active Directory, users who download the OAB will be able to view those hidden recipients. Therefore, to hide a recipient from an address list, set the <EM>HiddenFromAddressListsEnabled</EM> parameter on the <A href="https://technet.microsoft.com/en-us/library/aa998596(v=exchg.150)">Set-PublicFolder</A>, <A href="https://technet.microsoft.com/en-us/library/aa995950(v=exchg.150)">Set-MailContact</A>, <A href="https://technet.microsoft.com/en-us/library/aa995971(v=exchg.150)">Set-MailUser</A>, <A href="https://technet.microsoft.com/en-us/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>, <A href="https://technet.microsoft.com/en-us/library/bb123981(v=exchg.150)">Set-Mailbox</A>, and <A href="https://technet.microsoft.com/en-us/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> cmdlets. Alternatively, you can create a new default OAB that doesn't contain the hidden recipients. For details about how to add or remove address lists from an OAB, see <A href="https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/add-or-remove-an-address-list">Add an address list to or remove an address list from an offline address book</A>.
-
-
 
 Looking for management tasks related to OABs? See [Offline address book procedures](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/offline-address-book-procedures).
 
@@ -75,13 +71,13 @@ To benefit most from Web-based distribution, client computers must be running Ou
 
 To function properly, Web-based distribution depends on the following components:
 
-  - **OAB generation process**   This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
+  - **OAB generation process**: This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
 
-  - **OAB distribution**   If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
+  - **OAB distribution**: If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
 
-  - **OAB virtual directory**   The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
+  - **OAB virtual directory**: The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
 
-  - **Autodiscover service**   This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
+  - **Autodiscover service**: This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
 
 ## OAB considerations
 
@@ -110,4 +106,3 @@ OAB sizes can vary from a few megabytes to a few hundred megabytes. The followin
   - Number of distribution groups in Active Directory.
 
   - Information that a company adds to Active Directory for each mailbox-enabled or mail-enabled object. For example, some organizations populate the address properties on each user; others don't.
-

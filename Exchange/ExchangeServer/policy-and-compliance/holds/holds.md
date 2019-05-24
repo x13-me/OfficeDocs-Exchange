@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: In-Place Hold and Litigation Hold in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -112,9 +112,9 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 |**Item type**|**Properties that trigger copy-on-write**|
 |:-----|:-----|
-|Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)  <br/> |Subject  <br/> Body  <br/> Attachments  <br/> Senders/Recipients  <br/> Sent/Received Dates  <br/> |
-|Items other than messages and posts  <br/> |Any change to a visible property, except the following:  <br/> • Item location (when an item is moved between folders)  <br/> • Item status change (read or unread)  <br/> • Changes to retention tag applied to an item  <br/> |
-|Items in the default folder Drafts  <br/> |None (items in the Drafts folder are exempt from copy on write)  <br/> |
+|Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)|Subject  <br/> Body  <br/> Attachments  <br/> Senders/Recipients  <br/> Sent/Received Dates|
+|Items other than messages and posts|Any change to a visible property, except the following:  <br/> • Item location (when an item is moved between folders)  <br/> • Item status change (read or unread)  <br/> • Changes to retention tag applied to an item|
+|Items in the default folder Drafts|None (items in the Drafts folder are exempt from copy on write)|
 
 > [!IMPORTANT]
 > Copy-on-write is disabled for calendar items in the organizer's mailbox when meeting responses are received from attendees and the tracking information for the meeting is updated. For calendar items and items that have a reminder set, copy-on-write is disabled for the ReminderTime and ReminderSignalTime properties. Changes to these properties are not captured by copy-on-write. Changes to RSS feeds aren't captured by copy-on-write.

@@ -9,7 +9,7 @@ ms.date: 12/9/2016
 ms.reviewer: 
 title: Allow users to see a voice mail transcript
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

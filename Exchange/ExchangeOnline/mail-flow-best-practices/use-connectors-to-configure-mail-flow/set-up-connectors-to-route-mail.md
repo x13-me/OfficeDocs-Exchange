@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Set up connectors to route mail between Office 365 and your own email servers
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

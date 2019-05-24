@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -262,10 +262,10 @@ There are many more configuration settings available for Outlook on the web virt
 
 |**Parameter**|**Function**|
 |:-----|:-----|
-| _AllowedFileTypes_ <br/> _BlockedFileTypes_ <br/> _ForceSaveFileTypes_ <br/> _AllowedMimeTypes_ <br/> _BlockedMimeTypes_ <br/> _ForceSaveMimeTypes_ <br/> _ActionForUnknownFileAndMIMETypes_ <br/> |Defines the file types for direct file access (traditional file attachments an embedded MIME files) in Outlook on the web (not in other email clients).  <br/> |
-| _DefaultTheme_ <br/> |Specifies the default theme that's used in Outlook on the web.  <br/> |
-| _LogonAndErrorLanguage_ <br/> _OutboundCharset_ <br/> _UseGB18030_ <br/> _UseISO885915_ <br/> |Configures the various language settings for Outlook on the web.  <br/> |
-| _DisplayPhotosEnabled_ <br/> _SetPhotoEnabled_ <br/> _SetPhotoURL_ <br/> |Configures the user photo settings in Outlook on the web.  <br/> |
+| _AllowedFileTypes_ <br/> _BlockedFileTypes_ <br/> _ForceSaveFileTypes_ <br/> _AllowedMimeTypes_ <br/> _BlockedMimeTypes_ <br/> _ForceSaveMimeTypes_ <br/> _ActionForUnknownFileAndMIMETypes_|Defines the file types for direct file access (traditional file attachments an embedded MIME files) in Outlook on the web (not in other email clients).|
+| _DefaultTheme_|Specifies the default theme that's used in Outlook on the web.|
+| _LogonAndErrorLanguage_ <br/> _OutboundCharset_ <br/> _UseGB18030_ <br/> _UseISO885915_|Configures the various language settings for Outlook on the web.|
+| _DisplayPhotosEnabled_ <br/> _SetPhotoEnabled_ <br/> _SetPhotoURL_|Configures the user photo settings in Outlook on the web.|
 
  **Note**: Not all of the available parameters apply to Exchange 2016 or Exchange 2019 (for example, _SpellCheckerEnabled_).
 

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Unified Messaging (UM) in Microsoft Exchange Server 2013 includes the same feature set as Exchange 2010 and Exchange 2007, with some enhancements and architectural changes. However, Unified Messaging is no longer a separate server role. It's now a component of the voice-related features offered in Exchange 2013.
 
 ## Changes in the Voice architecture
@@ -51,11 +50,8 @@ Using UCMA 4.0 offers multiple benefits:
 
   - UCMA 4.0 provides more accurate speech engine translations and more scalable voice platform support across multiple products.
 
-
 > [!NOTE]
 > UCMA 4.0 is installed when you're installing Exchange 2013. For details about UCMA 4.0 and setup requirements, see <A href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 prerequisites</A>. To upgrade to the most recent version of UCMA, you must first uninstall any previous versions of UCMA that are installed using Add/Remove programs.
-
-
 
 ## Improvements to Voice Mail Preview
 
@@ -86,4 +82,3 @@ Grammar files are used by UM to allow callers to use speech to locate users in y
 ## Cmdlet updates
 
 For Exchange 2013, many UM cmdlets have been brought over from Exchange 2010. However, there have been changes in some of those cmdlets, and new cmdlets have been added for new functionality. For details, see [Unified Messaging cmdlet updates](unified-messaging-cmdlet-updates-exchange-2013-help.md).
-

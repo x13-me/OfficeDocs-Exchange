@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -170,10 +170,10 @@ To verify that you have successfully disabled an archive mailbox, do the followi
 
 |**Property**|**Value**|
 |:-----|:-----|
-|**ArchiveDatabase** (for on-premises archives)  <br/> |\<blank\>  <br/> |
-|**ArchiveState** <br/> | `None` <br/> |
-|**DisabledArchiveDatabase** (for on-premises archives)  <br/> | _\<name of mailbox database\>_ <br/> |
-|**DisabledArchiveGuid** <br/> | _\<GUID of disabled archive\>_ <br/> |
+|**ArchiveDatabase** (for on-premises archives)|\<blank\>|
+|**ArchiveState**| `None`|
+|**DisabledArchiveDatabase** (for on-premises archives)| _\<name of mailbox database\>_|
+|**DisabledArchiveGuid**| _\<GUID of disabled archive\>_|
 
 ## Re-enable an archive mailbox
 <a name="reenable"> </a>

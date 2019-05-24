@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 The message encoding options that are available in Exchange specify message characteristics, such as MIME and non-MIME character sets, binary encoding, and attachment formats. You can specify message encoding options in the following locations:
 
@@ -26,13 +25,13 @@ The message encoding options that are available in Exchange specify message char
   - Mail user and mail contact settings
 
   - Microsoft Outlook settings
-    
+
       - Message format
-    
+
       - Internet message format
-    
+
       - Internet recipient message format
-    
+
       - Message character set encoding options
 
 **Content**
@@ -52,7 +51,6 @@ For more information
 ## Message encoding options for messages sent to remote domains
 
 When you configure message encoding options for a remote domain, the specific settings are applied for all messages sent to that domain. For remote domains in your organization, you have the following configuration options for message encoding.
-
 
 <table>
 <colgroup>
@@ -96,20 +94,19 @@ When you configure message encoding options for a remote domain, the specific se
 </tbody>
 </table>
 
-
 Return to top
 
 ## Message encoding options for mail users and mail contacts
 
 When you configure message encoding options for a mail contact or a mail user, that option is applied to all messages sent to that specific recipient. For mail contacts and mail users in your organization, you have the following configuration options for message encoding:
 
-  - **UsePreferMessageFormat**   This parameter specifies whether the message format settings configured for the mail contact override the global settings configured for the remote domain. If you disable this setting, Exchange ignores other message encoding options for this recipient and the message encoding is determined by the configuration of the remote domain or the settings configured by the message sender.
+  - **UsePreferMessageFormat**: This parameter specifies whether the message format settings configured for the mail contact override the global settings configured for the remote domain. If you disable this setting, Exchange ignores other message encoding options for this recipient and the message encoding is determined by the configuration of the remote domain or the settings configured by the message sender.
 
-  - **MessageFormat**   This parameter specifies the message format. You can either specify Text or Mime as the message format. The value of this setting is dependent on the *MessageBodyFormat* parameter. If the message body format is Html or TextAndHtml, you must set this parameter to Mime.
+  - **MessageFormat**: This parameter specifies the message format. You can either specify Text or Mime as the message format. The value of this setting is dependent on the *MessageBodyFormat* parameter. If the message body format is Html or TextAndHtml, you must set this parameter to Mime.
 
-  - **MessageBodyFormat**   This parameter specifies the message body format. You can specify Text, Html, or TextAndHtml. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is Text, you must also set this parameter to Text.
+  - **MessageBodyFormat**: This parameter specifies the message body format. You can specify Text, Html, or TextAndHtml. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is Text, you must also set this parameter to Text.
 
-  - **MacAttachmentFormat**   This parameter specifies the Apple Macintosh operating system attachment format for messages. You can specify BinHex, UuEncode, AppleSingle, or AppleDouble. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is set to Text, you must set this parameter to either BinHex or UuEncode. If the message format is set to Mime, you must set this parameter to BinHex, AppleSingle or AppleDouble.
+  - **MacAttachmentFormat**: This parameter specifies the Apple Macintosh operating system attachment format for messages. You can specify BinHex, UuEncode, AppleSingle, or AppleDouble. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is set to Text, you must set this parameter to either BinHex or UuEncode. If the message format is set to Mime, you must set this parameter to BinHex, AppleSingle or AppleDouble.
 
 You need to use these parameters in the Exchange Management Shell to set the message encoding options for mail users and mail contacts. For more information, see the following topics:
 
@@ -157,11 +154,11 @@ Return to top
 
 Exchange uses the order of precedence as described in the following list to determine the message encoding options for outgoing messages sent to recipients outside the Exchange organization:
 
-1.  Remote domain settings
+1. Remote domain settings
 
-2.  Outlook or Outlook Web App settings
+2. Outlook or Outlook Web App settings
 
-3.  Mail user or mail contact settings
+3. Mail user or mail contact settings
 
 The list specifies the order of precedence from lowest to highest. A setting made at a higher level may override a setting made at a lower level.
 
@@ -203,7 +200,6 @@ The following table describes the order of precedence from lowest priority to hi
 </tr>
 </tbody>
 </table>
-
 
 When you set the non-MIME character set for a remote domain, the character set is assigned to the following types of messages:
 
@@ -302,7 +298,6 @@ The following table describes the order of precedence from lowest priority to hi
 </tbody>
 </table>
 
-
 The following table describes the order of precedence from lowest priority to highest priority for MIME message encoding options.
 
 ### Order of precedence from lowest priority to highest priority for MIME message encoding options
@@ -388,7 +383,6 @@ The following table describes the order of precedence from lowest priority to hi
 </tbody>
 </table>
 
-
 Return to top
 
 ## For more information
@@ -406,4 +400,3 @@ Return to top
 [Manage mail contacts](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [Change the message format in Outlook](https://go.microsoft.com/fwlink/p/?linkid=397890)
-

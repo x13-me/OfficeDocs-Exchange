@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 All previous versions of Exchange Server, from Exchange Server 4.0 to Exchange Server 2010, have supported running a single instance of the Information Store process (Store.exe) on the Mailbox server role. This single Store instance hosts all databases on the server: active, passive, lagged, and recovery. In the previous Exchange architectures, there is little, if any, isolation between the different databases hosted on a Mailbox server. An issue with a single mailbox database has the potential to negatively affect all other databases, and crashes resulting from a mailbox corruption can affect service for all users whose databases are hosted on that server.
 
 Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
@@ -34,31 +33,31 @@ For example, if you have 40 databases mounted on a server, there will be 41 proc
 The store service process controller is very thin and very reliable, but if it dies or is terminated, all of its worker processes die (they will detect the service controller process is gone and exit). The store process controller monitors the health of all store worker processes on the server. A forcible or unexpected termination the Microsoft.Exchange.Store.Service.exe causes an immediate failover of all active database copies. The Managed Store is also tightly integrated with the Microsoft Exchange Replication service (MSExchangeRepl.exe) and Active Manager. The controller process, worker processes, and Replication service work together to provide greater availability and reliability:
 
   - Microsoft Exchange Replication service process (MSExchangeRepl.exe)
-    
+
       - Responsible for issuing mount and dismount operations to the Store
-    
+
       - Initiates recovery action on storage or database failures reported by the Store, the Extensible Storage Engine (ESE), and Managed Availability responders
-    
+
       - Detects unexpected database failures
-    
+
       - Provides the administrative interface for management tasks
 
   - Store service process/controller (Microsoft.Exchange.Store.Service.exe)
-    
+
       - Manages each worker process lifetime based on the mount and dismount operations received from the Replication service
-    
+
       - Handles incoming requests from the Windows Service Control Manager
-    
+
       - Logs failure items when store worker process problems detected (for example, hang or unexpected exit)
-    
+
       - Terminates store worker processes in response failover event
 
   - Store worker process (Microsoft.Exchange.Store.Worker.exe)
-    
+
       - Responsible for executing RPC operations for mailboxes on a database
-    
+
       - RPC endpoint instance within worker process is the database GUID
-    
+
       - Provides database cache for a database
 
 ## Static Database Caching Algorithm
@@ -67,11 +66,8 @@ The database caching algorithm known as dynamic buffer allocation that was intro
 
 The static algorithm used by Exchange 2013 allocates memory for each store worker process' ESE cache based on physical RAM. This is referred to as a database's *Max Cache Target*. 25% of total server memory is allocated to the ESE cache. This is referred to as the *Server Cache Size Target*.
 
-
 > [!NOTE]
 > The Server Cache Size Target, and therefore the amount of memory allocated to the Store for ESE cache, can be overridden using <EM>msExchESEParamCacheSizeMax</EM> attribute of the <EM>InformationStore</EM> object in Active Directory (the value configured is the number of 32 KB pages to allocate across all store processes).
-
-
 
 A static amount of this cache is allocated to active and passive copies. The store worker process will be allocated the Max Cache Target only when servicing an active database copy. Passive database copies are allocated 20 percent of the Max Cache Target. The remainder is reserved by the Store, and allocated to the worker process if the database transitions from passive to active.
 
@@ -116,4 +112,3 @@ To determine the amount of memory used for the passive database copies, multiply
 5 GB X 20% = 1 GB
 
 Out of the 12 GB of memory assigned to the Server Cache Size Target, 12 GB will be in use by database worker processes, and no memory will be reserved by the Information Store for the two passive database copies because they cannot become active copies in this configuration (because *MaximumActiveDatabases* is configured with a value of 2, and there are already 2 active database copies on the server).
-

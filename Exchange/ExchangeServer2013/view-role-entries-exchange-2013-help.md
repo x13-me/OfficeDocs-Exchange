@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Each management role entry represents a single cmdlet or script. The parameters included on a role entry determine what parameters on the cmdlet or script a user can access.
 
 The identity of role entries consists of the management role name that the role entry is associated with, and the cmdlet or script that the role entry refers to. For more information about role entries in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
@@ -34,20 +33,17 @@ Looking for other management tasks related to role entries? Check out [Advanced 
   - You must use the Shell to perform these procedures.
 
   - This topic makes use of pipelining, the **Format-List** cmdlet, objects, and properties. For more information about these concepts, see the following topics:
-    
+
       - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
-    
+
       - [Working with command output](working-with-command-output-exchange-2013-help.md)
-    
+
       - [Structured data](https://technet.microsoft.com/en-us/library/aa996386\(v=exchg.150\))
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -140,4 +136,3 @@ This example retrieves the parameters on the **Set-Mailbox** role entry on the M
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)).
-

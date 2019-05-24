@@ -9,7 +9,7 @@ title: Digital certificates and encryption in Exchange Server
 ms.collection: exchange-server
 ms.date:
 ms.reviewer: 
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

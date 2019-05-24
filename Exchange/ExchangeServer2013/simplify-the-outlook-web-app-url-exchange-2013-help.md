@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 **Summary:** Use the procedures in this article to simplify the URL that your organization users to access OWA in Exchange 2013.
 
 You can simplify the Microsoft Outlook Web App URL that users use to access their Exchange Server 2013 mailbox.
@@ -35,73 +34,67 @@ When you configure redirection from a top-level directory in Windows Server 2008
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
 
-
-
 ## Step 1: Use IIS Manager to simplify the Outlook Web App URL and force redirection to SSL
 
-1.  Start IIS Manager.
+1. Start IIS Manager.
 
-2.  Expand the local computer, expand **Sites**, and then click **Default Web Site**.
+2. Expand the local computer, expand **Sites**, and then click **Default Web Site**.
 
-3.  At the bottom of the Default Web Site Home pane, click **Features View** if this option isn't already selected.
+3. At the bottom of the Default Web Site Home pane, click **Features View** if this option isn't already selected.
 
-4.  In the **IIS** section, double-click **HTTP Redirect**.
+4. In the **IIS** section, double-click **HTTP Redirect**.
 
-5.  Select the **Redirect requests to this destination** check box.
+5. Select the **Redirect requests to this destination** check box.
 
-6.  Type the absolute path of the /owa virtual directory. For example, type **https://mail.contoso.com/owa**.
+6. Type the absolute path of the /owa virtual directory. For example, type **https://mail.contoso.com/owa**.
 
-7.  Under **Redirect Behavior**, select the **Only redirect requests to content in this directory (not subdirectories)** check box.
+7. Under **Redirect Behavior**, select the **Only redirect requests to content in this directory (not subdirectories)** check box.
 
-8.  In the **Status code** list, click **Found (302)**.
+8. In the **Status code** list, click **Found (302)**.
 
-9.  In the Actions pane, click **Apply**.
+9. In the Actions pane, click **Apply**.
 
 10. Click **Default Web Site**.
 
 11. In the Default Web Site Home pane, double-click **SSL Settings**.
 
 12. In **SSL Settings**, clear **Require SSL**.
-    
 
     > [!NOTE]
     > If you don't clear <STRONG>Require SSL</STRONG>, users won't be redirected when they enter an unsecured URL. Instead, they'll get an access denied error.
-
-
 
 ## Step 2: Remove redirection from virtual directories
 
 To remove redirection from a virtual directory, perform the following steps:
 
-1.  Open a Command Prompt window.
+1. Open a Command Prompt window.
 
-2.  Navigate to \<*Window directory*\>\\System32\\Inetsrv.
+2. Navigate to \<*Window directory*\>\\System32\\Inetsrv.
 
-3.  Run the following commands:
-    
-    1.  `appcmd set config "Default Web Site/autodiscover" /section:httpredirect /enabled:false -commit:apphost`
-    
-    2.  `appcmd set config "Default Web Site/ecp" /section:httpredirect /enabled:false -commit:apphost`
-    
-    3.  `appcmd set config "Default Web Site/ews" /section:httpredirect /enabled:false -commit:apphost`
-    
-    4.  `appcmd set config "Default Web Site/owa" /section:httpredirect /enabled:false -commit:apphost`
-    
-    5.  `appcmd set config "Default Web Site/oab" /section:httpredirect /enabled:false -commit:apphost`
-    
-    6.  `appcmd set config "Default Web Site/powershell" /section:httpredirect /enabled:false -commit:apphost`
-    
-    7.  `appcmd set config "Default Web Site/rpc" /section:httpredirect /enabled:false -commit:apphost`
-    
-    8.  `appcmd set config "Default Web Site/rpcwithcert" /section:httpredirect /enabled:false -commit:apphost`
-    
-    9.  `appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:httpredirect /enabled:false -commit:apphost`
+3. Run the following commands:
 
-4.  Finish by running the command `iisreset/noforce`.
+    1. `appcmd set config "Default Web Site/autodiscover" /section:httpredirect /enabled:false -commit:apphost`
+
+    2. `appcmd set config "Default Web Site/ecp" /section:httpredirect /enabled:false -commit:apphost`
+
+    3. `appcmd set config "Default Web Site/ews" /section:httpredirect /enabled:false -commit:apphost`
+
+    4. `appcmd set config "Default Web Site/owa" /section:httpredirect /enabled:false -commit:apphost`
+
+    5. `appcmd set config "Default Web Site/oab" /section:httpredirect /enabled:false -commit:apphost`
+
+    6. `appcmd set config "Default Web Site/powershell" /section:httpredirect /enabled:false -commit:apphost`
+
+    7. `appcmd set config "Default Web Site/rpc" /section:httpredirect /enabled:false -commit:apphost`
+
+    8. `appcmd set config "Default Web Site/rpcwithcert" /section:httpredirect /enabled:false -commit:apphost`
+
+    9. `appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:httpredirect /enabled:false -commit:apphost`
+
+4. Finish by running the command `iisreset/noforce`.
 
 When you configure redirection from a top-level directory, a web.config file may be created under \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab. If this has happened and you later remove redirection, Outlook may freeze when users click **Send and Receive**. To avoid this happening after you remove redirection, delete the web.config file from \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab.
 
@@ -109,7 +102,6 @@ When you configure redirection from a top-level directory, a web.config file may
 
 To verify that you have successfully simplified the Outlook Web App URL and redirected it to an SSL connection, do the following:
 
-1.  Open a web browser and enter the new URL for Outlook Web App, using the format http://\<*URL*\>.
+1. Open a web browser and enter the new URL for Outlook Web App, using the format http://\<*URL*\>.
 
-2.  You should be redirected to the Outlook Web App sign-in page through an SSL connection.
-
+2. You should be redirected to the Outlook Web App sign-in page through an SSL connection.

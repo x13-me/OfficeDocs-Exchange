@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 An Exchange workload is an Exchange Server feature, protocol, or service that's been explicitly defined for the purposes of Exchange system resource management. Each Exchange workload consumes system resources such as CPU, mailbox database operations, or Active Directory requests to run user requests or background work. Examples of Exchange workloads include Outlook Web App, Exchange ActiveSync, mailbox migration, and mailbox assistants.
 
 You manage Exchange workloads by controlling how resources are consumed by individual users (sometimes called user throttling in Exchange 2010). Controlling how Exchange system resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013.
 
-
 > [!NOTE]
 > Managing workloads by monitoring the health of system resources on the Exchange servers in your organization should only be done under the direction of Microsoft Customer Service and Support.
-
-
 
 ## Managing workloads by controlling how resources are consumed by individual users
 
@@ -39,13 +35,13 @@ By default, user throttling in Exchange 2013 allows users to increase resource c
 
 Here are some highlights of the way Exchange controls how resources are consumed by individual users in Exchange 2013:
 
-  - **Burst allowances**   Burst allowances let your users perform short periods of increased resource consumption without experiencing any throttling.
+  - **Burst allowances**: Burst allowances let your users perform short periods of increased resource consumption without experiencing any throttling.
 
-  - **Recharge rate**   Recharge rate manages your users' resource consumption by using a resource budget system. You can set the rate at which your users' resource budgets are recharged. For example, a value of 600,000 (in milliseconds) implies that users' budgets get recharged at a rate of ten minutes of usage per hour.
+  - **Recharge rate**: Recharge rate manages your users' resource consumption by using a resource budget system. You can set the rate at which your users' resource budgets are recharged. For example, a value of 600,000 (in milliseconds) implies that users' budgets get recharged at a rate of ten minutes of usage per hour.
 
-  - **Traffic shaping**   When a user's resource usage reaches the configured limit over a period of time, that user is delayed for very short periods of time well in advance of causing a significant impact on a server. Users generally don't notice these "microdelays." This process enables Exchange 2013 to efficiently shape traffic without blocking users from being productive. Traffic shaping has less impact on your users than early lockout, and it significantly reduces the chance that a lockout will occur.
+  - **Traffic shaping**: When a user's resource usage reaches the configured limit over a period of time, that user is delayed for very short periods of time well in advance of causing a significant impact on a server. Users generally don't notice these "microdelays." This process enables Exchange 2013 to efficiently shape traffic without blocking users from being productive. Traffic shaping has less impact on your users than early lockout, and it significantly reduces the chance that a lockout will occur.
 
-  - **Maximum usage**   In rare circumstances, a user may consume a very high amount of resources over a short period of time. As a precaution, a user who reaches a maximum usage threshold may be temporarily blocked from using resources. Users who are temporarily blocked from resource usage are unblocked as soon as their usage budgets are recharged.
+  - **Maximum usage**: In rare circumstances, a user may consume a very high amount of resources over a short period of time. As a precaution, a user who reaches a maximum usage threshold may be temporarily blocked from using resources. Users who are temporarily blocked from resource usage are unblocked as soon as their usage budgets are recharged.
 
 For a list of cmdlets you can use to control how resources are consumed by individual users, see "Cmdlets to control how resources are used by individual users" later in this topic.
 
@@ -87,8 +83,5 @@ Assign throttling policies
 
   - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/en-us/library/ff459231\(v=exchg.150\))
 
-
 > [!NOTE]
 > The <STRONG>&#42;-ResourcePolicy</STRONG>, <STRONG>&#42;-WorkloadManagementPolicy</STRONG> and <STRONG>&#42;-WorkloadPolicy</STRONG> system workload management cmdlets have been deprecated. System workload management settings should be customized only under the direction of Microsoft Customer Service and Support.
-
-

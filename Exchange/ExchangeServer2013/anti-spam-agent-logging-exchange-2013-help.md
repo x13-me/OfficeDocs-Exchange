@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Anti-spam agent logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Agent logs record the actions performed on a message by specific anti-spam agents in Microsoft Exchange Server 2013. Only the following agents can write information to the agent log:
 
@@ -33,11 +30,8 @@ Agent logs record the actions performed on a message by specific anti-spam agent
 
   - Sender ID agent
 
-
-> [!NOTE]  
+> [!NOTE]
 > The Connection Filtering agent and the Edge Rules agent aren't available on Mailbox servers.
-
-
 
 The information written to the agent log depends on the agent, the SMTP event, and the action performed on the message.
 
@@ -113,12 +107,8 @@ The following table lists the SMTP events in order of occurrence and the agents 
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > The Connection Filtering agent and the Edge Rules agent aren't available on Mailbox servers.
-
-
 
 For more information about agents, SMTP events, and agent priority, see [Transport agents](transport-agents-exchange-2013-help.md).
 
@@ -138,15 +128,15 @@ Information is written to the log file until the file size reaches its maximum s
 
 The agent log files are text files that contain data in the comma-separated value file (CSV) format. Each agent log file has a header that contains the following information:
 
-  - **\#Software**   Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
+  - **\#Software**: Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version**   Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
+  - **\#Version**: Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type**   Log type value, which is Agent Log.
+  - **\#Log-Type**: Log type value, which is Agent Log.
 
-  - **\#Date**   UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+  - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields**   Comma delimited field names used in the agent log files.
+  - **\#Fields**: Comma delimited field names used in the agent log files.
 
 Return to top
 
@@ -261,7 +251,6 @@ The agent log stores each agent transaction on a single line in the log. The inf
 </tbody>
 </table>
 
-
 Return to top
 
 ## Search the agent logs
@@ -287,4 +276,3 @@ Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
 ```
 
 Return to top
-

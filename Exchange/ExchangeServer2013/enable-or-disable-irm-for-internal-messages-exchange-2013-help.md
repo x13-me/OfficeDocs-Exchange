@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, Information Rights Management (IRM) is enabled by default for internal messages. This allows you to create transport protection rules and Microsoft Outlook protection rules to IRM-protect messages in transport and on Microsoft Outlook 2010 and later clients. Enabling IRM for internal messages is a prerequisite for all other IRM features in Exchange Server 2013, such as transport decryption, journal rule decryption, IRM in Microsoft Office Outlook Web App, and IRM in Microsoft Exchange ActiveSync.
-
 
 > [!WARNING]
 > Disabling IRM for internal messages disables all IRM features in the Exchange organization. The client-side IRM features in Outlook (for example, the ability to read, reply to, forward, and create IRM-protected messages using an Active Directory Rights Management Services (AD&nbsp;RMS) server) aren't affected.
-
-
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -39,11 +35,8 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to enable IRM for internal messages
 
@@ -68,4 +61,3 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 ## How do you know this worked?
 
 To verify that you've enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
-

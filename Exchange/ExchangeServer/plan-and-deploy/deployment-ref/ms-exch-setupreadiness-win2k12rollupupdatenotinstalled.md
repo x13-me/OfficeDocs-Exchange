@@ -11,7 +11,7 @@ ms.date: 12/20/2016
 ms.reviewer: 
 title: A Windows Server 2012 update rollup hasn't been installed [Win2k12RollupUpdateNotInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

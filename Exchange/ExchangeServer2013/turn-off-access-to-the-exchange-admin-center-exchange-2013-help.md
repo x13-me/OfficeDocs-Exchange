@@ -18,20 +18,13 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 For security purposes, some organizations may want to restrict access to the Exchange admin center (EAC) for users coming from the Internet. This procedure shows you how to turn off access to the EAC. This procedure doesn't prevent users from accessing the Options in Outlook Web App.
-
 
 > [!NOTE]
 > This procedure disables EAC administrator access entirely on the CAS server where the steps are applied. If you to enable EAC administrator for internal users, you should install a separate CAS server and configure it to only handle internal requests using the following command:<BR><CODE>Set-ECPVirtualDirectory -Identity "InternalCAS\ecp (default web site)" -AdminEnabled $True</CODE>
 
-
-
-
 > [!WARNING]
 > The procedure applies only to on-premises deployments of Exchange Server 2013.
-
-
 
 ## What do you need to know before you begin?
 
@@ -43,11 +36,8 @@ For security purposes, some organizations may want to restrict access to the Exc
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to turn off Internet access to the EAC
 
@@ -63,7 +53,6 @@ For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](htt
 
 To verify that you have successfully turned off access to the EAC, do the following:
 
-1.  Using your Internet browser, type your organization's internal or external URL for accessing Outlook Web App but replace the **/owa** identifier with **/ecp**. For example, if your external URL for accessing Outlook Web App is https://primary.tailspintoys.com/owa, use https://primary.tailspintoys.com/ecp.
+1. Using your Internet browser, type your organization's internal or external URL for accessing Outlook Web App but replace the **/owa** identifier with **/ecp**. For example, if your external URL for accessing Outlook Web App is https://primary.tailspintoys.com/owa, use https://primary.tailspintoys.com/ecp.
 
-2.  If access is turned off, you'll receive a **404 - website not found** error.
-
+2. If access is turned off, you'll receive a **404 - website not found** error.

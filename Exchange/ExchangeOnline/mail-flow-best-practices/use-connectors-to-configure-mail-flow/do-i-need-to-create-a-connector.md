@@ -11,7 +11,7 @@ ms.date:
 ms.reviewer: 
 title: Do I need to create a connector in Exchange Online?
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -35,15 +34,14 @@ To resolve this issue, verify that the COM+ Event System service status is set t
 
 **To set the status of the COM+ Event System service to 'Started'**
 
-1.  Right-click **My Computer**, and then click **Manage**.
+1. Right-click **My Computer**, and then click **Manage**.
 
-2.  Expand the **Services and Applications** node, and then click the **Services** node.
+2. Expand the **Services and Applications** node, and then click the **Services** node.
 
-3.  In the right pane, locate the **Com+ Event System**.
+3. In the right pane, locate the **Com+ Event System**.
 
-4.  Right-click **Com+ Event System**, and then click **Properties**.
+4. Right-click **Com+ Event System**, and then click **Properties**.
 
-5.  Set the **Startup Type** to **Automatic** and the **Service status** to **Started**.
+5. Set the **Startup Type** to **Automatic** and the **Service status** to **Started**.
 
-6.  Click **Apply**, and then click **OK**.
-
+6. Click **Apply**, and then click **OK**.

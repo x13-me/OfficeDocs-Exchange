@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 You must configure the Voice over IP (VoIP) gateways and IP Private Branch eXchanges (PBXs) correctly when you deploy Unified Messaging (UM) for your organization. If you're deploying UM in a hybrid environment, you'll also need to correctly configure your session border controllers (SBCs). To do this, you need to configure the interface or interfaces of the VoIP gateways, IP PBXs, and SBCs to communicate with Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service.
 
-
 > [!IMPORTANT]
 > When you perform administrative tasks for a VoIP gateway, IP PBX, or SBC using a web browser, the HTTP requests sent over the network aren't encrypted. To increase the level of security for the VoIP gateways, IP PBXs, or SBCs on your network, use Internet Protocol security (IPsec) or Secure Sockets Layer (SSL) to help protect the administrative credentials and data transmitted over the network. We also recommend that you use a strong authentication mechanism and complex administrative passwords to protect the administrative credentials for the device.
-
-
 
 ## Telephony IP device interfaces
 
@@ -43,11 +39,11 @@ To enable communication with the Client Access and Mailbox servers on your netwo
 
 The following is a list of resources found on the Exchange TechCenter that provide information that can help you correctly configure your VoIP gateways, IP PBXs, and SBCs:
 
-  - **Supported IP gateway, IP PBX, and PBX documentation**   [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) includes configuration files and setup information that you can use when you configure VoIP gateways, IP PBXs, PBXs, and SBCs.
+  - **Supported IP gateway, IP PBX, and PBX documentation**: [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) includes configuration files and setup information that you can use when you configure VoIP gateways, IP PBXs, PBXs, and SBCs.
 
-  - **Configuration and technical notes**   [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) includes configuration files and setup information that you can use when you configure VoIP gateways, IP PBXs, and PBXs.
+  - **Configuration and technical notes**: [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) includes configuration files and setup information that you can use when you configure VoIP gateways, IP PBXs, and PBXs.
 
-  - **Configuration notes for Exchange UM online**   [Configuration notes for supported session border controllers](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) includes configuration files and setup information that you can use when you configure SBCs.
+  - **Configuration notes for Exchange UM online**: [Configuration notes for supported session border controllers](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) includes configuration files and setup information that you can use when you configure SBCs.
 
 Unified Messaging specialists are available to assist you in configuring your telephony and IP-based network devices. A Unified Messaging specialist can help make sure that there's a smooth transition to Unified Messaging from a legacy or third-party voice mail system or help you plan and deploy a new voice mail system with Exchange Unified Messaging. Deploying a new voice mail system or upgrading a legacy one requires significant knowledge about VoIP gateways, IP PBXs, PBXs, and Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
 
@@ -57,8 +53,5 @@ After you create a UM IP gateway, the Client Access and Mailbox servers associat
 
 A Client Access server and a Mailbox server will communicate only with a VoIP gateway, IP PBX, or SBC that's listed as a trusted Session Initiation Protocol (SIP) peer. An event with ID 1175 will be logged when multiple DNS hosts share the same IP address. This event may occur if you've configured your DNS zones with FQDNs for the VoIP gateways on your network. Unified Messaging protects against unauthorized requests by retrieving the internal URL of the Unified Messaging Web Services virtual directory that's located on the Mailbox server and then using the URL to build the list of FQDNs for the trusted SIP peers. After two FQDNs are resolved to the same IP address, this event will be logged.
 
-
 > [!NOTE]
 > You must restart the Microsoft&nbsp;Exchange Unified Messaging service if a VoIP gateway, IP PBX, or SBC is configured to have an FQDN and the DNS record of the VoIP gateway, IP PBX, or SBC is changed after the service has been started. If you don't restart the service, the Mailbox server won't be able to locate the VoIP gateway, IP PBX, or SBC. This occurs because a Mailbox server maintains a cache for all VoIP gateways, IP PBXs, or SBCs in memory, and DNS resolution is performed only when the service is restarted or when the configuration of a VoIP gateway, IP PBX, or SBC has changed.
-
-

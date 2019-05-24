@@ -11,7 +11,7 @@ title: Accessing public folders with Outlook 2016 for Mac
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

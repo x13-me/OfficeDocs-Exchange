@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Safe domain data is an entire domain (for example, @contoso.com) that's stored in a user's Safe Senders List. By default, the Content Filter agent doesn't use safe domain data to identify senders that are allowed to bypass content filtering.
 
 This default setting helps reduce the amount of spam that's delivered into your organization. For example, a user might add the domain of a large email provider to their Safe Senders List. If this domain is frequently used or spoofed by spammers, and if content filtering is configured to use safe domain data to mark the messages as safe, messages from any sender in that domain would be delivered to recipients in your organization.
@@ -37,39 +36,35 @@ We recommend that you don't modify the default setting in most cases. However, y
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Use a command prompt to configure content filtering to use safe domain data
 
-1.  In the Command Prompt window, open the MSExchangeMailboxAssistants.exe.config file in Notepad by running the following command:
-    
+1. In the Command Prompt window, open the MSExchangeMailboxAssistants.exe.config file in Notepad by running the following command:
+
     ```powershell
     Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
     ```
 
-2.  Locate the *\</appsettings\>* key at the end of the file, and paste the following key before the *\</appsettings\>* key:
-    
+2. Locate the *\</appsettings\>* key at the end of the file, and paste the following key before the *\</appsettings\>* key:
+
     ```command line
     <add key="IncludeSafeDomains" value="true" />
     ```
 
-3.  When you are finished, save and close the MSExchangeMailboxAssistants.exe.config file.
+3. When you are finished, save and close the MSExchangeMailboxAssistants.exe.config file.
 
-4.  Restart the Microsoft Exchange Mailbox Assistants service by running the following command:
-    
+4. Restart the Microsoft Exchange Mailbox Assistants service by running the following command:
+
     ```powershell
         net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
     ```
-    
+
 ## How do you know this worked?
 
 To verify that you have successfully configured content filtering to use safe domain data, do the following:
 
-1.  Verify that adding a domain to a user's Safe Senders List in Outlook updates the user's **msExchSafeSenderHash** attribute in Active Directory. To do this, view the attribute in ADSIEdit.exe or LDP.exe, open the user's mailbox in Outlook, add a domain to the Safe Senders List, run the command `Update-Safelist <username>`, and verify that the original and current values of **msExchSafeSenderHash** are different.
+1. Verify that adding a domain to a user's Safe Senders List in Outlook updates the user's **msExchSafeSenderHash** attribute in Active Directory. To do this, view the attribute in ADSIEdit.exe or LDP.exe, open the user's mailbox in Outlook, add a domain to the Safe Senders List, run the command `Update-Safelist <username>`, and verify that the original and current values of **msExchSafeSenderHash** are different.
 
-2.  After you've verified the safe domain data is stored in Active Directory, send a test message from an external sender in that domain to a user in your organization. Verify the message is marked as safe by examining the anti-spam header fields in the message header.
-
+2. After you've verified the safe domain data is stored in Active Directory, send a test message from an external sender in that domain to a user in your organization. Verify the message is marked as safe by examining the anti-spam header fields in the message header.

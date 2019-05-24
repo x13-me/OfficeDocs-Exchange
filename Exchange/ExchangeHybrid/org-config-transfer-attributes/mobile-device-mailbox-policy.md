@@ -4,7 +4,7 @@ ms.author: kchandra
 author: ChandraKavya
 manager: dansimp
 ms.reviewer: dstrome
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

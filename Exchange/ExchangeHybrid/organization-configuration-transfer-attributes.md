@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 6/25/2018
 ms.reviewer: 
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

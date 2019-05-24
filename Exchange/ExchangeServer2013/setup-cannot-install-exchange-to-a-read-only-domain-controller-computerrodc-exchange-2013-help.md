@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,4 +29,3 @@ Read-Only Domain Controllers are a feature of Windows Server 2008 Active Directo
 Exchange Setup requires write access to the target install computer.
 
 To resolve this issue, select a target install computer that is not designated as an RODC, and rerun Setup.
-

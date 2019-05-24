@@ -18,11 +18,9 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 adds new and modifies existing Active Directory schema classes and attributes. This reference topic provides a summary of the Active Directory schema changes that are made when you install the release to manufacturing (RTM) version of Exchange 2013 or any of its cumulative updates or service packs. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \\amd64\\Setup\\Data\\ directory in the Exchange installation files.
 
 Exchange 2013 schema updates are cumulative. Each release includes all of the changes included in previous releases. This means that if you skip a release, you may still need to apply schema updates even if the release you're installing doesn't include its own changes. The following table gives examples of when your Active Directory will be updated, and when it's already up-to-date.
-
 
 <table>
 <colgroup>
@@ -56,12 +54,8 @@ Exchange 2013 schema updates are cumulative. Each release includes all of the ch
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
-
-
 
 This document includes the following sections:
 
@@ -101,7 +95,6 @@ This section summarizes the changes that are made to the Active Directory schema
 
 This section contains the classes modified in Exchange 2013 CU7.
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -139,7 +132,6 @@ This section contains the classes modified in Exchange 2013 CU7.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 CU7
 
 This section contains the attributes added in Exchange 2013 CU7.
@@ -163,7 +155,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes modified by Exchange 2013 CU6
 
 This section contains the classes modified in Exchange 2013 CU6.
-
 
 <table>
 <colgroup>
@@ -192,7 +183,6 @@ This section contains the classes modified in Exchange 2013 CU6.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 CU6
 
 This section contains the attributes added in Exchange 2013 CU6.
@@ -204,7 +194,6 @@ This section contains the attributes added in Exchange 2013 CU6.
 ## Attributes modified by Exchange 2013 CU6
 
 This section contains the attributes modified in Exchange 2013 CU6.
-
 
 <table>
 <colgroup>
@@ -228,7 +217,6 @@ This section contains the attributes modified in Exchange 2013 CU6.
 </tbody>
 </table>
 
-
 ## Exchange 2013 CU5 Active Directory schema changes
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2013 CU5. This section includes the following subsections:
@@ -242,7 +230,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes added by Exchange 2013 CU5
 
 This section contains the classes added in Exchange 2013 CU5.
-
 
 <table>
 <colgroup>
@@ -267,7 +254,6 @@ This section contains the classes added in Exchange 2013 CU5.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 CU5
 
 This section contains the attributes added in Exchange 2013 CU5.
@@ -279,7 +265,6 @@ This section contains the attributes added in Exchange 2013 CU5.
 ## Attributes modified by Exchange 2013 CU5
 
 This section contains the attributes modified in Exchange 2013 CU5.
-
 
 <table>
 <colgroup>
@@ -313,7 +298,6 @@ This section contains the attributes modified in Exchange 2013 CU5.
 </tbody>
 </table>
 
-
 ## Exchange 2013 SP1 Active Directory schema changes
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2013 Service Pack 1 (SP1). This section includes the following subsections:
@@ -331,7 +315,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes added by Exchange 2013 SP1
 
 This section contains the classes added in Exchange 2013 SP1.
-
 
 <table>
 <colgroup>
@@ -356,11 +339,9 @@ This section contains the classes added in Exchange 2013 SP1.
 </tbody>
 </table>
 
-
 ## Classes modified by Exchange 2013 SP1
 
 This section contains the attributes added in Exchange 2013 SP1.
-
 
 <table>
 <colgroup>
@@ -399,7 +380,6 @@ This section contains the attributes added in Exchange 2013 SP1.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 SP1
 
 This section contains the attributes added in Exchange 2013 SP1.
@@ -419,7 +399,6 @@ The following global catalog attributes are added by Exchange 2013 SP1:
 ## Attributes modified by Exchange 2013 SP1
 
 This section contains the attributes modified in Exchange 2013 SP1.
-
 
 <table>
 <colgroup>
@@ -443,7 +422,6 @@ This section contains the attributes modified in Exchange 2013 SP1.
 </tbody>
 </table>
 
-
 ## Exchange 2013 CU3 Active Directory schema changes
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2013 CU3. This section includes the following subsections:
@@ -457,7 +435,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes added by Exchange 2013 CU3
 
 This section contains the classes added in Exchange 2013 CU3.
-
 
 <table>
 <colgroup>
@@ -478,7 +455,6 @@ This section contains the classes added in Exchange 2013 CU3.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 CU3
 
 This section contains the attributes added in Exchange 2013 CU3.
@@ -488,7 +464,6 @@ This section contains the attributes added in Exchange 2013 CU3.
 ## Attributes modified by Exchange 2013 CU3
 
 This section contains the attributes modified in Exchange 2013 CU3.
-
 
 <table>
 <colgroup>
@@ -512,7 +487,6 @@ This section contains the attributes modified in Exchange 2013 CU3.
 </tbody>
 </table>
 
-
 ## Exchange 2013 CU2 Active Directory schema changes
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2013 CU2. This section includes the following subsections:
@@ -528,7 +502,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes added by Exchange 2013 CU2
 
 This section contains the classes added in Exchange 2013 CU2.
-
 
 <table>
 <colgroup>
@@ -553,11 +526,9 @@ This section contains the classes added in Exchange 2013 CU2.
 </tbody>
 </table>
 
-
 ## Classes modified by Exchange 2013 CU2
 
 This section contains the classes modified in Exchange 2013 CU2.
-
 
 <table>
 <colgroup>
@@ -591,7 +562,6 @@ This section contains the classes modified in Exchange 2013 CU2.
 </tbody>
 </table>
 
-
 ## Attributes added by Exchange 2013 CU2
 
 This section contains the attributes added in Exchange 2013 CU2.
@@ -601,7 +571,6 @@ This section contains the attributes added in Exchange 2013 CU2.
 ## Attributes modified by Exchange 2013 CU2
 
 This section contains the attributes modified in Exchange 2013 CU2.
-
 
 <table>
 <colgroup>
@@ -629,7 +598,6 @@ This section contains the attributes modified in Exchange 2013 CU2.
 </tr>
 </tbody>
 </table>
-
 
 ## Object IDs added by Exchange 2013 CU2
 
@@ -664,7 +632,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes modified by Exchange 2013 CU1
 
 This section contains the classes modified in Exchange 2013 CU1.
-
 
 <table>
 <colgroup>
@@ -773,11 +740,9 @@ This section contains the classes modified in Exchange 2013 CU1.
 </tbody>
 </table>
 
-
 ## Classes added by Exchange 2013 CU1
 
 This section contains the classes modified in Exchange 2013 CU1.
-
 
 <table>
 <colgroup>
@@ -802,11 +767,9 @@ This section contains the classes modified in Exchange 2013 CU1.
 </tbody>
 </table>
 
-
 ## Attributes modified by Exchange 2013 CU1
 
 This section contains the attributes modified in Exchange 2013 CU1.
-
 
 <table>
 <colgroup>
@@ -835,7 +798,6 @@ This section contains the attributes modified in Exchange 2013 CU1.
 </tbody>
 </table>
 
-
 ## Object IDs added by Exchange 2013 CU1
 
 The following attribute object IDs are added when you install Exchange 2013 CU1:
@@ -862,7 +824,6 @@ The following class object IDs are added when you install Exchange 2013 CU1:
 
 The following table lists the attributes that are added to the list of indexed attributes when you install Exchange 2013 CU1.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -881,7 +842,6 @@ The following table lists the attributes that are added to the list of indexed a
 </tr>
 </tbody>
 </table>
-
 
 ## Property sets modified by Exchange 2013 CU1
 
@@ -924,7 +884,6 @@ This section summarizes the changes that are made to the Active Directory schema
 ## Classes modified by Exchange 2013 RTM
 
 This section contains the classes modified in Exchange 2013 RTM.
-
 
 <table>
 <colgroup>
@@ -1708,11 +1667,9 @@ This section contains the classes modified in Exchange 2013 RTM.
 </tbody>
 </table>
 
-
 ## Attributes modified by Exchange 2013 RTM
 
 This section contains the attributes modified in Exchange 2013 RTM.
-
 
 <table>
 <colgroup>
@@ -1835,7 +1792,6 @@ This section contains the attributes modified in Exchange 2013 RTM.
 </tr>
 </tbody>
 </table>
-
 
 ## Classes added by Exchange 2013 RTM
 
@@ -2273,7 +2229,6 @@ The following MAPI IDs are added when you install Exchange 2013 RTM:
 
 The following table lists the extended rights that are added when you install Exchange 2013 RTM. Installing Exchange 2013 RTM doesn't modify any existing extended rights.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -2296,7 +2251,6 @@ The following table lists the extended rights that are added when you install Ex
 </tr>
 </tbody>
 </table>
-
 
 ## Object IDs added by Exchange 2013 RTM
 
@@ -2718,7 +2672,6 @@ The following class object IDs are added when you install Exchange 2013 RTM:
 
 The following table lists the attributes that are added to the list of indexed attributes when you install Exchange 2013 RTM.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -2938,7 +2891,6 @@ The following table lists the attributes that are added to the list of indexed a
 </tbody>
 </table>
 
-
 ## Global catalog attributes added by Exchange 2013 RTM
 
 The following global catalog attributes are added by Exchange 2013 RTM:
@@ -3042,4 +2994,3 @@ The following global catalog attributes are added by Exchange 2013 RTM:
   - ms-Exch-Relocate-Tenant-Transition-Counter
 
   - ms-Exch-Sync-Cookie
-

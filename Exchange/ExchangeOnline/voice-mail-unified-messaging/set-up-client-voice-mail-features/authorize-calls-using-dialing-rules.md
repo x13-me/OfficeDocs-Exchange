@@ -9,7 +9,7 @@ ms.date: 3/9/2015
 ms.reviewer: 
 title: Authorize calls using dialing rules
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

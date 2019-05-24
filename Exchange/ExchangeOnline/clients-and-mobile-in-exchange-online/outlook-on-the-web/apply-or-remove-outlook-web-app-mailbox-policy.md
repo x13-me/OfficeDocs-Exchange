@@ -11,7 +11,7 @@ title: Apply or remove an Outlook on the web mailbox policy on a mailbox in Exch
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic provides information about the network ports that are used by Microsoft Exchange Server 2013 for communication with email clients, Internet mail servers, and other services that are external to your local Exchange organization. Before we get into that, understand the following ground rules:
 
   - We do not support restricting or altering network traffic between internal Exchange servers, between internal Exchange servers and internal Lync or Skype for Business servers, or between internal Exchange servers and internal Active Directory domain controllers in any and all types of topologies. If you have firewalls or network devices that could potentially restrict or alter this kind of network traffic, you need to configure rules that allow free and unrestricted communication between these servers (rules that allow incoming and outgoing network traffic on any port (including random RPC ports) and any protocol that never alter bits on the wire).
@@ -52,7 +51,6 @@ The network ports that are required for email clients to access mailboxes and ot
   - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
 ![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png "Network ports required for clients and services")
-
 
 <table>
 <colgroup>
@@ -129,7 +127,6 @@ The network ports that are required for email clients to access mailboxes and ot
 </tbody>
 </table>
 
-
 Return to top
 
 ## Network ports required for mail flow
@@ -141,7 +138,6 @@ How mail is delivered to and from your Exchange organization depends on your Exc
 The network ports that are required for mail flow in an Exchange organization that has only Client Access servers and Mailbox servers are described in the following diagram and table. Although the diagram shows separate Mailbox and Client Access servers, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
 ![Network ports required for mail flow (no Edge Transport servers)](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
-
 
 <table>
 <colgroup>
@@ -194,7 +190,6 @@ The network ports that are required for mail flow in an Exchange organization th
 </tbody>
 </table>
 
-
 Return to top
 
 ## Network ports required for mail flow with Edge Transport servers
@@ -210,7 +205,6 @@ For more information, see [Mail flow](mail-flow-exchange-2013-help.md).
 The network ports that are required for mail flow in Exchange organizations that have Edge Transport servers are described in the following diagram and table. Unless otherwise noted, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
 ![Network ports required for mail flow with Edge Transport servers](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
-
 
 <table>
 <colgroup>
@@ -289,7 +283,6 @@ The network ports that are required for mail flow in Exchange organizations that
 </tbody>
 </table>
 
-
 Return to top
 
 ## Name resolution
@@ -309,4 +302,3 @@ The network ports that are required for Unified Messaging are covered in the fol
   - [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
 
 Return to top
-

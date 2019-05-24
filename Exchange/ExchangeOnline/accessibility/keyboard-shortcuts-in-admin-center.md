@@ -12,7 +12,7 @@ title: Keyboard shortcuts for the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_Reference
 ms.service: exchange-online
 

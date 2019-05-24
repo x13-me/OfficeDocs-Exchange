@@ -18,13 +18,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Many of the Unified Messaging (UM) cmdlets that existed in Exchange Server 2010 have been brought over for Exchange Server 2013, but there have been changes to some of those cmdlets. In addition, new cmdlets were added for Exchange 2013.
 
 ## Updated parameters and new UM cmdlets
 
 The following is a list of the updated parameters and new cmdlets for Exchange 2013.
-
 
 <table>
 <colgroup>
@@ -97,7 +95,6 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 > [!NOTE]
 > This cmdlet only works with Exchange 2007 and 2010 UM servers.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -106,7 +103,6 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 
 > [!NOTE]
 > This cmdlet only works with Exchange 2007 and 2010 UM servers.
-
 
 </td>
 </tr>
@@ -121,6 +117,4 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 </tbody>
 </table>
 
-
 For details about all UM cmdlets, see [Unified Messaging cmdlets](https://technet.microsoft.com/en-us/library/aa997665\(v=exchg.150\)).
-

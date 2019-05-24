@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The external postmaster address is used as the sender for system-generated messages and notifications sent to message senders that exist outside of your Microsoft Exchange Server 2013 organization. An external sender is any sender that has an email address in a domain that isn't configured as an accepted domain in your organization.
 
 By default, the value of the external postmaster address setting is blank. This default value causes the following behavior in your Exchange organization:
@@ -43,11 +42,11 @@ By default, the value of the external postmaster address setting is blank. This 
 
 ## Use the EAC to configure the external postmaster address
 
-1.  In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery** tab.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery** tab.
 
-2.  In the **External postmaster address** field, enter the SMTP email address, for example, `postmaster@contoso.com`. If you want to return the external postmaster address to the default value, delete any existing value so the field is blank.
+2. In the **External postmaster address** field, enter the SMTP email address, for example, `postmaster@contoso.com`. If you want to return the external postmaster address to the default value, delete any existing value so the field is blank.
 
-3.  When you're finished, click **Save**.
+3. When you're finished, click **Save**.
 
 ## Use the Shell to configure the external postmaster address
 
@@ -73,13 +72,12 @@ Set-TransportConfig -ExternalPostmasterAddress $null
 
 To verify that you have successfully configured the external postmaster address, do the following:
 
-1.  Run the following command on a Mailbox server to verify the external postmaster address value:
-    
+1. Run the following command on a Mailbox server to verify the external postmaster address value:
+
     ```powershell
     Get-TransportConfig | Format-List ExternalPostmasterAddress
     ```
 
-2.  From an external email account, send a message to your Exchange organization that will generate a delivery status notification (DSN). For example, you can configure a transport rule to send a non-delivery report (NDR) for a message from that sender that contains specific keywords. Verify the sender's email address in the DSN matches the value you specified.
+2. From an external email account, send a message to your Exchange organization that will generate a delivery status notification (DSN). For example, you can configure a transport rule to send a non-delivery report (NDR) for a message from that sender that contains specific keywords. Verify the sender's email address in the DSN matches the value you specified.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-

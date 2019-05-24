@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -28,4 +27,3 @@ Microsoft® Exchange Server 2007 setup cannot continue because the logged-on us
 Exchange 2007 setup requires that the logged-on user who installs Microsoft Exchange has full access to the local computer.
 
 To resolve this issue, log on to the computer by using an account that has local administrator access and then rerun Microsoft Exchange setup.
-

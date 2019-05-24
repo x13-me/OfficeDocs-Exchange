@@ -18,7 +18,7 @@ search.appverid:
 - MED150
 - MBS150
 - MET150
-ms.audience: Admin
+audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: dansimp

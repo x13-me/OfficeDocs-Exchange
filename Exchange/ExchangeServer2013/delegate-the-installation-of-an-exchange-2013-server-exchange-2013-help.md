@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 lets you delegate the installation of Exchange servers to people who aren't members of the Exchange 2013 Organization Management role group. This is often helpful in large companies where the people who install and set up servers aren't the same people who manage services, like Exchange. If this sounds like something you want to do, this topic is for you.
 
@@ -26,20 +25,17 @@ Normally, when Exchange is installed, the people installing it need to be member
   - A server object is created in the **CN=Servers,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=\<Organization Name\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<Root Domain\>** configuration partition.
 
   - The following access control entries (ACEs) are added to the server object within the configuration partition for the Delegated Setup role group:
-    
+
       - Full Control on the server object and its child objects
-    
+
       - Deny access control entry for the Send As extended right
-    
+
       - Deny access control entry for the Receive As extended right
-    
+
       - Deny CreateChild and DeleteChild permissions for Exchange Public Folder Store objects
-    
 
     > [!NOTE]
     > Public folders are administered at an organizational level; therefore, the creation and deletion of public folder stores is restricted to Exchange administrators.
-
-
 
   - The Active Directory computer account for the server is added to the Exchange Servers group.
 
@@ -63,31 +59,31 @@ To provision a server for Exchange, you need to use Exchange 2013 command-line S
 
 The command that you need to use to provision the server depends on whether you're running Setup from the computer you're provisioning or whether you're running it from another computer. Choose the command in the following steps that matches where you're running Setup:
 
-1.  Press the Windows key + 'R' to open the **Run** window.
+1. Press the Windows key + 'R' to open the **Run** window.
 
-2.  In **Open**, type**cmd.exe**, and then press Enter to open a **Windows Command Prompt**.
+2. In **Open**, type**cmd.exe**, and then press Enter to open a **Windows Command Prompt**.
 
-3.  Change directories to where you downloaded and expanded the Exchange 2013 install files. If the install files are located in `C:\Downloads\Exchange 2013`, use the following command.
-    
+3. Change directories to where you downloaded and expanded the Exchange 2013 install files. If the install files are located in `C:\Downloads\Exchange 2013`, use the following command.
+
     ```powershell
     CD "C:\Downloads\Exchange 2013"
     ```
 
-4.  Choose the command that matches where you're running Setup:
-    
+4. Choose the command that matches where you're running Setup:
+
       - **If you're running Setup on the computer that's being provisioned**, run the following command:
-        
+
         ```powershell
         Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
         ```
-    
+
       - **If you're running Setup on another computer**, run the following command:
-        
+
         ```powershell
         Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
         ```
 
-5.  After you provision the server, you need to make sure that you've added the users who should be able to install Exchange on provisioned servers to the Delegated Setup role group. To see how to add users to a role group, see [Manage Role Group Members](manage-role-group-members-exchange-2013-help.md).
+5. After you provision the server, you need to make sure that you've added the users who should be able to install Exchange on provisioned servers to the Delegated Setup role group. To see how to add users to a role group, see [Manage Role Group Members](manage-role-group-members-exchange-2013-help.md).
 
 When you're done with these steps, the computer will be ready for Exchange to be installed. Exchange 2013 can be installed on a provisioned server by using the steps in [Install Exchange 2013 using the Setup wizard](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
 
@@ -95,15 +91,14 @@ When you're done with these steps, the computer will be ready for Exchange to be
 
 To make sure the server was properly provisioned for Exchange, you can do the following:
 
-1.  Go to **Start** \> **Administrative Tools**, and then open **Active Directory Users and Computers**.
+1. Go to **Start** \> **Administrative Tools**, and then open **Active Directory Users and Computers**.
 
-2.  Select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
+2. Select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
 
-3.  On the **Members** tab, check to see if the server you just provisioned is listed as a member of the security group.
+3. On the **Members** tab, check to see if the server you just provisioned is listed as a member of the security group.
 
 If your server is listed as a member of the Exchange Servers security group, it was properly provisioned. Someone who's a member of the Delegated Setup role group can now install Exchange on that server.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
-

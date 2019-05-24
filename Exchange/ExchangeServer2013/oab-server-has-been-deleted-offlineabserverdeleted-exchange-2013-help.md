@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,4 +29,3 @@ Exchange 2007 setup requires that there be a valid Exchange Mailbox server hosti
 To address this issue, designate a valid Exchange Mailbox server as OAB generation host, and then rerun Exchange 2007 setup.
 
 For information about how to designate an Exchange server to be the host for Offline Address Book generation, see "How to Create an Offline Address Book" ([https://go.microsoft.com/fwlink/?LinkId=86314](https://go.microsoft.com/fwlink/?linkid=86314)) in the Exchange 2007 product documentation.
-

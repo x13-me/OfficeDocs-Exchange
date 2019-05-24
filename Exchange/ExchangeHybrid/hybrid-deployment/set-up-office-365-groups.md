@@ -3,7 +3,7 @@ title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

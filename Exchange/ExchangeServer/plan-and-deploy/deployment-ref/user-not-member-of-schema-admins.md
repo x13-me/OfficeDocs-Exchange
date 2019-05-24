@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

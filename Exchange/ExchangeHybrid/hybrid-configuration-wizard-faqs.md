@@ -3,7 +3,7 @@ title: "Hybrid Configuration wizard FAQs"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -28,15 +28,11 @@ To download the Office 365 Hybrid Configuration wizard go to [https://aka.ms/Hyb
 
 Q: What versions of Exchange support the new Hybrid Configuration wizard?
 
-> A: You need to have at least one server that meets the following requirements:
-
-- **Exchange 2010**: Exchange 2010 SP3 needs to be installed on at least one server running the Mailbox, Hub Transport, and Client Access server roles. We also strongly recommend that you install the latest available Update Rollup available for Exchange 2010 SP3.
-
-- **Exchange 2013**: The latest Exchange 2013 CU needs to be installed on at least one server running both the Mailbox and Client Access server roles. In instances where you have these roles split across multiple servers, you need to update each mailbox role and client access role server. If you can't install the latest CU, the immediately previous release is also supported. Older CUs aren't supported.
-
-- **Exchange 2016**: The latest release of Exchange 2016 needs to be installed on at least one server running the Mailbox server role.
-
-For example, assume you've installed Exchange 2013 CU8 in your on-premises organization, and the latest available release of Exchange 2013 is CU10. To remain in a supported hybrid configuration, you need to upgrade your Exchange 2013 servers to at least CU9. However, we'd strongly recommend you upgrade to CU10.
+> A: You can use a combination of one or more of the following:
+>
+> Exchange 2010 SP3 (latest RU strongly recommended), Exchange 2013 through Exchange 2019 (where applicable, latest CU strongly recommended). Important note: To remain in a supported hybrid configuration, you need to make sure you are running the latest available released CU for your Exchange version. If you are unable to upgrade to the latest available CU, the previous version is also supported.
+>
+> For role specific requirements and prerequisites please see [https://docs.microsoft.com/en-gb/exchange/hybrid-deployment-prerequisites#prerequisites-for-hybrid-deployment](https://docs.microsoft.com/en-gb/exchange/hybrid-deployment-prerequisites#prerequisites-for-hybrid-deployment)
 
 Cumulative updates are released on a quarterly cadence. Keeping your servers on the latest cumulative update gives you some additional flexibility if you periodically need extra time to complete upgrades.
 

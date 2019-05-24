@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You may need to move a public folder mailbox to a different mailbox database for load balancing purposes or for moving resources closer to their geographical location. Similar to moving a regular mailbox, you use the **MoveRequest** cmdlets to move a public folder mailbox. For more information about moving mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 
 For additional management tasks related to public folders, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
@@ -35,11 +34,8 @@ For additional management tasks related to public folders, see [Public folder pr
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -94,4 +90,3 @@ Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
 A status of `Completed` indicates that the move request was successful.
 
 If the move was unsuccessful, you may need to restore the public folder. For more information, see [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md).
-

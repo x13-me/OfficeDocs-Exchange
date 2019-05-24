@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic explains how to move an existing address list to a new container under the root address list.
 
 For additional management tasks related to address lists, see [Address list procedures](address-list-procedures-exchange-2013-help.md).
@@ -33,11 +32,8 @@ For additional management tasks related to address lists, see [Address list proc
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to move an address list
 
@@ -50,4 +46,3 @@ Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Us
 Type **Y** to confirm that you want to move this address list, and then press ENTER.
 
 For detailed syntax and parameter information, see [Move-AddressList](https://technet.microsoft.com/en-us/library/bb124520\(v=exchg.150\)).
-
