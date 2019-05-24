@@ -19,7 +19,7 @@ _**Applies to:**: Exchange Server 2013_
 This topic shows you how to get public folders configured and running in a new organization or in an organization that has never previously had public folders.
 
 > [!NOTE]
-> For more information about the storage quotas and limits for public folders, see [Limits for public folders](../../limits-for-public-folders-exchange-2013-help.md).
+> For more information about the storage quotas and limits for public folders, see [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

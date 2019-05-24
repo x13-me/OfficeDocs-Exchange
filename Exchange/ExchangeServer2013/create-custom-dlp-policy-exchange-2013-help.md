@@ -19,7 +19,7 @@ A custom data loss prevention (DLP) policy allows you to establish conditions, r
 The rule conditions that are available to you in a single policy include all the traditional transport rules in addition to the sensitive information types presented in [Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx). For more information about transport rules, [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
 > [!CAUTION]
-> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. for more information about testing, see [Test a transport rule](test-mail-flow-rules-exchange-2013-help.md).
+> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. for more information about testing, see [Test a transport rule in Exchange 2013](test-transport-rules-exchange-2013-help.md).
 
 For additional management tasks related to creating a custom DLP policy, see [DLP procedures](dlp-procedures-exchange-2013-help.md).
 

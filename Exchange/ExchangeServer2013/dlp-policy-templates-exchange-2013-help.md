@@ -1,75 +1,58 @@
 ---
-title: 'DLP policy templates supplied in Exchange: Exchange 2013 Help'
-TOCTitle: DLP policy templates supplied in Exchange
+title: 'DLP policy templates: Exchange 2013 Help'
+TOCTitle: DLP policy templates in Exchange
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 
 ms.reviewer: 
-ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
+ms.assetid: c7b1a8e4-30d9-4409-85c5-f85ae023737d
 mtps_version: v=EXCHG.150
 ---
 
-# DLP policy templates supplied in Exchange 2013
+# DLP policy templates Exchange 2013
 
 _**Applies to:**: Exchange Server 2013_
 
-In Microsoft Exchange Server 2013, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
+You can use data loss prevention (DLP) policy templates to get started with your DLP solution in Microsoft Exchange 2013. A DLP policy template is a model for a policy. You can select a template to begin the process of building your own customized DLP policy. Within your DLP policy, you can customize the rules to ensure that it meets your business needs for data loss prevention. Several policy templates are supplied by Microsoft, but these are not the only way to implement a data loss prevention solution in Exchange.
+
+Looking for management tasks related to DLP policy templates? See [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx).
+
+## Extend the templates and information types to meet your needs
+
+You can incorporate sensitive-content definitions and policy templates from Microsoft Partners or from files that you develop yourself as an addition to the DLP policy templates, information types, and rules already provided in Exchange 2013. Presented here are several ways in which you can add your own unique DLP content and extend DLP functionality. The templates already provided by Microsoft are a convenient method to get started with a DLP solution. In order to extend the DLP features with your own unique DLP policy template files, you must understand the XML schema requirements for policy templates that are created independent of Exchange. To learn more about the Exchange Management Shell cmdlets associated with DLP policy templates, see cmdlets related to `Get-DlpPolicyTemplate` in [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx). Furthermore, you can define your own sensitive content types after you understand the format and procedure to incorporate them. To learn more about the Exchange Management Shell cmdlets associated with DLP policy templates, see cmdlets related to `Get-ClassificationRuleCollection` in [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
 
 > [!CAUTION]
-> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. > Use of these policies does not ensure compliance with any regulation. After your testing is complete, make the necessary configuration changes in Exchange so the transmission of information complies with your organization's policies. For example, you might need to configure TLS with known business partners or add more restrictive transport rule actions, such as adding rights protection to messages that contain a certain type of data.
+> You should turn on your DLP policies in test mode before enforcing them in your production environment. During such tests, we recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results.
 
-## Templates available for DLP
+### Create your own new DLP policy template or your own sensitive information types in a classification rule package
 
-The following table lists the DLP policy templates in Exchange. To learn more about customizing these templates to create DLP policies, see [Manage DLP policies](manage-dlp-policies-exchange-2013-help.md).
+You can create a DLP policy template file apart from Exchange that meets the specific XML schema definition provided by Microsoft and then import the file into your system so that you can create DLP policies from it. By creating your own template files, you can define your own model for DLP policies that Microsoft has not already provided. This is different than creating a DLP policy by using the Exchange Administration Center, which typically happens after policy templates are available. If you create a policy template independent of Exchange, you will need to import it before you can use it to scan messages. You can also create your own sensitive information definitions apart from those defined by Microsoft in Exchange. There is a separate XML schema definition for DLP policy template files and classification rule packages. To get started with this, see the following information:
 
-|**Template**|**Description**|
-|:-----|:-----|
-|Australia Financial Data|Helps detect the presence of information commonly considered to be financial data in Australia, including credit cards, and SWIFT codes.|
-|Australia Health Records Act (HRIP Act)|Helps detect the presence of information commonly considered to be subject to the Health Records and Information Privacy (HRIP) act in Australia, like medical account number and tax file number.|
-|Australia Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Australia, like tax file number and driver's license.|
-|Australia Privacy Act|Helps detect the presence of information commonly considered to be subject to the privacy act in Australia, like driver's license and passport number.|
-|Canada Financial Data|Helps detect the presence of information commonly considered to be financial data in Canada, including bank account numbers and credit cards.|
-|Canada Health Information Act (HIA)|Helps detect the presence of information subject to Canada Health Information Act (HIA) for Alberta, including data like passport numbers and health information.|
-|Canada Personal Health Act (PHIPA) - Ontario|Helps detect the presence of information subject to Canada Personal Health Information Protection Act (PHIPA) for Ontario, including data like passport numbers and health information.|
-|Canada Personal Health Information Act (PHIA) - Manitoba|Helps detect the presence of information subject to Canada Personal Health Information Act (PHIA) for Manitoba, including data like health information.|
-|Canada Personal Information Protection Act (PIPA)|Helps detect the presence of information subject to Canada Personal Information Protection Act (PIPA) for British Columbia, including data like passport numbers and health information.|
-|Canada Personal Information Protection Act (PIPEDA)|Helps detect the presence of information subject to Canada Personal Information Protection and Electronic Documents Act (PIPEDA), including data like passport numbers and health information.|
-|Canada Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Canada, like health ID number and social insurance number.|
-|France Data Protection Act|Helps detect the presence of information commonly considered to be subject to the Data Protection Act in France, like the health insurance card number.|
-|France Financial Data|Helps detect the presence of information commonly considered to be financial information in France, including information like credit card, account information, and debit card numbers.|
-|France Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in France, including information like passport numbers.|
-|Germany Financial Data|Helps detect the presence of information commonly considered to be financial data in Germany like EU debit card numbers.|
-|Germany Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Germany, including information like driver's license and passport numbers.|
-|Israel Financial Data|Helps detect the presence of information commonly considered to be financial data in Israel, including bank account numbers and SWIFT codes.|
-|Israel Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Israel, like national ID number.|
-|Israel Protection of Privacy|Helps detect the presence of information commonly considered to be subject to the Protection of Privacy in Israel, including information like bank account numbers or national ID.|
-|Japan Financial Data|Helps detect the presence of information commonly considered to be financial information in Japan, including information like credit card, account information, and debit card numbers.|
-|Japan Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Japan, including information like driver's license and passport numbers.|
-|Japan Protection of Personal Information|Helps detect the presence of information subject to Japan Protection of Personal Information, including data like resident registration numbers.|
-|PCI Data Security Standard (PCI DSS)|Helps detect the presence of information subject to PCI Data Security Standard (PCI DSS), including information like credit card or debit card numbers.|
-|Saudi Arabia - Anti-Cyber Crime Law|Helps detect the presence of information commonly considered to be subject to the Anti-Cyber Crime Law in Saudi Arabia, including international bank account numbers and SWIFT codes.|
-|Saudi Arabia Financial Data|Helps detect the presence of information commonly considered to be financial data in Saudi Arabia, including international bank account numbers and SWIFT codes.|
-|Saudi Arabia Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Saudi Arabia, like national ID number.|
-|U.K. Access to Medical Reports Act|Helps detect the presence of information subject to United Kingdom Access to Medical Reports Act, including data like National Health Service numbers.|
-|U.K. Data Protection Act|Helps detect the presence of information subject to United Kingdom Data Protection Act, including data like national insurance numbers.|
-|U.K. Financial Data|Helps detect the presence of information commonly considered to be financial information in United Kingdom, including information like credit card, account information, and debit card numbers.|
-|U.K. Personal Information Online Code of Practice (PIOCP)|Helps detect the presence of information subject to United Kingdom Personal Information Online Code of Practice, including data like health information.|
-|U.K. Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in United Kingdom, including information like driver's license and passport numbers.|
-|U.K. Privacy and Electronic Communications Regulations|Helps detect the presence of information subject to United Kingdom Privacy and Electronic Communications Regulations, including data like financial information.|
-|U.S. Federal Trade Commission (FTC) Consumer Rules|Helps detect the presence of information subject to U.S. Federal Trade Commission (FTC) Consumer Rules, including data like credit card numbers.|
-|U.S. Financial Data|Helps detect the presence of information commonly considered to be financial information in United States, including information like credit card, account information, and debit card numbers.|
-|U.S. Gramm-Leach-Bliley Act (GLBA)|Helps detect the presence of information subject to Gramm-Leach-Bliley Act (GLBA), including information like social security numbers or credit card numbers.|
-|U.S. Health Insurance Act (HIPAA)|Helps detect the presence of information subject to United States Health Insurance Portability and Accountability Act (HIPAA),including data like social security numbers and health information.|
-|U.S. Patriot Act|Helps detect the presence of information commonly subject to U.S. Patriot Act, including information like credit card numbers or tax identification numbers.|
-|U.S. Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in the United States, including information like social security numbers or driver's license numbers.|
-|U.S. State Breach Notification Laws|Helps detect the presence of information subject to U.S. State Breach Notification Laws, including data like social security and credit card numbers.|
-|U.S. State Social Security Number Confidentiality Laws|Helps detect the presence of information subject to U.S. State Social Security Number Confidentiality Laws, including data like social security numbers.|
+> [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
+
+> [Import a custom DLP policy template from a file](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
+
+### Include DLP functionality with existing transport rules
+
+You can incorporate DLP detection capabilities with traditional transport rules without creating a new DLP policy. If you have created a complex set of rules in a previous version of Exchange, and you want to duplicate them or add sensitive information detection in Exchange 2013, then you can use the transport rules editor in the Exchange Administration Center or the Exchange management shell to incorporate these two features. To get started with this, see the following information:
+
+- [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+
+- [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+
+- [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
+
+- [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
+
+### Use DLP policies created by Microsoft
+
+Numerous DLP policies are supplied by Microsoft. This is the easiest way to get started with a DLP solution that is flexible and simple to implement. You can always use the provided policies as a starting point and customize them further to meet your requirements. To get started with this, see the following information:
+
+- [DLP policy templates supplied in Exchange 2013](built-in-dlp-policy-templates-exchange-2013-help.md)
+
+- [Create a DLP policy from a template](create-dlp-policy-from-template-exchange-2013-help.md)
 
 ## For more information
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
-
-[Create a DLP policy from a template](create-dlp-policy-from-template-exchange-2013-help.md)
-
-[Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)

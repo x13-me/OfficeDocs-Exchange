@@ -16,22 +16,7 @@ _**Applies to:**: Exchange Server 2013_
 
 The XML schema and guidance in this topic will help you get started creating your own basic data loss prevention (DLP) XML files that define your own sensitive information types in a classification rule package. After you have created a well-formed XML file, you can import it by using either the Exchange Administration Center or the Exchange management shell in order to help create a Microsoft Exchange Server 2013 DLP solution. An XML file that is a custom DLP policy template can contain the XML that is your classification rule package. For an overview about defining your own DLP templates as XML files, see [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 
- **Contents**
-
-[Overview of the rule authoring process](developing-sensitive-information-rule-packages-exchange-2013-help.md#dlp-ruleprocovw)
-
-[Rule description](#dlp-rule-exchange-2013-help.md)
-
-[Basic rule structure](#dlp-basic-exchange-2013-help.md)
-
-[Using local languages in your XML file](#dlp-languages-exchange-2013-help.md)
-
-[Classification rule pack XML schema definition](developing-sensitive-information-rule-packages-exchange-2013-help.md#dlp-fullschema)
-
-[For more information](#dlp-moreinfo-exchange-2013-help.md)
-
 ## Overview of the rule authoring process
-<a name="dlp-ruleprocovw"> </a>
 
 The rule authoring process is made up of the following general steps.
 
@@ -46,12 +31,10 @@ The rule authoring process is made up of the following general steps.
 For information about the XML schema definition for policy template files, see [Developing DLP policy template files](developing-dlp-policy-template-files-exchange-2013-help.md).
 
 ## Rule description
-<a name="dlp-rule"> </a>
 
 Two main Rule types can be authored for the DLP sensitive information detection engine: Entity and Affinity. The Rule type chosen is based on the type of processing logic that should be applied to the processing of the content as described in the previous sections. The rule definitions are configured in an XML document in the format described by the standardized Rules XSD. The rules describe both the type of content to match and the confidence level that the described match represents the target content. Confidence level specifies the probability for the Entity to be present if a Pattern is found in the content or the probability for the Affinity to be present if Evidence is found in the content.
 
 ## Basic rule structure
-<a name="dlp-basic"> </a>
 
 The Rule definition is constructed from three main components:
 
@@ -108,7 +91,6 @@ Three additional supporting elements are used that define the details of the pro
 ```
 
 ### Entity rules
-<a name="dlp-entity"> </a>
 
 Entity Rules are targeted towards well defined identifiers, such as Social Security Number, and are represented by a collection of countable patterns. Entity Rules returns a count and the confidence level of a match, where Count is the total number of instances of the entity that were found and the Confidence Level is the probability that the given entity exists in the given document. Entity contains the "id" attribute as its unique identifier. The identifier is used for localization, versioning, and querying. The Entity id must be a GUID and should not be duplicated in other entities or affinities. It is referenced in the localized strings section.
 
@@ -153,13 +135,11 @@ Both the IdMatch and Match elements do not define the details of what content ne
         </Any>
     </Pattern>
 </Entity>
-
 ```
 
 The Entity id element, represented in the previous XML by "..." should be a GUID and it is referenced in the Localized Strings section.
 
 #### Entity pattern proximity window
-<a name="dlp-entitypattern"> </a>
 
 Entity holds optional patternsProximity attribute value (integer, default = 300) used to find the Patterns. For each pattern the attribute value defines the distance (in Unicode characters) from the IdMatch location for all other Matches specified for that Pattern. The proximity window is anchored by the IdMatch location, with the window extending to the left and right of the IdMatch.
 
@@ -172,7 +152,6 @@ The example below illustrates how the proximity window affects the matching algo
 Note that the message body and each attachment are treated as independent items. This means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside within each.
 
 #### Entity confidence level
-<a name="dlp-entityconfidence"> </a>
 
 Entity element's confidence level is the combination of all the satisfied Pattern's confidence levels. They are combined using the following equation:
 
@@ -203,7 +182,6 @@ CL<sub>Entity</sub> = 1 - [(1 - CL <sub>Pattern1</sub>) X (1 - CL<sub>Pattern1</
 These confidence values are assigned in the rules for individual patterns based on the set of test documents validated as part of the rule authoring process.
 
 ### Affinity rules
-<a name="dlp-affinityrules"> </a>
 
 Affinity rules are targeted towards content without well-defined identifiers, for example Sarbanes-Oxley or corporate financial content. For this content no single consistent identifier can be found and instead the analysis requires determining if a collection of evidence is present. Affinity rules do not return a count, instead they return if found and the associated confidence level. Affinity content is represented as a collection of independent evidences. Evidence is an aggregation of required matches within certain proximity. For Affinity rule, the proximity is defined by the evidencesProximity attribute (default is 600) and the minimum confidence level by the thresholdConfidenceLevel attribute.
 
@@ -234,7 +212,6 @@ Evidence elements have one or more of Match or Any child elements. If all child 
         </Any>
     </Evidence>
 </Affinity>
-
 ```
 
 #### Affinity proximity window
@@ -244,7 +221,6 @@ The proximity window for Affinity is calculated differently than for Entity patt
 ![Text in proximity of an affinity rule match](images/ITPro_MRM_DlpAffinityProximityMatch.gif)
 
 #### Affinity confidence level
-<a name="dlp-affinityconf"> </a>
 
 Confidence level for the Affinity equals the combination of found Evidences within the proximity window for the Affinity rule. While similar to the confidence level of Entity rule, the key difference is the application of proximity window. Similar to the Entity rules, Affinity element's confidence level is the combination of all the satisfied Evidence confidence levels, but for Affinity rule it only represents the highest combination of Evidence elements found within the proximity window. The Evidence confidence levels are combined using the following equation:
 
@@ -277,7 +253,6 @@ CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Eviden
 ![Affinity rule match example with low confidence](images/ITPro_MRM_DlpAffinityRuleConfidenceMatch.gif)
 
 ### Tuning confidence levels
-<a name="dlp-tuningconf"> </a>
 
 One of the key aspects of the rule authoring process is the tuning of confidence levels for both Entity and Affinity rules. After creating the rule definitions, run the rule against the representative content and collect the accuracy data. Compare the returned results for each pattern or evidence against the expected results for the test documents.
 
@@ -298,7 +273,6 @@ Confidence Level = True Positives / (True Positives + False Positives)
 |P<sub>n</sub>or E<sub>n</sub>|9|10|47%|
 
 ## Using local languages in your XML file
-<a name="dlp-languages"> </a>
 
 The rule schema supports storing of localized name and description for each of Entity and Affinity elements. Each Entity and Affinity element must contain a corresponding element in the LocalizedStrings section. To localize each element, include a Resource element as a child of the LocalizedStrings element to store name and descriptions for multiple locales for each element. The Resource element includes a required idRef attribute which matches the corresponding idRef attribute for each element that is being localized. The Locale child elements of the Resource element contains the localized name and descriptions for each specified locale.
 
@@ -322,7 +296,6 @@ The rule schema supports storing of localized name and description for each of E
 ```
 
 ## Classification rule pack XML schema definition
-<a name="dlp-fullschema"> </a>
 
 ```powershell
 <?xml version="1.0" encoding="utf-8"?>
@@ -603,7 +576,6 @@ The rule schema supports storing of localized name and description for each of E
 ```
 
 ## For more information
-<a name="dlp-moreinfo"> </a>
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 

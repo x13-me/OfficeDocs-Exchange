@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:**: Exchange Server 2013_
 
-In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see [DLP policy templates supplied in Exchange](dlp-policy-templates-exchange-2013-help.md). Example DLP templates that are supplied can help you manage:
+In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see [DLP policy templates supplied in Exchange 2013](built-in-dlp-policy-templates-exchange-2013-help.md). Example DLP templates that are supplied can help you manage:
 
 - Gramm-Leach-Bliley Act (GLBA) data
 
@@ -24,7 +24,7 @@ In Microsoft Exchange, you can use data loss prevention (DLP) policy templates t
 
 You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of transport rules that include new conditions or predicates and actions. DLP policies support the full range of traditional transport rules, and you can add the additional rules after a DLP policy has been established.
 
-For more information about policy templates, see [DLP policy templates In Exchange](dlp-policy-templates-in-exchange-exchange-2013-help.md).
+For more information about policy templates, see [DLP policy templates in Exchange 2013](dlp-policy-templates-exchange-2013-help.md).
 
 To learn more about transport rule capabilities, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
@@ -83,4 +83,4 @@ For any of the DLP policies, you can change the rules, actions, exceptions, enfo
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 
-[DLP policy templates In Exchange](dlp-policy-templates-in-exchange-exchange-2013-help.md)
+[DLP policy templates in Exchange 2013](dlp-policy-templates-exchange-2013-help.md)

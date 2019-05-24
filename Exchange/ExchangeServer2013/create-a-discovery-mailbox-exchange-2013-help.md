@@ -19,7 +19,7 @@ Microsoft Exchange Server 2013 Setup creates a discovery mailbox by default. Dis
 > [!CAUTION]
 > After a discovery manager copies the results of an eDiscovery search to a discovery mailbox, the mailbox can potentially contain sensitive information. You should control access to discovery mailboxes and make sure only authorized users can access them.
 
-For more information, see [Discovery mailboxes](in-place-ediscovery-exchange-2013-help.md#discmbxs).
+For more information, see [Discovery mailboxes](in-place-ediscovery-exchange-2013-help.md#discovery-mailboxes).
 
 ## What do you need to know before you begin?
 

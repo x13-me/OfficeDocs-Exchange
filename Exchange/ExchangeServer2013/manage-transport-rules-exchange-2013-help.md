@@ -67,7 +67,7 @@ Each DLP policy is a collection of transport rules. After you create the DLP pol
 
 1. Create a DLP policy. For instructions, see [Exchange Server 2013 DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx).
 
-2. Modify the transport rules created by the DLP policy. See [View or modify a transport rule](manage-mail-flow-rules-exchange-2013-help.md#ModifyRule).
+2. Modify the transport rules created by the DLP policy. See [View or modify a transport rule](manage-transport-rules-exchange-2013-help.md#view-or-modify-a-transport-rule).
 
 #### Use the EAC to create a transport rule
 
@@ -173,7 +173,7 @@ To verify that you have successfully created a new transport rule, do the follow
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
-2. When you select a rule in the list, the conditions, actions, exceptions and select properties of that rule are displayed in the details pane. To view all the properties of a specific rule, double click it. This opens the rule editor window, where you can make changes to the rule. For more information about rule properties, see [Use the EAC to create a transport rule](manage-mail-flow-rules-exchange-2013-help.md#CreateEAC) section, earlier in this topic.
+2. When you select a rule in the list, the conditions, actions, exceptions and select properties of that rule are displayed in the details pane. To view all the properties of a specific rule, double click it. This opens the rule editor window, where you can make changes to the rule. For more information about rule properties, see [Use the EAC to create a transport rule](#use-the-eac-to-create-a-transport-rule) section, earlier in this topic.
 
 #### Use the Exchange Management Shell to view or modify a transport rule
 

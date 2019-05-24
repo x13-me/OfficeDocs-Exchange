@@ -627,7 +627,7 @@ Return to top
 
 ## For more information
 
-[Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
+[Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

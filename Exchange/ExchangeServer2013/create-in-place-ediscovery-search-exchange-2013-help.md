@@ -28,9 +28,9 @@ Use [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) to search a
 
 - When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange Admin Center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
 
-  - [Estimate or preview search results](create-in-place-ediscovery-search-exchange-2013-help.md#estimate) (later in this topic)
+  - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
 
-  - [Copy eDiscovery Search Results to a Discovery Mailbox](http://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
+  - [Copy eDiscovery search results to a discovery mailbox](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

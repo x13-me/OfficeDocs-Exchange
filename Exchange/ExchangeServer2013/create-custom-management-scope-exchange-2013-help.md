@@ -40,7 +40,7 @@ To learn more about management scopes, see:
 
 To search a subset of mailboxes in your organization or to narrow the scope of source mailboxes that a discovery manager can search, you'll need to group the subset of mailboxes into one or more distribution groups. When you create a custom management scope in step 2, you'll use these distribution groups as the recipient filter to create a custom management scope. This allows a discovery manager to search only the mailboxes of the users who are members of a specified group.
 
-You might be able to use existing distribution groups for eDiscovery purposes, or you can create new ones. See [More information](#moreinfo-exchange-2013-help.md) at the end of this topic for tips on how to create distribution groups that can be used to scope eDiscovery searches.
+You might be able to use existing distribution groups for eDiscovery purposes, or you can create new ones. See the [More information](#more-information) section at the end of this topic for tips on how to create distribution groups that can be used to scope eDiscovery searches.
 
 ## Step 2: Create a custom management scope
 

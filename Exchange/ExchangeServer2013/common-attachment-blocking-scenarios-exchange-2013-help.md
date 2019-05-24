@@ -98,4 +98,4 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 
 ## See also
 
-[Transport rules in Exchange 2013](transport-rules-exchange-2013-help.md)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)

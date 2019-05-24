@@ -92,7 +92,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - For more information about de-duplication and unsearchable items, see:
 
-  - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md#estimate)
+  - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md#estimate-preview-and-copy-search-results)
 
   - [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
 

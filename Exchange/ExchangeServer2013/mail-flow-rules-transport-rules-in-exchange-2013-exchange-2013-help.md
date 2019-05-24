@@ -20,7 +20,7 @@ You can use transport rules to identify and take action on messages that flow th
 
 This article explains the components of transport rules, and how they work.
 
-You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage transport rules. For instructions on how to manage transport rules, see [Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage transport rules. For instructions on how to manage transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
@@ -125,7 +125,7 @@ The following table describes the rule properties that are available in transpor
 <td><p>Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules).</p>
 <p>You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority).</p>
 <p>For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">Set the priority of transport rules</a>.</p></td>
+<p>For more information, see [Set the priority of a transport rule](manage-transport-rules-exchange-2013-help.md#set-the-priority-of-a-transport-rule).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Mode</strong></p></td>
@@ -248,7 +248,7 @@ Transport rules that you create and configure on Mailbox servers are stored in A
 
 - Each Mailbox server caches expanded distribution groups to avoid repeated Active Directory queries to determine a group's membership. By default, entries in the expanded groups cache expire every four hours. Therefore, changes to the group's membership aren't detected by transport rules until the expanded groups cache is updated. To force an immediate update of the cache on a Mailbox server, restart the Microsoft Exchange Transport service. You need to restart the service on each Mailbox server where you want to forcibly update the cache.
 
-Transport rules that you create and configure on Edge Transport servers are stored in the local instance of AD LDS on the server. No automated replication of transport rules occurs on Edge Transport servers. Rules on the Edge Transport server apply only to messages that flow through the local server. If you need to apply the same set of transport rules on multiple Edge Transport servers, you can clone the Edge Transport server configuration, or export and import the transport rules. For more information, see [Edge Transport server cloned configuration](edge-transport-server-cloned-configuration-exchange-2013-help.md) and [Import or export transport rule collections](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+Transport rules that you create and configure on Edge Transport servers are stored in the local instance of AD LDS on the server. No automated replication of transport rules occurs on Edge Transport servers. Rules on the Edge Transport server apply only to messages that flow through the local server. If you need to apply the same set of transport rules on multiple Edge Transport servers, you can clone the Edge Transport server configuration, or export and import the transport rules. For more information, see [Edge Transport server cloned configuration](edge-transport-server-cloned-configuration-exchange-2013-help.md) and [Import or export a transport rule collection](manage-transport-rules-exchange-2013-help.md#import-or-export-a-transport-rule-collection).
 
 Whenever the Transport service on a Mailbox server or Edge Transport server detects a modified transport rule, an event is logged in the Application log in the Event Viewer (Event ID 4002 on Mailbox servers, and Event ID 16028 on Edge Transport servers).
 
@@ -271,7 +271,7 @@ There are two mixed environment scenarios that are common in Exchange 2013:
 
 ## For more information
 
-[Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
+[Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
 [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 

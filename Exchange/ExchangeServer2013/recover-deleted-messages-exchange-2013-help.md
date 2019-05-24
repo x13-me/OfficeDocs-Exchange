@@ -1,5 +1,5 @@
 ---
-title: 'Recover deleted messages in a user's mailbox: Exchange 2013 Help'
+title: 'Recover deleted messages in a mailbox: Exchange 2013 Help'
 TOCTitle: Recover deleted messages in a user's mailbox
 ms.author: chrisda
 author: chrisda
@@ -10,7 +10,7 @@ ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 mtps_version: v=EXCHG.150
 ---
 
-# Recover deleted messages in a user's mailbox in Exchange 2013
+# Recover deleted messages in a mailbox in Exchange 2013
 
 _**Applies to:**: Exchange Server 2013_
 

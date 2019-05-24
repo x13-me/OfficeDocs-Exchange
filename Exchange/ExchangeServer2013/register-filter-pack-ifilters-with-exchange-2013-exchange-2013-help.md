@@ -25,7 +25,7 @@ After you register an IFilter for a specific file type, transport rules with att
 > [!WARNING]
 > The procedures listed in this topic involve modifying the registry on your Exchange servers. Incorrectly editing the registry can cause serious problems that may require you to reinstall your operating system. Problems resulting from editing the registry incorrectly may not be able to be resolved. Before editing the registry, back up any valuable data.<BR>These procedures also require you to stop and restart the Microsoft Exchange Transport service on your Mailbox servers.
 
-For additional management tasks related to Transport rules, see [Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+For additional management tasks related to Transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -135,7 +135,7 @@ Deploying the Office 2010 Filter Pack consists of two main steps:
 
 To verify that you have successfully registered the Microsoft Office 2010 Filter Pack IFilters, do the following:
 
-1. Create a Transport rule with the following properties. For detailed instructions about how to create Transport rules, see [Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+1. Create a Transport rule with the following properties. For detailed instructions about how to create Transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
       - The sender is your mailbox.
 
