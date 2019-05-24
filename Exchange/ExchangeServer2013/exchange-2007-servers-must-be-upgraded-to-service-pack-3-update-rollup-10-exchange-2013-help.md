@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected one or more Exchange Server 2007 servers haven't been upgraded to Exchange Server 2007 Service Pack 3 (SP3) Roll Up 10 (RU10). Before you can install Exchange 2013, all Exchange 2007 servers in your organization must be upgraded to Exchange 2007 SP3 RU10. This requirement includes Exchange 2007 Edge Transport servers. For more information, see [Upgrade from Exchange 2007 to Exchange 2013](upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md).
 

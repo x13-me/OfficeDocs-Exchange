@@ -9,7 +9,7 @@ ms.date: 4/8/2015
 ms.reviewer: 
 title: Enable or disable a call answering rule for a user
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

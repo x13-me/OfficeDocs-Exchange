@@ -9,7 +9,7 @@ ms.date: 12/9/2016
 ms.reviewer: 
 title: Enable an informational announcement for Outlook Voice Access users
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Unified Messaging (UM) enables users to use voice mail and other features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls from UM, and the experience people have when they call in to your organization.
 

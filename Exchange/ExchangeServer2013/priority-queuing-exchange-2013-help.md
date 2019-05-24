@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 *Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the sender-defined priority of a message to influence the processing of the message by the Transport service on the Mailbox server.
 

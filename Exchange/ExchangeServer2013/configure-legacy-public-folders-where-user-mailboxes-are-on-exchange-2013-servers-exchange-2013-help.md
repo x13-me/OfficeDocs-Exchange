@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013_
 
 How to enable Exchange 2013 or Exchange 2016 users to access Exchange 2010 or earlier public folders (also known as legacy public folders).
 

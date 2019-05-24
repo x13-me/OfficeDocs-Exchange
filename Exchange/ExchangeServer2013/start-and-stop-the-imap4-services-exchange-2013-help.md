@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 By default, the two IMAP4 services, the Microsoft Exchange IMAP4 service and the Microsoft Exchange IMAP4 Backend service, aren't started on computers running Microsoft Exchange Server 2013. You must start these two services to allow your email clients to connect to Exchange using IMAP4. When these services are running, Exchange 2013 accepts unsecured IMAP4 client communications on port 143 and over port 993 using Secure Sockets Layer (SSL).
 

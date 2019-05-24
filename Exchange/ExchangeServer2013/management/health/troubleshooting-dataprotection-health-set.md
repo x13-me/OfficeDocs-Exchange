@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting DataProtection Health Set
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The DataProtection Health set monitors the redundancy of databases in a database availability group (DAG).
 

@@ -12,7 +12,7 @@ title: Use a screen reader to manage anti-spam protection in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

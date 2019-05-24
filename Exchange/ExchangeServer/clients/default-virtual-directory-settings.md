@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Default settings for Exchange virtual directories
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

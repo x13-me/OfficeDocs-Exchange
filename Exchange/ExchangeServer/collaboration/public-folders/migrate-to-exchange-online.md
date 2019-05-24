@@ -11,7 +11,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
-ms.audience: ITPro
+audience: ITPro
 title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office, migrate Exchange public folders to Office
 
 ---

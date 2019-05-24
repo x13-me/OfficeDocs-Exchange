@@ -9,7 +9,7 @@ ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the number of previous voice mail PINs to recycle
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -9,7 +9,7 @@ ms.date: 7/11/2018
 ms.reviewer: 
 title: Procedures for messages in queues
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

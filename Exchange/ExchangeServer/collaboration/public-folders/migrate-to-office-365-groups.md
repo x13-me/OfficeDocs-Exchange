@@ -11,7 +11,7 @@ title: Migrate your public folders to Office 365 Groups
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

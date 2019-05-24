@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Manage user access to add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

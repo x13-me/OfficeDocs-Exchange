@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 To establish a federation trust between your Microsoft Exchange Server 2013 organization and the [Azure Active Directory authentication system](https://go.microsoft.com/fwlink/p/?linkid=135986), you need a digital certificate installed on the Exchange server used to create the trust. We strongly recommend using a self-signed certificate. A self-signed certificate is created and installed automatically when using the **Enable federation trust** wizard in the Exchange admin center (EAC).
 

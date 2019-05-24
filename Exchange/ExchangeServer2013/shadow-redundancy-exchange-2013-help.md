@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Shadow redundancy was introduced in Microsoft Exchange Server 2010 to provide redundant copies of messages before they're delivered to mailboxes. In Exchange 2010, shadow redundancy delayed deleting a message from the transport database on a transport server until the server verified the next hop in the message delivery path completed delivery. If the next hop failed before reporting successful delivery back to the transport server, the transport server resubmitted the message to that next hop. Exchange 2010 servers used the XSHADOW verb to advertise their shadow redundancy support. If an SMTP server didn't support shadow redundancy, Exchange 2010 used delayed acknowledgement based on a configured time interval on the Receive connector to make a redundant copy of the message.
 

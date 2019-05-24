@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Learn about preparing mailboxes for cross-forest moves in Exchange 2013.
 

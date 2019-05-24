@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Create and manage public folders with one or more of these articles.
 

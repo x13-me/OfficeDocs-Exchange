@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management roles are part of the Role Based Access Control (RBAC) permissions model used in Microsoft Exchange Server 2013. Roles act as a logical grouping of cmdlets that are combined to provide access to view or modify the configuration of Exchange 2013 components, such as mailboxes, transport rules, and recipients. Management roles can be further combined into larger groupings called management role groups and management role assignment policies, which enable management of feature areas and recipient configuration. Role groups and role assignment policies assign permissions to administrators and end users, respectively. For more information about management role groups and management role assignment policies, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 

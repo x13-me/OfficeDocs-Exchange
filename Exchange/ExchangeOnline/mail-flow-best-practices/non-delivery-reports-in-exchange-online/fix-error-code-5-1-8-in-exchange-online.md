@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 ms.reviewer: 
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal

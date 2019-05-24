@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Exchange Server Deployment Assistant is a Web-based tool that can help you with your Microsoft Exchange Server 2016 and Exchange Server 2013 deployment. The Deployment Assistant asks you a few questions about your current environment and then generates a custom checklist and procedures that help simplify your deployment. To access the Deployment Assistant, see [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
 

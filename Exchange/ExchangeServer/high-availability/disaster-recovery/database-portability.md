@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Move a mailbox database using database portability
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

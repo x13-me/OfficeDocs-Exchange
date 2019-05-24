@@ -11,7 +11,7 @@ ms.date:
 ms.reviewer: 
 title: Create an offline address book
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

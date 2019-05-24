@@ -3,7 +3,7 @@ title: "Configure document collaboration with OneDrive for Business and Exchange
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

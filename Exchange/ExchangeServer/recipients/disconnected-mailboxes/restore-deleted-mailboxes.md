@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

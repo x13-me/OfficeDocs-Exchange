@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can disable email for an existing mail user in your Exchange organization. When you disable email for a mail user, it's removed from Exchange and your organization's address book. If the mail user is a member of a distribution group, the user no longer receives mail sent to the group. Also, the Exchange attributes are removed from the user object in Active Directory, but the user object and its non-Exchange attributes (such as contact and organization information) are retained in Active Directory.
 

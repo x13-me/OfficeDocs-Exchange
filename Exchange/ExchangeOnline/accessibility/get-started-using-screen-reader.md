@@ -12,7 +12,7 @@ title: Get started using a screen reader in the Exchange admin center in Exchang
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

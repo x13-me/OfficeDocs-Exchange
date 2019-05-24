@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Receive connectors control the flow of inbound messages to your Exchange organization. They are configured on computers running Microsoft Exchange Server 2013 with the Transport service, or in the Front End service on a Client Access server. They can be created in the Exchange Administration Center (EAC), or in the Exchange Management Shell.
 

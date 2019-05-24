@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Connectors, Exchange connector, Exchange send connector, Exchange receive connector
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

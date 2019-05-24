@@ -8,7 +8,7 @@ ms.assetid:
 monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.date:
 ms.reviewer: 
 ms.prod: exchange-server-it-pro

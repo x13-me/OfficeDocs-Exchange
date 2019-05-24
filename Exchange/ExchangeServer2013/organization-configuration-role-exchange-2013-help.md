@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `Organization Configuration` management role enables administrators to manage organization-wide settings. Organization configuration that can be controlled with this role includes the following and more:
 

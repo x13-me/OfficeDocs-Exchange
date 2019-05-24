@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting SiteMailbox Health Set
 
-_**Applies to:**: Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The SiteMailbox Health set monitors the overall health and accessibility of the site mailboxes in your organization.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `MyDiagnostics` management role enables individual users to perform basic diagnostics on their mailbox such as retrieving calendar diagnostic information.
 

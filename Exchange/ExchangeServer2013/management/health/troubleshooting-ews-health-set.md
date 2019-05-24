@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting EWS Health Set
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Exchange Web Services (EWS) health set monitors the overall health of the EWS service. The EWS health set is closely related to the following health sets:
 

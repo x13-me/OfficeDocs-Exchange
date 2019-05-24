@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Set up a virtual certificate collection in Exchange Server to validate S/MIME
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 As an Exchange Server administrator, you need to configure a virtual certificate collection in Exchange that will be used to validate S/MIME certificates. This virtual certificate collection is set up as a certificate store with an SST filename extension. The SST file contains all the root and intermediate certificates that are used when validating an S/MIME certificate.
 

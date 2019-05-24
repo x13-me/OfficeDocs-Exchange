@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 A *management role assignment policy* is a collection of one or more end-user management roles that enables end users to manage their own Microsoft Exchange Server 2013 mailbox and distribution group configuration. Role assignment policies, which are part of the Role Based Access Control (RBAC) permissions model in Exchange 2013, enable you to control what specific mailbox and distribution group configuration settings your end users can modify. Different groups of users can have role assignment policies specialized to them.
 

@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Message size limits in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

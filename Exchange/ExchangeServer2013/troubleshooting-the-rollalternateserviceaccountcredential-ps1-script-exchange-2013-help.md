@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic provides solutions and information about common errors that may occur when you use the RollAlternateServiceAccountPassword.ps1 script.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic explains how to use the Microsoft Exchange Server 2013 Setup wizard to install the Exchange 2013 Edge Transport server role on a computer. The Edge Transport role is available with Exchange 2013 Service Pack 1 (SP1) or later. For more information about planning and deploying Exchange 2013, see [Planning and deployment](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 

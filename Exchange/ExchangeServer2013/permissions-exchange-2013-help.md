@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange 2013 so that you can get your new organization up and running quickly.
 

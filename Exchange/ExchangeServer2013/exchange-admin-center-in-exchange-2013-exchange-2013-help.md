@@ -38,9 +38,9 @@ Supported browsers
 
 Because the EAC is now a web-based management console, you'll need to use the ECP virtual directory URL to access the console from your web browser. In most cases the EAC's URL will look similar to the following:
 
-  - **Internal URL: `https://<CASServerName>/ecp`**: The internal URL is used to access the EAC from within your organization's firewall.
+- **Internal URL: `https://<CASServerName>/ecp`**: The internal URL is used to access the EAC from within your organization's firewall.
 
-  - **External URL: `https://mail.contoso.com/ecp`**: The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
+- **External URL: `https://mail.contoso.com/ecp`**: The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
 To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](https://technet.microsoft.com/en-us/library/dd351058\(v=exchg.150\)) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
 
@@ -60,27 +60,27 @@ The cross-premises navigation allows you to easily switch between your Exchange 
 
 This is the first level of navigation for most of the tasks that you'll perform in the EAC. The feature pane is similar to the console tree from the EMC in Exchange 2010. However, in Exchange 2013 the feature pane is organized by feature areas as opposed to server roles, and there are fewer clicks to find what you need.
 
-  - **Recipients** This is where you'll manage mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations and moves.
+- **Recipients**: This is where you'll manage mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations and moves.
 
-  - **Permissions** This is where you'll manage administrator roles, user roles, and Outlook Web App policies.
+- **Permissions**: This is where you'll manage administrator roles, user roles, and Outlook Web App policies.
 
-  - **Compliance management** This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.
+- **Compliance management**: This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.
 
-  - **Organization** This is where you'll manage the tasks that pertain to your Exchange Organization, including federated sharing, Outlook Apps, and address lists.
+- **Organization**: This is where you'll manage the tasks that pertain to your Exchange Organization, including federated sharing, Outlook Apps, and address lists.
 
-  - **Protection** This is where you'll manage anti-malware protection for your organization.
+- **Protection**: This is where you'll manage anti-malware protection for your organization.
 
-  - **Mail flow** This is where you'll manage rules, delivery reports, accepted domains, email address policies, and send and receive connectors.
+- **Mail flow**: This is where you'll manage rules, delivery reports, accepted domains, email address policies, and send and receive connectors.
 
-  - **Mobile** This is where you'll manage the mobile devices that you allow to connect to your organization. You can manage mobile device access and mobile device mailbox policies.
+- **Mobile**: This is where you'll manage the mobile devices that you allow to connect to your organization. You can manage mobile device access and mobile device mailbox policies.
 
-  - **Public folders** In Exchange 2010, you had to manage public folders by using the Public Folder Management Console, which was located outside of the EMC in the Toolbox. In Exchange 2013, public folders can be managed from within the **public folders** feature area.
+- **Public folders**: In Exchange 2010, you had to manage public folders by using the Public Folder Management Console, which was located outside of the EMC in the Toolbox. In Exchange 2013, public folders can be managed from within the **public folders** feature area.
 
-  - **Unified Messaging** This is where you'll manage UM dial plans and UM IP gateways.
+- **Unified Messaging**: This is where you'll manage UM dial plans and UM IP gateways.
 
-  - **Servers** This is where you'll manage your Mailbox and Client Access servers, databases, database availability groups (DAGs), virtual directories, and certificates.
+- **Servers**: This is where you'll manage your Mailbox and Client Access servers, databases, database availability groups (DAGs), virtual directories, and certificates.
 
-  - **Hybrid** This is where you'll set up and configure a Hybrid organization.
+- **Hybrid**: This is where you'll set up and configure a Hybrid organization.
 
 ## Tabs
 
@@ -168,11 +168,11 @@ The EAC includes a notification viewer that displays the status of long-running 
 
 The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
 
-  - **Help**: Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
+- **Help**: Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
 
-  - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 
-  - **Copyright and Privacy** Click the privacy or copyright link to read the copyright and privacy information for Exchange 2013.
+- **Copyright and Privacy**: Click the privacy or copyright link to read the copyright and privacy information for Exchange 2013.
 
 ## Supported browsers
 
@@ -181,11 +181,11 @@ For the best experience with the EAC, use one of the operating system and browse
 > [!NOTE]
 > Other operating system and browser combinations not listed in the table are unsupported, including touch.
 
-  - **Premium:** All functional features are supported and fully tested.
+- **Premium:**: All functional features are supported and fully tested.
 
-  - **Supported:** Has same functional feature support as premium. However, supported browsers will be missing features that the browser and operating system combination doesn't support.
+- **Supported:**: Has same functional feature support as premium. However, supported browsers will be missing features that the browser and operating system combination doesn't support.
 
-  - **Unsupported:** The browser and operating system isn't supported or tested.
+- **Unsupported:**: The browser and operating system isn't supported or tested.
 
 <table style="width:100%;">
 <colgroup>

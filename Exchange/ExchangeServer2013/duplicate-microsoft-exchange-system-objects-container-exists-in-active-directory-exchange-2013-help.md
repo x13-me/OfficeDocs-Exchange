@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it found a duplicate Microsoft Exchange System Objects container in Active Directory Domain Naming context. When Setup finds a duplicate Microsoft Exchange System Objects container, you must delete the duplicate container before Setup can continue. When a duplicate Microsoft Exchange System Objects container exists, you can't solve the problem by running **DomainPrep** again. You must identify and delete the duplicate Microsoft Exchange System Objects container.
 

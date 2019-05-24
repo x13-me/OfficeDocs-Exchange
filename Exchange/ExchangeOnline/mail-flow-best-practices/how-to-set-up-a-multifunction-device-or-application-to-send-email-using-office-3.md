@@ -15,7 +15,7 @@ search.appverid:
 - BCS160
 - MOE150
 - MET150
-ms.audience: Admin
+audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: dansimp

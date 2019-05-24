@@ -12,7 +12,7 @@ manager: dansimp
 description: Microsoft Exchange Server 2016 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2016 Setup can continue.
 title: KB3206632 security update not installed [Win2k16LSARollupUpdateNotInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 
 ---

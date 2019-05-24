@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Many of the client protocols used with Exchange Server 2013 are accessed through virtual directories. A virtual directory is used by Internet Information Services (IIS) to allow access to a web application such as Exchange ActiveSync, Outlook Web App, or the Autodiscover service. You can manage a variety of virtual directory settings on Exchange 2013 including authentication, security, and reporting settings.
 
