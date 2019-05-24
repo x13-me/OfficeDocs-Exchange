@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Backup, restore, and disaster recovery
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 As part of your data protection planning, it's important that you understand the ways in which data can be protected, and to determine which method best suits your organization's needs. Data protection planning is a complex process that relies on many decisions that you make during the planning phase of your deployment.
 
@@ -150,4 +147,3 @@ The process for using dial tone portability is called a *dial tone recovery*. A 
 For more information, see [Dial tone portability](dial-tone-portability-exchange-2013-help.md). For detailed steps to perform a dial tone recovery, see [Perform a dial tone recovery](perform-a-dial-tone-recovery-exchange-2013-help.md).
 
 Return to top
-

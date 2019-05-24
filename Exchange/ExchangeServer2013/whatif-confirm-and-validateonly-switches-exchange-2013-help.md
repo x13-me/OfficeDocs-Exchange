@@ -18,22 +18,15 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Both experienced administrators and script writers, and administrators who are new to Exchange and scripting, can benefit from using the *WhatIf*, *Confirm*, and *ValidateOnly* switches. These switches let you control how your commands run and indicate exactly what a command will do before it affects data. This functionality is quite valuable as you transition from your test environment into your production environment and as you roll out new scripts or commands.
 
 The *WhatIf*, *Confirm*, and *ValidateOnly* switches are especially useful when you use them with commands that modify objects that are returned by using a filter or by using a **Get** command in a pipeline. This topic describes each switch and also provides an example command for each switch.
 
-
 > [!IMPORTANT]
 > If you want to use the <EM>WhatIf</EM>, <EM>Confirm</EM>, and <EM>ValidateOnly</EM> switches with commands in a script, you must add the appropriate switch to each command in the script, and not on the command line that calls the script.
 
-
-
-
 > [!NOTE]
 > <EM>WhatIf</EM>, <EM>Confirm</EM>, and <EM>ValidateOnly</EM> are called switch parameters. For more information about switch parameters, see <A href="https://technet.microsoft.com/en-us/library/bb124388(v=exchg.150)">Parameters</A>.
-
-
 
 ## WhatIf switch
 
@@ -42,7 +35,7 @@ The *WhatIf* switch instructs the command to which it is applied to run but only
 When you run a command together with the *WhatIf* switch, you put the *WhatIf* switch at the end of the command, as in the following example:
 
 ```powershell
-    New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+    New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf
 ```
 
 When you run this example command, the following text is returned by the Shell:
@@ -113,11 +106,8 @@ Get-JournalRule | Disable-JournalRule -Confirm:$False
 
 In this case, no confirmation prompt is displayed.
 
-
 > [!WARNING]
 > The default value of the <EM>Confirm</EM> switch is <CODE>$True</CODE>. The default behavior of the Shell is to automatically display a confirmation prompt. If you suppress this default behavior, you instruct the command to suppress all confirmation prompts for the duration of that command. The command will process all objects that meet the criteria for the command without confirmation.
-
-
 
 ## ValidateOnly switch
 
@@ -126,4 +116,3 @@ The *ValidateOnly* switch instructs the command to which it is applied to evalua
 When you apply the *ValidateOnly* switch to a command, the command runs through the whole process. The command performs each action as it would without the *ValidateOnly* switch. But the command doesn't change any objects. When the command completes its process, it displays a summary with the results of the validation. If the validation indicates that the command was successful, you can run the command again without the *ValidateOnly* switch.
 
 When you run a command together with the *ValidateOnly* switch, you put the *ValidateOnly* switch at the end of the command.
-

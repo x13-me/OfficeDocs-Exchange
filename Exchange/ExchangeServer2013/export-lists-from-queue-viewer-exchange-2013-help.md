@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic explains how to use Queue Viewer in the Exchange Toolbox to export lists of messages or queues.
 
 You can export lists to the following file formats:
@@ -41,29 +40,22 @@ You can export lists to the following file formats:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Export a list from the result pane in Queue Viewer
 
-1.  Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
+1. Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
 
-2.  In the **Mail flow** section, double-click **Queue Viewer**.
+2. In the **Mail flow** section, double-click **Queue Viewer**.
 
-3.  In Queue Viewer, select the **Queues** tab or the **Messages** tab. On either tab, you can click **Create Filter** to restrict the results.
-    
+3. In Queue Viewer, select the **Queues** tab or the **Messages** tab. On either tab, you can click **Create Filter** to restrict the results.
 
     > [!NOTE]
     > If the result pane doesn't refresh, in the action pane, click <STRONG>Refresh</STRONG>. Long lists may take several minutes to refresh.
 
+4. In the action pane, click **Export List**. The **Export List** dialog box appears.
 
+5. In **Export List**, type the name of the file in the **File name** box, and then select the file format from the **Save as type** list.
 
-4.  In the action pane, click **Export List**. The **Export List** dialog box appears.
-
-5.  In **Export List**, type the name of the file in the **File name** box, and then select the file format from the **Save as type** list.
-
-6.  Click **Save**.
-
+6. Click **Save**.

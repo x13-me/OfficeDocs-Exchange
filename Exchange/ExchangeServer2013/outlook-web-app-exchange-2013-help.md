@@ -18,18 +18,14 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Learn about the Outlook Web App, which was called Outlook Web Access in version of Microsoft Exchange earlier than 2010. This article provides a brief overview with links out to helpful information.
 
 By default, when you install Microsoft Exchange 2013, you enable Outlook Web App. Microsoft Outlook Web App lets users access their Exchange mailbox from almost any Web browser.
 
 The Client Access server role provides proxy and redirection services for Outlook Web App.
 
-
 > [!NOTE]
 > Outlook Web App was called Outlook Web Access in versions of Microsoft Exchange earlier than Exchange 2010.
-
-
 
 For information about new features, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md). For information about the Client Access server role in Exchange 2013, see [Client Access server](client-access-server-exchange-2013-help.md).
 
@@ -48,4 +44,3 @@ You and your users can sign into Outlook Web App using a URL like this: **https:
 If, for example, your organization's domain is contoso.com, then use https://contoso.com/OWA or https://mail.contoso.com/OWA. Learn more about accessing Outlook Web App [here](https://support.microsoft.com/en-us/kb/2897680). To change the sign-in URL to something different or to force redirection to SSL, see [Simplify the Outlook Web App URL](simplify-the-outlook-web-app-url-exchange-2013-help.md).
 
 If you're using Exchange Online or Office 365 for email, you and your users access Outlook Web App at **outlook.office365.com/owa** or [click here](https://go.microsoft.com/fwlink/p/?linkid=402333). Learn more at [Sign in to Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=511341) and [Where to sign in to Office 365](https://go.microsoft.com/fwlink/p/?linkid=522691).
-

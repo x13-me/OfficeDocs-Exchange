@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Unified Messaging (UM) enables voice mail messages to be delivered to a user's mailbox and also lets users receive faxes in their mailbox. In UM, a fax is sent to the user's mailbox as an email message that has an image file with a .tif extension attached. The user can open the attached file by using a software application that can open and view image files that have a .tif extension. This topic discusses faxing and how it works in UM.
 
-
 > [!NOTE]
 > Although Unified Messaging doesn't let users send outgoing faxes, many third-party solutions, such as an Internet fax service, an email faxing service, or a third-party fax server application, can be used to send outgoing faxes.
-
-
 
 **Contents**
 
@@ -167,11 +163,11 @@ There are several advantages to sending a fax message to the user's mailbox. The
 
 A single fax message can be sent only to a single UM-enabled user. Unified Messaging can't forward fax messages to a distribution list. If you need to have this functionality, you must follow these steps:
 
-1.  Create a mailbox to answer the fax call. This will be the mailbox for the distribution list.
+1. Create a mailbox to answer the fax call. This will be the mailbox for the distribution list.
 
-2.  UM-enable the distribution list mailbox.
+2. UM-enable the distribution list mailbox.
 
-3.  Create a rule for this UM-enabled mailbox. The rule will be configured to forward all messages to the selected distribution list.
+3. Create a rule for this UM-enabled mailbox. The rule will be configured to forward all messages to the selected distribution list.
 
 Return to top
 
@@ -179,11 +175,8 @@ Return to top
 
 Receiving a fax on a VoIP network differs from receiving a fax on a standard fax machine or by using a fax server that's located on an IP-based network. To enable faxes to be sent and received over a VoIP network, you must have a VoIP gateway or an IP PBX that supports the T.38 protocol and a server that also supports T.38. T.38 allows for IP-based fax transmissions for IP network-based hosts, for example, client computers, printers with built-in faxing capabilities, and servers such as a Mailbox server.
 
-
 > [!IMPORTANT]
 > Sending and receiving faxes using T.38 or G.711 isn't supported in an environment where Unified Messaging and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server are integrated.
-
-
 
 When a PBX receives a call, it forwards the call to the appropriate extension. If there is no answer at the user's extension number, the PBX forwards the call to a VoIP gateway, and the gateway forwards the call to the appropriate Mailbox server. The Mailbox server determines whether the call is a voice call or a fax call, based on the protocol that's used for the call. When the SIP protocol is used, the Mailbox server processes the call as a voice message. However, if the T.38 protocol is used from the VoIP gateway, the Mailbox server recognizes that the call is for a fax and processes it as described in the following paragraph. A Mailbox server forwards incoming fax calls to a dedicated fax partner server, which then establishes the fax call with the fax sender and receives the fax on behalf of the UM-enabled user. The fax partner server then sends the fax included as a .tif attachment in an SMTP message to the recipient's mailbox.
 
@@ -201,49 +194,49 @@ An incoming fax call can be signaled to a Mailbox server through SIP re-INVITE f
 
 An incoming call to a UM pilot number is directed to UM as an INVITE with a voice (RTP/audio) SDP profile
 
-1.  UM accepts the invitation and media streams are established. After the call has been established, fax transmission is initiated by the caller.
+1. UM accepts the invitation and media streams are established. After the call has been established, fax transmission is initiated by the caller.
 
-2.  The SIP peer detects the calling fax tone (CNG). The SIP peer issues a re-INVITE to the Mailbox server, this time specifying a fax (T.38 or G.711) profile in the SDP.
+2. The SIP peer detects the calling fax tone (CNG). The SIP peer issues a re-INVITE to the Mailbox server, this time specifying a fax (T.38 or G.711) profile in the SDP.
 
-3.  UM responds to the invitation with a 200 OK that places the SIP peer "on hold".
+3. UM responds to the invitation with a 200 OK that places the SIP peer "on hold".
 
-4.  UM issues a REFER, referring the SIP (CNG) peer to a fax partner solution end point, obtained from its configuration data.
+4. UM issues a REFER, referring the SIP (CNG) peer to a fax partner solution end point, obtained from its configuration data.
 
-5.  The SIP peer sends the fax session INVITE to the fax partner solution.
+5. The SIP peer sends the fax session INVITE to the fax partner solution.
 
-6.  The fax partner solution accepts the invitation, and a media session is established with the SIP peer.
+6. The fax partner solution accepts the invitation, and a media session is established with the SIP peer.
 
 ## CNG notification by a SIP peer
 
 An incoming call to a UM pilot number is directed to UM as an INVITE with a voice (RTP/audio) SDP profile.
 
-1.  UM accepts the invitation and media streams are established. After the call has been established, fax transmission is initiated by the caller.
+1. UM accepts the invitation and media streams are established. After the call has been established, fax transmission is initiated by the caller.
 
-2.  The SIP peer detects the calling fax tone (CNG).The SIP peer notifies the UM server of the fax by sending a CNG notification in the RTP stream, compliant with RFC 4733.
+2. The SIP peer detects the calling fax tone (CNG).The SIP peer notifies the UM server of the fax by sending a CNG notification in the RTP stream, compliant with RFC 4733.
 
-3.  UM responds to the notification by immediately issuing a REFER and referring the SIP peer to a fax partner solution end point, obtained from its configuration data.
+3. UM responds to the notification by immediately issuing a REFER and referring the SIP peer to a fax partner solution end point, obtained from its configuration data.
 
-4.  The SIP peer sends the fax session INVITE to the fax partner solution.
+4. The SIP peer sends the fax session INVITE to the fax partner solution.
 
-5.  The fax partner solution accepts the invitation.
+5. The fax partner solution accepts the invitation.
 
-6.  A media session is established with the SIP peer.
+6. A media session is established with the SIP peer.
 
 ## CNG detection by a Mailbox server
 
 An incoming call to a UM pilot number is directed to UM as an INVITE with a voice (RTP/audio) SDP profile. UM accepts the invitation and media streams are established.
 
-1.  After the call has been established, fax transmission is initiated by the caller.
+1. After the call has been established, fax transmission is initiated by the caller.
 
-2.  The Mailbox server detects the fax tone (CNG) in the RTP audio stream.
+2. The Mailbox server detects the fax tone (CNG) in the RTP audio stream.
 
-3.  UM responds to the notification by immediately issuing a REFER and referring the SIP peer to a fax partner solution end point, obtained from its configuration data.
+3. UM responds to the notification by immediately issuing a REFER and referring the SIP peer to a fax partner solution end point, obtained from its configuration data.
 
-4.  The SIP peer sends the fax session INVITE to the fax partner solution.
+4. The SIP peer sends the fax session INVITE to the fax partner solution.
 
-5.  The fax partner solution accepts the invitation.
+5. The fax partner solution accepts the invitation.
 
-6.  A media session is established with the SIP peer.
+6. A media session is established with the SIP peer.
 
 Return to top
 
@@ -306,9 +299,9 @@ You have the following options when you're configuring multiple DID extension nu
   - **One extension for fax and one for voice**: This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
 
   - **One "phantom" extension for fax and one for voice**: This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
-    
+
     The advantage of this type of configuration is that incoming fax calls are answered by a Mailbox server. When the phone rings but isn't answered, a fax is created and forwarded by the Mailbox server to the UM-enabled user's mailbox without disturbing the user. This happens automatically because no telephone or fax device is positioned close to the user, and the user doesn't hear the ring of the incoming call.
-    
+
     The disadvantages of this kind of configuration are that you must have additional DID extensions available and you must configure the PBX or IP PBX to forward the call to a Mailbox server.
 
 ## Central fax telephone number
@@ -319,11 +312,8 @@ In some organizations, especially those that receive many faxes each day, you mi
 
 Publishing one fax number for the whole organization enables your organization to control the types of faxes that are received by users. The advantage of this configuration is that it requires only a single DID extension number or an external telephone number. Also, it doesn't require a separate DID number for faxing for each UM-enabled user. However, it does require a "fax secretary" or other person to distribute the incoming faxes to users within the organization based on information that's included on the fax cover page or in the fax message itself.
 
-
 > [!NOTE]
 > Using a central fax number with optical character recognition (OCR) isn't available in Exchange Unified Messaging. This kind of configuration can use a central fax number. However, instead of having to be routed to the recipient by a person, the faxing software receives the fax, performs OCR, and then tries to locate the recipient based on the information on the cover page or fax message.
-
-
 
 Using a single fax number for the whole organization is useful in the following situations:
 
@@ -341,11 +331,7 @@ Return to top
 
 Many organizations that implement journaling may also use Unified Messaging to consolidate their email, voice mail, and fax infrastructure. However, you may not want the journaling process to generate journal reports for messages that are generated by Unified Messaging. In this case, you can decide whether to journal voice mail messages and missed call notification messages that are handled by a Mailbox server or to skip such messages. If your organization doesn't require journaling of voice mail and missed call notifications, you can reduce the hard disk space that's required to store journal reports by skipping such messages. When you enable or disable the journaling of voice mail messages and missed call notification messages, your change is applied to all Transport services in your organization. For more information, see [Journaling](journaling-exchange-2013-help.md).
 
-
 > [!NOTE]
 > Messages that contain faxes that are generated by a Mailbox server are always journaled, even if you configure a journal rule that specifies not to journal Unified Messaging voice mail and missed call notification messages.
 
-
-
 Return to top
-

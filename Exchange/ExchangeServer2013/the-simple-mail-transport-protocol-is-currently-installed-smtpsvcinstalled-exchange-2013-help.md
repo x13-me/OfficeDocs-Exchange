@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -31,19 +30,18 @@ To resolve this issue, uninstall the SMTP service and rerun Microsoft Exchange s
 
 **To uninstall the SMTP service by using Add or Remove a Windows Component in Control Panel**
 
-1.  On the **Start** menu, click **Control Panel**.
+1. On the **Start** menu, click **Control Panel**.
 
-2.  Double-click **Add or Remove Programs**.
+2. Double-click **Add or Remove Programs**.
 
-3.  Click **Add/Remove Windows Components**.
+3. Click **Add/Remove Windows Components**.
 
-4.  In the **Components** list, select the **Application Server** check box and then click **Details**.
+4. In the **Components** list, select the **Application Server** check box and then click **Details**.
 
-5.  Select **Internet Information Services Manager** and then click **Details**.
+5. Select **Internet Information Services Manager** and then click **Details**.
 
-6.  Select **SMTP Service** and then click to clear the check box.
+6. Select **SMTP Service** and then click to clear the check box.
 
-7.  Click **OK** two times to return to the **Components** list and then click **Next**.
+7. Click **OK** two times to return to the **Components** list and then click **Next**.
 
-8.  Click **Finish** when the SMTP service is uninstalled.
-
+8. Click **Finish** when the SMTP service is uninstalled.

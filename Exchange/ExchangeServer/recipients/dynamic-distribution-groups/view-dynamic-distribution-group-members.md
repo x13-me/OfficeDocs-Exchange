@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: View members of a dynamic distribution group
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

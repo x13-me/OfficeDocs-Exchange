@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Unified Messaging (UM) enables users to use voice mail and other features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls from UM, and the experience people have when they call in to your organization.
 
 Today, IT administrators frequently manage the voice mail or telephony networks and the email systems or data networks for their organizations as separate systems. Voice mail and email are located in separate inboxes that are hosted on separate servers accessed through the desktop for email and through the telephone for voice mail.
@@ -66,7 +65,7 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
   - **Play on Phone**: The Play on Phone feature lets UM-enabled users play voice messages over a telephone. If the user works in an office cubicle, is using a public computer or a computer that isn't enabled for multimedia, or is listening to a voice message that's confidential, they might not want to or be able to listen to a voice message through computer speakers. They can play the voice message using any telephone, including a home, office, or mobile telephone.
 
   - **Voice mail form**: The voice mail form resembles the default email form. It gives users an interface for performing actions such as playing, stopping, or pausing voice messages, playing voice messages on a telephone, and adding and editing notes.
-    
+
     The voice mail form includes the embedded Windows Media Player and an Audio notes field. The embedded Windows Media Player and notes field are displayed in either the Reading Pane when users preview a voice message or in a separate window when they open the voice message. If users aren't enabled for Unified Messaging, or if a supported email client hasn't been installed on the client computer, they view voice messages as email attachments, and the voice mail form isn't available.
 
   - **User configuration**: A user who's enabled for Unified Messaging can configure several voice mail options for Unified Messaging using Outlook Web App. For example, the user can configure telephone access numbers and the voice mail Play on Phone number, and can then reset a voice mail access PIN.
@@ -74,15 +73,15 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
   - **Call answering**: Call answering includes answering incoming calls on behalf of users, playing their personal greetings, recording messages, and submitting them for delivery to their Inbox as an email message.
 
   - **Call Answering Rules**: Call Answering Rules lets users who are enabled for voice mail determine how their incoming call answering calls should be handled. The way call answering rules are applied to incoming calls is similar to the way Inbox rules are applied to incoming email messages. By default, no call answering rules are configured. If an incoming call is answered by the Mailbox server, the caller is prompted to leave a voice message for the called party. Using call answering rules, a caller can:
-    
+
       - Leave a voice message for the UM-enabled user.
-    
+
       - Transfer to an alternate contact of the UM-enabled user.
-    
+
       - Transfer to the alternate contact's voice mail.
-    
+
       - Transfer to other phone numbers that the UM-enabled user has configured.
-    
+
       - Use the Find Me feature or locate the UM-enabled user via a transfer from an operator.
 
   - **Voice Mail Preview**: The Mailbox server uses Automatic Speech Recognition (ASR) on newly created voice mail messages. When users receive voice messages, the messages contain both a recording and text that's been created from the voice recording. Users see the voice message text displayed in an email message from within Outlook Web App or another supported email client.
@@ -94,19 +93,19 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
   - **Protected Voice Mail**: Protected Voice Mail is Unified Messaging functionality that enables users to send private mail. This mail is protected by Active Directory Rights Management Services (AD RMS), and users are restricted from forwarding, copying, or extracting the voice file from email. Protected Voice Mail increases the confidentiality of Unified Messaging, and lets users limit the audience for voice messages. This functionality is similar to the way private email messages were handled in Exchange 2007 but now it also applies to voice mail messages.
 
   - **Outlook Voice Access**: There are two Unified Messaging user interfaces available to UM-enabled users: the telephone user interface (TUI) and the voice user interface (VUI). These two interfaces together are called Outlook Voice Access. Outlook Voice Access users can use Outlook Voice Access when they access the voice mail system from an external or internal telephone. UM-enabled users who dial in to the voice mail system can access their mailbox using Outlook Voice Access. Using a telephone, a UM-enabled user can:
-    
+
       - Access voice mail
-    
+
       - Listen to, forward, or reply to email messages
-    
+
       - Listen to calendar information
-    
+
       - Access or dial contacts who are stored in the organization's directory or a single contact or contact group located in their personal Contacts.
-    
+
       - Accept or cancel meeting requests
-    
+
       - Set a voice message to let callers know the called party is away
-    
+
       - Set user security preferences and personal options
 
   - **Group addressing using Outlook Voice Access**: In Exchange 2007, users could use either the telephone user interface (TUI) or voice user interface (VUI) in Outlook Voice Access to send email and voice messages when they signed in to their mailbox. However, users could only send a single email message to a single user in their personal Contacts, to multiple recipients from the directory by adding each recipient individually, or by adding the name of a distribution list from the directory for your organization. In Exchange 2013, when a user signs in to their mailbox using Outlook Voice Access, they can also send email and voice messages to users in a group stored in their personal Contacts.
@@ -134,33 +133,33 @@ Exchange 2013 Unified Messaging offers administrators:
   - **Consolidation of voice mail systems**: Currently, most voice messaging systems require that all the voice messaging components be installed in every physical office location in an organization. In this kind of arrangement, the voice messaging systems in branch offices are located outside the central office and must be administered onsite. This frequently results in increased administration costs and complexity. Unified Messaging lets you manage your voice mail system from a central location. To create a centralized management system for Unified Messaging, you can place some of your Exchange servers in a datacenter or other location, and the remainder of your Exchange servers on-premises and then deploy VoIP gateways, IP PBXs, or Session Border Controllers (SBCs) in each of your branch offices to replace the voice messaging system for each branch office. Deploying a centralized voice messaging system this way can result in a significant savings in hardware and administrative costs.
 
   - **Built-in Unified Messaging administrative roles**: The set of UM-specific administrative roles for managing Unified Messaging and voice mail features includes the following:
-    
+
       - UM Mailboxes
-    
+
       - UM Prompts
-    
+
       - Unified Messaging
 
   - **Incoming fax support**: Exchange 2013 provides built-in incoming fax support for users who have a UM-enabled mailbox. They can receive fax messages via calls placed to their extension number.
-    
+
     Customers who require a fax solution will have to deploy a fax partner solution. Fax partner solutions are available from several fax partners. The fax partner solutions are designed to be tightly integrated with Exchange and enable UM-enabled users to receive incoming fax messages. You can find a fax partner solution by visiting [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/?linkid=190238).
 
   - **Support for multiple languages**:    All available language packs contain the Text-to-Speech (TTS) engine and the prerecorded prompts for a specified language and ASR support. However, only some language packs contain support for Voice Mail Preview. The US English (en-US) language pack is included on the installation media and additional UM language packs can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542).
 
   - **Auto attendant**: An auto attendant is a set of voice prompts that gives external and internal users access to the voice mail system. Users can use the telephone keypad or speech inputs to move through the auto attendant menu, place a call to a user, or locate a user in your organization and then place a call to them. An auto attendant gives the administrator the ability to:
-    
+
       - Create a customized menu for external users.
-    
+
       - Define informational greetings, business hours greetings, and non-business hours greetings.
-    
+
       - Define holiday schedules.
-    
+
       - Describe how to search the organization's directory.
-    
+
       - Describe how to connect to a user's extension so that external callers can call users by specifying their extension.
-    
+
       - Describe how to search the organization's directory so that external callers can search the organization's directory and call a specific user.
-    
+
       - Enable external users to call the operator.
 
 Return to top
@@ -227,7 +226,6 @@ Return to top
 
 The following table contains links to topics that will help you learn about and manage Exchange Unified Messaging.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -290,4 +288,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-

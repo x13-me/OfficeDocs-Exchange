@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Split permissions enable two separate groups, such as Active Directory administrators and Microsoft Exchange Server 2013 administrators, to manage their respective services, objects, and attributes. Active Directory administrators manage security principals, such as users, that provide permissions to access an Active Directory forest. Exchange administrators manage the Exchange-related attributes on Active Directory objects and Exchange-specific object creation and management.
 
 Microsoft Exchange Server 2013 offers the following types of split permissions models:
@@ -26,12 +25,9 @@ Microsoft Exchange Server 2013 offers the following types of split permissions m
   - **RBAC split permissions**: Permissions to create security principals in the Active Directory domain partition are controlled by Role Based Access Control (RBAC). Only those who are members of the appropriate role groups can create security principals.
 
   - **Active Directory split permissions**: Permissions to create security principals in the Active Directory domain partition are completely removed from any Exchange user, service, or server. No option is provided in RBAC to create security principals. Creation of security principals in Active Directory must be performed using Active Directory management tools.
-    
 
     > [!NOTE]
     > Active Directory split permissions are available in organizations running Microsoft Exchange Server 2010 Service Pack 1 (SP1) or later, Exchange 2013, or both versions of Exchange.
-
-
 
 The model that you choose depends on the structure and needs of your organization. Choose the procedure that follows that's applicable to the model you want to configure. We recommend that you use the RBAC split permissions model. The RBAC split permissions model provides significantly more flexibility while providing the same administration separation as Active Directory split permissions.
 
@@ -61,11 +57,8 @@ Looking for other management tasks related to permissions? Check out [Advanced p
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -95,26 +88,23 @@ To configure Exchange 2013 for split permissions, you must assign the Mail Recip
 
 To configure RBAC split permissions, do the following:
 
-1.  If your organization is currently configured for Active Directory split permissions, do the following from a Windows command shell prompt.
-    
-    1.  Disable Active Directory split permissions by running the following command from the Exchange 2013 installation media.
-        
+1. If your organization is currently configured for Active Directory split permissions, do the following from a Windows command shell prompt.
+
+    1. Disable Active Directory split permissions by running the following command from the Exchange 2013 installation media.
+
         ```powershell
         setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
         ```
-    
-    2.  Restart the Exchange 2013 servers in your organization or wait for the Active Directory access token to replicate to all of your Exchange 2013 servers.
-        
+
+    2. Restart the Exchange 2013 servers in your organization or wait for the Active Directory access token to replicate to all of your Exchange 2013 servers.
 
         > [!NOTE]
         > If you have Exchange 2010 servers in your organization, you also need to restart those servers.
 
+2. Do the following from the Exchange Management Shell:
 
+    1. Create a role group for the Active Directory administrators. In addition to creating the role group, the command creates regular role assignments between the new role group and the Mail Recipient Creation role and the Security Group Creation and Membership role.
 
-2.  Do the following from the Exchange Management Shell:
-    
-    1.  Create a role group for the Active Directory administrators. In addition to creating the role group, the command creates regular role assignments between the new role group and the Mail Recipient Creation role and the Security Group Creation and Membership role.
-        
         ```powershell
             New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
         ```
@@ -122,43 +112,39 @@ To configure RBAC split permissions, do the following:
         > [!NOTE]
         > If you want members of this role group to be able to create role assignments, include the Role Management role. You don't have to add this role now. However, if you ever want to assign either the Mail Recipient Creation role or Security Group Creation and Membership role to other role assignees, the Role Management role must be assigned to this new role group. The steps that follow configure the Active Directory Administrators role group as the only role group that can delegate these roles.
 
-    
-    2.  Create delegating role assignments between the new role group and the Mail Recipient Creation role and Security Group Creation and Membership role using the following commands.
-        
+    2. Create delegating role assignments between the new role group and the Mail Recipient Creation role and Security Group Creation and Membership role using the following commands.
+
         ```powershell
             New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
             New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
         ```
 
-    3.  Add members to the new role group using the following command.
-        
+    3. Add members to the new role group using the following command.
+
         ```powershell
         Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
         ```
-    
-    4.  Replace the delegate list on the new role group so that only members of the role group can add or remove members.
-        
+
+    4. Replace the delegate list on the new role group so that only members of the role group can add or remove members.
+
         ```powershell
         Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
         ```
-        
 
         > [!IMPORTANT]
         > Members of the Organization Management role group, or those who are assigned the Role Management role, either directly or through another role group or USG, can bypass this delegate security check. If you want to prevent any Exchange administrator from adding himself or herself to the new role group, you must remove the role assignment between the Role Management role and any Exchange administrator and assign it to another role group.
 
-    
-    5.  Find all of the regular and delegating role assignments to the Mail Recipient Creation role using the following command. The command displays only the **Name**, **Role**, and **RoleAssigneeName** properties.
-        
+    5. Find all of the regular and delegating role assignments to the Mail Recipient Creation role using the following command. The command displays only the **Name**, **Role**, and **RoleAssigneeName** properties.
+
         ```powershell
             Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
         ```
-        
-    6.  Remove all of the regular and delegating role assignments to the Mail Recipient Creation role that aren't associated with the new role group or any other role groups, USGs, or direct assignments you want to keep using the following command.
-        
+
+    6. Remove all of the regular and delegating role assignments to the Mail Recipient Creation role that aren't associated with the new role group or any other role groups, USGs, or direct assignments you want to keep using the following command.
+
         ```powershell
         Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
         ```
-        
 
         > [!NOTE]
         > If you want to remove all of the regular and delegating role assignments to the Mail Recipient Creation role on any role assignee other than the Active Directory Administrators role group, use the following command. The <EM>WhatIf</EM> switch lets you see what role assignments will be removed. Remove the <EM>WhatIf</EM> switch and run the command again to remove the role assignments.
@@ -167,18 +153,17 @@ To configure RBAC split permissions, do the following:
             Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where {$_.RoleAssigneeName -NE "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
         ```
 
-    7.  Find all of the regular and delegating role assignments to the Security Group Creation and Membership role using the following command. The command displays only the **Name**, **Role**, and **RoleAssigneeName** properties.
-        
+    7. Find all of the regular and delegating role assignments to the Security Group Creation and Membership role using the following command. The command displays only the **Name**, **Role**, and **RoleAssigneeName** properties.
+
         ```powershell
             Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
         ```
-        
-    8.  Remove all of the regular and delegating role assignments to the Security Group Creation and Membership role that aren't associated with the new role group or any other role groups, USGs, or direct assignments you want to keep using the following command.
-        
+
+    8. Remove all of the regular and delegating role assignments to the Security Group Creation and Membership role that aren't associated with the new role group or any other role groups, USGs, or direct assignments you want to keep using the following command.
+
         ```powershell
             Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
         ```
-        
 
         > [!NOTE]
         > You can use the same command in the preceding Note to remove all of the regular and delegating role assignments to the Security Group Creation and Membership role on any role assignee other than the Active Directory Administrators role group, as shown in this example.
@@ -233,26 +218,20 @@ You can configure your Exchange 2013 organization for Active Directory split per
 
 Exchange administrators and servers will only be able to manage the Exchange attributes on existing Active Directory security principals. However, they will be able to create and manage Exchange-specific objects, such as transport rules and Unified Messaging dial plans.
 
-
 > [!WARNING]
 > After you enable Active Directory split permissions, Exchange administrators and servers will no longer be able to create security principals in Active Directory, and they won't be able to manage distribution group membership. These tasks must be performed using Active Directory management tools with the required Active Directory permissions. Before you make this change, you should understand the impact it will have on your administration processes and third-party applications that integrate with Exchange 2013 and the RBAC permissions model.<BR>For more information, see the "Active Directory split permissions" section in <A href="understanding-split-permissions-exchange-2013-help.md">Understanding split permissions</A>.
 
-
-
 To switch from shared or RBAC split permissions to Active Directory split permissions, do the following:
 
-1.  From a Windows command shell, run the following command from the Exchange 2013 installation media to enable Active Directory split permissions.
-    
+1. From a Windows command shell, run the following command from the Exchange 2013 installation media to enable Active Directory split permissions.
+
     ```powershell
     setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
     ```
 
-2.  If you have multiple Active Directory domains in your organization, you must either run `setup.exe /PrepareDomain` in each child domain that contains Exchange servers or objects or run `setup.exe /PrepareAllDomains` from a site that has an Active Directory server from every domain.
+2. If you have multiple Active Directory domains in your organization, you must either run `setup.exe /PrepareDomain` in each child domain that contains Exchange servers or objects or run `setup.exe /PrepareAllDomains` from a site that has an Active Directory server from every domain.
 
-3.  Restart the Exchange 2013 servers in your organization or wait for the Active Directory access token to replicate to all of you Exchange 2013 servers.
-    
+3. Restart the Exchange 2013 servers in your organization or wait for the Active Directory access token to replicate to all of you Exchange 2013 servers.
 
     > [!NOTE]
     > If you have Exchange 2010 servers in your organization, you also need to restart those servers.
-
-

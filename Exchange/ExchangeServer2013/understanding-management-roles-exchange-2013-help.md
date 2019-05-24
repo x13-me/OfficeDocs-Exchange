@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Management roles are part of the Role Based Access Control (RBAC) permissions model used in Microsoft Exchange Server 2013. Roles act as a logical grouping of cmdlets that are combined to provide access to view or modify the configuration of Exchange 2013 components, such as mailboxes, transport rules, and recipients. Management roles can be further combined into larger groupings called management role groups and management role assignment policies, which enable management of feature areas and recipient configuration. Role groups and role assignment policies assign permissions to administrators and end users, respectively. For more information about management role groups and management role assignment policies, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
-
 
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
-
-
 
 **Contents**
 
@@ -69,11 +65,8 @@ For a complete list of the management roles included with Exchange 2013, see [Bu
 
 You can take the built-in roles provided with Exchange 2013 and combine them in any way to create a permissions model that works with your business. For example, if you want members of a role group to manage recipients and public folders, you assign both the Mail Recipients and Public Folders roles to the role group. Most often, you assign roles to role groups or role assignment policies. You can also assign management roles directly to users if you want to control permissions at a granular level. We recommend that you use role groups and role assignment policies rather than direct user role assignment to simplify your permissions model.
 
-
 > [!NOTE]
 > You can only assign end-user management roles to role assignment policies.
-
-
 
 Built-in management roles can't be changed. You can, however, create management roles based on the built-in management roles, and then assign those new roles to role groups or role assignment policies. You can then change the new management roles to suit your needs. Doing so is an advanced task that you should rarely, if ever, need to do.
 
@@ -175,7 +168,6 @@ The wildcard character (\*) can be used in the role entry name to return all of 
 
 **Management role entry name with wildcard characters**
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -211,7 +203,6 @@ The wildcard character (\*) can be used in the role entry name to return all of 
 </tbody>
 </table>
 
-
 ## Unscoped top-level role entries
 
 Unscoped top-level role entries are used with unscoped top-level management roles to create roles based on custom scripts or non-Exchange cmdlets. Each unscoped role entry is associated with a single custom script or a non-Exchange cmdlet. To indicate that you want to create an unscoped role entry on an unscoped role, you need to specify the *UnscopedTopLevel* parameter on the **Add-ManagementRoleEntry** cmdlet.
@@ -235,7 +226,7 @@ Management role types are split into the following categories:
   - **Administrative or specialist**: Roles associated with an administrative or specialist role types have a broader scope of impact in the Exchange organization. Roles of this role type enable tasks such as server or recipient management, organization configuration, compliance administration, auditing, and more.
 
   - **User-focused**: Roles associated with a user-focused role type have a scope of impact closely tied with an individual user. Roles of this role type enable tasks such as user profile configuration and self management, management of user-owned distribution groups, and more.
-    
+
     The names of roles associated with user-focused role types and user-focused role type names begin with My.
 
   - **Specialty**: Roles associated with specialty role types enable tasks that aren't administrative or user-focused role types. Roles of this role type enable tasks such as application impersonation and the use of non-Exchange cmdlets or scripts.
@@ -243,7 +234,6 @@ Management role types are split into the following categories:
 The following table lists all of the administrative management role types in Exchange 2013 and whether the configuration that's permitted by the role type is applied across the whole Exchange organization or only to an individual server. For more information about each of the management roles associated with these role types, including a description of each role, who may benefit from being assigned the role, and other information, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
 **Administrative role types**
-
 
 <table>
 <colgroup>
@@ -268,7 +258,6 @@ The following table lists all of the administrative management role types in Exc
 
 > [!NOTE]
 > Permissions set directly on Active Directory objects may not be enforced through RBAC.
-
 
 </td>
 <td><p>Organization</p></td>
@@ -596,7 +585,6 @@ The following table lists all of the administrative management role types in Exc
 > [!WARNING]
 > Roles associated with this role type grant permissions to cmdlets and scripts that should only be used under the direction of Microsoft Customer Service and Support.
 
-
 </td>
 <td><p>Organization</p></td>
 </tr>
@@ -702,11 +690,9 @@ The following table lists all of the administrative management role types in Exc
 </tbody>
 </table>
 
-
 The following table lists all of the user-focused management role types and their associated built-in management roles in Exchange 2013.
 
 **User-focused role types**
-
 
 <table>
 <colgroup>
@@ -790,7 +776,6 @@ The following table lists all of the user-focused management role types and thei
 </tbody>
 </table>
 
-
 Return to top
 
 ## For more information
@@ -808,4 +793,3 @@ Return to top
 [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\))
 
 [Set-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335173\(v=exchg.150\))
-

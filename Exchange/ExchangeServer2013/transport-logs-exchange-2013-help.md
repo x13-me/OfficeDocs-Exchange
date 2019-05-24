@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Transport logs provide information about what's happening in the transport pipeline. The following transport logs are available in Microsoft Exchange Server 2013:
 
 **Agent logs**: Agent logging records the actions performed on a message by specific anti-spam agents. Agent logging is available in the Transport service on a Mailbox server. For more information, see [Anti-spam agent logging](anti-spam-agent-logging-exchange-2013-help.md).
@@ -34,4 +33,3 @@ Delivery reports uses the information stored in the message tracking log to sear
 **Protocol logs**: Protocol logging records the SMTP conversations that occur on Send connectors and Receive connectors as part of message delivery. Protocol logging is available in the Front End Transport service on Client Access servers, the Transport service on Mailbox servers, and the Mailbox Transport service on Mailbox servers. For more information, see [Protocol logging](protocol-logging-exchange-2013-help.md).
 
 **Routing table logs**: Routing table logging periodically records a snapshot of the routing table that's used by Exchange 2013 to route messages to their destinations. Routing table logging is available in the Transport service on Mailbox servers.
-

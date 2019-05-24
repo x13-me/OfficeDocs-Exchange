@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 ## Deployment Scenarios
 
@@ -30,7 +29,6 @@ This scenario is applicable to government agencies, divisions, or departments th
 ![Address Book Policies with two separate companies](images/JJ657455.b4fc82da-a659-4ade-ba33-d55d90dcf204(EXCHG.150).gif "Address Book Policies with two separate companies")
 
 The Contoso and Humungous Insurance ABPs were created using the following address lists, global address lists, room lists, and OABs, which were created using a recipient filter that grouped the objects with a filter such as Custom Attribute. Because the two companies are separate without any interaction between the two, there aren't any address lists in common.
-
 
 <table>
 <colgroup>
@@ -71,7 +69,6 @@ The Contoso and Humungous Insurance ABPs were created using the following addres
 </tbody>
 </table>
 
-
 ## Scenario 2: Two companies sharing a CEO
 
 In this scenario, Fabrikam and Tailspin Toys share the same Exchange organization and the same CEO. The CEO is the only common person between the two companies. This scenario requires three ABPs that have the following characteristics:
@@ -87,7 +84,6 @@ In this scenario, Fabrikam and Tailspin Toys share the same Exchange organizatio
   - Three ABPs are created: **Fab**, **Tail**, and **CEO**.
 
 ![Two Companies One CEO](images/JJ657455.c87a5654-d456-4688-acb2-0be15ba1cda6(EXCHG.150).gif "Two Companies One CEO")
-
 
 <table>
 <colgroup>
@@ -135,7 +131,6 @@ In this scenario, Fabrikam and Tailspin Toys share the same Exchange organizatio
 </tbody>
 </table>
 
-
 When the CEO is added to the distribution groups in each organization and falls within the scope of each company's ABP, then the CEO becomes visible to each company. The CEO can create distribution groups that span both companies and will be visible within each company's GAL, but members of the distribution group will only be able to view the members of the group that are within their own organization.
 
 ## Scenario 3: Education
@@ -151,7 +146,6 @@ This scenario is applicable to schools or universities where a division of class
   - Distribution groups are created for each class's parents and the faculty.
 
 ![Address Book Policies Education Scenario](images/JJ657455.435f3b1a-9752-4c61-ab8a-80115c643d12(EXCHG.150).gif "Address Book Policies Education Scenario")
-
 
 <table>
 <colgroup>
@@ -198,7 +192,6 @@ This scenario is applicable to schools or universities where a division of class
 </tbody>
 </table>
 
-
 ## Considerations and best practices
 
 Consider the following when using ABPs in your organization:
@@ -216,23 +209,23 @@ Consider the following when using ABPs in your organization:
   - The GAL used in an ABP must, at a minimum, contain all of the address lists, including the room address list, defined and specified in an ABP. Don't create a GAL that contains fewer objects than any of the address lists in the same ABP.
 
   - We recommend creating distribution groups that don't cross virtual organization boundaries. Creating distribution groups that contain members of multiple virtual organizations results in the following issues:
-    
+
       - If group members request delivery or read receipts when sending mail to the distribution group, they'll be able to see the email addresses of the group members in other virtual organizations
-    
+
       - If an encrypted message is sent to the distribution group and some group members don't have valid digital IDs, the sender will receive a warning message that includes the total number of members who don't have valid IDs and a list of their email addresses. However, if some of those members without valid digital IDs are in a different organization than the sender, the warning message will include the correct count but won't include the email addresses of the members in the other organization. As a result, the total count won't match the list of member addresses.
-        
+
         For example, let's say a distribution group contains five members total from two organizations, Agency A and Agency B. Three group members are from Agency A, and one of those members has as invalid digital ID. The other two members are from Agency B, and both of them have invalid digital IDs. If a member from Agency A sends an encrypted message to the distribution group, that member will receive a warning message stating that there are a total of three recipients without valid digital IDs. However, only the email address for the recipient from Agency A will be listed in the warning message.
-    
+
       - ABP's don't apply to the **Get-Group** cmdlets. Therefore, any user or process that is able to run **Get-Group** will see all members of any group they have access to.
-        
+
         We recommend that you modify the group management settings of the OWA Options so users can't use Outlook Web App to manage groups. To prevent users from using OWA Options to manage groups, exclude the users from the MyDistributionGroupMembership RBAC role. For details, see [MyDistributionGroupMembership role](mydistributiongroupmembership-role-exchange-2013-help.md).
-    
+
       - If you allow users to use Outlook or Outlook Web App to manage groups, the group owners must have full visibility to the group membership list.
 
   - All ABPs must contain a room address list. However, if your organization doesn't use room address lists, you can create a default empty room address list.
 
   - Deploying ABPs doesn't prevent users in one virtual organization from sending email to users in another virtual organization. If you want to prevent users from sending email across organizations, we recommend that you create a transport rule. For example, to create a transport rule that prevents Contoso users from receiving messages from Fabrikam users, but still allows Fabrikam's senior leadership team to send messages to Contoso users, run the following Shell command:
-    
+
     ```powershell
         New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
     ```
@@ -348,4 +341,3 @@ This example assigns ABP\_FAB to all mailboxes where CustomAttribute15 equals "F
 ```
 
 For more information, see [Assign an address book policy to mail users](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users).
-

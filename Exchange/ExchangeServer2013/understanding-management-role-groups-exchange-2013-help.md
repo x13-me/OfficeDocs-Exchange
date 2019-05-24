@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 A *management role group* is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. Role groups are assigned administrator and specialist roles that define major administrative tasks in Exchange 2013 such as organization management, recipient management, and other tasks. Role groups enable you to more easily assign a broader set of permissions to a group of administrators or specialist users.
 
-
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
-
-
 
 **Contents**
 
@@ -43,11 +39,8 @@ Role group membership
 
 Role group creation workflow
 
-
 > [!NOTE]
 > If you want to assign permissions to users to manage their own mailbox or distribution groups, see <A href="understanding-management-role-assignment-policies-exchange-2013-help.md">Understanding management role assignment policies</A>.
-
-
 
 ## Role group layers
 
@@ -120,12 +113,10 @@ The following table lists the role group layer and the procedural topics that yo
 > [!NOTE]
 > Changing the management role entries in management roles in a role group is an advanced task and is generally not required in most cases. Instead, you may be able to use a pre-existing management role that suits your requirements. For more information, see <A href="built-in-role-groups-exchange-2013-help.md">Built-in role groups</A>.
 
-
 </td>
 </tr>
 </tbody>
 </table>
-
 
 Return to top
 
@@ -204,7 +195,6 @@ The following table lists all the built-in role groups included with Exchange 20
 </tbody>
 </table>
 
-
 Return to top
 
 ## Linked role groups
@@ -237,11 +227,8 @@ If the **ManagedBy** property is set on a role group, only those users who are l
 
 If the **ManagedBy** property isn't set on a role group, only users who are members of the Organization Management role or are assigned, either directly or indirectly, the Role Management management role can modify a role group or role group membership.
 
-
 > [!NOTE]
 > Roles assigned to a role group may be assigned using delegating role assignments. With delegating role assignments, members of a role group that's assigned a delegated role can assign that role to another role group, assignment policy, user, or USG. Members of the role group can assign only that role and can't delegate the role group, unless they're also added to the <STRONG>ManagedBy</STRONG> property. For more information about delegated role assignments, see <A href="understanding-management-role-assignments-exchange-2013-help.md">Understanding management role assignments</A>.
-
-
 
 For more information about how to manage role group delegation, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
@@ -265,23 +252,22 @@ As mentioned previously, a role group is made up of several layers. To help you 
 
 When the preceding command is run, the following happens:
 
-1.  A new role group object, which is a special USG, called Seattle Recipient Management is created under Microsoft Exchange Security Groups OU in the forest root domain.
+1. A new role group object, which is a special USG, called Seattle Recipient Management is created under Microsoft Exchange Security Groups OU in the forest root domain.
 
-2.  The mailboxes for Ray, Jenn, Maria, Chris, Maija, Carter, Jenny, Sam, Lukas, Isabel, and Katie are added as members of the role group. These users receive the permissions provided by this role group.
+2. The mailboxes for Ray, Jenn, Maria, Chris, Maija, Carter, Jenny, Sam, Lukas, Isabel, and Katie are added as members of the role group. These users receive the permissions provided by this role group.
 
-3.  The users Brian and David are added to the **ManagedBy** property of the role group. These users can add and remove members to and from the role group but won't be given any permissions provided by the role group because they're not members. Katie is also added to the **ManagedBy** property of the role group. Because she's added to the **ManagedBy** property, and she's a member of the role group, she can add or remove members to and from the role group, and she also receives the permissions provided by the role group.
+3. The users Brian and David are added to the **ManagedBy** property of the role group. These users can add and remove members to and from the role group but won't be given any permissions provided by the role group because they're not members. Katie is also added to the **ManagedBy** property of the role group. Because she's added to the **ManagedBy** property, and she's a member of the role group, she can add or remove members to and from the role group, and she also receives the permissions provided by the role group.
 
-4.  The following management role assignments are created. The role assignments assign each management role specified in the command to the role group. The management scope Seattle Users is added to each role assignment. The name of each role assignment is a combination of the management role being assigned and the role group name.
-    
+4. The following management role assignments are created. The role assignments assign each management role specified in the command to the role group. The management scope Seattle Users is added to each role assignment. The name of each role assignment is a combination of the management role being assigned and the role group name.
+
       - `Mail Recipients_Seattle Recipient Management`
-    
+
       - `Distribution Groups_Seattle Recipient Management`
-    
+
       - `Move Mailboxes_Seattle Recipient Management`
-    
+
       - `UM Mailboxes_Seattle Recipient Management`
 
 If you compare the results of this command to the Management role group layers figure earlier in this topic, you can see where each step correlates to the role group layers. You can then refer to the Management role group management topics shown in "Role group management" earlier in this topic to manage each role group layer.
 
 Return to top
-

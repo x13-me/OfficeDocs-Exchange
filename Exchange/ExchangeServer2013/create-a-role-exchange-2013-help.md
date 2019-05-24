@@ -18,16 +18,12 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can create a management role, change the management role entries, add a scope if needed, and then assign the role to a role assignee. You should rarely need to perform this procedure. We recommend that you check whether a built-in management role can be used instead of creating a management role. For a list of built-in management roles, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
 For more information about management roles in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-
 > [!NOTE]
 > This topic doesn't discuss how to create an unscoped management role. For information about how to create an unscoped management role, see <A href="create-an-unscoped-role-exchange-2013-help.md">Create an unscoped role</A>.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -41,11 +37,8 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
@@ -104,12 +97,9 @@ When you create a role assignment, you can choose to do one of the following:
   - Create the role assignment with an OU without a domain restriction filter.
 
   - Create the role assignment with the custom or exclusive scope you created in Step 3.
-    
 
     > [!NOTE]
     > You can't specify a scope when you create an assignment between a role and a management role assignment policy.
-
-
 
 You can assign the new role to a role group, a role assignment policy, a user, or a universal security group (USG). For more information, see the following topics:
 
@@ -118,4 +108,3 @@ You can assign the new role to a role group, a role assignment policy, a user, o
   - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
   - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
-

@@ -9,7 +9,7 @@ ms.date: 7/21/2016
 ms.reviewer: 
 title: Remove an extension number
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

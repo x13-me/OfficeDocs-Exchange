@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 *Role Based Access Control* (RBAC) is the permissions model used in Microsoft Exchange Server 2013. With RBAC, you don't need to modify and manage access control lists (ACLs), which was done in Exchange Server 2007. ACLs created several challenges in Exchange 2007, such as modifying ACLs without causing unintended consequences, maintaining ACL modifications through upgrades, and troubleshooting problems that occurred due to using ACLs in a nonstandard way.
 
@@ -25,11 +24,8 @@ RBAC enables you to control, at both broad and granular levels, what administrat
 
 RBAC has two primary ways of assigning permissions to users in your organization, depending on whether the user is an administrator or specialist user, or an end-user: management role groups and management role assignment policies. Each method associates users with the permissions they need to perform their jobs. A third, more advanced method, direct user role assignment, can also be used. The following sections in this topic explain RBAC and provide examples of its use.
 
-
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
-
-
 
 **Contents**
 
@@ -94,25 +90,25 @@ For more information about direct user assignment, see [Understanding management
 The following figure shows the components in RBAC and how they fit together:
 
   - Role groups:
-    
+
       - One or more administrators can be members of a role group. They can also be members of more than one role group.
-    
+
       - The role group is assigned one or more role assignments. These link the role group with one or more administrative roles that define what tasks can be performed.
-    
+
       - The role assignments can contain management scopes that define where the users of the role group can perform actions. The scopes determine where the users of the role group can modify configuration.
 
   - Role assignment policies:
-    
+
       - One or more users can be associated with a role assignment policy.
-    
+
       - The role assignment policy is assigned one or more role assignments. These link the role assignment policy with one or more end-user roles. The end-user roles define what the user can configure on his or her mailbox.
-    
+
       - The role assignments between role assignment policies and roles have built-in scopes that restrict the scope of assignments to the user's own mailbox or distribution groups.
 
   - Direct role assignment (advanced):
-    
+
       - A role assignment can be created directly between a user or USG and one or more roles. The role defines what tasks the user or USG can perform.
-    
+
       - The role assignments can contain management scopes that define where the user or USG can perform actions. The scopes determine where the user or USG can modify configuration.
 
 **RBAC overview**
@@ -127,26 +123,23 @@ Jane is an administrator for the medium-size company, Contoso. She's responsible
 
 In addition to the Recipient Management - Vancouver custom role group, Jane also needs a role assignment policy to manage her own mailbox's configuration settings. The organization administrators have decided that all users, except for senior management, receive the same permissions when they manage their own mailboxes. They can configure their voice mail, set up retention policies and change their address information. The default role assignment policy provided with Exchange 2013 now reflects these requirements.
 
-
 > [!NOTE]
 > You may have noticed that because Jane is a member of the Recipient Management - Vancouver custom role group, that should give her permissions to manage her own mailbox. This is true; however, the role group doesn't provide her all of the permissions necessary to manage all of the features of her mailbox. The permissions needed to manage voice mail and retention policy settings aren't included in her role group. Those are provided only by the default role assignment policy assigned to her.
 
-
-
 To allow for this, consider the role group, which provides Jane's administrative permissions over the recipients in Vancouver:
 
-1.  A custom role group called Recipient Management - Vancouver was created. When it was created, the following occurred:
-    
-    1.  The role group was assigned all of the same management roles that are also assigned to the Recipient Management built-in role group. This gives users added to the Recipient Management - Vancouver custom role group the same permissions as those users added to the Recipient Management role group. However, the following steps limit where they can use those permissions.
-    
-    2.  The Vancouver Recipients custom management scope was created, which matches only recipients who are located in Vancouver. This was done by creating a scope that filters on a user's city or other unique information.
-    
-    3.  The role group was created with the Vancouver Recipients custom management scope. This means while administrators added to the Recipient Management - Vancouver custom role group have full recipient management permissions, they can only use those permissions against recipients based in Vancouver.
-    
+1. A custom role group called Recipient Management - Vancouver was created. When it was created, the following occurred:
+
+    1. The role group was assigned all of the same management roles that are also assigned to the Recipient Management built-in role group. This gives users added to the Recipient Management - Vancouver custom role group the same permissions as those users added to the Recipient Management role group. However, the following steps limit where they can use those permissions.
+
+    2. The Vancouver Recipients custom management scope was created, which matches only recipients who are located in Vancouver. This was done by creating a scope that filters on a user's city or other unique information.
+
+    3. The role group was created with the Vancouver Recipients custom management scope. This means while administrators added to the Recipient Management - Vancouver custom role group have full recipient management permissions, they can only use those permissions against recipients based in Vancouver.
+
     For more information about creating a custom role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-2.  Jane is then added as a member of the Recipient Management - Vancouver custom role group.
-    
+2. Jane is then added as a member of the Recipient Management - Vancouver custom role group.
+
     For more information about adding members to a role group, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 To give Jane the ability to manage her own mailbox settings, a role assignment policy needs to be configured with the required permissions. The default role assignment policy is used to provide users with the permissions they need to configure their own mailbox. All end-user roles are removed from the default role assignment policy, except for: `MyBaseOptions`, `MyContactInformation`, `MyVoicemail`, and `MyRetentionPolicies`. `MyBaseOptions` is included because this management role provides the basic user functionality in Outlook Web App, such as Inbox rules, calendar configuration, and other tasks.
@@ -173,9 +166,9 @@ Isabel is the Vice President of Marketing at Contoso. Isabel, as part of the sen
 
 So, Isabel is given different permissions on her own mailbox. Most users at Contoso are assigned to the default role assignment policy. However, senior leadership is assigned to the Senior Leadership role assignment policy. The following is done to create the custom role assignment policy:
 
-1.  A custom role assignment policy called Senior Leadership is created. The role assignment policy is assigned the `MyBaseOptions`, `MyContactInformation`, `MyVoicemail`, `MyProfileInformation`, `MyDistributionGroupMembership`, and` MyDistributionGroups` roles. `MyBaseOptions` is included because this role provides the basic user functionality in Outlook Web App, such as Inbox rules, calendar configuration, and other tasks.
+1. A custom role assignment policy called Senior Leadership is created. The role assignment policy is assigned the `MyBaseOptions`, `MyContactInformation`, `MyVoicemail`, `MyProfileInformation`, `MyDistributionGroupMembership`, and` MyDistributionGroups` roles. `MyBaseOptions` is included because this role provides the basic user functionality in Outlook Web App, such as Inbox rules, calendar configuration, and other tasks.
 
-2.  Isabel is then manually assigned the Senior Leadership role assignment policy.
+2. Isabel is then manually assigned the Senior Leadership role assignment policy.
 
 Isabel's mailbox now has the permissions provided by the Senior Leadership role assignment policy. Any changes made to this role assignment policy are automatically applied to her mailbox, and any other mailboxes also assigned to the same role assignment policy.
 
@@ -184,4 +177,3 @@ Isabel's mailbox now has the permissions provided by the Senior Leadership role 
 [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
 [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)
-

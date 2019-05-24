@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Receive connectors control the flow of inbound messages to your Exchange organization. They are configured on computers running Microsoft Exchange Server 2013 with the Transport service, or in the Front End service on a Client Access server. They can be created in the Exchange Administration Center (EAC), or in the Exchange Management Shell.
 
 By default, the Receive connectors that are required for internal mail flow are automatically created when a Client Access server or Mailbox server is installed.
@@ -99,15 +98,15 @@ Permission groups include *Anonymous*, *ExchangeUsers*, *ExchangeServers*, *Exch
 
 The type determines the default permission groups that are assigned to the Receive connector and the default authentication mechanisms that are available for session authentication. The following list describes the available types:
 
-1.  **Client**: Typically used to connect to clients not using Microsoft Office Outlook. It can use TLS authentication.
+1. **Client**: Typically used to connect to clients not using Microsoft Office Outlook. It can use TLS authentication.
 
-2.  **Custom**: Typically used in a cross-forest scenario, or in a scenario where your organization receives messages from an SMTP message transfer agent.
+2. **Custom**: Typically used in a cross-forest scenario, or in a scenario where your organization receives messages from an SMTP message transfer agent.
 
-3.  **Internal**: Used for communication between servers running the Transport service, or between Mailbox servers running the Transport service and third-party transfer agents.
+3. **Internal**: Used for communication between servers running the Transport service, or between Mailbox servers running the Transport service and third-party transfer agents.
 
-4.  **Internet**: Used to receive SMTP mail from the Internet.
+4. **Internet**: Used to receive SMTP mail from the Internet.
 
-5.  **Partner**: Use this type when you want to configure secure communication with a partner.
+5. **Partner**: Use this type when you want to configure secure communication with a partner.
 
 Each type is appropriate for a specific connection scenario. Select the type that has the default settings most applicable to the configuration that you want. You can modify permissions by using the **Add-ADPermission** and **Remove-ADPermission** cmdlets. For more information, see the following topics:
 
@@ -134,4 +133,3 @@ The following features were added in Exchange 2013:
   - The *TransportRole* parameter designates the server role associated with this connector. It is typically used to specify the server role when you host multiple server roles on a single computer.
 
 See [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)) for more information about these parameters and other parameters for Receive connectors.
-

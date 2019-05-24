@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 *Recipient resolution* is the process of expanding and resolving all the recipients in a message. The act of resolving the recipients matches a recipient to the corresponding Active Directory object in the Microsoft Exchange organization. The act of expanding the recipients expands all distribution groups into a list of individual recipients. Recipient resolution allows message limits and alternative recipients to be applied correctly to each recipient.
 
 In a Microsoft Exchange Server 2013 organization, recipient resolution is performed by the categorizer in the Transport service on Mailbox servers. Categorization on each message happens after a newly arrived message is put in the Submission queue. Recipient resolution, in addition to content conversion and routing, is performed on the message before the message is put in a delivery queue. The categorizer performs recipient resolution before routing. The component of the categorizer that's responsible for recipient resolution is frequently called the *resolver*.
@@ -55,11 +54,8 @@ The IMCEA encapsulation method uses the following syntax: `IMCEA<Type>-<address>
 
 The placeholder \<*Type*\> identifies the type of non-SMTP address, for example `EX`, `X400`, or `FAX`.
 
-
 > [!NOTE]
 > Although <CODE>SMTP</CODE> and <CODE>X500</CODE> are theoretically valid values for &lt;<EM>Type</EM>&gt;, Exchange recipient resolution rejects any IMCEA-encoded addresses that use either of these types.
-
-
 
 The placeholder \<*address*\> is the encoded original address. The placeholder \<*domain*\> represents the SMTP domain that's used to encapsulate the non-SMTP address, for example, contoso.com
 
@@ -139,7 +135,6 @@ The following table describes the recipient objects that are found in Active Dir
 </tbody>
 </table>
 
-
 An object that contains missing or malformed critical properties is classified by the Active Directory query as an invalid object. For example, a dynamic distribution group object without an email address is considered invalid. Messages that are sent to recipients that are classified as invalid objects generate a non-delivery report (NDR).
 
 For each email address, a single initial query is performed for all possible recipient properties, such as the recipient identifiers, recipient type, message limits, email addresses, and alternative recipients. The applicable properties for the recipient are cached for later use. Recipient resolution classifies the recipients based on similarities in how the recipients are resolved, and the similarity of the applicable recipient properties.
@@ -169,12 +164,9 @@ Expansion occurs after top-level resolution. Expansion completely expands nested
 The following list describes the kinds of recipients that require expansion:
 
   - **Distribution groups and dynamic distribution groups**: Distribution groups are expanded based on the **memberOf** Active Directory property. Dynamic distribution groups are expanded by using the Active Directory query definition. If the *ExpansionServer* parameter is set on the group, the group isn't expanded by the current server. The distribution group is routed to the specified server for expansion.
-    
 
     > [!NOTE]
     > If you select a specific transport server in your organization as the expansion server, the distribution group usage becomes dependent on the availability of the expansion server. If the expansion server is unavailable, any messages that are sent to the distribution group can't be delivered. If you plan to use specific expansion servers for your distribution groups, to reduce the risk of service interruption, you should consider implementing high availability solutions for these servers.
-
-
 
   - **Alternative recipients**: The *ForwardingAddress* parameter may be set on mailboxes and mail-enabled public folders. The *ForwardingAddress* parameter redirects all messages to the specified alternative recipient. This is known as a *forwarded recipient*. When an alternative delivery address is specified in the *ForwardingAddress* parameter and the *DeliverToMailboxAndForward* parameter is set to `$true`, the message is delivered to the original recipient and the alternative recipient. This is known as *delivered and forwarded recipient*.
 
@@ -185,11 +177,11 @@ The following list describes the kinds of recipients that require expansion:
 As the distribution groups, alternative recipients, and contacts chains are expanded, the categorizer checks for *recipient loops*. A recipient loop is a recipient configuration problem that causes message delivery to the same recipients in an endless circle. The following list describes the different types of recipient loops:
 
   - **Harmless recipient loop**: A harmless recipient loop results in successful message delivery. The following list describes two scenarios when harmless recipient loops occur:
-    
+
       - When two distribution groups contain one another as members.
-    
+
       - When mailboxes or mail-enabled public folders are set to deliver and forward to one another. This happens when the *DeliverToMailboxAndForward* parameter of both recipients is set to `$true` and the *ForwardingAddress* parameter is set to one another.
-    
+
     When a harmless recipient loop is detected, the message is delivered to the recipient, but no additional attempts are made to deliver the message to the same recipient.
 
   - **Broken recipient loop**: A broken recipient loop can't result in successful message delivery. An example of a broken recipient loop is when mailboxes or mail-enabled public folders have the *ForwardingAddress* parameter set to one another. When the categorizer detects a broken recipient loop, expansion activity for the current recipient stops, and an NDR is generated for the recipient.
@@ -209,12 +201,9 @@ The following list describes the delivery report redirection settings that are a
   - **ReportToManagerEnabled**: This parameter enables delivery reports to be sent to the distribution group manager. Valid values are `$true` or `$false`. The default value is `$false`. For a distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-Group** cmdlet. For a dynamic distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-DynamicDistributionGroup** cmdlet.
 
   - **ReportToOriginatorEnabled**: This parameter enables delivery reports to be sent to the sender of email messages that are sent to this distribution group. Valid values are `$true` or `$false`. The default value is `$true`.
-    
 
     > [!NOTE]
     > The values of the <EM>ReportToManagerEnabled</EM> parameter and <EM>ReportToOriginatorEnabled</EM> parameter can't both be <CODE>$true</CODE>. If one parameter is set to <CODE>$true</CODE>, the other must be set to <CODE>$false</CODE>. The values of both parameters can be <CODE>$false</CODE>. This suppresses all redirection of all delivery report messages.
-
-
 
 The following list describes the available delivery report messages:
 
@@ -307,7 +296,6 @@ The expansion process also enforces any message restrictions that are configured
 </tbody>
 </table>
 
-
 Certain types of messages that are sent by authenticated senders are exempt from restrictions. The following list describes the messages that are exempt from recipient restrictions:
 
   - **All messages that are sent by the Microsoft Exchange recipient**: These messages include DSN messages, journal reports, quota messages, and other system-generated messages that are sent to internal message senders. For more information about the Microsoft recipient, see [Recipients](recipients-exchange-2013-help.md).
@@ -356,11 +344,8 @@ Recipient resolution bifurcates a message if the following conditions are true:
 
 When the number of expanded recipients is too large, the categorizer splits the message into multiple copies. This is done to reduce system resource use during message expansion. The maximum number of envelope recipients in a message is controlled by the *ExpansionSizeLimit* key in the `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` application configuration file. The default value is 1000.
 
-
 > [!WARNING]
 > We recommend that you don't modify the value of the <EM>ExpansionSizeLimit</EM> key on an Exchange transport server in a production environment.
-
-
 
 Return to top
 
@@ -436,7 +421,6 @@ The following table describes the performance counters that are available for re
 </tbody>
 </table>
 
-
 ## Recipient resolution events in the message tracking log
 
 The following table describes the recipient resolution events that are written in the message tracking log.
@@ -474,6 +458,4 @@ The following table describes the recipient resolution events that are written i
 </tbody>
 </table>
 
-
 For more information about message tracking, see [Message tracking](message-tracking-exchange-2013-help.md).
-

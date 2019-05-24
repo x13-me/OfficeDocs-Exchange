@@ -3,7 +3,7 @@ title: "How and when to decommission your on-premises Exchange servers in a hybr
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.reviewer: 
 ms.topic: article
 ms.prod: exchange-server-it-pro

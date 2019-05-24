@@ -9,7 +9,7 @@ ms.date: 6/23/2018
 ms.reviewer: 
 title: Set up connectors for secure mail flow with a partner organization
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

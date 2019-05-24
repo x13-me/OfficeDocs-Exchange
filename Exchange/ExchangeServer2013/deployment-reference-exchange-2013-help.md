@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 [Exchange 2013: editions and versions](exchange-2013-editions-and-versions-exchange-2013-help.md)
 
 [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/en-us/library/hh135098\(v=exchg.150\))
@@ -38,4 +37,3 @@ _**Applies to:** Exchange Server 2013_
 [Exchange 2013 language support](exchange-2013-language-support-exchange-2013-help.md)
 
 [Exchange 2013 readiness checks](exchange-2013-readiness-checks-exchange-2013-help.md)
-

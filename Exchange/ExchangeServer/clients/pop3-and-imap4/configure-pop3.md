@@ -9,7 +9,7 @@ ms.date: 6/8/2018
 ms.reviewer: 
 title: Enable and configure POP3 on an Exchange server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

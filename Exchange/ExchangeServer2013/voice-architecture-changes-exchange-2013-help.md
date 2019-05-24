@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Microsoft Exchange Server 2013 architecture is different than the architecture in Exchange Server 2007 and Exchange Server 2010. In Exchange 2007 and Exchange 2010, the types of servers were separated into multiple server roles: Client Access, Mailbox, Hub Transport, and Unified Messaging. In Exchange 2013, the server roles are combined into two types of servers, and all components or services from those server roles are run on the same physical server or on two separate servers called Client Access and Mailbox. In the new model, the Client Access server running the Microsoft Exchange Unified Messaging Call Router service redirects Session Initialization Protocol (SIP) traffic that's generated from an incoming call to a Mailbox server. Then a media (Realtime Transport Protocol (RTP) or secure RTP (SRTP)) channel is established from the VoIP gateway or IP Private Branch eXchange (PBX) to the Mailbox server that hosts the user's mailbox. In Exchange 2013, the Mailbox server has the same processes as the Unified Messaging server role in Exchange 2007 and Exchange 2010. The Mailbox server runs both the Microsoft Exchange Unified Messaging service and UM worker processes. The Client Access server runs the Microsoft Exchange Unified Messaging Call Router service, which receives an incoming call and forwards it to the Mailbox server.
 
 **Contents**
@@ -136,7 +135,6 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 </tbody>
 </table>
 
-
 Return to top
 
 ## UM dial plans
@@ -177,7 +175,6 @@ The following table summarizes the relationship between Client Access and Mailbo
 </tr>
 </tbody>
 </table>
-
 
 Return to top
 
@@ -238,6 +235,4 @@ To support the new Client Access Unified Messaging Call Router service in Exchan
 </tbody>
 </table>
 
-
 Return to top
-

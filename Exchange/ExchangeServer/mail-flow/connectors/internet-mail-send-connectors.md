@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

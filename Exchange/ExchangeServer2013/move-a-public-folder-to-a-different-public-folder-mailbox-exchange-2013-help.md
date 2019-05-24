@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013, Exchange Server 2016_
-
+_**Applies to:** Exchange Server 2013_
 
 If the content of a public folder mailbox begins to exceed your mailbox quotas, you may need to move public folders to a different public folder mailbox. There are a couple ways to do this. To move one or more public folders that don't contain subfolders, you can use the **PublicFolderMoveRequest** cmdlets. If you need to move an entire public folder branch (which includes the parent public folder and all subfolders), you can use the `Move-PublicFolderBranch.ps1` script that's available when you install Exchange 2013.
 
@@ -43,11 +42,8 @@ For additional management tasks related to public folders see [Public folder pro
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -62,8 +58,6 @@ This example starts the move request for the public folder \\CustomerEnagagement
 > [!NOTE]
 > The target public folder mailbox will be locked while the move request is active.
 
-
-
 For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://technet.microsoft.com/en-us/library/jj878081\(v=exchg.150\)).
 
 ## Move multiple public folders
@@ -74,11 +68,8 @@ This example begins the move request for public folders under the \\Dev public f
     New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
 ```
 
-
 > [!NOTE]
 > The target public folder mailbox will be locked while the move request is active.
-
-
 
 For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://technet.microsoft.com/en-us/library/jj878081\(v=exchg.150\)).
 
@@ -104,4 +95,3 @@ Get-PublicFolderMoveRequest | Format-List Status
 A status of `Completed` indicates that the move request was successful.
 
 If the move request was unsuccessful, you may need to restore the public folder or its contents. For more information, see [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md).
-

@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

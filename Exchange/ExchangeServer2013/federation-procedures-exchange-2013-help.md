@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 [Configure federated sharing](configure-federated-sharing-exchange-2013-help.md)
 
 [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md)
@@ -35,8 +34,5 @@ _**Applies to:** Exchange Server 2013_
 
 [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md)
 
-
 > [!IMPORTANT]
 > This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
-
-

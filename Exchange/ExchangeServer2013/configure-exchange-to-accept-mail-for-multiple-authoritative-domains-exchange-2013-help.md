@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, it's easy to add multiple authoritative domains to your organization. However, after you add the authoritative domain, you need to decide how to use the authoritative domain in your organization. For example:
 
   - If you want to add an email address in the new authoritative domain for recipients in your organization, do you want to replace the existing primary (reply to) address for the recipients, or add the new email address as a proxy (secondary) address?
@@ -49,11 +48,8 @@ The following examples are scenarios in which your Exchange organization may hav
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
@@ -61,15 +57,15 @@ The following examples are scenarios in which your Exchange organization may hav
 
 ## Use the Exchange Administration Center to create an authoritative domain
 
-1.  In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain contoso.com could have a display name of Contoso Local Accepted Domain.
+2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain contoso.com could have a display name of Contoso Local Accepted Domain.
 
-3.  In the **Accepted domain** field, specify an SMTP namespace for which your organization accepts email messages. For example, contoso.com.
+3. In the **Accepted domain** field, specify an SMTP namespace for which your organization accepts email messages. For example, contoso.com.
 
-4.  Select **Authoritative domain**.
+4. Select **Authoritative domain**.
 
-5.  Click **Save**.
+5. Click **Save**.
 
 ## Use the Shell to create an authoritative domain
 
@@ -103,21 +99,21 @@ To change the primary (reply to) email address assigned to recipients and keep t
 
 ## Use the EAC to change the existing primary email address
 
-1.  In the EAC, navigate to **Mail flow** \> **Email address policies**. Select the email address policy you want to modify, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Mail flow** \> **Email address policies**. Select the email address policy you want to modify, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2.  On the **Email Address Policy** page, click the **Email address format** tab. In the **Email address format** section, click **Add**![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **Email Address Policy** page, click the **Email address format** tab. In the **Email address format** section, click **Add**![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-3.  On the **Email Address Format** page that appears, make the following selections:
-    
+3. On the **Email Address Format** page that appears, make the following selections:
+
       - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
-    
+
       - Select **Make this format the reply email address**.
-    
+
     When you are finished, click **Save**.
 
-4.  On the **Email Address Policy** page, click **Save** to save your changes to the policy.
+4. On the **Email Address Policy** page, click **Save** to save your changes to the policy.
 
-5.  You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
+5. You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
 ## Use the Shell to change the existing primary email address
 
@@ -135,11 +131,8 @@ For example, suppose the email address policy in your organization uses the emai
     Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
 ```
 
-
 > [!NOTE]
 > The <CODE>SMTP</CODE> qualifier in uppercase lettersspecifies the primary (reply to) address. The <CODE>smtp</CODE> qualifier in lowercase letters specifies a proxy (secondary) address.
-
-
 
 To apply the updated email address policy to recipients, use the following syntax.
 
@@ -163,41 +156,38 @@ Also, email address policies that apply to specific users should have a higher p
 
 To create additional email addresses that will be used as the primary email address for a filtered set of recipients, follow these steps.
 
-1.  In the EAC, navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  On the **Email Address Policy** page, complete the following fields:
-    
-    1.  **Policy name**: Enter a unique, descriptive name.
-    
-    2.  **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
-        
+2. On the **Email Address Policy** page, complete the following fields:
+
+    1. **Policy name**: Enter a unique, descriptive name.
+
+    2. **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
+
           - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
-        
+
           - **Email address format**: Select the appropriate email address format for your organization.
-        
+
           - Select **Make this format the reply email address**.
-        
+
         When you are finished, click **Save**.
 
-3.  **Run this policy in this sequence with other policies**: Typically, policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy.
+3. **Run this policy in this sequence with other policies**: Typically, policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy.
 
-4.  **Specify the types of recipients this email address will apply to**: Select the recipient types to which you want the email address policy applied.
+4. **Specify the types of recipients this email address will apply to**: Select the recipient types to which you want the email address policy applied.
 
-5.  **Create rules to further define the recipients that this email address policy applies to**: Click **Add a rule** to restrict the recipients that this policy will apply to. This creates a Boolean **And** statement. Repeat this step as many times as necessary.
-    
+5. **Create rules to further define the recipients that this email address policy applies to**: Click **Add a rule** to restrict the recipients that this policy will apply to. This creates a Boolean **And** statement. Repeat this step as many times as necessary.
 
     > [!WARNING]
     > If you apply too many rules, it's possible to restrict the email address policy to the point that it doesn't contain any users.
 
+6. Click **Preview recipients the policy applies to** to view the recipients that policy will apply to.
 
+7.
 
-6.  Click **Preview recipients the policy applies to** to view the recipients that policy will apply to.
-
-7.  
-    
     Click **Save** to save your changes and create the policy.
 
-8.  You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
+8. You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
 ## Use the Shell to replace the existing primary email address for a filtered set of recipients
 
@@ -231,7 +221,6 @@ To verify that you have successfully configured an email address policy for the 
 
 To verify that you have configured Exchange to accept mail for multiple authoritative domains, do the following:
 
-1.  Send test messages to an affected recipient from a mailbox outside your Exchange organization. Verify the email addresses that successfully accept mail.
+1. Send test messages to an affected recipient from a mailbox outside your Exchange organization. Verify the email addresses that successfully accept mail.
 
-2.  Send test messages from an affected recipient mailbox to an external recipient, and verify the From address of the message.
-
+2. Send test messages from an affected recipient mailbox to an external recipient, and verify the From address of the message.

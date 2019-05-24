@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 An Active Directory site is a logical configuration component that's based on the physical aspects of the network. The primary purpose for creating an Active Directory site is to define which subnets in the network are connected in a way that optimizes control of Active Directory replication traffic. Microsoft Exchange Server 2013 recognizes both database availability groups (DAGs) and Active Directory sites as routing boundaries, and Exchange 2013 servers make routing decisions based on the Active Directory site topology.
 
 By default, an Active Directory forest contains only one Active Directory site. The default name for this Active Directory site is `Default-First-Site-Name`. If no other Active Directory sites are created, all domain member computers in the forest are members of `Default-First-Site-Name`. You don't have to configure a subnet-to-site association. If additional Active Directory sites are created, you need specify the subnets that are assigned to that Active Directory site.
@@ -51,7 +50,6 @@ The following table shows how an organization might define Active Directory site
 
 **Example of an Active Directory site-to-subnet association**
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -81,7 +79,6 @@ The following table shows how an organization might define Active Directory site
 </tr>
 </tbody>
 </table>
-
 
 If a server named Mailbox01 has the IP address of 192.168.1.1, it's a member of Site A. By changing the IP address of a server, you may change its site membership. If you change the IP address of Mailbox01 to 192.168.2.1, it won't change the server's Active Directory site membership because that subnet is also associated with Site A. However, if you move the server and the IP address changes to 192.168.3.1, the server would be considered a member of Site B.
 
@@ -177,21 +174,20 @@ The topology discovery module is part of the Microsoft Exchange Transport servic
 
 The topology discovery module performs the following steps to generate an Exchange routing topology:
 
-1.  Data is read from Active Directory. All the following objects are retrieved:
-    
+1. Data is read from Active Directory. All the following objects are retrieved:
+
       - Active Directory sites.
-    
+
       - IP site links.
-    
+
       - All Exchange servers.
 
-2.  The data that's retrieved in step 1 is used to create the initial topology and to begin linking and mapping the related configuration objects.
+2. The data that's retrieved in step 1 is used to create the initial topology and to begin linking and mapping the related configuration objects.
 
-3.  Exchange servers are matched to Active Directory sites by retrieving the site attribute value from the Exchange server object that's stored in Active Directory.
+3. Exchange servers are matched to Active Directory sites by retrieving the site attribute value from the Exchange server object that's stored in Active Directory.
 
-4.  Routing tables are updated with the collection of information retrieved.
+4. Routing tables are updated with the collection of information retrieved.
 
 This process makes every Exchange 2013 server aware of the other Exchange servers in the organization and of how close the Exchange servers are to one another.
 
 Return to top
-

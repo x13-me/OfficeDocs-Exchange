@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Allow or prevent call answering on a Client Access server
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can allow the Microsoft Exchange Unified Messaging Call Router service on a Client Access server to answer new calls or prevent it from doing so. By default, a Client Access server is in an enabled state after it's installed. When you're setting the Client Access server to accept incoming voice, fax, auto attendant and Outlook Voice Access calls, you use the **Set-ServerComponentState** cmdlet.
 
@@ -25,11 +22,8 @@ Configuring Maintenance Mode for a Client Access server lets you take the server
 
 In Exchange 2007 and Exchange 2010, there was a status parameter that could be used to control the operational status of a Unified Messaging server. In Exchange 2013, no status parameter is available for that purpose on the **Set-UMCallRouterSettings** cmdlet on a Client Access server.
 
-
 > [!IMPORTANT]
 > It's not required that Client Access and Mailbox servers be added to a UM dial plan before they can process calls for Unified Messaging, except when you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Client Access and Mailbox servers in an organization are available to answer incoming calls.
-
-
 
 For additional management tasks related to Client Access servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
@@ -47,11 +41,8 @@ For additional management tasks related to Client Access servers, see [UM servic
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## Use the Shell to allow or prevent call answering on a Client Access server
 
@@ -66,4 +57,3 @@ This example prevents a Client Access server `UMCallRouter-05x.contoso.com` from
 ```powershell
 Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
 ```
-

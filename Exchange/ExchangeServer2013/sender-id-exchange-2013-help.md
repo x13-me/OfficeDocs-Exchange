@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Sender ID agent is an anti-spam agent that's available in Microsoft Exchange Server 2013. The Sender ID agent relies on the RECEIVED SMTP header and a query to the sending system's DNS service to determine what action, if any, to take on an inbound message.
 
 Sender ID is intended to combat the impersonation of a sender and a domain, a practice that's frequently called *spoofing*. A *spoofed mail* is an email message that has a sending address that was modified to appear as if it originates from a sender other than the actual sender of the message.
@@ -94,4 +93,3 @@ Return to top
 You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://technet.microsoft.com/en-us/library/aa998859\(v=exchg.150\)).
 
 Return to top
-

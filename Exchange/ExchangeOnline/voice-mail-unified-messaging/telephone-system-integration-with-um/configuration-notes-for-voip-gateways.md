@@ -9,7 +9,7 @@ ms.date: 6/24/2018
 ms.reviewer: 
 title: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

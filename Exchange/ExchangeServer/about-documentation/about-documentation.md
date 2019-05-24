@@ -11,7 +11,7 @@ title: About Exchange documentation
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

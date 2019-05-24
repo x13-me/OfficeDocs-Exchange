@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the Shell to create an email address policy by using recipient filters. To learn more about email address policies, see [Email address policies](email-address-policies-exchange-2013-help.md).
 
 For additional management tasks related to email address policies, see [Email address policy procedures](email-address-policy-procedures-exchange-2013-help.md).
@@ -28,12 +27,9 @@ For additional management tasks related to email address policies, see [Email ad
   - Estimated time to complete: 5 minutes.
 
   - To use the *RecipientFilter* parameter to create a custom filter, you must specify a string for the filter. The Shell uses OPath for the filtering syntax. OPath is a querying language designed to query object data sources.
-    
 
     > [!IMPORTANT]
     > If you use a recipient filter to create or edit an email address policy, you can't use the Exchange Administration Center (EAC) to edit the email address policy. You must use the Shell. For detailed syntax and parameter information, see <A href="https://technet.microsoft.com/en-us/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</A>.
-
-
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
 
@@ -41,11 +37,8 @@ For additional management tasks related to email address policies, see [Email ad
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!WARNING]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to create an email address policy by using recipient filters
 
@@ -62,4 +55,3 @@ This example creates an email address policy that applies to all executives and 
 ```
 
 For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://technet.microsoft.com/en-us/library/aa996800\(v=exchg.150\)).
-

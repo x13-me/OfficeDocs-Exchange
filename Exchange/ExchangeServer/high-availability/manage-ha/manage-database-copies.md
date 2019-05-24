@@ -9,7 +9,7 @@ ms.date: 6/12/2018
 ms.reviewer: 
 title: Manage mailbox database copies
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

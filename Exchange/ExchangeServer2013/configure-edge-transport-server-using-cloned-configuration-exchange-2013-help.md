@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the provided Exchange Management Shell scripts (located in %ExchangeInstallPath%Scripts) to duplicate the configuration of an Edge Transport server. This process is referred to as *cloned configuration*. *Cloned configuration* is the practice of deploying new Edge Transport servers based on configuration information from a previously configured source server. The configuration information from the previously configured source server is copied and exported to an XML file, which is then imported to the target server. For an overview of this process, see [Edge Transport server cloned configuration](edge-transport-server-cloned-configuration-exchange-2013-help.md).
 
 Edge Transport server configuration information is stored in Active Directory Lightweight Directory Services (AD LDS) and isn't replicated among multiple Edge Transport servers. Using cloned configuration, you can ensure that every Edge Transport server deployed in your perimeter network is using the same configuration.
@@ -45,26 +44,23 @@ Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
 ## Step 1: Export the source server configuration data to a file on the source server
 
-1.  Copy the ExportEdgeConfig.ps1 script to the root folder of your user profile on the source server.
+1. Copy the ExportEdgeConfig.ps1 script to the root folder of your user profile on the source server.
 
-2.  To export the source server configuration data to a file on the source server, use the following syntax.
-    
+2. To export the source server configuration data to a file on the source server, use the following syntax.
+
     ```powershell
     ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
     ```
-    
+
     For example, to export the source server configuration data to the file C:\\CloneConfigData.xml, run the following command.
-    
+
     ```powershell
     ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
     ```
@@ -75,23 +71,23 @@ You'll know you successfully exported the source configuration data to a file wh
 
 ## Step 2: Validate the configuration file and create an answer file on the target server
 
-1.  Copy the source server configuration file you exported in the previous step to the target Edge Transport server.
+1. Copy the source server configuration file you exported in the previous step to the target Edge Transport server.
 
-2.  Copy the ImportEdgeConfig.ps1 script to the root folder of your user profile on the target server.
+2. Copy the ImportEdgeConfig.ps1 script to the root folder of your user profile on the target server.
 
-3.  To validate the configuration file and use the results to create an answer file on the target server, use the following syntax.
-    
+3. To validate the configuration file and use the results to create an answer file on the target server, use the following syntax.
+
     ```powershell
         ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
     ```
 
     For example, to validate the configuration file C:\\CloneConfigData.xml, and create the answer file C:\\CloneConfigAnswer.xml, run the following command.
-    
+
     ```powershell
         ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
     ```
 
-4.  Open the answer file and modify any settings that are invalid for the target server. If no modifications are required, the answer file will have no entries. Save your changes.
+4. Open the answer file and modify any settings that are invalid for the target server. If no modifications are required, the answer file will have no entries. Save your changes.
 
 ## How do you know this step worked?
 
@@ -114,4 +110,3 @@ For example, to import the configuration file C:\\CloneConfigData.xml by using t
 ## How do you know this step worked?
 
 You'll know you successfully imported the configuration file on the target server when the confirmation message, "Importing Edge configuration information succeeded" appears.
-

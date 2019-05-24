@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, you can adjust the DNS query sensitivity for slightly faster message delivery when DNS errors are encountered for the destination domain. However, depending on the DNS errors, this adjustment may cause delivery failures in certain circumstances.
 
 ## DNS queries and remote message delivery
@@ -30,7 +29,7 @@ The Exchange server queries the configured DNS servers to find the DNS records t
   - **Mail exchange (MX) records for the domain part of the external recipient**: The MX record contains the fully qualified domain name (FQDN) of the messaging server that's responsible for accepting messages for the domain, and a preference value for that messaging server. A lower preference value indicates a preferred messaging server. The preference value is important if the domain has more than one MX record. To optimize fault tolerance, most organizations use multiple messaging servers and multiple MX records that have different preference values.
 
   - **Address (A) records for the destination messaging servers**: Every messaging server that's used in an MX record should have a corresponding A record. The A record is used to find the IP address of the destination messaging server. The subscribed Edge Transport server uses the IP address to open an SMTP connection with the destination messaging server. Although it's technically possible to use the FQDN of a canonical name (CNAME) record in an MX record, this practice violates RFC 974, RFC 1034, RFC 1912, and RFC 2181, and is therefore not supported by most messaging servers.
-    
+
     The required combination of iterative DNS queries and recursive DNS queries that start with a root DNS server is used to resolve the FQDN of the messaging server that's found in the MX record into an IP address.
 
 In Exchange 2013, there's a DNS query limit that's not configurable of 5 seconds for each DNS server, and a one-minute limit for the entire DNS query.
@@ -52,15 +51,12 @@ You can control the DNS query failure sensitivity by modifying the `%ExchangeIns
   - **Lenient**: When the DNS query encounters a combination of valid MX records and invalid MX records, the DNS query continues until the DNS query time-out value of one minute is reached. The invalid MX records are discarded, and the valid MX record that has the lowest preference value is used to deliver the message to the destination messaging server. This is the default value.
 
   - **Normal**: When the DNS query first encounters an invalid MX record, any resolved MX records that have a preference value that's greater than or equal to the invalid MX records are immediately discarded. The remaining MX record that has the lowest preference value is used to deliver the message to the destination messaging server without waiting for the whole DNS query to time out. Although this behavior may result in faster message delivery, the potential drawback of this behavior is the DNS query may have no valid MX records if the following conditions are true:
-    
+
       - The invalid MX record is the first MX record for the destination domain.
-    
+
       - The valid MX records have the same precedence value as the invalid MX records.
 
 In both `Normal` mode and `Lenient` mode, the results of the DNS query for an invalid MX record are never cached. The next time that a DNS query is executed, it will try to resolve the MX records for the destination domain.
 
-
 > [!NOTE]
 > Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
-
-

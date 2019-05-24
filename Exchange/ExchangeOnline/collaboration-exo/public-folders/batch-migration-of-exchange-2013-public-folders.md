@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: 'Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365.'
-ms.audience: ITPro
+audience: ITPro
 title: Use batch migration to migrate Exchange 2013 public folders to Exchange Online
 
 ---

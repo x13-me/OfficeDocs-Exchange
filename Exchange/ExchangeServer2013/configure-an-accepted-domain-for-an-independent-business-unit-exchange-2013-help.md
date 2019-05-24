@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In some situations you may want to configure an accepted domain for an independent business unit with email servers outside your Exchange organization. In such scenarios, you can configure the accepted domain as an external relay domain.
 
 ## What do you need to know before you begin?
@@ -35,25 +34,21 @@ In some situations you may want to configure an accepted domain for an independe
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the EAC to configure the an accepted domain as an external relay domain
 
 You may want to configure an accepted domain for a business unit with email servers outside your Exchange organization.
 
-1.  In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2.  In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain Contoso.com could have a display name of Contoso Local Accepted Domain.
+2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain Contoso.com could have a display name of Contoso Local Accepted Domain.
 
-3.  Select **External Relay Domain**. This option is for email is relayed to a server outside your Exchange organization.
+3. Select **External Relay Domain**. This option is for email is relayed to a server outside your Exchange organization.
 
-4.  Click **Save**.
+4. Click **Save**.
 
 ## How do you know this worked?
 
 To verify that you have successfully configured an accepted domain as an external relay domain, send a message from the accepted domain you've configured as an external relay domain, and verify that it is received.
-

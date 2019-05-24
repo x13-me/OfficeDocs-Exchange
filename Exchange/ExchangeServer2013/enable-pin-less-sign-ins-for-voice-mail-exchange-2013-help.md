@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 You can set up Unified Messaging (UM) so that your users can sign in to their voice mail without using a PIN. By default, Outlook Voice Access users are prompted to enter a PIN to sign in to their mailbox and access their voice mail, email, calendar, personal contacts, the directory, and personal options.
 
-
 > [!WARNING]
 > Enabling PIN-less sign-ins for a single user or a group of users that are enabled for voice mail decreases the level of security for voice mail and poses a security risk to your organization.
-
-
 
 To enable PIN-less sign-ins, you must set the parameter *AllowPinlessVoiceMailAccess* to `$true` on the UM mailbox policy and set the parameter *PinlessAccessToVoiceMailEnabled* to `$true` on the UM mailbox. By default, both parameters are set to `$false`, which requires an Outlook Voice Access user to enter their PIN when they access their voice mail.
 
@@ -78,4 +74,3 @@ This example enables PIN-less voice mail access for the user who dials in to Out
 ```powershell
 Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
 ```
-

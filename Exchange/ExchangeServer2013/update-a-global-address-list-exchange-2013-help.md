@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the Shell to update a global address list (GAL). A GAL is a directory that contains entries for every group, user, and contact within an organization's implementation of Microsoft Exchange.
 
 For additional management tasks related to address lists, see [Address list procedures](address-list-procedures-exchange-2013-help.md).
@@ -35,25 +34,18 @@ For additional management tasks related to address lists, see [Address list proc
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to update a GAL
 
 This example updates a GAL for the Fourth Coffee company.
 
-
 > [!NOTE]
 > Running this command only starts the update process. It may take several hours for the GAL to be updated.
-
-
 
 ```powershell
 Update-GlobalAddressList -Identity "Fourth Coffee"
 ```
 
 For detailed syntax and parameter information, see [Update-GlobalAddressList](https://technet.microsoft.com/en-us/library/aa998806\(v=exchg.150\)).
-

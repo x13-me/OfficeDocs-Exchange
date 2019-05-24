@@ -9,7 +9,7 @@ ms.date: 6/7/2018
 ms.reviewer: 
 title: Configure database availability group network properties
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

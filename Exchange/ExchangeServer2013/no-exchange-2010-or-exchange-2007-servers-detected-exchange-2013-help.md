@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup displayed this warning because no Exchange Server 2010 or Exchange Server 2007 server roles exist in the organization.
 
-
 > [!WARNING]
 > If you continue with Exchange Server 2013 installation, you won't be able to add Exchange 2010 or Exchange 2007 servers to the organization at a future date.
-
-
 
 Before deploying Exchange 2013, consider the following factors that may require you to deploy Exchange 2010 or Exchange 2007 servers prior to deploying Exchange 2013:
 
@@ -35,13 +31,12 @@ Before deploying Exchange 2013, consider the following factors that may require 
 
 If you decide that you need to deploy Exchange 2010 or Exchange 2007 servers, you must do so before you deploy Exchange 2013. Active Directory must be prepared for each Exchange version in the following order:
 
-1.  Exchange 2007
+1. Exchange 2007
 
-2.  Exchange 2010
+2. Exchange 2010
 
-3.  Exchange 2013
+3. Exchange 2013
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
-

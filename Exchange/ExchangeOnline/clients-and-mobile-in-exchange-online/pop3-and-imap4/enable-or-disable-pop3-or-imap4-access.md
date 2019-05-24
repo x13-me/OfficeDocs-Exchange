@@ -11,7 +11,7 @@ title: Enable or Disable POP3 or IMAP4 access for a user
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

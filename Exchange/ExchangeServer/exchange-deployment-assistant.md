@@ -3,7 +3,7 @@ title: "Exchange Deployment Assistant"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 layout: LandingPage
 ms.topic: landing-page
 ms.prod: exchange-server-itpro

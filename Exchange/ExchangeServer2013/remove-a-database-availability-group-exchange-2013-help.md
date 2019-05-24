@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Removing a database availability group (DAG) is a quick and easy task. You can use the EAC or the Shell to remove a DAG.
 
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md).
@@ -33,21 +32,18 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to remove a database availability group
 
-1.  Navigate to **Servers** \> **Database availability groups**.
+1. Navigate to **Servers** \> **Database availability groups**.
 
-2.  Select the DAG you want to remove and click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. Select the DAG you want to remove and click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
-3.  Click **Yes** to confirm the warning and remove the DAG.
+3. Click **Yes** to confirm the warning and remove the DAG.
 
 ## Use the Shell to remove a database availability group
 
@@ -64,10 +60,9 @@ To verify that you've successfully removed the DAG, do one of the following:
   - In the EAC, go to **Servers** \> **Database Availability Groups**, and see if the DAG is still displayed.
 
   - In the Shell, run the following command to see if the DAG still exists:
-    
+
     ```powershell
     Get-DatabaseAvailabilityGroup <DAGName>
     ```
-    
-    If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.
 
+    If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.

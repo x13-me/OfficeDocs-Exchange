@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -31,11 +30,10 @@ To resolve this issue, switch IIS to 64-bit mode, and then rerun Microsoft Excha
 
 **To switch IIS to 64-bit mode**
 
-1.  Open a command prompt.
+1. Open a command prompt.
 
-2.  Type the following:
-    
+2. Type the following:
+
     **cscript c:\\inetpub\\adminscripts\\adsutil.vbs SET /w3svc/AppPools/Enable32BitAppOnWin64 False**
 
-3.  Press enter
-
+3. Press enter

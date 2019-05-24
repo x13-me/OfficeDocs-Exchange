@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, messages that can't be successfully delivered are subject to various retry, resubmit, and expiration deadlines based on the message's source and destination. *Retry* is a renewed connection attempt with the destination. *Resubmit* is the act of sending messages back to the Submission queue for the categorizer to reprocess. The message *expires* after all delivery efforts have failed over a specified period of time. After a message expires, the sender is notified of the delivery failure. Then the message is deleted from the queue.
 
 In all three cases of retry, resubmit, or expire, you can manually intervene before the automatic actions are performed on the messages.
@@ -110,7 +109,6 @@ The configuration options that are available for message retry intervals are des
 </tbody>
 </table>
 
-
 Return to top
 
 ## Configuration options for manual message retry
@@ -169,12 +167,8 @@ The configuration options that are available for delay DSN notification messages
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > On Exchange 2007 Hub Transport servers, all <EM>ExternalDSN*</EM> and <EM>InternalDSN*</EM> parameters are available on the <STRONG>Set-TransportServer</STRONG> cmdlet, not the <STRONG>Set-TransportConfig</STRONG> cmdlet. If you have any Exchange 2007 Hub Transport servers in your organization, you need to make changes to these values using the <STRONG>Set-TransportServer</STRONG> cmdlet on each Exchange 2007 Hub Transport server.
-
-
 
 Return to top
 
@@ -206,11 +200,8 @@ If you want to manually resubmit messages that are located in delivery queues or
 
 Another way that you can manually resubmit messages is to suspend the messages, export the messages to text files that have the .eml file name extension, and then copy the .eml files to the Replay directory on any Mailbox server or Edge Transport server. This resubmission method works for messages that are located in delivery queues or the Unreachable queue. Messages that are located in the poison message queue are already in the Suspended state. Messages that are located in the Submission queue can't be suspended or exported.
 
-
 > [!NOTE]
 > When you export messages from a queue, you don't remove the messages from the queue. After you export the messages and successfully resubmit them by using the Replay directory, you should remove the suspended messages to avoid duplicate message delivery.
-
-
 
 For more information, see [Export messages from queues](export-messages-from-queues-exchange-2013-help.md).
 
@@ -235,4 +226,3 @@ Although you can't manually force messages to expire, you can manually remove me
 For more information, see the "Remove messages from queues" section in [Manage messages in queues](manage-messages-in-queues-exchange-2013-help.md).
 
 Return to top
-

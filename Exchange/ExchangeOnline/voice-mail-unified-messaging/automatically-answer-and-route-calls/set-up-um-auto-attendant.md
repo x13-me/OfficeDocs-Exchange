@@ -9,7 +9,7 @@ ms.date: 3/9/2015
 ms.reviewer: 
 title: Set up a UM auto attendant
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

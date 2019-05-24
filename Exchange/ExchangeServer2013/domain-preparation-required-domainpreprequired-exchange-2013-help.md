@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -40,4 +39,3 @@ Preparation of the domain for Exchange Server 2007 consists of the following ta
 To resolve this issue, run **setup /PrepareDomain** to prepare the local domain and retry the server role installation.
 
 For more information about how to perform the PrepareDomain process, see "How to Prepare Active Directory and Domains" ([https://go.microsoft.com/fwlink/?LinkId=78453](https://go.microsoft.com/fwlink/?linkid=78453)).
-

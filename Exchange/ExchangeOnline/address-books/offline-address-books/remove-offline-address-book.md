@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: 'Remove an offline address book from Exchange '
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

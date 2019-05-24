@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.
 
 ## Key characteristics
@@ -64,4 +63,3 @@ Optionally, you can also specify:
   - *SeedingPostponed*: This parameter specifies that the task shouldn't automatically seed the database copy on the specified Mailbox server. This option is typically used when you intend to seed a new mailbox database copy by using an existing passive copy of the database (for example, adding a second copy of a specific database to a remote location). When you use this parameter, you must manually seed the database copy using the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet.
 
 For more information about creating, using, and managing mailbox database copies, see [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md).
-

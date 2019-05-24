@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: 'Summary: How to move your Exchange Online public folders to Office 365 Groups.'
-ms.audience: ITPro
+audience: ITPro
 title: Use batch migration to migrate Exchange Online public folders to Office 365 Groups
 
 ---

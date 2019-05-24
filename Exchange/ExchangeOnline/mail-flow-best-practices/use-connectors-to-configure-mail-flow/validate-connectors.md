@@ -9,7 +9,7 @@ ms.date: 5/4/2016
 ms.reviewer: 
 title: Validate connectors in Office 365
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

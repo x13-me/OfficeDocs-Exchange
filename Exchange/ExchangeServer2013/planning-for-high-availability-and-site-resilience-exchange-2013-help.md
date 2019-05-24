@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.
 
 There are general requirements that must be met for deploying these features, as well as hardware, software, and networking requirements that must also be met.
@@ -86,9 +85,9 @@ Consider the following when designing the network infrastructure for your DAG:
   - Each member of the DAG must have at least one network adapter that's able to communicate with all other DAG members. If you're using a single network path, we recommend that you use a minimum of 1 gigabit Ethernet, but preferably 10 gigabit Ethernet. In addition, when using a single network adapter in each DAG member, we recommend that you design the overall solution with the single network adapter and path in mind.
 
   - Using two network adapters in each DAG member provides you with one MAPI network and one Replication network, with redundancy for the Replication network and the following recovery behaviors:
-    
+
       - In the event of a failure affecting the MAPI network, a server failover will occur (assuming there are healthy mailbox database copies that can be activated).
-    
+
       - In the event of a failure affecting the Replication network, if the MAPI network is unaffected by the failure, log shipping and seeding operations will revert to use the MAPI network, even if the MAPI network has it's *ReplicationEnabled* property set to False. When the failed Replication network is restored to health and ready to resume log shipping and seeding operations, you must manually switch over to the Replication network. To change replication from the MAPI network to a restored Replication network, you can either suspend and resume continuous replication by using the **Suspend-MailboxDatabaseCopy** and **Resume-MailboxDatabaseCopy** cmdlets, or restart the Microsoft Exchange Replication service. We recommend using suspend and resume operations to avoid the brief outage caused by restarting the Microsoft Exchange Replication service.
 
   - Each DAG member must have the same number of networks. For example, if you plan on using a single network adapter in one DAG member, all members of the DAG must also use a single network adapter.
@@ -98,13 +97,13 @@ Consider the following when designing the network infrastructure for your DAG:
   - Additional Replication networks can be added, as needed. You can also prevent an individual network adapter from being a single point of failure by using network adapter teaming or similar technology. However, even when using teaming, this doesn't prevent the network itself from being a single point of failure. Moreover, teaming adds unnecessary complexity to the DAG.
 
   - Each network in each DAG member server must be on its own network subnet. Each server in the DAG can be on a different subnet, but the MAPI and Replication networks must be routable and provide connectivity, such that:
-    
+
       - Each network in each DAG member server is on its own network subnet that's separate from the subnet used by each other network in the server.
-    
+
       - Each DAG member server's MAPI network can communicate with each other DAG member's MAPI network.
-    
+
       - Each DAG member server's Replication network can communicate with each other DAG member's Replication network.
-    
+
       - There is no direct routing that allows heartbeat traffic from the Replication network on one DAG member server to the MAPI network on another DAG member server, or vice versa, or between multiple Replication networks in the DAG.
 
   - Regardless of their geographic location relative to other DAG members, each member of the DAG must have round trip network latency no greater than 500 milliseconds between each other member. As the round trip latency between two Mailbox servers hosting copies of a database increases, the potential for replication not being up to date also increases. Regardless of the latency of the solution, customers should validate that the networks between all DAG members is capable of satisfying the data protection and availability goals of the deployment. Configurations with higher latency values may require special tuning of DAG, replication, and network parameters, such as increasing the number of databases or decreasing the number of mailboxes per database, to achieve the desired goals.
@@ -141,11 +140,8 @@ Each time the DAG's MAPI network is extended across an additional subnet, an add
 
 At any specific time, the cluster for the DAG will use only one of the assigned IP addresses. Windows Failover Clustering registers this IP address in DNS when the cluster IP address and Network Name resources are brought online. In addition to using an IP address and network name, a cluster name object (CNO) is created in Active Directory. The name, IP address, and CNO for the cluster are used internally by the system to secure the DAG and for internal communication purposes. Administrators and end users don't need to interface with or connect to the DAG name or IP address.
 
-
 > [!NOTE]
 > Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2013 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it's IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
-
-
 
 ## Network adapter configuration for DAGs
 
@@ -154,7 +150,6 @@ Each network adapter must be configured properly based on its intended use. A ne
 ## MAPI network adapter configuration
 
 A network adapter intended for use by a MAPI network should be configured as described in the following table.
-
 
 <table>
 <colgroup>
@@ -198,7 +193,6 @@ A network adapter intended for use by a MAPI network should be configured as des
 </tr>
 </tbody>
 </table>
-
 
 The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
@@ -214,7 +208,6 @@ The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
 A network adapter intended for use by a Replication network should be configured as described in the following table.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -257,7 +250,6 @@ A network adapter intended for use by a Replication network should be configured
 </tr>
 </tbody>
 </table>
-
 
 The TCP/IP v4 properties for a Replication network adapter are configured as follows:
 
@@ -356,4 +348,3 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
   - A strategy for testing the solution must also be established and factored into the SLA. Periodic validation of the deployment is the only way to guarantee that the quality and viability of the deployment doesn't degrade over time. After the deployment is validated, we recommend that the part of the configuration that directly affects the success of the solution be explicitly documented. In addition, we recommend that you enhance your change management processes around those segments of the deployment.
 
 Return to top
-

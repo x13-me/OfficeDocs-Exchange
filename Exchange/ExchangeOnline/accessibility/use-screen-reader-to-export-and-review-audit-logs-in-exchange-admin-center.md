@@ -12,7 +12,7 @@ title: Use a screen reader to export and review audit logs in the Exchange admin
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

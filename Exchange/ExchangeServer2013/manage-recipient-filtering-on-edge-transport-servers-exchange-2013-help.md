@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Recipient filtering is provided by the Recipient Filter agent. When recipient filtering is enabled on an Exchange server, it filters inbound messages that come from the Internet but aren't authenticated. These messages are handled as external messages.
-
 
 > [!NOTE]
 > Although the Recipient Filter agent is available on Mailbox servers, you shouldn't configure it. When recipient filtering on a Mailbox server detects one invalid or blocked recipient in a message that contains other valid recipients, the message is rejected. If you install the anti-spam agents on a Mailbox server, the Recipient Filter agent is enabled by default. However, it isn't configured to block any recipients. For more information, see <A href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">Enable anti-spam functionality on Mailbox servers</A>.
-
-
 
 ## What do you need to know before you begin?
 
@@ -38,7 +34,7 @@ Recipient filtering is provided by the Recipient Filter agent. When recipient fi
   - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
   - The *AddressBookEnabled* parameter on the **Set-AcceptedDomain** cmdlet enables or disables recipient filtering for recipients in an accepted domain. By default, recipient filtering is enabled for authoritative domains, and disabled for internal relay domains and external relay domains. To view the status of the *AddressBookEnabled* parameter for the accepted domains in your organization, run the following command:
-    
+
     ```powershell
     Get-AcceptedDomain | Format-List Name,AddressBookEnabled
     ```
@@ -47,11 +43,8 @@ Recipient filtering is provided by the Recipient Filter agent. When recipient fi
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -69,23 +62,20 @@ To enable recipient filtering, run the following command:
 Set-RecipientFilterConfig -Enabled $true
 ```
 
-
 > [!NOTE]
 > When you disable recipient filtering, the underlying Recipient Filter agent is still enabled. To disable the Recipient Filter agent, run the command: <CODE>Disable-TransportAgent "Recipient Filter Agent"</CODE>.
-
-
 
 ## How do you know this worked?
 
 To verify that you have successfully enabled or disabled recipient filtering, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-RecipientFilterConfig | Format-List Enabled
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to enable or disable the Recipient Block list
 
@@ -105,13 +95,13 @@ Set-RecipientFilterConfig -BlockListEnabled $true
 
 To verify that you have successfully enabled or disabled the Recipient Block list, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-RecipientFilterConfig | Format-List BlockListEnabled
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to configure the Recipient Block list
 
@@ -143,13 +133,13 @@ This example adds chris@contoso.com to the list of recipients, and removes miche
 
 To verify that you have successfully configured the Recipient Block list, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-RecipientFilterConfig | Format-List BlockedRecipients
     ```
 
-2.  Verify the values displayed are the values you configured.
+2. Verify the values displayed are the values you configured.
 
 ## Use the Shell to enable or disable Recipient Lookup
 
@@ -169,11 +159,10 @@ Set-RecipientFilterConfig -RecipientValidationEnabled $true
 
 To verify that you have successfully enabled or disabled Recipient Lookup, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
     ```
 
-2.  Verify the value displayed is the value you configured.
-
+2. Verify the value displayed is the value you configured.

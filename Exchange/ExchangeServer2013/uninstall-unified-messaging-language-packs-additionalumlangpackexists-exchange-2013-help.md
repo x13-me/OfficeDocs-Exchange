@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -36,4 +35,3 @@ The existing non-US English language packs need to be uninstalled so that new la
 To resolve this issue, uninstall all Unified Messaging server role language packs, except the US English language pack, and then rerun Exchange 2007 setup.
 
 For more information about uninstalling Unified Messaging server role language packs, see [How to Remove a Unified Messaging Language Pack from a Unified Messaging Server](https://go.microsoft.com/fwlink/?linkid=85973) in the Exchange 2007 product documentation.
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Many organizations are bound by legal or regulatory requirements to preserve or deliver all legitimate email messages. In Microsoft Exchange Server 2013, spam quarantine is a feature of the Content Filter agent that reduces the risk of losing legitimate messages. Spam quarantine provides a temporary storage location for messages identified as spam that shouldn't be delivered to a user mailbox inside the organization.
 
 Messages identified by the Content Filter agent as spam are wrapped in a non-delivery report (NDR) and delivered to a spam quarantine mailbox inside the organization. You can manage messages delivered to the spam quarantine mailbox and take appropriate actions. For example, you can delete messages or let messages flagged as false positives in anti-spam filtering be routed to their intended recipients. In addition, you can configure the spam quarantine mailbox to automatically delete messages after a designated time period.
@@ -77,19 +76,18 @@ You can then adjust the SCL settings to more accurately filter the spam coming i
 
 To use spam quarantine, you need to follow these steps:
 
-1.  Verify content filtering is enabled.
+1. Verify content filtering is enabled.
 
-2.  Create a dedicated mailbox for spam quarantine.
+2. Create a dedicated mailbox for spam quarantine.
 
-3.  Specify the spam quarantine mailbox.
+3. Specify the spam quarantine mailbox.
 
-4.  Configure the SCL quarantine threshold.
+4. Configure the SCL quarantine threshold.
 
-5.  Manage the spam quarantine mailbox.
+5. Manage the spam quarantine mailbox.
 
-6.  Adjust the SCL quarantine threshold as needed.
+6. Adjust the SCL quarantine threshold as needed.
 
 For detailed instructions, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
 
 Return to top
-

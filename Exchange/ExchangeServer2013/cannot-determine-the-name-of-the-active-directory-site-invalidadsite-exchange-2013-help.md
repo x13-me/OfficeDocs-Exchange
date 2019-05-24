@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Cannot determine the name of the Active Directory site\_InvalidADSite
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -32,4 +29,3 @@ To resolve this issue, verify that the local server is a member of a valid Activ
 You can use the **/DsGetSite** option of the Nltest.exe command line tool to verify and display site membership. For more information, see "Nltest.exe: NLTest Overview" in the "Tools and Settings Collection" of *Windows Server 2003 Technical Reference* ([https://go.microsoft.com/fwlink/?LinkId=27734](https://go.microsoft.com/fwlink/?linkid=27734)).
 
 For more information about Active Directory troubleshooting, see "Troubleshooting Active Directory Operations" in *Windows Server 2003: Operations* (<https://go.microsoft.com/fwlink/?linkid=68099>).
-

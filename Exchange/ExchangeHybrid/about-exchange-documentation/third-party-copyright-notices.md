@@ -3,7 +3,7 @@ title: "Third-party copyright notices"
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

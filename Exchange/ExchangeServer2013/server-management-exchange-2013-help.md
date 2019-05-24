@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Server Management management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. Role groups are assigned one or more management roles that contain the permissions required to perform a given set of tasks. The members of a role group are granted access to the management roles assigned to the role group. For more information about role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
 
 Administrators who are members of this role group can configure server-specific configuration of transport client access, and mailbox features such as database copies, certificates, transport queues and Send connectors, virtual directories, and client access protocols.
@@ -197,4 +196,3 @@ For more information about role assignments and management scopes, see the follo
 </tr>
 </tbody>
 </table>
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Understanding server health and performance is critical to designing and maintaining a high-performance messaging infrastructure. Microsoft Exchange Server 2013 introduces improvements in server health and performance.
 
 Looking for a list of all server health and performance topics? See Server health and performance documentation.
@@ -49,7 +48,6 @@ For more information, see [Exchange workload management](exchange-workload-manag
 
 The following table contains links to topics that will help you learn about and manage server health and performance in Exchange 2013.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -72,4 +70,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-

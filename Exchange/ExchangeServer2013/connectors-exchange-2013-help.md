@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Connectors are used to control inbound and outbound mail flow in Microsoft Exchange Server 2013. With connectors, you can route mail to and receive mail from recipients outside of your organization, a partner through a secure channel, or a message-processing appliance.
 
 The most commonly used connector types are Send connectors, which control outbound messages, and Receive connectors, which control inbound messages.
@@ -32,4 +31,3 @@ The most commonly used connector types are Send connectors, which control outbou
 [Create a Send connector for email sent to the Internet](create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md)
 
 [Create a secure Receive connector to receive email from a partner](create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help.md)
-

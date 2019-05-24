@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In on-premises deployments, In-Place Archives are created with unlimited storage quotas by default. As a result, you'll need to edit a mailbox's properties to set storage quotas for the archive. You can set the following quotas for an archive:
 
   - **Archive warning quota**: When an In-Place Archive exceeds the specified archive warning quota, an event is logged for the Exchange administrator and a warning message is sent to the mailbox user.
@@ -39,25 +38,22 @@ To learn more about In-Place Archives, see [In-Place Archiving in Exchange 2013]
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to configure the archive quota and archive warning quota for a mailbox
 
-1.  Navigate to **Recipients** \> **Mailboxes**
+1. Navigate to **Recipients** \> **Mailboxes**
 
-2.  In the list view, select a mailbox,
+2. In the list view, select a mailbox,
 
-3.  In the details pane, under **In-Place Archive**, click **View details**.
+3. In the details pane, under **In-Place Archive**, click **View details**.
 
-4.  In **Archive Mailbox**, use the **Quota value (GB)** and **Issue warning at (GB)** lists to select the desired values.
+4. In **Archive Mailbox**, use the **Quota value (GB)** and **Issue warning at (GB)** lists to select the desired values.
 
-5.  Click **OK**.
+5. Click **OK**.
 
 ## Use the Shell to configure the archive quota and archive warning quota for a mailbox
 
@@ -76,7 +72,7 @@ To verify that you've successfully enabled an on-premises archive for an existin
   - In the EAC, navigate to **Recipients**  \> **Mailboxes** and select the mailbox you want. In the details pane, under **In-Place Archive**, click **View Details** and verify the archive's quota settings.
 
   - In the Shell, run the following command to display quota information about the archive.
-    
+
     ```powershell
         Get-Mailbox <Name> | FL Name,Archive*Quota
     ```

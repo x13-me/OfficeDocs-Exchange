@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Site mailbox provisioning policies apply only to email that's sent to and from the site mailbox and to the size of the site mailbox on the Exchange server.
 
 To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange-2013-help.md).
@@ -35,11 +34,8 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
 
   - You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -99,7 +95,6 @@ This example disables the prefix naming by setting the *DefaultAliasPrefixEnable
 
 This example changes the default provisioning policy and sets the *AliasPrefix* to FOREST01.
 
-
 > [!NOTE]
 > For deployments with multiple forests, it is recommended that a different prefix is used in each forest in order to prevent conflicts when objects are synced across forests, in the event that site mailboxes have been created with the same name in two or more forests.
 
@@ -110,8 +105,6 @@ This example changes the default provisioning policy and sets the *AliasPrefix* 
 > [!NOTE]
 > In the case of a hybrid deployment where you have Exchange on-premises and in Office 365, all cloud-based site mailboxes are created with the prefix <STRONG>SMO-</STRONG>. The prefixes are different in Office 365 and Exchange on-premises so that hybrid customers will not experience conflicts if site mailboxes are created in both locations and are then synced cross-premises.The AliasPrefix parameter takes precedence over the DefaultAliasPrefixEnabled parameter; therefore, if the <EM>AliasPrefix</EM> parameter is set to a valid, non-null string, each new site mailbox will have that string prepended to the alias.
 
-
-
 ## Delete a site mailbox provisioning policy
 
 This example deletes the default site mailbox policy that was created during Exchange Setup.
@@ -120,11 +113,8 @@ This example deletes the default site mailbox policy that was created during Exc
 Remove-SiteMailboxProvisioningPolicy -Identity Default
 ```
 
-
 > [!IMPORTANT]
 > You must first create and designate another default policy before you can remove the policy named <STRONG>Default</STRONG>.
-
-
 
 ## For more information
 
@@ -137,4 +127,3 @@ For detailed syntax and parameter information, see the following topics:
 [Set-SiteMailboxProvisioningPolicy](https://technet.microsoft.com/en-us/library/jj218624\(v=exchg.150\))
 
 [Remove-SiteMailboxProvisioningPolicy](https://technet.microsoft.com/en-us/library/jj218672\(v=exchg.150\))
-

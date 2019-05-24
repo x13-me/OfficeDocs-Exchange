@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Users can configure multiple mobile devices for synchronization with Microsoft Exchange Server 2013. You can use the EAC or the Shell to view a list of mobile devices that are associated with a specific user.
 
 For additional management tasks related to mobile devices, see [Exchange ActiveSync](exchange-activesync-exchange-2013-help.md).
@@ -31,11 +30,8 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
@@ -43,17 +39,16 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
 
 The EAC displays a list of mobile devices that are currently synchronizing with a user's mailbox. You can view mobile devices by family, model, phone number, or status.
 
-1.  In the EAC, click **Recipients** \> **Mailboxes** and choose a mailbox.
+1. In the EAC, click **Recipients** \> **Mailboxes** and choose a mailbox.
 
-2.  In the Details pane, scroll to **Phone and Voice Features** and click **View details** to display the **Mobile Device Details** screen.
+2. In the Details pane, scroll to **Phone and Voice Features** and click **View details** to display the **Mobile Device Details** screen.
 
 ## Use the Shell to view mobile device information for users
 
 You can use the **Get-MobileDevice** cmdlet to view a list of mobile devices for a specific user.
 
-1.  Run the following command.
-    
+1. Run the following command.
+
     ```powershell
     Get-MobileDevice -Mailbox useralias
     ```
-

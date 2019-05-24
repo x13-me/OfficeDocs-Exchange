@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md)
 
 [Create a Transport Protection Rule](create-a-transport-protection-rule-exchange-2013-help.md)
@@ -38,4 +37,3 @@ _**Applies to:** Exchange Server 2013_
 [Enable or Disable Information Rights Management on Client Access Servers](enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md)
 
 [Enable or Disable Information Rights Management Logging](enable-or-disable-information-rights-management-logging-exchange-2013-help.md)
-

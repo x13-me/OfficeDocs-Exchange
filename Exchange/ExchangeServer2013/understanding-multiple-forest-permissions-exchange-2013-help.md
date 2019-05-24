@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Many organizations deploy multiple forests to create security boundaries within their organizations. Using multiple forests helps administrators to define these security boundaries to better match their requirements, whether that's ensuring the fewest number of people have access to resources, or segmenting divisions within an organization.
 
 Microsoft Exchange Server 2013 supports two types of multiple forest topologies:
@@ -77,11 +76,8 @@ Finally, management scopes created in each forest are also bound by the forest. 
 
 The permissions granted by RBAC only allow users to view or modify Exchange objects within a specific forest. However, you can grant permissions to view and modify Exchange objects in a forest to users outside of that forest. By using cross-boundary permissions, you can centralize Exchange management accounts in a single forest rather than having to authenticate against each individual forest to perform tasks.
 
-
 > [!NOTE]
 > The permissions that are granted to a user outside of an Exchange forest still apply only to that specific Exchange forest. For example, if a user in a foreign forest is a member of the Organization Management linked role group that's located in ForestA, the user can manage only the Exchange objects contained within ForestA. A user must be made a member of linked role groups in each Exchange forest to be granted permissions to manage each forest.
-
-
 
 Cross-boundary permissions also enable you to apply role assignment policies to the mailboxes of users who have mailboxes in an Exchange forest, but have user accounts that reside in an accounts forest. Exchange 2013 supports cross-boundary permission using linked role groups and linked mailboxes, which are discussed in the following sections.
 
@@ -152,7 +148,6 @@ Linked role groups and linked mailboxes both have advantages and disadvantages w
 </tbody>
 </table>
 
-
 We recommend that you use linked role groups to grant permission across forest boundaries if you plan on having multiple Exchange resource forests.
 
 ## End-user permissions
@@ -179,17 +174,17 @@ Return to top
 
 To configure cross-boundary permissions in a multiple-forest topology, you must create linked role groups for each of the role groups you want to link to USGs in a foreign forest. This means that you must create a linked role group for each built-in role group. You need to:
 
-1.  Create a USG in the foreign forest for each linked role group to be created. Add members to this USG that you want to grant permissions to.
+1. Create a USG in the foreign forest for each linked role group to be created. Add members to this USG that you want to grant permissions to.
 
-2.  Create a linked role group for each built-in role group. The following happens when the linked role group is created:
-    
+2. Create a linked role group for each built-in role group. The following happens when the linked role group is created:
+
       - The same roles that are assigned to the built-in role group are assigned to the new linked role group.
-    
+
       - The linked role group is associated with the USG in the foreign forest.
 
-3.  Create linked role groups for any custom role groups you created.
+3. Create linked role groups for any custom role groups you created.
 
-4.  Optionally assign custom scopes to the new linked role groups.
+4. Optionally assign custom scopes to the new linked role groups.
 
 For detailed information about how to perform these steps, see the following topics:
 
@@ -206,4 +201,3 @@ When a linked mailbox is created, it's automatically assigned to a role assignme
   - [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)
 
   - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
-

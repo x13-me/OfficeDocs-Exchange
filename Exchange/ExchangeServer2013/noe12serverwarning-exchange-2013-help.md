@@ -16,15 +16,13 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
 When you run Microsoft Exchange Server 2010 **Setup /PrepareAD**, the Microsoft Exchange Server Analyzer Tool queries the existing Active Directory topology to determine whether any Microsoft Exchange Server 2007 server roles exist. If Exchange 2007 server roles are not detected, you receive the following warning message:
-
 
 <table>
 <colgroup>
@@ -36,7 +34,6 @@ When you run Microsoft Exchange Server 2010 **Setup /PrepareAD**, the Microsoft 
 </tr>
 </tbody>
 </table>
-
 
 Before deploying Exchange Server 2010, consider the following factors that may require you to deploy an Exchange 2007 server with all server roles installed prior to deploying Exchange 2007:
 
@@ -58,11 +55,10 @@ In addition, when evaluating the options for your organization, make sure you ha
 
 If you decide that you need to deploy an Exchange 2007 server prior to deploying Exchange 2010, the deployment of a single Exchange 2007 with all server roles is sufficient to enable the deployment of future Exchange 2007 servers in the organization. To deploy the Exchange 2007 server into your Exchange 2003 organization, follow these steps:
 
-1.  Run Exchange 2007 **Setup /PrepareSchema**.
+1. Run Exchange 2007 **Setup /PrepareSchema**.
 
-2.  Run Exchange 2007 **Setup /PrepareAD**.
+2. Run Exchange 2007 **Setup /PrepareAD**.
 
-3.  Run Exchange 2007 **Setup /PrepareDomain** on all domains that contain recipients, Exchange 2003 servers, or global catalogs that could be used by an Exchange server.
+3. Run Exchange 2007 **Setup /PrepareDomain** on all domains that contain recipients, Exchange 2003 servers, or global catalogs that could be used by an Exchange server.
 
-4.  Install an Exchange 2007 server with all four server roles (Hub Transport, Client Access, Mailbox, and Unified Messaging).
-
+4. Install an Exchange 2007 server with all four server roles (Hub Transport, Client Access, Mailbox, and Unified Messaging).

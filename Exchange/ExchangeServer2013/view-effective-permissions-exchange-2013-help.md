@@ -18,18 +18,14 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Permissions in Microsoft Exchange Server 2013 are granted using management roles that are assigned to management role groups, management role assignment policies, universal security groups (USGs), or directly to users. Users are granted the permissions if they're members of the role groups or USGs, or are assigned role assignment policies.
 
 Most permissions are granted based on role group membership or the assignment of assignment policies to end users. Although using role groups and assignment policies makes it easy to grant permissions to large numbers of users, you may not be aware of who is a member of a role group, or who has been assigned an assignment policy. This is where the *GetEffectiveUsers* switch on the **Get-ManagementRoleAssignment** cmdlet is useful. It shows you what users are granted the permissions given by a management role through the role groups, assignment policies, and USGs that are assigned to them.
 
 The *GetEffectiveUsers* switch is used with the **Get-ManagementRoleAssignment** cmdlet when the *Role* parameter is used. By specifying this switch with a particular role, the **Get-ManagementRoleAssignment** cmdlet examines all the role assignees assigned to the role, such as role groups, assignment policies, and USGs, and lists the members of each.
 
-
 > [!NOTE]
 > The <EM>GetEffectiveUser</EM> switch doesn't list users that are members of a linked foreign role group. Instead of a list of users, if a linked role group is found, <STRONG>All Linked Group Members</STRONG> is displayed. For more information about permissions in multiple forests, see <A href="understanding-multiple-forest-permissions-exchange-2013-help.md">Understanding multiple-forest permissions</A>.
-
-
 
 For more information about management roles, role groups, and assignment policies, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md). For more information about management role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
@@ -45,11 +41,8 @@ Looking for other management tasks related to managing permissions? Check out [P
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to list all effective users
 
@@ -139,22 +132,22 @@ For more information about the **Format-Table** and **Select-Object** cmdlets, s
 
 ## Output a customized list to your screen
 
-1.  Choose the information you want to see and find the associated command from one of the following procedures:
-    
+1. Choose the information you want to see and find the associated command from one of the following procedures:
+
       - Use the Shell to list all effective users
-    
+
       - Use the Shell to find a specific user a role
-    
+
       - Use the Shell to find a specific user on all roles
 
-2.  Choose the properties you want to see in your list.
+2. Choose the properties you want to see in your list.
 
-3.  Use the following syntax to view the list.
-    
+3. Use the following syntax to view the list.
+
     ```powershell
         <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
     ```
-    
+
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
@@ -167,22 +160,22 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 To export a list to a .csv file, you need to pipe the results of the **Get-ManagementRoleAssignment** command from the appropriate procedure listed previously to the **Select-Object** cmdlet. The output of the **Select-Object** cmdlet is then piped to the **Export-CSV** cmdlet, which saves the .csv output to a file name you specify.
 
-1.  Choose the information you want to see and find the associated command from one of the following procedures:
-    
+1. Choose the information you want to see and find the associated command from one of the following procedures:
+
       - Use the Shell to list all effective users
-    
+
       - Use the Shell to find a specific user a role
-    
+
       - Use the Shell to find a specific user on all roles
 
-2.  Choose the properties you want to see in your list.
+2. Choose the properties you want to see in your list.
 
-3.  Use the following syntax to export the list to a .csv file.
-    
+3. Use the following syntax to export the list to a .csv file.
+
     ```powershell
         <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
     ```
-    
+
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
@@ -192,4 +185,3 @@ This example finds the user David Strome on all roles, and displays the `Effecti
 You can now view the .csv file in a viewer of your choice.
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
-
