@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Coexistence with Office Communications Server 2007 R2 and Lync Server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Communications Server 2007 R2 and Lync Server provide many end-user features, including instant messaging (IM), presence, multiparty IM, and their voice mail functionality can be integrated with Exchange Unified Messaging (UM). For deployments that integrate Lync Server 2010 or 2013, users can be enabled for Enterprise Voice, which lets users who are enabled for voice mail access their voice mail by using Lync Server components.

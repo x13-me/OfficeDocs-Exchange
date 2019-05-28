@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 Sizing and Configuration Recommendations
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange 2013 is more demanding of system resources than previous versions of Exchange. By correctly sizing your Exchange 2013 infrastructure, and then making some recommended configurations to Exchange-related components within that infrastructure, you can lay the groundwork for an optimally performing deployment.

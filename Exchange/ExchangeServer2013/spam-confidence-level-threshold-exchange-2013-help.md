@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Spam Confidence Level Threshold
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 > [!NOTE]

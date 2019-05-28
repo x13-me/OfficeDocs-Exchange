@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Help Identify My Issue with Automatic Checks - Migration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The check(s) on this page will help identify some of the most common configuration challenges. You can use the automatic check(s) below to validate your configuration and help you update your environment.

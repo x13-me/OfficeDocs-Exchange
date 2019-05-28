@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Move a public folder to a different public folder mailbox
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 If the content of a public folder mailbox begins to exceed your mailbox quotas, you may need to move public folders to a different public folder mailbox. There are a couple ways to do this. To move one or more public folders that don't contain subfolders, you can use the **PublicFolderMoveRequest** cmdlets. If you need to move an entire public folder branch (which includes the parent public folder and all subfolders), you can use the `Move-PublicFolderBranch.ps1` script that's available when you install Exchange 2013.
@@ -43,9 +41,7 @@ For additional management tasks related to public folders see [Public folder pro
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Move a single public folder
 

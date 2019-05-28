@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Managed Store Limits
 
- 
-
 **Summary:** About Managed Store connection limits and how to configure them.
 
 In Microsoft Exchange Server 2013, connection and usage limits have been placed on the Exchange Managed Store to prevent a single application or a single user from using all the available connections to the Managed Store. If a single user or application is allowed to use all of the connections, other users or applications cannot be able to access the Managed Store, which could result in downtime.

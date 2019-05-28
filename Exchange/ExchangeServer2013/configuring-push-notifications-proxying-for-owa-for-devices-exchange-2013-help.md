@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configuring push notifications proxying for OWA for Devices
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Enabling push notifications for OWA for Devices (OWA for iPhone and OWA for iPad) for an on-premises deployment of Microsoft Exchange 2013 lets a user receive updates on the Outlook Web App icon on his or her OWA for iPhone and OWA for iPad indicating the number of unseen messages in the user's inbox. If push notifications aren't configured and enabled, a user with OWA for Devices has no way of knowing that unseen messages are in the inbox without launching the app. When a new message is available, the OWA for Devices badge is updated on the user's device and looks like the following badge.

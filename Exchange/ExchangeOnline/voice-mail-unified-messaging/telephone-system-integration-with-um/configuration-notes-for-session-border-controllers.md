@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: d161f94a-a243-4294-93b3-2bf1dc17b59f
 ms.date: 7/25/2017
 ms.reviewer: 
-title: Configuration notes for supported session border controllers
+title: Configuration notes for supported session border controllers in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Configuration notes for supported session border controllers
+# Configuration notes for supported session border controllers in Exchange Online
 
 Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter.
 

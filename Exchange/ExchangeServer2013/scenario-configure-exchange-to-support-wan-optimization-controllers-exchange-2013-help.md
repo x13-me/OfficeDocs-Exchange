@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Scenario: Configure Exchange to support WAN Optimization Controllers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, Transport Layer Security (TLS) encryption is mandatory for all SMTP communication in the Transport service between Mailbox servers. This increases overall security of Transport service communication between Mailbox servers. However, in certain topologies where WAN Optimization Controller (WOC) devices are used, the TLS encryption of SMTP traffic may be undesirable. You can disable TLS for Transport service communication between Mailbox servers for these specific scenarios.

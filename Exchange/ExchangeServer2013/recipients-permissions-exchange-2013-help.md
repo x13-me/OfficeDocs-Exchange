@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recipients Permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to perform tasks to manage recipients vary depending on the procedure being performed or the cmdlet you want to run.

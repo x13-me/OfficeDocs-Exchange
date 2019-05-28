@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 prerequisites
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic provides the steps for installing the necessary Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 with Service Pack 1 (SP1) operating system prerequisites for the Microsoft Exchange 2013 Mailbox, Client Access, and Edge Transport server roles. It also provides the prerequisites required to install the Exchange 2013 management tools on Windows 8, Windows 8.1, and Windows 7 client computers.
@@ -60,7 +58,7 @@ This topic provides the steps for installing the necessary Windows Server 2012 R
     > If you're installing the Mailbox server role and you intend for the server to be a member of a database availability group (DAG), you must be running Windows Server 2012 R2 Standard or Datacenter Edition, Windows Server 2012 Standard or Datacenter Edition, or Windows Server 2008 R2 SP1 Enterprise Edition. Windows Server 2008 R2 SP 1 Standard Edition doesn't support the features needed for DAGs.<BR>You can't upgrade Windows when Exchange is installed on the server.<BR>To upgrade to Microsoft Unified Communications Managed API (UCMA) 4.0, you must first uninstall any previous versions of UCMA that are installed by using <STRONG>Add/Remove programs</STRONG>.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Active Directory preparation
 

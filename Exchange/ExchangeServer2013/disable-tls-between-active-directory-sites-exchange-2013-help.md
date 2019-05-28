@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Disable TLS between Active Directory sites
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 supports disabling TLS for SMTP communication between Mailbox servers in certain topologies where WAN Optimization Controller (WOC) devices that compress SMTP traffic are used.
@@ -39,9 +37,7 @@ This topic provides step-by-step instructions on how to configure the Transport 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Step 1: Use the Shell to configure the Transport service on the Mailbox server to use downgraded Exchange Server authentication
 

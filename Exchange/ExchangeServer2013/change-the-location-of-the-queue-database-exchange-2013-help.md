@@ -82,8 +82,6 @@ The location of the queue database and the queue database transaction logs is co
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Use the Command Prompt to create a new queue database and transaction logs in a new location
 
 1. Create the folders where you want to keep the queue database and transaction logs. Make sure that the correct permissions are applied to the folders.
@@ -126,7 +124,7 @@ To verify that you successfully created a new queue database and new transaction
 
 3. If you can delete the old queue database and transaction log files from the old location after the Microsoft Exchange Transport service has started, those files are no longer being used.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Command Prompt to move the existing queue database and transaction logs to a new location
 
@@ -186,4 +184,4 @@ To verify that you successfully moved the existing queue database and transactio
 
 3. Verify there are no queue database or transaction log files at the original location.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

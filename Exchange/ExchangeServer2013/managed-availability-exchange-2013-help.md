@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Managed Availability
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
 
 Ensuring that users have a good email experience has always been the primary objective for messaging system administrators. To help ensure the availability and reliability of your Microsoft Exchange Server 2013 organization, all aspects of the system must be actively monitored, and any detected issues must be resolved quickly. In previous versions of Exchange, monitoring critical system components typically involved using an external application such as Microsoft System Center 2012 Operations Manager to collect data, and to provide recovery action for problems detected as a result of analyzing the collected data. Exchange 2010 and previous versions included health manifests and correlation engines in the form of management packs. These components enabled Operations Manager to make a determination as to whether a particular component was healthy or unhealthy. In addition, Operations Manager also used the diagnostic cmdlet infrastructure built into Exchange 2010 to run synthetic transactions against various aspects of the system.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # High availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can protect your Exchange Server 2013 mailbox databases and the data they contain by configuring your Mailbox servers and databases for high availability and site resilience. Exchange 2013 minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.

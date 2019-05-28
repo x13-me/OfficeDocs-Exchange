@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Disable or enable Exchange Search
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 By default, Exchange Search is enabled for all new mailbox databases and doesn't require additional configuration. However, if you want to stop Exchange Search from indexing mailbox content, you can disable it for individual mailbox databases or for an entire Mailbox server.
@@ -35,9 +33,7 @@ For additional management tasks related to Exchange Search, see [Exchange Search
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-
-## What do you want to do?
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Disable or enable Exchange Search for a mailbox database
 

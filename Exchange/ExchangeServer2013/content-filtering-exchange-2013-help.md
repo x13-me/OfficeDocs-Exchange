@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Content filtering
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 > [!NOTE]

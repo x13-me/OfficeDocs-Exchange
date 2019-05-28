@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure circular logging for a mailbox database
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you enable circular logging for a mailbox database, the type of circular logging you get depends on whether or not the mailbox database is replicated using continuous replication:

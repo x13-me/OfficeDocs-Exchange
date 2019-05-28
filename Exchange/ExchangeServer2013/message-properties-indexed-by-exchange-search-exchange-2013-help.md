@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Message properties indexed by Exchange Search
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Search indexes many item properties, including sender, recipients, message body, and attachments for email messages.

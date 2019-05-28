@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure an accepted domain for a business unit with mailboxes outside your Exchange organization
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In some instances, you may want to configure an accepted domain for a business unit in which some or all recipients in the domain don't have mailboxes in your Exchange organization. This can occur, for example, when an organization shares the same SMTP address space between two or more different email systems. For such scenarios, you can configure an accepted domain as an internal relay domain.
@@ -33,7 +31,7 @@ In some instances, you may want to configure an accepted domain for a business u
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to configure an accepted domain as an internal relay domain
 

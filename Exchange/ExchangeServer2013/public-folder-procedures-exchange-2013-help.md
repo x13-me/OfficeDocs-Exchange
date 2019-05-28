@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Public folder procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 **Summary:** Create and manage public folders with one or more of these articles.

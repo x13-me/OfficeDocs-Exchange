@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Learn about the Exchange UM Troubleshooting Tool
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Microsoft Exchange 2010 Unified Messaging Troubleshooting Tool is an Exchange Management Shell cmdlet named **Test-ExchangeUMCallFlow**. You can use this tool to conduct a series of diagnostic tests for Unified Messaging (UM) in your organization. If any of the tests fail, the tool reports the reason for the failure and possible solutions to fix the problem. You can only use the UM Troubleshooting Tool on Exchange 2010 or later servers.

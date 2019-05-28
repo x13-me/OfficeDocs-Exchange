@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mobile phone and tablet features
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Users can access their email, calendar, contacts, and task information on mobile phones, tablets, and other portable devices through Microsoft Exchange ActiveSync. They can also use it to set up their signature and automatic replies. A wide variety of mobile phones and devices work with Exchange ActiveSync.

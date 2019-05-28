@@ -39,7 +39,7 @@ Accepted domains are configured as global settings for the Exchange organization
 There are three types of accepted domains: authoritative, internal relay, and external relay. These accepted domain types are described in the following sections.
 
 > [!NOTE]
-> If you have a subscribed Edge Transport server in your perimeter network, you configure accepted domains on a Mailbox server in your Exchange organization. The accepted domains configuration is replicated to the Edge Transport server during EdgeSync synchronization. For more information, see <A href="edge-subscriptions-exchange-2013-help.md">Edge Subscriptions</A>.
+> If you have a subscribed Edge Transport server in your perimeter network, you configure accepted domains on a Mailbox server in your Exchange organization. The accepted domains configuration is replicated to the Edge Transport server during EdgeSync synchronization. For more information, see [Edge Subscriptions](edge-subscriptions-exchange-2013-help.md)
 
 ## Authoritative domains
 

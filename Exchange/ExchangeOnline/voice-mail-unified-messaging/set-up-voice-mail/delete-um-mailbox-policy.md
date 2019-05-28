@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: c8758464-3c52-4dd3-b2a6-142a99bb0628
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Delete a UM mailbox policy
+title: Delete a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Delete a UM mailbox policy
+# Delete a UM mailbox policy in Exchange Online
 
 When you delete a Unified Messaging (UM) mailbox policy, the UM mailbox policy will no longer be available to be associated with recipients who are being enabled for UM. You can't delete a UM mailbox policy if it's referenced by any UM-enabled mailboxes, and you can't delete a UM dial plan if a UM mailbox policy is associated with it.
 

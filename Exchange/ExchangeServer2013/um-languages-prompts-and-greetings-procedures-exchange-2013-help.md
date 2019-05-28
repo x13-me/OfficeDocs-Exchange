@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # UM languages, prompts, and greetings procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md)

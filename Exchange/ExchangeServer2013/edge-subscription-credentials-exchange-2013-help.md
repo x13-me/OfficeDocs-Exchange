@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Subscription credentials
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic explains how the Edge Subscription process provisions credentials used to help secure the EdgeSync synchronization process and how EdgeSync uses those credentials to establish a secure LDAP connection between an Exchange 2013 Mailbox server and an Edge Transport server. To learn more about the Edge Subscription process, see [Edge Subscriptions](edge-subscriptions-exchange-2013-help.md).

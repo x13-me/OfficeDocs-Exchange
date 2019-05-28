@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploy Exchange 2013 in an Exchange resource forest topology
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic explains how to deploy Microsoft Exchange 2013 in an Exchange resource forest topology. An Exchange resource forest is also called a dedicated Exchange forest. This topic assumes that you don't have an existing Exchange 2013 topology.

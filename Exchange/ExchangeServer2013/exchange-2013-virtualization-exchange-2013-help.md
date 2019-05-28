@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 virtualization
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can deploy Microsoft Exchange Server 2013 in a virtualized environment. This topic provides an overview of the scenarios that are supported for deploying Exchange 2013 on hardware virtualization software.

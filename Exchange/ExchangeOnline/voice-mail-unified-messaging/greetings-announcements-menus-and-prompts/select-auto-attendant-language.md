@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609
 ms.date: 7/12/2018
 ms.reviewer: 
-title: Select the language for an auto attendant
+title: Select the language for an auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Select the language for an auto attendant
+# Select the language for an auto attendant in Exchange Online
 
 You can configure the default prompt language setting on a Unified Messaging (UM) auto attendant. The language setting available on a UM auto attendant enables you to configure the default prompt language on the auto attendant. When you're using the default system prompts for the auto attendant, this is the language that the caller hears when the auto attendant answers the incoming call. This setting doesn't affect custom prompts that are configured on an auto attendant.
 

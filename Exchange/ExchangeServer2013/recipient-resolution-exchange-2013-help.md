@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recipient resolution
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Recipient resolution* is the process of expanding and resolving all the recipients in a message. The act of resolving the recipients matches a recipient to the corresponding Active Directory object in the Microsoft Exchange organization. The act of expanding the recipients expands all distribution groups into a list of individual recipients. Recipient resolution allows message limits and alternative recipients to be applied correctly to each recipient.

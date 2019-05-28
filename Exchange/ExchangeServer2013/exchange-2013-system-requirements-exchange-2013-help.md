@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 system requirements
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Learn about the Exchange 2013 requirements that you need to know before you install Exchange 2013. For example, you'll learn about the hardware, network, and operating system requirements.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connect UM to your telephone system
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Unified Messaging (UM) combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their voice mail messages from their email Inbox or by using Outlook Voice Access from any telephone.

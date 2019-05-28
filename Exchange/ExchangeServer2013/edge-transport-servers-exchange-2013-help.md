@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Edge Transport servers minimize the attack surface by handling all Internet-facing mail flow, which provides SMTP (Simple Mail Transfer Protocol) relay and smart host services for your Exchange organization. Agents running on the Edge Transport server provide additional layers of message protection and security. These agents provide protection against spam and apply transport rules to control mail flow.

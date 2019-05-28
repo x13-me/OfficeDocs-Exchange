@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage linked role groups
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use a linked management role group to enable members of a universal security group (USG) in a foreign Active Directory forest to manage a Microsoft Exchange Server 2013 organization in a resource Active Directory forest. By associating a USG in a foreign forest with a linked role group, the members of that USG are granted the permissions provided by the management roles assigned to the linked role group. For more information about linked role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
@@ -49,9 +47,7 @@ For additional management tasks related to role groups, see [Permissions](permis
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create a linked role group
 

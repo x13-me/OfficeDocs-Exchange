@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Diagnose Exchange Search issues
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Search indexes mailboxes and supported attachments in Exchange mailboxes. With increasing volumes of email, increasing mailbox sizes and storage quotas, provisioning archive mailboxes for users, and In-Place eDiscovery for performing discovery searches, Exchange Search is a critical component of the Mailbox servers in your Microsoft Exchange Server 2013 organization. Issues with Exchange Search can affect user productivity and impact In-Place eDiscovery functionality.

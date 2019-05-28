@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding permissions coexistence with Exchange 2007 and Exchange 2010
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you install Microsoft Exchange Server 2013 into an existing Microsoft Exchange Server 2010 or Microsoft Exchange Server 2007 organization, you need to understand how permissions will work in the new organization. Read the section below that applies to your organization.

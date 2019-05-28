@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport rule actions in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Actions in transport rules specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
@@ -627,7 +625,7 @@ Return to top
 
 ## For more information
 
-[Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
+[Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 deployment permissions reference
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic describes the permissions that are required to set up a Microsoft Exchange Server 2013 organization. The universal security groups (USGs) that are associated with management role groups, and other Windows security groups and security principals, are added to the access control lists (ACLs) of various Active Directory objects. ACLs control what operations can be performed on each object. By understanding what permissions are granted to each role group, security group, or security principal, you can determine what minimum permissions are required to install Exchange 2013.

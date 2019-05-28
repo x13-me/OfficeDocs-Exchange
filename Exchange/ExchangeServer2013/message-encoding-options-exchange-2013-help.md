@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Message encoding options
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The message encoding options that are available in Exchange specify message characteristics, such as MIME and non-MIME character sets, binary encoding, and attachment formats. You can specify message encoding options in the following locations:

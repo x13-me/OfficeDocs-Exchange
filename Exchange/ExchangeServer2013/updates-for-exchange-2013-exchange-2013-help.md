@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Updates for Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Learn how the update process for Microsoft Exchange Server 2013 has changed. This article also provides links to information about the features and improvements that were included in current, and previous, releases of Exchange 2013.

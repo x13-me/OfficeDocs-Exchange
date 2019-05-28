@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create or modify a mobile device mailbox policy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A mobile device mailbox policy allows you to apply a common set of security and mobile device settings to a group of users. You can create multiple mobile device mailbox policies. Each recipient in your organization must have a mobile device mailbox policy assigned to them. When you install Microsoft Exchange Server 2013, a default mobile device mailbox policy is created and new users are automatically assigned this policy. To assign specific users to a mobile device mailbox policy, see [Add or remove users from a mobile mailbox policy](add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md).
@@ -31,9 +29,7 @@ For additional information related to mobile device mailbox policies, see [Mobil
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create a new mobile device mailbox policy
 

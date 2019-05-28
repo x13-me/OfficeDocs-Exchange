@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # View mobile device information for users
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Users can configure multiple mobile devices for synchronization with Microsoft Exchange Server 2013. You can use the EAC or the Shell to view a list of mobile devices that are associated with a specific user.
@@ -31,9 +29,7 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to view mobile device information for users
 

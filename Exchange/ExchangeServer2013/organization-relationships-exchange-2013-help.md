@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Organization relationships
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Set up an organization relationship to share calendar information with an external business partner. Exchange admins can set up an organization relationship with an Office 365 organization or with another Exchange on-premises organization. If you want to share calendars with another on-premises Exchange organization, both on-premises Exchange administrators have to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements.

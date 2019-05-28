@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Install the Exchange 2013 management tools
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 With the Microsoft Exchange Server 2013 management tools, you can configure and manage your Exchange organization remotely. Exchange 2013 management tools include the Exchange Management Shell and the Exchange Toolbox. This topic explains how you can either use Setup.exe or unattended setup mode to install the Exchange 2013 management tools.
@@ -38,7 +36,7 @@ For more information about managing Exchange 2013, see [Exchange admin center in
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use Setup to install the Exchange 2013 management tools
 

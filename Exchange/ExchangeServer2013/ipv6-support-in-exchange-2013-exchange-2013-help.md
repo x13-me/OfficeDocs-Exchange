@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # IPv6 support in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP.

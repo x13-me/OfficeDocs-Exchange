@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Transport server cloned configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Edge Transport servers store their configuration information in Active Directory Lightweight Directory Services (AD LDS). You can install more than one Edge Transport server in the perimeter network and use a DNS round robin to help balance network traffic among the Edge Transport servers. Round robin is a simple mechanism used by DNS servers to share and distribute loads for network resources.

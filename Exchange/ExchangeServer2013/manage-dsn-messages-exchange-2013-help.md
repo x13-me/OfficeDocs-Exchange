@@ -19,8 +19,6 @@ f1_keywords:
 
 # Manage DSN messages
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provide non-delivery reports (NDRs) and other status messages to message senders. You can use the built-in DSNs, or you can create custom DSN messages to meet the needs of your organization.
@@ -36,9 +34,7 @@ Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provi
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to view built-in and custom DSN messages
 

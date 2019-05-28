@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md)

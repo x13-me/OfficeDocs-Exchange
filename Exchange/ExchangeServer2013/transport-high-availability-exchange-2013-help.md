@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport high availability
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, transport high availability is responsible for keeping redundant copies of messages before and after the messages are successfully delivered. Exchange 2013 improves upon the transport high availability features introduced in Exchange Server 2010, for example, shadow redundancy and the transport dumpster, to help ensure messages aren't lost in transit.

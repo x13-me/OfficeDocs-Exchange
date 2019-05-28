@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Federation
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Information workers frequently need to collaborate with external recipients, vendors, partners, and customers and share their free/busy (also known as calendar availability) information. Federation in Microsoft Exchange Server 2013 helps with these collaboration efforts. *Federation* refers to the underlying trust infrastructure that supports *federated sharing*, an easy method for users to share calendar information with recipients in other external federated organizations. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).

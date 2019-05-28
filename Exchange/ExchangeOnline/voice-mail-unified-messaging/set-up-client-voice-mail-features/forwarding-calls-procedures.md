@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Forwarding calls procedures
+title: Forwarding calls procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Forwarding calls procedures
+# Forwarding calls procedures in Exchange Online
 
 [Call answering rules](call-answering-rules.md)
 

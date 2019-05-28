@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, Information Rights Management (IRM) operations are logged in IRM logs. IRM logs help you monitor and troubleshoot interactions between the Rights Management Services (RMS) client on an Exchange 2013 server and the Active Directory Rights Management Services (AD RMS) cluster in your organization.

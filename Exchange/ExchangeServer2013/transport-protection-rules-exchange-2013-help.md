@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport protection rules
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Email messages and attachments increasingly contain business critical information such as product specifications, business strategy documents, and financial data, or personally identifiable information (PII) such as contact details, social security numbers, credit card numbers, and employee records. There are a number of industry-specific and local regulations in many parts of the world that govern the collection, storage, and disclosure of PII.
