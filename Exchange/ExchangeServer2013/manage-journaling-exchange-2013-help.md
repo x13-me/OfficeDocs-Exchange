@@ -80,7 +80,7 @@ To verify that you have successfully created the journal rule, do one of the fol
 
 3. Double-click the rule you want to view or modify.
 
-4. In **Journal Rule**, modify the settings you want. For more information about the settings in this dialog box, see the procedure [Use the EAC to create a journal rule](manage-journaling-exchange-2013-help.md#newjournalrule) earlier in this topic.
+4. In **Journal Rule**, modify the settings you want. For more information about the settings in this dialog box, see the procedure [Use the EAC to create a journal rule](#use-the-eac-to-create-a-journal-rule) earlier in this topic.
 
 ### Use the Shell to view or modify a journal rule
 

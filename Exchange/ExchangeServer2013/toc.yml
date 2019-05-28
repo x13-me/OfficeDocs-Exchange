@@ -1680,7 +1680,7 @@
       - name: Configure custom MailTips for recipients
         href: configure-custom-mailtips-exchange-2013-help.md
       - name: MailTips over organization relationships
-        href: mailtips-exchange-2013-help.md-over-organization-relationships
+        href: https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
         items:
         - name: Manage MailTips for organization relationships
           href: https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
@@ -2081,7 +2081,7 @@
           - name: Allow or prevent a user from creating call answering rules
             href: call-answering-rules-exchange-2013-help.md
           - name: Allow or prevent users in the same UM mailbox policy from creating call answering rules
-            href: call-answering-rules-exchange-2013-help.md-in-the-same-mailbox-policy
+            href: call-answering-rules-in-the-same-mailbox-policy-exchange-2013-help.md
           - name: Create a call answering rule
             href: create-a-call-answering-rule-exchange-2013-help.md
           - name: View and manage a call answering rule
@@ -2096,7 +2096,7 @@
         - name: Dial codes, number prefixes, and number formats
           href: dial-codes-number-prefixes-number-formats-exchange-2013-help.md
         - name: Allowing users to make calls procedures
-          href: allow-users-to-make-calls-exchange-2013-help.md-procedures
+          href: allow-users-to-make-calls-procedures-exchange-2013-help.md
           items:
           - name: Enable outgoing calls on UM IP gateways
             href: enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
@@ -2178,7 +2178,7 @@
           - name: Enable or disable multimedia playback of protected voice messages
             href: enable-or-disable-multimedia-playback-exchange-2013-help.md
           - name: Specify the text to display for email clients that don't support Windows Rights Management
-            href: specify-text-to-display-for-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md
+            href: specify-text-for-non-wrm-email-clients-exchange-2013-help.md
       - name: Allow Message Waiting Indicator
         href: allow-message-waiting-indicator-exchange-2013-help.md
         items:
@@ -2214,7 +2214,7 @@
         - name: Set the minimum PIN length for voice mail
           href: set-minimum-pin-length-exchange-2013-help.md
         - name: Set the PIN lifetime for voice mail
-          href: set-pin-lifetime.md-exchange-2013-help.md
+          href: set-pin-lifetime-exchange-2013-help.md
         - name: Set the number of previous voice mail PINs to recycle
           href: set-number-of-previous-pins-to-recycle-exchange-2013-help.md
         - name: Disable common PIN patterns for voice mail

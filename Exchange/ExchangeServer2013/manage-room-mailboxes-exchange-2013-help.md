@@ -128,7 +128,7 @@ Use the **General** section to view or change basic information about the resour
 
 - **\* Room name**: This name appears in the resource mailbox list in the Exchange Admin CenterExchange Admin Center and in your organization's address book. It can't exceed 64 characters if you change it.
 
-- **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#EmailAddress-exchange-2013-help.md) section.
+- **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#email-address) section.
 
 - **Capacity**: Use this box to enter the maximum number of people who can safely occupy the room.
 
