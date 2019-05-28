@@ -29,9 +29,7 @@ For additional management tasks related to Outlook Web App mailbox policies, see
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to remove an Outlook Web App mailbox policy
+## Use the EAC to remove an Outlook Web App mailbox policy
 
 1. In the EAC, click **Permissions** \> **Outlook Web App policies**.
 
@@ -41,7 +39,7 @@ For additional management tasks related to Outlook Web App mailbox policies, see
 
 4. In the confirmation window, click **Yes** to remove the mailbox policy, or click **No** to cancel.
 
-### Use the Shell to remove an Outlook Web App mailbox policy
+## Use the Shell to remove an Outlook Web App mailbox policy
 
 This example removes an Outlook Web App mailbox policy named `Policy1`.
 

@@ -52,9 +52,7 @@ For additional management tasks related to UM mailboxes, see [Voice mail for use
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to disable selected Outlook Voice Access features for UM-enabled users on a UM mailbox policy
+## Use the Shell to disable selected Outlook Voice Access features for UM-enabled users on a UM mailbox policy
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
 
@@ -82,7 +80,7 @@ This example prevents users associated with the UM mailbox policy named `MyUMMai
 Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowTUIAccessToPersonalContacts $false
 ```
 
-### Use the Shell to disable selected Outlook Voice Access features on the mailbox of a single UM-enabled user
+## Use the Shell to disable selected Outlook Voice Access features on the mailbox of a single UM-enabled user
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
 

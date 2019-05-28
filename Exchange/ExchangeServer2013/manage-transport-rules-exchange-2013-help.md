@@ -52,16 +52,14 @@ Interested in scenarios where these procedures are used? See the following topic
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Create a transport rule
+## Create a transport rule
 
 You can create a transport rule by setting up a Data Loss Prevention (DLP) policy, creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or the Exchange Management Shell.
 
 > [!NOTE]
 > After you create or modify a transport rule, it can take up to 30 minutes for the new or updated rule to be applied to email.
 
-#### Use a DLP policy to create transport rules
+### Use a DLP policy to create transport rules
 
 Each DLP policy is a collection of transport rules. After you create the DLP policy, you can fine-tune the rules using the procedures below.
 
@@ -69,7 +67,7 @@ Each DLP policy is a collection of transport rules. After you create the DLP pol
 
 2. Modify the transport rules created by the DLP policy. See [View or modify a transport rule](manage-transport-rules-exchange-2013-help.md#view-or-modify-a-transport-rule).
 
-#### Use the EAC to create a transport rule
+### Use the EAC to create a transport rule
 
 The EAC allows you to create transport rules by using a template, copying an existing rule, or from scratch.
 
@@ -142,7 +140,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
 5. Click **Save** to complete creating the rule.
 
-#### Use the Exchange Management Shell to create a transport rule
+### Use the Exchange Management Shell to create a transport rule
 
 This example uses the [New-TransportRule](http://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new transport rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
 
@@ -152,7 +150,7 @@ New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope
 
 The rule parameters and action used in the above procedure are for illustration only. Review all the available transport rule conditions and actions to determine which ones meet your requirements.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a new transport rule, do the following:
 
@@ -164,18 +162,18 @@ To verify that you have successfully created a new transport rule, do the follow
   Get-TransportRule "Mark messages from the Internet to Sales DG"
   ```
 
-### View or modify a transport rule
+## View or modify a transport rule
 
 > [!NOTE]
 > After you create or modify a transport rule, it can take up to 30 minutes for the new or updated rule to be applied to email.
 
-#### Use the EAC to view or modify a transport rule
+### Use the EAC to view or modify a transport rule
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
 2. When you select a rule in the list, the conditions, actions, exceptions and select properties of that rule are displayed in the details pane. To view all the properties of a specific rule, double click it. This opens the rule editor window, where you can make changes to the rule. For more information about rule properties, see [Use the EAC to create a transport rule](#use-the-eac-to-create-a-transport-rule) section, earlier in this topic.
 
-#### Use the Exchange Management Shell to view or modify a transport rule
+### Use the Exchange Management Shell to view or modify a transport rule
 
 The following example gives you a list of all rules configured in your organization:
 
@@ -195,7 +193,7 @@ To modify the properties of an existing rule, use the [Set-TransportRule](http:/
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully modified a transport rule, do the following:
 
@@ -207,7 +205,7 @@ To verify that you have successfully modified a transport rule, do the following
   Get-TransportRule "Sender is a member of marketing" | Format-List Name,ExceptIfFrom
   ```
 
-### Transport rule properties
+## Transport rule properties
 
 You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](http://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
 
@@ -218,17 +216,17 @@ You can also use the **Set-TransportRule** cmdlet to modify existing transport r
 |**Audit severity **| `SetAuditSeverity`| `Not applicable`|Enables you to select a severity level for the audit|
 |**Rule modes**| `Mode`| `Not applicable`|Enables you to set the mode for the rule|
 
-### Set the priority of a transport rule
+## Set the priority of a transport rule
 
 The rule at the top of the list is processed first. This rule has a **Priority** of 0.
 
-#### Use the EAC to set the priority of a rule
+### Use the EAC to set the priority of a rule
 
 1. From the EAC, go to **Mail flow** \> **Rules**. This displays the rules in the order in which they are processed.
 
 2. Select a rule, and use the arrows to move the rule up or down the list.
 
-#### Use the Exchange Management Shell to set the priority of a rule
+### Use the Exchange Management Shell to set the priority of a rule
 
 The following example sets the priority of "Sender is a member of marketing" to 2:
 
@@ -236,7 +234,7 @@ The following example sets the priority of "Sender is a member of marketing" to 
 Set-TransportRule "Sender is a member of marketing" priority "2"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully modified a transport rule, do the following:
 
@@ -248,11 +246,11 @@ To verify that you have successfully modified a transport rule, do the following
   Get-TransportRule * | Format-List Name,Priority
   ```
 
-### Enable or disable a transport rule
+## Enable or disable a transport rule
 
 Rules are enabled when you create them. You can disable a transport rule.
 
-#### Use the EAC to enable or disable a transport rule
+### Use the EAC to enable or disable a transport rule
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
@@ -260,7 +258,7 @@ Rules are enabled when you create them. You can disable a transport rule.
 
 3. To enable a disabled rule, select the check box next to its name.
 
-#### Use the Exchange Management Shell to enable or disable a transport rule
+### Use the Exchange Management Shell to enable or disable a transport rule
 
 The following example disables the transport rule "Sender is a member of marketing":
 
@@ -274,7 +272,7 @@ The following example enables the transport rule "Sender is a member of marketin
 Enable-TransportRule "Sender is a member of marketing"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled a transport rule, do the following:
 
@@ -286,15 +284,15 @@ To verify that you have successfully enabled or disabled a transport rule, do th
   Get-TransportRule | Format-Table Name,State
   ```
 
-### Remove a transport rule
+## Remove a transport rule
 
-#### Use the EAC to remove a transport rule
+### Use the EAC to remove a transport rule
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
 2. Select the rule you want to remove and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
 
-#### Use the Exchange Management Shell to remove a transport rule
+### Use the Exchange Management Shell to remove a transport rule
 
 The following example removes the transport rule "Sender is a member of marketing":
 
@@ -302,7 +300,7 @@ The following example removes the transport rule "Sender is a member of marketin
 Remove-TransportRule "Sender is a member of marketing"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed the transport rule, do the following:
 
@@ -314,7 +312,7 @@ To verify that you have successfully removed the transport rule, do the followin
   Get-TransportRule
   ```
 
-### Import or export a transport rule collection
+## Import or export a transport rule collection
 
 You must use the Exchange Management Shell to import or export a transport rule collection. For information about how to import a transport rule collection from an XML file, see [Import-TransportRuleCollection](http://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a transport rule collection to an XML file, see [Export-TransportRuleCollection](http://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
 

@@ -56,9 +56,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable or disable multimedia playback of protected voice messages
+## Use the EAC to enable or disable multimedia playback of protected voice messages
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -68,7 +66,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 4. Click **Save**.
 
-### Use the Shell to enable or disable multimedia playback of protected voice messages
+## Use the Shell to enable or disable multimedia playback of protected voice messages
 
 This example allows users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` to play back protected voice messages using a media player.
 

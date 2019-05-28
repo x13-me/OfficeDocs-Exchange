@@ -33,9 +33,7 @@ Each auto attendant you create will initially use English (en-US) as the default
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the default language setting
+## Use the EAC to configure the default language setting
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -47,7 +45,7 @@ Each auto attendant you create will initially use English (en-US) as the default
 
 5. Click **Save** to accept your changes.
 
-### Use the Shell to configure the default language setting
+## Use the Shell to configure the default language setting
 
 This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to English (Great Britain).
 

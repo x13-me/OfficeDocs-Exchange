@@ -38,9 +38,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to add an extension or phone numbers for a UM auto attendant
+## Use the EAC to add an extension or phone numbers for a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -52,7 +50,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 5. Click **Save** to add the number.
 
-### Use the Shell to configure an extension number on a UM auto attendant
+## Use the Shell to configure an extension number on a UM auto attendant
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` with multiple extension numbers.
 

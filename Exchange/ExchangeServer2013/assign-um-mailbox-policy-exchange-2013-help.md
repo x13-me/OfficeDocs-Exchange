@@ -46,9 +46,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to change the UM mailbox policy assigned to a UM-enabled user
+## Use the EAC to change the UM mailbox policy assigned to a UM-enabled user
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -62,7 +60,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 6. Click **Save**.
 
-### Use the Shell to change the UM mailbox policy assigned to a UM-enabled user
+## Use the Shell to change the UM mailbox policy assigned to a UM-enabled user
 
 This example associates a UM-enabled user named Tony Smith with a UM mailbox policy named `MyUMMailboxPolicy`.
 

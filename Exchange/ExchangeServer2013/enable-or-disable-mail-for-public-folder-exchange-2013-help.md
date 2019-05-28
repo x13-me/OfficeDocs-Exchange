@@ -33,9 +33,7 @@ For additional management tasks related to managing public folders, see [Public 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to mail-enable or mail-disable a public folder
+## Use the EAC to mail-enable or mail-disable a public folder
 
 1. Navigate to **Public folders** \> **Public folders**.
 
@@ -47,7 +45,7 @@ For additional management tasks related to managing public folders, see [Public 
 
 If you want external users to send mail to this public folder, make sure you follow the steps in the [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder) section later in this topic.
 
-### Use the Shell to mail-enable a public folder
+## Use the Shell to mail-enable a public folder
 
 This example mail-enables the public folder Help Desk.
 
@@ -65,7 +63,7 @@ If you want external users to send mail to this public folder, make sure you fol
 
 For detailed syntax and parameter information, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
 
-### Use the Shell to mail-disable a public folder
+## Use the Shell to mail-disable a public folder
 
 This example mail-disables the public folder Marketing\Reports.
 
@@ -75,11 +73,11 @@ Disable-MailPublicFolder -Identity "\Marketing\Reports"
 
 For detailed syntax and parameter information, see [Disable-MailPublicFolder](http://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx).
 
-### Allow anonymous users to send email to a mail-enabled public folder
+## Allow anonymous users to send email to a mail-enabled public folder
 
 You can use either Outlook or the Shell to set permissions on a public folder's Anonymous account. You can't use the EAC to set permissions on the Anonymous account.
 
-#### Use Outlook to set permissions for the Anonymous account
+### Use Outlook to set permissions for the Anonymous account
 
 1. Open Outlook using an account that's been granted Owner permissions on the email-enabled public folder you want anonymous users to send mail to.
 
@@ -91,7 +89,7 @@ You can use either Outlook or the Shell to set permissions on a public folder's 
 
 5. Select the **Anonymous** account, select **Create items** under **Write**, and then click **OK**.
 
-#### Use the Shell to set permissions for the Anonymous account
+### Use the Shell to set permissions for the Anonymous account
 
 This example sets the `CreateItems` permission for the Anonymous account on the "Customer Feedback" mail-enabled public folder.
 

@@ -30,9 +30,7 @@ You can stop or restart an In-Place eDiscovery search at any time. For example, 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to start or stop an In-Place eDiscovery search
+## Use the EAC to start or stop an In-Place eDiscovery search
 
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
@@ -40,7 +38,7 @@ You can stop or restart an In-Place eDiscovery search at any time. For example, 
 
 3. To start a search that was stopped, select the search, and then click **Resume search**.
 
-### Use the Shell to start or stop an In-Place eDiscovery search
+## Use the Shell to start or stop an In-Place eDiscovery search
 
 For an example of how to start an In-Place eDiscovery search, see "Example 1" in [Start-MailboxSearch](http://technet.microsoft.com/library/f0c4e047-7eca-4310-bfad-1ecfe1420ceb.aspx).
 

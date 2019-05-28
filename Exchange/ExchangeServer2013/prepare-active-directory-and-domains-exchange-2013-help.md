@@ -50,7 +50,7 @@ Curious about what's happening when Active Directory is being prepared for Excha
   - Install the first Exchange server in an Active Directory site with a writeable global catalog server from every domain.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## 1\. Extend the Active Directory schema
 

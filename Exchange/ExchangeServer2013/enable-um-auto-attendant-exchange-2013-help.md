@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable a UM auto attendant
+## Use the EAC to enable a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -43,7 +41,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 3. On the **Warning** page, click **Yes**.
 
-### Use the Shell to enable a UM auto attendant
+## Use the Shell to enable a UM auto attendant
 
 This example enables the UM auto attendant named `MyUMAutoAttendant` to answer incoming calls.
 

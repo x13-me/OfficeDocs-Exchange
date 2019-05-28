@@ -31,9 +31,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the group of users that Outlook Voice Access users can contact
+## Use the EAC to configure the group of users that Outlook Voice Access users can contact
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -53,7 +51,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 5. Click **Save**.
 
-### Use the Shell to configure the group of users that Outlook Voice Access users can contact
+## Use the Shell to configure the group of users that Outlook Voice Access users can contact
 
 This example sets the group of users that Outlook Voice Access users can contact for a UM dial plan named `MyUMDialPlan` to the entire organization.
 

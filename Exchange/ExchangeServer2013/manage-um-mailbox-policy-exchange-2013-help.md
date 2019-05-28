@@ -35,9 +35,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to manage a UM mailbox policy
+## Use the EAC to manage a UM mailbox policy
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -218,7 +216,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
     If a protected voice mail message is sent to an email client that doesn't support IRM, the text that you include in this box will be sent to the user in an email message. This information should include instructions about what to do to be able to receive the protected voice mail message.
 
-### Use the Shell to manage a UM mailbox policy
+## Use the Shell to manage a UM mailbox policy
 
 This example sets the PIN settings for users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
@@ -238,7 +236,7 @@ This example configures the text of voice messages sent to UM-enabled users and 
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been enabled for Unified Messaging." -VoiceMailText "You have received a voice message from Microsoft Exchange 2013 Unified Messaging."
 ```
 
-### Use the Shell to view UM mailbox policy properties
+## Use the Shell to view UM mailbox policy properties
 
 This example returns a formatted list of all UM mailbox policies in the Active Directory forest.
 

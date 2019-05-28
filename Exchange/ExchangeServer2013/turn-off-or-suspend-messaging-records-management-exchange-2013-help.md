@@ -38,8 +38,6 @@ To meet individual, IT, or business requirements, you may need to turn off or te
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## What do you want to do?
-
 ## Place mailboxes on retention hold
 
 You can place mailboxes on retention hold to turn off MRM temporarily (for example when users are on vacation). This suspends the processing of retention policies for the mailbox until retention hold is disabled. This is different from placing mailboxes on In-Place Hold or litigation hold.

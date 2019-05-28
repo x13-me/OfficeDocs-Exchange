@@ -28,11 +28,9 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 - The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
-## What do you want to do?
+## Add an email address to a user mailbox
 
-### Add an email address to a user mailbox
-
-#### Use the EAC to add an email address
+### Use the EAC to add an email address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -54,7 +52,7 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 6. Click **Save** to save the change.
 
-#### Use the Shell to add an email address
+### Use the Shell to add an email address
 
 The email addresses associated with a mailbox are contained in the _EmailAddresses_ property for the mailbox. Because it can contain more than one email address, the _EmailAddresses_ property is known as a multivalued property. The following examples show different ways to modify a multivalued property.
 
@@ -80,7 +78,7 @@ Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northa
 
 For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully added an email address to a mailbox, do one of the following:
 
@@ -100,9 +98,9 @@ Or
 
 - Verify that the new email address is included in the results.
 
-### Remove an email address from a user mailbox
+## Remove an email address from a user mailbox
 
-#### Use the EAC to remove an email address
+### Use the EAC to remove an email address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -114,7 +112,7 @@ Or
 
 5. Click **Save** to save the change.
 
-#### Use the Shell to remove an email address
+### Use the Shell to remove an email address
 
 This example shows how to remove an email address from the mailbox of Janet Schorr.
 
@@ -140,7 +138,7 @@ Because janets@corp.contoso.com was omitted in the previous command, it's remove
 
 For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully removed an email address from a mailbox, do one of the following:
 
@@ -160,14 +158,13 @@ Or
 
 - Verify that the email address isn't included in the results.
 
-### Use the Shell to add email addresses to multiple mailboxes
+## Use the Shell to add email addresses to multiple mailboxes
 
 You can add a new email address to multiple mailboxes at one time by using the Shell and a comma separated values (CSV) file.
 
 This example imports data from C:\Users\Administrator\Desktop\AddEmailAddress.csv, which has the following format.
 
 > Mailbox,NewEmailAddress <br/> Dan Jump,danj@northamerica.contoso.com <br/> David Pelton,davidp@northamerica.contoso.com <br/> Kim Akers,kima@northamerica.contoso.com <br/> Janet Schorr,janets@northamerica.contoso.com <br/> Jeffrey Zeng,jeffreyz@northamerica.contoso.com <br/> Spencer Low,spencerl@northamerica.contoso.com <br/> Toni Poe,tonip@northamerica.contoso.com <br/> ...
-```
 
 Run the following command to use the data in the CSV file to add the email address to each mailbox specified in the CSV file.
 
@@ -178,7 +175,7 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 > [!NOTE]
 > The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in the Shell command.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully added an email address to multiple mailboxes, do one of the following:
 

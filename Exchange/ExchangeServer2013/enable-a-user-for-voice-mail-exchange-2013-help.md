@@ -40,9 +40,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable a user for voice mail
+## Use the EAC to enable a user for voice mail
 
 1. In the EAC, click **Recipients**.
 
@@ -72,7 +70,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 6. On the **Enable UM mailbox** page, review your settings. Click **Finish** to enable the user for voice mail. Click **Back** to make configuration changes.
 
-### Use the Shell to enable a user for voice mail
+## Use the Shell to enable a user for voice mail
 
 This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, sets the extension number to 51234, sets the PIN for the user to 5643892, and assigns the user to a UM mailbox policy named `MyUMMailboxPolicy`.
 

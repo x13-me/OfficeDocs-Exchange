@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 You can add scripts and non-Exchange cmdlets to unscoped top-level management roles if you want to make new scripts or non-Exchange cmdlets available to existing unscoped roles. These scripts and non-Exchange cmdlets are added as management role entries to unscoped top-level management roles. They can then be used by those unscoped top-level role entries or any unscoped roles derived from the top-level roles. For more information about unscoped role entries, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
 > [!NOTE]
-> If you want to change a role entry on a management role that contains Exchange cmdlets, see <A href="change-a-role-entry-exchange-2013-help.md">Change a role entry</A>.
+> If you want to change a role entry on a management role that contains Exchange cmdlets, see [Change a role entry](change-a-role-entry-exchange-2013-help.md).
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -40,9 +40,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Add a script role entry to an unscoped top-level role
 

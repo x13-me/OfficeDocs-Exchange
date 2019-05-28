@@ -35,9 +35,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable dialing authorizations on a UM auto attendant for in-country/region rule groups
+## Use the EAC to enable dialing authorizations on a UM auto attendant for in-country/region rule groups
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -47,7 +45,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
-### Use the EAC to enable dialing authorizations on a UM auto attendant for international rule groups
+## Use the EAC to enable dialing authorizations on a UM auto attendant for international rule groups
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -57,7 +55,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
-### Use the Shell to enable in-country/region and international dialing authorizations on a UM auto attendant
+## Use the Shell to enable in-country/region and international dialing authorizations on a UM auto attendant
 
 This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2. InternationalGroup1, and InternationalGroup2 dialing authorizations on a UM auto attendant named `MyUMAutoAttendant`.
 

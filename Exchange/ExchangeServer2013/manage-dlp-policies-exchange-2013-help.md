@@ -41,13 +41,11 @@ For more information about the Exchange Management Shell, see [Exchange Manageme
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### View the details of an existing DLP policy
+## View the details of an existing DLP policy
 
 You may need to view the rules and actions of an existing DLP policy that you have already established for your organization. This can be useful if you experience unexpected mail flow issues or if your organization changes the way sensitive information needs to be monitored.
 
-#### Use the EAC to view the details within an existing DLP policy
+### Use the EAC to view the details within an existing DLP policy
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
@@ -58,7 +56,7 @@ You may need to view the rules and actions of an existing DLP policy that you ha
 > [!TIP]
 > You can create a DLP policy and leave it in a non-activated or disabled mode. In this mode, a policy is not enforced and you can change any predicates, actions, or values associated with its rules before you test or begin enforcing it.
 
-#### Use the Shell to view the details within an existing DLP policy
+### Use the Shell to view the details within an existing DLP policy
 
 This example returns information about the fictitious DLP policy named Employee Numbers. The command is piped to the **Format-List** cmdlet to display the detailed configuration of the specified DLP policy.
 
@@ -68,11 +66,11 @@ Get-DlpPolicy "Employee Numbers" | Format-List
 
 For syntax and parameter information, see [Get-DlpPolicy](http://technet.microsoft.com/library/cfb850c5-efb2-4fb5-a5c3-3fb6aba11008.aspx).
 
-### Change a DLP policy
+## Change a DLP policy
 
 You can change an existing DLP policy by modifying either the name of the policy or the rules that govern the effects of the policy. An example rule change might include adding custom disclaimer text to a message body and RMS protection for messages sent within a specific domain and that are detected to have sensitive information. If you are using DLP policy templates, keep in mind that these are only one of the features in Exchange 2013 that can help you design and apply a robust policy and compliance system for your messaging environment.
 
-#### Use the EAC to change an existing DLP policy
+### Use the EAC to change an existing DLP policy
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
@@ -90,7 +88,7 @@ You can change an existing DLP policy by modifying either the name of the policy
 
 8. Click **Save** to finish modifying the policy and save your changes.
 
-#### Use the Shell to change an existing DLP policy
+### Use the Shell to change an existing DLP policy
 
 You can specify the action and notification level of a policy using the Exchange Management Shell. This example sets the mode for a fictitious DLP policy named Employee Numbers so that the actions are not enforced and notification messages are not displayed.
 
@@ -100,19 +98,19 @@ Set-DlpPolicy "Employee Numbers" -Mode Audit
 
 For syntax and parameter information, see [Set-DlpPolicy](http://technet.microsoft.com/library/f44e276c-b9cb-4bfc-a815-ab866446ffdd.aspx).
 
-### Delete a DLP policy
+## Delete a DLP policy
 
 You can permanently remove a DLP policy using the EAC. Once you've deleted a policy, it will no longer be enforced and none of the rules and actions will be saved.
 
 Alternatively, you can set the operational state or mode of a policy to **Test DLP policy without Policy Tips**. This stops it from being enforced in your message environment, but preserves the detailed configuration settings of the policy itself. This can be useful if there is a possibility that you will need to enforce the policy again in the future.
 
-#### Use the EAC to delete an existing DLP policy
+### Use the EAC to delete an existing DLP policy
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
 2. Select the policy you want to remove in your list of policies, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
 
-#### Use the Shell to delete an existing DLP policy
+### Use the Shell to delete an existing DLP policy
 
 This example removes the fictitious DLP policy named Employee Numbers.
 

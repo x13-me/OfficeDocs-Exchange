@@ -35,9 +35,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure a speech-enabled auto attendant with a DTMF fallback auto attendant
+## Use the EAC to configure a speech-enabled auto attendant with a DTMF fallback auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -50,7 +48,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!IMPORTANT]
 > You must first speech-enable the auto attendant before you can browse for a DTMF fallback auto attendant you have set up.
 
-### Use the Shell to configure a speech-enabled auto attendant with a DTMF fallback auto attendant
+## Use the Shell to configure a speech-enabled auto attendant with a DTMF fallback auto attendant
 
 This example configures a UM auto attendant named `MySpeechEnabledAA` to use a DTMF fallback auto attendant named `MyDTMFAA`.
 

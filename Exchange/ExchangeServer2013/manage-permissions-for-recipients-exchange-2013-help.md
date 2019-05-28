@@ -42,15 +42,13 @@ You can use the EAC or the Shell to assign permissions to users or groups (calle
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Assign permissions to a mailbox
+## Assign permissions to a mailbox
 
 As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use the Shell to assign delegates permissions to access a discovery mailbox.
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
-#### Use the EAC to assign permissions
+### Use the EAC to assign permissions
 
 The following procedure shows how to assign permissions to a user mailbox. You follow a similar procedure to assign permissions to resource or shared mailboxes by navigating to the **Resources** or **Shared** page in the EAC and selecting the mailbox to assign the permissions to.
 
@@ -66,7 +64,7 @@ The following procedure shows how to assign permissions to a user mailbox. You f
 
 5. Click **Save** to save your changes.
 
-#### Use the EAC to bulk assign permissions
+### Use the EAC to bulk assign permissions
 
 Use the following steps to bulk assign permissions.
 
@@ -80,7 +78,7 @@ Use the following steps to bulk assign permissions.
 
    To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-#### Use the EAC to assign a user permission to send email from another user's mailbox
+### Use the EAC to assign a user permission to send email from another user's mailbox
 
 The following procedure shows how to assign a user permission to send email from another user's mailbox.
 
@@ -101,7 +99,7 @@ The following procedure shows how to assign a user permission to send email from
 
 5. Click **Save** to save your changes.
 
-#### Use the EAC to assign a user permission to send email from a group
+### Use the EAC to assign a user permission to send email from a group
 
 The following procedure shows how to assign a user permission to send email from a group.
 
@@ -119,7 +117,7 @@ The following procedure shows how to assign a user permission to send email from
 
 5. Click **Save** to save your changes.
 
-#### Use the EAC to assign full access permissions
+### Use the EAC to assign full access permissions
 
 The following procedure shows how to assign full access permissions to a user mailbox.
 
@@ -138,11 +136,11 @@ The following procedure shows how to assign full access permissions to a user ma
 
 5. Click **Save** to save your changes.
 
-#### Use the Shell to assign permissions to mailboxes
+### Use the Shell to assign permissions to mailboxes
 
 The following sections show how to use the Shell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
 
-#### Manage the Full Access permission for mailboxes
+### Manage the Full Access permission for mailboxes
 
 The following examples show how to use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage Full Access permissions.
 
@@ -176,7 +174,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Remove-MailboxPermission](http://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx)
 
-#### Manage the Send As permission for mailboxes
+### Manage the Send As permission for mailboxes
 
 The following examples show how to manage Send As permissions in Exchange Server 2013. In Exchange 2013, you use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. The _Identity_ parameter specifies the name of the mailbox on which the Send As permission should be added or removed and the _User_ parameter specifies the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission.
 
@@ -201,7 +199,7 @@ For detailed syntax and parameter information, see:
 
 - [Remove-ADPermission](http://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
 
-#### Manage the Send on Behalf permission for mailboxes
+### Manage the Send on Behalf permission for mailboxes
 
 The following examples show how to use the **Set-Mailbox** cmdlet to manage Send on Behalf permissions.
 
@@ -219,7 +217,7 @@ Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@c
 
 For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully assigned permissions to a mailbox or a shared mailbox, do one of the following:
 
@@ -259,13 +257,13 @@ Or
   Get-Mailbox -Identity <mailbox> | Format-List GrantSendOnBehalfTo
   ```
 
-### Assign permissions to a group
+## Assign permissions to a group
 
 As previously stated, you can assign the Send As and Send on Behalf permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages as the group or on behalf of the group.
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
-#### Use the EAC to assign permissions to groups
+### Use the EAC to assign permissions to groups
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
@@ -279,11 +277,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 5. Click **Save** to save your changes.
 
-#### Use the Shell to assign permissions to groups
+### Use the Shell to assign permissions to groups
 
 The following sections show how to use the Shell to manage Send As and Send on Behalf permissions for groups.
 
-#### Manage the Send As permission for groups
+### Manage the Send As permission for groups
 
 The following examples show how to manage Send As permissions for groups in Exchange Server 2013. In Exchange 2013, you use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. The _Identity_ parameter specifies the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter specifies the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission.
 
@@ -308,7 +306,7 @@ For detailed syntax and parameter information, see:
 
 - [Remove-ADPermission](http://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
 
-#### Manage the Send on Behalf permission
+### Manage the Send on Behalf permission
 
 The following examples show how to use the **Set-DistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to manage Send on Behalf permissions for groups.
 
@@ -336,7 +334,7 @@ For detailed syntax and parameter information, see:
 
 - [Set-DynamicDistributionGroup](http://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully assigned permissions to a group, do one of the following:
 

@@ -35,9 +35,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable business hours key mappings on a UM auto attendant
+## Use the EAC to enable business hours key mappings on a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -77,7 +75,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 6. On the **UM Auto Attendant** page, click **Save** to save your changes.
 
-### Use the Shell to enable business hours key mappings on a UM auto attendant
+## Use the Shell to enable business hours key mappings on a UM auto attendant
 
 This example configures a UM auto attendant named `MyAutoAttendant` and enables business hours key mappings so that when callers press 1, they're forwarded to another UM auto attendant named `SalesAutoAttendant`. When they press 2, they're forwarded to extension number 12345 for Support, and when they press 3, they're sent to another auto attendant that plays an audio file.
 

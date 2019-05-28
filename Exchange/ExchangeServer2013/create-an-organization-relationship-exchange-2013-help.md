@@ -35,8 +35,6 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Use the EAC to create an organization relationship
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
@@ -120,4 +118,4 @@ Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

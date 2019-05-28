@@ -29,9 +29,7 @@ After you create an In-Place eDiscovery search, you can modify it to change the 
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
-### Use the EAC to modify an In-Place eDiscovery search
+## Use the EAC to modify an In-Place eDiscovery search
 
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
@@ -63,7 +61,7 @@ After you create an In-Place eDiscovery search, you can modify it to change the 
 
 4. Click **Save**.
 
-### Use the Shell to modify an In-Place eDiscovery search
+## Use the Shell to modify an In-Place eDiscovery search
 
 This example modifies the In-Place eDiscovery search Search-Project Contoso to search mailboxes belonging to members of the DG-ProjectManagers distribution group.
 

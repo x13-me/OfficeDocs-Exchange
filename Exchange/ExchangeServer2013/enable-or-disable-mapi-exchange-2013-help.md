@@ -38,9 +38,7 @@ For additional management tasks related to managing email client access to a mai
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable or disable MAPI
+## Use the EAC to enable or disable MAPI
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -58,7 +56,7 @@ For additional management tasks related to managing email client access to a mai
 
 5.  Click **Save** to save your change.
 
-### Use the Exchange Management Shell to enable or disable MAPI
+## Use the Exchange Management Shell to enable or disable MAPI
 
 This example disables MAPI for the mailbox of Ken Sanchez.
 

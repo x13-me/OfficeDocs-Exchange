@@ -22,16 +22,14 @@ For additional management tasks related to DLP, see [Manage DLP policies](manage
 
 - Estimated time to complete: 15 minutes
 
+- The EAC doesn't provide a way to export DLP policies or templates to an external file. To use the Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-
-## What do you want to do?
-
-The EAC doesn't provide a way to export DLP policies or templates to an external file. Use the Exchange Management Shell to perform this task.
 
 ### Use the Exchange Management Shell to export the DLP sensitive information types
 

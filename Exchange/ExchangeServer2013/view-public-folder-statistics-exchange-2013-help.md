@@ -32,9 +32,7 @@ This topic explains how to retrieve statistics about a public folder, such as th
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to retrieve public folder statistics
+## Use the Shell to retrieve public folder statistics
 
 This example returns the statistics for the public folder Marketing with a piped command to format the list.
 
@@ -47,7 +45,7 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 
 For detailed syntax and parameter information, see [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
 
-### Use the Shell to view statistics for public folder items
+## Use the Shell to view statistics for public folder items
 
 You can view the following information about items within a public folder:
 
@@ -81,7 +79,7 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-Li
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
 
-### Use the Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
+## Use the Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
 This example exports the output of the cmdlet to the PFItemStats.csv file that includes the following information for all items within the public folder \Marketing\Reports:
 

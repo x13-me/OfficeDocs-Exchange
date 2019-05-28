@@ -34,11 +34,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Create a dynamic distribution group
 
-### Create a dynamic distribution group
-
-#### Use the EAC to create a dynamic distribution group
+### Use the EAC to create a dynamic distribution group
 
 1. In the EAC, navigate to **Recipients** \> **Groups** \> **New** \> **Dynamic distribution group**.
 
@@ -101,7 +99,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!NOTE]
 > If you want to specify rules for attributes other than the ones available in the EAC, you must use the Shell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Shell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using the Shell to create a dynamic distribution group.
 
-#### Use the Shell to create a dynamic distribution group
+### Use the Shell to create a dynamic distribution group
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
 
@@ -124,7 +122,7 @@ New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter {(Reci
 
 For detailed syntax and parameter information, see [New-DynamicDistributionGroup](http://technet.microsoft.com/library/e9920bd1-06c1-4f75-992f-dd7fc98a5c2b.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a dynamic distribution group, do one of the following:
 
@@ -136,9 +134,9 @@ To verify that you've successfully created a dynamic distribution group, do one 
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
 
-### Change dynamic distribution group properties
+## Change dynamic distribution group properties
 
-#### Use the EAC to change dynamic distribution group properties
+### Use the EAC to change dynamic distribution group properties
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
@@ -146,7 +144,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use this section to view or change basic information about the group.
 
@@ -160,17 +158,17 @@ Use this section to view or change basic information about the group.
 
 - **Organizational unit** This read-only box displays the organizational unit (OU) that contains the dynamic distribution group. You have to use Active Directory Users and Computers to move the group to a different OU.
 
-#### Ownership
+### Ownership
 
 Use this section to assign a group owner. A dynamic distribution group can have only one owner. The group owner appears on the **Managed by** tab of the object in Active Directory Users and Computers.
 
 You can add owners by clicking **Browse** and selecting the owner from the list. To remove the owner, click **Clear** and then click **Save**.![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-#### Membership
+### Membership
 
 Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see the [Use the EAC to create a dynamic distribution group](#use-the-eac-to-create-a-dynamic-distribution-group) section in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
 
-#### Delivery management
+### Delivery management
 
 Use this section to manage who can send email to this group.
 
@@ -185,7 +183,7 @@ Use this section to manage who can send email to this group.
     > [!IMPORTANT]
     > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-#### Message approval
+### Message approval
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -203,7 +201,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Don't notify anyone when a message isn't approved** When you select this option, notifications aren't sent to message senders whose messages aren't approved by the group moderators.
 
-#### Email options
+### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -228,14 +226,14 @@ Use this section to view or change the email addresses associated with the group
 
 - **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
-#### MailTip
+### MailTip
 
 Use this section to add a MailTip to alert users of potential issues before they send a message to this group. A MailTip is text that's displayed in the InfoBar when this group is added to the To, Cc, or Bcc lines of a new email message. For example, you could add a MailTip to large groups to warn potential senders that their message will be sent to lots of people.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Group delegation
+### Group delegation
 
 Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
@@ -245,7 +243,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
-#### Use the Shell to change dynamic distribution group properties
+### Use the Shell to change dynamic distribution group properties
 
 Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
 
@@ -275,7 +273,7 @@ This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, t
 Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a dynamic distribution group, do the following:
 

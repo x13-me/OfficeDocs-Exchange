@@ -50,9 +50,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to view or configure a UM-enabled user's properties
+## Use the EAC to view or configure a UM-enabled user's properties
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -78,7 +76,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 6. If you make any changes, click **Save**.
 
-### Use the Shell to configure features for a UM-enabled user
+## Use the Shell to configure features for a UM-enabled user
 
 This example disables Play on Phone and missed call notifications, but enables text message (SMS) notifications.
 
@@ -107,7 +105,7 @@ This example prevents a user from creating call answering rules, receiving incom
 Set-UMMailbox -Identity tony@contoso.com -AutomaticSpeechRecognitionEnabled $true -CallAnsweringRulesEnabled $false -FaxEnabled $false -SubscriberAccessEnabled $false
 ```
 
-### Use the Shell to view a UM-enabled user's properties
+## Use the Shell to view a UM-enabled user's properties
 
 This example displays a list of all the UM-enabled mailboxes in the forest in a formatted list.
 

@@ -33,9 +33,7 @@ Your users carry sensitive corporate information in their pockets every day. If 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to wipe a user's phone
+## Use the EAC to wipe a user's phone
 
 You can use the EAC to wipe a user's phone or cancel a remote wipe that has not yet completed.
 
@@ -47,7 +45,7 @@ You can use the EAC to wipe a user's phone or cancel a remote wipe that has not 
 
 4. Select **Save**.
 
-### Use the Shell to wipe a user's phone
+## Use the Shell to wipe a user's phone
 
 You can use the **Clear-MobileDevice** cmdlet in the Shell to wipe a user's phone.
 
@@ -58,7 +56,7 @@ Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@con
 
 ```
 
-### Use Outlook Web App to wipe a user's phone
+## Use Outlook Web App to wipe a user's phone
 
 Your users can wipe their own phone using Outlook Web App.
 

@@ -29,9 +29,7 @@ However, if you use the Exchange Management Shell to create or rename a distribu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to override the group naming policy when you create a new group
+## Use the Shell to override the group naming policy when you create a new group
 
 To override the group naming policy, run the following command.
 
@@ -47,7 +45,7 @@ New-DistributionGroup -Name "All Administrators" -IgnoreNamingPolicy
 
 When Microsoft Exchange creates this group, it uses All Administrators for both the _Name_ and _DisplayName_ parameters.
 
-### Use the Shell to override the group naming policy when you rename a group
+## Use the Shell to override the group naming policy when you rename a group
 
 To override the group naming policy when you rename an existing group with the Shell, run the following command.
 

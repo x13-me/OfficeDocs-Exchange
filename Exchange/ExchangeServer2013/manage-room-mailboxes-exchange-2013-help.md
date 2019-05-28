@@ -20,16 +20,21 @@ A room mailbox is a resource mailbox that's assigned to a physical location, suc
 
 For info about another type of resource mailbox, check out [Manage equipment mailboxes](manage-equipment-mailboxes-exchange-2013-help.md).
 
-## What do you want to do?
-
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
-
 > [!IMPORTANT]
 > If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
 
-### Create a room mailbox
+## What do you need to know before you begin?
 
-#### Use the Exchange Admin Center to create a room mailbox
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+
+> [!TIP]
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+
+## Create a room mailbox
+
+### Use the Exchange Admin Center to create a room mailbox
 
 1. In the Exchange Admin Center, navigate to **Recipients** \> **Resources**.
 
@@ -50,7 +55,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 
 Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange Admin Center section below to change room mailbox properties
 
-#### Use Exchange PowerShell to create a room mailbox
+### Use Exchange PowerShell to create a room mailbox
 
 This example creates a room mailbox with the following configuration:
 
@@ -68,7 +73,7 @@ New-Mailbox -Database "Mailbox Database 1" -Name ConfRoom1 - -DisplayName "Confe
 
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 You can make sure you've created the room mailbox correctly a couple of different ways:
 
@@ -80,11 +85,11 @@ You can make sure you've created the room mailbox correctly a couple of differen
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
-### Create a room list
+## Create a room list
 
 If you're planning to have more than a hundred rooms, or already have more than a hundred rooms created, use a room list to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using the Exchange Management Shell.
 
-#### Use Exchange PowerShell to create a room list
+### Use Exchange PowerShell to create a room list
 
 This example creates a room list for building 32.
 
@@ -92,7 +97,7 @@ This example creates a room list for building 32.
 New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "contoso.com/rooms" -RoomList
 ```
 
-#### Use Exchange PowerShell to add a room to a room list
+### Use Exchange PowerShell to add a room to a room list
 
 This example adds confroom3223 to the building 32 room list.
 
@@ -100,7 +105,7 @@ This example adds confroom3223 to the building 32 room list.
 Add-DistributionGroupMember -Identity "Building 32 Conference Rooms" -Member confroom3223@contoso.com
 ```
 
-#### Use Exchange PowerShell to convert a distribution group to a room list
+### Use Exchange PowerShell to convert a distribution group to a room list
 
 You may already have created distribution groups in the past that contain your conference rooms. You don't need to recreate them; we can convert them quickly into a room list.
 
@@ -110,11 +115,11 @@ This example converts the distribution group, building 34 conference rooms, to a
 Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 ```
 
-### Change room mailbox properties
+## Change room mailbox properties
 
 After you create a room mailbox, you can make changes and set additional properties by using the Exchange Admin Center or Exchange PowerShell.
 
-#### Use the Exchange Admin Center to change room mailbox properties
+### Use the Exchange Admin Center to change room mailbox properties
 
 1. In the Exchange Admin Center, navigate to **Recipients** \> **Resources**.
 
@@ -122,7 +127,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 3. On the room mailbox properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the resource.
 
@@ -152,7 +157,7 @@ Click **More options** to view or change these additional properties:
 
 - **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
 
-#### Delegates
+### Delegates
 
 Use this section to view or change how the room mailbox handles reservation requests and to define who can accept or decline booking requests if it isn't done automatically.
 
@@ -164,7 +169,7 @@ Use this section to view or change how the room mailbox handles reservation requ
 
 - **Delegates**: If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
 
-#### Booking Options
+### Booking Options
 
 Use the **Booking Options** section to view or change the settings for the booking policy that defines when the room can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
 
@@ -186,14 +191,14 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the contact information for the room. The information on this page is displayed in the address book.
 
 > [!TIP]
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-#### Email Address
+### Email Address
 
 Use the **Email Address** section to view or change the email addresses associated with the room mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -210,14 +215,14 @@ Use the **Email Address** section to view or change the email addresses associat
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the room mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Use Exchange PowerShell to change room mailbox properties
+### Use Exchange PowerShell to change room mailbox properties
 
 Use the following sets of cmdlets to view and change room mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for room mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options.
 
@@ -261,7 +266,7 @@ This example uses the **Get-User** cmdlet to find all room mailboxes that corres
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox') -and (DisplayName -like 'Private*')} | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Robin Wood"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a room mailbox, do the following:
 
@@ -272,8 +277,3 @@ To verify that you've successfully changed properties for a room mailbox, do the
   ```powershell
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```
-
-For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

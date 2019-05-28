@@ -29,11 +29,9 @@ Mail contacts are mail-enabled directory service objects that contain informatio
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Create a mail contact
 
-### Create a mail contact
-
-#### Use the EAC to create a mail contact
+### Use the EAC to create a mail contact
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -61,7 +59,7 @@ Mail contacts are mail-enabled directory service objects that contain informatio
 
 4. When you've finished, click **Save**.
 
-#### Use the Shell to create a mail contact
+### Use the Shell to create a mail contact
 
 This example creates a mail contact for Debra Garcia.
 
@@ -73,7 +71,7 @@ New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.
 Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mail contact, do one of the following:
 
@@ -85,9 +83,9 @@ To verify that you've successfully created a mail contact, do one of the followi
   Get-MailContact <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
-### Change mail contact properties
+## Change mail contact properties
 
-#### Use the EAC to change mail contact properties
+### Use the EAC to change mail contact properties
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -95,7 +93,7 @@ To verify that you've successfully created a mail contact, do one of the followi
 
 3. On the mail contact properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the mail contact.
 
@@ -111,11 +109,11 @@ Use the **General** section to view or change basic information about the mail c
 
 - Click **More options**: to display the OU that contains the mail contact account. You have to use Active Directory Users and Computers to move the contact to a different OU.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the recipient's contact information, such as mailing address and telephone numbers. This information is displayed in the address book.
 
-#### Organization
+### Organization
 
 Use the **Organization** section to record detailed information about the mail contact's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
@@ -129,18 +127,18 @@ Use the **Organization** section to record detailed information about the mail c
 
 - **Direct reports**: You can't modify this box. A direct report is a recipient who reports to a specific manager. If you've specified a manager for the recipient, that recipient appears as a direct report in the details of the manager's mailbox. For example, Toby manages Ann and Spencer, who are mail contacts, so Toby is specified in the **Manager** box in the organization properties for Ann and Spencer, and Ann and Spencer appear in the **Direct reports** box in the properties of Toby's mailbox.
 
-#### Email Options
+### Email Options
 
 Use the **Email Options** section to add or remove proxy addresses for the mail contact or edit existing proxy addresses. The mail contact's primary SMTP address is also displayed in this section, but you can't change it. To change it, you have to change the contact's external email address in the **General** section.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Use the Shell to change mail contact properties
+### Use the Shell to change mail contact properties
 
 Properties for a mail contact are stored in both Active Directory and Exchange. In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists.
 
@@ -174,7 +172,7 @@ This example sets the CustomAttribute15 property to a value of TemporaryEmployee
 Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -CustomAttribute15 TemporaryEmployee
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a mail contact, do the following:
 
@@ -192,7 +190,7 @@ To verify that you've successfully changed properties for a mail contact, do the
   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
   ```
 
-### Bulk edit mail contacts
+## Bulk edit mail contacts
 
 You can use the EAC to change selected properties for multiple mail contacts. When you select two or more mail contacts from the contacts list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected recipients.
 
@@ -202,7 +200,7 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 - **Organization** Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to.
 
-#### Use the EAC to bulk edit mail contacts
+### Use the EAC to bulk edit mail contacts
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -215,7 +213,7 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 4. Make the changes on the properties page and then save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully bulk edited mail contacts, do one of the following:
 

@@ -29,11 +29,9 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Create an equipment mailbox
 
-### Create an equipment mailbox
-
-#### Use the EAC to create an equipment mailbox
+### Use the EAC to create an equipment mailbox
 
 1. In the EAC, navigate to **Recipients** \> **Resources**.
 
@@ -52,7 +50,7 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 
 Once you've created your equipment mailbox, you can edit your equipment mailbox to update info about booking options, MailTips and delegates. Check out the Change equipment mailbox properties section below to change room mailbox properties
 
-#### Use the Shell to create an equipment mailbox
+### Use the Shell to create an equipment mailbox
 
 This example creates an equipment mailbox with the following configuration:
 
@@ -72,7 +70,7 @@ New-Mailbox -Database "Mailbox Database 1" -Name MotorVehicle2 -OrganizationalUn
 
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a user mailbox, do one of the following:
 
@@ -84,11 +82,11 @@ To verify that you've successfully created a user mailbox, do one of the followi
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
-### Change equipment mailbox properties
+## Change equipment mailbox properties
 
 After you create an equipment mailbox, you can make changes and set additional properties by using the EAC or the Shell.
 
-#### Use the EAC to change equipment mailbox properties
+### Use the EAC to change equipment mailbox properties
 
 1. In the EAC, navigate to **Recipients** \> **Resources**.
 
@@ -96,7 +94,7 @@ After you create an equipment mailbox, you can make changes and set additional p
 
 3. On the equipment mailbox properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the resource.
 
@@ -126,7 +124,7 @@ Click **More options** to view or change these additional properties:
 
 - **Custom attributes**: This section displays the custom attributes defined for the equipment mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
 
-#### Delegates
+### Delegates
 
 Use this section to view or change how the equipment mailbox handles reservation requests and to define who can accept or decline booking requests if it isn't done automatically.
 
@@ -138,7 +136,7 @@ Use this section to view or change how the equipment mailbox handles reservation
 
 - **Delegates**: If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
 
-#### Booking Options
+### Booking Options
 
 Use the **Booking Options** section to view or change the settings for the booking policy that defines when the resource can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
 
@@ -160,14 +158,14 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 There is also a box on this page that you can use to write a message that will be sent to users who send meeting requests to reserve the resource.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the contact information for the resource. The information on this page is displayed in the address book.
 
 > [!TIP]
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-#### Email Address
+### Email Address
 
 Use the **Email Address** section to view or change the email addresses associated with the equipment mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -187,14 +185,14 @@ Use the **Email Address** section to view or change the email addresses associat
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the equipment mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Use the Shell to change equipment mailbox properties
+### Use the Shell to change equipment mailbox properties
 
 Use the following sets of cmdlets to view and change equipment mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for equipment mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options.
 
@@ -238,7 +236,7 @@ This example uses the **Get-User** cmdlet to find all equipment mailboxes in the
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox') -and (Department -eq 'Audio Visual')} | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Ann Beebe"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for an equipment mailbox, do the following:
 

@@ -40,9 +40,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable a customized business hours menu prompt
+## Use the EAC to enable a customized business hours menu prompt
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -55,7 +53,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 4. After you've located the file, click **Open**, and then click **Save**.
 
-### Use the Shell to enable a customized business hours menu prompt
+## Use the Shell to enable a customized business hours menu prompt
 
 This example enables a business hours main menu prompt and uses a customized prompt named `businesshoursprompts.wav` on the UM auto attendant `MyUMAutoAttendant`.
 

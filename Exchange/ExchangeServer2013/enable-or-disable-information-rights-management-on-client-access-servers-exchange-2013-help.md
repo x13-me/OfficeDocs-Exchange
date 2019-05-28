@@ -53,8 +53,6 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - You can't use the Exchange Administration Center (EAC) to enable or disable IRM on Client Access servers. You must use the Shell.
 
-## What do you want to do?
-
 ## Use the Shell to enable IRM on Client Access servers
 
 This example enables IRM on a Client Access server for an Exchange organization.

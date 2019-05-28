@@ -31,9 +31,7 @@ For additional management tasks related to address lists, see [Managing Address 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to create a GAL using conditional filter properties
+## Use the Shell to create a GAL using conditional filter properties
 
 This example creates a GAL named GAL_Contoso that includes recipients who are mailbox users and have their company listed as Contoso.
 
@@ -46,7 +44,7 @@ New-GlobalAddressList -Name "GAL_Contoso" -IncludedRecipients MailboxUsers -Cond
 
 For detailed syntax and parameter information, see [New-GlobalAddressList](http://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
 
-### Use the Shell create a GAL using a recipient filter
+## Use the Shell create a GAL using a recipient filter
 
 This example creates a GAL named GAL_AgencyA that includes recipients for which the _CustomAttribute15_ parameter has a value of `AgencyA`.
 

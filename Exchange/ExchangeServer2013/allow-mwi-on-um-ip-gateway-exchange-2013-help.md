@@ -38,9 +38,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to allow Message Waiting Indicator
+## Use the EAC to allow Message Waiting Indicator
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -48,7 +46,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 3. Click **Save**.
 
-### Use the Shell to allow Message Waiting Indicator
+## Use the Shell to allow Message Waiting Indicator
 
 This example allows the message waiting indicator to appear for users who are associated with the UM IP gateway named `MyUMIPGateway` with an IP address of 10.10.10.1.
 

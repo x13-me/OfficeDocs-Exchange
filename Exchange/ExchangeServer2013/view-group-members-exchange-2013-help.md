@@ -27,9 +27,7 @@ Dynamic distribution groups are distribution groups whose membership is based on
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to preview the list of members of a dynamic distribution group
+## Use the Shell to preview the list of members of a dynamic distribution group
 <a name="Shell"> </a>
 
 This example returns the list of members for the dynamic distribution group named Full Time Employees. The first command stores the dynamic distribution group object in the variable `$FTE`. The second command uses the **Get-Recipient** cmdlet to list the recipients that match the criteria defined for the dynamic distribution group.

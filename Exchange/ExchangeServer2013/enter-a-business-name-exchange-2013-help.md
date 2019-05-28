@@ -33,9 +33,7 @@ For additional tasks related to UM auto attendants, see [UM auto attendant proce
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure a business name
+## Use the EAC to configure a business name
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -45,7 +43,7 @@ For additional tasks related to UM auto attendants, see [UM auto attendant proce
 
 4. Click **Save**.
 
-### Use the Shell to configure a business name
+## Use the Shell to configure a business name
 
 This example sets the business name on a UM auto attendant named `MyUMAutoAttendant`.
 

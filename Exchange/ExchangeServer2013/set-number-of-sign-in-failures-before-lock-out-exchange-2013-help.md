@@ -35,9 +35,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the number of sign-in failures before a voice mail user is locked out
+## Use the EAC to configure the number of sign-in failures before a voice mail user is locked out
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -49,7 +47,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 5. Click **Save**.
 
-### Use the Shell to configure the number of sign-in failures before a voice mail user is locked out
+## Use the Shell to configure the number of sign-in failures before a voice mail user is locked out
 
 This example sets the maximum number sign-in attempts to 10 for UM-enabled users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 

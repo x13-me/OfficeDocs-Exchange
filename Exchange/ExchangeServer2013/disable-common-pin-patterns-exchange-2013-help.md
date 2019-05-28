@@ -44,9 +44,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to disable common PIN patterns
+## Use the EAC to disable common PIN patterns
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -56,7 +54,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 4. Click **Save**.
 
-### Use the Shell to disable common PIN patterns
+## Use the Shell to disable common PIN patterns
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from using PINs that contain common patterns.
 

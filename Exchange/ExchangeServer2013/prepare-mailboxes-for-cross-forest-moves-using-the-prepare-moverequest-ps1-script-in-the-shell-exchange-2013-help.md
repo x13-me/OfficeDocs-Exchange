@@ -39,7 +39,7 @@ Looking for other management tasks related to remote move requests? Check out [M
       - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Prepare-MoveRequest.ps1 script to prepare mailboxes for cross-forest moves
 

@@ -33,9 +33,7 @@ For additional management tasks related to public folders in Exchange 2013, see 
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
-### Use the EAC to create a public folder mailbox
+## Use the EAC to create a public folder mailbox
 
 1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
@@ -43,7 +41,7 @@ For additional management tasks related to public folders in Exchange 2013, see 
 
 3. Click **Save**.
 
-### Use the Shell to create a public folder mailbox
+## Use the Shell to create a public folder mailbox
 
 This example creates the primary public folder mailbox.
 

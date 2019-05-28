@@ -45,9 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to remove the primary or secondary extension number
+## Use the EAC to remove the primary or secondary extension number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -57,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 4. Click **Save**.
 
-### Use the EAC to remove a secondary extension number
+## Use the EAC to remove a secondary extension number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -69,7 +67,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 5. Click **Save**.
 
-### Use the Shell to remove an extension number
+## Use the Shell to remove an extension number
 
 This example removes the extension number 12345 from the mailbox of Tony Smith, a UM-enabled user.
 

@@ -51,9 +51,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to set PIN policies for Outlook Voice Access users
+## Use the EAC to set PIN policies for Outlook Voice Access users
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, click the UM dial plan you want to edit, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -65,7 +63,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 5. On the **PIN Policies** page, configure the PIN settings for the Outlook Voice Access users associated with this UM mailbox policy, and then click **Save**.
 
-### Use the Shell to set PIN policies for Outlook Voice Access users
+## Use the Shell to set PIN policies for Outlook Voice Access users
 
 This example sets the PIN settings for users associated with the UM mailbox policy `MyUMMailboxPolicy`.
 

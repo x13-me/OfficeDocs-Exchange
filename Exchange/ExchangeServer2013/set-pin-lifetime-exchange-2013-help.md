@@ -38,9 +38,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the PIN lifetime
+## Use the EAC to configure the PIN lifetime
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -52,7 +50,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 5. Click **Save**.
 
-### Use the Shell to configure the PIN lifetime
+## Use the Shell to configure the PIN lifetime
 
 This example sets the number of days that a PIN can be used for Outlook Voice Access users who are associated with a UM mailbox policy named `MyUMMailboxPolicy` to 30.
 
