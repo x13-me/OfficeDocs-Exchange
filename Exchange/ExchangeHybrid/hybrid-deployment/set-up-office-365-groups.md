@@ -42,7 +42,7 @@ Before you start, make sure that you've done the following:
 
 - Configured single sign-on using Azure Active Directory Connect (Azure AD Connect). This is needed to allow users to click on the **View group files** or cloud attachment links in group email messages.
 
-  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Integrating your on-premises identities with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkID=723513).
+  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Choose a solution for integrating on-premises Active Directory with Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/).
 
 ## Enable Group writeback in Azure AD Connect
 
