@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Custom attributes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 includes 15 extension attributes. You can use these attributes to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute. These custom attributes are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are *CustomAttribute1* through *CustomAttribute15*. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.

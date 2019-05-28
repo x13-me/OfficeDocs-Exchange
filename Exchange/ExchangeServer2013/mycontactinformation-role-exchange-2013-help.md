@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyContactInformation role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyContactInformation` management role enables individual users to modify their contact information, including address and phone numbers.

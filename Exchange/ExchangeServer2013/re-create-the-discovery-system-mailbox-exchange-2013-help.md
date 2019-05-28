@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Re-create the Discovery system mailbox
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In-Place eDiscovery uses a system mailbox to store In-Place eDiscovery search metadata. This Discovery system mailbox has the display name **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**. Because system mailboxes aren't visible in the Exchange Administration Center (EAC) or in Exchange address lists, they are rarely deleted inadvertently.
@@ -50,4 +48,4 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 To verify that you have successfully re-created the Discovery system mailbox, use the **Get-Mailbox** cmdlet with the *Arbitration* switch to retrieve system mailboxes. View the results of the command to verify that the system mailbox `SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}` has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.

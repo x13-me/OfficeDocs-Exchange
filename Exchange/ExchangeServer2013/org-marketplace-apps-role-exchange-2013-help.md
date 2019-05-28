@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Org Marketplace Apps role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Org Marketplace Apps management role enables administrators to view and modify their organization's apps, and to add apps from the Microsoft Office Store.

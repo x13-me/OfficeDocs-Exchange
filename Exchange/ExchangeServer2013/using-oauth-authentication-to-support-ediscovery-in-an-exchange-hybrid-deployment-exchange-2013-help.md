@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Using OAuth authentication to support eDiscovery in an Exchange hybrid deployment
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 To successfully perform cross-premises eDiscovery searches in an Exchange 2013 hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication supports the following eDiscovery scenarios in an Exchange hybrid deployment:

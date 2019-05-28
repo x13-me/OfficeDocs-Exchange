@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable or Disable Information Rights Management on Client Access Servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Enabling Information Rights Management (IRM) on Client Access servers enables the following features:

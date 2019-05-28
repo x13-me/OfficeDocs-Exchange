@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable the MRS Proxy endpoint for remote moves
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Exchange Online. In Exchange 2013, MRS Proxy is included in the Mailbox server role (also called the *Mailbox server*). During cross-forest and remote move migrations, a Client Access server acts as a proxy for incoming move requests for the Mailbox server. The ability of a Client Access server to accept these requests is disabled by default. To allow the Client Access server to accept incoming move requests, you have to enable the MRS Proxy endpoint.
@@ -42,7 +40,7 @@ The Client Access server on which to enable the MRS Proxy endpoint depends on th
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

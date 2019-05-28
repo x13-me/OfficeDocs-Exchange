@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Testing and troubleshooting with the Test-UMConnectivity cmdlet
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 After you install the Client Access and Mailbox servers and configure Unified Messaging, you can use multiple diagnostic tests and a software-based telephone application to test telephony connectivity and the operation of the Unified Messaging services.

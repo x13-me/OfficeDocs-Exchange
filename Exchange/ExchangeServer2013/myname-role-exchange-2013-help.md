@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyName role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyName` management role enables individual users to view and modify their full name and their notes field. This is a custom role created from the [MyProfileInformation role](myprofileinformation-role-exchange-2013-help.md) parent role.

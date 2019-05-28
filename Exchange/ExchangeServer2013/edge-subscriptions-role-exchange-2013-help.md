@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Subscriptions role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Edge Subscriptions` management role enables administrators to manage edge synchronization and subscription configuration between Microsoft Exchange Server 2010 Edge Transport servers and Microsoft Exchange Server 2013 Mailbox servers in an organization.

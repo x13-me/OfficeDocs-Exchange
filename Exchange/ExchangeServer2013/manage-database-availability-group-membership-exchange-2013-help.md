@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage database availability group membership
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you add a server to a database availability group (DAG), it works with the other servers in the DAG to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, it's no longer automatically protected from failures.
@@ -39,7 +37,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

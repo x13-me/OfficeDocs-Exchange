@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # View DLP policy detection reports
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Data loss prevention (DLP) policy detection management broadly defines the activities that an organization performs in order to identify, investigate, and resolve DLP policy violations. In order to manage incidents, you need access to information that identifies what was detected by your DLP policies. This detection information is integrated with existing Microsoft Exchange Server 2013 data and log formats so that you can leverage an existing rich system of data to manage your mail flow incidents.

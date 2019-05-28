@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage cmdlet extension agents
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic shows you how to enable, disable, view, and change the priority of cmdlet extension agents in Microsoft Exchange Server 2013. For more information about cmdlet extension agents in Exchange 2013, see [Cmdlet extension agents](cmdlet-extension-agents-exchange-2013-help.md).
@@ -33,7 +31,7 @@ This topic shows you how to enable, disable, view, and change the priority of cm
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

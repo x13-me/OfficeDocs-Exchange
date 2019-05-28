@@ -177,7 +177,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add** Click ** Add ** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add** Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP** This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -196,7 +196,7 @@ Use this section to view or change the email addresses associated with the group
 
 - **Remove** To delete an email address associated with the group, select it in the list, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-- **Automatically update email addresses based on the email address policy applied to this recipient ** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. By default, this box is selected.
+- **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. By default, this box is selected.
 
 #### MailTip
 <a name="mailtip"> </a>

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox moves in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you move a mailbox, you're moving it from a *source mailbox database* to a *target mailbox database*. The target mailbox database can be on the same server, on a different server, in a different domain, in a different Active Directory site, or in another forest.

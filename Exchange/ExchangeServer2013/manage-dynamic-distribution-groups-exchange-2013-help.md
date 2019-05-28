@@ -226,7 +226,7 @@ Use this section to view or change the email addresses associated with the group
 
 - **Remove** To delete an email address associated with the group, select it from the list, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-- **Automatically update email addresses based on the email address policy applied to this recipient ** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
+- **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
 #### MailTip
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail Tips role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Mail Tips management role enables administrators to manage mail tips in an organization.

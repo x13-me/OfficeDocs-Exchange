@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Search
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 With increasing mailbox sizes and increasing amounts of data being stored in mailboxes in the form of messages and attachments, it's crucial for users to be able to quickly search and locate the messages they need. [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) helps you reduce or eliminate the use of .pst files by moving old and infrequently accessed items to the archive. This results in more mailbox data being stored by a user, and it makes searching across the user's primary and archive mailboxes an important productivity tool. [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) allows authorized users to search content in mailboxes across on-premises and cloud-based Exchange organizations to comply with electronic discovery (eDiscovery) requests, regulatory audits, or internal investigations. In-Place eDiscovery also uses the content indexes created by Exchange Search.

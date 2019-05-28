@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Connectors role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Exchange Connectors` management role enables administrators to create, modify, view, and remove delivery agent connectors.

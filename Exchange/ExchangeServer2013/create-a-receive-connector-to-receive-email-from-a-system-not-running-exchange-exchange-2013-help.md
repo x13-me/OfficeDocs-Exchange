@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a Receive connector to receive email from a system not running Exchange
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You may have a situation where you want to receive messages from a system not running Exchange. For instance, if you have a network appliance that performs policy checks and then routes messages to your Exchange server. We assume in this case that the appliance uses SMTP. If not, you should use a Foreign connector or a Delivery Agent connector.
@@ -35,7 +33,7 @@ Interested in scenarios where this procedure is used? See the following topics:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the EAC to Create a Receive Connector to Receive Messages from a Messaging Appliance
 

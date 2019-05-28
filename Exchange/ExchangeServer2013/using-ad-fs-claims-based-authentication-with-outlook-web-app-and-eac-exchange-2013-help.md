@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Using AD FS claims-based authentication with Outlook Web App and EAC
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
 
 **Summary**:
@@ -120,7 +118,7 @@ Additional information you might want to know
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Step 1 - Review the certificate requirements for AD FS
 

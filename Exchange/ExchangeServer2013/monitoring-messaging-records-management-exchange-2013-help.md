@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Monitoring messaging records management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [View performance counters for messaging records management](view-performance-counters-for-https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/messaging-records-management)

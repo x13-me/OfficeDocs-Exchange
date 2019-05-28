@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange admin center in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Exchange Admin Center (EAC) is the web-based management console in Microsoft Exchange Server 2013 that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two interfaces used to manage Exchange Server 2010.

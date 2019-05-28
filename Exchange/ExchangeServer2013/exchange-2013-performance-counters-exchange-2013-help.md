@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 Performance Counters
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 ## Exchange 2013 Performance Counters

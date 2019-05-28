@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # File formats indexed by Exchange Search
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013 and Exchange Online, Exchange Search includes filters for indexing most common types of file formats included as message attachments. You can also install filters to index additional file types.

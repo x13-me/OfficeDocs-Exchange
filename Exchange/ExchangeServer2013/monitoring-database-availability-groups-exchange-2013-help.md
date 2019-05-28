@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Monitoring database availability groups
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the details in this topic for monitoring the health and status of mailbox database copies for database availability groups (DAGs), for gathering diagnostic information, and for configuring the low disk space monitoring threshold.

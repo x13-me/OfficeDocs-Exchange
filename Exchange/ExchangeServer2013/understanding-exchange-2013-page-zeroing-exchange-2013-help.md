@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding Exchange 2013 page zeroing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 ## Page Zeroing in Exchange 2013

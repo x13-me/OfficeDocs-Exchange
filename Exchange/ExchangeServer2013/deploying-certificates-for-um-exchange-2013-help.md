@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploying certificates for UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use mutual Transport Layer Security (mutual TLS) to enable Unified Messaging (UM) to encrypt data sent between your Microsoft Exchange 2013 servers and VoIP gateways, IP PBXs, session border controllers (SBCs), and Microsoft Lync Server. Certificates bind the identity of the certificate owner to a pair of electronic keys (public and private) that are used to encrypt and sign information digitally.

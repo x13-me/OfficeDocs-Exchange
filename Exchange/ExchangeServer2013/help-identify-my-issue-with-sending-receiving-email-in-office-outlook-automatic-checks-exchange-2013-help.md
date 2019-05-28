@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Help Identify My Issue with Sending/Receiving Email in Office Outlook (Automatic Checks)
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The check on this page will help identify some of the most common connectivity issues. You can use the automatic check below to validate your connectivity or help determine root cause.

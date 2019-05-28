@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail Enabled Public Folders role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Mail Enabled Public Folders` management role enables administrators to configure whether individual public folders are mail-enabled or mail-disabled in an organization.

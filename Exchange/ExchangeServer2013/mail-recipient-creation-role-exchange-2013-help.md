@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail Recipient Creation role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Mail Recipient Creation` management role enables administrators to create mailboxes, mail users, mail contacts, distribution groups, and dynamic distribution groups in an organization. This role can be combined with the `Mail Recipients` role to enable the creation and management of recipients. For more information, see [Mail Recipients role](mail-recipients-role-exchange-2013-help.md).

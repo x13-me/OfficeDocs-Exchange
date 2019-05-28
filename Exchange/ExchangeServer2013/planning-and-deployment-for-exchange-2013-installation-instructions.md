@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Planning and deployment
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Do you need guidance doing an Exchange install? This article provides guidance for planning a deployment of Microsoft Exchange Server 2013 as well as links to articles that you'll need during deployment.

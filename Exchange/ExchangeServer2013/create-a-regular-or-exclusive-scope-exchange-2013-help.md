@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a regular or exclusive scope
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Management role scopes determine what objects are made available to a user so that the objects can be changed using the cmdlets and parameters assigned to them. By adding a management scope, you can configure management role assignments so users can administer specific servers, databases, recipients, and other objects in your organization while being restricted from changing other objects.
@@ -44,7 +42,7 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## How do you do this?
 

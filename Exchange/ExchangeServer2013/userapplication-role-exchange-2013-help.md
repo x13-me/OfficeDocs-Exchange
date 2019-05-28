@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # UserApplication role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `UserApplication` management role enables partner applications to act on behalf of end users.

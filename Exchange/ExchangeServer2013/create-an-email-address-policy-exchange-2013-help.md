@@ -16,8 +16,6 @@ f1_keywords:
 
 # Create an Email Address Policy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 For a recipient to receive or send email messages, the recipient must have an email address. Email address policies generate the primary and secondary email addresses for your recipients (which include users, contacts, and groups) so they can receive and send email.
@@ -111,7 +109,7 @@ For detailed instructions about how to create an email address policy, see the f
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

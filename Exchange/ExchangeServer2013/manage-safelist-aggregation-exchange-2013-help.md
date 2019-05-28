@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage safelist aggregation
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Safelist aggregation* refers to anti-spam functionality that's shared from Microsoft Outlook to Microsoft Exchange Server 2013. This functionality collects data from the Safe Recipients Lists, Safe Senders Lists, Blocked Senders Lists, and contact data that Outlook users configure, and makes this data available to the Exchange anti-spam agents. Safelist aggregation can help reduce the instances of false-positives in anti-spam filtering performed by the Exchange servers where the anti-spam agents are running.
@@ -35,7 +33,7 @@ _**Applies to:** Exchange Server 2013_
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

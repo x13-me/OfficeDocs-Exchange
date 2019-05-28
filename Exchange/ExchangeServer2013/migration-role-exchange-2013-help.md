@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Migration role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Migration` management role enables administrators to migrate mailboxes and mailbox content into or out of a server.

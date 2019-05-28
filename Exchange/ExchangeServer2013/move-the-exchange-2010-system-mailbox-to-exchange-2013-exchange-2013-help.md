@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Move the Exchange 2010 system mailbox to Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Exchange 2010, the Microsoft Exchange system mailbox is an arbitration mailbox used to store organization-wide data such as administrator audit logs, metadata for eDiscovery searches, and Unified Messaging data, such as menus, dial plans, and custom greetings. The Microsoft Exchange system mailbox is named **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**; the display name is **Microsoft Exchange**.
@@ -51,7 +49,7 @@ For more information about upgrading to Exchange 2013, see the following topics:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

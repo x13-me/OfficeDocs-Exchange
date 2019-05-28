@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Client Access server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 For Microsoft Exchange 2013, there have been major architectural changes to the Exchange server roles. Instead of the five server roles that were present in Exchange 2010 and Exchange 2007, in Exchange 2013, the number of server roles has been reduced to three: the Client Access server and the Mailbox server, and with Service Pack 1, the Edge Transport server role.

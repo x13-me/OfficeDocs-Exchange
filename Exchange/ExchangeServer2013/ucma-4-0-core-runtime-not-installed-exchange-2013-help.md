@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # UCMA 4.0, Core Runtime not installed
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2013 Setup can continue.
@@ -29,6 +27,6 @@ Download and install the 64-bit update from the following URL, and then click **
 
 [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.

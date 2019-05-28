@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Identity
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The *Identity* parameter is a special parameter that you can use with most cmdlets. The *Identity* parameter gives you access to the unique identifiers that refer to a specific object in Microsoft Exchange Server 2013. This capability lets you perform actions on a specific Exchange 2013 object.

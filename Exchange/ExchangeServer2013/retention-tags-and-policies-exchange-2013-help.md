@@ -116,9 +116,9 @@ For a list of management tasks related to retention policies, see [Messaging Rec
 
 Exchange Setup creates the retention policy **Default MRM Policy**. In Exchange Server, the policy is applied automatically if you create an archive for the new user and don't specify a retention policy.
 
-You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention action, disable a tag or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the [Managed Folder Assistant](retention-tags-and-policies-exchange-2013-help.md#MFA).
+You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention action, disable a tag or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the [Managed Folder Assistant](#managed-folder-assistant).
 
-For more details, including a list of retention tags linked to the policy, see [Default Retention Policy in Exchange Online and Exchange Server](default-retention-policy-exchange-2013-help.md).
+For more details, including a list of retention tags linked to the policy, see [Default Retention Policy in Exchange 2013](default-retention-policy-exchange-2013-help.md).
 
 ## Managed Folder Assistant
 

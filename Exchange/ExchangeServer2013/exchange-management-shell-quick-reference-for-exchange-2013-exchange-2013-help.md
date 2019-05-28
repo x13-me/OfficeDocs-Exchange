@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Management Shell quick reference for Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic describes the most frequently used cmdlets available in the release to manufacturing (RTM) and later versions of Microsoft Exchange Server 2013 and provides examples of their use.

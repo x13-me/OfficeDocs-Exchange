@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Use transport rules to inspect message attachments
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can inspect email attachments in your organization by setting up transport rules. Exchange offers transport rules that provide the ability to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using transport rules:

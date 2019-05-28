@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remote and Accepted Domains role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Remote and Accepted Domains` management role enables administrators to manage remote and accepted domains in an organization.

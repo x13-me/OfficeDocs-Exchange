@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Datacenter Switchovers
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
 
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.

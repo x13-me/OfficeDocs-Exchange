@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # POP3 and IMAP4 Protocols role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `POP3 and IMAP4 Protocols` management role enables administrators to manage POP3 and IMAP4 configuration, such as authentication and connection settings, on individual servers.

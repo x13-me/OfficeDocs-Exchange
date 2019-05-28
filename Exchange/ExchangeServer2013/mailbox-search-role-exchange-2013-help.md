@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox Search role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Mailbox Search` management role enables administrators to search the content of one or more mailboxes in an organization.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Data Loss Prevention role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Data Loss Prevention management role enables administrators to create and manage data loss prevention (DLP) policies and the rules within them, which can affect mail delivery for an entire organization. Furthermore, this role provides administrators with the ability to configure Policy Tips that appear in email clients and manage DLP policy violation reports. This DLP role also enables access to Microsoft Exchange transport rules. For more information about transport rules in Exchange, see the following topics:

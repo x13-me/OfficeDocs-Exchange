@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create certificates for UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the New Exchange Certificate wizard in the EAC or the Shell to create self-signed certificates or certificate requests for an internal public key infrastructure (PKI) certificate. For Unified Messaging (UM), you can use one of these certificates for both the Microsoft Exchange Unified Messaging service and the Microsoft Exchange Unified Messaging Call Router services. You can use the same certificate for both services, or a different certificate for each service. You can also purchase and import a third-party commercial certificate for UM services. If you're using a self-signed certificate for UM, you may need to include the name of your Client Access and Mailbox servers in the subject alternative name (SAN).
@@ -36,7 +34,7 @@ For additional management tasks related to managing certificates for Unified Mes
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

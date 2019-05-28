@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Use this checklist to help you upgrade Exchange 2010 Unified Messaging (UM) to Exchange 2013 UM. Be sure to refer to this information when you're upgrading your Exchange 2010 organization and your UM deployment to Exchange 2013. For step-by-step instructions for upgrading to Exchange 2013 UM, see [Upgrade Exchange 2010 UM to Exchange 2013 UM](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md).

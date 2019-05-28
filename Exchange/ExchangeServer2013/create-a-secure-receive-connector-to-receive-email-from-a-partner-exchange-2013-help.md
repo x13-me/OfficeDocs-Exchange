@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a secure Receive connector to receive email from a partner
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This procedure shows you how to configure a Receive connector to receive secure email from a partner. Use this procedure when you are required to encrypt communication between you and a trusted partner. The connector is configured to accept connections only from servers that authenticate with Transport Layer Security (TLS).
@@ -35,7 +33,7 @@ Interested in scenarios where this procedure is used? See the following topics:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the EAC to Create a Receive Connector to Receive Secure Messages from a Partner
 

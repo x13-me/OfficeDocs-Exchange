@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Journaling role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Journaling` management role enables administrators to create, modify, enable, disable, view, and remove journal rules in an organization.

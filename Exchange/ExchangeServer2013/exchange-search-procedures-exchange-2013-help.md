@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Search procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Disable or enable Exchange Search](disable-or-enable-exchange-search-exchange-2013-help.md)

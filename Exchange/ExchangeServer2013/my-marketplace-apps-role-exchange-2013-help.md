@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # My Marketplace Apps role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The My Marketplace Apps management role enables individual users to add apps from the Microsoft Office Store.

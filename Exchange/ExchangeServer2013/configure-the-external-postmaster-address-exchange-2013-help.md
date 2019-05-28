@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure the external postmaster address
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The external postmaster address is used as the sender for system-generated messages and notifications sent to message senders that exist outside of your Microsoft Exchange Server 2013 organization. An external sender is any sender that has an email address in a domain that isn't configured as an accepted domain in your organization.
@@ -80,4 +78,4 @@ To verify that you have successfully configured the external postmaster address,
 
 2. From an external email account, send a message to your Exchange organization that will generate a delivery status notification (DSN). For example, you can configure a transport rule to send a non-delivery report (NDR) for a message from that sender that contains specific keywords. Verify the sender's email address in the DSN matches the value you specified.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

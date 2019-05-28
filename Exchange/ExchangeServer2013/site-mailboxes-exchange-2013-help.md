@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Site mailboxes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Email and documents are traditionally kept in two unique and separate data repositories. Most organizations collaborate using both mediums. The challenge is that both email and documents are accessed using different clients. This usually results in a reduction in user productivity and a degraded user experience.

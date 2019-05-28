@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding Role Based Access Control
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Role Based Access Control* (RBAC) is the permissions model used in Microsoft Exchange Server 2013. With RBAC, you don't need to modify and manage access control lists (ACLs), which was done in Exchange Server 2007. ACLs created several challenges in Exchange 2007, such as modifying ACLs without causing unintended consequences, maintaining ACL modifications through upgrades, and troubleshooting problems that occurred due to using ACLs in a nonstandard way.

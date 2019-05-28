@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connection Filtering on Edge Transport Servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Connection filtering is an anti-spam feature in Microsoft Exchange Server 2013 that allows or blocks email based on the message source. Connection filtering is performed by the Connection Filtering agent that's available only on Edge Transport servers. The Connection Filtering agent relies on the IP address of the connecting mail server to determine what action, if any, to take on an inbound message.

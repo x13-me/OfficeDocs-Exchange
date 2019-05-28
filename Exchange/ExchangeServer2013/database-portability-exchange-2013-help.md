@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Database portability
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Database portability is a feature that enables a Microsoft Exchange Server 2013 mailbox database to be moved to or mounted on any other Mailbox server in the same organization running Exchange 2013 that has databases with the same database schema version. Mailbox databases from previous versions of Exchange can't be moved to a Mailbox server running Exchange 2013. By using database portability, reliability is improved by removing several error-prone, manual steps from the recovery processes. In addition, database portability reduces the overall recovery times for various failure scenarios.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Planning for high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.

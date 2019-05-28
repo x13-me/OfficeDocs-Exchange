@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail flow or transport rule procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can begin using transport rules by using the following procedures. To learn about concepts and objectives for transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).

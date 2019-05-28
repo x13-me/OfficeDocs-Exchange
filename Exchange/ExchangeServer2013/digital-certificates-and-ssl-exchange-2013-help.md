@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Digital certificates and SSL
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Secure Sockets Layer (SSL) is a method for securing communications between a client and a server. For Exchange Server 2013, SSL is used to help secure communications between the server and clients. Clients include mobile phones, computers inside an organization's network, and computers outside an organization's network.

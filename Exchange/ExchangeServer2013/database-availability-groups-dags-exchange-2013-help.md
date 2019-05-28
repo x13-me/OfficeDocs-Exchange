@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Database availability groups (DAGs)
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Learn about Exchange DAG in Exchange Server 2013. This article discusses the database availability group (DAG) lifecycle, as well as using a DAG for high availability and for site resilience.

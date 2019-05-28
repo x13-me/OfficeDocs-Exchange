@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport Rules role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Transport Rules` management role enables administrators to manage transport rules in an organization.

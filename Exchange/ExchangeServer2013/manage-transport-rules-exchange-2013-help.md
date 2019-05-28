@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:**: Exchange Server 2013_
 
-You can use transport rules, also known as transport rules, to look for specific conditions on messages that pass through your organization and take action on them. This topic shows you how to [create](#create-a-mail-flow-rule), [copy](#create-a-mail-flow-rule), [adjust the order](#set-the-priority-of-a-mail-flow-rule), [enable or disable](#enable-or-disable-a-mail-flow-rule), [delete](#remove-a-mail-flow-rule), or [import or export](#import-or-export-a-mail-flow-rule-collection rules.
+You can use transport rules, also known as transport rules, to look for specific conditions on messages that pass through your organization and take action on them. This topic shows you how to [create](#create-a-mail-flow-rule), [copy](#create-a-mail-flow-rule), [adjust the order](#set-the-priority-of-a-mail-flow-rule), [enable or disable](#enable-or-disable-a-mail-flow-rule), [delete](#remove-a-mail-flow-rule), or [import or export](#import-or-export-a-mail-flow-rule-collection) rules.
 
 > [!TIP]
 > To make sure your rules work the way you expect, be sure to thoroughly test each rule and interactions between rules.

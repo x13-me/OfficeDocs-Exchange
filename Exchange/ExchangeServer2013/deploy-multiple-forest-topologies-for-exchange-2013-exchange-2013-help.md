@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploy multiple forest topologies for Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic provides an overview of deploying Microsoft Exchange Server 2013 in multiple forest topologies. You'll find information about the following subjects:

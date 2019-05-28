@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure calendar options for IMAP4
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the Shell to configure calendaring access settings for your users who connect to their mailboxes using IMAP4 connections. The settings you specify determine how your IMAP4 users can access their calendar and exchange calendar information (for example, send or respond to a meeting request) with other users.
@@ -31,7 +29,7 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Shell to set the calendar options for IMAP4
 

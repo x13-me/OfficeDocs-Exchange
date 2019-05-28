@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Content conversion tracing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Content conversion tracing captures failures in the MAPI content conversion that's performed by the Mailbox Transport service on inbound and outbound messages on a Microsoft Exchange Server 2013 Mailbox server.

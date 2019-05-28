@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Role Management role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Role Management` management role enables administrators to manage management role groups; role assignment policies and management roles; and role entries, assignments, and scopes in an organization.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Transport server planning
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Edge Transport server role has been re-introduced in Exchange Service Pack 1. Edge Transport provides improved anti-spam protection for the Exchange organization. The Edge Transport server also applies policies to messages in transport between organizations. This server role is deployed in the perimeter network and outside the Active Directory forest. Edge Transport servers don't have direct access to Active Directory for configuration and recipient information in the way Client Access or Mailbox servers do. The Edge Transport server uses the Active Directory Lightweight Directory Service (AD LDS) to store configuration and recipient information locally.

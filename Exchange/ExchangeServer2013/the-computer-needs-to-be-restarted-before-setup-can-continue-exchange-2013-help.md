@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # The computer needs to be restarted before Setup can continue
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the local computer needs to be restarted to complete the installation of other programs or Windows updates.

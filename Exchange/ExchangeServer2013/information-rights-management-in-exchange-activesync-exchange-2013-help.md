@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management in Exchange ActiveSync
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Information workers often use e-mail to exchange sensitive information. To help secure this information, organizations can use Information Rights Management (IRM) to apply persistent protection to messaging content. Because mobile devices are increasingly being used to access e-mail, it's important that your mobile device users be able to create and consume IRM-protected content.

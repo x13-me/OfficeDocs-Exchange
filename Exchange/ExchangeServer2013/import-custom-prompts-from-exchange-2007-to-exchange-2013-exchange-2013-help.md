@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Import custom prompts from Exchange 2007 to Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can import the audio files that contain custom greetings, announcements, menus, and prompts from Exchange 2007 Unified Messaging (UM) to Exchange 2013 Unified Messaging. Using a Shell script, the prompts are imported into an Exchange system mailbox named {e0dc1c29-89c3-4034-b678-e6c29d823ed9}, which is created when you install Microsoft Exchange 2013. This system mailbox is used in Unified Messaging to store dial plan and auto attendant custom greetings, announcements, menus, prompts, and UM reports.
@@ -52,7 +50,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the MigrateUMCustomPrompts.ps1 script to migrate a copy of all custom prompts for UM dial plans and auto attendants
 

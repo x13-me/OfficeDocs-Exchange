@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox import and export requests
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Using the **MailboxImportRequest** or **MailboxExportRequest** cmdlet sets in the Exchange Management Shell, you can import data from or export data to .pst files. After you initiate a mailbox import or export request, the process is completed asynchronously by the Microsoft Exchange Mailbox Replication service (MRS). MRS resides on all Exchange 2010 Client Access servers and is the service responsible for moving mailboxes and importing and exporting .pst files.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Sender ID
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Sender ID agent is an anti-spam agent that's available in Microsoft Exchange Server 2013. The Sender ID agent relies on the RECEIVED SMTP header and a query to the sending system's DNS service to determine what action, if any, to take on an inbound message.

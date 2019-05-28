@@ -41,12 +41,12 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
-  - **\* Equipment name** Use this box to type a name for the equipment mailbox. This is the name that's listed in the resource mailbox list in the EAC and in your organization's address book. This name is required and it can't exceed 64 characters.
+   - **\* Equipment name**: Use this box to type a name for the equipment mailbox. This is the name that's listed in the resource mailbox list in the EAC and in your organization's address book. This name is required and it can't exceed 64 characters.
 
-    > [!TIP]
-    > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
+     > [!TIP]
+     > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
 
-  - **\* Email address** An equipment mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
+   - **\* Email address**: An equipment mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
 
 4. When you're finished, click **Save** to create the equipment mailbox.
 
@@ -97,74 +97,70 @@ After you create an equipment mailbox, you can make changes and set additional p
 3. On the equipment mailbox properties page, click one of the following sections to view or change properties.
 
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the resource.
 
-- **\* Equipment name** This name appears in the resource mailbox list in the EAC and in your organization's address book. It can't exceed 64 characters if you change it.
+- **\* Equipment name**: This name appears in the resource mailbox list in the EAC and in your organization's address book. It can't exceed 64 characters if you change it.
 
-- **\* Email address** This read-only box displays the email address for the equipment mailbox. You can change it in the [Email Address](#EmailAddress-exchange-2013-help.md) section.
+- **\* Email address**: This read-only box displays the email address for the equipment mailbox. You can change it in the [Email Address](#email-address) section.
 
-- **Capacity** Use this box to enter the maximum number of people who can use this resource, if applicable, For example, if the equipment mailbox corresponds to a compact car, you could enter **4**.
+- **Capacity**: Use this box to enter the maximum number of people who can use this resource, if applicable, For example, if the equipment mailbox corresponds to a compact car, you could enter **4**.
 
 Click **More options** to view or change these additional properties:
 
-- **Organizational unit** This read-only box displays the organizational unit (OU) that contains the account for the equipment mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
+- **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the account for the equipment mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
 
-- **Mailbox database** This read-only box displays the name of the mailbox database that hosts the equipment mailbox. Use the **Migration** page in the EAC to move the mailbox to a different database.
+- **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the equipment mailbox. Use the **Migration** page in the EAC to move the mailbox to a different database.
 
-- **\* Alias** Use this box to change the alias for the equipment mailbox.
+- **\* Alias**: Use this box to change the alias for the equipment mailbox.
 
-- **Hide from address lists** Select this check box to prevent equipment mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send booking messages to the equipment mailbox by using the email address.
+- **Hide from address lists**: Select this check box to prevent equipment mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send booking messages to the equipment mailbox by using the email address.
 
-- **Department** Use this box to specify a department name that the resource is associated with. You can use this property to create recipient conditions for dynamic distribution groups and address lists.
+- **Department**: Use this box to specify a department name that the resource is associated with. You can use this property to create recipient conditions for dynamic distribution groups and address lists.
 
-- **Company** Use this box to specify a company that the resource is associated with. Like the Department property, you can use this property to create recipient conditions for dynamic distribution groups and address lists.
+- **Company**: Use this box to specify a company that the resource is associated with. Like the Department property, you can use this property to create recipient conditions for dynamic distribution groups and address lists.
 
-- **Address book policy** Use this option to specify an address book policy (ABP) for the resource. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. To learn more, see [Address book policies](address-book-policies-exchange-2013-help.md).
+- **Address book policy**: Use this option to specify an address book policy (ABP) for the resource. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. To learn more, see [Address book policies](address-book-policies-exchange-2013-help.md).
 
     In the drop-down list, select the policy that you want associated with this mailbox.
 
-- **Custom attributes** This section displays the custom attributes defined for the equipment mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes**: This section displays the custom attributes defined for the equipment mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
 
 #### Delegates
-<a name="Delegates"> </a>
 
 Use this section to view or change how the equipment mailbox handles reservation requests and to define who can accept or decline booking requests if it isn't done automatically.
 
-- **Booking requests** Select one of the following options to handle booking requests.
+- **Booking requests**: Select one of the following options to handle booking requests.
 
-  - **Accept or decline booking requests automatically** A valid meeting request automatically reserves the resource. If there's a scheduling conflict with an existing reservation, or if the booking request violates the scheduling limits of the resource, for example, the reservation duration is too long, the meeting request is automatically declined.
+  - **Accept or decline booking requests automatically**: A valid meeting request automatically reserves the resource. If there's a scheduling conflict with an existing reservation, or if the booking request violates the scheduling limits of the resource, for example, the reservation duration is too long, the meeting request is automatically declined.
 
-  - **Select delegates who can accept or decline booking requests** Resource delegates are responsible for accepting or declining meeting requests that are sent to the equipment mailbox. If you assign more than one resource delegate, only one of them has to act on a specific meeting request.
+  - **Select delegates who can accept or decline booking requests**: Resource delegates are responsible for accepting or declining meeting requests that are sent to the equipment mailbox. If you assign more than one resource delegate, only one of them has to act on a specific meeting request.
 
-- **Delegates** If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
+- **Delegates**: If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
 
 #### Booking Options
-<a name="BookingOptions"> </a>
 
 Use the **Booking Options** section to view or change the settings for the booking policy that defines when the resource can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
 
-- **Allow repeating meetings** This setting allows or prevents repeating meetings for the resource. By default, this setting is enabled, so repeating meetings are allowed.
+- **Allow repeating meetings**: This setting allows or prevents repeating meetings for the resource. By default, this setting is enabled, so repeating meetings are allowed.
 
-- **Allow scheduling only during working hours** This setting accepts or declines meeting requests that aren't during the working hours defined for the resource. By default, this setting is disabled, so meeting requests are allowed outside the working hours.By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the equipment mailbox in the Appearance section on the Calendar page.
+- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the resource. By default, this setting is disabled, so meeting requests are allowed outside the working hours.By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the equipment mailbox in the Appearance section on the Calendar page.
 
-- **Always decline if the end date is beyond this limit** This setting controls the behavior of repeating meetings that extend beyond the date specified by the maximum booking lead time setting.
+- **Always decline if the end date is beyond this limit**: This setting controls the behavior of repeating meetings that extend beyond the date specified by the maximum booking lead time setting.
 
   - If you enable this setting, a repeating booking request is automatically declined if the bookings start on or before the date specified by the value in the **Maximum booking lead time** box, and they extend beyond the specified date. This is the default setting.
 
   - If you disable this setting, a repeating booking request is automatically accepted if the booking requests start on or before the date specified by the value in the **Maximum booking lead time** box, and they extend beyond the specified date. However, the number of bookings is reduced so bookings won't occur after the specified date.
 
-- **Maximum booking lead time (days)** This setting specifies the maximum number of days in advance that the resource can be booked. Valid input is an integer between 0 and 1080. The default value is 180 days.
+- **Maximum booking lead time (days)**: This setting specifies the maximum number of days in advance that the resource can be booked. Valid input is an integer between 0 and 1080. The default value is 180 days.
 
-- **Maximum duration (hours)** This setting specifies the maximum duration that the resource can be reserved in a booking request. The default value is 24 hours.
+- **Maximum duration (hours)**: This setting specifies the maximum duration that the resource can be reserved in a booking request. The default value is 24 hours.
 
     For repeating booking requests, the maximum booking duration applies to the length of each instance of the repeating booking request.
 
 There is also a box on this page that you can use to write a message that will be sent to users who send meeting requests to reserve the resource.
 
 #### Contact Information
-<a name="ContactInformation"> </a>
 
 Use the **Contact Information** section to view or change the contact information for the resource. The information on this page is displayed in the address book.
 
@@ -172,17 +168,16 @@ Use the **Contact Information** section to view or change the contact informatio
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
 #### Email Address
-<a name="EmailAddress"> </a>
 
 Use the **Email Address** section to view or change the email addresses associated with the equipment mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add** Click ** Add ** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
-  - **SMTP** This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
+  - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM** An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox.
+  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox.
 
-  - **Custom address type** Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
+  - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
@@ -190,10 +185,9 @@ Use the **Email Address** section to view or change the email addresses associat
     > [!NOTE]
     > When you add a new email address, you have the option to make it the primary SMTP address.
 
-- **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
+- **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
 
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the equipment mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
@@ -204,11 +198,11 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 
 Use the following sets of cmdlets to view and change equipment mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for equipment mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options.
 
-- **Get-User** and **Set-User** Use these cmdlets to view and set general properties such as department and company names.
+- **Get-User** and **Set-User**: Use these cmdlets to view and set general properties such as department and company names.
 
-- **Get-Mailbox** and **Set-Mailbox** Use these cmdlets to view and set mailbox properties, such as email addresses and the mailbox database.
+- **Get-Mailbox** and **Set-Mailbox**: Use these cmdlets to view and set mailbox properties, such as email addresses and the mailbox database.
 
-- **Get-CalendarProcessing** and **Set-CalendarProcessing** Use these cmdlets to view and set booking options and delegates.
+- **Get-CalendarProcessing** and **Set-CalendarProcessing**: Use these cmdlets to view and set booking options and delegates.
 
 For information about these cmdlets, see the following topics:
 

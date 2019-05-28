@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Legal Hold role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Legal Hold` management role enables administrators to configure whether data within a mailbox should be retained for litigation purposes in an organization.

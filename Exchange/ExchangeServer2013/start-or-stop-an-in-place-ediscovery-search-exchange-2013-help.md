@@ -34,7 +34,7 @@ You can stop or restart an In-Place eDiscovery search at any time. For example, 
 
 ### Use the EAC to start or stop an In-Place eDiscovery search
 
-1. Navigate to **Compliance management** \> ** In-place eDiscovery & hold **.
+1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
 2. To stop a search that's in progress, select the search, and then click **Stop search**.
 

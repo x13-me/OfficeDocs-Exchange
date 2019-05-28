@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Messaging policy and compliance permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to configure messaging policy and compliance vary depending on the procedure being performed or the cmdlet you want to run. For more information about messaging policy and compliance, see [Messaging policy and compliance](messaging-policy-and-compliance-exchange-2013-help.md).

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Integrate Outlook Web App with Lync Server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Outlook Web App supports the integration of Outlook Web App and Microsoft Lync Server 2013. When integration with Lync Server 2013 is configured and instant messaging (IM) is enabled in Outlook Web App, users can initiate or respond to IM sessions by using Outlook Web App.

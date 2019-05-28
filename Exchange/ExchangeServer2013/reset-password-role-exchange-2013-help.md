@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Reset Password role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Reset Password management role enables individual users to reset their own passwords and administrators to reset users' passwords in an organization.

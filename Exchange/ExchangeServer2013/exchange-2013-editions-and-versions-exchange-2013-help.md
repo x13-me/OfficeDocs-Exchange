@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013: editions and versions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 is available in two server editions: Standard Edition and Enterprise Edition. Enterprise Edition can scale to 50 mounted databases per server in the Release to Manufacturing (RTM) and Cumulative Update 1 (CU1) versions, and 100 mounted databases per server in Cumulative Update 2 (CU2) and later versions; Standard Edition is limited to 5 mounted databases per server. A mounted database is a database that is in use. A mounted database can be an active mailbox database that is mounted for use by clients, or a passive mailbox database that is mounted in recovery for log replication and replay. While you can create more databases than the limits described above, you can only mount the maximum number specified above. The recovery database does not count towards this limit.

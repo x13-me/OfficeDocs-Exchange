@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange workload management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 An Exchange workload is an Exchange Server feature, protocol, or service that's been explicitly defined for the purposes of Exchange system resource management. Each Exchange workload consumes system resources such as CPU, mailbox database operations, or Active Directory requests to run user requests or background work. Examples of Exchange workloads include Outlook Web App, Exchange ActiveSync, mailbox migration, and mailbox assistants.

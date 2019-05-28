@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # OfficeExtensionApplication role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `OfficeExtensionApplication` management role enables Microsoft Office extension applications to access user mailboxes.

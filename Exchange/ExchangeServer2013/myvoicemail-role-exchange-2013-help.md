@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyVoiceMail role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyVoiceMail` management role enables individual users to view and modify their voice mail settings.

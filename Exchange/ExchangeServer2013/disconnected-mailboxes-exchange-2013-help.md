@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Disconnected mailboxes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Each Microsoft Exchange mailbox consists of an Active Directory user account and the mailbox data stored in the Exchange mailbox database. All configuration data for a mailbox is stored in the Exchange attributes of the Active Directory user object. The mailbox database contains the mail data that's in the mailbox associated with the user account. The following figure shows the components of a mailbox.

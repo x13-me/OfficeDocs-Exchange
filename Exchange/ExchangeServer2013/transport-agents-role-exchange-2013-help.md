@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport Agents role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Transport Agents` management role enables administrators to manage transport agents in an organization.

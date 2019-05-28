@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Export messages from queues
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you export a message from a queue to a file, the message isn't removed from the queue. A copy of the message is made in the specified location as a plain text file. The resulting file can be viewed in an application, such as a text editor or an email client application, or the message file can be resubmitted by using the Replay directory on any other Mailbox server or Edge Transport server inside or outside the Exchange organization.
@@ -43,7 +41,7 @@ When you export a message from a queue to a file, the message isn't removed from
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

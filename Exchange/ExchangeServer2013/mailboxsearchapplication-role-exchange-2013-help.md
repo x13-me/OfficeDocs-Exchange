@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MailboxSearchApplication role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MailboxSearchApplication` management role enables partner applications to search mailboxes.

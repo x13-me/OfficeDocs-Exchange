@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configuring Kerberos authentication for load-balanced Client Access servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 **Summary:** Describes how to use Kerberos authentication with load-balanced Client Access servers in Exchange 2013.

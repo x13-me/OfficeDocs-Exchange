@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # What's new for transport rules
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, several improvements have been made to transport rules. This topic provides a brief overview of some of the key changes and enhancements. To learn more about transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).

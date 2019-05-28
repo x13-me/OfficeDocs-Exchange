@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Install and configure the Address Book Policy Routing agent
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in your organization. When the ABP Routing agent is installed and configured, users that are assigned to different GALs appear as external recipients in that they can't view external recipients' contact cards.
@@ -35,7 +33,7 @@ Looking for the Exchange Online version of this topic? See [Turn on address book
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## How do you do this?
 

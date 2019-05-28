@@ -1,5 +1,5 @@
 ---
-title: 'Enable calls from users who aren't UM-enabled: Exchange 2013 Help'
+title: 'Enable calls from users who are not UM-enabled: Exchange 2013 Help'
 TOCTitle: Enable calls from users who aren't UM-enabled
 ms.author: dmaguire
 author: msdmaguire
@@ -10,7 +10,7 @@ ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 mtps_version: v=EXCHG.150
 ---
 
-# Enable calls from users who aren't UM-enabled in Exchange Server
+# Enable calls from users who are not UM-enabled in Exchange Server
 
 _**Applies to:**: Exchange Server 2013, Exchange Server 2016_
 

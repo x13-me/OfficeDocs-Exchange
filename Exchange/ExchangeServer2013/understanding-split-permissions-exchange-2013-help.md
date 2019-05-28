@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding split permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Organizations that separate the management of Microsoft Exchange Server 2013 objects and Active Directory objects use what's called a *split permissions* model. Split permissions enable organizations to assign specific permissions and related tasks to specific groups within the organization. This separation of work helps to maintain standards and workflows, and helps to control change in the organization.

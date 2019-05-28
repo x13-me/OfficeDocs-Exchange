@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Cmdlets
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A *cmdlet*, pronounced "command-let", is the smallest unit of functionality in the Exchange Management Shell. Cmdlets resemble built-in commands in other shells, for example, the `dir` command found in `cmd.exe`. Like these familiar commands, cmdlets can be called directly from the command line in the Shell and run under the context of the Shell, not as a separate process.

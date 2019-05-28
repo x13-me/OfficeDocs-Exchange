@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox audit logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Because mailboxes can contain sensitive, high business impact (HBI) information and personally identifiable information (PII), it's important that you track who logs on to the mailboxes in your organization and what actions are taken. It's especially important to track access to mailboxes by users other than the mailbox owner. These users are referred to as *delegate users*.

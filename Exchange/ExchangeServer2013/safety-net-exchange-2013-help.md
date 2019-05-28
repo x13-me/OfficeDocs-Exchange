@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Safety Net
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, the primary mechanism of mailbox high availability is the database availability group (DAG). For more information about DAGs, see [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md). The *transport dumpster* was first introduced in Exchange 2007, and was further improved in Exchange 2010 to provide redundant copies of messages after they're successfully delivered to mailboxes in DAGs. In Exchange 2010, the transport dumpster helped protect against data loss by maintaining a queue of successfully delivered messages that hadn't replicated to the passive mailbox database copies in the DAG. When a mailbox database or server failure required the promotion of an out-of-date copy of the mailbox database, the messages in the transport dumpster were automatically resubmitted to the new active copy of the mailbox database.

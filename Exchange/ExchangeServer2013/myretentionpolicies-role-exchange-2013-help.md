@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyRetentionPolicies role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyRetentionPolicies` management role enables individual users to view their retention tags, and to view and modify their retention tag settings and defaults.

@@ -30,11 +30,11 @@ In Exchange Server 2013, the maximum size of discovery mailboxes, which are used
 
 Here's a quick look at what you'll need to do to reduce the size of a discovery mailbox that's exceeded the 50 GB limit:
 
-1. [Step 1: Create discovery mailboxes](reduce-discovery-mailbox-size-exchange-2013-help.md#create) additional discovery mailboxes to distribute the search results to.
+1. [Step 1: Create discovery mailboxes](#step-1-create-discovery-mailboxes) additional discovery mailboxes to distribute the search results to.
 
-2. [Step 2: Copy search results to a discovery mailbox](reduce-discovery-mailbox-size-exchange-2013-help.md#copy) the search results from the existing discovery mailbox to one or more of the new discovery mailboxes.
+2. [Step 2: Copy search results to a discovery mailbox](#step-2-copy-search-results-to-a-discovery-mailbox) the search results from the existing discovery mailbox to one or more of the new discovery mailboxes.
 
-3. [Step 3: Delete eDiscovery searches](reduce-discovery-mailbox-size-exchange-2013-help.md#delete) eDiscovery searches from the original discovery mailbox to reduce its size.
+3. [Step 3: Delete eDiscovery searches](#step-3-delete-ediscovery-searches) eDiscovery searches from the original discovery mailbox to reduce its size.
 
 The strategy presented here groups the search results from the original discovery mailbox into separate eDiscovery searches that are based on date ranges. This is a quick way to copy many search results to a new discovery mailbox. The following graphic illustrates this approach.
 

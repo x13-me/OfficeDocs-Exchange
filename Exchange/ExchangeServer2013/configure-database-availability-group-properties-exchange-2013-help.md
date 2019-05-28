@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure database availability group properties
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the EAC or the Shell to configure the properties of a database availability group (DAG), including DAG IP address configuration and the witness server and witness directory used by the DAG. The Shell enables you to configure DAG properties that aren't available in the EAC, such as alternate witness server and alternate witness directory information, the TCP port used for replication, and datacenter activation coordination (DAC) mode.
@@ -39,7 +37,7 @@ You can use the EAC or the Shell to configure the properties of a database avail
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

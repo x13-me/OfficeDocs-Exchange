@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Information Rights Management` management role enables administrators to manage the Information Rights Management (IRM) features of Exchange in an organization.

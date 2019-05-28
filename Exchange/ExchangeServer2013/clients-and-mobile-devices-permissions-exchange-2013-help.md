@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Clients and mobile devices permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to perform tasks for clients and mobile devices vary depending on the procedure being performed or the cmdlet you want to run. For more information about client and mobile device features, see [Clients and mobile](clients-and-mobile-exchange-2013-help.md).
