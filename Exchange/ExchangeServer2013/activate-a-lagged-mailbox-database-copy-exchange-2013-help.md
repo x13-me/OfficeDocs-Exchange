@@ -64,11 +64,8 @@ Looking for other information related to lagged mailbox database copies? Check o
    Eseutil.exe /r eXX /a
    ```
 
-    > [!NOTE]
-    > In the preceding example, e<EM>XX</EM> is the log generation prefix for the database (for example, E00, E01, E02, and so on).
-
-    > [!IMPORTANT]
-    > This step may take a considerable amount of time, depending on several factors, such as the length of the replay lag time, the number of log files generated during that period, and the speed at which your hardware can replay those logs into the database being recovered.
+   > [!IMPORTANT]
+   > In the preceding example, e_XX_ is the log generation prefix for the database (for example, E00, E01, E02, and so on) <br/><br/> This step may take a considerable amount of time, depending on several factors, such as the length of the replay lag time, the number of log files generated during that period, and the speed at which your hardware can replay those logs into the database being recovered..
 
 6. After log replay is finished, the database is in a clean shutdown state and can be copied and used for recovery purposes.
 
