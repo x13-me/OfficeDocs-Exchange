@@ -42,24 +42,24 @@ You can use In-Place Hold or Litigation Hold to accomplish the following goals:
 
 ## In-Place Hold scenarios
 
-In previous versions of Exchange, the notion of legal hold is to hold all mailbox data for a user indefinitely or until when hold is removed. In Exchange Online, In-Place Hold includes a new model that allows you to specify the following parameters:
+In previous versions of Exchange, the notion of legal hold is to hold all mailbox data for a user indefinitely or until when hold is removed. In Exchange 2013, In-Place Hold includes a new model that allows you to specify the following parameters:
 
-- **What to hold** You can specify which items to hold by using query parameters such as keywords, senders and recipients, start and end dates, and also specify the message types such as email messages or calendar items that you want to place on hold.
+- **What to hold**: You can specify which items to hold by using query parameters such as keywords, senders and recipients, start and end dates, and also specify the message types such as email messages or calendar items that you want to place on hold.
 
-- **How long to hold** You can specify a duration for items on hold.
+- **How long to hold**: You can specify a duration for items on hold.
 
 Using this new model, In-Place Hold allows you to create granular hold policies to preserve mailbox items in the following scenarios:
 
-- **Indefinite hold** The indefinite hold scenario is similar to Litigation Hold. It's intended to preserve mailbox items so you can meet eDiscovery requirements. During the period of litigation or investigation, items are never deleted. The duration isn't known in advance, so no end date is configured. To hold all mail items indefinitely, you don't specify any query parameters or time duration when creating an In-Place Hold.
+- **Indefinite hold**: The indefinite hold scenario is similar to Litigation Hold. It's intended to preserve mailbox items so you can meet eDiscovery requirements. During the period of litigation or investigation, items are never deleted. The duration isn't known in advance, so no end date is configured. To hold all mail items indefinitely, you don't specify any query parameters or time duration when creating an In-Place Hold.
 
 - **Query-based hold** If your organization preserves items based on specified query parameters, you can use a query-based In-Place Hold. You can specify query parameters such as keywords, start and end dates, sender and recipient addresses, and message types. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved.
 
-    > [!IMPORTANT]
-    > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more details about unsearchable item, see [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+   > [!IMPORTANT]
+   > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more details about unsearchable item, see [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
 
-- **Time-based hold** Both In-Place Hold and Litigation Hold allow you to specify a duration of time for which to hold items. The duration is calculated from the date a mailbox item is received or created.
+- **Time-based hold**: Both In-Place Hold and Litigation Hold allow you to specify a duration of time for which to hold items. The duration is calculated from the date a mailbox item is received or created.
 
-    If your organization requires that all mailbox items be preserved for a specific period, for example 7 years, you can create a time-based hold. In Exchange 2013, you can specify a retention period for items on hold. Items on hold are aged based on their date received. For example, consider a mailbox that's placed on a time-based In-Place Hold and has a retention period set to 365 days. If an item in that mailbox is deleted after 300 days from the date it was received, it's held for an additional 65 days before being permanently deleted. You can use a time-based In-Place Hold in conjunction with a retention policy to make sure items are preserved for the specified duration and permanently removed after that period.
+    If your organization requires that all mailbox items be preserved for a specific period, you can create a time-based hold. For example, consider a mailbox that's placed on a time-based In-Place Hold and has a retention period set to 365 days. If an item in that mailbox is deleted after 300 days from the date it was received, it's held for an additional 65 days before being permanently deleted. You can use a time-based In-Place Hold in conjunction with a retention policy to make sure items are preserved for the specified duration and permanently removed after that period.
 
 You can use In-Place Hold to place a user on multiple holds. When a user is placed on multiple holds, the search queries from any query-based hold are combined (with **OR** operators). In this case, the maximum number of keywords in all query-based holds placed on a mailbox is 500. If there are more than 500 keywords, then all content in the mailbox is placed on hold (not just that content that matches the search criteria). All content is held until the total number of keywords is reduced to 500 or less.
 

@@ -669,7 +669,7 @@
       - name: Configure archive quotas for an In-Place Archive in Exchange 2013
         href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
       - name: Archive Lync conversations and meeting content to Exchange
-        href: https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview
+        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
       - name: Using OAuth authentication to support Archiving in an Exchange hybrid deployment
         href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
     - name: In-Place Hold and Litigation Hold
@@ -697,7 +697,7 @@
       - name: Message properties and search operators for In-Place eDiscovery
         href: https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: Create a discovery mailbox
-        href: https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview
+        href: create-a-discovery-mailbox-exchange-2013-help.md
       - name: Start or stop an In-Place eDiscovery search
         href: https://docs.microsoft.com/office365/securitycompliance/use-content-search-in-ediscovery
       - name: Modify an In-Place eDiscovery search
@@ -821,9 +821,9 @@
         href: https://docs.microsoft.com/office365/securitycompliance/what-the-dlp-policy-templates-include
         items:
         - name: DLP policy templates supplied in Exchange
-          href: https://docs.microsoft.com/office365/securitycompliance/create-a-dlp-policy-from-a-template
+          href: built-in-dlp-policy-templates-exchange-2013-help.md
         - name: Policy templates from Microsoft partners
-          href: https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview
+          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
       - name: DLP procedures
         href: dlp-procedures-exchange-2013-help.md
         items:
@@ -834,24 +834,24 @@
         - name: Create a custom DLP policy
           href: https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
         - name: Import a custom DLP policy template from a file
-          href: https://docs.microsoft.com/office365/securitycompliance/create-a-dlp-policy-from-a-template
+          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
         - name: View DLP policy detection reports
           href: view-dlp-policy-detection-reports-exchange-2013-help.md
         - name: Create incident reports for DLP policy detections
           href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
         - name: Define your own DLP templates and information types
-          href: https://docs.microsoft.com/office365/securitycompliance/create-a-dlp-policy-from-a-template
+          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
           items:
           - name: Developing DLP policy template files
-            href: https://docs.microsoft.com/office365/securitycompliance/create-a-dlp-policy-from-a-template
+            href: developing-dlp-policy-template-files-exchange-2013-help.md
           - name: Developing sensitive information rule packages
-            href: https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview
+            href: developing-sensitive-information-rule-packages-exchange-2013-help.md
           - name: Matching methods and techniques for rule packages
-            href: https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview
+            href: matching-methods-and-techniques-for-rule-packages-exchange-2013-help.md
           - name: Customize the built-in DLP sensitive information types
             href: https://docs.microsoft.com/office365/securitycompliance/customize-a-built-in-sensitive-information-type
           - name: Export DLP sensitive information types from Exchange
-            href: https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview
+            href: export-dlp-sensitive-information-types-from-exchange-exchange-2013-help.md
       - name: Policy Tips
         href: https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips
         items:
