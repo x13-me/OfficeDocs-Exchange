@@ -53,8 +53,6 @@ The permissions required on the folders and subfolders used in content conversio
 > [!WARNING]
 > Content conversion tracing copies the complete contents of email messages. To avoid the unwanted disclosure of confidential information, you need to set appropriate security permissions on the location of the content conversion tracing files.
 
-Return to top
-
 ## How content conversion tracing works
 
 When the content conversion of an inbound message fails, a delivery status notification (DSN) that has the status code 5.6.0 is sent to the message sender. If content conversion tracing is enabled, the failure information is recorded at the time that the 5.6.0 DSN message is generated. Each content conversion error generates two separate files.
@@ -72,8 +70,6 @@ A content conversion error that occurs when an outbound message is converted fro
   - **\<GUID\>.txt**: This file contains the exception description, conversion results, conversion options, and message size limits imposed on all messages by the store driver.
 
 The placeholder \<*GUID*\> is the same in both file names. Each content conversion error generates a different GUID that's used in the file names of the corresponding message and text files. An example of a GUID that's used in the file names is `038b930e-61fd-4bfd-b9b4-0374c18b73f7`.
-
-Return to top
 
 ## Considerations for content conversion tracing
 
@@ -110,5 +106,3 @@ Inbound content conversion failures are the most common. Some of the reasons for
   - **Failures caused by badly formatted MIME messages**: Unsolicited commercial email or spam messages may have formatting errors in the message header, such as unmatched quotation marks in recipient descriptions. A much smaller number of failures caused by badly formatted MIME messages are considered bugs.
 
 Outbound content conversion failures are much less common than inbound failures. When outbound failures occur, they are usually caused by Exchange code bugs or corrupted message content.
-
-Return to top

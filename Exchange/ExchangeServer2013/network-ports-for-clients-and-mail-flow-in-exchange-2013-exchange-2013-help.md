@@ -125,8 +125,6 @@ The network ports that are required for email clients to access mailboxes and ot
 </tbody>
 </table>
 
-Return to top
-
 ## Network ports required for mail flow
 
 How mail is delivered to and from your Exchange organization depends on your Exchange topology. The most important factor is whether you have a subscribed Edge Transport server deployed in your perimeter network.
@@ -187,8 +185,6 @@ The network ports that are required for mail flow in an Exchange organization th
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Network ports required for mail flow with Edge Transport servers
 
@@ -281,8 +277,6 @@ The network ports that are required for mail flow in Exchange organizations that
 </tbody>
 </table>
 
-Return to top
-
 ## Name resolution
 
 DNS resolution of the next mail hop is a fundamental part of mail flow in any Exchange organization. Exchange servers that are responsible for receiving inbound mail or delivering outbound mail must be able to resolve both internal and external host names for proper mail routing. And all internal Exchange servers must be able to resolve internal host names for proper mail routing. There are many different ways to design a DNS infrastructure, but the important result is to ensure name resolution for the next hop is working properly for all of your Exchange servers.
@@ -298,5 +292,3 @@ The network ports that are required for Unified Messaging are covered in the fol
   - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
   - [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
-
-Return to top

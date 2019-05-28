@@ -66,8 +66,6 @@ Due to the updates to the Exchange 2013 transport pipeline, the transport agent 
 
 Transport Agent management cmdlets manipulate a configuration file located at `%ExchangeInstallPath%TransportRoles\Shared`. For the Transport service on Mailbox servers and Edge Transport servers, the file is `agents.config`. For the Front End Transport service on Client Access servers, the file is `fetagents.config`. Both files use the same format as in Exchange 2010. For more information about managing transport agents, see [Manage transport agents](manage-transport-agents-exchange-2013-help.md).
 
-Return to top
-
 ## Transport agents and SMTP events
 
 Transport agents use SMTP events. These events are triggered as messages move through the transport pipeline. SMTP events give transport agents access to messages at specific points during the SMTP conversation and during routing of messages through the organization.
@@ -230,8 +228,6 @@ The following tables list the SMTP events that provide access to messages in the
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Priority of transport agents
 
@@ -417,8 +413,6 @@ The more interesting built-in transport agents on Edge Transport servers are des
 
 \* You can also install and configure these anti-spam agents on Mailbox servers. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-Return to top
-
 ## Troubleshoot transport agents
 
 To help you troubleshoot issues with transport agents, you can use the following features:
@@ -426,5 +420,3 @@ To help you troubleshoot issues with transport agents, you can use the following
   - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md).
 
   - **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](pipeline-tracing-exchange-2013-help.md).
-
-Return to top

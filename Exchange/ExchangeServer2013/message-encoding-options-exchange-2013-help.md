@@ -92,8 +92,6 @@ When you configure message encoding options for a remote domain, the specific se
 </tbody>
 </table>
 
-Return to top
-
 ## Message encoding options for mail users and mail contacts
 
 When you configure message encoding options for a mail contact or a mail user, that option is applied to all messages sent to that specific recipient. For mail contacts and mail users in your organization, you have the following configuration options for message encoding:
@@ -120,8 +118,6 @@ You need to use these parameters in the Exchange Management Shell to set the mes
 
   - [Set-MailUser](https://technet.microsoft.com/en-us/library/aa995971\(v=exchg.150\))
 
-Return to top
-
 ## Message encoding options available in Outlook
 
 As a sender, you can specify message encoding options in Outlook at any of the following stages:
@@ -136,8 +132,6 @@ As a sender, you can specify message encoding options in Outlook at any of the f
 
 By default, Outlook uses automatic character set message encoding by scanning the whole text of the outgoing message to determine the appropriate encoding to use for the message. This setting applies to messages that you send to Internet recipients and recipients in the Exchange organization. However, you can bypass this and specify a preferred encoding for outgoing messages.
 
-Return to top
-
 ## Message encoding options available in Outlook Web App
 
 As a sender, you can specify message encoding options in Outlook Web App at any of the following stages:
@@ -145,8 +139,6 @@ As a sender, you can specify message encoding options in Outlook Web App at any 
   - By configuring the default message format to be either plain text or HTMLin the **Message format** section of the **Settings** \>**Options** \> **Settings** page.
 
   - By setting the message format as you're composing it to either plain text or HTML by using the **More options** (...) menu, and selecting **Switch to plain text** or **Switch to HTML**.
-
-Return to top
 
 ## Order of precedence for message encoding options
 
@@ -380,8 +372,6 @@ The following table describes the order of precedence from lowest priority to hi
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## For more information
 

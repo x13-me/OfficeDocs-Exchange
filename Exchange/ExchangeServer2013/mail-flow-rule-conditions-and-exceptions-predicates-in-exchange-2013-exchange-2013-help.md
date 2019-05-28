@@ -191,8 +191,6 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 </tbody>
 </table>
 
-Return to top
-
 ## Recipients
 
 <table>
@@ -295,8 +293,6 @@ Return to top
 </tbody>
 </table>
 
-Return to top
-
 ## Message subject or body
 
 > [!NOTE]
@@ -358,8 +354,6 @@ Return to top
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Attachments
 
@@ -469,8 +463,6 @@ For more information about how transport rules inspect message attachments, see 
 </tbody>
 </table>
 
-Return to top
-
 ## Any recipients
 
 The conditions and exceptions in this section provide a unique capability that affects *all* recipients when the message contains at least one of the specified recipients. For example, let's say you have a rule that rejects messages. If you use a recipient condition from the Recipients section, the message is only rejected for those specified recipients. For example, if the rule finds the specified recipient in a message, but the message contains five other recipients. The message is rejected for that one recipient, and is delivered to the five other recipients.
@@ -519,8 +511,6 @@ Conversely, a recipient exception from this section *prevents* the rule action f
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Message sensitive information types, To and Cc values, size, and character sets
 
@@ -633,8 +623,6 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 </tbody>
 </table>
 
-Return to top
-
 ## Sender and recipient
 
 <table>
@@ -695,8 +683,6 @@ Return to top
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Message properties
 
@@ -771,8 +757,6 @@ Return to top
 </tbody>
 </table>
 
-Return to top
-
 ## Message headers
 
 > [!NOTE]
@@ -820,8 +804,6 @@ Return to top
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Conditions and exceptions for transport rules on Edge Transport servers
 
@@ -949,8 +931,6 @@ The conditions and exceptions that are available in transport rules on Edge Tran
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Property types
 
@@ -1179,8 +1159,6 @@ The property types that are used in conditions and exceptions are described in t
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## For more information
 

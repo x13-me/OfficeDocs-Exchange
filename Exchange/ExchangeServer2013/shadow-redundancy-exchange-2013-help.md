@@ -107,8 +107,6 @@ The following table describes the components of shadow redundancy. These terms a
 </tbody>
 </table>
 
-Return to top
-
 ## Requirements for shadow redundancy
 
 Although it may seem obvious, shadow redundancy requires multiple Exchange 2013 Mailbox servers. The Mailbox server can be standalone servers, or Mailbox servers and Client Access servers installed on the same computer.
@@ -124,8 +122,6 @@ These are the situations where shadow redundancy can't protect messages in trans
   - In under-provisioned DAGs.
 
   - During the simultaneous failure of two or more transport servers involved in the shadow redundancy of a message.
-
-Return to top
 
 ## Shadow redundancy is enabled by default
 
@@ -169,8 +165,6 @@ The following table describes the parameters that enable shadow redundancy.
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## How shadow messages are created
 
@@ -221,8 +215,6 @@ Message routing is optimized in Exchange 2013 so that when the ultimate destinat
 When an Exchange 2010 Hub Transport server transmits a message to an Exchange 2013 Mailbox server in the same Active Directory site, the Exchange 2010 Hub Transport server advertises support for shadow redundancy using the XSHADOW command, but the Mailbox server doesn't advertise support for shadow redundancy. This prevents the Exchange 2010 Hub Transport server from creating a shadow copy of the message on an Exchange 2013 Mailbox server.
 
 When the Transport service on an Exchange 2013 Mailbox server transmits a message to an Exchange 2010 Hub Transport in the same Active Directory site, the Exchange 2013 Mailbox server shadows the message for the Exchange 2010 Hub Transport server. After the Exchange 2013 Mailbox server receives acknowledgement from the Exchange 2010 Hub Transport server that the message was successfully received, the Exchange 2013 Mailbox server moves the successfully processed message into Safety Net. However, the successfully processed messages stored in Safety Net by Exchange 2013 Mailbox are never resubmitted to the Exchange 2010 Hub Transport servers.
-
-Return to top
 
 ## SMTP timeouts
 
@@ -315,8 +307,6 @@ The following table describes the parameters that control the creation of shadow
 </tbody>
 </table>
 
-Return to top
-
 ## How shadow messages are maintained
 
 After a shadow message is successfully created, the work of shadow redundancy has only just begun. The primary server and the shadow server need to stay in contact with each other to track the progress of the message.
@@ -393,8 +383,6 @@ The following table describes the parameters that control how shadow messages ar
 </tbody>
 </table>
 
-Return to top
-
 ## Message processing after an outage
 
 Shadow redundancy minimizes message loss due to server outages. When a transport server comes back online after an outage, there are two scenarios:
@@ -431,5 +419,3 @@ The following table summarizes how shadow redundancy reacts to these two scenari
 </tr>
 </tbody>
 </table>
-
-Return to top
