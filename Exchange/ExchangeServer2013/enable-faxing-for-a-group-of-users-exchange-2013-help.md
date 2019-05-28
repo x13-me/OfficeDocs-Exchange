@@ -35,9 +35,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable inbound faxing
+## Use the EAC to enable inbound faxing
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -47,7 +45,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 4. Click **Save** to save your changes.
 
-### Use the Shell to enable inbound faxing
+## Use the Shell to enable inbound faxing
 
 This example allows users who are linked with the UM mailbox policy `MyUMMailboxPolicy` to use inbound faxing.
 

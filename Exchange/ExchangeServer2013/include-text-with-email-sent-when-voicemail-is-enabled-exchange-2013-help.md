@@ -38,9 +38,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to customize the text sent when a mailbox is enabled for Unified Messaging
+## Use the EAC to customize the text sent when a mailbox is enabled for Unified Messaging
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -50,7 +48,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 4. Click **Save**.
 
-### Use the Shell to customize the text sent when a mailbox is enabled for Unified Messaging
+## Use the Shell to customize the text sent when a mailbox is enabled for Unified Messaging
 
 This example enables UM-enabled users who are associated with a UM mailbox policy to receive additional instructions about UM and the Outlook Voice Access number that they can use to access their mailbox over a phone.
 

@@ -36,9 +36,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to activate a lagged mailbox database copy to a specific point in time
 
@@ -91,6 +89,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
        ```powershell
        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
        ```
+
     2. Optionally (to preserve a lagged copy), make a copy of the database copy and its log files.
 
         > [!NOTE]

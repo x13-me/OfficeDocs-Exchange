@@ -33,9 +33,7 @@ By default, a public folder inherits the settings of its parent folder, includin
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
-### Use the EAC to create a public folder
+## Use the EAC to create a public folder
 
 When using the EAC to create a public folder, you'll only be able to set the name and the path of the public folder. To configure additional settings, you'll need to edit the public folder after it's created.
 
@@ -54,7 +52,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 6. Click **Save**.
 
-### Use the Shell to create a public folder
+## Use the Shell to create a public folder
 
 This example creates a public folder named Reports in the path Marketing\2013.
 

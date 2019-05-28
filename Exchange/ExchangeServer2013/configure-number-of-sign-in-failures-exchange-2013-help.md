@@ -31,9 +31,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the number of sign-in failures before users are disconnected
+## Use the EAC to configure the number of sign-in failures before users are disconnected
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -45,7 +43,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 5. Click **Save**.
 
-### Use the Shell to configure the number of sign-in failures before users are disconnected
+## Use the Shell to configure the number of sign-in failures before users are disconnected
 
 This example sets the number of sign-in failures before users are disconnected to 5 for a UM dial plan named `MyUMDialPlan`.
 

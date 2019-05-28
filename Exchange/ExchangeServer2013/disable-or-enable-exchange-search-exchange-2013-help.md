@@ -35,8 +35,6 @@ For additional management tasks related to Exchange Search, see [Exchange Search
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## What do you want to do?
-
 ## Disable or enable Exchange Search for a mailbox database
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Search" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.

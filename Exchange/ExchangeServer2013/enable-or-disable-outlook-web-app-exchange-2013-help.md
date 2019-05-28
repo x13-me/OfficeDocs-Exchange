@@ -38,9 +38,7 @@ For additional management tasks related to managing email client access to a mai
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable or disable Outlook Web App
+## Use the EAC to enable or disable Outlook Web App
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -61,7 +59,7 @@ For additional management tasks related to managing email client access to a mai
 > [!NOTE]
 > You can enable and disable Outlook Web App for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes-exchange-2013-help.md).
 
-### Use the Shell to enable or disable Outlook Web App
+## Use the Shell to enable or disable Outlook Web App
 
 This example disables Outlook Web App for the mailbox of Yan Li.
 

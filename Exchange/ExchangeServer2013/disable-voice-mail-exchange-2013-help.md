@@ -35,9 +35,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to disable Unified Messaging and voice mail for a user
+## Use the EAC to disable Unified Messaging and voice mail for a user
 
 1. In the EAC, click **Recipients**.
 
@@ -47,7 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 4. In the **Warning** box, click **Yes** to confirm that Unified Messaging will be disabled for the user.
 
-### Use the Shell to disable Unified Messaging and voice mail for a user
+## Use the Shell to disable Unified Messaging and voice mail for a user
 
 This example disables Unified Messaging and voice mail for the user tonysmith@contoso.com, but keeps the UM mailbox settings.
 

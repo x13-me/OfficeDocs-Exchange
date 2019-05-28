@@ -38,9 +38,7 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to delete a UM hunt group
+## Use the EAC to delete a UM hunt group
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, click the UM dial plan you want to change, and on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -48,7 +46,7 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 3. On the **Warning** page, click **Yes**.
 
-### Use the Shell to delete a UM hunt group
+## Use the Shell to delete a UM hunt group
 
 This example deletes a UM hunt group named `MyUMHuntGroup`.
 

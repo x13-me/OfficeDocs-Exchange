@@ -43,9 +43,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to add a secondary extension number
+## Use the EAC to add a secondary extension number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -61,7 +59,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 7. Click **Save**.
 
-### Use the EAC to add a primary or secondary extension number
+## Use the EAC to add a primary or secondary extension number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -75,7 +73,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 6. Click **Save**.
 
-### Use the Shell to add an extension number
+## Use the Shell to add an extension number
 
 This example adds an extension number 22222 for Tony Smith, a UM-enabled user.
 

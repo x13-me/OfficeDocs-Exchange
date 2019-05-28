@@ -71,7 +71,7 @@ The parameters in the following table are available for the **ConfigureAdam.ps1*
   - You can only use the Shell to perform this procedure.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Modify the AD LDS configuration on an Edge Transport server
 

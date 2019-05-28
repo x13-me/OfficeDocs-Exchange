@@ -29,15 +29,13 @@ In Microsoft Exchange Server 2013, you can use In-Place eDiscovery to search mai
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
-### Use the EAC to remove an In-Place eDiscovery search
+## Use the EAC to remove an In-Place eDiscovery search
 
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
 2. In the list view, select the In-Place eDiscovery search you want to remove, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
 
-### Use the Shell to remove an In-Place eDiscovery search
+## Use the Shell to remove an In-Place eDiscovery search
 
 For an example of how to remove an In-Place eDiscovery search, see the "Examples" section in [Remove-MailboxSearch](http://technet.microsoft.com/library/8d97c7d0-da13-492c-9efc-3646b7bf173a.aspx).
 

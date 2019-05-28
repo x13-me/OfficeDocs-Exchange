@@ -38,11 +38,9 @@ It's important to note the terminology differences between Active Directory and 
 
   - [Override the distribution group naming policy](override-group-naming-policy-exchange-2013-help.md)
 
-## What do you want to do?
+## Create a distribution group
 
-### Create a distribution group
-
-#### Use the EAC to create a distribution group
+### Use the EAC to create a distribution group
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
@@ -87,7 +85,7 @@ It's important to note the terminology differences between Active Directory and 
 > [!NOTE]
 > By default, new distribution groups require that all senders be authenticated. This prevents external senders from sending messages to distribution groups. To configure a distribution group to accept messages from all senders, you must modify the message delivery restriction settings for that distribution group.
 
-#### Use the Shell to create a distribution group
+### Use the Shell to create a distribution group
 
 This example creates a distribution group with an alias **itadmin** and the name **IT Administrators**. The distribution group is created in the default OU, and anyone can join this group without approval by the group owners.
 
@@ -97,7 +95,7 @@ New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestri
 
 For more information about using the Shell to create distribution groups, see [New-DistributionGroup](http://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a distribution group, do one of the following:
 
@@ -112,9 +110,9 @@ To verify that you've successfully created a distribution group, do one of the f
 > [!NOTE]
 > You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](http://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Shell to manage these groups
 
-### Change distribution group properties
+## Change distribution group properties
 
-#### Use the EAC to change distribution group properties
+### Use the EAC to change distribution group properties
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
@@ -122,7 +120,7 @@ To verify that you've successfully created a distribution group, do one of the f
 
 3. On the group properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use this section to view or change basic information about the group.
 
@@ -141,17 +139,17 @@ Use this section to view or change basic information about the group.
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the distribution group. You have to use Active Directory Users and Computers to move the group to a different OU.
 
-#### Ownership
+### Ownership
 
 Use this section to assign group owners. The group owner can add members to the group, approve or reject requests to join or leave the group, and approve or reject messages sent to the group. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
 You can add owners by clicking **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). You can remove an owner by selecting the owner and then clicking **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-#### Membership
+### Membership
 
 Use this section to add or remove members. Group owners don't have to be members of the group. Under **Members**, you can add members by clicking **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). You can remove a member by selecting a user in the member list and then clicking **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
-#### Membership approval
+### Membership approval
 
 Use this section to specify whether approval is required for users to join or leave the group.
 
@@ -169,7 +167,7 @@ Use this section to specify whether approval is required for users to join or le
 
     - **Closed: Members can be removed only by the group owners. All requests to leave will be rejected automatically**
 
-#### Delivery management
+### Delivery management
 
 Use this section to manage who can send email to this group.
 
@@ -184,7 +182,7 @@ Use this section to manage who can send email to this group.
    > [!IMPORTANT]
    > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact will be rejected, even if they are added to this list.
 
-#### Message approval
+### Message approval
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -202,7 +200,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to message senders whose messages aren't approved by the group moderators.
 
-#### Email options
+### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -227,14 +225,14 @@ Use this section to view or change the email addresses associated with the group
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
-#### MailTip
+### MailTip
 
 Use this section to add a MailTip to alert users of potential issues if they send a message to this group. A MailTip is text that's displayed in the InfoBar when this group is added to the To, Cc, or Bcc lines of a new email message. For example, you could add a MailTip to large groups to warn potential senders that their message will be sent to lots of people.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Group delegation
+### Group delegation
 
 Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
@@ -244,7 +242,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
-#### Use the Shell to change distribution group properties
+### Use the Shell to change distribution group properties
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
@@ -278,7 +276,7 @@ This example changes the user-created distribution group Dog Lovers to require t
 Set-DistributionGroup -Identity "Dog Lovers" -MemberJoinRestriction 'ApprovalRequired' -BypassSecurityGroupManagerCheck
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a distribution group, do the following:
 

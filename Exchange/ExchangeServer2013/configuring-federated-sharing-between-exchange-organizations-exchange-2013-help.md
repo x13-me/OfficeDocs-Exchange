@@ -43,8 +43,6 @@ For additional management tasks related to federated sharing, see [Federation pr
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Configure free/busy sharing between Exchange 2013 organizations
 
 Complete the steps in [Configure federated sharing](configure-federated-sharing-exchange-2013-help.md) for both organizations.

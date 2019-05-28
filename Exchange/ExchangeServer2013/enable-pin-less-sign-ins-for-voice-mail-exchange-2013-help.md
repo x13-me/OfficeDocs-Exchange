@@ -55,8 +55,6 @@ For additional tasks related to UM mailboxes, see [Voice mail-enabled user proce
 
   - Before you perform these procedures, confirm that the user or users have been enabled for UM and voice mail. For detailed steps, see [Enable a user for voice mail](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
 
-## What do you want to do?
-
 ## Use the Shell to enable PIN-less access to voice mail for UM-enabled users on a UM mailbox policy
 
 This example enables PIN-less voice mail access on a UM mailbox policy named `MyUMMailboxPolicy` for users associated with the mailbox policy who dial in to Outlook Voice Access.

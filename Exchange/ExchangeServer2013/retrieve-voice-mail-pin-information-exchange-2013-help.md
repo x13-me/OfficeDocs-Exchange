@@ -39,9 +39,7 @@ For additional tasks related to PIN security, see [PIN security procedures](pin-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to retrieve PIN information for a UM-enabled user
+## Use the EAC to retrieve PIN information for a UM-enabled user
 
 1. In the EAC, navigate to **Recipients**. In the list view, select the user mailbox that you want to view.
 
@@ -49,7 +47,7 @@ For additional tasks related to PIN security, see [PIN security procedures](pin-
 
 3. On the **UM Mailbox** page \> **UM mailbox settings**, view the **PIN status** for the user. On this page, you can also reset the voice mail PIN for the user.
 
-### Use the Shell to retrieve PIN information for a UM-enabled user
+## Use the Shell to retrieve PIN information for a UM-enabled user
 
 This example displays the user ID, whether a PIN is expired, whether the UM mailbox is locked out, and whether Tony is a first-time user.
 

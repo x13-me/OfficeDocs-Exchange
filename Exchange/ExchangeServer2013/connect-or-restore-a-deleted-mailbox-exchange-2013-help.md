@@ -56,8 +56,6 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## What do you want to do?
-
 ## Connect a deleted mailbox
 
 When you connect a deleted mailbox, you associate the mailbox with a user account that isn't mail-enabled, which means that it doesn't have an existing mailbox. To connect a deleted mailbox to a user account that has a mailbox, you have to restore the deleted mailbox. For more information, see Restore a deleted mailbox later in this topic.

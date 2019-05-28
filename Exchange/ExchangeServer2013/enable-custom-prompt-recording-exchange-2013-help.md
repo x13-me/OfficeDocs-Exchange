@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to enable a custom prompt or greeting recording using the TUI
+## Use the Shell to enable a custom prompt or greeting recording using the TUI
 
 To record custom prompts and greetings by using the telephone user interface (TUI), follow these steps:
 
@@ -66,7 +64,7 @@ To record custom prompts and greetings by using the telephone user interface (TU
 > [!NOTE]
 >  Before you can enable the recording of a custom prompt or greeting, you must sign in to the mailbox that's set up for recording prompts. After you record the new prompt or greeting, you must sign out and then sign back in before you can hear the new prompt or greeting when you use the TUI.
 
-### Perform TUI prompt recording on a UM auto attendant
+## Perform TUI prompt recording on a UM auto attendant
 
 1. Verify that the auto attendant is linked to the dial plan that you've enabled for TUI prompt recording.
 
@@ -80,7 +78,7 @@ To record custom prompts and greetings by using the telephone user interface (TU
 
 6. Follow the system prompts to edit or update the greeting or informational announcement for the auto attendant.
 
-### Perform TUI prompt recording on a UM dial plan
+## Perform TUI prompt recording on a UM dial plan
 
 1. Call an Outlook Voice Access number you use to sign in to Outlook Voice Access.
 

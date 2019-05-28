@@ -41,9 +41,7 @@ For additional management tasks related to recipients, see the following topics:
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure message delivery restrictions
+## Use the EAC to configure message delivery restrictions
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -69,7 +67,7 @@ For additional management tasks related to recipients, see the following topics:
 
 5. Click **OK** to close the **Message Delivery Restrictions** page, and then click **Save** to save your changes.
 
-### Use the Shell to configure message delivery restrictions
+## Use the Shell to configure message delivery restrictions
 
 The following examples show how to use the Shell to configure message delivery restrictions for a mailbox. For other recipient types, use the corresponding **Set-** cmdlet with the same parameters.
 

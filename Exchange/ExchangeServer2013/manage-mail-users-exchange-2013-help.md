@@ -29,11 +29,9 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Create a mail user
 
-### Create a mail user
-
-#### Use the EAC to create a mail user
+### Use the EAC to create a mail user
 
 1. In the EAC, navigate to **Recipients** \> **Contacts** \> **New** \> **Mail user**.
 
@@ -89,7 +87,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 
 7. When you've finished, click **Save** to create the mail user.
 
-#### Use the Shell to create a mail user
+### Use the Shell to create a mail user
 
 This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server 2013 with the following details:
 
@@ -111,7 +109,7 @@ This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Se
 New-MailUser -Name "Jeffrey Zeng" -Alias jeffreyz -ExternalEmailAddress jzeng@tailspintoys.com -FirstName Jeffrey -LastName Zeng -UserPrincipalName jeffreyz@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mail user, do one of the following:
 
@@ -123,7 +121,7 @@ To verify that you've successfully created a mail user, do one of the following:
   Get-MailUser <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
-### Change mail user properties
+## Change mail user properties
 
 After you create a mail user, you can make changes and set additional properties by using the EAC or the Shell.
 
@@ -131,7 +129,7 @@ You can also change properties for multiple user mailboxes at the same time. For
 
 The estimated time to complete this task will vary based on the number of properties you want to view or change.
 
-#### Use the EAC to change user mailbox properties
+### Use the EAC to change user mailbox properties
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -139,7 +137,7 @@ The estimated time to complete this task will vary based on the number of proper
 
 3. On the mail user properties page, click one of the following sections to view or change properties.
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the mail user.
 
@@ -161,14 +159,14 @@ Click **More options** to view or change these additional properties:
 
 - **Custom attributes**: This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the user's contact information. The information on this page is displayed in the address book. Click **More options** to display additional boxes.
 
 > [!TIP]
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-#### Organization
+### Organization
 
 Use the **Organization** section to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
@@ -182,7 +180,7 @@ Use the **Organization** section to record detailed information about the user's
 
 - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
 
-#### Email Addresses
+### Email Addresses
 
 Use the **Email Addresses** section to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, after the mail user is created, the primary SMTP address and the external email address are the same.
 
@@ -199,7 +197,7 @@ Use the **Email Addresses** section to view or change the email addresses associ
 
 - **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
-#### Mail Flow Settings
+### Mail Flow Settings
 
 Use the **Mail Flow Settings** section to view or change the following settings:
 
@@ -225,18 +223,18 @@ Use the **Mail Flow Settings** section to view or change the following settings:
 
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-#### Member Of
+### Member Of
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Use the Shell to change mail user properties
+### Use the Shell to change mail user properties
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
 
@@ -276,7 +274,7 @@ This example sets the CustomAttribute1 property to a value of ContosoEmployee fo
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')}| Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for mail users, do the following:
 
@@ -300,7 +298,7 @@ To verify that you've successfully changed properties for mail users, do the fol
   Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
-### Bulk edit mail users
+## Bulk edit mail users
 
 You can also use the EAC to change selected properties for multiple mail users. When you select two or more mail users from the contacts list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected recipients.
 
@@ -310,7 +308,7 @@ When you bulk edit mail users, you can change the following property areas:
 
 - **Organization**: Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to.
 
-#### Use the EAC to bulk edit mail users
+### Use the EAC to bulk edit mail users
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -323,7 +321,7 @@ When you bulk edit mail users, you can change the following property areas:
 
 4. Make the changes on the properties page and then save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully bulk edited mail users, do one of the following:
 

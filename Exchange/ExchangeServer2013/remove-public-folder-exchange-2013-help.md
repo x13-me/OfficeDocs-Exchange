@@ -29,9 +29,7 @@ You may need to remove public folders that are no longer being used in your orga
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to remove a public folder
+## Use the EAC to remove a public folder
 
 1. Navigate to **Public folders** \> **Public folders**.
 
@@ -43,7 +41,7 @@ You may need to remove public folders that are no longer being used in your orga
 
 3. A warning box displays asking if you're sure you want to delete the public folder. Click **Yes** to continue.
 
-### Use the Shell to delete a public folder
+## Use the Shell to delete a public folder
 
 This example deletes the public folder Help Desk\Resolved. This command assumes that the Resolved public folder doesn't have any subfolders.
 

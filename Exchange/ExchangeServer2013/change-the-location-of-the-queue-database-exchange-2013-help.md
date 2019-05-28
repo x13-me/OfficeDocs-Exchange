@@ -82,8 +82,6 @@ The location of the queue database and the queue database transaction logs is co
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Use the Command Prompt to create a new queue database and transaction logs in a new location
 
 1. Create the folders where you want to keep the queue database and transaction logs. Make sure that the correct permissions are applied to the folders.

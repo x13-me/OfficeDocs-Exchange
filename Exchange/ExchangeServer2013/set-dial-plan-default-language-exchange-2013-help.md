@@ -31,9 +31,7 @@ If you want to select another language as the default language, for example, Ger
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to set the default language on a UM dial plan
+## Use the EAC to set the default language on a UM dial plan
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -45,7 +43,7 @@ If you want to select another language as the default language, for example, Ger
 
 5. Click **Save** to accept your changes.
 
-### Use the Shell to set the default language on a UM dial plan
+## Use the Shell to set the default language on a UM dial plan
 
 This example sets the default language on a UM dial plan named `MyUMDialPlan` to German.
 

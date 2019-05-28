@@ -33,9 +33,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to create a UM dial plan
+## Use the EAC to create a UM dial plan
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
@@ -79,7 +77,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 3. Click **Save**.
 
-### Use the Shell to create a UM dial plan
+## Use the Shell to create a UM dial plan
 
 This example creates a new UM dial plan named `MyUMDialPlan` that uses four-digit extension numbers.
 

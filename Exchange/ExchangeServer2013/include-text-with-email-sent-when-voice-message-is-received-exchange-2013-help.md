@@ -36,9 +36,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to change the text included with a voice message
+## Use the EAC to change the text included with a voice message
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -48,7 +46,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 4. Click **Save**.
 
-### Use the Shell to change the text included with a voice message
+## Use the Shell to change the text included with a voice message
 
 This example includes the additional text, "Do not forward voice messages to users outside this organization", with voice messages sent to users who are associated with the UM mailbox policy named `MyUMMailboxPolicy`.
 

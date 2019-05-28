@@ -41,9 +41,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the input failures before disconnect
+## Use the EAC to configure the input failures before disconnect
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -55,7 +53,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 5. Click **Save**.
 
-### Use the Shell to configure the input failures before disconnect
+## Use the Shell to configure the input failures before disconnect
 
 This example sets the input failures before disconnect to 5 on a UM dial plan named `MyUMDialPlan`.
 

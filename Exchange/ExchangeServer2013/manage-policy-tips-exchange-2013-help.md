@@ -39,13 +39,11 @@ Policy Tips are informative notices that are displayed to email senders while th
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Create or modify a notify-only Policy Tip
+## Create or modify a notify-only Policy Tip
 
 This procedure results in an informational Policy Tip being shown to an email sender when the conditions of a specific rule are met. In Microsoft Outlook, the sender can prevent this tip from showing up by using a Policy Tip options dialog box. To configure custom Policy Tip text, see the [Create custom Policy Tip notification text](#create-custom-policy-tip-notification-text) section later in this article.
 
-#### Use the EAC to configure notify-only Policy Tips
+### Use the EAC to configure notify-only Policy Tips
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
@@ -89,7 +87,7 @@ This procedure results in an informational Policy Tip being shown to an email se
 
 10. Select **Save** to finish modifying the rule and save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a Policy Tip that will only notify a sender, do the following:
 
@@ -103,11 +101,11 @@ To verify that you have successfully created a Policy Tip that will only notify 
 
 5. Confirm that your **Notify the sender** action appears in the lower portion of the rule summary.
 
-### Create or modify a block-message Policy Tip
+## Create or modify a block-message Policy Tip
 
 This procedure results in a Policy Tip being shown to an email sender that indicates a message is rejected and it will not be delivered until the problematic condition is no longer present. The sender is provided with an option to indicate that their email message does not contain the problematic condition. This is also known as a false-positive override. If the sender indicates this, then the message can leave the outbox and the user's report may be audited. However, Exchange will block the message from being sent.
 
-#### Use the EAC to configure block-message Policy Tips
+### Use the EAC to configure block-message Policy Tips
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
@@ -125,7 +123,7 @@ This procedure results in a Policy Tip being shown to an email sender that indic
 
 8. Select **OK**, then select **Save** to finish modifying the rule and save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a reject message Policy Tip, do the following:
 
@@ -139,11 +137,11 @@ To verify that you have successfully created a reject message Policy Tip, do the
 
 5. Confirm that your **Notify the sender that the message can't be sent** action appears in the lower portion of the rule summary.
 
-### Create or modify a block-unless-override Policy Tip
+## Create or modify a block-unless-override Policy Tip
 
 There are four options for Policy Tips that can reject messages or prevent messages from leaving the sender's outbox. To learn more about these options, see [Policy Tips](policy-tips-exchange-2013-help.md).
 
-#### Use the EAC to configure block-unless override Policy Tips
+### Use the EAC to configure block-unless override Policy Tips
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
@@ -161,7 +159,7 @@ There are four options for Policy Tips that can reject messages or prevent messa
 
 7. Select **OK**, then select **Save** to finish modifying the rule and save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a reject unless override Policy Tip, do the following:
 
@@ -175,11 +173,11 @@ To verify that you have successfully created a reject unless override Policy Tip
 
 5. Confirm that your **Block the message, but allow the sender to override and send** action appears in the lower portion of the rule summary.
 
-### Create custom Policy Tip notification text
+## Create custom Policy Tip notification text
 
 This optional procedure will help you to customize the Policy Tip notification text that email senders see in their email program. If you do this, your custom Policy Tip notification text will not appear unless you also configure a DLP policy rule with an action that will cause the notification to appear. Keep in mind that there are default system Policy Tip notifications that can be shown if you do not customize your Policy Tip notification text. To learn more about the default text, see [Policy Tips](policy-tips-exchange-2013-help.md).
 
-#### Use the EAC to create and manage custom Policy Tip notification text
+### Use the EAC to create and manage custom Policy Tip notification text
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
@@ -195,7 +193,7 @@ This optional procedure will help you to customize the Policy Tip notification t
 
 5. Select **Close** to finish managing your Policy Tips and save your changes.
 
-#### Use the Shell to create custom Policy Tip notification text
+### Use the Shell to create custom Policy Tip notification text
 
 The following example creates a new English-language Policy Tip that will block a message from being sent. The text of this custom Policy Tip is changed to the following value: "This message appears to contain restricted content and will not be delivered."
 
@@ -205,7 +203,7 @@ New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain rest
 
 For more information about DLP cmdlets, see [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
 
-#### Use the Shell to modify custom Policy Tip notification text
+### Use the Shell to modify custom Policy Tip notification text
 
 The following example modifies an existing English-language, notify-only Policy Tip. The text of this custom Policy Tip is changed to "Sending bank account numbers in email is not recommended."
 
@@ -215,7 +213,7 @@ Set-PolicyTipConfig en\NotifyOnly "Sending bank account numbers in email is not 
 
 For more information about DLP cmdlets, see [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created custom Policy Tip text, do the following:
 

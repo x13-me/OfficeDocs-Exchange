@@ -35,9 +35,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to view or configure UM auto attendant settings
+## Use the EAC to view or configure UM auto attendant settings
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -270,7 +268,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 11. On the **UM Auto Attendant** page, click **Save** to save your changes.
 
-### Use the Shell to configure UM auto attendant properties
+## Use the Shell to configure UM auto attendant properties
 
 This example configures a UM auto attendant named `MySpeechEnabledAA` to fall back to the `MyDTMFAA` auto attendant, sets the operator's extension to 50100, and enables transfers to this extension number after business hours.
 
@@ -284,7 +282,7 @@ This example configures a UM auto attendant named `MyUMAutoAttendant` that has: 
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30 -HolidaySchedule "New Year,newyrgrt.wav,1/2/2013","Building Closed for Construction,construction.wav,4/24/2013,4/28/2013"
 ```
 
-### Use the Shell to view UM auto attendant properties
+## Use the Shell to view UM auto attendant properties
 
 This example returns a formatted list of all UM auto attendants.
 

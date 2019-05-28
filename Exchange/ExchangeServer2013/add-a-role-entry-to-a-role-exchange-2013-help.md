@@ -21,7 +21,7 @@ If you want to grant access to a cmdlet, you need to add the associated manageme
 You can't add role entries to built-in roles. If you want to customize roles, you must create a new role. For more information about how to create a new role, see [Create a role](create-a-role-exchange-2013-help.md).
 
 > [!NOTE]
-> This topic doesn't discuss how to add unscoped management role entries to an unscoped management role. For more information about how to add unscoped role entries, see <A href="add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md">Add a role entry to an unscoped top-level role</A>.
+> This topic doesn't discuss how to add unscoped management role entries to an unscoped management role. For more information about how to add unscoped role entries, see [Add a role entry to an unscoped top-level role](add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md).
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -40,9 +40,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Add a single role entry from a parent role
 

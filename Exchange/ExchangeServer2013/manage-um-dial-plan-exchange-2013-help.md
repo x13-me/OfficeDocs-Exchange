@@ -33,9 +33,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to view or configure UM dial plan settings
+## Use the EAC to view or configure UM dial plan settings
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -334,7 +332,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 11. After you configure the required settings, click **Save** to save your changes.
 
-### Use the Shell to configure UM dial plan settings
+## Use the Shell to configure UM dial plan settings
 
 This example configures a UM dial plan named `MyDialPlan` to use 9 for the outside line access code.
 
@@ -356,7 +354,7 @@ Set-UMDialPlan -Identity MyDialPlan -ConfiguredInCountryGroups $csv
 Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distance"
 ```
 
-### Use the Shell to view UM dial plan settings
+## Use the Shell to view UM dial plan settings
 
 This example displays a list of all the UM dial plans.
 

@@ -47,11 +47,9 @@ In addition to the built-in MailTips that are available, you can create custom M
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Configure MailTips for recipients
 
-### Configure MailTips for recipients
-
-#### Use the EAC to configure MailTips for recipients
+### Use the EAC to configure MailTips for recipients
 
 1. In the EAC, navigate to **Recipients**.
 
@@ -73,7 +71,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 5. Enter the text for the MailTip. When you are finished, click **Save**.
 
-#### Use the Shell to configure MailTips for recipients
+### Use the Shell to configure MailTips for recipients
 
 To configure a MailTip for a recipient, use the following syntax.
 
@@ -89,7 +87,7 @@ For example, suppose you have a mailbox named "Help Desk" for users to submit su
 Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you within 2 hours."
 ```
 
-### Use the Shell to configure additional MailTips in different languages
+## Use the Shell to configure additional MailTips in different languages
 
 To configure additional MailTip translations without affecting the existing MailTip text or other existing MailTip translations, use the following syntax:
 
@@ -105,7 +103,7 @@ For example, suppose the mailbox named Notifications currently has the MailTip: 
 Set-Mailbox -MailTipTranslations @{Add="ES:Esta caja no se supervisa."}
 ```
 
-### How do you know this worked?
+## How do you know this worked?
 
 To verify that you have successfully configured a MailTip for a recipient, do the following:
 

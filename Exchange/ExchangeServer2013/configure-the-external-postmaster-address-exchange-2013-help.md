@@ -36,8 +36,6 @@ By default, the value of the external postmaster address setting is blank. This 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Use the EAC to configure the external postmaster address
 
 1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery** tab.

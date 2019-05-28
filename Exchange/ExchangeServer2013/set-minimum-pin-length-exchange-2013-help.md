@@ -38,9 +38,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the minimum PIN length for Outlook Voice Access
+## Use the EAC to configure the minimum PIN length for Outlook Voice Access
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
@@ -52,7 +50,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 5. Click **Save**.
 
-### Use the Shell to configure the minimum PIN length for Outlook Voice Access
+## Use the Shell to configure the minimum PIN length for Outlook Voice Access
 
 This example sets the minimum PIN length to 8 digits for Outlook Voice Access users who are associated with the UM mailbox policy named `MyUMMailboxPolicy`.
 

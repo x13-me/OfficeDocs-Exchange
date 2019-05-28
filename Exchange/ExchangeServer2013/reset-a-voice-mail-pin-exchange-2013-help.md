@@ -34,9 +34,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to reset a Unified Messaging PIN
+## Use the EAC to reset a Unified Messaging PIN
 
 1. In the EAC, navigate to **Recipients**. In the list view, select the user mailbox that you want to view.
 
@@ -62,7 +60,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 5. Click **Save**.
 
-### Use the Shell to reset a Unified Messaging PIN
+## Use the Shell to reset a Unified Messaging PIN
 
 This example resets the voice mail PIN for Tony Smith to 1985848. However, this PIN must be changed when the user first signs in to Outlook Voice Access.
 

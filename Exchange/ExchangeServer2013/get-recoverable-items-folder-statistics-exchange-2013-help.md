@@ -40,8 +40,6 @@ To learn more, see the following topics:
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## What do you want to do?
-
 ## Get Recoverable Items folder statistics for a mailbox
 
 This example gets folder statistics for Soumya Singhi's Recoverable Items folder and displays the output in a list format.

@@ -33,8 +33,6 @@ For additional management tasks related to federation trusts, see [Federation pr
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## What do you want to do?
-
 ## Use the EAC to remove a federation trust
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.

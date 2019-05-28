@@ -27,11 +27,9 @@ You can apply an Outlook Web App mailbox policy to one or more mailboxes or remo
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Apply an Outlook Web App mailbox policy
 
-### Apply an Outlook Web App mailbox policy
-
-#### Use the EAC to apply an Outlook Web App mailbox policy
+### Use the EAC to apply an Outlook Web App mailbox policy
 
 1. In the EAC, click **Recipients** \> **Mailboxes**.
 
@@ -53,7 +51,7 @@ You can apply an Outlook Web App mailbox policy to one or more mailboxes or remo
 
    3. Click **Save** to assign the selected policy to the selected mailboxes.
 
-#### Use the Shell to apply an Outlook Web App mailbox policy to an existing mailbox
+### Use the Shell to apply an Outlook Web App mailbox policy to an existing mailbox
 
 This example applies the Outlook Web App mailbox policy named "Calendar" to the mailbox of the user tony@contoso.com.
 
@@ -63,9 +61,9 @@ Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy:Calendar
 
 For more information about syntax and parameters, see [Set-CASMailbox](http://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
 
-### Remove an Outlook Web App mailbox policy
+## Remove an Outlook Web App mailbox policy
 
-#### Use the EAC to remove an Outlook Web App mailbox policy
+### Use the EAC to remove an Outlook Web App mailbox policy
 
 1. In the EAC, click **Recipients** \> **Mailboxes**.
 
@@ -77,7 +75,7 @@ For more information about syntax and parameters, see [Set-CASMailbox](http://te
 
 4. Click **Save** to save your changes.
 
-#### Use the Shell to remove an Outlook Web App mailbox policy from an existing mailbox.
+### Use the Shell to remove an Outlook Web App mailbox policy from an existing mailbox.
 
 This example removes the Outlook Web App mailbox policy from mailbox of the user tony@contoso.com.
 

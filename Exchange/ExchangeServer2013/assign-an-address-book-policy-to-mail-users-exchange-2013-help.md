@@ -20,7 +20,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 
 ## What do you need to know before you begin?
 
-- Estmated time to complete: Less than 5 minutes.
+- Estimated time to complete: Less than 5 minutes.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
@@ -29,10 +29,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to assign an ABP to a mailbox user
-<a name="UseEMC"> </a>
+## Use the EAC to assign an ABP to a mailbox user
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
@@ -44,8 +41,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 
 5. Click **Save**.
 
-### Use the EAC to assign an ABP to multiple mailbox users
-<a name="Bulk"> </a>
+## Use the EAC to assign an ABP to multiple mailbox users
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
@@ -59,8 +55,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 
 6. Click **Save**.
 
-### Use the Shell to assign an ABP to mailbox users
-<a name="UseShell"> </a>
+## Use the Shell to assign an ABP to mailbox users
 
 This example assigns the ABP All Fabrikam to the existing mailbox user joe@fabrikam.com.
 

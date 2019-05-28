@@ -36,11 +36,9 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Install an add-in for Outlook
 
-### Install an add-in for Outlook
-
-#### Use the EAC to add an add-in
+### Use the EAC to add an add-in
 <a name="BKMK_EAC"> </a>
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
@@ -58,7 +56,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 
 3. Click **Save**.
 
-#### Use the Shell to add an add-in
+### Use the Shell to add an add-in
 <a name="BKMK_Shell"> </a>
 
 This example shows you how to add an add-in from a URL.
@@ -78,15 +76,15 @@ New-App -OrganizationApp -FileData <File location for add-in manifest file>
 
 For syntax and parameters, see [New-App](http://technet.microsoft.com/library/f05951d8-1e49-42b6-a341-66eb67b2870f.aspx).
 
-### Remove an add-in for Outlook
+## Remove an add-in for Outlook
 
-#### Use the EAC to remove an add-in
+### Use the EAC to remove an add-in
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
 2. In the list view, select the app that you want to remove, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
 
-#### Use the Shell to remove an add-in
+### Use the Shell to remove an add-in
 
 You can use the Shell to remove an add-in from your organization.
 

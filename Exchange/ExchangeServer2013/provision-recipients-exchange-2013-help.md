@@ -37,9 +37,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the Shell to provision recipients for OAB downloads by linking their mailbox database to a public folder database or to a default OAB
+## Use the Shell to provision recipients for OAB downloads by linking their mailbox database to a public folder database or to a default OAB
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
@@ -51,7 +49,7 @@ Set-MailboxDatabase -Identity "Mailbox Database" -OfflineAddressBook "My OAB"
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
 
-### Use the Shell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
+## Use the Shell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
@@ -72,7 +70,7 @@ Set-Mailbox -Identity Kim -OfflineAddressBook "My OAB"
 
 For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
-### Use the Shell to specify the OAB that multiple recipients will download
+## Use the Shell to specify the OAB that multiple recipients will download
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 

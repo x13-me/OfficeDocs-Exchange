@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure the group of users that callers can contact
+## Use the EAC to configure the group of users that callers can contact
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -49,7 +47,7 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 
 4. Click **Save**.
 
-### Use the Shell to configure the group of users that callers can contact
+## Use the Shell to configure the group of users that callers can contact
 
 This example sets the scope of the users that callers can contact to all users in the organization's address book on a UM auto attendant named `MyUMAutoAttendant`.
 

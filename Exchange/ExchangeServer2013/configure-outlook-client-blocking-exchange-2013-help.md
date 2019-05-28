@@ -140,8 +140,6 @@ To bypass the warning that MRM features aren't supported for e-mail clients runn
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## What do you want to do?
-
 ## Block versions of Outlook on a per-mailbox basis
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.

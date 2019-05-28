@@ -36,9 +36,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure VoIP security on a UM dial plan
+## Use the EAC to configure VoIP security on a UM dial plan
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM Dial Plans**, select the UM dial plan on which you want to change the VoIP security, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -54,7 +52,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 4. Click **Save**.
 
-### Use the Shell to configure VoIP security on a UM dial plan
+## Use the Shell to configure VoIP security on a UM dial plan
 
 This example configures a UM dial plan named `MySecureDialPlan` to encrypt both SIP and RTP traffic.
 

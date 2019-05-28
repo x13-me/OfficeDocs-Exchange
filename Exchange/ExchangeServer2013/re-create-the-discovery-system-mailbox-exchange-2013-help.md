@@ -48,4 +48,4 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 To verify that you have successfully re-created the Discovery system mailbox, use the **Get-Mailbox** cmdlet with the *Arbitration* switch to retrieve system mailboxes. View the results of the command to verify that the system mailbox `SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}` has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

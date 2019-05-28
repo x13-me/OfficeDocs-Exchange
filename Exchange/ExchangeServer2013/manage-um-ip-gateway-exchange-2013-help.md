@@ -35,9 +35,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to view or configure UM IP gateway properties
+## Use the EAC to view or configure UM IP gateway properties
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**. In the list view, select the UM IP gateway that you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -61,7 +59,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
     Message Waiting Indicator can refer to any mechanism that indicates the existence of a new or unheard message. The indication that a new voice message has arrived can be found in the Inbox in clients such as Outlook and Outlook Web App. It can take the form of a Short Messaging Service (SMS) or text message sent to a registered mobile phone, an outbound call made from an Exchange server to a preconfigured number, or a lighted desktop phone lamp for a user.
 
-### Use the Shell to configure UM IP gateway properties
+## Use the Shell to configure UM IP gateway properties
 
 This example modifies the IP address of a UM IP gateway named `MyUMIPGateway`.
 
@@ -90,7 +88,7 @@ This example prevents the UM IP gateway named `MyUMIPGateway` from accepting inc
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
-### Use the Shell to view UM IP gateway properties
+## Use the Shell to view UM IP gateway properties
 
 This example displays a formatted list of all the UM IP gateways in the Active Directory forest.
 

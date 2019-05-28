@@ -29,11 +29,9 @@ After you create a user mailbox, you can make changes and set additional propert
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Change user mailbox properties
 
-### Change user mailbox properties
-
-#### Use the EAC to change user mailbox properties
+### Use the EAC to change user mailbox properties
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -59,7 +57,7 @@ After you create a user mailbox, you can make changes and set additional propert
 
    - **Mailbox Delegation**
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the user.
 
@@ -85,7 +83,7 @@ Click **More options** to view or change these additional properties:
 
 - **Custom attributes**: This section displays the custom attributes defined for the user mailbox. To specify custom attribute values, click **Edit**. You can specify up to 15 custom attributes for the recipient.
 
-#### Mailbox Usage
+### Mailbox Usage
 
 Use the **Mailbox Usage** section to view or change the mailbox storage quota and deleted item retention settings for the mailbox. These settings are configured by default when the mailbox is created. They use the values that are configured for the mailbox database and apply to all mailboxes in that database. You can customize these settings for each mailbox instead of using the mailbox database defaults.
 
@@ -114,7 +112,7 @@ Click **More options** to view or change the mailbox storage quota and the delet
 
   - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the user's contact information. The information on this page is displayed in the address book. Click **More options** to display additional boxes.
 
@@ -123,7 +121,7 @@ Use the **Contact Information** section to view or change the user's contact inf
 
 Mailbox users can use Outlook or Outlook Web App to view and change their own contact information. But they can't change the information in the **Notes** and **Web page** boxes.
 
-#### Organization
+### Organization
 
 Use the **Organization** section to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that is accessible from email clients such as Outlook.
 
@@ -137,7 +135,7 @@ Use the **Organization** section to record detailed information about the user's
 
 - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari's mailbox is specified in the **Manager** box of Chris's mailbox and Kate's mailbox, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's mailbox.
 
-#### Email Address
+### Email Address
 
 Use the **Email Address** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -154,7 +152,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
-#### Mailbox Features
+### Mailbox Features
 
 Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
@@ -236,18 +234,18 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-#### Member Of
+### Member Of
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they are used.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc boxes of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Mailbox Delegation
+### Mailbox Delegation
 
 Use the **Mailbox Delegation** section to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions:
 
@@ -259,7 +257,7 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
 
 To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-#### Use the Shell to change user mailbox properties
+### Use the Shell to change user mailbox properties
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using the Shell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
@@ -299,7 +297,7 @@ This example sets the MailTip translation in French and Chinese.
 Set-Mailbox john@contoso.com -MailTipTranslations ("FR: C'est la langue française", "CHT: 這是漢語語言")
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a user mailbox, do the following:
 
@@ -317,7 +315,7 @@ To verify that you've successfully changed properties for a user mailbox, do the
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
 
-### Bulk edit user mailboxes
+## Bulk edit user mailboxes
 
 You can use the EAC to change the properties for multiple user mailboxes. When you select two or more user mailboxes from the mailbox list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected mailboxes.
 
@@ -344,7 +342,7 @@ Here's a list of the user mailbox properties and features that can be bulk edite
 > [!NOTE]
 > The estimated time to complete this task is 2 minutes, but may take longer if you change multiple properties or features.
 
-#### Use the EAC to bulk edit user mailboxes
+### Use the EAC to bulk edit user mailboxes
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -357,7 +355,7 @@ Here's a list of the user mailbox properties and features that can be bulk edite
 
 4. Make the changes on the properties page and then save your changes.
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully bulk edited user mailboxes, do one of the following:
 

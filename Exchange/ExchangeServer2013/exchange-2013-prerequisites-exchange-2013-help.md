@@ -58,7 +58,7 @@ This topic provides the steps for installing the necessary Windows Server 2012 R
     > If you're installing the Mailbox server role and you intend for the server to be a member of a database availability group (DAG), you must be running Windows Server 2012 R2 Standard or Datacenter Edition, Windows Server 2012 Standard or Datacenter Edition, or Windows Server 2008 R2 SP1 Enterprise Edition. Windows Server 2008 R2 SP 1 Standard Edition doesn't support the features needed for DAGs.<BR>You can't upgrade Windows when Exchange is installed on the server.<BR>To upgrade to Microsoft Unified Communications Managed API (UCMA) 4.0, you must first uninstall any previous versions of UCMA that are installed by using <STRONG>Add/Remove programs</STRONG>.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Active Directory preparation
 

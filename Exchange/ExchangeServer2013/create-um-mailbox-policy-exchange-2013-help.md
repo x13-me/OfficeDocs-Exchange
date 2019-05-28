@@ -35,9 +35,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to create a UM mailbox policy
+## Use the EAC to create a UM mailbox policy
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -51,7 +49,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 4. Click **Save** to save the new UM mailbox policy. When you save the UM mailbox policy, all of the default settings including PIN policies, voice mail features, and Protected Voice Mail settings are enabled. If you want to customize or change any default settings, use the **Set-UMMailbox** cmdlet to change the settings for the UM mailbox policy you just created.
 
-### Use the Shell to create a UM mailbox policy
+## Use the Shell to create a UM mailbox policy
 
 This example creates a UM mailbox policy named `MyUMMailboxPolicy` associated with a UM dial plan named `MyUMDialPlan`.
 

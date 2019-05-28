@@ -32,9 +32,7 @@ For additional management tasks related to messaging records management (MRM), s
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to apply a retention policy to a single mailbox
+## Use the EAC to apply a retention policy to a single mailbox
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
@@ -44,7 +42,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 4. In the **Retention policy** list, select the policy you want to apply to the mailbox, and then click **Save**.
 
-### Use the EAC to apply a retention policy to multiple mailboxes
+## Use the EAC to apply a retention policy to multiple mailboxes
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
@@ -56,7 +54,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 5. In **Bulk Assign Retention Policy**, select the retention policy you want to apply to the mailboxes, and then click **Save**.
 
-### Use the Shell to apply a retention policy to a single mailbox
+## Use the Shell to apply a retention policy to a single mailbox
 
 This example applies the retention policy RP-Finance to Morris's mailbox.
 
@@ -66,7 +64,7 @@ Set-Mailbox "Morris" -RetentionPolicy "RP-Finance"
 
 For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
-### Use the Shell to apply a retention policy to multiple mailboxes
+## Use the Shell to apply a retention policy to multiple mailboxes
 
 This example applies the new retention policy New-Retention-Policy to all mailboxes that have the old policy Old-Retention-Policy.
 

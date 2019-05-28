@@ -31,9 +31,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to enable or prevent Outlook Voice Access users from transferring calls
+## Use the EAC to enable or prevent Outlook Voice Access users from transferring calls
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -43,7 +41,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 4. Click **Save**.
 
-### Use the Shell to enable or prevent Outlook Voice Access users from transferring calls
+## Use the Shell to enable or prevent Outlook Voice Access users from transferring calls
 
 This example enables Outlook Voice Access users to transfer calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
 

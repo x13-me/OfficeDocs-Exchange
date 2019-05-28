@@ -45,9 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to remove the primary or a secondary E.164 number
+## Use the EAC to remove the primary or a secondary E.164 number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -57,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 4. Click **Save**.
 
-### Use the Shell to remove the primary or a secondary E.164 number
+## Use the Shell to remove the primary or a secondary E.164 number
 
 This example removes the E.164 number +14255551010 from the mailbox of Tony Smith, a UM-enabled user.
 

@@ -36,9 +36,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery-exchange-201
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Step 1: Create a discovery mailbox
+## Step 1: Create a discovery mailbox
 
 This example creates a discovery mailbox named SearchResults in the Shell.
 
@@ -56,7 +54,7 @@ Get-Mailbox -Resultsize unlimited -Filter {RecipientTypeDetails -eq "DiscoveryMa
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
 
-### Step 2: Assign permissions to a discovery mailbox
+## Step 2: Assign permissions to a discovery mailbox
 
 You have to explicitly assign users or groups the necessary permissions to open a discovery mailbox that you've created. Use the following syntax to assign a user or group permissions to open a discovery mailbox and view search results:
 

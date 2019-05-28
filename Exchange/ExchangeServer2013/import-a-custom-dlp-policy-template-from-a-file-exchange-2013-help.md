@@ -30,9 +30,7 @@ You can manage sensitive information through DLP policies by importing a file th
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to import a custom DLP policy template from a file
+## Use the EAC to import a custom DLP policy template from a file
 
 Use the following procedure to import a custom DLP policy template from a file. In order to avoid confusion, supply a unique name for each part of your policy or rule when you have the option to provide your own name.
 
@@ -52,7 +50,7 @@ Use the following procedure to import a custom DLP policy template from a file. 
 
 5. Click **Next** to validate and import the policy.
 
-### Use the Shell to import a custom DLP policy template from a file
+## Use the Shell to import a custom DLP policy template from a file
 
 This example imports a custom DLP policy template file in the file C:\My Documents\DLP Backup.xml. Importing a DLP policy collection from an XML file removes or overwrites all pre-existing DLP policies that were defined in your organization. Make sure that you have a backup of your current DLP policy collection before you import and overwrite your current DLP policies.
 

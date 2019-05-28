@@ -35,9 +35,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to configure UM auto attendant navigation menus
+## Use the EAC to configure UM auto attendant navigation menus
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -77,7 +75,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 6. On the **UM Auto Attendant** page, click **Save** to save your changes.
 
-### Use the Shell to configure UM auto attendant key mappings
+## Use the Shell to configure UM auto attendant key mappings
 
 This example enables business hours key mappings so that:
 

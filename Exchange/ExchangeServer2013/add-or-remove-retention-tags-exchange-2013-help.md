@@ -43,9 +43,7 @@ For more information about retention tags, see [Retention tags and retention pol
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
-
-### Use the EAC to add or remove retention tags
+## Use the EAC to add or remove retention tags
 
 1. Go to **Compliance management** \> **Retention policies**.
 
@@ -57,7 +55,7 @@ For more information about retention tags, see [Retention tags and retention pol
 
    - **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif): Select a tag from the list, and then click this button to remove the tag from the policy.
 
-### Use the Shell to add or remove retention tags
+## Use the Shell to add or remove retention tags
 
 This example adds the retention tags VPs-Default, VPs-Inbox, and VPs-DeletedItems to the retention policy RetPolicy-VPs, which doesn't already have retention tags linked to it.
 

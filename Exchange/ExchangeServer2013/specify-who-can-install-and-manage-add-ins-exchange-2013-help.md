@@ -51,17 +51,15 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook-exc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## What do you want to do?
+## Assign administrators the permissions required to install and manage add-ins for your organization
 
-### Assign administrators the permissions required to install and manage add-ins for your organization
-
-#### Use the EAC to assign permissions to administrators
+### Use the EAC to assign permissions to administrators
 
 You can use the EAC to assign administrators the permissions required to install and manage add-ins that available from the Office Store for your organization. For detailed information about how to do this, see [Manage role groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
 
-### Assign users the permissions required to install and manage add-ins for their own use
+## Assign users the permissions required to install and manage add-ins for their own use
 
-#### Use the EAC to assign permissions to users
+### Use the EAC to assign permissions to users
 
 You can use the EAC to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
 
