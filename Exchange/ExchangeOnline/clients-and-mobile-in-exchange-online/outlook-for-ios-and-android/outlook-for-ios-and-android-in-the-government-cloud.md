@@ -77,6 +77,8 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
+- **File picker**: The file picker used for adding attachments during email composition is limited to email attachments, iCloud & Device, OneDrive for Business files, and SharePoint sites. The Recent Files list is limited to email attachments.
+
 Executing the below Exchange Online cmdlet will enable GCC Moderate customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
  ```
