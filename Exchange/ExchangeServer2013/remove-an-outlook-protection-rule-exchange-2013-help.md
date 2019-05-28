@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remove an Outlook Protection Rule
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Using Microsoft Outlook protection rules, you can protect messages with Information Rights Management (IRM) by applying an [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) template in Outlook 2010 before the messages are sent. To prevent an Outlook protection rule from being applied, you can disable the rule. Removing an Outlook protection rule removes the rule definition from Active Directory.
@@ -33,7 +31,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

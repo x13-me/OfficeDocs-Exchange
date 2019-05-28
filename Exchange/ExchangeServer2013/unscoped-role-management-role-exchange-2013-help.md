@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Unscoped Role Management role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Unscoped Role Management` management role enables administrators to create and manage unscoped top-level management roles in an organization.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Public Folders role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Public Folders `management role enables administrators to manage public folders in an organization.

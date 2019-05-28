@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure OAuth authentication with SharePoint 2013 and Lync 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 allows other applications to use OAuth to authenticate to Exchange. The applications must be configured as partner applications in Exchange 2013.
@@ -39,7 +37,7 @@ In Exchange 2013, OAuth configuration with partner applications such as SharePoi
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Configure OAuth authentication with a partner application
 

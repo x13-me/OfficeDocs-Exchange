@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # CSV files for mailbox migration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use a CSV file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the **New-MigrationBatch** cmdlet in the Exchange Management Shell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:

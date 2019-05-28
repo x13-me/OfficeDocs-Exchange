@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Datacenter Activation Coordination mode
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Datacenter Activation Coordination (DAC) mode is a property of a database availability group (DAG). DAC mode is disabled by default but should be enabled for all DAGs with two or more members that use continuous replication. DAC mode shouldn't be enabled for DAGs that use third-party replication mode unless specified by the third-party vendor.

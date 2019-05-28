@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Checklist: Upgrade from Exchange 2007
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Use this checklist to upgrade from Microsoft Exchange Server 2007 to Exchange Server 2013. Before you start working with this checklist, make sure you're familiar with the concepts discussed in:

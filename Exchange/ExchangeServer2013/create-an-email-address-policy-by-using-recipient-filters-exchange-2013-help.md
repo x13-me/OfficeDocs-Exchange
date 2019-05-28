@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create an email address policy by using recipient filters
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the Shell to create an email address policy by using recipient filters. To learn more about email address policies, see [Email address policies](email-address-policies-exchange-2013-help.md).
@@ -38,7 +36,7 @@ For additional management tasks related to email address policies, see [Email ad
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Shell to create an email address policy by using recipient filters
 

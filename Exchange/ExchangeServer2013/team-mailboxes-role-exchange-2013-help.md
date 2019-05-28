@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Team Mailboxes role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Team Mailboxes` management role enables administrators to define one or more site mailbox provisioning policies and manage site mailboxes in the organization. Administrators assigned this role can manage site mailboxes they don't own.

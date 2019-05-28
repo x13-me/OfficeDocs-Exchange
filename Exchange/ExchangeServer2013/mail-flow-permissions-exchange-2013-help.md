@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail flow permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run. For more information about transport features, see [Mail flow](mail-flow-exchange-2013-help.md).

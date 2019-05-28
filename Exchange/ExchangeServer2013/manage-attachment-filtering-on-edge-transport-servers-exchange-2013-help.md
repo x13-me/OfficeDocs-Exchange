@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage attachment filtering on Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Attachment filtering is provided by the Attachment Filter agent that's available only on Edge Transport servers. Attachment filtering can help prevent files that are attached in email messages from entering your organization. You can configure one or more attachment filter entries to filter attachments either by content type or by file name.
@@ -35,7 +33,7 @@ Attachment filtering is provided by the Attachment Filter agent that's available
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

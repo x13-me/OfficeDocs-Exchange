@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Multi-tenancy in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A multi-tenant (hosted) Exchange 2013 deployment is defined as one where the Exchange organization is configured to host multiple and discrete organizations or business units (the tenants) that ordinarily don't share email, data, users, global address lists (GALs), or other commonly used Exchange objects. This sharing of hardware, software and resources (all while maintaining a logical separation between tenants), allows organizations to leverage the simplicity of a standard Exchange deployment while providing multi-tenant functionality and services to meet their hosting needs.

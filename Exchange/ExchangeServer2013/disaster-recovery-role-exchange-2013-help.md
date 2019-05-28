@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Disaster Recovery role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Disaster Recovery` management role enables administrators to restore mailboxes and mailbox databases, create mailbox databases, and perform datacenter switchovers and switchbacks for database availability groups in an organization.

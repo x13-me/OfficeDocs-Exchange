@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recipient Policies role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Recipient Policies` management role enables administrators to manage recipient policies, such as throttling policies, Microsoft Office Outlook Web App mailbox policies, and mobile device policies, in an organization.

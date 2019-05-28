@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage sender filtering
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Sender filtering is provided by the Sender Filter agent. The Sender Filter agent relies on the **MAIL FROM:** SMTP header to determine what action, if any, to take on an inbound email message.
@@ -35,7 +33,7 @@ When sender filtering functionality is enabled on an Exchange server, sender fil
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

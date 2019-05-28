@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Send connectors
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, a Send connector controls the flow of outbound messages to the receiving server. They are configured on Mailbox servers running the Transport service. Most commonly, you configure a Send connector to send outbound email messages to a smart host or directly to their recipient, using DNS.

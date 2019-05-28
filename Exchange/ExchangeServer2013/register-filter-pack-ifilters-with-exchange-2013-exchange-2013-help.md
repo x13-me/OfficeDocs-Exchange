@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Register Filter Pack IFilters with Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Transport rules with attachment scanning conditions perform text extraction when analyzing the content of attachments. Exchange 2013 can scan most commonly used attachment types natively. Additional attachment types can be included by registering IFilters with Exchange 2013. This topic shows you how to register IFilters released by Microsoft and third-party providers.
@@ -25,7 +23,7 @@ After you register an IFilter for a specific file type, transport rules with att
 > [!WARNING]
 > The procedures listed in this topic involve modifying the registry on your Exchange servers. Incorrectly editing the registry can cause serious problems that may require you to reinstall your operating system. Problems resulting from editing the registry incorrectly may not be able to be resolved. Before editing the registry, back up any valuable data.<BR>These procedures also require you to stop and restart the Microsoft Exchange Transport service on your Mailbox servers.
 
-For additional management tasks related to Transport rules, see [Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+For additional management tasks related to Transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -38,7 +36,7 @@ For additional management tasks related to Transport rules, see [Manage transpor
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 
@@ -135,7 +133,7 @@ Deploying the Office 2010 Filter Pack consists of two main steps:
 
 To verify that you have successfully registered the Microsoft Office 2010 Filter Pack IFilters, do the following:
 
-1. Create a Transport rule with the following properties. For detailed instructions about how to create Transport rules, see [Manage transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+1. Create a Transport rule with the following properties. For detailed instructions about how to create Transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
       - The sender is your mailbox.
 

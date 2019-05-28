@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Managing high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 After you build, validate, and deploy a Microsoft Exchange Server 2013 high availability or site resilience solution, the solution transitions from the deployment phase to the operational phase of the overall solution lifecycle. The operational phase consists of several tasks, and all tasks are related to one of the following areas: database availability groups (DAGs), mailbox database copies, performing proactive monitoring, and managing switchovers and failovers.

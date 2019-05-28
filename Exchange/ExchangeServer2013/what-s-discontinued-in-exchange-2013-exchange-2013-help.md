@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # What's discontinued in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Microsoft Exchange Server 2013.

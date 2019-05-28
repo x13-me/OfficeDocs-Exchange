@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Org Custom Apps role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Org Custom Apps management role enables administrators to view and modify their organization's apps, and to add custom apps from a file or URL.

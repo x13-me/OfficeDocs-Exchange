@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 Active Directory schema changes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 adds new and modifies existing Active Directory schema classes and attributes. This reference topic provides a summary of the Active Directory schema changes that are made when you install the release to manufacturing (RTM) version of Exchange 2013 or any of its cumulative updates or service packs. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \\amd64\\Setup\\Data\\ directory in the Exchange installation files.

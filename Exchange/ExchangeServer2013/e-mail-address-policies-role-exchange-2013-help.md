@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # E-Mail Address Policies role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `E-Mail Address Policies` management role enables administrators to manage email address policies in an organization.

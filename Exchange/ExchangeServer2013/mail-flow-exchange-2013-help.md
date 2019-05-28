@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail flow
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, mail flow occurs through the transport pipeline. The *transport pipeline* is a collection of services, connections, components, and queues that work together to route all messages to the categorizer in the Transport service on a Mailbox server inside the organization.

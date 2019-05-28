@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Customize details templates
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Use the Details Templates Editor to customize the client-side graphical user interface (GUI) presentation of object properties that are accessed by using address lists in Microsoft Outlook. For example, when a user opens an address list in Outlook, the properties of a particular object are presented as defined by the details template in the Exchange organization. The objects can be customized by changing field sizes, adding or removing fields, adding or removing tabs, and rearranging fields. The layout of these templates may vary by language.

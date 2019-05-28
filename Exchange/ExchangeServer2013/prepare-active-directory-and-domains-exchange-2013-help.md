@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Prepare Active Directory and domains
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Before you install Microsoft Exchange Server 2013, you need to prepare your Active Directory forest and its domains. Exchange needs to prepare Active Directory so that it can store information about your users' mailboxes and the configuration of Exchange servers in the organization. If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=399226).
@@ -52,7 +50,7 @@ Curious about what's happening when Active Directory is being prepared for Excha
   - Install the first Exchange server in an Active Directory site with a writeable global catalog server from every domain.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## 1\. Extend the Active Directory schema
 

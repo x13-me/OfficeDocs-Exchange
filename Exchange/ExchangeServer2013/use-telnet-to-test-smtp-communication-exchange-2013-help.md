@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Use Telnet to test SMTP communication
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic explains how to use Telnet to test Simple Mail Transfer Protocol (SMTP) communication between messaging servers. By default, SMTP listens on port 25. If you use Telnet on port 25, you can enter the SMTP commands that are used to connect to an SMTP server and send a message exactly as if your Telnet session was an SMTP messaging server. You can see the success or failure of each step in the connection and message submission process.
@@ -41,7 +39,7 @@ The procedure in this topic shows you how to use Telnet Client, which is a compo
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## How do you do this?
 

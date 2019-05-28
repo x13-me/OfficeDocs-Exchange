@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Unified Messaging role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Unified Messaging` role enables administrators to manage Unified Messaging (UM) services in an organization.

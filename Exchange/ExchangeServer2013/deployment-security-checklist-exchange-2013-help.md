@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deployment security checklist
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 features are designed to help improve the security of your messaging environment. Generally, for Exchange 2013, the following conditions are true:

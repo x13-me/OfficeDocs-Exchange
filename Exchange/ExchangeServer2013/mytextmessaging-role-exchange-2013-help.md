@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyTextMessaging role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyTextMessaging` management role enables individual users to create, view, and modify their text messaging settings.

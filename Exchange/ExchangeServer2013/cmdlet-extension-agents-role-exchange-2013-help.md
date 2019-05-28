@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Cmdlet Extension Agents role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Cmdlet Extension Agents` management role enables administrators to enable, disable, and set the priority of cmdlet extension agents in an organization.

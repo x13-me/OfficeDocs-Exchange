@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Database Copies role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Database Copies` management role enables administrators to add, remove, suspend, resume, view, and update database copies on individual servers.

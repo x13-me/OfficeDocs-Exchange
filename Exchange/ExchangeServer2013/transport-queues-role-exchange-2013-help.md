@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport Queues role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Transport Queues` management role enables administrators to manage message queues on an individual transport server.

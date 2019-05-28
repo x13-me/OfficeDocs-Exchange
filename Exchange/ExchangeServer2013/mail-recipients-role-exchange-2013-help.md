@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail Recipients role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Mail Recipients` management role enables administrators to manage existing mailboxes, mail users, and mail contacts in an organization. This role can't create these recipients. Use the `Mail Recipient Creation` role to create them.

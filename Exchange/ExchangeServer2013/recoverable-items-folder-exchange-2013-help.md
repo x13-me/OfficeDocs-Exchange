@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recoverable Items folder
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Microsoft Exchange Server 2013 and Exchange Online use the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The Recoverable Items folder is used by the following Exchange features:

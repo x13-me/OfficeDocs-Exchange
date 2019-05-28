@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Group metrics and MailTips
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Group metrics is the collection of the following data about distribution groups and dynamic distribution groups in your organization:

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Test UM connectivity to VoIP gateways and PBXs
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can test the operation of Unified Messaging (UM) and related connected telephony equipment. When you perform the following procedure, the Client Access and Mailbox server tests the full end-to-end operation of the voice mail system. This includes the telephony components connected to the Client Access and Mailbox servers, including VoIP gateways, Private Branch eXchanges (PBXs), IP PBXs, and cabling.
@@ -37,7 +35,7 @@ For additional management tasks related to troubleshooting UM, see [UM services 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Shell to test the operation of the Unified Messaging and telephony components
 

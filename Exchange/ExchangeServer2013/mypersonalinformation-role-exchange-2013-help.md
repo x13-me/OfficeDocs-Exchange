@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyPersonalInformation role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyPersonalInformation` management role enables individual users to view and modify their website, address, and home telephone number. This is a custom role created from the [MyContactInformation role](mycontactinformation-role-exchange-2013-help.md) parent role.

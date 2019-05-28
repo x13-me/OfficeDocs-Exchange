@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure IRM for Exchange Search and In-Place eDiscovery
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, you can configure Information Rights Management (IRM) so that Exchange Search can index IRM-protected messages.
@@ -42,7 +40,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

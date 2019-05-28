@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remove an email address policy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 By default, Exchange contains an email address policy that specifies the recipient's alias as the local part of the email address and uses the default accepted domain. The local part of an email address is the name that appears before the "at" sign (@).This email address policy applies to all users in the organization. You can't remove this email address policy.
@@ -37,7 +35,7 @@ For additional management tasks related to e-mail address policies, see [Email a
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Install a UM language pack
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 To make a language available in the list of available Unified Messaging languages on a UM dial plan or UM auto attendant, you must first install the appropriate UM language pack. You install the language pack on a Mailbox server running the Microsoft Exchange Unified Messaging service by using the language-specific self-extracting executable file or the **setup.exe /AddUmLanguagePack** command. Before you can install a UM language pack, you must first download it to a local folder on the Mailbox server. You can download UM language packs from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). There's a separate executable file for each language.
@@ -38,7 +36,7 @@ For additional tasks related to UM languages, see [UM languages, prompts, and gr
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

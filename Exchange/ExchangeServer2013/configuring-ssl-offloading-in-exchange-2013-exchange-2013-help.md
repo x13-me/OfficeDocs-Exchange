@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configuring SSL offloading in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The following helps you in configuring SSL offloading for the protocols and related services on Exchange 2013 Client Access servers with Service Pack 1 (SP1) installed. If you have multiple Client Access servers, you must perform the required steps for each protocol or service on every Client Access server with SP1 installed in your on-premises organization. That is not to mention that each Client Access server in your organization must be configured identically. If you are upgrading to newer Cumulative Updates (CUs) or service packs and you want to continue to use SSL offloading, you must perform the following steps again after you have upgraded or applied those updates on your Exchange 2013 Client Access servers.
@@ -70,7 +68,7 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Configure SSL offloading for Outlook Web App
 

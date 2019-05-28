@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Servers role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Exchange Servers` management role enables administrators to do the following on individual servers:

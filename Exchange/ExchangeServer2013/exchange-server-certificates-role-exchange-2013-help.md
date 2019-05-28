@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Server Certificates role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Exchange Server Certificates` management role enables administrators to create, import, export, and manage Exchange server certificates on individual servers.

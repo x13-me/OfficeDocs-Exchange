@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Subscriptions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Edge Transport servers minimize attack surface by handling all Internet-facing mail flow and providing SMTP relay and smart host services for your Exchange organization. Additional layers of message protection and security are provided by a series of agents running on the Edge Transport server in your organization's perimeter network. These agents support features that provide protection against viruses and spam and apply transport rules to control message flow.

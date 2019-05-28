@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # FAQ: Public folders
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic provides you with a list of frequently asked questions regarding public folders in Exchange Server 2013. To learn more about public folders, see [Public folders](public-folders-exchange-2013-help.md).

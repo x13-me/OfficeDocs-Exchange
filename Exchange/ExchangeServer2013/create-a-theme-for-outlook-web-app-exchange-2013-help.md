@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a theme for Outlook Web App
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A *theme* defines the background color, fonts, highlight colors, icons, and header that are used by Microsoft Outlook Web App. Each theme is a collection of media files and cascading style sheets (.css) files that are stored on the Microsoft Exchange server in the installation directory in \\Client Access\\OWA\\prem\\*version*\\resources\\themes. Each theme is stored in its own subdirectory of \\themes.
@@ -57,7 +55,7 @@ After you create a theme, you may also want to [Customize the Outlook Web App si
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## How do you do this?
 

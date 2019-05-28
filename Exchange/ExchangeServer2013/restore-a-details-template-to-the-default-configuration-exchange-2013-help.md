@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Restore a details template to the default configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Details Templates Editor doesn't contain an **Undo** button, nor can you use a keyboard shortcut to undo an action. To undo an addition you made to the template, you must use the DELETE key. To undo a deletion, you must reapply the setting. You can also revert to the original settings by exiting the Details Templates Editor without saving your changes. If you want to undo changes after you have saved, you can restore the template. When you restore a template, all customization is lost, and the template is restored to its original configuration.
@@ -33,7 +31,7 @@ To learn more about details templates, see [Details templates](details-templates
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Exchange Toolbox to restore a details template to its default configuration
 

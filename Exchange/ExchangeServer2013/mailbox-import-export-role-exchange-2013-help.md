@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox Import Export role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Mailbox Import Export` management role enables administrators to import and export mailbox content and to purge unwanted content from a mailbox.

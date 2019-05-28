@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Message Tracking role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Message Tracking` management role enables administrators to track messages in an organization.

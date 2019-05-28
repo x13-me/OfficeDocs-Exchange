@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Distribution Groups role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Distribution Groups` management role enables administrators to create, modify, view, and remove distribution groups, and add or remove distribution group members in an organization.

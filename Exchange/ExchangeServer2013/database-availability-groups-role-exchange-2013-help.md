@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Database Availability Groups role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Database Availability Groups` management role enables administrators to manage database availability groups in an organization. Administrators assigned this role either directly or indirectly are the highest level administrators responsible for the high availability configuration in an organization.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Virtual Directories role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Exchange Virtual Directories` management role enables administrators to manage Microsoft Office Outlook Web App, Microsoft ActiveSync, offline address books (OABs), Autodiscover, Windows PowerShell, and Web administration interface virtual directories on individual servers.

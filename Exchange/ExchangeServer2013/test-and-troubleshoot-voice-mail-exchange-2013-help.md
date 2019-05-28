@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Test and troubleshoot voice mail
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 After you've installed Client Access and Mailbox servers in your organization, you may have to test the functionality of Unified Messaging (UM). The following are situations in which you will use the diagnostic tools and cmdlets included with Exchange 2013 or the UM Troubleshooting Tool:

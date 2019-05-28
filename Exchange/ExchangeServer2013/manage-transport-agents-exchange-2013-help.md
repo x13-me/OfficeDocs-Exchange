@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage transport agents
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Transport agents use SMTP events to operate on messages as the messages move through the transport pipeline. Most of the built-in transport agents that are included with Microsoft Exchange Server 2013 are invisible and unmanageable. However, you can install and configure third-party transport agents on Exchange servers in your organization. For more information about transport agents, see [Transport agents](transport-agents-exchange-2013-help.md).
@@ -33,7 +31,7 @@ Transport agents use SMTP events to operate on messages as the messages move thr
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

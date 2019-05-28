@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Messaging records management errors and events
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Messaging records management (MRM) generates events that you can view in Event Viewer. This allows you to troubleshoot and verify the performance of the Managed Folder Assistant. Event Viewer tracks the following kinds of events in the following order, based on importance:

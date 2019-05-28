@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure mail flow and client access
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Post-installation tasks for Exchange Server 2013 mail flow and client access, including how to configure an SSL certificate.
@@ -43,7 +41,7 @@ For additional management tasks related to mail flow and clients and devices, se
 > Each organization requires at a minimum one Client Access server and one Mailbox server in the Active Directory forest. Additionally, each Active Directory site that contains a Mailbox server must also contain at least one Client Access server. If you're separating your server roles, we recommend installing the Mailbox server role first.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## How do you do this?
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create an organization relationship
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Set up an organization relationship to share calendar information with an external business partner. You can configure an organization relationship between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up an organization relationship between your on-premises Exchange organization and an Office 365 organization.
@@ -122,4 +120,4 @@ Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.

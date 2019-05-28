@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Considerations when deploying public folders
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Although there are many advantages to using Exchange 2013 public folders, there are some things to consider before implementing them in your organization.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail routing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The primary task of the Transport service that exists on all Mailbox servers in your Microsoft Exchange Server 2013 organization is to route messages received from users and external sources to their ultimate destinations. Routing decisions are made during message categorization. The categorizer is a component of the Transport service on a Mailbox server that processes all incoming messages and determines what to do with the message based on information about their destinations.

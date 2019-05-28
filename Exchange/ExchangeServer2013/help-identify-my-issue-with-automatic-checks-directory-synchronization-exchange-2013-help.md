@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Help Identify My Issue with Automatic Checks - Directory Synchronization
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the automatic checks below to validate your configuration and help you update your environment.

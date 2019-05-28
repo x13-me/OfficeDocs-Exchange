@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable or Disable Transport Decryption
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Enabling transport decryption allows the Transport Rules agent on Microsoft Exchange Server 2013 Mailbox servers to access content in messages protected by Information Rights Management (IRM). As a result, other transport agents can access message content and possibly make changes to it. For example, the Transport Rules agent may need to inspect message content and apply transport rules (such as rules that apply a disclaimer to the message). To successfully decrypt IRM-protected messages, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) server.
@@ -48,7 +46,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

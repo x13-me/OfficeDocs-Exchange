@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure Exchange mail routing settings in Active Directory
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 By default Microsoft Exchange Server 2013 references the IP site link objects in Active Directory to help determine the least-cost routing path. However, if you determine the Active Directory IP site link costs and traffic flow patterns aren't optimal for mail routing in Exchange, you can configure settings in Active Directory that are only used by Exchange to help optimize mail flow.
@@ -31,7 +29,7 @@ By default Microsoft Exchange Server 2013 references the IP site link objects in
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

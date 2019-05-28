@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Import and export custom greetings, announcements, menus, and prompts
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can import and export the audio files that you've recorded to use on Unified Messaging (UM) dial plans and auto attendants. For example, you might want to export and save a copy of an audio file if you're upgrading from a previous version of Exchange. Or, you might need to import a copy of a recorded audio prompt before configuring a dial plan or auto attendant.
@@ -53,7 +51,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

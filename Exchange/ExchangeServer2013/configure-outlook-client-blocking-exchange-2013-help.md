@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure Outlook client blocking
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Exchange Server 2013, you can use retention policies or managed folders for messaging records management (MRM). Only users running Microsoft Outlook 2010 and later have access to all client features for retention policies. However, retention policies are applied on the Mailbox server by the Managed Folder Assistant, regardless of the Outlook client version used by the user. Older Outlook clients do not expose the MRM functionality of these features. For example, because Outlook 2007 does not support retention policies, users can't apply personal tags to items or folders.
@@ -140,7 +138,7 @@ To bypass the warning that MRM features aren't supported for e-mail clients runn
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## What do you want to do?
 

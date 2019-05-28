@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure a federation trust
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system. By configuring a federation trust, you can configure federated sharing with other federated Exchange organizations to share calendar free/busy information among recipients. Federated sharing can be configured between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up sharing with an Office 365 organization.
@@ -208,4 +206,4 @@ To further verify that you have successfully created and configured the federati
 For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)) and [Get-FederationInformation](https://technet.microsoft.com/en-us/library/dd351221\(v=exchg.150\)).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Security Group Creation and Membership role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Security Group Creation and Membership` management role enables administrators to create and manage universal security groups (USGs) and their memberships in an organization.

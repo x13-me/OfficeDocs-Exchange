@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # TeamMailboxLifecycleApplication role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `TeamMailboxLifecycleApplication` management role enables partner applications to update site mailbox lifecycle states.

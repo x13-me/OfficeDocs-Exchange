@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # LegalHoldApplication role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `LegalHoldApplication` management role enables partner applications to set and view the legal hold status of a mailbox.

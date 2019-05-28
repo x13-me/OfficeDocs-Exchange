@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Modify AD LDS configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the **ConfigureAdam.ps1** script (located in $env:ExchangeInstallPath\\Scripts) to modify the default Active Directory Lightweight Directory Services (AD LDS) configuration on Edge Transport servers before you subscribe the Edge Transport server to your Exchange organization.
@@ -73,7 +71,7 @@ The parameters in the following table are available for the **ConfigureAdam.ps1*
   - You can only use the Shell to perform this procedure.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Modify the AD LDS configuration on an Edge Transport server
 

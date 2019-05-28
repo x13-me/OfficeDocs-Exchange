@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a mailbox audit log search
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can create a mailbox audit log search to asynchronously search one or more mailboxes and have the search results sent by email as an XML file to specified addresses.
@@ -37,7 +35,7 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

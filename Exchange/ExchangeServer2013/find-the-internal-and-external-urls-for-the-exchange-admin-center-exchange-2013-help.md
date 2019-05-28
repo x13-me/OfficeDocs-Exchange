@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Find the internal and external URLs for the Exchange admin center
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Because the Exchange admin center (EAC) is a web-based management console in Exchange Server 2013, you access it by using the ECP virtual directory URL in a web browser. This topic shows you how to find the ECP virtual directory URL.
@@ -36,7 +34,7 @@ To learn more about the EAC, see [Exchange admin center in Exchange 2013](exchan
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Shell to find the internal and external URLs for the ECP virtual directory
 

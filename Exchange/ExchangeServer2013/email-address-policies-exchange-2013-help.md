@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Email address policies
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Recipients (which include users, resources, contacts, and groups) are any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages. For a recipient to send or receive email messages, the recipient must have an email address. Email address policies generate the primary and secondary email addresses for your recipients so they can receive and send email.

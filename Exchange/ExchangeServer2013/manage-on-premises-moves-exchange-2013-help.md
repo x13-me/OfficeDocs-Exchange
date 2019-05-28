@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage on-premises moves
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A move request is the process of moving a mailbox from one mailbox database to another. A local move request is a mailbox move that occurs within a single forest. In Microsoft Exchange Server 2013, mailboxes and personal archive mailboxes can reside on separate databases. Using the move request functionality, you can move the primary mailbox and the associated archive to the same database or to separate ones. The procedures in this topic will help you with on-premises mailbox moves.
@@ -41,7 +39,7 @@ For more information about mailbox moves, see [Mailbox moves in Exchange 2013](m
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

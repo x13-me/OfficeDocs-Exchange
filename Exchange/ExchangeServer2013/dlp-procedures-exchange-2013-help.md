@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # DLP procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can begin using a data loss prevention (DLP) solution in your messaging environment by using the following procedures. To learn about concepts and objectives for DLP, see [Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).

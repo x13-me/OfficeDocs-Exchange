@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Unsupported characters for Exchange 2013 object names
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This article describes characters that you can't use in object or component names in Exchange 2013. When you create names for objects or components in Exchange 2013, the names can't contain unsupported characters, even though you may be able to create an object using an unsupported character. Also, if you try to import or connect to objects whose names contain unsupported characters, you may receive an error message or experience unexpected behavior.

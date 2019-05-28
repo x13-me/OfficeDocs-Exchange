@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recreating arbitration mailboxes
 
- 
-
 **Summary:** About arbitration mailboxes in Exchange 2013 and how to re-create them.
 
 Exchange 2013 comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The below chart lists each type of arbitration mailbox and their responsibilities.
@@ -190,4 +188,4 @@ Get-Mailbox -Arbitration | Format-Table Name, DisplayName
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.

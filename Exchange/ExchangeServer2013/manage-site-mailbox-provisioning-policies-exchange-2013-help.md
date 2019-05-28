@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage site mailbox provisioning policies
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Site mailbox provisioning policies apply only to email that's sent to and from the site mailbox and to the size of the site mailbox on the Exchange server.
@@ -35,7 +33,7 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
   - You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

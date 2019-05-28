@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage Edge Subscriptions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic gives detailed information on a variety of Edge Subscription management tasks.
@@ -29,7 +27,7 @@ This topic gives detailed information on a variety of Edge Subscription manageme
   - You need to have an Edge server subscribed to your Internet-facing Active Directory site. For more information, see [Configure Internet mail flow through a subscribed Edge Transport server](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Subscribe an Edge Transport server
 

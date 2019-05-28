@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MyDistributionGroupMembership role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `MyDistributionGroupMembership` management role enables individual users to view and modify their membership in distribution groups in an organization, provided that those distribution groups allow manipulation of group membership.

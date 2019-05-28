@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # UM languages, prompts, and greetings
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can install and configure language packs to support multiple languages in Unified Messaging (UM) environments.

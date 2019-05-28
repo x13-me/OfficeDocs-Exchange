@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Databases role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Databases` management role enables administrators to create, manage, mount, and dismount mailbox databases on individual servers.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manage recipient filtering on Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Recipient filtering is provided by the Recipient Filter agent. When recipient filtering is enabled on an Exchange server, it filters inbound messages that come from the Internet but aren't authenticated. These messages are handled as external messages.
@@ -44,7 +42,7 @@ Recipient filtering is provided by the Recipient Filter agent. When recipient fi
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

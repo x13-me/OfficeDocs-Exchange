@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Monitoring role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The Monitoring management role enables administrators to monitor Exchange services and component availability in an organization. This role can also be used with service accounts used by monitoring applications to collect information about the state of servers running Exchange.

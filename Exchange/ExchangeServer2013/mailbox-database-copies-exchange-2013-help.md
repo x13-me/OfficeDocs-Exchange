@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox database copies
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.

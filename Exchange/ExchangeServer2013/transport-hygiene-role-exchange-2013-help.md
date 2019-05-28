@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport Hygiene role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Transport Hygiene` management role enables administrators to manage anti-spam and anti-malware features in an organization.

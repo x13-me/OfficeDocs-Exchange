@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable support for legacy transport agents
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, transport agents that were created using the Microsoft .NET Framework version 4.0 are supported by default. Exchange 2013 supports transport agents that were created using previous versions of the .NET Framework, but support for these legacy transport agents isn't enabled by default. To enable support for legacy transport agents, you need to modify the appropriate XML application configuration file. The files you need to modify depend on where the transport agent is installed:
@@ -98,7 +96,7 @@ Support for legacy transport agents is controlled by keys in the application con
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## Use the Command Prompt to configure support for legacy transport agents
 

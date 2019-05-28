@@ -14,13 +14,11 @@ mtps_version: v=EXCHG.150
 
 # IIS is in 32-bit compatibility mode\_IIS32BitMode
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Microsoft® Exchange Server 2007 setup cannot continue because the Microsoft Internet Information Service (IIS) is running in 32-bit mode on this 64-bit computer.
 

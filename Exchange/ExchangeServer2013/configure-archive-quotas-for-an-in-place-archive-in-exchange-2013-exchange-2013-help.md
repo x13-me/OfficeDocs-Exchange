@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure archive quotas for an In-Place Archive in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In on-premises deployments, In-Place Archives are created with unlimited storage quotas by default. As a result, you'll need to edit a mailbox's properties to set storage quotas for the archive. You can set the following quotas for an archive:
@@ -39,7 +37,7 @@ To learn more about In-Place Archives, see [In-Place Archiving in Exchange 2013]
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>.
 
 ## What do you want to do?
 

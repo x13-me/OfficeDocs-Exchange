@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Federated Sharing role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Federated Sharing` management role enables administrators to manage cross-forest and cross-organization sharing in an organization.

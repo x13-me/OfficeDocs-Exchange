@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # IPv6 support in Unified Messaging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP. In Microsoft Exchange Server 2010, IPv6 is supported only when IPv4 is also used. A pure IPv6 Exchange environment isn't supported. The use of IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on the computer running Exchange 2010 and the network supports both IP address versions. However, because IPv4 and IPv6 are completely different protocols, an IPv4 network can't communicate directly with an IPv6 network, and vice versa. To handle this shortcoming, network administrators are required to deploy devices, such as routers, that can route information between IPv4 networks and IPv6 networks. If Exchange 2010 is deployed using both IPv4 and IPv6, all server roles except Unified Messaging (UM) can send data to and receive data from devices, servers, and clients that use IPv6 addresses. With Exchange 2013, Unified Messaging is no longer a separate server role like the Transport, Client Access, and Mailbox server roles in Exchange 2007 and Exchange 2010. UM-related components and speech services run on only Client Access and Mailbox servers.

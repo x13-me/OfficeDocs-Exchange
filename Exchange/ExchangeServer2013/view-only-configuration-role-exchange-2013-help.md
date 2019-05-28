@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # View-Only Configuration role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `View-Only Configuration` management role enables administrators to view all the non-recipient Exchange configuration settings in an organization. Examples of configuration that are viewable are server configuration, transport configuration, database configuration, and organization-wide configuration.
