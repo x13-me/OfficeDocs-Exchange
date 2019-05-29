@@ -102,7 +102,7 @@ Outlook supports the following settings for configuration:
 </tr>
 <tr class="odd">
 <td>Suggested replies</td>
-<td>Off</td>
+<td>On</td>
 <td>By default, Outlook for Android will suggest replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 </tr>
 </tbody>
