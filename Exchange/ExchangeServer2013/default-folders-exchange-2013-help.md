@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Default folders that support Retention Policy Tags in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use [Retention tags and retention policies](retention-tags-and-policies-exchange-2013-help.md) to manage email lifecycle. Retention Policies contain Retention Tags, which are settings you can use to specify when a message should be automatically moved to the archive or when it should be deleted.
 

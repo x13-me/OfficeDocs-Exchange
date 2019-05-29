@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Outlook Voice Access procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Enable or disable Outlook Voice Access for users](enable-or-disable-outlook-voice-access-exchange-2013-help.md)
 

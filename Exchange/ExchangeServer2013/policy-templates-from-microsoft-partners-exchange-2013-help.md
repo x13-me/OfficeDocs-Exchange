@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Policy templates from Microsoft partners in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The data loss prevention (DLP) features can help you identify and monitor many categories of sensitive information. As you configure your DLP polices, you have the option to import a file from a source outside Microsoft Exchange to use as a DLP policy template. Microsoft partner companies can develop and distribute these types of templates. This topic will be updated with a link to help you find these companies once they are available.
 

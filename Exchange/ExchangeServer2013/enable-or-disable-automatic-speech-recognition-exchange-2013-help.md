@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable automatic speech recognition for an Outlook Voice Access user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure Automatic Speech Recognition (ASR) for a user who's enabled for Unified Messaging (UM) and voice mail. When ASR is enabled on the mailbox of an Outlook Voice Access user, the user can move through the mailbox menus using voice commands. ASR is enabled by default. If ASR is disabled, the user must use dual tone multi-frequency (DTMF), also known as touchtone, inputs to move through the menus.
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable a call answering rule for a user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the Shell to enable or disable one or more call answering rules for a user. You can also use the **Enable-UMCallAnsweringRule** or **Disable-UMCallAnsweringRule** cmdlets in an Exchange Management Shell script to enable or disable one or more call answering rules for multiple users.
 

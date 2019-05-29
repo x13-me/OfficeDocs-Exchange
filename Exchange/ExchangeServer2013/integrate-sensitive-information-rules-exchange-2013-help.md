@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Integrating sensitive information rules with transport rules in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange, you can create DLP policies that contain rules for not only traditional message classifications and existing transport rules but also combine these with rules for sensitive information found within messages. The existing transport rules framework offers rich capabilities to define messaging policies, covering the entire spectrum of soft to hard controls. Examples include:
 

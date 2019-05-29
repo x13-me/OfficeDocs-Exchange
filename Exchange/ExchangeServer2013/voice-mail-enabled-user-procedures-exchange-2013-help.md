@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Voice mail-enabled user procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Enable a user for voice mail](enable-a-user-for-voice-mail-exchange-2013-help.md)
 

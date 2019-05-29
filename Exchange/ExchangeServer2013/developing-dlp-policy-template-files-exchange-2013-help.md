@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Developing DLP policy template files in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This overview explains the components of an XML schema definition for data loss prevention (DLP) policy template files and also provides an XML-format example policy file. It will be helpful to understand the overall DLP architecture and rule-development process before you begin. For more information, see [Data loss prevention](data-loss-prevention-exchange-2013-help.md) and [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

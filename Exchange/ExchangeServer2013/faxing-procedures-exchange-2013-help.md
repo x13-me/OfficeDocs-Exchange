@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Faxing procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Set the partner fax server URI to allow faxing](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)
 

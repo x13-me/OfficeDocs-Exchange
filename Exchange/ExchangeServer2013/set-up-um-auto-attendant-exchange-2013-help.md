@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Set up a UM auto attendant in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 In addition to allowing users access to voice mail, Unified Messaging (UM) allows you to create one or more UM auto attendants depending on the needs of your organization. UM auto attendants can be used to create a voice menu system for an organization that lets external and internal callers locate, place, or transfer calls to company users or departments in an organization.
 

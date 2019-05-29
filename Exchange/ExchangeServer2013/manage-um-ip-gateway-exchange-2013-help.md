@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Manage a UM IP gateway in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 

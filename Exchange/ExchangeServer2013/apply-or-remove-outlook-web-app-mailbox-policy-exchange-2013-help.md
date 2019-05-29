@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Apply or remove an Outlook Web App mailbox policy on a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can apply an Outlook Web App mailbox policy to one or more mailboxes or remove one using either the EAC or the Shell.
 

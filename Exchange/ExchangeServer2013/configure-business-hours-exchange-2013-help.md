@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure business hours in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you configure business hours for a Unified Messaging (UM) auto attendant, you define the hours of the day that your organization is open, and the business hours greetings and menu prompts callers will hear when they call an extension number that's configured on the auto attendant. If a caller reaches the auto attendant during hours that are outside the business hours you define, the caller will hear the non-business hours prompts and greetings.
 

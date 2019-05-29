@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Override the distribution group naming policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange Administration Center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
 

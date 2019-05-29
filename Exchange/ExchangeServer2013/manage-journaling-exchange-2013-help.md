@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage journaling in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. This topic shows you how to perform basic tasks related to managing journaling in Exchange 2013.
 

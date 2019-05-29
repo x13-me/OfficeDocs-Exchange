@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Common message approval scenarios in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Your organization may require certain types of messages be approved in order to meet legal or compliance requirements, or to implement a specific business workflow. This article discusses examples of common scenarios that you can set up by using Exchange.
 

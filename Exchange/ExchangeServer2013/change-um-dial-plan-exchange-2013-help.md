@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Change the UM dial plan in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You may need to move a user who is enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan that's associated with the user. For example, you might want to move a UM-enabled user from a Telephone Extension dial plan to a SIP URI dial plan.
 

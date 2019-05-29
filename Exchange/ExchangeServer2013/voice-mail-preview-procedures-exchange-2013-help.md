@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Voice Mail Preview procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Configure Voice Mail Preview partner services for users](configure-voice-mail-preview-partner-services-exchange-2013-help.md)
 

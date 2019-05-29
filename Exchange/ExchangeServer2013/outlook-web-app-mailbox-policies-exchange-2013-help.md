@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Outlook Web App mailbox policies in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Use Microsoft Outlook Web App mailbox policies to create organization-level policies to manage access to features in Outlook Web App.
 

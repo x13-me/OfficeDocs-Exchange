@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure an auto attendant for users who have similar names in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the method to use for users with similar names on an auto attendant's **Address book and operator access** options, or you can leave the default setting on the auto attendant and configure this setting on the dial plan associated with the auto attendant. By default, an auto attendant can disambiguate between two or more users who have the same or similar names because the default setting on the auto attendant is **Inherit from dial plan**.
 

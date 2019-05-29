@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # In-Place eDiscovery in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Microsoft Exchange Server 2013 can help you perform discovery searches for relevant content within mailboxes. Exchange 2013 also offers federated search capability and integration with Microsoft SharePoint 2013. Using the eDiscovery Center in SharePoint, you can search for and hold all content related to a case, including SharePoint 2013 websites, documents, file shares indexed by SharePoint, mailbox content in Exchange, and archived Lync 2013 content. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 

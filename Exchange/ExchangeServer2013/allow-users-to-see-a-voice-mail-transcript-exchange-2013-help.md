@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Allow users to see a voice mail transcript in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see [Microsoft Speech Technologies](http://go.microsoft.com/fwlink/p/?linkId=187348).
 
