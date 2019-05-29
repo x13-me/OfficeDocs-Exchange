@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a sharing policy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use sharing policies to control how users in your Exchange organization share calendar information with users outside your organization. Sharing policies provide user-established, people-to-people sharing of calendar information with different types of external users. They support the sharing of calendar information with external federated organizations (such as Office 365 or another on-premises Exchange organization), external non-federated organizations, and individuals with Internet access. To apply a specific sharing policy to users, see [Apply a sharing policy to mailboxes](apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md).
@@ -54,8 +52,6 @@ For additional management tasks related to federation, see [Federation procedure
       - The Exchange 2013 Client Access server must be enabled for Outlook Web App access.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
-## What do you want to do?
 
 ## Use the EAC to create a sharing policy
 
@@ -153,4 +149,4 @@ Get-SharingPolicy <policy name> | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

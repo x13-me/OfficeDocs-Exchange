@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # DSNs and NDRs in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 > [!NOTE]

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Manually configure Edge Transport server mail flow
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic describes procedures for making manual configuration changes to how an Edge Transport Server manages mail flow. These procedures are intended to address specific scenarios; unless your organization has specific needs for making manual configuration changes, using the default configuration when subscribing Edge Transport servers is preferred.

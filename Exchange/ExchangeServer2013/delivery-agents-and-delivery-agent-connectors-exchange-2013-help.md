@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Delivery agents and Delivery Agent connectors
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A delivery agent can deliver messages from your SMTP Exchange Server environment to a system that doesn't use the SMTP protocol. Each delivery agent is associated with a Delivery Agent connector, which queues messages routed to the delivery agent for processing and delivery to the non-SMTP device or system.

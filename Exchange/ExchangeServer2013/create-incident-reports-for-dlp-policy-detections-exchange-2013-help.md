@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create incident reports for DLP policy detections
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Exchange Server 2013, you can establish an action to create an incident report within a DLP policy rule set. Additionally, you can indicate to whom the report should be sent and what to do with the original message. The incident report can contain any of the following information.

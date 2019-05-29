@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configuring federated sharing between Exchange organizations
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 With federated sharing, users in your on-premises Exchange organization can share free/busy calendar information with recipients in other Exchange organizations that are also configured for federated sharing. Free/busy sharing can be enabled between two organizations running Exchange 2013 and also between organizations with a mixed Exchange deployment. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
@@ -44,8 +42,6 @@ For additional management tasks related to federated sharing, see [Federation pr
   - Before you perform the procedures in this topic, make sure you understand the limitations associated with sharing free/busy information across Exchange organizations. For details, see [Limitations of free/busy sharing](sharing-exchange-2013-help.md).
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
-## What do you want to do?
 
 ## Configure free/busy sharing between Exchange 2013 organizations
 

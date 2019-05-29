@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Messaging policy and compliance
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.

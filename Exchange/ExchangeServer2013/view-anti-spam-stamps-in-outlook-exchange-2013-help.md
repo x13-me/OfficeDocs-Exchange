@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # View anti-spam stamps in Outlook
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchange applied to an email message. Anti-spam stamps help you diagnose spam-related problems by applying diagnostic metadata, or stamps, such as sender-specific information, puzzle validation results, and content filtering results to messages as the messages pass through the anti-spam agents that filter inbound messages from the Internet.
@@ -29,9 +27,7 @@ You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchan
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use Outlook 2010 or Outlook 2013 to view anti-spam stamps
 

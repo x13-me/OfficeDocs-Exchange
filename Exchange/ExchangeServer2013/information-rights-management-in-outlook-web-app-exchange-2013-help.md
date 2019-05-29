@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management in Outlook Web App
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Information workers increasingly use e-mail to exchange sensitive information. To help secure this information, organizations can use Information Rights Management (IRM) to apply persistent protection to messaging content. Prior to Microsoft Exchange Server 2010, effective use of IRM protection was limited to Outlook clients. In Exchange Server 2007, Microsoft Outlook Web Access users were required to download the Rights Management add-in for Microsoft Internet Explorer so they could access IRM-protected content.

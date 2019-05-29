@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Foreign connectors
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A Foreign connector delivers messages to a server or foreign system that does not use SMTP as its primary transport mechanism. An example of this can be a fax-gateway server. A Foreign connector uses a local or shared Drop directory to send outbound messages, by means of a file transfer, to the foreign system. Foreign connectors are created in the Transport service of a Microsoft Exchange Server 2013 Mailbox server.

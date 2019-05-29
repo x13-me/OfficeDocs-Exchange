@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: ef6d9151-d333-4f52-9338-273f7a291e54
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Set Outlook Voice Access PIN security
+title: Set Outlook Voice Access PIN security in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Set Outlook Voice Access PIN security
+# Set Outlook Voice Access PIN security in Exchange Online
 
 When Unified Messaging (UM) users connect to the voice mail system by telephone, they use Outlook Voice Access to navigate the menu system. Before users can access the voice mail system, the system prompts them to enter their PIN. As the administrator, you can configure PIN settings and requirements and perform PIN management tasks. After a user has been enabled for voice mail and a PIN has been generated, the user's PIN is stored encrypted in the user's mailbox.
 

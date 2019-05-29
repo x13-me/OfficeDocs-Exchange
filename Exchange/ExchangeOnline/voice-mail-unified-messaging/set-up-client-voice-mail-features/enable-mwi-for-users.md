@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable Message Waiting Indicator (MWI) for users
+title: Enable Message Waiting Indicator (MWI) for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Enable Message Waiting Indicator (MWI) for users
+# Enable Message Waiting Indicator (MWI) for users in Exchange Online
 
 You can enable or disable Message Waiting Indicator for users associated with a Unified Messaging (UM) mailbox policy. Message Waiting Indicator is a feature found in most legacy voice mail systems. In its most common form, it lights a lamp on a voice mail subscriber's phone to indicate the presence of a new voice mail message. Message Waiting Indicator can also send a text message to a UM-enabled user's mobile phone. The default setting is enabled.
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Legal Hold role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The `Legal Hold` management role enables administrators to configure whether data within a mailbox should be retained for litigation purposes in an organization.
@@ -182,4 +180,4 @@ The following are the most common steps to create a customized role and assign i
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
         > [!IMPORTANT]
-        > If you want other users, in addition to the user that created the role, to be able to assign the new customized role, be sure to add a delegating role assignment to at least one role assignee. For more information, see <A href="delegate-role-assignments-exchange-2013-help.md">Delegate role assignments</A>.
+        > If you want other users, in addition to the user that created the role, to be able to assign the new customized role, be sure to add a delegating role assignment to at least one role assignee. For more information, see [Delegate role assignments](delegate-role-assignments-exchange-2013-help.md).

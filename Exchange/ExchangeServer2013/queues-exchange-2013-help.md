@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Queues
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A *queue* is a temporary holding location for messages that are waiting to enter the next stage of processing or delivery to a destination. Each queue represents a logical set of messages that the Exchange server processes in a specific order. In Microsoft Exchange Server 2013, queues hold messages before, during and after delivery. Queues exist on Mailbox servers and Edge Transport servers. Mailbox servers and Edge Transport servers are called *transport servers* throughout this topic.

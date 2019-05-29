@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure the startup mode on a Mailbox server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can specify the startup mode for the Microsoft Exchange Unified Messaging service on a Mailbox server. By default, the Mailbox server will start up in TCP mode, but if you're using Transport Layer Security (TLS) to encrypt Voice over IP (VoIP) traffic, you must configure the Mailbox server to use TLS or Dual mode. We recommend that Mailbox servers be configured to use Dual as the startup mode. This is because all Client Access servers and Mailbox servers can answer incoming calls for all UM dial plans, and those dial plans can have different security settings (Unsecured, SIP secured, or Secured). If you change the startup mode, you must restart the Microsoft Exchange Unified Messaging service for the change to take effect.
@@ -36,9 +34,7 @@ For additional management tasks related to Unified Messaging and Mailbox servers
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to configure the startup mode on a Mailbox server
 

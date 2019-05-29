@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create an organization relationship
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Set up an organization relationship to share calendar information with an external business partner. You can configure an organization relationship between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up an organization relationship between your on-premises Exchange organization and an Office 365 organization.
@@ -36,8 +34,6 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
   - The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system. You'll use the primary federated domain for the external Exchange organization when configuring the organization relationship.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
-## What do you want to do?
 
 ## Use the EAC to create an organization relationship
 
@@ -122,4 +118,4 @@ Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

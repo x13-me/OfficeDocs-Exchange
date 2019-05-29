@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Federation procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Configure federated sharing](configure-federated-sharing-exchange-2013-help.md)

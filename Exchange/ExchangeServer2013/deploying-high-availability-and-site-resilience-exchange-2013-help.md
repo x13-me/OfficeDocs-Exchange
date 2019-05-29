@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploying high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange 2013 Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.

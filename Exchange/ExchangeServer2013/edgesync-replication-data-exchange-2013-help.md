@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # EdgeSync replication data
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you deploy an Edge Transport server, it doesn't have access to Active Directory. To perform recipient lookup and safelist aggregation tasks, and to implement domain security by using Mutual Transport Layer Security (MTLS) authentication, the Edge Transport server needs data from Active Directory. This data is replicated to the Edge Transport server using EdgeSync; the Edge Transport server stores all replicated information in Active Directory Lightweight Directory Services (AD LDS).

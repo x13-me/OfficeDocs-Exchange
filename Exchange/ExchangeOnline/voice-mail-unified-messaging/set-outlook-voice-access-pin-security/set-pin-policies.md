@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Set Outlook Voice Access PIN policies
+title: Set Outlook Voice Access PIN policies in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Set Outlook Voice Access PIN policies
+# Set Outlook Voice Access PIN policies in Exchange Online
 
 You can set PIN policies on a Unified Messaging (UM) mailbox policy. UM mailbox policies can be configured to increase the level of security for UM-enabled users that use Outlook Voice Access by requiring users to comply with the predefined PIN policies for your organization.
 

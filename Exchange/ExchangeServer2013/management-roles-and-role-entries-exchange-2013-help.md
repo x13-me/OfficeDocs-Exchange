@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Management roles and role entries
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The following procedures enable you to perform advanced permissions management. You should only use these procedures if management role groups and management role assignment policies don't meet the needs of your organization.

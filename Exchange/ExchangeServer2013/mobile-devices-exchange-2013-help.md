@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mobile devices
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Mobile devices that are enabled for Microsoft Exchange ActiveSync let users access most of their Microsoft Exchange mailbox data any time, anywhere. There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Windows Phones, Nokia mobile phones, Android phones and tablets, and the Apple iPhone, iPod, and iPad.

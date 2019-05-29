@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Switchovers and Failovers
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
 
 Switchovers and failovers are the two forms of outages in Microsoft Exchange Server 2013:

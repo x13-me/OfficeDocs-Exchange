@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Update your Exchange organization when Daylight Saving Time or the time zone changes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 If the country or region where your organization or some of your users reside has changed their policy of recognizing Daylight Saving Time (DST), or changed the local time offset from Coordinated Universal Time (UTC), you need may need to update Microsoft Windows, Microsoft Exchange, Microsoft Outlook, or other programs to accommodate these changes.

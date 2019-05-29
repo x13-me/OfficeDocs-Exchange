@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2010, the Mailbox server role hosted both mailbox and public folder databases and also provided email message storage. Now, in Exchange Server 2013, the Mailbox server role also includes the Client Access protocols, Transport service, mailbox databases, and Unified Messaging components.

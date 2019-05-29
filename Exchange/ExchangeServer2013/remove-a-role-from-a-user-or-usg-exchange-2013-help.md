@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remove a role from a user or USG
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Management role assignments assign a management role to a user or universal security group (USG). If you remove a role assignment, the users assigned the role will no longer have access to the cmdlets available on that role. For more information about management role assignments in Microsoft Exchange Server 2013, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
@@ -33,7 +31,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Remove a management role assignment
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Turn off or suspend messaging records management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 To meet individual, IT, or business requirements, you may need to turn off or temporarily suspend messaging records management (MRM) for an individual user or for a Mailbox server. Reasons you may need to turn off or suspend MRM include:
@@ -38,9 +36,7 @@ To meet individual, IT, or business requirements, you may need to turn off or te
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-
-## What do you want to do?
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Place mailboxes on retention hold
 

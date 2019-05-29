@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Keyboard shortcuts in the Exchange admin center
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the keyboard shortcuts that make Microsoft Exchange and other Microsoft products and services more accessible for people with disabilities.

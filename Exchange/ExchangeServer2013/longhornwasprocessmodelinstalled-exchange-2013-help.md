@@ -14,13 +14,11 @@ mtps_version: v=EXCHG.150
 
 # The Windows Process Activation Service - Process Model component is required\_LonghornWASProcessModelInstalled
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Exchange Server 2010 setup cannot continue installation on the Windows Server 2008-or Windows Server 2008 R2-based computer because the Windows Process Activation Service - Process Model feature is not installed on the server.
 

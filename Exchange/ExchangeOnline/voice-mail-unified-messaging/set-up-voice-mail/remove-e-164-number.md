@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 17941918-7dc5-41a0-b540-09f2f907362b
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Remove an E.164 number
+title: Remove an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Remove an E.164 number
+# Remove an E.164 number in Exchange Online
 
 When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains the E.164 number for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 

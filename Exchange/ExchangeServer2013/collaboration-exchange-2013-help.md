@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Collaboration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange 2013 provides the following rich features that can help your end users easily collaborate in email:

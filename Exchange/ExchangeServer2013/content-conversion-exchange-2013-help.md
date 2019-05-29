@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Content conversion
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Content conversion* is the process of correctly formatting a message for each recipient. The decision to perform content conversion on a message depends on the destination and format of the message being processed. In Microsoft Exchange Server 2013, there are two different kinds of content conversion:

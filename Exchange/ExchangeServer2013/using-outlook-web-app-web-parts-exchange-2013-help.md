@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Using Outlook Web App Web parts
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use Microsoft Office Outlook Web App Web Parts to specify the mailbox to open, the folder within that mailbox to open, and the content view to use.
@@ -82,10 +80,6 @@ The following table lists the parameters of a Web Part and examples of how they'
 <td><p>exsvurl</p></td>
 <td><p>This parameter must be included when using LiveID authentication</p>
 <p>All parameters will be discarded during LiveID authentication if &quot;exsvurl=1&quot; is not present. This parameter is for Office 365 mailboxes only.</p>
-
-> [!NOTE]
-> Exchange Online no longer includes support for Web Parts.
-
 </td>
 
 <td><p>https://&lt;server name&gt;/owa/?cmd=contents&amp;exsvurl=1</p></td>

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Delegate the installation of an Exchange 2013 server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 lets you delegate the installation of Exchange servers to people who aren't members of the Exchange 2013 Organization Management role group. This is often helpful in large companies where the people who install and set up servers aren't the same people who manage services, like Exchange. If this sounds like something you want to do, this topic is for you.
@@ -99,6 +97,6 @@ To make sure the server was properly provisioned for Exchange, you can do the fo
 
 If your server is listed as a member of the Exchange Servers security group, it was properly provisioned. Someone who's a member of the Delegated Setup role group can now install Exchange on that server.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.

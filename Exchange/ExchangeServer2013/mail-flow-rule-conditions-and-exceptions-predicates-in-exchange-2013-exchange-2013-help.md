@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Transport rule conditions and exceptions (predicates) in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Conditions and exceptions in transport rules identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in transport rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Message filters
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Filtering generates different views of the messages in queues. By specifying filter criteria, you can quickly locate messages and take action on them. When an email message is sent to multiple recipients, the message may be located in multiple queues. When you filter by message properties, you can locate messages across all queues. The following scenarios are examples of how you might use message filtering to manage mail flow:

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Office 2010 Filter Pack SP1 not installed
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2013 Setup can continue.
@@ -29,6 +27,6 @@ Download and install the 64-bit update from the following URL, and then click **
 
 [Service Pack 1 for Microsoft Office Filter Pack 2010 (KB2460041) 64-bit Edition](https://go.microsoft.com/fwlink/p/?linkid=254043)
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.

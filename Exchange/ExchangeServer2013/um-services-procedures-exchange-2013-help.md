@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # UM services procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Manage UM settings on a Mailbox server](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)

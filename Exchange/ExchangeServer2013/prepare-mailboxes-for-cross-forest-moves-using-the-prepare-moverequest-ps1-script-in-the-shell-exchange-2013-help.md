@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Prepare mailboxes for cross-forest moves using the Prepare-MoveRequest.ps1 script in the Shell
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 **Summary:** Learn how to manage cross-forest mailbox moves and migrations in Exchange 2013 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.
@@ -41,7 +39,7 @@ Looking for other management tasks related to remote move requests? Check out [M
       - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Prepare-MoveRequest.ps1 script to prepare mailboxes for cross-forest moves
 

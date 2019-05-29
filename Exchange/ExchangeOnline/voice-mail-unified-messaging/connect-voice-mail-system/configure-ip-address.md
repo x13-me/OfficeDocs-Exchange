@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the IP address
+title: Configure the IP address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Configure the IP address
+# Configure the IP address in Exchange Online
 
 Before you create a Unified Messaging (UM) IP gateway, you must first set the IP address or the fully qualified domain name (FQDN) on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. Then, when you create the UM IP gateway, you set the IP address or FQDN. You can change the IP address or FQDN later.
 

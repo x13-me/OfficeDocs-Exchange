@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remove a federation trust
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system and supports sharing with other federated Exchange organizations. Removing a federation trust from your on-premises Exchange organization will disable federated sharing with other federated Exchange organizations and with Office 365 organizations connected to your organization as part of a hybrid deployment. You should carefully consider the overall impact to your organization before removing a federation trust.
@@ -34,8 +32,6 @@ For additional management tasks related to federation trusts, see [Federation pr
   - After removing the federation trust, you can remove the TXT records from your public DNS server for each federated domain. Review the requirements for removing a TXT record with the organization that hosts your public DNS records.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
-## What do you want to do?
 
 ## Use the EAC to remove a federation trust
 
@@ -71,4 +67,4 @@ To verify that you have successfully removed the federation trust, do one of the
 
     For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

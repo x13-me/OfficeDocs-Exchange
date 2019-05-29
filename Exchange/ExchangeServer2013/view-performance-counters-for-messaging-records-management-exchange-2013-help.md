@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # View performance counters for messaging records management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use Windows Reliability and Performance Monitor (Perfmon.exe) to select and view performance counters for messaging records management (MRM). By using performance counters, you can monitor the Managed Folder Assistant while it runs resource-intensive MRM processes.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Every day, information workers use e-mail to exchange sensitive information such as financial reports and data, legal contracts, confidential product information, sales reports and projections, competitive analysis, research and patent information, and customer and employee information. Because people can now access their e-mail from just about anywhere, mailboxes have transformed into repositories containing large amounts of potentially sensitive information. As a result, information leakage can be a serious threat to organizations. To help prevent information leakage, Microsoft Exchange Server 2013 includes Information Rights Management (IRM) features, which provide persistent online and offline protection of e-mail messages and attachments.

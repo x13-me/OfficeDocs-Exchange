@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding management role scope filters
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Management role scope filters can be used to define management scopes that are highly customizable. Using scope filters, you can create a scope that matches how you segment your recipients, databases, and servers so that administrators can manage only those objects they should have access to. Scope filters can use nearly any recipient, database, or server object property.

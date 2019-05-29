@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # My ReadWriteMailbox Apps role
 
- 
-
 The My ReadWriteMailbox Apps role enables individual users to add add-ins that request the ReadWriteMailbox permission in their manifest.
 
 This management role is one of several built-in roles in the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. Management roles, which are assigned to one or more management role groups, management role assignment policies, users, or universal security groups (USG), act as a logical grouping of cmdlets or scripts that are combined to provide access to view or modify the configuration of Exchange 2013 components, such as mailbox databases, transport rules, and recipients. If a cmdlet or script and its parameters, together called a management role entry, are included on a role, that cmdlet or script and its parameters can be run by those assigned the role. For more information about management roles and management role entries, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
@@ -153,4 +151,4 @@ The following are the most common steps to create a customized role and assign i
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
         > [!IMPORTANT]
-        > If you want other users, in addition to the user that created the role, to be able to assign the new customized role, be sure to add a delegating role assignment to at least one role assignee. For more information, see <A href="delegate-role-assignments-exchange-2013-help.md">Delegate role assignments</A>.
+        > If you want other users, in addition to the user that created the role, to be able to assign the new customized role, be sure to add a delegating role assignment to at least one role assignee. For more information, see [Delegate role assignments](delegate-role-assignments-exchange-2013-help.md).

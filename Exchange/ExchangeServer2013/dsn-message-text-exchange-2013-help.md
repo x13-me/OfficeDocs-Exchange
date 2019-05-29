@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # DSN message text
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can include text in a customized delivery status notification (DSN) message in Microsoft Exchange Server 2013, and you can format that text in HTML.

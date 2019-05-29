@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure Edge Transport server using cloned configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use the provided Exchange Management Shell scripts (located in %ExchangeInstallPath%Scripts) to duplicate the configuration of an Edge Transport server. This process is referred to as *cloned configuration*. *Cloned configuration* is the practice of deploying new Edge Transport servers based on configuration information from a previously configured source server. The configuration information from the previously configured source server is copied and exported to an XML file, which is then imported to the target server. For an overview of this process, see [Edge Transport server cloned configuration](edge-transport-server-cloned-configuration-exchange-2013-help.md).
@@ -45,7 +43,7 @@ Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## How do you do this?
 

@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
 ms.date: 11/17/2014
 ms.reviewer: 
-title: View a UM hunt group
+title: View a UM hunt group in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# View a UM hunt group
+# View a UM hunt group in Exchange Online
 
 When you view the properties for a Unified Messaging (UM) hunt group, you can view the properties associated with a single UM hunt group or with all UM hunt groups associated with a single UM IP gateway. If neither parameter is specified, all UM hunt groups will be returned. You can't use the EAC to view UM hunt group properties; you must use Exchange Online PowerShell.
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Default settings for Exchange virtual directories
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 automatically configures multiple Internet Information Services (IIS) virtual directories during installation. This topic contains information about the default IIS authentication settings and default Secure Sockets Layer (SSL) settings for the Client Access and Mailbox servers.

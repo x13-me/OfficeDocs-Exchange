@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configuring Kerberos authentication for load-balanced Client Access servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 **Summary:** Describes how to use Kerberos authentication with load-balanced Client Access servers in Exchange 2013.
@@ -55,13 +53,13 @@ When you set up the ASA credential, keep these guidelines in mind:
 2. Use the **New-ADComputer** cmdlet to create a new Active Directory computer account using this cmdlet syntax:
 
     ```powershell
-        New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+    New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     ```
 
     **Example:**
 
     ```powershell
-        New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
+    New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     ```
 
     Where *EXCH2013ASA* is the name of the account, the description *Alternate Service Account credentials for Exchange* is whatever you want it to be, and the value for the *SamAccountName* parameter, in this case *EXCH2013ASA*, need to be unique in your directory.
@@ -69,7 +67,7 @@ When you set up the ASA credential, keep these guidelines in mind:
 3. Use the **Set-ADComputer** cmdlet to enable the AES 256 encryption cipher support used by Kerberos using this cmdlet syntax:
 
     ```powershell
-        Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     ```
 
     **Example:**
@@ -151,7 +149,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 3. Run the following command to deploy the ASA credential to the first Exchange 2013 Client Access server:
 
     ```powershell
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
     ```
 
 4. When you're asked if you want to change the password for the alternate service account, answer **Yes**.
@@ -159,52 +157,52 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
 ```powershell
-    ========== Starting at 01/12/2015 10:17:47 ==========
-    Creating a new session for implicit remoting of "Get-ExchangeServer" command...
-    Destination servers that will be updated:
+========== Starting at 01/12/2015 10:17:47 ==========
+Creating a new session for implicit remoting of "Get-ExchangeServer" command...
+Destination servers that will be updated:
 
-    Name                                                        PSComputerName
-    ----                                                        --------------
-    cas-1                                                   cas-1.corp.tailspintoys.com
+Name                                                        PSComputerName
+----                                                        --------------
+cas-1                                                   cas-1.corp.tailspintoys.com
 
-    Credentials that will be pushed to every server in the specified scope (recent first):
+Credentials that will be pushed to every server in the specified scope (recent first):
 
-    UserName
-    Password
-    --------
-    --------
-    tailspin\EXCH2013ASA$
-    System.Security.SecureString
+UserName
+Password
+--------
+--------
+tailspin\EXCH2013ASA$
+System.Security.SecureString
 
-    Prior to pushing new credentials, all existing credentials that are invalid or no longer work will be removed from  the destination servers.
-    Pushing credentials to server cas-1
-    Setting a new password on Alternate Serice Account in Active Directory
+Prior to pushing new credentials, all existing credentials that are invalid or no longer work will be removed from  the destination servers.
+Pushing credentials to server cas-1
+Setting a new password on Alternate Serice Account in Active Directory
 
-    Password change
-    Do you want to change password for tailspin\EXCH2013ASA$ in Active Directory at this time?
-    [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
-    Preparing to update Active Directory with a new password for tailspin\EXCH2013ASA$ ...
-    Resetting a password in the Active Directory for tailspin\EXCH2013ASA$ ...
-    New password was successfully set to Active Directory.
-    Retrieving the current Alternate Service Account configuration from servers in scope
-    Alternate Service Account properties:
+Password change
+Do you want to change password for tailspin\EXCH2013ASA$ in Active Directory at this time?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Preparing to update Active Directory with a new password for tailspin\EXCH2013ASA$ ...
+Resetting a password in the Active Directory for tailspin\EXCH2013ASA$ ...
+New password was successfully set to Active Directory.
+Retrieving the current Alternate Service Account configuration from servers in scope
+Alternate Service Account properties:
 
-    StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
-    --------------------- ----------------- ---------------       ----
-    computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
+StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
+--------------------- ----------------- ---------------       ----
+computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
 
-    Per-server Alternate Service Account configuration as of the time of script completion:
+Per-server Alternate Service Account configuration as of the time of script completion:
 
-       Array: {mail.corp.tailspintoys.com}
+   Array: {mail.corp.tailspintoys.com}
 
-    Identity  AlternateServiceAccountConfiguration
-    --------  ------------------------------------
-    cas-1 Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-              ...
+Identity  AlternateServiceAccountConfiguration
+--------  ------------------------------------
+cas-1 Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+    ...
 
-    ========== Finished at 01/12/2015 10:20:00 ==========
+========== Finished at 01/12/2015 10:20:00 ==========
 
-            THE SCRIPT HAS SUCCEEDED
+    THE SCRIPT HAS SUCCEEDED
 ```
 
 ## Deploy the ASA credential to another Exchange 2013 Client Access server
@@ -216,7 +214,7 @@ The following is an example of the output that's shown when you run the RollAlte
 3. Run the following command to deploy the ASA credential to another Exchange 2013 Client Access server:
 
     ```powershell
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
     ```
 
 4. Repeat Step 3 for each Client Access server you want to deploy the ASA credential to.
@@ -224,43 +222,43 @@ The following is an example of the output that's shown when you run the RollAlte
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
 ```powershell
-    ========== Starting at 01/12/2015 10:34:35 ==========
-    Destination servers that will be updated:
+========== Starting at 01/12/2015 10:34:35 ==========
+Destination servers that will be updated:
 
-    Name                                                        PSComputerName
-    ----                                                        --------------
-    cas-2                                                   cas-2.corp.tailspintoys.com
+Name                                                        PSComputerName
+----                                                        --------------
+cas-2                                                   cas-2.corp.tailspintoys.com
 
-    Credentials that will be pushed to every server in the specified scope (recent first):
+Credentials that will be pushed to every server in the specified scope (recent first):
 
-    UserName
-    Password
-    --------
-    --------
-    tailspin\EXCH2013ASA$
-    System.Security.SecureString
+UserName
+Password
+--------
+--------
+tailspin\EXCH2013ASA$
+System.Security.SecureString
 
-    Prior to pushing new credentials, all existing credentials will be removed from the destination servers.
-    Pushing credentials to server cas-2
-    Retrieving the current Alternate Service Account configuration from servers in scope
-    Alternate Service Account properties:
+Prior to pushing new credentials, all existing credentials will be removed from the destination servers.
+Pushing credentials to server cas-2
+Retrieving the current Alternate Service Account configuration from servers in scope
+Alternate Service Account properties:
 
-    StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
-    --------------------- ----------------- ---------------       ----
-    computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
+StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
+--------------------- ----------------- ---------------       ----
+computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
 
-    Per-server Alternate Service Account configuration as of the time of script completion:
+Per-server Alternate Service Account configuration as of the time of script completion:
 
-       Array: cas-2.corp.tailspintoys.com
+   Array: cas-2.corp.tailspintoys.com
 
-    Identity  AlternateServiceAccountConfiguration
-    --------  ------------------------------------
-    cas-2 Latest: 1/12/2015 10:37:59 AM, tailspin\EXCH2013ASA$
-              ...
+Identity  AlternateServiceAccountConfiguration
+--------  ------------------------------------
+cas-2 Latest: 1/12/2015 10:37:59 AM, tailspin\EXCH2013ASA$
+    ...
 
     ========== Finished at 01/12/2015 10:38:13 ==========
 
-            THE SCRIPT HAS SUCCEEDED
+        THE SCRIPT HAS SUCCEEDED
 ```
 
 ## Verify the deployment of the ASA credential

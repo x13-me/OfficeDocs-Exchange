@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Add an extension number
+title: Add an extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Add an extension number
+# Add an extension number in Exchange Online
 
 When you enable a user for UM and link them to a telephone extension dial plan, an EUM proxy address is created for the user that contains the user's extension number. You must define at least one extension number for UM to use so voice mail can be sent to the user's mailbox. The extension number is also used when the user calls in to an Outlook Voice Access number.
 

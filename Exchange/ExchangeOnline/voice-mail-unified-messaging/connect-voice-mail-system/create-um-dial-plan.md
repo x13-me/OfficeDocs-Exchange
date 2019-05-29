@@ -9,7 +9,7 @@ ms.author: chrisda
 ms.assetid: 963ff2e1-515d-439a-953a-664174e5e283
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Create a UM dial plan
+title: Create a UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -17,7 +17,7 @@ manager: dansimp
 
 ---
 
-# Create a UM dial plan
+# Create a UM dial plan in Exchange Online
 
 A Unified Messaging (UM) dial plan contains configuration information related to your telephony network. A UM dial plan establishes a link from the telephone extension number of a user enabled for voice mail to their mailbox. When you create a UM dial plan, you can configure the number of digits in the extension numbers, the Uniform Resource Identifier (URI) type, and the Voice over IP (VoIP) security setting for the dial plan.
 

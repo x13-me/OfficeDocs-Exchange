@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Planning to use Active Directory sites for routing mail
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 recognizes Active Directory sites and database availability groups (DAGs) as routing boundaries. However, Exchange 2013 still uses Active Directory site topology to determine how messages are transported between Exchange servers in different DAGs or sites within the organization. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).

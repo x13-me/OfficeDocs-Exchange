@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # DNS query failure sensitivity
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, you can adjust the DNS query sensitivity for slightly faster message delivery when DNS errors are encountered for the destination domain. However, depending on the DNS errors, this adjustment may cause delivery failures in certain circumstances.

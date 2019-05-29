@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # DSN message identity
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can identify a customized delivery status notification (DSN) message based on its syntax. The identity is the customized DSN message's GUID or a string that consists of the following values:

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Scenario: Deploying address book policies
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 ## Deployment Scenarios

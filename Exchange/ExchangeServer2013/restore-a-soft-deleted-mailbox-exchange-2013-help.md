@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Restore a soft-deleted mailbox
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Use the Shell to connect a soft-deleted mailbox to an Active Directory user account. A mailbox becomes *soft-deleted* in the source mailbox database when it's moved to a different mailbox database. Exchange doesn't fully delete the mailbox from the source mailbox database when the move is complete. Instead, the mailbox in the source mailbox database is switched to a soft-deleted state. This lets you restore the source mailbox in case errors occur during the move that cause a failure or corruption of the mailbox on the destination database. If this happens, you can restore the source mailbox and try the move again.
@@ -58,7 +56,7 @@ To learn more about soft-deleted mailboxes and perform other related management 
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to restore a soft-deleted mailbox
 

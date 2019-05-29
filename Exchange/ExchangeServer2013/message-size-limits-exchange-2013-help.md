@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Message size limits
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can apply limits to messages that move through the Microsoft Exchange Server 2013 organization. You can restrict the total size of a message or the size of the individual components of a message, such as the message header, the message attachments, and the number of recipients. You can apply limits globally for the whole Exchange organization, or specifically to a connector or user object.

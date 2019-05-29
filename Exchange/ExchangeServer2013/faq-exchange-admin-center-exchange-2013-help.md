@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # FAQ: Exchange admin center
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic provides you with a list of frequently asked questions for the new Exchange admin center (EAC) in Microsoft Exchange Server 2013. Have other questions about EAC not answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).

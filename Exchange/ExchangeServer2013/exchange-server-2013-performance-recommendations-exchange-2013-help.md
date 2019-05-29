@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Server 2013 Performance Recommendations
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 performance tuning and troubleshooting is most effective when your environment has been properly sized and planned. While Exchange 2013 was designed to simplify the underlying resource infrastructure, it can still consume a large amount of system resources, such as memory, storage capacity, and CPU capacity.
