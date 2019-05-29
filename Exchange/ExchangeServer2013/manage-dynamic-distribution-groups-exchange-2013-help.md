@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Manage dynamic distribution groups in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 

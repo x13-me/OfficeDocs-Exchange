@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove a global address list in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The global address list (GAL) is a directory that contains entries for every group, user, and contact within an Exchange organization.
 

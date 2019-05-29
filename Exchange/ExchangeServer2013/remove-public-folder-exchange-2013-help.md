@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove a public folder in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see [View statistics for public folders and public folder items](view-public-folder-statistics-exchange-2013-help.md).
 

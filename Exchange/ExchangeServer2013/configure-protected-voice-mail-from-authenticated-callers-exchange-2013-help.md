@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure Protected Voice Mail from authenticated callers in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:
 

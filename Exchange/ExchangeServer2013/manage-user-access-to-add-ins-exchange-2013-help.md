@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage user access to add-ins for Outlook in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Exchange admin center (EAC) or Exchange PowerShell to manage user access to add-ins for Outlook.
 

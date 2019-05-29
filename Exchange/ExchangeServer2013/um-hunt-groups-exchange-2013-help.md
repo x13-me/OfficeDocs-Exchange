@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM hunt groups in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
  A telephony hunt group provides a way to distribute telephone calls from a single number to multiple extensions or telephone numbers. In Unified Messaging (UM), a UM hunt group is a logical representation of a telephony hunt group, and it links a UM IP gateway to a UM dial plan.
 

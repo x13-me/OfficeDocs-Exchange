@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Modify an In-Place eDiscovery search in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After you create an In-Place eDiscovery search, you can modify it to change the search parameters. For example, you can change the mailboxes to be searched, date ranges, key words, logging options, or you can specify a different Discovery mailbox to store search results. Any changes you make to the search properties will be used when you restart the search.
 
