@@ -281,8 +281,6 @@ The actions that are available in transport rules on Mailbox servers are describ
 </tbody>
 </table>
 
-Return to top
-
 ## Actions for transport rules on Edge Transport servers
 
 A small subset of actions that are available on Mailbox servers are also available on Edge Transport servers, but there are also some actions that are only available on Edge Transport servers. There's no EAC on Edge Transport servers, so you can only manage transport rules in the Exchange Management Shell on the local Edge Transport server. The actions are described in the following table. The properties types are described in the Property values section.
@@ -620,8 +618,6 @@ The property values that are used for actions in transport rules are described i
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## For more information
 

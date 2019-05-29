@@ -89,13 +89,9 @@ The following table shows the logs generated on different server roles.
 </tbody>
 </table>
 
-Return to top
-
 ## Logging process
 
 Information is written to the log file until the file size reaches its maximum specified value. When the maximum size is reached, a log file that has an incremental instance number is created. This process is repeated throughout the day. Circular logging deletes the oldest log files when the IRM log directory reaches its maximum specified size or when a log file reaches the maximum age specified in the IRM logging configuration on each server.
-
-Return to top
 
 ## Information written to IRM logs
 
@@ -195,8 +191,6 @@ IRM log files are text files that contain data in comma-separated value (CSV) fo
     </tbody>
     </table>
 
-Return to top
-
 ## Managing IRM logs
 
 On each server role that has IRM features enabled, IRM logging is enabled by default. For each server role, you can modify the following IRM log configuration by using the server role's corresponding **Set** cmdlet. For example, to configure IRM logging on a Mailbox server, you use the **Set-MailboxServer** cmdlet.
@@ -245,5 +239,3 @@ For detailed syntax and parameter information, see the following topics:
   - [Set-ClientAccessServer](https://technet.microsoft.com/en-us/library/bb125157\(v=exchg.150\))
 
   - [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\))
-
-Return to top

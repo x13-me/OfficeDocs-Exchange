@@ -54,8 +54,6 @@ When a command is run, Exchange inspects the cmdlet that was used. If the cmdlet
 
 For more information about managing audit logging configuration, see [Manage administrator audit logging](manage-administrator-audit-logging-exchange-2013-help.md).
 
-Return to top
-
 ## Cmdlets
 
 You can control which cmdlets are audited by providing a list of cmdlets, and their parameters, that you want to log. When you configure audit logging, you can specify to audit every cmdlet, or you can specify the cmdlets you want to audit by using the *AdminAuditLogConfigCmdlets* parameter. You can specify full cmdlet names, such as **New-Mailbox**, or you can specify partial cmdlet names and enclose those names in wildcard characters, such as an asterisk (`*`). For example, if you want to log when any cmdlet that contains the string `Transport` runs, you can specify a value of `*Transport*`. You can use a mix of full cmdlet names and partial cmdlet names at the same time to tailor the audit logging configuration to your needs.
@@ -177,8 +175,6 @@ Each audit log entry contains the information described in the following table. 
 </tbody>
 </table>
 
-Return to top
-
 ## EAC auditing reports
 
 The **auditing** page in the EAC has several reports that provide information about various types of compliance and administrative configuration changes. The following reports provide information about configuration changes in your organization:
@@ -225,8 +221,6 @@ After you run the **New-AdminAuditLogSearch** cmdlet, Exchange may take up to 15
 > Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see <A href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">View or configure Outlook Web App virtual directories</A>.
 
 For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
-
-Return to top
 
 ## Manual audit log entries
 

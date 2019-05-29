@@ -63,8 +63,6 @@ Message tracking logs contain vast amounts of data as messages move through an E
 
   - **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
 
-Return to top
-
 ## Structure of the message tracking log files
 
 By default, the message tracking log files exist in %ExchangeInstallPath%TransportRoles\\Logs\\MessageTracking.
@@ -105,8 +103,6 @@ The message tracking log files are text files that contain data in the comma-sep
   - **\#Date:**: The UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
   - **\#Fields:**: Comma-delimited field names used in the message tracking log files.
-
-Return to top
 
 ## Fields in the message tracking log files
 
@@ -248,8 +244,6 @@ The message tracking log stores each message event on a single line in the log. 
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Event types in the message tracking log
 
@@ -438,8 +432,6 @@ Various event types in the **event-id** field are used to classify the message e
 </tbody>
 </table>
 
-Return to top
-
 ## Source values in the message tracking log
 
 The values in the **source** field in the message tracking log indicate the transport component that's responsible for the message tracking event. The following table describes the values of the **source** field.
@@ -535,8 +527,6 @@ The values in the **source** field in the message tracking log indicate the tran
 </tbody>
 </table>
 
-Return to top
-
 ## Example entries in the message tracking log
 
 An uneventful message sent between two users generates several entries in the message tracking log. You can see the results using the **Get-MessageTrackingLog** cmdlet. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
@@ -556,10 +546,6 @@ This is a condensed example of the message tracking log entries created when the
     DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
 ```
 
-Return to top
-
 ## Security concerns for the message tracking log
 
 No message content is stored in the message tracking log. By default, the subject line of an email message is stored in the message tracking log. You may want to disable message subject logging to comply with increased security or privacy requirements. Before you enable or disable message subject logging, make sure that you verify your organization's policy about revealing subject line information. For more information, see [Configure message tracking](configure-message-tracking-exchange-2013-help.md).
-
-Return to top

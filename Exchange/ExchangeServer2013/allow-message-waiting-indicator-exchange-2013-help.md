@@ -66,8 +66,6 @@ To implement MWI in a traditional telephony environment with VoIP gateways, IP P
 
 There are two ways callers can leave voice messages: using call answering and Outlook Voice Access. With call answering, a Mailbox server answers an incoming call and allows the caller to leave a voice message for a user. With Outlook Voice Access, when a caller calls an Outlook Voice Access number, they can use the menu system to leave a voice message for a UM-enabled user.
 
-Return to top
-
 ## The Mailbox server's role in MWI
 
 When a caller calls a UM-enabled user and the user doesn't answer their phone, the Microsoft Exchange Unified Messaging service on a Mailbox server receives MWI state change information and uses a SIP NOTIFY message to send the request for a change of notification to a VoIP gateway, IP PBX, or SIP-enabled PBX. The change of notification includes the following information:
@@ -92,8 +90,6 @@ A Mailbox server uses the diversion information on the header of the incoming ca
 
 > [!NOTE]
 > Although PBX outages should be rare, UM automatically refreshes the MWI state for every mailbox at least once every 12&nbsp;hours. There is no way to force a refresh, but if the PBX or IP PBX is powered off and all the MWI lamps go off, all lamps should be restored to the correct state within six hours.
-
-Return to top
 
 ## MWI SIP NOTIFY messages
 
@@ -129,8 +125,6 @@ In a traditional telephony environment, the call flow and MWI notification are a
 
 7. UM sends a SIP NOTIFY message to the first VoIP gateway or IP PBX that's returned from the query. If this fails, the Mailbox server will choose the next VoIP gateway or IP PBX. The Mailbox server will keep trying for a VoIP gateway or IP PBX for five minutes. If all attempts to find a VoIP gateway or IP PBX fail, the Mailbox server will log an error. If a VoIP gateway or IP PBX is located successfully, the VoIP gateway will send the notification to the PBX, and the PBX in turn will send a notification of the MWI event to the user's phone to light the phone lamp. If an IP PBX is used, the MWI notification is processed by the IP PBX and it will then light the user's phone lamp. Other MWI notification mechanisms are listed in the Overview section. The type of notification depends on the PBX or IP PBX hardware vendor and whether Lync Server is being used. It also depends on the type of phone (analog, digital, or VoIP) that's being used.
 
-Return to top
-
 ## MWI in a Lync Server environment
 
 In telephony environments that include Lync Server, an incoming call can be sent from an external phone to a Mediation Server, sent from a Lync client, or sent from a unified communications (UC) or other VoIP-based phone. After the call is received, it's sent to the Lync Server front-end server pool. The Mailbox server and the Mailbox Assistant are used to determine the MWI state for the UM-enabled user and to deliver this notification to the Lync client, analog or digital or UC or VoIP-based phone.
@@ -158,8 +152,6 @@ In a telephony environment with Lync Server, the call flow and MWI notification 
 7. The Mailbox Assistant reads the UM dial plan and the UM mailbox policy to decide whether MWI notifications should be sent to the user. The Mailbox Assistant queries for all Mailbox servers that are associated with UM dial plan of the user. The Mailbox Assistant tries to send the RPC event to the first Mailbox server that's returned. If this attempt fails, the Mailbox Assistant tries the next one. It will keep trying to find a Mailbox server for five minutes or until all servers have been tried. If all the RPC calls fail, the Mailbox Assistant will log an error in the Event Viewer. The Mailbox server queries Active Directory for all UM IP gateways that are associated with the UM dial plan of the UM-enabled user.
 
 8. UM sends a SIP NOTIFY message to the first VoIP gateway or IP PBX that's returned from the query. If this fails, the Mailbox server will choose the next VoIP gateway or IP PBX. The Mailbox server will keep trying to find a VoIP gateway or IP PBX for five minutes. If all attempts to contact the VoIP gateway or IP PBX fail, the Mailbox server will log an error. If it's successful, the VoIP gateway or IP PBX will send the notification to the Lync Server front-end server pool, which in turn will send a notification of the MWI event to a SIP endpoint used by the user, the user's phone, or a Lync client.
-
-Return to top
 
 ## MWI resilience
 
@@ -261,8 +253,6 @@ For more information about how to manage MWI settings, see the following topics:
   - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
   - [Set-UMIPGateway](https://technet.microsoft.com/en-us/library/aa996577\(v=exchg.150\))
-
-Return to top
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 
@@ -367,5 +357,3 @@ In addition to your configuring the UM mailbox policy and the user's mailbox to 
 7. Enter the passcode in the **Passcode** box, and then click **Finish**.
 
 8. After the user enables text message notifications, they can click **Set up voice mail notifications** on the **Text Messaging** page. They'll be taken back to the voice mail page, where they can scroll down to the **Notifications** section and set up text message notification options for missed calls and voice mail.
-
-Return to top

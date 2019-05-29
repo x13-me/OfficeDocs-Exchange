@@ -153,8 +153,6 @@ The sender recipient limit is only enforced in the Transport service on the firs
 
 The message sender and all recipients are marked as resolved by stamping an extended property in the message. This extended property allows the message to bypass top-level resolution if the message must go through recipient resolution again. A message may have to go through recipient resolution again because the Microsoft Exchange Transport service restarted.
 
-Return to top
-
 ## Expansion
 
 Expansion occurs after top-level resolution. Expansion completely expands nested levels of recipients into individual recipients. Expansion may require multiple trips through the expansion process to expand all recipients. Not all recipients have to be expanded. However, all recipients must go through the expansion process. The expansion process also enforces recipient message restrictions for all kinds of recipients.
@@ -314,8 +312,6 @@ Certain types of messages are blocked when they are sent from the Exchange organ
 
 For more information, see [Remote domains](remote-domains-exchange-2013-help.md).
 
-Return to top
-
 ## Bifurcation and controlling recipient expansion
 
 Because the complete list of message recipients is expanded and resolved by recipient resolution, there are occasions when different copies of the same message must be created. These occasions are described by the following scenarios:
@@ -344,8 +340,6 @@ When the number of expanded recipients is too large, the categorizer splits the 
 
 > [!WARNING]
 > We recommend that you don't modify the value of the <EM>ExpansionSizeLimit</EM> key on an Exchange transport server in a production environment.
-
-Return to top
 
 ## Recipient resolution diagnostics
 
