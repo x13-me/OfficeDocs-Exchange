@@ -24,13 +24,11 @@ By default, Exchange uses circular logging to limit the message tracking log bas
 ## Search the message tracking log
 <a name="Search"> </a>
 
-Message tracking logs contain vast amounts of data as messages move through a Mailbox server or Edge Transport server. When it comes to searching the message tracking logs, you have different options.
+Message tracking logs contain vast amounts of data as messages move through a Mailbox server or Edge Transport server. When it comes to searching the message tracking logs, you have options:
 
 - **Get-MessageTrackingLog**: Administrators can use this Exchange Management Shell cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs.md).
 
 - **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center or the underlying **Search-MessageTrackingReport** and **Get-MessageTrackingReport** cmdlets in the Exchange Management Shell to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information, see [Delivery reports for administrators](delivery-reports.md).
-
-- **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook on the web to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://github.com/MicrosoftDocs/OfficeDocs-Exchange/blob/public/Exchange/ExchangeServer/mail-flow/transport-logs/track-messages-with-delivery-reports.md).
 
 ## Structure of the message tracking log files
 <a name="Structure"> </a>
