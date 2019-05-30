@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms.date: 6/4/2018
+ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -37,7 +38,7 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 2. Select **Local Backup**.
 
-3. In the Actions pane, click **Backup Once…** to start the Backup Once Wizard.
+3. In the Actions pane, click **Backup Once...** to start the Backup Once Wizard.
 
 4. On the **Backup Options** page, select **Different options**, and then click **Next**.
 

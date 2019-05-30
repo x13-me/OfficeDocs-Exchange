@@ -8,7 +8,9 @@ ms.prod: exchange-server-it-pro
 ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms.collection: exchange-server
 ms.date: 6/8/2018
-ms.audience: ITPro
+ms.reviewer: 
+manager: dansimp
+audience: ITPro
 title: Roll back a public folder migration from Exchange Server to Exchange Online
 
 ---

@@ -1,19 +1,20 @@
 ---
-ms.audience: ITPro
+audience: ITPro
 localization_priority: Normal
-ms.author: tonysmit
-manager: scotv
+ms.author: chrisda
+manager: dansimp
 ms.topic: article
-author: tonysmit
+author: chrisda
 ms.service: exchange-online
 ms.assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 ms.collection: exchange-online
 ms.date: 11/17/2014
-title: Review the voice mail calls in your organization
+ms.reviewer: 
+title: Review the voice mail calls in your organization in Exchange Online
 
 ---
 
-# Review the voice mail calls in your organization
+# Review the voice mail calls in your organization in Exchange Online
 You can use the Call Statistics report to view information about the type and status of incoming calls handled by the Exchange servers in your organization. The report provides statistical information about the calls forwarded to or placed by Unified Messaging (UM) for your organization. You can use this information to track usage for capacity planning, monitor and troubleshoot the availability and audio quality of UM, and to troubleshoot failed calls.
 
 For additional tasks related to UM reporting, see [UM reports procedures](um-reports-procedures.md).

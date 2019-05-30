@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: Call answering rules
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
 ms.date: 11/17/2014
-title: Forwarding calls procedures
+ms.reviewer: 
+title: Forwarding calls procedures in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Forwarding calls procedures
+# Forwarding calls procedures in Exchange Online
 
 [Call answering rules](call-answering-rules.md)
 

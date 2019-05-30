@@ -1,27 +1,25 @@
-﻿---
+---
 title: 'Create a regular or exclusive scope: Exchange 2013 Help'
 TOCTitle: Create a regular or exclusive scope
 ms:assetid: b97a5be3-15cc-4954-ba30-a824a95e21be
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351083(v=EXCHG.150)
 ms:contentKeyID: 49289387
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Create a regular or exclusive scope
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role scopes determine what objects are made available to a user so that the objects can be changed using the cmdlets and parameters assigned to them. By adding a management scope, you can configure management role assignments so users can administer specific servers, databases, recipients, and other objects in your organization while being restricted from changing other objects.
 
-
 > [!IMPORTANT]
 > When you create a regular or exclusive scope, you override the write scope that's defined on the management role you're assigning. You can't override the read scope that's configured on the management role.
-
-
 
 You can create a custom management scope and add or change a management role assignment. If you want to create a management role assignment with a prebuilt or organizational unit (OU) management scope, see [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md).
 
@@ -43,11 +41,8 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## How do you do this?
 
@@ -73,11 +68,8 @@ This example creates a scope that includes all mailboxes within the contoso.com/
     New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
 ```
 
-
 > [!NOTE]
 > You can omit the <EM>RecipientRoot</EM> parameter if you want the filter to apply to the entire implicit read scope of the management role and not just within a specific OU.
-
-
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
@@ -123,11 +115,8 @@ For detailed syntax and parameter information, see [New-ManagementScope](https:/
 
 Database filter-based configuration scopes are created by using the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. A database filter enables you to create a scope that applies only to the databases that match the filter you specify.
 
-
 > [!IMPORTANT]
 > Role assignments associated with database scopes are applied only to users who connect to servers running Microsoft Exchange Server 2010 Service Pack&nbsp;1 (SP1) or later or Exchange 2013. If a user assigned a role assignment associated with a database scope connects to a pre-Exchange 2010 SP1 server, the role assignment isn't applied to the user, and the user won't be granted any permissions provided by the role assignment.
-
-
 
 For more information about management scope filters and for a list of filterable database properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 
@@ -149,11 +138,8 @@ For detailed syntax and parameter information, see [New-ManagementScope](https:/
 
 Database list-based configuration scopes are created by using the *DatabaseList* parameter on the **New-ManagementScope** cmdlet. A database list scope enables you to create a scope that applies only to the databases you specify in a list.
 
-
 > [!IMPORTANT]
 > Role assignments associated with database scopes are applied only to users who connect to servers running Microsoft Exchange Server 2010 Service Pack&nbsp;1 (SP1) or later or Exchange 2013. If a user assigned a role assignment associated with a database scope connects to a pre-Exchange 2010 SP1 server, the role assignment isn't applied to the user, and the user won't be granted any permissions provided by the role assignment.
-
-
 
 Use the following syntax to create a database list scope.
 
@@ -173,11 +159,8 @@ For detailed syntax and parameter information, see [New-ManagementScope](https:/
 
 Any scope that you create with the **New-ManagementScope** cmdlet can be designated as an exclusive scope. To create an exclusive scope, you use the same commands in one of the preceding sections to create a recipient filter-based scope, server filter-based scope, server list-based scope, database filter-based scope, or database list-based scope, and then add the *Exclusive* switch to the command.
 
-
 > [!WARNING]
 > When you create exclusive management scopes, only the role assignees assigned exclusive scopes that contain objects to be modified can access those objects. Only those administrators assigned a role with the exclusive scope can access these exclusive, or protected, objects.
-
-
 
 This example creates an exclusive recipient filter-based scope that matches any user in the Executives department.
 
@@ -208,4 +191,3 @@ If you create a management role scope and want to add it to an existing manageme
   - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
   - [Change a role assignment](change-a-role-assignment-exchange-2013-help.md)
-

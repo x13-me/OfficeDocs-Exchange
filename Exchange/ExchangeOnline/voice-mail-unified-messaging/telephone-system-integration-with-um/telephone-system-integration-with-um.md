@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: 'To successfully deploy Unified Messaging (UM), you must have a good understanding of basic telephony concepts and telephony components. After you understand telephony basics, you can integrate UM into an Exchange organization. Basic concepts and components include the following:'
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: b8790117-b040-4c84-9d34-005c75088e76
 ms.date: 3/5/2018
-title: Telephone system integration with UM
+ms.reviewer: 
+title: Telephone system integration with UM in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Telephone system integration with UM
+# Telephone system integration with UM in Exchange Online
 
 To successfully deploy Unified Messaging (UM), you must have a good understanding of basic telephony concepts and telephony components. After you understand telephony basics, you can integrate UM into an Exchange organization. Basic concepts and components include the following:
 

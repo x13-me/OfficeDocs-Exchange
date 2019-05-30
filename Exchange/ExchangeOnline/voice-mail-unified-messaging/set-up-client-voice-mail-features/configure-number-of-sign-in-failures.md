@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can specify the number of sequential unsuccessful sign-in attempts that are allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 ms.date: 11/17/2014
-title: Configure the number of sign-in failures before Outlook Voice Access users are disconnected
+ms.reviewer: 
+title: Configure the number of sign-in failures before Outlook Voice Access users are disconnected in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Configure the number of sign-in failures before Outlook Voice Access users are disconnected
+# Configure the number of sign-in failures before Outlook Voice Access users are disconnected in Exchange Online
 
 You can specify the number of sequential unsuccessful sign-in attempts that are allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts.
 

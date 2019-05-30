@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Configure message tracking
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Export messages from queues: Exchange 2013 Help'
 TOCTitle: Export messages from queues
 ms:assetid: 688b342c-f380-4fe0-afce-7e38cf490627
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998625(v=EXCHG.150)
 ms:contentKeyID: 50646234
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Export messages from queues
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 When you export a message from a queue to a file, the message isn't removed from the queue. A copy of the message is made in the specified location as a plain text file. The resulting file can be viewed in an application, such as a text editor or an email client application, or the message file can be resubmitted by using the Replay directory on any other Mailbox server or Edge Transport server inside or outside the Exchange organization.
 
@@ -28,24 +29,19 @@ When you export a message from a queue to a file, the message isn't removed from
   - You can't use Queue Viewer in the Exchange Toolbox to export messages. However, you can use Queue Viewer to locate, identify, and suspend the messages before you export them using the Shell.
 
   - Verify the following information about the target directory location for the message files:
-    
+
       - The target directory must exist before you export any messages. The directory won't be created for you. If an absolute path isn't specified, the current Exchange Management Shell working directory is used.
-    
+
       - The path may be local to the Exchange server, or it may be a Universal Naming Convention (UNC) path to a share on a remote server.
-    
+
       - Your account must have the **Write** permission to the target directory.
-    
+
       - When you specify a file name for the exported messages, be sure to include the .eml file name extension so the files can be opened easily by email client applications or processed correctly by the Replay directory.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to export a specific message from a specific queue
 
@@ -95,5 +91,3 @@ This example exports a copy of all the messages from senders in the contoso.com 
 
 > [!NOTE]
 > If you omit the <EM>Server</EM> parameter, the command operates on the local server.
-
-

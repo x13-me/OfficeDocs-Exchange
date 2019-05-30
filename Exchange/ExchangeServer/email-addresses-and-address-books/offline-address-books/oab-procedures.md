@@ -8,7 +8,9 @@ ms.prod: exchange-server-it-pro
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.collection: exchange-server
 ms.date: 7/6/2018
-ms.audience: ITPro
+ms.reviewer: 
+manager: dansimp
+audience: ITPro
 title: Procedures for offline address books in Exchange Server
 
 ---

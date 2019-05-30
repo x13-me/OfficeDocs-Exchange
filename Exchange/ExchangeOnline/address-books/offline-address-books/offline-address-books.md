@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 3f4b2c64-6cbc-445f-bf65-05b8fdfe9a0b
 ms.date: 7/19/2018
+ms.reviewer: 
 title: Offline address books in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 595e1f02-4398-4a7a-b4a4-768af8b9e42e
 ms.date: 
+ms.reviewer: 
 title: Address list procedures in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
+ms.reviewer: 
 title: Allow/Block guest access to Office 365 groups
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 ---
 
@@ -56,7 +57,7 @@ Or, let's say you want to block personal email address domains. You can set up a
     Install-Module AzureADPreview
     ```
 
-  - If *only*  the **AzureAD** module is shown in the results, run these commands to install the **AzureADPreview** module:
+  - If *only* the **AzureAD** module is shown in the results, run these commands to install the **AzureADPreview** module:
 
     ```
     Uninstall-Module AzureAD
@@ -66,7 +67,7 @@ Or, let's say you want to block personal email address domains. You can set up a
     Install-Module AzureADPreview
     ```
 
-  - If *only*  the **AzureADPreview** module is shown in the results, but the version is less than **2.0.0.98**, run these commands to update it:
+  - If *only* the **AzureADPreview** module is shown in the results, but the version is less than **2.0.0.98**, run these commands to update it:
 
     ```
     Uninstall-Module AzureADPreview

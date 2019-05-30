@@ -8,7 +8,9 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.collection: exchange-server
 ms.date:
-ms.audience: ITPro
+ms.reviewer: 
+manager: dansimp
+audience: ITPro
 title: Address lists in Exchange Server
 
 ---
@@ -89,7 +91,7 @@ For example, consider a company that has two large divisions in one Exchange org
 
 - Contoso, Ltd, which underwrites insurance policies.
 
-For most day-to-day activities, employees at Fourth Coffee don't communicate with employees at Contoso, Ltd. Therefore, to make it easier for employees to find recipients who exist only in their division, you can create two new custom address lists—one for Fourth Coffee and one for Contoso, Ltd. However, if an employee is unsure about where recipient exists, they can search in the GAL, which contains all recipients from both divisions.
+For most day-to-day activities, employees at Fourth Coffee don't communicate with employees at Contoso, Ltd. Therefore, to make it easier for employees to find recipients who exist only in their division, you can create two new custom address lists: one for Fourth Coffee and one for Contoso, Ltd. However, if an employee is unsure about where recipient exists, they can search in the GAL, which contains all recipients from both divisions.
 
 You can also create address lists under other address lists. For example, you can create an address list that contains all recipients in Manchester, and you can create another address list under Manchester named Sales that contains only sales people in the Manchester office. You can also move address lists back to the root, or under other address lists after you've created them. For more information, see [Use the Exchange Management Shell to move address lists](address-list-procedures.md#use-the-exchange-management-shell-to-move-address-lists).
 

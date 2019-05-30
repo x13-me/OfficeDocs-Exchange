@@ -1,27 +1,28 @@
-﻿---
+---
 title: 'Import and export custom greetings, announcements, menus, and prompts'
 TOCTitle: Import and export custom greetings, announcements, menus, and prompts
 ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee681667(v=EXCHG.150)
 ms:contentKeyID: 53366393
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Import and export custom greetings, announcements, menus, and prompts
 
- 
+_**Applies to:** Exchange Server 2013_
 
-_**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
-
-
-You can import and export the audio files that you’ve recorded to use on Unified Messaging (UM) dial plans and auto attendants. For example, you might want to export and save a copy of an audio file if you’re upgrading from a previous version of Exchange. Or, you might need to import a copy of a recorded audio prompt before configuring a dial plan or auto attendant.
+You can import and export the audio files that you've recorded to use on Unified Messaging (UM) dial plans and auto attendants. For example, you might want to export and save a copy of an audio file if you're upgrading from a previous version of Exchange. Or, you might need to import a copy of a recorded audio prompt before configuring a dial plan or auto attendant.
 
 The audio files are used for the following purposes:
 
-  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They’re played when Outlook Voice Access users call in to an Outlook Voice Access number.
+  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
 
-  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They’re played when callers call in to a UM auto attendant.
+  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
 
 The following audio file formats are supported for custom greetings, announcements, menus, and prompts:
 
@@ -49,13 +50,8 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to import custom greetings, announcements, menus, and prompts for UM dial plans and auto attendants
 

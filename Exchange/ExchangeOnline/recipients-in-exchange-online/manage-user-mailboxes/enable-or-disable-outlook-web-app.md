@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Enable or disable Outlook Web App for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

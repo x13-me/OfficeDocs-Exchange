@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Message tracking
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

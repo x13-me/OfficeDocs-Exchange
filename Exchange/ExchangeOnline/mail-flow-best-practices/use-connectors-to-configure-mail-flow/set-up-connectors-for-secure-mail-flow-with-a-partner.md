@@ -6,9 +6,10 @@ author: supotter
 ms.author: supotter
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.date: 6/23/2018
+ms.reviewer: 
 title: Set up connectors for secure mail flow with a partner organization
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

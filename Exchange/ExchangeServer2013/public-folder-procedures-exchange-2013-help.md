@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Public folder procedures: Exchange 2013 Help'
 TOCTitle: Public folder procedures
 ms:assetid: afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657481(v=EXCHG.150)
 ms:contentKeyID: 49289372
 ms.date: 08/02/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Public folder procedures
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Create and manage public folders with one or more of these articles.
 
@@ -54,4 +55,3 @@ Use one or more of the procedures listed below to get your public folder infrast
 [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md)
 
 [View statistics for public folders and public folder items](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/view-public-folder-statistics)
-

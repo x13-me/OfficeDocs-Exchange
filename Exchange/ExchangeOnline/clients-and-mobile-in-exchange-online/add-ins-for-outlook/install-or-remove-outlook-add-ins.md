@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 112f3ef7-9943-4a1e-8a42-e08e8e9f67f4
 ms.date: 
+ms.reviewer: 
 title: Install or remove add-ins for Outlook for your Exchange Online organization
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

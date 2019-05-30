@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 7c5b7408-bfa2-4695-a6b7-21ddc8084d52
 ms.date: 
+ms.reviewer: 
 title: Scenario Integrate Office 365 with an email add-on service
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

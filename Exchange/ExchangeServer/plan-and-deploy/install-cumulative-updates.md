@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms.date:
+ms.reviewer: 
 title: Upgrade Exchange to the latest Cumulative Update
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

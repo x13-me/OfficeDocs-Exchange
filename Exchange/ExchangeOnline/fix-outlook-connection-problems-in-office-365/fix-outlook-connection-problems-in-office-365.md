@@ -4,6 +4,7 @@ ms.topic: troubleshooting
 author: chrisda
 ms.author: chrisda
 ms.assetid: b3e740b9-171d-4179-bcd1-e279a363fa75
+ms.reviewer: 
 description: "When you can't send or receive Office 365 email, use these steps to find and fix problems with Outlook. "
 title: Fix Outlook connection problems in Office 365 and Exchange Online
 ms.collection: 
@@ -17,7 +18,7 @@ search.appverid:
 - ZOL140
 - ZOL150
 - ZOL160
-ms.audience: Admin
+audience: Admin
 ms.custom: MiniMaven
 keywords:
 - fix outlook
@@ -25,7 +26,7 @@ keywords:
 - Outlook 365 doesn't work
 - fix office 365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

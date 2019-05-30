@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 0a4913fe-60fb-498f-9155-a86516418842
 ms.date: 9/19/2018
+ms.reviewer: 
 description: Learn all the ways admins can use to migrate user mailboxes to Office 365.
 title: Ways to migrate multiple email accounts to Office 365
 ms.collection: 
@@ -15,12 +16,12 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
-ms.audience: Admin
+audience: Admin
 ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

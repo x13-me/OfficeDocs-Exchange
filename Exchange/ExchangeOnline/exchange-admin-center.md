@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
 ms.date: 
+ms.reviewer: 
 title: Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

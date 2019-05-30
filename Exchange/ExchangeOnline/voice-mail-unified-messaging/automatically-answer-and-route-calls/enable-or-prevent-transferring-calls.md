@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can enable callers to transfer calls to users through an auto attendant, or prevent them from doing so. By default this option is enabled, and lets callers transfer calls to UM-enabled users in the Unified Messaging (UM) dial plan that's associated with the UM auto attendant.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: ca961cc8-cc24-4e05-b72d-79979c155cf9
 ms.date: 11/17/2014
-title: Enable or prevent transferring calls from an auto attendant
+ms.reviewer: 
+title: Enable or prevent transferring calls from an auto attendant in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Enable or prevent transferring calls from an auto attendant
+# Enable or prevent transferring calls from an auto attendant in Exchange Online
 
 You can enable callers to transfer calls to users through an auto attendant, or prevent them from doing so. By default this option is enabled, and lets callers transfer calls to UM-enabled users in the Unified Messaging (UM) dial plan that's associated with the UM auto attendant.
 

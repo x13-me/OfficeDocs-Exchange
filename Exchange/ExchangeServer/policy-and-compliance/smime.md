@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn about how S/MIME in Exchange Server adds S/MIME-based security and lets you encrypt and digitally sign emails.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 ms.date: 7/9/2018
+ms.reviewer: 
 title: S/MIME for message signing and encryption
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -3,7 +3,8 @@ title: "Use Kerberos authentication with Outlook 2016 for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+ms.reviewer: 
+audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
 localization_priority: Normal

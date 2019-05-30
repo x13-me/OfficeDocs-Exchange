@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can enable a customized non-business hours greeting for a Unified Messaging (UM) auto attendant. The non-business hours greeting is the first thing callers hear when a UM auto attendant answers their call during non-business hours. You'll probably want to customize the greeting.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 ms.date: 11/17/2014
-title: Enable a customized non-business hours greeting
+ms.reviewer: 
+title: Enable a customized non-business hours greeting in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Enable a customized non-business hours greeting
+# Enable a customized non-business hours greeting in Exchange Online
 
 You can enable a customized non-business hours greeting for a Unified Messaging (UM) auto attendant. The non-business hours greeting is the first thing callers hear when a UM auto attendant answers their call during non-business hours. You'll probably want to customize the greeting.
 

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
 ms.date:
+ms.reviewer: 
 title: Use unattended mode in Exchange Setup
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

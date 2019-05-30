@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Create a distribution group naming policy
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Enable or disable single item recovery for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

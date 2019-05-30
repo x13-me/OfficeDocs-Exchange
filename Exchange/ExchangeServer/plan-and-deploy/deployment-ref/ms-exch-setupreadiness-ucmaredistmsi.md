@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: b26b628b-116d-4f13-ab86-bac80e2a2e1f
 ms.date: 8/2/2018
+ms.reviewer: 
 title: UCMA 4.0, Core Runtime not installed [UcmaRedistMsi]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

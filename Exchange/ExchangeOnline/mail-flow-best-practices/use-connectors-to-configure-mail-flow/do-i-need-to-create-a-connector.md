@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
 ms.date: 
+ms.reviewer: 
 title: Do I need to create a connector in Exchange Online?
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

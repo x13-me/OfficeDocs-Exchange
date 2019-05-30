@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Configure remote domain automatic replies: Exchange 2013 Help'
 TOCTitle: Configure remote domain automatic replies
 ms:assetid: 3d88a1fb-4b62-419a-a50d-ffd868e229d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657720(v=EXCHG.150)
 ms:contentKeyID: 49300519
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure remote domain automatic replies
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can use the Exchange Management Shell to configure the way emails are sent and received through remote domains. The following demonstrates how to use the Exchange Management Shell to configure the way Exchange handles automatic replies.
 
@@ -27,11 +28,8 @@ You can use the Exchange Management Shell to configure the way emails are sent a
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to configure automatic replies
 
@@ -48,4 +46,3 @@ This example allows automatic forwards to the remote domain. This setting is dis
 ```powershell
 Set-RemoteDomain Contoso -AutoForwardEnabled $true
 ```
-

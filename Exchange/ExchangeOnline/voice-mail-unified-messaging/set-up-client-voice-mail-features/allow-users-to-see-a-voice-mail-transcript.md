@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see Microsoft Speech Technologies.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: c5192e05-905c-440f-beec-1f697edc15b3
 ms.date: 12/9/2016
-title: Allow users to see a voice mail transcript
+ms.reviewer: 
+title: Allow users to see a voice mail transcript in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Allow users to see a voice mail transcript
+# Allow users to see a voice mail transcript in Exchange Online
 
 Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs.
 

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
 ms.date: 6/11/2018
+ms.reviewer: 
 title: Client Access Rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

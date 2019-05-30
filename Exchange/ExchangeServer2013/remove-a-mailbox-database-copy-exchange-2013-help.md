@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Remove a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Remove a mailbox database copy
 ms:assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298164(v=EXCHG.150)
 ms:contentKeyID: 48385387
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Remove a mailbox database copy
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 These procedures show you how to remove a copy of a mailbox database. You can't use these procedures to remove the last copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) or [Remove-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997931\(v=exchg.150\)).
 
@@ -33,27 +34,22 @@ Looking for other management tasks related to mailbox database copies? Check out
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to remove a mailbox database copy
 
-1.  In the EAC, go to **Servers** \> **Databases**.
+1. In the EAC, go to **Servers** \> **Databases**.
 
-2.  Select the mailbox database whose copy you want to remove.
+2. Select the mailbox database whose copy you want to remove.
 
-3.  In the Details pane, locate the passive copy you want to remove and click **Remove**.
+3. In the Details pane, locate the passive copy you want to remove and click **Remove**.
 
-4.  Confirm the removal on the warning dialog box by clicking **yes**.
+4. Confirm the removal on the warning dialog box by clicking **yes**.
 
-5.  Click **ok** to confirm the removal after reviewing any messages.
+5. Click **ok** to confirm the removal after reviewing any messages.
 
-6.  Manually delete any database and transaction log files from the server from which the database copy is being removed.
+6. Manually delete any database and transaction log files from the server from which the database copy is being removed.
 
 ## Use the Shell to remove a mailbox database copy
 
@@ -70,10 +66,9 @@ To verify that you've successfully removed a mailbox database copy, do one of th
   - In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, the removed passive copy is no longer listed.
 
   - In the Shell, run the following command to verify removal of the copy.
-    
+
     ```powershell
     Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
     ```
-    
-    The removed passive copy is no longer listed.
 
+    The removed passive copy is no longer listed.

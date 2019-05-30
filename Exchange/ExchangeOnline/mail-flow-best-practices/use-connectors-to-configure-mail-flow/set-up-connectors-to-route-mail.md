@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.date: 
+ms.reviewer: 
 title: Set up connectors to route mail between Office 365 and your own email servers
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

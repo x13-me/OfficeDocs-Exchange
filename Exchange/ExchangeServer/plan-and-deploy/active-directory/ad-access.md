@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Access to Active Directory by Exchange servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

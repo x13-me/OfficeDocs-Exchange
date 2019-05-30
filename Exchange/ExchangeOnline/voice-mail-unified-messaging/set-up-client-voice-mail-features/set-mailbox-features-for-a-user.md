@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: Telephone user interface (TUI) settings are used when a user accesses the Unified Messaging (UM) system by using Outlook Voice Access. When you modify a UM-enabled user's TUI configuration settings, you modify properties and their values on the UM-enabled user's mailbox.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: a56bfd75-7bc5-49b9-b098-06855a720dcd
 ms.date: 11/17/2014
-title: Set mailbox features for an Outlook Voice Access user
+ms.reviewer: 
+title: Set mailbox features for an Outlook Voice Access user in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Set mailbox features for an Outlook Voice Access user
+# Set mailbox features for an Outlook Voice Access user in Exchange Online
 
 Telephone user interface (TUI) settings are used when a user accesses the Unified Messaging (UM) system by using Outlook Voice Access. When you modify a UM-enabled user's TUI configuration settings, you modify properties and their values on the UM-enabled user's mailbox.
 

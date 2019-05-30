@@ -1,33 +1,28 @@
-﻿---
+---
 title: 'Create an unscoped role: Exchange 2013 Help'
 TOCTitle: Create an unscoped role
 ms:assetid: 5a042ccf-4d5f-4609-a91b-21c20d1e6459
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876886(v=EXCHG.150)
 ms:contentKeyID: 49289258
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Create an unscoped role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 An unscoped management role can be used to provide administrators and specialist users access to Windows PowerShell scripts and non-Exchange cmdlets. You can either create an unscoped top-level role and add scripts or non-Exchange cmdlets to that role, or create a role that's based on an existing, unscoped top-level role. After an unscoped role has been created and customized, the role can be assigned to management role groups, users, and universal security groups (USGs). Unscoped roles can't be assigned to management role assignment policies. For more information about unscoped roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
-
 
 > [!WARNING]
 > Unscoped roles can be powerful because, as their name implies, no management scopes are applied to them. This means that the scripts and non-Exchange cmdlets that they contain can be run against any object in your Exchange organization. Consider this when adding scripts or non-Exchange cmdlets to an unscoped role and when assigning the unscoped role.
 
-
-
-
 > [!NOTE]
 > If you want to create a role that contains Exchange cmdlets, you must create a role that's based on an existing management role. For more information about creating roles with Exchange cmdlets, see <A href="create-a-role-exchange-2013-help.md">Create a role</A>.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -40,20 +35,15 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - You must use the Shell to perform these procedures.
 
   - The ability to create unscoped roles isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a USG or role group of which the user is a member, before the user is able to create a role group. For more information about adding a role to a user, USG, or role group, see the following topics:
-    
+
       - [Manage role groups](manage-role-groups-exchange-2013-help.md)
-    
+
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create an unscoped top-level management role
 
@@ -102,8 +92,6 @@ This example adds the BulkProvisionUsers.ps1 script to the IT Scripts role with 
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the script. However, no further validation is done after the role entry is added. If parameters are later added or removed, you must manually update the role entries that contain the script.
 
-
-
 ## Step 2b: Add non-Exchange cmdlet role entries
 
 If you want to add a non-Exchange cmdlet to the new unscoped role, use this step. If you want to add a script to the new unscoped role, use Step 2a.
@@ -127,17 +115,12 @@ This example adds the **Set-WidgetConfiguration** cmdlet in the Contoso.Admin.Cm
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the cmdlet. However, no further validation is done after the role entry is added. If the cmdlet is later changed, and parameters are added or removed, you must manually update the role entries that contain the cmdlet.
 
-
-
 ## Step 3: Assign the management role
 
 The final step when you create and configure a role is to assign it to a role assignee.
 
-
 > [!IMPORTANT]
 > Management scopes can't be configured on role assignments that assign an unscoped role. Whether you choose to create a role assignment for a role group, user, or USG, you must choose the option to create a role assignment without a management scope.
-
-
 
 You can assign the new role to a role group, user, or USG. For more information, see the following topics:
 
@@ -153,13 +136,10 @@ Here are the steps to create an unscoped child role:
 
 ## Step 1: Create the unscoped child role
 
-New, unscoped child roles can be based on existing unscoped roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. If you create an unscoped role that's based on another unscoped role, you must choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child unscoped roles can't have management role entries that don’t exist in the parent role.
-
+New, unscoped child roles can be based on existing unscoped roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. If you create an unscoped role that's based on another unscoped role, you must choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child unscoped roles can't have management role entries that don't exist in the parent role.
 
 > [!NOTE]
 > If you need to create an unscoped role that contains scripts or non-Exchange cmdlets that don't exist in any other unscoped role, create an unscoped top-level role. For more information, see Create an unscoped top-level management role earlier in this topic.
-
-
 
 Use the following syntax to create the new role.
 
@@ -195,15 +175,11 @@ To remove role entries from your new role, see [Remove a role entry from a role]
 
 The final step when you create and configure a role is to assign it to a role assignee.
 
-
 > [!IMPORTANT]
 > Management scopes can't be configured on role assignments that assign an unscoped role. Whether you choose to create a role assignment for a role group, user, or USG, you must choose the option to create a role assignment without a management scope.
-
-
 
 You can assign the new role to a role group, user, or USG. For more information, see the following topics:
 
   - [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
   - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
-

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms.date: 7/6/2018
+ms.reviewer: 
 title: DSNs and NDRs in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

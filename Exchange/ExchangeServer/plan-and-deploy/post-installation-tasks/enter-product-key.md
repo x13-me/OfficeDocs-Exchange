@@ -1,20 +1,21 @@
 ---
 localization_priority: Normal
 ms.topic: get-started-article
-author: dstrome
+author: chrisda
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
-ms.author: dstrome
+ms.author: chrisda
 ms.assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
 ms.date: 6/4/2018
+ms.reviewer: 
 description: 'Summary: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019.'
 title: Enter your Exchange Server product key
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
 title: Add an SSL certificate to Exchange 2013
 ms.collection: 
@@ -16,10 +17,10 @@ search.appverid:
 - MED150
 - GPA150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

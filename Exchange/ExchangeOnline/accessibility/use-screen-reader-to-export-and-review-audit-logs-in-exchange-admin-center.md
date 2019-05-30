@@ -5,12 +5,14 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: 14828015-1e64-42eb-9814-2a8bc5b80bef
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to review and export the mailbox audit logs in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to export and review audit logs in the Exchange admin center
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

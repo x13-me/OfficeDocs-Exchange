@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: 'Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:'
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 ms.date: 3/9/2015
-title: Create dialing rules for users
+ms.reviewer: 
+title: Create dialing rules for users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Create dialing rules for users
+# Create dialing rules for users in Exchange Online
 
 Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:
 

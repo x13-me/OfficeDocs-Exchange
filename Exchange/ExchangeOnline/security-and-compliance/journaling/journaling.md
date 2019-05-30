@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
 ms.date: 
+ms.reviewer: 
 title: Journaling in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -62,7 +63,7 @@ The following are key aspects of journal rules:
 
 - **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
 
-In Exchange Online, the maximum number of journal rules you can create is 10.
+In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
 
 ### Journal rule scope
 

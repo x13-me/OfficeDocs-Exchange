@@ -6,15 +6,16 @@ author: tonysmit
 ms.author: tonysmit
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
 ms.date: 6/24/2018
-title: UM and voice mail terminology
+ms.reviewer: 
+title: UM and voice mail terminology in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 
-# UM and voice mail terminology
+# UM and voice mail terminology in Exchange Online
 
 This topic contains the terms and definitions that are used with Unified Messaging.
 

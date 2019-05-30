@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Restore data using a recovery database
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

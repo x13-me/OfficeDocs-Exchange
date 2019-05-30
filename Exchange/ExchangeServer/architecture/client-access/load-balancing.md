@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Load balancing in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -50,8 +51,8 @@ Read more about the server role changes in Exchange Server in the topic, [Exchan
 
 |**Server Role**|**Services**|
 |:-----|:-----|
-|Mailbox server  <br/> |Uses EdgeSync to manage one-way replication of receipt and configuration info from Active Directory to the AD LDS instance on the Edge Transport server.  <br/> Copies only information needed to let Edge Transport perform antispam and enable end-to-end mail flow.  <br/> |
-|Edge Transport  <br/> |Manages all inbound and outbound Internet mail flow using:  <br/> • mail relay  <br/> • smart hosting  <br/> • agents that provide additional antispam service  <br/> • agents that apply transport to control mail flow  <br/> Not a member of the Active Directory forest  <br/> |
+|Mailbox server|Uses EdgeSync to manage one-way replication of receipt and configuration info from Active Directory to the AD LDS instance on the Edge Transport server.  <br/> Copies only information needed to let Edge Transport perform antispam and enable end-to-end mail flow.|
+|Edge Transport|Manages all inbound and outbound Internet mail flow using:  <br/> • mail relay  <br/> • smart hosting  <br/> • agents that provide additional antispam service  <br/> • agents that apply transport to control mail flow  <br/> Not a member of the Active Directory forest|
 
 Although not required, the Edge Transport server sits in the perimeter network , just as in earlier Exchange versions, to provide secure inbound and outbound mail flow for your Exchange organization.
 
@@ -119,12 +120,13 @@ The ports that need to be load balanced include some, such as those for IMAP4 or
 
 |**TCP Port**|**Roles**|**Uses**|
 |:-----|:-----|:-----|
-|25  <br/> |Mailbox  <br/> |Inbound SMTP  <br/> |
-|110  <br/> |Mailbox  <br/> |POP3 clients  <br/> |
-|143  <br/> |Mailbox  <br/> |IMAP4 clients  <br/> |
-|443  <br/> |Mailbox  <br/> |HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, MAPI over HTTP, RPC over HTTP, OAB, EAC  <br/> |
-|993  <br/> |Mailbox  <br/> |Secure IMAP4 clients  <br/> |
-|995  <br/> |Mailbox  <br/> |Secure POP3 clients  <br/> |
+|25|Mailbox|Inbound SMTP|
+|587|Mailbox|Inbound SMTP for clients|
+|110|Mailbox|POP3 clients|
+|143|Mailbox|IMAP4 clients|
+|443|Mailbox|HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, MAPI over HTTP, RPC over HTTP, OAB, EAC|
+|993|Mailbox|Secure IMAP4 clients|
+|995|Mailbox|Secure POP3 clients|
 
 ## Load balancing deployment scenarios in Exchange Server
 

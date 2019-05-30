@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 356ca7cd-b9d4-487d-aa21-3b38e91bde58
 ms.date: 6/7/2018
+ms.reviewer: 
 title: Renew an Exchange Server certificate
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

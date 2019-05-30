@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 3f01edde-1cdc-4891-ad9d-7d01582664e9
 ms.date: 
+ms.reviewer: 
 title: Modify the space used by Inbox rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

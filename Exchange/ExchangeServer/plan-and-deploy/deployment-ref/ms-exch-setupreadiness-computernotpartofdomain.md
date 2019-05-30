@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: feb08845-6d44-4760-9932-6eca22f35eec
 ms.date: 8/2/2018
+ms.reviewer: 
 title: The local computer isn't joined to an Active Directory domain [ComputerNotPartofDomain]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

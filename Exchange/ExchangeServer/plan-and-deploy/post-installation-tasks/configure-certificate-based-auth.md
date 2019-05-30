@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
 ms.date:
+ms.reviewer: 
 title: Configure certificate based authentication in Exchange 2016
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

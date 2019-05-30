@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.date: 
+ms.reviewer: 
 title: Recoverable Items folder in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: laurawi
+manager: dansimp
 
 ---
 

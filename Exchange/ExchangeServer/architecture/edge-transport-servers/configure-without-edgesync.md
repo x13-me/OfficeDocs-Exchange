@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms.date:
+ms.reviewer: 
 title: Configure internet mail flow through Edge Transport servers without using EdgeSync
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

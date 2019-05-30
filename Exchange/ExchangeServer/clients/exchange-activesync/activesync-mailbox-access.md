@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

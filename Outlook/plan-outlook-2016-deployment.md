@@ -4,7 +4,8 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.date: 6/27/2018
-ms.audience: ITPro
+ms.reviewer: 
+audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal

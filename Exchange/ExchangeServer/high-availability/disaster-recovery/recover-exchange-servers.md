@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms.date:
+ms.reviewer: 
 title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

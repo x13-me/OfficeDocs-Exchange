@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 65864987-f734-4fab-be97-1ba190a083d4
 ms.date: 6/23/2018
+ms.reviewer: 
 title: Search limits for In-Place eDiscovery in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

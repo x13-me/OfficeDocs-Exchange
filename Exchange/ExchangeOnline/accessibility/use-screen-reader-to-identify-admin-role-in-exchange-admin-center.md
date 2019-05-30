@@ -5,12 +5,14 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: fab999d3-2c8d-481d-be3a-d684c6402768
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to identify your admin role in the Exchange admin center
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

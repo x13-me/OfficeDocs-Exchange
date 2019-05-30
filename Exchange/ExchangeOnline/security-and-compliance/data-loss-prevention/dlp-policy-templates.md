@@ -6,11 +6,12 @@ author: stephow-msft
 ms.author: stephow
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
 ms.date: 7/11/2018
+ms.reviewer: 
 title: DLP policy templates supplied in Exchange
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Messaging records management
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

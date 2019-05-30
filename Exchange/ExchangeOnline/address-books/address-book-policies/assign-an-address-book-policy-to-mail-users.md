@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 ms.date: 
+ms.reviewer: 
 title: Assign an address book policy to users in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,9 +6,10 @@ author: supotter
 ms.author: supotter
 ms.assetid: 7805c2f9-302d-4409-a57f-2b4d8296cd5e
 ms.date: 5/4/2016
+ms.reviewer: 
 title: Validate connectors in Office 365
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

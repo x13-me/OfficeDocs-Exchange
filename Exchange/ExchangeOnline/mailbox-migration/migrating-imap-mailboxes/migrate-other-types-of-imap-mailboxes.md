@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Admins can learn how to migrate mailboxes from email systems other than Exchange to Office 365.
 title: Migrate other types of IMAP mailboxes to Office 365
 ms.collection: 
@@ -19,12 +20,12 @@ search.appverid:
 - GPA150
 - GEA150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -110,7 +111,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Microsoft 365 admin center.
 
-   - **Column B** is the sign-in name—for example, alberta, or often, alberta@contoso.com—for the user's mailbox on the source email system.
+   - **Column B** is the sign-in name (for example, alberta, or often, alberta@contoso.com) for the user's mailbox on the source email system.
 
      > [!NOTE]
      > A lot of email systems use the entire email address as the sign-in name. Note also, if you are using the same domain in Office 365 and your source email system, the columns A and B can be identical.
@@ -219,7 +220,7 @@ To migrate email successfully, Office 365 needs to connect and communicate with 
 
 5. On the **IMAP migration configuration** page, enter the following information:
 
-   - **\* IMAP server**: Type the *messaging server name*  (for example, imap.contoso.com) of the source email server.
+   - **\* IMAP server**: Type the *messaging server name* (for example, imap.contoso.com) of the source email server.
 
    - Leave the remaining information as the default settings; these will work for most cases.
 
@@ -270,7 +271,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
 
 8. On this page, select the migration endpoint that you created in [Step 3: Connect Office 365 to your email system](#step-3-connect-office-365-to-your-email-system).
 
-9. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
+9. On the **Move configuration** page, type the *name (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
 
    The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
 

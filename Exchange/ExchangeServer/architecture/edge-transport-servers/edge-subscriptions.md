@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Edge Subscriptions
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

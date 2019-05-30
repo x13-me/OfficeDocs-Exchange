@@ -5,6 +5,7 @@ ms.topic: article
 author: supotter
 ms.author: supotter
 ms.assetid: eb57abd2-3859-4e79-b721-2ed1f0f579c9
+ms.reviewer: 
 title: How to configure IIS for relay with Office 365
 ms.collection: 
 - exchange-online
@@ -13,7 +14,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.audience: Admin
+audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: scotv

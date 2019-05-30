@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 4cf9f1a1-aeac-455b-a5c3-efcd4185a467
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedClientAccessFirstInstall]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

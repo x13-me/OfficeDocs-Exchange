@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Manage content filtering: Exchange 2013 Help'
 TOCTitle: Manage content filtering
 ms:assetid: 05bd9d39-81dc-4514-8b75-7be386d5bcad
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995953(v=EXCHG.150)
 ms:contentKeyID: 49248674
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Manage content filtering
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Content filtering is provided by the Content Filter agent. The Content Filter agent filters all messages that come through all Receive connectors on the Exchange server. Only messages that come from non-authenticated sources are filtered.
 
@@ -29,13 +30,8 @@ Content filtering is provided by the Content Filter agent. The Content Filter ag
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to enable or disable content filtering
 
@@ -51,23 +47,20 @@ To enable content filtering, run the following command:
 Set-ContentFilterConfig -Enabled $true
 ```
 
-
 > [!NOTE]
 > When you disable content filtering, the underlying Content Filter agent is still enabled. To disable the Content Filter agent, run the command: <CODE>Disable-TransportAgent "Content Filter Agent"</CODE>.
-
-
 
 ## How do you know this worked?
 
 To verify that you have successfully enabled or disabled content filtering, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterConfig | Format-List Enabled
     ```
 
-2.  Verify the value of the *Enabled* property that's displayed.
+2. Verify the value of the *Enabled* property that's displayed.
 
 ## Use the Shell to enable or disable content filtering for external messages
 
@@ -89,13 +82,13 @@ Set-ContentFilterConfig -ExternalMailEnabled $true
 
 To verify that you have successfully enabled or disabled content filtering for external messages, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterConfig | Format-List ExternalMailEnabled
     ```
 
-2.  Verify the value of the *ExternalMailEnabled* property that's displayed.
+2. Verify the value of the *ExternalMailEnabled* property that's displayed.
 
 ## Use the Shell to enable or disable content filtering for internal messages
 
@@ -117,13 +110,13 @@ Set-ContentFilterConfig -InternalMailEnabled $false
 
 To verify that you have successfully enabled or disabled content filtering for internal messages, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterConfig | Format-List InternalMailEnabled
     ```
 
-2.  Verify the value of the *InternalMailEnabled* property that's displayed.
+2. Verify the value of the *InternalMailEnabled* property that's displayed.
 
 ## Use the Shell to configure recipient and sender exceptions
 
@@ -135,11 +128,11 @@ To replace the existing values, run the following command:
 
 This example configures the following exceptions in content filtering:
 
-  - The recipients laura@contoso.com and julia@contoso.com aren’t checked by content filtering.
+  - The recipients laura@contoso.com and julia@contoso.com aren't checked by content filtering.
 
-  - The senders steve@fabrikam.com and cindy@fabrikam.com aren’t checked by content filtering.
+  - The senders steve@fabrikam.com and cindy@fabrikam.com aren't checked by content filtering.
 
-  - All senders in the domain nwtraders.com and all subdomains aren’t checked by content filtering.
+  - All senders in the domain nwtraders.com and all subdomains aren't checked by content filtering.
 
 <!-- end list -->
 
@@ -155,13 +148,13 @@ To add or remove entries without modifying any existing values, run the followin
 
 This example configures the following exceptions in content filtering:
 
-  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren’t checked by content filtering.
+  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren't checked by content filtering.
 
-  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren’t checked by content filtering.
+  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren't checked by content filtering.
 
-  - Add blueyonderairlines.com to the list of existing domains whose senders aren’t checked by content filtering.
+  - Add blueyonderairlines.com to the list of existing domains whose senders aren't checked by content filtering.
 
-  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren’t checked by content filtering.
+  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren't checked by content filtering.
 
 <!-- end list -->
 
@@ -173,13 +166,13 @@ This example configures the following exceptions in content filtering:
 
 To verify that you have successfully configured the recipient and sender exceptions, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-ContentFilterConfig | Format-List Bypassed*
     ```
 
-2.  Verify the values displayed match the settings you specified.
+2. Verify the values displayed match the settings you specified.
 
 ## Use the Shell to configure allowed and blocked phrases
 
@@ -217,13 +210,13 @@ Remove-ContentFilterPhrase -Phrase "stock tip"
 
 To verify that you have successfully configured the allowed and block phrases, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterPhrase | Format-List Influence,Phrase
     ```
 
-2.  Verify the values displayed match the settings you specified.
+2. Verify the values displayed match the settings you specified.
 
 ## Use the Shell to configure SCL thresholds
 
@@ -235,8 +228,6 @@ To configure the spam confidence level (SCL) thresholds and actions, run the fol
 
 > [!NOTE]
 > The Delete action takes precedence over the Reject action, and the Reject action takes precedence over the Quarantine action. Therefore, the SCL threshold for the Delete action should be greater than the SCL threshold for the Reject action, which in turn should be greater than the SCL threshold for the Quarantine action. Only the Reject action is enabled by default, and it has the SCL threshold value 7.
-
-
 
 This example configures the following values for the SCL thresholds:
 
@@ -256,13 +247,13 @@ This example configures the following values for the SCL thresholds:
 
 To verify that you have successfully configured the SCL thresholds, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-ContentFilterConfig | Format-List SCL*
     ```
 
-2.  Verify the values displayed match the settings you specified.
+2. Verify the values displayed match the settings you specified.
 
 ## Use the Shell to configure the rejection response
 
@@ -284,13 +275,13 @@ This example configures the Content Filter agent to send a customized rejection 
 
 To verify that you have successfully configured the rejection response, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-ContentFilterConfig | Format-List *Reject*
     ```
 
-2.  Verify the values displayed match the settings you specified.
+2. Verify the values displayed match the settings you specified.
 
 ## Use the Shell to enable or disable Outlook Email Postmarking
 
@@ -312,11 +303,10 @@ Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
 
 To verify that you have successfully configured Outlook Email Postmarking, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
     ```
 
-2.  Verify the value displayed matches the setting you specified.
-
+2. Verify the value displayed matches the setting you specified.

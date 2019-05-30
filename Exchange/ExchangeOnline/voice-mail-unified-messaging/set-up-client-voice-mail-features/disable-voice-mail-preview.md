@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can disable the Voice Mail Preview feature for users associated with a Unified Messaging (UM) mailbox policy. Disabling this setting prevents users from receiving the text of a voice mail message in the message body of an email or text message. The default setting is enabled.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 362fed13-3a9c-4111-bfa4-8c45ab6a3a01
 ms.date: 11/17/2014
-title: Disable Voice Mail Preview for users
+ms.reviewer: 
+title: Disable Voice Mail Preview for users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Disable Voice Mail Preview for users
+# Disable Voice Mail Preview for users in Exchange Online
 
 You can disable the Voice Mail Preview feature for users associated with a Unified Messaging (UM) mailbox policy. Disabling this setting prevents users from receiving the text of a voice mail message in the message body of an email or text message. The default setting is enabled.
 

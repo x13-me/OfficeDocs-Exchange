@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
 ms.topic: conceptual
-author: dstrome
-ms.author: dstrome
+author: chrisda
+ms.author: chrisda
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms.date: 9/20/2018
+ms.reviewer: 
 title: What changes in Active Directory when Exchange is installed?
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

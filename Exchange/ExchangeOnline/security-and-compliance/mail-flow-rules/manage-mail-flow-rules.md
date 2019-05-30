@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Manage mail flow rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

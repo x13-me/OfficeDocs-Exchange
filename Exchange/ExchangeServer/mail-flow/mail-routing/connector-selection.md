@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 579c6dc1-ece3-442a-bb8c-f55bcb543119
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Connector selection in external message routing
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

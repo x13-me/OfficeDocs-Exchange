@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Enable or disable single item recovery for a mailbox
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
 ms.date: 
+ms.reviewer: 
 description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
 title: Migrate email using the Exchange cutover method
 ms.collection: 
@@ -16,10 +17,10 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -125,7 +126,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
 
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Office 365](assign-permissions-for-migration.md).
 
-6. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM or the mailboxes after migration is complete.
+6. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. [Turn on Cloud Voicemail](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail) for your users after the migration is complete.
 
 7. **Create security groups and clean up delegates**: Because the email migration service can't detect whether on-premises Active Directory groups are security groups, it can't provision any migrated groups as security groups in Office 365. If you want to have security groups in Office 365, you must first provision an empty mail-enabled security group in Office 365 before starting the cutover migration.
 
@@ -177,11 +178,11 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes:
 
-  - **Email address**: Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox.
+  - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox.
 
-  - **Account with privileges**: Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
+  - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 
-  - **Password of account with privileges**: Type the *password*  for the account with privileges that is the administrator account.
+  - **Password of account with privileges**: Type the *password* for the account with privileges that is the administrator account.
 
 7. Choose **Next** and do one of the following:
 
@@ -191,9 +192,9 @@ A migration endpoint contains the settings and credentials needed to connect the
 
   - If the test connection to the source server isn't successful, provide the following information:
 
-  - **Exchange server**: Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com.
+  - **Exchange server**: Type the *fully qualified domain name* (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com.
 
-  - **RPC proxy server**: Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
+  - **RPC proxy server**: Type the *FQDN* for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
 
 8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 
@@ -219,7 +220,7 @@ In a cutover migration, on-premises mailboxes are migrated to Office 365 in a si
 
     ![New migration batch with confirmed endpoint.](media/1c7ff17e-6754-4c98-8b29-5a479239df13.JPG)
 
-5. On the **Move configuration** page, type the *name*  (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch.
+5. On the **Move configuration** page, type the *name* (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch.
 
 6. On the **Start the batch** page, choose one of the following:
 

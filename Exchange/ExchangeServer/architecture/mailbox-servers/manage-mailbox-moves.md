@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms.date:
+ms.reviewer: 
 title: Manage on-premises mailbox moves in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

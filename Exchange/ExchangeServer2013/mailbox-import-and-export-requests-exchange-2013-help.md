@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Mailbox import and export requests: Exchange 2013 Help'
 TOCTitle: Mailbox import and export requests
 ms:assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633455(v=EXCHG.150)
 ms:contentKeyID: 49360508
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Mailbox import and export requests
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Using the **MailboxImportRequest** or **MailboxExportRequest** cmdlet sets in the Exchange Management Shell, you can import data from or export data to .pst files. After you initiate a mailbox import or export request, the process is completed asynchronously by the Microsoft Exchange Mailbox Replication service (MRS). MRS resides on all Exchange 2010 Client Access servers and is the service responsible for moving mailboxes and importing and exporting .pst files.
 
@@ -33,11 +34,11 @@ Exporting mailbox data
 
 You may want to import or export mailbox data for the following reasons:
 
-  - **Satisfy compliance requirements**   You can export mailbox content to a .pst file for legal discovery purposes. After the export is complete, you can import the content to a mailbox used specifically for compliance purposes.
+  - **Satisfy compliance requirements**: You can export mailbox content to a .pst file for legal discovery purposes. After the export is complete, you can import the content to a mailbox used specifically for compliance purposes.
 
-  - **Create a point-in-time snapshot of a mailbox**   By creating a snapshot of specific mailboxes, you avoid having to retain an entire backup set for a mailbox database.
+  - **Create a point-in-time snapshot of a mailbox**: By creating a snapshot of specific mailboxes, you avoid having to retain an entire backup set for a mailbox database.
 
-  - **Move a user's .pst file into his or her mailbox or personal archive**   Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://technet.microsoft.com/en-us/library/ff607310\(v=exchg.150\)) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
+  - **Move a user's .pst file into his or her mailbox or personal archive**: Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://technet.microsoft.com/en-us/library/ff607310\(v=exchg.150\)) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
 
 ## Advantages to using import and export requests
 
@@ -73,11 +74,8 @@ Before you import or export mailbox data, consider the following:
 
 Use the **MailboxImportRequest** cmdlet set to import data from a .pst file to a mailbox or personal archive. The following is a list of options you can specify when importing mailbox data from a .pst file:
 
-
 > [!NOTE]
 > The mailbox to which you import the data must exist. You can't import data to a user account that doesn't have a mailbox.
-
-
 
   - You can import data to a different user account than the one from which it was exported. For example, you can export data from john@contoso.com and import it to legaldiscovery@contoso.com.
 
@@ -92,7 +90,6 @@ Use the **MailboxImportRequest** cmdlet set to import data from a .pst file to a
 ## Mailbox import request cmdlets
 
 Use the following cmdlets for mailbox import requests.
-
 
 <table>
 <colgroup>
@@ -137,7 +134,6 @@ Use the following cmdlets for mailbox import requests.
 </tbody>
 </table>
 
-
 ## Exporting mailbox data
 
 Use the **MailboxExportRequest** cmdlet set to export mailbox data to a .pst file. You can export one mailbox or several mailboxes, but only one request is written to each .pst file at a time. The following is a list of options you can specify when exporting mailbox data to a .pst file:
@@ -153,7 +149,6 @@ Use the **MailboxExportRequest** cmdlet set to export mailbox data to a .pst fil
 ## Mailbox export request cmdlets
 
 Use the following cmdlets for mailbox export requests.
-
 
 <table>
 <colgroup>
@@ -197,4 +192,3 @@ Use the following cmdlets for mailbox export requests.
 </tr>
 </tbody>
 </table>
-

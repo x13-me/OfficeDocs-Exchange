@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63
 ms.date: 11/17/2014
-title: Include text with the email message sent when a user Is enabled for voice mail
+ms.reviewer: 
+title: Include text with the email message sent when a user Is enabled for voice mail in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Include text with the email message sent when a user Is enabled for voice mail
+# Include text with the email message sent when a user Is enabled for voice mail in Exchange Online
 
 When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system.
 

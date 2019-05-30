@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

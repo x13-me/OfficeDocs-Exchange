@@ -1,33 +1,28 @@
-﻿---
+---
 title: 'Use the RollAlternateserviceAccountCredential.ps1 script in the shell'
 TOCTitle: Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell
 ms:assetid: 6ac55aae-472a-4ed6-83df-2d0e7b48e05c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808311(v=EXCHG.150)
 ms:contentKeyID: 63937186
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the RollAlternateServiceAccountPassword.ps1 script in Exchange Server 2013 fto update an alternate service account credential (ASA credential) and distribute the update to specified Client Access servers.
-
 
 > [!NOTE]
 > The Exchange Management Shell doesn't load scripts automatically. You need to precede all scripts with "<STRONG>.&#92;</STRONG>" For example, to run the RollAlternateServiceAccountPassword.ps1 script, type <CODE>.\RollAlternateServiceAccountPassword.ps1</CODE>.
 
-
-
-
 > [!NOTE]
 > This script is provided in English only.
-
-
 
 For more information about how to use and write scripts, see [Scripting with the Exchange Management Shell](https://technet.microsoft.com/en-us/library/bb123798\(v=exchg.150\)).
 
@@ -71,11 +66,8 @@ If the passwords aren't changed successfully for all target Client Access server
 
 If you want the script to create a scheduled task to maintain the password on an ongoing basis, use the *CreateScheduledTask* parameter. This parameter requires a string for the name of the task you want to create.
 
-
 > [!NOTE]
 > Run the script and verify that it works correctly in attended mode before you create the unattended scheduled task.
-
-
 
 The script creates a .cmd file in the folder where the script is located. It then creates a task to run that .cmd file every three weeks. You can use Windows Task Scheduler to modify the scheduled task, for example, to set it to run more or less often. By default, the task will run as the currently logged-on user. In addition, the script will only run when the user is logged on to the computer. We recommend that you modify the scheduled task to run whether the user is logged on or not. You can also choose to run it under a different account, if that account has Active Directory permissions to reset passwords as well as the Exchange Enterprise Administrator role. When creating a scheduled task, the script will automatically run in unattended mode.
 
@@ -131,13 +123,11 @@ You can also examine the event log on the computer on which the script is run. T
 </tbody>
 </table>
 
-
 If the script runs as a scheduled task, its results are logged to the Exchange server **Logging** folder in a subfolder called **RollAlternateServiceAccountPassword**.
 
 You can use the log to confirm that the task has been running successfully.
 
 ## Parameters
-
 
 <table>
 <colgroup>
@@ -166,7 +156,6 @@ You can use the log to confirm that the task has been running successfully.
 > [!NOTE]
 > If you're using the <EM>ToArrayMembers</EM> parameter or the <EM>ToSpecificServers</EM> parameter, you need to specify the server names or the server array names using the <EM>Identity</EM> parameter.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -176,7 +165,6 @@ You can use the log to confirm that the task has been running successfully.
 
 > [!NOTE]
 > If you're using the <EM>ToArrayMembers</EM> parameter or the <EM>ToSpecificServers</EM> parameter, you need to specify the server names or the server array names using the <EM>Identity</EM> parameter.
-
 
 </td>
 </tr>
@@ -208,7 +196,6 @@ You can use the log to confirm that the task has been running successfully.
 > [!NOTE]
 > This script creates a .cmd file in the folder where the script is located. The scheduled task will run the .cmd file once every three weeks. You can edit the task directly in Windows Task Scheduler to change the frequency of the task.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -234,7 +221,6 @@ You can use the log to confirm that the task has been running successfully.
 </tbody>
 </table>
 
-
 ## Examples
 
 ## Example 1
@@ -255,7 +241,7 @@ This example generates a new password for a user account ASA credential and dist
 
 ## Example 3
 
-This example schedules a once-a-month automated password roll scheduled task called “Exchange-RollAsa”. It will update the ASA credential for all Client Access servers in the entire forest with a new, script-generated password. The scheduled task is created, but the script is not run. When the scheduled task is run, the script runs in unattended mode.
+This example schedules a once-a-month automated password roll scheduled task called "Exchange-RollAsa". It will update the ASA credential for all Client Access servers in the entire forest with a new, script-generated password. The scheduled task is created, but the script is not run. When the scheduled task is run, the script runs in unattended mode.
 
 ```powershell
     .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
@@ -266,16 +252,15 @@ This example schedules a once-a-month automated password roll scheduled task cal
 This example updates the ASA credential for all Client Access servers in the Client Access server array named CAS01. It obtains the credential from the Active Directory computer account ServiceAc1 in the domain Contoso.
 
 ```powershell
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$"
 ```
 
 ## Example 5
 
 This example shows how you can use the script to distribute the ASA to a new computer or to a computer that's being put back into service either because you're increasing the size of your server array or because you're re-introducing array members after maintenance.
 
-You need to update the ASA credential before the Client Access server receives traffic. Copy the shared ASA credential from any Client Access server that's already configured correctly. For example, if Server A currently has a working ASA credential and you’ve just added Server B to the array, you can use the script to copy the credential (including the password) from Server A to Server B. This is useful if Server B was down or not yet a member of the array when the password was rolled the last time.
+You need to update the ASA credential before the Client Access server receives traffic. Copy the shared ASA credential from any Client Access server that's already configured correctly. For example, if Server A currently has a working ASA credential and you've just added Server B to the array, you can use the script to copy the credential (including the password) from Server A to Server B. This is useful if Server B was down or not yet a member of the array when the password was rolled the last time.
 
 ```powershell
 .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "Exchange Deployment Assistant release notes"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.audience: ITPro
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+audience: ITPro
 layout: LandingPage
 ms.topic: landing-page
 ms.prod: exchange-server-itpro

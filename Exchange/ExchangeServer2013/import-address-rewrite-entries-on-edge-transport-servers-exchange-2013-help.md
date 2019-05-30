@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Import address rewrite entries on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Import address rewrite entries on Edge Transport servers
 ms:assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb331966(v=EXCHG.150)
 ms:contentKeyID: 61200296
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Import address rewrite entries on Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can bulk-create or import address rewriting information into an Edge Transport server by using a comma-separated value (CSV) file. The following list describes common scenarios that require you to do this:
 
@@ -26,7 +27,6 @@ You can bulk-create or import address rewriting information into an Edge Transpo
 You can use any text editor, like Notepad, or an application like Microsoft Excel, to create the CSV file. Format the file as described in this topic and save it as a .csv file.
 
 The first row, or *header row*, of the CSV file lists the names of the parameters. Each parameter is separated by a comma. The required and optional parameters are described in the following table.
-
 
 <table>
 <colgroup>
@@ -81,7 +81,6 @@ The first row, or *header row*, of the CSV file lists the names of the parameter
 </tbody>
 </table>
 
-
 Each row under the header row represents an individual address rewrite entry. The values in each row must be in the same order as the parameter names in the header row. Each value is separated by a comma.
 
 ## What do you need to know before you begin?
@@ -96,11 +95,8 @@ Each row under the header row represents an individual address rewrite entry. Th
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## How do you do this?
 
@@ -139,7 +135,6 @@ This example imports the address rewrite entries from C:\\My Documents\\ImportAd
 
 To verify that you have successfully imported address rewrite entries from a CSV file, do the following:
 
-1.  To see all address rewrite entries, run the command `Get-AddressRewriteEntry`.
+1. To see all address rewrite entries, run the command `Get-AddressRewriteEntry`.
 
-2.  To see details about a specific address rewrite entry, run the command `Get-AddressRewriteEntry <AddressRewriteIdentity> | Format-List`
-
+2. To see details about a specific address rewrite entry, run the command `Get-AddressRewriteEntry <AddressRewriteIdentity> | Format-List`

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 8e8464df-2d1d-4d68-82de-b0c158c549c3
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Active Directory in Exchange organizations
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

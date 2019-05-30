@@ -5,12 +5,14 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: c95dd3ac-27e3-47ac-9130-5314a72ab4bd
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to run a message trace in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to trace an email message in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 

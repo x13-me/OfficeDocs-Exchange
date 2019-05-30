@@ -5,11 +5,13 @@ ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
+ms.reviewer: 
+manager: dansimp
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
-ms.audience: ITPro
+audience: ITPro
 title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office, migrate Exchange public folders to Office
 
 ---
@@ -123,13 +125,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
    To check if the accepted domain is already present in your on-premises environment, run the following:
 
    ```
-   Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" }
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
    ```
 
    To rename the accepted domain to `PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99`, run the following:
 
    ```
-   Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
    ```
 
    > [!NOTE]

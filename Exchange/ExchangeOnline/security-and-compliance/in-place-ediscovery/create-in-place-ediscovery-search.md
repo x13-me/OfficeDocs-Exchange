@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.date: 7/20/2017
+ms.reviewer: 
 title: Create an In-Place eDiscovery search
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'View role assignments: Exchange 2013 Help'
 TOCTitle: View role assignments
 ms:assetid: 0be4def9-af6d-476a-9c97-7155ae11b587
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335086(v=EXCHG.150)
 ms:contentKeyID: 49289159
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # View role assignments
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role assignments assign a management role to a role assignee. For more information about management role assignments in Microsoft Exchange Server 2013, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
@@ -28,20 +29,15 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - You must use the Shell to perform these procedures.
 
   - This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
-    
+
       - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
-    
+
       - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## View a list of all role assignments
 
@@ -139,13 +135,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 To view a list of role assignments that use a specific custom scope, you need to first determine whether the scope is a recipient scope, configuration scope, exclusive recipient scope, or exclusive configuration scope. Each type of scope uses a different parameter on the **Get-ManagementRoleAssignment** cmdlet. The following lists each scope and its associated parameter:
 
-  - **Recipient scopes**   *CustomRecipientWriteScope*
+  - **Recipient scopes**: *CustomRecipientWriteScope*
 
-  - **Configuration scopes**   *CustomConfigWriteScope*
+  - **Configuration scopes**: *CustomConfigWriteScope*
 
-  - **Exclusive recipient scopes**   *ExclusiveRecipientWriteScope*
+  - **Exclusive recipient scopes**: *ExclusiveRecipientWriteScope*
 
-  - **Exclusive configuration scopes**   *ExclusiveConfigWriteScope*
+  - **Exclusive configuration scopes**: *ExclusiveConfigWriteScope*
 
 The syntax for each parameter is the same. Specify the name of the scope with the parameter that matches the type of scope it is.
 
@@ -236,4 +232,3 @@ Get-ManagementRoleAssignment -Enabled $False
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
-

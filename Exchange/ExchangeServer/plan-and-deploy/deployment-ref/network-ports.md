@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
 ms.date:
+ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

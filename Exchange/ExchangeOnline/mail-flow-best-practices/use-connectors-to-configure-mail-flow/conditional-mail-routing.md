@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 82d105e2-e955-4e03-99c3-3314a5d21a4c
 ms.date: 
+ms.reviewer: 
 title: Scenario Conditional mail routing in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.date: 
+ms.reviewer: 
 title: Manage permissions for recipients in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

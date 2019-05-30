@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Recover deleted messages in a user's mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

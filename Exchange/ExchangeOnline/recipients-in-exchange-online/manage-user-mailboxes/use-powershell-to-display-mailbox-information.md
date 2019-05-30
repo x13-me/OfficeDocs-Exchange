@@ -6,13 +6,14 @@ author: JoeDavies-MSFT
 ms.author: josephd
 ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
 ms.date: 3/1/2018
+ms.reviewer: 
 title: Use Exchange Online PowerShell to display Office 365 mailbox information
 ms.collection:
 - Ent_O365
 - exchange-online
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
-manager: serdars
+manager: laurawi
 
 ---
 

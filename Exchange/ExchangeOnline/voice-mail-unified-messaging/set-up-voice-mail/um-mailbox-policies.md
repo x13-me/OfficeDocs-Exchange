@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: "Unified Messaging (UM) mailbox policies are required when you enable users for Unified Messaging. You create UM mailbox policies to apply a common set of policies or security settings to a collection of voice mail users' mailboxes. UM mailbox policies are used to specify UM settings like the following:"
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: dfae629e-ee89-4494-a3ed-9655b67eb87e
 ms.date: 11/17/2014
-title: UM mailbox policies
+ms.reviewer: 
+title: UM mailbox policies in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# UM mailbox policies
+# UM mailbox policies in Exchange Online
 
 Unified Messaging (UM) mailbox policies are required when you enable users for Unified Messaging. You create UM mailbox policies to apply a common set of policies or security settings to a collection of voice mail users' mailboxes. UM mailbox policies are used to specify UM settings like the following:
 

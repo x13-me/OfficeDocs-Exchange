@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
 ms.date:
+ms.reviewer: 
 title: Recreate missing arbitration mailboxes
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

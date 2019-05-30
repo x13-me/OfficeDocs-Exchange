@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Procedures for mail flow rules in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

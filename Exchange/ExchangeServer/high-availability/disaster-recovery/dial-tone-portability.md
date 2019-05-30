@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Dial tone portability
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

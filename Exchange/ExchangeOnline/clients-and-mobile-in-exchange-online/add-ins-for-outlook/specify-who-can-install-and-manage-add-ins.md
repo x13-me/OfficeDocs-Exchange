@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 ms.date: 
+ms.reviewer: 
 title: Specify the administrators and users who can install and manage add-ins for Outlook
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

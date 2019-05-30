@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Remove a public folder
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

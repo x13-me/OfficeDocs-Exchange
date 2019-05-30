@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
 ms.date: 
+ms.reviewer: 
 title: Remove a global address list in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

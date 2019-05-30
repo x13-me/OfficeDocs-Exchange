@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Configure email forwarding for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

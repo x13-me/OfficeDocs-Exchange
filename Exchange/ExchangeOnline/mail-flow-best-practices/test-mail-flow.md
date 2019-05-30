@@ -6,11 +6,12 @@ author: supotter
 ms.author: supotter
 ms.assetid: 6c8c2964-d553-4329-8166-6e508dd63fa0
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Test mail flow by validating your Office 365 connectors
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

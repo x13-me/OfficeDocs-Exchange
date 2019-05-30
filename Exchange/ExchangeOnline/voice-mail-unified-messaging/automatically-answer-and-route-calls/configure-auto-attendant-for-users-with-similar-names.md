@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can configure the method to use for users with similar names on an auto attendant's Address book and operator access options, or you can leave the default setting on the auto attendant and configure this setting on the dial plan associated with the auto attendant. By default, an auto attendant can disambiguate between two or more users who have the same or similar names because the default setting on the auto attendant is Inherit from dial plan.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 2e7318a0-67f9-4d7b-8300-5f0ef77656a8
 ms.date: 11/17/2014
-title: Configure an auto attendant for users who have similar names
+ms.reviewer: 
+title: Configure an auto attendant for users who have similar names in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Configure an auto attendant for users who have similar names
+# Configure an auto attendant for users who have similar names in Exchange Online
 
 You can configure the method to use for users with similar names on an auto attendant's **Address book and operator access** options, or you can leave the default setting on the auto attendant and configure this setting on the dial plan associated with the auto attendant. By default, an auto attendant can disambiguate between two or more users who have the same or similar names because the default setting on the auto attendant is **Inherit from dial plan**.
 

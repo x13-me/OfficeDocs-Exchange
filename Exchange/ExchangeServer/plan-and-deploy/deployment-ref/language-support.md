@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 934686fb-53a2-4b13-aaf0-498e4011d61a
 ms.date: 7/31/2018
+ms.reviewer: 
 title: Exchange Server language support
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

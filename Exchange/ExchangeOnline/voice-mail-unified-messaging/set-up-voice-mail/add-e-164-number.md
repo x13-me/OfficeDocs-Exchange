@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains the E.164 number for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
 ms.date: 11/17/2014
-title: Add an E.164 number
+ms.reviewer: 
+title: Add an E.164 number in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Add an E.164 number
+# Add an E.164 number in Exchange Online
 
 When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains the E.164 number for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 

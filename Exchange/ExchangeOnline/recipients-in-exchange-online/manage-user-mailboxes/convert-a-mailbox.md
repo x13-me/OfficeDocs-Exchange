@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.date: 4/26/2017
+ms.reviewer: 
 title: Convert a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

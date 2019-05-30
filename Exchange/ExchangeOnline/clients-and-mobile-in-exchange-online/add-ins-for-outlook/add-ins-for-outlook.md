@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms.date: 
+ms.reviewer: 
 title: Add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

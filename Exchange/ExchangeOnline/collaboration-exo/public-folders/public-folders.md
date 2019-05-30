@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Public folders in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

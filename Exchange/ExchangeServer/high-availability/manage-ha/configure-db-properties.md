@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Configure mailbox database copy properties
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

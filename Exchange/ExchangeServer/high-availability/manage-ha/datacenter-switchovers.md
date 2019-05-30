@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Datacenter switchovers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -41,6 +42,8 @@ Users should start to have access to messaging services sometime after steps 3 a
 <a name="Term"> </a>
 
 If any DAG members in the failed datacenter are still running, they should be terminated.
+
+When the Exchange DAG is in DAC mode, you can disable the servers in a failed datacenter with a single command. This will allow you to mount the databases in another datacenter even if the DAG doesn't have quorum (more than half the members of the DAG available).
 
 When the DAG is in DAC mode, the specific actions to terminate any surviving DAG members in the primary datacenter are as follows:
 

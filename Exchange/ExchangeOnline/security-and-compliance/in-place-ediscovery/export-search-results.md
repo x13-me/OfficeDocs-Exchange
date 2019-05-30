@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.date: 6/23/2018
+ms.reviewer: 
 title: Export eDiscovery search results to a PST file
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

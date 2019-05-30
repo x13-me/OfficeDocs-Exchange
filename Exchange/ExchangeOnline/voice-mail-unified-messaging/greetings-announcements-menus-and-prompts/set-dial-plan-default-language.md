@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can set the default language for a Unified Messaging (UM) dial plan. Each dial plan you create will initially use English (en-US) as the default language.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
 ms.date: 7/12/2018
-title: Set the default language on a dial plan
+ms.reviewer: 
+title: Set the default language on a dial plan in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Set the default language on a dial plan
+# Set the default language on a dial plan in Exchange Online
 
 ### Use the EAC to set the default language on a UM dial plan
 

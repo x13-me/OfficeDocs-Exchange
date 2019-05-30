@@ -6,11 +6,12 @@ author: stephow-msft
 ms.author: stephow
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Create a custom DLP policy
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

@@ -1,22 +1,22 @@
-﻿---
+---
 title: 'Recreating arbitration mailboxes: Exchange 2013 Help'
 TOCTitle: Recreating arbitration mailboxes
 ms:assetid: bb6b8524-aaee-4be8-a04e-e61cd2ab3465
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
 ms.date: 01/17/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Recreating arbitration mailboxes
 
- 
-
-
 **Summary:** About arbitration mailboxes in Exchange 2013 and how to re-create them.
 
 Exchange 2013 comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The below chart lists each type of arbitration mailbox and their responsibilities.
-
 
 <table>
 <colgroup>
@@ -68,7 +68,6 @@ Exchange 2013 comes with five system mailboxes known as *arbitration mailboxes*.
 </tbody>
 </table>
 
-
 If you need to re-create one of more of these arbitration mailboxes, see the instructions that follow.
 
 ## What you should know before you begin
@@ -83,24 +82,21 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 Use the following instructions to re-create a particular type of arbitration mailbox.
 
-
 > [!NOTE]
 > All steps in the following sections must be run from the same directory where you extracted the Exchange installation media.
-
-
 
 ## Re-create the Microsoft Exchange Federation Mailbox
 
 To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042:
 
-1.  If any arbitration mailboxes are missing, run the following command:
-    
+1. If any arbitration mailboxes are missing, run the following command:
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
 
-2.  In Exchange Management Shell, run the following:
-    
+2. In Exchange Management Shell, run the following:
+
     ```powershell
     Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
     ```
@@ -109,14 +105,14 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
 
 To re-create the arbitration mailbox SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}:
 
-1.  If any arbitration mailboxes are missing, run the following command:
-    
+1. If any arbitration mailboxes are missing, run the following command:
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
 
-2.  In Exchange Management Shell, run the following:
-    
+2. In Exchange Management Shell, run the following:
+
     ```powershell
         Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
     ```
@@ -125,20 +121,20 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-9350-4efe-a823-5529c
 
 To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229136:
 
-1.  If any arbitration mailboxes are missing, run the following command:
-    
+1. If any arbitration mailboxes are missing, run the following command:
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
 
-2.  In Exchange Management Shell, run the following:
-    
+2. In Exchange Management Shell, run the following:
+
     ```powershell
     Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
     ```
 
-3.  In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
-    
+3. In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+
     ```powershell
     Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
     ```
@@ -147,8 +143,8 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 
 To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
@@ -157,20 +153,20 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 
 To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}:
 
-1.  If any arbitration mailboxes are missing, run the following command:
-    
+1. If any arbitration mailboxes are missing, run the following command:
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
 
-2.  In Exchange Management Shell, run the following:
-    
+2. In Exchange Management Shell, run the following:
+
     ```powershell
     Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
     ```
 
-3.  In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
-    
+3. In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+
     ```powershell
         Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
     ```
@@ -191,8 +187,5 @@ Get-Mailbox -Arbitration | Format-Table Name, DisplayName
 
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

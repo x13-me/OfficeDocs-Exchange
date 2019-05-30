@@ -6,11 +6,12 @@ author: stephow-msft
 ms.author: stephow
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.date: 7/20/2018
+ms.reviewer: 
 title: Manage policy tips
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

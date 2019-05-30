@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Configure mobile phones to access email
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
