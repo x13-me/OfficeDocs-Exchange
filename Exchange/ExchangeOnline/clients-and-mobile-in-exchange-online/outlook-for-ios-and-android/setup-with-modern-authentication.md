@@ -24,7 +24,8 @@ manager: dansimp
 There are two ways that users with modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)) can set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. In addition, Outlook for iOS and Android offers IT administrators the ability to "push" account configurations to their Office 365 users, as well as, control whether Outlook for iOS and Android supports personal accounts.
 
 ## Modern Authentication
-Modern authentication is an umbrella term for a combination of authentication and authorization methods. It includes:
+
+Modern authentication is an umbrella term for a combination of authentication and authorization methods. These include:
   
 - **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
     
