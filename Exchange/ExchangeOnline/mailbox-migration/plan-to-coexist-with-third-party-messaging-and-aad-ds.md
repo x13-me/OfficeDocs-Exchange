@@ -26,29 +26,29 @@ manager: serdars
 
 Most Microsoft email migration information assumes that you're running Exchange Server in your on-premises organization. This topic is for organizations that use Active Directory as their on-premises identity platform and a third-party messaging system (for example, IBM Lotus Notes or Novell GroupWise) for email.
 
-In the following scenario, the goal is to support cross-premises email coexistence. A third-party messaging system remains in the on-premises organization and shares an email namespace (domain) with the Exchange Online messaging system in the cloud. A unified address book in the cloud shows all users in both the on-premises and cloud organizations. This email coexistence might be a short-term or long-term solution.
+In this scenario, the goal is to support cross-premises email coexistence. A third-party messaging system remains in the on-premises organization and shares an email namespace (domain) with the Exchange Online messaging system in the cloud. A unified address book in the cloud shows all users in both the on-premises and cloud organizations. This email coexistence might be a short-term or long-term solution.
 
-Consider the Azure Active Directory [hybrid identity options](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity) and the [authentication choices](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) when planning the synchronization process and the end user authentication options.
+As you plan for this third-party email coexistence, consider the Azure Active Directory [hybrid identity options](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity) and the [authentication choices](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) for synchronization and end user authentication options.
 
 **Scenario goals**:
 
-- Users with on-premises mailboxes should be represented in the global address list (GAL) as mail-enabled users.
+- Users with on-premises mailboxes should be represented in the Exchange Online global address list (GAL) as mail-enabled users.
 
-- Mail routing from cloud to on-premises uses a shared domain namespace.
+- Mail routing from the cloud to the on-premises organization uses a shared domain namespace.
 
-- Alternatively, as part of a migration strategy, the mail-enabled users in the cloud might be licensed with Exchange Online mailboxes.
+  Or, as part of a migration strategy, the mail-enabled users in the cloud might be licensed with Exchange Online mailboxes.
 
 - Cross-premises coexistence might last indefinitely. The cloud address list, proper mail routing, and message format fidelity all meet business-class requirements
 
 **Requirements**:
 
-- Subscription to Microsoft 365 (must be an enterprise subscription).
+- A subscription to Microsoft 365 (must be an enterprise subscription).
 
-- On-premises organization must be running Active Directory with the Microsoft Exchange 2013 or later schema updates.
+- The on-premises organization is running Active Directory with the Microsoft Exchange 2013 or later schema updates.
 
-- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users in this scenario. To meet these requirements, you must install the Exchange 2013 Client Access and Mailbox server roles on a server in your on-premises organization.
+- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users. To meet these requirements, you need install the Exchange 2013 Client Access and Mailbox server roles on a server in your on-premises organization.
 
-- Every messaging object from the third-party system needs to have corresponding user object in local Active Directory. It will need mail-enabled as part of the coexistence process.
+- Every recipient object from the third-party system needs to have corresponding user object in local Active Directory. The users will need mail-enabled as part of the coexistence process.
 
 ## Technical Overview
 
@@ -82,19 +82,19 @@ In many case, the links refer to configuration particulars for an on-premises Ex
 
 The following steps outline the process for implementing third-party messaging coexistence with Microsoft 365:
 
-- [Step 1: Sign up for Microsoft 365](https://products.office.com/business/enterprise-productivity-tools)
+- [Step 1: Sign up for Microsoft 365](#step-1-sign-up-for-microsoft-365)
 
-- [Step 2: Install Exchange Server 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)
+- [Step 2: Install Exchange Server 2016](#step-2-install-exchange-server-2016)
 
-- [Step 3: Execute the Exchange Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/exchange-hybrid)
+- [Step 3: Execute the Exchange Hybrid Configuration Wizard](#step-3-execute-the-exchange-hybrid-configuration-wizard)
 
-- [Step 4: Enable mail-enabled users in your on-premises Active Directory](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn720476(v=exchg.150)#step-4-enable-mail-enabled-users-in-your-on-premises-active-directory)
+- [Step 4: Enable mail-enabled users in your on-premises Active Directory](#step-4-enable-mail-enabled-users-in-your-on-premises-active-directory)
 
-- [Step 5: Run the Azure Active Directory Sync tool to create mail-enabled users in the cloud](https://msdn.microsoft.com/library/Dn720476\(v=EXCHG.150\)#BKMK_Step5)
+- [Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365)](#step-5-install-and-configure-azure-active-directory-connect-to-synchronize-mail-enabled-users-into-azure-active-directory-microsoft-365)
 
-- [Step 6: Configure shared namespace routing](https://docs.microsoft.com/en-us/previous-versions/exchange-server/exchange-150/dn720476(v=exchg.150)#step-6-configure-shared-namespace-routing)
+- [Step 6: Configure shared namespace routing](#step-6-configure-shared-namespace-routing)
 
-- [Step 7: Disable TNEF to your on-premises messaging system](../mail-flow-best-practices/message-format-and-transmission.md)
+- [Step 7: Disable TNEF to your on-premises messaging system](#step-7-disable-tnef-to-your-on-premises-messaging-system)
 
 ## Step 1: Sign up for Microsoft 365
 
@@ -120,7 +120,7 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 ## Step 3: Execute the Exchange Hybrid Configuration Wizard
 
-1. Use the Exchange Hybrid Configuration Wizard, specifically in Classic mode with the Hybrid Minimal Configuration. In this topic, only perform [step 2](https://docs.microsoft.com/exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate).
+1. Use the Exchange Hybrid Configuration Wizard, specifically in Classic mode with the Hybrid Minimal Configuration. In this topic, only do [Step 2: Start express migration](https://docs.microsoft.com/exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate#step-2-start-express-migration).
 
 2. Complete the Hybrid Configuration Wizard. Do not use the Express Settings option in the Wizard, AADConnect will be configured later. Do not license the users or migrate any data.
 
@@ -130,20 +130,20 @@ After you've updated your Active Directory with the Exchange schema, you can now
 
 Using the Exchange Management Shell, run [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
 
-The **Enable-Mailuser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the target address of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
+The **Enable-MailUser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the *target address* of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
 
-The *ExternalEmailAddress* parameter is an email address that you enter for a given user. The email address must meet the following criteria:
+The *ExternalEmailAddress* parameter is an email address that you enter for the user. The email address must meet the following criteria:
 
-- It must be the valid primary SMTP address of the user recipient in your on-premises organization.
+- It must be the valid primary SMTP email address of the user in your on-premises organization.
 
 - The domain part of the email address (to the right of the @ sign) must match the verified domain in Microsoft 365.
 
 - The domain part of the email address must match the UPN domain for the user in the on-premises directory.
 
-Here's an example of how an **Enable-Mailuser** cmdlet might look:
+Here's an example of an **Enable-MailUser** command:
 
 ```powershell
-Enable-MailUser -Identity John -ExternalEmailAddress john@domino.contoso.com -PrimarySMTPAddress john@contoso.com
+Enable-MailUser -Identity "Gabriela Laureano" -ExternalEmailAddress glaureano@domino.contoso.com -PrimarySMTPAddress glaureano@contoso.com
 ```
 
 To learn more about how to install, configure, and run Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
