@@ -64,4 +64,3 @@ To verify that you've successfully assigned an OAB to a mailbox, replace <Mailbo
 ```
 Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table Name,OfflineAddressBook -Auto
 ```
-

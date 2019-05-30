@@ -28,4 +28,3 @@ manager: dansimp
 [Configure global address list properties in Exchange Online](configure-global-address-list-properties.md)
 
 [Create a global address list in Exchange Online](create-global-address-list.md)
-

@@ -55,6 +55,3 @@ This example prevents UM-enabled user tonysmith@contoso.com from receiving voice
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -AnonymousCallersCanLeaveMessages $false
 ```
-
-
-

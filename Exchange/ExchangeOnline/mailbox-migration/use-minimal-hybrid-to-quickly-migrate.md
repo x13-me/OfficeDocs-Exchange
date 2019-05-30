@@ -151,5 +151,3 @@ Email systems use a DNS record called an MX record to figure out where to delive
 [Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
 
 [How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
-
-

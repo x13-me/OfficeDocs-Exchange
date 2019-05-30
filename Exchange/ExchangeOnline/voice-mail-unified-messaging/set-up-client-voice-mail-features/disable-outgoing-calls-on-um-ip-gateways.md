@@ -51,6 +51,3 @@ This example disables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $false
 ```
-
-
-

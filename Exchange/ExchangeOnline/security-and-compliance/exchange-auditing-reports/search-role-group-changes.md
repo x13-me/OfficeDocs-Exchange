@@ -191,4 +191,3 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohi
 For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
 
 For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://technet.microsoft.com/library/52a221e0-ded1-44dc-a626-ca264eca4113.aspx).
-

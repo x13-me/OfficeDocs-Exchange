@@ -181,4 +181,3 @@ To verify that you've successfully applied an ABP to a mailbox, use any of the f
 ## More information
 
 To remove the ABP assignment from a mailbox, you select the value **[No Policy]** in the EAC, or use the value `$null` for the _AddressBookPolicy_ parameter in Exchange Online PowerShell.
-

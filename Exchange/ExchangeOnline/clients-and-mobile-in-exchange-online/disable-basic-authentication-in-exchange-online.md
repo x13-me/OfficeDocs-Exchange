@@ -460,4 +460,3 @@ New-AuthenticationPolicy -Name "Marketing Policy" -AllowBasicAuthActiveSync $fal
 $users = Get-ADGroupMember "Marketing Department"
 foreach ($user in $users) {Set-User -Identity $user.SamAccountName -AuthenticationPolicy "Marketing Policy"}
 ```
-

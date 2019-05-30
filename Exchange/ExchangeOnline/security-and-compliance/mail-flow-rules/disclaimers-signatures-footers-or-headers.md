@@ -103,4 +103,3 @@ To verify that you've successfully created a disclaimer, and that the disclaimer
 ## For more information
 
 After you configure a disclaimer or email header or footer, see [Manage mail flow rules](manage-mail-flow-rules.md) for information about how to view, modify, enable, disable, or remove a rule.
-

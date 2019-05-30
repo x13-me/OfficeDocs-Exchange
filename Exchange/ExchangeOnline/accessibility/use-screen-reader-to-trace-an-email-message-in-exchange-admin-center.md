@@ -116,4 +116,3 @@ It might take a few minutes to a few hours for message trace results to return. 
 
    > [!NOTE]
    > For more information, refer to [Run a Message Trace and View Results](https://go.microsoft.com/fwlink/p/?LinkId=799440).
-

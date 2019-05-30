@@ -52,4 +52,3 @@ Note that if you roll back your migration, you will lose any content that was ad
    ```
 
 5. See [Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md) for instructions on reconfiguring access to your on-premises public folders, so your Exchange Online users can access them.
-

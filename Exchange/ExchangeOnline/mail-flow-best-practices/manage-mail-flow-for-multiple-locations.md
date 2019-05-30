@@ -231,5 +231,3 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
-
-

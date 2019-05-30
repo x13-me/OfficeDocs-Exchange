@@ -82,6 +82,3 @@ This example sets the secondary dial by name method to `None` and the primary di
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary SMTPAddress -DialByNameSecondary None
 ```
-
-
-

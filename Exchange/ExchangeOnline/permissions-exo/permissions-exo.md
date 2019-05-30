@@ -217,4 +217,3 @@ The following table contains links to topics that will help you learn about and 
 |[Role assignment policies in Exchange Online](role-assignment-policies.md)|Configure which features end-users have access to on their mailboxes using role assignment policies, view, create, modify, and remove role assignment policies, specify the default role assignment policy, and apply role assignment policies to mailboxes.|
 |[View Effective Permissions](https://technet.microsoft.com/library/ae6cb7cf-f998-44a6-a69a-02ad736c8260.aspx)|View who has permissions to administer Exchange Online features.|
 |[Feature permissions in Exchange Online](feature-permissions.md)|Learn more about the permissions required to manage Exchange Online features and services.|
-

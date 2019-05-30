@@ -201,6 +201,3 @@ To test SMTP relay services, use the following steps.
 [Troubleshoot email sent from printers and business applications](fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 
 [How to set up a multifunction device or application to send email using Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md)
-
-
-

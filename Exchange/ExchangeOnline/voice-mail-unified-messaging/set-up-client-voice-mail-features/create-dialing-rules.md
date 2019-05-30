@@ -75,6 +75,3 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
   - **Comment**: Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls."
 
 5. Click **OK** to save the dialing rule. You can continue to enter rules, using the same dialing rule group name for rules that you want to authorize together.
-
-
-

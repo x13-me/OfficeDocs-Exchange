@@ -174,5 +174,3 @@ Office 365 SMTP relay requires your device to send email from a static IP addres
 ## See also
 
 [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md)
-
-

@@ -197,6 +197,3 @@ The outdialing process happens when:
 - A UM-enabled user uses the Play on Phone feature.
 
 In each outdialing scenario, UM will apply the dialing rules that have been configured, and then place the call for the user. However, depending on the scenario and how the call is initiated by the user, UM may apply only some of the dialing rules to the telephone number being dialed. In other outdialing scenarios, UM may apply all the outdialing rules configured to the telephone number being dialed.
-
-
-

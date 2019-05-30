@@ -77,6 +77,3 @@ This example creates a UM hunt group named `MyUMHuntGroup` that has multiple pil
 ```
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
-
-
-

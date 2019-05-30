@@ -66,4 +66,3 @@ This example retrieves the size of the Recoverable Items folder and its subfolde
 ```powershell
 Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
 ```
-

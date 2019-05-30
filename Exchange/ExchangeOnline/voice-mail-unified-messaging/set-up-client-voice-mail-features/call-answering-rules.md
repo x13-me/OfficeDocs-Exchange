@@ -56,6 +56,3 @@ This example disables Call Answering Rules for the user tony@contoso.com.
 ```
 Set-UMMailbox -Identity tony@contoso.com -CallAnsweringRulesEnabled $false
 ```
-
-
-

@@ -57,6 +57,3 @@ This example prevents Outlook Voice Access users from transferring calls to user
 ```
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $false
 ```
-
-
-

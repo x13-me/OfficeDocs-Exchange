@@ -62,4 +62,3 @@ If a message is sent to a valid email address in Office 365, the message continu
 
 > [!NOTE]
 > In hybrid environments dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a work around, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
-

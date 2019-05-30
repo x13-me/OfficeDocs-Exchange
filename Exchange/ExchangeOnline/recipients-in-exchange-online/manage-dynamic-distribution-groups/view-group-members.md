@@ -55,6 +55,3 @@ For detailed syntax and parameter information, see [Get-DynamicDistributionGroup
 To verify that you've successfully viewed the members of a dynamic distribution group, do the following:
 
 - In Exchange Online PowerShell, a list of members is returned after you run the previous command to preview a list of dynamic distribution group members. For example, if you created a new user mailbox with properties that match the recipient filter for the dynamic distribution group, this new user should be displayed in the list of group members.
-
-
-

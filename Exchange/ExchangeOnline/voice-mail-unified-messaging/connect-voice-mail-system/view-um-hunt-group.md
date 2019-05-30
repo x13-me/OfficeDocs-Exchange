@@ -56,6 +56,3 @@ Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 
 > [!NOTE]
 > When you're using the **Get-UMHuntGroup** cmdlet, you can't enter only the name of the UM hunt group. You must also include the name of the UM IP gateway that's associated with the UM hunt group.
-
-
-

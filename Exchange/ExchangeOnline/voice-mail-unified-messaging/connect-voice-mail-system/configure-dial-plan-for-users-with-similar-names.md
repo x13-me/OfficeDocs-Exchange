@@ -76,6 +76,3 @@ This example sets the information to include with users with similar names to lo
 ```
 Set-UMDialplan -Identity MyDialPlan -MatchedNameSelectionMethod Location
 ```
-
-
-

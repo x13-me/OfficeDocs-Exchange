@@ -70,6 +70,3 @@ $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(1) -="eum:+14255551010;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
 ```
-
-
-

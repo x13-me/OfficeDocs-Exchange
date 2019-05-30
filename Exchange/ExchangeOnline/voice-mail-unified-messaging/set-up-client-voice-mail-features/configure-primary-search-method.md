@@ -74,6 +74,3 @@ This example sets the primary dial by name method to `SMTP address`. This enable
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary SMTPAddress
 ```
-
-
-

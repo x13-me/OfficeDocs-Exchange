@@ -75,4 +75,3 @@ To verify that you've successfully created a GAL, replace _\<GAL Name\>_ with th
 ```
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
-

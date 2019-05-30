@@ -34,6 +34,3 @@ manager: dansimp
 [Configure a dial plan for users who have similar names](configure-dial-plan-for-users-with-similar-names.md)
 
 [Delete a UM dial plan](delete-um-dial-plan.md)
-
-
-

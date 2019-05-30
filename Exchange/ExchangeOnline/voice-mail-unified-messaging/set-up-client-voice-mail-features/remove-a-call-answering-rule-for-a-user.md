@@ -58,6 +58,3 @@ This example removes the call answering rule `MyUMCallAnsweringRule` from the ma
 ```
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
-
-
-

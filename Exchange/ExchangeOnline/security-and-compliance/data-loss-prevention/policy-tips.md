@@ -68,6 +68,3 @@ For procedures that explain how to create your own Policy Tips, see [Manage poli
 [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx)
 
 [Manage policy tips](manage-policy-tips.md)
-
-
-

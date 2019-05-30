@@ -53,6 +53,3 @@ This example sets the business name on a UM auto attendant named `MyUMAutoAttend
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessName "Northwind Traders"
 ```
-
-
-

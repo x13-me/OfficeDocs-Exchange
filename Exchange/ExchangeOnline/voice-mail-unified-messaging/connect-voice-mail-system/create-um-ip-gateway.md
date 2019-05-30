@@ -73,6 +73,3 @@ This example creates a UM IP gateway named `yUMIPGateway` and prevents the UM IP
 ```
 New-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
-
-
-

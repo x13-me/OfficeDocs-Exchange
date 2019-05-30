@@ -58,6 +58,3 @@ This example enables UM-enabled users who are associated with a UM mailbox polic
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You've been enabled for Unified Messaging voice mail. To access your Exchange mailbox, call your internal telephone extension number. From outside your office, call 425-555-1234."
 ```
-
-
-
