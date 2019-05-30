@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Reduce the size of a discovery mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones.
 

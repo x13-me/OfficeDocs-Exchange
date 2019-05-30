@@ -13,7 +13,7 @@ mtps_version: v=EXCHG.150
 
 # Third-party copyright notices in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Outside In HTML Export © 1991, 2011 Oracle
 

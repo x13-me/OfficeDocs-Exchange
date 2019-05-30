@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create non-business hours navigation menus in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can enable non-business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the non-business hours main menu prompt greeting that callers hear after the non-business hours welcome greeting is played. The default non-business hours main menu prompt says, "Welcome to the Microsoft Exchange after hours auto attendant." Because no key mappings are defined by default, no menu options are available to callers and they hear only the default non-business hours main menu prompt.
 

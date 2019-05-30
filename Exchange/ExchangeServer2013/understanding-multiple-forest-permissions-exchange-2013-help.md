@@ -166,8 +166,6 @@ When a role assignment policy is assigned to a linked mailbox, the user in the a
 
 ![Role group and assignment policy relationships](images/Dd298099.785b9b35-4292-43ce-917b-117d0174742e(EXCHG.150).gif "Role group and assignment policy relationships")
 
-Return to top
-
 ## Configure cross-boundary permissions
 
 To configure cross-boundary permissions in a multiple-forest topology, you must create linked role groups for each of the role groups you want to link to USGs in a foreign forest. This means that you must create a linked role group for each built-in role group. You need to:

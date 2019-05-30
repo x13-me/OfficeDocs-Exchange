@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Review the voice mail calls in your organization in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 You can use the Call Statistics report to view information about the type and status of incoming calls handled by the Exchange servers in your organization. The report provides statistical information about the calls forwarded to or placed by Unified Messaging (UM) for your organization. You can use this information to track usage for capacity planning, monitor and troubleshoot the availability and audio quality of UM, and to troubleshoot failed calls.
 
 This topic answers these questions:

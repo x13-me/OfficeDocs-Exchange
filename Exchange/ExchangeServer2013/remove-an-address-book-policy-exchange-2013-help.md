@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove an address book policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Use this procedure to remove an address book policy (ABP).
 

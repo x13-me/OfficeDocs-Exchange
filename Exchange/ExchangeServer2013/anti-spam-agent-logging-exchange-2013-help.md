@@ -112,8 +112,6 @@ The following table lists the SMTP events in order of occurrence and the agents 
 
 For more information about agents, SMTP events, and agent priority, see [Transport agents](transport-agents-exchange-2013-help.md).
 
-Return to top
-
 ## Structure of the agent log files
 
 The agent logs exist in %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\AgentLog.
@@ -137,8 +135,6 @@ The agent log files are text files that contain data in the comma-separated valu
   - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
   - **\#Fields**: Comma delimited field names used in the agent log files.
-
-Return to top
 
 ## Information written to the agent log
 
@@ -251,8 +247,6 @@ The agent log stores each agent transaction on a single line in the log. The inf
 </tbody>
 </table>
 
-Return to top
-
 ## Search the agent logs
 
 You can use the **Get-AgentLog** cmdlet and the **Get-AntiSpamFilteringReport.ps1** script to search the agent logs.
@@ -274,5 +268,3 @@ For details about using the script, run the following command:
 ```powershell
 Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
 ```
-
-Return to top

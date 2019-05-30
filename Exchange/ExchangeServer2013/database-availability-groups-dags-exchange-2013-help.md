@@ -111,8 +111,6 @@ DAGs with an odd number of members use the failover cluster's Node Majority quor
 
 Quorum requires a majority of voters to be able to communicate with each other. Consider a DAG that has four members. Because this DAG has an even number of members, an external witness server is used to provide one of the cluster members with a fifth, tie-breaking vote. To maintain a majority of voters (and therefore quorum), at least three voters must be able to communicate with each other. At any time, a maximum of two voters can be offline without disrupting service and data access. If three or more voters are offline, the DAG loses quorum, and service and data access will be disrupted until you resolve the problem.
 
-Return to top
-
 ## Using a database availability group (DAG) for high availability
 
 To illustrate how a DAG can provide high availability for your mailbox databases, consider the following example, which uses a DAG with five members. This DAG is illustrated in the following figure.
@@ -149,8 +147,6 @@ After the failed hardware component in EX3 is replaced with a new component, EX3
 
 ![DAG with Member Resynchronizing Database Copies](images/Dd979799.56259671-e840-4cf0-9ea2-3657dc36c035(EXCHG.150).gif "DAG with Member Resynchronizing Database Copies")
 
-Return to top
-
 ## Using a database availability group (DAG) for site resilience
 
 In addition to providing high availability within a datacenter, a DAG can also be extended to one or more datacenters in a configuration that provides site resilience for one or multiple datacenters. In the preceding example figures, the DAG is located in a single datacenter and single Active Directory site. Incremental deployment can be used to extend this DAG to a second datacenter (and a second Active Directory site) by deploying a Mailbox server and the necessary supporting resources (one or more Active Directory servers, and DNS services). The Mailbox server is then added to the DAG, as illustrated in the following figure.
@@ -172,5 +168,3 @@ In the preceding example, a single DAG extends across multiple datacenters, prov
 In the preceding example, the majority of voters are located in the Redmond datacenter. If the Dublin datacenter hosts active mailbox databases, and it has a local user population, a WAN outage would result in a messaging service outage for the Dublin users. When WAN connectivity breaks, only the DAG members in the Redmond datacenter retain quorum and continue providing messaging service.
 
 To eliminate the WAN as a single point of failure when you need to provide site resilience for multiple datacenters that each have an active user population, you should deploy multiple DAGs, where each DAG has a majority of voters in a separate datacenter. When a WAN outage occurs, replication will be blocked until connectivity is restored. Users will have messaging service, because each DAG continues to service its local user population.
-
-Return to top

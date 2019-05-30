@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM mailbox policies in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Unified Messaging (UM) mailbox policies are required when you enable users for Unified Messaging. You create UM mailbox policies to apply a common set of policies or security settings to a collection of voice mail users' mailboxes. UM mailbox policies are used to specify UM settings like the following:
 

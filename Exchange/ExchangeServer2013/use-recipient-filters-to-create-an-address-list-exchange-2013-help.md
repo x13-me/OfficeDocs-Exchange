@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create an address list by using recipient filters in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic explains how to create an address list by using recipient filters. To learn more about address lists, see [Address lists](address-lists-exchange-2013-help.md).
 

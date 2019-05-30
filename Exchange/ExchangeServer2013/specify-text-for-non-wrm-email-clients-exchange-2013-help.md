@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Specify the text to display for email clients that do not support Windows Rights Management in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can specify the text that will be sent to a user when they receive a protected voice message but their email client doesn't support Information Rights Management (IRM) or Windows Rights Management.
 

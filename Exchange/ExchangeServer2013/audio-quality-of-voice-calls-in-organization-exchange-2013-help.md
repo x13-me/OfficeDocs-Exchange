@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Investigate the audio quality of voice calls in your organization in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 If your organization is experiencing problems with the audio quality of Unified Messaging (UM) calls and voice mail messages, use the Call Statistics report to help you understand what's causing the problems.
 

@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Create a public folder in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 

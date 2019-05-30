@@ -138,8 +138,6 @@ You must exclude specific directories for each Exchange server on which you run 
 
           - Exchange Server setup temporary files. These files are typically located in %SystemRoot%\\Temp\\ExchangeSetup.
 
-Return to top
-
 ## Process exclusions
 
 Many file-level scanners now support the scanning of processes, which can adversely affect Microsoft Exchange if the incorrect processes are scanned. Therefore, you should exclude the following processes from file-level scanners.
@@ -460,8 +458,6 @@ Many file-level scanners now support the scanning of processes, which can advers
 </tbody>
 </table>
 
-Return to top
-
 ## File name extension exclusions
 
 In addition to excluding specific directories and processes, you should exclude the following Exchange-specific file name extensions in case directory exclusions fail or files are moved from their default locations.
@@ -527,5 +523,3 @@ In addition to excluding specific directories and processes, you should exclude 
       - .dsc
 
       - .txt
-
-Return to top

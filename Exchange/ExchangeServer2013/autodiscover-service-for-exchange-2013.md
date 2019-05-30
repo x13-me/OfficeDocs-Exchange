@@ -56,8 +56,6 @@ Through the Autodiscover service, Outlook finds a new connection point made up o
 
 When a user's Exchange information is changed, Outlook automatically reconfigures the user's profile using the Autodiscover service. For example, if a user's mailbox is moved or the client can't connect to the user's mailbox or to available Exchange features, Outlook will contact the Autodiscover service and automatically update the user's profile to include the information that's required to connect to the mailbox and Exchange features.
 
-Return to top
-
 ## How the Autodiscover service works
 
 When you install a Client Access server in Exchange 2013, a default virtual directory named Autodiscover is created under the default website in Internet Information Services (IIS). This virtual directory handles Autodiscover service requests from Outlook 2007, Outlook 2010, and Outlook 2013 clients and supported mobile phones under the following circumstances:
@@ -84,8 +82,6 @@ For external access, or using DNS, the client locates the Autodiscover service o
 
 Depending on whether you've configured the Autodiscover service on a separate site, the Autodiscover service URL will be either https://\<*smtp-address-domain*\>/autodiscover/autodiscover.xml or https://autodiscover.\<*smtp-address-domain*\>/autodiscover/autodiscover.xml, where ://\<*smtp-address-domain*\> is the primary SMTP domain address. For example, if the user's email address is tony@contoso.com, the primary SMTP domain address is contoso.com. When the client connects to Active Directory, the client looks for the SCP object created during Setup. In deployments that include multiple Client Access servers, an Autodiscover SCP object is created for each Client Access server. The SCP object contains the *ServiceBindingInfo* attribute with the fully qualified domain name (FQDN) of the Client Access server in the form https://CAS01/autodiscover/autodiscover.xml, where CAS01 is the FQDN for the Client Access server. Using the user credentials, the Outlook 2007, Outlook 2010, or Outlook 2013 client authenticates to Active Directory and searches for the Autodiscover SCP objects. After the client obtains and enumerates the instances of the Autodiscover service, the client connects to the first Client Access server in the enumerated list and obtains the profile information in the form of XML data that's needed to connect to the user's mailbox and available Exchange features.
 
-Return to top
-
 ## Deployment options for the Autodiscover service
 
 The Autodiscover service must be deployed and configured correctly for Outlook 2007, Outlook 2010, and Outlook 2013 clients to automatically connect to Exchange features such as the offline address book, the Availability service, and Unified Messaging (UM). Deploying the Autodiscover service is only one step in making sure your Exchange services, such as the Availability service, can be accessed by Outlook 2007, Outlook 2010, or Outlook 2013 clients.
@@ -95,5 +91,3 @@ The Autodiscover service must be deployed and configured correctly for Outlook 2
 The Autodiscover service can provide user profile information to connecting Outlook clients for mailboxes that have been moved from one Exchange forest to another. For this to happen, you must configure a mail-enabled user in both the original forest where the user's mailbox resided and in the target forest using the **New-MailUser** cmdlet. In the source forest, you should use the *ExternalEmailAddress* parameter in the cmdlet to specify the new email address of the mailbox in the target forest. For more information, see [New-MailUser](https://technet.microsoft.com/en-us/library/aa996335\(v=exchg.150\)).
 
 When you configure a mail-enabled user, the Autodiscover service in the original forest will redirect the authenticating user to the new email address in the target forest. The connecting Outlook client will then be redirected to the Client Access server in the target forest where the mailbox has been moved.
-
-Return to top

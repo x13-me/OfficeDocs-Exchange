@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Developing sensitive information rule packages in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The XML schema and guidance in this topic will help you get started creating your own basic data loss prevention (DLP) XML files that define your own sensitive information types in a classification rule package. After you have created a well-formed XML file, you can import it by using either the Exchange Administration Center or the Exchange management shell in order to help create a Microsoft Exchange Server 2013 DLP solution. An XML file that is a custom DLP policy template can contain the XML that is your classification rule package. For an overview about defining your own DLP templates as XML files, see [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

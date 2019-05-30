@@ -80,8 +80,6 @@ Exchange 2010 UM administrators can configure a set of properties for Unified Me
 
 For the Mailbox server, you'll use the **Set/Get/Enable/Disable-UMService** cmdlets to view or configure UM properties for the Microsoft Exchange Unified Messaging service on Exchange 2013 Mailbox servers or Exchange 2007 or Exchange 2010 Unified Messaging servers. A different set of cmdlets, **Set/Get-UMCallRouterSettings**, are used to view or configure the Microsoft Exchange Unified Messaging Call Router service properties on a Client Access server. This ensures that the existing **Get-UMServer**, **Set-UMServer**, **Enable-UMServer**, and **Disable-UMServer** cmdlets from Exchange 2007 and Exchange 2010 will work in a coexistence deployment with Exchange 2013 Mailbox servers. This also ensures that the cmdlets will work when the Mailbox and Client Access servers are installed on the same or different servers.
 
-Return to top
-
 ## UM ports
 
 The Microsoft Exchange Unified Messaging Call Router service found on a Client Access server uses SIP over either Transmission Control Protocol (TCP) or mutual Transport Layer Security (mutual TLS) to communicate with Mailbox servers that are running the Microsoft Exchange Unified Messaging service. To avoid TCP/User Datagram Protocol (UDP) port conflicts, the Microsoft Exchange Unified Messaging Call Router service and the Microsoft Exchange Unified Messaging service default to and listen on different TCP ports. They can accept both unsecured and secured connections, depending on whether mutual TLS is used with SIP and RTP traffic. By default, a Client Access server listens for SIP requests on both TCP port 5060 in Unsecured mode and TCP port 5061 in SIP Secured mode when mutual TLS is used. These ports are configurable using the **Set-UMCallRouterSettings** cmdlet. The Microsoft Exchange Unified Messaging Call Router service on the Client Access server doesn't handle media (RTP or SRTP) traffic, so only TCP ports and no UDP ports are used. By default, a Mailbox server listens for SIP requests on both TCP port 5062 in Unsecured mode and TCP port 5063 in SIP Secured mode when mutual TLS is used. These ports aren't configurable using Exchange Management Shell cmdlets. On the Mailbox server that runs the Microsoft Exchange Unified Messaging service, TCP ports can't be configured on the Exchange server either by using the Shell or by configuring settings in the registry. The Microsoft Exchange Unified Messaging service on the Mailbox server will accept connections from a Client Access server on SIP ports 5062 and 5063. After the Client Access server redirects the SIP request to a Mailbox server, an RTP or SRTP media channel is created using a VoIP gateway, IP PBX, or SBC, and the Microsoft Exchange Unified Messaging worker process on the Mailbox server.
@@ -133,8 +131,6 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 </tbody>
 </table>
 
-Return to top
-
 ## UM dial plans
 
 Mapping or associating UM dial plans to UM servers isn't required in Exchange 2013 the way it was in Exchange 2007 and Exchange 2010. Client Access or Mailbox servers running UM services don't need to be linked to a dial plan because all Client Access and Mailbox servers are expected to receive all incoming calls from VoIP gateways, IP PBXs, or SBCs. The exception is that SIP dial plans that are used with Lync 2013, Lync Server 2010, and Office Communications Server 2007 R2 must be associated with Client Access and Mailbox servers that you've deployed. Both types of Exchange servers must be added to each SIP dial plan to be included as trusted peers from Communications Server 2007 R2 or Lync Server. Otherwise, Communications Server 2007 R2 or Lync Server will reject outbound calls from users.
@@ -173,8 +169,6 @@ The following table summarizes the relationship between Client Access and Mailbo
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## UM Call Router performance counters
 
@@ -232,5 +226,3 @@ To support the new Client Access Unified Messaging Call Router service in Exchan
 </tr>
 </tbody>
 </table>
-
-Return to top

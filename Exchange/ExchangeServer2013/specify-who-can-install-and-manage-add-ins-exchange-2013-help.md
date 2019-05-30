@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Specify the administrators and users who can install and manage add-ins for Outlook in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use.
 

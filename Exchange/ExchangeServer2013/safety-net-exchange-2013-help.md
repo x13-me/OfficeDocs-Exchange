@@ -99,8 +99,6 @@ The parameters used by Safety Net are described in the following table.
 </tbody>
 </table>
 
-Return to top
-
 ## Message resubmission from Safety Net
 
 Message resubmissions from Safety Net are initiated by the Active Manager component of the Microsoft Exchange Replication service that manages DAGs and mailbox database copies. No manual actions are required to resubmit messages from Safety Net. For more information about Active Manager, see [Active Manager](active-manager-exchange-2013-help.md).
@@ -116,8 +114,6 @@ A *lagged mailbox database copy* or *lagged copy* is a passive copy of a mailbox
 The only significant difference between the two scenarios is how far back in time to go to resubmit messages from Safety Net. Typically, for failover in a DAG, the new active copy of the mailbox database is typically several minutes to several hours behind the old active copy. A lagged copy of a mailbox database is typically several days behind the old active copy.
 
 The main requirement for successful resubmission from Safety Net for a lagged copy is the amount of time messages are stored in Safety Net must be greater than or equal to the lag time of lagged copy of the mailbox database. In other words, the value of *SafetyNetHoldTime* on **Set-TransportConfig** must be greater than or equal to the value of the *ReplayLagTime* on **Set-MailboxDatabaseCopy** for the lagged copy.
-
-Return to top
 
 ## Message resubmission from Shadow Safety Net
 
@@ -162,5 +158,3 @@ There are some other issues to consider when messages are resubmitted from Safet
 2. Users removed from a distribution group may not receive a resubmitted message when the Shadow Safety Net resubmits the message. For example, a message is sent to a group containing User A and User B, and both recipients receive the message. User B is subsequently removed from the group. Later, a resubmit request from Primary Safety Net is made for the mailbox database that holds User B's mailbox. However, the Primary Safety Net is unavailable for more than 12 hours, so the Shadow Safety Net server responds and resubmits the affected message. During resubmission when the distribution group is expanded, User B isn't a member of the group, and won't receive a copy of the resubmitted message.
 
 3. New Users added to a distribution group may receive an old resubmitted message when the Shadow Safety Net resubmits the message. For example, a message is sent to a group containing User A and User B, and both recipients receive the message. User C is subsequently added to the group. Later, a resubmit request from Primary Safety Net is made for the mailbox database that holds User C's mailbox. However, the Primary Safety Net server is unavailable for more than 12 hours, so the Shadow Safety Net server responds and resubmits the affected messages. During resubmission when the distribution group is expanded, User C is a member of the group, and will receive a copy of the resubmitted message.
-
-Return to top

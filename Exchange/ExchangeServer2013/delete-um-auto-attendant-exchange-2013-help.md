@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Delete a UM auto attendant in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you delete a Unified Messaging (UM) auto attendant, the incoming calls that were answered by the UM auto attendant must be answered by a human operator. A UM auto attendant can't be deleted if it's associated with a UM dial plan as the default UM auto attendant.
 

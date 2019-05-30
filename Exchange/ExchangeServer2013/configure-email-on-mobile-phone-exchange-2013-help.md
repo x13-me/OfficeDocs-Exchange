@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure mobile phones to access email in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can configure a mobile phone, such as a Windows Phone, to use Microsoft Exchange ActiveSync. You should perform this procedure on each mobile phone in your organization.
 

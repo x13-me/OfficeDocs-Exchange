@@ -72,8 +72,6 @@ The following types of queues are used in Exchange 2013:
 
   - **Safety Net**: Safety Net retains copies of messages that were successfully delivered by the transport server. Although it's not accessible by queue management tools, Safety Net is just another queue in the queue database. For more information, see [Safety Net](safety-net-exchange-2013-help.md).
 
-Return to top
-
 ## Queue database files
 
 All the different queues are stored in a single ESE database. By default, this queue database is located on the transport server at `%ExchangeInstallPath%TransportRoles\data\Queue`.
@@ -123,8 +121,6 @@ The following table lists the files that constitute the queue database.
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Options for configuring the queue database
 
@@ -216,13 +212,9 @@ The keys for the queue database that are available in the EdgeTransport.exe.conf
 > [!NOTE]
 > Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-Return to top
-
 ## Queue properties
 
 A queue has many properties that describe the purpose and status of the queue. Some queue properties are applied to the queue when the queue is created, and don't change. Other properties contain status size, time, or other indicators that are updated frequently.
-
-Return to top
 
 ## NextHopSolutionKey
 
@@ -405,8 +397,6 @@ Note that Exchange 2013 supports legacy values of **DeliveryType** for backwards
 
   - **SmtpRelaytoTiRg**: The queue holds messages for delivery by an Exchange 2007 or Exchange 2010 Hub Transport server to an Exchange Server 2003 routing group. The destination server can be the source server for a connector, a distribution group expansion server, or an Exchange 2003 bridgehead server.
 
-Return to top
-
 ## IncomingRate, OutgoingRate, and Velocity
 
 Exchange 2013 measures the rate of messages entering and leaving a queue and stores these values in queue properties. You can use these rates as an indicator of queue and transport server health. The properties are:
@@ -429,8 +419,6 @@ Exchange 2013 measures the rate of messages entering and leaving a queue and sto
 
 At a basic level, a positive value of **Velocity** indicates a healthy queue that's efficiently draining, and a negative value of **Velocity** indicates a queue that isn't efficiently draining. However, you also need to consider the values of the **IncomingRate**, **OutgoingRate**, and **MessageCount** properties, as well as the magnitude of the **Velocity** value for the queue. For example, a queue that has a large negative value of **Velocity**, a large **MessageCount** value, a small **OutgoingRate** value, and a large **IncominRate** value are accurate indicators that the queue isn't draining properly. However, a queue with a negative **Velocity** value that's very close to zero that also has very small values for **IncomingRate**, **OutgoingRate**, and **MessageCount** doesn't indicate a problem with the queue.
 
-Return to top
-
 ## Queue status
 
 The current status of a queue is stored in the **Status** property of the queue. A queue can have one of the following status values:
@@ -449,21 +437,15 @@ The current status of a queue is stored in the **Status** property of the queue.
 
     If you suspend the Unreachable queue, messages won't be automatically resubmitted to the categorizer when configuration updates are detected. To automatically resubmit these messages, you need to manually resume the Unreachable queue. If you suspend the Submission queue, messages won't be picked up by the categorizer until the queue is resumed.
 
-Return to top
-
 ## Other queue properties
 
 There are other queue properties that are self-explanatory. You use most of the queue properties as filter options. By specifying filter criteria, you can quickly locate queues and take action on them. For a complete description of the filterable queue properties, see [Queue filters](queue-filters-exchange-2013-help.md).
 
 An important queue property that's also worth mentioning here is the **MessageCount** property that shows how many messages are in a queue. This property is an important indicator of queue health. For example, a delivery queue that contains a large number of messages that continues to grow and never decreases could indicate a routing or transport pipeline issue that requires your attention.
 
-Return to top
-
 ## Message properties
 
 A message in a queue has many properties. Many of the properties reflect the information that was used to create the message. Some of the messages status and information properties are heavily influenced by corresponding properties on the queue. However, an individual message may have a different value than the corresponding property of the queue. Other properties contains status, time, or other indicators that are updated frequently.
-
-Return to top
 
 ## Message status
 
@@ -483,13 +465,9 @@ The current status of a message is stored in the **Status** property of the mess
 
   - **Suspended**: The message was manually suspended by the administrator. All messages in the poison message queue are in a permanently suspended state.
 
-Return to top
-
 ## Other message properties
 
 There are other message properties that are self-explanatory. You can use most of the message properties as filter options. By specifying filter criteria, you can quickly locate messages and take action on them. For a complete description of the filterable message properties, see [Message filters](message-filters-exchange-2013-help.md).
-
-Return to top
 
 ## Manage queues and messages in queues
 
@@ -582,5 +560,3 @@ The following table describes the management tasks you can perform on queues or 
 </tr>
 </tbody>
 </table>
-
-Return to top

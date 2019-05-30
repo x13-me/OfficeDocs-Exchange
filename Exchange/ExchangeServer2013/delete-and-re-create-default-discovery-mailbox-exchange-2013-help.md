@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Delete and re-create the default discovery mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Exchange Management Shell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
 

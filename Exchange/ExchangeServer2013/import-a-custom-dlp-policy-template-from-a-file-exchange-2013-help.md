@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Import a custom DLP policy template from a file in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can manage sensitive information through DLP policies by importing a file that contains policy information settings. DLP policy templates can be developed independent of Exchange as XML files. However, they must meet specific format requirements in order to work correctly. Alternatively, policies that are exported from a previous version of Exchange can be imported into Microsoft Exchange Server 2013.
 

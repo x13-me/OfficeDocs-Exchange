@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove an offline address book in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic explains how to remove an offline address book (OAB).
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Common attachment blocking scenarios for transport rules in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using transport rules in Exchange.
 

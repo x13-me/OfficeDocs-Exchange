@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Interpret voice mail call records in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization.
 

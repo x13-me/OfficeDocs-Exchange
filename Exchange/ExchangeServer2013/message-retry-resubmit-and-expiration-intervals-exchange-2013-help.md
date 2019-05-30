@@ -107,15 +107,11 @@ The configuration options that are available for message retry intervals are des
 </tbody>
 </table>
 
-Return to top
-
 ## Configuration options for manual message retry
 
 When a delivery queue is in the status of Retry, you can manually force an immediate connection attempt by using Queue Viewer in the Exchange toolbox or the **Retry-Queue** cmdlet in the Shell. The manual retry attempt overrides the next scheduled retry time. If the connection isn't successful, the retry interval timer is reset. The delivery queue must be in a status of Retry for this action to have any effect.
 
 For more information, see the "Retry queues" section in [Manage queues](manage-queues-exchange-2013-help.md).
-
-Return to top
 
 ## Configuration options for delay DSN messages
 
@@ -168,8 +164,6 @@ The configuration options that are available for delay DSN notification messages
 > [!NOTE]
 > On Exchange 2007 Hub Transport servers, all <EM>ExternalDSN*</EM> and <EM>InternalDSN*</EM> parameters are available on the <STRONG>Set-TransportServer</STRONG> cmdlet, not the <STRONG>Set-TransportConfig</STRONG> cmdlet. If you have any Exchange 2007 Hub Transport servers in your organization, you need to make changes to these values using the <STRONG>Set-TransportServer</STRONG> cmdlet on each Exchange 2007 Hub Transport server.
 
-Return to top
-
 ## Configuration options for message resubmission
 
 Message resubmission sends undelivered messages back to the Submission queue to be reprocessed by the categorizer.
@@ -203,8 +197,6 @@ Another way that you can manually resubmit messages is to suspend the messages, 
 
 For more information, see [Export messages from queues](export-messages-from-queues-exchange-2013-help.md).
 
-Return to top
-
 ## Configuration options for message expiration
 
 The *message expiration timeout interval* specifies the maximum length of time that an Edge Transport server or the Transport service on a Mailbox server tries to deliver a failed message. If the message can't be successfully delivered before the expiration timeout interval has passed, an NDR that contains the original message or the message headers is delivered to the sender.
@@ -222,5 +214,3 @@ The default value is `2.00:00:00` or 2 days. The valid input range for this par
 Although you can't manually force messages to expire, you can manually remove messages from any queue, except the Submission queue, with or without an NDR.
 
 For more information, see the "Remove messages from queues" section in [Manage messages in queues](manage-messages-in-queues-exchange-2013-help.md).
-
-Return to top

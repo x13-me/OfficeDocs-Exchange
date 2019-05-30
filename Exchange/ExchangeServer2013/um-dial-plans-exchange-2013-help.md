@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM dial plans [ONP] in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
 

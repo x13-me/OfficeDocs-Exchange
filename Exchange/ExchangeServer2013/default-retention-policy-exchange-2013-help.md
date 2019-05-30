@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Default Retention Policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Exchange creates the retention policy Default MRM Policy in your Exchange organization. The policy is applied when you create an archive for the mailbox. You can change the retention policy that's applied to a user at any time.
 

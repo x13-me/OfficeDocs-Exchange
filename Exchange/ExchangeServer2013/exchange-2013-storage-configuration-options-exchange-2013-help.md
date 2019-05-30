@@ -74,8 +74,6 @@ All storage used by Exchange for storage of Exchange data must be block-level st
 
 Using storage tiers is not recommended, as it could adversely affect system performance. For this reason, do not allow the storage controller to automatically move the most accessed files to "faster" storage.
 
-Return to top
-
 ## Physical disk types
 
 The following table provides a list of supported physical disk types and provides best practice guidance for each physical disk type where appropriate.
@@ -334,8 +332,6 @@ From a performance perspective, using large, slower disks for Exchange storage i
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Best practices for supported storage configurations
 
@@ -739,5 +735,3 @@ The following table provides guidance on volume configurations.
 </tr>
 </tbody>
 </table>
-
-Return to top

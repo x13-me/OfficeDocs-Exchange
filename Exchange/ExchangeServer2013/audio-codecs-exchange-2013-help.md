@@ -194,8 +194,6 @@ The audio format and codec that Mailbox servers use to store the audio in voice 
 </tbody>
 </table>
 
-Return to top
-
 ## UM message sizing
 
 You can configure Unified Messaging to use one of the following four audio codecs for creating voice messages: MP3, WMA, GSM 06.10, and G.711 PCM Linear. By default, the MP3 format is selected.
@@ -237,5 +235,3 @@ The G.711 PCM Linear audio codec creates .wav audio files that are not compresse
 ## GSM
 
 The GSM audio codec creates .wav audio files that are compressed. GSM .wav audio files are just over 16,000 bytes for each 10 seconds of audio. However, GSM creates an audio file larger than the audio file created by the WMA audio codec. Therefore, when you are balancing the quality of the voice message and the size, this may not be the best choice.
-
-Return to top

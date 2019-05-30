@@ -52,8 +52,6 @@ Based on the default priority value of the anti-spam agent, and the SMTP event i
 
 4. **Protocol Analysis agent**: The Protocol Analysis agent is the underlying agent that implements the sender reputation functionality. Sender reputation relies on persisted data about the IP address of the sending server to determine what action, if any, to take on an inbound message. A sender reputation level (SRL) is calculated from several sender characteristics that are derived from message analysis and external tests. For more information, see [Sender reputation and the Protocol Analysis agent](sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md).
 
-Return to top
-
 ## Anti-spam agents on Edge Transport servers
 
 If your organization has an Edge Transport server installed in the perimeter network, all of the anti-spam agents that are available on a Mailbox server are installed and enabled by default on the Edge Transport server. However, the following anti-spam agents are only available on an Edge Transport server:
@@ -83,13 +81,9 @@ Based on the default priority value of the anti-spam agent, and the SMTP event i
 
 7. Attachment Filtering agent
 
-Return to top
-
 ## Anti-spam stamps
 
 Anti-spam stamps help you diagnose spam-related problems by applying diagnostic metadata, or stamps, such as sender-specific information, puzzle validation results, and content filtering results, to messages as they pass through the anti-spam features that filter inbound messages from the Internet. For more information, see [Anti-spam stamps](anti-spam-stamps-exchange-2013-help.md).
-
-Return to top
 
 ## Strategy for anti-spam approach
 
@@ -102,8 +96,6 @@ This best practice is recommended because the SCL that underlies connection filt
 The same logic applies to real-time block list services and recipient filtering, although the underlying confidence isn't as high as the IP Block list. You should be aware that the further along the mail flow path a message travels, the greater the probability of false positives, because the anti-spam features are evaluating more variables. Therefore, you may find that if you configure the first several anti-spam features in the anti-spam chain more aggressively, you can reduce the bulk of your spam. As a result, you'll save processing, bandwidth, and disk resources so that you can process more ambiguous messages.
 
 Ultimately, you must plan to monitor the overall effectiveness of the anti-spam features. If you monitor carefully, you can continue to adjust the anti-spam features to work well together for your environment. With this approach, you should plan on a fairly non-aggressive configuration of the anti-spam features when you start. This approach lets you minimize the number of false positives. As you monitor and adjust the anti-spam features, you can become more aggressive about the type of spam and spam attacks that your organization experiences.
-
-Return to top
 
 ## See Also
 

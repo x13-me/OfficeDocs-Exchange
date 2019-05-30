@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # View and manage a call answering rule in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the Shell to view or configure one or more call answering rules for a user. You can also use the **Get-UMCallAnsweringRule** or **Set-UMCallAnsweringRule** cmdlets in an Exchange Management Shell script to view or manage call answering rules for multiple users.
 
