@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the number of times that users who call in to an Outlook Voice Access number can enter incorrect data before they're disconnected. This setting applies to both Outlook Voice Access users and unauthenticated callers who use directory search.
 

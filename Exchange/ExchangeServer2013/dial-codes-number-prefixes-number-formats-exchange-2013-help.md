@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Dial codes, number prefixes, and number formats in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure several dialing codes that Unified Messaging (UM) uses to dial internal and external calls for UM-enabled users. Frequently, you want to configure a dial plan together with the dialing or access codes, a national number prefix, or in-country/region or international number formats so that you can control outdialing for users in your organization. This topic discusses dial codes, number prefixes, and number formats and how you can use them to control outdialing for your organization.
 

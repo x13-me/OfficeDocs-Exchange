@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Prevent a user from receiving faxes in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
 

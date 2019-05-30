@@ -78,8 +78,6 @@ Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cm
 
 For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](manage-site-mailbox-provisioning-policies-exchange-2013-help.md).
 
-Return to top
-
 ## Lifecycle policy and retention
 
 The lifecycle of a site mailbox is managed through a SharePoint. It is through SharePoint that you should perform all site mailbox tasks such as creating and removing site mailboxes. In addition, you can create a SharePoint Lifecycle policy to manage the lifecycle of a site mailbox. For example, you can create a lifecycle policy in SharePoint that automatically closes all site mailboxes after 6 months. If the user still requires the use of the site mailbox, the user can reactivate the site mailbox through SharePoint. We recommend that you use the Lifecycle application is in the farm. Manually deleting active site mailboxes from Exchange will result in orphaned site mailboxes. .
@@ -100,8 +98,6 @@ Using the eDiscovery Console in SharePoint, site mailboxes can be part of the In
 
 > [!NOTE]
 > To place a site mailbox on legal hold in Office 365, it must be assigned an Exchange Online (Plan 2) license. If a site mailbox is assigned an Exchange Online (Plan 1) license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
-
-Return to top
 
 ## Backup and restore
 

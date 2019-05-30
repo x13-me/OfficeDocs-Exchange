@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Create a UM IP gateway in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you create a Unified Messaging (UM) IP gateway, you enable Exchange servers to connect to a new Voice over IP (VoIP) gateway, a Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), an IP PBX, or a session border controller (SBC). Immediately after you create a UM IP gateway, you should create a new UM hunt group and then associate the UM hunt group with the UM IP gateway. You can associate the UM IP gateway with one or more UM dial plans by creating one or more UM hunt groups.
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create an In-Place eDiscovery search in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Use [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) to search across all mailbox content, including deleted items and original versions of modified items for users placed on [In-Place Hold and Litigation Hold](in-place-and-litigation-holds-exchange-2013-help.md).
 

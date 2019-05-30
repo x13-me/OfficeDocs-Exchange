@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Add-ins for Outlook in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
  **Summary**: An overview of add-ins for Outlook, which work with Outlook on Windows and MacIntosh computers, on mobile devices, and in Outlook Web App.
 

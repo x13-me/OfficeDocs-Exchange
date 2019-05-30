@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Manage mail contacts in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 

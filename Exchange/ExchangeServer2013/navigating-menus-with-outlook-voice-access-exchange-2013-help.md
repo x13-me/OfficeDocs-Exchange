@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Navigating menus with Outlook Voice Access in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access is a feature in Unified Messaging (UM) that enables users to retrieve email and voice mail messages and manage their calendar and personal contacts by using an analog, digital, or mobile telephone. They can interact with their mailbox using their telephone keypad or voice commands, but must use the keypad on their telephone to search for a user in the directory for your organization.
 

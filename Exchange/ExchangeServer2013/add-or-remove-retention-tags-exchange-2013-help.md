@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Add retention tags to or remove retention tags from a retention policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can add retention tags to a retention policy when the policy is created or any time thereafter. For details about how to create a retention policy, including how to simultaneously add retention tags, see [Create a Retention Policy](create-a-retention-policy-exchange-2013-help.md).
 

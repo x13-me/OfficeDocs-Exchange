@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure global address list properties in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic explains how to modify the settings of a global address list (GAL).
 

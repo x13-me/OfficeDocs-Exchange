@@ -198,8 +198,6 @@ To resolve the preceding error and warnings, do one of the following:
 
   - Disable Windows Firewall.
 
-Return to top
-
 ## DAG membership
 
 After a DAG has been created, you can add servers to or remove servers from the DAG using the Manage Database Availability Group wizard in the EAC, or using the **Add-DatabaseAvailabilityGroupServer** or **Remove-DatabaseAvailabilityGroupServer** cmdlets in the Shell. For detailed steps about how to manage DAG membership, see [Manage database availability group membership](manage-database-availability-group-membership-exchange-2013-help.md).
@@ -270,8 +268,6 @@ There are scenarios in which you must remove a Mailbox server from a DAG before 
   - **Performing a server recovery operation**: If a Mailbox server that's a member of a DAG is lost, or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation using the **Setup /m:RecoverServer** switch. However, before you can perform the recovery operation, you must first remove the server from the DAG using the [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd297956\(v=exchg.150\)) cmdlet with the *ConfigurationOnly* parameter.
 
   - **Removing the database availability group**: There may be situations in which you need to remove a DAG (for example, when disabling third-party replication mode). If you need to remove a DAG, you must first remove all servers from the DAG. If you attempt to remove a DAG that contains any members, the task fails.
-
-Return to top
 
 ## Configuring DAG properties
 
@@ -366,8 +362,6 @@ As with network encryption, network compression is also a property of the DAG an
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## DAG networks
 
@@ -597,8 +591,6 @@ By default, DAGs perform discovery of all networks detected and configured for u
 
 This command will also disable the network for use by the cluster. Although the iSCSI networks will continue to appear as DAG networks, they won't be used for MAPI or replication traffic after running the above command.
 
-Return to top
-
 ## Configuring DAG members
 
 Mailbox servers that are members of a DAG have some properties specific to high availability that should be configured as described in the following sections:
@@ -661,8 +653,6 @@ The following example configures a Mailbox server to support a maximum of 20 act
 Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 ```
 
-Return to top
-
 ## Performing maintenance on DAG members
 
 Before performing any type of software or hardware maintenance on a DAG member, you should first place the DAG member into maintenance mode. This involves moving all active databases off the server and blocking active databases from moving to the server. It also ensures that all critical DAG support functionality that may be on the server (for example, the Primary Active Manager (PAM) role) is moved to another server and blocked from moving back to the server. Specifically, you should perform the following tasks:
@@ -721,15 +711,11 @@ If you are installing an Exchange update, and the update process fails, it can l
 
   - `Set-ServerComponentState <ServerName> -Component RecoveryActionsEnabled -State Active -Requester Functional`
 
-Return to top
-
 ## Shutting down DAG members
 
 The Exchange 2013 high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system attempts to activate another copy of the mounted database prior to allowing the shutdown process to complete.
 
 However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a `lossless` activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
-
-Return to top
 
 ## Installing updates on DAG members
 
@@ -744,5 +730,3 @@ Installing Microsoft Exchange Server 2013 updates on a server that's a member of
 4. Optionally, use the RedistributeActiveDatabases.ps1 script to rebalance the active database copies across the DAG.
 
 You can download the latest update for Exchange 2013 from the [Microsoft Download Center](http://www.microsoft.com/downloads).
-
-Return to top

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Automatically answer and route incoming calls in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange Unified Messaging (UM) enables you to create a single or multiple UM auto attendants, depending on the needs of your organization. Unlike other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them. This topic discusses the UM auto attendant feature found in Unified Messaging.
 

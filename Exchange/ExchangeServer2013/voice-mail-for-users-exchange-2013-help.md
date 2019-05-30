@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Voice mail for users in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 With Unified Messaging (UM), users in an Exchange organization can receive all their email and voice messages in one mailbox. The Unified Messaging functionality and voice mail features increase user productivity and enable more flexible messaging throughout an organization.
 

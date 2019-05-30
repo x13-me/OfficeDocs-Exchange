@@ -49,23 +49,23 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
 ## What do you need to know before you begin?
 
-  - Install all of the required Client Access and Mailbox servers in your organization.
+- Install all of the required Client Access and Mailbox servers in your organization.
 
-  - Install Service Pack 1 (SP1) on each Client Access and Mailbox server in your organization. To download SP1, see [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md).
+- Install Service Pack 1 (SP1) on each Client Access and Mailbox server in your organization. To download SP1, see [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md).
 
-  - Determine the required permissions for Exchange 2013 by seeing [Feature permissions](feature-permissions-exchange-2013-help.md).
+- Determine the required permissions for Exchange 2013 by seeing [Feature permissions](feature-permissions-exchange-2013-help.md).
 
-  - To see what permissions you need for Client Access servers, see "Client Access server permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
+- To see what permissions you need for Client Access servers, see "Client Access server permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
 
-  - To see what permissions you need for Client Access servers, see "Outlook Web App permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
+- To see what permissions you need for Client Access servers, see "Outlook Web App permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
 
-  - You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
 
-  - To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa996305\(v=exchg.150\)).
+- To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa996305\(v=exchg.150\)).
 
-  - To use a new certificate, you must use EAC or the Shell to create, import, and enable the new certificate. For details, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
+- To use a new certificate, you must use EAC or the Shell to create, import, and enable the new certificate. For details, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -74,284 +74,270 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
 To enable SSL offloading for Outlook Web App, you need to remove the SSL requirement on the **owa** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **owa** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **owa** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **owa** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **owa** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeOWAAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeOWAAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configure SSL offloading for the Exchange Admin Center (EAC)
 
 To enable SSL offloading for EAC, you need to remove the SSL requirement on the **ecp** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **ecp** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **ecp** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **ecp** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **ecp** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeECPAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeECPAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeECPAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configuring SSL offloading for Outlook Anywhere
 
 SSL offloading for Outlook Anywhere is enabled by default. Outlook Anywhere clients can get email from a private or public network. By default, the internal host name or FQDN of the server is used to enable internal Outlook clients to connect. However, if Outlook Anywhere isn't used internally, then you should remove the internal host name. To allow both internal and external access for Outlook clients, you must configure the internal and external host names, set the authentication method for each, and set both the internal and external clients to require SSL. To configure the authentication method for the external clients, you can use EAC or the Exchange Management Shell, but for internal clients, you must use the Shell:
 
-  - **Step 1**: You can use EAC or the Shell if you haven't added an external host name for Outlook Anywhere:
+- **Step 1**: You can use EAC or the Shell if you haven't added an external host name for Outlook Anywhere:
 
-      - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Server** window, click **Outlook Anywhere**, and then in the **Specify the external host name (for example, contoso.com) that users will use to connect to your organization** box, enter the external host name. Verify that the **Allow SSL offloading** option is selected, and then click **Save**.
+  - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Server** window, click **Outlook Anywhere**, and then in the **Specify the external host name (for example, contoso.com) that users will use to connect to your organization** box, enter the external host name. Verify that the **Allow SSL offloading** option is selected, and then click **Save**.
 
-      - Using the Exchange Management Shell, click **Start**, and then on the **Start** menu, click **Exchange Management Shell**. In the window, type the following and then press Enter:
+  - Using the Exchange Management Shell, click **Start**, and then on the **Start** menu, click **Exchange Management Shell**. In the window, type the following and then press Enter:
 
-        ```powershell
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
-        ```
+    ```powershell
+    Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+    ```
 
-  - **Step 2**: By default, SSL offloading is enabled. However, you can use EAC or the Exchange Management Shell if SSL offloading has been disabled and you want to enable it:
+- **Step 2**: By default, SSL offloading is enabled. However, you can use EAC or the Exchange Management Shell if SSL offloading has been disabled and you want to enable it:
 
-      - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Server** window, click **Outlook Anywhere**, click the **Allow SSL offloading** option, and then click **Save**.
+  - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Server** window, click **Outlook Anywhere**, click the **Allow SSL offloading** option, and then click **Save**.
 
-      - Using the Shell, type the following and then press Enter.
+  - Using the Shell, type the following and then press Enter.
 
-        ```powershell
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
-        ```
+    ```powershell
+    Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+    ```
 
-  - **Step 3**: By default, **Require SSL** is not selected on the **Rpc** virtual directory, but if you want to verify that SSL is disabled, you can use Internet Information Services (IIS) Manager.
+- **Step 3**: By default, **Require SSL** is not selected on the **Rpc** virtual directory, but if you want to verify that SSL is disabled, you can use Internet Information Services (IIS) Manager.
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Rpc** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, verify that the **Require SSL** check box is cleared, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Rpc** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, verify that the **Require SSL** check box is cleared, and then click **Apply** in the **Actions** pane.
 
-  - **Step 4**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 4**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 > [!IMPORTANT]
 > You must wait for the Service Host process to apply any changes from Active Directory to Internet Information Services (IIS) every 15 minutes even if you restart IIS on a Client Access server.
-
-Return to top
 
 ## Configuring SSL offloading for the Offline Address Book (OAB)
 
 To enable SSL offloading for the Offline Address Book (OAB), you need to remove the SSL requirement on the **OAB** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **OAB** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **OAB** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **OAB** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **OAB** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeOABAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeOABAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeOABAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configuring SSL offloading for Exchange ActiveSync (EAS)
 
 To enable SSL offloading for Exchange ActiveSync (EAS), you need to remove the SSL requirement on the **Microsoft-Server-ActiveSync** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **Microsoft-Server-ActiveSync** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **Microsoft-Server-ActiveSync** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Microsoft-Server-ActiveSync** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Microsoft-Server-ActiveSync** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-            appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart the Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart the Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeSyncAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeSyncAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configuring SSL offloading for Exchange Web Services (EWS)
 
 To enable SSL offloading for Exchange Web Services (EWS), you need to remove the SSL requirement on the **EWS** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **EWS** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **EWS** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **EWS** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **EWS** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-        ```
+  ```powershell
+  appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+  ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeServicesAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeServicesAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configuring SSL offloading for the Autodiscover service
 
 To enable SSL offloading for the Autodiscover service, you need to remove the SSL requirement on the **Autodiscover** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **Autodiscover** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **Autodiscover** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Autodiscover** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **Autodiscover** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Configuring SSL Offloading for the Mailbox Replication Proxy Service (MRSProxy)
 
@@ -367,39 +353,37 @@ The reason for this is that the MRSProxy service expects traffic to be signed/en
 
 To enable SSL offloading for Outlook clients, you need to remove the SSL requirement on the **MAPI** virtual directory on the **Default Web Site**:
 
-  - **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **MAPI** virtual directory:
+- **Step 1**: You can use Internet Information Services (IIS) Manager or a command line to disable SSL on the **MAPI** virtual directory:
 
-      - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **MAPI** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
+  - Using Internet Information Services (IIS) Manager, expand **Sites** \> **Default Web Site**, and then select the **MAPI** virtual directory. In the results pane under **IIS**, double-click **SSL Settings**. In the **SSL Settings** results pane, clear the **Require SSL** check box, and then click **Apply** in the **Actions** pane.
 
-      - Using the command line, type the following and then press Enter.
+  - Using the command line, type the following and then press Enter.
 
-        ```powershell
-        appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-        ```
+    ```powershell
+    appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+    ```
 
-  - **Step 2**: You need to recycle the correct application pool or restart the Internet Information Services by using one of the following methods:
+- **Step 2**: You need to recycle the correct application pool or restart the Internet Information Services by using one of the following methods:
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
-        ```
+    ```powershell
+    appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+    ```
 
-      - Using a Windows PowerShell cmdlet, type the following and then press Enter.
+  - Using a Windows PowerShell cmdlet, type the following and then press Enter.
 
-        ```powershell
-        IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
-        ```
+    ```powershell
+    IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+    ```
 
-      - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
+  - Using a command line: Go to **Start** \> **Run**, type **cmd**, and then press Enter. In the Command Prompt window, type the following and then press Enter.
 
-        ```powershell
-        iisreset /noforce
-        ```
+    ```powershell
+    iisreset /noforce
+    ```
 
-      - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
-
-Return to top
+  - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
 ## Using a script to enable SSL offloading for all protocols and services
 
@@ -408,32 +392,32 @@ If you're working with a large organization with multiple Exchange 2013 Client A
 > [!NOTE]
 > For the <STRONG>Set-OutlookAnywhere</STRONG> cmdlet entries, replace "MyServer" with the name of your Client Access server(s).
 
-**Using Set-WebConfigurationProperty**
+### Using Set-WebConfigurationProperty
 
 ```powershell
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
+Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OWA"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
+Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
 ```
 
 ```powershell
 iisreset /noforce
 ```
 
-**Using appcmd**
+### Using appcmd
 
 > [!NOTE]
 > For the <STRONG>Set-OutlookAnywhere</STRONG> cmdlet entries, replace "MyServer" with the name of your Client Access server(s).
 
 ```powershell
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
@@ -447,18 +431,14 @@ iisreset /noforce
 iisreset /noforce
 ```
 
-Return to top
-
 ## Configuring coexistence with Exchange 2007 and Exchange 2010
 
 During a coexistence scenario where you have a mix of Exchange 2003 and Exchange 2010 servers in the organization, one of the first steps you need to perform after deploying the Exchange 2010 Client Access Servers is to change DNS so that Exchange 2003 users access their mailboxes from a group of Exchange 2010 Client Access servers. In such a scenario, it's fully supported to enable SSL offloading on the load balancer used to distribute client traffic across the Client Access servers.
 
-**Coexistence with other versions of Outlook Web App**
+### Coexistence with other versions of Outlook Web App
 
 With SSL offloading configured on the Exchange 2013 Client Access servers, coexistence works with Exchange 2007 and Exchange 2010:
 
-  - To coexist with Exchange 2007, an earlier namespace is required, and redirection will happen to it only for Outlook Web App and Exchange Web Services. Autodiscover, Outlook Anywhere, and Exchange ActiveSync will be proxied over to the earlier versions.
+- To coexist with Exchange 2007, an earlier namespace is required, and redirection will happen to it only for Outlook Web App and Exchange Web Services. Autodiscover, Outlook Anywhere, and Exchange ActiveSync will be proxied over to the earlier versions.
 
-  - To coexist with Exchange 2010, if you have the external URL set, a redirect will be used. If not, a proxy will be used.
-
-Return to top
+- To coexist with Exchange 2010, if you have the external URL set, a redirect will be used. If not, a proxy will be used.

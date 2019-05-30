@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure email forwarding for a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 

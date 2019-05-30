@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Search the role group changes or administrator audit logs in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can search the administrator audit logs to discover who made changes to organization, server, and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](http://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
 

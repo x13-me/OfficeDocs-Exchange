@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Define your own DLP templates and information types in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can develop data loss prevention (DLP) policy templates as XML files independent of Microsoft Exchange Server 2013 and then import them using the Exchange Administration Center or the Exchange management shell. This section describes the process and details of authoring and tuning DLP XML files for use within a DLP solution. You are not required to develop your own DLP XML files because the Exchange Administration Center provides a way for you to get started quickly with existing DLP policy templates and transport rules in order to scan messages.
 

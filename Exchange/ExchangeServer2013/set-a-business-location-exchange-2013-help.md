@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Set a business location in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can specify the location of a business on a Unified Messaging (UM) auto attendant so that the location will be played for callers. By default, no business location is entered.
 

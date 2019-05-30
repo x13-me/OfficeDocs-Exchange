@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Set up public folders in a new organization in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
  **Summary**: How to set up public folders, including assigning permissions to them in the EAC.
 

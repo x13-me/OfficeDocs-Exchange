@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Update offline address book in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After you create an OAB or modify OAB settings, the changes aren't available to users until the OAB generation (OABGen) process has completed.
 

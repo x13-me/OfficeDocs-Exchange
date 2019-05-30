@@ -64,8 +64,6 @@ Configure Exchange-specific Active Directory site link costs
 
 Kerberos authentication is used with TLS encryption in Exchange. When you disable TLS on the Transport service communication between Mailbox servers, you need to perform another form of authentication. When Exchange 2013 communicates with other servers running Exchange that don't support **X-ANONYMOUSTLS**, it falls back to using Generic Security Services Application Programming Interface (GSSAPI) authentication. All Transport service communications between Exchange 2013 Mailbox servers use **X-ANONYMOUSTLS**. When you configure the Transport service on your Mailbox server to use downgraded Exchange Server authentication, you are in effect enabling GSSAPI authentication for Transport service communication with other Exchange 2013 Mailbox servers.
 
-Return to top
-
 ## Create and configure dedicated Receive connectors
 
 You need to create Receive connectors that will solely be responsible for handling the non-TLS encrypted traffic. Using separate Receive connectors for this purpose ensures that all traffic that doesn't pass through the WAN link remains protected by TLS encryption.
@@ -88,13 +86,9 @@ The end result is shown in the following figure (with the remote IP address rang
 
 ![Receive connector configuration](images/Ee633456.1821b3db-1f7a-4ae7-afbc-5c99e117f976(EXCHG.150).gif "Receive connector configuration")
 
-Return to top
-
 ## Configure Hub sites
 
 By default, an Exchange 2013 Mailbox server will attempt a direct connection to the Mailbox server closest to the final destination of a specific message. In the sample topology, if a user in Branch Office 2 sends a message to a user in Branch Office 1, the Mailbox server in Branch Office 2 will connect to the Mailbox server in Branch Office 1 directly to deliver that message. That connection will be encrypted and therefore not desirable in the specific topology. To have such messages pass through the Mailbox servers on Central Office Site 1, thereby ensuring they aren't encrypted while in transit over the WAN link, Central Office Site 1 and Branch Office 1 need to be configured as hub sites. In short, any site where you have a Mailbox server with a Receive connector with TLS disabled needs to be configured as a hub site, so you can force servers in other sites to route traffic through that site. For more information, see [Configure Exchange mail routing settings in Active Directory](configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md).
-
-Return to top
 
 ## Configure Exchange-specific Active Directory site link costs
 
@@ -113,5 +107,3 @@ To avoid this issue, you need to designate an Exchange-specific cost that is hig
 ![Sample topology with Exchange costs](images/Ee633456.cd036fe0-c37d-479e-a4c1-235e17e90ca7(EXCHG.150).gif "Sample topology with Exchange costs")
 
 For more information, see [Configure Exchange mail routing settings in Active Directory](configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md).
-
-Return to top

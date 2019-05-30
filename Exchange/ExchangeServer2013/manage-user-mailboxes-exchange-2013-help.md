@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Manage user mailboxes in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Shell.
 

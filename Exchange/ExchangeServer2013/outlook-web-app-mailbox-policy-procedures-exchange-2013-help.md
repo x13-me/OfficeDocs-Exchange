@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Outlook Web App mailbox policy procedures in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 [Create an Outlook Web App mailbox policy](create-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Address book policies in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Learn how you can segment your global address list into specific groups to create customized GALs in Outlook and Outlook Web App.
 
