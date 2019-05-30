@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding management role groups
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A *management role group* is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. Role groups are assigned administrator and specialist roles that define major administrative tasks in Exchange 2013 such as organization management, recipient management, and other tasks. Role groups enable you to more easily assign a broader set of permissions to a group of administrators or specialist users.
@@ -66,8 +64,6 @@ The following figure shows each of the role group layers in the preceding list a
 
 For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
-Return to top
-
 ## Role group management
 
 When you create a role group, you create the USG that holds the members of the role group, and you create the assignments between the role group and the management roles you specify. Optionally, you can also specify a management scope to apply to the role assignments, and you can add any mailboxes that you want to be members of the new role group.
@@ -117,8 +113,6 @@ The following table lists the role group layer and the procedural topics that yo
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Built-in role groups
 
@@ -195,8 +189,6 @@ The following table lists all the built-in role groups included with Exchange 20
 </tbody>
 </table>
 
-Return to top
-
 ## Linked role groups
 
 Linked role groups are used in organizations that install Exchange 2013 in a dedicated resource forest and place users in other, trusted foreign forests. Linked role groups, as the name implies, create a link between a role group in the Exchange forest and a USG in a foreign forest. This is useful when the Active Directory Domain Services (AD DS) user accounts of the administrators you want to administer Exchange don't reside in the same resource forest as Exchange. Linked role groups can only be associated with one foreign USG. Additionally, you don't need to create a two-way trust between the Exchange forest and the foreign forest. The Exchange forest needs to trust the foreign forest but the foreign forest doesn't need to trust the Exchange forest.
@@ -215,8 +207,6 @@ A linked role group doesn't contain any members. All of the members of that role
 
 You can't change a standard role group, which contains its own members, to a linked role group and vice versa. If you want to change a role group from a standard role group to a linked role group, you must create a new linked role group and replicate the management role assignments that are present on the standard role group on the linked role group. This is also the case for built-in role groups because they're standard role groups. If you want to perform all of the management of your Exchange forest from a foreign forest, you need to create new linked role groups and add the management roles that exist on the built-in role groups to the new linked role groups. For more information about how to accomplish this, see [Create linked role groups that mirror built-in role groups](create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md).
 
-Return to top
-
 ## Role group delegation
 
 By default, members of the Organization Management role group can add and remove members to and from role groups. However, you might want to enable users who aren't members of the Organization Management role group to add and remove role group members. If so, you can use role group delegation.
@@ -231,8 +221,6 @@ If the **ManagedBy** property isn't set on a role group, only users who are memb
 > Roles assigned to a role group may be assigned using delegating role assignments. With delegating role assignments, members of a role group that's assigned a delegated role can assign that role to another role group, assignment policy, user, or USG. Members of the role group can assign only that role and can't delegate the role group, unless they're also added to the <STRONG>ManagedBy</STRONG> property. For more information about delegated role assignments, see <A href="understanding-management-role-assignments-exchange-2013-help.md">Understanding management role assignments</A>.
 
 For more information about how to manage role group delegation, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
-
-Return to top
 
 ## Role group membership
 
@@ -269,5 +257,3 @@ When the preceding command is run, the following happens:
       - `UM Mailboxes_Seattle Recipient Management`
 
 If you compare the results of this command to the Management role group layers figure earlier in this topic, you can see where each step correlates to the role group layers. You can then refer to the Management role group management topics shown in "Role group management" earlier in this topic to manage each role group layer.
-
-Return to top

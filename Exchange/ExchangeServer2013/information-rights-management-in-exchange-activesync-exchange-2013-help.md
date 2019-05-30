@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management in Exchange ActiveSync
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Information workers often use e-mail to exchange sensitive information. To help secure this information, organizations can use Information Rights Management (IRM) to apply persistent protection to messaging content. Because mobile devices are increasingly being used to access e-mail, it's important that your mobile device users be able to create and consume IRM-protected content.
@@ -44,8 +42,6 @@ Using IRM in Exchange ActiveSync, mobile device users can:
 
   - Reply to and forward IRM-protected messages.
 
-Return to top
-
 ## Requirements
 
 The following requirements apply:
@@ -59,8 +55,6 @@ The following requirements apply:
   - IRM must be enabled in the Exchange ActiveSync mailbox policy. You can enable or disable IRM for different sets of users using different Exchange ActiveSync mailbox policies.
 
   - Devices that support Exchange ActiveSync protocol version 14.1, including Windows phones, can support IRM in Exchange ActiveSync. The device's mobile e-mail application must support the RightsManagementInformation tag defined in Exchange ActiveSync version 14.1.
-
-Return to top
 
 ## Security
 
@@ -111,8 +105,6 @@ When enabling IRM in Exchange ActiveSync, we recommend using the Exchange Active
 
 To learn more, see [Mobile device mailbox policies](mobile-device-mailbox-policies-exchange-2013-help.md).
 
-Return to top
-
 ## Enabling IRM in Exchange ActiveSync
 
 To enable IRM in Exchange ActiveSync, perform the following tasks:
@@ -120,5 +112,3 @@ To enable IRM in Exchange ActiveSync, perform the following tasks:
 1. Add the Federation mailbox (a system mailbox created by Exchange 2013 and Exchange 2010 Setup) to the super users group in AD RMS. This allows Exchange 2013 and Exchange 2010 servers to access IRM-protected messages. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
 2. Use the [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)) cmdlet in the Exchange Management Shell to enable IRM on the Client Access server. This enables IRM in Exchange ActiveSync and IRM in Microsoft Office Outlook Web App for your organization. For details, see [Enable or Disable Information Rights Management on Client Access Servers](enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md).
-
-Return to top

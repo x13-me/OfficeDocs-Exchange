@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create an unscoped role
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 An unscoped management role can be used to provide administrators and specialist users access to Windows PowerShell scripts and non-Exchange cmdlets. You can either create an unscoped top-level role and add scripts or non-Exchange cmdlets to that role, or create a role that's based on an existing, unscoped top-level role. After an unscoped role has been created and customized, the role can be assigned to management role groups, users, and universal security groups (USGs). Unscoped roles can't be assigned to management role assignment policies. For more information about unscoped roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
@@ -45,9 +43,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create an unscoped top-level management role
 

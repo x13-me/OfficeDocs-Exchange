@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # High availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can protect your Exchange Server 2013 mailbox databases and the data they contain by configuring your Mailbox servers and databases for high availability and site resilience. Exchange 2013 minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.
@@ -140,13 +138,9 @@ The following key terms are important to understand high availability or site re
   - *Site resilience*
     A configuration that extends the messaging infrastructure to multiple Active Directory sites to provide operational continuity for the messaging system in the event of a failure affecting one of the sites.
 
-Return to top
-
 ## Database availability groups
 
 A DAG is the base component of the high availability and site resilience framework built into Exchange 2013. A DAG is a group of up to 16 Mailbox servers that host a set of databases and provides automatic, database-level recovery from failures that affect individual databases, networks, or servers. Any server in a DAG can host a copy of a mailbox database from any other server in the DAG. When a server is added to a DAG, it works with the other servers in the DAG to provide automatic recovery from failures that affect mailbox databases, such as a disk failure or server failure. For more information about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
-
-Return to top
 
 ## Mailbox database copies
 
@@ -160,13 +154,9 @@ For example, if an active database in a DAG fails because of an underlying stora
 
 For more information about mailbox database copies, see [Mailbox database copies](mailbox-database-copies-exchange-2013-help.md).
 
-Return to top
-
 ## Active Manager
 
 Exchange 2013 leverages the Active Manager component introduced in Exchange 2010 to manage the database and database copy health, status, continuous replication, and other aspects of Mailbox server high availability. For more information about Active Manager, see [Active Manager](active-manager-exchange-2013-help.md).
-
-Return to top
 
 ## Site resilience
 
@@ -200,8 +190,6 @@ Exchange 2013 also provides functionality that enables administrators to deal wi
 
 For details about planning and deploying site resilience, see [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md) and [Deploying high availability and site resilience](deploying-high-availability-and-site-resilience-exchange-2013-help.md).
 
-Return to top
-
 ## Third-party replication API
 
 Exchange 2013 also includes a third-party replication API that enables organizations to use third-party synchronous replication solutions instead of the built-in continuous replication feature. Microsoft supports third-party solutions that use this API, provided that the solution provides the necessary functionality to replace all native continuous replication functionality that's disabled as a result of using the API. Solutions are supported only when the API is used within a DAG to manage and activate mailbox database copies. Use of the API outside of these boundaries isn't supported. In addition, the solution must meet the applicable Windows hardware support requirements. (Test validation isn't required for support.)
@@ -211,8 +199,6 @@ When deploying a solution that uses the built-in third-party replication API, be
 Microsoft's backup and restore support policy for deployments that use third-party replication API-based solutions is the same as for native continuous replication deployments.
 
 If you're a partner seeking information about the third-party API, contact your Microsoft representative.
-
-Return to top
 
 ## High availability and site resilience documentation
 
@@ -256,5 +242,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-
-Return to top

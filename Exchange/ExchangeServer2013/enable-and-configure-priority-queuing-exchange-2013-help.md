@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable and configure priority queuing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the message priority that's configured by the sender in Microsoft Outlook or Outlook Web Access to influence the processing of the message by the Transport service on the Mailbox server. When priority queuing is enabled, High priority messages are transmitted to their destinations before Normal priority messages, and Normal priority messages are transmitted to their destinations before Low priority messages. For more information, see [Priority queuing](priority-queuing-exchange-2013-help.md).
@@ -35,7 +33,7 @@ _**Applies to:** Exchange Server 2013_
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Command Prompt to enable and configure priority queuing in the EdgeTransport.exe.config file
 

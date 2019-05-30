@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Spam quarantine
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Many organizations are bound by legal or regulatory requirements to preserve or deliver all legitimate email messages. In Microsoft Exchange Server 2013, spam quarantine is a feature of the Content Filter agent that reduces the risk of losing legitimate messages. Spam quarantine provides a temporary storage location for messages identified as spam that shouldn't be delivered to a user mailbox inside the organization.
@@ -52,8 +50,6 @@ Based on the preceding SCL thresholds, all email with an SCL of 6 will be delive
 
 For more information, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
 
-Return to top
-
 ## Spam quarantine
 
 When messages are received by the Exchange server that's running all default anti-spam agents, the content filter is applied as follows:
@@ -89,5 +85,3 @@ To use spam quarantine, you need to follow these steps:
 6. Adjust the SCL quarantine threshold as needed.
 
 For detailed instructions, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
-
-Return to top

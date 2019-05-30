@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure mailbox database copy properties
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Each mailbox database copy has its own properties that you can configure. These include the amount of time, if any, for replay lag and truncation lag, and the activation preference number. For more information about replay lag, truncation lag and the activation preference number, see [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md).
@@ -29,9 +27,7 @@ Each mailbox database copy has its own properties that you can configure. These 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to configure mailbox database copy properties
 

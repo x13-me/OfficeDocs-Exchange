@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Clients and mobile
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 There are many different clients that can be used to access information in a Microsoft Exchange Server 2013 mailbox. These clients include desktop programs such as Microsoft Outlook, Outlook Web App, and mobile clients such as mobile phones, tablets, and other mobile devices. Each of these clients offers a variety of features.

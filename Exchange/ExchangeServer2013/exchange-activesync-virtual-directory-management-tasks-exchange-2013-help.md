@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange ActiveSync virtual directory management tasks
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can manage several of the Exchange ActiveSync application settings in Exchange Server 2013 through the Exchange ActiveSync virtual directory. A virtual directory is used by Internet Information Services (IIS) to allow access to a web application such as Exchange ActiveSync. Some of the virtual directory settings you can manage for Exchange ActiveSync include authentication, security, and reporting.

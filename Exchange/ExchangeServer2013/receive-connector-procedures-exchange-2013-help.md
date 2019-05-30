@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Receive connector procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Create a Receive connector to receive email from the Internet](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 certificate management UI
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Managing certificates in an Exchange Server deployment is one of the most important administrative tasks. Ensuring that certificates are appropriately set up and configured is key to delivering a secure messaging infrastructure for the enterprise. In Exchange 2010, the Exchange Management Console (EMC) was the primary method of managing certificates. In Exchange 2013, certificate management functionality is provided in the Exchange Administration Console (EAC), the new Exchange 2013 administrative user interface. In Exchange 2013, the focus is on minimizing the number of certificates that an administrator must manage, minimizing the interaction the administrator must have with certificates, and allowing management of certificates from a central location.

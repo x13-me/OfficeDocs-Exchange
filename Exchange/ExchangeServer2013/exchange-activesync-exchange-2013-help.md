@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange ActiveSync
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. You'll learn about the features of Exchange ActiveSync including security features, the things you can manage, how to make it secure, and how to avoid problems synching to Windows Phone 7.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Sender reputation and the Protocol Analysis agent
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Sender reputation is part of the Exchange anti-spam functionality that blocks messages according to many characteristics of the sender. Sender reputation relies on persisted data about the sender to determine what action, if any, to take on an inbound message. The Protocol Analysis agent is the underlying agent for sender reputation functionality.
@@ -68,8 +66,6 @@ If a sender is included in the IP Block list or Microsoft IP Reputation Service,
 
 By default, sender reputation sets a rating of 0 for senders that haven't been analyzed. After a sender has sent 20 or more messages, sender reputation calculates an SRL that's based on the statistics listed earlier in this topic.
 
-Return to top
-
 ## Use of the SRL
 
 Sender reputation acts on messages during two phases of the SMTP session:
@@ -80,8 +76,6 @@ Sender reputation acts on messages during two phases of the SMTP session:
 
 For more information, see [Manage sender reputation](manage-sender-reputation-exchange-2013-help.md).
 
-Return to top
-
 ## Enabling and configuring the detection of open proxy servers
 
 Sender reputation evaluates several sender characteristics to calculate an SRL. Among the characteristics that sender reputation evaluates are the results of a test for open proxy servers. Frequently, spammers route messages through open proxy servers on the Internet. By routing spam through open proxy servers, spammers can send messages that appear to originate from a different server than their own.
@@ -89,8 +83,6 @@ Sender reputation evaluates several sender characteristics to calculate an SRL. 
 When sender reputation calculates an SRL, sender reputation tries to connect to the sender's originating IP address by using a variety of common proxy protocols, such as SOCKS4, SOCKS5, HTTP, Telnet, Cisco, and Wingate. Sender reputation formats a protocol-specific request in an attempt to connect back to the Edge Transport server from the open proxy server by using an SMTP request. If an SMTP request is received from the proxy server, sender reputation verifies that the proxy server is an open proxy server and adjusts the SRL rating according to this result. By default, detection of open proxy servers is enabled on sender reputation.
 
 For more information about how to enable and configure detection of open proxy servers, see [Manage sender reputation](manage-sender-reputation-exchange-2013-help.md).
-
-Return to top
 
 ## Setting the SRL block threshold
 
@@ -101,5 +93,3 @@ On an Edge Transport server, if the SRL block threshold is exceeded for a partic
 When a sender is added to the IP Block list, sender reputation deletes the profile for the sender. Sender reputation deletes the profile because the blocked sender's existing profile indicates that the sender's SRL exceeds the SRL block threshold. This would cause the blocked sender to be added to the IP Block list again as soon as the duration for sender blocking ends.
 
 For more information, see [Manage sender reputation](manage-sender-reputation-exchange-2013-help.md).
-
-Return to top

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Messaging records management terminology in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic defines the core components associated with messaging records management (MRM) in Microsoft Exchange Server 2013. MRM is a records management technology in Exchange 2013 that helps organizations reduce the risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.

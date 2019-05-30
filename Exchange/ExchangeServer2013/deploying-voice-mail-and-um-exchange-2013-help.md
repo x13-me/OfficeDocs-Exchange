@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploying voice mail and UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Exchange Unified Messaging (UM) enables you to provide voice mail services to users in your organization. When you deploy Unified Messaging, you must either integrate your Exchange Server deployment with the existing telephony system for your organization or integrate it with Microsoft Lync Server. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and perform the correct planning steps to deploy and manage voice mail in Unified Messaging. If you're integrating Exchange with Lync Server, you must also familiarize yourself with that product.

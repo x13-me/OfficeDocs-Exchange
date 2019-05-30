@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Filterable properties for the -ContentFilter parameter
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic lists the filterable properties for the *ContentFilter* parameter. The *ContentFilter* parameter is used to export messages to a .pst file that match the filter. The *ContentFilter* parameter is used in the [New-MailboxExportRequest](https://technet.microsoft.com/en-us/library/ff607299\(v=exchg.150\)) cmdlet.

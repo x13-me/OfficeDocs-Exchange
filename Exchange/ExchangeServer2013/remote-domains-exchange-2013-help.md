@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Remote domains
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can create remote domain entries to define the settings for message transfer between the Microsoft Exchange Server 2013 organization and domains outside your Exchange organization. When you create a remote domain entry, you control the types of messages that are sent to that domain. You can also apply message format policies and acceptable character sets for messages that are sent from users in your organization to the remote domain. The settings for remote domains are global configuration settings for the Exchange organization.

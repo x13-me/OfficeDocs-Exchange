@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable or Disable Information Rights Management on Client Access Servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Enabling Information Rights Management (IRM) on Client Access servers enables the following features:
@@ -54,8 +52,6 @@ For additional management tasks related to IRM, see [Information Rights Manageme
     You can control IRM in Exchange ActiveSync per Exchange ActiveSync mailbox policy. To disable or enable IRM in Exchange ActiveSync for an Exchange ActiveSync mailbox policy, use the **Set-ActiveSyncMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Exchange ActiveSync for one set of users and disable it for another set of users by assigning them a different Exchange ActiveSync mailbox policy.
 
   - You can't use the Exchange Administration Center (EAC) to enable or disable IRM on Client Access servers. You must use the Shell.
-
-## What do you want to do?
 
 ## Use the Shell to enable IRM on Client Access servers
 

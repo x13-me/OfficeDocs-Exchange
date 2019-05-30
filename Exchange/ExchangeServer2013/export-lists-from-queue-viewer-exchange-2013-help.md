@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Export lists from Queue Viewer
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic explains how to use Queue Viewer in the Exchange Toolbox to export lists of messages or queues.
@@ -41,7 +39,7 @@ You can export lists to the following file formats:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Export a list from the result pane in Queue Viewer
 

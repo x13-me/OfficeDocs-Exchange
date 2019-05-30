@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Datacenter Switchovers
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
 
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
@@ -87,8 +85,6 @@ When the DAG isn't in DAC mode, the specific actions to terminate any surviving 
 
 4. Open the Failover Cluster Management tool and connect to the DAG's underlying cluster. Expand the cluster, and then expand **Nodes**. Right-click each node in the primary datacenter, select **More Actions**, and then select **Evict**. When you're done evicting the DAG members in the primary datacenter, close the Failover Cluster Management tool.
 
-Return to top
-
 ## Activating Mailbox Servers
 
 The steps needed to activate Mailbox servers during a datacenter switchover also depend on whether the DAG is in DAC mode. Before activating the DAG members in the second datacenter, we recommend that you validate that the infrastructure services in the second datacenter are ready for messaging service activation.
@@ -140,8 +136,6 @@ When the DAG isn't in DAC mode, the steps to complete activation of the mailbox 
     ```powershell
     Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
     ```
-
-Return to top
 
 ## Activating Client Access Servers
 
@@ -196,8 +190,6 @@ DNS updates enable incoming traffic, and outgoing traffic is handled by the acti
 
   - When outgoing SMTP connections are initiated, they will try the locally available Edge Transport server, and those messages will be queued or immediately sent based on the status of the receiving server.
 
-Return to top
-
 ## Restoring Service to the Primary Datacenter
 
 Generally, datacenter failures are either temporary or permanent. With a permanent failure, such as an event that has caused the permanent destruction of a primary datacenter, there's no expectation that the primary datacenter will be activated. However, with a temporary failure (for example, an extended power loss or extensive but repairable damage), there's an expectation that the primary datacenter will eventually be restored to full service.
@@ -244,10 +236,6 @@ As part of the switchover process, the internal and external DNS records used by
 
 As with the DNS changes that were made during the switchover to the second datacenter, clients, servers, and IP gateways will continue to try to connect, and should automatically connect after the TTL has expired for the original DNS entry, and after the entry is expired from their DNS cache.
 
-Return to top
-
 ## Reestablishing Site Resilience
 
 After switchback to the primary datacenter is completed successfully, you can reestablish site resilience for the primary datacenter by verifying the health and status of each mailbox database copy in the second datacenter. In addition, if any database copies in the second datacenter were originally blocked for activation, you can reconfigure those settings at this time.
-
-Return to top

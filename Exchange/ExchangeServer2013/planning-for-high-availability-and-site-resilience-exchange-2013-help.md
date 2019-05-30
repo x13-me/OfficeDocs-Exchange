@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Planning for high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.
@@ -50,19 +48,13 @@ Before deploying a database availability group (DAG) and creating mailbox databa
 
   - The name you assign to the DAG must be a valid, available, and unique computer name of 15 characters or less.
 
-Return to top
-
 ## Hardware requirements
 
 Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in the topics for [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md) and [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-Return to top
-
 ## Storage requirements
 
 Generally, there are no special storage requirements specific to DAGs or mailbox database copies. DAGs don't require or use cluster-managed shared storage. Cluster-managed shared storage is supported for use in a DAG only when the DAG is configured to use a solution that leverages the Third Party Replication API built into Exchange 2013.
-
-Return to top
 
 ## Software requirements
 
@@ -71,8 +63,6 @@ DAGs are available in both Exchange 2013 Standard and Exchange 2013 Enterprise. 
 Each member of the DAG must also be running the same operating system. Exchange 2013 is supported on the Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 operating systems. All members of a specific DAG must run the same operating system. Windows Server 2012 R2 is supported only for DAG members that are running Exchange 2013 Service Pack 1 or later.
 
 In addition to meeting the prerequisites for installing Exchange 2013, there are operating system requirements that must be met. DAGs use Windows Failover Clustering technology, and as a result, they require the Enterprise or Datacenter version of Windows Server 2008 R2, or the Standard or Datacenter version of the Windows Server 2012 or Windows Server 2012 R2 operating systems.
-
-Return to top
 
 ## Network requirements
 
@@ -261,8 +251,6 @@ The TCP/IP v4 properties for a Replication network adapter are configured as fol
 
   - The **Register this connection's addresses in DNS** check box shouldn't be selected.
 
-Return to top
-
 ## Witness server requirements
 
 A *witness server* is a server outside a DAG that's used to achieve and maintain quorum when the DAG has an even number of members. DAGs with an odd number of members don't use a witness server. All DAGs with an even number of members must use a witness server. The witness server can be any computer running Windows Server. There is no requirement that the version of the Windows Server operating system of the witness server matches the operating system used by the DAG members.
@@ -270,8 +258,6 @@ A *witness server* is a server outside a DAG that's used to achieve and maintain
 Quorum is maintained at the cluster level, underneath the DAG. A DAG has quorum when the majority of its members are online and can communicate with the other online members of the DAG. This notion of quorum is one aspect of the concept of quorum in Windows failover clustering. A related and necessary aspect to quorum in failover clusters is the *quorum resource*. The quorum resource is a resource inside a failover cluster that provides a means for arbitration leading to cluster state and membership decisions. The quorum resource also provides persistent storage for storing configuration information. A companion to the quorum resource is the *quorum log*, which is a configuration database for the cluster. The quorum log contains information such as which servers are members of the cluster, what resources are installed in the cluster, and the state of those resources (for example, online or offline).
 
 It's critical that each DAG member have a consistent view of how the DAG's underlying cluster is configured. The quorum acts as the definitive repository for all configuration information relating to the cluster. The quorum is also used as a tie-breaker to avoid *split-brain* syndrome. Split brain syndrome is a condition that occurs when DAG members can't communicate with each other but are running. Split brain syndrome is prevented by always requiring a majority of the DAG members (and in the case of DAGs with an even number of member, the DAG witness server) to be available and interacting for the DAG to be operational.
-
-Return to top
 
 ## Planning for site resilience
 
@@ -346,5 +332,3 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
   - The strategy for enabling the DNS changes necessary for a datacenter switchover must be understood. The specific DNS changes, including their TTL settings, must be defined and documented to support the SLA in effect.
 
   - A strategy for testing the solution must also be established and factored into the SLA. Periodic validation of the deployment is the only way to guarantee that the quality and viability of the deployment doesn't degrade over time. After the deployment is validated, we recommend that the part of the configuration that directly affects the success of the solution be explicitly documented. In addition, we recommend that you enhance your change management processes around those segments of the deployment.
-
-Return to top

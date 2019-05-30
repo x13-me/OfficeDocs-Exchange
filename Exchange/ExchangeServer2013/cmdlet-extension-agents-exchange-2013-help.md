@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Cmdlet extension agents
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Cmdlet extension agents are components in Microsoft Exchange Server 2013 invoked by Exchange 2013 cmdlets when the cmdlets run. As the name implies, cmdlet extension agents extend the capabilities of the cmdlets that invoke them by assisting in processing data or performing additional actions based on the requirements of the cmdlet. Cmdlet extension agents are available on any server role.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Sharing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Exchange 2013, administrators can set up different levels of calendar access to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating *organization relationships*. User-to-user calendar sharing is set up by applying *sharing policies*.
@@ -154,8 +152,6 @@ The following table lists the differences between organization relationships and
 </tbody>
 </table>
 
-Return to top
-
 ## Limitations of free/busy sharing
 
 The following limitations apply when sharing free/busy information between Exchange organizations:
@@ -192,8 +188,6 @@ Federated sharing features require that the Client Access servers in your organi
 
 For an external organization to access your organization's free/busy information, you must publish at least one Client Access server to the Internet. This requires inbound HTTPS access from the Internet to the Client Access server. Client Access servers in Active Directory sites that don't have a Client Access server published to the Internet can use Client Access servers in other Active Directory sites that are accessible from the Internet. The Client Access servers that aren't published to the Internet must have the external URL of the Web services virtual directory set with the URL that's visible to external organizations.
 
-Return to top
-
 ## Coexistence with Exchange 2010
 
 In organizations that contain both Exchange 2010 and Exchange 2013 servers, users who have a mailbox on an Exchange 2010 Mailbox server can use organization relationships to share free/busy information with recipients in external Exchange 2013 federated domain organizations. The Exchange 2010 Client Access and Mailbox servers must be running SP2 or higher, and you must have at least one Exchange 2013 Client Access server in the Exchange 2010 organization.
@@ -205,8 +199,6 @@ In organizations that contain both Exchange 2013 and Exchange 2007 servers, user
 When using Outlook 2010 or Outlook Web App to scheduling a meeting on an Exchange 2007 server, a user who has a mailbox on an Exchange 2007 server can see free/busy information for a user in the external organization. Free/busy information for Exchange 2007 mailboxes is visible to recipients in the external organization.
 
 Sharing policies are assigned to Exchange 2013 mailbox users. To use sharing policies, a mailbox must be located on an Exchange 2013 Mailbox server. Only Outlook 2010 and Outlook Web App clients can be used to generate or respond to sharing invitations.
-
-Return to top
 
 ## Sharing documentation
 

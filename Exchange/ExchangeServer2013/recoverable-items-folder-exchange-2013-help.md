@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recoverable Items folder
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Microsoft Exchange Server 2013 and Exchange Online use the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The Recoverable Items folder is used by the following Exchange features:
@@ -64,8 +62,6 @@ Knowledge of the following terms will help you understand the content in this to
 
   Describes when an item is marked to be purged from the mailbox database. This is also known as a *store hard delete*.
 
-Return to top
-
 ## Recoverable Items folder
 
 The Recoverable Items folder resides in the non-IPM subtree of each mailbox. The non-IPM subtree is a storage area within the mailbox that contains operational data about the mailbox. This subtree isn't visible to users using Outlook, Microsoft Office Outlook Web App, or other email clients.
@@ -100,8 +96,6 @@ The following illustration shows the subfolders in the Recoverable Items folders
 
 ![Recoverable Items folder](images/Ee364755.a1a08afc-3617-4adb-83ab-a6904516954e(EXCHG.150).gif "Recoverable Items folder")
 
-Return to top
-
 ## Deleted item retention
 
 An item is considered to be permanently deleted in the following cases:
@@ -119,8 +113,6 @@ Permanently deleted items are moved to the Deletions subfolder of the Recoverabl
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see Recoverable Items Mailbox Quotas later in this topic.
 
 After the deleted item retention period elapses, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant processes the mailbox, items in the Purges subfolder are purged from the mailbox database and can't be recovered.
-
-Return to top
 
 ## Single item recovery
 
@@ -168,8 +160,6 @@ The following table lists the contents of and actions that can be performed in t
 </table>
 
 In Exchange 2013, single item recovery isn't enabled by default for new mailboxes or mailboxes moved from a previous version of Exchange. You must use the Exchange Management Shell to enable single item recovery for a mailbox, and then configure or modify the deleted item retention period. For details about how to perform a single item recovery, see [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
-
-Return to top
 
 ## In-Place Hold and Litigation Hold
 
@@ -222,8 +212,6 @@ To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see
 
   - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds)
 
-Return to top
-
 ## Copy-on-write page protection and modified items
 
 If a user who is placed on In-Place Hold or Litigation Hold modifies specific properties of a mailbox item, a copy of the original mailbox item is created before the changed item is written. The original copy is saved in the Versions subfolder. This process is known as *copy-on-write page protection*. Copy-on-write page protection applies to items residing in any mailbox folder. The Versions subfolder isn't visible to users.
@@ -275,8 +263,6 @@ The following table lists the message properties that trigger copy-on-write page
 > Copy-on-write page protection doesn't save a version of the meeting when a meeting organizer receives responses from attendees and the meeting's tracking information is updated. Also, changes to RSS feeds aren't captured by copy-on-write page protection.
 
 When a mailbox is no longer on In-Place Hold or litigation hold, copies of modified items stored in the Versions folder are removed.
-
-Return to top
 
 ## Recoverable Items mailbox quotas
 
@@ -341,8 +327,6 @@ The following table lists the events logged when the Recoverable Items folder re
 
 If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/en-us/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
-Return to top
-
 ## More information
 
   - Copy-on-write is only enabled when a mailbox is on In-Place Hold or Litigation Hold.
@@ -352,5 +336,3 @@ Return to top
       - [Restore deleted items in Outlook](https://go.microsoft.com/fwlink/p/?linkid=524923)
 
       - [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
-
-Return to top

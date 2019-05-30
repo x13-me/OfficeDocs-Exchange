@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connectors
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Connectors are used to control inbound and outbound mail flow in Microsoft Exchange Server 2013. With connectors, you can route mail to and receive mail from recipients outside of your organization, a partner through a secure channel, or a message-processing appliance.

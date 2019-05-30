@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable email for a mail contact
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can disable email for an existing mail contact in your Exchange organization. When you disable email for a mail contact, it's removed from Exchange and from your organization's address book. If the mail contact is a member of a distribution group, the contact no longer receives mail sent to the group. Also, the Exchange attributes are removed from the mail-enabled contact object in Active Directory, but the contact and its non-Exchange attributes (such as contact and organization information) are retained in Active Directory.
@@ -33,9 +31,7 @@ For additional management tasks related to mail contacts, see [Manage mail conta
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Disable email for a mail contact
 

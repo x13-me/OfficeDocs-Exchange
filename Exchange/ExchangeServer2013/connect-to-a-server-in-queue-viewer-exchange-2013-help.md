@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connect to a server in Queue Viewer
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you use Queue Viewer in the Exchange Toolbox on a Microsoft Exchange Server 2013 server that's located inside the Exchange organization, you can connect to other Mailbox servers. By default, when you open Queue View on a Mailbox server, Queue Viewer connects to the queue database on the local server. However, you can start more than one instance of Queue Viewer so that each instance focuses on a different server. You can also tile Queue Viewer windows so you can easily monitor more than one Mailbox server at a time.
@@ -33,9 +31,7 @@ You can also specify the server that Remote PowerShell uses to perform the speci
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Exchange Toolbox to specify the server you want to manage in Queue Viewer
 

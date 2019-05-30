@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Sharing and collaboration permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](collaboration-exchange-2013-help.md) and [Sharing](sharing-exchange-2013-help.md).

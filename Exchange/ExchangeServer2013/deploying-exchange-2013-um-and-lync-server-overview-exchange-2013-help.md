@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploying Exchange 2013 UM and Lync Server overview
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Unified Messaging (UM) and Microsoft Lync Server can be deployed together to provide voice messaging, instant messaging, enhanced user presence, audio/video conferencing, and an integrated email and messaging experience for users in your organization. Unified Messaging is used to provide call answering for voice mail, Outlook Voice Access, and auto attendant services. Microsoft Lync Server enables more advanced features found in Enterprise Voice, such as instant messaging (IM), conferencing, and inbound and outbound calling. This topic describes how to configure Unified Messaging and Microsoft Lync Server to support these features.
@@ -117,8 +115,6 @@ The following table shows the certificate requirements for installing and config
 </tbody>
 </table>
 
-Return to top
-
 ## Deployment steps
 
 After you install the required servers in your organization, there's a recommended sequence of steps that you must perform in your Exchange Unified Messaging and Lync Server deployments to correctly deploy Enterprise Voice for your users.
@@ -212,8 +208,6 @@ After you configure the Lync Server and the Unified Messaging servers, you must 
 
 > [!IMPORTANT]
 > When you're integrating Unified Messaging and Lync Server, missed call notifications aren't available to users who have a mailbox located on an Exchange 2007 or Exchange 2010 Mailbox server. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
-
-Return to top
 
 ## For more information
 

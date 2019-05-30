@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # High availability and site resilience permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High availability and site resilience](high-availability-and-site-resilience-exchange-2013-help.md).

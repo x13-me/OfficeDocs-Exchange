@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Information Rights Management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Every day, information workers use e-mail to exchange sensitive information such as financial reports and data, legal contracts, confidential product information, sales reports and projections, competitive analysis, research and patent information, and customer and employee information. Because people can now access their e-mail from just about anywhere, mailboxes have transformed into repositories containing large amounts of potentially sensitive information. As a result, information leakage can be a serious threat to organizations. To help prevent information leakage, Microsoft Exchange Server 2013 includes Information Rights Management (IRM) features, which provide persistent online and offline protection of e-mail messages and attachments.
@@ -56,8 +54,6 @@ The following are some consequences resulting from information leakage:
 
   - **Loss of competitive advantage**: One of the most serious threats from information leakage is the loss of competitive advantage in business. Disclosure of strategic plans or disclosure of merger and acquisition information can potentially lead to loss of revenue or market capitalization. Other threats include loss of research information, analytical data, and other intellectual property.
 
-Return to top
-
 ## Traditional solutions to information leakage
 
 Although traditional solutions to information leakage may protect initial access to data, they often don't provide constant protection. The following table lists some traditional solutions and their limitations.
@@ -94,8 +90,6 @@ Although traditional solutions to information leakage may protect initial access
 </table>
 
 Finally, traditional solutions often lack enforcement tools that apply uniform messaging policies to prevent information leakage. For example, a user sends a message containing sensitive information and marks it as **Company Confidential** and **Do Not Forward**. After the message is delivered to the recipient, the sender or the organization no longer has control over the information. The recipient can willfully or inadvertently forward the message (using features such as automatic forwarding rules) to external e-mail accounts, subjecting your organization to substantial information leakage risks.
-
-Return to top
 
 ## IRM in Exchange 2013
 
@@ -138,8 +132,6 @@ For more information about rights policy templates, see [AD RMS Policy Template 
 
 For more information about creating AD RMS rights policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?linkid=136593).
 
-Return to top
-
 ## Applying IRM protection to messages
 
 In Exchange 2010, IRM protection can be applied to messages using the following methods:
@@ -156,8 +148,6 @@ In Exchange 2010, IRM protection can be applied to messages using the following 
 
     > [!NOTE]
     > IRM protection isn't applied again to messages that are already IRM-protected. For example, if a user IRM-protects a message in Outlook or Outlook Web App, IRM protection isn't applied to the message using a transport protection rule.
-
-Return to top
 
 ## Scenarios for IRM protection
 
@@ -206,8 +196,6 @@ Scenarios for IRM protection are described in the following table.
 </tbody>
 </table>
 
-Return to top
-
 ## Decrypting IRM-protected messages to enforce messaging policies
 
 To enforce messaging policies and for regulatory compliance, you must be able to access encrypted message content. To meet eDiscovery requirements due to litigation, regulatory audits, or internal investigations, you must also be able to search encrypted messages. To help with these tasks, Exchange 2013 includes the following IRM features:
@@ -223,13 +211,9 @@ To enforce messaging policies and for regulatory compliance, you must be able to
 
 To enable these decryption features, Exchange servers must have access to the message. This is accomplished by adding the Federation mailbox, a system mailbox created by Exchange Setup, to the super users group on the AD RMS server. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-Return to top
-
 ## Prelicensing
 
 To view IRM-protected messages and attachments, Exchange 2013 automatically attaches a prelicense to protected messages. This prevents the client from having to make repeated trips to the AD RMS server to retrieve a use license, and enables offline viewing of IRM-protected messages and attachments. Prelicensing also allows IRM-protected messages to be viewed in Outlook Web App. When you enable IRM features, prelicensing is enabled by default.
-
-Return to top
 
 ## IRM agents
 
@@ -285,8 +269,6 @@ The following table lists the IRM agents implemented in the Transport service on
 </table>
 
 For more information about transport agents, see [Transport agents](transport-agents-exchange-2013-help.md).
-
-Return to top
 
 ## IRM requirements
 
@@ -351,8 +333,6 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 
 Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Independent Software Vendors](https://go.microsoft.com/fwlink/p/?linkid=210336).
 
-Return to top
-
 ## Configuring and testing IRM
 
 You must use the Exchange Management Shell to configure IRM features in Exchange 2013. To configure individual IRM features, use the [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)) cmdlet. You can enable or disable IRM for internal messages, transport decryption, journal report decryption, Exchange Search, and Outlook Web App. For more information about configuring IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
@@ -372,8 +352,6 @@ After you set up an Exchange 2013 server, you can use the [Test-IRMConfiguration
   - Retrieves a super user use license for the specified recipient.
 
   - Acquires a prelicense for the specified recipient.
-
-Return to top
 
 ## Extend Rights Management with the Rights Management connector
 

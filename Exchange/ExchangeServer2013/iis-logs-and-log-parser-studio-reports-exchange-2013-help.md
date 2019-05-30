@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # IIS Logs and Log Parser Studio Reports
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 ## Analyzing Log Parser Studio Reports

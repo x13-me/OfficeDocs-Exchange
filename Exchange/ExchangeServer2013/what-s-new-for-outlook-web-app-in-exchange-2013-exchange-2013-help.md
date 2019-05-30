@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # What's new for Outlook Web App in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 For Microsoft Exchange Server 2013, we've added several new features to Microsoft Outlook Web App and updated its design.

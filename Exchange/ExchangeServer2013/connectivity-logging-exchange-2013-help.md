@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connectivity logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Connectivity logging records the outbound connection activity that's used to transmit messages from a transport service on the Exchange server. The purpose of the connectivity log isn't to track the transmission of individual email messages. Rather, the connectivity log tracks the connection activity from source to the destination, regardless of how many messages are transmitted. Connectivity logging is available in the Front End Transport service on Client Access servers, the Transport service on Mailbox servers, and the Mailbox Transport service on Mailbox servers. The following list describes the type of information recorded in the connectivity log:
@@ -80,8 +78,6 @@ The connectivity log files are text files that contain data in the comma-separat
 
   - **\#Fields**: Comma delimited field names used in the connectivity log files.
 
-Return to top
-
 ## Information written to the connectivity log
 
 The connectivity log stores each outbound transport service connection event on a single line in the connectivity log. The information stored on each line is organized by fields. These fields are separated by commas. The following table describes the fields used to classify each outgoing connection event.
@@ -140,5 +136,3 @@ The connectivity log stores each outbound transport service connection event on 
 </table>
 
 When transport service establishes a connection to a destination, the transport service may be prepared to send one message or several messages. The connection and message transmission processes generate multiple events written on multiple lines in the connectivity log. Simultaneous connections to different destinations create connectivity log entries related to different destinations that are interlaced. However, you can use the date-time, session, source, and direction fields to arrange the connectivity log entries for each separate connection from start to finish.
-
-Return to top

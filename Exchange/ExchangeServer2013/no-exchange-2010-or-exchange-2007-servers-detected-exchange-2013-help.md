@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # No Exchange 2010 or Exchange 2007 servers detected
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup displayed this warning because no Exchange Server 2010 or Exchange Server 2007 server roles exist in the organization.
@@ -37,6 +35,6 @@ If you decide that you need to deploy Exchange 2010 or Exchange 2007 servers, yo
 
 3. Exchange 2013
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.

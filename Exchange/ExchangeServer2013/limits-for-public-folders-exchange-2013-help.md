@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Limits for public folders
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Exchange Server 2013, we moved public folders from a traditional database architecture to a mailbox architecture. This shift allows public folders to benefit from things such as the resiliency of a Database Availability Group (DAG) and other mailbox enhancements made over the years. However, there are new limits and performance concerns that should be taken into account. In this document we provide some high level guidance for configuration options you have that could affect public folder performance and connectivity.

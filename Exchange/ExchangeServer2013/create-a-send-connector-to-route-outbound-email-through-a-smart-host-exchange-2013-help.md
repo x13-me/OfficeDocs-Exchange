@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a Send connector to route outbound email through a smart host
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In some situations you may want to route email through a third-party smart host, such as in an instance where you have a network appliance that you want to perform policy checks on outbound messages.
@@ -38,7 +36,7 @@ Interested in scenarios where this procedure is used? See the following topics:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to create a Send connector to route outbound email through a smart host
 

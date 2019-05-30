@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding management role scopes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Management role scopes* enable you to define the specific scope of impact or influence of a management role when a management role assignment is created. When you apply a scope, the role assignee assigned to the role can only modify the objects contained within that scope. A role assignee can be a management role group, management role, management role assignment policy, user, or universal security group (USG). For more information about management roles, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).

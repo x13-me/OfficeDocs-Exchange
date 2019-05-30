@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Planning for Unified Messaging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 When you plan your Unified Messaging (UM) deployment, there are many factors that you must consider to be able to successfully deploy UM. You must understand the different elements of Unified Messaging and each component and feature so that you can plan your Unified Messaging infrastructure and deployment appropriately. Allocating time to plan and work through these issues will help prevent problems when you deploy Unified Messaging in your organization.

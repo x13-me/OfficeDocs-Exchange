@@ -21,8 +21,6 @@ f1_keywords:
 
 # Header firewall
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, *header firewall* is a mechanism that removes specific header fields from inbound and outbound messages. There are two different types of header fields that are affected by header firewall:
@@ -66,8 +64,6 @@ Exchange uses two different ways to apply header firewall to organization X-head
   - Permissions are assigned to Send connectors or Receive connectors that can be used to preserve or remove specific types of headers in messages when the message travels through the connector.
 
   - Header firewall is automatically implemented for specific types of headers in messages during other types of message submission.
-
-Return to top
 
 ## How header firewall is applied to Receive connectors and Send connectors
 
@@ -198,8 +194,6 @@ The following table describes the default application of the header firewall per
 </tbody>
 </table>
 
-Return to top
-
 ## Header firewall on custom Receive connectors
 
 If you want to apply header firewall to messages in a custom Receive connector scenario, use any of the following methods:
@@ -227,8 +221,6 @@ For more information, see the following topics:
   - [Add-ADPermission](https://technet.microsoft.com/en-us/library/bb124403\(v=exchg.150\))
 
   - [Remove-ADPermission](https://technet.microsoft.com/en-us/library/aa996048\(v=exchg.150\))
-
-Return to top
 
 ## Header firewall for outbound messages on Send connectors
 
@@ -293,8 +285,6 @@ The following table describes the default application of the header firewall per
 </tbody>
 </table>
 
-Return to top
-
 ## Header firewall on custom Send connectors
 
 If you want to apply header firewall to messages in a custom Send connector scenario, use the any of the following methods:
@@ -318,8 +308,6 @@ For more information, see the following topics:
   - [Add-ADPermission](https://technet.microsoft.com/en-us/library/bb124403\(v=exchg.150\))
 
   - [Remove-ADPermission](https://technet.microsoft.com/en-us/library/aa996048\(v=exchg.150\))
-
-Return to top
 
 ## Header firewall for other message sources
 
@@ -368,8 +356,6 @@ Messages can enter the transport pipeline on a Mailbox server or an Edge Transpo
   - **DSN messages**: Organization X-headers, forest X-headers, and routing headers are removed from the original message or the original message header that's attached to the DSN message. For more information about DSN messages, see [DSNs and NDRs in Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
 
   - **Transport agent submission**: Organization X-headers, forest X-headers, and routing headers are preserved in messages that are submitted by transport agents.
-
-Return to top
 
 ## Organization X-headers and forest X-headers in Exchange
 
@@ -451,5 +437,3 @@ Organization X-headers start with **X-MS-Exchange-Organization-**. Forest X-head
 </tr>
 </tbody>
 </table>
-
-Return to top

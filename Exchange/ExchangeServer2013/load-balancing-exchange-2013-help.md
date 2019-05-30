@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Load balancing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Load balancing is a way to manage which of your servers receive traffic. Load balancing helps distribute incoming client connections over a variety of endpoints (for example, Client Access servers) to ensure that no one endpoint takes on a disproportional share of the load. Load balancing can also provide failover redundancy in case one or more endpoints fails. By using load balancing with Exchange Server 2013, you ensure that your users continue to receive Exchange service in case of a computer failure. Load balancing also enables your deployment to handle more traffic than one server can process while offering a single host name for your clients.

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Managing high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 After you build, validate, and deploy a Microsoft Exchange Server 2013 high availability or site resilience solution, the solution transitions from the deployment phase to the operational phase of the overall solution lifecycle. The operational phase consists of several tasks, and all tasks are related to one of the following areas: database availability groups (DAGs), mailbox database copies, performing proactive monitoring, and managing switchovers and failovers.
@@ -64,8 +62,6 @@ The operational management tasks associated with DAGs include:
 
 For detailed steps about how to create a DAG, see [Create a database availability group](create-a-database-availability-group-exchange-2013-help.md). For detailed steps about how to configure DAGs and DAG properties, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md). For more information about each of the preceding management tasks, and about managing DAGs in general, see [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md).
 
-Return to top
-
 ## Mailbox database copy management
 
 The operational management tasks associated with mailbox database copies include:
@@ -84,8 +80,6 @@ The operational management tasks associated with mailbox database copies include
 
 For detailed steps about how to add a mailbox database copy, see [Add a mailbox database copy](add-a-mailbox-database-copy-exchange-2013-help.md). For detailed steps about how to configure mailbox database copies, see [Configure mailbox database copy properties](configure-mailbox-database-copy-properties-exchange-2013-help.md). For more information about each of the preceding management tasks, and about managing mailbox database copies in general, see [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md). For detailed steps about how to remove a mailbox database copy, see [Remove a mailbox database copy](remove-a-mailbox-database-copy-exchange-2013-help.md).
 
-Return to top
-
 ## Proactive monitoring
 
 Making sure that your servers are operating reliably and that your database copies are healthy are key objectives for daily messaging operations. Exchange 2013 includes a number of features that can be used to perform a variety of health monitoring tasks for DAGs and mailbox database copies, including:
@@ -100,12 +94,8 @@ In addition to monitoring the health and status, it's also critical to monitor f
 
 For more detailed information about monitoring the health and status of DAGs and mailbox database copies, see [Monitoring database availability groups](monitoring-database-availability-groups-exchange-2013-help.md).
 
-Return to top
-
 ## Switchovers and failovers
 
 A *switchover* is a manual process in which an administrator manually activates one or more mailbox database copies. Switchovers, which can occur at the database or server level, are typically performed as part of preparation for maintenance activities. Switchover management involves performing database or server switchovers as needed. For example, if you need to perform maintenance on a Mailbox server in a DAG, you would first perform a server switchover so that the server didn't host any active mailbox database copies. For detailed steps about how to perform a database switchover, see [Activate a mailbox database copy](activate-a-mailbox-database-copy-exchange-2013-help.md). Switchovers can also be performed at the datacenter level.
 
 A *failover* is the automatic activation by the system of one or more database copies in reaction to a failure. For example, the loss of a disk drive in a RAID-less environment will trigger a database failover. The loss of the MAPI network or a power failure will trigger a server failover.
-
-Return to top

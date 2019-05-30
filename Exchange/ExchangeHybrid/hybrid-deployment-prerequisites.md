@@ -65,7 +65,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 - **Active Directory synchronization**: Deploy the Azure Active Directory Connect tool to enable Active Directory synchronization with your on-premises organization.
 
-    Learn more at [Azure AD Connect User Sign-on options](http://go.microsoft.com/fwlink/p/?LinkId=723514).
+    Learn more at [Azure AD Connect User Sign-on options](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin).
 
 - **Autodiscover DNS records**: Configure the Autodiscover public DNS records for your existing SMTP domains to point to an on-premises Exchange 2010/2013 Client Access server or Exchange 2016/2019 Mailbox Server.
 

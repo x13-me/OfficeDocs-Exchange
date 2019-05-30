@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange 2013 so that you can get your new organization up and running quickly.
@@ -48,8 +46,6 @@ There are two types of roles, administrative roles and end-user roles:
 Roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange Administration Center (EAC) and Exchange Management Shell use cmdlets to manage Exchange, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange management interfaces.
 
 Exchange 2013 includes approximately 86 roles that you can use to grant permissions. For a list of roles included with Exchange 2013, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
-
-Return to top
 
 ## Role groups and role assignment policies
 
@@ -152,8 +148,6 @@ If you work in a small organization that has only a few administrators, you migh
 
 If the built-in role groups in Exchange 2013 don't match the job function of your administrators, you can create role groups and add roles to them. For more information, see Work with Role Groups later in this topic.
 
-Return to top
-
 ## Role assignment policies
 
 Exchange 2013 provides role assignment policies so that you can control what settings your users can configure on their own mailboxes and on distribution groups they own. These settings include their display name, contact information, voice mail settings, and distribution group membership.
@@ -210,8 +204,6 @@ Existing role groups can also be modified. You can add and remove roles from exi
 > [!NOTE]
 > Although you can change which roles are assigned to built-in role groups, we recommend that you copy built-in role groups, modify the role group copy, and then add members to the role group copy.
 
-Return to top
-
 ## Work with role assignment policies
 
 To manage the permissions that you grant end users to manage their own mailbox in Exchange 2013, we recommend that you use the EAC. When you use the EAC to manage end-user permissions, you can add roles, remove roles, and create role assignment policies with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **role assignment policy** dialog box, shown in the following figure, to perform these tasks.
@@ -249,8 +241,6 @@ If you want to change which role assignment policy is the default, you must use 
 > <P><A href="manage-role-assignment-policies-exchange-2013-help.md">Manage role assignment policies</A></P>
 > <LI>
 > <P><A href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Change the assignment policy on a mailbox</A></P></LI></UL>
-
-Return to top
 
 ## Permissions documentation
 

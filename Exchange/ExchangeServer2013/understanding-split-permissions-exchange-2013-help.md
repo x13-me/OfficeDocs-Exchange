@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding split permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Organizations that separate the management of Microsoft Exchange Server 2013 objects and Active Directory objects use what's called a *split permissions* model. Split permissions enable organizations to assign specific permissions and related tasks to specific groups within the organization. This separation of work helps to maintain standards and workflows, and helps to control change in the organization.
@@ -66,8 +64,6 @@ It's important to understand that it doesn't matter what Active Directory permis
 > [!IMPORTANT]
 > Although the RBAC permissions model doesn't apply to the Active Directory Users and Computers management tool, Active Directory Users and Computers can't manage the Exchange configuration. So although a user may have access to modify some attributes on Active Directory objects, such as the display name of a user, the user must use the Exchange management tools, and therefore must be authorized by RBAC, to manage Exchange attributes.
 
-Return to top
-
 ## Shared permissions
 
 The shared permissions model is the default model for Exchange 2013. You don't need to change anything if this is the permissions model you want to use. This model doesn't separate the management of Exchange and Active Directory objects from within the Exchange management tools. It allows administrators using the Exchange management tools to create security principals in Active Directory.
@@ -116,8 +112,6 @@ For more information about how to add roles to role groups, users, or USGs, see 
 
 If you switched to a split permissions model and want to change back to a shared permissions model, see [Configure Exchange 2013 for shared permissions](configure-exchange-2013-for-shared-permissions-exchange-2013-help.md).
 
-Return to top
-
 ## Split permissions
 
 If your organization separates Exchange management and Active Directory management, you need to configure Exchange to support the split permissions model. When configured correctly, only the administrators who you want to create security principals, such as Active Directory administrators, will be able to do so and only Exchange administrators will be able to modify the Exchange attributes on existing security principals. This splitting of permissions also falls roughly along the lines of the domain and configuration partitions in Active Directory. Partitions are also called naming contexts. The domain partition stores the users, groups, and other objects for a specific domain. The configuration partition stores the forest-wide configuration information for the services that used Active Directory, such as Exchange. Data that's stored in the domain partition is typically managed by Active Directory administrators, although objects may contain Exchange-specific attributes that can be managed by Exchange administrators. Data that's stored in the configuration partition is managed by the administrators for each respective service that stores data in this partition. For Exchange, this is typically Exchange administrators.
@@ -136,8 +130,6 @@ If your organization chooses to use a split permissions model instead of shared 
 You're asked whether you want to enable Active Directory split permissions during Setup. If you choose to enable Active Directory split permissions, you can only change to shared permissions or RBAC split permissions by rerunning Setup and disabling Active Directory split permissions. This choice applies to all Exchange 2010 and Exchange 2013 servers in the organization.
 
 The following sections describe RBAC and Active Directory split permissions in more detail.
-
-Return to top
 
 ## RBAC split permissions
 
@@ -228,8 +220,6 @@ Additionally, the associated features in the EAC and Outlook Web App, such as th
 If you want the new role group to also be able to manage the Exchange attributes on the new object, the Mail Recipients role also needs to be assigned to the new role group.
 
 For more information about configuring a split permissions model, see [Configure Exchange 2013 for split permissions](configure-exchange-2013-for-split-permissions-exchange-2013-help.md).
-
-Return to top
 
 ## Active Directory split permissions
 
@@ -379,5 +369,3 @@ Additionally, the associated features in the Exchange Administration Center and 
 Exchange administrators will, however, be able to create and manage Exchange-specific objects, such as transport rules, and so on.
 
 For more information about configuring an Active Directory split permissions model, see [Configure Exchange 2013 for split permissions](configure-exchange-2013-for-split-permissions-exchange-2013-help.md).
-
-Return to top

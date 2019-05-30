@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Unsearchable items in Exchange eDiscovery
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 In In-Place eDiscovery for Exchange Server 2013 and Exchange Online, unsearchable items are mailbox items that can't be indexed by Exchange Search or that have been only partially indexed. An unsearchable item typically contains a file, which can't be indexed, attached to an email message. Here are a few reasons why files can't be indexed for search and are returned as an unsearchable item when attached to an email message:

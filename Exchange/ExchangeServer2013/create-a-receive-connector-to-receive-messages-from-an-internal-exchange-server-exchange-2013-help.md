@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Create a Receive connector to receive messages from an internal Exchange server
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You create a Receive connector of the **Internal** type when you want to receive mail from an Exchange server. Use this type of connector to control mail routing within your organization: for example, when you want to route mail from the Transport service on a Mailbox server to a specific Edge Transport server, or from one Mailbox server to another.
@@ -35,7 +33,7 @@ Interested in scenarios where this procedure is used? See the following topics:
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create a Receive Connector to Receive Messages from an Internal Exchange Server
 

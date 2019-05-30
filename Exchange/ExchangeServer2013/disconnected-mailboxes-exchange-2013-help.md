@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Disconnected mailboxes
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Each Microsoft Exchange mailbox consists of an Active Directory user account and the mailbox data stored in the Exchange mailbox database. All configuration data for a mailbox is stored in the Exchange attributes of the Active Directory user object. The mailbox database contains the mail data that's in the mailbox associated with the user account. The following figure shows the components of a mailbox.
@@ -95,8 +93,6 @@ As stated previously, Exchange retains disabled mailboxes in the mailbox databas
 
 For more information, see [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md).
 
-Return to top
-
 ## Working with disabled archive mailboxes
 
 Archive mailboxes become disconnected when they're disabled. Similar to a disabled primary mailbox, a disconnected archive mailbox can be connected by using the **Connect-Mailbox** cmdlet with the *Archive* parameter.
@@ -116,8 +112,6 @@ You can perform two operations on a disconnected archive mailbox:
 
     Like a disabled primary mailbox, you can permanently delete a disabled archive mailbox at any time by using the **Remove-StoreMailbox** cmdlet. For more information, see [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md).
 
-Return to top
-
 ## Working with soft-deleted mailboxes
 
 A soft-deleted mailbox is created when a mailbox is moved from one Exchange mailbox database to any other mailbox database. Exchange doesn't fully delete the mailbox from the source database after a move in case an error occurs during the move that causes the mailbox on the destination database to fail. You can always restore the source mailbox and try again. Exchange will retain the soft-deleted mailbox for the duration of the mailbox retention period.
@@ -133,8 +127,6 @@ The procedures for restoring and permanently deleting a soft-deleted mailbox are
   - [Restore a soft-deleted mailbox](restore-a-soft-deleted-mailbox-exchange-2013-help.md)
 
   - [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
-
-Return to top
 
 ## Summary of working with disconnected mailboxes
 
@@ -207,8 +199,6 @@ The following table summarizes the information about disconnected mailboxes, inc
 </tbody>
 </table>
 
-Return to top
-
 ## Disconnected mailbox documentation
 
 The following table contains links to topics that will help you manage disconnected mailboxes. This includes managing disconnected user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes.
@@ -255,5 +245,3 @@ The following table contains links to topics that will help you manage disconnec
 </tr>
 </tbody>
 </table>
-
-Return to top

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 Client Access server configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 After you've installed the Exchange 2013 Client Access server, there are a variety of configuration tasks that you can perform. Although the Client Access server in Exchange 2013 doesn't handle processing for the client protocols, several settings need to be applied to the Client Access server, including virtual directory settings and certificate settings.

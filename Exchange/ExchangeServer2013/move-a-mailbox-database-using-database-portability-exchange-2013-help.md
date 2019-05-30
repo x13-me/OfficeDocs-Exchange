@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Move a mailbox database using database portability
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use database portability to move a Microsoft Exchange Server 2013 mailbox database between Exchange 2013 Mailbox servers in the same organization. This can help reduce overall recovery times for some failure scenarios. To learn more, see [Database portability](database-portability-exchange-2013-help.md).
@@ -29,7 +27,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
   - You can't use the EAC to move user mailboxes to a recovered or dial tone database using database portability.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to move user mailboxes to a recovered or dial tone database using database portability
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 storage configuration options
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2013 is an important part of your Mailbox server storage design solution.
@@ -75,8 +73,6 @@ A network-attached storage (NAS) unit is a self-contained computer connected to 
 All storage used by Exchange for storage of Exchange data must be block-level storage because Exchange 2013 doesn't support the use of NAS volumes, other than in the SMB 3.0 scenario outlined in the topic [Exchange 2013 virtualization](exchange-2013-virtualization-exchange-2013-help.md). Also, in a virtualized environment, NAS storage that's presented to the guest as block-level storage via the hypervisor isn't supported.
 
 Using storage tiers is not recommended, as it could adversely affect system performance. For this reason, do not allow the storage controller to automatically move the most accessed files to "faster" storage.
-
-Return to top
 
 ## Physical disk types
 
@@ -336,8 +332,6 @@ From a performance perspective, using large, slower disks for Exchange storage i
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Best practices for supported storage configurations
 
@@ -741,5 +735,3 @@ The following table provides guidance on volume configurations.
 </tr>
 </tbody>
 </table>
-
-Return to top

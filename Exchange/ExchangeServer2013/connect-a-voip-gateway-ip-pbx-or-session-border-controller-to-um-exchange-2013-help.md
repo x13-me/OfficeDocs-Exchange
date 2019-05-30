@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Connect a VoIP gateway, IP PBX, or session border controller to UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You must configure the Voice over IP (VoIP) gateways and IP Private Branch eXchanges (PBXs) correctly when you deploy Unified Messaging (UM) for your organization. If you're deploying UM in a hybrid environment, you'll also need to correctly configure your session border controllers (SBCs). To do this, you need to configure the interface or interfaces of the VoIP gateways, IP PBXs, and SBCs to communicate with Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service.

@@ -36,9 +36,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to activate a lagged mailbox database copy to a specific point in time
 
@@ -66,11 +64,8 @@ Looking for other information related to lagged mailbox database copies? Check o
    Eseutil.exe /r eXX /a
    ```
 
-    > [!NOTE]
-    > In the preceding example, e<EM>XX</EM> is the log generation prefix for the database (for example, E00, E01, E02, and so on).
-
-    > [!IMPORTANT]
-    > This step may take a considerable amount of time, depending on several factors, such as the length of the replay lag time, the number of log files generated during that period, and the speed at which your hardware can replay those logs into the database being recovered.
+   > [!IMPORTANT]
+   > In the preceding example, e_XX_ is the log generation prefix for the database (for example, E00, E01, E02, and so on) <br/><br/> This step may take a considerable amount of time, depending on several factors, such as the length of the replay lag time, the number of log files generated during that period, and the speed at which your hardware can replay those logs into the database being recovered..
 
 6. After log replay is finished, the database is in a clean shutdown state and can be copied and used for recovery purposes.
 
@@ -91,6 +86,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
        ```powershell
        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
        ```
+
     2. Optionally (to preserve a lagged copy), make a copy of the database copy and its log files.
 
         > [!NOTE]

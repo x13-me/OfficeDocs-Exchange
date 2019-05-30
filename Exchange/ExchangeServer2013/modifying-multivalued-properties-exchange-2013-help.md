@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Modifying multivalued properties
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 A multivalued property is a property that can contain more than one value. For example, the **BlockedRecipients** property on the **RecipientFilterConfig** object can accept multiple recipient addresses as in the following examples:

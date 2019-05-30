@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Upgrade from Exchange 2007 to Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2010 and Exchange Server 2007 have multiple server roles: Client Access, Mailbox, Hub Transport, Unified Messaging, and Edge Transport. With Exchange Server 2013, we reduced the number of server roles from five to three: Client Access, Mailbox, and Edge Transport. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. (For more details about the changes, see "Exchange 2013 architecture" in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).)

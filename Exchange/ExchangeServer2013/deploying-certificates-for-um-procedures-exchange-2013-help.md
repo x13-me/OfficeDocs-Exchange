@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Deploying certificates for UM procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Create certificates for UM](create-certificates-for-um-exchange-2013-help.md)

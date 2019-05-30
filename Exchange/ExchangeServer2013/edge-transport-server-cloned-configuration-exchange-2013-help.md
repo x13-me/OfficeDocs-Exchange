@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Edge Transport server cloned configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Edge Transport servers store their configuration information in Active Directory Lightweight Directory Services (AD LDS). You can install more than one Edge Transport server in the perimeter network and use a DNS round robin to help balance network traffic among the Edge Transport servers. Round robin is a simple mechanism used by DNS servers to share and distribute loads for network resources.
@@ -98,8 +96,6 @@ The following information is exported from the source server and stored in the i
 
       - Attachment filter entries.
 
-Return to top
-
 ## Step 2: Validate the configuration on the target server
 
 The target server is an Exchange 2013 server that has a clean installation of the Edge Transport server role. First, run the ImportEdgeConfig.ps1 script (located at %ExchangeInsallPath%Scripts) on the target server to validate the existing information in the intermediate XML file and to create the answer file. The answer file specifies the server-specific information used when you import the configuration onto the target server. The answer file contains entries for each source server setting that isn't valid for the target server. You will need to modify these settings so that they're valid for the target server. If all settings are valid, the answer file contains no entries. The intermediate XML file can be used for different target servers. The answer file is specific to a target server.
@@ -119,8 +115,6 @@ You will need to manually modify the answer file to provide the following inform
   - For each Send connector entry, fill in the source IP address. If this field is left blank, an error will occur in the import configuration step.
 
   - For each Receive connector entry, fill in the local network bindings. If the local network bindings are left blank, an error will occur when you try to import the configuration onto the target server.
-
-Return to top
 
 ## Step 3: Import the configuration onto the target server
 
@@ -154,8 +148,6 @@ Import configuration modifies the following target server configuration settings
       - Address rewrite entries
 
       - Attachment filter entries
-
-Return to top
 
 ## Transport configuration information
 
@@ -261,5 +253,3 @@ The attributes in the following table are associated with the transport configur
 
 > [!NOTE]
 > If the Edge Transport server is later subscribed to the Exchange organization, the value of the <STRONG>InternalSMTPServers</STRONG> attribute will be overwritten during the EdgeSync process. For more information, see <A href="edge-subscriptions-exchange-2013-help.md">Edge Subscriptions</A>.
-
-Return to top

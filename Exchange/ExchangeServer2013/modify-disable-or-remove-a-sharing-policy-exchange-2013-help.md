@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Modify, disable, or remove a sharing policy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Sharing policies allow individual users in your Exchange organization to share calendar free/busy information with other federated Exchange organizations, non-federated Exchange organizations, and individual Internet users. During the course of normal operations, you may want to change some sharing policy properties, such as modifying sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
@@ -33,9 +31,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to modify a sharing policy
 

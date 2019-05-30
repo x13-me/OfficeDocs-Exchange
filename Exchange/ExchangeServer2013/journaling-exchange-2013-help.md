@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Journaling
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. When planning for messaging retention and compliance, it's important to understand journaling, how it fits in your organization's compliance policies, and how Microsoft Exchange Server 2013 helps you secure journaled messages.
@@ -68,8 +66,6 @@ The following list shows some of the more well-known U.S. and international regu
 
   - Japan's Personal Information Protection Act
 
-Return to top
-
 ## Journaling agent
 
 In an Exchange 2013 organization, all email traffic is routed by Mailbox servers. All messages traverse at least one server running the Transport service in their lifetime. The *Journaling agent* is a compliance-focused transport agent that processes messages on Mailbox servers. It fires on the **OnSubmittedMessage** and **OnRoutedMessage** transport events.
@@ -84,8 +80,6 @@ Exchange 2013 provides the following journaling options:
   - **Premium journaling**: Premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
 
 When you enable standard journaling on a mailbox database, this information is saved in Active Directory and is read by the Journaling agent. Similarly, journal rules configured with premium journaling are also saved in Active Directory and applied by the Journaling agent. For more information about how to configure standard and premium journaling, see [Manage journaling](https://docs.microsoft.com/en-us/exchange/security-and-compliance/journaling/manage-journaling).
-
-Return to top
 
 ## Journal rules
 
@@ -153,8 +147,6 @@ When you configure an alternate journaling mailbox, you should use the same crit
 > [!IMPORTANT]
 > The alternate journaling mailbox should be treated as a special dedicated mailbox. Any messages addressed directly to the alternate journaling mailbox aren't journaled.
 
-Return to top
-
 ## Journal rule replication
 
 Journal rules are stored in Active Directory and applied by all Mailbox servers in the Exchange 2013 organization. When you create, modify, or remove a journal rule, the change is replicated to all Active Directory servers in the organization. All Mailbox servers in the organization then retrieve the updated journal rule configuration from the Active Directory servers and apply the new or modified journal rules.
@@ -167,8 +159,6 @@ By replicating all the journal rules across the organization, Exchange 2013 enab
 > [!IMPORTANT]
 > Each Mailbox server caches distribution group membership to avoid repeated round trips to Active Directory. The expanded groups cache reduces the number of requests that each Mailbox server must make to an Active Directory domain controller. By default, entries in the expanded groups cache expire in four hours. Therefore, if you specify a distribution group as the journal recipient, changes to distribution group membership may not be applied to journal rules until the expanded groups cache is updated. To force an immediate update of the recipient cache, you must stop and start the Microsoft Exchange Transport service. You must do this for each Mailbox server where you want to forcibly update the recipient cache.
 
-Return to top
-
 ## Journal reports
 
 A *journal report* is the message that the Journaling agent generates when a message matches a journal rule and is to be submitted to the journaling mailbox. The original message that matches the journal rule is included unaltered as an attachment to the journal report. The body of a journal report contains information from the original message such as the sender email address, message subject, message-ID, and recipient email addresses. This is also referred to as envelope journaling, and is the only journaling method supported by Exchange 2013.
@@ -177,16 +167,12 @@ A *journal report* is the message that the Journaling agent generates when a mes
 
 When implementing journaling in an Exchange 2013 environment, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Exchange 2013, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
 
-Return to top
-
 ## Interoperability with Exchange 2007
 
 There isn't much difference between journaling functionality in Exchange 2013, Exchange 2010, and Exchange 2007. However, in Exchange 2010 and later, Setup creates a separate container in Active Directory to store journal rules. When you set up the first Exchange 2010 or later server in an Exchange 2007 organization, Setup creates a copy of the existing journal rules in Exchange 2007 and stores them in the new container. When Setup completes, the journal rules in both versions of Exchange are consistent.
 
 After Setup, if you change the journal rule configuration on Exchange 2010 (or later), you must make the same change on Exchange 2007 servers to make sure they're consistent. Similarly, changes made to Journal rules on Exchange 2007 must be also be made in Exchange 2010 or later. You can also export journal rules from Exchange 2007 and import them to Exchange 2013.
 
-Return to top
-
 ## Troubleshooting
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).. If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?linkid=331674).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?linkid=331674).

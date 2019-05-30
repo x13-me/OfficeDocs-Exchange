@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Identity
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The *Identity* parameter is a special parameter that you can use with most cmdlets. The *Identity* parameter gives you access to the unique identifiers that refer to a specific object in Microsoft Exchange Server 2013. This capability lets you perform actions on a specific Exchange 2013 object.
@@ -47,8 +45,6 @@ Like all objects in Exchange 2013, this Receive connector can also be referred t
 Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
 ```
 
-Return to top
-
 ## Wildcard characters in Identity
 
 Some **Get** cmdlets can accept a wildcard character (`*`) as part of the value you submit to *Identity* when you run the cmdlet. By using a wildcard with the *Identity* parameter, you can specify a partial name and retrieve a list of objects that match that partial name. You can place a wildcard character at the beginning or the end of the *Identity* value, but you can't place the character in the middle of a string. For example, the commands `Get-Mailbox David*` and `Get-Mailbox *anders*` are valid, but `Get-Mailbox Reb*ca` isn't a valid command.
@@ -60,8 +56,6 @@ When an *Identity* parameter has a syntax of `<parent>\<child>`, some cmdlets en
 Some, but not all, cmdlets allow you to specify just the child portion of the Identity parameter when you run a command. When you do this, the cmdlets default to the current parent object being accessed. For example, two receive connectors named "Contoso Receive Connector" exist on both MBX1 and MBX2. If you run the command `Get-ReceiveConnector "Contoso Receive Connector"` on MBX2, only the receive connector on the server MBX2 is returned.
 
 The specific behavior of the Identity parameter and wildcard characters is dependent on the cmdlet that's being run. For more information about the cmdlet you're running, see the feature-specific content for that cmdlet.
-
-Return to top
 
 ## Examples of the Identity parameter
 
@@ -112,5 +106,3 @@ To view all the management roles where **Set-Mailbox** is one of the role entrie
 With role entries you can use the wildcard character in a variety of ways to query Exchange 2013 for the information you're interested in.
 
 For more information about management roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
-
-Return to top

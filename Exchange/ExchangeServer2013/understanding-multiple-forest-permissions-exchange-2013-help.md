@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Understanding multiple-forest permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Many organizations deploy multiple forests to create security boundaries within their organizations. Using multiple forests helps administrators to define these security boundaries to better match their requirements, whether that's ensuring the fewest number of people have access to resources, or segmenting divisions within an organization.
@@ -167,8 +165,6 @@ When a role assignment policy is assigned to a linked mailbox, the user in the a
 **Users in an accounts forest associated with linked mailboxes that are each assigned a role assignment policy**
 
 ![Role group and assignment policy relationships](images/Dd298099.785b9b35-4292-43ce-917b-117d0174742e(EXCHG.150).gif "Role group and assignment policy relationships")
-
-Return to top
 
 ## Configure cross-boundary permissions
 

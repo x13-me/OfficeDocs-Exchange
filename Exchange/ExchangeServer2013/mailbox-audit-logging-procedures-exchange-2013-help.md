@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mailbox audit logging procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)

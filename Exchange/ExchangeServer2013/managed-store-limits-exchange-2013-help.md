@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Managed Store Limits
 
- 
-
 **Summary:** About Managed Store connection limits and how to configure them.
 
 In Microsoft Exchange Server 2013, connection and usage limits have been placed on the Exchange Managed Store to prevent a single application or a single user from using all the available connections to the Managed Store. If a single user or application is allowed to use all of the connections, other users or applications cannot be able to access the Managed Store, which could result in downtime.
@@ -36,8 +34,6 @@ Knowledge of the following terms will help you understand the types of connectio
     Threads represent concurrently executing requests to the Managed Store. For example, if a user opens a folder in Outlook, Outlook executes a request to the Managed Store on behalf of the user. That execution of the request is a single thread.
 
     In Exchange Server 2013, there are no longer thread limits based on client type. Instead, for all clients, the maximum number of threads **per mailbox database** is 50. The exception is the Availability service, which has a maximum limit of 16 per user.
-
-Return to top
 
 ## Session Limits
 
@@ -194,8 +190,6 @@ You can modify the default session limits.
 
 6. In the **Value** **data** box, type the number of objects to which you want to limit this entry, and then click **OK**. Use the preceding table to view the default settings.
 
-Return to top
-
 ## Open Item Limits
 
 Open item limits are limits placed on the number of items that can be opened by a single mailbox in a single session. However, a user can have multiple sessions opened simultaneously. For example, if a user has two sessions opened, the user could open 1,000 folders.
@@ -318,8 +312,6 @@ You can limit the maximum number of resources that a MAPI client can use simulta
 
 9. Restart the Microsoft Exchange Information Store service.
 
-Return to top
-
 ## Item Size Limits
 
 Item size limits are the limits placed on items within a user's mailbox. They are configurable by using the *MaxSendSize* and *MaxReceiveSize* parameters on the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet.
@@ -350,5 +342,3 @@ Item size limits are the limits placed on items within a user's mailbox. They ar
 </tr>
 </tbody>
 </table>
-
-Return to top

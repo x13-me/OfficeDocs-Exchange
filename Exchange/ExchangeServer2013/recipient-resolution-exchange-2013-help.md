@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Recipient resolution
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Recipient resolution* is the process of expanding and resolving all the recipients in a message. The act of resolving the recipients matches a recipient to the corresponding Active Directory object in the Microsoft Exchange organization. The act of expanding the recipients expands all distribution groups into a list of individual recipients. Recipient resolution allows message limits and alternative recipients to be applied correctly to each recipient.
@@ -154,8 +152,6 @@ The size that's used for the sender message size restriction is the value of the
 The sender recipient limit is only enforced in the Transport service on the first Mailbox server that processes the message. The original, unexpanded message envelope recipient count is compared to the sender recipient limit. The original, unexpanded message envelope recipient count is used to avoid the partial message delivery problems that occured in Microsoft Exchange Server 2003 when nested distribution lists used remote expansion servers.
 
 The message sender and all recipients are marked as resolved by stamping an extended property in the message. This extended property allows the message to bypass top-level resolution if the message must go through recipient resolution again. A message may have to go through recipient resolution again because the Microsoft Exchange Transport service restarted.
-
-Return to top
 
 ## Expansion
 
@@ -316,8 +312,6 @@ Certain types of messages are blocked when they are sent from the Exchange organ
 
 For more information, see [Remote domains](remote-domains-exchange-2013-help.md).
 
-Return to top
-
 ## Bifurcation and controlling recipient expansion
 
 Because the complete list of message recipients is expanded and resolved by recipient resolution, there are occasions when different copies of the same message must be created. These occasions are described by the following scenarios:
@@ -346,8 +340,6 @@ When the number of expanded recipients is too large, the categorizer splits the 
 
 > [!WARNING]
 > We recommend that you don't modify the value of the <EM>ExpansionSizeLimit</EM> key on an Exchange transport server in a production environment.
-
-Return to top
 
 ## Recipient resolution diagnostics
 

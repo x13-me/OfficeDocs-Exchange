@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Domains
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Domains represent SMTP namespaces for which email directories and mailboxes are set up. By configuring the domains that interact with your Microsoft Exchange Server 2013 organization, you can configure how email to and from various domains is processed by Exchange.

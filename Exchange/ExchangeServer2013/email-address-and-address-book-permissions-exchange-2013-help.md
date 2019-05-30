@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Email address and address book permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to configure email address and address book features vary depending on the procedure being performed or the cmdlet you want to run. For more information about email addresses and address books, see [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md).

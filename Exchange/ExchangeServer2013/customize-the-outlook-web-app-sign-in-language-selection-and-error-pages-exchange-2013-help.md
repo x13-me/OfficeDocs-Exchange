@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Customize the Outlook Web App sign-In, language selection, and error pages
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic explains how to customize the color and images of the sign-in, language selection, and error pages for Outlook Web App.
@@ -38,9 +36,7 @@ For information about creating a custom theme, see [Create a theme for Outlook W
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Customize the color of the sign-in page
 

@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Role management permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 The permissions required to perform tasks to configure management roles vary depending on the procedure being performed or the cmdlet you want to run. For more information about management roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).

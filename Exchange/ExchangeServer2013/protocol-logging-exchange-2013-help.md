@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Protocol logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Protocol logging records the SMTP conversations that occur between messaging servers as part of message delivery. These SMTP conversations occur on Send connectors and Receive connectors that exist in the Front End Transport service on Client Access servers, the Transport service on Mailbox servers, and the Mailbox Transport service on Mailbox servers. You can use protocol logging to diagnose mail flow problems.
@@ -94,8 +92,6 @@ The protocol log files are text files that contain data in the comma-separated v
 
   - **\#Fields**: Comma-delimited field names used in the protocol log files.
 
-Return to top
-
 ## Information written to the protocol log
 
 The protocol log stores each SMTP protocol event on a single line in the protocol log. The information stored on each line is organized by fields. These fields are separated by commas. The following table describes the fields used to classify each protocol.
@@ -161,5 +157,3 @@ The protocol log stores each SMTP protocol event on a single line in the protoco
 </table>
 
 A single SMTP conversation that represents the sending or receiving of a single email message generates multiple SMTP events. These SMTP events cause multiple lines to be written to the protocol log. Multiple SMTP conversations that represent the sending or receiving of multiple email messages can occur at the same time. This creates protocol log entries from different SMTP conversations that are interspersed. You can use the session-id and sequence-number fields to sort the protocol log entries by SMTP conversation.
-
-Return to top
