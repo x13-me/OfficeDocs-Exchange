@@ -383,8 +383,6 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-> [!NOTE]
-> If for any reason the migration batch file does not finalize (<STRONG>PublicFolderMigrationComplete</STRONG> displays <STRONG>False</STRONG>), on the legacy server, restart the Information Store (IS).
 
 For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/en-us/library/aa997443\(v=exchg.150\)).
 
@@ -405,6 +403,10 @@ Complete-MigrationBatch PublicFolderMigration
 ```
 
 Or, in EAC, you can complete the migration by clicking **Complete this migration batch**.
+
+
+> [!NOTE]
+> If for any reason the migration batch file does not finalize (<STRONG>PublicFolderMigrationComplete</STRONG> displays <STRONG>False</STRONG>), on the legacy server, restart the Information Store (IS).
 
 When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange 2013. If the final synchronization is successful, the public folders on the Exchange 2013 server will be unlocked and the status of the migration batch will change to **Completing**, and then **Completed**. It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.
 
