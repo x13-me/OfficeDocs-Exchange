@@ -90,21 +90,15 @@ For truncation to occur on lagged database copies, the following must be true:
 
   - The log file is deleted on the active copy of the database.
 
-Return to top
-
 ## Supported Backup Technologies
 
 Exchange 2013 supports only Exchange-aware, VSS-based backups. Exchange 2013 includes a plug-in for Windows Server Backup that enables you to make and restore VSS-based backups of Exchange data. To back up and restore Exchange 2013, you must use an Exchange-aware application that supports the VSS writer for Exchange 2013, such as Windows Server Backup (with the VSS plug-in), Microsoft System Center 2012 - Data Protection Manager, or a third-party Exchange-aware VSS-based application.
 
 For detailed steps about how to back up and restore Exchange data using Windows Server Backup, see [Using Windows Server Backup to back up and restore Exchange data](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md).
 
-Return to top
-
 ## Exchange 2013 VSS Writer
 
 Exchange 2013 introduces a significant change from the VSS writer architecture used in Exchange 2010 and Exchange 2007. These earlier versions of Exchange included two VSS writers: one inside the Microsoft Exchange Information Store service (store.exe) and one inside the Microsoft Exchange Replication service (msexchangerepl.exe). In Exchange, the VSS writer functionality previously found in the Microsoft Exchange Information Store service has been moved to the Microsoft Exchange Replication service. The new writer, which is named Microsoft Exchange Writer, is now used by Exchange-aware VSS-based applications to back up active and passive database copies, and to restore backed up database copies. Although the new writer runs in the Microsoft Exchange Replication service, it requires the Microsoft Exchange Information Store service to be running for the writer to be advertised. As a result, both services are required to back up or restore Exchange databases.
-
-Return to top
 
 ## Exchange Server Recovery
 
@@ -112,13 +106,9 @@ Almost all of the configuration settings for Mailbox and Client Access servers a
 
 For detailed steps about how to perform a server recovery of a lost Exchange 2013 server, see [Recover an Exchange Server](recover-an-exchange-server-exchange-2013-help.md). For detailed steps about how to recover a lost server that's a member of a database availability group (DAG), see [Recover a database availability group member server](recover-a-database-availability-group-member-server-exchange-2013-help.md).
 
-Return to top
-
 ## Unified Contact Store Recovery
 
 When Microsoft Lync Server 2013 is used in an Exchange 2013 environment, the user's Lync contact information is stored in a special contact folder in the user's mailbox. This is referred to as the unified contact store (UCS). If you restore a UCS-migrated mailbox, the instant messaging contact list for the target user may be affected. If the user was migrated after the last backup, restoring the mailbox will result in a complete loss of the user's contact list. In less severe cases, modifications to the contact list made by the user since the last backup will be lost. To mitigate this potential data loss, ensure the user is migrated back to the instant messaging server prior to restoring the mailbox.
-
-Return to top
 
 ## Recovery Database
 
@@ -128,15 +118,11 @@ Using a recovery database for a Mailbox database from any previous version of Ex
 
 For more information, see [Recovery databases](recovery-databases-exchange-2013-help.md). For detailed steps about how to create a recovery database, see [Create a recovery database](create-a-recovery-database-exchange-2013-help.md). For detailed steps about how to use a recovery database, see [Restore data using a recovery database](restore-data-using-a-recovery-database-exchange-2013-help.md).
 
-Return to top
-
 ## Database Portability
 
 Database portability is a feature that enables an Exchange 2013 mailbox database to be moved to and mounted on any other Exchange 2013 Mailbox server in the same organization. By using database portability, reliability is improved by removing several error-prone, manual steps from the recovery processes. In addition, database portability reduces the overall recovery times for various failure scenarios.
 
 For more information, see [Database portability](database-portability-exchange-2013-help.md). For detailed steps to use database portability, see [Move a mailbox database using database portability](move-a-mailbox-database-using-database-portability-exchange-2013-help.md).
-
-Return to top
 
 ## Dial Tone Portability
 
@@ -145,5 +131,3 @@ Dial tone portability is a feature that provides a limited business continuity s
 The process for using dial tone portability is called a *dial tone recovery*. A dial tone recovery involves creating an empty database on a Mailbox server to replace a failed database. This empty database, referred to as a *dial tone database*, allows users to send and receive e-mail while the failed database is recovered. After the failed database is recovered, the dial done database and the recovered database are swapped, and then the data from the dial tone database is merged into the recovered database.
 
 For more information, see [Dial tone portability](dial-tone-portability-exchange-2013-help.md). For detailed steps to perform a dial tone recovery, see [Perform a dial tone recovery](perform-a-dial-tone-recovery-exchange-2013-help.md).
-
-Return to top

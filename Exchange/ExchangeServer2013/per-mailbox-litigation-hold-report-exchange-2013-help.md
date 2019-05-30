@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Run a per-mailbox litigation hold report in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 If your organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see the "Mailbox Features" section in [Manage user mailboxes](manage-user-mailboxes-exchange-2013-help.md).
 

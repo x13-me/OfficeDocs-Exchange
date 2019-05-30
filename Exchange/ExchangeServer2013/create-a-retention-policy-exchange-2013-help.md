@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create a Retention Policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Exchange Server 2013, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 

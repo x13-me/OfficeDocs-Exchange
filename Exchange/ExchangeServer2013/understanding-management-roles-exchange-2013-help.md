@@ -82,8 +82,6 @@ For more information about assigning management roles, see the following topics:
 
 For more information about management role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
-Return to top
-
 ## Unscoped top-level management roles
 
 Unscoped top-level management roles are a special type of management role that enables you to grant access to custom scripts and non-Exchange cmdlets to users using RBAC. Regular management roles provide access only to Exchange cmdlets. If you need to provide access to non-Exchange cmdlets that run on an Exchange server, or if you need to publish a script that can be run by your users, you need to add them to an unscoped role. They're called a top-level role because if an unscoped role is created without deriving it from a parent role, it has no parent and is a peer of the built-in management roles provided with Exchange 2013. To indicate that you want to create an unscoped top-level role entry, you need to use the *UnscopedTopLevel* switch with the **New-ManagementRole** cmdlet.
@@ -97,8 +95,6 @@ Although Exchange cmdlets can't be added as a management role entry on an unscop
 The role entries that you add to an unscoped role must also be designated as an unscoped top-level role entry. For more information about unscoped top-level role entries, see Unscoped Top-Level Role Entries later in this topic.
 
 The Organization Management role group doesn't, by default, have permissions to create or manage unscoped role groups. This is to prevent unscoped role groups from mistakenly being created or modified. The Organization Management role group can delegate the Unscoped Role Management management role to itself and other role assignees. For more information about how to create an unscoped top-level management role, see [Create an unscoped role](create-an-unscoped-role-exchange-2013-help.md).
-
-Return to top
 
 ## Custom management roles
 
@@ -118,8 +114,6 @@ Creating custom management roles requires multiple steps and is an advanced task
 
 For more information about how to create a management role, see [Create a role](create-a-role-exchange-2013-help.md).
 
-Return to top
-
 ## Management role hierarchy
 
 Management roles exist in a parent and child hierarchy. At the top of the hierarchy are the built-in management roles provided in Exchange 2013 by default. When you create a role, a copy of a parent role is made. The new role is a child of the role you copied from. You can then customize the new role to suit the needs of the administrators or users you want to assign it to.
@@ -138,8 +132,6 @@ The Seattle Recipient Administrators custom role is a child of the Mail Recipien
 
 All of the custom roles follow the same pattern as the roles discussed previously. For more information about how access to cmdlets is controlled on management roles, see Management Role Entries next in this topic.
 
-Return to top
-
 ## Management role entries
 
 Every management role, whether it's a custom Exchange role or an unscoped role, must have at least one management role entry. An entry consists of a single cmdlet and its parameters, a script, or a special permission that you want to make available. If a cmdlet or script doesn't appear as an entry on a management role, that cmdlet or script isn't accessible via that role. Likewise, if a parameter doesn't exist in an entry, the parameter on that cmdlet or script isn't accessible via that role.
@@ -155,8 +147,6 @@ For more information about managing role entries, see [Management roles and role
 As mentioned previously, a management role entry, including the cmdlet and its parameters, must exist in the immediate parent role to add the entry to the child role. For example, if the parent role doesn't have an entry for **New-Mailbox**, the child role can't be assigned that cmdlet. Additionally, if **Set-Mailbox** is on the parent role but the *Database* parameter has been removed from the entry, the *Database* parameter on the **Set-Mailbox** cmdlet can't be added to the entry on the child role.
 
 Because you can't add management role entries to child roles if the entries don't appear in parent roles, and because the role is based on a specific role type, you must carefully choose the parent role to copy when you want to create a customized role.
-
-Return to top
 
 ## Management role entry names
 
@@ -212,8 +202,6 @@ Scripts that you add to an unscoped role entry must reside in the Exchange 2013 
 Non-Exchange cmdlets that you add to an unscoped role entry must be installed on every Exchange 2013 server where administrators and users connect using the Shell and want to use the cmdlets. If you try to add an unscoped role entry based on a non-Exchange cmdlet that isn't installed on the Exchange 2013 server you're using to add the role entry, an error occurs. When you add a non-Exchange cmdlet, you must specify the Windows PowerShell snap-in name that contains the non-Exchange cmdlet.
 
 For more information about how to add an unscoped management role entry, see [Add a role entry to a role](add-a-role-entry-to-a-role-exchange-2013-help.md).
-
-Return to top
 
 ## Management role types
 
@@ -773,8 +761,6 @@ The following table lists all of the user-focused management role types and thei
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## For more information
 

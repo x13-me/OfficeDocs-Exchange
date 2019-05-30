@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Search for and delete messages in Exchange Server 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Administrators can use the **Search-Mailbox** cmdlet to search user mailboxes and then delete messages from a mailbox.
 

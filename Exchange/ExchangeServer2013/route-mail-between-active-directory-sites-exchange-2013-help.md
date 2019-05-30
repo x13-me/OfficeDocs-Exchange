@@ -82,8 +82,6 @@ If a server named Mailbox01 has the IP address of 192.168.1.1, it's a member of 
 
 A change in site membership can also occur if you change the association of subnets to Active Directory sites. For example, if you remove the subnet 192.168.3.0 from association with Site B and associate it with Site A, the site membership of a server that has the IP address of 192.168.3.1 also changes to Site A. Whenever a change in site membership occurs, Exchange must update its configuration data so that the change is considered when Exchange makes routing decisions. Some latency occurs between the time that a change in an Active Directory site membership occurs and the topology change is fully propagated.
 
-Return to top
-
 ## IP site links
 
 Site links are logical paths between Active Directory sites. A site link object represents a set of sites that can communicate at a uniform cost. Site links don't correspond to the actual path taken by network packets on the physical network. However, the cost assigned to the site link by the administrator typically relates to the underlying network reliability, speed, and available bandwidth. For example, the Active Directory administrator would assign a lower cost to a network connection with a speed of 100 megabits per second (Mbps) than to a network connection with a speed of 10 Mbps.
@@ -114,8 +112,6 @@ The default cost for a site link is 100. A valid site link cost can be any numbe
 
 For more information about Active Directory site configuration, see [Designing the Site Topology](https://go.microsoft.com/fwlink/p/?linkid=33551).
 
-Return to top
-
 ## Controlling IP site link costs
 
 Active Directory IP site links costs are based on relative network speed compared to all network connections in the WAN and are designed to produce a reliable and efficient replication topology. Therefore, in most cases, the existing IP site link costs should work well for Exchange message routing. However, if after documenting the existing Active Directory site and IP site link topology, you verify that the Active Directory IP site link costs and traffic flow patterns aren't optimal for Exchange, you can make adjustments to the costs evaluated by Exchange. Changing the cost assigned to the IP site link by using Active Directory tools would impact the entire environment. Instead, use the **Set-AdSiteLink** cmdlet in the Exchange Management Shell to assign an Exchange-specific cost to the IP site link. For example, to configure the Exchange-specific cost value of 25 on the IP site link named SITELINKAB, run the following command in the Shell: `Set-AdSiteLink SITELINKAB -ExchangeCost 25`.
@@ -131,8 +127,6 @@ Adjusting IP site link costs can be useful when the message routing topology has
 In the preceding figure, the network connection between Site C and Site D is a low bandwidth connection that's only used for Active Directory replication and shouldn't be used for message routing. However, the Active Directory IP site link costs cause that link to be included in the least-cost routing path from any other Active Directory site to Site D. Therefore, messages are delivered to the Site D queue in Site C. The Exchange administrator prefers that the least-cost routing path include Site B instead so that if Site D is unavailable, the messages will queue at Site B. Configuring a high Exchange cost on the IP site link between Site C and Site D prevents that IP site link from being included in the least-cost routing path to Site D.
 
 Exchange provides support for configuration of a maximum message size limit on an Active Directory IP site link. By default, Exchange doesn't impose a maximum message size limit on messages that are relayed between Exchange servers in different Active Directory sites. If you use the **Set-AdSiteLink** cmdlet to configure a maximum message size on an Active Directory IP site link, routing generates a non-delivery report (NDR) for any message that has a size larger than the maximum message size limit that's configured on any Active Directory site link in the least-cost routing path. This configuration is useful for restricting the size of messages that are sent to remote Active Directory sites that must communicate over low-bandwidth connections. For more information, see [Message size limits](message-size-limits-exchange-2013-help.md).
-
-Return to top
 
 ## Implementing hub sites
 
@@ -155,8 +149,6 @@ The following figure shows how IP site link costs affect routing to a hub site. 
 ![Misconfigured hub site](images/JJ916681.c010d4d8-5cd3-4b79-b7db-0367ba3cc287(EXCHG.150).gif "Misconfigured hub site")
 
 You can configure any Active Directory site as a hub site. However, for this configuration to work correctly, you must have at least one Mailbox server in the hub site.
-
-Return to top
 
 ## Topology discovery
 
@@ -187,5 +179,3 @@ The topology discovery module performs the following steps to generate an Exchan
 4. Routing tables are updated with the collection of information retrieved.
 
 This process makes every Exchange 2013 server aware of the other Exchange servers in the organization and of how close the Exchange servers are to one another.
-
-Return to top

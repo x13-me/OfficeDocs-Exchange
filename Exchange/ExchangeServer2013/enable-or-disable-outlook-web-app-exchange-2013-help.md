@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable Outlook Web App for a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the EAC or the Shell to enable or disable Outlook Web App for a user mailbox. When Outlook Web App is enabled, a user can use Outlook Web App to send and receive email. When Outlook Web App is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 

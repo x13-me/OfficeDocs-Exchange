@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Set up voice mail for users in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you've connected your telephony network or integrated Microsoft Lync Server with Exchange Unified Messaging (UM) and created and configured the required UM components, you'll need to set up voice mail for your users.
 

@@ -69,8 +69,6 @@ The following scenarios are examples of how you can use address rewriting:
 
       - Inbound messages for support@wingtiptoys.com are accepted by Wingtip Toy's Edge Transport servers, rewritten, and then routed to the support@contoso.com email address.
 
-Return to top
-
 ## Message properties modified by address rewriting
 
 A standard SMTP email message consists of a *message envelope* and message content. The message envelope contains information required for transmitting and delivering the message between SMTP mail servers. The message content contains message header fields (collectively called the *message header*) and the message body. The message envelope is described in RFC 2821, and the message header is described in RFC 2822.
@@ -168,8 +166,6 @@ Address rewriting changes an email address by rewriting specific fields in the m
 </tbody>
 </table>
 
-Return to top
-
 ## What address rewriting doesn't change
 
 Address rewriting doesn't modify any message header fields that would break SMTP functionality. For example, modifying certain header fields can affect routing loop detection, invalidate the signature, or make a rights-protected message unreadable. Therefore, the following header fields aren't modified by address rewriting.
@@ -190,23 +186,17 @@ Address rewriting ignores domains that aren't controlled by the Exchange organiz
 
 Address rewriting also doesn't modify the header fields of messages that are embedded in another message. Senders and recipients expect embedded messages to remain intact and be delivered without modification, as long as the messages don't trigger transport rules that are implemented between the sender and recipient.
 
-Return to top
-
 ## Considerations for outbound-only address rewriting
 
 Outbound-only address rewriting on an Edge Transport server modifies the sender's email address as the message leaves the Exchange organization. You can configure outbound-only address rewriting for a single user (chris@contoso.com to support@contoso.com) or for all users in a single domain (contoso.com to fabrikam.com). You are required to configure outbound-only address rewriting for users in multiple subdomains (\*.fabrikam.com to .contoso.com).
 
 The rewritten email address must be configured as a proxy address on the affected recipients. For example, if laura@sales.contoso.com is rewritten to laura@contoso.com, the proxy address laura@contoso.com must be configured on Laura's mailbox. This allows replies and inbound messages to be delivered correctly.
 
-Return to top
-
 ## Considerations for inbound and outbound address rewriting
 
 Inbound and outbound, or *bidirectional* address rewriting on an Edge Transport server modifies the sender's email address in messages that leave the Exchange organization, and it modifies the recipient's email address in messages that enter the Exchange organization.
 
 You can configure outbound-only address rewriting for a single user (chris@contoso.com to support@contoso.com) and all users in a single domain (contoso.com to fabrikam.com). You can't configure bidirectional address rewriting for users in multiple subdomains (\*.fabrikam.com to contoso.com).
-
-Return to top
 
 ## Considerations for rewriting email addresses in multiple domains
 
@@ -240,8 +230,6 @@ Suppose you want to rewrite the subdomains sales.contoso.com, marketing.contoso.
 
 When the email addresses in each subdomain are rewritten, a conflict occurs between chris@sales.contoso.com and chris@research.contoso.com because both email addresses are rewritten to chris@contoso.com. To resolve this situation, you need to change the email address of one of the affected recipients. For example, you can change chris@research.contoso.com to christopher@research.contoso.com so the email address is rewritten to christopher@contoso.com.
 
-Return to top
-
 ## Priority of address rewrite entries
 
 If a user's email address matches multiple address rewrite entries, the email address is only rewritten once based on the closest match. The following list describes the order of precedence of address rewrite entries from highest priority to lowest priority:
@@ -260,8 +248,6 @@ For example, consider an Edge Transport server where the following outbound addr
 
 If masato@japan.sales.contoso.com sends an email message, the address is rewritten to masato@contoso.jp, because that entry most closely matches the sender's email address.
 
-Return to top
-
 ## Digitally signed, encrypted, and rights-protected messages
 
 Address rewriting shouldn't affect most signed, encrypted, or rights-protected messages. If address rewriting were to invalidate or otherwise change the security status of these types of messages in any way, address rewriting isn't applied.
@@ -277,5 +263,3 @@ The following values aren't rewritten because the information is part of message
   - Header fields located inside MIME body parts that may be signed
 
   - The boundary string parameter of the MIME content type
-
-Return to top

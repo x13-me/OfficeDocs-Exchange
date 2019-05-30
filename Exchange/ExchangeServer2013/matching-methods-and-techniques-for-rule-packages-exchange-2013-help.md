@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Matching methods and techniques for rule packages in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic describes techniques for matching pattern and evidence elements within a data loss prevention (DLP) XML file that is designed to contain your own custom sensitive information type rule package. After you have created a well-formed XML file, you can import the file by using the Exchange admin center (EAC) or Exchange Management Shell in order to help create your Microsoft Exchange Server 2013 DLP solution. Before you can make use of the matching methods described here, you should already have a DLP XML file started. For more information about defining your own DLP templates and XML files, see [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

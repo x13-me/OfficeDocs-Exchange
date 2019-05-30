@@ -99,8 +99,6 @@ The following table shows how multiple conditions, condition values, exceptions,
 </tbody>
 </table>
 
-Return to top
-
 ## Transport rule properties
 
 The following table describes the rule properties that are available in transport rules.
@@ -170,8 +168,6 @@ The following table describes the rule properties that are available in transpor
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## How transport rules are applied to messages
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Archive Lync conversations and meeting content to Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In on-premises deployments, you can archive Lync 2013 content to Exchange 2013 mailboxes. This requires placing a Litigation Hold or an In-Place Hold on the user's mailbox. When Lync content is permanently deleted by a user whose mailbox is on hold, the archived Lync content is preserved in the Recoverable Items folder in the user's mailbox. It's not visible to users but it's included in eDiscovery searches.
 

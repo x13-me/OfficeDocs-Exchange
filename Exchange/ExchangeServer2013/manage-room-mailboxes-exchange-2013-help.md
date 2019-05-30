@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create and manage room mailboxes in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Estimated time to complete: 5 minutes.
 

@@ -72,8 +72,6 @@ For remote domains in your organization, you have the following configuration op
 
 For more information about remote domains, see [Remote domains](remote-domains-exchange-2013-help.md) or [Remote domains in Exchange Online](https://technet.microsoft.com/en-us/library/jj966211\(v=exchg.150\)).
 
-Return to top
-
 ## TNEF conversion options for mail users and mail contacts
 
 When you configure TNEF conversion options for a mail contact or a mail user, those TNEF conversion options are applied to all messages sent to that specific recipient. You use the *UseMapiRichTextFormat* parameter on the **Set-MailUser** and **Set-MailContact** cmdlets to configure the TNEF conversion options for mail users and mail contacts.
@@ -85,8 +83,6 @@ For mail users and mail contacts in your organization, you have the following co
   - **Never**: TNEF is never used for any messages sent to the recipient. The corresponding value for the *UseMapiRichTextFormat* parameter is `Never`.
 
   - **Use default settings**: TNEF messages aren't specifically allowed or prevented for the mail user or mail contact. Whether TNEF messages are sent to the recipient depends on the specific setting for the corresponding remote domain or the setting specified by the sender in Outlook. The corresponding value for the *UseMapiRichTextFormat* parameter is `UseDefaultSettings`. This is the default setting.
-
-Return to top
 
 ## TNEF conversion options in Outlook
 
@@ -123,8 +119,6 @@ You can configure these options for a contact in the following locations in Outl
 
   - **Outlook 2007**: Open the contact card, double-click the **E-mail** field and select **Internet format**.
 
-Return to top
-
 ## Order of precedence for TNEF conversion options
 
 Exchange uses the order of precedence as described in the following list to determine the TNEF conversion options for outgoing messages sent to recipients outside the Exchange organization:
@@ -138,5 +132,3 @@ Exchange uses the order of precedence as described in the following list to dete
 The list specifies the order of precedence from highest to lowest. The TNEF setting on the remote domain overrides the TNEF settings on the mail user, mail contact or in Outlook. For example, suppose you send a Rich Text message in Outlook, but the recipient is in a domain where the remote domain setting specifically doesn't allow TNEF-formatted messages. The message received by the recipient will be plain text or HTML, but not TNEF.
 
 Also, Exchange never sends Summary Transport Neutral Encoding Format (STNEF) messages to external recipients. Only TNEF messages can be sent to recipients outside the Exchange organization.
-
-Return to top

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Use favorite public folders in Outlook Web App in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In the Outlook client, users in your organization can add public folders to their **Favorites** folders. Then, depending on your organization's policies, they can use Outlook Web App to add those same public folders to their Favorites and perform certain functions in Outlook Web App that they use in the Outlook client.
 
