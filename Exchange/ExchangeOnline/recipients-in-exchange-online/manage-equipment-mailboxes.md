@@ -183,9 +183,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox.
-
-  - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
+   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.

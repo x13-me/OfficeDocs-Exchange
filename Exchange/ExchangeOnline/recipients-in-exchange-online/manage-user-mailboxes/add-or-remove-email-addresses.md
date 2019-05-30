@@ -52,7 +52,7 @@ The procedures in this topic show how to add or remove email addresses for a use
 4. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
 
     > [!NOTE]
-    > SMTP is the default email address type. You can also add Exchange Unified Messaging (EUM) addresses or custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
+    > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
 
 5. Type the new SMTP address in the **Email address** box, and then click **OK**.
 

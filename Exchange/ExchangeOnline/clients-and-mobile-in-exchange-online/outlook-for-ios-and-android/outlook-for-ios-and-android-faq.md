@@ -170,7 +170,7 @@ For more information on the Teams coexistence modes, please see [Choose your upg
 
 ### Q: What ports and end points does Outlook for iOS and Android use?
 
-Outlook for iOS and Android communicates via TCP port 443. The app accesses various end points, depending on the activities of the user. Complete information is available in [Network Requests in Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=849810).
+Outlook for iOS and Android communicates via TCP port 443. The app accesses various end points, depending on the activities of the user. Complete information is available in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ### Q: Does Outlook for iOS and Android support proxy configurations?
 
@@ -180,7 +180,7 @@ Yes, Outlook for iOS and Android supports proxy configurations when the proxy in
 
 - **Does not perform authentication**.
 
-Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported.
+Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported. For a list of hostnames that Outlook for iOS and Android accesses, please see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
 
