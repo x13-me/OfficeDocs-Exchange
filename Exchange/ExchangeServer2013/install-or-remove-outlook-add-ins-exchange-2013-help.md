@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Install or remove add-ins for Outlook for your organization in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can install or remove add-ins for Outlook for your organization by using the EAC or the Shell.
 

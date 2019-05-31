@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure a fully qualified domain name in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure a Unified Messaging (UM) IP gateway with either an IP address or a fully qualified domain name (FQDN). When you create a UM IP gateway, you must define the IP address or the FQDN configured on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. You can change the IP address or FQDN after the UM IP gateway is created.
 

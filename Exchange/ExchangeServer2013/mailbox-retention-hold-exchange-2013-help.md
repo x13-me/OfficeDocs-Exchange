@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Place a mailbox on retention hold in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Placing a mailbox on retention hold suspends the processing of a retention policy or managed folder mailbox policy for that mailbox. Retention hold is designed for situations such as a user being on vacation or away temporarily.
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage equipment mailboxes in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and the Shell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage mail-enabled security groups in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure the group of users that can be contacted in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can specify the group of users that callers can contact when calling into a Unified Messaging (UM) auto attendant. By default, callers can contact users within the same dial plan that's associated with the UM auto attendant. However, you can change the grouping of users to allow callers to transfer calls or send voice messages to users who are located in the organization's address book or to a specific set of users.
 

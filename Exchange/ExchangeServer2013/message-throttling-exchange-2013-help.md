@@ -40,8 +40,6 @@ In addition to message throttling, you can also put size limits on the individua
 
 Another feature that helps avoid overwhelming the system resources of an Exchange transport server is *back pressure*. Back pressure is a system resource monitoring feature in the Transport service on Mailbox servers and on Edge Transport servers. When a monitored system resource, such as hard disk utilization or memory utilization, exceeds the specified threshold, the server reduces the rate at which it accepts new connections and messages, and focuses on delivering existing messages. When the utilization of the monitored system resources returns to normal levels, the server slowly increases the rate at which it accepts new connections and then establishes a normal level.
 
-Return to top
-
 ## Message cost and mail flow throttling
 
 To provide more consistent message throughput and predictable message delivery latency, Exchange 2013 establishes an accumulated cost for messages. This quality of service (QoS) feature was added in Microsoft Exchange Server 2010 SP1This cost is based on the following criteria:
@@ -90,8 +88,6 @@ Time settings for a budget are set as a percentage of one minute. Therefore, a t
 - **OWAPercentTimeInMailboxRPC**: 1
 
 A user who has this policy applied has a budget of OWAPercentTimeInCAS of 600 milliseconds and of OWAPercentageTimeInMailboxRPC of 600 milliseconds. In this scenario, when the user is logged into Outlook Web App, the user can run Client Access code for up to 600 milliseconds. After the 600 millisecond-period, the connection is considered over budget and the Exchange server doesn't allow any further Outlook Web App action until one minute after the budget limit is reached. After the one-minute period, the user can run Outlook Web App client access code for another 600 milliseconds.
-
-Return to top
 
 ## Message throttling on servers
 
@@ -170,8 +166,6 @@ The following table shows the message throttling options that are available on t
 </tbody>
 </table>
 
-Return to top
-
 ## Message throttling on Send connectors
 
 The following table shows the message throttling option that's available on Send connectors. You need to use the Exchange Management Shell to configure this option.
@@ -202,8 +196,6 @@ The following table shows the message throttling option that's available on Send
 </tr>
 </tbody>
 </table>
-
-Return to top
 
 ## Message throttling on Receive connectors
 
@@ -279,8 +271,6 @@ The following table shows the message throttling options that are available on R
 </tbody>
 </table>
 
-Return to top
-
 ## Message throttling policies
 
 In Exchange 2013, each mailbox has a *ThrottlingPolicy* setting. The default value for this setting is blank (`$null`). You can use the *ThrottlingPolicy* paramenter on the **Set-Mailbox** cmdlet to configure a throttling policy for a mailbox.
@@ -321,5 +311,3 @@ You can use the **New-ThrottlingPolicy** and **Set-ThrottlingPolicy** cmdlets to
 - PowerShell commands
 
 - CPU usages
-
-Return to top

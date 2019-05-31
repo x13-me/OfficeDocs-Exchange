@@ -50,8 +50,6 @@ Based on the preceding SCL thresholds, all email with an SCL of 6 will be delive
 
 For more information, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
 
-Return to top
-
 ## Spam quarantine
 
 When messages are received by the Exchange server that's running all default anti-spam agents, the content filter is applied as follows:
@@ -87,5 +85,3 @@ To use spam quarantine, you need to follow these steps:
 6. Adjust the SCL quarantine threshold as needed.
 
 For detailed instructions, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
-
-Return to top

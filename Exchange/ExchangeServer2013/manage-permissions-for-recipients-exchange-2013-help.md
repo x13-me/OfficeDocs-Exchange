@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage permissions for recipients in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the EAC or the Shell to assign permissions to users or groups (called _delegates_) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
 

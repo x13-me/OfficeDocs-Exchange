@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure the IP address in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Before you create a Unified Messaging (UM) IP gateway, you must first set the IP address or the fully qualified domain name (FQDN) on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. Then, when you create the UM IP gateway, you set the IP address or FQDN. You can change the IP address or FQDN later.
 

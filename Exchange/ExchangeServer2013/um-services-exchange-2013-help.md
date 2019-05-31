@@ -42,8 +42,6 @@ When you're installing your Client Access and Mailbox servers and deploying Unif
 
 However, if you're integrating Unified Messaging with Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server, both the SIP and the RTP or SRTP media channels for incoming calls are handled by Lync servers and the Mailbox server. In a Lync integrated environment, you don't have VoIP gateways, IP PBXs, or SBCs. To Lync, the Mailbox server that's running the Microsoft Exchange Unified Messaging service looks just like an Exchange 2010 UM server. The Mailbox server and the Client Access server are considered trusted peers because both servers must be added to a SIP dial plan. Lync routes the incoming call using the Inbound Routing component, which uses SIP to communicate with the Client Access server and then route the call to a Mailbox server.
 
-Return to top
-
 ## Server configuration settings
 
 In Exchange 2013, all the UM components and configuration settings that applied to a single computer running the Unified Messaging server role in Exchange 2010 are still available. However, some of those components and configuration settings are found on a Client Access server and others are available on a Mailbox server. In some cases, the same setting is available on both. The following list shows the parameters and settings that are available on both a Client Access server and a Mailbox server.
@@ -62,8 +60,6 @@ In Exchange 2013, all the UM components and configuration settings that applied 
 
 For the Mailbox server, you'll use the **Set-UMService**, **Get-UMService**, **Enable-UMService**, and **Disable-UMService** cmdlets to view or configure UM properties for the Microsoft Exchange Unified Messaging service. A different set of cmdlets, **Set-UMCallRouterSettings** and **Get-UMCallRouterSettings**, are used to view or configure the Microsoft Exchange Unified Messaging Call Router service properties on a Client Access server. This ensures that the existing **Get-UMServer**, **Set-UMServer**, **Enable-UMServer**, and **Disable-UMServer** cmdlets from Exchange 2007 and Exchange 2010 will work in a coexistence deployment with Exchange 2013 Mailbox servers. This also ensures that the cmdlets will work when the Mailbox and Client Access servers are installed on the same or different computers.
 
-Return to top
-
 ## Server operation
 
 When Client Access and Mailbox servers are installed, they're automatically enabled so they can answer incoming and outgoing voice calls and route voice mail messages to the intended recipients in your Exchange organization.
@@ -79,5 +75,3 @@ Although the Client Access and Mailbox servers are set to enabled when they're i
 After a dial plan is linked with a UM IP gateway, the Client Access and Mailbox servers locate all UM IP gateways that are associated with the UM dial plan and VoIP gateways, IP PBXs, and SBCs. To detect and identify any configuration changes on either UM dial plans or UM IP gateways, the Client Access or Mailbox servers check the configuration every 10 minutes.
 
 If the UM IP gateway identifies any changes to the configuration, the Client Access or Mailbox server reacts accordingly, and either starts using or stops using the appropriate VoIP gateway, IP PBX, or SBC. After the Client Access and Mailbox servers answer incoming calls for users linked with a UM dial plan and they're correctly communicating with VoIP gateways, IP PBXs, and SBCs, you can run a set of diagnostic operations to verify that they're operating correctly and that connectivity between the Exchange servers and VoIP gateways, IP PBXs, or SBCs is working correctly.
-
-Return to top

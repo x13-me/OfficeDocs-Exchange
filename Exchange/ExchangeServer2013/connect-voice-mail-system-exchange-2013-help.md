@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Connect your voice mail system to your telephone network in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you've deployed all the required telephony equipment for your organization, including your VoIP gateways, IP PBXs, and SIP-enabled PBXs or Microsoft Lync Server, you need to create all the Unified Messaging (UM) components that will enable your telephony devices to communicate with servers in your organization.
 

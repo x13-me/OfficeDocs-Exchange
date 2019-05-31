@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure a dial plan for users who have similar names in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure a Unified Messaging (UM) dial plan to specify the information that is provided for callers when users have the same or similar names. UM uses this setting to differentiate between users who have the same or similar names and provide this information to callers. When a caller or an Outlook Voice Access user is prompted to enter letters to find a particular user, sometimes more than one name matches the caller's input. You can use one of the available options for providing the caller with more information to help them locate the user they're trying to reach.
 

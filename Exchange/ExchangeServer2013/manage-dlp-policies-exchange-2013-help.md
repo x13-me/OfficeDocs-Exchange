@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage DLP policies in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can view, change, or remove existing data loss prevention (DLP) policies in Microsoft Exchange, using the Exchange Administration Center (EAC) or the Exchange Management Shell.
 

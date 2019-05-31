@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove an In-Place eDiscovery search in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, you can use In-Place eDiscovery to search mailbox content. You can remove an In-Place eDiscovery search at any time. When you remove an In-Place eDiscovery search, search results are removed from the Discovery mailbox.
 

@@ -74,8 +74,6 @@ Circuit switching has one big advantage over packet-switched networks. In a circ
 > [!NOTE]
 > Synchronous Digital Hierarchy (SDH) has become the primary transmission protocol for most PSTN networks. SDH is carried over fiber optic networks.
 
-Return to top
-
 ## Packet-switched networks
 
 Packet switching is a technique that divides a data message into smaller units called packets. Packets are sent to their destination by the best route available, and then they are reassembled at the receiving end.
@@ -90,8 +88,6 @@ Packet-switched networks exist to enable data communication on the Internet thro
 Packet-switched networks are also found in such network environments as LAN and WAN networks. A WAN packet-switched environment relies on telephone circuits, but the circuits are arranged so that they retain a permanent connection with their endpoint. In a LAN packet-switched environment, such as with an Ethernet network, the transmission of the data packets relies on packet switches, routers, and LAN cables. In a LAN, the switch establishes a connection between two segments only long enough to send the current packet. Incoming packets are saved to a temporary memory area or buffer in memory. In an Ethernet-based LAN, an Ethernet frame contains the payload or data portion of the packet and a special header that includes the media access control (MAC) address information for the source and destination of the packet. When the packets arrive at their destination, they are put back in order by a packet assembler. A packet assembler is needed because of the different routes that the packets may take.
 
 Packet-switched networking has made it possible for the Internet to exist and, at the same time, has made data networks (especially LAN-based IP networks) more available and widespread.
-
-Return to top
 
 ## PBX
 
@@ -116,8 +112,6 @@ In medium-size and larger-size businesses, the following PBX configurations are 
 
 > [!NOTE]
 > An Exchange 2013 UM dial plan can span more than one PBX or IP PBX.
-
-Return to top
 
 ## IP PBX
 
@@ -150,8 +144,6 @@ Exchange 2013 Unified Messaging relies on the VoIP gateway's abilities to transl
 > After you install the VoIP gateway, IP PBX, or SIP-enabled PBX, you must create a UM IP gateway to represent the physical device. After you create a UM IP gateway, the Client Access and Mailbox servers linked with the UM IP gateway will send a SIP OPTIONS request to the VoIP gateway, IP PBX, or SIP-enabled PBX to ensure that the device is responsive. If the VoIP gateway doesn't respond to the SIP OPTIONS request from the Mailbox server, the Mailbox server will log an event with ID 1088 stating that the request failed. To resolve this issue, ensure that the VoIP gateway, IP PBX, or is available and online and that the Unified Messaging configuration on both the Client Access and Mailbox server is correct.
 
 For more information about IP PBX and PBX configurations, see [PBX and IP PBX configurations](pbx-and-ip-pbx-configurations-exchange-2013-help.md).
-
-Return to top
 
 ## For more information
 

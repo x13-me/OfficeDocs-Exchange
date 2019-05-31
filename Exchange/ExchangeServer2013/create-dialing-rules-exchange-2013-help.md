@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create dialing rules for users in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:
 

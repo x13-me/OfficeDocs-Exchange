@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Recover deleted messages in a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 (This topic is intended for Exchange administrators.)
 

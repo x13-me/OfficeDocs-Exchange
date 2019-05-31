@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage transport rules in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use transport rules, also known as transport rules, to look for specific conditions on messages that pass through your organization and take action on them. This topic shows you how to [create](#create-a-transport-rule), [copy](#create-a-transport-rule), [adjust the order](#set-the-priority-of-a-transport-rule), [enable or disable](#enable-or-disable-a-transport-rule), [delete](#remove-a-transport-rule), or [import or export](#import-or-export-a-transport-rule-collection) rules.
 

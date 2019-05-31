@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create a DLP policy from a template in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see [DLP policy templates supplied in Exchange 2013](built-in-dlp-policy-templates-exchange-2013-help.md). Example DLP templates that are supplied can help you manage:
 

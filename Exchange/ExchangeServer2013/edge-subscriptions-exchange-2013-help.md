@@ -371,8 +371,6 @@ Before you can subscribe your Edge Transport server to your Exchange organizatio
 
       - **Remote domains**: Configure remote domain settings.
 
-Return to top
-
 ## Managing Edge Subscriptions
 
 For step-by-step instructions on Edge Subscription management tasks, see [Manage Edge Subscriptions](manage-edge-subscriptions-exchange-2013-help.md).

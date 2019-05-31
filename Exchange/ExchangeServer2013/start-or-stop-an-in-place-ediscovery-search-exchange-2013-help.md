@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Start or stop an In-Place eDiscovery search in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can stop or restart an In-Place eDiscovery search at any time. For example, if you want to modify search properties such as keywords or mailboxes searched, you must first stop a search. You can then restart the search after making the required changes.
 

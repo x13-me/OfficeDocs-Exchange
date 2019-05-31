@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Delete a UM mailbox policy in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you delete a Unified Messaging (UM) mailbox policy, the UM mailbox policy will no longer be available to be associated with recipients who are being enabled for UM. You can't delete a UM mailbox policy if it's referenced by any UM-enabled mailboxes, and you can't delete a UM dial plan if a UM mailbox policy is associated with it.
 

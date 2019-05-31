@@ -174,6 +174,7 @@
 ### [Manage migration batches](../mailbox-migration/manage-migration-batches.md)
 ### [Migration users status report](../mailbox-migration/migration-users-status-report.md)
 ### [CSV files for migration](../mailbox-migration/csv-files-for-migration.md)
+### [Plan for third-party email coexistence with Microsoft 365 and Azure Active Directory](../mailbox-migration/plan-to-coexist-with-third-party-messaging-and-aad-ds.md)
 ## [Collaboration](../collaboration-exo/collaboration-exo.md)
 ### [Public folders](../collaboration-exo/public-folders/public-folders.md)
 #### [Public folder procedures](../collaboration-exo/public-folders/public-folder-procedures.md)

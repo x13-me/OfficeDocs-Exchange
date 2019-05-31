@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # View or configure Outlook Web App mailbox policy properties in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After you create an Outlook Web App mailbox policy, you can configure a variety of options to control the features available to users in Outlook Web App. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
 

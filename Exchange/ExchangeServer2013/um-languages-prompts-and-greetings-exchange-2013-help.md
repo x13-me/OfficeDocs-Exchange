@@ -78,8 +78,6 @@ You can add UM language packs by using the **Setup.exe** command or by running t
 > [!NOTE]
 > By default, when you install a Mailbox server, the U.S. English (en-US) language pack is installed. It can't be removed unless you remove the Mailbox server from the computer.
 
-Return to top
-
 The following table lists the Unified Messaging language packs that are currently available. It also lists the installation file name for each UM language pack and the culture ID for the UM language.
 
 ### UM language pack installation file names and culture IDs
@@ -287,8 +285,6 @@ The following table lists the Unified Messaging language packs that are currentl
 </tbody>
 </table>
 
-Return to top
-
 ## UM language components and features
 
 There are several key components and features in Unified Messaging that enable users and callers to interact with a multiple-language voice mail system. For these components and features to work correctly and enable callers to interact with the system in multiple languages, the UM language packs must be installed correctly on a Mailbox server.
@@ -317,8 +313,6 @@ Unified Messaging relies on a Text-to-Speech (TTS) engine. TTS functionality is 
 ## Automatic Speech Recognition
 
 In addition to TTS, ASR support is included in Unified Messaging. ASR functionality is provided by the Microsoft Speech Server service. ASR enables callers to use voice commands to move through menus and interact with items from their individual mailboxes, including messages, personal contacts, and calendar. ASR support is included with each language pack.
-
-Return to top
 
 ## Voice Mail Preview
 
@@ -626,5 +620,3 @@ The following table includes a list of client languages and the fallback languag
 </tr>
 </tbody>
 </table>
-
-Return to top

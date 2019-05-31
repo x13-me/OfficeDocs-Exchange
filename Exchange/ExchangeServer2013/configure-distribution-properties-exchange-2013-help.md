@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Configure offline address book distribution properties in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 For each offline address book (OAB) distribution point in Exchange, you can configure two URLs: an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the Internet.
 

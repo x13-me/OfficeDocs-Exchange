@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Export DLP sensitive information types from Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can view or change the details within your DLP policies without using the Exchange admin center (EAC) or Exchange Management Shell cmdlets by exporting the policies, saving them as an XML file, and modifying that XML file. Typically you would then import the XML file back into Exchange. In this way, policies can be edited independent of Exchange. However, they must meet specific format requirements, also referred to as XML schema, in order to work correctly.
 

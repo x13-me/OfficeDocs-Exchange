@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM and voice mail terminology in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 This topic contains the terms and definitions that are used with Unified Messaging.
 
