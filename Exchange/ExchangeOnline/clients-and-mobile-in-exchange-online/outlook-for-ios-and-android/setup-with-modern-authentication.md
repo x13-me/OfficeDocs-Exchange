@@ -55,7 +55,7 @@ In the event that AutoDetect fails for a user, the following images show an alte
 
 ## Single sign-on
 
-All Microsoft apps that leverage the Azure Active Directory Authentication Library (ADAL) support single sign-on. In addition, single sign-on is also supported when the apps are used in conjunction with either the Microsoft Authenticator or Microsoft Company Portal apps.
+All Microsoft apps that leverage the Azure Active Directory Authentication Library (ADAL) support single sign-on. In addition, single sign-on is also supported when the apps are used in conjunction with either the Microsoft Authenticator, or Microsoft Company Portal apps.
 
 Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) under the following scenarios:
 
