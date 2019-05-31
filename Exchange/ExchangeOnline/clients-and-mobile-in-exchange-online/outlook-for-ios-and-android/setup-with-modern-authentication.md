@@ -59,7 +59,7 @@ All Microsoft apps that leverage the Azure Active Directory Authentication Libra
 
 Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) under the following scenarios:
 
-1. When the apps are signed by the same signing certificate and use the same service endpoint or audience URL (such as the Office 365 URL). In this case, the token is stored in app shared storage.
+1. When the apps are signed by the same signing certificate, and use the same service endpoint or audience URL (such as the Office 365 URL). In this case, the token is stored in app shared storage.
 
 2. When the apps leverage or support single sign-on with a broker app. The tokens are stored within the broker app. Microsoft Authenticator is an example of a broker app. In the broker app scenario, after you attempt to sign in to Outlook for iOS and Android, ADAL will launch the Microsoft Authenticator app, which will make a connection to Azure Active Directory to obtain the token. It will then hold on to the token and re-use it for authentication requests from other apps, for as long as the configured token lifetime allows.
 
