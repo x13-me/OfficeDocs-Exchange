@@ -60,6 +60,3 @@ This example configures a UM auto attendant named `MyUMAutoAttendant` with multi
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -PilotIdentifierList "12345, 72000, 75000"
 ```
-
-
-

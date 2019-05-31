@@ -48,6 +48,3 @@ This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
 ```
-
-
-

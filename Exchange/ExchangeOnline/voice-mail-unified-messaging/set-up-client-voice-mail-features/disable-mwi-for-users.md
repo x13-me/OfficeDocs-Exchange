@@ -55,6 +55,3 @@ This example disables Message Waiting Indicator for users associated with the UM
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMessageWaitingIndicator $false
 ```
-
-
-

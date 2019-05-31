@@ -64,6 +64,3 @@ How you resolve this depends on whether you want to save the search results from
   ```
   Add-MailboxPermission "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -User "Discovery Management" -AccessRights FullAccess -InheritanceType all
   ```
-
-
-

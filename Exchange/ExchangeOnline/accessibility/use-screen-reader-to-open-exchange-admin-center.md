@@ -52,4 +52,3 @@ The Exchange admin center (EAC) is a web-based app that lets you manage your Exc
 
    > [!TIP]
    > To move to the rest of the items in the navigation pane, press the Tab key. To open an item, press Enter. After you've opened an item, to move directly to one of its elements in the content area on a page, press Ctrl+F6. To identify the admin role groups to which you've been assigned, which determine the tasks you can perform in the EAC, refer to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
-

@@ -58,6 +58,3 @@ Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail T
 
 > [!NOTE]
 > TUI settings for users are also available on UM mailbox policies. Modifying TUI settings on a UM mailbox policy affects all users who are associated with the UM mailbox policy. For more information about how to modify TUI settings on a UM mailbox policy, see [Set mailbox features for Outlook Voice Access users](set-mailbox-features-for-users.md).
-
-
-

@@ -60,6 +60,3 @@ This example enables a welcome greeting that uses the C:\UMPrompts\welcome.wav f
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename c:\UMPrompts\welcome.wav
 ```
-
-
-

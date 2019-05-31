@@ -65,4 +65,3 @@ To verify that you've successfully modified a GAL, replace _\<GAL Name\>_ with t
 ```
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
-

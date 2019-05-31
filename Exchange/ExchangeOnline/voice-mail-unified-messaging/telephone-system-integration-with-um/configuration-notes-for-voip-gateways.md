@@ -216,6 +216,3 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |CTX|AR1ME021.00|Analog - SMDI|Dialogic|DMG1008LSW|Dialogic|
 |CTX|AR1ME021.00|Analog - In-Band DTMF|Dialogic|DMG1008LSW|Dialogic|
-
-
-

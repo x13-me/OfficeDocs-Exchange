@@ -260,6 +260,3 @@ To verify that you've successfully changed properties for a security group, do t
   Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} |
    fl Name,HiddenFromAddressListsEnabled
   ```
-
-
-

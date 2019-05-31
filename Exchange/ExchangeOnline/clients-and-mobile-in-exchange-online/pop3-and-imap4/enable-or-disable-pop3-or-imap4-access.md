@@ -97,6 +97,3 @@ Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $false
   - If IMAP4 is enabled for the user, you will see **IMAP4: Enabled**.
 
 5. Click **Save**.
-
-
-

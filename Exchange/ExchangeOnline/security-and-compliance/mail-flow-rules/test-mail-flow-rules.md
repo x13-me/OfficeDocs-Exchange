@@ -151,4 +151,3 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 [Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
 
 [Mail flow rules (transport rules) in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
-

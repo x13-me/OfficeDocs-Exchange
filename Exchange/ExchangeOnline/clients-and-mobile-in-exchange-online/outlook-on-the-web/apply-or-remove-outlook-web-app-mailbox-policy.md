@@ -199,4 +199,3 @@ To verify that you've removed an Outlook on the web mailbox policy assignment fr
     ```
     Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
     ```
-

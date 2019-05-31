@@ -297,7 +297,7 @@ Only the following access rights will be allowed for users to ensure that the pu
 
 - ReadItems
 
--  CreateSubfolders
+- CreateSubfolders
 
 - FolderContact
 
@@ -351,6 +351,3 @@ Be aware that any items added to the groups in Office 365, or any edit operation
 Note also that it's not possible to restore a subset of public folders, which means all of the public folders there were migrated should be restored.
 
 The corresponding groups in Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
-
-
-

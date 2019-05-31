@@ -49,6 +49,3 @@ This example enables a UM IP gateway named `MyUMIPGateway`.
 ```
 Enable-UMIPGateway -Identity MyUMIPGateway
 ```
-
-
-

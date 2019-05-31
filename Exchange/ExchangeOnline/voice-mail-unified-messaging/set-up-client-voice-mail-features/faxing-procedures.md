@@ -32,6 +32,3 @@ manager: dansimp
 [Enable a user to receive faxes](enable-a-user-to-receive-faxes.md)
 
 [Prevent a user from receiving faxes](prevent-a-user-from-receiving-faxes.md)
-
-
-

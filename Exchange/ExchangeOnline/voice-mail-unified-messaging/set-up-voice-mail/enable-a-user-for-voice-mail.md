@@ -86,6 +86,3 @@ This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, 
 ```
 Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -SIPResourceIdentifier "tonysmith@contoso.com" -PINExpired $true
 ```
-
-
-

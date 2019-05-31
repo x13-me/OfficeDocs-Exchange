@@ -93,6 +93,3 @@ This example creates a new UM dial plan named `MyUMDialPlan` that uses five-digi
 ```
 New-UMDialplan -Name MyUMDialPlan -UriType SIPName -NumberofDigits 5
 ```
-
-
-

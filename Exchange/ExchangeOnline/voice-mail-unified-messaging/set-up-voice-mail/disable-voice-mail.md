@@ -55,6 +55,3 @@ This example disables Unified Messaging and voice mail for the user tonysmith@co
 ```
 Disable-UMMailbox -Identity tonysmith@contoso.com -KeepProperties $True
 ```
-
-
-

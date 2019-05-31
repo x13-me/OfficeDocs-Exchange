@@ -99,6 +99,3 @@ Or
   ```
 
     If Outlook Web App is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook Web App is disabled, the value is `False`.
-
-
-

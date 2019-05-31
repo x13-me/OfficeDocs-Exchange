@@ -80,6 +80,3 @@ Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
 ```
 
 If the format of the display name for the group is different than the one enforced by your organization's group naming policy, it worked.
-
-
-

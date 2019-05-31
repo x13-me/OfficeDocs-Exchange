@@ -56,6 +56,3 @@ manager: dansimp
 [Add an E.164 number](add-e-164-number.md)
 
 [Remove an E.164 number](remove-e-164-number.md)
-
-
-

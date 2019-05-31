@@ -59,6 +59,3 @@ This example disables the Play on Phone feature for users who are associated wit
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowPlayOnPhone $false
 ```
-
-
-

@@ -75,4 +75,3 @@ To add a new shared mailbox, [Use a screen reader to open the Exchange admin cen
 14. Tab to the **Save** button, and press Enter. An alert says "Please wait." After the shared mailbox is created, you hear another alert that says the mailbox will be available in approximately 15 minutes.
 
 15. With the focus on the **OK** button, press Enter. The new shared mailbox display name and email address are listed in the **shared** list view, and it has the focus. Details about the new shared mailbox are listed in the details pane on the right. To review these details, press Ctrl+F6 or the Tab key until the details pane has the focus.
-

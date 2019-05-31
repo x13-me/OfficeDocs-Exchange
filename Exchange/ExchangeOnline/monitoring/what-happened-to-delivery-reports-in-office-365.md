@@ -46,4 +46,3 @@ Currently, there's no direct replacement for delivery reports for users, so the 
 - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://go.microsoft.com/fwlink/p/?linkid=282265).
 
 - Read receipts and delivery notifications aren't related to delivery reports, and are still available in Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.office.com/article/a34bf70a-4c2c-4461-b2a1-12e4a7a92141.aspx).
-

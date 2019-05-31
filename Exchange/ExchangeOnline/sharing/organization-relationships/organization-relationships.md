@@ -43,6 +43,3 @@ The following topics will help you configure and manage organization relationshi
 [Modify an organization relationship in Exchange Online](modify-an-organization-relationship.md)
 
 [Remove an organization relationship in Exchange Online](remove-an-organization-relationship.md)
-
-
-

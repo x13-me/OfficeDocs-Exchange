@@ -64,6 +64,3 @@ This example prevents users associated with the UM mailbox policy named `MyUMMai
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $false
 ```
-
-
-

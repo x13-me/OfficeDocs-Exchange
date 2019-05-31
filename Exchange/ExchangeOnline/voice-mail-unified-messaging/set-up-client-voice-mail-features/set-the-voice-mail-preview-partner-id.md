@@ -49,6 +49,3 @@ This example sets the Voice Mail Preview partner ID to CON123-2010 on a UM mailb
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy
 -VoiceMailPreviewPartnerAssignedID CON123-2010
 ```
-
-
-

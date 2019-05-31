@@ -98,6 +98,3 @@ This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags a
 ```
 (Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks | Format-Table name
 ```
-
-
-

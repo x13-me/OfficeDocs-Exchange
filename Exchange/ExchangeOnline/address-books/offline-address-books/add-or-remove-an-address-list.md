@@ -59,4 +59,3 @@ To verify that you've successfully added or removed address lists from an OAB, r
 ```
 Get-OfflineAddressBook | Format-List Name,AddressLists
 ```
-

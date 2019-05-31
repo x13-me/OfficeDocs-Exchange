@@ -56,6 +56,3 @@ This example prevents the message waiting indicator from appearing for users who
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.1 -MessageWaitingIndicatorAllowed $false
 ```
-
-
-

@@ -69,6 +69,3 @@ This example sets the Outlook Voice Access number to 4255550100 for a UM dial pl
 ```
 Set-UMDialPlan -identity MyUMDialPlan -AccessTelephoneNumbers 4255550100
 ```
-
-
-

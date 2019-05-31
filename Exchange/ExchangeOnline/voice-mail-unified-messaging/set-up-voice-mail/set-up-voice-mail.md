@@ -24,6 +24,3 @@ After you've connected your telephony network or integrated Microsoft Lync Serve
 ## Setting up voice mail for users
 
 Before you enable users for UM, you must consider the type of dial plan to use, the extension numbers that will be used, and determine what PIN policies, Outlook Voice Access, and other features you'll allow users to have access to. For details, see [Voice mail for users](voice-mail-for-users.md).
-
-
-
