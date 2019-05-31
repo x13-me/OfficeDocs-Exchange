@@ -82,6 +82,3 @@ For any of the DLP policies, you can change the rules, actions, exceptions, enfo
 [Data loss prevention](data-loss-prevention.md)
 
 [DLP policy templates](https://technet.microsoft.com/library/c7b1a8e4-30d9-4409-85c5-f85ae023737d.aspx)
-
-
-

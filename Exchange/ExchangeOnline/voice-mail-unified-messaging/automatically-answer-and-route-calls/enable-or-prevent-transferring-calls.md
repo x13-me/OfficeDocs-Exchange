@@ -62,6 +62,3 @@ This example enables call transfers on a UM auto attendant named `MyUMAutoAttend
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowDialPlanSubscribers $true
 ```
-
-
-

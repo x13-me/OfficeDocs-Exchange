@@ -70,6 +70,3 @@ This example resets the voice mail PIN for Tony Smith to 1985848. However, this 
 ```
 Set-UMMailboxPIN -Identity tonysmith@contoso.com -PIN 1985848 -PinExpired $true
 ```
-
-
-

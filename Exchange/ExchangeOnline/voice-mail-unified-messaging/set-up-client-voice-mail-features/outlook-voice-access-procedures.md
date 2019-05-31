@@ -50,6 +50,3 @@ manager: dansimp
 [Configure the number of input failures before Outlook Voice Access users are disconnected](configure-number-of-input-failures.md)
 
 [Configure the limit on personal greetings for Outlook Voice Access users](configure-personal-greetings-limit.md)
-
-
-

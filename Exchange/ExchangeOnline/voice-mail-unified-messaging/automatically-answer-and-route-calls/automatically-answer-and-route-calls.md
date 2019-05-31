@@ -121,6 +121,3 @@ The following examples demonstrate how you can use UM auto attendants with Unifi
     To create a UM auto attendant structure that supports this scenario, create and configure three UM auto attendants that have the appropriate external telephone numbers. Create three other UM auto attendants for each department in the Corporate Offices. You then configure each UM auto attendant based on your requirements, such as the greeting type or other navigational information.
 
 - **Example 2**: At a company called Contoso, Ltd., external customers call one main number for the business, 425-555-0100. When an external caller calls the external number, the UM auto attendant answers and prompts the caller by saying, "Welcome to Contoso, Ltd. Please press or say "One" to be transferred to corporate administration. Please press or say "Two" to be transferred to product support. Please press or say "Three" to be transferred to corporate information. Please press or say "Zero" to be transferred to the operator." To create a UM auto attendant structure that supports this scenario, you create a UM auto attendant that has customized extensions that route the call to the appropriate extension number.
-
-
-

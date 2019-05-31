@@ -20,13 +20,13 @@ Connectivity logging records the outbound connection activity that's used to tra
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service", "Front End Transport service", and "Mailbox Transport service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service", "Front End Transport service", and "Mailbox Transport service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can use the Exchange admin center (EAC) to enabled or disabled connectivity logging, or set the connectivity log path for the Transport service only. For all other connectivity logging options in other transport services, you need to use the Shell.
+- You can use the Exchange admin center (EAC) to enabled or disabled connectivity logging, or set the connectivity log path for the Transport service only. For all other connectivity logging options in other transport services, you need to use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -41,34 +41,34 @@ Connectivity logging records the outbound connection activity that's used to tra
 
 4. In the **Connectivity log** section, change any of the following:
 
-      - **Enable connectivity log**: To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
+   - **Enable connectivity log**: To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
 
-      - **Connectivity log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+   - **Connectivity log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
 
-    When you are finished, click **Save**.
+   When you are finished, click **Save**.
 
 ## Use the Shell to configure connectivity logging
 
 To configure connectivity logging, run the following command:
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
 ```
 
 This example sets the following connectivity log settings in the Transport service on the Mailbox server named Mailbox01:
 
-  -  Sets the location of the connectivity log files to D:\\Hub Connectivity Log. Note that if the folder doesn't exist, it will be created for you.
+- Sets the location of the connectivity log files to D:\\Hub Connectivity Log. Note that if the folder doesn't exist, it will be created for you.
 
-  -  Sets the maximum size of a connectivity log file to 20 MB.
+- Sets the maximum size of a connectivity log file to 20 MB.
 
-  -  Sets the maximum size of the connectivity log directory to 1.5 GB.
+- Sets the maximum size of the connectivity log directory to 1.5 GB.
 
-  -  Sets the maximum age of a connectivity log file to 45 days.
+- Sets the maximum age of a connectivity log file to 45 days.
 
 <!-- end list -->
 
 ```powershell
-    Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
 > [!NOTE]
@@ -86,8 +86,8 @@ To verify that you have successfully configured connectivity logging, do the fol
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
-    ```
+   ```powershell
+   <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+   ```
 
 2. Verify the values displayed are the values you configured.

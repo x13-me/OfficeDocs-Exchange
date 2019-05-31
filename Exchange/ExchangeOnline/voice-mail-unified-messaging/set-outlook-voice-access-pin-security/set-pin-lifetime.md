@@ -75,6 +75,3 @@ This example configures the following PIN-related settings for Outlook Voice Acc
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3
 -MaxLogonAttempts 5 -MinPINLength 9 -PINLifetime 40
 ```
-
-
-

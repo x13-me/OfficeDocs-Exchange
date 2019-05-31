@@ -95,6 +95,3 @@ Additional help:
 - If a user purges a deleted item, you can recover it before the deleted item retention period expires. For details, see [Recover deleted messages in a user's mailbox](recover-deleted-messages.md).
 
 - To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Understanding Recoverable Items](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
-
-
-

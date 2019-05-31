@@ -167,4 +167,3 @@ Log on to Outlook for a user who is in Exchange Online, and then run the followi
  - Check permissions.
  - Create and delete public folders.
  - Post content to and delete content from a public folder.
-

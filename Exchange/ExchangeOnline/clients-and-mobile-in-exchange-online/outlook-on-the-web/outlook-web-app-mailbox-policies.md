@@ -24,4 +24,3 @@ In Exchange Online, Outlook on the web mailbox policies control the availability
 Every Exchange Online organization has a default Outlook on the web mailbox policy named OwaMailboxPolicy-Default that's applied to all user mailboxes. You can use this policy or create additional policies as necessary to meet the needs of your organization.
 
 For the procedures that you can do on Outlook on the web mailbox policies, see [Outlook on the web mailbox policy procedures in Exchange Online](outlook-web-app-mailbox-policy-procedures.md).
-

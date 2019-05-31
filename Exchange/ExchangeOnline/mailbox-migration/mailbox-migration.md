@@ -115,6 +115,3 @@ If none of the types of migrations described will work for your organization, co
 <a name="Partner"> </a>
 
 [Use PowerShell for email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615247)
-
-
-

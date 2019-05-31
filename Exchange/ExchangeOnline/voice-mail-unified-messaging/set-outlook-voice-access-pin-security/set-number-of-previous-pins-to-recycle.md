@@ -60,6 +60,3 @@ This example sets the PIN recycle count on the UM mailbox policy `MyUMMailboxPol
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -PINHistoryCount 10
 ```
-
-
-

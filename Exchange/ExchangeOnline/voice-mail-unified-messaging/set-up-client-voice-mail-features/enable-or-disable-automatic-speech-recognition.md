@@ -54,6 +54,3 @@ This example disables ASR for a UM-enabled user named `tonysmith`.
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $false
 ```
-
-
-

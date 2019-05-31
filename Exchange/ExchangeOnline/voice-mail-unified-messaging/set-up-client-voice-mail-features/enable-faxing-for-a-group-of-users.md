@@ -55,6 +55,3 @@ This example allows users who are linked with the UM mailbox policy `MyUMMailbox
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowFax $true
 ```
-
-
-

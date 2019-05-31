@@ -53,6 +53,3 @@ This example configures the maximum greeting duration on the UM mailbox policy `
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy MaxGreetingDuration 3
 ```
-
-
-

@@ -48,6 +48,3 @@ manager: dansimp
 [Remove a public folder](remove-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)
-
-
-

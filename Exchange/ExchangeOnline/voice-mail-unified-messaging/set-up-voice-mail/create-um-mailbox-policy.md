@@ -59,6 +59,3 @@ This example creates a UM mailbox policy named `MyUMMailboxPolicy` associated wi
 ```
 New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 ```
-
-
-

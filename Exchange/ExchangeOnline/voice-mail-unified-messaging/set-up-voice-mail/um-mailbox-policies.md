@@ -34,6 +34,3 @@ At least one UM mailbox policy must have been created before you can enable user
 You create UM mailbox policies by using Exchange Online PowerShell or the Exchange admin center (EAC). By default, a single UM mailbox policy is created every time you create a UM dial plan. The new UM mailbox policy is automatically associated with the UM dial plan, and part of the dial plan name is included in the display name of the UM mailbox policy. You can edit this default UM mailbox policy.
 
 Multiple UM-enabled users can be linked to a single UM mailbox policy. However, the mailbox for each UM-enabled user must be linked to a single UM mailbox policy. This lets you control PIN security settings such as the minimum number of digits in a PIN or the maximum number of sign-in attempts for the UM-enabled users who are associated with the UM mailbox policy. You can also control message text settings or dialing restrictions for the same UM-enabled mailboxes.
-
-
-

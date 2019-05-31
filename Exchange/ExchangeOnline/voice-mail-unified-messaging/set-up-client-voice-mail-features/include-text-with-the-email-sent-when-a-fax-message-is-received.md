@@ -58,6 +58,3 @@ This example enables UM-enabled users who are associated with a UM mailbox polic
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -FaxMessageText "To open this fax message, double-click the file attachment."
 ```
-
-
-

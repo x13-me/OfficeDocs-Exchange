@@ -30,6 +30,3 @@ manager: dansimp
 [Enable Voice Mail Preview for users](enable-voice-mail-preview.md)
 
 [Disable Voice Mail Preview for users](disable-voice-mail-preview.md)
-
-
-

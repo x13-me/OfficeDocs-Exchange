@@ -70,4 +70,3 @@ The following table describes the character sets that you can configure in remot
 |windows-1257|Baltic (Windows)|
 |windows-1258|Vietnamese (Windows)|
 |windows-874|Thai (Windows)|
-

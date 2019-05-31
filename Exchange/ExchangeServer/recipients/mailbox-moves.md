@@ -85,7 +85,7 @@ You can create migration endpoints in the EAC or by using the [New-MigrationEndp
 
 The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailbox moves and remote move migrations. By default, the Client Access services on Mailbox servers aren't configured to accept incoming move requests, so you'll need to enable the MRS Proxy endpoint.
 
--  For cross-forest moves from the target forest (pull moves), you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the source forest.
+- For cross-forest moves from the target forest (pull moves), you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the source forest.
 
 - For cross-forest moves from the source forest (push moves), you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the target forest.
 

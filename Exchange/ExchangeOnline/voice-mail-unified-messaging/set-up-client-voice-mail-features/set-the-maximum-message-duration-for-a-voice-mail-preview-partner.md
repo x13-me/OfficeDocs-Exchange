@@ -48,6 +48,3 @@ This example sets the maximum message duration for a Voice Mail Preview partner 
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerMaxMessageDuration 300
 ```
-
-
-

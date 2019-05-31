@@ -37,4 +37,3 @@ The following table contains links to topics that will help you learn about and 
 |[Client Access Rules in Exchange Online](client-access-rules/client-access-rules.md)|Learn how to use Client Access Rules to control connections to Exchange Online.|
 |[Disable Basic authentication in Exchange Online](disable-basic-authentication-in-exchange-online.md)|Learn how to disable Basic auth connections to your Exchange Online mailboxes.|
 |[Enable or disable modern authentication in Exchange Online](enable-or-disable-modern-authentication-in-exchange-online.md)|Learn how to require Modern auth connections to your Exchange Online mailboxes.|
-

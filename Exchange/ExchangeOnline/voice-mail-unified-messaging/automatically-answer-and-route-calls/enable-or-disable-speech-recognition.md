@@ -55,6 +55,3 @@ This example enables ASR on a UM auto attendant named `MySpeechEnabled AA`.
 ```
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -SpeechEnabled $true
 ```
-
-
-

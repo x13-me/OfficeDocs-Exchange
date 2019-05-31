@@ -71,4 +71,3 @@ To verify that you've successfully removed an Outlook on the web mailbox policy,
     ```
     Get-OwaMailboxPolicy
     ```
-

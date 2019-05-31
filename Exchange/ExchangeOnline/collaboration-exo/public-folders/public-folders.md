@@ -124,7 +124,3 @@ We recommend that you use batch migration instead of Outlook's PST export featur
   ```
   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
   ```
-
-
-
-

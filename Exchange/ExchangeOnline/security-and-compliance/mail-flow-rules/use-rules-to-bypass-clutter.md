@@ -64,4 +64,3 @@ You can check email message headers to see if the email messages are landing in 
 
 > [!NOTE]
 > Calendar items (accepted, sent, or declined meetings notifications) won't contain this header.
-

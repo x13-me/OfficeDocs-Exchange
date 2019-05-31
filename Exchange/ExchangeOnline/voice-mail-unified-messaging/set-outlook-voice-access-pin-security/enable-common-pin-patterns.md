@@ -64,6 +64,3 @@ This example allows users associated with the UM mailbox policy named `MyUMMailb
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $true
 ```
-
-
-

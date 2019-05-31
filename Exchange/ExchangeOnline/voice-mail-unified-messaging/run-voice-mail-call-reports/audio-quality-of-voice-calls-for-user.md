@@ -67,6 +67,3 @@ For additional tasks related to UM reports, see [UM reports procedures](um-repor
   - **ROUND TRIP**: The average round trip score, in milliseconds, for audio on the selected call. The round-trip score measures latency on the connection.
 
   - **BURST LOSS DURATION**: The average duration of packet loss during bursts of losses for the selected call.
-
-
-

@@ -28,6 +28,3 @@ manager: dansimp
 [Enable or disable a call answering rule for a user](enable-or-disable-a-call-answering-rule-for-a-user.md)
 
 [Remove a call answering rule for a user](remove-a-call-answering-rule-for-a-user.md)
-
-
-

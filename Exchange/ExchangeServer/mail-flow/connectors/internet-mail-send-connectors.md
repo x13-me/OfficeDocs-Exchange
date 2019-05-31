@@ -62,7 +62,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
   - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
-  -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+  - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
 
     When you're finished, click **Next**.
 

@@ -174,4 +174,3 @@ In addition to your configuring the UM mailbox policy and the user's mailbox to 
 7. Enter the passcode in the **Passcode** box, and then click **Finish**.
 
 8. After the user enables text message notifications, they can click **Set up voice mail notifications** on the **Text Messaging** page. They'll be taken back to the voice mail page, where they can scroll down to the **Notifications** section and set up text message notification options for missed calls and voice mail.
-

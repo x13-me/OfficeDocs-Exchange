@@ -20,18 +20,18 @@ When you're upgrading a Microsoft Exchange 2010 organization with Unified Messag
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 45-90 minutes.
+- Estimated time to complete this task: 45-90 minutes.
 
-  - Verify that you have the appropriate permissions in the Exchange 2010 and Exchange 2013 organization to create and configure all the required components.
+- Verify that you have the appropriate permissions in the Exchange 2010 and Exchange 2013 organization to create and configure all the required components.
 
-  - Verify that you've deployed and correctly configured your telephony components, including VoIP gateways and PBXs, IP PBXs, or Session Initiation Protocol (SIP)-enabled PBXs.
+- Verify that you've deployed and correctly configured your telephony components, including VoIP gateways and PBXs, IP PBXs, or Session Initiation Protocol (SIP)-enabled PBXs.
 
-  - Verify that you've correctly installed and configured the Client Access servers running the Microsoft Exchange Unified Messaging Call Router (UM Call Router) service and Mailbox servers running the Microsoft Exchange Unified Messaging (UM) service. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
+- Verify that you've correctly installed and configured the Client Access servers running the Microsoft Exchange Unified Messaging Call Router (UM Call Router) service and Mailbox servers running the Microsoft Exchange Unified Messaging (UM) service. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
     > [!WARNING]
     > You must deploy at least one Exchange 2013 Mailbox server in your organization before you configure the VoIP gateways or IP PBXs to send UM SIP and RTP traffic to the Exchange 2013 Client Access servers.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -81,9 +81,9 @@ There could be situations that the Exchange 2010 system mailbox has been moved a
 
 Custom greetings, announcements, menus, and prompts are audio files (in .wav or .wma format) that are used by UM for the following purposes:
 
-  - On UM dial plans, the audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
+- On UM dial plans, the audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
 
-  - On UM auto attendants, the audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
+- On UM auto attendants, the audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
 
 When you're exporting and importing custom greetings, announcements, menus, and prompts from Exchange 2010 to Exchange 2013, you must use the **Export-UMPrompt** and **Import-UMPrompt** cmdlets. You can't use the EAC to export or import custom prompts. On an Exchange 2010 server, use the **Export-UMPrompt** cmdlet to export the Exchange 2010 dial plan and auto attendant prompts. After you've exported the prompts, you can import them to the Exchange 2013 Mailbox server. When you run the **Export-UMPrompt** cmdlet from your Exchange 2010 server, the command performs a GUID or object identifier lookup for the dial plan or auto attendant in Active Directory and queries it to determine if there are any custom greetings, announcements, menus, or prompts. If found, the custom greetings, announcements, menus, or prompts will be saved to the directory that you specify. After you've exported all custom greetings, announcements, menus, and prompts, use the **Import-UMPrompt** cmdlet to import the prompts into your Exchange 2013 system mailbox.
 
@@ -117,29 +117,29 @@ This example imports the welcome greeting `welcomegreeting.wav` from d:\\UMPromp
 
 To learn more about custom prompts for UM, see:
 
-  - [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
+- [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
 
-  - [Import-UMPrompt](https://technet.microsoft.com/en-us/library/dd876899\(v=exchg.150\))
+- [Import-UMPrompt](https://technet.microsoft.com/en-us/library/dd876899\(v=exchg.150\))
 
-  - [Export-UMPrompt](https://technet.microsoft.com/en-us/library/dd876882\(v=exchg.150\))
+- [Export-UMPrompt](https://technet.microsoft.com/en-us/library/dd876882\(v=exchg.150\))
 
-  - [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
+- [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
 
 ## Step 4: Export and import certificates
 
 If you're using SIP secured or Secured dial plans in your Exchange 2010 organization, you'll need to export and import the certificates that were used to your Exchange 2013 Client Access and Mailbox servers. Mutual Transport Layer Security (mutual TLS) is used to encrypt data sent between your Exchange 2013 servers and the VoIP gateways, IP PBXs, and SIP-enabled PBXs. Certificates bind the identity of the certificate owner to a pair of electronic keys (public and private) that are used to encrypt and sign information digitally. You can use one of the following certificates for the UM and UM Call Router services:
 
-  - A self-signed (Exchange) certificate
+- A self-signed (Exchange) certificate
 
-  - An internal public key infrastructure (PKI) certificate
+- An internal public key infrastructure (PKI) certificate
 
-  - A third-party commercial certificate
+- A third-party commercial certificate
 
 By default, when you install Exchange 2013, two self-signed certificates are created: **Microsoft Exchange Server Auth Certificate** and **Microsoft Exchange**. The **Microsoft Exchange** self-signed certificate can be used for UM to encrypt data, but you must assign the certificate to the UM and UM Call Router services. This self-signed certificate can be copied and then imported on the VoIP gateways, IP PBXs, and SIP-enabled PBXs. However, it can't be used when you're integrating UM with Microsoft Lync Server.
 
 To enable UM to encrypt data that's sent between your Exchange 2013 servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs, you need to do the following:
 
-  - Use an existing self-signed UM certificate, create a new self-signed Exchange certificate, submit a certificate request to an internal certification authority for a PKI certificate, or purchase a third-party commercial certificate that you can use for mutual TLS between your Exchange 2013 Mailbox and Client Access servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs.
+- Use an existing self-signed UM certificate, create a new self-signed Exchange certificate, submit a certificate request to an internal certification authority for a PKI certificate, or purchase a third-party commercial certificate that you can use for mutual TLS between your Exchange 2013 Mailbox and Client Access servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs.
 
     Create an Exchange self-signed certificate by using the EAC, as follows:
 
@@ -167,9 +167,9 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
     > [!NOTE]
     > If you specify the services you want to enable by using the <EM>Services</EM> parameter, you will be prompted to enable the services for the certificate you created. In this example, you will be prompted to enable the certificate for the Unified Messaging and Unified Messaging Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
-  - Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2010, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2010 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2010 UM servers to the SAN in the Exchange 2013 certificate.
+- Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2010, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2010 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2010 UM servers to the SAN in the Exchange 2013 certificate.
 
-  - Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
+- Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
 
     Enable the UM service and UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
@@ -183,15 +183,15 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
         Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
     ```
 
-  - Configure any new or existing UM dial plans as SIP secured or Secured.
+- Configure any new or existing UM dial plans as SIP secured or Secured.
 
-  - Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
+- Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
 
-  - Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
+- Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
 
-  - Configure the listening port on the UM IP gateways to use TLS port 5061.
+- Configure the listening port on the UM IP gateways to use TLS port 5061.
 
-  - Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
+- Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
 ## Step 5: Configure the UM startup mode on all Exchange 2013 Client Access servers
 
@@ -483,13 +483,13 @@ During the process of upgrading, there will be a period of time during which you
 
 A move request is the process of moving a mailbox from one mailbox database to another. A local move request is a mailbox move that occurs within a single forest. For more information about mailbox moves, see:
 
-  - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
+- [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-  - [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
 
-  - [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
 
-  - [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
+- [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
 
 To move an Exchange 2010 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
@@ -587,11 +587,11 @@ When you're upgrading to Exchange 2013 UM, you should have already installed and
 
 The last step in the process of upgrading to Exchange 2013 UM is to configure the VoIP gateways, IP PBXs, or SIP-enabled PBXs to send incoming calls (including callers who want to leave voice mail for a user, calls from UM-enabled users calling in to Outlook Voice Access, and calls from callers that dial in to a UM auto attendant) to your Exchange 2013 Client Access servers. All these calls are received first by a VoIP gateway, IP PBX, or SIP-enabled PBX and then forwarded on to the Exchange 2013 Client Access servers in your Exchange 2013 organization. For more information, see the following resources:
 
-  -  [UM services](um-services-exchange-2013-help.md)
+- [UM services](um-services-exchange-2013-help.md)
 
-  -  [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
+- [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
+- [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
 ## Step 15: Disable call answering on an Exchange 2010 Unified Messaging server
 
@@ -666,10 +666,10 @@ Set-UMServer -id MyUMServer -DialPlans SipDP1
 
 After you've set up Unified Messaging, verify the following to ensure it's working correctly:
 
-  - A user you've enabled for voice mail can sign in to Outlook Web App or Outlook and see a Welcome Message for Unified Messaging.
+- A user you've enabled for voice mail can sign in to Outlook Web App or Outlook and see a Welcome Message for Unified Messaging.
 
-  - UM users can receive voice messages.
+- UM users can receive voice messages.
 
-  - UM users can call in to an Outlook Voice Access number to listen to email, calendar items, and voice mail.
+- UM users can call in to an Outlook Voice Access number to listen to email, calendar items, and voice mail.
 
-  - UM is routing calls from outside of your organization, and you can place a call.
+- UM is routing calls from outside of your organization, and you can place a call.

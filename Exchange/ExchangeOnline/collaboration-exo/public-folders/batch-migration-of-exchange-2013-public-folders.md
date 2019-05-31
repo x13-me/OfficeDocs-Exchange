@@ -620,4 +620,3 @@ The following are common public folder migration issues that you may experience 
 After the migration is complete and you have verified that your public folders in Exchange Online are working as expected and contain all expected data, you can remove your on-premises public folder mailboxes.
 
 Be aware that this step is irreversible, because once public folder mailboxes are deleted, they cannot be recovered. Therefore, we strongly recommend that, in addition to verifying the success of your migration, you also monitor your Exchange Online public folders for a few weeks before you remove the on-premises public folder mailboxes.
-

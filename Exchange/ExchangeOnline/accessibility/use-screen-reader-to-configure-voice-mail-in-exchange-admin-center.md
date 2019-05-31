@@ -93,4 +93,3 @@ After you've configured your UM dial plan, you can enable voice features for ind
 17. The focus returns to the **User Mailbox** dialog box, where the **Phone and Voice Features** section now shows that Unified Messaging is enabled.
 
 18. Tab to the **Save** button and press Enter. The **mailboxes** list view has the focus.
-
