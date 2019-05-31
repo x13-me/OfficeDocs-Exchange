@@ -21,7 +21,7 @@ manager: dansimp
 
  **Summary**: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.
 
-Users with modern authentication-enabled accounts (Microsoft 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)) have two ways to set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. In addition, Outlook for iOS and Android also offers IT administrators the ability to "push" account configurations to their Microsoft 365 users, and to control whether Outlook for iOS and Android supports personal accounts.
+Users with modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)) have two ways to set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. In addition, Outlook for iOS and Android also offers IT administrators the ability to "push" account configurations to their Office 365 users, and to control whether Outlook for iOS and Android supports personal accounts.
 
 ## Modern Authentication
 
