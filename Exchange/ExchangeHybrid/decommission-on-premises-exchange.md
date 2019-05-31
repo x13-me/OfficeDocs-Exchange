@@ -163,6 +163,14 @@ The graphic below describes the actual end state:
 
 ![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
+>[!TIP]
+> In case that you decide to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. 
+> So each service will authenticate users independenly: 
+> * **O365 identity service** will manage online request 
+> * **Active directory** will manage the internal authentication
+> 
+>  If you don't have any mailbox on-premises, you can safely decommission your exchange server(s).
+
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
 1. Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
