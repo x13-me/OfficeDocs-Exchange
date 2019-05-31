@@ -70,6 +70,3 @@ This example associates a UM-enabled user named Tony Smith with a UM mailbox pol
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy
 ```
-
-
-

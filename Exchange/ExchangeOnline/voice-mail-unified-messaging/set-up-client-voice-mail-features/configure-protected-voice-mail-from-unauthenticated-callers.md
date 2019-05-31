@@ -67,6 +67,3 @@ This example protects all voice messages from all unauthenticated callers on the
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ProtectUnauthenticatedVoiceMail -All
 ```
-
-
-

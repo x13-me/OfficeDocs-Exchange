@@ -226,4 +226,3 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    ```
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
-

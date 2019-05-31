@@ -39,4 +39,3 @@ For help with everyday email tasks, such as organizing your contacts in Outlook,
 - [Create a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615370)
 
 - [Send an email message to a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615391)
-

@@ -54,6 +54,3 @@ This example enables Tony Smith to receive incoming faxes.
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -FaxEnabled $true
 ```
-
-
-

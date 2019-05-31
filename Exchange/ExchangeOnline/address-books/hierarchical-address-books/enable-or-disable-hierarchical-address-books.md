@@ -247,4 +247,3 @@ To verify that you've successfully disabled hierarchical address book, use any o
 - Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. Verify that the entries in the address book are displayed in alphabetical order.
 
 - In Exchange Online PowerShell, run the following command to verify that the **HierarchicalAddressBookRoot** property value is blank:
-

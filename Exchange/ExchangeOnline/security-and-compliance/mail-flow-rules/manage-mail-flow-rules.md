@@ -385,4 +385,3 @@ Resources for Exchange Server:
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
 
 [Mail flow rule actions in Exchange Server](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
-

@@ -144,4 +144,3 @@ To verify that you have successfully configured Direct to Calendar meeting invit
 - If the designated mailbox sends a meeting cancellation for a Direct to Calendar meeting, the cancelled meeting title is always changed to **CANCELED: \<previous meeting title\>**, and the cancelled meeting remains in the calendars of attendees until they manually remove it.
 
 - Meeting cancellation messages for Direct to Calendar meetings will always appear in the Inbox of recipients.
-

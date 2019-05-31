@@ -146,7 +146,7 @@ Message traces for items more than 7 days old are only available as a downloadab
     When you select a specific message trace, additional information appears in the right pane. Depending on what search criteria you specified, this may include details such as the date range for which the trace was run, and the sender and intended recipients of the message.
 
 > [!NOTE]
->  Message traces containing data that is greater than 7 days old are automatically deleted. They cannot be manually deleted.
+> Message traces containing data that is greater than 7 days old are automatically deleted. They cannot be manually deleted.
 
 #### Common questions about message trace
 
@@ -169,4 +169,3 @@ Possible causes include the following:
 - Latency in the service is causing delays.
 
 - The message was blocked by the filtering service.
-

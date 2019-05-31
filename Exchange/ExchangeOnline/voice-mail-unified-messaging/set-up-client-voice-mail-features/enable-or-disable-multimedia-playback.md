@@ -82,6 +82,3 @@ This example prevents users who are associated with the UM mailbox policy named 
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $true
 ```
-
-
-

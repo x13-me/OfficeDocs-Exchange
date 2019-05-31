@@ -64,6 +64,3 @@ This example allows users who are linked with the UM mailbox policy `UMDialPlan 
 ```
 Set-UMMailboxPolicy "UMDialPlan Default Policy" -FaxServerURI sip:faxserver2.contoso.com:5061;transport=tls
 ```
-
-
-

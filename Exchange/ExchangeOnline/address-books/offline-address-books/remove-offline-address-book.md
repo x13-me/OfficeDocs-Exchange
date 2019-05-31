@@ -50,4 +50,3 @@ To verify that you've successfully removed the OAB, run the following command to
 ```
 Get-OfflineAddressBook
 ```
-

@@ -54,6 +54,3 @@ This example prevents a UM-enabled user named Tony from receiving fax messages i
 ```
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```
-
-
-

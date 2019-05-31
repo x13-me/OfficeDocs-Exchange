@@ -223,6 +223,3 @@ Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigrati
 ```
 Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Get-ADPermission -User migadmin
 ```
-
-
-

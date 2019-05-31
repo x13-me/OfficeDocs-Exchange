@@ -48,6 +48,3 @@ This example sets the default language on a UM dial plan named `MyUMDialPlan` to
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -DefaultLanguage en-AU
 ```
-
-
-

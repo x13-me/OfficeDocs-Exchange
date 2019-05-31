@@ -384,4 +384,3 @@ For third-party migration solutions that use the RPC over HTTP Protocol, here's 
 ### Factor 5: Office 365 service
 
 Office 365 resource health-based throttling affects migrations using third-party migration tools. See [Office 365 resource health-based throttling](#office-365-resource-health-based-throttling) for more details.
-

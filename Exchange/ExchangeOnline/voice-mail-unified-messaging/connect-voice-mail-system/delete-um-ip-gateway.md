@@ -52,6 +52,3 @@ This example deletes the UM IP gateway named `MyUMIPGateway`.
 ```
 Remove-UMIPGateway -Identity MyUMIPGateway
 ```
-
-
-

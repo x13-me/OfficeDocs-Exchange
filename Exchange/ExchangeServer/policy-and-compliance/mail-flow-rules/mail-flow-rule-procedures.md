@@ -292,7 +292,7 @@ By default, mail flow rules are given a priority that's based on the order they 
 
  **Notes**:
 
--  You can prevent a message from being acted on by subsequent lower priority rules by including the **Stop processing more rules** (_StopRuleProcessing_ `$true`) action in the rule.
+- You can prevent a message from being acted on by subsequent lower priority rules by including the **Stop processing more rules** (_StopRuleProcessing_ `$true`) action in the rule.
 
 - In the EAC, you can only change the priority of the rule after you create it. In the Exchange Management Shell, you can override the default priority when you create the rule (which can affect the priority of existing rules).
 

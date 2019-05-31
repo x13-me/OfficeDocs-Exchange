@@ -56,6 +56,3 @@ This example disables directory lookups on a UM auto attendant named `MyUMAutoAt
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -NameLookupEnabled $false
 ```
-
-
-

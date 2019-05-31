@@ -516,6 +516,3 @@ To change their PIN using the telephone keypad, users must do the following:
 This process is shown in the following figure.
 
 ![Change PIN](../../media/ChangePinTUI.gif)
-
-
-

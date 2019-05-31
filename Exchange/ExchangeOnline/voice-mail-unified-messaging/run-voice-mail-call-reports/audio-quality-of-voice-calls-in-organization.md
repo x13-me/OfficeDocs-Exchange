@@ -79,6 +79,3 @@ For additional tasks related to call statistics see [UM reports procedures](um-r
   - **NUMBER OF SAMPLES**: The number of calls that were sampled to calculate the averages.
 
 4. For detailed audio quality metrics for specific calls, see [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md).
-
-
-

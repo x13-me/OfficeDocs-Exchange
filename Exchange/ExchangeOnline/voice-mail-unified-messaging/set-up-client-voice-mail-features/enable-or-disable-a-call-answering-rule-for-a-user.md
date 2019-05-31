@@ -85,6 +85,3 @@ This example disables the call answering rule `MyUMCallAnsweringRule` in the mai
 ```
 Disable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -Confirm
 ```
-
-
-

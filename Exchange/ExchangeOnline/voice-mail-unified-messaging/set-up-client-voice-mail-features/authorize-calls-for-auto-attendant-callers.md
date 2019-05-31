@@ -65,6 +65,3 @@ This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2. Interna
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```
-
-
-

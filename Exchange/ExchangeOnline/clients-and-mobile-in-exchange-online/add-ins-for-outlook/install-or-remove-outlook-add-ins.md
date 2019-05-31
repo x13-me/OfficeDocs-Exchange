@@ -18,4 +18,3 @@ manager: dansimp
 # Install or remove add-ins for Outlook for your organization
 
 We recommend that you manage Office add-ins for your Exchange Online organization via Centralized Deployment in the Office 365 admin center. For more information, see [Manage deployment of Office 365 add-ins in the Office 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins).
-

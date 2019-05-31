@@ -26,6 +26,3 @@ manager: dansimp
 [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md)
 
 [Interpret voice mail call records](interpret-voice-mail-call-records.md)
-
-
-

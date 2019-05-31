@@ -69,5 +69,3 @@ Your users can now use Outlook on the web to perform the following tasks in thei
 ## See also
 
 [Create a public folder in Outlook](https://support.office.com/article/d5981360-28d3-4c8f-a373-c98ae570420a)
-
-

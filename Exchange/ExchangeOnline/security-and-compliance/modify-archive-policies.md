@@ -105,6 +105,3 @@ This command retrieves properties of the `Default 2 year move to archive` retent
 ```
 Get-RetentionPolicyTag "Default 2 year move to archive" | Format-List
 ```
-
-
-

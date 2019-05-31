@@ -135,7 +135,7 @@ If you're comfortable setting up a migration to Office 365, here are the tasks t
 
 - Using either Microsoft Azure Active Directory Synchronization Tool or Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365.
 
--  Configuring Exchange Server by using the Exchange admin center.
+- Configuring Exchange Server by using the Exchange admin center.
 
 - Changing your organization's MX record to point to Office 365 when the migration is complete. Your MX record is how other mail systems find the location of your email system. Changing your MX record allows other mail systems to begin to send email directly to the new mailboxes in Office 365.
 
@@ -161,5 +161,3 @@ If you're ready to begin a staged email migration, you can use the steps given i
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
 [Use PowerShell to perform a staged migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615255)
-
-

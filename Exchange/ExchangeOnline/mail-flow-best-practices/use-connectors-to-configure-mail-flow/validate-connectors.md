@@ -54,5 +54,3 @@ If your organization has its own email server (also called on-premises server), 
 [Fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [When do I need a connector?](use-connectors-to-configure-mail-flow.md#when-do-i-need-a-connector)
-
-

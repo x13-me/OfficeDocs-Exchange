@@ -297,4 +297,3 @@ When a message matches a mail flow rule, a sample custom_data entry would look s
 [Message Trace FAQ](message-trace-faq.md) presents messaging questions that a user may have, along with possible answers. It also describes how to use the message trace tool in order to get those answers and troubleshoot specific mail delivery issues.
 
 [Can I run a message trace via Exchange Online PowerShell or Exchange Online Protection PowerShell? What are the cmdlets to use?](message-trace-faq.md#can-i-run-a-message-trace-via-exchange-online-powershell-or-exchange-online-protection-powershell-what-are-the-cmdlets-to-use) gives information about the PowerShell cmdlets that you can use to run a message trace.
-

@@ -44,6 +44,3 @@ You can use the following topics to help you gather call statistics and reports 
 - [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md) If a user is experiencing problems with the audio quality of UM calls, use the audio quality details from the user call logs to help you understand what's causing the problems.
 
 - [Interpret voice mail call records](interpret-voice-mail-call-records.md) Export more detailed data to diagnose problems with audio quality or rejected calls, and to provide information for audits or reports about your UM service.
-
-
-

@@ -55,6 +55,3 @@ This example sets the maximum recording duration to 10 minutes for a UM dial pla
 ```
 Set-UMDialPlan -identity MyUMDialPlan -MaxRecordingDuration 10
 ```
-
-
-

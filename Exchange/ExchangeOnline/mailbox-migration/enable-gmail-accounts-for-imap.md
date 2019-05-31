@@ -43,6 +43,3 @@ To make your Gmail messages accessible by Microsoft Outlook, you need to enable 
 3. Choose **Settings** \> **Forwarding and POP/IMAP**.
 
 4. Select **Enable IMAP**, and then choose **Save Changes**.
-
-
-
