@@ -185,7 +185,7 @@ The graphic below describes the actual end state:
 
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
-   ```
+   ```Powershell
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
 
@@ -194,7 +194,7 @@ The graphic below describes the actual end state:
 
 4. To prevent the hybrid configuration objects from being recreated in the future, you should remove the hybrid configuration object from Active Directory. To do this, open the Exchange Management Shell and run the following:
 
-   ```
+   ```Powershell
    Remove-HybridConfiguration
    ```
 
@@ -208,7 +208,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```
+      ```Powershell
       Set-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -218,7 +218,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```
+      ```Powershell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
