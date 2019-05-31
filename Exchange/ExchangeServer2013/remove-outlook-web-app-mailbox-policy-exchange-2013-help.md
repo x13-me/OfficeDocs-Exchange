@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove an Outlook Web App mailbox policy from Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can remove a Microsoft Outlook Web App mailbox policy from an Exchange organization by using either the EAC or the Shell.
 

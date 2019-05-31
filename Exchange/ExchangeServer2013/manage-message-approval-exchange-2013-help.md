@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage message approval in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Sometimes it makes sense to have a second set of eyes on a message before the message is delivered. As an Exchange administrator, you can set this up. This process is called moderation, and the approver is called the moderator. Depending on which messages need approval, you can use one of two approaches:
 

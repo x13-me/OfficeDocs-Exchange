@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Allow Message Waiting Indicator procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Allow Message Waiting Indicator (MWI) on a UM IP gateway](allow-mwi-on-um-ip-gateway-exchange-2013-help.md)
 

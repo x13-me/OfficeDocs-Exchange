@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Provision recipients for offline address book downloads in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 If you use multiple offline address books (OABs) in your organization, there are several ways to specify which recipients download which OABs:
 

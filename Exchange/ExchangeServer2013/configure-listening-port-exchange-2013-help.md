@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure the listening port in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the TCP port that's used to listen for Session Initiation Protocol (SIP) requests on a Unified Messaging (UM) IP gateway. By default, when you create a UM IP gateway, the TCP SIP listening port number is set to 5060. The TCP SIP listening port can't be configured or changed by using the EAC. You must configure the TCP SIP listening port number by using the **Set-UMIPGateway** cmdlet.
 

@@ -67,7 +67,7 @@ Key telephone systems have become more sophisticated over time and can work with
 
     IP PBXs are frequently easier to administer than legacy PBXs, because administrators can more easily configure IP PBX services using an Internet browser or another IP-based tool. Also, no additional wiring, cabling, or patch panels have to be installed. With an IP PBX, you can move an IP-based telephone by merely unplugging the telephone and plugging it in at a new location. This lets you avoid the costly service calls required to move a telephone from legacy PBX vendors. Additionally, organizations that own an IP PBX don't have to incur the additional infrastructure costs required to maintain and manage separate circuit-switched and packet-switched networks. For a list of IP PBXs supported for Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
-    Return to top
+
 
 ## Legacy and traditional PBX configurations
 
@@ -105,8 +105,6 @@ By correctly configuring your PBX, you can control how many channels or lines yo
 
 A PBX can route a specific dialed telephone number to a specific telephone so users can have their own individual telephone number or extension number. This is known as a Direct Inward Dialing number. When the telephone number is dialed for a user, the telephone company sends the DID number to the PBX by using Dialed Number Identification Service (DNIS). Because the telephone company uses DNIS to send the number, there's no need for operator intervention to route the call. The PBX has the information about the call to correctly route it to the number that was dialed by the caller. For a list of PBXs supported by Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
-Return to top
-
 ## Analog and digital PBXs
 
 Analog PBXs send voice and call signaling information, such as the touch tones of a dialed telephone number, as an analog sound. Therefore, the sound is never digitized. To correctly direct the call, the PBX and the telephone company's central office have to listen for the signaling information.
@@ -130,8 +128,6 @@ In a telephony environment that includes a single or multiple analog or digital 
 - [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)
 
 For a list of VoIP gateways supported for Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
-
-Return to top
 
 ## IP PBX configurations
 
@@ -158,8 +154,6 @@ The mixture of analog, digital, and IP-based telephones makes it possible for us
 
 Several factors determine whether a VoIP gateway will be required when you connect with Client Access and Mailbox servers. One of these factors is the compatibility of the VoIP protocols used by the IP PBX or hybrid IP PBX and Unified Messaging. If a VoIP gateway isn't required, it will reduce the complexity of the telephony infrastructure, and the support that you must have for Unified Messaging will be simpler.
 
-Return to top
-
 ## Calling or called party identification
 
 Calling or called party identification is a telephone company service that can tell the person who is receiving the call the telephone number and sometimes the name of the person who is calling and other information about the call. This information is sent over a serial cable by using call signaling. When a call is received by a PBX or IP PBX from a telephone company, the call includes calling identification information such as the following:
@@ -179,5 +173,3 @@ Although other signaling methods can be used, the two most popular signaling met
 - **Simplified Message Desk Interface (SMDI)**: SMDI is a protocol that's used to provide signaling, call control, and calling identification information from an interface between a telephone system and a voice mail system. It's used to provide the voice mail system with the information it needs to process an incoming call. Every time an incoming call is sent by using SMDI over a serial interface or RS-232 interface, the information that's sent will identify the line or port, the type of call, and the calling or called party numbers. The SMDI cable connects from a device such as a PBX to a serial connection on the VoIP gateway. However, SMDI is also used with IP PBXs. The SMDI protocol allows for a maximum of only 10 digits for each calling and called number. This is a limitation of the protocol and can't be changed.
 
 - **In-band:** In-band signaling allows for the exchange of signaling, call control, and calling identification information from a telephone company. This information is sent over the same channel and in the same band (300 Hz to 3.4 kHz) as the voice and other sounds that are being made during the call. For example, when a user places a call by using DTMF or touchtone dialing and talks to the called party, both the touchtone and the voice conversation use the same channel and band. In-band signaling is less secure because the control signals are exposed to the user and is a less popular signaling method than SMDI. In-band signaling applies only to Channel Associated Signaling (CAS).
-
-Return to top

@@ -64,8 +64,6 @@ In Exchange 2013, the ultimate destination for a message is called a *routing de
 
 Note that these same routing destinations also existed in previous versions of Exchange.
 
-Return to top
-
 ## Delivery groups
 
 Each routing destination in Exchange 2013 has a collection of one or more transport servers that are responsible for delivering messages to that routing destination. This collection of transport servers is called a *delivery group*. A transport server could be an Exchange 2013 Mailbox server, or an Exchange 2010 server or Exchange 2007 server that has the Hub Transport server role installed. When the routing destination is a mailbox database, the transport servers in the delivery group are the same version of Exchange as the mailbox database. When the routing destination is a connector or a distribution group expansion server, the delivery group may contain a mixture of Exchange 2013 Mailbox servers and Exchange 2010 or Exchange 2007 Hub Transport servers. How the message is routed depends on the relationship between the source transport server and the destination delivery group:
@@ -144,15 +142,11 @@ The following table maps the routing destinations to the delivery group based on
 </tbody>
 </table>
 
-Return to top
-
 ## Queues
 
 From the perspective of the sending server, each delivery queue represents the destination for a particular message. When the Transport service on the Exchange 2013 Mailbox server selects the destination for a message, the destination is stamped on the recipient as the **NextHopSolutionKey** attribute. If a single message is being sent to more than one recipient, each recipient has the **NextHopSolutionKey** attribute. The receiving server also performs message categorization and queues the message for delivery. After a message is queued, you can examine the delivery type for a particular queue to determine whether a message will be relayed again when it reaches the next hop destination. Every unique value of the **NextHopSolutionKey** attribute corresponds to a separate delivery queue.
 
 For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
-
-Return to top
 
 ## Routing messages
 
@@ -178,13 +172,9 @@ In Exchange 2010, each message recipient is always associated with only one Acti
 
   - **Fallback options when connection attempts to all servers in the destination routing group fail**: If the destination delivery group spans multiple Active Directory sites, the first fallback option is all other servers in the destination delivery group in other Active Directory sites that aren't selected as target servers. Server selection is made based on the cost of the routing path to those other Active Directory sites. If the destination delivery group has any servers in the local Active Directory site, there are no other fallback options because the message is already as close to the target routing destination as possible. If the destination delivery group has servers in remote Active Directory sites, the option is to try to connect to all other servers in the primary site. If that fails, a backoff path in the least-cost routing path to the primary site is used. Exchange 2013 tries to deliver the message as close to the destination as possible by backing off, hop by hop, along the least-cost routing path until a connection is made.
 
-Return to top
-
 ## Routing messages between Active Directory sites
 
 The way that Exchange 2013 routes messages between Active Directory sites is virtually the same as Exchange 2010. For more information, see [Route mail between Active Directory sites](route-mail-between-active-directory-sites-exchange-2013-help.md).
-
-Return to top
 
 ## Routing in the Front End Transport service on Client Access servers
 
@@ -213,8 +203,6 @@ Depending on the number and type of recipients, the Front End Transport service 
   - For messages with multiple mailbox recipients, use the first 20 recipients to select a Mailbox server in the closest delivery group, based on the proximity of the Active Directory site. Note that message bifurcation doesn't occur in Front-End Transport, so only one Mailbox server is ultimately selected, regardless of number of recipients in a message.
 
   - If the message has no mailbox recipients, select a random Mailbox server in the local Active Directory site.
-
-Return to top
 
 ## Routing in the Mailbox Transport service on Mailbox servers
 
@@ -254,8 +242,6 @@ When the Mailbox Transport Delivery service receives a message from the Transpor
 
   - Reroute the message
 
-Return to top
-
 ## Routing in the Transport service on Edge Transport servers
 
 If you have an Edge Transport server installed in your perimeter network, the Transport service on the Edge Transport server provides SMTP relay and smart host services for all Internet-facing mail flow. Messages that come and go from the Internet are queued locally on the Edge Transport server. The queues correspond to external domains or Send connectors. For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
@@ -273,5 +259,3 @@ Inbound mail from external recipients arrives on the Edge Transport through the 
   - **Mailbox server and Client Access server installed on different computers**: In this configuration, the Client Access server is bypassed for inbound mail flow. Mail flows from the Send connector in the Transport service on the Edge Transport server to the default Receive connector in the Transport service on the Mailbox server.
 
 If you have an Exchange 2007 or Exchange 2010 Edge Transport server installed in the perimeter network, inbound and outbound mail flow always occurs directly between the Edge Transport server and the Mailbox server. The Client Access server isn't used.
-
-Return to top

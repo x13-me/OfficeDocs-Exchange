@@ -120,15 +120,11 @@ The following table defines the core components associated with federation in Ex
 
 The Azure Active Directory authentication system, a free cloud-based service offered by Microsoft, acts as the trust broker between your on-premises Exchange 2013 organization and other federated Exchange 2010 and Exchange 2013 organizations. If you want to configure federation in your Exchange organization, you must establish a one-time federation trust with the Azure Active Directory authentication system, so that it can become a federation partner with your organization. With this trust in place, users authenticated by Active Directory (known as *identity providers*) are issued Security Assertion Markup Language (SAML) delegation tokens by the Azure AD authentication system. These delegation tokens allow users from one federated Exchange organization to be trusted by another federated Exchange organization. With the Azure AD authentication system acting as the trust broker, organizations aren't required to establish multiple individual trust relationships with other organizations, and users can access external resources using a single sign-on (SSO) experience. For more information, see [Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=392500).
 
-Return to top
-
 ## Federation trust
 
 To use Exchange 2013 federated sharing features, you must establish a federation trust between your Exchange 2013 organization and the Azure AD authentication system. Establishing a federation trust with the Azure AD authentication system exchanges your organization's digital security certificate with the Azure AD authentication system and retrieves the Azure AD authentication system certificate and federation metadata. You can establish a federation trust by using the **Enable federation trust** wizard in the Exchange Administration Center (EAC) or the **New-FederationTrust** cmdlet in the Exchange Management Shell. A self-signed certificate is automatically created by the **Enable federation trust** wizard and is used for signing and encrypting delegation tokens from the Azure AD authentication system that allow users to be trusted by external federated organizations. For details about certificate requirements, see Certificate Requirements for Federation later in this topic.
 
 When you create a federation trust with the Azure AD authentication system, an *application identifier* (AppID) is automatically generated for your Exchange organization and provided in the output of the **Get-FederationTrust** cmdlet. The AppID is used by the Azure AD authentication system to uniquely identify your Exchange organization. It's also used by the Exchange organization to provide proof that your organization owns the domain for use with the Azure AD authentication system. This is done by creating a text (TXT) record in the public Domain Name System (DNS) zone for each federated domain.
-
-Return to top
 
 ## Federated organization identifier
 
@@ -140,8 +136,6 @@ You can add or remove accepted domains from the federation trust at any time. If
 
 > [!IMPORTANT]
 > If you change the OrgID, accepted domains, or the AppID used for the federation trust, all federation sharing features are affected in your organization. This also affects any external federated Exchange organizations, including Exchange Online and hybrid deployment configurations. We recommend that you notify all external federated partners of any changes to these federation trust configuration settings.
-
-Return to top
 
 ## Federation example
 
@@ -178,8 +172,6 @@ If you want to use an X.509 certificate signed by an external CA, the certificat
 > [!NOTE]
 > Because the certificate isn't used for authentication, it doesn't have any subject name or subject alternative name requirements. You can use a certificate with a subject name that's the same as the host name, the domain name, or any other name.
 
-Return to top
-
 ## Transitioning to a new certificate
 
 The certificate used to create the federation trust is designated as the current certificate. However, you may need to install and use a new certificate for the federation trust periodically. For example, you may need to use a new certificate if the current certificate expires or to meet a new business or security requirement. To ensure a seamless transition to a new certificate, you must install the new certificate on your Exchange 2013 server and configure the federation trust to designate it as the new certificate. Exchange 2013 automatically distributes the new certificate to all other Exchange 2013 servers in the organization. Depending on your Active Directory topology, distribution of the certificate may take a while. You can verify the certificate status using the [Test-FederationTrustCertificate](https://technet.microsoft.com/en-us/library/dd335228\(v=exchg.150\)) cmdlet in the Shell.
@@ -189,12 +181,9 @@ After you verify the certificate's distribution status, you can configure the tr
 > [!NOTE]
 > This certificate transition process is used only by federation. If you use the same certificate for other Exchange 2013 features that require certificates, you must take the feature requirements into consideration when planning to procure, install, or transition to a new certificate.
 
-Return to top
-
 ## Firewall Considerations for Federation
 
 Federation features require that the Mailbox and Client Access servers in your organization have outbound access to the Internet by using HTTPS. You must allow outbound HTTPS access (port 443 for TCP) from all Exchange 2013 Mailbox and Client Access servers in the organization.
 
 For an external organization to access your organization's free/busy information, you must publish one Client Access server to the Internet. This requires inbound HTTPS access from the Internet to the Client Access server. Client Access servers in Active Directory sites that don't have a Client Access server published to the Internet can use Client Access servers in other Active Directory sites that are accessible from the Internet. The Client Access servers that aren't published to the Internet must have the external URL of the Web services virtual directory set with the URL that's visible to external organizations.
 
-[Return to top](sharing-exchange-2013-help.md)

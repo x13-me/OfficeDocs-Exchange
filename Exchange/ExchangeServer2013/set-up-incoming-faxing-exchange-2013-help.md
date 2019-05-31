@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Setting up incoming faxing in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange servers aren't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange server redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
 

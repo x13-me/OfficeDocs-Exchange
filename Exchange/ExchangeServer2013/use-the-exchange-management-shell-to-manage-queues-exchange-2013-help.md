@@ -94,8 +94,6 @@ The following table describes the filtering parameters that are available on the
 
 Note that a *Server* parameter is available on all queue management cmdlets. On the **Get-QueueDigest** cmdlet, the *Server* parameter is a scope parameter that specifies the server or servers where you want to view summary information about queues. On all other queue management cmdlets, you use the *Server* parameter to connect to a specific server, and run the queue management commands on that server. You can use the *Server* parameter with or without the *Filter* parameter, but you can't use the *Server* parameter with the *Identity* parameter. You use the transport server's hostname or FQDN with the *Server* parameter.
 
-Return to top
-
 ## Queue identity
 
 The *Identity* parameter on the queue management cmdlets identifies a specific queue. When you use the *Identity* parameter, you can't specify any other queue filtering parameters, because you've already uniquely identified the queue. The *Identity* parameter uses the basic syntax *\<Server\>*\\*\<Queue\>*.
@@ -160,8 +158,6 @@ The following table summarizes the syntax you can use with *Identity* parameter 
 </tbody>
 </table>
 
-Return to top
-
 ## Queue Filter parameter
 
 You can use the *Filter* parameter on the all of the queue management cmdlets to specify the queues you want to view or manage based on the properties of the queues. The *Filter* parameter creates an expression with comparison operators that restricts the queue operation to queues that meet the filter criteria. You can use the `-and` logical operator to specify multiple conditions that the results must match.
@@ -171,8 +167,6 @@ For a complete list of queue properties you can use with the *Filter* parameter,
 For a list of comparison operators you can use with the *Filter* parameter, see the Comparison operators to use when filtering queues or messages section in this topic.
 
 For examples of procedures that use the *Filter* parameter to view and manage queues, see [Manage queues](manage-queues-exchange-2013-help.md).
-
-Return to top
 
 ## Include and Exclude parameters
 
@@ -236,8 +230,6 @@ The *Include* and *Exclude* parameters use the following queue properties to fil
 </table>
 
 Note that you can duplicate the functionality of the *Include* and *Exclude* parameters by using the *Filter* parameter. For example, the command `Get-Queue -Exclude Empty` yields the same result as `Get-Queue -Filter {MessageCount -gt 0}`. However, the syntax of the *Include* and *Exclude* parameters is simpler and easier to remember.
-
-Return to top
 
 ## Get-QueueDigest
 
@@ -307,8 +299,6 @@ This example returns all non-empty external queues on the Exchange 2013 Mailbox 
 Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
 ```
 
-Return to top
-
 ## Message filtering parameters
 
 The following table describes the filtering parameters that are available on the message management cmdlets.
@@ -351,8 +341,6 @@ The following table describes the filtering parameters that are available on the
 </table>
 
 Note that a *Server* parameter is available on all message management cmdlets except for the **Export-Message** cmdlet. You use the *Server* parameter to connect to a specific server, and run the message management commands on that server. You can use the *Server* parameter with or without the *Filter* parameter, but you can't use the *Server* parameter with the *Identity* parameter. You use the transport server's hostname or FQDN with the *Server* parameter.
-
-Return to top
 
 ## Message identity
 
@@ -399,8 +387,6 @@ The following table summarizes the syntax you can use with *Identity* parameter 
 </tbody>
 </table>
 
-Return to top
-
 ## Message Filter parameter
 
 You can use the *Filter* parameter on the **Get-Message**, **Remove-Message**, **Resume-Message**, and **Suspend-Message** cmdlets to specify the messages you want to view or manage based on the properties of the messages. The *Filter* parameter creates an expression with comparison operators that restricts the message operation to messages that meet the filter criteria. You can use the `-and` logical operator to specify multiple conditions that the results must match.
@@ -411,13 +397,9 @@ For a list of comparison operators you can use with the *Filter* parameter, see 
 
 For examples of procedures that use the *Filter* parameter to view and manage messages, see [Manage queues](manage-queues-exchange-2013-help.md).
 
-Return to top
-
 ## Queue parameter
 
 The *Queue* parameter is used only with the **Get-Message** cmdlet. You can use this parameter to get all messages in a specific queue, or all messages from multiple queues by using the wildcard character (\*).When you use the *Queue* parameter, use the queue identity format *\<Server\>*\\*\<Queue\>* as described in the "Queue identity" section in this topic.
-
-Return to top
 
 ## Comparison operators to use when filtering queues or messages
 
@@ -512,8 +494,6 @@ This example displays a list of messages that are sent from any email address in
     Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
 ```
 
-Return to top
-
 ## Advanced paging parameters
 
 Depending on current mail flow, queries against queues and messages can return a large set of objects. You can use the advanced paging parameters to control how query results are retrieved and displayed.
@@ -599,4 +579,3 @@ The following example uses scripting to retrieve the first page of results, sets
     ```powershell
         Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
     ```
-Return to top

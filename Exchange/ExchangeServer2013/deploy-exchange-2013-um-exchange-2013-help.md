@@ -78,8 +78,6 @@ When you integrate your organization's telephony and data networks during the de
 
   - **Configure the connection from Client Access and Mailbox servers to the VoIP gateway interface.**: For details, see [Connect UM to a supported VoIP gateway](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md).
 
-Return to top
-
 ## Install the Mailbox and Client Access servers
 
 Different deployment paths are available for organizations that plan to deploy Exchange Unified Messaging. Although these paths all lead to the same end (a successful deployment of Unified Messaging) each path is slightly different because each customer's needs and starting points are different. However, generally there are common starting points and paths that cover all supported deployment scenarios, including new installations and upgrades. Follow these steps to deploy your Client Access and Mailbox servers:
@@ -103,8 +101,6 @@ You can add UM language packs by using the Setup.exe command or by running the *
 
 > [!NOTE]
 > By default, when you install a Mailbox server, the U.S. English language (en-US) is installed. It can't be removed unless you remove the Mailbox server from the computer.
-
-Return to top
 
 ## Create and configure UM components
 
@@ -160,8 +156,6 @@ Perform the following procedure to create a new UM dial plan.
 
     > [!IMPORTANT]
     > In previous versions of Exchange, the Unified Messaging server had to be added to a UM dial plan. In Exchange 2013, Client Access and Mailbox servers can't be associated with a Telephone extension or E.164 dial plan. Client Access and Mailbox servers will answer all incoming calls for all types of dial plans. However, if you're integrating UM with Microsoft Lync Server, you must add all Client Access and Mailbox servers to all SIP URI dial plans to enable call routing to work correctly with Lync Server.
-
-Return to top
 
 ## Step 2: Create and configure your UM IP gateways
 
@@ -222,8 +216,6 @@ When you create a UM hunt group, you enable all Mailbox servers that are specifi
         An extension number or a Session Initiation Protocol (SIP) Uniform Resource Identifier (URI) can be used in this box. Alphanumeric characters are accepted in this box. For legacy PBXs, a numeric value is used as a pilot identifier. However, some IP PBXs can use SIP URIs.
 
 4. Click **Save**.
-
-Return to top
 
 ## Step 4: Create and configure a UM mailbox policy
 
@@ -287,8 +279,6 @@ Creating and using auto attendants is optional in Unified Messaging. However, if
 
 4. Click **Save**.
 
-Return to top
-
 ## Post-deployment tasks for Unified Messaging
 
 After you complete a new installation of the Client Access and Mailbox servers and have successfully deployed Unified Messaging, you should complete the post-deployment tasks. The post-deployment tasks will help you enable users for Unified Messaging, secure your UM deployment, and deploy incoming faxing for UM-enabled users.
@@ -335,5 +325,3 @@ After you've deployed your servers and the required UM components, there are sev
 
 > [!IMPORTANT]
 > If you're integrating your Unified Messaging environment with Microsoft Lync Server, there are additional planning considerations. For details, see <A href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">Deploying Exchange 2013 UM and Lync Server overview</A>.
-
-Return to top

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create a call answering rule in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the Shell to create one or more call answering rules for a user. You can also use the **New-UMCallAnsweringRule** cmdlet in an Exchange Management Shell script to create call answering rules for multiple users.
 

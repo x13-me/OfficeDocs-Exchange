@@ -158,5 +158,3 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 </tr>
 </tbody>
 </table>
-
-Return to top

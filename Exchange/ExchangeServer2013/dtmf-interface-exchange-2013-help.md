@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # DTMF interface in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 In Unified Messaging (UM), callers can use dual tone multi-frequency (DTMF), also referred to as touchtone, and voice inputs to interact with the system. The methods that callers can use depend on how the UM dial plans and auto attendants are configured.
 

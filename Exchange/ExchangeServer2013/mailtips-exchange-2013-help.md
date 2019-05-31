@@ -13,7 +13,7 @@ mtps_version: v=EXCHG.150
 
 # MailTips in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 MailTips are informative messages displayed to users while they're composing a message. Microsoft Exchange Server 2013 analyzes the message, including the list of recipients to which it's addressed, and if it detects a potential problem, it notifies the user with MailTips prior to sending the message. With the help of the information provided by MailTips, senders can adjust the message they're composing to avoid undesirable situations or non-delivery reports (NDRs).
 

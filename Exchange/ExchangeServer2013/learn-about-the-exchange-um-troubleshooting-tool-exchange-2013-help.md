@@ -177,8 +177,6 @@ The UM Troubleshooting Tool emulates incoming calls and runs a series of diagnos
 
   - Prompt provisioning
 
-Return to top
-
 ## UM troubleshooting architecture
 
 The UM Troubleshooting Tool can help you troubleshoot, diagnose, and repair configuration issues in cross-premises deployments, and you can also use it in on-premises Unified Messaging deployments. In cross-premises deployments, the tool also validates onsite SBC configurations. The administrator can test all the Unified Messaging components that are used by Unified Messaging, including the SBCs.
@@ -190,8 +188,6 @@ In the following example, Gateway mode is used to test call flow in an environme
 ```powershell
 Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
 ```
-
-Return to top
 
 ## Office Communications Server 2007 R2 and Microsoft Lync Server deployments
 
@@ -225,8 +221,6 @@ If you're using the UM Troubleshooting Tool on a 64-bit version of Windows 7, Wi
 The UM Troubleshooting Tool (**Test-ExchangeUMCallFlow** cmdlet) isn't included on the Exchange 2010 SP1 DVD, the download that only includes Exchange 2010, or the Exchange 2013 installation media. However you can download the UM Troubleshooting Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
 
 For details, see [Install the Exchange UM Troubleshooting Tool](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
-
-Return to top
 
 ## Cmdlet parameters
 
@@ -295,5 +289,3 @@ The following table includes the parameters you can use with the **Test-Exchange
 </tr>
 </tbody>
 </table>
-
-Return to top

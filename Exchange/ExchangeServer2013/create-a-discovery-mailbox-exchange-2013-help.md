@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Create a discovery mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup creates a discovery mailbox by default. Discovery mailboxes are used as target mailboxes for [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox.
 

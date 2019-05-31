@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Test a transport rule in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Each time you create a transport rule, you should test it before turning it on. This way, if you accidentally create a condition that doesn't do exactly what you want or interacts with other rules in unexpected ways, you won't have any unintended consequences.
 

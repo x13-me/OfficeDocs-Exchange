@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage and troubleshoot message approval in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You may receive the following error when you attempt to remove an arbitration mailbox:
 

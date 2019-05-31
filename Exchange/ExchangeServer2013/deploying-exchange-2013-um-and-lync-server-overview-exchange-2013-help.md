@@ -115,8 +115,6 @@ The following table shows the certificate requirements for installing and config
 </tbody>
 </table>
 
-Return to top
-
 ## Deployment steps
 
 After you install the required servers in your organization, there's a recommended sequence of steps that you must perform in your Exchange Unified Messaging and Lync Server deployments to correctly deploy Enterprise Voice for your users.
@@ -210,8 +208,6 @@ After you configure the Lync Server and the Unified Messaging servers, you must 
 
 > [!IMPORTANT]
 > When you're integrating Unified Messaging and Lync Server, missed call notifications aren't available to users who have a mailbox located on an Exchange 2007 or Exchange 2010 Mailbox server. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
-
-Return to top
 
 ## For more information
 

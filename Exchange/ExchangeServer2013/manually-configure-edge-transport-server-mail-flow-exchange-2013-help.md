@@ -100,5 +100,3 @@ Example: Using the Shell to configure a Send connector for a subscribed Edge Tra
 If you have accepted domains in your Exchange organization that are configured as external relay domains, you need to manually create a Send connector for those address spaces. Messages being delivered to external relay domains are relayed by the Edge Transport server. The Edge Subscription process doesn't automatically create and configure Send connectors for external relay domains. Therefore, you need to configure Send connectors for those domains and specify one or more Edge Subscriptions as the source server for those Send connectors.
 
 The DNS MX resource record for an external relay domain resolves to your Edge Transport server. You can configure a Send connector that relays email to an external relay domain to use a smart host for routing. Configuring the Send connector for an external relay domain to use DNS routing will create a routing loop. For more information about external relay domains, see [Accepted domains](accepted-domains-exchange-2013-help.md).
-
-Return to Top

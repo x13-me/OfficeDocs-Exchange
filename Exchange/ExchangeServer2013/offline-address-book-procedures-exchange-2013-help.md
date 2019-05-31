@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Offline address book procedures in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 [Create an offline address book](create-offline-address-book-exchange-2013-help.md)
 

@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Accessibility for people with disabilities in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
 

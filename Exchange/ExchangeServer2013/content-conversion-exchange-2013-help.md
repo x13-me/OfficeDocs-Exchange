@@ -82,8 +82,6 @@ The following list describes the basic message formats available in Exchange and
 
     Exchange never sends STNEF messages to external recipients. Only TNEF messages can be sent to recipients outside the Exchange organization.
 
-Return to top
-
 ## Content conversion options for external recipients
 
 The content conversion options that you can set in an Exchange organization for external recipients can be described in the following categories:
@@ -147,8 +145,6 @@ You can specify the message encoding options at the following levels:
       - Message character set encoding options
 
 For detailed information, see [Message encoding options](message-encoding-options-exchange-2013-help.md).
-
-Return to top
 
 ## Understanding the structure of email messages
 
@@ -255,5 +251,3 @@ When SMTP messages contain elements that aren't plain US-ASCII text, the message
 </tr>
 </tbody>
 </table>
-
-Return to top

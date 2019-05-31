@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Supported character sets for remote domains in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The following character sets can be specified for messages sent to remote domains.
 

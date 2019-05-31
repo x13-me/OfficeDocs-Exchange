@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Fax advisor for Exchange 2013 UM
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax functionality such as outbound fax or fax routing. By default, users aren't configured to allow incoming fax messages to be delivered to a UM-enabled user. Exchange servers send the fax requests to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the recipient's mailbox in an email message with the fax included as a .tif attachment. For details, see [Enable Voice Mail Users to Receive Faxes](http://technet.microsoft.com/library/451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d.aspx).
 

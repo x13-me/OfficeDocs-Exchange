@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Place all mailboxes on hold in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Your organization may require all mailbox data to be preserved for a specific period. You can use Litigation Hold or In-Place Hold to meet this requirement. After you place a mailbox on Litigation Hold or In-Place Hold, mailbox items that are modified or that are permanently deleted are preserved in the Recoverable Items folder. For more information, see [In-Place Hold and Litigation Hold](in-place-and-litigation-holds-exchange-2013-help.md).
 

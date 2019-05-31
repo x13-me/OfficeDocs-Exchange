@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Data loss prevention in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Learn about DLP policies in Exchange Server 2013, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 

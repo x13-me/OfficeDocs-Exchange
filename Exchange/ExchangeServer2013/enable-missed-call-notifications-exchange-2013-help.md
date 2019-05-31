@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable missed call notifications for a user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can enable or disable missed call notifications for a Unified Messaging (UM) mailbox policy by using the Shell or the EAC. A missed call notification is an email message that's sent to a user when the user doesn't answer an incoming call and the caller doesn't leave a voice mail message. This is a different email message than the message that contains the voice message that's left for a user.
 

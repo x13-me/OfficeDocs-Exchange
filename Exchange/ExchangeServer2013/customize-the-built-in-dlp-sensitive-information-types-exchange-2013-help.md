@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Customize the built-in DLP sensitive information types in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When looking for sensitive information in email, you need to describe that information in what's called a rule. Data loss prevention (DLP) includes a pack of 51 rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information.
 

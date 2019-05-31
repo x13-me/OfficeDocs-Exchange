@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage policy tips in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more.
 

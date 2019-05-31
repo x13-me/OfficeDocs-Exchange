@@ -256,8 +256,6 @@ The following table contains a list of the enhanced status codes that are return
 </tbody>
 </table>
 
-Return to top
-
 ## NDR sections
 
 In Exchange 2013, NDRs are designed to be easy to read and understand by both end users and administrators. Information that is displayed in an NDR is separated into the following two areas:
@@ -280,8 +278,6 @@ The text in the user information section is designed to help end users determine
 
 You can modify the text in the user information section by using the **New-SystemMessage** cmdlet. By creating a custom message, you can provide specific information to end users, such as a telephone number to use to contact the helpdesk department or a hyperlink to use to obtain self-service support.
 
-Return to top
-
 ## Diagnostic information for administrators
 
 The **Diagnostic information for administrators** section contains more detailed information about the specific error that occurred during delivery of the message, the server that generated the NDR, and the server that rejected the message. The following fields are present in most NDRs and are visible in the "NDR sections" figure earlier in this topic:
@@ -297,8 +293,6 @@ The **Diagnostic information for administrators** section contains more detailed
       - **SMTP response**: The SMTP response is the machine readable text returned by the server that rejected the original message. The SMTP response typically contains a short string that provides an explanation of the enhanced status code that is also returned. The SMTP response is not rewritten by Exchange. Additionally, this response is always presented in US-ASCII format.
 
   - **Original message headers**: The original message headers section contains the message headers of the rejected message. These headers can provide useful diagnostic information, such as information that can help you determine the path that the message took before it was rejected or whether the **To** field matches the email address that is specified in the rejected recipient field.
-
-Return to top
 
 ## Examples of NDR messages
 
@@ -320,8 +314,6 @@ Also, messages that are rejected when they are sent to recipients that are part 
 
 In both situations, no remote server is included under the email address of the recipients listed in the NDR message.
 
-Return to top
-
 ## NDR generated and original message rejected by different servers
 
 The following example shows what happens when a remote email organization rejects delivery of an email message before it ever accepts the message. In this example, the remote server rejects the message and returns an enhanced status code to the local sending server because the specified recipient does not exist. The rejection happens before the receiving server ever acknowledges the message. Because the receiving server doesn't successfully acknowledge the message, the receiving server is not responsible for the message. Therefore, the local sending server generates the NDR message and sends it to the sender of the original message.
@@ -329,8 +321,6 @@ The following example shows what happens when a remote email organization reject
 **NDR generated and message rejected by different servers**
 
 ![NDR showing different generating/sending servers](images/Bb232118.adfb8d5a-9c1d-4cd9-8a71-ce14224434f8(EXCHG.150).gif "NDR showing different generating/sending servers")
-
-Return to top
 
 ## See Also
 

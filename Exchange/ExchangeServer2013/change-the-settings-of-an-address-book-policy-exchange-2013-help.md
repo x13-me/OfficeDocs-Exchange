@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Change the settings of an address book policy in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After you create an address book policy (ABP), you can view or modify the name and the assigned global address list (GAL), offline address book (OAB), room list, and address lists.
 
