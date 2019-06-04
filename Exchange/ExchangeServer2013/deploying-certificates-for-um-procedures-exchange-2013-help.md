@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Deploying certificates for UM procedures
+# Deploying certificates for UM procedures in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Create certificates for UM](create-certificates-for-um-exchange-2013-help.md)
 

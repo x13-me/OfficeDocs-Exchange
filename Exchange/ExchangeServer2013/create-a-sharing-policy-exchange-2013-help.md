@@ -124,13 +124,13 @@ You can edit the default sharing policy to allow all of your users to share full
     2. Enable the publishing virtual directory on CAS01.
 
         ```powershell
-            Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+        Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
         ```
 
     3. Create the sharing policy Anonymous and configure limited calendar information sharing.
 
         ```powershell
-            New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
         ```
 For detailed syntax and parameter information, see the following topics:
 

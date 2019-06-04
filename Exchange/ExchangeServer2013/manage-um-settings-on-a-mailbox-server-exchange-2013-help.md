@@ -14,9 +14,9 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMServerPropertiesPropertyPage
 ---
 
-# Manage UM settings on a Mailbox server
+# Manage UM settings on a Mailbox server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you install a Mailbox server that is running the Microsoft Exchange Unified Messaging service, you can configure several options, including the number of concurrent calls, the TCP and Transport Layer Security (TLS) listening ports, the status, and the UM startup mode.
 
@@ -49,13 +49,13 @@ Set-UMService -Identity MyMailboxServer -DialPlans $null
 This example adds the Mailbox server named `MyMailboxServer` to a UM SIP dial plan named `MySIPDialPlanName` and also sets the maximum number of incoming voice calls.
 
 ```powershell
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150
 ```
 
 This example sets the startup mode to Dual mode on a Mailbox server named `MyUMServer`.
 
 ```powershell
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual
 ```
 
 ## Use the Shell to view Mailbox server properties

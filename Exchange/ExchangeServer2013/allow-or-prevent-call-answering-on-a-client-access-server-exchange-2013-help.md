@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Allow or prevent call answering on a Client Access server
+# Allow or prevent call answering on a Client Access server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can allow the Microsoft Exchange Unified Messaging Call Router service on a Client Access server to answer new calls or prevent it from doing so. By default, a Client Access server is in an enabled state after it's installed. When you're setting the Client Access server to accept incoming voice, fax, auto attendant and Outlook Voice Access calls, you use the **Set-ServerComponentState** cmdlet.
 
