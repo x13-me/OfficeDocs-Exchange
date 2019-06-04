@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Enable PIN-less sign-Ins for voice mail
+# Enable PIN-less sign-Ins for voice mail in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can set up Unified Messaging (UM) so that your users can sign in to their voice mail without using a PIN. By default, Outlook Voice Access users are prompted to enter a PIN to sign in to their mailbox and access their voice mail, email, calendar, personal contacts, the directory, and personal options.
 

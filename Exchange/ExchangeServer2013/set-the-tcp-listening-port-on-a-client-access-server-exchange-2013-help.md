@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Set the TCP listening port on a Client Access server
+# Set the TCP listening port on a Client Access server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the TCP port that's used to listen for SIP requests on a Client Access server running the Microsoft Exchange Unified Messaging Call Router service. By default, when you install a Client Access server, the SIP TCP listening port number is set to 5060 and the Client Access server starts in TCP mode. The SIP TCP listening port can't be configured by using the EAC. You must configure the SIP TCP listening port number using the **Set-UMCallRouterSettings** cmdlet.
 

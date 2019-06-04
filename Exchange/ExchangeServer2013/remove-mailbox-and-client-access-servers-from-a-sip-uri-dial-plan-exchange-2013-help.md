@@ -1,5 +1,5 @@
 ---
-title: 'Remove Mailbox and Client Access servers from a SIP URI dial plan'
+title: 'Remove Mailbox and Client Access servers from a SIP URI dial plan': Exchange 2013 Help'
 TOCTitle: Remove Mailbox and Client Access servers from a SIP URI dial plan
 ms:assetid: 367441e1-1a0f-42c8-9fa8-8abe80b3d015
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997238(v=EXCHG.150)
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Remove Mailbox and Client Access servers from a SIP URI dial plan
+# Remove Mailbox and Client Access servers from a SIP URI dial plan in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can remove Client Access and Mailbox servers from SIP URI dial plans. When you're deploying Microsoft Lync Server, to enable outbound calling to work correctly, you must manually add all Client Access and Mailbox servers to the SIP URI dial plans that you've created for Lync Server. However, you may need to remove a Client Access or Mailbox server from your Lync deployment, for example, if you're performing maintenance or taking the server offline.
 
@@ -48,10 +48,10 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 This example removes the Mailbox server named `MyMailboxServer` from a SIP URI dial plan named `MySIPDialPlan`.
 
 ```powershell
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
 ```
 
 In this example, there are three SIP URI dial plans: SipDP1, SipDP2 and SipDP3. This example removes the Mailbox server named `MyMailboxServer` from the SipDP3 dial plan.
@@ -87,10 +87,10 @@ Set-UMService -id MyUMServer -DialPlans $null
 This example removes the Client Access server named `MyClientAccessServer` from a SIP URI dial plan named `MySIPDialPlan`.
 
 ```powershell
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
 ```
 
 In this example, there are three SIP URI dial plans: SipDP1, SipDP2 and SipDP3. This example removes the Client Access server named `MyClientAccessServer` from the SipDP3 dial plan.

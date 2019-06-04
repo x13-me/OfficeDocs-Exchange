@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Deploy Exchange 2013 UM
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Unified Messaging (UM) requires that you integrate your Exchange Server deployment with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and perform the correct planning steps to deploy and manage voice mail in Unified Messaging.
 
