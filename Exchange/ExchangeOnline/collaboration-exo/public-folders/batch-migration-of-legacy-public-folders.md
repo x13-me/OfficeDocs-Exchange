@@ -44,7 +44,7 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
 
 - `SyncMailPublicFolders.strings.psd1`: This is a support file used by the `Sync-MailPublicFolders.ps1` script and should be copied to the same location as the preceding scripts.
 
-[Step 1: Download the migration scripts](batch-migration-of-legacy-public-folders.md#Scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location.
+[Step 1: Download the migration scripts](#step-1-download-the-migration-scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location.
 
 For additional management tasks related to public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
 
@@ -531,7 +531,7 @@ We recommend that you don't use Outlook's PST export feature to migrate public f
 
 If you still want to migrate your public folders by using PST files, follow these steps to ensure a successful migration.
 
-1. Use the instructions in [Step 1: Download the migration scripts](batch-migration-of-legacy-public-folders.md#Scripts) to download the migration scripts. You only need to download the `PublicFolderToMailboxMapGenerator.ps1` file.
+1. Use the instructions in [Step 1: Download the migration scripts](#step-1-download-the-migration-scripts) to download the migration scripts. You only need to download the `PublicFolderToMailboxMapGenerator.ps1` file.
 
 2. Follow step 2 of [Step 3: Generate the .csv files](#step-3-generate-the-csv-files) to create the public folder-to-mailbox mapping file. This file is used to calculate the correct number of public folder mailboxes in Exchange Online.
 
