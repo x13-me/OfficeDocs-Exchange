@@ -220,7 +220,7 @@ In Exchange Online PowerShell, do the following:
        
       `Get-Mailbox -PublicFolder`
        
-    b. If the command doesn't return any public folder mailboxes, continue to [Step 3: Generate the .csv files](migrate-to-exchange-online.md#Generatecsv). If the command does return any public folders mailboxes, run the following command to see if any public folders exist:
+    b. If the command doesn't return any public folder mailboxes, continue to [Step 3: Generate the .csv files](#step-3-generate-the-csv-files). If the command does return any public folders mailboxes, run the following command to see if any public folders exist:
        
       `Get-PublicFolder -Recurse`
        
