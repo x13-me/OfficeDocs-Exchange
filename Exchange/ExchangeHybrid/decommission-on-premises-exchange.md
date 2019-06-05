@@ -194,7 +194,7 @@ The graphic below describes the actual end state:
 
 4. To prevent the hybrid configuration objects from being recreated in the future, you should remove the hybrid configuration object from Active Directory. To do this, open the Exchange Management Shell and run the following:
 
-   ```Powershell
+   ```PowerShell
    Remove-HybridConfiguration
    ```
 
