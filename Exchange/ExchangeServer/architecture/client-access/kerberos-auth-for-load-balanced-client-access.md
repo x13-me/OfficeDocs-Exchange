@@ -88,9 +88,9 @@ After you create the ASA credential, you have to associate Exchange Service Prin
 
 The SPN values must match the service name on the network load balancer instead of on individual servers. To help plan which SPN values you should use, consider the following scenarios:
 
-- [Single Active Directory site](kerberos-auth-for-load-balanced-client-access.md#singleADsite)
+- [Single Active Directory site](#single-active-directory-site)
 
-- [Multiple Active Directory sites](kerberos-auth-for-load-balanced-client-access.md#multipleADsite)
+- [Multiple Active Directory sites](#multiple-active-directory-sites)
 
 In each of these scenarios, assume that the load-balanced, fully-qualified domain names (FQDNs) have been deployed for the internal URLs, external URLs, and the autodiscover internal URI used by members running Client Access services.
 
@@ -269,7 +269,7 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 ## Associate Service Principal Names (SPNs) with the ASA credential
 
 > [!IMPORTANT]
-> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange Server, as described earlier in [Deploy the ASA Credential to the first Exchange server running Client Access services](kerberos-auth-for-load-balanced-client-access.md#DeployASACred). Otherwise, you will experience Kerberos authentication errors.
+> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange Server, as described earlier in [Deploy the ASA Credential to the first Exchange server running Client Access services](#deploy-the-asa-credential-to-the-first-exchange-server-running-client-access-services). Otherwise, you will experience Kerberos authentication errors.
 
 Before you associate the SPNs with the ASA credential, you have to verify that the target SPNs aren't already associated with a different account in the forest. The ASA credential must be the only account in the forest with which these SPNs are associated. You can verify that no other account in the forest is associated with the SPNs by running the **setspn** command from the command line.
 
