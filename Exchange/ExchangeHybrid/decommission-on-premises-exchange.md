@@ -164,7 +164,7 @@ The graphic below describes the actual end state:
 ![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
 >[!TIP]
-> In case that you decide to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. 
+> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently: 
 > So each service will authenticate users independenly: 
 > * **O365 identity service** will manage online request 
 > * **Active directory** will manage the internal authentication
