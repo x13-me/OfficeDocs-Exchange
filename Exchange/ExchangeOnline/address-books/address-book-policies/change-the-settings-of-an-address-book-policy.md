@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms.date: 
+ms.reviewer: 
 title: Change the settings of an address book policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -85,4 +86,3 @@ To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the
 ```
 Get-AddressBookPolicy -Identity "<ABPName>" | Format-List
 ```
-

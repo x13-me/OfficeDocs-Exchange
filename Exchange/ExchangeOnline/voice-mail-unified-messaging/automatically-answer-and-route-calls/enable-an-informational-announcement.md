@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can enable an informational announcement for a Unified Messaging (UM) auto attendant. When an informational announcement is enabled, it will play immediately after the business or non-business hours greeting. By default, an informational announcement isn't configured. To enable an informational announcement, create a .wav or .wma file to be used as the informational announcement, and then configure the auto attendant to use this sound file.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
 ms.date: 11/17/2014
-title: Enable an informational announcement
+ms.reviewer: 
+title: Enable an informational announcement in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Enable an informational announcement
+# Enable an informational announcement in Exchange Online
 
 You can enable an informational announcement for a Unified Messaging (UM) auto attendant. When an informational announcement is enabled, it will play immediately after the business or non-business hours greeting. By default, an informational announcement isn't configured. To enable an informational announcement, create a .wav or .wma file to be used as the informational announcement, and then configure the auto attendant to use this sound file.
 
@@ -57,6 +58,3 @@ This example enables an informational announcement that uses the `MyInfoAnnounce
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -InfoAnnouncementEnabled $true -InfoAnnouncementFilename MyInfoAnnouncement.wav
 ```
-
-
-

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
 ms.date: 
+ms.reviewer: 
 title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -72,5 +73,3 @@ There are additional considerations in hybrid deployments between on-premise Exc
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
-
-

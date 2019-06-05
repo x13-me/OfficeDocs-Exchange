@@ -2,8 +2,8 @@
 title: "Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment"
 ms.author: markjjo
 author: markjjo
-manager: serdars
-ms.audience: ITPro
+manager: dansimp
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: ecc0a687-6c05-47bd-a079-a43d83cba9ea
+ms.reviewer: 
 description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox with a cloud-based archive mailbox in Exchange Online."
 ---
 
@@ -52,7 +53,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 6. Click **Save** to create the mailbox and the cloud-based archive.
 
-Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
+   Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
 7. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Office 365.
 
@@ -77,7 +78,7 @@ Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the
 
 1. In the Office 365 admin center, go to **Users** \> **Active users**, and then select the user account that you want to create a cloud-base archive mailbox for.
 
-2. On the user properties page that's displayed, click **Edit** in the ** Product licenses ** section.
+2. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
     ![Click Edit in the details pane to assign a license to the selected user](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
 
@@ -105,7 +106,6 @@ Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the
 
     > [!TIP]
     > In the Office 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
-
 
 ## Step 2: Verify that the cloud-based archive mailbox is created
 
@@ -151,8 +151,6 @@ Before directory synchronization provisions the cloud-based archive, the _Archiv
 
 After directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `Active` and the _ArchiveState_ property is set to `HostedProvisioned`. At this point, the user will be able to access their cloud-based archive mailbox in Outlook or Outlook on the web.
 
-[Return to top](create-cloud-based-archive.md#top)
-
 ## (Optional) Run directory synchronization
 
 As previously explained, the cloud-base archive mailbox is created by the process of directory synchronization. By default, your on-premises Active Directory is synchronized with Azure AD in Office 365 once every 30 minutes. You can see when the last time directory synchronization occurred by going to **Health** \> **Directory sync status** in the Office 365 admin center.
@@ -164,5 +162,3 @@ Start-ADSyncSyncCycle -PolicyType Delta
 ```
 
 For more information, see [Azure AD Connect sync: Scheduler](https://go.microsoft.com/fwlink/p/?linkid=836813).
-
-[Return to top](create-cloud-based-archive.md#top)

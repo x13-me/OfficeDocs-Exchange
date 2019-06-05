@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Messaging records management
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -86,6 +87,3 @@ Optionally, you can use RPTs and personal tags to allow users to clean up their 
 [Messaging Records Management Terminology in Exchange 2013](https://technet.microsoft.com/library/de3e3503-6de3-4666-aeb9-cd877efb93bb.aspx)
 
 [Retention tags and retention policies](retention-tags-and-policies.md)
-
-
-

@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Remove a mailbox database copy
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

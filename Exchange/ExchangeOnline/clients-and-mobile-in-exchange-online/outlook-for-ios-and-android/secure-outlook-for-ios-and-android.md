@@ -11,9 +11,9 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 
@@ -328,4 +328,3 @@ With the native Microsoft sync technology, administrators can control usage of O
 ```
 Set-CASMailbox jane@contoso.com -OutlookMobileEnabled $false
 ```
-

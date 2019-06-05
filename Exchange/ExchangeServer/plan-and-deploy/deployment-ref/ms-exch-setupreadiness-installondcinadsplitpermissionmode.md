@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Installation on domain controllers is not supported with Active Directory split permissions [InstallOnDCInADSplitPermissionMode]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

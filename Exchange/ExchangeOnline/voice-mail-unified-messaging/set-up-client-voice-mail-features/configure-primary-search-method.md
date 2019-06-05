@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: When you create a Unified Messaging (UM) dial plan, you can configure the primary and secondary ways that callers can search for names to locate a user when they call an Outlook Voice Access number or a UM auto attendant that's associated with the dial plan. Callers can use touchtone inputs to locate a UM-enabled user.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3d93a037-5820-41d3-9206-69f534414daf
 ms.date: 11/17/2014
-title: Configure the primary way for Outlook Voice Access users to search
+ms.reviewer: 
+title: Configure the primary way for Outlook Voice Access users to search in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Configure the primary way for Outlook Voice Access users to search
+# Configure the primary way for Outlook Voice Access users to search in Exchange Online
 
 When you create a Unified Messaging (UM) dial plan, you can configure the primary and secondary ways that callers can search for names to locate a user when they call an Outlook Voice Access number or a UM auto attendant that's associated with the dial plan. Callers can use touchtone inputs to locate a UM-enabled user.
 
@@ -73,6 +74,3 @@ This example sets the primary dial by name method to `SMTP address`. This enable
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary SMTPAddress
 ```
-
-
-

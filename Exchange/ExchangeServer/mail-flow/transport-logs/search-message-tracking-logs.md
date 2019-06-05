@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Search message tracking logs
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

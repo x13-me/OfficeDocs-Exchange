@@ -1,26 +1,27 @@
 ---
 localization_priority: Normal
-description: You can help to prevent your organization's Microsoft Outlook, Outlook Web App (OWA), and OWA for Devices email users from inappropriately sending sensitive information by creating data loss prevention (DLP) policies that include Policy Tip notification messages. Similar to MailTips that were introduced in Microsoft Exchange Server 2010, Policy Tip notification messages are displayed to users in Outlook while they are composing an email message. Policy Tip notification messages only show up if something about the sender's email message seems to violate a DLP policy that you have in place and that policy includes a rule to notify the sender when the conditions that you establish are met. Watch this video to learn more.
+description: Admin can learn about how policy tips can display compliance information to users as they compose email messages that contain sensitive content.
 ms.topic: article
 author: stephow-msft
 ms.author: stephow
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 ms.date: 7/11/2018
-title: Policy Tips
+ms.reviewer: 
+title: Policy Tips in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
 ---
 
-# Policy Tips
+# Policy Tips in Exchange Online
 
 You can help to prevent your organization's Outlook, Outlook on the web (formerly known as Outlook Web App), and OWA for Devices email users from inappropriately sending sensitive information by creating data loss prevention (DLP) policies that include Policy Tip notification messages. Similar to MailTips that were introduced in Exchange Server 2010, Policy Tip notification messages are displayed to users in Outlook while they are composing an email message. Policy Tip notification messages only show up if something about the sender's email message seems to violate a DLP policy that you have in place and that policy includes a rule to notify the sender when the conditions that you establish are met. Watch this video to learn more.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13?autoplay=false]
+[!VIDEO](https://www.microsoft.com/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13?autoplay=false)
 
 In order to show Policy Tips to your email senders, your rules must include the **Notify the sender with a Policy Tip** action. You can add this in the rules editor from the Exchange admin center. For more information, see [Manage policy tips](manage-policy-tips.md).
 
@@ -31,9 +32,7 @@ Any time you use either the notify sender action or an override action within a 
 If email senders in your organization who are in the act of composing a message are made aware of your organizational expectations and standards in real time through Policy Tip notifications, then they are less likely to violate standards that your organization wants to enforce.
 
 > [!NOTE]
->-  Exchange Online: DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154).
->-  Exchange Server: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
->-  If your organization is using Exchange Server 2013 SP1 (or above) or Exchange Online, Policy Tips are available to people sending mail from Outlook 2013, Outlook Web App, or OWA for Devices. However, if your organization is currently using Exchange Server 2013 before SP1, Policy Tips are only available to people sending email from Outlook 2013.
+> DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154).
 
 ## Default text for Policy Tips and rule options
 
@@ -67,6 +66,3 @@ For procedures that explain how to create your own Policy Tips, see [Manage poli
 [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx)
 
 [Manage policy tips](manage-policy-tips.md)
-
-
-

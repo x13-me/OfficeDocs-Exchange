@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: laurawi
+manager: dansimp
 ms.topic: article
 author: msdmaguire
 ms.service: exchange-online
@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: 'Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online.'
-ms.audience: ITPro
+audience: ITPro
 title: Configure Exchange Online public folders for a hybrid deployment
 
 ---
@@ -116,4 +116,3 @@ Log on to Outlook for a user who is in Exchange Online and perform the following
  - Check permissions
  - Create and delete public folders.
  - Post content to and delete content from a public folder.
-

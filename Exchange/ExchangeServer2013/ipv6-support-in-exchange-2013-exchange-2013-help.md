@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'IPv6 support in Exchange 2013: Exchange 2013 Help'
 TOCTitle: IPv6 support in Exchange 2013
 ms:assetid: 33543023-eb9a-4102-b990-84a818a52814
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg144561(v=EXCHG.150)
 ms:contentKeyID: 48384951
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # IPv6 support in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP.
 
@@ -93,7 +94,6 @@ The following table describes the components in Exchange 2013 that are affected 
 > [!NOTE]
 > If you want to specify an IPv6 address for the <EM>SourceIPAddress</EM> parameter, make sure that the appropriate DNS AAAA and mail exchange (MX) records are configured correctly. This helps ensure message delivery if a remote messaging server tries any kind of reverse lookup test on the specified IPv6 address.
 
-
 <p>For more information, see <a href="send-connectors-exchange-2013-help.md">Send connectors</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -116,9 +116,6 @@ The following table describes the components in Exchange 2013 that are affected 
 </tbody>
 </table>
 
-
-Return to top
-
 ## Enable or disable protocols in the operating system
 
 Exchange 2013 servers fully support IPv6 networks. Therefore, even if you aren't using IPv6, you don't need to disable IPv6 on your Exchange servers.
@@ -127,19 +124,17 @@ IPv6 support in Exchange 2013 requires IPv4 to be installed and enabled on all E
 
 To learn more about IPv6 support in Microsoft Windows, see [IPv6 for Microsoft Windows: Frequently Asked Questions](https://go.microsoft.com/fwlink/p/?linkid=147465).
 
-Return to top
-
 ## IPv6 address basics
 
 An IPv6 address is 128-bits long. The address is described by using colon-hexadecimal notation. Colon-hexadecimal notation describes the 128-bit address by using eight 16-bit, 4-digit hexadecimal numbers separated by the colon character (:). An example of an IPv6 address in colon-hexadecimal notation is 2001:0DB8:0000:0000:02AA:00FF:C0A8:640A.
 
 You can express an IPv6 address by using the following methods:
 
-  - **Suppress leading zeros**   You can omit the leading zeros in any of the eight 4-digit hexadecimal numbers in an IPv6 address.
+  - **Suppress leading zeros**: You can omit the leading zeros in any of the eight 4-digit hexadecimal numbers in an IPv6 address.
 
-  - **Double-colon compression**   You can use two colons (::) to represent contiguous 16-bit hexadecimal digits that contain all zeros. These all-zero digits may exist at the beginning, middle, or end of the IPv6 address. You can only use double-colon compression one time in an IPv6 address.
+  - **Double-colon compression**: You can use two colons (::) to represent contiguous 16-bit hexadecimal digits that contain all zeros. These all-zero digits may exist at the beginning, middle, or end of the IPv6 address. You can only use double-colon compression one time in an IPv6 address.
 
-  - **Trailing dotted-decimal notation**   You may express the last 32 bits at the end of an IPv6 address in dotted-decimal notation by separating the 8-bit digits with a period (.). Trailing dotted-decimal notation is frequently used with IPv4-compatible addresses.
+  - **Trailing dotted-decimal notation**: You may express the last 32 bits at the end of an IPv6 address in dotted-decimal notation by separating the 8-bit digits with a period (.). Trailing dotted-decimal notation is frequently used with IPv4-compatible addresses.
 
 The following table provides examples of the IPv6 address notation and the equivalent IPv6 address syntax.
 
@@ -176,22 +171,21 @@ The following table provides examples of the IPv6 address notation and the equiv
 </tbody>
 </table>
 
-
 IPv6 addresses are categorized into the following types:
 
-  - **Unicast address**   A packet is delivered to one interface.
+  - **Unicast address**: A packet is delivered to one interface.
 
-  - **Multicast address**   A packet is delivered to multiple interfaces.
+  - **Multicast address**: A packet is delivered to multiple interfaces.
 
-  - **Anycast address**   A packet is delivered to the nearest of multiple interfaces. The distance between interfaces is defined by the routing cost.
+  - **Anycast address**: A packet is delivered to the nearest of multiple interfaces. The distance between interfaces is defined by the routing cost.
 
 IPv6 unicast addresses have the following possible scopes:
 
-  - **Link local**   The scope of the IPv6 address is the local subnet. IPv6 link local addresses are comparable to IPv4 link local addresses used in Automatic Private IP Addressing (APIPA).
+  - **Link local**: The scope of the IPv6 address is the local subnet. IPv6 link local addresses are comparable to IPv4 link local addresses used in Automatic Private IP Addressing (APIPA).
 
-  - **Site local**   The scope of the IPv6 address is the local organization. Site local addresses were deprecated by RFC 3879 and replaced by unique local addresses as defined in RFC 4193. IPv6 site local addresses and IPv6 unique local addresses are comparable to IPv4 private IP addresses.
+  - **Site local**: The scope of the IPv6 address is the local organization. Site local addresses were deprecated by RFC 3879 and replaced by unique local addresses as defined in RFC 4193. IPv6 site local addresses and IPv6 unique local addresses are comparable to IPv4 private IP addresses.
 
-  - **Global**   The scope of the IPv6 address is the whole world. IPv6 global addresses are comparable to IPv4 public IP addresses.
+  - **Global**: The scope of the IPv6 address is the whole world. IPv6 global addresses are comparable to IPv4 public IP addresses.
 
 The following table provides a comparison of IPv4 elements and IPv6 elements.
 
@@ -246,7 +240,6 @@ The following table provides a comparison of IPv4 elements and IPv6 elements.
 </tbody>
 </table>
 
-
 For more information about IPv6 addressing, see [IPv6 Address Types](https://go.microsoft.com/fwlink/p/?linkid=98357).
 
 ## Supported IPv6 Address Input Formats
@@ -296,7 +289,6 @@ The following table provides examples of the acceptable IPv6 address input forma
 </tbody>
 </table>
 
-
 In Exchange 2013, the following input formats are supported:
 
   - Suppression of leading zeros
@@ -304,6 +296,3 @@ In Exchange 2013, the following input formats are supported:
   - Double-colon compression
 
   - Trailing dotted-decimal notation
-
-Return to top
-

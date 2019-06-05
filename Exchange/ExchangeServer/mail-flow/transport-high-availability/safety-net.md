@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Safety Net in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,10 +6,11 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
 ms.date:title: Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient
+ms.reviewer: 
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -42,6 +43,3 @@ Although the EAC has a different look and feel than the ECP, managing Exchange O
 - [Manage equipment mailboxes](manage-equipment-mailboxes.md)
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
-
-
-

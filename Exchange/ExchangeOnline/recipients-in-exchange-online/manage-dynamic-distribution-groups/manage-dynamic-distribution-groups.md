@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: kwekua
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Manage dynamic distribution groups
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -305,6 +306,3 @@ To verify that you've successfully changed properties for a dynamic distribution
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
-
-
-

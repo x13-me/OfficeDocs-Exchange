@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms.date: 7/13/2018
+ms.reviewer: 
 title: Manage database availability groups
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -208,7 +209,7 @@ For detailed steps about how to configure DAG properties, see [Configure databas
 
 ### DAG network encryption
 
-DAGs support the use of encryption by leveraging the encryption capabilities of the Windows Server operating system. DAGs use Kerberos authentication between Exchange servers. Microsoft Kerberos security support provider (SSP) EncryptMessage and DecryptMessage APIs handle encryption of DAG network traffic. Microsoft Kerberos SSP supports multiple encryption algorithms. (For the complete list, see section 3.1.5.2, "Encryption Types" of [Kerberos Protocol Extensions](https://go.microsoft.com/fwlink/p/?linkId=179131)). The Kerberos authentication handshake selects the strongest encryption protocol supported in the list: typically Advanced Encryption Standard (AES) 256-bit, potentially with a SHA Hash-based Message Authentication Code (HMAC) to maintain integrity of the data. For details, see [HMAC](https://en.wikipedia.org/wiki/HMAC).
+DAGs support the use of encryption by leveraging the encryption capabilities of the Windows Server operating system. DAGs use Kerberos authentication between Exchange servers. Microsoft Kerberos security support provider (SSP) EncryptMessage and DecryptMessage APIs handle encryption of DAG network traffic. Microsoft Kerberos SSP supports multiple encryption algorithms. (For the complete list, see section 3.1.5.2, "Encryption Types" of [Kerberos Protocol Extensions](https://docs.microsoft.com/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9)). The Kerberos authentication handshake selects the strongest encryption protocol supported in the list: typically Advanced Encryption Standard (AES) 256-bit, potentially with a SHA Hash-based Message Authentication Code (HMAC) to maintain integrity of the data. For details, see [HMAC](https://en.wikipedia.org/wiki/HMAC).
 
 Network encryption is a property of the DAG and not a DAG network. You can configure DAG network encryption using the **Set-DatabaseAvailabilityGroup** cmdlet in the Exchange Management Shell. The possible encryption settings for DAG network communications are shown in the following table.
 
@@ -223,7 +224,7 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 ### DAG network compression
 
-DAGs support built-in compression. When compression is enabled, DAG network communication uses XPRESS, which is the Microsoft implementation of the LZ77 algorithm. For details, see [An Explanation of the Deflate Algorithm](https://www.zlib.net/feldspar.html) and section 3.1.4.11.1.2.1 "LZ77 Compression Algorithm" of [Wire Format Protocol Specification](https://go.microsoft.com/fwlink/p/?linkId=179133). This is the same type of compression used in many Microsoft protocols, in particular, MAPI RPC compression between Microsoft Outlook and Exchange.
+DAGs support built-in compression. When compression is enabled, DAG network communication uses XPRESS, which is the Microsoft implementation of the LZ77 algorithm. This is the same type of compression used in many Microsoft protocols, in particular, MAPI RPC compression between Microsoft Outlook and Exchange.
 
 As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
 

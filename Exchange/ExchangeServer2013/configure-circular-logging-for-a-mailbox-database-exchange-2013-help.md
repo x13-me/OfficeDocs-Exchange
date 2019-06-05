@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Configure circular logging for a mailbox database: Exchange 2013 Help'
 TOCTitle: Configure circular logging for a mailbox database
 ms:assetid: 29cbd7cd-382b-4e0d-8368-2e49e75df2fc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn756374(v=EXCHG.150)
 ms:contentKeyID: 62524835
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure circular logging for a mailbox database
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 When you enable circular logging for a mailbox database, the type of circular logging you get depends on whether or not the mailbox database is replicated using continuous replication:
 
@@ -31,17 +32,17 @@ For more information about circular logging and CRCL, see [Exchange Native Data 
 
 ## Use the EAC to configure circular logging for a database
 
-1.  In the EAC, go to **Servers** \> **databases**.
+1. In the EAC, go to **Servers** \> **databases**.
 
-2.  Select the mailbox database you want to configure and click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the mailbox database you want to configure and click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  Check or uncheck the **Enable circular logging** checkbox, and then click **save**.
+3. Check or uncheck the **Enable circular logging** checkbox, and then click **save**.
 
-4.  If a dismount and mount operation are required, a warning message will appear. Click **OK** to close the warning message.
-    
-    1.  To dismount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Dismount**. Click **yes** when the warning message appears.
-    
-    2.  To mount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Mount**. Click **yes** when the warning message appears.
+4. If a dismount and mount operation are required, a warning message will appear. Click **OK** to close the warning message.
+
+    1. To dismount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Dismount**. Click **yes** when the warning message appears.
+
+    2. To mount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Mount**. Click **yes** when the warning message appears.
 
 ## Use the Shell to configure circular logging for a database
 
@@ -58,4 +59,3 @@ Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
 ```
 
 See [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)) for other mailbox database parameters you can configure.
-

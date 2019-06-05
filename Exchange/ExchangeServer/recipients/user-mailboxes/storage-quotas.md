@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Configure storage quotas for a mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

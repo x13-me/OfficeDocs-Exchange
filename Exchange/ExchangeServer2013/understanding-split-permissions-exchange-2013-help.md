@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Understanding split permissions: Exchange 2013 Help'
 TOCTitle: Understanding split permissions
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638106(v=EXCHG.150)
 ms:contentKeyID: 49289207
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Understanding split permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Organizations that separate the management of Microsoft Exchange Server 2013 objects and Active Directory objects use what's called a *split permissions* model. Split permissions enable organizations to assign specific permissions and related tasks to specific groups within the organization. This separation of work helps to maintain standards and workflows, and helps to control change in the organization.
 
@@ -39,7 +40,6 @@ Active Directory split permissions
 
 ## Explanation of Role Based Access Control and Active Directory
 
-
 To understand split permissions, you need to understand how the Role Based Access Control (RBAC) permissions model in Exchange 2013 works with Active Directory. The RBAC model controls who can perform what actions, and on which objects those actions can be performed. For more information about the various components of RBAC that are discussed in this topic, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
 In Exchange 2013, all tasks that are performed on Exchange objects must be done through the Exchange Management Shell or the Exchange Administration Center (EAC) interface. Both of these management tools use RBAC to authorize all tasks that are performed.
@@ -49,28 +49,20 @@ RBAC is a component that exists on every server running Exchange 2013. RBAC chec
   - If the user isn't authorized to perform the action, RBAC doesn't allow the action to proceed.
 
   - If the user is authorized to perform the action, RBAC checks whether the user is authorized to perform the action against the specific object being requested:
-    
+
       - If the user is authorized, RBAC allows the action to proceed.
-    
+
       - If the user isn't authorized, RBAC doesn't allow the action to proceed.
 
 If RBAC allows an action to proceed, the action is performed in the context of the Exchange Trusted Subsystem and not the user's context. The Exchange Trusted Subsystem is a highly privileged universal security group (USG) that has read/write access to every Exchange-related object in the Exchange organization. It's also a member of the Administrators local security group and the Exchange Windows Permissions USG, which enables Exchange to create and manage Active Directory objects.
 
-
 > [!WARNING]
 > Don't make any manual changes to the membership of the Exchange Trusted Subsystem security group. Also, don't add it to or remove it from object access control lists (ACLs). By making changes to the Exchange Trusted Subsystem USG yourself, you could cause irreparable damage to your Exchange organization.
 
-
-
 It's important to understand that it doesn't matter what Active Directory permissions a user has when using the Exchange management tools. If the user is authorized, via RBAC, to perform an action in the Exchange management tools, the user can perform the action regardless of his or her Active Directory permissions. Conversely, if a user is an Enterprise Admin in Active Directory but isn't authorized to perform an action, such as creating a mailbox, in the Exchange management tools, the action won't succeed because the user doesn't have the required permissions according to RBAC.
-
 
 > [!IMPORTANT]
 > Although the RBAC permissions model doesn't apply to the Active Directory Users and Computers management tool, Active Directory Users and Computers can't manage the Exchange configuration. So although a user may have access to modify some attributes on Active Directory objects, such as the display name of a user, the user must use the Exchange management tools, and therefore must be authorized by RBAC, to manage Exchange attributes.
-
-
-
-Return to top
 
 ## Shared permissions
 
@@ -104,7 +96,6 @@ The following table shows the roles that enable the creation of security princip
 </tbody>
 </table>
 
-
 Only role groups, users, or USGs that are assigned the Mail Recipient Creation role can create security principals such as Active Directory users. By default, the Organization Management and Recipient Management role groups are assigned this role. Therefore members of these role groups can create security principals.
 
 Only role groups, users, or USGs that are assigned the Security Group Creation and Membership role can create security groups or manage their memberships. By default, only the Organization Management role group is assigned this role. Therefore only members of the Organization Management role group can create or manage the membership of security groups.
@@ -121,31 +112,24 @@ For more information about how to add roles to role groups, users, or USGs, see 
 
 If you switched to a split permissions model and want to change back to a shared permissions model, see [Configure Exchange 2013 for shared permissions](configure-exchange-2013-for-shared-permissions-exchange-2013-help.md).
 
-Return to top
-
 ## Split permissions
 
 If your organization separates Exchange management and Active Directory management, you need to configure Exchange to support the split permissions model. When configured correctly, only the administrators who you want to create security principals, such as Active Directory administrators, will be able to do so and only Exchange administrators will be able to modify the Exchange attributes on existing security principals. This splitting of permissions also falls roughly along the lines of the domain and configuration partitions in Active Directory. Partitions are also called naming contexts. The domain partition stores the users, groups, and other objects for a specific domain. The configuration partition stores the forest-wide configuration information for the services that used Active Directory, such as Exchange. Data that's stored in the domain partition is typically managed by Active Directory administrators, although objects may contain Exchange-specific attributes that can be managed by Exchange administrators. Data that's stored in the configuration partition is managed by the administrators for each respective service that stores data in this partition. For Exchange, this is typically Exchange administrators.
 
 Exchange 2013 supports the two following types of split permissions:
 
-  - **RBAC split permissions**   Permissions to create security principals in the Active Directory domain partition are controlled by RBAC. Only Exchange servers, services, and those who are members of the appropriate role groups can create security principals.
+  - **RBAC split permissions**: Permissions to create security principals in the Active Directory domain partition are controlled by RBAC. Only Exchange servers, services, and those who are members of the appropriate role groups can create security principals.
 
-  - **Active Directory split permissions**   Permissions to create security principals in the Active Directory domain partition are completely removed from any Exchange user, service, or server. No option is provided in RBAC to create security principals. Creation of security principals in Active Directory must be performed using Active Directory management tools.
-    
+  - **Active Directory split permissions**: Permissions to create security principals in the Active Directory domain partition are completely removed from any Exchange user, service, or server. No option is provided in RBAC to create security principals. Creation of security principals in Active Directory must be performed using Active Directory management tools.
 
     > [!IMPORTANT]
     > Although Active Directory split permissions can be enabled or disabled by running Setup on a computer that has Exchange 2013 installed, Active Directory split permissions configuration applies to both Exchange 2013 and Exchange 2010 servers. It doesn't, however, have any impact on Microsoft Exchange Server 2007 servers.
-
-
 
 If your organization chooses to use a split permissions model instead of shared permissions, we recommend that you use the RBAC split permissions model. The RBAC split permissions model provides significantly more flexibility while providing the nearly same administration separation as Active Directory split permissions, with the exception that Exchange servers and services can create security principals in the RBAC split permissions model.
 
 You're asked whether you want to enable Active Directory split permissions during Setup. If you choose to enable Active Directory split permissions, you can only change to shared permissions or RBAC split permissions by rerunning Setup and disabling Active Directory split permissions. This choice applies to all Exchange 2010 and Exchange 2013 servers in the organization.
 
 The following sections describe RBAC and Active Directory split permissions in more detail.
-
-Return to top
 
 ## RBAC split permissions
 
@@ -195,22 +179,21 @@ Switching from shared permissions to RBAC split permissions is a manual process 
 </tbody>
 </table>
 
-
 By default, members of the Organization Management and Recipient Management role groups can create security principals. You must transfer the ability to create security principals from the built-in role groups to a new role group that you create.
 
 To configure RBAC split permissions, you must do the following:
 
-1.  Disable Active Directory split permissions if it's enabled.
+1. Disable Active Directory split permissions if it's enabled.
 
-2.  Create a role group, which will contain the Active Directory administrators that will be able to create security principals.
+2. Create a role group, which will contain the Active Directory administrators that will be able to create security principals.
 
-3.  Create regular and delegating role assignments between the Mail Recipient Creation role and the new role group.
+3. Create regular and delegating role assignments between the Mail Recipient Creation role and the new role group.
 
-4.  Create regular and delegating role assignments between the Security Group Creation and Membership role and the new role group.
+4. Create regular and delegating role assignments between the Security Group Creation and Membership role and the new role group.
 
-5.  Remove the regular and delegating management role assignments between the Mail Recipient Creation role and the Organization Management and Recipient Management role groups.
+5. Remove the regular and delegating management role assignments between the Mail Recipient Creation role and the Organization Management and Recipient Management role groups.
 
-6.  Remove the regular and delegating role assignments between the Security Group Creation and Membership role and the Organization Management role group.
+6. Remove the regular and delegating role assignments between the Security Group Creation and Membership role and the Organization Management role group.
 
 After doing this, only members of the new role group that you create will be able to create security principals, such as mailboxes. The new group will only be able to create the objects. It won't be able to configure the Exchange attributes on the new object. An Active Directory administrator, who is a member of the new group, will need to create the object, and then an Exchange administrator will need to configure the Exchange attributes on the object. Exchange administrators won't be able to use the following cmdlets:
 
@@ -238,8 +221,6 @@ If you want the new role group to also be able to manage the Exchange attributes
 
 For more information about configuring a split permissions model, see [Configure Exchange 2013 for split permissions](configure-exchange-2013-for-split-permissions-exchange-2013-help.md).
 
-Return to top
-
 ## Active Directory split permissions
 
 With Active Directory split permissions, the creation of security principals in the Active Directory domain partition, such as mailboxes and distribution groups, must be performed using Active Directory management tools. Several changes are made to the permissions granted to the Exchange Trusted Subsystem and Exchange servers to limit what Exchange administrators and servers can do. The following changes in functionality occur when you enable Active Directory split permissions:
@@ -264,27 +245,18 @@ Active Directory split permissions is a good choice for your organization if the
 
   - You don't want Exchange servers, or third-party programs that use Exchange on their behalf, to create security principals.
 
-
 > [!IMPORTANT]
 > Switching to Active Directory split permissions is a choice that you can make when you install Exchange 2013 either by using the Setup wizard or by using the <EM>ActiveDirectorySplitPermissions</EM> parameter while running <CODE>setup.exe</CODE> from the command line. You can also enable or disable Active Directory split permissions after you've installed Exchange 2013 by rerunning <CODE>setup.exe</CODE> from the command line. To enable Active Directory split permissions, set the <EM>ActiveDirectorySplitPermissions</EM> parameter to <CODE>true</CODE>. To disable it, set it to <CODE>false</CODE>. You must always specify the <EM>PrepareAD</EM> switch along with the <EM>ActiveDirectorySplitPermissions</EM> parameter.<BR>If you have multiple domains within the same forest, you must also either specify the <EM>PrepareAllDomains</EM> switch when you apply Active Directory split permissions or run setup with the <EM>PrepareDomain</EM> switch in each domain. If you choose to run setup with the <EM>PrepareDomain</EM> switch in each domain rather than use the <EM>PrepareAllDomains</EM> switch, you must prepare every domain that contains Exchange servers, mail-enabled objects, or global catalog servers that could be accessed by an Exchange server.
 
-
-
-
 > [!IMPORTANT]
 > You can't enable Active Directory split permissions if you've installed Exchange 2010 or Exchange 2013 on a domain controller.<BR>After you enable or disable Active Directory split permissions, we recommend that you restart the Exchange 2010 and Exchange 2013 servers in your organization to force them to pick up the new Active Directory access token with the updated permissions.
-
-
 
 Exchange 2013 achieves Active Directory split permissions by removing permissions and membership from the Exchange Windows Permissions security group. This security group, in shared permissions and RBAC split permissions, is given permissions to many non-Exchange objects and attributes throughout Active Directory. By removing the permissions and membership to this security group, Exchange administrators and services are prevented from creating or modifying those non-Exchange Active Directory objects.
 
 For a list of changes that occur to the Exchange Windows Permissions security group and other Exchange components when you enable or disable Active Directory split permissions, see the following table.
 
-
 > [!NOTE]
 > Role assignments to role groups that enable Exchange administrators to create security principals are removed when Active Directory split permissions is enabled. This is done to remove access to cmdlets that would otherwise generate an error when they're run because they don't have permissions to create the associated Active Directory object.
-
-
 
 ### Active Directory split permissions changes
 
@@ -360,7 +332,6 @@ For a list of changes that occur to the Exchange Windows Permissions security g
 </tbody>
 </table>
 
-
 After you enable Active Directory split permissions, the following cmdlets are no longer available:
 
   - **New-Mailbox**
@@ -398,6 +369,3 @@ Additionally, the associated features in the Exchange Administration Center and 
 Exchange administrators will, however, be able to create and manage Exchange-specific objects, such as transport rules, and so on.
 
 For more information about configuring an Active Directory split permissions model, see [Configure Exchange 2013 for split permissions](configure-exchange-2013-for-split-permissions-exchange-2013-help.md).
-
-Return to top
-

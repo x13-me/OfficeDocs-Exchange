@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Run a per-mailbox litigation hold report
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -56,6 +57,3 @@ To verify that you've successfully run a litigation hold report, mailboxes that 
 
 > [!NOTE]
 > When a mailbox is put on litigation hold, it can take up to 60 minutes for the hold to take effect.
-
-
-

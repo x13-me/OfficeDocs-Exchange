@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Outlook Anywhere: Exchange 2013 Help'
 TOCTitle: Outlook Anywhere
 ms:assetid: 9026d461-ec6a-4ef5-ba9d-de33030858f3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123741(v=EXCHG.150)
 ms:contentKeyID: 48385337
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Outlook Anywhere
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 In Microsoft Exchange Server 2013, the Outlook Anywhere feature, formerly known as RPC over HTTP, lets clients who use Microsoft Outlook 2013, Outlook 2010, or Outlook 2007 connect to their Exchange servers from outside the corporate network or over the Internet using the RPC over HTTP Windows networking component. This topic describes the Outlook Anywhere feature and lists the benefits of using Outlook Anywhere.
 
@@ -33,7 +34,7 @@ Testing Outlook Anywhere connectivity
 
 ## Outlook Anywhere and Exchange 2013
 
-The Windows RPC over HTTP Proxy component, which Outlook Anywhere clients use to connect, wraps remote procedure calls (RPCs) with an HTTP layer. This allows traffic to traverse network firewalls without requiring RPC ports to be opened. In Exchange 2013, this feature is enabled by default, because Exchange 2013 doesn’t allow direct RPC connectivity.
+The Windows RPC over HTTP Proxy component, which Outlook Anywhere clients use to connect, wraps remote procedure calls (RPCs) with an HTTP layer. This allows traffic to traverse network firewalls without requiring RPC ports to be opened. In Exchange 2013, this feature is enabled by default, because Exchange 2013 doesn't allow direct RPC connectivity.
 
 ## Benefits of using Outlook Anywhere
 
@@ -92,4 +93,3 @@ Both tests try to sign in through Outlook Anywhere after obtaining server settin
   - Checking that the firewall is set up correctly (ExRCA checks overall firewall setup. The cmdlet tests for Windows firewall configuration.)
 
   - Confirming client connectivity by signing in to the user's mailbox
-

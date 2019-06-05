@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Configure managed availability overrides
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
 ms.date: 
+ms.reviewer: 
 title: Search the role group changes or administrator audit logs in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -190,4 +191,3 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohi
 For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
 
 For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://technet.microsoft.com/library/52a221e0-ded1-44dc-a626-ca264eca4113.aspx).
-

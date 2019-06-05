@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Configure email forwarding for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -74,6 +75,3 @@ This topic is for admins. If you want to forward your own email to another recip
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-
-
-

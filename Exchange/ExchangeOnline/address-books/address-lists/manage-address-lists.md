@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
 ms.date: 
+ms.reviewer: 
 title: Manage address lists in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -327,4 +328,3 @@ You can verify that you've successfully hidden a recipient from address lists by
    ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.
-

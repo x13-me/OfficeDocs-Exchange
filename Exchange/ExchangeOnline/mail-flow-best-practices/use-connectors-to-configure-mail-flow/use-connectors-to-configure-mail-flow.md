@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
 ms.date: 
+ms.reviewer: 
 title: Configure mail flow using connectors in Office 365
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -128,4 +129,3 @@ Connector setup topics:
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
-

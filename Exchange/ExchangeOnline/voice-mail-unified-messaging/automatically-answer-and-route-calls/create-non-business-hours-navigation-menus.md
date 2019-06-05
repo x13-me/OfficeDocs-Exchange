@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can enable non-business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the non-business hours main menu prompt greeting that callers hear after the non-business hours welcome greeting is played. The default non-business hours main menu prompt says,Welcome to the Microsoft Exchange after hours auto attendant.Because no key mappings are defined by default, no menu options are available to callers and they hear only the default non-business hours main menu prompt.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
 ms.date: 11/17/2014
-title: Create non-business hours navigation menus
+ms.reviewer: 
+title: Create non-business hours navigation menus in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Create non-business hours navigation menus
+# Create non-business hours navigation menus in Exchange Online
 
 You can enable non-business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the non-business hours main menu prompt greeting that callers hear after the non-business hours welcome greeting is played. The default non-business hours main menu prompt says, "Welcome to the Microsoft Exchange after hours auto attendant." Because no key mappings are defined by default, no menu options are available to callers and they hear only the default non-business hours main menu prompt.
 
@@ -84,6 +85,3 @@ This example configures a UM auto attendant named `MyAutoAttendant` and enables 
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AfterHoursKeyMappingEnabled $true -AfterHoursKeyMapping "AfterhoursOperator,12345","Directions,23456"
 ```
-
-
-

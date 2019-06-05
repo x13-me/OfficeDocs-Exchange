@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Transport high availability in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

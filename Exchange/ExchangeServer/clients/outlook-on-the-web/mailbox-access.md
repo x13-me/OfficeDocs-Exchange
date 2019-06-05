@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Enable or disable Outlook on the web access to mailboxes in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

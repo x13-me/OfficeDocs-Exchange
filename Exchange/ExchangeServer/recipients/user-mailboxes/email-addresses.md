@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Add or remove email addresses for a mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 search.appverid: 
 - MET150
 

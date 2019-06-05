@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.date: 7/5/2018
+ms.reviewer: 
 title: View members of a dynamic distribution group
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

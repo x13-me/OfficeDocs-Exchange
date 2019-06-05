@@ -8,13 +8,14 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 0f7e88eb-2b47-41ef-aedf-add22937c658
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Manage Facebook contact sync in your organization
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Developer
+audience: Developer
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 
@@ -39,6 +40,3 @@ The information for each Facebook friend is stored as a read-only contact record
 During the Outlook Web App and Facebook connection setup, the contacts in the user's default contacts folder are uploaded to Facebook as part of a one-time synchronization with Facebook. Facebook uses this contact information as part of the "People you may know" friend suggestions on Facebook. The one-time upload of information also allows Facebook to include the information for your users' Outlook Web App contacts in Facebook applications that your users may choose to use, for example, mobile phone applications.
 
 For information about how your users can set up a connection to Facebook using a desktop version of Outlook, see [Social Connector for Microsoft Outlook](https://go.microsoft.com/fwlink/p/?LinkId=280216).
-
-
-

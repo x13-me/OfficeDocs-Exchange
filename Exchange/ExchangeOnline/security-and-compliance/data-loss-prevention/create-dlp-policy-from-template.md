@@ -6,11 +6,12 @@ author: stephow-msft
 ms.author: stephow
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Create a DLP policy from a template
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -81,6 +82,3 @@ For any of the DLP policies, you can change the rules, actions, exceptions, enfo
 [Data loss prevention](data-loss-prevention.md)
 
 [DLP policy templates](https://technet.microsoft.com/library/c7b1a8e4-30d9-4409-85c5-f85ae023737d.aspx)
-
-
-

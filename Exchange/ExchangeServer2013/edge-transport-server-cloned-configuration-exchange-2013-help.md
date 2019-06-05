@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Edge Transport server cloned configuration: Exchange 2013 Help'
 TOCTitle: Edge Transport server cloned configuration
 ms:assetid: 683a6b8a-59bf-43ed-96c8-504945c2f665
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998622(v=EXCHG.150)
 ms:contentKeyID: 61200288
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Edge Transport server cloned configuration
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Edge Transport servers store their configuration information in Active Directory Lightweight Directory Services (AD LDS). You can install more than one Edge Transport server in the perimeter network and use a DNS round robin to help balance network traffic among the Edge Transport servers. Round robin is a simple mechanism used by DNS servers to share and distribute loads for network resources.
 
@@ -41,16 +42,16 @@ Cloned configuration doesn't duplicate a server's Edge Subscription settings. Th
 
 The cloned configuration process consists of three steps:
 
-1.  Export the configuration from the source server.
-    
+1. Export the configuration from the source server.
+
     Run the ExportEdgeConfig.ps1 script (located in %ExchangeInstallPath%Scripts) to export the source server's configuration information to an intermediate XML file.
 
-2.  Validate the configuration on the target server.
-    
+2. Validate the configuration on the target server.
+
     Run the ImportEdgeConfig.ps1 script (located in %ExchangeInstallPath%Scripts). This script checks the existing information in the intermediate XML file to see whether the exported settings are valid for the target server and then creates an answer file. The answer file specifies the server-specific information used when you import the configuration onto the target server. The answer file contains entries for each source server setting that isn't valid for the target server. You can modify these settings so that they're valid for the target server. If all settings are valid, the answer file contains no entries.
 
-3.  Import the configuration on the target server.
-    
+3. Import the configuration on the target server.
+
     The ImportEdgeConfig.ps1 script uses the intermediate XML file and the answer file to clone an existing configuration or to restore the server to a specific configuration.
 
 ## Step 1: Export the configuration from the source server
@@ -60,15 +61,15 @@ After you install and configure the Edge Transport server role, run the ExportEd
 The following information is exported from the source server and stored in the intermediate XML file:
 
   - Transport service-related information and log file path information:
-    
+
       - *ReceiveProtocolLogPath*
-    
+
       - *SendProtocolLogPath*
-    
+
       - *MessageTrackingLogPath*
-    
+
       - *PickupDirectoryPath*
-    
+
       - *RoutingTableLogPath*
 
   - Transport agent-related information, including status and priority settings of each transport agent.
@@ -82,20 +83,18 @@ The following information is exported from the source server and stored in the i
   - Remote domain configuration.
 
   - Anti-spam features configuration settings:
-    
-      - IP Allow list information. Only IP Allow list entries that were manually configured by the administrator are exported.
-    
-      - IP Block list information.
-    
-      - Content filter configuration.
-    
-      - Recipient filter configuration.
-    
-      - Address rewrite entries.
-    
-      - Attachment filter entries.
 
-Return to top
+      - IP Allow list information. Only IP Allow list entries that were manually configured by the administrator are exported.
+
+      - IP Block list information.
+
+      - Content filter configuration.
+
+      - Recipient filter configuration.
+
+      - Address rewrite entries.
+
+      - Attachment filter entries.
 
 ## Step 2: Validate the configuration on the target server
 
@@ -117,17 +116,12 @@ You will need to manually modify the answer file to provide the following inform
 
   - For each Receive connector entry, fill in the local network bindings. If the local network bindings are left blank, an error will occur when you try to import the configuration onto the target server.
 
-Return to top
-
 ## Step 3: Import the configuration onto the target server
 
 You can perform this step on any target server to clone the configuration of an existing Edge Transport server or to restore the server to a specific configuration. Run the ImportEdgeConfig.ps1 script (located at %ExchangeInsallPath%Scripts) to validate and import the new configuration. After you run this script, the target server's configuration will match the settings in the intermediate XML file and the answer file.
 
-
 > [!IMPORTANT]
 > We recommend that you back up the existing server configuration before running the import configuration process, so that if the cloning operation fails, you can restore the server to its previous stable state.
-
-
 
 This step uses the server-specific information provided in the answer file. If a setting isn't specified in the answer file, the data in the intermediate XML file will be used. Before the script modifies the configuration, the script validates the data in the intermediate XML file and the answer file.
 
@@ -146,16 +140,14 @@ Import configuration modifies the following target server configuration settings
   - The existing IP Block list entries are removed, and the IP Block list entries in the intermediate remote domains file are added.
 
   - The following anti-spam configuration is cloned to the target server:
-    
-      - Content filter configuration
-    
-      - Recipient filter configuration
-    
-      - Address rewrite entries
-    
-      - Attachment filter entries
 
-Return to top
+      - Content filter configuration
+
+      - Recipient filter configuration
+
+      - Address rewrite entries
+
+      - Attachment filter entries
 
 ## Transport configuration information
 
@@ -259,12 +251,5 @@ The attributes in the following table are associated with the transport configur
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > If the Edge Transport server is later subscribed to the Exchange organization, the value of the <STRONG>InternalSMTPServers</STRONG> attribute will be overwritten during the EdgeSync process. For more information, see <A href="edge-subscriptions-exchange-2013-help.md">Edge Subscriptions</A>.
-
-
-
-Return to top
-

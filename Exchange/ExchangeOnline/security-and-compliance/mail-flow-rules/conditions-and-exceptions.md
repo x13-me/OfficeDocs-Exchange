@@ -1,8 +1,8 @@
 ---
-ms.audience: ITPro
+audience: ITPro
 localization_priority: Normal
 ms.author: chrisda
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: chrisda
 ms.service: exchange-online
@@ -11,6 +11,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.date: 
+ms.reviewer: 
 title: Mail flow rule conditions and exceptions (predicates) in Exchange Online
 
 ---

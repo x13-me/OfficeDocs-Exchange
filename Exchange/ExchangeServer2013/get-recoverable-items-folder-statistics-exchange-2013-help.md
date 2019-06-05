@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Get Recoverable Items folder statistics: Exchange 2013 Help'
 TOCTitle: Get Recoverable Items folder statistics
 ms:assetid: dee77958-ee87-4908-85e4-ad053bacd8b0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff714343(v=EXCHG.150)
 ms:contentKeyID: 51439484
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Get Recoverable Items folder statistics
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 The Recoverable Items folder contains items deleted by Microsoft Outlook and Microsoft Office Outlook Web App users or by the Mailbox Assistant. The duration that deleted items remain in this folder is based on the deleted item retention settings configured for the mailbox database or the mailbox. By default, a mailbox database is configured to retain deleted items for 14 days, and the Recoverable Items warning quota and Recoverable Items quota are set to 20 gigabytes (GB) and 30 GB respectively. However, if In-Place Hold or Litigation Hold is enabled for the mailbox, the Recoverable Items folder can accumulate deleted items beyond the specified retention period and can also maintain different versions of modified mailbox items.
 
@@ -37,9 +38,7 @@ To learn more, see the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-
-## What do you want to do?
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Get Recoverable Items folder statistics for a mailbox
 

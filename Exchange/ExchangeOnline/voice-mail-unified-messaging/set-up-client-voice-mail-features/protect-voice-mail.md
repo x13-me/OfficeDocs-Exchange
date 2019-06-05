@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Some Private Branch eXchange (PBX) and IP PBX telephony systems allow the caller to mark a voice mail message as private, blocking the intended recipient of the message from forwarding it to others. In integrated voice mail systems, a voice message can be accessed in multiple ways, which makes it more of a challenge to prevent voice messages marked private from being exposed to unintended listeners. Unified Messaging (UM) can be configured to protect voice messages for an organization. This feature is known as Protected Voice Mail.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: bff15214-3e06-43af-b6f8-3fd341fe2389
 ms.date: 7/12/2018
+ms.reviewer: 
 title: Protect voice mail in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -121,6 +122,3 @@ For more information about how to manage Protected Voice Mail settings, see [Pro
 Users who configure their UM account to send text message notifications (also called SMS notifications) to their mobile phone when voice messages are received will also receive audio transcription (Voice Mail Preview) text as part of the body of the text message. However, for protected voice messages, this represents a security issue because the content of the voice messages should always be protected.
 
 When UM creates a text message notification for a voice message that's protected, it checks whether the voice message is marked as Private. If so, it won't add the transcribed audio text to the text message that it sends to the mobile phone. The following text will be included in the text message instead: "Use Outlook Voice Access to access this protected voice mail message."
-
-
-

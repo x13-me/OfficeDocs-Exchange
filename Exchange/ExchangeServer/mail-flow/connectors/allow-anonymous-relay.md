@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

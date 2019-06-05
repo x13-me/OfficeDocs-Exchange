@@ -9,9 +9,9 @@ ms.date: 7/5/2018
 title: Managing devices for Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

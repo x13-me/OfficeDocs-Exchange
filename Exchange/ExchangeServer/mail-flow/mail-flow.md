@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Mail flow and the transport pipeline
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
 ms.date: 
+ms.reviewer: 
 title: Remove an Outlook on the web mailbox policy from Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -70,4 +71,3 @@ To verify that you've successfully removed an Outlook on the web mailbox policy,
     ```
     Get-OwaMailboxPolicy
     ```
-

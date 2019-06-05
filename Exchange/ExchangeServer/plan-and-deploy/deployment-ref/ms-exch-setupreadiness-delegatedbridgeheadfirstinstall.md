@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: bd1dbf09-5465-40fa-8668-ef99f753ba45
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedBridgeheadFirstInstall]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

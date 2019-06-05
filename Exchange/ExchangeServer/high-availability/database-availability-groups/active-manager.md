@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Active Manager
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

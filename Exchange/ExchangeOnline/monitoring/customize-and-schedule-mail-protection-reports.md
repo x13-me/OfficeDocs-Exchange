@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: deniseb
 ms.assetid: 51832055-1696-4443-8579-bc76b8db92a3
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Customize and schedule mail protection reports in Office 365 to be automatically sent to your inbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -39,5 +40,3 @@ To get started customizing and downloading reports, see the following resources:
 [View email security reports in the Security & Compliance Center](https://support.office.com/article/3a137e28-1174-42d5-99af-f18868b43e86)
 
 [Mail flow insights in the Office 365 Security & Compliance Center](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46)
-
-

@@ -7,14 +7,15 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
 ms.date: 7/27/2018
+ms.reviewer: 
 description: 'Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Mailbox server role on a computer.'
 title: Install Exchange Mailbox servers using the Setup wizard
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,29 +1,27 @@
-﻿---
+---
 title: 'Configure IRM for Exchange Search and In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: Configure IRM for Exchange Search and In-Place eDiscovery
 ms:assetid: d96790e9-93ad-4a56-b90f-2dbfa2f2073c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg588319(v=EXCHG.150)
 ms:contentKeyID: 49319934
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure IRM for Exchange Search and In-Place eDiscovery
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 In Microsoft Exchange Server 2013, you can configure Information Rights Management (IRM) so that Exchange Search can index IRM-protected messages.
 
 When members of the Discovery Management role group perform an [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) search, IRM-protected messages are returned in the search results and copied to the Discovery mailbox specified in the search. Furthermore, members of the Discovery Management role group can use Outlook Web App to access the IRM-protected messages that were copied to the Discovery mailbox as a result of the discovery search.
 
-
 > [!NOTE]
 > Members of the Discovery Management role group can't access IRM-protected messages exported from a Discovery mailbox to another mailbox or to a .pst file. IRM-protected messages in a Discovery mailbox can be accessed only by using Outlook Web App.
-
-
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -41,23 +39,15 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to configure IRM for Exchange Search
 
 This example configures IRM to allow Exchange Search to index IRM-protected messages.
 
-
 > [!NOTE]
 > By default, the <EM>SearchEnabled</EM> parameter is set to <CODE>$true</CODE>. To disable indexing of IRM-protected messages, set it to <CODE>$false</CODE>. Disabling indexing of IRM-protected messages prevents them from being returned in search results when users search their mailbox or when discovery managers use In-Place eDiscovery.
-
-
 
 ```powershell
 Set-IRMConfiguration -SearchEnabled $true
@@ -69,11 +59,8 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 
 This example enables members of the Discovery Management role group to access IRM-protected messages that reside in the Discovery mailbox.
 
-
 > [!NOTE]
 > By default, the <EM>EDiscoverySuperUserEnabled</EM> parameter is set to <CODE>$true</CODE>. To disable access to IRM-protected messages for members of the Discovery Management role group, set it to <CODE>$false</CODE>.
-
-
 
 ```powershell
 Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
@@ -84,4 +71,3 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 ## How do you know this worked?
 
 To verify that you have successfully configured IRM for Exchange Search and In-Place eDiscovery, use the **Get-IRMConfigurtaion** cmdlet to retrieve the IRM configuration information. For an example of how to retrieve the IRM configuration, see [Examples](https://technet.microsoft.com/en-us/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
-

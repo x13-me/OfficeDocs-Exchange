@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Clean up or delete items from the Recoverable Items folder
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

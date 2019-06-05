@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4f7da774-b484-4312-b822-809dbeced5f8
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Manage user mailboxes
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

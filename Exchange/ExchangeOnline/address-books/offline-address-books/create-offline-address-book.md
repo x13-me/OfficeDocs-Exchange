@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
 ms.date: 
+ms.reviewer: 
 title: Create an offline address book
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -42,4 +43,3 @@ New-OfflineAddressBook -Name "OAB_Contoso" -AddressLists "\Default Global Addres
 ```
 
 For detailed syntax and parameter information, see [New-OfflineAddressBook](https://technet.microsoft.com/library/8b9a3931-90c3-4b36-9dcb-5e2e65cd7e5e.aspx).
-

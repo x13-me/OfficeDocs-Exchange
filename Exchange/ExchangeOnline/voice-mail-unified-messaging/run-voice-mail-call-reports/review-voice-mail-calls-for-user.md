@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: 'User call logs are used to view the following information about specific Unified Messaging (UM) users:'
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 ms.date: 11/17/2014
-title: Review the voice mail calls for a user
+ms.reviewer: 
+title: Review the voice mail calls for a user in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Review the voice mail calls for a user
+# Review the voice mail calls for a user in Exchange Online
 
 User call logs are used to view the following information about specific Unified Messaging (UM) users:
 
@@ -71,6 +72,3 @@ The user call log includes the following information for each call:
 - **UM IP GATEWAY**: The UM IP gateway that took the call.
 
 - **AUDIO QUALITY**: The overall audio quality of the call. For more details about audio quality, select the row and click **Audio Quality Details**.
-
-
-

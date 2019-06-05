@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.date: 
+ms.reviewer: 
 title: View or configure Outlook on the web mailbox policy properties in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -104,4 +105,3 @@ To verify that you've successfully modified an Outlook on the web mailbox policy
     ```
     Get-OwaMailboxPolicy -Identity "<Policy Name>"
     ```
-

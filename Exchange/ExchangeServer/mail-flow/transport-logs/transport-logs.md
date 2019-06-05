@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Transport logs in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
 title: Add an SSL certificate to Exchange 2013
 ms.collection: 
@@ -16,10 +17,10 @@ search.appverid:
 - MED150
 - GPA150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -101,6 +102,3 @@ After you receive the certificate from the CA, complete the following steps.
 6. Select the services you want to assign to this certificate. At a minimum, you should select SMTP and IIS. Choose **Save**.
 
 7. If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes**.
-
-
-

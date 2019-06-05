@@ -7,6 +7,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.date: 
+ms.reviewer: 
 description: Learn how to find your IMAP server name is Outlook on the web (Outlook Web App).
 title: Learn more about setting up your IMAP server connection
 ms.collection: 
@@ -17,10 +18,10 @@ search.appverid:
 - MOE150
 - MED150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

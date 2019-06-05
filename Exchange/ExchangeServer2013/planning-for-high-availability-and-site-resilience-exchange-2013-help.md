@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Planning for high availability and site resilience: Exchange 2013 Help'
 TOCTitle: Planning for high availability and site resilience
 ms:assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638104(v=EXCHG.150)
 ms:contentKeyID: 48384921
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Planning for high availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.
 
@@ -47,19 +48,13 @@ Before deploying a database availability group (DAG) and creating mailbox databa
 
   - The name you assign to the DAG must be a valid, available, and unique computer name of 15 characters or less.
 
-Return to top
-
 ## Hardware requirements
 
 Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in the topics for [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md) and [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-Return to top
-
 ## Storage requirements
 
 Generally, there are no special storage requirements specific to DAGs or mailbox database copies. DAGs don't require or use cluster-managed shared storage. Cluster-managed shared storage is supported for use in a DAG only when the DAG is configured to use a solution that leverages the Third Party Replication API built into Exchange 2013.
-
-Return to top
 
 ## Software requirements
 
@@ -68,8 +63,6 @@ DAGs are available in both Exchange 2013 Standard and Exchange 2013 Enterprise. 
 Each member of the DAG must also be running the same operating system. Exchange 2013 is supported on the Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 operating systems. All members of a specific DAG must run the same operating system. Windows Server 2012 R2 is supported only for DAG members that are running Exchange 2013 Service Pack 1 or later.
 
 In addition to meeting the prerequisites for installing Exchange 2013, there are operating system requirements that must be met. DAGs use Windows Failover Clustering technology, and as a result, they require the Enterprise or Datacenter version of Windows Server 2008 R2, or the Standard or Datacenter version of the Windows Server 2012 or Windows Server 2012 R2 operating systems.
-
-Return to top
 
 ## Network requirements
 
@@ -82,9 +75,9 @@ Consider the following when designing the network infrastructure for your DAG:
   - Each member of the DAG must have at least one network adapter that's able to communicate with all other DAG members. If you're using a single network path, we recommend that you use a minimum of 1 gigabit Ethernet, but preferably 10 gigabit Ethernet. In addition, when using a single network adapter in each DAG member, we recommend that you design the overall solution with the single network adapter and path in mind.
 
   - Using two network adapters in each DAG member provides you with one MAPI network and one Replication network, with redundancy for the Replication network and the following recovery behaviors:
-    
+
       - In the event of a failure affecting the MAPI network, a server failover will occur (assuming there are healthy mailbox database copies that can be activated).
-    
+
       - In the event of a failure affecting the Replication network, if the MAPI network is unaffected by the failure, log shipping and seeding operations will revert to use the MAPI network, even if the MAPI network has it's *ReplicationEnabled* property set to False. When the failed Replication network is restored to health and ready to resume log shipping and seeding operations, you must manually switch over to the Replication network. To change replication from the MAPI network to a restored Replication network, you can either suspend and resume continuous replication by using the **Suspend-MailboxDatabaseCopy** and **Resume-MailboxDatabaseCopy** cmdlets, or restart the Microsoft Exchange Replication service. We recommend using suspend and resume operations to avoid the brief outage caused by restarting the Microsoft Exchange Replication service.
 
   - Each DAG member must have the same number of networks. For example, if you plan on using a single network adapter in one DAG member, all members of the DAG must also use a single network adapter.
@@ -94,13 +87,13 @@ Consider the following when designing the network infrastructure for your DAG:
   - Additional Replication networks can be added, as needed. You can also prevent an individual network adapter from being a single point of failure by using network adapter teaming or similar technology. However, even when using teaming, this doesn't prevent the network itself from being a single point of failure. Moreover, teaming adds unnecessary complexity to the DAG.
 
   - Each network in each DAG member server must be on its own network subnet. Each server in the DAG can be on a different subnet, but the MAPI and Replication networks must be routable and provide connectivity, such that:
-    
+
       - Each network in each DAG member server is on its own network subnet that's separate from the subnet used by each other network in the server.
-    
+
       - Each DAG member server's MAPI network can communicate with each other DAG member's MAPI network.
-    
+
       - Each DAG member server's Replication network can communicate with each other DAG member's Replication network.
-    
+
       - There is no direct routing that allows heartbeat traffic from the Replication network on one DAG member server to the MAPI network on another DAG member server, or vice versa, or between multiple Replication networks in the DAG.
 
   - Regardless of their geographic location relative to other DAG members, each member of the DAG must have round trip network latency no greater than 500 milliseconds between each other member. As the round trip latency between two Mailbox servers hosting copies of a database increases, the potential for replication not being up to date also increases. Regardless of the latency of the solution, customers should validate that the networks between all DAG members is capable of satisfying the data protection and availability goals of the deployment. Configurations with higher latency values may require special tuning of DAG, replication, and network parameters, such as increasing the number of databases or decreasing the number of mailboxes per database, to achieve the desired goals.
@@ -137,11 +130,8 @@ Each time the DAG's MAPI network is extended across an additional subnet, an add
 
 At any specific time, the cluster for the DAG will use only one of the assigned IP addresses. Windows Failover Clustering registers this IP address in DNS when the cluster IP address and Network Name resources are brought online. In addition to using an IP address and network name, a cluster name object (CNO) is created in Active Directory. The name, IP address, and CNO for the cluster are used internally by the system to secure the DAG and for internal communication purposes. Administrators and end users don't need to interface with or connect to the DAG name or IP address.
 
-
 > [!NOTE]
-> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2013 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it’s IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
-
-
+> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2013 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it's IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
 
 ## Network adapter configuration for DAGs
 
@@ -150,7 +140,6 @@ Each network adapter must be configured properly based on its intended use. A ne
 ## MAPI network adapter configuration
 
 A network adapter intended for use by a MAPI network should be configured as described in the following table.
-
 
 <table>
 <colgroup>
@@ -194,7 +183,6 @@ A network adapter intended for use by a MAPI network should be configured as des
 </tr>
 </tbody>
 </table>
-
 
 The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
@@ -210,7 +198,6 @@ The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
 A network adapter intended for use by a Replication network should be configured as described in the following table.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -254,7 +241,6 @@ A network adapter intended for use by a Replication network should be configured
 </tbody>
 </table>
 
-
 The TCP/IP v4 properties for a Replication network adapter are configured as follows:
 
   - The IP address for a DAG member's Replication network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
@@ -265,8 +251,6 @@ The TCP/IP v4 properties for a Replication network adapter are configured as fol
 
   - The **Register this connection's addresses in DNS** check box shouldn't be selected.
 
-Return to top
-
 ## Witness server requirements
 
 A *witness server* is a server outside a DAG that's used to achieve and maintain quorum when the DAG has an even number of members. DAGs with an odd number of members don't use a witness server. All DAGs with an even number of members must use a witness server. The witness server can be any computer running Windows Server. There is no requirement that the version of the Windows Server operating system of the witness server matches the operating system used by the DAG members.
@@ -274,8 +258,6 @@ A *witness server* is a server outside a DAG that's used to achieve and maintain
 Quorum is maintained at the cluster level, underneath the DAG. A DAG has quorum when the majority of its members are online and can communicate with the other online members of the DAG. This notion of quorum is one aspect of the concept of quorum in Windows failover clustering. A related and necessary aspect to quorum in failover clusters is the *quorum resource*. The quorum resource is a resource inside a failover cluster that provides a means for arbitration leading to cluster state and membership decisions. The quorum resource also provides persistent storage for storing configuration information. A companion to the quorum resource is the *quorum log*, which is a configuration database for the cluster. The quorum log contains information such as which servers are members of the cluster, what resources are installed in the cluster, and the state of those resources (for example, online or offline).
 
 It's critical that each DAG member have a consistent view of how the DAG's underlying cluster is configured. The quorum acts as the definitive repository for all configuration information relating to the cluster. The quorum is also used as a tie-breaker to avoid *split-brain* syndrome. Split brain syndrome is a condition that occurs when DAG members can't communicate with each other but are running. Split brain syndrome is prevented by always requiring a majority of the DAG members (and in the case of DAGs with an even number of member, the DAG witness server) to be available and interacting for the DAG to be operational.
-
-Return to top
 
 ## Planning for site resilience
 
@@ -323,11 +305,11 @@ Some applications that integrate with Exchange have specific certificate require
 
 In addition to the specific networking requirements that must be met for each DAG, as well as for each server that's a member of a DAG, there are some requirements and recommendations that are specific to site resilience configurations. As with all DAGs, whether the DAG members are deployed in a single site or in multiple sites, the round-trip return network latency between DAG members must be no greater than 500 milliseconds. In addition, there are specific configuration settings that are recommended for DAGs that are extended across multiple sites:
 
-  - **MAPI networks should be isolated from Replication networks**   Windows network policies, Windows firewall policies, or router access control lists (ACLs) should be used to block traffic between the MAPI network and the Replication networks. This configuration is necessary to prevent network heartbeat cross talk.
+  - **MAPI networks should be isolated from Replication networks**: Windows network policies, Windows firewall policies, or router access control lists (ACLs) should be used to block traffic between the MAPI network and the Replication networks. This configuration is necessary to prevent network heartbeat cross talk.
 
-  - **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**   The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Microsoft Office Outlook Web App, Microsoft Exchange ActiveSync, Exchange Web services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
+  - **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**: The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Microsoft Office Outlook Web App, Microsoft Exchange ActiveSync, Exchange Web services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
 
-  - **Use static routes to configure connectivity across Replication networks**   To provide network connectivity between each of the Replication network adapters, use persistent static routes. This is a quick and one-time configuration that's performed on each DAG member when using static IP addresses. If you're using DHCP to obtain IP addresses for your Replication networks, you can also use it to assign static routes for the replication, thereby simplifying the configuration process.
+  - **Use static routes to configure connectivity across Replication networks**: To provide network connectivity between each of the Replication network adapters, use persistent static routes. This is a quick and one-time configuration that's performed on each DAG member when using static IP addresses. If you're using DHCP to obtain IP addresses for your Replication networks, you can also use it to assign static routes for the replication, thereby simplifying the configuration process.
 
 ## General site resilience planning
 
@@ -350,6 +332,3 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
   - The strategy for enabling the DNS changes necessary for a datacenter switchover must be understood. The specific DNS changes, including their TTL settings, must be defined and documented to support the SLA in effect.
 
   - A strategy for testing the solution must also be established and factored into the SLA. Periodic validation of the deployment is the only way to guarantee that the quality and viability of the deployment doesn't degrade over time. After the deployment is validated, we recommend that the part of the configuration that directly affects the success of the solution be explicitly documented. In addition, we recommend that you enhance your change management processes around those segments of the deployment.
-
-Return to top
-

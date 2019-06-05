@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.date: 
+ms.reviewer: 
 title: Message Trace FAQ
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -242,4 +243,3 @@ You should be aware of the following when using the message trace tool:
 [Trace an email message](trace-an-email-message.md)
 
 [Help and Support for EOP](https://technet.microsoft.com/library/64535a0a-1044-413f-8bc2-ed8e8a0bc54c.aspx)
-

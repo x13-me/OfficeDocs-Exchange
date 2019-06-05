@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can enable callers to send voice messages to users from a Unified Messaging (UM) auto attendant, or prevent them from doing so. By default, this option is enabled and lets callers send voice messages to users in the UM dial plan that's associated with the UM auto attendant. If you disable this option, the auto attendant won't invite callers to send a voice message during a system prompt.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 ms.date: 11/17/2014
-title: Enable or disable sending voice messages to users
+ms.reviewer: 
+title: Enable or disable sending voice messages to users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Enable or disable sending voice messages to users
+# Enable or disable sending voice messages to users in Exchange Online
 
 You can enable callers to send voice messages to users from a Unified Messaging (UM) auto attendant, or prevent them from doing so. By default, this option is enabled and lets callers send voice messages to users in the UM dial plan that's associated with the UM auto attendant. If you disable this option, the auto attendant won't invite callers to send a voice message during a system prompt.
 
@@ -61,6 +62,3 @@ This example enables callers who call in to a UM auto attendant named `MyUMAutoA
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $true
 ```
-
-
-

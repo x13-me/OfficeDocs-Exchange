@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -61,7 +62,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
   - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
-  -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+  - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
 
     When you're finished, click **Next**.
 

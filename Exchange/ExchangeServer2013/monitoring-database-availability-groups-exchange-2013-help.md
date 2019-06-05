@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Monitoring database availability groups: Exchange 2013 Help'
 TOCTitle: Monitoring database availability groups
 ms:assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351258(v=EXCHG.150)
 ms:contentKeyID: 48385720
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Monitoring database availability groups
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can use the details in this topic for monitoring the health and status of mailbox database copies for database availability groups (DAGs), for gathering diagnostic information, and for configuring the low disk space monitoring threshold.
 
@@ -102,7 +103,6 @@ You can use the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en
 </tbody>
 </table>
 
-
 The **Get-MailboxDatabaseCopyStatus** cmdlet also returns details about the in-use replication networks, including *IncomingLogCopyingNetwork*, which is returned for passive database copies, and *OutgoingConnections*, which is returned for active databases that have more than one copy, as well as any database copy being used as a source for a database seeding operation. Outgoing connection information is provided for database copies that are in file mode replication. Outgoing connection information is not provided for database copies that are in block mode replication.
 
 ## Get-MailboxDatabaseCopyStatus examples
@@ -171,7 +171,7 @@ The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring o
 </tr>
 <tr class="even">
 <td><p>ServerLocatorService</p></td>
-<td><p>Verifies the Active Manager client/server processes on DAG members and on the Client Access Server that perform lookups in Active Directory and Active Manager to determine where a user’s mailbox database is active.</p></td>
+<td><p>Verifies the Active Manager client/server processes on DAG members and on the Client Access Server that perform lookups in Active Directory and Active Manager to determine where a user's mailbox database is active.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DagMembersUp</p></td>
@@ -224,7 +224,6 @@ The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring o
 </tbody>
 </table>
 
-
 ## Test-ReplicationHealth example
 
 This example uses the **Test-ReplicationHealth** cmdlet to test the health of replication for the Mailbox server MBX1.
@@ -243,11 +242,11 @@ The Applications and Services logs category includes four subtypes: Admin, Opera
 
 Exchange 2013 logs events to crimson channels in the Applications and Services logs area. You can view these channels by performing these steps:
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  In the console tree, navigate to **Applications and Services Logs** \> **Microsoft** \> **Exchange**.
+2. In the console tree, navigate to **Applications and Services Logs** \> **Microsoft** \> **Exchange**.
 
-3.  Under **Exchange**, select a crimson channel, such as **HighAvailability** or **MailboxDatabaseFailureItems** to see DAG and database copy-related events, or **ActiveMontoring** or **ManagedAvailability** to see events related to Managed Availability.
+3. Under **Exchange**, select a crimson channel, such as **HighAvailability** or **MailboxDatabaseFailureItems** to see DAG and database copy-related events, or **ActiveMontoring** or **ManagedAvailability** to see events related to Managed Availability.
 
 The HighAvailability channel contains events related to startup and shutdown of the Microsoft Exchange Replication service, and the various components that run within the Microsoft Exchange Replication service, such as Active Manager, the third-party synchronous replication API, the tasks RPC server, TCP listener, and Volume Shadow Copy Service (VSS) writer. The HighAvailability channel is also used by Active Manager to log events related to Active Manager role monitoring and database action events, such as a database mount operation and log truncation, and to record events related to the DAG's underlying cluster.
 
@@ -259,7 +258,7 @@ The ManagedAvailability channel contains recovery action logs and results and re
 
 ## Low Disk Space Monitor
 
-Exchange 2013 Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitors available space on all local volumes, including volumes that don’t contain any databases or log files. In SP1 and later, only volumes that contain Exchange databases and log files are monitored. In SP1, the default threshold for the low volume space monitor is 200 GB. In Exchange 2013 Cumulative Update 6 and later, the default threshold is 180 GB. In SP1 and later, you can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
+Exchange 2013 Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitors available space on all local volumes, including volumes that don't contain any databases or log files. In SP1 and later, only volumes that contain Exchange databases and log files are monitored. In SP1, the default threshold for the low volume space monitor is 200 GB. In Exchange 2013 Cumulative Update 6 and later, the default threshold is 180 GB. In SP1 and later, you can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
 
 Path: **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters**
 
@@ -362,7 +361,6 @@ The script supports parameters that allow you to customize the script's behavior
 </tbody>
 </table>
 
-
 ## CollectOverMetrics.ps1 examples
 
 The following example collects metrics for all databases that match DB\* (which includes a wildcard character) in the DAG DAG1. After the metrics are collected, an HTML report is generated and displayed.
@@ -375,8 +373,8 @@ The following examples demonstrate ways that the summary HTML report may be filt
 
 ```powershell
     CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {$_.DatabaseName -notlike "Mailbox Database*"}
+    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*")}
 ```
 
 ## CollectReplicationMetrics.ps1 script
@@ -452,7 +450,6 @@ The CollectReplicationMetrics.ps1 script supports parameters that allow you to c
 </tr>
 </tbody>
 </table>
-
 
 ## CollectReplicationMetrics.ps1 example
 

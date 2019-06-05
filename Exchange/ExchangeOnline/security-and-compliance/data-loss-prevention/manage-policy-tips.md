@@ -6,11 +6,12 @@ author: stephow-msft
 ms.author: stephow
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.date: 7/20/2018
+ms.reviewer: 
 title: Manage policy tips
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -68,8 +69,27 @@ This procedure results in an informational Policy Tip being shown to an email se
 
 8. If you want to add additional conditions or actions, at the bottom of the window, select **More options**.
 
-    > [!NOTE]
-    >  Only the following conditions can be used: > **SentTo (The recipient is)**> **SentToScope (The recipient is located)**> **From (The sender is)**> **FromMemberOf (The sender is a member of)**> **FromScope (The sender is located)**>  The following actions can't be used: > **RejectMessageReasonText (Reject the message and include an explanation)**> **RejectMessageEnhancedStatusCode (Reject the message with the enhanced status code of)**> **DeletedMessage (Delete the message without notifying anyone)**
+   **Note**:
+
+   You can only use the following conditions:
+
+   - **The recipient is** (_SentTo_)
+
+   - **The recipient is located** (_SentToScope_)
+
+   - **The sender is** (_From_)
+
+   - **The sender is a member of** (_FromMemberOf_)
+
+   - **The sender is located** (_FromScope_)
+
+   You can't use the following actions:
+
+   - **Reject the message and include an explanation** (_RejectMessageReasonText_)
+
+   - **Reject the message with the enhanced status code of** (_RejectMessageEnhancedStatusCode_)
+
+   - **Delete the message without notifying anyone** (_DeleteMessage_)
 
 9. In the **Choose a mode for this rule** list, select whether you want the rule to be enforced. We recommend testing the rule first.
 
@@ -227,6 +247,3 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange 2010 MailTips](https://go.microsoft.com/fwlink/p/?LinkId=265179)
-
-
-

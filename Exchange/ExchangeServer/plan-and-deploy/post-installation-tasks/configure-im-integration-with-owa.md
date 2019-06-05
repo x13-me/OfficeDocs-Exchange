@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
 ms.date: 
+ms.reviewer: 
 title: Configure instant messaging integration with Outlook on the web in Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

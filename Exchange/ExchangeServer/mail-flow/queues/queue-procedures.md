@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 37f11378-a884-4aff-ab55-689f40a46321
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Procedures for queues
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -137,7 +138,7 @@ When you retry a delivery queue, you force an immediate connection attempt and o
 
 - The queue must be in a status of Retry for this action to have any effect.
 
--  If the connection isn't successful, the retry interval timer is reset.
+- If the connection isn't successful, the retry interval timer is reset.
 
 ### Use Queue Viewer to retry a queue
 

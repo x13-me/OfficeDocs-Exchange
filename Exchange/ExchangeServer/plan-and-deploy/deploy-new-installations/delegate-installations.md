@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
 ms.date:
+ms.reviewer: 
 title: Delegate the installation of Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

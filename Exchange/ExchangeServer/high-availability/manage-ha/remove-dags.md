@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Remove a database availability group
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

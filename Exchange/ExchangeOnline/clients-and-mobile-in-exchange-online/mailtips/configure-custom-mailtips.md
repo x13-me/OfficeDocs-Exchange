@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Configure custom MailTips for recipients
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 
@@ -116,6 +117,3 @@ To verify that you have successfully configured a MailTip for a recipient, do th
 2. Verify the MailTip appears in the InfoBar.
 
 3. If you configured additional MailTip translations, compose the message in Outlook Web App where the language setting matches the language of the MailTip translation to verify the results.
-
-
-

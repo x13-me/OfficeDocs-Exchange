@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.date: 4/19/2018
+ms.reviewer: 
 title: View statistics for public folders and public folder items
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Configure routing table logging: Exchange 2013 Help'
 TOCTitle: Configure routing table logging
 ms:assetid: 7184f8f7-4eb8-468a-aafe-b2d72868f820
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201696(v=EXCHG.150)
 ms:contentKeyID: 49289301
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure routing table logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Routing table logging periodically records a snapshot of the routing table used by Microsoft Exchange Server 2013 to route messages to their destinations.
 
@@ -31,81 +32,71 @@ Routing table logging periodically records a snapshot of the routing table used 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to configure routing table logging
 
 Run the following command:
 
 ```powershell
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
 ```
 
 This example sets the following routing table log settings on the Mailbox server named Mailbox01:
 
-  - Sets the location of the routing table log files to D:\\Routing Table Log. Note that if the folder doesn't exist, it will be created for you.
+- Sets the location of the routing table log files to D:\\Routing Table Log. Note that if the folder doesn't exist, it will be created for you.
 
-  - Sets the maximum size of the routing table log folder to 70 MB.
+- Sets the maximum size of the routing table log folder to 70 MB.
 
-  - Sets the maximum age of a routing table log file to 45 days.
-
-<!-- end list -->
+- Sets the maximum age of a routing table log file to 45 days.
 
 ```powershell
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
 ```
-
 
 > [!NOTE]
 > Setting the <EM>RoutingTableLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of routing table log files because of their age.
-
-
 
 ## How do you know this worked?
 
 To verify that you have successfully configured routing table logging, do the following:
 
-1.  In the Shell, run the following command:
-    
-    ```powershell
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
-    ```
+1. In the Shell, run the following command:
 
-2.  Verify the values displayed are the values you configured.
+   ```powershell
+   Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+   ```
+
+2. Verify the values displayed are the values you configured.
 
 ## Use the Command Prompt to configure the interval for automatic recalculation of the routing table in the EdgeTransport.exe.config file
 
-1.  In a Command prompt window, open the EdgeTransport.exe.config application configuration file in Notepad by running the following command:
-    
-    ```powershell
-    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-    ```
+1. In a Command prompt window, open the EdgeTransport.exe.config application configuration file in Notepad by running the following command:
 
-2.  Modify the following key in the `<appSettings>` section.
-    
-    ```command line
-    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
-    ```
-    
-    For example, to change the interval for automatic recalculation of the routing table to 10 hours, use the following value:
-    
-    ```command line
-    <add key="RoutingConfigReloadInterval" value="10:00:00" />
-    ```
+   ```powershell
+   Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+   ```
 
-3.  When you are finished, save and close the EdgeTransport.exe.config file.
+2. Modify the following key in the `<appSettings>` section.
 
-4.  Restart the Microsoft Exchange Transport service by running the following command:
-    
-    ```powershell
-    net stop MSExchangeTransport && net start MSExchangeTransport
-    ```
+   ```command line
+   <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+   ```
+
+   For example, to change the interval for automatic recalculation of the routing table to 10 hours, use the following value:
+
+   ```command line
+   <add key="RoutingConfigReloadInterval" value="10:00:00" />
+   ```
+
+3. When you are finished, save and close the EdgeTransport.exe.config file.
+
+4. Restart the Microsoft Exchange Transport service by running the following command:
+
+   ```powershell
+   net stop MSExchangeTransport && net start MSExchangeTransport
+   ```
 
 ## How do you know this worked?
 
@@ -113,7 +104,6 @@ To verify that you have successfully configured the interval for the automatic r
 
 Note that the routing table will be recalculated and logged earlier than the value specified by the *RoutingConfigReloadInterval* key if any of the following conditions occur:
 
-  - A routing configuration change is detected. For example, a Send connector or a Receive connector is added, removed, or modified, or the 6 hour Kerberos token renewal occurs.
+- A routing configuration change is detected. For example, a Send connector or a Receive connector is added, removed, or modified, or the 6 hour Kerberos token renewal occurs.
 
-  - The Microsoft Exchange Transport service is started.
-
+- The Microsoft Exchange Transport service is started.

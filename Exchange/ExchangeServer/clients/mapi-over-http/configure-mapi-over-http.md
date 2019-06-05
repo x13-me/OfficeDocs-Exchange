@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2c07b1e6-8d07-4e73-8800-b306e2266c7d
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Configure MAPI over HTTP in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

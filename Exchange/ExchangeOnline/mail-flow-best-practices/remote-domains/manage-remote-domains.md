@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d3dca7b0-c84c-429a-9698-0e92a95a0985
 ms.date: 
+ms.reviewer: 
 title: Manage remote domains in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

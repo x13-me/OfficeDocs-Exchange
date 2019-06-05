@@ -11,9 +11,9 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -129,9 +129,48 @@ In cases where Outlook for iOS and Android receives protected messages and promp
 > [!NOTE]
 > Outlook for iOS leverages iOS's native preview technology to quickly expose attachments to end users. iOS's preview technology does not support rights management and will report error "The operation couldn't be completed. (OfficeImportErrorDomain error 912)" when a user attempts to open a rights-protected attachment. Users will need to tap the respective Word, Excel, or PowerPoint app icon to open the rights-protected attachment in the native app.
 
+### Q: Does Outlook for iOS and Android support Teams meetings?
+
+Yes, Outlook for iOS and Android supports both Skype for Business and Teams meetings. The Teams coexistence mode at the Office 365 tenant level and the user level (the user setting takes precedence over the tenant setting) determines the meeting creation experience in Outlook for iOS and Android:
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Coexistence Mode</strong></th>
+<th><strong>Outlook for iOS and Android experience</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Islands</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="even">
+<td>Skype for Business Only</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="odd">
+<td>Skype for Business with Teams Collaboration</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="even">
+<td>Teams Only</td>
+<td>Teams</td>
+</tr>
+<tr class="odd">
+<td>Skype for Business with Teams Collaboration and Meetings</td>
+<td>Teams</td>
+</tr>
+</tbody>
+</table>
+
+In addition, for users leveraging the native Microsoft sync technology, a Teams Join button is available in calendar events. This makes it easy to Join a Teams meeting and will be available for all coexistence modes. Users who are not leveraging the native Microsoft sync technology will be able to join Teams Meetings using the weblink in the meeting description.
+
+For more information on the Teams coexistence modes, please see [Choose your upgrade journey from Skype from Business to Teams](https://docs.microsoft.com/microsoftteams/upgrade-and-coexistence-of-skypeforbusiness-and-teams).
+
 ### Q: What ports and end points does Outlook for iOS and Android use?
 
-Outlook for iOS and Android communicates via TCP port 443. The app accesses various end points, depending on the activities of the user. Complete information is available in [Network Requests in Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=849810).
+Outlook for iOS and Android communicates via TCP port 443. The app accesses various end points, depending on the activities of the user. Complete information is available in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ### Q: Does Outlook for iOS and Android support proxy configurations?
 
@@ -141,7 +180,7 @@ Yes, Outlook for iOS and Android supports proxy configurations when the proxy in
 
 - **Does not perform authentication**.
 
-Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported.
+Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported. For a list of hostnames that Outlook for iOS and Android accesses, please see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
 
@@ -201,7 +240,7 @@ Customers with a Microsoft Premier agreement can open support cases with Custome
 
 To gather the logs:
 
-1. Within Outlook for iOS and Android’s settings, tap Help & Feedback.
+1. Within Outlook for iOS and Android's settings, tap Help & Feedback.
 
 2. Tap Collect Diagnostics.
 
@@ -274,4 +313,3 @@ Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 i
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
 Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
-

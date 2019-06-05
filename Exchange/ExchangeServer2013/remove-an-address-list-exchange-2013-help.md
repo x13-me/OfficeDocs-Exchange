@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Remove an address list: Exchange 2013 Help'
 TOCTitle: Remove an address list
 ms:assetid: 39a313f3-41d4-4c8f-af67-df2316f3687f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997294(v=EXCHG.150)
 ms:contentKeyID: 49289233
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Remove an address list
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic explains how to remove an address list. You can't remove the default global address list (GAL).
 
@@ -29,21 +30,16 @@ For additional management tasks related to address lists, see [Address list proc
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the EAC to remove an address list
 
-1.  Navigate to **Organization** \> **Address lists**.
+1. Navigate to **Organization** \> **Address lists**.
 
-2.  In the list view, select the address list you want to remove, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list view, select the address list you want to remove, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
-3.  In the warning, click **Yes** to remove the address list.
+3. In the warning, click **Yes** to remove the address list.
 
 ## Use the Shell to remove an address list
 
@@ -68,4 +64,3 @@ Remove-AddressList -Identity Departments -Recursive
 Type **Y** to confirm that you want to remove the parent address list and its child address lists, and then press ENTER.
 
 For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/en-us/library/bb124342\(v=exchg.150\)).
-

@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: ed7afc03-94af-4b23-8745-6a61f203c149
 ms.date: 11/17/2014
-title: UM dial plans [ONP]
+ms.reviewer: 
+title: UM dial plans [ONP] in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# UM dial plans [ONP]
+# UM dial plans [ONP] in Exchange Online
 
 Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
 
@@ -73,7 +74,7 @@ By default, each time you create a dial plan in Unified Messaging, the dial plan
 
 The Telephone Extension URI type is the most common type of UM dial plan and is used with IP PBXs and PBXs. When you configure a telephone extension (TelExtn) dial plan, the VoIP gateways, PBXs, and IP PBXs you use must support the TelExtn URI type. Today, most PBXs and IP PBXs support this URI type.
 
-When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway—or the IP PBX, if one is used—will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
+When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway (or the IP PBX, if one is used) will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
 
 - Tel:512345
 
@@ -120,6 +121,3 @@ By default, when you create a UM dial plan, no Outlook Voice Access number is co
 You can use the **Outlook Voice Access numbers** box on the UM dial plan to add a telephone number or extension that a user will call to access the voice mail system using Outlook Voice Access. In most cases, you'll enter an extension number or an external telephone number. However, because this field accepts alphanumeric characters, a SIP URI can be used if you're using an IP PBX, a SIP-enabled PBX, Office Communications Server 2007 R2 or Microsoft Lync Server.
 
 Depending on the needs of your organization, you may want to configure one or more Outlook Voice Access number. You can have a single Outlook Voice Access number configured on a single UM dial plan or you can have multiple Outlook Voice Access numbers in a single UM dial plan, but you can't have a single Outlook Voice Access number that spans multiple UM dial plans.
-
-
-

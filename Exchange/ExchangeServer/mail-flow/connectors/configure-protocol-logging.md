@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms.date: 6/7/2018
+ms.reviewer: 
 title: Configure protocol logging
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

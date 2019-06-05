@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Manage Edge Subscriptions: Exchange 2013 Help'
 TOCTitle: Manage Edge Subscriptions
 ms:assetid: 27de4104-fb8e-4eab-9ad2-a64f81a4fb69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996865(v=EXCHG.150)
 ms:contentKeyID: 61200280
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Manage Edge Subscriptions
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic gives detailed information on a variety of Edge Subscription management tasks.
 
@@ -25,11 +26,8 @@ This topic gives detailed information on a variety of Edge Subscription manageme
 
   - You need to have an Edge server subscribed to your Internet-facing Active Directory site. For more information, see [Configure Internet mail flow through a subscribed Edge Transport server](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Subscribe an Edge Transport server
 
@@ -53,26 +51,26 @@ To completely remove an Edge Subscription, you need to run this procedure on the
 
 After you remove the Edge Subscription, synchronization of information from AD LDS stops. All accounts stored in AD LDS are removed, and the Edge Transport server is removed from the source server list of any Send connector. You will no longer be able to use Edge Transport server features that rely on Active Directory data.
 
-1.  To remove the Edge Subscription from the Edge Transport server, use the following syntax.
-    
+1. To remove the Edge Subscription from the Edge Transport server, use the following syntax.
+
     ```powershell
     Remove-EdgeSubscription <EdgeTransportServerIdentity>
     ```
-    
+
     For example, to remove the Edge Subscription on the Edge Transport server named Edge01, run the following command.
-    
+
     ```powershell
     Remove-EdgeSubscription Edge01
     ```
 
-2.  To remove the Edge Subscription from the Mailbox server, use the following syntax.
-    
+2. To remove the Edge Subscription from the Mailbox server, use the following syntax.
+
     ```powershell
     Remove-EdgeSubscription <EdgeTransportServerIdentity>
     ```
-    
+
     For example, to remove the Edge Subscription for the Edge Transport server named Edge01 on a Mailbox server in the subscribed Active Directory site, run the following command.
-    
+
     ```powershell
     Remove-EdgeSubscription Edge01
     ```
@@ -112,12 +110,9 @@ Occasionally you may have to resubscribe an Edge Transport server to an Active D
   - You applied the license key for the Edge Transport server after creating the Edge Subscription. Licensing information for the Edge Transport server is captured when the Edge Subscription is created. Subscribed Edge Transport servers only appear as licensed if they are subscribed to the Exchange organization after the license key has already been applied on the Edge Transport server. If the license key is applied on the Edge Transport server after you perform the Edge Subscription process, the licensing information won't be updated in the Exchange organization, and you will need to resubscribe the Edge Transport server.
 
   - The ESRA credentials are compromised.
-    
 
     > [!IMPORTANT]
     > To resubscribe an Edge Transport server, export a new Edge Subscription file on the Edge Transport server and then import the XML file on a Mailbox server. You will need to resubscribe the Edge Transport server to the same Active Directory site where it was originally subscribed. You don't need to first remove the original Edge Subscription; the resubscription process will overwrite the existing Edge Subscription.
-
-
 
 ## Add or Remove a Mailbox server
 
@@ -186,4 +181,3 @@ This example verifies EdgeSync results for the user kate@contoso.com.
 ```powershell
 Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
 ```
-

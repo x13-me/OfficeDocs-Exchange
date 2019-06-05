@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
 ms.date: 4/8/2015
-title: View and manage a call answering rule
+ms.reviewer: 
+title: View and manage a call answering rule in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# View and manage a call answering rule
+# View and manage a call answering rule in Exchange Online
 
 You can use Exchange Online PowerShell to view or configure one or more call answering rules for a user. You can also use the **Get-UMCallAnsweringRule** or **Set-UMCallAnsweringRule** cmdlets in a PowerShell script to view or manage call answering rules for multiple users.
 
@@ -103,6 +104,3 @@ This example changes the free/busy status to Away on the call answering rule `My
 ```
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith@contoso.com -ScheduleStatus 0x8
 ```
-
-
-

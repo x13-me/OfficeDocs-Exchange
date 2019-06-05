@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Create a new Exchange Server self-signed certificate
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -143,7 +144,7 @@ New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectNam
 
 - The only required part of the X.500 _SubjectName_ parameter value (the certificate's **Subject** field) is `CN=<HostNameOrFQDN>`.
 
--  Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
+- Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
 
 - For more information, see [New-ExchangeCertificate](http://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
 
@@ -158,6 +159,3 @@ To verify that you have successfully created an Exchange self-signed certificate
   ```
   Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
   ```
-
-
-

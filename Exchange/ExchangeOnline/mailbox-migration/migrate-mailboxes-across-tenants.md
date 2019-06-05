@@ -5,6 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
+ms.reviewer: 
 title: How to migrate mailboxes from one Office 365 tenant to another
 ms.collection: 
 - exchange-online
@@ -13,10 +14,11 @@ search.appverid:
 - MET150
 - MOE150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
+localization_priority: Priority
 
 ---
 
@@ -250,9 +252,9 @@ Invoke-Item addresses.csv
 
 ```Powershell
 ################################################################################
-#  Script: create-rooms.ps1
-#  Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
-#This script creates es in Office 365.
+# Script: create-rooms.ps1
+# Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
+# This script creates es in Office 365.
 # Syntax:Create-Rooms.ps1 -inputfile "file name.csv"
 #
 # Dependencies: Input file should contain 3 columns: RoomName, RoomSMTPAddress, RoomCapacity
@@ -270,7 +272,7 @@ C:\PS> .\$strScriptFileName -inputfile `"file name.csv`"
 "@
 }
 If (-not $inputFile) {Usage;Exit}
-#Get MSO creds and initialize session
+# Get MSO creds and initialize session
 If ($cred -eq $NULL) {$Global:cred = Get-Credential}
 #
 If ($ExchRemoteCmdlets.AccessMode -ne "ReadWrite")
@@ -281,9 +283,9 @@ Write-Host
 $NewSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $cred -Authentication Basic -AllowRedirection
 $Global:ExchRemoteCmdlets = Import-PSSession $NewSession
 }
-#Import the CSV file
+# Import the CSV file
 $csv = Import-CSV $inputfile
-#Create Rooms contained in the CSV file
+# Create Rooms contained in the CSV file
 $csv | foreach-object{
 New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -resourcecapacity $_.RoomCapacity
 }
@@ -295,15 +297,15 @@ New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -reso
 ```Powershell
 ##########################################################################
 #      Script:  remove-proxy.ps1
-#Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
-#This script will remove a secondary email address from many users
+# Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
+# This script will remove a secondary email address from many users
 #
 # Syntax:remove-proxy.ps1 -inputfile "filename.csv"
 #
 # Dependencies:Input file should contain 2 columns: Username, Emailsuffix
 #               Example:  Username=tim, Emailsuffix=fabrikam.com
-#Script will remove the address tim@fabrikam.com from the mailbox for Tim.
-#NOTE: Address must be secondary; it will not remove primary email address.
+# Script will remove the address tim@fabrikam.com from the mailbox for Tim.
+# NOTE: Address must be secondary; it will not remove primary email address.
 #
 ################################################################################
 param( $inputFile )
@@ -319,7 +321,7 @@ C:\PS> .\$strScriptFileName -inputfile `"file name.csv`"
 "@
 }
 If (-not $inputFile) {Usage;Exit}
-#Get MSO creds and initialize session
+# Get MSO creds and initialize session
 If ($cred -eq $NULL) {$Global:cred = Get-Credential}
 #
 If ($ExchRemoteCmdlets.AccessMode -ne "ReadWrite")
@@ -331,7 +333,7 @@ $NewSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 https://ps.outlook.com/powershell -Credential $cred -Authentication Basic -AllowRedirection
 $Global:ExchRemoteCmdlets = Import-PSSession $NewSession
 }
-#Import the CSV file and change primary smtp address
+# Import the CSV file and change primary smtp address
 $csv = Import-CSV $inputfile
 $csv | foreach-object{
 # Set variable for email address to remove

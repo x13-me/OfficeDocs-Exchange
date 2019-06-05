@@ -10,9 +10,9 @@ mms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -46,7 +46,7 @@ These configuration scenarios only work with enrolled devices; however, any MDM 
 
 ### Account setup configuration settings
 
-Outlook for iOS and Android offers administrators the ability to “push” account configurations to their Office 365 and on-premises users leveraging hybrid Modern Authentication users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
+Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 and on-premises users leveraging hybrid Modern Authentication users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
 ### Organization allowed accounts mode settings
 
@@ -70,7 +70,7 @@ Outlook supports the following settings for configuration:
 <tr class="odd">
 <td>Focused Inbox</td>
 <td>On</td>
-<td>Focused Inbox separates your inbox into two tabs, Focused and Other. Your most important emails are on the Focused tab while the rest remain easily accessible—but out of the way—on the Other tab.</td>
+<td>Focused Inbox separates your inbox into two tabs, Focused and Other. Your most important emails are on the Focused tab while the rest remain easily accessible (but out of the way) on the Other tab.</td>
 </tr>
 <tr class="even">
 <td>Require Biometrics to access the app</td>
@@ -82,7 +82,7 @@ Outlook supports the following settings for configuration:
 <tr class="odd">
 <td>Save Contacts</td>
 <td>Off</td>
-<td><p>Saving contacts to the mobile device’s native address book allows new calls and text messages to be linked with the user’s existing Outlook contacts.</p>
+<td><p>Saving contacts to the mobile device's native address book allows new calls and text messages to be linked with the user's existing Outlook contacts.</p>
 <p>The user must grant access to the native Contacts app for contact synchronization to occur.</td>
 </tr>
 <tr class="even">
@@ -98,29 +98,34 @@ Outlook supports the following settings for configuration:
 <tr class="even">
 <td>Default app signature</td>
 <td>On</td>
-<td>Indicates whether the app will use its default signature, “Get Outlook for [OS]”, during message composition. Users can add their own signature even when the default signature is disabled.</td>
+<td>Indicates whether the app will use its default signature, "Get Outlook for [OS]", during message composition. Users can add their own signature even when the default signature is disabled.</td>
+</tr>
+<tr class="odd">
+<td>Suggested replies</td>
+<td>On</td>
+<td>By default, Outlook for Android will suggest replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 </tr>
 </tbody>
 </table>
 
-Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app’s configuration. The administrator’s configuration cannot be overridden.
+Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
 
-**Allow user to change setting** does not change the app’s behavior. For example, if the admin enables *Block external images* and prevents user change, then by default external images will not be downloaded in messages; however, the user can manually download the images for that message body.
+**Allow user to change setting** does not change the app's behavior. For example, if the admin enables *Block external images* and prevents user change, then by default external images will not be downloaded in messages; however, the user can manually download the images for that message body.
 
 > [!NOTE]
 > The **Allow user to change setting** for *Require Biometrics to access the app* is currently only available as a configuration key. This will be addressed in a future Intune portal update. For more information regarding the configuration key, see [Configuration keys](#configuration-keys).
 
-The following conditions describe Outlook’s behavior when implementing various app configurations:
+The following conditions describe Outlook's behavior when implementing various app configurations:
 
-  - If the admin configures a setting with its default value, and the app is configured with the default, then the admin’s configuration doesn't have any effect. For example, if the admin sets *External recipients MailTip*=on, the default value is also on, so Outlook’s configuration doesn't change.
+  - If the admin configures a setting with its default value, and the app is configured with the default, then the admin's configuration doesn't have any effect. For example, if the admin sets *External recipients MailTip*=on, the default value is also on, so Outlook's configuration doesn't change.
 
-  - If the admin configures a setting with the non-default value and the app is configured with the default, then the admin’s configuration is applied. For example, the admin sets *Focused Inbox*=off, but app default is on, so Outlook’s configuration for Focused Inbox is off.
+  - If the admin configures a setting with the non-default value and the app is configured with the default, then the admin's configuration is applied. For example, the admin sets *Focused Inbox*=off, but app default is on, so Outlook's configuration for Focused Inbox is off.
 
-  - If the user has configured a non-default value, but the admin has configured a default value and allows user choice, then Outlook retains the user’s configured value. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and allows user choice, so Outlook keeps contact synchronization on and does not break caller-ID for user.
+  - If the user has configured a non-default value, but the admin has configured a default value and allows user choice, then Outlook retains the user's configured value. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and allows user choice, so Outlook keeps contact synchronization on and does not break caller-ID for user.
 
   - If the admin disables user choice, Outlook always enforces the admin-defined configuration, regardless of the user's configuration or default app configuration. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and disables user choice, so contact synchronization gets disabled and the user is prevented from enabling it.
 
-  - If after the MDM configuration is applied, if the user changes the setting value to not match the admin desired value (and user choice is allowed), then the user’s configuration is retained. For example, block external images is off by default, admin set *Block external images*=on, but afterwards, user changes block external images back to off; in this scenario, block external images remains off the next time the policy is applied.
+  - If after the MDM configuration is applied, if the user changes the setting value to not match the admin desired value (and user choice is allowed), then the user's configuration is retained. For example, block external images is off by default, admin set *Block external images*=on, but afterwards, user changes block external images back to off; in this scenario, block external images remains off the next time the policy is applied.
 
 Users are alerted to configuration changes via a notification toast in the app:
 
@@ -207,14 +212,14 @@ The following steps will allow you to create an app configuration policy. After 
 12. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 
     - For **Focused Inbox**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
-    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value. This setting is only available in Outlook for iOS. 
+    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This setting is only available in Outlook for iOS. 
     > [!IMPORTANT]
     > If the account will be protected by an Intune App Protection Policy that requires a PIN to access the protected account, then the **Require Biometrics to access the app** setting should be disabled, otherwise the user will be prompted with multiple authentication prompts when accessing the app.
 
-    - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value.
+    - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
     - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. 
-    - For **Block external images**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value.
+    - For **Block external images**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 13. When you are done, choose **OK**.
 
@@ -345,36 +350,38 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 
 ### Account setup configuration
 
-Outlook for iOS and Android offers administrators the ability to “push” account configurations to their Office 365 users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
+Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
-| **Key**                                         | **Value**                                                                                                                                                                                                                                                                                        | **Device Enrollment Type** |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- |
-| com.microsoft.outlook.EmailProfile.EmailAddress | This key specifies the email address to be used for sending and receiving mail. **Value type**: String **Accepted values**: Email address **Default if not specified**: \<blank\> **Required**: Yes **Example**: user@companyname.com                                                          | Managed devices            |
-| com.microsoft.outlook.EmailProfile.EmailUPN     | This key specifies the User Principal Name or username for the email profile that will be used to authenticate the account. **Value type**: String **Accepted values**: UPN Address or username **Default if not specified**: \<blank\> **Required**: Yes **Example**: userupn@companyname.com | Managed devices            |
-| com.microsoft.outlook.EmailProfile.AccountType  | This key specifies the account type being configured based on the authentication model. **Value type**: String **Accepted values**: ModernAuth **Required**: Yes **Example**: ModernAuth                                                                                                       | Managed devices            |
+|**Key**|**Value**|**Device Enrollment Type**|
+|:-----|:-----|:-----|
+|com.microsoft.outlook.EmailProfile.EmailAddress|This key specifies the email address to be used for sending and receiving mail. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: Email address <br/><br/> **Default if not specified**: \<blank\> <br/><br/> **Required**: Yes <br/><br/> **Example**: user@companyname.com|Managed devices|
+|com.microsoft.outlook.EmailProfile.EmailUPN|This key specifies the User Principal Name or username for the email profile that will be used to authenticate the account. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: UPN Address or username <br/><br/> **Default if not specified**: \<blank\> <br/><br/> **Required**: Yes <br/><br/> **Example**: userupn@companyname.com|Managed devices|
+|com.microsoft.outlook.EmailProfile.AccountType|This key specifies the account type being configured based on the authentication model. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: ModernAuth <br/><br/> **Required**: Yes <br/><br/> **Example**: ModernAuth| Managed devices|
 
 ### Organization allowed accounts mode settings
 
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
-| **Key**                                     | **Value**                                                                                                                                                                        | **Platform** | **Device Enrollment Type** |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------- |
-| IntuneMAMAllowedAccountsOnly                | This key specifies the whether organization allowed account mode is active. **Value type**: String **Accepted values**: Enabled, Disabled **Required**: Yes **Value**: Enabled | iOS          | Managed devices            |
-| IntuneMAMUPN                                | This key specifies the User Principal Name for the account. **Value type**: String **Accepted values**: UPN Address **Required**: Yes **Example**: userupn@companyname.com     | iOS          | Managed devices            |
-| com.microsoft.intune.mam.AllowedAccountUPNs | This key specifies the UPNs allowed for organization allowed account mode. **Accepted values**: UPN Address **Required**: Yes **Example**: userupn@companyname.com   | Android      | Managed devices            |
+|**Key**|**Value**|**Platform**|**Device Enrollment Type**|
+|:-----|:-----|:-----|:-----|
+|IntuneMAMAllowedAccountsOnly|This key specifies the whether organization allowed account mode is active. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: Enabled, Disabled <br/><br/> **Required**: Yes <br/><br/> **Value**: Enabled|iOS|Managed devices|
+|IntuneMAMUPN|This key specifies the User Principal Name for the account. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: UPN Address <br/><br/> **Required**: Yes <br/><br/> **Example**: userupn@companyname.com|iOS|Managed devices|
+|com.microsoft.intune.mam.AllowedAccountUPNs|This key specifies the UPNs allowed for organization allowed account mode. <br/><br/> **Accepted values**: UPN Address <br/><br/> **Required**: Yes <br/><br/> **Example**: userupn@companyname.com|Android|Managed devices|
 
 ### General app configuration settings
 
 Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings.
 
-| **Key**                                     | **Value**                                                                                                                                                                        | **Platform** | **Device Enrollment Type** |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------- |
-| com.microsoft.outlook.Mail.FocusedInbox | This key specifies whether Focused Inbox is enabled. Setting the value to false will disable Focused Inbox. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android |  Managed Devices            |
-| com.microsoft.outlook.Auth.Biometric | This key specifies whether FaceID or TouchID is required to access the app. Setting the value to true will enable biometric access. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: false **Required**: No **Example**: false | iOS | Managed Devices            |
-| com.microsoft.outlook.Auth.Biometric.UserChangeAllowed | This key specifies whether the biometric setting can be changed by the end user. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS | Managed devices            |
-| com.microsoft.outlook.Contacts.LocalSyncEnabled | This key specifies whether the app should sync Outlook contacts to the native Contacts app. Setting the value to true will enable contact sync. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: false **Required**: No **Example**: false | iOS, Android | Managed devices            |
-| com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed | This key specifies whether the contact sync setting can be changed by the end user. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
-| com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled  | This key specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
-| com.microsoft.outlook.Mail.BlockExternalImagesEnabled | This key specifies whether external images are blocked by default. Setting the value to true will enable blocking external images. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: false **Required**: No **Example**: false | iOS, Android | Managed devices            |
-| com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed | This key specifies whether the Block External Images setting can be changed by the end user. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
-| com.microsoft.outlook.Mail.DefaultSignatureEnabled | This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
+|**Key**|**Value**|**Device Enrollment Type**|
+|:-----|:-----|:-----|
+|com.microsoft.outlook.Mail.FocusedInbox|This key specifies whether Focused Inbox is enabled. Setting the value to false will disable Focused Inbox. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Auth.Biometric|This key specifies whether FaceID or TouchID is required to access the app. Setting the value to true will enable biometric access. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Auth.Biometric.UserChangeAllowed|This key specifies whether the biometric setting can be changed by the end user. This key is only supported with Outlook for iOS. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: <br/><br/> true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Contacts.LocalSyncEnabled|This key specifies whether the app should sync Outlook contacts to the native Contacts app. Setting the value to true will enable contact sync. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed|This key specifies whether the contact sync setting can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This key specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.BlockExternalImagesEnabled|This key specifies whether external images are blocked by default. Setting the value to true will enable blocking external images. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed|This key specifies whether the Block External Images setting can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.DefaultSignatureEnabled|This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.SuggestedRepliesEnabled|This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|

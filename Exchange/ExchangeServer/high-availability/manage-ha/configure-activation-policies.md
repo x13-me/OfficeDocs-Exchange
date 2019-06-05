@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Configure activation policy for a mailbox database copy
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

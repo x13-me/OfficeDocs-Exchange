@@ -7,10 +7,11 @@ ms.author: chrisda
 monikerRange: exchserver-2019
 title: Client Access Rules in Exchange 2019
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-server-it-pro
 ms.date: 9/12/2018
-manager: serdars
+ms.reviewer: 
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Create a Retention Policy
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -176,6 +177,3 @@ To verify that you have applied the retention policy, do the following:
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-
-
-

@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Manage address rewriting on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Manage address rewriting on Edge Transport servers
 ms:assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997185(v=EXCHG.150)
 ms:contentKeyID: 61200282
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Manage address rewriting on Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You use the Exchange Management Shell on an Edge Transport server for all management tasks related to address rewriting and the address rewriting agents. For more information about address rewriting, see [Address rewriting on Edge Transport servers](address-rewriting-on-edge-transport-servers-exchange-2013-help.md).
 
@@ -43,13 +44,8 @@ You can create address rewrite entries that apply to a single recipient, to all 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to enable or disable address rewriting
 
@@ -73,13 +69,13 @@ To enable address rewriting, run the following commands:
 
 To verify that you have successfully enabled or disabled address rewriting, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-TransportAgent
     ```
 
-2.  Verify the values of the **Enabled** property for the Address Rewriting Inbound Agent and the Address Rewriting Outbound Agent are the values you configured.
+2. Verify the values of the **Enabled** property for the Address Rewriting Inbound Agent and the Address Rewriting Outbound Agent are the values you configured.
 
 ## Use the Shell to view address rewrite entries
 
@@ -161,11 +157,11 @@ The following example is just like the previous example, except now messages sen
 
 To verify that you have successfully created address rewrite entries, do the following:
 
-1.  Run the command `Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List` and verify the settings displayed are the settings you configured.
+1. Run the command `Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List` and verify the settings displayed are the settings you configured.
 
-2.  From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
+2. From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
 
-3.  Reply to the test message from the external mailbox. Verify the original mailbox receives the reply.
+3. Reply to the test message from the external mailbox. Verify the original mailbox receives the reply.
 
 ## Use the Shell to modify address rewrite entries
 
@@ -180,7 +176,6 @@ To modify an address rewrite entry that rewrites the email address of a single r
 ```
 
 The following example modifies the following properties of the single recipient address rewrite entry named "joe@contoso.com to support@nortwindtraders.com":
-
 
   - Changes the external address to support@northwindtraders.net.
 
@@ -244,11 +239,11 @@ The following example adds finanace.contoso.com and removes marketing.contoso.co
 
 To verify that you have successfully modified an address rewrite entry, do the following:
 
-1.  Run the command `Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List` and verify the settings displayed are the settings you configured.
+1. Run the command `Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List` and verify the settings displayed are the settings you configured.
 
-2.  From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
+2. From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
 
-3.  From the external mailbox, reply to the test message. Verify the original mailbox receives the reply.
+3. From the external mailbox, reply to the test message. Verify the original mailbox receives the reply.
 
 ## Use the Shell to remove address rewrite entries
 
@@ -292,9 +287,8 @@ If you are satisfied with the result, run the command again without the *WhatIf*
 
 To verify that you have successfully removed an address rewrite entry, do the following:
 
-1.  Run the command `Get-AddressRewriteEntry`, and verify that the address rewrite entries you removed aren't listed.
+1. Run the command `Get-AddressRewriteEntry`, and verify that the address rewrite entries you removed aren't listed.
 
-2.  From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message is no longer affected by the removed address rewrite entry.
+2. From a mailbox that's affected by an address rewrite entry, send a test message to an external mailbox. Verify the test message is no longer affected by the removed address rewrite entry.
 
-3.  From the external mailbox, reply to the test message. Verify the original mailbox receives the reply and that the message is unaffected by the removed address rewrite entry.
-
+3. From the external mailbox, reply to the test message. Verify the original mailbox receives the reply and that the message is unaffected by the removed address rewrite entry.

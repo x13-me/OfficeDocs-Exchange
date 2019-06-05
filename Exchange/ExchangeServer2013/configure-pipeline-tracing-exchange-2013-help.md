@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Configure pipeline tracing: Exchange 2013 Help'
 TOCTitle: Configure pipeline tracing
 ms:assetid: 10293c83-2157-474e-840d-942e064a4672
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ916678(v=EXCHG.150)
 ms:contentKeyID: 50934211
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure pipeline tracing
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Pipeline tracing captures copies of email messages as they move through the transport pipeline in the Transport service or the Mailbox Transport service on Mailbox server and on Edge Transport servers.
 
@@ -31,13 +32,8 @@ Pipeline tracing captures copies of email messages as they move through the tran
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Enable and configure pipeline tracing
 
@@ -46,7 +42,7 @@ Pipeline tracing captures copies of email messages as they move through the tran
 Use the following syntax to configure the pipeline tracing sender address.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
 ```
 
 This example configures pipeline tracing to capture snapshots of all messages sent by the sender chris@contoso.com in the Transport service on the Mailbox server named Mailbox01.
@@ -61,11 +57,8 @@ This example configures pipeline tracing to capture snapshots of all the system-
 Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
 ```
 
-
 > [!WARNING]
 > Configuring pipeline tracing to capture all server-generated messages in a transport service may place a significant load on the server and may quickly consume available disk space. Always monitor available disk space when pipeline tracing is enabled.
-
-
 
 ## Step 2: (Optional) Use the Shell to specify a custom pipeline tracing folder
 
@@ -74,7 +67,7 @@ The default pipeline tracing folder doesn't exist until after you enable pipelin
 Use the following syntax to configure the pipeline tracing folder.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
 ```
 
 This example sets the pipeline tracing folder for the Transport service on the Mailbox server named Mailbox01 to D:\\Hub\\Pipeline Tracing.
@@ -90,7 +83,7 @@ By default, pipeline tracing is disabled on all Exchange servers. When you enabl
 Use the following syntax to enable pipeline tracing.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
 ```
 
 This example enables pipeline tracing in the Transport service on the Mailbox server named Mailbox01.
@@ -103,15 +96,15 @@ Set-TransportService Mailbox01 -PipelineTracingEnabled $true
 
 To verify that you have successfully configured pipeline tracing, do the following:
 
-1.  Run the following command:
-    
-    ```powershell
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
-    ```
+1. Run the following command:
 
-2.  Verify the values displayed are the values you configured.
+   ```powershell
+   <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+   ```
 
-3.  Check the pipeline tracing folder for the Transport service or the Mailbox Transport service, and verify message snapshot files are being created in the folder.
+2. Verify the values displayed are the values you configured.
+
+3. Check the pipeline tracing folder for the Transport service or the Mailbox Transport service, and verify message snapshot files are being created in the folder.
 
 ## Disable pipeline tracing
 
@@ -120,7 +113,7 @@ Because of the disk space and security concerns associated with pipeline tracing
 Use the following syntax to disable pipeline tracing.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
 ```
 
 This example disables pipeline tracing in the Transport service on the Mailbox server named Mailbox01.
@@ -133,12 +126,12 @@ Set-TransportService Mailbox01 -PipelineTracingEnabled $false
 
 To verify that you have successfully disabled pipeline tracing, do the following:
 
-1.  Run the following command:
-    
-    ```powershell
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
-    ```
-2.  Verify the value of the *PipelineTracingEnabled* parameter is $false.
+1. Run the following command:
 
-3.  Check the pipeline tracing folder, and verify message snapshot files are no longer being created in the folder.
+   ```powershell
+   <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+   ```
 
+2. Verify the value of the *PipelineTracingEnabled* parameter is $false.
+
+3. Check the pipeline tracing folder, and verify message snapshot files are no longer being created in the folder.

@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 17c4667b-7db1-4e0a-b824-1f6d51d980a9
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Cannot write to the Exchange organization container [GlobalServerInstall]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

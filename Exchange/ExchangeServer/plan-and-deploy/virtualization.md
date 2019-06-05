@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 36184b2f-4cd9-48f8-b100-867fe4c6b579
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Exchange Server virtualization
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

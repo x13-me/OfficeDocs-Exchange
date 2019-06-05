@@ -1,21 +1,22 @@
-﻿---
+---
 title: 'Configure Exchange for SharePoint eDiscovery Center: Exchange 2013 Help'
 TOCTitle: Configure Exchange for SharePoint eDiscovery Center
 ms:assetid: 795c1a3b-295c-4ee5-ade9-52cf3fda3f19
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218665(v=EXCHG.150)
 ms:contentKeyID: 48385255
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure Exchange for SharePoint eDiscovery Center
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
-Microsoft Exchange Server 2013 includes features that work with Microsoft SharePoint Server 2013 and Microsoft Lync Server 2013, known as *partner applications*. To make sure these partner applications can access each other’s resources, you need to configure server-to-server authentication.
+Microsoft Exchange Server 2013 includes features that work with Microsoft SharePoint Server 2013 and Microsoft Lync Server 2013, known as *partner applications*. To make sure these partner applications can access each other's resources, you need to configure server-to-server authentication.
 
 This topic shows you how to configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so users can use the eDiscovery Center in SharePoint 2013 to search Exchange Server 2013 mailbox content. To fully enable this functionality, you must complete additional steps in SharePoint 2013. For details, see [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=257727).
 
@@ -25,7 +26,7 @@ This topic shows you how to configure server-to-server authentication between Ex
 
   - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - It’s supported to install Exchange 2013 and SharePoint 2013 in different domains or forests. A Windows trust relationship between Exchange and SharePoint forests isn’t required, because in that circumstance, Exchange and SharePoint will rely on the OAuth 2.0 protocol to trust one another.
+  - It's supported to install Exchange 2013 and SharePoint 2013 in different domains or forests. A Windows trust relationship between Exchange and SharePoint forests isn't required, because in that circumstance, Exchange and SharePoint will rely on the OAuth 2.0 protocol to trust one another.
 
   - The SharePoint 2013 site must be configured to use Secure Sockets Layer (SSL).
 
@@ -33,11 +34,8 @@ This topic shows you how to configure server-to-server authentication between Ex
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## How do you do this?
 
@@ -64,8 +62,5 @@ Run this command to configure the SharePoint partner application.
 
 Add users who need to perform an eDiscovery search using SharePoint 2013 to the Discovery Management role group in Exchange 2013. For details, see [Assign eDiscovery permissions in Exchange](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
 
-
 > [!WARNING]
-> Adding users to the Discovery Management role group allows them to use In-Place eDiscovery to search all Exchange 2013 mailboxes and access potentially sensitive email content in user mailboxes. By default, this permission isn’t assigned to any user, including members of the Organization Management role group. Check with your organization’s legal or HR departments before assigning this permission to any user.
-
-
+> Adding users to the Discovery Management role group allows them to use In-Place eDiscovery to search all Exchange 2013 mailboxes and access potentially sensitive email content in user mailboxes. By default, this permission isn't assigned to any user, including members of the Organization Management role group. Check with your organization's legal or HR departments before assigning this permission to any user.

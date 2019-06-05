@@ -11,9 +11,9 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -76,4 +76,3 @@ In order to ensure these users can only access corporate email on enrolled devic
 1. The first policy allows Outlook for iOS and Android, and it blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1 - Configure an Azure AD conditional access policy for Exchange Online", but for the fifth step select  "Require device to be marked as compliant", "Require approved client app", and "Require all the selected controls".
 
 2. The second policy prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. See "Step 2 - Configure an Azure AD conditional access policy for Exchange Online with Active Sync (EAS)."
-

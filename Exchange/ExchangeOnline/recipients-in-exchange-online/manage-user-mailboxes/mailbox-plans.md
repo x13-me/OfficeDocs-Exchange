@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 
 ms.date: 
+ms.reviewer: 
 title: Mailbox plans in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -225,4 +226,3 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    ```
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
-

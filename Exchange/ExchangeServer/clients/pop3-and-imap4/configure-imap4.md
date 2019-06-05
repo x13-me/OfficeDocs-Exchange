@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Enable and configure IMAP4 on an Exchange server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bf4ca453-e79c-4b87-a9a5-3ae1b21181e2
 ms.date: 4/29/2016
+ms.reviewer: 
 title: Set POP3 or IMAP4 settings for a user
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 
@@ -143,6 +144,3 @@ Get-CASMailbox USER01 | format-list *EnableExact*,*UseProtocolDefaults
 [Enable or Disable POP3 or IMAP4 access for a user](enable-or-disable-pop3-or-imap4-access.md)
 
 [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx)
-
-
-

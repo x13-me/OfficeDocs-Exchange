@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Anti-virus software in the operating system on Exchange servers'
 TOCTitle: Anti-Virus Software in the Operating System on Exchange Servers
 ms:assetid: 7cef6017-7a55-41f3-a636-1ca4fce575b1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb332342(v=EXCHG.150)
 ms:contentKeyID: 48385271
 ms.date: 07/22/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Anti-Virus Software in the Operating System on Exchange Servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic describes the effects of file-level antivirus programs on computers that are running Microsoft Exchange Server 2013. If you implement the recommendations described in this topic, you can help enhance the security and health of your Exchange organization.
 
@@ -46,103 +47,100 @@ File name extension exclusions
 You must exclude specific directories for each Exchange server on which you run a file-level antivirus scanner. This section describes the directories that you should exclude from file-level scanning.
 
   - **Mailbox servers**
-    
+
       - **Mailbox databases**
-        
+
           - Exchange databases, checkpoint files, and log files. By default, these are located in sub-folders under the %ExchangeInstallPath%Mailbox folder. To determine the location of a mailbox database, transaction log, and checkpoint file, run the following command: `Get-MailboxDatabase -Server <servername>| Format-List *path*`
-        
+
           - Database content indexes. By default, these are located in the same folder as the database file.
-        
+
           - Group Metrics files. By default, these files are located in the %ExchangeInstallPath%GroupMetrics folder.
-        
+
           - General log files, such as message tracking and calendar repair log files. By default, these files are located in subfolders under the %ExchangeInstallPath%TransportRoles\\Logs folder and %ExchangeInstallPath%Logging folder. To determine the log paths being used, run the following command in the Exchange Management Shell: `Get-MailboxServer <servername> | Format-List *path*`
-        
+
           - The Offline Address Book files. By default, these are located in subfolders under the %ExchangeInstallPath%ClientAccess\\OAB folder.
-        
+
           - IIS system files in the %SystemRoot%\\System32\\Inetsrv folder.
-        
+
           - The Mailbox database temporary folder: %ExchangeInstallPath%Mailbox\\MDBTEMP
-    
+
       - **Members of Database Availability Groups**
-        
+
           - All the items listed in the **Mailbox databases** list, and the cluster quorum database that exists at %Windir%\\Cluster.
-        
-          - The witness directory files. These files are located on another server in the environment, typically a Client Access server that isn’t installed on the same computer as a Mailbox server. By default, the witness directory files are located in %SystemDrive%:\\DAGFileShareWitnesses\\\<DAGFQDN\>.
-    
+
+          - The witness directory files. These files are located on another server in the environment, typically a Client Access server that isn't installed on the same computer as a Mailbox server. By default, the witness directory files are located in %SystemDrive%:\\DAGFileShareWitnesses\\\<DAGFQDN\>.
+
       - **Transport service**
-        
+
           - Log files, for example, message tracking and connectivity logs. By default, these files are located in subfolders under the %ExchangeInstallPath%TransportRoles\\Logs folder. To determine the log paths being used, run the following command in the Exchange Management Shell: `Get-TransportService <servername> | Format-List *logpath*,*tracingpath*`
-        
+
           - Pickup and Replay message directory folders. By default, these folders are located under the %ExchangeInstallPath%TransportRoles folder. To determine the paths being used, run the following command in the Exchange Management Shell: `Get-TransportService <servername>| Format-List *dir*path*`
-        
+
           - The queue databases, checkpoints, and log files. By default, these are located in the %ExchangeInstallPath%TransportRoles\\Data\\Queue folder.
-        
+
           - The Sender Reputation database, checkpoint, and log files. By default, these are located in the %ExchangeInstallPath%TransportRoles\\Data\\SenderReputation folder.
-        
+
           - The temporary folders that are used to perform conversions:
-            
-              - By default, content conversions are performed in the Exchange server’s %TMP% folder.
-            
+
+              - By default, content conversions are performed in the Exchange server's %TMP% folder.
+
               - By default, rich text format (RTF) to MIME/HTML conversions are performed in %ExchangeInstallPath%\\Working\\OleConverter folder.
-        
+
           - The content scanning component is used by the Malware agent and data loss prevention (DLP). By default, these files are located in the %ExchangeInstallPath%FIP-FS folder.
-    
+
       - **Mailbox Transport service**
-        
+
           - Log files, for example, connectivity logs. By default, these files are located in subfolders under the %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox folder. To determine the log paths being used, run the following command in the Exchange Management Shell: `Get-MailboxTransportService <servername> | Format-List *logpath*`
-    
+
       - **Unified Messaging**
-        
+
           - The grammar files for different locales, for example en-EN or es-ES. By default, these are stored in the subfolders in the %ExchangeInstallPath%UnifiedMessaging\\grammars folder.
-        
+
           - The voice prompts, greetings and informational message files. By default, these are stored in the subfolders in the %ExchangeInstallPath%UnifiedMessaging\\Prompts folder
-        
+
           - The voicemail files that are temporarily stored in the %ExchangeInstallPath%UnifiedMessaging\\voicemail folder.
-        
+
           - The temporary files generated by Unified Messaging. By default, these are stored in the %ExchangeInstallPath%UnifiedMessaging\\temp folder.
-    
+
       - **Setup**
-        
+
           - Exchange Server setup temporary files. These files are typically located in %SystemRoot%\\Temp\\ExchangeSetup.
-    
+
       - **Exchange Search service**
-        
+
           - Temporary files used by the Exchange Search service and Microsoft Filter Pack to perform file conversion in a sandboxed environment. These files are located in %SystemRoot%\\Temp\\OICE\_*\<GUID\>*\\.
 
 <!-- end list -->
 
   - **Client Access servers**
-    
-      - **Web components**
-        
-          - For servers using Internet Information Services (IIS) 7.0, the compression folder that is used with Microsoft Outlook Web App. By default, the compression folder for IIS 7.0 is located at %SystemDrive%\\inetpub\\temp\\IIS Temporary Compressed Files.
-        
-          - IIS system files in the %SystemRoot%\\System32\\Inetsrv folder
-        
-          - Inetpub\\logs\\logfiles\\w3svc
-        
-          - Sub-folders in %SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\Temporary ASP.NET Files
-    
-      - **POP3 and IMAP4 protocol logging**
-        
-          - POP3 folder: %ExchangeInstallPath%Logging\\POP3
-        
-          - IMAP4 folder: %ExchangeInstallPath%Logging\\IMAP4
-    
-      - **Front End Transport service**
-        
-          - Log files, for example, connectivity logs and protocol logs. By default, these files are located in subfolders under the %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd folder. To determine the log paths being used, run the following command in the Exchange Management Shell: `Get-FrontEndTransportService <servername> | Format-List *logpath*`
-    
-      - **Setup**
-        
-          - Exchange Server setup temporary files. These files are typically located in %SystemRoot%\\Temp\\ExchangeSetup.
 
-Return to top
+      - **Web components**
+
+          - For servers using Internet Information Services (IIS) 7.0, the compression folder that is used with Microsoft Outlook Web App. By default, the compression folder for IIS 7.0 is located at %SystemDrive%\\inetpub\\temp\\IIS Temporary Compressed Files.
+
+          - IIS system files in the %SystemRoot%\\System32\\Inetsrv folder
+
+          - Inetpub\\logs\\logfiles\\w3svc
+
+          - Sub-folders in %SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\Temporary ASP.NET Files
+
+      - **POP3 and IMAP4 protocol logging**
+
+          - POP3 folder: %ExchangeInstallPath%Logging\\POP3
+
+          - IMAP4 folder: %ExchangeInstallPath%Logging\\IMAP4
+
+      - **Front End Transport service**
+
+          - Log files, for example, connectivity logs and protocol logs. By default, these files are located in subfolders under the %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd folder. To determine the log paths being used, run the following command in the Exchange Management Shell: `Get-FrontEndTransportService <servername> | Format-List *logpath*`
+
+      - **Setup**
+
+          - Exchange Server setup temporary files. These files are typically located in %SystemRoot%\\Temp\\ExchangeSetup.
 
 ## Process exclusions
 
 Many file-level scanners now support the scanning of processes, which can adversely affect Microsoft Exchange if the incorrect processes are scanned. Therefore, you should exclude the following processes from file-level scanners.
-
 
 <table>
 <colgroup>
@@ -460,74 +458,68 @@ Many file-level scanners now support the scanning of processes, which can advers
 </tbody>
 </table>
 
-
-Return to top
-
 ## File name extension exclusions
 
 In addition to excluding specific directories and processes, you should exclude the following Exchange-specific file name extensions in case directory exclusions fail or files are moved from their default locations.
 
   - Application-related extensions:
-    
+
       - .config
-    
+
       - .dia
-    
+
       - .wsb
 
 <!-- end list -->
 
   - Database-related extensions:
-    
+
       - .chk
-    
+
       - .edb
-    
+
       - .jrs
-    
+
       - .jsl
-    
+
       - .log
-    
+
       - .que
 
 <!-- end list -->
 
   - Offline address book-related extensions:
-    
+
       - .lzx
 
 <!-- end list -->
 
   - Content Index-related extensions:
-    
+
       - .ci
-    
+
       - .dir
-    
+
       - .wid
-    
+
       - .000
-    
+
       - .001
-    
+
       - .002
 
 <!-- end list -->
 
   - Unified Messaging-related extensions:
-    
+
       - .cfg
-    
+
       - .grxml
 
 <!-- end list -->
 
   - Group Metrics-related extensions:
-    
+
       - .dsc
-    
+
       - .txt
-
-Return to top
-

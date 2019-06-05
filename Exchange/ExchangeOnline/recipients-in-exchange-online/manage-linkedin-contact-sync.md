@@ -8,13 +8,14 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 54d9b046-4f36-4f36-b88a-95b1da4e1b4c
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Manage LinkedIn contact sync in your organization
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Developer
+audience: Developer
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 
@@ -35,6 +36,3 @@ You turn LinkedIn contact sync on or off for users in your organization by using
 ## For more information
 
 The information for each LinkedIn contact is stored as a read-only contact record in the LinkedIn folder in People. The information that's synchronized between LinkedIn and Outlook Web App includes first name, last name, all phone numbers, all email addresses, and all street addresses. LinkedIn contacts are stored in the user's mailbox and are retained in accordance with the Office 365 service plan. For information about how your users can set up a connection to LinkedIn using a desktop version of Outlook, have them check out [Social Connector for Microsoft Outlook](https://go.microsoft.com/fwlink/p/?LinkId=280216).
-
-
-

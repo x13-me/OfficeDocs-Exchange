@@ -2,9 +2,9 @@
 title: "Organization configuration transfer attributes"
 ms.author: kchandra
 author: ChandraKavya
-manager: serdars
+manager: dansimp
 ms.reviewer: dstrome
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -42,6 +42,3 @@ The attributes listed in the following topics can be copied from an on-premises 
 [Retention Policy](retention-policy.md)
 
 [Retention Policy Tags](retention-policy-tags.md)
-
-
-

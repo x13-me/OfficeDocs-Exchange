@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Configure message tracking
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -39,7 +40,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 - Estimated time to complete: 5 minutes
 
--  To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service" entries in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 

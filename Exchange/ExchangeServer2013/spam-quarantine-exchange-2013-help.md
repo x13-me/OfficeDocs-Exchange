@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Spam quarantine: Exchange 2013 Help'
 TOCTitle: Spam quarantine
 ms:assetid: 4535496f-de6a-43df-8e53-c9a97f65cccc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997692(v=EXCHG.150)
 ms:contentKeyID: 49248678
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Spam quarantine
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Many organizations are bound by legal or regulatory requirements to preserve or deliver all legitimate email messages. In Microsoft Exchange Server 2013, spam quarantine is a feature of the Content Filter agent that reduces the risk of losing legitimate messages. Spam quarantine provides a temporary storage location for messages identified as spam that shouldn't be delivered to a user mailbox inside the organization.
 
@@ -49,8 +50,6 @@ Based on the preceding SCL thresholds, all email with an SCL of 6 will be delive
 
 For more information, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
 
-Return to top
-
 ## Spam quarantine
 
 When messages are received by the Exchange server that's running all default anti-spam agents, the content filter is applied as follows:
@@ -73,19 +72,16 @@ You can then adjust the SCL settings to more accurately filter the spam coming i
 
 To use spam quarantine, you need to follow these steps:
 
-1.  Verify content filtering is enabled.
+1. Verify content filtering is enabled.
 
-2.  Create a dedicated mailbox for spam quarantine.
+2. Create a dedicated mailbox for spam quarantine.
 
-3.  Specify the spam quarantine mailbox.
+3. Specify the spam quarantine mailbox.
 
-4.  Configure the SCL quarantine threshold.
+4. Configure the SCL quarantine threshold.
 
-5.  Manage the spam quarantine mailbox.
+5. Manage the spam quarantine mailbox.
 
-6.  Adjust the SCL quarantine threshold as needed.
+6. Adjust the SCL quarantine threshold as needed.
 
 For detailed instructions, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
-
-Return to top
-

@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
 ms.date: 
+ms.reviewer: 
 description: There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 title: Office 365 migration performance and best practices
 ms.collection: 
@@ -15,10 +16,10 @@ search.appverid:
 - MOE150
 - MED150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -120,7 +121,7 @@ The following table provides a list of common factors that affect migration perf
 |Data type and density|Because of the unique nature of a customer's business, the type and mix of mail items within mailboxes vary greatly.|One 4-GB mailbox with 400 items, each with 10 megabytes (MB) of attachments, will migrate faster than one 4-GB mailbox with 100,000 smaller items.|
 |Migration server|Many migration solutions use a "jump box" type of migration server or workstation to complete the migration.|Customers often use a low-performance virtual machine to host the MRSProxy service for hybrid deployments or for client PC non-hybrid migrations.|
 |Migration engine|The data migration engine responsible for pulling data from the source server converts data, if necessary. The engine then transmits the data over the network and injects the data into the Office 365 mailbox. mailbox.|MRSProxy service has its own capabilities and limitations.|
-|On-premises network appliances|The end-to-end network performance—from the data source to Exchange Online client access servers—affects migration performance.|Firewall configuration and specifications on the on-premises organization.|
+|On-premises network appliances|The end-to-end network performance (from the data source to Exchange Online client access servers) affects migration performance.|Firewall configuration and specifications on the on-premises organization.|
 |Office 365 service|Office 365 has built-in support and features to manage the migration workload.|The user-throttling policy has default settings and limits the overall maximum data transfer rate.|
 
 ### Network performance factors
@@ -207,7 +208,7 @@ The following table describes the impact on migration by the source servers in y
 |**Checklist**|**Description**|**Best practices**|
 |:-----|:-----|:-----|
 |System performance|Data extraction is an intensive task. The source system needs to have sufficient resources, such as CPU time and memory, to provide optimal migration performance. During migration, the source system is often close to full capacity in terms of the regular end-user workload. If system resources are inadequate, the additional workload that results from migration can affect end users.|Monitor system performance during a pilot migration test. If the system is busy, we recommend avoiding an aggressive migration schedule for the specific system because of potential migration slowness and service availability issues. If possible, enhance the source system performance by adding hardware resources and reduce the load on the system by moving tasks and users to other servers that aren't involved in the migration. <br/><br/> For more information, see: <br/>• [Exchange 2013 Server Health and Performance](https://go.microsoft.com/fwlink/p/?LinkId=623551) <br/>• [Understanding Exchange 2010 Performance](https://go.microsoft.com/fwlink/p/?LinkId=623552) <br/>• [Exchange 2007: Monitoring Mailbox Servers](https://go.microsoft.com/fwlink/p/?LinkId=623555) <br/><br/> When migrating from an on-premises Exchange organization where there are multiple mailbox servers, we recommend that you create a migration-user list that is evenly distributed across multiple mailbox servers. Based on individual server performance, the list can be further fine-tuned to maximize throughput. <br/><br/> For example, if server A has 50 percent more resource availability than server B, it's reasonable to have 50 percent more users from server A in the same migration batch. Similar practices can be applied to other source systems. Perform migrations when servers have maximum resource availability such as after hours or on weekends and holidays.|
-|Back-end tasks|Other back-end tasks that are running during migration time. Because it's a best practice to perform migration after business hours, it's common that migrations conflict with maintenance tasks—such as data backup—running on your on-premises servers.|Review other system tasks that might be running during migration. We recommend that you perform data migration when no other resource-intensive tasks are running. <br/> **Note**: For customers using on-premises Exchange, the common back-end tasks are backup solutions and [Exchange store maintenance]( https://go.microsoft.com/fwlink/p/?LinkId=623556).|
+|Back-end tasks|Other back-end tasks that are running during migration time. Because it's a best practice to perform migration after business hours, it's common that migrations conflict with maintenance tasks (such as data backup) running on your on-premises servers.|Review other system tasks that might be running during migration. We recommend that you perform data migration when no other resource-intensive tasks are running. <br/> **Note**: For customers using on-premises Exchange, the common back-end tasks are backup solutions and [Exchange store maintenance]( https://go.microsoft.com/fwlink/p/?LinkId=623556).|
 |Throttling policy|It's a common practice to protect email systems with a throttling policy that sets a specific limit on how fast and how much data can be extracted from the system during a certain amount of time.|Verify what throttling policy is deployed for your email system. For example, Google Mail limits how much data can be extracted in a certain time period. <br/><br/> Depending on the version, Exchange has policies that restrict IMAP access to the on-premises mail server (used by IMAP migrations) and RPC over HTTP Protocol access (used by cutover Exchange migrations and staged Exchange migrations). <br/><br/> To check the throttling settings in an Exchange 2013 organization, run the [Get-ThrottlingPolicy](https://go.microsoft.com/fwlink/p/?LinkId=623557) cmdlet. For more information, see [Exchange Workload Management]( https://go.microsoft.com/fwlink/p/?LinkId=623558). <br/><br/> For more information about IMAP throttling, see [Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes/migrating-imap-mailboxes.md) <br/><br/> For more information about RPC over HTTP Protocol throttling, see: <br/>• [Exchange 2013 Workload Management](https://go.microsoft.com/fwlink/p/?LinkID=623558) <br/>• [Exchange 2010: Understanding Client Throttling Policies](https://go.microsoft.com/fwlink/p/?LinkId=623586) <br/>• [Exchange 2007: Understanding Client Throttling](https://go.microsoft.com/fwlink/p/?LinkId=623587)|
 
 ### Factor 2: Migration server
@@ -383,4 +384,3 @@ For third-party migration solutions that use the RPC over HTTP Protocol, here's 
 ### Factor 5: Office 365 service
 
 Office 365 resource health-based throttling affects migrations using third-party migration tools. See [Office 365 resource health-based throttling](#office-365-resource-health-based-throttling) for more details.
-

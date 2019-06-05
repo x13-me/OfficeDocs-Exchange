@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 4033a30a-f506-481c-8ef0-fd9a0508ae38
 ms.date: 02/01/2019
+ms.reviewer: 
 title: Enable mail flow for subdomains in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -82,4 +83,3 @@ To verify that you've successfully added match subdomains to a domain using Exch
 ```
 Get-AcceptedDomain | Format-List Name,MatchSubdomains
 ```
-

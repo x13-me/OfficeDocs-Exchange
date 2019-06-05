@@ -1,29 +1,27 @@
-﻿---
+---
 title: 'Configure managed availability overrides: Exchange 2013 Help'
 TOCTitle: Configure managed availability overrides
 ms:assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn482055(v=EXCHG.150)
 ms:contentKeyID: 59888994
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Configure managed availability overrides
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013 SP1_
-
+_**Applies to:** Exchange Server 2013 SP1_
 
 Managed availability performs continuous probing to detect possible problems with Exchange components or their dependencies, and it performs recovery actions to make sure the end user experience is not impacted due to a problem with any of these components. However, there may be scenarios where the out-of-box settings may not be suitable for your environment. Managed availability probes, monitors and responders can be customized by creating an override.
 
 There are two types of overrides: local and global. As their names imply, a local override is available only on the server on which it is created, and a global override is used to apply an override to multiple servers. Both types of override can be created for a specific duration or for a specific version of Exchange, but not both at the same time.
 
-
 > [!NOTE]
 > When you create an override, it doesn't take effect immediately. The Microsoft Exchange Health Management service checks for configuration changes every 10 minutes and loads any detected configuration changes. If you don't want to wait, you can restart the service.
-
-
 
 For additional management tasks related to managed availability, see [Manage health sets and server health](manage-health-sets-and-server-health-exchange-2013-help.md).
 
@@ -35,13 +33,8 @@ For additional management tasks related to managed availability, see [Manage hea
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Exchange Management Shell to create local overrides
 
@@ -59,8 +52,6 @@ To create a local override for a specific version of Exchange, use the following
 
 > [!NOTE]
 > When you create the override, the values used in the <EM>Identity</EM> parameter are case-sensitive.
-
-
 
 This example adds a local override that disables the responder `ActiveDirectoryConnectivityConfigDCServerReboot` on the server named EXCH03 for 20 days.
 
@@ -119,8 +110,6 @@ To create a global override for a specific version of Exchange, use the followin
 > [!NOTE]
 > When you create the override, the values used in the <EM>Identity</EM> parameter are case-sensitive.
 
-
-
 This example adds a global override that disables the `OnPremisesInboundProxy` probe for 30 days.
 
 ```powershell
@@ -166,4 +155,3 @@ Get-GlobalMonitoringOverride
 ```
 
 The removed override should not appear in the list.
-

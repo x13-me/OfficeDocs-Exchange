@@ -1,26 +1,26 @@
-﻿---
+---
 title: 'What the sensitive information types in Exchange look for'
 TOCTitle: What the sensitive information types look for
 ms:assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150541(v=EXCHG.150)
 ms:contentKeyID: 47560060
 ms.date: 05/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # What the sensitive information types in Exchange look for
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Data loss prevention (DLP) includes sensitive information types that are ready for you to use in your DLP policies. This topic lists all the sensitive information types (80 in Exchange Online, 51 in Exchange Server 2013), and shows what a DLP policy looks for when it detects each type.
 
 A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. Additionally, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
 
 ## ABA Routing Number
-
 
 <table>
 <colgroup>
@@ -62,7 +62,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_aba_routing</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_ABA_Routing</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- ABA Routing Number --&gt;
@@ -117,9 +116,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Argentina National Identity (DNI) Number
-
 
 <table>
 <colgroup>
@@ -157,7 +154,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_argentina_national_id</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_argentina_national_id</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Argentina National Identity (DNI) Number --&gt;
@@ -204,9 +200,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Australia Bank Account Number
-
 
 <table>
 <colgroup>
@@ -249,7 +243,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_australia_bank_account_number</code> finds content that matches the pattern..</p></li>
 <li><p>A keyword from <code>Keyword_australia_bank_account_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Australia Bank Account Number --&gt;
@@ -305,9 +298,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Australia Driver's License Number
-
 
 <table>
 <colgroup>
@@ -349,7 +340,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_australia_drivers_license_number</code> is found.</p></li>
 <li><p>No keyword from <code>Keyword_australia_drivers_license_number_exclusions</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Australia Drivers License Number --&gt;
@@ -489,9 +479,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Australia Medical Account Number
-
 
 <table>
 <colgroup>
@@ -534,7 +522,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_australian_medical_account_number</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
   &lt;!-- Australia Medical Account Number --&gt;
@@ -589,9 +576,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Australia Passport Number
-
 
 <table>
 <colgroup>
@@ -622,7 +607,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_australia_passport_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_passport</code> or <code>Keyword_australia_passport_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Australia Passport Number --&gt;
@@ -695,9 +679,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Australia Tax File Number
-
 
 <table>
 <colgroup>
@@ -743,7 +725,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>No keyword from <code>Keyword_Australia_Tax_File_Number</code> or <code>Keyword_number_exclusions</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
     &lt;!-- Australia Tax File Number --&gt;
@@ -833,9 +814,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Belgium National Number
-
 
 <table>
 <colgroup>
@@ -875,7 +854,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Belgium National Number --&gt;
   &lt;Entity id=&quot;fb969c9e-0fd1-4b18-8091-a2123c5e6a54&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
@@ -913,7 +891,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>Identiteit</p>
 <p>Registratie</p>
 <p>Identificatie</p>
-<p>Carte d’identité</p>
+<p>Carte d'identité</p>
 <p>numéro d'immatriculation</p>
 <p>numéro d'identification</p>
 <p>identité</p>
@@ -933,9 +911,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Brazil Legal Entity Number (CNPJ)
-
 
 <table>
 <colgroup>
@@ -983,7 +959,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_brazil_cnpj</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Brazil Legal Entity Number (CNPJ) --&gt;
@@ -1043,9 +1018,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Brazil CPF Number
-
 
 <table>
 <colgroup>
@@ -1096,7 +1069,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Brazil CPF Number --&gt;
 &lt;Entity id=&quot;78e09124-f2c3-4656-b32a-c1a132cd2711&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -1145,9 +1117,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Brazil National ID Card (RG)
-
 
 <table>
 <colgroup>
@@ -1209,7 +1179,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Brazil National ID Card (RG) --&gt;
 &lt;Entity id=&quot;486de900-db70-41b3-a886-abdf25af119c&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -1258,9 +1227,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Bank Account Number
-
 
 <table>
 <colgroup>
@@ -1306,7 +1273,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_canada_bank_account_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_canada_bank_account_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Canada Bank Account Number --&gt;
@@ -1370,9 +1336,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Driver's License Number
-
 
 <table>
 <colgroup>
@@ -1404,7 +1368,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_[province_name]_drivers_license_name</code> is found.</p></li>
 <li><p>A keyword from <code>Keyword_canada_drivers_license</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Canada Driver&#39;s License Number --&gt;
@@ -1622,9 +1585,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Health Service Number
-
 
 <table>
 <colgroup>
@@ -1655,7 +1616,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_canada_health_service_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_canada_health_service_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Canada Health Service Number --&gt;
@@ -1704,9 +1664,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Passport Number
-
 
 <table>
 <colgroup>
@@ -1737,7 +1695,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_canada_passport_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_canada_passport_number</code> or <code>Keyword_passport</code> is found.</p></li>
 </ul>
-
 
 ```powershell
  &lt;!-- Canada Passport Number --&gt;
@@ -1806,9 +1763,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Personal Health Identification Number (PHIN)
-
 
 <table>
 <colgroup>
@@ -1839,7 +1794,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_canada_phin</code> finds content that matches the pattern.</p></li>
 <li><p>At least two keywords from <code>Keyword_canada_phin</code> or <code>Keyword_canada_provinces</code> are found..</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Canada PHIN --&gt;
@@ -1911,9 +1865,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Canada Social Insurance Number
-
 
 <table>
 <colgroup>
@@ -1967,7 +1919,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_sin</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Canada Social Insurance Number --&gt;
@@ -2036,9 +1987,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Chile Identity Card Number
-
 
 <table>
 <colgroup>
@@ -2084,7 +2033,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_chile_id_card</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Chile Identity Card Number --&gt;
@@ -2137,9 +2085,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## China Resident Identity Card (PRC) Number
-
 
 <table>
 <colgroup>
@@ -2182,7 +2128,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_china_resident_id</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- China Resident Identity Card (PRC) Number --&gt;
@@ -2233,9 +2178,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Credit Card Number
-
 
 <table>
 <colgroup>
@@ -2277,12 +2220,10 @@ A sensitive information type is defined by a pattern that can be identified by a
 > [!NOTE]
 > This part of the definition applies to Exchange Online only.
 
-
 <ul>
 <li><p>The function <code>Func_credit_card</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Credit Card Number --&gt;
@@ -2408,7 +2349,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>expiration date</p>
 <p>exp date</p>
 <p>expiry date</p>
-<p>date d’expiration</p>
+<p>date d'expiration</p>
 <p>date d'exp</p>
 <p>date expiration</p>
 <p>bank card</p>
@@ -2520,9 +2461,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Croatia Identity Card Number
-
 
 <table>
 <colgroup>
@@ -2553,7 +2492,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_croatia_id_card</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_croatia_id_card</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!--Croatia Identity Card Number--&gt;
@@ -2593,9 +2531,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Croatia Personal Identification (OIB) Number
-
 
 <table>
 <colgroup>
@@ -2636,7 +2572,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_croatia_oib_number</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Croatia Personal Identification (OIB) Number --&gt;
@@ -2680,9 +2615,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Czech National Identity Card Number
-
 
 <table>
 <colgroup>
@@ -2719,7 +2652,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_czech_id_card</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Czech National Identity Card Number --&gt;
@@ -2759,9 +2691,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Denmark Personal Identification Number
-
 
 <table>
 <colgroup>
@@ -2798,7 +2728,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_denmark_id</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Denmark Personal Identification Number --&gt;
@@ -2840,9 +2769,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Drug Enforcement Agency (DEA) Number
-
 
 <table>
 <colgroup>
@@ -2879,7 +2806,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- DEA Number --&gt;
 &lt;Entity id=&quot;9a5445ad-406e-43eb-8bd7-cac17ab6d0e4&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -2898,9 +2824,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## EU Debit Card Number
-
 
 <table>
 <colgroup>
@@ -2939,7 +2863,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 </ul></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
     &lt;!-- EU Debit Card Number --&gt;
@@ -3285,9 +3208,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Finland National ID
-
 
 <table>
 <colgroup>
@@ -3325,7 +3246,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_finnish_national_id</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Finnish National ID--&gt;
@@ -3367,9 +3287,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Finland Passport Number
-
 
 <table>
 <colgroup>
@@ -3404,7 +3322,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_finland_passport_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_finland_passport_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Finland Passport Number --&gt;
@@ -3444,9 +3361,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## France Driver's License Number
-
 
 <table>
 <colgroup>
@@ -3481,7 +3396,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_eu_date</code> finds a date in the right date format.</p></li>
 </ul></li>
 </ul>
-
 
 ```powershell
 &lt;!-- France Driver&#39;s License Number --&gt;
@@ -3531,9 +3445,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## France National ID Card (CNI)
-
 
 <table>
 <colgroup>
@@ -3564,7 +3476,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_france_cni</code> finds content that matches the pattern.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- France CNI --&gt;
 &lt;Entity id=&quot;f741ac74-1bc0-4665-b69b-f0c7f927c0c4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;65&quot;&gt;
@@ -3583,9 +3494,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## France Passport Number
-
 
 <table>
 <colgroup>
@@ -3621,7 +3530,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_fr_passport</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_passport</code> is found..</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- France Passport Number --&gt;
@@ -3677,9 +3585,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## France Social Security Number (INSEE)
-
 
 <table>
 <colgroup>
@@ -3721,7 +3627,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>No keyword from <code>Keyword_fr_insee</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- France INSEE --&gt;
@@ -3790,9 +3695,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## German Driver's License Number
-
 
 <table>
 <colgroup>
@@ -3836,7 +3739,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 </ul></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- German Driver&#39;s License Number --&gt;
@@ -3973,9 +3875,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## German Identity Card Number
-
 
 <table>
 <colgroup>
@@ -4024,7 +3924,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_germany_id_card</code> is found.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Germany Identity Card Number --&gt;
 &lt;Entity id=&quot;e577372f-c42e-47a0-9d85-bebed1c237d4&quot; recommendedConfidence=&quot;65&quot; patternsProximity=&quot;300&quot;&gt;
@@ -4068,9 +3967,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## German Passport Number
-
 
 <table>
 <colgroup>
@@ -4114,7 +4011,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from any of the five keyword lists is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- German Passport Number --&gt;
@@ -4191,9 +4087,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Greece National ID Card
-
 
 <table>
 <colgroup>
@@ -4236,7 +4130,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_greece_id_card</code> is found.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Greece National ID Card --&gt;
 &lt;Entity id=&quot;82568215-1da1-46d3-874a-d2294d81b5ac&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -4277,9 +4170,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Hong Kong Identity Card (HKID) Number
-
 
 <table>
 <colgroup>
@@ -4321,7 +4212,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_hong_kong_id_card</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Hong Kong Identity Card (HKID) number --&gt;
@@ -4367,9 +4257,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## India Permanent Account Number (PAN)
-
 
 <table>
 <colgroup>
@@ -4406,7 +4294,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_india_permanent_account_number</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- India Permanent Account Number --&gt;
@@ -4446,9 +4333,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## India Unique Identification (Aadhaar) Number
-
 
 <table>
 <colgroup>
@@ -4493,7 +4378,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- India Unique Identification (Aadhaar) number --&gt;
 &lt;Entity id=&quot;1ca46b29-76f5-4f46-9383-cfa15e91048f&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -4537,9 +4421,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Indonesia Identity Card (KTP) Number
-
 
 <table>
 <colgroup>
@@ -4585,7 +4467,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_indonesia_id_card</code> finds content that matches the pattern.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Indonesia Identity Card (KTP) Number --&gt;
 &lt;Entity id=&quot;da68fdb0-f383-4981-8c86-82689d3b7d55&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -4628,9 +4509,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## International Banking Account Number (IBAN)
-
 
 <table>
 <colgroup>
@@ -4673,7 +4552,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;Entity id=&quot;e7dc4711-11b7-4cb0-b88b-2c394a771f0e&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
@@ -4691,9 +4569,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## IP Address
-
 
 <table>
 <colgroup>
@@ -4741,7 +4617,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_ipv6_address</code> finds content that matches the pattern.</p></li>
 <li><p>No keyword from <code>Keyword_ipaddress</code> is found.</p></li>
 </ul>
-
 
 ```powershell
     &lt;!-- IP Address --&gt;
@@ -4798,9 +4673,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Ireland Personal Public Service (PPS) Number
-
 
 <table>
 <colgroup>
@@ -4861,7 +4734,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Ireland Personal Public Service (PPS) Number --&gt;
 &lt;Entity id=&quot;1cdb674d-c19a-4fcf-9f4b-7f56cc87345a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -4915,9 +4787,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Israel Bank Account Number
-
 
 <table>
 <colgroup>
@@ -4959,7 +4829,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_israel_bank_account_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_israel_bank_account_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Israel Bank Account Number --&gt;
@@ -5003,9 +4872,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Israel National ID
-
 
 <table>
 <colgroup>
@@ -5037,7 +4904,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_Israel_National_ID</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Israel National ID Number --&gt;
@@ -5079,9 +4945,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Italy Driver's License Number
-
 
 <table>
 <colgroup>
@@ -5118,7 +4982,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_italy_drivers_license_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_italy_drivers_license_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Italy Driver&#39;s license Number --&gt;
@@ -5160,9 +5023,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Japan Bank Account Number
-
 
 <table>
 <colgroup>
@@ -5213,7 +5074,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_jp_bank_account</code> is found.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Japan Bank Account Number --&gt;
 &lt;Entity id=&quot;d354f95b-96ee-4b80-80bc-4377312b55bc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
@@ -5226,7 +5086,7 @@ A sensitive information type is defined by a pattern that can be identified by a
             &lt;Match idRef=&quot;Keyword_jp_bank_branch_code&quot; /&gt;
           &lt;/Any&gt;
       &lt;/Pattern&gt;
-  &lt;/Version&gt;    
+  &lt;/Version&gt;
      &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_bank_account&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_bank_account&quot; /&gt;
@@ -5320,9 +5180,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Japan Driver's License Number
-
 
 <table>
 <colgroup>
@@ -5353,7 +5211,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_jp_drivers_license_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_jp_drivers_license_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Japan Driver&#39;s License Number --&gt;
@@ -5420,9 +5277,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Japan Passport Number
-
 
 <table>
 <colgroup>
@@ -5453,7 +5308,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_jp_passport</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_jp_passport</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Japan Passport Number --&gt;
@@ -5495,9 +5349,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Japan Resident Registration Number
-
 
 <table>
 <colgroup>
@@ -5528,7 +5380,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_jp_resident_registration_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_jp_resident_registration_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Japan Resident Registration Number --&gt;
@@ -5577,9 +5428,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Japan Social Insurance Number (SIN)
-
 
 <table>
 <colgroup>
@@ -5622,7 +5471,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_jp_sin_pre_1997</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_jp_sin</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Japan Social Insurance Number --&gt;
@@ -5669,9 +5517,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Malaysia ID Card Number
-
 
 <table>
 <colgroup>
@@ -5710,7 +5556,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_malaysia_id_card_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_malaysia_id_card_number</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Malaysia ID Card Number --&gt;
@@ -5756,9 +5601,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Netherlands Citizen's Service (BSN) Number
-
 
 <table>
 <colgroup>
@@ -5799,14 +5642,13 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Netherlands Citizen&#39;s Service (BSN) Number --&gt;
 &lt;Entity id=&quot;c5f54253-ef7e-44f6-a578-440ed67e946d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-       &lt;IdMatch idRef=&quot;Func_netherlands_bsn&quot; /&gt; 
-       &lt;Match idRef=&quot;Keyword_netherlands_bsn&quot; /&gt; 
-       &lt;Match idRef=&quot;Func_eu_date2&quot; /&gt; 
+       &lt;IdMatch idRef=&quot;Func_netherlands_bsn&quot; /&gt;
+       &lt;Match idRef=&quot;Keyword_netherlands_bsn&quot; /&gt;
+       &lt;Match idRef=&quot;Func_eu_date2&quot; /&gt;
   &lt;/Pattern&gt;
 &lt;/Entity&gt;
 ```
@@ -5843,9 +5685,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## New Zealand Ministry of Health Number
-
 
 <table>
 <colgroup>
@@ -5877,7 +5717,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_nz_terms</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- New Zealand Health Number --&gt;
@@ -5921,9 +5760,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Norway Identification Number
-
 
 <table>
 <colgroup>
@@ -5965,7 +5802,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_norway_id_numbe</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Norway Identification Number --&gt;
@@ -6012,9 +5848,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Philippines Unified Multi-Purpose ID Number
-
 
 <table>
 <colgroup>
@@ -6052,7 +5886,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_philippines_unified_id</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_philippines_id</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Philippines Unified Multi-Purpose ID number --&gt;
@@ -6094,9 +5927,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Poland Identity Card
-
 
 <table>
 <colgroup>
@@ -6128,7 +5959,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_polish_national_id_passport_number</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Poland Identity Card--&gt;
@@ -6169,9 +5999,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Poland National ID (PESEL)
-
 
 <table>
 <colgroup>
@@ -6204,9 +6032,8 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
-&lt;!-- Poland National ID (PESEL) --&gt;      
+&lt;!-- Poland National ID (PESEL) --&gt;
 &lt;Entity id=&quot;E3AAF206-4297-412F-9E06-BA8487E22456&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_pesel_identification_number&quot; /&gt;
@@ -6243,9 +6070,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Poland Passport
-
 
 <table>
 <colgroup>
@@ -6277,7 +6102,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_polish_national_id_passport_number</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Poland Passport Number --&gt;
@@ -6319,9 +6143,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Portugal Citizen Card Number
-
 
 <table>
 <colgroup>
@@ -6352,7 +6174,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_portugal_citizen_card</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_portugal_citizen_card</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Portugal Citizen Card Number --&gt;
@@ -6395,9 +6216,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Saudi Arabia National ID
-
 
 <table>
 <colgroup>
@@ -6428,7 +6247,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_saudi_arabia_national_id</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_saudi_arabia_national_id</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Saudi Arabia National ID --&gt;
@@ -6472,9 +6290,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Singapore National Registration Identity Card (NRIC) Number
-
 
 <table>
 <colgroup>
@@ -6516,7 +6332,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_singapore_nric</code> finds content that matches the pattern.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Singapore National Registration Identity Card (NRIC) Number --&gt;
@@ -6565,9 +6380,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## South Africa Identification Number
-
 
 <table>
 <colgroup>
@@ -6606,7 +6419,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_south_africa_identification_number</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- South Africa Identification Number --&gt;
@@ -6647,9 +6459,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## South Korea Resident Registration Number
-
 
 <table>
 <colgroup>
@@ -6695,7 +6505,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- South Korea Resident Registration Number --&gt;
 &lt;Entity id=&quot;5b802e18-ba80-44c4-bc83-bf2ad36ae36a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
@@ -6740,9 +6549,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Spain Social Security Number (SSN)
-
 
 <table>
 <colgroup>
@@ -6781,7 +6588,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Spain SSN --&gt;
 &lt;Entity id=&quot;5df987c0-8eae-4bce-ace7-b316347f3070&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
@@ -6800,9 +6606,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Sweden National ID
-
 
 <table>
 <colgroup>
@@ -6840,7 +6644,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The checksum passes.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Sweden National ID --&gt;
 &lt;Entity id=&quot;f69aaf40-79be-4fac-8f05-fd1910d272c8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
@@ -6859,9 +6662,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Sweden Passport Number
-
 
 <table>
 <colgroup>
@@ -6896,7 +6697,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_sweden_passport</code> is found.</p></li>
 </ul></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Sweden Passport Number --&gt;
@@ -6969,9 +6769,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## SWIFT Code
-
 
 <table>
 <colgroup>
@@ -7009,7 +6807,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_swift</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_swift</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;Entity id=&quot;cb2ab58c-9cb8-4c81-baf8-a4e106791df4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
@@ -7077,9 +6874,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Taiwan National ID
-
 
 <table>
 <colgroup>
@@ -7116,7 +6911,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_taiwanese_national_id</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Taiwanese National ID --&gt;
@@ -7168,9 +6962,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Taiwan Passport Number
-
 
 <table>
 <colgroup>
@@ -7219,7 +7011,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_taiwan_passport</code> is found.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- Taiwan Passport Number --&gt;
 &lt;Entity id=&quot;e7251cb4-4c2c-41df-963e-924eb3dae04a&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
@@ -7264,9 +7055,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## Taiwan Resident Certificate (ARC/TARC) Number
-
 
 <table>
 <colgroup>
@@ -7301,7 +7090,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_taiwan_resident_certificate</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_taiwan_resident_certificate</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- Taiwan Resident Certificate (ARC/TARC) --&gt;
@@ -7350,9 +7138,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.K. Driver's License Number
-
 
 <table>
 <colgroup>
@@ -7391,7 +7177,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_uk_drivers_license</code> is found.</p></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- U.K. Driver&#39;s License Number --&gt;
@@ -7444,9 +7229,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.K. Electoral Roll Number
-
 
 <table>
 <colgroup>
@@ -7477,7 +7260,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_uk_electoral</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_uk_electoral</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- U.K. Electoral Number --&gt;
@@ -7521,9 +7303,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.K. National Health Service Number
-
 
 <table>
 <colgroup>
@@ -7567,7 +7347,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 </ul></li>
 <li><p>The checksum passes.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- U.K. NHS Number --&gt;
@@ -7629,9 +7408,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.K. National Insurance Number (NINO)
-
 
 <table>
 <colgroup>
@@ -7685,7 +7462,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>No keyword from <code>Keyword_uk_nino</code> is found.</p></li>
 </ul>
 
-
 ```powershell
 &lt;!-- U.K. NINO --&gt;
 &lt;Entity id=&quot;16c07343-c26f-49d2-a987-3daf717e94cc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
@@ -7694,7 +7470,7 @@ A sensitive information type is defined by a pattern that can be identified by a
         &lt;Any minMatches=&quot;1&quot;&gt;
           &lt;Match idRef=&quot;Keyword_uk_nino&quot; /&gt;
         &lt;/Any&gt;
-    &lt;/Pattern&gt;    
+    &lt;/Pattern&gt;
      &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_nino&quot; /&gt;
         &lt;Any minMatches=&quot;0&quot; maxMatches=&quot;0&quot;&gt;
@@ -7742,9 +7518,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.S. / U.K. Passport Number
-
 
 <table>
 <colgroup>
@@ -7775,7 +7549,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_usa_uk_passport</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_passport</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;Entity id=&quot;178ec42a-18b4-47cc-85c7-d62c92fd67f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
@@ -7830,9 +7603,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.S. Bank Account Number
-
 
 <table>
 <colgroup>
@@ -7863,7 +7634,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The regular expression <code>Regex_usa_bank_account_number</code> finds content that matches the pattern.</p></li>
 <li><p>A keyword from <code>Keyword_usa_Bank_Account</code> is found.</p></li>
 </ul>
-
 
 ```powershell
 &lt;!-- U.S. Bank Account Number --&gt;
@@ -7928,9 +7698,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.S. Driver's License Number
-
 
 <table>
 <colgroup>
@@ -7973,7 +7741,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_us_drivers_license_abbreviations</code> is found.</p></li>
 <li><p>No keyword from <code>Keyword_us_drivers_license</code> is found.</p></li>
 </ul>
-
 
 ```powershell
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
@@ -8117,9 +7884,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.S. Individual Taxpayer Identification Number (ITIN)
-
 
 <table>
 <colgroup>
@@ -8182,7 +7947,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>The function <code>Func_us_date</code> finds a date in the right date format.</p></li>
 </ul></li>
 </ul>
-
 
 ```powershell
 &lt;!-- U.S. Individual Taxpayer Identification Number (ITIN) --&gt;
@@ -8256,9 +8020,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tbody>
 </table>
 
-
 ## U.S. Social Security Number (SSN)
-
 
 <table>
 <colgroup>
@@ -8276,7 +8038,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 
 > [!NOTE]
 > If issued before mid-2011, an SSN has strong formatting where certain parts of the number must fall within certain ranges to be valid (but there's no checksum).
-
 
 </td>
 </tr>
@@ -8318,7 +8079,6 @@ A sensitive information type is defined by a pattern that can be identified by a
 <li><p>A keyword from <code>Keyword_ssn</code> is found.</p></li>
 <li><p>The function <code>Func_unformatted_ssn</code> does not find content that matches the pattern.</p></li>
 </ul>
-
 
 ```powershell
  &lt;!-- U.S. Social Security Number (SSN) --&gt;
@@ -8381,4 +8141,3 @@ A sensitive information type is defined by a pattern that can be identified by a
 </tr>
 </tbody>
 </table>
-

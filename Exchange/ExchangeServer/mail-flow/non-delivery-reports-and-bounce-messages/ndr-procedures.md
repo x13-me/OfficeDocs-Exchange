@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
 ms.date: 
+ms.reviewer: 
 title: Procedures for DSNs and NDRs in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

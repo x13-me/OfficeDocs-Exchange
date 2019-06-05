@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Mobile devices
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

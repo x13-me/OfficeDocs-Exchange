@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the user account doesn't have the required permissions.
 ms.topic: reference
-author: dstrome
+author: chrisda
 f1_keywords:
 - ms.exch.setupreadiness.GlobalUpdateRequired
-ms.author: dstrome
+ms.author: chrisda
 ms.assetid: 0530f3c6-6fa6-456b-a33a-f3d2f7eaa2ef
 ms.date: 7/22/2015
+ms.reviewer: 
 title: Global updates required [GlobalUpdateRequired]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

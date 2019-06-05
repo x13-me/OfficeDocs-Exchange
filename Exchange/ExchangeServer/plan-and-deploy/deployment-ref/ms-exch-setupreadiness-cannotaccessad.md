@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 56adb6fe-ecb8-4a7f-b440-89aa401c28b7
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Active Directory does not exist or cannot be contacted [CannotAccessAD]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

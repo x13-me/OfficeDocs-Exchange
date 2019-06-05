@@ -5,12 +5,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 3c368d31-5959-423f-a533-9639fee3501c
 ms.date: 12/9/2016
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn about the accessibility features that are available in the Exchange admin center (EAC) in Exchange Online.
 title: Accessibility in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_Features
 ms.service: exchange-online
 
@@ -69,4 +71,3 @@ As you move around the areas of the EAC, your screen reader provides information
 Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
 
 The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
-

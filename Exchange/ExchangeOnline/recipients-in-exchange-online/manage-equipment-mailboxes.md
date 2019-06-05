@@ -6,11 +6,12 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Manage equipment mailboxes
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -182,9 +183,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox.
-
-  - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
+   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
@@ -200,7 +199,7 @@ Use the **Email Address** section to view or change the email addresses associat
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the equipment mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
->  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 ### Use Exchange Online PowerShell to change equipment mailbox properties
 
@@ -257,6 +256,3 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
-
-
-

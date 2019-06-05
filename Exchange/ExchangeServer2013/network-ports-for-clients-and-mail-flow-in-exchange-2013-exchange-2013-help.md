@@ -1,23 +1,24 @@
-﻿---
+---
 title: 'Network ports for clients and mail flow in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Network ports for clients and mail flow in Exchange 2013
 ms:assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb331973(v=EXCHG.150)
 ms:contentKeyID: 64916714
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Network ports for clients and mail flow in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic provides information about the network ports that are used by Microsoft Exchange Server 2013 for communication with email clients, Internet mail servers, and other services that are external to your local Exchange organization. Before we get into that, understand the following ground rules:
 
-  - We do not support restricting or altering network traffic between internal Exchange servers, between internal Exchange servers and internal Lync or Skype for Business servers, or between internal Exchange servers and internal Active Directory domain controllers in any and all types of topologies. If you have firewalls or network devices that could potentially restrict or alter this kind of network traffic, you need to configure rules that allow free and unrestricted communication between these servers (rules that allow incoming and outgoing network traffic on any port—including random RPC ports—and any protocol that never alter bits on the wire).
+  - We do not support restricting or altering network traffic between internal Exchange servers, between internal Exchange servers and internal Lync or Skype for Business servers, or between internal Exchange servers and internal Active Directory domain controllers in any and all types of topologies. If you have firewalls or network devices that could potentially restrict or alter this kind of network traffic, you need to configure rules that allow free and unrestricted communication between these servers (rules that allow incoming and outgoing network traffic on any port (including random RPC ports) and any protocol that never alter bits on the wire).
 
   - Edge Transport servers are almost always located in a perimeter network, so it's expected that you'll restrict network traffic between the Edge Transport server and the Internet, and between the Edge Transport server and your internal Exchange organization. These network ports are described in this topic.
 
@@ -48,7 +49,6 @@ The network ports that are required for email clients to access mailboxes and ot
   - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
 ![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png "Network ports required for clients and services")
-
 
 <table>
 <colgroup>
@@ -125,9 +125,6 @@ The network ports that are required for email clients to access mailboxes and ot
 </tbody>
 </table>
 
-
-Return to top
-
 ## Network ports required for mail flow
 
 How mail is delivered to and from your Exchange organization depends on your Exchange topology. The most important factor is whether you have a subscribed Edge Transport server deployed in your perimeter network.
@@ -137,7 +134,6 @@ How mail is delivered to and from your Exchange organization depends on your Exc
 The network ports that are required for mail flow in an Exchange organization that has only Client Access servers and Mailbox servers are described in the following diagram and table. Although the diagram shows separate Mailbox and Client Access servers, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
 ![Network ports required for mail flow (no Edge Transport servers)](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
-
 
 <table>
 <colgroup>
@@ -190,9 +186,6 @@ The network ports that are required for mail flow in an Exchange organization th
 </tbody>
 </table>
 
-
-Return to top
-
 ## Network ports required for mail flow with Edge Transport servers
 
 A subscribed Edge Transport server that's installed in your perimeter network basically eliminates SMTP mail flow through the Client Access server. Specifically:
@@ -206,7 +199,6 @@ For more information, see [Mail flow](mail-flow-exchange-2013-help.md).
 The network ports that are required for mail flow in Exchange organizations that have Edge Transport servers are described in the following diagram and table. Unless otherwise noted, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
 ![Network ports required for mail flow with Edge Transport servers](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
-
 
 <table>
 <colgroup>
@@ -285,9 +277,6 @@ The network ports that are required for mail flow in Exchange organizations that
 </tbody>
 </table>
 
-
-Return to top
-
 ## Name resolution
 
 DNS resolution of the next mail hop is a fundamental part of mail flow in any Exchange organization. Exchange servers that are responsible for receiving inbound mail or delivering outbound mail must be able to resolve both internal and external host names for proper mail routing. And all internal Exchange servers must be able to resolve internal host names for proper mail routing. There are many different ways to design a DNS infrastructure, but the important result is to ensure name resolution for the next hop is working properly for all of your Exchange servers.
@@ -303,6 +292,3 @@ The network ports that are required for Unified Messaging are covered in the fol
   - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
   - [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
-
-Return to top
-

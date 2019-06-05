@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Exchange ActiveSync
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

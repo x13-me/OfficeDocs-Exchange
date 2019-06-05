@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Recipients
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

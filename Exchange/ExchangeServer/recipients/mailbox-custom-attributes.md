@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.date: 4/19/2018
+ms.reviewer: 
 title: Custom attributes
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

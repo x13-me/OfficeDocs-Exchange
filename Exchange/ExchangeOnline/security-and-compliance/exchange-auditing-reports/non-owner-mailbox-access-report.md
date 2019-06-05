@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms.date: 6/23/2018
+ms.reviewer: 
 title: Run a non-owner mailbox access report
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -135,6 +136,3 @@ The following table lists the actions performed by non-owners that can be logged
 
 > [!NOTE]
 > <sup>\*</sup> Audited by default if auditing is enabled for a mailbox.
-
-
-

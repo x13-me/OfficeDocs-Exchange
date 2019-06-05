@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: "Microsoft will upgrade all Office 365 customers, including Exchange Online customers, to the new version of Office 365. Exchange Online customer's email protection will be upgraded to Exchange Online Protection (EOP). There are a few topics that provide helpful information for upgraded Exchange Online customers on the Office 365 community wiki. These include the following:"
 ms.topic: article
-author: serdars
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: 2d67e30a-cc97-4559-baf1-8cee44751c65
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Exchange Online and Exchange Online Protection service upgrade
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---

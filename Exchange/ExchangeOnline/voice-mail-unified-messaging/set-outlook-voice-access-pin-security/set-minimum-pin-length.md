@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can configure the minimum PIN length for your Outlook Voice Access users who are enabled for Unified Messaging (UM). The PIN settings that you configure on a UM mailbox policy will apply to all UM-enabled users associated with the UM mailbox policy.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: b2ecab54-42e6-45af-8322-615cc1f68dd9
 ms.date: 11/17/2014
-title: Set the minimum PIN length for voice mail
+ms.reviewer: 
+title: Set the minimum PIN length for voice mail in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Set the minimum PIN length for voice mail
+# Set the minimum PIN length for voice mail in Exchange Online
 
 You can configure the minimum PIN length for your Outlook Voice Access users who are enabled for Unified Messaging (UM). The PIN settings that you configure on a UM mailbox policy will apply to all UM-enabled users associated with the UM mailbox policy.
 
@@ -65,6 +66,3 @@ This example sets the minimum PIN length to 8 digits and sets the number of time
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3 -MinPINLength 8
 ```
-
-
-

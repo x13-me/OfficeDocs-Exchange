@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Retention tags and retention policies
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -181,6 +182,3 @@ During long absences from work, users may accrue a large amount of e-mail. Depen
 If your organization has never implemented MRM, and your users aren't familiar with its features, you can also use retention holds during the initial warm up and training phase of your MRM deployment. You can create and deploy retention policies and educate users about the policies without the risk of having items moved or deleted before users can tag them. A few days before the warm up and training period ends, you should remind users of the warm-up deadline. After the deadline, you can remove the retention hold from user mailboxes, allowing the Managed Folder Assistant to process mailbox items and take the specified retention action.
 
 For details about how to place a mailbox on retention hold, see [Place a mailbox on retention hold](mailbox-retention-hold.md).
-
-
-

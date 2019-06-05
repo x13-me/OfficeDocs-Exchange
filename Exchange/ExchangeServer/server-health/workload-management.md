@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
 ms.date: 7/9/2018
+ms.reviewer: 
 title: User workload management in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

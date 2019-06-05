@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Manage Sender ID: Exchange 2013 Help'
 TOCTitle: Manage Sender ID
 ms:assetid: 2e7b646a-8a66-4be7-a7c1-0bd43bb79a5b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997136(v=EXCHG.150)
 ms:contentKeyID: 49287404
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Manage Sender ID
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Sender ID functionality is provided by the Sender ID agent. Sender ID validates the origin of email messages by verifying the IP address of the sender against the purported owner of the sender domain. Sender ID filtering is performed on inbound messages that come from the Internet but aren't authenticated. These messages are handled as external messages.
 
@@ -29,13 +30,8 @@ Sender ID functionality is provided by the Sender ID agent. Sender ID validates 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to enable or disable Sender ID
 
@@ -51,23 +47,20 @@ To enable Sender ID, run the following command:
 Set-SenderIDConfig -Enabled $true
 ```
 
-
 > [!NOTE]
 > When you disable Sender ID, the underlying Sender ID agent is still enabled. To disable the Sender ID agent, run the command: <CODE>Disable-TransportAgent "Sender ID Agent"</CODE>.
-
-
 
 ## How do you know this worked?
 
 To verify that you have successfully enabled or disabled Sender ID, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SenderIDConfig | Format-List Enabled
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to configure the Sender ID action for spoofed messages
 
@@ -87,13 +80,13 @@ Set-SenderIDConfig -SpoofedDomainAction Reject
 
 To verify that you have successfully configured the Sender ID action for spoofed messages, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SenderIDConfig | Format-List SpoofedDomainAction
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to configure the Sender ID action for transient errors
 
@@ -115,13 +108,13 @@ Note that `StampStatus` is the default value for the *TempErrorAction* parameter
 
 To verify that you have successfully configured the Sender ID action for transient errors, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SenderIDConfig | Format-List TempErrorAction
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to configure recipient and sender domain exceptions
 
@@ -159,11 +152,10 @@ This example configures the Sender ID agent with the following information:
 
 To verify that you have successfully configured recipient and sender domain exceptions, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
     ```
 
-2.  Verify the values displayed are the values you configured.
-
+2. Verify the values displayed are the values you configured.

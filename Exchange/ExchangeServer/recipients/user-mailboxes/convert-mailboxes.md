@@ -5,10 +5,12 @@ ms.author: chrisda
 ms.topic: article
 author: chrisda
 ms.date:
+ms.reviewer: 
+manager: dansimp
 ms.prod: exchange-server-it-pro
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 title: Convert a mailbox in Exchange Server
 
 ---

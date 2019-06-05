@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
 ms.date:
+ms.reviewer: 
 title: Procedures for address book policies in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

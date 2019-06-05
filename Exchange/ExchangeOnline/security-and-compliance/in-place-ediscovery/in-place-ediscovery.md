@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.date: 7/11/2018
+ms.reviewer: 
 title: In-Place eDiscovery
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -327,6 +328,3 @@ The following table contains links to topics that will help you learn about and 
 |[Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)|Learn about mailbox items that can't be indexed by Exchange Search and are returned in eDiscovery search results as unsearchable items.|
 
 For more information about eDiscovery in Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [eDiscovery FAQ](https://go.microsoft.com/fwlink/p/?LinkId=386633).
-
-
-

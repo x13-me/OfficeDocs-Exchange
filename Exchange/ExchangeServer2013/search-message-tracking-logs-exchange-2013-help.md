@@ -1,19 +1,20 @@
-﻿---
+---
 title: 'Search message tracking logs: Exchange 2013 Help'
 TOCTitle: Search message tracking logs
 ms:assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124926(v=EXCHG.150)
 ms:contentKeyID: 50646519
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
 # Search message tracking logs
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 In Microsoft Exchange Server 2013, the message tracking log is a detailed record of all message activity as messages are transferred to and from the Transport service on Mailbox servers, mailboxes on Mailbox servers, and Edge Transport servers.
 
@@ -28,13 +29,13 @@ You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management She
   - Searching the message tracking logs requires the Microsoft Exchange Transport Log Search service to be running. If you disable or stop this service, you can't search the message tracking logs or run delivery reports. However, stopping this service does not affect other features in Exchange.
 
   - The field names displayed by the results from the **Get-MessageTrackingLog** cmdlet are similar to the actual field names used in the message tracking logs. The biggest differences are:
-    
+
       - The dashes are removed from the field names. For example **internal-message-id** is displayed as `InternalMessageId`.
-    
+
       - The **date-time** field is displayed as `Timestamp`.
-    
+
       - The **recipient-address** field is displayed as `Recipients`.
-    
+
       - The **sender-address** field is displayed as `Sender`.
 
   - The **date-time** field in the message tracking log stores information in Coordinated Universal Time (UTC). However, you should enter your date-time search criteria for the *Start* or *End* parameters in the regional date-time format of the computer that you are using to perform the search.
@@ -45,13 +46,8 @@ You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management She
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to search the message tracking logs
 
@@ -124,4 +120,3 @@ This example searches the message tracking logs on all Exchange 2013 Mailbox ser
 ## Use the EAC to search the message tracking logs
 
 You can use the Delivery Reports for administrators feature in the Exchange admin center (EAC) to search the message tracking logs for information about messages sent by or received by a specific mailbox in your organization. For more information see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
-

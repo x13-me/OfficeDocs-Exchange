@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms.date: 
+ms.reviewer: 
 title: Create an Outlook on the web mailbox policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -96,4 +97,3 @@ To verify that you've successfully created an Outlook on the web mailbox policy,
 ## Next steps
 
 To modify an existing Outlook on the web mailbox policy, see [View or configure Outlook on the web mailbox policy properties in Exchange Online](configure-outlook-web-app-mailbox-policy-properties.md).
-

@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can delete an existing Unified Messaging (UM) dial plan. When you delete the UM dial plan, it will no longer be available for UM IP gateways, UM mailbox policies, and UM hunt groups. You can't delete a UM dial plan if it's referenced by or associated with UM mailbox policies, UM auto attendants, UM IP gateways, or UM hunt groups.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128
 ms.date: 11/17/2014
-title: Delete a UM dial plan
+ms.reviewer: 
+title: Delete a UM dial plan in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Delete a UM dial plan
+# Delete a UM dial plan in Exchange Online
 
 You can delete an existing Unified Messaging (UM) dial plan. When you delete the UM dial plan, it will no longer be available for UM IP gateways, UM mailbox policies, and UM hunt groups. You can't delete a UM dial plan if it's referenced by or associated with UM mailbox policies, UM auto attendants, UM IP gateways, or UM hunt groups.
 
@@ -48,6 +49,3 @@ This example deletes a UM dial plan named `MyUMDialPlan`.
 ```
 RemoveUMDialplan -identity MyUMDialPlan
 ```
-
-
-

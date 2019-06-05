@@ -2,19 +2,20 @@
 localization_priority: Normal
 description: You can specify the number of seconds of silence that the system allows when a voice message is being recorded before the call is ended. For most organizations, this value should be set to the default of 5 seconds.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 ms.date: 11/17/2014
-title: Configure the recording idle time-out value
+ms.reviewer: 
+title: Configure the recording idle time-out value in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
-# Configure the recording idle time-out value
+# Configure the recording idle time-out value in Exchange Online
 
 You can specify the number of seconds of silence that the system allows when a voice message is being recorded before the call is ended. For most organizations, this value should be set to the default of 5 seconds.
 
@@ -54,6 +55,3 @@ This example sets the recording idle time-out value to 10 for a UM dial plan nam
 ```
 Set-UMDialPlan -identity MyUMDialPlan -RecordingIdleTimeout 10
 ```
-
-
-

@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
 ms.date: 
+ms.reviewer: 
 title: Do I need to create a connector in Exchange Online?
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -29,4 +30,3 @@ Find your mail flow scenario to see if you need to create a connector for your E
 
 > [!NOTE]
 > For more information about these scenarios, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
-
