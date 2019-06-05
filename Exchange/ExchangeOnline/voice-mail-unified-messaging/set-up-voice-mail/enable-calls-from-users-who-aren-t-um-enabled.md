@@ -47,6 +47,3 @@ This example allows Tony Smith to receive voice calls from callers who aren't UM
 ```
 Set UMMailbox -Identity tony@contoso.com -AllowUMCallsFromNonUsers SearchEnabled
 ```
-
-
-

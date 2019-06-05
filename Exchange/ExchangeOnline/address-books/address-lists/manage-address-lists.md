@@ -328,4 +328,3 @@ You can verify that you've successfully hidden a recipient from address lists by
    ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.
-

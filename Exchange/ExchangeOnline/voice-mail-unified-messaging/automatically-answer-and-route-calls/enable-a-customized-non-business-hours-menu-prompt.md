@@ -71,6 +71,3 @@ Set-UMAutoAttendant -Identity MyAutoAttendant -
 AfterHoursKeyMappingEnabled $true -
 AfterHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
-
-
-

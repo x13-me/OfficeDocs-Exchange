@@ -102,6 +102,3 @@ After you receive the certificate from the CA, complete the following steps.
 6. Select the services you want to assign to this certificate. At a minimum, you should select SMTP and IIS. Choose **Save**.
 
 7. If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes**.
-
-
-

@@ -41,99 +41,99 @@ By default, you can't select these fields in Microsoft Outlook. Before you can a
 
 1. Open Notepad, and copy the following code into the document.
 
-    ```powershell
-        [Description]
-        MessageClass=IPM.Note
-        CLSID={00020D31-0000-0000-C000-000000000046}
-        DisplayName=Quarantine Extension Form
-        Category=Standard
-        Subcategory=Form
-        Comment=This form allows the Original Sender (ReceivedRepresentingEmailAddress), Original Recipient (To), and Original SCL (OriginalScl) values to be viewed as columns.
-        LargeIcon=IPML.ico
-        SmallIcon=IPMS.ico
-        Version=3.0
-        Locale=enu
-        Hidden=1
-        Owner=Microsoft Corporation
-        Contact=Your Name
+   ```powershell
+   [Description]
+   MessageClass=IPM.Note
+   CLSID={00020D31-0000-0000-C000-000000000046}
+   DisplayName=Quarantine Extension Form
+   Category=Standard
+   Subcategory=Form
+   Comment=This form allows the Original Sender (ReceivedRepresentingEmailAddress), Original Recipient (To), and Original SCL (OriginalScl) values to be viewed as columns.
+   LargeIcon=IPML.ico
+   SmallIcon=IPMS.ico
+   Version=3.0
+   Locale=enu
+   Hidden=1
+   Owner=Microsoft Corporation
+   Contact=Your Name
 
-        [Platforms]
-        Platform1=Win16
-        Platform2=NTx86
-        Platform9=Win95
+   [Platforms]
+   Platform1=Win16
+   Platform2=NTx86
+   Platform9=Win95
 
-        [Platform.Win16]
-        CPU=ix86
-        OSVersion=Win3.1
+   [Platform.Win16]
+   CPU=ix86
+   OSVersion=Win3.1
 
-        [Platform.NTx86]
-        CPU=ix86
-        OSVersion=WinNT3.5
+   [Platform.NTx86]
+   CPU=ix86
+   OSVersion=WinNT3.5
 
-        [Platform.Win95]
-        CPU=ix86
-        OSVersion=Win95
+   [Platform.Win95]
+   CPU=ix86
+   OSVersion=Win95
 
-        [Properties]
-        Property01=ReceivedRepresentingEmailAddress
-        Property02=DisplayTo
-        Property03=OriginalScl
+   [Properties]
+   Property01=ReceivedRepresentingEmailAddress
+   Property02=DisplayTo
+   Property03=OriginalScl
 
-        [Property.ReceivedRepresentingEmailAddress]
-        Type=31
-        NmidInteger=0x0078
-        DisplayName=ReceivedRepresentingEmailAddress
+   [Property.ReceivedRepresentingEmailAddress]
+   Type=31
+   NmidInteger=0x0078
+   DisplayName=ReceivedRepresentingEmailAddress
 
-        [Property.DisplayTo]
-        Type=31
-        NmidInteger=0x0E04
-        DisplayName=DisplayTo
+   [Property.DisplayTo]
+   Type=31
+   NmidInteger=0x0E04
+   DisplayName=DisplayTo
 
-        [Property.OriginalScl]
-        Type=3
-        NmidPropset={41F28F13-83F4-4114-A584-EEDB5A6B0BFF}
-        NmidString=OriginalScl
-        DisplayName=OriginalScl
+   [Property.OriginalScl]
+   Type=3
+   NmidPropset={41F28F13-83F4-4114-A584-EEDB5A6B0BFF}
+   NmidString=OriginalScl
+   DisplayName=OriginalScl
 
-        [Verbs]
-        Verb1=1
+   [Verbs]
+   Verb1=1
 
-        [Verb.1]
-        DisplayName=&Open
-        Code=0
-        Flags=0
-        Attribs=2
+   [Verb.1]
+   DisplayName=&Open
+   Code=0
+   Flags=0
+   Attribs=2
 
-        [Extensions]
-        Extensions1=1
+   [Extensions]
+   Extensions1=1
 
-        [Extension.1]
-        Type=31
-        NmidPropset={00020D0C-0000-0000-C000-000000000046}
-        NmidInteger=1
-        Value=1000000000000000
-    ```
+   [Extension.1]
+   Type=31
+   NmidPropset={00020D0C-0000-0000-C000-000000000046}
+   NmidInteger=1
+   Value=1000000000000000
+   ```
 
 2. Save the file in your Office Forms folder using the following values:
 
-      - **Path**: *\<Office Install Path\>*\\\<*OfficeVersion\>*\\Forms\\*\<LCID\>*
+   - **Path**: *\<Office Install Path\>*\\\<*OfficeVersion\>*\\Forms\\*\<LCID\>*
 
-          - *\<Office Install Path\>*: For 32-bit versions of Office on 32-bit versions of Microsoft Windows, or 64-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files\Microsoft Office`. For 32-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files (x86)\Microsoft Office`.
+     - *\<Office Install Path\>*: For 32-bit versions of Office on 32-bit versions of Microsoft Windows, or 64-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files\Microsoft Office`. For 32-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files (x86)\Microsoft Office`.
 
-          - *\<OfficeVersion\>*: For Outlook 2007, the value is `Office12`. For Outlook 2010, the value is `Office14`. For Outlook 2013, the value is `Office15`.
+     - *\<OfficeVersion\>*: For Outlook 2007, the value is `Office12`. For Outlook 2010, the value is `Office14`. For Outlook 2013, the value is `Office15`.
 
-          - *\<LCID\>*: This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [KB221435: List of supported locale identifiers in Word](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435).
+     - *\<LCID\>*: This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [KB221435: List of supported locale identifiers in Word](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435).
 
-      - **Name**: For the rest of this procedure, assume the file is named `QTNE.cfg`. The name of the file isn't important, but be sure to enclose the value in quotation marks so the file is saved as QTNE.cfg and not QTNE.cfg.txt.
+   - **Name**: For the rest of this procedure, assume the file is named `QTNE.cfg`. The name of the file isn't important, but be sure to enclose the value in quotation marks so the file is saved as QTNE.cfg and not QTNE.cfg.txt.
 
-    For example, for a 32-bit US English version of Outlook 2013 installed on a 64-bit version of Windows, save the file as:
+   For example, for a 32-bit US English version of Outlook 2013 installed on a 64-bit version of Windows, save the file as:
 
-    ```powershell
-        "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
-    ```
+   ```powershell
+   "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
+   ```
 
-    > [!NOTE]
-    > If Windows User Access Control (UAC) prevents you from saving the file in the correct location, save it first to a temporary location, and then copy it.
+> [!NOTE]
+> If Windows User Access Control (UAC) prevents you from saving the file in the correct location, save it first to a temporary location, and then copy it.
 
 ## Step 2: Configure Outlook to use the custom Outlook form
 

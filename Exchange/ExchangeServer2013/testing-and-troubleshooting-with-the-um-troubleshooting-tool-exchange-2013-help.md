@@ -1,5 +1,5 @@
 ---
-title: 'Test and troubleshoot with the UM Troubleshooting Tool'
+title: 'Test and troubleshoot with the UM Troubleshooting Tool: Exchange 2013 Help'
 TOCTitle: Testing and troubleshooting with the UM Troubleshooting Tool
 ms:assetid: 1fab2e52-bd2d-4e46-b222-53fee9d34cba
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg621148(v=EXCHG.150)
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Testing and troubleshooting with the UM Troubleshooting Tool
+# Testing and troubleshooting with the UM Troubleshooting Tool in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Shell cmdlet named **Test-ExchangeUMCallFlow**. You can use the cmdlet to diagnose configuration errors specific to call answering scenarios and to test whether voice mail is functioning correctly in both on-premises and cross-premises Microsoft Exchange Server 2010 Service Pack 1 (SP1) or later UM deployments. You can use this cmdlet in deployments with Microsoft Office Microsoft Lync Server 2010 or later or in UM deployments with Vo IP gateways, IP PBXs or session border controllers (SBCs).
 

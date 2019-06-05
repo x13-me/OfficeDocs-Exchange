@@ -112,4 +112,3 @@ Here's an example where messages with sensitive information require approval. In
 ## See also
 
 [Manage message approval](manage-message-approval.md)
-

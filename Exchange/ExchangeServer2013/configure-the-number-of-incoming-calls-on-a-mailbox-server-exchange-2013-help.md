@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Configure the number of incoming calls on a Mailbox server
+# Configure the number of incoming calls on a Mailbox server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the number of incoming concurrent connections that a Mailbox server that's running the Microsoft Exchange Unified Messaging service will accept. This includes all incoming calls including Outlook Voice Access, call answering, auto attendants, and fax calls. When you increase the number of concurrent connections on a Mailbox server, more system resources are required than if you decrease the number of concurrent calls. Decreasing the number of concurrent calls is especially important on slower computers on which Unified Messaging services are installed. The range for the number of concurrent voice calls is 0 to 200. The default setting is 100.
 

@@ -22,6 +22,3 @@ manager: dansimp
 [Manage a UM mailbox policy](manage-um-mailbox-policy.md)
 
 [Delete a UM mailbox policy](delete-um-mailbox-policy.md)
-
-
-

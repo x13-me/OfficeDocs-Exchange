@@ -58,6 +58,3 @@ This example enables an informational announcement that uses the `MyInfoAnnounce
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -InfoAnnouncementEnabled $true -InfoAnnouncementFilename MyInfoAnnouncement.wav
 ```
-
-
-

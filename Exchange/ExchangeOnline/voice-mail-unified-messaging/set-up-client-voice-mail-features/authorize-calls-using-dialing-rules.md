@@ -40,6 +40,3 @@ Where you authorize dialing rule groups depends on the types of callers that you
 |Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant|UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).|
 
 Depending on which users you're authorizing to make outbound calls, you'll use the **Dialing authorization** page in the Exchange admin center (EAC) for the dial plan, the auto attendant, or the UM mailbox policy.
-
-
-

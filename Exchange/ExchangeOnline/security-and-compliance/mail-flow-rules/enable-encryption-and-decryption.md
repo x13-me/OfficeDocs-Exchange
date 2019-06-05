@@ -24,4 +24,3 @@ Office 365 Message Encryption lets email users send encrypted messages to people
 ## See also
 
 [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=392525)
-

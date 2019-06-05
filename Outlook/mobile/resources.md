@@ -52,7 +52,7 @@ During the post-launch phase, focus is placed on providing time saving tips to s
 ### Content and templates
 
 - [Outlook mobile tips email template](media/outlook-mobile-tips-email.zip) – Customizable email to send to employees post-launch with tips to stay more productive on the go.
-- [Outlook for iOS and Android: time saving tips reference sheet](https://aka.ms/OutlookmobileTips) - PDF that provides time saving tips of Outlook mobile features and functionality.
+- [Outlook for iOS and Android: time saving tips reference sheet](media/outlook-mobile-time-saving-tips.pdf) - PDF that provides time saving tips of Outlook mobile features and functionality.
 
 ### Training
 

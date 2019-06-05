@@ -47,6 +47,3 @@ To achieve this, you need to first create a group and add all users for whom you
 After you implement this restriction, your Client Access servers will first verify whether the recipient for whom they received a MailTips query is part of this group. If the recipient is a member of this group, the Client Access servers will proxy back all MailTips including the recipient-specific MailTips. Otherwise they won't include the recipient-specific MailTips in their response.
 
 For detailed steps about how to configure MailTips access levels, see [Manage MailTips for organization relationships](manage-mailtips-for-organization-relationships.md).
-
-
-

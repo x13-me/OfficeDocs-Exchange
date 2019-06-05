@@ -67,6 +67,3 @@ This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to WMA.
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec Wma
 ```
-
-
-

@@ -28,4 +28,3 @@ manager: dansimp
 [Change the settings of an address book policy in Exchange Online](change-the-settings-of-an-address-book-policy.md)
 
 [Remove an address book policy in Exchange Online](remove-an-address-book-policy.md)
-

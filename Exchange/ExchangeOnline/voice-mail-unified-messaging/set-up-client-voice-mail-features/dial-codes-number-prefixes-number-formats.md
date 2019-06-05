@@ -82,6 +82,3 @@ An international access code can be configured on a UM dial plan. The internatio
 <a name="incountryregionandintlfmts"> </a>
 
 You can configure the incoming call configuration for country/region and international number formats on a UM dial plan. After you configure these settings, Unified Messaging will be able to recognize incoming calls from inside a country/region and internationally between UM dial plans within the same organization. You can also add number formats for incoming calls that are placed within a single dial plan. Configuring these options enables your organization to save money by preventing outgoing calls that shouldn't be made by users from inside your organization, and helps to prevent toll fraud. UM will use the information that you configure to examine the number format of the incoming call and verify that the number pattern matches before it accepts the call. For example, you may have multiple dial plans inside an organization. If you have one dial plan for the United States and another for the United Kingdom, you may want to let users in the United States dial plan have UM place calls to users who are located in the United Kingdom dial plan, but not let the users in the United States dial plan place calls directly to other countries/regions or internationally.
-
-
-

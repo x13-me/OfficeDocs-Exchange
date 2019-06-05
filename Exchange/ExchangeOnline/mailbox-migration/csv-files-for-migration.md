@@ -108,6 +108,3 @@ user4@cloud.contoso.com,PrimaryAndArchive
 ```
 
 Because the value for mailbox type in the CSV file overrides the values for the _MailboxType_ parameter in the command to create the batch, only the archive mailbox for user1 and user2 is migrated to Office 365. But the primary and archive mailboxes for user3 and user4 are moved to Office 365.
-
-
-

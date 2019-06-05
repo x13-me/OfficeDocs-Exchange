@@ -97,4 +97,3 @@ To verify that you've successfully created an Outlook on the web mailbox policy,
 ## Next steps
 
 To modify an existing Outlook on the web mailbox policy, see [View or configure Outlook on the web mailbox policy properties in Exchange Online](configure-outlook-web-app-mailbox-policy-properties.md).
-

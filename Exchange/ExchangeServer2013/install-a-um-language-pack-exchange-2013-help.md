@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Install a UM language pack
+# Install a UM language pack in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 To make a language available in the list of available Unified Messaging languages on a UM dial plan or UM auto attendant, you must first install the appropriate UM language pack. You install the language pack on a Mailbox server running the Microsoft Exchange Unified Messaging service by using the language-specific self-extracting executable file or the **setup.exe /AddUmLanguagePack** command. Before you can install a UM language pack, you must first download it to a local folder on the Mailbox server. You can download UM language packs from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). There's a separate executable file for each language.
 
@@ -61,7 +61,7 @@ setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchan
 This example installs the Mexican Spanish (es-MX) and German (de-DE) UM language packs that have been downloaded to the D:\\Exchange\\UMLanguagePacks folder on a Mailbox server.
 
 ```powershell
-    setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 ```
 
 > [!WARNING]

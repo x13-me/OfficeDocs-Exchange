@@ -71,4 +71,3 @@ The text file can contain regular expressions for patterns. These expressions ar
 For an example that shows a text file with regular expressions and the Exchange module Windows PowerShell commands to use, see [Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online](use-rules-to-route-email.md).
 
 To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://go.microsoft.com/fwlink/p/?LinkId=532394).
-

@@ -45,6 +45,3 @@ This example sets the default language on the UM auto attendant `MyUMAutoAttenda
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language de-DE
 ```
-
-
-

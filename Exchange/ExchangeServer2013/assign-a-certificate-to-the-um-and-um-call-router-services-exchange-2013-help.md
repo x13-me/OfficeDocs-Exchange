@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Assign a certificate to the UM and UM Call Router services
+# Assign a certificate to the UM and UM Call Router services in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the EAC or the Shell to assign a self-signed, internal public key infrastructure (PKI), or third-party commercial certificate for specific Exchange services. When you use the **New-ExchangeCertificate** cmdlet to assign the certificate to Exchange services with the *Services* parameter, you're prompted to assign the certificate to Exchange services. If you use the EAC to create a certificate, the New Exchange Certificate wizard won't prompt you to assign the certificate to Exchange services. You need to edit the properties of the certificate and assign the certificate by selecting which services you want to assign it to.
 

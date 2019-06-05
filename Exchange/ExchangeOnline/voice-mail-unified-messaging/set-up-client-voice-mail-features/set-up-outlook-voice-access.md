@@ -126,6 +126,3 @@ By default, when users dial in to Outlook Voice Access, they can use the telepho
 - Automatic Speech Recognition
 
 You can prevent users from receiving voice mail, but let them retain the ability to access their mailbox using Outlook Voice Access. You can enable a user for UM and configure the user's mailbox with an extension number that isn't currently being used by another user in the organization.
-
-
-

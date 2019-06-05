@@ -75,4 +75,3 @@ To add a new mail contact, [use a screen reader to open the EAC](https://technet
    - **\*External email address**. Type the contact's email address that is outside of your organization. Email sent to the contact is forwarded to this email address.
 
 7. When you're finished, tab to the **Save** button. The **new mail contact** window closes, and the contact is added to the table in the **contacts** window.
-

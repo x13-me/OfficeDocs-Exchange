@@ -43,6 +43,3 @@ Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
 ```
 
 For detailed syntax and parameter information, see [set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
-
-
-

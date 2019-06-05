@@ -40,6 +40,3 @@ For more information about setting up voice mail for users, see:
 - [UM mailbox policies](../../voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies.md)
 
 - [Voice mail for users](../../voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users.md)
-
-
-

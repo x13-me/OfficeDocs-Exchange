@@ -126,6 +126,3 @@ Select the appropriate link below for step-by-step instructions on running a bat
 - [Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups](https://technet.microsoft.com/library/mt843873(v=exchg.150).aspx)
 
 - [Use batch migration to migrate Exchange 2016 public folders to Office 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups)
-
-
-
