@@ -169,7 +169,7 @@ The graphic below describes the actual end state:
 > * **Office 365 identity services** will manage online requests
 > * **Active directory** will manage the internal authentication
 > 
->  If you don't have any mailbox on-premises, you can safely decommission your exchange server(s).
+>  If you don't have any on-premises mailbox(es), you can safely decommission your exchange server(s).
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
