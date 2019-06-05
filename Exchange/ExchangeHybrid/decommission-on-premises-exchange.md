@@ -129,7 +129,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command:
 
-      ```Powershell
+      ```PowerShell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
