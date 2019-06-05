@@ -218,7 +218,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```Powershell
+      ```PowerShell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
