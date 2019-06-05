@@ -90,7 +90,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
-   ```Powershell
+   ```PowerShell
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
 
