@@ -38,6 +38,3 @@ manager: dansimp
 [Set the number of sign-in failures before a voice mail PIN is reset](set-number-of-sign-in-failures-before-pin-reset.md)
 
 [Set the number of sign-in failures before a voice mail user Is locked out](set-number-of-sign-in-failures-before-lock-out.md)
-
-
-

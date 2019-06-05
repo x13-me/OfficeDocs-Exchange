@@ -256,6 +256,3 @@ VoIP gateway
 welcome greeting
 
 > A greeting that is played when an external caller calls in to a UM auto attendant or when an Outlook Voice Access user or another caller calls a subscriber access number that is configured on a UM dial plan. The default welcome greetings can be changed by a customer to make them specific to an organization or location.
-
-
-

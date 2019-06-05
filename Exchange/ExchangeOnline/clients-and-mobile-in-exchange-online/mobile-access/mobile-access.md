@@ -64,6 +64,3 @@ POP3 was designed to support offline mail processing. With POP3, email messages 
 ## IMAP4
 
 IMAP4 offers offline and online access but, like POP3, IMAP4 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
-
-
-

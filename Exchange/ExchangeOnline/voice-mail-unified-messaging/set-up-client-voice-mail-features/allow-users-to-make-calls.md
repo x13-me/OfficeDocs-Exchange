@@ -24,7 +24,7 @@ Outdialing is the process by which users call in to a UM dial plan using an Outl
 
 Outdialing happens when:
 
--  A call is placed to an external telephone number.
+- A call is placed to an external telephone number.
 
 - A call is transferred to an auto attendant.
 
@@ -190,13 +190,10 @@ The outdialing process happens when:
 
 - Unified Messaging places a call to an external telephone number for a caller.
 
--  Unified Messaging transfers a call to an auto attendant.
+- Unified Messaging transfers a call to an auto attendant.
 
--  Unified Messaging transfers a call to a user in your organization.
+- Unified Messaging transfers a call to a user in your organization.
 
 - A UM-enabled user uses the Play on Phone feature.
 
 In each outdialing scenario, UM will apply the dialing rules that have been configured, and then place the call for the user. However, depending on the scenario and how the call is initiated by the user, UM may apply only some of the dialing rules to the telephone number being dialed. In other outdialing scenarios, UM may apply all the outdialing rules configured to the telephone number being dialed.
-
-
-

@@ -70,6 +70,3 @@ This example configures a UM IP gateway named `MyUMIPGateway` that has an FQDN o
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address MyOCSUMIPGateway.contoso.com -Port 5061
 ```
-
-
-

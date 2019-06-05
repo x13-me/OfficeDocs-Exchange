@@ -63,6 +63,3 @@ This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2, Interna
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```
-
-
-

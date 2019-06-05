@@ -48,6 +48,3 @@ This example sets the maximum delivery delay to 600 seconds (10 minutes) on a UM
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - VoiceMailPreviewPartnerMaxDeliveryDelay 600
 ```
-
-
-

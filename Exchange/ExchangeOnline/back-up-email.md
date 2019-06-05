@@ -75,4 +75,3 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 ## Offboard a user from Office 365
 
 For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
-

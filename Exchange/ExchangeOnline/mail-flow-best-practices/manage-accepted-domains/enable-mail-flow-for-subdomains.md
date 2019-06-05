@@ -83,4 +83,3 @@ To verify that you've successfully added match subdomains to a domain using Exch
 ```
 Get-AcceptedDomain | Format-List Name,MatchSubdomains
 ```
-

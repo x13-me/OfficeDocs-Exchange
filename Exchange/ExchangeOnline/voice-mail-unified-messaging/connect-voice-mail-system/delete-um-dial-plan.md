@@ -49,6 +49,3 @@ This example deletes a UM dial plan named `MyUMDialPlan`.
 ```
 RemoveUMDialplan -identity MyUMDialPlan
 ```
-
-
-

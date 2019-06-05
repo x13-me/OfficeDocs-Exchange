@@ -47,6 +47,3 @@ This example deletes a UM mailbox policy named `MyUMMailboxPolicy`.
 ```
 Remove-UMMailboxPolicy -Identity MyUMMailboxPolicy
 ```
-
-
-

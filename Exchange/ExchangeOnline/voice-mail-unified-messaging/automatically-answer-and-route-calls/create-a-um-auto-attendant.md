@@ -79,6 +79,3 @@ This example creates a speech-enabled UM auto attendant named `MyUMAutoAttendant
 ```
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true
 ```
-
-
-

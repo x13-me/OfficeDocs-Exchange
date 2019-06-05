@@ -57,6 +57,3 @@ This example sets the scope of the users that callers can contact to all users i
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -ContactScope GlobalAddressList
 ```
-
-
-

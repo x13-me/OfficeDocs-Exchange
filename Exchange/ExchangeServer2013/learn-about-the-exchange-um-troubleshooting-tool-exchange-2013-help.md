@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Learn about the Exchange UM Troubleshooting Tool
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 The Microsoft Exchange 2010 Unified Messaging Troubleshooting Tool is an Exchange Management Shell cmdlet named **Test-ExchangeUMCallFlow**. You can use this tool to conduct a series of diagnostic tests for Unified Messaging (UM) in your organization. If any of the tests fail, the tool reports the reason for the failure and possible solutions to fix the problem. You can only use the UM Troubleshooting Tool on Exchange 2010 or later servers.
 
@@ -194,7 +194,7 @@ Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 
 The UM Troubleshooting Tool can be used in on-premises or cross-premises deployments that include Office Communications Server 2007 R2 or Microsoft Lync Server when SIPClient mode is set. The following example uses SIPClient mode and tests the call flow with a secured UM dial plan in an environment that contains Office Communications Server 2007 R2 or Lync Server servers. By default, when you run the UM Troubleshooting Tool, it uses the credentials of the user who is currently logged on to the computer. When you run the following example, you'll be prompted for the credentials you want to use when you run the UM Troubleshooting Tool. For details, see [Set the credentials to use with the Exchange UM Troubleshooting Tool](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
 
 ```powershell
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
 ```
 
 ## Installing the UM Troubleshooting Tool

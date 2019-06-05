@@ -131,5 +131,3 @@ If you're comfortable with what's involved in migrating mailboxes to Office 365,
 [Tips for optimizing IMAP migrations](optimizing-imap-migrations.md)
 
 [Learn more about setting up your IMAP server connection](setting-up-your-imap-server-connection.md)
-
-

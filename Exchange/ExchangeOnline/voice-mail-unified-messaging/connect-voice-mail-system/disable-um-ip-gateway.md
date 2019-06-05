@@ -55,6 +55,3 @@ This example disables a UM IP gateway named `yUMIPGateway` and disconnects all c
 ```
 Disable-UMIPGateway -Identity MyUMIPGateway -Immediate $true
 ```
-
-
-

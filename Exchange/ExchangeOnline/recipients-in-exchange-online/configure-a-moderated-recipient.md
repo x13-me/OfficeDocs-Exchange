@@ -119,6 +119,3 @@ To verify that you have successfully configured a recipient for moderation, do t
 2. Verify the designated moderators receive notification.
 
 3. Verify the recipients who bypass moderation receive the message directly.
-
-
-

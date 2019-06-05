@@ -46,6 +46,3 @@ The bottom section of the **Play on Phone** dialog box displays the subject of t
 ## Phone number validation
 
 Play on Phone performs only simple validation on input into the **Play on Phone** dialog box. Play on Phone does not validate telephone numbers. If a telephone number is not valid, Unified Messaging returns a meaningful error code to the user.
-
-
-

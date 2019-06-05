@@ -114,6 +114,3 @@ After you receive the certificate from the CA, complete the following steps.
 9. On the **Assign Services** page, choose **Assign**.
 
     If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes** \> **Finish**.
-
-
-

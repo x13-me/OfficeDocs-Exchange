@@ -171,6 +171,3 @@ Set-GuestAllowBlockDomainPolicy.ps1 -Remove
 <a name="bkmk_script"> </a>
 
 Go to [Script for Allow/Block policy](https://go.microsoft.com/fwlink/p/?linkid=857710) at Microsoft Download Center to download the script ( **Set-GuestAllowBlockDomainPolicy.ps1**) for Allow/Block policy.
-
-
-
