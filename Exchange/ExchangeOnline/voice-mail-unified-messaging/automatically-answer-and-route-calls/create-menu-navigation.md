@@ -107,6 +107,3 @@ $aa1 = Get-UMAutoAttendant -Identity MyAutoAttendant2
 $aa.BusinessHoursKeyMapping | Export-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv"
 $aa1.BusinessHoursKeyMapping = (Import-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv")
 ```
-
-
-

@@ -59,6 +59,3 @@ This example prevents users who are associated with the UM mailbox policy `MyUMM
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowSubscriberAccess $false
 ```
-
-
-

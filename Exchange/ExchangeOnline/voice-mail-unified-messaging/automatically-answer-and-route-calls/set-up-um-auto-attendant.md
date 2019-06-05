@@ -76,6 +76,3 @@ To plan and create a new UM auto attendant structure, you need to do the followi
   - [Manage a UM auto attendant](manage-um-auto-attendant.md)
 
 13. If you've created the auto attendant structure and settings, enable the UM auto attendant so it can start accepting calls.
-
-
-

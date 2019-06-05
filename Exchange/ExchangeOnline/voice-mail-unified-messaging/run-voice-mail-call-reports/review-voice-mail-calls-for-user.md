@@ -72,6 +72,3 @@ The user call log includes the following information for each call:
 - **UM IP GATEWAY**: The UM IP gateway that took the call.
 
 - **AUDIO QUALITY**: The overall audio quality of the call. For more details about audio quality, select the row and click **Audio Quality Details**.
-
-
-

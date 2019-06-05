@@ -78,5 +78,3 @@ For a full list of setup instructions, check out [Set up Office 365 for business
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
-
-

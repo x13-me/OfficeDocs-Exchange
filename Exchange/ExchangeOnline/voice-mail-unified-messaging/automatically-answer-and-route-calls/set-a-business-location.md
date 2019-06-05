@@ -53,6 +53,3 @@ This example sets the business location on a UM auto attendant named `MyUMAutoAt
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessLocation 'Redmond'
 ```
-
-
-

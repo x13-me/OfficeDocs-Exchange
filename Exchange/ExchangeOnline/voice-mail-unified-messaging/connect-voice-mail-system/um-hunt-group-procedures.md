@@ -22,6 +22,3 @@ manager: dansimp
 [View a UM hunt group](view-um-hunt-group.md)
 
 [Delete a UM hunt group](delete-um-hunt-group.md)
-
-
-

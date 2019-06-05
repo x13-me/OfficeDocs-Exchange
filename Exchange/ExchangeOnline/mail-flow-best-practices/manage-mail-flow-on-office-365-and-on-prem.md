@@ -73,5 +73,3 @@ There are additional considerations in hybrid deployments between on-premise Exc
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
-
-

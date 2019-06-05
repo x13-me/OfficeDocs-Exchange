@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Configure UM to work with Lync Server
+# Configure UM to work with Lync Server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you're integrating Microsoft Lync Server with Exchange Unified Messaging (UM), you have to run the ExchUcUtil.ps1 script in the Shell. The ExchUcUtil.ps1 script does the following:
 

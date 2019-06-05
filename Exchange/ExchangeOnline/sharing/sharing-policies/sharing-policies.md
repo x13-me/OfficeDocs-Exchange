@@ -40,6 +40,3 @@ These topics will help you learn how to manage sharing policies for your Office 
 [Apply a sharing policy to mailboxes in Exchange Online](apply-a-sharing-policy.md)
 
 [Modify, disable, or remove a sharing policy in Exchange Online](modify-a-sharing-policy.md)
-
-
-

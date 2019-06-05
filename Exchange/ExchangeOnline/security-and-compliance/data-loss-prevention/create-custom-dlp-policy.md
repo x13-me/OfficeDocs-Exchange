@@ -93,4 +93,3 @@ DLP policy templates are one type of feature Microsoft Exchange that can help yo
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md) Exchange Online
 
 [Integrating sensitive information rules with mail flow rules](integrate-sensitive-information-rules.md)
-

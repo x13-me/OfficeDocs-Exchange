@@ -1,5 +1,5 @@
 ---
-title: 'Audio codecs: Exchange 2013 Help'
+title: 'Unified Messaging audio codecs: Exchange 2013 Help'
 TOCTitle: Audio codecs
 ms:assetid: 6c39d65c-c2d3-4128-aae9-8596602819c3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998670(v=EXCHG.150)
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Audio codecs
+# Unified Messaging audio codecs in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 In Unified Messaging (UM), an audio codec is used to store voice mail messages. Another codec is used between a VoIP gateway or IP Private Branch eXchange (PBX) and the Mailbox server running the Microsoft Exchange Unified Messaging service or the Client Access server running the Microsoft Exchange Unified Messaging Call Router service. Unified Messaging can use any of the following four audio codecs to create and store voice messages:
 

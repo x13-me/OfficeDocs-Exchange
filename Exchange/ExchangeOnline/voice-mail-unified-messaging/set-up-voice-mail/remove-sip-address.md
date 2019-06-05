@@ -70,6 +70,3 @@ $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.Remove($mbx.EmailAddresses.Item(1))
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
 ```
-
-
-

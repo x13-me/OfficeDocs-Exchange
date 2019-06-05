@@ -298,6 +298,3 @@ This example displays the properties of a UM auto attendant named MyUMAutoAttend
 ```
 Get-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
-
-
-

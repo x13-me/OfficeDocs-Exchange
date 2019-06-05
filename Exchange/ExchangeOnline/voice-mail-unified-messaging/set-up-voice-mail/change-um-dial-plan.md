@@ -57,6 +57,3 @@ For detailed instructions, see [Disable voice mail for a user](disable-voice-mai
 > If you're moving users to an environment with Office Communications Server 2007 R2 or Lync Server, you must also include a SIP Resource Identifier for the user when you enable them for UM. You must also select the UM mailbox policy that's associated with a SIP dial plan.
 
 For detailed instructions, see [Enable a user for voice mail](enable-a-user-for-voice-mail.md).
-
-
-

@@ -26,4 +26,3 @@ manager: dansimp
 [Provision recipients for offline address book downloads](provision-recipients.md)
 
 [Remove an offline address book](remove-offline-address-book.md)
-

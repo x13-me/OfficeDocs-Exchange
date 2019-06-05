@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Allow or prevent call answering on a Mailbox server
+# Allow or prevent call answering on a Mailbox server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can allow the Microsoft Exchange Unified Messaging service on a Mailbox server to answer new calls or prevent it from doing so. By default, a Mailbox server is in an enabled state after it's installed. When you're setting the Mailbox server to accept incoming voice, fax, auto attendant and Outlook Voice Access calls, you use the **Set-ServerComponentState** cmdlet.
 

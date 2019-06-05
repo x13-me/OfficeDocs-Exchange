@@ -42,4 +42,3 @@ The following SBCs have been successfully tested for interoperability with Excha
 |[Ingate](https://www.ingate.com/)|SIParator|Contact the hardware vendor for up to date instructions on how to set up their device.|Dedicated SBC|
 |[NET](http://www.net.com)|VX1200 & VX1800|Contact the hardware vendor for up to date instructions on how to set up their device.|SBC option for a VoIP gateway product|
 |[Sonus](http://www.sonus.net/)|SBC 1000/2000 2.2.1 or later|Contact the hardware vendor for up to date instructions on how to set up their device.|Dedicated SBC|
-

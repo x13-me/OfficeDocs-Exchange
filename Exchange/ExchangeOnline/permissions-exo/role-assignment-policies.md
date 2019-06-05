@@ -402,4 +402,3 @@ To verify that you've successfully modified the role assignment policy assignmen
    ```
    $X | where {$_.RoleAssignmentPolicy -eq '<RoleAssignmentPolicyName>'}
    ```
-

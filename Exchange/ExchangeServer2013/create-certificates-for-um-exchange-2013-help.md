@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Create certificates for UM
+# Create certificates for UM in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the New Exchange Certificate wizard in the EAC or the Shell to create self-signed certificates or certificate requests for an internal public key infrastructure (PKI) certificate. For Unified Messaging (UM), you can use one of these certificates for both the Microsoft Exchange Unified Messaging service and the Microsoft Exchange Unified Messaging Call Router services. You can use the same certificate for both services, or a different certificate for each service. You can also purchase and import a third-party commercial certificate for UM services. If you're using a self-signed certificate for UM, you may need to include the name of your Client Access and Mailbox servers in the subject alternative name (SAN).
 
@@ -73,7 +73,7 @@ For additional management tasks related to managing certificates for Unified Mes
 This example creates a new Exchange certificate request for a Mailbox server named `MyMailboxServer` with a friendly name of `CertUM`.
 
 ```powershell
-    New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
 ```
 
 ## Use the EAC to create a self-signed certificate for UM
@@ -98,7 +98,7 @@ This example creates a new Exchange certificate request for a Mailbox server nam
 This example creates a new Exchange self-signed certificate for a Mailbox server named `MyMailboxServer` with a friendly name of `UMCert`.
 
 ```powershell
-    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
 ```
 
 > [!TIP]

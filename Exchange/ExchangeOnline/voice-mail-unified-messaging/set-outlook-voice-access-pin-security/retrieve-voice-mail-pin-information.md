@@ -57,6 +57,3 @@ This example displays the user ID, whether a PIN is expired, whether the UM mail
 ```
 Get-UMMailboxPIN -identity tony@contoso.com
 ```
-
-
-

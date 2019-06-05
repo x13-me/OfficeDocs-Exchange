@@ -113,6 +113,3 @@ To migrate Exchange mail to Office 365, see [Use express migration to migrate Ex
 [Prepare your Gmail or Google Apps account for connecting to Outlook and Office 365](prepare-gmail-or-g-suite-accounts.md)
 
 [Prepare your Outlook.com or Hotmail.com account for IMAP migration](migrating-your-outlook-com-account.md)
-
-
-

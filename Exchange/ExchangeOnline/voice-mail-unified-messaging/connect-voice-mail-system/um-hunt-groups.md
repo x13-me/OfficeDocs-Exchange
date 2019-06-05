@@ -89,6 +89,3 @@ In on-premises and hybrid deployments when you create a UM hunt group, you're en
 However, for on-premises and hybrid deployments if you're integrating UM with Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server, you must add all Client Access and Mailbox servers to all SIP URI dial plans that have been created to work with Communications Server 2007 R2 or Lync Server. This enables call routing and outdialing to work correctly.
 
 For more information about UM IP gateways, see [UM IP gateways](um-ip-gateways.md).
-
-
-

@@ -102,4 +102,3 @@ The following are additional topics related to mail flow in Exchange Online:
 [Configure the external postmaster address in Exchange Online](configure-external-postmaster-address.md)
 
 [How to set up a multifunction device or application to send email using Office 365](https://technet.microsoft.com/library/2c0012a9-7e71-40cd-a516-1b26117bf491.aspx)
-

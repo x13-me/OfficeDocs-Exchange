@@ -100,4 +100,3 @@ Exchange Online
 - [DLP Procedures](https://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx)
 
 - [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
-

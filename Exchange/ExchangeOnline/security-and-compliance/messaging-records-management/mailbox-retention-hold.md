@@ -78,6 +78,3 @@ This command retrieves all mailboxes in the Exchange organization, filters the m
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
 ```
-
-
-

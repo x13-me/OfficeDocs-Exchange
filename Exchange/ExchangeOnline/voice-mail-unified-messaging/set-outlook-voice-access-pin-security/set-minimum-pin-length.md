@@ -66,6 +66,3 @@ This example sets the minimum PIN length to 8 digits and sets the number of time
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3 -MinPINLength 8
 ```
-
-
-

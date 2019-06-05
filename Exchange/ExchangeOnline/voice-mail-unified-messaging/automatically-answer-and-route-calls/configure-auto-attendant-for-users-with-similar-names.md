@@ -74,6 +74,3 @@ This example sets the information to be included with users with similar names t
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -MatchedNameSelectionMethod Title -NameLookupEnabled $true -StarOutToDialPlanEnabled $true
 ```
-
-
-
