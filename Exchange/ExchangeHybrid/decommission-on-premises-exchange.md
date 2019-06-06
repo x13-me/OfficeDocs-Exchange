@@ -90,7 +90,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
-   ```PowerShell
+   ```
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
 
@@ -129,7 +129,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command:
 
-      ```PowerShell
+      ```
       Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -139,7 +139,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command:
 
-      ```PowerShell
+      ```
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -164,11 +164,7 @@ The graphic below describes the actual end state:
 ![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
 >[!TIP]
-> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently: 
-> * **Office 365 identity services** will manage online requests
-> * **Active directory** will manage the internal authentication
-> 
->  If you don't have any on-premises mailbox(es), you can safely decommission your exchange server(s).
+> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently: <br/>• **Office 365 identity services** will manage online requests <br/>• **Active directory** will manage the internal authentication <br/><br/> If you don't have any on-premises mailbox(es), you can safely decommission your exchange server(s).
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
@@ -184,7 +180,7 @@ The graphic below describes the actual end state:
 
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
-   ```PowerShell
+   ```
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
 
@@ -193,7 +189,7 @@ The graphic below describes the actual end state:
 
 4. To prevent the hybrid configuration objects from being recreated in the future, you should remove the hybrid configuration object from Active Directory. To do this, open the Exchange Management Shell and run the following:
 
-   ```PowerShell
+   ```
    Remove-HybridConfiguration
    ```
 
@@ -207,7 +203,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```PowerShell
+      ```
       Set-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -217,7 +213,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```PowerShell
+      ```
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -245,10 +241,10 @@ The graphic below describes the actual end state:
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
 ### Scenario three
 
- **Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
+**Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
 
- **Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint.
+**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint.
