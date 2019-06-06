@@ -136,6 +136,3 @@ The following table lists the actions performed by non-owners that can be logged
 
 > [!NOTE]
 > <sup>\*</sup> Audited by default if auditing is enabled for a mailbox.
-
-
-

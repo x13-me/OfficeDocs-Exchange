@@ -12,53 +12,39 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Allow Message Waiting Indicator
+# Allow Message Waiting Indicator in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Message Waiting Indicator (MWI) is a feature that's found in most legacy voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
-
-**Contents**
-
-Overview
-
-The Mailbox server's role in MWI
-
-MWI SIP NOTIFY messages
-
-MWI resilience
-
-MWI administration
-
-Text message (SMS) notifications for voice mail messages and missed calls
 
 ## Overview
 
 MWI notifications can include any mechanism that indicates the existence of a new or unheard voice message. The message can be in a new email message or one that's marked as unread. The MWI notification might take any of the following forms:
 
-  - A new voice message seen from Microsoft Outlook or Outlook Web App.
+- A new voice message seen from Microsoft Outlook or Outlook Web App.
 
-  - A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
+- A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
 
-  - An outbound call made from Exchange Unified Messaging (UM).
+- An outbound call made from Exchange Unified Messaging (UM).
 
-  - A lamp on a phone.
+- A lamp on a phone.
 
-  - A special dial tone.
+- A special dial tone.
 
-  - Icons or buttons on the display screen of a phone.
+- Icons or buttons on the display screen of a phone.
 
-  - A highlighted notification within a software application.
+- A highlighted notification within a software application.
 
 In Unified Messaging, a user's voice mail is stored in their mailbox. It can be accessed from a telephone using Outlook Voice Access, from a desktop or portable computer using Outlook or Outlook Web App, and from mobile phone clients. When a user receives a new voice message, the message appears in their Voice Mail search folder. If the voice message is accessed using Outlook or Outlook Web App, an email message will be included with the voice message.
 
 When previous versions of UM were deployed in an organization, MWI was supported in either a traditional VoIP gateway environment or an IP PBX environment by using a third-party solution or application, or it was included as part of Exchange UM. In Exchange 2010 or later, MWI is also supported when UM is deployed with Microsoft Lync Server. The MWI notification mechanism used by Lync Server depends on the type of VoIP-based phone that's used by the Enterprise Voice and UM-enabled user, and can be located on any of the following:
 
-  - A phone
+- A phone
 
-  - A phone display
+- A phone display
 
-  - A dial pad button
+- A dial pad button
 
 By default, MWI is turned on for all users who are enabled for UM. It's controlled through settings on a UM mailbox policy or on the UM IP gateways that have been created and linked to a UM dial plan. MWI also works with protected voice messages.
 
@@ -70,21 +56,21 @@ There are two ways callers can leave voice messages: using call answering and Ou
 
 When a caller calls a UM-enabled user and the user doesn't answer their phone, the Microsoft Exchange Unified Messaging service on a Mailbox server receives MWI state change information and uses a SIP NOTIFY message to send the request for a change of notification to a VoIP gateway, IP PBX, or SIP-enabled PBX. The change of notification includes the following information:
 
-  - Message Waiting Indicator enabled (Yes or No).
+- Message Waiting Indicator enabled (Yes or No).
 
-  - Number of new voice messages or voice messages marked unheard.
+- Number of new voice messages or voice messages marked unheard.
 
-  - Number of old voice messages or voice messages marked heard.
+- Number of old voice messages or voice messages marked heard.
 
-  - Number of new urgent voice messages or urgent voice messages marked unheard.
+- Number of new urgent voice messages or urgent voice messages marked unheard.
 
-  - Number of old urgent voice messages or urgent voice messages marked heard.
+- Number of old urgent voice messages or urgent voice messages marked heard.
 
-  - The primary extension number on the primary UM dial plan.
+- The primary extension number on the primary UM dial plan.
 
-  - The IP address or fully qualified domain name (FQDN) of the SIP peer to be used for SIP NOTIFY messages.
+- The IP address or fully qualified domain name (FQDN) of the SIP peer to be used for SIP NOTIFY messages.
 
-  - The security type of the UM dial plan (Unsecured, SIP secured, or Secured). This information will be used to determine whether the connection to the VoIP gateway or IP PBX must be SIP over TCP or SIP over TLS. Transport Layer Security (TLS) is supported for MWI SIP NOTIFY.
+- The security type of the UM dial plan (Unsecured, SIP secured, or Secured). This information will be used to determine whether the connection to the VoIP gateway or IP PBX must be SIP over TCP or SIP over TLS. Transport Layer Security (TLS) is supported for MWI SIP NOTIFY.
 
 A Mailbox server uses the diversion information on the header of the incoming call to determine the extension number or phone number of the UM-enabled user. When the extension or phone number is determined, the Mailbox server sends the request to the SIP peer. The SIP peer then changes the MWI state and turns on the notification on the user's phone.
 
@@ -133,11 +119,11 @@ In a telephony environment with Lync Server, the call flow and MWI notification 
 
 1. The call is sent from one of the following:
 
-      - A phone external to the organization (sent to a Mediation Server)
+   - A phone external to the organization (sent to a Mediation Server)
 
-      - A Lync-based client
+   - A Lync-based client
 
-      - A UC or other VoIP-based phone
+   - A UC or other VoIP-based phone
 
 2. The incoming call is received by the Lync Server front-end server pool and sent on to the phone or SIP endpoint of the UM-enabled user. The user doesn't answer and the caller is prompted to leave a voice message.
 
@@ -159,13 +145,13 @@ When you're deploying Mailbox and Client Access servers, UM dial plans, and UM I
 
 To enable fault tolerance for MWI in Unified Messaging, you must create and configure one or more of the following:
 
-  - A UM dial plan that's linked with the UM-enabled user who will receive MWI notifications.
+- A UM dial plan that's linked with the UM-enabled user who will receive MWI notifications.
 
-  - A UM mailbox policy that's linked with the UM-enabled user who will receive MWI notifications.
+- A UM mailbox policy that's linked with the UM-enabled user who will receive MWI notifications.
 
-  - A UM IP gateway that's linked with the UM dial plan that's linked with the UM-enabled user who will receive MWI notifications.
+- A UM IP gateway that's linked with the UM dial plan that's linked with the UM-enabled user who will receive MWI notifications.
 
-  - If Lync Server is used, all the Client Access and Mailbox servers must be added to the UM SIP URI dial plan that's linked with the UM-enabled user who will receive MWI notifications.
+- If Lync Server is used, all the Client Access and Mailbox servers must be added to the UM SIP URI dial plan that's linked with the UM-enabled user who will receive MWI notifications.
 
 ## MWI administration
 
@@ -173,7 +159,7 @@ MWI can be administered by configuring settings on two UM components: UM mailbox
 
 ## UM mailbox policies and MWI
 
-You can create a UM mailbox policy to apply a common set of UM policy settings to a collection of UM-enabled mailboxes. For example, you can use a UM mailbox policy to apply PIN policy settings, dialing restrictions, and MWI notifications settings. If you enable or disable MWI on a UM mailbox policy, it will be enabled or disabled for all UM-enabled users who are linked with that UM mailbox policy. The MWI setting can also apply to a subset of the users who are linked with a UM dial plan. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [UM mailbox policy procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures).
+You can create a UM mailbox policy to apply a common set of UM policy settings to a collection of UM-enabled mailboxes. For example, you can use a UM mailbox policy to apply PIN policy settings, dialing restrictions, and MWI notifications settings. If you enable or disable MWI on a UM mailbox policy, it will be enabled or disabled for all UM-enabled users who are linked with that UM mailbox policy. The MWI setting can also apply to a subset of the users who are linked with a UM dial plan. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [UM mailbox policy procedures in Exchange Server](um-mailbox-policy-procedures-exchange-2013-help.md).
 
 You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to configure the MWI setting, as shown in the following table.
 
@@ -205,17 +191,17 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 For more information about how to manage MWI settings on a UM mailbox policy, see the following topics:
 
-  - [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
+- [Manage a UM mailbox policy in Exchange Server](manage-um-mailbox-policy-exchange-2013-help.md)
 
-  - [Enable Message Waiting Indicator (MWI) for users](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
+- [Enable Message Waiting Indicator (MWI) for users in Exchange Server](enable-mwi-for-users-exchange-2013-help.md)[Enable Message Waiting Indicator (MWI) for users]
 
-  - [Disable Message Waiting Indicator (MWI) for users](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
+- [Disable Message Waiting Indicator (MWI) for users in Exchange Server](disable-mwi-for-users-exchange-2013-help.md)
 
-  - [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
 
 ## UM IP gateways and MWI
 
-If you disable MWI on a UM IP gateway, you'll disable MWI notifications for all users who connect to the VoIP gateway or IP PBX that's represented by the UM IP gateway. Disabling MWI on a single UM IP gateway that's linked to a UM dial plan can disable MWI notifications for all UM-enabled users associated with a single or multiple UM dial plans or a single or multiple UM mailbox policies. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
+If you disable MWI on a UM IP gateway, you'll disable MWI notifications for all users who connect to the VoIP gateway or IP PBX that's represented by the UM IP gateway. Disabling MWI on a single UM IP gateway that's linked to a UM dial plan can disable MWI notifications for all UM-enabled users associated with a single or multiple UM dial plans or a single or multiple UM mailbox policies. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [Manage a UM mailbox policy in Exchange Server](manage-um-mailbox-policy-exchange-2013-help.md).
 
 You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to configure the MWI setting, as shown in the following table.
 
@@ -246,13 +232,13 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 For more information about how to manage MWI settings, see the following topics:
 
-  - [Manage a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
+- [Manage a UM IP gateway in Exchange Server](manage-um-ip-gateway-exchange-2013-help.md)
 
-  - [Allow Message Waiting Indicator (MWI) on a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
+- [Allow Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Server](allow-mwi-on-um-ip-gateway-exchange-2013-help.md)
 
-  - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
+- [Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Server](prevent-mwi-on-um-ip-gateway-exchange-2013-help.md)
 
-  - [Set-UMIPGateway](https://technet.microsoft.com/en-us/library/aa996577\(v=exchg.150\))
+- [Set-UMIPGateway](https://technet.microsoft.com/en-us/library/aa996577\(v=exchg.150\))
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 
@@ -287,9 +273,9 @@ The following table shows the parameter on a UM mailbox that must be configured 
 
 For more information about how to manage text message notification settings on a user's mailbox, see the following topics:
 
-  - [Manage voice mail settings for a user](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
+- [Manage voice mail settings for a user in Exchange Server](manage-voice-mail-settings-exchange-2013-help.md)
 
-  - [Set-UMMailbox](https://technet.microsoft.com/en-us/library/bb124893\(v=exchg.150\))
+- [Set-UMMailbox](https://technet.microsoft.com/en-us/library/bb124893\(v=exchg.150\))
 
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
@@ -320,9 +306,9 @@ The following table shows the parameter on a UM mailbox policy that must be conf
 
 For more information about how to manage text message notification settings, see the following topics:
 
-  - [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
+- [Manage a UM mailbox policy in Exchange Server](manage-um-mailbox-policy-exchange-2013-help.md)
 
-  - [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
 
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks:
 

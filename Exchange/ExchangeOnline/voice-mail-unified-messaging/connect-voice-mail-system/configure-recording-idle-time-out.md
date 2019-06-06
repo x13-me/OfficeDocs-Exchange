@@ -55,6 +55,3 @@ This example sets the recording idle time-out value to 10 for a UM dial plan nam
 ```
 Set-UMDialPlan -identity MyUMDialPlan -RecordingIdleTimeout 10
 ```
-
-
-

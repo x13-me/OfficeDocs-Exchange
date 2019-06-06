@@ -37,20 +37,18 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## How do you do this?
-
-### Step 1: Create the new UM dial plan
+## Step 1: Create the new UM dial plan
 
 > [!IMPORTANT]
 > If you're migrating UM-enabled users to Microsoft Office Communications Server 2007 R2 or to Microsoft Lync Server, you must first create a SIP URI dial plan.
 
 For detailed instructions, see [Create a UM dial plan](create-um-dial-plan-exchange-2013-help.md).
 
-### Step 2: Disable the user for Unified Messaging
+## Step 2: Disable the user for Unified Messaging
 
 For detailed instructions, see [Disable voice mail for a user](disable-voice-mail-exchange-2013-help.md).
 
-### Step 3: Enable the user for Unified Messaging on the new UM dial plan
+## Step 3: Enable the user for Unified Messaging on the new UM dial plan
 
 > [!IMPORTANT]
 > If you're moving users to an environment with Office Communications Server 2007 R2 or Lync Server, you must also include a SIP Resource Identifier for the user when you enable them for UM. You must also select the UM mailbox policy that's associated with a SIP dial plan.

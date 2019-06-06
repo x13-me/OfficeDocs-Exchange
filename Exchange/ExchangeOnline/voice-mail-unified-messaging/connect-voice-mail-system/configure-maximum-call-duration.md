@@ -55,6 +55,3 @@ This example sets the maximum call duration to 10 minutes on a UM dial plan name
 ```
 Set-UMDialPlan -identity MyUMDialPlan -MaxCallDuration 10
 ```
-
-
-

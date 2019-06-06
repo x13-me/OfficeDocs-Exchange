@@ -98,6 +98,3 @@ This example disables access to email on a UM mailbox named tony@contoso.com whe
 ```
 Set-UMMailbox -Identity tony@contoso.com -TUIAccessToEmailEnabled $false
 ```
-
-
-

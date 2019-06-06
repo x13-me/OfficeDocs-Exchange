@@ -62,6 +62,3 @@ This example enables an informational announcement that uses the informational.w
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -InfoAnnouncementEnabled $true-InfoAnnouncementFilename c:\UMGreetings\informational.wav
 ```
-
-
-

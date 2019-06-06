@@ -58,6 +58,3 @@ This example enables missed call notifications for a UM mailbox policy named `My
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMissedCallNotifications $true
 ```
-
-
-

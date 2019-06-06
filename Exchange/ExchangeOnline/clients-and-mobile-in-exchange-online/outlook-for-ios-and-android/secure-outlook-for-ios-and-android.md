@@ -328,4 +328,3 @@ With the native Microsoft sync technology, administrators can control usage of O
 ```
 Set-CASMailbox jane@contoso.com -OutlookMobileEnabled $false
 ```
-

@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Set the TLS listening port on a Client Access server
+# Set the TLS listening port on a Client Access server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can configure the Transport Layer Security (TLS) port that's used to listen for SIP requests on a Client Access server running the Microsoft Exchange Unified Messaging Call Router service. By default, when you install a Client Access server, the SIP TLS listening port number is set to 5061.
 

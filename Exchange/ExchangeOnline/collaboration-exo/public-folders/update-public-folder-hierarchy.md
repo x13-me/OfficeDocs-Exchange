@@ -49,6 +49,3 @@ This example updates all public folder mailboxes and suppresses the command's ou
 ```
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
-
-
-

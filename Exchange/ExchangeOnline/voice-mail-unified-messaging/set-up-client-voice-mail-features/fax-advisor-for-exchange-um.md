@@ -44,6 +44,3 @@ The [Microsoft Unified Communications Open Interoperability Program](https://go.
 ## Deploying and configuring faxing
 
 UM forwards incoming fax calls to a dedicated fax partner solution, which then establishes the fax call with the fax sender and receives the fax on behalf of the UM-enabled user. However, to allow UM-enabled users to receive fax messages in their mailbox, you must configure the fax partner server, and then configure the UM dial plans, UM mailbox policies, and enable UM-enabled users to receive faxes. For details, see [Setting up incoming faxing](set-up-incoming-faxing.md).
-
-
-

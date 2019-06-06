@@ -48,6 +48,3 @@ This example prevents UM-enabled users associated with the UM dial plan named `M
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $false
 ```
-
-
-

@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Unified Messaging cmdlet updates
+# Unified Messaging cmdlet updates in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Many of the Unified Messaging (UM) cmdlets that existed in Exchange Server 2010 have been brought over for Exchange Server 2013, but there have been changes to some of those cmdlets. In addition, new cmdlets were added for Exchange 2013.
 

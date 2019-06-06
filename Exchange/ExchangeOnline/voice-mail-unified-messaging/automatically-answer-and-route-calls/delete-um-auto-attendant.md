@@ -49,6 +49,3 @@ This example deletes a UM auto attendant named `MyUMAutoAttendant`.
 ```
 Remove-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
-
-
-

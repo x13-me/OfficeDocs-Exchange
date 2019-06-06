@@ -147,6 +147,3 @@ terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
 paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
-
-
-

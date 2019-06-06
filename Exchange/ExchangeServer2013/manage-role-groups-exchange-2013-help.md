@@ -496,21 +496,21 @@ For detailed syntax and parameter information, see [Set-ManagementRoleAssignment
 
 To verify that you have successfully changed the scope of a role assignment on a role group, do the following:
 
-  - If you used the EAC to configure the scope on the role group, do the following:
+- If you used the EAC to configure the scope on the role group, do the following:
 
-    1. In the EAC, navigate to **Permissions**\> **Admin Roles**. All the role groups in your organization are listed here.
+  1. In the EAC, navigate to **Permissions**\> **Admin Roles**. All the role groups in your organization are listed here.
 
-    2. Select a role group to view the scope that's configured on the role group.
+  2. Select a role group to view the scope that's configured on the role group.
 
-  - If you used the Shell to configure the scope on the role group, do the following:
+- If you used the Shell to configure the scope on the role group, do the following:
 
-    1. Run the following command in the Shell.
+  1. Run the following command in the Shell.
 
-        ```powershell
-            Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
-        ```
+     ```powershell
+     Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+     ```
 
-    2. Verify that the write scope on the role assignments has been changed to the scope you specified.
+  2. Verify that the write scope on the role assignments has been changed to the scope you specified.
 
 ## Add or remove a role group delegate
 

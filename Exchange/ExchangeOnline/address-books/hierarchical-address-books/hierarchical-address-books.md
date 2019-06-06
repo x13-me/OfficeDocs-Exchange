@@ -55,4 +55,3 @@ Detailed instructions for creating HABs are included in the topic [Enable or dis
 3. Add organization members. Modify the _SeniorityIndex_ parameter of the members so they're listed in the proper hierarchical order within the child tiers.
 
 4. For accessibility purposes, you can use the _PhoneticDisplayName_ parameter, which specifies a phonetic pronunciation of the _DisplayName_ parameter, and is also used for the sort order if the _SeniorityIndex_ parameter value isn't set.
-

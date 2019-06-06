@@ -116,6 +116,3 @@ By default, Call Answering Rules is automatically enabled for UM-enabled users. 
 - [Call answering rules in the same mailbox policy](call-answering-rules-in-the-same-mailbox-policy.md)
 
 - [Call answering rules](call-answering-rules.md)
-
-
-

@@ -36,7 +36,7 @@ You can convert the following mailboxes from one type to another:
 Note that if your organization uses a hybrid Exchange environment, you need to manage your mailboxes by using the on-premises Exchange management tools. To convert a mailbox in a hybrid environment, you might need to move the mailbox back to on-premises Exchange, convert the mailbox type, and then move it back to Office 365.
 
 > [!IMPORTANT]
->  If you are converting a user mailbox to a shared mailbox, you should either remove any mobile devices from the mailbox before the conversion, or you should block mobile access to the mailbox after the conversion. This is because once the mailbox is converted to a shared mailbox, mobile functionality will not work properly. Additionally, if you are trying to prevent access to the converted mailbox, you might have to reset the password. For more information on blocking access, see [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?linkid=847873).
+> If you are converting a user mailbox to a shared mailbox, you should either remove any mobile devices from the mailbox before the conversion, or you should block mobile access to the mailbox after the conversion. This is because once the mailbox is converted to a shared mailbox, mobile functionality will not work properly. Additionally, if you are trying to prevent access to the converted mailbox, you might have to reset the password. For more information on blocking access, see [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?linkid=847873).
 
 ## Use Exchange Online PowerShell to convert a mailbox
 
@@ -76,6 +76,3 @@ For detailed syntax and parameter information, see [Get-Mailbox](https://technet
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-
-
-

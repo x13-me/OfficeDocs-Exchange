@@ -306,6 +306,3 @@ To verify that you've successfully changed properties for a dynamic distribution
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
-
-
-
