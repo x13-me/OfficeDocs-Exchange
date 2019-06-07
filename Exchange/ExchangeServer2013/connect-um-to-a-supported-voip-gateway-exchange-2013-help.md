@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Connect UM to a supported VoIP gateway
+# Connect UM to a supported VoIP gateway in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you're setting up Unified Messaging (UM), you must configure the Voice over IP (VoIP) gateways, IP PBXs, SIP-enabled PBXs, or session border controllers (SBCs) on your network to communicate with the Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and the Mailbox servers running the Microsoft Exchange Unified Messaging service in your Exchange organization. You must also configure the Client Access and Mailbox servers to communicate with the VoIP gateways, IP PBXs, SIP-enabled PBXs, or SBCs.
 

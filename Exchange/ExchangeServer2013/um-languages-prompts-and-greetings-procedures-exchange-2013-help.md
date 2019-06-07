@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# UM languages, prompts, and greetings procedures
+# UM languages, prompts, and greetings procedures in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md)
 

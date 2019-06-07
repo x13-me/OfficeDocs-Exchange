@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Set up client voice mail features
+# Set up client voice mail features in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 This topic describes the client features that give users who are enabled for Exchange Unified Messaging (UM) access to the email and voice mail messages in their mailbox. These features let you offer your users simplified access to voice mail and email and an improved overall user experience.
 

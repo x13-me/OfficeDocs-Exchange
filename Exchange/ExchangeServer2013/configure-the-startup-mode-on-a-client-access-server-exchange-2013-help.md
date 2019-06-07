@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Configure the startup mode on a Client Access server
+# Configure the startup mode on a Client Access server in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can specify the startup mode for the Microsoft Exchange Unified Messaging Call Router service on a Client Access server. By default, the Client Access server will start up in TCP mode, but if you're using Transport Layer Security (TLS) to encrypt Voice over IP (VoIP) traffic, you must configure the Client Access server to use TLS or Dual mode. We recommend that Client Access servers be configured to use Dual as the startup mode. This is because all Client Access and Mailbox servers can answer incoming calls for all UM dial plans, and those dial plans can have different security settings. If you change the startup mode, you must restart the Microsoft Exchange Unified Messaging Call Router service for the change to take effect.
 

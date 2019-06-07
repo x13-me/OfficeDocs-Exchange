@@ -44,7 +44,7 @@ If you don't want to subscribe the Edge Transport server to an Active Directory 
 1. On the Edge Transport server, create the Edge Subscription file using the following syntax.
 
     ```powershell
-        New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    New-EdgeSubscription -FileName <FileName>.xml [-Force]
     ```
 
     The following example creates an Edge Subscription file named EdgeSubscriptionInfo.xml in the folder C:\\My Documents. The *Force* parameter suppresses prompts confirming commands that will be disabled and warnings that configuration data will be overwritten on the Edge Transport server.
@@ -58,13 +58,13 @@ If you don't want to subscribe the Edge Transport server to an Active Directory 
 3. On the Mailbox server, to import the Edge Subscription file, use the following syntax.
 
     ```powershell
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
     ```
 
     This example imports the Edge Subscription file named EdgeSubscriptionInfo.xml from the folder D:\\Data, and subscribes the Edge Transport server to the Active Directory site named "Default-First-Site-Name".
 
     ```powershell
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
     ```
 
     > [!NOTE]
