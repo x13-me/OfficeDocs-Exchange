@@ -82,6 +82,3 @@ $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.remove("eum:22222;phone-context=MyDialPlan.contoso.com")
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
 ```
-
-
-

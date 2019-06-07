@@ -69,4 +69,3 @@ To verify that you have successfully configured the external postmaster address,
 2. From an external email account, send a message to your Exchange organization that will generate a non-delivery report (also known as an NDR or bounce message). For example, you can configure a mail flow rule (also known as a transport rule) to send an NDR for a message from that sender that contains specific keywords. Verify that the sender's email address in the DSN matches the external postmaster address you specified.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable Exchange ActiveSync for a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the EAC or the Shell to enable or disable Microsoft Exchange ActiveSync for a user mailbox. Exchange ActiveSync is a client protocol that lets users synchronize a mobile device with their Exchange mailbox. Exchange ActiveSync is enabled by default when a user mailbox is created. To learn more, see [Exchange ActiveSync](http://technet.microsoft.com/library/5fafaff3-eb37-4fdb-95f0-e56c45ea5884.aspx).
 

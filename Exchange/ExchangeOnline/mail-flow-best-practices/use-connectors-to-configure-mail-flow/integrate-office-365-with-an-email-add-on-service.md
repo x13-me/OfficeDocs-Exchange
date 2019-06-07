@@ -330,4 +330,3 @@ To verify that you've successfully created an inbound connector to receive messa
    ```
    Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled
    ```
-

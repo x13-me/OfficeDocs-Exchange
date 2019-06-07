@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Remove a call answering rule for a user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the Shell to remove one or more call answering rules for a user. You can also use the **Remove-UMCallAnsweringRule** cmdlet in an Exchange Management Shell script to remove one or more call answering rules for multiple users.
 

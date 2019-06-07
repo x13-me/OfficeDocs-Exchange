@@ -110,6 +110,3 @@ This example displays all the UM IP gateways including VoIP gateway simulators i
 ```
 Get-UMIPGateway -IncludeSimulator $true
 ```
-
-
-

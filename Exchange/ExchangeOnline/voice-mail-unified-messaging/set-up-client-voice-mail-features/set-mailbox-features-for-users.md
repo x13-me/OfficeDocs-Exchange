@@ -58,6 +58,3 @@ This example sets TUI-related settings on a UM mailbox policy named `MyUMMailbox
 ```
 Set-UMMailbox -identity MyUMMailboxPolicy -AllowSubscriberAccess $true -AllowTUIAccessToCalendar $false -AllowTUIAccessToDirectory $false -AllowTUIAccessToEmail -$true -AllowTUIAccessToPersonalContacts $true
 ```
-
-
-

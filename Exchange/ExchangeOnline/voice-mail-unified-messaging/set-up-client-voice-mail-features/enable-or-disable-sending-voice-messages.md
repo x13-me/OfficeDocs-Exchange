@@ -61,6 +61,3 @@ This example prevents Outlook Voice Access users associated with the UM dial pla
 ```
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $false
 ```
-
-
-

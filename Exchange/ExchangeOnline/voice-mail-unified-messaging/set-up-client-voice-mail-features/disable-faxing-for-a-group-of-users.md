@@ -55,6 +55,3 @@ This example prevents users who are linked with the UM mailbox policy `MyUMMailb
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowFax $false
 ```
-
-
-

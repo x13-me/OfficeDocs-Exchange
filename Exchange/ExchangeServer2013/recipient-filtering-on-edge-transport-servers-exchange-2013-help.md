@@ -54,8 +54,6 @@ One of the most effective ways to reduce spam is to validate recipients before a
 
 If you have an Edge Transport server installed in your perimeter network, it's a good idea to configure the AD LDS instance that runs on the Edge Transport server to synchronize with Active Directory. By default, AD LDS is installed and configured on the Edge Transport server. However, you must configure AD LDS to communicate with an Active Directory domain-joined global catalog server by subscribing the Edge Transport server to your organization. For more information, see [Use an Exchange 2010 or 2007 Edge Transport server in Exchange 2013](use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md).
 
-Return to top
-
 ## Tarpitting functionality
 
 Recipient Lookup functionality enables the sending server to determine whether an email address is valid or invalid. As mentioned earlier, when the recipient of an inbound message is a known recipient, the Exchange server sends back a `250 2.1.5 Recipient OK` SMTP response to the sending server. This functionality provides an ideal environment for a directory harvest attack.
@@ -76,12 +74,8 @@ The default value is `00:00:05` or 5 seconds. The name of the default Receive c
 
 Use caution if you decide to change the tarpitting interval. An overly long interval could disrupt ordinary mail flow, whereas an overly brief interval may not be as effective in thwarting a directory harvest attack. If you change the tarpitting interval, do so in small increments and verify the results. For example, if 5 seconds isn't effective, try changing the interval to 10 seconds.
 
-Return to top
-
 ## Multiple namespaces
 
 The Recipient Filter agent performs recipient lookups only for authoritative domains. If your organization accepts and forwards messages on behalf of another domain that's configured as an internal relay or external relay domain, the Recipient Filter agent doesn't perform a recipient lookup on recipients in those domains. However, if the recipient is specified in the Recipient Block list, the recipient will still be blocked by the Recipient Filter agent.
 
 Note that you can also configure accepted domains locally on an Edge Transport server. If the domain is configured as internal relay or external relay domain, the Recipient Filter agent on the Edge Transport server also doesn't perform a recipient lookup on recipients in those domains.
-
-Return to top

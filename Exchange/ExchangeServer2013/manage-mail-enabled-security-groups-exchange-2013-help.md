@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Manage mail-enabled security groups in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 
@@ -252,6 +252,5 @@ To verify that you've successfully changed properties for a security group, do t
 - In the Shell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
   ```powershell
-  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} |
-   fl Name,HiddenFromAddressListsEnabled
+  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Format-List Name,HiddenFromAddressListsEnabled
   ```

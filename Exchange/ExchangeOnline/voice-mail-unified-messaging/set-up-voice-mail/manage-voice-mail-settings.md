@@ -124,6 +124,3 @@ Get-UMMailbox -Identity tonysmith@contoso.com
 
 > [!IMPORTANT]
 > When you're running Exchange 2007 and Exchange 2013 and the user's mailbox is located on an Exchange 2007 Mailbox server, running the **Get-UMMailbox** cmdlet won't work correctly. To resolve the issue, run the **Get-UMMailbox** cmdlet from an Exchange 2007 server or a computer running the Exchange 2007 administrative tools.
-
-
-

@@ -466,4 +466,3 @@ To verify that you've removed a role group, do either of the following steps:
     ```
     Get-RoleGroup
     ```
-

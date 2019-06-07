@@ -53,6 +53,3 @@ This example allows users who are associated with the UM mailbox policy `MyUMMai
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - AllowVoiceMailPreview $true
 ```
-
-
-

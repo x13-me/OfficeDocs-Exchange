@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Apply a retention policy to mailboxes in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
 

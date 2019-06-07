@@ -84,4 +84,3 @@ To verify that you've successfully created an ABP, use either of these procedure
 ## For more information
 
 After you create an ABP, you need to assign the ABP to users. For instructions, see [Assign an address book policy to users in Exchange Online](assign-an-address-book-policy-to-mail-users.md).
-

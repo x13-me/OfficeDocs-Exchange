@@ -21,17 +21,15 @@ You may have a scenario where you want to send messages to and receive messages 
 > [!TIP]
 > In most cases where you must deliver outbound messages to a non-SMTP system, we recommend Delivery Agent connectors, because they allow for queue management of messages, messages do not have to be written to the file system, and other benefits. The <A href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Delivery agents and Delivery Agent connectors</A> topic provides more details.
 
-Interested in scenarios where this procedure is used? See the following topics:
-
-  - [Planning and deployment](planning-and-deployment-for-exchange-2013-installation-instructions.md)
+Interested in scenarios where this procedure is used? See [Planning and deployment](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 30 minutes
+- Estimated time to complete this task: 30 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Foreign connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Foreign connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,9 +40,9 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 1. Run the following command to create the Foreign connector:
 
-    ```powershell
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
-    ```
+   ```powershell
+   New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+   ```
 
     In this example, Hub01 and Hub02 are source servers in your organization that you designate to deliver messages to the foreign system. Using more than one source server provides fault tolerance.
 
@@ -68,9 +66,9 @@ You create a directory to use as the Drop directory on your local file system. Y
 
 1. Run the following script to specify the Drop directory for your Foreign connector (change the value for the *DropDirectory* parameter to a path appropriate for your environment):
 
-    ```powershell
-    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
-    ```
+   ```powershell
+   Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+   ```
 
 ## How do you know this step worked?
 

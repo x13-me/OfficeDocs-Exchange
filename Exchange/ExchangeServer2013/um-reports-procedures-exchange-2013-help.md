@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM reports procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Review the voice mail calls in your organization](review-voice-mail-calls-for-organization-exchange-2013-help.md)
 

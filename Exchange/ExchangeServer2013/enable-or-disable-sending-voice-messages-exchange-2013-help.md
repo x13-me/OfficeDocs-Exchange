@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable sending voice messages from Outlook Voice Access in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can enable Outlook Voice Access users to send voice mail messages to other UM-enabled users who are associated with the same dial plan, or prevent them from doing so.
 

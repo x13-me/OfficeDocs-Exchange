@@ -121,6 +121,3 @@ By default, when you create a UM dial plan, no Outlook Voice Access number is co
 You can use the **Outlook Voice Access numbers** box on the UM dial plan to add a telephone number or extension that a user will call to access the voice mail system using Outlook Voice Access. In most cases, you'll enter an extension number or an external telephone number. However, because this field accepts alphanumeric characters, a SIP URI can be used if you're using an IP PBX, a SIP-enabled PBX, Office Communications Server 2007 R2 or Microsoft Lync Server.
 
 Depending on the needs of your organization, you may want to configure one or more Outlook Voice Access number. You can have a single Outlook Voice Access number configured on a single UM dial plan or you can have multiple Outlook Voice Access numbers in a single UM dial plan, but you can't have a single Outlook Voice Access number that spans multiple UM dial plans.
-
-
-

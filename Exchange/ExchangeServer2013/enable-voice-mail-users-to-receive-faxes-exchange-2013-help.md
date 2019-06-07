@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Enable voice mail users to receive faxes
+# Enable voice mail users to receive faxes in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange Unified Messaging (UM) enables voice mail messages to be delivered to a user's mailbox and also lets users receive faxes in their mailbox. In UM, a fax is sent to the user's mailbox as an email message that has an image file with a .tif extension attached. The user can open the attached file by using a software application that can open and view image files that have a .tif extension. This topic discusses faxing and how it works in UM.
 
@@ -77,8 +77,6 @@ To receive a fax, users in an organization may have to do the following:
 
   - Receive a fax from a fax partner's server that uses Unified Messaging to deliver the fax using a VoIP network.
 
-Return to top
-
 ## Faxing methods
 
 There are several options for sending and receiving faxes, including the following:
@@ -131,15 +129,11 @@ There are two basic types of networks: circuit-switched and packet-switched. A c
 
 In packet-switched networks such as the Internet or a local area network (LAN), packets are routed to their destination through the most expedient route, but not all packets traveling between two hosts travel the same route, even those from a single message. This almost guarantees that the packets will arrive at different times and out of order. In a packet-switched network, packets (messages or fragments of messages) are individually routed between nodes over data links that may be shared by other nodes. With packet switching, unlike circuit switching, multiple connections to nodes on the network share the available bandwidth. Packet-switched networking has made it possible for the Internet to exist and, at the same time, has made data networks (especially LAN-based IP and VoIP networks) more available and widespread.
 
-Return to top
-
 ## T.38
 
 T.38 is a faxing standard and protocol that enables faxing over an IP-based network. An IP-based network that uses the T.38 protocol uses Simple Mail Transfer Protocol (SMTP) and Multipurpose Internet Mail Extension (MIME) to send a message to a recipient's mailbox. T.38 allows for IP fax transmissions for IP-enabled fax devices and fax gateways. The devices can include IP network-based hosts such as client computers and printers. In Exchange Unified Messaging, the fax images are separate documents encoded as .tif files and attached to an email message. Both the email message and the .tif file attachment are sent to the user's UM-enabled mailbox.
 
 Unified Messaging relies on the gateway's abilities to translate or convert Time Division Multiplex (TDM) or telephony circuit-switched based protocols like Integrated Services Digital Network (ISDN) and QSIG from a PBX to IP-based or VoIP-based protocols like Session Initiation Protocol (SIP), Real-Time Transport Protocol (RTP), or T.38 for receiving fax messages. The VoIP gateway is integral to the functionality and operation of Unified Messaging. The VoIP gateway is responsible for sensing fax tones. Client Access and Mailbox servers rely on the VoIP gateway to send a notification that a fax has been detected. Then the Client Access and Mailbox servers will renegotiate the media session and use the T.38 protocol.
-
-Return to top
 
 ## Overview of faxing with Unified Messaging
 
@@ -167,8 +161,6 @@ A single fax message can be sent only to a single UM-enabled user. Unified Messa
 
 3. Create a rule for this UM-enabled mailbox. The rule will be configured to forward all messages to the selected distribution list.
 
-Return to top
-
 ## Receiving incoming faxes
 
 Receiving a fax on a VoIP network differs from receiving a fax on a standard fax machine or by using a fax server that's located on an IP-based network. To enable faxes to be sent and received over a VoIP network, you must have a VoIP gateway or an IP PBX that supports the T.38 protocol and a server that also supports T.38. T.38 allows for IP-based fax transmissions for IP network-based hosts, for example, client computers, printers with built-in faxing capabilities, and servers such as a Mailbox server.
@@ -181,8 +173,6 @@ When a PBX receives a call, it forwards the call to the appropriate extension. I
 When a Mailbox server receives an incoming T.38 fax signal from a VoIP gateway, the Mailbox server queries the directory using the Lightweight Directory Access Protocol (LDAP) to determine if the intended recipient of the incoming fax call is allowed to receive incoming fax messages and to determine the SIP address of the fax partner server. After it has checked this information, the Mailbox server sends a fax call referral request to the VoIP gateway or SIP peer, which then forwards the fax request on to the fax partner server. After the fax call has been successfully established, the fax sender sends the fax media and data to the fax partner server. After the fax partner server receives the fax media and data, it uses SMTP to send an email message to a Mailbox server. This message contains a .tif image of the fax message and special X-headers to the intended fax recipient.
 
 After the fax message is authenticated and is sent from a valid fax partner server, the UM mailbox assistant on the Mailbox server issues an RPC call to the Microsoft Exchange Unified Messaging service. This ensures that the fax message properties match those of fax messages that are created by a Mailbox server. Finally, the Mailbox server again submits the final fax message, which includes the email message and .tif attachment for the incoming fax. Then, using MAPI RPC, the completed and formatted version of the fax message is delivered to the Mailbox server that contains the intended recipient's mailbox.
-
-Return to top
 
 ## Fax call referral methods
 
@@ -236,13 +226,9 @@ An incoming call to a UM pilot number is directed to UM as an INVITE with a voic
 
 6. A media session is established with the SIP peer.
 
-Return to top
-
 ## Configuring faxing
 
 By default, when you install the Mailbox server, the server isn't configured to allow incoming fax calls to be processed or delivered to a UM-enabled user. To configure UM with a fax partner server, you must configure the UM mailbox policy and configure authentication between the Mailbox server and the fax partner server. For more information, see [Setting up incoming faxing](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing).
-
-Return to top
 
 ## Telephone numbers and faxing
 
@@ -269,8 +255,6 @@ If a user whose faxing is configured using a single DID telephone number receive
   - Wait for the caller to retry sending the fax and let the fax call be transferred to a Mailbox server.
 
 In summary, using a single DID number requires the user to perform additional actions to be able to receive fax messages.
-
-Return to top
 
 ## Multiple DID telephone numbers
 
@@ -323,13 +307,9 @@ Using a single fax number for the whole organization is useful in the following 
 
   - Filtering fax messages by using Outlook isn't effective.
 
-Return to top
-
 ## Journaling UM fax messages
 
 Many organizations that implement journaling may also use Unified Messaging to consolidate their email, voice mail, and fax infrastructure. However, you may not want the journaling process to generate journal reports for messages that are generated by Unified Messaging. In this case, you can decide whether to journal voice mail messages and missed call notification messages that are handled by a Mailbox server or to skip such messages. If your organization doesn't require journaling of voice mail and missed call notifications, you can reduce the hard disk space that's required to store journal reports by skipping such messages. When you enable or disable the journaling of voice mail messages and missed call notification messages, your change is applied to all Transport services in your organization. For more information, see [Journaling](journaling-exchange-2013-help.md).
 
 > [!NOTE]
 > Messages that contain faxes that are generated by a Mailbox server are always journaled, even if you configure a journal rule that specifies not to journal Unified Messaging voice mail and missed call notification messages.
-
-Return to top

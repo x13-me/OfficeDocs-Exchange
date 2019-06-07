@@ -138,7 +138,7 @@ When you retry a delivery queue, you force an immediate connection attempt and o
 
 - The queue must be in a status of Retry for this action to have any effect.
 
--  If the connection isn't successful, the retry interval timer is reset.
+- If the connection isn't successful, the retry interval timer is reset.
 
 ### Use Queue Viewer to retry a queue
 

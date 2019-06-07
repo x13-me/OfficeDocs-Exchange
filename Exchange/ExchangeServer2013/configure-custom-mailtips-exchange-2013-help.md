@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Configure custom MailTips for recipients in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 MailTips are informative messages displayed to users in the InfoBar in Outlook Web App and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:
 

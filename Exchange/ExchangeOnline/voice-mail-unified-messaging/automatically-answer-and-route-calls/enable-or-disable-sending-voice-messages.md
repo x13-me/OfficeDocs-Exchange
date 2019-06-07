@@ -62,6 +62,3 @@ This example enables callers who call in to a UM auto attendant named `MyUMAutoA
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $true
 ```
-
-
-

@@ -109,4 +109,3 @@ To verify that you've successfully removed an ABP, use either of these procedure
   ```
   Get-AddressBookPolicy -Identity "<ABPName>"
   ```
-

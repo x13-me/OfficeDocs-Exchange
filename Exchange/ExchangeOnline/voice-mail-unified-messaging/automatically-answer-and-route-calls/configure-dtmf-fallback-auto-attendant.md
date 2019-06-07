@@ -58,6 +58,3 @@ This example configures a UM auto attendant named `MySpeechEnabledAA` to use a D
 ```
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA
 ```
-
-
-

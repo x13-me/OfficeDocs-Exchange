@@ -51,6 +51,3 @@ This example enables the UM auto attendant named `MyUMAutoAttendant` to answer i
 ```
 Enable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
-
-
-

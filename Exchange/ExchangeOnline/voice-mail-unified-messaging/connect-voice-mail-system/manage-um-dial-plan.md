@@ -376,6 +376,3 @@ This example displays a formatted list of all of the settings on a UM dial plan 
 ```
 Get-UMDialplan -Identity MyUMDialPlan | Format-List
 ```
-
-
-

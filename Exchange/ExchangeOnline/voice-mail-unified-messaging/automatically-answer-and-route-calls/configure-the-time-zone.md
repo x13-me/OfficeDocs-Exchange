@@ -53,6 +53,3 @@ This example sets the time zone to the Pacific time zone on a UM auto attendant 
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -TimeZoneName Pacific
 ```
-
-
-

@@ -62,4 +62,3 @@ For more information on the Exchange Online capabilities in your subscription pl
 
    > [!TIP]
    > It may take a few minutes to save the new mailbox and close the pop-up window. There is no additional feedback to provide during this wait time.
-

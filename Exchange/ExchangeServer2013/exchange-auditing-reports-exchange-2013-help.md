@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Exchange auditing reports in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Microsoft Exchange provides two types of audit logging:
 

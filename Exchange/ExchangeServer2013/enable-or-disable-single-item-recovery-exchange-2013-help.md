@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Enable or disable single item recovery for a mailbox in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Shell to enable or disable single item recovery on a mailbox. In Exchange Server, single item recovery is disabled when a mailbox is created. If single item recovery is enabled, messages that are permanently deleted (purged) by the user are retained in the Recoverable Items folder of the mailbox until the deleted item retention period expires. This lets an administrator recover messages purged by the user before the deleted item retention period expires. Also, if a message is changed by a user or a process, copies of the original item are also retained when single item recovery is enabled.
 
@@ -24,7 +24,7 @@ You can use the Shell to enable or disable single item recovery on a mailbox. In
 
 - You can't use the Exchange admin center (EAC) to enable or disable single item recovery.
 
--  In Exchange Server, the mailbox uses the deleted item retention settings of the mailbox database, by default. The deleted item retention period for a mailbox database is set to 14 days, but you can override the default by configuring this setting on a per-mailbox basis. For details, see [Configure deleted item retention and recoverable items quotas](http://technet.microsoft.com/library/de7d667a-1c93-4364-a4f9-2aa5e3678b12.aspx).
+- In Exchange Server, the mailbox uses the deleted item retention settings of the mailbox database, by default. The deleted item retention period for a mailbox database is set to 14 days, but you can override the default by configuring this setting on a per-mailbox basis. For details, see [Configure deleted item retention and recoverable items quotas](http://technet.microsoft.com/library/de7d667a-1c93-4364-a4f9-2aa5e3678b12.aspx).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

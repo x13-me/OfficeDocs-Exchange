@@ -75,8 +75,6 @@ The schema extensions in the following table are specific to Edge Subscriptions.
 </tbody>
 </table>
 
-Return to top
-
 ## Configuration information
 
 When you subscribe an Edge Transport server to an organization, you can manage the configuration objects common to the Edge Transport server and the Exchange organization from inside the organization. These changes are then replicated to the Edge Transport server using EdgeSync. This process helps maintain a consistent configuration across all servers involved in message processing.
@@ -97,8 +95,6 @@ A subset of the configuration data for the Exchange organization must also be ma
 
   - **Domain Secure lists**: The *TLSReceiveDomainSecureList* and the *TLSSendDomainSecureList* attributes are stored on the **TransportConfig** object for both the Exchange organization and the local Edge Transport server. During EdgeSync synchronization, the value stored on the local Edge Transport server object is overwritten with the value stored on this object for the Exchange organization. These attributes specify the list of remote domains configured for mutual TLS authentication.
 
-Return to top
-
 ## Recipient information
 
 Recipient information replicated to AD LDS includes only a subset of recipient attributes. Only data required by the Edge Transport to perform certain antispam tasks is replicated. Recipient information replicated to AD LDS includes:
@@ -114,10 +110,6 @@ Recipient information replicated to AD LDS includes only a subset of recipient 
 
   - **Per recipient anti spam settings**: You can use the **Set-Mailbox** cmdlet to assign anti spam threshold settings per recipient that differ from the organization-wide anti spam settings. If you configure per recipient anti spam settings, these settings override organization-wide settings. By replicating these settings to AD LDS, the per recipient settings can be considered before the message is relayed to the Exchange organization. This information is sent as hashed data.
 
-Return to top
-
 ## Topology information
 
 The topology information includes notification of newly subscribed Edge Transport servers or removed Edge Subscriptions. This data is refreshed every five minutes.
-
-Return to top

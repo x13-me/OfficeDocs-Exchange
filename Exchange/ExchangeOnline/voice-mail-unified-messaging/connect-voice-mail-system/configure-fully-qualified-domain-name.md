@@ -64,6 +64,3 @@ This example configures a UM IP gateway named `MySBC` with an FQDN of sbc.contos
 ```
 Set-UMIPGateway -Identity MySBC -Address sbc.contoso.com -Port 5061
 ```
-
-
-

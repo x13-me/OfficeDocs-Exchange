@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Messaging Records Management Procedures in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 [Create a Retention Policy](create-a-retention-policy-exchange-2013-help.md)
 

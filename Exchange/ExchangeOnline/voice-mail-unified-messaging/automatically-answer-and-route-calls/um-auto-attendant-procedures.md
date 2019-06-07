@@ -70,6 +70,3 @@ manager: dansimp
 [Configure the group of users that can be contacted](configure-users-that-can-be-contacted.md)
 
 [Configure an auto attendant for users who have similar names](configure-auto-attendant-for-users-with-similar-names.md)
-
-
-

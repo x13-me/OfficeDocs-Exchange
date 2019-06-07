@@ -94,4 +94,3 @@ Support and Recovery Assistant will collect log data if either of the following 
 - [Fix Outlook and Office 365 issues with Microsoft Support and Recovery Assistant for Office 365](fix-outlook-and-office-365-issues.md)
 
 - [Microsoft Support and Recovery Assistant](https://diagnostics.outlook.com/)
-

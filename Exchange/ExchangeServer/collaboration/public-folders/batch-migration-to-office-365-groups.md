@@ -335,7 +335,7 @@ Only the following access rights will be allowed for users to ensure that the pu
 
 - ReadItems
 
--  CreateSubfolders
+- CreateSubfolders
 
 - FolderContact
 

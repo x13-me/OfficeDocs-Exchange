@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Telephone system integration with UM in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 To successfully deploy Unified Messaging (UM), you must have a good understanding of basic telephony concepts and telephony components. After you understand telephony basics, you can integrate UM into an Exchange organization. Basic concepts and components include the following:
 

@@ -67,6 +67,3 @@ Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
 For detailed syntax and parameter information, see [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx).
-
-
-

@@ -1373,10 +1373,10 @@
         - name: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
           href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders
         - name: Use batch migration to migrate Exchange 2013 public folders to Exchange Online
-          href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders
+          href: https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online
           items:
           - name: Roll back a public folder migration from Exchange 2013 to Exchange Online
-            href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/roll-back-exchange-2013-public-folder-migration
+            href: https://docs.microsoft.com/exchange/collaboration/public-folders/roll-back-exchange-online-migration
         - name: Use batch migration to migrate Exchange 2010 public folders to Office 365 Groups
           href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
         - name: Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups

@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Review the voice mail calls for a user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 User call logs are used to view the following information about specific Unified Messaging (UM) users:
 

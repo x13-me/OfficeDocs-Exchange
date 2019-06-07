@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Unified Messaging
+# Unified Messaging in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Unified Messaging (UM) enables users to use voice mail and other features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls from UM, and the experience people have when they call in to your organization.
 
@@ -47,8 +47,6 @@ The following topics are gateways to information about new or enhanced features 
   - [Voice mail preview enhancements](voice-mail-preview-enhancements-exchange-2013-help.md)
 
   - [Unified Messaging cmdlet updates](unified-messaging-cmdlet-updates-exchange-2013-help.md)
-
-Return to top
 
 ## Unified Messaging features
 
@@ -108,8 +106,6 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
 
   - **Group addressing using Outlook Voice Access**: In Exchange 2007, users could use either the telephone user interface (TUI) or voice user interface (VUI) in Outlook Voice Access to send email and voice messages when they signed in to their mailbox. However, users could only send a single email message to a single user in their personal Contacts, to multiple recipients from the directory by adding each recipient individually, or by adding the name of a distribution list from the directory for your organization. In Exchange 2013, when a user signs in to their mailbox using Outlook Voice Access, they can also send email and voice messages to users in a group stored in their personal Contacts.
 
-Return to top
-
 ## Administrative features
 
 Currently, most users and IT departments manage their voice mail separately from their email. Voice mail and email exist as separate inboxes hosted on separate servers accessed through the desktop for email and through the telephone for voice mail. Unified Messaging offers an integrated store for all messages and access to content through the computer and the telephone.
@@ -160,8 +156,6 @@ Exchange 2013 Unified Messaging offers administrators:
 
       - Enable external users to call the operator.
 
-Return to top
-
 ## Planning and deploying UM
 
 Unified Messaging requires that you integrate your Exchange Server deployment with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy and manage voice mail in Unified Messaging.
@@ -192,8 +186,6 @@ There are many areas that you must consider and evaluate to be able to successfu
 
   - The storage requirements for voice mail users.
 
-Return to top
-
 ## Managing UM with the EAC and the Shell
 
 **EAC management**
@@ -217,8 +209,6 @@ Exchange 2013 provides a single unified management console for your organization
 **Shell management**
 
 The Exchange Management Shell, built on Windows PowerShell technology, is a powerful command-line interface that enables automation of administrative tasks. With the Shell, you can manage every aspect of Exchange. You can enable new email accounts, create Send and Receive connectors, configure database properties, manage all aspects of Unified Messaging, and more. The Shell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's the Shell that's doing the work behind the scenes.
-
-Return to top
 
 ## Unified Messaging documentation
 

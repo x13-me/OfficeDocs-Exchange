@@ -11,7 +11,7 @@ mtps_version: v=EXCHG.150
 
 # Best practices for configuring transport rules in Exchange 2013
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Follow these best practice recommendations for Exchange transport rules in order to avoid common configuration errors. Each recommendation links to a topic with an example and step-by-step instructions.
 

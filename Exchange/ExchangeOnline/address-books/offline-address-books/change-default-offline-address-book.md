@@ -55,4 +55,3 @@ To verify that you've successfully changed the default OAB, run the following co
 ```
 Get-OfflineAddressBook | Format-List Name,IsDefault
 ```
-

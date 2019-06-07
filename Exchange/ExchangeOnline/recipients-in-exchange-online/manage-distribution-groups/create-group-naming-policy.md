@@ -121,6 +121,3 @@ To verify that you've successfully created a group naming policy, do the followi
   ```
   Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```
-
-
-

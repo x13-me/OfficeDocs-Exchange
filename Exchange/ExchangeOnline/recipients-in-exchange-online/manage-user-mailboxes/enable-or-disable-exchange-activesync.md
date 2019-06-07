@@ -88,6 +88,3 @@ Or
   ```
 
     If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
-
-
-

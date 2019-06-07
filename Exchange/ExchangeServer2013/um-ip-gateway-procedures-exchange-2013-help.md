@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # UM IP gateway procedures in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Create a UM IP gateway](create-um-ip-gateway-exchange-2013-help.md)
 

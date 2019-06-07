@@ -50,9 +50,9 @@ After an Edge Transport server is subscribed to an Active Directory site, cmdlet
 
 You will need to manually create Send connectors if:
 
-  - You suppressed automatic creation of the Internet or inbound Send connectors.
+- You suppressed automatic creation of the Internet or inbound Send connectors.
 
-  - You have accepted domains in your organization that are configured as external relay domains.
+- You have accepted domains in your organization that are configured as external relay domains.
 
 ## Reasons to suppress automatic creation of Send connectors
 
@@ -62,17 +62,17 @@ Depending on the topology of your Exchange organization, you may decide to suppr
 
 If you decide to partition the inbound and outbound mail processing between two Edge Transport servers, one Edge Transport server is responsible for processing outbound mail flow and a second Edge Transport server is responsible for processing inbound mail flow. To do this, configure the Edge Subscriptions as follows:
 
-  - For the outbound Edge Transport server, run the following command on the Mailbox server.
+- For the outbound Edge Transport server, run the following command on the Mailbox server.
 
-    ```powershell
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
-    ```
+  ```powershell
+  New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+  ```
 
-  - For the inbound Edge Transport server, run the following command on the Mailbox server.
+- For the inbound Edge Transport server, run the following command on the Mailbox server.
 
-    ```powershell
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
-    ```
+  ```powershell
+  New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+  ```
 
 ## Route outbound email to a smart host
 
@@ -89,7 +89,7 @@ After the Edge Subscription process is complete, manually create a Send connecto
 Example: Using the Shell to configure a Send connector for a subscribed Edge Transport server to route messages for all Internet address spaces through a smart host. Run this task on a Mailbox server inside the Exchange organization, not on the Edge Transport server.
 
 ```powershell
-    New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 ```
 
 > [!IMPORTANT]
@@ -100,5 +100,3 @@ Example: Using the Shell to configure a Send connector for a subscribed Edge Tra
 If you have accepted domains in your Exchange organization that are configured as external relay domains, you need to manually create a Send connector for those address spaces. Messages being delivered to external relay domains are relayed by the Edge Transport server. The Edge Subscription process doesn't automatically create and configure Send connectors for external relay domains. Therefore, you need to configure Send connectors for those domains and specify one or more Edge Subscriptions as the source server for those Send connectors.
 
 The DNS MX resource record for an external relay domain resolves to your Edge Transport server. You can configure a Send connector that relays email to an external relay domain to use a smart host for routing. Configuring the Send connector for an external relay domain to use DNS routing will create a routing loop. For more information about external relay domains, see [Accepted domains](accepted-domains-exchange-2013-help.md).
-
-Return to Top

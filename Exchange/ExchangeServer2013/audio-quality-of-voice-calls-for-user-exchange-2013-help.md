@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
 # Investigate the audio quality of voice calls for a user in Exchange Server
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 If a user reports problems with the audio quality of their Unified Messaging (UM) calls, you can use the User Call Logs report to help you understand what's causing the problems.
 

@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Secondary dial plans
+# Secondary dial plans in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you enable a user for Unified Messaging (UM), you're required to assign one extension number and a UM mailbox policy that will link the user to a UM dial plan. After the user is enabled for UM, you can assign additional extension numbers for that user within the same dial plan but the extension numbers within that dial plan must be unique. In some deployments, a user may need to be assigned the same extension number in two separate dial plans. If this is the case, you can link the user to a secondary UM dial plan. This can be useful, for example, if the user has two physical phones or travels between locations.
 
@@ -94,8 +94,6 @@ The following table defines terms that are used when discussing primary and seco
 </tbody>
 </table>
 
-Return to top
-
 ## Use of secondary extensions
 
 In most deployments, only one extension is configured per UM-enabled user. However, there are some more advanced deployments that require you to add secondary extensions for your users.
@@ -174,8 +172,6 @@ The **AllowedInCountryOrRegionGroups** and **AllowedInternationalGroups** proper
 
 For example, if a primary dial plan named "Contoso Dial Plan 1" has a dialing rule named "US and Canada" in its **ConfiguredInCountryOrRegionGroups** property, the UM mailbox policy "Contoso UM Policy 1" might also have "US and Canada" in its **AllowedInCountryOrRegionGroups** property. If you want to add a secondary extension in "Contoso Dial Plan 2" for a user in "Contoso UM Policy 2", you would have to ensure that the **ConfiguredInCountryOrRegionGroups** property of "Contoso Dial Plan 2" also contains a rule named "US and Canada". Otherwise, if the user signs in to Outlook Voice Access from their secondary extension, UM won't be able to find a rule on the secondary dial plan named "US and Canada". If this happens, UM will only allow the user to call numbers allowed to any caller to the secondary dial plan, which could be more restrictive.
 
-Return to top
-
 ## UM features that operate differently for secondary dial plans
 
 There's a set of UM features that can use secondary dial plans but may not work correctly in certain situations. It's important that you understand how each of these features is affected when you configure UM-enabled users to use a secondary dial plan.
@@ -217,5 +213,3 @@ When a user calls in to Outlook Voice Access and chooses the option to Call the 
       - The "Call the sender" option will be played if the sender uses an extension from a different dial plan than the dial plan that's used with Outlook Voice Access to send the voice message and both dial plans have the same number of digits. The success of the call will depend on whether the VoIP gateway and PBX infrastructure permit the call transfer.
 
       - The "Call the sender" option won't be played if the sender uses an extension from a different dial plan than the dial plan that's used with Outlook Voice Access to send the voice message, the dial plans have a different number of digits, and there are no outdialing rules that match the sender's extension.
-
-Return to top
