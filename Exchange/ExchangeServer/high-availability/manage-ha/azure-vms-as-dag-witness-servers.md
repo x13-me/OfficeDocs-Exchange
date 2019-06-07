@@ -340,6 +340,3 @@ At this point, you have configured your DAG to use the file server on Azure as y
   ```
 
 4. Lastly, verify that the share is successfully created on the file server by reviewing the folder in File Explorer and the shares in Server Manager.
-
-
-
