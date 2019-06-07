@@ -58,6 +58,3 @@ This example includes the additional text, "Do not share your PIN with other use
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ResetPINText "Do not share your PIN with other users. Doing so may result in disciplinary action."
 ```
-
-
-

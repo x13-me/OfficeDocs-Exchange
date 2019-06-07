@@ -74,6 +74,3 @@ This example configures a UM dial plan named `MySecureDialPlan` to not encrypt S
 ```
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Unsecured
 ```
-
-
-

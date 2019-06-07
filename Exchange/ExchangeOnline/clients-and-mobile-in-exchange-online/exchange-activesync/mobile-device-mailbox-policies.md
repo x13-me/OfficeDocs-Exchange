@@ -95,6 +95,3 @@ The following table summarizes the settings you can specify using mobile device 
 |Require signed S/MIME messages|This setting specifies whether the mobile device must send signed S/MIME messages.|
 |Require storage card encryption|This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.|
 |Unapproved InROM application list|This setting specifies a list of applications that cannot be run in ROM.|
-
-
-

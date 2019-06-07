@@ -1,5 +1,5 @@
 ---
-title: 'Set credentials to use with Exchange UM Troubleshooting Tool'
+title: 'Set credentials to use with Exchange UM Troubleshooting Tool: Exchange 2013 Help'
 TOCTitle: Set the credentials to use with the Exchange UM Troubleshooting Tool
 ms:assetid: 542b7718-9345-40cc-bcb2-e307e70a1fa2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff630916(v=EXCHG.150)
@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Set the credentials to use with the Exchange UM Troubleshooting Tool
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Shell cmdlet named **Test-ExchangeUMCallFlow**. You can use the cmdlet to diagnose configuration errors specific to call answering scenarios and to test whether voice mail is functioning correctly in both on-premises and cross-premises Microsoft Exchange Server 2010 Service Pack 1 (SP1) or later UM deployments. You can use this cmdlet in deployments with Microsoft Office Microsoft Lync Server 2010 or later or in UM deployments with Vo IP gateways, IP PBXs or session border controllers (SBCs).
 
@@ -52,14 +52,14 @@ By default, when you're running the UM Troubleshooting Tool, it uses the credent
 
 2. In the **Microsoft Exchange 2010 UM Troubleshooting Tool** window, at the prompt, type the following and press Enter.
 
-    ```powershell
-    $cred=Get-Credential
-    ```
+   ```powershell
+   $cred=Get-Credential
+   ```
 
 3. In the **Windows PowerShell Credential Request** window, type the domain\\user name and password, and then click **OK**.
 
 4. In the **Microsoft Exchange 2010 UM Troubleshooting Tool** window, specify the necessary cmdlet parameters to test for call flow. For example:
 
-    ```powershell
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-    ```
+   ```powershell
+   Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+   ```

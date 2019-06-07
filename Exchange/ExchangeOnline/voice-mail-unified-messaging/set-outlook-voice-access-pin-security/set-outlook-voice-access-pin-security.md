@@ -99,6 +99,3 @@ After you set the Outlook Voice Access PIN requirements, you must create and con
 There are situations in which Outlook Voice Access users forget their PIN or are locked out of voice mail access to their mailbox. In either case, it may be necessary for you to reset a UM-enabled user's PIN. For details, see [Reset a voice mail PIN](reset-a-voice-mail-pin.md).
 
 You can retrieve PIN information for a user who is enabled for Unified Messaging. The information returned to you is calculated by using the encrypted PIN data stored in the user's mailbox. This lets you view PIN information for the user and also indicates whether the user has been locked out of their mailbox. For details, see [Retrieve voice mail PIN information](retrieve-voice-mail-pin-information.md).
-
-
-

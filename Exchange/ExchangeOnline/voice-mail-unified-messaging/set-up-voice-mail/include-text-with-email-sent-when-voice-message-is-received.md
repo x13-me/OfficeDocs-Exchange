@@ -56,6 +56,3 @@ This example includes the additional text, "Do not forward voice messages to use
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailText "Do not forward voice messages to users outside this organization."
 ```
-
-
-

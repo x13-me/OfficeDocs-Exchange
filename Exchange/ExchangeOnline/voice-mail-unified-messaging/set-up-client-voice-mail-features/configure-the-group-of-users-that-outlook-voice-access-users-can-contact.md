@@ -67,6 +67,3 @@ This example sets the group of users that Outlook Voice Access users can contact
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -ContactScope DialPlan -AllowDialPlanSubscribers $false -AllowExtensions $false
 ```
-
-
-

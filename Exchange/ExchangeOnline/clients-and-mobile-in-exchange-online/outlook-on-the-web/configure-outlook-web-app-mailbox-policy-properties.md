@@ -105,4 +105,3 @@ To verify that you've successfully modified an Outlook on the web mailbox policy
     ```
     Get-OwaMailboxPolicy -Identity "<Policy Name>"
     ```
-

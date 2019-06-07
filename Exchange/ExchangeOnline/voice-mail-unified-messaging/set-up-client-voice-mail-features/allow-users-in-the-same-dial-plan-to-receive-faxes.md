@@ -48,6 +48,3 @@ This example enables UM-enabled users who are linked with the UM dial plan named
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $true
 ```
-
-
-

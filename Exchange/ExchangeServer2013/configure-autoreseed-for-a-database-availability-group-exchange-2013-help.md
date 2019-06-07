@@ -61,7 +61,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 To verify that you've successfully configured the root paths for databases and volumes, run the following command.
 
 ```powershell
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
 The output for *AutoDagDatabasesRootFolderPath* and *AutoDagVolumesRootFolderPath* should reflect the configured paths.
@@ -81,7 +81,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 To verify that you've successfully configured the number of databases per volume, run the following command.
 
 ```powershell
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
 The output for *AutoDagDatabaseCopiesPerVolume* should reflect the configured value.
@@ -91,8 +91,8 @@ The output for *AutoDagDatabaseCopiesPerVolume* should reflect the configured va
 Next, create the directories that correspond to the root directories you configured in Step 1. This example shows how to create the default directories using the command prompt.
 
 ```powershell
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
 ```
 
 ## How do you know this step worked?
@@ -162,7 +162,7 @@ The created directories should appear in the output list.
 Create the mount points for each database and link the mount point to the correct volume. For example, the mounted folder for db001 should be at C:\\ExchangeDatabases\\db001. You can use diskmgmt.msc or mountvol.exe to do this. This example illustrates how to mount db001 to C:\\ExchangeDatabases\\db001 using mountvol.exe.
 
 ```powershell
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
 ```
 
 ## How do you know this step worked?
@@ -234,7 +234,7 @@ The created directories should appear in the output list.
 Create databases with log and database paths configured with the appropriate folders. This example illustrates how to create a database that's stored in the newly created directory and mount point structure.
 
 ```powershell
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
 ```
 
 ## How do you know this step worked?
@@ -242,7 +242,7 @@ Create databases with log and database paths configured with the appropriate fol
 To verify that you've successfully created databases in the appropriate folder, run the following command.
 
 ```powershell
-    Get-MailboxDatabase db001 | Format List *path*
+Get-MailboxDatabase db001 | Format List *path*
 ```
 
 Database properties that are returned should indicate that the database file and log files are being stored in the above folders.

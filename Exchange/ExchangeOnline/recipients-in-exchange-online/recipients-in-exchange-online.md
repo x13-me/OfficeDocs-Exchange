@@ -43,6 +43,3 @@ Although the EAC has a different look and feel than the ECP, managing Exchange O
 - [Manage equipment mailboxes](manage-equipment-mailboxes.md)
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
-
-
-

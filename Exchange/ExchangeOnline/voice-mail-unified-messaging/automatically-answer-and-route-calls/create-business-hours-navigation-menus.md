@@ -85,6 +85,3 @@ This example configures a UM auto attendant named `MyAutoAttendant` and enables 
 ```
 Set-UMAutoAttendant -Identity MyAutoAttendant - BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
-
-
-

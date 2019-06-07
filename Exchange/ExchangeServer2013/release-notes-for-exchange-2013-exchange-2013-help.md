@@ -159,7 +159,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     To work around this issue, you need to remove the `Integrated` authentication method from the client receive connector on your Exchange 2013 Client Access servers. To remove the `Integrated` authentication method from a client receive connector, run the following command on each Exchange 2013 Client Access server that could receive connections from computers running the **Send-MailMessage** cmdlet:
 
     ```powershell
-        Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+    Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
     ```
 
   - **MAPI over HTTP may experience poor performance when you upgrade to Exchange 2013 SP1**: If you upgrade from an Exchange 2013 cumulative update to Exchange 2013 SP1 and enable MAPI over HTTP, clients that connect to an Exchange 2013 SP1 server using the protocol may experience poor performance. This is because required settings aren't configured during an upgrade from a cumulative update to Exchange 2013 SP1. This issue doesn't occur if you upgrade to Exchange 2013 SP1 from Exchange 2013 RTM or if you install a new Exchange 2013 SP1 or later server.
@@ -171,25 +171,26 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
     1. On servers running the Client Access server role, run the following commands in a Windows Command Prompt:
 
-      ```powershell
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+       ```powershell
+       set AppCmdLocation=%windir%\System32\inetsrv
+       set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
 
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
-      ```
+       %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
+       %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+       ```
 
     2. On servers running the Mailbox server role, run the following commands in a Windows Command Prompt:
-      ```powershell
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
 
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
+       ```powershell
+       set AppCmdLocation=%windir%\System32\inetsrv
+       set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
 
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
-      ```
+       %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
+       %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
+
+       %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
+       %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+       ```
 
 ## Exchange 2010 coexistence
 

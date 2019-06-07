@@ -73,6 +73,3 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
   Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
 
   ```
-
-
-

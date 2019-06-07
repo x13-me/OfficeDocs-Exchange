@@ -252,6 +252,3 @@ This example returns the properties and values for a UM mailbox policy named `My
 ```
 Get-UMMailboxPolicy -Identity MyUMMailboxPolicy
 ```
-
-
-

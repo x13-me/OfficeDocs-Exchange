@@ -20,19 +20,17 @@ Protocol logging records the SMTP conversations that occur on Send Connectors an
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service", "Front End Transport service", "Mailbox Transport service", "Receive connectors" and "Send connectors" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service", "Front End Transport service", "Mailbox Transport service", "Receive connectors" and "Send connectors" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can use the Exchange admin center (EAC) to enable or disable protocol logging for Send connectors and Receive connectors in the Transport service on Mailbox servers, and for Receive connectors in the Front End Transport service on Client Access servers. You can also use the EAC to configure the protocol log paths for the Transport service only. For all other protocol logging options, you need to use the Shell.
+- You can use the Exchange admin center (EAC) to enable or disable protocol logging for Send connectors and Receive connectors in the Transport service on Mailbox servers, and for Receive connectors in the Front End Transport service on Client Access servers. You can also use the EAC to configure the protocol log paths for the Transport service only. For all other protocol logging options, you need to use the Shell.
 
-  - Protocol logging is enabled or disabled on each individual connector. All the Receive connectors on the Exchange server share the same protocol log files and protocol log options. These protocol log settings are separate from the Send connector protocol log files and protocol log options that are on the same server.
+- Protocol logging is enabled or disabled on each individual connector. All the Receive connectors on the Exchange server share the same protocol log files and protocol log options. These protocol log settings are separate from the Send connector protocol log files and protocol log options that are on the same server.
 
-  -
-    > [!WARNING]
-    > Don't perform this procedure on an Edge Transport server that has been subscribed to the Exchange organization by using EdgeSync. Instead, make the changes in the Transport service on the Mailbox server. The changes are then replicated to the Edge Transport server next time EdgeSync synchronization occurs.
+- Don't perform this procedure on an Edge Transport server that has been subscribed to the Exchange organization by using EdgeSync. Instead, make the changes in the Transport service on the Mailbox server. The changes are then replicated to the Edge Transport server next time EdgeSync synchronization occurs.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -47,11 +45,11 @@ To use the EAC to enable or disable protocol logging on a Send connector or a Re
 
 3. On the **General** tab in the **Protocol logging level** section, select one of the following options:
 
-      - **None**: Protocol logging disabled on the connector.
+   - **None**: Protocol logging disabled on the connector.
 
-      - **Verbose**: Protocol logging is enabled on the connector.
+   - **Verbose**: Protocol logging is enabled on the connector.
 
-    When you are finished, click **Save**.
+   When you are finished, click **Save**.
 
 To use the EAC to configure the protocol log paths for the Send connectors and Receive connectors in the Transport service on a Mailbox server, do the following:
 
@@ -63,11 +61,11 @@ To use the EAC to configure the protocol log paths for the Send connectors and R
 
 4. In the **Protocol log** section, change any of the following settings:
 
-      - **Send protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+   - **Send protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
 
-      - **Receive protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+   - **Receive protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
 
-    When you are finished, click **Save**.
+   When you are finished, click **Save**.
 
 ## How do you know this worked?
 
@@ -82,7 +80,7 @@ To verify that you have successfully used the EAC to configure the protocol log 
 To enable or disable protocol logging on a Send connector or a Receive connector, run the following command:
 
 ```powershell
-    <Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+<Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
 ```
 
 This example enables protocol logging for the Receive connector named Connection from Contoso.com.
@@ -97,9 +95,9 @@ To verify that you have successfully enabled or disabled protocol logging, do th
 
 1. In the Shell, run the following command:
 
-    ```powershell
-    <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
-    ```
+   ```powershell
+   <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+   ```
 
 2. Verify the values displayed are the values you configured.
 
@@ -108,7 +106,7 @@ To verify that you have successfully enabled or disabled protocol logging, do th
 To enable or disable protocol logging on the implicit and invisible intra-organization Send connector that exists in the Transport service on a Mailbox server and in the Front End Transport service on a Client Access server, run the following command:
 
 ```powershell
-    <Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+<Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
 ```
 
 This example enables protocol logging on the intra-organization Send connector in the Transport service on a Mailbox server named Mailbox01.
@@ -123,9 +121,9 @@ To verify that you have successfully enabled or disabled protocol logging on the
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
-    ```
+   ```powershell
+   <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -149,9 +147,9 @@ To verify that you have successfully enabled or disabled protocol logging on the
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
-    ```
+   ```powershell
+   Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -160,23 +158,23 @@ To verify that you have successfully enabled or disabled protocol logging on the
 To configure the protocol log settings, run the following command:
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
 ```
 
 This example sets the following protocol log settings in the Transport service on the Mailbox server named Mailbox01:
 
-  -  Sets the location of all Receive connector protocol logs to D:\\Hub Receive SMTP Log and all Send connector protocol logs to D:\\Hub Send SMTP Log. Note that if the folder doesn't exist, it will be created for you.
+- Sets the location of all Receive connector protocol logs to D:\\Hub Receive SMTP Log and all Send connector protocol logs to D:\\Hub Send SMTP Log. Note that if the folder doesn't exist, it will be created for you.
 
-  -  Sets the maximum size of a Receive connector protocol log file and a Send connector protocol log file to 20 MB.
+- Sets the maximum size of a Receive connector protocol log file and a Send connector protocol log file to 20 MB.
 
-  -  Sets the maximum size of the Receive connector protocol log folder and the Send connector protocol log folder to 400 MB.
+- Sets the maximum size of the Receive connector protocol log folder and the Send connector protocol log folder to 400 MB.
 
-  -  Sets the maximum age of a Receive connector protocol log file and a Send Connector protocol log file to 45 days.
+- Sets the maximum age of a Receive connector protocol log file and a Send Connector protocol log file to 45 days.
 
 <!-- end list -->
 
 ```powershell
-    Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
 ```
 
 > [!NOTE]
@@ -194,8 +192,8 @@ To verify that you have successfully configured the protocol log settings, do th
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
-    ```
+   ```powershell
+   <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+   ```
 
 2. Verify the values displayed are the values you configured.

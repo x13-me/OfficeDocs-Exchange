@@ -62,6 +62,3 @@ This example sets the business hours for a UM auto attendant named `MyUMAutoAtte
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30
 ```
-
-
-

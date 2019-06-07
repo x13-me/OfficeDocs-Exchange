@@ -125,7 +125,7 @@ The per service default state of modern authentication is:
 
 - Skype for Business Online - OFF by default
 
--  SharePoint Online - ON by default.
+- SharePoint Online - ON by default.
 
 > [!IMPORTANT]
 > The default Server Auth Certificate created by Exchange 2016 is valid for five years. You need to make sure that the authorization configuration includes a current certificate.

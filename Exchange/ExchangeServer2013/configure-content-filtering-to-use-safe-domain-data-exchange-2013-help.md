@@ -24,15 +24,15 @@ We recommend that you don't modify the default setting in most cases. However, y
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes
+- Estimated time to complete: 10 minutes
 
-  - Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
+- Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
 
-  - Changes you save to the MSExchangeMailboxAssistants.exe.config file are applied after you restart the Microsoft Exchange Mailbox Assistants service.
+- Changes you save to the MSExchangeMailboxAssistants.exe.config file are applied after you restart the Microsoft Exchange Mailbox Assistants service.
 
-  - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -41,23 +41,23 @@ We recommend that you don't modify the default setting in most cases. However, y
 
 1. In the Command Prompt window, open the MSExchangeMailboxAssistants.exe.config file in Notepad by running the following command:
 
-    ```powershell
-    Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
-    ```
+   ```powershell
+   Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+   ```
 
 2. Locate the *\</appsettings\>* key at the end of the file, and paste the following key before the *\</appsettings\>* key:
 
-    ```command line
-    <add key="IncludeSafeDomains" value="true" />
-    ```
+   ```command line
+   <add key="IncludeSafeDomains" value="true" />
+   ```
 
 3. When you are finished, save and close the MSExchangeMailboxAssistants.exe.config file.
 
 4. Restart the Microsoft Exchange Mailbox Assistants service by running the following command:
 
-    ```powershell
-        net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
-    ```
+   ```powershell
+   net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+   ```
 
 ## How do you know this worked?
 

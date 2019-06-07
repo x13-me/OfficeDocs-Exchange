@@ -33,7 +33,7 @@ You can use the minimal hybrid, also known as express migration, option in the E
 
 Use minimal hybrid to migrate emails if you:
 
--  Are running at least one Exchange 2010, Exchange 2013, and/or Exchange 2016 server on-premises.
+- Are running at least one Exchange 2010, Exchange 2013, and/or Exchange 2016 server on-premises.
 
 - Plan to move to Exchange Online over a course of few weeks or less.
 
@@ -151,5 +151,3 @@ Email systems use a DNS record called an MX record to figure out where to delive
 [Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
 
 [How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
-
-

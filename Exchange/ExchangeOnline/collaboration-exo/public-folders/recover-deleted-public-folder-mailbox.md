@@ -99,6 +99,3 @@ Use this procedure if you want to restore one or more secondary public folder ma
 
 > [!NOTE]
 > If a primary public folder has been deleted from an organization, any secondary mailbox associated with it can't be restored.
-
-
-

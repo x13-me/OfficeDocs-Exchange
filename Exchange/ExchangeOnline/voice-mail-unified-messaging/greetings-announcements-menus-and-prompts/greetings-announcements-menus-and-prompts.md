@@ -124,6 +124,3 @@ By default, when you create a UM auto attendant, the business and non-business h
 - Configure the business and non-business hours main menu prompt greetings on the **Greetings** page.
 
 - Enable and configure the business and non-business hours menu navigation on the **Menu navigation** page.
-
-
-

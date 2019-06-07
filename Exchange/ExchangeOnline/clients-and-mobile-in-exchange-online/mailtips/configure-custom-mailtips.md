@@ -117,6 +117,3 @@ To verify that you have successfully configured a MailTip for a recipient, do th
 2. Verify the MailTip appears in the InfoBar.
 
 3. If you configured additional MailTip translations, compose the message in Outlook Web App where the language setting matches the language of the MailTip translation to verify the results.
-
-
-

@@ -85,6 +85,3 @@ This example configures a UM auto attendant named `MyAutoAttendant` and enables 
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AfterHoursKeyMappingEnabled $true -AfterHoursKeyMapping "AfterhoursOperator,12345","Directions,23456"
 ```
-
-
-

@@ -123,4 +123,3 @@ With Outlook Web App, users can access their Exchange mailbox from almost any we
 8. Press the Tab key about 10 times until you hear "Show link." Press the Tab key once more. You hear "Enable link." Press Enter.
 
 9. An alert asks "Are you sure you want to enable Exchange ActiveSync for all the selected recipients?" With the focus on the **OK** button, press Enter.
-

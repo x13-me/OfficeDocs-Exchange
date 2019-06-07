@@ -32,6 +32,3 @@ manager: dansimp
 [Configure the listening port](configure-listening-port.md)
 
 [Delete a UM IP gateway](delete-um-ip-gateway.md)
-
-
-

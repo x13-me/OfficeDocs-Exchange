@@ -63,4 +63,3 @@ To verify that you've successfully removed a GAL, run the following command in E
 ```
 Get-GlobalAddressList
 ```
-

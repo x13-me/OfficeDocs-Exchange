@@ -63,6 +63,3 @@ This example sets the input failures before disconnect to 5 on a UM dial plan na
 ```
 Set-UMDialPlan -identity MyUMDialPlan -InputFailuresBeforeDisconnect 5
 ```
-
-
-
