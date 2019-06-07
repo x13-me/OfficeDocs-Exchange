@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# PBX and IP PBX configurations
+# PBX and IP PBX configurations in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Increasingly, organizations are purchasing, installing, and maintaining the hardware components, for example, Private Branch eXchanges (PBXs) or IP PBXs, that are required to support their own telephony systems. Many organizations are buying their own telephony equipment and training their staff to reduce expenses associated with maintaining their telephony systems and because they want more control over the telephony features they offer.
 

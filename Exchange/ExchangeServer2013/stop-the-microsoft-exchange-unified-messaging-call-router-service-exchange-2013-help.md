@@ -1,5 +1,5 @@
 ---
-title: 'Stop the Microsoft Exchange Unified Messaging Call Router service'
+title: 'Stop the Microsoft Exchange Unified Messaging Call Router service: Exchange 2013 Help'
 TOCTitle: Stop the Microsoft Exchange Unified Messaging Call Router service
 ms:assetid: 79935528-1a8c-4f22-826c-8f9a60f4f6f4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673535(v=EXCHG.150)
@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Stop the Microsoft Exchange Unified Messaging Call Router service
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the Services snap-in in Microsoft Management Console (MMC) or cmd.exe at a command prompt to stop the Microsoft Exchange Unified Messaging Call Router service on a Client Access server. There may be times when you need to stop this service, for example, when you have to take the Client Access server offline. When you stop the Microsoft Exchange Unified Messaging Call Router service, the Client Access server won't be able to accept and process incoming calls.
 

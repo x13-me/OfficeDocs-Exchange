@@ -40,21 +40,19 @@ Routing table logging periodically records a snapshot of the routing table used 
 Run the following command:
 
 ```powershell
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
 ```
 
 This example sets the following routing table log settings on the Mailbox server named Mailbox01:
 
-  - Sets the location of the routing table log files to D:\\Routing Table Log. Note that if the folder doesn't exist, it will be created for you.
+- Sets the location of the routing table log files to D:\\Routing Table Log. Note that if the folder doesn't exist, it will be created for you.
 
-  - Sets the maximum size of the routing table log folder to 70 MB.
+- Sets the maximum size of the routing table log folder to 70 MB.
 
-  - Sets the maximum age of a routing table log file to 45 days.
-
-<!-- end list -->
+- Sets the maximum age of a routing table log file to 45 days.
 
 ```powershell
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
 ```
 
 > [!NOTE]
@@ -66,9 +64,9 @@ To verify that you have successfully configured routing table logging, do the fo
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
-    ```
+   ```powershell
+   Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+   ```
 
 2. Verify the values displayed are the values you configured.
 
@@ -76,29 +74,29 @@ To verify that you have successfully configured routing table logging, do the fo
 
 1. In a Command prompt window, open the EdgeTransport.exe.config application configuration file in Notepad by running the following command:
 
-    ```powershell
-    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-    ```
+   ```powershell
+   Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+   ```
 
 2. Modify the following key in the `<appSettings>` section.
 
-    ```command line
-    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
-    ```
+   ```command line
+   <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+   ```
 
-    For example, to change the interval for automatic recalculation of the routing table to 10 hours, use the following value:
+   For example, to change the interval for automatic recalculation of the routing table to 10 hours, use the following value:
 
-    ```command line
-    <add key="RoutingConfigReloadInterval" value="10:00:00" />
-    ```
+   ```command line
+   <add key="RoutingConfigReloadInterval" value="10:00:00" />
+   ```
 
 3. When you are finished, save and close the EdgeTransport.exe.config file.
 
 4. Restart the Microsoft Exchange Transport service by running the following command:
 
-    ```powershell
-    net stop MSExchangeTransport && net start MSExchangeTransport
-    ```
+   ```powershell
+   net stop MSExchangeTransport && net start MSExchangeTransport
+   ```
 
 ## How do you know this worked?
 
@@ -106,6 +104,6 @@ To verify that you have successfully configured the interval for the automatic r
 
 Note that the routing table will be recalculated and logged earlier than the value specified by the *RoutingConfigReloadInterval* key if any of the following conditions occur:
 
-  - A routing configuration change is detected. For example, a Send connector or a Receive connector is added, removed, or modified, or the 6 hour Kerberos token renewal occurs.
+- A routing configuration change is detected. For example, a Send connector or a Receive connector is added, removed, or modified, or the 6 hour Kerberos token renewal occurs.
 
-  - The Microsoft Exchange Transport service is started.
+- The Microsoft Exchange Transport service is started.

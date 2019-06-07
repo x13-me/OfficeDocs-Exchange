@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Enable voice mail users to receive faxes
+# Enable voice mail users to receive faxes in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange Unified Messaging (UM) enables voice mail messages to be delivered to a user's mailbox and also lets users receive faxes in their mailbox. In UM, a fax is sent to the user's mailbox as an email message that has an image file with a .tif extension attached. The user can open the attached file by using a software application that can open and view image files that have a .tif extension. This topic discusses faxing and how it works in UM.
 

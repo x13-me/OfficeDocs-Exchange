@@ -117,7 +117,7 @@ Perform the following prerequisite steps before you begin the migration.
       - Run the following command to take a snapshot of the permissions:
 
         ```powershell
-            Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
         ```
 
     Save the information from the preceding commands for comparison purposes after your migration is complete.
@@ -127,13 +127,13 @@ Perform the following prerequisite steps before you begin the migration.
     1. In Exchange 2010, to locate public folders that have a backslash in the name, run the following command:
 
         ```powershell
-            Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
+        Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
         ```
 
     2. In Exchange 2007, to locate public folders that have a backslash in the name, run the following command:
 
         ```powershell
-            Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
+        Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
         ```
 
     3. If any public folders are returned, you can rename them by running the following command:
@@ -189,7 +189,7 @@ For detailed syntax and parameter information, see the following topics:
     The following example will discover any existing serial migration requests.
 
     ```powershell
-        Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
     ```
 
     The following example removes any existing public folder serial migration requests.
@@ -201,7 +201,7 @@ For detailed syntax and parameter information, see the following topics:
     The following example will discover any existing batch migration requests.
 
     ```powershell
-        $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
     ```
 
     The following example removes any existing public folder batch migration requests.
@@ -215,7 +215,7 @@ For detailed syntax and parameter information, see the following topics:
     1. Run the following command to see if any public folders mailboxes exist.
 
         ```powershell
-            Get-Mailbox -PublicFolder
+        Get-Mailbox -PublicFolder
         ```
 
     2. If the command didn't return any public folder mailboxes, continue to Step 3: Generate the .csv files. If the command returned any public folders, run the following command to see if any public folders exist:
@@ -262,7 +262,7 @@ For detailed syntax and parameter information, see the following topics:
 1. On the legacy Exchange server, run the `Export-PublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. This script needs to be run by a local administrator. The file will contain two columns: **FolderName** and **FolderSize**. The values for the **FolderSize** column will be displayed in bytes. For example, **\\PublicFolder01,10000**.
 
     ```powershell
-        .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
     ```
 
       - *FQDN of source server* equals the fully qualified domain name of the Mailbox server where the public folder hierarchy is hosted.
@@ -275,7 +275,7 @@ For detailed syntax and parameter information, see the following topics:
     > If the name of a public folder contains a backslash **\\**, the public folders will be created in the parent public folder. We recommend that you review the .csv file and edit any names that contain a backslash.
 
     ```powershell
-        .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     ```
 
       - *Maximum mailbox size in bytes* equals the maximum size you want to set for the new public folder mailboxes. When specifying this setting, be sure to allow for expansion so the public folder mailbox has room to grow.
@@ -289,7 +289,7 @@ For detailed syntax and parameter information, see the following topics:
 1. Run the following command to create the target public folder mailboxes. The script will create a target mailbox for each mailbox in the .csv file that you generated previously in Step 3, by running the PublicFoldertoMailboxMapGenerator.ps1 script.
 
     ```powershell
-        .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
+    .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
     ```
 
     *Mapping.csv* is the file generated by the PublicFoldertoMailboxMapGenerator.ps1 script in Step 3. The estimated number of simultaneous user connections browsing a public folder hierarchy is usually less than the total number of users in an organization.
@@ -306,17 +306,17 @@ The steps for migrating Exchange 2007 public folders are different from the step
 1. Legacy system public folders such as OWAScratchPad and the schema-root folder subtree in Exchange 2007 won't be recognized by Exchange 2013 and will therefore be treated as "bad" items. This will cause the migration to fail. As part of the migration request, you must specify a value for the `BadItemLimit` parameter. This value will vary depending on the number of public folder databases you have. The following commands will determine how many public folder databases you have and compute the `BadItemLimit` for the migration request.
 
     ```powershell
-        $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
+    $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
     ```
 
     ```powershell
-        $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+    $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
     ```
 
 2. On the Exchange 2013 server, run the following command:
 
     ```powershell
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount
     ```
 
 3. Start the migration using the following command:
@@ -330,7 +330,7 @@ The steps for migrating Exchange 2007 public folders are different from the step
 1. On the Exchange 2013 server, run the following command.
 
     ```powershell
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
     ```
 
     The `NotificationEmails` parameter is optional.
@@ -417,7 +417,7 @@ After you finalize the public folder migration, you should run the following tes
 1. In PowerShell, run the following command to assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
 
     ```powershell
-        Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
     ```
 
 2. Log on to Outlook 2007 or later with the test user identified in the previous step, and then perform the following public folder tests:
@@ -468,13 +468,13 @@ In Step 2: Prepare for the migration, you were instructed to take snapshots of t
 2. Run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
 
     ```powershell
-        Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+    Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
     ```
 
 3. Run the following command to take a snapshot of the permissions.
 
     ```powershell
-        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
     ```
 
 ## Remove public folder databases from the legacy Exchange servers
