@@ -102,7 +102,7 @@ The hybrid Modern Authentication architecture has the following technical requir
    - Exchange Hybrid write-back
 
    - Azure RMS
- 
+
    - Intune
 
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.

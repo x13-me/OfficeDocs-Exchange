@@ -75,4 +75,3 @@ You have three options for removing your information from the Outlook service.
 ### How is the temporarily cached mailbox data secured while stored in the Outlook service?
 
 You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Microsoft Trust Center](https://microsoft.com/trustcenter).
-
