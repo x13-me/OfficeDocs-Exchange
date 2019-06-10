@@ -20,24 +20,24 @@ The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailb
 
 The Client Access server on which to enable the MRS Proxy endpoint depends on the type and direction of the mailbox move.
 
-  - **Cross-forest enterprise moves**: For cross-forest moves that are initiated from the target environment (known as a *pull* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the source environment. For cross-forest moves that are initiated from the source environment (known as a *push* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the target environment.
+- **Cross-forest enterprise moves**: For cross-forest moves that are initiated from the target environment (known as a *pull* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the source environment. For cross-forest moves that are initiated from the source environment (known as a *push* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the target environment.
 
-  - **Remote move migrations between an on-premises Exchange organization and Exchange Online**: For both onboarding and offboarding remote move migrations, you have to enable the MRS Proxy endpoint on Client Access servers in your on-premises organization.
+- **Remote move migrations between an on-premises Exchange organization and Exchange Online**: For both onboarding and offboarding remote move migrations, you have to enable the MRS Proxy endpoint on Client Access servers in your on-premises organization.
 
 > [!NOTE]
 > If you use the EAC to move mailboxes, cross-forest moves and onboarding remote move migrations are pull move types because the request is initiated from the target environment. Offboarding remote move migrations are a push move type because the request is initiated from the source environment.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes per server.
+- Estimated time to complete: 2 minutes per server.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Web Services permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Web Services permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Client Access servers.
+- If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Client Access servers.
 
-  - If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
+- If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -59,7 +59,7 @@ The Client Access server on which to enable the MRS Proxy endpoint depends on th
 The following command enables the MRS Proxy endpoint on a Client Access server named EXCH-SRV-01.
 
 ```powershell
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
 ```
 
 The following command enables the MRS Proxy endpoint on all Client Access servers in your Exchange organization.

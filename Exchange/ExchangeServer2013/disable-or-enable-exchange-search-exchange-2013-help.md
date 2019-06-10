@@ -25,13 +25,13 @@ For additional management tasks related to Exchange Search, see [Exchange Search
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 1 minute
+- Estimated time to complete each procedure: 1 minute
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - You can enable or disable Exchange Search for servers or mailbox databases but not for individual mailbox users.
+- You can enable or disable Exchange Search for servers or mailbox databases but not for individual mailbox users.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
@@ -45,13 +45,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 This command disables Exchange Search for a mailbox database named EXCH01.
 
 ```powershell
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
 ```
 
 This command enables Exchange Search for a mailbox database named EXCH01.
 
 ```powershell
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
@@ -62,7 +62,7 @@ To disable Exchange Search for a Mailbox server, you have to disable and stop th
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Manage Exchange Search service on a Mailbox server" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-**Use the Services console**
+### Use the Services console
 
 1. Go to **Start** \> **Administrative Tools** \> **Services**.
 
@@ -77,7 +77,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 5. Click **OK** to save the changes.
 
-**Use the Shell**
+### Use the Shell
 
 Run the following commands to stop and disable the Microsoft Exchange Search service.
 

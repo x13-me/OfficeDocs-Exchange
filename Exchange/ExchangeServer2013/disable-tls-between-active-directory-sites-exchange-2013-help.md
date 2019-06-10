@@ -22,19 +22,19 @@ This topic provides step-by-step instructions on how to configure the Transport 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 60 minutes.
+- Estimated time to complete this task: 60 minutes.
 
-  - Even though individual configuration steps within this scenario can be accomplished with lesser rights, to complete the entire end-to-end scenario tasks, your account needs to be a member of the Organization Management role group.
+- Even though individual configuration steps within this scenario can be accomplished with lesser rights, to complete the entire end-to-end scenario tasks, your account needs to be a member of the Organization Management role group.
 
-  - Make sure you disable TLS only on connections that pass through WOC devices.
+- Make sure you disable TLS only on connections that pass through WOC devices.
 
-  - This procedure requires that Exchange 2013 is deployed in multiple Active Directory sites, with at least one site connected to the other sites over a WAN link.
+- This procedure requires that Exchange 2013 is deployed in multiple Active Directory sites, with at least one site connected to the other sites over a WAN link.
 
-  - This procedure requires that WOC devices are deployed to compress SMTP traffic over the WAN link.
+- This procedure requires that WOC devices are deployed to compress SMTP traffic over the WAN link.
 
-  - This procedure requires that a logical message flow path exists for Exchange going over the WAN link that has the WOC devices deployed.
+- This procedure requires that a logical message flow path exists for Exchange going over the WAN link that has the WOC devices deployed.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -61,9 +61,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 2. On the first page of the **New Receive connector** wizard, enter the following values
 
-      - **Name**: Enter a descriptive value.
+   - **Name**: Enter a descriptive value.
 
-      - **Type**: Internal
+   - **Type**: Internal
 
     When you are finished, click **Next**.
 
@@ -74,16 +74,14 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 To create a Receive connector on the Mailbox server, run the following command:
 
 ```powershell
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
 ```
 
 This example creates the Receive connector named WAN on server named Mailbox01 with the following settings:
 
-  - The *RemoteIPRanges* parameter is set to 10.0.2.0/24. This IP address range should correspond to the remote Active Directory site from where this Receive connector will receive unencrypted connections. If there's more than one IP subnet in the remote site, you can enter them all separated by commas.
+- The *RemoteIPRanges* parameter is set to 10.0.2.0/24. This IP address range should correspond to the remote Active Directory site from where this Receive connector will receive unencrypted connections. If there's more than one IP subnet in the remote site, you can enter them all separated by commas.
 
-  - The usage type is set to Internal.
-
-<!-- end list -->
+- The usage type is set to Internal.
 
 ```powershell
 New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal

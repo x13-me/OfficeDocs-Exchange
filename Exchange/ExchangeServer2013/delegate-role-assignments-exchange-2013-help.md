@@ -32,13 +32,13 @@ Looking for other management tasks related to managing permissions? Check out [A
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 5 minutes
+- Estimated time to complete this procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role assignments" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role assignments" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -47,9 +47,9 @@ Looking for other management tasks related to managing permissions? Check out [A
 
 You can create delegating role assignments using the same predefined scopes, recipient filter or server-filter-based scopes, server list-based scopes, and organizational unit (OU) scopes that can be used to create regular or exclusive scopes. The only difference between creating a regular role assignment and a delegating role assignment is the addition of the *Delegating* switch to the command. For more information about how to create role assignments, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 > [!NOTE]
 > You can't create a delegating role assignment to a management role assignment policy.
@@ -57,13 +57,13 @@ You can create delegating role assignments using the same predefined scopes, rec
 This example creates a delegating role assignment to enable members of the Senior Admins role group to assign the Mail Recipients role to any role assignee in the Exchange organization.
 
 ```powershell
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
 ```
 
 This example creates a delegating role assignment to enable members of the Senior Admins role group to assign the Mail Recipients role only to users in the Sales/Users OU in the contoso.com domain.
 
 ```powershell
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
 ```
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
