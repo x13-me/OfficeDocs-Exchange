@@ -302,29 +302,15 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 **Q**: What authentication mechanism is used for Outlook for iOS and Android? Are credentials stored in Office 365?
 
-**A**: Active Directory Authentication Library (ADAL)-based authentication is what Outlook for iOS and Android uses to access the on-premises mailbox data that is synchronized with Exchange Online. ADAL authentication, used by Office apps on both desktop and mobile devices, involves users signing in directly to Azure Active Directory, which is Office 365's identity provider, instead of providing credentials to Outlook.
-
-  ADAL-based sign in enables OAuth for hybrid Exchange on-premises accounts, and provides Outlook for iOS and Android a secure mechanism to access email without requiring access to user credentials. At sign in, the user authenticates directly with the Microsoft cloud and receives an access token in return. The token grants Outlook for iOS and Android access to the appropriate mailbox. OAuth provides Outlook with a secure mechanism to access Office 365 and the Outlook cloud service without needing or storing a user's credentials.
-
-  For more information, see the Office Blog post [New access and security controls for Outlook for iOS and Android](https://blogs.office.com/2015/06/10/new-access-and-security-controls-for-outlook-for-ios-and-android/).
+**A**: See [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication).
 
 **Q**: Do Outlook for iOS and Android and other Microsoft Office mobile apps support single sign-on?
 
-**A**: All Microsoft apps that leverage the Azure Active Directory Authentication Library (ADAL) for authentication support single sign-on. In addition, single sign-on is also supported when the apps are used in conjunction with either the Microsoft Authenticator or Microsoft Company Portal apps.
-
-Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) under the following scenarios:
-
-1. When the apps are signed by the same signing certificate and use the same service endpoint or audience URL (such as the Office 365 URL). In this case, the token is stored in app shared storage.
-
-2. When the apps leverage or support single sign-on with a broker app. The tokens are stored within the broker app. Microsoft Authenticator is an example of a broker app. In the broker app scenario, after you attempt to sign in to Outlook for iOS and Android, ADAL will launch the Microsoft Authenticator app, which will make a connection to Azure Active Directory to obtain the token. It will then hold on to the token and re-use it for authentication requests from other apps, for as long as the configured token lifetime allows.
-
-For more information, see [How to enable cross-app SSO on iOS using ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-sso-ios).
+**A**: See [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication).
 
 **Q**: What is the lifetime of the tokens generated and used by the Active Directory Authentication Library (ADAL) in Outlook for iOS and Android?
 
-**A**: Multiple tokens are generated when an on-premises user authenticates through ADAL-enabled apps like Outlook for iOS and Android, the Authenticator app, or the Company Portal app. The first access-and-refresh token pair is used to access the data that is synchronized into Exchange Online; the second access-and-refresh token pair is used by Exchange Online to access the on-premises mailbox via the Exchange ActiveSync protocol. The access token is used to access the resource (such as Exchange message data), while a refresh token is used to obtain a new access or refresh token pair when the current access token expires.
-
-By default, the access token lifetime is one hour and the refresh token lifetime is fourteen days. These values can be adjusted: for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+**A**: See [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication).
 
 **Q**: What happens to the access token when a user's password is changed?
 

@@ -25,13 +25,13 @@ Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provi
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "DSNs" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "DSNs" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can't remove a built-in DSN message that's included with Exchange. To change a built-in DSN message, you need to create a custom DSN message for the DSN code that you want to customize. When you remove a custom DSN message, the DSN code associated with that message reverts to the built-in DSN message that's included with Exchange.
+- You can't remove a built-in DSN message that's included with Exchange. To change a built-in DSN message, you need to create a custom DSN message for the DSN code that you want to customize. When you remove a custom DSN message, the DSN code associated with that message reverts to the built-in DSN message that's included with Exchange.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -61,25 +61,25 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 Run the following command:
 
 ```powershell
-    New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
 ```
 
 This example creates a custom plain text DSN message for the DSN code 5.1.2 that's sent to internal senders in English.
 
 ```powershell
-    New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
 ```
 
 This example creates a custom plain text DSN message for the DSN code 5.1.2 that's sent to external senders in English.
 
 ```powershell
-    New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
 ```
 
 This example creates a custom HTML DSN message for the DSN code 5.1.2 that's sent to internal senders in English.
 
 ```powershell
-    New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
 ## How do you know this worked?
@@ -101,13 +101,13 @@ To verify that you have successfully created a custom DNS message, do the follow
 To change the text of a custom DSN message the following command:
 
 ```powershell
-    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
 ```
 
 This example changes the text assigned to the custom DSN message for DSN code 5.1.2 that's sent to internal senders in English.
 
 ```powershell
-    Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
 ```
 
 ## How do you know this worked?
@@ -191,7 +191,7 @@ Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
 To add or remove entries without modifying any existing values, run the following command:
 
 ```powershell
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
 ```
 
 This example adds the DSN code 5.7.5 and removes the DSN code 5.7.1 from the existing list of DSN messages that are forwarded to the Exchange recipient.
