@@ -46,13 +46,13 @@ The syntax to import files in Exchange 2013 is used any time you want to send a 
 The Shell must know what file you want to send to the Exchange 2013 cmdlet, and what parameter will accept the data. To do so, use the following syntax.
 
 ```powershell
-    <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+<Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
 ```
 
 For example, the following command imports the file C:\\MyData.dat into the *FileData* parameter on the **Import-SomeData** fictional cmdlet.
 
 ```powershell
-    Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
 ```
 
 The following actions occur when the command is run:
@@ -72,8 +72,8 @@ The following actions occur when the command is run:
 Some cmdlets use the following alternate syntax that accomplishes the same thing as the preceding syntax.
 
 ```powershell
-    [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
-    Import-SomeData -FileData $Data
+[Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
+Import-SomeData -FileData $Data
 ```
 
 The same process happens with this alternate syntax. The only difference is instead of performing the entire operation at once, the data retrieved from the local file is stored in a variable that can be referenced after it's created. The variable is then used in the import command to pass the contents of the local file to the **Import-SomeData** cmdlet. Using this two-step process is useful when you want to use the data from the local file in more than one command.
@@ -88,9 +88,9 @@ Limits must be set when importing data in remote Shell to preserve the integrity
 
 For these reasons, the amount of data that's transferred to a remote Exchange 2013 server from a local computer or server is limited to the following:
 
-  - 500 megabytes (MB) for each cmdlet that's run
+- 500 megabytes (MB) for each cmdlet that's run
 
-  - 75 MB for each object that's passed to a cmdlet
+- 75 MB for each object that's passed to a cmdlet
 
 If you exceed either of the limits, the execution of the cmdlet and its associated pipeline will stop and you'll receive an error. Consider the examples in the following table to understand how these limits work.
 
@@ -144,7 +144,7 @@ The syntax to export files in Exchange 2013 is used any time you want to accept 
 The Shell must know that you want to save the data stored in the **FileData** property to your local computer. To do so, use the following syntax.
 
 ```command line
-<cmdlet> | ForEach {     <cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte }
+<cmdlet> | ForEach {<cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte}
 ```
 
 For example, the following command exports the data stored in the **FileData** property on the object created by the **Export-SomeData** fictional cmdlet. The exported data is stored in a file you specify on the local computer, in this case MyData.dat.
@@ -153,7 +153,7 @@ For example, the following command exports the data stored in the **FileData** p
 > This procedure uses the <STRONG>ForEach</STRONG> cmdlet, objects, and pipelining. For more information about each, see <A href="https://technet.microsoft.com/en-us/library/aa998260(v=exchg.150)">Pipelining</A> and <A href="https://technet.microsoft.com/en-us/library/aa996386(v=exchg.150)">Structured data</A>.
 
 ```powershell
-Export-SomeData | ForEach {     Export-SomeData | ForEach {$_.FileData | Add-Content C:\MyData.dat -Encoding Byte}.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+Export-SomeData | ForEach {Export-SomeData | ForEach {$_.FileData | Add-Content C:\MyData.dat -Encoding Byte}.FileData | Add-Content C:\MyData.dat -Encoding Byte}
 ```
 
 The following actions occur when the command is run:

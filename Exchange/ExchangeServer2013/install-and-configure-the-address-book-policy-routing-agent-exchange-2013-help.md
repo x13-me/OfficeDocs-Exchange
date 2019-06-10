@@ -24,13 +24,13 @@ Looking for the Exchange Online version of this topic? See [Turn on address book
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 15 minutes.
+- Estimated time to complete this task: 15 minutes.
 
-  - After the ABP Routing agent is installed and configured, it may take up to 30 minutes for email in the organization to be evaluated by agent.
+- After the ABP Routing agent is installed and configured, it may take up to 30 minutes for email in the organization to be evaluated by agent.
 
-  - You can't use the EAC to perform this procedure. You must use the Shell.
+- You can't use the EAC to perform this procedure. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,7 +44,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 Install the ABP Routing agent by running the following command. This is the exact command and syntax you'll need to use.
 
 ```powershell
-    Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
 ```
 
 You'll get a warning that the Transport service needs to be restarted for your changes to take effect, but perform Step 2 first so you only have to restart the Transport service once.
