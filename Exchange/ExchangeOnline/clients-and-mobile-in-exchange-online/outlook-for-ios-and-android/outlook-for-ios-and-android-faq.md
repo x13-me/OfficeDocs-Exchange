@@ -176,7 +176,7 @@ For tenants that have not been migrated to the native Microsoft sync technology,
 
 Yes, Outlook for iOS and Android supports shared mailboxes when the user mailbox and shared mailbox are located in Exchange Online and using the native Microsoft sync technology. 
 
-A shared mailbox is a special mailbox type that is created using the -Shared parameter. Access to the shared mailbox by a user is obtained via permissions and not through the user of alternate credentials. For more information, please see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
+A shared mailbox is a special mailbox type that is created using the -Shared parameter. Access to the shared mailbox by a user is obtained via permissions and not through the use of alternate credentials. For more information, please see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
 
 ## Native Microsoft sync technology migration
 
