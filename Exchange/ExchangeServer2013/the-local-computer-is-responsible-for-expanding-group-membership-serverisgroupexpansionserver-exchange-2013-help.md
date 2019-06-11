@@ -28,7 +28,7 @@ The expansion of distribution lists enables identification of individual recipie
 
 To resolve this issue, move distribution group expansion to another server and rerun Microsoft Exchange setup.
 
-**To change the expansion server for a distribution group or dynamic distribution group**
+## To change the expansion server for a distribution group or dynamic distribution group
 
 1. Open the Exchange Management Console.
 
@@ -46,19 +46,17 @@ To resolve this issue, move distribution group expansion to another server and r
 
     4. At the value box, click the **Browse** button to select the Bridgehead server that currently acting as the expansion server.
 
-> [!NOTE]
-> The following step is optional.
+   > [!NOTE]
+   > The following step is optional.
 
-1. Click **Add Expression** to specify additional filter criteria. Only messages that meet all filter criteria will be displayed.
+5. Click **Add Expression** to specify additional filter criteria. Only messages that meet all filter criteria will be displayed.
 
-2. Click **Apply Filter**. The results that meet the filter criteria are displayed.
+6. Click **Apply Filter**. The results that meet the filter criteria are displayed.
 
-<!-- end list -->
+7. In the results pane, click the distribution group you want to change the expansion server for, and then click **Properties** in the action pane.
 
-1. In the results pane, click the distribution group you want to change the expansion server for, and then click **Properties** in the action pane.
+8. On **Properties**, click the **Advanced** tab.
 
-2. On **Properties**, click the **Advanced** tab.
+9. In the Expansion server drop-down list, select a specific server from the list or select **Any server in the organization**.
 
-3. In the Expansion server drop-down list, select a specific server from the list or select **Any server in the organization**.
-
-4. Repeat steps 5 through 7 for all distribution groups or for dynamic distribution groups that are using the Bridgehead server as their expansion server.
+10. Repeat steps 5 through 7 for all distribution groups or for dynamic distribution groups that are using the Bridgehead server as their expansion server.

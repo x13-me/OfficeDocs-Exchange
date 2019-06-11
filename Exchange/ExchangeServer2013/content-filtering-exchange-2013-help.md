@@ -21,12 +21,6 @@ _**Applies to:** Exchange Server 2013_
 
 The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
 
-**Contents**
-
-Using the Content Filter agent
-
-Configuring the Content Filter agent
-
 ## Using the Content Filter agent
 
 The Content Filter agent is one of several anti-spam agents in Exchange. When you configure anti-spam agents on an Exchange server, the agents act on messages cumulatively to reduce the amount of spam that enters the organization. For more information about how to plan and deploy anti-spam agents, see [Anti-spam protection](anti-spam-protection-exchange-2013-help.md).
@@ -35,11 +29,11 @@ The Content Filter agent assigns a spam confidence level (SCL) rating to each me
 
 You can configure the Content Filter agent to take the following actions on messages according to their SCL rating:
 
-  - Delete message
+- Delete message
 
-  - Reject message
+- Reject message
 
-  - Quarantine message
+- Quarantine message
 
 For example, you may determine that messages that have an SCL rating of 7 or higher must be deleted, messages that have an SCL rating of 6 must be rejected, and messages that have an SCL rating of 5 must be quarantined.
 

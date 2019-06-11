@@ -18,14 +18,6 @@ _**Applies to:** Exchange Server 2013_
 
 Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2013 is an important part of your Mailbox server storage design solution.
 
-**Contents**
-
-Storage architectures
-
-Physical disk types
-
-Best practices for supported storage configurations
-
 ## Storage architectures
 
 The following table describes supported storage architectures and provides best practice guidance for each type of storage architecture where appropriate.
@@ -349,9 +341,9 @@ If you are deploying a standalone Mailbox server role architecture, RAID technol
 
 When using RAID-5 or RAID-6 configurations for the operating system, pagefile, or Exchange data volumes, note the following:
 
-  - RAID-5 configurations, including variations such as RAID-50 and RAID-51, should have no more than 7 disks per array group and array controller high-priority scrubbing and surface scanning enabled.
+- RAID-5 configurations, including variations such as RAID-50 and RAID-51, should have no more than 7 disks per array group and array controller high-priority scrubbing and surface scanning enabled.
 
-  - RAID-6 configurations should have array controller high-priority scrubbing and surface scanning enabled.
+- RAID-6 configurations should have array controller high-priority scrubbing and surface scanning enabled.
 
 While JBOD is supported in high availability architectures that have 3 or more highly available database copies, because the log and mailbox database volumes are separated, JBOD is not recommended.
 

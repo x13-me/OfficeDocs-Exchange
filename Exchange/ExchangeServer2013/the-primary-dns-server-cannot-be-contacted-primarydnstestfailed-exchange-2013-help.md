@@ -28,34 +28,24 @@ Microsoft Exchange depends on DNS to resolve the IP Address of its next internal
 
 Communication with the primary DNS server can fail for the following reasons:
 
-  - The local TCP/IP configuration does not point to the correct DNS server.
+- The local TCP/IP configuration does not point to the correct DNS server.
 
-  - The DNS server is down or unreachable because of a network failure or other reasons.
+- The DNS server is down or unreachable because of a network failure or other reasons.
 
-To resolve this issue:
+To resolve this issue, verify that the local TCP/IP configuration points to the correct DNS server.
 
-  - Verify that the local TCP/IP configuration points to the correct DNS server.
+## To verify the local TCP/IP configuration
 
-**To verify the local TCP/IP configuration**
+1. Review the local TCP/IP configuration. For more information, see [Configure TCP/IP to use DNS](https://go.microsoft.com/fwlink/p/?linkid=68094).
 
-1. Review the local TCP/IP configuration:
+2. Verify that the DNS server is running and can be contacted.
 
-    For more information, see "Configure TCP/IP to use DNS" ([https://go.microsoft.com/fwlink/?LinkId=68094](https://go.microsoft.com/fwlink/?linkid=68094)).
+## To verify that the DNS server is running and can be contacted
 
-<!-- end list -->
+Verify that the DNS server is running by doing one or more of the following checks:
 
-  - Verify that the DNS server is running and can be contacted.
+- Look at the DNS server status from the DNS Administration program on the DNS server.
 
-**To verify that the DNS server is running and can be contacted**
+- Restart the DNS server. For more information, see [Start, stop, pause, or restart a DNS server](https://go.microsoft.com/fwlink/p/?linkid=62999).
 
-1. Verify that the DNS server is running by doing one or more of the following checks:
-
-      - Look at the DNS server status from the DNS Administration program on the DNS server.
-
-      - Restart the DNS server.
-
-        For more information, see "Start, stop, pause, or restart a DNS server" ([https://go.microsoft.com/fwlink/?LinkId=62999](https://go.microsoft.com/fwlink/?linkid=62999)).
-
-      - Verify the DNS server responsiveness by using the **nslookup** command.
-
-        For more information, see the instructions in "Verify DNS server responsiveness using the nslookup command" ([https://go.microsoft.com/fwlink/?LinkId=63000](https://go.microsoft.com/fwlink/?linkid=63000)).
+- Verify the DNS server responsiveness by using the **nslookup** command. For more information, see the instructions in [Verify DNS server responsiveness using the nslookup command](https://go.microsoft.com/fwlink/p/?linkid=63000).

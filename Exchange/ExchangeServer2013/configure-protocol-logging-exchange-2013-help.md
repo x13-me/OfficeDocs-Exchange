@@ -171,8 +171,6 @@ This example sets the following protocol log settings in the Transport service o
 
 - Sets the maximum age of a Receive connector protocol log file and a Send Connector protocol log file to 45 days.
 
-<!-- end list -->
-
 ```powershell
 Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
 ```
