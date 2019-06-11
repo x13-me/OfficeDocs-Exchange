@@ -51,8 +51,6 @@ This example sets the following agent log settings on the Mailbox server named M
 
 - Sets the maximum age of an agent log file to 14 days.
 
-<!-- end list -->
-
 ```powershell
 Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 ```

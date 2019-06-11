@@ -18,21 +18,13 @@ _**Applies to:** Exchange Server 2013_
 
 Direct Push is a feature that's built into Microsoft Exchange Server 2013. Direct Push keeps a mobile device current over a cellular or wireless network connection. It notifies the mobile device when new content is ready to be synchronized.
 
-**Contents**
-
-Overview
-
-Direct Push topology
-
-Configuring Direct Push to work through your firewall
-
 ## Overview
 
 For Direct Push to work, the mobile device must be Direct Push capable. These devices include the following:
 
-  - All versions of Windows Phone
+- All versions of Windows Phone
 
-  - Mobile phones that are produced by Microsoft Exchange ActiveSync licensees and are designed specifically to be Direct Push compatible
+- Mobile phones that are produced by Microsoft Exchange ActiveSync licensees and are designed specifically to be Direct Push compatible
 
 By default, Direct Push is enabled in Exchange 2013. Mobile devices that support Direct Push issue a long-lived HTTPS request to the server running Microsoft Exchange. The Exchange server monitors activity on the user's mailbox and sends a response to the mobile device if there are any changes, such as new or changed email, calendar, contact, or task items. If changes occur within the lifespan of the HTTPS request, the Exchange server issues a response to the device that states that changes have occurred and the device should initiate synchronization with the Exchange server. The device then issues this request to the server. When synchronization is complete, a new long-lived HTTPS request is generated to start the process again. This guarantees that email, calendar, contact, and task items are delivered quickly to the mobile device, and that it is always synchronized with the Exchange server.
 
@@ -68,6 +60,6 @@ For Direct Push to work through your firewall, you must open TCP port 443. This 
 
 In addition to opening ports on your firewall, for optimal Direct Push performance, you should increase the time-out value on your firewall from the default of 15 minutes to 30 minutes. The maximum length of the HTTPS request is determined by the following settings:
 
-  - The maximum time-out value that's set on the firewalls that control the traffic from the Internet to the Client Access server
+- The maximum time-out value that's set on the firewalls that control the traffic from the Internet to the Client Access server
 
-  - The firewall time-out values that are set by the mobile service provider
+- The firewall time-out values that are set by the mobile service provider

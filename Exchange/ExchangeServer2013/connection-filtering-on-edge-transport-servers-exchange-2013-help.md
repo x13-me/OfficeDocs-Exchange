@@ -22,20 +22,6 @@ By default, the Connection Filtering agent is the first anti-spam agent to evalu
 
 Connection filtering compares the IP address of the source mail server to the values in the IP Allow list, the IP Block list, IP Allow list providers, and IP Block list providers. You need to configure at least one of these four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-**Contents**
-
-IP Block list
-
-IP Allow list
-
-IP Block List providers
-
-IP Allow List providers
-
-Test IP Block List providers and IP Allow List providers
-
-Configure connection filtering on Edge Transport servers that aren't directly connected to the Internet
-
 ## IP Block list
 
 The IP Block list contains the IP addresses of email servers that you want to block. You manually maintain the IP addresses in the IP Block list. You can add individual IP addresses or IP address ranges. You can specify an expiration time that specifies how long the IP address entry will be blocked. When the expiration time is reached, the IP address entry in the IP Block list is disabled.
@@ -66,9 +52,9 @@ IP Block List providers can return different codes to identify why an IP address
 
 There are issues to consider when using IP Block list providers:
 
-  - Outages or delays at the IP Block list provider service can cause delays in the processing of messages on the Edge Transport server. You should always select reliable IP Block list providers.
+- Outages or delays at the IP Block list provider service can cause delays in the processing of messages on the Edge Transport server. You should always select reliable IP Block list providers.
 
-  - Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. You should always select IP Block list providers that provide clear procedures for evaluation and removal from their services.
+- Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. You should always select IP Block list providers that provide clear procedures for evaluation and removal from their services.
 
 ## Bitmask and absolute value examples
 

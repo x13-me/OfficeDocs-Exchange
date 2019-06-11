@@ -22,21 +22,11 @@ Microsoft Exchange 2013 includes a service named the Autodiscover service. This
 
 The Autodiscover service does the following:
 
-  - Automatically configures user profile settings for clients running Microsoft Office Outlook 2007, Outlook 2010, or Outlook 2013, as well as supported mobile phones. Phones running Windows Mobile 6.1 or a later version are supported. If your phone isn't a Windows Mobile phone, check your mobile phone documentation to see if it's supported.
+- Automatically configures user profile settings for clients running Microsoft Office Outlook 2007, Outlook 2010, or Outlook 2013, as well as supported mobile phones. Phones running Windows Mobile 6.1 or a later version are supported. If your phone isn't a Windows Mobile phone, check your mobile phone documentation to see if it's supported.
 
-  - Provides access to Exchange features for Outlook 2007, Outlook 2010, or Outlook 2013 clients that are connected to your Exchange messaging environment.
+- Provides access to Exchange features for Outlook 2007, Outlook 2010, or Outlook 2013 clients that are connected to your Exchange messaging environment.
 
-  - Uses a user's email address and password to provide profile settings to Outlook 2007, Outlook 2010, or Outlook 2013 clients and supported mobile phones. If the Outlook client is joined to a domain, the user's domain account is used.
-
-**Contents**
-
-Overview of the Autodiscover service
-
-How the Autodiscover service works
-
-Deployment options for the Autodiscover service
-
-Configuring Autodiscover for cross-forest moves
+- Uses a user's email address and password to provide profile settings to Outlook 2007, Outlook 2010, or Outlook 2013 clients and supported mobile phones. If the Outlook client is joined to a domain, the user's domain account is used.
 
 ## Overview of the Autodiscover service
 
@@ -44,15 +34,15 @@ The Autodiscover service makes it easier to configure Outlook 2007, Outlook 2010
 
 Through the Autodiscover service, Outlook finds a new connection point made up of the user's mailbox GUID + @ + the domain portion of the user's primary SMTP address. The Autodiscover service returns the following information to the client:
 
-  - The user's display name
+- The user's display name
 
-  - Separate connection settings for internal and external connectivity
+- Separate connection settings for internal and external connectivity
 
-  - The location of the user's Mailbox server
+- The location of the user's Mailbox server
 
-  - The URLs for various Outlook features that govern functionality such as free/busy information, Unified Messaging, and the offline address book
+- The URLs for various Outlook features that govern functionality such as free/busy information, Unified Messaging, and the offline address book
 
-  - Outlook Anywhere server settings
+- Outlook Anywhere server settings
 
 When a user's Exchange information is changed, Outlook automatically reconfigures the user's profile using the Autodiscover service. For example, if a user's mailbox is moved or the client can't connect to the user's mailbox or to available Exchange features, Outlook will contact the Autodiscover service and automatically update the user's profile to include the information that's required to connect to the mailbox and Exchange features.
 
@@ -60,11 +50,11 @@ When a user's Exchange information is changed, Outlook automatically reconfigure
 
 When you install a Client Access server in Exchange 2013, a default virtual directory named Autodiscover is created under the default website in Internet Information Services (IIS). This virtual directory handles Autodiscover service requests from Outlook 2007, Outlook 2010, and Outlook 2013 clients and supported mobile phones under the following circumstances:
 
-  - When a user account is configured or updated
+- When a user account is configured or updated
 
-  - When an Outlook client periodically checks for changes to the Exchange Web Services URLs
+- When an Outlook client periodically checks for changes to the Exchange Web Services URLs
 
-  - When underlying network connection changes occur in your Exchange messaging environment
+- When underlying network connection changes occur in your Exchange messaging environment
 
 Additionally, a new Active Directory object named the service connection point (SCP) is created on the server where you install the Client Access server.
 
