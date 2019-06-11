@@ -22,23 +22,15 @@ By default, when you install Exchange 2013, client communications are encrypted 
 
 SSL requires you to use digital certificates. This topic summarizes the different types of digital certificates and information about how to configure Exchange 2013 to use these types of digital certificates.
 
-**Contents**
-
-Overview of digital certificates
-
-Digital certificates and proxying
-
-Digital certificates best practices
-
 ## Overview of digital certificates
 
 Digital certificates are electronic files that work like an online password to verify the identity of a user or a computer. They're used to create the SSL encrypted channel that's used for client communications. A certificate is a digital statement that's issued by a certification authority (CA) that vouches for the identity of the certificate holder and enables the parties to communicate in a secure manner using encryption.
 
 Digital certificates do the following:
 
-  - They authenticate that their holders (people, websites, and even network resources such as routers) are truly who or what they claim to be.
+- They authenticate that their holders (people, websites, and even network resources such as routers) are truly who or what they claim to be.
 
-  - They protect data that's exchanged online from theft or tampering.
+- They protect data that's exchanged online from theft or tampering.
 
 Digital certificates can be issued by a trusted third-party CA or a Windows public key infrastructure (PKI) using Certificate Services, or they can be self-signed. Each type of certificate has advantages and disadvantages. Each type of digital certificate is tamper-proof and can't be forged.
 
@@ -97,19 +89,19 @@ Certificates are used for several things in Exchange. Most customers also use ce
 
 All the following Exchange services use the same certificate on a given Exchange Client Access server:
 
-  - Outlook Web App
+- Outlook Web App
 
-  - Exchange Administration Center (EAC)
+- Exchange Administration Center (EAC)
 
-  - Exchange Web Services
+- Exchange Web Services
 
-  - Exchange ActiveSync
+- Exchange ActiveSync
 
-  - Outlook Anywhere
+- Outlook Anywhere
 
-  - Autodiscover
+- Autodiscover
 
-  - Outlook Address Book distribution
+- Outlook Address Book distribution
 
 Because only a single certificate can be associated with a website, and because all these services are offered under a single website by default, all the names that clients of these services use must be in the certificate (or fall under a wildcard name in the certificate).
 
@@ -153,15 +145,15 @@ To prevent clients from receiving errors regarding untrusted certificates, the c
 
 A certification authority (CA) is a company that issues and ensures the validity of certificates. Client software (for example, browsers such as Microsoft Internet Explorer, or operating systems such as Windows or Mac OS) have a built-in list of CAs they trust. This list can usually be configured to add and remove CAs, but that configuration is often cumbersome. Use the following criteria when you select a CA to buy your certificates from:
 
-  - Ensure the CA is trusted by the client software (operating systems, browsers, and mobile phones) that will connect to your Exchange servers.
+- Ensure the CA is trusted by the client software (operating systems, browsers, and mobile phones) that will connect to your Exchange servers.
 
-  - Choose a CA that says it supports "Unified Communications certificates" for use with Exchange server.
+- Choose a CA that says it supports "Unified Communications certificates" for use with Exchange server.
 
-  - Make sure that the CA supports the kinds of certificates that you'll use. Consider using subject alternative name (SAN) certificates. Not all CAs support SAN certificates, and other CAs don't support as many host names as you might need.
+- Make sure that the CA supports the kinds of certificates that you'll use. Consider using subject alternative name (SAN) certificates. Not all CAs support SAN certificates, and other CAs don't support as many host names as you might need.
 
-  - Make sure that the license you buy for the certificates allows you to put the certificate on the number of servers that you intend to use. Some CAs only allow you to put a certificate on one server.
+- Make sure that the license you buy for the certificates allows you to put the certificate on the number of servers that you intend to use. Some CAs only allow you to put a certificate on one server.
 
-  - Compare certificate prices between CAs.
+- Compare certificate prices between CAs.
 
 ## Best practice: Use SAN certificates
 
@@ -181,11 +173,11 @@ The most important step you can take to reduce the number of host names that you
 
 The host names you must include in your Exchange certificates are the host names used by client applications to connect to Exchange. The following is a list of typical host names that would be required for a company named Contoso:
 
-  - **Mail.contoso.com**: This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
+- **Mail.contoso.com**: This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
 
-  - **Autodiscover.contoso.com**: This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
+- **Autodiscover.contoso.com**: This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
 
-  - **Legacy.contoso.com**: This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
+- **Legacy.contoso.com**: This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
 
 ## Understanding wildcard certificates
 

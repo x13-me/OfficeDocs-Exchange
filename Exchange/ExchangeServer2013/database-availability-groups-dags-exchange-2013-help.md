@@ -24,14 +24,6 @@ A DAG is a boundary for mailbox database replication, database and server switch
 
 Any server in a DAG can host a copy of a mailbox database from any other server in the DAG. When a server is added to a DAG, it works with the other servers in the DAG to provide automatic recovery from failures that affect mailbox databases, such as a disk, server, or network failure.
 
-**Contents**
-
-Database availability group lifecycle
-
-Using a database availability group for high availability
-
-Using a database availability group for site resilience
-
 ## Database availability group (DAG) lifecycle
 
 DAGs leverage the concept of *incremental deployment*, which is the ability to deploy service and data availability for all Mailbox servers and databases after Exchange is installed. After you deploy Exchange 2013 Mailbox servers, you can create a DAG, add Mailbox servers to the DAG, and then replicate mailbox databases between the DAG members.
@@ -45,15 +37,15 @@ In addition to a failover cluster being created, the infrastructure that monitor
 
 During creation, the DAG is given a unique name, and either assigned one or more static IP addresses or configured to use Dynamic Host Configuration Protocol (DHCP), or created without a cluster administrative access point. DAGs without an administrative access point can be created only on servers running Exchange 2013 Service Pack 1 or later on Windows Server 2012 R2 Standard or Datacenter edition. DAGs without cluster administrative access points have the following characteristics:
 
-  - There is no IP address assigned to the cluster/DAG, and therefore no IP Address Resource in the cluster core resource group.
+- There is no IP address assigned to the cluster/DAG, and therefore no IP Address Resource in the cluster core resource group.
 
-  - There is no network name assigned to the cluster, and therefore no Network Name Resource in the cluster core resource group
+- There is no network name assigned to the cluster, and therefore no Network Name Resource in the cluster core resource group
 
-  - The name of the cluster/DAG is not registered in DNS, and it is not resolvable on the network.
+- The name of the cluster/DAG is not registered in DNS, and it is not resolvable on the network.
 
-  - A cluster name object (CNO) is not created in Active Directory.
+- A cluster name object (CNO) is not created in Active Directory.
 
-  - The cluster cannot be managed using the Failover Cluster Management tool. It must be managed using Windows PowerShell, and the PowerShell cmdlets must be run against individual cluster members.
+- The cluster cannot be managed using the Failover Cluster Management tool. It must be managed using Windows PowerShell, and the PowerShell cmdlets must be run against individual cluster members.
 
 This example shows how to use the Shell to create a DAG with a cluster administrative access point that will have three servers. Two servers (EX1 and EX2) are on the same subnet (10.0.0.0), and the third server (EX3) is on a different subnet (192.168.0.0).
 
@@ -99,11 +91,11 @@ Underneath every DAG is a Windows failover cluster. Failover clusters use the co
 
 Quorum is important to ensure consistency, to act as a tie-breaker to avoid partitioning, and to ensure cluster responsiveness:
 
-  - **Ensuring consistency**: A primary requirement for a Windows failover cluster is that each of the members always has a view of the cluster that's consistent with the other members. The cluster hive acts as the definitive repository for all configuration information relating to the cluster. If the cluster hive can't be loaded locally on a DAG member, the Cluster service doesn't start, because it isn't able to guarantee that the member meets the requirement of having a view of the cluster that's consistent with the other members.
+- **Ensuring consistency**: A primary requirement for a Windows failover cluster is that each of the members always has a view of the cluster that's consistent with the other members. The cluster hive acts as the definitive repository for all configuration information relating to the cluster. If the cluster hive can't be loaded locally on a DAG member, the Cluster service doesn't start, because it isn't able to guarantee that the member meets the requirement of having a view of the cluster that's consistent with the other members.
 
-  - **Acting as a tie-breaker**: A quorum witness resource is used in DAGs with an even number of members to avoid split brain syndrome scenarios and to make sure that only one collection of the members in the DAG is considered official. When the witness server is needed for quorum, any member of the DAG that can communicate with the witness server can place a Server Message Block (SMB) lock on the witness server's witness.log file. The DAG member that locks the witness server (referred to as the *locking node*) retains an additional vote for quorum purposes. The DAG members in contact with the locking node are in the majority and maintain quorum. Any DAG members that can't contact the locking node are in the minority and therefore lose quorum.
+- **Acting as a tie-breaker**: A quorum witness resource is used in DAGs with an even number of members to avoid split brain syndrome scenarios and to make sure that only one collection of the members in the DAG is considered official. When the witness server is needed for quorum, any member of the DAG that can communicate with the witness server can place a Server Message Block (SMB) lock on the witness server's witness.log file. The DAG member that locks the witness server (referred to as the *locking node*) retains an additional vote for quorum purposes. The DAG members in contact with the locking node are in the majority and maintain quorum. Any DAG members that can't contact the locking node are in the minority and therefore lose quorum.
 
-  - **Ensuring responsiveness**: To ensure responsiveness, the quorum model makes sure that, whenever the cluster is running, enough members of the distributed system are operational and communicative, and at least one replica of the cluster's current state can be guaranteed. No additional time is required to bring members into communication or to determine whether a specific replica is guaranteed.
+- **Ensuring responsiveness**: To ensure responsiveness, the quorum model makes sure that, whenever the cluster is running, enough members of the distributed system are operational and communicative, and at least one replica of the cluster's current state can be guaranteed. No additional time is required to bring members into communication or to determine whether a specific replica is guaranteed.
 
 DAGs with an even number of members use the failover cluster's Node and File Share Majority quorum mode, which employs an external witness server that acts as a tie-breaker. In this quorum mode, each DAG member gets a vote. In addition, the witness server is used to provide one DAG member with a weighted vote (for example, it gets two votes instead of one). The cluster quorum data is stored by default on the system disk of each member of the DAG, and is kept consistent across those disks. However, a copy of the quorum data isn't stored on the witness server. A file on the witness server is used to keep track of which member has the most updated copy of the data, but the witness server doesn't have a copy of the cluster quorum data. In this mode, a majority of the voters (the DAG members plus the witness server) must be operational and able to communicate with each other to maintain quorum. If a majority of the voters can't communicate with each other, the DAG's underlying cluster loses quorum, and the DAG will require administrator intervention to become operational again.
 
@@ -157,9 +149,9 @@ In addition to providing high availability within a datacenter, a DAG can also b
 
 In this example, a passive copy of each active database in the Redmond datacenter is configured on EX6 in the Dublin datacenter. However, there are many other examples of DAG configurations that provide site resilience. For example:
 
-  - Instead of hosting only passive database copies, EX6 could host all active copies, or it could host a mixture of active and passive copies.
+- Instead of hosting only passive database copies, EX6 could host all active copies, or it could host a mixture of active and passive copies.
 
-  - In addition to EX6, multiple DAG members could be deployed in the Dublin datacenter, providing protection against additional failures. This configuration also provides additional capacity, so that if the Redmond datacenter fails, the Dublin datacenter can support a much larger user population.
+- In addition to EX6, multiple DAG members could be deployed in the Dublin datacenter, providing protection against additional failures. This configuration also provides additional capacity, so that if the Redmond datacenter fails, the Dublin datacenter can support a much larger user population.
 
 ## Using multiple database availability groups (DAGs) for site resilience
 
