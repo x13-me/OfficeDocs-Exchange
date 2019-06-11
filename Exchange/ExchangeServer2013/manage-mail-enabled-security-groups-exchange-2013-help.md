@@ -252,6 +252,5 @@ To verify that you've successfully changed properties for a security group, do t
 - In the Shell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
   ```powershell
-  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} |
-   fl Name,HiddenFromAddressListsEnabled
+  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Format-List Name,HiddenFromAddressListsEnabled
   ```

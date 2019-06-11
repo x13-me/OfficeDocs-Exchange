@@ -61,6 +61,3 @@ This example enables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $true
 ```
-
-
-

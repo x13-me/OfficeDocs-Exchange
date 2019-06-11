@@ -53,6 +53,3 @@ This example sets the number of sign-in failures before users are disconnected t
 ```
 Set-UMDialPlan -identity MyUMDialPlan -LogonFailuresBeforeDisconnect 5
 ```
-
-
-

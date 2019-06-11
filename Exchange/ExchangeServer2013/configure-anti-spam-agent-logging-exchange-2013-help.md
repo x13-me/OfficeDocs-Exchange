@@ -20,11 +20,11 @@ Agent logging records the actions performed by specific Exchange anti-spam agent
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service" and "Edge Transport server" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service" and "Edge Transport server" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
   - You can only use the Shell to perform this procedure.
 
@@ -38,23 +38,23 @@ Agent logging records the actions performed by specific Exchange anti-spam agent
 Run the following command:
 
 ```powershell
-    Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
 ```
 
 This example sets the following agent log settings on the Mailbox server named Mailbox01:
 
-  -  Sets the location of the agent log files to D:\\Anti-Spam Agent Log. Note that if the folder doesn't exist, it will be created for you.
+- Sets the location of the agent log files to D:\\Anti-Spam Agent Log. Note that if the folder doesn't exist, it will be created for you.
 
-  -  Sets the maximum size of an agent log file to 20 MB.
+- Sets the maximum size of an agent log file to 20 MB.
 
-  -  Sets the maximum size of the agent log directory to 400 MB.
+- Sets the maximum size of the agent log directory to 400 MB.
 
-  -  Sets the maximum age of an agent log file to 14 days.
+- Sets the maximum age of an agent log file to 14 days.
 
 <!-- end list -->
 
 ```powershell
-    Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 ```
 
 > [!NOTE]
@@ -72,8 +72,8 @@ To verify that you have successfully configured anti-spam agent logging, do the 
 
 1. In the Shell, run the following command:
 
-    ```powershell
-        Get-TransportService <ServerIdentity> | Format-List AgentLog*
-    ```
+   ```powershell
+   Get-TransportService <ServerIdentity> | Format-List AgentLog*
+   ```
 
 2. Verify the values displayed are the values you configured.

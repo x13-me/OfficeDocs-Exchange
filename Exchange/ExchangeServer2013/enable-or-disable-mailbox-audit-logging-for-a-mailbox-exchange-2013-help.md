@@ -25,23 +25,23 @@ For additional tasks related to mailbox audit logging, see [Mailbox audit loggin
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute.
+- Estimated time to complete: 1 minute.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - You can't use the Exchange admin center (EAC) to enable or disable mailbox audit logging. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to enable or disable mailbox audit logging. You must use the Shell.
 
-  - An administrator who has been assigned the Full Access permission to a user's mailbox is considered a delegate user.
+- An administrator who has been assigned the Full Access permission to a user's mailbox is considered a delegate user.
 
-  - Mailboxes are considered to be accessed by an administrator only in the following scenarios:
+- Mailboxes are considered to be accessed by an administrator only in the following scenarios:
 
-      - In-Place eDiscovery is used to search a mailbox.
+  - In-Place eDiscovery is used to search a mailbox.
 
-      - The **New-MailboxExportRequest** cmdlet is used to export a mailbox.
+  - The **New-MailboxExportRequest** cmdlet is used to export a mailbox.
 
-      - Microsoft Exchange Server MAPI Editor is used to access the mailbox.
+  - Microsoft Exchange Server MAPI Editor is used to access the mailbox.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -95,5 +95,5 @@ To verify that you have successfully enabled mailbox audit logging for a mailbox
 This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 
 ```powershell
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+Get-Mailbox "Ben Smith" | Format-List *audit*
 ```

@@ -1,5 +1,5 @@
 ---
-title: 'Add Mailbox and Client Access servers to a SIP URI dial plan'
+title: 'Add Mailbox and Client Access servers to a SIP URI dial plan: Exchange 2013 Help'
 TOCTitle: Add Mailbox and Client Access servers to a SIP URI dial plan
 ms:assetid: 17fed308-ff0d-4e61-b9f9-e6680b6eccaa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996399(v=EXCHG.150)
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Add Mailbox and Client Access servers to a SIP URI dial plan
+# Add Mailbox and Client Access servers to a SIP URI dial plan in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can add Client Access and Mailbox servers to SIP URI dial plans. Client Access and Mailbox servers can't be associated with Telephone Extension or E.164 dial plans, but the servers will answer all incoming calls.
 
@@ -24,13 +24,13 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: Less than 1 minute.
+- Estimated time to complete: Less than 1 minute.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-  - Before you perform these procedures, confirm that a SIP URI dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+- Before you perform these procedures, confirm that a SIP URI dial plan has been created. For detailed steps, see [Create a UM dial plan in Exchange Server](create-um-dial-plan-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -57,13 +57,11 @@ Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disable
 
 This example adds the Mailbox server named `MyMailboxServer` to two SIP dial plans, named `MySIPDialPlan` and `MySIPDialPlan2`, and sets the following:
 
-  - Allows both IPv4 and IPv6 addresses.
+- Allows both IPv4 and IPv6 addresses.
 
-  - Sets the maximum number of incoming calls to 50.
+- Sets the maximum number of incoming calls to 50.
 
-  - Configures the SIP access service for Lync Server.
-
-<!-- end list -->
+- Configures the SIP access service for Lync Server.
 
 ```powershell
 Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com

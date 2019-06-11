@@ -14,29 +14,27 @@ mtps_version: v=EXCHG.150
 
 # Upgrade Exchange 2010 UM to Exchange 2013 UM
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you're upgrading a Microsoft Exchange 2010 organization with Unified Messaging (UM) to Exchange 2013 Unified Messaging, there are steps that are required and other steps that were already completed as part of your Exchange 2010 UM deployment. Depending on your telephony environment and the UM components that were created and configured to support Unified Messaging in Exchange 2010, you may need to deploy additional telephony equipment including Voice over IP (VoIP) gateways, IP Private Branch eXchanges (PBXs), or traditional or SIP-enabled PBXs and then create and configure any additional UM components that will be required for Exchange 2013 UM.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 45-90 minutes.
+- Estimated time to complete this task: 45-90 minutes.
 
-  - Verify that you have the appropriate permissions in the Exchange 2010 and Exchange 2013 organization to create and configure all the required components.
+- Verify that you have the appropriate permissions in the Exchange 2010 and Exchange 2013 organization to create and configure all the required components.
 
-  - Verify that you've deployed and correctly configured your telephony components, including VoIP gateways and PBXs, IP PBXs, or Session Initiation Protocol (SIP)-enabled PBXs.
+- Verify that you've deployed and correctly configured your telephony components, including VoIP gateways and PBXs, IP PBXs, or Session Initiation Protocol (SIP)-enabled PBXs.
 
-  - Verify that you've correctly installed and configured the Client Access servers running the Microsoft Exchange Unified Messaging Call Router (UM Call Router) service and Mailbox servers running the Microsoft Exchange Unified Messaging (UM) service. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
+- Verify that you've correctly installed and configured the Client Access servers running the Microsoft Exchange Unified Messaging Call Router (UM Call Router) service and Mailbox servers running the Microsoft Exchange Unified Messaging (UM) service. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
     > [!WARNING]
     > You must deploy at least one Exchange 2013 Mailbox server in your organization before you configure the VoIP gateways or IP PBXs to send UM SIP and RTP traffic to the Exchange 2013 Client Access servers.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Download and install the required UM language packs
 
@@ -81,117 +79,117 @@ There could be situations that the Exchange 2010 system mailbox has been moved a
 
 Custom greetings, announcements, menus, and prompts are audio files (in .wav or .wma format) that are used by UM for the following purposes:
 
-  - On UM dial plans, the audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
+- On UM dial plans, the audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
 
-  - On UM auto attendants, the audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
+- On UM auto attendants, the audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
 
 When you're exporting and importing custom greetings, announcements, menus, and prompts from Exchange 2010 to Exchange 2013, you must use the **Export-UMPrompt** and **Import-UMPrompt** cmdlets. You can't use the EAC to export or import custom prompts. On an Exchange 2010 server, use the **Export-UMPrompt** cmdlet to export the Exchange 2010 dial plan and auto attendant prompts. After you've exported the prompts, you can import them to the Exchange 2013 Mailbox server. When you run the **Export-UMPrompt** cmdlet from your Exchange 2010 server, the command performs a GUID or object identifier lookup for the dial plan or auto attendant in Active Directory and queries it to determine if there are any custom greetings, announcements, menus, or prompts. If found, the custom greetings, announcements, menus, or prompts will be saved to the directory that you specify. After you've exported all custom greetings, announcements, menus, and prompts, use the **Import-UMPrompt** cmdlet to import the prompts into your Exchange 2013 system mailbox.
 
 This example exports the welcome greeting for the UM dial plan `MyUMDialPlan` and saves it as the file `welcomegreeting.wav`.
 
 ```powershell
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
 ```
 
 This example imports the welcome greeting `welcomegreeting.wav` from d:\\UMPrompts into the UM dial plan `MyUMDialPlan`.
 
 ```powershell
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
 ```
 
 This example exports a custom greeting for the UM auto attendant `MyUMAutoAttendant` and saves it to the file `welcomegreetingbackup.wav`.
 
 ```powershell
-    Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
 ```
 
 This example imports the welcome greeting `welcomegreeting.wav` from d:\\UMPrompts into the UM auto attendant `MyUMAutoAttendant`.
 
 ```powershell
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
 ```
 
 To learn more about custom prompts for UM, see:
 
-  - [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
+- [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
 
-  - [Import-UMPrompt](https://technet.microsoft.com/en-us/library/dd876899\(v=exchg.150\))
+- [Import-UMPrompt](https://technet.microsoft.com/en-us/library/dd876899\(v=exchg.150\))
 
-  - [Export-UMPrompt](https://technet.microsoft.com/en-us/library/dd876882\(v=exchg.150\))
+- [Export-UMPrompt](https://technet.microsoft.com/en-us/library/dd876882\(v=exchg.150\))
 
-  - [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
+- [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
 
 ## Step 4: Export and import certificates
 
 If you're using SIP secured or Secured dial plans in your Exchange 2010 organization, you'll need to export and import the certificates that were used to your Exchange 2013 Client Access and Mailbox servers. Mutual Transport Layer Security (mutual TLS) is used to encrypt data sent between your Exchange 2013 servers and the VoIP gateways, IP PBXs, and SIP-enabled PBXs. Certificates bind the identity of the certificate owner to a pair of electronic keys (public and private) that are used to encrypt and sign information digitally. You can use one of the following certificates for the UM and UM Call Router services:
 
-  - A self-signed (Exchange) certificate
+- A self-signed (Exchange) certificate
 
-  - An internal public key infrastructure (PKI) certificate
+- An internal public key infrastructure (PKI) certificate
 
-  - A third-party commercial certificate
+- A third-party commercial certificate
 
 By default, when you install Exchange 2013, two self-signed certificates are created: **Microsoft Exchange Server Auth Certificate** and **Microsoft Exchange**. The **Microsoft Exchange** self-signed certificate can be used for UM to encrypt data, but you must assign the certificate to the UM and UM Call Router services. This self-signed certificate can be copied and then imported on the VoIP gateways, IP PBXs, and SIP-enabled PBXs. However, it can't be used when you're integrating UM with Microsoft Lync Server.
 
 To enable UM to encrypt data that's sent between your Exchange 2013 servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs, you need to do the following:
 
-  - Use an existing self-signed UM certificate, create a new self-signed Exchange certificate, submit a certificate request to an internal certification authority for a PKI certificate, or purchase a third-party commercial certificate that you can use for mutual TLS between your Exchange 2013 Mailbox and Client Access servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs.
+- Use an existing self-signed UM certificate, create a new self-signed Exchange certificate, submit a certificate request to an internal certification authority for a PKI certificate, or purchase a third-party commercial certificate that you can use for mutual TLS between your Exchange 2013 Mailbox and Client Access servers and VoIP gateways, IP PBXs, and SIP-enabled PBXs.
 
-    Create an Exchange self-signed certificate by using the EAC, as follows:
+  Create an Exchange self-signed certificate by using the EAC, as follows:
 
-    1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-    2. On the **New Exchange certificate** page, choose **Create a self-signed certificate**, and then select **Next**.
+  2. On the **New Exchange certificate** page, choose **Create a self-signed certificate**, and then select **Next**.
 
-    3. Enter a friendly name for the certificate, and then select **Next**.
+  3. Enter a friendly name for the certificate, and then select **Next**.
 
-    4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
+  4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
 
-    5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-    6. Verify that the domains you included are correct, and then select **Finish**.
+  6. Verify that the domains you included are correct, and then select **Finish**.
 
-    > [!IMPORTANT]
-    > When you use the EAC to create a certificate, you won't be prompted to enable the services for the certificate. After the certificate has been created, you can use the EAC to enable the services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
+  > [!IMPORTANT]
+  > When you use the EAC to create a certificate, you won't be prompted to enable the services for the certificate. After the certificate has been created, you can use the EAC to enable the services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
-    Create an Exchange self-signed certificate by running the following command in the Shell.
+  Create an Exchange self-signed certificate by running the following command in the Shell.
 
-    ```powershell
-        New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    ```
+  ```powershell
+  New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+  ```
 
-    > [!NOTE]
-    > If you specify the services you want to enable by using the <EM>Services</EM> parameter, you will be prompted to enable the services for the certificate you created. In this example, you will be prompted to enable the certificate for the Unified Messaging and Unified Messaging Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
+  > [!NOTE]
+  > If you specify the services you want to enable by using the <EM>Services</EM> parameter, you will be prompted to enable the services for the certificate you created. In this example, you will be prompted to enable the certificate for the Unified Messaging and Unified Messaging Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
-  - Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2010, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2010 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2010 UM servers to the SAN in the Exchange 2013 certificate.
+- Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2010, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2010 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2010 UM servers to the SAN in the Exchange 2013 certificate.
 
-  - Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
+- Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
 
-    Enable the UM service and UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
+  Enable the UM service and UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
-    1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-    2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
+  2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
 
-    Enable an Exchange self-signed certificate by running the following command in the Shell.
+  Enable an Exchange self-signed certificate by running the following command in the Shell.
 
-    ```powershell
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-    ```
+  ```powershell
+  Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+  ```
 
-  - Configure any new or existing UM dial plans as SIP secured or Secured.
+- Configure any new or existing UM dial plans as SIP secured or Secured.
 
-  - Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
+- Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
 
-  - Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
+- Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
 
-  - Configure the listening port on the UM IP gateways to use TLS port 5061.
+- Configure the listening port on the UM IP gateways to use TLS port 5061.
 
-  - Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
+- Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
 ## Step 5: Configure the UM startup mode on all Exchange 2013 Client Access servers
 
@@ -207,11 +205,11 @@ Configure the UM startup mode on an Exchange 2013 Client Access server by using 
 
 4. Under **UM Call Router settings** \> **UM startup mode**, select one of the following from the drop-down list:
 
-      - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
+   - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
 
-      - **TLS**: Use this option if you're using mTLS and are using only SIP Secured or Secured dial plans.
+   - **TLS**: Use this option if you're using mTLS and are using only SIP Secured or Secured dial plans.
 
-      - **DUAL**: Use this option if you're using mTLS and are using Unsecured, SIP Secured, and Secured dial plans.
+   - **DUAL**: Use this option if you're using mTLS and are using Unsecured, SIP Secured, and Secured dial plans.
 
 5. After you select the UM startup mode, click **Save**.
 
@@ -235,18 +233,18 @@ Configure the UM startup mode on an Exchange 2013 Mailbox server by using the EA
 
 4. Under **UM Service settings** \> **UM startup mode**, select one of the following from the drop-down list:
 
-      - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
+   - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
 
-      - **TLS**: Use this option if you're using mTLS and are using only SIP Secured or Secured dial plans.
+   - **TLS**: Use this option if you're using mTLS and are using only SIP Secured or Secured dial plans.
 
-      - **DUAL**: Use this option if you're using mTLS and are using Unsecured, SIP Secured, and Secured dial plans.
+   - **DUAL**: Use this option if you're using mTLS and are using Unsecured, SIP Secured, and Secured dial plans.
 
 5. After you select the UM startup mode, click **Save**.
 
 Configure the UM startup mode on an Exchange 2013 Mailbox server by running the following command in the Shell.
 
 ```powershell
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
 ```
 
 ## Step 7: Create or configure existing UM dial plans
@@ -261,36 +259,36 @@ If required, you can create a UM dial plan by using the EAC:
 
 2. On the **New UM Dial Plan** page, complete the following boxes:
 
-      - **Name**: Type the name of the dial plan. A UM dial plan name is required and must be unique. However, the name you type is used only for display purposes in the EAC and the Shell. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
+   - **Name**: Type the name of the dial plan. A UM dial plan name is required and must be unique. However, the name you type is used only for display purposes in the EAC and the Shell. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
 
-        Although the box for the name of the dial plan can accept 64 characters, the name of the dial plan can't be longer than 49 characters. If you try to create a dial plan name that contains more than 49 characters, you'll receive an error message. The message will say that the UM mailbox policy couldn't be generated because the UM dial plan name is too long. This happens because, when you create a dial plan a default UM mailbox policy named *\<DialPlanName\>* **Default Policy** is also created. When the 15 characters in the default policy are added to the name of the dial plan, the total characters exceed the limit. The *name* parameter for both the UM dial plan and UM mailbox policy can be 64 characters. However, if the name of the dial plan is longer than 49 characters, the name of the default UM mailbox policy will be longer than 64 characters, and this isn't allowed by the system.
+     Although the box for the name of the dial plan can accept 64 characters, the name of the dial plan can't be longer than 49 characters. If you try to create a dial plan name that contains more than 49 characters, you'll receive an error message. The message will say that the UM mailbox policy couldn't be generated because the UM dial plan name is too long. This happens because, when you create a dial plan a default UM mailbox policy named *\<DialPlanName\>* **Default Policy** is also created. When the 15 characters in the default policy are added to the name of the dial plan, the total characters exceed the limit. The *name* parameter for both the UM dial plan and UM mailbox policy can be 64 characters. However, if the name of the dial plan is longer than 49 characters, the name of the default UM mailbox policy will be longer than 64 characters, and this isn't allowed by the system.
 
-      - **Extension length (digits)**: Enter the number of digits for extension numbers in the dial plan. The number of digits for extension numbers is based on the telephony dial plan created on a PBX. For example, if a user associated with a telephony dial plan dials a four-digit extension to call another user in the same telephony dial plan, you select 4 as the number of digits in the extension.
+   - **Extension length (digits)**: Enter the number of digits for extension numbers in the dial plan. The number of digits for extension numbers is based on the telephony dial plan created on a PBX. For example, if a user associated with a telephony dial plan dials a four-digit extension to call another user in the same telephony dial plan, you select 4 as the number of digits in the extension.
 
-        This is a required box that has a value range from 1 through 20. The typical extension length is from 3 through 7 numbers. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions.
+     This is a required box that has a value range from 1 through 20. The typical extension length is from 3 through 7 numbers. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions.
 
-        When you create a Telephone extension dial plan, you're required to enter an extension number for the user if they're linked to a Telephone extension dial plan. An extension number is also required with Session Initiation Protocol (SIP) dial plans or E.164 dial plans when a UM-enabled user is linked to a SIP URI or E.164 dial plan. The extension number is used by Outlook Voice Access users when they access their Exchange mailbox.
+     When you create a Telephone extension dial plan, you're required to enter an extension number for the user if they're linked to a Telephone extension dial plan. An extension number is also required with Session Initiation Protocol (SIP) dial plans or E.164 dial plans when a UM-enabled user is linked to a SIP URI or E.164 dial plan. The extension number is used by Outlook Voice Access users when they access their Exchange mailbox.
 
-      - **Dial plan type**: A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:
+   - **Dial plan type**: A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:
 
-          - **Telephone extension**: This is the most common URI type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<*IP address*\>. This is the default URI type for dial plans.
+     - **Telephone extension**: This is the most common URI type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<*IP address*\>. This is the default URI type for dial plans.
 
-          - **SIP URI**: Use this URI type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<*username*\>@\<*domain* or *IP address*\>:Port.
+     - **SIP URI**: Use this URI type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<*username*\>@\<*domain* or *IP address*\>:Port.
 
-          - **E.164**: E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country code, a national destination code, and a subscriber number. The calling and called party information sent from the VoIP gateway or IP PBX is listed in the following format: Tel:+14255550123.
+     - **E.164**: E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country code, a national destination code, and a subscriber number. The calling and called party information sent from the VoIP gateway or IP PBX is listed in the following format: Tel:+14255550123.
 
-        > [!WARNING]
-        > After you create a dial plan, you will be unable to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type.
+     > [!WARNING]
+     > After you create a dial plan, you will be unable to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type.
 
-      - **VoIP security mode**: Use this drop-down list to select the VoIP security setting for the UM dial plan. You can select one of the following security settings for the dial plan:
+   - **VoIP security mode**: Use this drop-down list to select the VoIP security setting for the UM dial plan. You can select one of the following security settings for the dial plan:
 
-          - **Unsecured**: By default, when you create a UM dial plan, it is set to not encrypt the SIP signaling or RTP traffic. In unsecured mode, the Client Access and Mailbox servers associated the UM dial plan send and receive data from VoIP gateways, IP PBXs, SBCs and other Client Access and Mailbox servers using no encryption. In unsecured mode, neither the Realtime Transport Protocol (RTP) media channel nor the SIP signaling information is encrypted.
+     - **Unsecured**: By default, when you create a UM dial plan, it is set to not encrypt the SIP signaling or RTP traffic. In unsecured mode, the Client Access and Mailbox servers associated the UM dial plan send and receive data from VoIP gateways, IP PBXs, SBCs and other Client Access and Mailbox servers using no encryption. In unsecured mode, neither the Realtime Transport Protocol (RTP) media channel nor the SIP signaling information is encrypted.
 
-          - **SIP secured**  When you select **SIP secured**, only the SIP signaling traffic is encrypted, and the RTP media channels still use TCP, which isn't encrypted. With SIP secured, Mutual Transport Layer Security (TLS) is used to encrypt the SIP signaling traffic and VoIP data.
+     - **SIP secured**  When you select **SIP secured**, only the SIP signaling traffic is encrypted, and the RTP media channels still use TCP, which isn't encrypted. With SIP secured, Mutual Transport Layer Security (TLS) is used to encrypt the SIP signaling traffic and VoIP data.
 
-          - **Secured**: When you select **Secured**, both the SIP signaling traffic and the RTP media channels are encrypted. Both the secure signaling media channel that uses Secure Realtime Transport Protocol (SRTP) and the SIP signaling traffic use mutual TLS to encrypt the VoIP data.
+     - **Secured**: When you select **Secured**, both the SIP signaling traffic and the RTP media channels are encrypted. Both the secure signaling media channel that uses Secure Realtime Transport Protocol (SRTP) and the SIP signaling traffic use mutual TLS to encrypt the VoIP data.
 
-      - **Country/Region code**: Use this box to type the country/region code number to be used for outgoing calls. This number will automatically be prepended to the telephone number that's dialed. This box accepts from 1 through 4 digits. For example, in the United States, the country/region code is 1. In the United Kingdom, it's 44.
+   - **Country/Region code**: Use this box to type the country/region code number to be used for outgoing calls. This number will automatically be prepended to the telephone number that's dialed. This box accepts from 1 through 4 digits. For example, in the United States, the country/region code is 1. In the United Kingdom, it's 44.
 
 3. Click **Save**.
 
@@ -311,7 +309,7 @@ If required, you can configure an existing UM dial plan by using the EAC, as fol
 If required, you can configure an existing UM dial plan by using the Shell:
 
 ```powershell
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
 ```
 
 When you deployed Exchange 2010 Unified Messaging, you were required to add a Unified Messaging server to a UM dial plan for it to answer incoming calls. This is no longer required. In Exchange 2013, Client Access and Mailbox servers can't be linked with a Telephone extension or E.164 dial plan, but must be linked to SIP URI dial plans. Client Access and Mailbox servers will answer all incoming calls for all types of dial plans.
@@ -357,7 +355,7 @@ To configure an existing UM IP gateway by using the EAC:
 To configure an existing UM IP gateway in the Shell, running the following command in the Shell.
 
 ```powershell
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
 ## Step 9: Create a UM hunt group
@@ -385,7 +383,7 @@ If required, you can To create a UM hunt group by using the EAC, as follows:
 If required, you can create a UM hunt group by running the following command in the Shell.
 
 ```powershell
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
 
 > [!TIP]
@@ -422,7 +420,7 @@ If required, you can create a UM auto attendant by using the EAC, as follows:
 If required, you can create a UM auto attendant by running the following command in the Shell.
 
 ```powershell
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
 ```
 
 If required, you can configure an existing auto attendant by using the EAC, as follows:
@@ -434,7 +432,7 @@ If required, you can configure an existing auto attendant by using the EAC, as f
 If required, you can configure an existing auto attendant by running the following command in the Shell.
 
 ```powershell
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
 ```
 
 ## Step 11: Create or configure UM mailbox policies
@@ -472,7 +470,7 @@ If required, you can configure an existing UM mailbox policy by using the EAC:
 If required, you can configure an existing UM mailbox policy by running the following command in the Shell.
 
 ```powershell
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```
 
 ## Step 12: Move existing UM-enabled mailboxes to Exchange 2013
@@ -483,13 +481,13 @@ During the process of upgrading, there will be a period of time during which you
 
 A move request is the process of moving a mailbox from one mailbox database to another. A local move request is a mailbox move that occurs within a single forest. For more information about mailbox moves, see:
 
-  - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
+- [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-  - [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
 
-  - [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
 
-  - [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
+- [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
 
 To move an Exchange 2010 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
@@ -542,7 +540,7 @@ To enable a user for Unified Messaging by using the EAC:
 To enable a user for Unified Messaging by using the Shell, run the following command.
 
 ```powershell
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
 ```
 
 If required, you can configure a user that's been enabled for UM by using the EAC:
@@ -574,7 +572,7 @@ If required, you can configure a user that's been enabled for UM by using the EA
 If required, you can configure a user that's been enabled for UM in the Shell by running the following command.
 
 ```powershell
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
 ```
 
 ## Step 14: Configure your VoIP gateways, IP PBXs, and SIP-enabled PBXs to send all incoming calls to the Exchange 2013 Client Access servers
@@ -587,11 +585,11 @@ When you're upgrading to Exchange 2013 UM, you should have already installed and
 
 The last step in the process of upgrading to Exchange 2013 UM is to configure the VoIP gateways, IP PBXs, or SIP-enabled PBXs to send incoming calls (including callers who want to leave voice mail for a user, calls from UM-enabled users calling in to Outlook Voice Access, and calls from callers that dial in to a UM auto attendant) to your Exchange 2013 Client Access servers. All these calls are received first by a VoIP gateway, IP PBX, or SIP-enabled PBX and then forwarded on to the Exchange 2013 Client Access servers in your Exchange 2013 organization. For more information, see the following resources:
 
-  -  [UM services](um-services-exchange-2013-help.md)
+- [UM services](um-services-exchange-2013-help.md)
 
-  -  [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
+- [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
+- [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
 ## Step 15: Disable call answering on an Exchange 2010 Unified Messaging server
 
@@ -641,10 +639,10 @@ To remove an Exchange 2010 UM server from a dial plan by using the Exchange Mana
 To remove an Exchange 2010 UM server from a dial plan using the Shell, run the following command.
 
 ```powershell
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
 ```
 
 In this example, there are three SIP URI dial plans: SipDP1, SipDP2 and SipDP3. This example removes the UM server named `MyUMServer` from the SipDP3 dial plan.
@@ -666,10 +664,10 @@ Set-UMServer -id MyUMServer -DialPlans SipDP1
 
 After you've set up Unified Messaging, verify the following to ensure it's working correctly:
 
-  - A user you've enabled for voice mail can sign in to Outlook Web App or Outlook and see a Welcome Message for Unified Messaging.
+- A user you've enabled for voice mail can sign in to Outlook Web App or Outlook and see a Welcome Message for Unified Messaging.
 
-  - UM users can receive voice messages.
+- UM users can receive voice messages.
 
-  - UM users can call in to an Outlook Voice Access number to listen to email, calendar items, and voice mail.
+- UM users can call in to an Outlook Voice Access number to listen to email, calendar items, and voice mail.
 
-  - UM is routing calls from outside of your organization, and you can place a call.
+- UM is routing calls from outside of your organization, and you can place a call.

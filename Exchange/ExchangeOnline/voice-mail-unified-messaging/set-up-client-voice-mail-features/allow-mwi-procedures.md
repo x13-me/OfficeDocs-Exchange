@@ -28,6 +28,3 @@ manager: dansimp
 [Enable missed call notifications for a user](enable-missed-call-notifications.md)
 
 [Disable missed call notifications for a user](disable-missed-call-notifications.md)
-
-
-

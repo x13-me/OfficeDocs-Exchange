@@ -32,6 +32,3 @@ manager: dansimp
 [Authorize calls for users in a dial plan](authorize-calls-for-users-in-a-dial-plan.md)
 
 [Authorize calls for a group of users](authorize-calls-for-a-group-of-users.md)
-
-
-

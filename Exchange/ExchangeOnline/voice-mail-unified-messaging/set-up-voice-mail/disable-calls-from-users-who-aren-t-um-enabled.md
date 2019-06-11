@@ -47,6 +47,3 @@ This example prevents Tony Smith from receiving voice calls from callers who are
 ```
 Set UMMailbox -Identity tony@contoso.com -AllowUMCallsFromNonUsers None
 ```
-
-
-

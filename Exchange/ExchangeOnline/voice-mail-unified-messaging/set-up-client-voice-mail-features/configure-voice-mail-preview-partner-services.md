@@ -77,6 +77,3 @@ If you want to configure the Voice Mail Preview partner service for some, but no
 - [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
 
 For more information about the Voice Mail Preview partner program, see [Voice Mail Preview advisor](voice-mail-preview-advisor.md).
-
-
-

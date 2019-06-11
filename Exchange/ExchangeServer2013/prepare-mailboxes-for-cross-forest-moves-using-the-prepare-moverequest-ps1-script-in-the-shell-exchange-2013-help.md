@@ -52,15 +52,16 @@ To assign a specific authentication credential for the remote forest domain cont
 
 1. Run the following commands to get the local forest and remote forest credentials.
 
-    ```powershell
-        $LocalCredentials = Get-Credential
-        $RemoteCredentials = Get-Credential
-    ```
+   ```powershell
+   $LocalCredentials = Get-Credential
+   $RemoteCredentials = Get-Credential
+   ```
+
 2. Run the following commands to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
 
-    ```powershell
-        Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
-     ```
+   ```powershell
+   Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
+   ```
 
 ## Parameter set of the script
 
@@ -168,16 +169,16 @@ This example provisions a single linked mail-enabled user in the local forest, w
 
 1. Run the following commands to get the local forest and remote forest credentials.
 
-    ```powershell
-        $LocalCredentials = Get-Credential
-        $RemoteCredentials = Get-Credential
-    ```
+   ```powershell
+   $LocalCredentials = Get-Credential
+   $RemoteCredentials = Get-Credential
+   ```
 
 2. Run the following command to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
 
-    ```powershell
-        Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser
-    ```
+   ```powershell
+   Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser
+   ```
 
 ## Example: Pipelining
 
@@ -185,15 +186,15 @@ This example supports pipelining if you supply a list of mailbox identities.
 
 1. Run the following command.
 
-    ```powershell
-    $UserCredentials = Get-Credential
-    ```
+   ```powershell
+   $UserCredentials = Get-Credential
+   ```
 
 2. Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
 
-    ```powershell
-        "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
-    ```
+   ```powershell
+   "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+   ```
 
 ## Example: Use a .csv file to bulk-create mail-enabled users
 
@@ -213,15 +214,15 @@ This example calls a .csv file to bulk create the target mail-enabled users.
 
 1. Run the following command to get the remote forest credentials.
 
-    ```powershell
-    $UserCredentials = Get-Credential
-    ```
+   ```powershell
+   $UserCredentials = Get-Credential
+   ```
 
 2. Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
 
-    ```powershell
-        Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
-    ```
+   ```powershell
+   Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+   ```
 
 ## Script behavior per target object
 

@@ -20,17 +20,17 @@ Pipeline tracing captures copies of email messages as they move through the tran
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 15 minutes
+- Estimated time to complete this procedure: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - Pipeline tracing copies the complete contents of email messages that are sent from the sender's email address. To avoid unwanted exposure of confidential information, you need to set appropriate security permissions on the location of the pipeline tracing folder.
+- Pipeline tracing copies the complete contents of email messages that are sent from the sender's email address. To avoid unwanted exposure of confidential information, you need to set appropriate security permissions on the location of the pipeline tracing folder.
 
-  - Don't enable pipeline tracing for long periods of time. Pipeline tracing creates multiple message snapshot files that accumulate quickly. Always monitor available disk space when pipeline tracing is enabled.
+- Don't enable pipeline tracing for long periods of time. Pipeline tracing creates multiple message snapshot files that accumulate quickly. Always monitor available disk space when pipeline tracing is enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ Pipeline tracing captures copies of email messages as they move through the tran
 Use the following syntax to configure the pipeline tracing sender address.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
 ```
 
 This example configures pipeline tracing to capture snapshots of all messages sent by the sender chris@contoso.com in the Transport service on the Mailbox server named Mailbox01.
@@ -67,7 +67,7 @@ The default pipeline tracing folder doesn't exist until after you enable pipelin
 Use the following syntax to configure the pipeline tracing folder.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
 ```
 
 This example sets the pipeline tracing folder for the Transport service on the Mailbox server named Mailbox01 to D:\\Hub\\Pipeline Tracing.
@@ -83,7 +83,7 @@ By default, pipeline tracing is disabled on all Exchange servers. When you enabl
 Use the following syntax to enable pipeline tracing.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
 ```
 
 This example enables pipeline tracing in the Transport service on the Mailbox server named Mailbox01.
@@ -98,9 +98,9 @@ To verify that you have successfully configured pipeline tracing, do the followi
 
 1. Run the following command:
 
-    ```powershell
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
-    ```
+   ```powershell
+   <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+   ```
 
 2. Verify the values displayed are the values you configured.
 
@@ -113,7 +113,7 @@ Because of the disk space and security concerns associated with pipeline tracing
 Use the following syntax to disable pipeline tracing.
 
 ```powershell
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
 ```
 
 This example disables pipeline tracing in the Transport service on the Mailbox server named Mailbox01.
@@ -128,9 +128,10 @@ To verify that you have successfully disabled pipeline tracing, do the following
 
 1. Run the following command:
 
-    ```powershell
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
-    ```
+   ```powershell
+   <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+   ```
+
 2. Verify the value of the *PipelineTracingEnabled* parameter is $false.
 
 3. Check the pipeline tracing folder, and verify message snapshot files are no longer being created in the folder.

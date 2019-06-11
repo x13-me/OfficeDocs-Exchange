@@ -56,6 +56,3 @@ This example deletes a UM hunt group named `MyUMHuntGroup`.
 ```
 Remove-UMHuntGroup -identity MyUMHuntGroup
 ```
-
-
-

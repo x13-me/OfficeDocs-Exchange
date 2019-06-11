@@ -80,6 +80,3 @@ This example creates the call answering rule `MyCallAnsweringRule` in the mailbo
 ```
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith -ScheduleStatus 0x4 - -KeyMappings "1,1,Receptionist,,,,,45678,","5,2,Urgent Issues,23456,23,45671,50,,"
 ```
-
-
-

@@ -25,15 +25,15 @@ For additional management tasks related to DAGs, see [Managing database availabi
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 10 minutes.
+- Estimated time to complete this task: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - A single logical disk/partition per physical disk must be created.
+- A single logical disk/partition per physical disk must be created.
 
-  - The specific database and log folder structure described in the steps below must be used.
+- The specific database and log folder structure described in the steps below must be used.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -61,7 +61,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 To verify that you've successfully configured the root paths for databases and volumes, run the following command.
 
 ```powershell
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
 The output for *AutoDagDatabasesRootFolderPath* and *AutoDagVolumesRootFolderPath* should reflect the configured paths.
@@ -81,7 +81,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 To verify that you've successfully configured the number of databases per volume, run the following command.
 
 ```powershell
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
 The output for *AutoDagDatabaseCopiesPerVolume* should reflect the configured value.
@@ -91,8 +91,8 @@ The output for *AutoDagDatabaseCopiesPerVolume* should reflect the configured va
 Next, create the directories that correspond to the root directories you configured in Step 1. This example shows how to create the default directories using the command prompt.
 
 ```powershell
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
 ```
 
 ## How do you know this step worked?
@@ -109,11 +109,11 @@ The created directories should appear in the output list.
 
 For every volume that will be used for databases (including spare volumes), use the Windows Disk Management application (diskmgmt.msc) to mount each volume in a mounted folder under C:\\ExchangeVolumes\\. For example, if there are 2 volumes with databases and 1 spare volume, mount the volumes to the following mounted folders:
 
-  - C:\\ExchangeVolumes\\Volume1
+- C:\\ExchangeVolumes\\Volume1
 
-  - C:\\ExchangeVolumes\\Volume2
+- C:\\ExchangeVolumes\\Volume2
 
-  - C:\\ExchangeVolumes\\Volume3
+- C:\\ExchangeVolumes\\Volume3
 
 The names of the mounted folders can be any folder name, as long as the folders are mounted under the root volume's path.
 
@@ -162,7 +162,7 @@ The created directories should appear in the output list.
 Create the mount points for each database and link the mount point to the correct volume. For example, the mounted folder for db001 should be at C:\\ExchangeDatabases\\db001. You can use diskmgmt.msc or mountvol.exe to do this. This example illustrates how to mount db001 to C:\\ExchangeDatabases\\db001 using mountvol.exe.
 
 ```powershell
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
 ```
 
 ## How do you know this step worked?
@@ -179,9 +179,9 @@ The mounted volume should appear in the mount point list.
 
 Next, create two directories underneath the folders you created in Step 5, one for each database and one for each of the database's log stream that will be stored on the same volume. You must use the following format for your directory structure:
 
-C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
+C:\\\<*DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 
-C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
+C:\\\<*DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 This example illustrates how to create directories for 4 databases that will be stored on Volume 1:
 
@@ -234,7 +234,7 @@ The created directories should appear in the output list.
 Create databases with log and database paths configured with the appropriate folders. This example illustrates how to create a database that's stored in the newly created directory and mount point structure.
 
 ```powershell
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
 ```
 
 ## How do you know this step worked?
@@ -242,7 +242,7 @@ Create databases with log and database paths configured with the appropriate fol
 To verify that you've successfully created databases in the appropriate folder, run the following command.
 
 ```powershell
-    Get-MailboxDatabase db001 | Format List *path*
+Get-MailboxDatabase db001 | Format List *path*
 ```
 
 Database properties that are returned should indicate that the database file and log files are being stored in the above folders.

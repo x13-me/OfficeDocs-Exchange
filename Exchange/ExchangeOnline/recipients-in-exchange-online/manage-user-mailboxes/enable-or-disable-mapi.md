@@ -96,6 +96,3 @@ Or
   ```
 
     If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.
-
-
-

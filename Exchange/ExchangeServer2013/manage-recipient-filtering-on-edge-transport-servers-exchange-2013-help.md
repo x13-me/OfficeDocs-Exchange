@@ -23,23 +23,23 @@ Recipient filtering is provided by the Recipient Filter agent. When recipient fi
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-  - The *AddressBookEnabled* parameter on the **Set-AcceptedDomain** cmdlet enables or disables recipient filtering for recipients in an accepted domain. By default, recipient filtering is enabled for authoritative domains, and disabled for internal relay domains and external relay domains. To view the status of the *AddressBookEnabled* parameter for the accepted domains in your organization, run the following command:
+- The *AddressBookEnabled* parameter on the **Set-AcceptedDomain** cmdlet enables or disables recipient filtering for recipients in an accepted domain. By default, recipient filtering is enabled for authoritative domains, and disabled for internal relay domains and external relay domains. To view the status of the *AddressBookEnabled* parameter for the accepted domains in your organization, run the following command:
 
-    ```powershell
-    Get-AcceptedDomain | Format-List Name,AddressBookEnabled
-    ```
+  ```powershell
+  Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+  ```
 
-  - If you disable recipient filtering using the procedure in this topic, recipient filtering functionality will be disabled, but the underlying Recipient Filter agent will remain enabled.
+- If you disable recipient filtering using the procedure in this topic, recipient filtering functionality will be disabled, but the underlying Recipient Filter agent will remain enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -67,9 +67,9 @@ To verify that you have successfully enabled or disabled recipient filtering, do
 
 1. Run the following command:
 
-    ```powershell
-    Get-RecipientFilterConfig | Format-List Enabled
-    ```
+   ```powershell
+   Get-RecipientFilterConfig | Format-List Enabled
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -93,9 +93,9 @@ To verify that you have successfully enabled or disabled the Recipient Block lis
 
 1. Run the following command:
 
-    ```powershell
-    Get-RecipientFilterConfig | Format-List BlockListEnabled
-    ```
+   ```powershell
+   Get-RecipientFilterConfig | Format-List BlockListEnabled
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -116,13 +116,13 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 To add or remove entries without modifying any existing values, run the following command:
 
 ```powershell
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
 ```
 
 This example adds chris@contoso.com to the list of recipients, and removes michelle@contoso.com from the list of recipients in the Recipient Block list:
 
 ```powershell
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
 ```
 
 ## How do you know this worked?

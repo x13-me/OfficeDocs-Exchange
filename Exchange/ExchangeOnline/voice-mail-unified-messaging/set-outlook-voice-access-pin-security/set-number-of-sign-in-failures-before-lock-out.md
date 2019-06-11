@@ -64,6 +64,3 @@ This example sets the number of sign-in failures before the Outlook Voice Access
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3
 -MaxLogonAttempts 5 -MinPINLength 9
 ```
-
-
-

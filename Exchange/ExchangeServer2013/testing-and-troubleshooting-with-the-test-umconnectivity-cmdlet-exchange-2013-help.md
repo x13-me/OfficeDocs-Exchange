@@ -1,5 +1,5 @@
 ---
-title: 'Test and troubleshoot with the Test-UMConnectivity cmdlet'
+title: 'Test and troubleshoot with the Test-UMConnectivity cmdlet: Exchange 2013 Help'
 TOCTitle: Testing and troubleshooting with the Test-UMConnectivity cmdlet
 ms:assetid: 08e67a99-e37f-4afd-bd58-455b62580af7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995978(v=EXCHG.150)
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Testing and troubleshooting with the Test-UMConnectivity cmdlet
+# Testing and troubleshooting with the Test-UMConnectivity cmdlet in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you install the Client Access and Mailbox servers and configure Unified Messaging, you can use multiple diagnostic tests and a software-based telephone application to test telephony connectivity and the operation of the Unified Messaging services.
 

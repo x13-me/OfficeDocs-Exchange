@@ -104,6 +104,3 @@ This example changes the free/busy status to Away on the call answering rule `My
 ```
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith@contoso.com -ScheduleStatus 0x8
 ```
-
-
-

@@ -32,8 +32,10 @@ Your users carry sensitive corporate information in their pockets every day. If 
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
--  There are two types of EAS wipes:
+- There are two types of EAS wipes:
+
 1. Prior to EAS v16.1, remote wipe would perform a device level wipe, restoring the device to factory conditions.
+
 2. With EAS v16.1 and later, EAS also supports account only remote wipe. When triggered, this will wipe only the EAS profile data (mailbox, contacts, and calendar). In order for this to work, the client has to support EAS v16.1 protocol. If the client doesn’t support v16.1, the wipe will fail and an error will be given.
 
 > [!NOTE]
@@ -87,6 +89,3 @@ There are several ways to verify that the remote wipe completed.
 - In the EAC, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
 
 - In Outlook on the web, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
-
-
-

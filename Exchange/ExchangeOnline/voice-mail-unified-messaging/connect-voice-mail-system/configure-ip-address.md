@@ -68,6 +68,3 @@ This example prevents the UM IP gateway named `MyUMIPGateway` from accepting inc
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
-
-
-

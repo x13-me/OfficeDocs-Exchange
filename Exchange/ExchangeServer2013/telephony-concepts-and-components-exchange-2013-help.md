@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Telephony concepts and components
+# Telephony concepts and components in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 If you're planning and deploying Microsoft Exchange 2013 Unified Messaging (UM) on your network, you must understand Unified Messaging and telephony networks. This topic provides an overview of telephony infrastructure concepts and components that will help you plan and deploy servers running Exchange 2013 Unified Messaging.
 

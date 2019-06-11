@@ -38,9 +38,9 @@ The green arrow indicates how, at this point in the migration, User 2 still cont
 
 ![During a single batch of a G Suite migration](../media/gsuite-mig-during-batch.png)
 
-User 1 and User 2 are part of the first migration batch to Office 365, while User 3 and User 4 will be part of a later batch. The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes still reside. Because User 1 and User 2 have had their migrations started, they've been converted from MailUsers to Mailboxes on the Office 365 side. 
+User 1 and User 2 are part of the first migration batch to Office 365, while User 3 and User 4 will be part of a later batch. The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes still reside. Because User 1 and User 2 have had their migrations started, they've been converted from MailUsers to Mailboxes on the Office 365 side.
 
-The ExternalEmailAddress for each user has been moved to a ForwardingSmtpAddress, so that messages sent to User 1 and User 2 will be delivered back to their source mailboxes on the G Suite side by rerouting the message back to the G Suite routing domain. This is indicated by the red arrows in the above diagram. Mail is still being synced from the source G Suite side to the Office 365 side. 
+The ExternalEmailAddress for each user has been moved to a ForwardingSmtpAddress, so that messages sent to User 1 and User 2 will be delivered back to their source mailboxes on the G Suite side by rerouting the message back to the G Suite routing domain. This is indicated by the red arrows in the above diagram. Mail is still being synced from the source G Suite side to the Office 365 side.
 
 ![After a single batch of a G Suite migration](../media/gsuite-mig-after-batch.png)
 
@@ -55,32 +55,36 @@ After all migration batches have been completed, all users can use their migrate
 ## Create a Google Service Account
 
 > [!IMPORTANT]
-> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly.
-> [!NOTE]
-> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well.
+> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly. <br/><br/> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well.
 
 1. In Chrome, go to the [Developer page for Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) and sign in as a Google user (such as the G Suite admin).
 
-2. Click **Create** to create and name a new project for the onboarding (such as "Gsuite migration project"), or click **Select** to select an existing project.  
-![Create a project](../media/gsuite-mig-1-newproject.png)
+2. Click **Create** to create and name a new project for the onboarding (such as "Gsuite migration project"), or click **Select** to select an existing project.
+
+   ![Create a project](../media/gsuite-mig-1-newproject.png)
 
 3. Click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
-![Create service account](../media/gsuite-mig-2-newservice.png)
+
+   ![Create service account](../media/gsuite-mig-2-newservice.png)
 
 4. On the **Service account permissions (optional)** screen, click **Continue**.
 
-5. Under **Create key (optional)** click **Create Key**.  
-![Create key](../media/gsuite-mig-3-createkey.png)
+5. Under **Create key (optional)** click **Create Key**.
+
+   ![Create key](../media/gsuite-mig-3-createkey.png)
 
 6. Under **Key type**, make sure **JSON** is selected, and then click **Create**.
-![JSON key](../media/gsuite-mig-4-json.png)
+
+   ![JSON key](../media/gsuite-mig-4-json.png)
 
 7. Keep track of the JSON keyfile that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Office 365](#create-a-migration-endpoint-in-office-365). Click **Done**.
 
-8. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).  
-![Unique ID](../media/gsuite-mig-6-enable-domain-delegation.png)
+8. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
+
+   ![Unique ID](../media/gsuite-mig-6-enable-domain-delegation.png)
 
 9. Still on the **Service account details** page, if necessary, click **Show Domain-Wide Delegation**.
+
 10. Click to select **Enable G Suite Domain-wide Delegation**, and then click **Save**.
 
 ## Enable API usage in your project
@@ -105,11 +109,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Click **Security**, then click **Advanced settings**, and then click **Manage API client access**.
 
-3. In **Client Name**, type the ClientId for your service account, and then in **API Scopes**, add the required scopes (https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing). The scopes need to be entered in comma-separated format, with no spaces in between. If the API Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
+3. In **Client Name**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
 
-4. Click **Authorize**. Verify that the resulting list shows "Email (Read/Write/Send)", "Calendar (Read-Write)", "Contacts (Read/Write)", and "<https://www.googleapis.com/auth/gmail.settings.sharing>".
+4. In **API Scopes** add the required scopes (https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing). The scopes need to be entered in comma-separated format, with no spaces in between. If the API Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
 
-![Grant service account access](../media/gsuite-mig-8-grant-service-account-access.png)
+5. Click **Authorize**. Verify that the resulting list shows "Email (Read/Write/Send)", "Calendar (Read-Write)", "Contacts (Read/Write)", and "<https://www.googleapis.com/auth/gmail.settings.sharing>".
+
+   ![Grant service account access](../media/gsuite-mig-8-grant-service-account-access.png)
 
 > [!NOTE]
 > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
@@ -142,7 +148,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add another domain](../media/gsuite-mig-9-sub-domain-0365.png)
 
-4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.  
+4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.
 
    ![Set up Google mx](../media/gsuite-mig-12-set-up-google-mx.png)
 
@@ -166,30 +172,45 @@ The primary email address that you provision for each user should be the same as
 
    ![Choose Gsuite](../media/gsuite-mig-13-eac-choose-gsuite.png)
 
-4. Under **Select the users**, click **Choose File** and navigate to the CSV file of all the users you are migrating in this batch. The two supported columns in the CSV file are **EmailAddress**, which is each user's email address in the target Office 365 environment, and **UserName**, which is provided in case someone's user name differs from their user account on the G Suite side of the migration. If your CSV file contains additional columns, click to select **Allow unknown columns in the CSV file**.  
+4. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+
+   - EmailAddress (required). Contains the primary email address for an existing Office 365 mailbox.
+
+   - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+
+   ```
+   EmailAddress
+   will@fabrikaminc.net
+   user123@fabrikaminc.net
+   ```
+
+5. Under **Select the users**, click **Choose File** and navigate to the CSV file of all the users you are migrating in this batch. If your CSV file contains additional columns besides the two mentioned above, click to select **Allow unknown columns in the CSV file**.
 
    ![Csv file](../media/gsuite-mig-14-eac-csv.png)
 
-5. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
+6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-6. Enter an email address for a user within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
+7. Enter an email address for a user within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
 
-7. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
+8. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
    ![user email address](../media/gsuite-mig-15-eac-user.png)
 
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-8. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-office-365) for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.  
+9. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-office-365) for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
-9. Under **Start the batch**, fill in the names or aliases of anyone who should be notified about the batch progress. Then select how you want to begin and complete the batch. When done, click **new**.  
+   > [!NOTE]
+   > The target delivery domain you will want to use will not automatically show up in the dropdown - instead you should click within the text box and type it in.
 
-   ![start the batch](../media/gsuite-mig-17-eac-start.png)
+10. Under **Start the batch**, fill in the names or aliases of anyone who should be notified about the batch progress. Then select how you want to begin and complete the batch. When done, click **new**.
 
-10. After the batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.  
+    ![start the batch](../media/gsuite-mig-17-eac-start.png)
+
+11. After the batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.
 
     ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
 
@@ -226,6 +247,12 @@ New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::Read
    - EmailAddress (required). Contains the primary email address for an existing Office 365 mailbox.
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+
+   ```
+   EmailAddress
+   will@fabrikaminc.net
+   user123@fabrikaminc.net
+   ```
 
 3. Run the following command:
 

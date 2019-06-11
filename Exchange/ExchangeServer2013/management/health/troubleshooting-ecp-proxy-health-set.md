@@ -76,7 +76,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
    1. Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
 
       ```powershell
-       Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
+      Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
       ```
 
       For example, to retrieve the ECP.Proxy health set details about server1.contoso.com, run the following command:

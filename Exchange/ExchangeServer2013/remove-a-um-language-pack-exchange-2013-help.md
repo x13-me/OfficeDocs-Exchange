@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Remove a UM language pack
+# Remove a UM language pack in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use the EAC or the Shell to manage Unified Messaging (UM) languages on Mailbox servers running the Microsoft Exchange Unified Messaging service. However, to remove a language from the list on a UM dial plan, you must remove the appropriate UM language pack from the Mailbox server by using the **Setup.exe /RemoveUmLanguagePack** command. After you remove the UM language pack from the Mailbox server, the language won't be available when you configure a UM dial plan or a UM auto attendant. You can view the UM language packs that are installed by viewing the properties of the Mailbox server or by using the **Get-UMService** cmdlet.
 

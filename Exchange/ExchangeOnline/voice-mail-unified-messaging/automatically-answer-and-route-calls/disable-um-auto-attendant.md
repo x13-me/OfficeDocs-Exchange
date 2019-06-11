@@ -51,6 +51,3 @@ This example disables a UM auto attendant named `MyUMAutoAttendant`.
 ```
 Disable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
-
-
-

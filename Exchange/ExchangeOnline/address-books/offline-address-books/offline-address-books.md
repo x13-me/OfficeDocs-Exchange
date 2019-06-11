@@ -52,4 +52,3 @@ There are situations where Outlook will always perform a full OAB download. For 
 - A previous full download failed, and Outlook has to start over.
 
 - When a user has multiple MAPI profiles on the same Outlook client computer and they switch between the two profiles that both use Cached Exchange Mode, multiple full OAB downloads of the same OAB files will occur. Outlook supports only one OAB per user account on a computer. If you have multiple profiles, only one profile can download the OAB. If you have to use two or more profiles that use Cached Exchange Mode, make sure that one of the profiles is configured to not download the OAB.
-

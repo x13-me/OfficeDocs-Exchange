@@ -145,6 +145,3 @@ The UM call data that you export includes the following detailed information abo
 - **Burst Gap duration**: The average duration of packet loss during bursts of losses for the selected call.
 
 - **Audio Codec**: The audio codec used during the call.
-
-
-

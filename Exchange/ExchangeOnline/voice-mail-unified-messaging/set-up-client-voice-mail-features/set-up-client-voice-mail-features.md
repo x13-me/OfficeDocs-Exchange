@@ -57,6 +57,3 @@ UM forwards incoming fax calls for a UM-enabled user to a dedicated fax partner 
 - Set the partner fax server URI to allow inbound faxing.
 
 - Configure authentication between the Mailbox server and the fax partner server.
-
-
-
