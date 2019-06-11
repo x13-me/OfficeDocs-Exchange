@@ -20,15 +20,15 @@ Sender ID functionality is provided by the Sender ID agent. Sender ID validates 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -56,9 +56,9 @@ To verify that you have successfully enabled or disabled Sender ID, do the follo
 
 1. Run the following command:
 
-    ```powershell
-    Get-SenderIDConfig | Format-List Enabled
-    ```
+   ```powershell
+   Get-SenderIDConfig | Format-List Enabled
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -82,9 +82,9 @@ To verify that you have successfully configured the Sender ID action for spoofed
 
 1. Run the following command:
 
-    ```powershell
-    Get-SenderIDConfig | Format-List SpoofedDomainAction
-    ```
+   ```powershell
+   Get-SenderIDConfig | Format-List SpoofedDomainAction
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -110,9 +110,9 @@ To verify that you have successfully configured the Sender ID action for transie
 
 1. Run the following command:
 
-    ```powershell
-    Get-SenderIDConfig | Format-List TempErrorAction
-    ```
+   ```powershell
+   Get-SenderIDConfig | Format-List TempErrorAction
+   ```
 
 2. Verify the value displayed is the value you configured.
 
@@ -121,31 +121,29 @@ To verify that you have successfully configured the Sender ID action for transie
 To replace the existing values, run the following command:
 
 ```powershell
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
 ```
 
 This example configures the Sender ID agent to bypass the Sender ID check for messages sent to kim@contoso.com and john@contoso.com, and to bypass the Sender ID check for messages sent from the fabrikam.com domain.
 
 ```powershell
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
 ```
 
 To add or remove entries without modifying any existing values, run the following command:
 
 ```powershell
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
 ```
 
 This example configures the Sender ID agent with the following information:
 
-  - Add chris@contoso.com and michelle@contoso.com to the list of existing recipients who bypass the Sender ID check.
+- Add chris@contoso.com and michelle@contoso.com to the list of existing recipients who bypass the Sender ID check.
 
-  - Remove tailspintoys.com from the list of existing domains that bypass the Sender ID check.
-
-<!-- end list -->
+- Remove tailspintoys.com from the list of existing domains that bypass the Sender ID check.
 
 ```powershell
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
 ```
 
 ## How do you know this worked?
@@ -154,8 +152,8 @@ To verify that you have successfully configured recipient and sender domain exce
 
 1. Run the following command:
 
-    ```powershell
-    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
-    ```
+   ```powershell
+   Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+   ```
 
 2. Verify the values displayed are the values you configured.

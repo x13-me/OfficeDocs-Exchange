@@ -67,7 +67,6 @@ This example sets the following message tracking log settings on the Mailbox ser
 
 - Sets the maximum age of a message tracking log file to 45 days.
 
-<!-- end list -->
 ```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
 ```

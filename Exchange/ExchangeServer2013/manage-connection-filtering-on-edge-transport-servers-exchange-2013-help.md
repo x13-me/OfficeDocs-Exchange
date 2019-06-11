@@ -642,8 +642,6 @@ This example creates an IP Allow List provider named "Contoso IP Allow List Prov
 
 - **Bitmask code to use from the provider**: 127.0.0.1
 
-<!-- end list -->
-
 ```powershell
 Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
 ```
