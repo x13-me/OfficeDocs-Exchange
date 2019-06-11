@@ -96,7 +96,7 @@ Outlook on the web (formerly known as Outlook Web App) is supported, but with so
 
 In a hybrid scenario, Outlook on the web isn't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook on the web. Outlook 2016 for Mac users can access public folders in a hybrid scenario if the following conditions are true:
 
-- You've followd the procedures at [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788.aspx).
+- You've followed the procedures at [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788.aspx).
 
 - The April 2016 update for Outlook 2016 for Mac has been installed on all clients.
 
