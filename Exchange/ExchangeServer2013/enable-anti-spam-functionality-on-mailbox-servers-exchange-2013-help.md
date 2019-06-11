@@ -18,13 +18,13 @@ _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, the following anti-spam agents are available in the Transport service on Mailbox servers, but they are not installed by default:
 
-  - Content Filter agent
+- Content Filter agent
 
-  - Sender ID agent
+- Sender ID agent
 
-  - Sender Filter agent
+- Sender Filter agent
 
-  - Protocol Analysis agent for sender reputation
+- Protocol Analysis agent for sender reputation
 
 However, you can install these anti-spam agents on a Mailbox server using a script in the Exchange Management Shell. Typically, you would install the anti-spam agents on a Mailbox server only when your organization accepts all incoming mail without any prior anti-spam filtering.
 
@@ -35,13 +35,13 @@ What happens if you install the available anti-spam agents in the Transport serv
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 15 minutes
+- Estimated time to complete this task: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - The Connection Filter agent and the Attachment Filter agent aren't available on Mailbox servers. They're only available on an Edge Transport server. However, the Malware agent is installed and enabled by default on a Mailbox server. For more information, see [Anti-malware protection](anti-malware-protection-exchange-2013-help.md).
+- The Connection Filter agent and the Attachment Filter agent aren't available on Mailbox servers. They're only available on an Edge Transport server. However, the Malware agent is installed and enabled by default on a Mailbox server. For more information, see [Anti-malware protection](anti-malware-protection-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -53,7 +53,7 @@ What happens if you install the available anti-spam agents in the Transport serv
 Run the following command:
 
 ```powershell
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
 ```
 
 ## How do you know this step worked?

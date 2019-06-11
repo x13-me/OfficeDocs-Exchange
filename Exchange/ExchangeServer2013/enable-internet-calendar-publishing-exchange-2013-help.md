@@ -35,17 +35,17 @@ For additional management tasks related to sharing policies, see [Sharing polici
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 15 minutes.
+- Estimated time to complete this task: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - An Exchange 2013 Client Access server exists in the Exchange organization that's sharing users' calendar information.
+- An Exchange 2013 Client Access server exists in the Exchange organization that's sharing users' calendar information.
 
-  - User mailboxes are on Exchange 2013 Mailbox servers in the Exchange organization that's sharing users' calendar information.
+- User mailboxes are on Exchange 2013 Mailbox servers in the Exchange organization that's sharing users' calendar information.
 
-  - Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
+- Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -81,7 +81,7 @@ Get-ExchangeServer | format-list
 This example enables the publishing virtual directory on Client Access server CAS01.
 
 ```powershell
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
 ```
 
 Where the identity `CAS01\owa (Default Web Site)` is both the server name and the Outlook Web App virtual directory.
@@ -121,11 +121,11 @@ If you want to create a sharing policy specifically for Internet calendar publis
 
 6. To specify the calendar sharing levels you want to enforce for the sharing policy, select the **Share your calendar folder** check box, and then select one of the following:
 
-      - **Calendar free/busy information with time only**
+   - **Calendar free/busy information with time only**
 
-      - **Calendar free/busy information with time, subject, and location**
+   - **Calendar free/busy information with time, subject, and location**
 
-      - **All calendar appointment information, including time, subject, location and title**
+   - **All calendar appointment information, including time, subject, location and title**
 
 7. Click **Save** to set the rules for the sharing policy.
 
@@ -136,7 +136,7 @@ If you want to create a sharing policy specifically for Internet calendar publis
 This example creates an Internet calendar publishing sharing policy named Internet and configures the policy to share only availability information. The policy is enabled.
 
 ```powershell
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
 ```
 
 This example adds the sharing policy Internet to a user mailbox.
@@ -177,11 +177,11 @@ If you want to configure the default sharing policy for Internet calendar publis
 
 5. To specify the calendar sharing levels you want to enforce for the sharing policy, select the **Share your calendar folder** check box, and then select one of the following:
 
-      - **Calendar free/busy information with time only**
+   - **Calendar free/busy information with time only**
 
-      - **Calendar free/busy information with time, subject, and location**
+   - **Calendar free/busy information with time, subject, and location**
 
-      - **All calendar appointment information, including time, subject, location and title**
+   - **All calendar appointment information, including time, subject, location and title**
 
 6. Click **Save** to set the rules for the sharing policy.
 
@@ -192,7 +192,7 @@ If you want to configure the default sharing policy for Internet calendar publis
 This example updates the Default Sharing Policy and configures the policy to share only availability information. The policy is enabled.
 
 ```powershell
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).

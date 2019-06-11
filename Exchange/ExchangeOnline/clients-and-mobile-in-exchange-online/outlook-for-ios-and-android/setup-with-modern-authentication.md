@@ -26,10 +26,10 @@ Users with modern authentication-enabled accounts (Office 365 accounts or [on-pr
 ## Modern Authentication
 
 Modern authentication is an umbrella term for a combination of authentication and authorization methods. These include:
-  
+
 - **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
-    
-- **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth). 
+
+- **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth).
 
 Modern authentication is enabled through the use of the Active Directory Authentication Library (ADAL). ADAL-based authentication is what Outlook for iOS and Android uses to access Exchange Online mailboxes in Office 365. ADAL authentication, used by Office apps on both desktop and mobile devices, involves users signing in directly to Azure Active Directory, which is Office 365's identity provider, instead of providing credentials to Outlook.
 
@@ -65,7 +65,7 @@ Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) u
 
 For more information, see [How to enable cross-app SSO on iOS using ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-sso-ios).
 
-If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users adding an account in Outlook for iOS and Android will see the discovered account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen. 
+If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users adding an account in Outlook for iOS and Android will see the discovered account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen.
 
 The following images show an example of account configuration via single sign-on for a first-time user:
 

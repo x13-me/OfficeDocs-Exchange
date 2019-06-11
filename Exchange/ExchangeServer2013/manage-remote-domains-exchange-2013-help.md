@@ -24,15 +24,15 @@ If you remove a remote domain entry, the settings for message transfer no longer
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes.
+- Estimated time to complete each procedure: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Remote domains" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Remote domains" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - You can't create a remote domain for an address space that's configured as an accepted domain in your organization. For example, if your organization accepts mail for fabrikam.com, you can't create a remote domain for fabrikam.com.
+- You can't create a remote domain for an address space that's configured as an accepted domain in your organization. For example, if your organization accepts mail for fabrikam.com, you can't create a remote domain for fabrikam.com.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -56,7 +56,7 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 This example creates a remote domain entry for messages sent to the fabrikam.com domain and all subdomains.
 
 ```powershell
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
 ```
 
 ## How do you know this worked?
@@ -73,11 +73,11 @@ You configure the settings in the remote domain entry using the **Set-RemoteDoma
 
 To configure remote domains for specific scenarios, see the following topics:
 
-  - [Configure remote domain out of office replies](configure-remote-domain-out-of-office-replies-exchange-2013-help.md)
+- [Configure remote domain out of office replies](configure-remote-domain-out-of-office-replies-exchange-2013-help.md)
 
-  - [Configure remote domain automatic replies](configure-remote-domain-automatic-replies-exchange-2013-help.md)
+- [Configure remote domain automatic replies](configure-remote-domain-automatic-replies-exchange-2013-help.md)
 
-  - [Configure remote domain message reporting](configure-remote-domain-message-reporting-exchange-2013-help.md)
+- [Configure remote domain message reporting](configure-remote-domain-message-reporting-exchange-2013-help.md)
 
 ## Use the Shell to remove a remote domain
 
