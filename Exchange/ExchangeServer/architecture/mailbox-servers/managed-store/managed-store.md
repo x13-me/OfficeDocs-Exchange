@@ -57,19 +57,6 @@ The Managed Store is also tightly integrated with the Microsoft Exchange Replica
 
   - Provides database cache for a database.
 
-
-Before the Managed Store was introduced in Exchange Server 2013, all previous versions of Exchange supported a single instance of the Information Store process (Store.exe) that hosted all databases on the server. This led to the following issues in previous versions of Exchange:
-
-- **No isolation between databases on the server**: An issue with a single mailbox database negatively affected affect all other databases on the server.
-
-- **Limited processor affinity**: The Extensible Storage Engine (ESE) format that's used for mailbox databases actually performed worse with more than 12 processor cores
-
-All previous versions of Exchange Server, from Exchange Server 4.0 to Exchange Server 2010, have  on the Mailbox server role. This single Store instance hosts all databases on the server: active, passive, lagged, and recovery. In the previous Exchange architectures, there is little, if any, isolation between the different databases hosted on a Mailbox server. An issue with a single mailbox database has the potential to negatively affect all other databases, and crashes resulting from a mailbox corruption can affect service for all users whose databases are hosted on that server.
-
-Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
-
-The Store.exe process has evolved considerably throughout the years as Exchange Server itself evolved, but as a single process, ultimately its scalability is limited, and it represents a single point of failure. Because of these limits, Store.exe is gone in Exchange 2013 and replaced by the Managed Store.
-
 ## Static database caching algorithm
 
 The Managed Store uses a very simple and straightforward algorithm for determining database cache as compared to *dynamic buffer allocation* that was used in the previous versions of Exchange. The memory that's allocated for each database cache (that is, each store worker process) is based on number of local database copies and configured value of the *MaximumActiveDatabases* parameter on the **Set-MailboxServer** cmdlet (the default value is $null or blank). If the value of *MaximumActiveDatabases* is greater than number of current database copies, then the cache calculation is based on the number of database copies.
