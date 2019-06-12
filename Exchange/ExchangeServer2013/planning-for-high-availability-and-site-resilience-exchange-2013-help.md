@@ -20,33 +20,17 @@ During the planning phase, the system architects, administrators, and other key 
 
 There are general requirements that must be met for deploying these features, as well as hardware, software, and networking requirements that must also be met.
 
-**Contents**
-
-General requirements
-
-Hardware requirements
-
-Storage requirements
-
-Software requirements
-
-Network requirements
-
-Witness server requirements
-
-Planning for site resilience
-
 ## General requirements
 
 Before deploying a database availability group (DAG) and creating mailbox database copies, make sure that the following system-wide recommendations are met:
 
-  - Domain Name System (DNS) must be running. Ideally, the DNS server should accept dynamic updates. If the DNS server doesn't accept dynamic updates, you must create a DNS host (A) record for each Exchange server. Otherwise, Exchange won't function properly.
+- Domain Name System (DNS) must be running. Ideally, the DNS server should accept dynamic updates. If the DNS server doesn't accept dynamic updates, you must create a DNS host (A) record for each Exchange server. Otherwise, Exchange won't function properly.
 
-  - Each Mailbox server in a DAG must be a member server in the same domain.
+- Each Mailbox server in a DAG must be a member server in the same domain.
 
-  - Adding an Exchange 2013 Mailbox server that's also a directory server to a DAG isn't supported.
+- Adding an Exchange 2013 Mailbox server that's also a directory server to a DAG isn't supported.
 
-  - The name you assign to the DAG must be a valid, available, and unique computer name of 15 characters or less.
+- The name you assign to the DAG must be a valid, available, and unique computer name of 15 characters or less.
 
 ## Hardware requirements
 
@@ -72,37 +56,37 @@ In previous versions of Exchange, we recommended at least two networks (one MAPI
 
 Consider the following when designing the network infrastructure for your DAG:
 
-  - Each member of the DAG must have at least one network adapter that's able to communicate with all other DAG members. If you're using a single network path, we recommend that you use a minimum of 1 gigabit Ethernet, but preferably 10 gigabit Ethernet. In addition, when using a single network adapter in each DAG member, we recommend that you design the overall solution with the single network adapter and path in mind.
+- Each member of the DAG must have at least one network adapter that's able to communicate with all other DAG members. If you're using a single network path, we recommend that you use a minimum of 1 gigabit Ethernet, but preferably 10 gigabit Ethernet. In addition, when using a single network adapter in each DAG member, we recommend that you design the overall solution with the single network adapter and path in mind.
 
-  - Using two network adapters in each DAG member provides you with one MAPI network and one Replication network, with redundancy for the Replication network and the following recovery behaviors:
+- Using two network adapters in each DAG member provides you with one MAPI network and one Replication network, with redundancy for the Replication network and the following recovery behaviors:
 
-      - In the event of a failure affecting the MAPI network, a server failover will occur (assuming there are healthy mailbox database copies that can be activated).
+  - In the event of a failure affecting the MAPI network, a server failover will occur (assuming there are healthy mailbox database copies that can be activated).
 
-      - In the event of a failure affecting the Replication network, if the MAPI network is unaffected by the failure, log shipping and seeding operations will revert to use the MAPI network, even if the MAPI network has it's *ReplicationEnabled* property set to False. When the failed Replication network is restored to health and ready to resume log shipping and seeding operations, you must manually switch over to the Replication network. To change replication from the MAPI network to a restored Replication network, you can either suspend and resume continuous replication by using the **Suspend-MailboxDatabaseCopy** and **Resume-MailboxDatabaseCopy** cmdlets, or restart the Microsoft Exchange Replication service. We recommend using suspend and resume operations to avoid the brief outage caused by restarting the Microsoft Exchange Replication service.
+  - In the event of a failure affecting the Replication network, if the MAPI network is unaffected by the failure, log shipping and seeding operations will revert to use the MAPI network, even if the MAPI network has it's *ReplicationEnabled* property set to False. When the failed Replication network is restored to health and ready to resume log shipping and seeding operations, you must manually switch over to the Replication network. To change replication from the MAPI network to a restored Replication network, you can either suspend and resume continuous replication by using the **Suspend-MailboxDatabaseCopy** and **Resume-MailboxDatabaseCopy** cmdlets, or restart the Microsoft Exchange Replication service. We recommend using suspend and resume operations to avoid the brief outage caused by restarting the Microsoft Exchange Replication service.
 
-  - Each DAG member must have the same number of networks. For example, if you plan on using a single network adapter in one DAG member, all members of the DAG must also use a single network adapter.
+- Each DAG member must have the same number of networks. For example, if you plan on using a single network adapter in one DAG member, all members of the DAG must also use a single network adapter.
 
-  - Each DAG must have no more than one MAPI network. The MAPI network must provide connectivity to other Exchange servers and other services, such as Active Directory and DNS.
+- Each DAG must have no more than one MAPI network. The MAPI network must provide connectivity to other Exchange servers and other services, such as Active Directory and DNS.
 
-  - Additional Replication networks can be added, as needed. You can also prevent an individual network adapter from being a single point of failure by using network adapter teaming or similar technology. However, even when using teaming, this doesn't prevent the network itself from being a single point of failure. Moreover, teaming adds unnecessary complexity to the DAG.
+- Additional Replication networks can be added, as needed. You can also prevent an individual network adapter from being a single point of failure by using network adapter teaming or similar technology. However, even when using teaming, this doesn't prevent the network itself from being a single point of failure. Moreover, teaming adds unnecessary complexity to the DAG.
 
-  - Each network in each DAG member server must be on its own network subnet. Each server in the DAG can be on a different subnet, but the MAPI and Replication networks must be routable and provide connectivity, such that:
+- Each network in each DAG member server must be on its own network subnet. Each server in the DAG can be on a different subnet, but the MAPI and Replication networks must be routable and provide connectivity, such that:
 
-      - Each network in each DAG member server is on its own network subnet that's separate from the subnet used by each other network in the server.
+  - Each network in each DAG member server is on its own network subnet that's separate from the subnet used by each other network in the server.
 
-      - Each DAG member server's MAPI network can communicate with each other DAG member's MAPI network.
+  - Each DAG member server's MAPI network can communicate with each other DAG member's MAPI network.
 
-      - Each DAG member server's Replication network can communicate with each other DAG member's Replication network.
+  - Each DAG member server's Replication network can communicate with each other DAG member's Replication network.
 
-      - There is no direct routing that allows heartbeat traffic from the Replication network on one DAG member server to the MAPI network on another DAG member server, or vice versa, or between multiple Replication networks in the DAG.
+  - There is no direct routing that allows heartbeat traffic from the Replication network on one DAG member server to the MAPI network on another DAG member server, or vice versa, or between multiple Replication networks in the DAG.
 
-  - Regardless of their geographic location relative to other DAG members, each member of the DAG must have round trip network latency no greater than 500 milliseconds between each other member. As the round trip latency between two Mailbox servers hosting copies of a database increases, the potential for replication not being up to date also increases. Regardless of the latency of the solution, customers should validate that the networks between all DAG members is capable of satisfying the data protection and availability goals of the deployment. Configurations with higher latency values may require special tuning of DAG, replication, and network parameters, such as increasing the number of databases or decreasing the number of mailboxes per database, to achieve the desired goals.
+- Regardless of their geographic location relative to other DAG members, each member of the DAG must have round trip network latency no greater than 500 milliseconds between each other member. As the round trip latency between two Mailbox servers hosting copies of a database increases, the potential for replication not being up to date also increases. Regardless of the latency of the solution, customers should validate that the networks between all DAG members is capable of satisfying the data protection and availability goals of the deployment. Configurations with higher latency values may require special tuning of DAG, replication, and network parameters, such as increasing the number of databases or decreasing the number of mailboxes per database, to achieve the desired goals.
 
-  - Round trip latency requirements may not be the most stringent network bandwidth and latency requirement for a multi-datacenter configuration. You must evaluate the total network load, which includes client access, Active Directory, transport, continuous replication, and other application traffic, to determine the necessary network requirements for your environment.
+- Round trip latency requirements may not be the most stringent network bandwidth and latency requirement for a multi-datacenter configuration. You must evaluate the total network load, which includes client access, Active Directory, transport, continuous replication, and other application traffic, to determine the necessary network requirements for your environment.
 
-  - DAG networks support Internet Protocol version 4 (IPv4) and IPv6. IPv6 is supported only when IPv4 is also used; a pure IPv6 environment isn't supported. Using IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on that computer, and the network supports both IP address versions. If Exchange 2013 is deployed in this configuration, all server roles can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
+- DAG networks support Internet Protocol version 4 (IPv4) and IPv6. IPv6 is supported only when IPv4 is also used; a pure IPv6 environment isn't supported. Using IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on that computer, and the network supports both IP address versions. If Exchange 2013 is deployed in this configuration, all server roles can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
 
-  - Automatic Private IP Addressing (APIPA) is a feature of Windows that automatically assigns IP addresses when no Dynamic Host Configuration Protocol (DHCP) server is available on the network. APIPA addresses (including manually assigned addresses from the APIPA address range) aren't supported for use by DAGs or by Exchange 2013.
+- Automatic Private IP Addressing (APIPA) is a feature of Windows that automatically assigns IP addresses when no Dynamic Host Configuration Protocol (DHCP) server is available on the network. APIPA addresses (including manually assigned addresses from the APIPA address range) aren't supported for use by DAGs or by Exchange 2013.
 
 ## DAG name and IP address requirements
 
@@ -186,13 +170,13 @@ A network adapter intended for use by a MAPI network should be configured as des
 
 The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
-  - The IP address for a DAG member's MAPI network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
+- The IP address for a DAG member's MAPI network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
 
-  - The MAPI network typically uses a default gateway, although one isn't required.
+- The MAPI network typically uses a default gateway, although one isn't required.
 
-  - At least one DNS server address must be configured. Using multiple DNS servers is recommended for redundancy.
+- At least one DNS server address must be configured. Using multiple DNS servers is recommended for redundancy.
 
-  - The **Register this connection's addresses in DNS** check box should be selected.
+- The **Register this connection's addresses in DNS** check box should be selected.
 
 ## Replication network adapter configuration
 
@@ -243,13 +227,13 @@ A network adapter intended for use by a Replication network should be configured
 
 The TCP/IP v4 properties for a Replication network adapter are configured as follows:
 
-  - The IP address for a DAG member's Replication network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
+- The IP address for a DAG member's Replication network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
 
-  - Replication networks typically don't have default gateways, and if the MAPI network has a default gateway, no other networks should have default gateways. Routing of network traffic on a Replication network can be configured by using persistent, static routes to the corresponding network on other DAG members using gateway addresses that have the ability to route between the Replication networks. All other traffic not matching this route will be handled by the default gateway that's configured on the adapter for the MAPI network.
+- Replication networks typically don't have default gateways, and if the MAPI network has a default gateway, no other networks should have default gateways. Routing of network traffic on a Replication network can be configured by using persistent, static routes to the corresponding network on other DAG members using gateway addresses that have the ability to route between the Replication networks. All other traffic not matching this route will be handled by the default gateway that's configured on the adapter for the MAPI network.
 
-  - DNS server addresses shouldn't be configured.
+- DNS server addresses shouldn't be configured.
 
-  - The **Register this connection's addresses in DNS** check box shouldn't be selected.
+- The **Register this connection's addresses in DNS** check box shouldn't be selected.
 
 ## Witness server requirements
 
@@ -269,21 +253,21 @@ The solution's architects and administrators will also identify which set of use
 
 Constructing the appropriate SLAs often requires answering the following basic questions:
 
-  - What level of service is required after the primary datacenter fails?
+- What level of service is required after the primary datacenter fails?
 
-  - Do users need their data or just messaging services?
+- Do users need their data or just messaging services?
 
-  - How rapidly is data required?
+- How rapidly is data required?
 
-  - How many users must be supported?
+- How many users must be supported?
 
-  - How will users access their data?
+- How will users access their data?
 
-  - What is the standby datacenter activation SLA?
+- What is the standby datacenter activation SLA?
 
-  - How is service moved back to the primary datacenter?
+- How is service moved back to the primary datacenter?
 
-  - Are the resources dedicated to the site resilience solution?
+- Are the resources dedicated to the site resilience solution?
 
 By answering these questions, you begin to shape a site resilient design for your messaging solution. A core requirement of recovery from site failure is to create a solution that gets the necessary data to the backup datacenter that hosts the backup messaging service.
 
@@ -305,11 +289,11 @@ Some applications that integrate with Exchange have specific certificate require
 
 In addition to the specific networking requirements that must be met for each DAG, as well as for each server that's a member of a DAG, there are some requirements and recommendations that are specific to site resilience configurations. As with all DAGs, whether the DAG members are deployed in a single site or in multiple sites, the round-trip return network latency between DAG members must be no greater than 500 milliseconds. In addition, there are specific configuration settings that are recommended for DAGs that are extended across multiple sites:
 
-  - **MAPI networks should be isolated from Replication networks**: Windows network policies, Windows firewall policies, or router access control lists (ACLs) should be used to block traffic between the MAPI network and the Replication networks. This configuration is necessary to prevent network heartbeat cross talk.
+- **MAPI networks should be isolated from Replication networks**: Windows network policies, Windows firewall policies, or router access control lists (ACLs) should be used to block traffic between the MAPI network and the Replication networks. This configuration is necessary to prevent network heartbeat cross talk.
 
-  - **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**: The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Microsoft Office Outlook Web App, Microsoft Exchange ActiveSync, Exchange Web services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
+- **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**: The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Microsoft Office Outlook Web App, Microsoft Exchange ActiveSync, Exchange Web services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
 
-  - **Use static routes to configure connectivity across Replication networks**: To provide network connectivity between each of the Replication network adapters, use persistent static routes. This is a quick and one-time configuration that's performed on each DAG member when using static IP addresses. If you're using DHCP to obtain IP addresses for your Replication networks, you can also use it to assign static routes for the replication, thereby simplifying the configuration process.
+- **Use static routes to configure connectivity across Replication networks**: To provide network connectivity between each of the Replication network adapters, use persistent static routes. This is a quick and one-time configuration that's performed on each DAG member when using static IP addresses. If you're using DHCP to obtain IP addresses for your Replication networks, you can also use it to assign static routes for the replication, thereby simplifying the configuration process.
 
 ## General site resilience planning
 
@@ -317,18 +301,18 @@ In addition to the requirements listed above for high availability, there are ot
 
 To minimize the time it takes to activate a second datacenter, and allow the second datacenter to host the service endpoints of a failed datacenter, the appropriate planning must be completed. The following are examples:
 
-  - The SLA goals for the site resilience solution must be well understood and documented.
+- The SLA goals for the site resilience solution must be well understood and documented.
 
-  - The servers in the second datacenter must have sufficient capacity to host the combined user population of both datacenters.
+- The servers in the second datacenter must have sufficient capacity to host the combined user population of both datacenters.
 
-  - The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging is in use), and site infrastructure (such as power or cooling).
+- The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging is in use), and site infrastructure (such as power or cooling).
 
-  - For some services to be able to service users from the failed datacenter, they must have the proper server certificates configured. Some services don't allow instancing (for example, POP3 and IMAP4) and only allow the use of a single certificate. In these cases, either the certificate must be a SAN certificate that includes multiple names, or the multiple names must be similar enough so that a wildcard certificate can be used (assuming the security policies of the organization allows the use of wildcard certificates).
+- For some services to be able to service users from the failed datacenter, they must have the proper server certificates configured. Some services don't allow instancing (for example, POP3 and IMAP4) and only allow the use of a single certificate. In these cases, either the certificate must be a SAN certificate that includes multiple names, or the multiple names must be similar enough so that a wildcard certificate can be used (assuming the security policies of the organization allows the use of wildcard certificates).
 
-  - The necessary services must be defined in the second datacenter. For example, if the first datacenter has three different SMTP destinations on different transport servers, the appropriate configuration must be defined in the second datacenter to enable at least one (if not all three) transport server to host the workload.
+- The necessary services must be defined in the second datacenter. For example, if the first datacenter has three different SMTP destinations on different transport servers, the appropriate configuration must be defined in the second datacenter to enable at least one (if not all three) transport server to host the workload.
 
-  - The necessary network configuration must be in place to support the datacenter switchover. This might mean making sure that the load balancing configurations are in place, that global DNS is configured, and that the Internet connection is enabled with the appropriate routing configured.
+- The necessary network configuration must be in place to support the datacenter switchover. This might mean making sure that the load balancing configurations are in place, that global DNS is configured, and that the Internet connection is enabled with the appropriate routing configured.
 
-  - The strategy for enabling the DNS changes necessary for a datacenter switchover must be understood. The specific DNS changes, including their TTL settings, must be defined and documented to support the SLA in effect.
+- The strategy for enabling the DNS changes necessary for a datacenter switchover must be understood. The specific DNS changes, including their TTL settings, must be defined and documented to support the SLA in effect.
 
-  - A strategy for testing the solution must also be established and factored into the SLA. Periodic validation of the deployment is the only way to guarantee that the quality and viability of the deployment doesn't degrade over time. After the deployment is validated, we recommend that the part of the configuration that directly affects the success of the solution be explicitly documented. In addition, we recommend that you enhance your change management processes around those segments of the deployment.
+- A strategy for testing the solution must also be established and factored into the SLA. Periodic validation of the deployment is the only way to guarantee that the quality and viability of the deployment doesn't degrade over time. After the deployment is validated, we recommend that the part of the configuration that directly affects the success of the solution be explicitly documented. In addition, we recommend that you enhance your change management processes around those segments of the deployment.

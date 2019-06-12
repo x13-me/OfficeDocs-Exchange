@@ -22,13 +22,13 @@ A soft-deleted mailbox is retained in the source database until the deleted mail
 
 To learn more about soft-deleted mailboxes and perform other related management tasks, see the following topics:
 
-  - [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
+- [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
 
-  - [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
+- [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
-  - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
+- [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-  - [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
+- [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
@@ -74,13 +74,13 @@ $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$
 This example restores a soft-deleted mailbox, which is identified by the display name in the *SourceStoreMailbox* parameter and is located on the MBXDB01 mailbox database, to the target mailbox named Debra Garcia. The *AllowLegacyDNMismatch* parameter is used so the source mailbox can be restored to a mailbox that doesn't have the same legacy DN value as the soft-deleted mailbox.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
 ```
 
 This example restores Pilar Pinilla's soft-deleted archive mailbox, which is identified by the mailbox GUID, to her current archive mailbox. The *AllowLegacyDNMismatch* parameter isn't necessary because a primary mailbox and its corresponding archive mailbox have the same legacy DN.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
 For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).

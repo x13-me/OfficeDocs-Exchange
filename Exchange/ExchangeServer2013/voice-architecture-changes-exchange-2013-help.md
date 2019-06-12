@@ -18,16 +18,6 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 The Microsoft Exchange Server 2013 architecture is different than the architecture in Exchange Server 2007 and Exchange Server 2010. In Exchange 2007 and Exchange 2010, the types of servers were separated into multiple server roles: Client Access, Mailbox, Hub Transport, and Unified Messaging. In Exchange 2013, the server roles are combined into two types of servers, and all components or services from those server roles are run on the same physical server or on two separate servers called Client Access and Mailbox. In the new model, the Client Access server running the Microsoft Exchange Unified Messaging Call Router service redirects Session Initialization Protocol (SIP) traffic that's generated from an incoming call to a Mailbox server. Then a media (Realtime Transport Protocol (RTP) or secure RTP (SRTP)) channel is established from the VoIP gateway or IP Private Branch eXchange (PBX) to the Mailbox server that hosts the user's mailbox. In Exchange 2013, the Mailbox server has the same processes as the Unified Messaging server role in Exchange 2007 and Exchange 2010. The Mailbox server runs both the Microsoft Exchange Unified Messaging service and UM worker processes. The Client Access server runs the Microsoft Exchange Unified Messaging Call Router service, which receives an incoming call and forwards it to the Mailbox server.
 
-**Contents**
-
-Support for the new Exchange architecture
-
-UM ports
-
-UM dial plans
-
-UM Call Router performance counters
-
 ## Support for the new Exchange architecture
 
 In Exchange 2013, the Client Access server is responsible for Autodiscover, Secure Sockets Layer (SSL), authentication, redirection, and proxy. The Client Access server is the entry point for any inbound calls or SIP requests for Unified Messaging (UM). The routing logic and SIP REDIRECT is implemented as a service that's automatically included in a Client Access server. This service is known as the Microsoft Exchange Unified Messaging Call Router service. It's installed and runs on each Client Access server in your organization. When a Client Access server receives a SIP INVITE for an incoming call, the Microsoft Exchange Unified Messaging Call Router service redirects the incoming call to the Mailbox server. Then a media channel (RTP or SRTP) is created between the VoIP gateway, IP PBX, or session border controller (SBC) and the Mailbox server. Although the Client Access server acts as a SIP redirector, it only handles SIP requests from VoIP gateways, IP PBXs, or SBCs. It doesn't receive any media traffic. Media traffic that uses RTP or SRTP is only passed between the Mailbox server and SIP peers such as VoIP gateways, IP PBXs, or SBCs, not to the Client Access server. When you deploy Exchange 2013 and UM, you have to configure your VoIP gateways, IP PBXs, or SBCs to point to the Client Access servers that you've installed so that incoming calls will be routed correctly for UM.
@@ -36,13 +26,13 @@ In some cases, deploying multiple Client Access servers is a requirement, and th
 
 When a Client Access server is installed, the Microsoft Exchange Unified Messaging Call Router service is running. The service does the following:
 
-  - When initialized, it reads a local configuration file named msexchangeumcallrouter.config.
+- When initialized, it reads a local configuration file named msexchangeumcallrouter.config.
 
-  - Performs speech grammar generation using an arbitration mailbox for an organization.
+- Performs speech grammar generation using an arbitration mailbox for an organization.
 
-  - Supports Transmission Control Protocol (TCP) and/or Transport Layer Security (TLS) connections. This setting is configurable.
+- Supports Transmission Control Protocol (TCP) and/or Transport Layer Security (TLS) connections. This setting is configurable.
 
-  - Will only stop if there's a configuration error or if it can't register the required ports.
+- Will only stop if there's a configuration error or if it can't register the required ports.
 
 In Exchange 2013, the Mailbox server isn't responsible for answering SIP requests from incoming calls. It's only responsible for receiving the SIP traffic from a Client Access server and then establishing an RTP or SRTP connection to the VoIP gateway, IP PBX, or SBC.
 
@@ -50,33 +40,33 @@ After a Client Access server redirects an incoming call to a Mailbox server, a m
 
 Exchange 2010 UM administrators can configure a set of properties for Unified Messaging on each UM server. In Exchange 2013, UM components and configuration settings for UM are found on both Client Access and Mailbox servers. All the configuration settings that applied to a single computer running the Unified Messaging server role in Exchange 2010 are still available. However, some of those properties and configuration settings are set on a Client Access server that's running the Microsoft Exchange Unified Messaging Call Router service, and others are available on a Mailbox server that's running the Microsoft Exchange Unified Messaging service. In some cases, the same setting is available on both. The following list shows the cmdlets and parameters that are available on Client Access servers and Mailbox servers and where changes were made to a cmdlet to support deployment scenarios with previous versions of Unified Messaging.
 
-  - **Set-UMService -DialPlans \<MultiValuedProperty\>**:  Available on Exchange 2013 Mailbox servers and also works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService -DialPlans \<MultiValuedProperty\>**:  Available on Exchange 2013 Mailbox servers and also works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings -DialPlans \<MultiValuedProperty\>**:  Available on Exchange 2013 Client Access servers but not available for Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings -DialPlans \<MultiValuedProperty\>**:  Available on Exchange 2013 Client Access servers but not available for Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMService -MaxCallsAllowed \<Int32\>**:  Available on Exchange 2013 Mailbox servers and also works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService -MaxCallsAllowed \<Int32\>**:  Available on Exchange 2013 Mailbox servers and also works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings -MaxCallsAllowed \<Int32\>**: Not available on Exchange 2013 Client Access servers and not available for Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings -MaxCallsAllowed \<Int32\>**: Not available on Exchange 2013 Client Access servers and not available for Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMService -SipTcpListeningPort \<Int32\>**:  Not configurable on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService -SipTcpListeningPort \<Int32\>**:  Not configurable on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMService -SipTlsListeningPort \<Int32\>**: Not configurable on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService -SipTlsListeningPort \<Int32\>**: Not configurable on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings -SipTcpListeningPort \<Int32\>**:  Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings -SipTcpListeningPort \<Int32\>**:  Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings -SipTlsListeningPort \<Int32\>**: Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings -SipTlsListeningPort \<Int32\>**: Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMService - Status \<Enabled | Disabled | NoNewCalls\>**: Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService - Status \<Enabled | Disabled | NoNewCalls\>**: Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings - Status \<Enabled | Disabled | NoNewCalls\>**:  Not available on Exchange 2013 Client Access servers and doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings - Status \<Enabled | Disabled | NoNewCalls\>**:  Not available on Exchange 2013 Client Access servers and doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMService -UMStartupMode \<TCP | TLS | Dual\>**: Available on Exchange 2013 Mailbox servers and works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMService -UMStartupMode \<TCP | TLS | Dual\>**: Available on Exchange 2013 Mailbox servers and works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Set-UMCallRouterSettings - UMStartupMode \<TCP | TLS | Dual\>**:  Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Set-UMCallRouterSettings - UMStartupMode \<TCP | TLS | Dual\>**:  Available on Exchange 2013 Client Access servers but doesn't work on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Enable-UMService**:  Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Enable-UMService**:  Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
-  - **Disable-UMService**:  Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
+- **Disable-UMService**:  Not available on Exchange 2013 Mailbox servers but works on Exchange 2007 and Exchange 2010 Unified Messaging servers.
 
 For the Mailbox server, you'll use the **Set/Get/Enable/Disable-UMService** cmdlets to view or configure UM properties for the Microsoft Exchange Unified Messaging service on Exchange 2013 Mailbox servers or Exchange 2007 or Exchange 2010 Unified Messaging servers. A different set of cmdlets, **Set/Get-UMCallRouterSettings**, are used to view or configure the Microsoft Exchange Unified Messaging Call Router service properties on a Client Access server. This ensures that the existing **Get-UMServer**, **Set-UMServer**, **Enable-UMServer**, and **Disable-UMServer** cmdlets from Exchange 2007 and Exchange 2010 will work in a coexistence deployment with Exchange 2013 Mailbox servers. This also ensures that the cmdlets will work when the Mailbox and Client Access servers are installed on the same or different servers.
 

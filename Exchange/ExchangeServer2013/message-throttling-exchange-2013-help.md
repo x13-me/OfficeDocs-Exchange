@@ -18,20 +18,6 @@ _**Applies to:** Exchange Server 2013_
 
 *Message throttling* refers to a group of limits that are set on the number of messages and connections that can be processed by a Microsoft Exchange Server 2013 computer. These limits prevent the accidental or intentional exhaustion of system resources on the Exchange server.
 
-**Contents**
-
-Message throttling scope
-
-Message cost and mail flow throttling
-
-Message throttling on servers
-
-Message throttling on Send connectors
-
-Message throttling on Receive connectors
-
-Message throttling policies
-
 ## Message throttling scope
 
 Message throttling involves a variety of limits on message processing rates, SMTP connection rates, and SMTP session time-out values. These limits work together to protect an Exchange server from being overwhelmed by accepting and delivering messages. Although a large backlog of messages and connections may be waiting to be processed, the message throttling limits enable the Exchange server to process the messages and connections in an orderly manner.

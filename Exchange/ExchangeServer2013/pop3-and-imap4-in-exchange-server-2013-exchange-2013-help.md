@@ -24,22 +24,6 @@ For detailed steps for enabling the POP3 and IMAP4 services, see [Enable POP3 in
 
 By default, users who have mailboxes on computers that are running Exchange 2013 can access their mailboxes by using Outlook or Outlook Web App, Exchange ActiveSync, or Outlook Voice Access. Outlook, Outlook Web App, and Outlook Voice Access enable your email users to use the comprehensive set of features that are available to users who have mailboxes on Exchange 2016 servers.
 
-**Contents**
-
-Overview of POP3 and IMAP4 functionality
-
-POP3 and IMAP4 cross-site connectivity
-
-Use non-standard accounts with POP3 and IMAP4
-
-Understand the differences between POP3 and IMAP4
-
-Send and receive options for POP3 and IMAP4 email applications
-
-POP3 and IMAP4 applications
-
-User settings to configure POP3 or IMAP4 access to their Exchange 2013 mailboxes
-
 ## Overview of POP3 and IMAP4 functionality
 
 This section describes the POP3 and IMAP4 functionality for Exchange 2013.

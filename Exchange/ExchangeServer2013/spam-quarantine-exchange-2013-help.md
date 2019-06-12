@@ -20,31 +20,25 @@ Many organizations are bound by legal or regulatory requirements to preserve or 
 
 Messages identified by the Content Filter agent as spam are wrapped in a non-delivery report (NDR) and delivered to a spam quarantine mailbox inside the organization. You can manage messages delivered to the spam quarantine mailbox and take appropriate actions. For example, you can delete messages or let messages flagged as false positives in anti-spam filtering be routed to their intended recipients. In addition, you can configure the spam quarantine mailbox to automatically delete messages after a designated time period.
 
-**Contents**
-
-Spam confidence level
-
-Spam quarantine
-
 ## Spam confidence level
 
 When an external user sends email messages to a server running Exchange that runs the anti-spam features, the anti-spam features cumulatively evaluate characteristics of the messages and act as follows:
 
-  - Those messages suspected to be spam are filtered out.
+- Those messages suspected to be spam are filtered out.
 
-  - A rating is assigned to messages based on the probability that a message is spam. This rating is stored with the message as a message property called the spam confidence level (SCL) rating.
+- A rating is assigned to messages based on the probability that a message is spam. This rating is stored with the message as a message property called the spam confidence level (SCL) rating.
 
 Spam quarantine uses the SCL rating to determine whether mail has a high probability of being spam. The SCL rating is a numeric value from 0 through 9, where 0 is considered less likely to be spam, and 9 is considered most likely to be spam.
 
 You can configure mail that has a certain SCL rating to be deleted, rejected, or quarantined. The rating that triggers any of these actions is referred to as the *SCL quarantine threshold*. Within content filtering, you can configure the Content Filter agent to base its actions on the SCL quarantine threshold. For example, you can set the following conditions:
 
-  - SCL delete threshold is set to 8.
+- SCL delete threshold is set to 8.
 
-  - SCL reject threshold is set to 7.
+- SCL reject threshold is set to 7.
 
-  - SCL quarantine threshold is set to 6.
+- SCL quarantine threshold is set to 6.
 
-  - SCL Junk Email folder threshold is set to 5.
+- SCL Junk Email folder threshold is set to 5.
 
 Based on the preceding SCL thresholds, all email with an SCL of 6 will be delivered to the spam quarantine mailbox.
 
@@ -54,17 +48,17 @@ For more information, see [Manage content filtering](manage-content-filtering-ex
 
 When messages are received by the Exchange server that's running all default anti-spam agents, the content filter is applied as follows:
 
-  - If the SCL rating is greater than or equal to the SCL quarantine threshold but less than either the SCL delete threshold or SCL reject threshold, the message goes to the spam quarantine mailbox.
+- If the SCL rating is greater than or equal to the SCL quarantine threshold but less than either the SCL delete threshold or SCL reject threshold, the message goes to the spam quarantine mailbox.
 
-  - If the SCL rating is lower than the spam quarantine threshold, it's delivered to the recipient's Inbox.
+- If the SCL rating is lower than the spam quarantine threshold, it's delivered to the recipient's Inbox.
 
 The message administrator uses Microsoft Outlook to monitor the spam quarantine mailbox for false positives. If a false positive is found, the administrator can send the message to the recipient's mailbox.
 
 The message administrator can review the anti-spam stamps if either of the following conditions is true:
 
-  - Too many false positives are filtered into the spam quarantine mailbox.
+- Too many false positives are filtered into the spam quarantine mailbox.
 
-  - Not enough spam is being rejected or deleted.
+- Not enough spam is being rejected or deleted.
 
 For more information, see [Anti-spam stamps](anti-spam-stamps-exchange-2013-help.md).
 

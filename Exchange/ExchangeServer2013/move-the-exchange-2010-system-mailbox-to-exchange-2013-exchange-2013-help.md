@@ -20,25 +20,25 @@ In Exchange 2010, the Microsoft Exchange system mailbox is an arbitration mailbo
 
 When you upgrade your existing Exchange 2010 organization to Exchange 2013, you have to move the Microsoft Exchange system mailbox to a mailbox database on an Exchange 2013 Mailbox server. You should move this mailbox after you've installed and verified Exchange 2013. If you don't move this system mailbox to Exchange 2013, the following issues will occur when Exchange 2010 and Exchange 2013 coexist in your Exchange organization:
 
-  - Exchange 2013 tasks aren't saved to the administrator audit log. When you run the **Search-AdminAuditLog** cmdlet or try to export the administrator audit log in the EAC, you'll receive an error that says you can't create an administrator audit log search because the system mailbox, SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, is located on a server that isn't running Exchange 2013. A Microsoft Exchange error with an Event ID of 5000 is also logged in the Windows Application log each time a command is run.
+- Exchange 2013 tasks aren't saved to the administrator audit log. When you run the **Search-AdminAuditLog** cmdlet or try to export the administrator audit log in the EAC, you'll receive an error that says you can't create an administrator audit log search because the system mailbox, SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, is located on a server that isn't running Exchange 2013. A Microsoft Exchange error with an Event ID of 5000 is also logged in the Windows Application log each time a command is run.
 
-  - You can't run eDiscovery searches using the EAC or the Shell in Exchange 2013. Mailbox searches can be created and queued, but they can't be started. An error with an Event ID of 6 is logged in the MsExchange Management log, stating that the **Start-MailboxSearch** cmdlet failed. However, you can search mailboxes using the Shell and the Exchange Control Panel (ECP) in Exchange 2010.
+- You can't run eDiscovery searches using the EAC or the Shell in Exchange 2013. Mailbox searches can be created and queued, but they can't be started. An error with an Event ID of 6 is logged in the MsExchange Management log, stating that the **Start-MailboxSearch** cmdlet failed. However, you can search mailboxes using the Shell and the Exchange Control Panel (ECP) in Exchange 2010.
 
 You also have to move the Microsoft Exchange system mailbox to Exchange 2013 as part of upgrading Exchange 2010 Unified Messaging to Exchange 2013.
 
 For more information about upgrading to Exchange 2013, see the following topics:
 
-  - [Upgrade from Exchange 2010 to Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)
+- [Upgrade from Exchange 2010 to Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)
 
-  - [Upgrade Exchange 2010 UM to Exchange 2013 UM](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)
+- [Upgrade Exchange 2010 UM to Exchange 2013 UM](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 20 minutes. The actual time may vary depending on the size of the system mailbox.
+- Estimated time to complete: 20 minutes. The actual time may vary depending on the size of the system mailbox.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" entry in [Recipients Permissions](recipients-permissions-exchange-2013-help.md).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" entry in [Recipients Permissions](recipients-permissions-exchange-2013-help.md).
 
-  - Run the following command in Exchange 2013 to obtain the identity and version of the Exchange servers and mailbox databases that contain the system mailboxes in your organization.
+- Run the following command in Exchange 2013 to obtain the identity and version of the Exchange servers and mailbox databases that contain the system mailboxes in your organization.
 
     ```powershell
     Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
@@ -46,7 +46,7 @@ For more information about upgrading to Exchange 2013, see the following topics:
 
     The **AdminDisplayVersion** property indicates the version of Exchange that the server is running. The value `Version 14.x` indicates Exchange 2010; the value `Version 15.x` indicates Exchange 2013.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -61,9 +61,9 @@ For more information about upgrading to Exchange 2013, see the following topics:
 
 4. On the **Select Mailbox** page, add the mailbox that has the following properties:
 
-      - The display name is **Microsoft Exchange**.
+   - The display name is **Microsoft Exchange**.
 
-      - The alias of the mailbox's email address is **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**.
+   - The alias of the mailbox's email address is **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**.
 
 5. Click **OK**, and then click **Next**.
 
@@ -86,7 +86,7 @@ Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
 After you identify the name of the mailbox databases in your organization, run the following command in Exchange 2013 to move the Microsoft Exchange system mailbox to a mailbox database located on an Exchange 2013 server.
 
 ```powershell
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
 ```
 
 ## How do you know this worked?
@@ -94,15 +94,15 @@ After you identify the name of the mailbox databases in your organization, run t
 To verify that you've successfully moved the Microsoft Exchange system mailbox to a mailbox database located on an Exchange 2013 server, run the following command in the Shell.
 
 ```powershell
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
 ```
 
 If the value of the **AdminDisplayVersion** property is **Version 15.x (Build xxx.x)**, this verifies that the system mailbox resides on a mailbox database that is located on an Exchange 2013 server.
 
 After you move the Microsoft Exchange system mailbox to Exchange 2013, you'll also be able to successfully perform the following administrative tasks:
 
-  - Run the **Search-AdminAuditLog** cmdlet.
+- Run the **Search-AdminAuditLog** cmdlet.
 
-  - Export the administrator audit log in the EAC.
+- Export the administrator audit log in the EAC.
 
-  - Successfully create and start eDiscovery searches using the EAC or the Shell in Exchange 2013.
+- Successfully create and start eDiscovery searches using the EAC or the Shell in Exchange 2013.
