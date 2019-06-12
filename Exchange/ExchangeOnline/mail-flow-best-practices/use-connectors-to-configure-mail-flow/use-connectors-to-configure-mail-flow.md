@@ -57,6 +57,9 @@ Exchange Online is ready to send and receive email from the internet right away.
 > [!TIP]
 > If you don't have Exchange Online or EOP and are looking for information about Send connectors and Receive connectors in Exchange 2016 or Exchange 2019, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
 
+> [!IMPORTANT]
+> You cannot have an "allow" by sender domain connector when there is a restrict by IP/Cert connector. The restrict connector will take precedence as partner connectors are pulled up by IP or Cert lookup when restriction and mail rejection is applied. You should not have IPs and Cert configured in the same Partner connector. Please use separate connectors. Associated Accepted Domains shouldn't be used apart from perhaps testing the connector only to a subset of the accepted domains/ recipient domains on the mail.
+
 ## I have my own email servers
 
 If you have Exchange Online or EOP and your own on-premises email servers, you definitely need connectors. This is more complicated and has more options as described in the following table:
