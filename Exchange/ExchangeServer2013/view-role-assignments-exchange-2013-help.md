@@ -22,19 +22,19 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role assignments" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role assignments" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
+- This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
-      - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
 
-      - [Working with command output](working-with-command-output-exchange-2013-help.md)
+  - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,7 +44,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 You can view a list of all role assignments configured in your organization by running the **Get-ManagementRoleAssignment** cmdlet. If you want to retrieve a list of role assignments that match a partial string that you specify, use wildcard characters (\*). This example retrieves a list of all the role assignments that start with the string "Tier 1".
 
 ```powershell
-    Get-ManagementRoleAssignment "Tier 1*"
+Get-ManagementRoleAssignment "Tier 1*"
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
@@ -104,7 +104,7 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 To view a list of role assignments that use a specific predefined scope, use the following syntax.
 
 ```powershell
-    Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
 ```
 
 This example retrieves all of the role assignments that use the Organization predefined scope.
@@ -126,7 +126,7 @@ Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
 This example retrieves all of the role assignments that have been scoped to the North America\\Engineering\\Users OU in the contoso.com domain.
 
 ```powershell
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
@@ -135,13 +135,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 To view a list of role assignments that use a specific custom scope, you need to first determine whether the scope is a recipient scope, configuration scope, exclusive recipient scope, or exclusive configuration scope. Each type of scope uses a different parameter on the **Get-ManagementRoleAssignment** cmdlet. The following lists each scope and its associated parameter:
 
-  - **Recipient scopes**: *CustomRecipientWriteScope*
+- **Recipient scopes**: *CustomRecipientWriteScope*
 
-  - **Configuration scopes**: *CustomConfigWriteScope*
+- **Configuration scopes**: *CustomConfigWriteScope*
 
-  - **Exclusive recipient scopes**: *ExclusiveRecipientWriteScope*
+- **Exclusive recipient scopes**: *ExclusiveRecipientWriteScope*
 
-  - **Exclusive configuration scopes**: *ExclusiveConfigWriteScope*
+- **Exclusive configuration scopes**: *ExclusiveConfigWriteScope*
 
 The syntax for each parameter is the same. Specify the name of the scope with the parameter that matches the type of scope it is.
 
@@ -194,7 +194,7 @@ Get-ManagementRoleAssignment -WritableRecipient "Brian"
 You can combine the *WritableRecipient* and *WritableServer* parameters with other parameters, such as the *RoleAssignee* parameter and the *GetEffectiveUsers* switch to refine your query and expand any role groups or USGs. This example retrieves all of the users who can modify the server EX02 and who are assigned the Server Management role group.
 
 ```powershell
-    Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).

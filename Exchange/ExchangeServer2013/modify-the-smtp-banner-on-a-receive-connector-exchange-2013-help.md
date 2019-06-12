@@ -21,7 +21,7 @@ The *SMTP banner* is the SMTP connection response that a remote SMTP messaging s
 This is the default response received by a remote SMTP messaging server after it connects to the Receive connector:
 
 ```powershell
-    220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
 ```
 
 When you specify a custom value for SMTP banner on a Receive connector, a remote SMTP messaging server that connects to that SMTP Receive connector receives the following response.
@@ -34,15 +34,15 @@ You may want to modify the SMTP banner for Internet-facing SMTP Receive connecto
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes
+- Estimated time to complete: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - The replacement SMTP banner text string must always start with `220`. As defined in RFC 2821, the default service ready SMTP response code is 220.
+- The replacement SMTP banner text string must always start with `220`. As defined in RFC 2821, the default service ready SMTP response code is 220.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -73,9 +73,9 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
 
 1. Open a telnet client on a computer that can access the Receive connector, and run the following command:
 
-    ```powershell
-    open <Connector FQDN or IP address> <Port>
-    ```
+   ```powershell
+   open <Connector FQDN or IP address> <Port>
+   ```
 
 2. Verify the response from the Receive connector contains the SMTP banner you configured.
 

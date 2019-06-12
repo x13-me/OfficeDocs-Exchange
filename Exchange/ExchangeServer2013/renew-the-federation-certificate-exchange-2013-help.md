@@ -50,7 +50,7 @@ If the federation certificate hasn't expired, you can update the existing federa
 Run the following command in the Exchange Management Shell to create a new federation certificate:
 
 ```powershell
-    $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+$SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
 ```
 
 For detailed syntax and parameter information, see [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)).
@@ -68,13 +68,13 @@ For the other procedures in this topic, we'll use the federation certificate thu
 To use the Exchange Management Shell to configure the new certificate as the federation certificate, use the following syntax:
 
 ```powershell
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
 ```
 
 This example uses the certificate thumbprint value `6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73` from Step 1.
 
 ```powershell
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
 ```
 
 For detailed syntax and parameter information, see [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\)).
@@ -87,27 +87,29 @@ You can safely perform this step now, because the proof of domain ownership TXT 
 
 1. Find the required values for the required TXT record by running the following command in the Exchange Management Shell:
 
-    ```powershell
-    Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
-    ```
+   ```powershell
+   Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+   ```
 
-    For example, if your federated domain is contoso.com, run the following command:
+   For example, if your federated domain is contoso.com, run the following command:
 
-    ```powershell
-    Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
-    ```
+   ```powershell
+   Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+   ```
 
-    The command output looks like this:
+   The command output looks like this:
 
-    `Thumbprint : <new certificate thumbprint>` (for example, `6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73`)
+   ```text
+   Thumbprint : <new certificate thumbprint> (for example, 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73)
 
-    `Proof      : <new hash text>` (for example, `znMfbkgSbOQSsWFdsW+gm3to0nZSdE3zbcPPHGVAqdgsLFGsCPuLHiyVbKoPmgyZKX90NH2g1PbCZH0YTQF6oA==`)
+   Proof      : <new hash text> (for example, znMfbkgSbOQSsWFdsW+gm3to0nZSdE3zbcPPHGVAqdgsLFGsCPuLHiyVbKoPmgyZKX90NH2g1PbCZH0YTQF6oA==)
 
-    `Thumbprint : <old certificate thumbprint>` (for example, `CC9BC204BB4DC60D06FC1F10F3C373DC785DA2A5`)
+   Thumbprint : <old certificate thumbprint> (for example, CC9BC204BB4DC60D06FC1F10F3C373DC785DA2A5)
 
-    `Proof      : <old hash text> ` (for example, `m4gZX7OLr9iOWYJMVjEklQpoSkPb5hSbcFjD7Q3/vsqmdJ2Z+HcSt7j5pzBKFmEW2s27JYr3xsK2POzAI/8Ffw==`)
+   Proof      : <old hash text> (for example, m4gZX7OLr9iOWYJMVjEklQpoSkPb5hSbcFjD7Q3/vsqmdJ2Z+HcSt7j5pzBKFmEW2s27JYr3xsK2POzAI/8Ffw==)
+   ```
 
-    Note that the command output returns information for two proof of domain ownership records: one for the new certificate, and one for the current certificate that you're replacing. You can tell which is which by the thumbprint value, and the hash text value that's configured in the current proof of domain ownership TXT record in your external (public) DNS.
+   Note that the command output returns information for two proof of domain ownership records: one for the new certificate, and one for the current certificate that you're replacing. You can tell which is which by the thumbprint value, and the hash text value that's configured in the current proof of domain ownership TXT record in your external (public) DNS.
 
 2. Update the federation proof of domain ownership TXT record in your external DNS. The instructions will vary based on your DNS provider, but you can edit the current TXT record to replace the current hash text value with the new hash text value. For more information, see the Exchange Online section in [External Domain Name System records for Office 365](https://go.microsoft.com/fwlink/p/?linkid=265522).
 
@@ -118,7 +120,7 @@ Exchange automatically distributes the new federation certificate to all servers
 To use the Exchange Management Shell to verify the distribution of the new federation certificate, run the following command:
 
 ```powershell
-    $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+$Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
 ```
 
 **Note:** In Exchange 2010, the output of the **Test-FederationCertificate** cmdlet contains server names. The output of the cmdlet in Exchange 2013 or later doesn't include server names.
@@ -151,9 +153,9 @@ To verify that you've successfully updated the existing federation trust with a 
 
 - In the Exchange Management Shell, replace *\<user's email address\>* with the email address of a user in your org, and run the following command to verify that the federation trust is working:
 
-    ```powershell
-    Test-FederationTrust -UserIdentity <user's email address>
-    ```
+  ```powershell
+  Test-FederationTrust -UserIdentity <user's email address>
+  ```
 
 ## Replace an expired federation certificate
 
@@ -161,28 +163,28 @@ If the federation certificate has already expired, you need to remove all federa
 
 1. If you have multiple federated domains, you need to identify the primary domain shared domain so you can remove it last. To use the Exchange Management Shell to identify the primary shared domain and all federated domains, run the following command:
 
-    ```powershell
-    Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
-    ```
+   ```powershell
+   Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+   ```
 
-    The value of the **AccountNamespace** property contains the primary shared domain in the format `FYDIBOHF25SPDLT<primary shared domain>`. For example, in the value `FYDIBOHF25SPDLT.contoso.com`, contoso.com is the primary shared domain.
+   The value of the **AccountNamespace** property contains the primary shared domain in the format `FYDIBOHF25SPDLT<primary shared domain>`. For example, in the value `FYDIBOHF25SPDLT.contoso.com`, contoso.com is the primary shared domain.
 
 2. Remove each federated domain that isn't the primary shared domain by running the following command in the Exchange Management Shell:
 
-    ```powershell
-    Remove-FederatedDomain -DomainName <domain> -Force
-    ```
+   ```powershell
+   Remove-FederatedDomain -DomainName <domain> -Force
+   ```
 
 3. After you've removed all other federated domains, remove the primary shared domain by running the following command in the Exchange Management Shell:
 
-    ```powershell
-    Remove-FederatedDomain -DomainName <domain> -Force
-    ```
+   ```powershell
+   Remove-FederatedDomain -DomainName <domain> -Force
+   ```
 
 4. Remove the federation trust by running the following command in the Exchange Management Shell:
 
-    ```powershell
-    Remove-FederationTrust "Microsoft Federation Gateway"
-    ```
+   ```powershell
+   Remove-FederationTrust "Microsoft Federation Gateway"
+   ```
 
 5. Recreate the federation trust. For instructions, see [x-Create a Federation Trust](https://technet.microsoft.com/en-us/library/dd335198\(v=exchg.150\)).

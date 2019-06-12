@@ -27,14 +27,6 @@ By default, there's a single remote domain entry. The domain address space is co
 
 When you configure remote domains, you can prevent certain types of messages from being sent to that domain. These message types include out-of-office messages, auto-reply messages, non-delivery reports (NDRs), and meeting forward notifications. If you have a multiple forest environment, you may want to allow the sending of those types of messages to those domains. However, if you have identified a domain from which spam originates, you may want to block sending of those types of messages to those remote domains.
 
-**Contents**
-
-Message format
-
-Automatic replies settings
-
-Controlling NDR information
-
 ## Message format
 
 You can specify the message format and the character set to use for email messages that are sent to remote domains. These settings can be useful to make sure that email sent by senders in your domain to the remote domain is compatible with the receiving email system. For example, if you know that the remote domain's messaging system is Exchange, you can specify to always use Exchange rich text format (RTF). For more information, see [Content conversion](content-conversion-exchange-2013-help.md).
@@ -45,9 +37,9 @@ In Exchange 2013, users can specify different automatic replies for internal and
 
 In Exchange 2013, there are two types of automatic replies:
 
-  - **External**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
+- **External**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
 
-  - **Internal**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
+- **Internal**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
 
 The following table describes various client and server combinations and the types of automatic replies that can be used in each scenario.
 

@@ -24,21 +24,21 @@ Looking for other management tasks related to role entries? Check out [Advanced 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - This topic makes use of pipelining, the **Format-List** cmdlet, objects, and properties. For more information about these concepts, see the following topics:
+- This topic makes use of pipelining, the **Format-List** cmdlet, objects, and properties. For more information about these concepts, see the following topics:
 
-      - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
 
-      - [Working with command output](working-with-command-output-exchange-2013-help.md)
+  - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
-      - [Structured data](https://technet.microsoft.com/en-us/library/aa996386\(v=exchg.150\))
+  - [Structured data](https://technet.microsoft.com/en-us/library/aa996386\(v=exchg.150\))
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -54,13 +54,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleEntry](htt
 To view a list of role entries on a specific role, use the following syntax.
 
 ```powershell
-    Get-ManagementRoleEntry <role name>\*
+Get-ManagementRoleEntry <role name>\*
 ```
 
 This examples retrieves all the role entries on the `Recipient Administrators` role.
 
 ```powershell
-    Get-ManagementRole "Recipient Administrators\*"
+Get-ManagementRole "Recipient Administrators\*"
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)).
@@ -70,13 +70,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleEntry](htt
 To view a list of all the roles that contain a specific role entry, use the following syntax.
 
 ```powershell
-    Get-ManagementRoleEntry *\<cmdlet name>
+Get-ManagementRoleEntry *\<cmdlet name>
 ```
 
 This example retrieves all the roles that contain the **Set-Mailbox** role entry.
 
 ```powershell
-    Get-ManagementRoleEntry *\Set-Mailbox
+Get-ManagementRoleEntry *\Set-Mailbox
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)).
@@ -86,13 +86,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleEntry](htt
 To view a list of targeted roles that contain cmdlets with similar names, use the following syntax.
 
 ```powershell
-    Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
 ```
 
 This example returns a list of role entries that contain the string `Mailbox` that are on roles that contain the string `Tier 1` in their names.
 
 ```powershell
-    Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)).
@@ -122,13 +122,13 @@ Some role entries have more parameters than can be viewed by piping the results 
 To view parameters stored in the **Parameters** property of a role entry object, use the following syntax.
 
 ```powershell
-    (Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+(Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
 ```
 
 This example retrieves the parameters on the **Set-Mailbox** role entry on the Mail Recipients role.
 
 ```powershell
-    (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+(Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)).

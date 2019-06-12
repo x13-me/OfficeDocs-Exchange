@@ -25,18 +25,6 @@ RBAC has two primary ways of assigning permissions to users in your organization
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
 
-**Contents**
-
-Management role groups
-
-Management role assignment policies
-
-Direct user role assignment
-
-Summary and examples
-
-For more information
-
 ## Management role groups
 
 *Management role groups* associate management roles to a group of administrators or specialist users. Administrators manage a broad Exchange organization or recipient configuration. Specialist users manage the specific features of Exchange, such as compliance. Or they may have limited management abilities, such as Help desk members, but aren't given broad administrative rights. Role groups typically associate administrative management roles that enable administrators and specialist users to manage the configuration of their organization and recipients. For example, whether administrators can manage recipients or use mailbox discovery features is controlled using role groups.
@@ -45,13 +33,13 @@ Adding or removing users to or from role groups is how you most often assign per
 
 Role groups consist of the following components that define what administrators and specialist users can do:
 
-  - **Management role group**: The *management role group* is a special universal security group (USG) that contains mailboxes, users, USGs, and other role groups that are members of the role group. This is where you add and remove members, and it's also what management roles are assigned to. The combination of all the roles on a role group defines everything that users added to a role group can manage in the Exchange organization.
+- **Management role group**: The *management role group* is a special universal security group (USG) that contains mailboxes, users, USGs, and other role groups that are members of the role group. This is where you add and remove members, and it's also what management roles are assigned to. The combination of all the roles on a role group defines everything that users added to a role group can manage in the Exchange organization.
 
-  - **Management role**: A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that can be performed by the members of a role group that's assigned the role. A *management role entry* is a cmdlet, script, or special permission that enables each specific task in a role to be performed. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
+- **Management role**: A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that can be performed by the members of a role group that's assigned the role. A *management role entry* is a cmdlet, script, or special permission that enables each specific task in a role to be performed. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-  - **Management role assignment**: A *management role assignment* links a role and a role group. Assigning a role to a role group grants members of the role group the ability to use the cmdlets and parameters defined in the role. Role assignments can use management scopes to control where the assignment can be used. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
+- **Management role assignment**: A *management role assignment* links a role and a role group. Assigning a role to a role group grants members of the role group the ability to use the cmdlets and parameters defined in the role. Role assignments can use management scopes to control where the assignment can be used. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
-  - **Management role scope**: A *management role scope* is the scope of influence or impact on a role assignment. When a role is assigned with a scope to a role group, the management scope targets specifically what objects that assignment is allowed to manage. The assignment, and its scope, are then given to the members of the role group, and restrict what those members can manage. A scope can consist of a list of servers or databases, organizational units (OUs), or filters on server, database or recipient objects. For more information, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
+- **Management role scope**: A *management role scope* is the scope of influence or impact on a role assignment. When a role is assigned with a scope to a role group, the management scope targets specifically what objects that assignment is allowed to manage. The assignment, and its scope, are then given to the members of the role group, and restrict what those members can manage. A scope can consist of a list of servers or databases, organizational units (OUs), or filters on server, database or recipient objects. For more information, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
 
 When you add a user to a role group, the user is given all of the roles assigned to the role group. If scopes are applied to any of the role assignments between the role group and the roles, those scopes control what server configuration or recipients the user can manage.
 
@@ -67,11 +55,11 @@ Assigning a user to an assignment policy is how you most often manage permission
 
 Role assignment policies consist of the following components that define what users can do with their own mailboxes. Notice that some of the same components also apply to role groups. When used with role assignment policies, these components are limited to enable users to manage only their own mailbox:
 
-  - **Management role assignment policy**: The *management role assignment policy* is a special object in Exchange 2013. Users are associated with the role assignment policy when their mailboxes are created or if you change the role assignment policy on a mailbox. This is also what you assign end-user management roles to. The combination of all the roles on a role assignment policy defines everything that the user can manage on his or her mailbox or distribution groups.
+- **Management role assignment policy**: The *management role assignment policy* is a special object in Exchange 2013. Users are associated with the role assignment policy when their mailboxes are created or if you change the role assignment policy on a mailbox. This is also what you assign end-user management roles to. The combination of all the roles on a role assignment policy defines everything that the user can manage on his or her mailbox or distribution groups.
 
-  - **Management role**: A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that a user can do with his or her mailbox or distribution groups. A *management role entry* is a cmdlet, script or special permission that enables each specific task in a management role to be performed. You can only use end-user roles with role assignment policies. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
+- **Management role**: A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that a user can do with his or her mailbox or distribution groups. A *management role entry* is a cmdlet, script or special permission that enables each specific task in a management role to be performed. You can only use end-user roles with role assignment policies. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-  - **Management role assignment**: A *management role assignment* is the link between a role and a role assignment policy. Assigning a role to a role assignment policy grants the ability to use the cmdlets and parameters defined in the role. When you create a role assignment between a role assignment policy and a role, you can't specify any scope. The scope applied by the assignment is either `Self` or `MyGAL`. All role assignments are scoped to the user's mailbox or distribution groups. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
+- **Management role assignment**: A *management role assignment* is the link between a role and a role assignment policy. Assigning a role to a role assignment policy grants the ability to use the cmdlets and parameters defined in the role. When you create a role assignment between a role assignment policy and a role, you can't specify any scope. The scope applied by the assignment is either `Self` or `MyGAL`. All role assignments are scoped to the user's mailbox or distribution groups. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
 If you want to change what roles are assigned to role assignment policies, you need to change the role assignments that link the role assignment policies to roles. Unless the assignments built into Exchange 2013 don't suit your needs, you won't have to change these assignments. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
@@ -87,27 +75,27 @@ For more information about direct user assignment, see [Understanding management
 
 The following figure shows the components in RBAC and how they fit together:
 
-  - Role groups:
+- Role groups:
 
-      - One or more administrators can be members of a role group. They can also be members of more than one role group.
+  - One or more administrators can be members of a role group. They can also be members of more than one role group.
 
-      - The role group is assigned one or more role assignments. These link the role group with one or more administrative roles that define what tasks can be performed.
+  - The role group is assigned one or more role assignments. These link the role group with one or more administrative roles that define what tasks can be performed.
 
-      - The role assignments can contain management scopes that define where the users of the role group can perform actions. The scopes determine where the users of the role group can modify configuration.
+  - The role assignments can contain management scopes that define where the users of the role group can perform actions. The scopes determine where the users of the role group can modify configuration.
 
-  - Role assignment policies:
+- Role assignment policies:
 
-      - One or more users can be associated with a role assignment policy.
+  - One or more users can be associated with a role assignment policy.
 
-      - The role assignment policy is assigned one or more role assignments. These link the role assignment policy with one or more end-user roles. The end-user roles define what the user can configure on his or her mailbox.
+  - The role assignment policy is assigned one or more role assignments. These link the role assignment policy with one or more end-user roles. The end-user roles define what the user can configure on his or her mailbox.
 
-      - The role assignments between role assignment policies and roles have built-in scopes that restrict the scope of assignments to the user's own mailbox or distribution groups.
+  - The role assignments between role assignment policies and roles have built-in scopes that restrict the scope of assignments to the user's own mailbox or distribution groups.
 
-  - Direct role assignment (advanced):
+- Direct role assignment (advanced):
 
-      - A role assignment can be created directly between a user or USG and one or more roles. The role defines what tasks the user or USG can perform.
+  - A role assignment can be created directly between a user or USG and one or more roles. The role defines what tasks the user or USG can perform.
 
-      - The role assignments can contain management scopes that define where the user or USG can perform actions. The scopes determine where the user or USG can modify configuration.
+  - The role assignments can contain management scopes that define where the user or USG can perform actions. The scopes determine where the user or USG can modify configuration.
 
 **RBAC overview**
 

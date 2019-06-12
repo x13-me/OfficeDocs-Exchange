@@ -28,32 +28,22 @@ For organizations that filter hundreds of thousands of messages from the Interne
 
 Safelist aggregation is likely the most effective way to reduce false-positives. In Outlook 2010 or newer versions, users can create *Safe Senders Lists*. Safe Senders Lists specify a list of domain names and email addresses from which the Outlook user wants to receive messages. By default, email addresses in Outlook Contacts and in the Exchange global address list are included in this list. By default, Outlook adds all external contacts to which the user sends mail to the Safe Senders List.
 
-**Contents**
-
-Information stored in the Outlook user's safelist collection
-
-How Exchange uses the safelist collection
-
-Hashing of safelist collection entries
-
-Enabling safelist aggregation
-
 ## Information stored in the Outlook user's safelist collection
 
 A *safelist collection* is the combined data from the user's Safe Senders List, Safe Recipients List, Blocked Senders List, and external contacts. This data is stored in Outlook and in the Exchange mailbox.
 
 The following types of information are stored in an Outlook user's safelist collection:
 
-  - **Safe senders and safe recipients**: The From message header indicates a sender. The To field of the email message indicates a recipient. Safe senders and safe recipients are represented by full SMTP addresses, such as masato@contoso.com. Outlook users can add senders and recipients to their safe lists.
+- **Safe senders and safe recipients**: The From message header indicates a sender. The To field of the email message indicates a recipient. Safe senders and safe recipients are represented by full SMTP addresses, such as masato@contoso.com. Outlook users can add senders and recipients to their safe lists.
 
-  - **Blocked senders**: Just like safe senders, users can block unwanted senders by adding them to their Blocked Senders Lists.
+- **Blocked senders**: Just like safe senders, users can block unwanted senders by adding them to their Blocked Senders Lists.
 
-  - **Safe domain**: The domain is the part of an SMTP address that follows the @ symbol. For example, contoso.com is the domain in the masato@contoso.com address. Outlook users can add sending domains to their safe lists.
+- **Safe domain**: The domain is the part of an SMTP address that follows the @ symbol. For example, contoso.com is the domain in the masato@contoso.com address. Outlook users can add sending domains to their safe lists.
 
     > [!IMPORTANT]
     > By default, Exchange doesn't include the domains during safelist aggregation. However, you can configure safelist aggregation to include the safe domain data for the anti-spam agents. For more information, see <A href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">Configure Content Filtering to Use Safe Domain Data</A>.
 
-  - **External contacts**: Two types of external contacts can be included in the safelist aggregation. The first type of external contact includes contacts to whom Outlook users have sent mail. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email settings in Outlook 2007.
+- **External contacts**: Two types of external contacts can be included in the safelist aggregation. The first type of external contact includes contacts to whom Outlook users have sent mail. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email settings in Outlook 2007.
 
     The second type of external contact includes the users' Outlook contacts. Users can add or import these contacts into Outlook. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email Filter settings in Outlook 2010 or Outlook 2007.
 
@@ -70,9 +60,9 @@ Safelist collection entries are hashed (SHA-256) one way before they are stored 
 
 One-way hashing of safelist collection entries performs the following important functions:
 
-  - **Minimizes storage and replication space**: Most of the time, hashing reduces the size of the data hashed. Therefore, saving and transmitting a hashed version of a safelist collection entry conserves storage space and replication time. For example, a user who has 200 entries in his or her safelist collection would create about 800 bytes of hashed data stored and replicated in Active Directory.
+- **Minimizes storage and replication space**: Most of the time, hashing reduces the size of the data hashed. Therefore, saving and transmitting a hashed version of a safelist collection entry conserves storage space and replication time. For example, a user who has 200 entries in his or her safelist collection would create about 800 bytes of hashed data stored and replicated in Active Directory.
 
-  - **Renders user safelist collections unusable by malicious users**: Because one-way hash values are impossible to reverse-engineer into the original SMTP address or domain, the safelist collections don't yield usable email addresses for malicious users who might compromise an Exchange server.
+- **Renders user safelist collections unusable by malicious users**: Because one-way hash values are impossible to reverse-engineer into the original SMTP address or domain, the safelist collections don't yield usable email addresses for malicious users who might compromise an Exchange server.
 
 ## Enabling safelist aggregation
 

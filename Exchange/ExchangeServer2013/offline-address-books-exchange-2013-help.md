@@ -25,22 +25,12 @@ To learn more about address lists, see [Address lists](https://docs.microsoft.co
 
 Looking for management tasks related to OABs? See [Offline address book procedures](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/offline-address-book-procedures).
 
-**Contents**
-
-Moving OABs between Exchange versions
-
-OAB version 4 and Outlook clients
-
-Web-based distribution
-
-OAB considerations
-
 ## Moving OABs between Exchange versions
 
 In Exchange 2007 and Exchange 2010, you use the **Move-OfflineAddressBook** cmdlet to move the OAB generation to another Mailbox server. Exchange 2013 supports only OAB (version 4). This is the same version that was the default in Exchange 2010. You can't configure Exchange 2013 to generate other OAB versions, and the OAB generation occurs on the Mailbox server on which the organization mailbox resides. Therefore, to move OAB generation in Exchange 2013, you must move the organization mailbox. You can only move the OAB generation to another Exchange 2013 mailbox database. You can't move OAB generation to a previous version of Exchange. To find the Exchange 2013 OAB organization mailbox, run the following Shell command:
 
 ```powershell
-    Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
 ```
 
 You can then use the **MoveRequest** cmdlets to move the mailbox.
@@ -59,37 +49,37 @@ For Outlook 2013, Outlook 2010, Outlook 2007, and clients that use OAB version 
 
 There are several advantages to using Web-based distribution, including:
 
-  - Support of more concurrent client computers.
+- Support of more concurrent client computers.
 
-  - Reduction in bandwidth usage.
+- Reduction in bandwidth usage.
 
-  - More control over the OAB distribution points. With Web-based distribution, the distribution point is the HTTPS web address where client computers can download the OAB.
+- More control over the OAB distribution points. With Web-based distribution, the distribution point is the HTTPS web address where client computers can download the OAB.
 
 To benefit most from Web-based distribution, client computers must be running Outlook 2013, Outlook 2010, or Outlook 2007.
 
 To function properly, Web-based distribution depends on the following components:
 
-  - **OAB generation process**: This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
+- **OAB generation process**: This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
 
-  - **OAB distribution**: If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
+- **OAB distribution**: If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
 
-  - **OAB virtual directory**: The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
+- **OAB virtual directory**: The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
 
-  - **Autodiscover service**: This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
+- **Autodiscover service**: This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
 
 ## OAB considerations
 
 As a best practice, whether you use a single OAB or multiple OABs, consider the following factors as you plan and implement your OAB strategy:
 
-  - Size of each OAB in your organization. For more information, see OAB size considerations later in this topic.
+- Size of each OAB in your organization. For more information, see OAB size considerations later in this topic.
 
-  - Number of OAB downloads.
+- Number of OAB downloads.
 
-  - Number and frequency of parent distinguished name changes.
+- Number and frequency of parent distinguished name changes.
 
-  - SMTP address mismatches.
+- SMTP address mismatches.
 
-  - Overall number of changes made to the directory.
+- Overall number of changes made to the directory.
 
 ## OAB size considerations
 
@@ -97,10 +87,10 @@ For some organizations, the OAB is a small file that remote users occasionally d
 
 OAB sizes can vary from a few megabytes to a few hundred megabytes. The following factors can affect the size of the OAB:
 
-  - Usage of certificates in a company. The more public key infrastructure (PKI) certificates, the larger the OAB. PKI certificates range from 1 kilobyte (KB) to 3 KB. They're the single largest contributor to the OAB size.
+- Usage of certificates in a company. The more public key infrastructure (PKI) certificates, the larger the OAB. PKI certificates range from 1 kilobyte (KB) to 3 KB. They're the single largest contributor to the OAB size.
 
-  - Number of mail recipients in Active Directory.
+- Number of mail recipients in Active Directory.
 
-  - Number of distribution groups in Active Directory.
+- Number of distribution groups in Active Directory.
 
-  - Information that a company adds to Active Directory for each mailbox-enabled or mail-enabled object. For example, some organizations populate the address properties on each user; others don't.
+- Information that a company adds to Active Directory for each mailbox-enabled or mail-enabled object. For example, some organizations populate the address properties on each user; others don't.
