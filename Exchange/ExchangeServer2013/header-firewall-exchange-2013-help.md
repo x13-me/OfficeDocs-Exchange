@@ -31,20 +31,6 @@ In Microsoft Exchange Server 2013, *header firewall* is a mechanism that removes
 
 Header firewall prevents the spoofing of these Exchange-related X-headers by removing them from inbound messages that enter the Exchange organization from untrusted sources. Header firewall prevents the disclosure of these Exchange-related X-headers by removing them from outbound messages sent to untrusted destinations outside the Exchange organization. Header firewall also prevents the spoofing of standard routing headers that are used to track the routing history of a message.
 
-**Contents**
-
-Message header fields affected by header firewall in Exchange
-
-How header firewall is applied to Receive connectors and Send connectors
-
-Header firewall for inbound messages on Receive connectors
-
-Header firewall for outbound messages on Send connectors
-
-Header firewall for other message sources
-
-Organization X-headers and forest X-headers in Exchange
-
 ## Message header fields affected by header firewall in Exchange
 
 The following types of X-headers and routing headers are affected by header firewall:

@@ -19,17 +19,14 @@ _**Applies to:** Exchange Server 2013_
 You can use the RollAlternateServiceAccountPassword.ps1 script in Exchange Server 2013 fto update an alternate service account credential (ASA credential) and distribute the update to specified Client Access servers.
 
 > [!NOTE]
-> The Exchange Management Shell doesn't load scripts automatically. You need to precede all scripts with "<STRONG>.&#92;</STRONG>" For example, to run the RollAlternateServiceAccountPassword.ps1 script, type <CODE>.\RollAlternateServiceAccountPassword.ps1</CODE>.
-
-> [!NOTE]
-> This script is provided in English only.
+> The Exchange Management Shell doesn't load scripts automatically. You need to precede all scripts with **.\\** For example, to run the RollAlternateServiceAccountPassword.ps1 script, type `.\RollAlternateServiceAccountPassword.ps1`. <br/><br/> This script is provided in English only.
 
 For more information about how to use and write scripts, see [Scripting with the Exchange Management Shell](https://technet.microsoft.com/en-us/library/bb123798\(v=exchg.150\)).
 
 ## Syntax
 
 ```powershell
-    RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
 ```
 
 ## Detailed Description
@@ -84,7 +81,7 @@ We recommend that you run the script and verify that it works correctly in atten
 The output of the script when you run it interactively with the -verbose flag should indicate what script operations were successful. To confirm that the Client Access servers were updated, you can verify the last modified time stamp on the ASA credential. The following example generates a list of Client Access servers and the last time the alternate service account was updated.
 
 ```powershell
-    Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
 ```
 
 You can also examine the event log on the computer on which the script is run. The event log entries for the script are in the Application Event log and are from the source *MSExchange Management Application*. The following table lists the events that are logged and what the events mean.
@@ -228,7 +225,7 @@ You can use the log to confirm that the task has been running successfully.
 This example uses the script to push the credential to all Client Access servers in the forest for first-time setup.
 
 ```powershell
-    .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+.\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
 ```
 
 ## Example 2
@@ -236,7 +233,7 @@ This example uses the script to push the credential to all Client Access servers
 This example generates a new password for a user account ASA credential and distributes the password to all members of Client Access server arrays where the name matches \*mailbox\*.
 
 ```powershell
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
 ```
 
 ## Example 3
@@ -244,7 +241,7 @@ This example generates a new password for a user account ASA credential and dist
 This example schedules a once-a-month automated password roll scheduled task called "Exchange-RollAsa". It will update the ASA credential for all Client Access servers in the entire forest with a new, script-generated password. The scheduled task is created, but the script is not run. When the scheduled task is run, the script runs in unattended mode.
 
 ```powershell
-    .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+.\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
 ```
 
 ## Example 4
@@ -252,7 +249,7 @@ This example schedules a once-a-month automated password roll scheduled task cal
 This example updates the ASA credential for all Client Access servers in the Client Access server array named CAS01. It obtains the credential from the Active Directory computer account ServiceAc1 in the domain Contoso.
 
 ```powershell
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$"
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$"
 ```
 
 ## Example 5

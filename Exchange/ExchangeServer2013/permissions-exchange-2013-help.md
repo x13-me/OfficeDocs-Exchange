@@ -21,27 +21,15 @@ Microsoft Exchange Server 2013 includes a large set of predefined permissions, b
 > [!NOTE]
 > Several RBAC features and concepts aren't discussed in this topic because they're advanced features. If the functionality discussed in this topic doesn't meet your needs, and you want to further customize your permissions model, see <A href="understanding-role-based-access-control-exchange-2013-help.md">Understanding Role Based Access Control</A>.
 
-Looking for a list of all permissions topics? See Permissions documentation.
-
-**Contents**
-
-Role-based permissions
-
-Role groups and role assignment policies
-
-Work with role groups
-
-Work with role assignment policies
-
 ## Role-based permissions
 
 In Exchange 2013, the permissions that you grant to administrators and users are based on management roles. A role defines the set of tasks that an administrator or user can perform. For example, a management role called `Mail Recipients` defines the tasks that someone can perform on a set of mailboxes, contacts, and distribution groups. When a role is assigned to an administrator or user, that person is granted the permissions provided by the role.
 
 There are two types of roles, administrative roles and end-user roles:
 
-  - **Administrative roles**: These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange organization, such as recipients, servers, or databases.
+- **Administrative roles**: These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange organization, such as recipients, servers, or databases.
 
-  - **End-user roles**: These roles, assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
+- **End-user roles**: These roles, assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
 
 Roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange Administration Center (EAC) and Exchange Management Shell use cmdlets to manage Exchange, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange management interfaces.
 
@@ -51,9 +39,9 @@ Exchange 2013 includes approximately 86 roles that you can use to grant permissi
 
 Roles grant permissions to perform tasks in Exchange 2013, but you need an easy way to assign them to administrators and users. Exchange 2013 provides you with the following to help you do that:
 
-  - **Role groups**: Role groups enable you to grant permissions to administrators and specialist users.
+- **Role groups**: Role groups enable you to grant permissions to administrators and specialist users.
 
-  - **Role assignment policies**: Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own.
+- **Role assignment policies**: Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own.
 
 For more information about role groups and role assignment policies, see the following sections.
 
@@ -160,11 +148,11 @@ Permissions are added to role assignment policies using end-user roles. End-user
 
 When an end-user role is assigned to a role assignment policy, all of the mailboxes associated with that role assignment policy receive the permissions granted by the role. This enables you to add or remove permissions to sets of users without having to configure individual mailboxes. The following figure shows:
 
-  - End-user roles are assigned to role assignment policies. Role assignment policies can share the same end-user roles.
+- End-user roles are assigned to role assignment policies. Role assignment policies can share the same end-user roles.
 
-  - Role assignment policies are associated with mailboxes. Each mailbox can only be associated with one role assignment policy.
+- Role assignment policies are associated with mailboxes. Each mailbox can only be associated with one role assignment policy.
 
-  - After a mailbox is associated with a role assignment policy, the end-user roles are applied to that mailbox. The permissions granted by the roles are granted to the user of the mailbox.
+- After a mailbox is associated with a role assignment policy, the end-user roles are applied to that mailbox. The permissions granted by the roles are granted to the user of the mailbox.
 
 **Roles, role assignment policies, and mailboxes**
 
@@ -214,19 +202,19 @@ To manage the permissions that you grant end users to manage their own mailbox i
 
 Exchange 2013 includes a role assignment policy named Default Role Assignment Policy. This role assignment policy enables users whose mailboxes are associated with it to do the following:
 
-  - Join or leave distribution groups that allow members to manage their own membership.
+- Join or leave distribution groups that allow members to manage their own membership.
 
-  - View and modify basic mailbox settings on their own mailbox, such as Inbox rules, spelling behavior, junk mail settings, and Microsoft ActiveSync devices.
+- View and modify basic mailbox settings on their own mailbox, such as Inbox rules, spelling behavior, junk mail settings, and Microsoft ActiveSync devices.
 
-  - Modify their contact information, such as work address and phone number, mobile phone number, and pager number.
+- Modify their contact information, such as work address and phone number, mobile phone number, and pager number.
 
-  - Create, modify, or view text message settings.
+- Create, modify, or view text message settings.
 
-  - View or modify voice mail settings.
+- View or modify voice mail settings.
 
-  - View and modify their marketplace apps.
+- View and modify their marketplace apps.
 
-  - Create team mailboxes and connect them to Microsoft SharePoint lists.
+- Create team mailboxes and connect them to Microsoft SharePoint lists.
 
 If you want to add or remove permissions from the Default Role Assignment Policy or any other role assignment policy, you can use the EAC. The dialog box you use is similar to the one in the preceding figure. When you open the role assignment policy in the EAC, select the check box next to the roles you want to assign to it or clear the check box next to the roles you want to remove. The change you make to the role assignment policy is applied to every mailbox associated with it.
 

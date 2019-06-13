@@ -18,22 +18,6 @@ _**Applies to:** Exchange Server 2013_
 
 This topic describes procedures for making manual configuration changes to how an Edge Transport Server manages mail flow. These procedures are intended to address specific scenarios; unless your organization has specific needs for making manual configuration changes, using the default configuration when subscribing Edge Transport servers is preferred.
 
-**Contents**
-
-Manually configure Send connectors
-
-Intra-Organization Send Connectors
-
-Create additional Send connectors after Edge subscription
-
-Reasons to suppress automatic creation of Send connectors
-
-Partition mail flow
-
-Route outbound email to a smart host
-
-Configure Send connectors for external relay domains
-
 ## Manually configure Send connectors
 
 You can manually modify a Send connector's configuration. For example, if you need to route outbound email through a smart host, you can suppress automatic creation of a Send connector and manually configure a Send connector to the Internet.
@@ -81,7 +65,7 @@ If your Exchange organization routes all outbound email through a smart host, th
 Run the following command on the Mailbox server to suppress automatic creation of the Send connector to the Internet.
 
 ```powershell
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
 ```
 
 After the Edge Subscription process is complete, manually create a Send connector to the Internet. Create the Send connector inside the Exchange organization, and select the Edge Subscription as the source server for the connector. Select the `Custom` usage type and configure one or more smart hosts. This new Send connector will be replicated to the AD LDS instance on the Edge Transport server the next time EdgeSync synchronizes configuration data. You can force immediate EdgeSync synchronization by running the **Start-EdgeSynchronization** cmdlet on a Mailbox server.

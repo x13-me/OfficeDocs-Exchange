@@ -325,7 +325,7 @@ To add the required claims rules:
 
 6. On the **Configure Rule** page, in the **Choose Rule Type** step, under **Claim rule name**, enter the name for the claim rule. Use a descriptive name for the claim rule (for example, **ActiveDirectoryUserSID**). Under **Custom rule**, enter the following claim rule language syntax for this rule:
 
-   ```powershell
+   ```txt
    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
    ```
 
@@ -337,7 +337,7 @@ To add the required claims rules:
 
 10. On the **Configure Rule** page, on the **Choose Rule Type** step, under **Claim rule name**, enter the name for the claim rule. Use a descriptive name for the claim rule (for example, **ActiveDirectoryUPN**). Under **Custom rule**, enter the following claim rule language syntax for this rule:
 
-    ```powershell
+    ```txt
     c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
     ```
 
@@ -355,33 +355,33 @@ Alternatively, you can create relaying party trusts and claim rules by using Win
 
 3. Run the following two cmdlets to create the relying party trusts. In this example, this will also configure the claim rules.
 
-**IssuanceAuthorizationRules.txt contains:**
+  **IssuanceAuthorizationRules.txt contains:**
 
-```powershell
-@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
-```
+   ```txt
+   @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+   ```
 
-**IssuanceTransformRules.txt contains:**
+  **IssuanceTransformRules.txt contains:**
 
-```powershell
-@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
-```
+   ```xml
+   @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+   ```
 
-```powershell
-    @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
-```
+   ```txt
+   @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+   ```
 
-**Run the following commands:**
+  **Run the following commands:**
 
-```powershell
-[string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
+   ```powershell
+   [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
 
-[string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
+   [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
 
-Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+   Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
 
-Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
-```
+   Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+   ```
 
 ## Step 4 - Install the Web Application Proxy role service (optional)
 
@@ -509,7 +509,7 @@ When you are configuring AD FS to be used for claims-based authentication with O
 Run the following commands in the Exchange Management Shell.
 
 ```powershell
-$uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
+$uris = @("https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
 Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
 ```
 
