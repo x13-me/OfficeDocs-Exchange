@@ -40,7 +40,7 @@ As an additional safeguard, you can first copy the messages to another mailbox b
 
 - If you include a search query (by using the *SearchQuery* parameter), the **Search-Mailbox** cmdlet will return a maximum of 10,000 items in the search results. Therefore if you include a search query, you might have to run the **Search-Mailbox** command multiple times to delete more than 10,000 items.
 
-- The user's archive mailbox will also be searched when you run the **Search-Mailbox** cmdlet. Similarly, items in the primary archive mailbox will be deleted when you use the **Search-Mailbox** cmdlet with the _DeleteContent_ switch. To prevent this, you can include the *DoNotIncludeArchive* switch. Also, we recommend that you don't use the _DeleteContent_ switch to delete messages in Exchange Online mailboxes that have auto-expanding archiving enabled because unexpected data loss may occur.
+- The user's archive mailbox will also be searched when you run the **Search-Mailbox** cmdlet. Similarly, items in the primary archive mailbox will be deleted when you use the **Search-Mailbox** cmdlet with the _DeleteContent_ switch. To prevent this, you can include the *DoNotIncludeArchive* switch.
 
 ## Search messages and log the search results
 
