@@ -35,8 +35,6 @@ Looking for the Exchange Online version of this topic? See [Turn on address book
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Install the ABP Routing agent
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Agents" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.

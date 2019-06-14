@@ -20,9 +20,9 @@ Many organizations deploy multiple forests to create security boundaries within 
 
 Microsoft Exchange Server 2013 supports two types of multiple forest topologies:
 
-  - **Cross-forest**: Cross-forest topologies can have multiple forests, each with their own installation of Exchange.
+- **Cross-forest**: Cross-forest topologies can have multiple forests, each with their own installation of Exchange.
 
-  - **Resource forest**: Resource forest topologies have an Exchange forest and one or more accounts forests.
+- **Resource forest**: Resource forest topologies have an Exchange forest and one or more accounts forests.
 
 For the purposes of this topic, the forest that contains the universal security groups (USGs) and users outside of the forest where Exchange 2013 is installed, whether it's an accounts forest or other resource forest, is called a foreign forest.
 
@@ -30,21 +30,12 @@ Configuration of permissions in a multiple forest topology relies on the correct
 
 Exchange 2013 uses a Role Based Access Control (RBAC) permissions model. The management role groups that administrators are members of, and the management role assignment policies that end users are assigned, determine what each administrator and end user can do. To understand multiple-forest permissions, you need to be familiar with RBAC. For more information about RBAC, role groups, and role assignment policies, see the following topics:
 
-  - [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md)
+- [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md)
 
-  - [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md)
+- [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md)
 
-  - [Understanding management role assignment policies](understanding-management-role-assignment-policies-exchange-2013-help.md)
+- [Understanding management role assignment policies](understanding-management-role-assignment-policies-exchange-2013-help.md)
 
-Looking for management tasks related to managing permissions? See [Permissions](permissions-exchange-2013-help.md).
-
-**Contents**
-
-Permissions in a Multiple Forest Topology
-
-Cross-Boundary Permissions
-
-Configure Cross-Boundary Permissions
 
 ## Permissions in a multiple forest topology
 
@@ -52,13 +43,13 @@ RBAC applies permissions to all Exchange objects within a single forest and the 
 
 If you have multiple Exchange forests and want to configure permissions identically within each forest, you must apply the same configuration explicitly in each forest. For example, if you have two Exchange 2013 forests and want to create a Compliance Management role group to manage permissions for your legal department, you must do the following:
 
-  - In each forest, create a role group named Compliance Management. If your administrators are in a separate foreign forest from either Exchange forest, create both role groups as linked role groups. For more information about role groups, see the Cross-Boundary Permissions section.
+- In each forest, create a role group named Compliance Management. If your administrators are in a separate foreign forest from either Exchange forest, create both role groups as linked role groups. For more information about role groups, see the Cross-Boundary Permissions section.
 
-  - In each forest, create role assignments between the new role groups and the roles that you want to use.
+- In each forest, create role assignments between the new role groups and the roles that you want to use.
 
-  - As part of the new role assignments, optionally add management scopes that encompass the server and recipient objects within each forest.
+- As part of the new role assignments, optionally add management scopes that encompass the server and recipient objects within each forest.
 
-  - If you created the role groups as linked role groups, add members to the associated USG in the foreign forest.
+- If you created the role groups as linked role groups, add members to the associated USG in the foreign forest.
 
 The following figure shows how the role groups configured within Exchange 2013 forests are bound to their respective forests. The Organization Management role group in Exchange 2013 forest A grants permissions only to manage the mailboxes and servers that are within that forest. Likewise, the role groups in Exchange 2013 forest B grant permissions only to the mailboxes and servers within that forest.
 
@@ -85,13 +76,13 @@ Administrative permissions are granted cross forest boundaries by the use of lin
 
 A linked role group is created in the Exchange 2013 organization and is linked to a USG across the forest boundary in the foreign forest. The USG the linked role group is linked to can be any of the following:
 
-  - A dedicated USG for the specific use of the linked role group
+- A dedicated USG for the specific use of the linked role group
 
-  - A USG that's linked to by linked role groups in multiple Exchange 2013 forests
+- A USG that's linked to by linked role groups in multiple Exchange 2013 forests
 
-  - A role group USG in another Exchange 2013 forest
+- A role group USG in another Exchange 2013 forest
 
-  - A USG associated with an Exchange Server 2007 administrative role or Exchange 2010 role group
+- A USG associated with an Exchange Server 2007 administrative role or Exchange 2010 role group
 
 The USG that a linked role group is linked to must be in another forest. You can't link a linked role group to a USG in the same forest.
 
@@ -154,11 +145,11 @@ End-user permissions are assigned to individual mailboxes using role assignment 
 
 When a linked mailbox is created, it's assigned to a default role assignment policy just like a regular mailbox. The role assignment policy determines which end-user permissions are granted to the mailbox. These permissions enable users to view and modify settings related to the following, and other, features:
 
-  - End-user profile information
+- End-user profile information
 
-  - End-user voicemail
+- End-user voicemail
 
-  - End-user distribution membership and ownership
+- End-user distribution membership and ownership
 
 When a role assignment policy is assigned to a linked mailbox, the user in the accounts forest associated with the linked mailbox is granted permissions to manage the features available to that user. The permissions apply to only the resources in the Exchange forest where the linked mailbox is located. The following figure shows the relationship between the end user in the accounts forest, its associated linked mailbox, and the role assignment policy assigned to the linked mailbox. Additionally, a linked mailbox associated with an administrative user in the accounts forest can be associated with multiple role groups in addition to a role assignment policy.
 
@@ -174,9 +165,9 @@ To configure cross-boundary permissions in a multiple-forest topology, you must 
 
 2. Create a linked role group for each built-in role group. The following happens when the linked role group is created:
 
-      - The same roles that are assigned to the built-in role group are assigned to the new linked role group.
+   - The same roles that are assigned to the built-in role group are assigned to the new linked role group.
 
-      - The linked role group is associated with the USG in the foreign forest.
+   - The linked role group is associated with the USG in the foreign forest.
 
 3. Create linked role groups for any custom role groups you created.
 
@@ -184,16 +175,16 @@ To configure cross-boundary permissions in a multiple-forest topology, you must 
 
 For detailed information about how to perform these steps, see the following topics:
 
-  - [Create linked role groups that mirror built-in role groups](create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md)
+- [Create linked role groups that mirror built-in role groups](create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md)
 
-  - [Manage linked role groups](manage-linked-role-groups-exchange-2013-help.md)
+- [Manage linked role groups](manage-linked-role-groups-exchange-2013-help.md)
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
 If you need to change the USG that a linked role group is associated with, see [Manage linked role groups](manage-linked-role-groups-exchange-2013-help.md).
 
 When a linked mailbox is created, it's automatically assigned to a role assignment policy. You can change the role assignment policy that's assigned to the linked mailbox or change the role assignment policy that's assigned to mailboxes by default when they're created. For more information, see the following topics:
 
-  - [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)
+- [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)
 
-  - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
+- [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)

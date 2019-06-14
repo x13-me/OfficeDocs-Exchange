@@ -24,15 +24,15 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - By default, mailbox audit logging is disabled for all mailboxes. For each mailbox you want to audit, you must enable audit logging and specify the mailbox owner, delegate, or administrator actions you want to audit. For more details, see [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md).
+- By default, mailbox audit logging is disabled for all mailboxes. For each mailbox you want to audit, you must enable audit logging and specify the mailbox owner, delegate, or administrator actions you want to audit. For more details, see [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md).
 
-  - You can't use the EAC to search mailbox audit logs for owner access. The auditing section in EAC includes reports for non-owner mailbox access and also allows you to search for and export non-owner access events.
+- You can't use the EAC to search mailbox audit logs for owner access. The auditing section in EAC includes reports for non-owner mailbox access and also allows you to search for and export non-owner access events.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -45,28 +45,28 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 3. In **Export Mailbox Audit Logs**, complete the following fields, and then click **Export**:
 
-      - **Start date**
+   - **Start date**
 
-      - **End date**
+   - **End date**
 
-      - **Search these mailboxes or leave blank to find all mailboxes accessed by non-owners**
+   - **Search these mailboxes or leave blank to find all mailboxes accessed by non-owners**
 
-        > [!WARNING]
-        > Depending on the number of mailboxes in your organization and the amount of mailbox audit log data in each mailbox, searching all mailboxes may take a long time.
+     > [!WARNING]
+     > Depending on the number of mailboxes in your organization and the amount of mailbox audit log data in each mailbox, searching all mailboxes may take a long time.
 
-      - **Search for access by**
+   - **Search for access by**
 
-        Select from the following types of access events you want to search:
+     Select from the following types of access events you want to search:
 
-          - **All non-owners**
+     - **All non-owners**
 
-          - **External users**
+     - **External users**
 
-          - **Administrators and delegated users**
+     - **Administrators and delegated users**
 
-          - **Administrators**
+     - **Administrators**
 
-      - **Send the auditing report to**
+   - **Send the auditing report to**
 
 ## Use the Shell to create a mailbox audit log search
 

@@ -18,18 +18,6 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you install Unified Messaging (UM), a common set of default audio files used for the voice mail system and for menu prompts, greetings, and informational announcements is installed. Although you can create a fully functional UM auto attendant or dial plan that uses only the default audio prompts, these prompts are too generic to serve as an acceptable public interface for many companies. This topic discusses the system and menu prompts, greetings, and informational announcements that are used by UM dial plans and auto attendants and how they're used when callers access the voice mail system.
 
-**Contents**
-
-Overview of audio prompts and greetings
-
-System prompts
-
-UM dial plan greetings and announcements
-
-UM auto attendant greetings, announcements, and menu prompts
-
-Customizing greetings, announcements, and menu prompts
-
 ## Overview of audio prompts and greetings
 
 After Unified Messaging is installed, audio files for UM dial plans and auto attendants are copied to the Mailbox server. By default, the installation program copies the audio files to the Program Files\\Microsoft\\Exchange Server\\V15\\Unified Messaging\\Prompts*\\\<language\>* folder. If you've installed the U.S. English version, a folder named \\en is created during installation to hold the U.S. English versions of the system prompts. The Mailbox server plays these system prompts to callers so they can hear greetings, menu prompts, and informational announcements and so they can navigate the UM menus.
@@ -117,15 +105,15 @@ The following table summarizes the prompts and greetings used with UM auto atten
 
 Unified Messaging is installed with a set of default audio prompts for use with Outlook Voice Access, dial plans, and auto attendants. Hundreds of system prompts for each language are installed on a Mailbox server. The Mailbox server plays the audio files for these system prompts to callers when they access the voice mail system. The following are some examples of these system prompts:
 
-  - "Please enter your PIN."
+- "Please enter your PIN."
 
-  - "To access your mailbox, enter your extension."
+- "To access your mailbox, enter your extension."
 
-  - "To contact someone, press the \# key."
+- "To contact someone, press the \# key."
 
-  - "Spell the name of the person you are calling, last name first."
+- "Spell the name of the person you are calling, last name first."
 
-  - "To reach a specific person, just tell me the name."
+- "To reach a specific person, just tell me the name."
 
 > [!WARNING]
 > Modifying the installed system prompts isn't supported.
@@ -240,14 +228,14 @@ Although the system prompts mustn't be replaced or changed, you'll probably want
 
 By default, when you create a UM auto attendant, the business and non-business hours greetings or prompts aren't configured and no key mappings are defined for business or non-business hours main menu prompts. To correctly configure customized greetings and prompts for an auto attendant, you must:
 
-  - Configure business and non-business hours on the **Business hours** page.
+- Configure business and non-business hours on the **Business hours** page.
 
-  - Create the greeting audio (.wav or .wma) files that will be used for the business and non-business hours welcome greetings.
+- Create the greeting audio (.wav or .wma) files that will be used for the business and non-business hours welcome greetings.
 
-  - Configure the business and non-business hours welcome greetings on the **Greetings** page.
+- Configure the business and non-business hours welcome greetings on the **Greetings** page.
 
-  - Create the greeting files that will be used for the business and non-business hours main menu prompt greetings.
+- Create the greeting files that will be used for the business and non-business hours main menu prompt greetings.
 
-  - Configure the business and non-business hours main menu prompt greetings on the **Greetings** page.
+- Configure the business and non-business hours main menu prompt greetings on the **Greetings** page.
 
-  - Enable and configure the business and non-business hours menu navigation on the **Menu navigation** page.
+- Enable and configure the business and non-business hours menu navigation on the **Menu navigation** page.

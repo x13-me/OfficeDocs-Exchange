@@ -28,7 +28,7 @@ Some of the advantages of using custom attributes include:
 
 - The attributes are created by Exchange Setup.
 
-- You can use the Exchange Administration Center (EAC) or the Exchange Management Shell to manage the attributes. You don't need to build custom controls or write scripts to populate and display these attributes.
+- You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage the attributes. You don't need to build custom controls or write scripts to populate and display these attributes.
 
 - The attributes are filterable properties that can be used in the *Filter* parameter with recipient cmdlets such as **Get-Mailbox**. They can also be used in the EAC and the Shell to create filters for e-mail address policies, address lists, and dynamic distribution groups.
 

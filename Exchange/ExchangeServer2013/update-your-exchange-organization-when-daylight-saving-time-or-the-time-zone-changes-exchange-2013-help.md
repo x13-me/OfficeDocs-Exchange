@@ -24,8 +24,6 @@ Even if your time zone hasn't changed, if you interact with other computers or u
 
 Installing time zone updates as soon as possible minimizes the number of meetings or appointments that are scheduled during the transition from the old time and date to the new one.
 
-## How do you do this?
-
 ## Step 1: Install the Windows DST update on all client and desktop computers
 
 Because the Office 365 authentication system is updated when DST or a time zone changes, all Office 365 client computers need to be updated or they may experience connectivity issues.

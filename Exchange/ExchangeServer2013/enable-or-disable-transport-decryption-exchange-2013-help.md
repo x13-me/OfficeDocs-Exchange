@@ -23,9 +23,9 @@ Enabling transport decryption allows the Transport Rules agent on Microsoft Exch
 
 When enabling transport decryption, you can specify the following settings:
 
-  - **Mandatory**: Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
+- **Mandatory**: Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
 
-  - **Optional**: Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
+- **Optional**: Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
 
 To learn more about transport decryption, see [Transport decryption](transport-decryption-exchange-2013-help.md).
 
@@ -33,17 +33,17 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - An AD RMS server exists in the Active Directory forest and is accessible.
+- An AD RMS server exists in the Active Directory forest and is accessible.
 
-  - The Federated Delivery mailbox has been added to the AD RMS super users group. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
+- The Federated Delivery mailbox has been added to the AD RMS super users group. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-  - You can't use the Exchange Administration Center (EAC) to enable transport decryption. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to enable transport decryption. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

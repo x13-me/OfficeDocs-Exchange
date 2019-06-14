@@ -29,11 +29,11 @@ For information about creating a custom theme, see [Create a theme for Outlook W
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 45 minutes.
+- Estimated time to complete this task: 45 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Graphics editor" entry under "Outlook Web App Permissions" in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Graphics editor" entry under "Outlook Web App Permissions" in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -76,19 +76,19 @@ Use an image editing tool to open and edit the images used to build the sign-in 
 
 2. Use a graphics editor to open and modify the following files:
 
-      - owa\_text\_blue.png, to change the "Outlook Web App" text logo.
+   - owa\_text\_blue.png, to change the "Outlook Web App" text logo.
 
-      - olk\_logo\_white.png, to change the app logo in the left bar.
+   - olk\_logo\_white.png, to change the app logo in the left bar.
 
-      - olk\_logo\_white\_cropped.png, to change the image in the left side panel of the error page.
+   - olk\_logo\_white\_cropped.png, to change the image in the left side panel of the error page.
 
-      - sign\_in\_arrow.png, to change the icon left of the "sign in" button.
+   - sign\_in\_arrow.png, to change the icon left of the "sign in" button.
 
-      - olk\_exchange\_text\_blue.png, to change the "Outlook Mobile" logo on tnarrow layout.
+   - olk\_exchange\_text\_blue.png, to change the "Outlook Mobile" logo on tnarrow layout.
 
-      - olk\_logo\_white\_small.png is used in tnarrow.
+   - olk\_logo\_white\_small.png is used in tnarrow.
 
-      - olk\_exchange\_text\_stacked\_white\_small.png is used in tnarrow.
+   - olk\_exchange\_text\_stacked\_white\_small.png is used in tnarrow.
 
 3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
 

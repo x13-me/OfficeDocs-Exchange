@@ -20,18 +20,6 @@ An Active Directory site is a logical configuration component that's based on th
 
 By default, an Active Directory forest contains only one Active Directory site. The default name for this Active Directory site is `Default-First-Site-Name`. If no other Active Directory sites are created, all domain member computers in the forest are members of `Default-First-Site-Name`. You don't have to configure a subnet-to-site association. If additional Active Directory sites are created, you need specify the subnets that are assigned to that Active Directory site.
 
-**Contents**
-
-Determining site membership
-
-IP site links
-
-Controlling IP site link costs
-
-Implementing hub sites
-
-Topology discovery
-
 ## Determining site membership
 
 Each Active Directory site is associated with one or more IP subnets. An administrator assigns Active Directory site membership to computers that are configured as domain controllers and global catalog servers. Other domain member computers, such as Exchange servers, are assigned Active Directory site membership automatically when they're configured to use an IP address that's in an IP subnet that's associated with an Active Directory site. Computers that have the same Active Directory site membership are presumed to have good network connectivity. A server is always a member of a single Active Directory site.
@@ -154,9 +142,9 @@ You can configure any Active Directory site as a hub site. However, for this con
 
 The Active Directory topology is made available to Exchange by the following required elements:
 
-  - The Microsoft Exchange Active Directory Topology service.
+- The Microsoft Exchange Active Directory Topology service.
 
-  - The topology discovery module inside the Microsoft Exchange Transport service.
+- The topology discovery module inside the Microsoft Exchange Transport service.
 
 The Microsoft Exchange Active Directory Topology service runs on all Exchange 2013 Client Access servers and Mailbox servers. These servers use the Microsoft Exchange Active Directory Topology service to discover the domain controllers and global catalog servers that can be used by the Exchange servers to read and write Active Directory data. Exchange 2013 binds to the identified directory servers whenever Exchange has to read from or write to Active Directory.
 
@@ -166,11 +154,11 @@ The topology discovery module performs the following steps to generate an Exchan
 
 1. Data is read from Active Directory. All the following objects are retrieved:
 
-      - Active Directory sites.
+   - Active Directory sites.
 
-      - IP site links.
+   - IP site links.
 
-      - All Exchange servers.
+   - All Exchange servers.
 
 2. The data that's retrieved in step 1 is used to create the initial topology and to begin linking and mapping the related configuration objects.
 

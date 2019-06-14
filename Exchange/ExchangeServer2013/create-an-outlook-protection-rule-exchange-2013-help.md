@@ -30,7 +30,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 - If you configure Outlook protection rules to IRM-protect messages, consider enabling transport decryption to allow transport agents, including the Transport Rules agent, to decrypt and access the message. If you use journaling, you should also consider enabling journal report decryption to allow the Journaling agent to save an unencrypted copy of the message in the journal report. For more information, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
 
-- You can't use the Exchange Administration Center (EAC) to create Outlook protection rules. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to create Outlook protection rules. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

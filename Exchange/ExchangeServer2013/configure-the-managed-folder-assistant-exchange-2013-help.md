@@ -26,7 +26,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-- You can't use the Exchange Administration Center (EAC) to configure the Managed Folder Assistant. You must use the Shell
+- You can't use the Exchange admin center (EAC) to configure the Managed Folder Assistant. You must use the Shell
 
 - In Exchange 2013, the Managed Folder Assistant is a throttle-based assistant. Throttle-based assistants are always running and don't need to be scheduled. The system resources they can consume are throttled. You can configure the Managed Folder Assistant to process all mailboxes on a Mailbox server within a certain period (known as a *work cycle)*. The work cycle is set to one day by default.
 

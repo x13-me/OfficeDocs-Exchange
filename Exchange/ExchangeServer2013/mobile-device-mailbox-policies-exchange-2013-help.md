@@ -42,7 +42,7 @@ For more information about all the settings you can configure, see Mobile device
 
 ## Managing Exchange ActiveSync mailbox policies
 
-Mobile device mailbox policies can be created in the Exchange Administration Center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Shell.
+Mobile device mailbox policies can be created in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Shell.
 
 ## Windows Phone 7 synchronization
 

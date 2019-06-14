@@ -26,7 +26,7 @@ You don't need to install digital certificates on the Mailbox servers in your or
 
 ## Configuring virtual directories
 
-There are several settings that you can configure on the virtual directories for the Offline Address Book (OAB), Exchange Web Services, Exchange ActiveSync, Outlook Web App, and the Exchange Administration Center. For additional information about virtual directory management, see [Virtual directory management](virtual-directory-management-exchange-2013-help.md). You can configure the virtual directories using the following commands.
+There are several settings that you can configure on the virtual directories for the Offline Address Book (OAB), Exchange Web Services, Exchange ActiveSync, Outlook Web App, and the Exchange admin center. For additional information about virtual directory management, see [Virtual directory management](virtual-directory-management-exchange-2013-help.md). You can configure the virtual directories using the following commands.
 
 - Exchange 2013 provides two sets of HTTP connectivity settings for Outlook Anywhere configuration so that administrators may configure both an internal and external endpoint.
 

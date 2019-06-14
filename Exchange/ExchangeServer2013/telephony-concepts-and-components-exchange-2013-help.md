@@ -18,26 +18,6 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 If you're planning and deploying Microsoft Exchange 2013 Unified Messaging (UM) on your network, you must understand Unified Messaging and telephony networks. This topic provides an overview of telephony infrastructure concepts and components that will help you plan and deploy servers running Exchange 2013 Unified Messaging.
 
-**Contents**
-
-Overview
-
-Concepts and components
-
-Circuit-switched networks
-
-Packet-switched networks
-
-PBX
-
-IP PBX
-
-SIP-enabled PBX
-
-VoIP
-
-IP gateways
-
 ## Overview
 
 In versions of Microsoft Exchange before Exchange Server 2007, the Exchange administrator's main responsibility was managing email messages and, sometimes, managing a network infrastructure. Earlier versions of Exchange didn't have Unified Messaging capabilities. Exchange Server version 5.5, Exchange 2000 Server, and Exchange Server 2003 administrators focused on the Exchange environment and the network infrastructure, and relied heavily on telephony consultants to manage their telephony environment and infrastructure.
@@ -46,15 +26,15 @@ In versions of Microsoft Exchange before Exchange Server 2007, the Exchange admi
 
 To successfully deploy Unified Messaging in Exchange 2013, you must have a good understanding of basic telephony concepts and telephony components. After you gain a good understanding of telephony basics, you can successfully integrate Exchange 2013 Unified Messaging into an Exchange 2013 organization. Basic concepts and components include the following:
 
-  - Circuit-switched and packet-switched networks
+- Circuit-switched and packet-switched networks
 
-  - Private Branch eXchange (PBX)
+- Private Branch eXchange (PBX)
 
-  - IP PBX
+- IP PBX
 
-  - Voice over Internet Protocol (VoIP)
+- Voice over Internet Protocol (VoIP)
 
-  - VoIP gateways
+- VoIP gateways
 
 ## Circuit-switched networks
 
@@ -104,11 +84,11 @@ Internal business calls made to external telephone numbers using a PBX are made 
 
 In medium-size and larger-size businesses, the following PBX configurations are possible:
 
-  - A single PBX that supports the whole business.
+- A single PBX that supports the whole business.
 
-  - A grouping of two or more PBXs not networked or connected to each other.
+- A grouping of two or more PBXs not networked or connected to each other.
 
-  - A grouping of two or more PBXs connected together or networked.
+- A grouping of two or more PBXs connected together or networked.
 
 > [!NOTE]
 > An Exchange 2013 UM dial plan can span more than one PBX or IP PBX.

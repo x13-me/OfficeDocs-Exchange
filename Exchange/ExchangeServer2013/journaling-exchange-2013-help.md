@@ -18,53 +18,37 @@ _**Applies to:** Exchange Server 2013_
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. When planning for messaging retention and compliance, it's important to understand journaling, how it fits in your organization's compliance policies, and how Microsoft Exchange Server 2013 helps you secure journaled messages.
 
-**Contents**
-
-Why journaling is important
-
-Journaling agent
-
-Journal rules
-
-Journal rule replication
-
-Journal reports
-
-Interoperability with Exchange 2010 and Exchange 2007
-
-Troubleshooting
-
 ## Why journaling is important
 
 First, it's important to understand the difference between journaling and a data archiving strategy:
 
-  - *Journaling* is the ability to record all communications, including email communications, in an organization for use in the organization's email retention or archival strategy. To meet an increasing number of regulatory and compliance requirements, many organizations must maintain records of communications that occur when employees perform daily business tasks.
+- *Journaling* is the ability to record all communications, including email communications, in an organization for use in the organization's email retention or archival strategy. To meet an increasing number of regulatory and compliance requirements, many organizations must maintain records of communications that occur when employees perform daily business tasks.
 
-  - *Data archiving* refers to backing up the data, removing it from its native environment, and storing it elsewhere, therefore reducing the strain of data storage. You can use Exchange journaling as a tool in your email retention or archival strategy.
+- *Data archiving* refers to backing up the data, removing it from its native environment, and storing it elsewhere, therefore reducing the strain of data storage. You can use Exchange journaling as a tool in your email retention or archival strategy.
 
 Although journaling may not be required by a specific regulation, compliance may be achieved through journaling under certain regulations. For example, corporate officers in some financial sectors may be held liable for the claims made by their employees to their customers. To verify that the claims are accurate, a corporate officer may set up a system where managers review some part of employee-to-client communications regularly. Every quarter, the managers verify compliance and approve their employees' conduct. After all managers report approval to the corporate officer, the corporate officer reports compliance, on behalf of the company, to the regulating body. In this example, email messages might be one type of the employee-to-client communications that managers must review; therefore, journaling can be used to collect all email messages sent by client-facing employees. Other client communication mechanisms may include faxes and telephone conversations, which may also be subject to regulation. The ability to journal all classes of data in an enterprise is a valuable functionality of the IT architecture.
 
 The following list shows some of the more well-known U.S. and international regulations where journaling may help form part of your compliance strategies:
 
-  - Sarbanes-Oxley Act of 2002 (SOX)
+- Sarbanes-Oxley Act of 2002 (SOX)
 
-  - Security Exchange Commission Rule 17a-4 (SEC Rule 17 A-4)
+- Security Exchange Commission Rule 17a-4 (SEC Rule 17 A-4)
 
-  - National Association of Securities Dealers 3010 & 3110 (NASD 3010 & 3110)
+- National Association of Securities Dealers 3010 & 3110 (NASD 3010 & 3110)
 
-  - Gramm-Leach-Bliley Act (Financial Modernization Act)
+- Gramm-Leach-Bliley Act (Financial Modernization Act)
 
-  - Financial Institution Privacy Protection Act of 2001
+- Financial Institution Privacy Protection Act of 2001
 
-  - Financial Institution Privacy Protection Act of 2003
+- Financial Institution Privacy Protection Act of 2003
 
-  - Health Insurance Portability and Accountability Act of 1996 (HIPAA)
+- Health Insurance Portability and Accountability Act of 1996 (HIPAA)
 
-  - Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act of 2001 (Patriot Act)
+- Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act of 2001 (Patriot Act)
 
-  - European Union Data Protection Directive (EUDPD)
+- European Union Data Protection Directive (EUDPD)
 
-  - Japan's Personal Information Protection Act
+- Japan's Personal Information Protection Act
 
 ## Journaling agent
 
@@ -75,9 +59,9 @@ In an Exchange 2013 organization, all email traffic is routed by Mailbox servers
 
 Exchange 2013 provides the following journaling options:
 
-  - **Standard journaling**: Standard journaling is configured on a mailbox database. It enables the Journaling agent to journal all messages sent to and from mailboxes located on a specific mailbox database. To journal all messages to and from all recipients and senders, you must configure journaling on all mailbox databases on all Mailbox servers in the organization.
+- **Standard journaling**: Standard journaling is configured on a mailbox database. It enables the Journaling agent to journal all messages sent to and from mailboxes located on a specific mailbox database. To journal all messages to and from all recipients and senders, you must configure journaling on all mailbox databases on all Mailbox servers in the organization.
 
-  - **Premium journaling**: Premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
+- **Premium journaling**: Premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
 
 When you enable standard journaling on a mailbox database, this information is saved in Active Directory and is read by the Journaling agent. Similarly, journal rules configured with premium journaling are also saved in Active Directory and applied by the Journaling agent. For more information about how to configure standard and premium journaling, see [Manage journaling](https://docs.microsoft.com/en-us/exchange/security-and-compliance/journaling/manage-journaling).
 
@@ -85,21 +69,21 @@ When you enable standard journaling on a mailbox database, this information is s
 
 The following are key aspects of journal rules:
 
-  - **Journal rule scope**: Defines which messages are journaled by the Journaling agent.
+- **Journal rule scope**: Defines which messages are journaled by the Journaling agent.
 
-  - **Journal recipient**: Specifies the SMTP address of the recipient you want to journal.
+- **Journal recipient**: Specifies the SMTP address of the recipient you want to journal.
 
-  - **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
+- **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
 
 ## Journal rule scope
 
 You can use a journal rule to journal only internal messages, only external messages, or both. The following list describes these scopes:
 
-  - **Internal messages only**: Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization.
+- **Internal messages only**: Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization.
 
-  - **External messages only**: Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization.
+- **External messages only**: Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization.
 
-  - **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
+- **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
 
 ## Journal recipient
 

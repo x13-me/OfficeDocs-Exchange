@@ -27,11 +27,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient provisioning permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient provisioning permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,11 +44,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 
-    In the result pane, under **Email Connectivity**, do one of the following:
+   In the result pane, under **Email Connectivity**, do one of the following:
 
-      - To disable POP3 for the user, under **POP3: Enabled**, click **Disable**.
+   - To disable POP3 for the user, under **POP3: Enabled**, click **Disable**.
 
-      - To enable POP3 for the user, under **POP3: Disabled**, click **Enable**.
+   - To enable POP3 for the user, under **POP3: Disabled**, click **Enable**.
 
 4. Click **Save**.
 
@@ -74,10 +74,10 @@ Set-CASMailbox -Identity "John Smith" -POPEnabled $false
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 
-    In the result pane, look under **Email Connectivity**.
+   In the result pane, look under **Email Connectivity**.
 
-      - If POP3 is enabled for the user, you will see **POP3: Enabled**.
+   - If POP3 is enabled for the user, you will see **POP3: Enabled**.
 
-      - If POP3 is disabled for the user, you will see **POP3: Disabled**.
+   - If POP3 is disabled for the user, you will see **POP3: Disabled**.
 
 4. Click **Save**.

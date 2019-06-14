@@ -32,8 +32,6 @@ With federated sharing in Exchange Server 2013, users can share information with
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create and configure a federation trust
 
 A federation trust establishes a trust relationship between an Exchange 2013 organization and the Azure Active Directory authentication system and is a requirement for federated sharing.

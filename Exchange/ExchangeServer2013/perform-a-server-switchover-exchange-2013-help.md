@@ -20,9 +20,9 @@ A server switchover is a task that you perform to move all active mailbox databa
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 30 seconds per database
+- Estimated time to complete: 30 seconds per database
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -39,9 +39,9 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 4. On the **Server Switchover** page, do one of the following:
 
-    1. Accept the default setting of **Automatically choose a target server** (in which case, the system automatically selects the best Mailbox server for each database being switched over), and then click **save**.
+   1. Accept the default setting of **Automatically choose a target server** (in which case, the system automatically selects the best Mailbox server for each database being switched over), and then click **save**.
 
-    2. Click **Use the specified server as the target for switchover**, click **Browse** to select a Mailbox server, and then click **save**.
+   2. Click **Use the specified server as the target for switchover**, click **Browse** to select a Mailbox server, and then click **save**.
 
 5. When the switchover has completed, click **close** to exit the **Server Switchover** page.
 

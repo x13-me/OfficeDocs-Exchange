@@ -22,13 +22,13 @@ For additional management tasks related to Mailbox servers, see [UM services pro
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: Less than 1 minute.
+- Estimated time to complete: Less than 1 minute.
 
-  - To perform the following procedures, you must log on to the Mailbox server by using an account that's a member of the local Administrators group.
+- To perform the following procedures, you must log on to the Mailbox server by using an account that's a member of the local Administrators group.
 
-  - Verify that the Mailbox server is installed, either on the same computer as the Client Access server or on a separate computer.
+- Verify that the Mailbox server is installed, either on the same computer as the Client Access server or on a separate computer.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -49,6 +49,6 @@ For additional management tasks related to Mailbox servers, see [UM services pro
 
 2. In the **Open** box, type the following command, and then press Enter.
 
-    ```powershell
-    net stop MSExchangeUM
-    ```
+   ```powershell
+   net stop MSExchangeUM
+   ```

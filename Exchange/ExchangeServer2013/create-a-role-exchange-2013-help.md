@@ -27,18 +27,16 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 10 minutes
+- Estimated time to complete this procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Create the management role
 
@@ -66,11 +64,11 @@ You can't add new role entries or parameters on role entries unless they exist i
 
 When you change a role entry on a role, you can do one of the following:
 
-  - Remove a single, entire role entry.
+- Remove a single, entire role entry.
 
-  - Remove multiple, entire role entries.
+- Remove multiple, entire role entries.
 
-  - Remove parameters from a role entry.
+- Remove parameters from a role entry.
 
 To remove role entries from your new role, see [Remove a role entry from a role](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
@@ -88,21 +86,21 @@ The final step when you create and configure a role is to assign it to a role as
 
 When you create a role assignment, you can choose to do one of the following:
 
-  - Create the role assignment with no scope.
+- Create the role assignment with no scope.
 
-  - Create the role assignment with a predefined scope.
+- Create the role assignment with a predefined scope.
 
-  - Create the role assignment with an OU without a domain restriction filter.
+- Create the role assignment with an OU without a domain restriction filter.
 
-  - Create the role assignment with the custom or exclusive scope you created in Step 3.
+- Create the role assignment with the custom or exclusive scope you created in Step 3.
 
-    > [!NOTE]
-    > You can't specify a scope when you create an assignment between a role and a management role assignment policy.
+  > [!NOTE]
+  > You can't specify a scope when you create an assignment between a role and a management role assignment policy.
 
 You can assign the new role to a role group, a role assignment policy, a user, or a universal security group (USG). For more information, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
+- [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)

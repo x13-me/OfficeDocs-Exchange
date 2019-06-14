@@ -61,7 +61,7 @@ If you use the EAC to view the properties of an Outlook Web App virtual director
 
    - **Modified** (read-only): **Modified** displays the last date and time that the virtual directory was modified.
 
-   - **Internal URL**: In this text box, specify the URL used to access this website from an internal network. An internal URL is configured automatically during Exchange 2013 Setup. The default internal URL setting for an Internet-facing or non-Internet-facing server is https://\<Computer Name\>/owa.
+   - **Internal URL**: In this text box, specify the URL used to access this website from an internal network. An internal URL is configured automatically during Exchange 2013 Setup. The default internal URL setting for an Internet-facing or non-Internet-facing server is `https://<Computer Name>/owa`.
 
    - **External URL**: In this text box, specify the URL used to access the website from the Internet. By default, **External URL** is blank. For Internet-facing Client Access servers, **External URL** should be set to the value published in DNS for that Active Directory site. For Exchange 2013 servers that don't have an Internet presence, the **External URL** setting should remain blank.
 
@@ -115,7 +115,7 @@ If you use the EAC to view the properties of an Outlook Web App virtual director
 This example enables forms-based authentication on the default Outlook Web App virtual directory on the server Contoso.
 
 ```powershell
-    set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+Set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
 ```
 
 For more information about syntax and parameters, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
@@ -131,7 +131,7 @@ Get-OWAVirtualDirectory
 This example lets you view the properties for an Outlook Web App virtual directory on the default IIS website on the local Exchange server.
 
 ```powershell
-    Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
 ```
 
 This example lets you view the properties for all Outlook Web App virtual directories on an IIS website on a specific Exchange server.

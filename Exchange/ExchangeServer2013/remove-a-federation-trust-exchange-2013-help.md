@@ -25,13 +25,13 @@ For additional management tasks related to federation trusts, see [Federation pr
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - After removing the federation trust, you can remove the TXT records from your public DNS server for each federated domain. Review the requirements for removing a TXT record with the organization that hosts your public DNS records.
+- After removing the federation trust, you can remove the TXT records from your public DNS server for each federated domain. Review the requirements for removing a TXT record with the organization that hosts your public DNS records.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to remove a federation trust
 
@@ -57,14 +57,14 @@ For detailed syntax and parameter information, see [Remove-FederationTrust](http
 
 To verify that you have successfully removed the federation trust, do one of the following:
 
-  - In the EAC, navigate to **organization** \> **sharing**. If you successfully removed the federation trust, only the **Enable** button will be available under **Federation Trust**.
+- In the EAC, navigate to **organization** \> **sharing**. If you successfully removed the federation trust, only the **Enable** button will be available under **Federation Trust**.
 
-  - In the Shell, run the following command to verify that federation trust information isn't returned for your Exchange organization.
+- In the Shell, run the following command to verify that federation trust information isn't returned for your Exchange organization.
 
-    ```powershell
-    Get-FederationTrust
-    ```
+  ```powershell
+  Get-FederationTrust
+  ```
 
-    For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)).
+  For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

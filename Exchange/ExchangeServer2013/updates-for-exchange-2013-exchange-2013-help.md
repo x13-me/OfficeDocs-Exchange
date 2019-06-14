@@ -197,7 +197,7 @@ SSL offloading is supported with following protocols and services:
 
   - Outlook Web App
 
-  - Exchange Admin Center (EAC)
+  - Exchange admin center (EAC)
 
   - Outlook Anywhere
 

@@ -28,7 +28,7 @@ To learn more about In-Place Archives, see [In-Place Archiving in Exchange 2013]
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- In the Exchange Administration Center (EAC), you can use a drop-down list with fixed values to configure the archive quota and archive warning quota. If you want to set either quota to a value that's not listed in the EAC, use the Shell.
+- In the Exchange admin center (EAC), you can use a drop-down list with fixed values to configure the archive quota and archive warning quota. If you want to set either quota to a value that's not listed in the EAC, use the Shell.
 
 - Configure the archive warning quota to a lower value than the archive quota. Depending on the rate of archive growth for a user, the difference between the archive warning quota and the archive quota should allow for sufficient time for the user to take appropriate actions, such as deleting items from the archive or requesting that an administrator or IT helpdesk to raise the archive quota.
 

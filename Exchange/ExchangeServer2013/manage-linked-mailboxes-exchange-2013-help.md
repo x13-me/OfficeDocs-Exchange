@@ -119,7 +119,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 ## Change linked mailbox properties
 
-After you create a linked mailbox, you can make changes and set additional properties by using the Exchange Administration Center (EAC) or the Exchange Management Shell.
+After you create a linked mailbox, you can make changes and set additional properties by using the Exchange admin center (EAC) or the Exchange Management Shell.
 
 You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) topic.
 

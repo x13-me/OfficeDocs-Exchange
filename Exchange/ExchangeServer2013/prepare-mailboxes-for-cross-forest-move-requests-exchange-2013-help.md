@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 **Summary:** Learn about preparing mailboxes for cross-forest moves in Exchange 2013.
 
-Microsoft Exchange 2013 supports mailbox moves and migrations using the Exchange Management Shell, specifically the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox via the Exchange Administration Center (EAC). Note that you can move Exchange 2010 and Exchange 2013 mailboxes to an Exchange 2013 forest.
+Microsoft Exchange 2013 supports mailbox moves and migrations using the Exchange Management Shell, specifically the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox via the Exchange admin center (EAC). Note that you can move Exchange 2010 and Exchange 2013 mailboxes to an Exchange 2013 forest.
 
 To move a mailbox from an Exchange forest to an Exchange 2013 forest, the Exchange 2013 target forest must contain a valid mail-enabled user with a specified set of Active Directory attributes. If there is at least one Exchange 2013 Client Access server deployed in the forest, the forest is considered an Exchange 2013 forest.
 
