@@ -21,61 +21,41 @@ Microsoft Exchange Unified Messaging (UM) enables voice mail messages to be deli
 > [!NOTE]
 > Although Unified Messaging doesn't let users send outgoing faxes, many third-party solutions, such as an Internet fax service, an email faxing service, or a third-party fax server application, can be used to send outgoing faxes.
 
-**Contents**
-
-Overview of faxing
-
-Faxing methods
-
-T.38
-
-Overview of faxing with Unified Messaging
-
-Receiving incoming faxes
-
-Fax call referral methods
-
-Configuring faxing
-
-Telephone numbers and faxing
-
-Journaling UM fax messages
-
 ## Overview of faxing
 
 Fax is an abbreviation for the word facsimile. It's a technology that's used to electronically transfer documents. Generally, faxes are sent and received by fax machines or computer fax modems by using the Public Switched Telephone Network (PSTN), which is a telephony or circuit-based network. However, other options can be used to send and receive faxes.
 
 Most organizations today want their users to be able to send and receive faxes. Organizations use one or more of the methods described in the following list to send or receive faxes over the PSTN or over the Internet. There are advantages and disadvantages to each of these methods.
 
-  - Traditional fax machines and computer-based faxing
+- Traditional fax machines and computer-based faxing
 
-  - Faxing by using fax servers or fax gateways
+- Faxing by using fax servers or fax gateways
 
-  - Faxing by using a Voice over IP (VoIP) network
+- Faxing by using a Voice over IP (VoIP) network
 
-  - Faxing by using an email client application
+- Faxing by using an email client application
 
 To send a fax message, users in an organization may have to do the following:
 
-  - Print a hard copy of the document to be faxed and use a physical fax machine to send it.
+- Print a hard copy of the document to be faxed and use a physical fax machine to send it.
 
-  - Save the document on their computer and use a fax modem to send the fax, but this requires a phone line connected to the computer.
+- Save the document on their computer and use a fax modem to send the fax, but this requires a phone line connected to the computer.
 
-  - Use an Internet fax service that lets them fax a document from a vendor-specific software application.
+- Use an Internet fax service that lets them fax a document from a vendor-specific software application.
 
-  - Send an outgoing fax to a fax server by using a software application that's configured to use the fax server.
+- Send an outgoing fax to a fax server by using a software application that's configured to use the fax server.
 
 To receive a fax, users in an organization may have to do the following:
 
-  - Receive a fax on a physical fax machine within the organization.
+- Receive a fax on a physical fax machine within the organization.
 
-  - Receive a fax by using a fax modem that's installed on their computer.
+- Receive a fax by using a fax modem that's installed on their computer.
 
-  - Receive a fax from an Internet faxing service.
+- Receive a fax from an Internet faxing service.
 
-  - Receive a fax from a fax server that's configured on a network.
+- Receive a fax from a fax server that's configured on a network.
 
-  - Receive a fax from a fax partner's server that uses Unified Messaging to deliver the fax using a VoIP network.
+- Receive a fax from a fax partner's server that uses Unified Messaging to deliver the fax using a VoIP network.
 
 ## Faxing methods
 
@@ -97,17 +77,17 @@ The traditional fax method requires at least a single telephone line on the send
 
 Internet fax services let a user send faxes from a computer by using the Internet. A software application such as Word or Outlook can be used to create and send the fax to an Internet fax service. Many companies offer Internet fax services on a subscription basis or by charging for each fax message that's sent. Internet fax services offer the following advantages:
 
-  - No fax machine is required.
+- No fax machine is required.
 
-  - No software or hardware must be installed.
+- No software or hardware must be installed.
 
-  - No dedicated telephone lines are required.
+- No dedicated telephone lines are required.
 
-  - Confidentiality.
+- Confidentiality.
 
-  - Multiple faxes can be sent at the same time.
+- Multiple faxes can be sent at the same time.
 
-  - Faxes can be received when the computer is turned off.
+- Faxes can be received when the computer is turned off.
 
 The following figure shows how Internet fax services can be used to send and receive faxes.
 
@@ -141,17 +121,17 @@ In Unified Messaging, the user receives fax images as separate documents encoded
 
 There are several advantages to sending a fax message to the user's mailbox. These advantages include the following:
 
-  - You can reduce the number of physical or traditional fax machines.
+- You can reduce the number of physical or traditional fax machines.
 
-  - The number of telephone lines used for faxing in an organization can be reduced, because the Mailbox server can queue many faxes and send each fax when one of the telephone lines becomes available.
+- The number of telephone lines used for faxing in an organization can be reduced, because the Mailbox server can queue many faxes and send each fax when one of the telephone lines becomes available.
 
-  - Faxes that are received as a .tif image file are better quality than a traditional fax. Incoming faxes can be printed by a local or shared printer.
+- Faxes that are received as a .tif image file are better quality than a traditional fax. Incoming faxes can be printed by a local or shared printer.
 
-  - Faxes sent to the user's mailbox are more secure because they're less likely than hard-copy faxes to be picked up by someone other than the recipient.
+- Faxes sent to the user's mailbox are more secure because they're less likely than hard-copy faxes to be picked up by someone other than the recipient.
 
-  - Users can receive faxes without leaving their desk.
+- Users can receive faxes without leaving their desk.
 
-  - Fax messages that are received can be monitored to make sure that they comply with an organization's security policies.
+- Fax messages that are received can be monitored to make sure that they comply with an organization's security policies.
 
 A single fax message can be sent only to a single UM-enabled user. Unified Messaging can't forward fax messages to a distribution list. If you need to have this functionality, you must follow these steps:
 
@@ -234,11 +214,11 @@ By default, when you install the Mailbox server, the server isn't configured to 
 
 Exchange Unified Messaging offers the following options when you're configuring UM-enabled users to receive fax messages:
 
-  - A Direct Inward Dial (DID) telephone number for an individual user that's used for both faxes and voice mail.
+- A Direct Inward Dial (DID) telephone number for an individual user that's used for both faxes and voice mail.
 
-  - A separate DID telephone number for an individual user that's used for receiving faxes.
+- A separate DID telephone number for an individual user that's used for receiving faxes.
 
-  - A central fax telephone number for all users that receives all faxes.
+- A central fax telephone number for all users that receives all faxes.
 
 ## A single DID telephone number
 
@@ -248,25 +228,25 @@ Using a single DID number, you can configure faxing so that a user uses a single
 
 If a user whose faxing is configured using a single DID telephone number receives a call from a fax machine when they're not away or on the phone, they can:
 
-  - Not answer the telephone when it rings so that the fax call will be forwarded and answered by a Mailbox server and the fax message will be created and forwarded to the user's mailbox.
+- Not answer the telephone when it rings so that the fax call will be forwarded and answered by a Mailbox server and the fax message will be created and forwarded to the user's mailbox.
 
-  - Answer the fax call, and then transfer it to himself or herself so that the call will be forwarded and answered by a Mailbox server and the fax message will be created and forwarded to the user's mailbox.
+- Answer the fax call, and then transfer it to himself or herself so that the call will be forwarded and answered by a Mailbox server and the fax message will be created and forwarded to the user's mailbox.
 
-  - Wait for the caller to retry sending the fax and let the fax call be transferred to a Mailbox server.
+- Wait for the caller to retry sending the fax and let the fax call be transferred to a Mailbox server.
 
 In summary, using a single DID number requires the user to perform additional actions to be able to receive fax messages.
 
 ## Multiple DID telephone numbers
 
-When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange Administration Center (EAC). For more information, see [Add an extension number](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
+When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange admin center (EAC). For more information, see [Add an extension number](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
 
 Adding multiple extension numbers is useful when a UM-enabled user:
 
-  - Receives many faxes.
+- Receives many faxes.
 
-  - Doesn't want to be bothered with answering the phone to receive a fax.
+- Doesn't want to be bothered with answering the phone to receive a fax.
 
-  - Doesn't want to hear a fax tone when they answer their phone.
+- Doesn't want to hear a fax tone when they answer their phone.
 
 Adding multiple extensions is more complex than using a single extension and may require additional configuration settings on a PBX or an IP PBX. To configure multiple extension numbers for a UM-enabled user, you must have DID extension numbers available that aren't being used in your organization. It isn't a good idea to use multiple numbers for a UM-enabled user if your organization has a limited number of DID extension numbers available.
 
@@ -276,11 +256,11 @@ If you configure two DID extension numbers for a specific user, the DID extensio
 
 You have the following options when you're configuring multiple DID extension numbers for UM-enabled users:
 
-  - **One extension for fax without Unified Messaging and one for voice**: This type of configuration is enabled on a per-user basis and is used when you have extra or unused DID extension numbers available. One DID extension number is published as the user's voice mail number and the other DID extension number is published as the user's fax number. Voice calls that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, and a voice message is created and sent to the UM-enabled user's mailbox. The other extension number can be connected to a fax machine or to another computer that has a fax modem. With this configuration, a Mailbox server doesn't process fax calls, and fax messages aren't sent to the UM-enabled user's mailbox.
+- **One extension for fax without Unified Messaging and one for voice**: This type of configuration is enabled on a per-user basis and is used when you have extra or unused DID extension numbers available. One DID extension number is published as the user's voice mail number and the other DID extension number is published as the user's fax number. Voice calls that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, and a voice message is created and sent to the UM-enabled user's mailbox. The other extension number can be connected to a fax machine or to another computer that has a fax modem. With this configuration, a Mailbox server doesn't process fax calls, and fax messages aren't sent to the UM-enabled user's mailbox.
 
-  - **One extension for fax and one for voice**: This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
+- **One extension for fax and one for voice**: This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
 
-  - **One "phantom" extension for fax and one for voice**: This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
+- **One "phantom" extension for fax and one for voice**: This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
 
     The advantage of this type of configuration is that incoming fax calls are answered by a Mailbox server. When the phone rings but isn't answered, a fax is created and forwarded by the Mailbox server to the UM-enabled user's mailbox without disturbing the user. This happens automatically because no telephone or fax device is positioned close to the user, and the user doesn't hear the ring of the incoming call.
 
@@ -299,13 +279,13 @@ Publishing one fax number for the whole organization enables your organization t
 
 Using a single fax number for the whole organization is useful in the following situations:
 
-  - A user within the organization receives too many faxes in their mailbox to manage them effectively.
+- A user within the organization receives too many faxes in their mailbox to manage them effectively.
 
-  - A user receives too many spam faxes in their mailbox.
+- A user receives too many spam faxes in their mailbox.
 
-  - Business needs are too complex to warrant creating a transport rule to accept incoming faxes and route them to the intended mailbox. This might not be practical, for example, if your organization requires that you route certain faxes to one group and other faxes to another group. For more information, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
+- Business needs are too complex to warrant creating a transport rule to accept incoming faxes and route them to the intended mailbox. This might not be practical, for example, if your organization requires that you route certain faxes to one group and other faxes to another group. For more information, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-  - Filtering fax messages by using Outlook isn't effective.
+- Filtering fax messages by using Outlook isn't effective.
 
 ## Journaling UM fax messages
 

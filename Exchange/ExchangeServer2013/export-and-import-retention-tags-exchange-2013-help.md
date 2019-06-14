@@ -18,11 +18,11 @@ _**Applies to:** Exchange Server 2013_
 
 There are several scenarios in which you may want to export or import retention tags, including:
 
-  - Applying the same retention policies across all servers in a multi-forest Exchange organization
+- Applying the same retention policies across all servers in a multi-forest Exchange organization
 
-  - Applying the same retention policies in a hybrid deployment where some mailboxes reside in your on-premises Exchange organization and some reside in Exchange Online.
+- Applying the same retention policies in a hybrid deployment where some mailboxes reside in your on-premises Exchange organization and some reside in Exchange Online.
 
-  - Applying retention policies in an Exchange Archiving scenario, where users with on-premises Exchange 2010 or later mailboxes have a cloud-based archive.
+- Applying retention policies in an Exchange Archiving scenario, where users with on-premises Exchange 2010 or later mailboxes have a cloud-based archive.
 
 In these scenarios, the Managed Folder Assistant can correctly process an item that has a retention tag applied after the item or the mailbox is moved to another organization.
 
@@ -33,21 +33,21 @@ For additional management tasks related to Messaging Records Management, see [Me
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes
+- Estimated time to complete each procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging Records Management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging Records Management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic depend on these three files in the `%ExchangeInstallPath%Scripts` folder on yourExchange server:
+- The procedures in this topic depend on these three files in the `%ExchangeInstallPath%Scripts` folder on yourExchange server:
 
-      - Export-RetentionTags.ps1
+  - Export-RetentionTags.ps1
 
-      - Import-RetentionTags.ps1
+  - Import-RetentionTags.ps1
 
-      - MigrateRetentionTags.strings.psd1
+  - MigrateRetentionTags.strings.psd1
 
-  - You can't select specific retention tags or policies to export or import. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization. The Import-RetentionTags.ps1 script imports all retention tags and policies in the XML file being imported, replacing all existing retention tags and policies in an Exchange organization.
+- You can't select specific retention tags or policies to export or import. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization. The Import-RetentionTags.ps1 script imports all retention tags and policies in the XML file being imported, replacing all existing retention tags and policies in an Exchange organization.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -56,18 +56,18 @@ For additional management tasks related to Messaging Records Management, see [Me
 
 1. Run this Exchange Management Shell command to change directory to the **Scripts** subdirectory in your Exchange installation path.
 
-    ```powershell
-    Cd $Env:ExchangeInstallPath\Scripts
-    ```
+   ```powershell
+   Cd $Env:ExchangeInstallPath\Scripts
+   ```
 
 2. Run the Export-RetentionTags.ps1 script to export retention tags to an XML file.
 
-    > [!IMPORTANT]
-    > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/en-us/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>.
+   > [!IMPORTANT]
+   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/en-us/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>.
 
-    ```powershell
-    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-    ```
+   ```powershell
+   .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+   ```
 
 ## How do you know this worked?
 
@@ -81,21 +81,18 @@ To verify that you have successfully exported retention tags and retention polic
 
 1. Run this Exchange Management Shell command to change the directory to the **Scripts** subdirectory in your Exchange installation path.
 
-    ```powershell
-    Cd $Env:ExchangeInstallPath\Scripts
-    ```
+   ```powershell
+   Cd $Env:ExchangeInstallPath\Scripts
+   ```
 
 2. Run the Import-RetentionTags.ps1 script to import retention tags from a previously exported XML file.
 
-    > [!IMPORTANT]
-    > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/en-us/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>.
+   > [!IMPORTANT]
+   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/en-us/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>. <br>/<br/> When running this script against Exchange Online, you may be prompted to confirm that you want to run software from an untrusted publisher. Verify that the name of the publisher appears as <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE>, and then click <STRONG>R</STRONG> to allow the script to be run once or <STRONG>A</STRONG> to always run.
 
-    > [!NOTE]
-    > When running this script against Exchange Online, you may be prompted to confirm that you want to run software from an untrusted publisher. Verify that the name of the publisher appears as <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE>, and then click <STRONG>R</STRONG> to allow the script to be run once or <STRONG>A</STRONG> to always run.
-
-    ```powershell
-    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-    ```
+   ```powershell
+   .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+   ```
 
 ## How do you know this worked?
 

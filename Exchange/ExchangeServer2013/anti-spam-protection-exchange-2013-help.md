@@ -22,16 +22,6 @@ For more anti-spam features and easier management, you can elect to purchase Mic
 
 For information about the built-in anti-malware capabilities in Exchange 2013, see [Anti-malware protection](anti-malware-protection-exchange-2013-help.md).
 
-**Contents**
-
-Anti-spam agents on Mailbox servers
-
-Anti-spam agents on Edge Transport servers
-
-Anti-spam stamps
-
-Strategy for anti-spam approach
-
 ## Anti-spam agents on Mailbox servers
 
 Typically, you would enable the anti-spam agents on a mailbox server if your organization doesn't have an Edge Transport server, or doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
@@ -56,14 +46,14 @@ Based on the default priority value of the anti-spam agent, and the SMTP event i
 
 If your organization has an Edge Transport server installed in the perimeter network, all of the anti-spam agents that are available on a Mailbox server are installed and enabled by default on the Edge Transport server. However, the following anti-spam agents are only available on an Edge Transport server:
 
-  - **Connection Filtering agent**: Connection filtering inspects the IP address of the remote server that's trying to send messages to determine what action, if any, to take on an inbound message. Connection filtering uses an IP Block list, IP Allow list, IP Block List provider services and IP Allow List provider services to determine whether the connection IP should be blocked or allowed. For more information, see [Connection Filtering on Edge Transport Servers](connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+- **Connection Filtering agent**: Connection filtering inspects the IP address of the remote server that's trying to send messages to determine what action, if any, to take on an inbound message. Connection filtering uses an IP Block list, IP Allow list, IP Block List provider services and IP Allow List provider services to determine whether the connection IP should be blocked or allowed. For more information, see [Connection Filtering on Edge Transport Servers](connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-  - **Recipient Filter agent**: Recipient filtering compares the message recipients on the RCPT TO: SMTP command to an administrator-defined Recipient Block list. If a match is found, the message isn't permitted to enter the organization. The recipient filter also compares recipients on inbound messages to the local recipient directory to determine whether the message is addressed to valid recipients. When a message isn't addressed to valid recipients, the message is rejected. For more information, see [Recipient filtering on Edge Transport servers](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md).
+- **Recipient Filter agent**: Recipient filtering compares the message recipients on the RCPT TO: SMTP command to an administrator-defined Recipient Block list. If a match is found, the message isn't permitted to enter the organization. The recipient filter also compares recipients on inbound messages to the local recipient directory to determine whether the message is addressed to valid recipients. When a message isn't addressed to valid recipients, the message is rejected. For more information, see [Recipient filtering on Edge Transport servers](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
     > [!NOTE]
     > Although the Recipient Filter agent is available on Mailbox servers, you shouldn't configure it. When recipient filtering on a Mailbox server detects one invalid or blocked recipient in a message that contains other valid recipients, the message is rejected. If you install the anti-spam agents on a Mailbox server, the Recipient Filter agent is enabled by default. However, it isn't configured to block any recipients.
 
-  - **Attachment Filtering agent**: Attachment filtering blocks messages based on attachment file name, file name extension, or file MIME content type. You can configure attachment filtering to block a message and its attachment, to strip the attachment and allow the message to pass through, or to silently delete the message and its attachment. For more information, see [Attachment filtering on Edge Transport servers](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
+- **Attachment Filtering agent**: Attachment filtering blocks messages based on attachment file name, file name extension, or file MIME content type. You can configure attachment filtering to block a message and its attachment, to strip the attachment and allow the message to pass through, or to silently delete the message and its attachment. For more information, see [Attachment filtering on Edge Transport servers](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 Based on the default priority value of the anti-spam agent, and the SMTP event in the transport pipeline where the anti-spam agent is registered, this is the default order in which the anti-spam agents are applied on an Edge Transport server:
 

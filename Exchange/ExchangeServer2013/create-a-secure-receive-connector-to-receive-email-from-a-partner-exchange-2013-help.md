@@ -20,17 +20,17 @@ This procedure shows you how to configure a Receive connector to receive secure 
 
 Interested in scenarios where this procedure is used? See the following topics:
 
-  - [Configure mail flow and client access](configure-mail-flow-and-client-access-exchange-2013-help.md)
+- [Configure mail flow and client access](configure-mail-flow-and-client-access-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - See [Deploy a new installation of Exchange 2013](deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md) if you are beginning your installation. After the installation you can use the steps in this topic to create your receive connector.
+- See [Deploy a new installation of Exchange 2013](deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md) if you are beginning your installation. After the installation you can use the steps in this topic to create your receive connector.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -47,8 +47,8 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 5. If the Remote network settings page lists 0.0.0.0-255.255.255.255, which means that the Receive connector receives connections from all IP addresses, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), add the IP address for your partner's server, and click **Save**.
 
-    > [!NOTE]
-    > You can also specify an IP address range with CIDR notation, such as 64.4.6.100/24.
+   > [!NOTE]
+   > You can also specify an IP address range with CIDR notation, such as 64.4.6.100/24.
 
 6. Click **Finish** to create the connector.
 

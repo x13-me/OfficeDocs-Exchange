@@ -22,28 +22,26 @@ You can use database management scopes to control which mailbox databases can be
 
 For more information about automatic mailbox distribution, database scopes, and role assignments, see the following topics:
 
-  - [Automatic mailbox distribution](automatic-mailbox-distribution-exchange-2013-help.md)
+- [Automatic mailbox distribution](automatic-mailbox-distribution-exchange-2013-help.md)
 
-  - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-  - [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
+- [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
 
 Looking for other management tasks related to scopes? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 10 minutes
+- Estimated time to complete this procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Create a database scope
 
@@ -52,7 +50,7 @@ In this step, decide which databases you want to include in the database scope. 
 > [!IMPORTANT]
 > Role assignments associated with database scopes are applied only to users who connect to servers running Microsoft Exchange Server 2010 Service Pack&nbsp;1 (SP1) or later or Exchange 2013. If a user assigned a role assignment associated with a database scope connects to a pre-Exchange 2010 SP1 server, the role assignment isn't applied to the user, and the user won't be granted any permissions provided by the role assignment.
 
-## Use a database list scope
+### Use a database list scope
 
 Use a database list if you want to define a static list of mailbox databases that should be included in this scope. Use the following syntax to create a database list scope.
 
@@ -63,12 +61,12 @@ New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2..
 This example creates a scope that applies only to the databases Database 1, Database 2, and Database 3.
 
 ```powershell
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Use a database filter scope
+### Use a database filter scope
 
 Use a database filter if you want to create a dynamic database scope that includes only the databases that match the criteria you specify. This can be useful if you don't want to manage the database scope after it's created and you've defined standard values for your organization that can identify specific sets of mailbox databases.
 
@@ -83,7 +81,7 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 This example creates a scope that includes all the databases that contain the string "ACCT" in the **Name** property of the database.
 
 ```powershell
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
@@ -96,26 +94,26 @@ After you assign the role to a role group with the database scope, the members o
 
 For a list of built-in roles that you can assign to role groups, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
-## Add a new role assignment
+### Add a new role assignment
 
 Use this procedure if you've just created a role group and you need to add roles to it.
 
 Use the following syntax to create a role assignment between the management role you want to assign and the new role group, with the new database scope.
 
 ```powershell
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
 ```
 
 This example creates a role assignment between the Mail Recipients and Mail Recipient Creation roles and the Accounting Administrators role group, using the Accounting Databases database scope.
 
 ```powershell
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
 ```
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
 
-## Modify an existing role assignment
+### Modify an existing role assignment
 
 Use this procedure if you have an existing role group that already has role assignments between it and the roles you want to apply the new database scope to.
 
@@ -124,14 +122,14 @@ This procedure uses pipelining. For more information, see [Pipelining](https://t
 Use the following syntax to modify a role assignment between the management role that you want to apply the database scope to, and an existing role group.
 
 ```powershell
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
 ```
 
 This example adds the Accounting Databases database scope to the Mail Recipients and Mail Recipient Creation roles assigned to the Accounting Administrators role group.
 
 ```powershell
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)) or [Set-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335173\(v=exchg.150\)).

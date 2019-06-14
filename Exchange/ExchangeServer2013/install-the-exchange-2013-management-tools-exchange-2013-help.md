@@ -19,21 +19,21 @@ _**Applies to:** Exchange Server 2013_
 With the Microsoft Exchange Server 2013 management tools, you can configure and manage your Exchange organization remotely. Exchange 2013 management tools include the Exchange Management Shell and the Exchange Toolbox. This topic explains how you can either use Setup.exe or unattended setup mode to install the Exchange 2013 management tools.
 
 > [!NOTE]
-> You don't need to perform this procedure to use the Exchange Administration Center (EAC) remotely. The EAC is a web-based console that's hosted on computers running the Exchange 2013 Client Access server role. For more information about accessing the EAC remotely, see <A href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</A>.
+> You don't need to perform this procedure to use the Exchange admin center (EAC) remotely. The EAC is a web-based console that's hosted on computers running the Exchange 2013 Client Access server role. For more information about accessing the EAC remotely, see <A href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</A>.
 
 For more information about managing Exchange 2013, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md) and [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/en-us/library/bb123778\(v=exchg.150\)).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes
+- Estimated time to complete: 10 minutes
 
-  - Make sure you've read the release notes prior to installing Exchange 2013. For more information, see [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md).
+- Make sure you've read the release notes prior to installing Exchange 2013. For more information, see [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md).
 
-  - The computer you install the management tools on must have a supported operating system (such as Windows Server 2012 or Windows 8), have enough disk space, be a member of an Active Directory domain, and satisfy other requirements. For information about system requirements, see [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+- The computer you install the management tools on must have a supported operating system (such as Windows Server 2012 or Windows 8), have enough disk space, be a member of an Active Directory domain, and satisfy other requirements. For information about system requirements, see [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-  - To run Exchange 2013 Setup, you must install Microsoft .NET Framework 4.5, Windows Management Framework 3.0, and other required software. To understand the prerequisites for all server roles, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
+- To run Exchange 2013 Setup, you must install Microsoft .NET Framework 4.5, Windows Management Framework 3.0, and other required software. To understand the prerequisites for all server roles, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -70,18 +70,18 @@ For more information about managing Exchange 2013, see [Exchange admin center in
 
 10. If this is the first time you've run Exchange 2013 Setup in your organization, on the **Exchange Organization** page, type a name for your Exchange organization. The Exchange organization name can contain only the following characters:
 
-      - A through Z
+    - A through Z
 
-      - a through z
+    - a through z
 
-      - 0 through 9
+    - 0 through 9
 
-      - Space (not leading or trailing)
+    - Space (not leading or trailing)
 
-      - Hyphen or dash
+    - Hyphen or dash
 
-        > [!NOTE]
-        > The organization name can't contain more than 64 characters. The organization name can't be blank.
+    > [!NOTE]
+    > The organization name can't contain more than 64 characters. The organization name can't be blank.
 
     If you want to use the Active Directory split permissions model, select **Apply Active Directory split permission security model to the Exchange organization**.
 
@@ -104,11 +104,11 @@ For more information about managing Exchange 2013, see [Exchange admin center in
 
 3. At the command prompt, run the following command.
 
-    > [!IMPORTANT]
-    > If you have User Access Control (UAC) enabled, you must run <CODE>Setup.exe</CODE> from an elevated command prompt.
+   > [!IMPORTANT]
+   > If you have User Access Control (UAC) enabled, you must run <CODE>Setup.exe</CODE> from an elevated command prompt.
 
-    ```powershell
-    Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
-    ```
+   ```powershell
+   Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+   ```
 
 For more information, see [Install Exchange 2013 using unattended mode](install-exchange-2013-using-unattended-mode-exchange-2013-help.md).

@@ -100,7 +100,7 @@ The following figure illustrates the relationship between the linked user accoun
 This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resource forest. The FABRIKAM domain is in the account forest. The administrator account FABRIKAM \\administrator is used to access the linked domain controller.
 
 ```powershell
-    New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
 For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)).
@@ -119,7 +119,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 ## Change linked mailbox properties
 
-After you create a linked mailbox, you can make changes and set additional properties by using the Exchange Administration Center (EAC) or the Exchange Management Shell.
+After you create a linked mailbox, you can make changes and set additional properties by using the Exchange admin center (EAC) or the Exchange Management Shell.
 
 You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) topic.
 
@@ -343,19 +343,19 @@ Here are some examples of using the Shell to change linked mailbox properties.
 This example uses the **Get-Mailbox** command to find all the linked mailboxes in the organization.
 
 ```powershell
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
 ```
 
 This example uses the **Set-Mailbox** command to limit the number of recipients allowed on the To:, Cc:, and Bcc: lines of an email message to 500. This limit applies to all linked mailboxes in the organization.
 
 ```powershell
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
 ```
 
 This example changes the linked master account in the fabrikam.com account forest that is associated with a linked mailbox in an Exchange forest.
 
 ```powershell
-    Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
 ```
 
 ## How do you know this worked?

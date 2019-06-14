@@ -26,7 +26,7 @@ For additional management tasks related to ABPs, see [Managing Address Book Poli
 
 - Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](http://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
 
-- You can't use the Exchange Administration Center (EAC) to configure ABPs. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to configure ABPs. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

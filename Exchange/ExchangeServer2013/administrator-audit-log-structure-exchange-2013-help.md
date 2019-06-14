@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange Administration Center (EAC). They're created on-demand when you run the Administrator audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Shell. For more information about audit logs, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
+Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange admin center (EAC). They're created on-demand when you run the Administrator audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Shell. For more information about audit logs, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
 The audit logs are XML files and can contain multiple audit log entries. The following table describes each XML tag and its associated attributes.
 
@@ -170,17 +170,17 @@ The following is an example of a typical audit log entry. Based on the informati
 - The operation completed successfully without any errors.
 
 ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <SearchResults>
+<?xml version="1.0" encoding="utf-8"?>
+<SearchResults>
 
-      <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
-        <CmdletParameters>
-          <Parameter Name="Identity" Value="david" />
-          <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
-        </CmdletParameters>
-        <ModifiedProperties>
-          <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
-        </ModifiedProperties>
-      </Event>
-    </SearchResults>
+  <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
+    <CmdletParameters>
+      <Parameter Name="Identity" Value="david" />
+      <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
+    </CmdletParameters>
+    <ModifiedProperties>
+      <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
+    </ModifiedProperties>
+  </Event>
+</SearchResults>
 ```

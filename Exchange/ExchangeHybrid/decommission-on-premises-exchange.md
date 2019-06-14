@@ -61,7 +61,7 @@ When directory synchronization is enabled for a tenant and a user is synchronize
 
 ## Can third-party management tools be used?
 
-The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. The Exchange Management Console, the Exchange Administration Center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects. If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
+The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. The Exchange Management Console, the Exchange admin center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects. If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
 
 ## Common scenarios
 
@@ -145,7 +145,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
      **Note**: The _Identity_ parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors.
 
-7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange Administration Center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
+7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange admin center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
 
 8. You can now safely uninstall Exchange from the on-premises servers.
 
@@ -162,6 +162,9 @@ The graphic below describes the desired end state:
 The graphic below describes the actual end state:
 
 ![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
+
+>[!TIP]
+> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently: <br/>• **Office 365 identity services** will manage online requests <br/>• **Active directory** will manage the internal authentication <br/><br/> If you don't have any on-premises mailbox(es), you can safely decommission your exchange server(s).
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
@@ -238,10 +241,10 @@ The graphic below describes the actual end state:
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
 ### Scenario three
 
- **Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
+**Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
 
- **Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint.
+**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint.

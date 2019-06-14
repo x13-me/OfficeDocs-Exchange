@@ -21,12 +21,6 @@ _**Applies to:** Exchange Server 2013_
 
 The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
 
-**Contents**
-
-Using the Content Filter agent
-
-Configuring the Content Filter agent
-
 ## Using the Content Filter agent
 
 The Content Filter agent is one of several anti-spam agents in Exchange. When you configure anti-spam agents on an Exchange server, the agents act on messages cumulatively to reduce the amount of spam that enters the organization. For more information about how to plan and deploy anti-spam agents, see [Anti-spam protection](anti-spam-protection-exchange-2013-help.md).
@@ -35,11 +29,11 @@ The Content Filter agent assigns a spam confidence level (SCL) rating to each me
 
 You can configure the Content Filter agent to take the following actions on messages according to their SCL rating:
 
-  - Delete message
+- Delete message
 
-  - Reject message
+- Reject message
 
-  - Quarantine message
+- Quarantine message
 
 For example, you may determine that messages that have an SCL rating of 7 or higher must be deleted, messages that have an SCL rating of 6 must be rejected, and messages that have an SCL rating of 5 must be quarantined.
 
@@ -56,7 +50,7 @@ You can enter custom words or phrases in any combination of uppercase and lowerc
 
 ## Outlook Email Postmark validation
 
-The Content Filter agent also includes Microsoft Office Outlook Email Postmark validation, a computational proof that Outlook applies to outgoing messages to help recipient messaging systems distinguish legitimate email from junk email. This feature helps reduce the chance of false positives. In the context of spam filtering, a *false positive* exists when a spam filter incorrectly identifies a message from a legitimate sender as spam. When Outlook Email Postmark validation is enabled, the Content Filter agent parses the inbound message for a computational postmark header. The presence of a valid, solved computational postmark header in the message indicates that the client computer that generated the message solved the computational postmark.
+The Content Filter agent also includes Microsoft Outlook Email Postmark validation, a computational proof that Outlook applies to outgoing messages to help recipient messaging systems distinguish legitimate email from junk email. This feature helps reduce the chance of false positives. In the context of spam filtering, a *false positive* exists when a spam filter incorrectly identifies a message from a legitimate sender as spam. When Outlook Email Postmark validation is enabled, the Content Filter agent parses the inbound message for a computational postmark header. The presence of a valid, solved computational postmark header in the message indicates that the client computer that generated the message solved the computational postmark.
 
 Computers don't require significant processing time to solve individual computational postmarks. However, processing postmarks for many messages may be prohibitive to a malicious sender. Anyone who sends millions of spam messages is unlikely to invest the processing power that is required to solve computational postmarks for all outbound spam. If a sender's email contains a valid, solved computational postmark, it's unlikely that the sender is a malicious sender. In this case, the Content Filter agent would lower the SCL rating. If the postmark validation feature is enabled and an inbound message either doesn't contain a computational postmark header or the computational postmark header isn't valid, the Content Filter agent would not change the SCL rating.
 

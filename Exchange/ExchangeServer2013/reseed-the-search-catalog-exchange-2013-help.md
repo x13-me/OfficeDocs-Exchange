@@ -51,11 +51,11 @@ For other management tasks related to Exchange Search, see [Exchange Search proc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes. Actual reseeding time may vary depending on the size of the content index catalog being reseeded.
+- Estimated time to complete: 2 minutes. Actual reseeding time may vary depending on the size of the content index catalog being reseeded.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Search" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Search" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
@@ -119,7 +119,7 @@ If there is only one copy of the mailbox database, you have to manually reseed t
 It might take a while for Exchange Search to reseed the content index catalog. Run the following command to display the status of the reseeding process.
 
 ```powershell
-    Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+Get-MailboxDatabaseCopyStatus | FL Name,*Index*
 ```
 
 When the reseeding of the search catalog is in progress, the value of the *ContentIndexState* property is **Crawling**. When the reseeding is complete, this value is changed to **Healthy**.

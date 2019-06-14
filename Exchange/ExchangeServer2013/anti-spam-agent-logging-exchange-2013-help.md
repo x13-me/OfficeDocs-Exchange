@@ -18,17 +18,17 @@ _**Applies to:** Exchange Server 2013_
 
 Agent logs record the actions performed on a message by specific anti-spam agents in Microsoft Exchange Server 2013. Only the following agents can write information to the agent log:
 
-  - Connection Filtering agent
+- Connection Filtering agent
 
-  - Content Filter agent
+- Content Filter agent
 
-  - Edge Rules agent
+- Edge Rules agent
 
-  - Recipient Filter agent
+- Recipient Filter agent
 
-  - Sender Filter agent
+- Sender Filter agent
 
-  - Sender ID agent
+- Sender ID agent
 
 > [!NOTE]
 > The Connection Filtering agent and the Edge Rules agent aren't available on Mailbox servers.
@@ -37,27 +37,17 @@ The information written to the agent log depends on the agent, the SMTP event, a
 
 You use the **Set-TransportService** cmdlet in the Exchange Management Shell to perform all agent log configuration tasks. The following options are available for the agent logs:
 
-  - Enable or disable agent logging. The default is enabled.
+- Enable or disable agent logging. The default is enabled.
 
-  - Specify the location of the agent log files. The default value is %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\AgentLog.
+- Specify the location of the agent log files. The default value is %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\AgentLog.
 
-  - Specify a maximum size for the individual agent log files. The default size is 10 megabytes (MB).
+- Specify a maximum size for the individual agent log files. The default size is 10 megabytes (MB).
 
-  - Specify a maximum size for the directory that contains agent log files. The default size is 250 MB.
+- Specify a maximum size for the directory that contains agent log files. The default size is 250 MB.
 
-  - Specify a maximum age for the agent log files. The default age is 7 days.
+- Specify a maximum age for the agent log files. The default age is 7 days.
 
 Exchange uses circular logging to limit the agent logs based on file size and file age to help control the hard disk space used by the log files.
-
-**Contents**
-
-Overview of transport agents
-
-Structure of the agent log files
-
-Information written to the agent log
-
-Search the agent logs
 
 ## Overview of transport agents
 
@@ -118,23 +108,23 @@ The agent logs exist in %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\AgentLog
 
 The naming convention for the agent log files is AGENTLOG*yyyymmdd-nnnn*.log. The placeholders represent the following information:
 
-  - The placeholder *yyyymmdd* is the Coordinated Universal Time (UTC) date that the log file was created. The placeholder *yyyy* = year, *mm* = month, and *dd* = day.
+- The placeholder *yyyymmdd* is the Coordinated Universal Time (UTC) date that the log file was created. The placeholder *yyyy* = year, *mm* = month, and *dd* = day.
 
-  - The placeholder *nnnn* is an instance number that starts at the value of 1 for each day.
+- The placeholder *nnnn* is an instance number that starts at the value of 1 for each day.
 
 Information is written to the log file until the file size reaches its maximum specified value, and a new log file that has an incremented instance number is opened. This process is repeated throughout the day. Circular logging deletes the oldest log files when the agent log directory reaches its maximum specified size, or when a log file reaches its maximum specified age.
 
 The agent log files are text files that contain data in the comma-separated value file (CSV) format. Each agent log file has a header that contains the following information:
 
-  - **\#Software**: Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
+- **\#Software**: Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version**: Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
+- **\#Version**: Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type**: Log type value, which is Agent Log.
+- **\#Log-Type**: Log type value, which is Agent Log.
 
-  - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+- **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields**: Comma delimited field names used in the agent log files.
+- **\#Fields**: Comma delimited field names used in the agent log files.
 
 ## Information written to the agent log
 

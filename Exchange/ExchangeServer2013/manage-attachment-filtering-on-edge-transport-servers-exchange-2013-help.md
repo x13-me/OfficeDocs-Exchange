@@ -20,17 +20,17 @@ Attachment filtering is provided by the Attachment Filter agent that's available
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes.
+- Estimated time to complete each procedure: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) and the "Transport agents" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) and the "Transport agents" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - Configuration changes that you make to attachment filtering on an Edge Transport server are made only to the local computer. If you have multiple Edge Transport servers in your perimeter network, you need to configure attachment filtering on each Edge Transport server separately.
+- Configuration changes that you make to attachment filtering on an Edge Transport server are made only to the local computer. If you have multiple Edge Transport servers in your perimeter network, you need to configure attachment filtering on each Edge Transport server separately.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - When you disable attachment filtering and restart the Microsoft Exchange Transport service, all attachment filtering features stop working.
+- When you disable attachment filtering and restart the Microsoft Exchange Transport service, all attachment filtering features stop working.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -98,7 +98,7 @@ Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
 For example, to view the file name extension entry for JPEG attachments, run the following command:
 
 ```powershell
-    Get-AttachmentFilteringEntry FileName:*.jpg
+Get-AttachmentFilteringEntry FileName:*.jpg
 ```
 
 ## Use the Shell to add attachment filtering entries
@@ -124,7 +124,7 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 The following example filters attachments that have the .jpg file name extension.
 
 ```powershell
-    Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+Add-AttachmentFilterEntry -Name *.jpg -Type FileName
 ```
 
 ## How do you know this worked?
@@ -162,7 +162,7 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 The following example removes the file name entry for the .jpg file name extension.
 
 ```powershell
-    Remove-AttachmentFilterEntry FileName:*.jpg
+Remove-AttachmentFilterEntry FileName:*.jpg
 ```
 
 ## How do you know this worked?
@@ -190,19 +190,17 @@ Get-AttachmentFilterListConfig
 To configure the attachment filtering action that will be used when a prohibited attachment is detected in a message, use the following syntax:
 
 ```powershell
-    Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
 ```
 
 This example makes the following changes to the attachment filtering configuration:
 
-  - Reject (block) messages that have prohibited attachments.
+- Reject (block) messages that have prohibited attachments.
 
-  - Use a custom response for rejected messages.
-
-<!-- end list -->
+- Use a custom response for rejected messages.
 
 ```powershell
-    Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
 ```
 
 For more information, see [Set-AttachmentFilterListConfig](https://technet.microsoft.com/en-us/library/bb123483\(v=exchg.150\)).

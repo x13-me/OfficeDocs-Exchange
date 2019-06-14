@@ -20,7 +20,7 @@ The people and resources that send and receive messages are the core of any mess
 
 ## Exchange recipient types
 
-Exchange includes several explicit recipient types. Each recipient type is identified in the Exchange Administration Center (EAC) and has a unique value in the *RecipientTypeDetails* property in the Exchange Management Shell. The use of explicit recipient types has the following benefits:
+Exchange includes several explicit recipient types. Each recipient type is identified in the Exchange admin center (EAC) and has a unique value in the *RecipientTypeDetails* property in the Exchange Management Shell. The use of explicit recipient types has the following benefits:
 
   - At a glance, you can differentiate between various recipient types.
 

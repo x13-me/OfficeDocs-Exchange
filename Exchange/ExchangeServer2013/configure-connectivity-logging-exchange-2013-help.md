@@ -65,8 +65,6 @@ This example sets the following connectivity log settings in the Transport servi
 
 - Sets the maximum age of a connectivity log file to 45 days.
 
-<!-- end list -->
-
 ```powershell
 Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```

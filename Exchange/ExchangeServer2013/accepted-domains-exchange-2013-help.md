@@ -18,20 +18,6 @@ _**Applies to:** Exchange Server 2013_
 
 An accepted domain is any SMTP namespace for which a Microsoft Exchange Server 2013 organization sends or receives email. Accepted domains include those domains for which the Exchange organization is authoritative. An Exchange organization is authoritative when it handles mail delivery for recipients in the accepted domain. Accepted domains also include domains for which the Exchange organization receives mail and then relays it to an email server that's outside the organization for delivery to the recipient.
 
-**Contents**
-
-Configuring accepted domains
-
-Authoritative domains
-
-Relay domains
-
-Internal relay domain
-
-External relay domain
-
-Accepted domains and email address policies
-
 ## Configuring accepted domains
 
 Accepted domains are configured as global settings for the Exchange organization. You need to configure every domain for which your Exchange organization relays or delivers messages as an accepted domain in your organization.

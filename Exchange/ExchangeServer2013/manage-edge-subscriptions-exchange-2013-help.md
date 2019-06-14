@@ -20,11 +20,11 @@ This topic gives detailed information on a variety of Edge Subscription manageme
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes.
+- Estimated time to complete each procedure: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "EdgeSync" entry and the "Edge Transport servers" section in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "EdgeSync" entry and the "Edge Transport servers" section in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You need to have an Edge server subscribed to your Internet-facing Active Directory site. For more information, see [Configure Internet mail flow through a subscribed Edge Transport server](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md).
+- You need to have an Edge server subscribed to your Internet-facing Active Directory site. For more information, see [Configure Internet mail flow through a subscribed Edge Transport server](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -33,15 +33,15 @@ This topic gives detailed information on a variety of Edge Subscription manageme
 
 You can subscribe one or more Edge Transport servers to a single Active Directory site. If you deploy additional Edge Transport servers in your perimeter network and subscribe them to the same Active Directory site where an Edge Subscription already exists, the following actions occur:
 
-  - A new Edge Subscription object is created in Active Directory.
+- A new Edge Subscription object is created in Active Directory.
 
-  - Additional ESRA accounts are created for each Mailbox server in the Active Directory site. These accounts are replicated to Active Directory Lightweight Directory Services (AD LDS) and used by the EdgeSync synchronization process during synchronization with the new server.
+- Additional ESRA accounts are created for each Mailbox server in the Active Directory site. These accounts are replicated to Active Directory Lightweight Directory Services (AD LDS) and used by the EdgeSync synchronization process during synchronization with the new server.
 
-  - The new Edge Subscription is added to the source server list of the automatic Send connector to the Internet. Messages submitted to that connector for processing will be load balanced between the subscribed Edge Transport servers.
+- The new Edge Subscription is added to the source server list of the automatic Send connector to the Internet. Messages submitted to that connector for processing will be load balanced between the subscribed Edge Transport servers.
 
-  - An inbound Send connector is automatically created from the Edge Transport server to the Exchange organization.
+- An inbound Send connector is automatically created from the Edge Transport server to the Exchange organization.
 
-  - EdgeSync synchronization to the Edge Transport server starts.
+- EdgeSync synchronization to the Edge Transport server starts.
 
 ## Remove an Edge Subscription
 
@@ -77,39 +77,39 @@ After you remove the Edge Subscription, synchronization of information from AD 
 
 You will need to remove the Edge Subscription if:
 
-  - You no longer want the Edge Transport server to participate in EdgeSync synchronization. You will need to remove the Edge Subscription from both the Edge Transport server and from the Exchange organization.
+- You no longer want the Edge Transport server to participate in EdgeSync synchronization. You will need to remove the Edge Subscription from both the Edge Transport server and from the Exchange organization.
 
-  - An Edge Transport server is being decommissioned. In this scenario, you only need to remove the Edge Subscription from the Exchange organization. If you uninstall the Edge Transport server role from the computer, the AD LDS instance and all Active Directory data stored in AD LDS will also be removed.
+- An Edge Transport server is being decommissioned. In this scenario, you only need to remove the Edge Subscription from the Exchange organization. If you uninstall the Edge Transport server role from the computer, the AD LDS instance and all Active Directory data stored in AD LDS will also be removed.
 
-  - You want to change the Active Directory site association for the Edge Subscription. You will only need to remove the Edge Subscription from the Exchange organization. After the Edge Subscription is removed from the Exchange organization, you can resubscribe the Edge Transport server to a different Active Directory site.
+- You want to change the Active Directory site association for the Edge Subscription. You will only need to remove the Edge Subscription from the Exchange organization. After the Edge Subscription is removed from the Exchange organization, you can resubscribe the Edge Transport server to a different Active Directory site.
 
 When you remove an Edge Subscription from the Exchange organization:
 
-  - Synchronization of information from Active Directory to AD LDS stops.
+- Synchronization of information from Active Directory to AD LDS stops.
 
-  - The ESRA accounts are removed from both Active Directory and AD LDS.
+- The ESRA accounts are removed from both Active Directory and AD LDS.
 
-  - The Edge Transport server is removed from the *SourceTransportServers* property of any Send connector.
+- The Edge Transport server is removed from the *SourceTransportServers* property of any Send connector.
 
-  - The automatic inbound Send connector from the Edge Transport server to the Exchange organization is removed from AD LDS.
+- The automatic inbound Send connector from the Edge Transport server to the Exchange organization is removed from AD LDS.
 
 When you remove the Edge Subscription from an Edge Transport server:
 
-  - You can no longer use Edge Transport server features that rely on Active Directory data.
+- You can no longer use Edge Transport server features that rely on Active Directory data.
 
-  - Replicated data is removed from AD LDS.
+- Replicated data is removed from AD LDS.
 
-  - Tasks that were disabled when the Edge Subscription was created are re-enabled to allow for local configuration.
+- Tasks that were disabled when the Edge Subscription was created are re-enabled to allow for local configuration.
 
 ## Resubscribe an Edge Transport server
 
 Occasionally you may have to resubscribe an Edge Transport server to an Active Directory site. When the Edge Subscription is re-created, new credentials are generated and you need to follow the complete Edge Subscription process. You will need to resubscribe an Edge Transport server if:
 
-  - You add new Mailbox servers in the subscribed Active Directory site, and you want the new Mailbox server to participate in EdgeSync synchronization.
+- You add new Mailbox servers in the subscribed Active Directory site, and you want the new Mailbox server to participate in EdgeSync synchronization.
 
-  - You applied the license key for the Edge Transport server after creating the Edge Subscription. Licensing information for the Edge Transport server is captured when the Edge Subscription is created. Subscribed Edge Transport servers only appear as licensed if they are subscribed to the Exchange organization after the license key has already been applied on the Edge Transport server. If the license key is applied on the Edge Transport server after you perform the Edge Subscription process, the licensing information won't be updated in the Exchange organization, and you will need to resubscribe the Edge Transport server.
+- You applied the license key for the Edge Transport server after creating the Edge Subscription. Licensing information for the Edge Transport server is captured when the Edge Subscription is created. Subscribed Edge Transport servers only appear as licensed if they are subscribed to the Exchange organization after the license key has already been applied on the Edge Transport server. If the license key is applied on the Edge Transport server after you perform the Edge Subscription process, the licensing information won't be updated in the Exchange organization, and you will need to resubscribe the Edge Transport server.
 
-  - The ESRA credentials are compromised.
+- The ESRA credentials are compromised.
 
     > [!IMPORTANT]
     > To resubscribe an Edge Transport server, export a new Edge Subscription file on the Edge Transport server and then import the XML file on a Mailbox server. You will need to resubscribe the Edge Transport server to the same Active Directory site where it was originally subscribed. You don't need to first remove the original Edge Subscription; the resubscription process will overwrite the existing Edge Subscription.
@@ -134,13 +134,11 @@ Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <Edge
 
 The following example starts EdgeSync with the following options:
 
-  - The synchronization is initiated from the Exchange 2013 Mailbox server named Mailbox01.
+- The synchronization is initiated from the Exchange 2013 Mailbox server named Mailbox01.
 
-  - All Edge Transport servers are synchronized.
+- All Edge Transport servers are synchronized.
 
-  - Only the changes since the last replication are synchronized.
-
-<!-- end list -->
+- Only the changes since the last replication are synchronized.
 
 ```powershell
 Start-EdgeSynchronization -Server Mailbox01
@@ -148,13 +146,11 @@ Start-EdgeSynchronization -Server Mailbox01
 
 This example starts EdgeSync with the following options:
 
-  - The synchronization is initiated from the local Mailbox server.
+- The synchronization is initiated from the local Mailbox server.
 
-  - Only the Edge Transport server named Edge03 is synchronized.
+- Only the Edge Transport server named Edge03 is synchronized.
 
-  - All recipient and configuration data are fully synchronized.
-
-<!-- end list -->
+- All recipient and configuration data are fully synchronized.
 
 ```powershell
 Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync

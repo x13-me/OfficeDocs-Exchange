@@ -20,16 +20,6 @@ In Microsoft Exchange Server 2013, Information Rights Management (IRM) operation
 
 To learn about IRM, see [Information Rights Management](information-rights-management-exchange-2013-help.md).
 
-**Contents**
-
-Structure of IRM logs
-
-Logging process
-
-Information written to IRM logs
-
-Managing IRM logs
-
 Looking for management tasks related to IRM? See [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
 ## Structure of IRM logs
@@ -38,13 +28,13 @@ By default, IRM logs are located in C:\\Program Files\\Microsoft\\Exchange Serve
 
 The naming convention for IRM log files is \<*Process*\>\_\<*Process identifier* or *IIS AppPool identifier*\>\_IRMLOG*yyyymmdd*-*nnnn*.log, where:
 
-  - \<*Process*\> = process that creates the log file. For example, on Transport service, this will be EdgeTransport.
+- \<*Process*\> = process that creates the log file. For example, on Transport service, this will be EdgeTransport.
 
-  - \<*Process identifier* or *IIS AppPool identifier\>* = numerical ID of the process.
+- \<*Process identifier* or *IIS AppPool identifier\>* = numerical ID of the process.
 
-  - *yyyymmdd* = Coordinated Universal Time (UTC) date when the log file was created.
+- *yyyymmdd* = Coordinated Universal Time (UTC) date when the log file was created.
 
-  - *nnnn* = instance number, which starts at 1 for each day.
+- *nnnn* = instance number, which starts at 1 for each day.
 
 An example IRM log file name is EdgeTransport\_1056\_IRMLOG20101201-1.log.
 
@@ -97,37 +87,35 @@ Information is written to the log file until the file size reaches its maximum s
 
 IRM log files are text files that contain data in comma-separated value (CSV) format. Each IRM log has a header that contains the following information:
 
-  - **\#Software**: Name of the software that created the IRM log file. Typically, the value is `Microsoft Exchange Server`.
+- **\#Software**: Name of the software that created the IRM log file. Typically, the value is `Microsoft Exchange Server`.
 
-  - **\#Version**: Version number of the software that created the IRM log file.
+- **\#Version**: Version number of the software that created the IRM log file.
 
-  - **\#Log-type**: Log type value, which is `Rms Client Manager Log`.
+- **\#Log-type**: Log type value, which is `Rms Client Manager Log`.
 
-  - **\#Date**: The UTC date and time when the log file was created. The UTC date and time is represented in the ISO 8601 date-time format: *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z, where:
+- **\#Date**: The UTC date and time when the log file was created. The UTC date and time is represented in the ISO 8601 date-time format: *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z, where:
 
-      - yyyy = year
+  - yyyy = year
 
-      - *mm* = month
+  - *mm* = month
 
-      - *dd* = day
+  - *dd* = day
 
-      - T = time designator used to show the start of the time component
+  - T = time designator used to show the start of the time component
 
-      - *hh* = hour
+  - *hh* = hour
 
-      - *mm* = minute
+  - *mm* = minute
 
-      - *ss* = second
+  - *ss* = second
 
-      - *fff* = fractions of a second
+  - *fff* = fractions of a second
 
-      - Z = Zulu, which is another way to denote UTC
+  - Z = Zulu, which is another way to denote UTC
 
-  - **\#Fields**: Comma-delimited field names used in IRM log files.
+- **\#Fields**: Comma-delimited field names used in IRM log files.
 
     The IRM log stores each RMS transaction event on a single line, organized in comma-separated fields. The following table lists the fields in IRM logs for all server roles that have IRM features enabled.
-
-    ### Fields used in IRM logs
 
     <table>
     <colgroup>
@@ -234,8 +222,8 @@ On each server role that has IRM features enabled, IRM logging is enabled by def
 
 For detailed syntax and parameter information, see the following topics:
 
-  - [Set-MailboxServer](https://technet.microsoft.com/en-us/library/aa998651\(v=exchg.150\))
+- [Set-MailboxServer](https://technet.microsoft.com/en-us/library/aa998651\(v=exchg.150\))
 
-  - [Set-ClientAccessServer](https://technet.microsoft.com/en-us/library/bb125157\(v=exchg.150\))
+- [Set-ClientAccessServer](https://technet.microsoft.com/en-us/library/bb125157\(v=exchg.150\))
 
-  - [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\))
+- [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\))

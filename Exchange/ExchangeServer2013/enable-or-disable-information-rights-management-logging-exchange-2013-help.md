@@ -20,27 +20,27 @@ In Exchange Server 2013, you can use Information Rights Management (IRM) logs to
 
 IRM logs use the following common set of parameters:
 
-  - *IrmLogEnabled*: Enables or disables IRM logging. Default: `$true`.
+- *IrmLogEnabled*: Enables or disables IRM logging. Default: `$true`.
 
-  - *IrmLogMaxAge*: Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
+- *IrmLogMaxAge*: Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
 
-  - *IrmLogMaxDirectorySize*: Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
+- *IrmLogMaxDirectorySize*: Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
 
-  - *IrmLogMaxFileSize*: Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
+- *IrmLogMaxFileSize*: Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
 
-  - *IrmLogPath*: Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
+- *IrmLogPath*: Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 2-5 minutes.
+- Estimated time to complete each procedure: 2-5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Configure IRM logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Configure IRM logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - You can't use the Exchange Administration Center (EAC) to enable or disable IRM logging on a server. You must use the Shell
+- You can't use the Exchange admin center (EAC) to enable or disable IRM logging on a server. You must use the Shell
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -72,5 +72,5 @@ To verify that you have successfully enabled or disbled IRM logging on a server,
 This example retrieves all IRM logging properties on the server EXCH01.
 
 ```powershell
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
 ```

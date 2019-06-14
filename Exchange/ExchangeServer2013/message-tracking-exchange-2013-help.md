@@ -20,48 +20,32 @@ In Microsoft Exchange Server 2013, the message tracking log is a detailed record
 
 In Exchange 2013, you can use the **Set-TransportService** cmdlet or the **Set-MailboxServer** cmdlet for all message tracking configuration tasks, because the Exchange 2013 Mailbox server holds the Transport service and the mailboxes. You can use either of these cmdlets to make the following message tracking configuration changes:
 
-  - Enable or disable message tracking. The default is enabled.
+- Enable or disable message tracking. The default is enabled.
 
-  - Specify the location of the message tracking log files.
+- Specify the location of the message tracking log files.
 
-  - Specify a maximum size for the individual message tracking log files. The default is 10 MB.
+- Specify a maximum size for the individual message tracking log files. The default is 10 MB.
 
-  - Specify a maximum size for the directory that contains the message tracking log files: The default is 1000 MB.
+- Specify a maximum size for the directory that contains the message tracking log files: The default is 1000 MB.
 
-  - Specify maximum age for the message tracking log files: The default is 30 days.
+- Specify maximum age for the message tracking log files: The default is 30 days.
 
-  - Enable or disable message subject logging in the message tracking logs. The default is enabled.
+- Enable or disable message subject logging in the message tracking logs. The default is enabled.
 
 > [!NOTE]
 > You can also use the Exchange admin center (EAC) to enable or disable message tracking, and to specify the location of the message tracking log files.
 
 By default, Exchange uses circular logging to limit the message tracking logs based on file size and file age to help control the hard disk space used by the message tracking log files.
 
-**Contents**
-
-Search the message tracking log
-
-Structure of the message tracking log files
-
-Fields in the message tracking log files
-
-Event types in the message tracking log
-
-Source values in the message tracking log
-
-Example entries in the message tracking log
-
-Security concerns for the message tracking log
-
 ## Search the message tracking log
 
 Message tracking logs contain vast amounts of data as messages move through an Exchange 2013 Mailbox server. When it comes to searching the message tracking logs, you have different options.
 
-  - **Get-MessageTrackingLog**: Administrators can use this cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
+- **Get-MessageTrackingLog**: Administrators can use this cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
 
-  - **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
+- **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
 
-  - **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
+- **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
 
 ## Structure of the message tracking log files
 
@@ -69,40 +53,40 @@ By default, the message tracking log files exist in %ExchangeInstallPath%Transpo
 
 The naming convention for log files in the message tracking log directory is `MSGTRK`*yyyymmdd-nnnn*`.log`, `MSGTRKMA`*yyyymmdd-nnnn*`.log`, `MSGTRKMD`*yyyymmdd-nnnn*`.log`, and `MSGTRKMS`*yyyymmdd-nnnn*`.log` . The different logs are used by the following services:
 
-  - **MSGTRK**: These logs are associated with the Transport service.
+- **MSGTRK**: These logs are associated with the Transport service.
 
-  - **MSGTRKMA**: These logs are associated with the approvals and rejections used by moderated transport. For more information, see [Manage message approval](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval).
+- **MSGTRKMA**: These logs are associated with the approvals and rejections used by moderated transport. For more information, see [Manage message approval](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval).
 
-  - **MSGTRKMD**: These logs are associated with messages delivered to mailboxes by the Mailbox Transport Delivery service.
+- **MSGTRKMD**: These logs are associated with messages delivered to mailboxes by the Mailbox Transport Delivery service.
 
-  - **MSGTRKMS**: These logs are associated with messages sent from mailboxes by the Mailbox Transport Submission service.
+- **MSGTRKMS**: These logs are associated with messages sent from mailboxes by the Mailbox Transport Submission service.
 
 The placeholders in the log file names represent the following information:
 
-  - The placeholder *yyyymmdd* is the coordinated universal time (UTC) date on which the log file was created. *yyyy* = year, *mm* = month, and *dd* = day.
+- The placeholder *yyyymmdd* is the coordinated universal time (UTC) date on which the log file was created. *yyyy* = year, *mm* = month, and *dd* = day.
 
-  - The placeholder *nnnn* is an instance number that starts at the value of 1 daily for each message tracking log file name prefix.
+- The placeholder *nnnn* is an instance number that starts at the value of 1 daily for each message tracking log file name prefix.
 
 Information is written to each log file until the file size reaches its maximum specified value for each log file. Then, a new log file that has an incremented instance number is opened. This process is repeated throughout the day. The log file rotation functionality deletes the oldest log files when either of the following conditions is true:
 
-  - A log file reaches its maximum specified age.
+- A log file reaches its maximum specified age.
 
-  - The message tracking log directory reaches its maximum specified size.
+- The message tracking log directory reaches its maximum specified size.
 
-    > [!IMPORTANT]
-    > The maximum size of the message tracking log directory is calculated as the total size of all log files that have the same name prefix. Other files that do not follow the name prefix convention are not counted in the total directory size calculation. Renaming old log files or copying other files into the message tracking log directory could cause the directory to exceed its specified maximum size.<BR>On Exchange 2013 Mailbox servers, the maximum size of the message tracking log directory is three times the specified value. Although the message tracking log files that are generated by the four different services have four different name prefixes, the amount and frequency of data written to the <STRONG>MSGTRKMA</STRONG> log files is negligible compared to the three other log file prefixes.
+  > [!IMPORTANT]
+  > The maximum size of the message tracking log directory is calculated as the total size of all log files that have the same name prefix. Other files that do not follow the name prefix convention are not counted in the total directory size calculation. Renaming old log files or copying other files into the message tracking log directory could cause the directory to exceed its specified maximum size.<BR>On Exchange 2013 Mailbox servers, the maximum size of the message tracking log directory is three times the specified value. Although the message tracking log files that are generated by the four different services have four different name prefixes, the amount and frequency of data written to the <STRONG>MSGTRKMA</STRONG> log files is negligible compared to the three other log file prefixes.
 
 The message tracking log files are text files that contain data in the comma-separated value (CSV) format. Each message tracking log file has a header that contains the following information:
 
-  - **\#Software:**: Name of the software that created the message tracking log file. Typically, the value is Microsoft Exchange Server.
+- **\#Software:**: Name of the software that created the message tracking log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version:**: Version number of the software that created the message tracking log file. Currently, the value is 15.0.0.0.
+- **\#Version:**: Version number of the software that created the message tracking log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type:**: Log type value, which is Message Tracking Log.
+- **\#Log-Type:**: Log type value, which is Message Tracking Log.
 
-  - **\#Date:**: The UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+- **\#Date:**: The UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields:**: Comma-delimited field names used in the message tracking log files.
+- **\#Fields:**: Comma-delimited field names used in the message tracking log files.
 
 ## Fields in the message tracking log files
 
@@ -534,16 +518,16 @@ An uneventful message sent between two users generates several entries in the me
 This is a condensed example of the message tracking log entries created when the user chris@contoso.com successfully sends a test message to the user michelle@contoso.com. Both users have mailboxes on the same server.
 
 ```powershell
-    EventId    Source      Sender            Recipients             MessageSubject
-    -------    ------      ------            ----------             --------------
-    NOTIFYMAPI STOREDRIVER                   {}
-    RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
-    RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
-    AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
-    SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
-    DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+EventId    Source      Sender            Recipients             MessageSubject
+-------    ------      ------            ----------             --------------
+NOTIFYMAPI STOREDRIVER                   {}
+RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
+RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
+AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
+SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
+DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
 ```
 
 ## Security concerns for the message tracking log

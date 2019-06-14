@@ -24,15 +24,15 @@ For additional management tasks related to email address policies, see [Email ad
 
 ## What do you need to know before begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You can't use the Exchange Administration Center (EAC) to edit an email address policy if the policy was created by using the Shell.
+- You can't use the Exchange admin center (EAC) to edit an email address policy if the policy was created by using the Shell.
 
-  - If the email address policy was created using a recipient filter, you must use the Shell to edit the email address policy. For more information, see [Create an email address policy by using recipient filters](create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md).
+- If the email address policy was created using a recipient filter, you must use the Shell to edit the email address policy. For more information, see [Create an email address policy by using recipient filters](create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md).
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -58,7 +58,7 @@ A user can have multiple proxy email addresses for the same email account (for e
 This example edits the email address policy South East Offices that currently includes recipients in Georgia, Alabama, and Louisiana to also include recipients in Texas.
 
 ```powershell
-    Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
 ```
 
 > [!NOTE]

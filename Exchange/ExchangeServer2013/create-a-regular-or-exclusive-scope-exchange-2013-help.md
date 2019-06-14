@@ -25,32 +25,30 @@ You can create a custom management scope and add or change a management role ass
 
 For more information about management role scopes and assignments in Microsoft Exchange Server 2013, see the following topics:
 
-  - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-  - [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
+- [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
 
 Looking for other management tasks related to scopes? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Create a custom scope
 
 To create a custom scope, choose one of the following types of scopes.
 
-## Recipient filter scope
+### Recipient filter scope
 
 Recipient filter-based scopes are created by using the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. When you create a recipient filter, in addition to the recipient properties to filter, you can specify the OU in which the filter query runs. When you specify a base OU, you further restrict the write scope of the role.
 
@@ -59,13 +57,13 @@ For more information about management scope filters, see [Understanding manageme
 Use the following syntax to create a domain restriction filter scope with a base OU.
 
 ```powershell
-    New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
 ```
 
 This example creates a scope that includes all mailboxes within the contoso.com/Sales OU.
 
 ```powershell
-    New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
 ```
 
 > [!NOTE]
@@ -73,7 +71,7 @@ This example creates a scope that includes all mailboxes within the contoso.com/
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Server filter configuration scope
+### Server filter configuration scope
 
 Server filter-based configuration scopes are created by using the *ServerRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. A server filter enables you to create a scope that applies only to the servers that match the filter you specify.
 
@@ -88,12 +86,12 @@ New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
 This example creates a scope that includes all the servers within the 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) site.
 
 ```powershell
-    New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Server list configuration scope
+### Server list configuration scope
 
 Server list-based configuration scopes are created by using the *ServerList* parameter on the **New-ManagementScope** cmdlet. A server list scope enables you to create a scope that applies only to the servers you specify in a list.
 
@@ -111,7 +109,7 @@ New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Database filter configuration scope
+### Database filter configuration scope
 
 Database filter-based configuration scopes are created by using the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. A database filter enables you to create a scope that applies only to the databases that match the filter you specify.
 
@@ -129,12 +127,12 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 This example creates a scope that includes all the databases that contain the string "Executive" in the **Name** property of the database.
 
 ```powershell
-    New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Database list configuration scope
+### Database list configuration scope
 
 Database list-based configuration scopes are created by using the *DatabaseList* parameter on the **New-ManagementScope** cmdlet. A database list scope enables you to create a scope that applies only to the databases you specify in a list.
 
@@ -155,7 +153,7 @@ New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Datab
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Exclusive scope
+### Exclusive scope
 
 Any scope that you create with the **New-ManagementScope** cmdlet can be designated as an exclusive scope. To create an exclusive scope, you use the same commands in one of the preceding sections to create a recipient filter-based scope, server filter-based scope, server list-based scope, database filter-based scope, or database list-based scope, and then add the *Exclusive* switch to the command.
 
@@ -165,13 +163,13 @@ Any scope that you create with the **New-ManagementScope** cmdlet can be designa
 This example creates an exclusive recipient filter-based scope that matches any user in the Executives department.
 
 ```powershell
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
 ```
 
 By default, when an exclusive scope is created, you're required to acknowledge that you created an exclusive scope and that you're aware of the impact that an exclusive scope has on existing role assignments that aren't exclusive. If you want to suppress the warning, you can use the *Force* switch. This example creates the same scope as the previous example, but without a warning.
 
 ```powershell
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
@@ -182,12 +180,12 @@ After you create the scope, you must add it to a new or existing management role
 
 If you create a management scope and want to add it to a new management role assignment that you're going to create, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 If you create a management role scope and want to add it to an existing management role assignment, see the following topics:
 
-  - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
+- [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
-  - [Change a role assignment](change-a-role-assignment-exchange-2013-help.md)
+- [Change a role assignment](change-a-role-assignment-exchange-2013-help.md)

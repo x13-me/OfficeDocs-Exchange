@@ -45,7 +45,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](http://
 
 ## Use the EAC to run the management role group changes report
 
-If you want to know what changes to management role group membership have been made to role groups in your organization, you can use the Administrator Role Group report in the Exchange Administration Center (EAC). Using the Administrator Role Group report, you can view a list of role groups that have changed during a specified date range. You can also select the specific role groups you want to view changes for.
+If you want to know what changes to management role group membership have been made to role groups in your organization, you can use the Administrator Role Group report in the Exchange admin center (EAC). Using the Administrator Role Group report, you can view a list of role groups that have changed during a specified date range. You can also select the specific role groups you want to view changes for.
 
 1. In the EAC, select **Compliance management** \> **Auditing**, and then click **Run an administrator role group report**.
 

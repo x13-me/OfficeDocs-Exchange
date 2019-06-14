@@ -20,27 +20,15 @@ The Exchange 2013 Availability service makes free/busy information available to 
 
 Outlook and Outlook Web App use the Availability service to perform the following tasks:
 
-  - Retrieve current free/busy information for Exchange 2013 mailboxes
+- Retrieve current free/busy information for Exchange 2013 mailboxes
 
-  - Retrieve current free/busy information from other Exchange 2013 organizations
+- Retrieve current free/busy information from other Exchange 2013 organizations
 
-  - Retrieve published free/busy information from public folders for mailboxes on servers that have previous versions of Exchange
+- Retrieve published free/busy information from public folders for mailboxes on servers that have previous versions of Exchange
 
-  - View attendee working hours
+- View attendee working hours
 
-  - Show meeting time suggestions
-
-**Contents**
-
-Overview of the Availability service
-
-Information about away status
-
-Availability service API
-
-Availability service Network Load Balancing
-
-Methods used to retrieve free/busy information
+- Show meeting time suggestions
 
 ## Overview of the Availability service
 
@@ -48,7 +36,7 @@ The Availability service retrieves free/busy information directly from the targe
 
 Outlook uses the Exchange Autodiscover service to obtain the URL of the Availability service. For more information about the Autodiscover service, see [Autodiscover service](autodiscover-service-for-exchange-2013.md).
 
-You can use the Exchange Management Shell to configure the Availability service. You can't use the Exchange Administration Center (EAC) to configure the Availability service.
+You can use the Exchange Management Shell to configure the Availability service. You can't use the Exchange admin center (EAC) to configure the Availability service.
 
 ## Information about away status
 

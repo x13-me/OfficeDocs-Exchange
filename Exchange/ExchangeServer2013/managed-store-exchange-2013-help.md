@@ -30,33 +30,33 @@ For example, if you have 40 databases mounted on a server, there will be 41 proc
 
 The store service process controller is very thin and very reliable, but if it dies or is terminated, all of its worker processes die (they will detect the service controller process is gone and exit). The store process controller monitors the health of all store worker processes on the server. A forcible or unexpected termination the Microsoft.Exchange.Store.Service.exe causes an immediate failover of all active database copies. The Managed Store is also tightly integrated with the Microsoft Exchange Replication service (MSExchangeRepl.exe) and Active Manager. The controller process, worker processes, and Replication service work together to provide greater availability and reliability:
 
-  - Microsoft Exchange Replication service process (MSExchangeRepl.exe)
+- Microsoft Exchange Replication service process (MSExchangeRepl.exe)
 
-      - Responsible for issuing mount and dismount operations to the Store
+  - Responsible for issuing mount and dismount operations to the Store
 
-      - Initiates recovery action on storage or database failures reported by the Store, the Extensible Storage Engine (ESE), and Managed Availability responders
+  - Initiates recovery action on storage or database failures reported by the Store, the Extensible Storage Engine (ESE), and Managed Availability responders
 
-      - Detects unexpected database failures
+  - Detects unexpected database failures
 
-      - Provides the administrative interface for management tasks
+  - Provides the administrative interface for management tasks
 
-  - Store service process/controller (Microsoft.Exchange.Store.Service.exe)
+- Store service process/controller (Microsoft.Exchange.Store.Service.exe)
 
-      - Manages each worker process lifetime based on the mount and dismount operations received from the Replication service
+  - Manages each worker process lifetime based on the mount and dismount operations received from the Replication service
 
-      - Handles incoming requests from the Windows Service Control Manager
+  - Handles incoming requests from the Windows Service Control Manager
 
-      - Logs failure items when store worker process problems detected (for example, hang or unexpected exit)
+  - Logs failure items when store worker process problems detected (for example, hang or unexpected exit)
 
-      - Terminates store worker processes in response failover event
+  - Terminates store worker processes in response failover event
 
-  - Store worker process (Microsoft.Exchange.Store.Worker.exe)
+- Store worker process (Microsoft.Exchange.Store.Worker.exe)
 
-      - Responsible for executing RPC operations for mailboxes on a database
+  - Responsible for executing RPC operations for mailboxes on a database
 
-      - RPC endpoint instance within worker process is the database GUID
+  - RPC endpoint instance within worker process is the database GUID
 
-      - Provides database cache for a database
+  - Provides database cache for a database
 
 ## Static Database Caching Algorithm
 
@@ -75,7 +75,7 @@ Max Cache Target is calculated only at Store startup. Therefore, if you add or r
 
 Below are example database caching calculations that are based on a Mailbox server's memory and database configuration.
 
-**Example 1**
+### Example 1
 
 In this example, the Mailbox server has 48 GB of memory, and it hosts two active databases and two passive databases. In addition, the *MaximumActiveDatabases* parameter is not configured. In this configuration, the amount of database cache is 3 GB for each active database copy worker process and 0.6 GB for each passive database copy worker process. Here's how these values were obtained.
 
@@ -93,7 +93,7 @@ To determine the amount of memory used for the passive database copies, multiply
 
 Out of the 12 GB of memory assigned to the Server Cache Size Target, 7.2 GB will be in use by database worker processes, and 4.8 GB will be reserved by the Information Store for the two passive database copies in case they become active copies. In that event, they will use their Max Cache Target of 3 GB.
 
-**Example 2**
+### Example 2
 
 In this example, the Mailbox server also has 48 GB of memory and hosts two active databases and two passive databases; however, the *MaximumActiveDatabases* parameter is configured with a value of 2. In this configuration, the amount of database cache is 5 GB for each active database copy worker process and 0.2 GB for each passive database copy worker process. Here's how these values were obtained.
 

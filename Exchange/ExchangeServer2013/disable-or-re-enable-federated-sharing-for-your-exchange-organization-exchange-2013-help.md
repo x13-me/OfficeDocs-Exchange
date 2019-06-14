@@ -30,13 +30,13 @@ For additional management tasks related to federated sharing, see [Federation pr
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Federation and certificates* permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Federation and certificates* permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - Any existing organization relationships and sharing policies for other federated Exchange organizations won't be modified and won't be functional. Sharing policies that are configured to provide Internet recipients with access to calendar information won't be affected.
+- Any existing organization relationships and sharing policies for other federated Exchange organizations won't be modified and won't be functional. Sharing policies that are configured to provide Internet recipients with access to calendar information won't be affected.
 
-  - You can't use the Exchange Administration Center (EAC) to disable or enable the OrgID for a federation trust. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to disable or enable the OrgID for a federation trust. You must use the Shell.
 
 ## Use the Shell to disable or re-enable federated sharing
 

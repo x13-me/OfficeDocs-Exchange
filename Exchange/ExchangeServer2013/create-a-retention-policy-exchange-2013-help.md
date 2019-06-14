@@ -28,13 +28,11 @@ For additional management tasks related to retention policies, see [Messaging Re
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-## How do you do this?
-
-### Step 1: Create a retention tag
+## Step 1: Create a retention tag
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
-#### Use the EAC to create a retention tag
+### Use the EAC to create a retention tag
 
 1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif)
 
@@ -77,7 +75,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Comment**: User this optional field to enter any administrative notes or comments. The field isn't displayed to users.
 
- #### Use the Shell to create a retention tag
+### Use the Shell to create a retention tag
 
 Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different options available in the cmdlet allow you to create different types of retention tags. Use the _Type_ parameter to create a DPT ( `All`), RPT (specify a default folder type, such as `Inbox`) or a personal tag (`Personal`).
 
@@ -111,11 +109,11 @@ This example creates a personal tag to never delete a message.
 New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction DeleteAndAllowRecovery -RetentionEnabled $false
 ```
 
-### Step 2: Create a retention policy
+## Step 2: Create a retention policy
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
-#### Use the EAC to create a retention policy
+### Use the EAC to create a retention policy
 
 1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif)
 
@@ -142,17 +140,17 @@ You need to be assigned permissions before you can perform this procedure or pro
 
      You can create a retention policy without adding any retention tags to it, but items in the mailbox to which the policy is applied won't be moved or deleted. You can also add and remove retention tags from a retention policy after it's created.
 
-#### Use the Shell to create a retention policy
+### Use the Shell to create a retention policy
 
 This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy.
 
 ```powershell
-New-RetentionPolicy "RetentionPolicy-Corp"  -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
+New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
 For detailed syntax and parameter information, see [New-RetentionPolicy](http://technet.microsoft.com/library/4cdd6f20-5bca-4269-ac21-0a4cde0d54d6.aspx).
 
-### Step 3: Apply a retention policy to mailbox users
+## Step 3: Apply a retention policy to mailbox users
 
 After you create a retention policy, you must apply it to mailbox users. You can apply different retention policies to different set of users. For detailed instructions, see [Apply a retention policy to mailboxes](apply-retention-policy-exchange-2013-help.md).
 

@@ -34,21 +34,21 @@ For additional management tasks related to disconnected mailboxes, see the follo
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 2 minutes.
+- Estimated time to complete each procedure: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox restore request" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox restore request" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic can only be performed in the Shell. You can't use the EAC to manage mailbox restore requests.
+- The procedures in this topic can only be performed in the Shell. You can't use the EAC to manage mailbox restore requests.
 
-  - To display the value of the *Identity* property for all mailbox restore requests, run the following command.
+- To display the value of the *Identity* property for all mailbox restore requests, run the following command.
 
-    ```powershell
-    Get-MailboxRestoreRequest | Format-Table Identity
-    ```
+  ```powershell
+  Get-MailboxRestoreRequest | Format-Table Identity
+  ```
 
     You can use this identity value to specify a specific mailbox restore request when you're performing the procedures in this topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -163,19 +163,19 @@ Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
 This example returns the statistics for Dan Park's mailbox and exports the report to a .csv file.
 
 ```powershell
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
 ```
 
 This example returns additional information about the restore request for Pilar Pinilla's mailbox using the *IncludeReport* parameter and piping the results to the **Format-List** cmdlet.
 
 ```powershell
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List
 ```
 
 This example returns additional information for all restore requests that have a status of `Failed` using the *IncludeReport* parameter, and then saves the information to the file AllRestoreReports.txt in the location where the command is being run.
 
 ```powershell
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
 ```
 
 For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\)) and [Get-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829907\(v=exchg.150\)).
@@ -420,7 +420,7 @@ Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit
 This example specifies that the restore request MailboxRestore1 for Florence Flipo's mailbox skips 100 corrupted items. Because the *BadItemLimit* value is greater than 50, the *AcceptLargeDataLoss* parameter must be specified.
 
 ```powershell
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829909\(v=exchg.150\)).
@@ -444,7 +444,7 @@ Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
 This example suspends all restore requests in progress by first retrieving all requests that have a status of `InProgress`, and then piping the output to the **Suspend-MailboxRestoreRequest** cmdlet and including the suspend comment "Resume after FY13Q2 Maintenance."
 
 ```powershell
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
 ```
 
 For detailed syntax and parameter information, see [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829906\(v=exchg.150\)).
