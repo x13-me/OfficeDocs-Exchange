@@ -64,7 +64,7 @@ The parameters used by Safety Net are described in the following table.
 <td><p><em>SafetyNetHoldTime</em> on <strong>Set-TransportConfig</strong></p></td>
 <td><p>2 days</p></td>
 <td><p>The length of time successfully processed primary messages are stored in Primary Safety Net, and acknowledged shadow messages are stored in Shadow Safety Net.</p>
-<p>You can also specify this value in the Exchange Administration Center (EAC) at <strong>Mail flow</strong> &gt; <strong>Receive connectors</strong> &gt; <strong>More options</strong> <img src="images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif" title="More Options Icon" alt="More Options Icon" /> &gt; <strong>Organization transport settings</strong> &gt; <strong>Safety Net</strong> &gt; <strong>Safety Net hold time</strong>.</p>
+<p>You can also specify this value in the Exchange admin center (EAC) at <strong>Mail flow</strong> &gt; <strong>Receive connectors</strong> &gt; <strong>More options</strong> <img src="images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif" title="More Options Icon" alt="More Options Icon" /> &gt; <strong>Organization transport settings</strong> &gt; <strong>Safety Net</strong> &gt; <strong>Safety Net hold time</strong>.</p>
 <p>Unacknowledged shadow messages eventually expire from Shadow Safety Net after the sum of <em>SafetyNetHoldTime</em> and <em>MessageExpirationTimeout</em> on <strong>Set-TransportService</strong>.</p>
 <p>To avoid data loss during Safety Net resubmits, the value of <em>SafetyNetHoldTime</em> must be greater than or equal to the value of <em>ReplayLagTime</em> on <strong>Set-MailboxDatabaseCopy</strong> for the lagged copy of the mailbox database.</p></td>
 </tr>

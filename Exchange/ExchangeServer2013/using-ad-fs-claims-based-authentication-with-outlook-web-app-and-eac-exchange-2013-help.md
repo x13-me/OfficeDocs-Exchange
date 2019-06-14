@@ -111,7 +111,7 @@ Additional information you might want to know
 
 - You need to be assigned permissions for managing Outlook Web App. To see what permissions you need, see the "Outlook Web App permissions" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-- You need to be assigned permissions for managing EAC. To see what permissions you need, see the "Exchange Administration Center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions for managing EAC. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 - You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
 
@@ -301,7 +301,7 @@ For Outlook Web App, to create relying party trusts by using the AD FS Managemen
 
 14. On the **Finish** page, verify that **Open the Edit Claim Rules dialog for this relying party trust when the wizard closes** isn't selected, and then click **Close**.
 
-To create a relying party trust for EAC, you must do these steps again and create a second relying party trust, but instead of putting in **Outlook Web App** for the display name, enter **EAC**. For the description, enter **This is a trust for the Exchange Admin Center**, and the **Relying party WS-Federation Passive protocol URL** is **https://mail.contoso.com/ecp**.
+To create a relying party trust for EAC, you must do these steps again and create a second relying party trust, but instead of putting in **Outlook Web App** for the display name, enter **EAC**. For the description, enter **This is a trust for the Exchange admin center**, and the **Relying party WS-Federation Passive protocol URL** is **https://mail.contoso.com/ecp**.
 
 In a claims-based identity model, the function of Active Directory Federation Services (AD FS) as a federation service is to issue a token that contains a set of claims. Claims rules govern the decisions in regard to claims that AD FS issues. Claim rules and all server configuration data are stored in the AD FS configuration database.
 
@@ -380,7 +380,7 @@ Alternatively, you can create relaying party trusts and claim rules by using Win
 
    Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
 
-   Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+   Add-ADFSRelyingPartyTrust -Name "Exchange admin center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
    ```
 
 ## Step 4 - Install the Web Application Proxy role service (optional)
@@ -491,7 +491,7 @@ Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/o
 The following Windows PowerShell cmdlet performs the same tasks as the preceding procedure for EAC.
 
 ```powershell
-Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange admin center'
 ```
 
 After you complete these steps, Web Application Proxy will perform AD FS authentication for Outlook Web App and EAC clients, and it will also proxy the connections to Exchange on their behalf. You do not need to configure Exchange itself for AD FS authentication, so proceed to step 10 to test your configuration.

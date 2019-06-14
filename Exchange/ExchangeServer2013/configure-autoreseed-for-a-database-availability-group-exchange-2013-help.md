@@ -38,8 +38,6 @@ For additional management tasks related to DAGs, see [Managing database availabi
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Configure the root paths for databases and volumes
 
 The first step involves configuring the root directories for the databases (*AutoDagDatabasesRootFolderPath*) and volumes (*AutoDagVolumesRootFolderPath*) used by the DAG. The defaults are C:\\ExchangeDatabases, and C:\\ExchangeVolumes, respectively. You can omit this step if you're using the default paths.

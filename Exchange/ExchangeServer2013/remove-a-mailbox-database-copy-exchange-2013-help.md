@@ -22,17 +22,17 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 1 minute
+- Estimated time to complete this task: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - Mailbox database copies can only be removed from a healthy database availability group (DAG). If the DAG isn't healthy (for example, the DAG's underlying cluster is down because quorum was lost), you won't be able to remove any mailbox database copies.
+- Mailbox database copies can only be removed from a healthy database availability group (DAG). If the DAG isn't healthy (for example, the DAG's underlying cluster is down because quorum was lost), you won't be able to remove any mailbox database copies.
 
-  - If you're removing the last passive copy of the database, continuous replication circular logging (CRCL) must not be enabled for the specified mailbox database. If CRCL is enabled, you must first disable it. After the mailbox database copy has been removed, circular logging can be enabled. Once enabled for a non-replicated mailbox database, JET circular logging is used instead of CRCL. If you aren't removing the last passive copy of a database, CRCL can remain enabled.
+- If you're removing the last passive copy of the database, continuous replication circular logging (CRCL) must not be enabled for the specified mailbox database. If CRCL is enabled, you must first disable it. After the mailbox database copy has been removed, circular logging can be enabled. Once enabled for a non-replicated mailbox database, JET circular logging is used instead of CRCL. If you aren't removing the last passive copy of a database, CRCL can remain enabled.
 
-  - After removing a database copy, you must manually delete any database and transaction log files from the server from which the database copy is being removed.
+- After removing a database copy, you must manually delete any database and transaction log files from the server from which the database copy is being removed.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -63,12 +63,12 @@ Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
 
 To verify that you've successfully removed a mailbox database copy, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, the removed passive copy is no longer listed.
+- In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, the removed passive copy is no longer listed.
 
-  - In the Shell, run the following command to verify removal of the copy.
+- In the Shell, run the following command to verify removal of the copy.
 
-    ```powershell
-    Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
-    ```
+  ```powershell
+  Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+  ```
 
-    The removed passive copy is no longer listed.
+  The removed passive copy is no longer listed.

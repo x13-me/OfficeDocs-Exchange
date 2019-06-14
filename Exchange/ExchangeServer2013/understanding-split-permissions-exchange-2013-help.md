@@ -30,7 +30,7 @@ To support the varying needs to separate the management of Exchange and Active D
 
 To understand split permissions, you need to understand how the Role Based Access Control (RBAC) permissions model in Exchange 2013 works with Active Directory. The RBAC model controls who can perform what actions, and on which objects those actions can be performed. For more information about the various components of RBAC that are discussed in this topic, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
-In Exchange 2013, all tasks that are performed on Exchange objects must be done through the Exchange Management Shell or the Exchange Administration Center (EAC) interface. Both of these management tools use RBAC to authorize all tasks that are performed.
+In Exchange 2013, all tasks that are performed on Exchange objects must be done through the Exchange Management Shell or the Exchange admin center (EAC) interface. Both of these management tools use RBAC to authorize all tasks that are performed.
 
 RBAC is a component that exists on every server running Exchange 2013. RBAC checks whether the user performing an action is authorized to do so:
 
@@ -352,7 +352,7 @@ After you enable Active Directory split permissions, the following cmdlets are a
 
 Some cmdlets, although still available, may offer only limited functionality when used with Active Directory split permissions. This is because they may allow you to configure recipient objects that are in the domain Active Directory partition and Exchange configuration objects that are in the configuration Active Directory partition. They may also allow you to configure Exchange-related attributes on objects stored in the domain partition. Attempts to use the cmdlets to create objects, or modify non-Exchange-related attributes on objects, in the domain partition will result in an error. For example, the **Add-ADPermission** cmdlet will return an error if you attempt to add permissions to a mailbox. However, the **Add-ADPermission** cmdlet will succeed if you configure permissions on a Receive connector. This is because a mailbox is stored in the domain partition while Receive connectors are stored in the configuration partition.
 
-Additionally, the associated features in the Exchange Administration Center and Outlook Web App, such as the New Mailbox wizard, will also no longer be available or will generate an error if you try to use them.
+Additionally, the associated features in the Exchange admin center and Outlook Web App, such as the New Mailbox wizard, will also no longer be available or will generate an error if you try to use them.
 
 Exchange administrators will, however, be able to create and manage Exchange-specific objects, such as transport rules, and so on.
 

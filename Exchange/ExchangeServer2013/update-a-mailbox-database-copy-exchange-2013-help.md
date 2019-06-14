@@ -18,33 +18,33 @@ _**Applies to:** Exchange Server 2013_
 
 Updating, also known as *seeding*, is the process in which a copy of a mailbox database is added to another Mailbox server in a database availability group (DAG). The newly added copy becomes the baseline database for the passive copy into which log files copied from the active copy are replayed. Seeding is required under the following conditions:
 
-  - When a new passive copy of a database is created. Seeding can be postponed for a new mailbox database copy, but eventually, each passive database copy must be seeded to function as a redundant database copy.
+- When a new passive copy of a database is created. Seeding can be postponed for a new mailbox database copy, but eventually, each passive database copy must be seeded to function as a redundant database copy.
 
-  - After a failover occurs in which data is lost as a result of the passive database copy having become diverged and unrecoverable.
+- After a failover occurs in which data is lost as a result of the passive database copy having become diverged and unrecoverable.
 
-  - When the system has detected a corrupted log file that can't be replayed into the passive copy of the database.
+- When the system has detected a corrupted log file that can't be replayed into the passive copy of the database.
 
-  - After an offline defragmentation of any copy of the database occurs.
+- After an offline defragmentation of any copy of the database occurs.
 
-  - After the log generation sequence for the database has been reset back to 1.
+- After the log generation sequence for the database has been reset back to 1.
 
 You can perform seeding by using the following methods:
 
-  - **Automatic seeding**: An automatic seed produces a passive copy of the active database on the target Mailbox server. Automatic seeding occurs during the creation of a database.
+- **Automatic seeding**: An automatic seed produces a passive copy of the active database on the target Mailbox server. Automatic seeding occurs during the creation of a database.
 
-  - **Seeding using the Update-MailboxDatabaseCopy cmdlet**: You can use the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet in the Shell to seed a database copy at any time.
+- **Seeding using the Update-MailboxDatabaseCopy cmdlet**: You can use the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet in the Shell to seed a database copy at any time.
 
-  - **Seeding using the Update Mailbox Database Copy wizard**: You can use the Update Mailbox Database Copy wizard in the EAC to seed a database copy at any time.
+- **Seeding using the Update Mailbox Database Copy wizard**: You can use the Update Mailbox Database Copy wizard in the EAC to seed a database copy at any time.
 
-  - **Manually copying the offline database**: You can dismount the active copy of the database and copy the database file to the same location on another Mailbox server in the same DAG. If you use this method, there will be an interruption in service because the process requires you to dismount the database.
+- **Manually copying the offline database**: You can dismount the active copy of the database and copy the database file to the same location on another Mailbox server in the same DAG. If you use this method, there will be an interruption in service because the process requires you to dismount the database.
 
 Updating a database copy can take a long time, especially if the database being copied is large, or if there is high network latency or low network bandwidth. After the seeding process has started, don't close the EAC or the Shell until the process has completed. If you do, the seeding operation will be terminated.
 
 A database copy can be seeded using either the active copy or an up-to-date passive copy as the source for the seed. When seeding from a passive copy, be aware that the seed operation will terminate with a network communication error under the following circumstances:
 
-  - If the status of the seeding source copy changes to Failed or FailedAndSuspended.
+- If the status of the seeding source copy changes to Failed or FailedAndSuspended.
 
-  - If the database fails over to another copy.
+- If the database fails over to another copy.
 
 Multiple database copies can be seeded simultaneously. However, when seeding multiple copies simultaneously, you must seed only the database file, and omit the content index catalog. You can do this by using the *DatabaseOnly* parameter with the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet.
 
@@ -55,15 +55,15 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 2 minutes, plus the time to seed the database copy, which depends on a variety of factors, such as the size of the database, the speed, available bandwidth and latency of the network, and storage speeds.
+- Estimated time to complete this task: 2 minutes, plus the time to seed the database copy, which depends on a variety of factors, such as the size of the database, the speed, available bandwidth and latency of the network, and storage speeds.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - The mailbox database copy must be suspended. For detailed steps, see [Suspend or resume a mailbox database copy](suspend-or-resume-a-mailbox-database-copy-exchange-2013-help.md).
+- The mailbox database copy must be suspended. For detailed steps, see [Suspend or resume a mailbox database copy](suspend-or-resume-a-mailbox-database-copy-exchange-2013-help.md).
 
-  - The Remote Registry service must be running on the server hosting the passive database copy you're updating.
+- The Remote Registry service must be running on the server hosting the passive database copy you're updating.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -148,12 +148,12 @@ Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
 
 To verify that you've successfully seeded a mailbox database copy, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Databases**. Select the database that was seeded. In the Details pane, the status of the database copy and its content index are displayed, along with the current copy queue length.
+- In the EAC, navigate to **Servers** \> **Databases**. Select the database that was seeded. In the Details pane, the status of the database copy and its content index are displayed, along with the current copy queue length.
 
-  - In the Shell, run the following command to verify the mailbox database copy was seeded successfully and is healthy.
+- In the Shell, run the following command to verify the mailbox database copy was seeded successfully and is healthy.
 
-    ```powershell
-    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-    ```
+  ```powershell
+  Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+  ```
 
-    The Status and Content Index State should both be Healthy.
+  The Status and Content Index State should both be Healthy.

@@ -34,8 +34,6 @@ Interested in scenarios where this procedure is used? See [Planning and deployme
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Use the Shell to create a Foreign connector that sends messages to a non-SMTP gateway server
 
 1. Run the following command to create the Foreign connector:
@@ -48,7 +46,7 @@ Interested in scenarios where this procedure is used? See [Planning and deployme
 
 Once you have created the Foreign Connector, you can configure the Drop Pickup, and Replay directories, depending on the requirements for your organization.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that the Foreign connector was created successfully, run the following command:
 
@@ -70,7 +68,7 @@ You create a directory to use as the Drop directory on your local file system. Y
    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
    ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have set the Drop Directory correctly, you can run the following cmdlet script and verify the value for the *DropDirectory* parameter:
 
@@ -86,7 +84,7 @@ The Pickup directory for the Transport service on a Mailbox server is used to co
 
 For detailed instructions for configuring your Pickup directory, see [Configure the Pickup directory and the Replay directory](configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have set the Pickup directory correctly, you can run the following command and verify the value for the *PickupDirectoryPath* parameter:
 
@@ -100,7 +98,7 @@ The Replay directory for the Transport service on a Mailbox server is used to co
 
 For detailed instructions for configuring your Pickup directory, see [Configure the Pickup directory and the Replay directory](configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have set the Replay directory correctly, you can run the following command and verify the value for the *ReplayDirectoryPath* parameter:
 

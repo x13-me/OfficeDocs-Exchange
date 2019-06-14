@@ -340,7 +340,7 @@ The script supports parameters that allow you to customize the script's behavior
 </tr>
 <tr class="even">
 <td><p><em>ActionTrigger</em></p></td>
-<td><p>Specifies which administrative operations should be collected by the script. The values for this parameter are <code>Admin</code> or <code>Automatic</code>. Automatic actions are those performed automatically by the system (for example, a failover when a server goes offline). Admin actions are any actions that were performed by an administrator using either the Exchange Management Shell or the Exchange Administration Center.</p></td>
+<td><p>Specifies which administrative operations should be collected by the script. The values for this parameter are <code>Admin</code> or <code>Automatic</code>. Automatic actions are those performed automatically by the system (for example, a failover when a server goes offline). Admin actions are any actions that were performed by an administrator using either the Exchange Management Shell or the Exchange admin center.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>RawOutput</em></p></td>

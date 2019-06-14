@@ -35,7 +35,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 - The Federation mailbox must be added to the Active Directory Rights Management Services (AD RMS) super users group. To learn more, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-- You can't use the Exchange Administration Center (EAC) to configure IRM for Exchange Search and In-Place eDiscovery. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to configure IRM for Exchange Search and In-Place eDiscovery. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

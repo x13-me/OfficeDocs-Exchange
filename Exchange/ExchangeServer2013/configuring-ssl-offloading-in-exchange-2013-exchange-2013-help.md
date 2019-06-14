@@ -82,7 +82,7 @@ To enable SSL offloading for Outlook Web App, you need to remove the SSL require
 
   - Using Internet Information Services (IIS) Manager: In Internet Information Services (IIS) Manager, in the **Actions** pane, click **Restart**.
 
-## Configure SSL offloading for the Exchange Admin Center (EAC)
+## Configure SSL offloading for the Exchange admin center (EAC)
 
 To enable SSL offloading for EAC, you need to remove the SSL requirement on the **ecp** virtual directory on the **Default Web Site**:
 

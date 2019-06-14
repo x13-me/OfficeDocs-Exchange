@@ -24,7 +24,7 @@ Unified Messaging makes it possible for Exchange administrators to combine voice
 
 ## New features
 
-Unified Messaging (UM) was first introduced in Microsoft Exchange Server 2007 and was also available in Exchange 2010. The Unified Messaging feature set in Exchange 2013 is similar to previous versions of Exchange. However, new features have been added and there have been architectural changes. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. The term *Unified Messaging* is still widely used in Exchange Management Shell cmdlets and UM-related services, and all Unified Messaging components (including dial plans, auto attendants, UM mailbox policies, and UM IP gateways) along with the ability to manage those UM components, are located within the Unified Messaging node in the navigation pane of the Exchange Administration Center (EAC).
+Unified Messaging (UM) was first introduced in Microsoft Exchange Server 2007 and was also available in Exchange 2010. The Unified Messaging feature set in Exchange 2013 is similar to previous versions of Exchange. However, new features have been added and there have been architectural changes. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. The term *Unified Messaging* is still widely used in Exchange Management Shell cmdlets and UM-related services, and all Unified Messaging components (including dial plans, auto attendants, UM mailbox policies, and UM IP gateways) along with the ability to manage those UM components, are located within the Unified Messaging node in the navigation pane of the Exchange admin center (EAC).
 
 The following topics are gateways to information about new or enhanced features found in Exchange 2013 Unified Messaging:
 
@@ -98,7 +98,7 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
 
 Currently, most users and IT departments manage their voice mail separately from their email. Voice mail and email exist as separate inboxes hosted on separate servers accessed through the desktop for email and through the telephone for voice mail. Unified Messaging offers an integrated store for all messages and access to content through the computer and the telephone.
 
-Exchange administrators can manage Unified Messaging using the same interface they use to manage the rest of Exchange, using the Exchange Administration Center (EAC) and the Exchange Management Shell. They can:
+Exchange administrators can manage Unified Messaging using the same interface they use to manage the rest of Exchange, using the Exchange admin center (EAC) and the Exchange Management Shell. They can:
 
 - Manage voice mail and email from a single platform
 
@@ -178,7 +178,7 @@ There are many areas that you must consider and evaluate to be able to successfu
 
 ### EAC management
 
-Exchange 2013 provides a single unified management console for your organization that includes all UM components and features. The Exchange Administration Center (EAC) provides a streamlined, optimized interface for management of on-premises, online, or hybrid deployments. The EAC in Exchange 2013 replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP) in Exchange 2010. Some of the EAC features include:
+Exchange 2013 provides a single unified management console for your organization that includes all UM components and features. The Exchange admin center (EAC) provides a streamlined, optimized interface for management of on-premises, online, or hybrid deployments. The EAC in Exchange 2013 replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP) in Exchange 2010. Some of the EAC features include:
 
 - **List view**: The list view in EAC has been designed to remove limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren't listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a CSV file.
 

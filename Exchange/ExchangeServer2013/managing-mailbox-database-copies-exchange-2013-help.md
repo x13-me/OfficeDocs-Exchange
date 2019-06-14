@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-After a database availability group (DAG) has been created, configured, and populated with Mailbox server members, you can use the Exchange Admin Center (EAC) or the Exchange Management Shell to add mailbox database copies in a flexible and granular way.
+After a database availability group (DAG) has been created, configured, and populated with Mailbox server members, you can use the Exchange admin center (EAC) or the Exchange Management Shell to add mailbox database copies in a flexible and granular way.
 
 ## Managing database copies
 

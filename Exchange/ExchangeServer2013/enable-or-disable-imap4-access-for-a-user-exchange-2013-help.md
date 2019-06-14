@@ -27,11 +27,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient provisioning permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient provisioning permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,11 +44,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 
-    In the result pane, under **Email Connectivity**, do one of the following:
+   In the result pane, under **Email Connectivity**, do one of the following:
 
-      - To disable IMAP4 for the user, under **IMAP4: Enabled**, click **Disable**.
+   - To disable IMAP4 for the user, under **IMAP4: Enabled**, click **Disable**.
 
-      - To enable IMAP4 for the user, under **IMAP4: Disabled**, click **Enable**.
+   - To enable IMAP4 for the user, under **IMAP4: Disabled**, click **Enable**.
 
 4. Click **Save**.
 
@@ -74,10 +74,10 @@ Set-CASMailbox -Identity "John Smith" -IMAPEnabled $false
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 
-    In the result pane, look under **Email Connectivity**.
+   In the result pane, look under **Email Connectivity**.
 
-      - If IMAP4 is enabled for the user, you will see **IMAP4: Enabled**.
+   - If IMAP4 is enabled for the user, you will see **IMAP4: Enabled**.
 
-      - If IMAP4 is not enabled for the user, you will see **IMAP4: Disabled**.
+   - If IMAP4 is not enabled for the user, you will see **IMAP4: Disabled**.
 
 4. Click **Save**.

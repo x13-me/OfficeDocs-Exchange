@@ -83,7 +83,7 @@ Exchange 2013 provides a single unified management console that allows for ease 
 
   - **Unified Messaging Tools**: In Exchange 2010, you could use the Call Statistics and User Call Logs tools to help provide UM statistics and information about specific calls for a UM-enabled user. In Exchange 2013, the Call Statistics and User Call Logs tools are now in the EAC and you don't need a separate tool to manage them.
 
-  - **Groups enhancements**: The Exchange Admin Center (EAC) can now display up to 10,000 recipients in the **Groups** **Select Members** window. By default, up to 500 recipients are returned when you open the **Select Members** window, however, you can choose to list up to 10,000 recipients by clicking **Get All Results** beneath the recipient list. We now support browsing more than 500 recipients by using the scroll bar and we've also added enhanced search features to enable you to filter recipients that are displayed in the recipient list. You can filter by:
+  - **Groups enhancements**: The Exchange admin center (EAC) can now display up to 10,000 recipients in the **Groups** **Select Members** window. By default, up to 500 recipients are returned when you open the **Select Members** window, however, you can choose to list up to 10,000 recipients by clicking **Get All Results** beneath the recipient list. We now support browsing more than 500 recipients by using the scroll bar and we've also added enhanced search features to enable you to filter recipients that are displayed in the recipient list. You can filter by:
 
       - city
 

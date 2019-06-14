@@ -25,13 +25,13 @@ To learn more about the EAC, see [Exchange admin center in Exchange 2013](exchan
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You can't use the EAC to perform this procedure. You must use the Shell.
+- You can't use the EAC to perform this procedure. You must use the Shell.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Administration Center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

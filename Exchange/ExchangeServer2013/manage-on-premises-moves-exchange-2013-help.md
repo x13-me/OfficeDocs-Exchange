@@ -100,7 +100,7 @@ log in to the EAC and perform the following steps:
 
 ## Use the Shell to create a batch move request
 
-This example creates a migration batch for a local move, where the mailboxes in the specified .csv file are moved to a different mailbox database. This .csv file contains a single column that contains the email address for each of the mailboxes that will be moved. The header for this column must be named **EmailAddress**. The migration batch in this example must be started manually by using the **Start-MigrationBatch** cmdlet or the Exchange Administration Center (EAC). Alternatively, you can use the *AutoStart* parameter to start the migration batch automatically.
+This example creates a migration batch for a local move, where the mailboxes in the specified .csv file are moved to a different mailbox database. This .csv file contains a single column that contains the email address for each of the mailboxes that will be moved. The header for this column must be named **EmailAddress**. The migration batch in this example must be started manually by using the **Start-MigrationBatch** cmdlet or the Exchange admin center (EAC). Alternatively, you can use the *AutoStart* parameter to start the migration batch automatically.
 
 ```powershell
 New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"

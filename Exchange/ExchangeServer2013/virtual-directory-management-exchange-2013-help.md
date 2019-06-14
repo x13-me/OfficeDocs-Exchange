@@ -24,7 +24,7 @@ The tasks that you can perform on the various virtual directories vary per clien
 
 ## Managing virtual directories
 
-Virtual directory management can be performed in three places. You can manage a variety of settings in the Exchange Administration Center (EAC), as well as the Exchange Management Shell. You can also manage certain virtual directory settings in Internet Information Services Manager. For more information about the various settings you can manage on the virtual directories for Exchange ActiveSync, Outlook Web App, and the Autodiscover service, see the following topics:
+Virtual directory management can be performed in three places. You can manage a variety of settings in the Exchange admin center (EAC), as well as the Exchange Management Shell. You can also manage certain virtual directory settings in Internet Information Services Manager. For more information about the various settings you can manage on the virtual directories for Exchange ActiveSync, Outlook Web App, and the Autodiscover service, see the following topics:
 
   - [View or configure Outlook Web App virtual directories](view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md)
 

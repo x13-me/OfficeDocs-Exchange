@@ -155,7 +155,7 @@ To enable fault tolerance for MWI in Unified Messaging, you must create and conf
 
 ## MWI administration
 
-MWI can be administered by configuring settings on two UM components: UM mailbox policies and UM IP gateways. For both UM components, you can enable or disable MWI notifications by using the **Set-UMMailboxPolicy** cmdlet or the **Set-UMIPgateway** cmdlet in the Exchange Management Shell. You can also configure the settings by using the Exchange Admin Center (EAC). You can view the status of MWI notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMIPgateway** cmdlet in the Shell, or by viewing the settings in the EAC.
+MWI can be administered by configuring settings on two UM components: UM mailbox policies and UM IP gateways. For both UM components, you can enable or disable MWI notifications by using the **Set-UMMailboxPolicy** cmdlet or the **Set-UMIPgateway** cmdlet in the Exchange Management Shell. You can also configure the settings by using the Exchange admin center (EAC). You can view the status of MWI notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMIPgateway** cmdlet in the Shell, or by viewing the settings in the EAC.
 
 ## UM mailbox policies and MWI
 

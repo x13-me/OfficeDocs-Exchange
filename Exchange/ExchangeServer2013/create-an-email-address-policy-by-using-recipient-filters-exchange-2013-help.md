@@ -27,7 +27,7 @@ For additional management tasks related to email address policies, see [Email ad
 - To use the *RecipientFilter* parameter to create a custom filter, you must specify a string for the filter. The Shell uses OPath for the filtering syntax. OPath is a querying language designed to query object data sources.
 
     > [!IMPORTANT]
-    > If you use a recipient filter to create or edit an email address policy, you can't use the Exchange Administration Center (EAC) to edit the email address policy. You must use the Shell. For detailed syntax and parameter information, see <A href="https://technet.microsoft.com/en-us/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</A>.
+    > If you use a recipient filter to create or edit an email address policy, you can't use the Exchange admin center (EAC) to edit the email address policy. You must use the Shell. For detailed syntax and parameter information, see <A href="https://technet.microsoft.com/en-us/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</A>.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Management of the client protocols of Exchange ActiveSync, Outlook Web App, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service occurs in three different areas: the Exchange Administration Center (EAC), the Exchange Management Shell, and Internet Information Services (IIS) Manager. The settings that are managed in each location vary per client protocol.
+Management of the client protocols of Exchange ActiveSync, Outlook Web App, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service occurs in three different areas: the Exchange admin center (EAC), the Exchange Management Shell, and Internet Information Services (IIS) Manager. The settings that are managed in each location vary per client protocol.
 
 ## Managing Outlook Web App settings
 

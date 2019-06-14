@@ -115,7 +115,7 @@ The HCW is the application responsible for the installation of the Hybrid agent 
 
 ### Installation steps
 
-1. Log into your on-premises Exchange Admin Center (EAC), navigate to the **Hybrid** node, and then click **Configure**.
+1. Log into your on-premises Exchange admin center (EAC), navigate to the **Hybrid** node, and then click **Configure**.
 
 2. Select the Exchange server where you want to run traditional hybrid setup. Either select the default server provided by the HCW or specify a specific server in the second radio button. Select **Next**.
 

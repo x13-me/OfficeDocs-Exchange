@@ -39,7 +39,7 @@ There are three types of switchovers in Exchange Server:
 
 ### Database Switchovers
 
-A *database switchover* is the process by which an individual active database is switched over to another database copy (a passive copy), and that database copy is made the new active database copy. Database switchovers can happen both within and across datacenters. A database switchover can be performed by using the Exchange Admin Center (EAC) or the Exchange Management Shell. Regardless of which interface is used, the switchover process is as follows:
+A *database switchover* is the process by which an individual active database is switched over to another database copy (a passive copy), and that database copy is made the new active database copy. Database switchovers can happen both within and across datacenters. A database switchover can be performed by using the Exchange admin center (EAC) or the Exchange Management Shell. Regardless of which interface is used, the switchover process is as follows:
 
 1. The administrator initiates a database switchover to move the current active mailbox database copy to another server.
 

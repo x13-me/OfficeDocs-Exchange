@@ -33,8 +33,6 @@ When you're upgrading a Microsoft Exchange 2007 organization with Unified Messag
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Download and install the required UM language packs
 
 UM language packs enable callers and Outlook Voice Access users to interact with the voice mail system in multiple languages. After you install an additional language on an Exchange 2013 Mailbox server, callers and Outlook Voice Access users can hear email messages and interact with the voice mail system in that language. However, to make the language available for all incoming calls, you must install the required UM language packs on all Exchange 2013 Mailbox servers. This is because every Exchange 2013 Mailbox server can answer incoming calls for Unified Messaging.
@@ -131,17 +129,17 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
 
 - Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
 
-    Enable the UM service and the UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
+  Enable the UM service and the UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
-    1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-    2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
+  2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
 
-    Enable an Exchange self-signed certificate by running the following command in the Shell.
+  Enable an Exchange self-signed certificate by running the following command in the Shell.
 
-    ```powershell
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-    ```
+  ```powershell
+  Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+  ```
 
 - Configure any new or existing UM dial plans as SIP secured or Secured.
 

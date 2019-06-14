@@ -26,11 +26,11 @@ For more information about how to set up POP3 and IMAP4, see [POP3 and IMAP4 in 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -55,27 +55,27 @@ On the computer running the Mailbox server role:
 
 1. Set the Microsoft Exchange IMAP4 service to start automatically.
 
-    ```powershell
-    Set-service msExchangeIMAP4 -startuptype automatic
-    ```
+   ```powershell
+   Set-service msExchangeIMAP4 -startuptype automatic
+   ```
 
 2. Start the Microsoft Exchange IMAP4 service.
 
-    ```powershell
-    Start-service msExchangeIMAP4
-    ```
+   ```powershell
+   Start-service msExchangeIMAP4
+   ```
 
 3. Set the Microsoft Exchange IMAP4 Backend service to start automatically.
 
-    ```powershell
-    Set-service msExchangeIMAP4BE -startuptype automatic
-    ```
+   ```powershell
+   Set-service msExchangeIMAP4BE -startuptype automatic
+   ```
 
 4. Start the Microsoft Exchange IMAP4 Backend service.
 
-    ```powershell
-    Start-service msExchangeIMAP4BE
-    ```
+   ```powershell
+   Start-service msExchangeIMAP4BE
+   ```
 
 ## How do you know this worked?
 

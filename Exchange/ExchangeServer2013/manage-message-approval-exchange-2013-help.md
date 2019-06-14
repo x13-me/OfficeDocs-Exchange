@@ -39,7 +39,7 @@ Here's a comparison of the two approaches to message approval.
 
 ## How the approval process works
 
-When someone sends a message to a person or group that requires approval, if they're using Outlook Web Access, they're notified that their message might be delayed.
+When someone sends a message to a person or group that requires approval, if they're using Outlook Web App, they're notified that their message might be delayed.
 
 ![Message showing message approval notification](images/TA_Mod_Sender_Notification.png)
 

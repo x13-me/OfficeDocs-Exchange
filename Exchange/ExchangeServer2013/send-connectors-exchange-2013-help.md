@@ -25,7 +25,7 @@ Exchange 2013 Mailbox servers running the Transport service require Send connect
 
 ## Selecting the Type for a Send connector
 
-Typically you create a Send connector in the **Mail flow** section of the Exchange Administration Center (EAC). When you create a new Send connector, you choose an available **Type** appropriate to your connection scenario. The type determines the default permission sets that are assigned on the connector and grants those permissions to trusted security principals. Security principals include users, computers, and security groups.
+Typically you create a Send connector in the **Mail flow** section of the Exchange admin center (EAC). When you create a new Send connector, you choose an available **Type** appropriate to your connection scenario. The type determines the default permission sets that are assigned on the connector and grants those permissions to trusted security principals. Security principals include users, computers, and security groups.
 
 Procedures that explain specific **Type** selections include [Create a Send connector to route outbound email through a smart host](create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md) and [Create a Send connector to send email to a partner, with Transport Layer Security (TLS) applied](create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md).
 
