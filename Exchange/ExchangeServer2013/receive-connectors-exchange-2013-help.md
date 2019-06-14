@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Receive connectors control the flow of inbound messages to your Exchange organization. They are configured on computers running Microsoft Exchange Server 2013 with the Transport service, or in the Front End service on a Client Access server. They can be created in the Exchange Administration Center (EAC), or in the Exchange Management Shell.
+Receive connectors control the flow of inbound messages to your Exchange organization. They are configured on computers running Microsoft Exchange Server 2013 with the Transport service, or in the Front End service on a Client Access server. They can be created in the Exchange admin center (EAC), or in the Exchange Management Shell.
 
 By default, the Receive connectors that are required for internal mail flow are automatically created when a Client Access server or Mailbox server is installed.
 
@@ -26,7 +26,7 @@ Each Receive connector listens for inbound connections that match the settings o
 
 Receive connectors are scoped to a single server and determine how that specific server listens for connections. When you create a Receive connector on a Mailbox server running the Transport service, the Receive connector is stored in Active Directory as a child object of the server on which it's created.
 
-If you need additional Receive connectors for specific scenarios, you can create them by using the Exchange Administration Center (EAC) or the Exchange Management Shell. Each Receive connector must use a unique combination of IP address bindings, port number assignments, and remote IP address ranges from which mail is accepted.
+If you need additional Receive connectors for specific scenarios, you can create them by using the EAC or the Exchange Management Shell. Each Receive connector must use a unique combination of IP address bindings, port number assignments, and remote IP address ranges from which mail is accepted.
 
 For more information about how to create a Receive Connector, see [Receive connector procedures](receive-connector-procedures-exchange-2013-help.md).
 
@@ -76,7 +76,7 @@ Permission groups include *Anonymous*, *ExchangeUsers*, *ExchangeServers*, *Exch
 
 The type determines the default permission groups that are assigned to the Receive connector and the default authentication mechanisms that are available for session authentication. The following list describes the available types:
 
-1. **Client**: Typically used to connect to clients not using Microsoft Office Outlook. It can use TLS authentication.
+1. **Client**: Typically used to connect to clients not using Microsoft Outlook. It can use TLS authentication.
 
 2. **Custom**: Typically used in a cross-forest scenario, or in a scenario where your organization receives messages from an SMTP message transfer agent.
 

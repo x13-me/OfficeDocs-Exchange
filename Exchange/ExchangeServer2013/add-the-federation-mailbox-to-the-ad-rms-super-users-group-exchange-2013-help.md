@@ -48,8 +48,6 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Use the Shell to add the Federation mailbox to a distribution group
 
 If a distribution group has been created and configured as a super users group in the AD RMS cluster, you can add the Exchange 2013 Federation mailbox as a member of that group. If a super users group isn't configured, you must create a distribution group and add the Federation mailbox as a member.

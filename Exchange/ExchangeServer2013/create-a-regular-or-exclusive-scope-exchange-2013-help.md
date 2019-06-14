@@ -44,13 +44,11 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create a custom scope
 
 To create a custom scope, choose one of the following types of scopes.
 
-## Recipient filter scope
+### Recipient filter scope
 
 Recipient filter-based scopes are created by using the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. When you create a recipient filter, in addition to the recipient properties to filter, you can specify the OU in which the filter query runs. When you specify a base OU, you further restrict the write scope of the role.
 
@@ -73,7 +71,7 @@ New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { 
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Server filter configuration scope
+### Server filter configuration scope
 
 Server filter-based configuration scopes are created by using the *ServerRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. A server filter enables you to create a scope that applies only to the servers that match the filter you specify.
 
@@ -93,7 +91,7 @@ New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter 
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Server list configuration scope
+### Server list configuration scope
 
 Server list-based configuration scopes are created by using the *ServerList* parameter on the **New-ManagementScope** cmdlet. A server list scope enables you to create a scope that applies only to the servers you specify in a list.
 
@@ -111,7 +109,7 @@ New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Database filter configuration scope
+### Database filter configuration scope
 
 Database filter-based configuration scopes are created by using the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet. A database filter enables you to create a scope that applies only to the databases that match the filter you specify.
 
@@ -134,7 +132,7 @@ New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Nam
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Database list configuration scope
+### Database list configuration scope
 
 Database list-based configuration scopes are created by using the *DatabaseList* parameter on the **New-ManagementScope** cmdlet. A database list scope enables you to create a scope that applies only to the databases you specify in a list.
 
@@ -155,7 +153,7 @@ New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Datab
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Exclusive scope
+### Exclusive scope
 
 Any scope that you create with the **New-ManagementScope** cmdlet can be designated as an exclusive scope. To create an exclusive scope, you use the same commands in one of the preceding sections to create a recipient filter-based scope, server filter-based scope, server list-based scope, database filter-based scope, or database list-based scope, and then add the *Exclusive* switch to the command.
 

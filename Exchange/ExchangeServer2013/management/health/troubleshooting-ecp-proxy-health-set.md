@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The ECP.Proxy health set monitors the availability of the Exchange Administration Center (EAC) proxy infrastructure on the Client Access server (CAS). The ECP.Proxy health set is closely related to the following health set:
+The ECP.Proxy health set monitors the availability of the Exchange admin center (EAC) proxy infrastructure on the Client Access server (CAS). The ECP.Proxy health set is closely related to the following health set:
 
 [Troubleshooting ClientAccess.Proxy Health Set](troubleshooting-clientaccess-proxy-health-set.md)
 

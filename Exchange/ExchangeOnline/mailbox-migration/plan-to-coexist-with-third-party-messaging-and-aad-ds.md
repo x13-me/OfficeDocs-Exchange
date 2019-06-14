@@ -68,7 +68,7 @@ The process of synchronizing mail-enabled users with the correct target address 
 
 For example, if you've verified the domain in your Microsoft 365 deployment (for example, domino.contoso.com), the Azure Active Directory Connect tool synchronizes mail-enabled user objects in your Active Directory that have a target address with domino.contoso.com in the target address property. This is used to route email cross premises. The user's primary SMTP address in this scenario would remain contoso.com, provided contoso.com is a verified domain in Microsoft 365.
 
-The use of the Exchange Admin Center and Exchange Management Shell is required to manage all the Exchange recipient properties in the Active Directory.
+The use of the Exchange admin center and Exchange Management Shell is required to manage all the Exchange recipient properties in the Active Directory.
 
 ### Mail formatting
 

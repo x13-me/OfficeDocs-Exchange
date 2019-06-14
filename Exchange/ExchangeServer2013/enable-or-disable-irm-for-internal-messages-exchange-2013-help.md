@@ -25,13 +25,13 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute.
+- Estimated time to complete: 1 minute.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - You can't use the Exchange Administration Center (EAC) to enable or disable IRM for internal messages. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to enable or disable IRM for internal messages. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

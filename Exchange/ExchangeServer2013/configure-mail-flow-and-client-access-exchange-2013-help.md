@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 Post-installation tasks for Exchange Server 2013 mail flow and client access, including how to configure an SSL certificate.
 
-After you've installed Microsoft Exchange Server 2013 in your organization, you need to configure Exchange Server 2013 for mail flow and client access. Without these additional steps, you won't be able to send mail to the Internet and external clients such as Microsoft Office Outlook and Exchange ActiveSync devices won't be able to connect to your Exchange organization.
+After you've installed Microsoft Exchange Server 2013 in your organization, you need to configure Exchange Server 2013 for mail flow and client access. Without these additional steps, you won't be able to send mail to the Internet and external clients such as Microsoft Outlook and Exchange ActiveSync devices won't be able to connect to your Exchange organization.
 
 The steps in this topic assume a basic Exchange deployment with a single Active Directory site and a single simple mail transport protocol (SMTP) namespace.
 
@@ -42,8 +42,6 @@ For additional management tasks related to mail flow and clients and devices, se
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Create a Send connector
 
@@ -72,7 +70,7 @@ Before you can send mail to the Internet, you need to create a Send connector on
 > [!NOTE]
 > A default inbound Receive connector is created when Exchange 2013 is installed. This Receive connector accepts anonymous SMTP connections from external servers. You don't need to do any additional configuration if this is the functionality you want. If you want to restrict inbound connections from external servers, modify the <STRONG>Default Frontend &lt;Client Access server&gt;</STRONG> Receive connector on the Client Access server.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully created an outbound Send connector, do the following:
 
@@ -101,11 +99,9 @@ By default, when you deploy a new Exchange 2013 organization in an Active Direct
 
 6. Select **Authoritative domain** and then click **Save**.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
-To verify that you have successfully created an accepted domain, do the following:
-
-- In the EAC, verify the new accepted domain appears in **Mail flow** \> **Accepted domains**.
+In the EAC, verify the new accepted domain appears in **Mail flow** \> **Accepted domains**.
 
 ## Step 3: Configure the default email address policy
 
@@ -132,7 +128,7 @@ If you added an accepted domain in the previous step and you want that domain to
 > [!NOTE]
 > We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\user name or UPN in addition to their email address. If their UPN matches their email address, Outlook Web App, ActiveSync, and Outlook will automatically match their email address to their UPN.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully configured the default email address policy, do the following:
 
@@ -142,11 +138,11 @@ To verify that you have successfully configured the default email address policy
 
 3. Optionally, create a new mailbox and verify the mailbox is given an email address with the new accepted domain by doing the following:
 
-    1. Go to **Recipients** \> **Mailboxes**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") and then select **User mailbox**.
+   1. Go to **Recipients** \> **Mailboxes**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") and then select **User mailbox**.
 
-    2. On the new user mailbox page, provide the information required to create a new mailbox. Click **Save**.
+   2. On the new user mailbox page, provide the information required to create a new mailbox. Click **Save**.
 
-    3. Select the new mailbox and then, in the recipient details pane, verify that the **User mailbox** field has been set to *\<alias\>*@*\<new accepted domain\>*. For example, david@contoso.com.
+   3. Select the new mailbox and then, in the recipient details pane, verify that the **User mailbox** field has been set to *\<alias\>*@*\<new accepted domain\>*. For example, david@contoso.com.
 
 ## Step 4: Configure external URLs
 
@@ -231,7 +227,7 @@ After you've configured the external URL on the Client Access server virtual dir
 </tbody>
 </table>
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully configured the external URL on the Client Access server virtual directories, do the following:
 
@@ -304,37 +300,37 @@ The procedure below lets you choose whether you want users to use the same URL o
 
 For more information about internal and external URLs on virtual directories, see [Virtual directory management](virtual-directory-management-exchange-2013-help.md).
 
-## Configure internal and external URLs to be the same
+### Configure internal and external URLs to be the same
 
 1. Open the Exchange Management Shell on your Client Access server.
 
 2. Store the host name of your Client Access server in a variable that will be used in the next step. For example, Ex2013CAS.
 
-    ```powershell
-    $HostName = "Ex2013CAS"
-    ```
+   ```powershell
+   $HostName = "Ex2013CAS"
+   ```
 
 3. Run each of the following commands in the Shell to configure each internal URL to match the virtual directory's external URL.
 
-    ```powershell
-    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
+   ```powershell
+   Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
 
-    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
+   Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
 
-    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
+   Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
 
-    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
+   Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
 
-    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
+   Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
 
-    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
-    ```
+   Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+   ```
 
 4. While we're in the Shell, let's also configure the Offline Address Book (OAB) to allow Autodiscover to select the right virtual directory for distributing the OAB. Run the following commands to do this.
 
-    ```powershell
-    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
-    ```
+   ```powershell
+   Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+   ```
 
 After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you'll need to configure your private DNS records to point to the internal or external IP address or fully qualified domain name (FQDN) of your Client Access server. The following are examples of recommended DNS records that you should create to enable internal client connectivity.
 
@@ -365,7 +361,7 @@ After you've configured the internal URL on the Client Access server virtual dir
 </tbody>
 </table>
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully configured the internal URL on the Client Access server virtual directories, do the following:
 
@@ -444,14 +440,14 @@ To verify that you have successfully configured your private DNS records, do the
 
 7. Repeat steps 5 and 6 for each virtual directory you want to change.
 
-    > [!NOTE]
-    > The ECP and OWA virtual directory internal URLs must be the same.<BR>You can't set an internal URL on the Autodiscover virtual directory.
+   > [!NOTE]
+   > The ECP and OWA virtual directory internal URLs must be the same.<BR>You can't set an internal URL on the Autodiscover virtual directory.
 
 8. Finally, we need to open the Shell and configure the Offline Address Book (OAB) to allow Autodiscover to select the right virtual directory for distributing the OAB. Run the following commands to do this.
 
-    ```powershell
-    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
-    ```
+   ```powershell
+   Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+   ```
 
 After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you'll need to configure your private DNS records to point to the internal or external IP address or FQDN of your Client Access server. The following is an example of recommended DNS record that you should create to enable internal client connectivity if you've configured your virtual directory internal URLs to use internal.contoso.com.
 
@@ -477,7 +473,7 @@ After you've configured the internal URL on the Client Access server virtual dir
 </tbody>
 </table>
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully configured the internal URL on the Client Access server virtual directories, do the following:
 
@@ -566,7 +562,7 @@ Some services, such as Outlook Anywhere and Exchange ActiveSync, require certifi
 
    - If you configured the internal URLs to be internal.contoso.com, **Outlook Web App (when accessed from the Internet)** should show owa.contoso.com and **Outlook Web App (when accessed from the Intranet)** should show internal.contoso.com.
 
-    These domains will be used to create the SSL certificate request. Click **Next**.
+   These domains will be used to create the SSL certificate request. Click **Next**.
 
 9. Add any additional domains you want included on the SSL certificate.
 
@@ -592,7 +588,7 @@ After you've saved the certificate request, submit the request to your certifica
 
 7. If you receive the warning **Overwrite the existing default SMTP certificate?**, click **Yes**.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully added a new certificate, do the following:
 

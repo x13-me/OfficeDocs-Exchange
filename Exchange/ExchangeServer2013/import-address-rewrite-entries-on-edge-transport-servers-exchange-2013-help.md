@@ -98,8 +98,6 @@ Each row under the header row represents an individual address rewrite entry. Th
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create the CSV file
 
 When you create the CSV file, consider the following items:

@@ -26,7 +26,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - After you remove an OAB that's linked to a user or to a mailbox database, the recipient will download the default OAB until you assign a new OAB for that user. If you remove the default OAB, you must assign a different OAB as the default OAB. For instructions about how to change the default OAB, see [Change the default offline address book](change-default-offline-address-book-exchange-2013-help.md).
 
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

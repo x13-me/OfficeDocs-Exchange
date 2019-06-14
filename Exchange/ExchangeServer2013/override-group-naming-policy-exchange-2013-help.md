@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange Administration Center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
+The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange admin center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
 
 However, if you use the Exchange Management Shell to create or rename a distribution group, the group naming policy is applied to groups created by administrators unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy.
 

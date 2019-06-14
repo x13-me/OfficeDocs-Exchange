@@ -22,11 +22,11 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes.
+- Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile Device mailbox policy" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile Device mailbox policy" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -43,8 +43,8 @@ The EAC displays a list of mobile devices that are currently synchronizing with 
 
 You can use the **Get-MobileDevice** cmdlet to view a list of mobile devices for a specific user.
 
-1. Run the following command.
+Run the following command.
 
-    ```powershell
-    Get-MobileDevice -Mailbox useralias
-    ```
+```powershell
+Get-MobileDevice -Mailbox useralias
+```

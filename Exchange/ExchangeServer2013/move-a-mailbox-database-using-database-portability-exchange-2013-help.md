@@ -77,7 +77,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
     Get-Queue <QueueName> | Retry-Queue -Resubmit $true
     ```
 
-After Active Directory replication is complete, all users can access their mailboxes on the new Exchange server. Most clients are redirected via Autodiscover. Microsoft Office Outlook Web App users are also automatically redirected.
+After Active Directory replication is complete, all users can access their mailboxes on the new Exchange server. Most clients are redirected via Autodiscover. Outlook Web App users are also automatically redirected.
 
 ## How do you know this worked?
 

@@ -71,7 +71,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange Management Console and Exchange Control Panel</p></td>
-<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange Admin Center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
+<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange admin center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>

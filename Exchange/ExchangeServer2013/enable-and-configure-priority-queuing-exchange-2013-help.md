@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-*Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the message priority that's configured by the sender in Microsoft Outlook or Outlook Web Access to influence the processing of the message by the Transport service on the Mailbox server. When priority queuing is enabled, High priority messages are transmitted to their destinations before Normal priority messages, and Normal priority messages are transmitted to their destinations before Low priority messages. For more information, see [Priority queuing](priority-queuing-exchange-2013-help.md).
+*Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the message priority that's configured by the sender in Microsoft Outlook or Outlook Web App to influence the processing of the message by the Transport service on the Mailbox server. When priority queuing is enabled, High priority messages are transmitted to their destinations before Normal priority messages, and Normal priority messages are transmitted to their destinations before Low priority messages. For more information, see [Priority queuing](priority-queuing-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

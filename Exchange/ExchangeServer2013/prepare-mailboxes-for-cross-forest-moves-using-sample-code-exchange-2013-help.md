@@ -24,65 +24,63 @@ For more information about preparing for cross-forest moves, including descripti
 
 ## What do you need to know before you begin?
 
-  - Download the sample code from the [Prepare for Online Mailbox Move](https://go.microsoft.com/fwlink/p/?linkid=177882) page in the Microsoft Download Center.
+- Download the sample code from the [Prepare for Online Mailbox Move](https://go.microsoft.com/fwlink/p/?linkid=177882) page in the Microsoft Download Center.
 
-  - To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1). To download the feature pack, see Microsoft Knowledge Base article 977791, [Service Pack 1 (build 3.3.1139.2) is available for Identity Lifecycle Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
+- To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1). To download the feature pack, see Microsoft Knowledge Base article 977791, [Service Pack 1 (build 3.3.1139.2) is available for Identity Lifecycle Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
 
-  - You also need the following:
+- You also need the following:
 
-      - A source forest running Exchange 2013, where the mailbox currently resides.
+  - A source forest running Exchange 2013, where the mailbox currently resides.
 
-      - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
+  - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
-  - To connect to the Exchange 2013 target forest, you must have the appropriate permission to call the **UpdateRecipient** cmdlet. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- To connect to the Exchange 2013 target forest, you must have the appropriate permission to call the **UpdateRecipient** cmdlet. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
-
-## How do you do this?
 
 ## Step 1: Install the ILM sample code
 
 1. In Microsoft Visual Studio 2008, open Microsoft.Exchange.Sample.OneWayGALSync.sln to view the sample code. The sample code includes the following:
 
-      - Microsoft.MetadirectoryServicesEx.dll is the binary file that is shipped with ILM 2007 FP1 SP1 under "\\Program Files\\Microsoft Identity Integration Server\\Bin\\Assemblies". It's referenced by the sample code.
+   - Microsoft.MetadirectoryServicesEx.dll is the binary file that is shipped with ILM 2007 FP1 SP1 under "\\Program Files\\Microsoft Identity Integration Server\\Bin\\Assemblies". It's referenced by the sample code.
 
-      - OneWaySync.xml is referenced by the sample code.
+   - OneWaySync.xml is referenced by the sample code.
 
-      - The ILMServerConfig folder contains the ILM configuration files for the source management agent (MA), target MA, and the ILM Metaverse (MV).
+   - The ILMServerConfig folder contains the ILM configuration files for the source management agent (MA), target MA, and the ILM Metaverse (MV).
 
-      - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll and Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll (built from the sample code) are under "\\obj\\Debug"
+   - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll and Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll (built from the sample code) are under "\\obj\\Debug"
 
 2. On the ILM server, copy the following to \\Program Files\\Microsoft Identity Integration Server\\Extensions:
 
-      - OneWaySync.xml
+   - OneWaySync.xml
 
-      - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll
+   - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll
 
-      - Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll
+   - Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll
 
 3. Edit the file OneWaySync.xml that you copied to the ILM Extensions folder in step 1 to specify the distinguishedName (DN) of the TargetOU container in the target Exchange forest in which you want to create the mail users. You can use LDP.exe or ADSIEdit.exe to browse for the TargetOU container if you don't know what its name is.
 
-    > [!NOTE]
-    > If you're using this sample together with ILM GalSync 2007 exclude this container from the list of containers managed by GalSync2007.
+   > [!NOTE]
+   > If you're using this sample together with ILM GalSync 2007 exclude this container from the list of containers managed by GalSync2007.
 
 4. On the ILM Identity Manager Console, go to **File** \> **Import Server Configuration** to import the ILM server configuration from the folder ILMServerConfig. This action will import two Active Directory Management Agents along with the Metaverse schema and the provisioning rule.
 
-    > [!NOTE]
-    > During the import, you must provide the forest name and credentials and match the partitions of the imported Active Directory Management Agent (ADMA) to the partition name in your configuration for both the source and target ADMAs.
+   > [!NOTE]
+   > During the import, you must provide the forest name and credentials and match the partitions of the imported Active Directory Management Agent (ADMA) to the partition name in your configuration for both the source and target ADMAs.
 
 5. For the ADMA to support the Exchange 2013 target forest, on the **Create Management Agent** page, on the **Configure Extensions** pane, select **Exchange 2013** in the **Provision for** drop-down and then enter the remote Windows PowerShell URI of an Exchange 2010 Client Access server in **Exchange 2013 RPS URI**.
 
-    **Create Management Agent page**
+   **Create Management Agent page**
 
-    ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
+   ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
 
 6. On the ILM Identity Manager Console on the **Create Management Agent** pane, open the **Properties** for the Source Forest Management Agent. Select the **Configure Directory Partitions** wizard, and then click **Containers** to select the container that will contain the mailboxes you will be moving to the target forest. Clear the selections for all other containers, that is, scope the management agent to only manage this one container. Similarly, for the target forest MA, select the container to which mail-enabled users will be provisioned, that is, the TargetOU specified in step 2.
 
-    > [!NOTE]
-    > If you're using this sample together with ILM GalSync 2007, exclude both of these containers from the list of containers managed by GalSync 2007.
+   > [!NOTE]
+   > If you're using this sample together with ILM GalSync 2007, exclude both of these containers from the list of containers managed by GalSync 2007.
 
 7. Perform an initial Full Import (stage only) on the target MAs so that ILM can discover the TargetOU specified in step 2.
 
@@ -102,6 +100,4 @@ Now that you've installed the sample code, use the following procedure to create
 
 ## How do you know this worked?
 
-To verify that you have successfully completed your migration, do the following:
-
-  - From the target forest, verify that the users that you moved from the source forest are present in the target forest.
+From the target forest, verify that the users that you moved from the source forest are present in the target forest.

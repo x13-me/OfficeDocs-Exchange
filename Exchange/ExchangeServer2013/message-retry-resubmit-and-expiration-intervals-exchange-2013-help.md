@@ -66,7 +66,7 @@ The configuration options that are available for message retry intervals are des
 <tr class="odd">
 <td><p><em>TransientFailureRetryCount</em></p></td>
 <td><p>6</p></td>
-<td><p><strong>Set-TransportService</strong> cmdlet or server properties in the Exchange Administration Center (EAC)</p></td>
+<td><p><strong>Set-TransportService</strong> cmdlet or server properties in the Exchange admin center (EAC)</p></td>
 <td><p>This parameter specifies the number of connection attempts that are tried after the connection attempts that are controlled by the <em>QueueGlitchRetryCount</em> and <em>QueueGlitchRetryInterval</em> keys have failed. Connection problems that exhaust the <em>QueueGlitchRetryCount</em> and <em>QueueGlitchRetryInterval</em> keys can be caused by server restarts or cached DNS lookup failures.</p>
 <p>Valid input for this parameter is an integer from 0 through 15. If you set this parameter to 0, the next connection attempt is controlled by the <em>OutboundConnectionFailureRetryInterval</em> parameter.</p></td>
 </tr>

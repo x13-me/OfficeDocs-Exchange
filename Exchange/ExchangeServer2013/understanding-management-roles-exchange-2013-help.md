@@ -329,7 +329,7 @@ The following table lists all of the administrative management role types in Exc
 <tr class="even">
 <td><p><code>ExchangeVirtualDirectories</code></p></td>
 <td><p><a href="exchange-virtual-directories-role-exchange-2013-help.md">Exchange Virtual Directories role</a></p></td>
-<td><p>This role type is associated with roles that enable administrators to manage Outlook Web App, Microsoft ActiveSync, offline address book (OAB), Autodiscover, Windows PowerShell, and Exchange Administration Center virtual directories on individual servers.</p></td>
+<td><p>This role type is associated with roles that enable administrators to manage Outlook Web App, Microsoft ActiveSync, offline address book (OAB), Autodiscover, Windows PowerShell, and Exchange admin center virtual directories on individual servers.</p></td>
 <td><p>Server</p></td>
 </tr>
 <tr class="odd">
@@ -461,7 +461,7 @@ The following table lists all of the administrative management role types in Exc
 <li><p>The URL for the managed folder home page.</p></li>
 <li><p>The Microsoft Exchange recipient SMTP address and alternate email addresses.</p></li>
 <li><p>The resource mailbox property schema configuration.</p></li>
-<li><p>The Help URLs for the Exchange Administration Center and Outlook Web App.</p></li>
+<li><p>The Help URLs for the Exchange admin center and Outlook Web App.</p></li>
 </ul>
 <p>This role type doesn't include the permissions included in the <code>OrganizationClientAccess</code> or <code>OrganizationTransportSettings</code> role types.</p></td>
 <td><p>Organization</p></td>

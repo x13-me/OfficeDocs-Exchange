@@ -219,8 +219,6 @@ For the following procedures, Contoso mailboxes have a managed folder mailbox po
 </tbody>
 </table>
 
-## How do you do this?
-
 ## Step 1: Create retention tags for the migration
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.

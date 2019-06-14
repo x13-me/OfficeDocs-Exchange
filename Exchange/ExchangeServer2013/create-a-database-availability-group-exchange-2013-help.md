@@ -22,30 +22,30 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute
+- Estimated time to complete: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - When creating a DAG with Mailbox servers running Windows Server 2012, you must pre-stage the cluster name object (CNO) before adding members to the DAG. If you are creating a DAG without an administrative access point with Mailbox servers running Windows Server 2012 R2, then you do not need to pre-stage a CNO for the DAG. For detailed steps, see [Pre-stage the cluster name object for a database availability group](pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md).
+- When creating a DAG with Mailbox servers running Windows Server 2012, you must pre-stage the cluster name object (CNO) before adding members to the DAG. If you are creating a DAG without an administrative access point with Mailbox servers running Windows Server 2012 R2, then you do not need to pre-stage a CNO for the DAG. For detailed steps, see [Pre-stage the cluster name object for a database availability group](pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md).
 
-  - When creating a DAG, you provide a unique name for the DAG of up to 15 characters. In addition to providing a name for the DAG, you must also assign one or more IP addresses (either IPv4 or both IPv4 and IPv6) to the DAG, unless you are creating a Windows Server 2012 R2 DAG without an administrative access point and you are not assigning any IP addresses to the DAG. Otherwise, the IP addresses you assign must be on each subnet intended for the MAPI network and must be available for use. If you specify one or more IPv4 addresses and your system is configured to use IPv6, the task will also attempt to automatically assign the DAG one or more IPv6 addresses.
+- When creating a DAG, you provide a unique name for the DAG of up to 15 characters. In addition to providing a name for the DAG, you must also assign one or more IP addresses (either IPv4 or both IPv4 and IPv6) to the DAG, unless you are creating a Windows Server 2012 R2 DAG without an administrative access point and you are not assigning any IP addresses to the DAG. Otherwise, the IP addresses you assign must be on each subnet intended for the MAPI network and must be available for use. If you specify one or more IPv4 addresses and your system is configured to use IPv6, the task will also attempt to automatically assign the DAG one or more IPv6 addresses.
 
-  - When creating a DAG, you can optionally specify a witness server and witness directory. If you specify a witness server, we recommend that you use a Client Access server that doesn't have the Mailbox server role installed. This allows an Exchange administrator to be aware of the availability of the witness, and it ensures that all of the necessary security permissions needed for using the witness server are in place.
+- When creating a DAG, you can optionally specify a witness server and witness directory. If you specify a witness server, we recommend that you use a Client Access server that doesn't have the Mailbox server role installed. This allows an Exchange administrator to be aware of the availability of the witness, and it ensures that all of the necessary security permissions needed for using the witness server are in place.
 
-    The following combinations of options and behaviors are available:
+  The following combinations of options and behaviors are available:
 
-      - You can specify only a name for the DAG and leave the **Witness server** and **Witness directory** fields empty. In this scenario, the task will search for a Client Access server that doesn't have the Mailbox server role installed. It will automatically create the default witness directory and share on that Client Access server and configure the DAG to use that server as its witness server.
+  - You can specify only a name for the DAG and leave the **Witness server** and **Witness directory** fields empty. In this scenario, the task will search for a Client Access server that doesn't have the Mailbox server role installed. It will automatically create the default witness directory and share on that Client Access server and configure the DAG to use that server as its witness server.
 
-      - You can specify a name for the DAG, the witness server that you want to use, and the directory you want created and shared on the witness server.
+  - You can specify a name for the DAG, the witness server that you want to use, and the directory you want created and shared on the witness server.
 
-      - You can specify a name for the DAG and the witness server that you want to use, and leave the **Witness directory** field empty. In this scenario, the task will create the default witness directory on the specified witness server.
+  - You can specify a name for the DAG and the witness server that you want to use, and leave the **Witness directory** field empty. In this scenario, the task will create the default witness directory on the specified witness server.
 
-      - You can specify a name for the DAG, leave the **Witness server** field empty, and specify the directory you want created and shared on the witness server. In this scenario, the wizard will search for a Client Access server that doesn't have the Mailbox server role installed, and it will automatically create the specified witness directory on that server, share the directory, and configure the DAG to use that Client Access server as its witness server.
+  - You can specify a name for the DAG, leave the **Witness server** field empty, and specify the directory you want created and shared on the witness server. In this scenario, the wizard will search for a Client Access server that doesn't have the Mailbox server role installed, and it will automatically create the specified witness directory on that server, share the directory, and configure the DAG to use that Client Access server as its witness server.
 
     > [!IMPORTANT]
     > If the witness server you specify isn't an Exchange 2013 or Exchange 2010 server, you must add the Exchange Trusted Subsystem universal security group to the local Administrators group on the witness server. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed. If the proper permissions aren't configured, the following error is returned:<BR><CODE>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API "AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied."</CODE>
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -58,16 +58,16 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 3. On the **new database availability group** page, provide the following information for the DAG:
 
-      - **Database availability group name**: Use this field to type a valid and unique name for the DAG of up to 15 characters. The name is equivalent to a computer name, and a corresponding CNO will be created in Active Directory with that name. This name will be both the name of the DAG and the name of the underlying cluster.
+   - **Database availability group name**: Use this field to type a valid and unique name for the DAG of up to 15 characters. The name is equivalent to a computer name, and a corresponding CNO will be created in Active Directory with that name. This name will be both the name of the DAG and the name of the underlying cluster.
 
-      - **Witness server**: Use this field to specify a witness server for the DAG. If you leave this field blank, the system will attempt to automatically select a Client Access server in the local Active Directory site that isn't installed on a computer with the Mailbox server to be used as the witness server.
+   - **Witness server**: Use this field to specify a witness server for the DAG. If you leave this field blank, the system will attempt to automatically select a Client Access server in the local Active Directory site that isn't installed on a computer with the Mailbox server to be used as the witness server.
 
-        > [!NOTE]
-        > If you specify a witness server, you must use either a host name or a fully qualified domain name (FQDN). Using an IP address or a wildcard name isn't supported. In addition, the witness server can't be a member of the DAG.
+     > [!NOTE]
+     > If you specify a witness server, you must use either a host name or a fully qualified domain name (FQDN). Using an IP address or a wildcard name isn't supported. In addition, the witness server can't be a member of the DAG.
 
-      - **Witness directory**: Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) will be created on the witness server.
+   - **Witness directory**: Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) will be created on the witness server.
 
-      - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
+   - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
 
 4. Click **Save** to create the DAG.
 
@@ -107,13 +107,13 @@ This example creates the DAG DAG5 that will not have an administrative access po
 
 To verify that you've successfully created a DAG, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Database Availability Groups**. The newly created DAG is displayed.
+- In the EAC, navigate to **Servers** \> **Database Availability Groups**. The newly created DAG is displayed.
 
-  - In the Shell, run the following command to verify the DAG was created and to display DAG property information.
+- In the Shell, run the following command to verify the DAG was created and to display DAG property information.
 
-    ```powershell
-    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-    ```
+  ```powershell
+  Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+  ```
 
 ## For more information
 

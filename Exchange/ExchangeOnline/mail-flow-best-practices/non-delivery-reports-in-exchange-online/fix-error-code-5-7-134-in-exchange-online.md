@@ -65,7 +65,7 @@ To configure the mailbox's allowed senders list, open the EAC do the following s
 
 1. In the EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-   ![Find mailboxes in Exchange Admin Center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
+   ![Find mailboxes in Exchange admin center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
 
 2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
 

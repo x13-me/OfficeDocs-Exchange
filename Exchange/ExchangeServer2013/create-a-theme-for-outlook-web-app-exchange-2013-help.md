@@ -57,8 +57,6 @@ After you create a theme, you may also want to [Customize the Outlook Web App si
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create a new Outlook Web App theme
 
 To start, you'll create a folder for a new theme, and then copy the files from an existing theme into the new folder.
@@ -101,7 +99,7 @@ Now that you've copied over the files and have named your theme, you can customi
 
 - CSS files, which define fonts and colors.
 
-## Image files
+### Image files
 
 Theme images are stored in two folders in \\themes*\\\<theme name\>*\\images\\. The \\images\\0 folder contains images that will be used in left-to-right languages (like English), and languages that are read from right to left will use the images in the \\images\\rtl folder.
 
@@ -128,7 +126,7 @@ To customize the theme, you can use an image editing tool to open and modify the
 
   This image will be used to represent the theme in the **Change theme** panel in the Settings menu in Outlook Web App.
 
-## Colors and fonts
+### Colors and fonts
 
 Cascading style sheet (.css) files define the colors and fonts used in a theme and are stored in multiple folders under \\themes\\*\<theme name\>*. The \\*\<theme name\>*\\0 folder contains .css files that will be used in left-to-right languages (like English), and languages that are read from right to left will use the .css files in the \\*\<theme name\>*\\rtl folder. There are also language-specific folders, (for example, \\ja, \\ko, \\zhs, and \\zht) that contain .css files to be used with those languages.
 
@@ -150,7 +148,7 @@ Setting a new default theme will only affect users who haven't changed their the
 
 To force all users to use the default theme, you must disable theme selection in addition to setting a default theme.
 
-## Use the Shell to set the default theme for Outlook Web App
+### Use the Shell to set the default theme for Outlook Web App
 
 This example sets the default theme for Outlook Web App, where the server name is `fourthcoffee`, the virtual directory name is `owa`, the website name is `default web site`, and the theme is in the folder named `Custom`.
 
@@ -160,7 +158,7 @@ set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -default
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
 
-## Use the Shell to disable theme selection for Outlook Web App
+### Use the Shell to disable theme selection for Outlook Web App
 
 This example disables theme selection in Outlook Web App, where the server name is `fourthcoffee`, the virtual directory name is `owa`, and the website name is `default web site`.
 

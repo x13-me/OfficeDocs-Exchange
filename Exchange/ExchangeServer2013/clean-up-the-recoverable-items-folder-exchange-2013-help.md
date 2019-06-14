@@ -50,7 +50,7 @@ To learn more about the Recoverable Items folder, see [Recoverable Items folder]
 
 - Because incorrectly cleaning up the Recoverable Items folder can result in data loss, it's important that you're familiar with the Recoverable Items folder and the impact of removing its contents. Before performing this procedure, we recommend that you review the information in [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
-- You can't use the Exchange Admin Center (EAC) to perform these procedures. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
