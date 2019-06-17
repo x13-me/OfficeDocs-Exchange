@@ -43,8 +43,8 @@ For more information about how admins can recover deleted items in Exchange Onli
 
 - [Change how long permanently deleted items are kept for an Exchange Online mailbox](recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md).
 
->**[!NOTE]**
->Point in time restoration of mailbox items is out of scope for the Exchange Online service. However, Exchange Online offers great retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
+> [!NOTE]
+> Point in time restoration of mailbox items is out of scope for the Exchange Online service. However, Exchange Online offers great retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
 >
 > - [High Availability and Business Continuity](https://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
 > - [Exchange Online Service Description](https://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
