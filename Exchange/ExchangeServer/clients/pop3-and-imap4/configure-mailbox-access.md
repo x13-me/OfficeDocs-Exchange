@@ -66,7 +66,7 @@ For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Serve
 
 To enable or disable POP3 or IMAP4 access to a single mailbox, first connect to Exchange Online powershell using [Connect to Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-1). Then use the following syntax:
 
-```Powershell
+```PowerShell
 Set-CasMailbox -Identity <MailboxIdentity> -PopEnabled <$true | $false> -ImapEnabled <$true | $false>
 ```
 
