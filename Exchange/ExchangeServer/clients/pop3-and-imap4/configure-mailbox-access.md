@@ -215,7 +215,7 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run the following command:
 
-  ```Powershell
+  ```PowerShell
   Get-CasMailbox - Identity <MailboxIdentity>
   ```
 
