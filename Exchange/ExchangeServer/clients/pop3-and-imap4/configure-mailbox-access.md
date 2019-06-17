@@ -179,7 +179,7 @@ After you change the POP3 or IMAP4 access settings on a mailbox, you need to res
 ### Use the Exchange Management Shell to restart the POP3 or IMAP4 services
 
 >[!IMPORTANT]
->Before working with Exchange Management Shell it's required to have a connection with the Exchange Online Service from powershell, please use this steps to [Connect to Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-1).
+>Before working with Exchange Management Shell, it is required to have a connection with the Exchange Online Service from PowerShell. Use this link to [Connect to Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-1).
 >
 To restart the POP3 services, run the following command:
 
