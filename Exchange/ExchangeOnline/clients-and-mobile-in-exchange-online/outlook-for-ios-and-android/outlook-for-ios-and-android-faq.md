@@ -233,7 +233,7 @@ Yes, Outlook for iOS and Android supports contact management. Within the app, us
 
 For information on consumer accounts, see Outlook's in-app support FAQ on [People](https://acompli.helpshift.com/a/outlook-mobile/?l=en&s=people).
 
-By enabling contact synchronization between Outlook and the native contacts app, users receive the rich experience that the native operating system provides (e.g., inbound and outbound caller-ID, text messaging name resolution, etc.). Only Outlook for iOS should be used for managing contact data and not the native iOS Contacts app. With Outlook for Android, users can utilize either the native Contacts app or Outlook for managing contact data, as contact changes are synchronized bi-directionally.
+By enabling contact synchronization between Outlook and the native contacts app, users receive the rich experience that the native operating system provides (e.g. inbound and outbound caller-ID, text messaging name resolution, etc.). Only Outlook for iOS should be used for managing contact data and not the native iOS Contacts app. With Outlook for Android, users can utilize either the native Contacts app or Outlook for managing contact data, as contact changes are synchronized bi-directionally.
 
 > [!NOTE]
 > In order to manage contacts (add/edit/delete) in Outlook for Android, contact sync must be enabled. This is because Outlook for Android delegates CRUD operations to the native Contacts app. 
