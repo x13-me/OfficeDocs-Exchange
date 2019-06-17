@@ -183,7 +183,7 @@ After you change the POP3 or IMAP4 access settings on a mailbox, you need to res
 >
 To restart the POP3 services, run the following command:
 
-```Powershell
+```PowerShell
 Restart-Service MSExchangePOP3; Restart-Service MSExchangePOP3BE
 ```
 
