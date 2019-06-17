@@ -180,7 +180,7 @@ A shared mailbox is a special mailbox type that is created using the -Shared par
 
 ### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
 
-Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (e.g., FaceTime), etc. Integration with the operating system, as well as, contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
+Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (e.g. FaceTime), etc. Integration with the operating system, and contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
 
 <table>
 <thead>
