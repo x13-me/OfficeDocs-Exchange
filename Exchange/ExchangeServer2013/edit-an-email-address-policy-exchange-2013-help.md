@@ -26,7 +26,7 @@ For additional management tasks related to email address policies, see [Email ad
 
 - Estimated time to complete: 5 minutes.
 
-- You can't use the Exchange Administration Center (EAC) to edit an email address policy if the policy was created by using the Shell.
+- You can't use the Exchange admin center (EAC) to edit an email address policy if the policy was created by using the Shell.
 
 - If the email address policy was created using a recipient filter, you must use the Shell to edit the email address policy. For more information, see [Create an email address policy by using recipient filters](create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md).
 

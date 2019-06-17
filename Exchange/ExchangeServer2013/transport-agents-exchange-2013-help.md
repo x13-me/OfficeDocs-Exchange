@@ -18,47 +18,35 @@ _**Applies to:** Exchange Server 2013_
 
 Transport agents let you install custom software that is created by Microsoft, by third-party vendors, or by your organization, on an Exchange server. This software can then process email messages that pass through the transport pipeline. In Microsoft Exchange Server 2013, the transport pipeline is made of the following processes:
 
-  - The Front End Transport service on Client Access servers
+- The Front End Transport service on Client Access servers
 
-  - The Transport service on Mailbox servers
+- The Transport service on Mailbox servers
 
-  - The Mailbox Transport service on Mailbox servers
+- The Mailbox Transport service on Mailbox servers
 
-  - The Transport service on Edge Transport servers
+- The Transport service on Edge Transport servers
 
 For more information about the transport pipeline, see [Mail flow](mail-flow-exchange-2013-help.md)
 
 Like the previous version of Exchange, Exchange 2013 transport provides extensibility through the Microsoft Exchange Server 2013 Transport Agents SDK. The Exchange 2013 version of the SDK is based on the Microsoft .NET Framework version 4.0 and allows third parties to implement the following predefined classes:
 
-  - **SmtpReceiveAgent**
+- **SmtpReceiveAgent**
 
-  - **RoutingAgent**
+- **RoutingAgent**
 
-  - **DeliveryAgent**
+- **DeliveryAgent**
 
 When complied against libraries in the SDK, the resulting assemblies are registered with Exchange 2013, which loads the agents and invokes their event handlers during specific stages of the SMTP sessions or message processing. These stages, or events, are part of the agent definitions. The agent registration information is stored in an XML configuration file.
 
 The following list explains the requirements for using transport agents in Exchange 2013.
 
-  - The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK, and therefore any third party transport agents written for the Hub Transport or Edge Transport server roles in Microsoft Exchange Server 2010 should work in the Transport service in Exchange 2013.
+- The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK, and therefore any third party transport agents written for the Hub Transport or Edge Transport server roles in Microsoft Exchange Server 2010 should work in the Transport service in Exchange 2013.
 
-  - The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third party agents can't operate on the **OnEndOfData** SMTP event.
+- The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third party agents can't operate on the **OnEndOfData** SMTP event.
 
-  - The Mailbox Transport service doesn't support the SDK at all, so you can't use any third party agents in the Mailbox Transport service.
+- The Mailbox Transport service doesn't support the SDK at all, so you can't use any third party agents in the Mailbox Transport service.
 
 Support for legacy transport agents based on versions of the .NET Framework prior to version 4.0 isn't enabled by default, but you can enable it. For instructions, see [Enable support for legacy transport agents](enable-support-for-legacy-transport-agents-exchange-2013-help.md).
-
-**Contents**
-
-Updates to transport agent management
-
-Transport agents and SMTP events
-
-Priority of transport agents
-
-Built-in transport agents
-
-Troubleshoot transport agents
 
 ## Updates to transport agent management
 
@@ -239,9 +227,9 @@ There are two factors that determine the order that transport agents act on mess
 
 For example, suppose you configured the following transport agents:
 
-  - Transport Agent A with a priority of 1 and Transport Agent C with a priority of 2 are registered to the **OnEndOfHeaders** SMTP event.
+- Transport Agent A with a priority of 1 and Transport Agent C with a priority of 2 are registered to the **OnEndOfHeaders** SMTP event.
 
-  - Transport Agent B with a priority of 4 is registered to the **OnMailCommand** SMTP event.
+- Transport Agent B with a priority of 4 is registered to the **OnMailCommand** SMTP event.
 
 Transport Agent B is applied to messages first because the **OnMailCommand** event encounters messages before the **OnEndOfHeaders** event. When messages reach the **OnEndOfHeaders** event, Transport Agent A is applied before Transport Agent C because Transport Agent A has a higher priority (lower integer value) than Transport Agent C.
 
@@ -417,6 +405,6 @@ The more interesting built-in transport agents on Edge Transport servers are des
 
 To help you troubleshoot issues with transport agents, you can use the following features:
 
-  - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md).
+- **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md).
 
-  - **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](pipeline-tracing-exchange-2013-help.md).
+- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](pipeline-tracing-exchange-2013-help.md).

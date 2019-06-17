@@ -26,7 +26,7 @@ Use [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) to search a
 
 - Exchange 2013 Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](create-a-discovery-mailbox-exchange-2013-help.md).
 
-- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange Admin Center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
+- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
 
   - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
 

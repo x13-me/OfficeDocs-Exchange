@@ -24,7 +24,7 @@ DLP policy templates are typically influenced from multiple sources such as serv
 
 ![Factors that influence policy templates](images/ITPro_MRM_DlpPolicy_TempInputs.gif)
 
-Simple management operations are available for DLP policy templates though both the Exchange Management Shell and Internet-based interfaces, such as the Exchange Administration Center, which include Import, Export, Deletion and Query capabilities. A DLP policy is created by referencing a DLP policy template as part of the creation process. These referenced DLP policy templates may be references to ones installed in the system, which are stored in active directory domain services, or be provided as input directly from externally supplied policies.
+Simple management operations are available for DLP policy templates though both the Exchange Management Shell and Internet-based interfaces, such as the Exchange admin center, which include Import, Export, Deletion and Query capabilities. A DLP policy is created by referencing a DLP policy template as part of the creation process. These referenced DLP policy templates may be references to ones installed in the system, which are stored in active directory domain services, or be provided as input directly from externally supplied policies.
 
 DLP policy templates are represented as XML documents. A single XML schema is used for policies provided within Exchange and externally also. The conceptual structure of the XML document is represented in the table below, which shows the major elements. The set of policy component definitions help you achieve a specific policy objective such as a regulation or business need.
 
@@ -71,7 +71,7 @@ DLP Policy templates are expressed as XML documents which adhere to the followin
 </dlpPolicyTemplates>
 ```
 
-If a parameter you include in your XML file for any element includes a space, the parameter has to be surrounded by double quotes or it will not work properly. In the example below, the parameter that follows `-SentToScope` is acceptable and does not include double quotes because it is one continuous string of characters without a space. However, the parameter provided for - `Comments` will not appear in the Exchange Administration Center because there are no double quotes and it includes spaces.
+If a parameter you include in your XML file for any element includes a space, the parameter has to be surrounded by double quotes or it will not work properly. In the example below, the parameter that follows `-SentToScope` is acceptable and does not include double quotes because it is one continuous string of characters without a space. However, the parameter provided for - `Comments` will not appear in the Exchange admin center because there are no double quotes and it includes spaces.
 
 ```powershell
 <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>

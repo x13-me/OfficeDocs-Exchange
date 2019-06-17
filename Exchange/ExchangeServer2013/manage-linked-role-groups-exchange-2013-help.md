@@ -32,7 +32,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-- You can't use the Exchange Administration Center (EAC) to create or configure linked role groups. You must use the Exchange Management Shell.
+- You can't use the Exchange admin center (EAC) to create or configure linked role groups. You must use the Exchange Management Shell.
 
 - At a minimum, configuring a linked role group requires that a one-way trust is established between the resource Active Directory forest in which the linked role group will reside, and the foreign Active Directory forest where the users or USGs reside. The resource forest must trust the foreign forest.
 

@@ -22,13 +22,13 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes
+- Estimated time to complete: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Queues" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Queues" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic don't apply to Edge Transport servers. When you use Queue Viewer on an Edge Transport server, you can't change the focus of the tool.
+- The procedures in this topic don't apply to Edge Transport servers. When you use Queue Viewer on an Edge Transport server, you can't change the focus of the tool.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -45,9 +45,9 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
 5. In the **Select Exchange Server** window, select a Mailbox server. To search for a Mailbox server, use one of the following procedures:
 
-      - Enter the exact server name or the first few letters of the server name in the **Search** field, and then click **Find Now**. Select a server from the result pane.
+   - Enter the exact server name or the first few letters of the server name in the **Search** field, and then click **Find Now**. Select a server from the result pane.
 
-      - Select the **View** menu, and then click **Show Filter**. In the **Name** column or **Version** column, click the filter icon, and then select the filter operator. Type the filter criteria in the **Enter text here** field. Press ENTER. Select a server from the result pane.
+   - Select the **View** menu, and then click **Show Filter**. In the **Name** column or **Version** column, click the filter icon, and then select the filter operator. Type the filter criteria in the **Enter text here** field. Press ENTER. Select a server from the result pane.
 
 6. Click **OK** to close the **Select Exchange Server** window.
 
@@ -65,9 +65,9 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
 4. In the **Queue Viewer - \<server name\> Properties** dialog box, select one of the following options:
 
-      - **Connect to the automatically selected server**: Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
+   - **Connect to the automatically selected server**: Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
 
-      - **Specify a server to connect to**: Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
+   - **Specify a server to connect to**: Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
 
 ## How do you know this worked?
 

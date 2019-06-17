@@ -24,11 +24,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 Permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 Permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -53,29 +53,29 @@ To start the POP3 services:
 
 1. On the computer running the Client Access server role, from the Shell, run the following command to start the Microsoft Exchange POP3 service.
 
-    ```powershell
-    Start-service MSExchangePOP3
-    ```
+   ```powershell
+   Start-service MSExchangePOP3
+   ```
 
 2. On the computer running the Mailbox server role, from the Shell, run the following command to start the Microsoft Exchange POP3 Backend service.
 
-    ```powershell
-    Start-service MSExchangePOP3BE
-    ```
+   ```powershell
+   Start-service MSExchangePOP3BE
+   ```
 
 To stop the POP3 services:
 
 1. On the computer running the Client Access server role, from the Shell, run the following command to stop the Microsoft Exchange POP3 service.
 
-    ```powershell
-    Stop-service MSExchangePOP3
-    ```
+   ```powershell
+   Stop-service MSExchangePOP3
+   ```
 
 2. On the computer running the Mailbox server role, from the Shell, run the following command to stop the Microsoft Exchange POP3 Backend service.
 
-    ```powershell
-    Stop-service MSExchangePOP3BE
-    ```
+   ```powershell
+   Stop-service MSExchangePOP3BE
+   ```
 
 ## Use net start to start or stop the POP3 services
 
@@ -83,29 +83,29 @@ To start the POP3 services:
 
 1. On the computer running the Client Access server role, at the command prompt, run the following command to start the Microsoft Exchange POP3 service.
 
-    ```powershell
-    Net Start msExchangePOP3
-    ```
+   ```powershell
+   Net Start msExchangePOP3
+   ```
 
 2. On the computer running the Mailbox server role, at the command prompt, run the following command to start the Microsoft Exchange POP3 Backend service.
 
-    ```powershell
-    Net Start msExchangePOP3BE
-    ```
+   ```powershell
+   Net Start msExchangePOP3BE
+   ```
 
 To stop the POP3 services:
 
 1. On the computer running the Client Access server role, at the command prompt, run the following command to stop the Microsoft Exchange POP3 service.
 
-    ```powershell
-    Net Stop MSExchangePOP3
-    ```
+   ```powershell
+   Net Stop MSExchangePOP3
+   ```
 
 2. On the computer running the Mailbox server role, at the command prompt, run the following command to stop the Microsoft Exchange POP3 Backend service.
 
-    ```powershell
-    Net Stop MSExchangePOP3BE
-    ```
+   ```powershell
+   Net Stop MSExchangePOP3BE
+   ```
 
 ## How do you know this worked?
 

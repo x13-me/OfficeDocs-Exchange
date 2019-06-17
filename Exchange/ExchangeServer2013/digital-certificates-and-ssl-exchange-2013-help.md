@@ -91,7 +91,7 @@ All the following Exchange services use the same certificate on a given Exchange
 
 - Outlook Web App
 
-- Exchange Administration Center (EAC)
+- Exchange admin center (EAC)
 
 - Exchange Web Services
 
@@ -131,7 +131,7 @@ Split DNS is usually unnecessary in a small Exchange deployment because users ca
 
 ## Remote Windows PowerShell
 
-Kerberos authentication and Kerberos encryption are used for remote Windows PowerShell access, from both the Exchange Administration Center (EAC) and the Exchange Management Shell. Therefore, you won't have to configure your SSL certificates for use with remote Windows PowerShell.
+Kerberos authentication and Kerberos encryption are used for remote Windows PowerShell access, from both the Exchange admin center (EAC) and the Exchange Management Shell. Therefore, you won't have to configure your SSL certificates for use with remote Windows PowerShell.
 
 ## Digital certificates best practices
 
@@ -161,7 +161,7 @@ Depending on how you configure the service names in your Exchange deployment, yo
 
 ## Best practice: Use the Exchange certificate wizard to request certificates
 
-There are many services in Exchange that use certificates. A common error when requesting certificates is to make the request without including the correct set of service names. The certificate wizard in the Exchange Administration Center will help you include the correct list of names in the certificate request. The wizard lets you specify which services the certificate has to work with and, based on the services selected, includes the names that you must have in the certificate so that it can be used with those services. Run the certificate wizard when you've deployed your initial set of Exchange 2013 servers and determined which host names to use for the different services for your deployment. Ideally you'll only have to run the certificate wizard one time for each Active Directory site where you deploy Exchange.
+There are many services in Exchange that use certificates. A common error when requesting certificates is to make the request without including the correct set of service names. The certificate wizard in the Exchange admin center will help you include the correct list of names in the certificate request. The wizard lets you specify which services the certificate has to work with and, based on the services selected, includes the names that you must have in the certificate so that it can be used with those services. Run the certificate wizard when you've deployed your initial set of Exchange 2013 servers and determined which host names to use for the different services for your deployment. Ideally you'll only have to run the certificate wizard one time for each Active Directory site where you deploy Exchange.
 
 Instead of worrying about forgetting a host name in the SAN list of the certificate that you purchase, you can use a certification authority that offers, at no charge, a grace period during which you can return a certificate and request the same new certificate with a few additional host names.
 

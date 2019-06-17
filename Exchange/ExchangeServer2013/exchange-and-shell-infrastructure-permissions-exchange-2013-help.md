@@ -58,11 +58,11 @@ Users who are assigned the View-Only Management role group can view the configur
 <p><a href="records-management-exchange-2013-help.md">Records Management</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Exchange Administration Center configuration settings</p></td>
+<td><p>Exchange admin center configuration settings</p></td>
 <td><p><a href="view-only-organization-management-exchange-2013-help.md">View-only Organization Management</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Exchange Administration Center connectivity</p></td>
+<td><p>Exchange admin center connectivity</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p>
 <p><a href="server-management-exchange-2013-help.md">Server Management</a></p></td>
 </tr>

@@ -18,23 +18,13 @@ _**Applies to:** Exchange Server 2013_
 
 You can specify whether Transport Neutral Encapsulation Format (TNEF) should be preserved or removed from messages that leave the Exchange organization. TNEF, also known as Outlook Rich Text Format or Exchange Rich Text Format, is a Microsoft-specific format for encapsulating MAPI message properties. All versions of Microsoft Outlook fully understand TNEF. Outlook Web App translates TNEF into MAPI and displays the formatted messages. However, other email clients that don't understand TNEF typically display TNEF formatted messages as plain text messages with Winmail.dat or Win.dat attachments.
 
-**Contents**
-
-TNEF conversion options for remote domains
-
-TNEF conversion options for mail users and mail contacts
-
-TNEF conversion options in Outlook
-
-Order of precedence for TNEF conversion options
-
 ## TNEF conversion options for remote domains
 
 When you configure TNEF conversion options for a remote domain, those TNEF conversion options are applied to all messages sent to that domain.
 
-  - For Exchange Online Dedicated, you use the Exchange admin center (EAC) to set TNEF conversion options for a remote domain at **Mail flow** \> **Remote domains** \> **Edit** (![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")) \> **Use Exchange rich-text format**.
+- For Exchange Online Dedicated, you use the Exchange admin center (EAC) to set TNEF conversion options for a remote domain at **Mail flow** \> **Remote domains** \> **Edit** (![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")) \> **Use Exchange rich-text format**.
 
-  - For Exchange Online and Exchange 2013, you use the *TnefEnabled* parameter on the **Set-RemoteDomain** cmdlet to set TNEF conversion options for a remote domain.
+- For Exchange Online and Exchange 2013, you use the *TnefEnabled* parameter on the **Set-RemoteDomain** cmdlet to set TNEF conversion options for a remote domain.
 
 For remote domains in your organization, you have the following configuration options for TNEF conversion:
 
@@ -78,11 +68,11 @@ When you configure TNEF conversion options for a mail contact or a mail user, th
 
 For mail users and mail contacts in your organization, you have the following configuration options for TNEF conversion:
 
-  - **Always**: TNEF is used for all messages sent to the recipient. The corresponding value for the *UseMapiRichTextFormat* parameter is `Always`.
+- **Always**: TNEF is used for all messages sent to the recipient. The corresponding value for the *UseMapiRichTextFormat* parameter is `Always`.
 
-  - **Never**: TNEF is never used for any messages sent to the recipient. The corresponding value for the *UseMapiRichTextFormat* parameter is `Never`.
+- **Never**: TNEF is never used for any messages sent to the recipient. The corresponding value for the *UseMapiRichTextFormat* parameter is `Never`.
 
-  - **Use default settings**: TNEF messages aren't specifically allowed or prevented for the mail user or mail contact. Whether TNEF messages are sent to the recipient depends on the specific setting for the corresponding remote domain or the setting specified by the sender in Outlook. The corresponding value for the *UseMapiRichTextFormat* parameter is `UseDefaultSettings`. This is the default setting.
+- **Use default settings**: TNEF messages aren't specifically allowed or prevented for the mail user or mail contact. Whether TNEF messages are sent to the recipient depends on the specific setting for the corresponding remote domain or the setting specified by the sender in Outlook. The corresponding value for the *UseMapiRichTextFormat* parameter is `UseDefaultSettings`. This is the default setting.
 
 ## TNEF conversion options in Outlook
 
@@ -93,31 +83,31 @@ Senders can control the default TNEF message conversion options for TNEF message
 
 You have the following TNEF conversion options in Outlook:
 
-  - **Convert to HTML format**: This is the default option. Any TNEF messages sent to remote recipients are converted to HTML. Any formatting in the message should closely resemble the original message. MIME-encoded HTML messages are supported by many, but not all, email clients.
+- **Convert to HTML format**: This is the default option. Any TNEF messages sent to remote recipients are converted to HTML. Any formatting in the message should closely resemble the original message. MIME-encoded HTML messages are supported by many, but not all, email clients.
 
-  - **Convert to Plain Text format**: Any TNEF messages sent to remote recipients are converted to plain text. Any formatting in the message is lost.
+- **Convert to Plain Text format**: Any TNEF messages sent to remote recipients are converted to plain text. Any formatting in the message is lost.
 
-  - **Send using Outlook Rich Text Format**: Any TNEF messages sent to remote recipients remain TNEF messages.
+- **Send using Outlook Rich Text Format**: Any TNEF messages sent to remote recipients remain TNEF messages.
 
 You can configure these options in the following locations in Outlook:
 
-  - **Outlook 2010 or Outlook 2013**: **File** \> **Options** \> **Mail** \> **Message format**.
+- **Outlook 2010 or Outlook 2013**: **File** \> **Options** \> **Mail** \> **Message format**.
 
-  - **Outlook 2007**: **Tools** \> **Options** \> **Mail Format** \> **Internet Format**.
+- **Outlook 2007**: **Tools** \> **Options** \> **Mail Format** \> **Internet Format**.
 
 Senders can also control the default TNEF message conversion options for TNEF messages sent to specific recipients outside the Exchange organization. These options are called *Internet recipient message format* options. The options only apply to remote recipients stored in your Contacts folder, and not to recipients in the Exchange organization. You have the following TNEF conversion options for remote recipients in your Contacts folder:
 
-  - **Let Outlook decide the best sending format**: This is the default setting. This setting forces Outlook to use the TNEF conversion option that's specified by the default Internet format. The possible values are **Convert to HTML format**, **Convert to Plain Text format**, or **Send using Outlook Rich Text Format**. Therefore, the TNEF message may be left as TNEF, converted to HTML, or converted to plain text. If you want to make sure that the TNEF message remains TNEF for this recipient, you should change this setting from **Let Outlook decide the best sending format** to **Send using Outlook Rich Text format**.
+- **Let Outlook decide the best sending format**: This is the default setting. This setting forces Outlook to use the TNEF conversion option that's specified by the default Internet format. The possible values are **Convert to HTML format**, **Convert to Plain Text format**, or **Send using Outlook Rich Text Format**. Therefore, the TNEF message may be left as TNEF, converted to HTML, or converted to plain text. If you want to make sure that the TNEF message remains TNEF for this recipient, you should change this setting from **Let Outlook decide the best sending format** to **Send using Outlook Rich Text format**.
 
-  - **Send Plain Text only**: Any TNEF messages sent to the recipient are converted to plain text. Any formatting in the message is lost.
+- **Send Plain Text only**: Any TNEF messages sent to the recipient are converted to plain text. Any formatting in the message is lost.
 
-  - **Send using Outlook Rich Text format**: Any TNEF messages sent to remote recipients remain TNEF messages.
+- **Send using Outlook Rich Text format**: Any TNEF messages sent to remote recipients remain TNEF messages.
 
 You can configure these options for a contact in the following locations in Outlook:
 
-  - **Outlook 2010 or Outlook 2013**: Open the contact card, double-click the email address, click the **View more options for interacting with this person** icon, and select **Outlook properties**. In the **E-mail Properties** dialog box, select **Internet format**.
+- **Outlook 2010 or Outlook 2013**: Open the contact card, double-click the email address, click the **View more options for interacting with this person** icon, and select **Outlook properties**. In the **E-mail Properties** dialog box, select **Internet format**.
 
-  - **Outlook 2007**: Open the contact card, double-click the **E-mail** field and select **Internet format**.
+- **Outlook 2007**: Open the contact card, double-click the **E-mail** field and select **Internet format**.
 
 ## Order of precedence for TNEF conversion options
 

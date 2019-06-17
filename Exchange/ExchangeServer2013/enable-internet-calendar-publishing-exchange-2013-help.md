@@ -50,12 +50,10 @@ For additional management tasks related to sharing policies, see [Sharing polici
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Use the Shell to configure the Web proxy URL
 
 > [!NOTE]
-> This step is only necessary if a Web proxy URL already exists in your organization. If not, skip to Step 2.<BR>You can't use the Exchange Administration Center (EAC) to configure the Web proxy URL.
+> This step is only necessary if a Web proxy URL already exists in your organization. If not, skip to Step 2.<BR>You can't use the Exchange admin center (EAC) to configure the Web proxy URL.
 
 This example configures a Web proxy URL on Mailbox server MAIL01.
 
@@ -65,7 +63,7 @@ Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
 
 For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully configured the Web proxy URL, run the following Shell command and verify the *InternetWebProxy* parameter information.
 
@@ -88,7 +86,7 @@ Where the identity `CAS01\owa (Default Web Site)` is both the server name and th
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully enabled the publishing virtual directory, run the following Shell command and verify the *ExternalURL* parameter information.
 
@@ -103,11 +101,11 @@ Get-OwaVirtualDirectory | format-list
 
 You have the choice of creating a sharing policy for Internet calendar publishing (option 1) or configuring the default sharing policy for Internet calendar publishing (option 2). With both options you have the choice of using the EAC or the Shell.
 
-## Option 1: Create a sharing policy specifically for Internet calendar publishing
+### Option 1: Create a sharing policy specifically for Internet calendar publishing
 
 If you want to create a sharing policy specifically for Internet calendar publishing, complete the following steps.
 
-## Use the EAC
+#### Use the EAC
 
 1. Navigate to **Organization**\> **Sharing**.
 
@@ -131,7 +129,7 @@ If you want to create a sharing policy specifically for Internet calendar publis
 
 8. In **Sharing Policy**, click **Save** to create the policy.
 
-## Use the Shell
+#### Use the Shell
 
 This example creates an Internet calendar publishing sharing policy named Internet and configures the policy to share only availability information. The policy is enabled.
 
@@ -153,7 +151,7 @@ Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
 
 For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\)) and [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully created the sharing policy, run the following Shell command to verify the sharing policy information.
 
@@ -161,11 +159,11 @@ To verify that you have successfully created the sharing policy, run the followi
 Get-SharingPolicy <policy name> | format-list
 ```
 
-## Option 2: Configure the default sharing policy for Internet calendar publishing
+### Option 2: Configure the default sharing policy for Internet calendar publishing
 
 If you want to configure the default sharing policy for Internet calendar publishing, complete the following steps.
 
-## Use the EAC
+#### Use the EAC
 
 1. Navigate to **Organization** \> **Sharing**.
 
@@ -187,7 +185,7 @@ If you want to configure the default sharing policy for Internet calendar publis
 
 7. In **Sharing Policy**, click **Save** to save the changes.
 
-## Use the Shell
+#### Use the Shell
 
 This example updates the Default Sharing Policy and configures the policy to share only availability information. The policy is enabled.
 
@@ -197,7 +195,7 @@ Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSh
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully updated the Default Sharing Policy, run the following Shell command to verify the sharing policy information.
 

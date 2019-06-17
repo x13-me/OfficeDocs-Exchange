@@ -37,7 +37,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 ## Use the EAC to create a role group
 
-1. In the Exchange Administration Center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New role group** window, provide a name for the new role group.
 

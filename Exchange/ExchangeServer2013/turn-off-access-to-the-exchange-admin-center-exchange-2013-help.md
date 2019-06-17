@@ -26,13 +26,13 @@ For security purposes, some organizations may want to restrict access to the Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - You can't use the EAC to perform this procedure. You must use the Shell.
+- You can't use the EAC to perform this procedure. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ For security purposes, some organizations may want to restrict access to the Exc
 This example turns off the access to the EAC on server CAS01.
 
 ```powershell
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
 ```
 
 For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://technet.microsoft.com/en-us/library/dd297991\(v=exchg.150\)).

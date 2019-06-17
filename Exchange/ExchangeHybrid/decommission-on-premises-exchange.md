@@ -61,7 +61,7 @@ When directory synchronization is enabled for a tenant and a user is synchronize
 
 ## Can third-party management tools be used?
 
-The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. The Exchange Management Console, the Exchange Administration Center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects. If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
+The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. The Exchange Management Console, the Exchange admin center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects. If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
 
 ## Common scenarios
 
@@ -145,7 +145,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
      **Note**: The _Identity_ parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors.
 
-7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange Administration Center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
+7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange admin center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
 
 8. You can now safely uninstall Exchange from the on-premises servers.
 

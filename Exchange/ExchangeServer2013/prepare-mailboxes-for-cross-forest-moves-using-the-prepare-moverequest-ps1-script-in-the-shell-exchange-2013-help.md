@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 **Summary:** Learn how to manage cross-forest mailbox moves and migrations in Exchange 2013 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.
 
-Microsoft Exchange 2013 supports mailbox moves and migrations using the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox via the Exchange Administration Center (EAC). You can move an Exchange 2010 or Exchange 2013 mailbox from a source Exchange forest to a target Exchange 2013 forest.
+Microsoft Exchange 2013 supports mailbox moves and migrations using the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox via the Exchange admin center (EAC). You can move an Exchange 2010 or Exchange 2013 mailbox from a source Exchange forest to a target Exchange 2013 forest.
 
 To run the **New-MoveRequest** and **New-MigrationBatch** cmdlets, a mail user must exist in the target Exchange forest, and the mail user must have a minimum set of required Active Directory attributes.
 
@@ -30,13 +30,13 @@ Looking for other management tasks related to remote move requests? Check out [M
 
 ## What do you need to know before you begin?
 
-  - Locate the script in the following location: Program Files\\Microsoft\\Exchange Server\\V15\\Scripts
+- Locate the script in the following location: Program Files\\Microsoft\\Exchange Server\\V15\\Scripts
 
-  - To run the sample script, you need the following:
+- To run the sample script, you need the following:
 
-      - An Exchange source forest, where the mailbox currently resides. This can be an Exchange 2010 or Exchange 2013 mailbox.
+  - An Exchange source forest, where the mailbox currently resides. This can be an Exchange 2010 or Exchange 2013 mailbox.
 
-      - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
+  - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -60,7 +60,7 @@ To assign a specific authentication credential for the remote forest domain cont
 2. Run the following commands to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
 
    ```powershell
-   Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
+   Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
    ```
 
 ## Parameter set of the script
@@ -193,7 +193,7 @@ This example supports pipelining if you supply a list of mailbox identities.
 2. Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
 
    ```powershell
-   "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+   "IanP@Contoso.com","JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
    ```
 
 ## Example: Use a .csv file to bulk-create mail-enabled users
@@ -202,13 +202,12 @@ You can generate a .csv file containing a list of mailbox identities from the so
 
 For example, the content of the .csv file can be:
 
+```text
 Identity
-
 Ian@contoso.com
-
 John@contoso.com
-
 Cindy@contoso.com
+```
 
 This example calls a .csv file to bulk create the target mail-enabled users.
 
@@ -232,13 +231,13 @@ This section describes how the script performs in relation to several scenarios 
 
 When the script attempts to create a target mail-enabled user from the source mailbox user, and it detects a duplicate local mail-enabled object, it uses the following logic:
 
-  - If the source mailbox user's **masterAccountSid** attribute equals any target object's **objectSid** or **masterAccountSid** attribute:
+- If the source mailbox user's **masterAccountSid** attribute equals any target object's **objectSid** or **masterAccountSid** attribute:
 
-      - If the target object isn't mail-enabled, the script returns an error because the script doesn't support converting an object that isn't mail-enabled to a mail-enabled user.
+  - If the target object isn't mail-enabled, the script returns an error because the script doesn't support converting an object that isn't mail-enabled to a mail-enabled user.
 
-      - If the target object is mail-enabled, the target object is a duplicate.
+  - If the target object is mail-enabled, the target object is a duplicate.
 
-  - If an address in the source mailbox user's **proxyAddress** properties (smtp/x500 only) equals an address in a target object's **proxyAddress** properties (smtp/x500 only), the target object is a duplicate.
+- If an address in the source mailbox user's **proxyAddress** properties (smtp/x500 only) equals an address in a target object's **proxyAddress** properties (smtp/x500 only), the target object is a duplicate.
 
 The script prompts the user about the duplicate objects.
 
@@ -248,11 +247,11 @@ If the target mail-enabled object is a mail-enabled user or contact, which is mo
 
 If the target object is a mail-enabled user, the script copies the following attributes from the source mailbox user to the target mail-enabled user:
 
-  - **msExchMailboxGUID**
+- **msExchMailboxGUID**
 
-  - **msExchArchiveGUID**
+- **msExchArchiveGUID**
 
-  - **msExchArchiveName**
+- **msExchArchiveName**
 
 If the *LinkedMailUser* parameter is set, the script copies the source **objectSid**/**masterAccountSid** attribute.
 
@@ -260,17 +259,17 @@ If the *LinkedMailUser* parameter is set, the script copies the source **objectS
 
 If the target object is a mail-enabled contact, the script deletes the existing contact and copies all its attributes to a new mail-enabled user. The script also copies the following attributes from the source mailbox user:
 
-  - **msExchMailboxGUID**
+- **msExchMailboxGUID**
 
-  - **msExchArchiveGUID**
+- **msExchArchiveGUID**
 
-  - **msExchArchiveName**
+- **msExchArchiveName**
 
-  - **sAMAccountName**
+- **sAMAccountName**
 
-  - **userAccountControl** (set to 514 //equivalent to 0x202, ACCOUNTDISABLE | NORMAL\_ACCOUNT)
+- **userAccountControl** (set to 514 //equivalent to 0x202, ACCOUNTDISABLE | NORMAL\_ACCOUNT)
 
-  - **userPrincipalName**
+- **userPrincipalName**
 
 If the *LinkedMailUser* parameter is set, the script copies the source **objectSid**/**masterAccountSid** attribute.
 

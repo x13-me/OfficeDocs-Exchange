@@ -44,21 +44,11 @@ To achieve this end result, you need to do the following actions, in the specifi
 
 In addition, you need to do the following actions to ensure all SMTP traffic over the WAN is handled by the dedicated Receive connectors you created:
 
-  - Configure the Active Directory sites that will participate in the non-TLS communication as hub sites to force all message flow through the dedicated Receive connectors (Central Office Site 1 and Branch Office Site 1 in the sample topology).
+- Configure the Active Directory sites that will participate in the non-TLS communication as hub sites to force all message flow through the dedicated Receive connectors (Central Office Site 1 and Branch Office Site 1 in the sample topology).
 
-  - Verify that the Active Directory IP site link costs are configured in a way that ensures the least cost routing path to your remote site (Branch Office 1 in the sample topology) goes through the network link that has the WOC devices. Assign an Exchange-specific cost to the Active Directory site links as necessary.
+- Verify that the Active Directory IP site link costs are configured in a way that ensures the least cost routing path to your remote site (Branch Office 1 in the sample topology) goes through the network link that has the WOC devices. Assign an Exchange-specific cost to the Active Directory site links as necessary.
 
 The following sections provide an overview of these steps. For step-by-step instructions on how to configure your organization for this scenario, see [Disable TLS between Active Directory sites](disable-tls-between-active-directory-sites-exchange-2013-help.md).
-
-**Contents**
-
-Downgrade authentication over TLS-disabled connections
-
-Create and configure dedicated Receive connectors
-
-Configure Hub sites
-
-Configure Exchange-specific Active Directory site link costs
 
 ## Downgrade authentication over TLS-disabled connections
 

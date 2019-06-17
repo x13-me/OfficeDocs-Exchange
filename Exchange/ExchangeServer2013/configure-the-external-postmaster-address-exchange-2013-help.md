@@ -20,21 +20,21 @@ The external postmaster address is used as the sender for system-generated messa
 
 By default, the value of the external postmaster address setting is blank. This default value causes the following behavior in your Exchange organization:
 
-  - The external postmaster address is postmaster@\<*Default accepted domain*\> for all Mailbox servers and subscribed Edge Transport servers.
+- The external postmaster address is postmaster@\<*Default accepted domain*\> for all Mailbox servers and subscribed Edge Transport servers.
 
-  - The external postmaster address is postmaster@\<*Edge Transport server FQDN*\> for all unsubscribed Edge Transport servers.
+- The external postmaster address is postmaster@\<*Edge Transport server FQDN*\> for all unsubscribed Edge Transport servers.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - When you configure a custom external postmaster address, that value applies to all Exchange 2013 Mailbox servers and Exchange 2010 Hub Transport servers in your Exchange organization. However, that value isn't replicated to Edge Transport servers. If you specify a custom value for the external postmaster address, you need to manually configure the external postmaster address value on any Edge Transport servers.
+- When you configure a custom external postmaster address, that value applies to all Exchange 2013 Mailbox servers and Exchange 2010 Hub Transport servers in your Exchange organization. However, that value isn't replicated to Edge Transport servers. If you specify a custom value for the external postmaster address, you need to manually configure the external postmaster address value on any Edge Transport servers.
 
-  - If you have any Exchange 2007 Hub Transport servers or Edge Transport servers in your organization, you need to configure the custom external postmaster address on each one of those servers using the **Set-TransportServer** cmdlet. For more information, see [Managing the External Postmaster Address](https://go.microsoft.com/fwlink/?linkid=279922).
+- If you have any Exchange 2007 Hub Transport servers or Edge Transport servers in your organization, you need to configure the custom external postmaster address on each one of those servers using the **Set-TransportServer** cmdlet. For more information, see [Managing the External Postmaster Address](https://go.microsoft.com/fwlink/?linkid=279922).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to configure the external postmaster address
 

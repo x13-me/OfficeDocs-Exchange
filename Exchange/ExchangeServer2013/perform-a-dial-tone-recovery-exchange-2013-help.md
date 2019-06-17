@@ -129,6 +129,6 @@ For detailed syntax and parameter information, see the following topics:
 
 To verify that you've successfully moved a mailbox, do the following:
 
-- Open the mailbox using Microsoft Office Outlook Web App.
+- Open the mailbox using Outlook Web App.
 
 - Open the mailbox using Microsoft Outlook.

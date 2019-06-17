@@ -24,7 +24,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

@@ -22,19 +22,19 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute
+- Estimated time to complete: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - Members of the super users group are granted an owner use license when they request a license from the AD RMS cluster. This allows them to decrypt all RMS-protected content created by that AD RMS cluster.
+- Members of the super users group are granted an owner use license when they request a license from the AD RMS cluster. This allows them to decrypt all RMS-protected content created by that AD RMS cluster.
 
-  - An AD RMS cluster must be installed in the Active Directory forest.
+- An AD RMS cluster must be installed in the Active Directory forest.
 
-  - The Federated Delivery mailbox has been added to an AD RMS super users group. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
+- The Federated Delivery mailbox has been added to an AD RMS super users group. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-  - You can't use the Exchange Administration Center (EAC) to enable journal report decryption. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to enable journal report decryption. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

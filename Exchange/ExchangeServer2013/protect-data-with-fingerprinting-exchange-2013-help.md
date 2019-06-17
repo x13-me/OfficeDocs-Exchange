@@ -22,7 +22,7 @@ If your organization uses forms to collect sensitive information, users might tr
 
 ![Path to Document Fingerprinting in EAC highlighted](images/EAC_Compliance_Management_DLP.png)
 
-1. In the Exchange Administration Center EAC, go to **compliance management** \> **data loss prevention**.
+1. In the Exchange admin center EAC, go to **compliance management** \> **data loss prevention**.
 
 2. Click **Manage document fingerprints**.
 

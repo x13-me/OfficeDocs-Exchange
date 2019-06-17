@@ -20,33 +20,25 @@ Recipient filtering is an anti-spam feature in Microsoft Exchange Server 2013 th
 
 The Recipient Filter agent blocks messages according to the characteristics of the intended recipient in the organization. The Recipient Filter agent can help you prevent the acceptance of messages in the following scenarios:
 
-  - **Nonexistent recipients**: You can prevent delivery to recipients that aren't in the organization's address book. For example, you may want to stop delivery to frequently misused account names, such as administrator@contoso.com or support@contoso.com.
+- **Nonexistent recipients**: You can prevent delivery to recipients that aren't in the organization's address book. For example, you may want to stop delivery to frequently misused account names, such as administrator@contoso.com or support@contoso.com.
 
-  - **Restricted distribution lists**: You can prevent delivery of Internet mail to distribution lists that should be used only by internal users.
+- **Restricted distribution lists**: You can prevent delivery of Internet mail to distribution lists that should be used only by internal users.
 
-  - **Mailboxes that should never receive messages from the Internet**: You can prevent delivery of Internet mail to a specific mailbox or alias that's typically used inside the organization, such as Helpdesk.
+- **Mailboxes that should never receive messages from the Internet**: You can prevent delivery of Internet mail to a specific mailbox or alias that's typically used inside the organization, such as Helpdesk.
 
 The Recipient Filter agent acts on recipients stored in one or both of the following data sources:
 
-  - **Recipient Block list**: An administrator-defined list of recipients who should never receive messages from the Internet.
+- **Recipient Block list**: An administrator-defined list of recipients who should never receive messages from the Internet.
 
-  - **Recipient Lookup**: Queries Active Directory to verify the recipient exists in the organization. On an Edge Transport server, Recipient Lookup requires access to Active Directory information provided by EdgeSync to the local instance of Active Directory Lightweight Directory Services (AD LDS).
+- **Recipient Lookup**: Queries Active Directory to verify the recipient exists in the organization. On an Edge Transport server, Recipient Lookup requires access to Active Directory information provided by EdgeSync to the local instance of Active Directory Lightweight Directory Services (AD LDS).
 
 When you enable the Recipient Filter agent, one of the following actions is taken on inbound messages according to the characteristics of the recipients. These recipients are indicated by the RCPT TO header.
 
-  - If the inbound message contains a recipient that is on the Recipient Block list, the Exchange server sends a `550 5.1.1 User unknown` SMTP session error to the sending server.
+- If the inbound message contains a recipient that is on the Recipient Block list, the Exchange server sends a `550 5.1.1 User unknown` SMTP session error to the sending server.
 
-  - If the inbound message contains a recipient that doesn't match any recipients in Recipient Lookup, the Exchange server sends a `550 5.1.1 User unknown` SMTP session error to the sending server.
+- If the inbound message contains a recipient that doesn't match any recipients in Recipient Lookup, the Exchange server sends a `550 5.1.1 User unknown` SMTP session error to the sending server.
 
-  - If the recipient isn't on the Recipient Block list and the recipient is in Recipient Lookup, the Exchange server sends a `250 2.1.5 Recipient OK` SMTP response to the sending server, and the next anti-spam agent in the chain processes the message.
-
-**Contents**
-
-Configuring recipient lookup
-
-Tarpitting functionality
-
-Multiple namespaces
+- If the recipient isn't on the Recipient Block list and the recipient is in Recipient Lookup, the Exchange server sends a `250 2.1.5 Recipient OK` SMTP response to the sending server, and the next anti-spam agent in the chain processes the message.
 
 ## Configuring recipient lookup
 

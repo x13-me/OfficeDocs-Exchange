@@ -18,43 +18,31 @@ _**Applies to:** Exchange Server 2013_
 
 Information workers often use e-mail to exchange sensitive information. To help secure this information, organizations can use Information Rights Management (IRM) to apply persistent protection to messaging content. Because mobile devices are increasingly being used to access e-mail, it's important that your mobile device users be able to create and consume IRM-protected content.
 
-**Contents**
-
-Mobile IRM protection in Exchange 2013
-
-Requirements
-
-Security
-
-Enabling IRM in Exchange ActiveSync
-
-Looking for management tasks related to IRM? See [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
-
 ## Mobile IRM protection in Exchange 2013
 
 In Exchange 2013, IRM in Microsoft Exchange ActiveSync allows your users to access rich IRM functionality on any supported Exchange ActiveSync device without having to configure AD RMS permissions or connect the device to a computer and activate it for IRM. Also, the mobile device doesn't need to be running Windows. Exchange ActiveSync is licensed by Microsoft to mobile device manufacturers, original equipment manufacturers (OEMs), and others. For a list of current Exchange ActiveSync licensees, expand the "Exchange ActiveSync Protocol" section on the [Microsoft Technology Licensing](https://go.microsoft.com/fwlink/p/?linkid=198562) page.
 
 Using IRM in Exchange ActiveSync, mobile device users can:
 
-  - Create IRM-protected messages.
+- Create IRM-protected messages.
 
-  - Read IRM-protected messages.
+- Read IRM-protected messages.
 
-  - Reply to and forward IRM-protected messages.
+- Reply to and forward IRM-protected messages.
 
 ## Requirements
 
 The following requirements apply:
 
-  - The Client Access servers in your organization must be running Exchange 2010 SP1 or later.
+- The Client Access servers in your organization must be running Exchange 2010 SP1 or later.
 
-  - An AD RMS server must be deployed in your organization.
+- An AD RMS server must be deployed in your organization.
 
-  - IRM must be enabled for internal messages. This is a prerequisite for all IRM features in Exchange 2010. For details, see [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md).
+- IRM must be enabled for internal messages. This is a prerequisite for all IRM features in Exchange 2010. For details, see [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md).
 
-  - IRM must be enabled in the Exchange ActiveSync mailbox policy. You can enable or disable IRM for different sets of users using different Exchange ActiveSync mailbox policies.
+- IRM must be enabled in the Exchange ActiveSync mailbox policy. You can enable or disable IRM for different sets of users using different Exchange ActiveSync mailbox policies.
 
-  - Devices that support Exchange ActiveSync protocol version 14.1, including Windows phones, can support IRM in Exchange ActiveSync. The device's mobile e-mail application must support the RightsManagementInformation tag defined in Exchange ActiveSync version 14.1.
+- Devices that support Exchange ActiveSync protocol version 14.1, including Windows phones, can support IRM in Exchange ActiveSync. The device's mobile e-mail application must support the RightsManagementInformation tag defined in Exchange ActiveSync version 14.1.
 
 ## Security
 
