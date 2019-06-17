@@ -197,7 +197,7 @@ For more information about this cmdlet, see [Restart-Service](https://go.microso
 
 To verify that you've successfully restarted the POP3 or IMAP4 services, run the following command:
 
-```Powershell
+```PowerShell
 Get-Service MSExchangePOP3; Get-Service MSExchangePOP3BE; Get-Service MSExchangeIMAP4; Get-Service MSExchangeIMAP4BE
 ```
 
