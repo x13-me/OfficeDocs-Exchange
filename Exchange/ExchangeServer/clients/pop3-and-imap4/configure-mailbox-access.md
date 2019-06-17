@@ -72,7 +72,7 @@ Set-CasMailbox -Identity <MailboxIdentity> -PopEnabled <$true | $false> -ImapEna
 
 This example disables POP3 and IMAP4 access to the mailbox named John Smith.
 
-```Powershell
+```PowerShell
 Set-CasMailbox -Identity "John Smith" -PopEnabled $false -ImapEnabled $false
 ```
 
