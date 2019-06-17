@@ -227,6 +227,6 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
 
 - In the Exchange Management Shell, run this command to show all mailboxes where POP3 and IMAP4 access is disabled:
 
-  ```Powershell
+  ```PowerShell
   Get-CasMailbox -ResultSize unlimited -Filter {PopEnabled -eq $false -and ImapEnabled -eq $false}
   ```
