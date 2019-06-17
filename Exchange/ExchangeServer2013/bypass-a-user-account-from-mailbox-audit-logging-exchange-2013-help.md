@@ -33,7 +33,7 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 - When an account is configured to bypass mailbox audit logging, access to any mailbox by that account won't be logged. You can't configure an account to bypass the logging of access to a specific mailbox.
 
-- You can't use the Exchange Administration Center (EAC) to enable or disable mailbox audit logging bypass for an account. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to enable or disable mailbox audit logging bypass for an account. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

@@ -42,7 +42,7 @@ The key characteristics of mailbox database copies are:
 
 You can create a mailbox database copy at any time. Mailbox database copies can be distributed across Mailbox servers in a flexible and granular way.
 
-You can create a mailbox database copy using the **Add mailbox database copy** wizard in the Exchange Administration Center or by using the **Add-MailboxDatabaseCopy** cmdlet in the Exchange Management Shell.
+You can create a mailbox database copy using the **Add mailbox database copy** wizard in the Exchange admin center or by using the **Add-MailboxDatabaseCopy** cmdlet in the Exchange Management Shell.
 
 When creating a mailbox database copy, specify the following parameters:
 

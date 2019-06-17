@@ -34,15 +34,15 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 
 ## Create a room mailbox
 
-### Use the Exchange Admin Center to create a room mailbox
+### Use the Exchange admin center to create a room mailbox
 
-1. In the Exchange Admin Center, navigate to **Recipients** \> **Resources**.
+1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
 2. To create a room mailbox, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) \> **Room mailbox**.
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
-   - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange Admin Center and in your organization's address book. This name is required and it can't exceed 64 characters.
+   - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
 
      > [!TIP]
      > Although there are other fields that describe the details of the room, for example, Location and Capacity, consider summarizing the most important details in the room name using a consistent naming convention. Why? So users can easily see the details when they select the room from the address book in the meeting request.
@@ -53,7 +53,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 
 4. When you're finished, click **Save** to create the room mailbox.
 
-Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange Admin Center section below to change room mailbox properties
+Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange admin center section below to change room mailbox properties
 
 ### Use Exchange PowerShell to create a room mailbox
 
@@ -63,7 +63,7 @@ This example creates a room mailbox with the following configuration:
 
 - The mailbox's name is ConfRoom1. This name will also be used to create the room's email address.
 
-- The display name in the Exchange Admin Center and the address book will be Conference Room 1.
+- The display name in the Exchange admin center and the address book will be Conference Room 1.
 
 - The _Room_ switch specifies that this mailbox will be created as a room mailbox.
 
@@ -77,7 +77,7 @@ For detailed syntax and parameter information, see [New-Mailbox](http://technet.
 
 You can make sure you've created the room mailbox correctly a couple of different ways:
 
-- In the Exchange Admin Center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
+- In the Exchange admin center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
 
 - In Exchange PowerShell, run the following command to display information about the new room mailbox.
 
@@ -117,11 +117,11 @@ Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 
 ## Change room mailbox properties
 
-After you create a room mailbox, you can make changes and set additional properties by using the Exchange Admin Center or Exchange PowerShell.
+After you create a room mailbox, you can make changes and set additional properties by using the Exchange admin center or Exchange PowerShell.
 
-### Use the Exchange Admin Center to change room mailbox properties
+### Use the Exchange admin center to change room mailbox properties
 
-1. In the Exchange Admin Center, navigate to **Recipients** \> **Resources**.
+1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
 2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
@@ -131,7 +131,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 Use the **General** section to view or change basic information about the resource.
 
-- **\* Room name**: This name appears in the resource mailbox list in the Exchange Admin CenterExchange Admin Center and in your organization's address book. It can't exceed 64 characters if you change it.
+- **\* Room name**: This name appears in the resource mailbox list in the Exchange admin centerExchange admin center and in your organization's address book. It can't exceed 64 characters if you change it.
 
 - **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#email-address) section.
 
@@ -141,7 +141,7 @@ Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the account for the room mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
 
-- **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the room mailbox. Use the **Migration** page in the Exchange Admin Center to move the mailbox to a different database.
+- **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the room mailbox. Use the **Migration** page in the Exchange admin center to move the mailbox to a different database.
 
 - **\* Alias**: Use this box to change the alias for the room mailbox.
 
@@ -187,7 +187,7 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
 
-   For repeating booking requests, the maximum booking duration applies to the length of Exchange Admin Centerh instance of the repeating booking request.
+   For repeating booking requests, the maximum booking duration applies to the length of Exchange admin centerh instance of the repeating booking request.
 
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
 
@@ -270,7 +270,7 @@ Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')
 
 To verify that you've successfully changed properties for a room mailbox, do the following:
 
-- In the Exchange Admin Center, select the mailbox and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
+- In the Exchange admin center, select the mailbox and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
 
 - In Exchange PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 

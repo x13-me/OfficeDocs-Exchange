@@ -25,13 +25,13 @@ For additional tasks related to Unified Messaging and Client Access servers, see
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access server (UM call router service)" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access server (UM call router service)" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-  - Verify that the Client Access server is installed, either on the same computer as the Mailbox server or on a separate computer.
+- Verify that the Client Access server is installed, either on the same computer as the Mailbox server or on a separate computer.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -53,7 +53,7 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 This example sets the SIP TCP listening port to 5077 and the startup mode to Dual mode on a Client Access server named `MyClientAccessServer`.
 
 ```powershell
-Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual
+Set-UMCallRouterSettings -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual
 ```
 
 ## Use the Shell to view Client Access server properties

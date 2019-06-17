@@ -22,41 +22,21 @@ In Microsoft Exchange Server 2013, In-Place Archiving provides users with an alt
 
 You can provision a user's archive on the same mailbox database as the user's primary mailbox, another mailbox database on the same Mailbox server, or a mailbox database on another Mailbox server in the same Active Directory site. In hybrid deployments of Exchange 2010 and later, you can also provision a cloud-based archive for mailboxes located on your on-premises Mailbox servers.
 
-**Contents**
-
-Messaging data and .pst files
-
-Client access to archive mailboxes
-
-Delegate access
-
-Moving messages to the archive mailbox
-
-Archive and retention policies
-
-Default MRM policy
-
-Archive quotas
-
-In-Place Archives and other Exchange features
-
-Managing archive mailboxes
-
 ## Messaging data and .pst files
 
 Outlook uses .pst files to store data locally on users' computers or network shares. Unlike offline store (.ost) files (which are used by Outlook in Cached Exchange Mode to store a copy of the mailbox for offline access), .pst files aren't synchronized with the user's Exchange mailbox. If a user moves messages to a .pst file, those messages are removed from the mailbox.
 
 Using .pst files to manage messaging data can result in the following issues:
 
-  - **Unmanaged files**: Generally, .pst files are created by users and reside on their computers or network shares. They aren't managed by your organization. As a result, users can create several .pst files containing the same or different messages and store them in different locations, with no organizational control.
+- **Unmanaged files**: Generally, .pst files are created by users and reside on their computers or network shares. They aren't managed by your organization. As a result, users can create several .pst files containing the same or different messages and store them in different locations, with no organizational control.
 
-  - **Increased discovery costs**: Lawsuits and some business or regulatory requirements sometimes result in discovery requests. Locating messaging data that resides in .pst files on users' computers can be a costly manual effort. Because tracking unmanaged .pst files can be difficult, .pst data may be undiscoverable in many cases. This could possibly expose your organization to legal and financial risks.
+- **Increased discovery costs**: Lawsuits and some business or regulatory requirements sometimes result in discovery requests. Locating messaging data that resides in .pst files on users' computers can be a costly manual effort. Because tracking unmanaged .pst files can be difficult, .pst data may be undiscoverable in many cases. This could possibly expose your organization to legal and financial risks.
 
-  - **Inability to apply messaging retention policies**: Messaging retention policies can't be applied to messages located in .pst files. As a result, depending on business or applicable regulations, your organization may not be in compliance.
+- **Inability to apply messaging retention policies**: Messaging retention policies can't be applied to messages located in .pst files. As a result, depending on business or applicable regulations, your organization may not be in compliance.
 
-  - **Risk of data theft**: Messaging data stored in .pst files is vulnerable to data theft. For example, .pst files are often stored in portable devices such as laptops, removable hard drives, and portable media such as USB drives, CDs, and DVDs.
+- **Risk of data theft**: Messaging data stored in .pst files is vulnerable to data theft. For example, .pst files are often stored in portable devices such as laptops, removable hard drives, and portable media such as USB drives, CDs, and DVDs.
 
-  - **Fragmented view of messaging data**: Users who store information in .pst files don't get a uniform view of their data. Messages stored in .pst files are generally available only on the computer where the .pst file resides. As a result, if users access their mailboxes using Outlook Web App or Outlook on another computer, the messages stored in their .pst files are inaccessible.
+- **Fragmented view of messaging data**: Users who store information in .pst files don't get a uniform view of their data. Messages stored in .pst files are generally available only on the computer where the .pst file resides. As a result, if users access their mailboxes using Outlook Web App or Outlook on another computer, the messages stored in their .pst files are inaccessible.
 
 ## Client access to archive mailboxes
 
@@ -99,11 +79,11 @@ Outlook doesn't create a local copy of the archive mailbox on a user's computer,
 
 *Delegate access* is when a user or set of users is provided access to another user's mailbox. There are several scenarios for providing delegate access, including:
 
-  - Providing one or more users with access to the mailbox of a user who is no longer employed by the organization. In this case, users who may be given delegate access include the departed user's manager or supervisor or another user who will assume the departed user's responsibilities.
+- Providing one or more users with access to the mailbox of a user who is no longer employed by the organization. In this case, users who may be given delegate access include the departed user's manager or supervisor or another user who will assume the departed user's responsibilities.
 
-  - Providing one or more users with access to a shared mailbox.
+- Providing one or more users with access to a shared mailbox.
 
-  - Providing executive assistants with access to the mailboxes of the executives they're assisting.
+- Providing executive assistants with access to the mailboxes of the executives they're assisting.
 
 In Exchange 2013, when you assign Full Access permissions to a mailbox, the delegate to which you assign the permissions can also access the user's archive. Delegates must use Outlook to access the mailbox, and they must connect to an Exchange 2010 SP1 or later Client Access server for Autodiscover purposes. Autodiscover is an Exchange service that provides configuration settings to automatically configure Outlook clients. When delegates use Outlook to access an Exchange 2013 mailbox, both the primary mailbox and the archive to which they have access are visible from Outlook.
 
@@ -111,16 +91,16 @@ In Exchange 2013, when you assign Full Access permissions to a mailbox, the dele
 
 There are several ways to move messages to archive mailboxes:
 
-  - **Move or copy messages manually**: Mailbox users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox or .pst file in Outlook and Outlook Web App.
+- **Move or copy messages manually**: Mailbox users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox or .pst file in Outlook and Outlook Web App.
 
-  - **Move or copy messages using Inbox rules**: Mailbox users can create Inbox rules in Outlook or Outlook Web App to automatically move messages to a folder in their archive mailbox. To learn more, see [Learn About Inbox Rules](http://help.outlook.com/en-us/140/bb899620.aspx).
+- **Move or copy messages using Inbox rules**: Mailbox users can create Inbox rules in Outlook or Outlook Web App to automatically move messages to a folder in their archive mailbox. To learn more, see [Learn About Inbox Rules](http://help.outlook.com/en-us/140/bb899620.aspx).
 
-  - **Move messages using retention policies**: You can use retention policies to automatically move messages to the archive. Users can also apply a personal tag to move messages to the archive. For details about archive and retention policies, see Archive and retention policies later in this topic.
+- **Move messages using retention policies**: You can use retention policies to automatically move messages to the archive. Users can also apply a personal tag to move messages to the archive. For details about archive and retention policies, see Archive and retention policies later in this topic.
 
     > [!NOTE]
     > Personal tags are available only in Outlook Web App and Outlook 2010 and later.
 
-  - **Import messages from .pst files**: In Exchange 2013, you can use a mailbox import request to import messages from a .pst file to a user's archive or primary mailbox. For details, see [Mailbox import and export requests](mailbox-import-and-export-requests-exchange-2013-help.md). You can also use the PST Capture tool to search for .pst files on computers in your organization and import .pst file data to users' archives.
+- **Import messages from .pst files**: In Exchange 2013, you can use a mailbox import request to import messages from a .pst file to a user's archive or primary mailbox. For details, see [Mailbox import and export requests](mailbox-import-and-export-requests-exchange-2013-help.md). You can also use the PST Capture tool to search for .pst files on computers in your organization and import .pst file data to users' archives.
 
 ## Archive and retention policies
 
@@ -183,13 +163,13 @@ If you enable an In-Place Archive for a mailbox user and the mailbox doesn't alr
 
 Before provisioning archive mailboxes for your users, we recommend that you inform them about the archive policies that will be applied to their mailbox and provide subsequent training or documentation to meet their needs. This should include details about the following:
 
-  - Functionality available within the archive, the default archive, and retention policies.
+- Functionality available within the archive, the default archive, and retention policies.
 
-  - Information about when messages may be moved automatically to the archive.
+- Information about when messages may be moved automatically to the archive.
 
-  - Information about the folder hierarchy created in the archive mailbox.
+- Information about the folder hierarchy created in the archive mailbox.
 
-  - How to apply personal tags (displayed in the Archive policy menu in Outlook and Outlook Web App).
+- How to apply personal tags (displayed in the Archive policy menu in Outlook and Outlook Web App).
 
 > [!NOTE]
 > If you apply a retention policy to users who have an archive mailbox, the retention policy replaces the default MRM policy. You can create one or more retention tags with the <STRONG>Move to Archive</STRONG> action, and then link the tags to the retention policy. You can also add the default <STRONG>Move to Archive</STRONG> tags (which are created by Setup and linked to the Default MRM Policy) to any retention policies you create.
@@ -249,32 +229,32 @@ The following table lists the events logged and warning messages sent when the a
 
 This section explains the functionality between In-Place Archives and various Exchange features:
 
-  - **Exchange Search**: The ability to quickly search messages becomes even more critical with archive mailboxes. For Exchange Search, there's no difference between the primary and archive mailbox. Content in both mailboxes is indexed. Because the archive mailbox isn't cached on a user's computer (even when using Outlook in Cached Exchange Mode), search results for the archive are always provided by Exchange Search. When searching the entire mailbox in Outlook 2010 and later and Outlook Web App, search results include the users' primary and archive mailbox.
+- **Exchange Search**: The ability to quickly search messages becomes even more critical with archive mailboxes. For Exchange Search, there's no difference between the primary and archive mailbox. Content in both mailboxes is indexed. Because the archive mailbox isn't cached on a user's computer (even when using Outlook in Cached Exchange Mode), search results for the archive are always provided by Exchange Search. When searching the entire mailbox in Outlook 2010 and later and Outlook Web App, search results include the users' primary and archive mailbox.
 
-  - **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange Administration Center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](https://technet.microsoft.com/en-us/library/dd298064\(v=exchg.150\)). To learn more, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
+- **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange admin center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](https://technet.microsoft.com/en-us/library/dd298064\(v=exchg.150\)). To learn more, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
     > [!IMPORTANT]
     > You can't use In-Place eDiscovery to search a disconnected mailbox.
 
-  - **In-Place Hold and litigation hold**: When you put a mailbox on In-Place Hold or litigation hold, the hold is placed on both the primary and the archive mailbox. To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds).
+- **In-Place Hold and litigation hold**: When you put a mailbox on In-Place Hold or litigation hold, the hold is placed on both the primary and the archive mailbox. To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds).
 
-  - **Recoverable Items folder**: The archive mailbox contains its own Recoverable Items folder and is subject to the same Recoverable Items folder quotas as the primary mailbox. To learn more about recoverable items, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
+- **Recoverable Items folder**: The archive mailbox contains its own Recoverable Items folder and is subject to the same Recoverable Items folder quotas as the primary mailbox. To learn more about recoverable items, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
-  - **Archiving Lync content in Exchange**: You can archive instant messaging conversations and shared online meeting documents in the user's primary mailbox. The mailbox must reside on an Exchange 2013 Mailbox server and you must have Microsoft Lync 2013 deployed in your organization. For details, see [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md).
+- **Archiving Lync content in Exchange**: You can archive instant messaging conversations and shared online meeting documents in the user's primary mailbox. The mailbox must reside on an Exchange 2013 Mailbox server and you must have Microsoft Lync 2013 deployed in your organization. For details, see [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md).
 
 ## Managing archive mailboxes
 
 In Exchange 2013, creating and managing archive mailboxes is integrated with common mailbox management tasks, including:
 
-  - **Creating an archive mailbox**: You can create an archive mailbox when creating a mailbox, or you can enable an archive mailbox for an existing mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md).
+- **Creating an archive mailbox**: You can create an archive mailbox when creating a mailbox, or you can enable an archive mailbox for an existing mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md).
 
-  - **Moving an archive mailbox**: You can move a user's archive mailbox to another mailbox database on the same Mailbox server or to another server, independent of the primary mailbox. To move a user's archive mailbox, you must create a mailbox move request. For details, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).
+- **Moving an archive mailbox**: You can move a user's archive mailbox to another mailbox database on the same Mailbox server or to another server, independent of the primary mailbox. To move a user's archive mailbox, you must create a mailbox move request. For details, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).
 
     > [!IMPORTANT]
     > Locating a user's mailbox and archive on different versions of Exchange Server is not supported.
 
-  - **Disabling an archive mailbox**: You may want to disable a user's archive mailbox for troubleshooting purposes or if you're moving the primary mailbox to a version of Exchange that doesn't support In-Place Archiving. Disabling an archive is similar to disabling a primary mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md). In on-premises deployments, a disabled archive mailbox is retained in the mailbox database until the deleted mailbox retention period for that database is reached. During this period, you can reconnect the archive to a mailbox user. When the deleted mailbox retention period is reached, the disconnected archive mailbox is purged from the mailbox database.
+- **Disabling an archive mailbox**: You may want to disable a user's archive mailbox for troubleshooting purposes or if you're moving the primary mailbox to a version of Exchange that doesn't support In-Place Archiving. Disabling an archive is similar to disabling a primary mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md). In on-premises deployments, a disabled archive mailbox is retained in the mailbox database until the deleted mailbox retention period for that database is reached. During this period, you can reconnect the archive to a mailbox user. When the deleted mailbox retention period is reached, the disconnected archive mailbox is purged from the mailbox database.
 
-  - **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)) cmdlets.
+- **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)) cmdlets.
 
-  - **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/en-us/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.
+- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/en-us/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.

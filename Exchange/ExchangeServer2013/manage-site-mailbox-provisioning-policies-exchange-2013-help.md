@@ -30,7 +30,7 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
 
 - Although you can create multiple site mailbox provisioning policies, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization.
 
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

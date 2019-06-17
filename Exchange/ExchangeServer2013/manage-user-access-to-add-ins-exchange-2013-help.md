@@ -26,7 +26,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 
 - Estimated time to complete: 5 minutes.
 
-- For more information about the EAC, see [Exchange Admin Center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+- For more information about the EAC, see [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
 
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 

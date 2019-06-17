@@ -20,14 +20,6 @@ Client Access servers running the Microsoft Exchange Unified Messaging Call Rout
 
 Looking for management tasks related to UM services? See [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
-**Contents**
-
-Client Access and Mailbox servers
-
-Server configuration settings
-
-Server operation
-
 ## Client Access and Mailbox servers
 
 In Exchange 2013, the server roles found in Exchange 2007 and Exchange 2010 are combined into two types of servers, and all components or services from those server roles are run on the same physical server or on two separate servers called Client Access and Mailbox.
@@ -44,19 +36,19 @@ However, if you're integrating Unified Messaging with Microsoft Office Communica
 
 ## Server configuration settings
 
-In Exchange 2013, all the UM components and configuration settings that applied to a single computer running the Unified Messaging server role in Exchange 2010 are still available. However, some of those components and configuration settings are found on a Client Access server and others are available on a Mailbox server. In some cases, the same setting is available on both. The following list shows the parameters and settings that are available on both a Client Access server and a Mailbox server.
+In Exchange 2013, all the UM components and configuration settings that applied to a single computer running the Unified Messaging server role in Exchange 2010 are still available. However, some of those components and configuration settings are found on a Client Access server and others are available on a Mailbox server. In some cases, the same setting is available on both. The following list shows the parameters and settings that are available on both a Client Access server and a Mailbox server:
 
-  - \[-DialPlans \<MultiValuedProperty\>\]
+- \[-DialPlans \<MultiValuedProperty\>\]
 
-  - \[-MaxCallsAllowed \<Int32\>\]
+- \[-MaxCallsAllowed \<Int32\>\]
 
-  - \[-SipTcpListeningPort \<Int32\>\]
+- \[-SipTcpListeningPort \<Int32\>\]
 
-  - \[-SipTlsListeningPort \<Int32\>\]
+- \[-SipTlsListeningPort \<Int32\>\]
 
-  - \[-Status \<Enabled | Disabled | NoNewCalls\>\]
+- \[-Status \<Enabled | Disabled | NoNewCalls\>\]
 
-  - \[-UMStartupMode \<TCP | TLS | Dual\>\]
+- \[-UMStartupMode \<TCP | TLS | Dual\>\]
 
 For the Mailbox server, you'll use the **Set-UMService**, **Get-UMService**, **Enable-UMService**, and **Disable-UMService** cmdlets to view or configure UM properties for the Microsoft Exchange Unified Messaging service. A different set of cmdlets, **Set-UMCallRouterSettings** and **Get-UMCallRouterSettings**, are used to view or configure the Microsoft Exchange Unified Messaging Call Router service properties on a Client Access server. This ensures that the existing **Get-UMServer**, **Set-UMServer**, **Enable-UMServer**, and **Disable-UMServer** cmdlets from Exchange 2007 and Exchange 2010 will work in a coexistence deployment with Exchange 2013 Mailbox servers. This also ensures that the cmdlets will work when the Mailbox and Client Access servers are installed on the same or different computers.
 

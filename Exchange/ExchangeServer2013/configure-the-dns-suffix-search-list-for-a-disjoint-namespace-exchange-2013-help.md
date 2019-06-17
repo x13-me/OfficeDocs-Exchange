@@ -20,16 +20,16 @@ This topic explains how to use the Group Policy Management console (GPMC) to con
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes
+- Estimated time to complete: 10 minutes
 
-  - To perform this procedure, the account you use must be delegated membership in the Domain Admins group.
+- To perform this procedure, the account you use must be delegated membership in the Domain Admins group.
 
-  - Confirm that you have installed .NET Framework 3.0 on the computer on which you will install the GPMC.
+- Confirm that you have installed .NET Framework 3.0 on the computer on which you will install the GPMC.
 
-    > [!NOTE]
-    > The current version of the GPMC that you can download from the Microsoft Download Center operates on the 32-bit versions of the Windows Server 2003 and Windows XP operating systems and can remotely manage Group Policy objects on 32-bit and 64-bit domain controllers. This version of the GPMC doesn't include a 64-bit version, and the 32-bit version doesn't run on 64-bit platforms. The 32-bit version of Windows Server 2008 and the 32-bit version of Windows Vista both include a 32-bit version of the GPMC. The 64-bit version of Windows Server 2008 and the 64-bit version of Windows Vista both include a 64-bit version of the GPMC.
+  > [!NOTE]
+  > The current version of the GPMC that you can download from the Microsoft Download Center operates on the 32-bit versions of the Windows Server 2003 and Windows XP operating systems and can remotely manage Group Policy objects on 32-bit and 64-bit domain controllers. This version of the GPMC doesn't include a 64-bit version, and the 32-bit version doesn't run on 64-bit platforms. The 32-bit version of Windows Server 2008 and the 32-bit version of Windows Vista both include a 32-bit version of the GPMC. The 64-bit version of Windows Server 2008 and the 64-bit version of Windows Vista both include a 64-bit version of the GPMC.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -59,9 +59,7 @@ This topic explains how to use the Group Policy Management console (GPMC) to con
 
 ## How do you know this worked?
 
-To verify that you have successfully completed your migration, do the following:
-
-  - After you install Exchange 2013, verify that you can send email messages inside and outside your organization.
+After you install Exchange 2013, verify that you can send email messages inside and outside your organization.
 
 ## For more information
 

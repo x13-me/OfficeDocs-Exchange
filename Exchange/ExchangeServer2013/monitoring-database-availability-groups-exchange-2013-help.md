@@ -274,15 +274,15 @@ After configuring or modifying the above registry value, you must restart the Mi
 
 Exchange 2013 includes a script called CollectOverMetrics.ps1, which can be found in the Scripts folder. CollectOverMetrics.ps1 reads DAG member event logs to gather information about database operations (such as database mounts, moves, and failovers) over a specific time period. For each operation, the script records the following information:
 
-  - Identity of the database
+- Identity of the database
 
-  - Time at which the operation began and ended
+- Time at which the operation began and ended
 
-  - Servers on which the database was mounted at the start and finish of the operation
+- Servers on which the database was mounted at the start and finish of the operation
 
-  - Reason for the operation
+- Reason for the operation
 
-  - Whether the operation was successful, and if the operation failed, the error details
+- Whether the operation was successful, and if the operation failed, the error details
 
 The script writes this information to .csv files with one operation per row. It writes a separate .csv file for each DAG.
 
@@ -340,7 +340,7 @@ The script supports parameters that allow you to customize the script's behavior
 </tr>
 <tr class="even">
 <td><p><em>ActionTrigger</em></p></td>
-<td><p>Specifies which administrative operations should be collected by the script. The values for this parameter are <code>Admin</code> or <code>Automatic</code>. Automatic actions are those performed automatically by the system (for example, a failover when a server goes offline). Admin actions are any actions that were performed by an administrator using either the Exchange Management Shell or the Exchange Administration Center.</p></td>
+<td><p>Specifies which administrative operations should be collected by the script. The values for this parameter are <code>Admin</code> or <code>Automatic</code>. Automatic actions are those performed automatically by the system (for example, a failover when a server goes offline). Admin actions are any actions that were performed by an administrator using either the Exchange Management Shell or the Exchange admin center.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>RawOutput</em></p></td>
@@ -366,15 +366,15 @@ The script supports parameters that allow you to customize the script's behavior
 The following example collects metrics for all databases that match DB\* (which includes a wildcard character) in the DAG DAG1. After the metrics are collected, an HTML report is generated and displayed.
 
 ```powershell
-    CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
 ```
 
 The following examples demonstrate ways that the summary HTML report may be filtered. The first uses the *Database* parameter, which takes a list of database names. The summary report then contains data only about those databases. The next two examples use the *ReportFilter* option. The last example filters out all the default databases.
 
 ```powershell
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {$_.DatabaseName -notlike "Mailbox Database*"}
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*")}
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {$_.DatabaseName -notlike "Mailbox Database*"}
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*")}
 ```
 
 ## CollectReplicationMetrics.ps1 script
@@ -462,5 +462,5 @@ CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:
 The following example reads the data from all the files matching CounterData\* and then generates a summary report.
 
 ```powershell
-    CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
+CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
 ```

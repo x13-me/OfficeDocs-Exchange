@@ -20,11 +20,11 @@ In Exchange Server 2013, you can manage certificates using the EAC or the Shell.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes plus time for the certification authority response.
+- Estimated time to complete: 10 minutes plus time for the certification authority response.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access server security" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access server security" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -57,13 +57,13 @@ If you didn't select a self-signed certificate, you'll need to send the certific
 
 Run the following commands.
 
-  ```powershell
+```powershell
   $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
-  ```
+```
 
-  ```powershell
-  $reqfile | out-file c:\certreq.txt
-  ```
+```powershell
+$reqfile | out-file c:\certreq.txt
+```
 
 ## How do you know this worked?
 

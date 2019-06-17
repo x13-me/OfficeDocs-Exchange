@@ -43,8 +43,6 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create a database scope
 
 In this step, decide which databases you want to include in the database scope. Also, decide whether you want to specify a static list of databases, or whether you want to create a database filter that includes only the databases that match the criteria you specify.
@@ -52,7 +50,7 @@ In this step, decide which databases you want to include in the database scope. 
 > [!IMPORTANT]
 > Role assignments associated with database scopes are applied only to users who connect to servers running Microsoft Exchange Server 2010 Service Pack&nbsp;1 (SP1) or later or Exchange 2013. If a user assigned a role assignment associated with a database scope connects to a pre-Exchange 2010 SP1 server, the role assignment isn't applied to the user, and the user won't be granted any permissions provided by the role assignment.
 
-## Use a database list scope
+### Use a database list scope
 
 Use a database list if you want to define a static list of mailbox databases that should be included in this scope. Use the following syntax to create a database list scope.
 
@@ -68,7 +66,7 @@ New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Da
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\)).
 
-## Use a database filter scope
+### Use a database filter scope
 
 Use a database filter if you want to create a dynamic database scope that includes only the databases that match the criteria you specify. This can be useful if you don't want to manage the database scope after it's created and you've defined standard values for your organization that can identify specific sets of mailbox databases.
 
@@ -96,7 +94,7 @@ After you assign the role to a role group with the database scope, the members o
 
 For a list of built-in roles that you can assign to role groups, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
-## Add a new role assignment
+### Add a new role assignment
 
 Use this procedure if you've just created a role group and you need to add roles to it.
 
@@ -115,7 +113,7 @@ New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "M
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
 
-## Modify an existing role assignment
+### Modify an existing role assignment
 
 Use this procedure if you have an existing role group that already has role assignments between it and the roles you want to apply the new database scope to.
 

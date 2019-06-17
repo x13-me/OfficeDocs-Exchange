@@ -219,8 +219,6 @@ For the following procedures, Contoso mailboxes have a managed folder mailbox po
 </tbody>
 </table>
 
-## How do you do this?
-
 ## Step 1: Create retention tags for the migration
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
@@ -237,23 +235,23 @@ There are two methods you can use for this step:
 > [!NOTE]
 > If you are in a mixed environment with Exchange 2013 and Exchange 2010 servers, you can use the <STRONG>Port Managed Folder</STRONG> wizard in the Exchange Management Console (EMC) on an Exchange 2010 server to easily port managed folder and corresponding managed content setting to retention tags.
 
-**Create retention tags based on managed folders**
+### Create retention tags based on managed folders
 
 This example creates retention tags based on the corresponding managed content settings shown in the Contoso managed folder mailbox policy.
 
 ```powershell
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
 ```
 
 For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd335226\(v=exchg.150\)).
 
-**Create retention tags manually**
+### Create retention tags manually
 
 > [!NOTE]
 > You can also use the EAC to create retention tags manually (not based on settings in managed folders). For details, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
@@ -261,13 +259,13 @@ For detailed syntax and parameter information, see [New-RetentionPolicyTag](http
 This example creates retention tags based on the managed folders and corresponding managed content settings shown in the Contoso managed folder mailbox policy. The retention settings are specified manually without using the *ManagedFolderToUpgrade* parameter.
 
 ```powershell
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
 ```
 
 For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd335226\(v=exchg.150\)).
@@ -282,7 +280,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 This example creates the retention policy RP-Corp and links the newly created retention tags to the policy.
 
 ```powershell
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
 ```
 
 For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/en-us/library/dd297970\(v=exchg.150\)).

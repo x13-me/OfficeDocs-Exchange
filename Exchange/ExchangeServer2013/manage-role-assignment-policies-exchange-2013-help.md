@@ -38,7 +38,7 @@ After you've created the new assignment policy, you assign users to it. For more
 ## Use the EAC to create a new assignment policy
 
 > [!NOTE]
-> You can only create explicit assignment policies using the Exchange Administration Center (EAC). If you want to create a new default assignment policy, you must use the Exchange Management Shell. For more information, see the "Use the Shell to create a default assignment policy" section later in this topic.
+> You can only create explicit assignment policies using the Exchange admin center (EAC). If you want to create a new default assignment policy, you must use the Exchange Management Shell. For more information, see the "Use the Shell to create a default assignment policy" section later in this topic.
 
 1. In the EAC, navigate to **Permissions** \> **User Roles** and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 

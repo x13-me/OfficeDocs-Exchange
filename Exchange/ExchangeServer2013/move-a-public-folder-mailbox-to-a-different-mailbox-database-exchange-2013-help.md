@@ -22,15 +22,15 @@ For additional management tasks related to public folders, see [Public folder pr
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete depends on the size of the public folder mailbox.
+- Estimated time to complete depends on the size of the public folder mailbox.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox move and migration permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox move and migration permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - You can't perform this procedure in the EAC. You can only perform this procedure in the Shell.
+- You can't perform this procedure in the EAC. You can only perform this procedure in the Shell.
 
-  - Depending on the size of the public folder mailbox, the move may take several hours to complete. During that time, users won't be able to access the public folders. Users also won't have access to public folders for a brief period while the folder is in the "Completion in Progress" state.
+- Depending on the size of the public folder mailbox, the move may take several hours to complete. During that time, users won't be able to access the public folders. Users also won't have access to public folders for a brief period while the folder is in the "Completion in Progress" state.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

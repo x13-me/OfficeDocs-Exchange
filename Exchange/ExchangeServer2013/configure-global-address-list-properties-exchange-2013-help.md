@@ -24,7 +24,7 @@ This topic explains how to modify the settings of a global address list (GAL).
 
 - You can't edit the settings of the default GAL.
 
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

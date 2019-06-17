@@ -27,7 +27,7 @@ You can incorporate sensitive-content definitions and policy templates from Micr
 
 ### Create your own new DLP policy template or your own sensitive information types in a classification rule package
 
-You can create a DLP policy template file apart from Exchange that meets the specific XML schema definition provided by Microsoft and then import the file into your system so that you can create DLP policies from it. By creating your own template files, you can define your own model for DLP policies that Microsoft has not already provided. This is different than creating a DLP policy by using the Exchange Administration Center, which typically happens after policy templates are available. If you create a policy template independent of Exchange, you will need to import it before you can use it to scan messages. You can also create your own sensitive information definitions apart from those defined by Microsoft in Exchange. There is a separate XML schema definition for DLP policy template files and classification rule packages. To get started with this, see the following information:
+You can create a DLP policy template file apart from Exchange that meets the specific XML schema definition provided by Microsoft and then import the file into your system so that you can create DLP policies from it. By creating your own template files, you can define your own model for DLP policies that Microsoft has not already provided. This is different than creating a DLP policy by using the Exchange admin center, which typically happens after policy templates are available. If you create a policy template independent of Exchange, you will need to import it before you can use it to scan messages. You can also create your own sensitive information definitions apart from those defined by Microsoft in Exchange. There is a separate XML schema definition for DLP policy template files and classification rule packages. To get started with this, see the following information:
 
 > [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
@@ -35,7 +35,7 @@ You can create a DLP policy template file apart from Exchange that meets the spe
 
 ### Include DLP functionality with existing transport rules
 
-You can incorporate DLP detection capabilities with traditional transport rules without creating a new DLP policy. If you have created a complex set of rules in a previous version of Exchange, and you want to duplicate them or add sensitive information detection in Exchange 2013, then you can use the transport rules editor in the Exchange Administration Center or the Exchange management shell to incorporate these two features. To get started with this, see the following information:
+You can incorporate DLP detection capabilities with traditional transport rules without creating a new DLP policy. If you have created a complex set of rules in a previous version of Exchange, and you want to duplicate them or add sensitive information detection in Exchange 2013, then you can use the transport rules editor in the Exchange admin center or the Exchange management shell to incorporate these two features. To get started with this, see the following information:
 
 - [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 

@@ -46,8 +46,6 @@ What happens if you install the available anti-spam agents in the Transport serv
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Use the Shell to run the Install-AntispamAgents.ps1 script
 
 Run the following command:
@@ -56,7 +54,7 @@ Run the following command:
 & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 You know this step worked if the script runs without errors, and asks you to restart the Microsoft Exchange Transport service.
 
@@ -68,7 +66,7 @@ Run the following command:
 Restart-Service MSExchangeTransport
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 You know this step worked if the Microsoft Exchange Transport service restarts without errors.
 
@@ -88,7 +86,7 @@ This example adds the internal SMTP server addresses 10.0.1.10 and 10.0.1.11 to 
 Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully specified the IP address of at least one internal SMTP server, do the following:
 

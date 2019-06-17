@@ -23,16 +23,6 @@ For an organization to own and maintain their telephony network, they must buy t
 > [!IMPORTANT]
 > We recommend that all customers who plan to deploy Microsoft Exchange 2013 Unified Messaging obtain the help of a UM specialist. This will help ensure a smooth upgrade from a legacy voice mail system. Rolling out a new UM deployment or performing an upgrade of an existing voice mail system requires significant knowledge about PBXs, IP PBXs, and Unified Messaging. For more information about who to contact, see the <A href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft PinPoint</A>website.
 
-**Contents**
-
-Overview of Telephony Systems
-
-Legacy and Traditional PBX Configurations
-
-IP PBX Configurations
-
-Calling or Called Party Identification
-
 ## Overview of telephony systems
 
 In circuit-switched networks, such as the Public Switched Telephone Network (PSTN), multiple calls are transmitted across the same transmission medium. Frequently, the medium that's used in the PSTN is copper. However, fiber optic cable might also be used.
@@ -43,7 +33,7 @@ Different types or categories of telephone systems found in businesses and organ
 
 - **Centrex**: Centrex is a type of telephone service that telephone companies lease to businesses and organizations. A traditional Centrex telephone system eliminates the need for a business or organization to purchase the telephony hardware used onsite to support the organization's telephone system. Typically, Centrex systems are used by small offices that rent Centrex services from a telephone company on a line-by-line and month-by-month basis. Centrex telephony systems are sometimes used by larger organizations, but are most frequently found in government, public, and private organizations. Centrex frequently uses analog telephone lines for the connections to a business or organization. But it can also use T1-circuits with a demultiplexer onsite to support analog and digital telephones or ISDN lines.
 
-    In a Centrex-based telephony system, the telephone company's central office acts as the telephone exchange. It's designed specifically to support the needs of a given organization. The central telephone office routes the calls that originate from inside the company to the appropriate internal or external telephone number. Centrex uses the telephone company's central office exchange to route internal calls back to an extension. For example, with Centrex, the telephone exchange or telephone company's central office knows which extensions are internal. So an employee who's located within the organization's telephony network can dial another employee in the same telephony network or dial plan by using a four-digit extension number. When a call is dialed to the internal telephone extension number, it's forwarded to the telephone company's central office and then routed back to the extension number that initiated the call.
+  In a Centrex-based telephony system, the telephone company's central office acts as the telephone exchange. It's designed specifically to support the needs of a given organization. The central telephone office routes the calls that originate from inside the company to the appropriate internal or external telephone number. Centrex uses the telephone company's central office exchange to route internal calls back to an extension. For example, with Centrex, the telephone exchange or telephone company's central office knows which extensions are internal. So an employee who's located within the organization's telephony network can dial another employee in the same telephony network or dial plan by using a four-digit extension number. When a call is dialed to the internal telephone extension number, it's forwarded to the telephone company's central office and then routed back to the extension number that initiated the call.
 
 A variation of a traditional Centrex telephony system is called *IP Centrex*. In an IP Centrex telephone system, the call is sent through a Voice over IP (VoIP) gateway located at a telephone company's central office or located onsite at a service provider. In this kind of telephone system, the VoIP gateway translates the call into IP-based data packets that can be sent over the Internet or over a VoIP-based network. However, if the call is sent over the Internet, there's typically another VoIP gateway that receives the call and then translates the call back to a traditional circuit-switched call.
 

@@ -109,7 +109,7 @@ This checklist is generic in that it provides guidance for a typical scenario.
 </tr>
 <tr class="odd">
 <td> </td>
-<td><p>12. Configure settings on virtual directories, including the offline address book, Exchange Web Services, Exchange Administration Center (EAC), Outlook Web App, and Exchange ActiveSync virtual directories.</p>
+<td><p>12. Configure settings on virtual directories, including the offline address book, Exchange Web Services, Exchange admin center (EAC), Outlook Web App, and Exchange ActiveSync virtual directories.</p>
 
 > [!NOTE]
 > This step is necessary if you want to use Exchange Web Services, Outlook Anywhere, or the offline address book. It also may be required if you need to change any of the default settings for EAC, Outlook Web App, or Exchange ActiveSync.

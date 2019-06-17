@@ -81,15 +81,15 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 Executing the below Exchange Online cmdlet will enable GCC Moderate customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
- ```
- Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
- ```
+```
+Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
+```
 
 At any time, access to these features can be revoked by resetting the parameter back to the default value:
 
- ```
- Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
- ```
+```
+Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
+```
 
 Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange Administration Center (EAC). They're created on-demand when you run the Administrator audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Shell. For more information about audit logs, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
+Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange admin center (EAC). They're created on-demand when you run the Administrator audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Shell. For more information about audit logs, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
 The audit logs are XML files and can contain multiple audit log entries. The following table describes each XML tag and its associated attributes.
 

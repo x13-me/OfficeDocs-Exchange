@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Use the Exchange Administration Center (EAC) or Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory.
+Use the Exchange admin center (EAC) or Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory.
 
 There are two types of groups that can be used to distribute messages:
 

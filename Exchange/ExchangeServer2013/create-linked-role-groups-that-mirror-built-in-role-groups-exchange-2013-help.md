@@ -22,31 +22,31 @@ By default, Exchange 2013 includes a number of built-in role groups that provide
 
 You can re-create each built-in role group as a linked role group. All of the management roles and management scopes assigned to each role group are added to the new linked role group. For more information about management roles and scopes, see the following topics:
 
-  - [Understanding management roles](understanding-management-roles-exchange-2013-help.md)
+- [Understanding management roles](understanding-management-roles-exchange-2013-help.md)
 
-  - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
 Looking for other management tasks related to role groups? Check out [Permissions](permissions-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes
+- Estimated time to complete each procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - Configuring a linked role group requires a one-way trust between the resource Active Directory forest in which the linked role group will reside, and the foreign Active Directory forest where the users or USGs reside. The resource forest must trust the foreign forest.
+- Configuring a linked role group requires a one-way trust between the resource Active Directory forest in which the linked role group will reside, and the foreign Active Directory forest where the users or USGs reside. The resource forest must trust the foreign forest.
 
-  - You must have the following information about the foreign Active Directory forest:
+- You must have the following information about the foreign Active Directory forest:
 
-      - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** cmdlet. This information is obtained by running the **Get-Credential** cmdlet. The format of the user name is *domain*\\*username*.
+  - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** cmdlet. This information is obtained by running the **Get-Credential** cmdlet. The format of the user name is *domain*\\*username*.
 
-      - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** cmdlet.
+  - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** cmdlet.
 
-      - **Foreign USG**: You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** cmdlet.
+  - **Foreign USG**: You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** cmdlet.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -93,9 +93,9 @@ To re-create the Organization Management role group as a linked role group, you 
 
 This example assumes the following values are used for each parameter:
 
-  - **LinkedForeignGroup**: `Organization Management Administrators`
+- **LinkedForeignGroup**: `Organization Management Administrators`
 
-  - **LinkedDomainController**: `DC01.users.contoso.com`
+- **LinkedDomainController**: `DC01.users.contoso.com`
 
 Using the preceding values, this example re-creates the Organization Management role group as a linked role group.
 
@@ -118,40 +118,41 @@ To re-create the built-in role groups (other than the Organization Management ro
 
 2. Store the foreign Active Directory forest credentials in a variable. You only need to do this once.
 
-```powershell
-$ForeignCredential = Get-Credential
-```
+   ```powershell
+   $ForeignCredential = Get-Credential
+   ```
 
 3. Retrieve a list of role groups using the following cmdlet.
 
-```powershell
-Get-RoleGroup
-```
+   ```powershell
+   Get-RoleGroup
+   ```
 
 4. For each role group, other than the Organization Management role group, do the following.
 
-```powershell
-$RoleGroup = Get-RoleGroup <name of role group to re-create>
-New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
-```
+   ```powershell
+   $RoleGroup = Get-RoleGroup <name of role group to re-create>
+   New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+   ```
 
 5. Repeat the preceding step for each built-in role group you want to re-create as a linked role group.
 
 This example assumes the following values are used for each parameter:
 
-  - **LinkedDomainController**: `DC01.users.contoso.com`
+- **LinkedDomainController**: `DC01.users.contoso.com`
 
-  - **Built-in role groups to be re-created as linked role groups**: `Recipient Management, Server Management`
+- **Built-in role groups to be re-created as linked role groups**: `Recipient Management, Server Management`
 
-  - **Foreign group for Recipient Management linked role group**: `Recipient Management Administrators`
+- **Foreign group for Recipient Management linked role group**: `Recipient Management Administrators`
 
-  - **Foreign group for Server Management linked role group**: `Server Management Administrators`
+- **Foreign group for Server Management linked role group**: `Server Management Administrators`
 
 Using the preceding values, this example re-creates the Recipient Management and Server Management role groups as linked role groups.
 
 ```powershell
 $ForeignCredential = Get-Credential
 ```
+
 ```powershell
 Get-RoleGroup
 ```
