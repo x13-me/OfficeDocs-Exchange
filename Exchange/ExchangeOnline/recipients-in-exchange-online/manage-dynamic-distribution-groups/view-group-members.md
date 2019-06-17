@@ -45,7 +45,7 @@ $FTE = Get-DynamicDistributionGroup "Full Time Employees"
 Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 
-This example displays the list of users and e-mail addresses (More 1000 mailbox)
+This example displays the list of users and e-mail addresses (more than 1000 mailboxes)
 ```
 Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | ft Name, Prima*
 ```
