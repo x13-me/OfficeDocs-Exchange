@@ -23,7 +23,9 @@ One of the questions we often hear is "How does Exchange Online back up my data?
 
 ## How does Exchange Online protect mailbox data?
 
-Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as Database Availability Groups (DAGs) to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters enforce the data using replication (data resiliency). 
+Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as Database Availability Groups (DAGs) to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. 
+
+As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters enforce the data using replication (data resiliency). If one fails, the affected data are transferred to another data center with limited service interruption, and users experience seamless connectivity.
 
 
 > [!NOTE]
