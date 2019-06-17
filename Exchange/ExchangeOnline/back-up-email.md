@@ -69,7 +69,7 @@ To learn how the service is protected using Data Resiliency, see [Office 365 Exc
 
 ## When Can I Restore Outlook data on an Office 365 account without a license?
 
-After the expiration or removal of an O365 License, Office 365 doesn't remove **instantly** your data. The default Office 365 retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from O365.
+After the expiration or removal of an O365 License, Office 365 doesn't **instantly** remove your data. The default Office 365 retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from O365.
 
 ## How do users restore Outlook data?
 
