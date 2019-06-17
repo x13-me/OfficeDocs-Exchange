@@ -19,7 +19,7 @@ manager: dansimp
 
 # Backing up email in Exchange Online
 
-One of the questions we often hear is "How does Exchange Online back up my data?" You may be asking this because you're concerned about how to recover your data if there is a failure. Alternatively, you may be wondering how to recover your information if it gets accidentally deleted. This topic answers these questions.
+One of the questions we often hear is "How does Exchange Online back up my data?" You may be asking this because you're concerned about how to recover your data if there is a failure. Alternatively, you may be wondering how to recover your data if it gets accidentally deleted. This topic answers these questions.
 
 ## How does Exchange Online protect mailbox data?
 
