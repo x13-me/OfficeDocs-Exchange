@@ -77,6 +77,6 @@ To learn how to restore deleted items in Outlook, see [Recover deleted items in 
 
 To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook Web App](https://support.office.com/article/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
 
-## Offboard an user from Office 365
+## Offboard a user from Office 365
 
 For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
