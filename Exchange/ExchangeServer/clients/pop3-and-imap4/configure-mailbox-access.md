@@ -113,7 +113,7 @@ For more information, see [Set-CASMailbox](http://technet.microsoft.com/library/
 ### Use the Exchange Management Shell to enable or disable POP3 or IMAP4 access to multiple mailboxes
 
 >[!IMPORTANT]
->Before working with Exchange Management Shell it's required to have a connection with the Exchange Online Service from powershell, please use this steps to [Connect to Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-1).
+>Before working with Exchange Management Shell, it is required to have a connection with the Exchange Online Service from PowerShell. Use this link to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-1).
 
 You can use the **Get-Mailbox**, **Get-User**, or **Get-Content** cmdlets to identify the mailboxes that you want to modify. For example:
 
