@@ -221,7 +221,7 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```Powershell
+  ```PowerShell
   Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Get-CasMailbox
   ```
 
