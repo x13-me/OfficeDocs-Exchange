@@ -189,7 +189,7 @@ Restart-Service MSExchangePOP3; Restart-Service MSExchangePOP3BE
 
 To restart the IMAP4 services, run the following command:
 
-```Powershell
+```PowerShell
 Restart-Service MSExchangeIMAP4; Restart-Service MSExchangeIMAP4BE
 ```
 
