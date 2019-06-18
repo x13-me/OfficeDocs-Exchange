@@ -62,7 +62,7 @@ IMCEA addresses use the syntax `IMCEA<Type>-<address>@<domain>`:
 
 - _\<domain\>_ is SMTP domain that's used to encapsulate the non-SMTP address (for example, contoso.com).
 
-IMCEA addresses are returned to their original values (unencapsulated) only when the domain matches the default accepted domain in the Exchange organization. For more information about the default accepted domain, see [Default domain](../../mail-flow/accepted-domains/accepted-domains.md#DefaultDomain).
+IMCEA addresses are returned to their original values (unencapsulated) only when the domain matches the default accepted domain in the Exchange organization. For more information about the default accepted domain, see [Default domain](../accepted-domains/accepted-domains.md#default-domain).
 
 The maximum length for an SMTP email address in Exchange is 571 characters. This limit includes:
 
