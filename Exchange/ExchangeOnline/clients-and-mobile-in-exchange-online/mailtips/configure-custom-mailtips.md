@@ -60,15 +60,15 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 2. Select any of the following recipient tabs based on the recipient type:
 
-  - **Mailboxes**
+   - **Mailboxes**
 
-  - **Groups**
+   - **Groups**
 
-  - **Resources**
+   - **Resources**
 
-  - **Contacts**
+   - **Contacts**
 
-  - **Shared**
+   - **Shared**
 
 3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 

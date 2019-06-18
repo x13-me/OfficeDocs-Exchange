@@ -102,15 +102,15 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
 - In the EAC:
 
-1. Go to **Recipients** \> **Mailboxes**.
+  1. Go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+  2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
 
-3. On the mailbox properties page, click **Mailbox features.**
+  3. On the mailbox properties page, click **Mailbox features.**
 
-4. Under **Litigation hold**, verify that hold is enabled.
+  4. Under **Litigation hold**, verify that hold is enabled.
 
-5. Click **View details** to verify when the mailbox was placed on Litigation Hold and by whom. You can also verify or change the values in the optional **Litigation hold duration (days)**, **Note**, and **URL** boxes.
+  5. Click **View details** to verify when the mailbox was placed on Litigation Hold and by whom. You can also verify or change the values in the optional **Litigation hold duration (days)**, **Note**, and **URL** boxes.
 
 - In the Shell, run one of the following commands:
 
@@ -124,7 +124,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
   Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,LitigationHold*
   ```
 
-    If a mailbox is placed on Litigation Hold indefinitely, the value for the _LitigationHoldDuration_ property mailbox is set to `Unlimited`.
+  If a mailbox is placed on Litigation Hold indefinitely, the value for the _LitigationHoldDuration_ property mailbox is set to `Unlimited`.
 
 ## More information
 
