@@ -46,23 +46,24 @@ manager: dansimp
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery & Hold**.
 
 2. In the list view, select the eDiscovery search you want to export the results of, and then click **Export to a PST file**.
-    ![Export to a PST File](../../media/ExportToPSTFile.gif)
+
+   ![Export to a PST File](../../media/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 
-  - Click **Browse** to specify the location where you want to download the PST file.
+   - Click **Browse** to specify the location where you want to download the PST file.
 
-  - Click the **Enable deduplication** checkbox to exclude duplicate messages. Only a single instance of a message will be included in the PST file.
+   - Click the **Enable deduplication** checkbox to exclude duplicate messages. Only a single instance of a message will be included in the PST file.
 
-  - Click the **Include unsearchable items** checkbox to include items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). Unsearchable items are exported to a separate PST file.
+   - Click the **Include unsearchable items** checkbox to include items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). Unsearchable items are exported to a separate PST file.
 
-    **Note**: Including unsearchable items when you export eDiscovery search results takes longer when mailboxes or public folders contain a lot of unsearchable items. To reduce the time it takes to export search results and prevent large PST export files, consider the following recommendations:
+   **Note**: Including unsearchable items when you export eDiscovery search results takes longer when mailboxes or public folders contain a lot of unsearchable items. To reduce the time it takes to export search results and prevent large PST export files, consider the following recommendations:
 
-  - Create multiple eDiscovery searches that each search a fewer number of source mailboxes.
+   - Create multiple eDiscovery searches that each search a fewer number of source mailboxes.
 
-  - Create an eDiscovery search that only includes public folders.
+   - Create an eDiscovery search that only includes public folders.
 
-  - If you're exporting all mailbox or public folder content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don't select the **Include unsearchable items** checkbox.
+   - If you're exporting all mailbox or public folder content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don't select the **Include unsearchable items** checkbox.
 
 4. Click **Start** to export the search results to a PST file.
 
