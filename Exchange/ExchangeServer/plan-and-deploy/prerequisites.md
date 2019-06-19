@@ -49,7 +49,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
 ::: moniker-end
 
-- Verify the [Windows operating system requirements for Exchange Server](system-requirements.md#operating-system).
+- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#supported-operating-systems-for-exchange-2016).
 
 ::: moniker range="exchserver-2019"
 > [!NOTE]
