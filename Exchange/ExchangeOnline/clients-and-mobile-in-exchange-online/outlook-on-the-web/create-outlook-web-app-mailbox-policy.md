@@ -42,13 +42,13 @@ For more information about Outlook on the web mailbox policies, see [Outlook Web
 
 2. In the new policy window that opens, configure the following settings:
 
-  - **Policy name**: Enter a unique name for your policy.
+   - **Policy name**: Enter a unique name for your policy.
 
-  - Use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
+   - Use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
 
-    **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
+   **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
 
-5. Click **Save** to save the policy.
+3. Click **Save** to save the policy.
 
 ## Use Exchange Online PowerShell to create an Outlook on the web mailbox policy
 
@@ -56,21 +56,21 @@ In Exchange Online PowerShell, creating an Outlook on the web mailbox policy is 
 
 1. Create the policy by using the following syntax:
 
-    ```
-    New-OwaMailboxPolicy -Name "<Unique Name>"
-    ```
+   ```
+   New-OwaMailboxPolicy -Name "<Unique Name>"
+   ```
 
-    This example creates an Outlook on the web mailbox policy named Executives.
+   This example creates an Outlook on the web mailbox policy named Executives.
 
-    ```
-    New-OwaMailboxPolicy -Name Policy1
-    ```
+   ```
+   New-OwaMailboxPolicy -Name Policy1
+   ```
 
     For detailed syntax and parameter information, see [New-OwaMailboxPolicy](https://technet.microsoft.com/library/b2e46c22-7e99-4d04-b5ef-81ef64bf7445.aspx).
 
 2. Modify the default settings of the policy.
 
-    For more information, see [Use Exchange Online PowerShell to modify Outlook on the web mailbox policies](configure-outlook-web-app-mailbox-policy-properties.md#use-exchange-online-powershell-to-modify-outlook-on-the-web-mailbox-policies).
+   For more information, see [Use Exchange Online PowerShell to modify Outlook on the web mailbox policies](configure-outlook-web-app-mailbox-policy-properties.md#use-exchange-online-powershell-to-modify-outlook-on-the-web-mailbox-policies).
 
 ## How do you know this worked?
 
@@ -84,15 +84,15 @@ To verify that you've successfully created an Outlook on the web mailbox policy,
 
 - In Exchange Online PowerShell, run the following command to verify the policy is listed:
 
-    ```
-    Get-OwaMailboxPolicy | Format-Table Name
-    ```
+  ```
+  Get-OwaMailboxPolicy | Format-Table Name
+  ```
 
 - In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
 
-    ```
-    Get-OwaMailboxPolicy -Identity "<Policy Name>"
-    ```
+  ```
+  Get-OwaMailboxPolicy -Identity "<Policy Name>"
+  ```
 
 ## Next steps
 

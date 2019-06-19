@@ -251,29 +251,29 @@ You can't use the EAC to hide Office 365 groups from address lists.
 
 1. In the EAC, go to one of the following locations based on the recipient type:
 
-  - **Recipients** \> **Mailboxes**: User mailboxes.
+   - **Recipients** \> **Mailboxes**: User mailboxes.
 
-  - **Recipients** \> **Groups**: Distribution groups, mail-enabled security groups, and dynamic distribution groups.
+   - **Recipients** \> **Groups**: Distribution groups, mail-enabled security groups, and dynamic distribution groups.
 
-  - **Recipients** \> **Resources**: Room and equipment mailboxes.
+   - **Recipients** \> **Resources**: Room and equipment mailboxes.
 
-  - **Recipients** \> **Contacts**: Mail users and mail contacts.
+   - **Recipients** \> **Contacts**: Mail users and mail contacts.
 
-  - **Recipients** \> **Shared**: Shared mailboxes.
+   - **Recipients** \> **Shared**: Shared mailboxes.
 
-  - **Public folders** \> **Public folders**: Mail-enabled public folders.
+   - **Public folders** \> **Public folders**: Mail-enabled public folders.
 
 2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
 
 3. The recipient properties window opens. What you do next depends on the recipient type:
 
-  - **Mailboxes**, **Contacts**, and **Shared**: On the **General** tab, select **Hide from address list**.
+   - **Mailboxes**, **Contacts**, and **Shared**: On the **General** tab, select **Hide from address list**.
 
-  - **Groups**: On the **General** tab, select **Hide this group from address lists**.
+   - **Groups**: On the **General** tab, select **Hide this group from address lists**.
 
-  - **Resources**: On the **General** tab, click **More options**, and then select **Hide from address lists**.
+   - **Resources**: On the **General** tab, click **More options**, and then select **Hide from address lists**.
 
-  - **Public folders**: On the **General mail properties** tab, select **Hide from Exchange address list**.
+   - **Public folders**: On the **General mail properties** tab, select **Hide from Exchange address list**.
 
    When you're finished, click **Save**.
 

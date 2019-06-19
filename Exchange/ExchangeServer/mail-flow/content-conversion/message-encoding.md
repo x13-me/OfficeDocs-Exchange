@@ -40,7 +40,6 @@ Typically, the default settings for these message encoding options will work fin
 For more information about content conversion in Exchange, see [Content conversion](content-conversion.md). For TNEF (also known as or Rich Text) settings, see [TNEF conversion options](tnef-conversion.md).
 
 ## Remote domain settings
-<a name="RemoteDomains"> </a>
 
 Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](http://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
 
@@ -55,7 +54,6 @@ When you configure message encoding options for a remote domain, the settings ar
 |**Line wrap size**: You can specify the maximum number of characters that can exist on a single line of text in the body of the email message. Older email clients might prefer 78 characters per line.|n/a|Cmdlet: **Set-RemoteDomain** <br/> Parameter: _LineWrapSize_ <br/>  The default value is `Unlimited`, which means the email client is responsible for setting the line wrap size in new messages.|
 
 ## Mail contact and mail user settings
-<a name="Contacts"> </a>
 
 Mail contacts and mail users represent users that have external email addresses in your Exchange organization. For more information, see [Recipients](../../recipients/recipients.md).
 
@@ -92,7 +90,6 @@ The message encoding settings for mail contacts and mail users are described in 
   - If the _MessageFormat_ value is `Mime`, the _MacAttachmentFormat_ value can be `BinHex`, `AppleSingle`, or `AppleDouble`.
 
 ## Outlook settings
-<a name="Outlook"> </a>
 
 As a sender, you can specify the message encoding in Outlook by using any of these methods:
 
@@ -109,17 +106,16 @@ For instructions on configuring these settings in Outlook, see [Change the messa
 By default, Outlook uses automatic character set message encoding by scanning the whole text of the outgoing message to determine the appropriate encoding to use for the message. This setting applies to internal and external recipients. However, you can bypass the automatic selection and specify a preferred encoding for outgoing messages at **File** \> **Options** \> **Advanced** \> **International options**.
 
 ## Outlook on the web settings
-<a name="OutlookWebApp"> </a>
 
 As a sender, you can specify message encoding options in Outlook on the web by using either of these methods:
 
 - Configure the default message format as plain text or HTML in the **Message format** section at **Settings** \> **Options** \> **Mail** \> **Layout**.
-    ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
+
+  ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
 
 - Configure the message format to plain text or HTML as you're composing the message by clicking **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and selecting **Switch to plain text** (if the current format is HTML) or **Switch to HTML** (if the current format is plain text).
 
 ## Order of precedence for message encoding options
-<a name="Order"> </a>
 
 Some message encoding options are available in remote domain settings, Mail contact or mail user settings, and Outlook or Outlook on the web settings. Message encoding options for outgoing messages sent to external recipients are described in the following list from highest priority to lowest priority:
 
