@@ -42,19 +42,19 @@ In this scenario, your organization's mail flow setup looks like the following d
 
 3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
 
-  - **MX record**: Point your MX record to your third-party service. Follow their guidelines for configuring your MX record.
+   - **MX record**: Point your MX record to your third-party service. Follow their guidelines for configuring your MX record.
 
-  - **SPF record**: Because your domain's MX record must point to a third-party service (in other words, you require complex routing), include the third-party service in your SPF record. Follow the third-party provider's guidelines for adding them to your SPF record. Also add Office 365 and the IP addresses of your on-premises servers as valid senders. For example, if contoso.com is your domain name, the third-party cloud service IP address is 10.10.10.1, and your on-premises server IP address is 131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: Because your domain's MX record must point to a third-party service (in other words, you require complex routing), include the third-party service in your SPF record. Follow the third-party provider's guidelines for adding them to your SPF record. Also add Office 365 and the IP addresses of your on-premises servers as valid senders. For example, if contoso.com is your domain name, the third-party cloud service IP address is 10.10.10.1, and your on-premises server IP address is 131.107.21.231, the SPF record for contoso.com should be:
 
-  ```
-  v=spf1 ip4:10.10.10.1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
-  ```
+   ```
+   v=spf1 ip4:10.10.10.1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
+   ```
 
-Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example:
+   Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example:
 
-  ```
-  v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
-  ```
+   ```
+   v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
+   ```
 
 ### More information
 
