@@ -53,9 +53,9 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 3. Select **Scope**, and then select one of the following:
 
-  - Select **Route all accepted domains through this connector**.
+   - Select **Route all accepted domains through this connector**.
 
-  - In the **Recipient domains** section, select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** box, enter a wildcard domain entry for the domain for which you enabled match subdomains. For example, if you enabled match subdomains for contoso.com, enter \*.contoso.com as a recipient domain.
+   - In the **Recipient domains** section, select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** box, enter a wildcard domain entry for the domain for which you enabled match subdomains. For example, if you enabled match subdomains for contoso.com, enter \*.contoso.com as a recipient domain.
 
 > [!NOTE]
 > If you don't yet have an outbound connector, see [Configure mail flow using connectors in Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
