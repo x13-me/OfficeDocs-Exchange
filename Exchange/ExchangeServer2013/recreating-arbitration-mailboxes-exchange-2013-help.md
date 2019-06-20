@@ -4,7 +4,6 @@ TOCTitle: Recreating arbitration mailboxes
 ms:assetid: bb6b8524-aaee-4be8-a04e-e61cd2ab3465
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
-ms.date: 01/17/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dmaguire
@@ -41,7 +40,7 @@ Exchange 2013 comes with five system mailboxes known as *arbitration mailboxes*.
 <td><p>This mailbox stores data used to maintain federation between different Exchange organizations. This includes Rights Management Services, cross-premises mail-flow monitoring probes and responses, notifications, online archives, messaging records management, and cross-premises free/busy information.</p></td>
 </tr>
 <tr class="even">
-<td><p>SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}</p></td>
+<td><p>SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX}</p>(for example, SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}; most of the mailbox name is unique to your organization)</td>
 <td><p>Microsoft Exchange Approval Assistant</p></td>
 <td><p>{}</p></td>
 <td><p>This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.</p></td>
