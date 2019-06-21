@@ -219,7 +219,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 |**.NET Framework**|**CU13**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
-|.NET Framework 4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||
+|.NET Framework 4.8|![check mark](../media/check-mark.png)|||||
 |.NET Framework 4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||
 |.NET Framework 4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
 |.NET Framework 4.6.2||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
@@ -228,8 +228,8 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 |**.NET Framework**|**CU23**|**CU21, CU22**|**CU19, CU20**|**CU16, CU17, CU18**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|.NET Framework 4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
-|.NET Framework 4.7.2||![check mark](../media/check-mark.png)|||
+|.NET Framework 4.8|![check mark](../media/check-mark.png)||||
+|.NET Framework 4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
 |.NET Framework 4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
 |.NET Framework 4.6.2|||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 
