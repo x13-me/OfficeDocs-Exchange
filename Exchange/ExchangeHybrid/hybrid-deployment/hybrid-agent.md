@@ -113,7 +113,7 @@ You must run the HCW from the computer where you want the agent installed. After
    3. Import the cmdlets by running the following command:
 
       ```
-      Import-Module .\\HybridManagement.psm1
+      Import-Module .\HybridManagement.psm1
       ```
 
    4. Next run the following command to verify the computer where you're installing can reach out to all required endpoints for the Hybrid Agent installation and Hybrid Configuration wizard setup.
@@ -155,7 +155,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 7. Select **Use Exchange Modern Hybrid Topology**
 
-   ![Hybrid Topology page](../media/08b9b1933233cf4348506a629d1a6f22.png)
+   ![Hybrid Topology page in the Hybrid Configuration Wizard](../media/08b9b1933233cf4348506a629d1a6f22.png)
 
    Click **Next**.
 
@@ -273,7 +273,7 @@ With each installation of the Hybrid Agent, the HCW install the Hybrid Managemen
 To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
 
 ```
-Import-module .\\HybridManagement.psm1
+Import-module .\HybridManagement.psm1
 ```
 
 After that you can run the following command to view agent status:
