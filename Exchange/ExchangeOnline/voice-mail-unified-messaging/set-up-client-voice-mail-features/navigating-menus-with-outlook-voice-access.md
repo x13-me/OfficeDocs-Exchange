@@ -27,7 +27,7 @@ When UM-enabled users call in to an Outlook Voice Access number, they can sign i
 
 - Change personal options, such as a PIN, or call or send a voice message to a personal contact.
 
-An Outlook Voice Access number is assigned to a user when they're enabled for UM. The user can find an Outlook Voice Access number to access their mailbox in the welcome message that's sent to them when they're enabled for UM or by signing in to their mailbox using Outlook Web App, going to **Options** \> **Telephone**, and locating the Outlook Voice Access number or numbers in the **Outlook Voice Access** section.
+An Outlook Voice Access number is assigned to a user when they're enabled for UM. The user can find an Outlook Voice Access number to access their mailbox in the welcome message that's sent to them when they're enabled for UM or by signing in to their mailbox using Outlook on the web (formerly known as Outlook Web App), going to **Options** \> **Telephone**, and locating the Outlook Voice Access number or numbers in the **Outlook Voice Access** section.
 
 After a user enters their extension number and PIN, the voice mail system will let them know how many new voice mail and email messages they have and when their next meeting is. After the voice mail system has played this prompt, an Outlook Voice Access main menu will be read to the user and the user can say one of the following:
 

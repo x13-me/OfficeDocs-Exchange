@@ -25,7 +25,7 @@ audio codec
 
 audio notes
 
-> Text-based notes that can be added to a voice mail message that has been received in Outlook or Outlook Web App.
+> Text-based notes that can be added to a voice mail message that has been received in Outlook or Outlook on the web (formerly known as Outlook Web App).
 
 auto attendant
 
@@ -65,7 +65,7 @@ dialing rule group
 
 fax partner
 
-> UM fax partners provide applications or services that can accept calls handed off by UM when a fax tone is detected. The partner's product or service then receives the fax data, creates a message, and delivers it to the UM-enabled user as an email message with a .tif attachment. These messages will appear in the Fax search folder in Outlook and Outlook Web App.
+> UM fax partners provide applications or services that can accept calls handed off by UM when a fax tone is detected. The partner's product or service then receives the fax data, creates a message, and delivers it to the UM-enabled user as an email message with a .tif attachment. These messages will appear in the Fax search folder in Outlook and Outlook on the web.
 
 hunt group
 

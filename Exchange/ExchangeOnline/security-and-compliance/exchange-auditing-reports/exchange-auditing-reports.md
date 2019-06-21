@@ -135,12 +135,12 @@ This enables the user to select **Compliance Management** \> **Auditing** in the
 > [!NOTE]
 > To allow a user to run auditing reports but not to export audit logs, use the preceding command to assign the View-Only Audit Logs role.
 
-### Configure Outlook Web App to allow XML attachments
+### Configure Outlook on the web to allow XML attachments
 <a name="configureowa"> </a>
 
-When you export the mailbox audit log or administrator audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook Web App blocks XML attachments by default. If you want to use Outlook Web App to access these audit logs, you have to configure Outlook Web App to allow XML attachments.
+When you export the mailbox audit log or administrator audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook on the web (formerly known as Outlook Web App) blocks XML attachments by default. If you want to use Outlook on the web to access these audit logs, you have to configure Outlook on the web to allow XML attachments.
 
-Run the following command to allow XML attachments in Outlook Web App.
+Run the following command to allow XML attachments in Outlook on the web.
 
 ```
 Set-OwaMailboxPolicy -Identity Default -AllowedFileTypes '.rpmsg','.xlsx','.xlsm','.xlsb','.tiff','.pptx','.pptm','.ppsx','.ppsm','.docx','.docm','.zip','.xls','.wmv','.wma','.wav','.vsd','.txt','.tif','.rtf','.pub','.ppt','.png','.pdf','.one','.mp3','.jpg','.gif','.doc','.bmp','.avi','.xml'
