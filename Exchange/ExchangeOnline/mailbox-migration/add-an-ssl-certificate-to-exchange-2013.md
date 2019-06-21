@@ -43,9 +43,8 @@ Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 3. Import the certificate
 
 ## Create a certificate request
-<a name="BK_Request"> </a>
 
- **To create a certificate request**
+**To create a certificate request**:
 
 1. Open the Exchange admin center (EAC) by browsing to the URL of your Client Access server, for example, https://Ex2013CAS/ECP.
 
@@ -63,9 +62,9 @@ Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 
 8. For each service in the list shown, verify that the external or internal server names that users will use to connect to the Exchange server are correct. For example:
 
-  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
+   - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
 
-  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
+   - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
 
     These domains will be used to create the SSL certificate request. Choose **Next**.
 
@@ -78,16 +77,14 @@ Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 12. Specify the network location where you want this certificate request to be saved. Choose **Finish**.
 
 ## Submit the request to certificate authority
-<a name="BK_Submit"> </a>
 
 After you've saved the certificate request, submit the request to your certificate authority (CA). This can be an internal CA or a third-party CA, depending on your organization. Clients that connect to the Client Access server must trust the CA that you use. You can search the CA website for the specific steps for submitting your request.
 
 ## Import the certificate
-<a name="BK_Import"> </a>
 
 After you receive the certificate from the CA, complete the following steps.
 
- **To import the certificate request**
+**To import the certificate request**:
 
 1. On the **Server** \> **Certificates** page in the EAC, select the certificate request you created in the previous steps.
 
