@@ -21,7 +21,7 @@ manager: dansimp
 
 After you create an Outlook on the web mailbox policy, you can configure a variety of options to control the features available to users in Outlook on the web (formerly known as Outlook Web App). For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
 
-For more information about Outlook on the web mailbox policies, see [Outlook Web App mailbox policies](outlook-web-app-mailbox-policies.md).
+For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies](outlook-web-app-mailbox-policies.md).
 
 ## What do you need to know before you begin?
 

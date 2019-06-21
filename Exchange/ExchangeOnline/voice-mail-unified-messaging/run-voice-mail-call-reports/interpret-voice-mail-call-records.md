@@ -61,7 +61,7 @@ The UM call data that you export includes the following detailed information abo
 
   - **Fax**: A call was received in which a fax tone was detected. If you've configured fax partners, this call was sent to the fax partner.
 
-  - **PlayOnPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in either Microsoft Outlook Web App or Outlook.
+  - **PlayOnPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in either Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App).
 
   - **Find Me**: An outbound call was placed by UM as a result of a Find Me rule in a call answering rule.
 

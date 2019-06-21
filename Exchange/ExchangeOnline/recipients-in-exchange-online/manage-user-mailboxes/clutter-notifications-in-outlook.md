@@ -28,7 +28,7 @@ Clutter is a feature in Office 365 designed to help users focus on the most impo
 These notifications are an integral part of the Clutter feature and therefore can't be suspended by administrators. Clutter is a user election, similar to someone opting to use Conversation view, and the notifications help the user understand the state of Clutter across all clients. There is no central reporting available at this time. For information on how to change the branding of the notifications see [Change the branding of Clutter notifications](change-clutter-notification-branding.md).
 
 > [!NOTE]
-> For information on how end users can enable and begin using Clutter, see [Use Clutter to sort low priority messages in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=528411).
+> For information on how end users can enable and begin using Clutter, see [Use Clutter to sort low priority messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=528411).
 
  **Invitation to use Clutter**
 

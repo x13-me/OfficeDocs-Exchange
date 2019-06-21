@@ -125,7 +125,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
     By default, when a dial plan is created, no Outlook Voice Access numbers are defined. To enable Outlook Voice Access users to call into Outlook Voice Access, you must configure at least one telephone number. The number of alphanumeric characters can't exceed 20.
 
-    When you configure this number on the dial plan, this number will be displayed in Microsoft Office Outlook 2007 or later versions and Outlook Web App for voice mail options.
+    When you configure this number on the dial plan, this number will be displayed in Microsoft Office Outlook 2007 or later versions and Outlook on the web (formerly known as Outlook Web App) for voice mail options.
 
     To add a new Outlook Voice Access number, enter the number in the box and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove an Outlook Voice Access number, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
@@ -219,7 +219,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
   - **Audio language**: Use this list to specify the default language to be used by Outlook Voice Access users. This setting doesn't apply to the language setting on a UM auto attendant. You can set the language for Outlook Voice Access to be the same as or different from the language that's used on a UM auto attendant. When a user places a call to a user who is linked with a dial plan, the audio language is the default language that the voice-recorded operator uses. The system prompts that callers hear are played in the same language. The language that is chosen on the UM dial plan is used to read email, voice mail, and calendar items; to say the user's name if a personal greeting hasn't been recorded; to transcribe a voice message using the Voice Mail Preview feature; and to enable Automatic Speech Recognition (ASR) to work correctly.
 
-    For on-premises deployments, adding other languages lets Outlook Voice Access use a language other than U.S. English. For example, if an Outlook Voice Access user calls in using an Outlook Voice Access number from a desk telephone, the user is greeted with a prerecorded operator's voice in English. Even if the same user selects a different language, such as French, in Outlook Web App, the menus are still read in U.S. English. For the user to be able to hear the prerecorded operator menus in French, you must install the appropriate language pack.
+    For on-premises deployments, adding other languages lets Outlook Voice Access use a language other than U.S. English. For example, if an Outlook Voice Access user calls in using an Outlook Voice Access number from a desk telephone, the user is greeted with a prerecorded operator's voice in English. Even if the same user selects a different language, such as French, in Outlook on the web, the menus are still read in U.S. English. For the user to be able to hear the prerecorded operator menus in French, you must install the appropriate language pack.
 
     > [!NOTE]
     > For Exchange Online, all languages are available.

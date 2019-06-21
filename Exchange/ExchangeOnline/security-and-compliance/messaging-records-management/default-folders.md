@@ -35,12 +35,12 @@ You can create RPTs for the default folders shown in the following table.
 |Calendar|This default folder is used to store meetings and appointments.|
 |Clutter|This folder contains email messages that are low priority. Clutter looks at what you've done in the past to determine the messages you're most likely to ignore. It then moves those messages to the **Clutter** folder.|
 |Conversation History|This folder is created by Microsoft Lync (previously Microsoft Office Communicator). Although not treated as a default folder by Outlook, it's treated as a special folder by Exchange and can have RPTs applied.|
-|Deleted Items|This default folder is used to store items deleted from other folders in the mailbox. Outlook and Outlook Web App users can manually empty this folder. Users can also configure Outlook to empty the folder upon closing Outlook.|
-|Drafts|This default folder is used to store draft messages that haven't been sent by the user. Outlook Web App also uses this folder to save messages that were sent by the user but not submitted to the Hub Transport server.|
+|Deleted Items|This default folder is used to store items deleted from other folders in the mailbox. Outlook and Outlook on the web (formerly known as Outlook Web App) users can manually empty this folder. Users can also configure Outlook to empty the folder upon closing Outlook.|
+|Drafts|This default folder is used to store draft messages that haven't been sent by the user. Outlook on the web also uses this folder to save messages that were sent by the user but not submitted to the Hub Transport server.|
 |Inbox|This default folder is used to store messages delivered to a mailbox.|
 |Journal|This default folder contains actions selected by the user. These actions are automatically recorded by Outlook and placed in a timeline view.|
 |Junk E-mail|This default folder is used to save messages marked as junk e-mail by the content filter on an Exchange server or by the anti-spam filter in Outlook.|
-|Notes|This folder contains notes created by users in Outlook. These notes are also visible in Outlook Web App.|
+|Notes|This folder contains notes created by users in Outlook. These notes are also visible in Outlook on the web.|
 |Outbox|This default folder is used to temporarily store messages sent by the user until they're submitted to a Hub Transport server. A copy of sent messages is saved in the Sent Items default folder. Because messages usually remain in this folder for a brief period, it isn't necessary to create an RPT for this folder.|
 |RSS Feeds|This default folder contains RSS feeds.|
 |Recoverable Items|This is a hidden folder in the Non-IPM sub-tree. It contains the Deletions, Versions, Purges, DiscoveryHolds, and Audits sub-folders. Retention tags for this folder move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox. You can assign only the **Move To Archive** retention action to tags for this folder. To learn more, see [Recoverable Items Folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).|
@@ -52,7 +52,7 @@ You can create RPTs for the default folders shown in the following table.
 
 - RPTs are retention tags for default folders. You can only select a delete action for RPTs - either **delete and allow recovery** or **permanently delete**.
 
-- You can't create an RPT to move messages to the archive. To move old items to archive, you can create a Default Policy Tag (DPT), which applies to the entire mailbox, or Personal Tags, which are displayed in Outlook and Outlook Web App (OWA) as Archive Policies. Your users can apply them to folders or individual messages.
+- You can't create an RPT to move messages to the archive. To move old items to archive, you can create a Default Policy Tag (DPT), which applies to the entire mailbox, or Personal Tags, which are displayed in Outlook and Outlook on the web as Archive Policies. Your users can apply them to folders or individual messages.
 
 - You can't apply RPTs to the Contacts folder.
 

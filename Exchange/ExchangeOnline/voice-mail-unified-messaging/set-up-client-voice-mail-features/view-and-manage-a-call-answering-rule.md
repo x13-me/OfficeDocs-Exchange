@@ -22,7 +22,7 @@ You can use Exchange Online PowerShell to view or configure one or more call ans
 Call answering rules are applied to incoming calls similar to the way Inbox rules are applied to incoming email messages. By default, when a user is enabled for Unified Messaging (UM), no call answering rules are configured. Even so, incoming calls are answered by the mail system and callers are prompted to leave a voice message.
 
 > [!IMPORTANT]
-> Users that are UM-enabled can sign in to Outlook Web App to create, manage, and remove call answering rules.
+> Users that are UM-enabled can sign in to Outlook on the web (formerly known as Outlook Web App) to create, manage, and remove call answering rules.
 
 For additional management tasks related to Call Answering Rules, see [Forwarding calls procedures](forwarding-calls-procedures.md).
 

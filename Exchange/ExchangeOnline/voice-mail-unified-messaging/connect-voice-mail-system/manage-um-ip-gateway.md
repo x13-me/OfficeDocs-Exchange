@@ -60,7 +60,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
   - **Allow message waiting indicator**: Select this check box to allow voice mail notifications to be sent to users for calls taken by the UM IP gateway. This setting allows the UM IP gateway to receive and send SIP NOTIFY messages for users. This setting is enabled by default and allows message waiting notifications to be sent to users.
 
-    Message Waiting Indicator can refer to any mechanism that indicates the existence of a new or unheard message. The indication that a new voice message has arrived can be found in the Inbox in clients such as Outlook and Outlook Web App. It can take the form of a Short Messaging Service (SMS) or text message sent to a registered mobile phone, an outbound call made from an Exchange server to a preconfigured number, or a lighted desktop phone lamp for a user.
+    Message Waiting Indicator can refer to any mechanism that indicates the existence of a new or unheard message. The indication that a new voice message has arrived can be found in the Inbox in clients such as Outlook and Outlook on the web (formerly known as Outlook Web App). It can take the form of a Short Messaging Service (SMS) or text message sent to a registered mobile phone, an outbound call made from an Exchange server to a preconfigured number, or a lighted desktop phone lamp for a user.
 
 ## Use Exchange Online PowerShell to configure UM IP gateway properties
 
