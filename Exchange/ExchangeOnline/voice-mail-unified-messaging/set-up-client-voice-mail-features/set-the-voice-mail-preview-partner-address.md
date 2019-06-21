@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 57fbed1e-1b14-4939-95e6-ef7c072f32a9
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Set the Voice Mail Preview partner address
+title: Set the Voice Mail Preview partner address in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Set the Voice Mail Preview partner address
+# Set the Voice Mail Preview partner address in Exchange Online
 
 You can set a Voice Mail Preview partner address on a Unified Messaging (UM) mailbox policy. After you've set the Voice Mail Preview partner address on a UM mailbox policy, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
 
@@ -48,6 +48,3 @@ This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
 ```
-
-
-

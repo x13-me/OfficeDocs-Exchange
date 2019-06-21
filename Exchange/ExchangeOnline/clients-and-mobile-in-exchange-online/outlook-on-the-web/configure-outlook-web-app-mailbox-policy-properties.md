@@ -11,7 +11,7 @@ title: View or configure Outlook on the web mailbox policy properties in Exchang
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -42,17 +42,17 @@ For more information about Outlook on the web mailbox policies, see [Outlook Web
 
 2. The Details pane show the enabled features in the policy. To see more information, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the properties window that opens you can view and configure the following settings:
 
-  - On the **General** tab, you can view and edit the name of the policy.
+   - On the **General** tab, you can view and edit the name of the policy.
 
-  - On the **Features** tab, use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
+   - On the **Features** tab, use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
 
-    **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
+   **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
 
-  - On the **File Access** tab, use the **Direct file access** check boxes to configure the file access and viewing options for users. File access lets a user open or view the contents of files attached to an email message.
+   - On the **File Access** tab, use the **Direct file access** check boxes to configure the file access and viewing options for users. File access lets a user open or view the contents of files attached to an email message.
 
     File access can be controlled based on whether a user has signed in on a public or private computer. The option for users to select private computer access or public computer access is available only when you're using forms-based authentication. All other forms of authentication default to private computer access.
 
-  - On the **Offline access** tab, use the option buttons to configure offline access availability.
+   - On the **Offline access** tab, use the option buttons to configure offline access availability.
 
 3. When you're finished, click **Save** to update the policy.
 
@@ -102,7 +102,6 @@ To verify that you've successfully modified an Outlook on the web mailbox policy
 
 - In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
 
-    ```
-    Get-OwaMailboxPolicy -Identity "<Policy Name>"
-    ```
-
+  ```
+  Get-OwaMailboxPolicy -Identity "<Policy Name>"
+  ```

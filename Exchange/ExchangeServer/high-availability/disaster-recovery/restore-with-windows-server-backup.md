@@ -9,7 +9,7 @@ ms.date: 2/19/2016
 ms.reviewer: 
 title: Use Windows Server Backup to restore a backup of Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -76,6 +76,3 @@ The **Recovery Progress** page will indicate whether or not the recovery process
 - On the server on which Windows Server Backup was run, verify that the job completed successfully by viewing the backup logs.
 
 - Open Event Viewer and verify that a restore completion event was logged in the Application event log.
-
-
-

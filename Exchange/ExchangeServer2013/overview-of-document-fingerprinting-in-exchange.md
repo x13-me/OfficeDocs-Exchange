@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Document Fingerprinting
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Information workers in your organization handle many kinds of sensitive information during a typical day. *Document Fingerprinting* makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting. If you'd like to learn how to create a document fingerprint, see [Protect form data with document fingerprinting](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting).
 
@@ -49,7 +46,7 @@ The patent template contains the blank fields "Patent title," "Inventors," and "
 
 ## Supported file types
 
-Document Fingerprinting supports the same file types that are supported in transport rules. For a list of supported file types, see [Use mail flow rules to inspect message attachments in Office 365](https://technet.microsoft.com/en-us/library/jj919236\(v=exchg.150\)). One quick note about file types: neither transport rules nor Document Fingerprinting supports the .dotx file type, which can be confusing because that's a template file in Word. When you see the word "template" in this and other Document Fingerprinting topics, it refers to a document that you have established as a standard form, not the template file type.
+Document Fingerprinting supports the same file types that are supported in transport rules. For a list of supported file types, see [Use transport rules to inspect message attachments in Office 365](https://technet.microsoft.com/en-us/library/jj919236\(v=exchg.150\)). One quick note about file types: neither transport rules nor Document Fingerprinting supports the .dotx file type, which can be confusing because that's a template file in Word. When you see the word "template" in this and other Document Fingerprinting topics, it refers to a document that you have established as a standard form, not the template file type.
 
 ## Limitations of document fingerprinting
 
@@ -68,4 +65,3 @@ The Document Fingerprinting DLP agent won't detect sensitive information in the 
 [Integrating sensitive information rules with transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
 [DLP procedures](https://technet.microsoft.com/en-us/library/jj938003\(v=exchg.150\))
-

@@ -12,12 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# IPv6 support in Unified Messaging
+# IPv6 support in Unified Messaging in Exchange Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP. In Microsoft Exchange Server 2010, IPv6 is supported only when IPv4 is also used. A pure IPv6 Exchange environment isn't supported. The use of IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on the computer running Exchange 2010 and the network supports both IP address versions. However, because IPv4 and IPv6 are completely different protocols, an IPv4 network can't communicate directly with an IPv6 network, and vice versa. To handle this shortcoming, network administrators are required to deploy devices, such as routers, that can route information between IPv4 networks and IPv6 networks. If Exchange 2010 is deployed using both IPv4 and IPv6, all server roles except Unified Messaging (UM) can send data to and receive data from devices, servers, and clients that use IPv6 addresses. With Exchange 2013, Unified Messaging is no longer a separate server role like the Transport, Client Access, and Mailbox server roles in Exchange 2007 and Exchange 2010. UM-related components and speech services run on only Client Access and Mailbox servers.
 
@@ -72,17 +69,17 @@ After you install your Client Access and Mailbox servers, you need to create Uni
   - Create a new UM IP gateway or configure an existing UM IP gateway with an IPv6 address for each of the IP gateways, IP PBXs, or SBCs on your network. When you're creating and configuring the required UM IP gateways, you must add the IPv6 address or the Fully Qualified Domain Name (FQDN) for the UM IP gateway. If you're adding the FQDN to the UM IP gateway, you must have created the correct DNS records to resolve the UM IP gateway FQDN to the IPv6 address. If you have an existing UM IP gateway, you can use the **Set-UMIPgateway** cmdlet to configure the IPv6 address or FQDN. After you create or configure the UM IP gateways, you can use the **Get-UMIPgateway** cmdlet to view the properties of the UM IP gateway to ensure that the IPv6 settings are correct.
 
   - Configure the *IPAddressFamily* parameter on each UM IP gateway. To enable the IP gateway to accept IPv6 packets, you must set the UM IP gateway to either accept both IPv4 and IPv6 connections, or accept only IPv6 connections, by using the **Set-UMIPgateway** cmdlet and setting the *IPAddressFamily* parameter to one of the following:
-    
+
       - *IPv4* - This is the default and is used if no other value is configured.
-    
+
       - *IPv6* - This enables IPv6 to be used. However, IPv4 isn't used.
-    
+
       - *Any* - This allows IPv6 to be used, but if the device doesn't support IPv6, then IPv4 is used instead.
 
   - After you've configured your UM IP gateways, you must also configure the IP gateways, IP PBXs, and SBCs on your network to support IPv6. For details, see your hardware vendor for a list of devices that support IPv6 and how to correctly configure them.
 
   - Optionally, you may need to set the Client Access and Mailbox servers to accept IPv6 traffic if either of the servers are only set to receive IPv4 traffic. However, the default setting is for both Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service to accept IPv4 and IPv6 traffic. For details about configuring the IPv6 settings on Client Access and Mailbox servers, see [Set-UMCallRouterSettings](https://technet.microsoft.com/en-us/library/jj215758\(v=exchg.150\)) and [Set-UMService](https://technet.microsoft.com/en-us/library/jj552412\(v=exchg.150\)).
-    
+
     There are two parameters that may need to be configured on Client Access and Mailbox servers to support IPv6: *IPAddressFamily* and *IPAddressFamilyConfigurable*. To enable a Client Access and a Mailbox server to accept IPv6 packets, you must set the Client Access and Mailbox server either to accept both IPv4 and IPv6 connections, or accept only IPv6 connections. To configure the *IPAddressFamily* parameter, the *IPAddressFamilyConfigurable* parameter must be set to `$true`.
 
 ## UM IP addressing logic
@@ -102,4 +99,3 @@ When making outgoing calls in dual mode, if the *IPAddressFamily* parameter is s
   - If UCMA determines that an address isn't available, it will include the address in a list and not try it again based on a configured interval. This prevents UM from needlessly retrying known bad addresses.
 
   - If no IPv6 addresses are available, UCMA will fall back to IPv4 addresses in the list of addresses for SIP peers.
-

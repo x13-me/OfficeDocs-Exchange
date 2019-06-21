@@ -14,30 +14,24 @@ mtps_version: v=EXCHG.150
 
 # Remove a role scope
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role scopes determine what objects are made available to a user who can then change the objects using the cmdlets and parameters assigned to the user. If you're no longer using a scope, it can be removed. For more information about management role scopes in Microsoft Exchange Server 2013, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - Before you can remove a scope, you must remove the scope from any management role assignments that might be using it. For more information about how to remove a scope from a role assignment, see [Change a role assignment](change-a-role-assignment-exchange-2013-help.md).
+- Before you can remove a scope, you must remove the scope from any management role assignments that might be using it. For more information about how to remove a scope from a role assignment, see [Change a role assignment](change-a-role-assignment-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to remove a scope
 
@@ -52,4 +46,3 @@ For example, to remove the "Dublin Servers" scope, use the following command.
 ```powershell
 Remove-ManagementScope "Dublin Servers"
 ```
-

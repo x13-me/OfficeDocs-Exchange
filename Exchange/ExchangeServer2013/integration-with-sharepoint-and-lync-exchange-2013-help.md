@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Integration with SharePoint and Lync
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Microsoft Exchange Server 2013 includes many features that integrate with Microsoft SharePoint 2013 and Microsoft Lync 2013. Together, these products offer a suite of features that make scenarios such as enterprise eDiscovery and collaboration using site mailboxes possible.
 
@@ -85,7 +82,6 @@ OAuth is a standard authorization protocol used by many web sites and web servic
 
 Within an on-premises deployment, Exchange 2013, SharePoint 2013 and Lync Server 2013 do not require an authorization server to issue tokens. Each of these applications issue self-signed tokens to access resources provided by other application. The application that provides access to resources, for example Exchange 2013, must trust the self-signed tokens presented by the calling application. Trust is established by creating a *partner application* configuration for the calling application, which includes the calling application's ApplicationID, certificate, and AuthMetadataUrl. Exchange 2013, SharePoint 2013 and Lync Server 2013 publish their auth metadata document in a well-known URL.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -111,16 +107,12 @@ Within an on-premises deployment, Exchange 2013, SharePoint 2013 and Lync Server
 </tbody>
 </table>
 
-
 **Exchange 2013 Server Auth Certificate**
 
 Exchange 2013 Setup creates a self-signed certificate with the friendly name Microsoft Exchange Server Auth Certificate. The certificate is replicated to all front-end servers in the Exchange 2013 organization. The certificate's thumbprint is specified in Exchange 2013's authorization configuration, along with its service name, a well-known GUID that represents on-premises Exchange 2013. Exchange uses the authorization configuration to publish its auth metadata document.
 
-
 > [!IMPORTANT]
 > The default Server Auth Certificate created by Exchange 2013 is valid for five years. You must ensure the authorization configuration includes a current certificate.
-
-
 
 When Exchange 2013 receives an access request from a partner application via Exchange Web Services (EWS), it parses the `www-authenticate` header of the https request, which contains the access token signed by the calling server using its private key. The auth module validates the access token using the partner application configuration. It then grants access to resources based on the RBAC permissions granted to the application. If the access token is on behalf of a user, the RBAC permissions granted to the user are checked. For example, if a user performs an eDiscovery search using the eDiscovery Center in SharePoint 2013, Exchange checks whether the user is a member of the Discovery Management role group or has the Mailbox Search role assigned and the mailboxes being searched are within the scope of the RBAC role assignment. For more details, see [Permissions](permissions-exchange-2013-help.md).
 
@@ -128,7 +120,6 @@ When Exchange 2013 receives an access request from a partner application via Exc
 
 In Exchange 2013, there are two configuration objects you must manage for OAuth authentication with partner applications:
 
-  - **AuthConfig**   The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
+  - **AuthConfig**: The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
 
-  - **Partner applications**   To enable partner applications to request access tokens from Exchange 2013, you must create a partner application configuration. Exchange 2013 provides the `Configure-EnterprisePartnerApplication.ps1` script, which allows you to quickly and easily create partner application configurations and minimize configuration errors. For details, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
-
+  - **Partner applications**: To enable partner applications to request access tokens from Exchange 2013, you must create a partner application configuration. Exchange 2013 provides the `Configure-EnterprisePartnerApplication.ps1` script, which allows you to quickly and easily create partner application configurations and minimize configuration errors. For details, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).

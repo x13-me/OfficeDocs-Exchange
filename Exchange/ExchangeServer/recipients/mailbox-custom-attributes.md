@@ -9,7 +9,7 @@ ms.date: 4/19/2018
 ms.reviewer: 
 title: Custom attributes
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -111,6 +111,3 @@ In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to refle
 ```
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```
-
-
-

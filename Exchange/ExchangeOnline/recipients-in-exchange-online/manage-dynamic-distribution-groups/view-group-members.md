@@ -11,7 +11,7 @@ title: View members of a dynamic distribution group
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -42,19 +42,21 @@ $FTE = Get-DynamicDistributionGroup "Full Time Employees"
 ```
 
 ```
-Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+Get-Recipient -ResultSize -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 
+This example displays the list of users and email addresses (more than 1000 mailboxes).
+
+```
+Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | Format-Table Name,Primary*
+```
 For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](https://technet.microsoft.com/library/d97ee738-dfa1-464b-855a-4242e8065473.aspx) and [Get-Recipient](https://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx).
 
 > [!NOTE]
-> You cannot view members of a dynamic distribution group by using the EAC.
+> You can't view members of a dynamic distribution group by using the EAC.
 
 ## How do you know this worked?
 
 To verify that you've successfully viewed the members of a dynamic distribution group, do the following:
 
 - In Exchange Online PowerShell, a list of members is returned after you run the previous command to preview a list of dynamic distribution group members. For example, if you created a new user mailbox with properties that match the recipient filter for the dynamic distribution group, this new user should be displayed in the list of group members.
-
-
-

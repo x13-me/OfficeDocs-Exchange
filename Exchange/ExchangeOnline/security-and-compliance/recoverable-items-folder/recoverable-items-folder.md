@@ -11,7 +11,7 @@ title: Recoverable Items folder in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -188,4 +188,3 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an O
   - [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?linkId=821537)
 
   - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
-

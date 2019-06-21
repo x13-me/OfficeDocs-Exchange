@@ -11,7 +11,7 @@ ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure offline address book distribution properties
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 ROBOTS: NOINDEX, NOFOLLOW
@@ -56,6 +56,3 @@ For detailed syntax and parameter information, see [set-OabVirtualDirectory](htt
 ## For More Information
 
 [Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
-
-
-

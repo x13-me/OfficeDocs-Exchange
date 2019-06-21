@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Activate a mailbox database copy
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -109,6 +109,3 @@ To verify that you've successfully activated a mailbox database copy, do one of 
 [Mailbox database copies](../../high-availability/database-availability-groups/database-copies.md)
 
 [Configure mailbox database copy properties](configure-db-properties.md)
-
-
-

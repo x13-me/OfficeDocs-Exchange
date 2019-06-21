@@ -11,7 +11,7 @@ title: Manage policy tips
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -37,9 +37,9 @@ Policy Tips are informative notices that are displayed to email senders while th
 
 3. The content of a message header, message body, or message attachment meets the conditions established within the DLP policies or rules that also include Policy Tip notification rules. Put another way, the Policy Tip only shows up for end-users if they do something that causes the associated rule to take action.
 
-- The default Policy Tip notification text that is built into the system will be shown if you don't use the Policy Tip settings feature to customize your Policy Tip text. To learn more about the default text, see [Policy Tips](policy-tips.md).
+   - The default Policy Tip notification text that is built into the system will be shown if you don't use the Policy Tip settings feature to customize your Policy Tip text. To learn more about the default text, see [Policy Tips](policy-tips.md).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -69,8 +69,27 @@ This procedure results in an informational Policy Tip being shown to an email se
 
 8. If you want to add additional conditions or actions, at the bottom of the window, select **More options**.
 
-    > [!NOTE]
-    >  Only the following conditions can be used: > **SentTo (The recipient is)**> **SentToScope (The recipient is located)**> **From (The sender is)**> **FromMemberOf (The sender is a member of)**> **FromScope (The sender is located)**>  The following actions can't be used: > **RejectMessageReasonText (Reject the message and include an explanation)**> **RejectMessageEnhancedStatusCode (Reject the message with the enhanced status code of)**> **DeletedMessage (Delete the message without notifying anyone)**
+   **Note**:
+
+   You can only use the following conditions:
+
+   - **The recipient is** (_SentTo_)
+
+   - **The recipient is located** (_SentToScope_)
+
+   - **The sender is** (_From_)
+
+   - **The sender is a member of** (_FromMemberOf_)
+
+   - **The sender is located** (_FromScope_)
+
+   You can't use the following actions:
+
+   - **Reject the message and include an explanation** (_RejectMessageReasonText_)
+
+   - **Reject the message with the enhanced status code of** (_RejectMessageEnhancedStatusCode_)
+
+   - **Delete the message without notifying anyone** (_DeleteMessage_)
 
 9. In the **Choose a mode for this rule** list, select whether you want the rule to be enforced. We recommend testing the rule first.
 
@@ -228,6 +247,3 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange 2010 MailTips](https://go.microsoft.com/fwlink/p/?LinkId=265179)
-
-
-

@@ -14,18 +14,12 @@ mtps_version: v=EXCHG.150
 
 # Exchange Management Shell quick reference for Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic describes the most frequently used cmdlets available in the release to manufacturing (RTM) and later versions of Microsoft Exchange Server 2013 and provides examples of their use.
 
-
 > [!NOTE]
 > More content will be added about other areas of Exchange 2013 soon.
-
-
 
 For more information about the Exchange Management Shell in Exchange 2013 and all the available cmdlets, see the following topics:
 
@@ -38,7 +32,6 @@ For more information about the Exchange Management Shell in Exchange 2013 and al
 ## Common cmdlet actions
 
 The following verbs are supported by most cmdlets and are associated with a specific action.
-
 
 <table>
 <colgroup>
@@ -75,11 +68,9 @@ The following verbs are supported by most cmdlets and are associated with a spec
 </tbody>
 </table>
 
-
 ## Important parameters
 
 The following parameters help you control how your commands run and indicate exactly what a command will do before it affects data.
-
 
 <table>
 <colgroup>
@@ -107,11 +98,9 @@ The following parameters help you control how your commands run and indicate exa
 </tbody>
 </table>
 
-
 ## Tips and tricks
 
 The following commands are associated with various tasks that you can use when administering Exchange 2013.
-
 
 <table>
 <colgroup>
@@ -146,9 +135,7 @@ The following commands are associated with various tasks that you can use when a
 </tbody>
 </table>
 
-
 ## Permissions
-
 
 <table>
 <colgroup>
@@ -202,9 +189,7 @@ The following commands are associated with various tasks that you can use when a
 </tbody>
 </table>
 
-
 ## Remote Shell
-
 
 <table>
 <colgroup>
@@ -239,4 +224,3 @@ The following commands are associated with various tasks that you can use when a
 </tr>
 </tbody>
 </table>
-

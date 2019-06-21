@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -48,6 +48,3 @@ In order for your users to create an app password, they will have to first enabl
     ![Check Allow users to turn on 2-step verification](../media/e7870fee-90c5-47c8-8428-4130bf4c951c.png)
 
 4. Your users can now turn on 2-step verification and create an app password as described here: [Prepare your Gmail account for connecting to Outlook and Office 365](prepare-gmail-or-g-suite-accounts.md).
-
-
-

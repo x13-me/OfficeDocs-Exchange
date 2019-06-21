@@ -11,7 +11,7 @@ title: Enable or disable Outlook Web App for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -99,6 +99,3 @@ Or
   ```
 
     If Outlook Web App is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook Web App is disabled, the value is `False`.
-
-
-

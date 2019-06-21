@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Switchovers and Failovers
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
-
 
 Switchovers and failovers are the two forms of outages in Microsoft Exchange Server 2013:
 
@@ -41,25 +38,25 @@ There are three types of switchovers in Exchange 2013:
 
 ## Database Switchovers
 
-A *database switchover* is the process by which an individual active database is switched over to another database copy (a passive copy), and that database copy is made the new active database copy. Database switchovers can happen both within and across datacenters. A database switchover can be performed by using the Exchange Admin Center (EAC) or the Shell. Regardless of which interface is used, the switchover process is as follows:
+A *database switchover* is the process by which an individual active database is switched over to another database copy (a passive copy), and that database copy is made the new active database copy. Database switchovers can happen both within and across datacenters. A database switchover can be performed by using the Exchange admin center (EAC) or the Shell. Regardless of which interface is used, the switchover process is as follows:
 
-1.  The administrator initiates a database switchover to move the current active mailbox database copy to another server.
+1. The administrator initiates a database switchover to move the current active mailbox database copy to another server.
 
-2.  The client used for the task makes an RPC call to the Microsoft Exchange Replication service on a DAG member.
+2. The client used for the task makes an RPC call to the Microsoft Exchange Replication service on a DAG member.
 
-3.  If the DAG member doesn't hold the Primary Active Manager (PAM) role, the DAG member refers the task to the server that holds the PAM role.
+3. If the DAG member doesn't hold the Primary Active Manager (PAM) role, the DAG member refers the task to the server that holds the PAM role.
 
-4.  The task makes an RPC call to the Microsoft Exchange Replication service on the server that holds the PAM role.
+4. The task makes an RPC call to the Microsoft Exchange Replication service on the server that holds the PAM role.
 
-5.  The PAM reads and updates the database location information that's stored in the cluster database for the DAG.
+5. The PAM reads and updates the database location information that's stored in the cluster database for the DAG.
 
-6.  The PAM contacts the Microsoft Exchange Replication service on the DAG member whose passive copy is being activated as the new active mailbox database copy.
+6. The PAM contacts the Microsoft Exchange Replication service on the DAG member whose passive copy is being activated as the new active mailbox database copy.
 
-7.  The Microsoft Exchange Replication service on the target server queries the Microsoft Exchange Replication services on all other DAG members to determine the best log source for the database copy.
+7. The Microsoft Exchange Replication service on the target server queries the Microsoft Exchange Replication services on all other DAG members to determine the best log source for the database copy.
 
-8.  The database is dismounted from the current server and the Microsoft Exchange Replication service on the target server copies the remaining logs to the target server.
+8. The database is dismounted from the current server and the Microsoft Exchange Replication service on the target server copies the remaining logs to the target server.
 
-9.  The Microsoft Exchange Replication service on the target server requests a database mount.
+9. The Microsoft Exchange Replication service on the target server requests a database mount.
 
 10. The Microsoft Exchange Information Store service on the target server replays the log files and mounts the database.
 
@@ -79,23 +76,23 @@ For detailed steps about how to perform a database switchover, see [Activate a m
 
 A server switchover is the process by which all active databases on a DAG member are activated on one or more other DAG members. Like database switchovers, a server switchover can occur both within a datacenter and across datacenters, and it can be initiated by using both the EAC and the Shell. Regardless of which interface is used, the server switchover process is as follows:
 
-1.  The administrator initiates a server switchover to move all current active mailbox database copies to one or more other servers.
+1. The administrator initiates a server switchover to move all current active mailbox database copies to one or more other servers.
 
-2.  The task performs the same steps described earlier in this topic for database switchovers (Steps 2 through 4) for each of the active databases on the current server.
+2. The task performs the same steps described earlier in this topic for database switchovers (Steps 2 through 4) for each of the active databases on the current server.
 
-3.  The PAM reads and updates the database location information that's stored in the cluster database for the DAG.
+3. The PAM reads and updates the database location information that's stored in the cluster database for the DAG.
 
-4.  The PAM contacts the Microsoft Exchange Replication service on each DAG member that has a passive copy being activated.
+4. The PAM contacts the Microsoft Exchange Replication service on each DAG member that has a passive copy being activated.
 
-5.  The Microsoft Exchange Replication service on the target servers query the Microsoft Exchange Replication services on all other DAG members to determine the best log source for the database copy.
+5. The Microsoft Exchange Replication service on the target servers query the Microsoft Exchange Replication services on all other DAG members to determine the best log source for the database copy.
 
-6.  The database is dismounted from the current server and the Microsoft Exchange Replication service on each target server copies the remaining logs.
+6. The database is dismounted from the current server and the Microsoft Exchange Replication service on each target server copies the remaining logs.
 
-7.  The Microsoft Exchange Replication service on each target server requests a database mount.
+7. The Microsoft Exchange Replication service on each target server requests a database mount.
 
-8.  The Microsoft Exchange Information Store service on each target server replays the log files and mounts the database.
+8. The Microsoft Exchange Information Store service on each target server replays the log files and mounts the database.
 
-9.  Any error codes are returned to the Microsoft Exchange Replication service on the target server.
+9. Any error codes are returned to the Microsoft Exchange Replication service on the target server.
 
 10. The PAM updates the database copy state information in the cluster database for the DAG.
 
@@ -120,7 +117,6 @@ Because of the numerous architectural changes in Exchange 2013, including the co
 A failover is an automatic activation process that can occur at the database, server, or datacenter level. Failovers occur in response to a failure that affects an individual database (for example, an isolated storage loss) an entire server (for example, a motherboard failure or a loss of power), or an entire site (for example, the loss of all DAG members in a site).
 
 DAGs and mailbox database copies provide full redundancy and rapid recovery of both the data and the services that provide access to the data. The following table lists the expected recovery actions for a variety of failures. Some failures require the administrator to initiate the recovery, and other failures are automatically handled by the system.
-
 
 <table style="width:100%;">
 <colgroup>
@@ -458,28 +454,27 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 </tbody>
 </table>
 
-
 ## Database Failovers
 
 A database failover occurs when a database copy that was active is no longer able to remain active. The following occurs as part of a database failover:
 
-1.  The database failure is detected by the Microsoft Exchange Information Store service.
+1. The database failure is detected by the Microsoft Exchange Information Store service.
 
-2.  The Microsoft Exchange Information Store service writes failure events to the crimson channel event log.
+2. The Microsoft Exchange Information Store service writes failure events to the crimson channel event log.
 
-3.  The Active Manager on the server that contains the failed database detects the failure events.
+3. The Active Manager on the server that contains the failed database detects the failure events.
 
-4.  The Active Manager requests the database copy status from the other servers that hold a copy of the database.
+4. The Active Manager requests the database copy status from the other servers that hold a copy of the database.
 
-5.  The other servers return the requested database copy status to the requesting Active Manager.
+5. The other servers return the requested database copy status to the requesting Active Manager.
 
-6.  The PAM initiates a move of the active database to another server in the DAG using a best copy selection algorithm.
+6. The PAM initiates a move of the active database to another server in the DAG using a best copy selection algorithm.
 
-7.  The PAM updates the database mount location in the cluster database to refer to the selected server.
+7. The PAM updates the database mount location in the cluster database to refer to the selected server.
 
-8.  The PAM sends a request to the Active Manager on the selected server to become the database master.
+8. The PAM sends a request to the Active Manager on the selected server to become the database master.
 
-9.  The Active Manager on the selected server requests that the Microsoft Exchange Replication service attempt to copy the last logs from the previous server and set the mountable flag for the database.
+9. The Active Manager on the selected server requests that the Microsoft Exchange Replication service attempt to copy the last logs from the previous server and set the mountable flag for the database.
 
 10. The Microsoft Exchange Replication service copies the logs from the server that previously had the active copy of the database.
 
@@ -491,35 +486,35 @@ A database failover occurs when a database copy that was active is no longer abl
 
 A server failover occurs when the DAG member is no longer able to service the MAPI network, or when the Cluster service on a DAG member is no longer able to contact the remaining DAG members. The following occurs as part of a server failover:
 
-1.  The Cluster service on the PAM sends a notification to the PAM for one of two conditions:
-    
-    1.  **Node Down**   The server is reachable but is unable to participate in DAG operations.
-    
-    2.  **MAPI Network Down**   The server can't be contacted over the MAPI network and therefore can't participate in DAG operations.
+1. The Cluster service on the PAM sends a notification to the PAM for one of two conditions:
 
-2.  If the server is reachable, the PAM contacts the Active Manager on the affected server and requests that all databases be immediately dismounted.
+    1. **Node Down**: The server is reachable but is unable to participate in DAG operations.
 
-3.  For each affected database copy:
-    
-    1.  The PAM requests the database copy status from all servers in the DAG.
-    
-    2.  The PAM receives a response from all reachable and active DAG members.
-    
-    3.  The PAM tries to determine the best log source among all responding servers by querying the most recent log generation number from each of the responders.
-    
-    4.  Each of the servers responds with the log generation number.
+    2. **MAPI Network Down**: The server can't be contacted over the MAPI network and therefore can't participate in DAG operations.
 
-4.  The PAM retrieves the current search index catalog status from the cluster database.
+2. If the server is reachable, the PAM contacts the Active Manager on the affected server and requests that all databases be immediately dismounted.
 
-5.  Based on the log generation number and catalog health of each database copy, the PAM selects the best copies to activate.
+3. For each affected database copy:
 
-6.  The PAM updates the mounted location of the database in the cluster database.
+    1. The PAM requests the database copy status from all servers in the DAG.
 
-7.  The PAM initiates database failover by communicating with the Active Manager on one or more other servers.
+    2. The PAM receives a response from all reachable and active DAG members.
 
-8.  The Active Manager on the selected servers requests that the Microsoft Exchange Replication service attempt to copy the last logs from the previous server and set the mountable flag.
+    3. The PAM tries to determine the best log source among all responding servers by querying the most recent log generation number from each of the responders.
 
-9.  When the database is mountable, the Active Manager on the servers mounts the databases.
+    4. Each of the servers responds with the log generation number.
+
+4. The PAM retrieves the current search index catalog status from the cluster database.
+
+5. Based on the log generation number and catalog health of each database copy, the PAM selects the best copies to activate.
+
+6. The PAM updates the mounted location of the database in the cluster database.
+
+7. The PAM initiates database failover by communicating with the Active Manager on one or more other servers.
+
+8. The Active Manager on the selected servers requests that the Microsoft Exchange Replication service attempt to copy the last logs from the previous server and set the mountable flag.
+
+9. When the database is mountable, the Active Manager on the servers mounts the databases.
 
 For more information about Active Manager's best copy selection process, see [Active Manager](active-manager-exchange-2013-help.md).
 
@@ -536,4 +531,3 @@ With the proper configuration, failover can happen at the client level and clien
 Since you can failover the namespace between datacenters, all that is needed to achieve a datacenter failover is a mechanism for failover of the Mailbox role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. The key is that third location is isolated from network failures that affect the locations containing the DAG members.
 
 If you only have two datacenters and would like to be able to configure automatic failover, you can utilize Microsoft Azure as your third location. You will need to create an Azure virtual network and connect it to your two datacenters using a multi-point VPN. You will then be able to place your witness server on a Microsoft Azure virtual machine. For more information, see [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md).
-

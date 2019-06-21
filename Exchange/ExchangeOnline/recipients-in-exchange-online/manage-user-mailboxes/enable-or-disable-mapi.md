@@ -11,7 +11,7 @@ title: Enable or disable MAPI for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -96,6 +96,3 @@ Or
   ```
 
     If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.
-
-
-

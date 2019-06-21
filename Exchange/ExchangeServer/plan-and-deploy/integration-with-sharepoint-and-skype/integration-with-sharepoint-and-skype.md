@@ -11,7 +11,7 @@ title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -109,9 +109,9 @@ In on-premises deployments, Exchange 2016, SharePoint Server 2016, and Skype for
 
 |**Server**|**AuthMetadataUrl**|
 |:-----|:-----|
-| Exchange 2016  <br/> | `https://<serverfqdn>/autodiscover/metadata/json/1` <br/> |
-|SharePoint Server 2016  <br/> | `https://<serverfqdn>/_layouts/15/metadata/json/1` <br/> |
-|Skype for Business  <br/> | `https://<serverfqdn>/metadata/json/1` <br/> |
+| Exchange 2016| `https://<serverfqdn>/autodiscover/metadata/json/1`|
+|SharePoint Server 2016| `https://<serverfqdn>/_layouts/15/metadata/json/1`|
+|Skype for Business| `https://<serverfqdn>/metadata/json/1`|
 
 In hybrid deployments, you need to configure OAuth authorization protocol between your on-premises Exchange 2016 and Exchange Online organizations. Hybrid deployments by default continue to use the federation trust process.
 
@@ -125,7 +125,7 @@ The per service default state of modern authentication is:
 
 - Skype for Business Online - OFF by default
 
--  SharePoint Online - ON by default.
+- SharePoint Online - ON by default.
 
 > [!IMPORTANT]
 > The default Server Auth Certificate created by Exchange 2016 is valid for five years. You need to make sure that the authorization configuration includes a current certificate.
@@ -164,6 +164,3 @@ After you have installed SharePoint Server 2016 in an environment with Exchange 
 The user photos feature lets you store high resolution user photos in Exchange 2016 that can be accessed by client applications, including Outlook, Outlook on the web, SharePoint 2016, Skype for Business, and mobile email clients. A low-resolution photo is also stored in Active Directory. The cmdlet *Set-UserPhoto* stores a copy of a high resolution image in the user's Exchange mailbox, and stores a 64×64 pixel copy of the photo as an image in the Active Directory attribute thumbnailPhoto.
 
 As with UCS, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos by using Outlook on the web, SharePoint 2016 or Skype for Business. For detail about managing photos on Outlook on the web, see [My account](https://go.microsoft.com/fwlink/p/?LinkId=269646).
-
-
-

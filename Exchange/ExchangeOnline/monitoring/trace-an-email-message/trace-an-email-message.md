@@ -11,7 +11,7 @@ title: Trace an email message
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -27,6 +27,3 @@ Sometimes an email message gets lost in transit, or it can take a lot longer tha
 [Run a Message Trace and View Results](run-a-message-trace-and-view-results.md) describes how to run a message trace to narrow down your search criteria. It also describes how to view message trace results, and how to view details about a specific message.
 
 The [Message Trace FAQ](message-trace-faq.md) topic presents common messaging questions that arise and how to best answer these questions using the message trace tool.
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Perform a dial tone recovery
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -130,6 +130,3 @@ To verify that you've successfully moved a mailbox, do the following:
 - Open the mailbox using Outlook on the web.
 
 - Open the mailbox using Microsoft Outlook.
-
-
-

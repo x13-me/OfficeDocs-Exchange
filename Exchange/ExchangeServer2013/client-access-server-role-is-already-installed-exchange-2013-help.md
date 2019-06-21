@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Client Access server role is already installed
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup has detected that you're attempting to install the Client Access server role; however, the role is already installed on the computer.
 
@@ -38,4 +35,3 @@ You may also receive this message if a previous installation of Exchange didn't 
   - Search the Internet using your favorite search engine. Be sure to include the title of this topic in your search.
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
-

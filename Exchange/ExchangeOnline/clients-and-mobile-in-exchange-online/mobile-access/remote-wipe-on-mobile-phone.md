@@ -11,7 +11,7 @@ title: Perform a remote wipe on a mobile phone
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -78,6 +78,3 @@ There are several ways to verify that the remote wipe completed.
 - In the EAC, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
 
 - In Outlook Web App, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
-
-
-

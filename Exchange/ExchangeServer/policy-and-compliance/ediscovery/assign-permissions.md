@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Assign eDiscovery permissions in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -85,6 +85,3 @@ To verify that you've added the user to the Discovery Management role group, use
   ```
   Get-RoleGroupMember -Identity "Discovery Management"
   ```
-
-
-

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: eecc40ae-fac7-41e4-a1e1-16330f4462a3
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Disable common PIN patterns for voice mail
+title: Disable common PIN patterns for voice mail in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Disable common PIN patterns for voice mail
+# Disable common PIN patterns for voice mail in Exchange Online
 
 You can enable or disable common Unified Messaging (UM) PIN patterns for Outlook Voice Access users. If you enable or disable the common PIN patterns setting on a UM mailbox policy, the setting will apply to all UM-enabled users associated with the UM mailbox policy. By default, UM-enabled users can't use common patterns when they create a PIN.
 
@@ -64,6 +64,3 @@ This example prevents users associated with the UM mailbox policy named `MyUMMai
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $false
 ```
-
-
-

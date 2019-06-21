@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Manage mailbox restore requests
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Mailbox restore requests are used to restore disconnected mailboxes. A disconnected mailbox is a mailbox in an Exchange mailbox database that isn't associated with an Active Directory user account. Mailboxes become disconnected when they're disabled, deleted, or moved to another database. For more information, see [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md).
 
@@ -37,29 +34,24 @@ For additional management tasks related to disconnected mailboxes, see the follo
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 2 minutes.
+- Estimated time to complete each procedure: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox restore request" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox restore request" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic can only be performed in the Shell. You can't use the EAC to manage mailbox restore requests.
+- The procedures in this topic can only be performed in the Shell. You can't use the EAC to manage mailbox restore requests.
 
-  - To display the value of the *Identity* property for all mailbox restore requests, run the following command.
-    
-    ```powershell
-    Get-MailboxRestoreRequest | Format-Table Identity
-    ```
-    
+- To display the value of the *Identity* property for all mailbox restore requests, run the following command.
+
+  ```powershell
+  Get-MailboxRestoreRequest | Format-Table Identity
+  ```
+
     You can use this identity value to specify a specific mailbox restore request when you're performing the procedures in this topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to view restore request properties
 
@@ -111,7 +103,6 @@ For detailed syntax and parameter information, see [Get-MailboxRestoreRequest](h
 
 By default, the **Get-MailboxRestoreRequest** cmdlet returns the name of the request, the target mailbox to which data is being restored, and the status of the request. The following table lists useful information returned if you pipe the cmdlet to the **Format-List** cmdlet.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -155,7 +146,6 @@ By default, the **Get-MailboxRestoreRequest** cmdlet returns the name of the req
 </tbody>
 </table>
 
-
 ## How do you know this worked?
 
 Run the **Get-MailboxRestoreRequest** cmdlet to verify that you can view properties for mailbox restore requests. If the cmdlet returns an error, verify that you're using the correct syntax and identity. In some cases, the cmdlet may be successful and not return any results. For example, if you've submitted a mailbox restore request and run the command `Get-MailboxRestoreRequest -Status InProgress` and no results are returned, then none of the restore requests are currently running.
@@ -173,19 +163,19 @@ Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
 This example returns the statistics for Dan Park's mailbox and exports the report to a .csv file.
 
 ```powershell
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
 ```
 
 This example returns additional information about the restore request for Pilar Pinilla's mailbox using the *IncludeReport* parameter and piping the results to the **Format-List** cmdlet.
 
 ```powershell
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List
 ```
 
 This example returns additional information for all restore requests that have a status of `Failed` using the *IncludeReport* parameter, and then saves the information to the file AllRestoreReports.txt in the location where the command is being run.
 
 ```powershell
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
 ```
 
 For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\)) and [Get-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829907\(v=exchg.150\)).
@@ -193,7 +183,6 @@ For detailed syntax and parameter information, see [Get-MailboxRestoreRequestSta
 ## Get-MailboxRestoreRequestStatistics Output
 
 By default, the [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\)) cmdlet returns the name of the request, the status of the request, the alias of the target mailbox, and the percentage completed. The following table lists other useful information returned if you pipeline the cmdlet to the **Format-List** cmdlet.
-
 
 <table>
 <colgroup>
@@ -414,7 +403,6 @@ By default, the [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.
 </tbody>
 </table>
 
-
 ## How do you know this worked?
 
 Run the **Get-MailboxRestoreRequestStatistics** cmdlet to verify that you can view the statistics for mailbox restore requests. If the cmdlet returns an error, verify that you're using the correct identity for the restore request.
@@ -432,7 +420,7 @@ Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit
 This example specifies that the restore request MailboxRestore1 for Florence Flipo's mailbox skips 100 corrupted items. Because the *BadItemLimit* value is greater than 50, the *AcceptLargeDataLoss* parameter must be specified.
 
 ```powershell
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829909\(v=exchg.150\)).
@@ -456,7 +444,7 @@ Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
 This example suspends all restore requests in progress by first retrieving all requests that have a status of `InProgress`, and then piping the output to the **Suspend-MailboxRestoreRequest** cmdlet and including the suspend comment "Resume after FY13Q2 Maintenance."
 
 ```powershell
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
 ```
 
 For detailed syntax and parameter information, see [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829906\(v=exchg.150\)).
@@ -503,11 +491,8 @@ If the value of the *Suspend* property equals `False`, the restore request succe
 
 You can use the **Remove-MailboxRestoreRequest** cmdlet to remove mailbox restore requests. If you remove a restore request after mailbox data begins being copied to the target mailbox, the mailbox data that's copied remains in the target mailbox.
 
-
 > [!NOTE]
 > As previously stated, completed restore requests are retained for 30 days by default before they're automatically deleted.
-
-
 
 This example removes the restore request Pilar Pinilla\\MailboxRestore1.
 
@@ -540,4 +525,3 @@ Get-MailboxRestoreRequest -Identity <identity of removed restore request>
 The command will return an error stating that the restore request doesn't exist.
 
 You can also run the **Get-MailboxRestoreRequest** cmdlet. If a restore request was successfully removed, it won't be included in the results.
-

@@ -11,7 +11,7 @@ title: View and export the external admin audit log
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -110,6 +110,3 @@ Get-AuditLogSearch | Format-List
 - The administrator audit log doesn't record any action that is based on an Exchange Online PowerShell cmdlet that begins with the verbs **Get**, **Search**, or **Test**.
 
 - Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted.
-
-
-

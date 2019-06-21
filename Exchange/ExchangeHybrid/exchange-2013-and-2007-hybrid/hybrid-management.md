@@ -3,7 +3,7 @@ title: "Hybrid management in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -33,7 +33,7 @@ The EAC enables you to perform many deployment tasks and most common day-to-day 
 
 You access the Exchange Online organization in the EAC by selecting the Office 365 cross-premises navigation tab. The cross-premises navigation allows you to easily switch between your Exchange Online and your on-premises Exchange organizations. If you've configured a hybrid deployment, selecting the Office 365 tab allows you to manage the Exchange Online organization and recipient objects. If you don't have an Exchange Online organization, selecting the Office 365 link will direct you to the Office 365 sign-up page.
 
-For more information about the EAC, see [Exchange Administration Center](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+For more information about the EAC, see [Exchange admin center](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
 
 ## The Exchange Management Shell
 

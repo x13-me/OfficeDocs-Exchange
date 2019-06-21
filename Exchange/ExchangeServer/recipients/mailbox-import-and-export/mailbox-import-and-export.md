@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Mailbox imports and exports in Exchange Server
 
 ---
@@ -101,6 +101,3 @@ Here are some things to consider when you export mailboxes to .pst files:
 - In the Exchange Management Shell, you can increase or decrease the priority value for mailbox export requests (the _Priority_ parameter).
 
 For mailbox export procedures, see [Procedures for mailbox exports to .pst files in Exchange Server](export-procedures.md).
-
-
-

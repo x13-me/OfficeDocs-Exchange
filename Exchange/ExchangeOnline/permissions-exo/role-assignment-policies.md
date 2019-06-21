@@ -11,7 +11,7 @@ title: Role assignment policies in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -402,4 +402,3 @@ To verify that you've successfully modified the role assignment policy assignmen
    ```
    $X | where {$_.RoleAssignmentPolicy -eq '<RoleAssignmentPolicyName>'}
    ```
-

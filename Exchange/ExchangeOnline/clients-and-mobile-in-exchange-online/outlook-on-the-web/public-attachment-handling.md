@@ -10,7 +10,7 @@ title: Public attachment handling in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -194,4 +194,3 @@ Some attachments might be removed or blocked by antivirus software used by your 
 - .xlsm
 
 - .xlsx
-

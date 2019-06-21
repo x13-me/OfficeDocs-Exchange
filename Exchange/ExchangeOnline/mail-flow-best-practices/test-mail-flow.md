@@ -11,7 +11,7 @@ title: Test mail flow by validating your Office 365 connectors
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -41,4 +41,3 @@ Mail flow issues can also happen when your MX record is not setup correctly. To 
 [Fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [When do I need a connector?](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md#when-do-i-need-a-connector)
-

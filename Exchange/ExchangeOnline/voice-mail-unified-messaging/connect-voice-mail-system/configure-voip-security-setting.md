@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the VoIP security setting
+title: Configure the VoIP security setting in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure the VoIP security setting
+# Configure the VoIP security setting in Exchange Online
 
 You can enable Voice over IP (VoIP) security for a Unified Messaging (UM) dial plan. By default, when a UM dial plan is created, it will use Unsecured mode or no encryption. Exchange servers can answer calls for single or multiple UM dial plans and can answer calls for dial plans that have different VoIP security settings. In Office 365 and Exchange Online Secured mode is required and can't be disabled.
 
@@ -74,6 +74,3 @@ This example configures a UM dial plan named `MySecureDialPlan` to not encrypt S
 ```
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Unsecured
 ```
-
-
-

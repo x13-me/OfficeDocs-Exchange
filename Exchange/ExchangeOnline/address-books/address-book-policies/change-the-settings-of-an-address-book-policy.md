@@ -11,7 +11,7 @@ title: Change the settings of an address book policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -86,4 +86,3 @@ To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the
 ```
 Get-AddressBookPolicy -Identity "<ABPName>" | Format-List
 ```
-

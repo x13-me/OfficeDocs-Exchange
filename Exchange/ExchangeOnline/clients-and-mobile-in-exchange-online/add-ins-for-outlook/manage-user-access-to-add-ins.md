@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Manage user access to add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -18,4 +18,3 @@ manager: dansimp
 # Manage user access to add-ins for Outlook in Exchange Online
 
 We recommend that you manage Office add-ins for your Exchange Online organization via Centralized Deployment in the Office 365 admin center. For more information, see [Manage deployment of Office 365 add-ins in the Office 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins).
-

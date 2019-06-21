@@ -12,7 +12,7 @@ title: Use a screen reader to export and review audit logs in the Exchange admin
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 
@@ -164,4 +164,3 @@ Before you can export and review audit logs, you or another admin must enable ma
 |ClientIPAddress|The IP address of the computer used by the non-owner to access the mailbox|
 |LogonUserDN|The display name of the non-owner|
 |Subject|The subject line of the message affected by the non-owner|
-

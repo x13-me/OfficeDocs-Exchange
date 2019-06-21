@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Configure Deleted Item retention and Recoverable Items quotas
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -108,6 +108,3 @@ Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -Recoverab
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/11/2018
 ms.reviewer: 
 title: Create an offline address book virtual directory
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 ROBOTS: NOINDEX, NOFOLLOW
@@ -64,6 +64,3 @@ New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "http
 After you create a new OAB virtual directory, you must edit the settings on each OAB that uses Web-based distribution to reconnect to the OAB virtual directory. For more information, see [Change the offline address book generation schedule](change-address-book-generation-schedule.md).
 
 For detailed syntax and parameter information, see [New-OABVirtualDirectory](https://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).
-
-
-

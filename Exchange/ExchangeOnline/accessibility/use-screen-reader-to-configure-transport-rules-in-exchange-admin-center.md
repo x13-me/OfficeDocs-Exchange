@@ -12,7 +12,7 @@ title: Use a screen reader to configure mail flow rules in the Exchange admin ce
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 
@@ -125,4 +125,3 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
      > [!TIP]
      > To turn off a new rule, press the Tab key to tab through the elements of the **rules** content area of the page, use the Up Arrow and Down Arrow keys to select a rule, and then press Spacebar. To hear the settings for a selected rule, press the Tab key until the focus moves to the details pane for the selected rule, and you hear the details for the rule.
-

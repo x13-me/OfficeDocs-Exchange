@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Email address policy procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 [Create an Email Address Policy](create-an-email-address-policy-exchange-2013-help.md)
 
@@ -26,4 +23,3 @@ _**Applies to:** Exchange Server 2013_
 [Edit an email address policy](edit-an-email-address-policy-exchange-2013-help.md)
 
 [Remove an email address policy](remove-an-email-address-policy-exchange-2013-help.md)
-

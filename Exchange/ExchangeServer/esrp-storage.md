@@ -8,7 +8,7 @@ ms.date: 07/23/2018
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
 ms.reviewer: mattgos
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -50,7 +50,7 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 ### Dell: 1001-5000 mailboxes
 [Dell EqualLogic PS 4210E Series 2,500 mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Nov 19, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440709/)
 
-[Dell EqualLogic PS 6210E Series 5,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (July 11, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440232/download.aspx)
+[Dell EqualLogic PS 6210E Series 5,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (July 11, 2014)](http://downloads.dell.com/solutions/storage-solution-resources/BP1078-Scaling%20Exchange%202013%20on%20HyperV.pdf)
 
 [Dell PowerEdge R720xd 2,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Jun 5, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20381192.aspx)
 
@@ -76,7 +76,7 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 
 ### Dell Compellent: 1001-5000 mailboxes
-[Dell Compellent SC4020 v6.5 4,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (June 09, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439313.aspx)
+[Dell Compellent SC4020 v6.5 4,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (June 09, 2014)](https://downloads.dell.com/solutions/general-solution-resources/White%20Papers/Dell%20Compellent%20SC4020%20v6.5%204500-user%20Exchange%202013%20Mailbox%20Resiliency%20Solution%20with%201TB%20drives.pdf)
 
 ### Dell: Greater than 5000 mailboxes
 [Dell EMC SC Series SC5020 9,000 Mailbox Exchange 2016 Resiliency Storage Solution using 7.2K drives (Jun 26, 2017)](http://en.community.dell.com/techcenter/extras/m/white_papers/20444169)
@@ -88,16 +88,18 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 [Dell EMC PowerEdge R730xd and MD1400 10,000 Mailbox Resiliency Microsoft Exchange 2016 Storage Solution (Feb 21, 2017)](http://en.community.dell.com/techcenter/blueprints/blueprint_for_ucc/m/mediagallery/20443506)
 
 [Dell PowerEdge R730xd 10,000 20GB Mailbox Resiliency Exchange 2016 Storage Solution (July 22, 2016)](http://en.community.dell.com/techcenter/blueprints/blueprint_for_ucc/m/mediagallery/20442778)
-[Dell PowerEdge R730xd 8,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (May 15, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441134)
+
+[Dell PowerEdge R730xd 8,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (May 15, 2015)](https://downloads.dell.com/solutions/general-solution-resources/White%20Papers/Deployment%20Guide%20-%20Exchange%202013%20on%20PowerEdge%20R730xd%20-%208000%205GB-10000%203GB%20Mailboxes.pdf)
+
 [Dell PowerEdge R730xd 10,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (May 15, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441135)
 
-[Dell PowerEdge R720xd 6,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 23, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439110.aspx)
+[Dell PowerEdge R720xd 6,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 23, 2014)](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/6000-dell-poweredge-720xd-6000-mailbox-resiliency-microsoft-exchange-2013-storage-solution.pdf)
 
 [Dell PowerEdge R730xd 8,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sept 12, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440440)
 
-[ Dell PowerEdge R730xd and Powervault MD1400 12,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 7, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440534)
+[Dell PowerEdge R730xd and Powervault MD1400 12,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 7, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440534)
 
-[Dell PowerEdge R720xd 12,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (May 3, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439132.aspx)
+[Dell PowerEdge R720xd 12,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (May 3, 2014)](http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/n-dell-poweredge-r720xd-md1200-12000-mailbox-resiliency-microsoft-exchange-2013-storage-solution.pdf)
 
 [Dell PowerVault MD3260 15,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 10, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439083.aspx)
 
@@ -111,20 +113,20 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441954)
 
-[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441962)
+[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](https://downloads.dell.com/solutions/storage-solution-resources/Dell_FCDirect_20k_ESRP_120215.pdf)
 
 [Dell Storage Center SC4020 v6.5 with iSCSI 7,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Jan 30, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440957)
 
 
 ### Dell/ATTO: Greater than 5000 mailboxes
-[Dell/ATTO 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 15, 2016)](https://www.attotech.com/solutions/Dell/#msexchange)
+[Dell/ATTO 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (May, 2016)](https://www.atto.com/pdfs/WhitePaper-ExpressSAS-MS-ESRP.pdf)
 
 ### Dell Compellent: Greater than 5000 mailboxes
-[Dell Compellent SC4020 v6.5 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (June 09, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439312.aspx)
+[Dell Compellent SC4020 v6.5 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (June 09, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439312)
 
-[Dell Compellent Storage Center 6.4 / 25,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438163.aspx)
+[Dell Compellent Storage Center 6.4 / 25,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438163)
 
-[Dell Compellent Storage Center 6.4 / 50,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438164.aspx)
+[Dell Compellent Storage Center 6.4 / 50,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438164)
 
 [Dell Compellent Storage Center 6.4 10K Drive 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 24, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20437919.aspx)
 
@@ -576,4 +578,3 @@ IBM System Storage DCS3700 40,000 Mailbox Exchange 2010 Mailbox Resiliency Stora
 [Exchange 2010 mailbox server role requirements calculator](http://gallery.technet.microsoft.com/exchange/exchange-2010-mailbox-server-role-)
 
 [Exchange Server Jetstress 2013 Tool](https://www.microsoft.com/en-us/download/details.aspx?id=36849)
-

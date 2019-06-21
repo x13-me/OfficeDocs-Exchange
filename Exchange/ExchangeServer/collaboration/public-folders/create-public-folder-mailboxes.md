@@ -9,7 +9,7 @@ ms.date: 7/12/2018
 ms.reviewer: 
 title: Create a public folder mailbox in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -22,7 +22,7 @@ Before you can create a public folder in Exchange server, you must first create 
 The first public folder mailbox that you create in the organization is the primary hierarchy mailbox, which contains the only writable copy of the public folder hierarchy. Any additional public folder mailboxes that you create are secondary hierarchy mailboxes, which contain a read-only copy of the public folder hierarchy. You can create multiple public folder mailboxes for load balancing.
 
 > [!NOTE]
->  For more information about the storage quotas and limits for public folders in on-premises Exchange, see [Limits for public folders](limits.md).
+> For more information about the storage quotas and limits for public folders in on-premises Exchange, see [Limits for public folders](limits.md).
 
 For additional management tasks related to public folders in Exchange Server, see [Public folder procedures](procedures.md).
 
@@ -107,7 +107,3 @@ To verify that you've successfully created the a public folder mailbox, do any o
       ```
       Get-Mailbox -PublicFolder -Identity <GUID>
       ```
-
-
-
-

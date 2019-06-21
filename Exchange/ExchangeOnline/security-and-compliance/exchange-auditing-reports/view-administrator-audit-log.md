@@ -11,7 +11,7 @@ title: View the administrator audit log
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 
@@ -22,7 +22,7 @@ manager: dansimp
 In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
 
 > [!NOTE]
->  Administrator auditing logging is enabled by default. >  The administrator audit log doesn't record any action that's based on an Exchange Online PowerShell cmdlet that begins with the verbs **Get**, **Search**, or **Test**. >  Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted.
+> Administrator auditing logging is enabled by default. <br/> The administrator audit log doesn't record any action that's based on an Exchange Online PowerShell cmdlet that begins with the verbs **Get**, **Search**, or **Test**. <br/> Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted.
 
 ## What do you need to know before you begin?
 
@@ -75,6 +75,3 @@ If you've successfully run an administrator audit log report, configuration chan
 
 > [!NOTE]
 > When a change is made in your organization, it may take up to 15 minutes to appear in audit log search results. If a change doesn't appear in the administrator audit log, wait a few minutes and run the search again.
-
-
-

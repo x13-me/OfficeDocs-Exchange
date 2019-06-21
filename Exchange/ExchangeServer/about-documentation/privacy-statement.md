@@ -9,7 +9,7 @@ ms.date: 7/13/2018
 ms.reviewer: 
 title: Exchange Server Privacy Statement
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -154,6 +154,3 @@ Redmond, Washington 98052 USA
 425-882-8080
 
 To find the Microsoft subsidiary in your country or region, see [Microsoft office locations around the world](https://go.microsoft.com/fwlink/p/?linkid=848727).
-
-
-

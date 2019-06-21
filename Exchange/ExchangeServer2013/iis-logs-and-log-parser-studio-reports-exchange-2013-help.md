@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # IIS Logs and Log Parser Studio Reports
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 ## Analyzing Log Parser Studio Reports
 
@@ -76,4 +73,3 @@ A .zip file containing the Log Parser Studio reports listed here, and additional
   - **OWA\_WP: Requests per user (Top 10k)**. Lists OWA requests per user for the top 10,000 users.
 
   - **OWA\_WP: Top Talkers (CSV)**. Lists the top OWA clients from highest to lowest request count and sends the result to a CSV file.
-

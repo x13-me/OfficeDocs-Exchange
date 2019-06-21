@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -84,12 +84,12 @@ You can edit the existing image files, or replace the files with new files that 
 
 |**Image**|**File name**|**Location**|**Dimensions (width x height in pixels)**|**Bit depth**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |favicon.ico  <br/> | `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources` <br/> |16 x 16  <br/> |32  <br/> |
-|2  <br/> |olk_logo_white.png  <br/> | `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources` <br/> |128 x 108  <br/> |32  <br/> |
-|3  <br/> |owa_text_blue.png  <br/> | `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources` <br/> |300 x 76  <br/> |32  <br/> |
-|4  <br/> |Sign_in_arrow.png (for left-to-right languages)  <br/> Sign_in_arrow_rtl.png (for right-to-left languages)  <br/> | `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources` <br/> |22 x 22  <br/> |32  <br/> |
-|5  <br/> |olk_logo_white_cropped.png  <br/> | `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources` <br/> |265 x 310  <br/> |32  <br/> |
-|6  <br/> |office_logo_white_small.png  <br/> | `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0` (for left-to-right languages)  <br/> `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\rtl` (for right-to-left languages)  <br/> |81 x 26  <br/> |8  <br/> |
+|1|favicon.ico| `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|16 x 16|32|
+|2|olk_logo_white.png| `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|128 x 108|32|
+|3|owa_text_blue.png| `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|300 x 76|32|
+|4|Sign_in_arrow.png (for left-to-right languages)  <br/> Sign_in_arrow_rtl.png (for right-to-left languages)| `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|22 x 22|32|
+|5|olk_logo_white_cropped.png| `%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|265 x 310|32|
+|6|office_logo_white_small.png| `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0` (for left-to-right languages)  <br/> `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\rtl` (for right-to-left languages)|81 x 26|8|
 
 ## How do you know this worked?
 
@@ -100,6 +100,3 @@ To verify that you've successfully customized the Outlook on the web sign-in, la
 2. If you don't see your changes, clear your browsing history (delete temporary Internet files), and refresh the browser window.
 
  **Note**: To see the effects of your changes, you can keep the .css file open and refresh the browser window after you save each change.
-
-
-

@@ -11,7 +11,7 @@ title: Add retention tags to or remove retention tags from a retention policy
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -98,6 +98,3 @@ This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags a
 ```
 (Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks | Format-Table name
 ```
-
-
-

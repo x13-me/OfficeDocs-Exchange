@@ -11,7 +11,7 @@ title: Remove an address book policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -109,4 +109,3 @@ To verify that you've successfully removed an ABP, use either of these procedure
   ```
   Get-AddressBookPolicy -Identity "<ABPName>"
   ```
-

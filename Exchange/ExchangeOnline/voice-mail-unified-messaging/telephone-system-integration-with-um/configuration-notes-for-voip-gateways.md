@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 1583674f-5a57-45fd-8125-087d1624e686
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
+title: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
+# Configuration notes for supported VoIP gateways, IP PBXs, and PBXs in Exchange Online
 
 This page provides links to configuration notes that have been created and tested by Microsoft or a VoIP gateway partner. When Microsoft or a partner deploys Unified Messaging with a new VoIP gateway and PBX or IP PBX configuration, the prerequisites and configuration settings are documented. This information is used to create a configuration note.
 
@@ -216,6 +216,3 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |CTX|AR1ME021.00|Analog - SMDI|Dialogic|DMG1008LSW|Dialogic|
 |CTX|AR1ME021.00|Analog - In-Band DTMF|Dialogic|DMG1008LSW|Dialogic|
-
-
-

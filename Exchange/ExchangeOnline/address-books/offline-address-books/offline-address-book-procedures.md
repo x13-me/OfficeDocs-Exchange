@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Offline address book procedures
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -26,4 +26,3 @@ manager: dansimp
 [Provision recipients for offline address book downloads](provision-recipients.md)
 
 [Remove an offline address book](remove-offline-address-book.md)
-

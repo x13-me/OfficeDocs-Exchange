@@ -11,7 +11,7 @@ title: Public folder procedures in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -21,7 +21,7 @@ manager: dansimp
 
 [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md)
 
-[Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md)
+[Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online)
 
 [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md)
 
@@ -48,6 +48,3 @@ manager: dansimp
 [Remove a public folder](remove-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)
-
-
-

@@ -12,12 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Deploying certificates for UM
+# Deploying certificates for UM in Exchange Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can use mutual Transport Layer Security (mutual TLS) to enable Unified Messaging (UM) to encrypt data sent between your Microsoft Exchange 2013 servers and VoIP gateways, IP PBXs, session border controllers (SBCs), and Microsoft Lync Server. Certificates bind the identity of the certificate owner to a pair of electronic keys (public and private) that are used to encrypt and sign information digitally.
 
@@ -74,11 +71,8 @@ To encrypt data that's sent between UM and Lync Server, you need to do the follo
   - Restart the Unified Messaging Call Router service on all Client Access servers and restart the Microsoft Exchange Unified Messaging service on all Mailbox servers in your organization. For details, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
   - Restart the Lync Server Front-End service on all Lync Servers that are part of an Enterprise Edition Front End pool or restart the Standard Edition Front End Servers. You can use the **Stop-CsWindowsService** cmdlet to stop Lync Server services and the **Start-CsWindowsService** cmdlet to start Lync Server services.
-    
+
     The **Start-CsWindowsService** and **Stop-CsWindowsService** cmdlets are similar to the generic Windows PowerShell cmdlets **Start-Service** and **Stop-Service**. If you want, you could use the **Start-Service** or **Stop-Service** cmdlets to start and stop a Lync Server service. However, the **Start-CsWindowsService** **Stop-CsWindowsService** cmdlets include a *ComputerName* parameter that makes it easy to stop and start a Lync Server service on a remote computer. To do this, you include the *ComputerName* parameter followed by the fully qualified domain name (FQDN) of the remote computer. The **Start-Service** and **Stop-Service** cmdlets don't have a comparable parameter.
-    
 
     > [!NOTE]
     > To fully integrate UM and Lync Server, you must also run the ExchUcUtil.ps1 script on any Client Access or Mailbox server in your organization
-
-

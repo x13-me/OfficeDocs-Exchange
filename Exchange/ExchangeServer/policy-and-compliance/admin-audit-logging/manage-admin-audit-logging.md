@@ -9,7 +9,7 @@ ms.date: 6/8/2018
 ms.reviewer: 
 title: Manage administrator audit logging
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -161,6 +161,3 @@ To view the admin audit logging settings that you've configured for your organiz
 ```
 Get-AdminAuditLogConfig
 ```
-
-
-

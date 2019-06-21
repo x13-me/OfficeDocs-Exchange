@@ -11,7 +11,7 @@ title: Configure a moderated recipient in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -119,6 +119,3 @@ To verify that you have successfully configured a recipient for moderation, do t
 2. Verify the designated moderators receive notification.
 
 3. Verify the recipients who bypass moderation receive the message directly.
-
-
-

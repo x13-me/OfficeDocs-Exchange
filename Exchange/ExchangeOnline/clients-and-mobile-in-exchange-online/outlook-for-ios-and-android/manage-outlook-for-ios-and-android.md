@@ -11,7 +11,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -114,4 +114,3 @@ Exchange administrators can initiate a remote device wipe against Outlook for iO
 
 > [!NOTE]
 > Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device."
-

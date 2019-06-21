@@ -9,15 +9,15 @@ ms.author: chrisda
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Create a UM auto attendant
+title: Create a UM auto attendant in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Create a UM auto attendant
+# Create a UM auto attendant in Exchange Online
 
 After you create a Unified Messaging (UM) auto attendant, incoming calls to an external telephone number that a human operator would ordinarily answer are answered by the auto attendant. Unlike with other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them.
 
@@ -79,6 +79,3 @@ This example creates a speech-enabled UM auto attendant named `MyUMAutoAttendant
 ```
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true
 ```
-
-
-

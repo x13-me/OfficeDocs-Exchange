@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Manage permissions for recipients
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -295,4 +295,3 @@ For more information about how delegates can use the permissions that are assign
 - [Open and use a shared mailbox in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=816870)
 
 - [Send email from another person or group in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=823180)
-

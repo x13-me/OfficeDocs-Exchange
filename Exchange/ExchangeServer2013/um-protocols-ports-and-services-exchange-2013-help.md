@@ -12,12 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# UM protocols, ports, and services
+# UM protocols, ports, and services in Exchange Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange 2013 Unified Messaging (UM) requires that several TCP and User Datagram Protocol (UDP) ports be used to establish communication between servers running Exchange 2013 and other devices. By allowing access through these IP ports, you enable Unified Messaging to function correctly. This topic discusses the TCP and UDP ports used in Exchange 2013 Unified Messaging.
 
@@ -25,27 +22,24 @@ Microsoft Exchange 2013 Unified Messaging (UM) requires that several TCP and Us
 
 Exchange 2013 Unified Messaging features and services rely on static and dynamic TCP and UDP ports to ensure correct operation of Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service.When Exchange 2013 is installed, static inbound Windows Firewall rules are added for Exchange. If you change the TCP ports that are used by Client Access and Mailbox servers, you may also need to reconfigure the Windows Firewall rules to allow Unified Messaging to work correctly.
 
-
 > [!IMPORTANT]
 > On Exchange 2013 Client Access and Mailbox servers running UM components and services, Exchange setup creates inbound firewall rules that allow inbound communication without any TCP port restrictions. The following inbound rules for UM services are added:
 
+1. **SESWorker (GFW) (TCP-In)**
 
+2. **UMCallRouter (GFW) (TCP-In)**
 
-1.  **SESWorker (GFW) (TCP-In)**
+3. **UMCallRouter (TCP-In)**
 
-2.  **UMCallRouter (GFW) (TCP-In)**
+4. **UMService (GFW) (TCP-In)**
 
-3.  **UMCallRouter (TCP-In)**
+5. **UMService (TCP-In)**
 
-4.  **UMService (GFW) (TCP-In)**
+6. **UMWorkerProcess - RPC (TCP-In)**
 
-5.  **UMService (TCP-In)**
+7. **UMWorkerProcess (GFW) (TCP-In)**
 
-6.  **UMWorkerProcess - RPC (TCP-In)**
-
-7.  **UMWorkerProcess (GFW) (TCP-In)**
-
-8.  **UMWorkerProcess (TCP-In)**
+8. **UMWorkerProcess (TCP-In)**
 
 ## Session Initiation Protocol
 
@@ -120,7 +114,6 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 </tbody>
 </table>
 
-
 ## Lync Server and UM ports
 
 Exchange 2013 Unified Messaging supports Network Address Translation (NAT) traversal and allows for the RTP media to a Mailbox server to be tunneled through a NAT firewall. However, for this to work, you must also have Microsoft Office Communications Server 2007 R2 and Microsoft Lync Server 2010 or Microsoft Lync 2013 deployed in your environment. If you deploy both Exchange 2013 and Communications Server 2007 R2 or Microsoft Lync Server 2010 or Lync 2013 on your network, this deployment will enable Mailbox servers running the Microsoft Exchange Unified Messaging service to communicate with endpoints outside a NAT firewall. The Mailbox server is associated with a Communications Server 2007 R2, Microsoft Lync Server 2010, or a Lync 2013 pool and obtains the appropriate authentication tokens from the A/V Authentication service on a computer serving that particular Communications Server 2007 or Lync Server pool.
@@ -132,4 +125,3 @@ For more information about how to deploy Communications Server 2007 R2 or Lync S
   - [Deploying Exchange 2013 UM and Lync Server overview](deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md)
 
   - [Checklist: Integrate Exchange 2013 UM with Lync Server](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md)
-

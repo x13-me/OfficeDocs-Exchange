@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date:
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Address lists in Exchange Server
 
 ---
@@ -62,11 +62,11 @@ By default, a new installation of Exchange Server creates an GAL named Default G
 
 - Users can only see a GAL that they belong to (the recipient filter of the GAL includes them). If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
 
-   - The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+  - The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
-   - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
+  - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
 
-   - Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Use the Exchange Management Shell to create offline address books](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md#CreateOAB).
+  - Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Use the Exchange Management Shell to create offline address books](../offline-address-books/oab-procedures.md#use-the-exchange-management-shell-to-create-offline-address-books).
 
 ## Default address lists
 
@@ -105,13 +105,12 @@ Although address lists are useful tools for users, poorly planned address lists 
 
 - Use a naming convention and location hierarchy for your address lists so users can immediately tell what the list is for (which recipients are included in the list). If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating address lists in Exchange Server, see [Create address lists](address-list-procedures.md#CreateAddressList).
+For detailed instructions about creating address lists in Exchange Server, see [Create address lists](address-list-procedures.md#create-address-lists).
 
 ## Update address lists
 
 After you create or modify an address list, you need to update the membership.
 
-If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#UpdateAddressList).
+If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#update-address-lists).
 
-To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL).
-
+To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#use-the-exchange-management-shell-to-update-global-address-lists).

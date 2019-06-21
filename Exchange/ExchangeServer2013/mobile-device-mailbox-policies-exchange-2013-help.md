@@ -14,24 +14,15 @@ mtps_version: v=EXCHG.150
 
 # Mobile device mailbox policies
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange 2013 organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange 2013, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
-
 
 > [!IMPORTANT]
 > Windows Phone 7 mobile phones only support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see Windows Phone 7 Synchronization.
 
-
-
-
 > [!WARNING]
 > The iOS7 fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS7 device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
-
-
 
 ## Overview of mobile device mailbox policies
 
@@ -51,7 +42,7 @@ For more information about all the settings you can configure, see Mobile device
 
 ## Managing Exchange ActiveSync mailbox policies
 
-Mobile device mailbox policies can be created in the Exchange Administration Center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Shell.
+Mobile device mailbox policies can be created in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Shell.
 
 ## Windows Phone 7 synchronization
 
@@ -324,4 +315,3 @@ The following table summarizes the settings you can specify using mobile device 
 </tr>
 </tbody>
 </table>
-

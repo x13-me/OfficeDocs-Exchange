@@ -11,7 +11,7 @@ title: Manage accepted domains in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -98,9 +98,9 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
 
-  - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+   - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
 
-  - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
+   - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
 
 4. When you're finished, click **Save**.
 
@@ -127,4 +127,3 @@ To verify that you've successfully configured the domain type, do either of the 
 - In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.png). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
 
 - In Exchange Online PowerShell, run the command `Get-AcceptedDomain`. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
-

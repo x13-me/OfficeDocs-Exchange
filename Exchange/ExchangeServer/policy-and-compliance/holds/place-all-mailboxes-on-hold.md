@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Place all mailboxes on hold
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -89,4 +89,3 @@ To place more than 500 users on In-Place Hold, use the Exchange Management Shell
    ```
 
    You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
-

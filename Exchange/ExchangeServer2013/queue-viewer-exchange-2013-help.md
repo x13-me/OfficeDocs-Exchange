@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Queue Viewer
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Queue Viewer is a Microsoft Management Console snap-in that's installed on a Mailbox server or the Edge Transport server. Queue Viewer is located in the **Mail flow tools** section of the Exchange Toolbox console. You can use this tool to view information about queues on a transport server and the messages that are present in those queues and to perform management actions on queues and mail items. Queue Viewer is useful for troubleshooting mail flow and identifying spam.
 
@@ -30,4 +27,3 @@ When you're using Queue Viewer to manage queues, consider the following:
   - You can create a filter to display the specific set of queues or messages that you want to monitor. After you locate the queues and messages that you want to monitor, you can view the property information for these queues and messages. This information is helpful when you troubleshoot the cause of mail flow problems. For more information, see [Queue filters](queue-filters-exchange-2013-help.md) and [Message filters](message-filters-exchange-2013-help.md).
 
   - You can use the **Export List** link in the action pane to export the list of queues or a list of messages. For more information, see [Export lists from Queue Viewer](export-lists-from-queue-viewer-exchange-2013-help.md).
-

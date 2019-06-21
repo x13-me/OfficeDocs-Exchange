@@ -11,7 +11,7 @@ title: Common message approval scenarios in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -112,4 +112,3 @@ Here's an example where messages with sensitive information require approval. In
 ## See also
 
 [Manage message approval](manage-message-approval.md)
-

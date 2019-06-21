@@ -11,7 +11,7 @@ title: Import or install a certificate on an Exchange server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -123,6 +123,3 @@ To verify that you have successfully imported (installed) a certificate on an Ex
 ## Next steps
 
 After you install the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
-
-
-

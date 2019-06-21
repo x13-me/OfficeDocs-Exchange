@@ -9,7 +9,7 @@ ms.date: 4/19/2018
 ms.reviewer: 
 title: Create a database availability group network
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -85,6 +85,3 @@ To verify that you've successfully created a DAG network, do one of the followin
 [New-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/3ef8d42f-9da0-456a-b4e8-6f7d99a1fa0f.aspx)
 
 [Remove-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
-
-
-

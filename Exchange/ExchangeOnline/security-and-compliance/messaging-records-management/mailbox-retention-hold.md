@@ -11,7 +11,7 @@ title: Place a mailbox on retention hold
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -78,6 +78,3 @@ This command retrieves all mailboxes in the Exchange organization, filters the m
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
 ```
-
-
-

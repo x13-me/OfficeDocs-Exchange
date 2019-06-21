@@ -9,7 +9,7 @@ ms.date: 6/24/2018
 ms.reviewer: 
 title: Voice mail greetings, announcements, menus, and prompts in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -124,6 +124,3 @@ By default, when you create a UM auto attendant, the business and non-business h
 - Configure the business and non-business hours main menu prompt greetings on the **Greetings** page.
 
 - Enable and configure the business and non-business hours menu navigation on the **Menu navigation** page.
-
-
-

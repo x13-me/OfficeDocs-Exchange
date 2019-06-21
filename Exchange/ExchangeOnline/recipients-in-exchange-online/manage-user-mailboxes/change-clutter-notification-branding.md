@@ -11,7 +11,7 @@ title: Change the branding of Clutter notifications
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -73,6 +73,3 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
   Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
 
   ```
-
-
-

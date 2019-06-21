@@ -12,12 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# UM languages, prompts, and greetings procedures
+# UM languages, prompts, and greetings procedures in Exchange Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md)
 
@@ -32,4 +29,3 @@ _**Applies to:** Exchange Server 2013_
 [Import custom prompts from Exchange 2007 to Exchange 2013](import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)
 
 [Enable custom prompt recording using the telephone user interface](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
-

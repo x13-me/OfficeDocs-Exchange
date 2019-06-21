@@ -12,20 +12,14 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Connect UM to a supported VoIP gateway
+# Connect UM to a supported VoIP gateway in Exchange Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 When you're setting up Unified Messaging (UM), you must configure the Voice over IP (VoIP) gateways, IP PBXs, SIP-enabled PBXs, or session border controllers (SBCs) on your network to communicate with the Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and the Mailbox servers running the Microsoft Exchange Unified Messaging service in your Exchange organization. You must also configure the Client Access and Mailbox servers to communicate with the VoIP gateways, IP PBXs, SIP-enabled PBXs, or SBCs.
 
-
 > [!NOTE]
 > After you've connected your Client Access and Mailbox servers to the VoIP gateways, IP PBXs, SIP-enabled PBXs, or SBCs on your data network you must create the required UM components and also enable users for Unified Messaging so they can use the voice mail system.
-
-
 
 ## Steps
 
@@ -84,4 +78,3 @@ UM hunt groups mirror the hunt groups that are used on PBXs and IP PBXs. When yo
 Depending on how you create your UM IP gateway, you may have to create one or multiple new UM hunt groups. If you don't link a UM IP gateway with a dial plan when you create the UM IP gateway, a single UM hunt group is created by default. If you link a UM IP gateway to a UM dial plan when you create the UM IP gateway, all incoming calls will be sent through the UM IP gateway and those calls will be accepted by Client Access and Mailbox servers. If you don't link a UM IP gateway to a UM dial plan when you create the UM IP gateway, you'll need to create a UM hunt group with the correct pilot identifier for incoming calls to be forwarded from an UM IP gateway to a dial plan.
 
 If you have multiple Outlook Voice Access and auto attendant numbers and have linked a UM IP gateway to a dial plan, you'll need to delete the UM hunt group that was created by default and create multiple UM hunt groups. For details about how to create a UM hunt group, see [Create a UM hunt group](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group).
-

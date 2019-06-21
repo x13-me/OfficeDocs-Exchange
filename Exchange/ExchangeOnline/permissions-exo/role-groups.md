@@ -11,7 +11,7 @@ title: Manage role groups in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -19,7 +19,7 @@ manager: dansimp
 
 # Manage role groups in Exchange Online
 
-A role group is a special kind of universal security group (USG) that's used in the Role Based Access Control (RBAC) permissions model in Exchange Online. Management role groups simplify the assignment and maintenance of permissions to users in Exchange Online. THe members of the role group are assigned the same set of roles, and you add and remove permissions from users by adding them to or removing them from the role group. For more information about role groups in Exchange Online, see [Permissions in Exchange Online](permissions-exo.md).
+A role group is a special kind of universal security group (USG) that's used in the Role Based Access Control (RBAC) permissions model in Exchange Online. Management role groups simplify the assignment and maintenance of permissions to users in Exchange Online. The members of the role group are assigned the same set of roles, and you add and remove permissions from users by adding them to or removing them from the role group. For more information about role groups in Exchange Online, see [Permissions in Exchange Online](permissions-exo.md).
 
 ## What do you need to know before you begin?
 
@@ -466,4 +466,3 @@ To verify that you've removed a role group, do either of the following steps:
     ```
     Get-RoleGroup
     ```
-

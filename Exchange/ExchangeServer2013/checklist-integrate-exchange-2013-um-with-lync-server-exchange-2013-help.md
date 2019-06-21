@@ -14,13 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Checklist: Integrate Exchange 2013 UM with Lync Server
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Use this checklist to install and deploy Unified Messaging (UM) and Microsoft Lync Server 2013. In this topic, "Lync Server" also refers to Lync Server 2010. However, Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging.
-
 
 Before you start working with this checklist, make sure you're familiar with the concepts in:
 
@@ -31,7 +27,6 @@ Before you start working with this checklist, make sure you're familiar with the
 For more information about how to perform the tasks that must be completed for Lync Server, see [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=265752).
 
 ## Checklist for deploying Microsoft Lync Server and Unified Messaging
-
 
 <table>
 <colgroup>
@@ -64,7 +59,6 @@ For more information about how to perform the tasks that must be completed for L
 
 > [!TIP]
 > The Unified Communications Managed API (UCMA) 4.0 Runtime is required for Exchange 2013 and Lync Server 2010 and 2013 and is installed during installation. To download and review information about UCMA 4.0, see <A href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</A>
-
 
 </td>
 </tr>
@@ -224,4 +218,3 @@ For more information about how to perform the tasks that must be completed for L
 </tr>
 </tbody>
 </table>
-

@@ -11,7 +11,7 @@ title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -331,4 +331,3 @@ To verify that you've configured mail flow and external client access, do the fo
 3. In the external recipient's mailbox, reply to the message you just sent from the Exchange mailbox. Verify the Exchange mailbox receives the message.
 
 4. Go to https://owa.contoso.com/owa and verify that there are no certificate warnings.
-

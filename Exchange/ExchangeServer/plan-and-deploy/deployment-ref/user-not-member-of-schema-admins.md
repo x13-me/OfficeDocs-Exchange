@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -35,4 +35,3 @@ To resolve this issue, run Exchange setup again using an account that has the ap
 > Cross-forest installation of Exchange isn't supported. Use an account in the Active Directory forest where you're installing Exchange.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

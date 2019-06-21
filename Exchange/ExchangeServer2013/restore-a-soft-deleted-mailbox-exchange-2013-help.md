@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Restore a soft-deleted mailbox
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Use the Shell to connect a soft-deleted mailbox to an Active Directory user account. A mailbox becomes *soft-deleted* in the source mailbox database when it's moved to a different mailbox database. Exchange doesn't fully delete the mailbox from the source mailbox database when the move is complete. Instead, the mailbox in the source mailbox database is switched to a soft-deleted state. This lets you restore the source mailbox in case errors occur during the move that cause a failure or corruption of the mailbox on the destination database. If this happens, you can restore the source mailbox and try the move again.
 
@@ -25,13 +22,13 @@ A soft-deleted mailbox is retained in the source database until the deleted mail
 
 To learn more about soft-deleted mailboxes and perform other related management tasks, see the following topics:
 
-  - [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
+- [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
 
-  - [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
+- [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
-  - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
+- [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-  - [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
+- [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
@@ -59,7 +56,7 @@ To learn more about soft-deleted mailboxes and perform other related management 
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Use the Shell to restore a soft-deleted mailbox
 
@@ -77,13 +74,13 @@ $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$
 This example restores a soft-deleted mailbox, which is identified by the display name in the *SourceStoreMailbox* parameter and is located on the MBXDB01 mailbox database, to the target mailbox named Debra Garcia. The *AllowLegacyDNMismatch* parameter is used so the source mailbox can be restored to a mailbox that doesn't have the same legacy DN value as the soft-deleted mailbox.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
 ```
 
 This example restores Pilar Pinilla's soft-deleted archive mailbox, which is identified by the mailbox GUID, to her current archive mailbox. The *AllowLegacyDNMismatch* parameter isn't necessary because a primary mailbox and its corresponding archive mailbox have the same legacy DN.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
 For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).

@@ -14,20 +14,14 @@ mtps_version: v=EXCHG.150
 
 # Discovery Management
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 The Discovery Management management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. Role groups are assigned one or more management roles that contain the permissions required to perform a given set of tasks. The members of a role group are granted access to the management roles assigned to the role group. For more information about role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
 
 Administrators or users who are members of the Discovery Management role group can perform searches of mailboxes in the Exchange organization for data that meets specific criteria and can also configure litigation holds on mailboxes. For more information, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
-
 > [!IMPORTANT]
 > The Organization Management role group doesn't, by default, enable the discovery search feature for users or universal security groups (USGs) that are members of that role group. Members of the Organization Management role group must either be made members of this role group, or the Mailbox Search role listed later in this topic must be manually assigned to the Organization Management role group. For information about how to assign a role to a role group, see <A href="manage-role-groups-exchange-2013-help.md">Manage role groups</A>.
-
-
 
 For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
@@ -65,17 +59,17 @@ If you want to create a role group and assign some of the roles that are assigne
 
 The following table lists all the management roles that are assigned to this role group and the following attributes of each role assignment:
 
-  - **Regular assignment**   Enables members of the role group to access the management role entries made available by the associated management role.
+  - **Regular assignment**: Enables members of the role group to access the management role entries made available by the associated management role.
 
-  - **Delegating assignment**   Gives members of the role group the ability to assign the specified role to other role groups, role assignment policies, users, or USGs.
+  - **Delegating assignment**: Gives members of the role group the ability to assign the specified role to other role groups, role assignment policies, users, or USGs.
 
-  - **Recipient read scope**   Determines what recipient objects members of the role group are allowed to read from Active Directory.
+  - **Recipient read scope**: Determines what recipient objects members of the role group are allowed to read from Active Directory.
 
-  - **Recipient write scope**   Determines what recipient objects members of the role group are allowed to modify in Active Directory.
+  - **Recipient write scope**: Determines what recipient objects members of the role group are allowed to modify in Active Directory.
 
-  - **Configuration read scope**   Determines what configuration and server objects members of the role group are allowed to read from Active Directory.
+  - **Configuration read scope**: Determines what configuration and server objects members of the role group are allowed to read from Active Directory.
 
-  - **Configuration write scope**   Determines what organizational and server objects members of the role group are allowed to modify in Active Directory.
+  - **Configuration write scope**: Determines what organizational and server objects members of the role group are allowed to modify in Active Directory.
 
 For more information about role assignments and management scopes, see the following topics:
 
@@ -127,4 +121,3 @@ For more information about role assignments and management scopes, see the follo
 </tr>
 </tbody>
 </table>
-

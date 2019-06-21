@@ -11,7 +11,7 @@ title: Mail flow rule procedures in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -49,4 +49,3 @@ https://docs.microsoft.com/office365/SecurityCompliance/use-transport-rules-to-c
 [Best practices for configuring mail flow rules](configuration-best-practices.md) Information to help you avoid common configuration errors.
 
 [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md) Information on how to view summary and detail reports about mail flow rule matches.
-

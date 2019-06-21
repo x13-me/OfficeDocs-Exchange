@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Manage mailbox databases in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -236,6 +236,3 @@ To verify that you have successfully removed the mailbox database, do the follow
 - From the EAC, select **Servers** \> **Databases**.
 
 - Verify that the mailbox database has been removed.
-
-
-

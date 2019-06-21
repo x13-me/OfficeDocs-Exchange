@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: f2bd62ba-1e01-4cb7-862c-c750752e20e0
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Add an auto attendant extension number
+title: Add an auto attendant extension number in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Add an auto attendant extension number
+# Add an auto attendant extension number in Exchange Online
 
 You can configure an extension number or multiple extension numbers on a Unified Messaging (UM) auto attendant. When you add an extension number to a UM auto attendant, that number can be used by callers to call into the auto attendant. Also, you may have to add extension numbers because there is more than one extension number that callers can use to access an auto attendant. By default, no extension numbers are configured when you create an auto attendant.
 
@@ -60,6 +60,3 @@ This example configures a UM auto attendant named `MyUMAutoAttendant` with multi
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -PilotIdentifierList "12345, 72000, 75000"
 ```
-
-
-

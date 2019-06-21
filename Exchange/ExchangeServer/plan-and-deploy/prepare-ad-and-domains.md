@@ -12,7 +12,7 @@ title: Prepare Active Directory and domains for Exchange Server, Active Director
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -252,4 +252,3 @@ The tables in the following sections contain the Exchange objects in Active Dire
 |Exchange 2016 RTM|15317|13236|16210|
 |Exchange 2016 Preview|15317|13236|16041|
 ::: moniker-end
-

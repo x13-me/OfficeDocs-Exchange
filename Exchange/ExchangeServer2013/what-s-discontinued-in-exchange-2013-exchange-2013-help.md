@@ -14,30 +14,23 @@ mtps_version: v=EXCHG.150
 
 # What's discontinued in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Microsoft Exchange Server 2013.
 
-
 > [!NOTE]
-> The following topics may also interest you: 
+> The following topics may also interest you:
 > <UL>
 > <LI>
 > <P><A href="what-s-new-in-exchange-2013-exchange-2013-help.md">What's new in Exchange 2013</A>&nbsp;&nbsp;&nbsp;Information about new features and functionality in Exchange Server 2013.</P>
 > <LI>
 > <P><A href="https://go.microsoft.com/fwlink/p/?linkid=267479">Developer roadmap for Exchange 2013</A>&nbsp;&nbsp;&nbsp;&nbsp;See the "Development technologies removed from Exchange" section for information about the API and Development features discontinued in Exchange 2013.</P></LI></UL>
 
-
-
 ## Discontinued features from Exchange 2010 to Exchange 2013
 
 This section lists the Exchange Server 2010 features that are no longer available in Exchange 2013.
 
 ## Architecture
-
 
 <table>
 <colgroup>
@@ -62,9 +55,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Management interfaces
-
 
 <table>
 <colgroup>
@@ -80,14 +71,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange Management Console and Exchange Control Panel</p></td>
-<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange Admin Center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
+<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange admin center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Client access
-
 
 <table>
 <colgroup>
@@ -112,9 +101,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Outlook Web App and Outlook
-
 
 <table>
 <colgroup>
@@ -152,9 +139,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Mail flow
-
 
 <table>
 <colgroup>
@@ -175,9 +160,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Anti-spam and anti-malware
-
 
 <table>
 <colgroup>
@@ -202,15 +185,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 > [!NOTE]
 > You can't enable the anti-spam agents on an Exchange 2013 Client Access server. Therefore, the only way to get the Connection Filtering agent is to install an Edge Transport server in the perimeter network. For more information, see <A href="edge-transport-servers-exchange-2013-help.md">Edge Transport servers</A>.
 
-
 </td>
 </tr>
 </tbody>
 </table>
 
-
 ## Messaging policy and compliance
-
 
 <table>
 <colgroup>
@@ -231,7 +211,6 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
 
-
 </td>
 </tr>
 <tr class="even">
@@ -241,9 +220,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Unified Messaging and voice mail
-
 
 <table>
 <colgroup>
@@ -265,9 +242,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Tools
-
 
 <table>
 <colgroup>
@@ -304,9 +279,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Mailbox database copies
-
 
 <table>
 <colgroup>
@@ -330,13 +303,11 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Discontinued features from Exchange 2007 to Exchange 2013
 
 This section lists the Exchange Server 2007 features that are no longer available in Exchange 2013.
 
 ## APIs and development
-
 
 <table>
 <colgroup>
@@ -357,9 +328,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Architecture
-
 
 <table>
 <colgroup>
@@ -388,9 +357,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## High availability
-
 
 <table>
 <colgroup>
@@ -431,9 +398,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Client access
-
 
 <table>
 <colgroup>
@@ -455,9 +420,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Outlook Web App and Outlook
-
 
 <table>
 <colgroup>
@@ -494,9 +457,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Recipient-related features
-
 
 <table>
 <colgroup>
@@ -525,9 +486,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Messaging policy and compliance
-
 
 <table>
 <colgroup>
@@ -548,15 +507,12 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
 
-
 </td>
 </tr>
 </tbody>
 </table>
 
-
 ## Unified Messaging and voice mail
-
 
 <table>
 <colgroup>
@@ -577,4 +533,3 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 </tbody>
 </table>
-

@@ -11,7 +11,7 @@ title: Address books in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -39,4 +39,3 @@ For help with everyday email tasks, such as organizing your contacts in Outlook,
 - [Create a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615370)
 
 - [Send an email message to a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615391)
-

@@ -12,7 +12,7 @@ title: Use a screen reader to run an audit report in the Exchange admin center i
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 
@@ -360,4 +360,3 @@ If your organization is involved in a legal action, you may have to take steps t
 12. For more details about a litigation hold change, with the change selected in the search results list, press the Tab key to move to the details pane. To print the contents of the details pane, press Enter. To hear the contents of the details pane, press Tab again.
 
 13. To close the dialog box, tab to the **Close** button and press Enter.
-

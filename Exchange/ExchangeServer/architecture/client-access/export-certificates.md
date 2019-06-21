@@ -11,7 +11,7 @@ title: Export a certificate from an Exchange server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -81,6 +81,3 @@ Export-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e 
 ## How do you know this worked?
 
 To verify that you have successfully exported a certificate from an Exchange server, try importing the certificate file on another server. For more information, see [Import or install a certificate on an Exchange server](import-certificates.md).
-
-
-

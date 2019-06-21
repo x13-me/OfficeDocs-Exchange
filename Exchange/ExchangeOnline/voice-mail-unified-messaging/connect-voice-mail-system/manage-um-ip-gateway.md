@@ -9,15 +9,15 @@ ms.author: chrisda
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Manage a UM IP gateway
+title: Manage a UM IP gateway in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Manage a UM IP gateway
+# Manage a UM IP gateway in Exchange Online
 
 After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 
@@ -110,6 +110,3 @@ This example displays all the UM IP gateways including VoIP gateway simulators i
 ```
 Get-UMIPGateway -IncludeSimulator $true
 ```
-
-
-

@@ -11,7 +11,7 @@ title: Deployment reference
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -32,4 +32,3 @@ manager: dansimp
 [Overview of Exchange services on Exchange servers](services-overview.md)
 
 [Exchange 2019 preferred architecture](preferred-architecture-2019.md)
-

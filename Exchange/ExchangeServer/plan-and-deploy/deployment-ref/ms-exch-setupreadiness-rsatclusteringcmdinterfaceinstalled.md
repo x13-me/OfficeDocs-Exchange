@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -37,4 +37,3 @@ Do the following to install the Windows feature on this computer. If the feature
   ```
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Set up connectors to route mail between Office 365 and your own email servers
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -252,4 +252,3 @@ For each email sent from Office 365 to mailboxes on your email server, Office 36
 [Validate connectors in Office 365](validate-connectors.md)
 
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
-

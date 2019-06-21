@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: Global updates required [GlobalUpdateRequired]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -36,4 +36,3 @@ To resolve this issue, run Setup again using an account that has the appropriate
 > Cross-forest installation of Exchange isn't supported. Use an account in the Active Directory forest where you're installing Exchange.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

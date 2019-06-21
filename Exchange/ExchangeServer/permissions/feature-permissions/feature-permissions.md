@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Feature permissions
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -42,6 +42,3 @@ Permissions in Microsoft Exchange Server are managed using the Role Based Access
 - [Exchange infrastructure and PowerShell permissions](infrastructure-permissions.md)
 
 - [Server health and performance permissions](server-health-permissions.md)
-
-
-

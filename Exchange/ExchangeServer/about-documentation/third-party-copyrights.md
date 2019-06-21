@@ -11,7 +11,7 @@ title: Third-party copyright notices
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -54,6 +54,3 @@ Windows Server 2008
 Windows Server 2008 R2
 
 Windows 7
-
-
-

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 51367d98-e17c-4bcf-8b14-208bd1ac3af0
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Allow callers without a caller ID to leave a voice message
+title: Allow callers without a caller ID to leave a voice message in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Allow callers without a caller ID to leave a voice message
+# Allow callers without a caller ID to leave a voice message in Exchange Online
 
 You can allow UM-enabled users to receive voice mail messages from anonymous callers or prevent them from doing so. By default, when users are enabled for Unified Messaging (UM) and voice mail, they can receive calls that are anonymous and don't contain caller ID information.
 
@@ -55,6 +55,3 @@ This example allows UM-enabled user tonysmith@contoso.com to receive voice messa
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -AnonymousCallersCanLeaveMessages $true
 ```
-
-
-

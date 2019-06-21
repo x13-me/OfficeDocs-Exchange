@@ -11,7 +11,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: Admins can learn about the mail flow troubleshooting options in Office 365.
-ms.audience: ITPro
+audience: ITPro
 title: Troubleshoot Office 365 mail flow
 
 ---
@@ -43,4 +43,3 @@ Mail flow issues can also happen when your MX record is not setup correctly. To 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
 
 [Mail Flow in EOP](https://technet.microsoft.com/library/e109077e-cc85-4c19-ae40-d218ac7d0548.aspx)
-

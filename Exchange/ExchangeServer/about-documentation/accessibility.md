@@ -11,7 +11,7 @@ title: Accessibility for people with disabilities
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -93,6 +93,3 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 <a name="BKMK_AccessMS"> </a>
 
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
-
-
-

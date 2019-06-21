@@ -3,7 +3,7 @@ title: "Create a hybrid deployment with the Hybrid Configuration wizard"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -52,8 +52,6 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 - Review and complete all hybrid deployment requirements outlined in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 
 - The Microsoft Remote Connectivity Analyzer tool checks the external connectivity of your on-premises Exchange organization and makes sure that you're ready to configure your hybrid deployment. We strongly recommend that you check your on-premises organization with the Remote Connectivity Analyzer tool prior to configuring your hybrid deployment with the Hybrid Configuration wizard. Learn more at [Remote Connectivity Analyzer Tool](https://go.microsoft.com/fwlink/p/?linkId=167905).
-
-- We strongly recommend configuring single sign-on using Azure Active Directory Connect password synchronization. Single sign-on enables users to access both the on-premises and Exchange Online organizations with a single user name and password. Single sign-on also ensures that users aren't prompted for their credentials when accessing archived content in the Exchange Online organization when using Exchange Online Archiving. For more information about password synchronization, see [Azure AD Connect sync: Implement password synchronization](http://go.microsoft.com/fwlink/p/?LinkID=723513)
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 

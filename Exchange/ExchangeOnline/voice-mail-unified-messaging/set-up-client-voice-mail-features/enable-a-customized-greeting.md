@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06
 ms.date: 12/9/2016
 ms.reviewer: 
-title: Enable a customized greeting for Outlook Voice Access users
+title: Enable a customized greeting for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Enable a customized greeting for Outlook Voice Access users
+# Enable a customized greeting for Outlook Voice Access users in Exchange Online
 
 By default, each Unified Messaging (UM) dial plan uses a standard .wav file for the welcome greeting that's played to callers, including Outlook Voice Access users who dial in to an Outlook Voice Access number that's been configured. However, you can create a .wav or .wma file for the welcome greeting, and then enable it on the UM dial plan.
 
@@ -60,6 +60,3 @@ This example enables a welcome greeting that uses the C:\UMPrompts\welcome.wav f
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename c:\UMPrompts\welcome.wav
 ```
-
-
-

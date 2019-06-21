@@ -12,12 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Connect UM to your telephone system
+# Connect UM to your telephone system in Exchange Server
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Unified Messaging (UM) combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their voice mail messages from their email Inbox or by using Outlook Voice Access from any telephone.
 
@@ -32,4 +29,3 @@ The following information will help you set up and deploy UM and enable voice ma
   - [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)   Learn about supported VoIP gateways, IP PBXs, and PBXs.
 
   - [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)  Learn how to set up your VoIP gateways, IP PBXs, and PBXs.
-

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the maximum call duration
+title: Configure the maximum call duration in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure the maximum call duration
+# Configure the maximum call duration in Exchange Online
 
 You can specify the maximum number of minutes that an incoming call can be connected to the system without being transferred to a valid extension number before the call is ended. For most organizations, this value should be set to the default: 30 minutes. This setting applies to all calls, including incoming Outlook Voice Access calls, voice calls internal to your organization, voice calls into Unified Messaging (UM) auto attendants, and fax calls placed from outside your organization.
 
@@ -55,6 +55,3 @@ This example sets the maximum call duration to 10 minutes on a UM dial plan name
 ```
 Set-UMDialPlan -identity MyUMDialPlan -MaxCallDuration 10
 ```
-
-
-

@@ -9,7 +9,7 @@ ms.date: 6/7/2018
 ms.reviewer: 
 title: Configure database availability group network properties
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -80,6 +80,3 @@ To verify that you've successfully configured the DAG network, do the following:
 [New-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/3ef8d42f-9da0-456a-b4e8-6f7d99a1fa0f.aspx)
 
 [Remove-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
-
-
-

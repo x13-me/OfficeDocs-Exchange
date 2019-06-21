@@ -11,7 +11,7 @@ title: Use mail flow rules to inspect message attachments in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -135,4 +135,3 @@ DLP policies and attachment-related conditions can help you enforce your busines
 ## For more information
 
 For information on broadly blocking email with attachments, regardless of malware status, see [Reducing Malware Threats Through File Attachment Blocking in Exchange Online Protection](https://technet.microsoft.com/library/c4fb4a86-b772-49d0-8773-e8ee897e175d.aspx).
-

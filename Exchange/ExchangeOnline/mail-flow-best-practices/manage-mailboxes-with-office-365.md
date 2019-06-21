@@ -11,7 +11,7 @@ title: Manage all mailboxes and mail flow using Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -78,5 +78,3 @@ For a full list of setup instructions, check out [Set up Office 365 for business
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
-
-

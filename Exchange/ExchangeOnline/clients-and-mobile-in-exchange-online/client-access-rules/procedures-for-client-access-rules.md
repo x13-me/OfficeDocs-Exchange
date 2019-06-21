@@ -11,7 +11,7 @@ title: Procedures for Client Access Rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -244,4 +244,3 @@ Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentic
 ```
 
 For detailed syntax and parameter information, see [Test-ClientAccessRule](https://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).
-

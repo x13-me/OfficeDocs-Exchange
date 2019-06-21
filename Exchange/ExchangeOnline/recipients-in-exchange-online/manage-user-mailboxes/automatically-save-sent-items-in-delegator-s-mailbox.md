@@ -13,7 +13,7 @@ ms.collection:
 search.appverid:
 - BCS160
 - MET150
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -89,6 +89,3 @@ That's it! The manager will now automatically get a copy of any messages sent by
 
 > [!TIP]
 > You can turn this off by going through the steps above and replacing **$true** with **$false** in the **[Set-Mailbox]** command. For example, to turn it off for Mary, they'd run the command  `Set-Mailbox mary@contoso.com -MessageCopyForSendOnBehalfEnabled $false`.
-
-
-

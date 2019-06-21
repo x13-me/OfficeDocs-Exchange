@@ -11,7 +11,7 @@ title: Configure storage quotas for a mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -97,6 +97,3 @@ In the Exchange Management Shell, replace \<Identity\> with the name, email addr
 ```
 Get-Mailbox <Identity> | Format-List IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
 ```
-
-
-

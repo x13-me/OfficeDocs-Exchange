@@ -11,7 +11,7 @@ title: Address book policy procedures in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -28,4 +28,3 @@ manager: dansimp
 [Change the settings of an address book policy in Exchange Online](change-the-settings-of-an-address-book-policy.md)
 
 [Remove an address book policy in Exchange Online](remove-an-address-book-policy.md)
-

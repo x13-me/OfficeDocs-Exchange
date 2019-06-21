@@ -17,7 +17,7 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -107,5 +107,3 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 <a name="BK_import"> </a>
 
 [Blog article on adding an SSL to Exchange Server 2007](https://go.microsoft.com/fwlink/p/?LinkId=615759)
-
-

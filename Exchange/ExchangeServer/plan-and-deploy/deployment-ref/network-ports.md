@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -103,4 +103,3 @@ The network ports that are required for an organization that uses both on-premis
 ## Network ports required for Unified Messaging in Exchange 2016
 
 The network ports that are required for Unified Messaging in Exchange 2013 and Exchange 2016 are covered in the topic [UM protocols, ports, and services](https://technet.microsoft.com/library/aa998265(v=exchg.150).aspx).
-

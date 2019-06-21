@@ -11,7 +11,7 @@ title: Mailbox plans in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -226,4 +226,3 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    ```
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
-

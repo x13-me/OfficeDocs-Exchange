@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Move a public folder mailbox to a different mailbox database
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You may need to move a public folder mailbox to a different mailbox database for load balancing purposes or for moving resources closer to their geographical location. Similar to moving a regular mailbox, you use the **MoveRequest** cmdlets to move a public folder mailbox. For more information about moving mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 
@@ -25,23 +22,18 @@ For additional management tasks related to public folders, see [Public folder pr
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete depends on the size of the public folder mailbox.
+- Estimated time to complete depends on the size of the public folder mailbox.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox move and migration permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox move and migration permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - You can't perform this procedure in the EAC. You can only perform this procedure in the Shell.
+- You can't perform this procedure in the EAC. You can only perform this procedure in the Shell.
 
-  - Depending on the size of the public folder mailbox, the move may take several hours to complete. During that time, users won't be able to access the public folders. Users also won't have access to public folders for a brief period while the folder is in the "Completion in Progress" state.
+- Depending on the size of the public folder mailbox, the move may take several hours to complete. During that time, users won't be able to access the public folders. Users also won't have access to public folders for a brief period while the folder is in the "Completion in Progress" state.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
-
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Create a move request
 
@@ -94,4 +86,3 @@ Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
 A status of `Completed` indicates that the move request was successful.
 
 If the move was unsuccessful, you may need to restore the public folder. For more information, see [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md).
-

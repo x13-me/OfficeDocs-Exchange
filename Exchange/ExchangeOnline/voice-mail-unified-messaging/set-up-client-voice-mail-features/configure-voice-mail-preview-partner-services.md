@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 ms.date: 12/9/2016
 ms.reviewer: 
-title: Configure Voice Mail Preview partner services for users
+title: Configure Voice Mail Preview partner services for users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure Voice Mail Preview partner services for users
+# Configure Voice Mail Preview partner services for users in Exchange Online
 
 You can configure a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've configured Voice Mail Preview partner settings, such as the Voice Mail Preview partner ID and Voice Mail Preview partner address, on a UM mailbox policy, the settings you configure will apply to all UM-enabled users who are linked with that mailbox policy.
 
@@ -77,6 +77,3 @@ If you want to configure the Voice Mail Preview partner service for some, but no
 - [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
 
 For more information about the Voice Mail Preview partner program, see [Voice Mail Preview advisor](voice-mail-preview-advisor.md).
-
-
-

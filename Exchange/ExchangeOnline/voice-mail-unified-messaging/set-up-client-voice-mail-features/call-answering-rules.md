@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 81863440-8b21-4523-bdab-6a2311889a0d
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Call answering rules
+title: Call answering rules in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Call answering rules
+# Call answering rules in Exchange Online
 
 You can specify whether you want individual users to be able to create and manage their own call answering rules by configuring their mailbox properties. By default, they can create call answering rules.
 
@@ -56,6 +56,3 @@ This example disables Call Answering Rules for the user tony@contoso.com.
 ```
 Set-UMMailbox -Identity tony@contoso.com -CallAnsweringRulesEnabled $false
 ```
-
-
-

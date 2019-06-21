@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Configure message retry, resubmit, and expiration intervals
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -293,6 +293,3 @@ To verify that you've configured the message expiration timeout interval, do any
   ```
   Get-TransportService | Format-List Name,MessageExpirationTimeout
   ```
-
-
-

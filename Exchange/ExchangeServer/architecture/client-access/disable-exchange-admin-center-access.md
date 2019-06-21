@@ -8,7 +8,7 @@ ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.date: 9/20/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
@@ -261,4 +261,3 @@ To verify that you have successfully disabled access to the EAC on an Exchange s
 
   - **New EAC web site on the existing Exchange server**: If the IP address of the new EAC web site is 10.1.1.12, verify that https://10.1.1.12/ecp opens the EAC.
 ::: moniker-end
-

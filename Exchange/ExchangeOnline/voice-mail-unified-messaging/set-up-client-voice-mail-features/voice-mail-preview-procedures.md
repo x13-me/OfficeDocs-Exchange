@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 3154be11-1a9d-4e51-a2d0-592ddbcca7b1
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Voice Mail Preview procedures
+title: Voice Mail Preview procedures in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Voice Mail Preview procedures
+# Voice Mail Preview procedures in Exchange Online
 
 [Configure Voice Mail Preview partner services for users](configure-voice-mail-preview-partner-services.md)
 
@@ -30,6 +30,3 @@ manager: dansimp
 [Enable Voice Mail Preview for users](enable-voice-mail-preview.md)
 
 [Disable Voice Mail Preview for users](disable-voice-mail-preview.md)
-
-
-

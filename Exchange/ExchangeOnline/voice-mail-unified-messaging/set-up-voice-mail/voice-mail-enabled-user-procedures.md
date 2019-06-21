@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Voice mail-enabled user procedures
+title: Voice mail-enabled user procedures in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Voice mail-enabled user procedures
+# Voice mail-enabled user procedures in Exchange Online
 
 [Enable a user for voice mail](enable-a-user-for-voice-mail.md)
 
@@ -56,6 +56,3 @@ manager: dansimp
 [Add an E.164 number](add-e-164-number.md)
 
 [Remove an E.164 number](remove-e-164-number.md)
-
-
-

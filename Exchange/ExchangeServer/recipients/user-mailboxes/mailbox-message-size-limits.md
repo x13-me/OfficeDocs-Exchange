@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Configure message size limits for a mailbox
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -84,6 +84,3 @@ Run the following command in the Exchange Management Shell.
 ```
 Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
 ```
-
-
-

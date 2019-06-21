@@ -11,7 +11,7 @@ title: Accessing public folders with Outlook 2016 for Mac
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -52,6 +52,3 @@ The following articles describe how to deploy public folders in your Exchange or
 - [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
 
 - [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Transport logs in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -190,6 +190,3 @@ Routing table logging periodically records snapshots of the routing table that E
   - `MSRoutingConfig` files for the Mailbox Transport Submission service.
 
 - **Transport service on Edge Transport servers**: `%ExchangeInstallPath%TransportRoles\Logs\Edge\Routing`
-
-
-

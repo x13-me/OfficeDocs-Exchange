@@ -11,7 +11,7 @@ title: Modify archive policies
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -105,6 +105,3 @@ This command retrieves properties of the `Default 2 year move to archive` retent
 ```
 Get-RetentionPolicyTag "Default 2 year move to archive" | Format-List
 ```
-
-
-

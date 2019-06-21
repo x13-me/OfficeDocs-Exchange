@@ -7,9 +7,9 @@ ms.author: chrisda
 ms.assetid: 58493d02-0f66-4ea0-9686-ece51828f9f9
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Set up client voice mail features in Exchange Online
+title: Set up client voice mail features in Exchange
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -57,6 +57,3 @@ UM forwards incoming fax calls for a UM-enabled user to a dedicated fax partner 
 - Set the partner fax server URI to allow inbound faxing.
 
 - Configure authentication between the Mailbox server and the fax partner server.
-
-
-

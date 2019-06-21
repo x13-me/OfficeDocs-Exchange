@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -98,6 +98,3 @@ The details pane in the Migration dashboard displays the following information a
 |**Initial sync duration**|The amount of time it took to complete the initial synchronization for all mailboxes in the migration batch.|
 |**Last sync time**|The last time the migration batch was restarted or the last time that incremental synchronization was performed for the batch. As previously stated, incremental synchronization occurs every 24 hours for IMAP migrations and cutover Exchange migrations.|
 |**Associated endpoint**|The name of the migration endpoint being used by the migration batch. You can click **View details** to view the migration endpoint settings. You can also edit the settings if none of the migration batches using the endpoint are currently running.|
-
-
-

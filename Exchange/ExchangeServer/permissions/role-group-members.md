@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Manage role group members
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -112,6 +112,3 @@ The members of a role group are granted the permissions provided by the manageme
 ### Use the Exchange Management Shell to view the members of a role group
 
 To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](http://technet.microsoft.com/library/1ff116aa-1a62-4283-bc8e-5963d12958e1.aspx).
-
-
-

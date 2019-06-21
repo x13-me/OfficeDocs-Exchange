@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: AD LDS directory exists in default location [ADAMDataPathExists]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -28,4 +28,3 @@ To resolve this issue, remove the existing AD LDS directory and then run Setup a
 For more information about AD LDS directory management, see [Administering AD LDS Directory Partitions](https://go.microsoft.com/fwlink/p/?LinkId=272302).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

@@ -3,7 +3,7 @@ title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -24,7 +24,7 @@ Learn how to enable on-premises Exchange users to use Office 365 Groups in a hyb
 Groups is an Office 365 service that enables teams to communicate, schedule meetings, and collaborate on documents more easily. All information shared with a group, from email messages sent to the group, to files stored in the group's OneDrive for Business or SharePoint libraries, is available to any member of a group. If you've configured a hybrid deployment between your on-premises Exchange organization and Office 365, you can make groups created in Office 365 available to your on-premises users by following the steps in this topic.
 
 > [!IMPORTANT]
-> Using Office 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Be sure to check out the [Known issues](set-up-office-365-groups.md#KnownIssues) section at the end of this topic for fixes to issues you might run into.
+> Using Office 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Be sure to check out the [Known issues](#known-issues) section at the end of this topic for fixes to issues you might run into.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ Before you start, make sure that you've done the following:
 
 - Configured single sign-on using Azure Active Directory Connect (Azure AD Connect). This is needed to allow users to click on the **View group files** or cloud attachment links in group email messages.
 
-  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Integrating your on-premises identities with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkID=723513).
+  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Choose a solution for integrating on-premises Active Directory with Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/).
 
 ## Enable Group writeback in Azure AD Connect
 
@@ -62,7 +62,7 @@ Before you start, make sure that you've done the following:
 
 8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
 
-9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name.
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
 
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 

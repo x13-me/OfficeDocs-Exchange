@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Modify the SMTP banner on Receive connectors
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -79,6 +79,3 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
 2. Verify the that response contains the SMTP banner you configured.
 
 Note that this procedure only works on Receive connectors that allow anonymous or Basic authentication. For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
-
-
-

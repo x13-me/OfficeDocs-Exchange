@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 language support
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 has enhanced language support for both servers and clients. This topic lists the languages that are available for both servers and clients in Exchange 2013.
 
@@ -172,4 +169,3 @@ The following client languages are supported and available for Exchange 2013:
   - Vietnamese
 
   - Welsh
-

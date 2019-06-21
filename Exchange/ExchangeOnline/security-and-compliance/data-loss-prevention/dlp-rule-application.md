@@ -11,7 +11,7 @@ title: How DLP rules are applied to evaluate messages
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -27,25 +27,11 @@ Suppose you need to act on credit card information in messages. The actions you 
 
 To meet this need, let's make it clear that the following information should be classified as a credit card:
 
-> Margie's Travel,
-
-> I have received updated credit card information for Spencer.
-
-> Spencer Badillo
-
-> Visa: 4111 1111 1111 1111
-
-> Expires: 2/2012
-
-> Please update his travel profile.
+> Margie's Travel, <br/> I have received updated credit card information for Spencer. <br/> Spencer Badillo <br/> Visa: 4111 1111 1111 1111 <br/> Expires: 2/2012 <br/> Please update his travel profile.
 
 Let's also make it clear that the following information should not be classified as a credit card.
 
-> Hi Alex,
-
-> I expect to be in Hawaii too. My booking code is 1234 1234 1234 1234 and I'll be there on 3/2018.
-
-> Regards, Lisa
+> Hi Alex, <br/> I expect to be in Hawaii too. My booking code is 1234 1234 1234 1234 and I'll be there on 3/2018. <br/> Regards, Lisa <br/>
 
 The following XML snippet shows how the needs expressed earlier are currently defined in a sensitive information rule that is provided with Exchange and it is embedded within one of the supplied DLP policy templates.
 
@@ -104,15 +90,7 @@ There is a regular expression that matches a checksum. Additional evidence incre
 
 The way this rule is set up by Microsoft makes it mandatory that corroborating evidence such as keywords are a part of the email message content in order to match the rule. So the following email content would not be detected as containing a credit card:
 
-> Margie's Travel,
-
-> I have received updated information for Spencer.
-
-> Spencer Badillo
-
-> 4111 1111 1111 1111
-
-> Please update his travel profile.
+> Margie's Travel, <br/> I have received updated information for Spencer. <br/> Spencer Badillo <br/> 4111 1111 1111 1111 <br/> Please update his travel profile.
 
 You can use a custom rule that defines a pattern without extra evidence, as shown in the next example. This would detect messages with only credit card number and no corroborating evidence.
 

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
 ms.date: 12/9/2016
 ms.reviewer: 
-title: Prevent a user from receiving faxes
+title: Prevent a user from receiving faxes in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Prevent a user from receiving faxes
+# Prevent a user from receiving faxes in Exchange Online
 
 Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
 
@@ -54,6 +54,3 @@ This example prevents a UM-enabled user named Tony from receiving fax messages i
 ```
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```
-
-
-

@@ -6,14 +6,14 @@ ms.topic: article
 author: msdmaguire
 ms.service: exchange-online
 description: 'Summary: How to assign "Send As" or "Send on Behalf" permissions to your Exchange Online public folders.'
-ms.audience: ITPro
+audience: ITPro
 title: Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
 
 ---
 
 # Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
 
-You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled public folders to users in Microsoft Exchange Online. 
+You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled public folders to users in Microsoft Exchange Online.
 
 ## What do you need to know before you begin?
 
@@ -46,7 +46,7 @@ The following example assigns "Send on Behalf" permissions for the mail-enabled 
 
 The following example assigns "Send As" permissions for the mail-enabled public folder *NewPF1* to the user *Jason*.
 
-`Add-RecipientPermission -Identity 'NewPF1' -Trustee "Jason" -AccessRights 'SendAs'` 
+`Add-RecipientPermission -Identity 'NewPF1' -Trustee "Jason" -AccessRights 'SendAs'`
 
 For detailed syntax and parameter information, see the following articles:
 

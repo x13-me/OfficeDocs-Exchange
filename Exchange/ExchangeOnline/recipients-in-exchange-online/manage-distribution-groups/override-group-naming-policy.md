@@ -11,7 +11,7 @@ title: Override the distribution group naming policy
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -80,6 +80,3 @@ Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
 ```
 
 If the format of the display name for the group is different than the one enforced by your organization's group naming policy, it worked.
-
-
-

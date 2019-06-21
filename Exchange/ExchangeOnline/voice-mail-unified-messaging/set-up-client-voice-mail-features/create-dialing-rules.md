@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 ms.date: 3/9/2015
 ms.reviewer: 
-title: Create dialing rules for users
+title: Create dialing rules for users in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Create dialing rules for users
+# Create dialing rules for users in Exchange Online
 
 Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:
 
@@ -75,6 +75,3 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
   - **Comment**: Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls."
 
 5. Click **OK** to save the dialing rule. You can continue to enter rules, using the same dialing rule group name for rules that you want to authorize together.
-
-
-

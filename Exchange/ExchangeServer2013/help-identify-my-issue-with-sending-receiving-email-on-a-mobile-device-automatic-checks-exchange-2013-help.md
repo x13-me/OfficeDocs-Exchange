@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Help Identify My Issue with Sending/Receiving Email on a Mobile Device (Automatic Checks)
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 The check on this page will help identify some of the most common connectivity issues. You can use the automatic check below to validate your connectivity or help determine root cause.
 
@@ -28,7 +25,6 @@ You'll be asked to install an application on your machine and agree to the end u
 We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain Microsoft .NET Framework 4.5, go to the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=30653). See additional perquisite details [here](https://technet.microsoft.com/library/jj851141\(v=exchg.80\).aspx).
 
 ## Mobile Email Check
-
 
 <table>
 <colgroup>
@@ -49,4 +45,3 @@ We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain
 </tr>
 </tbody>
 </table>
-

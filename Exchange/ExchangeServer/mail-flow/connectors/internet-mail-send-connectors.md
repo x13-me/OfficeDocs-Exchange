@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -62,7 +62,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
   - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
-  -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+  - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
 
     When you're finished, click **Next**.
 
@@ -106,6 +106,3 @@ After you create the Send connector, it appears in the Send connector list. To c
 To verify that you have successfully created a Send Connector that sends mail to the internet, create and send a message from an internal mailbox to an outside recipient, and verify the recipient receives the message.
 
 You can also turn on protocol logging for the Send connector, and view the information in the log. For more information, see [Protocol logging](protocol-logging.md).
-
-
-

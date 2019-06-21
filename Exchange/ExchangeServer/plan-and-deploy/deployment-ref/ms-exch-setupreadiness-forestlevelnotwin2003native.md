@@ -12,7 +12,7 @@ ms.date: 12/20/2016
 ms.reviewer: 
 title: Active Directory functional level isn't Windows Server 2003 or later [ForestLevelNotWin2003Native]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -31,4 +31,3 @@ For more information about Active Directory functional levels, see the following
 - [How Active Directory Functional Levels Work](https://go.microsoft.com/fwlink/p/?LinkId=294833)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

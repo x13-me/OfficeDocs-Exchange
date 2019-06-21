@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 ms.reviewer: 
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Priority
@@ -167,7 +167,7 @@ This NDR might be caused by a forwarded (unintended) recipient that's configured
 - A forwarding Inbox rule or delegate that the recipient configured in their own mailbox.
 
 - A mail flow rule (also known as a transport rule) configured by an email admin that copies or forwards messages sent to the recipient to another invalid recipient.
- 
+
 For more information, see [Configure email forwarding for a mailbox](https://technet.microsoft.com/library/dd351134.aspx).
 
 ## Still need help with error code 5.1.1 to 5.1.20?

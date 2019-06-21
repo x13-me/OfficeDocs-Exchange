@@ -9,7 +9,7 @@ ms.date: 6/8/2018
 ms.reviewer: 
 title: Update a mailbox database copy
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -166,6 +166,3 @@ To verify that you've successfully seeded a mailbox database copy, do one of the
   ```
 
     The Status and Content Index State should both be Healthy.
-
-
-

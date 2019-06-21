@@ -11,7 +11,7 @@ title: Create a discovery mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -116,6 +116,3 @@ For detailed syntax and parameter information, see [Add-MailboxPermission](https
 - A discovery mailbox can't be repurposed or converted to another type of mailbox.
 
 - You can remove a discovery mailbox as you would any other type of mailbox.
-
-
-

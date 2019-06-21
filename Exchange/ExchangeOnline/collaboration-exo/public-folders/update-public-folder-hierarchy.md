@@ -11,7 +11,7 @@ title: Update the public folder hierarchy
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -49,6 +49,3 @@ This example updates all public folder mailboxes and suppresses the command's ou
 ```
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
-
-
-

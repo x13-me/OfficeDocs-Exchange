@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Use Compliance Search to search all mailboxes in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -276,6 +276,3 @@ After you create and start the In-Place eDiscovery search that was created by th
 5. Click **Start** to export the search results to a PST file.
 
     A window is displayed that contains status information about the export process.
-
-
-

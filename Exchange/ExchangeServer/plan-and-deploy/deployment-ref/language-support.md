@@ -9,7 +9,7 @@ ms.date: 7/31/2018
 ms.reviewer: 
 title: Exchange Server language support
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -166,4 +166,3 @@ Exchange Server 2016 and Exchange Server 2019 have enhanced language support for
 - Vietnamese
 
 - Welsh
-

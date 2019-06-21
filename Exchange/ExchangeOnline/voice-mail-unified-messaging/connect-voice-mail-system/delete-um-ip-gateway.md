@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Delete a UM IP gateway
+title: Delete a UM IP gateway in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Delete a UM IP gateway
+# Delete a UM IP gateway in Exchange Online
 
 When you delete a Unified Messaging (UM) IP gateway, Exchange servers can no longer accept incoming calls from the Voice over IP (VoIP) gateway, Session Initiation Protocol (SIP)-enabled Private Branch eXchange (PBX), IP PBX, or session border controller (SBC) associated with the UM IP gateway.
 
@@ -52,6 +52,3 @@ This example deletes the UM IP gateway named `MyUMIPGateway`.
 ```
 Remove-UMIPGateway -Identity MyUMIPGateway
 ```
-
-
-

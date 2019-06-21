@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Deployment reference
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 [Exchange 2013: editions and versions](exchange-2013-editions-and-versions-exchange-2013-help.md)
 
@@ -38,4 +35,3 @@ _**Applies to:** Exchange Server 2013_
 [Exchange 2013 language support](exchange-2013-language-support-exchange-2013-help.md)
 
 [Exchange 2013 readiness checks](exchange-2013-readiness-checks-exchange-2013-help.md)
-

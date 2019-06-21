@@ -14,18 +14,15 @@ mtps_version: v=EXCHG.150
 
 # Modifying multivalued properties
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 A multivalued property is a property that can contain more than one value. For example, the **BlockedRecipients** property on the **RecipientFilterConfig** object can accept multiple recipient addresses as in the following examples:
 
-  - john@contoso.com
+- john@contoso.com
 
-  - kim@northwindtraders.com
+- kim@northwindtraders.com
 
-  - david@adatum.com
+- david@adatum.com
 
 Because the **BlockedRecipients** property can accept more than one value, it's called a multivalued property. This topic explains how to use the Exchange Management Shell to add values to and remove values from a multivalued property on an object.
 
@@ -100,7 +97,6 @@ Modifying multivalued properties is similar to modifying single-valued propertie
 </tbody>
 </table>
 
-
 The syntax that you choose from the Multivalue property syntax table is specified as a parameter value on a cmdlet. For example, the following command adds multiple values to a multivalued property:
 
 ```powershell
@@ -122,11 +118,11 @@ Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
 More complex combinations can be used, such as adding or removing values to and from a property at the same time. To do so, insert a semicolon (`;` ) between `Add` and `Remove` actions. For example:
 
 ```powershell
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
 ```
 
 If we use the `Get-RecipientFilterConfig | Format-List BlockedRecipients` command again, we can see that the email addresses for Carter, Sam, and Brian have been added while the address for John has been removed.
 
 ```powershell
-    BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
 ```

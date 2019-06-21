@@ -10,7 +10,7 @@ manager: dansimp
 ms.prod: exchange-server-it-pro
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 title: Convert a mailbox in Exchange Server
 
 ---
@@ -95,6 +95,3 @@ Get-Mailbox -Identity <MailboxIdentity> | Format-List Name,RecipientTypeDetails,
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
-
-
-

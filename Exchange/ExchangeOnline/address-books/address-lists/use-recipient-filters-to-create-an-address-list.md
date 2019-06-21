@@ -11,7 +11,7 @@ title: Recipient filters for address lists in Exchange Online PowerShell
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -50,4 +50,3 @@ Recipient filters identify the recipients that are included in address lists and
 For more information about address lists, see [Address lists in Exchange Online](address-lists.md).
 
 For address list procedures that use recipient filters, see [Address list procedures in Exchange Online](address-list-procedures.md).
-

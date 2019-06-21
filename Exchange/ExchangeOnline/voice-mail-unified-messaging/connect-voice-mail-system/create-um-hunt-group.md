@@ -9,15 +9,15 @@ ms.author: chrisda
 ms.assetid: 43ecb1ec-5f82-4516-9010-de8f954d3758
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Create a UM hunt group
+title: Create a UM hunt group in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Create a UM hunt group
+# Create a UM hunt group in Exchange Online
 
 A Unified Messaging (UM) hunt group is a logical representation of a Private Branch eXchange (PBX) or IP PBX hunt group. A UM hunt group acts as a connection or link between a UM IP gateway and a UM dial plan.
 
@@ -77,6 +77,3 @@ This example creates a UM hunt group named `MyUMHuntGroup` that has multiple pil
 ```
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
-
-
-

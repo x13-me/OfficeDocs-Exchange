@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Remove a database availability group
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -63,6 +63,3 @@ To verify that you've successfully removed the DAG, do one of the following:
   ```
 
     If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.
-
-
-

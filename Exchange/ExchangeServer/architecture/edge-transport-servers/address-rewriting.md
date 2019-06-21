@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Address rewriting on Edge Transport servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -185,6 +185,3 @@ The following values aren't rewritten because the information is part of message
 - Header fields located inside MIME body parts that may be signed.
 
 - The boundary string parameter of the MIME content type.
-
-
-

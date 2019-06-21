@@ -11,7 +11,7 @@ title: Address list procedures in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -28,4 +28,3 @@ manager: dansimp
 [Configure global address list properties in Exchange Online](configure-global-address-list-properties.md)
 
 [Create a global address list in Exchange Online](create-global-address-list.md)
-

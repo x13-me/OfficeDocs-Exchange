@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
 ms.date: 11/17/2014
 ms.reviewer: 
-title: UM auto attendant procedures
+title: UM auto attendant procedures in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# UM auto attendant procedures
+# UM auto attendant procedures in Exchange Online
 
 [Set up a UM auto attendant](set-up-um-auto-attendant.md)
 
@@ -70,6 +70,3 @@ manager: dansimp
 [Configure the group of users that can be contacted](configure-users-that-can-be-contacted.md)
 
 [Configure an auto attendant for users who have similar names](configure-auto-attendant-for-users-with-similar-names.md)
-
-
-

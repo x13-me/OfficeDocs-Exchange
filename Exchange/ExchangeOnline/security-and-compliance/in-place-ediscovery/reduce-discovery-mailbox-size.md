@@ -11,7 +11,7 @@ title: Reduce the size of a discovery mailbox in Exchange
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 
@@ -167,6 +167,3 @@ After you've deleted the eDiscovery searches to remove the results from the disc
 ```
 Get-Mailbox <name of discovery mailbox> | Get-MailboxStatistics | Format-List TotalItemSize
 ```
-
-
-

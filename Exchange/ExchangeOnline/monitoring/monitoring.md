@@ -11,7 +11,7 @@ title: Monitoring, reporting, and message tracing in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -46,6 +46,3 @@ The following table describes when Exchange Online reporting and message trace d
 
 > [!NOTE]
 > Data availability and latency is the same whether requested via the Microsoft 365 admin center or remote PowerShell.
-
-
-

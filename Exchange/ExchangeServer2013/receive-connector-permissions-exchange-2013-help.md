@@ -14,13 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Receive connector permissions
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 The following table lists permission types and a description for each.
-
 
 <table>
 <colgroup>
@@ -80,4 +76,3 @@ The following table lists permission types and a description for each.
 </tr>
 </tbody>
 </table>
-

@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Edge Transport servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -44,4 +44,3 @@ Mail flow rules on Edge Transport servers are used to control the flow of messag
 ## Address rewriting
 
 Address rewriting presents a consistent email address appearance to external recipients. You configure address rewriting on Edge Transport servers to modify the SMTP addresses on inbound and outbound messages. Address rewriting is especially useful for newly merged organizations that want to present a consistent email address appearance.
-

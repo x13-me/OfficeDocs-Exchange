@@ -3,7 +3,7 @@ title: "Server roles in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -84,4 +84,4 @@ Exchange 2013 CU1 or greater enables hybrid deployment functionality with the Hy
 For information on how to download the latest version of Exchange Server, see [Updates for Exchange](https://technet.microsoft.com/Library/jj907309).
 
 > [!IMPORTANT]
-> You need to license your hybrid server when you configure a hybrid deployment with Exchange 2013 or 2010 and Office 365. To obtain a free Exchange Server product key for use in configuring your hybrid deployment, use the [Hybrid Edition Product Key tool](https://aka.ms/hybridkey).
+> You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](http://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.

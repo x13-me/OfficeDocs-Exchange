@@ -11,7 +11,7 @@ title: Apply a retention policy to mailboxes
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -107,6 +107,3 @@ This command retrieves all mailboxes that have the retention policy RP-Finance a
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionPolicy -eq "RP-Finance"} | Format-Table Name,RetentionPolicy -Auto
 ```
-
-
-

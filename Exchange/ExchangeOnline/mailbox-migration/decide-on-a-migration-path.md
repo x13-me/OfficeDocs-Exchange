@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -116,6 +116,3 @@ You can also hire a partner to help you migrate your email data. You'll find a l
 <a name="BKMK_Comment"> </a>
 
 Were these instructions helpful? If so, please let us know at the bottom of this topic. If they weren't, and you're still having trouble deciding on a migration strategy, tell us what source email system you want to migrate from and we'll use your feedback to improve our content.
-
-
-

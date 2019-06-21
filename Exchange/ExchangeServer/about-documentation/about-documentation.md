@@ -11,7 +11,7 @@ title: About Exchange documentation
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -46,6 +46,3 @@ Looking for more than just documentation? Check out these other Exchange resourc
 - [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967): Check out this page for support resources for multiple versions of Exchange.
 
 - [Accessibility for people with disabilities](accessibility.md) : This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.
-
-
-

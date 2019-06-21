@@ -17,7 +17,7 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -131,5 +131,3 @@ If you're comfortable with what's involved in migrating mailboxes to Office 365,
 [Tips for optimizing IMAP migrations](optimizing-imap-migrations.md)
 
 [Learn more about setting up your IMAP server connection](setting-up-your-imap-server-connection.md)
-
-

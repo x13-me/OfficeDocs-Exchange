@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -41,4 +41,3 @@ To resolve this issue, do the following steps:
 > To immediately replicate the change, you need to manually initiate replication between domain controllers.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

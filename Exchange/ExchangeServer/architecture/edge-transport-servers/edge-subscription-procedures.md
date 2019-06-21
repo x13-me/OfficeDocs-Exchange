@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Procedures for Edge Subscriptions
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -162,6 +162,3 @@ This example verifies EdgeSync results for the user kate@contoso.com.
 ```
 Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
 ```
-
-
-

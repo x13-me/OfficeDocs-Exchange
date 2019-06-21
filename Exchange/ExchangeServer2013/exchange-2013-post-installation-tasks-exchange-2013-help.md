@@ -14,13 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Exchange 2013 post-Installation tasks
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 After you've completed the installation of Microsoft Exchange Server 2013, read the following topics to help you configure your new Exchange 2013 organization.
-
 
 <table>
 <colgroup>
@@ -57,6 +53,4 @@ After you've completed the installation of Microsoft Exchange Server 2013, read 
 </tbody>
 </table>
 
-
 If you want to configure additional features, such as permissions, compliance, high availability, and more, see [Exchange Server 2013](exchange-server-2013-exchange-2013-help.md).
-

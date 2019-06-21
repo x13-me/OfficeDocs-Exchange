@@ -11,7 +11,7 @@ ms.date: 12/20/2016
 ms.reviewer: 
 title: A Windows Server 2012 update rollup hasn't been installed [Win2k12RollupUpdateNotInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -31,4 +31,3 @@ Download and install the 64-bit update from the following URL, and then click **
 Microsoft Knowledge Base article KB2822241, [ Windows 8 and Windows Server 2012 update rollup: April 2013 ](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2822241)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

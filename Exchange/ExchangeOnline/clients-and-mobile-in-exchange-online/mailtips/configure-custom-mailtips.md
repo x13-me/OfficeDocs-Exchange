@@ -11,7 +11,7 @@ title: Configure custom MailTips for recipients
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -60,15 +60,15 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 2. Select any of the following recipient tabs based on the recipient type:
 
-  - **Mailboxes**
+   - **Mailboxes**
 
-  - **Groups**
+   - **Groups**
 
-  - **Resources**
+   - **Resources**
 
-  - **Contacts**
+   - **Contacts**
 
-  - **Shared**
+   - **Shared**
 
 3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -117,6 +117,3 @@ To verify that you have successfully configured a MailTip for a recipient, do th
 2. Verify the MailTip appears in the InfoBar.
 
 3. If you configured additional MailTip translations, compose the message in Outlook Web App where the language setting matches the language of the MailTip translation to verify the results.
-
-
-

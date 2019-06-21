@@ -11,7 +11,7 @@ title: Message properties and search operators for In-Place eDiscovery
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 
@@ -39,7 +39,7 @@ The following table lists email message properties that can be searched using an
 |Participants|All the people fields in an email message; these fields are From, To, CC, and BCC.<sup>1</sup>|participants:garthf@contoso.com <br/><br/> participants:contoso.com|Messages sent by or sent to garthf@contoso.com. <br/> The second example returns all messages sent by or sent to a user in the contoso.com domain.|
 |Received|The date that an email message was received by a recipient.|received:04/15/2014 <br/><br/> received\>=01/01/2014 AND received\<=03/31/2014|Messages that were received on April 15, 2014. The second example returns all messages received between January 1, 2014 and March 31, 2014.|
 |Recipients|All recipient fields in an email message; these fields are To, CC, and BCC.<sup>1</sup>|recipients:garthf@contoso.com <br/><br/> recipients:contoso.com|Messages sent to garthf@contoso.com. <br/> The second example returns messages sent to any recipient in the contoso.com domain.|
-|Sent|The date that an email message was sent by the sender.|sent:07/01/2014 <br/><br/> sent\>=06/01/2014 AND sent\<=07/01/2014|Messages that were sent on the specified date or sent within the specified date range.|
+|Sent|The date that an email message was sent by the sender.|sent:07/01/2014 <br/><br/> sent\>=06/01/2014 AND sent\<=07/01/2014|Messages that were sent on July 01, 2014. The second example returns all messages sent between June 01, 2014 and July 01, 2014.|
 |Size|The size of an item, in bytes.|size\>26214400 <br/><br/> size:1..1048576|Messages larger than 25 MB. <br/> The second example returns messages from 1 through 1,048,576 bytes (1 MB) in size.|
 |Subject|The text in the subject line of an email message.|subject:"Quarterly Financials" <br/><br/> subject:northwind|Messages that contain the exact phrase "Quarterly Financials" anywhere in the text of the subject line. <br/> The second example returns all messages that contain the word northwind in the subject line.|
 |To|The To field of an email message.<sup>1</sup>|to:annb@contoso.com <br/><br/> to:annb <br/><br/> to:"Ann Beebe"|All examples return messages where Ann Beebe is specified in the To: line.|
@@ -57,7 +57,7 @@ Boolean search operators, such as **AND**, **OR**, help you define more-precise 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns messages that include all of the specified keywords or `property:value` expressions.|
-|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and*  that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`. <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
+|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and* that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`. <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns messages that include one or more of the specified keywords or `property:value` expressions.|
 |NOT|keyword1 NOT keyword2 <br/><br/> NOT from:"Ann Beebe"|Excludes messages specified by a keyword or a `property:value` expression. For example, `NOT from:"Ann Beebe"` excludes messages sent by Ann Beebe.|
 |-|keyword1 -keyword2|The same as the **NOT** operator. This query returns items that contain `keyword1` and excludes items that contain `keyword2`.|

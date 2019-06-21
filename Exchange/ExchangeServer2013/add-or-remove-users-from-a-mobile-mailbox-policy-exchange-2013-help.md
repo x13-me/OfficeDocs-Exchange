@@ -34,9 +34,7 @@ For additional management tasks related to mobile device mailbox policies, see [
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-## What do you want to do?
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Change a user's mobile device mailbox policy
 
@@ -61,7 +59,7 @@ You can change a single user's mobile device mailbox policy using the **Set-CASM
 In the Shell, run the following command.
 
 ```powershell
-Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales"
 ```
 
 ## How do you know this worked?
@@ -71,9 +69,9 @@ To verify that you've successfully changed a user's mobile device mailbox policy
 1. In the EAC, click **Recipients** \> **Mailboxes**, and then choose a specific recipient. In the Details pane, scroll down to **Phone and Voice Features** and click **View details**.
 
 2. In the Shell, run the following command.
- 
+
    ```powershell
-   Get-CASMailbox -Identity tony@contoso.com 
+   Get-CASMailbox -Identity tony@contoso.com
    ```
 
 ## Change the mobile device mailbox policy for multiple users at the same time

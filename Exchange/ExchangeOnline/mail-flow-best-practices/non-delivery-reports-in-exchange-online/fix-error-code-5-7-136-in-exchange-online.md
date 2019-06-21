@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 5/25/2017
 ms.reviewer: 
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -57,7 +57,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 Instead of allowing all external senders to send messages to this mail user, you can use the mail user's allowed senders list to selectively allow messages from all internal senders and the specified external senders.
 
-**Notes**: 
+**Notes**:
 
 - To add an external sender to a mail user's allowed senders list, you must first create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
 

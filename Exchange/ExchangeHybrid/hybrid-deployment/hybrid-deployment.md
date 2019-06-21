@@ -3,7 +3,7 @@ title: "Hybrid Deployment procedures"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -45,4 +45,3 @@ Select a topic below to get started:
 [Troubleshoot a hybrid deployment](troubleshoot-a-hybrid-deployment.md)
 
 [Configure IRM in hybrid deployments](../irm.md#configure-irm-in-hybrid-deployments)
-  

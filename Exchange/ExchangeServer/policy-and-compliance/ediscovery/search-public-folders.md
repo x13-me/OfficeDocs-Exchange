@@ -9,7 +9,7 @@ ms.date: 6/8/2018
 ms.reviewer: 
 title: Search and place a hold on public folders using In-Place eDiscovery
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -113,6 +113,3 @@ Start-MailboxSearch "Contoso Litigation"
 - You can't delete public folders that are on In-Place Hold. You will have to remove the hold before you can delete any public folder.
 
 - Mail-enabling a public folder doesn't impact using In-Place eDiscovery to search or place holds on public folders. Mail-enabled and non-mail enabled public folders can be searched and placed on hold.
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/3/2018
 ms.reviewer: 
 title: Address rewriting procedures on Edge Transport servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -299,6 +299,3 @@ To verify that you have successfully removed an address rewrite entry, do the fo
 2. From a mailbox that was affected by the address rewrite entry, send a test message to an external mailbox. Verify the test message is no longer affected by the removed address rewrite entry.
 
 3. From the external mailbox, reply to the test message. Verify the original mailbox receives the reply and that the message is unaffected by the removed address rewrite entry.
-
-
-

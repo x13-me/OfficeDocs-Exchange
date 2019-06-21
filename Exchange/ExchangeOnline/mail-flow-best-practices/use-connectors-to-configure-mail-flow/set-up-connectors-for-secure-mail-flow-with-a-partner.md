@@ -9,7 +9,7 @@ ms.date: 6/23/2018
 ms.reviewer: 
 title: Set up connectors for secure mail flow with a partner organization
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -185,5 +185,3 @@ When you set these restrictions, all mail from your partner organization sent fr
 [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
-
-

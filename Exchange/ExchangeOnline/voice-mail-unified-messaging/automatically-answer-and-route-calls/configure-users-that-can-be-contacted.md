@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the group of users that can be contacted
+title: Configure the group of users that can be contacted in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure the group of users that can be contacted
+# Configure the group of users that can be contacted in Exchange Online
 
 You can specify the group of users that callers can contact when calling into a Unified Messaging (UM) auto attendant. By default, callers can contact users within the same dial plan that's associated with the UM auto attendant. However, you can change the grouping of users to allow callers to transfer calls or send voice messages to users who are located in the organization's address book or to a specific set of users.
 
@@ -57,6 +57,3 @@ This example sets the scope of the users that callers can contact to all users i
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -ContactScope GlobalAddressList
 ```
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Enable and configure IMAP4 on an Exchange server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -223,6 +223,3 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 ## Next steps
 
 To enabled or disable IMAP4 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
-
-
-

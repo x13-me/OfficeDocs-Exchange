@@ -11,7 +11,7 @@ title: Supported character sets for remote domains in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -70,4 +70,3 @@ The following table describes the character sets that you can configure in remot
 |windows-1257|Baltic (Windows)|
 |windows-1258|Vietnamese (Windows)|
 |windows-874|Thai (Windows)|
-

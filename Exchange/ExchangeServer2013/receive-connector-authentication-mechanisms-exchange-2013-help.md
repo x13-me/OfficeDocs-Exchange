@@ -14,14 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Receive connector authentication mechanisms
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
-
 The Receive connector authentication mechanisms are the following:
-
 
 <table>
 <colgroup>
@@ -66,6 +61,4 @@ The Receive connector authentication mechanisms are the following:
 </tbody>
 </table>
 
-
 For more information about Receive Connector authentication mechanisms, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
-

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Outlook Voice Access procedures
+title: Outlook Voice Access procedures in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Outlook Voice Access procedures
+# Outlook Voice Access procedures in Exchange Online
 
 [Enable or disable Outlook Voice Access for users](enable-or-disable-outlook-voice-access.md)
 
@@ -50,6 +50,3 @@ manager: dansimp
 [Configure the number of input failures before Outlook Voice Access users are disconnected](configure-number-of-input-failures.md)
 
 [Configure the limit on personal greetings for Outlook Voice Access users](configure-personal-greetings-limit.md)
-
-
-

@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 92b3b679-b503-4068-8e88-25ec0f4537ab
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable or disable automatic speech recognition
+title: Enable or disable automatic speech recognition in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Enable or disable automatic speech recognition
+# Enable or disable automatic speech recognition in Exchange Online
 
 You can enable your Unified Messaging (UM) auto attendant for Automatic Speech Recognition (ASR). After you speech-enable a UM auto attendant, callers can respond verbally to auto attendant prompts and move through the menu system of the auto attendant. By default, an auto attendant isn't speech-enabled when you create it. After you speech-enable the auto attendant, callers can use only voice commands to navigate the auto attendant menu system, and touchtone inputs can't be used.
 
@@ -55,6 +55,3 @@ This example enables ASR on a UM auto attendant named `MySpeechEnabled AA`.
 ```
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -SpeechEnabled $true
 ```
-
-
-

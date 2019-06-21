@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable calls from users who aren't UM-enabled
+title: Enable calls from users who aren't UM-enabled in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Enable calls from users who aren't UM-enabled
+# Enable calls from users who aren't UM-enabled in Exchange Online
 
 You can enable or disable calls from users who aren't enabled for Unified Messaging (UM). By default, Unified Messaging allows incoming calls from unauthenticated callers through an auto attendant to be transferred to UM-enabled users. With this option enabled, users from outside an organization can transfer calls to UM-enabled users.
 
@@ -47,6 +47,3 @@ This example allows Tony Smith to receive voice calls from callers who aren't UM
 ```
 Set UMMailbox -Identity tony@contoso.com -AllowUMCallsFromNonUsers SearchEnabled
 ```
-
-
-

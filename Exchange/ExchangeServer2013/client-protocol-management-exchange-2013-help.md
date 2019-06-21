@@ -14,12 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Client protocol management
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
-Management of the client protocols of Exchange ActiveSync, Outlook Web App, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service occurs in three different areas: the Exchange Administration Center (EAC), the Exchange Management Shell, and Internet Information Services (IIS) Manager. The settings that are managed in each location vary per client protocol.
+Management of the client protocols of Exchange ActiveSync, Outlook Web App, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service occurs in three different areas: the Exchange admin center (EAC), the Exchange Management Shell, and Internet Information Services (IIS) Manager. The settings that are managed in each location vary per client protocol.
 
 ## Managing Outlook Web App settings
 
@@ -46,7 +43,6 @@ If the connection is proxied to a different Active Directory site, the virtual d
 The following tables indicate which virtual directory settings can be managed on which servers. If you try to manage a particular setting on a server for which it isn't applicable, you will receive an error message indicating that the property you are trying to set is read-only for the server that you are operating on.
 
 **Exchange ActiveSync virtual directory settings on Client Access servers**
-
 
 <table>
 <colgroup>
@@ -127,9 +123,7 @@ The following tables indicate which virtual directory settings can be managed on
 </tbody>
 </table>
 
-
 **Exchange ActiveSync virtual directory settings on Client Access and Mailbox servers**
-
 
 <table>
 <colgroup>
@@ -178,7 +172,6 @@ The following tables indicate which virtual directory settings can be managed on
 </tbody>
 </table>
 
-
 ## Managing POP3 and IMAP4 settings
 
 In Exchange 2013, the implementation of the POP3 and IMAP4 protocols has also been segmented between the Client Access and Mailbox server roles. Due to the new implementation, POP3 and IMAP4 connectivity are each managed by a service on the Client Access server, as well as by a service on the Mailbox server. The names of the services that run on the Client Access server are the same as the names that existed in Exchange 2010: Microsoft Exchange IMAP4 service and Microsoft Exchange POP3 service. The names of the two new services that run on the Mailbox server are the Microsoft Exchange IMAP4 Backend service and the Microsoft Exchange POP3 Backend service.
@@ -192,7 +185,6 @@ Consider the following as you manage POP3 and IMAP4 connectivity in your organiz
 Use the following tables indicate which POP/IMAP settings are each server role.
 
 **POP3 and IMAP4 settings on Client Access server**
-
 
 <table>
 <colgroup>
@@ -249,9 +241,7 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 </tbody>
 </table>
 
-
 **POP3 and IMAP4 settings on Mailbox server**
-
 
 <table>
 <colgroup>
@@ -296,9 +286,7 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 </tbody>
 </table>
 
-
 **POP3 and IMAP4 settings on Client Access and Mailbox servers**
-
 
 <table>
 <colgroup>
@@ -350,4 +338,3 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 </tr>
 </tbody>
 </table>
-

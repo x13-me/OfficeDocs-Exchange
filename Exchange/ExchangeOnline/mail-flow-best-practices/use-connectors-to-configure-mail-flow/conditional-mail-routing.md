@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Scenario Conditional mail routing in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -73,4 +73,3 @@ Now that we've created a connector, we need to create a mail flow rule that'll s
    You can choose additional properties for the rule, such as the test mode and when to activate the rule.
 
 5. To save the connector, click **Save**.
-

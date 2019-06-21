@@ -14,14 +14,11 @@ mtps_version: v=EXCHG.150
 
 # The local computer is already running Exchange Server\_ExchangeAlreadyInstalled
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Microsoft® Exchange Server 2007 setup cannot continue because the local computer has previous Microsoft Exchange components installed.
 
@@ -31,23 +28,19 @@ To resolve this issue, remove any Microsoft Exchange 2000 Server or Microsoft E
 
 **To remove Microsoft Exchange components**
 
-1.  Click **Start**, point to **Settings**, and then click **Control Panel**.
+1. Click **Start**, point to **Settings**, and then click **Control Panel**.
 
-2.  Double-click **Add or Remove Programs**.
+2. Double-click **Add or Remove Programs**.
 
-3.  In the **Currently installed programs** list, click **Microsoft Exchange**, and then click **Change/Remove**.
+3. In the **Currently installed programs** list, click **Microsoft Exchange**, and then click **Change/Remove**.
 
-4.  In Microsoft Exchange Installation Wizard, click **Next**.
+4. In Microsoft Exchange Installation Wizard, click **Next**.
 
-5.  In the Action list on the Component Selection page, click the down arrow next to each component that has been installed, and then click **Remove**.
-    
+5. In the Action list on the Component Selection page, click the down arrow next to each component that has been installed, and then click **Remove**.
 
     > [!NOTE]
     > Installed components have a check mark in the Action list. When you click <STRONG>Remove</STRONG>, the check mark is replaced by the word <STRONG>Remove</STRONG>.
 
+6. Click **Next** two times.
 
-
-6.  Click **Next** two times.
-
-7.  Click **Finish**.
-
+7. Click **Finish**.

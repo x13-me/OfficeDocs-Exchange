@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -196,6 +196,3 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync acces
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {ActiveSyncEnabled -eq $false}
   ```
-
-
-

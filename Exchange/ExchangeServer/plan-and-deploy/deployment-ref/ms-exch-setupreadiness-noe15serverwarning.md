@@ -11,7 +11,7 @@ ms.date: 6/12/2018
 ms.reviewer: 
 title: No Exchange 2013 servers detected [NoE15ServerWarning]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -37,4 +37,3 @@ If you decide that you need to deploy Exchange 2013 servers, you must do so befo
 2. Exchange 2016
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-

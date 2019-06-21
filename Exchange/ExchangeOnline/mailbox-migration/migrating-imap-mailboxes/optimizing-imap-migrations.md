@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -87,6 +87,3 @@ Here are some tips for optimizing an IMAP migration:
   - Tell users which folders won't be migrated, if applicable.
 
   - Folders with a forward slash ( / ) in the folder name aren't migrated. If users want to migrate folders that contain forward slashes in their names, they have to rename the folders or replace the forward slashes with a different character, such as an underscore character ( _ ) or a dash ( - ).
-
-
-

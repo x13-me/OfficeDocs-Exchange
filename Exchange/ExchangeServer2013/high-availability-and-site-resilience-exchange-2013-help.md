@@ -14,140 +14,59 @@ mtps_version: v=EXCHG.150
 
 # High availability and site resilience
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can protect your Exchange Server 2013 mailbox databases and the data they contain by configuring your Mailbox servers and databases for high availability and site resilience. Exchange 2013 minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.
 
 Exchange 2013 enables customers of all sizes and in all segments to economically deploy a messaging continuity service in their organization by building on the native replication capabilities and high availability architecture introduced in Exchange 2010. For a list of changes over Exchange 2010 and Exchange 2007, see [Changes to high availability and site resilience over previous versions](changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help.md).
 
-**Contents**
-
-Key terminology
-
-Database availability groups
-
-Mailbox database copies
-
-Active Manager
-
-Site resilience
-
-Third-party replication API
-
-High availability and site resilience documentation
-
 ## Key terminology
 
 The following key terms are important to understand high availability or site resilience:
 
-  - *Active Manager*  
-    An internal Exchange component which runs inside the Microsoft Exchange Replication service that's responsible for failure monitoring and corrective action through failover within a database availability group (DAG).
+- **Active Manager**: An internal Exchange component which runs inside the Microsoft Exchange Replication service that's responsible for failure monitoring and corrective action through failover within a database availability group (DAG).
 
-<!-- end list -->
+- **AutoDatabaseMountDial**: A property setting of a Mailbox server that determines whether a passive database copy will automatically mount as the new active copy, based on the number of log files missing by the copy being mounted.
 
-  - *AutoDatabaseMountDial*  
-    A property setting of a Mailbox server that determines whether a passive database copy will automatically mount as the new active copy, based on the number of log files missing by the copy being mounted.
+- **Continuous replication - block mode**: In block mode, as each update is written to the active database copy's active log buffer, it's also shipped to a log buffer on each of the passive mailbox copies in block mode. When the log buffer is full, each database copy builds, inspects, and creates the next log file in the generation sequence.
 
-<!-- end list -->
+- **Continuous replication - file mode**: In file mode, closed transaction log files are pushed from the active database copy to one or more passive database copies.
 
-  - *Continuous replication - block mode*  
-    In block mode, as each update is written to the active database copy's active log buffer, it's also shipped to a log buffer on each of the passive mailbox copies in block mode. When the log buffer is full, each database copy builds, inspects, and creates the next log file in the generation sequence.
+- **Database availability group**: A group of up to 16 Exchange 2013 Mailbox servers that hosts a set of replicated databases.
 
-<!-- end list -->
+- **Database mobility**: The ability of an Exchange 2013 mailbox database to be replicated to and mounted on other Exchange 2013 Mailbox servers.
 
-  - *Continuous replication - file mode*  
-    In file mode, closed transaction log files are pushed from the active database copy to one or more passive database copies.
+- **Datacenter**: Typically this refers to an Active Directory site; however, it can also refer to a physical site. In the context of this documentation, datacenter equals Active Directory site.
 
-<!-- end list -->
+- **Datacenter Activation Coordination mode**: A property of the DAG setting that, when enabled, forces the Microsoft Exchange Replication service to acquire permission to mount databases at startup.
 
-  - *Database availability group*  
-    A group of up to 16 Exchange 2013 Mailbox servers that hosts a set of replicated databases.
+- **Disaster recovery**: Any process used to manually recover from a failure. This can be a failure that affects a single item, or it can be a failure that affects an entire physical location.
 
-<!-- end list -->
+- **Exchange third-party replication API**: An Exchange-provided API that enables use of third-party synchronous replication for a DAG instead of continuous replication.
 
-  - *Database mobility*  
-    The ability of an Exchange 2013 mailbox database to be replicated to and mounted on other Exchange 2013 Mailbox servers.
+- **High availability**: A solution that provides service availability, data availability, and automatic recovery from failures that affect the service or data (such as a network, storage, or server failure).
 
-<!-- end list -->
+- **Incremental deployment**: The ability to deploy high availability and site resilience after Exchange 2013 is installed.
 
-  - *Datacenter*  
-    Typically this refers to an Active Directory site; however, it can also refer to a physical site. In the context of this documentation, datacenter equals Active Directory site.
+- **Lagged mailbox database copy**: A passive mailbox database copy that has a log replay lag time greater than zero.
 
-<!-- end list -->
+- **Mailbox database copy**: A mailbox database (.edb file and logs), which is either active or passive.
 
-  - *Datacenter Activation Coordination mode*  
-    A property of the DAG setting that, when enabled, forces the Microsoft Exchange Replication service to acquire permission to mount databases at startup.
+- **Mailbox resiliency**: The name of a unified high availability and site resilience solution in Exchange 2013.
 
-<!-- end list -->
+- **Managed availability**: A set of internal processes made up of probes, monitors, and responders that incorporate monitoring and high availability across all server roles and all protocols.
 
-  - *Disaster recovery*  
-    Any process used to manually recover from a failure. This can be a failure that affects a single item, or it can be a failure that affects an entire physical location.
+- **\*over** (pronounced "star over"): Short for *switchovers* and *failovers*. A switchover is a manual activation of one or more database copies. A failover is an automatic activation of one or more database copies after a failure.
 
-<!-- end list -->
+- **Safety Net**: Formerly known as transport dumpster, this is a feature of the transport service that stores a copy of all messages for *X* days. The default setting is 2 days.
 
-  - *Exchange third-party replication API*  
-    An Exchange-provided API that enables use of third-party synchronous replication for a DAG instead of continuous replication.
+- **Shadow redundancy**: A transport server feature that provides redundancy for messages for the entire time they're in transit.
 
-<!-- end list -->
-
-  - *High availability*  
-    A solution that provides service availability, data availability, and automatic recovery from failures that affect the service or data (such as a network, storage, or server failure).
-
-<!-- end list -->
-
-  - *Incremental deployment*  
-    The ability to deploy high availability and site resilience after Exchange 2013 is installed.
-
-<!-- end list -->
-
-  - *Lagged mailbox database copy*  
-    A passive mailbox database copy that has a log replay lag time greater than zero.
-
-<!-- end list -->
-
-  - *Mailbox database copy*  
-    A mailbox database (.edb file and logs), which is either active or passive.
-
-<!-- end list -->
-
-  - *Mailbox resiliency*  
-    The name of a unified high availability and site resilience solution in Exchange 2013.
-
-<!-- end list -->
-
-  - *Managed availability*  
-    A set of internal processes made up of probes, monitors, and responders that incorporate monitoring and high availability across all server roles and all protocols.
-
-<!-- end list -->
-
-  - *\*over* (pronounced "star over")  
-    Short for *switchovers* and *failovers*. A switchover is a manual activation of one or more database copies. A failover is an automatic activation of one or more database copies after a failure.
-
-<!-- end list -->
-
-  - *Safety Net*  
-    Formerly known as transport dumpster, this is a feature of the transport service that stores a copy of all messages for *X* days. The default setting is 2 days.
-
-<!-- end list -->
-
-  - *Shadow redundancy*  
-    A transport server feature that provides redundancy for messages for the entire time they're in transit.
-
-<!-- end list -->
-
-  - *Site resilience*  
-    A configuration that extends the messaging infrastructure to multiple Active Directory sites to provide operational continuity for the messaging system in the event of a failure affecting one of the sites.
-
-Return to top
+- **Site resilience**: A configuration that extends the messaging infrastructure to multiple Active Directory sites to provide operational continuity for the messaging system in the event of a failure affecting one of the sites.
 
 ## Database availability groups
 
 A DAG is the base component of the high availability and site resilience framework built into Exchange 2013. A DAG is a group of up to 16 Mailbox servers that host a set of databases and provides automatic, database-level recovery from failures that affect individual databases, networks, or servers. Any server in a DAG can host a copy of a mailbox database from any other server in the DAG. When a server is added to a DAG, it works with the other servers in the DAG to provide automatic recovery from failures that affect mailbox databases, such as a disk failure or server failure. For more information about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
-
-Return to top
 
 ## Mailbox database copies
 
@@ -161,13 +80,9 @@ For example, if an active database in a DAG fails because of an underlying stora
 
 For more information about mailbox database copies, see [Mailbox database copies](mailbox-database-copies-exchange-2013-help.md).
 
-Return to top
-
 ## Active Manager
 
 Exchange 2013 leverages the Active Manager component introduced in Exchange 2010 to manage the database and database copy health, status, continuous replication, and other aspects of Mailbox server high availability. For more information about Active Manager, see [Active Manager](active-manager-exchange-2013-help.md).
-
-Return to top
 
 ## Site resilience
 
@@ -189,19 +104,17 @@ One of the changes in Exchange 2013 is to enable clients to have more than one p
 
 The benefits include the following:
 
-  - In Exchange 2010, if you lose the load balancer in your primary datacenter and you don't have another one in that site, you had to do a datacenter switchover. In Exchange 2013, if you lose the load balancer in your primary site, you simply turn it off (or maybe turn off the VIP) and repair or replace it. Clients that aren't already using the VIP in the secondary datacenter will automatically fail over to the secondary VIP without any change of namespace, and without any change in DNS. Not only does that mean you no longer have to perform a switchover, but it also means that all of the time normally associated with a datacenter switchover recovery isn't spent. In Exchange 2010, you had to handle DNS latency (hence, the recommendation to set the Time to Live (TTL) to 5 minutes, and the introduction of the failback URL). In Exchange 2013, you don't need to do that because you get fast failover (20 seconds) of the namespace between VIPs (datacenters).
+- In Exchange 2010, if you lose the load balancer in your primary datacenter and you don't have another one in that site, you had to do a datacenter switchover. In Exchange 2013, if you lose the load balancer in your primary site, you simply turn it off (or maybe turn off the VIP) and repair or replace it. Clients that aren't already using the VIP in the secondary datacenter will automatically fail over to the secondary VIP without any change of namespace, and without any change in DNS. Not only does that mean you no longer have to perform a switchover, but it also means that all of the time normally associated with a datacenter switchover recovery isn't spent. In Exchange 2010, you had to handle DNS latency (hence, the recommendation to set the Time to Live (TTL) to 5 minutes, and the introduction of the failback URL). In Exchange 2013, you don't need to do that because you get fast failover (20 seconds) of the namespace between VIPs (datacenters).
 
-  - Because you can fail over the namespace between datacenters, all that's needed to achieve a datacenter failover is a mechanism for failover of the Mailbox server role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. If you only have two datacenters and a third physical location isn't available, you can place the witness server on a Microsoft Azure virtual machine. See [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md) for more information.
+- Because you can fail over the namespace between datacenters, all that's needed to achieve a datacenter failover is a mechanism for failover of the Mailbox server role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. If you only have two datacenters and a third physical location isn't available, you can place the witness server on a Microsoft Azure virtual machine. See [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md) for more information.
 
-  - In this scenario, the administrator's efforts are geared toward simply fixing the problem, and not spent restoring service. You simply fix the thing that failed; while service has been running and data integrity has been maintained. The urgency and stress level you feel when fixing a broken device is nothing like the urgency and stress you feel when you're working to restore service. It's better for the end user, and less stressful for the administrator.
+- In this scenario, the administrator's efforts are geared toward simply fixing the problem, and not spent restoring service. You simply fix the thing that failed; while service has been running and data integrity has been maintained. The urgency and stress level you feel when fixing a broken device is nothing like the urgency and stress you feel when you're working to restore service. It's better for the end user, and less stressful for the administrator.
 
 You can allow failover to occur without having to perform switchbacks (sometimes mistakenly referred to as failbacks). If you lose Client Access servers in your primary datacenter and that results in a 20 second interruption for clients, you might not even care about failing back. At this point, your primary concern would be fixing the core issue (for example, replacing the failed load balancer). After it's back online and functioning, some clients will start using it, and other clients might remain operational through the second datacenter.
 
 Exchange 2013 also provides functionality that enables administrators to deal with intermittent failures. An intermittent failure is where, for example, the initial TCP connection can be made, but nothing happens afterward. An intermittent failure requires some sort of extra administrative action to be taken because it might be the result of a replacement device being put into service. While this repair process is occurring, the device might be powered on and accepting some requests, but not really ready to service clients until the necessary configuration steps are performed. In this scenario, the administrator can perform a namespace switchover by simply removing the VIP for the device being replaced from DNS. Then during that service period, no clients will be trying to connect to it. After the replacement process has completed, the administrator can add the VIP back to DNS, and clients will eventually start using it.
 
 For details about planning and deploying site resilience, see [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md) and [Deploying high availability and site resilience](deploying-high-availability-and-site-resilience-exchange-2013-help.md).
-
-Return to top
 
 ## Third-party replication API
 
@@ -213,12 +126,9 @@ Microsoft's backup and restore support policy for deployments that use third-par
 
 If you're a partner seeking information about the third-party API, contact your Microsoft representative.
 
-Return to top
-
 ## High availability and site resilience documentation
 
 The following table contains links to topics that will help you learn about and manage DAGs, mailbox database copies, and backup and restore for Exchange 2013.
-
 
 <table>
 <colgroup>
@@ -258,7 +168,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-
-
-Return to top
-

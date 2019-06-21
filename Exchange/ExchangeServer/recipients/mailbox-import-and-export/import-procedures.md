@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Procedures for mailbox imports from .pst files in Exchange Server
 
 ---
@@ -342,6 +342,3 @@ To verify that you've successfully removed a mailbox import request, replace _\<
 ```
 Get-MailboxImportRequest -Mailbox <MailboxIdentity> | Format-List Name,FilePath,Mailbox,Status
 ```
-
-
-

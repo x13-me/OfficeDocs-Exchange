@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Investigate the audio quality of voice calls for a user
+title: Investigate the audio quality of voice calls for a user in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Investigate the audio quality of voice calls for a user
+# Investigate the audio quality of voice calls for a user in Exchange Online
 
 If a user reports problems with the audio quality of their Unified Messaging (UM) calls, you can use the User Call Logs report to help you understand what's causing the problems.
 
@@ -67,6 +67,3 @@ For additional tasks related to UM reports, see [UM reports procedures](um-repor
   - **ROUND TRIP**: The average round trip score, in milliseconds, for audio on the selected call. The round-trip score measures latency on the connection.
 
   - **BURST LOSS DURATION**: The average duration of packet loss during bursts of losses for the selected call.
-
-
-

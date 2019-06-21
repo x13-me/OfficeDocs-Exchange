@@ -9,7 +9,7 @@ ms.date: 7/10/2018
 ms.reviewer: 
 title: Configure connectivity logging in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -115,6 +115,3 @@ To verify that you've successfully configured connectivity logging, use these st
   ```
 
 2. Open the location of the connectivity log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that the files are being recycled based on the maximum file size and maximum directory size values that you configured. If you disabled connectivity logging, verify that the log files aren't being updated.
-
-
-

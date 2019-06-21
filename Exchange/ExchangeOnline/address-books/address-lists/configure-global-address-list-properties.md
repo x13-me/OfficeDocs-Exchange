@@ -11,7 +11,7 @@ title: Configure global address list properties in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -65,4 +65,3 @@ To verify that you've successfully modified a GAL, replace _\<GAL Name\>_ with t
 ```
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
-

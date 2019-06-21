@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 18eeb567-1048-4c82-93cf-612cb12ec5e3
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the maximum recording duration
+title: Configure the maximum recording duration in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure the maximum recording duration
+# Configure the maximum recording duration in Exchange Online
 
 You can specify the maximum number of minutes allowed for each voice recording when a caller leaves a voice mail message. This value can be set to a number from 1 through 100. For most organizations, this value should be set to the default of 20 minutes. Setting this value too low can cause long voice messages to be disconnected before they're completed. Setting this value too high lets users save lengthy voice messages in their Inboxes.
 
@@ -55,6 +55,3 @@ This example sets the maximum recording duration to 10 minutes for a UM dial pla
 ```
 Set-UMDialPlan -identity MyUMDialPlan -MaxRecordingDuration 10
 ```
-
-
-

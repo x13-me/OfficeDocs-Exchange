@@ -14,35 +14,31 @@ mtps_version: v=EXCHG.150
 
 # Use transport rules to inspect message attachments
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can inspect email attachments in your organization by setting up transport rules. Exchange offers transport rules that provide the ability to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using transport rules:
 
-  - Search files in compressed attachments such as .zip and .rar files and, if there's any text that matches a pattern you specify, add a disclaimer to the end of the message.
+- Search files in compressed attachments such as .zip and .rar files and, if there's any text that matches a pattern you specify, add a disclaimer to the end of the message.
 
-  - Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it's delivered.
+- Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it's delivered.
 
-  - Check for messages with attachments that can't be inspected and then block the entire message from being sent.
+- Check for messages with attachments that can't be inspected and then block the entire message from being sent.
 
-  - Check for attachments that exceed a certain size and then notify the sender of the issue if you choose to prevent the message from being delivered.
+- Check for attachments that exceed a certain size and then notify the sender of the issue if you choose to prevent the message from being delivered.
 
-  - Create notifications that alert users if they send a message that has matched a transport rule.
+- Create notifications that alert users if they send a message that has matched a transport rule.
 
-  - Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
+- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
 
-Exchange administrators can create transport rules by going to **Exchange Admin Center** \> **Mail flow** \> **Rules**. You need to be assigned permissions before you can perform this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
+Exchange administrators can create transport rules by going to **Exchange admin center** \> **Mail flow** \> **Rules**. You need to be assigned permissions before you can perform this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
 
 ![Dialog box to select attachment-related rules](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "Dialog box to select attachment-related rules")
 
-For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://technet.microsoft.com/en-us/library/jj723164\(v=exchg.150\)). If you're ready to start creating rules, see [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://technet.microsoft.com/en-us/library/jj723164\(v=exchg.150\)). If you're ready to start creating rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 ## Inspect the content within attachments
 
-You can use the transport rule conditions in the following table to examine the content of attachments to messages. For these conditions, only the first 150 KB of an attachment is inspected. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. Learn about creating or changing rules at [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
-
+You can use the transport rule conditions in the following table to examine the content of attachments to messages. For these conditions, only the first 150 KB of an attachment is inspected. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. Learn about creating or changing rules at [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
 <table>
 <colgroup>
@@ -71,12 +67,11 @@ You can use the transport rule conditions in the following table to examine the 
 </tbody>
 </table>
 
-
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-  -  Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
+- Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
 
-  -  Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
+- Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
 Transport rules can inspect only the content of supported file types. If the transport rules agent encounters an attachment that isn't in the list of supported file types, the `AttachmentIsUnsupported` condition is triggered. The supported file types are listed in the following section. Any file not listed will trigger the `AttachmentIsUnsupported` condition.
 
@@ -87,7 +82,6 @@ If the message contains a compressed archive file such as a .zip or .cab file, t
 ## Supported file types for transport rule content inspection
 
 The following table lists the file types supported by transport rules. The system automatically detects file types by inspecting file properties rather than the actual file name extension, thus helping to prevent malicious hackers from being able to bypass transport rule filtering by renaming a file extension. A list of file types with executable code that can be checked within the context of transport rules is listed later in this topic.
-
 
 <table>
 <colgroup>
@@ -157,11 +151,9 @@ The following table lists the file types supported by transport rules. The syste
 </tbody>
 </table>
 
-
 ## Inspect the file properties of attachments
 
-The following transport rule conditions inspect the properties of a file that is attached to a message. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. A list of supported file types with executable code that can be checked within the context of transport rules is listed here. For more information about creating or changing rules, see [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
-
+The following transport rule conditions inspect the properties of a file that is attached to a message. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. A list of supported file types with executable code that can be checked within the context of transport rules is listed here. For more information about creating or changing rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 <table>
 <colgroup>
@@ -210,17 +202,15 @@ The following transport rule conditions inspect the properties of a file that is
 </tbody>
 </table>
 
-
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-  -  Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
+- Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
 
-  -  Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
+- Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
 ## Supported executable file types for transport rule inspection
 
 The transport agent uses true type detection by inspecting file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered.
-
 
 <table>
 <colgroup>
@@ -297,7 +287,6 @@ The transport agent uses true type detection by inspecting file properties rathe
 </tbody>
 </table>
 
-
 ## Extending the number of supported file types
 
 The supported file types listed in this topic can be revised at any time using IFilter integration. For more information, see [Register Filter Pack IFilters with Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md).
@@ -308,11 +297,11 @@ The file types you add using this process become supported file types and no lon
 
 To help you manage important business information in email, you can include any of the attachment-related conditions along with the rules of a data loss prevention (DLP) policy. For example, you might want to allow messages with passport numbers to be sent but only if the passport numbers are in a password-protected attachment. To accomplish this, do the following:
 
-  - Create a DLP policy that inspects mail for passport-related sensitive information. Learn more at [DLP procedures](dlp-procedures-exchange-2013-help.md).
+- Create a DLP policy that inspects mail for passport-related sensitive information. Learn more at [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
-  - Add the **Any attachment is password protected** exception in the **Except if...** transport rule area.
+- Add the **Any attachment is password protected** exception in the **Except if...** transport rule area.
 
-  - Define an action to take on mail that contains passport numbers that are not in the protected file.
+- Define an action to take on mail that contains passport numbers that are not in the protected file.
 
 DLP policies and attachment-related conditions can help you enforce your business needs by defining those needs as transport rule conditions, exceptions, and actions. When you include the sensitive information inspection in a DLP policy, any attachments to messages are scanned for that information only. However, attachment-related conditions such as size or file type are not included until you add the conditions listed in this topic. DLP is not available with all versions of Exchange; learn more at [Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
 
@@ -324,5 +313,4 @@ DLP policies and attachment-related conditions can help you enforce your busines
 
 [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Use mail flow rules to inspect message attachments](https://technet.microsoft.com/en-us/library/jj919236\(v=exchg.150\)) in Exchange Online
-
+[Use transport rules to inspect message attachments](https://technet.microsoft.com/en-us/library/jj919236\(v=exchg.150\)) in Exchange Online

@@ -13,7 +13,7 @@ title: Change the offline address book generation schedule in Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -119,5 +119,3 @@ To verify that you've configured the OAB generation schedule on one or more Exch
 ## See also
 
 [Procedures for offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md)
-
-

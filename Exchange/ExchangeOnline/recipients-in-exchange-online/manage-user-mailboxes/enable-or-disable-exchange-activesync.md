@@ -11,7 +11,7 @@ title: Enable or disable Exchange ActiveSync for a mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 
@@ -88,6 +88,3 @@ Or
   ```
 
     If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
-
-
-

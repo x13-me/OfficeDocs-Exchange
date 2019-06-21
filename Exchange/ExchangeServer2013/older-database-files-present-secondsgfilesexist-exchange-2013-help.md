@@ -14,14 +14,11 @@ mtps_version: v=EXCHG.150
 
 # Older database files present\_SecondSGFilesExist
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Microsoft® Exchange Server 2007 setup cannot continue because it detected existing Microsoft Exchange database files in the target installation path.
 
@@ -31,17 +28,13 @@ To resolve this issue, remove all existing files from target installation paths 
 
 **To delete existing Exchange Server database files from the target installation path**
 
-1.  In My Computer or Windows Explorer, locate the target install path.
-    
+1. In My Computer or Windows Explorer, locate the target install path.
 
     > [!NOTE]
     > By default, the database files are located in:<BR>&lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group.
 
+2. Right-click the files to be removed, and then select **Delete**.
 
+3. At the **Confirm File Delete** dialog, click **Yes**.
 
-2.  Right-click the files to be removed, and then select **Delete**.
-
-3.  At the **Confirm File Delete** dialog, click **Yes**.
-
-4.  Repeat steps 2 and 3 for all files in the target install paths.
-
+4. Repeat steps 2 and 3 for all files in the target install paths.

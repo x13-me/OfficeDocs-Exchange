@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the listening port
+title: Configure the listening port in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure the listening port
+# Configure the listening port in Exchange Online
 
 You can configure the TCP port that's used to listen for Session Initiation Protocol (SIP) requests on a Unified Messaging (UM) IP gateway. By default, when you create a UM IP gateway, the TCP SIP listening port number is set to 5060. The TCP SIP listening port can't be configured or changed by using the EAC. You must configure the TCP SIP listening port number by using the **Set-UMIPGateway** cmdlet.
 
@@ -70,6 +70,3 @@ This example configures a UM IP gateway named `MyUMIPGateway` that has an FQDN o
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address MyOCSUMIPGateway.contoso.com -Port 5061
 ```
-
-
-

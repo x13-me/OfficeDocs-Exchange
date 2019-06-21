@@ -3,7 +3,7 @@ title: "Microsoft Hybrid agent - Preview"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -28,7 +28,7 @@ The agent install and the configuration of Hybrid via the Hybrid Configuration W
 The Hybrid agent has the following requirements:
 
 - The computer it's installed on needs to be:
-  
+
   - Running Windows Server 2012 R2 or 2016 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on)
 
   - Joined to an Active Directory domain
@@ -115,7 +115,7 @@ The HCW is the application responsible for the installation of the Hybrid agent 
 
 ### Installation steps
 
-1. Log into your on-premises Exchange Admin Center (EAC), navigate to the **Hybrid** node, and then click **Configure**.
+1. Log into your on-premises Exchange admin center (EAC), navigate to the **Hybrid** node, and then click **Configure**.
 
 2. Select the Exchange server where you want to run traditional hybrid setup. Either select the default server provided by the HCW or specify a specific server in the second radio button. Select **Next**.
 

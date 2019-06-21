@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Enable or disable MAPI access to mailboxes in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -182,6 +182,3 @@ To verify that you've successfully enabled or disabled MAPI access to a mailbox,
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {MAPIEnabled -eq $false}
   ```
-
-
-

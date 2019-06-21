@@ -11,7 +11,7 @@ title: Using Windows Server Backup to back up and restore Exchange data
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -45,13 +45,10 @@ The following table describes the supportability of the backup and recovery opti
 
 |**If you...**|**Then...**|
 |:-----|:-----|
-|Back up the full server...  <br/> |A VSS copy backup will be performed, and the transaction logs for the databases on the server will not be truncated.  <br/> |
-|Perform a custom backup and select one or more volumes to back up...  <br/> |A VSS full backup can be selected, allowing the transaction logs for the databases on the selected volumes to be truncated at the completion of a successful backup.  <br/> |
-|Perform a custom backup and select one or more folders to back up...  <br/> |A VSS full backup can be selected and the log files will be truncated; however, restoration of the backup will be limited to file restore, as an Application level restore will not be available as an option.  <br/> |
+|Back up the full server...|A VSS copy backup will be performed, and the transaction logs for the databases on the server will not be truncated.|
+|Perform a custom backup and select one or more volumes to back up...|A VSS full backup can be selected, allowing the transaction logs for the databases on the selected volumes to be truncated at the completion of a successful backup.|
+|Perform a custom backup and select one or more folders to back up...|A VSS full backup can be selected and the log files will be truncated; however, restoration of the backup will be limited to file restore, as an Application level restore will not be available as an option.|
 
 For detailed steps to back up Exchange using WSB, see [Use Windows Server Backup to back up Exchange](backup-with-windows-server-backup.md).
 
 For detailed steps to restore data from a backup taken with WSB, see [Use Windows Server Backup to restore a backup of Exchange](restore-with-windows-server-backup.md).
-
-
-

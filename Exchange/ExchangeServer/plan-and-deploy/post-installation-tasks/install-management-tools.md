@@ -11,7 +11,7 @@ title: Install the Exchange management tools
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -134,4 +134,3 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     ```
 
 For more information, see [Install Exchange using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
-

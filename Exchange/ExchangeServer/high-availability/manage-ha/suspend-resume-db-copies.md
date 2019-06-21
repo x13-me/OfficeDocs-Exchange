@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Suspend or resume a mailbox database copy
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -106,6 +106,3 @@ To verify that you have successfully suspended or resumed a mailbox database cop
   ```
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```
-
-
-

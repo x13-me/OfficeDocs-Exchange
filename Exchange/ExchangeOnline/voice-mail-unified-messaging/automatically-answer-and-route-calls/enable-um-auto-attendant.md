@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 16667a8f-50ab-4bb8-9a05-0389511974b1
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable a UM auto attendant
+title: Enable a UM auto attendant in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Enable a UM auto attendant
+# Enable a UM auto attendant in Exchange Online
 
 By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to enable it to answer incoming calls.
 
@@ -51,6 +51,3 @@ This example enables the UM auto attendant named `MyUMAutoAttendant` to answer i
 ```
 Enable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
-
-
-

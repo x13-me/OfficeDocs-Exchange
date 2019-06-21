@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: The Host record for the local computer cannot be found in the DNS database [HostRecordMissing]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -34,4 +34,3 @@ For information about DNS name resolution, troubleshooting, and A records, see t
 - [Managing resource records](https://go.microsoft.com/fwlink/p/?LinkId=294829)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

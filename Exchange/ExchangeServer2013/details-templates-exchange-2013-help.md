@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Details templates
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Details templates control the appearance of the object properties that are accessed by using address lists in an email client, such as Microsoft Outlook. For example, when a user opens an address list in Outlook, the properties of the recipients in that address list are presented as defined by the details template that exists in your Exchange organization. The following figure illustrates the properties of the recipient Kim Akers as it appears in Outlook 2013. Using the Details Templates Editor in Exchange 2013 Toolbox, you can modify the organization of and content within the various objects that appear on this property page.
 
@@ -44,4 +41,3 @@ You can use the default details template or you can customize the template to be
 [Customize details templates](customize-details-templates-exchange-2013-help.md)
 
 [Restore a details template to the default configuration](restore-a-details-template-to-the-default-configuration-exchange-2013-help.md)
-

@@ -11,7 +11,7 @@ title: Use mail flow rules so messages can bypass Clutter in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -64,4 +64,3 @@ You can check email message headers to see if the email messages are landing in 
 
 > [!NOTE]
 > Calendar items (accepted, sent, or declined meetings notifications) won't contain this header.
-

@@ -12,7 +12,7 @@ title: Use a screen reader to edit the mailbox display name in the Exchange admi
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 
@@ -62,4 +62,3 @@ For more information on the Exchange Online capabilities in your subscription pl
 
    > [!TIP]
    > It may take a few minutes to save the new mailbox and close the pop-up window. There is no additional feedback to provide during this wait time.
-

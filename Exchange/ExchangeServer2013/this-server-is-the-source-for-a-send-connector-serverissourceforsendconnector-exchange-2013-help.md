@@ -14,14 +14,11 @@ mtps_version: v=EXCHG.150
 
 # This Server is the Source for a Send Connector\_ServerIsSourceForSendConnector
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Microsoft Exchange Server 2007 setup cannot continue because its attempt to remove the Hub Transport server role failed. The local computer is the source for one or more Send connectors in the Exchange organization.
 
@@ -36,4 +33,3 @@ For more information about modifying or removing Send connectors, see the follow
   - "How to Remove a Send Connector" ([https://go.microsoft.com/fwlink/?LinkId=86655](https://go.microsoft.com/fwlink/?linkid=86655)).
 
   - "How to Modify the Configuration of a Send Connector" ([https://go.microsoft.com/fwlink/?LinkId=86656](https://go.microsoft.com/fwlink/?linkid=86656)).
-

@@ -13,7 +13,7 @@ title: Enter your Exchange Server product key
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -126,4 +126,3 @@ To verify that you've successfully licensed the Exchange server, do any of the f
     ```
     Get-ExchangeServer | Format-Table -Auto Name,Edition,*Trial*
     ```
-

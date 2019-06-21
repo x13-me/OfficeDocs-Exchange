@@ -4,7 +4,7 @@ ms.author: kchandra
 author: ChandraKavya
 manager: dansimp
 ms.reviewer: dstrome
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -25,4 +25,3 @@ The following attributes of ActiveSync device access rules are copied from an on
 |Characteristic|Exchange 2010, 2013, 2016|
 |Identity|Exchange 2010, 2013, 2016|
 |QueryString|Exchange 2010, 2013, 2016|
-

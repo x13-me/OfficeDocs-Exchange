@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Add an address list to or remove an address list from an offline address book in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -59,4 +59,3 @@ To verify that you've successfully added or removed address lists from an OAB, r
 ```
 Get-OfflineAddressBook | Format-List Name,AddressLists
 ```
-

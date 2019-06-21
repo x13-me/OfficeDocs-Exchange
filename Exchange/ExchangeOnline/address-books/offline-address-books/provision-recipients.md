@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Provision recipients for offline address book downloads in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -64,4 +64,3 @@ To verify that you've successfully assigned an OAB to a mailbox, replace <Mailbo
 ```
 Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table Name,OfflineAddressBook -Auto
 ```
-

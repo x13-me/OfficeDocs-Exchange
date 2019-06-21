@@ -11,7 +11,7 @@ title: POP3 and IMAP4
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -79,6 +79,3 @@ If the device or computer that's running the POP3 or IMAP4 email application is 
 
 > [!NOTE]
 > If the user is using an IMAP4-compliant email application that supports the IMAP4 IDLE command, the user might be able to send email to and receive email from the Exchange mailbox in nearly real time. For this connection method to work, both the email server application and the client application must support the IMAP4 IDLE command. In most cases, users don't have to configure any settings in their IMAP4 programs to use this connection method.
-
-
-

@@ -12,7 +12,7 @@ title: Use a screen reader to create a new distribution group in the Exchange ad
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
 
@@ -73,7 +73,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 7. In the **New** menu, press the Down Arrow key until you hear "Distribution group." Then, press Enter. (In Narrator, you may hear "Empty line" or nothing at all. The three items on this menu are **distribution group**, **security group**, and **dynamic distribution group**. Select the first item in the menu.) The **new distribution group** page opens in a new browser window.
 
    > [!TIP]
-   >The **new distribution group** window includes two buttons named **Add** and two named **Remove**. The first set of **Add** and **Remove** buttons affects the **Select Owners** box. The second set applies to the **Select Members** box.
+   > The **new distribution group** window includes two buttons named **Add** and two named **Remove**. The first set of **Add** and **Remove** buttons affects the **Select Owners** box. The second set applies to the **Select Members** box.
 
 8. Tab to the following options, and complete the group details.
 
@@ -146,4 +146,3 @@ In the **new distribution group** window, the **Add** button for the \* **Owners
 Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
 
 The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
-

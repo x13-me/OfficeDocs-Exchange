@@ -3,7 +3,7 @@ title: "Troubleshoot a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -68,7 +68,7 @@ To verify that you have successfully published your on-premises Exchange servers
 
 3. This step is for a general test of the Autodiscover service to confirm that it's working, and that the Autodiscover endpoint is configured.
 
-    Run the **Outlook Autodiscover** test in the **Microsoft Office Outlook Connectivity Tests** section, and verify that there aren't any errors. If errors occur, correct the items that the test identified.
+    Run the **Outlook Autodiscover** test in the **Microsoft Outlook Connectivity Tests** section, and verify that there aren't any errors. If errors occur, correct the items that the test identified.
 
 4. This step is for a general test of SMTP connectivity, and confirms that the Exchange servers can receive inbound Internet mail.
 

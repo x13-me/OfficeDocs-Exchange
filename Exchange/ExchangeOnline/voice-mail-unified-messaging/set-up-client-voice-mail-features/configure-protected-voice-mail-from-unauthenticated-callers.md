@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure Protected Voice Mail from unauthenticated callers
+title: Configure Protected Voice Mail from unauthenticated callers in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Configure Protected Voice Mail from unauthenticated callers
+# Configure Protected Voice Mail from unauthenticated callers in Exchange Online
 
 You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice mail message is protected:
 
@@ -67,6 +67,3 @@ This example protects all voice messages from all unauthenticated callers on the
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ProtectUnauthenticatedVoiceMail -All
 ```
-
-
-

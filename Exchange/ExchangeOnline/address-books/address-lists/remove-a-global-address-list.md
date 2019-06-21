@@ -11,7 +11,7 @@ title: Remove a global address list in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -63,4 +63,3 @@ To verify that you've successfully removed a GAL, run the following command in E
 ```
 Get-GlobalAddressList
 ```
-

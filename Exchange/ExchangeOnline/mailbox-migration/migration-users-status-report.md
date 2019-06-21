@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - GMA150
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: dansimp
@@ -90,4 +90,3 @@ To help you understand the migration status states described in the previous sec
 |**Provisioning**: The migration process creates the new Office 365 mailbox.|Yes (includes distribution groups and mail contacts)|Yes (includes mail contacts)|No|
 |**Initial synchronization**: After Office 365 mailboxes are provisioned, the migration process migrates mailbox items to the newly provisioned cloud-based mailboxes.|Yes (includes calendar times and contacts)|Yes (includes calendar times and contacts)|Yes|
 |**Incremental synchronization**: The migration process synchronizes the on-premises and the corresponding Office 365 mailbox every 24 hours.|Yes|No|Yes|
-

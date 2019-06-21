@@ -11,7 +11,7 @@ title: DLP policy templates supplied in Exchange
 ms.collection:
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 
@@ -78,6 +78,3 @@ The following table lists the DLP policy templates in Exchange. To learn more ab
 [Create a DLP policy from a template](create-dlp-policy-from-template.md)
 
 [Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
-
-
-

@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Email address policies in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -36,7 +36,6 @@ To configure email address policies, see [Procedures for email address policies 
 An email address template contains the **address type** and the **address format**. An email address policy can contain multiple email address templates. One template must define the primary (reply) SMTP email address, and there can be only one primary SMTP email address defined in the policy (it's the **Reply-To:** email address for recipients). Other email address templates in the policy define the additional or *proxy* addresses for recipients.
 
 ### Address types
-<a name="AddressType"> </a>
 
 Although you'll primarily use SMTP email addresses in email address policies, other email address types are available. The valid address type values are:
 
@@ -59,7 +58,6 @@ Although you'll primarily use SMTP email addresses in email address policies, ot
 - All non-SMTP email addresses are considered custom address types. Exchange doesn't provide unique dialog boxes or property pages for X.400, Novell GroupWise, or Lotus Notes email address types. Non-SMTP email addresses require the appropriate .dll files.
 
 ### Address formats
-<a name="AddressFormat"> </a>
 
 An SMTP email address uses the syntax `chris@contoso.com`, where the value `chris` is the *local part* of the email address, and the value `contoso.com` is the SMTP domain (also known as the *address space* or *name space*). The available SMTP domain values are determined by the accepted domains that are configured for your organization.
 
@@ -111,7 +109,8 @@ Recipient filters identify the recipients that the email address policy applies 
 - The recipient's location in Active Directory (the organizational unit or container) is available in both precanned and custom recipient filters.
 
 - If you create an email address policy in the Exchange Management Shell that uses custom recipient filters, you can't edit the recipient filters in the EAC.
-    ![Appy to tab in email address policies in the EAC when custom recipient filters are used.](../../media/b6ddfddb-48f8-4599-9407-bc939fb78da5.png)
+
+  ![Appy to tab in email address policies in the EAC when custom recipient filters are used.](../../media/b6ddfddb-48f8-4599-9407-bc939fb78da5.png)
 
 - You can prevent individual recipients from being affected by email address policies. For example:
 
@@ -151,10 +150,10 @@ You can't delete the default email address policy, and you can't designate anoth
 
 - You can't change the name or priority of the policy.
 
-- You can fully customize the email address templates in the policy (modify, add, or remove templates). For more information, see [Modify email address policies](eap-procedures.md#ModifyEAP).
+- You can fully customize the email address templates in the policy (modify, add, or remove templates). For more information, see [Modify email address policies](eap-procedures.md#modify-email-address-policies).
 
 ## Apply email address policies
 
 After you create or modify an email address policy in the EAC or the Exchange Management Shell, the policy needs to be applied to the affected recipients.
 
-If the updates affect a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to apply the updates to the affected recipients. For more information, see [Apply email address policies to recipients](eap-procedures.md#ApplyEAP).
+If the updates affect a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to apply the updates to the affected recipients. For more information, see [Apply email address policies to recipients](eap-procedures.md#apply-email-address-policies-to-recipients).

@@ -11,7 +11,7 @@ ms.date: 7/11/2018
 ms.reviewer: 
 title: View queued message properties in Queue Viewer
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -117,6 +117,3 @@ For more information about queues, see [Queues and messages in queues](queues.md
   - **Recipients**: The recipients in the message, with any corresponding error messages. To see the status and error messages for each recipient, go to the **Recipient Information** tab.
 
   - The **Recipient Information** tab displays the **Address**, **Status**, and **Last Error** values for each recipient in the message. The **Status** value for a recipient can be **Complete**, **Ready**, or **Retry**.
-
-
-

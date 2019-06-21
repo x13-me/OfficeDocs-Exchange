@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Public folder procedures
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Create and manage public folders with one or more of these articles.
 
@@ -58,4 +55,3 @@ Use one or more of the procedures listed below to get your public folder infrast
 [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md)
 
 [View statistics for public folders and public folder items](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/view-public-folder-statistics)
-

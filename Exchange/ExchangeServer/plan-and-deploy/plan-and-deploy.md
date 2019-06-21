@@ -11,7 +11,7 @@ title: Planning and deployment for Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
@@ -152,4 +152,3 @@ Exchange setup includes the following modes:
 
   > [!NOTE]
   > You must complete one mode of Setup before you can use another mode.
-

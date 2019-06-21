@@ -7,15 +7,15 @@ ms.author: chrisda
 ms.assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
 ms.date: 4/8/2015
 ms.reviewer: 
-title: Remove a call answering rule for a user
+title: Remove a call answering rule for a user in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Remove a call answering rule for a user
+# Remove a call answering rule for a user in Exchange Online
 
 You can use Exchange Online PowerShell to remove one or more call answering rules for a user. You can also use the **Remove-UMCallAnsweringRule** cmdlet in a PowerShell script to remove one or more call answering rules for multiple users.
 
@@ -58,6 +58,3 @@ This example removes the call answering rule `MyUMCallAnsweringRule` from the ma
 ```
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
-
-
-

@@ -11,7 +11,7 @@ title: Sharing in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -41,6 +41,3 @@ The following table contains links to topics that will help you learn about and 
 |:-----|:-----|
 |[Organization relationships in Exchange Online](organization-relationships/organization-relationships.md)|Learn more about the one-to-one relationships between organizations that enable calendar free/busy sharing.|
 |[Sharing policies in Exchange Online](sharing-policies/sharing-policies.md)|Learn more about the person-to-person policies that enable calendar sharing.|
-
-
-

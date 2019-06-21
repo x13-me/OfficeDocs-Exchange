@@ -9,15 +9,15 @@ ms.author: chrisda
 ms.assetid: 7f20874b-c46c-4505-9a78-f63eacb578ff
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Create a UM mailbox policy
+title: Create a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
 ---
 
-# Create a UM mailbox policy
+# Create a UM mailbox policy in Exchange Online
 
 You can create a Unified Messaging (UM) mailbox policy to apply a common set of UM policy settings, such as PIN policy settings or dialing restrictions, to a collection of UM-enabled mailboxes. UM mailbox policies link a UM-enabled user with a UM dial plan and apply a common set of policies or security settings to a collection of UM-enabled mailboxes. UM mailbox policies are useful for applying and standardizing UM configuration settings for UM-enabled users.
 
@@ -59,6 +59,3 @@ This example creates a UM mailbox policy named `MyUMMailboxPolicy` associated wi
 ```
 New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 ```
-
-
-
