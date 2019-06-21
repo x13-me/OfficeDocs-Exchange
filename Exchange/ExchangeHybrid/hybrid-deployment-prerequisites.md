@@ -84,6 +84,8 @@ The following prerequisites are required for configuring a hybrid deployment:
 
     Learn more at [Edge Transport servers with hybrid deployments](edge-transport-servers.md).
 
+- **Microsoft .NET Framework**: 4.6.2 or later is required to install Hybrid Configuration Wizard.
+
 - **Unified Messaging-enabled (UM) mailboxes**: If you have UM-enabled mailboxes and you want to move them to Office 365, you need the following in addition to an Exchange hybrid deployment. These requirements need to be met **before** you move any UM-enabled mailboxes to Office 365.
 
   - Lync Server 2010, Lync Server 2013, or Skype for Business Server 2015 or later integrated with your on-premises telephony system **or**
