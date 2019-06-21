@@ -80,6 +80,18 @@ Your users can use Outlook on the web to wipe their own phones.
 
 5. Click or tap the **Wipe Device** icon.
 
+## Use the New Outlook on the web to wipe a user's phone
+
+1. In Outlook on the web, select the **Settings** icon.
+
+2. Click on **View All Outlook settings**.
+
+3. Click **General**,  and then select **Mobile devices**.
+
+4. Select the mobile phone.
+
+5. Click or tap the **Wipe Device** icon.
+
 ## How do you know this worked?
 
 There are several ways to verify that the remote wipe completed.
