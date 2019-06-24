@@ -43,28 +43,33 @@ The following permissions **are** supported:
 
 - **Full Access**: A mailbox on an on-premises Exchange server can be granted the **Full Access** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Full Access** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client. Cross-premises mailbox permissions aren't fully supported in Outlook on the web. Users can use **Open another mailbox** in Outlook on the web to open other mailboxes where they have **Full Access** permission. However, this will generate a redirection link and credentials prompt before the user can access the mailbox.
 
-   > [!NOTE]
-   > Users might receive additional credential prompts when they first access a mailbox that's in the other organization and add it to their Outlook profile.
+  > [!NOTE]
+  > Users might receive additional credential prompts when they first access a mailbox that's in the other organization and add it to their Outlook profile.
 
 - **Send on Behalf**: A mailbox on an on-premises Exchange server can be granted the **Send on Behalf** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Send on Behalf** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client; cross-premises mailbox permissions aren't supported in Outlook on the web.
 
-   Some changes are needed on your Azure Active Directory Connect server for Send on Behalf permissions to sync between your on-premises Exchange servers and Exchange Online. For details, see the [Enabling support for hybrid mailbox permissions in Azure Active Directory Connect](#enabling-support-for-hybrid-mailbox-permissions-in-azure-active-directory-connect) section later in this topic.
+  Some changes are needed on your Azure Active Directory Connect server for Send on Behalf permissions to sync between your on-premises Exchange servers and Exchange Online. For details, see the [Enabling support for hybrid mailbox permissions in Azure Active Directory Connect](#enabling-support-for-hybrid-mailbox-permissions-in-azure-active-directory-connect) section later in this topic.
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
 
 The following permissions or capabilities **aren't** supported:
 
-- **Send-As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Send-As permission does not synchronize automatically by Azure Ad Connect between On-premises and Office 365. That's why at this point, cross Premises Send-As permission is not supported. However, if you add the send-as permission manually in both environments, Send-As will work in most of the scenarios.
+- **Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Send As permission does not synchronize automatically by Azure AD Connect between On-premises and Office 365. That's why at this point, cross Premises Send As permission is not supported. However, if you add the Send As permission manually in both environments, Send As will work in most of the scenarios.
 
-    For example, you want to grant send-as permission for an On-Premises mailbox called ONPREM1 to a cloud mailbox called EXO1,
+  For example, you want to grant Send As permission for an On-Premises mailbox called ONPREM1 to a cloud mailbox called EXO1, First run the following command on your on-premises server:
 
-    First run the following command on your on-premises server-
+  ```
+  Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
+  ```
 
-    Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
+  Then run the corresponding command from Exchange Online PowerShell-
 
-    Then run the corresponding command from Exchange Online PowerShell-
+  ```
+  Add-RecipientPermission -Identity "EXO1" -Trustee ONPREM1 -AccessRights SendAs
+  ```
 
-    Add-RecipientPermission -Identity "EXO1" -Trustee ONPREM1 -AccessRights SendAs
+  > [!NOTE]
+  > Send As permission is also needed to comply with the following on-premises Exchange server and AAD Connect requirements.
 
 - **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup.
 
