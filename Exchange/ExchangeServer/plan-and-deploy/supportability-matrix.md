@@ -206,7 +206,7 @@ The following table identifies the version of Microsoft Exchange that can be use
 The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by a check mark ( ![check mark](../media/check-mark.png)).
 
 > [!IMPORTANT]
-> • **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange.** This includes minor and patch-level releases of .NET Framework. <br/><br/>• When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported, CU. <br/> Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
+> • **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange**. This includes minor and patch-level releases of .NET Framework. <br/><br/>• When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should first upgrade to the latest version of .NET that's supported by Exchange and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
 ### Exchange 2019
 
