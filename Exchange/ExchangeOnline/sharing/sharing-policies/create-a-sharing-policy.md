@@ -27,7 +27,7 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md) topic.
 
-- Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
+- Only Outlook 2010 or later and Outlook on the web (formerly known as Outlook Web App) users can create sharing invitations.
 
 ## Use the wizard to create a sharing policy
 <a name="BKMK_EAC"> </a>

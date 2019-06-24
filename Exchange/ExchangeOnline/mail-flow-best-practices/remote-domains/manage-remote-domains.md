@@ -29,7 +29,7 @@ The following table shows the default values for common settings:
 |Automatic replies|Allow automatic replies or automatically forwarded messages to be sent to people on the remote domain.|
 |Delivery and non-delivery reports|Allow delivery and non-delivery reports to be sent to people on the remote domain.|
 |Meeting forward notifications|Don't allow meeting forward notifications to be sent to people on the remote domain.|
-|Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook Web App when a message is sent to people on the remote domain.|
+|Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook on the web (formerly known as Outlook Web App) when a message is sent to people on the remote domain.|
 |Supported character set|Do not specify a MIME or non-MIME character set if the character set isn't specified in the message sent to the remote domain.|
 
 For information about when to configure remote domains, descriptions of the available settings, and information about how remote domain settings override per-user settings, see [Remote domains in Exchange Online](remote-domains.md).
@@ -151,7 +151,7 @@ This example sends all messages to Contoso using MIME encoding, which means that
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $false
 ```
 
-This example uses the message format settings the user has defined in Outlook or Outlook Web App for encoding messages.
+This example uses the message format settings the user has defined in Outlook or Outlook on the web for encoding messages.
 
 ```
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $null

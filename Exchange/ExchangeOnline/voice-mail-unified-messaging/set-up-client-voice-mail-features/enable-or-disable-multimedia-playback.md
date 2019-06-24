@@ -30,7 +30,7 @@ By default, the value of the **RequireProtectedPlayOnPhone** property on a UM ma
 
 - Using the built-in media player or the Play on Phone button in Outlook 2010 or a later version.
 
-- Using the built-in media player or the Play on Phone button in Outlook Web App.
+- Using the built-in media player or the Play on Phone button in Outlook on the web (formerly known as Outlook Web App).
 
 If this value is set to true, multimedia playback of protected voice mail isn't allowed. UM-enabled users associated with a UM mailbox policy on which this value is set to true can listen to protected voice messages only by:
 
@@ -38,7 +38,7 @@ If this value is set to true, multimedia playback of protected voice mail isn't 
 
 - Using the Play on Phone button in Outlook 2010 or a later version.
 
-- Using the Play on Phone button in Outlook Web App.
+- Using the Play on Phone button in Outlook on the web.
 
 This setting is especially useful when UM-enabled users use public computers, laptops in public places, or their mobile device's media player to listen to protected voice mail that can contain private information.
 

@@ -55,7 +55,7 @@ To create a certificate request in Microsoft Exchange Server 2007, use the [New-
 
     In the command example above, _servername_ is the name of your server, _contoso.com_ is an example of a domain name, and _certlocation_ is a file path to the location where you want to store the request once it is generated. Replace all these placeholders with the information that appropriate for yourMicrosoft Exchange Server 2007.
 
-    In the _DomainName_ parameter, add the domain names for the certificate request. For example, if you configured your internal and external URLs to be the same, the domain name for Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should look like owa. _servername_.contoso.com.
+    In the _DomainName_ parameter, add the domain names for the certificate request. For example, if you configured your internal and external URLs to be the same, the domain name for Outlook Web Access when accessed from the internet or intranet should look like owa._servername_.contoso.com.
 
     Use the _SubjectName_ parameter to specify the Subject Name on the resulting certificate. This field is used by DNS-aware services and binds a certificate to a particular domain name.
 
