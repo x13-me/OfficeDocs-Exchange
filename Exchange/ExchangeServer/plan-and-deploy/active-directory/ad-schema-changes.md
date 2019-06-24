@@ -20,7 +20,7 @@ manager: dansimp
 
 # Active Directory schema changes in Exchange Server
 
-This reference topic provides a summary of the Active Directory schema changes that are made when you install Exchange Server 2016 or Exchange Server 2019 in your organization. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \amd64\Setup\Data\ directory in the Exchange installation files.
+This reference topic provides a summary of the Active Directory schema changes that are made when you install Exchange Server 2016 or Exchange Server 2019 in your organization. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \Setup\Data\ directory in the Exchange installation files.
 
 Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all of the changes that were included in previous releases. This means that if you skip a CU, you might still need to apply schema updates even if the CU that you're installing doesn't include its own changes.
 
