@@ -52,8 +52,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell EqualLogic PS 6210E Series 5,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (July 11, 2014)](http://downloads.dell.com/solutions/storage-solution-resources/BP1078-Scaling%20Exchange%202013%20on%20HyperV.pdf)
 
-[Dell PowerEdge R720xd 2,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Jun 5, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20381192.aspx)
-
 [Dell PowerEdge R730xd 2,500 5GB Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sep 28, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441665)
 
 [Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441950)
@@ -71,9 +69,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 [Dell Storage Center 6.6 SCv2000 iSCSI 2,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sep 17, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441624)
 
 [Dell Storage Center 6.6 SCv2000 SAS Front-end Arrays 2,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 14, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441743)
-
-[Dell XC Series 2,300 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (April 11, 2016)](http://en.community.dell.com/techcenter/extras/m/white_papers/20442391)
-
 
 ### Dell Compellent: 1001-5000 mailboxes
 [Dell Compellent SC4020 v6.5 4,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (June 09, 2014)](https://downloads.dell.com/solutions/general-solution-resources/White%20Papers/Dell%20Compellent%20SC4020%20v6.5%204500-user%20Exchange%202013%20Mailbox%20Resiliency%20Solution%20with%201TB%20drives.pdf)
@@ -101,8 +96,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell PowerEdge R720xd 12,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (May 3, 2014)](http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/n-dell-poweredge-r720xd-md1200-12000-mailbox-resiliency-microsoft-exchange-2013-storage-solution.pdf)
 
-[Dell PowerVault MD3260 15,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 10, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439083.aspx)
-
 [Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441952)
 
 [Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441967)
@@ -127,14 +120,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 [Dell Compellent Storage Center 6.4 / 25,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438163)
 
 [Dell Compellent Storage Center 6.4 / 50,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jan 20, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438164)
-
-[Dell Compellent Storage Center 6.4 10K Drive 10,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 24, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20437919.aspx)
-
-[Dell Compellent Storage Center 6.4 10K Drive 5000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 24, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20437918.aspx)
-
-[Dell Compellent Storage Center 6.4 7K Drive 10,000 Mailbox Microsoft Exchange 2010 Mailbox Resiliency Storage Solution (Oct 24, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20437921.aspx)
-
-[Dell Compellent Storage Center 6.4 7K Drive 5000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Oct 24, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20437920.aspx)
 
 ### Dell EMC: Greater than 5000 mailboxes
 [Dell EMC SCv3020 7,000 Mailbox Exchange 2016 Resiliency Storage Solution using 7.2K drives  (Oct 17th, 2017)](http://en.community.dell.com/techcenter/extras/m/white_papers/20444629)
