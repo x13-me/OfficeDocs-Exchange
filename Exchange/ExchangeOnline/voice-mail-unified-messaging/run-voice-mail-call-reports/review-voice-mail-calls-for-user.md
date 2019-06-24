@@ -39,7 +39,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 The user call log includes the following information for each call:
 
-- **DATE AND TIME**: The date and time of the call, in the time zone that the selected user has set in Microsoft Outlook Web App.
+- **DATE AND TIME**: The date and time of the call, in the time zone that the selected user has set in Outlook on the web (formerly known as Outlook Web App).
 
 - **DURATION**: How long the call lasted in minutes (MM) and seconds (SS), in the following format: MM:SS.
 
@@ -55,7 +55,7 @@ The user call log includes the following information for each call:
 
   - **Fax**: A call was received in which a fax tone was detected. If you've configured fax partners, this call was sent to the partner.
 
-  - **PlayonPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in Microsoft Outlook Web App or Outlook.
+  - **PlayonPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in Microsoft Outlook or Outlook on the web.
 
   - **FindMe**: An outbound call was placed by UM as a result of a Find Me rule in a call answering rule.
 

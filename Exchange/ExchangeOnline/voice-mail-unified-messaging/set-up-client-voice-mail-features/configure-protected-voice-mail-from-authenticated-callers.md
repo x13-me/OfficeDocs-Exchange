@@ -19,7 +19,7 @@ manager: dansimp
 
 You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:
 
-- The message is marked as Private in Microsoft Outlook and Outlook Web App.
+- The message is marked as Private in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
 - The voice message can be opened only by the intended recipient of the voice message.
 

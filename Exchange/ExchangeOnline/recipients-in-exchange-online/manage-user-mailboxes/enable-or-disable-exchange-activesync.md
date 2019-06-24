@@ -42,11 +42,11 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 
 4. Under **Mobile Devices**, do one of the following:
 
-  - To disable Exchange ActiveSync click **Disable Exchange ActiveSync**.
+   - To disable Exchange ActiveSync click **Disable Exchange ActiveSync**.
 
-    A warning appears asking if you're sure you want to disable Exchange ActiveSync. Click **Yes**.
+     A warning appears asking if you're sure you want to disable Exchange ActiveSync. Click **Yes**.
 
-  - To enable Exchange ActiveSync, click **Enable Exchange ActiveSync**.
+   - To enable Exchange ActiveSync, click **Enable Exchange ActiveSync**.
 
 5. Click **Save** to save your change.
 
@@ -87,4 +87,4 @@ Or
   Get-CASMailbox <identity>
   ```
 
-    If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
+  If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.

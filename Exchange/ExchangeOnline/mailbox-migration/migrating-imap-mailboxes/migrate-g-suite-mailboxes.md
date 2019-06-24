@@ -216,7 +216,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 
-  - When Outlook Web App opens, send an email message to another Office 365 user to verify that you can send email.
+  - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Office 365 user to verify that you can send email.
 
   - Choose **Outlook**, and check that your email messages and folders are all there.
 

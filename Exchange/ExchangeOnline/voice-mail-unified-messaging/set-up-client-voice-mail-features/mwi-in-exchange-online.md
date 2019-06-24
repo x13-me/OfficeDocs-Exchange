@@ -24,7 +24,7 @@ Message Waiting Indicator (MWI) is a feature that's found in most voice mail sys
 
 MWI notifications can include any mechanism that indicates the existence of a new or unheard voice message. The message can be in a new email message or one that's marked as unread. The MWI notification might take any of the following forms:
 
-- A new voice message seen from Microsoft Outlook or Outlook Web App.
+- A new voice message seen from Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App).
 
 - A lamp on a digital, analog, USB, or VoIP phone.
 
@@ -40,7 +40,7 @@ MWI notifications can include any mechanism that indicates the existence of a ne
 
 - A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
 
-In Exchange Online, a user's voice mail is stored in their mailbox. It can be accessed from a telephone using Outlook Voice Access, from a desktop or portable computer using Outlook or Outlook Web App, and from mobile phone clients. When a user receives a new voice message, the message appears in their Voice Mail search folder. If the voice message is accessed using Outlook or Outlook Web App, an email message will be included with the voice message.
+In Exchange Online, a user's voice mail is stored in their mailbox. It can be accessed from a telephone using Outlook Voice Access, from a desktop or portable computer using Outlook or Outlook on the web, and from mobile phone clients. When a user receives a new voice message, the message appears in their Voice Mail search folder. If the voice message is accessed using Outlook or Outlook on the web, an email message will be included with the voice message.
 
 By default, MWI is turned on for all users who are enabled for Unified Messaging (UM). It's controlled through settings on a UM mailbox policy or on the UM IP gateways that have been created and linked to a UM dial plan. MWI also works with protected voice messages.
 
@@ -154,9 +154,9 @@ For text message notifications for voice mail and missed calls to work correctly
     > [!IMPORTANT]
     > The _AllowSMSNotification_ parameter on the UM mailbox policy and the _UMSMSNotificationOption_ parameter on the user's mailbox must both be set to `$true` for SMS notifications to work.
 
-In addition to your configuring the UM mailbox policy and the user's mailbox to enable text message notifications for new voice mail and missed calls, the user must enable and configure text message notifications when they sign in to Outlook Web App. To set up and configure text message notifications, the user must:
+In addition to your configuring the UM mailbox policy and the user's mailbox to enable text message notifications for new voice mail and missed calls, the user must enable and configure text message notifications when they sign in to Outlook on the web. To set up and configure text message notifications, the user must:
 
-1. Sign in to Outlook Web App and go to **Options** \> **Phone** \> **Voice mail**.
+1. Sign in to Outlook on the web and go to **Options** \> **Phone** \> **Voice mail**.
 
 2. On the **Voice Mail** page, under **Notifications**, click **Set up notifications**.
 

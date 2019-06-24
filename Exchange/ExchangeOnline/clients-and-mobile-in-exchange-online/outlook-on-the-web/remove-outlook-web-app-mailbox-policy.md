@@ -19,7 +19,7 @@ manager: dansimp
 
 # Remove an Outlook on the web mailbox policy from Exchange Online
 
-You can remove a Microsoft Outlook on the web mailbox policy from an Exchange organization by using either the Exchange admin center (EAC) or Exchange Online PowerShell.
+You can remove an Outlook on the web mailbox policy (formerly known as an Outlook Web App mailbox policy) from an Exchange Online organization by using either the Exchange admin center (EAC) or Exchange Online PowerShell.
 
 **Note**: Don't remove the built-in mailbox policy named OwaMailboxPolicy-Default.
 

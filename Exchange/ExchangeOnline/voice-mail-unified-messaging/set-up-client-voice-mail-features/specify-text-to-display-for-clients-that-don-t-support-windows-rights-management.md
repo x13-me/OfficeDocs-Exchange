@@ -23,7 +23,7 @@ Protected Voice Mail can be accessed only by email clients that support Windows 
 
 Protected Voice Mail is encrypted. When a voice message is protected:
 
-- The message is marked as Private in Microsoft Outlook and Outlook Web App.
+- The message is marked as Private in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
 - The voice message can be opened only by the intended recipient of the voice message.
 

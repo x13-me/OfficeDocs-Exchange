@@ -31,7 +31,7 @@ An admin defines the rules that make up a sharing policy. You can specify the do
 
 After you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. Sharing policies are applied to individual user's mailboxes. An admin can also disable a user's sharing policy to prevent external access to calendars.
 
-Users share their calendar by sending an email invitation to the external user. Outlook 2010 or later or Outlook Web App can send this type of invitation. The calendar can be opened through a URL link, or can be accessed as an additional calendar folder if the external user has Outlook 2010 or later or is using Outlook Web App.
+Users share their calendar by sending an email invitation to the external user. Outlook 2010 or later or Outlook on the web (formerly known as Outlook Web App) users can send this type of invitation. The calendar can be opened through a URL link, or can be accessed as an additional calendar folder if the external user has Outlook 2010 or later or is using Outlook on the web.
 
 These topics will help you learn how to manage sharing policies for your Office 365 organization:
 

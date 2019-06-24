@@ -23,7 +23,7 @@ In Exchange Online, you can use archive policies to automatically move mailbox i
 
 Exchange Setup creates a retention policy called **Default MRM Policy**. This policy has a default policy tag (DPT) assigned that moves items to the archive mailbox after two years. The policy also includes a number of personal tags that users can apply to folders or mailbox items to automatically move or delete messages. If a mailbox doesn't have a retention policy assigned when it's archive-enabled, the **Default MRM Policy** is automatically applied to it by Exchange. You can also create your own archive and retention policies and apply them to mailbox users. To learn more, see [Retention tags and retention policies](messaging-records-management/retention-tags-and-policies.md).
 
-You can modify retention tags included in the default policy to meet your business requirements. For example, you can modify the archive DPT to move items to the archive after three years instead of two. You can also create additional personal tags and either add them to a retention policy, including the **Default MRM Policy**, or allow users to add personal tags to their mailboxes from Outlook Web App Options.
+You can modify retention tags included in the default policy to meet your business requirements. For example, you can modify the archive DPT to move items to the archive after three years instead of two. You can also create additional personal tags and either add them to a retention policy, including the **Default MRM Policy**, or allow users to add personal tags to their mailboxes from Outlook on the web (formerly known as Outlook Web App) Options.
 
 For additional management tasks related to archives, see [Enable or disable an archive mailbox in Exchange Online](https://technet.microsoft.com/library/abf04393-97d1-4ee2-832d-d1c85734de51.aspx).
 
@@ -71,7 +71,7 @@ For additional management tasks related to archives, see [Enable or disable an a
 
   - **When the item reaches the following age (in days)**: Click this button to specify that items be moved to archive after a certain period. By default, this setting is configured to move items to the archive after two years (730 days). To modify this setting, in the corresponding text box, type the number of days in the retention period. The range of values is from 1 through 24,855 days.
 
-  - **Comment**: Use this box to type a comment that will be displayed to Outlook and Outlook Web App users.
+  - **Comment**: Use this box to type a comment that will be displayed to Outlook and Outlook on the web users.
 
 ## Use Exchange Online PowerShell to modify archive policies
 <a name="UseShell"> </a>

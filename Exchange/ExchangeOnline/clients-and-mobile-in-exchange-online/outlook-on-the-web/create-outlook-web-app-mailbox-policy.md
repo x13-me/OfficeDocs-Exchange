@@ -21,7 +21,7 @@ manager: dansimp
 
 You can create Outlook on the web mailbox policies to apply settings to users in Outlook on the web (formerly known as Outlook Web App). Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
 
-For more information about Outlook on the web mailbox policies, see [Outlook Web App mailbox policies](outlook-web-app-mailbox-policies.md).
+For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies](outlook-web-app-mailbox-policies.md).
 
 ## What do you need to know before you begin?
 
@@ -74,7 +74,7 @@ In Exchange Online PowerShell, creating an Outlook on the web mailbox policy is 
 
 ## How do you know this worked?
 
-To verify that you've successfully created an Outlook Web App mailbox policy:
+To verify that you've successfully created an Outlook on the web mailbox policy:
 
 - In the EAC, click **Permissions** \> **Outlook Web App Policies**, and look for your new mailbox policy.
 

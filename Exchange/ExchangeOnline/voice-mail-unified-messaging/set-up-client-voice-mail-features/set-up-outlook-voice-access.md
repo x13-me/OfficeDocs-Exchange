@@ -91,7 +91,7 @@ They can send messages and meeting requests by using the VUI (if ASR has been tu
 ## Choosing a language
 <a name="BKMK_Choosingalanguage"> </a>
 
-Users can't change the language that Outlook Voice Access uses to speak to them and that they use when they reply to it. The voice mail system tries to find and use the best match for the language the user chose when they signed in to Microsoft Outlook Web App or the language they chose on the regional settings in Outlook Web App. If the language they chose isn't supported by Outlook Voice Access, the voice mail system will use the same language that callers hear when they're prompted to leave a voice message.
+Users can't change the language that Outlook Voice Access uses to speak to them and that they use when they reply to it. The voice mail system tries to find and use the best match for the language the user chose when they signed in to Outlook on the web (formerly known as Outlook Web App) or the language they chose on the regional settings in Outlook on the web. If the language they chose isn't supported by Outlook Voice Access, the voice mail system will use the same language that callers hear when they're prompted to leave a voice message.
 
 ## Controlling Outlook Voice Access features
 <a name="BKMK_ControllingOutlookVoiceAccessfeatures"> </a>
