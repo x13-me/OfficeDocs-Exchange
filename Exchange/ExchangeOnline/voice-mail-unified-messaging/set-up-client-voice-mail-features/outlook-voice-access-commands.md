@@ -61,7 +61,7 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 |"Main menu"|\*|Exits to the main menu.|
 
 > [!IMPORTANT]
-> If you need to access an email message after you delete it using Outlook Voice Access, you can use Outlook Web App or Outlook to move the email message back into the appropriate folder from the Deleted Items folder. You can't use Outlook Voice Access to access the Deleted Items folder.
+> If you need to access an email message after you delete it using Outlook Voice Access, you can use Outlook on the web (formerly known as Outlook Web App) or Outlook to move the email message back into the appropriate folder from the Deleted Items folder. You can't use Outlook Voice Access to access the Deleted Items folder.
 
 ## Calendar options command reference
 

@@ -77,7 +77,7 @@ After the expiration or removal of an O365 License, Office 365 doesn't **instant
 
 To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
 
-To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook Web App](https://support.office.com/article/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
+To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook on the web](https://support.office.com/article/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
 
 ## Offboard a user from Office 365
 

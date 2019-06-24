@@ -76,7 +76,7 @@ Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbo
 
 ## More about deleted items and retention time
 
-When a user permanently deletes a mailbox item (such as an email message, a contact, a calendar appointment, or a task) in Microsoft Outlook and Outlook Web App, the item is moved to the **Recoverable Items** folder, and into a subfolder named **Deletions**.
+When a user permanently deletes a mailbox item (such as an email message, a contact, a calendar appointment, or a task) in Microsoft Outlook and Outlook on the web, the item is moved to the **Recoverable Items** folder, and into a subfolder named **Deletions**.
 
 A mailbox item is deleted and moved to the **Recoverable Items** folder when a user does one of the following:
 
@@ -88,7 +88,7 @@ A mailbox item is deleted and moved to the **Recoverable Items** folder when a u
 
  How long deleted items are kept in the **Deletions** folder depends on the deleted item retention period that is set for the mailbox. An Exchange Online mailbox keeps deleted items for 14 days, by default. Use Exchange Online PowerShell, as shown above, to change this setting, to increase the period up to a maximum of 30 days.
 
-Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the **Recover Deleted Items** feature in Outlook or Outlook on the web. See the following topics for [Outlook](https://go.microsoft.com/fwlink/p/?linkId=198206) or for [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=524924).
+Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the **Recover Deleted Items** feature in Outlook or Outlook on the web. See the following topics for [Outlook](https://go.microsoft.com/fwlink/p/?linkId=198206) or for [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924).
 
 Additional help:
 

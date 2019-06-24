@@ -159,7 +159,7 @@ This procedure uses the following concepts:
 You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
 
 > [!NOTE]
-> By default, Outlook on the web (formerly known as Outlook Web App) doesn't allow you to open XML attachments. You can either configure Outlook on the web to allow XML attachments to be viewed, or you can use another email client to view the attachment (for example, Microsoft Outlook). For information about how to configure Outlook on the web to allow you to view XML attachments, see [View or configure Outlook on the web mailbox policy properties in Exchange Online](../../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md).
+> By default, Outlook on the web doesn't allow you to open XML attachments. You can either configure Outlook on the web to allow XML attachments to be viewed, or you can use another email client to view the attachment (for example, Microsoft Outlook). For information about how to configure Outlook on the web to allow you to view XML attachments, see [View or configure Outlook on the web mailbox policy properties in Exchange Online](../../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md).
 
 To search the audit log for criteria you specify, use the following syntax.
 

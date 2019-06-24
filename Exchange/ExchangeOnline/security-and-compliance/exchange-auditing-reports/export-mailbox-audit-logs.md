@@ -40,7 +40,7 @@ When you export entries from mailbox audit logs, Microsoft Exchange saves the en
 ## Configure mailbox audit logging
 <a name="configmbxauditing"> </a>
 
-You have to enable mailbox audit logging on each mailbox that you want to audit before you can export and view mailbox audit logs. You also have to configure Microsoft Outlook Web App to allow XML attachments to use Outlook Web App to access the audit log.
+You have to enable mailbox audit logging on each mailbox that you want to audit before you can export and view mailbox audit logs. You also have to configure Outlook on the web (formerly known as Outlook Web App) to allow XML attachments to use Outlook on the web to access the audit log.
 
 ### Step 1: Enable mailbox audit logging
 
@@ -64,21 +64,21 @@ $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 
-### Step 2: Configure Outlook Web App to allow XML attachments
+### Step 2: Configure Outlook on the web to allow XML attachments
 
-When you export the mailbox audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook Web App blocks XML attachments by default. To access the exported audit log, you have to use Microsoft Outlook or configure Outlook Web App to allow XML attachments.
+When you export the mailbox audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook on the web blocks XML attachments by default. To access the exported audit log, you have to use Microsoft Outlook or configure Outlook on the web to allow XML attachments.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
 
-Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server, use the value `Default` for the _Identity_ parameter.
+Perform the following procedures to allow XML attachments in Outlook on the web. In Exchange Server, use the value `Default` for the _Identity_ parameter.
 
-1. Run the following command to add XML to the list of allowed file types in Outlook Web App.
+1. Run the following command to add XML to the list of allowed file types in Outlook on the web.
 
    ```
    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes @{add='.xml'}
    ```
 
-2. Run the following command to remove XML from the list of blocked file types in Outlook Web App.
+2. Run the following command to remove XML from the list of blocked file types in Outlook on the web.
 
    ```
    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BlockedFileTypes @{remove='.xml'}
@@ -96,7 +96,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
 
    A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
 
-2. Run the following command to verify that XML attachments are allowed in Outlook Web App.
+2. Run the following command to verify that XML attachments are allowed in Outlook on the web.
 
    ```
    Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
@@ -104,7 +104,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
 
    Verify that `.xml` is included in the list of allowed file types.
 
-3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook Web App.
+3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook on the web.
 
    ```
    Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
@@ -145,7 +145,7 @@ Microsoft Exchange retrieves entries in the mailbox audit log that meet your sea
 
 ### How do you know this worked?
 
-Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. In Exchange Online, it may take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook Web App to allow XML attachments, you can download the attached XML file.
+Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. In Exchange Online, it may take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook on the web to allow XML attachments, you can download the attached XML file.
 
 ## View the mailbox audit log
 <a name="viewauditlog"> </a>

@@ -38,7 +38,7 @@ Most mobile phones and devices are capable of using Autodiscover to configure th
 
 - The user's password
 
-If the mobile phone is unable to contact the Exchange server automatically through Autodiscover, you'll need to set up the mobile phone manually. Manual setup requires the user's email address and password, as well as the Exchange ActiveSync server name. In most organizations, the Exchange ActiveSync server name is the same as the Outlook Web App server name without the /owa, for example, mail.contoso.com.
+If the mobile phone is unable to contact the Exchange server automatically through Autodiscover, you'll need to set up the mobile phone manually. Manual setup requires the user's email address and password, as well as the Exchange ActiveSync server name. In most organizations, the Exchange ActiveSync server name is the same as the Outlook on the web (formerly known as Outlook Web App) server name without the /owa, for example, mail.contoso.com.
 
 ### Windows Phone synchronization
 

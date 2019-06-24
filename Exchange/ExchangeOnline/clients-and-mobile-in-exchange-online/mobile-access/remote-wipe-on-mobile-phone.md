@@ -22,7 +22,7 @@ manager: dansimp
 Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to wipe their phone clean of all corporate and user information.
 
 > [!NOTE]
-> This topic also provides instructions for how to use Microsoft Outlook Web App to perform a remote wipe on a phone. The user must be signed in to Outlook Web App to perform a remote wipe.
+> This topic also provides instructions for how to use Outlook on the web (formerly known as Outlook Web App) to perform a remote wipe on a phone. The user must be signed in to Outlook on the web to perform a remote wipe.
 
 ## What do you need to know before you begin?
 
@@ -59,11 +59,11 @@ The following command wipes the device named WM_TonySmith and sends a confirmati
 Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
-## Use Outlook Web App to wipe a user's phone
+## Use Outlook on the web to wipe a user's phone
 
-Your users can wipe their own phone using Outlook Web App.
+Your users can wipe their own phone using Outlook on the web.
 
-1. In Outlook Web App, select **Settings \> Phone \> Mobile devices**.
+1. In Outlook on the web, select **Settings \> Phone \> Mobile devices**.
 
 2. Select the mobile phone.
 
@@ -77,4 +77,4 @@ There are several ways to verify that the remote wipe completed.
 
 - In the EAC, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
 
-- In Outlook Web App, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
+- In Outlook on the web, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.

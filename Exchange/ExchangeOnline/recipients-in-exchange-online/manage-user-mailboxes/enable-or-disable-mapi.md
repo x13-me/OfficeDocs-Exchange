@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook Web App, a POP email client, or an IMAP client.
+description: You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook on the web, a POP email client, or an IMAP client.
 ms.topic: article
 author: kwekua
 ms.author: kwekua
@@ -19,14 +19,14 @@ manager: scotv
 
 # Enable or disable MAPI for a mailbox
 
-You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook Web App, a POP email client, or an IMAP client.
+You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook on the web (formerly known as Outlook Web App), a POP email client, or an IMAP client.
 
 > [!NOTE]
-> Support for Outlook Web App and MAPI, POP3, and IMAP4 email clients is enabled by default when a user mailbox is created.
+> Support for Outlook on the web and MAPI, POP3, and IMAP4 email clients is enabled by default when a user mailbox is created.
 
 For additional management tasks related to managing email client access to a mailbox, see the following topics:
 
-- [Enable or disable Outlook Web App for a mailbox](enable-or-disable-outlook-web-app.md)
+- [Enable or disable Outlook on the web for a mailbox](enable-or-disable-outlook-web-app.md)
 
 - [Enable or Disable IMAP4 Access for a User](https://technet.microsoft.com/library/a685fae4-b6f1-42fe-8bdc-5f99f9617799.aspx)
 
@@ -53,11 +53,11 @@ For additional management tasks related to managing email client access to a mai
 
 4. Under **Email Connectivity**, do one of the following.
 
-  - To disable MAPI, under **MAPI: Enabled**, click **Disable**.
+   - To disable MAPI, under **MAPI: Enabled**, click **Disable**.
 
-    A warning appears asking if you're sure you want to disable MAPI. Click **Yes**.
+     A warning appears asking if you're sure you want to disable MAPI. Click **Yes**.
 
-  - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
+   - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
 
 5. Click **Save** to save your change.
 
@@ -92,7 +92,7 @@ Or
 - Run the following command in Exchange Online PowerShell.
 
   ```
-  Get-CASMailbox <identity>
+  Get-CASMailbox -Identity <MailboxIdentity>
   ```
 
-    If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.
+  If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.

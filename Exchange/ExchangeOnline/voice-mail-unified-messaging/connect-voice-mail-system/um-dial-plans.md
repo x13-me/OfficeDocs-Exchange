@@ -116,7 +116,7 @@ Outlook Voice Access is a series of voice prompts that give the caller access to
 
 After you've created a UM dial plan, you need to add at least one Outlook Voice Access number. Outlook Voice Access numbers are also called dial plan pilot numbers. This number is used by Outlook Voice Access users to access their mailboxes and lets them search the directory.
 
-By default, when you create a UM dial plan, no Outlook Voice Access number is configured. To enable users to use the Outlook Voice Access feature, you must configure at least one telephone or extension number. The number of alphanumeric characters in the Outlook Voice Access number can't exceed 20. After you configure this number on the dial plan, the number will be displayed in the voice mail options in Microsoft Outlook, and in Outlook Web App.
+By default, when you create a UM dial plan, no Outlook Voice Access number is configured. To enable users to use the Outlook Voice Access feature, you must configure at least one telephone or extension number. The number of alphanumeric characters in the Outlook Voice Access number can't exceed 20. After you configure this number on the dial plan, the number will be displayed in the voice mail options in Microsoft Outlook and in Outlook on the web (formerly known as Outlook Web App).
 
 You can use the **Outlook Voice Access numbers** box on the UM dial plan to add a telephone number or extension that a user will call to access the voice mail system using Outlook Voice Access. In most cases, you'll enter an extension number or an external telephone number. However, because this field accepts alphanumeric characters, a SIP URI can be used if you're using an IP PBX, a SIP-enabled PBX, Office Communications Server 2007 R2 or Microsoft Lync Server.
 
