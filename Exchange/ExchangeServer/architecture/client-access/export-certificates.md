@@ -44,11 +44,11 @@ You can export a certificate from an Exchange server as a backup or to import th
 
 3. On the **Export Exchange certificate** page that opens, enter the following information:
 
-  - **File to export to**: Enter the UNC path and file name of the certificate file. For example, `\\FileServer01\Data\Fabrikam.pfx`
+   - **File to export to**: Enter the UNC path and file name of the certificate file. For example, `\\FileServer01\Data\Fabrikam.pfx`
 
-  - **Password**: When you export the certificate with its private key, you need to specify a password. Exporting the certificate with its private key allows you to import the certificate on other servers.
+   - **Password**: When you export the certificate with its private key, you need to specify a password. Exporting the certificate with its private key allows you to import the certificate on other servers.
 
-    When you're finished, click **OK**.
+   When you're finished, click **OK**.
 
 ## Use the Exchange Management Shell to export a certificate
 

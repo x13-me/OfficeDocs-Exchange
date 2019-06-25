@@ -29,14 +29,14 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 2. Fill-in the required fields:
 
-  - **Display name**
+   - **Display name**
 
-  - **Email address**
+   - **Email address**
 
-3. To grant Full Access or Send As permissions, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](create-shared-mailboxes.md#TypesOfPerms) later in this topic.
+3. To grant Full Access or Send As permissions, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
-    > [!NOTE]
-    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
+   > [!NOTE]
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Click **Save** to save your changes and create the shared mailbox.
 
@@ -48,8 +48,8 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 3. To grant or remove Full Access and Send As permissions, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png) and then select the users you want to grant permissions to.
 
-    > [!NOTE]
-    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
+   > [!NOTE]
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Click **Save** to save your changes.
 
@@ -67,7 +67,6 @@ New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Al
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ## Which permissions should you use?
-<a name="TypesOfPerms"> </a>
 
 You can use the following permissions with a shared mailbox.
 
@@ -78,7 +77,6 @@ You can use the following permissions with a shared mailbox.
 - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 ## More information
-<a name="TypesOfPerms"> </a>
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 

@@ -56,31 +56,31 @@ If you want to enter a product key on an Exchange 2016 or Exchange 2019 server, 
 
 1. In the EAC. go to **Servers** \> **Servers**, select the server you want to license, and then do either of the following steps:
 
-    - Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+   - Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
-    - In the details pane, click **Enter Product Key**. Note that this link is only available for unlicensed servers.
+   - In the details pane, click **Enter Product Key**. Note that this link is only available for unlicensed servers.
 
-    ![Selecting an unlicensed server in the Servers tab in the EAC](../../media/eac-servers-servers-unlicensed.png)
+   ![Selecting an unlicensed server in the Servers tab in the EAC](../../media/eac-servers-servers-unlicensed.png)
 
 2. The Exchange server properties window opens. On the **General** tab, do one of the following steps:
 
-    - **License an unlicensed server**: Enter the product key in the **Enter a valid product key** text boxes.
+   - **License an unlicensed server**: Enter the product key in the **Enter a valid product key** text boxes.
 
-      ![The General tab in Exchange server properties in the EAC for an unlicensed server](../../media/eac-server-prop-general-unlicensed.png)
+     ![The General tab in Exchange server properties in the EAC for an unlicensed server](../../media/eac-server-prop-general-unlicensed.png)
 
-    - **Change or upgrade the product key on a licensed server**: Select **Change product key** and enter the product key in the **Enter a valid product key** text boxes. Note that you'll only see **Change product key** if the server is already licensed.
+   - **Change or upgrade the product key on a licensed server**: Select **Change product key** and enter the product key in the **Enter a valid product key** text boxes. Note that you'll only see **Change product key** if the server is already licensed.
 
-      ![The General tab in Exchange server properties in the EAC for a licensed server](../../media/eac-server-prop-general-licensed.png)
+     ![The General tab in Exchange server properties in the EAC for a licensed server](../../media/eac-server-prop-general-licensed.png)
 
-    When you're finished, click **Save**.
+   When you're finished, click **Save**.
 
 After you license a Mailbox server, do the following steps to restart the Microsoft Exchange Information Store service:
 
 1. On the Exchange server, open the Windows Services console. For example:
 
-  - Run the command `services.msc` from the **Run** dialog, a Command Prompt window, or the Exchange Management Shell.
+   - Run the command `services.msc` from the **Run** dialog, a Command Prompt window, or the Exchange Management Shell.
 
-  - Open Server Manager, and then click **Tools** \> **Services**.
+   - Open Server Manager, and then click **Tools** \> **Services**.
 
 2. In the list of services, right-click on **Microsoft Exchange Information Store**, and then click **Restart**.
 
@@ -113,16 +113,16 @@ To verify that you've successfully licensed the Exchange server, do any of the f
 
 - In the EAC, go to **Servers** \> **Servers**, and select the server you licensed. In the details pane, verify the Exchange edition value (**Standard** or **Enterprise**) and whether the value **Licensed** is present.
 
-    ![The details pane of a selected, licensed server in the Servers tab in the EAC](../../media/eac-servers-servers-licensed.png)
+  ![The details pane of a selected, licensed server in the Servers tab in the EAC](../../media/eac-servers-servers-licensed.png)
 
 - In the Exchange Management Shell, replace _\<ServerName\>_ with the name of the Exchange server you licensed, and run the following command to verify the property values:
 
-    ```
-    Get-ExchangeServer <ServerName> | Format-List Name,Edition,*Trial*
-    ```
+  ```
+  Get-ExchangeServer <ServerName> | Format-List Name,Edition,*Trial*
+  ```
 
 - In the Exchange Management Shell, run the following command to view the licensing status of all Exchange servers in your organization:
 
-    ```
-    Get-ExchangeServer | Format-Table -Auto Name,Edition,*Trial*
-    ```
+  ```
+  Get-ExchangeServer | Format-Table -Auto Name,Edition,*Trial*
+  ```

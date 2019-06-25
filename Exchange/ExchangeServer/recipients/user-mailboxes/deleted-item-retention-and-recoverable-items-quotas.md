@@ -47,17 +47,17 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following:
 
-  - **Use the default retention settings from the mailbox database**: Use the deleted item retention setting that's configured for the mailbox database.
+   - **Use the default retention settings from the mailbox database**: Use the deleted item retention setting that's configured for the mailbox database.
 
-  - **Customize the settings for this mailbox**: Configure deleted item retention settings for the mailbox.
+   - **Customize the settings for this mailbox**: Configure deleted item retention settings for the mailbox.
 
-    **\*Keep deleted items for (days)**: Displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
+   - **\*Keep deleted items for (days)**: Displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
 
-  - **Don't permanently delete items until the database is backed up**: Check this box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+   - **Don't permanently delete items until the database is backed up**: Check this box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
-![default retention settings](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
+   ![default retention settings](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
 
- **Use the Exchange Management Shell to configure deleted item retention for a mailbox**
+### Use the Exchange Management Shell to configure deleted item retention for a mailbox
 
 This example configures April Stewart's mailbox to retain deleted items for 30 days.
 
