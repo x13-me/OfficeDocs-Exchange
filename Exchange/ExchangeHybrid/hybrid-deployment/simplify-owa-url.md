@@ -50,20 +50,17 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
 2. **Configure the Outlook on the web redirect in the on-premises organization relationship**: To do this, use the following syntax in the Exchange Management Shell in on-premises Exchange:
 
    ```
-   Set-OrganizationRelationship -TargetOWAUrl http://<CNAME value>/owa
+   Set-OrganizationRelationship -Identity <Organization relationship identity> -TargetOWAUrl http://<CNAME value>/owa
    ```
 
-   For example, if the CNAME record that you created in Step 1 is cloudowa.contoso.com, run the following command:
+   For example, if the CNAME record that you created in Step 1 is cloudowa.contoso.com, and the organization relationship name is Contoso Cloud, run the following command:
 
    ```
-   Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
+   Set-OrganizationRelationship -Identity "Contoso Cloud" -TargetOWAUrl http://cloudowa.contoso.com/owa
    ```
 
-   **Notes**:
-
-   - Use http, not https.
-
-   - The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL.
+   > [!NOTE]
+   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-organizationrelationship) cmdlet to find the organization relationship name.
 
 ## Multiple authentication prompts
 
@@ -84,4 +81,5 @@ The authentication prompt experience that users can expect is described in the f
 |No Identity federation|Domain joined (internal or external)|Double prompt|
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
-**Note**: Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
+> [!NOTE]
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
