@@ -30,7 +30,6 @@ Create a new Sharing Policy to change how people in your organization share cale
 - Only Outlook 2010 or later and Outlook on the web (formerly known as Outlook Web App) users can create sharing invitations.
 
 ## Use the wizard to create a sharing policy
-<a name="BKMK_EAC"> </a>
 
 1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
@@ -44,19 +43,19 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 6. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 
-  - **Sharing with all domains**
+   - **Sharing with all domains**
 
-  - **Sharing with a specific domain**
+   - **Sharing with a specific domain**
 
 7. If you select **Sharing with a specific domain**, type the name of the domain you want to share with. If you need to enter more than one domain for this sharing policy, save the settings for the first domain, then edit the sharing rules to add more domains.
 
 8. To specify the information that can be shared, select the **Share your calendar folder** check box, and then select one of the following options:
 
-  - **Calendar free/busy information with time only**
+   - **Calendar free/busy information with time only**
 
-  - **Calendar free/busy information with time, subject, and location**
+   - **Calendar free/busy information with time, subject, and location**
 
-  - **All calendar appointment information, including time, subject, location and title**
+   - **All calendar appointment information, including time, subject, location and title**
 
 9. Click **save** to set the rules for the sharing policy.
 
@@ -65,7 +64,6 @@ Create a new Sharing Policy to change how people in your organization share cale
 11. Click **save** to create the sharing policy.
 
 ## Use Exchange Online PowerShell to create a sharing policy
-<a name="BKMK_Shell"> </a>
 
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
 

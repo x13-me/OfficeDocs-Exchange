@@ -46,21 +46,21 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 6. On the **Select Items for Backup** page, click **Add Items** to select the volume(s) to be backed up, and then click **OK**.
 
-    > [!NOTE]
-    > Choose volumes and not individual folders. The only way to perform an application-level backup or restore is to select an entire volume.
+   > [!NOTE]
+   > Choose volumes and not individual folders. The only way to perform an application-level backup or restore is to select an entire volume.
 
 7. Click **Advanced Settings**. On the **Exclusions** tab, click **Add Exclusion** to add any files or file types you want to exclude from the backup.
 
-    > [!NOTE]
-    > By default, volumes that contain operating system components or applications are included in the backup and can't be excluded.
+   > [!NOTE]
+   > By default, volumes that contain operating system components or applications are included in the backup and can't be excluded.
 
 8. On the **VSS Settings tab**, select **VSS full Backup**, and then click **OK**, and then click **Next**.
 
 9. On the **Specify Destination Type** page, select the location where you want to store the backup, and then click **Next**.
 
-  - If you choose **Local drives**, the **Select Backup Destination** page appears. Select an option from the **Backup destination** dropdown, and then click **Next**.
+   - If you choose **Local drives**, the **Select Backup Destination** page appears. Select an option from the **Backup destination** dropdown, and then click **Next**.
 
-  - If you choose **Remote shared folder**, the **Specify remote folder** page appears. Specify a UNC path for the backup files, configure access control settings. Choose **Do not inherit** if you want the backup to be accessible only through a specific account. Provide a user name and password for an account that has write permissions on the computer hosting the remote folder, and then click **OK**. Alternatively, choose **Inherit** if you want the backup to be accessible by everyone who has access to the remote folder. Click **Next**.
+   - If you choose **Remote shared folder**, the **Specify remote folder** page appears. Specify a UNC path for the backup files, configure access control settings. Choose **Do not inherit** if you want the backup to be accessible only through a specific account. Provide a user name and password for an account that has write permissions on the computer hosting the remote folder, and then click **OK**. Alternatively, choose **Inherit** if you want the backup to be accessible by everyone who has access to the remote folder. Click **Next**.
 
 10. On the **Confirmation** page, review the backup settings, and then click **Backup**.
 
@@ -82,4 +82,4 @@ To verify that you've successfully backed up the data, do any of the following:
   Get-MailboxDatabase -Server <ServerName> -Status | Format-List Name,*FullBackup
   ```
 
-    The _SnapshotLastFullBackup_ and _LastFullBackup_ properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.
+  The _SnapshotLastFullBackup_ and _LastFullBackup_ properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.

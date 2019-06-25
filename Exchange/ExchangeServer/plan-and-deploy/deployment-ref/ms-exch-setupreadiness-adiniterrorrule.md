@@ -25,17 +25,17 @@ To resolve this issue, do the following steps:
 
 1. Open **Active Directory Users and Computers**. For example:
 
-  - Press Windows key + R, enter **dsc.msc**, and then click **OK**.
+   - Press Windows key + R, enter **dsc.msc**, and then click **OK**.
 
-  - In **Administrative Tools** \> **Active Directory Users and Computers**.
+   - In **Administrative Tools** \> **Active Directory Users and Computers**.
 
 2. In the **Active Directory Users and Computers**, click **View** \> **Advanced Features**.
 
-4. Locate the duplicate **Microsoft Exchange System Objects** container.
+3. Locate the duplicate **Microsoft Exchange System Objects** container.
 
-5. Verify that the duplicate **Microsoft Exchange System Objects** container doesn't contain valid Active Directory objects.
+4. Verify that the duplicate **Microsoft Exchange System Objects** container doesn't contain valid Active Directory objects.
 
-6. Right-click the duplicate **Microsoft Exchange System Objects container**, click **Delete**, and then click **Yes** in the confirmation dialog box.
+5. Right-click the duplicate **Microsoft Exchange System Objects container**, click **Delete**, and then click **Yes** in the confirmation dialog box.
 
 > [!NOTE]
 > To immediately replicate the change, you need to manually initiate replication between domain controllers.
