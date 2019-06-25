@@ -58,10 +58,10 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 3. Remove all mailbox database copies for the database being moved. For detailed steps, see [Remove a mailbox database copy](remove-db-copies.md). After all copies are removed, preserve the database and transaction log files from each server from which the database copy is being removed by moving them to another location. These files are being preserved so the database copies don't require re-seeding after they have been re-added.
 
-4. Move the mailbox database path to the new location. For detailed steps, see [Move a mailbox database path](../../architecture/mailbox-servers/manage-databases.md#BKMK_Move).
+4. Move the mailbox database path to the new location. For detailed steps, see [Move a mailbox database path](../../architecture/mailbox-servers/manage-databases.md#move-a-mailbox-database-path).
 
-    > [!IMPORTANT]
-    > During the move operation, the database being moved must be dismounted. Until the move is complete, this process will cause an interruption in service and an outage for all users with mailboxes on the database being moved. After the move operation completes, the database is automatically mounted.
+   > [!IMPORTANT]
+   > During the move operation, the database being moved must be dismounted. Until the move is complete, this process will cause an interruption in service and an outage for all users with mailboxes on the database being moved. After the move operation completes, the database is automatically mounted.
 
 5. Create the necessary folder structure on each Mailbox server that previously contained a passive copy of the moved mailbox database. For example, if you moved the database to C:\mountpoints\DB1, you must create this same path on each Mailbox server that will host a mailbox database copy.
 

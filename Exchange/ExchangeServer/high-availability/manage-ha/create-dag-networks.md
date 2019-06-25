@@ -37,7 +37,6 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
 
 ## Use the EAC to create a database availability group network
-<a name="UseEMC"> </a>
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
@@ -45,16 +44,15 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 3. On the **new database availability group network** page, provide the following information:
 
-  - **Database availability group network name**: Use this field to type a name for the network that's unique in the DAG.
+   - **Database availability group network name**: Use this field to type a name for the network that's unique in the DAG.
 
-  - **Description**: Use this field to provide a text description of the DAG network.
+   - **Description**: Use this field to provide a text description of the DAG network.
 
-  - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
+   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
 
 4. Click **Save** to create the DAG network.
 
 ## Use the Exchange Management Shell to create a database availability group network
-<a name="UseShell"> </a>
 
 This example creates the network ReplicationDagNetwork02 with a subnet of 10.0.0.0 and a bitmask of 8 in the DAG DAG1. Replication is enabled for the network, and an optional description of the network is also being added.
 
@@ -63,7 +61,6 @@ New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name Repli
 ```
 
 ## How do you know this worked?
-<a name="UseShell"> </a>
 
 To verify that you've successfully created a DAG network, do one of the following:
 
@@ -76,7 +73,6 @@ To verify that you've successfully created a DAG network, do one of the followin
   ```
 
 ## For more information
-<a name="UseShell"> </a>
 
 [Set-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx)
 

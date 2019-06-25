@@ -47,19 +47,19 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 4. On the **Reset UM Mailbox PIN** page, use the following options to reset the UM-enabled user's PIN:
 
-  - **Automatically generate a PIN**: Use this option to automatically generate the PIN that's used by the user to gain access to their mailbox using Outlook Voice Access. By default, this setting is enabled.
+   - **Automatically generate a PIN**: Use this option to automatically generate the PIN that's used by the user to gain access to their mailbox using Outlook Voice Access. By default, this setting is enabled.
 
-    The automatically generated PIN will be sent in an email message to the user's mailbox. After they receive the PIN and sign in to their mailbox, they'll be prompted to change the PIN to a PIN that's more familiar to them.
+     The automatically generated PIN will be sent in an email message to the user's mailbox. After they receive the PIN and sign in to their mailbox, they'll be prompted to change the PIN to a PIN that's more familiar to them.
 
-    Outlook on the web and Microsoft Outlook also let the user reset their PIN. The PIN is automatically generated based on the PIN policies that are configured on the UM mailbox policy that's associated with the user's mailbox. We recommend that you automatically generate PINs for Outlook Voice Access users.
+     Outlook on the web and Microsoft Outlook also let the user reset their PIN. The PIN is automatically generated based on the PIN policies that are configured on the UM mailbox policy that's associated with the user's mailbox. We recommend that you automatically generate PINs for Outlook Voice Access users.
 
-  - **Type a PIN**: Use this option to manually specify a PIN for an Outlook Voice Access user. By default, this setting is disabled.
+   - **Type a PIN**: Use this option to manually specify a PIN for an Outlook Voice Access user. By default, this setting is disabled.
 
-    If you specify a PIN for a user, the PIN will be sent in an email message to the user's mailbox. After they receive the PIN and sign in to their mailbox, they can change the PIN by configuring personal options in Outlook Voice Access. However, in Outlook on the web and Microsoft Outlook, there is no option to manually specify a PIN.
+     If you specify a PIN for a user, the PIN will be sent in an email message to the user's mailbox. After they receive the PIN and sign in to their mailbox, they can change the PIN by configuring personal options in Outlook Voice Access. However, in Outlook on the web and Microsoft Outlook, there is no option to manually specify a PIN.
 
-  - **Require the user to reset their PIN the first time they sign in**: Use this option to require the user to reset their PIN when they first sign in to Outlook Voice Access. By default, this option is enabled.
+   - **Require the user to reset their PIN the first time they sign in**: Use this option to require the user to reset their PIN when they first sign in to Outlook Voice Access. By default, this option is enabled.
 
-    If you select the option to automatically generate a PIN for a user, you can enable this option to require users to change their PIN when they first sign in to Outlook Voice Access. This helps protect the user's PIN.
+     If you select the option to automatically generate a PIN for a user, you can enable this option to require users to change their PIN when they first sign in to Outlook Voice Access. This helps protect the user's PIN.
 
 5. Click **Save**.
 
