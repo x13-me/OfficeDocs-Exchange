@@ -37,7 +37,15 @@ ADAL-based authentication leverages OAuth for modern authentication-enabled acco
 
 By default, the access token lifetime is one hour, and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configure authentication session management with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). Note that, if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
 
-A previously granted access token is valid until it expires. Upon expiration, the client will attempt to use the refresh token to obtain a new access token. Then, because the user's password has changed, the refresh token will be invalidated (assuming directory synchronization has occurred between on-premises and Azure Active Directory). The invalidated refresh token will force the user to re-authenticate in order to obtain a new access token and refresh token pair.
+A previously granted access token is valid until it expires. The identity model being utilized for authentication will have an impact on how password expiration is handled. There are three scenarios:
+
+1. For a federated identity model, the on-premises identity provider needs to send password expiry claims to Azure Active Directory, otherwise, Azure Active Directory will not be able to act on the password expiration. For more information, see [Configure AD FS to Send Password Expiry Claims](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-to-send-password-expiry-claims).
+
+2. Password Hash Synchronization does not support password expiration. This means apps that had previously obtained an access and refresh token pair will continue to function until the lifetime of the token pair is exceeded or the user changes his or her password. For more information, see [Implement password synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-hash-synchronization#how-password-synchronization-works).
+
+3. Pass-through Authentication requires that password writeback be enabled in AAD Connect. For more information, see [Azure Active Directory Pass-through Authentication: Frequently asked questions](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-faq#what-happens-if-my-users-password-has-expired-and-they-try-to-sign-in-by-using-pass-through-authentication).
+
+Upon token expiration, the client will attempt to use the refresh token to obtain a new access token, but because the user's password has changed, the refresh token will be invalidated (assuming directory synchronization has occurred between on-premises and Azure Active Directory). The invalidated refresh token will force the user to re-authenticate in order to obtain a new access token and refresh token pair.
 
 ## AutoDetect
 
