@@ -93,10 +93,10 @@ To prepare the domain for migration, complete the following steps.
 
 2. In the contoso.com Microsoft 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
 
-    > [!NOTE]
-    > The verification will fail because the domain is still in use in the other tenant.
+   > [!NOTE]
+   > The verification will fail because the domain is still in use in the other tenant.
 
-    Performing this step now will allow the DNS record time to propagate as it can take up to 72 hours. Final validation will occur later in the process.
+   Performing this step now will allow the DNS record time to propagate as it can take up to 72 hours. Final validation will occur later in the process.
 
 #### Migration scheduling
 
@@ -205,9 +205,9 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
 
 3. Use the Windows PowerShell command:
 
-  ```Powershell
-  Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
-  ```
+   ```Powershell
+   Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
+   ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 

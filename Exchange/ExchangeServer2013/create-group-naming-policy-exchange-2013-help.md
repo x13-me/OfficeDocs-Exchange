@@ -36,21 +36,21 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 - Text strings, with underscore characters, used for a single prefix (DG) and suffix (Users):
 
-    DG_\<Group Name\>_Users
+  DG_\<Group Name\>_Users
 
 - Multiple prefixes (DG and Contoso) and one suffix (Users), using text strings:
 
-    DG_Contoso_\<Group Name\>_Users
+  DG_Contoso_\<Group Name\>_Users
 
 - An attribute (Department) used for the prefix:
 
-    Department_\<Group Name\>
+  Department_\<Group Name\>
 
-    For example, say that your school populates the Department attribute for faculty members. Here's an example of a group name created by a faculty member in the Psychology department:
+  For example, say that your school populates the Department attribute for faculty members. Here's an example of a group name created by a faculty member in the Psychology department:
 
-    **Psychology\_Cognitive201**
+  **Psychology\_Cognitive201**
 
-    In this example, the underscore character (\_) is provided as the only text string in a second prefix to separate the department name from the group name.
+  In this example, the underscore character (\_) is provided as the only text string in a second prefix to separate the department name from the group name.
 
 ## What do you need to know before you begin?
 
@@ -77,11 +77,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
-  - **Attribute** Select the attribute and then click **OK**.
+   - **Attribute** Select the attribute and then click **OK**.
 
-  - **Text** Type the text string and click **OK**.
+   - **Text** Type the text string and click **OK**.
 
-    Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
+     Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
 
 3. Click **Add** to add additional prefixes.
 
@@ -89,17 +89,17 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 5. Click **Add** to add additional suffixes.
 
-    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
+   After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
 6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
 7. Click **Blocked Words** to add or remove blocked words.
 
-  - To add a word to the list, type the word to block and click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+   - To add a word to the list, type the word to block and click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
-  - To remove a word from the list, select it and click **Remove**.
+   - To remove a word from the list, select it and click **Remove**.
 
-  - To edit an existing blocked word, select it and click **Edit**.
+   - To edit an existing blocked word, select it and click **Edit**.
 
 8. When you are finished, click **Save**.
 
@@ -109,7 +109,7 @@ To verify that you've successfully created a group naming policy, do the followi
 
 - In the EAC, select **Groups** \> **More** \> **Configure group naming policy**.
 
-    On the **Group naming policy** page, the group naming policy that you defined is displayed under **Preview of policy**.
+  On the **Group naming policy** page, the group naming policy that you defined is displayed under **Preview of policy**.
 
 - In Windows PowerShell, run the following command to display the group naming policy.
 

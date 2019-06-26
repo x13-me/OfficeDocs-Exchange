@@ -37,27 +37,27 @@ After you create an In-Place eDiscovery search, you can modify it to change the 
 
 3. In **In-Place eDiscovery & Hold**, you can modify the following settings:
 
-  - On **Name** page, modify the name for the search and the optional description.
+   - On **Name** page, modify the name for the search and the optional description.
 
-  - On the **Mailboxes** page, modify the mailboxes to search. You can search across all mailboxes or select specific ones to search.
+   - On the **Mailboxes** page, modify the mailboxes to search. You can search across all mailboxes or select specific ones to search.
 
-    > [!IMPORTANT]
-    > You can't use the **Search all mailboxes** option to place all mailboxes on Exchange 2013 Mailbox servers on hold. To create an In-Place Hold, you must select **Specify mailboxes to search**. For more details, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds-exchange-2013-help.md).
+     > [!IMPORTANT]
+     > You can't use the **Search all mailboxes** option to place all mailboxes on Exchange 2013 Mailbox servers on hold. To create an In-Place Hold, you must select **Specify mailboxes to search**. For more details, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds-exchange-2013-help.md).
 
-  - On the **Search query** page, modify the following fields:
+   - On the **Search query** page, modify the following fields:
 
-  - **Include all user mailbox content** Select this option to place all content in the selected mailboxes on hold.
+   - **Include all user mailbox content** Select this option to place all content in the selected mailboxes on hold.
 
-  - **Filter based on criteria** Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types.
+   - **Filter based on criteria** Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types.
 
-  - On the **In-Place Hold** page, select the **Place content matching the search query in selected mailboxes on hold** check box, and then select one of the following options to place items on In-Place Hold:
+   - On the **In-Place Hold** page, select the **Place content matching the search query in selected mailboxes on hold** check box, and then select one of the following options to place items on In-Place Hold:
 
-  - **Hold indefinitely** Select this option to place the returned items on an indefinite hold. Items on hold will be preserved until you remove the mailbox from the search or remove the search.
+   - **Hold indefinitely** Select this option to place the returned items on an indefinite hold. Items on hold will be preserved until you remove the mailbox from the search or remove the search.
 
-  - **Specify number of days to hold items relative to their received date** Use this option to hold items for a specific period. For example, you can use this option if your organization requires that all messages be retained for at least seven years. You can use a time-based In-Place Hold along with a retention policy to make sure items are deleted in seven years.
+   - **Specify number of days to hold items relative to their received date** Use this option to hold items for a specific period. For example, you can use this option if your organization requires that all messages be retained for at least seven years. You can use a time-based In-Place Hold along with a retention policy to make sure items are deleted in seven years.
 
-    > [!IMPORTANT]
-    > When placing mailboxes or items on In-Place Hold for legal purposes, it is generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed.
+     > [!IMPORTANT]
+     > When placing mailboxes or items on In-Place Hold for legal purposes, it is generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed.
 
 4. Click **Save**.
 

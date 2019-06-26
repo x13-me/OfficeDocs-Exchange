@@ -56,7 +56,7 @@ The strategy presented here groups the search results from the original discover
 
 - For current legal cases, you might want to export the results of selected eDiscovery searches to .pst files. Doing this keeps the results from a specific search intact. In addition to the .pst files that contain the search results, a search results log (.csv file format) that contains an entry for each message returned in the search results is also exported. Each entry in this file identifies the source mailbox where the message is located. For more information, see [Export eDiscovery search results to a PST file](export-search-results-exchange-2013-help.md).
 
-    After you export search results to .pst files, you'll need to use Outlook if you want to import them to a new discovery mailbox.
+  After you export search results to .pst files, you'll need to use Outlook if you want to import them to a new discovery mailbox.
 
 ## Step 1: Create discovery mailboxes
 
@@ -64,15 +64,15 @@ The first step is to create additional discovery mailboxes so that you can copy 
 
 1. Run the following command to create a new discovery mailbox.
 
-  ```powershell
-  New-Mailbox -Name <discovery mailbox name> -Discovery
-  ```
+   ```powershell
+   New-Mailbox -Name <discovery mailbox name> -Discovery
+   ```
 
 2. Run the following command to assign a user or group permissions to open the discovery mailbox and view search results.
 
-  ```powershell
-  Add-MailboxPermission <discovery mailbox name> -User <name of user or group> -AccessRights FullAccess -InheritanceType all
-  ```
+   ```powershell
+   Add-MailboxPermission <discovery mailbox name> -User <name of user or group> -AccessRights FullAccess -InheritanceType all
+   ```
 
 ## Step 2: Copy search results to a discovery mailbox
 
@@ -84,7 +84,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
    New-MailboxSearch -Name "Search results from 2010" -SourceMailboxes "Discovery Search Mailbox" -StartDate "01/01/2010" -EndDate "12/31/2010" -TargetMailbox "Discovery Mailbox Backup 01" -EstimateOnly -StatusMailRecipients admin@contoso.com
    ```
 
-    This example uses the following parameters:
+   This example uses the following parameters:
 
    - _Name_: This parameter specifies the name of the new eDiscovery search. Because the search is scoped by sent and received dates, it's useful that the name of the search includes the date range.
 
@@ -92,8 +92,8 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - _StartDate_ and _EndDate_: These parameters specify the date range of the search results in the default discovery mailbox to include in the search results.
 
-     > [!NOTE]
-     > For dates, use the short date format, mm/dd/yyyy, even if the Regional Options settings on the local computer are configured with a different format, such as dd/mm/yyyy. For example, use **03/01/2014** to specify March 1, 2014.
+      > [!NOTE]
+      > For dates, use the short date format, mm/dd/yyyy, even if the Regional Options settings on the local computer are configured with a different format, such as dd/mm/yyyy. For example, use **03/01/2014** to specify March 1, 2014.
 
    - _TargetMailbox_: This parameter specifies that search results should be copied to the discovery mailbox named "Discovery Mailbox Backup 01".
 
@@ -105,9 +105,9 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - **Using the Shell**: Run the following command to start the search created in the previous step. Because the _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox.
 
-   ```powershell
-   Start-MailboxSearch "Search results from 2010"
-   ```
+     ```powershell
+     Start-MailboxSearch "Search results from 2010"
+     ```
 
    - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search** ![Search icon](images/ITPro_EAC_.gif), and then click **Estimate search results**.
 
@@ -117,13 +117,13 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - **Using the Shell**: Run the following commands to copy the search results. You have to remove the _EstimateOnly_ switch before you can copy the search results.
 
-   ```powershell
-   Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-   ```
+     ```powershell
+     Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
+     ```
 
-   ```powershell
-   Start-MailboxSearch "Search results from 2010"
-   ```
+     ```powershell
+     Start-MailboxSearch "Search results from 2010"
+     ```
 
    - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search** ![Search icon](images/ITPro_EAC_.gif), and then click **Copy search results**.
 

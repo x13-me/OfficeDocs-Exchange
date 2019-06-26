@@ -22,7 +22,6 @@ manager: dansimp
 The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
 
 ## Change the branding of Clutter notifications
-<a name="Clutter"> </a>
 
 This article describes how to change the branding of Clutter notifications to match that of your school, business, or organization.
 
@@ -45,22 +44,21 @@ To begin, you will need to sign in to Office 365 with your work or school accoun
 
 7. Select the user you just created, and then click the pencil icon to edit the account, as shown in the following example.
 
-    ![Picture of the Exchange admin center when creating your branding mailbox for Clutter.](../../media/98be1aee-ae96-4406-bf47-91336c62b5c7.png)
+   ![Picture of the Exchange admin center when creating your branding mailbox for Clutter.](../../media/98be1aee-ae96-4406-bf47-91336c62b5c7.png)
 
 8. In the user account dialog, click **Email address**, and then click the plus sign [ **+**] to add an email address to the new user account.
 
-    ![Picture of the user dialog box, which is used to add a new email address to the user account.](../../media/1bfb758a-c1a5-4314-aa0f-f34655bb501f.png)
+   ![Picture of the user dialog box, which is used to add a new email address to the user account.](../../media/1bfb758a-c1a5-4314-aa0f-f34655bb501f.png)
 
 9. In the **new email address** dialog, select SMTP as the email address type, and then, in the **Email address** box, type the following: **7a694ec2-b7c9-41eb-b562-08fd2b277ae0@[your default domain]**, where [your default domain] is the domain that your organization uses. For most organizations, this would be **[your domain name].onmicrosoft.com**.
 
-    When finished, click **OK**.
+   When finished, click **OK**.
 
-    ![Picture of the new email address dialog, with the email address you need to enter to rebrand Clutter notifications.](../../media/28371e1f-964a-4ed9-8e75-4145c58adb2f.png)
+   ![Picture of the new email address dialog, with the email address you need to enter to rebrand Clutter notifications.](../../media/28371e1f-964a-4ed9-8e75-4145c58adb2f.png)
 
 10. Back in the user account dialog, click **save** to associate the new email address with the user account. All Clutter notifications sent to end users in your organization will now originate from this account.
 
 ## Change the branding of Clutter notifications using PowerShell
-<a name="PowerShell"> </a>
 
 You can also create a new shared mailbox as the branding mailbox using PowerShell. Follow these steps.
 
@@ -68,8 +66,7 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
 
 2. Type the following commands:
 
-  ```
-  New-Mailbox -Shared -Name branding@contoso.com -DisplayName "Branding Clutter Mailbox" -Alias branding
-  Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
-
-  ```
+   ```
+   New-Mailbox -Shared -Name branding@contoso.com -DisplayName "Branding Clutter Mailbox" -Alias branding
+   Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
+   ```
