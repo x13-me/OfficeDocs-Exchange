@@ -42,15 +42,15 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 2. On the **UM dial plan** page, click **Configure** \> **Transfer & search**, and under **Information to include for users with the same name**, select one of the following options:
 
-  - **Title**: The dial plan includes each user's title when it finds two or more users with similar names.
+   - **Title**: The dial plan includes each user's title when it finds two or more users with similar names.
 
-  - **Department**: The dial plan includes each user's department when it finds two or more users with similar names.
+   - **Department**: The dial plan includes each user's department when it finds two or more users with similar names.
 
-  - **Location**: The dial plan includes each user's location when it finds two or more users with similar names.
+   - **Location**: The dial plan includes each user's location when it finds two or more users with similar names.
 
-  - **None**: The dial plan won't include any additional information when users have similar names. Although this is the default setting, we recommend that you include one of the available options for callers. If you don't, callers won't be able to tell the difference between two or more users with similar names.
+   - **None**: The dial plan won't include any additional information when users have similar names. Although this is the default setting, we recommend that you include one of the available options for callers. If you don't, callers won't be able to tell the difference between two or more users with similar names.
 
-  - **Prompt For alias**: The dial plan prompts the caller for the user's alias. An alias is the part of the user's email or SMTP address that is before the at (@) symbol.
+   - **Prompt For alias**: The dial plan prompts the caller for the user's alias. An alias is the part of the user's email or SMTP address that is before the at (@) symbol.
 
 3. Click **Save**.
 

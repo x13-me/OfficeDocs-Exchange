@@ -43,21 +43,21 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 4. On the **UM dial plan** page \> **Dial codes**, configure the following options:
 
-  - **Outside line access code**
+   - **Outside line access code**
 
-  - **International access code**
+   - **International access code**
 
-  - **National number prefix**
+   - **National number prefix**
 
-  - **Country/Region code**
+   - **Country/Region code**
 
 5. Under **Number formats for dialing between dial plans**, configure the following:
 
-  - **Country/Region number format**
+   - **Country/Region number format**
 
-  - **International number format**
+   - **International number format**
 
-  - **Number formats for incoming calls within the same dial plan**: To add a number format, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+   - **Number formats for incoming calls within the same dial plan**: To add a number format, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
 6. Click **Save** to save your changes.
 

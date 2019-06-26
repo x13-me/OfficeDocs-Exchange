@@ -37,13 +37,13 @@ You can use the EAC or the Shell to enable or disable Microsoft Exchange ActiveS
 
 4. Under **Mobile Devices**, do one of the following:
 
-  - To disable Exchange ActiveSync click **Disable Exchange ActiveSync**.
+   - To disable Exchange ActiveSync click **Disable Exchange ActiveSync**.
 
-    A warning appears asking if you're sure you want to disable Exchange ActiveSync. Click **Yes**.
+     A warning appears asking if you're sure you want to disable Exchange ActiveSync. Click **Yes**.
 
-  - To enable Exchange ActiveSync, click **Enable Exchange ActiveSync**.
+   - To enable Exchange ActiveSync, click **Enable Exchange ActiveSync**.
 
-5.  Click **Save** to save your change.
+5. Click **Save** to save your change.
 
 > [!NOTE]
 > You can enable and disable Exchange ActiveSync for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes-exchange-2013-help.md).

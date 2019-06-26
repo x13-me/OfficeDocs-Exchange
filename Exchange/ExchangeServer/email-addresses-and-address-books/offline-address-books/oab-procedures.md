@@ -190,15 +190,15 @@ This example modifies the OAB named Default Offline Address Book to allow any vi
 
 1. Run the following command:
 
-  ```
-  Set-OfflineAddressBook -Identity "Default Offline Address Book" -VirtualDirectories $null
-  ```
+   ```
+   Set-OfflineAddressBook -Identity "Default Offline Address Book" -VirtualDirectories $null
+   ```
 
 2. Run the following command:
 
-  ```
-  Set-OfflineAddressBook -Identity "Default Offline Address Book" -GlobalWebDistributionEnabled $true
-  ```
+   ```
+   Set-OfflineAddressBook -Identity "Default Offline Address Book" -GlobalWebDistributionEnabled $true
+   ```
 
 ### Use the Exchange Management Shell to enable shadow distribution for offline address books
 
