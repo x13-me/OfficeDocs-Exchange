@@ -42,23 +42,23 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 3. Complete the following boxes on the **New mail contact** page:
 
-  - **First name**: Use this box to type the contact's first name.
+   - **First name**: Use this box to type the contact's first name.
 
-  - **Initials**: Use this box to type the contact's initials.
+   - **Initials**: Use this box to type the contact's initials.
 
-  - **Last name**: Use this box to type the contact's last name.
+   - **Last name**: Use this box to type the contact's last name.
 
-  - **\* Display name**: Use this box to type a display name for the contact. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - **\* Display name**: Use this box to type a display name for the contact. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
 
-  - **\* Name**: Use this box to type a name for the contact. This is the name that's listed in the directory service. Like the display name, this box is populated by default with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - **\* Name**: Use this box to type a name for the contact. This is the name that's listed in the directory service. Like the display name, this box is populated by default with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
 
-  - **\* Alias**: Use this box to type an alias (64 characters or less) for the contact. This box is required.
+   - **\* Alias**: Use this box to type an alias (64 characters or less) for the contact. This box is required.
 
-  - **\* External email address**: Use this box to type the outside email account of the contact. This box is required. Email sent to this contact is forwarded to this email address.
+   - **\* External email address**: Use this box to type the outside email account of the contact. This box is required. Email sent to this contact is forwarded to this email address.
 
-  - **Organizational unit**: You can select an organizational unit (OU) other than the default, which is the recipient scope. If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default, which is the recipient scope. If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
-    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
+     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
 4. When you've finished, click **Save**.
 
@@ -221,8 +221,8 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 2. In the list of contacts, select two or more mail contacts. You can't bulk edit a combination of mail contacts and mail users.
 
-    > [!TIP]
-    > You can select multiple adjacent mail contacts by holding down the Shift key and clicking the first mail contact, and then clicking the last mail contact you want to edit. You can also select multiple mail contacts by holding down the Ctrl key and clicking each one that you want to edit.
+   > [!TIP]
+   > You can select multiple adjacent mail contacts by holding down the Shift key and clicking the first mail contact, and then clicking the last mail contact you want to edit. You can also select multiple mail contacts by holding down the Ctrl key and clicking each one that you want to edit.
 
 3. In the Details pane, under **Bulk Edit**, click **Update** under **Contact Information** or **Organization**.
 

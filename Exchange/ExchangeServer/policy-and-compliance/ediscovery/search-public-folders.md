@@ -37,30 +37,30 @@ You can use In-Place eDiscovery to search for content in public folders and plac
 
 4. On the **Mailboxes and Public folders** page, under **Public folders**, click **Search all public folders**. Additionally, you can configure whether to include mailboxes in the search:
 
-  - To exclude mailboxes from the search, click **Don't search any mailboxes**.
+   - To exclude mailboxes from the search, click **Don't search any mailboxes**.
 
-  - To include specific mailboxes in the search, click **Specify mailboxes to search**, and then add that mailboxes that you want to search.
+   - To include specific mailboxes in the search, click **Specify mailboxes to search**, and then add that mailboxes that you want to search.
 
-    > [!NOTE]
-    > As previously explained, if you select the **Search all mailboxes**option, you won't be able to enable an In-Place Hold for the search.
+     > [!NOTE]
+     > As previously explained, if you select the **Search all mailboxes**option, you won't be able to enable an In-Place Hold for the search.
 
-![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
+   ![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
 
 5. On the **Search query** page, complete the following fields:
 
-  - **Include all content**: Select this option to include all content in the selected sources in the search results. If you select this option, you can't specify additional search criteria.
+   - **Include all content**: Select this option to include all content in the selected sources in the search results. If you select this option, you can't specify additional search criteria.
 
-  - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types.
+   - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types.
 
 6. On the **In-Place Hold settings** page, you can select the **Place content matching the search query in selected mailboxes on hold** to place an In-Place Hold on all public folders in your organization. Leave the check box unselected to not place content on hold. If you place content on hold, select one of the following options for the hold duration:
 
-  - **Hold indefinitely**: Click this button to place items returned by the search on an indefinite hold. Items on hold will be preserved until you remove public folders from the search or remove the search.
+   - **Hold indefinitely**: Click this button to place items returned by the search on an indefinite hold. Items on hold will be preserved until you remove public folders from the search or remove the search.
 
-  - **Specify number of days to hold items relative to their received date**: Click this button to hold items in public folders for a specific period. For example, you can use this option if your organization requires that public folder content be retained for at least seven years.
+   - **Specify number of days to hold items relative to their received date**: Click this button to hold items in public folders for a specific period. For example, you can use this option if your organization requires that public folder content be retained for at least seven years.
 
 7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search or placed on hold based on the criteria you specified.
 
-    Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
+   Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
 
 ## Use the Exchange Management Shell to search and place a hold on public folders
 

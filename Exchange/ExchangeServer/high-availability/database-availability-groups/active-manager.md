@@ -40,15 +40,15 @@ When a failure occurs that prevents access to the active copy of a replicated ma
 
 4. After the ACLL process has completed, the value of the _AutoDatabaseMountDial_ for the Mailbox servers hosting copies of the database is compared with the copy queue length of the database being activated. At this point, either:
 
-  - The number of missing log files is equal to or less than the value of _AutoDatabaseMountDial_, in which case Step 5 occurs.
+   - The number of missing log files is equal to or less than the value of _AutoDatabaseMountDial_, in which case Step 5 occurs.
 
-  - The number of missing log files is greater than the value of _AutoDatabaseMountDial_, in which case Active Manager will try to activate next best available copy, if there is one.
+   - The number of missing log files is greater than the value of _AutoDatabaseMountDial_, in which case Active Manager will try to activate next best available copy, if there is one.
 
 5. The PAM issues a mount request to the Microsoft Exchange Information Store via remote procedure call (RPC). At this point, either:
 
-  - The database mounts and is made available to clients.
+   - The database mounts and is made available to clients.
 
-  - The database doesn't mount, and PAM performs steps 3 and 4 on the next best copy (if one is available).
+   - The database doesn't mount, and PAM performs steps 3 and 4 on the next best copy (if one is available).
 
 In earlier versions of Exchange, the BCS process evaluated several aspects of each database copy to determine the best copy to activate. These included:
 

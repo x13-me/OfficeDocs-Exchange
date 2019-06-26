@@ -44,9 +44,9 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 
 3. On the **UM Auto Attendant** page \> **Address book and operator access**, under **Options for searching the address book**, choose from the following options:
 
-  - **In this dial plan only**: Select this option to allow callers who connect to the UM auto attendant to locate and contact users who are in the dial plan associated with the UM auto attendant.
+   - **In this dial plan only**: Select this option to allow callers who connect to the UM auto attendant to locate and contact users who are in the dial plan associated with the UM auto attendant.
 
-  - **In the entire organization**: Select this option to allow callers who connect to the UM auto attendant to locate and contact anyone listed in the organization's address book. This includes all users who are mailbox-enabled.
+   - **In the entire organization**: Select this option to allow callers who connect to the UM auto attendant to locate and contact anyone listed in the organization's address book. This includes all users who are mailbox-enabled.
 
 4. Click **Save**.
 
