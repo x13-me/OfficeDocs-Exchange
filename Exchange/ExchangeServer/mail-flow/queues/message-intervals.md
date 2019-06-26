@@ -55,7 +55,7 @@ The automatic message retry interval settings that are available in the Exchange
 
 ### Configuration options for manual message retry
 
-When a delivery queue is in the status of Retry, you can manually force an immediate connection attempt by using Queue Viewer in the Exchange Toolbox or the **Retry-Queue** cmdlet in the Exchange Management Shell. The manual retry attempt overrides the next scheduled retry time. If the connection isn't successful, the retry interval timer is reset. The delivery queue must be in a status of Retry for this action to have any effect. For more information, see [Retry queues](queue-procedures.md#Retry).
+When a delivery queue is in the status of Retry, you can manually force an immediate connection attempt by using Queue Viewer in the Exchange Toolbox or the **Retry-Queue** cmdlet in the Exchange Management Shell. The manual retry attempt overrides the next scheduled retry time. If the connection isn't successful, the retry interval timer is reset. The delivery queue must be in a status of Retry for this action to have any effect. For more information, see [Retry queues](queue-procedures.md#retry-queues).
 
 ### Configuration options for delay DSN messages
 
@@ -84,9 +84,9 @@ Undelivered messages in delivery queues are automatically resubmitted if the del
 
 You can manually resubmit messages by using the following methods:
 
-- Resubmit a delivery queue that has the status of Retry, or resubmit the Unreachable queue. For more information, see [Resubmit queues](queue-procedures.md#Resubmit).
+- Resubmit a delivery queue that has the status of Retry, or resubmit the Unreachable queue. For more information, see [Resubmit queues](queue-procedures.md#resubmit-queues).
 
-- Resubmit messages in the poison message queue. For more information, see [Resubmit messages in the poison message queue](queue-procedures.md#PoisonResubmit).
+- Resubmit messages in the poison message queue. For more information, see [Resubmit messages in the poison message queue](queue-procedures.md#resubmit-messages-in-the-poison-message-queue).
 
 - Suspend a queue, suspend the messages in the queue, export the messages to files, and copy the files to the Replay directory on any Mailbox server or Edge Transport server. For more information, see [Export messages from queues](export-messages.md).
 

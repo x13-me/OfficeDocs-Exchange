@@ -45,12 +45,10 @@ For more information about the public folder limits in Office 365 and Exchange O
 Looking for the Exchange Server version of this topic? See [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
 
 ## Public folder architecture
-<a name="PFArch"> </a>
 
 Public folder architecture uses specially designed mailboxes to store both the public folder hierarchy and the content. The main architectural components of public folders are the public folder mailboxes.
 
 ### Public folder mailboxes
-<a name="PFMailboxes"> </a>
 
 There are two types of public folder mailboxes: the primary hierarchy mailbox and secondary hierarchy mailboxes. Both types of mailboxes can contain content:
 
@@ -65,7 +63,6 @@ There are two ways you can manage public folder mailboxes:
 - In Exchange Online PowerShell, use the **\*-Mailbox** set of cmdlets.
 
 ### Public folder hierarchy
-<a name="PFHierarchy"> </a>
 
 The public folder hierarchy contains the folders' properties and organizational information, including tree structure. Each public folder mailbox contains a copy of the public folder hierarchy. There's only one writeable copy of the hierarchy, which is in the primary public folder mailbox. For a specific folder, the hierarchy information is used to identify the following:
 
@@ -117,8 +114,8 @@ We recommend that you use batch migration instead of Outlook's PST export featur
 
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
 
-2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
+2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
 
-  ```
-  New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
-  ```
+   ```
+   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
+   ```

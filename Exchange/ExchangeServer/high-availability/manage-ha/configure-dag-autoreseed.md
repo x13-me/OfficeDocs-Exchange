@@ -254,16 +254,16 @@ To verify that you've configured AutoReseed for a DAG, do the following:
 
 1. Run the following command to verify the DAG is configured correctly.
 
-  ```
-  Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
-  ```
+   ```
+   Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+   ```
 
 2. Run the following command to verify the directory structure is configured correctly (below are the default paths; if necessary, substitute the paths for the paths you're using).
 
-  ```
-  Dir c:\ExchangeDatabases /s
-  ```
+   ```
+   Dir c:\ExchangeDatabases /s
+   ```
 
-  ```
-  Dir c:\ExchangeVolumes /s
-  ```
+   ```
+   Dir c:\ExchangeVolumes /s
+   ```

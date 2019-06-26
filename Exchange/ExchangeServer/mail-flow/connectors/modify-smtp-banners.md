@@ -72,9 +72,9 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
 
 1. Open a Telnet client on a computer that can access the Receive connector, and run the following command:
 
-  ```
-  open <Connector FQDN or IP address><TCPPort>
-  ```
+   ```
+   open <Connector FQDN or IP address><TCPPort>
+   ```
 
 2. Verify the that response contains the SMTP banner you configured.
 

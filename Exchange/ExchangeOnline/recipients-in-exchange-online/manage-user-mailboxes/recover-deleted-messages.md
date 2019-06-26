@@ -47,37 +47,9 @@ Administrators can search for and recover deleted email messages in a user's mai
 
 - This topic focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://go.microsoft.com/fwlink/p/?LinkId=722928).
 
-## (Optional) Step 1: Connect to Exchange Online using remote PowerShell
+## Step 1: Connect to Exchange Online PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
-
-1. On your local computer, open Windows PowerShell and run the following command.
-
-  ```
-  $UserCredential = Get-Credential
-  ```
-
-    In the **Windows PowerShell Credential Request** dialog box, type username and password for an Office 365 global admin account, and then click **OK**.
-
-2. Run the following command.
-
-  ```
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-  ```
-
-3. Run the following command.
-
-  ```
-  Import-PSSession $Session
-  ```
-
-4. To verify that you're connected to your Exchange Online organization, run the following command to get a list of all the mailboxes in your organization.
-
-  ```
-  Get-Mailbox
-  ```
-
-For more information or if you have problems connecting to your Exchange Online organization, see [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+For instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
 
 ## Step 2: Search for and recover missing items
 
@@ -103,7 +75,7 @@ Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -Targe
 
 For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
 
- **How do you know this worked?**
+### How do you know this worked?
 
 To verify that you have successfully searched the messages you want to recover, log on to the discovery mailbox you selected as the target mailbox and review the search results.
 
@@ -114,7 +86,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 > [!NOTE]
 > You can't use the EAC to restore recovered items.
 
-After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet. In Exchange Server, you can also use the **New-MailboxExportRequest** and **New-MailboxImportRequest** cmdlets to export the messages to or import the messages from a .pst file.
+After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet.
 
 ### Use Exchange Online PowerShell to restore messages
 
@@ -126,47 +98,9 @@ Search-Mailbox "Discovery Search Mailbox" -SearchQuery "from:'Ken Kwok' AND seat
 
 For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
 
- **How do you know this worked?**
+### How do you know this worked?
 
 To verify that you have successfully recovered messages to the user's mailbox, have the user review messages in the target folder you specified in the above command.
-
-### (Exchange Server) Use Exchange Online PowerShell to export and import messages from a .pst file
-
-In Exchange Server, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](https://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
-
-This example uses the following settings to export messages from the folder April Stewart Recovery in the Discovery Search Mailbox to a .pst file:
-
-- **Mailbox**: Discovery Search Mailbox
-
-- **Source folder**: April Stewart Recovery
-
-- **ContentFilter**: April travel plans
-
-- **PST file path** \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
-
-```
-New-MailboxExportRequest -Mailbox "Discovery Search Mailbox" -SourceRootFolder "April Stewart Recovery" -ContentFilter {Subject -eq "April travel plans"} -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
-```
-
-For detailed syntax and parameter information, see [New-MailboxExportRequest](https://technet.microsoft.com/library/1625c25a-7cc9-459c-97ea-281ac421bbce.aspx).
-
-This example uses the following settings to import messages from a .pst file to the folder Recovered By Helpdesk in April Stewart's mailbox:
-
-- **Mailbox**: April Stewart
-
-- **Target folder**: Recovered By Helpdesk
-
-- **PST file path** \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
-
-```
-New-MailboxImportRequest -Mailbox "April Stewart" -TargetRootFolder "Recovered By Helpdesk" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
-```
-
-For detailed syntax and parameter information, see [New-MailboxImportRequest](https://technet.microsoft.com/library/4ca9af1a-33fa-4d53-a765-f46a1b7f2d3a.aspx).
-
- **How do you know this worked?**
-
-To verify that you have successfully exported messages to a .pst file, use Outlook to open the .pst file and inspect its contents. To verify that you have successfully imported messages from the .pst file, have the user inspect the contents of the target folder you specified in the above command.
 
 ## More information
 

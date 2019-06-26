@@ -72,7 +72,7 @@ For more information about queues, see [Queues and messages in queues](queues.md
 
    - **Retry**: The queue's last connection attempt failed. The message is waiting for the next queue retry.
 
-   - **Suspended**: The message was suspended by the administrator. For more information, see [Suspend messages in queues](message-procedures.md#Suspend).
+   - **Suspended**: The message was suspended by the administrator. For more information, see [Suspend messages in queues](message-procedures.md#suspend-messages-in-queues).
 
    - **Size (KB)**: The size of the message rounded up to the nearest kilobyte (KB).
 
