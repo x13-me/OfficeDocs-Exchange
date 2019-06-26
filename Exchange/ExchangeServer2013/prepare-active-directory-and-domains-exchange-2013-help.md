@@ -237,7 +237,7 @@ The following table shows you the Exchange 2013 objects in Active Directory that
 <td><p></p></td>
 <td><p>Exchange 2013 CU23</p></td>
 <td><p>15312</p></td>
-<td><p>13236</p></td>
+<td><p>13237</p></td>
 <td><p>16130</p></td>
 </tr>
 </tr>
