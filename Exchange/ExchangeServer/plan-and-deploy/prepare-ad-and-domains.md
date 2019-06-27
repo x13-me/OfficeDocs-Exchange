@@ -238,6 +238,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU13|15332|13237|16217|
 |Exchange 2016 CU12|15332|13236|16215|
 |Exchange 2016 CU11|15332|13236|16214|
 |Exchange 2016 CU10|15332|13236|16213|
