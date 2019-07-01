@@ -170,6 +170,9 @@ The Intune portal enables administrators to easily deploy these settings to Outl
 
 The following steps will allow you to create an app configuration policy. After the configuration policy is created, you can assign its settings to groups of users.
 
+> [!NOTE]
+>Intune notifies the device to check in with the Intune service for policy changes. The notification times vary, including immediately up to a few hours. For more information, please see [Common questions, issues, and resolutions with device policies and profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned). 
+
 ![configuration policy settings](../../media/outlook_mobile_intune_6.PNG)
 
 > [!IMPORTANT]
