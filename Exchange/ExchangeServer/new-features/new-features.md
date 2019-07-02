@@ -235,7 +235,7 @@ When you update to Exchange 2016 Cumulative Update 1 (CU1) from Exchange 2016 RT
 
 [MAPI over HTTP](new-features.md#MAPIHTTP2013)
 
-[Document collaboration ](new-features.md#DocCollab2013)
+[Document collaboration](new-features.md#DocCollab2013)
 
 [Office 365 hybrid](new-features.md#O3652013)
 

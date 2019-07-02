@@ -46,7 +46,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 4. **General**: Use this page to view specific dial plan settings or to enable or disable features for UM-enabled users:
 
-   - **Name**: This is the name of the dial plan that was created. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>.
+   - **Name**: This is the name of the dial plan that was created. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: `" / \ [ ] : ; | = , + * ? < >`.
 
    - Although you can include spaces in a UM dial plan name, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the dial plan name can't include spaces. Therefore, if you created a dial plan with spaces in the display name, and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that dial plan and then create another dial plan that doesn't include spaces in the display name.
 
