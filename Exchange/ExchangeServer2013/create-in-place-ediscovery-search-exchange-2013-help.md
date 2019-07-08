@@ -26,7 +26,7 @@ Use [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) to search a
 
 - Exchange 2013 Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](create-a-discovery-mailbox-exchange-2013-help.md).
 
-- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange Admin Center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
+- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
 
   - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
 
@@ -49,8 +49,8 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
 4. On the **Mailboxes** page, select the mailboxes to search. You can search across all mailboxes or select specific ones to search.
 
-    > [!IMPORTANT]
-    > You can't use the **Search all mailboxes** option to place all mailboxes on hold. To create an In-Place Hold, you must select **Specify mailboxes to search**. For more details, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds-exchange-2013-help.md).
+   > [!IMPORTANT]
+   > You can't use the **Search all mailboxes** option to place all mailboxes on hold. To create an In-Place Hold, you must select **Specify mailboxes to search**. For more details, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds-exchange-2013-help.md).
 
 5. On the **Search query** page, complete the following fields:
 
@@ -120,9 +120,9 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
 
 2. In the list view, select the In-Place eDiscovery search, and then do one of the following:
 
-  - Click **Search** ![Search icon](images/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
+   - Click **Search** ![Search icon](images/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
 
-    Search Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
+     Search Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
 
   - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes that were searched are displayed.
 

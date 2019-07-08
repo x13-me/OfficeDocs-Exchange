@@ -55,7 +55,7 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 Use the following syntax in the Exchange Management Shell to specify the IM server and IM certificate thumbprint:
 
 ```
-New-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName> ]
+New-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
 ```
 
  **Notes:**

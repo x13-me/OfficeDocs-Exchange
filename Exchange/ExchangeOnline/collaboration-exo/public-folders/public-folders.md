@@ -22,7 +22,7 @@ manager: dansimp
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
 
 > [!NOTE]
-> Public folders are available in the following Outlook clients: Outlook Web App for Exchange, Outlook 2007, Outlook 2010, Outlook 2013, and Outlook for Mac.
+> Public folders are available in the following Outlook clients: Outlook on the web (formerly known as Outlook Web App), Outlook 2007 or later, and Outlook for Mac.
 
 Public folders can also be used as an archiving method for distribution groups. When you mail-enable a public folder and add it as a member of the distribution group, email sent to the group is automatically added to the public folder for later reference.
 
@@ -45,12 +45,10 @@ For more information about the public folder limits in Office 365 and Exchange O
 Looking for the Exchange Server version of this topic? See [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
 
 ## Public folder architecture
-<a name="PFArch"> </a>
 
 Public folder architecture uses specially designed mailboxes to store both the public folder hierarchy and the content. The main architectural components of public folders are the public folder mailboxes.
 
 ### Public folder mailboxes
-<a name="PFMailboxes"> </a>
 
 There are two types of public folder mailboxes: the primary hierarchy mailbox and secondary hierarchy mailboxes. Both types of mailboxes can contain content:
 
@@ -65,7 +63,6 @@ There are two ways you can manage public folder mailboxes:
 - In Exchange Online PowerShell, use the **\*-Mailbox** set of cmdlets.
 
 ### Public folder hierarchy
-<a name="PFHierarchy"> </a>
 
 The public folder hierarchy contains the folders' properties and organizational information, including tree structure. Each public folder mailbox contains a copy of the public folder hierarchy. There's only one writeable copy of the hierarchy, which is in the primary public folder mailbox. For a specific folder, the hierarchy information is used to identify the following:
 
@@ -90,18 +87,16 @@ For more information, see [Update the public folder hierarchy](update-public-fol
 Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
 ## Considerations
-<a name="Considerations"> </a>
 
 Although there are many advantages to using public folders in Office 365 and Exchange Online, there are some things to consider before implementing them in your organization:
 
-- Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can't create or delete public folders from Outlook Web App.
+- Outlook on the web is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can't create or delete public folders from Outlook on the web.
 
 - Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
 - You must use Exchange Online supported Outlook client or later to access public folders in Office 365 and Exchange Online.
 
 ## Migrating public folders to Office 365 and Exchange Online
-<a name="Considerations"> </a>
 
 When you migrate your public folders, you'll use a process called batch public folder migration. Batch public folder migration (or simply batch migration) creates a mailbox migration request for each public folder mailbox that will exist in Exchange Online. Using multiple requests means the migration will move along much faster because it's able to make more efficient use of available network bandwidth. It's also more reliable because it reduces the possibility of a single failure or bottleneck affecting the entire migration.
 
@@ -119,8 +114,8 @@ We recommend that you use batch migration instead of Outlook's PST export featur
 
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
 
-2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
+2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
 
-  ```
-  New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
-  ```
+   ```
+   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
+   ```

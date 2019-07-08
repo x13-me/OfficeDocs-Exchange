@@ -20,15 +20,15 @@ This topic shows you how to enable, disable, view, and change the priority of cm
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: less than 5 minutes
+- Estimated time to complete each procedure: less than 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Cmdlet extension agents" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Cmdlet extension agents" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - Before you enable the `Scripting Agent`, you must verify that it's configured correctly. For more information about the `Scripting Agent`, see [Cmdlet extension agents](cmdlet-extension-agents-exchange-2013-help.md).
+- Before you enable the `Scripting Agent`, you must verify that it's configured correctly. For more information about the `Scripting Agent`, see [Cmdlet extension agents](cmdlet-extension-agents-exchange-2013-help.md).
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -67,9 +67,9 @@ For detailed syntax and parameter information, see [Disable-CmdletExtensionAgent
 
 Viewing cmdlet extension agents enables you to see which agents are run first and which agents are enabled in an Exchange 2013 organization. For more information about pipelining and the **Format-Table** cmdlet, see the following topics:
 
-  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+- [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
 
-  - [Working with command output](working-with-command-output-exchange-2013-help.md)
+- [Working with command output](working-with-command-output-exchange-2013-help.md)
 
 This example gets the details of a specific cmdlet extension agent by using the **Get-CmdletExtensionAgent** cmdlet. In this example, the details of the `Mailbox Permissions Agent` are returned.
 

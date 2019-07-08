@@ -156,9 +156,9 @@ To verify that you have successfully created address rewrite entries, do the fol
 
 1. Replace _\<AddressRewriteEntryIdentity\>_ with the name of the address rewrite entry, and run the following command to verify the property values:
 
-  ```
-  Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
-  ```
+   ```
+   Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+   ```
 
 2. From a mailbox that's affected by the address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
 
@@ -242,9 +242,9 @@ To verify that you have successfully modified an address rewrite entry, do the f
 
 1. Replace _\<AddressRewriteEntryIdentity\>_ with the name of the address rewrite entry, and run the following command to verify the property values:
 
-  ```
-  Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
-  ```
+   ```
+   Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+   ```
 
 2. From a mailbox that's affected by the address rewrite entry, send a test message to an external mailbox. Verify the test message appears to originate from the rewritten email address.
 

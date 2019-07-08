@@ -49,9 +49,9 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 
 4. Under **Message Size Restrictions**, click **View details** to view and change the following message size limits:
 
-  - **Sent messages**: To set a maximum size for messages sent by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user sends a message larger than the specified size, the message will be returned to the user with a descriptive error message.
+   - **Sent messages**: To set a maximum size for messages sent by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user sends a message larger than the specified size, the message will be returned to the user with a descriptive error message.
 
-  - **Received messages**: To set a maximum size for messages received by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user receives a message larger than the specified size, the message will be returned to the sender with a descriptive error message.
+   - **Received messages**: To set a maximum size for messages received by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user receives a message larger than the specified size, the message will be returned to the sender with a descriptive error message.
 
 5. Click **OK**, and then click **Save** to save your changes.
 

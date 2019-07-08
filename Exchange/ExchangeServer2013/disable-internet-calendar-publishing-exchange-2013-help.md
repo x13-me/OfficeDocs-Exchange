@@ -29,36 +29,34 @@ To learn more about Internet calendar publishing and sharing policies, see [Shar
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 15 minutes.
+- Estimated time to complete this task: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Use the EAC or the Shell to disable or delete the sharing policy for Internet calendar publishing
 
-## Use the EAC
+### Use the EAC
 
 1. Navigate to **Organization** \> **Sharing**.
 
 2. In the list view, under **Individual Sharing**, perform one of the following steps:
 
-      - If you created a sharing policy specifically for Internet calendar publishing, select that policy, and then either clear the check box in the **On** column to disable the sharing policy or click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to delete it.
+   - If you created a sharing policy specifically for Internet calendar publishing, select that policy, and then either clear the check box in the **On** column to disable the sharing policy or click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to delete it.
 
-      - If you configured Internet calendar publishing as a sharing rule in the default sharing policy, perform the following steps:
+   - If you configured Internet calendar publishing as a sharing rule in the default sharing policy, perform the following steps:
 
-        1. Select the default sharing policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+     1. Select the default sharing policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-        2. In **sharing policy**, select the **Anonymous** sharing rule, and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the sharing rule.
+     2. In **sharing policy**, select the **Anonymous** sharing rule, and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the sharing rule.
 
-        3. Click **Save**.
+     3. Click **Save**.
 
-## Use the Shell
+### Use the Shell
 
 This example disables a dedicated Internet calendar publishing sharing policy named **Internet**.
 
@@ -74,7 +72,7 @@ Remove-SharingPolicy -Identity "Internet"
 
 For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/en-us/library/dd297931\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully removed or updated the sharing policy, run the following Shell command and verify the sharing policy information.
 
@@ -104,7 +102,7 @@ Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully disabled the Anonymous features for the Outlook Web App virtual directory on the Client Access server, run the following Shell command and verify that the *AnonymousFeaturesEnabled* parameter is `$false`.
 

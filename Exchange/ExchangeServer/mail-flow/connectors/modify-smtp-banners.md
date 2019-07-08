@@ -17,7 +17,7 @@ manager: dansimp
 
 # Modify the SMTP banner on Receive connectors
 
-The *SMTP banner* is the initial SMTP connection response that a messaging server receives after it connects to an Exchange server. Specifically, the messaging server connects to a Receive connector that's configured on the Exchange server. For Exchange Mailbox servers, external messaging servers connect through Receive connectors that are configured in the Front End Transport service. The default Receive connector that's configured to accept anonymous SMTP connections is named Default Frontend _\<ServerName\>_. For Edge Transport servers, the default Receive connector in the Transport service named Default internal receive connector _\<ServerName\>_\> is configured to accept anonymous SMTP connections. For more information, see [How messages from external senders enter the transport pipeline](../../mail-flow/mail-flow.md#Inbound) and [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
+The *SMTP banner* is the initial SMTP connection response that a messaging server receives after it connects to an Exchange server. Specifically, the messaging server connects to a Receive connector that's configured on the Exchange server. For Exchange Mailbox servers, external messaging servers connect through Receive connectors that are configured in the Front End Transport service. The default Receive connector that's configured to accept anonymous SMTP connections is named Default Frontend _\<ServerName\>_. For Edge Transport servers, the default Receive connector in the Transport service named Default internal receive connector _\<ServerName\>_\> is configured to accept anonymous SMTP connections. For more information, see [How messages from external senders enter the transport pipeline](../mail-flow.md#how-messages-from-external-senders-enter-the-transport-pipeline) and [Default Receive connectors created during setup](receive-connectors.md#default-receive-connectors-created-during-setup).
 
 By default, the connection response looks like this:
 
@@ -72,9 +72,9 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
 
 1. Open a Telnet client on a computer that can access the Receive connector, and run the following command:
 
-  ```
-  open <Connector FQDN or IP address><TCPPort>
-  ```
+   ```
+   open <Connector FQDN or IP address><TCPPort>
+   ```
 
 2. Verify the that response contains the SMTP banner you configured.
 

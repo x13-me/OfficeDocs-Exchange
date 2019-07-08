@@ -19,7 +19,7 @@ manager: dansimp
 
 Microsoft Exchange Unified Messaging (UM) includes a feature called Voice Mail Preview, which uses automatic speech recognition (ASR) to add a text version of the voice mail audio file to voice mail messages. ASR isn't entirely accurate, especially when it's used to record audio over a phone that contains unknown voices and noises. Some organizations require consistently error-free (or near-error-free) transcripts of voice messages. The Voice Mail Preview Partner program can help such organizations meet those requirements.
 
-Voice Mail Preview uses Microsoft speech technologies to provide a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 or later versions, and other email programs.
+Voice Mail Preview uses Microsoft speech technologies to provide a text version of audio recordings. The voice mail text is displayed in email messages within Outlook on the web (formerly known as Outlook Web App), Outlook 2010 or later versions, and other email programs.
 
 By default, when you enable a user for UM in an on-premises or hybrid deployment, voice mail previews will be sent if a supported UM language pack is installed. When you enable a user for UM in Exchange Online, all the UM language packs are installed. However, Voice Mail Preview isn't supported in all languages that are installed.
 
@@ -60,7 +60,7 @@ If you've already deployed Unified Messaging in your organization and you're loo
 
 ## Configuring Voice Mail Preview partners
 
-After UM has been configured, it forwards voice messages with the audio to a dedicated Voice Mail Preview partner, which then takes the audio file and creates the voice mail preview text. However, to allow users to receive the voice mail preview with their voice message in their mailbox, you must configure a UM mailbox policy, associate users with the UM mailbox policy, and then have the users verify that they can receive voice mail previews in their voice messages in Outlook 2010 or a later version or Outlook Web App. For more information about how to configure UM for a Voice Mail Preview partner, see [Configure Voice Mail Preview partner services for users](configure-voice-mail-preview-partner-services.md).
+After UM has been configured, it forwards voice messages with the audio to a dedicated Voice Mail Preview partner, which then takes the audio file and creates the voice mail preview text. However, to allow users to receive the voice mail preview with their voice message in their mailbox, you must configure a UM mailbox policy, associate users with the UM mailbox policy, and then have the users verify that they can receive voice mail previews in their voice messages in Outlook 2010 or a later version or Outlook on the web. For more information about how to configure UM for a Voice Mail Preview partner, see [Configure Voice Mail Preview partner services for users](configure-voice-mail-preview-partner-services.md).
 
 ## VoIP or media gateways and IP PBX support
 

@@ -60,11 +60,11 @@ These are the types of certificate files that you can import on an Exchange serv
 
 3. The **Import Exchange certificate** wizard opens. On the **This wizard will import a certificate from a file** page, enter the following information:
 
-  - **File to import from**: Enter the UNC path and filename of the certificate file. For example, `\\FileServer01\Data\Fabrikam.cer`
+   - **File to import from**: Enter the UNC path and filename of the certificate file. For example, `\\FileServer01\Data\Fabrikam.cer`
 
-  - **Password**: If the certificate file contains the private key or chain of trust, the file is protected by a password. Enter the password here.
+   - **Password**: If the certificate file contains the private key or chain of trust, the file is protected by a password. Enter the password here.
 
-    When you're finished, click **Next**.
+   When you're finished, click **Next**.
 
 4. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png)
 

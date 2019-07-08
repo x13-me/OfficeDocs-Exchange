@@ -31,7 +31,7 @@ There are two types of roles, administrative roles and end-user roles:
 
 - **End-user roles**: These roles, assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
 
-Roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange Administration Center (EAC) and Exchange Management Shell use cmdlets to manage Exchange, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange management interfaces.
+Roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Management Shell use cmdlets to manage Exchange, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange management interfaces.
 
 Exchange 2013 includes approximately 86 roles that you can use to grant permissions. For a list of roles included with Exchange 2013, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
@@ -162,7 +162,7 @@ The Default Role Assignment Policy role assignment policy is included with Excha
 
 ## Work with role groups
 
-To manage your permissions using role groups in Exchange 2013, we recommend that you use the Exchange Administration Center. When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **new role group** dialog box, shown in the following figure, to perform these tasks.
+To manage your permissions using role groups in Exchange 2013, we recommend that you use the Exchange admin center. When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **new role group** dialog box, shown in the following figure, to perform these tasks.
 
 **New role group dialog box in the EAC**
 

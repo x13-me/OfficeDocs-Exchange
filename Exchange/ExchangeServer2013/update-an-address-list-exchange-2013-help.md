@@ -24,11 +24,11 @@ For additional management tasks related to address lists, see [Address list proc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: This process may take a long time to finish depending on the number of recipients in the address list.
+- Estimated time to complete: This process may take a long time to finish depending on the number of recipients in the address list.
 
-  - Some address lists contain thousands or tens of thousands of recipients depending on the size of your organization and the filters that you added to the address list. Updating address lists can take up a lot of computer resources. So, you may want to update the address list during off-peak hours.
+- Some address lists contain thousands or tens of thousands of recipients depending on the size of your organization and the filters that you added to the address list. Updating address lists can take up a lot of computer resources. So, you may want to update the address list during off-peak hours.
 
-  - If the address list contains more than 3,000 recipients, we recommend that you use the Exchange Management Shell to update the address list.
+- If the address list contains more than 3,000 recipients, we recommend that you use the Exchange Management Shell to update the address list.
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

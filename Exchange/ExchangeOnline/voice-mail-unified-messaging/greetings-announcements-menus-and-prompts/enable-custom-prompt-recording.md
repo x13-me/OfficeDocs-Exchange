@@ -48,21 +48,21 @@ To record custom prompts and greetings by using the telephone user interface (TU
 
 4. Enable the domain user's mailbox for Unified Messaging.
 
-    > [!IMPORTANT]
-    > Allow only those administrators who are managing prompts and greetings access to the extension number and PIN for the user account. Use this user account only for managing prompts over the telephone.
+   > [!IMPORTANT]
+   > Allow only those administrators who are managing prompts and greetings access to the extension number and PIN for the user account. Use this user account only for managing prompts over the telephone.
 
 5. Create and save a .wav or .wma file to use for a custom greeting for the UM dial plan or auto attendant.
 
-    > [!NOTE]
-    > MP3 files can't be used for custom prompts.
+   > [!NOTE]
+   > MP3 files can't be used for custom prompts.
 
 6. Use the EAC or Exchange Online PowerShell to configure the dial plan to use the custom welcome greeting or configure the auto attendant to use the business or non-business hours greeting. For details about configuring a dial plan, see [Enable a customized greeting for Outlook Voice Access users](../../voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-customized-greeting.md). For details about configuring an auto attendant, see [Enable a customized business hours greeting](../../voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-greeting.md) or [Enable a customized non-business hours greeting](../../voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-greeting.md).
 
 7. Run the following cmdlet:
 
-  ```
-  Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
-  ```
+   ```
+   Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
+   ```
 
 > [!NOTE]
 > Before you can enable the recording of a custom prompt or greeting, you must sign in to the mailbox that's set up for recording prompts. After you record the new prompt or greeting, you must sign out and then sign back in before you can hear the new prompt or greeting when you use the TUI.

@@ -238,7 +238,7 @@ In summary, using a single DID number requires the user to perform additional ac
 
 ## Multiple DID telephone numbers
 
-When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange Administration Center (EAC). For more information, see [Add an extension number](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
+When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange admin center (EAC). For more information, see [Add an extension number](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
 
 Adding multiple extension numbers is useful when a UM-enabled user:
 

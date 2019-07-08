@@ -28,7 +28,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
-- You can't use the Exchange Administration Center (EAC) to place a mailbox on retention hold. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to place a mailbox on retention hold. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

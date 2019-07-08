@@ -29,7 +29,7 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online.
 
 Users can use any email programs that support POP3 and IMAP4 to connect to Exchange Online. These programs include Outlook, Microsoft Outlook Express, Entourage, and many third-party programs, such as Mozilla Thunderbird and Eudora. The features supported by each email client programs vary. For information about features offered by specific POP3 and IMAP4 client programs, see the documentation that's included with each application.
 
-POP3 and IMAP4 provide access to the basic email features of Exchange Online and allow for offline email access, but don't offer rich email, calendaring, and contact management, or other features that are available when users connect with Outlook, Exchange ActiveSync, Outlook Web App, or Outlook Voice Access.
+POP3 and IMAP4 provide access to the basic email features of Exchange Online and allow for offline email access, but don't offer rich email, calendaring, and contact management, or other features that are available when users connect with Outlook, Exchange ActiveSync, Outlook on the web (formerly known as Outlook Web App), or Outlook Voice Access.
 
 > [!NOTE]
 > Each time a person accesses a POP-based or IMAP-based email program to open his or her Office 365 email, that user will experience a delay of several seconds. The delay results from using a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (client access server) and then authenticates against that.

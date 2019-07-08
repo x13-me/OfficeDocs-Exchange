@@ -81,7 +81,7 @@ To communicate the migration to the end users in your organization:
 
 2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
-3. Make users aware of how to connect to Outlook Web App with their new sign on information in case they have a problem after migration.
+3. Make users aware of how to connect to Outlook on the web (formerly known as Outlook Web App) with their new sign on information in case they have a problem after migration.
 
 ### Preparation and pre-migration activities: Three days before you migrate
 
@@ -93,10 +93,10 @@ To prepare the domain for migration, complete the following steps.
 
 2. In the contoso.com Microsoft 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
 
-    > [!NOTE]
-    > The verification will fail because the domain is still in use in the other tenant.
+   > [!NOTE]
+   > The verification will fail because the domain is still in use in the other tenant.
 
-    Performing this step now will allow the DNS record time to propagate as it can take up to 72 hours. Final validation will occur later in the process.
+   Performing this step now will allow the DNS record time to propagate as it can take up to 72 hours. Final validation will occur later in the process.
 
 #### Migration scheduling
 
@@ -205,9 +205,9 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
 
 3. Use the Windows PowerShell command:
 
-  ```Powershell
-  Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
-  ```
+   ```Powershell
+   Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
+   ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 

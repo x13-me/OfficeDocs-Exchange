@@ -47,13 +47,13 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 4. In **Settings**, under **Secondary way to search for names**, use the drop-down list to select the option you want:
 
-  - **Last first** (default)
+   - **Last first** (default)
 
-  - **First last**
+   - **First last**
 
-  - **SMTP address**
+   - **SMTP address**
 
-  - **None**
+   - **None**
 
 5. Click **Save**.
 

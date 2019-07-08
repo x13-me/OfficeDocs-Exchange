@@ -37,7 +37,7 @@ Normally, when Exchange is installed, the people installing it need to be member
 
   - The Active Directory computer account for the server is added to the Exchange Servers group.
 
-  - The server is added as a provisioned server in the Exchange Admin Center.
+  - The server is added as a provisioned server in the Exchange admin center.
 
 In large companies, the people who install and set up new servers often aren't Exchange administrators. To enable them to install Exchange, an Exchange administrator can *provision* the server in Active Directory. When a server is provisioned, all of the changes needed for the new Exchange server to function are made to Active Directory separately from the actual installation of Exchange on a computer. An Exchange administrator can provision a new server in Active Directory hours or even days before Exchange is installed on the new computer. After a server has been provisioned, the person doing the installation needs only to be a member of the [Delegated Setup](delegated-setup-exchange-2013-help.md) role group to install Exchange. The Delegated Setup role group only allows members to install provisioned servers.
 

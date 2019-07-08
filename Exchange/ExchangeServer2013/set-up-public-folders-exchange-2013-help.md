@@ -32,19 +32,17 @@ This topic shows you how to get public folders configured and running in a new o
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-## How do you do this?
-
-### Step 1: Create the primary public folder mailbox
+## Step 1: Create the primary public folder mailbox
 
 The primary public folder mailbox contains a writeable copy of the public folder hierarchy plus content and is the first public folder mailbox that you create for your organization. Subsequent public folder mailboxes will be secondary public folder mailboxes, which will contain a read-only copy of the hierarchy plus content.
 
 For detailed steps, see [Create a public folder mailbox](create-public-folder-mailbox-exchange-2013-help.md).
 
-### Step 2: Create your first public folder
+## Step 2: Create your first public folder
 
 For detailed steps, see [Create a public folder](create-public-folder-exchange-2013-help.md).
 
-### Step 3: Assign permissions to the public folder
+## Step 3: Assign permissions to the public folder
 
 After you create the public folder, you'll need to assign the **Owner** permissions level so that at least one user can access the public folder from the client and create subfolders. Any public folders created after this one will inherit the permissions of the parent public folder.
 
@@ -66,7 +64,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 For information about how to use the Shell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](http://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).
 
-### Step 4 (Optional): Mail-enable the public folder
+## Step 4 (Optional): Mail-enable the public folder
 
 If you want users to send mail to the public folder, you can mail-enable it. This step is optional. If you don't mail-enable the public folder, users can post messages to the public folder by dragging items into it from within Outlook.
 

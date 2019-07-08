@@ -37,11 +37,11 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes.
+- Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Availability Service Permissions" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Availability Service Permissions" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -51,8 +51,7 @@ To enable GAL synchronization, you create management agents that import mail-ena
 This example configures the Availability service to retrieve per-user free/busy information on a Mailbox server in the target forest.
 
 ```powershell
-Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
 ```
 
 This example defines the free/busy access method that the Availability service uses on the local Mailbox server in the source forest. The local Mailbox server is configured to access free/busy information from the forest ContosoForest.com on a per-user basis. This example uses the service account to retrieve free/busy information.
@@ -74,13 +73,13 @@ Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright 
 
 For detailed information about syntax and parameters, see the following topics:
 
-  - [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\))
+- [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\))
 
-  - [Add-ADPermission](https://technet.microsoft.com/en-us/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://technet.microsoft.com/en-us/library/bb124403\(v=exchg.150\))
 
-  - [Add-AvailabilityAddressSpace](https://technet.microsoft.com/en-us/library/bb124122\(v=exchg.150\))
+- [Add-AvailabilityAddressSpace](https://technet.microsoft.com/en-us/library/bb124122\(v=exchg.150\))
 
-  - [Set-AvailabilityConfig](https://technet.microsoft.com/en-us/library/bb124103\(v=exchg.150\))
+- [Set-AvailabilityConfig](https://technet.microsoft.com/en-us/library/bb124103\(v=exchg.150\))
 
 ## Use the Shell to configure organization-wide free/busy information in an untrusted cross-forest topology
 

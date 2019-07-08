@@ -157,14 +157,14 @@ For more information about configuring a multi-site VPN, see [Configure a Multi-
 
 When creating your virtual gateway, note that you already specified that it will be connected to your first on-premises site. When you go into the virtual network dashboard, you will see that the gateway has not been created.
 
-To establish the VPN gateway on the Azure side, follow the instructions in the [Start the virtual network gateway](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx#bkmk_startgateway) section of [Configure a Virtual Network Gateway in the Management Portal](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx).
+To establish the VPN gateway on the Azure side, follow the instructions in the [Start the virtual network gateway](https://msdn.microsoft.com/library/azure/jj156210.aspx#bkmk_startgateway) section of [Configure a Virtual Network Gateway in the Management Portal](https://msdn.microsoft.com/library/azure/jj156210.aspx).
 
 > [!IMPORTANT]
 > Only perform the steps in the "Start the virtual network gateway" section of the article, and do not continue to the subsequent sections.
 
 ## Export virtual network configuration settings
 
-The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://msdn.microsoft.com/en-us/library/azure/dn133804.aspx) to export your settings.
+The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://msdn.microsoft.com/library/azure/dn133804.aspx) to export your settings.
 
 ## Modify the network configuration settings for the multi-site VPN
 

@@ -34,9 +34,9 @@ The voice mail features found in UM offer benefits for both users and administra
 ### Features for users
 <a name="enduser"> </a>
 
-When you configure UM for your organization, users can access voice mail, email, personal Contacts and calendar information that's located in their mailbox from an email client, for example, Microsoft Outlook or Outlook Web App, from a mobile phone with Microsoft Exchange ActiveSync set up, such as a Windows Phone, or from a telephone. Additionally, users can use the following features:
+When you configure UM for your organization, users can access voice mail, email, personal Contacts and calendar information that's located in their mailbox from an email client, for example, Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), from a mobile phone with Microsoft Exchange ActiveSync set up, such as a Windows Phone, or from a telephone. Additionally, users can use the following features:
 
-- **Access to their Exchange mailbox**: Users can access a full set of voice mail features from internet-capable mobile phones, Outlook 2007 or later versions, and Outlook Web App. These features include many voice mail configuration options and the ability to play a voice message from either the reading pane, using an integrated Windows Media Player, or the message list, using computer speakers.
+- **Access to their Exchange mailbox**: Users can access a full set of voice mail features from internet-capable mobile phones, Outlook 2007 or later versions, and Outlook on the web. These features include many voice mail configuration options and the ability to play a voice message from either the reading pane, using an integrated Windows Media Player, or the message list, using computer speakers.
 
 - **Play on Phone**: The Play on Phone feature lets users play voice messages over a telephone. If the user works in an office cubicle, is using a public computer or a computer that isn't enabled for multimedia, or is listening to a voice message that's confidential, they might not want to or be able to listen to a voice message through computer speakers. They can play the voice message using any telephone, including a home, office, or mobile telephone.
 
@@ -44,7 +44,7 @@ When you configure UM for your organization, users can access voice mail, email,
 
     The voice mail form includes the embedded Windows Media Player and an Audio notes field. The embedded Windows Media Player and notes field are displayed either in the reading pane when users preview a voice message or in a separate window when they open the voice message. If users aren't enabled for UM, or if a supported email client hasn't been installed on the client computer, they view voice messages as email attachments, and the voice mail form isn't available.
 
-- **User configuration**: Users can configure several voice mail options for UM using Outlook Web App. For example, the user can record personal greetings, configure missed call and text message notifications and a voice mail Play on Phone number, and reset a voice mail access PIN.
+- **User configuration**: Users can configure several voice mail options for UM using Outlook on the web. For example, the user can record personal greetings, configure missed call and text message notifications and a voice mail Play on Phone number, and reset a voice mail access PIN.
 
 - **Call answering**: Call answering includes answering incoming calls on behalf of users, playing their personal greetings, recording messages, and then sending the voice mail to their Inbox as an email message.
 
@@ -60,7 +60,7 @@ When you configure UM for your organization, users can access voice mail, email,
 
   - Use the Find Me feature or locate the user through a transfer from an operator.
 
-- **Voice Mail Preview**: Unified Messaging uses Automatic Speech Recognition (ASR) on newly created voice mail messages. When users receive voice messages, the messages contain both a recording and text that's been created from the voice recording. Users see the voice message text displayed in an email message from within Outlook Web App or another supported email client.
+- **Voice Mail Preview**: Unified Messaging uses Automatic Speech Recognition (ASR) on newly created voice mail messages. When users receive voice messages, the messages contain both a recording and text that's been created from the voice recording. Users see the voice message text displayed in an email message from within Outlook on the web or another supported email client.
 
 - **Message Waiting Indicator**: Message Waiting Indicator is a feature found in most legacy voice mail systems and can refer to any mechanism that indicates the existence of a new message. Enabling or disabling Message Waiting Indicator is done on the user's mailbox or on a UM mailbox policy.
 

@@ -85,7 +85,7 @@ You can set the message throttling options at the following locations:
 
 - On a Receive connector
 
-You can set all the message throttling options that are available in the Transport service on Mailbox servers, in the Mailbox Transport service on Mailbox servers, or in the Front End Transport service on Client Access servers using the Exchange Management Shell. You can also set some of the same options by configuring the transport server properties in the Exchange Administration Center (EAC).
+You can set all the message throttling options that are available in the Transport service on Mailbox servers, in the Mailbox Transport service on Mailbox servers, or in the Front End Transport service on Client Access servers using the Exchange Management Shell. You can also set some of the same options by configuring the transport server properties in the Exchange admin center (EAC).
 
 The following table shows the message throttling options that are available on transport servers.
 

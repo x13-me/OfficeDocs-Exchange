@@ -17,15 +17,15 @@ manager: dansimp
 
 # Allow users to see a voice mail transcript in Exchange Online
 
-Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs.
+Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook 2010 or later, Outlook on the web, and in other supported email programs.
 
 ## Do users need to use a specific email program?
 
-No. Voice Mail Preview is included in the message body text of any email program, including mobile programs. Although users can use other email programs to receive voice messages, Outlook and Outlook Web App provide a better experience. For example, in Outlook 2010 and later versions, when a specific word is clicked in the Voice Mail Preview text, the audio playback of the voice message will start to play at that word. This is useful for listening to a specific part of a voice message.
+No. Voice Mail Preview is included in the message body text of any email program, including mobile programs. Although users can use other email programs to receive voice messages, Outlook and Outlook on the web provide a better experience. For example, in Outlook 2010 and later versions, when a specific word is clicked in the Voice Mail Preview text, the audio playback of the voice message will start to play at that word. This is useful for listening to a specific part of a voice message.
 
 ## Can users search for specific voice mail messages?
 
-Yes. Words and phrases in the Voice Mail Preview text are automatically indexed, so voice messages will appear in search results. In Outlook 2010 and later versions or in Outlook Web App, users can also use the **Audio Notes** box to add text about a voice message. These notes are also included in searches, to make it easier to locate a message.
+Yes. Words and phrases in the Voice Mail Preview text are automatically indexed, so voice messages will appear in search results. In Outlook 2010 and later versions or in Outlook on the web, users can also use the **Audio Notes** box to add text about a voice message. These notes are also included in searches, to make it easier to locate a message.
 
 ## Why is this feature called "Voice Mail Preview"?
 
@@ -111,13 +111,13 @@ Voice Mail Preview isn't expected to dictate messages exactly, but it can help u
 
 ## Can Voice Mail Preview be turned on or off?
 
-Yes. If you've enabled Voice Mail Preview, users can turn it on or off using Outlook 2010 or a later version or Outlook Web App. However, the dial plan language must support Voice Mail Preview and the UM language pack for that language must be installed.
+Yes. If you've enabled Voice Mail Preview, users can turn it on or off using Outlook 2010 or a later version or Outlook on the web. However, the dial plan language must support Voice Mail Preview and the UM language pack for that language must be installed.
 
-Although Voice Mail Preview settings are the same whether a user is using Outlook 2010 or a later version or Outlook Web App, they'll access them differently:
+Although Voice Mail Preview settings are the same whether a user is using Outlook 2010 or a later version or Outlook on the web, they'll access them differently:
 
- **Outlook Web App**
+ **Outlook on the web**
 
-To access the Voice Mail Preview settings in Outlook Web App, users click **Settings** \> **phone** \> **Voice mail**. On the **Voice mail** page, the settings are available under **voice mail preview**.
+To access the Voice Mail Preview settings in Outlook on the web, users click **Settings** \> **phone** \> **Voice mail**. On the **Voice mail** page, the settings are available under **voice mail preview**.
 
 By default, both Voice Mail Preview options are available when a user is enabled for Unified Messaging. If the UM dial plan is configured to use a UM language pack that supports Voice Mail Preview, Unified Messaging will create voice mail previews for users when:
 

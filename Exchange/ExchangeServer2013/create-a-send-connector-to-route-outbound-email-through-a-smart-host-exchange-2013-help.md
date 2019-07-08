@@ -23,17 +23,17 @@ In some situations you may want to route email through a third-party smart host,
 
 Interested in scenarios where this procedure is used? See the following topics:
 
-  - [Configure mail flow and client access](configure-mail-flow-and-client-access-exchange-2013-help.md)
+- [Configure mail flow and client access](configure-mail-flow-and-client-access-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - See [Deploy a new installation of Exchange 2013](deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md) if you are beginning your installation. After the installation you can use the steps in this topic to create your outbound connector.
+- See [Deploy a new installation of Exchange 2013](deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md) if you are beginning your installation. After the installation you can use the steps in this topic to create your outbound connector.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -46,10 +46,10 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
 
-    For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a user name and password.
+   For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a user name and password.
 
-    > [!NOTE]
-    > If you choose Basic authentication, we recommend that you use an encrypted connection because the user name and password are sent in clear text.
+   > [!NOTE]
+   > If you choose Basic authentication, we recommend that you use an encrypted connection because the user name and password are sent in clear text.
 
 4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
 

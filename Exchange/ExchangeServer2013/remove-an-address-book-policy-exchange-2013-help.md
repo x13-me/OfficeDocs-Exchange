@@ -36,7 +36,7 @@ Use this procedure to remove an address book policy (ABP).
 
 - To remove an ABP from a user's mailbox, you can use the **Mailbox features** page of the mailbox's properties or the **Set-Mailbox** cmdlet.
 
-- You can't use the Exchange Administration Center (EAC) to remove an ABP. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to remove an ABP. You must use the Shell.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

@@ -36,7 +36,7 @@ The Availability service retrieves free/busy information directly from the targe
 
 Outlook uses the Exchange Autodiscover service to obtain the URL of the Availability service. For more information about the Autodiscover service, see [Autodiscover service](autodiscover-service-for-exchange-2013.md).
 
-You can use the Exchange Management Shell to configure the Availability service. You can't use the Exchange Administration Center (EAC) to configure the Availability service.
+You can use the Exchange Management Shell to configure the Availability service. You can't use the Exchange admin center (EAC) to configure the Availability service.
 
 ## Information about away status
 

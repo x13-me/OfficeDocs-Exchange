@@ -56,7 +56,7 @@ Read more about the server role changes in Exchange Server in the topic, [Exchan
 
 Although not required, the Edge Transport server sits in the perimeter network , just as in earlier Exchange versions, to provide secure inbound and outbound mail flow for your Exchange organization.
 
-Read more about the transport service in the topic, [Understanding the Transport service on Edge Transport servers](../../mail-flow/mail-flow.md#EdgeTransportService).
+Read more about the transport service in the topic, [Understanding the Transport service on Edge Transport servers](../../mail-flow/mail-flow.md#understanding-the-transport-service-on-edge-transport-servers).
 
 ## Protocols in Exchange Server
 
