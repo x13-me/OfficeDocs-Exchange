@@ -121,12 +121,13 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Update Rollup 28 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58354)|June 7, 2019|14.3.461.1|14.03.0461.001|
 |[Update Rollup 27 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58196)|April 9, 2019|14.3.452.0|14.03.0452.000|
 |[Update Rollup 26 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57824)|February 12, 2019|14.3.442.0|14.03.0442.000|
 |[Update Rollup 25 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57759)|January 8, 2019|14.3.435.0|14.03.0435.000|
 |[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|September 5, 2018|14.3.419.0|14.03.0419.000|
 |[Update Rollup 23 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57219)|August 13, 2018|14.3.417.1|14.03.0417.001|
-|[Update Rollup 22 for Exchange Server 2010 SP3](https://go.microsoft.com/fwlink/p/?LinkId=2003010)|June 19, 2018|14.3.411.0|14.03.0411.000|
+|[Update Rollup 22 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57065)|June 19, 2018|14.3.411.0|14.03.0411.000|
 |Update Rollup 21 for Exchange Server 2010 SP3|May 7, 2018|14.3.399.2|14.03.0399.002|
 |Update Rollup 20 for Exchange Server 2010 SP3|March 5, 2018|14.3.389.1|14.03.0389.001|
 |Update Rollup 19 for Exchange Server 2010 SP3|December 19, 2017|14.3.382.0|14.03.0382.000|
