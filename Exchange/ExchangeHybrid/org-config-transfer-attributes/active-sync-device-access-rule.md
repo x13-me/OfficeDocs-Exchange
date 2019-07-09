@@ -21,7 +21,7 @@ The following attributes of ActiveSync device access rules are copied from an on
 
 |**ActiveSyncDeviceAccessRule**|**Available In**|
 |:-----|:-----|
-|AccessLevel|Exchange 2010, 2013, 2016|
-|Characteristic|Exchange 2010, 2013, 2016|
-|Identity|Exchange 2010, 2013, 2016|
-|QueryString|Exchange 2010, 2013, 2016|
+|AccessLevel|Exchange 2010, 2013, 2016, 2019|
+|Characteristic|Exchange 2010, 2013, 2016, 2019|
+|Identity|Exchange 2010, 2013, 2016, 2019|
+|QueryString|Exchange 2010, 2013, 2016, 2019|
