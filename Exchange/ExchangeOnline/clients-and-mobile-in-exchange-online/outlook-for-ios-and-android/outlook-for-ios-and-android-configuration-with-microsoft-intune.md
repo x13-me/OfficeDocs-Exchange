@@ -108,7 +108,7 @@ Outlook supports the following settings for configuration:
 <tr class="even">
 <td>Office Feed</td>
 <td>On</td>
-<td>The Discover capability, powered by Microsoft Graph, provides a feed of your company’s Office files connected to the people in your organization.  This feature can be found in the Search experience and will only show documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</td>
+<td>The Discover capability, powered by Microsoft Graph, provides a feed of your company’s Office files connected to the people in your organization. This feature can be found in the Search experience and will only show documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</td>
 </tr>
 </tbody>  
 </table>
