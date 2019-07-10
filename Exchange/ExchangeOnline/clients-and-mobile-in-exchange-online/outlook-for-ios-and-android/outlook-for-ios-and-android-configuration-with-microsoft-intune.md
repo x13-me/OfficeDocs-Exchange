@@ -105,7 +105,12 @@ Outlook supports the following settings for configuration:
 <td>On</td>
 <td>By default, Outlook for Android will suggest replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 </tr>
-</tbody>
+<tr class="even">
+<td>Office Feed</td>
+<td>On</td>
+<td>By default, Discover in Search will surface the user's and the user's co-workers most recently modified, emailed, and trending Office files. This functionality is disabled if Delve is disabled for the user.</td>
+</tr>
+</tbody>  
 </table>
 
 Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
@@ -224,6 +229,8 @@ The following steps will allow you to create an app configuration policy. After 
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
+    - For **Office Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+    
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
@@ -397,3 +404,4 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.DefaultSignatureEnabled|This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled|This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Office Feed which shows the user's and the user's co-workers Office files. Setting the value to false will disable the Office Feed. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
