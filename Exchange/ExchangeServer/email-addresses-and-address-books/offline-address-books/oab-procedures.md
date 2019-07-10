@@ -99,7 +99,7 @@ If you've created multiple address lists, you can use OABs to make the address l
 To create new offline address books, use the following syntax:
 
 ```
-New-OfflineAddressBook -Name "<Name>" -AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..." [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity> ] [-IsDefault $true] [-ShadowMailboxDistributionEnabled $true]
+New-OfflineAddressBook -Name "<Name>" -AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..." [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity>] [-IsDefault $true] [-ShadowMailboxDistributionEnabled $true]
 ```
 
 This example creates a new OAB named Contoso Executives OAB with the following properties:
@@ -133,7 +133,7 @@ Get-OfflineAddressBook | Format-List Name,AddressLists,GeneratingMailbox,IsDefau
 To modify OABs, use the following syntax:
 
 ```
-Set-OfflineAddressBook -Identity "<OABIdentity>" [-Name <Name>] [-AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..."] [-VirtualDirectories $null] [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity> ] [-IsDefault $true] [-ShadowMailboxDistributionEnabled <$true | $false>]
+Set-OfflineAddressBook -Identity "<OABIdentity>" [-Name <Name>] [-AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..."] [-VirtualDirectories $null] [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity>] [-IsDefault $true] [-ShadowMailboxDistributionEnabled <$true | $false>]
 ```
 
 For detailed syntax and parameter information, see [Set-OfflineAddressBook](http://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).

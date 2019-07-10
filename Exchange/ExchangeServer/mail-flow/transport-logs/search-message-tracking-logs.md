@@ -63,7 +63,7 @@ Message tracking records the message activity as mail flows through the transpor
 To search the message tracking log entries for specific events, use the following syntax.
 
 ```
-Get-MessageTrackingLog [-Server <ServerIdentity> ] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+Get-MessageTrackingLog [-Server <ServerIdentity>] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
 ```
 
 To view the 1000 most recent message tracking log entries on the server, run the following command:

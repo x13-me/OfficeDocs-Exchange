@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Hybrid agent - Preview"
+title: "Microsoft Hybrid Agent"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -181,10 +181,9 @@ You can view the specific values configured for each of these by running **Get-M
 The following example shows the output that you might see when you run the **Get-MigrationEndpoint** and **Get-OrganizationRelationship** cmdlets:
 
 ```
-Get-MigrationEndpoint | Format-List Identity,RemoteServerIdentity
+Get-MigrationEndpoint | Format-List Identity,RemoteServer
 
 Identity : Hybrid Migration Endpoint - EWS (Default Web Site)
-
 RemoteServer : 087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net
 ```
 
@@ -192,7 +191,6 @@ RemoteServer : 087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.hi
 Get-OrganizationRelationship | Format-List Name,TargetSharingEpr
 
 Name : O365 to On-premises - c6d22e11-2340-4432-9122-19097bacf0c1
-
 TargetSharingEpr : https://087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net/EWS/Exchange.asmx
 ```
 

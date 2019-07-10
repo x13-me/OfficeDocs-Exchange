@@ -66,7 +66,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 As previously explained, you can use the **Set-TransportService** cmdlet to perform all message tracking configuration tasks on Mailbox servers and Edge Transport servers. To configure message tracking in the Exchange Management Shell, use the following syntax:
 
 ```
-Set-TransportService [<ServerIdentity> ] -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true | $false>
+Set-TransportService [<ServerIdentity>] -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true | $false>
 ```
 
 Note that you don't need to specify the Exchange server when you run the command on the server that you want to configure.
@@ -105,7 +105,7 @@ Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 
 ```
-Get-TransportService [<ServerIdentity> ] | Format-List MessageTrackingLog*
+Get-TransportService [<ServerIdentity>] | Format-List MessageTrackingLog*
 ```
 
 You can also open the location of the message tracking log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that they're being recycled based on the maximum file size and maximum directory size values that you configured.
