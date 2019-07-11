@@ -38,6 +38,9 @@ Before proceeding, review [How to set up a multifunction device or application t
 > [!NOTE]
 > These instructions can be modified for other SMTP relays that you might have in your organization.
 
+    > [!CAUTION]
+    > “The SMTP component discussed here is part of IIS 6.0 and the support for IIS 6.0 has ended with the support of Windows 2003 (https://support.microsoft.com/en-in/lifecycle/search/810). We are doing our “best effort support” on this feature. While most functionality questions can continue to be addressed, if an issue in the product is suspected or you are running into a type of issue that requires deep technical investigation, we won’t be able to help you with that. We recommend you use one of the supported Exchange versions instead of IIS SMTP.
+
 ## What you need to know before you begin
 
 - Estimated time to complete: 15 minutes
