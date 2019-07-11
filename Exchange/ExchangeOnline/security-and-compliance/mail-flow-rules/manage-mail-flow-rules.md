@@ -233,10 +233,10 @@ The rule at the top of the list is processed first. This rule has a **Priority**
 
 ### Use Exchange Online PowerShell to set the priority of a rule
 
-The following example sets the priority of "Sender is a member of marketing" to 2:
+The following example sets the priority of "Sender is a member of Marketing" to 2:
 
 ```
-Set-TransportRule "Sender is a member of marketing" priority "2"
+Set-TransportRule "Sender is a member of Marketing" -Priority "2"
 ```
 
 ### How do you know this worked?
