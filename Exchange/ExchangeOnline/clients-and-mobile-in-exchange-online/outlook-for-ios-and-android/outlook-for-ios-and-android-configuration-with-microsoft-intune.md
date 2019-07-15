@@ -208,7 +208,7 @@ The settings allow you to control the contact fields that synchronize between Ou
 > [!NOTE]
 > Outlook for Android supports bi-directional contact synchronization. However, if a user edits a field in the native contacts app that is restricted (such as the **Notes** field), then that data will not synchronize back into Outlook for Android.
 
-## Deploying app configuration settings with Intune for enrolled devices
+## Deploying configuration scenarios with Intune for enrolled devices
 
 The Intune portal enables administrators to easily deploy these settings to Outlook for iOS and Android via App Configuration Policies.
 
@@ -299,7 +299,7 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
-## Deploying the configuration scenarios with Intune for unenrolled devices
+## Deploying configuration scenarios with Intune for unenrolled devices
 
 If you are using Microsoft Intune as your mobile app management provider, the following steps allow you to create an app configuration policy. After the configuration is created, you can assign its settings to groups of users.
 
