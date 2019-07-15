@@ -125,7 +125,7 @@ Outlook supports the following settings for configuration:
 
 Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
 
-**Allow user to change setting** does not change the app's behavior. For example, if the admin enables *Block external images* and prevents user change, then by default external images will not be downloaded in messages; however, the user can manually download the images for that message body.
+**Allow user to change setting** does not change the app's behavior. For example, if the admin enables *Block external images* and prevents user change, then by default external images are not downloaded in messages; however, the user can manually download the images for that message body.
 
 > [!NOTE]
 > The **Allow user to change setting** for *Require Biometrics to access the app* is currently only available as a configuration key. This will be addressed in a future Intune portal update. For more information regarding the configuration key, see [Configuration keys](#configuration-keys).
@@ -301,7 +301,7 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 
 ## Deploying the configuration scenarios with Intune for unenrolled devices
 
-If you are using Microsoft Intune as your mobile app management provider, the following steps allows you to create an app configuration policy. After the configuration is created, you can assign its settings to groups of users.
+If you are using Microsoft Intune as your mobile app management provider, the following steps allow you to create an app configuration policy. After the configuration is created, you can assign its settings to groups of users.
 
 > [!NOTE]
 > Intune managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
