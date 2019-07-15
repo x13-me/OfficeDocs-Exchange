@@ -181,7 +181,7 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 
 ## Data protection scenarios
 
-Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
+Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune with an Intune App Protection Policy applied:
 
 - Managing the use of wearable technology
 
