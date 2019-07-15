@@ -51,7 +51,7 @@ Outlook for iOS and Android offers administrators the ability to "push" account 
 
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
-## General app configuration settings
+## General app configuration scenarios
 
 Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any MDM provider and for devices that are not enrolled when Outlook for iOS and Android is managed by Intune with an Intune App Protection Policy applied.
 
