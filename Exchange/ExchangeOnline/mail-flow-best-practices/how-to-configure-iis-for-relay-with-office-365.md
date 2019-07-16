@@ -36,7 +36,7 @@ You might want to do this in the following scenarios:
 Before proceeding, review [How to set up a multifunction device or application to send email using Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md) as there may be an available option that doesn't require setting up an additional server to relay.
 
 > [!NOTE]
-> These instructions can be modified for other SMTP relays that you might have in your organization.
+> • These instructions can be modified for other SMTP relays that you might have in your organization. <br><br>• The SMTP component that's discussed in this topic is in IIS 6.0, and support for IIS 6.0 has ended with the [support of Windows 2003](https://support.microsoft.com/lifecycle/search/810). We will continue to do a "best effort support" on this feature. We can continue to address most functionality questions, but we can't help with IIS 6.0 product issues or deep technical investigations. We recommend that you use a supported version of Exchange instead of IIS SMTP.
 
 ## What you need to know before you begin
 
