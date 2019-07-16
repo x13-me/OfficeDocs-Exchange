@@ -96,24 +96,16 @@ As a best practice, create a Client Access Rule with the highest priority to pre
 New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1
 ```
 
-#### Authentication types and protocols
+#### Authentication types and protocols in Client Access Rules
 
-Not all authentication types are supported for all protocols. The supported authentication types per protocol are described in this table:
+Not all authentication types are supported for all protocols in Client Access Rules. The supported authentication types per protocol are described in this table:
 
 ||**AdfsAuthentication**|**BasicAuthentication**|**CertificateBasedAuthentication**|**NonBasicAuthentication**|**OAuthAuthentication**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |`ExchangeActiveSync`|n/a|supported|supported|n/a|supported|
 |`ExchangeAdminCenter`|supported|supported|n/a|n/a|n/a|
-|`ExchangeWebServices`|n/a|n/a|n/a|n/a|n/a|
-|`IMAP4`|n/a|n/a|n/a|n/a|n/a|
-|`OfflineAddressBook`|n/a|n/a|n/a|n/a|n/a|
-|`OutlookAnywhere`|n/a|n/a|n/a|n/a|n/a|
 |`OutlookWebApp`|supported|supported|n/a|n/a|n/a|
-|`POP3`|n/a|n/a|n/a|n/a|n/a|
-|`PowerShellWebServices`|n/a|n/a|n/a|n/a|n/a|
 |`RemotePowerShell`|n/a|supported|n/a|supported|n/a|
-|`REST`|n/a|n/a|n/a|n/a|n/a|
-|`UniversalOutlook`|n/a|n/a|n/a|n/a|n/a|
 
 ## Client Access Rule conditions and exceptions
 
