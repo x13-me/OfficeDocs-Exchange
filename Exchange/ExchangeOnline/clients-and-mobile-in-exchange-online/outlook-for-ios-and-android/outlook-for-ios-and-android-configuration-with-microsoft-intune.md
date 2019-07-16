@@ -60,9 +60,9 @@ Outlook supports the following settings for configuration:
 <table>
 <thead>
 <tr class="header">
-<th><strong>Setting</strong></th>
-<th><strong>Default app behavior</strong></th>
-<th><strong>Notes</strong></th>
+<th>Setting</th>
+<th>Default app behavior</th>
+<th>Notes</th>
 <th>Recommended configuration</th>
 </tr>
 </thead>
