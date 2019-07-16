@@ -55,6 +55,9 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any MDM provider and for devices that are not enrolled when Outlook for iOS and Android has an Intune App Protection Policy applied.
 
+> [!NOTE]
+> If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
+
 Outlook supports the following settings for configuration:
 
 <table>
@@ -248,6 +251,9 @@ The following steps allow you to create an app configuration policy. After the c
 10. Choose **Configuration Settings**. On the **Configuration** blade, select **Use configuration designer** for the **Configuration settings format**.
 
 11. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
+
+   > [!NOTE]
+   > If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model instead of using **Managed devices**. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
 
     - For **Authentication type**, select **Modern authentication**. This is required for Office 365 accounts or on-premises accounts leveraging hybrid modern authentication.
 
