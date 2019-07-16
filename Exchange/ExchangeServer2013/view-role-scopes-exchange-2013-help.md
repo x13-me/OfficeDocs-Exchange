@@ -24,19 +24,19 @@ Looking for other management tasks related to role scopes? Check out [Advanced p
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
+- This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
-      - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
 
-      - [Working with command output](working-with-command-output-exchange-2013-help.md)
+  - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

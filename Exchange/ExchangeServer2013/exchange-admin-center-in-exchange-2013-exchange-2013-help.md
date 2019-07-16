@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The Exchange Admin Center (EAC) is the web-based management console in Microsoft Exchange Server 2013 that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two interfaces used to manage Exchange Server 2010.
+The Exchange admin center (EAC) is the web-based management console in Microsoft Exchange Server 2013 that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two interfaces used to manage Exchange Server 2010.
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
@@ -48,7 +48,7 @@ If you're in a coexistence scenario, where you're running Exchange 2010 and Exch
 
 The section describes the user interface elements that are common across the EAC.
 
-![Exchange Administration Center](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange Administration Center")
+![Exchange admin center](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange admin center")
 
 ## Cross-premises navigation
 

@@ -66,9 +66,9 @@ Each DLP policy is a collection of mail flow rules. After you create the DLP pol
 
 1. Create a DLP policy. For instructions, see:
 
-  - [Exchange Server DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
+   - [Exchange Server DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
 
-  - [Exchange Online DLP procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
+   - [Exchange Online DLP procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
 
 2. Modify the mail flow rules created by the DLP policy. See [View or modify a mail flow rule](#view-or-modify-a-mail-flow-rule).
 
@@ -80,11 +80,11 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
 2. Create the rule by using one of the following options:
 
-  - To create a rule from a template, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template.
+   - To create a rule from a template, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template.
 
-  - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
+   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
 
-  - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+   - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule:
 
@@ -104,18 +104,18 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
    3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [Mail protection reports](https://go.microsoft.com/fwlink/p/?LinkId=402769).
 
-    - Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The Office 365 activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
+      Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The Office 365 activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
-     > [!NOTE]
-     > If you clear the **Audit this rule with severity level** checkbox, rule matches will not show up in the rule reports.
+      > [!NOTE]
+      > If you clear the **Audit this rule with severity level** checkbox, rule matches will not show up in the rule reports.
 
    4. Set the mode for the rule. You can use one of the two test modes to test the rule without impacting mail flow. In both test modes, when the conditions are met, an entry is added to the message trace.
 
-     - **Enforce**: This turns on the rule and it starts processing messages immediately. All actions on the rule will be performed.
+      - **Enforce**: This turns on the rule and it starts processing messages immediately. All actions on the rule will be performed.
 
-     - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions ( **Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. Data Loss Prevention (DLP) is required in order to use this mode. To learn more, see [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md).
+      - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions ( **Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. Data Loss Prevention (DLP) is required in order to use this mode. To learn more, see [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md).
 
-     - **Test without Policy Tips**: Only the Generate incident report action will be enforced. No actions related to message delivery are performed.
+      - **Test without Policy Tips**: Only the Generate incident report action will be enforced. No actions related to message delivery are performed.
 
 4. If you are satisfied with the rule, go to step 5. If you want to add more conditions or actions, or if you want to specify exceptions or set additional properties, click **More options**. After you click **More options**, complete the following fields to create your rule:
 
@@ -163,9 +163,9 @@ To verify that you have successfully created a new mail flow rule, do the follow
 
 - From Exchange Online PowerShell, verify that you created the new mail flow rule successfully by running the following command (the example below verifies the rule created in Exchange Online PowerShell example above):
 
-   ```
-   Get-TransportRule "Mark messages from the Internet to Sales DG"
-   ```
+  ```
+  Get-TransportRule "Mark messages from the Internet to Sales DG"
+  ```
 
 ## View or modify a mail flow rule
 
@@ -206,9 +206,9 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 - From Exchange Online PowerShell, verify that you modified the mail flow rule successfully by running the following command to list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
-   ```
-   Get-TransportRule "Sender is a member of marketing" | Format-List Name,ExceptIfFrom
-   ```
+  ```
+  Get-TransportRule "Sender is a member of marketing" | Format-List Name,ExceptIfFrom
+  ```
 
 ## Mail flow rule properties
 
@@ -233,10 +233,10 @@ The rule at the top of the list is processed first. This rule has a **Priority**
 
 ### Use Exchange Online PowerShell to set the priority of a rule
 
-The following example sets the priority of "Sender is a member of marketing" to 2:
+The following example sets the priority of "Sender is a member of Marketing" to 2:
 
 ```
-Set-TransportRule "Sender is a member of marketing" priority "2"
+Set-TransportRule "Sender is a member of Marketing" -Priority "2"
 ```
 
 ### How do you know this worked?
@@ -247,9 +247,9 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 - From Exchange Online PowerShell, verify the priority of the rules (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
-   ```
-   Get-TransportRule * | Format-List Name,Priority
-   ```
+  ```
+  Get-TransportRule * | Format-List Name,Priority
+  ```
 
 ## Enable or disable a mail flow rule
 
@@ -313,9 +313,9 @@ To verify that you have successfully removed the mail flow rule, do the followin
 
 - From Exchange Online PowerShell, run the following command and verify that the rule you remove is no longer listed:
 
-   ```
-   Get-TransportRule
-   ```
+  ```
+  Get-TransportRule
+  ```
 
 ## Monitor rule usage
 

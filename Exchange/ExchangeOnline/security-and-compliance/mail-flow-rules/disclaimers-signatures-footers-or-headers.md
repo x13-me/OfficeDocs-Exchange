@@ -23,7 +23,7 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 **Notes**:
 
-- Users can apply signatures to their own outgoing messages in Outlook or Outlook on the web (formerly known as Outlook Web App). For more information, see [Create and add an email signature in Outlook Web App](https://support.office.com/article/0F230564-11B9-4239-83DE-F10CBE4DFDFC).
+- Users can apply signatures to their own outgoing messages in Outlook or Outlook on the web (formerly known as Outlook Web App). For more information, see [Create and add an email signature in Outlook on the web](https://support.office.com/article/0F230564-11B9-4239-83DE-F10CBE4DFDFC).
 
 - If you want the information to be added only to outgoing messages, you need to add a corresponding condition (for example, recipients located outside the organization). By default, mail flow rules are applied to incoming and outgoing messages.
 

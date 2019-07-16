@@ -22,24 +22,24 @@ An alternative to permanently deleting a mailbox is to disconnect it. After you 
 
 To learn more about disconnected mailboxes and perform other related management tasks, see the following topics:
 
-  - [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
+- [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
 
-  - [Disable or delete a mailbox](disable-or-delete-a-mailbox-exchange-2013-help.md)
+- [Disable or delete a mailbox](disable-or-delete-a-mailbox-exchange-2013-help.md)
 
-  - [Connect a disabled mailbox](connect-a-disabled-mailbox-exchange-2013-help.md)
+- [Connect a disabled mailbox](connect-a-disabled-mailbox-exchange-2013-help.md)
 
-  - [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
+- [Connect or restore a deleted mailbox](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
 > [!NOTE]
 > You can't use the EAC to permanently delete an active mailbox or a disconnected mailbox.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

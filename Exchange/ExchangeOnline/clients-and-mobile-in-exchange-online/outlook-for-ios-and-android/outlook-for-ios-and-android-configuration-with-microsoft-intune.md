@@ -105,7 +105,12 @@ Outlook supports the following settings for configuration:
 <td>On</td>
 <td>By default, Outlook for Android will suggest replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 </tr>
-</tbody>
+<tr class="even">
+<td>Office Feed</td>
+<td>On</td>
+<td>The Discover capability, powered by Microsoft Graph, provides a feed of your company’s Office files connected to the people in your organization. This feature can be found in the Search experience and will only show documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</td>
+</tr>
+</tbody>  
 </table>
 
 Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
@@ -170,10 +175,13 @@ The Intune portal enables administrators to easily deploy these settings to Outl
 
 The following steps will allow you to create an app configuration policy. After the configuration policy is created, you can assign its settings to groups of users.
 
+> [!NOTE]
+> Intune notifies the device to check in with the Intune service for policy changes. The notification times vary, including immediately up to a few hours. For more information, please see [Common questions, issues, and resolutions with device policies and profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned). 
+
 ![configuration policy settings](../../media/outlook_mobile_intune_6.PNG)
 
 > [!IMPORTANT]
->When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
+> When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
 
 #### Create an app configuration policy for Outlook for iOS and Android
 
@@ -221,6 +229,8 @@ The following steps will allow you to create an app configuration policy. After 
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
+    - For **Office Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+    
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
@@ -394,3 +404,4 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.DefaultSignatureEnabled|This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled|This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|
+|com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Office Feed which shows the user's and the user's co-workers Office files. Setting the value to false will disable the Office Feed. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed devices|

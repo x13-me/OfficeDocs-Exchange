@@ -43,7 +43,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Email address**
 
-4. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic.
+4. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.

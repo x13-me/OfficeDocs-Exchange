@@ -38,19 +38,19 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 20 minutes
+- Estimated time to complete: 20 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange infrastructure permissions" section in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange infrastructure permissions" section in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - The server on which recovery is being performed must be running the same operating system as the lost server. For example, you can't recover a server that was running Exchange 2013 and Windows Server 2008 R2 on a server running Windows Server 2012, or vice versa. Likewise, you can't recover a server that was running Exchange 2013 and Windows Server 2012 on a server running Windows Server 2012 R2, or vice versa.
+- The server on which recovery is being performed must be running the same operating system as the lost server. For example, you can't recover a server that was running Exchange 2013 and Windows Server 2008 R2 on a server running Windows Server 2012, or vice versa. Likewise, you can't recover a server that was running Exchange 2013 and Windows Server 2012 on a server running Windows Server 2012 R2, or vice versa.
 
-  - The same disk drive letters on the failed server for mounted databases must exist on the server on which you're running recovery.
+- The same disk drive letters on the failed server for mounted databases must exist on the server on which you're running recovery.
 
-  - The server on which recovery is being performed should have the same performance characteristics and hardware configuration as the lost server.
+- The server on which recovery is being performed should have the same performance characteristics and hardware configuration as the lost server.
 
-  - The _/Mode:RecoverServer_ switch assigns a self-signed certificate to all Exchange Services that require SSL/TLS. If the server previously used an SSL/TLS certificate that was issued by a different certification authority, you'll need to re-import the certificate and configure the services to use the certificate. Otherwise, users will get a certificate prompt when they try to connect (for example, in Outlook).
+- The _/Mode:RecoverServer_ switch assigns a self-signed certificate to all Exchange Services that require SSL/TLS. If the server previously used an SSL/TLS certificate that was issued by a different certification authority, you'll need to re-import the certificate and configure the services to use the certificate. Otherwise, users will get a certificate prompt when they try to connect (for example, in Outlook).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -77,15 +77,13 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 ## How do you know this worked?
 
-The successful completion of Setup will be the primary indicator that the recovery was successful. To further verify that you've successfully recovered a lost server, do the following:
-
-  - Open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
+The successful completion of Setup will be the primary indicator that the recovery was successful. To further verify that you've successfully recovered a lost server, open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
 
 ### Possible issues with the Scripting Agent
 
 If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
 
-```
+```text
 "Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
@@ -93,17 +91,17 @@ If you have other Exchange servers in your organization, you'11 need to:
 
 1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
-    ```
-    Disable-CmdletExtensionAgent -Identity "Scripting Agent"
-    ```
+   ```powershell
+   Disable-CmdletExtensionAgent -Identity "Scripting Agent"
+   ```
 
 2. Run Exchange Setup in recovery mode as described earlier in this topic.
 
 3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete:
 
-    ```
-    Enable-CmdletExtensionAgent -Identity "Scripting Agent"
-    ```
+   ```powershell
+   Enable-CmdletExtensionAgent -Identity "Scripting Agent"
+   ```
 
 If the recovered Exchange server is the only Exchange server in your organization, you'll need to:
 

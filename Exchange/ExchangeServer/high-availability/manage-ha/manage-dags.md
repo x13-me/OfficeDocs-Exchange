@@ -72,9 +72,9 @@ The following table lists general witness server placement recommendations for d
 |**Deployment Scenario**|**Recommendations**|
 |:-----|:-----|
 |Single DAG deployed in a single datacenter|Locate witness server in the same datacenter as DAG members|
-|Single DAG deployed across two datacenters; no additional locations available|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in primary datacenter|
-|Multiple DAGs deployed in a single datacenter|Locate witness server in the same datacenter as DAG members. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG|
-|Multiple DAGs deployed across two datacenters|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in the datacenter that is considered primary for each DAG. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG|
+|Single DAG deployed across two datacenters; no additional locations available|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or <br/> Locate witness server in primary datacenter|
+|Multiple DAGs deployed in a single datacenter|Locate witness server in the same datacenter as DAG members. Additional options include: <br/> • Using the same witness server for multiple DAGs <br/> • Using a DAG member to act as a witness server for a different DAG|
+|Multiple DAGs deployed across two datacenters|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or <br/> Locate witness server in the datacenter that is considered primary for each DAG. Additional options include: <br/> • Using the same witness server for multiple DAGs <br/> • Using a DAG member to act as a witness server for a different DAG|
 |Single or Multiple DAGs deployed across more than two datacenters|In this configuration, the witness server should be located in the datacenter where you want the majority of quorum votes to exist.|
 
 When a DAG has been deployed across two datacenters, you can now use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG's witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
@@ -119,7 +119,6 @@ To resolve the preceding error and warnings, do one of the following:
 - Disable Windows Firewall.
 
 ## DAG membership
-<a name="Da"> </a>
 
 After a DAG has been created, you can add servers to or remove servers from the DAG using the Manage Database Availability Group wizard in the Exchange admin center (EAC), or using the **Add-DatabaseAvailabilityGroupServer** or **Remove-DatabaseAvailabilityGroupServer** cmdlets in the Exchange Management Shell. For detailed steps about how to manage DAG membership, see [Manage database availability group membership](dag-memberships.md).
 
@@ -191,7 +190,6 @@ There are scenarios in which you must remove a Mailbox server from a DAG before 
 - **Removing the database availability group**: There may be situations in which you need to remove a DAG (for example, when disabling third-party replication mode). If you need to remove a DAG, you must first remove all servers from the DAG. If you attempt to remove a DAG that contains any members, the task fails.
 
 ## Configuring DAG properties
-<a name="Co"> </a>
 
 After servers have been added to the DAG, you can use the EAC or the Exchange Management Shell to configure the properties of a DAG, including the witness server and witness directory used by the DAG, and the IP addresses assigned to the DAG.
 
@@ -213,8 +211,6 @@ DAGs support the use of encryption by leveraging the encryption capabilities of 
 
 Network encryption is a property of the DAG and not a DAG network. You can configure DAG network encryption using the **Set-DatabaseAvailabilityGroup** cmdlet in the Exchange Management Shell. The possible encryption settings for DAG network communications are shown in the following table.
 
-**DAG network communication encryption settings**
-
 |**Setting**|**Description**|
 |:-----|:-----|
 |Disabled|Network encryption isn't used.|
@@ -228,8 +224,6 @@ DAGs support built-in compression. When compression is enabled, DAG network comm
 
 As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
 
-**DAG network communication compression settings**
-
 |**Setting**|**Description**|
 |:-----|:-----|
 |Disabled|Network compression isn't used.|
@@ -238,7 +232,6 @@ As with network encryption, network compression is also a property of the DAG an
 |SeedOnly|Network compression is used on all DAG networks for seeding only.|
 
 ## DAG networks
-<a name="Dat"> </a>
 
 A DAG network is a collection of one or more subnets used for either replication traffic or MAPI traffic. Each DAG contains a maximum of one MAPI network and zero or more replication networks. In a single network adapter configuration, the network is used for both MAPI and replication traffic. Although a single network adapter and path is supported, we recommend that each DAG have a minimum of two DAG networks. In a two-network configuration, one network is typically dedicated for replication traffic, and the other network is used primarily for MAPI traffic. You can also add network adapters to each DAG member and configure additional DAG networks as replication networks.
 
@@ -285,8 +278,8 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 |**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
 |:-----|:-----|:-----|:-----|:-----|
-|MapiDagNetwork|192.168.1.0/24|EX1 (192.168.1.15)  <br/> EX2 (192.168.1.16)|True|True|
-|ReplicationDagNetwork01|10.0.0.0/24|EX1 (10.0.0.15)  <br/> EX2 (10.0.0.16)|False|True|
+|MapiDagNetwork|192.168.1.0/24|EX1 (192.168.1.15) <br/> EX2 (192.168.1.16)|True|True|
+|ReplicationDagNetwork01|10.0.0.0/24|EX1 (10.0.0.15) <br/> EX2 (10.0.0.16)|False|True|
 
 To complete the configuration of ReplicationDagNetwork01 as the dedicated replication network, disable replication for MapiDagNetwork by running the following command.
 
@@ -317,8 +310,8 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 |**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
 |:-----|:-----|:-----|:-----|:-----|
-|MapiDagNetwork|192.168.0.0/24  <br/> 192.168.1.0/24|EX1 (192.168.0.15)  <br/> EX2 (192.168.1.15)|True|True|
-|ReplicationDagNetwork01|10.0.0.0/24  <br/> 10.0.1.0/24|EX1 (10.0.0.15)  <br/> EX2 (10.0.1.15)|False|True|
+|MapiDagNetwork|192.168.0.0/24 <br/> 192.168.1.0/24|EX1 (192.168.0.15) <br/> EX2 (192.168.1.15)|True|True|
+|ReplicationDagNetwork01|10.0.0.0/24 <br/> 10.0.1.0/24|EX1 (10.0.0.15) <br/> EX2 (10.0.1.15)|False|True|
 
 ### DAG networks and iSCSI networks
 
@@ -427,21 +420,21 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 2. To initiate the draining of the transport queues, run the following command:
 
-    ```
-    Restart-Service MSExchangeTransport
-    ```
+   ```
+   Restart-Service MSExchangeTransport
+   ```
 
 3. To begin the process of draining all Unified Messaging calls (in Exchange 2016 only), run the following command:
 
-    ```
-    Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
-    ```
+   ```
+   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
+   ```
 
 4. To access the DAG maintenance scripts, run the following command:
 
-    ```
-    CD $ExScripts
-    ```
+   ```
+   CD $ExScripts
+   ```
 
 5. To run the StartDagServerMaintenance.ps1 script, run the following command:
 
@@ -449,10 +442,10 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
    .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
    ```
 
-    For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance."
+   For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance."
 
-> [!NOTE]
-> This script can take some time to execute, and during this time you may not see any activity on your screen.
+   > [!NOTE]
+   > This script can take some time to execute, and during this time you may not see any activity on your screen.
 
 6. To redirect messages pending delivery in the local queues to the Exchange server specified by the Target parameter, run
 
@@ -462,35 +455,35 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 7. To place the server into maintenance mode, run:
 
-    ```
-    Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
-    ```
+   ```
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
+   ```
 
 To verify that a server is ready for maintenance, perform the following tasks:
 
 1. To verify the server has been placed into maintenance mode, confirm that only `Monitoring` and `RecoveryActionsEnabled` are in an Active state when you run the following command:
 
-    ```
-    Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
-    ```
+   ```
+   Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
+   ```
 
 2. To verify the server is not hosting any active database copies, run:
 
-    ```
-    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-    ```
+   ```
+   Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+   ```
 
 3. To verify that the cluster node is paused, run:
 
-    ```
-    Get-ClusterNode <ServerName> | Format-List
-    ```
+   ```
+   Get-ClusterNode <ServerName> | Format-List
+   ```
 
 4. To verify that all transport queues have been emptied, run:
 
-    ```
-    Get-Queue
-    ```
+   ```
+   Get-Queue
+   ```
 
 After the maintenance is complete and the DAG member is ready to return to service, the StopDagServerMaintenance.ps1 script helps takes the DAG member out of maintenance mode and put it back into production. The StopDagServerMaintenance.ps1 script performs the following tasks:
 
@@ -504,41 +497,41 @@ When you're ready to restore the DAG member to full production status, including
 
 1. To configure the server as out of maintenance mode and ready to accept client connections, run:
 
-  ```
-  Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
-  ```
+   ```
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
+   ```
 
 2. To allow the server to accept Unified Messaging calls (in Exchange 2016 only), run:
 
-  ```
-  Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
-  ```
+   ```
+   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
+   ```
 
 3. To execute the StopDagServerMaintenance.ps1 script, run:
 
-  ```
-  .\StopDagServerMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
-  ```
+   ```
+   .\StopDagServerMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
+   ```
 
 4. To enable the transport queues to resume accepting and processing messages, run:
 
-  ```
-  Set-ServerComponentState <ServerName> -Component HubTransport -State Active -Requester Maintenance
-  ```
+   ```
+   Set-ServerComponentState <ServerName> -Component HubTransport -State Active -Requester Maintenance
+   ```
 
 5. To resume transport activity, run:
 
-  ```
-  Restart-Service MSExchangeTransport
-  ```
+   ```
+   Restart-Service MSExchangeTransport
+   ```
 
 To verify that a server is ready for production use, perform the following tasks:
 
 1. To verify the server is not in maintenance mode, run
 
-  ```
-  Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
-  ```
+   ```
+   Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
+   ```
 
 If you're installing an Exchange update, and the update process fails, it can leave some server components in an inactive state, which will be displayed in the output of the above `Get-ServerComponentState` cmdlet. To resolve this, run the following commands:
 

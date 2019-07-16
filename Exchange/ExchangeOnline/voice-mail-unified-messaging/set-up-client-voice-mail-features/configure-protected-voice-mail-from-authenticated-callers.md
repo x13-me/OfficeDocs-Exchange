@@ -19,7 +19,7 @@ manager: dansimp
 
 You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:
 
-- The message is marked as Private in Microsoft Outlook and Outlook Web App.
+- The message is marked as Private in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
 - The voice message can be opened only by the intended recipient of the voice message.
 
@@ -52,11 +52,11 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 3. On the **UM Mailbox Policy** page \> **Protected voice mail**, under **Protect voice message from authenticated callers**, select one of the following options:
 
-  - **None**: Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users.
+   - **None**: Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users.
 
-  - **Private**: Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller.
+   - **Private**: Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller.
 
-  - **All**: Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private.
+   - **All**: Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private.
 
 4. Click **Save**.
 

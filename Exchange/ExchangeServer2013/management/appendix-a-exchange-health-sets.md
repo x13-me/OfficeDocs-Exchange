@@ -55,7 +55,7 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 <tr class="even">
 <td><p>ECP</p></td>
 <td><p>CAS, Mailbox</p></td>
-<td><p>Monitors the overall health of the Exchange Administration Center (EAC), as well as the overall health of the Outlook Web App end user setting service.</p></td>
+<td><p>Monitors the overall health of the Exchange admin center (EAC), as well as the overall health of the Outlook Web App end user setting service.</p></td>
 </tr>
 <tr class="odd">
 <td><p>EWS</p></td>

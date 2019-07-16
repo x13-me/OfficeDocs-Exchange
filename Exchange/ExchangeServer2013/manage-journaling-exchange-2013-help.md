@@ -230,11 +230,11 @@ To verify that you have successfully enabled or disabled per-mailbox database jo
 
 3. If the correct journaling recipient is listed in the **Journal recipient** box, you have successfully enabled journaling for the mailbox database. If there is no journaling recipient listed, journaling is disabled for the database.
 
-- From the Shell, run the following command to return a list of all mailbox databases in your organization, including the journal recipients associated with them. Journaling is enabled for databases that have a journal recipient listed, otherwise it's disabled.
+From the Shell, run the following command to return a list of all mailbox databases in your organization, including the journal recipients associated with them. Journaling is enabled for databases that have a journal recipient listed, otherwise it's disabled.
 
-  ```powershell
-  Get-MailboxDatabase | Format-Table Name,JournalRecipient
-  ```
+```powershell
+Get-MailboxDatabase | Format-Table Name,JournalRecipient
+```
 
 ## For more information
 

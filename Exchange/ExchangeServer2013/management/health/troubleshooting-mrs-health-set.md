@@ -141,11 +141,13 @@ For more information, see [Exchange 2013 cmdlets](https://technet.microsoft.com/
 
 When a critical error occurs during mail migration, you may receive an alert that resembles the following:
 
-*Notification thrown by MailboxMigration at 9/7/2012 9:08:32 PM. Details: Diagnostic Information: ProcessCacheEntry: First Organization :: /o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e80fc128879e452ebc882f6bca7007fa-Migration.8*
+> Notification thrown by MailboxMigration at 9/7/2012 9:08:32 PM. Details: Diagnostic Information: ProcessCacheEntry: First Organization :: /o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e80fc128879e452ebc882f6bca7007fa-Migration.8
 
-To resolve this issue, you must retry the migration. To do this, run the following command, or press the **Start** button on the Exchange Administration Center (EAC).
+To resolve this issue, you must retry the migration. To do this, run the following command, or press the **Start** button on the Exchange admin center (EAC).
 
-Call start-migrationbatch -Identity batchName
+```powershell
+Start-MigrationBatch -Identity <BatchName>
+```
 
 When this issue occurs, a Dr. Watson message is sent to Microsoft for investigation.
 

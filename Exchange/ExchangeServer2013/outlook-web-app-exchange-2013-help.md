@@ -16,14 +16,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Learn about the Outlook Web App, which was called Outlook Web Access in version of Microsoft Exchange earlier than 2010. This article provides a brief overview with links out to helpful information.
+Learn about the Outlook Web App, which was called Outlook Web Access in versions of Microsoft Exchange earlier than 2010. This article provides a brief overview with links out to helpful information.
 
 By default, when you install Microsoft Exchange 2013, you enable Outlook Web App. Microsoft Outlook Web App lets users access their Exchange mailbox from almost any Web browser.
 
 The Client Access server role provides proxy and redirection services for Outlook Web App.
-
-> [!NOTE]
-> Outlook Web App was called Outlook Web Access in versions of Microsoft Exchange earlier than Exchange 2010.
 
 For information about new features, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md). For information about the Client Access server role in Exchange 2013, see [Client Access server](client-access-server-exchange-2013-help.md).
 
@@ -33,7 +30,7 @@ Fully supported web browsers give users access to features such as conversation 
 
 ## Managing Outlook Web App
 
-In Exchange 2013, the most common Outlook Web App management tasks can be accomplished in the Exchange Administration Center (EAC). All these tasks, and many others, can be accomplished by using the Exchange Management Shell. You'll still use tools such as Internet Information Services (IIS) Manager for some tasks, for example, to configure Secure Sockets Layer (SSL) or set up simple URLs for users.
+In Exchange 2013, the most common Outlook Web App management tasks can be accomplished in the Exchange admin center (EAC). All these tasks, and many others, can be accomplished by using the Exchange Management Shell. You'll still use tools such as Internet Information Services (IIS) Manager for some tasks, for example, to configure Secure Sockets Layer (SSL) or set up simple URLs for users.
 
 ## Accessing Outlook Web App
 

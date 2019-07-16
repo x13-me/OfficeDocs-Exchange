@@ -107,15 +107,15 @@ The following prerequisites are required in your Exchange environment before you
 
 1. If your public folders are on-premises, your servers need to be running one of the following versions:
 
-  - Exchange 2010 SP3 RU8 or later
+   - Exchange 2010 SP3 RU8 or later
 
-  - Exchange 2013 CU15 or later
+   - Exchange 2013 CU15 or later
 
-  - Exchange 2016 CU4 or later
+   - Exchange 2016 CU4 or later
 
 2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) for more information.
 
- **Migration instructions**
+### Migration instructions
 
 Select the appropriate link below for step-by-step instructions on running a batch migration.
 

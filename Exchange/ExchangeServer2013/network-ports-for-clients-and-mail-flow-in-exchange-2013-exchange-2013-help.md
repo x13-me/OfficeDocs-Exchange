@@ -18,23 +18,11 @@ _**Applies to:** Exchange Server 2013_
 
 This topic provides information about the network ports that are used by Microsoft Exchange Server 2013 for communication with email clients, Internet mail servers, and other services that are external to your local Exchange organization. Before we get into that, understand the following ground rules:
 
-  - We do not support restricting or altering network traffic between internal Exchange servers, between internal Exchange servers and internal Lync or Skype for Business servers, or between internal Exchange servers and internal Active Directory domain controllers in any and all types of topologies. If you have firewalls or network devices that could potentially restrict or alter this kind of network traffic, you need to configure rules that allow free and unrestricted communication between these servers (rules that allow incoming and outgoing network traffic on any port (including random RPC ports) and any protocol that never alter bits on the wire).
+- We do not support restricting or altering network traffic between internal Exchange servers, between internal Exchange servers and internal Lync or Skype for Business servers, or between internal Exchange servers and internal Active Directory domain controllers in any and all types of topologies. If you have firewalls or network devices that could potentially restrict or alter this kind of network traffic, you need to configure rules that allow free and unrestricted communication between these servers (rules that allow incoming and outgoing network traffic on any port (including random RPC ports) and any protocol that never alter bits on the wire).
 
-  - Edge Transport servers are almost always located in a perimeter network, so it's expected that you'll restrict network traffic between the Edge Transport server and the Internet, and between the Edge Transport server and your internal Exchange organization. These network ports are described in this topic.
+- Edge Transport servers are almost always located in a perimeter network, so it's expected that you'll restrict network traffic between the Edge Transport server and the Internet, and between the Edge Transport server and your internal Exchange organization. These network ports are described in this topic.
 
-  - It's expected that you'll restrict network traffic between external clients and services and your internal Exchange organization. It's also OK if you decide to restrict network traffic between internal clients and internal Exchange servers. These network ports are described in this topic.
-
-**Contents**
-
-Network ports required for clients and services
-
-Network ports required for mail flow (no Edge Transport servers)
-
-Network ports required for mail flow with Edge Transport servers
-
-Network ports required for hybrid deployments
-
-Network ports required for Unified Messaging
+- It's expected that you'll restrict network traffic between external clients and services and your internal Exchange organization. It's also OK if you decide to restrict network traffic between internal clients and internal Exchange servers. These network ports are described in this topic.
 
 ## Network ports required for clients and services
 
@@ -42,13 +30,13 @@ The network ports that are required for email clients to access mailboxes and ot
 
 **Notes:**
 
-  - The destination for these clients and services is a Client Access server. This could be a standalone Client Access server or a Client Access server and Mailbox server installed on the same computer.
+- The destination for these clients and services is a Client Access server. This could be a standalone Client Access server or a Client Access server and Mailbox server installed on the same computer.
 
-  - Although the diagram shows clients and services from the Internet, the concepts are the same for internal clients (for example, clients in an accounts forest accessing Exchange servers in a resource forest). Similarly, the table doesn't have a source column because the source could be any location that's external to the Exchange organization (for example, the Internet or an accounts forest).
+- Although the diagram shows clients and services from the Internet, the concepts are the same for internal clients (for example, clients in an accounts forest accessing Exchange servers in a resource forest). Similarly, the table doesn't have a source column because the source could be any location that's external to the Exchange organization (for example, the Internet or an accounts forest).
 
-  - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
+- Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
-![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png "Network ports required for clients and services")
+![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png)
 
 <table>
 <colgroup>
@@ -190,9 +178,9 @@ The network ports that are required for mail flow in an Exchange organization th
 
 A subscribed Edge Transport server that's installed in your perimeter network basically eliminates SMTP mail flow through the Client Access server. Specifically:
 
-  - Outbound mail from the Exchange organization never flows through a Client Access server. Mail always flows from a Mailbox server in the subscribed Active Directory site to the Edge Transport server (regardless of the version of Exchange on the Edge Transport server).
+- Outbound mail from the Exchange organization never flows through a Client Access server. Mail always flows from a Mailbox server in the subscribed Active Directory site to the Edge Transport server (regardless of the version of Exchange on the Edge Transport server).
 
-  - Inbound mail never flows through a standalone Client Access server. Mail flows from the Edge Transport server to a Mailbox server in the subscribed Active Directory site. If the Mailbox server and the Client Access server are installed on the same computer, mail from an Exchange 2013 Edge Transport server first arrives on the computer at the Front End Transport service (the Client Access server role) before it flows to the Transport service (the Mailbox server role). Exchange 2007 or Exchange 2010 Edge Transport servers always deliver mail directly to the Transport service even when the Mailbox server and the Client Access server are installed on the same computer.
+- Inbound mail never flows through a standalone Client Access server. Mail flows from the Edge Transport server to a Mailbox server in the subscribed Active Directory site. If the Mailbox server and the Client Access server are installed on the same computer, mail from an Exchange 2013 Edge Transport server first arrives on the computer at the Front End Transport service (the Client Access server role) before it flows to the Transport service (the Mailbox server role). Exchange 2007 or Exchange 2010 Edge Transport servers always deliver mail directly to the Transport service even when the Mailbox server and the Client Access server are installed on the same computer.
 
 For more information, see [Mail flow](mail-flow-exchange-2013-help.md).
 
@@ -289,6 +277,6 @@ The network ports that are required for an organization that uses both Exchange 
 
 The network ports that are required for Unified Messaging are covered in the following topics:
 
-  - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
+- [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
-  - [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
+- [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)

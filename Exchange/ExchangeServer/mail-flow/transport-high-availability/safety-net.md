@@ -57,6 +57,20 @@ This table describes the parameters that are used by Safety Net.
 |_MessageExpirationTimeout_ on **Set-TransportService**|2 days|How long a message can remain in a queue before it expires.|
 |_ShadowRedundancyEnabled_ on **Set-TransportConfig**|`$true`|`$true`: Shadow redundancy is enabled on all Mailbox servers in the organization. <br/><br/> `$false`: Shadow redundancy is disabled on all transport servers in the organization. <br/><br/> Redundancy for Safety Net requires shadow redundancy to be enabled.|
 
+## Safety Net maximum supported sizes
+
+In Microsoft Exchange Server 2019 and 2016, the maximum supported database size for the transport Safety Net JET database is 2 TB.
+
+When a Hub-and-spoke topology is used, the transport Safety Net JET database can grow beyond 2 TB. To stay within the supported limit of 2 TB, following these guidelines:
+
+-	Hub servers that are used for message relay can’t be configured to deliver messages to mailboxes.
+
+-	Disable Safety Net on hub servers that are used for message relay. To do this, run the following command:
+
+        Set-TransportConfig -SafetyNetHoldTime 0.00:00:15
+
+    This example configures 15 minutes for the Safety Net hold time. This is the minimum value that you can set.
+
 ## Message resubmission from Safety Net
 
 The Active Manager component of the Microsoft Exchange Replication service (MRS) manages DAGs and mailbox database copies. Message resubmissions from Safety Net require no manual actions, and are initiated by the Active Manager. For more information about Active Manager, see [Active Manager](../../high-availability/database-availability-groups/active-manager.md).
@@ -112,3 +126,6 @@ These are some other issues to consider when messages are resubmitted from Safet
 - **Users removed from a distribution group may not receive a resubmitted message when the Shadow Safety Net resubmits the message**: For example, a message is sent to a group containing User A and User B, and both recipients receive the message. User B is subsequently removed from the group. Later, a resubmit request from Primary Safety Net is made for the mailbox database that holds User B's mailbox. However, the Primary Safety Net is unavailable for more than 12 hours, so the Shadow Safety Net server responds and resubmits the affected message. During message resubmission when the distribution group is expanded, User B is no longer a member of the group, and won't receive a copy of the resubmitted message.
 
 - **New Users added to a distribution group may receive an old resubmitted message when the Shadow Safety Net resubmits the message**: For example, a message is sent to a group containing User A and User B, and both recipients receive the message. User C is subsequently added to the group. Later, a resubmit request from Primary Safety Net is made for the mailbox database that holds User C's mailbox. However, the Primary Safety Net server is unavailable for more than 12 hours, so the Shadow Safety Net server responds and resubmits the affected messages. During message resubmission when the distribution group is expanded, User C is now a member of the group, and will receive a copy of the resubmitted message.
+
+
+- **Deploying Safety Net in Hub and Spoke Topology**: Safety Net is designed to protect message delivery on Exchange Servers hosting end-user mailboxes.  Customers who have deployed a hub and spoke routing topology should disable Safety Net on transport servers in hub sites to avoid a large growth in the size of the transport database in hub locations.

@@ -21,20 +21,6 @@ You may need to coordinate schedules with people in different organizations or w
 > [!IMPORTANT]
 > This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
-**Contents**
-
-Sharing Scenarios in Exchange 2013
-
-Limitations of free/busy sharing
-
-Firewall considerations for federated sharing
-
-Coexistence with Exchange 2010
-
-Coexistence with Exchange 2007
-
-Sharing Documentation
-
 ## Sharing Scenarios in Exchange 2013
 
 The following sharing scenarios are supported in Exchange 2013:

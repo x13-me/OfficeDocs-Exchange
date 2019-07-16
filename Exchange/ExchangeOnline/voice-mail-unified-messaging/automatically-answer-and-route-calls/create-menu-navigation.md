@@ -48,31 +48,31 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 4. On the **New menu navigation entry** page, configure the following:
 
-  - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
+   - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
 
-    Because you may want to specify multiple new navigation menus, we recommend that you use meaningful names for your key mappings. The maximum length of the name for the key mapping is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>.
+     Because you may want to specify multiple new navigation menus, we recommend that you use meaningful names for your key mappings. The maximum length of the name for the key mapping is 64 characters, and it can include spaces. However, it can't include any of the following characters: `" / \ [ ] : ; | = , + * ? < >`.
 
-  - **When this key is pressed**: Use this list to enable key mapping. The key mapping is the number key that a caller presses to have the auto attendant perform a specific operation, for example, forwarding the caller to another auto attendant or to an operator. By default, no entries are defined.
+   - **When this key is pressed**: Use this list to enable key mapping. The key mapping is the number key that a caller presses to have the auto attendant perform a specific operation, for example, forwarding the caller to another auto attendant or to an operator. By default, no entries are defined.
 
-    Use the drop-down list to select the numeric key (from 1 through 9) that the caller must press. Zero (0) is reserved for the auto attendant operator.
+     Use the drop-down list to select the numeric key (from 1 through 9) that the caller must press. Zero (0) is reserved for the auto attendant operator.
 
-    If you select **Time Out** from the drop down list, it enables callers to be transferred to an extension number or to another auto attendant if they don't press a key on the telephone keypad. For example, "Please stay on the line and your call will be answered by the next available representative." The default setting is 5 seconds. If you enable this option, a blank key mapping will be created.
+     If you select **Time Out** from the drop down list, it enables callers to be transferred to an extension number or to another auto attendant if they don't press a key on the telephone keypad. For example, "Please stay on the line and your call will be answered by the next available representative." The default setting is 5 seconds. If you enable this option, a blank key mapping will be created.
 
-  - **Play the following audio file**: Use this option to select a previously recorded audio file for callers. Click **Change**, and then click **Browse** to locate the audio file.
+   - **Play the following audio file**: Use this option to select a previously recorded audio file for callers. Click **Change**, and then click **Browse** to locate the audio file.
 
-  - **Perform this additional action**: Select one of the following options to define the action that you want the auto attendant to perform for the caller:
+   - **Perform this additional action**: Select one of the following options to define the action that you want the auto attendant to perform for the caller:
 
-  - **None**: If you don't want to the auto attendant to transfer the call to an extension or to another auto attendant, or leave a message for a user, use this option.
+   - **None**: If you don't want to the auto attendant to transfer the call to an extension or to another auto attendant, or leave a message for a user, use this option.
 
-  - **Transfer to this extension**: Select this option to enable calls to be transferred to an extension number. If you enable this option, use the box to type the extension where the call will be transferred. This field allows only numeric characters. It can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>.
+   - **Transfer to this extension**: Select this option to enable calls to be transferred to an extension number. If you enable this option, use the box to type the extension where the call will be transferred. This field allows only numeric characters. It can't include any of the following characters: `" / \ [ ] : ; | = , + * ? < >`.
 
-  - **Transfer to this UM auto attendant**: Select this option to transfer the call to an auto attendant. Click **Browse** to locate the auto attendant that you want to use. Before you enable this option, you must first create and configure the auto attendant. This option is used when you create a parent/child structure of UM auto attendants.
+   - **Transfer to this UM auto attendant**: Select this option to transfer the call to an auto attendant. Click **Browse** to locate the auto attendant that you want to use. Before you enable this option, you must first create and configure the auto attendant. This option is used when you create a parent/child structure of UM auto attendants.
 
-  - **Leave a voice message for this user**: Select this option to enable a caller to leave a voice mail message for a user that's on the same dial plan as the UM auto attendant that you're configuring. When a caller chooses this option from an auto attendant menu, they'll be prompted to leave a voice message for the user that was selected. Click **Browse** to locate the UM-enabled user.
+   - **Leave a voice message for this user**: Select this option to enable a caller to leave a voice mail message for a user that's on the same dial plan as the UM auto attendant that you're configuring. When a caller chooses this option from an auto attendant menu, they'll be prompted to leave a voice message for the user that was selected. Click **Browse** to locate the UM-enabled user.
 
-  - **Announce business location**: Select this option to enable a caller to choose an auto attendant menu option and hear the location of the business that's configured on the UM auto attendant. To enable this to work correctly, you must first enter the business location in the **Business location** box on the **General** page on the UM auto attendant.
+   - **Announce business location**: Select this option to enable a caller to choose an auto attendant menu option and hear the location of the business that's configured on the UM auto attendant. To enable this to work correctly, you must first enter the business location in the **Business location** box on the **General** page on the UM auto attendant.
 
-  - **Announce business hours**: Select this option to enable a caller to choose an auto attendant menu option and hear the hours of operation for the business that's configured on the UM auto attendant. To enable this to work correctly, you must first configure the business hours on the **Business hours** page on the UM auto attendant.
+   - **Announce business hours**: Select this option to enable a caller to choose an auto attendant menu option and hear the hours of operation for the business that's configured on the UM auto attendant. To enable this to work correctly, you must first configure the business hours on the **Business hours** page on the UM auto attendant.
 
 5. Click **OK** to create the new menu navigation.
 

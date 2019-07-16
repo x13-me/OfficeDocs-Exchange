@@ -85,11 +85,15 @@ Background synchronization in Outlook for iOS and Android can also be temporaril
 
 - On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization:
 
- 1. Open **Settings**.
- 2. Tap **Battery**.
- 3. Tap the ellipse and tap **Battery optimization**.
- 4. Tap the down arrow and tap **All apps**.
- 5. For the Microsoft Authenticator, Intune Company Portal and Outlook apps, tap **Not optimized** to turn off battery optimization.
+  1. Open **Settings**.
+
+  2. Tap **Battery**.
+
+  3. Tap the ellipse and tap **Battery optimization**.
+
+  4. Tap the down arrow and tap **All apps**.
+
+  5. For the Microsoft Authenticator, Intune Company Portal and Outlook apps, tap **Not optimized** to turn off battery optimization.
 
 If the mobile operating system prevents background synchronization, users will experience the following:
 
@@ -177,6 +181,71 @@ For tenants that have not been migrated to the native Microsoft sync technology,
 Yes, Outlook for iOS and Android supports shared mailboxes when the user mailbox and shared mailbox are located in Exchange Online and using the native Microsoft sync technology. 
 
 A shared mailbox is a special mailbox type that is created using the -Shared parameter. Access to the shared mailbox by a user is obtained via permissions and not through the use of alternate credentials. For more information, please see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
+
+### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
+
+Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (e.g. FaceTime), etc. Integration with the operating system, and contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
+
+<table>
+<thead>
+<tr class="header">
+<th>&nbsp;</th>
+<th><strong>Office 365 mailbox</strong></th>
+<th><strong>On-premises mailbox using Hybrid Modern Authentication</strong></th>
+<th><strong>On-premises mailbox using Basic Authentication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Export Outlook contacts to native Contacts app</strong></td>
+<td>iOS</td>
+<td>iOS</td>
+<td>iOS, Android</td>
+</tr>
+<tr class="even">
+<td><strong>Bi-directional sync of Outlook contacts with native Contacts app</strong></td>
+<td>Android</td>
+<td>Android</td>
+<td>Not supported</td>
+</tr>
+<tr class="odd">
+<td><strong>Add a new contact from Outlook</strong></td>
+<td>iOS, Android</td>
+<td>iOS, Android</td>
+<td>Not supported</td>
+</tr>
+<tr class="even">
+<td><strong>Edit an existing contact from Outlook</strong></td>
+<td>iOS, Android</td>
+<td>iOS, Android</td>
+<td>Not supported</td>
+</tr>
+<tr class="odd">
+<td><strong>Delete an existing contact from Outlook</strong></td>
+<td>iOS, Android</td>
+<td>Not supported</td>
+<td>Not supported</td>
+</tr>
+<tr class="even">
+<td><strong>Sync profile picture between Outlook contacts and the native Contacts app</strong></td>
+<td>Android</td>
+<td>Android</td>
+<td>Not supported</td>
+</tr>
+</tbody>
+</table>
+
+For information on consumer accounts, see Outlook's in-app support FAQ on [People](https://acompli.helpshift.com/a/outlook-mobile/?l=en&s=people).
+
+By enabling contact synchronization between Outlook and the native contacts app, users receive the rich experience that the native operating system provides (e.g. inbound and outbound caller-ID, text messaging name resolution, etc.). Only Outlook for iOS should be used for managing contact data and not the native iOS Contacts app. With Outlook for Android, users can utilize either the native Contacts app or Outlook for managing contact data, as contact changes are synchronized bi-directionally.
+
+> [!NOTE]
+> In order to manage contacts (add/edit/delete) in Outlook for Android, contact sync must be enabled. This is because Outlook for Android delegates CRUD operations to the native Contacts app. 
+
+Administrators have additional capabilities with respect to contact synchronization between Outlook and the native Contacts app:
+- Administrators can disable contact synchronization via an Intune App Protection Policy. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios) and [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android).
+- Administrators can enable contact synchronization by default on enrolled devices. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+- Administrators can reduce the amount of data that is exported to the native Contacts app via an Intune App Protection Policy with contact field export controls. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## Native Microsoft sync technology migration
 

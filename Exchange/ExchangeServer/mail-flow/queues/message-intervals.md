@@ -38,9 +38,9 @@ The automatic message retry interval settings that are available in the `%Exchan
 
 |**Automatic message retry key name**|**Default value**|**Description**|
 |:-----|:-----|:-----|
-| _MailboxDeliveryQueueRetryInterval_|`00:05:00` (5 minutes)|How frequently the queues try to connect to the Mailbox Transport Delivery service for a destination mailbox database that can't be successfully reached. <br/> To specify a value, enter it as a time span: `dd.hh:mm:ss` where `dd` = days, `hh` = hours, `mm` = minutes, and `ss` = seconds. <br/> A valid value is a timespan from `00:00:01` (one second) through `1.00:00:00` (one day).|
-| _QueueGlitchRetryCount_|4|The number of connection attempts that are immediately tried when a transport server has trouble connecting with the destination server. Such connection problems are typically caused by very brief network outages. <br/> A valid value is an integer from 0 through 15. <br/> Typically, you don't need to modify this key unless the network is unreliable and continues to experience many accidentally dropped connections.|
-| _QueueGlitchRetryInterval_|`00:01:00` (1 minute)|The connection interval between each connection attempt that's specified by the _QueueGlitchRetryCount_ key. <br/> Typically, you don't need to modify this parameter unless the network is unreliable and continues to experience many accidentally dropped connections.|
+| _MailboxDeliveryQueueRetryInterval_|`00:05:00` (5 minutes)|How frequently the queues try to connect to the Mailbox Transport Delivery service for a destination mailbox database that can't be successfully reached. <br/><br/> To specify a value, enter it as a time span: `dd.hh:mm:ss` where `dd` = days, `hh` = hours, `mm` = minutes, and `ss` = seconds. <br/> A valid value is a timespan from `00:00:01` (one second) through `1.00:00:00` (one day).|
+| _QueueGlitchRetryCount_|4|The number of connection attempts that are immediately tried when a transport server has trouble connecting with the destination server. Such connection problems are typically caused by very brief network outages. <br/><br/> A valid value is an integer from 0 through 15. <br/><br/> Typically, you don't need to modify this key unless the network is unreliable and continues to experience many accidentally dropped connections.|
+| _QueueGlitchRetryInterval_|`00:01:00` (1 minute)|The connection interval between each connection attempt that's specified by the _QueueGlitchRetryCount_ key. <br/><br/> Typically, you don't need to modify this parameter unless the network is unreliable and continues to experience many accidentally dropped connections.|
 
 ### Configuration options for automatic message retry in the Exchange admin center and the Exchange Management Shell
 
@@ -55,7 +55,7 @@ The automatic message retry interval settings that are available in the Exchange
 
 ### Configuration options for manual message retry
 
-When a delivery queue is in the status of Retry, you can manually force an immediate connection attempt by using Queue Viewer in the Exchange Toolbox or the **Retry-Queue** cmdlet in the Exchange Management Shell. The manual retry attempt overrides the next scheduled retry time. If the connection isn't successful, the retry interval timer is reset. The delivery queue must be in a status of Retry for this action to have any effect. For more information, see [Retry queues](queue-procedures.md#Retry).
+When a delivery queue is in the status of Retry, you can manually force an immediate connection attempt by using Queue Viewer in the Exchange Toolbox or the **Retry-Queue** cmdlet in the Exchange Management Shell. The manual retry attempt overrides the next scheduled retry time. If the connection isn't successful, the retry interval timer is reset. The delivery queue must be in a status of Retry for this action to have any effect. For more information, see [Retry queues](queue-procedures.md#retry-queues).
 
 ### Configuration options for delay DSN messages
 
@@ -71,7 +71,7 @@ The configuration options that are available for delay DSN notification messages
 
 ## Configuration options for message resubmission
 
-Message resubmission sends undelivered messages back to the Submission queue to be reprocessed by the categorizer. For more information about the categorizer and the Submission queue, see [Understanding the Transport service on Mailbox servers](../../mail-flow/mail-flow.md#TransportService).
+Message resubmission sends undelivered messages back to the Submission queue to be reprocessed by the categorizer. For more information about the categorizer and the Submission queue, see [Understanding the Transport service on Mailbox servers](../mail-flow.md#understanding-the-transport-service-on-mailbox-servers).
 
 ### Automatic message resubmission
 
@@ -84,9 +84,9 @@ Undelivered messages in delivery queues are automatically resubmitted if the del
 
 You can manually resubmit messages by using the following methods:
 
-- Resubmit a delivery queue that has the status of Retry, or resubmit the Unreachable queue. For more information, see [Resubmit queues](queue-procedures.md#Resubmit).
+- Resubmit a delivery queue that has the status of Retry, or resubmit the Unreachable queue. For more information, see [Resubmit queues](queue-procedures.md#resubmit-queues).
 
-- Resubmit messages in the poison message queue. For more information, see [Resubmit messages in the poison message queue](queue-procedures.md#PoisonResubmit).
+- Resubmit messages in the poison message queue. For more information, see [Resubmit messages in the poison message queue](queue-procedures.md#resubmit-messages-in-the-poison-message-queue).
 
 - Suspend a queue, suspend the messages in the queue, export the messages to files, and copy the files to the Replay directory on any Mailbox server or Edge Transport server. For more information, see [Export messages from queues](export-messages.md).
 

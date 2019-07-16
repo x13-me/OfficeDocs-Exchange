@@ -49,11 +49,9 @@ The following examples are scenarios in which your Exchange organization may hav
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Create an authoritative domain
 
-## Use the Exchange Administration Center to create an authoritative domain
+### Use the Exchange admin center to create an authoritative domain
 
 1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
@@ -65,7 +63,7 @@ The following examples are scenarios in which your Exchange organization may hav
 
 5. Click **Save**.
 
-## Use the Shell to create an authoritative domain
+### Use the Shell to create an authoritative domain
 
 To create a new authoritative domain, use the following syntax.
 
@@ -79,7 +77,7 @@ For example, to create a new authoritative domain named "Fourth Coffee subsidiar
 New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully created an authoritative domain, do one of the following:
 
@@ -91,11 +89,11 @@ To verify that you have successfully created an authoritative domain, do one of 
 
 To use the authoritative accepted domain you created, you need to configure an email address policy for the authoritative domain that meets the objectives of your scenario. For example, you may need to create a new email address policy, or modify an existing policy. You may elect to replace the primary email address for some or all of your recipients, and you can elect to keep or remove the old primary email address. Two example scenarios are presented in this section.
 
-## Change the existing primary email address
+### Change the existing primary email address
 
 To change the primary (reply to) email address assigned to recipients and keep the old primary email address as a proxy (secondary) email address, follow these steps:
 
-## Use the EAC to change the existing primary email address
+#### Use the EAC to change the existing primary email address
 
 1. In the EAC, navigate to **Mail flow** \> **Email address policies**. Select the email address policy you want to modify, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
@@ -113,7 +111,7 @@ To change the primary (reply to) email address assigned to recipients and keep t
 
 5. You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
-## Use the Shell to change the existing primary email address
+#### Use the Shell to change the existing primary email address
 
 In the Shell, you use two separate commands: one command to modify the existing email address policy, and another command to apply the updated email address policy to the recipients in your organization.
 
@@ -144,13 +142,13 @@ For example, to apply the updated email address policy named "Default Policy", r
 Update-EmailAddressPolicy "Default Policy"
 ```
 
-## Replace the existing primary email address for a filtered set of recipients
+### Replace the existing primary email address for a filtered set of recipients
 
 You can't modify the default email address policy to apply to a filtered set of recipients. You need to create a new email address policy, or modify an existing custom email address policy. The examples in this section create a new email address policy. In these examples, the primary (reply to) address in the new accepted domain replaces the old primary address for the specified recipients without keeping the old primary address as a proxy (secondary) email address. Therefore, the affected recipients can no longer receive email at their old primary email address.
 
 Also, email address policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy, so the specific policy is applied first. Because two policies can't have the same priority value, you may first need lower the priority of your organization's default email address policy.
 
-## Use the EAC to replace the existing primary email address for a filtered set of recipients
+#### Use the EAC to replace the existing primary email address for a filtered set of recipients
 
 To create additional email addresses that will be used as the primary email address for a filtered set of recipients, follow these steps.
 
@@ -158,17 +156,17 @@ To create additional email addresses that will be used as the primary email addr
 
 2. On the **Email Address Policy** page, complete the following fields:
 
-    1. **Policy name**: Enter a unique, descriptive name.
+   1. **Policy name**: Enter a unique, descriptive name.
 
-    2. **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
+   2. **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
 
-       - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
+      - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
 
-       - **Email address format**: Select the appropriate email address format for your organization.
+      - **Email address format**: Select the appropriate email address format for your organization.
 
-       - Select **Make this format the reply email address**.
+      - Select **Make this format the reply email address**.
 
-        When you are finished, click **Save**.
+      When you are finished, click **Save**.
 
 3. **Run this policy in this sequence with other policies**: Typically, policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy.
 
@@ -185,7 +183,7 @@ To create additional email addresses that will be used as the primary email addr
 
 8. You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
-## Use the Shell to replace the existing primary email address for a filtered set of recipients
+#### Use the Shell to replace the existing primary email address for a filtered set of recipients
 
 To replace the primary email address for a filtered set of recipients, use the following command:
 
@@ -205,7 +203,7 @@ To apply the new email address policy to the affected recipients, run the follow
 Update-EmailAddressPolicy "Fourth Coffee Recipients"
 ```
 
-## How do you know this step worked?
+#### How do you know this step worked?
 
 To verify that you have successfully configured an email address policy for the authoritative domain, do one of the following:
 

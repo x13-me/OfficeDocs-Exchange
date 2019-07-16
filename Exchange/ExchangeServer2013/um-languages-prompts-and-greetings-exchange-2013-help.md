@@ -26,37 +26,19 @@ Exchange Unified Messaging language packs are version-specific and platform-spec
 
 It's very important that you install the correct version and platform of the UM language packs on a Mailbox server. Don't install UM language packs on a Mailbox server that's running an earlier version of Exchange or that's designed for a 32-bit platform.
 
-**Contents**
-
-Overview of UM language packs
-
-UM language components and features
-
-Voice Mail Preview
-
-Unified Messaging languages
-
-Unified Messaging language packs
-
-UM dial plan languages
-
-UM auto attendant languages
-
-Client language selection process
-
 ## Overview of UM language packs
 
 Unified Messaging language packs allow a Mailbox server to speak additional languages to callers and recognize other languages when callers use ASR or when voice messages are transcribed. UM language packs contain:
 
-  - Pre-recorded prompts in the language of the UM language pack. For example, "After the tone, please record your message. When you've finished recording, hang up, or press the \# key for more options."
+- Pre-recorded prompts in the language of the UM language pack. For example, "After the tone, please record your message. When you've finished recording, hang up, or press the \# key for more options."
 
-  - Grammar files in the language of the UM language pack that are used by a Mailbox server to look up the names of given users in the directory.
+- Grammar files in the language of the UM language pack that are used by a Mailbox server to look up the names of given users in the directory.
 
-  - Text-to-Speech (TTS) translation so that content (email, calendar, contact information, etc.) can be read to callers in the language of the UM language pack.
+- Text-to-Speech (TTS) translation so that content (email, calendar, contact information, etc.) can be read to callers in the language of the UM language pack.
 
-  - Support for Automatic Speech Recognition, which allows callers to interact with UM using the voice user interface (VUI) in the language of the UM language pack.
+- Support for Automatic Speech Recognition, which allows callers to interact with UM using the voice user interface (VUI) in the language of the UM language pack.
 
-  - Support for Voice Mail Preview, which allows users to read the transcript of voice mail messages in a specific language from within a supported email client such as Outlook or Outlook Web App.
+- Support for Voice Mail Preview, which allows users to read the transcript of voice mail messages in a specific language from within a supported email client such as Outlook or Outlook Web App.
 
 UM language packs include pre-recorded prompts, TTS conversion support for a specific language, and in some cases, support for ASR. In multiple-language environments, you may have to install additional UM language packs because some callers prefer to be prompted in a different language, or because they receive email in more than one language. You must install multiple UM language packs to support the ability of the Mailbox server to read an email message that contains more than one language, because the TTS conversion system must be instructed which language to select based on the text of the message to be read. If the Unified Messaging language pack hasn't been installed, the email message will be illogical and incoherent when it's read back to the user. Installing the appropriate language pack enables the TTS engine to read email and calendar items to the Outlook Voice Access user by using the correct language and also provides language-specific pre-recorded prompts for Unified Messaging. In some cases, they may also provide support for ASR.
 
@@ -299,13 +281,13 @@ When an additional UM language pack is installed, the pre-recorded prompts for t
 
 Unified Messaging relies on a Text-to-Speech (TTS) engine. TTS functionality is provided by the Microsoft Speech Server service. The TTS engine reads and converts written text into audible output that can be heard by a caller. The TTS engine reads and converts the following items in a user's mailbox:
 
-  - Email and voice mail message bodies, subjects, and names
+- Email and voice mail message bodies, subjects, and names
 
-  - Calendar item bodies, subjects, locations, and names
+- Calendar item bodies, subjects, locations, and names
 
-  - Personal contact names
+- Personal contact names
 
-  - Users' default voice mail greetings
+- Users' default voice mail greetings
 
 > [!NOTE]
 > After a user has recorded personalized voice mail greetings, the TTS version of the voice greetings are no longer used.
@@ -324,19 +306,19 @@ All UM language packs are single files that can be downloaded. These language pa
 
 The following UM language packs contain support for all the components and features, including Voice Mail Preview:
 
-  - English (US) - (en-US)
+- English (US) - (en-US)
 
-  - English (Canada) (en-CA)
+- English (Canada) (en-CA)
 
-  - French (France) - (fr-FR)
+- French (France) - (fr-FR)
 
-  - Italian - (it-IT)
+- Italian - (it-IT)
 
-  - Polish (pl-PL)
+- Polish (pl-PL)
 
-  - Portuguese (Portugal) (pt-PT)
+- Portuguese (Portugal) (pt-PT)
 
-  - Spanish (Spain) (es-ES)
+- Spanish (Spain) (es-ES)
 
 By default, after you install the Mailbox server, the server will send voice mail previews to UM-enabled users if a supported UM language pack is installed.
 
@@ -350,11 +332,11 @@ You can download the UM language packs from the [Microsoft Download Center](http
 
 To enable callers to use the multiple language features found in Unified Messaging, you must first install a UM language pack. Then you have the option to configure other UM components.
 
-  - Install the UM language pack on the Mailbox servers in your organization.
+- Install the UM language pack on the Mailbox servers in your organization.
 
-  - If required, configure the default language for a UM dial plan. This lets Outlook Voice Access users associated with the UM dial plan use the new language when they access their mailbox. However, users can still configure their language setting in the Outlook Web App Options.
+- If required, configure the default language for a UM dial plan. This lets Outlook Voice Access users associated with the UM dial plan use the new language when they access their mailbox. However, users can still configure their language setting in the Outlook Web App Options.
 
-  - If you need to enable multiple languages on auto attendants, configure the language setting on a UM auto attendant. By default, a UM auto attendant uses the UM dial plan language. However, you can change this setting and enable unauthenticated callers to connect to your organization and move through the auto attendant menus in the language that you've specified on the UM auto attendant.
+- If you need to enable multiple languages on auto attendants, configure the language setting on a UM auto attendant. By default, a UM auto attendant uses the UM dial plan language. However, you can change this setting and enable unauthenticated callers to connect to your organization and move through the auto attendant menus in the language that you've specified on the UM auto attendant.
 
 ## Unified Messaging language packs
 

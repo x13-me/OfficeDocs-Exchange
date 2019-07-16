@@ -48,13 +48,13 @@ For additional management tasks related to managing email client access to a mai
 
 4. Under **Email Connectivity**, do one of the following:
 
-  - To disable Outlook Web App, under **Outlook Web App: Enabled**, click **Disable**.
+   - To disable Outlook Web App, under **Outlook Web App: Enabled**, click **Disable**.
 
-    A warning appears asking if you're sure you want to disable Outlook Web App. Click **Yes**.
+     A warning appears asking if you're sure you want to disable Outlook Web App. Click **Yes**.
 
-  - To enable Outlook Web App, under **Outlook Web App: Disabled**, click **Enable**.
+   - To enable Outlook Web App, under **Outlook Web App: Disabled**, click **Enable**.
 
-5.  Click **Save** to save your change.
+5. Click **Save** to save your change.
 
 > [!NOTE]
 > You can enable and disable Outlook Web App for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes-exchange-2013-help.md).

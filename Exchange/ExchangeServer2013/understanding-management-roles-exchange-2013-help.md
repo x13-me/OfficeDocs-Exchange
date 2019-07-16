@@ -21,29 +21,11 @@ Management roles are part of the Role Based Access Control (RBAC) permissions mo
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
 
-**Contents**
-
-Built-in management roles
-
-Unscoped top-level management roles
-
-Custom management roles
-
-Management role hierarchy
-
-Management role entries
-
-Unscoped top-level role entries
-
-Management role types
-
-For more information
-
 Management role scopes and management role assignments are important components for the operation of management roles. For more information about these components, see the following topics:
 
-  - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-  - [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
+- [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
 
 Looking for management tasks related to management roles? See [Permissions](permissions-exchange-2013-help.md).
 
@@ -51,13 +33,13 @@ Looking for management tasks related to management roles? See [Permissions](perm
 
 Exchange 2013 provides many built-in management roles that you can use to administer your organization. Each role includes the cmdlets and parameters necessary for users to manage specific Exchange components. The following are examples of some built-in management roles:
 
-  - **Mail Recipients**: Enables administrators to manage mailboxes, contacts, and mail users.
+- **Mail Recipients**: Enables administrators to manage mailboxes, contacts, and mail users.
 
-  - **Transport Rules**: Enables administrators or specialist users assigned the role to manage the transport rules feature.
+- **Transport Rules**: Enables administrators or specialist users assigned the role to manage the transport rules feature.
 
-  - **Distribution Groups**: Enables administrators or specialist users assigned the role to manage distribution groups and distribution group members.
+- **Distribution Groups**: Enables administrators or specialist users assigned the role to manage distribution groups and distribution group members.
 
-  - **MyPersonalInformation**: Enables end users to modify their own home phone number and Web site address.
+- **MyPersonalInformation**: Enables end users to modify their own home phone number and Web site address.
 
 For a complete list of the management roles included with Exchange 2013, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
@@ -74,11 +56,11 @@ You need to assign management roles for them to take effect. Most often, you ass
 
 For more information about assigning management roles, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
+- [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 For more information about management role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
@@ -102,15 +84,15 @@ You can create custom management roles based on built-in Exchange roles when the
 
 Custom roles become children of the role used to create the new role. You can only use management role entries in the new child role that exist in the parent role. For more information, see the following sections later in this topic:
 
-  - Management Role Hierarchy
+- Management Role Hierarchy
 
-  - Management Role Entries
+- Management Role Entries
 
 Creating custom management roles requires multiple steps and is an advanced task that you should rarely, if ever, need to perform. Before you create a custom management role, make sure one of the existing built-in management roles doesn't provide the permissions you need. For more information about the built-in management roles, or if you want to create custom management roles, see the following topics:
 
-  - [Built-in management roles](built-in-management-roles-exchange-2013-help.md)
+- [Built-in management roles](built-in-management-roles-exchange-2013-help.md)
 
-  - [Advanced permissions](advanced-permissions-exchange-2013-help.md)
+- [Advanced permissions](advanced-permissions-exchange-2013-help.md)
 
 For more information about how to create a management role, see [Create a role](create-a-role-exchange-2013-help.md).
 
@@ -209,13 +191,13 @@ Management role types are the foundation of all management roles. Types define t
 
 Management role types are split into the following categories:
 
-  - **Administrative or specialist**: Roles associated with an administrative or specialist role types have a broader scope of impact in the Exchange organization. Roles of this role type enable tasks such as server or recipient management, organization configuration, compliance administration, auditing, and more.
+- **Administrative or specialist**: Roles associated with an administrative or specialist role types have a broader scope of impact in the Exchange organization. Roles of this role type enable tasks such as server or recipient management, organization configuration, compliance administration, auditing, and more.
 
-  - **User-focused**: Roles associated with a user-focused role type have a scope of impact closely tied with an individual user. Roles of this role type enable tasks such as user profile configuration and self management, management of user-owned distribution groups, and more.
+- **User-focused**: Roles associated with a user-focused role type have a scope of impact closely tied with an individual user. Roles of this role type enable tasks such as user profile configuration and self management, management of user-owned distribution groups, and more.
 
     The names of roles associated with user-focused role types and user-focused role type names begin with My.
 
-  - **Specialty**: Roles associated with specialty role types enable tasks that aren't administrative or user-focused role types. Roles of this role type enable tasks such as application impersonation and the use of non-Exchange cmdlets or scripts.
+- **Specialty**: Roles associated with specialty role types enable tasks that aren't administrative or user-focused role types. Roles of this role type enable tasks such as application impersonation and the use of non-Exchange cmdlets or scripts.
 
 The following table lists all of the administrative management role types in Exchange 2013 and whether the configuration that's permitted by the role type is applied across the whole Exchange organization or only to an individual server. For more information about each of the management roles associated with these role types, including a description of each role, who may benefit from being assigned the role, and other information, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
@@ -347,7 +329,7 @@ The following table lists all of the administrative management role types in Exc
 <tr class="even">
 <td><p><code>ExchangeVirtualDirectories</code></p></td>
 <td><p><a href="exchange-virtual-directories-role-exchange-2013-help.md">Exchange Virtual Directories role</a></p></td>
-<td><p>This role type is associated with roles that enable administrators to manage Outlook Web App, Microsoft ActiveSync, offline address book (OAB), Autodiscover, Windows PowerShell, and Exchange Administration Center virtual directories on individual servers.</p></td>
+<td><p>This role type is associated with roles that enable administrators to manage Outlook Web App, Microsoft ActiveSync, offline address book (OAB), Autodiscover, Windows PowerShell, and Exchange admin center virtual directories on individual servers.</p></td>
 <td><p>Server</p></td>
 </tr>
 <tr class="odd">
@@ -479,7 +461,7 @@ The following table lists all of the administrative management role types in Exc
 <li><p>The URL for the managed folder home page.</p></li>
 <li><p>The Microsoft Exchange recipient SMTP address and alternate email addresses.</p></li>
 <li><p>The resource mailbox property schema configuration.</p></li>
-<li><p>The Help URLs for the Exchange Administration Center and Outlook Web App.</p></li>
+<li><p>The Help URLs for the Exchange admin center and Outlook Web App.</p></li>
 </ul>
 <p>This role type doesn't include the permissions included in the <code>OrganizationClientAccess</code> or <code>OrganizationTransportSettings</code> role types.</p></td>
 <td><p>Organization</p></td>

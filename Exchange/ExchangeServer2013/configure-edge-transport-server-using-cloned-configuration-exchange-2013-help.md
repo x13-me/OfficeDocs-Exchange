@@ -45,8 +45,6 @@ Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Export the source server configuration data to a file on the source server
 
 1. Copy the ExportEdgeConfig.ps1 script to the root folder of your user profile on the source server.

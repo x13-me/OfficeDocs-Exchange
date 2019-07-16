@@ -18,20 +18,6 @@ _**Applies to:** Exchange Server 2013_
 
 *Message throttling* refers to a group of limits that are set on the number of messages and connections that can be processed by a Microsoft Exchange Server 2013 computer. These limits prevent the accidental or intentional exhaustion of system resources on the Exchange server.
 
-**Contents**
-
-Message throttling scope
-
-Message cost and mail flow throttling
-
-Message throttling on servers
-
-Message throttling on Send connectors
-
-Message throttling on Receive connectors
-
-Message throttling policies
-
 ## Message throttling scope
 
 Message throttling involves a variety of limits on message processing rates, SMTP connection rates, and SMTP session time-out values. These limits work together to protect an Exchange server from being overwhelmed by accepting and delivering messages. Although a large backlog of messages and connections may be waiting to be processed, the message throttling limits enable the Exchange server to process the messages and connections in an orderly manner.
@@ -99,7 +85,7 @@ You can set the message throttling options at the following locations:
 
 - On a Receive connector
 
-You can set all the message throttling options that are available in the Transport service on Mailbox servers, in the Mailbox Transport service on Mailbox servers, or in the Front End Transport service on Client Access servers using the Exchange Management Shell. You can also set some of the same options by configuring the transport server properties in the Exchange Administration Center (EAC).
+You can set all the message throttling options that are available in the Transport service on Mailbox servers, in the Mailbox Transport service on Mailbox servers, or in the Front End Transport service on Client Access servers using the Exchange Management Shell. You can also set some of the same options by configuring the transport server properties in the Exchange admin center (EAC).
 
 The following table shows the message throttling options that are available on transport servers.
 

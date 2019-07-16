@@ -22,75 +22,69 @@ By default, protocol logging is disabled on all Send connectors and Receive conn
 
 The following options are available for the protocol logs of all Send connectors or all Receive connectors in each transport service on the Exchange server:
 
-  - Specify the location of the Send connector or the Receive connector protocol log files.
+- Specify the location of the Send connector or the Receive connector protocol log files.
 
-  - Specify a maximum size for the Send connector or the Receive connector protocol log files. The default size is 10 megabytes (MB).
+- Specify a maximum size for the Send connector or the Receive connector protocol log files. The default size is 10 megabytes (MB).
 
-  - Specify a maximum size for the directory that contains the Send connector or Receive connector protocol log files. The default size is 250 MB.
+- Specify a maximum size for the directory that contains the Send connector or Receive connector protocol log files. The default size is 250 MB.
 
-  - Specify a maximum age for the Send connector or Receive connector protocol log files. The default age is 30 days.
+- Specify a maximum age for the Send connector or Receive connector protocol log files. The default age is 30 days.
 
 By default, Exchange uses circular logging to limit the protocol logs based on file size and file age to help control the hard disk space used by the log files.
 
 A special Send connector named the intra-organization Send connector exists in the Transport service on every Mailbox server, and in the Front End Transport service on every Client Access server. This connector is implicitly created, invisible, and requires no management. The intra-organization Send connector is used by the following transport services:
 
-  - **Transport service on Mailbox servers**
+- **Transport service on Mailbox servers**
 
-      - Relays messages to the Transport service and the Mailbox Transport service on other Exchange 2013 Mailbox servers in the organization.
+  - Relays messages to the Transport service and the Mailbox Transport service on other Exchange 2013 Mailbox servers in the organization.
 
-      - Relays messages to other Exchange 2007 or Exchange 2010 Hub Transport servers in the organization.
+  - Relays messages to other Exchange 2007 or Exchange 2010 Hub Transport servers in the organization.
 
-      - Relays messages to Edge Transport servers in the perimeter network.
+  - Relays messages to Edge Transport servers in the perimeter network.
 
-  - **Front End Transport service on Client Access servers**: Relays messages to the Transport service on Exchange 2013 Mailbox servers in the organization.
+- **Front End Transport service on Client Access servers**: Relays messages to the Transport service on Exchange 2013 Mailbox servers in the organization.
 
 An equivalent Send connector named the mailbox delivery Send connector exists in the Mailbox Transport service on every Mailbox server. This connector is also implicitly created, invisible, and requires no management. The mailbox delivery Send connector is used to relay messages to the Transport service and the Mailbox Transport service on other Mailbox servers in the organization.
 
 By default, protocol logging for the mailbox delivery Send connector is also disabled. You can enable or disable protocol logging for the mailbox delivery Send connector by using the *MailboxDeliveryConnectorProtocolLoggingLevel* parameter on the **Set-MailboxTransportService** cmdlet. If you enable protocol logging for the mailbox delivery Send connector, logging occurs in the Send connector protocol logs for the Mailbox Transport service on the Mailbox server.
 
-**Contents**
-
-Structure of the protocol log files
-
-Information written to the protocol log
-
 ## Structure of the protocol log files
 
 By default, the protocol log files exist in the following locations:
 
-  - **Receive connector protocol log files for the Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\ProtocolLog\\SmtpReceive
+- **Receive connector protocol log files for the Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\ProtocolLog\\SmtpReceive
 
-  - **Receive connector protocol log files for the Mailbox Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\ProtocolLog\\SmtpReceive
+- **Receive connector protocol log files for the Mailbox Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\ProtocolLog\\SmtpReceive
 
-  - **Receive connector protocol log files for the Front End Transport service on Client Access servers**: %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\ProtocolLog\\SmtpReceive
+- **Receive connector protocol log files for the Front End Transport service on Client Access servers**: %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\ProtocolLog\\SmtpReceive
 
-  - **Send connector protocol log files for the Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\ProtocolLog\\SmtpSend
+- **Send connector protocol log files for the Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\ProtocolLog\\SmtpSend
 
-  - **Send connector protocol log files for the Mailbox Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\ProtocolLog\\SmtpSend
+- **Send connector protocol log files for the Mailbox Transport service on Mailbox servers**: %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\ProtocolLog\\SmtpSend
 
-  - **Send connector protocol log files for the Front End Transport service on Client Access servers**: %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\ProtocolLog\\SmtpSend
+- **Send connector protocol log files for the Front End Transport service on Client Access servers**: %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\ProtocolLog\\SmtpSend
 
 The naming convention for log files in each protocol log directory is *prefixyyyymmdd-nnnn*.log. The placeholders represent the following information:
 
-  - The placeholder *prefix* is SEND for Send connectors or RECV for Receive connectors.
+- The placeholder *prefix* is SEND for Send connectors or RECV for Receive connectors.
 
-  - The placeholder *yyyymmdd* is the Coordinated Universal Time (UTC) date on which the log file was created. The placeholder *yyyy* = year, *mm* = month, and *dd* = day.
+- The placeholder *yyyymmdd* is the Coordinated Universal Time (UTC) date on which the log file was created. The placeholder *yyyy* = year, *mm* = month, and *dd* = day.
 
-  - The placeholder *nnnn* is an instance number that starts at the value of 1 for each day.
+- The placeholder *nnnn* is an instance number that starts at the value of 1 for each day.
 
 Information is written to the log file until the file size reaches its maximum specified value, and a new log file that has an incremented instance number is opened. This process is repeated throughout the day. Circular logging deletes the oldest log files when the protocol log directory reaches its maximum specified size, or when a log file reaches its maximum specified age.
 
 The protocol log files are text files that contain data in the comma-separated value file (CSV) format. Each protocol log file has a header that contains the following information:
 
-  - **\#Software**: Name of the software that created the protocol log file. Typically, the value is Microsoft Exchange Server.
+- **\#Software**: Name of the software that created the protocol log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version**: Version number of the software that created the protocol log file. Currently, the value is 15.0.0.0.
+- **\#Version**: Version number of the software that created the protocol log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type**: Log type value of this field, which is either SMTP Receive Protocol Log or SMTP Send Protocol Log.
+- **\#Log-Type**: Log type value of this field, which is either SMTP Receive Protocol Log or SMTP Send Protocol Log.
 
-  - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+- **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields**: Comma-delimited field names used in the protocol log files.
+- **\#Fields**: Comma-delimited field names used in the protocol log files.
 
 ## Information written to the protocol log
 

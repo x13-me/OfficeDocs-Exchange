@@ -23,7 +23,7 @@ Outlook Web App Web Parts let you access Outlook Web App content directly from a
 > [!NOTE]
 > To use Outlook Web App Web Parts, both the user's mailbox and the mailbox being opened through a Web Part must be located in the same Active Directory forest.
 
-## Permissions for Using Outlook Web Access Web Parts
+## Permissions for Using Outlook Web App Web Parts
 
 To use Outlook Web App Web Parts, you must, at a minimum, be delegated "Reviewer" access to the content that you're opening. If you've embedded an Outlook Web App Web Part that requires authentication into an application, you must pass authentication information through together with the request for the Web Part. One way to do this is by configuring the Outlook Web App virtual directory to use Integrated Windows authentication. Integrated Windows authentication lets users who've already logged on by using their Active Directory account use Outlook Web App without having to enter their credentials again.
 

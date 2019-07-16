@@ -22,13 +22,13 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute
+- Estimated time to complete: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - Before you can remove a DAG, the DAG must be empty. If the DAG you want to remove contains any Mailbox servers, you must first remove the servers from the DAG. For detailed steps about how to remove a Mailbox server from a DAG, see [Manage database availability group membership](manage-database-availability-group-membership-exchange-2013-help.md).
+- Before you can remove a DAG, the DAG must be empty. If the DAG you want to remove contains any Mailbox servers, you must first remove the servers from the DAG. For detailed steps about how to remove a Mailbox server from a DAG, see [Manage database availability group membership](manage-database-availability-group-membership-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -53,12 +53,12 @@ Remove-DatabaseAvailabilityGroup -Identity DAG1
 
 To verify that you've successfully removed the DAG, do one of the following:
 
-  - In the EAC, go to **Servers** \> **Database Availability Groups**, and see if the DAG is still displayed.
+- In the EAC, go to **Servers** \> **Database Availability Groups**, and see if the DAG is still displayed.
 
-  - In the Shell, run the following command to see if the DAG still exists:
+- In the Shell, run the following command to see if the DAG still exists:
 
-    ```powershell
-    Get-DatabaseAvailabilityGroup <DAGName>
-    ```
+  ```powershell
+  Get-DatabaseAvailabilityGroup <DAGName>
+  ```
 
-    If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.
+  If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.

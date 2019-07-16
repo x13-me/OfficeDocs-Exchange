@@ -12,11 +12,11 @@ description: "Instructions for performing a G Suite migration to Office 365."
 
 # Perform a G Suite migration
 
-You can perform a staged migration from G Suite to Office 365. A staged migration requires that you have Office 365 Directory Synchronization (DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate.
+You can migrate batches of users from G Suite to Office 365, allowing a migration project to be done in stages. This migration requires that you have Office 365 Directory Synchronization (DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
 
 If you don't have DirSync in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
 
-To manually provision mail-enabled users without DirSync, see [Manage mail users](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-users#use-directory-synchronization-to-manage-mail-users-in-exchange-online) for more information.
+To manually provision mail-enabled users without DirSync, see [Manage mail users](https://docs.microsoft.com/en-us/Exchange/recipients-in-exchange-online/manage-mail-users) for more information.
 
 All of the procedures in this article assume that your Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
@@ -55,7 +55,7 @@ After all migration batches have been completed, all users can use their migrate
 ## Create a Google Service Account
 
 > [!IMPORTANT]
-> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly. <br/><br/> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well.
+> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly. <br/><br/> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well. Please look at Google's Documentation for how to [Create a Service Account]((https://support.google.com/a/answer/7378726)) for clarifications in case the UI has changed significantly.
 
 1. In Chrome, go to the [Developer page for Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) and sign in as a Google user (such as the G Suite admin).
 
@@ -79,13 +79,13 @@ After all migration batches have been completed, all users can use their migrate
 
 7. Keep track of the JSON keyfile that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Office 365](#create-a-migration-endpoint-in-office-365). Click **Done**.
 
-8. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
+8. Click on the **Email** for the Service Account you just created to enter the details page. Alternately, you can click the dots under the **Actions** column and click on the **Edit** action. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
 
-   ![Unique ID](../media/gsuite-mig-6-enable-domain-delegation.png)
+   ![Unique ID](../media/gsuite-mig-6-unique-id.png)
 
-9. Still on the **Service account details** page, if necessary, click **Show Domain-Wide Delegation**.
+9. If you see an area that says **Show Domain-Wide Delegation**, click to expand that section. Then, enable the checkbox for **Enable G Suite Domain-wide Delegation**, and then click **Save**. Google is currently in the process of updating this UI, so you may not see such an option. If you don't see such an option, then this is enabled by default.
 
-10. Click to select **Enable G Suite Domain-wide Delegation**, and then click **Save**.
+   ![Domain-Wide Delegation](../media/gsuite-mig-7-enable-domain-delegation.png)
 
 ## Enable API usage in your project
 
@@ -158,9 +158,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 Once your G Suite environment has been properly configured, you can complete your migration in the Exchange admin center or through the Exchange Online PowerShell.
 
-Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users). Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain (will@gsuite.fabrikaminc.net). The users should also have a proxy address that will be used for routing to their Office 365 routing domain (such as "will@o365.fabrikaminc.net").
+Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
 
-The primary email address that you provision for each user should be the same as the users' primary email addresses on the source G Suite side.
+We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between O365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
 ## Start a G Suite migration batch with the Exchange admin center (EAC)
 

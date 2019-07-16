@@ -51,19 +51,19 @@ For additional management tasks related to recipients, see the following topics:
 
 4. Under **Message Delivery Restrictions**, click **View details** to view and change the following delivery restrictions:
 
-  - **Accept messages from** Use this section to specify who can send messages to this user.
+   - **Accept messages from** Use this section to specify who can send messages to this user.
 
-  - **All senders** This option specifies that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This is the default option. It includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
+   - **All senders** This option specifies that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This is the default option. It includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
 
-  - **Only senders in the following list** This option specifies that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+   - **Only senders in the following list** This option specifies that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-  - **Require that all senders are authenticated** This option prevents anonymous users from sending messages to the user. This includes external users that are outside of your Exchange organization.
+   - **Require that all senders are authenticated** This option prevents anonymous users from sending messages to the user. This includes external users that are outside of your Exchange organization.
 
-  - **Reject messages from** Use this section to block people from sending messages to this user.
+   - **Reject messages from** Use this section to block people from sending messages to this user.
 
-  - **No senders** This option specifies that the mailbox won't reject messages from any senders in the Exchange organization. This is the default option.
+   - **No senders** This option specifies that the mailbox won't reject messages from any senders in the Exchange organization. This is the default option.
 
-  - **Senders in the following list** This option specifies that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+   - **Senders in the following list** This option specifies that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
 5. Click **OK** to close the **Message Delivery Restrictions** page, and then click **Save** to save your changes.
 

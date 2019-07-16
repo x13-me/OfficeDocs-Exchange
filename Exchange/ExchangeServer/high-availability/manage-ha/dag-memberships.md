@@ -43,22 +43,20 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
 
 ## Use the EAC to manage database availability group membership
-<a name="UseEMC"> </a>
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
 2. Select the DAG you want to configure, and then click ![Manage DAG members](../../media/ITPro_EAC_ManageDagMembersIcon.png).
 
-  - To add one or more Mailbox servers to the DAG, click ![Add icon](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
+   - To add one or more Mailbox servers to the DAG, click ![Add icon](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
 
-  - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
+   - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
 
 3. Click **Save** to save the changes.
 
 4. When the task has completed successfully, click **Close**.
 
 ## Use the Exchange Management Shell to manage database availability group membership
-<a name="UseShell"> </a>
 
 This example adds the Mailbox server MBX1 to the DAG DAG1.
 
@@ -79,7 +77,6 @@ Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -Confi
 ```
 
 ## How do you know this worked?
-<a name="UseShell"> </a>
 
 To verify that you've successfully managed DAG membership, do one of the following:
 
@@ -92,7 +89,6 @@ To verify that you've successfully managed DAG membership, do one of the followi
   ```
 
 ## For more information
-<a name="UseShell"> </a>
 
 [Add-DatabaseAvailabilityGroupServer](http://technet.microsoft.com/library/6bd0a3fe-dec6-47c2-b9a3-8dffb60e4aad.aspx)
 

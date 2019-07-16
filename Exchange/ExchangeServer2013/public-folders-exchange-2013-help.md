@@ -28,9 +28,9 @@ Public folders can also be used as an archiving method for distribution groups. 
 
 Public folders aren't designed to do the following:
 
-  - **Data archiving** Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) as your archiving solution.
+- **Data archiving** Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) as your archiving solution.
 
-  - **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) as your documentation sharing solution.
+- **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) as your documentation sharing solution.
 
 To learn more about public folders and other collaboration methods in Exchange 2013, see [Collaboration](collaboration-exchange-2013-help.md).
 
@@ -42,18 +42,6 @@ For a list of public folder management tasks, see [Public folder procedures](pub
 
 Looking for the Exchange Online version of this topic? See [Public folders in Office 365 and Exchange Online](https://technet.microsoft.com/en-us/library/jj200758\(v=exchg.150\)).
 
-**Contents**
-
-Public folder architecture
-
-Migrate public folders
-
-Public folder moves
-
-Public folder quotas
-
-Disaster recovery
-
 ## Public folder architecture
 
 In Exchange 2013, public folders were re-engineered using mailbox infrastructure to take advantage of the existing high availability and storage technologies of the mailbox database. Public folder architecture uses specially designed mailboxes to store both the public folder hierarchy and the content. This also means that there's no longer a public folder database. High availability for the public folder mailboxes is provided by a database availability group (DAG). To learn more about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
@@ -64,40 +52,40 @@ The main architectural components of public folders are the public folder mailbo
 
 There are two types of public folder mailboxes: the *primary hierarchy mailbox* and *secondary hierarchy mailboxes*. Both types of mailboxes can contain content:
 
-  - **Primary hierarchy mailbox**: The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies.
+- **Primary hierarchy mailbox**: The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies.
 
-  - **Secondary hierarchy mailboxes**: Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy.
+- **Secondary hierarchy mailboxes**: Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy.
 
 > [!NOTE]
 > Retention policies aren't supported for public folder mailboxes.
 
 There are two ways you can manage public folder mailboxes:
 
-  - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
+- In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
 
-  - In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)) cmdlet to support public folder mailboxes:
+- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)) cmdlet to support public folder mailboxes:
 
-      - *PublicFolder*: This parameter is used with the **New-Mailbox** cmdlet to create a public folder mailbox. When you create a public folder mailbox, a new mailbox is created with the mailbox type of `PublicFolder`. For more information, see [Create a public folder mailbox](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
+  - *PublicFolder*: This parameter is used with the **New-Mailbox** cmdlet to create a public folder mailbox. When you create a public folder mailbox, a new mailbox is created with the mailbox type of `PublicFolder`. For more information, see [Create a public folder mailbox](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
-      - *HoldForMigration*: This parameter is used only if you are migrating public folders from a previous version to Exchange 2013. For more information, see Migrate Public folders from previous versions later in this topic.
+  - *HoldForMigration*: This parameter is used only if you are migrating public folders from a previous version to Exchange 2013. For more information, see Migrate Public folders from previous versions later in this topic.
 
-      - *IsHierarchyReady*: This parameter indicates whether the public folder mailbox is ready to serve the public folder hierarchy to users. It's set to `$True` only after the entire hierarchy has been synced to the public folder mailbox. If the parameter is set to $False, users won't use it to access the hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsHierarchyReady* parameter is set to `$False`.
+  - *IsHierarchyReady*: This parameter indicates whether the public folder mailbox is ready to serve the public folder hierarchy to users. It's set to `$True` only after the entire hierarchy has been synced to the public folder mailbox. If the parameter is set to $False, users won't use it to access the hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsHierarchyReady* parameter is set to `$False`.
 
-      - *IsExcludedFromServingHierarchy*: This parameter prevents users from accessing the public folder hierarchy on the specified public folder mailbox. For load-balancing purposes, users are equally distributed across public folder mailboxes by default. When this parameter is set on a public folder mailbox, that mailbox isn't included in this automatic load balancing and won't be accessed by users to retrieve the public folder hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsExcludedFromServingHierarchy* parameter is set for that public folder mailbox.
+  - *IsExcludedFromServingHierarchy*: This parameter prevents users from accessing the public folder hierarchy on the specified public folder mailbox. For load-balancing purposes, users are equally distributed across public folder mailboxes by default. When this parameter is set on a public folder mailbox, that mailbox isn't included in this automatic load balancing and won't be accessed by users to retrieve the public folder hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsExcludedFromServingHierarchy* parameter is set for that public folder mailbox.
 
 A secondary hierarchy mailbox will serve only public folder hierarchy information to users if it's specified explicitly on the users' mailboxes using the *DefaultPublicFolderMailbox* property, or if the following conditions are met:
 
-  - The *IsHierarchyReady* property on the public folder mailbox is set to `$True`.
+- The *IsHierarchyReady* property on the public folder mailbox is set to `$True`.
 
-  - The *IsExcludedFromServingHierarchy* property on the public folder mailbox is set to `$False`.
+- The *IsExcludedFromServingHierarchy* property on the public folder mailbox is set to `$False`.
 
 ## Public folder hierarchy
 
 The public folder hierarchy contains the folders' properties and organizational information, including tree structure. Each public folder mailbox contains a copy of the public folder hierarchy. There's only one writeable copy of the hierarchy, which is in the primary public folder mailbox. For a specific folder, the hierarchy information is used to identify the following:
 
-  - Permissions on the folder
+- Permissions on the folder
 
-  - The folder's position in the public folder tree, including its parent and child folders
+- The folder's position in the public folder tree, including its parent and child folders
 
 > [!NOTE]
 > The hierarchy doesn't store information about email addresses for mail-enabled public folders. The email addresses are stored on the directory object in Active Directory.
@@ -142,11 +130,11 @@ In addition to moving public folders, you can move public folder mailboxes to di
 
 When created, public folder mailboxes automatically inherit the size limits of the mailbox database defaults. As a result, to accurately evaluate the current storage quota status when using the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) cmdlet, you must review at the *UseDatabaseQuotaDefaults* property in addition to the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties. If the *UseDatabaseQuotaDefaults* property is set to `true`, the per-mailbox settings are ignored and the mailbox database limits are used. If this property is set to `true` and the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties are set to `unlimited`, the mailbox size isn't really unlimited. Instead, you must use the **Get-MailboxDatabase** cmdlet and review the mailbox database storage limits to find out what the limits for the mailbox are. If the *UseDatabaseQuotaDefaults* property is set to `false`, the per-mailbox settings are used. In Exchange 2013, the default mailbox database quota limits are as follows:
 
-  - *Issue warning quota*: 1.9 GB
+- *Issue warning quota*: 1.9 GB
 
-  - *Prohibit send quota*: 2 GB
+- *Prohibit send quota*: 2 GB
 
-  - *Prohibit receive quota*: 2.3 GB
+- *Prohibit receive quota*: 2.3 GB
 
 To find the mailbox database quotas, run the [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\)) cmdlet.
 
@@ -158,11 +146,11 @@ Exchange 2013 public folders are built on mailbox infrastructure and use the sam
 
 In addition to the overall disaster recovery scenario, you can also restore public folders in the following situations:
 
-  - **Soft-deleted public folder restore**: The public folder was deleted but is still within the retention period.
+- **Soft-deleted public folder restore**: The public folder was deleted but is still within the retention period.
 
-  - **Soft-deleted public folder mailbox restore**: The public folder mailbox was deleted and is still within the mailbox retention period.
+- **Soft-deleted public folder mailbox restore**: The public folder mailbox was deleted and is still within the mailbox retention period.
 
-  - **Public folder mailbox restore from a recovery database**: You can recover an individual public folder mailbox from backup when the deleted mailbox retention period has elapsed. You then extract data from the restored mailbox and copy it to a target folder or merge it with another mailbox.
+- **Public folder mailbox restore from a recovery database**: You can recover an individual public folder mailbox from backup when the deleted mailbox retention period has elapsed. You then extract data from the restored mailbox and copy it to a target folder or merge it with another mailbox.
 
 In all of these situations, the public folder or public folder mailbox is recoverable by using the **MailboxRestoreRequest** cmdlets.
 

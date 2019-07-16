@@ -154,7 +154,7 @@ You can use the following methods to search mailbox audit log entries:
 
   - **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://technet.microsoft.com/en-us/library/ff522362\(v=exchg.150\)) cmdlet. For details, see [Create a mailbox audit log search](create-a-mailbox-audit-log-search-exchange-2013-help.md).
 
-  - **Use auditing reports in the Exchange Admin Center (EAC)**: You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report or export entries from the mailbox audit log. For details, see:
+  - **Use auditing reports in the Exchange admin center (EAC)**: You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report or export entries from the mailbox audit log. For details, see:
 
       - [Run a non-owner mailbox access report](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 

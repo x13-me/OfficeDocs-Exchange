@@ -37,8 +37,6 @@ This topic shows you how to configure server-to-server authentication between Ex
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Configure server-to-server authentication for Exchange 2013 on a server running SharePoint Server 2013
 
 Run the following command to create Exchange 2013 as a trusted security token issuer in SharePoint 2013.

@@ -33,8 +33,6 @@ When you're upgrading a Microsoft Exchange 2007 organization with Unified Messag
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
-## How do you do this?
-
 ## Step 1: Download and install the required UM language packs
 
 UM language packs enable callers and Outlook Voice Access users to interact with the voice mail system in multiple languages. After you install an additional language on an Exchange 2013 Mailbox server, callers and Outlook Voice Access users can hear email messages and interact with the voice mail system in that language. However, to make the language available for all incoming calls, you must install the required UM language packs on all Exchange 2013 Mailbox servers. This is because every Exchange 2013 Mailbox server can answer incoming calls for Unified Messaging.
@@ -127,31 +125,31 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
   > [!TIP]
   > If you specify the services you want to enable by using the <EM>Services</EM> parameter, you will be prompted to enable the services for the certificate you created. In this example, you will be prompted to enable the certificate for the Unified Messaging and Unified Messaging Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
-  - Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2007, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2007 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2007 UM servers to the SAN in the Exchange 2013 certificate.
+- Import the certificate that will be used on all Exchange 2013 Client Access and Mailbox servers in your organization. If you use the Exchange 2013 self-signed certificate, you'll need to copy the certificate, then import it on the VoIP gateways, IP PBXs, or SIP-enabled PBXs. If you use the self-signed certificate from Exchange 2007, the Subject Alternative Name (SAN) must contain the machine names of all the Exchange 2013 servers. If you have Exchange 2007 Unified Messaging servers in your organization, you can use the Exchange 2013 self-signed certificate, but you must add the machine names of the Exchange 2007 UM servers to the SAN in the Exchange 2013 certificate.
 
-  - Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
+- Enable or assign the certificate to be used to the UM and UM Call Router services on the Client Access and Mailbox servers in your organization.
 
-    Enable the UM service and the UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
+  Enable the UM service and the UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
-    1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-    2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
+  2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
 
-    Enable an Exchange self-signed certificate by running the following command in the Shell.
+  Enable an Exchange self-signed certificate by running the following command in the Shell.
 
-    ```powershell
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-    ```
+  ```powershell
+  Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+  ```
 
-  - Configure any new or existing UM dial plans as SIP secured or Secured.
+- Configure any new or existing UM dial plans as SIP secured or Secured.
 
-  - Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
+- Configure the UM startup mode to TLS or Dual on the Client Access and Mailbox servers in your organization.
 
-  - Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
+- Create and configure new or existing UM IP gateways with a fully qualified domain name (FQDN).
 
-  - Configure the listening port on the UM IP gateways to use TLS port 5061.
+- Configure the listening port on the UM IP gateways to use TLS port 5061.
 
-  - Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
+- Restart the UM Call Router service on all Exchange 2013 Client Access servers and restart the UM service on all Exchange 2013 Mailbox servers. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
 ## Step 4: Configure the UM startup mode on all Exchange 2013 Client Access servers
 
@@ -206,7 +204,7 @@ Configure the UM startup mode on an Exchange 2013 Mailbox server by using the EA
 Configure the UM startup mode on an Exchange 2013 Mailbox server by running the following command in the Shell.
 
 ```powershell
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
 ```
 
 ## Step 6: Create or configure existing UM dial plans
@@ -317,7 +315,7 @@ If required, you can configure an existing UM IP gateway by using the EAC:
 If required, you can configure an existing UM IP gateway by running the following command in the Shell.
 
 ```powershell
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
 ## Step 8: Create a UM hunt group
@@ -345,7 +343,7 @@ If required, you can create a UM hunt group by using the EAC:
 If required, you can create a UM hunt group by running the following command in the Shell.
 
 ```powershell
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
 
 > [!TIP]
@@ -382,7 +380,7 @@ If required, you can create a UM auto attendant by using the EAC, as follows:
 If required, you can create a UM auto attendant by running the following command in the Shell.
 
 ```powershell
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
 ```
 
 If required, you can configure an existing auto attendant by using the EAC:
@@ -394,7 +392,7 @@ If required, you can configure an existing auto attendant by using the EAC:
 If required, you can configure an existing auto attendant by running the following command in the Shell.
 
 ```powershell
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
 ```
 
 ## Step 10: Create or configure UM mailbox policies
@@ -432,7 +430,7 @@ If required, you can configure an existing UM mailbox policy by using the EAC:
 If required, you can configure an existing UM mailbox policy by running the following command in the Shell.
 
 ```powershell
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```
 
 ## Step 11: Move existing UM-enabled mailboxes to Exchange 2013
@@ -443,13 +441,13 @@ During the process of upgrading, there will be a period of time during which you
 
 A move request is the process of moving a mailbox from one mailbox database to another. A local move request is a mailbox move that occurs within a single forest. For more information about mailbox moves, see:
 
-  - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
+- [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-  - [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
 
-  - [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
 
-  - [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
+- [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
 
 To move an Exchange 2007 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
@@ -534,7 +532,7 @@ If required, you can configure a user that's been enabled for UM by using the EA
 If required, you can configure a user that's been enabled for UM in the Shell by running the following command.
 
 ```powershell
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
 ```
 
 ## Step 13: Configure your VoIP gateways, IP PBXs, and SIP-enabled PBXs to send all incoming calls to the Exchange 2013 Client Access servers

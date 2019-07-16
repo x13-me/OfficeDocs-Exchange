@@ -40,34 +40,33 @@ Each mailbox database copy has its own properties, which you can configure. Thes
 
 3. In the Details pane, under **Database Copies**, click **View details** for the desired database copy, and then view or configure the following:
 
-  - **Database**: Displays the name of the selected database.
+   - **Database**: Displays the name of the selected database.
 
-  - **Mailbox server**: Displays the name of the Mailbox server that hosts the selected database copy.
+   - **Mailbox server**: Displays the name of the Mailbox server that hosts the selected database copy.
 
-  - **Content index state**: Displays the current state of the content index for the selected database copy.
+   - **Content index state**: Displays the current state of the content index for the selected database copy.
 
-  - **Status**: Displays the current status of the selected database copy.
+   - **Status**: Displays the current status of the selected database copy.
 
-  - **Copy queue length**: Indicates the number of log files waiting to be copied to the selected database copy. This field is relevant only for passive database copies.
+   - **Copy queue length**: Indicates the number of log files waiting to be copied to the selected database copy. This field is relevant only for passive database copies.
 
-  - **Replay queue length**: Indicates the number of log files waiting to be replayed into the selected database copy. This field is relevant only for passive database copies.
+   - **Replay queue length**: Indicates the number of log files waiting to be replayed into the selected database copy. This field is relevant only for passive database copies.
 
-  - **Error messages**: Displays any error messages for database copies that have a status of `Failed` or `Failed and Suspended`.
+   - **Error messages**: Displays any error messages for database copies that have a status of `Failed` or `Failed and Suspended`.
 
-  - **Latest available log time**: Displays the date and time stamp of the most recently generated log file on the active copy of the database. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
+   - **Latest available log time**: Displays the date and time stamp of the most recently generated log file on the active copy of the database. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
 
-  - **Last inspected log time**: Displays the date and time stamp of the last log file that was inspected by the LogInspector on the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
+   - **Last inspected log time**: Displays the date and time stamp of the last log file that was inspected by the LogInspector on the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
 
-  - **Last copied log time**: Displays the date and time stamp of the last log file that was copied by the LogCopier on the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
+   - **Last copied log time**: Displays the date and time stamp of the last log file that was copied by the LogCopier on the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
 
-  - **Last replayed log time**: Displays the date and time stamp of the last log file that was replayed by the LogReplayer into the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
+   - **Last replayed log time**: Displays the date and time stamp of the last log file that was replayed by the LogReplayer into the selected database copy. This field is relevant only for passive database copies. On active database copies (replicated and stand-alone), this field will display never.
 
-  - **Activation preference number**: Displays the activation preference number. This is used as part of Active Manager's best copy selection process, and it is used to balance the DAG by redistributing active mailbox databases throughout the DAG via the DAG's `PreferenceMoveFrequency` property. This property defines the frequency (measured in time) when the Microsoft Exchange Replication service rebalances database copies by performing a lossless switchover that activates the copy with an activation preference number of 1. The value for activation preference is a number equal to or greater than 1, where 1 is at the top of the preference order. The number can't be larger than the number of copies of the mailbox database.
+   - **Activation preference number**: Displays the activation preference number. This is used as part of Active Manager's best copy selection process, and it is used to balance the DAG by redistributing active mailbox databases throughout the DAG via the DAG's `PreferenceMoveFrequency` property. This property defines the frequency (measured in time) when the Microsoft Exchange Replication service rebalances database copies by performing a lossless switchover that activates the copy with an activation preference number of 1. The value for activation preference is a number equal to or greater than 1, where 1 is at the top of the preference order. The number can't be larger than the number of copies of the mailbox database.
 
-  - **Replay lag time (days)**: Displays the amount of time that the Microsoft Exchange Information Store service should wait before replaying log files that have been copied by the Microsoft Exchange Replication service to the passive database copy. Setting this parameter to a value greater than 0 creates a lagged database copy. The default setting for this value is 0 days. The maximum allowable value for this setting is 14 days. The minimum allowable value is 0 days, and setting this value to 0 disables replay lag.
+   - **Replay lag time (days)**: Displays the amount of time that the Microsoft Exchange Information Store service should wait before replaying log files that have been copied by the Microsoft Exchange Replication service to the passive database copy. Setting this parameter to a value greater than 0 creates a lagged database copy. The default setting for this value is 0 days. The maximum allowable value for this setting is 14 days. The minimum allowable value is 0 days, and setting this value to 0 disables replay lag.
 
 ## Use the Exchange Management Shell to configure mailbox database copy properties
-<a name="UseShell"> </a>
 
 This example configures a mailbox database copy with an activation preference number of 3.
 
@@ -82,7 +81,6 @@ Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -Truncation
 ```
 
 ## How do you know this worked?
-<a name="UseShell"> </a>
 
 To verify that you've successfully configured a mailbox database copy, do one of the following:
 
@@ -95,7 +93,6 @@ To verify that you've successfully configured a mailbox database copy, do one of
   ```
 
 ## For more information
-<a name="UseShell"> </a>
 
 [Set-MailboxDatabaseCopy](http://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx)
 

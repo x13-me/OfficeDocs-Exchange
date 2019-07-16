@@ -27,13 +27,13 @@ For additional management tasks related to Transport rules, see [Manage transpor
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes per server.
+- Estimated time to complete each procedure: 5 minutes per server.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange server configuration settings" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange server configuration settings" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - You must perform the procedures below on servers that already have Exchange 2013 Mailbox server role installed. If you add additional Mailbox servers after you perform these procedures, you must perform them again on the newly provisioned servers.
+- You must perform the procedures below on servers that already have Exchange 2013 Mailbox server role installed. If you add additional Mailbox servers after you perform these procedures, you must perform them again on the newly provisioned servers.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,9 +42,9 @@ For additional management tasks related to Transport rules, see [Manage transpor
 
 By default, the following Office file types aren't supported by Exchange transport rules:
 
-  - Office OneNote
+- Office OneNote
 
-  - Office Publisher
+- Office Publisher
 
 If you want to support these files, you must deploy the Microsoft Office 2010 Filter Pack. This Filter Pack isn't deployed during Exchange 2013 Setup and isn't a prerequisite for deployment.
 
@@ -52,9 +52,9 @@ If you want to support these files, you must deploy the Microsoft Office 2010 Fi
 
 Deploying the Office 2010 Filter Pack consists of two main steps:
 
-  - Downloading and installing the Filter Pack, which registers the IFilters with Windows (Search).
+- Downloading and installing the Filter Pack, which registers the IFilters with Windows (Search).
 
-  - Modifying the registry so the IFilters are also registered with Exchange 2013. This allows Exchange to support attachment scanning for the file formats.
+- Modifying the registry so the IFilters are also registered with Exchange 2013. This allows Exchange to support attachment scanning for the file formats.
 
 > [!IMPORTANT]
 > You must perform this procedure on all Mailbox servers in your organization.
@@ -133,11 +133,11 @@ To verify that you have successfully registered the Microsoft Office 2010 Filter
 
 1. Create a Transport rule with the following properties. For detailed instructions about how to create Transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
-      - The sender is your mailbox.
+   - The sender is your mailbox.
 
-      - Any attachment's content includes "Testing IFilters".
+   - Any attachment's content includes "Testing IFilters".
 
-      - Generate an incident report and send it to your mailbox.
+   - Generate an incident report and send it to your mailbox.
 
 2. Create a OneNote file that contains the phrase "Testing IFilters", attach it to a new email message, and send it to yourself.
 
@@ -163,46 +163,46 @@ This procedure shows how to deploy the [Adobe PDF IFilter](https://www.adobe.com
 
 2. Start Registry Editor and locate the following subkey:
 
-    ```powershell
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-    ```
+   ```text
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+   ```
 
 3. Under **CLSID**, add a subkey for PDF files as follows:
 
-    1. Right-click **CLSID**, point to **New**, and then click **Key**.
+   1. Right-click **CLSID**, point to **New**, and then click **Key**.
 
-    2. Change the name of the new key to `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`.
+   2. Change the name of the new key to `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`.
 
-        > [!NOTE]
-        > Each IFilter has a unique class ID (CLSID). You can find the CLSID in the installation documentation for the IFilter you're registering or by searching for the file extension under the <CODE>HKEY_CLASSES_ROOT\CLSID</CODE> key in the registry.
+      > [!NOTE]
+      > Each IFilter has a unique class ID (CLSID). You can find the CLSID in the installation documentation for the IFilter you're registering or by searching for the file extension under the <CODE>HKEY_CLASSES_ROOT\CLSID</CODE> key in the registry.
 
-    3. Click the key you just created and set the **(Default)** value to where you installed the PDF IFilter. By default, the PDF IFilter is installed at `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll`.
+   3. Click the key you just created and set the **(Default)** value to where you installed the PDF IFilter. By default, the PDF IFilter is installed at `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll`.
 
 4. Locate the following registry key:
 
-    ```powershell
+    ```text
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
     ```
 
 5. Under **filters**, add a subkey for .pdf extensions as follows:
 
-    1. Right-click **filters**, point to **New**, and then click **Key**.
+   1. Right-click **filters**, point to **New**, and then click **Key**.
 
-    2. Change the name of the new key to `.pdf`.
+   2. Change the name of the new key to `.pdf`.
 
-    3. Click the key you just created and set the **(Default)** value to `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`.
+   3. Click the key you just created and set the **(Default)** value to `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`.
 
 6. Close Registry Editor.
 
 7. On your Mailbox server, stop and restart the following services in the specified order:
 
-    1. Stop the Microsoft Exchange Transport service.
+   1. Stop the Microsoft Exchange Transport service.
 
-    2. Stop the Microsoft Filtering Management Service.
+   2. Stop the Microsoft Filtering Management Service.
 
-    3. Start the Microsoft Filtering Management Service.
+   3. Start the Microsoft Filtering Management Service.
 
-    4. Start the Microsoft Exchange Transport service.
+   4. Start the Microsoft Exchange Transport service.
 
 ## How do you know this worked?
 

@@ -26,11 +26,11 @@ When you configure redirection from a top-level directory in Windows Server 2008
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes.
+- Estimated time to complete: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "IIS Manager" entry in the Outlook Web App Permissions section of the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "IIS Manager" entry in the Outlook Web App Permissions section of the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -74,23 +74,23 @@ To remove redirection from a virtual directory, perform the following steps:
 
 3. Run the following commands:
 
-    1. `appcmd set config "Default Web Site/autodiscover" /section:httpredirect /enabled:false -commit:apphost`
+   1. `appcmd set config "Default Web Site/autodiscover" /section:httpredirect /enabled:false -commit:apphost`
 
-    2. `appcmd set config "Default Web Site/ecp" /section:httpredirect /enabled:false -commit:apphost`
+   2. `appcmd set config "Default Web Site/ecp" /section:httpredirect /enabled:false -commit:apphost`
 
-    3. `appcmd set config "Default Web Site/ews" /section:httpredirect /enabled:false -commit:apphost`
+   3. `appcmd set config "Default Web Site/ews" /section:httpredirect /enabled:false -commit:apphost`
 
-    4. `appcmd set config "Default Web Site/owa" /section:httpredirect /enabled:false -commit:apphost`
+   4. `appcmd set config "Default Web Site/owa" /section:httpredirect /enabled:false -commit:apphost`
 
-    5. `appcmd set config "Default Web Site/oab" /section:httpredirect /enabled:false -commit:apphost`
+   5. `appcmd set config "Default Web Site/oab" /section:httpredirect /enabled:false -commit:apphost`
 
-    6. `appcmd set config "Default Web Site/powershell" /section:httpredirect /enabled:false -commit:apphost`
+   6. `appcmd set config "Default Web Site/powershell" /section:httpredirect /enabled:false -commit:apphost`
 
-    7. `appcmd set config "Default Web Site/rpc" /section:httpredirect /enabled:false -commit:apphost`
+   7. `appcmd set config "Default Web Site/rpc" /section:httpredirect /enabled:false -commit:apphost`
 
-    8. `appcmd set config "Default Web Site/rpcwithcert" /section:httpredirect /enabled:false -commit:apphost`
+   8. `appcmd set config "Default Web Site/rpcwithcert" /section:httpredirect /enabled:false -commit:apphost`
 
-    9. `appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:httpredirect /enabled:false -commit:apphost`
+   9. `appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:httpredirect /enabled:false -commit:apphost`
 
 4. Finish by running the command `iisreset/noforce`.
 
@@ -100,6 +100,6 @@ When you configure redirection from a top-level directory, a web.config file may
 
 To verify that you have successfully simplified the Outlook Web App URL and redirected it to an SSL connection, do the following:
 
-1. Open a web browser and enter the new URL for Outlook Web App, using the format http://\<*URL*\>.
+1. Open a web browser and enter the new URL for Outlook Web App, using the format `http://<URL>`.
 
 2. You should be redirected to the Outlook Web App sign-in page through an SSL connection.
