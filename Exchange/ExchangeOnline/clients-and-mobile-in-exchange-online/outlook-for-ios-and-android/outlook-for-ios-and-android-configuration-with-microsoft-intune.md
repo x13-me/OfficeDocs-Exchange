@@ -53,7 +53,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 ## General app configuration scenarios
 
-Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any MDM provider and for devices that are not enrolled when Outlook for iOS and Android is managed by Intune with an Intune App Protection Policy applied.
+Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any MDM provider and for devices that are not enrolled when Outlook for iOS and Android has an Intune App Protection Policy applied.
 
 Outlook supports the following settings for configuration:
 
