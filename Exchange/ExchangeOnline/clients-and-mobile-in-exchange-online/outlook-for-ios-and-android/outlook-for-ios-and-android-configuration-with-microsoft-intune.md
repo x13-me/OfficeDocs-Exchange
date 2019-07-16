@@ -252,8 +252,8 @@ The following steps allow you to create an app configuration policy. After the c
 
 11. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
 
-   > [!NOTE]
-   > If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model instead of using **Managed devices**. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
+      > [!NOTE]
+      > If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model instead of using **Managed devices**. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
 
     - For **Authentication type**, select **Modern authentication**. This is required for Office 365 accounts or on-premises accounts leveraging hybrid modern authentication.
 
