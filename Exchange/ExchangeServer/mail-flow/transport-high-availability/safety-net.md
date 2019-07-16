@@ -57,6 +57,20 @@ This table describes the parameters that are used by Safety Net.
 |_MessageExpirationTimeout_ on **Set-TransportService**|2 days|How long a message can remain in a queue before it expires.|
 |_ShadowRedundancyEnabled_ on **Set-TransportConfig**|`$true`|`$true`: Shadow redundancy is enabled on all Mailbox servers in the organization. <br/><br/> `$false`: Shadow redundancy is disabled on all transport servers in the organization. <br/><br/> Redundancy for Safety Net requires shadow redundancy to be enabled.|
 
+## Safety Net maximum supported sizes
+
+In Microsoft Exchange Server 2019 and 2016, the maximum supported database size for the transport Safety Net JET database is 2 TB.
+
+When a Hub-and-spoke topology is used, the transport Safety Net JET database can grow beyond 2 TB. To stay within the supported limit of 2 TB, follow these guidelines:
+
+-	Hub servers that are used for message relay can’t be configured to deliver messages to mailboxes.
+
+-	Disable Safety Net on hub servers that are used for message relay. To do this, run the following command:
+
+        Set-TransportConfig -SafetyNetHoldTime 0.00:00:15
+
+    This example configures 15 minutes for the Safety Net hold time. This is the minimum value that you can set.
+
 ## Message resubmission from Safety Net
 
 The Active Manager component of the Microsoft Exchange Replication service (MRS) manages DAGs and mailbox database copies. Message resubmissions from Safety Net require no manual actions, and are initiated by the Active Manager. For more information about Active Manager, see [Active Manager](../../high-availability/database-availability-groups/active-manager.md).
