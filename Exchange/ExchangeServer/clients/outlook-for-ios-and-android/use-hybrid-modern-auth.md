@@ -128,7 +128,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Outlook for iOS and Android requires an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use Outlook for iOS and Android on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, your users are not licensed to use the app.
 
-   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://support.office.com/article/41ae293a-bd5c-4083-acd8-e1a2b4329da6) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 subscription license within the Office 365 Admin Center.
+   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://support.office.com/article/41ae293a-bd5c-4083-acd8-e1a2b4329da6) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 subscription license within the Microsoft 365 Admin Center.
 
    For more information on how to assign a license, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
 
