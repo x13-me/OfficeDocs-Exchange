@@ -85,7 +85,7 @@ To install Office Online Server, do the following on the computer where you want
 
    - Volume License or Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
 
-   - Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+   - Direct customers can submit a request from their Microsoft 365 admin center or [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 2. Navigate to the location where you downloaded Office Online Server and run setup.exe.
 
