@@ -126,7 +126,7 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 2. In the Exchange Management Shell, run the following command:
 
    ```
-   Get-User | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
+   Get-User -ResultSize Unlimited | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
    ```
 
 ### Re-create the Microsoft Exchange organization mailbox for OABs
