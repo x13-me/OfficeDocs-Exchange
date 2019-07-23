@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
-description: "Instructions for performing a G Suite migration to Office 365."
+description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 
 # Perform a G Suite migration
@@ -51,6 +51,15 @@ Meanwhile, the forwarding address has been removed from the Office 365 user obje
 ![After G Suite migration is complete](../media/gsuite-mig-after-migration.png)
 
 After all migration batches have been completed, all users can use their migrated mailboxes on Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Office 365 tenant instead of the G Suite tenant.  The routing domains and extra aliases can now be removed, as can the G Suite tenant. The migration of mail, calendar, and contacts from G Suite to Office 365 is now complete.
+
+## Migration limitations
+
+Mail data is currently migrated using the IMAP protocol. For mail data there is a throughput limitation, enforced by G Suite, of 2 GB per mailbox per day. When you reach your 2 GB limit for the day, your migration will pause, but it will automatically continue the next day. Migrations resume once there is capacity to migrate more data, until the 2 GB per day limit is reached again.
+
+> [!NOTE]
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 no supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+
+Contacts and calendar information is migrated via a different protocol. For this reason, throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
 
 ## Create a Google Service Account
 
