@@ -306,7 +306,7 @@ New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-i
 
 ## Exchange Online controls
 
-Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can also manage the access that mobile devices have to information in your organization through various Exchange Online controls.
+Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can manage the access that mobile devices have to information in your organization through various Exchange Online controls, as well as, whether to allow users access to add-ins within Outlook for iOS and Android.
 
 ### Exchange Web Services (EWS) application policies
 
@@ -325,3 +325,15 @@ With the native Microsoft sync technology, administrators can control usage of O
 ```
 Set-CASMailbox jane@contoso.com -OutlookMobileEnabled $false
 ```
+
+### Managing add-ins
+
+Outlook for iOS and Android lets users integrate popular apps and services with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and mobile. Since add-ins are managed via Office 365, users are able to share data and messages between Outlook for iOS and Android and the unmanaged add-in (even when the account is managed by an Intune App Protection policy), unless add-ins are turned off for the user within the M365 admin center.
+
+If you want to stop your end users from accessing and installing Outlook add-ins (which affects all Outlook clients), execute the following changes to roles in the M365 admin center:
+
+- To prevent users from installing Office Store add-ins, remove the My Marketplace role from them.
+- To prevent users from side loading add-ins, remove the My Custom Apps role from them.
+- To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
+
+For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Specify the administrators and users who can install and manage add-ins for Outlook]([https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
