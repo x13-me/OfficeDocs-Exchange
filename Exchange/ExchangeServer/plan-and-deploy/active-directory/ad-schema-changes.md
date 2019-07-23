@@ -26,7 +26,17 @@ Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all
 
 ::: moniker range="exchserver-2019"
 > [!NOTE]
-> The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [How do you know this worked?](../prepare-ad-and-domains.md#how-do-you-know-this-worked) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
+> The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
+
+## Exchange 2019 CU2 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU2.
+
+## Exchange 2019 CU1 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU1.
+
+However, a reduction in Active Directory permissions is made: The AdminSDHolder object on the domain is updated to remove the "Allow" ACE that grants the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB 4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
 
 ## Exchange 2019 RTM Active Directory schema changes
 
@@ -39,7 +49,9 @@ This section summarizes the changes that are made to the Active Directory schema
 - [Attributes added by Exchange 2019 RTM](#attributes-added-by-exchange-2019-rtm)
 
 - [Global catalog attributes added by Exchange 2019 RTM](#global-catalog-attributes-added-by-exchange-2019-rtm)
+
 - [Attributes modified by Exchange 2019 RTM](#attributes-modified-by-exchange-2019-rtm)
+
 - [Object IDs added by Exchange 2019 RTM](#object-ids-added-by-exchange-2019-rtm)
 
 - [Indexed attributes added by Exchange 2019 RTM](#indexed-attributes-added-by-exchange-2019-rtm)
@@ -1446,39 +1458,40 @@ The following table lists the extended rights that are added when you install Ex
 ::: moniker range="exchserver-2016"
 |**Current Exchange 2016 release installed**|**New Exchange 2016 release being installed**|**Are schema updates required?**|
 |:-----|:-----|:-----|
-|Cumulative Update 6|Cumulative Update 11|**Yes**, updates are required. Schema updates in CU7 need to be applied.|
-|Cumulative Update 3|Cumulative Update 4|**No**, no updates are required. No schema changes were made in CU4.|
-|Cumulative Update 2|Cumulative Update 4|**Yes**, updates are required. Schema updates in CU3 need to be applied.|
-|Release to Manufacturing|Cumulative Update 4|**Yes**, updates are required. Schema updates in CU1, CU2, and CU3 need to be applied.|
+|Release to Manufacturing|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU1, CU2 and CU3 schema updates.|
+|Cumulative Update 2|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU3 schema updates.|
+|Cumulative Update 3|Cumulative Update 4 <br> through <br> Cumulative Update 6|**No**, no schema updates are required. <br> No schema changes are made in CU4 through CU6.|
+|Cumulative Update 6|Cumulative Update 7 <br> through <br> Cumulative Update 11|**Yes**, schema updates are required. <br> You need to apply the CU7 schema updates.|
+|Cumulative Update 7|Cumulative Update 8 <br> through <br> Cumulative Update 11|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU11.|
 
 > [!NOTE]
-> The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [How do you know this worked?](../prepare-ad-and-domains.md#how-do-you-know-this-worked) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
+> The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
 
 ## Exchange 2016 CU13 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU13.
+No changes are made to the Active Directory schema in Exchange 2016 in CU13.
 
 ## Exchange 2016 CU12 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU12.
+No changes are made to the Active Directory schema in Exchange 2016 in CU12.
 
-However, a reduction in Active Directory permissions was made: The AdminSDHolder object on the domain was updated to remove the "Allow" ACE that granted the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB 4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
+However, a reduction in Active Directory permissions is made: The AdminSDHolder object on the domain is updated to remove the "Allow" ACE that grants the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB 4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
 
 ## Exchange 2016 CU11 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU11.
+No changes are made to the Active Directory schema in Exchange 2016 in CU11.
 
 ## Exchange 2016 CU10 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU10.
+No changes are made to the Active Directory schema in Exchange 2016 in CU10.
 
 ## Exchange 2016 CU9 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU9.
+No changes are made to the Active Directory schema in Exchange 2016 in CU9.
 
 ## Exchange 2016 CU8 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU8.
+No changes are made to the Active Directory schema in Exchange 2016 in CU8.
 
 ## Exchange 2016 CU7 Active Directory schema changes
 
@@ -1532,9 +1545,17 @@ The following attribute object IDs are added when you install Exchange 2016 CU7:
 
 - 1.2.840.113556.1.4.7000.102.52161
 
-## Exchange 2016 CU4 - CU6 Active Directory schema changes
+## Exchange 2016 CU6 Active Directory schema changes
 
-No changes were made to the Active Directory schema in Exchange 2016 in CU4, CU5, or CU6.
+No changes are made to the Active Directory schema in Exchange 2016 CU6.
+
+## Exchange 2016 CU5 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 CU5.
+
+## Exchange 2016 CU4 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 CU4.
 
 ## Exchange 2016 CU3 Active Directory schema changes
 
