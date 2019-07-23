@@ -1454,11 +1454,15 @@ The following table lists the extended rights that are added when you install Ex
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [How do you know this worked?](../prepare-ad-and-domains.md#how-do-you-know-this-worked) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
 
+## Exchange 2016 CU13 Active Directory schema changes
+
+No changes were made to the Active Directory schema in Exchange 2016 in CU13.
+
 ## Exchange 2016 CU12 Active Directory schema changes
 
 No changes were made to the Active Directory schema in Exchange 2016 in CU12.
 
-However, a reduction in Active Directory permissions was made: The AdminSDHolder object on the domain was updated to remove the "Allow" ACE that granted the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
+However, a reduction in Active Directory permissions was made: The AdminSDHolder object on the domain was updated to remove the "Allow" ACE that granted the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB 4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
 
 ## Exchange 2016 CU11 Active Directory schema changes
 
@@ -1480,18 +1484,17 @@ No changes were made to the Active Directory schema in Exchange 2016 in CU8.
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU7. This section includes the following subsections:
 
-- [Classes added by Exchange 2016 CU7](ad-schema-changes.md#ClassesAddCU7)
+- [Classes added by Exchange 2016 CU7](#classes-added-by-exchange-2016-cu7)
 
-- [Classes modified by Exchange 2016 CU7](ad-schema-changes.md#ClassesModCU7)
+- [Classes modified by Exchange 2016 CU7](#classes-modified-by-exchange-2016-cu7)
 
-- [Attributes added by Exchange 2016 CU7](ad-schema-changes.md#AttribAddCU7)
+- [Attributes added by Exchange 2016 CU7](#attributes-added-by-exchange-2016-cu7)
 
-- [Attributes modified by Exchange 2016 CU7](ad-schema-changes.md#AttribModCU7)
+- [Attributes modified by Exchange 2016 CU7](#attributes-modified-by-exchange-2016-cu7)
 
-- [Object IDs added by Exchange 2016 CU7](ad-schema-changes.md#ObjIDsAddCU7)
+- [Object IDs added by Exchange 2016 CU7](#object-ids-added-by-exchange-2016-cu7)
 
 ### Classes added by Exchange 2016 CU7
-<a name="ClassesAddCU7"> </a>
 
 This section contains the classes added in Exchange 2016 CU7.
 
@@ -1500,7 +1503,6 @@ This section contains the classes added in Exchange 2016 CU7.
 |ms-Exch-Http-Delivery-Connector|ntdsSchemaAdd|
 
 ### Classes modified by Exchange 2016 CU7
-<a name="ClassesModCU7"> </a>
 
 This section contains the classes modified in Exchange 2016 CU7.
 
@@ -1509,14 +1511,12 @@ This section contains the classes modified in Exchange 2016 CU7.
 |Mail-Recipient|add: mayContain|msExchImmutableSid|
 
 ### Attributes added by Exchange 2016 CU7
-<a name="AttribAddCU7"> </a>
 
 This section contains the attributes added in Exchange 2016 CU7.
 
 - ms-Exch-Immutable-Sid
 
 ### Attributes modified by Exchange 2016 CU7
-<a name="AttribModCU7"> </a>
 
 This section contains the classes modified in Exchange 2016 CU7.
 
@@ -1525,7 +1525,6 @@ This section contains the classes modified in Exchange 2016 CU7.
 |ms-Exch-Group-Security-Flags|ntdsSchemaModify|replace: mapiId: 36111|
 
 ### Object IDs added by Exchange 2016 CU7
-<a name="ObjIDsAddCU7"> </a>
 
 The following attribute object IDs are added when you install Exchange 2016 CU7:
 
@@ -1541,16 +1540,15 @@ No changes were made to the Active Directory schema in Exchange 2016 in CU4, CU5
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU3. This section includes the following subsections:
 
-- [Classes modified by Exchange 2016 CU3](ad-schema-changes.md#ClassesModCU3)
+- [Classes modified by Exchange 2016 CU3](#classes-modified-by-exchange-2016-cu3)
 
-- [Attributes added by Exchange 2016 CU3](ad-schema-changes.md#AttribAddCU3)
+- [Attributes added by Exchange 2016 CU3](#attributes-added-by-exchange-2016-cu3)
 
-- [Global catalog attributes added by Exchange 2016 CU3](ad-schema-changes.md#GcAttribAddCU3)
+- [Global catalog attributes added by Exchange 2016 CU3](#global-catalog-attributes-added-by-exchange-2016-cu3)
 
-- [Object IDs added by Exchange 2016 CU3](ad-schema-changes.md#ObjIDsAddCU3)
+- [Object IDs added by Exchange 2016 CU3](#object-ids-added-by-exchange-2016-cu3)
 
 ### Classes modified by Exchange 2016 CU3
-<a name="ClassesModCU3"> </a>
 
 This section contains the classes modified in Exchange 2016 CU3.
 
@@ -1560,7 +1558,6 @@ This section contains the classes modified in Exchange 2016 CU3.
 |Top|add: mayContain|msExchUGEventSubscriptionBL|
 
 ### Attributes added by Exchange 2016 CU3
-<a name="AttribAddCU3"> </a>
 
 This section contains the attributes added in Exchange 2016 CU3.
 
@@ -1569,7 +1566,6 @@ This section contains the attributes added in Exchange 2016 CU3.
 - ms-Exch-UG-Event-Subscription-BL
 
 ### Global catalog attributes added by Exchange 2016 CU3
-<a name="GcAttribAddCU3"> </a>
 
 This section contains the global catalog attributes added in Exchange 2016 CU3.
 
@@ -1578,7 +1574,6 @@ This section contains the global catalog attributes added in Exchange 2016 CU3.
 - ms-Exch-UG-Event-Subscription-BL
 
 ### Object IDs added by Exchange 2016 CU3
-<a name="ObjIDsAddCU3"> </a>
 
 The following attribute object IDs are added when you install Exchange 2016 CU3:
 
@@ -1590,16 +1585,15 @@ The following attribute object IDs are added when you install Exchange 2016 CU3:
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU2. This section includes the following subsections:
 
-- [Classes modified by Exchange 2016 CU2](ad-schema-changes.md#ClassesModCU2)
+- [Classes modified by Exchange 2016 CU2](#classes-modified-by-exchange-2016-cu2)
 
-- [Attributes added by Exchange 2016 CU2](ad-schema-changes.md#AttribAddCU2)
+- [Attributes added by Exchange 2016 CU2](#attributes-added-by-exchange-2016-cu2)
 
-- [Global catalog attributes added by Exchange 2016 CU2](ad-schema-changes.md#GcAttribAddCU2)
+- [Global catalog attributes added by Exchange 2016 CU2](#global-catalog-attributes-added-by-exchange-2016-cu2)
 
-- [Object IDs added by Exchange 2016 CU2](ad-schema-changes.md#ObjIDsAddCU2)
+- [Object IDs added by Exchange 2016 CU2](#object-ids-added-by-exchange-2016-cu2)
 
 ### Classes modified by Exchange 2016 CU2
-<a name="ClassesModCU2"> </a>
 
 This section contains the classes modified in Exchange 2016 CU2.
 
@@ -1611,7 +1605,6 @@ This section contains the classes modified in Exchange 2016 CU2.
 |ms-Exch-Base-Class|add: mayContain|msExchUserHoldPolicies|
 
 ### Attributes added by Exchange 2016 CU2
-<a name="AttribAddCU2"> </a>
 
 This section contains the attributes added in Exchange 2016 CU2.
 
@@ -1620,7 +1613,6 @@ This section contains the attributes added in Exchange 2016 CU2.
 - ms-Exch-Administrative-Unit-BL
 
 ### Global catalog attributes added by Exchange 2016 CU2
-<a name="GcAttribAddCU2"> </a>
 
 This section contains the global catalog attributes added in Exchange 2016 CU2.
 
@@ -1629,7 +1621,6 @@ This section contains the global catalog attributes added in Exchange 2016 CU2.
 - ms-Exch-Administrative-Unit-BL
 
 ### Object IDs added by Exchange 2016 CU2
-<a name="ObjIDsAddCU2"> </a>
 
 The following attribute object IDs are added when you install Exchange 2016 CU2:
 
@@ -1641,20 +1632,19 @@ The following attribute object IDs are added when you install Exchange 2016 CU2:
 
 This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU1. This section includes the following subsections:
 
-- [Classes added by Exchange 2016 CU1](ad-schema-changes.md#ClassesAddCU1)
+- [Classes added by Exchange 2016 CU1](#classes-added-by-exchange-2016-cu1)
 
-- [Classes modified by Exchange 2016 CU1](ad-schema-changes.md#ClassesModCU1)
+- [Classes modified by Exchange 2016 CU1](#classes-modified-by-exchange-2016-cu1)
 
-- [Attributes added by Exchange 2016 CU1](ad-schema-changes.md#AttribAddCU1)
+- [Attributes added by Exchange 2016 CU1](#attributes-added-by-exchange-2016-cu1)
 
-- [Indexed attributes added by Exchange 2016 CU1](ad-schema-changes.md#IndexAttribAddCU1)
+- [Indexed attributes added by Exchange 2016 CU1](#indexed-attributes-added-by-exchange-2016-cu1)
 
-- [Global catalog attributes added by Exchange 2016 CU1](ad-schema-changes.md#GcAttribAddCU1)
+- [Global catalog attributes added by Exchange 2016 CU1](#global-catalog-attributes-added-by-exchange-2016-cu1)
 
-- [Object IDs added by Exchange 2016 CU1](ad-schema-changes.md#ObjIDsAddCU1)
+- [Object IDs added by Exchange 2016 CU1](#object-ids-added-by-exchange-2016-cu1)
 
 ### Classes added by Exchange 2016 CU1
-<a name="ClassesAddCU1"> </a>
 
 This section contains the classes added in Exchange 2016 CU1.
 
@@ -1664,7 +1654,6 @@ This section contains the classes added in Exchange 2016 CU1.
 |ms-Exch-Auth-Policy|ntdsSchemaAdd|
 
 ### Classes modified by Exchange 2016 CU1
-<a name="ClassesModCU1"> </a>
 
 This section contains the classes modified in Exchange 2016 CU1.
 
@@ -1679,7 +1668,6 @@ This section contains the classes modified in Exchange 2016 CU1.
 |ms-Exch-Configuration-Unit-Container|add: mayContain|msExchMSOForwardSyncReplayList|
 
 ### Attributes added by Exchange 2016 CU1
-<a name="AttribAddCU1"> </a>
 
 This section contains the attributes added in Exchange 2016 CU1.
 
@@ -1692,7 +1680,6 @@ This section contains the attributes added in Exchange 2016 CU1.
 - ms-Exch-Auth-Policy-BL
 
 ### Indexed attributes added by Exchange 2016 CU1
-<a name="IndexAttribAddCU1"> </a>
 
 This section contains the indexed attributes added in Exchange 2016 CU1.
 
@@ -1701,7 +1688,6 @@ This section contains the indexed attributes added in Exchange 2016 CU1.
 |ms-Exch-Data-Encryption-Policy-Link|1|
 
 ### Global catalog attributes added by Exchange 2016 CU1
-<a name="GcAttribAddCU1"> </a>
 
 This section contains the global catalog attributes added in Exchange 2016 CU1.
 
@@ -1712,7 +1698,6 @@ This section contains the global catalog attributes added in Exchange 2016 CU1.
 - ms-Exch-Auth-Policy-Link
 
 ### Object IDs added by Exchange 2016 CU1
-<a name="ObjIDsAddCU1"> </a>
 
 The following class object IDs are added when you install Exchange 2016 CU1:
 
@@ -1734,31 +1719,30 @@ The following attribute object IDs are added when you install Exchange 2016 CU1:
 
 This section summarizes the changes that are made to the Active Directory schema when you install Release to Manufacturing (RTM) version of Exchange 2016. This section includes the following subsections:
 
-- [Classes added by Exchange 2016 RTM](ad-schema-changes.md#ClassesAddRTM)
+- [Classes added by Exchange 2016 RTM](#classes-added-by-exchange-2016-rtm)
 
-- [Classes modified by Exchange 2016 RTM](ad-schema-changes.md#ClassesModRTM)
+- [Classes modified by Exchange 2016 RTM](#classes-modified-by-exchange-2016-rtm)
 
-- [Attributes added by Exchange 2016 RTM](ad-schema-changes.md#AttribAddRTM)
+- [Attributes added by Exchange 2016 RTM](#attributes-added-by-exchange-2016-rtm)
 
-- [Global catalog attributes added by Exchange 2016 RTM](ad-schema-changes.md#GlobalCatRTM)
+- [Global catalog attributes added by Exchange 2016 RTM](#global-catalog-attributes-added-by-exchange-2016-rtm)
 
-- [Attributes modified by Exchange 2016 RTM](ad-schema-changes.md#AttribModRTM)
+- [Attributes modified by Exchange 2016 RTM](#attributes-modified-by-exchange-2016-rtm)
 
-- [Object IDs added by Exchange 2016 RTM](ad-schema-changes.md#ObjIDsAddRTM)
+- [Object IDs added by Exchange 2016 RTM](#object-ids-added-by-exchange-2016-rtm)
 
-- [Indexed attributes added by Exchange 2016 RTM](ad-schema-changes.md#IndexAttRTM)
+- [Indexed attributes added by Exchange 2016 RTM](#indexed-attributes-added-by-exchange-2016-rtm)
 
-- [Property sets modified by Exchange 2016 RTM](ad-schema-changes.md#PropSetsRTM)
+- [Property sets modified by Exchange 2016 RTM](#property-sets-modified-by-exchange-2016-rtm)
 
-- [MAPI IDs added by Exchange 2016 RTM](ad-schema-changes.md#MAPIaddRTM)
+- [MAPI IDs added by Exchange 2016 RTM](#mapi-ids-added-by-exchange-2016-rtm)
 
-- [Extended rights added by Exchange 2016 RTM](ad-schema-changes.md#ExtendedAddRTM)
+- [Extended rights added by Exchange 2016 RTM](#extended-rights-added-by-exchange-2016-rtm)
 
 > [!NOTE]
 > No changes to the Active Directory schema were made between Exchange 2016 Preview and Exchange 2016 RTM.
 
 ### Classes added by Exchange 2016 RTM
-<a name="ClassesAddRTM"> </a>
 
 This section contains the classes added in Exchange 2016 RTM.
 
@@ -1796,7 +1780,6 @@ This section contains the classes added in Exchange 2016 RTM.
 |ms-Exch-Workload-Policy|ntdsSchemaAdd|
 
 ### Classes modified by Exchange 2016 RTM
-<a name="ClassesModRTM"> </a>
 
 This section contains the classes modified in Exchange 2016 RTM.
 
@@ -2003,7 +1986,6 @@ This section contains the classes modified in Exchange 2016 RTM.
 |ms-Exch-Virtual-Directory|add:mayContain|msExchMRSProxyMaxConnections|
 
 ### Attributes added by Exchange 2016 RTM
-<a name="AttribAddRTM"> </a>
 
 This section contains the attributes added in Exchange 2016 RTM.
 
@@ -2416,7 +2398,6 @@ This section contains the attributes added in Exchange 2016 RTM.
 - ms-Exch-Multi-Mailbox-Databases-BL
 
 ### Global catalog attributes added by Exchange 2016 RTM
-<a name="GlobalCatRTM"> </a>
 
 The following global catalog attributes are added by Exchange 2016 RTM:
 
@@ -2531,7 +2512,6 @@ The following global catalog attributes are added by Exchange 2016 RTM:
 - ms-Exch-When-Soft-Deleted-Time
 
 ### Attributes modified by Exchange 2016 RTM
-<a name="AttribModRTM"> </a>
 
 This section contains the attributes modified in Exchange 2016 RTM.
 
@@ -2570,9 +2550,8 @@ This section contains the attributes modified in Exchange 2016 RTM.
 |ms-Exch-Sync-Cookie|rangeUpper|262144|
 
 ### Object IDs added by Exchange 2016 RTM
-<a name="ObjIDsAddRTM"> </a>
 
-The following class object IDs are added when you install Exchange 2016 RTM:
+The following **class object IDs** are added when you install Exchange 2016 RTM:
 
 - 1.2.840.113556.1.5.7000.62.50161
 
@@ -2624,7 +2603,7 @@ The following class object IDs are added when you install Exchange 2016 RTM:
 
 - 1.2.840.113556.1.5.7000.62.50205
 
-The following attribute object IDs are added when you install Exchange 2016 RTM:
+The following **attribute object IDs** are added when you install Exchange 2016 RTM:
 
 - 1.2.840.113556.1.4.2183
 
@@ -3009,7 +2988,6 @@ The following attribute object IDs are added when you install Exchange 2016 RTM:
 - 1.2.840.113556.1.4.7000.102.52130
 
 ### Indexed attributes added by Exchange 2016 RTM
-<a name="IndexAttRTM"> </a>
 
 The following table lists the attributes that are added to the list of indexed attributes when you install Exchange 2016 RTM.
 
@@ -3069,14 +3047,12 @@ The following table lists the attributes that are added to the list of indexed a
 |ms-Exch-When-Soft-Deleted-Time|17|
 
 ### Property sets modified by Exchange 2016 RTM
-<a name="PropSetsRTM"> </a>
 
 The following property sets are modified when you install Exchange 2016 RTM:
 
 - Exchange-Information
 
 ### MAPI IDs added by Exchange 2016 RTM
-<a name="MAPIaddRTM"> </a>
 
 The following MAPI IDs are added when you install Exchange 2016 RTM:
 
@@ -3085,7 +3061,6 @@ The following MAPI IDs are added when you install Exchange 2016 RTM:
 - 36067
 
 ### Extended rights added by Exchange 2016 RTM
-<a name="ExtendedAddRTM"> </a>
 
 The following table lists the extended rights that are added when you install Exchange 2016 RTM. Installing Exchange 2016 RTM doesn't modify any existing extended rights.
 
