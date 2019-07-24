@@ -61,6 +61,17 @@ Mail data is currently migrated using the IMAP protocol. For mail data there is 
 
 Contacts and calendar information is migrated via a different protocol. For this reason, throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
 
+Additional migration limitations are described in the following table:
+
+
+|Data type  |Limitations  |
+|---------|---------|
+|Mail     |Vacation settings, Automatic reply settings, Filters, and Rules will not be migrated         |
+|Meeting rooms     |Room bookings will not be migrated         |
+|Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
+|Contacts     |A maximum of three email addresses per contact are migrated over         |
+|Contacts     |Gmail tags, contact URLs, and custom tags will not be migrated         |
+
 ## Create a Google Service Account
 
 > [!IMPORTANT]
