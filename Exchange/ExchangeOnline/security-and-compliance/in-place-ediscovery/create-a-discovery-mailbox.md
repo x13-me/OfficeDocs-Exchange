@@ -50,8 +50,10 @@ For instructions, see [Connect to Exchange Online PowerShell](https://go.microso
 This example creates a discovery mailbox named SearchResults.
 
 ```
-New-Mailbox -Name SearchResults -Discovery
+New-Mailbox -NameSearchResults -Discovery
 ```
+> [!IMPORTANT]
+> The 'Name' parameter must not contain any spaces.
 
 For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
