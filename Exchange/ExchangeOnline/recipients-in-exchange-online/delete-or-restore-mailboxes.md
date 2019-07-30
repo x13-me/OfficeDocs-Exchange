@@ -170,7 +170,7 @@ For other mailbox restoring scenarios related to hybrid infrastructures, refer t
 
 ## License removal
 
-For info on removing a license from a user in Office 365 and Exchange Online, check out [Change in behavior for delicensed Exchange Online users](https://go.microsoft.com/fwlink/p/?LinkId=834307).
+For info on removing a license from a user in Office 365 and Exchange Online, check out [Remove licenses from users in Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide).
 
 ## Additional information
 
