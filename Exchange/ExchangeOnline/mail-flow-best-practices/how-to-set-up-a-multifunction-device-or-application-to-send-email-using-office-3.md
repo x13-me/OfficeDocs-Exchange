@@ -146,7 +146,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 2. [Sign in to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402333).
 
-3. Make sure your domain, such as contoso.com, is selected. Click **Manage DNS**, and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to cohowineinc-com.mail.protection.outlook.com, as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value, which we refer to as your MX endpoint.
+3. Make sure your domain (for example, contoso.com) is selected. Click **Manage DNS**, and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to contoso-com.mail.protection.outlook.com, as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value, which we refer to as your MX endpoint.
 
    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 

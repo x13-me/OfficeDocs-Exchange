@@ -47,6 +47,9 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 - After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
 
+    > [!NOTE]
+    > When migrating from Exchange 2003, TCP port 6001, 6002 and 6004 need to be open on the Exchange 2003 side.
+
 ## Impact to users
 
 After your on-premises and Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.

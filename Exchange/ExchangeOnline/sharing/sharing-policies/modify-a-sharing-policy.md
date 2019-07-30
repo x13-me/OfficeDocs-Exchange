@@ -32,7 +32,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to change a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -47,7 +47,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to set a sharing policy as the default sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -60,7 +60,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to disable a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -74,7 +74,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 > [!IMPORTANT]
 > Before you remove a sharing policy, the sharing policy must be removed from all user mailboxes.
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
