@@ -57,7 +57,7 @@ After all migration batches have been completed, all users can use their migrate
 Mail data is currently migrated using the IMAP protocol. For mail data there is a throughput limitation, enforced by G Suite, of 2 GB per mailbox per day. When you reach your 2 GB limit for the day, your migration will pause, but it will automatically continue the next day. Migrations resume once there is capacity to migrate more data, until the 2 GB per day limit is reached again.
 
 > [!NOTE]
-> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 no supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
 
 Contacts and calendar information is migrated via a different protocol. For this reason, throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
 
@@ -66,7 +66,7 @@ Additional migration limitations are described in the following table:
 
 |Data type  |Limitations  |
 |---------|---------|
-|Mail     |Vacation settings, Automatic reply settings, Filters, and Rules will not be migrated         |
+|Mail     |Vacation settings, Automatic reply settings, Filters/Rules will not be migrated         |
 |Meeting rooms     |Room bookings will not be migrated         |
 |Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
 |Contacts     |A maximum of three email addresses per contact are migrated over         |
