@@ -51,7 +51,7 @@ Using the previous example, you would configure the IP address of the third-part
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
 |**X-MS-Exchange-SkipListedInternetSender**|Not available|The value of this message header field contains the IP address of the device or service where you deliver your email first.|
 
-## Enhanced Filtering for Connectors procedures
+## Procedures for Enhanced Filtering for Connectors
 
 ### What do you need to know before you begin?
 
@@ -78,11 +78,9 @@ Using the previous example, you would configure the IP address of the third-part
 
      - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
 
-     - **Disable Enhanced Filtering for Connectors**: Turn off enhanced filtering
+     - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
 
-   - **Apply to these users**: Choose one of the following values:We recommend that you test the feature for a small subset of recipient before you roll it out to everyone.
-
-        It is recommended that you start with a small subset of users in order to see if Enhanced Filtering is right for your organization.
+   - **Apply to these users**: Choose one of the following values:
 
      - **Apply to a small set of users**: We recommend this option as an initial test of the feature.
 
@@ -96,7 +94,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 4. When you're finished, click **Save**.
 
-## Use Security & Compliance PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
+### Use Security & Compliance PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
 
 To configure Enhanced Filtering for Connectors on an inbound connector, use the following syntax:
 
@@ -132,7 +130,7 @@ Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true -EFU
 
 For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-inboundconnector)
 
-## More information
+## See also
 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
 
