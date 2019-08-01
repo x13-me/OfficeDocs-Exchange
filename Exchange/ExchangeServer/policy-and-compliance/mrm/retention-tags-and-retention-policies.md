@@ -90,6 +90,9 @@ When creating or configuring a retention tag, you can select one of the followin
 |**Permanently delete**|Permanently deletes messages.  <br/> You can't recover messages after they're permanently deleted.|If mailbox is placed on [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md) or Litigation Hold, items are preserved in the Recoverable Items folder based on hold parameters. [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) will still return these items in search results.|
 |**Mark as past retention limit**|Marks a message as expired. In Outlook, and Outlook on the web, expired items are displayed with the notification stating 'This item has expired' and 'This item will expire in 0 days'.|N. A.|
 
+> [!NOTE]
+> Default Policy tag (DPT) with **Move to Archive** action always overwrites the Retention Policy tag (RPT) or the Personal tag (PT), when the age limit for retention of DPT is lower than RPT or PT.
+
 For details about how to create retention tags, see [Create a retention policy in Exchange Server](create-retention-policies.md).
 
 ## Retention policies
