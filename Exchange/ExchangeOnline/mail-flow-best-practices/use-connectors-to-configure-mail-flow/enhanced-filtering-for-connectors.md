@@ -49,7 +49,7 @@ Using the previous example, you would configure the IP address of the third-part
 ||**Before Enhanced Filtering is enabled**|**After Enhanced Filtering is enabled**|
 |:-----|:-----|:-----|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
-|**X-MS-Exchange-SkipListedInternetSender**|Not available|The value of this header field contains the IP address of the device or service where you deliver your email first.|
+|**X-MS-Exchange-SkipListedInternetSender**|Not available|The value of this message header field contains the IP address of the device or service where you deliver your email first.|
 
 ## Enhanced Filtering for Connectors procedures
 
