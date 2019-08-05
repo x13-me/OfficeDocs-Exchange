@@ -5,7 +5,7 @@ ms.topic: article
 author: markjjo
 ms.author: markjjo
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
-ms.date: 7/11/2018
+ms.date: 
 ms.reviewer: 
 title: Create a discovery mailbox
 ms.collection: 
@@ -52,6 +52,9 @@ This example creates a discovery mailbox named SearchResults.
 ```
 New-Mailbox -Name SearchResults -Discovery
 ```
+
+> [!IMPORTANT]
+> The 'Name' parameter must not contain any spaces.
 
 For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 

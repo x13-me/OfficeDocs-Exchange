@@ -58,7 +58,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
      Note that the previous command does not block or prevent Outlook 2013 or later clients from using basic authentication connections.
 
-   - Run the following command to prevent modern authentication connections (force th use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
+   - Run the following command to prevent modern authentication connections (force the use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
 
      ```
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
