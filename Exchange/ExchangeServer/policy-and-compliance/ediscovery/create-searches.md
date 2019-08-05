@@ -120,7 +120,7 @@ After using the Exchange Management Shell to create an In-Place eDiscovery searc
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015.
 
 ```
-New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
+New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
 ```
@@ -159,16 +159,16 @@ After you create an eDiscovery search, you can use the EAC to get an estimate an
 
 2. In the list view, select the search, and then do one of the following:
 
-  - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
+   - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
 
-    Search estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
+     Search estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
 
-  - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes or public folders that were searched are displayed.
+   - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes or public folders that were searched are displayed.
 
-    > [!NOTE]
-    > The mailboxes or public folders that were searched are listed in the right pane in the **eDiscovery search preview** window. For each source, the number of items returned and the total size of these items is also displayed. All items returned by the search are listed in the right pane, and can be sorted by newest or oldest date. Items from each mailbox or public folder can't be displayed in the right pane by clicking a source in the left pane. To view the items returned from a specific mailbox or public folder, you can copy the search results and view the items in the discovery mailbox.
+     > [!NOTE]
+     > The mailboxes or public folders that were searched are listed in the right pane in the **eDiscovery search preview** window. For each source, the number of items returned and the total size of these items is also displayed. All items returned by the search are listed in the right pane, and can be sorted by newest or oldest date. Items from each mailbox or public folder can't be displayed in the right pane by clicking a source in the left pane. To view the items returned from a specific mailbox or public folder, you can copy the search results and view the items in the discovery mailbox.
 
-![Estimate or Preview Search Results](../../media/TA_Discovery_EstimatePreviewUI.gif)
+   ![Estimate or Preview Search Results](../../media/TA_Discovery_EstimatePreviewUI.gif)
 
 ## Use the Exchange Management Shell to estimate search results
 

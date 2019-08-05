@@ -128,7 +128,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Outlook for iOS and Android requires an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use Outlook for iOS and Android on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, your users are not licensed to use the app.
 
-   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://support.office.com/article/41ae293a-bd5c-4083-acd8-e1a2b4329da6) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 subscription license within the Office 365 Admin Center.
+   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://support.office.com/article/41ae293a-bd5c-4083-acd8-e1a2b4329da6) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 subscription license within the Microsoft 365 Admin Center.
 
    For more information on how to assign a license, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
 
@@ -314,15 +314,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 **Q**: What happens to the access token when a user's password is changed?
 
-**A**: A previously granted access token is valid until it expires. The identity model you're utilizing for authentication will have an impact on how password expiration is handled. There are three scenarios:
-
-1. For a federated identity model, you will need to ensure your on-premises identity provider sends password expiry claims to Azure Active Directory, otherwise, Azure Active Directory will not be able to act on the password expiration. For more information, see [Configure AD FS to Send Password Expiry Claims](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-to-send-password-expiry-claims).
-
-2. Password Hash Synchronization does not support password expiration. This means apps that had previously obtained an access and refresh token pair will continue to function until the lifetime of the token pair is exceeded or the user changes his or her password. For more information, see [Implement password synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-hash-synchronization#how-password-synchronization-works).
-
-3. Pass-through Authentication requires that password writeback be enabled in AAD Connect. For more information, see [Azure Active Directory Pass-through Authentication: Frequently asked questions](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-faq#what-happens-if-my-users-password-has-expired-and-they-try-to-sign-in-by-using-pass-through-authentication).
-
-Upon token expiration, the client will attempt to use the refresh token to obtain a new access token, but because the user's password has changed, the refresh token will be invalidated (assuming directory synchronization has occurred between on-premises and Azure Active Directory). The invalidated refresh token will force the user to re-authenticate in order to obtain a new access token and refresh token pair.
+**A**: See [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication).
 
 **Q**: Is there a way for a user to bypass AutoDetect when adding their account to Outlook for iOS and Android?
 

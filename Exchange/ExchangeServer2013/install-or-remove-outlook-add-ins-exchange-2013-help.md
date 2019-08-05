@@ -39,25 +39,23 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 ## Install an add-in for Outlook
 
 ### Use the EAC to add an add-in
-<a name="BKMK_EAC"> </a>
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
 2. Click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif), and then choose the location that you want to install the add-in from.
 
-  - **Add from the Office Store**. At the Office Store, select the app you want to install, and then click **Add**. Apps that work with Outlook Web App are listed under **Add-ins for Office and SharePoint** \> **Outlook**.
+   - **Add from the Office Store**. At the Office Store, select the app you want to install, and then click **Add**. Apps that work with Outlook Web App are listed under **Add-ins for Office and SharePoint** \> **Outlook**.
 
-    > [!NOTE]
-    > Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+     > [!NOTE]
+     > Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
 
-  - **Add from URL**. In **URL**, enter the full URL for the add-in manifest file that you want to install.
+   - **Add from URL**. In **URL**, enter the full URL for the add-in manifest file that you want to install.
 
-  - **Add from file**. Select **Browse**, and then navigate to the location of the add-in manifest file that you want to install.
+   - **Add from file**. Select **Browse**, and then navigate to the location of the add-in manifest file that you want to install.
 
 3. Click **Save**.
 
 ### Use the Shell to add an add-in
-<a name="BKMK_Shell"> </a>
 
 This example shows you how to add an add-in from a URL.
 

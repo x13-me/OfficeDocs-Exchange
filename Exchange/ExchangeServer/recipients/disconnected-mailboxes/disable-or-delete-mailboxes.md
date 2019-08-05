@@ -38,7 +38,7 @@ In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange 
 
 When you disable a mailbox, all Exchange attributes are removed from the associated user account in Active Directory. The disconnected mailbox is hidden and marked for removal. The disconnected mailbox is permanently deleted (purged) based on the **MailboxRetention** property value for the mailbox database (the default value is 30 days). Before the mailbox is purged, you can reconnect it to a new or existing user account that doesn't already have an associated mailbox. For more information, see [Connect a disabled mailbox](connect-disabled-mailboxes.md).
 
- **Note**: Disabling a mailbox that has an associated archive marks both the primary and archive mailboxes for removal. To only mark the archive mailbox for removal without affecting the primary mailbox, see [Disable an archive mailbox](../../policy-and-compliance/in-place-archiving/manage-archives.md#disable).
+ **Note**: Disabling a mailbox that has an associated archive marks both the primary and archive mailboxes for removal. To only mark the archive mailbox for removal without affecting the primary mailbox, see [Disable an archive mailbox](../../policy-and-compliance/in-place-archiving/manage-archives.md#disable-an-archive-mailbox).
 
 ### Use the EAC to disable a mailbox
 
@@ -125,7 +125,7 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
 When you delete a mailbox, the mailbox is disconnected from the associated user account, and the account is removed from Active Directory. The disconnected mailbox is hidden and marked for removal. The disconnected mailbox is permanently deleted (purged) based on the **MailboxRetention** property value for the mailbox database (the default value is 30 days). Before the mailbox is purged, you can reconnect it to a new or existing user account that doesn't already have an associated mailbox. For more information, see [Connect or restore a deleted mailbox](restore-deleted-mailboxes.md).
 
- **Note**: Deleting a mailbox that has an associated archive marks both the primary and archive mailboxes for removal. To only mark the archive mailbox for removal without affecting the primary mailbox, see [Disable an archive mailbox](../../policy-and-compliance/in-place-archiving/manage-archives.md#disable).
+**Note**: Deleting a mailbox that has an associated archive marks both the primary and archive mailboxes for removal. To only mark the archive mailbox for removal without affecting the primary mailbox, see [Disable an archive mailbox](../../policy-and-compliance/in-place-archiving/manage-archives.md#disable-an-archive-mailbox).
 
 ### Use the EAC to delete a mailbox
 

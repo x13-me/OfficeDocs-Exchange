@@ -140,7 +140,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
   Get-Mailbox <Identity>
   ```
 
-## Restoring a user in a hybrid scenario
+## Restoring a user in a hybrid deployment
 
 For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure active directory user that was associated with the mailbox has been hard-deleted from Azure Active Directory, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkID=809310) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
 
@@ -166,9 +166,11 @@ For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted an
    New-MailboxRestoreRequest -SourceMailbox <SoftDeletedMailboxGUID> -TargetMailbox <NewTargetMailboxGUID>
    ```
 
+For other mailbox restoring scenarios related to hybrid infrastructures, refer to [Common mailbox recovery scenarios for hybrid environments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Common-mailbox-recovery-scenarios-for-hybrid-environments/ba-p/604681).
+
 ## License removal
 
-For info on removing a license from a user in Office 365 and Exchange Online, check out [Change in behavior for delicensed Exchange Online users](https://go.microsoft.com/fwlink/p/?LinkId=834307).
+For info on removing a license from a user in Office 365 and Exchange Online, check out [Remove licenses from users in Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide).
 
 ## Additional information
 

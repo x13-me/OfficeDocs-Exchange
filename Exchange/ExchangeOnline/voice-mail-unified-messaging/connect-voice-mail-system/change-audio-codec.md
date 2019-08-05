@@ -44,13 +44,13 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 4. In **Settings**, under **Audio codec**, use the drop-down list to select one the following:
 
-  - MP3
+   - MP3
 
-  - WMA
+   - WMA
 
-  - GSM
+   - GSM
 
-  - G711
+   - G711
 
 5. Click **Save**.
 

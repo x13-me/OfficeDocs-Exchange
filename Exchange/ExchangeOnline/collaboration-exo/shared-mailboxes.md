@@ -43,7 +43,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Email address**
 
-4. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic.
+4. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -67,9 +67,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 To learn how users can access and use shared mailboxes, check out the following:
 
-- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013 ](https://go.microsoft.com/fwlink/p/?LinkId=834764)
+- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013](https://go.microsoft.com/fwlink/p/?LinkId=834764)
 
 - [Open and use a shared mailbox in Outlook on the web for business](https://go.microsoft.com/fwlink/p/?LinkId=834766)
+
+- [Open and use a shared mailbox in Outlook mobile](https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f)
 
 ## Use Exchange Online PowerShell to create a shared mailbox
 

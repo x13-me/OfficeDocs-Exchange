@@ -51,7 +51,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
   - Exchange 2016-based hybrid deployment between Exchange 2016 and Office 365
 
-- Updated new and existing Exchange 2016-based hybrid deployment scenarios to support Office 365 admin center classic and preview layouts.
+- Updated new and existing Exchange 2016-based hybrid deployment scenarios to support Microsoft 365 admin center classic and preview layouts.
 
 - Minor updates throughout all scenarios
 

@@ -45,13 +45,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 4. On the **New Holiday** page, configure the following:
 
-  - **Name**: Enter a name for your holiday schedule.
+   - **Name**: Enter a name for your holiday schedule.
 
-  - **Holiday greeting**: Browse to the .wav file you want to use as your greeting. This is a required field.
+   - **Holiday greeting**: Browse to the .wav file you want to use as your greeting. This is a required field.
 
-  - **Start date**: Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list.
+   - **Start date**: Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list.
 
-  - **End date**: Use this list to select the date you want the holiday to end. The holiday schedule will end at 11:59 P.M. on the date specified in this list.
+   - **End date**: Use this list to select the date you want the holiday to end. The holiday schedule will end at 11:59 P.M. on the date specified in this list.
 
 5. After you've configured your holiday schedule, click **OK**, and then click **Save**.
 

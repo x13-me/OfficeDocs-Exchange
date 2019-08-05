@@ -129,8 +129,6 @@ SSL offloading is supported with following protocols and services:
 
 - Autodiscover
 
-- Mailbox Replication Proxy Service (MRSProxy)
-
 - MAPI virtual directory for Outlook clients
 
 If you have multiple Client Access servers, each Client Access server in your organization must be configured identically. You need to perform the required steps for each protocol or service on every Client Access server in your on-premises organization. For details, see [Configuring SSL offloading in Exchange 2013](configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md)

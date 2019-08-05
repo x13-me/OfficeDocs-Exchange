@@ -84,6 +84,8 @@ The following prerequisites are required for configuring a hybrid deployment:
 
     Learn more at [Edge Transport servers with hybrid deployments](edge-transport-servers.md).
 
+- **Microsoft .NET Framework**: 4.6.2 or later is required to install Hybrid Configuration Wizard.
+
 - **Unified Messaging-enabled (UM) mailboxes**: If you have UM-enabled mailboxes and you want to move them to Office 365, you need the following in addition to an Exchange hybrid deployment. These requirements need to be met **before** you move any UM-enabled mailboxes to Office 365.
 
   - Lync Server 2010, Lync Server 2013, or Skype for Business Server 2015 or later integrated with your on-premises telephony system **or**
@@ -109,7 +111,7 @@ Hybrid deployment features and components require certain incoming protocols, po
 |TCP 443 (HTTPS)|Autodiscover|Autodiscover|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Azure AD authentication system|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|EWS|Free/busy, MailTips, Message Tracking|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity|Azure AD authentication system|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|EWS|Multi-mailbox search|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
-|TCP 443 (HTTPS)|EWS|Mailbox migrations|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/mrsproxy.svc|NTLM|Basic|Yes|
+|TCP 443 (HTTPS)|EWS|Mailbox migrations|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/mrsproxy.svc|NTLM|Basic|No|
 |TCP 443 (HTTPS)|Autodiscover <br/><br/> EWS|OAuth|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|N/A|AD FS (included with Windows)|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 |TCP 443 (HTTPS)|N/A|Azure Active Directory Connect with AD FS|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|

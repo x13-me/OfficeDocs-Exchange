@@ -21,14 +21,13 @@ manager: dansimp
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
 
-- [Accessibility features of Exchange ](accessibility.md#BKMK_Access15)
+- [Accessibility features of Exchange](#accessibility-features-of-exchange)
 
-- [Accessibility features of Exchange Help](accessibility.md#BKMK_AccessHelp)
+- [Accessibility features of Exchange Help](#accessibility-features-of-exchange-help)
 
-- [Accessibility products and services from Microsoft](accessibility.md#BKMK_AccessMS)
+- [Accessibility products and services from Microsoft](#accessibility-products-and-services-from-microsoft)
 
 ## Accessibility features of Exchange
-<a name="BKMK_Access15"> </a>
 
 The following features help make Microsoft Exchange more accessible for people with disabilities:
 
@@ -39,12 +38,10 @@ The following features help make Microsoft Exchange more accessible for people w
 In addition, some accessibility features and utilities of Windows may benefit Exchange users with disabilities. Also, Windows PowerShell size and color changes provide accessibility options when using the Exchange Management Shell. For more information about Windows PowerShell accessibility options, see [Accessibility in Windows PowerShell ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
 
 ## Accessibility features of Exchange Help
-<a name="BKMK_AccessHelp"> </a>
 
 Every figure in Help for Microsoft Exchange, including screenshots, diagrams, flow charts, and other figures, has associated alternate text. Users who have difficulty viewing figures can pause the cursor on the figure to read the alternate text. The alternate text describes what is illustrated in the figure.
 
 ## Accessibility products and services from Microsoft
-<a name="BKMK_AccessMS"> </a>
 
 The following sections provide information about the features, products, and services that make Microsoft Windows more accessible for people with disabilities.
 
@@ -57,11 +54,11 @@ The Windows operating system has many built-in accessibility features that are u
 
 - **Free step-by-step tutorials**: Microsoft offers a series of step-by-step tutorials that provide detailed procedures for adjusting the accessibility options and settings on your computer. This information is presented in a side-by-side format so that you can learn how to use the mouse, the keyboard, or a combination of both.
 
-    To find step-by-step tutorials for Microsoft products, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+  To find step-by-step tutorials for Microsoft products, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
 
 - **Assistive technology products for Windows**: A wide variety of assistive technology products are available to make computers easier to use for people with disabilities. You can search a catalog of assistive technology products that run on Windows at Microsoft Accessibility.
 
-    If you use assistive technology, be sure to contact your assistive technology vendor before you upgrade your software or hardware to check for possible compatibility issues.
+  If you use assistive technology, be sure to contact your assistive technology vendor before you upgrade your software or hardware to check for possible compatibility issues.
 
 ### Documentation in alternative formats
 
@@ -69,15 +66,7 @@ If you have difficulty reading or handling printed materials, you can obtain the
 
 In addition, you can obtain additional Microsoft publications from Learning Ally. Learning Ally distributes these documents to registered, eligible members of their distribution service. For information about the availability of Microsoft product documentation and books from Microsoft Press, contact Learning Ally.
 
-Learning Ally
-
-20 Roszel Road
-
-Princeton, NJ 08540
-
-Telephone number from within the United States: (800) 221-4792
-
-Web site: [Learning Ally](https://www.learningally.org/)
+> Learning Ally <br/> 20 Roszel Road <br/> Princeton, NJ 08540 <br/> Telephone number from within the United States: (800) 221-4792 <br/> Web site: [Learning Ally](https://www.learningally.org/)
 
 ### Customer service for people with hearing impairments
 
@@ -90,6 +79,5 @@ If you're deaf or hard-of-hearing, complete access to Microsoft product and cust
 Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used. For more information, see [Microsoft Support](https://go.microsoft.com/fwlink/p/?linkId=18142).
 
 ## For more information
-<a name="BKMK_AccessMS"> </a>
 
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).

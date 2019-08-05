@@ -81,7 +81,7 @@ For more information about message routing in hybrid deployments, see [Transport
 
 ## Causes for error code 4.4.7
 
-When Exchange Online attempts to deliver a message, the destination email might be unable or unwilling to accept the message. This can result in a temporary 4_.x.x_ error code from the destination email server (instead of a permanent 5._x.x_ error code that indicates the message was rejected). Exchange Online repeatedly tries to deliver the message over two days. Only after two days of unsuccessful delivery attempts does the recipient receive this NDR.
+When Exchange Online attempts to deliver a message, the destination email might be unable or unwilling to accept the message. This can result in a temporary 4_.x.x_ error code from the destination email server (instead of a permanent 5._x.x_ error code that indicates the message was rejected). Exchange Online repeatedly tries to deliver the message over 24 hours. Only after two days of unsuccessful delivery attempts does the recipient receive this NDR.
 
 The possible causes of this error are:
 

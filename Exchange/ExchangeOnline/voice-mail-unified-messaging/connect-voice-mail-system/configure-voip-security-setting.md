@@ -47,11 +47,11 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 3. In **General**, under **VoIP security mode**, select one of the following options:
 
-  - **SIP secured**
+   - **SIP secured**
 
-  - **Unsecured** (default)
+   - **Unsecured** (default)
 
-  - **Secured**
+   - **Secured**
 
 4. Click **Save**.
 

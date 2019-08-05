@@ -48,13 +48,13 @@ For additional management tasks related to managing email client access to a mai
 
 4. Under **Email Connectivity**, do one of the following.
 
-  - To disable MAPI, under **MAPI: Enabled**, click **Disable**.
+   - To disable MAPI, under **MAPI: Enabled**, click **Disable**.
 
-    A warning appears asking if you're sure you want to disable MAPI. Click **Yes**.
+     A warning appears asking if you're sure you want to disable MAPI. Click **Yes**.
 
-  - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
+   - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
 
-5.  Click **Save** to save your change.
+5. Click **Save** to save your change.
 
 ## Use the Exchange Management Shell to enable or disable MAPI
 

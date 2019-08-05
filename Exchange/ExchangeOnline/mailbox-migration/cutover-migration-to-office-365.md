@@ -47,6 +47,9 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 - After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
 
+    > [!NOTE]
+    > When migrating from Exchange 2003, TCP port 6001, 6002 and 6004 need to be open on the Exchange 2003 side.
+
 ## Impact to users
 
 After your on-premises and Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.
@@ -194,7 +197,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
    - **Exchange server**: Type the *fully qualified domain name* (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com.
 
-   - **RPC proxy server**: Type the *FQDN* for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
+   - **RPC proxy server**: Type the *FQDN* for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook on the web (formerly known as Outlook Web App) URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server
 
 8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 

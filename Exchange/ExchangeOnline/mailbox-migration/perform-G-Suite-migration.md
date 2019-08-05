@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
-description: "Instructions for performing a G Suite migration to Office 365."
+description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 
 # Perform a G Suite migration
@@ -51,6 +51,26 @@ Meanwhile, the forwarding address has been removed from the Office 365 user obje
 ![After G Suite migration is complete](../media/gsuite-mig-after-migration.png)
 
 After all migration batches have been completed, all users can use their migrated mailboxes on Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Office 365 tenant instead of the G Suite tenant.  The routing domains and extra aliases can now be removed, as can the G Suite tenant. The migration of mail, calendar, and contacts from G Suite to Office 365 is now complete.
+
+## Migration limitations
+
+Mail data is currently migrated using the IMAP protocol. For mail data there is a throughput limitation, enforced by G Suite, of 2 GB per mailbox per day. When you reach your 2 GB limit for the day, your migration will pause, but it will automatically continue the next day. Migrations resume once there is capacity to migrate more data, until the 2 GB per day limit is reached again.
+
+> [!NOTE]
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+
+Contacts and calendar information is migrated via a different protocol. For this reason, throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
+
+Additional migration limitations are described in the following table:
+
+
+|Data type  |Limitations  |
+|---------|---------|
+|Mail     |Vacation settings, Automatic reply settings, Filters/Rules will not be migrated         |
+|Meeting rooms     |Room bookings will not be migrated         |
+|Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
+|Contacts     |A maximum of three email addresses per contact are migrated over         |
+|Contacts     |Gmail tags, contact URLs, and custom tags will not be migrated         |
 
 ## Create a Google Service Account
 
@@ -158,9 +178,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 Once your G Suite environment has been properly configured, you can complete your migration in the Exchange admin center or through the Exchange Online PowerShell.
 
-Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users). Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain (will@gsuite.fabrikaminc.net). The users should also have a proxy address that will be used for routing to their Office 365 routing domain (such as "will@o365.fabrikaminc.net").
+Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
 
-The primary email address that you provision for each user should be the same as the users' primary email addresses on the source G Suite side.
+We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between O365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
 ## Start a G Suite migration batch with the Exchange admin center (EAC)
 
