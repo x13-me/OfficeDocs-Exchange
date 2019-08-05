@@ -169,7 +169,7 @@ In the EAC, you can click **View pending or completed traces** in order to view 
 
 - **In progress**: The trace is running and you can't cancel the trace or download the results.
 
-- **Completed**: The trace has completed and you can click **Download this report** to retrieve the results in a .CSV file. Note that if your message trace results exceed 5000 messages for a summary report, it will be truncated to the first 5000 messages. If your message trace results exceed 3000 messages for a detailed report, it will be truncated to the first 3000 messages. If you do not see all the results that you need, we recommend that break your search out into multiple queries.
+- **Completed**: The trace has completed and you can click **Download this report** to retrieve the results in a .CSV file. Note that if your message trace results exceed 50000 messages for a summary report, it will be truncated to the first 50000 messages. If your message trace results exceed 1000 messages for a detailed report, it will be truncated to the first 1000 messages. If you do not see all the results that you need, we recommend that break your search out into multiple queries.
 
 When you select a specific message trace, additional information appears in the right pane. Depending on what search criteria you specified, this may include details such as the date range for which the trace was run, and the sender and intended recipients of the message.
 
