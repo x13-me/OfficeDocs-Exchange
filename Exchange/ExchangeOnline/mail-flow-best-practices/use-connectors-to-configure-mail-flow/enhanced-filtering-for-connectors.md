@@ -24,9 +24,12 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 - Managed filtering appliance
 
-- Hybrid environments (on-premises Exchange)
+- Hybrid environments (e.g., on-premises Exchange)
 
 Enhanced Filtering for Connectors allows you to filter email based on the actual source of messages that arrive over the inbound connector.
+
+   > [!NOTE]
+   > The most common scenario that Enhanced Filtering is designed for is the Hybrid environments; however, the mail destined for on-premise mailboxes will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
 
 For more information about connectors in Exchange Online, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
 
@@ -94,6 +97,8 @@ Using the previous example, you would configure the IP address of the third-part
 
 4. When you're finished, click **Save**.
 
+5. If you have an mail flow rule (also known as a transport rule) rule that force messages to skip filtering once it comes into EOP (i.e., marking the SCL of the message to -1 to prevent double filtering), you will need to disable that mail flow rule.
+
 ### Use Security & Compliance PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
 
 To configure Enhanced Filtering for Connectors on an inbound connector, use the following syntax:
@@ -129,6 +134,16 @@ Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true -EFU
 ```
 
 For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-inboundconnector)
+
+## How to measure success
+
+The ultimate goal of Enhanced Filtering is actually to show administrators that changing the MX record to EOP is not only possible but also better. It simplifies the mail flow in your environment and it allows you to see the value of using EOP, which you already purchased as part of Office 365.  This can easily be measured using variety of reports available in the [Reports dashboard](https://protection.office.com/insightdashboard).
+
+You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/view-email-security-reports):
+
+- Threat Protection Status report
+
+- Spam Detections report
 
 ## See also
 
