@@ -5,7 +5,7 @@ ms.topic: article
 author: markjjo
 ms.author: markjjo
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
-ms.date: 7/11/2018
+ms.date: 
 ms.reviewer: 
 title: Create a discovery mailbox
 ms.collection: 
@@ -50,8 +50,9 @@ For instructions, see [Connect to Exchange Online PowerShell](https://go.microso
 This example creates a discovery mailbox named SearchResults.
 
 ```
-New-Mailbox -NameSearchResults -Discovery
+New-Mailbox -Name SearchResults -Discovery
 ```
+
 > [!IMPORTANT]
 > The 'Name' parameter must not contain any spaces.
 
