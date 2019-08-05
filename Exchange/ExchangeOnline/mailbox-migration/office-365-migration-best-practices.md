@@ -23,7 +23,7 @@ manager: dansimp
 
 ---
 
-# Office 365 migration performance and best practices
+# Office 365 email migration performance and best practices
 
 There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 
