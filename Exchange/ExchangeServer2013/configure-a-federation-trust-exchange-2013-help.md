@@ -151,6 +151,9 @@ For additional management tasks related to federation, see [Federation procedure
 
 5. Using the information from the previous step, create TXT records on your public DNS server in every domain that will be included in the federation trust. Depending on the update schedule of your public DNS host, replication of DNS changes may take 15 minutes or longer. Continue after you've verified that the new TXT records are available.
 
+    > [!IMPORTANT]
+    > The TXT record should be created for every domain that is being federated/shared. If this is a hybrid environment then all accepted domains that are validated in Exchange Online should have TXT records created.
+
 6. Run this command to retrieve the metadata and certificate from Azure AD:
 
    ```powershell
