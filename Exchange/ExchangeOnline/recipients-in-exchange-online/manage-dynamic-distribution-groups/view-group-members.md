@@ -42,7 +42,7 @@ $FTE = Get-DynamicDistributionGroup "Full Time Employees"
 ```
 
 ```
-Get-Recipient -ResultSize -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 
 This example displays the list of users and email addresses (more than 1000 mailboxes).
