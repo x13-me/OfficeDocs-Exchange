@@ -109,7 +109,7 @@ You can only send from one email address unless your device can store login cred
 
 Choose this option when:
 
-- SMTP client submission (Option 1) is not compatible with your business needs or with your device. For example, your device or application does not meet the requirements of SMTP client submission, such as TLS support.
+- SMTP client submission (Option 1) is not compatible with your business needs or with your device.
 
 - You only need to send messages to recipients in your own organization who have mailboxes in Office 365; you don't need to send email to people outside of your organization.
 
@@ -322,7 +322,7 @@ Here's a comparison of each configuration option and the features they support.
 |Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
-|Device or application server must support TLS|Required|Optional|Optional|
+|Device or application server must support TLS|Required|Required|Required|
 |Requires authentication|Office 365 user name and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Office 365.|
 |**Limitations**|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).|
