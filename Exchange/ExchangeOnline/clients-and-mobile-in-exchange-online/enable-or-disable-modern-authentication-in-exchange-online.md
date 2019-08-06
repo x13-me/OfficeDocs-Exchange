@@ -73,3 +73,5 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 ## See also
 
 [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+
+[Set up multi-factor authentication for Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)
