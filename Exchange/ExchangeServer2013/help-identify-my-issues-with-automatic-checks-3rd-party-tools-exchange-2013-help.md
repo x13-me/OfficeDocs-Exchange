@@ -41,7 +41,7 @@ We'll check to see if you have the necessary pre-requisites on your Windows 7 x6
 <tr class="even">
 <td><p>3rd Party Tools</p></td>
 <td><p>Im not sure what 3rd party integrations/applications I have installed in my messaging environment</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834907">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

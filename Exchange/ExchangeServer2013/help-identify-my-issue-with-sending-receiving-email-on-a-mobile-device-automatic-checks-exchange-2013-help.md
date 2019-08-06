@@ -41,7 +41,7 @@ We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain
 <tr class="even">
 <td><p>Mobile Email</p></td>
 <td><p>Cannot send or receive email on my mobile device</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/?linkid=313774">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>
