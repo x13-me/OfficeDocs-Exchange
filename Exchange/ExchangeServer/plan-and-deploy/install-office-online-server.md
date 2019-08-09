@@ -19,7 +19,7 @@ manager: dansimp
 
 # Install Office Online Server in an Exchange organization
 
-An optional prerequisite for Exchange 2016 Cumulative Update 1 (CU1) or later is the installation of Office Online Server on one or more servers in your organization. Office Online Server enables users to view supported file attachments within Outlook on the web (formerly known as Outlook Web App) without downloading them first and without having a local installation of the program. Without Office Online Server installed, Outlook users need to download attachments to their local computer and then open them in a local application.
+An optional prerequisite for Exchange 2016 Cumulative Update 1 (CU1) or later, as well as for Exchange 2019, is the installation of Office Online Server on one or more servers in your organization. Office Online Server enables users to view supported file attachments within Outlook on the web (formerly known as Outlook Web App) without downloading them first and without having a local installation of the program. Without Office Online Server installed, Outlook users need to download attachments to their local computer and then open them in a local application.
 
 > [!NOTE]
 > Office Online Server is available for download as part of a volume licensing agreement. If you don't have a volume license agreement, you can skip the instructions in this step. However, without Office Online Server installed, Outlook users will need to download attachments to their local computer to view them; they won't be able to view them in Outlook.
@@ -48,7 +48,7 @@ Office Online Server requires the following to install:
 
 - Windows Server 2012 R2
 
-- Exchange 2016 Cumulative Update 1 (CU1) or later
+- Exchange 2016 Cumulative Update 1 (CU1) or later, or Exchange 2019
 
    > [!NOTE]
    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange Server prerequisites](prerequisites.md).
