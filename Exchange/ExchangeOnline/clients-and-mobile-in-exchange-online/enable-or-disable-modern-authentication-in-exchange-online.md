@@ -44,6 +44,8 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - You should synchronize the state of modern authentication in Exchange Online with Skype for Business Online to prevent multiple log in prompts in Skype for Business clients. For instructions, see [Skype for Business Online: Enable your tenant for modern authentication](https://aka.ms/SkypeModernAuth).
 
+- A user with multiple accounts configured in their Outlook profile might receive an error when they try to connect to their mailbox. For more information, see [KB 4516672](https://support.microsoft.com/en-us/help/4516672/outlook-shows-disconnected-after-enabling-modern-authentication-in-off)
+
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=534121).
