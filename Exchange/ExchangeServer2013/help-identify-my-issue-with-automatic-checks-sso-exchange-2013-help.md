@@ -45,22 +45,22 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>SSO</p></td>
 <td><p>I'd like to determine what domains I have on-premises/I'm not sure what domains I own.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834918">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>SSO</p></td>
 <td><p>I'd like to determine if my domain joined computers meet the requirements for SSO.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834912">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>SSO</p></td>
 <td><p>I'd like to confirm I have a directory that supports SSO.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834876">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>SSO</p></td>
 <td><p>I'm not sure if my domains meet the requirements for SSO.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834918">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

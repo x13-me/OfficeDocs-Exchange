@@ -45,7 +45,7 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>I'm not sure if my domain computers are ready for Office.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834911">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

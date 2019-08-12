@@ -45,20 +45,17 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Domains</p></td>
 <td><p>I'd like to determine what domains I have on-premises/I am not sure what domains I own.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834925">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Domains</p></td>
 <td><p>I'm not sure if I added and verified the right domains for my tenant.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834905">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Domains</p></td>
 <td><p>I need help making sure all of my DNS records are correct for Office 365.</p></td>
-<td><ol>
-<li><p><a href="https://portal.microsoftonline.com/">Sign in to Office 365</a></p></li>
-<li><p>Select <a href="https://portal.microsoftonline.com/tools">Tools</a></p></li>
-<li><p>Select <strong>Check your on-premises PC with the Office 365 Best Practices Analyzer</strong></p></li>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></li>
 </ol></td>
 </tr>
 </tbody>

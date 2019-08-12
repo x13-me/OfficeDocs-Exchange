@@ -41,16 +41,12 @@ We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain
 <tr class="even">
 <td><p>Outlook</p></td>
 <td><p>Cannot send or receive email in Outlook</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/?linkid=313775">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Outlook</p></td>
 <td><p>I think my PC might not be configured correctly for Outlook</p></td>
-<td><ol>
-<li><p><a href="https://portal.microsoftonline.com/">Sign in to Office 365</a></p></li>
-<li><p>Select <a href="https://portal.microsoftonline.com/tools">Tools</a></p></li>
-<li><p>Select <strong>Check your on=premises PC with the Office 365 Best Practices Analyzer</strong>.</p></li>
-</ol></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

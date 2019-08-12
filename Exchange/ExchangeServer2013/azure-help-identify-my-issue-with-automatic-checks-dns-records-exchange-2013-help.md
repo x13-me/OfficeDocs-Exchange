@@ -45,47 +45,37 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Domains</p></td>
 <td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Office 365</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834905">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Domains</p></td>
 <td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Office 365 (I used a CNAME record)</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834905">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Domains</p></td>
 <td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Office 365 (I used a TXT record)</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834905">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Instant Messaging</p></td>
 <td><p>My users are having trouble getting their Lync client to work</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834901">Run this check</a></p></td>
+<<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Instant Messaging</p></td>
 <td><p>My users are having trouble getting their Lync client to work with other organizations</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834902">Run this check</a></p></td>
+<<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Mail</p></td>
 <td><p>I can't get Outlook to automatically configure with Office 365</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834897">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Mail</p></td>
 <td><p>My email doesn't seem to be routing to Office 365</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834898">Run this check</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Mail</p></td>
-<td><p>My organization is getting a good deal of SPAM</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834903">Run this check</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Mail</p></td>
-<td><p>I can't seem to get Exchange Hybrid working</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834904">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

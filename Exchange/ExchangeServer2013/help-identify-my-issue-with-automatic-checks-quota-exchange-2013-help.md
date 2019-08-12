@@ -45,7 +45,7 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Schema</p></td>
 <td><p>I'd like to determine if my schema is ready for Exchange Hybrid.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834919">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>
