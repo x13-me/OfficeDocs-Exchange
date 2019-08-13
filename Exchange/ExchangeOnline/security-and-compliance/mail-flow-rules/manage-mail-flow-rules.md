@@ -58,7 +58,7 @@ Interested in scenarios where these procedures are used? See the following topic
 You can create a mail flow rule by setting up a Data Loss Prevention (DLP) policy, creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or Exchange Online PowerShell.
 
 > [!NOTE]
-> After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to email.
+> After you create or modify a mail flow rule, it can take up to 30 minutes and more in some case for the new or updated rule to be applied to email.
 
 ### Use a DLP policy to create mail flow rules
 
@@ -170,7 +170,7 @@ To verify that you have successfully created a new mail flow rule, do the follow
 ## View or modify a mail flow rule
 
 > [!NOTE]
-> After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to email.
+> After you create or modify a mail flow rule, it can take up to 30 minutes and more in some case for the new or updated rule to be applied to email.
 
 ### Use the EAC to view or modify a mail flow rule
 
