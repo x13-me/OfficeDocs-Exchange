@@ -157,7 +157,7 @@ Perform the following prerequisite steps before you begin the migration.
    Run the following command to take a snapshot of the original source folder structure.
 
    ```
-   Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+   Get-PublicFolder -Recurse -ResultSize Unlimited | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
    ```
 
    Run the following command to take a snapshot of public folder statistics such as item count, size, and owner.
@@ -169,7 +169,7 @@ Perform the following prerequisite steps before you begin the migration.
    Run the following command to take a snapshot of the permissions.
 
    ```
-   Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+   Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
    ```
 
    Save the information from the preceding commands for comparison at the end of the migration.
@@ -538,7 +538,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 1. In Exchange Online PowerShell, run the following command to take a snapshot of the new folder structure.
 
    ```
-   Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+   Get-PublicFolder -Recurse -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
    ```
 
 2. In Exchange Online PowerShell, run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
@@ -550,7 +550,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 3. In Exchange Online PowerShell, run the following command to take a snapshot of the permissions.
 
    ```
-   Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+   Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
    ```
 
 ## Remove public folder databases from the legacy Exchange servers
