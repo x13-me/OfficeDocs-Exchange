@@ -11,7 +11,7 @@ title: Remote Connectivity Analyzer tests for Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

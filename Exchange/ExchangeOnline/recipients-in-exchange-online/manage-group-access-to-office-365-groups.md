@@ -2,9 +2,9 @@
 localization_priority: Normal
 description: Learn how to allow or block guest access to Office 365 Groups.
 ms.topic: article
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
 ms.reviewer: 
 title: Allow/Block guest access to Office 365 groups
