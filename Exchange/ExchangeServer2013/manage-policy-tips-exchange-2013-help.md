@@ -1,9 +1,9 @@
 ---
 title: 'Manage policy tips: Exchange 2013 Help'
 TOCTitle: Manage policy tips
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
