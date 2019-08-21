@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to change the management role assignment policy assigned to a mailbox.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Change the assignment policy on a mailbox
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

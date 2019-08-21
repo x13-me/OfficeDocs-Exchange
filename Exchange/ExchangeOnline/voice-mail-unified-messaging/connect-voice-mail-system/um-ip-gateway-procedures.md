@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Create a UM IP gateway
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 298e51f5-9e42-4395-b9ea-6f16c28a8422
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: UM IP gateway procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

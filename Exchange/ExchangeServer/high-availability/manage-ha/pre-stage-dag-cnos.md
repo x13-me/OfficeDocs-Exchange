@@ -11,7 +11,7 @@ title: Pre-stage the cluster name object for a database availability group
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

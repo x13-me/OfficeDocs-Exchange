@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
 ms.date: 4/8/2015
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: View and manage a call answering rule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

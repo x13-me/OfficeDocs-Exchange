@@ -1,10 +1,10 @@
 ---
 localization_priority: Critical
 ms.topic: get-started-article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
 ms.date: 7/27/2018
 ms.reviewer: 
@@ -15,7 +15,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Manage role groups
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

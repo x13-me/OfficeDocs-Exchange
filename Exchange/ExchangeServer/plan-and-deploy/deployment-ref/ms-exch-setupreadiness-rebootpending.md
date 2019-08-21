@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange 2019 Setup can't continue because the local computer needs to be restarted to complete the installation of other programs or Windows updates.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.RebootPending
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: d5c73280-4e54-473a-b328-9673af11e2c0
 ms.date: 8/2/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: The computer needs to be restarted before Setup can continue [RebootPendi
 ms.collection: exchange-server
 audience: Developer
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

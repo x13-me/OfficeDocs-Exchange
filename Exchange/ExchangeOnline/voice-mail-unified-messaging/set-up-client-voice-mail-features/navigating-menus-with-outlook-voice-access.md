@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Outlook Voice Access is a feature in Unified Messaging (UM) that enables users to retrieve email and voice mail messages and manage their calendar and personal contacts by using an analog, digital, or mobile telephone. They can interact with their mailbox using their telephone keypad or voice commands, but must use the keypad on their telephone to search for a user in the directory for your organization.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Navigating menus with Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
