@@ -181,7 +181,7 @@ To verify that you've successfully created a mail-enabled security group, do any
 
    - [Ownership](#ownership)
 
-   - [Membership](#membership
+   - [Membership](#membership)
 
    - [Membership approval](#membership-approval)
 
