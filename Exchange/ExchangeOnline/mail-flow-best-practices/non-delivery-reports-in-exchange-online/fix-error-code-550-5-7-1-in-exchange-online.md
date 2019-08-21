@@ -169,7 +169,20 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 If the connectors are configured incorrectly, your Exchange administrator needs to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization.
 
-For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing).
+
+Now, if you disabled an Active Directory account On-premises, the error that you will get this message:
+
+```
+Your message couldn't be delivered to the recipient because you don't have permission to send to it.
+Ask the recipient's email admin to add you to the accept list for the recipient.
+For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
+````
+
+- In case you want to cease all the communication with the mailbox on Exchange-Online the solution would be to delete the user completely On-Premises, instead of disabling it.
+- Another solution would be to remove his license but in this case, to stop receiving emails you'd need to create a transport rule, if you don't do this the user will be able to receive emails for about 30 days more after removal of the license
+
+Please consider this scenario as part of the disabling workflow for a user on Exchange Online.
+
 
 ## Still need help?
 
