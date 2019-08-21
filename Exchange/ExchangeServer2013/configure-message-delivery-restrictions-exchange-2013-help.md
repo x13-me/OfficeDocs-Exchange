@@ -3,7 +3,7 @@ title: 'Configure message delivery restrictions for a mailbox: Exchange 2013 Hel
 TOCTitle: Configure message delivery restrictions for a mailbox
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
