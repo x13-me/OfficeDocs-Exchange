@@ -56,6 +56,15 @@ For this scenario, your organization's mail flow setup looks like the following 
 
      You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
 
+> [!IMPORTANT]
+> When you're configuring this scenario the "host" that you need to configure to receive emails from the third-party software is given on the **MX Record**. For example
+> ![Hubstream.mx Domain host configuration](../../../README-media/ThirdPartyHostconfig.png) 
+> So for this particular domain the hostname where the O365 host should be  **hubstream-mx.mail.protection.outlook.com**. This can vary from domain to domain so please use the Configuration/Domain/<and click on domain> to check your actual record.
+> Since the antispam service is external you'd need to create a transport rule on Exchange admin/Mail flow/Rules, so you don't do a double "antispam check and possible rejection of the messages" like this:
+> ![Hubstream.mx Domain host configuration](../../../README-media/TransportRuleFor3rdParty.png) 
+
+
+
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
