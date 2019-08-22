@@ -3,7 +3,7 @@ title: 'View statistics for public folders and public folder items: Exchange 201
 TOCTitle: View statistics for public folders and public folder items
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda

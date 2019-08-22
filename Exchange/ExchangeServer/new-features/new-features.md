@@ -12,7 +12,7 @@ audience: ITPro
 ms.date: 9/20/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

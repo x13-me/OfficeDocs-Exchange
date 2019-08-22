@@ -11,7 +11,7 @@ title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailb
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

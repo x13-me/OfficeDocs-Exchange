@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can retrieve PIN information for a user who is enabled for Unified Messaging (UM). After a user has been enabled for UM-enabled and a PIN is generated or created, the PIN is encrypted and stored in the user's mailbox.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 01517cca-99fe-46b2-b586-19e8d2707728
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Retrieve voice mail PIN information in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

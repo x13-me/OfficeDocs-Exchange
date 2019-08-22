@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

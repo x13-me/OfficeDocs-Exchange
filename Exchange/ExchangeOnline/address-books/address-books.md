@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about the different methods that Exchange Online uses to organize and configure email addresses.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7c90d413-f978-4af5-8bc5-6b86d897edc3
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

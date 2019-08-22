@@ -3,7 +3,7 @@ title: 'Create a public folder mailbox: Exchange 2013 Help'
 TOCTitle: Create a public folder mailbox
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f

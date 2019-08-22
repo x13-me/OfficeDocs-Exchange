@@ -11,7 +11,7 @@ title: Plan for high availability and site resilience
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

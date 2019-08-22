@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable a Unified Messaging (UM) user to receive faxes. By default, when you enable a user for Unified Messaging, they will be able to receive faxes if you enable faxing and configure a fax partner's URI on the UM mailbox policy that is linked to the user. Faxing can be enabled or disabled on UM dial plans, UM mailbox policies, or the UM-enabled user's mailbox.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a0505001-aac0-41ef-824f-76e5e56d7675
 ms.date: 12/9/2016
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Enable a user to receive faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

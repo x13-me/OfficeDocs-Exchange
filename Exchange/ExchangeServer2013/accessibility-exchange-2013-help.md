@@ -1,9 +1,9 @@
 ---
 title: 'Accessibility for people with disabilities: Exchange 2013 Help'
 TOCTitle: Accessibility for people with disabilities
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.collection: Ent_O365_Hybrid

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable or disable the Play on Phone feature for users associated with a Unified Messaging (UM) mailbox policy. This option is enabled by default and allows users to play their voice mail messages over any phone. This option isn't available to UM-enabled users who have a mailbox on a Microsoft Exchange Server 2007 server.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d3281a97-6fc6-42a3-855f-1af1184a644a
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Enable or disable Play on Phone for Outlook Voice Access users in Exchang
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

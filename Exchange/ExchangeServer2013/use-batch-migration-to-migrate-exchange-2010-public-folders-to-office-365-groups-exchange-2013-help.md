@@ -3,7 +3,7 @@ title: 'Use batch migration to migrate Exchange 2010 public folders to Office 36
 TOCTitle: Use batch migration to migrate Exchange 2010 public folders to Office 365 Groups
 ms:assetid: d018558d-3075-4dd3-9ff7-91ce66b8d5fb
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843875(v=EXCHG.150)

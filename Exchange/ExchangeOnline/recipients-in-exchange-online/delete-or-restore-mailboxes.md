@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
-author: kwekua
-ms.author: kwekua
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

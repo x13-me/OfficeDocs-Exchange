@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to control whether it can answer incoming calls. For example, you might want to disable the UM auto attendant when you're recording or re-recording customized prompts and messages.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Disable a UM auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

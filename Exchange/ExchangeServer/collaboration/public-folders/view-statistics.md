@@ -11,7 +11,7 @@ title: View statistics for public folders and public folder items
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

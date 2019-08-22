@@ -11,7 +11,7 @@ title: Manage distribution groups in Exchange Server, Exchange distribution grou
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

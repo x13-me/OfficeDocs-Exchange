@@ -11,7 +11,7 @@ title: Use Windows Server Backup to restore a backup of Exchange
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

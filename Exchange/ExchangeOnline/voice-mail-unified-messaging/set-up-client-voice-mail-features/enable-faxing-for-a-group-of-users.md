@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable inbound faxes for users linked with a Unified Messaging (UM) mailbox policy. By default, when you enable users for Unified Messaging, users can't receive fax messages until you specify the URI for the fax partner server, deploy a fax partner server for your organization, and enable faxing on a UM mailbox policy. If the option to allow incoming faxes is disabled on the UM dial plan, the users linked with the UM mailbox policy still won't be able to receive faxes. Similarly, if the option to allow incoming faxes is disabled on an individual user, that user won't be able to receive faxes.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178
 ms.date: 12/9/2016
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Enable faxing for a group of users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
