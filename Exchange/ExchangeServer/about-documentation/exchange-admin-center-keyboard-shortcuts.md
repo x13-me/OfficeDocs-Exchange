@@ -12,7 +12,6 @@ ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Keyboard shortcuts in the Exchange admin center
