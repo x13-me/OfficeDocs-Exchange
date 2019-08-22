@@ -120,7 +120,7 @@ The names of the mounted folders can be any folder name, as long as the folders 
 To verify that you've successfully mounted the volume folders, run the following command.
 
 ```powershell
-Dir C:\
+Dir C:\ExchangeVolumes
 ```
 
 The mounted volumes should appear in the output list.
