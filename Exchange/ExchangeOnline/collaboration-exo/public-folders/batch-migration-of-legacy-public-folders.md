@@ -143,7 +143,7 @@ Perform the following prerequisite steps before you begin the migration.
    Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration,PublicFolderMigrationComplete
    ```
 
-4. (Note that this step is only necessary if you are re-attempting a migration that failed perviously.) If the status of the _PublicFoldersLockedforMigration_ or _PublicFolderMigrationComplete_ properties is `$true`, run the following command to set the value to `$false`.
+4. (Note that this step is only necessary if you are re-attempting a migration that failed previously.) If the status of the _PublicFoldersLockedforMigration_ or _PublicFolderMigrationComplete_ properties is `$true`, run the following command to set the value to `$false`.
 
    ```
    Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
