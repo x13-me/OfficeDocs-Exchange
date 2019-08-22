@@ -3,7 +3,7 @@ title: 'Configuration notes for supported VoIP gateways, IP PBXs, and PBXs: Exch
 TOCTitle: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 1583674f-5a57-45fd-8125-087d1624e686

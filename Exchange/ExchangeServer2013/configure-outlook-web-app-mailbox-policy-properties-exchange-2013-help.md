@@ -3,7 +3,7 @@ title: 'View or configure Outlook Web App mailbox policy properties: Exchange 20
 TOCTitle: View or configure Outlook Web App mailbox policy properties
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa

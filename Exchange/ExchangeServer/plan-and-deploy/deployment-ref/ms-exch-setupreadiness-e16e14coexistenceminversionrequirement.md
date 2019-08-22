@@ -3,10 +3,10 @@ localization_priority: Normal
 monikerRange: exchserver-2016
 description: Setup can't continue because the organization contains one or more Exchange 2010 servers that aren't running the minimum required version of Exchange.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.E16E14CoexistenceMinVersionRequirement
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 24d16ace-249f-4c74-b617-3b0242e5aeca
 ms.date: 9/15/2015
 ms.reviewer: 
@@ -14,7 +14,7 @@ title: Exchange 2010 SP3 RU11 or later is required for coexistence with Exchange
 ms.collection: exchange-server
 audience: Developer
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

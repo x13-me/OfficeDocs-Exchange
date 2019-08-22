@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because an AD LDS directory exists in the default location.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.ADAMDataPathExists
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: cf830dec-dd74-47b2-bee2-b8956f8023ce
 ms.date: 8/2/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: AD LDS directory exists in default location [ADAMDataPathExists]
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

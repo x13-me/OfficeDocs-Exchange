@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019."
 ms.topic: get-started-article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
 ms.date: 7/27/2016
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -11,7 +11,7 @@ title: Create shared mailboxes in the Exchange admin center
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

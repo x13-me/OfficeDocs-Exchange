@@ -3,7 +3,7 @@ title: 'Enable Voice Mail Preview for users: Exchange 2013 Help'
 TOCTitle: Enable Voice Mail Preview for users
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 206a5d2b-27c9-4e9b-a29a-6ddffaa07109

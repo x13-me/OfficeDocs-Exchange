@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms.date:
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Scenario Deploying address book policies in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

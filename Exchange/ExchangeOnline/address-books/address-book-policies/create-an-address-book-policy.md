@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to create address book policies (ABPs) in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

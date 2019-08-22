@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

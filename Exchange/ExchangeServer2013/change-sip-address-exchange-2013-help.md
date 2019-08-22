@@ -3,7 +3,7 @@ title: 'Change a SIP address: Exchange 2013 Help'
 TOCTitle: Change a SIP address
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 33f4f464-9baa-48af-bf5e-a0d55bb45f60
