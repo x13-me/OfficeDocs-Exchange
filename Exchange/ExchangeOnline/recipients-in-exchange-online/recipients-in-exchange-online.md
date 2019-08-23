@@ -5,7 +5,8 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
-ms.date:title: Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient
+ms.date:
+title: Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient
 ms.reviewer: 
 ms.collection:
 - exchange-online
