@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

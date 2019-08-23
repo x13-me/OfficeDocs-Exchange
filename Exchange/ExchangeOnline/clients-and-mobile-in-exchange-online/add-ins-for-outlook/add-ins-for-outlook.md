@@ -11,7 +11,7 @@ title: Add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

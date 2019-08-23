@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You may need to move a user who is enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan that's associated with the user. For example, you might want to move a UM-enabled user from a Telephone Extension dial plan to a SIP URI dial plan.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Change the UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

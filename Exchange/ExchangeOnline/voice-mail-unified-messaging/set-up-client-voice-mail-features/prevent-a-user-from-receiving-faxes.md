@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
 ms.date: 12/9/2016
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Prevent a user from receiving faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

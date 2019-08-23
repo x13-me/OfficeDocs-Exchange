@@ -11,7 +11,7 @@ title: Exchange Server data protection, Exchange disaster recovery, Exchange bac
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

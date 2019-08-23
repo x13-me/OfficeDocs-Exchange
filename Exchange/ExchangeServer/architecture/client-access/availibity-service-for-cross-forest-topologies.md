@@ -11,7 +11,7 @@ title: Configure the Availability service for cross-forest topologies
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

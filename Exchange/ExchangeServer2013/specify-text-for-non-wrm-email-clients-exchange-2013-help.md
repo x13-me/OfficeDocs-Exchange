@@ -3,7 +3,7 @@ title: 'Specify the text to display for email clients that do not support Window
 TOCTitle: Specify the text to display for email clients that don't support Windows Rights Management
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b

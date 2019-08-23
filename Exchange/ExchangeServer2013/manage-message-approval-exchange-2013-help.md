@@ -1,9 +1,9 @@
 ---
 title: 'Manage message approval: Exchange 2013 Help'
 TOCTitle: Manage message approval
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227

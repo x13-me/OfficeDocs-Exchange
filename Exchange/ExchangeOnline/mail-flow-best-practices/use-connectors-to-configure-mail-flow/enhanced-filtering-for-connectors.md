@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use enhanced filtering for connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Office 365.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 
 ms.date: 
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Enhanced filtering for connectors
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -3,7 +3,7 @@ title: 'Remove a SIP address: Exchange 2013 Help'
 TOCTitle: Remove a SIP address
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: eaaff0b0-7d85-4845-a7b8-ac22b42bc415

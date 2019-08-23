@@ -1,9 +1,9 @@
 ---
 title: 'Place all mailboxes on hold: Exchange 2013 Help'
 TOCTitle: Place all mailboxes on hold
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8

@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: dansimp
+manager: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro

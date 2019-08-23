@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to create mail flow rules so messages aren't placed in the Clutter folder in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
