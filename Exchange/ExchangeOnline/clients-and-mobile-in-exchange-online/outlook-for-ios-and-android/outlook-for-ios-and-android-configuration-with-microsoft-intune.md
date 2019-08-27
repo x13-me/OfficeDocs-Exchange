@@ -220,7 +220,7 @@ The following steps allow you to create an app configuration policy. After the c
 > [!NOTE]
 > Intune notifies the enrolled device to check in with the Intune service for policy changes. The notification times vary, including immediately up to a few hours. For more information, please see [Common questions, issues, and resolutions with device policies and profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned). 
 
-![configuration policy settings](../../media/outlook_mobile_intune_6.PNG)
+![configuration policy settings]
 
 > [!IMPORTANT]
 > When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
