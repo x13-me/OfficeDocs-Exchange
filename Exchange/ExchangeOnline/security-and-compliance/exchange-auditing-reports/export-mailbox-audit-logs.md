@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.
+description: Admins can learn how to use the Exchange admin center (EAC) to export mailbox audit logs in Exchange Online.
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
@@ -17,107 +17,32 @@ manager: serdars
 
 ---
 
-# Export mailbox audit logs
+# Export mailbox audit logs in Exchange Online
 
-When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.
+When mailbox auditing is enabled for a mailbox, Exchange Online logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.
 
-When you export entries from mailbox audit logs, Microsoft Exchange saves the entries in an XML file and attaches it to an email message sent to the specified recipients.
+When you export entries from mailbox audit logs, Exchange Online saves the entries in an XML file and attaches it to an email message sent to the specified recipients.
 
 ## Before you begin
-<a name="beforeyoubegin"> </a>
 
-- Estimated time to complete each procedure: Times are variable. In Exchange Online, the mailbox audit log is sent within a few days after you export it.
+- Estimated time to complete each procedure: varies. The mailbox audit log is sent within a few days after you export it.
 
-- In Exchange Online, you have to use Remote Windows PowerShell to perform many of the procedures in this topic. For details, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
 
-- Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- If you're going to use Outlook on the web (formerly known as Outlook Web App) to view the exported entries, you need to enable .xml attachments in Outlook on the web. For details, see [Configure Outlook on the web to allow XML attachments](exchange-auditing-reports.md#configure-outlook-on-the-web-to-allow-xml-attachments).
+
+- To find and open the Exchange admin center (EAC), see, [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
+
+- You need to be assigned permissions before you can perform this procedure. To see what permissions you need, see the "View reports" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
-
-## Configure mailbox audit logging
-<a name="configmbxauditing"> </a>
-
-You have to enable mailbox audit logging on each mailbox that you want to audit before you can export and view mailbox audit logs. You also have to configure Outlook on the web (formerly known as Outlook Web App) to allow XML attachments to use Outlook on the web to access the audit log.
-
-### Step 1: Enable mailbox audit logging
-
-You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled for a mailbox, you won't get any results for that mailbox when you export the mailbox audit log.
-
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
-
-To enable mailbox audit logging for a single mailbox, run the command in Exchange Online PowerShell.
-
-```
-Set-Mailbox <Identity> -AuditEnabled $true
-```
-
-To enable mailbox audit logging for all user mailboxes in your organization, run the following commands.
-
-```
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-```
-
-```
-$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
-```
-
-### Step 2: Configure Outlook on the web to allow XML attachments
-
-When you export the mailbox audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook on the web blocks XML attachments by default. To access the exported audit log, you have to use Microsoft Outlook or configure Outlook on the web to allow XML attachments.
-
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
-
-Perform the following procedures to allow XML attachments in Outlook on the web. In Exchange Server, use the value `Default` for the _Identity_ parameter.
-
-1. Run the following command to add XML to the list of allowed file types in Outlook on the web.
-
-   ```
-   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes @{add='.xml'}
-   ```
-
-2. Run the following command to remove XML from the list of blocked file types in Outlook on the web.
-
-   ```
-   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BlockedFileTypes @{remove='.xml'}
-   ```
-
-### How do you know this worked?
-
-To verify that you've successfully configured mailbox audit logging, do the following:
-
-1. Run the following command to verify that audit logging is configured for mailboxes.
-
-   ```
-   Get-Mailbox | Format-List Name,AuditEnabled
-   ```
-
-   A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
-
-2. Run the following command to verify that XML attachments are allowed in Outlook on the web.
-
-   ```
-   Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
-   ```
-
-   Verify that `.xml` is included in the list of allowed file types.
-
-3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook on the web.
-
-   ```
-   Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
-   ```
-
-   Verify that `.xml` isn't included in the list of blocked file types.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Export the mailbox audit log
-<a name="exportauditlog"> </a>
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
-
-1. In the Exchange admin center (EAC), go to **Compliance Management** \> **Auditing**.
+1. In the EAC, go to **Compliance Management** \> **Auditing**.
 
 2. Click **Export mailbox audit logs**.
 
@@ -129,45 +54,41 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for:
 
-     - **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
+     - **All non-owners**: Search for access by admins and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
 
      - **External users**: Search for access by Microsoft datacenter administrators.
 
-     - **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization.
+     - **Administrators and delegated users**: Search for access by admins and delegated users inside your organization.
 
-     - **Administrators**: Search for access by administrators in your organization.
+     - **Administrators**: Search for access by admins in your organization.
 
    - **Recipients**: Select the users to send the mailbox audit log to.
 
 4. Click **Export**.
 
-Microsoft Exchange retrieves entries in the mailbox audit log that meet your search criteria, saves them to a file named SearchResult.xml, and then attaches the XML file to an email message sent to the recipients that you specified.
+Exchange Online retrieves entries in the mailbox audit log that meet your search criteria, saves them to a file named SearchResult.xml, and then attaches the XML file to an email message sent to the recipients that you specified.
 
 ### How do you know this worked?
 
-Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. In Exchange Online, it may take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook on the web to allow XML attachments, you can download the attached XML file.
+Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. It mmight take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook on the web to allow XML attachments, you can download the attached XML file.
 
 ## View the mailbox audit log
-<a name="viewauditlog"> </a>
-
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
 
 To save and view the SearchResult.xml file:
 
 1. Sign in to the mailbox where the mailbox audit log was sent.
 
-2. In the Inbox, open the message with the XML file attachment sent by Microsoft Exchange. Notice that the body of the email message contains the search criteria.
+2. In the Inbox, open the message with the XML file attachment sent by Exchange Online. Notice that the body of the email message contains the search criteria.
 
 3. Click the attachment and select to download the XML file.
 
 4. Open the SearchResult.xml in Microsoft Excel.
 
 ## More information
-<a name="moreinfo"> </a>
 
 ### Entries in the mailbox audit log
 
-The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
+The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the admin purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
 
 ```
 <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
@@ -204,7 +125,7 @@ Here's a description of useful fields in the mailbox audit log. They can help yo
 |LastAccessed|The date and time when the mailbox was accessed.|
 |Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](https://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).|
 |OperationResult|Whether the action performed by the non-owner succeeded or failed.|
-|LogonType|The type of non-owner access. These include administrator, delegate, and external.|
+|LogonType|The type of non-owner access. These include admin, delegate, and external.|
 |FolderPathName|The name of the folder that contained the message that was affected by the non-owner.|
 |ClientInfoString|Information about the mail client used by the non-owner to access the mailbox.|
 |ClientIPAddress|The IP address of the computer used by the non-owner to access the mailbox.|
