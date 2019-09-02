@@ -470,7 +470,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 3. Run the following command to take a snapshot of the permissions.
 
     ```powershell
-    Get-PublicFolder -Recurse Added -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
     ```
 
 ## Remove public folder databases from the legacy Exchange servers
