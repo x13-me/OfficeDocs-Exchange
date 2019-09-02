@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
 ms.topic: article
-author: markjjo
-ms.author: markjjo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
 ms.date: 12/13/2017
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

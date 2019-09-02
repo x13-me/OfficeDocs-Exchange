@@ -2,7 +2,7 @@
 title: "Troubleshoot a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

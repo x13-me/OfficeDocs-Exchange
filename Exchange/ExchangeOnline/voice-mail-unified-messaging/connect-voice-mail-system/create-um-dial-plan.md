@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: A Unified Messaging (UM) dial plan contains configuration information related to your telephony network. A UM dial plan establishes a link from the telephone extension number of a user enabled for voice mail to their mailbox. When you create a UM dial plan, you can configure the number of digits in the extension numbers, the Uniform Resource Identifier (URI) type, and the Voice over IP (VoIP) security setting for the dial plan.
 ms.topic: article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMDialPlanWizardForm.CreateUMDialPlanWizardPage
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 963ff2e1-515d-439a-953a-664174e5e283
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: Create a UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -34,7 +34,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to create a UM dial plan
 

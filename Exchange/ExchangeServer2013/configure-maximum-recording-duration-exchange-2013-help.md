@@ -3,7 +3,7 @@ title: 'Configure the maximum recording duration: Exchange 2013 Help'
 TOCTitle: Configure the maximum recording duration
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 18eeb567-1048-4c82-93cf-612cb12ec5e3

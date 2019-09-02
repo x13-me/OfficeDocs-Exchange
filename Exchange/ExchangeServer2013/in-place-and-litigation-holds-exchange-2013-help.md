@@ -1,9 +1,9 @@
 ---
 title: 'In-Place Hold and Litigation Hold: Exchange 2013 Help'
 TOCTitle: In-Place Hold and Litigation Hold
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c

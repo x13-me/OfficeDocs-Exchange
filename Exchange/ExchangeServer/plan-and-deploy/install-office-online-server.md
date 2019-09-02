@@ -2,8 +2,8 @@
 localization_priority: Critical
 description: 'Summary: Improve the attachment experience for Outlook on the web (formerly known as Outlook Web App) users by installing Office Online Server.'
 ms.topic: get-started-article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9c2b4186-be7d-4c57-b119-17a1c36fd6a0
 ms.date:
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

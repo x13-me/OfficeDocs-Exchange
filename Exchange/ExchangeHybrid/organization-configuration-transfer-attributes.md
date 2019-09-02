@@ -1,8 +1,8 @@
 ---
 title: "Organization Configuration Transfer Attributes"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 6/25/2018
 ms.reviewer: 
 audience: ITPro

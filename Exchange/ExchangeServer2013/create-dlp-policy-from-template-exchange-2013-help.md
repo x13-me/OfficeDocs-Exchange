@@ -1,9 +1,9 @@
 ---
 title: 'Create a DLP policy from a template: Exchange 2013 Help'
 TOCTitle: Create a DLP policy from a template
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc

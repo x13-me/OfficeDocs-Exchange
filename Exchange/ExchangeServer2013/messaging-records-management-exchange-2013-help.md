@@ -1,9 +1,9 @@
 ---
 title: 'Messaging records management: Exchange 2013 Help'
 TOCTitle: Messaging records management
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87

@@ -3,7 +3,7 @@ title: 'Configure the large audience size for your organization: Exchange 2013 H
 TOCTitle: Configure the large audience size for your organization
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
