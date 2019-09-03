@@ -11,7 +11,7 @@ title: Activate a mailbox database copy
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

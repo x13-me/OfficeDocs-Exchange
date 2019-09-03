@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.reviewer: toklima
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

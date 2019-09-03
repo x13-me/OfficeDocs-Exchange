@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Administrators can learn about Unified Messaging in Exchange Server 2016.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
 monikerRange: exchserver-2016
 ms.date:

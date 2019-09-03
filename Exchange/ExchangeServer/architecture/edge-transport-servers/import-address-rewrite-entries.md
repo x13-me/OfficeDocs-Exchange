@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create or import email address rewriting in bulk in Exchange Server.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms.date: 7/3/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

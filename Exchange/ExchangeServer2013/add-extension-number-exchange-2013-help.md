@@ -3,7 +3,7 @@ title: 'Add an extension number: Exchange 2013 Help'
 TOCTitle: Add an extension number
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031

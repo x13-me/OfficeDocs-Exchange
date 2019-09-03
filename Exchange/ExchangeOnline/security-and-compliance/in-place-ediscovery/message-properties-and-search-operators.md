@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server and Exchange Online. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results.
 ms.topic: overview
-author: markjjo
-ms.author: markjjo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: Admin
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

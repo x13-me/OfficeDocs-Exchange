@@ -3,7 +3,7 @@ title: 'Enable a user to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable a user to receive faxes
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 12/9/2016
 ms.reviewer: 
 ms.assetid: a0505001-aac0-41ef-824f-76e5e56d7675

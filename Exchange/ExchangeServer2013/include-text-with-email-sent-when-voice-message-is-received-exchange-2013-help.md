@@ -3,7 +3,7 @@ title: 'Include text with the email message sent when a voice message Is receive
 TOCTitle: Include text with the email message sent when a voice message Is received
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc

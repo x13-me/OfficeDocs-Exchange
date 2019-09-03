@@ -3,7 +3,7 @@ title: 'UM IP gateway procedures: Exchange 2013 Help'
 TOCTitle: UM IP gateway procedures
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 298e51f5-9e42-4395-b9ea-6f16c28a8422

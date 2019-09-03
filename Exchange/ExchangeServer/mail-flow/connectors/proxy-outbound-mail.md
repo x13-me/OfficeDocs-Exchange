@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Configure Send connectors to proxy outbound mail
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

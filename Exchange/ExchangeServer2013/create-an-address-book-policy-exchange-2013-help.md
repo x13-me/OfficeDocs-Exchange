@@ -3,7 +3,7 @@ title: 'Create an address book policy: Exchange 2013 Help'
 TOCTitle: Create an address book policy
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9

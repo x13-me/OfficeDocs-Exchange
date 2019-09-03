@@ -3,7 +3,7 @@ title: 'Set the number of sign-in failures before a voice mail PIN is reset: Exc
 TOCTitle: Set the number of sign-in failures before a voice mail PIN is reset
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 4de38499-0a6f-4f00-8697-eeff805d7266

@@ -3,7 +3,7 @@ title: 'Configure the time zone: Exchange 2013 Help'
 TOCTitle: Configure the time zone
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9

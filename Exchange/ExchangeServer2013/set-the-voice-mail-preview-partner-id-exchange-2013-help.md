@@ -3,7 +3,7 @@ title: 'Set the Voice Mail Preview partner ID: Exchange 2013 Help'
 TOCTitle: Set the Voice Mail Preview partner ID
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: ab98c320-9952-47a7-b141-ddfc2c0ad419

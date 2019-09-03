@@ -3,7 +3,7 @@ title: 'Configure the VoIP security setting: Exchange 2013 Help'
 TOCTitle: Configure the VoIP security setting
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1

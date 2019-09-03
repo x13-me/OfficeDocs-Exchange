@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about mail flow rules (transport rules) and their components in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
 ms.date: 7/13/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Mail flow rules in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
