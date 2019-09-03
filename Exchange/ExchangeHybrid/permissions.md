@@ -54,7 +54,7 @@ The following permissions **are** supported:
 
 > [!IMPORTANT]
 > The Private items can be shared with a delegate using the following procedure on your Outlook on Desktop app:
-> 1. Go to File/Account Settings/Delegate Access
+> 1. Go to **File** > **Account Settings** > **Delegate Access**
 >  ![Delegate Access Menu 1](../../README-media/Private_Item_Menu1.png)
 > 2. On the next windows click on Add. A new menu will appears with the people inside of your organization, select a delegate and then click Ok.
 > 3. The following Image will appears, where you can select the Checkbox related share private items with a delegate
