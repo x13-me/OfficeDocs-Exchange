@@ -103,6 +103,10 @@ Before proceeding, review [How to set up a multifunction device or application t
    3. Select **Outbound Connections**, and in the TCP Port box, enter **25** and select **OK**.
 
    4. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
+   
+> [!NOTE]
+> • Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address.
+>   You can find this by looking for the MX record of your domain in the **admin.microsoft.com** portal, located in the **Setup** section.
 
 ### Step 4: Restart the IIS service and the SMTP service
 
@@ -161,6 +165,10 @@ Before proceeding, review [How to set up a multifunction device or application t
    4. Select **Outbound Connections** and in the TCP Port box, enter **25** and select **OK**.
 
    5. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
+
+> [!NOTE]
+> • Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address.
+>   You can find this by looking for the MX record of your domain in the **admin.microsoft.com** portal, located in the **Setup** section.
 
 ### Step 4 Restart the IIS service and the SMTP service
 
