@@ -170,7 +170,7 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 If the connectors are configured incorrectly, your Exchange administrator needs to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization.
 
 
-Now, if you disabled an Active Directory account On-premises, the error that you will get this message:
+If you have disabled an Active Directory account on-premises, you will get the following error message:
 
 ```
 Your message couldn't be delivered to the recipient because you don't have permission to send to it.
