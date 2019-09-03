@@ -60,7 +60,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 > When you're configuring this scenario the "host" that you need to configure to receive emails from the third-party software is given on the **MX Record**. For example
 > ![Hubstream.mx Domain host configuration](../../../README-media/ThirdPartyHostconfig.png) 
 > So for this particular domain the host name for the O365 host should be  **hubstream-mx.mail.protection.outlook.com**. This can vary from domain to domain, so please use Configuration/Domain/<and click on domain> to check your actual record.
-> Since the antispam service is external you'd need to create a transport rule on Exchange admin/Mail flow/Rules, so you don't do a double "antispam check and possible rejection of the messages" like this:
+> Since the anti-spam service is external, you'd need to create a transport rule on Exchange admin/Mail flow/Rules so that you don't do a double anti-spam check, resulting in possible rejection of the messages such as
 > ![Hubstream.mx Domain host configuration](../../../README-media/TransportRuleFor3rdParty.png).
 
 
