@@ -57,7 +57,7 @@ The following permissions **are** supported:
 > 1. Go to **File** > **Account Settings** > **Delegate Access**
 >  ![Delegate Access Menu 1](../../README-media/Private_Item_Menu1.png)
 > 2. On the next windows click on Add. A new menu will appears with the people inside of your organization, select a delegate and then click Ok.
-> 3. The following Image will appears, where you can select the Checkbox related share private items with a delegate
+> 3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 > ![Delegate Access Menu 2](../../README-media/Private_Item_Menu2.png)
 
 The following permissions or capabilities **aren't** supported:
