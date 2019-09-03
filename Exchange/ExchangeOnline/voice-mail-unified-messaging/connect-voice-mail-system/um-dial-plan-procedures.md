@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Create a UM dial plan
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: UM dial plan procedures [EXO] in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

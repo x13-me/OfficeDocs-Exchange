@@ -2,9 +2,9 @@
 localization_priority: Normal
 description: Learn how to allow or block guest access to Office 365 Groups.
 ms.topic: article
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
 ms.reviewer: 
 title: Allow/Block guest access to Office 365 groups
@@ -22,8 +22,6 @@ You can allow or block guest users who are using a specific domain. For example,
 Or, let's say you want to block personal email address domains. You can set up a Block list that contains domains like Gmail.com and Outlook.com.
 
 ## Important information about how block lists work
-
-- This feature is currently only in Preview and as part of an Office 365 license.
 
 - You can create either an Allow list or Block list. **But you can't set up both types of lists**. By default, whatever domains are not in an Allow list are on a Block list, and vice versa.
 

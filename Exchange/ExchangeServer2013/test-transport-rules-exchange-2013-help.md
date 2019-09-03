@@ -1,9 +1,9 @@
 ---
 title: 'Test a transport rule: Exchange 2013 Help'
 TOCTitle: Test a transport rule
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1

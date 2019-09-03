@@ -3,7 +3,7 @@ title: 'Enable a customized non-business hours greeting: Exchange 2013 Help'
 TOCTitle: Enable a customized non-business hours greeting
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c

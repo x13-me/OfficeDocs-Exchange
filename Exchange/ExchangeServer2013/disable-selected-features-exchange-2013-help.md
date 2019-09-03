@@ -3,7 +3,7 @@ title: 'Disable selected features for Outlook Voice Access users: Exchange 2013 
 TOCTitle: Disable selected features for Outlook Voice Access users
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 37421edf-af60-4ca9-9e8b-262b8b851607

@@ -3,7 +3,7 @@ title: 'Enable or disable sending voice messages to users: Exchange 2013 Help'
 TOCTitle: Enable or disable sending voice messages to users
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934

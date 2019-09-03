@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 Setup can't continue because the Unified Communications Managed API 4.0 Runtime update is required on servers before you install the Mailbox server role.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.UcmaRedistMsi
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: b26b628b-116d-4f13-ab86-bac80e2a2e1f
 ms.date: 8/2/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: UCMA 4.0, Core Runtime not installed [UcmaRedistMsi]
 ms.collection: exchange-server
 audience: Developer
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

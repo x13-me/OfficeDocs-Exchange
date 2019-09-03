@@ -12,7 +12,7 @@ mms.collection:
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -225,7 +225,7 @@ The following steps allow you to create an app configuration policy. After the c
 > [!IMPORTANT]
 > When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
 
-#### Create an app configuration policy for Outlook for iOS and Android
+#### Create a managed devices app configuration policy for Outlook for iOS and Android
 
 1. Sign into the Azure portal.
 
@@ -307,12 +307,12 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 
 ## Deploying configuration scenarios with Intune for unenrolled devices
 
-If you are using Microsoft Intune as your mobile app management provider, the following steps allow you to create an app configuration policy. After the configuration is created, you can assign its settings to groups of users.
+If you are using Microsoft Intune as your mobile app management provider, the following steps allow you to create a managed apps app configuration policy. After the configuration is created, you can assign its settings to groups of users.
 
 > [!NOTE]
 > Intune managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
 
-#### Create an app configuration policy for Outlook for iOS and Android
+#### Create a managed apps app configuration policy for Outlook for iOS and Android
 
 1. Sign in to the Azure portal.
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
 ms.topic: article
-author: stephow-msft
-ms.author: stephow
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 

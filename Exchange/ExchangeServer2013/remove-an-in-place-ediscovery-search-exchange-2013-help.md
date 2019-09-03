@@ -1,9 +1,9 @@
 ---
 title: 'Remove an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Remove an In-Place eDiscovery search
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 78461a78-1255-4a26-9d36-c6b8eb82a4f9

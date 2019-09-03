@@ -3,7 +3,7 @@ title: 'Remove an E.164 number: Exchange 2013 Help'
 TOCTitle: Remove an E.164 number
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 17941918-7dc5-41a0-b540-09f2f907362b

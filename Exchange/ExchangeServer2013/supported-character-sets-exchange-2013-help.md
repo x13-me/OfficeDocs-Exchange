@@ -3,7 +3,7 @@ title: 'Supported character sets for remote domains: Exchange 2013 Help'
 TOCTitle: Supported character sets for remote domains
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a

@@ -3,7 +3,7 @@ title: 'Configure the secondary way for Outlook Voice Access users to search: Ex
 TOCTitle: Configure the secondary way for Outlook Voice Access users to search
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72

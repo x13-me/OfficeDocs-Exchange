@@ -2,7 +2,7 @@
 title: "Perform a G Suite migration"
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online

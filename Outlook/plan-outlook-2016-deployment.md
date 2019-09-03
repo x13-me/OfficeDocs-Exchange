@@ -1,8 +1,8 @@
 ---
 title: "Planning considerations for deploying Outlook 2016 for Windows"
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 6/27/2018
 ms.reviewer: 
 audience: ITPro

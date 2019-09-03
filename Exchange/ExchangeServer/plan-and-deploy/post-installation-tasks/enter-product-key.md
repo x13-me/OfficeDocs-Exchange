@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: get-started-article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
 ms.date: 6/4/2018
 ms.reviewer: 
@@ -15,7 +15,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -3,7 +3,7 @@ title: 'Enable common PIN patterns for voice mail: Exchange 2013 Help'
 TOCTitle: Enable common PIN patterns for voice mail
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 9940a8c2-f576-4089-ab96-8b318ad3da0f

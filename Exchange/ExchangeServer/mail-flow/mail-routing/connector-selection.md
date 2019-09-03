@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how Exchange Server selects connectors (Send connectors, Delivery Agent connectors, or Foreign connectors) to deliver messages to external recipients.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 579c6dc1-ece3-442a-bb8c-f55bcb543119
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Connector selection in external message routing
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
