@@ -11,7 +11,7 @@ title: Exchange ActiveSync
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: 'Policy templates from Microsoft partners: Exchange 2013 Help'
 TOCTitle: Policy templates from Microsoft partners
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 0f95336e-b3ef-4041-9604-adf7b0b335fe

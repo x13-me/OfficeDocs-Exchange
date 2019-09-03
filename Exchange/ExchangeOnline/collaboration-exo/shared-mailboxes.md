@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
 ms.topic: article
-author: kwekua
-ms.author: kwekua
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

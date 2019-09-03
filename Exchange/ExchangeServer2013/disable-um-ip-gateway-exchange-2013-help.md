@@ -3,7 +3,7 @@ title: 'Disable a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Disable a UM IP gateway
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: fe3a8797-1230-49cb-a839-ccec238266b6

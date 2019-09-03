@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: View or configure Outlook on the web virtual directories in Exchange Serv
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

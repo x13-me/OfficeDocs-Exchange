@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to view and modify accepted domains in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0fc0ecc0-e133-48fa-9d72-cb4793a73960
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

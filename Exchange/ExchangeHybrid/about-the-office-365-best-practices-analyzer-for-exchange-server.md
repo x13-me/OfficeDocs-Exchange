@@ -1,9 +1,9 @@
 ---
 title: "About the Office 365 Best Practices Analyzer for Exchange Server"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: dmaguire
+author: msdmaguire
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: exchange-server-it-pro
