@@ -1,8 +1,8 @@
 ---
 title: 'Best practices for configuring transport rules: Exchange 2013 Help'
 TOCTitle: Best practices for configuring transport rules
-ms.author: chrisda
-author: chrisda
+ms.author: dmaguire
+author: msdmaguire
 ms.date: 
 ms.reviewer: 
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba

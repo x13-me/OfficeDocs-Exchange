@@ -11,7 +11,7 @@ ms.collection: exchange-server
 ms.reviewer: smithre4
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

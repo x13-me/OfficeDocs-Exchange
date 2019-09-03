@@ -1,9 +1,9 @@
 ---
 title: 'Start or stop an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Start or stop an In-Place eDiscovery search
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 0d546763-4bf5-4523-91f4-d181b7ee4ac2

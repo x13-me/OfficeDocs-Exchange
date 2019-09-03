@@ -11,7 +11,7 @@ title: Using a Microsoft Azure VM as a DAG witness server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

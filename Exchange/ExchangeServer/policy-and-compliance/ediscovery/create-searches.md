@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.date: 6/12/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Create an In-Place eDiscovery search in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure address rewriting on an Edge Transport server in Exchange Server, and how to verify the address rewriting configuration.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms.date: 7/3/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Address rewriting procedures on Edge Transport servers
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

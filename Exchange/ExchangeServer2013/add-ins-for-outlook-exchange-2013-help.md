@@ -3,7 +3,7 @@ title: 'Add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Add-ins for Outlook
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775

@@ -3,7 +3,7 @@ title: 'Manage mail-enabled security groups: Exchange 2013 Help'
 TOCTitle: Manage mail-enabled security groups
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25

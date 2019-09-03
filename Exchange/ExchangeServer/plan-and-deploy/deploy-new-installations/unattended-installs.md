@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: 'Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line.'
 ms.topic: get-started-article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
 ms.date:
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

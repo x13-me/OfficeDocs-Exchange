@@ -3,7 +3,7 @@ title: 'Use batch migration to migrate Exchange 2013 public folders to Office 36
 TOCTitle: Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups
 ms:assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843873(v=EXCHG.150)

@@ -3,7 +3,7 @@ title: 'Create a global address list: Exchange 2013 Help'
 TOCTitle: Create a global address list
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929

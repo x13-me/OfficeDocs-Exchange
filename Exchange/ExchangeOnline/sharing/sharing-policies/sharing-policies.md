@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: People in your organization may want to share calendars with individual business associates, friends, or family members. Sharing policies control how your users share their calendars with people outside your organization. The sharing policy that an admin applies to the user's mailbox determines what level of access a user can share and with whom. If you don't change anything, then all users can invite anyone with an email address to view their calendar. You may decide to apply a more restrictive policy.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a4f9c56a-cb9b-401b-9b45-d71c6e036871
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

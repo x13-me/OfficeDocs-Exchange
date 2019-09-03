@@ -11,7 +11,7 @@ title: Set up public folders in a new organization
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

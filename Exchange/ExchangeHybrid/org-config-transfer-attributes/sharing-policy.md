@@ -1,7 +1,7 @@
 ---
 title: "Sharing Policy attributes"
-ms.author: kchandra
-author: ChandraKavya
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: dstrome
 audience: ITPro
