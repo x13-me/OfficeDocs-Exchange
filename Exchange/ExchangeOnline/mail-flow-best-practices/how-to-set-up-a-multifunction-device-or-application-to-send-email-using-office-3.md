@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
 ms.reviewer: 
@@ -18,7 +18,7 @@ search.appverid:
 audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 localization_priority: Priority
 
 ---

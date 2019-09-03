@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: troubleshooting
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b3e740b9-171d-4179-bcd1-e279a363fa75
 ms.reviewer: 
 description: "When you can't send or receive Office 365 email, use these steps to find and fix problems with Outlook. "
@@ -26,7 +26,7 @@ keywords:
 - Outlook 365 doesn't work
 - fix office 365
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about DLP policies in Exchange Server and Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 ms.topic: overview
-author: stephow-msft
-ms.author: stephow
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 

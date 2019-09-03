@@ -3,7 +3,7 @@ title: 'Disable outgoing calls on UM IP gateways: Exchange 2013 Help'
 TOCTitle: Disable outgoing calls on UM IP gateways
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3

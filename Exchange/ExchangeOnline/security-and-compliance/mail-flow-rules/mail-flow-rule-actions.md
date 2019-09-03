@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the actions that are available for mail flow rules in Exchange Online
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
