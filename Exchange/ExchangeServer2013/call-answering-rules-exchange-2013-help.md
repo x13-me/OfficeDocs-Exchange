@@ -3,7 +3,7 @@ title: 'Call answering rules: Exchange 2013 Help'
 TOCTitle: Call answering rules
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 81863440-8b21-4523-bdab-6a2311889a0d

@@ -3,7 +3,7 @@ title: 'Configure email forwarding for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure email forwarding for a mailbox
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b

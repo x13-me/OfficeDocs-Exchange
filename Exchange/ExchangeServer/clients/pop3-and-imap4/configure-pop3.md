@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable and configure POP3 on an Exchange server 2016 or 2019 for access by POP3 clients.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
 ms.date: 6/8/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Enable and configure POP3 on an Exchange server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -56,7 +56,7 @@ For more information about POP3, see [POP3 and IMAP4 in Exchange Server](pop3-an
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Step 1: Start the POP3 services, and configure the services to start automatically
 

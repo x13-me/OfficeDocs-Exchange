@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the recommendations for mail flow rules in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

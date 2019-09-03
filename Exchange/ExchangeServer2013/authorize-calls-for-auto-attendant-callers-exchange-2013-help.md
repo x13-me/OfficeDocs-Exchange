@@ -3,7 +3,7 @@ title: 'Authorize calls for auto attendant callers: Exchange 2013 Help'
 TOCTitle: Authorize calls for auto attendant callers
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716

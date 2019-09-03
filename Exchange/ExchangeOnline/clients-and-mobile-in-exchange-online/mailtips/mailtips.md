@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: Admin
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

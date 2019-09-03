@@ -3,7 +3,7 @@ title: 'Enable or disable Play on Phone for Outlook Voice Access users: Exchange
 TOCTitle: Enable or disable Play on Phone for Outlook Voice Access users
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: d3281a97-6fc6-42a3-855f-1af1184a644a

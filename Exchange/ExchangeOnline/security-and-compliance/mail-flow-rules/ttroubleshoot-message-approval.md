@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: When you install Unified Messaging (UM), a common set of default audio files used for the voice mail system and for menu prompts, greetings, and informational announcements is installed. Although you can create a fully functional UM auto attendant or dial plan that uses only the default audio prompts, these prompts are too generic to serve as an acceptable public interface for many companies. This topic discusses the system and menu prompts, greetings, and informational announcements that are used by UM dial plans and auto attendants and how they're used when callers access the voice mail system.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7a518db5-2ece-48a8-b745-477928e32283
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Voice mail greetings, announcements, menus, and prompts in Exchange Onlin
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

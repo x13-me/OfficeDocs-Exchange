@@ -1,9 +1,9 @@
 ---
 description: Learn how to use mail flow rules to route email messages based on their contents in Exchange Online.
 localization_priority: Normal
-ms.author: chrisda
+ms.author: dmaguire
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
@@ -11,7 +11,7 @@ ms.collection:
 - M365-email-calendar
 ms.date: 6/23/2018
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 audience: ITPro
 title: Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
 

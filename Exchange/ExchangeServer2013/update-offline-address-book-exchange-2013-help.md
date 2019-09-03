@@ -1,9 +1,9 @@
 ---
 title: 'Update offline address book: Exchange 2013 Help'
 TOCTitle: Update offline address book
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 448a207e-41b4-4cef-9fe9-a68b81e2ec4e

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can use In-Place eDiscovery to search for content in public folders and place content in public folders on In-Place Hold. Like content in user mailboxes, content in public folders might be relevant if your organization has to respond to legal requests such as lawsuits or regulatory investigations.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1845e557-be01-4921-8aa1-88da2b59c2ba
 ms.date: 6/8/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Search and place a hold on public folders using In-Place eDiscovery
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

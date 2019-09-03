@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms.date:
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Configure Kerberos authentication for load-balanced Client Access service
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
