@@ -179,7 +179,7 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
 ````
 
 - In case you want to cease all the communication with the mailbox on Exchange-Online the solution would be to delete the user completely On-Premises, instead of disabling it.
-- Another solution would be to remove his license but in this case, to stop receiving emails you'd need to create a transport rule, if you don't do this the user will be able to receive emails for about 30 days more after removal of the license
+- Another solution would be to remove the license, but in this case you'd need to create a transport rule to stop the user from receiving emails. If you don't do this, the user will still be able to receive emails for about 30 days after removal of the license.
 
 Please consider this scenario as part of disabling workflow for a user on Exchange Online.
 
