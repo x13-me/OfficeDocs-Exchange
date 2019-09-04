@@ -13,7 +13,7 @@ ms.collection:
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -67,7 +67,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **Add-Ins**: Add-ins are not available with GCC accounts.
 
-- **Storage Providers**: Only the GCC user's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
+- **Storage Providers**: Only the GCC account's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
 
@@ -81,7 +81,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **TestFlight**: GCC accounts will not have access to pre-release features when using the TestFlight version of Outlook for iOS.
 
-Executing the below Exchange Online cmdlet will enable GCC Moderate customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
+Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
 ```
 Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false

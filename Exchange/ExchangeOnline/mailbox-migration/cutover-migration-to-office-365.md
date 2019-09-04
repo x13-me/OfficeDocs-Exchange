@@ -20,7 +20,7 @@ search.appverid:
 audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -46,6 +46,9 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 - The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Office 365 organization.
 
 - After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
+
+    > [!NOTE]
+    > When migrating from Exchange 2003, TCP port 6001, 6002 and 6004 need to be open on the Exchange 2003 side.
 
 ## Impact to users
 

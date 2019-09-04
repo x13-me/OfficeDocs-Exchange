@@ -1,12 +1,12 @@
 ---
 localization_priority: Normal
 ms.topic: troubleshooting
-author: dianef77
+author: msdmaguire
 f1_keywords:
 - O365P_SARALearn
 - O365M_SARALearn
 - O365E_SARALearn
-ms.author: dianef
+ms.author: dmaguire
 ms.assetid: 12cd632c-d672-4782-b0ce-beb82b511525
 ms.date: 
 ms.reviewer: 
@@ -26,7 +26,7 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 ms.service: exchange-online
-manager: mnirkhe
+manager: serdars
 
 ---
 

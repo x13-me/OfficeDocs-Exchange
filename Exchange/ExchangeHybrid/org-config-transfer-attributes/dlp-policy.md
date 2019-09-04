@@ -1,8 +1,8 @@
 ---
 title: "Dlp Policy attributes"
-ms.author: kchandra
-author: ChandraKavya
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.reviewer: dstrome
 audience: ITPro
 ms.topic: article
@@ -21,8 +21,8 @@ The following attributes of Dlp Policy are copied from an on-premises Exchange o
 
 |**DlpPolicy**|**Available In**|
 |:-----|:-----|
-|Description|Exchange 2013, 2016|
-|Identity|Exchange 2013, 2016|
-|Mode|Exchange 2013, 2016|
-|Name|Exchange 2013, 2016|
-|State|Exchange 2013, 2016|
+|Description|Exchange 2013, 2016, 2019|
+|Identity|Exchange 2013, 2016, 2019|
+|Mode|Exchange 2013, 2016, 2019|
+|Name|Exchange 2013, 2016, 2019|
+|State|Exchange 2013, 2016, 2019|

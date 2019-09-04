@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
 ms.topic: article
-author: markjjo
-ms.author: markjjo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

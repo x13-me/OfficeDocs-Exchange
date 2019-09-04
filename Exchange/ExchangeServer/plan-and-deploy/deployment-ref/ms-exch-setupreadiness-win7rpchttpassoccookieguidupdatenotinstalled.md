@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 Setup can't continue because KB2619234 isn't installed on the local Windows server.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.Win7RpcHttpAssocCookieGuidUpdateNotInstalled
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: d6734ca6-e443-4367-9eb7-0308aa87b9ff
 ms.date: 8/3/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: KB2619234 update not installed [Win7RpcHttpAssocCookieGuidUpdateNotInstal
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

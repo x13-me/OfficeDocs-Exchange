@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -233,10 +233,10 @@ The rule at the top of the list is processed first. This rule has a **Priority**
 
 ### Use Exchange Online PowerShell to set the priority of a rule
 
-The following example sets the priority of "Sender is a member of marketing" to 2:
+The following example sets the priority of "Sender is a member of Marketing" to 2:
 
 ```
-Set-TransportRule "Sender is a member of marketing" priority "2"
+Set-TransportRule "Sender is a member of Marketing" -Priority "2"
 ```
 
 ### How do you know this worked?

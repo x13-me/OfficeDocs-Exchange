@@ -1,8 +1,8 @@
 ---
 title: "ActiveSync organization settings attributes"
-ms.author: kchandra
-author: ChandraKavya
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.reviewer: dstrome
 audience: ITPro
 ms.topic: article
@@ -21,8 +21,8 @@ The following attributes of ActiveSync organization settings are copied from an 
 
 |**ActiveSyncOrganizationSettings**|**Available In**|
 |:-----|:-----|
-|Guid|Exchange 2010, 2013, 2016|
-|DefaultAccessLevel|Exchange 2010, 2013, 2016|
-|Identity|Exchange 2010, 2013, 2016|
-|OtaNotificationMailInsert|Exchange 2010, 2013, 2016|
-|UserMailInsert|Exchange 2010, 2013, 2016|
+|Guid|Exchange 2010, 2013, 2016, 2019|
+|DefaultAccessLevel|Exchange 2010, 2013, 2016, 2019|
+|Identity|Exchange 2010, 2013, 2016, 2019|
+|OtaNotificationMailInsert|Exchange 2010, 2013, 2016, 2019|
+|UserMailInsert|Exchange 2010, 2013, 2016, 2019|

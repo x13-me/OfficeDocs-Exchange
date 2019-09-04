@@ -1,8 +1,8 @@
 ---
 title: "Hybrid deployment prerequisites"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -111,7 +111,7 @@ Hybrid deployment features and components require certain incoming protocols, po
 |TCP 443 (HTTPS)|Autodiscover|Autodiscover|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Azure AD authentication system|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|EWS|Free/busy, MailTips, Message Tracking|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity|Azure AD authentication system|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|EWS|Multi-mailbox search|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
-|TCP 443 (HTTPS)|EWS|Mailbox migrations|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/mrsproxy.svc|NTLM|Basic|Yes|
+|TCP 443 (HTTPS)|EWS|Mailbox migrations|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/mrsproxy.svc|NTLM|Basic|No|
 |TCP 443 (HTTPS)|Autodiscover <br/><br/> EWS|OAuth|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
 |TCP 443 (HTTPS)|N/A|AD FS (included with Windows)|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 |TCP 443 (HTTPS)|N/A|Azure Active Directory Connect with AD FS|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|

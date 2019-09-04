@@ -1,8 +1,8 @@
 ---
 title: "Policy tip config attributes"
-ms.author: kchandra
-author: ChandraKavya
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.reviewer: dstrome
 audience: ITPro
 ms.topic: article
@@ -21,6 +21,6 @@ The following attributes of Policy tip configurations are copied from an on-prem
 
 |**PolicyTipConfig**|**Available In**|
 |:-----|:-----|
-|Identity|Exchange 2013, 2016|
-|Name|Exchange 2013, 2016|
-|Value|Exchange 2013, 2016|
+|Identity|Exchange 2013, 2016, 2019|
+|Name|Exchange 2013, 2016, 2019|
+|Value|Exchange 2013, 2016, 2019|

@@ -3,7 +3,7 @@ title: 'Install or remove add-ins for Outlook for your organization: Exchange 20
 TOCTitle: Install or remove add-ins for Outlook for your organization
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 112f3ef7-9943-4a1e-8a42-e08e8e9f67f4

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: This topic describes the client features that give users who are enabled for Exchange Unified Messaging (UM) access to the email and voice mail messages in their mailbox. These features let you offer your users simplified access to voice mail and email and an improved overall user experience.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 58493d02-0f66-4ea0-9686-ece51828f9f9
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Set up client voice mail features in Exchange
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

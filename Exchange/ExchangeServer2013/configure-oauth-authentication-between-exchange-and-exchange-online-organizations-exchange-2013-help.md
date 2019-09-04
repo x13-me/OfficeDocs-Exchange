@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn594521(v=EXCHG.150)
 ms:contentKeyID: 61200240
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -121,34 +121,41 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
 
 4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Azure AD organization. After running the script, leave the Windows PowerShell for Azure AD session open. You will use this to run a PowerShell script in the next step.
 
-### Step 5: Register all hostname authorities for your external on-premises Exchange HTTP endpoints with Azure Active Directory
+### Step 5: Register all hostname authorities for your internal and external on-premises Exchange HTTP endpoints with Azure Active Directory
 
-You have to run the script in this step for each endpoint in your on-premises Exchange organization that is publically accessible. We recommended that you use wild cards, if possible. For example, assume that Exchange is externally available on **https://mail.contoso.com/ews/exchange.asmx**. In this case a single wildcard could be used: **\*.contoso.com**. This would cover autodiscover.contoso.com and mail.contoso.com endpoints. However, it doesn't cover the top-level domain, **contoso.com**. In cases where your Exchange 2013 Client Access servers are externally accessible with the top-level hostname authority, this hostname authority must also be registered as **contoso.com**. There isn't a limit for registering additional external hostname authorities.
+You have to run the script in this step for each endpoint in your on-premises Exchange organization that is publically accessible (Internal and External URLs if you are going to setup Hybrid Modern Authentication). For example, assume that Exchange is externally available on **https://mail.contoso.com/ews/exchange.asmx**. In this case the service principal name of: https://mail.contoso.com would be used.  There isn't a limit for registering additional external hostname authorities.
 
-If you are not sure of the external Exchange endpoints in your on-premises Exchange organization, you can get a list of the external configured Web services endpoints by running the following command in Exchange PowerShell in your on-premises Exchange organization:
+If you are not sure of the Exchange endpoints in your on-premises Exchange organization, you can get a list of the external configured Web services endpoints by running the following command in Exchange PowerShell in your on-premises Exchange organization:
 
 ```powershell
-Get-WebServicesVirtualDirectory | Format-List ExternalUrl
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
 ```
 
 > [!NOTE]
 > Successfully running the following script requires that the Windows PowerShell for Azure Active Directory is connected to your Microsoft Online Azure AD tenant, as explained in step 4 in the previous section.
 
-1. Save the following text to a PowerShell script file named, for example, **RegisterEndpoints.ps1**. This example uses a wildcard to register all endpoints for contoso.com. Replace **contoso.com** with a hostname authority for your on-premises Exchange organization.
+1. Save the following text to a PowerShell script file named, for example, **RegisterEndpoints.ps1**. This example uses a contoso.com. Replace https://mail.contoso.com/ & https://autodiscover.contoso.com/ with the appropriate hostname authority for your on-premises Exchange organization.
 
    ```powershell
-   $externalAuthority="*.contoso.com"
    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-   $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-   $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
-   $p.ServicePrincipalNames.Add($spn);
-   Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+   $x = Get-MsolServicePrincipal -AppPrincipalId $ServiceName;
+   $x.ServicePrincipalnames.Add("https://mail.contoso.com/");
+   $x.ServicePrincipalnames.Add("https://autodiscover.contoso.com/");
+   Set-MSOLServicePrincipal -AppPrincipalId $ServiceName -ServicePrincipalNames $x.ServicePrincipalNames;
    ```
 
 2. In Windows PowerShell for Azure Active Directory, run the Windows PowerShell script that you created in the previous step. For example:
 
    ```powershell
    .\RegisterEndpoints.ps1
+   ```
+
+3. To verify that all the records were added we need to run the following. We’re looking for https://namespace entries for all the URL’s, not 00000002-0000-0ff1-ce00-000000000000/namespace entries.
+
+   ```powershell
+   Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
 ### Step 6: Create an IntraOrganizationConnector from your on-premises organization to Office 365

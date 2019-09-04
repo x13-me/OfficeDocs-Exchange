@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: dansimp
+manager: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
@@ -41,7 +41,7 @@ The good news is that your public folders will remain available during the publi
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-## Use the Exchange Management Shell to move public folder mailboxes from Exchange 2013 to Exchange 2019 or Exchange 2019
+## Use the Exchange Management Shell to move public folder mailboxes from Exchange 2013 to Exchange 2016 or Exchange 2019
 
 1. Run the following command to get a list of all Exchange 2013 public folder mailboxes:
 

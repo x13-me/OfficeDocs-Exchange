@@ -15,7 +15,7 @@ ms.collection:
 - M365-email-calendar
 audience: Developer
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

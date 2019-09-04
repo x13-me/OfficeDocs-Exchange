@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997869(v=EXCHG.150)
 ms:contentKeyID: 50395398
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -289,7 +289,7 @@ Do the following to verify that you've successfully set POP3 message retrieval f
 1. Run the following command in the Shell.
 
     ```powershell
-    Get-CAS Mailbox <identity> | format-list
+    Get-CASMailbox <identity> | format-list
     ```
 
 2. Verify the value for *PopMessagesRetrievalMimeFormat* is correct.
@@ -358,7 +358,7 @@ Do the following to verify that you've successfully set IMAP4 message retrieval 
 1. Run the following command in the Shell.
 
     ```powershell
-    Get-CAS Mailbox <identity> | format-list
+    Get-CASMailbox <identity> | format-list
     ```
 
 2. Verify the value for *ImapMessagesRetrievalMimeFormat* is correct.
