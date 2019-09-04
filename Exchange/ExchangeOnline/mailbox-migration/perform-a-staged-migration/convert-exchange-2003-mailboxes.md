@@ -419,8 +419,7 @@ Sub ShowHelp()
     WSCript.Echo("Both modes require you to specify the name of a DC to use in the local domain." & vbCrLf & "To run the script in CSV Mode, use the following syntax:")
     WScript.Echo("  cscript Exchange2003MBtoMEU.vbs -c x:\csv\csvfilename.csv dc.domain.com")
     WScript.Echo("To run the script in Manual Mode, you must specify the users AD Distinguished Name, Remote SMTP Address, Remote Legacy Exchange DN, and Domain Controller Name.")
-    WSCript.Echo("  cscript Exchange2003MBtoMEU.vbs " & chr(34) & "CN=UserName,CN=Users,DC=domain,DC=com" & chr(34) & " " & chr(34) & "user@cloudaddress.com" & chr(34) & " " & chr(34) & "/o=Cloud Org/ou=Cloud Site/ou=Recipients/cn=CloudUser" &
-chr(34) & " dc.domain.com")
+    WSCript.Echo("  cscript Exchange2003MBtoMEU.vbs " & chr(34) & "CN=UserName,CN=Users,DC=domain,DC=com" & chr(34) & " " & chr(34) & "user@cloudaddress.com" & chr(34) & " " & chr(34) & "/o=Cloud Org/ou=Cloud Site/ou=Recipients/cn=CloudUser" & chr(34) & " dc.domain.com")
     WScript.Quit
 End Sub
 ```
