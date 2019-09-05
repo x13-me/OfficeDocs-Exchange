@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: 'Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019.'
 ms.topic: hub-page
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
 ms.date: 7/27/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

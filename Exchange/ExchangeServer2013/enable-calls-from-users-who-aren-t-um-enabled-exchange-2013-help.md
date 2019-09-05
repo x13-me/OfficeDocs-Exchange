@@ -3,7 +3,7 @@ title: 'Enable calls from users who are not UM-enabled: Exchange 2013 Help'
 TOCTitle: Enable calls from users who aren't UM-enabled
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31

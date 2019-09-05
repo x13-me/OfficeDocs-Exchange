@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the different versions of Exchange 2016 and Exchange 2019.'
 ms.topic: reference
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
 ms.date: 7/30/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Exchange Server editions and versions
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

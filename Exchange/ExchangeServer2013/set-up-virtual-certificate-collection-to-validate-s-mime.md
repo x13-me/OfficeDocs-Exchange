@@ -6,7 +6,7 @@ ms:mtpsurl:
 ms:contentKeyID:
 ms.date: 2/26/2019
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150

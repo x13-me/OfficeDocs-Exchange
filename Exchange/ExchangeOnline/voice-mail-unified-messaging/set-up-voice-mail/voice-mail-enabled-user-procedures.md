@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Enable a user for voice mail
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Voice mail-enabled user procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

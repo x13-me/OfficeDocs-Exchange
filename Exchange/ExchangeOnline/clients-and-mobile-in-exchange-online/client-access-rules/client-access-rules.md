@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
 ms.date: 6/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

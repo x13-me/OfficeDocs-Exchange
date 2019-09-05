@@ -3,7 +3,7 @@ title: 'Remove an Outlook Web App mailbox policy from Exchange: Exchange 2013 He
 TOCTitle: Remove an Outlook Web App mailbox policy from Exchange
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f

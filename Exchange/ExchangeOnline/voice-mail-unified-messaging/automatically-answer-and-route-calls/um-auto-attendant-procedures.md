@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Set up a UM auto attendant
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: UM auto attendant procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
