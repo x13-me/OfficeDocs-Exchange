@@ -56,14 +56,15 @@ For this scenario, your organization's mail flow setup looks like the following 
 
      You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
 
-> [!IMPORTANT]
-> When you're configuring this scenario, the "host" that you need to configure to receive emails from the third-party software is given on the **MX Record**. For example
-> ![Hubstream.mx Domain host configuration](../../../README-media/ThirdPartyHostconfig.png). 
-> So for this particular domain the host name for the O365 host should be  **hubstream-mx.mail.protection.outlook.com**. This can vary from domain to domain, so please use Configuration/Domain/<and click on domain> to check your actual record.
-> Since the anti-spam service is external, you'd need to create a transport rule on Exchange admin/Mail flow/Rules so that you don't do a double anti-spam check, resulting in possible rejection of the messages such as
-> ![Hubstream.mx Domain host configuration](../../../README-media/TransportRuleFor3rdParty.png).
+When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
 
+![Hubstream.mx Domain host configuration](../../../README-media/ThirdPartyHostconfig.png).
 
+In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> <select domain> to confirm your actual value.
+
+Since the anti-spam service is external, you need to create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** \> **Mail flow** \> **Rules** to prevent a double anti-spam check, which would result in the followin rejection of the messages:
+
+![Hubstream.mx Domain host configuration](../../../README-media/TransportRuleFor3rdParty.png).
 
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
 
