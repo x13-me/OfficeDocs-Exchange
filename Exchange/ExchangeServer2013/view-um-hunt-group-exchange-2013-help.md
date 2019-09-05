@@ -3,7 +3,7 @@ title: 'View a UM hunt group: Exchange 2013 Help'
 TOCTitle: View a UM hunt group
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed

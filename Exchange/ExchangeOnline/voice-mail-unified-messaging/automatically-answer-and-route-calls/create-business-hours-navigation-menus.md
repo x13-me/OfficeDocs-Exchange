@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the business hours main menu prompt greeting that callers hear after the business hours welcome greeting is played. The default business hours main menu prompt says,Welcome to the Microsoft Exchange auto attendant.Because no key mappings are defined by default, no menu options are available to callers, and they hear only the default main menu prompt.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f76472fd-aa1a-4cd8-8e26-cc674421d375
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Create business hours navigation menus in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -36,7 +36,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to enable business hours key mappings on a UM auto attendant
 

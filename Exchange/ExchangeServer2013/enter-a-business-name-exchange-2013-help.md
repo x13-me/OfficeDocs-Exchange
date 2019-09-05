@@ -3,7 +3,7 @@ title: 'Enter a business name: Exchange 2013 Help'
 TOCTitle: Enter a business name
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78

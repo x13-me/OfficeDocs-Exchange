@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In addition to allowing users access to voice mail, Unified Messaging (UM) allows you to create one or more UM auto attendants depending on the needs of your organization. UM auto attendants can be used to create a voice menu system for an organization that lets external and internal callers locate, place, or transfer calls to company users or departments in an organization.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0a3492f8-8aba-4904-96fd-6e023175012a
 ms.date: 3/9/2015
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Set up a UM auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

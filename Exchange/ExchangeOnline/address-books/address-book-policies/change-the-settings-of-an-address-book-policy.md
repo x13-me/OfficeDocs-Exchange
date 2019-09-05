@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to modify address book policies (ABPs) in Exchange Online
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

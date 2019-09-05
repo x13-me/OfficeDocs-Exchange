@@ -3,7 +3,7 @@ title: 'Manage equipment mailboxes: Exchange 2013 Help'
 TOCTitle: Manage equipment mailboxes
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18

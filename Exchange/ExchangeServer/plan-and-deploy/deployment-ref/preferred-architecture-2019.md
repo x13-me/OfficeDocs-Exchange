@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the preferred architecure (PA) for Exchange Server 2019'
 ms.topic: reference
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid:
 monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
@@ -12,7 +12,7 @@ audience: ITPro
 ms.date:
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

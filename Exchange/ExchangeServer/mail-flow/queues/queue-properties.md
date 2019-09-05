@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about queue properties to use in filters in Exchange Server.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Queue properties in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -3,7 +3,7 @@ title: 'Enable outgoing calls on UM IP gateways: Exchange 2013 Help'
 TOCTitle: Enable outgoing calls on UM IP gateways
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: c3ad8e53-d37e-499e-b1f1-defb0ba1bd12

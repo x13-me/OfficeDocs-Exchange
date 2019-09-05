@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: You can use the New menu navigation entry page to create single or multiple key mappings for business or non-business hours main menu prompts for auto attendants. You can define the action that will be performed when a key on the telephone keypad is pressed, for example, transferring the call to an extension number or another auto attendant.
 ms.topic: article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 3cfc9a01-0a61-4d15-9561-621568dc30d9
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: Create menu navigation in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -36,7 +36,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to configure UM auto attendant navigation menus
 

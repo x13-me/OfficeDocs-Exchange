@@ -3,7 +3,7 @@ title: 'UM hunt group procedures: Exchange 2013 Help'
 TOCTitle: UM hunt group procedures
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 4251c24a-9616-4923-92da-ed783aa8d802

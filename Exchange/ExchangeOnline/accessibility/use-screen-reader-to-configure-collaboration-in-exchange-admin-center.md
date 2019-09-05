@@ -1,12 +1,12 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: maggsl
-ms.author: v-maleo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2cb9cae4-3eee-4da1-8a01-3d37d4b6b8b2
 ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 description: Admins can learn how to use a screen reader to configure different methods of collaboration in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to configure collaboration in the Exchange admin center in Exchange Online
 ms.collection: 
