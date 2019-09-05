@@ -40,6 +40,9 @@ The SSDs you use should qualify for "mixed use" and support one drive write per 
 The following prerequisites are required for successful configuration and use of MCDB:
 
 1. The DAG is configured for auto-reseed.
+* Recommended readings:
+* [Overview of Autoreseed](https://docs.microsoft.com/Exchange/high-availability/database-availability-groups/autoreseed?view=exchserver-2019)
+* [Configure AutoReseed for a database availability group](https://docs.microsoft.com/exchange/high-availability/manage-ha/configure-dag-autoreseed?view=exchserver-2019)
 
 2. RAW SSD drives are installed, and SSD count and size is equal for each server in the DAG.
 
