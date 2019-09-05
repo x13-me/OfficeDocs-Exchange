@@ -64,15 +64,20 @@ After successful execution of all four steps, MCDB acceleration will begin for e
 The following sections describe how to utilize the `Manage-MetaCacheDatabase.ps1` script to achieve the above four steps.
 
 ### Step 1: Configure proper values on the DAG you want to enable MCDB for
+
 These DAG parameters are used to calculate the proper MCDB size on your SSD drives:
 
-AutoDagTotalNumberOfDatabases: The number of databases in your DAG. i.e. 50. 
-AutoDagDatabaseCopiesPerDatabase: The number of active and passive copies each individual database has.
-AutoDagTotalNumberOfServers: The amount of servers within your DAG, so between 2 and 16.
+- *AutoDagTotalNumberOfDatabases*: The number of databases in your DAG. i.e. 50.
 
-**Example**:
+- *AutoDagDatabaseCopiesPerDatabase*: The number of active and passive copies each individual database has.
+
+- *AutoDagTotalNumberOfServers*: The amount of servers within your DAG, so between 2 and 16.
+
+For example:
+
+```
 Set-DatabaseAvailabilityGroup testdag1 -AutoDagTotalNumberOfDatabases 50 -AutoDagDatabaseCopiesPerDatabase 4 -AutoDagTotalNumberOfServers 8
-
+```
 
 ### Step 2: Run Manage-MCDB -ConfigureMCDBPrerequisite
 
