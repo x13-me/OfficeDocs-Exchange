@@ -103,7 +103,7 @@ You can use the remote move migration wizard in the **Office 365** tab on the EC
 ### Move Exchange Online mailboxes to the on-premises organization
 <a name="bkmk_eacExo"> </a>
 
-You can use the remote move migration wizard on the **Office 365** tab in the EAC on Exchange Online to move existing cloud user mailboxes to the on-premises organization, to do so, please follow these steps:
+You can use the remote move migration wizard on the **Office 365** tab in the EAC on Exchange Online to move existing cloud user mailboxes to the on-premises organization. To do so, please follow these steps:
 
 1. Open the EAC and navigate to **Office 365** \> **Recipients** \> **migration**.
 
