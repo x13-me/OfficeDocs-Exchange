@@ -3,7 +3,7 @@ title: 'Configure the primary way for Outlook Voice Access users to search: Exch
 TOCTitle: Configure the primary way for Outlook Voice Access users to search
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 3d93a037-5820-41d3-9206-69f534414daf

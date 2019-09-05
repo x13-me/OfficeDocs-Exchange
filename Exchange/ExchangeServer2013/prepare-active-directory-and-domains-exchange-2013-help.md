@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125224(v=EXCHG.150)
 ms:contentKeyID: 48385726
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -238,7 +238,7 @@ The following table shows you the Exchange 2013 objects in Active Directory that
 <td><p>Exchange 2013 CU23</p></td>
 <td><p>15312</p></td>
 <td><p>13237</p></td>
-<td><p>16130</p></td>
+<td><p>16133</p></td>
 </tr>
 </tr>
 <tr class="odd">
@@ -246,7 +246,7 @@ The following table shows you the Exchange 2013 objects in Active Directory that
 <td><p>Exchange 2013 CU22</p></td>
 <td><p>15312</p></td>
 <td><p>13236</p></td>
-<td><p>16133</p></td>
+<td><p>16131</p></td>
 </tr>
 </tr>
 <tr class="odd">
@@ -254,7 +254,7 @@ The following table shows you the Exchange 2013 objects in Active Directory that
 <td><p>Exchange 2013 CU10-CU21</p></td>
 <td><p>15312</p></td>
 <td><p>13236</p></td>
-<td><p>16131</p></td>
+<td><p>16130</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

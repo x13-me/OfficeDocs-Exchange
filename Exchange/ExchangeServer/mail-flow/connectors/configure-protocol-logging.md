@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms.date: 6/7/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Configure protocol logging
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

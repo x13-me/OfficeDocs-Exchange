@@ -1,8 +1,8 @@
 ---
 title: "Address list attributes"
-ms.author: kchandra
-author: ChandraKavya
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.reviewer: dstrome
 audience: ITPro
 ms.topic: article

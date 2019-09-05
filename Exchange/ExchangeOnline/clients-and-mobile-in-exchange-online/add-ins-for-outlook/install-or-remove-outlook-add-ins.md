@@ -11,7 +11,7 @@ title: Install or remove add-ins for Outlook for your Exchange Online organizati
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

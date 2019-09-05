@@ -1,12 +1,12 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: maggsl
-ms.author: v-maleo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: da491136-78c1-48dc-b665-29a2fbe468ac
 ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 description: Admins can learn how to use a screen reader to configure Unified Messaging (UM) settings in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to configure voice mail in the Exchange admin center in Exchange Online
 ms.collection: 

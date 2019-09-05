@@ -3,7 +3,7 @@ title: 'Authorize calls for users in a dial plan: Exchange 2013 Help'
 TOCTitle: Authorize calls for users in a dial plan
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc

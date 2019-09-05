@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -26,6 +26,9 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online.
 - To enable or disable POP3 and IMAP4 for individual users, see [Enable or Disable POP3 or IMAP4 access for a user](enable-or-disable-pop3-or-imap4-access.md).
 
 - To customize the POP3 or IMAP4 settings for a user, see [Set POP3 or IMAP4 settings for a user](pop3-or-imap4-settings.md).
+
+> [!NOTE]
+> To protect your Exchange Online tenant from brute force or password spray attacks, your organization will need to **[Disable Basic authentication]**(https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online?redirectSourcePath=%252fen-us%252farticle%252fdisable-basic-authentication-in-exchange-online-bba2059a-7242-41d0-bb3f-baaf7ec1abd7) and use **[Modern authentication]**( https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online?redirectSourcePath=%252fen-us%252farticle%252fEnable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) only. Disabling Basic authentication will block legacy protocols, such as POP and IMAP.
 
 Users can use any email programs that support POP3 and IMAP4 to connect to Exchange Online. These programs include Outlook, Microsoft Outlook Express, Entourage, and many third-party programs, such as Mozilla Thunderbird and Eudora. The features supported by each email client programs vary. For information about features offered by specific POP3 and IMAP4 client programs, see the documentation that's included with each application.
 

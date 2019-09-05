@@ -3,7 +3,7 @@ title: 'Forwarding calls procedures: Exchange 2013 Help'
 TOCTitle: Forwarding calls procedures
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2

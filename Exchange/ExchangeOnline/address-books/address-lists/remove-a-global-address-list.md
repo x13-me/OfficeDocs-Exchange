@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to remove custom global address lists (GALs) from Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

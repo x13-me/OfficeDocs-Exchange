@@ -1,9 +1,9 @@
 ---
 title: 'Search for and delete messages in Exchange: Exchange 2013 Help'
 TOCTitle: Search for and delete messages in Exchange
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42

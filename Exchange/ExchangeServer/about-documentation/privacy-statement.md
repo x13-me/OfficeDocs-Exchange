@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: The privacy statement for Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f9569bb0-9a65-4121-a354-fa5a394b66c3
 ms.date: 7/13/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Exchange Server Privacy Statement
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

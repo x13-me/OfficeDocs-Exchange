@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793980(v=EXCHG.150)
 ms:contentKeyID: 62632394
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -45,22 +45,22 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Mailbox Sizes</p></td>
 <td><p>I'd like to determine if my users are using my organization's default mailbox sizes so I can best plan my migration.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834877">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Single Forest</p></td>
 <td><p>I'm trying to evaluate if I can migrate my users' accounts with Directory Synchronization.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834875">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Domain Functional Mode</p></td>
 <td><p>I'm not sure if I'm ready to integrate ADFS 2.0/Single Sign-On</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834876">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Public Folders</p></td>
 <td><p>I'm not sure if I have public folders to migrate to Office 365.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834896">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

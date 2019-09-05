@@ -3,7 +3,7 @@ title: 'Retrieve voice mail PIN information: Exchange 2013 Help'
 TOCTitle: Retrieve voice mail PIN information
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 01517cca-99fe-46b2-b586-19e8d2707728

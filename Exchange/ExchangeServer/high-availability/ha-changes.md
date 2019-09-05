@@ -11,7 +11,7 @@ title: Changes to high availability and site resilience over previous versions o
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

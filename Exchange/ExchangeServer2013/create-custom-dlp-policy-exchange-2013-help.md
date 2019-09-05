@@ -1,9 +1,9 @@
 ---
 title: 'Create a custom DLP policy: Exchange 2013 Help'
 TOCTitle: Create a custom DLP policy
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486

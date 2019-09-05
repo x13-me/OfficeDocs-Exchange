@@ -3,7 +3,7 @@ title: 'Change the UM dial plan: Exchange 2013 Help'
 TOCTitle: Change the UM dial plan
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
