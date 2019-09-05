@@ -102,7 +102,7 @@ When you prepare Active Directory for Exchange, the following requirements apply
 
 - Your account needs to be a member of the Enterprise Admins security group. If you skipped Step 1 because you want the _/PrepareAD_ command to extend the schema, the account also needs to be a member of the Schema Admins security group.
 
-- The computer needs to be needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
+- The computer needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
 
 - Wait until Active Directory has finished replicating the schema changes from Step 1 to all domain controllers before you try to prepare Active Directory.
 

@@ -13,6 +13,8 @@
 ##### [Prep mailboxes for cross-forest moves in PowerShell](../architecture/mailbox-servers/prep-mailboxes-for-cross-forest-moves-in-powershell.md)
 #### [MRS Proxy endpoint](../architecture/mailbox-servers/mrs-proxy-endpoint.md)
 #### [Recreate arbitration mailboxes](../architecture/mailbox-servers/recreate-arbitration-mailboxes.md)
+#### [Managed Store in Exchange Server](../architecture/mailbox-servers/managed-store/managed-store.md)
+##### [Managed Store Limits in Exchange Server](../architecture/mailbox-servers/managed-store/managed-store-limits.md)
 ### [Edge Transport servers](../architecture/edge-transport-servers/edge-transport-servers.md)
 #### [Edge Subscriptions](../architecture/edge-transport-servers/edge-subscriptions.md)
 ##### [Edge Subscription procedures](../architecture/edge-transport-servers/edge-subscription-procedures.md)
