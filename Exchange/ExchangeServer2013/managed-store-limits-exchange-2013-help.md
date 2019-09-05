@@ -19,7 +19,7 @@ mtps_version: v=EXCHG.150
 In Microsoft Exchange Server 2013, connection and usage limits have been placed on the Exchange Managed Store to prevent a single application or a single user from using all the available connections to the Managed Store. If a single user or application is allowed to use all of the connections, other users or applications cannot be able to access the Managed Store, which could result in downtime.
 
 > [!NOTE]
-> For any connections made by accounts that have administrative privileges, the maximum session limits have been increased to 64,000. <br/><br/> Exchange Online limits (including Managed Store limits) are described in the [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+> For any connections made by accounts that have administrative privileges, the maximum session limits have been increased to 64,000. <br/><br/> Exchange Online limits (including Managed Store limits) are described in the [Exchange 2013 Managed Limits](https://docs.microsoft.com/exchange/managed-store-limits-exchange-2013-help).
 
 ## Terminology
 
