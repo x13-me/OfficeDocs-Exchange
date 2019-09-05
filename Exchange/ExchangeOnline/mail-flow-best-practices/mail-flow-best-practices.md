@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: chrisda
-manager: dansimp
+ms.author: dmaguire
+manager: serdars
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: 0e6cd9d5-ad3e-418a-8ea9-3bf33332c491
 ms.reviewer: 

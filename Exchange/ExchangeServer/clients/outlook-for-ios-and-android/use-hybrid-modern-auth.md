@@ -11,7 +11,7 @@ ms.collection: exchange-server
 ms.reviewer: smithre4
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -221,7 +221,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 
 3. Ensure your on-premises Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
 
-   - Path: `%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config`
+   - Path: `%ExchangeInstallPath%\FrontEnd\HttpProxy\Sync\web.config`
 
    - Property: `maxRequestLength`
 

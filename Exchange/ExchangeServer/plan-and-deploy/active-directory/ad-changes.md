@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
 ms.topic: conceptual
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms.date: 9/20/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -3,7 +3,7 @@ title: 'Telephony advisor for Exchange: Exchange 2013 Help'
 TOCTitle: Telephony advisor for Exchange
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e

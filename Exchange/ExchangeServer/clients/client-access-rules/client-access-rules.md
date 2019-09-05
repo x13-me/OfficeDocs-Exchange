@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block access to the Exchange admin center (EAC) and remote PowerShell in Exchange 2019.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 monikerRange: exchserver-2019
 title: Client Access Rules in Exchange 2019
 ms.collection: exchange-server
@@ -11,7 +11,7 @@ audience: ITPro
 ms.service: exchange-server-it-pro
 ms.date: 9/12/2018
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 
 ---
 

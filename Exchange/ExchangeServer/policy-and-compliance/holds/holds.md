@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: In-Place Hold and Litigation Hold in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

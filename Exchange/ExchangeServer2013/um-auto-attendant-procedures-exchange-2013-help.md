@@ -3,7 +3,7 @@ title: 'UM auto attendant procedures: Exchange 2013 Help'
 TOCTitle: UM auto attendant procedures
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45

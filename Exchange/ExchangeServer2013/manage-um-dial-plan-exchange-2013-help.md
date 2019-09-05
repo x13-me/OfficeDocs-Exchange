@@ -3,7 +3,7 @@ title: 'Manage a UM dial plan: Exchange 2013 Help'
 TOCTitle: Manage a UM dial plan
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 4/26/2018
 ms.reviewer: 
 f1_keywords:

@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: 0c8f04f0-e184-4ca7-b63b-0e7218086779
 ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 description: Learn about using screen readers to do admin tasks in the Exchange admin center (EAC) in Exchange Online
 title: Get started using a screen reader in the Exchange admin center in Exchange Online
 ms.collection: 

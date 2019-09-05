@@ -3,7 +3,7 @@ title: 'Disable voice mail for a user: Exchange 2013 Help'
 TOCTitle: Disable voice mail for a user
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552

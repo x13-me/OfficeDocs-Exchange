@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about managed availability and workload management in Exchange Server.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
 ms.date: 7/9/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Server health and performance in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Exchange Deployment Assistant"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 layout: LandingPage
 ms.topic: landing-page

@@ -3,7 +3,7 @@ title: 'Run reports for voice mail calls: Exchange 2013 Help'
 TOCTitle: Run reports for voice mail calls
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 3a292d85-ce0f-4c15-b8f2-d1fc92965437

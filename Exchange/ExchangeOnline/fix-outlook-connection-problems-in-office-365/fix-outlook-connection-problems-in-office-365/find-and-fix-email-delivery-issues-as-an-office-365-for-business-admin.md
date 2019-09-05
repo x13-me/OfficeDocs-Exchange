@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: troubleshooting
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - O365P_MessageTrace
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: e7758b99-1896-41db-bf39-51e2dba21de6
 ms.reviewer: 
 description: Admins can learn how to fix email delivery issues in Exchange Online.
@@ -21,7 +21,7 @@ search.appverid:
 audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
