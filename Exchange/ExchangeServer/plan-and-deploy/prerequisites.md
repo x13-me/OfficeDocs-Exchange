@@ -147,7 +147,7 @@ When you use one of these options, you don't need to restart the computer after 
 
    ```
    Install-WindowsFeature ADLDS
-    ``
+   ```
 
 ## Windows 10 client prerequisites for the Exchange 2019 management tools
 
