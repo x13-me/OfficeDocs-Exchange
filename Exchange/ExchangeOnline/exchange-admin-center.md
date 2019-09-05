@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You use the Exchange admin center to manage email settings for your organization.
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

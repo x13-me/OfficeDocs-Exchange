@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: You can create a Unified Messaging (UM) mailbox policy to apply a common set of UM policy settings, such as PIN policy settings or dialing restrictions, to a collection of UM-enabled mailboxes. UM mailbox policies link a UM-enabled user with a UM dial plan and apply a common set of policies or security settings to a collection of UM-enabled mailboxes. UM mailbox policies are useful for applying and standardizing UM configuration settings for UM-enabled users.
 ms.topic: article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMMailboxPolicyWizardForm.CreateUMMailboxPolicyWizardPage
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 7f20874b-c46c-4505-9a78-f63eacb578ff
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: Create a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -36,7 +36,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to create a UM mailbox policy
 

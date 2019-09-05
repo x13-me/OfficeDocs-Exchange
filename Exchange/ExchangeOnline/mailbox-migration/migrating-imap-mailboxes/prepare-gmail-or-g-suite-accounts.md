@@ -30,7 +30,7 @@ search.appverid:
 audience: Admin
 ms.custom: Adm_O365_Setup
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

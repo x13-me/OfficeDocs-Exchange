@@ -3,7 +3,7 @@ title: 'Prevent callers without a caller ID from leaving a voice message: Exchan
 TOCTitle: Prevent callers without a caller ID from leaving a voice message
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a

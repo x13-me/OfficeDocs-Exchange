@@ -3,7 +3,7 @@ title: 'Review the voice mail calls for a user: Exchange 2013 Help'
 TOCTitle: Review the voice mail calls for a user
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592

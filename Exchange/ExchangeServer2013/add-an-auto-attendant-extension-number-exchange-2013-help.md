@@ -3,7 +3,7 @@ title: 'Add an auto attendant extension number: Exchange 2013 Help'
 TOCTitle: Add an auto attendant extension number
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: f2bd62ba-1e01-4cb7-862c-c750752e20e0

@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: 76452210-0cee-409b-9bab-2d75e3cd572c
 ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 description: Learn about the keyboard shortcuts that are available in the Exchange admin center (EAC) in Exchange Online.
 title: Keyboard shortcuts for the Exchange admin center in Exchange Online
 ms.collection: 

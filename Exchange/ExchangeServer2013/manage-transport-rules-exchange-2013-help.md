@@ -1,9 +1,9 @@
 ---
 title: 'Manage transport rules: Exchange 2013 Help'
 TOCTitle: Manage transport rules
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2

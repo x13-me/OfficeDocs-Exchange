@@ -1,9 +1,9 @@
 ---
 title: 'Exchange auditing reports: Exchange 2013 Help'
 TOCTitle: Exchange auditing reports
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d

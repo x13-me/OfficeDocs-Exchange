@@ -11,7 +11,7 @@ title: Recover a database availability group member server, recover Exchange DAG
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

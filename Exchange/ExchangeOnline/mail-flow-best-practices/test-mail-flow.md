@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "To validate and troubleshoot mail flow from Office 365 to your organization's email server (also called on-premises server), validate your connectors. You can set up and validate connectors on the connectors page in the Exchange admin center (EAC). The built-in validation tests that your mail flow from Office 365 reaches:"
 ms.topic: article
-author: supotter
-ms.author: supotter
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6c8c2964-d553-4329-8166-6e508dd63fa0
 ms.date: 12/9/2016
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

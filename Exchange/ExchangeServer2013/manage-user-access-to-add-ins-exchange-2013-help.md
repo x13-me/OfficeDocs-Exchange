@@ -3,7 +3,7 @@ title: 'Manage user access to add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Manage user access to add-ins for Outlook
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8

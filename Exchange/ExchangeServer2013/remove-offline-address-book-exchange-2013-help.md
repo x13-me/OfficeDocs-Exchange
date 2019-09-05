@@ -3,7 +3,7 @@ title: 'Remove an offline address book: Exchange 2013 Help'
 TOCTitle: Remove an offline address book
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3

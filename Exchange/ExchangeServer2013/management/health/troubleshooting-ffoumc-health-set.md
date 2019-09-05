@@ -6,9 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ffoumc(v=EX
 ms:contentKeyID: 49720880
 ms.date: 10/08/2015
 ms.reviewer: 
-manager: dansimp
-ms.author: chrisda
-author: chrisda
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about Queue Viewer in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: db892f88-5c13-4607-a38c-8845b35ab8b2
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Queue Viewer
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

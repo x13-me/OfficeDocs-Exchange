@@ -11,7 +11,7 @@ title: MAPI over HTTP in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
