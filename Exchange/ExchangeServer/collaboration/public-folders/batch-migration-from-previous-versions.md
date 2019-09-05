@@ -18,7 +18,7 @@ title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2
 
 Migrate your public folders from Exchange Server 2010 SP3 RU8 to Microsoft Exchange Server 2016 or later within the same forest.
 
-We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange server*. References to Exchange Server 2016 apply equally to Exchange Server 2016 or Exchange Server 2019.
+We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange server*.
 
 > [!NOTE]
 > The batch migration method described in this article is the only supported method for migrating legacy public folders to Exchange Server. The old serial migration method for migrating public folders is being deprecated and is no longer supported by Microsoft.
