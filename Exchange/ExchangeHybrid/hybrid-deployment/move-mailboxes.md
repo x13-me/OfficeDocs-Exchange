@@ -72,7 +72,7 @@ You can use the remote move migration wizard on the **Office 365** tab in the EA
 
 You can use the remote move migration wizard in the **Office 365** tab on the ECP (Exchange Control Panel, on-premises) on an Exchange server to move existing user mailboxes in the on-premises organization to the Exchange Online organization. To do so, follow these steps:
 
-1. Open the ECP (Exchange Control Panel, On-premises), and then navigate to the **Office 365** tab then **Recipients** \> **Migration**.
+1. Open the ECP, navigate to the **Office 365** tab and then **Recipients** \> **Migration**.
 
 2. Click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate to Exchange Online**.
 
