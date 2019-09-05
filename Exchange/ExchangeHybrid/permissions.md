@@ -52,13 +52,17 @@ The following permissions **are** supported:
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
 
-> [!IMPORTANT]
-> The Private items can be shared with a delegate using the following procedure on your Outlook on Desktop app:
-> 1. Go to **File** > **Account Settings** > **Delegate Access**
->  ![Delegate Access Menu 1](../../README-media/Private_Item_Menu1.png)
-> 2. On the next window, click on **Add**. A new menu will appear listing the people in your organization. Select a delegate and click **OK**.
-> 3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
-> ![Delegate Access Menu 2](../../README-media/Private_Item_Menu2.png)
+  To share private items with a delegate, use the the following procedure in Outlook:
+
+  1. Go to **File** > **Account Settings** > **Delegate Access**
+
+     ![Delegate Access Menu 1](../../README-media/Private_Item_Menu1.png)
+
+  2. On the next window, click on **Add**. A new menu will appear listing the people in your organization. Select a delegate and click **OK**.
+
+  3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
+
+     ![Delegate Access Menu 2](../../README-media/Private_Item_Menu2.png)
 
 The following permissions or capabilities **aren't** supported:
 
