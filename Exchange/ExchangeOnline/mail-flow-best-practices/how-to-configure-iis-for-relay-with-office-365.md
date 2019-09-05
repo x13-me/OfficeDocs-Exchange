@@ -104,9 +104,8 @@ Before proceeding, review [How to set up a multifunction device or application t
 
    4. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
    
-> [!NOTE]
-> • Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address.
->   You can find this by looking for the MX record of your domain in the **admin.microsoft.com** portal, located in the **Setup** section.
+   > [!NOTE]
+   > Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address. You can find this value by looking for the MX record of your domain in the **Setup** section in the M365 admin portal.
 
 ### Step 4: Restart the IIS service and the SMTP service
 
