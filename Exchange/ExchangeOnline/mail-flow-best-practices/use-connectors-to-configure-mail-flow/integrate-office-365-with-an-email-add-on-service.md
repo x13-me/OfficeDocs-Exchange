@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to integrate Office 365 with a third-party service that affects mail flow.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7c5b7408-bfa2-4695-a6b7-21ddc8084d52
 ms.date: 
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Scenario Integrate Office 365 with an email add-on service
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

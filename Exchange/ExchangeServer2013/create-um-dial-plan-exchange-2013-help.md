@@ -3,7 +3,7 @@ title: 'Create a UM dial plan: Exchange 2013 Help'
 TOCTitle: Create a UM dial plan
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 f1_keywords:

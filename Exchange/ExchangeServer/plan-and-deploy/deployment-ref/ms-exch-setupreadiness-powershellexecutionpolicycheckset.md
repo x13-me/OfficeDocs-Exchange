@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because MachinePolicy or UserPolicy (or both) are defined in the ExecutionPolicy GPO.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.PowerShellExecutionPolicyCheckSet
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms.date: 8/3/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: ExecutionPolicy GPO is defined [PowerShellExecutionPolicyCheckSet]
 ms.collection: exchange-server
 audience: Developer
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

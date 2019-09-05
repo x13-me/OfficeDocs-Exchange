@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Various types of limits are applied to In-Place eDiscovery searches in Exchange Online and Office 365. These limits help to maintain the health and quality of services provided to Office 365 organizations. In most cases, you can't modify these limits, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 ms.topic: article
-author: markjjo
-ms.author: markjjo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 65864987-f734-4fab-be97-1ba190a083d4
 ms.date: 6/23/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: Admin
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

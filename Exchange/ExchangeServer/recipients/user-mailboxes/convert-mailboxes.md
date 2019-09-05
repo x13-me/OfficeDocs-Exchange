@@ -1,12 +1,12 @@
 ---
 description: 'Summary: Learn about changing a mailbox from one type to another in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
-ms.author: chrisda
+ms.author: dmaguire
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.date:
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.prod: exchange-server-it-pro
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.collection: exchange-server
@@ -54,7 +54,7 @@ You can convert the following mailboxes to a different type:
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the Exchange Management Shell to convert a mailbox
 

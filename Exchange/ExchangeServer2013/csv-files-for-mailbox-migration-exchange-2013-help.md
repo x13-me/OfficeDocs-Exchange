@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn170437(v=EXCHG.150)
 ms:contentKeyID: 53890559
 ms.date: 11/16/2017
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150

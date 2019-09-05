@@ -3,7 +3,7 @@ title: 'Create a distribution group naming policy: Exchange 2013 Help'
 TOCTitle: Create a distribution group naming policy
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e

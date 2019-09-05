@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -50,7 +50,7 @@ These are the types of certificate files that you can import on an Exchange serv
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to import a certificate on one or more Exchange servers
 

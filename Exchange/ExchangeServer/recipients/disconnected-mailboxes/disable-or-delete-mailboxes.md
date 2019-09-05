@@ -1,15 +1,15 @@
 ---
 description: 'Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
-ms.author: chrisda
+ms.author: dmaguire
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 audience: ITPro
 title: Disable or delete a mailbox in Exchange Server
 
@@ -32,7 +32,7 @@ In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Disable mailboxes
 

@@ -3,7 +3,7 @@ title: 'Set the maximum delivery delay for a Voice Mail Preview partner: Exchang
 TOCTitle: Set the maximum delivery delay for a Voice Mail Preview partner
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: c9a07f6d-6f7f-4036-9a4a-d668d21e2c76
