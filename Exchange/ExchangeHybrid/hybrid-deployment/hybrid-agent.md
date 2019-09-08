@@ -78,7 +78,7 @@ The agent supports outbound unauthenticated proxy servers but requires additiona
 
 The HCW establishes connections from your Client Access Server to domains.live.com to exchange metadata and establish trusts. Because connections originate from your CAS server, the proxy settings on that server (from `Get-ExchangeServer | Format-List InternetWebProxy`) must be set correctly or outbound free/busy can fail. In addition to connection failures, the HCW won't be able to configure delegated authentication if the proxy setting is incorrect.
 
-## Free/Busy Requirements
+## Free/Busy requirements
 
 The hybrid wizard automatically handles the Free/Busy information required to work in both environments (cloud and on-premises). 
 
