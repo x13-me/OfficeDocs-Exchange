@@ -84,7 +84,7 @@ The hybrid wizard automatically handles the free/busy information required to wo
 
 In case that it is required to configure the free/busy information with a 3rd party company, please go to EAC/Organization and configure the individual or organization sharing between the two systems (Exchange Online / Exchange On-premises or Exchange On-premises - Exchange On-premises).
  
-If you have problems or need to troubleshoot the free/busy information, please go to [this link](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
+Should you encounter any problems or need to troubleshoot the free/busy information, refer to [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
 
 
