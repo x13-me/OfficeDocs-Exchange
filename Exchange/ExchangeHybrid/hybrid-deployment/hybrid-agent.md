@@ -80,7 +80,7 @@ The HCW establishes connections from your Client Access Server to domains.live.c
 
 ## Free/Busy requirements
 
-The hybrid wizard automatically handles the Free/Busy information required to work in both environments (cloud and on-premises). 
+The hybrid wizard automatically handles the free/busy information required to work in both environments (cloud and on-premises). 
 
 In case that it is required to configure the free/busy information with a 3rd party company, please go to EAC/Organization and configure the individual or organization sharing between the two systems (Exchange Online / Exchange On-premises or Exchange On-premises - Exchange On-premises).
  
