@@ -20,7 +20,7 @@ title: Troubleshoot Office 365 mail flow
 
 Can't send or receive email? Office 365 for business has several ways that can troubleshoot the issue as an admin. We recommend using the automated solutions because they are typically easier and faster than manual troubleshooting.
 
-For instructions about troubleshooting options, see [Find and fix email delivery issues as an Office 365 for business admin](../fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md).
+For instructions about troubleshooting options, see [Find and fix email delivery issues as an Office 365 for business admin](../fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md).
 
 ## Troubleshoot mail flow caused by connectors
 
