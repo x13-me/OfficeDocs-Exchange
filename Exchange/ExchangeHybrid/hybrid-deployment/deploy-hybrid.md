@@ -1,8 +1,8 @@
 ---
 title: "Create a hybrid deployment with the Hybrid Configuration wizard"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

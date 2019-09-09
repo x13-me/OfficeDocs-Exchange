@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
 ms.topic: conceptual
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms.date: 9/20/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -32,7 +32,6 @@ Three steps are required to prepare Active Directory for Exchange:
 After all three steps are done, your Active Directory forest is ready for Exchange. This topic explains what Exchange does at each step of Active Directory preparation.
 
 You can make these changes before you install the first Exchange 2016 or Exchange 2019 server in the organization by running the _/PrepareSchema_, _/PrepareAD_, and _/PrepareAllDomains_ or _/PrepareDomains_ commands using Exchange command line Setup. For instructions, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md). Or, these changes are automatically made for you during the installation of the first Exchange server using the Exchange Setup wizard. For instructions, see [Install Exchange Mailbox servers using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md).
-
 
 ## Extend the Active Directory schema
 

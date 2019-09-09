@@ -3,7 +3,7 @@ title: 'Specify the administrators and users who can install and manage add-ins 
 TOCTitle: Specify the administrators and users who can install and manage add-ins for Outlook
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb

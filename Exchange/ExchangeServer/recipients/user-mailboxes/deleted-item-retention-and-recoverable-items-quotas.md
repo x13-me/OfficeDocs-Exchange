@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Configure Deleted Item retention and Recoverable Items quotas
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793977(v=EXCHG.150)
 ms:contentKeyID: 62632392
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -48,47 +48,47 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if all of my Active Directory user accounts meet the requirements for directory synchronization.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834884">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if my Active Directory domain functional levels are correctly set to Windows Server 2003 or above.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834876">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if directory synchronization occurred in the last three hours.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834887">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if my Active Directory has any duplicate user attributes that will block directory synchronization.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834883">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if directory synchronization is enabled in Office 365.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834887">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if I can deploy Office 365 quote limitations.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834920">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if I can deploy Office 365 and use the default directory synchronization setup.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834876">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if I use Active Directory and can support directory synchronization.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834886">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory Sync</p></td>
 <td><p>I'm not sure if all of my Active Directory groups meet the requirements for directory synchronization.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834913">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

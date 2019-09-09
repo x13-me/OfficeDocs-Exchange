@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793979(v=EXCHG.150)
 ms:contentKeyID: 62632393
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -45,22 +45,22 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 <tr class="even">
 <td><p>Exchange Version</p></td>
 <td><p>I'm not sure if I have Exchange Server installed on-premises or what version I have.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834879">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Credentials</p></td>
 <td><p>I'm not sure I have the right credentials to move to Office 365</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834880">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
 <td><p>3rd Party Tools</p></td>
 <td><p>I'm not sure what 3rd party integrations/applications I have installed in my messaging environment.</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834907">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Shared Mailboxes</p></td>
 <td><p>I'd like to determine who is managing mailboxes for others (delegates).</p></td>
-<td><p><a href="https://go.microsoft.com/?linkid=9834917">Run this check</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>
 </table>

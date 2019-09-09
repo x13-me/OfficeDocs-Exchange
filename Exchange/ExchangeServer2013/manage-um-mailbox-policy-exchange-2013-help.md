@@ -3,7 +3,7 @@ title: 'Manage a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Manage a UM mailbox policy
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 f1_keywords:

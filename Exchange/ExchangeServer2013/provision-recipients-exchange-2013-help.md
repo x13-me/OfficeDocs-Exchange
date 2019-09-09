@@ -3,7 +3,7 @@ title: 'Provision recipients for offline address book downloads: Exchange 2013 H
 TOCTitle: Provision recipients for offline address book downloads
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0

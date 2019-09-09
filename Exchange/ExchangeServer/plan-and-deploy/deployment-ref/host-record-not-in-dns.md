@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 can't continue because the target server's A record is missing from DNS.
 ms.topic: reference
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - ms.exch.setupreadiness.HostRecordMissing
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms.date: 8/2/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: The Host record for the local computer cannot be found in the DNS databas
 ms.collection: exchange-server
 audience: Developer
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

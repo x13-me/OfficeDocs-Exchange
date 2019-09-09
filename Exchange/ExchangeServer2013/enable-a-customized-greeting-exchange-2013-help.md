@@ -3,7 +3,7 @@ title: 'Enable a customized greeting for Outlook Voice Access users: Exchange 20
 TOCTitle: Enable a customized greeting for Outlook Voice Access users
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 12/9/2016
 ms.reviewer: 
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06

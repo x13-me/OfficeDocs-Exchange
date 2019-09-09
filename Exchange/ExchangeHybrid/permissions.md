@@ -1,8 +1,8 @@
 ---
 title: "Permissions in Exchange hybrid deployments"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -51,6 +51,18 @@ The following permissions **are** supported:
   Some changes are needed on your Azure Active Directory Connect server for Send on Behalf permissions to sync between your on-premises Exchange servers and Exchange Online. For details, see the [Enabling support for hybrid mailbox permissions in Azure Active Directory Connect](#enabling-support-for-hybrid-mailbox-permissions-in-azure-active-directory-connect) section later in this topic.
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
+
+  To share private items with a delegate, use the the following procedure in Outlook:
+
+  1. Go to **File** > **Account Settings** > **Delegate Access**
+
+     ![Delegate Access setting in Outlook](media/Private_Item_Menu1.png)
+
+  2. On the next window, click on **Add**. A new menu will appear listing the people in your organization. Select a delegate and click **OK**.
+
+  3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
+
+     ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
 
 The following permissions or capabilities **aren't** supported:
 

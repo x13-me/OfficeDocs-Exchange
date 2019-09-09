@@ -1,15 +1,15 @@
 ---
 description: 'Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and Exchange Server 2019.'
 localization_priority: Normal
-ms.author: chrisda
+ms.author: dmaguire
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.collection: exchange-server
 ms.date:
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 audience: ITPro
 title: Address lists in Exchange Server
 

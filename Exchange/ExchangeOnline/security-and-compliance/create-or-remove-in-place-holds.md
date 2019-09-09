@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: An In-Place Hold preserves all mailbox content, including deleted items and original versions of modified items. All such mailbox items are returned in an In-Place eDiscovery search. When you place an In-Place Hold on a user's mailbox on, the contents in the corresponding archive mailbox (if it's enabled) are also placed on hold, and returned in a eDiscovery search.
 ms.topic: article
-author: markjjo
-ms.author: markjjo
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

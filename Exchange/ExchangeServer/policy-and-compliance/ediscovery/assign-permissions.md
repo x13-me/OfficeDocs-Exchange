@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Assign eDiscovery permissions in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

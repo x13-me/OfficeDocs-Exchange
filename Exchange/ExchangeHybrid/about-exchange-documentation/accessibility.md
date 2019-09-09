@@ -2,7 +2,7 @@
 title: "Accessibility for people with disabilities"
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

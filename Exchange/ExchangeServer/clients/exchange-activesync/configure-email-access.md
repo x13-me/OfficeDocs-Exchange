@@ -11,7 +11,7 @@ title: Configure mobile phones to access email
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

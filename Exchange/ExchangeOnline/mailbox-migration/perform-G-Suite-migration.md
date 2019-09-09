@@ -2,19 +2,19 @@
 title: "Perform a G Suite migration"
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
-description: "Instructions for performing a G Suite migration to Office 365."
+description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 
 # Perform a G Suite migration
 
-You can migrate batches of users from G Suite to Office 365, allowing a migration project to be done in stages. This migration requires that you have Office 365 Directory Synchronization (DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
+You can migrate batches of users from G Suite to Office 365, allowing a migration project to be done in stages. This migration requires that you have Azure Active Directory (AD) Connect (formerly known as Office 365 Directory Synchronization, or DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
 
-If you don't have DirSync in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
+If you don't have Azure AD Connect in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
 
 To manually provision mail-enabled users without DirSync, see [Manage mail users](https://docs.microsoft.com/en-us/Exchange/recipients-in-exchange-online/manage-mail-users) for more information.
 
@@ -51,6 +51,29 @@ Meanwhile, the forwarding address has been removed from the Office 365 user obje
 ![After G Suite migration is complete](../media/gsuite-mig-after-migration.png)
 
 After all migration batches have been completed, all users can use their migrated mailboxes on Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Office 365 tenant instead of the G Suite tenant.  The routing domains and extra aliases can now be removed, as can the G Suite tenant. The migration of mail, calendar, and contacts from G Suite to Office 365 is now complete.
+
+## Migration limitations
+
+Mail data is currently migrated using the IMAP protocol. For mail data there is a throughput limitation, enforced by G Suite, of 2 GB per mailbox per day. When you reach your 2 GB limit for the day, your migration will pause, but it will automatically continue the next day. Migrations resume once there is capacity to migrate more data, until the 2 GB per day limit is reached again.
+
+> [!NOTE]
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+
+Contacts and calendar information is migrated via a different protocol. For this reason, throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
+
+Additional migration limitations are described in the following table:
+
+
+|Data type  |Limitations  |
+|---------|---------|
+|Mail     |Vacation settings, Automatic reply settings, Filters/Rules will not be migrated         |
+|Meeting rooms     |Room bookings will not be migrated         |
+|Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
+|Contacts     |A maximum of three email addresses per contact are migrated over         |
+|Contacts     |Gmail tags, contact URLs, and custom tags will not be migrated         |
+
+> [!TIP]
+> If you will be [starting your migration batch with Exchange Online Powershell](#start-a-g-suite-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch?view=exchange-ps).  
 
 ## Create a Google Service Account
 
@@ -259,6 +282,8 @@ New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::Read
    ```
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
+> [!TIP]
+> See [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch?view=exchange-ps) for an explanation of all of the individual parameters you can use with this cmdlet. 
 
 4. Start the migration batch.
 

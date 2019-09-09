@@ -3,8 +3,8 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
 ms.topic: get-started-article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms.date:
 ms.reviewer: 
@@ -14,7 +14,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -102,7 +102,7 @@ When you prepare Active Directory for Exchange, the following requirements apply
 
 - Your account needs to be a member of the Enterprise Admins security group. If you skipped Step 1 because you want the _/PrepareAD_ command to extend the schema, the account also needs to be a member of the Schema Admins security group.
 
-- The computer needs to be needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
+- The computer needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
 
 - Wait until Active Directory has finished replicating the schema changes from Step 1 to all domain controllers before you try to prepare Active Directory.
 

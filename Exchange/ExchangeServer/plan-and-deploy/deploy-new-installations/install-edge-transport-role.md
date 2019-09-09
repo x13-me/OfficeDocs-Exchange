@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: 'Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer.'
 ms.topic: get-started-article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
 ms.date: 7/24/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -22,6 +22,9 @@ manager: dansimp
 Before you install an Exchange Server 2016 or Exchange Server 2019 Edge Transport server, verify the following prerequisites:
 
 - We recommend that you install Edge Transport servers in a perimeter network that's outside of your organization's internal Active Directory forest. Installing the Edge Transport server role on domain-joined computers only enables domain management of Windows features and settings. Edge Transport servers don't directly access Active Directory. Instead, they use Active Directory Lightweight Directory Services (AD LDS) to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
+
+> [!NOTE]
+> When Exchange Server 2019 Edge Transport server is domain-joined, a user from that domain must run the Exchange Management Shell. If a local user signs into the server, cmdlets in the Exchange Management Shell will result in "Access Denied". 
 
 - Verify the network, computer hardware, operating system, and software requirements at: [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
 

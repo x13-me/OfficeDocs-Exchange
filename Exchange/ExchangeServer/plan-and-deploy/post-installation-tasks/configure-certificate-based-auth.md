@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
 ms.date:
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -207,7 +207,7 @@ You only need to perform this step if you aren't using AD CS to issue the client
 
 ## Step 7 (Optional): Use IIS Manager to increase the UploadReadAheadSize value for the Outlook on the web and ActiveSync virtual directories
 
-If your clients receive errors, you might need to increase the **uploadReadAheadSize** values in the IIS metabase to allow for the request headers. For more information, see [Client cannot renegotiate request and returns an HTTP 413 error](https://go.microsoft.com/fwlink/p/?LinkId=87385).
+If your clients receive errors, you might need to increase the **uploadReadAheadSize** values in the IIS metabase to allow for the request headers.
 
 1. In IIS Manager, expand the server, expand **Sites**, and then expand **Default Web Site**.
 
