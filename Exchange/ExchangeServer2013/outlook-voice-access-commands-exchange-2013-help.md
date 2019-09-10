@@ -3,7 +3,7 @@ title: 'Outlook Voice Access commands: Exchange 2013 Help'
 TOCTitle: Outlook Voice Access commands
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 3/9/2015
 ms.reviewer: 
 ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b

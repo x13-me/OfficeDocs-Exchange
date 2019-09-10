@@ -3,7 +3,7 @@ title: 'Create an offline address book: Exchange 2013 Help'
 TOCTitle: Create an offline address book
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 f1_keywords:

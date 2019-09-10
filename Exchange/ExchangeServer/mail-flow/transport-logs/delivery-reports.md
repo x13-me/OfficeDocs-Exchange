@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can track delivery information about messages sent or received from any mailbox in the organization.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Delivery reports for administrators
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

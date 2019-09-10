@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
 ms.date: 4/29/2016
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -32,7 +32,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to change a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -47,7 +47,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to set a sharing policy as the default sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -60,7 +60,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to disable a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -74,7 +74,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 > [!IMPORTANT]
 > Before you remove a sharing policy, the sharing policy must be removed from all user mailboxes.
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 

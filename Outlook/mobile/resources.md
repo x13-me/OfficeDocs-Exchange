@@ -1,8 +1,8 @@
 ---
 title: "Plan, deliver, and adopt Outlook for iOS and Android in your organization"
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 ms.prod: outlook
 ms.topic: get-started-article
@@ -33,7 +33,7 @@ You can view resources for each phase of rollout below or download customer adop
 In this first phase, we focus on internal awareness and communication or engagement events that create excitement and awareness for end users.
 
 - [Flyer template](media/outlook-mobile-editable-flyer.docx) - Customizable flyer handout for your employees.
-- [Poster template](media/outlook-mobile-editable-poster.docx) - Customizable poster used to help raise awareness of your Outlook mobile rollout.
+- [Poster template](https://github.com/MicrosoftDocs/OfficeDocs-Exchange/raw/public/Outlook/mobile/media/outlook-mobile-editable-poster.pptx) - Customizable poster used to help raise awareness of your Outlook mobile rollout.
 - [Countdown email template](media/outlook-mobile-countdown-email.zip) - Customizable email informing employees of upcoming Outlook mobile rollout within your organization.
 
 ## Launch Day

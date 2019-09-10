@@ -1,8 +1,8 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.10 in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date:
 ms.reviewer: 
 audience: Admin
@@ -185,7 +185,7 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
-   ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](../../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+   ![Screenshot shows the admin center with the Admin centers option expanded and Exchange selected.](../../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
 
 2. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.
 
@@ -251,7 +251,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 1. In the Microsoft 365 Admin center, go to **Settings** \> **Domains**, and then select the recipient's domain.
 
-   ![Screenshot shows Office 365 admin center with the Domains option selected. Domain names are shown on the page along with the options to add or buy a domain.](../../media/2cbbe5c3-9d92-4d27-84bc-04e2e78caaf2.png)
+   ![Screenshot shows admin center with the Domains option selected. Domain names are shown on the page along with the options to add or buy a domain.](../../media/2cbbe5c3-9d92-4d27-84bc-04e2e78caaf2.png)
 
 2. In the pop-out **Required DNS settings** pane, select **Check DNS**.
 

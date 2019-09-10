@@ -25,7 +25,7 @@ ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -91,7 +91,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
 2. Go to the Microsoft 365 admin center.
 
-3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center open, too.
+3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the admin center open, too.
 
    ![username column in the Microsoft 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
@@ -144,7 +144,7 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
 3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center page open, too.
 
-   ![username column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+   ![username column in the admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
 4. Start Excel.
 

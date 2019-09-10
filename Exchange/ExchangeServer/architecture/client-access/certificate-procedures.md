@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: A list of certificate management tasks in Exchange Server.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Certificate procedures in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

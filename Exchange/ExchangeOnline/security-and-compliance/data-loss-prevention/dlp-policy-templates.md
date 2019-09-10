@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
 ms.topic: article
-author: stephow-msft
-ms.author: stephow
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 

@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: 
 ms.topic: article
-author: chrisda
+author: msdmaguire
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage
-ms.author: chrisda
+ms.author: dmaguire
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
 ms.date: 11/17/2014
 ms.reviewer: 
@@ -13,7 +13,7 @@ title: Configure offline address book distribution properties
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---

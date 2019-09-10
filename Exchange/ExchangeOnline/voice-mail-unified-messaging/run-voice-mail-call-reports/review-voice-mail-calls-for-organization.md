@@ -1,10 +1,10 @@
 ---
 audience: ITPro
 localization_priority: Normal
-ms.author: chrisda
-manager: dansimp
+ms.author: dmaguire
+manager: serdars
 ms.topic: article
-author: chrisda
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 ms.collection: exchange-online

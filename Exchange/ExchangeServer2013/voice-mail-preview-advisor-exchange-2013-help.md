@@ -3,7 +3,7 @@ title: 'Voice Mail Preview advisor: Exchange 2013 Help'
 TOCTitle: Voice Mail Preview advisor
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 0957dd54-df6d-4b50-9db5-4757f548b899

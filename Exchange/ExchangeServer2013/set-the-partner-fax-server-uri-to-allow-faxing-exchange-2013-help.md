@@ -3,7 +3,7 @@ title: 'Set the partner fax server URI to allow faxing: Exchange 2013 Help'
 TOCTitle: Set the partner fax server URI to allow faxing
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 12/9/2016
 ms.reviewer: 
 ms.assetid: 77a9013b-d76b-4af2-8b2c-cef435cf67af

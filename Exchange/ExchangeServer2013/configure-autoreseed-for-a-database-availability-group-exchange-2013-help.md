@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619303(v=EXCHG.150)
 ms:contentKeyID: 49289245
 ms.date: 12/09/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -120,7 +120,7 @@ The names of the mounted folders can be any folder name, as long as the folders 
 To verify that you've successfully mounted the volume folders, run the following command.
 
 ```powershell
-Dir C:\
+Dir C:\ExchangeVolumes
 ```
 
 The mounted volumes should appear in the output list.

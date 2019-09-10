@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Frequently asked questions about message trace.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

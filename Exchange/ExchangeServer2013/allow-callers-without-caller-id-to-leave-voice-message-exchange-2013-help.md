@@ -3,7 +3,7 @@ title: 'Allow callers without a caller ID to leave a voice message: Exchange 201
 TOCTitle: Allow callers without a caller ID to leave a voice message
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 51367d98-e17c-4bcf-8b14-208bd1ac3af0

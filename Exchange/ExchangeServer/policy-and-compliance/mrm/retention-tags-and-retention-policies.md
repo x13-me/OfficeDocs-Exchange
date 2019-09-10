@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and Exchange Server 2019 help manage the email life cycle.'
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.date: 7/8/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Retention tags and retention policies in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -89,6 +89,9 @@ When creating or configuring a retention tag, you can select one of the followin
 |**Delete and allow recovery**:|Emulates the behavior when the user empties the Deleted Items folder.  <br/> Items are moved to the [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the *deleted item retention* period.  <br/> Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web|If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md).|
 |**Permanently delete**|Permanently deletes messages.  <br/> You can't recover messages after they're permanently deleted.|If mailbox is placed on [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md) or Litigation Hold, items are preserved in the Recoverable Items folder based on hold parameters. [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) will still return these items in search results.|
 |**Mark as past retention limit**|Marks a message as expired. In Outlook, and Outlook on the web, expired items are displayed with the notification stating 'This item has expired' and 'This item will expire in 0 days'.|N. A.|
+
+> [!NOTE]
+> Default Policy tag (DPT) with **Move to Archive** action always overwrites the Retention Policy tag (RPT) or the Personal tag (PT), when the age limit for retention of DPT is lower than RPT or PT.
 
 For details about how to create retention tags, see [Create a retention policy in Exchange Server](create-retention-policies.md).
 

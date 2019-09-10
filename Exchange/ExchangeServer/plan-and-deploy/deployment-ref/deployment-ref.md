@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Exchange 2016 readiness checks
 ms.topic: hub-page
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1999c070-1441-4605-b36b-118a5d78defe
 ms.date: 10/28/2015
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

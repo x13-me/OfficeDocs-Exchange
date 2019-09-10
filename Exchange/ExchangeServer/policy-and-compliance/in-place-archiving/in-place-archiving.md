@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms.date: 7/5/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: In-Place Archiving in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -37,7 +37,7 @@ The following table lists the client applications that can be used to access arc
 
 There are several ways to move messages from a user's primary mailbox to their archive mailbox:
 
-- **Move or copy messages manually**: Users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox or .pst file in Outlook and Outlook on the web.
+- **Move or copy messages manually**: Users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox Outlook and Outlook on the web or like a mounted .pst file in Outlook.
 
 - **Move or copy messages using Inbox rules**: Users can create Inbox rules in Outlook or Outlook on the web to automatically move messages to a folder in their archive mailbox.
 

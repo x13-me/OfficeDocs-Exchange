@@ -1,9 +1,9 @@
---
+---
 localization_priority: Normal
 description: A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients.
 ms.topic: article
-author: kwekua
-ms.author: kwekua
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 
@@ -30,7 +30,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Create a mail-enabled security group
 

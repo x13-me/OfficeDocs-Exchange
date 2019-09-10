@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
 ms.date: 
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -55,6 +55,16 @@ For this scenario, your organization's mail flow setup looks like the following 
      ```
 
      You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
+
+When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
+
+![Example host name value](../media/ThirdPartyHostconfig.png)
+
+In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
+
+Since the anti-spam service is external, you need to create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** \> **Mail flow** \> **Rules** to prevent a double anti-spam check, which would result in the followin rejection of the messages:
+
+![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
 

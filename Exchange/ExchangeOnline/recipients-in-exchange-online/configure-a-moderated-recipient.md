@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In your Exchange Online organization, you may need to restrict access to specific recipients. The most common scenario is the need to control messages sent to large distribution groups. Depending on your organization's requirements, you may also need to control the messages sent to executive mailboxes or partner contacts. You can use moderated recipients to accomplish these tasks. When you configure a recipient for moderation, all messages sent to that recipient are subject to approval by the designated moderators.
 ms.topic: article
-author: kwekua
-ms.author: kwekua
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.date: 4/29/2016
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

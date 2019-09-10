@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb738144(v=EXCHG.150)
 ms:contentKeyID: 49289322
 ms.date: 05/18/2016
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -20,66 +20,80 @@ Microsoft Exchange Server 2013 adds new and modifies existing Active Directory s
 
 Exchange 2013 schema updates are cumulative. Each release includes all of the changes included in previous releases. This means that if you skip a release, you may still need to apply schema updates even if the release you're installing doesn't include its own changes. The following table gives examples of when your Active Directory will be updated, and when it's already up-to-date.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Current Exchange 2013 release installed</p></th>
-<th><p>New Exchange 2013 release being installed</p></th>
-<th><p>Are schema updates required?</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Service Pack 1</p></td>
-<td><p>Cumulative Update 11</p></td>
-<td><p><strong>Yes</strong>, updates are required. Schema updates included in CU5, CU6, and CU7 need to be applied.</p></td>
-</tr>
-<tr class="even">
-<td><p>Cumulative Update 6</p></td>
-<td><p>Cumulative Update 11</p></td>
-<td><p><strong>Yes</strong>, updates are required. Schema updates included in CU7 need to be applied.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Cumulative Update 7</p></td>
-<td><p>Cumulative Update 11</p></td>
-<td><p><strong>No</strong>, no updates are required. No changes have been made between CU7 and CU11.</p></td>
-</tr>
-</tbody>
-</table>
+|**Current Exchange 2013 release installed**|**New Exchange 2013 release being installed**|**Are schema updates required?**|
+|:-----|:-----|:-----|
+|Service Pack 1|Cumulative Update 8 <br> through <br> Cumulative Update 21|**Yes**, schema updates are required. <br> You need to apply the CU5, CU6, and CU7 schema updates.|
+|Cumulative Update 6|Cumulative Update 8 <br> through <br> Cumulative Update 21|**Yes**, schema updates are required. <br> You need to apply the CU7 schema updates.|
+|Cumulative Update 7|Cumulative Update 8 <br> through <br> Cumulative Update 21|**No**, no schema updates are required. <br> No schema changes are made in CU7 through CU21.|
 
 > [!NOTE]
 > The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
 
-This document includes the following sections:
+## Exchange 2013 CU23 Active Directory schema changes
 
-  - Active Directory schema changes in Exchange 2013 cumulative updates CU8 and later
+No changes are made to the Active Directory schema in Exchange 2013 CU23.
 
-  - Exchange 2013 CU7 Active Directory schema changes
+## Exchange 2013 CU22 Active Directory schema changes
 
-  - Exchange 2013 CU6 Active Directory schema changes
+No changes are made to the Active Directory schema in Exchange 2013 CU22.
 
-  - Exchange 2013 CU5 Active Directory schema changes
+However, a reduction in Active Directory permissions is made: The "Allow" Access Control Entry (ACE) that grants the "Exchange Windows Permissions" group the "Write DACL" right to the "User" and "INetOrgPerson" inherited object types is updated to include the "Inherit Only" flag on the domain root object. For more information, see [KB 4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
 
-  - Exchange 2013 SP1 Active Directory schema changes
+## Exchange 2013 CU21 Active Directory schema changes
 
-  - Exchange 2013 CU3 Active Directory schema changes
+No changes are made to the Active Directory schema in Exchange 2013 CU21.
 
-  - Exchange 2013 CU2 Active Directory schema changes
+## Exchange 2013 CU20 Active Directory schema changes
 
-  - Exchange 2013 CU1 Active Directory schema changes
+No changes are made to the Active Directory schema in Exchange 2013 CU20.
 
-  - Exchange 2013 RTM Active Directory schema changes
+## Exchange 2013 CU19 Active Directory schema changes
 
-## Active Directory schema changes in Exchange 2013 cumulative updates CU8 and later
+No changes are made to the Active Directory schema in Exchange 2013 CU19.
 
-No changes have been made to the Active Directory schema in Exchange 2013 from CU8 onwards. The last cumulative update to include schema changes is currently Exchange 2013 CU7.
+## Exchange 2013 CU18 Active Directory schema changes
 
-Future cumulative updates may contain schema changes. Check back here for each cumulative update release to see schema changes have been made.
+No changes are made to the Active Directory schema in Exchange 2013 CU18.
+
+## Exchange 2013 CU17 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU17.
+
+## Exchange 2013 CU16 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU16.
+
+## Exchange 2013 CU15 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU15.
+
+## Exchange 2013 CU14 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU14.
+
+## Exchange 2013 CU13 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU13.
+
+## Exchange 2013 CU12 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU12.
+
+## Exchange 2013 CU11 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU11.
+
+## Exchange 2013 CU10 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU10.
+
+## Exchange 2013 CU9 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU9.
+
+## Exchange 2013 CU8 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2013 CU8.
 
 ## Exchange 2013 CU7 Active Directory schema changes
 

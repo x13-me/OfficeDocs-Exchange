@@ -3,7 +3,7 @@ title: 'Investigate the audio quality of voice calls in your organization: Excha
 TOCTitle: Investigate the audio quality of voice calls in your organization
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5

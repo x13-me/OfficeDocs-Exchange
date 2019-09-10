@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
@@ -22,7 +22,7 @@ ms.custom:
 - Adm_O365_FullSet
 - MiniMaven
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -44,6 +44,8 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - You should synchronize the state of modern authentication in Exchange Online with Skype for Business Online to prevent multiple log in prompts in Skype for Business clients. For instructions, see [Skype for Business Online: Enable your tenant for modern authentication](https://aka.ms/SkypeModernAuth).
 
+- A user with multiple accounts configured in their Outlook profile might receive an error when they try to connect to their mailbox. For more information, see [KB 4516672](https://support.microsoft.com/en-us/help/4516672/outlook-shows-disconnected-after-enabling-modern-authentication-in-off)
+
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=534121).
@@ -58,7 +60,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
      Note that the previous command does not block or prevent Outlook 2013 or later clients from using basic authentication connections.
 
-   - Run the following command to prevent modern authentication connections (force th use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
+   - Run the following command to prevent modern authentication connections (force the use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
 
      ```
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
@@ -73,3 +75,5 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 ## See also
 
 [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+
+[Set up multi-factor authentication for Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)

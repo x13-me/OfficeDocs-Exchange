@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: This topic contains the terms and definitions that are used with Unified Messaging.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
 ms.date: 6/24/2018
 ms.reviewer: 

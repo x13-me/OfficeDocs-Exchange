@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -44,7 +44,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
 2. On the first page, enter the following information:
 
-   - **Name**: Enter a descriptive name for the Send connector, for example, To internet.
+   - **Name**: Enter a descriptive name for the Send connector (for example, To internet).
 
    - **Type**: Select **Internet**.
 
@@ -60,9 +60,9 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
    - The **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites:
 
-   - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
+     - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
-   - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+     - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
 
    When you're finished, click **Next**.
 

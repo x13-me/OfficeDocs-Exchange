@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt779252(v=EXCHG.150)
 ms:contentKeyID: 74429166
 ms.date: 02/28/2017
 ms.reviewer: 
-manager: dansimp
+manager: serdars
 ms.author: dmaguire
 author: msdmaguire
 mtps_version: v=EXCHG.150
@@ -44,6 +44,9 @@ For more information about federation trusts and federation, see [Federation](fe
 ## Update a working federation certificate
 
 If the federation certificate hasn't expired, you can update the existing federation trust with a new federation certificate.
+
+> [!NOTE]
+> The Graphical User Interface/Wizard can be used as an alternative to update the Microsoft Teams certificate automatically.
 
 ## Step 1: Create a new federation certificate
 
