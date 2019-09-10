@@ -435,6 +435,7 @@
 #### [Manage Outlook for iOS and Android](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android.md)
 #### [Secure Outlook for iOS and Android](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android.md)
 #### [Deploy app config settings](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune.md)
+#### [S/MIME for Outlook for iOS and Android](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android.md)
 #### [Outlook for iOS and Android in the Government Cloud](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud.md)
 ### [Mobile access](../clients-and-mobile-in-exchange-online/mobile-access/mobile-access.md)
 #### [Configure email on mobile phone](../clients-and-mobile-in-exchange-online/mobile-access/configure-email-on-mobile-phone.md)
