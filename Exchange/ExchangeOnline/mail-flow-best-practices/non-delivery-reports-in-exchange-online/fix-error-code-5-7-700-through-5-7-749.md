@@ -55,7 +55,7 @@ If you must send email from these low reputation IP addresses before you can pur
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 
-To avoid this error, you can use a certificate-based mail flow connector where the certificate's domain is a provisioned domain, or you can provision all sending domains.
+To avoid this error, you can use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Office 365, or you can add and validate all sending domains in Office 365. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Configure mail flow using connectors in Office 365](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
 ## Still need help with error codes 5.7.700 through 5.7.749?
 
