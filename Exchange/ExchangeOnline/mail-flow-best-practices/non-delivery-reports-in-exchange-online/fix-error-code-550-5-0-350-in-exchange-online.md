@@ -23,13 +23,13 @@ It's frustrating when you get an error after sending an email message. This topi
 
 Use the information in the NDR to help you decide how to fix the problem.
 
-|||||||
-|:-----|:-----|:-----|:-----|:-----|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|![Help symbol](../../media/5bf13e77-0400-4dda-a569-b99b8a918b48.png)|
+|||||
+|:-----|:-----|:-----|:-----|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|
 
 ## Why did I get this bounce message?
 
-This issue occurs if you use Rich Text formatting in Outlook messages. The message likely contains at least one attachment, and the one of the attachments is likely an email message that also contains at least one attached email message.
+This issue occurs if you use Rich Text formatting in Outlook messages. The message likely contains at least one attachment, and one of the attachments is likely an email message that also contains at least one attached email message.
 
 ## I got this bounce message. How do I fix it?
 
