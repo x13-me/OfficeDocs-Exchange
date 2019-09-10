@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "If a printer, scanner, or LOB application can't send email using Office 365, you might need to set up IIS to work as an intermediary. Learn how. "
 ms.topic: article
-author: supotter
-ms.author: supotter
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: eb57abd2-3859-4e79-b721-2ed1f0f579c9
 ms.reviewer: 
 title: How to configure IIS for relay with Office 365
@@ -17,7 +17,7 @@ search.appverid:
 audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 
@@ -36,7 +36,7 @@ You might want to do this in the following scenarios:
 Before proceeding, review [How to set up a multifunction device or application to send email using Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md) as there may be an available option that doesn't require setting up an additional server to relay.
 
 > [!NOTE]
-> These instructions can be modified for other SMTP relays that you might have in your organization.
+> • These instructions can be modified for other SMTP relays that you might have in your organization. <br><br>• The SMTP component that's discussed in this topic is in IIS 6.0, and support for IIS 6.0 has ended with the [support of Windows 2003](https://support.microsoft.com/lifecycle/search/810). We will continue to do a "best effort support" on this feature. We can continue to address most functionality questions, but we can't help with IIS 6.0 product issues or deep technical investigations. We recommend that you use a supported version of Exchange instead of IIS SMTP.
 
 ## What you need to know before you begin
 
@@ -103,6 +103,9 @@ Before proceeding, review [How to set up a multifunction device or application t
    3. Select **Outbound Connections**, and in the TCP Port box, enter **25** and select **OK**.
 
    4. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
+   
+   > [!NOTE]
+   > Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address. You can find this value by looking for the MX record of your domain in the **Setup** section in the M365 admin portal.
 
 ### Step 4: Restart the IIS service and the SMTP service
 
@@ -161,6 +164,10 @@ Before proceeding, review [How to set up a multifunction device or application t
    4. Select **Outbound Connections** and in the TCP Port box, enter **25** and select **OK**.
 
    5. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
+
+> [!NOTE]
+> • Replace **contoso-com.mail.protection.outlook.com** with your own tenants mail exchanger address.
+>   You can find this by looking for the MX record of your domain in the **admin.microsoft.com** portal, located in the **Setup** section.
 
 ### Step 4 Restart the IIS service and the SMTP service
 

@@ -3,7 +3,7 @@ title: 'Offline address book procedures: Exchange 2013 Help'
 TOCTitle: Offline address book procedures
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18

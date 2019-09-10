@@ -3,7 +3,7 @@ title: 'View and manage a call answering rule: Exchange 2013 Help'
 TOCTitle: View and manage a call answering rule
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 4/8/2015
 ms.reviewer: 
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8

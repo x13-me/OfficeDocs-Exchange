@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to assign offline address books (OABs) to mailboxes in Exchange Online.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
 ms.date: 
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Provision recipients for offline address book downloads in Exchange Onlin
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
-manager: dansimp
+manager: serdars
 
 ---
 

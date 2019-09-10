@@ -95,6 +95,26 @@
         "source_path": "exchange/outlook/common/office/enterprise-includes/o365endpoints/office-365-worldwide-endpoints.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/exchange-online-and-exchange-online-protection-service-upgrade.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview",
+        "redirect_document_id": false
+      },
+      {      
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/fix-outlook-and-office-365-issues.md",
+      "redirect_url": "https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/diagnostic-log-collection-in-support-and-recovery-assistant.md",
+      "redirect_url": "https://docs.microsoft.com/office365/troubleshoot/administration/diagnostic-log-collection-in-support-and-recovery-assistant",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+      "redirect_url": "https://docs.microsoft.com/Exchange/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin",
+      "redirect_document_id": false
       }
     ]
 }

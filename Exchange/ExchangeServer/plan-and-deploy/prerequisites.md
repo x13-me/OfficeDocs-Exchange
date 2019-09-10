@@ -3,8 +3,8 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools.'
 ms.topic: conceptual
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid:
 ms.date:
 ms.reviewer: 
@@ -14,7 +14,7 @@ ms.collection:
 - exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -147,7 +147,7 @@ When you use one of these options, you don't need to restart the computer after 
 
    ```
    Install-WindowsFeature ADLDS
-    ``
+   ```
 
 ## Windows 10 client prerequisites for the Exchange 2019 management tools
 
@@ -170,7 +170,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -202,7 +202,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
    b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
@@ -225,7 +225,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -246,7 +246,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -267,7 +267,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -291,7 +291,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 ### Exchange 2016 management tools on Windows 8.1
 
-1. Install [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
+1. Install [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
 2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 

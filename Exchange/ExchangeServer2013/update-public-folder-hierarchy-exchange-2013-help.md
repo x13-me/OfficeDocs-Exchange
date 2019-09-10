@@ -3,7 +3,7 @@ title: 'Update the public folder hierarchy: Exchange 2013 Help'
 TOCTitle: Update the public folder hierarchy
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90

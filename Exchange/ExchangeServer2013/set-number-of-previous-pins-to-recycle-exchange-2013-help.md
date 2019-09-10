@@ -3,7 +3,7 @@ title: 'Set the number of previous voice mail PINs to recycle: Exchange 2013 Hel
 TOCTitle: Set the number of previous voice mail PINs to recycle
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: b094e68e-c493-4576-a6b1-4c780e635405

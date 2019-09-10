@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
 ms.topic: article
-author: kwekua
-ms.author: kwekua
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 
@@ -67,9 +67,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 To learn how users can access and use shared mailboxes, check out the following:
 
-- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013 ](https://go.microsoft.com/fwlink/p/?LinkId=834764)
+- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013](https://go.microsoft.com/fwlink/p/?LinkId=834764)
 
 - [Open and use a shared mailbox in Outlook on the web for business](https://go.microsoft.com/fwlink/p/?LinkId=834766)
+
+- [Open and use a shared mailbox in Outlook mobile](https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f)
 
 ## Use Exchange Online PowerShell to create a shared mailbox
 

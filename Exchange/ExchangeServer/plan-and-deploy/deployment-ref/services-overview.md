@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the services that Exchange 2016 adds to a Windows server.
 ms.topic: article
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
 ms.date: 7/31/2018
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Overview of Exchange services on Exchange servers
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 

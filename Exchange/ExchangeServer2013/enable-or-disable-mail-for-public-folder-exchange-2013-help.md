@@ -3,7 +3,7 @@ title: 'Mail-enable or mail-disable a public folder: Exchange 2013 Help'
 TOCTitle: Mail-enable or mail-disable a public folder
 ms.author: dmaguire
 author: msdmaguire
-manager: dansimp
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a

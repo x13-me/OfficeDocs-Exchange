@@ -1,9 +1,9 @@
 ---
 title: 'Define your own DLP templates and information types: Exchange 2013 Help'
 TOCTitle: Define your own DLP templates and information types
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 ms.date: 
 ms.reviewer: 
 ms.assetid: f4622dba-3347-4758-b4a2-f01b043c908c

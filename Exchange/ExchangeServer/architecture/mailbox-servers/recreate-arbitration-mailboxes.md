@@ -11,7 +11,7 @@ title: Recreate missing arbitration mailboxes
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -126,7 +126,7 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 2. In the Exchange Management Shell, run the following command:
 
    ```
-   Get-User | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
+   Get-User -ResultSize Unlimited | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
    ```
 
 ### Re-create the Microsoft Exchange organization mailbox for OABs
@@ -189,6 +189,41 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 
    ```
    Set-Mailbox -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration -UMDataStorage $true -Force
+   ```
+
+### Re-create the Microsoft Exchange 2016 CU8 and later system mailboxes
+
+To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201} and SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}, run the following commands:
+
+1. If the mailboxes are missing, run the following command from a Windows Command Prompt window:
+
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
+
+   For example:
+
+   ```
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
+
+2. In the Exchange Management shell, run the following command:
+
+   ```
+   Enable-Mailbox -Identity "SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}" -Arbitration
+   Enable-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
+   ```
+
+3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
+
+   ```
+   $ShardMBX = Get-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration
+   Set-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
+   Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="66"} 
+   Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchMessageHygieneSCLDeleteThreshold"="9"} 
+   Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchMessageHygieneSCLJunkThreshold"="4"}
+   Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchMessageHygieneSCLQuarantineThreshold"="9"}
+   Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchMessageHygieneSCLRejectThreshold"="7"} 
    ```
 
 ## How do you know this worked?

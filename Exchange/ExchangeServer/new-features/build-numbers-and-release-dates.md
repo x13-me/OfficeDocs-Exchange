@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
-author: chrisda
-ms.author: chrisda
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 ms.date:
 ms.reviewer: 
@@ -11,7 +11,7 @@ title: Exchange Server build numbers and release dates
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: dansimp
+manager: serdars
 
 ---
 
@@ -121,6 +121,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Update Rollup 29 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58476)|July 9, 2019|14.3.468.0|14.03.0468.000|
 |[Update Rollup 28 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58354)|June 7, 2019|14.3.461.1|14.03.0461.001|
 |[Update Rollup 27 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58196)|April 9, 2019|14.3.452.0|14.03.0452.000|
 |[Update Rollup 26 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57824)|February 12, 2019|14.3.442.0|14.03.0442.000|

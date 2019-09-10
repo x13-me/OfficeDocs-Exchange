@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: As an Exchange Online or Exchange Online Protection (EOP) admin, you probably want to keep an eye on your organization's mail flow, how much spam and malware is being detected, or how often your rules and policies are being matched. Read this article to get an overview of reports that are available
 ms.topic: article
-author: denisebmsft
+author: msdmaguire
 f1_keywords:
 - ms.exch.eac.ScheduledReports
-ms.author: deniseb
+ms.author: dmaguire
 ms.assetid: 51832055-1696-4443-8579-bc76b8db92a3
 ms.date: 7/26/2018
 ms.reviewer: 
@@ -15,7 +15,7 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 

@@ -6,9 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.um.protocol
 ms:contentKeyID: 49720834
 ms.date: 
 ms.reviewer: 
-manager: dansimp
-ms.author: chrisda
-author: chrisda
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

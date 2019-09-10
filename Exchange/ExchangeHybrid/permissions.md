@@ -1,8 +1,8 @@
 ---
 title: "Permissions in Exchange hybrid deployments"
-ms.author: chrisda
-author: chrisda
-manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -52,6 +52,18 @@ The following permissions **are** supported:
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
 
+  To share private items with a delegate, use the the following procedure in Outlook:
+
+  1. Go to **File** > **Account Settings** > **Delegate Access**
+
+     ![Delegate Access setting in Outlook](media/Private_Item_Menu1.png)
+
+  2. On the next window, click on **Add**. A new menu will appear listing the people in your organization. Select a delegate and click **OK**.
+
+  3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
+
+     ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
+
 The following permissions or capabilities **aren't** supported:
 
 - **Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Send As permission does not synchronize automatically by Azure AD Connect between On-premises and Office 365. That's why at this point, cross Premises Send As permission is not supported. However, if you add the Send As permission manually in both environments, Send As will work in most of the scenarios.
@@ -83,7 +95,7 @@ To enable Full Access and Send on Behalf permissions in a hybrid deployment, add
 
 |**Exchange version**|**Prerequisites**|
 |:-----|:-----|
-|Exchange 2016|No additional configuration required.|
+|Exchange 2016|Enable ACLable object synchronization at the organization level. <br> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
 |Exchange 2013|Exchange 2013 servers need the following: <br/>• The latest cumulative update (CU), or the immediately previous CU, installed. Exchange 2013 servers running older CUs aren't supported and may not work with delegated mailbox permissions in a hybrid deployment. <br/>• The Exchange organization is configured to allow access control lists (ACLs) to be stamped on mail objects and synchronized with Office 365. <br/>• On-premises remote mailboxes associated with mailboxes moved to Office 365 prior to Exchange 2013 CU10 need to be manually configured to support ACLs. Remote mailboxes, created on servers running Exchange 2013 CU10 or later, and after the Exchange organization is set to allow ACLs, are configured automatically.|
 |Exchange 2010|Exchange 2010 SP3 servers need the following: <br/>• The latest update rollup (RU), or the immediately previous RU, installed. Exchange 2010 SP3 servers running older RU aren't supported and may not work with delegated mailbox permissions in a hybrid deployment. <br/>• On-premises remote mailboxes associated with Office 365 mailboxes need to be configured to support ACLs. This needs to be done for each on-premises remote mailbox that's associate with an Office 365 mailbox.|
 |Exchange 2007 or earlier|Not supported.|
