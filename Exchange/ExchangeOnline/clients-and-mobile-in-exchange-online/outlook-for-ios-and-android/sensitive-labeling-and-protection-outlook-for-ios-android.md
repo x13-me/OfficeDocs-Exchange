@@ -94,7 +94,7 @@ After the certificates have been deployed and S/MIME has been enabled in the app
 
 ### Consumption
 
-In the message view, users can view messages that are S/MIME signed or encrypted. In addition, users can tap the S/MIME status bar to view more information about the message’s S/MIME status. The following screen shots show examples of how S/MIME messages are consumed in iOS.
+In the message view, users can view messages that are S/MIME signed or encrypted. In addition, users can tap the S/MIME status bar to view more information about the message’s S/MIME status. The following screen shots show examples of how S/MIME messages are consumed in Android.
 
 > [!IMPORTANT]
 > In order to read an encrypted message, the recipient’s private certificate key must be available on the device.
