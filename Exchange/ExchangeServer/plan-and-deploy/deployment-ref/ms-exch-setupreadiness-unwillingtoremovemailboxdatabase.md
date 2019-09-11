@@ -21,7 +21,7 @@ manager: serdars
 
 Exchange Setup can't continue because it can't remove a user mailbox database from the local server without incurring potential data loss.
 
-Before Exchange Setup removes the Mailbox server role from a server, Setup confirms that alll mailbox databases have been removed from the server, or that the mailboxes on the server don't contain active mailboxes. However, user mailboxes might still remain on the server.
+Before Exchange Setup removes the Mailbox server role from a server, Setup confirms that all mailbox databases have been removed from the server, or that the mailboxes on the server don't contain active mailboxes. However, user mailboxes might still remain on the server.
 
 To resolve this issue do either of these steps:
 
