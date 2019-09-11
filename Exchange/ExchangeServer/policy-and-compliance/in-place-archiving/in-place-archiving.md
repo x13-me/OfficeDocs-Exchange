@@ -37,7 +37,7 @@ The following table lists the client applications that can be used to access arc
 
 There are several ways to move messages from a user's primary mailbox to their archive mailbox:
 
-- **Move or copy messages manually**: Users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox or .pst file in Outlook and Outlook on the web.
+- **Move or copy messages manually**: Users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox Outlook and Outlook on the web or like a mounted .pst file in Outlook.
 
 - **Move or copy messages using Inbox rules**: Users can create Inbox rules in Outlook or Outlook on the web to automatically move messages to a folder in their archive mailbox.
 
