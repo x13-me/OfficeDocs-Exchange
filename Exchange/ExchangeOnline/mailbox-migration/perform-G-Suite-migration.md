@@ -181,7 +181,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
    > It may take up to 24 hours for Google to propagate this setting to all of the users in your organization.
 
    > [!IMPORTANT]
-   > If you are using non-default Transport settings in your Office 365 organization, you should check that mail flow will work from Office 365 to G Suite. Be sure that either your default Remote Domain ("*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your G Suite routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
+   > If you are using non-default Transport settings in your Office 365 organization, you should check that mail flow will work from Office 365 to G Suite. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your G Suite routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
 
 ## Provision users in O365
 
