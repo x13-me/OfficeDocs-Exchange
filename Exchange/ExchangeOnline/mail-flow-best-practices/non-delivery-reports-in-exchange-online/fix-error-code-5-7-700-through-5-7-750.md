@@ -1,5 +1,5 @@
 ---
-title: "Fix email delivery issues for error codes 5.7.700 through 5.7.749 in Exchange Online"
+title: "Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 - MOE150
 ms.assetid: 
-description: "Learn how to fix email issues for error code 5.7.700 through 5.7.749 in Exchange Online."
+description: "Learn how to fix email issues for error code 5.7.700 through 5.7.750 in Exchange Online."
 ---
 
-# Fix email delivery issues for error codes 5.7.700 through 5.7.749 in Exchange Online
+# Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error codes 550 5.7.700 through 5.7.749 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error codes 550 5.7.700 through 5.7.750 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 Use the information in the NDR to help you decide how to fix the problem.
 
@@ -55,9 +55,15 @@ If you must send email from these low reputation IP addresses before you can pur
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 
-To avoid this error, you can use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Office 365, or you can add and validate all sending domains in Office 365. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Configure mail flow using connectors in Office 365](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
+This issue occurs if you
 
-## Still need help with error codes 5.7.700 through 5.7.749?
+To avoid this error, you can:
+
+- **Most common solution**: Add and validate all domains in Office 365 that you use to send email messages. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain).
+
+- Use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Office 365. For more information, see [Configure mail flow using connectors in Office 365](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
+
+## Still need help with error codes 5.7.700 through 5.7.750?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
