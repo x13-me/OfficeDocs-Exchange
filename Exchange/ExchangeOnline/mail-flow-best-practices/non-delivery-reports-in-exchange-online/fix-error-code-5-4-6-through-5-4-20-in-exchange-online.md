@@ -1,5 +1,5 @@
 ---
-title: "Fix email delivery issues for error code 5.4.6 through 5.4.20 in Exchange Online"
+title: "Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -14,18 +14,22 @@ search.appverid:
 - BCS160
 - MOE150
 ms.assetid: 81212ae4-4c36-4e8f-9546-e58b70cfd74b
-description: "Learn how to fix email issues for error code 5.4.6 through 5.4.20 in Exchange Online (hop count exceeded)."
+description: "Learn how to fix email issues for error code 5.4.6, 5.4.14, or other error codes related to mail routing loops in Exchange Online."
 ---
 
-# Fix email delivery issues for error code 5.4.6 through 5.4.20 in Exchange Online
+# Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if see the error codes 5.4.6 through 5.4.20 in a non-delivery report non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if see the error codes 5.4.6, 5.4.14 or other error codes related to mail routing loops in a non-delivery report non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 ## Why did I get this bounce message?
 
-There can be several causes for error code 5.4.6, but a likely cause is if the message hop count is exceeded or the route the message is delivered through is broken. Some causes and solutions are provided in this topic. The information here applies to a range of error codes 5.4.6 through 5.4.20.
+The most likely cause is if the message hop count is exceeded or the route the message is delivered through is broken. Some causes and solutions are provided in this topic.
 
-Use the information in the NDR to help you decide how to fix the problem.
+5.4.6 indicates a mail loop or routing problem in on-premises Exchange Server, which you would likely encounter in a hybrid environment.
+
+5.4.14 indicates a mail loop or routing problem in Exchange Online.
+
+ The information here applies to a range of error codes 5.4.6 through 5.4.20. Use the information in the NDR to help you decide how to fix the problem.
 
 |||||
 |:-----|:-----|:-----|:-----|
@@ -33,7 +37,7 @@ Use the information in the NDR to help you decide how to fix the problem.
 
 ## I got this bounce message. How do I fix it?
 
-Typically, the issues that cause error codes 5.4.6 through 5.4.20 can only be fixed by an Exchange Online admin and not the average email sender. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
+Typically, these can only be fixed by an Exchange Online admin and not the average email sender. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
 
 ## I'm an email admin. How do I fix this?
 
@@ -53,7 +57,7 @@ This error can happen when the MX record for your hybrid domain points to Exchan
 
 To fix the problem, configure a dedicated outbound connector that uses smart host routing and that has your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
+1. Open the Microsoft 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
 
 2. In the Exchange admin center (EAC), click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and then click **Edit**.
 
@@ -61,7 +65,7 @@ To fix the problem, configure a dedicated outbound connector that uses smart hos
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
-This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell):
+This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell):
 
 ```
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises
@@ -85,7 +89,7 @@ To fix the problem, configure a dedicated inbound connector that has the **Conne
 
 For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing).
 
-## Causes for NDR 5.4.6 and what does this error mean?
+## Causes for NDR 5.4.14 and what does this error mean?
 
 There are two likely possibilities:
 
@@ -93,25 +97,15 @@ There are two likely possibilities:
 
 - In hybrid environments, there are misconfigured connectors in your Exchange Online organization.
 
-### Details about this Exchange NDR, related to hop count exceeded
+### Details about NDRs related to hop count exceeded
 
-The NDR for this specific error might contain some or all of the following information:
+Here are some of the error codes that are related to mail routing loops or a bad mail routing configuration:
 
-- **User information section**
+- `554 5.4.6 Hop count exceeded - possible mail loop` (always generated by on-premises Exchange Servers)
 
-  - Delivery has failed to these recipients or groups:
+- `5.4.14 Hop count exceeded - possible mail loop ATTR34` (always generated by Exchange Online)
 
-     \<email addresses\>
-
-     A problem occurred while delivering this message to this email address. Try sending this message again.
-
-  - The outbound connection attempt was not answered because either the remote system was busy or it was unable to take delivery of the message.
-
-- **Diagnostic information for administrators section**
-
-  - `#5.4.6 smtp;554 5.4.6 Hop count exceeded - possible mail loop> #SMTP#`
-
-## Still need help with error codes 5.4.6 through 5.4.20?
+## Still need help?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
