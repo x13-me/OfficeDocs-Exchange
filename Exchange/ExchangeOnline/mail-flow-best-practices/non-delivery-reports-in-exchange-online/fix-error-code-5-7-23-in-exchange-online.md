@@ -31,21 +31,19 @@ Only an email admin in your Office 365 organization can fix this issue. Contact 
 
 ## I'm an email admin. How do I fix this?
 
-This bounce message indicates an issue with email domain authentication and validation in your Office 365 organization:
-
-- [Sender policy framework (SPF)](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
-
-- [DKIM](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)
-
-- [DMARC](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)
+This bounce message most likely indicates a [Sender policy framework (SPF)](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) configuration issue in your Office 365 organization.
 
 The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service.
 
 To fix this issue, do the following steps:
 
-- Check your Office 365 domain authentication settings (SPF, DKIM and DMARC records in DNS) at [???].
+- Verify the SPF DNS record for your domain at a publicly available SPF or DNS record checker on the web.
 
-- Verify that the outbound message wasn't identified as spam by Office 365. Outbound spam is routed through the High Risk Delivery Pool of IP addresses, which likely won't be accepted by the destination email organization. [Wouldn't this be covered by 5.1.8?]
+- Verify that the outbound message wasn't identified as spam by Office 365 and routed through the [High Risk Delivery Pool](https://docs.microsoft.com/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
+
+  To receive Bcc copies of outbound messages that are determined to be spam, see [Configure outbound spam policy notifications in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/configure-the-outbound-spam-policy).
+
+  If you determine that the outbound message was incorrectly detected as spam by Office 365, contact support.
 
 ## Still need help with error code 550 5.7.23?
 
