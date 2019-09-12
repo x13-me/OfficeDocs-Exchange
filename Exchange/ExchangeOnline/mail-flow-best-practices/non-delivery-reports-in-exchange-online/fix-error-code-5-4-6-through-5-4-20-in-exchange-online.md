@@ -19,7 +19,7 @@ description: "Learn how to fix email issues for error code 5.4.6, 5.4.14, or oth
 
 # Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if see the error codes 5.4.6, 5.4.14 or other error codes related to mail routing loops in a non-delivery report non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if see the error codes 5.4.6, 5.4.14 or other error codes related to mail routing loops in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 ## Why did I get this bounce message?
 
