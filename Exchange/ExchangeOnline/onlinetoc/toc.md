@@ -469,8 +469,6 @@
 #### [Run a Message Trace and View Results](../monitoring/trace-an-email-message/run-a-message-trace-and-view-results.md)
 #### [Message Trace FAQ](../monitoring/trace-an-email-message/message-trace-faq.md)
 ## [Back up email](../back-up-email.md)
-## [Fix Outlook connection problems in Office 365 and Exchange Online](../fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md)
-### [Find and fix email delivery issues as an Office 365 for business admin](../fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md)
 ## [About Exchange documentation](../about-exchange-documentation.md)
 ## [Accessibility](../accessibility/accessibility.md)
 ### [Accessibility in Exchange admin center](../accessibility/accessibility-in-exchange-admin-center.md)
