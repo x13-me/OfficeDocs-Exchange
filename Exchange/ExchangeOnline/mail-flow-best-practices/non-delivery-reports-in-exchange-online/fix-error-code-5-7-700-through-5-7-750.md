@@ -55,9 +55,7 @@ If you must send email from these low reputation IP addresses before you can pur
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 
-This issue occurs if you
-
-To avoid this error, you can:
+To fix this error, you can:
 
 - **Most common solution**: Add and validate all domains in Office 365 that you use to send email messages. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain).
 
