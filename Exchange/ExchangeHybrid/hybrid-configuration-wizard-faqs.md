@@ -37,7 +37,7 @@ Q: Will this Hybrid Configuration wizard work with Exchange 2007?
 
 Q: Can I opt out of the new Hybrid Configuration wizard?
 
-> A: No. The new Hybrid Configuration wizard is the only wizard that's supported in Exchange 2010, Exchange 2013 and Exchange 2016 today.
+> A: No. The new Hybrid Configuration wizard is the only supported way in Exchange 2010/2013/2016/2019 to configure hybrid mode.
 
 Q: Can I upgrade my current Exchange 2010 hybrid configuration to Exchange 2013 or Exchange 2016 using the new Hybrid Configuration wizard?
 
