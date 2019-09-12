@@ -284,7 +284,7 @@ Get-OfflineAddressBook | Format-List Name,AddressLists,GeneratingMailbox,IsDefau
 
 ## Use the Exchange Management Shell to create organization mailboxes
 
-Typically, you only need to create multiple arbitration mailbox mailboxes in multi-site Exchange organizations. You can have an organization mailbox in each site, and you can configure shadow distribution for an OAB (so a read only copy of the OAB is stored in all organization mailboxes). For more information, see [Use the Exchange Management Shell to enable shadow distribution for offline address books](#use-the-exchange-management-shell-to-enable-shadow-distribution-for-offline-address-books).
+Typically, you only need to create multiple arbitration mailboxes in multi-site Exchange organizations. You can have an organization mailbox in each site, and you can configure shadow distribution for an OAB (so a read only copy of the OAB is stored in all organization mailboxes). For more information, see [Use the Exchange Management Shell to enable shadow distribution for offline address books](#use-the-exchange-management-shell-to-enable-shadow-distribution-for-offline-address-books).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
