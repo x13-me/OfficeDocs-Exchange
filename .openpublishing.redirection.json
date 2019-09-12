@@ -113,8 +113,18 @@
       },
       {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin",
-      "redirect_document_id": false
+      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+      "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
+        "redirect_document_id": false
       }
     ]
 }
