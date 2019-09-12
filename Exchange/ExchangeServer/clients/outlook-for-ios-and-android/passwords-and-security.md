@@ -89,7 +89,7 @@ There are three ways to remove information from the Office 365-based architectur
 
 The Office 365-based architecture decrypts user passwords in runtime compute memory and then uses the decrypted passwords to connect to Exchange. Since the Office 365-based architecture is connecting to Exchange on behalf of the device to fetch and cache mailbox data, it can continue for a short period until the service detects that Outlook is no longer requesting data.
 
-If a user uninstalls the app from their device without first using the **Delete Account** option, the Office 365-based architecture will stay connected to your Exchange server until the account becomes inactive, as described above in "Account inactivity and flushing passwords from memory." To stop this activity, follow Option 1 or Option 3 from the above FAQ, or block the app, as described in [Blocking Outlook for iOS and Android](manage-devices.md#blockoutlook).
+If a user uninstalls the app from their device without first using the **Delete Account** option, the Office 365-based architecture will stay connected to your Exchange server until the account becomes inactive, as described above in "Account inactivity and flushing passwords from memory." To stop this activity, follow Option 1 or Option 3 from the above FAQ, or block the app, as described in [Blocking Outlook for iOS and Android](manage-devices.md#blocking-outlook-for-ios-and-android).
 
 ### Is a user password less secure in Outlook for iOS and Android than when using other Exchange ActiveSync clients?
 
