@@ -29,17 +29,29 @@ Use the information in the NDR to help you decide how to fix the problem.
 
 ## Why did I get this bounce message?
 
-This issue occurs if you use Rich Text formatting in Outlook messages. The message likely contains at least one attachment, and one of the attachments is likely an email message that also contains at least one attached email message.
+5.0.350 is a generic wrapper that's used by Exchange Online for a wide variety of non-specific errors that are typically returned by the recipient's email organization.
+
+But, if the NDR also contains `x-dg-ref header is too long`, that's a specific problem with a specific solution. This issue occurs if you use Rich Text formatting in Outlook messages. The message likely contains at least one attachment, and one of the attachments is likely an email message that also contains at least one attached email message.
 
 ## I got this bounce message. How do I fix it?
 
-Use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.office.com/article/338A389D-11DA-47FE-B693-CF41F792FEFA).
+If the NDR contains `x-dg-ref header is too long`, use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.office.com/article/338A389D-11DA-47FE-B693-CF41F792FEFA).
+
+Otherwise, forward the NDR to your admin for help.
 
 ## I'm an email admin. How do I fix this?
+
+### x-dg-ref header is too long
 
 In Rich Text formatted messages, the attachment's binary large object (BLOB) becomes part of the header stream in the `X-MS-TNEF-Correlator` header field. If the attachment is too big, the line length of the header field is too long, so the receiving email server will reject the message.
 
 In Exchange Online, you can control TNEF (also known as the Transport Neutral Encapsulation Format, Outlook Rich Text Format, or Exchange Rich Text Format) settings in remote domains, and in the properties of mail contacts or mail users. For more information, see [Message format and transmission in Exchange Online](../message-format-and-transmission.md).
+
+### Other 5.0.350 errors
+
+Typically, there's nothing that Office 365 support can do for you, since the problem lies with the recipient's email system.
+
+The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service. Use this information to help identify the issue, and to see if there's anything you can do to fix the problem.
 
 ## Still need help with error code 550 5.0.350?
 
