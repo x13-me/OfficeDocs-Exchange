@@ -206,6 +206,9 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
    b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
+      > [!NOTE]
+      > You can only install this update if your Windows Server 2016 version is 14393.576 or earlier (circa December, 2016). You can see your Windows Server version by running the **winver** command. If your Windows Server 2016 version is greater than 14393.576, you don't need this update or its replacement [KB3213522](https://support.microsoft.com/help/3213522/cumulative-update-for-windows-10-version-1607-and-windows-server-2016), which was released one week later. <br/><br/> Exchange 2016 Setup looks for the installation of this update, won't allow you to continue if this update is missing, and will clearly inform you if you need it.
+
    c. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
    d. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)

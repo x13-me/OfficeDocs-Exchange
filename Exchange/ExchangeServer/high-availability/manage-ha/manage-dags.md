@@ -507,19 +507,25 @@ When you're ready to restore the DAG member to full production status, including
    Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
    ```
 
-3. To execute the StopDagServerMaintenance.ps1 script, run:
+3. To access the DAG maintenance scripts, run the following command:
 
    ```
-   .\StopDagServerMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
+   CD $ExScripts
+   ```
+   
+4. To execute the StopDagServerMaintenance.ps1 script, run:
+
+   ```
+   .\StopDagServerMaintenance.ps1 -serverName <ServerName>
    ```
 
-4. To enable the transport queues to resume accepting and processing messages, run:
+5. To enable the transport queues to resume accepting and processing messages, run:
 
    ```
    Set-ServerComponentState <ServerName> -Component HubTransport -State Active -Requester Maintenance
    ```
 
-5. To resume transport activity, run:
+6. To resume transport activity, run:
 
    ```
    Restart-Service MSExchangeTransport
