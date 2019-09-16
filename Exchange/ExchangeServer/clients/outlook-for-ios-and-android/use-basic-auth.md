@@ -36,7 +36,7 @@ The following environments will take advantage of this Office 365-based architec
 
 - When hybrid Modern Authentication has not been enabled between Exchange 2013, 2016, or 2019 on-premises and Office 365
 
-<image>
+...place image here...
 
 Data passing from Exchange Online to the Outlook app is passed via a TLS-secured connection. The protocol translator running on Azure serves to route data, commands and notifications, but has no ability to read the data itself.
 
@@ -88,3 +88,5 @@ The following features are not support for on-premises mailboxes using basic aut
 - Add-ins
 
 - Interesting Calendars
+
+- Avatar support
