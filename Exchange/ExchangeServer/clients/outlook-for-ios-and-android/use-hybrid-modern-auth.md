@@ -235,13 +235,15 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Shared calendar access and Delegate calendar access
 
+- Shared mailbox data access
+
 - Cortana Time to Leave
 
 - Calendar attachments
 
 - Task management with Microsoft To-Do
 
-- Favorite Folders
+- Favorite People with Notifications
 
 - Add-ins
 
