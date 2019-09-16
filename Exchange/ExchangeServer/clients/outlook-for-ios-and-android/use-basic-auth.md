@@ -32,9 +32,9 @@ The following environments will take advantage of this Office 365-based architec
 
 - In Exchange Server 2010 environments
 
-- When a hybrid relationship with Office 365 has not been configured
+- When a hybrid relationship between Exchange 2013, 2016, or 2019 on-premises and Office 365 has not been configured
 
-- When hybrid Modern Authentication has not been enabled
+- When hybrid Modern Authentication has not been enabled between Exchange 2013, 2016, or 2019 on-premises and Office 365
 
 <image>
 
