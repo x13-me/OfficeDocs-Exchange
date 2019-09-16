@@ -5,7 +5,7 @@ ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8c566e98-72d8-4174-87fb-d0771c14f0dd
-ms.date: 7/5/2018
+ms.date:
 title: Managing devices for Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -65,15 +65,17 @@ After the remote wipe command is requested by the administrator, the wipe happen
 
 Since Outlook for iOS and Android appears as a single mobile device association under a user's mobile devices in Exchange, a remote wipe command will remove data and delete sync relationships from all devices running Outlook (iPhone, iPad, Android) associated with that user.
 
+As a remote wipe action deletes the synchronization profile, when the user adds his or her account to Outlook for iOS and Android, a new Device ID is generated and reported to Exchange on-premises.
+
 > [!NOTE]
-> Due to the cloud architecture behind Outlook for iOS and Android, the result of a remote device wipe is not reported back to Exchange. Even when the wipe is successful, the status will display as **Pending**.
+> Due to the Office 365-based architecture, the result of a remote device wipe is not reported back to Exchange. Even when the wipe is successful, the status will display as **Pending**.
 
 ## Device access policy
 
 Outlook for iOS and Android should be enabled by default, but in some existing Exchange on-premises environments the app may be blocked for a variety of reasons. Once an organization decides to standardize how users access Exchange data and use Outlook for iOS and Android as the only email app for end users, you can configure blocks for other email apps running on users' iOS and Android devices. You have two options for instituting these blocks within Exchange on-premises: the first option blocks all devices and only allows usage of Outlook for iOS and Android; the second option allows you to block individual devices from using the native Exchange ActiveSync apps.
 
 > [!NOTE]
-> Because device IDs are not governed by any *physical device* ID, they can change without notice. When this happens, it can cause unintended consequences when device IDs are used for managing user devices, as existing 'allowed' devices may be unexpectedly blocked or quarantined by Exchange. Therefore, we recommend administrators only set mobile device access policies that allow/block devices based on device type or device model.
+> Because device IDs are not governed by any *physical device* ID, they can change without notice. When this happens, it can cause unintended consequences when device IDs are used for managing user devices, as existing 'allowed' devices may be unexpectedly blocked or quarantined by Exchange. Therefore, Microsoft recommends administrators only set mobile device access policies that allow/block devices based on device type or device model.
 
 #### Option 1: Block all email apps except Outlook for iOS and Android
 
