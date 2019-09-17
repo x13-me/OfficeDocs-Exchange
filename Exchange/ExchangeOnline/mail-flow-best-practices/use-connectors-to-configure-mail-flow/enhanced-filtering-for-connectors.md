@@ -26,12 +26,13 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 - Hybrid environments (e.g., on-premises Exchange)
 
-Enhanced Filtering for Connectors allows you to filter email based on the actual source of messages that arrive over the inbound connector.
+Enhanced Filtering for Connectors allows you to filter email based on the actual source of messages that arrive over the inbound connector. For more information about connectors in Exchange Online, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
 
-   > [!NOTE]
-   > The most common scenario that Enhanced Filtering is designed for is the Hybrid environments; however, the mail destined for on-premise mailboxes will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
+## Scenarios
 
-For more information about connectors in Exchange Online, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
+The most common scenario that Enhanced Filtering is designed for is the Hybrid environments; however, the mail destined for on-premise mailboxes will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
+
+Enhanced Filtering for Connectors is meant to help customers see the value of EOP and ATP. As suggested above, the ultimate recommendation we have for any customer who has enabled Enhanced Filtering is to actually move the MX record over to Office 365 once testing is done. Although, it is possible to keep Enhanced Filtering enabled as a permanent solution, it is not recommended. Skip listing IP addresses actually adds more complexity to your environment and sending the mail directly to Office 365 reduces that complexity.
 
 ## About complex routing
 

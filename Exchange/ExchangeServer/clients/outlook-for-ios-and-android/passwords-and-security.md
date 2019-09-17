@@ -40,7 +40,7 @@ Furthermore, if you connect and synchronize email, calendars, and other email-re
 
 ## Account inactivity and flushing passwords from memory
 
-After three days of inactivity, the Office 365-based architecture will flush a decrypted password from memory. With the decrypted password flushed, the Office 365-based architecture is unable to access a user's mailbox. The encrypted password remains stored in the Office 365-based architecture, but decrypting it again isn't possible without the device key, which is only available from the user's device.
+After three days of inactivity, the Office 365-based architecture will flush a decrypted password from memory. With the decrypted password flushed, the Office 365-based architecture is unable to access a user's mailbox on-premises. The encrypted password remains stored in the Office 365-based architecture, but decrypting it again isn't possible without the device key, which is only available from the user's device.
 
 There are three ways a user account can become inactive:
 
@@ -53,9 +53,9 @@ There are three ways a user account can become inactive:
 > [!NOTE]
 > Outlook will not become inactive simply because the user does not open the app for some time, such as over a weekend or while on vacation. As long as background app refresh is enabled (which is the default setting for Outlook for iOS and Android), functions like push notifications and background synchronization of email will count as activity.
 
- **Flushing encrypted password and message cache from hard disk**
+ **Flushing encrypted password and synchronized mailbox datam from Office 365**
 
-The Office 365-based architecture flushes, or deletes, inactive accounts on a weekly schedule. After a user account becomes inactive, the Office 365-based architecture will flush both the encrypted password and all of the user's cached mailbox content out of the service.
+The Office 365-based architecture flushes, or deletes, inactive accounts on a weekly schedule. After a user account becomes inactive, the Office 365-based architecture will flush both the encrypted password and all of the user's synchronized mailbox content out of the service.
 
  **Device and service security combination**
 
@@ -77,13 +77,7 @@ All communication between the Outlook app and the Office 365-based architecture 
 
 ### How do I remove a user's credentials and mailbox information from the Office 365-based architecture?
 
-There are three ways to remove information from the Office 365-based architecture:
-
-- Option 1: Initiate a Remote Wipe for each user who has used the app to connect to Exchange.
-
-- Option 2: Have all users delete Outlook for iOS and Android. All data will be removed from the Office 365-based architecture in approximately 3-7 days.
-
-- Option 3: Have users remove their accounts from the Outlook app, and then delete the app from their devices. In the app, have users go to **Settings**, then tap **Account Settings**, then **Select an Account**, and then tap **Delete Account**.
+Have the user uninstall Outlook for iOS and Android on all devices. All data will be removed from the Office 365-based architecture in approximately 3-7 days.
 
 ### The app is closed or uninstalled, but I still see it connecting to my Exchange server. How is this happening?
 
