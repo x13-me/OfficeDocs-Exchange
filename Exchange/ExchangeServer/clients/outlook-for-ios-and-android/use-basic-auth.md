@@ -4,8 +4,6 @@ description: 'Summary: This article contains architectural and security informat
 ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
-ms.assetid: 4a124605-5824-472b-9865-3452c689be6d
-ms.date:
 title: Using Basic authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -36,7 +34,7 @@ The following environments will take advantage of this Office 365-based architec
 
 - When hybrid Modern Authentication has not been enabled between Exchange 2013, 2016, or 2019 on-premises and Office 365
 
-...place image here...
+![Basic authentication in Outlook for iOS and Android](../../media/outlook_mobile_basic_auth.png)
 
 Data passing from Exchange Online to the Outlook app is passed via a TLS-secured connection. The protocol translator running on Azure serves to route data, commands and notifications, but has no ability to read the data itself.
 
