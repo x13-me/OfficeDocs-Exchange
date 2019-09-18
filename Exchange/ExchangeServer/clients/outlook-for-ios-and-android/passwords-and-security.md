@@ -4,8 +4,6 @@ description: 'Summary: This article describes how passwords and security work in
 ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
-ms.assetid: 82f23054-5433-41da-ac5b-90cd081aa993
-ms.date:
 title: Passwords and security in Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -53,7 +51,7 @@ There are three ways a user account can become inactive:
 > [!NOTE]
 > Outlook will not become inactive simply because the user does not open the app for some time, such as over a weekend or while on vacation. As long as background app refresh is enabled (which is the default setting for Outlook for iOS and Android), functions like push notifications and background synchronization of email will count as activity.
 
- **Flushing encrypted password and synchronized mailbox datam from Office 365**
+ **Flushing encrypted password and synchronized mailbox data from Office 365**
 
 The Office 365-based architecture flushes, or deletes, inactive accounts on a weekly schedule. After a user account becomes inactive, the Office 365-based architecture will flush both the encrypted password and all of the user's synchronized mailbox content out of the service.
 
