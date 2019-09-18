@@ -5,7 +5,6 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
-ms.date:
 title: Using hybrid Modern Authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -25,7 +24,7 @@ Outlook for iOS and Android is a cloud-backed application. This means your exper
 
 For Exchange Server mailboxes, Outlook for iOS and Android's new architecture is similar in design to its legacy architecture. However, as the service is now built directly into the Microsoft Cloud (using Office 365 and Microsoft Azure) customers receive the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
 
-![Hybrid modern authentication in Outlook for iOS and Android](../../media/a2f99c31-cd75-41e7-bf73-bf989976bccd.PNG)
+![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
 
 Data passing from Exchange Online to the Outlook app is passed via a TLS-secured connection. The protocol translator running on Azure serves to route data, commands and notifications, but has no ability to read the data itself.
 
