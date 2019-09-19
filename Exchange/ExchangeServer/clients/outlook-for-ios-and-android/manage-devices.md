@@ -4,8 +4,6 @@ description: 'Summary: This article describes how to manage mobile devices with 
 ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
-ms.assetid: 8c566e98-72d8-4174-87fb-d0771c14f0dd
-ms.date:
 title: Managing devices for Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
