@@ -28,6 +28,10 @@ Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
 
+## Exchange 2019 CU3 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU3.
+
 ## Exchange 2019 CU2 Active Directory schema changes
 
 No changes are made to the Active Directory schema in Exchange 2019 CU2.
@@ -1466,6 +1470,10 @@ The following table lists the extended rights that are added when you install Ex
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
+
+## Exchange 2016 CU14 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 in CU14.
 
 ## Exchange 2016 CU13 Active Directory schema changes
 
