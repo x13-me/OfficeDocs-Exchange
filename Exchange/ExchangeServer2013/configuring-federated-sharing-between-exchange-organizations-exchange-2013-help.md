@@ -162,4 +162,4 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      Modify the *LegacyExchangeDN* parameter on all mail-enabled objects in the Exchange 2003 organization that reference the remote Exchange 2013 organization. Change the existing organizational unit (OU) value for the mail-enabled object to **External (FYDIBOHF25SPDLT)**. For example, **LegacyExchangeDN=/o=First Organization/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=User Name**.
 
-     To modify mail-enabled objects in the Exchange 2003 organization, you can use either the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://go.microsoft.com/fwlink/?linkid=294644) or the [Microsoft Exchange Server LegacyDN Utility](http://go.microsoft.com/fwlink/?linkid=294643).
+     To modify mail-enabled objects in the Exchange 2003 organization, you can use the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://go.microsoft.com/fwlink/?linkid=294644).
