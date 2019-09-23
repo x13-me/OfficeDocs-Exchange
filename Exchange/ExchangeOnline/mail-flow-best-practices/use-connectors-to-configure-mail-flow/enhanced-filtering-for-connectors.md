@@ -63,7 +63,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 - To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-- The account you use for the procedures needs to be an Office 365 global administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+- The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
 ### Use the Security & Compliance Center to configure Enhanced Filtering for Connectors on an inbound connector
 
