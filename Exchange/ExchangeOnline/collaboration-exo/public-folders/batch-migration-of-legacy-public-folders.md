@@ -531,6 +531,12 @@ For detailed syntax and parameter information, see the following topics:
 
 [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
 
+6. Proceed to unlock the public folders:
+
+    ```
+    Get-Mailbox -ResultSize unlimited | %{Set-Mailbox $_.UserPrincipalName -PublicFolder -IsExcludedFromServingHierarchy $False}
+    ```
+
 ## How do I know this worked?
 
 In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you were instructed to take snapshots of the public folder structure, statistics, and permissions before the migration began. The following steps will help verify that your public folder migration was successful by taking the same snapshots after the migration is complete. You can then compare the data in both files to verify success.
