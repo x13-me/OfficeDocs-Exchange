@@ -89,7 +89,7 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -E
 This example finds all the role assignments that grant permissions to the user Kim Akers.
 
 ```powershell
-Get-ManagementRoleAssignment -GetEffectiveUsers | Where { Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "Kim Akers"}.EffectiveUserName -Eq "Kim Akers"}
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "Kim Akers"}
 ```
 
 If you want to change what properties are returned in the list or export the list to a CSV file, see Use the Shell to customize output and display it later in this topic.

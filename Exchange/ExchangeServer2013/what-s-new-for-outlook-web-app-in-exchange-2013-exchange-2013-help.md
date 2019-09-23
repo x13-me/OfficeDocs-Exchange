@@ -259,7 +259,7 @@ To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA
 
 ## OWA for Android
 
-OWA for Android lets you interact with your Office 365 mailbox to get to your email, Calendar, and People from anywhere using your Android phone running Kit Kat 4.4 or higher. You can download the OWA for Android app at the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.mowa%26referrer=utm_source=office365blog%26utm_medium=blog%26utm_content=launchdaypost%26utm_campaign=launchday)
+OWA for Android lets you interact with your Office 365 mailbox to get to your email, Calendar, and People from anywhere using your Android phone running Kit Kat 4.4 or higher. You can download the OWA for Android app at the [Google Play Store](https://play.google.com/store)
 
 With the OWA for Android app, you can:
 

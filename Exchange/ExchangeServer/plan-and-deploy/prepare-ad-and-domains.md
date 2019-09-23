@@ -102,7 +102,7 @@ When you prepare Active Directory for Exchange, the following requirements apply
 
 - Your account needs to be a member of the Enterprise Admins security group. If you skipped Step 1 because you want the _/PrepareAD_ command to extend the schema, the account also needs to be a member of the Schema Admins security group.
 
-- The computer needs to be needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
+- The computer needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
 
 - Wait until Active Directory has finished replicating the schema changes from Step 1 to all domain controllers before you try to prepare Active Directory.
 
@@ -227,6 +227,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU3|17001|13237|16754|
 |Exchange 2019 CU2|17001|13237|16754|
 |Exchange 2019 CU1|17000|13236|16752|
 |Exchange 2019 RTM|17000|13236|16751|
@@ -238,6 +239,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU14|15332|13237|16217|
 |Exchange 2016 CU13|15332|13237|16217|
 |Exchange 2016 CU12|15332|13236|16215|
 |Exchange 2016 CU11|15332|13236|16214|
