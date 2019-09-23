@@ -4,7 +4,7 @@ description: 'How to leverage S/MIME to sign and encrypt messages when using Out
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
-title: Outlook for iOS sensitive labeling, Outlook for Android sensitive labeling, Outlook for iOS S/MIME, Outlook for Android S/MIME
+title: Outlook for iOS S/MIME, Outlook for Android S/MIME
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
