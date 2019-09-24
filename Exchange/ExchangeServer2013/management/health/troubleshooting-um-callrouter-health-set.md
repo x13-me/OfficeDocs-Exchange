@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting UM.CallRouter Health Set
 ms:assetid: 444a9038-0952-4823-98fb-99fa59f4a378
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.um.callrouter(v=EXCHG.150)
 ms:contentKeyID: 49720778
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -151,7 +151,7 @@ Renew the UM Call Router service certificate on the CAS.
 
 7. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

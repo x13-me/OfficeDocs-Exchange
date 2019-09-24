@@ -8,7 +8,7 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms.collection: exchange-server
 ms.date: 7/3/2018
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 audience: ITPro
 title: Enable the MRS Proxy endpoint for remote moves
@@ -80,7 +80,7 @@ This example enables the MRS Proxy endpoint in Client Access services on all Mai
 Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/library/35871cc3-6e8f-48bc-86ed-8703c0e178f3.aspx).
+For detailed syntax and parameter information, see [Set-WebServicesVirtualDirectory](https://technet.microsoft.com/library/35871cc3-6e8f-48bc-86ed-8703c0e178f3.aspx).
 
 ## How do you know this worked?
 
@@ -106,4 +106,4 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
 
   To run this command successfully, the MRS Proxy endpoint must be enabled.
 
-  For detailed syntax and parameter information, see [Test-MigrationServerAvailability](http://technet.microsoft.com/library/a0959dbe-94ae-4f2e-8e2c-e5d5bd5e1521.aspx).
+  For detailed syntax and parameter information, see [Test-MigrationServerAvailability](https://technet.microsoft.com/library/a0959dbe-94ae-4f2e-8e2c-e5d5bd5e1521.aspx).

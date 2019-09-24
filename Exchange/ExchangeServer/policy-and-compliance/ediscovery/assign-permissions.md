@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Assign eDiscovery permissions in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -72,7 +72,7 @@ This example add the members of the mail-enabled security group named Contoso Co
 Add-RoleGroupMember -Identity "Discovery Management" -Member "Contoso Compliance Management"
 ```
 
-For more information, see [Add-RoleGroupMember](http://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+For more information, see [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
 
 ## How do you know this worked?
 

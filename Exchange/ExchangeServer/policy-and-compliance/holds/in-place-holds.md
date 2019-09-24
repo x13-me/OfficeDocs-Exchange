@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Create or remove an In-Place Hold
 ms.collection: exchange-server
 audience: ITPro
@@ -92,7 +92,7 @@ This example places an In-Place Hold on all public folders in the organization, 
 New-MailboxSearch -Name "Hold for Public Folders" -AllPublicFolderSources $true -AllSourceMailboxes $false -ItemHoldPeriod 2555 -InPlaceHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
 
 ### How do you know this worked?
 
@@ -142,7 +142,7 @@ This example first disables In-Place Hold named Hold-CaseId012 and then removes 
 Set-MailboxSearch "Hold-CaseId012" -InPlaceHoldEnabled $false; Remove-MailboxSearch "Hold-CaseId012"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailboxsearch](http://technet.microsoft.com/library/23201ff0-e30a-4efd-9384-ab0af5815701.aspx).
+For detailed syntax and parameter information, see [Set-Mailboxsearch](https://technet.microsoft.com/library/23201ff0-e30a-4efd-9384-ab0af5815701.aspx).
 
 ### How do you know this worked?
 

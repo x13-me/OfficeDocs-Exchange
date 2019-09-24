@@ -5,10 +5,10 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Recoverable Items folder in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -177,7 +177,7 @@ If the Recoverable Items folder for a mailbox reaches the Recoverable Items quot
 
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
 
-If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
 
 ## More information
 

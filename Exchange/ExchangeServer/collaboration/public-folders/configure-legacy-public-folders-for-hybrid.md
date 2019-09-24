@@ -6,7 +6,7 @@ ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
-ms.reviewer: 
+ms.reviewer:
 ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
@@ -48,9 +48,9 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 ## Step 1: What do you need to know before you begin?
 
-- These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' Autodiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](http://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx).
+- These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' Autodiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](https://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx).
 
-- These instructions assume that Outlook Anywhere is enabled and functional on the on-premises legacy Exchange servers. For information on how to enable Outlook Anywhere, see [Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
+- These instructions assume that Outlook Anywhere is enabled and functional on the on-premises legacy Exchange servers. For information on how to enable Outlook Anywhere, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
 
 - Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
 
@@ -64,7 +64,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
   - To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-  - To download the November 2012 Outlook update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](http://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007) and download in preferred language.
+  - To download the November 2012 Outlook update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007) and download in preferred language.
 
 - Outlook 2016 for Mac and Outlook for Mac for Office 365 are supported for cross-premises public folders if the following conditions are true:
 

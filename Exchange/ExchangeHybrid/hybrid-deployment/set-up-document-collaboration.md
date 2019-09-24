@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 799518aa-7cfe-4708-92ee-98057ff168f5
-ms.reviewer: 
+ms.reviewer:
 description: "Summary: How to allow your on-premises Exchange Server 2016 users to take advantage of using document collaboration with OneDrive for Business and SharePoint Online while in a hybrid configuration."
 ---
 
@@ -62,10 +62,10 @@ Verify that the following prerequisite steps have been completed, and then use t
 
 - Exchange 2016 must be installed in your on-premises organization. Exchange 2016 can coexist with earlier versions of Exchange, but document collaboration will only work for mailboxes on an Exchange 2016 server.
 
-- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](http://technet.microsoft.com/library/077acd5a-7af0-48f8-bc68-123aef416a93.aspx) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
+- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://technet.microsoft.com/library/077acd5a-7af0-48f8-bc68-123aef416a93.aspx) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
-    > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](http://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+    > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
 
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Office 365 portal and selecting the **Edit** button.
 

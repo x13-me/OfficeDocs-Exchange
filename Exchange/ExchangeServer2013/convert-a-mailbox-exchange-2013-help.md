@@ -4,8 +4,8 @@ TOCTitle: Convert a mailbox
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 mtps_version: v=EXCHG.150
 ---
@@ -37,7 +37,7 @@ Note that if your organization uses a hybrid Exchange environment, you need to m
 
 Estimated time to complete: 5 minutes.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
 This example converts the shared mailbox, MarketingDept1 to a user mailbox.
 
@@ -55,7 +55,7 @@ You can use the following values for the _Type_ parameter:
 
 - Shared
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## How do you know this worked?
 
@@ -67,7 +67,7 @@ Get-Mailbox -Identity MarketingDept1 | Format-List RecipientTypeDetails
 
 The value for _RecipientTypeDetails_ should be _UserMailbox_.
 
-For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

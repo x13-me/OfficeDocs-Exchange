@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: 'FAQ: Public folders'
 ms.collection: exchange-server
 audience: ITPro
@@ -21,7 +21,7 @@ To learn more about public folders, see [Public folders](public-folders.md).
 
 ## FAQ about public folder migration
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
+This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
 
 ### What are the supported public folder migration scenarios?
 
@@ -57,7 +57,7 @@ You can force a delta sync to occur before finalization (prior to locking the so
 Resume-PublicFolderMigrationRequest \PublicFolderMigration
 ```
 
-For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](http://technet.microsoft.com/library/af8602ce-0dba-4f89-b993-0ba02624e567.aspx).
+For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/library/af8602ce-0dba-4f89-b993-0ba02624e567.aspx).
 
 ### For the migration of a geo-distributed hierarchy, how can I make sure that the public folders are created in the location nearest to the target users?
 
@@ -112,7 +112,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](http://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -130,11 +130,11 @@ There's no longer a database-level setting. Instead, Exchange has a mailbox-leve
 
 ## How are public folder metric tools being used in Exchange?
 
-You can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+You can use [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](http://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
 
 ## Does mailbox audit logging work against public folders?
 
@@ -154,7 +154,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
+In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
 
 ```
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
@@ -162,7 +162,7 @@ Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administ
 
 ## If the master hierarchy goes down, what's the user impact?
 
-If the master hierarchy public folder mailbox goes down, users can view but not write to public folders. To help prevent the hierarchy from going down, we recommend that you include your public folders in a database availability group (DAG). To learn about DAGs, see [Database Availability Groups](http://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
+If the master hierarchy public folder mailbox goes down, users can view but not write to public folders. To help prevent the hierarchy from going down, we recommend that you include your public folders in a database availability group (DAG). To learn about DAGs, see [Database Availability Groups](https://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
 
 ## Can you change which public folder mailbox is the master hierarchy mailbox?
 

@@ -4,8 +4,8 @@ TOCTitle: Configure email forwarding for a mailbox
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 mtps_version: v=EXCHG.150
 ---
@@ -22,7 +22,7 @@ If your organization uses an on-premises Exchange or hybrid Exchange environment
 
 You can use the EAC set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" entry in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Enable and configure POP3 on an Exchange server
 ms.collection: exchange-server
 audience: ITPro
@@ -144,7 +144,7 @@ Set-PopSettings -ExternalConnectionSettings "mail.contoso.com:995:SSL","mail.con
 
 **Notes**:
 
-- For detailed syntax and parameter information, see [Set-PopSettings](http://technet.microsoft.com/library/307a1dd0-3a4c-4431-bd9f-35aa5cb57aad.aspx).
+- For detailed syntax and parameter information, see [Set-PopSettings](https://technet.microsoft.com/library/307a1dd0-3a4c-4431-bd9f-35aa5cb57aad.aspx).
 
 - The external POP3 server FQDN that you configure needs to have a corresponding record in your public DNS, and the TCP port (110 or 995) needs to be allowed through your firewall to the Exchange server.
 
@@ -162,7 +162,7 @@ To verify that you've successfully configured the POP3 settings for external cli
 Get-PopSettings | Format-List *ConnectionSettings,*Bindings,X509CertificateName
 ```
 
-For more information, see [Get-POPSettings](http://technet.microsoft.com/library/30bd001f-d923-4936-a997-f005a392302e.aspx).
+For more information, see [Get-POPSettings](https://technet.microsoft.com/library/30bd001f-d923-4936-a997-f005a392302e.aspx).
 
 ## Step 3: Restart the POP3 services
 
@@ -213,7 +213,7 @@ To verify that you have enabled and configured POP3 on the Exchange server, perf
 
 3. You can test POP3 client connectivity to the Exchange server by using the following methods:
 
-   - **Internal clients**: Use the **Test-PopConnectivity** cmdlet. For example, `Test-PopConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-PopConnectivity](http://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx).
+   - **Internal clients**: Use the **Test-PopConnectivity** cmdlet. For example, `Test-PopConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-PopConnectivity](https://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx).
 
      **Note**: The _Lightmode_ switch tells the command test POP3 logons to the server. To test sending (SMTP) and receiving (POP3) a message, you need to configure the authenticated SMTP settings as described in [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
 

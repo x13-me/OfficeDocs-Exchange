@@ -4,8 +4,8 @@ TOCTitle: Messaging Records Management Procedures
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: bc2ff408-4a2b-4202-9515-e3e922a6320d
 mtps_version: v=EXCHG.150
 ---
@@ -20,6 +20,6 @@ _**Applies to:** Exchange Server 2013_
 
 [Apply a retention policy to mailboxes](apply-retention-policy-exchange-2013-help.md)
 
-[Configure the Managed Folder Assistant](http://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx)
+[Configure the Managed Folder Assistant](https://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx)
 
 [Place a mailbox on retention hold](mailbox-retention-hold-exchange-2013-help.md)

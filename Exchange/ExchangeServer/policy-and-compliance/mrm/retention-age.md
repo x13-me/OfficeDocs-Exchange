@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 ms.date: 7/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: How retention age is calculated in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -51,4 +51,4 @@ Items in mailboxes placed on Retention Hold aren't removed until the hold is rem
 
 If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are removed from the Inbox but preserved in the Recoverable Items folder until the mailbox is removed from [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
 
-In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](http://technet.microsoft.com/library/18405ea2-7ccc-475e-bd84-8b040e17bf44.aspx) for more information.
+In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](https://technet.microsoft.com/library/18405ea2-7ccc-475e-bd84-8b040e17bf44.aspx) for more information.

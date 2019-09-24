@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 83358884-6036-4e91-87a8-35200541874d
 ms.date: 7/11/2018
-ms.reviewer: 
+ms.reviewer:
 title: Procedures for messages in queues
 ms.collection: exchange-server
 audience: ITPro
@@ -104,7 +104,7 @@ This example removes the message with the message ID 3 from the Unreachable queu
 Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
 ```
 
-For more information, see [Remove-Message](http://technet.microsoft.com/library/15d5987b-bedd-437e-b86a-6b0e80619fde.aspx)
+For more information, see [Remove-Message](https://technet.microsoft.com/library/15d5987b-bedd-437e-b86a-6b0e80619fde.aspx)
 
 ### How do you know this worked?
 
@@ -124,7 +124,7 @@ To verify that you have successfully removed messages from queues, use either of
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](http://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
+    For more information, see [Get-Message](https://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
 
 ## Suspend messages in queues
 <a name="Suspend"> </a>
@@ -175,7 +175,7 @@ This example suspends all messages in all queues on the local server.
 Get-Queue | Get-Message | Suspend-Message
 ```
 
-For more information, see [Suspend-Message](http://technet.microsoft.com/library/3c35583b-8691-4ec8-83e3-daa3090a4185.aspx).
+For more information, see [Suspend-Message](https://technet.microsoft.com/library/3c35583b-8691-4ec8-83e3-daa3090a4185.aspx).
 
 ### How do you know this worked?
 
@@ -195,7 +195,7 @@ To verify that you have successfully suspended messages in queues, use either of
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](http://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
+    For more information, see [Get-Message](https://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
 
 ## Resume messages in queues
 <a name="Resume"> </a>
@@ -262,7 +262,7 @@ To verify that you have successfully resumed messages in queues, use either of t
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](http://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
+    For more information, see [Get-Message](https://technet.microsoft.com/library/d6020f77-c852-46f6-b7c5-5ca6feae0fdf.aspx).
 
 If you can't find the messages in any queues on the server, this likely indicates the message was successfully delivered to the next hop.
 
@@ -295,7 +295,7 @@ This example redirects messages from all delivery queues on the server named Mai
 Redirect-Message -Server Mailbox01 -Target Mailbox02.contoso.com
 ```
 
-For more information, see [Redirect-Message](http://technet.microsoft.com/library/248138e5-6da4-4652-9cde-f8060c4a854c.aspx).
+For more information, see [Redirect-Message](https://technet.microsoft.com/library/248138e5-6da4-4652-9cde-f8060c4a854c.aspx).
 
 ### How do you know this worked?
 

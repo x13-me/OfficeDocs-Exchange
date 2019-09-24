@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery
 ms.collection: exchange-server
 audience: ITPro
@@ -103,7 +103,7 @@ When Microsoft Lync Server 2013 or Skype for Business Server 2015 is used in an 
 ## Recovery Database
 <a name="RecDat"> </a>
 
-A recovery database is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from a recovery database. After extraction, the data can be exported to a folder or merged into an existing mailbox. Recovery databases enable you to recover data from a backup or copy of a database without disturbing user access to current data.
+A recovery database is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](https://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from a recovery database. After extraction, the data can be exported to a folder or merged into an existing mailbox. Recovery databases enable you to recover data from a backup or copy of a database without disturbing user access to current data.
 
 Using a recovery database for a Mailbox database from any previous version of Exchange isn't supported. In addition, the target mailbox used for data merges and extraction must be in the same Active Directory forest as the database mounted in the recovery database.
 
@@ -114,7 +114,7 @@ For more information, see [Recovery databases](recovery-databases.md). For detai
 
 Database portability is a feature that enables an Exchange mailbox database to be moved to and mounted on any other Exchange Mailbox server in the same organization. By using database portability, reliability is improved by removing several error-prone, manual steps from the recovery processes. In addition, database portability reduces the overall recovery times for various failure scenarios.
 
-For more information, see [Database Portability](http://technet.microsoft.com/library/387b727a-ce51-4910-b5c4-613c693fa5bd.aspx). For detailed steps to use database portability, see [Move a mailbox database using database portability](database-portability.md).
+For more information, see [Database Portability](https://technet.microsoft.com/library/387b727a-ce51-4910-b5c4-613c693fa5bd.aspx). For detailed steps to use database portability, see [Move a mailbox database using database portability](database-portability.md).
 
 ## Dial Tone Portability
 <a name="DTPort"> </a>

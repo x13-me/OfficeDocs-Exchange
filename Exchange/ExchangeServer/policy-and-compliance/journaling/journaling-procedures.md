@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Journaling procedures in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -169,7 +169,7 @@ New-JournalRule -Name "Regulation 123" -JournalEmailAddress "Journal Mailbox" -R
 
  **Note**: To create a journal rule that applies to all recipients, don't use the _Recipient_ parameter.
 
-For detailed syntax and parameter information, see [New-JournalRule](http://technet.microsoft.com/library/fcad9ef1-b3f2-442d-a1a7-cd1bbe442054.aspx).
+For detailed syntax and parameter information, see [New-JournalRule](https://technet.microsoft.com/library/fcad9ef1-b3f2-442d-a1a7-cd1bbe442054.aspx).
 
 #### How do you know this worked?
 
@@ -248,7 +248,7 @@ No additional settings are available when you modify a journal rule. They're the
 
     You can't use the **Set-Journal** cmdlet to enable or disable the rule (there's no _Enabled_ parameter). To enable or disable the rule, you use the **Enable-JournalRule** and **Disable-JournalRule** cmdlets as described in the [Enable or disable journal rules](#enable-or-disable-journal-rules) section.
 
-    For detailed syntax and parameter information, see [Set-JournalRule](http://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx).
+    For detailed syntax and parameter information, see [Set-JournalRule](https://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx).
 
 ### Remove journal rules
 
@@ -272,7 +272,7 @@ This example removes the journal rule named Brokerage Journal Rule.
 Remove-JournalRule "Brokerage Journal Rule"
 ```
 
-For detailed syntax and parameter information, see [Remove-JournalRule](http://technet.microsoft.com/library/7cb9d691-2b0c-4f64-982d-ce69f3c3e757.aspx).
+For detailed syntax and parameter information, see [Remove-JournalRule](https://technet.microsoft.com/library/7cb9d691-2b0c-4f64-982d-ce69f3c3e757.aspx).
 
 #### How do you know this worked?
 
@@ -372,7 +372,7 @@ Journal report decryption allows **premium journaling** to save a clear-text cop
 
 To enable journal report decryption, perform the following steps:
 
-1. Configure the AD RMS super users group. For instructions, see [Add the Federation Mailbox to the AD RMS Super Users Group](http://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).
+1. Configure the AD RMS super users group. For instructions, see [Add the Federation Mailbox to the AD RMS Super Users Group](https://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).
 
 2. Run the following command in the Exchange Management Shell:
 
@@ -380,4 +380,4 @@ To enable journal report decryption, perform the following steps:
    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
    ```
 
-For more information, see [Enable or Disable Journal Report Decryption](http://technet.microsoft.com/library/1dedbe73-2c1a-4b14-8799-5091aaec7965.aspx).
+For more information, see [Enable or Disable Journal Report Decryption](https://technet.microsoft.com/library/1dedbe73-2c1a-4b14-8799-5091aaec7965.aspx).

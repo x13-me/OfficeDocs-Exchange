@@ -4,8 +4,8 @@ TOCTitle: Configure global address list properties
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 mtps_version: v=EXCHG.150
 ---
@@ -20,7 +20,7 @@ This topic explains how to modify the settings of a global address list (GAL).
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
 - You can't edit the settings of the default GAL.
 
@@ -48,4 +48,4 @@ This example changes the recipients who will be included in the Fourth Coffee gl
 Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter {Company -eq "Fourth Coffee"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](http://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).

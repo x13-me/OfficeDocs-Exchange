@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Move a mailbox database using database portability
 ms.collection: exchange-server
 audience: ITPro
@@ -69,7 +69,7 @@ Database portability can help reduce overall recovery times for some failure sce
    Mount-Database <DatabaseName>
    ```
 
-6. After the database is mounted, modify the user account settings with the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet so that the account points to the mailbox on the new mailbox server. To move all of the users from the old database to the new database, use the following syntax.
+6. After the database is mounted, modify the user account settings with the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet so that the account points to the mailbox on the new mailbox server. To move all of the users from the old database to the new database, use the following syntax.
 
    ```
    Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
