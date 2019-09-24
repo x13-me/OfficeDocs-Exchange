@@ -1,6 +1,7 @@
 ---
 audience: ITPro
 localization_priority: Normal
+description: Learn about the conditions and exceptions (predicates) that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.author: dmaguire
 manager: serdars
 ms.topic: article
@@ -66,15 +67,15 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 - **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
 
-   - **The sender is** ( _From_)
+  - **The sender is**(_From_)
 
-   - **The sender is a member of** ( _FromMemberOf_)
+  - **The sender is a member of**(_FromMemberOf_)
 
-   - **The sender address includes** ( _FromAddressContainsWords_)
+  - **The sender address includes**(_FromAddressContainsWords_)
 
-   - **The sender address matches** ( _FromAddressMatchesPatterns_)
+  - **The sender address matches**(_FromAddressMatchesPatterns_)
 
-   - **The sender's domain is** ( _SenderDomainIs_)
+  - **The sender's domain is**(_SenderDomainIs_)
 
 - **Header or envelope** ( `HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
@@ -88,15 +89,15 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 |**The sender is on a recipient's list** <br/><br/> **The sender** \> **is on a recipient's supervision list**|_SenderInRecipientList_ <br/> _ExceptIfSenderInRecipientList_|`SupervisionList`|Messages where the sender is on the recipient's Allow list or Block list.|
 |**The sender's specified properties include any of these words** <br/><br/> **The sender** \> **has specific properties including any of these words**|_SenderADAttributeContainsWords_ <br/> _ExceptIfSenderADAttributeContainsWords_|First property: `ADAttribute` <br/><br/> Second property: `Words`|Messages where the specified Active Directory attribute of the sender contains any of the specified words. <br/><br/> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |**The sender's specified properties match these text patterns** <br/><br/> **The sender** \> **has specific properties matching these text patterns**|_SenderADAttributeMatchesPatterns_ <br/> _ExceptIfSenderADAttributeMatchesPatterns_|First property: `ADAttribute` <br/><br/> Second property: `Patterns`|Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.|
-|**The sender has overridden the Policy Tip** <br/><br/> **The sender** \> **has overridden the Policy Tip**|_HasSenderOverride_ <br/> _ExceptIfHasSenderOverride_|n/a|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md).|
+|**The sender has overridden the Policy Tip** <br/><br/> **The sender** \> **has overridden the Policy Tip**|_HasSenderOverride_ <br/> _ExceptIfHasSenderOverride_|n/a|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md). <br/><br/>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**Sender's IP address is in the range** <br/><br/> **The sender** \> **IP address is in any of these ranges or exactly matches**|_SenderIPRanges_ <br/> _ExceptIfSenderIPRanges_|`IPAddressRanges`|Messages where the sender's IP address matches the specified IP address, or falls within the specified IP address range.|
-|**The sender's domain is** <br/><br/> **The sender** \> **domain is**|_SenderDomainIs_ <br/> _ExceptIfSenderDomainIs_|`DomainName`|Messages where the domain of the sender's email address matches the specified value. <br/><br/> If you need to find sender domains that *contain* the specified domain (for example, any subdomain of a domain), use **The sender address matches** ( _FromAddressMatchesPatterns_) condition and specify the domain by using the syntax: `'@domain\.com$'`.|
+|**The sender's domain is** <br/><br/> **The sender** \> **domain is**|_SenderDomainIs_ <br/> _ExceptIfSenderDomainIs_|`DomainName`|Messages where the domain of the sender's email address matches the specified value. <br/><br/> If you need to find sender domains that *contain* the specified domain (for example, any subdomain of a domain), use **The sender address matches**(_FromAddressMatchesPatterns_) condition and specify the domain by using the syntax: `'@domain\.com$'`.|
 
 ### Recipients
 
 |**Condition or exception in the EAC**|**Condition and exception parameters in Exchange Online PowerShell**|**Property type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**The recipient is** <br/><br/> **The recipient** \> **is this person**|_SentTo_ <br/> _ExceptIfSentTo_|`Addresses`|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message. <br/><br/> **Note**: You can't specify distribution groups, mail-enabled security groups, or Office 365 groups. If you need to take action on messages that are sent to a group, use the **To box contains** ( _AnyOfToHeader_) condition instead.|
+|**The recipient is** <br/><br/> **The recipient** \> **is this person**|_SentTo_ <br/> _ExceptIfSentTo_|`Addresses`|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message. <br/><br/> **Note**: You can't specify distribution groups, mail-enabled security groups, or Office 365 groups. If you need to take action on messages that are sent to a group, use the **To box contains**(_AnyOfToHeader_) condition instead.|
 |**The recipient is located** <br/><br/> **The recipient** \> **is external/external**|_SentToScope_ <br/> _ExceptIfSentToScope_|`UserScopeTo`|Messages that are sent to internal or external recipients.|
 |**The recipient is a member of** <br/><br/> **The recipient** \> **is a member of this group**|_SentToMemberOf_ <br/> _ExceptIfSentToMemberOf_|`Addresses`|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Office 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message. <br/><br/> For more information about using Office 365 groups with this condition, see the Addresses entry in the [Property types](#property-types) section.|
 |**The recipient address includes** <br/><br/> **The recipient** \> **address includes any of these words**|_RecipientAddressContainsWords_ <br/> _ExceptIfRecipientAddressContainsWords_|`Words`|Messages that contain the specified words in the recipient's email address. <br/><br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
@@ -104,7 +105,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 |**The recipient is on the sender's list** <br/><br/> **The recipient** \> **is on the sender's supervision list**|_RecipientInSenderList_ <br/> _ExceptIfRecipientInSenderList_|`SupervisionList`|Messages where the recipient is on the sender's Allow list or Block list.|
 |**The recipient's specified properties include any of these words** <br/><br/> **The recipient** \> **has specific properties including any of these words**|_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|First property: `ADAttribute` <br/><br/> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <br/><br/> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |**The recipient's specified properties match these text patterns** <br/><br/> **The recipient** \> **has specific properties matching these text patterns**|_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|First property: `ADAttribute` <br/><br/> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
-|**A recipient's domain is** <br/><br/> **The recipient** \> **domain is**|_RecipientDomainIs_ <br/> _ExceptIfRecipientDomainIs_|`DomainName`|Messages where the domain of a recipient's email address matches the specified value. <br/><br/> If you need to find recipient domains that *contain* the specified domain (for example, any subdomain of a domain), use **The recipient address matches** ( _RecipientAddressMatchesPatterns_) condition, and specify the domain by using the syntax `'@domain\.com$'`.|
+|**A recipient's domain is** <br/><br/> **The recipient** \> **domain is**|_RecipientDomainIs_ <br/> _ExceptIfRecipientDomainIs_|`DomainName`|Messages where the domain of a recipient's email address matches the specified value. <br/><br/> If you need to find recipient domains that *contain* the specified domain (for example, any subdomain of a domain), use **The recipient address matches**(_RecipientAddressMatchesPatterns_) condition, and specify the domain by using the syntax `'@domain\.com$'`.|
 
 ### Message subject or body
 
@@ -162,7 +163,7 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 |**Condition or exception in the EAC**|**Condition and exception parameters in Exchange Online PowerShell**|**Property type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**The message contains sensitive information** <br/><br/> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <br/><br/> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action.|
+|**The message contains sensitive information** <br/><br/> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <br/><br/> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action. <br/><br/>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**The To box contains** <br/><br/> **The message** \> **To box contains this person**|_AnyOfToHeader_ <br/> _ExceptIfAnyOfToHeader_|`Addresses`|Messages where the **To** field includes any of the specified recipients.|
 |**The To box contains a member of** <br/><br/> **The message** \> **To box contains a member of this group**|_AnyOfToHeaderMemberOf_ <br/> _ExceptIfAnyOfToHeaderMemberOf_|`Addresses`|Messages where the **To** field contains a recipient who is a member of the specified distribution group, mail-enabled security group, or Office 365 group.|
 |**The Cc box contains** <br/><br/> **The message** \> **Cc box contains this person**|_AnyOfCcHeader_ <br/> _ExceptIfAnyOfCcHeader_|`Addresses`|Messages where the **Cc** field includes any of the specified recipients.|
@@ -186,8 +187,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 |**Condition or exception in the EAC**|**Condition and exception parameters in Exchange Online PowerShell**|**Property type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |**The message type is** <br/><br/> **The message properties** \> **include the message type**|_MessageTypeMatches_ <br/> _ExceptIfMessageTypeMatches_|`MessageType`|Messages of the specified type. <br/> **Note**: When Outlook or Outlook on the web (formerly known as Outlook Web App) is configured to forward a message, the **ForwardingSmtpAddress** property is added to the message. The message type isn't changed to `AutoForward`.|
-|**The message is classified as** <br/><br/> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet.|
-|**The message isn't marked with any classifications** <br/><br/> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification.|
+|**The message is classified as** <br/><br/> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet. <br/><br/>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**The message isn't marked with any classifications** <br/><br/> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification. <br/><br/>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**The message importance is set to** <br/><br/> **The message properties** \> **include the importance level**|_WithImportance_ <br/> _ExceptIfWithImportance_|`Importance`|Messages that are marked with the specified Importance level.|
 
 ### Message headers
