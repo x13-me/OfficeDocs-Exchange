@@ -39,7 +39,13 @@ The SSDs you use should qualify for "mixed use" and support one drive write per 
 
 The following prerequisites are required for successful configuration and use of MCDB:
 
-1. The DAG is configured for auto-reseed.
+1. The DAG is configured for AutoReseed.
+
+   For more information, see the following topics:
+
+   - [AutoReseed](autoreseed.md)
+
+   - [Configure AutoReseed for a database availability group](../manage-ha/configure-dag-autoreseed.md)
 
 2. RAW SSD drives are installed, and SSD count and size is equal for each server in the DAG.
 
@@ -49,19 +55,37 @@ The following prerequisites are required for successful configuration and use of
 
 The process of setting up MCDB can be broken down into four basic steps:
 
-1. Update Active Directory (AD) settings and wait for propagation (by running `ConfigureMCDBPrerequisite`).
+1. Set the correct values for the DAG you want to enable for MCDB.
 
-2. Allow MCDB acceleration for each server of the DAG (by running `ServerAllowMCDB`).
+2. Update Active Directory (AD) settings and wait for propagation (by running `ConfigureMCDBPrerequisite`).
 
-3. Create the necessary infrastructure (Volumes, Mount Points) for MCDB on each server (by running `ConfigureMCDBOnServer`).
+3. Allow MCDB acceleration for each server of the DAG (by running `ServerAllowMCDB`).
 
-4. Let databases fail over to pick up the new settings.
+4. Create the necessary infrastructure (Volumes, Mount Points) for MCDB on each server (by running `ConfigureMCDBOnServer`).
+
+5. Let databases fail over to pick up the new settings.
 
 After successful execution of all four steps, MCDB acceleration will begin for every database instance with a corresponding MCDB instance.
 
 The following sections describe how to utilize the `Manage-MetaCacheDatabase.ps1` script to achieve the above four steps.
 
-### Step 1: Run Manage-MCDB -ConfigureMCDBPrerequisite
+### Step 1: Configure proper values on the DAG you want to enable MCDB for
+
+These DAG parameters are used to calculate the proper MCDB size on your SSD drives:
+
+- *AutoDagTotalNumberOfDatabases*: The number of databases in your DAG. i.e. 50.
+
+- *AutoDagDatabaseCopiesPerDatabase*: The number of active and passive copies each individual database has.
+
+- *AutoDagTotalNumberOfServers*: The amount of servers within your DAG, so between 2 and 16.
+
+For example:
+
+```
+Set-DatabaseAvailabilityGroup testdag1 -AutoDagTotalNumberOfDatabases 50 -AutoDagDatabaseCopiesPerDatabase 4 -AutoDagTotalNumberOfServers 8
+```
+
+### Step 2: Run Manage-MCDB -ConfigureMCDBPrerequisite
 
 This parameter sets the Active Directory state for the DAG object. Full replication of the Active Directory state is required before MCDB can function properly on all servers.
 
@@ -92,7 +116,7 @@ Manage-MCDB -DagName TestDag1 -ConfigureMCDBPrerequisite -SSDSizeInBytes 5242880
 
 ![MCDB configure prerequisites](../../media/mcdb1.png)
 
-### Step 2: Run Manage-MCDB -ServerAllowMCDB
+### Step 3: Run Manage-MCDB -ServerAllowMCDB
 
 This command sets the local state on each DAG member to allow/disallow MCDB population and read acceleration.
 
@@ -106,7 +130,7 @@ This command sets the local state on each DAG member to allow/disallow MCDB popu
 |:-------|:-----|:---|
 |DagName|True|Name of the Database availability group.|
 |ServerName|True|Specifies the server to enable MetaCacheDatabase on.|
-|ForceFailover|Optional|This Boolean switch can be utilized to cause all databases on a server to fail over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [Step 3: Run Manage-MCDB -ConfigureMCDBOnServer](#step-3-run-manage-mcdb--configuremcdbonserver). It is also needed to disable SSD acceleration.|
+|ForceFailover|Optional|This Boolean switch can be utilized to cause all databases on a server to fail over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [Step 4: Run Manage-MCDB -ConfigureMCDBOnServer](#step-4-run-manage-mcdb--configuremcdbonserver). It is also needed to disable SSD acceleration.|
 
 **Scope**:
 
@@ -124,7 +148,7 @@ Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $false -ServerName "exhs-5046" -F
 
 ![MCDB run ServerAllowMCDB](../../media/mcdb2.png)
 
-### Step 3: Run Manage-MCDB -ConfigureMCDBOnServer
+### Step 4: Run Manage-MCDB -ConfigureMCDBOnServer
 
 This command identifies unformatted SSD devices and formats them, and also creates the necessary mount points on a server for hosting MCDB instances. This parameter set can also be used to re-create mount points on a raw SSD that was added to replace a failed SSD.
 

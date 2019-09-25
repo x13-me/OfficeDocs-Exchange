@@ -137,7 +137,7 @@ This example creates a certificate request on the local Exchange server for a wi
 - **FriendlyName**: Contoso.com Wildcard Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName C=US,CN=*.contoso.com
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName "C=US,CN=*.contoso.com"
 ```
 
 This example creates a certificate request on the local Exchange server for a SAN certificate with the following properties:
@@ -161,7 +161,7 @@ This example creates a certificate request on the local Exchange server for a SA
 - **FriendlyName**: Contoso.com SAN Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName C=US,CN=mail.contoso.com -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net"
 ```
 
 This example creates a request for a single subject certificate with the following properties:
@@ -173,7 +173,7 @@ This example creates a request for a single subject certificate with the followi
 - **FriendlyName**: Mail.contoso.com Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName C=US,CN=mail.contoso.com
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName "C=US,CN=mail.contoso.com"
 ```
 
  **Notes:**

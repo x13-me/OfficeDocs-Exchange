@@ -24,6 +24,7 @@ Because each CU is a full installation of Exchange that includes updates and cha
 ::: moniker range="exchserver-2019"
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2019 CU3|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2019 CU2|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
 |Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)||
 |Exchange 2019 RTM|[Exchange Server 2019 Now Available](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Exchange-Server-2019-Now-Available/ba-p/608610)|

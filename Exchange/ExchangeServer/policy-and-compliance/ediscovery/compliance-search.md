@@ -60,7 +60,7 @@ To help you create a compliance search with no more than 500 source mailboxes, f
    )
    $search = Get-ComplianceSearch $SearchName
    if ($search.Status -ne "Completed")
-  {
+   {
                    "Please wait until the search finishes.";
                    break;
    }
