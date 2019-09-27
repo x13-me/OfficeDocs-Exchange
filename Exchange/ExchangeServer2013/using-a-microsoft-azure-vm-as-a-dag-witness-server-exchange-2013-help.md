@@ -67,7 +67,7 @@ After you have your Azure subscription, you need to do the following in order:
 
   - A public IP address that is not behind NAT for the VPN gateways in each site
 
-  - A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://go.microsoft.com/fwlink/?linkid=522619) for more information about compatible devices
+  - A VPN device in each site that is compatible with Microsoft Azure. See [About VPN devices and IPsec/IKE parameters for Site-to-Site VPN Gateway connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices
 
   - Familiarity with DAG concepts and management
 
