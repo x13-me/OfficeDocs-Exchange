@@ -31,7 +31,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2019 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -49,7 +49,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2016 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -78,7 +78,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2013 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -115,7 +115,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2010 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
@@ -198,7 +198,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
@@ -229,7 +229,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 3-v2 for Exchange Server 2007 SP3|March 30, 2011|8.3.159.2|8.03.0159.002|
 |Update Rollup 2 for Exchange Server 2007 SP3|December 10, 2010|8.3.137.3|8.03.0137.003|
 |Update Rollup 1 for Exchange Server 2007 SP3|September 9, 2010|8.3.106.2|8.03.0106.002|
-|[Exchange Server 2007 SP3](https://go.microsoft.com/fwlink/p/?LinkId=197012)|June 7, 2010|8.3.83.6|8.03.0083.006|
+|Exchange Server 2007 SP3|June 7, 2010|8.3.83.6|8.03.0083.006|
 
 ### Build numbers for previous releases of Exchange Server 2007
 
