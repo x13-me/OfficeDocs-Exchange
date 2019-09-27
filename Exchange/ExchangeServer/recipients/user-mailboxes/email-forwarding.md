@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure email forwarding for a mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -46,7 +46,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the Exchange Management Shell to set up mail forwarding
 
-Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx) topic to learn more. Take a look at the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) and [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) topics for more details on the cmdlets used here.
+Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx) topic to learn more. Take a look at the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) and [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) topics for more details on the cmdlets used here.
 
 This example delivers email to the mailbox of Douglas Kohn and, at the same time, forwards all mail sent to Douglas Kohn to douglaskohn.parents@fineartschool.net.
 
@@ -60,7 +60,7 @@ This example forwards all email sent to the mailbox of Ken Sanchez, an employee 
 Set-Mailbox -Identity "Ken Sanchez" -ForwardingSMTPAddress "pilarp@contoso.com"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## How do you know this worked?
 

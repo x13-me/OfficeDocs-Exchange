@@ -5,7 +5,7 @@ ms:assetid: 5b12615c-24cf-4f46-bf3c-2334dc734ef8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh530051(v=EXCHG.150)
 ms:contentKeyID: 66452205
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -28,7 +28,7 @@ Installing time zone updates as soon as possible minimizes the number of meeting
 
 Because the Office 365 authentication system is updated when DST or a time zone changes, all Office 365 client computers need to be updated or they may experience connectivity issues.
 
-  - Make sure all client and desktop computers have installed the Windows DST update. For more information, see [How to configure daylight saving time for Microsoft Windows operating systems](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387).
+  - Make sure all client and desktop computers have installed the Windows DST update. For more information, see [How to configure daylight saving time for Microsoft Windows operating systems](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387).
 
 ## Step 2: Install the Windows DST update on all servers
 
@@ -44,7 +44,7 @@ Because the Office 365 authentication system is updated when DST or a time zone 
 
 2. Send a message to your users who need to update their computers, giving them a link to the appropriate tool.
 
-The following table shows when users should run the [Exchange Calendar Update Tool](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879) or the [Time Zone Data Update Tool for Microsoft Office Outlook](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667). Find which version your organization's servers are running, and then determine which client programs your users are running.
+The following table shows when users should run the [Exchange Calendar Update Tool](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879) or the [Time Zone Data Update Tool for Microsoft Office Outlook](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667). Find which version your organization's servers are running, and then determine which client programs your users are running.
 
 <table summary="table">
 <tbody>

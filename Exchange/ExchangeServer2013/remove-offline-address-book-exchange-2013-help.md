@@ -4,8 +4,8 @@ TOCTitle: Remove an offline address book
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
 mtps_version: v=EXCHG.150
 ---
@@ -22,7 +22,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
 - After you remove an OAB that's linked to a user or to a mailbox database, the recipient will download the default OAB until you assign a new OAB for that user. If you remove the default OAB, you must assign a different OAB as the default OAB. For instructions about how to change the default OAB, see [Change the default offline address book](change-default-offline-address-book-exchange-2013-help.md).
 
@@ -43,4 +43,4 @@ Remove-OfflineAddressBook -Identity "My OAB"
 
 Type Y to confirm that you want to remove the OAB, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-OfflineAddressBook](http://technet.microsoft.com/library/88a8f173-34b9-4e75-8f1a-26ad6f972e98.aspx).
+For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://technet.microsoft.com/library/88a8f173-34b9-4e75-8f1a-26ad6f972e98.aspx).

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.date: 4/19/2018
-ms.reviewer: 
+ms.reviewer:
 title: Custom attributes
 ms.collection: exchange-server
 audience: ITPro
@@ -43,19 +43,19 @@ There are several advantages to using custom attributes:
 
 Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
-- [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
 
-- [Set-DynamicDistributionGroup](http://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
 
-- [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
 
-- [Set-MailContact](http://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
+- [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
 
-- [Set-MailPublicFolder](http://technet.microsoft.com/library/8db48034-24cd-43d8-9133-1c8226616be5.aspx)
+- [Set-MailPublicFolder](https://technet.microsoft.com/library/8db48034-24cd-43d8-9133-1c8226616be5.aspx)
 
-- [Set-RemoteMailbox](http://technet.microsoft.com/library/20bdcdc4-5a7c-4cef-9e7c-cef17e470efd.aspx)
+- [Set-RemoteMailbox](https://technet.microsoft.com/library/20bdcdc4-5a7c-4cef-9e7c-cef17e470efd.aspx)
 
-For more information about multivalued properties, see [Modifying multivalued properties](http://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about multivalued properties, see [Modifying multivalued properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
 
 ## Custom attribute examples
 <a name="CA"> </a>

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery
 ms.collection:
 - Strat_EX_Admin
@@ -25,7 +25,7 @@ Recovering a lost Exchange server is often accomplished by using new hardware. H
 
 This topic shows you how to recover a lost Exchange server that isn't a member of a database availability group (DAG). For detailed steps about how to recover a server that was a member of a DAG, see [Recover a database availability group member server](recover-dag-member-servers.md).
 
-Looking for other management tasks related to backing up and restoring data? Check out [Backup, Restore, and Disaster Recovery](http://technet.microsoft.com/library/394fc4ed-fa02-41fa-9159-cc2754ff8875.aspx).
+Looking for other management tasks related to backing up and restoring data? Check out [Backup, Restore, and Disaster Recovery](https://technet.microsoft.com/library/394fc4ed-fa02-41fa-9159-cc2754ff8875.aspx).
 
 ## What do you need to know before you begin?
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure message delivery restrictions for a mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -112,15 +112,15 @@ Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Tea
 
 For detailed syntax and parameter information related to placing delivery restrictions for different types of recipients, see the following topics:
 
-- [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
 
-- [Set-DynamicDistributionGroup](http://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
 
-- [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
 
-- [Set-MailContact](http://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
+- [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
 
-- [Set-MailUser](http://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx)
+- [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx)
 
 ## How do you know this worked?
 

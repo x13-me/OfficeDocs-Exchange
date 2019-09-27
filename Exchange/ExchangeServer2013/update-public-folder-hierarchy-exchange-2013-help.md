@@ -4,8 +4,8 @@ TOCTitle: Update the public folder hierarchy
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
 mtps_version: v=EXCHG.150
 ---
@@ -20,7 +20,7 @@ You only need to update the public folder hierarchy if you want to manually invo
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
 
 - You can't perform this procedure in the EAC. You must use the Shell.
 

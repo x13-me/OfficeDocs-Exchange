@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: POP3 and IMAP4 in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -66,7 +66,7 @@ The POP3 and IMAP4 protocols have the following benefits and limitations:
 
   - Doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
 
- **Note**: POP3 and IMAP4 clients have limited access to Exchange calendar information. For more information, see [Configure Calendar Options for POP3](http://technet.microsoft.com/library/ac3d60a0-8697-4c06-9e93-f8d2c4b157b6.aspx) and [Configure Calendar Options for IMAP4](http://technet.microsoft.com/library/6679c8b2-3f0f-449a-a17c-a7b30001538c.aspx).
+ **Note**: POP3 and IMAP4 clients have limited access to Exchange calendar information. For more information, see [Configure Calendar Options for POP3](https://technet.microsoft.com/library/ac3d60a0-8697-4c06-9e93-f8d2c4b157b6.aspx) and [Configure Calendar Options for IMAP4](https://technet.microsoft.com/library/6679c8b2-3f0f-449a-a17c-a7b30001538c.aspx).
 
 ## POP3 and IMAP4 applications and settings
 <a name="SendReceive"> </a>

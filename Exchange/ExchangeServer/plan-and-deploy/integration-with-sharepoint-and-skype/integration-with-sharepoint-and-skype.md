@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
@@ -62,7 +62,7 @@ For more details on eDiscovery see the following topics:
 
 - [What's new in eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkId=275091)
 
-- [Configure Exchange for SharePoint eDiscovery Center](http://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx)
+- [Configure Exchange for SharePoint eDiscovery Center](https://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx)
 
 ## Search across applications by using eDiscovery
 
@@ -76,7 +76,7 @@ SharePoint Server 2016 provides the eDiscovery Center to help you locate and the
 
 If your organization adheres to legal discovery requirements, that is, anything related to organizational policy, compliance, or lawsuits, In-Place eDiscovery in Exchange Server 2016 can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 
-When you configure server-to-server authentication betweenExchange 2016 and SharePoint Server 2016 in on-premises deployments, administrators and compliance officers can use the eDiscovery Center. For more information, see [Configure Exchange for SharePoint eDiscovery Center](http://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx). In hybrid deployments, for more information see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](http://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
+When you configure server-to-server authentication betweenExchange 2016 and SharePoint Server 2016 in on-premises deployments, administrators and compliance officers can use the eDiscovery Center. For more information, see [Configure Exchange for SharePoint eDiscovery Center](https://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx). In hybrid deployments, for more information see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
 
 You can identify and reduce your data set by using keyword syntax, property restrictions, and refinements. The query experience focuses on statistics for individual sources and query fragments to help you make decisions about the content you're searching across. You can also preview SharePoint 2016 and Exchange 2016 content to confirm that you have identified the right set of results.
 
@@ -115,7 +115,7 @@ In on-premises deployments, Exchange 2016, SharePoint Server 2016, and Skype for
 
 In hybrid deployments, you need to configure OAuth authorization protocol between your on-premises Exchange 2016 and Exchange Online organizations. Hybrid deployments by default continue to use the federation trust process.
 
-Certain Exchange 2016 features are only fully available across your organization by using the new OAuth protocol. For example, before you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes in an Exchange hybrid organization, you need to configure OAuth authentication between your Exchange on-premises and Exchange Online organizations. The Hybrid Configuration Wizard doesn't manage the OAuth authorization connection. For more information, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](http://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+Certain Exchange 2016 features are only fully available across your organization by using the new OAuth protocol. For example, before you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes in an Exchange hybrid organization, you need to configure OAuth authentication between your Exchange on-premises and Exchange Online organizations. The Hybrid Configuration Wizard doesn't manage the OAuth authorization connection. For more information, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
 
 In online deployments, Exchange Online, SharePoint Online and Skype for Business Online need to be configured for a modern authentication connection. Modern authentication brings Active Directory Authentication Library (ADAL)-based sign in to Office 2013 Windows clients. Office 2013 client applications sign in to the Office 365 service to gain access to Exchange Online, SharePoint Online and Skype for Business Online. We recommend that you enable Exchange Online for modern authentication when enabling modern authentication for Skype for Business. Modern authentication is enabled by default in SharePoint Online. For more information, see [Enable Exchange Online for modern authentication](https://go.microsoft.com/fwlink/p/?linkId=846120).
 
@@ -139,7 +139,7 @@ In a site mailbox, content is kept where it belongs. Exchange stores the email, 
 
 You can provision and manage site mailboxes from SharePoint Server 2016. For more information, including how to configure site mailboxes, see the following topics.
 
-- [Site Mailboxes](http://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
+- [Site Mailboxes](https://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
 
 - [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941(v=office.16).aspx)
 

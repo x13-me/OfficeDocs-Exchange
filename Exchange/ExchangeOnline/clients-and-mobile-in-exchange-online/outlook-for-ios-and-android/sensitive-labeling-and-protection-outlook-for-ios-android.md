@@ -45,7 +45,7 @@ Message encryption provides a solution to information disclosure. SMTP-based Int
 ## Deploying S/MIME certificates with Outlook for iOS and Android
 
 > [!NOTE]
-> At this time, S/MIME is supported only in Outlook for iOS. Outlook for Android will receive S/MIME support in a future release. For more information, see the [Microsoft 365 Roadmap](http://aka.ms/m365roadmap).
+> At this time, S/MIME is supported only in Outlook for iOS. Outlook for Android will receive S/MIME support in a future release. For more information, see the [Microsoft 365 Roadmap](https://aka.ms/m365roadmap).
 
 First, ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). This includes setting up the virtual certificate collection and publishing the certificate revocation list to the Internet.
 
@@ -56,7 +56,7 @@ Once those steps have been completed, S/MIME certificates can be deployed to Out
 2. Manual certificate delivery.
 
 > [!NOTE]
-> Outlook for iOS and Android will support automated certificate delivery in future releases. For more information, see the [Microsoft 365 Roadmap](http://aka.ms/m365roadmap).
+> Outlook for iOS and Android will support automated certificate delivery in future releases. For more information, see the [Microsoft 365 Roadmap](https://aka.ms/m365roadmap).
 
 In both delivery solutions, it is expected that the certificate’s trusted root chain is available and discoverable within Exchange Online. Trust verification is performed on all digital certificates. Exchange Online validates the certificate by validating each certificate in the certificate chain until it reaches a trusted root certificate. In most cases, this is done by obtaining the intermediate certificates through the authority information access path in the certificate until a trusted root certificate is located. Intermediate certificates can also be included with digitally signed e-mail messages. If Exchange Online locates a trusted root certificate and can query the certificate revocation list for the certificate authority, the digital certificate's chain for that digital certificate is considered valid and trusted and can be used. If Exchange Online fails to locate a trusted root certificate or fails to contact the certificate revocation list for the certificate authority, that certificate is considered invalid and not trusted.
 

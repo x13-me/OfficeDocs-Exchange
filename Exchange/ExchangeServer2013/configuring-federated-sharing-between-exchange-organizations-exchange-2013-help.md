@@ -5,7 +5,7 @@ ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657473(v=EXCHG.150)
 ms:contentKeyID: 49289355
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -77,7 +77,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 
@@ -122,7 +122,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 

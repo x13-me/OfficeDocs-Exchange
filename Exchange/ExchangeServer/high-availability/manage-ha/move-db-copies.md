@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Move the mailbox database path for a mailbox database copy
 ms.collection: exchange-server
 audience: ITPro
@@ -32,7 +32,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 - To perform the move operation, the database must be temporarily dismounted, making it inaccessible to all users. If the database is currently dismounted, it isn't remounted upon completion.
 
-- To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](http://technet.microsoft.com/library/18a41719-99dd-4bf7-97af-2e9b0e39ba2d.aspx) cmdlet to remove the database copies.
+- To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/library/18a41719-99dd-4bf7-97af-2e9b0e39ba2d.aspx) cmdlet to remove the database copies.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -44,13 +44,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 > [!NOTE]
 > You can't use the Exchange admin center (EAC) to move a replicated mailbox database to a new path.
 
-1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](http://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet, as shown in this example.
+1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet, as shown in this example.
 
    ```
    Get-MailboxDatabase DB1 | Format-List *lag*
    ```
 
-2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
+2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
 
    ```
    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
@@ -75,13 +75,13 @@ Looking for other management tasks related to mailbox database copies? Check out
    Restart-Service MSExchangeFastSearch
    ```
 
-9. Optionally, enable circular logging by using the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
+9. Optionally, enable circular logging by using the [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
 
    ```
    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
    ```
 
-10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](http://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx) cmdlet, as shown in this example.
+10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx) cmdlet, as shown in this example.
 
     ```
     Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
@@ -91,21 +91,21 @@ Looking for other management tasks related to mailbox database copies? Check out
 
     1. Examining the event log for any error or warning events related to the database or the database copy.
 
-    2. Using the [Get-MailboxDatabaseCopyStatus](http://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx) cmdlet to check the health and status of continuous replication for the database copy.
+    2. Using the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx) cmdlet to check the health and status of continuous replication for the database copy.
 
-    3. Using the [Test-ReplicationHealth](http://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx) cmdlet to verify the health and status of the database availability group and continuous replication.
+    3. Using the [Test-ReplicationHealth](https://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx) cmdlet to verify the health and status of the database availability group and continuous replication.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MailboxDatabase](http://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx)
+- [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx)
 
-- [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx)
+- [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx)
 
-- [Set-MailboxDatabaseCopy](http://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx)
+- [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx)
 
-- [Get-MailboxDatabaseCopyStatus](http://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx)
+- [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx)
 
-- [Test-ReplicationHealth](http://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx)
+- [Test-ReplicationHealth](https://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx)
 
 ## How do you know this worked?
 

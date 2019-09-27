@@ -7,7 +7,7 @@ ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
-ms.reviewer: 
+ms.reviewer:
 ms.collection: exchange-server
 description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
 audience: ITPro
@@ -143,15 +143,15 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](http://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
 
-- [Get-PublicFolderDatabase](http://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
 
-- [Set-PublicFolder](http://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
+- [Set-PublicFolder](https://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
 
-- [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
+- [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
 
-- [Get-PublicFolderClientPermission](http://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
+- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
 
 - [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
 
@@ -217,23 +217,23 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](http://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
+- [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
 
-- [Get-PublicFolderMigrationRequest](http://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
 
-- [Remove-PublicFolderMigrationRequest](http://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
+- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
 
-- [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
-- [Get-PublicFolder](http://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
 
-- [Get-MailPublicFolder](http://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
+- [Get-MailPublicFolder](https://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
 
-- [Disable-MailPublicFolder](http://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
+- [Disable-MailPublicFolder](https://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
 
-- [Remove-PublicFolder](http://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
+- [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
 
-- [Remove-Mailbox](http://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
+- [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
 
 ## Step 3: Generate the .csv files
 
@@ -314,13 +314,13 @@ Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-PublicFolderMigrationRequest](http://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
+- [New-PublicFolderMigrationRequest](https://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
 
-- [Get-PublicFolderDatabase](http://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
 
-- [Get-PublicFolderMigrationRequest](http://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
 
-- [Get-PublicFolderMigrationRequestStatistics](http://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
+- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
 
 ## Step 6: Lock down the public folders on the Exchange 2010 server for final migration (downtime required)
 
@@ -335,7 +335,7 @@ Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` property value and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 

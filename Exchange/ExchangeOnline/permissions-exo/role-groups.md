@@ -5,10 +5,10 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Manage role groups in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -68,7 +68,7 @@ This example returns all role groups where the user Julia is a member. You need 
 Get-RoleGroup -Filter {Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'}
 ```
 
-For detailed syntax and parameter information, see [Get-RoleGroup](http://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx).
 
 ## Create role groups
 
@@ -124,7 +124,7 @@ This is the same example with a custom recipient write scope, which means Kim an
 New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients","Mail Enabled Public Folders" -Members "Kim","Martin" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, [New-RoleGroup](http://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
+For detailed syntax and parameter information, [New-RoleGroup](https://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
 
 ### How do you know this worked?
 
@@ -198,7 +198,7 @@ $RoleGroup = Get-RoleGroup "Organization Management"
 New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users"
 ```
 
-For detailed syntax and parameter information, [New-RoleGroup](http://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
+For detailed syntax and parameter information, [New-RoleGroup](https://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
 
 ### How do you know this worked?
 
@@ -270,7 +270,7 @@ This example assigns the Message Tracking role to the Seattle Recipient Admins r
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](http://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
 
 
 ### Use Exchange Online PowerShell to remove roles from role groups (remove role assignments)
@@ -291,7 +291,7 @@ This example removes the Distribution Groups role from the Seattle Recipient Adm
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](http://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
 
 ### Use Exchange Online PowerShell to modify the scope of role assignments in role groups
 
@@ -337,7 +337,7 @@ To change the scope on an individual role assignment between a role group and a 
     Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
     ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](http://technet.microsoft.com/library/2e0659f9-dfb6-4d91-93fb-35a6a7f8a449.aspx).
+For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://technet.microsoft.com/library/2e0659f9-dfb6-4d91-93fb-35a6a7f8a449.aspx).
 
 ### Use Exchange Online PowerShell modify the list of delegates in role groups
 
@@ -365,7 +365,7 @@ This example adds Daigoro Akai and removes Valeria Barrio from the list of deleg
 Set-RoleGroup -Identity "Help Desk" -ManagedBy @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](http://technet.microsoft.com/library/c66ee1a2-cec7-4b76-a592-a5e626f4f9d3.aspx).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://technet.microsoft.com/library/c66ee1a2-cec7-4b76-a592-a5e626f4f9d3.aspx).
 
 ## Use Exchange Online PowerShell modify the list of members in role groups
 
@@ -395,7 +395,7 @@ This example adds Daigoro Akai and removes Valeria Barrio from the list of membe
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-For detailed syntax and parameter information, see [Update-RoleGroupMember](http://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+For detailed syntax and parameter information, see [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
 
 ### How do you know this worked?
 
@@ -453,7 +453,7 @@ This example removes the Vancouver Recipient Administrators role group. Because 
 Remove-RoleGroup - Identity "Vancouver Recipient Administrators" -BypassSecurityGroupManagerCheck
 ```
 
-For detailed syntax and parameter information, see [Remove-RoleGroup](http://technet.microsoft.com/library/6fe6975b-bc0f-4920-b0b0-6da245429f64.aspx).
+For detailed syntax and parameter information, see [Remove-RoleGroup](https://technet.microsoft.com/library/6fe6975b-bc0f-4920-b0b0-6da245429f64.aspx).
 
 ### How do you know this worked?
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Verify Exchange Server installations
 ms.collection:
 - Strat_EX_Admin
@@ -39,7 +39,7 @@ This example returns additional details about the Exchange server named Mailbox0
 Get-ExchangeServer -Identity Mailbox01 | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ExchangeServer](http://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx).
+For detailed syntax and parameter information, see [Get-ExchangeServer](https://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx).
 
 ## Review the Windows Application log and the Exchange Setup log
 

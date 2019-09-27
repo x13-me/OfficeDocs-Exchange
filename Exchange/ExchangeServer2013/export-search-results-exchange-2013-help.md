@@ -4,8 +4,8 @@ TOCTitle: Export eDiscovery search results to a PST file
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 mtps_version: v=EXCHG.150
 ---
@@ -20,7 +20,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - Estimated time to complete: Time will vary based on the amount and size of the search results that will be exported.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
 - The computer you use to export search results to a PST file must meet the following system requirements:
 
@@ -94,7 +94,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
   - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md#estimate-preview-and-copy-search-results)
 
-  - [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
+  - [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
 
 - To export eDiscovery search results from the eDiscovery Center in SharePoint, see [Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?LinkId=324757).
 

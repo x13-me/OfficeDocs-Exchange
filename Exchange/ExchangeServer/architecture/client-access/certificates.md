@@ -8,7 +8,7 @@ ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 title: Digital certificates and encryption in Exchange Server
 ms.collection: exchange-server
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -98,9 +98,9 @@ The Exchange services that certificates can be assigned to are described in the 
 |:-----|:-----|
 |IIS (HTTP)|By default, the following services are offered under the default website in the Client Access (frontend) services on a Mailbox server, and are used by clients to connect to Exchange: <br/>• Autodiscover <br/>• Exchange ActiveSync <br/>• Exchange admin center <br/>• Exchange Web Services <br/>• Offline address book (OAB) distribution <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Outlook MAPI over HTTP <br/>• Outlook on the web <br/>• Remote PowerShell<sup>\*</sup> <br/><br/> Because you can only associate a single certificate with a website, all the DNS names that clients use to connect to these services need to be included in the certificate. You can accomplish this by using a SAN certificate or a wildcard certificate.|
 |POP or IMAP|The certificates that are used for POP or IMAP can be different from the certificate that's used for IIS. However, to simplify administration, we recommend that you also include the host names that are used for POP or IMAP in your IIS certificate, and use the same certificate for all of these services.|
-|SMTP|SMTP connections from clients or messaging servers are accepted by one or more Receive connectors that are configured in the Front End Transport service on the Exchange server. For more information, see [Receive connectors](../../mail-flow/connectors/receive-connectors.md). <br/><br/> To require TLS encryption for SMTP connections, you can use a separate certificate for each Receive connector. The certificate must include the DNS name that's used by the SMTP clients or servers to connect to the Receive connector. To simplify certificate management, consider including all DNS names for which you have to support TLS traffic in a single certificate. <br/><br/> To require *mutual TLS authentication*, where the SMTP connections between the source and destination servers are both encrypted and authenticated, see [Domain Security](http://technet.microsoft.com/library/bce3dbca-30a3-4343-924e-4ccf9e3fe0e1.aspx).|
-|Unified Messaging (UM)|For more information, see [Deploying Certificates for UM](http://technet.microsoft.com/library/95658f6f-eac2-4674-90e7-f2d3f25c5242.aspx). <br/> **Note**: UM is not available in Exchange 2019.|
-|Hybrid deployment with Microsoft Office 365|For more information, see [Certificate Requirements for Hybrid Deployments](http://technet.microsoft.com/library/48d532cc-29f9-4009-9d2d-f19a9c13c320.aspx).|
+|SMTP|SMTP connections from clients or messaging servers are accepted by one or more Receive connectors that are configured in the Front End Transport service on the Exchange server. For more information, see [Receive connectors](../../mail-flow/connectors/receive-connectors.md). <br/><br/> To require TLS encryption for SMTP connections, you can use a separate certificate for each Receive connector. The certificate must include the DNS name that's used by the SMTP clients or servers to connect to the Receive connector. To simplify certificate management, consider including all DNS names for which you have to support TLS traffic in a single certificate. <br/><br/> To require *mutual TLS authentication*, where the SMTP connections between the source and destination servers are both encrypted and authenticated, see [Domain Security](https://technet.microsoft.com/library/bce3dbca-30a3-4343-924e-4ccf9e3fe0e1.aspx).|
+|Unified Messaging (UM)|For more information, see [Deploying Certificates for UM](https://technet.microsoft.com/library/95658f6f-eac2-4674-90e7-f2d3f25c5242.aspx). <br/> **Note**: UM is not available in Exchange 2019.|
+|Hybrid deployment with Microsoft Office 365|For more information, see [Certificate Requirements for Hybrid Deployments](https://technet.microsoft.com/library/48d532cc-29f9-4009-9d2d-f19a9c13c320.aspx).|
 |Secure/Multipurpose Internet Mail Extensions (S/MIME)|For more information, see [S/MIME for message signing and encryption](../../policy-and-compliance/smime.md).|
 
 <sup>\*</sup> Kerberos authentication and Kerberos encryption are used for remote PowerShell access, from both the Exchange admin center and the Exchange Management Shell. Therefore, you don't need to configure your certificates for use with remote PowerShell, as long as you connect directly to an Exchange server (not to a load balanced namespace). To use remote PowerShell to connect to an Exchange server from a computer that isn't a member of the domain, or to connect from the Internet, you need to configure your certificates for use with remote PowerShell.
@@ -161,7 +161,7 @@ Some of the more interesting properties of the default self-signed certificates 
 
 - `Get-ExchangeCertificate -Thumbprint <Thumbprint> | Format-Table -Auto FriendlyName,*PrivateKey*`
 
-For more information, see [Get-ExchangeCertificate](http://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).
+For more information, see [Get-ExchangeCertificate](https://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).
 
 Further details about the default self-signed certificates that are visible in Windows Certificate Manger are described in the following table.
 

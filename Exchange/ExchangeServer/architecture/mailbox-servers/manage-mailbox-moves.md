@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Manage on-premises mailbox moves in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -70,7 +70,7 @@ To create new local move requests in the Exchange Management Shell, you only use
 
      - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
 
-   - **Specify the users with a CSV file**: Click **Browse** and go to the location of the comma-separated value (CSV) file that specifies the mailboxes to move. For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](http://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
+   - **Specify the users with a CSV file**: Click **Browse** and go to the location of the comma-separated value (CSV) file that specifies the mailboxes to move. For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
 
    - **Allow unknown columns in the CSV file**:
 
@@ -166,7 +166,7 @@ This example uses similar settings, but only moves Angela's archive mailbox.
 New-MoveRequest -Identity agruber@contoso.com -ArchiveOnly -ArchiveTargetDatabase "MBX 03" -BadItemLimit 10
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](http://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
+For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
 
 A batch move request uses virtually the same syntax as a move request for an individual mailbox. The main differences are:
 
@@ -194,13 +194,13 @@ This example creates a batch move request with these settings:
 Get-Mailbox -Database "MBX DB01" | New-MoveRequest -BatchName "MBX DB01 to MBX DB02" -TargetDatabase "MBX DB02" -Priority High -BadItemLimit 51 -AcceptLargeDataLoss
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](http://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
+For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
 
 ### Use the Exchange Management Shell to create a local move request from a CSV file
 
 A local move request for mailboxes that are specified in a CSV file is known as a *migration batch*, and uses the **New-MigrationBatch** cmdlet.
 
-For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](http://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
+For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
 
 To create a migration batch, use this syntax:
 
@@ -270,11 +270,11 @@ To verify that you've successfully created a local move request, do any of these
   Get-MigrationUserStatistics -Identity <EmailAddress> | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](http://technet.microsoft.com/library/b771bb31-7f5a-462f-b5e2-ce49fde9bfe5.aspx).
+For more information, see [Get-MigrationUserStatistics](https://technet.microsoft.com/library/b771bb31-7f5a-462f-b5e2-ce49fde9bfe5.aspx).
 
 ## Display migration batches
 
-For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](http://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx).
+For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx).
 
 ## Create a cross-forest move using a .csv batch file
 
@@ -290,11 +290,11 @@ For more information about preparing your forest for cross-forest moves, see the
 
 - [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md)
 
-- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](http://technet.microsoft.com/library/f35ac7a5-bb84-4653-b6d0-65906e93627b.aspx)
+- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](https://technet.microsoft.com/library/f35ac7a5-bb84-4653-b6d0-65906e93627b.aspx)
 
 - [Prepare mailboxes for cross-forest moves using the Exchange Management Shell](prep-mailboxes-for-cross-forest-moves-in-powershell.md)
 
-For detailed syntax and parameter information, see [New-MigrationBatch](http://technet.microsoft.com/library/4f797f11-e4ef-48f9-83ab-dda8a3f61e2b.aspx) and [New-MoveRequest](http://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
+For detailed syntax and parameter information, see [New-MigrationBatch](https://technet.microsoft.com/library/4f797f11-e4ef-48f9-83ab-dda8a3f61e2b.aspx) and [New-MoveRequest](https://technet.microsoft.com/library/c28ca2ce-963f-4676-81c3-cef3c290ee7b.aspx).
 
 ### How do you know this worked?
 
@@ -306,4 +306,4 @@ To verify that you have successfully completed your migration, do the following:
   Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](http://technet.microsoft.com/library/b771bb31-7f5a-462f-b5e2-ce49fde9bfe5.aspx).
+For more information, see [Get-MigrationUserStatistics](https://technet.microsoft.com/library/b771bb31-7f5a-462f-b5e2-ce49fde9bfe5.aspx).

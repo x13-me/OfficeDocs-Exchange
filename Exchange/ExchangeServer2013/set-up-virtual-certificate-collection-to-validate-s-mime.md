@@ -5,7 +5,7 @@ ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 ms:mtpsurl:
 ms:contentKeyID:
 ms.date: 2/26/2019
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -44,4 +44,4 @@ Exchange 2013 SP1 or later first checks for the SST file and validates the certi
 
 [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 
-[Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
+[Get-SmimeConfig](https://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)

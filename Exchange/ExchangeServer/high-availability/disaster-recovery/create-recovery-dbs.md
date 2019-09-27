@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Create a recovery database
 ms.collection:
 - Strat_EX_Admin
@@ -19,7 +19,7 @@ manager: serdars
 
 # Create a recovery database
 
-You can use the Exchange Management Shell to create a recovery database, a special kind of mailbox database that's used to mount and extract data from the restored database as part of a recovery operation. After you create a recovery database, you can move a recovered or restored mailbox database into the recovery database, and then use the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from the recovered database. After extraction, the data can then be exported to a folder or merged into an existing mailbox. Using recovery databases, you can recover data from a backup or copy of a database without disrupting user access to current data.
+You can use the Exchange Management Shell to create a recovery database, a special kind of mailbox database that's used to mount and extract data from the restored database as part of a recovery operation. After you create a recovery database, you can move a recovered or restored mailbox database into the recovery database, and then use the [New-MailboxRestoreRequest](https://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from the recovered database. After extraction, the data can then be exported to a folder or merged into an existing mailbox. Using recovery databases, you can recover data from a backup or copy of a database without disrupting user access to current data.
 
 Looking for other management tasks related to recovery databases? Check out [Recovery databases](recovery-databases.md).
 
@@ -48,7 +48,7 @@ This example creates the recovery database RDB2 on the Mailbox server MBX1 using
 New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
 ```
 
-For detailed syntax and parameter information, see [New-MailboxDatabase](http://technet.microsoft.com/library/5008090b-e776-4ff6-807c-208e00f4daab.aspx).
+For detailed syntax and parameter information, see [New-MailboxDatabase](https://technet.microsoft.com/library/5008090b-e776-4ff6-807c-208e00f4daab.aspx).
 
 ## How do you know this worked?
 

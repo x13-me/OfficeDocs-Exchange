@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Message encoding options in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -41,7 +41,7 @@ For more information about content conversion in Exchange, see [Content conversi
 
 ## Remote domain settings
 
-Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](http://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
 
 When you configure message encoding options for a remote domain, the settings are applied to all messages that are sent to recipients in that domain. Some settings are available in the Exchange admin center (EAC), but most are only available in the Exchange Management Shell. The message encoding settings are described in this table:
 
@@ -59,9 +59,9 @@ Mail contacts and mail users represent users that have external email addresses 
 
 When you configure message encoding options for a mail contact or a mail user, the settings are only applied to messages that are sent to that specific recipient. All settings are only available in the Exchange Management Shell in these cmdlets:
 
-- [Enable-MailContact](http://technet.microsoft.com/library/0accff85-3a03-4068-81e2-0508a4df21ec.aspx), [New-MailContact](http://technet.microsoft.com/library/c5abe0d4-3004-4d25-bda6-cb6155a47142.aspx), or [Set-MailContact](http://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx).
+- [Enable-MailContact](https://technet.microsoft.com/library/0accff85-3a03-4068-81e2-0508a4df21ec.aspx), [New-MailContact](https://technet.microsoft.com/library/c5abe0d4-3004-4d25-bda6-cb6155a47142.aspx), or [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx).
 
-- [Enable-MailUser](http://technet.microsoft.com/library/1a6e86d0-09d8-4570-bf43-7ae6f1386c78.aspx), [New-MailUser](http://technet.microsoft.com/library/128467a7-b8b8-4fa6-bca9-1131301f18ce.aspx), or [Set-MailUser](http://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx).
+- [Enable-MailUser](https://technet.microsoft.com/library/1a6e86d0-09d8-4570-bf43-7ae6f1386c78.aspx), [New-MailUser](https://technet.microsoft.com/library/128467a7-b8b8-4fa6-bca9-1131301f18ce.aspx), or [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx).
 
 The message encoding settings for mail contacts and mail users are described in this list:
 

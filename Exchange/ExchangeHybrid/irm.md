@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: ba6ec48b-8f79-4807-b74b-fd442bbbe82f
-ms.reviewer: 
+ms.reviewer:
 description: "Summary: How IRM works in an Exchange hybrid environment, and how to configure IRM to work between Exchange Online and your on-premises Exchange servers."
 ---
 
@@ -26,13 +26,13 @@ IRM uses Active Directory Rights Management Services (AD RMS), which is a compon
 
 Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](https://technet.microsoft.com/library/dd638140%28v=exchg.141%29.aspx).
 
-Learn more about IRM in Exchange 2013 and Exchange 2016 at [Information Rights Management](http://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
+Learn more about IRM in Exchange 2013 and Exchange 2016 at [Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
 
 Learn more about AD RMS at [Active Directory Rights Management Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=215243).
 
 ## Differences between IRM in Exchange On-premises and Exchange Online
 
-IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Understanding Information Rights Management](http://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx))
+IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Understanding Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx))
 
 **Available IRM features**
 
@@ -174,4 +174,4 @@ Run the following command in the Exchange Online organization:
 Get-RMSTemplate
 ```
 
-Learn more at: [Understanding Information Rights Management in Outlook Web App](http://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx)
+Learn more at: [Understanding Information Rights Management in Outlook Web App](https://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx)

@@ -13,7 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 2e6ed294-ee74-4038-8b71-b61786372ba4
-ms.reviewer: 
+ms.reviewer:
 description: ""
 ---
 
@@ -61,9 +61,9 @@ The general phases of the hybrid deployment configuration process are:
 
 The Hybrid Configuration wizard automatically enables all hybrid deployment features by default each time it runs. If you want to disable specific hybrid configuration features, you need to use the Exchange Management Shell and the **Set-HybridConfiguration** cmdlet. The following hybrid deployment features are enabled by default by the wizard:
 
-- **Free/busy sharing**: The free/busy sharing feature enables calendar information to be shared between on-premises and Exchange Online organization users. Free/busy sharing is enabled as part of the federated sharing and organization relationship configuration for the on-premises and Exchange Online organizations. Learn more at [Understanding Federated Delegation](http://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
+- **Free/busy sharing**: The free/busy sharing feature enables calendar information to be shared between on-premises and Exchange Online organization users. Free/busy sharing is enabled as part of the federated sharing and organization relationship configuration for the on-premises and Exchange Online organizations. Learn more at [Understanding Federated Delegation](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
 
-- **MailTips**: MailTips are informative messages displayed to users while they're composing a message. By enabling MailTips in the hybrid deployment, on-premises and Exchange Online senders can adjust messages they're composing to avoid undesirable situations or non-delivery reports (NDRs) between the organizations. Learn more at [MailTips](http://technet.microsoft.com/library/9c989167-cc0c-40a6-82ba-383f573bd2d5.aspx).
+- **MailTips**: MailTips are informative messages displayed to users while they're composing a message. By enabling MailTips in the hybrid deployment, on-premises and Exchange Online senders can adjust messages they're composing to avoid undesirable situations or non-delivery reports (NDRs) between the organizations. Learn more at [MailTips](https://technet.microsoft.com/library/9c989167-cc0c-40a6-82ba-383f573bd2d5.aspx).
 
 - **Online archiving**: Online archiving enables the Exchange Online organization to host user email archives for both on-premises and Exchange Online users. Learn more at [Configure Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=266565).
 

@@ -6,8 +6,8 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
 monikerRange: exchserver-2016 || exchserver-2019
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Information Rights Management in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -86,13 +86,13 @@ By default, an Exchange organization is enabled for IRM, but to apply IRM protec
 
 - **Manually by users in Outlook**: Users can IRM-protect messages in Outlook by using the AD RMS rights policy templates that are available to them. This process uses the IRM functionality in Outlook, not Exchange. For more information about using IRM in Outlook, see [Introduction to using IRM for email messages](https://go.microsoft.com/fwlink/p/?linkId=166897).
 
-- **Manually by users in Outlook on the web**: When an administrator enables IRM in Outlook on the web (formerly known as Outlook Web App), users can IRM-protect messages that they send, and view IRM-protected messages that they receive. For more information about IRM in Outlook on the web, see [Understanding IRM in Outlook Web App](http://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx).
+- **Manually by users in Outlook on the web**: When an administrator enables IRM in Outlook on the web (formerly known as Outlook Web App), users can IRM-protect messages that they send, and view IRM-protected messages that they receive. For more information about IRM in Outlook on the web, see [Understanding IRM in Outlook Web App](https://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx).
 
-- **Manually by users in Exchange ActiveSync**: When an administrator enables IRM in Exchange ActiveSync users can view, reply to, forward, and create IRM-protected messages on ActiveSync devices. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](http://technet.microsoft.com/library/ebf04460-4d61-4b00-86b9-85ec1dbbd6a1.aspx).
+- **Manually by users in Exchange ActiveSync**: When an administrator enables IRM in Exchange ActiveSync users can view, reply to, forward, and create IRM-protected messages on ActiveSync devices. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](https://technet.microsoft.com/library/ebf04460-4d61-4b00-86b9-85ec1dbbd6a1.aspx).
 
-- **Automatically in Outlook**: Administrators can create Outlook protection rules to automatically IRM-protect messages. Outlook protection rules are automatically deployed to Outlook clients, and IRM-protection is applied by Outlook when the user is composing a message. For more information, see [Understanding Outlook Protection Rules](http://technet.microsoft.com/library/bd7d0ad7-1f8e-46da-a74b-58c58f3eff93.aspx).
+- **Automatically in Outlook**: Administrators can create Outlook protection rules to automatically IRM-protect messages. Outlook protection rules are automatically deployed to Outlook clients, and IRM-protection is applied by Outlook when the user is composing a message. For more information, see [Understanding Outlook Protection Rules](https://technet.microsoft.com/library/bd7d0ad7-1f8e-46da-a74b-58c58f3eff93.aspx).
 
-- **Automatically on Mailbox servers**: Administrators can create mail flow rules (also known as transport rules) to automatically IRM-protect messages that match specified conditions. For more information, see [Understanding Transport Protection Rules](http://technet.microsoft.com/library/9bd6d049-165e-4e51-a79f-3b8ff409da55.aspx).
+- **Automatically on Mailbox servers**: Administrators can create mail flow rules (also known as transport rules) to automatically IRM-protect messages that match specified conditions. For more information, see [Understanding Transport Protection Rules](https://technet.microsoft.com/library/9bd6d049-165e-4e51-a79f-3b8ff409da55.aspx).
 
     > [!NOTE]
     > IRM protection isn't applied again to messages that are already IRM-protected. For example, if a user IRM-protects a message in Outlook or Outlook on the web, a transport protection rule won't apply IRM protection to the same message.
@@ -105,20 +105,20 @@ This table describes the scenarios for sending messages, and whether IRM protect
 |:-----|:-----|:-----|
 |Sending messages within the same on-premises Exchange organization|Yes|For the requirements, see the [IRM requirements](#irm-requirements) section later in this topic.|
 |Sending messages between different Active Directory forests in an on-premises organization.|Yes|For the requirements, see [Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests](https://go.microsoft.com/fwlink/p/?linkId=199009).|
-|Sending messages between an on-premises Exchange organization and an Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange 2013 Hybrid Deployments](http://technet.microsoft.com/library/ba6ec48b-8f79-4807-b74b-fd442bbbe82f.aspx).|
+|Sending messages between an on-premises Exchange organization and an Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange 2013 Hybrid Deployments](https://technet.microsoft.com/library/ba6ec48b-8f79-4807-b74b-fd442bbbe82f.aspx).|
 |Sending messages to external recipients|No|Exchange doesn't include a solution for sending IRM-protected messages to external recipients in non-federated organizations. To create a federated trust between two Active Directory forests by using Active Directory Federation Services (AD FS), see [Understanding AD RMS Trust Policies](https://go.microsoft.com/fwlink/p/?linkId=182909).|
 
 ## Decrypt IRM-protected messages to enforce messaging policies
 
 To enforce messaging policies and for regulatory compliance, Exchange needs access to the content of encrypted messages. To meet eDiscovery requirements due to litigation, regulatory audits, or internal investigations, a designated auditor must also be able to search encrypted messages. To help with these tasks, Exchange includes the following decryption features:
 
-- **Transport decryption**: Allows access to message content by the transport agents that are installed on Exchange servers. For more information, see [Understanding Transport Decryption](http://technet.microsoft.com/library/4267c46d-f488-404d-a5cb-51f9127461c0.aspx).
+- **Transport decryption**: Allows access to message content by the transport agents that are installed on Exchange servers. For more information, see [Understanding Transport Decryption](https://technet.microsoft.com/library/4267c46d-f488-404d-a5cb-51f9127461c0.aspx).
 
 - **Journal report decryption**: Allows standard or premium journaling to save a clear-text copy of IRM-protected messages in journal reports. For more information, see [Enable journal report decryption](journaling/journaling-procedures.md#enable-journal-report-decryption).
 
-- **IRM decryption for Exchange Search**: Allows Exchange Search to index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in the search results. For more information, see [Configure IRM for Exchange Search and In-Place eDiscovery](http://technet.microsoft.com/library/d96790e9-93ad-4a56-b90f-2dbfa2f2073c.aspx).
+- **IRM decryption for Exchange Search**: Allows Exchange Search to index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in the search results. For more information, see [Configure IRM for Exchange Search and In-Place eDiscovery](https://technet.microsoft.com/library/d96790e9-93ad-4a56-b90f-2dbfa2f2073c.aspx).
 
-To enable these decryption features, you need to add the Federation mailbox (a system mailbox that's created by Exchange), to the Super Users group on the AD RMS server. For instructions, see [Add Federated Delivery Mailbox to AD RMS Super Users](http://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).
+To enable these decryption features, you need to add the Federation mailbox (a system mailbox that's created by Exchange), to the Super Users group on the AD RMS server. For instructions, see [Add Federated Delivery Mailbox to AD RMS Super Users](https://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).
 
 ## Prelicensing
 
@@ -139,7 +139,7 @@ The built-in transport agents that are associated with IRM are described in this
 |RMS Protocol Decryption Agent|No|**OnEndOfData**|Decrypts IRM-protected messages to allow access to the message content by transport agents.|
 |Transport Rule Agent|Yes|**OnRoutedMessage**|Flags messages that match the conditions in a transport protection rule to be IRM-protected by the RMS Encryption agent.|
 
-For more information about transport agents, see [Transport Agents](http://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
+For more information about transport agents, see [Transport Agents](https://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
 
 ## IRM requirements
 
@@ -147,16 +147,16 @@ By default, an Exchange organization is enabled for IRM. To actually implement I
 
 |**Server**|**Requirements**|
 |:-----|:-----|
-|AD RMS cluster|*AD RMS cluster* is the term that's used for any AD RMS deployment, including a single AD RMS server. AD RMS is a Web service, so you don't need to set up a Windows Server failover cluster. For high availability and load-balancing, you can deploy multiple AD RMS servers in the cluster and use network load balancing (NLB). <br/> **Service connection point**: AD RMS-aware applications like Exchange use the service connection point that's registered in Active Directory to discover an AD RMS cluster and URLs. There's only one service connection point for AD RMS in an Active Directory forest. You can register the service connection point during AD RMS Setup, or after setup is complete. <br/> **Permissions**: Read and Execute permissions to the AD RMS server certification pipeline (the `ServerCertification.asmx` file at `\inetpub\wwwroot\_wmcs\certification\`) must be assigned to these security principals: <br/> • The Exchange Servers group or individual Exchange servers. <br/> • The AD RMS Service group on AD RMS servers. <br/> For details, see [Set Permissions on the AD RMS Server Certification Pipeline](https://go.microsoft.com/fwlink/p/?linkId=186951). <br/> **AD RMS super users**: To enable transport decryption, journal report decryption, IRM in Outlook on the web, and IRM decryption for Exchange Search, you need to add the Federation mailbox to the Super Users group on the AD RMS server. For details, see [Add Federated Delivery Mailbox to AD RMS Super Users](http://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).|
+|AD RMS cluster|*AD RMS cluster* is the term that's used for any AD RMS deployment, including a single AD RMS server. AD RMS is a Web service, so you don't need to set up a Windows Server failover cluster. For high availability and load-balancing, you can deploy multiple AD RMS servers in the cluster and use network load balancing (NLB). <br/> **Service connection point**: AD RMS-aware applications like Exchange use the service connection point that's registered in Active Directory to discover an AD RMS cluster and URLs. There's only one service connection point for AD RMS in an Active Directory forest. You can register the service connection point during AD RMS Setup, or after setup is complete. <br/> **Permissions**: Read and Execute permissions to the AD RMS server certification pipeline (the `ServerCertification.asmx` file at `\inetpub\wwwroot\_wmcs\certification\`) must be assigned to these security principals: <br/> • The Exchange Servers group or individual Exchange servers. <br/> • The AD RMS Service group on AD RMS servers. <br/> For details, see [Set Permissions on the AD RMS Server Certification Pipeline](https://go.microsoft.com/fwlink/p/?linkId=186951). <br/> **AD RMS super users**: To enable transport decryption, journal report decryption, IRM in Outlook on the web, and IRM decryption for Exchange Search, you need to add the Federation mailbox to the Super Users group on the AD RMS server. For details, see [Add Federated Delivery Mailbox to AD RMS Super Users](https://technet.microsoft.com/library/44618df9-54f0-4474-a450-dcba48a02901.aspx).|
 |Exchange|Exchange 2010 or later is required. <br/> In a production environment, installing AD RMS and Exchange on the same server isn't supported.|
 |Outlook|AD RMS templates for protecting messages are available in Outlook 2007 or later. <br/> Outlook protection rules in Exchange require Outlook 2010 or later.|
-|Exchange ActiveSync|IRM is available on mobile applications and devices that support Exchange ActiveSync protocol version 14.1 or later, and the included **RightsManagementInformation** tag (both introduced in Exchange 2010 Service Pack 1). Users with supported devices can use ActiveSync to view, reply to, forward, and create IRM-protected messages without connecting to a computer to activate the device for IRM. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](http://technet.microsoft.com/library/ebf04460-4d61-4b00-86b9-85ec1dbbd6a1.aspx).|
+|Exchange ActiveSync|IRM is available on mobile applications and devices that support Exchange ActiveSync protocol version 14.1 or later, and the included **RightsManagementInformation** tag (both introduced in Exchange 2010 Service Pack 1). Users with supported devices can use ActiveSync to view, reply to, forward, and create IRM-protected messages without connecting to a computer to activate the device for IRM. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](https://technet.microsoft.com/library/ebf04460-4d61-4b00-86b9-85ec1dbbd6a1.aspx).|
 
 Exchange IRM features support Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Microsoft partners](https://go.microsoft.com/fwlink/p/?linkId=210336).
 
 ## Configure and test IRM
 
-You use the Exchange Management Shell to configure IRM features in Exchange. For procedures, see [Managing Rights Protection](http://technet.microsoft.com/library/e5b3c7d1-31d6-481f-82e7-a3766da9a510.aspx).
+You use the Exchange Management Shell to configure IRM features in Exchange. For procedures, see [Managing Rights Protection](https://technet.microsoft.com/library/e5b3c7d1-31d6-481f-82e7-a3766da9a510.aspx).
 
 After you install and configure a Mailbox server, you can use the **Test-IRMConfiguration** cmdlet to perform end-to-end tests of your IRM deployment. The cmdlet performs these tests:
 
@@ -174,7 +174,7 @@ After you install and configure a Mailbox server, you can use the **Test-IRMConf
 
 - Acquires a prelicense for the specified recipient.
 
-For more information, see [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
+For more information, see [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
 ::: moniker range="exchserver-2016"
 

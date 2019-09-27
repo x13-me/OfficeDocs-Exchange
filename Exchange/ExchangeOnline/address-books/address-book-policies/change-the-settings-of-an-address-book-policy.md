@@ -5,10 +5,10 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Change the settings of an address book policy in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -77,7 +77,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
    Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
    ```
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](http://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
 
 ### How do you know this worked?
 

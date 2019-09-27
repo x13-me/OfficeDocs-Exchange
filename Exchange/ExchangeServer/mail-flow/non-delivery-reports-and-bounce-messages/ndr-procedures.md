@@ -5,8 +5,8 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Procedures for DSNs and NDRs in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -48,7 +48,7 @@ Get-SystemMessage -Original | Select-Object -Property Identity,DsnCode,Language,
 
  **Note**: You should output the list to a file, because the list is very long, and you'll receive errors if you don't have the required language packs installed.
 
-For detailed syntax and parameter information, see [Get-SystemMessage](http://technet.microsoft.com/library/54d3650c-fd80-43c0-a64f-41d57673ff8b.aspx).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://technet.microsoft.com/library/54d3650c-fd80-43c0-a64f-41d57673ff8b.aspx).
 
 ## Use the Exchange Management Shell to view custom NDRs
 
@@ -80,7 +80,7 @@ This example returns detailed information for the custom English NDR for the **P
 Get-SystemMessage En\ProhibitSendReceiveMailBox | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-SystemMessage](http://technet.microsoft.com/library/54d3650c-fd80-43c0-a64f-41d57673ff8b.aspx).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://technet.microsoft.com/library/54d3650c-fd80-43c0-a64f-41d57673ff8b.aspx).
 
 ## Create custom NDRs
 
@@ -114,7 +114,7 @@ New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried 
 New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="https://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](http://technet.microsoft.com/library/77b06405-076d-43cf-89b1-aa62b6565d8d.aspx).
+For detailed syntax and parameter information, see [New-SystemMessage](https://technet.microsoft.com/library/77b06405-076d-43cf-89b1-aa62b6565d8d.aspx).
 
 ### Use the Exchange Management Shell to create custom NDRs for quotas
 
@@ -138,7 +138,7 @@ This example creates a custom English plain text NDR for the **ProhibitSendRecei
 New-SystemMessage -Language En -QuotaMessageType ProhibitSendReceiveMailBox -Text "Your mailbox is full, and can't send or receive messages. Delete any unwanted large messages (messages with attachments) and empty your Deleted Items folder"
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](http://technet.microsoft.com/library/77b06405-076d-43cf-89b1-aa62b6565d8d.aspx).
+For detailed syntax and parameter information, see [New-SystemMessage](https://technet.microsoft.com/library/77b06405-076d-43cf-89b1-aa62b6565d8d.aspx).
 
 ### How do you know this worked?
 
@@ -182,7 +182,7 @@ Set-SystemMessage -Identity En\Internal\5.1.2 -Original
 
  **Note**: If there's no corresponding default NDR, you receive an error when you use the _Original_ switch.
 
-For detailed syntax and parameter information, see [Set-SystemMessage](http://technet.microsoft.com/library/53b76641-d341-42a8-b281-018a91af6a36.aspx).
+For detailed syntax and parameter information, see [Set-SystemMessage](https://technet.microsoft.com/library/53b76641-d341-42a8-b281-018a91af6a36.aspx).
 
 ### How do you know this worked?
 
@@ -214,7 +214,7 @@ This example removes the custom English NDR for the **ProhibitSendReceive** quot
 Remove-SystemMessage -Identity En\ProhibitSendReceiveMailBox
 ```
 
-For detailed syntax and parameter information, see [Remove-SystemMessage](http://technet.microsoft.com/library/1566222b-407a-4e78-a0df-5190b23d53da.aspx).
+For detailed syntax and parameter information, see [Remove-SystemMessage](https://technet.microsoft.com/library/1566222b-407a-4e78-a0df-5190b23d53da.aspx).
 
 ### How do you know this worked?
 
