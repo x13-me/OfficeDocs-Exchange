@@ -39,6 +39,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2016 CU14|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2016 CU13|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
 |Exchange 2016 CU12|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)|
 |Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-October-2018-Quarterly-Exchange-Updates/ba-p/608455)|
