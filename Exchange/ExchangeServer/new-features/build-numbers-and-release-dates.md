@@ -31,7 +31,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2019 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -49,7 +49,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2016 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -78,7 +78,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2013 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -115,7 +115,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2010 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
@@ -198,7 +198,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
