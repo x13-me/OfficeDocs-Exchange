@@ -23,14 +23,6 @@ If you already have an Office 365 user account, select Sign In. You don't need a
 > [!NOTE]
 > If you receive sync warning messages in the Office 365 portal, errors in the synchronization server event logs, or unhealthy directory synchronization notification emails from Microsoft Online Services, you may be having some kind of directory synchronization issue. The <A href="https://aka.ms/dsup">Directory Synchronization Troubleshooter</A> is a Web-based diagnostic tool designed to help identify common types of synchronization failures and prescribe targeted solutions to any issues found. The Directory Synchronization Troubleshooter must be run on the DirSync server.
 
-## Prerequisites
-
-We'll check to see if you have Azure Active Directory Sign-in Assistant and the Azure Active Directory Module for Windows PowerShell installed.
-
-The Azure Active Directory Sign-in Assistant comes in two versions: [32 bit](https://go.microsoft.com/fwlink/?linkid=286261) and [64 bit](https://go.microsoft.com/fwlink/?linkid=286262).
-
-The Azure Active Directory Module for Windows PowerShell comes in two versions: [32 bit](https://go.microsoft.com/fwlink/?linkid=286258) and [64 bit](https://go.microsoft.com/fwlink/?linkid=286259).
-
 ## Directory Synchronization Checks
 
 <table>
