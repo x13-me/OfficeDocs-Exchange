@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Manage permissions for recipients
 ms.collection: exchange-server
 audience: ITPro
@@ -115,13 +115,13 @@ You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets t
 Add-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All [-AutoMapping $false]
 ```
 
-For more information, see [Add-MailboxPermission](http://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
+For more information, see [Add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
 
 ```
 Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All
 ```
 
-For more information, see [Remove-MailboxPermission](http://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx).
+For more information, see [Remove-MailboxPermission](https://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx).
 
 This example assigns the delegate Raymond Sam the Full Access permission to the mailbox of Terry Adams.
 
@@ -159,7 +159,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
    Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table -Auto User,Deny,IsInherited,AccessRights
    ```
 
-   For more information, see [Get-MailboxPermission](http://technet.microsoft.com/library/56bcc678-1598-4c9b-8b4f-4fa11c89ec41.aspx).
+   For more information, see [Get-MailboxPermission](https://technet.microsoft.com/library/56bcc678-1598-4c9b-8b4f-4fa11c89ec41.aspx).
 
 ## Use the Exchange Management Shell to assign the Send As permission to mailboxes and groups
 
@@ -169,7 +169,7 @@ You use the **Add-AdPermission** and **Remove-AdPermission** cmdlets to manage t
 <Add-AdPermission | Remove-AdPermission> -Identity <MailboxOrGroupNameOrDN> -User <DelegateIdentity> [-AccessRights ExtendedRight] -ExtendedRights "Send As"
 ```
 
-For more information, see [Add-AdPermission](http://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx) and [Remove-AdPermission](http://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx).
+For more information, see [Add-AdPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx) and [Remove-AdPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx).
 
  **Notes**:
 
@@ -211,7 +211,7 @@ To verify that you've successfully assigned or removed the Send As permission fo
    Get-ADPermission -Identity <MailboxOrGroupNameOrDN> | where {$_.ExtendedRights -like 'Send*'} | Format-Table -Auto User,Deny,ExtendedRights
    ```
 
-   For more information, see [Get-AdPermission](http://technet.microsoft.com/library/f20251dc-ab54-4dd5-b80c-de0808fd4dc2.aspx).
+   For more information, see [Get-AdPermission](https://technet.microsoft.com/library/f20251dc-ab54-4dd5-b80c-de0808fd4dc2.aspx).
 
 ## Use the Exchange Management Shell to assign the Send on Behalf permission to mailboxes and groups
 

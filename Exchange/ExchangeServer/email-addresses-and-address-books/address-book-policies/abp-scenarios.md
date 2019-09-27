@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Scenario Deploying address book policies in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -95,7 +95,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 
 These are the important issues to consider when you use ABPs in your organization:
 
-- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](http://technet.microsoft.com/library/a1d277a0-5437-40af-aade-e4730a0d1308.aspx).
+- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://technet.microsoft.com/library/a1d277a0-5437-40af-aade-e4730a0d1308.aspx).
 
 - A user that's assigned an ABP needs to exist in the GAL that's specified for the ABP.
 

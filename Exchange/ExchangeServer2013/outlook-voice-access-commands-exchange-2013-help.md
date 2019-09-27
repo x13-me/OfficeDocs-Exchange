@@ -5,7 +5,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 ms.date: 3/9/2015
-ms.reviewer: 
+ms.reviewer:
 ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b
 mtps_version: v=EXCHG.150
 ---
@@ -135,4 +135,4 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 [Setting up Outlook Voice Access](set-up-outlook-voice-access-exchange-2013-help.md)
 
-[Set Up Client Voice Mail Features](http://technet.microsoft.com/library/5e661cfd-d34e-4caa-91a5-967bbecb75eb.aspx)
+[Set Up Client Voice Mail Features](https://technet.microsoft.com/library/5e661cfd-d34e-4caa-91a5-967bbecb75eb.aspx)

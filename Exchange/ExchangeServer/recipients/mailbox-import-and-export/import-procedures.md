@@ -8,7 +8,7 @@ ms.prod: exchange-server-it-pro
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
 ms.collection: exchange-server
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 audience: ITPro
 title: Procedures for mailbox imports from .pst files in Exchange Server
@@ -123,7 +123,7 @@ This example creates a new mailbox import request with these settings:
 New-MailboxImportRequest -Name "Kathleen Reiter Import" -FilePath \\SERVER01\PSTFiles\Recovered.pst -Mailbox kreiter -IsArchive -IncludeFolders "#Inbox#" -TargetRootFolder "Recovered Files" -Priority High
 ```
 
-For detailed syntax and parameter information, see [New-MailboxImportRequest](http://technet.microsoft.com/library/4ca9af1a-33fa-4d53-a765-f46a1b7f2d3a.aspx).
+For detailed syntax and parameter information, see [New-MailboxImportRequest](https://technet.microsoft.com/library/4ca9af1a-33fa-4d53-a765-f46a1b7f2d3a.aspx).
 
 ### How do you know this worked?
 
@@ -185,7 +185,7 @@ This example returns the summary list of completed mailbox import requests in th
 Get-MailboxImportRequest -Status Completed -BatchName "Import DB01 PSTs"
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxImportRequest](http://technet.microsoft.com/library/7ee34d59-190e-45b4-80be-4479b1935ae4.aspx).
+For detailed syntax and parameter information, see [Get-MailboxImportRequest](https://technet.microsoft.com/library/7ee34d59-190e-45b4-80be-4479b1935ae4.aspx).
 
 To view detailed information about a mailbox import request, use this syntax:
 
@@ -201,7 +201,7 @@ This example returns detailed information for the mailbox import request named M
 Get-MailboxImportRequestStatistics -Identity "aal-zuhairi\MailboxImport" -IncludeReport | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxImportRequestStatistics](http://technet.microsoft.com/library/678ffbbb-469d-4681-ba2e-33d4e0afe94f.aspx).
+For detailed syntax and parameter information, see [Get-MailboxImportRequestStatistics](https://technet.microsoft.com/library/678ffbbb-469d-4681-ba2e-33d4e0afe94f.aspx).
 
 ## Use the Exchange Management Shell to modify mailbox import requests
 
@@ -219,7 +219,7 @@ This example modifies the failed mailbox import request for the mailbox of Valer
 Set-MailboxImportRequest -Identity "Valeria Barrios\MailboxImport" -BadItemLimit 5
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxImportRequest](http://technet.microsoft.com/library/7802e75f-e7db-424f-b68f-751cdabb324b.aspx).
+For detailed syntax and parameter information, see [Set-MailboxImportRequest](https://technet.microsoft.com/library/7802e75f-e7db-424f-b68f-751cdabb324b.aspx).
 
  **Note**: After you modify a suspended or failed mailbox import request, you need to resume it by using the **Resume-MailboxImportRequest** cmdlet.
 
@@ -253,7 +253,7 @@ This example suspends all in-progress mailbox import requests with the comment "
 Get-MailboxImportRequest -Status InProgress | Suspend-MailboxImportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxImportRequest](http://technet.microsoft.com/library/49836c94-b353-49e8-a1f1-ca59e4a37443.aspx).
+For detailed syntax and parameter information, see [Suspend-MailboxImportRequest](https://technet.microsoft.com/library/49836c94-b353-49e8-a1f1-ca59e4a37443.aspx).
 
  **Notes**:
 
@@ -299,7 +299,7 @@ This example resumes all suspended mailbox import requests.
 Get-MailboxImportRequest -Status Suspended | Resume-MailboxImportRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxImportRequest](http://technet.microsoft.com/library/4175a9af-6651-4094-bb6b-ef292d753107.aspx).
+For detailed syntax and parameter information, see [Resume-MailboxImportRequest](https://technet.microsoft.com/library/4175a9af-6651-4094-bb6b-ef292d753107.aspx).
 
 ### How do you know this worked?
 
@@ -333,7 +333,7 @@ This example removes all completed mailbox import requests.
 Get-MailboxImportRequest -Status Completed | Remove-MailboxImportRequest
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxImportRequest](http://technet.microsoft.com/library/4e8deb88-b078-4032-a47a-702ac0efe4eb.aspx).
+For detailed syntax and parameter information, see [Remove-MailboxImportRequest](https://technet.microsoft.com/library/4e8deb88-b078-4032-a47a-702ac0efe4eb.aspx).
 
 ### How do you know this worked?
 

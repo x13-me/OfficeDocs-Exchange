@@ -4,8 +4,8 @@ TOCTitle: View statistics for public folders and public folder items
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 mtps_version: v=EXCHG.150
 ---
@@ -23,7 +23,7 @@ This topic explains how to retrieve statistics about a public folder, such as th
 
 - Estimated time to complete: 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
 
 - You can't use the EAC to retrieve public folder statistics.
 
@@ -43,7 +43,7 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 > [!NOTE]
 > The value for the _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
 
-For detailed syntax and parameter information, see [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
 
 ## Use the Shell to view statistics for public folder items
 
@@ -77,7 +77,7 @@ This example returns additional information about the items within the public fo
 Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
 
 ## Use the Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
@@ -97,4 +97,4 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Enable and configure IMAP4 on an Exchange server
 ms.collection: exchange-server
 audience: ITPro
@@ -144,7 +144,7 @@ Set-ImapSettings -ExternalConnectionSettings "mail.contoso.com:993:SSL","mail.co
 
  **Notes**:
 
-- For detailed syntax and parameter information, see [Set-IMAPSettings](http://technet.microsoft.com/library/58e51734-83bd-4e71-bd13-9960efaa80c3.aspx).
+- For detailed syntax and parameter information, see [Set-IMAPSettings](https://technet.microsoft.com/library/58e51734-83bd-4e71-bd13-9960efaa80c3.aspx).
 
 - The external IMAP4 server FQDN that you configure needs to have a corresponding record in your public DNS, and the TCP port (143 or 993) needs to be allowed through your firewall to the Exchange server.
 
@@ -162,7 +162,7 @@ To verify that you've successfully configured the IMAP4 settings for external cl
 Get-ImapSettings | Format-List *ConnectionSettings,*Bindings,X509CertificateName
 ```
 
-For more information, see [Get-IMAPSettings](http://technet.microsoft.com/library/172e1a14-bd90-4010-abd9-e4878b4213a2.aspx).
+For more information, see [Get-IMAPSettings](https://technet.microsoft.com/library/172e1a14-bd90-4010-abd9-e4878b4213a2.aspx).
 
 ## Step 3: Restart the IMAP4 services
 
@@ -212,7 +212,7 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 
 3. You can test IMAP4 client connectivity to the Exchange server by using the following methods:
 
-   - **Internal clients**: Use the **Test-ImapConnectivity** cmdlet. For example, `Test-ImapConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-ImapConnectivity](http://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
+   - **Internal clients**: Use the **Test-ImapConnectivity** cmdlet. For example, `Test-ImapConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-ImapConnectivity](https://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
 
    **Note**: The _Lightmode_ switch tells the command test IMAP4 logons to the server. To test sending (SMTP) and receiving (IMAP4) a message, you need to configure the authenticated SMTP settings as described in [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md).
 

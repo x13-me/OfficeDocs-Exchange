@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 ms.date: 7/12/2018
-ms.reviewer: 
+ms.reviewer:
 title: Create a public folder mailbox in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -80,7 +80,7 @@ This example creates a secondary hierarcy public folder mailbox named Istanbul, 
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ## How do you know this worked?
 

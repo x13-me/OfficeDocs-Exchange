@@ -13,7 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
-ms.reviewer: 
+ms.reviewer:
 description: "Summary: Use the steps in this article to synchronize public folders between Office 365 and your Exchange Server 2010 on-premises deployment."
 ---
 
@@ -55,13 +55,13 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 - These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments, and that the DNS records that are used for the Autodiscover service for most users reference an on-premises end point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
-- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
+- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
 
 - Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can occur because a non-routable email address that's assigned to mail-enabled public folders, conflicts with other users and groups in Office 365, and other reasons.
 
 - These instructions assume that your Exchange Online organization has been upgraded to a version that supports public folders.
 
-- In Exchange Online, you must be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Exchange Online. For information about how to enable the Organization Management role group, see [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
+- In Exchange Online, you must be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Exchange Online. For information about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
 
 - In Exchange 2010, you must be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?LinkId=299212)
 
@@ -73,7 +73,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 - Outlook 2016 for Mac (and earlier versions) and Outlook for Mac for Office 365 are not supported for cross-premises legacy public folders. Users must be in the same location as the public folders to access them with Outlook for Mac or Outlook for Mac for Office 365. Additionally, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
 
-- After you follow the instructions in this article to configure your on-premises public folders for a hybrid deployment, users who are external to your organization won't be able to send messages to your on-premises public folders unless you take additional steps. You can either set the accepted domain for the public folders to Internal Relay (see [Manage Accepted Domains in Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx)) or you can disable Directory Based Edge Blocking (DBEB) (see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)).
+- After you follow the instructions in this article to configure your on-premises public folders for a hybrid deployment, users who are external to your organization won't be able to send messages to your on-premises public folders unless you take additional steps. You can either set the accepted domain for the public folders to Internal Relay (see [Manage Accepted Domains in Exchange Online](https://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx)) or you can disable Directory Based Edge Blocking (DBEB) (see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)).
 
 ## Step 2: Make remote public folders discoverable
 
@@ -151,7 +151,7 @@ Run the following command in **Windows PowerShell**:
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 
-You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](http://technet.microsoft.com/en-us/library/jj151771.aspx). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
+You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/en-us/library/jj151771.aspx). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
 
 > [!IMPORTANT]
 > An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2013 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.

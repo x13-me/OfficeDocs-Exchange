@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: In-Place eDiscovery in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -24,7 +24,7 @@ If your organization adheres to legal discovery requirements (related to organiz
 
 ## How In-Place eDiscovery works
 
-In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the [Discovery Management](http://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources professionals.
+In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources professionals.
 
 Authorized users can perform an In-Place eDiscovery search by selecting the mailboxes, and then specifying search criteria such as keywords, start and end dates, sender and recipient addresses, and message types. After the search is complete, authorized users can then select one of the following actions:
 
@@ -90,9 +90,9 @@ The following screenshot shows an example of a search query in the EAC.
 
 When using In-Place eDiscovery, also consider the following:
 
-- **Attachments** - In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](http://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
+- **Attachments** - In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
 
-- **Unsearchable items** - Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+- **Unsearchable items** - Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
 
 - **Encrypted items** - Because messages encrypted using S/MIME aren't indexed by Exchange Search, In-Place eDiscovery doesn't search these messages. If you select the option to include unsearchable items in search results, these S/MIME encrypted messages are copied to the discovery mailbox.
 
@@ -225,11 +225,11 @@ In-Place eDiscovery uses the content indexes created by Exchange Search. Exchang
 
 With a single content indexing engine, no additional resources are used to crawl and index mailbox databases for In-Place eDiscovery when eDiscovery requests are received by IT departments.
 
-For more information about the file formats indexed by Exchange Search, see [File Formats Indexed By Exchange Search](http://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx).
+For more information about the file formats indexed by Exchange Search, see [File Formats Indexed By Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx).
 
 ## eDiscovery in an Exchange hybrid deployment
 
-In a hybrid deployment, which is an environment where some mailboxes exist on your on-premises Mailbox servers and some mailboxes exist in a cloud-based organization, you can perform In-Place eDiscovery searches of your cloud-based mailboxes using the EAC in your on-premises organization. If you intend to copy messages to a discovery mailbox, you must select an on-premises discovery mailbox. Messages from cloud-based mailboxes that are returned in search results are copied to the specified on-premises discovery mailbox. To learn more about hybrid deployments, see [Exchange Server Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx).
+In a hybrid deployment, which is an environment where some mailboxes exist on your on-premises Mailbox servers and some mailboxes exist in a cloud-based organization, you can perform In-Place eDiscovery searches of your cloud-based mailboxes using the EAC in your on-premises organization. If you intend to copy messages to a discovery mailbox, you must select an on-premises discovery mailbox. Messages from cloud-based mailboxes that are returned in search results are copied to the specified on-premises discovery mailbox. To learn more about hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx).
 
 To successfully perform cross-premises eDiscovery searches in an Exchange Server hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication is a server-to-server authentication protocol that allows applications to authenticate to each other.
 
@@ -239,7 +239,7 @@ OAuth authentication supports the following eDiscovery scenarios in an Exchange 
 
 - Search on-premises and cloud-based mailboxes in the same eDiscovery search.
 
-For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](http://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
 
 For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
 

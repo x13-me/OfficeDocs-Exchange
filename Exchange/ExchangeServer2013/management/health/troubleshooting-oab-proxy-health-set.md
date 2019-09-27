@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting OAB.Proxy Health Set
 ms:assetid: b717fc00-a787-44d6-8ccb-0eb4b2ea9e73
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720877
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -135,7 +135,7 @@ To troubleshoot this issue, follow these steps:
 
 9. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-10. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+10. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

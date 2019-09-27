@@ -2,7 +2,7 @@
 title: 'Use batch migration to migrate public folders to Exchange 2013 from previous versions'
 TOCTitle: Use batch migration to migrate public folders to Exchange 2013 from previous versions
 ms:assetid: da808e27-d2b7-4fbd-915c-a600751f526c
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -68,7 +68,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://go.microsoft.com/fwlink/p/?linkid=81779).
 
-- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
 - Before you migrate, you should consider the [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms.date: 7/3/2018
-ms.reviewer: 
+ms.reviewer:
 title: Address rewriting procedures on Edge Transport servers
 ms.collection: exchange-server
 audience: ITPro
@@ -39,7 +39,7 @@ For more information about address rewriting, see [Address rewriting on Edge Tra
 
 - You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
-- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](http://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx).
+- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](https://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -90,7 +90,7 @@ The following example displays the details of the address rewrite entry named Re
 Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
 ```
 
-For more information, see [Get-AddressRewriteEntry](http://technet.microsoft.com/library/633abc53-1719-42cb-bf56-077f38dd942e.aspx).
+For more information, see [Get-AddressRewriteEntry](https://technet.microsoft.com/library/633abc53-1719-42cb-bf56-077f38dd942e.aspx).
 
 ## Use the Exchange Management Shell to create address rewrite entries
 
@@ -148,7 +148,7 @@ This example is just like the previous example, except now messages sent from th
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
 ```
 
-For more information, see [New-AddressRewriteEntry](http://technet.microsoft.com/library/b75fa347-ae84-4fe8-90be-2fe1bc6bc8d4.aspx).
+For more information, see [New-AddressRewriteEntry](https://technet.microsoft.com/library/b75fa347-ae84-4fe8-90be-2fe1bc6bc8d4.aspx).
 
 ### How do you know this worked?
 
@@ -234,7 +234,7 @@ This example adds finanace.contoso.com and removes marketing.contoso.com from th
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
 ```
 
-For more information, see [Set-AddressRewriteEntry](http://technet.microsoft.com/library/2390ee56-7d46-4584-aae8-fba8455e9e04.aspx).
+For more information, see [Set-AddressRewriteEntry](https://technet.microsoft.com/library/2390ee56-7d46-4584-aae8-fba8455e9e04.aspx).
 
 ### How do you know this worked?
 
@@ -288,7 +288,7 @@ If you're satisfied with the result, run the command again without the _WhatIf_ 
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
 ```
 
-For more information, see [Remove-AddressRewriteEntry](http://technet.microsoft.com/library/a588e988-3f80-42c6-aae0-8efaf2f439b3.aspx).
+For more information, see [Remove-AddressRewriteEntry](https://technet.microsoft.com/library/a588e988-3f80-42c6-aae0-8efaf2f439b3.aspx).
 
 ### How do you know this worked?
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 50daeac5-a16f-4362-a325-19e0fe25d59d
 ms.date: 6/7/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure database availability group properties
 ms.collection: exchange-server
 audience: ITPro
@@ -133,6 +133,6 @@ To verify that you've successfully configured the DAG, do the following:
 
 [Manage database availability group membership](dag-memberships.md)
 
-[Get-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/ea64d731-55ae-4a39-9eec-a72aa36d6dad.aspx)
+[Get-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/ea64d731-55ae-4a39-9eec-a72aa36d6dad.aspx)
 
-[Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx)
+[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx)

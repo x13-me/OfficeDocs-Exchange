@@ -4,8 +4,8 @@ TOCTitle: How DLP rules are applied to evaluate messages
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 mtps_version: v=EXCHG.150
 ---
@@ -18,7 +18,7 @@ You can set up sensitive information rules within your Microsoft Exchange data l
 
 ## Get precise about your needs
 
-Suppose you need to act on credit card information in messages. The actions you take once it is found are not the subject of this topic, but you can learn more about that in [Transport Rule Actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx). With as most certainty as possible, you need to ensure that what is detected in a message is truly credit card data and not something else that could be a legitimate use of groups of numbers that merely resemble credit card data; for example, a reservation code or a vehicle identification number. To meet this need, let's make it clear that the following information should be classified as a credit card.
+Suppose you need to act on credit card information in messages. The actions you take once it is found are not the subject of this topic, but you can learn more about that in [Transport Rule Actions](https://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx). With as most certainty as possible, you need to ensure that what is detected in a message is truly credit card data and not something else that could be a legitimate use of groups of numbers that merely resemble credit card data; for example, a reservation code or a vehicle identification number. To meet this need, let's make it clear that the following information should be classified as a credit card.
 
 > Margie's Travel, <br/><br/> I have received updated credit card information for Spencer. <br/> Spencer Badillo <br/> Visa: 4111 1111 1111 1111 <br/> Expires: 2/2012 <br/><br/> Please update his travel profile. **
 
@@ -94,7 +94,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](http://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner:
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner:
 
 ```powershell
 $rule_collection = Get-ClassificationRuleCollection
@@ -108,6 +108,6 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 
-[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+[Transport Rules](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
 
-[Exchange Management Shell](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)
+[Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)

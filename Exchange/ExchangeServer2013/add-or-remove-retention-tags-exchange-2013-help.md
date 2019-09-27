@@ -4,8 +4,8 @@ TOCTitle: Add retention tags to or remove retention tags from a retention policy
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 mtps_version: v=EXCHG.150
 ---
@@ -34,9 +34,9 @@ For more information about retention tags, see [Retention tags and retention pol
 
 - Estimated time to completion: 10 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
-- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. To start the Managed Folder Assistant so that it processes a mailbox, see [Configure and run the Managed Folder Assistant in Exchange 2016](http://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx).
+- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. To start the Managed Folder Assistant so that it processes a mailbox, see [Configure and run the Managed Folder Assistant in Exchange 2016](https://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -82,11 +82,11 @@ $TagList.Remove((Get-RetentionPolicyTag 'VPs-Inbox').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
 ```
 
-For detailed syntax and parameter information, see [Set-RetentionPolicy](http://technet.microsoft.com/library/34fbc099-4f41-4f57-867c-ad1e08513c51.aspx) and [Get-RetentionPolicy](http://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx).
+For detailed syntax and parameter information, see [Set-RetentionPolicy](https://technet.microsoft.com/library/34fbc099-4f41-4f57-867c-ad1e08513c51.aspx) and [Get-RetentionPolicy](https://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx).
 
 ## How do you know this worked?
 
-To verify that you have successfully added or removed a retention tag from a retention policy, use the [Get-RetentionPolicy](http://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx) cmdlet to verify the _RetentionPolicyTagLinks_ property.
+To verify that you have successfully added or removed a retention tag from a retention policy, use the [Get-RetentionPolicy](https://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx) cmdlet to verify the _RetentionPolicyTagLinks_ property.
 
 This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags added to the Default MRM Policy and pipes them to the **Format-Table** cmdlet to output only the name property of each tag.
 

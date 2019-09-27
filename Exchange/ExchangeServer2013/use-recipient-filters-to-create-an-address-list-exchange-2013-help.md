@@ -4,8 +4,8 @@ TOCTitle: Create an address list by using recipient filters
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 mtps_version: v=EXCHG.150
 ---
@@ -16,13 +16,13 @@ _**Applies to:** Exchange Server 2013_
 
 This topic explains how to create an address list by using recipient filters. To learn more about address lists, see [Address lists](address-lists-exchange-2013-help.md).
 
-For additional management tasks related to address lists, see [Managing Address Lists](http://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
 - To use the _RecipientFilter_ parameter to create a custom filter, you must specify a string for the filter. The Shell uses OPATH for the filtering syntax. OPATH is a querying language designed to query object data sources.
 
@@ -47,4 +47,4 @@ This example creates an address list for all users with Exchange mailboxes who h
 New-AddressList -Name "AgencyB" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)}
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](http://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).

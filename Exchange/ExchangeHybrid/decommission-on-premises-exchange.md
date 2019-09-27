@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 audience: ITPro
-ms.reviewer: 
+ms.reviewer:
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -81,9 +81,9 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 ### To disable directory synchronization and uninstall Exchange hybrid
 
-1. Run `Get-OrganizationConfig | Format-List PublicFoldersEnabled` and ensure that it is not set to Remote. If it is set to Remote, and the public folders are something you want to continue to access, you would need to migrate them to Exchange Online. For more information, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
+1. Run `Get-OrganizationConfig | Format-List PublicFoldersEnabled` and ensure that it is not set to Remote. If it is set to Remote, and the public folders are something you want to continue to access, you would need to migrate them to Exchange Online. For more information, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
 
-2. Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](http://technet.microsoft.com/en-us/library/hh852557.aspx).
+2. Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/en-us/library/hh852557.aspx).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity behavior.
@@ -99,7 +99,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 4. There are inbound and outbound connectors created by the Hybrid Configuration Wizard that you will want to delete. Use the following steps to do this:
 
-   1. Log in to the [Office 365 Admin portal](http://portal.office.com) and sign in as the Tenant Administrator.
+   1. Log in to the [Office 365 Admin portal](https://portal.office.com) and sign in as the Tenant Administrator.
 
    2. Select the option to manage **Exchange**.
 
@@ -111,7 +111,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 5. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
-   1. Log in to the [Office 365 Admin portal](http://portal.office.com) and sign in as the Tenant Administrator.
+   1. Log in to the [Office 365 Admin portal](https://portal.office.com) and sign in as the Tenant Administrator.
 
    2. Select the option to manage Exchange.
 
@@ -168,12 +168,12 @@ The graphic below describes the actual end state:
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
-1. Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
+1. Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
 
    > [!IMPORTANT]
    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.
 
-2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](http://technet.microsoft.com/en-us/library/hh852557.aspx).
+2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/en-us/library/hh852557.aspx).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.
@@ -221,7 +221,7 @@ The graphic below describes the actual end state:
 
 7. There are inbound and outbound connectors created by the Hybrid Configuration Wizard that you will want to delete. Use the following steps to do this:
 
-   1. Log in to the [Office 365 Admin portal](http://portal.office.com) and sign in as the Tenant Administrator.
+   1. Log in to the [Office 365 Admin portal](https://portal.office.com) and sign in as the Tenant Administrator.
 
    2. Select the option to manage **Exchange**.
 
@@ -233,7 +233,7 @@ The graphic below describes the actual end state:
 
 8. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
-   1. Log in to the [Office 365 Admin portal](http://portal.office.com) and sign in as the Tenant Administrator.
+   1. Log in to the [Office 365 Admin portal](https://portal.office.com) and sign in as the Tenant Administrator.
 
    2. Select the option to manage **Exchange**.
 

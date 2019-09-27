@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Limits for public folders
 ms.collection: exchange-server
 audience: ITPro
@@ -30,9 +30,9 @@ The following table lists the limits for public folders in on-premises Exchange 
 |:-----|:-----|:-----|
 |Total number of public folder mailboxes|1,000|1,000 is the limit for Exchange Server 2016 CU2 or later. Although you can create more than 1,000 public folder mailboxes, it isn't supported. [Create a public folder mailbox](create-public-folder-mailboxes.md)|
 |Total public folders in hierarchy|1,000,000|Although you can create more than 1,000,000 public folders, it isn't supported. For any deployment of 100,000 or more public folders, we recommend reading [Considerations when deploying public folders](deployment-considerations.md).|
-|Sub-folders under the parent folder|10,000|While you can create more than 1,000 sub-folders under a parent folder, we don't recommend that you do so._FolderHierarchyChildrenCountReceiveQuota_ parameter on the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
-|Folder depth|300|The folder depth is the number levels of nested folders that can exist in one branch of a public folder tree. _FolderHierarchyDepthRecieveQuota_ parameter on the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
-|Maximum messages per public folder|1 million| _MailboxMessagesPerFolderCountRecieveQuota_ parameter on the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
+|Sub-folders under the parent folder|10,000|While you can create more than 1,000 sub-folders under a parent folder, we don't recommend that you do so._FolderHierarchyChildrenCountReceiveQuota_ parameter on the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
+|Folder depth|300|The folder depth is the number levels of nested folders that can exist in one branch of a public folder tree. _FolderHierarchyDepthRecieveQuota_ parameter on the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
+|Maximum messages per public folder|1 million| _MailboxMessagesPerFolderCountRecieveQuota_ parameter on the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.|
 |Maximum individual public folder size|10 GB|This limit doesn't include subfolders beneath a single folder.[Configure storage quotas for a mailbox](../../recipients/user-mailboxes/storage-quotas.md)|
 |Public folder mailbox size|100 GB|[Configure storage quotas for a mailbox](../../recipients/user-mailboxes/storage-quotas.md)|
 |Number of user logons per public folder mailbox|2,000 concurrent user logons|We recommend that you configure your hierarchy so that you have no more than 2,000 users per public folder mailbox. For example, if you have 20,000 users, you should have 10 public folder mailboxes.|

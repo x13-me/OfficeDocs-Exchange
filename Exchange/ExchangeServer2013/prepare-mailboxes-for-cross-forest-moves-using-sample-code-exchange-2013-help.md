@@ -5,7 +5,7 @@ ms:assetid: f35ac7a5-bb84-4653-b6d0-65906e93627b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861124(v=EXCHG.150)
 ms:contentKeyID: 49360517
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -26,7 +26,7 @@ For more information about preparing for cross-forest moves, including descripti
 
 - Download the sample code from the [Prepare for Online Mailbox Move](https://go.microsoft.com/fwlink/p/?linkid=177882) page in the Microsoft Download Center.
 
-- To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1). To download the feature pack, see Microsoft Knowledge Base article 977791, [Service Pack 1 (build 3.3.1139.2) is available for Identity Lifecycle Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
+- To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1). To download the feature pack, see Microsoft Knowledge Base article 977791, [Service Pack 1 (build 3.3.1139.2) is available for Identity Lifecycle Manager 2007 Feature Pack 1](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
 
 - You also need the following:
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Place all mailboxes on hold
 ms.collection: exchange-server
 audience: ITPro
@@ -47,13 +47,13 @@ You can easily and quickly place all mailboxes on hold indefinitely or for a spe
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
 ```
 
-The example uses the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet and a recipient filter to retrieve all user mailboxes in the organization, and then pipes the list of mailboxes to the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet to enable the Litigation Hold and specify a hold duration. For more information, see [Place a mailbox on Litigation Hold](litigation-holds.md).
+The example uses the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet and a recipient filter to retrieve all user mailboxes in the organization, and then pipes the list of mailboxes to the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet to enable the Litigation Hold and specify a hold duration. For more information, see [Place a mailbox on Litigation Hold](litigation-holds.md).
 
 ## Place all mailboxes on In-Place Hold
 
 You can use the EAC to select up to 500 mailboxes and place them on hold. For details, see [Create or remove an In-Place Hold](in-place-holds.md).
 
-To place more than 500 users on In-Place Hold, use the Exchange Management Shell. For details, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+To place more than 500 users on In-Place Hold, use the Exchange Management Shell. For details, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
 
 > [!TIP]
 > In hybrid environments, you can use the inactive mailbox feature in Exchange Online to retain mailboxes without consuming a license or requiring an account for the mailbox. The inactive mailbox feature requires an "Exchange Online Plan 2, Office 365 Enterprise E3 and E5 subscriptions" license. If you have an Exchange Online Plan 1 license, you need to assign a separate "Exchange Online Archiving" license to the mailbox. For more information, see [Inactive mailbox](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
@@ -88,4 +88,4 @@ To place more than 500 users on In-Place Hold, use the Exchange Management Shell
    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
    ```
 
-   You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
+   You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](https://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).

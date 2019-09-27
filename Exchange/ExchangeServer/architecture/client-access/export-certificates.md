@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 7e4c4013-8a2b-4c25-a287-b367c65e48aa
 ms.date: 6/7/2018
-ms.reviewer: 
+ms.reviewer:
 title: Export a certificate from an Exchange server
 ms.collection:
 - Strat_EX_Admin
@@ -76,7 +76,7 @@ Export-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e 
 
 - You can use a similar procedure to export a pending certificate request (also known as a certificate signing request or CSR). For example, if you need to resubmit the certificate request to the certification authority, and you can't find the original certificate request file. When you export a certificate request, you typically don't need to use the _Password_ parameter or the _BinaryEncoded_ switch, and you save the request to a .req file. Note that you can't import an exported certificate request on another server.
 
-- For more information, see [Export-ExchangeCertificate](http://technet.microsoft.com/library/0fffc597-7b46-4bc3-915c-f00c9eb56b40.aspx).
+- For more information, see [Export-ExchangeCertificate](https://technet.microsoft.com/library/0fffc597-7b46-4bc3-915c-f00c9eb56b40.aspx).
 
 ## How do you know this worked?
 

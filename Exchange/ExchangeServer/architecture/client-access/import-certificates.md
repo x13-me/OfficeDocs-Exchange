@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Import or install a certificate on an Exchange server
 ms.collection:
 - Strat_EX_Admin
@@ -106,7 +106,7 @@ Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path 
 
 - If you want to be able to export the certificate from the server where you're importing it, you need to use the _PrivateKeyExportable_ parameter with the value `$true`.
 
-- For more information, see [Import-ExchangeCertificate](http://technet.microsoft.com/library/c1a98e97-e58a-49c8-a44d-948b2fc07876.aspx).
+- For more information, see [Import-ExchangeCertificate](https://technet.microsoft.com/library/c1a98e97-e58a-49c8-a44d-948b2fc07876.aspx).
 
 ## How do you know this worked?
 

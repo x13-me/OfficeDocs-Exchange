@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 58b46b2c-a6b2-424a-8fc2-0f1fe1ad8e18
-ms.reviewer: 
+ms.reviewer:
 description: "Learn about the Exchange permissions that are supported in hybrid environments"
 ---
 
@@ -20,7 +20,7 @@ description: "Learn about the Exchange permissions that are supported in hybrid 
 
 The Exchange Online in Office 365 organization is based on Exchange Server and, like on-premises organizations, it also uses Role Based Access Control (RBAC) to control permissions. Administrators are granted permissions using management role groups, and end users are granted permissions using management role assignment policies.
 
-Learn more about permissions in Exchange Online and on-premises Exchange at: [Permissions](http://technet.microsoft.com/library/d8dd605e-0af1-4e18-9ce6-e51d04e161ba.aspx)
+Learn more about permissions in Exchange Online and on-premises Exchange at: [Permissions](https://technet.microsoft.com/library/d8dd605e-0af1-4e18-9ce6-e51d04e161ba.aspx)
 
 ## Administrator permissions
 
@@ -31,7 +31,7 @@ You can add additional administrators in the Exchange Online organization, depen
 > [!IMPORTANT]
 > There is no transfer of permissions between the on-premises organization and the Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Office 365 organization.
 
-For more information, see [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) and [Manage Role Group Members](http://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx).
+For more information, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) and [Manage Role Group Members](https://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx).
 
 ## Delegate mailbox permissions
 
@@ -104,7 +104,7 @@ To enable Full Access and Send on Behalf permissions in a hybrid deployment, add
 
 In addition to configuring your on-premises Exchange servers, you also need to make sure Azure Active Directory Connect (AAD Connect) server is set up to synchronize hybrid mailbox permissions. Here's what you need to do to make sure your AAD Connect server is ready to support these permissions:
 
-- **Upgrade AAD Connect**: AAD Connect needs to be upgraded to at least version 1.1.553.0. You can download the latest version of AAD Connect from [Microsoft Azure Active Directory Connect](http://go.microsoft.com/fwlink/p/?LinkID=510956).
+- **Upgrade AAD Connect**: AAD Connect needs to be upgraded to at least version 1.1.553.0. You can download the latest version of AAD Connect from [Microsoft Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkID=510956).
 
 - **Enable Exchange Hybrid in AAD Connect**: To synchronize the attributes that enable hybrid mailbox permissions (specifically the Send on Behalf permission), you need to make sure that the **Exchange Hybrid deployment** configuration option is enabled in AAD Connect. For information about how to run the AAD Connect installation wizard again to update its configuration, check out [Azure AD Connect sync: Running the installation wizard a second time](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-installation-wizard)
 
@@ -116,7 +116,7 @@ If you do want to customize end user permissions, you can either modify the exis
 
 Like administrator permissions, end user permissions aren't transferred between the on-premises organization and the Exchange Online organization. Any permissions that you've defined in the on-premises organization must be re-created in the Exchange Online organization.
 
-For more information, see [Manage Role Assignment Policies](http://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) and [Change the Assignment Policy on a Mailbox](http://technet.microsoft.com/library/011690a5-233a-4c03-8842-92276f899a89.aspx).
+For more information, see [Manage Role Assignment Policies](https://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) and [Change the Assignment Policy on a Mailbox](https://technet.microsoft.com/library/011690a5-233a-4c03-8842-92276f899a89.aspx).
 
 The following table lists the permissions granted by the default role assignment policies in the Exchange Online organization.
 

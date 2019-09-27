@@ -5,7 +5,7 @@ ms:assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298065(v=EXCHG.150)
 ms:contentKeyID: 48385234
 ms.date: 10/04/2017
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -711,4 +711,4 @@ Installing Microsoft Exchange Server 2013 updates on a server that's a member of
 
 4. Optionally, use the RedistributeActiveDatabases.ps1 script to rebalance the active database copies across the DAG.
 
-You can download the latest update for Exchange 2013 from the [Microsoft Download Center](http://www.microsoft.com/downloads).
+You can download the latest update for Exchange 2013 from the [Microsoft Download Center](https://www.microsoft.com/downloads).

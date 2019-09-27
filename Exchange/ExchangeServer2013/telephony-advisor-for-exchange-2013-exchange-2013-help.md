@@ -5,7 +5,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 ms.date: 6/24/2018
-ms.reviewer: 
+ms.reviewer:
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 
 mtps_version: v=EXCHG.150
@@ -57,9 +57,9 @@ Before you engage a Unified Messaging specialist, you should be able to answer k
 
 Integrating Unified Messaging with PBXs requires you to use one or more VoIP gateways to translate the circuit-switched protocols that are used by TDM-based PBXs to IP-based, packet-switched protocols that are used by Unified Messaging. VoIP gateway vendors with several models of VoIP and media gateways have been tested and are supported for Unified Messaging.
 
-Interoperability testing of Unified Messaging with VoIP gateways, IP PBXs, and SBCs is now integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](http://go.microsoft.com/fwlink/p/?linkId=140722).
+Interoperability testing of Unified Messaging with VoIP gateways, IP PBXs, and SBCs is now integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](https://go.microsoft.com/fwlink/p/?linkId=140722).
 
-The [Microsoft Unified Communications Open Interoperability Program](http://go.microsoft.com/fwlink/p/?linkId=140722) qualification program for VoIP gateways, IP PBXs, and advanced VoIP gateways ensures that customers have a seamless setup and support experience when they're using qualified telephony VoIP gateways and IP PBXs with Microsoft Unified Communications software. Only products that meet rigorous and extensive testing requirements and conform to the specifications and test plans receive qualification.
+The [Microsoft Unified Communications Open Interoperability Program](https://go.microsoft.com/fwlink/p/?linkId=140722) qualification program for VoIP gateways, IP PBXs, and advanced VoIP gateways ensures that customers have a seamless setup and support experience when they're using qualified telephony VoIP gateways and IP PBXs with Microsoft Unified Communications software. Only products that meet rigorous and extensive testing requirements and conform to the specifications and test plans receive qualification.
 
 For details about configuring supported VoIP gateways, IP PBXs, and PBXs see [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](configuration-notes-for-voip-gateways-exchange-2013-help.md).
 
@@ -222,7 +222,7 @@ IP PBXs using SIP media gateways are also supported by Unified Messaging. The fo
 
 For on-premises and hybrid deployments, Exchange Unified Messaging can be deployed together with Microsoft Office Communications Server 2007 R2, Microsoft Lync Server 2010 or Lync Server 2013 to provide voice messaging, Instant Messaging (IM), enhanced user presence, audio-video conferencing, and an integrated email and messaging experience for users in your organization. For more information, see:
 
-- [Integrate Exchange 2013 UM with Lync Server](http://technet.microsoft.com/library/96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1.aspx)
+- [Integrate Exchange 2013 UM with Lync Server](https://technet.microsoft.com/library/96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1.aspx)
 
 - [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
 

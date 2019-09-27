@@ -5,7 +5,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 ms.date: 11/17/2014
-ms.reviewer: 
+ms.reviewer:
 f1_keywords:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.ResetUnifiedMessagingPinPropertyControl'
 ms.assetid: bf07e6e7-01d2-4933-bff5-c615cc21a480
@@ -27,7 +27,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 - Estimated time to complete: Less than 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

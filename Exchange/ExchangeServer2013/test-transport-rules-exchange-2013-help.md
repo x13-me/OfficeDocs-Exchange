@@ -4,8 +4,8 @@ TOCTitle: Test a transport rule
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 mtps_version: v=EXCHG.150
 ---
@@ -81,7 +81,7 @@ The message trace includes an entry for each rule that is matched for the messag
 
 1. In the EAC, go to **Mail flow** \> **Message trace**.
 
-2. Find the messages that you want to trace by using criteria such as the sender and the date sent. For help specifying criteria, see [Run a Message Trace and View Results](http://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx).
+2. Find the messages that you want to trace by using criteria such as the sender and the date sent. For help specifying criteria, see [Run a Message Trace and View Results](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx).
 
 3. After locating the message you want to trace, double-click it to view details about the message.
 
@@ -126,4 +126,4 @@ Here are some common problems and resolutions:
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
-[Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)

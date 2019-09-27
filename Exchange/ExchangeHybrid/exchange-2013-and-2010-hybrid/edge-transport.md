@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 924f895e-5987-48d0-b113-9d26dcbcdae0
-ms.reviewer: 
+ms.reviewer:
 description: "Edge Transport servers in Microsoft Exchange are deployed in an organization's on-premises perimeter network. They're non-domain-joined computers that handle Internet-facing mail flow and act as an SMTP relay and smart host for Exchange servers in your internal network."
 ---
 
@@ -22,7 +22,7 @@ Edge Transport servers in Microsoft Exchange are deployed in an organization's o
 
 Exchange 2013 organizations that want to use Edge Transport servers have the option of deploying either Exchange Server 2013 Edge Transport servers or Exchange 2010 Edge Transport servers running Service Pack 3 (SP3) for Exchange 2010. Use Edge Transport servers if you don't want to expose internal Exchange 2013 Client Access or Mailbox servers directly to the Internet.
 
-Learn more about the Exchange 2013 Edge Transport server role at [Overview of the Edge Transport Server Role](http://technet.microsoft.com/library/cfff9f59-afac-447c-8297-afcebe49a52d.aspx).
+Learn more about the Exchange 2013 Edge Transport server role at [Overview of the Edge Transport Server Role](https://technet.microsoft.com/library/cfff9f59-afac-447c-8297-afcebe49a52d.aspx).
 
 Learn more about the Exchange 2010 Edge Transport server role at [Overview of the Edge Transport Server Role](https://go.microsoft.com/fwlink/p/?linkid=183473).
 

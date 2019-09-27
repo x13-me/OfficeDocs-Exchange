@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms.date: 7/30/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
@@ -159,7 +159,7 @@ The procedure below lets you choose whether you want users to use the same URL o
 
 Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
 
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
 
 ### Configure internal and external URLs to be the same
 

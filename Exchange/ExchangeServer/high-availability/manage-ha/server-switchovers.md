@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Perform a server switchover
 ms.collection: exchange-server
 audience: ITPro
@@ -60,4 +60,4 @@ This example performs a server switchover of the Mailbox server MBX4. When the c
 Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
 ```
 
-For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](http://technet.microsoft.com/library/755d1ecb-95d1-45e3-9a21-56df9f196f37.aspx).
+For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/755d1ecb-95d1-45e3-9a21-56df9f196f37.aspx).

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -94,7 +94,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **Features** tab:
 
-     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [Outlook Web App Mailbox Policies](http://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx).
+     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [Outlook Web App Mailbox Policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx).
 
      - **Communication management**
 
@@ -248,7 +248,7 @@ Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-Li
 
  **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
 
-For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](http://technet.microsoft.com/library/63c48908-1116-4bab-8e5a-6c4dccbf3574.aspx).
+For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://technet.microsoft.com/library/63c48908-1116-4bab-8e5a-6c4dccbf3574.aspx).
 
 ## Use the Exchange Management Shell to configure Outlook on the web virtual directory settings
 
@@ -275,4 +275,4 @@ This example enables configures direct file access in Outlook on the web to bloc
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](http://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).

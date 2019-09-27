@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Exchange admin center in Exchange Server
 ms.collection:
 - Strat_EX_Admin
@@ -21,9 +21,9 @@ manager: serdars
 
 The Exchange admin center (EAC) is the web-based management console in Exchange Server that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+Looking for the Exchange Online Protection version of this topic? See [Exchange admin center](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
 
 ## Accessing the EAC
 <a name="access"> </a>
@@ -66,7 +66,7 @@ These examples show you how to find the internal and external URL values for the
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 
-For more information, see [Get-EcpVirtualDirectory](http://technet.microsoft.com/library/afa04216-965d-4a6c-949c-170f916e8f4c.aspx).
+For more information, see [Get-EcpVirtualDirectory](https://technet.microsoft.com/library/afa04216-965d-4a6c-949c-170f916e8f4c.aspx).
 
 In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
 
@@ -105,7 +105,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage role groups](../../permissions/role-groups.md) , [Manage role group members](../../permissions/role-group-members.md), and [Manage role assignment policies](../../permissions/role-assignment-policies.md).
 
-  - [Outlook on the web mailbox policies](http://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx)
+  - [Outlook on the web mailbox policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx)
 
 - **Compliance management**: This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing (mailbox audit logging and administrator audit logging), data loss prevention (DLP), retention policies, retention tags, and journal rules. For more information, see the following topics:
 
@@ -121,9 +121,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Organization**: Manage federated sharing, Outlook Apps, and address lists. For more information, see the following topics:
 
-  - [Sharing](http://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx)
+  - [Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx)
 
-  - [Install or Remove Apps for Outlook for Your Organization](http://technet.microsoft.com/library/112f3ef7-9943-4a1e-8a42-e08e8e9f67f4.aspx)
+  - [Install or Remove Apps for Outlook for Your Organization](https://technet.microsoft.com/library/112f3ef7-9943-4a1e-8a42-e08e8e9f67f4.aspx)
 
   - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
 
@@ -139,7 +139,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md)
 
-  - [Remote Domains](http://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
+  - [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
 
   - [Email address policies in Exchange Server](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
 
@@ -157,27 +157,27 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Unified Messaging**: Manage UM dial plans and UM IP gateways. (UM is not available in Exchange 2019.) For more information, see the following topics:
 
-  - [UM Dial Plans](http://technet.microsoft.com/library/ed7afc03-94af-4b23-8745-6a61f203c149.aspx)
+  - [UM Dial Plans](https://technet.microsoft.com/library/ed7afc03-94af-4b23-8745-6a61f203c149.aspx)
 
-  - [UM IP Gateways](http://technet.microsoft.com/library/991d77e0-3995-44ab-bedf-52ff7a0301ab.aspx)
+  - [UM IP Gateways](https://technet.microsoft.com/library/991d77e0-3995-44ab-bedf-52ff7a0301ab.aspx)
 
 - **Servers**: View and manage server-specific settings, databases, database availability groups (DAGs), virtual directories, and certificates. For more information, see the following topics:
 
   - [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md)
 
-  - [Configure the Startup Mode on a Client Access Server](http://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx) and [Configure the Startup Mode on a Mailbox Server](http://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx)
+  - [Configure the Startup Mode on a Client Access Server](https://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx) and [Configure the Startup Mode on a Mailbox Server](https://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx)
 
   - [Message retry, resubmit, and expiration intervals](../../mail-flow/queues/message-intervals.md)
 
   - [Configure message tracking](../../mail-flow/transport-logs/configure-message-tracking.md) , [Configure connectivity logging in Exchange Server](../../mail-flow/transport-logs/configure-connectivity-logging.md), and [Protocol logging](../../mail-flow/connectors/protocol-logging.md)
 
-  - [Manage Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx#managing)
+  - [Manage Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx#managing)
 
   - [Manage mailbox database copies](../../high-availability/manage-ha/manage-database-copies.md)
 
   - [Manage database availability groups](../../high-availability/manage-ha/manage-dags.md)
 
-  - [Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
+  - [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
 
   - [Certificate procedures in Exchange Server](certificate-procedures.md)
 
@@ -198,7 +198,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Add icon](../../media/ITPro_EAC_AddIcon.png)|Add, New|Create a new object.  <br/>  Some of these icons have an associated down arrow you can click to show additional objects you can create. For example, in **Recipients** \> **Mailboxes**, clicking the down arrow displays **User mailbox** and **Linked mailbox** as additional options.|
 |![Edit icon](../../media/ITPro_EAC_EditIcon.png)|Edit|Edit an object.|
 |![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
-|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects. Check out [Advanced search](http://technet.microsoft.com/library/cf4251f9-e4ec-44d7-97c2-c5cdd67ce60c.aspx) for more search options.|
+|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects. Check out [Advanced search](https://technet.microsoft.com/library/cf4251f9-e4ec-44d7-97c2-c5cdd67ce60c.aspx) for more search options.|
 |![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)|Refresh|Refresh the list view.|
 |![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Disable**, **Add/Remove columns**, **Export data to a CSV file**, **Connect a mailbox**, and **Advanced search**.|
 |![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.png)           <br/> ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)|Up arrow and down arrow|Move an object up or down in the list, when the order is important.  <br/> For example, in **Mail flow** \> **Email address policies** click the up arrow to move the policy higher in the list, which increases the priority of the policy by specifying which policy is applied first.  <br/> You can also use these arrows to navigate the public folder hierarchy and to move rules up or down in the list view.|

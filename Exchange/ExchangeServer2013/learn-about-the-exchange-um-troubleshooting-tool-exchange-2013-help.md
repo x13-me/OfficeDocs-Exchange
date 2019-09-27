@@ -5,7 +5,7 @@ ms:assetid: cc11bf5e-2c87-4495-b2ad-3e9a6bc81dbc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg584301(v=EXCHG.150)
 ms:contentKeyID: 55129213
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -200,7 +200,7 @@ If you're using the UM Troubleshooting Tool on a 64-bit version of Windows 7, Wi
     > [!NOTE]
     > If the tool will be run on a Windows Vista or Windows Server 2008 computer, see <A href="https://go.microsoft.com/fwlink/p/?linkid=178998">Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64</A>.
 
-- Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu)   See Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu)   See Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
 - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)   See [Unified Communications Managed API 2.0, Core Runtime (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175).
 

@@ -3,8 +3,8 @@ title: 'Best practices for configuring transport rules: Exchange 2013 Help'
 TOCTitle: Best practices for configuring transport rules
 ms.author: dmaguire
 author: msdmaguire
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 mtps_version: v=EXCHG.150
 ---
@@ -29,7 +29,7 @@ Make sure your rule applies only to the messages you intend it to. For example:
 
 - **Restrict a rule based on the sender's or receiver's domain**
 
-    By default, a new rule applies to messages sent from or received at any domain. Sometimes you want a rule to apply to all domains except for one, or to just one domain. For examples, see [Create a Domain or User-Based Safe Sender or Blocked Sender List Using Transport Rules](http://technet.microsoft.com/library/9721b46d-cbea-4121-be51-542395e6fd21.aspx).
+    By default, a new rule applies to messages sent from or received at any domain. Sometimes you want a rule to apply to all domains except for one, or to just one domain. For examples, see [Create a Domain or User-Based Safe Sender or Blocked Sender List Using Transport Rules](https://technet.microsoft.com/library/9721b46d-cbea-4121-be51-542395e6fd21.aspx).
 
 For a complete list of all the conditions and exceptions that are available for transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -37,11 +37,11 @@ For a complete list of all the conditions and exceptions that are available for 
 
 Sometimes it takes two rules to do what you want. Transport rules are processed in order, so multiple rules can apply to the same message. For example, if one of the actions is to block the message, and you also have another action you'd like to apply, such as copying the message to the sender's manager or changing the subject for the notification message, you would need two rules. The first rule could copy the message to the sender's manager and change the subject, and the second rule could block the message.
 
-If you use two rules like this, be sure that the conditions are identical. To see examples, look at example 3 in [Common message approval scenarios](common-message-approval-scenarios-exchange-2013-help.md), example 3 in [Common attachment blocking scenarios for transport rules](common-attachment-blocking-scenarios-exchange-2013-help.md), and [Organization-wide disclaimers, signatures, footers, or headers](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
+If you use two rules like this, be sure that the conditions are identical. To see examples, look at example 3 in [Common message approval scenarios](common-message-approval-scenarios-exchange-2013-help.md), example 3 in [Common attachment blocking scenarios for transport rules](common-attachment-blocking-scenarios-exchange-2013-help.md), and [Organization-wide disclaimers, signatures, footers, or headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
 
 ## Don't repeat an action on every email in a conversation
 
-The chain of email in a conversation can include many individual messages, and repeating the action on each message in the thread might get annoying. For example, if you have an action such as adding a disclaimer, you might want it to apply only to the first message in the thread. If so, add an exception for messages that already include the disclaimer text. For an example, see [Organization-wide disclaimers, signatures, footers, or headers](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
+The chain of email in a conversation can include many individual messages, and repeating the action on each message in the thread might get annoying. For example, if you have an action such as adding a disclaimer, you might want it to apply only to the first message in the thread. If so, add an exception for messages that already include the disclaimer text. For an example, see [Organization-wide disclaimers, signatures, footers, or headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
 
 ## Know when to stop rule processing
 

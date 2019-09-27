@@ -5,10 +5,10 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Manage address lists in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -70,7 +70,7 @@ This example creates an address list with a custom recipient filter:
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](http://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
 
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
@@ -203,7 +203,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](http://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
+For detailed syntax and parameter information, see [Set-AddressList](https://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
 
 ### How do you know this worked?
 
