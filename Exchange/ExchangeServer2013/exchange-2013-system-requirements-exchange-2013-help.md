@@ -271,16 +271,16 @@ The following table lists the supported operating systems for Exchange 2013.
 > We don't support the installation of Exchange 2013 on a computer that's running in Windows Server Core mode. The computer must be running the full installation of Windows Server. If you want to install Exchange 2013 on a computer that's running in Windows Server Core mode, you must convert the server to a full installation of Windows Server by doing one of the following:
 > <UL>
 > <LI>
-> <P><STRONG>Windows Server 2008 R2</STRONG>&nbsp;&nbsp;&nbsp;Reinstall Windows Server and select the <STRONG>Full Installation</STRONG> option.</P>
+> <P><STRONG>Windows Server 2008 R2</STRONG>: Reinstall Windows Server and select the <STRONG>Full Installation</STRONG> option.</P>
 > <LI>
-> <P><STRONG>Windows Server 2012 R2</STRONG> or <STRONG>Windows Server 2012</STRONG>&nbsp;&nbsp;&nbsp;Convert your Windows Server Core mode server to a full installation by running the following command.</P>
+> <P><STRONG>Windows Server 2012 R2</STRONG> or <STRONG>Windows Server 2012</STRONG>: Convert your Windows Server Core mode server to a full installation by running the following command.</P>
 >
-> ```Powershells
-> Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
+> ```Powershell
+> Install-WindowsFeature Server-Gui-Mgmt-Infra,Server-Gui-Shell -Restart
 > ```
 > </LI></UL>
 
-**Supported operating systems for Exchange 2013**
+### Supported operating systems for Exchange 2013
 
 <table>
 <colgroup>
@@ -326,7 +326,7 @@ The following table lists the supported operating systems for Exchange 2013.
 
 2   Windows 8.1 is supported only with Exchange 2013 SP1 or later.
 
-**Supported Windows Management Framework versions for Exchange 2013**
+### Supported Windows Management Framework versions for Exchange 2013
 
 Exchange 2013 only supports the version of Windows Management Framework that's built into the release of Windows that you're installing Exchange on. Don't install versions of Windows Management Framework that are made available as stand-alone downloads on servers running Exchange.
 
@@ -334,58 +334,33 @@ Exchange 2013 only supports the version of Windows Management Framework that's b
 
 We strongly recommend that you use the latest version of .NET Framework that's supported by the release of Exchange you're installing.
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exchange version</th>
-<th>.NET Framework 4.7.1</th>
-<th>.NET Framework 4.6.2</th>
-<th>.NET Framework 4.6.1</th>
-<th>.NET Framework 4.5.2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Exchange 2013 CU19</p></td>
-<td><p>X</p></td>
-<td><p> X</p></td>
-<td><p> </p></td>
-<td><p> </p></td>
-</tr>
-<tr class="even">
-<td><p>Exchange 2013 CU16 - CU18</p></td>
-<td><p></p></td>
-<td><p> X</p></td>
-<td><p> </p></td>
-<td><p> </p></td>
-</tr>
-</tbody>
-</table>
+|**Exchange 2013 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
+|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
+|CU23|X|X|||
+|CU21, CU22||X|X||
+|CU19, CU20|||X|X||
+|CU16, CU17, CU18||||X|
+|CU15||||X|
+
+**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
 
 ## Supported clients
 
 Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
-  - Outlook 2016
+- Outlook 2016
 
-  - Outlook 2013
+- Outlook 2013
 
-  - Outlook 2010
+- Outlook 2010
 
-  - Outlook 2007
+- Outlook 2007
 
-  - Entourage 2008 for Mac, Web Services Edition
+- Entourage 2008 for Mac, Web Services Edition
 
-  - Outlook for Mac for Office 365
+- Outlook for Mac for Office 365
 
-  - Outlook for Mac 2011
+- Outlook for Mac 2011
 
 For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://go.microsoft.com/fwlink/p/?linkid=513459).
 
