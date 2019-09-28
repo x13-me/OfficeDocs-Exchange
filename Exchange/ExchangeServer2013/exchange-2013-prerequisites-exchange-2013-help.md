@@ -66,7 +66,7 @@ The computer you want to use to prepare Active Directory for Exchange 2013 has s
 
 Install the following software, in the order shown, on the computer that will be used to prepare Active Directory:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -114,10 +114,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -128,7 +128,7 @@ After you've installed the operating system roles and features, install the foll
 5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
   > [!NOTE]
-  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Edge Transport server role
 
@@ -146,10 +146,10 @@ Do the following to install the required Windows roles and features:
 
 Install the version of Microsoft .NET Framework that corresponds to the version of Exchange 2013 you're installing:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -190,10 +190,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -237,10 +237,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
    > [!IMPORTANT]
-   > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+   > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -265,7 +265,7 @@ Follow the instructions in this section to install the prerequisites on domain-j
 
 After you've installed the operating system features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -273,4 +273,4 @@ After you've installed the operating system features, install the following soft
 
 ## Windows 8 and Windows 8.1 prerequisites (admin tools only)
 
-[.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+[.NET Framework 4.7.2](https://www.microsoft.com/download/details.aspx?id=42642)
