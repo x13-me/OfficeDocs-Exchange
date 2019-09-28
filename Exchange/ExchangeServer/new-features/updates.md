@@ -33,7 +33,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
-To get the latest version of Exchange 2016, download and install [Cumulative Update 13 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?id=58395). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 14 for Exchange Server 2016](https://www.microsoft.com/en-us/download/details.aspx?id=100302). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
