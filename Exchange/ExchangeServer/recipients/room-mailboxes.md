@@ -52,12 +52,12 @@ If you want to learn about the types of recipients that are available in Exchang
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
-   - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
+   - **Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
 
     > [!TIP]
     > Although there are other fields that describe the details of the room (for example, Location and Capacity) consider summarizing the most important details in the room name using a consistent naming convention. Why? So users can easily see the details when they select the room from the address book in the meeting request.
 
-   - **\* Alias**: A room mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The alias is required.
+   - **Alias**: A room mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The alias is required.
 
    - **Location**, **Phone**, **Capacity**: You can use these fields to enter details about the room. However, as explained earlier, you can include some or all of this information in the room name so users can see it.
 
@@ -127,9 +127,9 @@ After you create a room mailbox, you can make changes and set additional propert
 
 Use the **General** section to view or change basic information about the resource.
 
-- **\* Room name**: This name appears in the resource mailbox list in the Exchange admin centerExchange admin center and in your organization's address book. It can't exceed 64 characters if you change it.
+- **Room name**: This name appears in the resource mailbox list in the Exchange admin center and in your organization's address book. It can't exceed 64 characters if you change it.
 
-- **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#email-address) section.
+- **Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#email-address) section.
 
 - **Capacity**: Use this box to enter the maximum number of people who can safely occupy the room.
 
@@ -139,7 +139,7 @@ Click **More options** to view or change these additional properties:
 
 - **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the room mailbox. Use the **Migration** page in the Exchange admin center to move the mailbox to a different database.
 
-- **\* Alias** Use this box to change the alias for the room mailbox.
+- **Alias** Use this box to change the alias for the room mailbox.
 
 - **Hide from address lists**: Select this check box to prevent the room mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send booking messages to the room mailbox by using the email address.
 
@@ -166,11 +166,11 @@ Use the **Email Address** section to view or change the email addresses associat
 
 - **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
-  - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
+  - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **Email address** box.
 
   - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service in Exchange 2016 to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox. (**Note**: Unified Messaging is not available in Exchange 2019.)
 
-  - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
+  - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **Email address** box.
 
     **Notes**:
 
