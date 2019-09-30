@@ -89,7 +89,7 @@ In Exchange Server 2013 Service Pack 1 or later, you can enable SSL offloading t
 
 2If you're upgrading to Exchange 2013 CU13, CU14, or CU15 from Exchange 2013 CU12 or earlier, we strongly recommend that you install Exchange 2013 CU13 before .NET Framework 4.6.1 and its related post-release fixes.
 
-If you are unable to install .net 4.5.2, refer to Microsoft Knowledge Base article 2995145 "[Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://go.microsoft.com/fwlink/p/?linkid=524159)." The fixes in that article were developed based on internal findings on Store Worker Process memory utilization. By applying these fixes, you will reduce the overall memory consumption for all managed processes (including the store worker process) and you will reduce the overall CPU time that is spent in .NET garbage collection.
+If you are unable to install .NET 4.5.2, refer to Microsoft Knowledge Base article 2995145 "[Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://go.microsoft.com/fwlink/p/?linkid=524159)." The fixes in that article were developed based on internal findings on Store Worker Process memory utilization. By applying these fixes, you will reduce the overall memory consumption for all managed processes (including the store worker process) and you will reduce the overall CPU time that is spent in .NET garbage collection.
 
 ## Hot Fixes
 
