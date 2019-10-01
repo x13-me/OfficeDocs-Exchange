@@ -258,7 +258,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Email address attribute from AAD**, select **Primary SMTP Address**.
 
-    - If you want to configure Outlook for iOS and Android such that only the work or school account can be used, select **Require** for **Allow only work or** **school** **accounts**.
+    - If you want to configure Outlook for iOS and Android such that only the work or school account can be used, select **Require** for **Allow only work or** **school** **accounts**. Please note that this configuration will only allow a single corporate account to be added to Outlook for iOS and Android.
 
 12. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 
