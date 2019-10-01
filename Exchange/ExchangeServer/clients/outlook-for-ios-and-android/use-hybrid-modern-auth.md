@@ -121,7 +121,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Ensure SSL or TLS offloading is not being used between the load balancer and your Exchange servers, as this will affect the use of the OAuth token. SSL and TLS bridging (termination and re-encryption) is supported.
 
-4. **Intune setup**: Both cloud-only and hybrid deployments of Intune are supported (MDM for Office 365 is not supported).
+4. **Intune setup**: Both Intune standalone and [Co-Management](https://docs.microsoft.com/sccm/comanage/overview) deployments are supported (MDM for Office 365 is not supported).
 
 5. **Office 365 licensing**:
 
