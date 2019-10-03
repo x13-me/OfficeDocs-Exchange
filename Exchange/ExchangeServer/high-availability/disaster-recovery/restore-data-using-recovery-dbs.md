@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Restore data using a recovery database
 ms.collection: exchange-server
 audience: ITPro
@@ -19,7 +19,7 @@ manager: serdars
 
 A recovery database (RDB) is a special kind of mailbox database that allows you to mount and extract data from a restored mailbox database as part of a recovery operation. RDBs allow you to recover data from a backup or copy of a database without disrupting user access to current data.
 
-After you create an RDB, you can restore a mailbox database into the RDB by using a backup application or by copying a database and its log files into the RDB folder structure. Then you can use the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from the recovered database. Once extracted, the data can then be exported to a folder or merged into an existing mailbox.
+After you create an RDB, you can restore a mailbox database into the RDB by using a backup application or by copying a database and its log files into the RDB folder structure. Then you can use the [New-MailboxRestoreRequest](https://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from the recovered database. Once extracted, the data can then be exported to a folder or merged into an existing mailbox.
 
 For additional management tasks related to RDBs, see [Recovery databases](recovery-databases.md).
 
@@ -95,9 +95,9 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
    New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
    ```
 
-8. Periodically check the status of the Mailbox restore request using [Get-MailboxRestoreRequest](http://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx).
+8. Periodically check the status of the Mailbox restore request using [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx).
 
-   Once the restore has a status of Completed, remove the restore request using [Remove-MailboxRestoreRequest](http://technet.microsoft.com/library/a3d3327e-99b0-4d44-bd81-3e8f59eab41d.aspx). For example:
+   Once the restore has a status of Completed, remove the restore request using [Remove-MailboxRestoreRequest](https://technet.microsoft.com/library/a3d3327e-99b0-4d44-bd81-3e8f59eab41d.aspx). For example:
 
    ```
    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest

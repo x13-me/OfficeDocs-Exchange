@@ -5,7 +5,7 @@ ms:assetid: 01432ae4-2a00-44a4-a4dd-4eb8d7e6cfae
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh529912(v=EXCHG.150)
 ms:contentKeyID: 49668969
 ms.date: 07/25/2017
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -103,7 +103,7 @@ You'll have to run the following commands to configure the virtual directories f
    Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
    ```
 
-To verify that the external URL has been configured correctly for Exchange ActiveSync or Outlook Web App, you can use the Remote Connectivity Analyzer, a free Web-based tool provided by Microsoft. You can find the Remote Connectivity Analyzer [here](http://go.microsoft.com/fwlink/?linkid=154308).
+To verify that the external URL has been configured correctly for Exchange ActiveSync or Outlook Web App, you can use the Remote Connectivity Analyzer, a free Web-based tool provided by Microsoft. You can find the Remote Connectivity Analyzer [here](https://go.microsoft.com/fwlink/?linkid=154308).
 
 To verify that authentication has been configured correctly for Exchange ActiveSync or Outlook Web App, you can also use ExRCA.
 

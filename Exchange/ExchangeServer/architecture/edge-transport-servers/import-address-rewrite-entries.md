@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms.date: 7/3/2018
-ms.reviewer: 
+ms.reviewer:
 title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server
 audience: ITPro
@@ -47,7 +47,7 @@ Each row under the header row represents an individual address rewrite entry. Th
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address Rewriting agent" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
-- If you have more than one Edge Transport server, we recommend that you use the procedures in this topic to import the address rewrite entries into a single Edge Transport server and then clone the configuration of that Edge Transport server to the other Edge Transport servers in your organization. For more information about how to clone an Edge Transport server, see [Using Edge Transport Server Cloned Configuration](http://technet.microsoft.com/library/683a6b8a-59bf-43ed-96c8-504945c2f665.aspx).
+- If you have more than one Edge Transport server, we recommend that you use the procedures in this topic to import the address rewrite entries into a single Edge Transport server and then clone the configuration of that Edge Transport server to the other Edge Transport servers in your organization. For more information about how to clone an Edge Transport server, see [Using Edge Transport Server Cloned Configuration](https://technet.microsoft.com/library/683a6b8a-59bf-43ed-96c8-504945c2f665.aspx).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 

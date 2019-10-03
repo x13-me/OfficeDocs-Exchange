@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: d7104efe-6d2a-4260-bc4e-f05da477e30b
-ms.reviewer: 
+ms.reviewer:
 description: "When you configure a hybrid deployment in an Exchange 2007 organization, you have to install at least one Exchange 2013 server with the Client Access and Mailbox server roles in your existing Exchange 2007 organization. The Exchange 2013 Client Access and Mailbox servers coordinate communications between your existing Exchange 2007 on-premises organization and the Exchange Online organization. This communication includes message transport and messaging features between the on-premises and Exchange Online organizations."
 ---
 
@@ -28,11 +28,11 @@ Here is a quick overview of the Exchange 2013 server roles in a hybrid deploymen
 
 - **Client Access server role**: The Exchange 2013 Client Access server role continues to provide many of the same functions that are typically provided by Exchange 2007 Client Access servers in your organization with some additions required to support a hybrid deployment and coexistence with Exchange 2007. The Client Access server also handles secure mail messages sent from the Exchange Online organization to the on-premises organization, as well as handling transport rules, journaling policies, and message delivery to Mailbox servers in a hybrid deployment. A dedicated Receive connector is configured by default on the Client Access server to support secure hybrid mail transport. All client connectivity, including Outlook client access, Outlook Web App, and Outlook Anywhere goes through the Client Access server role. Organization relationship features between the on-premises and Exchange Online organizations, such as free/busy sharing, are also handled by the Client Access server role.
 
-    Learn more at [Client Access services](http://technet.microsoft.com/library/87e206ab-7a7b-4b4f-be1a-5035713c74d2.aspx).
+    Learn more at [Client Access services](https://technet.microsoft.com/library/87e206ab-7a7b-4b4f-be1a-5035713c74d2.aspx).
 
 - **Mailbox server role**: The Exchange 2013 Mailbox server role handles secure mail messages sent to the Exchange Online organization from the on-premises organization. Although not typical, it also can host on-premises recipient mailboxes and communicate with the Exchange Online organization by proxy via the on-premises Client Access server. By default, a dedicated Send connector is configured on the Mailbox server role to support secure hybrid mail transport.
 
-    Learn more at [Mailbox Server](http://technet.microsoft.com/library/1aacc1c9-c81b-47d4-b222-ee73956cf968.aspx).
+    Learn more at [Mailbox Server](https://technet.microsoft.com/library/1aacc1c9-c81b-47d4-b222-ee73956cf968.aspx).
 
 Depending on the hybrid deployment configuration that you want, an Exchange 2013 server requires one or both of the server roles to be installed on it:
 
@@ -48,11 +48,11 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Federation**: Exchange 2013 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 tenant organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
-    Learn more at [Understanding Federation](http://technet.microsoft.com/library/0046e2eb-6940-4941-bd5b-cbe6bffa3b94.aspx).
+    Learn more at [Understanding Federation](https://technet.microsoft.com/library/0046e2eb-6940-4941-bd5b-cbe6bffa3b94.aspx).
 
 - **Organization relationships**: Exchange 2013 servers with the Client Access server role enable the creation of organization relationships between the on-premises and Exchange Online organizations. Organization relationships are required for many other services in a hybrid deployment, including calendar free/busy information sharing, message tracking, and mailbox moves between the on-premises and Exchange Online organizations.
 
-    Learn more at [Understanding Federated Sharing](http://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
+    Learn more at [Understanding Federated Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
 
 - **Message transport**: Exchange 2013 servers with the Client Access and Mailbox server roles are responsible for message transport in a hybrid deployment. Using Send and Receive connectors, they serve as the connection endpoints for incoming external messages and also provide outbound message delivery to the Internet and the Exchange Online organization.
 
@@ -64,7 +64,7 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Outlook Web App**: Exchange 2013 servers with the Client Access server role support configuring a single URL endpoint for external connections to on-premises and Exchange Online mailboxes. For on-premises mailboxes, Client Access servers are configured to service Outlook Web App requests. For Exchange Online organization mailboxes, Client Access servers are configured to automatically display a link to the Outlook Web App endpoint on the Exchange Online organization.
 
-    Learn more at [Outlook on the web](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx).
+    Learn more at [Outlook on the web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx).
 
 ## Exchange server topology
 
@@ -84,4 +84,4 @@ Exchange 2013 CU1 or later enables hybrid deployment functionality with the Hybr
 For information on how to download the latest version of Exchange Server, see [Updates for Exchange](https://technet.microsoft.com/Library/jj907309).
 
 > [!IMPORTANT]
-> You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](http://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.
+> You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](https://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.

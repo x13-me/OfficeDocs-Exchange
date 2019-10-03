@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting DataProtection Health Set
 ms:assetid: cde3cc34-2076-4e30-8d3c-265b66d00ae8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.dataprotection(v=EXCHG.150)
 ms:contentKeyID: 49720873
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -313,7 +313,7 @@ If all components display **Passed** in the **Result** column, try to rerun the 
 
 If the issue still exists, restart the server. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

@@ -5,7 +5,7 @@ ms:assetid: e21cf744-7813-48b3-9293-5cecd89a6c25
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691354(v=EXCHG.150)
 ms:contentKeyID: 48385640
 ms.date: 03/20/2017
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -17,26 +17,6 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 This topic provides the steps for installing the necessary Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 with Service Pack 1 (SP1) operating system prerequisites for the Microsoft Exchange 2013 Mailbox, Client Access, and Edge Transport server roles. It also provides the prerequisites required to install the Exchange 2013 management tools on Windows 8, Windows 8.1, and Windows 7 client computers.
-
-- What do you need to know before you begin?
-
-- Active Directory preparation
-
-- Windows Server 2012 R2 and Windows Server 2012 prerequisites
-
-  - Mailbox or Client Access server roles
-
-  - Edge Transport server role
-
-- Windows Server 2008 R2 SP1 prerequisites
-
-  - Mailbox or Client Access server roles
-
-  - Edge Transport server role
-
-- Windows 7 prerequisites (admin tools only)
-
-- Windows 8 and Windows 8.1 prerequisites (admin tools only)
 
 ## What do you need to know before you begin?
 
@@ -66,7 +46,7 @@ The computer you want to use to prepare Active Directory for Exchange 2013 has s
 
 Install the following software, in the order shown, on the computer that will be used to prepare Active Directory:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -114,10 +94,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -128,7 +108,7 @@ After you've installed the operating system roles and features, install the foll
 5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
   > [!NOTE]
-  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Edge Transport server role
 
@@ -146,10 +126,10 @@ Do the following to install the required Windows roles and features:
 
 Install the version of Microsoft .NET Framework that corresponds to the version of Exchange 2013 you're installing:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -190,10 +170,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
     > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -206,11 +186,11 @@ After you've installed the operating system roles and features, install the foll
    > [!NOTE]
    > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-7. [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+7. [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
-8. [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
+8. [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
 
     > [!NOTE]
     > This hotfix may already be installed if you've configured Windows Update to install security updates on your computer.
@@ -237,10 +217,10 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
    > [!IMPORTANT]
-   > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+   > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -265,12 +245,12 @@ Follow the instructions in this section to install the prerequisites on domain-j
 
 After you've installed the operating system features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+1. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3. [Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+3. [Knowledge Base article KB974405 (Windows Identity Foundation)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
 ## Windows 8 and Windows 8.1 prerequisites (admin tools only)
 
-[.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
+[.NET Framework 4.7.2](http://go.microsoft.com/fwlink/p/?linkid=863265)

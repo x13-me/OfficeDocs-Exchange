@@ -4,8 +4,8 @@ TOCTitle: Remove a global address list
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
 mtps_version: v=EXCHG.150
 ---
@@ -16,13 +16,13 @@ _**Applies to:** Exchange Server 2013_
 
 The global address list (GAL) is a directory that contains entries for every group, user, and contact within an Exchange organization.
 
-For additional management tasks related to address lists, see [Managing Address Lists](http://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
 - You can't remove the default GAL.
 
@@ -43,4 +43,4 @@ Remove-GlobalAddressList -Identity "Fourth Coffee" -DomainController ad-server.f
 
 To confirm that you want to remove the GAL, type Y, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](http://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).

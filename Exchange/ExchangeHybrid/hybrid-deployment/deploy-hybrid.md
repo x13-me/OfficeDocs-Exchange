@@ -13,7 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 997a25d3-7fb3-4d4e-bb28-defcbf542c99
-ms.reviewer: 
+ms.reviewer:
 description: "By establishing a hybrid deployment, you can extend the feature-rich experience and administrative control you have with your existing on-premises Exchange Server organization to the cloud. A hybrid deployment also offers support for a cloud-based archiving solution for your on-premises mailboxes with Exchange Online Archiving and may also serve as an intermediate step towards a complete migration of your on-premises mailboxes to Exchange Online."
 ---
 
@@ -43,7 +43,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
     > [!IMPORTANT]
     > Configuring the requirements for a hybrid deployment will take considerably longer than the estimated time to complete the Hybrid Configuration wizard procedures outlined in this topic. For example, signing up for Office 365 for enterprises, configuring Active Directory synchronization, and assigning Exchange Online licenses require a larger time investment and may also include network topology changes. You should plan for more than the time listed to complete this procedure for the overall time to complete the end-to-end hybrid deployment configuration.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and Shell infrastructure permissions](http://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and Shell infrastructure permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
 
 - You need to run the Hybrid Configuration Wizard from a computer running the latest release of a supported version of Exchange. The final steps in the Hybrid Configuration wizard for configuring Exchange OAuth authentication require that the steps are performed from an on-premises Exchange or from any domain-joined server or workstation. Additionally, the OAuth authentication process works best when using the desktop version of Internet Explorer 11 or greater.
 
@@ -108,13 +108,13 @@ Use the following procedure to create and configure a hybrid deployment:
 
 For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features such as Message Records Management (MRM), Exchange In-place Archiving, and In-place eDiscovery are only fully available across your organization by using the new Exchange OAuth authentication protocol. We recommend that all mixed Exchange 2013/2010 and Exchange 2013/2007 organizations that wish to implement these features as part of a new hybrid deployment with Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
-For detailed configuration steps, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](http://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx)
+For detailed configuration steps, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx)
 
 For more information about Exchange security and compliance features that use OAuth authentication, see:
 
-- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](http://technet.microsoft.com/library/deb882b1-1ae2-40f3-a71c-423fafe3d66a.aspx)
+- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](https://technet.microsoft.com/library/deb882b1-1ae2-40f3-a71c-423fafe3d66a.aspx)
 
-- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](http://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
+- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
 
 ## How do you know this worked?
 

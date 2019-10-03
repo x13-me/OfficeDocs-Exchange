@@ -40,7 +40,7 @@ To enable push notifications, the admin must:
 
 Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity. Office 365 refers to subscription plans that include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
 
-Many Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Office 365 for business?](https://go.microsoft.com/fwlink/?linkid=335705). For more about each of the services offered through Office 365, see [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/?linkid=335704).
+Many Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Office 365 for business?](https://support.office.com/article/what-is-office-365-for-business-4608c472-4532-44a0-ae0f-e7f0b12d2113). For more about each of the services offered through Office 365, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
 
 ## Update to CU3 or later
 

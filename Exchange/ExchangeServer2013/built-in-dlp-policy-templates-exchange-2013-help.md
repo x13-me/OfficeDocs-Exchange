@@ -4,8 +4,8 @@ TOCTitle: DLP policy templates supplied in Exchange
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
 mtps_version: v=EXCHG.150
 ---
@@ -72,4 +72,4 @@ The following table lists the DLP policy templates in Exchange. To learn more ab
 
 [Create a DLP policy from a template](create-dlp-policy-from-template-exchange-2013-help.md)
 
-[Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
+[Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)

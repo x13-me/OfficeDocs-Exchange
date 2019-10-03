@@ -10,7 +10,7 @@ title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
 audience: ITPro
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 ms.prod: exchange-server-it-pro
 manager: serdars
 
@@ -200,7 +200,7 @@ The placement of the witness server determines whether the architecture can prov
 
 If your organization has a third location with a network infrastructure that is isolated from network failures that affect the site resilient datacenter pair in which the DAG is deployed, then the recommendation is to deploy the DAG's witness server in that third location. This configuration gives the DAG the ability to automatically failover databases to the other datacenter in response to a datacenter-level failure event, regardless of which datacenter has the outage.
 
-If your organization does not have a third location, consider placing the server witness in [Azure](http://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where the majority of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
+If your organization does not have a third location, consider placing the server witness in [Azure](https://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where the majority of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
 
 Exchange Server 2019 and all earlier versions do not support the use of the Cloud Witness feature first introduced in Windows Server 2016 Failover Cluster.
 

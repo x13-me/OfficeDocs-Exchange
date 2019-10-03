@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: TNEF conversion options
 ms.collection: exchange-server
 audience: ITPro
@@ -40,7 +40,7 @@ For more information about other content conversion in Exchange, see [Content co
 ## TNEF conversion options for remote domains
 <a name="RemoteDomains"> </a>
 
-Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](http://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
 
 When you configure TNEF conversion options for a remote domain, the settings are applied to all messages sent to recipients in that domain. You can use the Exchange admin center (EAC) or the Exchange Management Shell to configure these options:
 

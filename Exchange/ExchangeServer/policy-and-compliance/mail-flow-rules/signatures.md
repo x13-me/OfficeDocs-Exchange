@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -21,7 +21,7 @@ You can add an email disclaimer, legal disclaimer, disclosure statement, signatu
 
 To create a disclaimer, you create a mail flow rule (also known as transport rule) with an action that adds the specified text to email messages. You can configure the rule to apply the disclaimer to all messages (no conditions), or you can define conditions that determine when the disclaimer is added (for example, when the sender is a member of a specific group, when the message includes specific words or text patterns, or outgoing messages only). You can also define exceptions that prevent the disclaimer from being added to messages (for example, messages from specific senders, messages sent to specific recipients, or messages that already contain the disclaimer). To apply multiple disclaimers to the same message, you need to use multiple rules. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
 
-Looking for procedures? See [Configure a Disclaimer or Other Email Header or Footer](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx).
+Looking for procedures? See [Configure a Disclaimer or Other Email Header or Footer](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx).
 
 ## Examples
 <a name="Examples"> </a>
@@ -112,10 +112,10 @@ For a complete list of conditions and exceptions that you can use to target the 
 ## For more information
 <a name="MoreInfo"> </a>
 
-[Configure a Disclaimer or Other Email Header or Footer](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
+[Configure a Disclaimer or Other Email Header or Footer](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
 
 [Mail flow rules in Exchange Server](mail-flow-rules.md) (Exchange 2016 and Exchange 2019)
 
-[Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+[Mail flow rules (transport rules) in Exchange Online](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
 
-[Mail flow rules (transport rules) in Exchange Online Protection](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)

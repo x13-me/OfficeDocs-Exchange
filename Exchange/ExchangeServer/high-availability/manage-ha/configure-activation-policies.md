@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure activation policy for a mailbox database copy
 ms.collection: exchange-server
 audience: ITPro
@@ -60,7 +60,7 @@ This example resumes the copy of the database DB1 on the server MBX2 for activat
 Resume-MailboxDatabaseCopy -Identity DB1\MBX2
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](http://technet.microsoft.com/library/b6e03402-706e-40c6-b392-92e3da21b5c0.aspx) or [Resume-MailboxDatabaseCopy](http://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/b6e03402-706e-40c6-b392-92e3da21b5c0.aspx) or [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx).
 
 ## Use the Exchange Management Shell to configure the activation policy for a server
 <a name="UseEMC"> </a>
@@ -83,7 +83,7 @@ This example configures the database copies on server MBX4 as unblocked for acti
 Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](http://technet.microsoft.com/library/b6e03402-706e-40c6-b392-92e3da21b5c0.aspx), [Resume-MailboxDatabaseCopy](http://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx), or [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/b6e03402-706e-40c6-b392-92e3da21b5c0.aspx), [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx), or [Set-MailboxServer](https://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx).
 
 ## How do you know this worked?
 <a name="UseEMC"> </a>

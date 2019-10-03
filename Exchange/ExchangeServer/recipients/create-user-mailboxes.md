@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -128,7 +128,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ### How do you know this worked?
 
@@ -200,7 +200,7 @@ This example finds all user accounts that aren't mail-enabled and that aren't sy
 Get-User -RecipientTypeDetails User -Filter {UserPrincipalName -ne $null} -ResultSize unlimited | Enable-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Enable-Mailbox](http://technet.microsoft.com/library/58de5b3c-05c3-4a1f-84c6-f082d990f22b.aspx) and [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
+For detailed syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/58de5b3c-05c3-4a1f-84c6-f082d990f22b.aspx) and [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
 
 ### How do you know this worked?
 

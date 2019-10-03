@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Complete a pending Exchange Server certificate request
 ms.collection:
 - Strat_EX_Admin
@@ -100,7 +100,7 @@ Import-ExchangeCertificate -FileData "Import-ExchangeCertificate -FileData ([Byt
 
 - If you want to be able to export the certificate from the server where you're importing it, you need to use the _PrivateKeyExportable_ parameter with the value `$true`.
 
-- For more information, see [Import-ExchangeCertificate](http://technet.microsoft.com/library/c1a98e97-e58a-49c8-a44d-948b2fc07876.aspx).
+- For more information, see [Import-ExchangeCertificate](https://technet.microsoft.com/library/c1a98e97-e58a-49c8-a44d-948b2fc07876.aspx).
 
 ## How do you know this worked?
 

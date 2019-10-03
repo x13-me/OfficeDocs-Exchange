@@ -210,32 +210,42 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework**|**CU3, CU2**|**RTM, CU1**|
+|**.NET Framework version**|**CU3, CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|
-|.NET Framework 4.8|![check mark](../media/check-mark.png)||
-|.NET Framework 4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
+|4.8|![check mark](../media/check-mark.png)||
+|4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 
 ### Exchange 2016
 
-|**.NET Framework**|**CU14, CU13**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
-|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
-|.NET Framework 4.8|![check mark](../media/check-mark.png)|||||
-|.NET Framework 4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||
-|.NET Framework 4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
-|.NET Framework 4.6.2||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
+|**.NET Framework version**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
+|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|4.8|![check mark](../media/check-mark.png)||||||||
+|4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||||||
+|4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||||
+|4.6.2||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
+|4.6.1<sup>\*</sup>||||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
+|4.5.2||||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
+
+<sup>\*</sup> .NET Framework 4.6.1 also requires a hotfix based on the version of Windows. For more information, see [Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2016-Quarterly-Exchange-Updates/ba-p/604877).
 
 ### Exchange 2013
 
-|**.NET Framework**|**CU23**|**CU21, CU22**|**CU19, CU20**|**CU16, CU17, CU18**|
-|:-----|:-----:|:-----:|:-----:|:-----:|
-|.NET Framework 4.8|![check mark](../media/check-mark.png)||||
-|.NET Framework 4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
-|.NET Framework 4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
-|.NET Framework 4.6.2|||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
+|**.NET Framework version**|**CU23**|**CU21, CU22**|**CU19, CU20**|**CU16, CU17, CU18**|**CU15**|**CU13, CU14**|**CU12 to SP1**|**CU3 to RTM**|
+|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|4.8|![check mark](../media/check-mark.png)||||||||
+|4.7.2|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||||||
+|4.7.1||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||||
+|4.6.2|||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||
+|4.6.1<sup>\*</sup>|||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
+|4.5.2|||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
+|4.5.1|||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
+|4.5||||||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
+
+<sup>\*</sup> .NET Framework 4.6.1 also requires a hotfix based on the version of Windows. For more information, see [Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2016-Quarterly-Exchange-Updates/ba-p/604877).
 
 ### Exchange 2010 SP3
 
-|**.NET Framework**|**Exchange 2010 SP3**|
+|**.NET Framework version**|**Exchange 2010 SP3**|
 |:-----|:-----:|
 |.NET Framework 4.5|![check mark](../media/check-mark.png)<sup>1,2</sup>|
 |.NET Framework 4.0|![check mark](../media/check-mark.png)<sup>1,2</sup>|

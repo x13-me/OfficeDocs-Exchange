@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
 ms.date: 7/10/2018
-ms.reviewer: 
+ms.reviewer:
 title: Mail routing in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -112,7 +112,7 @@ In Exchange 2010, each message recipient is associated with only one Active Dire
 
 ### Routing messages between Active Directory sites
 
-The way that Exchange routes messages between Active Directory sites is virtually the same as Exchange 2010. For more information, see [Route Mail Between Active Directory Sites](http://technet.microsoft.com/library/86b423e3-7bec-4430-9a5a-4f84ce9d82ea.aspx).
+The way that Exchange routes messages between Active Directory sites is virtually the same as Exchange 2010. For more information, see [Route Mail Between Active Directory Sites](https://technet.microsoft.com/library/86b423e3-7bec-4430-9a5a-4f84ce9d82ea.aspx).
 
 ### Routing in the Front End Transport service on Mailbox servers
 
