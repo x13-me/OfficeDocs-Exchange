@@ -95,7 +95,7 @@ Outlook supports the following settings for configuration:
 <td>External Recipients MailTip</td>
 <td>On</td>
 <td><p>If the sender adds a recipient that's external or adds a distribution group that contains external recipients, the External Recipients MailTip is displayed. This MailTip informs senders if a message they're composing will leave the organization, helping them make the correct decisions about wording, tone, and content.</p>
-<p>Note that Exchange Online MailTipsExternalRecipientsTipsEnabled parameter must be set to $true in order for Outlook for iOS and Android to see the External Recipients MailTip. For more information, see [MailTips](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).</p></td>
+<p>Note that Exchange Online MailTipsExternalRecipientsTipsEnabled parameter must be set to $true in order for Outlook for iOS and Android to see the External Recipients MailTip. For more information, see <a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a>.</p></td>
 <td>App default</td>
 </tr>
 <tr class="odd">
