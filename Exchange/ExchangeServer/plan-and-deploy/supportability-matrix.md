@@ -249,7 +249,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 |:-----|:-----:|
 |.NET Framework 4.5|![check mark](../media/check-mark.png)<sup>1,2</sup>|
 |.NET Framework 4.0|![check mark](../media/check-mark.png)<sup>1,2</sup>|
-|.NET Framework 3.5 SP|![check mark](../media/check-mark.png)|
+|.NET Framework 3.5 SP1|![check mark](../media/check-mark.png)|
 |.NET Framework 3.5|![check mark](../media/check-mark.png)<sup>1</sup>|
 
 <sup>1</sup> On Windows Server 2012, you need to install the .NET Framework 3.5 before you can use Exchange 2010 SP3.
