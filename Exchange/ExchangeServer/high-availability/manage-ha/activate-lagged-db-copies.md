@@ -95,7 +95,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 2. This example activates the lagged mailbox database copy using the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/755d1ecb-95d1-45e3-9a21-56df9f196f37.aspx) cmdlet with the _SkipLagChecks_ parameter.
 
-   ```
+  ```
   Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
   ```
 
