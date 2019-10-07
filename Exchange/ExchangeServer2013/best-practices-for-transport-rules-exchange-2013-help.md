@@ -29,7 +29,7 @@ Make sure your rule applies only to the messages you intend it to. For example:
 
 - **Restrict a rule based on the sender's or receiver's domain**
 
-    By default, a new rule applies to messages sent from or received at any domain. Sometimes you want a rule to apply to all domains except for one, or to just one domain. For examples, see [Create a Domain or User-Based Safe Sender or Blocked Sender List Using Transport Rules](https://technet.microsoft.com/library/9721b46d-cbea-4121-be51-542395e6fd21.aspx).
+    By default, a new rule applies to messages sent from or received at any domain. Sometimes you want a rule to apply to all domains except for one, or to just one domain. For examples, see [Create a Domain or User-Based Safe Sender or Blocked Sender List Using Transport Rules](configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md).
 
 For a complete list of all the conditions and exceptions that are available for transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
