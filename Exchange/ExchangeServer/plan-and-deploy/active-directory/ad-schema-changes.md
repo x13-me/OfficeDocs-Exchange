@@ -1457,16 +1457,18 @@ The following table lists the extended rights that are added when you install Ex
 |**Identifier**|**Values**|
 |:-----|:-----|
 |CN=ms-Exch-SMTP-Accept-XProxyFrom,CN=Extended-Rights,\<ConfigurationContainerDN\>|changetype: ntdsSchemaAdddisplayName: Accept XProxyFromobjectClass: controlAccessRightrightsGuid: 5bee2b72-50d7-49c7-ba66-39a25daa1e92validAccesses: 256|
+
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
+
 |**Current Exchange 2016 release installed**|**New Exchange 2016 release being installed**|**Are schema updates required?**|
 |:-----|:-----|:-----|
 |Release to Manufacturing|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU1, CU2 and CU3 schema updates.|
 |Cumulative Update 2|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU3 schema updates.|
 |Cumulative Update 3|Cumulative Update 4 <br> through <br> Cumulative Update 6|**No**, no schema updates are required. <br> No schema changes are made in CU4 through CU6.|
 |Cumulative Update 6|Cumulative Update 7 <br> through <br> Cumulative Update 14|**Yes**, schema updates are required. <br> You need to apply the CU14 schema updates.|
-|Cumulative Update 7|Cumulative Update 8 <br> through <br> Cumulative Update 14|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU14.|
+|Cumulative Update 7 or higher|Cumulative Update 8 <br> through <br> Cumulative Update 14|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU14.|
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
