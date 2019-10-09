@@ -25,6 +25,7 @@ This reference topic provides a summary of the Active Directory schema changes t
 Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all of the changes that were included in previous releases. This means that if you skip a CU, you might still need to apply schema updates even if the CU that you're installing doesn't include its own changes.
 
 ::: moniker range="exchserver-2019"
+
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
 
@@ -3098,4 +3099,5 @@ The following table lists the extended rights that are added when you install Ex
 |**Identifier**|**Values**|
 |:-----|:-----|
 |CN=ms-Exch-SMTP-Accept-XProxyFrom,CN=Extended-Rights,\<ConfigurationContainerDN\>|changetype: ntdsSchemaAdd  <br/> displayName: Accept XProxyFrom  <br/> objectClass: controlAccessRight  <br/> rightsGuid: 5bee2b72-50d7-49c7-ba66-39a25daa1e92  <br/> validAccesses: 256|
+
 ::: moniker-end
