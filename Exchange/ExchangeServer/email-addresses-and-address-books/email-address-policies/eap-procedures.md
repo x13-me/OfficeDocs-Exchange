@@ -8,7 +8,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Procedures for email address policies in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -122,7 +122,7 @@ New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter {(Recipient
 
 - The _EnabledEmailAddressTemplates_ parameter requires at least one template with the `<Type>` value `SMTP` (to define the primary SMTP email address). After that, if you don't include a `<Type>` prefix for a template, the value `smtp` (an SMTP proxy address) is assumed.
 
-For detailed syntax and parameter information, see [New-EmailAddressPolicy](http://technet.microsoft.com/library/23b6e364-b56e-4c5a-bc71-ff5652d7e42b.aspx).
+For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://technet.microsoft.com/library/23b6e364-b56e-4c5a-bc71-ff5652d7e42b.aspx).
 
 ### How do you know this worked?
 
@@ -204,7 +204,7 @@ This example clears the disabled email address templates from the email address 
 Set-EmailAddressPolicy -Identity "Contoso Executives" -DisabledEmailAddressTemplates $null
 ```
 
-For detailed syntax and parameter information, see [Set-EmailAddressPolicy](http://technet.microsoft.com/library/c5829edd-8b7d-4437-b17f-bae76ea237e8.aspx).
+For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://technet.microsoft.com/library/c5829edd-8b7d-4437-b17f-bae76ea237e8.aspx).
 
 ### How do you know this worked?
 
@@ -254,7 +254,7 @@ This example applies the email address policy named Northwest Executives.
 Update-EmailAddressPolicy -Identity "Northwest Executives"
 ```
 
-For detailed syntax and parameter information, see [Update-EmailAddressPolicy](http://technet.microsoft.com/library/283081a2-14bb-46cd-918e-e2dd168c43ab.aspx).
+For detailed syntax and parameter information, see [Update-EmailAddressPolicy](https://technet.microsoft.com/library/283081a2-14bb-46cd-918e-e2dd168c43ab.aspx).
 
 ### How do you know this worked?
 
@@ -296,7 +296,7 @@ This example removes the email address policy named Southeast Offices.
 Remove-EmailAddressPolicy -Identity "Southeast Offices"
 ```
 
-For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](http://technet.microsoft.com/library/c36aad43-ad3f-442f-9b52-316bb1f43e82.aspx).
+For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://technet.microsoft.com/library/c36aad43-ad3f-442f-9b52-316bb1f43e82.aspx).
 
 ### How do you know this worked?
 

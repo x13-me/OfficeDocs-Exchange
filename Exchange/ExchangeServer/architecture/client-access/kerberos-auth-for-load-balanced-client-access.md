@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Configure Kerberos authentication for load-balanced Client Access services
 ms.collection: exchange-server
 audience: ITPro
@@ -134,7 +134,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 
 - Deploy the ASA credential to subsequent Exchange servers running Client Access services
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](http://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
 

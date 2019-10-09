@@ -2,7 +2,7 @@
 title: "Certificate requirements for hybrid deployments"
 ms.author: dmaguire
 author: msdmaguire
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -28,7 +28,7 @@ In a hybrid deployment, many services make use of certificates:
 
 - **Exchange federation**: A self-signed certificate is used to create a secure connection between the on-premises Exchange servers and the Azure Active Directory authentication system.
 
-    Learn more at [Understanding Federated Delegation](http://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
+    Learn more at [Understanding Federated Delegation](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
 
 - **Exchange services**: Certificates issued by a trusted third-party CA are used to help secure Secure Sockets Layer (SSL) communication between Exchange servers and clients. Services that use certificates include Outlook on the web, Exchange ActiveSync, Outlook Anywhere, and secure message transport.
 

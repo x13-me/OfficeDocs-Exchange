@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2c07b1e6-8d07-4e73-8800-b306e2266c7d
 ms.date: 7/10/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure MAPI over HTTP in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -103,7 +103,7 @@ MonitorIdentity                                          StartTime              
 OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe    2/14/2018 7:15:00 AM   2/14/2018 7:15:10 AM   Succeeded
 ```
 
-For more information, see [Test-OutlookConnectivity](http://technet.microsoft.com/library/09d810f1-0550-4cd3-8feb-f524018a5d6b.aspx).
+For more information, see [Test-OutlookConnectivity](https://technet.microsoft.com/library/09d810f1-0550-4cd3-8feb-f524018a5d6b.aspx).
 
 Logs for MAPI over HTTP activity are at the following locations:
 
@@ -142,10 +142,10 @@ The following table summarizes the results of the different setting combinations
 
 You can manage the configuration of MAPI over HTTP by using the following cmdlets:
 
-- [Set-MapiVirtualDirectory](http://technet.microsoft.com/library/c9308fe6-3b61-4d99-a5f2-ef47abbc7656.aspx)
+- [Set-MapiVirtualDirectory](https://technet.microsoft.com/library/c9308fe6-3b61-4d99-a5f2-ef47abbc7656.aspx)
 
-- [Get-MapiVirtualDirectory](http://technet.microsoft.com/library/6837cb55-6734-4a28-9062-7227f57dafb2.aspx)
+- [Get-MapiVirtualDirectory](https://technet.microsoft.com/library/6837cb55-6734-4a28-9062-7227f57dafb2.aspx)
 
-- [New-MapiVirtualDirectory](http://technet.microsoft.com/library/acb5be3d-f42b-4685-ba2a-680731281edf.aspx)
+- [New-MapiVirtualDirectory](https://technet.microsoft.com/library/acb5be3d-f42b-4685-ba2a-680731281edf.aspx)
 
-- [Remove-MapiVirtualDirectory](http://technet.microsoft.com/library/eff7df8c-3c92-4004-89dd-0a06511e8668.aspx)
+- [Remove-MapiVirtualDirectory](https://technet.microsoft.com/library/eff7df8c-3c92-4004-89dd-0a06511e8668.aspx)

@@ -94,7 +94,8 @@ Outlook supports the following settings for configuration:
 <tr class="even">
 <td>External Recipients MailTip</td>
 <td>On</td>
-<td>If the sender adds a recipient that's external or adds a distribution group that contains external recipients, the External Recipients MailTip is displayed. This MailTip informs senders if a message they're composing will leave the organization, helping them make the correct decisions about wording, tone, and content.</td>
+<td><p>If the sender adds a recipient that's external or adds a distribution group that contains external recipients, the External Recipients MailTip is displayed. This MailTip informs senders if a message they're composing will leave the organization, helping them make the correct decisions about wording, tone, and content.</p>
+<p>Note that Exchange Online MailTipsExternalRecipientsTipsEnabled parameter must be set to $true in order for Outlook for iOS and Android to see the External Recipients MailTip. For more information, see <a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a>.</p></td>
 <td>App default</td>
 </tr>
 <tr class="odd">
@@ -257,7 +258,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Email address attribute from AAD**, select **Primary SMTP Address**.
 
-    - If you want to configure Outlook for iOS and Android such that only the work or school account can be used, select **Require** for **Allow only work or** **school** **accounts**.
+    - If you want to configure Outlook for iOS and Android such that only the work or school account can be used, select **Require** for **Allow only work or** **school** **accounts**. Please note that this configuration will only allow a single corporate account to be added to Outlook for iOS and Android.
 
 12. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 

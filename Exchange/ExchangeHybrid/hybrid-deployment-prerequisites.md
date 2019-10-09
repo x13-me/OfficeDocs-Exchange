@@ -13,7 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: e7454db0-fed4-4662-8890-9501126b1ba2
-ms.reviewer: 
+ms.reviewer:
 description: "Summary: What your Exchange environment needs before you can set up a hybrid deployment."
 ---
 
@@ -99,7 +99,7 @@ The following prerequisites are required for configuring a hybrid deployment:
     > [!NOTE]
     > You can map multiple on-premises UM mailbox policies to one UM mailbox policy in Exchange Online. If you want to do this, you'll need to use the Exchange Management Shell to manually map each on-premises UM mailbox policy to an Exchange Online policy.
 
-    For more information, check out [Telephone System Integration with UM](http://technet.microsoft.com/library/b8790117-b040-4c84-9d34-005c75088e76.aspx), [Telephony Advisor for Exchange 2013](http://technet.microsoft.com/library/e9f760f2-5901-4ed2-95a5-724555cc700e.aspx), and [Set up Cloud PBX voicemail](https://go.microsoft.com/fwlink/p/?linkid=826207).
+    For more information, check out [Telephone System Integration with UM](https://technet.microsoft.com/library/b8790117-b040-4c84-9d34-005c75088e76.aspx), [Telephony Advisor for Exchange 2013](https://technet.microsoft.com/library/e9f760f2-5901-4ed2-95a5-724555cc700e.aspx), and [Set up Cloud PBX voicemail](https://go.microsoft.com/fwlink/p/?linkid=826207).
 
 ## Hybrid deployment protocols, ports, and endpoints
 

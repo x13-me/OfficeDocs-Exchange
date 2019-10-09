@@ -4,8 +4,8 @@ TOCTitle: Manage DLP policies
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
 mtps_version: v=EXCHG.150
 ---
@@ -16,15 +16,15 @@ _**Applies to:** Exchange Server 2013_
 
 You can view, change, or remove existing data loss prevention (DLP) policies in Microsoft Exchange, using the Exchange admin center (EAC) or the Exchange Management Shell.
 
-For additional management tasks related to DLP, see [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx).
+For additional management tasks related to DLP, see [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx).
 
-For more information about the Exchange Management Shell, see [Exchange Management Shell](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
+For more information about the Exchange Management Shell, see [Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 15-60 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
 - For any DLP policy, you can select one of three modes:
 
@@ -64,7 +64,7 @@ This example returns information about the fictitious DLP policy named Employee 
 Get-DlpPolicy "Employee Numbers" | Format-List
 ```
 
-For syntax and parameter information, see [Get-DlpPolicy](http://technet.microsoft.com/library/cfb850c5-efb2-4fb5-a5c3-3fb6aba11008.aspx).
+For syntax and parameter information, see [Get-DlpPolicy](https://technet.microsoft.com/library/cfb850c5-efb2-4fb5-a5c3-3fb6aba11008.aspx).
 
 ## Change a DLP policy
 
@@ -96,7 +96,7 @@ You can specify the action and notification level of a policy using the Exchange
 Set-DlpPolicy "Employee Numbers" -Mode Audit
 ```
 
-For syntax and parameter information, see [Set-DlpPolicy](http://technet.microsoft.com/library/f44e276c-b9cb-4bfc-a815-ab866446ffdd.aspx).
+For syntax and parameter information, see [Set-DlpPolicy](https://technet.microsoft.com/library/f44e276c-b9cb-4bfc-a815-ab866446ffdd.aspx).
 
 ## Delete a DLP policy
 
@@ -118,7 +118,7 @@ This example removes the fictitious DLP policy named Employee Numbers.
 Remove-DlpPolicy "Employee Numbers"
 ```
 
-For syntax and parameter information, see [Remove-DlpPolicy](http://technet.microsoft.com/library/3631df19-fe68-44f6-9e91-4363e608263b.aspx).
+For syntax and parameter information, see [Remove-DlpPolicy](https://technet.microsoft.com/library/3631df19-fe68-44f6-9e91-4363e608263b.aspx).
 
 ## For more information
 

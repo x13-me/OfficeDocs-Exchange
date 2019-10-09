@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -35,7 +35,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Estimated time to complete: 2 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - Create a new user account in Active Directory to connect the deleted mailbox to. Or use the **Get-User** cmdlet in the Exchange Management Shell to verify that the Active Directory user account that you want to connect the deleted mailbox to exists and that it isn't already associated with another mailbox. To connect a deleted mailbox to a user account, the account must exist and the value for the _RecipientType_ property has to be `User`, which indicates that the account isn't already mailbox-enabled.
 
@@ -128,7 +128,7 @@ Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printe
 > [!NOTE]
 > You can also use the `LegacyDN` or `MailboxGuid` values to identify the deleted mailbox.
 
-For detailed syntax and parameter information, see [Connect-Mailbox](http://technet.microsoft.com/library/48757062-abe5-4c61-acc5-5884569c1d8b.aspx).
+For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/library/48757062-abe5-4c61-acc5-5884569c1d8b.aspx).
 
 ### How do you know this worked?
 
@@ -177,7 +177,7 @@ This example restores Pilar Pinilla's deleted archive mailbox to her current arc
 New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx).
 
 ### How do you know this worked?
 
@@ -185,8 +185,8 @@ To verify that you've successfully restored a deleted mailbox to the target mail
 
 For more information, see:
 
-- [Manage Mailbox Restore Requests](http://technet.microsoft.com/library/8e668a52-c601-4d96-a51c-ab60267e1321.aspx)
+- [Manage Mailbox Restore Requests](https://technet.microsoft.com/library/8e668a52-c601-4d96-a51c-ab60267e1321.aspx)
 
-- [Get-MailboxRestoreRequest](http://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx)
+- [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx)
 
-- [Get-MailboxRestoreRequestStatistics](http://technet.microsoft.com/library/b28d5835-1f8f-4cd9-8f72-9d592adef3d9.aspx)
+- [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/b28d5835-1f8f-4cd9-8f72-9d592adef3d9.aspx)

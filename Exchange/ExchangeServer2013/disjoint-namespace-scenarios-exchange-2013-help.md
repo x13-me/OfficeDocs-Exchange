@@ -5,7 +5,7 @@ ms:assetid: 90101d49-6f45-44be-8a93-eeb2c8283e3b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb676377(v=EXCHG.150)
 ms:contentKeyID: 49289351
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -82,7 +82,7 @@ In addition, to make sure that the DNS suffix search list contains all DNS names
 
   - [Group Policy Frequently Asked Questions (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [New group policies for DNS in Windows Server 2003](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
+  - [New group policies for DNS in Windows Server 2003](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [Group Policy](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

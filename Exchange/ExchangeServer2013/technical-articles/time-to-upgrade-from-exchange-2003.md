@@ -5,7 +5,7 @@ ms:assetid: aabe635d-6dba-431c-a9ba-5aa2a4fd7a2d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn201758(v=EXCHG.150)
 ms:contentKeyID: 53892776
 ms.date: 07/29/2013
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 As many of you may already know, support for Microsoft Exchange Server 2003 will soon be coming to an end. Each product that Microsoft releases has a lifecycle that determines how long we maintain and support the product. Exchange 2003 mainstream support is already over. And, **Exchange Server 2003 extended support ends on April 8, 2014**.
 
-April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](http://go.microsoft.com/fwlink/p/?linkid=299102). Since then, we've released Exchange Server 2013 and released more new features in Microsoft Office 365.
+April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](https://go.microsoft.com/fwlink/p/?linkid=299102). Since then, we've released Exchange Server 2013 and released more new features in Microsoft Office 365.
 
 To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
 
@@ -81,13 +81,13 @@ You've got two options to consider when upgrading your Exchange 2003 organizatio
 
 - Upgrade your current on-premises organization.
 
-To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](http://go.microsoft.com/fwlink/p/?linkid=267504).
+To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=267504).
 
 ## Go to the cloud with Office 365
 
 Have you heard of Microsoft Office 365 yet? Office 365 delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. Office 365 combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
 
-To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://technet.microsoft.com/en-us/library/jj218681\(v=exchg.150\)). To learn more about Office 365, see [Office 365](http://go.microsoft.com/fwlink/p/?linkid=203981).
+To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://technet.microsoft.com/en-us/library/jj218681\(v=exchg.150\)). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
 
 ## Upgrade to Exchange 2013 on-premises
 
@@ -103,4 +103,4 @@ For this two-phase upgrade, you'll need to use both Exchange 2010 ExDeploy and E
 
 Well, we hope this article's been helpful for you as you contemplate life after Exchange 2003 and think about an upgrade to Exchange 2013. After deploying your Exchange 2013 organization, you'll be well on your way to successfully upgrading your Exchange 2003 organization. Then, you'll be ready to secure, administer, and verify mail flow in your Exchange 2013 organization.
 
-![24ee4aef-3dc3-4a8b-a737-953b41ec5ff4](images/Dn201758.24ee4aef-3dc3-4a8b-a737-953b41ec5ff4(EXCHG.150).jpg "24ee4aef-3dc3-4a8b-a737-953b41ec5ff4")  [Kweku Ako-Adjei](http://go.microsoft.com/fwlink/p/?linkid=218856), Sr. Technical Writer, Exchange Server
+![24ee4aef-3dc3-4a8b-a737-953b41ec5ff4](images/Dn201758.24ee4aef-3dc3-4a8b-a737-953b41ec5ff4(EXCHG.150).jpg "24ee4aef-3dc3-4a8b-a737-953b41ec5ff4")  [Kweku Ako-Adjei](https://go.microsoft.com/fwlink/p/?linkid=218856), Sr. Technical Writer, Exchange Server

@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
-ms.reviewer: 
+ms.reviewer:
 description: "Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:"
 ---
 
@@ -31,7 +31,7 @@ Microsoft is committed to making its products and services easier for everyone t
 
 The following features help make Microsoft Exchange more accessible for people with disabilities:
 
-- [Keyboard shortcuts in Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Keyboard shortcuts in Exchange 2013 Preview](https://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
 
 - [Keyboard Shortcuts in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
 
@@ -91,4 +91,4 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 ## For more information
 <a name="BKMK_AccessMS"> </a>
 
-For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](http://go.microsoft.com/fwlink/p/?linkId=18139).
+For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).

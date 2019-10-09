@@ -5,7 +5,6 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
-ms.date:
 title: Using hybrid Modern Authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -25,7 +24,7 @@ Outlook for iOS and Android is a cloud-backed application. This means your exper
 
 For Exchange Server mailboxes, Outlook for iOS and Android's new architecture is similar in design to its legacy architecture. However, as the service is now built directly into the Microsoft Cloud (using Office 365 and Microsoft Azure) customers receive the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
 
-![Hybrid modern authentication in Outlook for iOS and Android](../../media/a2f99c31-cd75-41e7-bf73-bf989976bccd.PNG)
+![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
 
 Data passing from Exchange Online to the Outlook app is passed via a TLS-secured connection. The protocol translator running on Azure serves to route data, commands and notifications, but has no ability to read the data itself.
 
@@ -52,9 +51,9 @@ Specifically, this new architecture has the following improvements:
 
 ## Data security, access, and auditing controls
 
-With on-premises data being synchronized with Exchange Online, customers have questions about how the data is protected in Exchange Online. The white paper [Encryption in the Microsoft Cloud](http://aka.ms/office365ce) discusses how BitLocker is used for volume-level encryption. Service Encryption with the Customer Key option, as discussed in the white paper, is supported in the Outlook for iOS and Android architecture, but note that the user must have an Office 365 Enterprise E5 license (or the corresponding versions of those plans for Government or Education) to have an encryption policy assigned.
+With on-premises data being synchronized with Exchange Online, customers have questions about how the data is protected in Exchange Online. The white paper [Encryption in the Microsoft Cloud](https://aka.ms/office365ce) discusses how BitLocker is used for volume-level encryption. Service Encryption with the Customer Key option, as discussed in the white paper, is supported in the Outlook for iOS and Android architecture, but note that the user must have an Office 365 Enterprise E5 license (or the corresponding versions of those plans for Government or Education) to have an encryption policy assigned.
 
-By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Office 365. The white paper [Office 365 Administrative Access Controls](http://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
+By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Office 365. The white paper [Office 365 Administrative Access Controls](https://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
 
 [ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Office 365 has implemented.
 
@@ -122,7 +121,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Ensure SSL or TLS offloading is not being used between the load balancer and your Exchange servers, as this will affect the use of the OAuth token. SSL and TLS bridging (termination and re-encryption) is supported.
 
-4. **Intune setup**: Both cloud-only and hybrid deployments of Intune are supported (MDM for Office 365 is not supported).
+4. **Intune setup**: Both Intune standalone and [Co-Management](https://docs.microsoft.com/sccm/comanage/overview) deployments are supported (MDM for Office 365 is not supported).
 
 5. **Office 365 licensing**:
 
@@ -235,13 +234,15 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Shared calendar access and Delegate calendar access
 
+- Shared mailbox data access
+
 - Cortana Time to Leave
 
 - Calendar attachments
 
 - Task management with Microsoft To-Do
 
-- Favorite Folders
+- Favorite People with Notifications
 
 - Add-ins
 

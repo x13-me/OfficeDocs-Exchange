@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -71,7 +71,7 @@ To verify that you've successfully enabled an on-premises archive for an existin
   Get-Mailbox <MailboxIdentity> | Format-List Name,*Archive*
   ```
 
-- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in the topic, [Test-ArchiveConnectivity](http://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
+- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in the topic, [Test-ArchiveConnectivity](https://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
 
 ## Enable an archive mailbox when you create a new mailbox
 
@@ -127,7 +127,7 @@ To verify that you've successfully created a user mailbox with an on-premises ar
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
   ```
 
-- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in [Test-ArchiveConnectivity](http://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
+- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in [Test-ArchiveConnectivity](https://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
 
 ## Disable an archive mailbox
 

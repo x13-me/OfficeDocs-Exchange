@@ -5,10 +5,10 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 title: Remove a global address list in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -54,7 +54,7 @@ This example removes the address list named Agency A GAL.
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](http://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
 
 #### How do you know this worked?
 

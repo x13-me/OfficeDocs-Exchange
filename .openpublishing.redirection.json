@@ -100,6 +100,46 @@
         "source_path": "Exchange/ExchangeOnline/exchange-online-and-exchange-online-protection-service-upgrade.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview",
         "redirect_document_id": false
+      },
+      {      
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/fix-outlook-and-office-365-issues.md",
+      "redirect_url": "https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/diagnostic-log-collection-in-support-and-recovery-assistant.md",
+      "redirect_url": "https://docs.microsoft.com/office365/troubleshoot/administration/diagnostic-log-collection-in-support-and-recovery-assistant",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+      "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/cached-exchange-mode.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/kerberos-authentication-outlook-2016-for-mac.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/sign-in/set-delay-renew-kerberos-ticket",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/plan-outlook-2016-deployment.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/plan-outlook-2016-deployment",
+        "redirect_document_id": false
       }
     ]
 }

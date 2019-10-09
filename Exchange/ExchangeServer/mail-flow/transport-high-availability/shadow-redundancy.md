@@ -88,9 +88,9 @@ When the Transport service on a Mailbox server receives a message from outside t
 
 2. While the original SMTP session with the messaging server is still active, the Transport service on primary server opens a new, simultaneous SMTP session with the Transport service on a different Mailbox server in the organization to create a redundant copy of the message.
 
-   - If the primary server is a member of a DAG, the primary server connects to a different Mailbox server in the same DAG. If the DAG spans multiple Active Directory sites, a Mailbox server in a different Active Directory site is preferred by default (the default value of the _ShadowMessagePreference_ parameter on the **Set-TransportService** cmdlet is `PreferRemote`, but you can change it to `RemoteOnly` or `LocalOnly`).
+   - If the primary server is a member of a DAG, the primary server connects to a different Mailbox server in the same DAG. If the DAG spans multiple Active Directory sites, a Mailbox server in a different Active Directory site is preferred by default (the default value of the _ShadowMessagePreferenceSetting_ parameter on the **Set-TransportConfig** cmdlet is `PreferRemote`, but you can change it to `RemoteOnly` or `LocalOnly`).
 
-   - If the primary server isn't a member of a DAG, the primary server connects to a different Mailbox server in the same Active Directory site (regardless of the value of the _ShadowMessagePreference_ parameter).
+   - If the primary server isn't a member of a DAG, the primary server connects to a different Mailbox server in the same Active Directory site (regardless of the value of the _ShadowMessagePreferenceSetting_ parameter).
 
 3. The primary server transmits a copy of the message to the Transport service on another Mailbox server, and Transport service on the other Mailbox server acknowledges that the copy of the message was created successfully. The copy of the message is the shadow message, and the Mailbox server that holds it is the shadow server for the primary server. The message exists in a shadow queue on the shadow server.
 

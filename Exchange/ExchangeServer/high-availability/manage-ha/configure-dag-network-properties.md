@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms.date: 6/7/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure database availability group network properties
 ms.collection: exchange-server
 audience: ITPro
@@ -73,10 +73,10 @@ To verify that you've successfully configured the DAG network, do the following:
 ## For more information
 <a name="UseShell"> </a>
 
-[Set-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx)
+[Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx)
 
-[Get-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/43f57126-a685-4208-ac63-4e3aba4a3e00.aspx)
+[Get-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/43f57126-a685-4208-ac63-4e3aba4a3e00.aspx)
 
-[New-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/3ef8d42f-9da0-456a-b4e8-6f7d99a1fa0f.aspx)
+[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/3ef8d42f-9da0-456a-b4e8-6f7d99a1fa0f.aspx)
 
-[Remove-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
+[Remove-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)

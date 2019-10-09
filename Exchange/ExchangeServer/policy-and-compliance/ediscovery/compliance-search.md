@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9f0f4a3d-de9a-4d8a-9172-2edf4288d766
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Use Compliance Search to search all mailboxes in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -38,7 +38,7 @@ New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
-For more information, see [New-ComplianceSearch](http://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx).
+For more information, see [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx).
 
 > [!IMPORTANT]
 > When you create a compliance search by using the **New-ComplianceSearch** cmdlet, a shadow In-Place eDiscovery search is created (but not started) and displayed on the **In-Place eDiscovery & Hold** page in the Exchange admin center (EAC). It's also returned by using the **Get-MailboxSearch** cmdlet. This mailbox search is named **ComplianceSearchName -shadow**. We recommend that you delete the shadow In-Place eDiscovery search, and use the script in Step 3 to create the In-Place eDiscovery search. The functionality of creating a shadow search will be removed in a cumulative update for Exchange 2016.

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure the Availability service for cross-forest topologies
 ms.collection: exchange-server
 audience: ITPro
@@ -40,7 +40,7 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Availability Service Permissions" entries in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
@@ -78,13 +78,13 @@ Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright 
 
 For detailed information about syntax and parameters, see the following topics:
 
-- [Get-MailboxServer](http://technet.microsoft.com/library/838bc72a-e3bb-4583-934f-d93a7c93252c.aspx)
+- [Get-MailboxServer](https://technet.microsoft.com/library/838bc72a-e3bb-4583-934f-d93a7c93252c.aspx)
 
-- [Add-ADPermission](http://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
+- [Add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
 
-- [Add-AvailabilityAddressSpace](http://technet.microsoft.com/library/abbd48f3-adf6-40ed-9a52-36800d8429ef.aspx)
+- [Add-AvailabilityAddressSpace](https://technet.microsoft.com/library/abbd48f3-adf6-40ed-9a52-36800d8429ef.aspx)
 
-- [Set-AvailabilityConfig](http://technet.microsoft.com/library/aa3c55f3-d29a-443e-b248-e1779516dfe1.aspx)
+- [Set-AvailabilityConfig](https://technet.microsoft.com/library/aa3c55f3-d29a-443e-b248-e1779516dfe1.aspx)
 
 ## Use the Exchange Management Shell to configure organization-wide free/busy information in an untrusted cross-forest topology
 

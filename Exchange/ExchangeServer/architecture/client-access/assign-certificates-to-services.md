@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Assign certificates to Exchange Server services
 ms.collection:
 - Strat_EX_Admin
@@ -31,8 +31,8 @@ The available Exchange services are described in the following table.
 |IMAP|TLS encryption for IMAP4 client connections. <br/> Don't assign a wildcard certificate to the IMAP4 service. Instead, use the **Set-ImapSettings** cmdlet to configure the fully qualified domain name (FQDN) that clients use to connect to the IMAP4 service.|
 |POP|TLS encryption for POP3 client connections. <br/> Don't assign a wildcard certificate to the POP3 service. Instead, use the **Set-PopSettings** cmdlet to configure the FQDN that clients use to connect to the POP3 service.|
 |SMTP|TLS encryption for external SMTP client and server connections. <br/> Mutual TLS authentication between Exchange and other messaging servers. <br/> When you assign a certificate to SMTP, you're prompted to replace the default Exchange self-signed certificate that's used to encrypt SMTP communication between internal Exchange servers. Typically, you don't need to replace the default SMTP certificate.|
-|Unified Messaging (UM)|TLS encryption for client connections to the backend UM service on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Mailbox Server](http://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx).|
-|Unified Messaging Call Router (UMCallRouter)|TLS encryption for client connections to the UM Call Router service in the Client Access services on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM Call Router service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM Call Router service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Client Access Server](http://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx).|
+|Unified Messaging (UM)|TLS encryption for client connections to the backend UM service on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Mailbox Server](https://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx).|
+|Unified Messaging Call Router (UMCallRouter)|TLS encryption for client connections to the UM Call Router service in the Client Access services on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM Call Router service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM Call Router service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Client Access Server](https://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx).|
 
 ## What do you need to know before you begin?
 

@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting OWA.Protocol.Dep Health Set
 ms:assetid: f39c63d5-f161-4eee-9415-05f3355e7cc7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.protocol.dep(v=EXCHG.150)
 ms:contentKeyID: 49720914
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **OWA.Protocol.DEP** health set monitors the overall health of instant messaging (IM) services in Outlook Web App that are integrated between Lync 2013 and Exchange 2013. For more information about enabling instant messaging in Outlook Web App, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
+The **OWA.Protocol.DEP** health set monitors the overall health of instant messaging (IM) services in Outlook Web App that are integrated between Lync 2013 and Exchange 2013. For more information about enabling instant messaging in Outlook Web App, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418).
 
 If you receive an alert that indicates that the **OWA.Protocol.DEP** health set is unhealthy, this indicates an issue that may prevent instant messaging from working correctly in Outlook Web App.
 
@@ -67,13 +67,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\MSExchange OWA\InstantMessa
 
 This key should contain an **ImplementationDLLPath** string that points to the `Microsoft.Rtc.Internal.Ucweb` DLL. The default location is `C:\Program Files\Microsoft UCMA 4.0\Runtime\SSP\Microsoft.Rtc.Internal.Ucweb.dll`.
 
-To fix this issue, reinstall UCMA 4.0 or manually create the registry key. You can download UCMA 4.0 here: [Unified Communications Managed API 4.0 Runtime](http://go.microsoft.com/fwlink/p/?linkid=260990).
+To fix this issue, reinstall UCMA 4.0 or manually create the registry key. You can download UCMA 4.0 here: [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=260990).
 
 ## Recovery actions for error: "InstantMessageOCSProvider.InitializeEndpointManager. IM provider not found."
 
 This error indicates the `Microsoft.Rtc.Internal.Ucweb` DLL file is missing on the Mailbox server. This file should have been installed when UCMA 4.0 was installed on the server. The default location is `C:\Program Files\Microsoft UCMA 4.0\Runtime\SSP`.
 
-To fix this issue, reinstall UCMA 4.0. For more information, see [Unified Communications Managed API 4.0 Runtime](http://go.microsoft.com/fwlink/p/?linkid=260990).
+To fix this issue, reinstall UCMA 4.0. For more information, see [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=260990).
 
 ## Recovery actions for error: "Instant Messaging Server name is set to null or empty on web.config."
 
@@ -145,7 +145,7 @@ To fix this issue, follow these steps:
 
 ## Recovery actions for error: "IM Certificate with thumbprint \&lt;value\&gt; could not be found."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App isn't found on the Mailbox server. This certificate must be installed on the Mailbox server and the Lync 2013 server, and must be trusted by both servers. For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App isn't found on the Mailbox server. This certificate must be installed on the Mailbox server and the Lync 2013 server, and must be trusted by both servers. For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418).
 
 You can match he thumbprint value in the error to the certificate by using the **Get-ExchangeCertificate** cmdlet, or in the Exchange admin center (EAC) at **Servers** \> **Certificates**.
 
@@ -157,8 +157,8 @@ You can match he thumbprint value in the error to the certificate by using the *
 
 ## Recovery actions for error: "IM Certificate has not become valid yet."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App has invalid dates. To resolve this error, you need to configure a new certificate, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App has invalid dates. To resolve this error, you need to configure a new certificate, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418).
 
 ## Recovery actions for error: "IM Certificate does not have a private key."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App does not have a private key. To resolve this error, you need to configure a new certificate that has a private key, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App does not have a private key. To resolve this error, you need to configure a new certificate that has a private key, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418).

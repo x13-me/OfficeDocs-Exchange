@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting EWS Health Set
 ms:assetid: f5aaacdd-7f4a-4d63-8440-1c564e644dfc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews(v=EXCHG.150)
 ms:contentKeyID: 49720924
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -198,7 +198,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
     ```
 
-16. If the probe is still failing, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+16. If the probe is still failing, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

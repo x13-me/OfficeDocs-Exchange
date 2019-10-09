@@ -8,7 +8,7 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 ms.collection: exchange-server
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 audience: ITPro
 title: Disable or delete a mailbox in Exchange Server
@@ -19,7 +19,7 @@ title: Disable or delete a mailbox in Exchange Server
 
 In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to disable or delete mailboxes. Disabled or deleted mailboxes are also known as *disconnected mailboxes*. For more information about disconnected mailboxes, see [Disconnected mailboxes](disconnected-mailboxes.md).
 
- **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](http://technet.microsoft.com/library/be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7.aspx).
+ **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](https://technet.microsoft.com/library/be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7.aspx).
 
 ## What do you need to know before you begin?
 
@@ -84,7 +84,7 @@ This example disables the shared mailbox that has the email address sharedmbx@co
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Disable-Mailbox](http://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx).
+For detailed syntax and parameter information, see [Disable-Mailbox](https://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx).
 
 ### How do you know this worked?
 
@@ -175,7 +175,7 @@ This example deletes the mailbox that has the alias value corpprint.
 Remove-Mailbox corpprint
 ```
 
-For detailed syntax and parameter information, see [Remove-Mailbox](http://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
 
 **Note**: If you use the **Remove-Mailbox** cmdlet with the _Purge_ switch, the mailbox is immediately purged and isn't recoverable. For more information, see [Permanently delete a mailbox](permanently-delete-mailboxes.md).
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Configure certificate based authentication in Exchange 2016
 ms.collection:
 - Strat_EX_Admin
@@ -124,7 +124,7 @@ After you require client certificates for authentication, you need to disable al
     Set-OwaVirtualDirectory "<ServerName>\owa (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false -OAuthAuthentication $false
     ```
 
-    For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](http://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
+    For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
 
 2. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the EAC virtual directory:
 
@@ -140,7 +140,7 @@ After you require client certificates for authentication, you need to disable al
     Set-ActiveSyncVirtualDirectory "<ServerName>\Microsoft-Server-ActiveSync (Default Web Site)" -BasicAuthEnabled $false -WindowsAuthEnabled $false
     ```
 
-    For detailed syntax and parameter information, see [Set-ActiveSyncVirtualDirectory](http://technet.microsoft.com/library/899fa80c-41e9-4fc0-b28e-5ca2f55e6369.aspx).
+    For detailed syntax and parameter information, see [Set-ActiveSyncVirtualDirectory](https://technet.microsoft.com/library/899fa80c-41e9-4fc0-b28e-5ca2f55e6369.aspx).
 
 ## Step 5: Use IIS Manager to enable client certificate mapping for the Outlook on the web, Exchange admin center, and ActiveSync virtual directories
 

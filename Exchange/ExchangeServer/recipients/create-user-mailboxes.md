@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -27,7 +27,7 @@ You can create user mailboxes in Exchange Server by using the Exchange admin cen
 |:-----|:-----|:-----|
 |Alias|Optional|The Exchange alias (also known as the *mail nickname*) for the mailbox. The maximum length is 64 characters. Valid characters are letters, numbers and ASCII text characters that are allowed in email addresses. For example, periods are allowed, but each period must be surrounded by other valid characters (for example, pilar.pinilla).  <br/>  The alias value is used to generate the primary email address (_\<alias\>_@ _\<domain\>_). If you don't specify an alias value, the user name part of the account name (user principal name) is used.  <br/> The alias value must be unique.  <br/> **Note**: Don't use apostrophes (') or quotation marks (") in the alias. Although these characters are allowed, they might cause problems later.|
 |Display name|EAC: Required  <br/> Exchange Management Shell: Optional|Identifies the mailbox in the EAC, and in address lists in Outlook and Outlook on the web (formerly known as Outlook Web App). The maximum length is 256 characters. Spaces and other text characters are allowed.  <br/> In the EAC, the display name is populated by the values that you enter for the first name, middle initial, and last name, but you can specify a custom value.  <br/> In the Exchange Management Shell, if you don't specify a value for the display name, the value of the **Name** property is used.  <br/> The display name value doesn't need to be unique, but having multiple mailboxes with the same display name would be confusing.|
-|Name|Required|Species the name of the object in Active Directory. Only administrators see this value in Exchange or Active Directory management tools. The maximum length is 64 characters. Spaces and other text characters are allowed.  <br/> The name value must be unique.|
+|Name|Required|Specifies the name of the object in Active Directory. Only administrators see this value in Exchange or Active Directory management tools. The maximum length is 64 characters. Spaces and other text characters are allowed.  <br/> The name value must be unique.|
 
 ## What do you need to know before you begin?
 
@@ -128,7 +128,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ### How do you know this worked?
 
@@ -200,7 +200,7 @@ This example finds all user accounts that aren't mail-enabled and that aren't sy
 Get-User -RecipientTypeDetails User -Filter {UserPrincipalName -ne $null} -ResultSize unlimited | Enable-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Enable-Mailbox](http://technet.microsoft.com/library/58de5b3c-05c3-4a1f-84c6-f082d990f22b.aspx) and [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
+For detailed syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/58de5b3c-05c3-4a1f-84c6-f082d990f22b.aspx) and [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
 
 ### How do you know this worked?
 

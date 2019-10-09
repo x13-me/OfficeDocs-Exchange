@@ -31,15 +31,16 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2019 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2019 CU3](https://support.microsoft.com/kb/4514141)|September 17, 2019|15.2.464.5|15.02.0464.005|
 |[Exchange Server 2019 CU2](https://support.microsoft.com/kb/4488401)|June 18, 2019|15.2.397.3|15.02.0397.003|
-|[Exchange Server 2019 CU1](https://support.microsoft.com/kb/4471391)|February 12, 2019|15.2.330.5|15.02.0330.005|
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
+|Exchange Server 2019 CU1|February 12, 2019|15.2.330.5|15.02.0330.005|
+|Exchange Server 2019 RTM|October 22, 2018|15.2.221.12|15.02.0221.012|
 |Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
 
 ## Exchange Server 2016
@@ -48,15 +49,16 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2016 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2016 CU14](https://www.microsoft.com/download/details.aspx?id=100302)|September 17, 2019|15.1.1847.3|15.01.1847.003|
 |[Exchange Server 2016 CU13](https://www.microsoft.com/download/details.aspx?id=58395)|June 18, 2019|15.1.1779.2|15.01.1779.002|
-|[Exchange Server 2016 CU12](https://www.microsoft.com/download/details.aspx?id=57827)|February 12, 2019|15.1.1713.5|15.01.1713.005|
-|[Exchange Server 2016 CU11](https://www.microsoft.com/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
+|Exchange Server 2016 CU12|February 12, 2019|15.1.1713.5|15.01.1713.005|
+|Exchange Server 2016 CU11|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |Exchange Server 2016 CU10|June 19, 2018|15.1.1531.3|15.01.1531.003|
 |Exchange Server 2016 CU9|March 20, 2018|15.1.1466.3|15.01.1466.003|
 |Exchange Server 2016 CU8|December 19, 2017|15.1.1415.2|15.01.1415.002|
@@ -76,7 +78,7 @@ The table in this section provides build numbers and general release dates for e
 
 To view the build number of an Exchange 2013 server, run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ```
 
@@ -113,7 +115,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2010 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
@@ -196,7 +198,7 @@ The tables in this section provide build numbers and general release dates for e
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 ```
 
@@ -227,7 +229,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 3-v2 for Exchange Server 2007 SP3|March 30, 2011|8.3.159.2|8.03.0159.002|
 |Update Rollup 2 for Exchange Server 2007 SP3|December 10, 2010|8.3.137.3|8.03.0137.003|
 |Update Rollup 1 for Exchange Server 2007 SP3|September 9, 2010|8.3.106.2|8.03.0106.002|
-|[Exchange Server 2007 SP3](https://go.microsoft.com/fwlink/p/?LinkId=197012)|June 7, 2010|8.3.83.6|8.03.0083.006|
+|Exchange Server 2007 SP3|June 7, 2010|8.3.83.6|8.03.0083.006|
 
 ### Build numbers for previous releases of Exchange Server 2007
 

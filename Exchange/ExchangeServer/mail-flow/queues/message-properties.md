@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Properties of messages in queues
 ms.collection: exchange-server
 audience: ITPro
@@ -48,7 +48,7 @@ The following table describes the message properties that you can use as filters
 |n/a|`MessageLatency`|Equals (`-eq`) <br/><br/> Does not equal (`-ne`) <br/><br/> Greater than (`-gt`) <br/><br/> Greater than or equal to (`-ge`) <br/> Less than (`-lt`) <br/> Less than or equal to (`-le`|The amount of time that elapsed between when the message first entered the Submission queue on the server, and when the message was placed in the queue. The value uses the syntax _hh:mm:ss.ff_, where _hh_ = hour, _mm_ = minute, _ss_ = second, and _ff_ = fractions of a second.|
 |**Message Source Name**|`MessageSourceName`|**Equals** (`-eq`) <br/><br/> **Does Not Equal** (`-ne`) <br/><br/> **Contains** (`-contains`)|The name of the transport component that submitted the message to the queue. For example, if the message came in through a Receive connector, the value is: `SMTP:` _\<ConnectorName\>_. If the message is a delivery status notification (DSN), the value is `DSN`.|
 |n/a|`OriginalFromAddress`|Equals (`-eq`) <br/><br/> Does not equal (`-ne`) <br/><br/> Contains (`-like`)|The original sender's email address for any new side effect messages that are created during categorization (for example, journal rules, NDRs, or mail flow rules rules, also known as transport rules).|
-|n/a|`Priority`|Equals (`-eq`) <br/><br/> Does not equal (`-ne`)|The priority (importance) of the message that's assigned by the user in Microsoft Outlook or Outlook on the web. Valid values are `Low`, `Normal`, and `High`. For more information, see [Priority Queuing](http://technet.microsoft.com/library/6edbd826-fe55-435b-9c63-48e6365c3d09.aspx).|
+|n/a|`Priority`|Equals (`-eq`) <br/><br/> Does not equal (`-ne`)|The priority (importance) of the message that's assigned by the user in Microsoft Outlook or Outlook on the web. Valid values are `Low`, `Normal`, and `High`. For more information, see [Priority Queuing](https://technet.microsoft.com/library/6edbd826-fe55-435b-9c63-48e6365c3d09.aspx).|
 |**Queue ID**|`Queue`|**Equals** (`-eq`) <br/><br/> **Does Not Equal** (`-ne`) <br/><br/> **Contains** (`-contains`)|The queue that holds the message. The queue identity uses the syntax _\<Server\>\\<Queue\>_. For more information, see [Queue identity](queues-and-messages-in-powershell.md#queue-identity).|
 |n/a|`Recipients`|Contains (`-like`)|An array that contains details about the recipient and the Send connector that will be used, or any errors that were encountered. For example: <br/><br/> `{chris@contoso.com;2;2;A matching connector cannot be found to route the external recipient;16;<No Matching Connector>;0}`|
 |n/a|`RetryCount`|Equals (`-eq`) <br/><br/> Does not equal (`-ne`) <br/><br/> Greater than (`-gt`) <br/><br/> Greater than or equal to (`-ge`) <br/> Less than (`-lt`) <br/> Less than or equal to (`-le`|The number of times that delivery of the message to the destination was tried, either automatically or manually.|

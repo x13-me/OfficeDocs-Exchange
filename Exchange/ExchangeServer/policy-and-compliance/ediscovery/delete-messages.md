@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 ms.date: 6/12/2018
-ms.reviewer: 
+ms.reviewer:
 title: Search for and delete messages in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -50,7 +50,7 @@ The first step is to create and run a Compliance Search to find the message that
 
 In this example, the commands will create and start a search of all mailboxes in the organization for a message that contains the words "Update your account information" in the subject line.
 
-1. [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+1. [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 2. Run the following commands.
 
@@ -64,9 +64,9 @@ In this example, the commands will create and start a search of all mailboxes in
 
 For information about creating a Compliance Search and configuring search queries, see the following topics:
 
-- [New-ComplianceSearch](http://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+- [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
 
-- [Start-ComplianceSearch](http://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+- [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
 
 - [Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md)
 
@@ -82,7 +82,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (by running the [Get-ComplianceSearch](http://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx) cmdlet) to get a count of the total number of search results.
+- Use the search estimate statistics (by running the [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx) cmdlet) to get a count of the total number of search results.
 
 Here are two examples of queries to find suspicious email messages.
 
@@ -105,7 +105,7 @@ After you've created and refined a Compliance Search to return the message that 
 
 In this example, the command will delete the search results returned by a Compliance Search named "Remove Phishing Message".
 
-1. [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+1. [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 2. Run the following command.
 

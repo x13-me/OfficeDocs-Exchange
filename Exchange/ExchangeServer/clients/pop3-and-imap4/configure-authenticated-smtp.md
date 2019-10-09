@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -182,7 +182,7 @@ To verify that you've configured Outlook on the web to display the SMTP settings
 
 To verify that you've configured the authenticated SMTP settings on the Exchange server, perform one or more following procedures:
 
-- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](http://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx) and [Test-ImapConnectivity](http://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
+- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](https://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx) and [Test-ImapConnectivity](https://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
 
 - Enable protocol logging on the "Client Frontend _\<Server name\>_" Receive connector, configure a POP3 or IMAP4 client to connect to a mailbox, send a test message from an internal network connection and/or an external Internet connection, and view the results in the protocol log. For more information, see [Protocol logging](../../mail-flow/connectors/protocol-logging.md).
 

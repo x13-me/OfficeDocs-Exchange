@@ -140,8 +140,8 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Grant service account access](../media/gsuite-mig-8-grant-service-account-access.png)
 
-> [!NOTE]
-> It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
+   > [!NOTE]
+   > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
 
 ## Create a sub-domain for mail routing to Office 365
 
@@ -176,6 +176,12 @@ If your project doesn't already have all of the required APIs enabled, you must 
    ![Set up Google mx](../media/gsuite-mig-12-set-up-google-mx.png)
 
 5. Click **Set up Google MX records**, and then follow the instructions that are listed for your DNS provider.
+
+   > [!NOTE]
+   > It may take up to 24 hours for Google to propagate this setting to all of the users in your organization.
+
+   > [!IMPORTANT]
+   > If you are using non-default Transport settings in your Office 365 organization, you should check that mail flow will work from Office 365 to G Suite. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your G Suite routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
 
 ## Provision users in O365
 
@@ -257,9 +263,9 @@ During completion, another incremental sync is run to copy any changes that have
 
 5. If successful, run the following command:
 
-```
-New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net -Name gmailEndpoint
-```
+   ```
+   New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net -Name gmailEndpoint
+   ```
 
 ### Create a migration batch in Office 365
 
@@ -282,8 +288,9 @@ New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::Read
    ```
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
-> [!TIP]
-> See [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch?view=exchange-ps) for an explanation of all of the individual parameters you can use with this cmdlet. 
+
+   > [!TIP]
+   > See [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch?view=exchange-ps) for an explanation of all of the individual parameters you can use with this cmdlet.
 
 4. Start the migration batch.
 

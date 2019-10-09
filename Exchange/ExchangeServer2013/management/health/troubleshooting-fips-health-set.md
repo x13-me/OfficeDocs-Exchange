@@ -4,7 +4,7 @@ TOCTitle: Troubleshooting FIPS Health Set
 ms:assetid: 96e1b096-9cb5-426f-a84e-50d5599e4bbb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.fips(v=EXCHG.150)
 ms:contentKeyID: 49720857
-ms.date: 
+ms.date:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **FIPS** health set monitors the overall health of the Federal Information Processing Standards (FIPS) settings on Exchange servers. For more information about FIPS 140, see [FIPS 140 Validation](http://go.microsoft.com/fwlink/p/?linkid=521913).
+The **FIPS** health set monitors the overall health of the Federal Information Processing Standards (FIPS) settings on Exchange servers. For more information about FIPS 140, see [FIPS 140 Validation](https://go.microsoft.com/fwlink/p/?linkid=521913).
 
 If you receive an alert that indicates that the **FIPS** health set is unhealthy, this indicates an issue that may prevent your Exchange server from using FIPS 140-compliant components and processes.
 
