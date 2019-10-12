@@ -93,7 +93,7 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
 > [!NOTE]
-> When you run the above command, a prerequisite check is performed and will tell you which computer requirements are missing.
+> When you run this command, a prerequisite check is performed that will tell you which requirements are missing.
 
 After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
 
