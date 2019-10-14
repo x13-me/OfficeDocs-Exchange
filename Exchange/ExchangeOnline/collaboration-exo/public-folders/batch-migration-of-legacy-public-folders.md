@@ -531,11 +531,6 @@ For detailed syntax and parameter information, see the following topics:
 
 [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
 
-6. Proceed to unlock the public folders:
-
-    ```
-    Get-Mailbox -PublicFolder -ResultSize unlimited | %{Set-Mailbox $_.UserPrincipalName -PublicFolder -IsExcludedFromServingHierarchy $False}
-    ```
 
 ## How do I know this worked?
 

@@ -58,7 +58,7 @@ The _modifiable_ settings that are available in CAS mailbox plans by using the *
 |_ActiveSyncEnabled_|True|Enables or disables Exchange ActiveSync (EAS) access to the mailbox.|
 |_ImapEnabled_|Varies by license.|Enables or disables IMAP4 access to the mailbox.|
 |_OwaMailboxPolicy_|OwaMailboxPolicy-Default|Configures the user's settings in Outlook on the web (formerly known as Outlook Web App). For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies.md).|
-|_PopEnabled_|True|Enables or disables IMAP4 access to the mailbox.|
+|_PopEnabled_|True|Enables or disables POP3 access to the mailbox.|
 
 Modifying the settings of a mailbox plan won't update the settings of an existing mailbox that's already has the mailbox plan applied. To modify these settings on a existing mailbox, you can:
 
