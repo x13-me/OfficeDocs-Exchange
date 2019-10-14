@@ -124,6 +124,11 @@ Set-InboundConnector -Identity <ConnectorIdentity> [-EFSkipLastIP <$true | $fals
 
 - _EFUsers_: The comma-separated email address of the recipients that you want to apply Enhanced Filtering for Connectors to. The default value is blank (`$null`), which means Enhanced Filtering for Connectors is applied to all recipients.
 
+- _EFSkipMailGateway_: Reserved for future use.
+
+- _EFTestMode_: Reserved for future use.
+
+
 This example configures Enhanced Filtering for Connectors on the inbound connector named From Anti-spam Service with the following settings:
 
 - _EFSkipLastIP_: `$true`
