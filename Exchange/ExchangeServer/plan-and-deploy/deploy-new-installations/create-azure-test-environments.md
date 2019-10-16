@@ -44,7 +44,7 @@ If you don't already have an Azure subscription, you can sign up for an [Azure F
 You can create a new Azure virtual network with a domain controller with Azure PowerShell. You can run the following PowerShell commands from a Windows PowerShell command prompt or in the PowerShell Integrated Script Environment (ISE). If you have not installed Azure PowerShell, see [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
 > [!NOTE]
-> These commands are for Azure PowerShell 1.0.0 and later. For a text file that contains all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5d0b899d).
+> These commands are for Azure PowerShell 1.0.0 and later.
 
 1. Sign into your Azure account.
 
