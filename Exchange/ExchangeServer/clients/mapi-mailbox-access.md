@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Enable or disable MAPI access to mailboxes in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -92,7 +92,7 @@ This example enables MAPI access to the mailbox named Esther Valle.
 Set-CasMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](http://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
 
 ## Enable or disable MAPI access to multiple mailboxes
 
@@ -126,7 +126,7 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 - Use the _OrganizationalUnit_ parameter to filter the mailboxes by organizational unit (OU).
 
-- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
+- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 
@@ -150,7 +150,7 @@ This example uses the text file C:\My Documents\Accounts.txt to disable MAPI acc
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -MAPIEnabled $false}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) and [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) and [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
 
 ## How do you know this worked?
 

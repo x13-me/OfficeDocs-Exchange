@@ -92,6 +92,9 @@ For example, if the Exchange installation files are available on drive E:, run t
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
+> [!NOTE]
+> When you run this command, a prerequisite check is performed that will tell you which requirements are missing.
+
 After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
 
 ## Step 2: Prepare Active Directory
@@ -227,6 +230,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU3|17001|13237|16754|
 |Exchange 2019 CU2|17001|13237|16754|
 |Exchange 2019 CU1|17000|13236|16752|
 |Exchange 2019 RTM|17000|13236|16751|
@@ -238,6 +242,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU14|15332|13237|16217|
 |Exchange 2016 CU13|15332|13237|16217|
 |Exchange 2016 CU12|15332|13236|16215|
 |Exchange 2016 CU11|15332|13236|16214|

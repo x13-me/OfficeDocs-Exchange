@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
 ms.date: 7/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure and run the Managed Folder Assistant in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -122,4 +122,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](http://technet.microsoft.com/library/75d840ea-5abc-44bb-b361-e81561fa1b04.aspx).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://technet.microsoft.com/library/75d840ea-5abc-44bb-b361-e81561fa1b04.aspx).

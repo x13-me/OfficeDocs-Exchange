@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: View or configure Outlook on the web mailbox policy properties
 ms.collection: exchange-server
 audience: ITPro
@@ -23,7 +23,7 @@ You can configure mailbox policies in Exchange Server for Outlook on the web thr
 
 - Estimated time to complete each procedure: 3 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
@@ -72,7 +72,7 @@ This example retrieves the properties of the Outlook on the web mailbox policy `
 Get-OwaMailboxPolicy -Identity Fabrikam\Executives
 ```
 
-For more information about syntax and parameters, see [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
+For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
 
 ## Use the Exchange Management Shell to configure Outlook on the web mailbox policies
 
@@ -82,7 +82,7 @@ This example enables calendar access in the default mailbox policy.
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
-For more information about syntax and parameters, see [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
+For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
 
 ### How do you know this worked?
 
@@ -96,4 +96,4 @@ To verify that you've successfully edited an Outlook on the web mailbox policy:
 
 ## See also
 
-[Outlook on the web mailbox policies procedures](http://technet.microsoft.com/library/2f9fc960-6d0b-472a-a81a-6d8b629b4d5d.aspx)
+[Outlook on the web mailbox policies procedures](https://technet.microsoft.com/library/2f9fc960-6d0b-472a-a81a-6d8b629b4d5d.aspx)

@@ -4,8 +4,8 @@ TOCTitle: Create an offline address book virtual directory
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 2c70e21f-2b12-414a-9e8c-65634a767c72
 mtps_version: v=EXCHG.150
 ---
@@ -27,7 +27,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
 - The local Exchange server must have the Client Access server role installed.
 
@@ -59,4 +59,4 @@ New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "http
 
 After you create a new OAB virtual directory, you must edit the settings on each OAB that uses Web-based distribution to reconnect to the OAB virtual directory. For more information, see [Change the offline address book generation schedule](change-address-book-generation-schedule-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [New-OABVirtualDirectory](http://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).
+For detailed syntax and parameter information, see [New-OABVirtualDirectory](https://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).

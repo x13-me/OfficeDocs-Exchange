@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms.date: 6/7/2018
-ms.reviewer: 
+ms.reviewer:
 title: Create an Exchange Server certificate request for a certification authority
 ms.collection:
 - Strat_EX_Admin
@@ -137,7 +137,7 @@ This example creates a certificate request on the local Exchange server for a wi
 - **FriendlyName**: Contoso.com Wildcard Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName C=US,CN=*.contoso.com
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName "C=US,CN=*.contoso.com"
 ```
 
 This example creates a certificate request on the local Exchange server for a SAN certificate with the following properties:
@@ -161,7 +161,7 @@ This example creates a certificate request on the local Exchange server for a SA
 - **FriendlyName**: Contoso.com SAN Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName C=US,CN=mail.contoso.com -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net"
 ```
 
 This example creates a request for a single subject certificate with the following properties:
@@ -173,7 +173,7 @@ This example creates a request for a single subject certificate with the followi
 - **FriendlyName**: Mail.contoso.com Cert
 
 ```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName C=US,CN=mail.contoso.com
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName "C=US,CN=mail.contoso.com"
 ```
 
  **Notes:**
@@ -186,7 +186,7 @@ New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.
 
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
 
-- For more information, see [New-ExchangeCertificate](http://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
+- For more information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
 
 ## How do you know this worked?
 

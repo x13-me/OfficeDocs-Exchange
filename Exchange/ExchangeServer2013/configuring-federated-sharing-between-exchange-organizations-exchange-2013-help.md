@@ -5,7 +5,7 @@ ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657473(v=EXCHG.150)
 ms:contentKeyID: 49289355
 ms.date: 12/09/2016
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -77,7 +77,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 
@@ -122,7 +122,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 
@@ -162,4 +162,4 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      Modify the *LegacyExchangeDN* parameter on all mail-enabled objects in the Exchange 2003 organization that reference the remote Exchange 2013 organization. Change the existing organizational unit (OU) value for the mail-enabled object to **External (FYDIBOHF25SPDLT)**. For example, **LegacyExchangeDN=/o=First Organization/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=User Name**.
 
-     To modify mail-enabled objects in the Exchange 2003 organization, you can use either the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://go.microsoft.com/fwlink/?linkid=294644) or the [Microsoft Exchange Server LegacyDN Utility](http://go.microsoft.com/fwlink/?linkid=294643).
+     To modify mail-enabled objects in the Exchange 2003 organization, you can use the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://go.microsoft.com/fwlink/?linkid=294644).

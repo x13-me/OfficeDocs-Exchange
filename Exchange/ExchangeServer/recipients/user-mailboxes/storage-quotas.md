@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 title: Configure storage quotas for a mailbox
 ms.collection:
 - Strat_EX_Admin
@@ -74,7 +74,7 @@ This example sets the issue warning, prohibit send, and prohibit send and receiv
 Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## How do you know this worked?
 

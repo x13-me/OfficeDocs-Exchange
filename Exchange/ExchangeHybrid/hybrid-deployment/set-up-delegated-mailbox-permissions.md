@@ -11,7 +11,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: a2a10cb3-4557-4ff5-8191-c653522f4512
-ms.reviewer: 
+ms.reviewer:
 description: "Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Office 365 support the Full Access and Send on Behalf delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version."
 ---
 
@@ -45,7 +45,7 @@ What you need to do to enable support for delegated mailbox permissions depends 
 
 To enable ACLable object synchronization at the organization level, do the following.
 
-1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](http://go.microsoft.com/fwlink/p/?LinkID=510956).
+1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkID=510956).
 
 2. Open the Exchange Management Shell on an Exchange 2013 or Exchange 2016 server running the latest available CU, or the immediately previous CU.
 

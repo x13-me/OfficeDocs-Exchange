@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 ms.date: 7/9/2018
-ms.reviewer: 
+ms.reviewer:
 title: S/MIME for message signing and encryption
 ms.collection: exchange-server
 audience: ITPro
@@ -53,9 +53,9 @@ The steps that you follow to set up S/MIME with each of these endpoints are slig
 
 Setting up S/MIME with Outlook on the web involves these key steps:
 
-1. [Configure S/MIME settings for Outlook on the web](http://technet.microsoft.com/library/c7dee22c-9b5b-425c-91a9-d093204ff84e.aspx)
+1. [Configure S/MIME settings for Outlook on the web](https://technet.microsoft.com/library/c7dee22c-9b5b-425c-91a9-d093204ff84e.aspx)
 
-2. [Set up Virtual Certificate Collection to Validate S/MIME](http://technet.microsoft.com/library/04a616e6-197c-490c-ae8c-c8d5f0f0b3dd.aspx)
+2. [Set up Virtual Certificate Collection to Validate S/MIME](https://technet.microsoft.com/library/04a616e6-197c-490c-ae8c-c8d5f0f0b3dd.aspx)
 
 For information about how to send an S/MIME encrypted message in Outlook on the web, see [Encrypt messages by using S/MIME in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=392520).
 

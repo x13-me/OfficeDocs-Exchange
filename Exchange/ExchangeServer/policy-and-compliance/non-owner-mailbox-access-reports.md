@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms.date: 7/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Run a non-owner mailbox access report
 ms.collection: exchange-server
 audience: ITPro
@@ -27,7 +27,7 @@ You enable mailbox audit logging in the Exchange Management Shell.
 
 - Estimated time to complete: 5 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions in Exchange Server](../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
 

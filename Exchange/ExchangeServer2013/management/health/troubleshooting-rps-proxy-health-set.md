@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting RPS.Proxy Health Set
 ms:assetid: a5058323-5d86-438a-ad4a-fa4292310e98
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.rps.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720858
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -133,7 +133,7 @@ To help troubleshoot this issue, perform the following:
 
 9. After the server restarts, rerun the associated probe as shown in step 2.c. in the Verifying the issue still exists section.
 
-10. If the probe continues to fail, you may need assistance in resolving this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+10. If the probe continues to fail, you may need assistance in resolving this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

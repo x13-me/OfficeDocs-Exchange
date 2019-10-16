@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 7346bff7-41e0-401c-bd31-34498561f4c4
-ms.reviewer: 
+ms.reviewer:
 description: "This topic discusses your routing options for inbound messages from the Internet and outbound messages to the Internet."
 ---
 
@@ -37,7 +37,7 @@ The path messages sent to recipients in your on-premises and Exchange Online org
 
 - **If you decide to keep your MX record pointed to your on-premises organization**: All messages sent to any recipient in either organization will be routed through your on-premises organization first. A message addressed to a recipient that's located in Exchange Online will be routed first through your on-premises organization and then delivered to the recipient in Exchange Online. This route can be helpful for organizations where you have compliance policies that require messages sent to and from an organization be examined by a journaling solution. If you pick this option, Exchange Online Protection will not be able to effectively scan for spam messages.
 
-For more information, see [Mail flow best practices for Exchange Online and Office 365 (Overview)](http://technet.microsoft.com/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491.aspx).
+For more information, see [Mail flow best practices for Exchange Online and Office 365 (Overview)](https://technet.microsoft.com/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491.aspx).
 
 Read the section below that matches how you plan to route messages sent from Internet recipients to your on-premises and Exchange Online recipients.
 

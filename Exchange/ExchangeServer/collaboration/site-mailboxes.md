@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Site mailboxes
 ms.collection: exchange-server
 audience: ITPro
@@ -47,7 +47,7 @@ Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cm
 |MaxReceiveSize|The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.|36 MB|
 |ProhibitSendReceiveQuota|The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.|5 GB|
 
-For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](http://technet.microsoft.com/library/2f160d1a-a031-461f-8d29-c9cd49ca1645.aspx).
+For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](https://technet.microsoft.com/library/2f160d1a-a031-461f-8d29-c9cd49ca1645.aspx).
 
 ## Lifecycle policy and retention
 <a name="policies"> </a>
@@ -72,6 +72,6 @@ Using the eDiscovery Console in SharePoint, site mailboxes can be part of the In
 ## Backup and restore
 <a name="policies"> </a>
 
-Backup and Restore for the Exchange site mailboxes housed on the mailbox server will use the same backup and restore method that you use for all Exchange mailboxes. For more information, see [Database Availability Groups](http://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
+Backup and Restore for the Exchange site mailboxes housed on the mailbox server will use the same backup and restore method that you use for all Exchange mailboxes. For more information, see [Database Availability Groups](https://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
 
 For SharePoint documents, you should backup and restore into the same place. If you restore your SharePoint content to same URLs, then the site mailbox will continue to work and no additional configuration is needed. If you restore to a different URL, then you'll need to run **Set-SiteMailbox** cmdlet to update the _SharePointURL_ property. We recommend that you don't restore SharePoint to a new forest.

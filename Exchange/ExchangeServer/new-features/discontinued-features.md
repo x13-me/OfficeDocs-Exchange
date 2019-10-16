@@ -10,7 +10,7 @@ title: What's discontinued in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.date: 9/20/2018
-ms.reviewer: 
+ms.reviewer:
 ms.prod: exchange-server-it-pro
 manager: serdars
 
@@ -91,7 +91,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
 |Hub Transport server role|The Hub Transport server role has been replaced by Transport services which run on the Mailbox server role. The Mailbox server role includes the Microsoft Exchange Transport, Microsoft Exchange Mailbox Transport Delivery, the Microsoft Exchange Mailbox Transport Submission, and the Microsoft Exchange Frontend Transport service. For more information, see [Mail flow and the transport pipeline](../mail-flow/mail-flow.md).|
-|Unified Messaging server role|The Unified Messaging server role has been replaced by Unified Messaging services which run on the Mailbox and Client Access server roles. The Mailbox server role includes the Microsoft Exchange Unified Messaging service and the Client Access server role includes the Microsoft Exchange Unified Messaging Call Router service. For more information, see [Voice Architecture Changes](http://technet.microsoft.com/library/55d5ca4a-b0cd-45f1-9f47-e745ef208698.aspx).|
+|Unified Messaging server role|The Unified Messaging server role has been replaced by Unified Messaging services which run on the Mailbox and Client Access server roles. The Mailbox server role includes the Microsoft Exchange Unified Messaging service and the Client Access server role includes the Microsoft Exchange Unified Messaging Call Router service. For more information, see [Voice Architecture Changes](https://technet.microsoft.com/library/55d5ca4a-b0cd-45f1-9f47-e745ef208698.aspx).|
 |MAPI/CDO library|The MAPI/CDO library has been replaced by Exchange Web Services (EWS), Exchange ActiveSync (EAS), and Representational State Transfer (REST)<sup>\*</sup> APIs. If an application uses the MAPI/CDO library, it needs to move to EWS, EAS, or the REST APIs to communicate with Exchange 2016.|
 
 <sup>\*</sup> REST APIs will be included in a future release of Exchange 2016.
@@ -107,7 +107,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
 |Outlook 2003 is not supported|To connect Microsoft Outlook to Exchange 2016, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.|
-|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
+|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
 
 ### Outlook Web App and Outlook
 
@@ -124,7 +124,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
-|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](http://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx) and [Set-SendConnector](http://technet.microsoft.com/library/5b9cf002-848a-4f35-b51f-e1ede131b136.aspx).|
+|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx) and [Set-SendConnector](https://technet.microsoft.com/library/5b9cf002-848a-4f35-b51f-e1ede131b136.aspx).|
 
 ### Antispam and antimalware
 

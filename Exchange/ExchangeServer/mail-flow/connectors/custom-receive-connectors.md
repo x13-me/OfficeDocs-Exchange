@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Scenarios for custom Receive connectors in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
@@ -131,7 +131,7 @@ New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend 
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](http://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
 
 ### How do you know this worked?
 
@@ -213,7 +213,7 @@ New-ReceiveConnector -Name "Fabrikam.com TLS" -TransportRole Frontend -Partner -
 
  **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](http://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
 
 ### How do you know this worked?
 
@@ -316,7 +316,7 @@ New-ReceiveConnector -Name "Inbound From Service" -TransportRole Frontend -Custo
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](http://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
 
 ### How do you know this worked?
 
@@ -354,7 +354,7 @@ New-ReceiveConnector -Name "Inbound From Organization" -Internal -RemoteIPRanges
 
 **Note**: If your Edge Transport server uses different network adapters for internal and external networks, be sure to use the _Bindings_ parameter on the **Set-ReceiveConnector** cmdlet after you create the connector to specify the correct local IP address for the connector.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](http://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
 
 ### How do you know this worked?
 

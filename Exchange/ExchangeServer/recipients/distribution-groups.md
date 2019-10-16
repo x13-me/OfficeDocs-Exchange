@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8e98f141-81d3-4d07-b36e-fcd2dbcc9572
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group
 ms.collection: exchange-server
 audience: ITPro
@@ -28,7 +28,7 @@ There are two types of groups that can be used to distribute messages:
 It's important to note the terminology differences between Active Directory and Exchange. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
 
 > [!NOTE]
-> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](http://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups
 
 ## What do you need to know before you begin?
 
@@ -38,9 +38,9 @@ It's important to note the terminology differences between Active Directory and 
 
 - If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use the Exchange Management Shell to create or rename a distribution group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see:
 
-  - [Create a Distribution Group Naming Policy](http://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx)
+  - [Create a Distribution Group Naming Policy](https://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx)
 
-  - [Override the Distribution Group Naming Policy](http://technet.microsoft.com/library/9eb23fc9-3f59-4d09-9077-85c89a051ee0.aspx)
+  - [Override the Distribution Group Naming Policy](https://technet.microsoft.com/library/9eb23fc9-3f59-4d09-9077-85c89a051ee0.aspx)
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -102,7 +102,7 @@ This example creates a distribution group with an alias **itadmin** and the name
 New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestriction open
 ```
 
-For more information about using the Exchange Management Shell to create distribution groups, see [New-DistributionGroup](http://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
+For more information about using the Exchange Management Shell to create distribution groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
 
 ### How do you know this worked?
 
@@ -264,9 +264,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Exchange Management Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](http://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
+- [Get-DistributionGroup](https://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
 
-- [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
 
 Here are some examples of using the Exchange Management Shell to change distribution group properties.
 

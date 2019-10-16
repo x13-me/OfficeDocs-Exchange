@@ -13,7 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 59e32000-4fcf-417f-a491-f1d8f9aeef9b
-ms.reviewer: 
+ms.reviewer:
 description: "Summary: What you need to know to plan an Exchange hybrid deployment."
 ---
 
@@ -61,7 +61,7 @@ Consider the following before you implement an Exchange hybrid deployment:
 
 - **Offboarding**: As part of ongoing recipient management, you might have to move Exchange Online mailboxes back to your on-premises environment.
 
- For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](http://technet.microsoft.com/library/5ef062b5-92fe-40c2-a020-e956e1d14645.aspx).
+ For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](https://technet.microsoft.com/library/5ef062b5-92fe-40c2-a020-e956e1d14645.aspx).
 
    For more information about how to move mailboxes in hybrid deployments based on Exchange 2013 or newer, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](hybrid-deployment/move-mailboxes.md).
 
@@ -198,13 +198,13 @@ To create mailboxes in, or move mailboxes to, Office 365, you need to sign up fo
 
 Mailboxes moved to Office 365 are automatically provided with antivirus and anti-spam protection by Exchange Online Protection (EOP), a service provided by Office 365. You may need to purchase additional EOP licenses for your on-premises users if you chose to route all incoming Internet mail through the EOP service. We recommend that you carefully evaluate whether the EOP protection in your Office 365 is also appropriate to meet the antivirus and anti-spam needs of your on-premises organization. If you have protection in place for your on-premises organization, you may need to upgrade or configure your on-premises antivirus and anti-spam solutions for maximum protection across your organization.
 
-Learn more at: [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+Learn more at: [Anti-Spam and Anti-Malware Protection](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
 
 ### Public folders
 
 Public folders are supported in Office 365, and on-premises public folders can be migrated to Office 365. Additionally, public folders in Office 365 can be moved to the on-premises Exchange 2016 organization. Both on-premises and Office 365 users can access public folders located in either organization using Outlook on the web, Outlook 2016, Outlook 2013, or Outlook 2010 SP2 or newer. Existing on-premises public folder configuration and access for on-premises mailboxes doesn't change when you configure a hybrid deployment.
 
-Learn more at: [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx)
+Learn more at: [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx)
 
 ### Accessibility
 

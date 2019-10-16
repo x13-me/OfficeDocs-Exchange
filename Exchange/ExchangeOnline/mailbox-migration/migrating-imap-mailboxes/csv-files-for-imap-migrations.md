@@ -135,7 +135,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 ## Use the optional UserRoot attribute
 <a name="bi_Root"> </a>
 
-Some IMAP servers, such as Courier IMAP, don't support using administrator credentials to migrate mailboxes to Office 365. To use administrator credentials to migrate mailboxes, you can configure your IMAP server to use virtual shared folders. Virtual shared folders allow administrators to use the administrator's logon credentials to access user mailboxes on the IMAP server. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](http://www.courier-mta.org/imap/README.sharedfolders.mdl).
+Some IMAP servers, such as Courier IMAP, don't support using administrator credentials to migrate mailboxes to Office 365. To use administrator credentials to migrate mailboxes, you can configure your IMAP server to use virtual shared folders. Virtual shared folders allow administrators to use the administrator's logon credentials to access user mailboxes on the IMAP server. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](migrate-other-types-of-imap-mailboxes.md).
 
 To migrate mailboxes after you set up virtual shared folders on your IMAP server, you have to include the optional attribute **UserRoot** in the CSV file. This attribute specifies the location of each user's mailbox in the virtual shared folder structure on the IMAP server.
 

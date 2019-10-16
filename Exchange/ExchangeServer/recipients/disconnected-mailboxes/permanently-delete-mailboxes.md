@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms.date: 6/12/2018
-ms.reviewer: 
+ms.reviewer:
 title: Permanently delete a mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -38,7 +38,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Estimated time to complete: 2 minutes.
 
-- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -57,7 +57,7 @@ Run the following command to permanently delete an active mailbox and the associ
 Remove-Mailbox -Identity <Identity> -Permanent $true
 ```
 
-For detailed syntax and parameter information, see [Remove-Mailbox](http://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
 
 ### How do you know this worked?
 
@@ -119,7 +119,7 @@ This example permanently deletes all soft-deleted mailboxes from mailbox databas
 Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
 ```
 
-For detailed syntax and parameter information, see [Remove-StoreMailbox](http://technet.microsoft.com/library/d5cb00f2-f475-45cf-b72e-0962e5eed070.aspx) and [Get-MailboxStatistics](http://technet.microsoft.com/library/cec76f70-941f-4bc9-b949-35dcc7671146.aspx).
+For detailed syntax and parameter information, see [Remove-StoreMailbox](https://technet.microsoft.com/library/d5cb00f2-f475-45cf-b72e-0962e5eed070.aspx) and [Get-MailboxStatistics](https://technet.microsoft.com/library/cec76f70-941f-4bc9-b949-35dcc7671146.aspx).
 
 ### How do you know this worked?
 

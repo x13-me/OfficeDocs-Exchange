@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: bbae72f3-6a1e-4cbf-80da-d8f73d969c6b
-ms.reviewer: 
+ms.reviewer:
 description: "Configuring a hybrid deployment in Exchange with the Hybrid Configuration wizard greatly minimizes the potential that the hybrid deployment will experience problems. However, there are some typical areas outside the scope of the Hybrid Configuration wizard that, if misconfigured, may present problems in a hybrid deployment. This topic discusses the following common areas where problems may arise and outlines basic steps to verify or correct issues:"
 ---
 
@@ -37,7 +37,7 @@ For additional management tasks related to hybrid deployments, see [Hybrid Deplo
 
 - Estimated time to complete this task: Varies, depending on type of hybrid deployment issues
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and Shell infrastructure permissions](http://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and Shell infrastructure permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
 
 - The guidance in this topic applies to hybrid deployments configured using the Hybrid Configuration wizard. Hybrid deployments that have been manually configured are not supported.
 
@@ -60,7 +60,7 @@ The configuration of the on-premises Exchange servers is typically the area wher
 
 To verify that you have successfully published your on-premises Exchange servers, use the Microsoft Remote Connectivity Analyzer to verify inbound Internet connectivity to your on-premises Exchange servers. Do the following:
 
-1. Go to the [Remote Connectivity Analyzer](http://go.microsoft.com/fwlink/?linkid=154308) tool.
+1. Go to the [Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/?linkid=154308) tool.
 
 2. This step is for a general test of EWS tasks to confirm they are working, and that the EWS endpoint is configured.
 
@@ -124,4 +124,4 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
 
   You should see the following entry listed for your Exchange servers: `{[::]:25, 0.0.0.0:25}`
 
-   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](http://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
+   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](https://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms.date: 6/8/2018
-ms.reviewer: 
+ms.reviewer:
 title: Enable or disable mailbox audit logging for a mailbox
 ms.collection: exchange-server
 audience: ITPro
@@ -62,7 +62,7 @@ This example disables mailbox audit logging for Ben Smith's mailbox.
 Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## Configure mailbox audit logging settings for administrator, delegate, and owner access
 
@@ -86,11 +86,11 @@ This example specifies that the `HardDelete` action performed by the mailbox own
 Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## How do you know this worked?
 
-To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
+To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
 
 This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 

@@ -4,8 +4,8 @@ TOCTitle: Troubleshooting ActiveSync Health Set
 ms:assetid: 8a0b8b26-b4ef-41b8-8f71-8271c1735a69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.activesync(v=EXCHG.150)
 ms:contentKeyID: 49720831
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
@@ -157,7 +157,7 @@ This monitor alert is typically issued on Mailbox servers. To perform recovery a
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
    ```
 
-10. If the probe still fails, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+10. If the probe still fails, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## ActiveSyncCTPMonitor Recovery Actions
 
@@ -185,7 +185,7 @@ This monitor alert is typically issued on CA servers (CAS).
 
 7. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue section.
 
-8. If the probe continues to fail, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+8. If the probe continues to fail, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## RequestsQueuedGt500Monitor Recovery Actions
 
@@ -229,7 +229,7 @@ This monitor alert is typically issued on CA servers.
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
    ```
 
-8. If the probe continues to fail, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+8. If the probe continues to fail, you may need further assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 

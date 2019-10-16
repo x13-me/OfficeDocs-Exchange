@@ -4,8 +4,8 @@ TOCTitle: Place a mailbox on retention hold
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 mtps_version: v=EXCHG.150
 ---
@@ -26,7 +26,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 - Estimated time to complete: 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
 - You can't use the Exchange admin center (EAC) to place a mailbox on retention hold. You must use the Shell.
 
@@ -43,7 +43,7 @@ This example places Michael Allen's mailbox on retention hold.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## Use the Shell to remove retention hold for a mailbox
 
@@ -53,11 +53,11 @@ This example removes the retention hold from Michael Allen's mailbox.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
 
 ## How do you know this worked?
 
-To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
 
 This command retrieves the _RetentionHoldEnabled_ property for Michael Allen's mailbox.
 

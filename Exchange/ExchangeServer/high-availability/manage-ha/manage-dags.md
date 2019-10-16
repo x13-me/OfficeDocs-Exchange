@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms.date: 7/13/2018
-ms.reviewer: 
+ms.reviewer:
 title: Manage database availability groups
 ms.collection: exchange-server
 audience: ITPro
@@ -58,7 +58,7 @@ Regardless of what server is used as the witness server, if the Windows Firewall
 > [!IMPORTANT]
 > If the witness server you specify isn't an Exchange 2010 or later server, you must add the Exchange Trusted Subsystem universal security group (USG) to the local Administrators group on the witness server prior to creating the DAG. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed.
 
-Neither the witness server nor the witness directory needs to be fault tolerant or use any form of redundancy or high availability. There's no need to use a clustered file server for the witness server or employ any other form of resiliency for the witness server. There are several reasons for this. With larger DAGs (for example, six members or more), several failures are required before the witness server is needed. Because a six-member DAG can tolerate as many as two voter failures without losing quorum, it would take as many as three voters failing before the witness server would be needed to maintain a quorum. Also, if there's a failure that affects your current witness server (for example, you lose the witness server because of a hardware failure), you can use the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet to configure a new witness server and witness directory (provided you have a quorum).
+Neither the witness server nor the witness directory needs to be fault tolerant or use any form of redundancy or high availability. There's no need to use a clustered file server for the witness server or employ any other form of resiliency for the witness server. There are several reasons for this. With larger DAGs (for example, six members or more), several failures are required before the witness server is needed. Because a six-member DAG can tolerate as many as two voter failures without losing quorum, it would take as many as three voters failing before the witness server would be needed to maintain a quorum. Also, if there's a failure that affects your current witness server (for example, you lose the witness server because of a hardware failure), you can use the [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet to configure a new witness server and witness directory (provided you have a quorum).
 
 > [!NOTE]
 > You can also use the **Set-DatabaseAvailabilityGroup** cmdlet to configure the witness server and witness directory in the original location if the witness server lost its storage or if someone changed the witness directory or share permissions.
@@ -185,7 +185,7 @@ Mailbox servers can be removed from a DAG by using the Manage Database Availabil
 
 There are scenarios in which you must remove a Mailbox server from a DAG before performing certain operations. These scenarios include:
 
-- **Performing a server recovery operation**: If a Mailbox server that's a member of a DAG is lost, or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation using the **Setup /m:RecoverServer** switch. However, before you can perform the recovery operation, you must first remove the server from the DAG using the [Remove-DatabaseAvailabilityGroupServer](http://technet.microsoft.com/library/49290be7-9d3d-4bc3-80ea-f1992fdd1d12.aspx) cmdlet with the _ConfigurationOnly_ parameter.
+- **Performing a server recovery operation**: If a Mailbox server that's a member of a DAG is lost, or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation using the **Setup /m:RecoverServer** switch. However, before you can perform the recovery operation, you must first remove the server from the DAG using the [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/library/49290be7-9d3d-4bc3-80ea-f1992fdd1d12.aspx) cmdlet with the _ConfigurationOnly_ parameter.
 
 - **Removing the database availability group**: There may be situations in which you need to remove a DAG (for example, when disabling third-party replication mode). If you need to remove a DAG, you must first remove all servers from the DAG. If you attempt to remove a DAG that contains any members, the task fails.
 
@@ -222,7 +222,7 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 DAGs support built-in compression. When compression is enabled, DAG network communication uses XPRESS, which is the Microsoft implementation of the LZ77 algorithm. This is the same type of compression used in many Microsoft protocols, in particular, MAPI RPC compression between Microsoft Outlook and Exchange.
 
-As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
+As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
 
 |**Setting**|**Description**|
 |:-----|:-----|
@@ -254,7 +254,7 @@ You can use the **Set-DatabaseAvailabilityGroupNetwork** cmdlet in the Exchange 
 
 - **Network subnets**: One or more subnets entered using a format of _IPAddress/Bitmask_ (for example, 192.168.1.0/24 for Internet Protocol version 4 (IPv4) subnets; 2001:DB8:0:C000::/64 for Internet Protocol version 6 (IPv6) subnets).
 
-- **Enable replication**: In the EAC, select the check box to dedicate the DAG network to replication traffic and block MAPI traffic. Clear the check box to prevent replication from using the DAG network and to enable MAPI traffic. In the Exchange Management Shell, use the _ReplicationEnabled_ parameter in the [Set-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx) cmdlet to enable and disable replication.
+- **Enable replication**: In the EAC, select the check box to dedicate the DAG network to replication traffic and block MAPI traffic. Clear the check box to prevent replication from using the DAG network and to enable MAPI traffic. In the Exchange Management Shell, use the _ReplicationEnabled_ parameter in the [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx) cmdlet to enable and disable replication.
 
 > [!NOTE]
 > Disabling replication for the MAPI network doesn't guarantee that the system won't use the MAPI network for replication. When all configured replication networks are offline, failed, or otherwise unavailable, and only the MAPI network remains (which is configured as disabled for replication), the system uses the MAPI network for replication.
@@ -315,7 +315,7 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 ### DAG networks and iSCSI networks
 
-By default, DAGs perform discovery of all networks detected and configured for use by the underlying cluster. This includes any Internet SCSI (iSCSI) networks in use as a result of using iSCSI storage for one or more DAG members. As a best practice, iSCSI storage should use dedicated networks and network adapters. These networks shouldn't be managed by the DAG or its cluster, or used as DAG networks (MAPI or replication). Instead, these networks should be manually disabled from use by the DAG, so they can be dedicated to iSCSI storage traffic. To disable iSCSI networks from being detected and used as DAG networks, configure the DAG to ignore any currently detected iSCSI networks using the [Set-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx) cmdlet, as shown in this example:
+By default, DAGs perform discovery of all networks detected and configured for use by the underlying cluster. This includes any Internet SCSI (iSCSI) networks in use as a result of using iSCSI storage for one or more DAG members. As a best practice, iSCSI storage should use dedicated networks and network adapters. These networks shouldn't be managed by the DAG or its cluster, or used as DAG networks (MAPI or replication). Instead, these networks should be manually disabled from use by the DAG, so they can be dedicated to iSCSI storage traffic. To disable iSCSI networks from being detected and used as DAG networks, configure the DAG to ignore any currently detected iSCSI networks using the [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx) cmdlet, as shown in this example:
 
 ```
 Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
@@ -335,7 +335,7 @@ Mailbox servers that are members of a DAG have some properties specific to high 
 
 ### Automatic database mount dial
 
-The _AutoDatabaseMountDial_ parameter specifies the automatic database mount behavior after a database failover. You can use the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _AutoDatabaseMountDial_ parameter with any of the following values:
+The _AutoDatabaseMountDial_ parameter specifies the automatic database mount behavior after a database failover. You can use the [Set-MailboxServer](https://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _AutoDatabaseMountDial_ parameter with any of the following values:
 
 - `BestAvailability`: If you specify this value, the database automatically mounts immediately after a failover if the copy queue length is less than or equal to 12. The copy queue length is the number of logs recognized by the passive copy that needs to be replicated. If the copy queue length is more than 12, the database doesn't automatically mount. When the copy queue length is less than or equal to 12, Exchange attempts to replicate the remaining logs to the passive copy and mounts the database.
 
@@ -355,7 +355,7 @@ Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
 
 ### Database copy automatic activation policy
 
-The _DatabaseCopyAutoActivationPolicy_ parameter specifies the type of automatic activation available for mailbox database copies on the selected Mailbox servers. You can use the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _DatabaseCopyAutoActivationPolicy_ parameter with any of the following values:
+The _DatabaseCopyAutoActivationPolicy_ parameter specifies the type of automatic activation available for mailbox database copies on the selected Mailbox servers. You can use the [Set-MailboxServer](https://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _DatabaseCopyAutoActivationPolicy_ parameter with any of the following values:
 
 - `Blocked`: If you specify this value, databases can't be automatically activated on the selected Mailbox servers.
 
@@ -373,7 +373,7 @@ Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
 
 ### Maximum active databases
 
-The _MaximumActiveDatabases_ parameter (also used with the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet) specifies the number of databases that can be mounted on a Mailbox server. You can configure Mailbox servers to meet your deployment requirements by ensuring that an individual Mailbox server doesn't become overloaded.
+The _MaximumActiveDatabases_ parameter (also used with the [Set-MailboxServer](https://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet) specifies the number of databases that can be mounted on a Mailbox server. You can configure Mailbox servers to meet your deployment requirements by ensuring that an individual Mailbox server doesn't become overloaded.
 
 The _MaximumActiveDatabases_ parameter is configured with a whole number numeric value. When the maximum number is reached, the database copies on the server won't be activated if a failover or switchover occurs. If the copies are already active on a server, the server won't allow databases to be mounted.
 
@@ -491,7 +491,7 @@ After the maintenance is complete and the DAG member is ready to return to servi
 
 - Sets the value of the _DatabaseCopyAutoActivationPolicy_ parameter on the DAG member to `Unrestricted`.
 
-- Runs the [Resume-MailboxDatabaseCopy](http://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx) cmdlet for each database copy hosted on the DAG member.
+- Runs the [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/library/3d90b006-9914-415b-9a1f-730bd91c8548.aspx) cmdlet for each database copy hosted on the DAG member.
 
 When you're ready to restore the DAG member to full production status, including resuming the transport queues and client connectivity, perform the following tasks:
 
@@ -512,7 +512,7 @@ When you're ready to restore the DAG member to full production status, including
    ```
    CD $ExScripts
    ```
-   
+
 4. To execute the StopDagServerMaintenance.ps1 script, run:
 
    ```

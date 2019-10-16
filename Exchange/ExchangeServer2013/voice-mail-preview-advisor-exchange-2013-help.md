@@ -5,7 +5,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 ms.date: 6/24/2018
-ms.reviewer: 
+ms.reviewer:
 ms.assetid: 0957dd54-df6d-4b50-9db5-4757f548b899
 mtps_version: v=EXCHG.150
 ---
@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange Unified Messaging (UM) includes a feature called Voice Mail Preview, which uses automatic speech recognition (ASR) to add a text version of the voice mail audio file to voice mail messages. ASR isn't entirely accurate, especially when it's used to record audio over a phone that contains unknown voices and noises. Some organizations require consistently error-free (or near-error-free) transcripts of voice messages. The Voice Mail Preview Partner program can help such organizations meet those requirements.
 
-Voice Mail Preview uses [Microsoft speech technologies](http://go.microsoft.com/fwlink/p/?linkId=187348) to provide a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 or later versions, and other email programs.
+Voice Mail Preview uses [Microsoft speech technologies](https://go.microsoft.com/fwlink/p/?linkId=187348) to provide a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 or later versions, and other email programs.
 
 By default, when you enable a user for UM in an on-premises or hybrid deployment, voice mail previews will be sent if a supported UM language pack is installed.
 

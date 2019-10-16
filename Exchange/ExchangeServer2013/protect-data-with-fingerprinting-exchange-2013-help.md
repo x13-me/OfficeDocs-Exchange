@@ -4,8 +4,8 @@ TOCTitle: Protect form data with document fingerprinting
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.assetid: 110c839b-7693-42f6-aa5d-58ce64f4c357
 mtps_version: v=EXCHG.150
 ---
@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](http://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
+If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
 
 > [Document Fingerprinting](https://www.microsoft.com/videoplayer/embed/0f803e16-397a-4b83-8a85-06cd4264aaca?autoplay=false)
 
@@ -32,7 +32,7 @@ If your organization uses forms to collect sensitive information, users might tr
 
 5. To upload a form, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
-6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [File Types That Are Supported In Transport Rules](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
+6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [File Types That Are Supported In Transport Rules](https://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
 
 7. Click **Save**.
 
@@ -73,11 +73,11 @@ New-TransportRule -Name "Notify :External Recipient Contoso confidential" -Notif
 
 The DLP agent now detects documents that match the Contoso Customer Form.docx document fingerprint.
 
-For syntax and parameter information, see [New-Fingerprint](http://technet.microsoft.com/library/b579682a-9922-4db0-b524-bcea0d2cef9b.aspx), [New-DataClassification](http://technet.microsoft.com/library/3c1e90e7-cf49-4a8b-a0c4-c189ab8ab166.aspx), [Set-DataClassification](http://technet.microsoft.com/library/6d40df36-18c7-46f5-b373-69c840a5599b.aspx), and [Get-DataClassification](http://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
+For syntax and parameter information, see [New-Fingerprint](https://technet.microsoft.com/library/b579682a-9922-4db0-b524-bcea0d2cef9b.aspx), [New-DataClassification](https://technet.microsoft.com/library/3c1e90e7-cf49-4a8b-a0c4-c189ab8ab166.aspx), [Set-DataClassification](https://technet.microsoft.com/library/6d40df36-18c7-46f5-b373-69c840a5599b.aspx), and [Get-DataClassification](https://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
 
 ## For more information
 
-[Document Fingerprinting](http://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
+[Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
 
 [Manage DLP policies](manage-dlp-policies-exchange-2013-help.md)
 

@@ -23,7 +23,7 @@ audience: Admin
 ms.custom: Adm_O365_Setup
 ms.service: exchange-online
 manager: serdars
-
+ms.custom: okr_smb
 ---
 
 # Migrating your Outlook.com account to Office 365

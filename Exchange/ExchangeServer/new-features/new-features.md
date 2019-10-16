@@ -10,7 +10,7 @@ title: What's new in Exchange Server
 ms.collection: exchange-server
 audience: ITPro
 ms.date: 9/20/2018
-ms.reviewer: 
+ms.reviewer:
 ms.prod: exchange-server-it-pro
 manager: serdars
 
@@ -184,17 +184,17 @@ Exchange 2019 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2019, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](http://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
 
-  - [New-ComplianceSearch](http://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
 
-  - [Remove-ComplianceSearch](http://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
 
-  - [Set-ComplianceSearch](http://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
 
-  - [Start-ComplianceSearch](http://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
 
-  - [Stop-ComplianceSearch](http://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
@@ -379,17 +379,17 @@ Exchange 2016 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2016, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](http://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
 
-  - [New-ComplianceSearch](http://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
 
-  - [Remove-ComplianceSearch](http://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
 
-  - [Set-ComplianceSearch](http://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
 
-  - [Start-ComplianceSearch](http://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
 
-  - [Stop-ComplianceSearch](http://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
@@ -605,17 +605,17 @@ Exchange 2016 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2016, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](http://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
 
-  - [New-ComplianceSearch](http://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
 
-  - [Remove-ComplianceSearch](http://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
 
-  - [Set-ComplianceSearch](http://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
 
-  - [Start-ComplianceSearch](http://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
 
-  - [Stop-ComplianceSearch](http://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
@@ -631,13 +631,13 @@ For more information, see [Messaging policy and compliance in Exchange 2016](../
 
 Exchange 2016 includes the following improvements to auditing:
 
-- **Auditing reports**: The EAC includes auditing functionality so that you can run reports or export entries from the mailbox audit log and the administrator audit log. The mailbox audit log records whenever a mailbox is accessed by someone other than the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they have done. The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of problems related to security or compliance. For more information, see [Use Auditing Reports](http://technet.microsoft.com/library/2b3e1529-1677-4564-be0b-ce22757ddc0d.aspx).
+- **Auditing reports**: The EAC includes auditing functionality so that you can run reports or export entries from the mailbox audit log and the administrator audit log. The mailbox audit log records whenever a mailbox is accessed by someone other than the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they have done. The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of problems related to security or compliance. For more information, see [Use Auditing Reports](https://technet.microsoft.com/library/2b3e1529-1677-4564-be0b-ce22757ddc0d.aspx).
 
 - **Viewing the administrator audit log**: Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can view administrator audit log entries in the EAC. To do this, go to **Compliance Management** \> **Auditing** and click **View the administrator audit log**. Up to 1000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range.
 
     As an additional improvement, you can also export the audit log data in a format that's common to both Exchange 2016 and SharePoint Server 2016. This makes it easier to integrate with third-party tools to view the data and create richer reports.
 
-    For more information, see [View the Administrator Audit Log](http://technet.microsoft.com/library/5c62072a-556d-4fea-9973-d668c6b9fd57.aspx).
+    For more information, see [View the Administrator Audit Log](https://technet.microsoft.com/library/5c62072a-556d-4fea-9973-d668c6b9fd57.aspx).
 
 ### Antimalware protection
 <a name="Malware2010"> </a>
@@ -662,7 +662,7 @@ How messages flow through an organization and what happens to them has changed s
 ### Recipients
 <a name="Recipients2010"> </a>
 
-Administrators can now use the EAC to create a *group naming policy*, which lets you standardize and manage the names of distribution groups that are created by users in your organization. You can automatically add a prefix or suffix to the name of the distribution group when it's created, and you can block specific words from being used in group names. For more information, see [Create a Distribution Group Naming Policy](http://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx).
+Administrators can now use the EAC to create a *group naming policy*, which lets you standardize and manage the names of distribution groups that are created by users in your organization. You can automatically add a prefix or suffix to the name of the distribution group when it's created, and you can block specific words from being used in group names. For more information, see [Create a Distribution Group Naming Policy](https://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx).
 
 For more information about recipients in Exchange 2016, see [Recipients](../recipients/recipients.md).
 
@@ -671,9 +671,9 @@ For more information about recipients in Exchange 2016, see [Recipients](../reci
 
 Exchange 2016 includes the following enhancements for sharing and collaboration:
 
-- **Public folders**: Public folders now take advantage of the existing high availability and storage technologies of the mailbox store. The public folder architecture uses specially designed mailboxes to store both the hierarchy and the public folder content. This new design also means that there is no longer a public folder database. Public folder replication now uses the continuous replication model. High availability for the hierarchy and content mailboxes is provided by the database availability group (DAG). With this design, we're moving away from a multi-master replication model to a single-master replication model. For more information, see [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
+- **Public folders**: Public folders now take advantage of the existing high availability and storage technologies of the mailbox store. The public folder architecture uses specially designed mailboxes to store both the hierarchy and the public folder content. This new design also means that there is no longer a public folder database. Public folder replication now uses the continuous replication model. High availability for the hierarchy and content mailboxes is provided by the database availability group (DAG). With this design, we're moving away from a multi-master replication model to a single-master replication model. For more information, see [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
 
-- **Shared mailboxes**: In previous versions of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to set the delegate permissions. Now you can create a shared mailbox in one step via the Exchange admin center (EAC). In the EAC, go to **Recipients** \> **Shared** to create a shared mailbox. Shared mailboxes are a recipient type so you can easily search for your shared mailboxes in either the EAC or by using the Exchange Management Shell. For more information, see [Shared Mailboxes](http://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+- **Shared mailboxes**: In previous versions of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to set the delegate permissions. Now you can create a shared mailbox in one step via the Exchange admin center (EAC). In the EAC, go to **Recipients** \> **Shared** to create a shared mailbox. Shared mailboxes are a recipient type so you can easily search for your shared mailboxes in either the EAC or by using the Exchange Management Shell. For more information, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
 
 ### Integration with SharePoint and Skype for Business
 <a name="Integrate2010"> </a>
@@ -818,7 +818,7 @@ Exchange 2016 uses DAGs and mailbox database copies, along with other features s
 
 - **DAG network auto-configuration**: DAGs networks can be automatically configured by the system based on configuration settings. In addition to manual configuration options, DAGs can also distinguish between MAPI and Replication networks and configure DAG networks automatically.
 
-For more information about these features, see [High Availability and Site Resilience](http://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx) and [Changes to high availability and site resilience over previous versions](../high-availability/ha-changes.md).
+For more information about these features, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx) and [Changes to high availability and site resilience over previous versions](../high-availability/ha-changes.md).
 
 #### Managed Store
 <a name="ManagedStore"> </a>
@@ -829,7 +829,7 @@ The Managed Store works with the Microsoft Exchange Replication service to manag
 
 The Managed Store uses the same search platform as SharePoint Server 2016 to provide more robust indexing and searching when compared to Microsoft Search engine that was used in previous versions of Exchange.
 
-For more information, see [High Availability and Site Resilience](http://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx).
+For more information, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx).
 
 ### Exchange workload management
 <a name="WLM2010"> </a>

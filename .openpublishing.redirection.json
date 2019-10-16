@@ -125,6 +125,21 @@
         "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md",
         "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/cached-exchange-mode.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/kerberos-authentication-outlook-2016-for-mac.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/sign-in/set-delay-renew-kerberos-ticket",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/plan-outlook-2016-deployment.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/plan-outlook-2016-deployment",
+        "redirect_document_id": false
       }
     ]
 }

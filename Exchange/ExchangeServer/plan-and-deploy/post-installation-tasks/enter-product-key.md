@@ -7,7 +7,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
 ms.date: 6/4/2018
-ms.reviewer: 
+ms.reviewer:
 description: 'Summary: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019.'
 title: Enter your Exchange Server product key
 ms.collection:
@@ -39,7 +39,7 @@ If you want to enter a product key on an Exchange 2016 or Exchange 2019 server, 
 
 - Estimated time to complete this procedure: less than 5 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Product key" entry in the [Exchange infrastructure and PowerShell permissions](../../permissions/feature-permissions/infrastructure-permissions.md) topic.
 
@@ -99,7 +99,7 @@ This example licenses the Exchange server named Mailbox01.
 Set-ExchangeServer Mailbox01 -ProductKey 12345-12345-12345-12345-12345
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](http://technet.microsoft.com/library/8e8d3fca-59b3-4355-a637-28bf5e5ca4cf.aspx).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/library/8e8d3fca-59b3-4355-a637-28bf5e5ca4cf.aspx).
 
 After you license a Mailbox server, run the following command in the Exchange Management Shell to restart the Microsoft Exchange Information Store service:
 

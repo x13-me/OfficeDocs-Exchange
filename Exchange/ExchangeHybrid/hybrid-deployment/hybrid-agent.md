@@ -80,10 +80,10 @@ The HCW establishes connections from your Client Access Server to domains.live.c
 
 ## Free/Busy requirements
 
-The hybrid wizard automatically handles the free/busy information that's required in both environments (cloud and on-premises). 
+The hybrid wizard automatically handles the free/busy information that's required in both environments (cloud and on-premises).
 
 If you need to configure free/busy sharing with a third party company, go to the **Organization** tab in the Exchange admin center and configure individual or organization sharing between the two systems (Exchange online/Exchange on-premises or Exchange on-premises/Exchange on-premises).
- 
+
 If you encounter any problems or need to troubleshoot, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
 
@@ -116,7 +116,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 1. Optional: Verify connectivity.
 
-   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [http://aka.ms/hybridconnectivity](http://aka.ms/hybridconnectivity).
+   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [http://aka.ms/hybridconnectivity](https://aka.ms/hybridconnectivity).
 
    2. Open the Exchange Management Shell and change directory to the location of the script.
 
@@ -276,7 +276,7 @@ You can repeat this step on each computer where you would like an additional Hyb
 
 ### Option 2: Get status via the Hybrid Management PowerShell Module
 
-With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](http://go.microsoft.com/fwlink/?LinkID=746217) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
+With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](https://go.microsoft.com/fwlink/?LinkID=746217) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
 
 To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
 

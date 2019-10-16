@@ -8,7 +8,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 ms.date: 8/2/2018
-ms.reviewer: 
+ms.reviewer:
 title: Cannot remove mailbox database [UnwillingToRemoveMailboxDatabase]
 ms.collection: exchange-server
 audience: ITPro
@@ -27,12 +27,12 @@ To resolve this issue do either of these steps:
 
 - To preserve the mailboxes and their content, move the mailboxes to another server. For instructions, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
 
-- Disable the mailboxes if they're no longer required. For more information, see [Disable-Mailbox](http://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx).
+- Disable the mailboxes if they're no longer required. For more information, see [Disable-Mailbox](https://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx).
 
 - Remove the mailbox databases if they're no longer required. For instructions, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
 
 After you deal with the mailbox databases on the server, run Exchange Setup again.
 
-- For more information about how to identify a mailbox in the database, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+- For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

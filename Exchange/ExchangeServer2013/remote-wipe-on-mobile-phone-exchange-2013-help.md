@@ -4,8 +4,8 @@ TOCTitle: Perform a remote wipe on a mobile phone
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 ms.custom: SaRA
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 mtps_version: v=EXCHG.150
@@ -24,7 +24,7 @@ Your users carry sensitive corporate information in their pockets every day. If 
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Clients and mobile devices permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Clients and mobile devices permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
 
 - This procedure will clear all data on the mobile phone, including installed applications, photos, and personal information.
 

@@ -103,9 +103,10 @@ We strongly recommend that you use the latest version of the .NET Framework that
 > [!IMPORTANT]
 > • **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework. <br/><br/>• The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019).
 
-|**Exchange version**|**.NET Framework 4.7.2 or later**|
-|:-----|:-----|
-|Exchange 2019|Supported|
+|**Exchange 2019 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|
+|:-----|:-----|:-----|
+|CU2, CU3|Supported|Supported|
+|RTM, CU1||Supported|
 
 ## Supported clients (with latest updates) in Exchange 2019
 
@@ -122,7 +123,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 - Outlook 2016 for Mac
 
 > [!IMPORTANT]
-> You need KB3140245 to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7, otherwise Outlook 2013 and 2016 will not work on Windows 7.
+> You need [KB3140245](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi) to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7. Otherwise, Outlook 2013 and 2016 will not work on Windows 7.
 
 ## Lync/Skype For Business Server integration with Exchange 2019
 
@@ -222,13 +223,15 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 <br/>
 
-|**Exchange version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
+|**Exchange 2016 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Exchange 2016 CU13|Supported|Supported|||
-|Exchange 2016 CU11, CU12||Supported|Supported||
-|Exchange 2016 CU10|||Supported||
-|Exchange 2016 CU8, CU9|||Supported|Supported|
-|Exchange 2016 CU5, CU6, CU7||||Supported|
+|CU13, CU14|Supported|Supported|||
+|CU11, CU12||Supported|Supported||
+|CU10|||Supported||
+|CU8, CU9|||Supported|Supported|
+|CU5, CU6, CU7||||Supported|
+
+**Note**: For older versions, see [Exchange Server supportability matrix](supportability-matrix.md#microsoft-net-framework).
 
 ## Supported clients (with latest updates) in Exchange 2016
 

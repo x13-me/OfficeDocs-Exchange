@@ -8,7 +8,7 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
 ms.collection: exchange-server
 ms.date: 7/5/2018
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 audience: ITPro
 title: Procedures for mailbox exports to .pst files in Exchange Server
@@ -123,7 +123,7 @@ This example creates a new mailbox export request with these settings:
 New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority Hight
 ```
 
-For detailed syntax and parameter information, see [New-MailboxExportRequest](http://technet.microsoft.com/library/1625c25a-7cc9-459c-97ea-281ac421bbce.aspx).
+For detailed syntax and parameter information, see [New-MailboxExportRequest](https://technet.microsoft.com/library/1625c25a-7cc9-459c-97ea-281ac421bbce.aspx).
 
 ### How do you know this worked?
 
@@ -185,7 +185,7 @@ This example returns the summary list of completed mailbox export requests in th
 Get-MailboxExportRequest -Status Completed -BatchName "Export DB01 PSTs"
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequest](http://technet.microsoft.com/library/f9372840-f387-4e4e-bf56-cf9c4f49d4cb.aspx).
+For detailed syntax and parameter information, see [Get-MailboxExportRequest](https://technet.microsoft.com/library/f9372840-f387-4e4e-bf56-cf9c4f49d4cb.aspx).
 
 To view detailed information about a mailbox export request, use this syntax:
 
@@ -201,7 +201,7 @@ This example returns detailed information for the mailbox export request named M
 Get-MailboxExportRequestStatistics -Identity "aal-zuhairi\MailboxExport" -IncludeReport | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](http://technet.microsoft.com/library/73c79d8c-d8c0-4389-a5ad-520c2c94909e.aspx).
+For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](https://technet.microsoft.com/library/73c79d8c-d8c0-4389-a5ad-520c2c94909e.aspx).
 
 ## Use the Exchange Management Shell to modify mailbox export requests
 
@@ -219,7 +219,7 @@ This example modifies the failed mailbox export request for the mailbox of Valer
 Set-MailboxExportRequest -Identity "Valeria Barrios\MailboxExport" -BadItemLimit 5
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxExportRequest](http://technet.microsoft.com/library/5a064940-f8c1-4ee7-822a-a6cfe483081e.aspx).
+For detailed syntax and parameter information, see [Set-MailboxExportRequest](https://technet.microsoft.com/library/5a064940-f8c1-4ee7-822a-a6cfe483081e.aspx).
 
  **Note**: After you modify a suspended or failed mailbox export request, you need to resume it by using the **Resume-MailboxExportRequest** cmdlet.
 
@@ -253,7 +253,7 @@ This example suspends all in-progress mailbox export requests with the comment "
 Get-MailboxExportRequest -Status InProgress | Suspend-MailboxExportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](http://technet.microsoft.com/library/3779c7b2-a25d-4213-bd20-fb58ba9d6925.aspx).
+For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](https://technet.microsoft.com/library/3779c7b2-a25d-4213-bd20-fb58ba9d6925.aspx).
 
  **Notes**:
 
@@ -299,7 +299,7 @@ This example resumes all suspended mailbox export requests.
 Get-MailboxExportRequest -Status Suspended | Resume-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxExportRequest](http://technet.microsoft.com/library/dba2880f-ac7c-40d4-8792-1bf30262142e.aspx).
+For detailed syntax and parameter information, see [Resume-MailboxExportRequest](https://technet.microsoft.com/library/dba2880f-ac7c-40d4-8792-1bf30262142e.aspx).
 
 ### How do you know this worked?
 
@@ -333,7 +333,7 @@ This example removes all completed mailbox export requests.
 Get-MailboxExportRequest -Status Completed | Remove-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxExportRequest](http://technet.microsoft.com/library/a5b99fcc-1f79-4a31-b04a-610ff020450d.aspx).
+For detailed syntax and parameter information, see [Remove-MailboxExportRequest](https://technet.microsoft.com/library/a5b99fcc-1f79-4a31-b04a-610ff020450d.aspx).
 
 ### How do you know this worked?
 

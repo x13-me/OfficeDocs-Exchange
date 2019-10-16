@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.date: 7/6/2018
-ms.reviewer: 
+ms.reviewer:
 title: Set up public folders in a new organization
 ms.collection: exchange-server
 audience: ITPro
@@ -65,7 +65,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 8. You can add multiple users by clicking **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
 
-For information about how to use the Exchange Management Shell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](http://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).
+For information about how to use the Exchange Management Shell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](https://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).
 
 ## Step 4 (Optional): Mail-enable the public folder
 <a name="Perms"> </a>
@@ -82,4 +82,4 @@ If you want users to send mail to the public folder, you can mail-enable the pub
 
 The public folder will be mail-enabled and the name of the public folder will become the alias of the public folder. If you have multiple recipients with that name, the public folder's alias will be appended with a number. For example, if you have a distribution group named SalesTeam and you create a public folder named SalesTeam and then mail-enable it, the alias of that public folder will be SalesTeam1.
 
-For information about how to use the Exchange Management Shell to mail-enable a public folder, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
+For information about how to use the Exchange Management Shell to mail-enable a public folder, see [Enable-MailPublicFolder](https://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).

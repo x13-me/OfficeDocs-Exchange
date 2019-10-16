@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms.date:
-ms.reviewer: 
+ms.reviewer:
 title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange
 ms.collection: exchange-server
 audience: ITPro
@@ -106,7 +106,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ### How do you know this worked?
 
@@ -124,7 +124,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 After you create a linked mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
 
-You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage User Mailboxes](http://technet.microsoft.com/library/957ca61c-1fa1-42ab-a0e6-8488e4782566.aspx) topic.
+You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage User Mailboxes](https://technet.microsoft.com/library/957ca61c-1fa1-42ab-a0e6-8488e4782566.aspx) topic.
 
 > [!IMPORTANT]
 > The estimated time to complete this task will vary based on the number of properties you want to view or change.
@@ -235,7 +235,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address Book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](https://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
 
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.
@@ -335,9 +335,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
-- [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
 
 Here are some examples of using the Exchange Management Shell to change linked mailbox properties.
 
