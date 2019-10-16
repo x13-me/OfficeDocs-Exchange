@@ -55,7 +55,7 @@ The Hybrid Configuration Wizard will provide the foundational components to prep
 ## Related topics
 * [Exchange deployment assistant](https://docs.microsoft.com/exchange/exchange-deployment-assistant?view=exchserver-2019)
 * [Exchange Server hybrid deployments](exchange-hybrid.md)
-* [Using hybrid Modern Authentication with Outlook for iOS and Android](../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md)
+* [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
 * [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication)
 * [Configure OAuth authentication between Exchange and Exchange Online organizations](../ExchangeServer2013/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md)
 * [Microsoft Hybrid Agent](hybrid-deployment/hybrid-agent.md)
