@@ -531,11 +531,6 @@ For detailed syntax and parameter information, see the following topics:
 
 [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
 
-6. Proceed to unlock the public folders:
-
-    ```
-    Get-Mailbox -ResultSize unlimited | %{Set-Mailbox $_.UserPrincipalName -PublicFolder -IsExcludedFromServingHierarchy $False}
-    ```
 
 ## How do I know this worked?
 
@@ -550,7 +545,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 2. In Exchange Online PowerShell, run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
 
    ```
-   Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+   Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
    ```
 
 3. In Exchange Online PowerShell, run the following command to take a snapshot of the permissions.
