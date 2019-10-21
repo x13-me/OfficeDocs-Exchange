@@ -50,6 +50,9 @@ The .csv file is used to determine the mapping between the source hierarchy and 
 
 ## During migration to Exchange 2013 public folders, if there's a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
 
+> [!NOTE]
+> Support for serial migration of public folders ended in Exchange 2013 Cumulative Update 8 (CU8). This step isn't relevant batch migrations.
+
 You can force a delta sync to occur before finalization (prior to locking the source) by running the following Shell command:
 
 ```powershell
