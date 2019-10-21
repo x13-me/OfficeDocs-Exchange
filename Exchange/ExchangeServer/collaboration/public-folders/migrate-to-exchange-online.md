@@ -206,23 +206,9 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
 ### Prerequisite steps in Exchange Online
 
-In Exchange Online PowerShell, do the following:
+In Exchange Online PowerShell, do the following steps:
 
 1. Make sure there are no existing public folder migration requests. If there are, clear them or your own migration request will fail. This step is only required if you think there may be an existing migration request in the pipeline (one that has failed or that you wish to abort).
-
-   An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting, and removing, each type of request are as follows.
-
-   The following example will discover any existing serial migration requests:
-
-   ```
-   Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics
-   ```
-
-   The following example removes any existing public folder serial migration requests:
-
-   ```
-   Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-   ```
 
    The following example will discover any existing batch migration requests:
 
@@ -238,7 +224,7 @@ In Exchange Online PowerShell, do the following:
 
 2. Make sure there aren't any existing public folders or public folder mailboxes in Exchange Online. If you do discover public folders in Exchange Online after following the steps below, it's important to determine why they are there and who in your organization started a public folder hierarchy before you begin removing any public folders and public folder mailboxes.
 
-   a. In Office 365 or Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist.
+   a. In Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
 
       ```
       Get-Mailbox -PublicFolder
