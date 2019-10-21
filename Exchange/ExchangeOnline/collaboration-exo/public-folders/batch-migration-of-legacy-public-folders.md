@@ -211,24 +211,10 @@ For detailed syntax and parameter information, see the following topics:
 
 1. Make sure there are no existing public folder migration requests. If there are, clear them or your own migration request will fail. This step isn't required in all cases; it's only required if you think there may be an existing migration request in the pipeline.
 
-   An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting requests for each type and for removing requests of each type are as follows.
-
    > [!IMPORTANT]
    > Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
 
-   The following example will discover any existing serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
-   ```
-
-   The following example removes any existing public folder serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-   ```
-
-   The following example will discover any existing batch migration requests.
+   The following example will discover any existing batch migration requests:
 
    ```
    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
@@ -245,7 +231,7 @@ For detailed syntax and parameter information, see the following topics:
    > [!IMPORTANT]
    > If you do see public folders in Office 365 or Exchange Online, it is important to determine why they are there, and who in your organization started a public folder hierarchy, before you remove the public folders and public folder mailboxes.
 
-   1. In Office 365 or Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
+   1. In Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
 
       ```
       Get-Mailbox -PublicFolder
@@ -493,7 +479,7 @@ Set-OrganizationConfig -RemotePublicFolderMailboxes $Null -PublicFoldersEnabled 
 
 After you finalize the public folder migration, you should run the following test to make sure that the migration was successful. This allows you to test the migrated public folder hierarchy before you switch to using Office 365 or Exchange Online public folders.
 
-1. In Office 365 or Exchange Online PowerShell, assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
+1. In Exchange Online PowerShell, assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
 
    ```
    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
@@ -530,7 +516,6 @@ For detailed syntax and parameter information, see the following topics:
 [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
 [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
-
 
 ## How do I know this worked?
 
