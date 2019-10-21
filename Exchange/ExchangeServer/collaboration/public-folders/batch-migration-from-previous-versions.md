@@ -161,22 +161,8 @@ For detailed syntax and parameter information, see the following topics:
 
 1. Make sure there are no existing public folder migration requests. If there are, clear them or your own migration request will fail. This step isn't required in all cases; it's only required if you think there may be an existing migration request in the pipeline.
 
-   An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting requests for each type and for removing requests of each type are described below.
-
    > [!IMPORTANT]
    > Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
-
-   - Run the following command to discover any existing serial migration requests:
-
-     ```
-     Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
-     ```
-
-   - Run the following command to remove any existing public folder serial migration requests:
-
-     ```
-     Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-     ```
 
    - Run the following command to discover any existing batch migration requests:
 
@@ -218,10 +204,6 @@ For detailed syntax and parameter information, see the following topics:
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
-
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
-
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
 
 - [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
@@ -314,13 +296,13 @@ Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-PublicFolderMigrationRequest](https://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
 - [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the Exchange 2010 server for final migration (downtime required)
 

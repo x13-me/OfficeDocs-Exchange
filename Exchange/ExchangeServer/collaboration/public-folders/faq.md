@@ -49,16 +49,6 @@ Public folder rules are migrated along with the data and are kept as public fold
 
 The .csv file is used to determine the mapping between the source hierarchy and the destination mailbox. It contains only the top-level folders. Child folders under the top-level folders are automatically migrated. Therefore, if a new child folder is added, it's migrated during the process. If a new top-level folder is created, it will be created in the mailbox that contains the writable copy of the hierarchy.
 
-### During a public folder migration, if there's a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
-
-You can force a delta sync to occur before finalization (prior to locking the source) by running the following Exchange PowerShell command:
-
-```
-Resume-PublicFolderMigrationRequest \PublicFolderMigration
-```
-
-For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/library/af8602ce-0dba-4f89-b993-0ba02624e567.aspx).
-
 ### For the migration of a geo-distributed hierarchy, how can I make sure that the public folders are created in the location nearest to the target users?
 
 As part of the migration process, a .csv file is generated (using the `publicfoldertomailboxmapgenerator.ps1` script). This file contains the folder-to-mailbox mapping for the new hierarchy. You can use this .csv file to create public folder mailboxes in the appropriate geographic location and modify the file to place the required folders in the appropriate mailbox so they are near the target users.
