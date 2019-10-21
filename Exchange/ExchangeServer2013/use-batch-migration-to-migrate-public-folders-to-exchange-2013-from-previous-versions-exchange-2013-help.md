@@ -26,7 +26,7 @@ You'll perform the migration by using the **\*MigrationBatch** cmdlets, and the 
 
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file.
 
-- ` Export-PublicFolderStatistics.psd1`: This support file is used by the Export-PublicFolderStatistics.ps1 script and should be downloaded to the same location.
+- `Export-PublicFolderStatistics.psd1`: This support file is used by the Export-PublicFolderStatistics.ps1 script and should be downloaded to the same location.
 
 - `PublicFolderToMailboxMapGenerator.ps1`: This script creates the public folder-to-mailbox mapping file.
 
