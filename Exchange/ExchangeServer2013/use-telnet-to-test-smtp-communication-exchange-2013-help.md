@@ -114,7 +114,7 @@ In this example, the following values are used:
 
 5. Type **EHLO contoso.com** and then press ENTER.
 
-6. Type **MAIL FROM:chris@contoso.com** and then press ENTER.
+6. Type **MAIL FROM:chris\@contoso.com** and then press ENTER.
 
 7. Type **RCPT TO:kate@fabrikam.com NOTIFY=success,failure** and then press ENTER. The optional NOTIFY command defines the particular delivery status notification (DSN) messages that the destination SMTP server must provide to the sender. DSN messages are defined in RFC 1891. In this case, you're requesting a DSN message for successful or failed message delivery.
 
