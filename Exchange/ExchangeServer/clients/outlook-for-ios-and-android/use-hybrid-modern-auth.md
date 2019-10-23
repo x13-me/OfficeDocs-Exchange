@@ -88,7 +88,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
 1. **Exchange on-premises setup**:
 
-   - Exchange Server 2016 Cumulative Update 8 (CU8) or later, or Exchange Server 2013 CU19 or later on all Exchange servers. In hybrid deployments (on-premises Exchange and Exchange Online) or in organizations that use Exchange Online Archiving (EOA) with their on-premises Exchange deployment, you need to deploy the most current CU or one CU prior to the most current.
+   - Exchange Server 2019 Cumulative Update 1 (CU1) or later, Exchange Server 2016 Cumulative Update 8 (CU8) or later, or Exchange Server 2013 CU19 or later on all Exchange servers. In hybrid deployments (on-premises Exchange and Exchange Online) or in organizations that use Exchange Online Archiving (EOA) with their on-premises Exchange deployment, you need to deploy the most current CU or one CU prior to the most current.
 
    - All Exchange 2007 or Exchange 2010 servers must be removed from the environment. These versions of Exchange are out of mainstream support and will not work with Intune-managed Outlook for iOS and Android. In this architecture, Outlook for iOS and Android uses OAuth as the authentication mechanism. One of the on-premises configuration changes that occurs enables the OAuth endpoint to the Microsoft Cloud as the default authorization endpoint. When this change is made, clients can start negotiating the use of OAuth. Because this is an organization-wide change, Exchange 2010 mailboxes fronted by either Exchange 2013 or 2016 will incorrectly think they can perform OAuth and will end up in a disconnected state, since Exchange 2010 does not support OAuth as an authentication mechanism.
 
@@ -198,7 +198,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 
 ### Enable hybrid Modern Authentication
 
-1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
+1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview). After you've completed the prerequisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
 
 2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
 
