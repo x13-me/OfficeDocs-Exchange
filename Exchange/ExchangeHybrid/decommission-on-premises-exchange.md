@@ -103,7 +103,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Select the option to manage **Exchange**.
 
-   3. Navigate to **Mail Flow** -\> **Connection**.
+   3. Navigate to **Mail Flow** -\> **Connectors**.
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
