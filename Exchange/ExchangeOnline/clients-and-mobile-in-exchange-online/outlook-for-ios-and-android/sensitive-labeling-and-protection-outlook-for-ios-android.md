@@ -143,7 +143,7 @@ Before a user can send a signed and/or encrypted message, Outlook for iOS and An
 
 ![Screen shots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
-When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective action on the email when it is sent (drafts are not signed or encrypted), assuming the sender has a valid certificate.
+When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
 
 > [!NOTE]
 > Outlook for iOS and Android only supports sending clear-signed messages.
