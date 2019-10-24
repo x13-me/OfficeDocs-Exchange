@@ -20,7 +20,7 @@ description: "Read this article if you are ready to move from an Exchange hybrid
 
 Read this article if you are ready to move from an Exchange hybrid deployment to a full cloud implementation.
 
-One of the more attractive options for getting a company to Exchange Online is to use the hybrid deployment approach described in [Exchange Hybrid Deployment and Migration with Office 365](https://msdn.microsoft.com/en-us/library/ff633682%28v=exchsrvcs.149%29.aspx). This is the only option that allows you to easily on-board and off-board mailboxes (all other native options are on-board only). In addition to the ability to off-board, a hybrid configuration has the following key options.
+One of the more attractive options for getting a company to Exchange Online is to use the hybrid deployment approach described in [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid). This is the only option that allows you to easily on-board and off-board mailboxes (all other native options are on-board only). In addition to the ability to off-board, a hybrid configuration has the following key options.
 
 This topic will help you understand the options for decommissioning Exchange hybrid, and when each of those options should be implemented. There are many variances in when and how to decommission Exchange hybrid servers. Taking the time to understand the implications and properly plan the full or partial decommissioning of on-premises servers is important.
 
@@ -44,10 +44,10 @@ Use the following table to decide what type of migration works for your organiza
 
 |**Existing organization**|**Number of mailboxes to migrate**|**Do you want to manage user accounts in your on-premises organization?**|**Migration type**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2013, Exchange 2010, Exchange 2007, or Exchange 2003|Less than 2,000 mailboxes|No|Cutover Exchange migration|
+|Exchange 2003 or later|Less than 2,000 mailboxes|No|Cutover Exchange migration|
 |Exchange 2007 or Exchange 2003|Less than 2,000 mailboxes|No|Staged Exchange migration|
 |Exchange 2007 or Exchange 2003|More than 2,000 mailboxes<sup>\*</sup>|Yes|Staged Exchange migration or remote move migration in an Exchange hybrid deployment|
-|Exchange 2013 or Exchange 2010|More than 2,000 mailboxes<sup>\*</sup>|Yes|Remote move migration in an Exchange hybrid deployment|
+|Exchange 2010 or later|More than 2,000 mailboxes<sup>\*</sup>|Yes|Remote move migration in an Exchange hybrid deployment|
 |Exchange 2000 Server or earlier versions|No maximum|Yes|IMAP migration|
 |Non-Exchange on-premises messaging system|No maximum|Yes|IMAP migration|
 
@@ -88,10 +88,15 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity behavior.
 
-3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
+3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. Some examples are shown below:
 
+   Exchange Server 2010 or 2013:
    ```
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
+   ```
+   Exchange Server 2016 or later:
+   ```
+   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
    > [!NOTE]
@@ -103,7 +108,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Select the option to manage **Exchange**.
 
-   3. Navigate to **Mail Flow** -\> **Connection**.
+   3. Navigate to **Mail Flow** -\> **Connectors**.
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
@@ -125,7 +130,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    To disable the on-premises configuration:
 
-   1. From an Exchange 2013 server, open the Exchange Management Shell.
+   1. From an Exchange server, open the Exchange Management Shell.
 
    2. Run the following command:
 
@@ -180,8 +185,13 @@ The graphic below describes the actual end state:
 
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
+   Exchange Server 2010 or 2013:
    ```
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
+   ```
+   Exchange Server 2016 or later:
+   ```
+   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
    > [!NOTE]
@@ -199,7 +209,7 @@ The graphic below describes the actual end state:
 
    To disable the on-premises configuration:
 
-   1. Open the Exchange Management Shell from an Exchange 2013 server.
+   1. Open the Exchange Management Shell from an Exchange server.
 
    2. Run the following command:
 
