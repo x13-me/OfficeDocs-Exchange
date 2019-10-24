@@ -1,5 +1,5 @@
 ---
-title: 'Add-ins for Outlook in Exchange 2013'
+title: 'Add-ins for Outlook in Exchange Server'
 TOCTitle: Add-ins for Outlook
 ms:assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms:mtpsurl:
@@ -12,9 +12,9 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Add-ins for Outlook in Exchange 2013
+# Add-ins for Outlook in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013 and 2016_
 
 Add-ins for Outlook are applications that extend the usefulness of Outlook clients by adding information or tools that your users can use without having to leave Outlook. Add-ins are built by third-party developers and can be installed either from a file or URL or from the Office Store. By default, all users can install add-ins. Exchange administrators can use Roles to control users' ability to install add-ins.
 
