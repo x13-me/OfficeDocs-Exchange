@@ -21,7 +21,7 @@ description: "Overview of Exchange hybrid configuration wizard options"
 Hybrid Configuration Wizard (HCW) has changed a lot since it was released as part of Exchange 2010 Service Pack 2. Currently, it supports a Classic Topology (Minimal, Express, and Full), and a Modern Topology (Minimal and Full). The table below shows the differences between the options available in the Exchange Classic Topology (Minimal, Express, and Full), and Modern Topology (Minimal and Full). 
 
 > [!NOTE]
-> This table is an expanded version of the one which was originally published in Chapter 13 in the book, Microsoft Office 365 Administration Inside Out, 2nd Edition.
+> This table is an expanded version of the one which was originally published in Chapter 13 in the book, Microsoft Office 365 Administration Inside Out, 2nd Edition. Reference- Fisher, Ed; Guilmette, Aaron; Kegg, Darryl; Mandich, Lou. Microsoft Office 365 Administration Inside Out (Includes Current Book Service), 2nd ed. Pearson Education, Inc., 2017. Print.
 
 |**Exchange Hybrid Configuration Options**|**Classic Minimal**|**Classic Express**|**Classic Full**|**Modern Minimal**|**Modern Full**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
