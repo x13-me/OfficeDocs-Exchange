@@ -44,9 +44,7 @@
       "breadcrumb_path": "/exchange/outlook/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "searchScope": ["Exchange"],
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-Exchange",
-      "feedback_product_url": "https://outlook.uservoice.com/" 
+      "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],
