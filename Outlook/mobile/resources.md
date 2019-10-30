@@ -24,7 +24,7 @@ The following is content and guidance that IT administrators, trainers, champion
 
 ## Microsoft Security and Compliance with Outlook mobile
 
-Deploy Outlook for iOS and Android with Microsoft Security and Compliant solutions with the latest in applying encryption, sensitivity labeling, end point management and app protection policies. Get peace of mind by protecting your company against external threats with built-in privacy and compliance capabilities. Learn more in this article that explains how you can control access, protect data and prevent accidental leaks of your company information through email and calendaring.
+Deploy Outlook for iOS and Android with Microsoft Security and Compliance solutions with the latest in applying encryption, sensitivity labeling, end point management and app protection policies. Get peace of mind by protecting your company against external threats with built-in privacy and compliance capabilities. Learn more in this article that explains how you can control access, protect data and prevent accidental leaks of your company information through email and calendaring.
 
 ## Outlook mobile Customer Adoption Pack
 
