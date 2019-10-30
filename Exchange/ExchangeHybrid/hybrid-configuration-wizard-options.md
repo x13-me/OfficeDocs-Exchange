@@ -32,7 +32,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 |MRS Endpoint Configuration|Yes|Yes|Yes|Yes|Yes|
 |AAD Connect in Express Configuration|No|Yes|No; set up separately|No; set up separately|No; set up separately|
 |Organization Configuration Transfer|Yes|Yes|Yes|Yes|Yes  |
-|Hybrid Modern Authentication|No|No|No|No|No|
+|Hybrid Modern Authentication|No|No|No [1]|No|No|
 |Cross-premises multi mailbox search|No|No|Yes|No|No|
 |Cross-premises Mail Tips|No|No|Yes|No|Yes|
 |Autodiscover external DNS and public certificate required|Yes|Yes|Yes|Yes (see note after the table)|Yes (see note after the table)|
@@ -50,7 +50,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 > [!NOTE]
 > Depending on the your topology and configuration, you may still need to publish Autodiscover records in external DNS or open TCP Port 25 inbound and outbound to your Exchange environments for other reasons, such as Exchange Active Sync Clients using the legacy mail client in Android or iOS (although we highly recommend Microsoft Outlook for iOS and Android as the mobile messaging application). Another reason might be using a feature like Exchange Server Hybrid Modern Authentication. Make sure to review the limitations of the hybrid agent and modern hybrid topology covered in the article [Microsoft Hybrid Agent](hybrid-deployment/hybrid-agent.md).
 
-The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located here.
+[1] The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located here.
 
 ## Related topics
 * [Exchange deployment assistant](https://docs.microsoft.com/exchange/exchange-deployment-assistant?view=exchserver-2019)
