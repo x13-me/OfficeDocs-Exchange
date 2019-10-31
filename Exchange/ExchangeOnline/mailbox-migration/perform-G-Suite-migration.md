@@ -298,6 +298,9 @@ When the migration batch has reached the state of **Synced**, it can be complete
 
 During completion, another incremental sync is run to copy any changes that have been made to the G Suite mailbox.  Additionally, the forwarding address that routes mail from O365 to G Suite is removed, and a forwarding address that routes mail from G Suite to O365 is added.
 
+> [!NOTE]
+> Forwarding addresses are not needed when doing a cutover migration from G Suite to Exchange Online.
+
 ## Finalizing your migration
 
 After you have successfully migrated all of your G Suite users to Office 365, you can switch your primary MX record to point to Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live).  At this point, you are free to decommission your source G Suite tenant.
