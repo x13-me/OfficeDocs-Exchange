@@ -27,7 +27,7 @@ Client SMTP email submissions (also known as _authenticated SMTP submissions_) a
 
 Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't need to use authenticated SMTP to send email messages.
 
-The SMTP AUTH protocol is used to send SMTP email messages (typically on TCP port 587). SMTP AUTH doesn't modern authentication (Modern Auth). SMTP AUTH uses basic authentications, so all you need to send email messages is a username and password. This makes SMTP AUTH is a popular choice for attackers to send spam or phishing messages using compromised credentials.
+The SMTP AUTH protocol is used to send SMTP email messages (typically on TCP port 587). SMTP AUTH doesn't support modern authentication (Modern Auth) and only uses basic authentications, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
 
 Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Online organization, and enable it only for the mailboxes that still require it. There are two settings that can help you do this:
 
