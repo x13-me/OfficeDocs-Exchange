@@ -111,7 +111,7 @@ $ASA = Get-Content "C:\My Documents\Allow SMTP AUTH.txt"
 $ASA | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled $false}
 ```
 
-**Note**: To disable SMTP AUTH, use the value `$true`.
+**Note**: To disable SMTP AUTH for the mailboxes, use the value `$true`.
 
 ### How do you know this worked?
 
