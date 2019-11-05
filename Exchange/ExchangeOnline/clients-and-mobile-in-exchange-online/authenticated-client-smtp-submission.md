@@ -61,7 +61,7 @@ Get-TransportConfig | Format-List SmtpClientAuthenticationDisabled
 
 The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
 
-### Use the Microsoft 365 admin center to enable or disable SMTP AUTH on individual mailboxes
+### Use the Microsoft 365 admin center to enable or disable SMTP AUTH on specific mailboxes
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com) and go to **Users** \> **Active users**.
 
@@ -69,9 +69,11 @@ The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Mic
 
 3. In the **Email apps** section, click **Manage email apps**.
 
-4. Uncheck **Authenticated SMTP**, and then click **Save changes**.
+4. Verify the **Authenticated SMTP** setting: unchecked = disabled, checked = enabled.
 
-### Use Exchange Online PowerShell to enable or disable SMTP AUTH on individual mailboxes
+   When you're finished, click **Save changes**.
+
+### Use Exchange Online PowerShell to enable or disable SMTP AUTH on specific mailboxes
 
 Use the following syntax:
 
@@ -95,7 +97,7 @@ Set-CASMailbox -Identity chris@contoso.com -SmtpClientAuthenticationDisabled $fa
 
 ### Use Exchange Online PowerShell to enable or disable SMTP AUTH on multiple mailboxes
 
-Use a text file to identify the mailboxes. Values that don't contain spaces (for example, the alias, email address, or account name) work best. The text file must contain one mailbox on each line like this:
+Use a text file to identify the mailboxes. Values that don't contain spaces (for example, alias, email address, or account name) work best. The text file must contain one mailbox on each line like this:
 
 > akol@contoso.com <br> tjohnston@contoso.com <br> kakers@contoso.com
 
@@ -117,7 +119,7 @@ $Allow | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled 
 
 ### How do you know this worked?
 
-To verify that you've enabled or disabled SMTP AUTH for a mailbox, do any of the following steps:
+To verify that you've enabled or disabled SMTP AUTH for a specific mailbox, do any of the following steps:
 
 - **Individual mailboxes in the Microsoft 365 admin center**: Go to **Users** \> **Active users** \> select the user \> click **Mail** \> click **Manage email apps** and verify the value of **Authenticated SMTP** (checked = enabled, unchecked = disabled).
 
@@ -127,26 +129,21 @@ To verify that you've enabled or disabled SMTP AUTH for a mailbox, do any of the
   Get-CASMailbox -Identity <MailboxIdentity>  | Format-List SmtpClientAuthenticationDisabled
   ```
 
-- **View the setting on all mailboxes**: Run the following command:
-
-  ```
-  Get-CASMailbox -ResultSize unlimited | Format-Table Name,SmtpClientAuthenticationDisabled
-  ```
-- **Find all mailboxes where SMTP AUTH is disabled**: Run the following command:
+- **All mailboxes where SMTP AUTH is disabled**: Run the following command:
 
   ```
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $true}
   ```
 
-- **Find all mailboxes where SMTP AUTH is enabled**: Run the following command:
+- **All mailboxes where SMTP AUTH is enabled**: Run the following command:
 
   ```
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $false}
   ```
 
-- **Find all mailboxes where SMTP AUTH is controlled by the organization setting**: Run the following command:
+- **All mailboxes where SMTP AUTH is controlled by the organization setting**: Run the following command:
 
   ```
   $Users = Get-CASMailbox -ResultSize unlimited
