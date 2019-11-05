@@ -27,7 +27,7 @@ Client SMTP email submissions (also known as _authenticated SMTP submissions_) a
 
 Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't need to use authenticated SMTP to send email messages.
 
-The SMTP AUTH protocol is used to send SMTP email messages (typically on TCP port 587). SMTP AUTH doesn't modern authentication (Modern Auth). SMTP AUTH uses basic authentications, so all you need to send email messages is a username and password. This makes SMTP AUTH is a popular choice for attackers to send spam or phishing messages using compromised credentials.
+The SMTP AUTH protocol is used to send SMTP email messages (typically on TCP port 587). SMTP AUTH doesn't support modern authentication (Modern Auth), and only uses basic authentication, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
 
 Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Online organization, and enable it only for the mailboxes that still require it. There are two settings that can help you do this:
 
@@ -41,7 +41,7 @@ Note these settings only apply to mailboxes that are hosted in Exchange Online (
 
 You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
 
-Run the following command:
+To disable SMTP AUTH globally in your organization, run the following command:
 
 ```
 Set-TransportConfig -SmtpClientAuthenticationDisabled $true
@@ -57,7 +57,7 @@ To verify that you've globally disabled SMTP AUTH in your organization, run the 
 Get-TransportConfig | Format-List SmtpClientAuthenticationDisabled
 ```
 
-## Enable SMTP AUTH for mailboxes that require it
+## Enable SMTP AUTH for specific mailboxes
 
 The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
 
