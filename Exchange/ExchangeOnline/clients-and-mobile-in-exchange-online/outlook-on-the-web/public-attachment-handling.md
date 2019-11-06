@@ -50,7 +50,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
   - [Setting Up Single Sign On with Office 365 using AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=329949 )
 
-  - [Configure single sign on](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
+  - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 

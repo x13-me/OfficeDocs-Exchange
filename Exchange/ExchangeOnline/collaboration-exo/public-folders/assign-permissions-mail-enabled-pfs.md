@@ -21,7 +21,7 @@ You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions?view=exchserver-2019).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/en-us/exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://go.microsoft.com/fwlink/p/?linkId=267542) or [**Exchange Online Protection**](https://go.microsoft.com/fwlink/p/?linkId=285351).
