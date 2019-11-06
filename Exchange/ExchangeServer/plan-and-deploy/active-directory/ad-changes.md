@@ -201,6 +201,8 @@ Exchange makes the follwing changes to the Active Directory domains:
 
 - The Exchange Install Domain Servers group is added to the Exchange Servers USG in the root domain.
 
+- The Exchange Install Domain Servers modifies "Default Domain Controllers GPO" to grand **"Manage Auditing and Seciritu Log Policy"**
+
 - Permissions are assigned at the domain level for the Exchange Servers USG and the Organization Management USG.
 
 - The **objectVersion** property in the Microsoft Exchange System Objects container under DC=\<_root domain_\> is set. To verify that the Active Directory domains were successfully prepared, you can check the value stored in this attribute. For more information, see [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions).
