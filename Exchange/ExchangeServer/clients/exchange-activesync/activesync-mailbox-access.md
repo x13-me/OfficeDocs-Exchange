@@ -140,7 +140,7 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 
-> ebrunner@tailspintoys.com <br/> fapodaca@tailspintoys.com <br/> glaureano@tailspintoys.com <br/> hrim@tailspintoys.com
+  > ebrunner@tailspintoys.com <br/> fapodaca@tailspintoys.com <br/> glaureano@tailspintoys.com <br/> hrim@tailspintoys.com
 
 This example disables ActiveSync access to all user mailboxes in the North America\Finance OU.
 
