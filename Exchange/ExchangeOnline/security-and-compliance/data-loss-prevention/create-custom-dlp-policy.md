@@ -17,6 +17,8 @@ manager: serdars
 
 ---
 
+# Create a custom DLP policy in Exchange Online
+
 A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
 
 The rule conditions that are available to you in a single policy include all the traditional mail flow rules (also known as transport rules) in addition to the sensitive information types presented in [Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx). For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
@@ -42,7 +44,7 @@ consulting resource such as Microsoft Consulting Services (MCS). Support enginee
 
 For additional information on the .NET regex engine which is used for processing the text, see https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions.
 
-# Create a custom DLP policy
+## Create custom DLP policies
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -53,16 +55,16 @@ For additional information on the .NET regex engine which is used for processing
 
 2. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon, and select **New custom policy**.
 
-    > [!IMPORTANT]
-    > If you click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon instead of the arrow, you will create a new policy based on a template. For more information about using templates, see [Create a DLP policy from a template](create-dlp-policy-from-template.md).
+   > [!IMPORTANT]
+   > If you click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon instead of the arrow, you will create a new policy based on a template. For more information about using templates, see [Create a DLP policy from a template](create-dlp-policy-from-template.md).
 
 3. On the **New custom policy** page, complete the following fields:
 
-1. **Name**: Add a name that will distinguish this policy from others.
+   1. **Name**: Add a name that will distinguish this policy from others.
 
-2. **Description**: Add an optional description that summarizes this policy.
+   2. **Description**: Add an optional description that summarizes this policy.
 
-3. **Choose a state**: Select the mode or state for this policy. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications.
+   3. **Choose a state**: Select the mode or state for this policy. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications.
 
 4. Click **Save** to finish creating the new policy reference information. The policy is added to the list of all policies that you have configured, although there are not yet any rules or actions associated with this new custom policy.
 
@@ -70,15 +72,15 @@ For additional information on the .NET regex engine which is used for processing
 
 6. On the **Edit DLP policy** page, click **Rules**.
 
-    Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
+   Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
 
-    In order to avoid confusion, supply a unique name for each part of your policy or rule when you have the option to provide your own character string. There are several options additional options available to you:
+   In order to avoid confusion, supply a unique name for each part of your policy or rule when you have the option to provide your own character string. There are several options additional options available to you:
 
-1. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
+   1. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
 
-2. To remove a rule, highlight the rule and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+   2. To remove a rule, highlight the rule and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
 
-3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add additional conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
+   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add additional conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
 
 7. Click **Save** to finish modifying the policy and save your changes.
 
