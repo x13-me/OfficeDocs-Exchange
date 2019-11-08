@@ -26,6 +26,10 @@ This topic shows you how to get public folders configured and running in a new o
 > [!NOTE]
 > For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
 
+> [!IMPORTANT]
+> OWA for devices refers to the old *"OWA for Android"* and *"OWA for iPhone/iPad"* applications that Microsoft used to have back in the day. 
+> Microsoft deprecated those. See here for more details: https://support.office.com/article/microsoft-owa-mobile-apps-are-being-retired-076ec122-4576-4900-bc26-937f84d25a4b
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete this task: 30 minutes.
