@@ -94,5 +94,5 @@ For information about how to use Exchange Online PowerShell to mail-enable a pub
 > If you have a hybrid configuration, the public folders created on Exchange Online are only visible to cloud-based mailboxes. Conversely, public folders created on-premises are only visible to on-premises mailboxes.
 
 > [!TIP]
-> In case that finished a migration from Exchange Server 2010 to Exchange Online with public folders, follow the following article:
+> To complete a migration from Exchange Server 2010 to Exchange Online with public folders, see [Configure legacy on-premises public folders for a hybrid deployment](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders).
 > [Configure legacy on-premises public folders for a hybrid deployment](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)
