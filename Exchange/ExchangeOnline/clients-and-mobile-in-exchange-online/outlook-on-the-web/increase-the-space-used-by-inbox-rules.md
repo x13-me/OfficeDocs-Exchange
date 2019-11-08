@@ -84,31 +84,27 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
 - **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this:
 
-    `akol@contoso.com`
+  > akol@contoso.com <br/> tjohnston@contoso.com <br/> kakers@contoso.com
 
-    `tjohnston@contoso.com`
+  The syntax uses the following two commands (one to identify the user accounts, and the other to apply the rules quota to those users):
 
-    `kakers@contoso.com`
+  ```
+  $<VariableName> = Get-Content "<text file>"
+  ```
 
-    The syntax uses the following two commands (one to identify the user accounts, and the other to apply the rules quota to those users):
-
-    ```
-    $<VariableName> = Get-Content "<text file>"
-    ```
-
-    ```
+  ```
     $<VariableName> | foreach {Set-Mailbox -Identity $_ RulesQuota "<32 KB to 256 KB>"}
-    ```
+  ```
 
-   This example decreases the rules quota to 150 KB to the mailboxes specified in the file C:\My Documents\Junior Managers.txt.
+  This example decreases the rules quota to 150 KB to the mailboxes specified in the file C:\My Documents\Junior Managers.txt.
 
-    ```
-    $Jr = Get-Content "C:\My Documents\Junior Managers.txt"
-    ```
+  ```
+  $Jr = Get-Content "C:\My Documents\Junior Managers.txt"
+  ```
 
-    ```
-    $Jr | foreach {Set-Mailbox -Identity $_ -RulesQuota "150 KB"}
-    ```
+  ```
+  $Jr | foreach {Set-Mailbox -Identity $_ -RulesQuota "150 KB"}
+  ```
 
 ## How do you know this worked?
 

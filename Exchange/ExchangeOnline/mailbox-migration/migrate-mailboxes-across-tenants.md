@@ -24,6 +24,9 @@ localization_priority: Priority
 
 # How to migrate mailboxes from one Office 365 tenant to another
 
+   > [!NOTE]
+   > At this time, a built-in tenant to tenant migration option is not available.
+
 This article explains how to migrate mailboxes and service settings from one Office 365 tenant to another Office 365 tenant in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
 
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 tenants. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 tenant.
@@ -47,11 +50,11 @@ If using a third party migration tool to migrate your users, purchase the needed
 
 #### Client considerations
 
-For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/en-us/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/en-us/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
+For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
-For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/en-us/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
+For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
 
 #### Tenant preparation and licensing
 

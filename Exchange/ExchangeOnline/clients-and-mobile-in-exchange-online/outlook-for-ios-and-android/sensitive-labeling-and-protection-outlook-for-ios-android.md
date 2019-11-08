@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
-description: 'How to leverage S/MIME to sign and encrypt messages when using Outlook for iOS and Android.'
+description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
-title: Outlook for iOS S/MIME, Outlook for Android S/MIME
+title: Sensitivity labeling and protection in Outlook for iOS and Android
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
@@ -12,15 +12,46 @@ manager: serdars
 
 ---
 
-# S/MIME in Outlook for iOS and Android
+# Sensitivity labeling and protection in Outlook for iOS and Android
 
-**Summary**: How to leverage S/MIME to sign and encrypt your messages when using Outlook for iOS and Android.
+**Summary**: How to classify and/or protect messages when using Outlook for iOS and Android.
 
-Protecting company or organizational data is extremely important. One solution for protecting message content is Secure/Multipurpose Internet Mail Extension (S/MIME). Mobile messaging applications like Outlook for iOS and Android work in conjunction with S/MIME to sign and encrypt Office 365 message data.
+Protecting company or organizational data is extremely important. Outlook for iOS and Android supports two scenarios for classifying and/or protecting content:
 
-S/MIME provides encryption, which protects the content of e-mail messages, and it provides digital signatures, which verify the identity of the sender of an e-mail message. S/MIME in Outlook for iOS and Android is supported with Office 365 accounts using the native Microsoft sync technology.
+1. Sensitivity labeling
+
+2. Secure/Multipurpose Internet Mail Extension (S/MIME)
+
+Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Office 365 accounts using the native Microsoft sync technology.
+
+> [!NOTE]
+> Sensitvity labeling is not supported with Government Community Cloud accounts.
+
+## Understanding Sensitivity Labeling
+Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels). 
+
+From a classification perspective, a sensitivity label is applied to a message and is retained throughout the message’s lifecycle (assuming the label is not removed). In addition, sensitivity labels can be configured to mark content by adding a header or footer to the message body. 
+
+Sensitivity labels can also be configured to protect messages with access restrictions or encryption. Access restrictions include ensuring only users within the organization can open the message, restricting editing rights, preventing forwarding, printing, or copying the contents of the message. Encryption provides at-rest encryption and ensures only authorized users can decrypt the message. 
+
+When a sensitivity label is configured with encryption, the encryption process depends on the client platform. With Outlook for iOS and Android, encryption occurs within Exchange Online transport after the message is sent from the sender, prior to recipient delivery. Encryption does not occur within the app. For more information, see [How sensitivity labels work in Office apps](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps).
+
+Likewise, Outlook for iOS and Android does not perform decryption of received messages, either. Exchange Online performs the decryption prior to delivering the message to Outlook for iOS and Android. For more information, see [Outlook for iOS and Android in Exchange Online: FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+
+## Deploying Sensitivity Labeling with Outlook for iOS and Android
+
+For information on how to create and define sensitivity labels, as well as, publishing a label policy, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels).
+
+> [!IMPORTANT]
+> If your organization has previously deployed Azure Information Protection labels, you must migrate from Azure Information Protection to Microsoft Information Protection. To determine which platform is being used, see [Frequently asked questions for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). To complete the migration, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+
+## Using Sensitivity Labeling with Outlook for iOS and Android
+
+For information on the end user experience, see [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9). 
 
 ## Understanding S/MIME
+
+S/MIME provides encryption, which protects the content of e-mail messages, and it provides digital signatures, which verify the identity of the sender of an e-mail message. S/MIME in Outlook for iOS and Android is supported with Office 365 accounts using the native Microsoft sync technology.
 
 Digital signatures are the more commonly used service of S/MIME. As the name suggests, digital signatures are the digital counterpart to the traditional, legal signature on a paper document. As with a legal signature, digital signatures provide the following security capabilities:
 
@@ -43,9 +74,6 @@ Message encryption provides a solution to information disclosure. SMTP-based Int
 > Although message encryption provides confidentiality, it doesn't authenticate the message sender in any way. An unsigned, encrypted message is as susceptible to sender impersonation as a message that isn't encrypted. Because nonrepudiation is a direct result of authentication, message encryption also doesn't provide nonrepudiation. Although encryption does provide data integrity, an encrypted message can show only that the message hasn't been altered since it was sent. No information about who sent the message is provided. To prove the identity of the sender, the message must use a digital signature.
 
 ## Deploying S/MIME certificates with Outlook for iOS and Android
-
-> [!NOTE]
-> At this time, S/MIME is supported only in Outlook for iOS. Outlook for Android will receive S/MIME support in a future release. For more information, see the [Microsoft 365 Roadmap](https://aka.ms/m365roadmap).
 
 First, ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). This includes setting up the virtual certificate collection and publishing the certificate revocation list to the Internet.
 
@@ -115,7 +143,7 @@ Before a user can send a signed and/or encrypted message, Outlook for iOS and An
 
 ![Screen shots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
-When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective action on the email when it is sent (drafts are not signed or encrypted), assuming the sender has a valid certificate.
+When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
 
 > [!NOTE]
 > Outlook for iOS and Android only supports sending clear-signed messages.

@@ -233,7 +233,10 @@ Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')
 
 ## Create a room list
 
-If you're planning to have more than a hundred rooms, or already have more than a hundred rooms created, use a room list to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using the Exchange Management Shell.
+If you're planning to have more to have hundreds of rooms, use multiple room lists to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using the Exchange Management Shell.
+
+> [!NOTE]
+> Although there is no hard limit to the number of rooms you can have in a Room List, the maximum number of rooms that can be returned in request for a Room List is 100. A possible workaround would be to further break down your rooms into smaller lists.
 
 ### Use the Exchange Management Shell to create a room list
 

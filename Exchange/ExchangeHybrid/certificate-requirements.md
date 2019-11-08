@@ -39,7 +39,7 @@ In a hybrid deployment, many services make use of certificates:
 When configuring a hybrid deployment, you must use and configure certificates that you have purchased from a trusted third-party CA. The certificate used for hybrid secure mail transport must be installed on all on-premises Mailbox (Exchange 2016 and newer), and Mailbox and Client Access (Exchange 2013 and older) servers.
 
 > [!IMPORTANT]
-> If you're configuring a hybrid deployment in an organization that has Exchange servers deployed in multiple Active Directory forests, you must use a separate third-party CA certificate for each Active Directory forest. <br/><br/> When Exchange Edge Transport servers are deployed in an on-premises organization, this certificate must also be installed on all Edge Transport servers. Each transport server must use a certificate that shares the same issuing CA and the same subject for hybrid secure mail to function correctly.
+> If you're configuring a hybrid deployment in an organization that has Exchange servers deployed in multiple Active Directory forests, you must use a separate third-party CA certificate for each Active Directory forest. <br/><br/> When Exchange Edge Transport servers are deployed in an on-premises organization, this certificate must also be installed on all Edge Transport servers. Each Edge transport server must use a certificate that shares the same issuing CA and the same subject for hybrid secure mail to function correctly.
 
 Multiple services, such as AD FS, Exchange federation, services, and Exchange, each require certificates. Depending on your organization, you may decide to do one of the following:
 

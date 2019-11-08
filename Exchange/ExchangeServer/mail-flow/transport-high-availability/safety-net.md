@@ -63,14 +63,30 @@ In Microsoft Exchange Server 2019 and 2016, the maximum supported database size 
 
 When a Hub-and-spoke topology is used, the transport Safety Net JET database can grow beyond 2 TB. To stay within the supported limit of 2 TB, follow these guidelines:
 
--	Hub servers that are used for message relay can’t be configured to deliver messages to mailboxes.
+- Hub servers that are used for message relay can’t be configured to deliver messages to mailboxes.
 
--	Disable Safety Net on hub servers that are used for message relay. To do this, run the following command:
+- Disable Safety Net on hub servers that are used for message relay. To do this, follow these steps:
 
-        Set-TransportConfig -SafetyNetHoldTime 0.00:00:15
+  1. In a Command prompt window, open the EdgeTransport.exe.config file in **Notepad** by running the following command on the server:
 
-    This example configures 15 minutes for the Safety Net hold time. This is the minimum value that you can set.
+     ```
+     Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+     ```
 
+  2. Add the following key in the **appSettings** section.
+
+     ```
+     <add key="SafetyNetHoldTimeInterval" value="0.00:00:15" />
+     ```
+
+     When you're finished, save and close the EdgeTransport.exe.config file.
+
+  3. Restart the Exchange Transport service by running the following command:
+
+     ```
+     net stop MSExchangeTransport && net start MSExchangeTransport
+     ```
+    
 ## Message resubmission from Safety Net
 
 The Active Manager component of the Microsoft Exchange Replication service (MRS) manages DAGs and mailbox database copies. Message resubmissions from Safety Net require no manual actions, and are initiated by the Active Manager. For more information about Active Manager, see [Active Manager](../../high-availability/database-availability-groups/active-manager.md).
