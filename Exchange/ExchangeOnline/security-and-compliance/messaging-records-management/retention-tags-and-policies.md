@@ -143,6 +143,10 @@ You can also use the [Start-ManagedFolderAssistant](https://technet.microsoft.co
 > [!NOTE]
 > The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed.
 
+> [!IMPORTANT]
+> MRM won't move items larger than the values of MaxSendSize and MaxReceiveSize set on the mailbox.
+
+
 ### Moving items between folders
 
 A mailbox item moved from one folder to another inherits any tags applied to the folder to which it's moved. If an item is moved to a folder that doesn't have a tag assigned, the DPT is applied to it. If the item has a tag explicitly assigned to it, the tag always takes precedence over any folder-level tags or the default tag.
