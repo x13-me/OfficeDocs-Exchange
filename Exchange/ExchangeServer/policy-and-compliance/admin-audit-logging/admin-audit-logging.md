@@ -110,7 +110,7 @@ Each audit log entry contains the information described in the following table. 
 |`ObjectModified`|This field contains the object that was modified by the cmdlet specified in the `CmdletName` field.|
 |`CmdletName`|This field contains the name of the cmdlet that was run by the user in the `Caller` field.|
 |`CmdletParameters`|This field contains the parameters that were specified when the cmdlet in the `CmdletName` field was run. Also stored in this field, but not visible in the default output, is the value specified with the parameter, if any.|
-|`ModifiedProperties`|This field contains the properties that were modified on the object in the `ObjectModified` field. Also stored in this field, but not visible in the default output, are the old value of the property and the new value that was stored.  <br/> **Important**: This field is only populated if the _LogLevel_ parameter on the **Set-AdminAuditLogConfig** cmdlet is set to `erbose`.|
+|`ModifiedProperties`|This field contains the properties that were modified on the object in the `ObjectModified` field. Also stored in this field, but not visible in the default output, are the old value of the property and the new value that was stored.  <br/> **Important**: This field is only populated if the _LogLevel_ parameter on the **Set-AdminAuditLogConfig** cmdlet is set to `verbose`.|
 |`Caller`|This field contains the user account of the user who ran the cmdlet in the `CmdletName` field.|
 |`Succeeded`|This field specifies whether the cmdlet in the `CmdletName` field ran successfully. The value is either `True` or `False`.|
 |`Error`|This field contains the error message generated if the cmdlet in the `CmdletName` field failed to complete successfully.|
