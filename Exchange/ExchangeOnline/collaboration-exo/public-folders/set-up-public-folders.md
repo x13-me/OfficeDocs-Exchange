@@ -27,7 +27,7 @@ This topic shows you how to get public folders configured and running in a new o
 > For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
 
 > [!IMPORTANT]
-> The procedure in this article guided you through the process of creating Public Folders the 1st time.
+> The procedure in this article guides you through the process of creating public folders for the first time.
 
 ## What do you need to know before you begin?
 
