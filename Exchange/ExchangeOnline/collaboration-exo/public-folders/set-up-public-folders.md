@@ -28,7 +28,6 @@ This topic shows you how to get public folders configured and running in a new o
 
 > [!IMPORTANT]
 > OWA for devices refers to the old *"OWA for Android"* and *"OWA for iPhone/iPad"* applications that have since been deprecated. For more details, see [Microsoft OWA mobile apps are being retired](https://support.office.com/article/microsoft-owa-mobile-apps-are-being-retired-076ec122-4576-4900-bc26-937f84d25a4b).
-> Microsoft deprecated those. See here for more details: https://support.office.com/article/microsoft-owa-mobile-apps-are-being-retired-076ec122-4576-4900-bc26-937f84d25a4b
 
 ## What do you need to know before you begin?
 
