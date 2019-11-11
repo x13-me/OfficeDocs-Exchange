@@ -232,8 +232,6 @@ In Exchange 2007, you can separate administrators by assigning them various role
 
 If you need to make more granular permission assignments, you can modify the ACLs on individual Exchange 2007 objects, such as address lists or databases. You must add the user or security group of which the user is a member directly to the ACL. Then, the actions are performed in the context of the particular user.
 
-For more information about how to manage permissions in Exchange 2007, see [Configuring Permissions in Exchange Server 2007](https://go.microsoft.com/fwlink/p/?linkid=90671).
-
 ## Exchange 2013 and Exchange 2007 coexistence permissions
 
 Because the permissions models for Exchange 2013 and for Exchange 2007 differ, Exchange 2013 permission assignments are separate from Exchange 2007 permission assignments. This is true even if both versions of Exchange are installed in the same forest. Without additional configuration, Exchange 2013 administrators don't have the required permissions to manage Exchange 2007-based servers, and Exchange 2007 administrators don't have the required permissions to manage Exchange 2013-based servers. You should consider the following questions:

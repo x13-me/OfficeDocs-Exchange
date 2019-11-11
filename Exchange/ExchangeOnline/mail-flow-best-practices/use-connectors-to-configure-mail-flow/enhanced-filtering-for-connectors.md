@@ -53,7 +53,8 @@ Using the previous example, you would configure the IP address of the third-part
 ||**Before Enhanced Filtering is enabled**|**After Enhanced Filtering is enabled**|
 |:-----|:-----|:-----|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
-|**X-MS-Exchange-SkipListedInternetSender**|Not available|The value of this message header field contains the IP address of the device or service where you deliver your email first.|
+|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skiplisting was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
+|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skiplisting was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
 
 ## Procedures for Enhanced Filtering for Connectors
 
@@ -61,7 +62,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 - You apply Enhanced Filtering for Connectors individually on each inbound connector.
 
-- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 - The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
@@ -145,7 +146,7 @@ For detailed syntax and parameter information, see [Set-InboundConnector](https:
 
 The ultimate goal of Enhanced Filtering is actually to show administrators that changing the MX record to EOP is not only possible but also better. It simplifies the mail flow in your environment and it allows you to see the value of using EOP, which you already purchased as part of Office 365.  This can easily be measured using variety of reports available in the [Reports dashboard](https://protection.office.com/insightdashboard).
 
-You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/view-email-security-reports):
+You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/view-email-security-reports):
 
 - Threat Protection Status report
 

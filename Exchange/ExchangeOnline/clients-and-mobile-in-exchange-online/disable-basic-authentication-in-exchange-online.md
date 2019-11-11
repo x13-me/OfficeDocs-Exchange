@@ -201,11 +201,7 @@ The methods that you can use to assign authentication policies to users are desc
 
 - **Use a list of specific user accounts**: This method requires a text file to identify the user accounts. Values that don't contain spaces (for example, the Office 365 work or school account) work best. The text file must contain one user account on each line like this:
 
-  `akol@contoso.com`
-
-  `tjohnston@contoso.com`
-
-  `kakers@contoso.com`
+  > akol@contoso.com <br/> tjohnston@contoso.com <br/> kakers@contoso.com
 
   The syntax uses the following two commands (one to identify the user accounts, and the other to apply the policy to those users):
 

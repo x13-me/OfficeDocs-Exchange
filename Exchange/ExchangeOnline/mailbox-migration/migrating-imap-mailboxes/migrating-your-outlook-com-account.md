@@ -20,10 +20,11 @@ search.appverid:
 - MBS150
 - BCS160
 audience: Admin
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- okr_smb
 ms.service: exchange-online
 manager: serdars
-ms.custom: okr_smb
 ---
 
 # Migrating your Outlook.com account to Office 365

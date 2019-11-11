@@ -26,7 +26,7 @@ You'll perform the migration by using the **\*MigrationBatch** cmdlets, and the 
 
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file.
 
-- ` Export-PublicFolderStatistics.psd1`: This support file is used by the Export-PublicFolderStatistics.ps1 script and should be downloaded to the same location.
+- `Export-PublicFolderStatistics.psd1`: This support file is used by the Export-PublicFolderStatistics.ps1 script and should be downloaded to the same location.
 
 - `PublicFolderToMailboxMapGenerator.ps1`: This script creates the public folder-to-mailbox mapping file.
 
@@ -182,7 +182,7 @@ For detailed syntax and parameter information, see the following topics:
    An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting requests for each type and for removing requests of each type are as follows.
 
    > [!IMPORTANT]
-   > Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
+   > • Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made. <br/><br/>• Support for serial migration of public folders (**\*-PublicFolderMigrationRequest\*** cmdlets) ended in Exchange 2013 Cumulative Update 8 (CU8).
 
    The following example will discover any existing serial migration requests.
 
@@ -238,6 +238,10 @@ For detailed syntax and parameter information, see the following topics:
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219164\(v=exchg.150\))
+
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
 
 - [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218718\(v=exchg.150\))
 
@@ -361,13 +365,13 @@ The progress and completion of the migration can be viewed and managed in the EA
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218636\(v=exchg.150\))
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
 - [Get-PublicFolderDatabase](https://technet.microsoft.com/en-us/library/jj733416\(v=exchg.150\))
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218718\(v=exchg.150\))
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/en-us/library/jj218697\(v=exchg.150\))
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 

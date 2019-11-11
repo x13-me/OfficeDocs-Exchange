@@ -28,6 +28,8 @@ We recommend that you don't use Outlook's PST export feature to migrate public f
 
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts:
 
+- ` ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with action to fix the issues. You'll run this script on the legacy Exchange server On-Premises.
+
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file. You'll run this script on the legacy Exchange server.
 
 - `Export-PublicFolderStatistics.psd1`: This support file is used by the `Export-PublicFolderStatistics.ps1` script and should be downloaded to the same location.
@@ -97,7 +99,9 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 
     - `SyncMailPublicFolders.strings.psd1`
 
-4. Save the scripts to the same location you did for step 2. For example, C:\PFScripts.
+4. Download the source side validation script from https://www.microsoft.com/en-us/download/confirmation.aspx?id=100414
+
+5. Save the scripts to the same location you did for step 2. For example, C:\PFScripts.
 
 ## Step 2: Prepare for the migration
 
@@ -112,6 +116,8 @@ Perform the following prerequisite steps before you begin the migration.
 - Make sure that there are no duplicate public folder objects in Active Directory, to avoid a situation where two or more Active Directory objects are pointing to the same mail-enabled public folder.
 
 ### Prerequisite steps on the legacy Exchange server
+
+Add an additional step here suggesting to run Source Side Validation script at mailbox server on Exchange Server 2010. Please use the examples as documented here: https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622
 
 1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
 
@@ -211,24 +217,10 @@ For detailed syntax and parameter information, see the following topics:
 
 1. Make sure there are no existing public folder migration requests. If there are, clear them or your own migration request will fail. This step isn't required in all cases; it's only required if you think there may be an existing migration request in the pipeline.
 
-   An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting requests for each type and for removing requests of each type are as follows.
-
    > [!IMPORTANT]
    > Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
 
-   The following example will discover any existing serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
-   ```
-
-   The following example removes any existing public folder serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-   ```
-
-   The following example will discover any existing batch migration requests.
+   The following example will discover any existing batch migration requests:
 
    ```
    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
@@ -245,7 +237,7 @@ For detailed syntax and parameter information, see the following topics:
    > [!IMPORTANT]
    > If you do see public folders in Office 365 or Exchange Online, it is important to determine why they are there, and who in your organization started a public folder hierarchy, before you remove the public folders and public folder mailboxes.
 
-   1. In Office 365 or Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
+   1. In Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
 
       ```
       Get-Mailbox -PublicFolder
@@ -279,9 +271,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
 
 - [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
@@ -388,7 +380,7 @@ _Mapping.csv_ is the file generated by the `PublicFoldertoMailboxMapGenerator.ps
       Get-OutlookAnywhere | Format-Table Identity,ExternalHostName
       ```
 
-3. In Office 365 PowerShell, run the following commands to pass the information that was returned in the previous step to variables that will then be used in the migration request.
+3. In Exchange Online PowerShell, run the following commands to pass the information that was returned in the previous step to variables that will then be used in the migration request.
 
    a. Pass the credential of a user who has administrative permissions on the legacy Exchange server into the variable `$Source_Credential`. The migration request that's run in Exchange Online will use this credential to gain access to your legacy Exchange servers to copy the content over.
 
@@ -449,13 +441,13 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-OutlookAnywhere](https://technet.microsoft.com/library/b160bc1d-7691-4b58-b85c-09759362fa99.aspx)
 
-- [New-PublicFolderMigrationRequest](https://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
 - [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 
@@ -493,7 +485,7 @@ Set-OrganizationConfig -RemotePublicFolderMailboxes $Null -PublicFoldersEnabled 
 
 After you finalize the public folder migration, you should run the following test to make sure that the migration was successful. This allows you to test the migrated public folder hierarchy before you switch to using Office 365 or Exchange Online public folders.
 
-1. In Office 365 or Exchange Online PowerShell, assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
+1. In Exchange Online PowerShell, assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
 
    ```
    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
@@ -530,7 +522,6 @@ For detailed syntax and parameter information, see the following topics:
 [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
 [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
-
 
 ## How do I know this worked?
 
