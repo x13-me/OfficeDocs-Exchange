@@ -85,7 +85,7 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
    ```
 
 > [!IMPORTANT]
-> The msExchRecipientDisplayType value -1073741818 should only be set to user mailboxes, not for resources.
+> The msExchRecipientDisplayType value -1073741818 should only be set for user mailboxes, not for resources.
 
 ## Exchange 2010
 
