@@ -50,7 +50,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 > [!NOTE]
 > Depending on the your topology and configuration, you may still need to publish Autodiscover records in external DNS or open TCP Port 25 inbound and outbound to your Exchange environments for other reasons, such as Exchange Active Sync Clients using the legacy mail client in Android or iOS (although we highly recommend Microsoft Outlook for iOS and Android as the mobile messaging application). Another reason might be using a feature like Exchange Server Hybrid Modern Authentication. Make sure to review the limitations of the hybrid agent and modern hybrid topology covered in the article [Microsoft Hybrid Agent](hybrid-deployment/hybrid-agent.md).
 
-[1] The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located here.
+[1] The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located [here](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
 
 ## Related topics
 * [Exchange deployment assistant](https://docs.microsoft.com/exchange/exchange-deployment-assistant?view=exchserver-2019)
