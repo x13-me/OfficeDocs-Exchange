@@ -27,7 +27,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |E-mail Address Policy and Domain configuration|Yes|Yes|Yes|Yes|Yes|
 |Send and Receive Connector Configuration|No|No|Yes|No|Yes|
-|OAuth Configuration   |No|No|Yes for  Exchange 2013/2016/2019 with Current CU|No|Yes for Exchange 2013/2016/2019 with Current CU|
+|OAuth Configuration   |No|No|Yes for  Exchange 2013/2016/2019 with current CU|No|Yes for Exchange 2013/2016/2019 with current CU|
 |Federation Trust and Organization Relationship|No|No|Yes|No   |Yes  |
 |MRS Endpoint Configuration|Yes|Yes|Yes|Yes|Yes|
 |AAD Connect in Express Configuration|No|Yes|No; set up separately|No; set up separately|No; set up separately|
