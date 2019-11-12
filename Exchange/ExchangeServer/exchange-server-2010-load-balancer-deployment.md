@@ -1,10 +1,10 @@
 ---
 audience: ITPro
 localization_priority: Priority
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.collection: exchange-server
 description: This page describes which server load balancer partners have completed solution testing with Exchange Server 2010 and contains pointers to accompanying deployment white papers hosted by the partner.

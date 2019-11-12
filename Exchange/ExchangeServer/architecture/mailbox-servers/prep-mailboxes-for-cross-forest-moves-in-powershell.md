@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to manage cross-forest mailbox moves and migrations in Exchange 2016 and Exchange 2019 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms.date: 7/9/2018
 ms.reviewer: 

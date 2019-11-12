@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Frequently asked questions about message trace.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.date: 
 ms.reviewer: 

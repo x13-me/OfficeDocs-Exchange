@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 ms.date: 3/9/2015
 ms.reviewer: 

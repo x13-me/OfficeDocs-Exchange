@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the requirements for the journaling mailbox and the alternate journaling mailbox in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3033715d-a6d0-485e-af0d-15876550fd4d
 ms.date: 
 ms.reviewer: 

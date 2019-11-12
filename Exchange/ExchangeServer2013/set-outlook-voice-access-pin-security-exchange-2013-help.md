@@ -1,8 +1,8 @@
 ---
 title: 'Set Outlook Voice Access PIN security: Exchange 2013 Help'
 TOCTitle: Set Outlook Voice Access PIN security
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 6/24/2018
 ms.reviewer:

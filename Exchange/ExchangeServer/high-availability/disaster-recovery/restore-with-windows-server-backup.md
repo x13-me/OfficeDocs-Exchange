@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Step-by-step guidance for restoring Exchange data from a previous back up.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2d0f31dc-eb32-451a-8852-591269026506
 ms.date: 2/19/2016
 ms.reviewer:

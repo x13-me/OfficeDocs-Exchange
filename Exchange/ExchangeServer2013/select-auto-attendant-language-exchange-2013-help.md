@@ -1,8 +1,8 @@
 ---
 title: 'Select the language for an auto attendant: Exchange 2013 Help'
 TOCTitle: Select the language for an auto attendant
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 6/24/2018
 ms.reviewer:

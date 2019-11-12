@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.date: 7/6/2018
 ms.reviewer:

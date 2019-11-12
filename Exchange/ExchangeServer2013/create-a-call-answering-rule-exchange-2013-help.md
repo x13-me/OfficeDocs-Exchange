@@ -1,8 +1,8 @@
 ---
 title: 'Create a call answering rule: Exchange 2013 Help'
 TOCTitle: Create a call answering rule
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 4/8/2015
 ms.reviewer:

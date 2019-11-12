@@ -1,7 +1,7 @@
 ---
 title: "Edge Transport servers with hybrid deployments"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article

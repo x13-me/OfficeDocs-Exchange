@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.DelegatedMailboxFirstInstall
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: d451581b-6161-4e95-99f1-03dac8313fae
 ms.date: 8/2/2018
 ms.reviewer: 

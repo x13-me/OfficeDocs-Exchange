@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A list of frequently asked questions regarding public folders in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
 ms.date: 6/8/2018
 ms.reviewer:

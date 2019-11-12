@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and Exchange Server 2019'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.date: 7/5/2018
 ms.reviewer:

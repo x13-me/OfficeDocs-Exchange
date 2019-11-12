@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to change the management role assignment policy assigned to a mailbox.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms.date: 7/5/2018
 ms.reviewer:

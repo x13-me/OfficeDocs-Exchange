@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to set storage quotas on Exchange mailboxes.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.date: 7/5/2018
 ms.reviewer:

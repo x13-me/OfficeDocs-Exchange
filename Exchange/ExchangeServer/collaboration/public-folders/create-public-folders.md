@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.date: 4/19/2018
 ms.reviewer:

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to retrieve Exchange statistics for public folders to help make decisions to retain or delete those folders.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.date: 4/19/2018
 ms.reviewer:

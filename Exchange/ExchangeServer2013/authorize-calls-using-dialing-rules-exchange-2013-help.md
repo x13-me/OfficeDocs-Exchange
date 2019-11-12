@@ -1,8 +1,8 @@
 ---
 title: 'Authorize calls using dialing rules: Exchange 2013 Help'
 TOCTitle: Authorize calls using dialing rules
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 3/9/2015
 ms.reviewer: 

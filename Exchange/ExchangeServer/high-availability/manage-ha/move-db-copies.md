@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: When moving a mailbox database that has been copied to at least one other location, follow the procedures in this topic to move the path for the copy.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
 ms.date: 7/9/2018
 ms.reviewer:

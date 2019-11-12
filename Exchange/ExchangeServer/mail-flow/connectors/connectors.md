@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how connectors are used in Exchange Server 2016 or Exchange Server 2019 for incoming and outgoing mail flow in your organization.'
 ms.topic: hub-page
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
 ms.date:
 ms.reviewer:

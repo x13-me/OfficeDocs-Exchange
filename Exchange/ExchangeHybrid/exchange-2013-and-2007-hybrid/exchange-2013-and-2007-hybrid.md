@@ -1,7 +1,7 @@
 ---
 title: "Hybrid deployments with Exchange 2013 and Exchange 2007"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article

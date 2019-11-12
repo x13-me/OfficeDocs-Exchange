@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use message trace in the Exchange admin center to find out what happened to email messages.
 ms.topic: troubleshooting
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 74a9fc59-7e0e-4832-baf9-2a86418b0079
 ms.date: 
 ms.reviewer: 

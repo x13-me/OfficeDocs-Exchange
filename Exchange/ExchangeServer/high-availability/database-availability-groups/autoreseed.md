@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Automatically restore a database in Exchange Server 2016 or Exchange Server 2019 with pre-provisioned spare disks.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
 ms.date: 7/9/2018
 ms.reviewer:

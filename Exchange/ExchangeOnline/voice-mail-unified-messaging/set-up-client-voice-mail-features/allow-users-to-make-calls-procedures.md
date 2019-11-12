@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Enable outgoing calls on UM IP gateways
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6997797d-4b79-4f6d-a89a-f36eea4e5ca4
 ms.date: 11/17/2014
 ms.reviewer: 

@@ -1,8 +1,8 @@
 ---
 title: 'Voice mail for users: Exchange 2013 Help'
 TOCTitle: Voice mail for users
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 6/24/2018
 ms.reviewer: 

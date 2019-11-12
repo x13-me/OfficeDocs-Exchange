@@ -1,8 +1,8 @@
 ---
 title: 'View members of a dynamic distribution group: Exchange 2013 Help'
 TOCTitle: View members of a dynamic distribution group
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

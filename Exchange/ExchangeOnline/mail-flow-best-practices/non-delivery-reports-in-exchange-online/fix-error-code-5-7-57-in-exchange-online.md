@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 5.7.57 in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 5/25/2017
 ms.reviewer: 

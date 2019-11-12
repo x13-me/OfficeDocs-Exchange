@@ -1,8 +1,8 @@
 ---
 title: 'Export DLP sensitive information types from Exchange: Exchange 2013 Help'
 TOCTitle: Export DLP sensitive information types from Exchange
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

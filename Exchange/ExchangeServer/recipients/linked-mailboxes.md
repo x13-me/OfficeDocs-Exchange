@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms.date:
 ms.reviewer:

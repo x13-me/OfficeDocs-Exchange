@@ -7,8 +7,8 @@ ms:contentKeyID: 50934222
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 f1_keywords:
 - header firewall, organization X-headers
