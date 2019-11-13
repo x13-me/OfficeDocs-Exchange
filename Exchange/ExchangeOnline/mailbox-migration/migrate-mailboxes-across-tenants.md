@@ -50,11 +50,11 @@ If using a third party migration tool to migrate your users, purchase the needed
 
 #### Client considerations
 
-For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/en-us/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/en-us/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
+For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
-For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/en-us/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
+For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
 
 #### Tenant preparation and licensing
 
