@@ -24,7 +24,7 @@ manager: serdars
 This topic shows you how to get public folders configured and running in a new organization or in an organization that has never previously had public folders.
 
 > [!NOTE]
-> For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
+> For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188). <br/><br/> OWA for devices refers to the old *"OWA for Android"* and *"OWA for iPhone/iPad"* applications that have since been deprecated. For more details, see [Microsoft OWA mobile apps are being retired](https://support.office.com/article/076ec122-4576-4900-bc26-937f84d25a4b).
 
 > [!IMPORTANT]
 > The procedure in this article guides you through the process of creating public folders for the first time.
