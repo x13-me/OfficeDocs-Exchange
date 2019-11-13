@@ -197,6 +197,8 @@ Exchange makes the follwing changes to the Active Directory domains:
 
 - Permissions are set on the Microsoft Exchange System Objects container for the Exchange Servers, Organization Management, and Authenticated Users security groups.
 
+- Modifying the **Default Domain Controllers GPO** to grant "Manage Auditing and Security Log policy" rights to **Exchange Enterprise Servers**.
+
 - The Exchange Install Domain Servers domain global group is created in the current domain and placed in the Microsoft Exchange System Objects container.
 
 - The Exchange Install Domain Servers group is added to the Exchange Servers USG in the root domain.
