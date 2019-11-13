@@ -79,7 +79,7 @@ Configuring the Microsoft Azure network is the most crucial part of the deployme
 
 ## Register DNS servers
 
-Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution (DNS)](https://msdn.microsoft.com/en-us/library/azure/jj156088.aspx) topic provides an overview of name resolution in Azure.
+Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution for resources in Azure virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) topic provides an overview of name resolution in Azure.
 
 Do the following to register your DNS servers:
 
@@ -157,7 +157,7 @@ For more information about configuring a multi-site VPN, see [Configure a Multi-
 
 When creating your virtual gateway, note that you already specified that it will be connected to your first on-premises site. When you go into the virtual network dashboard, you will see that the gateway has not been created.
 
-To establish the VPN gateway on the Azure side, follow the instructions in the [Start the virtual network gateway](https://msdn.microsoft.com/library/azure/jj156210.aspx#bkmk_startgateway) section of [Configure a Virtual Network Gateway in the Management Portal](https://msdn.microsoft.com/library/azure/jj156210.aspx).
+To establish the VPN gateway on the Azure side, see [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/) 
 
 > [!IMPORTANT]
 > Only perform the steps in the "Start the virtual network gateway" section of the article, and do not continue to the subsequent sections.
@@ -232,21 +232,7 @@ For example, if you are using a Routing and Remote Access Service (RRAS) VPN dev
 
 3. Find the **Add-VpnS2SInterface** command in this section. Verify that the value for the *SharedSecret* parameter matches the pre-shared key for the site for which you are configuring the VPN device.
 
-Other devices might require additional verifications. For example, the configuration scripts for Cisco devices set ACL rules by using the local IP address ranges. You need to review and verify all references to the local site in the configuration script before you use it. See the following topics for more information:
-
-[Routing and Remote Access Service (RRAS) templates](https://msdn.microsoft.com/en-us/library/azure/dn133801.aspx)
-
-[Cisco ASR templates](https://msdn.microsoft.com/en-us/library/azure/dn133802.aspx)
-
-[Cisco ISR templates](https://msdn.microsoft.com/en-us/library/azure/dn133800.aspx)
-
-[Juniper SRX templates](https://msdn.microsoft.com/en-us/library/azure/dn133794.aspx)
-
-[Juniper J-series templates](https://msdn.microsoft.com/en-us/library/azure/dn133799.aspx)
-
-[Juniper ISG templates](https://msdn.microsoft.com/en-us/library/azure/dn133797.aspx)
-
-[Juniper SSG templates](https://msdn.microsoft.com/en-us/library/azure/dn133796.aspx)
+Other devices might require additional verifications. For example, the configuration scripts for Cisco devices set ACL rules by using the local IP address ranges. You need to review and verify all references to the local site in the configuration script before you use it. 
 
 ## Checkpoint: Review the VPN status
 
