@@ -18,7 +18,7 @@ description: "You're reading a collection of conceptual and procedural topics or
 
 # About Exchange documentation
 
-You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics. 
+You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
 
 Other information related to Exchange documentation is in [Third-party copyright notices](third-party-copyright-notices.md).
 
