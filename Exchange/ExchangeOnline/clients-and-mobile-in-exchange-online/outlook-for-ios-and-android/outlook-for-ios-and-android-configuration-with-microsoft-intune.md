@@ -205,7 +205,7 @@ By default, Outlook for iOS and Android supports wearable technology, allowing t
 ### Configure Notifications for Outlook for iOS
 
 > [!IMPORTANT]
-> The app configuration settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
+> The app configuration settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting when they are released in December. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
 
 The Apple notification architecture ensures that notifications are mirrored on iOS devices and WatchOS. Which device shows the notification depends on the device state: if the Apple Watch is unlocked and on a wrist, while the iOS device is locked, then WatchOS  alerts the user with the notification. Apple does not provide a mechanism where you can administratively control and prevent notifications on WatchOS while still allowing them to be delivered on iOS devices.
 
@@ -460,7 +460,7 @@ Outlook for iOS and Android offers administrators additional data protection cap
 |com.microsoft.outlook.ContactSync.PrefixAllowed|This key specifies if the contact's name prefix should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
 |com.microsoft.outlook.ContactSync.SuffixAllowed|This key specifies if the contact's name suffix should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
 
-The below settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
+The below settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting when they are released in December. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
