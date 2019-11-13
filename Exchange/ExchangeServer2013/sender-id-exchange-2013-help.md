@@ -26,7 +26,7 @@ Spoofed mails typically contain a From: address that purports to be from a certa
 
 Sender ID makes spoofing more difficult. When you enable Sender ID, each message contains a Sender ID status in the metadata of the message. When an email message is received, the Exchange server queries the sender's DNS server to verify that the IP address from which the message was received is authorized to send messages for the domain that's specified in the message headers. The IP address of the authorized sending server is referred to as the purported responsible address (PRA).
 
-Domain administrators publish sender policy framework (SPF) records on their DNS servers. SPF records identify authorized outbound email servers. If an SPF record is configured on the sender's DNS server, the Exchange server parses the SPF record and determines whether the IP address from which the message was received is authorized to send email on behalf of the domain that's specified in the message. For more information about what an SPF record contains and how to create an SPF record, see [Sender ID](https://go.microsoft.com/fwlink/p/?linkid=50977).
+Domain administrators publish sender policy framework (SPF) records on their DNS servers. SPF records identify authorized outbound email servers. If an SPF record is configured on the sender's DNS server, the Exchange server parses the SPF record and determines whether the IP address from which the message was received is authorized to send email on behalf of the domain that's specified in the message. For more information about what an SPF record contains and how to create an SPF record, see [Sender ID](exchange/antispam-and-antimalware/antispam-protection/sender-id.md).
 
 The Exchange server updates the message metadata with the Sender ID status based on the SPF record. After the Exchange server updates the message metadata, message delivery proceeds as it ordinarily would.
 
@@ -72,7 +72,7 @@ For more information about how to configure the Sender ID agent, see [Manage Sen
 
 The effectiveness of Sender ID depends on specific DNS data. The more organizations that update their Internet-facing DNS servers by using an SPF record, the more effectively Sender ID identifies spoofed email messages.
 
-To support the Sender ID infrastructure, you must update your Internet-facing DNS data by creating an SPF record and hosting the SPF record on your public DNS servers. For more information about how to create and deploy SPF records, see [Sender ID](https://go.microsoft.com/fwlink/p/?linkid=50977).
+To support the Sender ID infrastructure, you must update your Internet-facing DNS data by creating an SPF record and hosting the SPF record on your public DNS servers. For more information about how to create and deploy SPF records, see [Sender ID](exchange/antispam-and-antimalware/antispam-protection/sender-id.md).
 
 ## Specifying recipients and sender domains to exclude from Sender ID filtering
 
