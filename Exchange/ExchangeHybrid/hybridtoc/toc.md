@@ -1,6 +1,7 @@
 # [Exchange Hybrid](../exchange-hybrid.md)
 ## [Office 365 mail migration advisors](../mail-migration-jump.md)
 ## [Hybrid Configuration wizard](../hybrid-configuration-wizard.md)
+## [Hybrid Configuration Wizard options](../hybrid-configuration-wizard-options.md)
 ## [Hybrid Configuration wizard FAQs](../hybrid-configuration-wizard-faqs.md)
 ## [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md)
 ## [Certificate requirements](../certificate-requirements.md)
