@@ -1,8 +1,8 @@
 ---
 title: 'Manage transport rules: Exchange 2013 Help'
 TOCTitle: Manage transport rules
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

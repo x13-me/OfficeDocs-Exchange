@@ -3,10 +3,10 @@ localization_priority: Normal
 monikerRange: exchserver-2016
 description: Setup can't continue because the organization contains one or more Exchange 2010 servers that aren't running the minimum required version of Exchange.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.E16E14CoexistenceMinVersionRequirement
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 24d16ace-249f-4c74-b617-3b0242e5aeca
 ms.date: 9/15/2015
 ms.reviewer: 

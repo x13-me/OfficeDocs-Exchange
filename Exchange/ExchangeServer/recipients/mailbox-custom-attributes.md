@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.date: 4/19/2018
 ms.reviewer:

@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
 ms.collection: exchange-server

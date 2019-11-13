@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: 'Summary: Learn how Exchange 2016 and Exchange 2019 interact with Active Directory.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 8e8464df-2d1d-4d68-82de-b0c158c549c3
 ms.date: 7/26/2018
 ms.reviewer: 

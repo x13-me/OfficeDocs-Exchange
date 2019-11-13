@@ -1,8 +1,8 @@
 ---
 title: 'Telephone system integration with UM: Exchange 2013 Help'
 TOCTitle: Telephone system integration with UM
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 3/5/2018
 ms.reviewer: 

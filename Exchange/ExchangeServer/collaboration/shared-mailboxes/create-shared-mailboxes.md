@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
 ms.date: 6/8/2018
 ms.reviewer:

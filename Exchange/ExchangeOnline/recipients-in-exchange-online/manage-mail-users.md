@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see Recipients.
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
 ms.date: 7/11/2018
 ms.reviewer: 

@@ -1,7 +1,7 @@
 ---
 title: "Create a hybrid deployment with the Hybrid Configuration wizard"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article

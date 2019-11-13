@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

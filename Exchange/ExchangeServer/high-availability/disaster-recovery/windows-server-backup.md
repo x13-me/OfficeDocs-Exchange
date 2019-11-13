@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
 ms.date: 7/9/2018
 ms.reviewer: 

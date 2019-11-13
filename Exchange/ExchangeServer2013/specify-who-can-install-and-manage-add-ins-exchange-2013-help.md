@@ -1,8 +1,8 @@
 ---
 title: 'Specify the administrators and users who can install and manage add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Specify the administrators and users who can install and manage add-ins for Outlook
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

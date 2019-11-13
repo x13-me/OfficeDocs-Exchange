@@ -1,8 +1,8 @@
 ---
 title: 'Default Retention Policy in Exchange: Exchange 2013 Help'
 TOCTitle: Default Retention Policy in Exchange
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 

@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker

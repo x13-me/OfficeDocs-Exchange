@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Why you should or shouldn't migrate your Exchange public folders to Office 365 Groups."
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.date: 7/20/2018
 ms.reviewer: 

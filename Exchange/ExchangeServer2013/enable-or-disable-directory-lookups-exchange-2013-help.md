@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable directory lookups: Exchange 2013 Help'
 TOCTitle: Enable or disable directory lookups
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 5/10/2016
 ms.reviewer:

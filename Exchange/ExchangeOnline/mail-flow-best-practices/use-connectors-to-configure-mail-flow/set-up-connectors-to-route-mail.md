@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use connectors to route mail between Exchange Online and on-premises email servers.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.date: 
 ms.reviewer: 

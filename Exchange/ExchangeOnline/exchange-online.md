@@ -2,8 +2,8 @@
 localization_priority: Normal
 ms.topic: landing-page
 layout: LandingPage
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d0f509be-ee4b-46a2-9dc6-3bc3512a0a2d
 ms.date: 6/22/2018
 ms.reviewer: 

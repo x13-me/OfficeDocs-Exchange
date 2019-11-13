@@ -7,8 +7,8 @@ ms:contentKeyID: 50873792
 ms.date: 01/30/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

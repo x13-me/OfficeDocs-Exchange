@@ -3,8 +3,8 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about what you need in your environment before you install Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid:
 ms.date:
 ms.reviewer: 

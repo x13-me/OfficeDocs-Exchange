@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to create a DAG in Exchange Server, through the Exchange admin center (EAC) or the Exchange Management Shell.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
 ms.date: 7/9/2018
 ms.reviewer:

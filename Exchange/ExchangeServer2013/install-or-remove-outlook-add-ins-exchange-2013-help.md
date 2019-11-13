@@ -1,8 +1,8 @@
 ---
 title: 'Install or remove add-ins for Outlook for your organization: Exchange 2013 Help'
 TOCTitle: Install or remove add-ins for Outlook for your organization
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - SetupIMAPOtherServerSettings619135
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.date: 
 ms.reviewer: 

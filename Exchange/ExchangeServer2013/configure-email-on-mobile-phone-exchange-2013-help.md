@@ -1,8 +1,8 @@
 ---
 title: 'Configure mobile phones to access email: Exchange 2013 Help'
 TOCTitle: Configure mobile phones to access email
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

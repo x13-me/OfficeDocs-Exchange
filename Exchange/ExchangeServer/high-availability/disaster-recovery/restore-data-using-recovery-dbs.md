@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
 ms.date: 7/9/2018
 ms.reviewer:

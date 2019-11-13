@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange Server 2019'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 ms.date:
 ms.reviewer:

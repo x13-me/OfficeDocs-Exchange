@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Add Exchange Server 2016 or Exchange Server 2019 to, or remove them from, a database availability group (DAG).'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms.date: 7/9/2018
 ms.reviewer:

@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the primary DNS suffix hasn't been configured on the target server.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.FqdnMissing
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 ms.date: 8/3/2018
 ms.reviewer: 

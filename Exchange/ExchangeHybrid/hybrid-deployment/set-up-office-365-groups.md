@@ -1,7 +1,7 @@
 ---
 title: "Configure Office 365 Groups with on-premises Exchange hybrid"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article

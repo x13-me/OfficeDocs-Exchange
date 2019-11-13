@@ -1,8 +1,8 @@
 ---
 title: 'Create an Outlook Web App mailbox policy: Exchange 2013 Help'
 TOCTitle: Create an Outlook Web App mailbox policy
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

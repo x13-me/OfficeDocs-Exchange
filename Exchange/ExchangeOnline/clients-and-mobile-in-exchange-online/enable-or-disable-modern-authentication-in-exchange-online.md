@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.

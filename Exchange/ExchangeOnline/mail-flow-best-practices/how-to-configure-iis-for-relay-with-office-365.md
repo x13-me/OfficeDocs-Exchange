@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "If a printer, scanner, or LOB application can't send email using Office 365, you might need to set up IIS to work as an intermediary. Learn how. "
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: eb57abd2-3859-4e79-b721-2ed1f0f579c9
 ms.reviewer: 
 title: How to configure IIS for relay with Office 365
