@@ -75,7 +75,7 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
 3. To enable ACLs on all mailboxes moved to Office 365, run the following command:
 
    ```
-   Get-RemoteMailbox -ResultSize unlimited | Where-Object{$_.RecipientTypeDetails -eq "RemoteUserMailbox"}  | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
+   Get-RemoteMailbox -ResultSize unlimited | where {$_.RecipientTypeDetails -eq "RemoteUserMailbox"} | foreach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
    ```
 
 4. To verify that the mailboxes have been successfully updated, run the following command:
@@ -85,11 +85,11 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
    ```
 
 > [!IMPORTANT]
-> The msExchRecipientDisplayType value -1073741818 should only be set for user mailboxes, not for resources.
+> The msExchRecipientDisplayType value -1073741818 should only be set for user mailboxes, not for resource mailboxes.
 
 ## Exchange 2010
 
-Exchange 2010 SP3 servers support the configuration of ACLs on remote mailboxes, however, this configuration needs to be set manually on each user mailbox. Unlike newer versions of Exchange, Exchange 2010 doesn't provide the ability to set this feature at the organization level. You need to follow the steps below on any user mailboxes that you've previously moved to Office 365, and on any user mailboxes that will be moved from an Exchange 2010 SP3 server to Office 365 in the future.
+Exchange 2010 SP3 servers support the configuration of ACLs on remote mailboxes; however, this configuration needs to be set manually on each user mailbox. Unlike newer versions of Exchange, Exchange 2010 doesn't provide the ability to set this feature at the organization level. You need to follow the upcoming steps on any user mailboxes that you've previously moved to Office 365, and on any user mailboxes that you'll move from an Exchange 2010 SP3 server to Office 365 in the future.
 
 ### Enable ACLs on remote mailboxes
 
