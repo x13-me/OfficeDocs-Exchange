@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online"
-ms.author: chrisda
-author: chrisda
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: dansimp
 ms.date: 
 ms.reviewer: 

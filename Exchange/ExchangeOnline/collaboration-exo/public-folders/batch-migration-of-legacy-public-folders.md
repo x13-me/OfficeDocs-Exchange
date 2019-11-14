@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.service: exchange-online
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms.collection:
@@ -69,6 +69,8 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 - In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212).
 
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller. Or, we recommend that you divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information. **Note**: If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=844062) cmdlet to increase them with the `DefaultPublicFolderIssueWarningQuota` and `DefaultPublicFolderProhibitPostQuota` parameters.
+
+If you use a firewall and access control lists (ACLs), ensure that the [IP ranges used by Office 365 in your region](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) are permitted through your firewall.
 
 - In Office 365 and Exchange Online, you can create a maximum of 1,000 public folder mailboxes.
 

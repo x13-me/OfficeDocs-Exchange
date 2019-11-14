@@ -1,8 +1,8 @@
 ---
 title: 'Allow users to see a voice mail transcript: Exchange 2013 Help'
 TOCTitle: Allow users to see a voice mail transcript
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 12/9/2016
 ms.reviewer:

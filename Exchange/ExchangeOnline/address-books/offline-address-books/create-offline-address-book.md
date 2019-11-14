@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Admins can learn how to create offline address books (OABs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewOabWizardForm.OabIntroductionWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
 ms.date: 
 ms.reviewer: 

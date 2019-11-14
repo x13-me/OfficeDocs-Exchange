@@ -1,10 +1,10 @@
 ---
 audience: ITPro
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.service: exchange-online
 ms.assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 ms.collection: exchange-online

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use enhanced filtering for connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Office 365.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 
 ms.date: 
 ms.reviewer: 
@@ -71,7 +71,7 @@ Using the previous example, you would configure the IP address of the third-part
 1. Open the Security and Compliance Center, expand **Threat Management**, choose **Policy**, and then choose **Enhanced Filtering**.
 
    > [!TIP]
-   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/?hash=/enhancedfiltering](https://protection.office.com/?hash=/enhancedfiltering)
+   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skiplisting](https://protection.office.com/skiplisting)
 
 2. Select the inbound connector that you want to configure.
 

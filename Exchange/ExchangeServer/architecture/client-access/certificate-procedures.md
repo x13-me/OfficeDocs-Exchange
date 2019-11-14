@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: A list of certificate management tasks in Exchange Server.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms.date: 7/5/2018
 ms.reviewer:

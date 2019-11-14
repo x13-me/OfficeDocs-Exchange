@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
 ms.date: 6/24/2018
 ms.reviewer: 

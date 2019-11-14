@@ -1,12 +1,12 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - O365P_MigrationsIMAPGmailAppPass
 - O365M_MigrationsIMAPGmailAppPass
 - O365E_MigrationsIMAPGmailAppPass
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
 ms.date: 8/15/2018
 ms.reviewer: 

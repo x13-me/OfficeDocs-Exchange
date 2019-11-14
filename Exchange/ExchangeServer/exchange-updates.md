@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: get-started-article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.collection: exchange-server
 description: 'Summary: Updates to Exchange Server and Exchange Online content.'

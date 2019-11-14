@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable Outlook Voice Access for users: Exchange 2013 Help'
 TOCTitle: Enable or disable Outlook Voice Access for users
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 11/17/2014
 ms.reviewer:

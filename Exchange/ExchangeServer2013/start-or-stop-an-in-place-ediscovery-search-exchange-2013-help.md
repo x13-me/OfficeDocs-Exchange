@@ -1,8 +1,8 @@
 ---
 title: 'Start or stop an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Start or stop an In-Place eDiscovery search
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

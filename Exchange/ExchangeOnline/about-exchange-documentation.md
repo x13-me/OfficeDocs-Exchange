@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b
 ms.date: 12/9/2016
 ms.reviewer: 

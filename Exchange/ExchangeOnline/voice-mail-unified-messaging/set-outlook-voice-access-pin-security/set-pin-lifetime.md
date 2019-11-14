@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can configure the PIN lifetime for users who are enabled for Unified Messaging (UM). The PIN lifetime is the maximum time that an Outlook Voice Access PIN will be valid for UM-enabled recipients. The PIN lifetime setting is configured on a UM mailbox policy and applies to all UM-enabled users associated with the UM mailbox policy.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d
 ms.date: 11/17/2014
 ms.reviewer: 

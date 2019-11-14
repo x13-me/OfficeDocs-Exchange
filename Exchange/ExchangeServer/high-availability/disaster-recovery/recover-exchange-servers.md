@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to recover a lost Exchange 2016 or Exchange 2019 server.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms.date:
 ms.reviewer:

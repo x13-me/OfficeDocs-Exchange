@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
 ms.date: 8/15/2018
 ms.reviewer: 

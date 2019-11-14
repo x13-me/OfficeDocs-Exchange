@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 can't continue because the target server's A record is missing from DNS.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.HostRecordMissing
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms.date: 8/2/2018
 ms.reviewer: 

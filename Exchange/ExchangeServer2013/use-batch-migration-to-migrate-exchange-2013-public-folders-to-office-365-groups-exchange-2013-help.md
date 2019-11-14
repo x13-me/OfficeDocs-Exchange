@@ -4,8 +4,8 @@ TOCTitle: Use batch migration to migrate Exchange 2013 public folders to Office 
 ms:assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843873(v=EXCHG.150)
 ms:contentKeyID: 74468675
 mtps_version: v=EXCHG.150
