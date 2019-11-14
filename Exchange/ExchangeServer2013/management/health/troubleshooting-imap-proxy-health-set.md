@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.imap.proxy(
 ms:contentKeyID: 49720728
 ms.date: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

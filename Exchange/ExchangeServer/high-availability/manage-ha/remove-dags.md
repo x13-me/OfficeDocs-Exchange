@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to remove a database availability group (DAG) in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 ms.date: 7/9/2018
 ms.reviewer: 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.date: 7/6/2018
 ms.reviewer: 

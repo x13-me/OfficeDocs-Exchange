@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use the Open Authorization (OAuth) authentication protocol to authenticate applications to Exchange. The other applications need to be configured as partner applications in Exchange 2016.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
 ms.date: 6/8/2018
 ms.reviewer:

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to test mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 ms.date: 
 ms.reviewer: 

@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange 2019 Setup can't extend the Active Directory schema because the account isn't a member of the Schema Admins and Enterprise Admins security groups.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.SchemaUpdateRequired
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
 ms.date: 7/22/2015
 ms.reviewer: 

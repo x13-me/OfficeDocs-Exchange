@@ -1,8 +1,8 @@
 ---
 title: 'Assign eDiscovery permissions in Exchange: Exchange 2013 Help'
 TOCTitle: Assign eDiscovery permissions in Exchange
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

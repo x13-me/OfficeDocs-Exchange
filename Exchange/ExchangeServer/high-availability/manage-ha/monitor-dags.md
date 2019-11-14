@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms.date: 7/9/2018
 ms.reviewer:

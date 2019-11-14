@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 title: Sensitivity labeling and protection in Outlook for iOS and Android
 ms.reviewer: smithre4
 audience: ITPro
@@ -98,6 +98,9 @@ Outlook for iOS and Android leverages the user’s primary SMTP address for mail
 Outlook for iOS and Outlook for Android both support manual certificate delivery, which is when the certificate is emailed to the user and the user taps on the certificate attachment within the app to initiate the certificate’s installation. The following image shows how manual certificate delivery works in iOS.
 
 ![Screen shots showing manual certificate installation on iOS.](../../media/sensitive-manual-certificate.png)
+
+> [!IMPORTANT]
+> If your organization has deployed an Intune App Protection Policy with the setting "Send org data to other apps" configured with "Policy managed apps" or "None", then your Intune administrator needs to add "com.android.certinstaller" as an exempt app. Configuring this exemption allows the user to install the certificate into the Android KeyStore. For more information, see [How to create exceptions to the Intune App Protection Policy (APP) data transfer policy](https://docs.microsoft.com/intune/apps/app-protection-policies-exception).
 
 A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.office.com/article/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
 

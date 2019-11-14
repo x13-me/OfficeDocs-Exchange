@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to add or remove address lists in offline address books (OABs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
 ms.date: 
 ms.reviewer: 

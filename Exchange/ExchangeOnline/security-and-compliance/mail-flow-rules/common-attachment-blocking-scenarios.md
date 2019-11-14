@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 ms.date: 
 ms.reviewer: 

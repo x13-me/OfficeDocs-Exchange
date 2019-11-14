@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online).
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
 ms.date: 
 ms.reviewer: 

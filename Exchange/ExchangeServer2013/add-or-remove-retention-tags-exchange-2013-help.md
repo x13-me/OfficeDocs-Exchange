@@ -1,8 +1,8 @@
 ---
 title: 'Add retention tags to or remove retention tags from a retention policy: Exchange 2013 Help'
 TOCTitle: Add retention tags to or remove retention tags from a retention policy
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

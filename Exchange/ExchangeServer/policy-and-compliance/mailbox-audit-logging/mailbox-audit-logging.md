@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
 ms.date: 7/8/2018
 ms.reviewer:

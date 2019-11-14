@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to configure the external postmaster email address in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: ece00da0-743b-4e26-83f5-a2eb68c7de4e
 ms.date: 
 ms.reviewer: 

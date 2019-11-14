@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to remove a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
 ms.date: 7/9/2018
 ms.reviewer:

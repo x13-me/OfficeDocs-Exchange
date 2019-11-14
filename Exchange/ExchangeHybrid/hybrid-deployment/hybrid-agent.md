@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Hybrid Agent"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -129,7 +129,7 @@ You must run the HCW from the computer where you want the agent installed. After
    4. Next run the following command to verify the computer where you're installing can reach out to all required endpoints for the Hybrid Agent installation and Hybrid Configuration wizard setup.
 
       ```
-      Test-HybridConnectivity testO365Endpoints
+      Test-HybridConnectivity -TestO365Endpoints
       ```
 
       The output of the command looks like this:

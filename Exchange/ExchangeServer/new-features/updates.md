@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms.date: 7/27/2018
 ms.reviewer: 

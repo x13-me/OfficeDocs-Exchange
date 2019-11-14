@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms.date: 7/5/2018
 ms.reviewer:

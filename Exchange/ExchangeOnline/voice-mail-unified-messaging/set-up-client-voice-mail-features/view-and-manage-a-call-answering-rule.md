@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
 ms.date: 4/8/2015
 ms.reviewer: 

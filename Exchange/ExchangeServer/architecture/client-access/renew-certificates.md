@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 356ca7cd-b9d4-487d-aa21-3b38e91bde58
 ms.date: 6/7/2018
 ms.reviewer:

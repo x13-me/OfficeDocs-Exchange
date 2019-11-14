@@ -1,8 +1,8 @@
 ---
 title: 'Enable Message Waiting Indicator (MWI) for users: Exchange 2013 Help'
 TOCTitle: Enable Message Waiting Indicator (MWI) for users
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 11/17/2014
 ms.reviewer:

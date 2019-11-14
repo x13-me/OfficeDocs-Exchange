@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 
 title: How to migrate mailboxes from one Office 365 tenant to another

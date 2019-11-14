@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: get-started-article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
 ms.date: 6/7/2018
 ms.reviewer: 

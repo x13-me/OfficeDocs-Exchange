@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
 ms.date: 7/9/2018
 ms.reviewer: 

@@ -1,7 +1,7 @@
 ---
 title: "About the Office 365 Best Practices Analyzer for Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 ms.reviewer: 
 manager: serdars
 audience: Admin

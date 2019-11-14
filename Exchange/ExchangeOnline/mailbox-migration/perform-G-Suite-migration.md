@@ -1,7 +1,7 @@
 ---
 title: "Perform a G Suite migration"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: Admin
 ms.topic: conceptual

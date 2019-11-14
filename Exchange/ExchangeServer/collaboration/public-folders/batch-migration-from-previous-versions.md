@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 monikerRange: exchserver-2016
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:

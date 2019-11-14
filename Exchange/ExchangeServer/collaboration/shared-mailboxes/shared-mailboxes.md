@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: An overview of shared mailboxes.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: fbd93b77-637b-4237-a824-8e95166cde11
 ms.date: 7/6/2018
 ms.reviewer: 

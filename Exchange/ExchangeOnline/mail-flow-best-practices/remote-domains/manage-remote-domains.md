@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d3dca7b0-c84c-429a-9698-0e92a95a0985
 ms.date: 
 ms.reviewer: 

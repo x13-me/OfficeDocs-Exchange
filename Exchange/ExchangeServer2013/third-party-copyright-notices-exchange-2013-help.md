@@ -1,8 +1,8 @@
 ---
 title: 'Third-party copyright notices: Exchange 2013 Help'
 TOCTitle: Third-party copyright notices
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 

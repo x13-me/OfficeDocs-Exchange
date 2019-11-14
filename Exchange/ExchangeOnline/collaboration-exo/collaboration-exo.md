@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Office 365 and Exchange Online provides several features that can help your end users easily collaborate in email.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 7d433daa-c68f-4441-b2f5-1280991185c2
 ms.date: 
 ms.reviewer: 
