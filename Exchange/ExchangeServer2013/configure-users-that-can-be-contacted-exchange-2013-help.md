@@ -1,8 +1,8 @@
 ---
 title: 'Configure the group of users that can be contacted: Exchange 2013 Help'
 TOCTitle: Configure the group of users that can be contacted
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 11/17/2014
 ms.reviewer:

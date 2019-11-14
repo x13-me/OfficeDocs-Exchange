@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
 ms.date: 7/9/2018
 ms.reviewer: 

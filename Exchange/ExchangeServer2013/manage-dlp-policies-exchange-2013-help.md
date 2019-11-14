@@ -1,8 +1,8 @@
 ---
 title: 'Manage DLP policies: Exchange 2013 Help'
 TOCTitle: Manage DLP policies
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

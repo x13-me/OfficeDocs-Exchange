@@ -1,7 +1,7 @@
 ---
 title: "Certificate requirements for hybrid deployments"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 ms.reviewer:
 manager: serdars
 audience: ITPro

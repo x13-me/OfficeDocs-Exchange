@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable single item recovery for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable single item recovery for a mailbox
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

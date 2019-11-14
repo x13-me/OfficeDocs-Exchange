@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:'
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 ms.date: 6/8/2018
 ms.reviewer: 

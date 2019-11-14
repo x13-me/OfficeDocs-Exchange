@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to suspend or resume a mailbox database copy in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
 ms.date: 7/9/2018
 ms.reviewer:

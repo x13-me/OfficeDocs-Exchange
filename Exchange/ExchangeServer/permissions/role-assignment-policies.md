@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms.date: 7/5/2018
 ms.reviewer:

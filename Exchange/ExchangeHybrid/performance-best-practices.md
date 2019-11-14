@@ -1,7 +1,7 @@
 ---
 title: "Performance factors and best practices for hybrid migrations"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article

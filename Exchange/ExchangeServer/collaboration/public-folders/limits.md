@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about supported limits for public folders in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
 ms.date:
 ms.reviewer:

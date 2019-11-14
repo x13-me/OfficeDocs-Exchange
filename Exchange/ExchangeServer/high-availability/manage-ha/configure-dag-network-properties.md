@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms.date: 6/7/2018
 ms.reviewer:

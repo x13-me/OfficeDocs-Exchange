@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to use hosted mail flow with Office 365.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.date: 1/6/2017
 ms.reviewer: 

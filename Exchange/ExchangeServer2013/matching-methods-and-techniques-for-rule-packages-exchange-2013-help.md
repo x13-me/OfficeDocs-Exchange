@@ -1,8 +1,8 @@
 ---
 title: 'Matching methods and techniques for rule packages: Exchange 2013 Help'
 TOCTitle: Matching methods and techniques for rule packages
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 

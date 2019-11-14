@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.Win2k16LSARollupUpdateNotInstalled
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 0d64b18a-4198-4ddf-836a-1f4ab08fb9b8
 ms.date: 4/19/2018
 ms.reviewer: 

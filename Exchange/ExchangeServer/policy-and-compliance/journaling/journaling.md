@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about journaling in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
 ms.date: 7/8/2018
 ms.reviewer: 

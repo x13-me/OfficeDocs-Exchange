@@ -1,7 +1,7 @@
 ---
 title: "Dlp Policy attributes"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.reviewer: dstrome
 audience: ITPro

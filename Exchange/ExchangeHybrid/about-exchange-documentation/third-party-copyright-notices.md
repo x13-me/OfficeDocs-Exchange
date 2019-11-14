@@ -1,7 +1,7 @@
 ---
 title: "Third-party copyright notices"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: End User
 ms.topic: article

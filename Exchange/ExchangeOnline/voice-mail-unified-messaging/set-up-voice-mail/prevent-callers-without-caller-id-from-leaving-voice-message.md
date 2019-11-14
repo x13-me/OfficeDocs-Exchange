@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can allow UM-enabled users to receive voice messages from anonymous callers or prevent them from doing so. By default, when users are enabled for Unified Messaging (UM) and voice mail, they can receive calls that are anonymous and don't contain caller ID information.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a
 ms.date: 11/17/2014
 ms.reviewer: 

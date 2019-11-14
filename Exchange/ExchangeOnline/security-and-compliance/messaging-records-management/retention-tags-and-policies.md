@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -141,7 +141,7 @@ The Managed Folder Assistant is a throttle-based assistant. Throttle-based assis
 You can also use the [Start-ManagedFolderAssistant](https://technet.microsoft.com/library/75d840ea-5abc-44bb-b361-e81561fa1b04.aspx) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure the Managed Folder Assistant](https://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx).
 
 > [!NOTE]
-> The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed.
+> The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed. <br/><br/> MRM won't move items larger than the values of MaxSendSize and MaxReceiveSize set on the mailbox.
 
 ### Moving items between folders
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to perform a dial tone recovery in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms.date: 7/9/2018
 ms.reviewer:

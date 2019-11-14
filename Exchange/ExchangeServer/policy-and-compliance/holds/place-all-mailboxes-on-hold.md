@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Administrators can learn about the differences between Litigation Hold and In-Place Hold, and how to place mailboxes on In-Place Hold.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
 ms.date:
 ms.reviewer:

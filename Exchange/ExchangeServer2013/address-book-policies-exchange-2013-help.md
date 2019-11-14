@@ -1,8 +1,8 @@
 ---
 title: 'Address book policies: Exchange 2013 Help'
 TOCTitle: Address book policies
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection.
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.eac.ConnectorSelection
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
 ms.date: 
 ms.reviewer: 

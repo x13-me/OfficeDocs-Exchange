@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to enable mail flow for subdomains in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4033a30a-f506-481c-8ef0-fd9a0508ae38
 ms.date: 02/01/2019
 ms.reviewer: 
