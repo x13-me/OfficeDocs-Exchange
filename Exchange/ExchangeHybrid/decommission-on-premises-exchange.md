@@ -57,7 +57,7 @@ Use the following table to decide what type of migration works for your organiza
 
 Customers with a hybrid configuration often find after a period of time that all of their mailboxes have been moved to Exchange Online. At this point, they may decide to remove the Exchange servers from on-premises. However, they discover that they can no longer manage their cloud mailboxes.
 
-When directory synchronization is enabled for a tenant and a user is synchronized from on-premises, most of the attributes cannot be managed from Exchange Online and must be managed from on-premises. This is not due to the hybrid configuration, but it occurs because of directory synchronization. In addition, even if you have directory synchronization in place without running the Hybrid Configuration Wizard, you still cannot manage most of the recipient tasks from the cloud. For more information, see this [TechNet blog](http://blogs.technet.com/b/exchange/archive/2012/12/05/decommissioning-your-exchange-2010-servers-in-a-hybrid-deployment.aspx).
+When directory synchronization is enabled for a tenant and a user is synchronized from on-premises, most of the attributes cannot be managed from Exchange Online and must be managed from on-premises. This is not due to the hybrid configuration, but it occurs because of directory synchronization. In addition, even if you have directory synchronization in place without running the Hybrid Configuration Wizard, you still cannot manage most of the recipient tasks from the cloud. For more information, see this [TechNet blog](https://blogs.technet.com/b/exchange/archive/2012/12/05/decommissioning-your-exchange-2010-servers-in-a-hybrid-deployment.aspx).
 
 ## Can third-party management tools be used?
 
