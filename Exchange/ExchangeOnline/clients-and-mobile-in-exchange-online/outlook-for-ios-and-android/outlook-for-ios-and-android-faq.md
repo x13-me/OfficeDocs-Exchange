@@ -372,7 +372,7 @@ If you do not have organization chart data exposed in the app, consult with your
 Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to 500, in order to ensure optimal app performance.
 
 > [!NOTE]
-Microsoft sync technology has recently been changed to sync 500 items by default. Outlook for Android supports this. Outlook for iOS will in a future update.
+> Microsoft sync technology has recently been changed to sync 500 items by default. Outlook for Android supports this. Outlook for iOS will support this in a future update.
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 

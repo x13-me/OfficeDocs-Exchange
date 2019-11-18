@@ -1,8 +1,8 @@
 ---
 title: "Plan, deliver, and adopt Outlook for iOS and Android in your organization"
-ms.author: v-mapenn
-author: mattpennathe3rd
-manager: serdars
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
 audience: ITPro
 ms.prod: outlook
 ms.topic: get-started-article
