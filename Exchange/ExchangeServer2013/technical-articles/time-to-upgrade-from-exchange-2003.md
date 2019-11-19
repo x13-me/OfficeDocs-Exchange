@@ -21,7 +21,7 @@ April 2014 will be here before you know it, so now is the time to start planning
 To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
 
 > [!NOTE]
-> For more information about specific versions of Exchange 2003, see the <A href="http://go.microsoft.com/fwlink/p/?linkid=217503">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
+> For more information about specific versions of Exchange 2003, see the <A href="https://go.microsoft.com/fwlink/p/?linkid=217503">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
 
 ## What's new in Exchange 2013
 

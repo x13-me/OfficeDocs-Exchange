@@ -674,7 +674,7 @@ The following table provides guidance on volume configurations.
 <td><p>Windows BitLocker (volume encryption)</p></td>
 <td><p>Windows BitLocker is a data protection feature in Windows Server 2008. BitLocker protects against data theft or exposure on computers that are lost or stolen, and it offers more secure data deletion when computers are decommissioned.</p></td>
 <td><p>Supported: All Exchange database and log files.</p></td>
-<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
+<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
 <p>For more information about Windows 7 BitLocker encryption, see <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
 </tr>
 <tr class="odd">
