@@ -2,7 +2,7 @@
 title: 'Install the Exchange UM Troubleshooting Tool: Exchange 2013 Help'
 TOCTitle: Install the Exchange UM Troubleshooting Tool
 ms:assetid: 84223af0-a717-49ee-add6-86313bb30d17
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff844714(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff844714(v=EXCHG.150)
 ms:contentKeyID: 55129211
 ms.date: 12/09/2016
 ms.reviewer:

@@ -2,7 +2,7 @@
 title: 'Messaging records management errors and events: Exchange 2013 Help'
 TOCTitle: Messaging records management errors and events
 ms:assetid: 8bc3f5ae-403b-45af-86c1-b2fccab34e63
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310783(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb310783(v=EXCHG.150)
 ms:contentKeyID: 50873803
 ms.date: 05/13/2016
 ms.reviewer: 

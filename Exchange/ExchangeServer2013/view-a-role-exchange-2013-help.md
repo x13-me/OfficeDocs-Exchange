@@ -2,7 +2,7 @@
 title: 'View a role: Exchange 2013 Help'
 TOCTitle: View a role
 ms:assetid: 1875b15f-22db-4ede-b310-ea894d6211c8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335117(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd335117(v=EXCHG.150)
 ms:contentKeyID: 49289181
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -32,7 +32,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 - This topic makes use of pipelining and the **Format-List** and **Format-Table** cmdlets. For more information about these concepts, see the following topics:
 
-  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+  - [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
 
   - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -57,7 +57,7 @@ This example retrieves the details about the Mail Recipients management role.
 Get-ManagementRole "Mail Recipients" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List all management roles
 
@@ -81,7 +81,7 @@ This example returns a list of all the roles in your organization and includes t
 Get-ManagementRole | Format-Table Name, Implicit*
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List management roles that contain a specific cmdlet
 
@@ -99,7 +99,7 @@ This example returns a list of roles that contain the **New-Mailbox** cmdlet.
 Get-ManagementRole -Cmdlet New-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List management roles that contain a specific parameter
 
@@ -127,7 +127,7 @@ Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
 
 You can also use the wildcard character (\*) with either the *Cmdlet* or *CmdletParameters* parameters to match partial cmdlet or parameter names.
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List management roles of a specific role type
 
@@ -145,7 +145,7 @@ This example returns a list of roles based on the `UmMailboxes` role type.
 Get-ManagementRole -RoleType UmMailboxes
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List the immediate child roles of a parent role
 
@@ -163,7 +163,7 @@ This example returns a list of immediate children of the Disaster Recovery role.
 Get-ManagementRole "Disaster Recovery" -GetChildren
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
 
 ## List all child roles below a parent role
 
@@ -181,4 +181,4 @@ This example returns all the child roles of the Mail Recipients role.
 Get-ManagementRole "Mail Recipients" -Recurse
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/en-us/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).

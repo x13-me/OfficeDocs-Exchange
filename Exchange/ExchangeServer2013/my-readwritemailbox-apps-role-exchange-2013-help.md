@@ -2,7 +2,7 @@
 title: 'My ReadWriteMailbox Apps role: Exchange 2013 Help'
 TOCTitle: My ReadWriteMailbox Apps role
 ms:assetid: febb73fb-3a0b-4c67-b53b-9566d7c32cd2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt793556(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Mt793556(v=EXCHG.150)
 ms:contentKeyID: 74418060
 ms.date: 02/08/2017
 ms.reviewer: 

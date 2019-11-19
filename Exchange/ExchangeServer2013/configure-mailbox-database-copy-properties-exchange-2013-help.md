@@ -2,7 +2,7 @@
 title: 'Configure mailbox database copy properties: Exchange 2013 Help'
 TOCTitle: Configure mailbox database copy properties
 ms:assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351151(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351151(v=EXCHG.150)
 ms:contentKeyID: 48385566
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -91,8 +91,8 @@ To verify that you've successfully configured a mailbox database copy, do one of
 
 ## For more information
 
-[Set-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298104\(v=exchg.150\))
+[Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298104\(v=exchg.150\))
 
-[Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en-us/library/dd298044\(v=exchg.150\))
+[Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\))
 
-[Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\))
+[Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\))

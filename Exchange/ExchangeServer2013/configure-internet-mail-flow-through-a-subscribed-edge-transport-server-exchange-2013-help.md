@@ -2,7 +2,7 @@
 title: 'Configure internet mail flow through a subscribed Edge Transport server'
 TOCTitle: Configure Internet mail flow through a subscribed Edge Transport server
 ms:assetid: d12ea770-99ce-4ab4-a373-96f2554641fa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb738158(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb738158(v=EXCHG.150)
 ms:contentKeyID: 61200301
 ms.date: 12/09/2016
 ms.reviewer: 

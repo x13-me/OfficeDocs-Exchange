@@ -2,7 +2,7 @@
 title: 'Unified Messaging permissions: Exchange 2013 Help'
 TOCTitle: Unified Messaging permissions
 ms:assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638193(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638193(v=EXCHG.150)
 ms:contentKeyID: 48385578
 ms.date: 05/13/2016
 ms.reviewer: 

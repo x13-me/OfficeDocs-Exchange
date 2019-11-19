@@ -2,7 +2,7 @@
 title: 'Hub Transport role not detected in local site'
 TOCTitle: Hub Transport role not detected in local site_BridgeheadRoleNotPresentInSite
 ms:assetid: f318c947-81a8-4c18-975a-0f1e7868042a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.bridgeheadrolenotpresentinsite(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.bridgeheadrolenotpresentinsite(v=EXCHG.150)
 ms:contentKeyID: 46629198
 ms.date: 12/09/2016
 ms.reviewer: 

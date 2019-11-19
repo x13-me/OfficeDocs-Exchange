@@ -2,7 +2,7 @@
 title: 'Message retry, resubmit, and expiration intervals: Exchange 2013 Help'
 TOCTitle: Message retry, resubmit, and expiration intervals
 ms:assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ891103(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ891103(v=EXCHG.150)
 ms:contentKeyID: 50646229
 ms.date: 07/14/2016
 ms.reviewer: 

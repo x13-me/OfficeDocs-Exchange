@@ -2,7 +2,7 @@
 title: 'Integration with SharePoint and Lync: Exchange 2013 Help'
 TOCTitle: Integration with SharePoint and Lync
 ms:assetid: 056b29f6-e0e9-4974-b763-002518857a93
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150480(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150480(v=EXCHG.150)
 ms:contentKeyID: 47559934
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -36,9 +36,9 @@ Exchange 2013 allows SharePoint 2013 to search Exchange mailbox content using Fe
 
 For more details, see the following topics:
 
-  - [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

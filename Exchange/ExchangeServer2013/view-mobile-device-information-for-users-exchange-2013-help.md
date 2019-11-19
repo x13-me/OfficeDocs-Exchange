@@ -2,7 +2,7 @@
 title: 'View mobile device information for users: Exchange 2013 Help'
 TOCTitle: View mobile device information for users
 ms:assetid: 4fd263c0-ad61-416c-bd68-339bf66605cf
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997974(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997974(v=EXCHG.150)
 ms:contentKeyID: 49345045
 ms.date: 12/09/2016
 ms.reviewer: 

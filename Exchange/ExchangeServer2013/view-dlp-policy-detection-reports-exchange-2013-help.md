@@ -2,7 +2,7 @@
 title: 'View DLP policy detection reports: Exchange 2013 Help'
 TOCTitle: View DLP policy detection reports
 ms:assetid: 5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150520(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150520(v=EXCHG.150)
 ms:contentKeyID: 47560019
 ms.date: 06/13/2017
 ms.reviewer: 
@@ -263,7 +263,7 @@ The following is a complete list of the data fields. All data in the MTL is type
 
 ## For more information
 
-[Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

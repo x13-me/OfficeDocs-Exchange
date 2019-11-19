@@ -101,7 +101,7 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
     - `SyncMailPublicFolders.strings.psd1`
 
-4. Download the source side validation script from https://www.microsoft.com/en-us/download/confirmation.aspx?id=100414
+4. Download the source side validation script from https://www.microsoft.com/download/confirmation.aspx?id=100414
 
 5. Save the scripts to the same location you did for step 2. For example, C:\PFScripts.
 

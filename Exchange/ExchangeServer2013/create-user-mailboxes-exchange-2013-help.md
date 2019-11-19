@@ -2,7 +2,7 @@
 title: 'Create user mailboxes: Exchange 2013 Help'
 TOCTitle: Create user mailboxes
 ms:assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ991919(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ991919(v=EXCHG.150)
 ms:contentKeyID: 51588093
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -99,7 +99,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
 
-   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
 
         In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -125,7 +125,7 @@ This example creates a new user account and mailbox for Pilar Pinilla with the f
 New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)).
+For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -173,7 +173,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
 
-   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
 
         In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -195,9 +195,9 @@ For example, the following command mailbox-enables users who aren't already mail
 Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
 ```
 
-For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/en-us/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/en-us/library/aa996896\(v=exchg.150\)).
+For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/library/aa996896\(v=exchg.150\)).
 
-For more information about pipelining, see [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\)).
+For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
 
 ## How do you know this worked?
 

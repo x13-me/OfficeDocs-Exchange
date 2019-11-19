@@ -2,7 +2,7 @@
 title: 'Manage content filtering: Exchange 2013 Help'
 TOCTitle: Manage content filtering
 ms:assetid: 05bd9d39-81dc-4514-8b75-7be386d5bcad
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995953(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa995953(v=EXCHG.150)
 ms:contentKeyID: 49248674
 ms.date: 12/09/2016
 ms.reviewer: 

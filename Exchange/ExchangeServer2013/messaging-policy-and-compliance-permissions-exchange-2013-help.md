@@ -2,7 +2,7 @@
 title: 'Messaging policy and compliance permissions: Exchange 2013 Help'
 TOCTitle: Messaging policy and compliance permissions
 ms:assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638205(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638205(v=EXCHG.150)
 ms:contentKeyID: 48385692
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -66,7 +66,7 @@ Users who are assigned the View-Only Management role group can view the configur
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Delete mailbox content (using the <a href="https://technet.microsoft.com/en-us/library/dd298173(v=exchg.150)">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
+<td><p>Delete mailbox content (using the <a href="https://technet.microsoft.com/library/dd298173(v=exchg.150)">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Discovery Management</a> <strong>and</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">Mailbox Import Export role</a></p>
 
@@ -105,7 +105,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <td><p><a href="discovery-management-exchange-2013-help.md">Discovery Management</a></p>
 
 > [!NOTE]
-> By default, the Discovery Management role group doesn't have any members. No users, including administrators, have the required permissions to search mailboxes. For more information, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Assign eDiscovery permissions in Exchange</A>.
+> By default, the Discovery Management role group doesn't have any members. No users, including administrators, have the required permissions to search mailboxes. For more information, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Assign eDiscovery permissions in Exchange</A>.
 
 </td>
 </tr>

@@ -2,7 +2,7 @@
 title: Troubleshooting Mailflow Health Set
 TOCTitle: Troubleshooting Mailflow Health Set
 ms:assetid: c09f3e44-1f13-4ad5-a2bf-947c0a3b48fe
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.mailflow(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailflow(v=EXCHG.150)
 ms:contentKeyID: 49720865
 ms.date:
 ms.reviewer:

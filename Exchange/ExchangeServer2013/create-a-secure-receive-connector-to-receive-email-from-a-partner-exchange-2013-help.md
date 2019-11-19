@@ -2,7 +2,7 @@
 title: 'Create a secure Receive connector to receive email from a partner'
 TOCTitle: Create a secure Receive connector to receive email from a partner
 ms:assetid: 06aa692c-7940-4a14-a722-058c47440f85
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673037(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673037(v=EXCHG.150)
 ms:contentKeyID: 49289153
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -52,7 +52,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 6. Click **Finish** to create the connector.
 
-Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
+Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
 
 ## How do you know this worked?
 

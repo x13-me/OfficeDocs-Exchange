@@ -2,7 +2,7 @@
 title: 'Create a database availability group: Exchange 2013 Help'
 TOCTitle: Create a database availability group
 ms:assetid: d6b98299-e203-488b-af73-50753fe152c8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351172(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351172(v=EXCHG.150)
 ms:contentKeyID: 48385609
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -121,10 +121,10 @@ To verify that you've successfully created a DAG, do one of the following:
 
 [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd297934\(v=exchg.150\))
+[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934\(v=exchg.150\))
 
-[New-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351107\(v=exchg.150\))
+[New-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd351107\(v=exchg.150\))
 
-[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd335225\(v=exchg.150\))
+[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/dd335225\(v=exchg.150\))
 
-[Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd298049\(v=exchg.150\))
+[Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/library/dd298049\(v=exchg.150\))

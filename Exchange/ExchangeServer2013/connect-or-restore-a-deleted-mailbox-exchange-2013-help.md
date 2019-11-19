@@ -2,7 +2,7 @@
 title: 'Connect or restore a deleted mailbox: Exchange 2013 Help'
 TOCTitle: Connect or restore a deleted mailbox
 ms:assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863438(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ863438(v=EXCHG.150)
 ms:contentKeyID: 50387719
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -126,7 +126,7 @@ Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printe
 > [!NOTE]
 > You can also use the <CODE>LegacyDN</CODE> or <CODE>MailboxGuid</CODE> values to identify the deleted mailbox.
 
-For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/library/aa997878\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -174,11 +174,11 @@ This example restores Pilar Pinilla's deleted archive mailbox to her current arc
 New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
 
 ## Use the Shell to restore a deleted public folder mailbox
 
-If you hard deleted a public folder mailbox that you now want to restore, and the mailbox is within the Deleted Item Retention limit (see [Configure Deleted Item retention and Recoverable Items quotas](configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md)) you can use the `Connect-Mailbox` cmdlet, followed by the `Update-StoreMailboxState` cmdlet. For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\)) and [Update-StoreMailboxState](https://technet.microsoft.com/en-us/library/jj860462\(v=exchg.150\)).
+If you hard deleted a public folder mailbox that you now want to restore, and the mailbox is within the Deleted Item Retention limit (see [Configure Deleted Item retention and Recoverable Items quotas](configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md)) you can use the `Connect-Mailbox` cmdlet, followed by the `Update-StoreMailboxState` cmdlet. For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/library/aa997878\(v=exchg.150\)) and [Update-StoreMailboxState](https://technet.microsoft.com/library/jj860462\(v=exchg.150\)).
 
 You will need the GUID of the deleted public folder mailbox, as well as the GUID or name of the mailbox database that contained the public folder mailbox. If you don't have this information, you can take the following steps:
 
@@ -230,6 +230,6 @@ To verify that you've successfully restored a deleted public folder mailbox, run
 
 For more information, see:
 
-- [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\))
+- [Connect-Mailbox](https://technet.microsoft.com/library/aa997878\(v=exchg.150\))
 
-- [Update-StoreMailboxState](https://technet.microsoft.com/en-us/library/jj860462\(v=exchg.150\))
+- [Update-StoreMailboxState](https://technet.microsoft.com/library/jj860462\(v=exchg.150\))

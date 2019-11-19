@@ -2,7 +2,7 @@
 title: 'Content conversion: Exchange 2013 Help'
 TOCTitle: Content conversion
 ms:assetid: bc367eb3-0306-4da9-9a84-4341caef77af
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232174(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232174(v=EXCHG.150)
 ms:contentKeyID: 49318585
 ms.date: 12/09/2016
 ms.reviewer: 

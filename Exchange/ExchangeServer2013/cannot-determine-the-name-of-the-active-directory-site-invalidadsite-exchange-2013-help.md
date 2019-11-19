@@ -2,7 +2,7 @@
 title: "Can't determine the name of the Active Directory site"
 TOCTitle: Cannot determine the name of the Active Directory site_InvalidADSite
 ms:assetid: ef96e077-08a0-4108-9f7d-0d61758abcd4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.invalidadsite(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.invalidadsite(v=EXCHG.150)
 ms:contentKeyID: 46629185
 ms.date: 12/09/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Deployment security checklist: Exchange 2013 Help'
 TOCTitle: Deployment security checklist
 ms:assetid: 0cbfad59-f503-48a0-8184-6ca999d89e61
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996026(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996026(v=EXCHG.150)
 ms:contentKeyID: 49289162
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -49,7 +49,7 @@ Before installing Exchange 2013, perform the following procedures.
 <td><p> </p></td>
 </tr>
 <tr class="even">
-<td><p>Run the Microsoft Windows Malicious Software Removal Tool. The Malicious Software Removal Tool is included with Microsoft Update. More information about the tool can be found at <a href="http://go.microsoft.com/fwlink/p/?linkid=73452">Malicious Software Removal Tool</a>.</p></td>
+<td><p>Run the Microsoft Windows Malicious Software Removal Tool. The Malicious Software Removal Tool is included with Microsoft Update. More information about the tool can be found at <a href="https://go.microsoft.com/fwlink/p/?linkid=73452">Malicious Software Removal Tool</a>.</p></td>
 <td><p> </p></td>
 </tr>
 <tr class="odd">

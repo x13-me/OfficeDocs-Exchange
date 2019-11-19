@@ -116,7 +116,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 1. Optional: Verify connectivity.
 
-   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [http://aka.ms/hybridconnectivity](https://aka.ms/hybridconnectivity).
+   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [https://aka.ms/hybridconnectivity](https://aka.ms/hybridconnectivity).
 
    2. Open the Exchange Management Shell and change directory to the location of the script.
 
@@ -159,7 +159,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 4. Wait while the HCW gathers information and configuration about your environments. When it's completed, click **Next**.
 
-5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer](https://blogs.technet.microsoft.com/exchange/2018/06/18/hybrid-organization-configuration-transfer/). Click **Next**.
+5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Hybrid-Organization-Configuration-Transfer/ba-p/607944). Click **Next**.
 
 6. Follow the steps to enable federation. Click **Next**.
 

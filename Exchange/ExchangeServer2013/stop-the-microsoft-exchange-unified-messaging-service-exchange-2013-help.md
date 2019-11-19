@@ -2,7 +2,7 @@
 title: 'Stop the Microsoft Exchange Unified Messaging service: Exchange 2013 Help'
 TOCTitle: Stop the Microsoft Exchange Unified Messaging service
 ms:assetid: 64fa5535-8150-45c6-82e6-d2346892a031
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998595(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998595(v=EXCHG.150)
 ms:contentKeyID: 49315438
 ms.date: 12/09/2016
 ms.reviewer: 

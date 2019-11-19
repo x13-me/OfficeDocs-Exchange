@@ -2,7 +2,7 @@
 title: Time to Upgrade from Exchange 2003
 TOCTitle: Time to Upgrade from Exchange 2003
 ms:assetid: aabe635d-6dba-431c-a9ba-5aa2a4fd7a2d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn201758(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn201758(v=EXCHG.150)
 ms:contentKeyID: 53892776
 ms.date: 07/29/2013
 ms.reviewer:
@@ -21,7 +21,7 @@ April 2014 will be here before you know it, so now is the time to start planning
 To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
 
 > [!NOTE]
-> For more information about specific versions of Exchange 2003, see the <A href="http://go.microsoft.com/fwlink/p/?linkid=217503">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
+> For more information about specific versions of Exchange 2003, see the <A href="https://go.microsoft.com/fwlink/p/?linkid=217503">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
 
 ## What's new in Exchange 2013
 
@@ -53,7 +53,7 @@ Before we get into the planning steps for your upgrade to Exchange 2013, let's f
 
 - Exchange 2013 introduces the concept of batch moves, which allows the ability to move multiple mailboxes in large batches. The new move architecture is built on top of MRS (Mailbox Replication service) moves with enhanced management capability.
 
-These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\)).
+These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\)).
 
 ## Planning your upgrade
 
@@ -61,17 +61,17 @@ Now that we've talked about the new features in Exchange 2013, it's time to star
 
 For detailed information about how to develop a strong planning strategy, see:
 
-- [Planning and Deployment](https://technet.microsoft.com/en-us/library/aa998636\(v=exchg.150\))
+- [Planning and Deployment](https://technet.microsoft.com/library/aa998636\(v=exchg.150\))
 
-- [Active Directory](https://technet.microsoft.com/en-us/library/bb123715\(v=exchg.150\))
+- [Active Directory](https://technet.microsoft.com/library/bb123715\(v=exchg.150\))
 
-- [Exchange 2013 Storage Configuration Options](https://technet.microsoft.com/en-us/library/ee832792\(v=exchg.150\))
+- [Exchange 2013 Storage Configuration Options](https://technet.microsoft.com/library/ee832792\(v=exchg.150\))
 
 Before you can upgrade to Exchange 2013, your organization must meet certain requirements. Don't worry, we've automated the installation of some of the Windows prerequisites, so all you have to do is select a check box in the Setup wizard and it will be completed for you. For more information about Exchange 2013 requirements, see the following resources:
 
-- [Exchange 2013 System Requirements](https://technet.microsoft.com/en-us/library/aa996719\(v=exchg.150\))
+- [Exchange 2013 System Requirements](https://technet.microsoft.com/library/aa996719\(v=exchg.150\))
 
-- [Exchange 2013 Prerequisites](https://technet.microsoft.com/en-us/library/bb691354\(v=exchg.150\))
+- [Exchange 2013 Prerequisites](https://technet.microsoft.com/library/bb691354\(v=exchg.150\))
 
 ## Upgrading from Exchange 2003 to Exchange 2013
 
@@ -87,7 +87,7 @@ To help simplify your deployment, whether you're moving your organization to the
 
 Have you heard of Microsoft Office 365 yet? Office 365 delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. Office 365 combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
 
-To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://technet.microsoft.com/en-us/library/jj218681\(v=exchg.150\)). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
+To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://technet.microsoft.com/library/jj218681\(v=exchg.150\)). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
 
 ## Upgrade to Exchange 2013 on-premises
 

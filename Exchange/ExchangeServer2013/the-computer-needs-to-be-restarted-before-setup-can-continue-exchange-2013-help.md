@@ -2,7 +2,7 @@
 title: 'Computer must be restarted before Setup can continue'
 TOCTitle: The computer needs to be restarted before Setup can continue
 ms:assetid: d5c73280-4e54-473a-b328-9673af11e2c0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.rebootpending(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.rebootpending(v=EXCHG.150)
 ms:contentKeyID: 46629129
 ms.date: 12/09/2016
 ms.reviewer: 

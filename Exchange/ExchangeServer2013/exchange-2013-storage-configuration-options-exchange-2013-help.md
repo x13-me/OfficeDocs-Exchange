@@ -2,7 +2,7 @@
 title: 'Exchange 2013 storage configuration options: Exchange 2013 Help'
 TOCTitle: Exchange 2013 storage configuration options
 ms:assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee832792(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee832792(v=EXCHG.150)
 ms:contentKeyID: 49685283
 ms.date: 12/15/2016
 ms.reviewer: 
@@ -674,7 +674,7 @@ The following table provides guidance on volume configurations.
 <td><p>Windows BitLocker (volume encryption)</p></td>
 <td><p>Windows BitLocker is a data protection feature in Windows Server 2008. BitLocker protects against data theft or exposure on computers that are lost or stolen, and it offers more secure data deletion when computers are decommissioned.</p></td>
 <td><p>Supported: All Exchange database and log files.</p></td>
-<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
+<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
 <p>For more information about Windows 7 BitLocker encryption, see <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -695,13 +695,13 @@ The following table provides guidance on volume configurations.
 </tr>
 <tr class="even">
 <td><p>Storage Spaces</p></td>
-<td><p>Storage Spaces is a new storage solution that delivers virtualization capabilities for Windows Server 2012. Storage Spaces allow you to organize physical disks into storage pools, which can be easily expanded by simply adding disks. These disks can be connected either through USB, SATA or SAS. It also utilizes virtual disks (spaces), which behave just like physical disks, with associated powerful capabilities such as thin provisioning, as well as resiliency to failures of underlying physical media. For more information on Storage Spaces, see <a href="https://technet.microsoft.com/en-us/library/hh831739.aspx">Storage Spaces Overview</a>.</p></td>
+<td><p>Storage Spaces is a new storage solution that delivers virtualization capabilities for Windows Server 2012. Storage Spaces allow you to organize physical disks into storage pools, which can be easily expanded by simply adding disks. These disks can be connected either through USB, SATA or SAS. It also utilizes virtual disks (spaces), which behave just like physical disks, with associated powerful capabilities such as thin provisioning, as well as resiliency to failures of underlying physical media. For more information on Storage Spaces, see <a href="https://technet.microsoft.com/library/hh831739.aspx">Storage Spaces Overview</a>.</p></td>
 <td><p>Supported. Same restrictions as for physical disk types outlined in this topic.</p></td>
 <td><p>Supported. Same restrictions as for physical disk types outlined in this topic.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Resilient File System (ReFS)</p></td>
-<td><p>ReFS is a newly engineered file system for Windows Server 2012 that is built on the foundations of NTFS. ReFS maintains high degree of compatibility with NTFS while providing enhanced data verification and auto-correction techniques as well as an integrated end-to-end resiliency to corruptions especially when used in conjunction with the storage spaces feature. For more information on ReFS, see <a href="https://technet.microsoft.com/en-us/library/hh831724.aspx">Resilient File System Overview</a>.</p></td>
+<td><p>ReFS is a newly engineered file system for Windows Server 2012 that is built on the foundations of NTFS. ReFS maintains high degree of compatibility with NTFS while providing enhanced data verification and auto-correction techniques as well as an integrated end-to-end resiliency to corruptions especially when used in conjunction with the storage spaces feature. For more information on ReFS, see <a href="https://technet.microsoft.com/library/hh831724.aspx">Resilient File System Overview</a>.</p></td>
 <td><p>Supported for volumes containing Exchange database files, log files and content indexing files. If deploying on Windows Server 2012, ensure the following hotfixes are installed on Windows Server 2012:</p>
 <ul>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717874">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>

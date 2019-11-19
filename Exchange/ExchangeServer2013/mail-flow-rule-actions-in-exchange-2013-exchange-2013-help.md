@@ -2,7 +2,7 @@
 title: 'Transport rule actions in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Transport rule actions
 ms:assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998315(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998315(v=EXCHG.150)
 ms:contentKeyID: 49361077
 ms.date: 05/03/2017
 ms.reviewer: 
@@ -24,7 +24,7 @@ For more information about transport rules in Exchange Server 2013, see [Transpo
 
 For more information about conditions and exceptions in transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
-For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Transport rule actions in Exchange Online](https://technet.microsoft.com/en-us/library/jj919237\(v=exchg.150\)) or [Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj920117\(v=exchg.150\)).
+For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Transport rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237\(v=exchg.150\)) or [Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/library/jj920117\(v=exchg.150\)).
 
 ## Actions for transport rules on Mailbox servers
 
@@ -59,7 +59,7 @@ The actions that are available in transport rules on Mailbox servers are describ
 <p><strong>Forward the message for approval</strong> &gt; <strong>to these people</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">Common message approval scenarios</a>. You can't use a distribution group as a moderator.</p></td>
+<td><p>Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">Common message approval scenarios</a>. You can't use a distribution group as a moderator.</p></td>
 <td><p>Exchange 2010 or later</p></td>
 </tr>
 <tr class="even">
@@ -627,8 +627,8 @@ The property values that are used for actions in transport rules are described i
 
 [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Transport rule actions in Exchange Online](https://technet.microsoft.com/en-us/library/jj919237\(v=exchg.150\)) for Exchange Online
+[Transport rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237\(v=exchg.150\)) for Exchange Online
 
-[Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj920117\(v=exchg.150\)) for Exchange Online Protection
+[Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/library/jj920117\(v=exchg.150\)) for Exchange Online Protection
 
-[Organization-wide message disclaimers, signatures, footers, or headers in Office 365](https://technet.microsoft.com/en-us/library/dn600323\(v=exchg.150\))
+[Organization-wide message disclaimers, signatures, footers, or headers in Office 365](https://technet.microsoft.com/library/dn600323\(v=exchg.150\))

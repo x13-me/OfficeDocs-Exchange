@@ -2,7 +2,7 @@
 title: 'Disable or re-enable federated sharing for your Exchange organization'
 TOCTitle: Disable or Re-enable federated sharing for your Exchange organization
 ms:assetid: d36490d8-0268-47b9-a6d4-e56427f1b02e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657497(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657497(v=EXCHG.150)
 ms:contentKeyID: 49289421
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -52,7 +52,7 @@ This example enables the OrgID and re-enables federation and federated sharing f
 Set-FederatedOrganizationIdentifier -Enabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd351037\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/library/dd351037\(v=exchg.150\)).
 
 ## How do you know this worked?
 

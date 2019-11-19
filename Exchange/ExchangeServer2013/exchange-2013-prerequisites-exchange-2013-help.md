@@ -2,7 +2,7 @@
 title: 'Exchange 2013 prerequisites: Exchange 2013 Help'
 TOCTitle: Exchange 2013 prerequisites
 ms:assetid: e21cf744-7813-48b3-9293-5cecd89a6c25
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691354(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb691354(v=EXCHG.150)
 ms:contentKeyID: 48385640
 ms.date: 03/20/2017
 ms.reviewer:
@@ -103,9 +103,9 @@ After you've installed the operating system roles and features, install the foll
 
 3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)
 
   > [!NOTE]
   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
@@ -136,7 +136,7 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
 3. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
   > [!NOTE]
-  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Windows Server 2008 R2 SP1 prerequisites
 
@@ -179,12 +179,12 @@ After you've installed the operating system roles and features, install the foll
 
 3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)
 
    > [!NOTE]
-   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
 6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
@@ -226,10 +226,10 @@ After you've installed the operating system roles and features, install the foll
 
 3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
    > [!NOTE]
-   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Windows 7 prerequisites (admin tools only)
 

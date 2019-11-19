@@ -2,7 +2,7 @@
 title: 'Test Outlook Anywhere connectivity: Exchange 2013 Help'
 TOCTitle: Test Outlook Anywhere connectivity
 ms:assetid: 0dc5b68f-2316-446a-84c9-5f1c50dc3776
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633453(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee633453(v=EXCHG.150)
 ms:contentKeyID: 50396598
 ms.date: 12/09/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Run the Exchange UM Troubleshooting Tool on Windows 7 or Windows 8: Exchange 2013 Help'
 TOCTitle: Run the Exchange UM Troubleshooting Tool on Windows 7 or Windows 8
 ms:assetid: 98d6869d-ee4a-4088-849d-ef75b0f5d932
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff851872(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff851872(v=EXCHG.150)
 ms:contentKeyID: 55129212
 ms.date: 12/09/2016
 ms.reviewer:
@@ -26,11 +26,11 @@ The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Sh
 
 - Make sure your Exchange 2010 or Exchange 2013 organization meets the following requirements:
 
-  - A UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+  - A UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
-  - A UM mailbox policy has been created. For detailed steps, see [Create a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy).
+  - A UM mailbox policy has been created. For detailed steps, see [Create a UM mailbox policy](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy).
 
-  - A UM IP gateway has been created. For detailed steps, see [Create a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
+  - A UM IP gateway has been created. For detailed steps, see [Create a UM IP gateway](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
 
   - An Exchange 2010 UM server has been added to UM dial plan. If you are using Exchange 2013 with Lync Server, add all Client Access and Mailbox servers to the SIP URI dial plans. For detailed steps, see [Add a UM Server to a Dial Plan](https://go.microsoft.com/fwlink/p/?linkid=313051) or [Add Mailbox and Client Access servers to a SIP URI dial plan](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
 

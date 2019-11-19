@@ -2,7 +2,7 @@
 title: 'Use an Exchange 2010 or 2007 Edge Transport server in Exchange 2013'
 TOCTitle: Use an Exchange 2010 or 2007 Edge Transport server in Exchange 2013
 ms:assetid: ce99b4bd-868c-4767-9009-e22c17ac0ac7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150569(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150569(v=EXCHG.150)
 ms:contentKeyID: 47560104
 ms.date: 12/09/2016
 ms.reviewer: 

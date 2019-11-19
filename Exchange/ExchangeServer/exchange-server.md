@@ -28,7 +28,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/sign-up-blue.svg" alt="Sign up" />
+                            <img src="https://docs.microsoft.com/office/media/icons/sign-up-blue.svg" alt="Sign up" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,7 +46,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/download-blue.svg" alt="Download" />
+                            <img src="https://docs.microsoft.com/office/media/icons/download-blue.svg" alt="Download" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -64,7 +64,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success.svg" alt="Success" />
+                            <img src="https://docs.microsoft.com/office/media/icons/success.svg" alt="Success" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +82,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" />
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -100,7 +100,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -118,7 +118,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/globe-internet.svg" alt="Community" />
+                            <img src="https://docs.microsoft.com/office/media/icons/globe-internet.svg" alt="Community" />
                         </div>
                     </div>
                     <div class="cardText">

@@ -2,7 +2,7 @@
 title: 'Exchange workload management: Exchange 2013 Help'
 TOCTitle: Exchange workload management
 ms:assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150503(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150503(v=EXCHG.150)
 ms:contentKeyID: 47559972
 ms.date: 05/13/2016
 ms.reviewer: 
@@ -67,19 +67,19 @@ You manage throttling settings with the following cmdlets, which were introduced
 
 Manage throttling policies
 
-  - [Get-ThrottlingPolicy](https://technet.microsoft.com/en-us/library/dd351264\(v=exchg.150\))
+  - [Get-ThrottlingPolicy](https://technet.microsoft.com/library/dd351264\(v=exchg.150\))
 
-  - [New-ThrottlingPolicy](https://technet.microsoft.com/en-us/library/dd351045\(v=exchg.150\))
+  - [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\))
 
-  - [Remove-ThrottlingPolicy](https://technet.microsoft.com/en-us/library/dd351178\(v=exchg.150\))
+  - [Remove-ThrottlingPolicy](https://technet.microsoft.com/library/dd351178\(v=exchg.150\))
 
-  - [Set-ThrottlingPolicy](https://technet.microsoft.com/en-us/library/dd298094\(v=exchg.150\))
+  - [Set-ThrottlingPolicy](https://technet.microsoft.com/library/dd298094\(v=exchg.150\))
 
 Assign throttling policies
 
-  - [Get-ThrottlingPolicyAssociation](https://technet.microsoft.com/en-us/library/ff459241\(v=exchg.150\))
+  - [Get-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459241\(v=exchg.150\))
 
-  - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/en-us/library/ff459231\(v=exchg.150\))
+  - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231\(v=exchg.150\))
 
 > [!NOTE]
 > The <STRONG>&#42;-ResourcePolicy</STRONG>, <STRONG>&#42;-WorkloadManagementPolicy</STRONG> and <STRONG>&#42;-WorkloadPolicy</STRONG> system workload management cmdlets have been deprecated. System workload management settings should be customized only under the direction of Microsoft Customer Service and Support.

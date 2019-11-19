@@ -2,7 +2,7 @@
 title: 'Bypass a user account from mailbox audit logging: Exchange 2013 Help'
 TOCTitle: Bypass a user account from mailbox audit logging
 ms:assetid: 98a87071-fe31-4b67-beb8-a73799e54df2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461934(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff461934(v=EXCHG.150)
 ms:contentKeyID: 49300631
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -42,12 +42,12 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## Use the Shell to enable or disable mailbox audit logging bypass for an account
 
-For an example of how to enable mailbox audit logging bypass for an account, see [Example 1](https://technet.microsoft.com/en-us/ff696758\(exchg.150\)#examples) in [Set-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696758\(v=exchg.150\)).
+For an example of how to enable mailbox audit logging bypass for an account, see [Example 1](https://technet.microsoft.com/ff696758\(exchg.150\)#examples) in [Set-MailboxAuditBypassAssociation](https://technet.microsoft.com/library/ff696758\(v=exchg.150\)).
 
-For an example of how to disable mailbox audit logging bypass for an account, see [Example 2](https://technet.microsoft.com/en-us/ff696758\(exchg.150\)#examples) in [Set-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696758\(v=exchg.150\)).
+For an example of how to disable mailbox audit logging bypass for an account, see [Example 2](https://technet.microsoft.com/ff696758\(exchg.150\)#examples) in [Set-MailboxAuditBypassAssociation](https://technet.microsoft.com/library/ff696758\(v=exchg.150\)).
 
 ## How do you know this worked?
 
-After you have bypassed a user account from mailbox audit logging, you can check the bypass settings by running the [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696741\(v=exchg.150\)) cmdlet.
+After you have bypassed a user account from mailbox audit logging, you can check the bypass settings by running the [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/library/ff696741\(v=exchg.150\)) cmdlet.
 
-For examples of how to check mailbox audit bypass associations, see [Examples](https://technet.microsoft.com/en-us/ff696741\(exchg.150\)#examples) in [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696741\(v=exchg.150\)).
+For examples of how to check mailbox audit bypass associations, see [Examples](https://technet.microsoft.com/ff696741\(exchg.150\)#examples) in [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/library/ff696741\(v=exchg.150\)).

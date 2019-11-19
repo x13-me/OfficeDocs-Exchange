@@ -2,7 +2,7 @@
 title: 'Availability service in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Availability service in Exchange 2013
 ms:assetid: 9722dea2-2bf8-437c-85c0-3ab65b8a07b9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232134(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232134(v=EXCHG.150)
 ms:contentKeyID: 51492808
 ms.date: 12/09/2016
 ms.reviewer: 

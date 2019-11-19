@@ -2,7 +2,7 @@
 title: 'Create a sharing policy: Exchange 2013 Help'
 TOCTitle: Create a sharing policy
 ms:assetid: cae8cab0-6265-448b-8add-5202cdb20678
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657494(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657494(v=EXCHG.150)
 ms:contentKeyID: 49289410
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -135,11 +135,11 @@ You can edit the default sharing policy to allow all of your users to share full
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\))
+- [New-SharingPolicy](https://technet.microsoft.com/library/dd298186\(v=exchg.150\))
 
-- [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\))
+- [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\))
 
-- [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\))
+- [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\))
 
 ## How do you know this worked?
 

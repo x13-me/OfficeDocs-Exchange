@@ -2,7 +2,7 @@
 title: 'Import custom prompts from Exchange 2007 to Exchange 2013: Exchange 2013 Help'
 TOCTitle: Import custom prompts from Exchange 2007 to Exchange 2013
 ms:assetid: 70c0b0bc-c0de-4e3c-8144-1fe59f86ebf4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg309147(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Gg309147(v=EXCHG.150)
 ms:contentKeyID: 53382779
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -33,7 +33,7 @@ By default, the MigrateUMCustomPrompts.ps1 script is located in the \<Program Fi
 
 For additional management tasks related to UM dial plans, see [UM dial plan procedures](um-dial-plan-procedures-exchange-2013-help.md).
 
-For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
+For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
 
 ## What do you need to know before you begin?
 
@@ -41,11 +41,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" and "UM auto attendants" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-- Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+- Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
-- Before you perform these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant).
+- Before you perform these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant).
 
-- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

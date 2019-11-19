@@ -2,7 +2,7 @@
 title: 'Safelist Aggregation: Exchange 2013 Help'
 TOCTitle: Safelist Aggregation
 ms:assetid: f05430a0-0405-4b65-a18d-18c9e86a13c4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125168(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125168(v=EXCHG.150)
 ms:contentKeyID: 49248692
 ms.date: 07/14/2016
 ms.reviewer: 

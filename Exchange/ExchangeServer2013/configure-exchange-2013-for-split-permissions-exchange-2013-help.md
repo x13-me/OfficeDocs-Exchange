@@ -2,7 +2,7 @@
 title: 'Configure Exchange 2013 for split permissions: Exchange 2013 Help'
 TOCTitle: Configure Exchange 2013 for split permissions
 ms:assetid: 8c74f893-a6f3-4869-8571-3bc0f662cc87
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638155(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638155(v=EXCHG.150)
 ms:contentKeyID: 49289342
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -170,17 +170,17 @@ To configure RBAC split permissions, do the following:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://technet.microsoft.com/en-us/library/dd638181\(v=exchg.150\))
+- [New-RoleGroup](https://technet.microsoft.com/library/dd638181\(v=exchg.150\))
 
-- [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\))
+- [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193\(v=exchg.150\))
 
-- [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207\(v=exchg.150\))
+- [Add-RoleGroupMember](https://technet.microsoft.com/library/dd638207\(v=exchg.150\))
 
-- [Set-RoleGroup](https://technet.microsoft.com/en-us/library/dd638182\(v=exchg.150\))
+- [Set-RoleGroup](https://technet.microsoft.com/library/dd638182\(v=exchg.150\))
 
-- [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\))
+- [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\))
 
-- [Remove-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351205\(v=exchg.150\))
+- [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351205\(v=exchg.150\))
 
 ## Switch to Active Directory split permissions
 

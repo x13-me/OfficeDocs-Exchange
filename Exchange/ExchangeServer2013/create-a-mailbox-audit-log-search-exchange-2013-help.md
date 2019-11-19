@@ -2,7 +2,7 @@
 title: 'Create a mailbox audit log search: Exchange 2013 Help'
 TOCTitle: Create a mailbox audit log search
 ms:assetid: 48ba22cf-b1f2-4dbc-98fc-fed22d97db14
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461929(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff461929(v=EXCHG.150)
 ms:contentKeyID: 49300496
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -70,4 +70,4 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## Use the Shell to create a mailbox audit log search
 
-For an example of how to use the Shell to create a mailbox audit log search, see [Example 1](https://technet.microsoft.com/en-us/95365cab-bbb2-4a64-8e8f-1c89fa9e0352\(exchg.150\)#example1) in **New-MailboxAuditLogSearch**.
+For an example of how to use the Shell to create a mailbox audit log search, see [Example 1](https://technet.microsoft.com/95365cab-bbb2-4a64-8e8f-1c89fa9e0352\(exchg.150\)#example1) in **New-MailboxAuditLogSearch**.
