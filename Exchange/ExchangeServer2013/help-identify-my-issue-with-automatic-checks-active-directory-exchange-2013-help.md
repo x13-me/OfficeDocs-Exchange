@@ -2,7 +2,7 @@
 title: 'Identify issue with Automatic Checks - Active Directory'
 TOCTitle: Help Identify My Issue with Automatic Checks - Active Directory
 ms:assetid: af08e7a1-775a-4e56-a6fe-4ffc10460514
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793979(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn793979(v=EXCHG.150)
 ms:contentKeyID: 62632393
 ms.date: 12/09/2016
 ms.reviewer: 

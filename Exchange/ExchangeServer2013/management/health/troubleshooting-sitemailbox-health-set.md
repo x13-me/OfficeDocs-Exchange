@@ -2,7 +2,7 @@
 title: Troubleshooting SiteMailbox Health Set
 TOCTitle: Troubleshooting SiteMailbox Health Set
 ms:assetid: ac00985c-c9a5-44bf-b152-4b99d8ae24ed
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.sitemailbox(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.sitemailbox(v=EXCHG.150)
 ms:contentKeyID: 49720849
 ms.date: 
 ms.reviewer: 
@@ -30,9 +30,9 @@ The SiteMailbox monitoring system receives passive sync results from the backgro
 
 - You open the Outlook Web App Options window, and then you click the **Start Sync** button on the **Sync Status** page for the selected site mailbox
 
-For more information about the Update-SiteMailbox cmdlet, see: [Update-SiteMailbox](https://technet.microsoft.com/en-us/library/jj218690\(v=exchg.150\))
+For more information about the Update-SiteMailbox cmdlet, see: [Update-SiteMailbox](https://technet.microsoft.com/library/jj218690\(v=exchg.150\))
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -115,6 +115,6 @@ To resolve this issue, review the Windows Application event log on the server th
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))

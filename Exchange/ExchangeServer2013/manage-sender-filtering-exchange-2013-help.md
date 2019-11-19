@@ -2,7 +2,7 @@
 title: 'Manage sender filtering: Exchange 2013 Help'
 TOCTitle: Manage sender filtering
 ms:assetid: a7f4b3e1-2970-45ad-911e-a9f46d880d3d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124087(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124087(v=EXCHG.150)
 ms:contentKeyID: 49287406
 ms.date: 12/09/2016
 ms.reviewer: 

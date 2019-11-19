@@ -2,7 +2,7 @@
 title: 'Export messages from queues: Exchange 2013 Help'
 TOCTitle: Export messages from queues
 ms:assetid: 688b342c-f380-4fe0-afce-7e38cf490627
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998625(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998625(v=EXCHG.150)
 ms:contentKeyID: 50646234
 ms.date: 12/09/2016
 ms.reviewer: 

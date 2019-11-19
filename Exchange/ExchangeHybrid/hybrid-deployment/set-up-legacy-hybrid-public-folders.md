@@ -67,9 +67,9 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 - To access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or a later version.
 
-  - To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/en-us/download/details.aspx?id=35702).
+  - To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-  - To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/en-us/download/details.aspx?id=35718).
+  - To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
 
 - Outlook 2016 for Mac (and earlier versions) and Outlook for Mac for Office 365 are not supported for cross-premises legacy public folders. Users must be in the same location as the public folders to access them with Outlook for Mac or Outlook for Mac for Office 365. Additionally, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
 
@@ -77,10 +77,10 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 ## Step 2: Make remote public folders discoverable
 
-1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/en-us/library/bb124778%28v=exchg.141%29.aspx).
+1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/library/bb124778%28v=exchg.141%29.aspx).
 
     > [!NOTE]
-    > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/en-us/library/ff625247%28v=exchg.141%29.aspx).
+    > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247%28v=exchg.141%29.aspx).
 
 2. Create an empty mailbox database on each public folder server.
 
@@ -113,7 +113,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 ## Step 3: Download the scripts
 
-1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/en-us/download/details.aspx?id=46381):
+1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
    - `Sync-MailPublicFolders.ps1`
 
@@ -151,7 +151,7 @@ Run the following command in **Windows PowerShell**:
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 
-You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/en-us/library/jj151771.aspx). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
+You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
 
 > [!IMPORTANT]
 > An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2013 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.

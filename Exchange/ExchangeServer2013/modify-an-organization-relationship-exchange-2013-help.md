@@ -2,7 +2,7 @@
 title: 'Modify an organization relationship: Exchange 2013 Help'
 TOCTitle: Modify an organization relationship
 ms:assetid: 3713ef83-f01a-41bb-b127-62ca242dd7a4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673055(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673055(v=EXCHG.150)
 ms:contentKeyID: 49289228
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -100,7 +100,7 @@ For additional management tasks related to federation, see [Federation procedure
   Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332343\(v=exchg.150\)) and [Set-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332326\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/library/ee332343\(v=exchg.150\)) and [Set-OrganizationRelationship](https://technet.microsoft.com/library/ee332326\(v=exchg.150\)).
 
 ## How do you know this worked?
 

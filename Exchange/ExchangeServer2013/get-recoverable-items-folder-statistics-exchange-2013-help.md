@@ -2,7 +2,7 @@
 title: 'Get Recoverable Items folder statistics: Exchange 2013 Help'
 TOCTitle: Get Recoverable Items folder statistics
 ms:assetid: dee77958-ee87-4908-85e4-ad053bacd8b0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff714343(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff714343(v=EXCHG.150)
 ms:contentKeyID: 51439484
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -26,7 +26,7 @@ To learn more, see the following topics:
 
 - [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md)
 
-- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds)
+- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ## What do you need to know before you begin?
 
@@ -54,7 +54,7 @@ This example gets folder statistics for Soumya Singhi's Recoverable Items folder
 Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)).
 
 ## Get Recoverable Items folder statistics for all mailboxes on Litigation Hold
 
@@ -64,7 +64,7 @@ This example retrieves a list of all mailboxes placed on Litigation Hold and ret
 Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)).
 
 ## Get Recoverable Items quota for a mailbox
 

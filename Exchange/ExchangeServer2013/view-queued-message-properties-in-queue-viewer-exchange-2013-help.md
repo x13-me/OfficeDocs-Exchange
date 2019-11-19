@@ -2,7 +2,7 @@
 title: 'View queued message properties in Queue Viewer: Exchange 2013 Help'
 TOCTitle: View queued message properties in Queue Viewer
 ms:assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123934(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123934(v=EXCHG.150)
 ms:contentKeyID: 49286850
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -117,4 +117,4 @@ You use the **Get-Message** cmdlet to view the properties of a message that is c
 Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
 ```
 
-For detailed syntax and parameter information, see [Get-Message](https://technet.microsoft.com/en-us/library/bb124738\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-Message](https://technet.microsoft.com/library/bb124738\(v=exchg.150\)).

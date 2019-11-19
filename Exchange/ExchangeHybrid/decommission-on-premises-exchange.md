@@ -57,7 +57,7 @@ Use the following table to decide what type of migration works for your organiza
 
 Customers with a hybrid configuration often find after a period of time that all of their mailboxes have been moved to Exchange Online. At this point, they may decide to remove the Exchange servers from on-premises. However, they discover that they can no longer manage their cloud mailboxes.
 
-When directory synchronization is enabled for a tenant and a user is synchronized from on-premises, most of the attributes cannot be managed from Exchange Online and must be managed from on-premises. This is not due to the hybrid configuration, but it occurs because of directory synchronization. In addition, even if you have directory synchronization in place without running the Hybrid Configuration Wizard, you still cannot manage most of the recipient tasks from the cloud. For more information, see this [TechNet blog](https://blogs.technet.com/b/exchange/archive/2012/12/05/decommissioning-your-exchange-2010-servers-in-a-hybrid-deployment.aspx).
+When directory synchronization is enabled for a tenant and a user is synchronized from on-premises, most of the attributes cannot be managed from Exchange Online and must be managed from on-premises. This is not due to the hybrid configuration, but it occurs because of directory synchronization. In addition, even if you have directory synchronization in place without running the Hybrid Configuration Wizard, you still cannot manage most of the recipient tasks from the cloud. For more information, see this [blog article](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Decommissioning-your-Exchange-2010-servers-in-a-Hybrid/ba-p/597185).
 
 ## Can third-party management tools be used?
 
@@ -83,7 +83,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 1. Run `Get-OrganizationConfig | Format-List PublicFoldersEnabled` and ensure that it is not set to Remote. If it is set to Remote, and the public folders are something you want to continue to access, you would need to migrate them to Exchange Online. For more information, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
 
-2. Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/en-us/library/hh852557.aspx).
+2. Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/library/hh852557.aspx).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity behavior.
@@ -150,7 +150,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
      **Note**: The _Identity_ parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors.
 
-7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange admin center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
+7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange admin center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/library/dn144760.aspx).
 
 8. You can now safely uninstall Exchange from the on-premises servers.
 
@@ -178,7 +178,7 @@ The graphic below describes the actual end state:
    > [!IMPORTANT]
    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.
 
-2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/en-us/library/hh852557.aspx).
+2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/library/hh852557.aspx).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.

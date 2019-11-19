@@ -2,7 +2,7 @@
 title: 'Unsupported characters for Exchange 2013 object names: Exchange 2013 Help'
 TOCTitle: Unsupported characters for Exchange 2013 object names
 ms:assetid: 76fa4e23-f0f6-473b-9227-70ded907578f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169553(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn169553(v=EXCHG.150)
 ms:contentKeyID: 53875525
 ms.date: 06/04/2016
 ms.reviewer: 

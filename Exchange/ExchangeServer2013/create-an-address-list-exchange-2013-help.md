@@ -2,7 +2,7 @@
 title: 'Create an address list: Exchange 2013 Help'
 TOCTitle: Create an address list
 ms:assetid: e86ba1b7-c41c-4050-bc29-13996cf53c59
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125036(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125036(v=EXCHG.150)
 ms:contentKeyID: 49289446
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -74,4 +74,4 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/en-us/library/aa996912\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/aa996912\(v=exchg.150\)).

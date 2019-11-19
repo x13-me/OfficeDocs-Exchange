@@ -2,7 +2,7 @@
 title: 'Using a Microsoft Azure VM as a DAG witness server: Exchange 2013 Help'
 TOCTitle: Using a Microsoft Azure VM as a DAG witness server
 ms:assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn903504(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn903504(v=EXCHG.150)
 ms:contentKeyID: 63886642
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -200,7 +200,7 @@ Save the updated configuration settings file.
 
 ## Import virtual network configuration settings
 
-The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Import a Network Configuration File](https://msdn.microsoft.com/en-us/library/azure/jj156213.aspx). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
+The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Create a virtual network (classic) by using the Azure portal](https://docs.microsoft.com/azure/virtual-network/virtual-networks-create-vnet-classic-pportal). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
 
 ## Record the Azure gateway IP address and pre-shared keys
 
@@ -208,9 +208,9 @@ After the new network configuration settings are imported, the virtual network d
 
 You also will need to get the pre-shared IPsec/IKE keys for each tunnel that was created. You will use these keys along with the Azure gateway IP address to configure your on-premises VPN devices.
 
-You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://msdn.microsoft.com/en-us/library/azure/jj156055.aspx).
+You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.0.0).
 
-Use the [Get-AzureVNetGatewayKey](https://msdn.microsoft.com/en-us/library/azure/dn495198.aspx) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
+Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewayke) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
 ```powershell
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt
@@ -263,7 +263,7 @@ You can also verify connectivity by viewing the virtual network dashboard in the
 
 You need to create a minimum of two virtual machines in Microsoft Azure for this deployment: a domain controller and a file server that will serve as the DAG witness.
 
-1. Create virtual machines for your domain controller and your file server using the instructions in [Create a Virtual Machine Running Windows](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial/). Make sure that you select the virtual network you created for **REGION/AFFINITY GROUP/VIRTUAL NETWORK** when specifying the settings of your virtual machines.
+1. Create virtual machines for your domain controller and your file server using the instructions in [Quickstart: Create a Windows virtual machine in the Azure portal](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal). Make sure that you select the virtual network you created for **REGION/AFFINITY GROUP/VIRTUAL NETWORK** when specifying the settings of your virtual machines.
 
 2. Specify preferred IP addresses for both the domain controller and the file server using Azure PowerShell. When you specify a preferred IP address for a VM, it needs to be updated, which will require restarting the VM. The following example sets the IP addresses for Azure-DC and Azure-FSW to 10.0.0.10 and 10.0.0.11 respectively.
 
@@ -280,7 +280,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-    1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/en-us/library/ee662309.aspx) cmdlet.
+    1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/library/ee662309.aspx) cmdlet.
 
     2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 
@@ -310,7 +310,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd297934\(v=exchg.150\).aspx)
+[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934\(v=exchg.150\).aspx)
 
 ## Checkpoint: Validate the DAG file share witness
 

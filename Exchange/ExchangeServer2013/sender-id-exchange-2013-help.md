@@ -2,7 +2,7 @@
 title: 'Sender ID: Exchange 2013 Help'
 TOCTitle: Sender ID
 ms:assetid: 0f628f83-df8c-43fb-bf49-7aaa9ec69ab1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996295(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996295(v=EXCHG.150)
 ms:contentKeyID: 49248676
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -76,4 +76,4 @@ To support the Sender ID infrastructure, you must update your Internet-facing DN
 
 ## Specifying recipients and sender domains to exclude from Sender ID filtering
 
-You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://technet.microsoft.com/en-us/library/aa998859\(v=exchg.150\)).
+You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://technet.microsoft.com/library/aa998859\(v=exchg.150\)).

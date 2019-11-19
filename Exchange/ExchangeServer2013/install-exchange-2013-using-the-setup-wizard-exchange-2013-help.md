@@ -2,7 +2,7 @@
 title: 'Install Exchange 2013 using the Setup wizard: Exchange 2013 Help'
 TOCTitle: Install Exchange 2013 using the Setup wizard
 ms:assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124778(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124778(v=EXCHG.150)
 ms:contentKeyID: 48385623
 ms.date: 12/09/2016
 ms.reviewer: 

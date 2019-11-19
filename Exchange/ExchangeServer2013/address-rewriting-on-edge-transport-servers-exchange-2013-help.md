@@ -2,7 +2,7 @@
 title: 'Address rewriting on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Address rewriting on Edge Transport servers
 ms:assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996806(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996806(v=EXCHG.150)
 ms:contentKeyID: 61200279
 ms.date: 07/14/2016
 ms.reviewer: 

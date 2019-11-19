@@ -38,7 +38,7 @@ This article describes how to enable users in your Exchange 2013 on-premises env
 
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later.
 
-   1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/en-us/download/details.aspx?id=35702).
+   1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
    2. For Outlook 2007, see [Description of the Outlook 2007 update: November 13, 2012](https://support.microsoft.com/help/2687404/description-of-the-outlook-2007-update-november-13-2012).
 
@@ -103,7 +103,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
    ```
 
 > [!NOTE]
-> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/en-us/library/jj151771.aspx).
+> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx).
 
 ## How do I know this worked?
 

@@ -2,7 +2,7 @@
 title: 'Exchange Server Deployment Assistant: Exchange 2013 Help'
 TOCTitle: Exchange Server Deployment Assistant
 ms:assetid: 95f493d3-2c4f-48f3-a120-d4aadc448402
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218681(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ218681(v=EXCHG.150)
 ms:contentKeyID: 48385370
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -56,13 +56,13 @@ You can use the Deployment Assistant for the following deployment scenarios:
 
       - Exchange 2007 on-premises with Exchange Online
 
-    For more information about this scenario, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/en-us/library/jj200581\(v=exchg.150\)).
+    For more information about this scenario, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581\(v=exchg.150\)).
 
     > [!IMPORTANT]
-    > If you have an Exchange 2003 on-premises organization and want to configure a new hybrid deployment with Office 365, you must add one or more servers running Exchange 2010 Server Service Pack 3, not Exchange 2013 servers, to your on-premises organization. To do that, we strongly recommend that you use the Exchange 2010 hybrid deployment option in the <A href="https://technet.microsoft.com/en-us/exdeploy2010">Exchange Server Deployment Assistant</A>.
+    > If you have an Exchange 2003 on-premises organization and want to configure a new hybrid deployment with Office 365, you must add one or more servers running Exchange 2010 Server Service Pack 3, not Exchange 2013 servers, to your on-premises organization. To do that, we strongly recommend that you use the Exchange 2010 hybrid deployment option in the <A href="https://technet.microsoft.com/exdeploy2010">Exchange Server Deployment Assistant</A>.
 
   - **Cloud only**
 
-    For more information about this scenario, see [Understanding Cloud-Only Deployments](https://technet.microsoft.com/en-us/library/jj938005\(v=exchg.150\)).
+    For more information about this scenario, see [Understanding Cloud-Only Deployments](https://technet.microsoft.com/library/jj938005\(v=exchg.150\)).
 
 In addition to the above Exchange 2013 deployment scenarios, the Deployment Assistant also has deployment scenarios for Exchange 2010.

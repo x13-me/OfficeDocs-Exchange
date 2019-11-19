@@ -2,7 +2,7 @@
 title: 'Exchange Management Shell quick reference for Exchange 2013'
 TOCTitle: Exchange Management Shell quick reference for Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619302(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619302(v=EXCHG.150)
 ms:contentKeyID: 49352789
 ms.date: 03/23/2018
 ms.reviewer: 
@@ -23,9 +23,9 @@ This topic describes the most frequently used cmdlets available in the release t
 
 For more information about the Exchange Management Shell in Exchange 2013 and all the available cmdlets, see the following topics:
 
-  - [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/en-us/library/bb123778\(v=exchg.150\))
+  - [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\))
 
-  - [Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+  - [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
 
 ## What would you like to learn about?
 

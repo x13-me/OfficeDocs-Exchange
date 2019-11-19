@@ -2,7 +2,7 @@
 title: 'Local computer is responsible for expanding group membership'
 TOCTitle: The local computer is responsible for expanding group membership_ServerIsGroupExpansionServer
 ms:assetid: 52872561-60e6-4f3d-bbc6-6de0edf74b09
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.serverisgroupexpansionserver(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serverisgroupexpansionserver(v=EXCHG.150)
 ms:contentKeyID: 46628907
 ms.date: 12/09/2016
 ms.reviewer: 

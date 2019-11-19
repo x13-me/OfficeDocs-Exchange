@@ -2,7 +2,7 @@
 title: 'Mailbox Search role: Exchange 2013 Help'
 TOCTitle: Mailbox Search role
 ms:assetid: f86b63ba-0c67-4748-8965-0c08a6a8aec1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876958(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876958(v=EXCHG.150)
 ms:contentKeyID: 49289471
 ms.date: 05/13/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Configure Exchange for SharePoint eDiscovery Center: Exchange 2013 Help'
 TOCTitle: Configure Exchange for SharePoint eDiscovery Center
 ms:assetid: 795c1a3b-295c-4ee5-ade9-52cf3fda3f19
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218665(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ218665(v=EXCHG.150)
 ms:contentKeyID: 48385255
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -58,7 +58,7 @@ cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
 
 ## Step 3: Add authorized users to the Discovery Management role group
 
-Add users who need to perform an eDiscovery search using SharePoint 2013 to the Discovery Management role group in Exchange 2013. For details, see [Assign eDiscovery permissions in Exchange](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
+Add users who need to perform an eDiscovery search using SharePoint 2013 to the Discovery Management role group in Exchange 2013. For details, see [Assign eDiscovery permissions in Exchange](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
 
 > [!WARNING]
 > Adding users to the Discovery Management role group allows them to use In-Place eDiscovery to search all Exchange 2013 mailboxes and access potentially sensitive email content in user mailboxes. By default, this permission isn't assigned to any user, including members of the Organization Management role group. Check with your organization's legal or HR departments before assigning this permission to any user.

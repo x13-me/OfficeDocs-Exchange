@@ -2,7 +2,7 @@
 title: 'Transport rule conditions and exceptions (predicates) in Exchange 2013'
 TOCTitle: Transport rule conditions and exceptions (predicates)
 ms:assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638183(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638183(v=EXCHG.150)
 ms:contentKeyID: 49361079
 ms.date: 01/02/2018
 ms.reviewer: 
@@ -22,7 +22,7 @@ Most conditions and exceptions have one property that requires one or more value
 
 For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) or [Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) or [Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)).
 
 ## Conditions and exceptions for transport rules on Mailbox servers
 
@@ -166,7 +166,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>n/a</p></td>
-<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
+<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="odd">
@@ -1168,6 +1168,6 @@ The property types that are used in conditions and exceptions are described in t
 
 [Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) for Exchange Online
+[Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) for Exchange Online
 
-[Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)) for Exchange Online Protection
+[Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)) for Exchange Online Protection

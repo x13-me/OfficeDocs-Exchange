@@ -2,7 +2,7 @@
 title: 'View effective permissions: Exchange 2013 Help'
 TOCTitle: View effective permissions
 ms:assetid: ae6cb7cf-f998-44a6-a69a-02ad736c8260
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638167(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638167(v=EXCHG.150)
 ms:contentKeyID: 49289376
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -58,7 +58,7 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 If you want to change what properties are returned in the list or export the list to a comma-separated value (.csv) file, see Use the Shell to customize output and display it later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
 
 ## Use the Shell to find a specific user on a role
 
@@ -76,7 +76,7 @@ Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where {$_.Eff
 
 If you want to change what properties are returned in the list or export the list to a .csv file, see Use the Shell to customize output and display it later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
 
 ## Use the Shell to find a specific user on all roles
 
@@ -94,7 +94,7 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -E
 
 If you want to change what properties are returned in the list or export the list to a CSV file, see Use the Shell to customize output and display it later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
 
 ## Use the Shell to customize output and display it
 
@@ -152,7 +152,7 @@ This example finds the user David Strome on all roles, and displays the `Effecti
 Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
 
 ## Output a customized list to a .csv file
 
@@ -182,4 +182,4 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -E
 
 You can now view the .csv file in a viewer of your choice.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).

@@ -2,7 +2,7 @@
 title: 'Outlook protection rules: Exchange 2013 Help'
 TOCTitle: Outlook protection rules
 ms:assetid: bd7d0ad7-1f8e-46da-a74b-58c58f3eff93
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638178(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638178(v=EXCHG.150)
 ms:contentKeyID: 49319928
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -40,7 +40,7 @@ When you use transport protection rules, users have no indication of whether a m
 
 ## Creating Outlook protection rules
 
-To create Outlook protection rules, you must use the [New-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298182\(v=exchg.150\)) cmdlet in the Exchange Management Shell. For detailed instructions, see [Create an Outlook Protection Rule](create-an-outlook-protection-rule-exchange-2013-help.md).
+To create Outlook protection rules, you must use the [New-OutlookProtectionRule](https://technet.microsoft.com/library/dd298182\(v=exchg.150\)) cmdlet in the Exchange Management Shell. For detailed instructions, see [Create an Outlook Protection Rule](create-an-outlook-protection-rule-exchange-2013-help.md).
 
 When creating a rule, you can specify whether the user can override it, either by removing IRM-protection or by applying a different AD RMS rights policy template than the one specified in the rule. If a user overrides the IRM protection applied by an Outlook protection rule, Outlook 2010 inserts the `X-MS-Outlook-Client-Rule-Overridden` header in the message, which allows you to determine that the rule was overridden by the user.
 

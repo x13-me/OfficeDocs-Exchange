@@ -2,7 +2,7 @@
 title: 'The operating system is in debug mode_OSCheckedBuild: Exchange 2013 Help'
 TOCTitle: The operating system is in debug mode_OSCheckedBuild
 ms:assetid: 93a1380f-1388-494d-8f78-92dfefd069bd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.oscheckedbuild(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.oscheckedbuild(v=EXCHG.150)
 ms:contentKeyID: 46629035
 ms.date: 12/15/2016
 ms.reviewer: 

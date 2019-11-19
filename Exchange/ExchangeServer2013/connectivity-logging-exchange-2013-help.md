@@ -2,7 +2,7 @@
 title: 'Connectivity logging: Exchange 2013 Help'
 TOCTitle: Connectivity logging
 ms:assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124500(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124500(v=EXCHG.150)
 ms:contentKeyID: 49287004
 ms.date: 06/02/2016
 ms.reviewer: 

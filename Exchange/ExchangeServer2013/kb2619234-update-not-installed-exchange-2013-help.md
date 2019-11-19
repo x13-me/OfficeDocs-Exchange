@@ -2,7 +2,7 @@
 title: 'KB2619234 update not installed: Exchange 2013 Help'
 TOCTitle: KB2619234 update not installed
 ms:assetid: d6734ca6-e443-4367-9eb7-0308aa87b9ff
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.win7rpchttpassoccookieguidupdatenotinstalled(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.win7rpchttpassoccookieguidupdatenotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629145
 ms.date: 12/15/2016
 ms.reviewer: 

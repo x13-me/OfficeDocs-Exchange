@@ -2,7 +2,7 @@
 title: 'Deployment security checklist: Exchange 2013 Help'
 TOCTitle: Deployment security checklist
 ms:assetid: 0cbfad59-f503-48a0-8184-6ca999d89e61
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996026(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996026(v=EXCHG.150)
 ms:contentKeyID: 49289162
 ms.date: 12/09/2016
 ms.reviewer: 

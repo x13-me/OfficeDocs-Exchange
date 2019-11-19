@@ -2,7 +2,7 @@
 title: 'Exchange 2013 Sizing and Configuration Recommendations: Exchange 2013 Help'
 TOCTitle: Exchange 2013 Sizing and Configuration Recommendations
 ms:assetid: 4c4ba2fc-014a-46fb-949a-2dabba92c4a5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn879075(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn879075(v=EXCHG.150)
 ms:contentKeyID: 63917936
 ms.date: 03/27/2017
 ms.reviewer: 

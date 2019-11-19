@@ -2,7 +2,7 @@
 title: 'Custom attributes: Exchange 2013 Help'
 TOCTitle: Custom attributes
 ms:assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee423541(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee423541(v=EXCHG.150)
 ms:contentKeyID: 49352787
 ms.date: 05/13/2016
 ms.reviewer: 
@@ -36,17 +36,17 @@ Some of the advantages of using custom attributes include:
 
 In Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The *ExtensionCustomAttribute1* to *ExtensionCustomAttribute5* parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
-- [Set-DistributionGroup](https://technet.microsoft.com/en-us/library/bb124955\(v=exchg.150\))
+- [Set-DistributionGroup](https://technet.microsoft.com/library/bb124955\(v=exchg.150\))
 
-- [Set-DynamicDistributionGroup](https://technet.microsoft.com/en-us/library/bb123796\(v=exchg.150\))
+- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/bb123796\(v=exchg.150\))
 
-- [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
 
-- [Set-MailContact](https://technet.microsoft.com/en-us/library/aa995950\(v=exchg.150\))
+- [Set-MailContact](https://technet.microsoft.com/library/aa995950\(v=exchg.150\))
 
-- [Set-MailPublicFolder](https://technet.microsoft.com/en-us/library/bb123707\(v=exchg.150\))
+- [Set-MailPublicFolder](https://technet.microsoft.com/library/bb123707\(v=exchg.150\))
 
-- [Set-RemoteMailbox](https://technet.microsoft.com/en-us/library/ff607302\(v=exchg.150\))
+- [Set-RemoteMailbox](https://technet.microsoft.com/library/ff607302\(v=exchg.150\))
 
 For more information about multivalued properties, see [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md).
 

@@ -2,7 +2,7 @@
 title: 'Configure Edge Transport server using cloned configuration: Exchange 2013 Help'
 TOCTitle: Configure Edge Transport server using cloned configuration
 ms:assetid: 0bbc83e3-e5e8-4480-a8a6-15f035360856
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996008(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996008(v=EXCHG.150)
 ms:contentKeyID: 61200276
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -38,7 +38,7 @@ Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
 
   - If any Send connectors are configured to use credentials, the password is written to the intermediate XML file as an encrypted string. You can use the *-key* parameter with the ImportEdgeConfig.ps1 and ExportEdgeConfig.ps1 scripts to specify the 32-byte string to use for password encryption and decryption. If you don't use the *-key* parameter, a default encryption key is used.
 
-  - You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+  - You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

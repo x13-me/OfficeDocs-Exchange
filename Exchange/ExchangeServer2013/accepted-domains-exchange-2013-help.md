@@ -2,7 +2,7 @@
 title: 'Accepted domains: Exchange 2013 Help'
 TOCTitle: Accepted domains
 ms:assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124423(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124423(v=EXCHG.150)
 ms:contentKeyID: 49289400
 ms.date: 06/17/2016
 ms.reviewer: 

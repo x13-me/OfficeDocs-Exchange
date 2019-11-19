@@ -87,7 +87,7 @@ The following permissions or capabilities **aren't** supported:
 
 - **Folder permissions**: Grants access to the contents of a particular folder.
 
-Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/en-us/help/3064053.
+Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/help/3064053.
 
 ### Configuring your on-premises Exchange servers to support hybrid mailbox permissions
 
@@ -106,7 +106,7 @@ In addition to configuring your on-premises Exchange servers, you also need to m
 
 - **Upgrade AAD Connect**: AAD Connect needs to be upgraded to at least version 1.1.553.0. You can download the latest version of AAD Connect from [Microsoft Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkID=510956).
 
-- **Enable Exchange Hybrid in AAD Connect**: To synchronize the attributes that enable hybrid mailbox permissions (specifically the Send on Behalf permission), you need to make sure that the **Exchange Hybrid deployment** configuration option is enabled in AAD Connect. For information about how to run the AAD Connect installation wizard again to update its configuration, check out [Azure AD Connect sync: Running the installation wizard a second time](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-installation-wizard)
+- **Enable Exchange Hybrid in AAD Connect**: To synchronize the attributes that enable hybrid mailbox permissions (specifically the Send on Behalf permission), you need to make sure that the **Exchange Hybrid deployment** configuration option is enabled in AAD Connect. For information about how to run the AAD Connect installation wizard again to update its configuration, check out [Azure AD Connect sync: Running the installation wizard a second time](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-installation-wizard)
 
 ## End user permissions
 

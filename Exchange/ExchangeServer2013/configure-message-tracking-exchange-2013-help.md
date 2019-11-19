@@ -2,7 +2,7 @@
 title: 'Configure message tracking: Exchange 2013 Help'
 TOCTitle: Configure message tracking
 ms:assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997984(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997984(v=EXCHG.150)
 ms:contentKeyID: 50646521
 ms.date: 12/09/2016
 ms.reviewer: 

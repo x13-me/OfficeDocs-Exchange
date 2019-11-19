@@ -20,7 +20,7 @@ manager: serdars
 Encryption and digital certificates are important considerations in any organization. By default, Exchange Server is configured to use Transport Layer Security (TLS) to encrypt communication between internal Exchange servers, and between Exchange services on the local server. But, Exchange administrators need to consider their encryption requirements for communication with internal and external clients (computers and mobile devices), and external messaging servers.
 
 > [!NOTE]
-> Exchange Server 2019 includes important changes to improve the security of client and server connections. The default configuration for encryption will enable TLS 1.2 only and disable support for older algorithms, namely; DES, 3DES, RC2, RC4 and MD5. It will also configure elliptic curve key exchange algorithms with priority over non-elliptic curve algorithms. In Exchange Server 2016 and later, all cryptography settings are inherited from the configuration specified in the operating system. For additional information, see [Exchange Server TLS Guidance](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/).
+> Exchange Server 2019 includes important changes to improve the security of client and server connections. The default configuration for encryption will enable TLS 1.2 only and disable support for older algorithms (namely, DES, 3DES, RC2, RC4 and MD5). It will also configure elliptic curve key exchange algorithms with priority over non-elliptic curve algorithms. In Exchange Server 2016 and later, all cryptography settings are inherited from the configuration specified in the operating system. For additional information, see [Exchange Server TLS Guidance](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Exchange-Server-TLS-guidance-part-1-Getting-Ready-for-TLS-1-2/ba-p/607649).
 
 This topic describes the different types of certificates that are available, the default configuration for certificates in Exchange, and recommendations for additional certificates that you'll need to use with Exchange.
 
@@ -78,17 +78,17 @@ These are the key issues that you need to consider when it comes to certificates
 
 The following elements of planning and deployment for Exchange Server are important drivers for your certificate requirements:
 
-- **Load balancing**: Do you plan to terminate the encrypted channel at load balancer or reverse proxy server, use Layer 4 or Layer 7 load balancers, and use session affinity or no session affinity? For more information, see [Load Balancing in Exchange 2016](https://blogs.technet.com/b/exchange/archive/2015/10/08/load-balancing-in-exchange-2016.aspx).
+- **Load balancing**: Do you plan to terminate the encrypted channel at load balancer or reverse proxy server, use Layer 4 or Layer 7 load balancers, and use session affinity or no session affinity? For more information, see [Load Balancing in Exchange 2016](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Load-Balancing-in-Exchange-2016/ba-p/604048).
 
-- **Namespace planning**: What versions of Exchange are present, are you using the bound or unbound namespace model, and are you using *split-brain DNS* (configuring different IP addresses for the same host based on internal vs. external access)? For more information, see [Namespace Planning in Exchange 2016](https://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx).
+- **Namespace planning**: What versions of Exchange are present, are you using the bound or unbound namespace model, and are you using *split-brain DNS* (configuring different IP addresses for the same host based on internal vs. external access)? For more information, see [Namespace Planning in Exchange 2016](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Namespace-Planning-in-Exchange-2016/ba-p/604072).
 
 - **Client connectivity**: What services will your clients use (web-based services, POP, IMAP, etc.) and what versions of Exchange are involved? For more information, see the following topics:
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2013](https://blogs.technet.com/b/exchange/archive/2015/10/28/client-connectivity-in-an-exchange-2016-coexistence-environment-with-exchange-2013.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2013](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/603925)
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2010](https://blogs.technet.com/b/exchange/archive/2015/10/26/client-connectivity-in-an-exchange-2016-coexistence-environment-with-exchange-2010.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2010](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/603945)
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Mixed Exchange Versions](https://blogs.technet.com/b/exchange/archive/2015/10/30/client-connectivity-in-an-exchange-2016-coexistence-environment-with-mixed-exchange-versions.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Mixed Exchange Versions](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/604284)
 
 ## Certificate requirements for Exchange services
 

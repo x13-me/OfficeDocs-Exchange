@@ -2,7 +2,7 @@
 title: 'Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: 'Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM'
 ms:assetid: 799bd1b1-a918-4bd8-911e-e6ca08bd7b52
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169228(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn169228(v=EXCHG.150)
 ms:contentKeyID: 53382782
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -22,9 +22,9 @@ Before you start working with this checklist, make sure you're familiar with the
 
   - [Planning for Unified Messaging](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [Telephone system integration with UM](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
+  - [Telephone system integration with UM](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
-  - [Connect your voice mail system to your telephone network](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
+  - [Connect your voice mail system to your telephone network](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
 For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange 2013 UM, see [Upgrade Exchange 2007 UM to Exchange 2013 UM](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md). 
 
@@ -107,31 +107,31 @@ For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange
 <tr class="odd">
 <td><p></p></td>
 <td><p>Create or configure existing UM dial plans.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Create a UM dial plan</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Manage a UM dial plan</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Create a UM dial plan</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Manage a UM dial plan</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Create or configure existing UM IP gateways.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">Create a UM IP gateway</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">Manage a UM IP gateway</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">Create a UM IP gateway</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">Manage a UM IP gateway</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>Create a UM hunt group.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">Create a UM hunt group</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">Create a UM hunt group</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Create or configure UM auto attendants.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Create a UM auto attendant</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">Manage a UM auto attendant</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Create a UM auto attendant</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">Manage a UM auto attendant</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Create or configure UM mailbox policies.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Create a UM mailbox policy</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Manage a UM mailbox policy</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Create a UM mailbox policy</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Manage a UM mailbox policy</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
@@ -141,13 +141,13 @@ For step-by-step guidance about how to upgrade from Exchange 2007 UM to Exchange
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Enable new users for UM or configure settings for an existing UM-enabled user.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">Enable a user for voice mail</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings">Manage voice mail settings for a user</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">Enable a user for voice mail</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings">Manage voice mail settings for a user</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>Configure your VoIP gateways, IP PBXs, and SIP-enabled PBXs to send all incoming calls to the Exchange 2013 Client Access servers.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">Configuration notes for supported VoIP gateways, IP PBXs, and PBXs</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">Connect a VoIP gateway, IP PBX, or session border controller to UM</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">Configuration notes for supported VoIP gateways, IP PBXs, and PBXs</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">Connect a VoIP gateway, IP PBX, or session border controller to UM</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

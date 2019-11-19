@@ -46,7 +46,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
 
-- Skipping the migration of deleted items and deleted folders from Exchange Server to Exchange Online is supported. For more information, see the Exchange Team blog post about [modern public folder migrations without dumpster data](https://blogs.technet.microsoft.com/exchange/2018/06/20/announcing-the-support-for-modern-public-folder-migrations-without-dumpster-data/).
+- Skipping the migration of deleted items and deleted folders from Exchange Server to Exchange Online is supported. For more information, see the Exchange Team blog post about [modern public folder migrations without dumpster data](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Announcing-the-support-for-modern-public-folder-migrations/ba-p/608004).
 
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error. Also note that once the migration batch has a status of "Completed," no more data can be copied over from the source environment.
 

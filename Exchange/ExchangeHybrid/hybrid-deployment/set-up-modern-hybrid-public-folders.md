@@ -40,7 +40,7 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later.
 
-5. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/en-us/download/details.aspx?id=35702).
+5. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
 6. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
 
@@ -49,7 +49,7 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 
 ## Step 1: Download the scripts
 
-1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/en-us/download/details.aspx?id=46381):
+1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
    - `Sync-MailPublicFolders.ps1`
 
@@ -86,7 +86,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 ```
 
 > [!NOTE]
-> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/en-us/library/jj151771.aspx).
+> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx).
 
 ## How do I know this worked?
 

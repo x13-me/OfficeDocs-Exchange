@@ -2,7 +2,7 @@
 title: 'View role scopes: Exchange 2013 Help'
 TOCTitle: View role scopes
 ms:assetid: 0bb3a434-6651-473a-94eb-4eb9a34e6f70
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335084(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd335084(v=EXCHG.150)
 ms:contentKeyID: 49289158
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -32,7 +32,7 @@ Looking for other management tasks related to role scopes? Check out [Advanced p
 
 - This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
-  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+  - [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
 
   - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -57,7 +57,7 @@ This example retrieves the details of the Seattle Servers scope.
 Get-ManagementScope "Seattle Servers" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/en-us/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
 
 ## List all scopes
 
@@ -69,7 +69,7 @@ Get-ManagementScope
 
 This cmdlet retrieves both exclusive and regular scopes. If you only want to return exclusive scopes or regular scopes, see "List all exclusive or regular scopes only" later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/en-us/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
 
 ## List all orphaned scopes
 
@@ -81,7 +81,7 @@ This examples retrieves a list of orphaned scopes.
 Get-ManagementScope -Orphan
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/en-us/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
 
 ## List all exclusive or regular scopes only
 
@@ -103,4 +103,4 @@ This example returns a list of regular scopes only.
 Get-ManagementScope -Exclusive $false
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/en-us/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).

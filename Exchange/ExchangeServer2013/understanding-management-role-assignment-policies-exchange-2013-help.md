@@ -2,7 +2,7 @@
 title: 'Understanding management role assignment policies: Exchange 2013 Help'
 TOCTitle: Understanding management role assignment policies
 ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638100(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638100(v=EXCHG.150)
 ms:contentKeyID: 49289200
 ms.date: 05/13/2016
 ms.reviewer: 
@@ -93,7 +93,7 @@ The following table lists the role assignment policy layer and the procedural to
 <tbody>
 <tr class="odd">
 <td><p>Mailbox</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p>
+<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Change the assignment policy on a mailbox</a></p></td>
 </tr>
 <tr class="even">

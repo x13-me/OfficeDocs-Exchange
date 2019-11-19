@@ -2,7 +2,7 @@
 title: 'Understanding management role scope filters: Exchange 2013 Help'
 TOCTitle: Understanding management role scope filters
 ms:assetid: 6acc2922-ee9c-41f1-8a0f-10a541e8c273
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298043(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298043(v=EXCHG.150)
 ms:contentKeyID: 49289288
 ms.date: 05/13/2016
 ms.reviewer: 
@@ -48,7 +48,7 @@ Both recipient and configuration filters use the same syntax to create a filter 
 
   - **Property to examine**: The property is the value on an object that you want to test. For example, this can be the city or department on a recipient object, an Active Directory site name or server name on a server configuration object, or a database name on a database configuration object.
 
-  - **Comparison operator**: The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://technet.microsoft.com/en-us/library/bb125229\(v=exchg.150\)).
+  - **Comparison operator**: The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://technet.microsoft.com/library/bb125229\(v=exchg.150\)).
 
   - **Value to compare**: The value you specify in the filter query will be compared to the value that's stored in the property you specified. The value you specify must be enclosed in quotation marks ("). If you want to specify a partial string, you can enclose the string you provide in wildcard characters (\*) and use a comparison operator that supports wildcard characters, such as **Like**. Any string that contains the partial string will match the filter query.
 
@@ -126,7 +126,7 @@ The following table shows an example with values, which indicates when the compl
 
 ## Filterable recipient properties
 
-You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://technet.microsoft.com/en-us/library/bb738157\(v=exchg.150\)). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
+You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://technet.microsoft.com/library/bb738157\(v=exchg.150\)). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
 
 ## Filterable server properties
 

@@ -2,7 +2,7 @@
 title: 'Configure archive quotas for an In-Place Archive in Exchange 2013'
 TOCTitle: Configure archive quotas for an In-Place Archive in Exchange 2013
 ms:assetid: f10e77c7-e1d4-415a-bef9-cb3f00e74c34
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633489(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee633489(v=EXCHG.150)
 ms:contentKeyID: 50470879
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -59,7 +59,7 @@ This example sets Chris Ashton's mailbox archive quota to 10 gigabyte (GB), at w
 Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## How do you know this worked?
 

@@ -2,7 +2,7 @@
 title: 'Exchange 2013 system requirements: Exchange 2013 Help'
 TOCTitle: Exchange 2013 system requirements
 ms:assetid: 1e80857c-b870-4a6d-a0f4-ff7b3a7be037
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996719(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996719(v=EXCHG.150)
 ms:contentKeyID: 48384881
 ms.date: 12/18/2017
 ms.reviewer: 
@@ -76,7 +76,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios
 
-Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://technet.microsoft.com/en-us/library/hh534377\(v=exchg.150\)).
+Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://technet.microsoft.com/library/hh534377\(v=exchg.150\)).
 
 ## Network and directory servers
 
@@ -342,7 +342,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU16, CU17, CU18||||X|
 |CU15||||X|
 
-**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
+**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
 
 ## Supported clients
 

@@ -2,7 +2,7 @@
 title: 'Configure the startup mode on a Client Access server: Exchange 2013 Help'
 TOCTitle: Configure the startup mode on a Client Access server
 ms:assetid: 71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673533(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673533(v=EXCHG.150)
 ms:contentKeyID: 49315443
 ms.date: 12/09/2016
 ms.reviewer: 

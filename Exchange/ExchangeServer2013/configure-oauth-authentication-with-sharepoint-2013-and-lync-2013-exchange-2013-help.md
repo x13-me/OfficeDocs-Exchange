@@ -2,7 +2,7 @@
 title: 'Configure OAuth authentication with SharePoint 2013 and Lync 2013'
 TOCTitle: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 ms:assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ649094(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ649094(v=EXCHG.150)
 ms:contentKeyID: 49317458
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -61,7 +61,7 @@ Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2013 , run the [Get-PartnerApplication](https://technet.microsoft.com/en-us/library/jj218721\(v=exchg.150\)) cmdlet in the Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://technet.microsoft.com/en-us/library/jj218623\(v=exchg.150\)) cmdlet to test OAuth connectivity with a partner application for a user.
+To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2013 , run the [Get-PartnerApplication](https://technet.microsoft.com/library/jj218721\(v=exchg.150\)) cmdlet in the Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://technet.microsoft.com/library/jj218623\(v=exchg.150\)) cmdlet to test OAuth connectivity with a partner application for a user.
 
 ## More information
 

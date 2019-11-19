@@ -2,7 +2,7 @@
 title: Troubleshooting PowershellDataProvider Health Set
 TOCTitle: Troubleshooting PowershellDataProvider Health Set
 ms:assetid: 2f083d29-b3be-4955-95f6-cd7e4931bc61
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.powershelldataprovider(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.powershelldataprovider(v=EXCHG.150)
 ms:contentKeyID: 49720751
 ms.date:
 ms.reviewer:

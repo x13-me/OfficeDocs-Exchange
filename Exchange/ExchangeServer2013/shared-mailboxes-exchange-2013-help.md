@@ -2,7 +2,7 @@
 title: 'Shared mailboxes: Exchange 2013 Help'
 TOCTitle: Shared mailboxes
 ms:assetid: 1d71c01b-e261-408e-a633-1d1c9d00032a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150498(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150498(v=EXCHG.150)
 ms:contentKeyID: 47559964
 ms.date: 10/24/2016
 ms.reviewer: 
@@ -46,8 +46,8 @@ You can use the following permissions with a shared mailbox.
 
   - **Send As**: The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Kweku logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email.
 
-  - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet with the *GrantSendonBehalf* parameter.
+  - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet with the *GrantSendonBehalf* parameter.
 
 ## Converting shared mailboxes
 
-In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a Mailbox](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox).
+In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a Mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox).

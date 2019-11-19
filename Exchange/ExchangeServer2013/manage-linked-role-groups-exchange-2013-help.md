@@ -2,7 +2,7 @@
 title: 'Manage linked role groups: Exchange 2013 Help'
 TOCTitle: Manage linked role groups
 ms:assetid: e2a07395-90c2-4d62-b15d-ac3ff28fe786
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657502(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657502(v=EXCHG.150)
 ms:contentKeyID: 49289439
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -20,9 +20,9 @@ You can use a linked management role group to enable members of a universal secu
 
 To create and configure linked role groups, you need to use the **New-RoleGroup** and **Set-RoleGroup** cmdlets. For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://technet.microsoft.com/en-us/library/dd638181\(v=exchg.150\))
+- [New-RoleGroup](https://technet.microsoft.com/library/dd638181\(v=exchg.150\))
 
-- [Set-RoleGroup](https://technet.microsoft.com/en-us/library/dd638182\(v=exchg.150\))
+- [Set-RoleGroup](https://technet.microsoft.com/library/dd638182\(v=exchg.150\))
 
 For additional management tasks related to role groups, see [Permissions](permissions-exchange-2013-help.md).
 

@@ -2,7 +2,7 @@
 title: Troubleshooting FfoQuarantine Health Set
 TOCTitle: Troubleshooting FfoQuarantine Health Set
 ms:assetid: 7e0573d8-271a-4058-90c6-b4875b3b8456
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ffoquarantine(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ffoquarantine(v=EXCHG.150)
 ms:contentKeyID: 49720826
 ms.date:
 ms.reviewer:

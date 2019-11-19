@@ -2,7 +2,7 @@
 title: Troubleshooting OWA Health Set
 TOCTitle: Troubleshooting OWA Health Set
 ms:assetid: eae9dbd7-2ce6-43ce-b9a1-b114fd0c3ab4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa(v=EXCHG.150)
 ms:contentKeyID: 49720915
 ms.date:
 ms.reviewer:
@@ -50,7 +50,7 @@ The Outlook Web App service is monitored by using the following probes and monit
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -218,6 +218,6 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
