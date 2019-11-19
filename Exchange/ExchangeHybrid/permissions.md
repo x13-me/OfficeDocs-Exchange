@@ -87,7 +87,7 @@ The following permissions or capabilities **aren't** supported:
 
 - **Folder permissions**: Grants access to the contents of a particular folder.
 
-Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/en-us/help/3064053.
+Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/help/3064053.
 
 ### Configuring your on-premises Exchange servers to support hybrid mailbox permissions
 
