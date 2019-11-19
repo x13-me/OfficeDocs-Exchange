@@ -59,7 +59,7 @@ The following table lists the client applications that can be used to access arc
 <td><p>Yes. Outlook 2013, Outlook 2010, Outlook 2007 and Outlook Web App users can copy or move items from their primary mailbox to their archive mailbox, and can also use retention policies to move items to the archive.</p>
 
 > [!NOTE]
-> Outlook 2010 and later and Outlook 2007 users can also copy or move items from .pst files to their archive mailbox. Outlook 2007 users require the Office 2007 Cumulative Update for February 2011. Some differences in archive support exist between Outlook 2010 and later and Outlook 2007. For more information, see Exchange Team Blog article, see <A href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">Yes Virginia, there is Exchange 2010 archive support in Outlook 2007</A>.
+> Outlook 2010 and later and Outlook 2007 users can also copy or move items from .pst files to their archive mailbox. Outlook 2007 users require the Office 2007 Cumulative Update for February 2011. Some differences in archive support exist between Outlook 2010 and later and Outlook 2007. For more information, see Exchange Team Blog article, see <A href="https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Yes-Virginia-there-is-Exchange-2010-archive-support-in-Outlook/ba-p/588351">Yes Virginia, there is Exchange 2010 archive support in Outlook 2007</A>.
 
 </td>
 </tr>

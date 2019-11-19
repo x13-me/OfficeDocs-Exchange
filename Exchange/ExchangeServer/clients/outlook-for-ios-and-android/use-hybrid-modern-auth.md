@@ -425,4 +425,4 @@ You can also create a scheduled task that executes the above command every 24 ho
 
 ### Other issues
 
-There are other issues that may prevent hybrid Modern Authentication from functioning correctly. For more information, see the troubleshooting section in [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/).
+There are other issues that may prevent hybrid Modern Authentication from functioning correctly. For more information, see the troubleshooting section in [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Announcing-Hybrid-Modern-Authentication-for-Exchange-On-Premises/ba-p/607476).

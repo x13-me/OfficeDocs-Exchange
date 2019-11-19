@@ -34,7 +34,7 @@ In an on-premises, hybrid, or Office 365 environment, connecting and configuring
 Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging.
 
 > [!NOTE]
-> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs has ended in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 ## Integrating your telephony network
 
