@@ -22,21 +22,21 @@ This article explains the components of transport rules, and how they work.
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage transport rules. For instructions on how to manage transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
-For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips).
+For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
 To implement specific messaging policies by using transport rules, see these topics:
 
 - [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-- [Common attachment blocking scenarios for transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
+- [Common attachment blocking scenarios for transport rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
 - [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-- [Use transport rules so messages can bypass Clutter](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
+- [Use transport rules so messages can bypass Clutter](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-- [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
+- [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-- [Common message approval scenarios](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
+- [Common message approval scenarios](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## Transport rule components
 
@@ -129,8 +129,8 @@ The following table describes the rule properties that are available in transpor
 <td><p><strong>Mode</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips).</p>
-<p>Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips">Policy Tips</a>.</p>
-<p>For more information about the modes, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">Test a transport rule</a>.</p></td>
+<p>Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips">Policy Tips</a>.</p>
+<p>For more information about the modes, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">Test a transport rule</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Activate this rule on the following date</strong></p>

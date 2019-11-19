@@ -342,7 +342,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU16, CU17, CU18||||X|
 |CU15||||X|
 
-**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
+**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
 
 ## Supported clients
 

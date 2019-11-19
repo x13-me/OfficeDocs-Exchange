@@ -208,7 +208,7 @@ There are two situations in which protected voice messages can be created:
 
 ## UM mailbox policies
 
-You can create a Unified Messaging mailbox policy to apply a common set of UM policy settings, such as PIN policy settings, dialing restrictions, and Protected Voice Mail settings, to a collection of UM-enabled mailboxes. To learn more about UM mailbox policies, see [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
+You can create a Unified Messaging mailbox policy to apply a common set of UM policy settings, such as PIN policy settings, dialing restrictions, and Protected Voice Mail settings, to a collection of UM-enabled mailboxes. To learn more about UM mailbox policies, see [Manage a UM mailbox policy](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
 
 You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to configure Protected Voice Mail options. The following table lists the settings that can be configured for Protected Voice Mail.
 
@@ -256,7 +256,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 </tbody>
 </table>
 
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\)).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\)).
 
 ## Text message notifications and Protected Voice Mail
 

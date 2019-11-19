@@ -36,9 +36,9 @@ Exchange 2013 allows SharePoint 2013 to search Exchange mailbox content using Fe
 
 For more details, see the following topics:
 
-  - [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

@@ -16,10 +16,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-[Create an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/create-an-address-book-policy)
+[Create an address book policy](https://docs.microsoft.com/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
-[Assign an address book policy to mail users](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
+[Assign an address book policy to mail users](https://docs.microsoft.com/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
 
-[Change the settings of an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
+[Change the settings of an address book policy](https://docs.microsoft.com/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[Remove an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/remove-an-address-book-policy)
+[Remove an address book policy](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)

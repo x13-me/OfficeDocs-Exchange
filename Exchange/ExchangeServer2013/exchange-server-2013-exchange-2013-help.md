@@ -86,7 +86,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 
 - [Server health and performance](server-health-and-performance-exchange-2013-help.md)
 
-- [About Exchange documentation](https://docs.microsoft.com/en-us/exchange/about-exchange-documentation)
+- [About Exchange documentation](https://docs.microsoft.com/exchange/about-exchange-documentation)
 
 > [!NOTE]
 > Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://technet.microsoft.com/library/jj723137(v=exchg.150)">Exchange Online Protection</A>

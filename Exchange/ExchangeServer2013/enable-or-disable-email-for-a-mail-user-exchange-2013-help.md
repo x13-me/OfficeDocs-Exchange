@@ -23,7 +23,7 @@ After you disable email for a mail user, you can mail-enable the user again by u
 > [!NOTE]
 > Mail users (also called <EM>mail-enabled users</EM>) are different than users in your organization that have a mailbox. The primary difference is that mail users represent users outside your Exchange organization that have an external email address. They don't have a mailbox in your organization. For more information about the differences between users who have mailboxes in your organization and mail users, see <A href="recipients-exchange-2013-help.md">Recipients</A>.
 
-For additional management tasks related to mail users, see [Manage mail users](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-users).
+For additional management tasks related to mail users, see [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
 
 ## What do you need to know before you begin?
 

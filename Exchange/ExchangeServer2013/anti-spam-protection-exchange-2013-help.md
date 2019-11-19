@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 *Spammers*, or malicious senders, use a variety of techniques to send unwanted email into your organization. No single tool or process can eliminate all spam. However, Microsoft Exchange Server 2013 provides a layered, multipronged, and multifaceted approach to reducing these unwanted messages. Exchange uses transport agents to provide anti-spam protection, and the built-in agents that are available in Exchange 2013 are relatively unchanged from Microsoft Exchange Server 2010.
 
-For more anti-spam features and easier management, you can elect to purchase Microsoft Exchange Online Protection (EOP). For a comparison of EOP and Exchange 2013 features, see [Benefits of anti-spam features in Exchange Online Protection over Exchange Server 2013](benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help.md). To learn more about Office 365 anti-spam protection, see [Office 365 Email Anti-Spam Protection](https://support.office.com/article/office-365-email-anti-spam-protection-6a601501-a6a8-4559-b2e7-56b59c96a586?ui=en-us%26rs=en-us%26ad=us).
+For more anti-spam features and easier management, you can elect to purchase Microsoft Exchange Online Protection (EOP). For a comparison of EOP and Exchange 2013 features, see [Benefits of anti-spam features in Exchange Online Protection over Exchange Server 2013](benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help.md). To learn more about Office 365 anti-spam protection, see [Office 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection).
 
 For information about the built-in anti-malware capabilities in Exchange 2013, see [Anti-malware protection](anti-malware-protection-exchange-2013-help.md).
 
@@ -89,4 +89,4 @@ Ultimately, you must plan to monitor the overall effectiveness of the anti-spam 
 
 ## See Also
 
-[Office 365 Email Anti-Spam Protection](https://support.office.com/article/office-365-email-anti-spam-protection-6a601501-a6a8-4559-b2e7-56b59c96a586?ui=en-us%26rs=en-us%26ad=us)
+[Office 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection)

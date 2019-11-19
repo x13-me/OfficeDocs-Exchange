@@ -51,7 +51,7 @@ If you're using Microsoft Intune as your mobile device management provider, the 
 8. Choose **Associated apps**, and then, on the **Associated apps** blade, choose **Microsoft Outlook**.
 
     > [!NOTE]
-    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios).
+    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
 9. Click **OK** to return to the **Add app configuration** blade.
 

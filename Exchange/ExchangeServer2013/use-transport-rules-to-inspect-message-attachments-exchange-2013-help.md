@@ -28,7 +28,7 @@ You can inspect email attachments in your organization by setting up transport r
 
 - Create notifications that alert users if they send a message that has matched a transport rule.
 
-- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
+- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
 
 Exchange administrators can create transport rules by going to **Exchange admin center** \> **Mail flow** \> **Rules**. You need to be assigned permissions before you can perform this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
 
@@ -303,11 +303,11 @@ To help you manage important business information in email, you can include any 
 
 - Define an action to take on mail that contains passport numbers that are not in the protected file.
 
-DLP policies and attachment-related conditions can help you enforce your business needs by defining those needs as transport rule conditions, exceptions, and actions. When you include the sensitive information inspection in a DLP policy, any attachments to messages are scanned for that information only. However, attachment-related conditions such as size or file type are not included until you add the conditions listed in this topic. DLP is not available with all versions of Exchange; learn more at [Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
+DLP policies and attachment-related conditions can help you enforce your business needs by defining those needs as transport rule conditions, exceptions, and actions. When you include the sensitive information inspection in a DLP policy, any attachments to messages are scanned for that information only. However, attachment-related conditions such as size or file type are not included until you add the conditions listed in this topic. DLP is not available with all versions of Exchange; learn more at [Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
 
 ## For more information
 
-[Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

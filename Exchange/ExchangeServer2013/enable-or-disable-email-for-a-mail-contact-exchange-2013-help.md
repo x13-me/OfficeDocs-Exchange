@@ -20,7 +20,7 @@ You can disable email for an existing mail contact in your Exchange organization
 
 After you disable email for a mail contact, you can mail-enable the contact again by using the **Enable-MailContact** cmdlet in the Shell. You can also use this cmdlet to mail-enable any Active Directory contact.
 
-For additional management tasks related to mail contacts, see [Manage mail contacts](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-contacts).
+For additional management tasks related to mail contacts, see [Manage mail contacts](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts).
 
 ## What do you need to know before you begin?
 

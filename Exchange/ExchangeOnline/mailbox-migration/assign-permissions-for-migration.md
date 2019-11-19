@@ -69,7 +69,7 @@ The migration administrator must have the necessary administrative privileges in
 You can use Exchange Online PowerShell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
 
 > [!NOTE]
-> Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission. For more information, see [How to assign service account access to all mailboxes in Exchange Server 2003](https://support.microsoft.com/kb/821897/en-us).
+> Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission.
 
 For information about migrating mailboxes to Office 365 by using different migration types, see [Ways to migrate multiple email accounts to Office 365](mailbox-migration.md).
 

@@ -22,10 +22,10 @@ You can begin using transport rules by using the following procedures. To learn 
 
 [Create a domain or user-based safe sender or blocked sender list](https://technet.microsoft.com/library/dn198251\(v=exchg.150\)): Information to help you create domain or user-based safe sender and blocked sender lists by using transport rules.
 
-[Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email): Information to help you comply with your organization's email policies.
+[Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email): Information to help you comply with your organization's email policies.
 
 [Register Filter Pack IFilters with Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md): Information to help you register additional file types for attachments so that transport rules that apply to attachments can scan these file types.
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md): Information to help you create, view, modify, enable, disable, or remove a transport rule, and information about importing and exporting transport rule collections.
 
-[Best practices for configuring transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices): Information to help you avoid common configuration errors.
+[Best practices for configuring transport rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices): Information to help you avoid common configuration errors.

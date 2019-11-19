@@ -20,7 +20,7 @@ You can use the EAC and the Shell to configure message size limits for a user ma
 
 Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size limits](message-size-limits-exchange-2013-help.md).
 
-For additional management tasks related to user mailboxes, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+For additional management tasks related to user mailboxes, see [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 > [!NOTE]
 > You can also control the size of messages sent and received by mail users and from shared mailboxes.

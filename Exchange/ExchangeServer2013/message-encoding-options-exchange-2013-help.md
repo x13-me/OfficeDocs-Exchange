@@ -383,8 +383,8 @@ The following table describes the order of precedence from lowest priority to hi
 
 [Remote domains in Exchange Online](https://technet.microsoft.com/library/jj966211\(v=exchg.150\))
 
-[Manage mail users](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-users)
+[Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[Manage mail contacts](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-contacts)
+[Manage mail contacts](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [Change the message format in Outlook](https://go.microsoft.com/fwlink/p/?linkid=397890)
