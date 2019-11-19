@@ -116,7 +116,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 1. Optional: Verify connectivity.
 
-   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [http://aka.ms/hybridconnectivity](https://aka.ms/hybridconnectivity).
+   1. On the server where you will be running the Hybrid Configuration wizard (Hybrid Agent install and subsequent hybrid configuration steps), download the following sample script and save it to any directory: [https://aka.ms/hybridconnectivity](https://aka.ms/hybridconnectivity).
 
    2. Open the Exchange Management Shell and change directory to the location of the script.
 

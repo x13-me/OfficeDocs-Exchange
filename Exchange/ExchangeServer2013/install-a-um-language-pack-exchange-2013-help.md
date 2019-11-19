@@ -65,6 +65,6 @@ setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAccept
 ```
 
 > [!WARNING]
-> If you don't use the /IAcceptExchangeServerLicenseTerms parameter, you'll see the following error: Welcome to Microsoft Exchange Server 2013 Unattended Setup. You need to accept the license terms to install Microsoft Exchange Server 2013. To read the license agreement, visit http://go.microsoft.com/fwlink/p/?LinkId=150127. To accept the license agreement, add the /IAcceptExchangeServerLicenseTerms parameter to the command you're running. For more information, run setup /?.
+> If you don't use the /IAcceptExchangeServerLicenseTerms parameter, you'll see the following error: Welcome to Microsoft Exchange Server 2013 Unattended Setup. You need to accept the license terms to install Microsoft Exchange Server 2013. To read the license agreement, visit https://go.microsoft.com/fwlink/p/?LinkId=150127. To accept the license agreement, add the /IAcceptExchangeServerLicenseTerms parameter to the command you're running. For more information, run setup /?.
 
 For more information about available UM languages and the culture codes, see [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md).

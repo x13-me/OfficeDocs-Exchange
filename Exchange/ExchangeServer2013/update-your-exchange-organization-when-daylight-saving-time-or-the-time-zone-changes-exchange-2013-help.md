@@ -63,56 +63,56 @@ The following table shows when users should run the [Exchange Calendar Update To
  </tr>
 <tr>
  <td> <p> <strong>Exchange 2003 on premises</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>Exchange 2007 on premises</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>Exchange 2010 on premises</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=930879">Exchange Calendar Tool</a> or</p> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>Exchange 2013 on premises</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>BPOS-S (Exchange 2007)</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>BPOS-D (Exchange 2010)</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> </p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>Office 365 (Exchange 2010)</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> (not supported with Outlook 2003)</p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> (not supported with Outlook 2003)</p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
  </tr>
 <tr>
  <td> <p> <strong>Office 365 (Exchange 2013)</strong> </p> </td>
- <td> <p> <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> (not supported with Outlook 2003)</p> </td>
+ <td> <p> <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=931667">Time Zone Data Update Tool for Microsoft Office Outlook</a> (not supported with Outlook 2003)</p> </td>
  <td> <p>No action required</p> </td>
  <td> <p>No action required</p> </td>
  <td><p>&nbsp;</p></td>
