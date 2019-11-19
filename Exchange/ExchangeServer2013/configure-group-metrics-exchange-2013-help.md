@@ -2,7 +2,7 @@
 title: 'Configure group metrics: Exchange 2013 Help'
 TOCTitle: Configure group metrics
 ms:assetid: 76ccd6a7-e2ec-42f4-9ab3-e8cc257ac896
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ649327(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ649327(v=EXCHG.150)
 ms:contentKeyID: 49318502
 ms.date: 12/09/2016
 ms.reviewer: 

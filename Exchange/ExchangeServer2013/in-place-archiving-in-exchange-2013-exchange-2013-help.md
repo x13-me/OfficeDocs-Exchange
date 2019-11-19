@@ -2,7 +2,7 @@
 title: 'In-Place Archiving in Exchange 2013: Exchange 2013 Help'
 TOCTitle: In-Place Archiving in Exchange 2013
 ms:assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979800(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd979800(v=EXCHG.150)
 ms:contentKeyID: 48385465
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -231,7 +231,7 @@ This section explains the functionality between In-Place Archives and various Ex
 
 - **Exchange Search**: The ability to quickly search messages becomes even more critical with archive mailboxes. For Exchange Search, there's no difference between the primary and archive mailbox. Content in both mailboxes is indexed. Because the archive mailbox isn't cached on a user's computer (even when using Outlook in Cached Exchange Mode), search results for the archive are always provided by Exchange Search. When searching the entire mailbox in Outlook 2010 and later and Outlook Web App, search results include the users' primary and archive mailbox.
 
-- **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange admin center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](https://technet.microsoft.com/en-us/library/dd298064\(v=exchg.150\)). To learn more, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
+- **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange admin center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](https://technet.microsoft.com/library/dd298064\(v=exchg.150\)). To learn more, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
     > [!IMPORTANT]
     > You can't use In-Place eDiscovery to search a disconnected mailbox.
@@ -255,6 +255,6 @@ In Exchange 2013, creating and managing archive mailboxes is integrated with com
 
 - **Disabling an archive mailbox**: You may want to disable a user's archive mailbox for troubleshooting purposes or if you're moving the primary mailbox to a version of Exchange that doesn't support In-Place Archiving. Disabling an archive is similar to disabling a primary mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md). In on-premises deployments, a disabled archive mailbox is retained in the mailbox database until the deleted mailbox retention period for that database is reached. During this period, you can reconnect the archive to a mailbox user. When the deleted mailbox retention period is reached, the disconnected archive mailbox is purged from the mailbox database.
 
-- **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)) cmdlets.
+- **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)) cmdlets.
 
-- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/en-us/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.
+- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.

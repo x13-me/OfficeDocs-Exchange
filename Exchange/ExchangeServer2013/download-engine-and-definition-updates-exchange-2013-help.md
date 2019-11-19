@@ -2,7 +2,7 @@
 title: 'Download engine and definition updates: Exchange 2013 Help'
 TOCTitle: Download engine and definition updates
 ms:assetid: 8f2ca383-e463-4df0-aa5d-29afe2f81aaf
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657471(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657471(v=EXCHG.150)
 ms:contentKeyID: 49289349
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -22,7 +22,7 @@ Microsoft Exchange Server 2013 administrators can manually download anti-malwar
 
 - Estimated time to complete: 5 minutes
 
-- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
 
 - To download updates, your computer must be able to access the Internet and be able to establish a connection on TCP port 80 (HTTP). If your organization uses a proxy server for Internet access, see the Use the Shell to configure proxy server settings for anti-malware updates section in this topic.
 

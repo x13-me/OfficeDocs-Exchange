@@ -2,7 +2,7 @@
 title: 'Message properties indexed by Exchange Search: Exchange 2013 Help'
 TOCTitle: Message properties indexed by Exchange Search
 ms:assetid: a9754dc1-44aa-4076-8b59-a5d39246d5b0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ983804(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ983804(v=EXCHG.150)
 ms:contentKeyID: 51407271
 ms.date: 06/04/2016
 ms.reviewer: 

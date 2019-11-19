@@ -2,7 +2,7 @@
 title: 'Configure IRM for Exchange Search and In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: Configure IRM for Exchange Search and In-Place eDiscovery
 ms:assetid: d96790e9-93ad-4a56-b90f-2dbfa2f2073c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg588319(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Gg588319(v=EXCHG.150)
 ms:contentKeyID: 49319934
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -53,7 +53,7 @@ This example configures IRM to allow Exchange Search to index IRM-protected mess
 Set-IRMConfiguration -SearchEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
 
 ## Use the Shell to configure IRM for In-Place eDiscovery
 
@@ -66,8 +66,8 @@ This example enables members of the Discovery Management role group to access IR
 Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
 
 ## How do you know this worked?
 
-To verify that you have successfully configured IRM for Exchange Search and In-Place eDiscovery, use the **Get-IRMConfigurtaion** cmdlet to retrieve the IRM configuration information. For an example of how to retrieve the IRM configuration, see [Examples](https://technet.microsoft.com/en-us/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
+To verify that you have successfully configured IRM for Exchange Search and In-Place eDiscovery, use the **Get-IRMConfigurtaion** cmdlet to retrieve the IRM configuration information. For an example of how to retrieve the IRM configuration, see [Examples](https://technet.microsoft.com/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.

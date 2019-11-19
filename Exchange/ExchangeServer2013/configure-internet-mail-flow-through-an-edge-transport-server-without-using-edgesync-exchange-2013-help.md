@@ -2,7 +2,7 @@
 title: 'Configure internet mail flow through an Edge Transport server without using EdgeSync'
 TOCTitle: Configure Internet mail flow through an Edge Transport server without using EdgeSync
 ms:assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232082(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232082(v=EXCHG.150)
 ms:contentKeyID: 61200290
 ms.date: 01/23/2017
 ms.reviewer: 
@@ -72,7 +72,7 @@ To create a Send connector that's configured to send messages to the Internet, r
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/en-us/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
 
 ## Step 2: Create a Send connector configured to send messages to the Exchange organization
 
@@ -104,7 +104,7 @@ $MailboxCredentials = Get-Credential
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/en-us/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
 
 ## Step 3: Modify the default Receive connector to only accept messages from the Internet
 
@@ -120,7 +120,7 @@ To modify the default Receive connector to only accept messages from the Interne
 Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125140\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
 
 ## Step 4: Create a Receive connector configured to only accept messages from the Exchange organization
 
@@ -142,7 +142,7 @@ To create a Receive connector configured to only accept messages from the Exchan
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
 
 ## How do you know these steps worked?
 
@@ -186,7 +186,7 @@ $EdgeCredentials = Get-Credential
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/en-us/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
 
 ## How do you know this step worked?
 

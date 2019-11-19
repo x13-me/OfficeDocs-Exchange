@@ -2,7 +2,7 @@
 title: 'Manage sender reputation: Exchange 2013 Help'
 TOCTitle: Manage sender reputation
 ms:assetid: f2716bd9-e3ac-46d9-9264-4e3dabfa0f38
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125186(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125186(v=EXCHG.150)
 ms:contentKeyID: 49248691
 ms.date: 12/09/2016
 ms.reviewer: 

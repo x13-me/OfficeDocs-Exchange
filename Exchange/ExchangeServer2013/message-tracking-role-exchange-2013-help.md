@@ -2,7 +2,7 @@
 title: 'Message Tracking role: Exchange 2013 Help'
 TOCTitle: Message Tracking role
 ms:assetid: 21f18ccd-9b7d-461b-b77c-443d15696d79
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876858(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876858(v=EXCHG.150)
 ms:contentKeyID: 49289192
 ms.date: 05/13/2016
 ms.reviewer: 

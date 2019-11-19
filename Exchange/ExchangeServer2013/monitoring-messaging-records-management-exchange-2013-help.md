@@ -2,7 +2,7 @@
 title: 'Monitoring messaging records management: Exchange 2013 Help'
 TOCTitle: Monitoring messaging records management
 ms:assetid: bb5aa00a-e2b8-4abe-9943-eccab5a116db
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310793(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb310793(v=EXCHG.150)
 ms:contentKeyID: 50873809
 ms.date: 05/13/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Content conversion tracing: Exchange 2013 Help'
 TOCTitle: Content conversion tracing
 ms:assetid: eb9c7df2-9093-49f9-aa4f-044909bd2225
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb397226(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb397226(v=EXCHG.150)
 ms:contentKeyID: 49345062
 ms.date: 05/13/2016
 ms.reviewer: 

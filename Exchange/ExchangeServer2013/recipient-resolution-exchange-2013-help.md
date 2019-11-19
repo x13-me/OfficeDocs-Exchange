@@ -2,7 +2,7 @@
 title: 'Recipient resolution: Exchange 2013 Help'
 TOCTitle: Recipient resolution
 ms:assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb430743(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb430743(v=EXCHG.150)
 ms:contentKeyID: 50934209
 ms.date: 06/02/2016
 ms.reviewer: 

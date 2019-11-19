@@ -2,7 +2,7 @@
 title: Troubleshooting UserThrottling Health Set
 TOCTitle: Troubleshooting UserThrottling Health Set
 ms:assetid: 8d48d06a-9d96-4905-84db-bb84398d0a54
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.userthrottling(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.userthrottling(v=EXCHG.150)
 ms:contentKeyID: 49720850
 ms.date:
 ms.reviewer:

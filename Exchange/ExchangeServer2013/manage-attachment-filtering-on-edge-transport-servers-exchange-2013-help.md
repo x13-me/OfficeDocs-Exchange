@@ -2,7 +2,7 @@
 title: 'Manage attachment filtering on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Manage attachment filtering on Edge Transport servers
 ms:assetid: 2ec91cc6-6ade-48ee-88bb-66153874393d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997139(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997139(v=EXCHG.150)
 ms:contentKeyID: 61200281
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -203,7 +203,7 @@ This example makes the following changes to the attachment filtering configurati
 Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
 ```
 
-For more information, see [Set-AttachmentFilterListConfig](https://technet.microsoft.com/en-us/library/bb123483\(v=exchg.150\)).
+For more information, see [Set-AttachmentFilterListConfig](https://technet.microsoft.com/library/bb123483\(v=exchg.150\)).
 
 ## How do you know this worked?
 

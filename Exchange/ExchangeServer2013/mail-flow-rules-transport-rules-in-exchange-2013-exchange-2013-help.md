@@ -2,7 +2,7 @@
 title: 'Transport rules in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Transport rules
 ms:assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351127(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351127(v=EXCHG.150)
 ms:contentKeyID: 49289403
 ms.date: 04/28/2017
 ms.reviewer: 
@@ -257,7 +257,7 @@ There are two mixed environment scenarios that are common in Exchange 2013:
   In a hybrid environment, there's no replication of rules between your on-premises Exchange organization and Office 365. Therefore, when you create a rule in Exchange, you need to create a matching rule in Office 365. Rules you create in Office 365 are stored in the cloud, whereas the rules you create in your on-premises organization are stored locally in Active Directory. When you manage rules in a hybrid environment, you need to keep the two sets of rules synchronized by making the change in both places, or making the change in one environment and then exporting the rules and importing them in the other environment.
 
   > [!IMPORTANT]
-  > Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:<BR><A href="https://technet.microsoft.com/en-us/library/jj919235(v=exchg.150)">Transport rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj919237(v=exchg.150)">Transport rule actions in Exchange Online</A>
+  > Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:<BR><A href="https://technet.microsoft.com/library/jj919235(v=exchg.150)">Transport rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj919237(v=exchg.150)">Transport rule actions in Exchange Online</A>
 
 - **Coexistence with Exchange 2010 or Exchange 2007**
 

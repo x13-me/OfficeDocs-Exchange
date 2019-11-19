@@ -2,7 +2,7 @@
 title: 'View-Only Configuration role: Exchange 2013 Help'
 TOCTitle: View-Only Configuration role
 ms:assetid: 72607063-7f2d-4b3e-a2a9-27eb88e1e16a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876907(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876907(v=EXCHG.150)
 ms:contentKeyID: 49289305
 ms.date: 05/13/2016
 ms.reviewer: 

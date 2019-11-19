@@ -2,7 +2,7 @@
 title: Troubleshooting ActiveSync Health Set
 TOCTitle: Troubleshooting ActiveSync Health Set
 ms:assetid: 8a0b8b26-b4ef-41b8-8f71-8271c1735a69
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.activesync(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.activesync(v=EXCHG.150)
 ms:contentKeyID: 49720831
 ms.date:
 ms.reviewer:
@@ -81,7 +81,7 @@ The ActiveSync service is monitored using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## User Action
 
@@ -233,8 +233,8 @@ This monitor alert is typically issued on CA servers.
 
 ## For More Information
 
-[Exchange ActiveSync](https://technet.microsoft.com/en-us/library/aa998357\(v=exchg.150\))
+[Exchange ActiveSync](https://technet.microsoft.com/library/aa998357\(v=exchg.150\))
 
-[Mobile devices](https://technet.microsoft.com/en-us/library/bb232129\(v=exchg.150\))
+[Mobile devices](https://technet.microsoft.com/library/bb232129\(v=exchg.150\))
 
-[Exchange ActiveSync virtual directory management tasks](https://technet.microsoft.com/en-us/library/bb125170\(v=exchg.150\))
+[Exchange ActiveSync virtual directory management tasks](https://technet.microsoft.com/library/bb125170\(v=exchg.150\))

@@ -2,7 +2,7 @@
 title: "What's discontinued in Exchange 2013: Exchange 2013 Help"
 TOCTitle: What's discontinued in Exchange 2013
 ms:assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619283(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619283(v=EXCHG.150)
 ms:contentKeyID: 49289156
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -155,7 +155,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Linked connectors</p></td>
-<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://technet.microsoft.com/en-us/library/aa998936(v=exchg.150)">New-SendConnector</a> and <a href="https://technet.microsoft.com/en-us/library/aa998294(v=exchg.150)">Set-SendConnector</a>.</p></td>
+<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://technet.microsoft.com/library/aa998936(v=exchg.150)">New-SendConnector</a> and <a href="https://technet.microsoft.com/library/aa998294(v=exchg.150)">Set-SendConnector</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -481,7 +481,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>ISInteg</p></td>
-<td><p>In Exchange 2013, use <a href="https://technet.microsoft.com/en-us/library/ff625226(v=exchg.150)">New-MailboxRepairRequest</a>.</p></td>
+<td><p>In Exchange 2013, use <a href="https://technet.microsoft.com/library/ff625226(v=exchg.150)">New-MailboxRepairRequest</a>.</p></td>
 </tr>
 </tbody>
 </table>

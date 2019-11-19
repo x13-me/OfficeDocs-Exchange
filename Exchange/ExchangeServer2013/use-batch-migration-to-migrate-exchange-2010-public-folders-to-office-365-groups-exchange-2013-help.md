@@ -6,7 +6,7 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843875(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Mt843875(v=EXCHG.150)
 ms:contentKeyID: 74468674
 mtps_version: v=EXCHG.150
 ---
@@ -201,7 +201,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219164\(v=exchg.150\)) and [Get-MigrationUser](https://technet.microsoft.com/en-us/library/jj218702\(v=exchg.150\)) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/library/jj219164\(v=exchg.150\)) and [Get-MigrationUser](https://technet.microsoft.com/library/jj218702\(v=exchg.150\)) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 

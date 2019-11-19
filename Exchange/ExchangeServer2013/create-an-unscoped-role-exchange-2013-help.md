@@ -2,7 +2,7 @@
 title: 'Create an unscoped role: Exchange 2013 Help'
 TOCTitle: Create an unscoped role
 ms:assetid: 5a042ccf-4d5f-4609-a91b-21c20d1e6459
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876886(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876886(v=EXCHG.150)
 ms:contentKeyID: 49289258
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -67,7 +67,7 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 After it's created, the role is empty until you add scripts or non-Exchange cmdlets to it.
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/en-us/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
 
 ## Step 2a: Add script management role entries
 
@@ -153,7 +153,7 @@ This example copies the IT Global Scripts role and its management role entries t
 New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/en-us/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
 
 ## Step 2: Change the role's management role entries
 

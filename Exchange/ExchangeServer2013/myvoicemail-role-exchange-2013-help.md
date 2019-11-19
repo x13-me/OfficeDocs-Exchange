@@ -2,7 +2,7 @@
 title: 'MyVoiceMail role: Exchange 2013 Help'
 TOCTitle: MyVoiceMail role
 ms:assetid: 5c7310e9-742c-4bdf-90b6-0a0d17c3bda1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876890(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876890(v=EXCHG.150)
 ms:contentKeyID: 49289264
 ms.date: 05/13/2016
 ms.reviewer: 

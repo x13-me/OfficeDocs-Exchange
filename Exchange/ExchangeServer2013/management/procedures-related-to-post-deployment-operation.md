@@ -2,7 +2,7 @@
 title: Procedures related to post-deployment operation
 TOCTitle: Procedures related to post-deployment operation
 ms:assetid: d9613a5c-5661-4bce-9a2c-e2c7b601e723
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn198286(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn198286(v=EXCHG.150)
 ms:contentKeyID: 53496601
 ms.date: 
 ms.reviewer: 
@@ -74,7 +74,7 @@ Let's say that you don't use the POP3 feature in your organization. You may want
 
 1. Start the Exchange Management Shell
 
-2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
+2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
 
    ```powershell
    $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
@@ -137,4 +137,4 @@ See the following topics for more information about the cmdlets you can use to c
 
 - [Get-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272118)
 
-- [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\))
+- [Get-MonitoringItemIdentity](https://technet.microsoft.com/library/jj218668\(v=exchg.150\))

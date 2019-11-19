@@ -2,7 +2,7 @@
 title: 'Configure message size limits for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure message size limits for a mailbox
 ms:assetid: d1220685-14c0-4c4f-abb2-3920f3046212
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124708(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124708(v=EXCHG.150)
 ms:contentKeyID: 50383002
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -60,7 +60,7 @@ This example sets the maximum size for sent messages to 25 MB and the maximum s
 Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## How do you know this worked?
 

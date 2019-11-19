@@ -2,7 +2,7 @@
 title: 'Deploying voice mail and UM: Exchange 2013 Help'
 TOCTitle: Deploying voice mail and UM
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673519(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673519(v=EXCHG.150)
 ms:contentKeyID: 49315394
 ms.date: 12/09/2016
 ms.reviewer: 

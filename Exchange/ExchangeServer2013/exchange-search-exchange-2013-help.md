@@ -2,7 +2,7 @@
 title: 'Exchange Search: Exchange 2013 Help'
 TOCTitle: Exchange Search
 ms:assetid: 967e2a13-4e54-486a-ac22-08768674abbb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232132(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232132(v=EXCHG.150)
 ms:contentKeyID: 51407269
 ms.date: 06/04/2016
 ms.reviewer: 

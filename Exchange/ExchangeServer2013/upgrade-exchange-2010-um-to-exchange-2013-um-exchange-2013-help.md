@@ -2,7 +2,7 @@
 title: 'Upgrade Exchange 2010 UM to Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: Upgrade Exchange 2010 UM to Exchange 2013 UM
 ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169226(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn169226(v=EXCHG.150)
 ms:contentKeyID: 53382778
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -117,9 +117,9 @@ To learn more about custom prompts for UM, see:
 
 - [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
 
-- [Import-UMPrompt](https://technet.microsoft.com/en-us/library/dd876899\(v=exchg.150\))
+- [Import-UMPrompt](https://technet.microsoft.com/library/dd876899\(v=exchg.150\))
 
-- [Export-UMPrompt](https://technet.microsoft.com/en-us/library/dd876882\(v=exchg.150\))
+- [Export-UMPrompt](https://technet.microsoft.com/library/dd876882\(v=exchg.150\))
 
 - [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
 
@@ -483,9 +483,9 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-- [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\))
 
-- [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://technet.microsoft.com/library/jj219166\(v=exchg.150\))
 
 - [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
 

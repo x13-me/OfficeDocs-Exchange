@@ -2,7 +2,7 @@
 title: 'Connect a VoIP gateway, IP PBX, or session border controller to UM: Exchange 2013 Help'
 TOCTitle: Connect a VoIP gateway, IP PBX, or session border controller to UM
 ms:assetid: a7cecf59-b93a-413b-bb88-29f2669ef2cf
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124084(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124084(v=EXCHG.150)
 ms:contentKeyID: 49315480
 ms.date: 12/09/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'POP3 and IMAP4 in Exchange Server 2013: Exchange 2013 Help'
 TOCTitle: POP3 and IMAP4
 ms:assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657728(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657728(v=EXCHG.150)
 ms:contentKeyID: 49300645
 ms.date: 08/16/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Create a database availability group network: Exchange 2013 Help'
 TOCTitle: Create a database availability group network
 ms:assetid: 6caec7be-788a-4058-87a7-f31c575b870c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298051(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298051(v=EXCHG.150)
 ms:contentKeyID: 48385202
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -73,10 +73,10 @@ To verify that you've successfully created a DAG network, do one of the followin
 
 ## For more information
 
-[Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd298008\(v=exchg.150\))
+[Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/dd298008\(v=exchg.150\))
 
-[Get-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd297938\(v=exchg.150\))
+[Get-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/dd297938\(v=exchg.150\))
 
-[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd335225\(v=exchg.150\))
+[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/dd335225\(v=exchg.150\))
 
-[Remove-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd298131\(v=exchg.150\))
+[Remove-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/dd298131\(v=exchg.150\))

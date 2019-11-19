@@ -2,7 +2,7 @@
 title: Troubleshooting OWA.Proxy Health Set
 TOCTitle: Troubleshooting OWA.Proxy Health Set
 ms:assetid: 1eaa26ad-b489-402a-ad2d-bfae3b083f42
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720734
 ms.date:
 ms.reviewer:
@@ -55,7 +55,7 @@ The Outlook Web App service is monitored by using the following probes and monit
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -146,8 +146,8 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
 
-[Managing Outlook Web App](https://technet.microsoft.com/en-us/3814b665-01e8-4881-9a44-163f14789ee4\(exchg.150\)#managing)
+[Managing Outlook Web App](https://technet.microsoft.com/3814b665-01e8-4881-9a44-163f14789ee4\(exchg.150\)#managing)

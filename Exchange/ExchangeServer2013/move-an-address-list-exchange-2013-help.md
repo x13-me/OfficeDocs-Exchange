@@ -2,7 +2,7 @@
 title: 'Move an address list: Exchange 2013 Help'
 TOCTitle: Move an address list
 ms:assetid: c843bbd5-6c0e-41e1-b749-7ae87c1beb25
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124534(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124534(v=EXCHG.150)
 ms:contentKeyID: 49289405
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -43,4 +43,4 @@ Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Us
 
 Type **Y** to confirm that you want to move this address list, and then press ENTER.
 
-For detailed syntax and parameter information, see [Move-AddressList](https://technet.microsoft.com/en-us/library/bb124520\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Move-AddressList](https://technet.microsoft.com/library/bb124520\(v=exchg.150\)).

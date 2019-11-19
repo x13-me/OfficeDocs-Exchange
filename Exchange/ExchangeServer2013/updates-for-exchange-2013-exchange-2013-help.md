@@ -2,7 +2,7 @@
 title: 'Updates for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Updates for Exchange 2013
 ms:assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907309(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ907309(v=EXCHG.150)
 ms:contentKeyID: 50639772
 ms.date: 03/20/2018
 ms.reviewer: 
@@ -71,11 +71,11 @@ Edge Transport servers minimize attack surface by handling all Internet-facing m
 
 ### OWA Junk Email Reporting
 
-Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/en-us/library/dn594557\(v=exchg.150\)).
+Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/library/dn594557\(v=exchg.150\)).
 
 ### S/MIME for Message Signing and Encryption
 
-Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/en-us/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://technet.microsoft.com/en-us/library/dn554257\(v=exchg.150\)) cmdlet reference.
+Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/en-us/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://technet.microsoft.com/library/dn554257\(v=exchg.150\)) cmdlet reference.
 
 ### DLP Policy Tips available in the desktop and mobile version of Outlook Web App
 
@@ -135,7 +135,7 @@ If you have multiple Client Access servers, each Client Access server in your or
 
 ### Public Attachment Handling in Exchange Online
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library. Go here for details, [Public Attachment Handling in Exchange Online](https://technet.microsoft.com/en-us/library/dn530630\(v=exchg.150\).aspx).
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library. Go here for details, [Public Attachment Handling in Exchange Online](https://technet.microsoft.com/library/dn530630\(v=exchg.150\).aspx).
 
 ### Browser Support for AppCache
 
@@ -163,7 +163,7 @@ For more information, see [Configure OAuth authentication between Exchange and E
 
 New in Exchange 2013 SP1, hybrid deployments are now supported in organizations with multiple Active Directory forests. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple Active Directory forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
-For more information, see [Hybrid deployments with multiple Active Directory forests](https://technet.microsoft.com/en-us/library/jj873754\(v=exchg.150\)).
+For more information, see [Hybrid deployments with multiple Active Directory forests](https://technet.microsoft.com/library/jj873754\(v=exchg.150\)).
 
 ### Database Availability Group without an Administrative Access Point
 

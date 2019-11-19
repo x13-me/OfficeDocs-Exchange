@@ -2,7 +2,7 @@
 title: 'Copy eDiscovery search results to a discovery mailbox: Exchange 2013 Help'
 TOCTitle: Copy eDiscovery search results to a discovery mailbox
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn624163(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn624163(v=EXCHG.150)
 ms:contentKeyID: 61200239
 ms.date: 12/10/2017
 ms.reviewer: 
@@ -67,7 +67,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-- [New-MailboxSearch](https://technet.microsoft.com/en-us/library/dd298064\(v=exchg.150\))
+- [New-MailboxSearch](https://technet.microsoft.com/library/dd298064\(v=exchg.150\))
 
 For example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the specified discovery mailbox.
 

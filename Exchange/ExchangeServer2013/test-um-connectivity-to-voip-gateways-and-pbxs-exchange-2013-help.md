@@ -2,7 +2,7 @@
 title: 'Test UM connectivity to VoIP gateways and PBXs: Exchange 2013 Help'
 TOCTitle: Test UM connectivity to VoIP gateways and PBXs
 ms:assetid: 2aca8631-a99a-4e29-aff0-e462385f03b2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996906(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996906(v=EXCHG.150)
 ms:contentKeyID: 55129209
 ms.date: 12/09/2016
 ms.reviewer: 

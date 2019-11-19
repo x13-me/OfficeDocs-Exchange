@@ -6,7 +6,7 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn912663(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn912663(v=EXCHG.150)
 ms:contentKeyID: 64568564
 mtps_version: v=EXCHG.150
 ---
@@ -48,7 +48,7 @@ Exchange supports moving your public folders from the following legacy versions 
 
 - Exchange 2007 SP3 RU15 or later
 
-If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://technet.microsoft.com/en-us/library/jj150486\(v=exchg.150\)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
+If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://technet.microsoft.com/library/jj150486\(v=exchg.150\)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
 
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later, or to Exchange 2007 SP3 RU15 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2013 public folder can't be routed through an Exchange 2003 server.
 
@@ -161,15 +161,15 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://technet.microsoft.com/en-us/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/en-us/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
 
-- [Set-PublicFolder](https://technet.microsoft.com/en-us/library/aa998596\(v=exchg.150\))
+- [Set-PublicFolder](https://technet.microsoft.com/library/aa998596\(v=exchg.150\))
 
-- [Get-PublicFolderStatistics](https://technet.microsoft.com/en-us/library/aa998663\(v=exchg.150\))
+- [Get-PublicFolderStatistics](https://technet.microsoft.com/library/aa998663\(v=exchg.150\))
 
-- [Get-PublicFolderClientPermission](https://technet.microsoft.com/en-us/library/bb124365\(v=exchg.150\))
+- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/bb124365\(v=exchg.150\))
 
 - [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
 
@@ -237,27 +237,27 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219164\(v=exchg.150\))
+- [Get-MigrationBatch](https://technet.microsoft.com/library/jj219164\(v=exchg.150\))
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
 - [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218718\(v=exchg.150\))
+- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218718\(v=exchg.150\))
 
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218625\(v=exchg.150\))
+- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218625\(v=exchg.150\))
 
-- [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
 
-- [Get-PublicFolder](https://technet.microsoft.com/en-us/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
 
-- [Get-MailPublicFolder](https://technet.microsoft.com/en-us/library/bb124772\(v=exchg.150\))
+- [Get-MailPublicFolder](https://technet.microsoft.com/library/bb124772\(v=exchg.150\))
 
-- [Disable-MailPublicFolder](https://technet.microsoft.com/en-us/library/bb123781\(v=exchg.150\))
+- [Disable-MailPublicFolder](https://technet.microsoft.com/library/bb123781\(v=exchg.150\))
 
-- [Remove-PublicFolder](https://technet.microsoft.com/en-us/library/bb124894\(v=exchg.150\))
+- [Remove-PublicFolder](https://technet.microsoft.com/library/bb124894\(v=exchg.150\))
 
-- [Remove-Mailbox](https://technet.microsoft.com/en-us/library/aa995948\(v=exchg.150\))
+- [Remove-Mailbox](https://technet.microsoft.com/library/aa995948\(v=exchg.150\))
 
 ## Step 3: Generate the .csv files
 
@@ -367,7 +367,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/en-us/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
@@ -385,7 +385,7 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/en-us/library/aa997443\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 

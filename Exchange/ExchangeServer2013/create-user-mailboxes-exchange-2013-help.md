@@ -2,7 +2,7 @@
 title: 'Create user mailboxes: Exchange 2013 Help'
 TOCTitle: Create user mailboxes
 ms:assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ991919(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ991919(v=EXCHG.150)
 ms:contentKeyID: 51588093
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -125,7 +125,7 @@ This example creates a new user account and mailbox for Pilar Pinilla with the f
 New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)).
+For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -195,9 +195,9 @@ For example, the following command mailbox-enables users who aren't already mail
 Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
 ```
 
-For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/en-us/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/en-us/library/aa996896\(v=exchg.150\)).
+For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/library/aa996896\(v=exchg.150\)).
 
-For more information about pipelining, see [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\)).
+For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
 
 ## How do you know this worked?
 

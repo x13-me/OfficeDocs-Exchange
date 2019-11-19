@@ -2,7 +2,7 @@
 title: 'Using a Microsoft Azure VM as a DAG witness server: Exchange 2013 Help'
 TOCTitle: Using a Microsoft Azure VM as a DAG witness server
 ms:assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn903504(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn903504(v=EXCHG.150)
 ms:contentKeyID: 63886642
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -280,7 +280,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-    1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/en-us/library/ee662309.aspx) cmdlet.
+    1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/library/ee662309.aspx) cmdlet.
 
     2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 
@@ -310,7 +310,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd297934\(v=exchg.150\).aspx)
+[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934\(v=exchg.150\).aspx)
 
 ## Checkpoint: Validate the DAG file share witness
 

@@ -2,7 +2,7 @@
 title: 'Disable or enable Exchange Search: Exchange 2013 Help'
 TOCTitle: Disable or enable Exchange Search
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996416(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -54,7 +54,7 @@ This command enables Exchange Search for a mailbox database named EXCH01.
 Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).
 
 ## Disable or enable Exchange Search for a Mailbox server
 

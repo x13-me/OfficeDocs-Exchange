@@ -2,7 +2,7 @@
 title: 'Recipients: Exchange 2013 Help'
 TOCTitle: Recipients
 ms:assetid: 40300ed4-85a5-463d-bb3a-cf787bd44e9d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201680(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb201680(v=EXCHG.150)
 ms:contentKeyID: 49315395
 ms.date: 06/04/2016
 ms.reviewer: 
@@ -214,7 +214,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 </tbody>
 </table>
 
-If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://technet.microsoft.com/en-us/library/aa997210\(v=exchg.150\)) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
+If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://technet.microsoft.com/library/aa997210\(v=exchg.150\)) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
 ## Planning for mailboxes
 
@@ -236,7 +236,7 @@ Exchange supports the following types of distribution groups:
   - **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
 
     > [!NOTE]
-    > To convert a domain-local or a global group to a universal group, you can use the <A href="https://technet.microsoft.com/en-us/library/bb123770(v=exchg.150)">Set-Group</A> cmdlet in the Shell.
+    > To convert a domain-local or a global group to a universal group, you can use the <A href="https://technet.microsoft.com/library/bb123770(v=exchg.150)">Set-Group</A> cmdlet in the Shell.
 
 ## Dynamic distribution groups
 
@@ -290,10 +290,10 @@ You can manage public folders by using either the EAC or the Shell. For more inf
 
 The Microsoft Exchange recipient is a special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender that was used for system-generated messages in earlier versions of Exchange.
 
-The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://technet.microsoft.com/en-us/library/aa997443\(v=exchg.150\)) cmdlet in the Shell to configure the Microsoft Exchange recipient.
+The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet in the Shell to configure the Microsoft Exchange recipient.
 
 > [!NOTE]
-> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://technet.microsoft.com/en-us/library/bb124151(v=exchg.150)">Set-TransportConfig</A> cmdlet is used.
+> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://technet.microsoft.com/library/bb124151(v=exchg.150)">Set-TransportConfig</A> cmdlet is used.
 
 ## Recipients documentation
 
@@ -360,7 +360,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to add information about a recipient by using custom attributes.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/en-us/library/bb124268(v=exchg.150)">Filters in recipient Shell commands</a></p></td>
+<td><p><a href="https://technet.microsoft.com/library/bb124268(v=exchg.150)">Filters in recipient Shell commands</a></p></td>
 <td><p>Learn how to use precanned or custom filters with commands to filter a set of recipients.</p></td>
 </tr>
 <tr class="even">

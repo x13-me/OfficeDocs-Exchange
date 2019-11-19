@@ -2,7 +2,7 @@
 title: 'Turn off or suspend messaging records management: Exchange 2013 Help'
 TOCTitle: Turn off or suspend messaging records management
 ms:assetid: 631191aa-3bba-4ebf-a727-c48ed2ebe176
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998580(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998580(v=EXCHG.150)
 ms:contentKeyID: 51439479
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -60,7 +60,7 @@ $tags -= "Deleted Items - 3 Days"
 Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
 ```
 
-For detailed syntax and parameter information, see [Get-RetentionPolicy](https://technet.microsoft.com/en-us/library/dd298086\(v=exchg.150\)) and [Set-RetentionPolicy](https://technet.microsoft.com/en-us/library/dd335196\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-RetentionPolicy](https://technet.microsoft.com/library/dd298086\(v=exchg.150\)) and [Set-RetentionPolicy](https://technet.microsoft.com/library/dd335196\(v=exchg.150\)).
 
 ## Remove retention policies from mailboxes
 
@@ -86,7 +86,7 @@ This Shell example removes the retention policy Corp-Finance from all mailbox us
 Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
 
 ## Turn off MRM permanently for an entire organization
 
@@ -120,8 +120,8 @@ Remove-RetentionPolicy Corp-Users
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\))
+- [Get-RetentionPolicyTag](https://technet.microsoft.com/library/dd298009\(v=exchg.150\))
 
-- [Remove-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd335092\(v=exchg.150\))
+- [Remove-RetentionPolicyTag](https://technet.microsoft.com/library/dd335092\(v=exchg.150\))
 
-- [Remove-RetentionPolicy](https://technet.microsoft.com/en-us/library/dd297962\(v=exchg.150\))
+- [Remove-RetentionPolicy](https://technet.microsoft.com/library/dd297962\(v=exchg.150\))

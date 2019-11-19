@@ -2,7 +2,7 @@
 title: 'Connect UM to a supported VoIP gateway: Exchange 2013 Help'
 TOCTitle: Connect UM to a supported VoIP gateway
 ms:assetid: b8dfc8bd-2ee5-418d-b0a4-4fa2ec7e2a2e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124360(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124360(v=EXCHG.150)
 ms:contentKeyID: 49315511
 ms.date: 05/13/2016
 ms.reviewer: 

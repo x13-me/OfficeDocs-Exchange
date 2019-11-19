@@ -2,7 +2,7 @@
 title: 'Configure UM to work with Lync Server: Exchange 2013 Help'
 TOCTitle: Configure UM to work with Lync Server
 ms:assetid: 29bdddbf-75d5-4c92-988e-c8506ecc7a1c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ966276(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ966276(v=EXCHG.150)
 ms:contentKeyID: 51439478
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -36,7 +36,7 @@ For additional management tasks related to integrating Lync Server and Unified M
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions Cmdlets" entry in the [Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\)) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions Cmdlets" entry in the [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\)) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

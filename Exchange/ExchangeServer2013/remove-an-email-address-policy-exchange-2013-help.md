@@ -2,7 +2,7 @@
 title: 'Remove an email address policy: Exchange 2013 Help'
 TOCTitle: Remove an email address policy
 ms:assetid: f1d05223-7d41-406d-8fae-f4227be1c1c2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125181(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125181(v=EXCHG.150)
 ms:contentKeyID: 49289454
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -55,4 +55,4 @@ Remove-EmailAddressPolicy -Identity "South East Offices"
 
 Type **Y** to confirm that you want to remove the policy, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://technet.microsoft.com/en-us/library/bb124504\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://technet.microsoft.com/library/bb124504\(v=exchg.150\)).

@@ -2,7 +2,7 @@
 title: 'Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Recoverable Items folder
 ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364755(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -309,7 +309,7 @@ The following table lists the events logged when the Recoverable Items folder re
 </tbody>
 </table>
 
-If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/en-us/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
 ## More information
 

@@ -2,7 +2,7 @@
 title: 'Manage linked mailboxes: Exchange 2013 Help'
 TOCTitle: Manage linked mailboxes
 ms:assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673532(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -25,7 +25,7 @@ The following figure illustrates the relationship between the linked user accoun
 ![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
 
 > [!NOTE]
-> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see <A href="https://technet.microsoft.com/en-us/library/jj156983(v=exchg.150)">Learn more about setting up a forest trust to support linked mailboxes</A>.
+> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see <A href="https://technet.microsoft.com/library/jj156983(v=exchg.150)">Learn more about setting up a forest trust to support linked mailboxes</A>.
 
 ## What do you need to know before you begin?
 
@@ -103,7 +103,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)).
+For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -334,9 +334,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
 
-- [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
 
 Here are some examples of using the Shell to change linked mailbox properties.
 

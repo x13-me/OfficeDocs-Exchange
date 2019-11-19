@@ -2,7 +2,7 @@
 title: 'Public folder procedures: Exchange 2013 Help'
 TOCTitle: Public folder procedures
 ms:assetid: afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657481(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657481(v=EXCHG.150)
 ms:contentKeyID: 49289372
 ms.reviewer: 
 manager: serdars

@@ -2,7 +2,7 @@
 title: 'Set credentials to use with Exchange UM Troubleshooting Tool: Exchange 2013 Help'
 TOCTitle: Set the credentials to use with the Exchange UM Troubleshooting Tool
 ms:assetid: 542b7718-9345-40cc-bcb2-e307e70a1fa2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff630916(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff630916(v=EXCHG.150)
 ms:contentKeyID: 55129210
 ms.date: 12/09/2016
 ms.reviewer: 

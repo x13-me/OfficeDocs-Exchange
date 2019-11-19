@@ -2,7 +2,7 @@
 title: 'Change a role entry: Exchange 2013 Help'
 TOCTitle: Change a role entry
 ms:assetid: 5aa4f39c-16a4-4815-ac4f-2cdcfa2b3ee1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298005(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298005(v=EXCHG.150)
 ms:contentKeyID: 49289260
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -61,7 +61,7 @@ This example adds the *EmailAddresses* and *Type* parameters to the **Set-Mailbo
 Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
 
 ## Use the Shell to remove one or more parameters from a role entry
 
@@ -79,7 +79,7 @@ This example removes the *Port*, *ProtocolLoggingLevel*, and *SmartHostAuthMecha
 Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
 
 ## Use the Shell to remove all parameters from a role entry
 
@@ -102,7 +102,7 @@ This example removes all the parameters from the **Set-CASMailbox** cmdlet on th
 Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
 
 ## Use the Shell to apply a specific set of parameters
 
@@ -120,4 +120,4 @@ This example includes only the *Identity*, *DisplayName*, *MissedCallNotificatio
 Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).

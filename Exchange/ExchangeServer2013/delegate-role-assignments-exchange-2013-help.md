@@ -2,7 +2,7 @@
 title: 'Delegate role assignments: Exchange 2013 Help'
 TOCTitle: Delegate role assignments
 ms:assetid: ed2d00d9-90c9-49dc-ab8a-cd791569aeed
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351237(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351237(v=EXCHG.150)
 ms:contentKeyID: 49289453
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -66,4 +66,4 @@ This example creates a delegating role assignment to enable members of the Senio
 New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193\(v=exchg.150\)).

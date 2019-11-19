@@ -2,7 +2,7 @@
 title: 'Create a theme for Outlook Web App: Exchange 2013 Help'
 TOCTitle: Create a theme for Outlook Web App
 ms:assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201700(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb201700(v=EXCHG.150)
 ms:contentKeyID: 53957626
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -156,7 +156,7 @@ This example sets the default theme for Outlook Web App, where the server name i
 set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
 
 ### Use the Shell to disable theme selection for Outlook Web App
 
@@ -172,7 +172,7 @@ You can also complete both commands at the same time as shown in the following e
 set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
 
 ## Step 6: Run iisreset/noforce to save your changes
 

@@ -2,7 +2,7 @@
 title: 'Configure the Availability service for cross-forest topologies'
 TOCTitle: Configure the Availability service for cross-forest topologies
 ms:assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125182(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125182(v=EXCHG.150)
 ms:contentKeyID: 51588094
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -73,13 +73,13 @@ Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright 
 
 For detailed information about syntax and parameters, see the following topics:
 
-- [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\))
+- [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\))
 
-- [Add-ADPermission](https://technet.microsoft.com/en-us/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
 
-- [Add-AvailabilityAddressSpace](https://technet.microsoft.com/en-us/library/bb124122\(v=exchg.150\))
+- [Add-AvailabilityAddressSpace](https://technet.microsoft.com/library/bb124122\(v=exchg.150\))
 
-- [Set-AvailabilityConfig](https://technet.microsoft.com/en-us/library/bb124103\(v=exchg.150\))
+- [Set-AvailabilityConfig](https://technet.microsoft.com/library/bb124103\(v=exchg.150\))
 
 ## Use the Shell to configure organization-wide free/busy information in an untrusted cross-forest topology
 

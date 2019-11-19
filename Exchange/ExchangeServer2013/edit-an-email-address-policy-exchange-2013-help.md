@@ -2,7 +2,7 @@
 title: 'Edit an email address policy: Exchange 2013 Help'
 TOCTitle: Edit an email address policy
 ms:assetid: cc8b36a0-95f4-43e9-bc64-87646d2e14e4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124580(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124580(v=EXCHG.150)
 ms:contentKeyID: 49289411
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -64,4 +64,4 @@ Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvinc
 > [!NOTE]
 > Although the email address policy is already applied to recipients in Georgia, Alabama, and Louisiana, you must include them in the parameter because the parameter overwrites values; it doesn't append values to existing ones.
 
-For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://technet.microsoft.com/en-us/library/bb124517\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://technet.microsoft.com/library/bb124517\(v=exchg.150\)).

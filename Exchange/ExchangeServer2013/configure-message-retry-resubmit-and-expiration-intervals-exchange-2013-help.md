@@ -2,7 +2,7 @@
 title: 'Configure message retry, resubmit, and expiration intervals'
 TOCTitle: Configure message retry, resubmit, and expiration intervals
 ms:assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998043(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998043(v=EXCHG.150)
 ms:contentKeyID: 50646232
 ms.date: 12/09/2016
 ms.reviewer: 

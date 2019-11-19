@@ -2,7 +2,7 @@
 title: Troubleshooting Classification Health Set
 TOCTitle: Troubleshooting Classification Health Set
 ms:assetid: d3798d55-f1eb-45bc-b61a-a9bc60244586
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.classification(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.classification(v=EXCHG.150)
 ms:contentKeyID: 49720884
 ms.date: 10/08/2015
 ms.reviewer:

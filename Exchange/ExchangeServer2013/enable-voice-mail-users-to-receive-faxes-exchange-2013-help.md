@@ -2,7 +2,7 @@
 title: 'Enable voice mail users to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable voice mail users to receive faxes
 ms:assetid: 451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232022(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232022(v=EXCHG.150)
 ms:contentKeyID: 49315404
 ms.date: 05/13/2016
 ms.reviewer: 
@@ -222,7 +222,7 @@ Exchange Unified Messaging offers the following options when you're configuring 
 
 ## A single DID telephone number
 
-When you enable a user for Unified Messaging by using the **Enable UM mailbox** page or the **Enable-UMMailbox** cmdlet, you must specify at least a single extension number for the user. This extension number is enabled on a per-user basis and must be unique within a given dial plan. The extension is used by Unified Messaging to locate the correct user and to deliver voice and fax messages to the user's mailbox. For more information, see [Enable-UMMailbox](https://technet.microsoft.com/en-us/library/aa998033\(v=exchg.150\)).
+When you enable a user for Unified Messaging by using the **Enable UM mailbox** page or the **Enable-UMMailbox** cmdlet, you must specify at least a single extension number for the user. This extension number is enabled on a per-user basis and must be unique within a given dial plan. The extension is used by Unified Messaging to locate the correct user and to deliver voice and fax messages to the user's mailbox. For more information, see [Enable-UMMailbox](https://technet.microsoft.com/library/aa998033\(v=exchg.150\)).
 
 Using a single DID number, you can configure faxing so that a user uses a single DID number for both voice and fax. This configuration is easy to administer and doesn't waste additional DID numbers. If the user is away or on the phone when a fax call arrives, UM answers the call, detects the fax tone, creates the fax message, and sends it to the user.
 

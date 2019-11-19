@@ -2,7 +2,7 @@
 title: 'Migrate from managed folders: Exchange 2013 Help'
 TOCTitle: Migrate from managed folders
 ms:assetid: 6796a79d-501e-4216-9370-77965bc5835d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298032(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298032(v=EXCHG.150)
 ms:contentKeyID: 51439480
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -249,7 +249,7 @@ New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
 New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd335226\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/library/dd335226\(v=exchg.150\)).
 
 ### Create retention tags manually
 
@@ -268,7 +268,7 @@ New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitFo
 New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd335226\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://technet.microsoft.com/library/dd335226\(v=exchg.150\)).
 
 ## Step 2: Create a retention policy
 
@@ -283,7 +283,7 @@ This example creates the retention policy RP-Corp and links the newly created re
 New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/en-us/library/dd297970\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/library/dd297970\(v=exchg.150\)).
 
 ## Step 3: Remove the managed folder mailbox policy from user mailboxes
 
@@ -308,7 +308,7 @@ This example applies the newly created retention policy RP-Corp to the mailbox u
 Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## How do you know this task worked?
 
@@ -322,7 +322,7 @@ To verify that you have migrated from managed folders to retention policies, do 
   Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*"} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
   ```
 
-- After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.
+- After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.
 
   This command retrieves the retention tags actually applied to April Stewart's mailbox.
 

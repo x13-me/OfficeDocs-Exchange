@@ -2,7 +2,7 @@
 title: 'Create a Receive connector to receive messages from an internal Exchange server'
 TOCTitle: Create a Receive connector to receive messages from an internal Exchange server
 ms:assetid: 546cead9-7a2d-4332-a5f6-35343d56c619
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657448(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657448(v=EXCHG.150)
 ms:contentKeyID: 49289255
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -47,11 +47,11 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 5. Click **Finish** to create the connector.
 
-Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
+Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
 
 ## How do you know this worked?
 
-To verify that you have successfully created a Receive connector to receive messages from an internal server, test that messages from the sending server travel successfully to the recipient server. One way to do this is to use the Exchange Management Shell to set the *ProtocolLoggingLevel* for the Receive connector you created to `Verbose`, using the [Set-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125140\(v=exchg.150\)) cmdlet, and check the logs to ensure message delivery.
+To verify that you have successfully created a Receive connector to receive messages from an internal server, test that messages from the sending server travel successfully to the recipient server. One way to do this is to use the Exchange Management Shell to set the *ProtocolLoggingLevel* for the Receive connector you created to `Verbose`, using the [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)) cmdlet, and check the logs to ensure message delivery.
 
 ## For more information
 

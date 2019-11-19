@@ -2,7 +2,7 @@
 title: Troubleshooting IMAP.Proxy Health Set
 TOCTitle: Troubleshooting IMAP.Proxy Health Set
 ms:assetid: 0edbfa5f-34cd-4bbd-ba23-c2b7d84762f8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.imap.proxy(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720728
 ms.date: 
 manager: serdars
@@ -27,8 +27,8 @@ For more information about the IMAP health set, see [Troubleshooting IMAP Health
 
 ## For More Information
 
-[POP3 and IMAP4](https://technet.microsoft.com/en-us/library/jj657728\(v=exchg.150\))
+[POP3 and IMAP4](https://technet.microsoft.com/library/jj657728\(v=exchg.150\))
 
-[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/en-us/library/bb124489\(v=exchg.150\))
+[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/library/bb124489\(v=exchg.150\))
 
-[Test-ImapConnectivity](https://technet.microsoft.com/en-us/library/bb738126\(v=exchg.150\))
+[Test-ImapConnectivity](https://technet.microsoft.com/library/bb738126\(v=exchg.150\))

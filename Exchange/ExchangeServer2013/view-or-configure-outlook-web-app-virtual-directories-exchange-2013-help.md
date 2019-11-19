@@ -2,7 +2,7 @@
 title: 'View or configure Outlook Web App virtual directories: Exchange 2013 Help'
 TOCTitle: View or configure Outlook Web App virtual directories
 ms:assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298140(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298140(v=EXCHG.150)
 ms:contentKeyID: 49315461
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -26,7 +26,7 @@ If you use the Shell to view the properties of an Outlook Web App virtual direct
 
 - Exchange server version
 
-You can also retrieve information for a specific virtual directory on a specific server by using the available parameters. For more information about the parameters for the **Get-OWAVirtualDirectory** cmdlet, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/aa998588\(v=exchg.150\)).
+You can also retrieve information for a specific virtual directory on a specific server by using the available parameters. For more information about the parameters for the **Get-OWAVirtualDirectory** cmdlet, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/library/aa998588\(v=exchg.150\)).
 
 If you use the EAC to view the properties of an Outlook Web App virtual directory, you'll be able to view most of the properties for the virtual directory that you're viewing.
 
@@ -118,7 +118,7 @@ This example enables forms-based authentication on the default Outlook Web App v
 Set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
 ```
 
-For more information about syntax and parameters, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
 
 ## Use the Shell to view Outlook Web App virtual directory properties
 
@@ -146,7 +146,7 @@ This example lets you view the values of the properties for every Outlook Web Ap
 Get-OWAVirtualDirectory | format-list
 ```
 
-For more information about syntax and parameters, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/aa998588\(v=exchg.150\)).
+For more information about syntax and parameters, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/library/aa998588\(v=exchg.150\)).
 
 ## How do you know this worked?
 

@@ -2,7 +2,7 @@
 title: 'Disable Internet calendar publishing: Exchange 2013 Help'
 TOCTitle: Disable Internet calendar publishing
 ms:assetid: f26dbf04-9dae-460f-a987-2ad3dfbc7b7e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ853047(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ853047(v=EXCHG.150)
 ms:contentKeyID: 50390856
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -21,7 +21,7 @@ How you disable Internet calendar publishing depends on how you enabled it. If y
 When you disable Internet calendar publishing, users who are provisioned to use the sharing policy won't be able to share calendar information with the **Anonymous** internet domain specified in the policy. However, you can't delete or disable a sharing policy that's dedicated to Internet calendar publishing until all users who are provisioned to use that policy have the policy setting removed from their mailboxes. For details about changing the sharing policy setting for a user, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 > [!NOTE]
-> If you disable or delete a sharing policy, users provisioned to use the policy will continue to share information until the Sharing Policy Assistant runs. To specify how often the Sharing Policy Assistant runs, use the <A href="https://technet.microsoft.com/en-us/library/aa998651(v=exchg.150)">Set-MailboxServer</A> cmdlet with the <EM>SharingPolicySchedule</EM> parameter.
+> If you disable or delete a sharing policy, users provisioned to use the policy will continue to share information until the Sharing Policy Assistant runs. To specify how often the Sharing Policy Assistant runs, use the <A href="https://technet.microsoft.com/library/aa998651(v=exchg.150)">Set-MailboxServer</A> cmdlet with the <EM>SharingPolicySchedule</EM> parameter.
 
 To fully disable Internet calendar publishing, you should also disable the Outlook Web App virtual directory used for calendar publishing. Doing this prohibits access to the published calendar links previously shared by your Exchange organization users with external Internet users. This step is detailed later in this topic.
 
@@ -70,7 +70,7 @@ This example deletes a dedicated Internet calendar publishing sharing policy nam
 Remove-SharingPolicy -Identity "Internet"
 ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/en-us/library/dd297931\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/library/dd297931\(v=exchg.150\)).
 
 ### How do you know this step worked?
 
@@ -84,7 +84,7 @@ If you've removed the dedicated Internet calendar publishing sharing policy, you
 
 If you've updated the default sharing policy, verify that the `Anonymous` domain has been removed from the *Domains* parameter.
 
-For detailed syntax and parameter information, see [Get-SharingPolicy](https://technet.microsoft.com/en-us/library/dd335081\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-SharingPolicy](https://technet.microsoft.com/library/dd335081\(v=exchg.150\)).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -100,7 +100,7 @@ This example disables Anonymous features for the Outlook Web App virtual directo
 Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
 
 ### How do you know this step worked?
 
@@ -110,7 +110,7 @@ To verify that you have successfully disabled the Anonymous features for the Out
 Get-OwaVirtualDirectory | format-list
 ```
 
-For detailed syntax and parameter information, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/aa998588\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/library/aa998588\(v=exchg.150\)).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

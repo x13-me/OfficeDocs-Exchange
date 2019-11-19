@@ -2,7 +2,7 @@
 title: 'Protect voice mail: Exchange 2013 Help'
 TOCTitle: Protect voice mail
 ms:assetid: a88d41d5-2e70-4193-bcd3-dec50dff412b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351041(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351041(v=EXCHG.150)
 ms:contentKeyID: 49315484
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -94,9 +94,9 @@ Before you can implement IRM in Exchange, you must first deploy and configure yo
 
 ## Configuring and testing IRM
 
-You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
+You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
-After you've set up an Exchange server, you can use the [Test-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979798\(v=exchg.150\)) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
+After you've set up an Exchange server, you can use the [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798\(v=exchg.150\)) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
 
 - Inspects the IRM configuration for your Exchange organization.
 
@@ -256,7 +256,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 </tbody>
 </table>
 
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\)).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\)).
 
 ## Text message notifications and Protected Voice Mail
 

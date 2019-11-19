@@ -2,7 +2,7 @@
 title: 'Mail flow: Exchange 2013 Help'
 TOCTitle: Mail flow
 ms:assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996349(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996349(v=EXCHG.150)
 ms:contentKeyID: 48384840
 ms.date: 07/14/2016
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'Enable or disable email for a mail contact: Exchange 2013 Help'
 TOCTitle: Enable or disable email for a mail contact
 ms:assetid: ca47441f-1aa4-4958-aba5-18d51e59837e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124552(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124552(v=EXCHG.150)
 ms:contentKeyID: 50383001
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -57,7 +57,7 @@ This example disables email for the mail contact Neil Black.
 Disable-MailContact -Identity "Neil Black"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailContact](https://technet.microsoft.com/en-us/library/aa997465\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Disable-MailContact](https://technet.microsoft.com/library/aa997465\(v=exchg.150\)).
 
 ## How do you know this worked?
 

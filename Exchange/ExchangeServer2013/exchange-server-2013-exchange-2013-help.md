@@ -2,7 +2,7 @@
 title: 'Exchange Server 2013: Exchange 2013 Help'
 TOCTitle: '@NoTitle'
 ms:assetid: cb24ddb7-0659-4d9d-9057-52843f861ba8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124558(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124558(v=EXCHG.150)
 ms:contentKeyID: 48157381
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -80,7 +80,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 
 - [High availability and site resilience](high-availability-and-site-resilience-exchange-2013-help.md)
 
-- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/en-us/library/bb123778\(v=exchg.150\))
+- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\))
 
 - [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md)
 
@@ -89,7 +89,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 - [About Exchange documentation](https://docs.microsoft.com/en-us/exchange/about-exchange-documentation)
 
 > [!NOTE]
-> Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/en-us/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://technet.microsoft.com/en-us/library/jj723137(v=exchg.150)">Exchange Online Protection</A>
+> Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://technet.microsoft.com/library/jj723137(v=exchg.150)">Exchange Online Protection</A>
 
 ## Tell us what you think
 

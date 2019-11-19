@@ -2,7 +2,7 @@
 title: 'Change the assignment policy on a mailbox: Exchange 2013 Help'
 TOCTitle: Change the assignment policy on a mailbox
 ms:assetid: 011690a5-233a-4c03-8842-92276f899a89
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638076(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -62,7 +62,7 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 
 This procedure makes use of pipelining, the **Where** cmdlet, and the *WhatIf* parameter. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -86,4 +86,4 @@ This example includes the *WhatIf* parameter so that you can see all the mailbox
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) or [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) or [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).

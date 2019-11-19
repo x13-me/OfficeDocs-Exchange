@@ -2,7 +2,7 @@
 title: 'Configure the Managed Folder Assistant: Exchange 2013 Help'
 TOCTitle: Configure the Managed Folder Assistant
 ms:assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123958(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123958(v=EXCHG.150)
 ms:contentKeyID: 49318583
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -43,11 +43,11 @@ This example configures the Managed Folder Assistant to process all mailboxes wi
 Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxServer](https://technet.microsoft.com/en-us/library/aa998651\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxServer](https://technet.microsoft.com/library/aa998651\(v=exchg.150\)).
 
 ## How do I know this worked?
 
-To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\)) cmdlet to check the *ManagedFolderWorkCycle* parameter.
+To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\)) cmdlet to check the *ManagedFolderWorkCycle* parameter.
 
 This command retrieves all Mailbox servers in the organization and outputs the Managed Folder Assistant's workcycle properties from each server in a table format. The *Auto* switch is used to automatically fit column width.
 
@@ -63,4 +63,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://technet.microsoft.com/en-us/library/aa998864\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://technet.microsoft.com/library/aa998864\(v=exchg.150\)).

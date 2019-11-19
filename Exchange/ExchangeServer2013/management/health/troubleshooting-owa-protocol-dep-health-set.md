@@ -2,7 +2,7 @@
 title: Troubleshooting OWA.Protocol.Dep Health Set
 TOCTitle: Troubleshooting OWA.Protocol.Dep Health Set
 ms:assetid: f39c63d5-f161-4eee-9415-05f3355e7cc7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.protocol.dep(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa.protocol.dep(v=EXCHG.150)
 ms:contentKeyID: 49720914
 ms.date:
 ms.reviewer:
@@ -51,7 +51,7 @@ The **OWA.Protocol.DEP** service is monitored using the following probes and mon
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## User Action
 

@@ -2,7 +2,7 @@
 title: Troubleshooting UM.CallRouter Health Set
 TOCTitle: Troubleshooting UM.CallRouter Health Set
 ms:assetid: 444a9038-0952-4823-98fb-99fa59f4a378
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.um.callrouter(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.um.callrouter(v=EXCHG.150)
 ms:contentKeyID: 49720778
 ms.date:
 ms.reviewer:
@@ -53,7 +53,7 @@ The UM.Protocol service is monitored by using the following probes and monitors
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## User Action
 
@@ -155,6 +155,6 @@ Renew the UM Call Router service certificate on the CAS.
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))

@@ -2,7 +2,7 @@
 title: 'Backup, restore, and disaster recovery: Exchange 2013 Help'
 TOCTitle: Backup, restore, and disaster recovery
 ms:assetid: 394fc4ed-fa02-41fa-9159-cc2754ff8875
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876874(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876874(v=EXCHG.150)
 ms:contentKeyID: 48384978
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -112,7 +112,7 @@ When Microsoft Lync Server 2013 is used in an Exchange 2013 environment, the use
 
 ## Recovery Database
 
-A recovery database is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)) cmdlet to extract data from a recovery database. After extraction, the data can be exported to a folder or merged into an existing mailbox. Recovery databases enable you to recover data from a backup or copy of a database without disturbing user access to current data.
+A recovery database is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)) cmdlet to extract data from a recovery database. After extraction, the data can be exported to a folder or merged into an existing mailbox. Recovery databases enable you to recover data from a backup or copy of a database without disturbing user access to current data.
 
 Using a recovery database for a Mailbox database from any previous version of Exchange isn't supported. In addition, the target mailbox used for data merges and extraction must be in the same Active Directory forest as the database mounted in the recovery database.
 

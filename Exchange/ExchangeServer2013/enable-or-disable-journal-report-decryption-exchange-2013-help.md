@@ -2,7 +2,7 @@
 title: 'Enable or Disable Journal Report Decryption: Exchange 2013 Help'
 TOCTitle: Enable or Disable Journal Report Decryption
 ms:assetid: 1dedbe73-2c1a-4b14-8799-5091aaec7965
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638092(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638092(v=EXCHG.150)
 ms:contentKeyID: 49319900
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Enabling journal report decryption allows the Journaling agent to attach a decrypted copy of a rights-protected message to the journal report. Before you enable journal report decryption, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) server.
+Enabling journal report decryption allows the Journaling agent to attach a decrypted copy of a rights-protected message to the journal report. Before you enable journal report decryption, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/library/hh831364.aspx) server.
 
 For additional management tasks related to Information Rights Management (IRM), see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -47,7 +47,7 @@ This example enables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
 
 ## Use the Shell to disable journal report decryption
 
@@ -57,10 +57,10 @@ This example disables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
 
 ## How do you know this worked?
 
 To verify that you have enabled or disabled journal report decryption, run the **Get-IRMConfiguration** cmdlet and check the value of the *JournalDecryptionEnabled* property.
 
-For an example of how to check the IRM configuration, see [Examples](https://technet.microsoft.com/en-us/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
+For an example of how to check the IRM configuration, see [Examples](https://technet.microsoft.com/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.

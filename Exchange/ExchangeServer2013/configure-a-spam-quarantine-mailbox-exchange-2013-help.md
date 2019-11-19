@@ -2,7 +2,7 @@
 title: 'Configure a spam quarantine mailbox: Exchange 2013 Help'
 TOCTitle: Configure a spam quarantine mailbox
 ms:assetid: 907d2f90-2a62-4d59-a4cf-945fef2e963f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123746(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123746(v=EXCHG.150)
 ms:contentKeyID: 49300568
 ms.date: 12/09/2016
 ms.reviewer: 

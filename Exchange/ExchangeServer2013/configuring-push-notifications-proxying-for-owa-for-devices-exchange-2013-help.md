@@ -2,7 +2,7 @@
 title: 'Configuring push notifications proxying for OWA for Device'
 TOCTitle: Configuring push notifications proxying for OWA for Devices
 ms:assetid: c0f4912d-8bd3-4a54-9097-03619c645c6a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn511017(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn511017(v=EXCHG.150)
 ms:contentKeyID: 59954036
 ms.date: 12/09/2016
 ms.reviewer: 

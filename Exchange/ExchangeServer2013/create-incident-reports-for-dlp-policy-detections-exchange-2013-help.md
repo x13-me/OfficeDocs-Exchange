@@ -2,7 +2,7 @@
 title: 'Create incident reports for DLP policy detections: Exchange 2013 Help'
 TOCTitle: Create incident reports for DLP policy detections
 ms:assetid: 8e807f94-384c-43f5-be6f-06c5587175a0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150534(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150534(v=EXCHG.150)
 ms:contentKeyID: 47560050
 ms.date: 06/13/2017
 ms.reviewer: 

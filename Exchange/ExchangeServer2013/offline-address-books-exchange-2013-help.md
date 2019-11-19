@@ -2,7 +2,7 @@
 title: 'Offline address books: Exchange 2013 Help'
 TOCTitle: Offline address books
 ms:assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232155(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232155(v=EXCHG.150)
 ms:contentKeyID: 49289363
 ms.date: 08/17/2016
 ms.reviewer: 
@@ -21,7 +21,7 @@ An offline address book (OAB) is a copy of an address list collection that's bee
 To learn more about address lists, see [Address lists](https://docs.microsoft.com/en-us/exchange/address-books/address-lists/address-lists).
 
 > [!IMPORTANT]
-> OAB data is produced by the Microsoft Exchange OABGen service, which is a mailbox assistant. If you use the security descriptor to prevent users from viewing certain recipients in Active Directory, users who download the OAB will be able to view those hidden recipients. Therefore, to hide a recipient from an address list, set the <EM>HiddenFromAddressListsEnabled</EM> parameter on the <A href="https://technet.microsoft.com/en-us/library/aa998596(v=exchg.150)">Set-PublicFolder</A>, <A href="https://technet.microsoft.com/en-us/library/aa995950(v=exchg.150)">Set-MailContact</A>, <A href="https://technet.microsoft.com/en-us/library/aa995971(v=exchg.150)">Set-MailUser</A>, <A href="https://technet.microsoft.com/en-us/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>, <A href="https://technet.microsoft.com/en-us/library/bb123981(v=exchg.150)">Set-Mailbox</A>, and <A href="https://technet.microsoft.com/en-us/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> cmdlets. Alternatively, you can create a new default OAB that doesn't contain the hidden recipients. For details about how to add or remove address lists from an OAB, see <A href="https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/add-or-remove-an-address-list">Add an address list to or remove an address list from an offline address book</A>.
+> OAB data is produced by the Microsoft Exchange OABGen service, which is a mailbox assistant. If you use the security descriptor to prevent users from viewing certain recipients in Active Directory, users who download the OAB will be able to view those hidden recipients. Therefore, to hide a recipient from an address list, set the <EM>HiddenFromAddressListsEnabled</EM> parameter on the <A href="https://technet.microsoft.com/library/aa998596(v=exchg.150)">Set-PublicFolder</A>, <A href="https://technet.microsoft.com/library/aa995950(v=exchg.150)">Set-MailContact</A>, <A href="https://technet.microsoft.com/library/aa995971(v=exchg.150)">Set-MailUser</A>, <A href="https://technet.microsoft.com/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>, <A href="https://technet.microsoft.com/library/bb123981(v=exchg.150)">Set-Mailbox</A>, and <A href="https://technet.microsoft.com/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> cmdlets. Alternatively, you can create a new default OAB that doesn't contain the hidden recipients. For details about how to add or remove address lists from an OAB, see <A href="https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/add-or-remove-an-address-list">Add an address list to or remove an address list from an offline address book</A>.
 
 Looking for management tasks related to OABs? See [Offline address book procedures](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/offline-address-book-procedures).
 

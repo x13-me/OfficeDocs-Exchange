@@ -2,7 +2,7 @@
 title: 'PBX and IP PBX configurations: Exchange 2013 Help'
 TOCTitle: PBX and IP PBX configurations
 ms:assetid: fb086680-6e3e-477a-a5d8-e24ca30196ee
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb430797(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb430797(v=EXCHG.150)
 ms:contentKeyID: 53908382
 ms.date: 12/09/2016
 ms.reviewer: 

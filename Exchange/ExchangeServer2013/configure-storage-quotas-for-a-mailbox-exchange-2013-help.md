@@ -2,7 +2,7 @@
 title: 'Configure storage quotas for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure storage quotas for a mailbox
 ms:assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998353(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998353(v=EXCHG.150)
 ms:contentKeyID: 50387717
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -21,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 Storage quotas let you control the size of mailboxes and manage the growth of mailbox databases. When a mailbox reaches or exceeds a specified storage quota, Exchange sends a descriptive notification to the mailbox owner.
 
 > [!NOTE]
-> Storage quotas apply against the size of a given mailbox size as defined by the property <CODE>TotalItemSize</CODE> when you run the cmdlet <CODE>Get-MailboxStatistics</CODE>. For more information, see <A href="https://technet.microsoft.com/en-us/library/bb124612(v=exchg.150)">Get-MailboxStatistics</A>.
+> Storage quotas apply against the size of a given mailbox size as defined by the property <CODE>TotalItemSize</CODE> when you run the cmdlet <CODE>Get-MailboxStatistics</CODE>. For more information, see <A href="https://technet.microsoft.com/library/bb124612(v=exchg.150)">Get-MailboxStatistics</A>.
 
 Storage quotas are typically configured on a per-database basis. This means that the quotas configured for a mailbox database apply to all mailboxes in that database. For more information about managing per-database mailbox settings, see [Manage mailbox databases in Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 
@@ -76,7 +76,7 @@ This example sets the issue warning, prohibit send, and prohibit send and receiv
 Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## How do you know this worked?
 

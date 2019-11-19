@@ -2,7 +2,7 @@
 title: 'Remove an address list: Exchange 2013 Help'
 TOCTitle: Remove an address list
 ms:assetid: 39a313f3-41d4-4c8f-af67-df2316f3687f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997294(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997294(v=EXCHG.150)
 ms:contentKeyID: 49289233
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -51,7 +51,7 @@ Remove-AddressList -Identity "Sales Department"
 
 Type **Y** to confirm that you want to remove this address list, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/en-us/library/bb124342\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/bb124342\(v=exchg.150\)).
 
 ## Use the Shell to remove an address list that contains child address lists
 
@@ -63,4 +63,4 @@ Remove-AddressList -Identity Departments -Recursive
 
 Type **Y** to confirm that you want to remove the parent address list and its child address lists, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/en-us/library/bb124342\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/bb124342\(v=exchg.150\)).

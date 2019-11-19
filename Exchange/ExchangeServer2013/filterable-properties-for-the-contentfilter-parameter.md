@@ -2,7 +2,7 @@
 title: Filterable properties for the -ContentFilter parameter
 TOCTitle: Filterable properties for the -ContentFilter parameter
 ms:assetid: cf504a59-1938-489c-bb48-b27b2ac3234e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff601762(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff601762(v=EXCHG.150)
 ms:contentKeyID: 49895015
 ms.date: 02/22/2018
 ms.reviewer: 
@@ -16,13 +16,13 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-This topic lists the filterable properties for the *ContentFilter* parameter. The *ContentFilter* parameter is used to export messages to a .pst file that match the filter. The *ContentFilter* parameter is used in the [New-MailboxExportRequest](https://technet.microsoft.com/en-us/library/ff607299\(v=exchg.150\)) cmdlet.
+This topic lists the filterable properties for the *ContentFilter* parameter. The *ContentFilter* parameter is used to export messages to a .pst file that match the filter. The *ContentFilter* parameter is used in the [New-MailboxExportRequest](https://technet.microsoft.com/library/ff607299\(v=exchg.150\)) cmdlet.
 
 ## Filterable properties
 
 Many of the properties for the *ContentFilter* parameter accept wildcard characters. If you use a wildcard character, use the **-like** operator instead of the **-eq** operator. The **-like** operator is used to find pattern matches in rich types, such as strings, whereas the **-eq** operator is used to find an exact match.
 
-The following table contains a list of the filterable properties for the *ContentFilter* parameter. This table lists the name of the property, a description, the acceptable values, and a syntax example. For more information about OPATH filters, see [Filters in recipient Shell commands](https://technet.microsoft.com/en-us/library/bb124268\(v=exchg.150\)).
+The following table contains a list of the filterable properties for the *ContentFilter* parameter. This table lists the name of the property, a description, the acceptable values, and a syntax example. For more information about OPATH filters, see [Filters in recipient Shell commands](https://technet.microsoft.com/library/bb124268\(v=exchg.150\)).
 
 <table>
 <colgroup>

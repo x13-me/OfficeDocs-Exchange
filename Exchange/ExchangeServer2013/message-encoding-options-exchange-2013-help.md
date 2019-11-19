@@ -2,7 +2,7 @@
 title: 'Message encoding options: Exchange 2013 Help'
 TOCTitle: Message encoding options
 ms:assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310794(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb310794(v=EXCHG.150)
 ms:contentKeyID: 49318586
 ms.date: 12/09/2016
 ms.reviewer: 
@@ -106,17 +106,17 @@ When you configure message encoding options for a mail contact or a mail user, t
 
 You need to use these parameters in the Exchange Management Shell to set the message encoding options for mail users and mail contacts. For more information, see the following topics:
 
-  - [Enable-MailContact](https://technet.microsoft.com/en-us/library/aa996001\(v=exchg.150\))
+  - [Enable-MailContact](https://technet.microsoft.com/library/aa996001\(v=exchg.150\))
 
-  - [New-MailContact](https://technet.microsoft.com/en-us/library/bb124519\(v=exchg.150\))
+  - [New-MailContact](https://technet.microsoft.com/library/bb124519\(v=exchg.150\))
 
-  - [Set-MailContact](https://technet.microsoft.com/en-us/library/aa995950\(v=exchg.150\))
+  - [Set-MailContact](https://technet.microsoft.com/library/aa995950\(v=exchg.150\))
 
-  - [Enable-MailUser](https://technet.microsoft.com/en-us/library/aa996549\(v=exchg.150\))
+  - [Enable-MailUser](https://technet.microsoft.com/library/aa996549\(v=exchg.150\))
 
-  - [New-MailUser](https://technet.microsoft.com/en-us/library/aa996335\(v=exchg.150\))
+  - [New-MailUser](https://technet.microsoft.com/library/aa996335\(v=exchg.150\))
 
-  - [Set-MailUser](https://technet.microsoft.com/en-us/library/aa995971\(v=exchg.150\))
+  - [Set-MailUser](https://technet.microsoft.com/library/aa995971\(v=exchg.150\))
 
 ## Message encoding options available in Outlook
 
@@ -381,7 +381,7 @@ The following table describes the order of precedence from lowest priority to hi
 
 [Remote domains](remote-domains-exchange-2013-help.md)
 
-[Remote domains in Exchange Online](https://technet.microsoft.com/en-us/library/jj966211\(v=exchg.150\))
+[Remote domains in Exchange Online](https://technet.microsoft.com/library/jj966211\(v=exchg.150\))
 
 [Manage mail users](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-users)
 
