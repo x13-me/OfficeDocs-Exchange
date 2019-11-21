@@ -86,13 +86,13 @@ The value `$null` indicates the setting for the mailbox is controlled by the glo
 This example enables SMTP AUTH for mailbox sean@contoso.com.
 
 ```
-Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $true
+Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $false
 ```
 
 This example disables SMTP AUTH for mailbox chris@contoso.com.
 
 ```
-Set-CASMailbox -Identity chris@contoso.com -SmtpClientAuthenticationDisabled $false
+Set-CASMailbox -Identity chris@contoso.com -SmtpClientAuthenticationDisabled $true
 ```
 
 ### Use Exchange Online PowerShell to enable or disable SMTP AUTH on multiple mailboxes
