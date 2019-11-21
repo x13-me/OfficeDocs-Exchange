@@ -107,6 +107,9 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 ## Step 2: Prepare for the migration
 
+> [!NOTE]
+> We strongly recommend running the Source Side Validation script from an On-Premises Exchange Server2010 with mailbox role. The script will scan and report issues that are known to cause migration to be slow, along with guidance to fix these issues. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
+
 Perform the following prerequisite steps before you begin the migration.
 
 ### General prerequisite steps
@@ -455,9 +458,20 @@ For detailed syntax and parameter information, see the following topics:
 
 Until this point in the migration process, users have been able to access public folders. The next steps will log users off from the legacy public folders and lock the folders while the migration completes its final synchronization. Users won't be able to access public folders during this process. Also, any mail sent to mail-enabled public folders will be queued and won't be delivered until the public folder migration is complete.
 
-Before you run the `PublicFoldersLockedForMigration` command as described below, make sure that all jobs are in the **Synced** state. You can do this by running the `Get-PublicFolderMailboxMigrationRequest` command. Continue with this step only after you've verified that all jobs are in the **Synced** state.
+> [!NOTE]
+>The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion. It is recommended to plan for miniumum of 48 hours of downtime for the final sync to complete
 
-On the legacy Exchange server, run the following command to lock the legacy public folders for finalization.
+Ensure the migration batch and individual migration requests have successfully synced.
+
+Run the following command in EXO PowerShell to get the details:
+
+`Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | ft *last*sync*`
+
+`Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics |ft targetmailbox,*last*sync*`
+
+The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within last 7 days. If it is too far off, like older than a month or so, you may want to take a look at public folder migration requests and ensure all the requests were synced recently.
+
+Once you have confirmed the batch and all migration requests have successfully synced, On the legacy Exchange server, run the following command to lock the legacy public folders for finalization.
 
 ```
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
@@ -474,8 +488,10 @@ To complete the public folder migration, run the following command:
 ```
 Complete-MigrationBatch PublicFolderMigration
 ```
+> [!IMPORTANT]
+> After a migration batch is completed, no additional data can be synchornized from Exchange servers on-premises and Exchange Online.
 
-When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.
+When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the status of migration batch to remain on "Synced" for few hours before it switches to Completing. For migrations involving large number of target mailboxes, it is normal to see the status remain “Synced” state for more than 24 hours, provided none of underlying public folder migration requests have Failed or were quarantined.
 
 If you've configured a hybrid deployment between your on-premises Exchange servers and Office 365, you need to run the following command in Exchange Online PowerShell after migration is complete:
 
