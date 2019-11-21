@@ -36,7 +36,7 @@ You can use Exchange Online PowerShell to configure various settings that define
 
 ## Use Exchange Online PowerShell to configure the large audience size for your organization
 
-You use the **Set-OrganizationConfig** cmdlet to configure the large audience size for your organization. When senders address messages to more recipients than the size you configure, they are shown the Large Audience MailTip. The large audience size is set to 25 by default. This example configures the large audience size to 50 in your organization.
+You use the **Set-OrganizationConfig** cmdlet to configure the large audience size for your organization. When the sender adds a distribution group that has more members than the configured large audience size, they are shown the Large Audience MailTip. The large audience size is set to 25 by default. This example configures the large audience size to 50 in your organization.
 
 ```
 Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
