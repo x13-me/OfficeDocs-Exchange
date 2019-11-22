@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: 'Summary: Preventing migration data loss with DataConsistencyScore'
+description: 'Summary: Preventing migration data loss'
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -15,7 +15,7 @@ manager: serdars
 
 ---
 
-# Migrating to the cloud
+# Preventing migration data loss
 
 When migrating your Exchange environment to the cloud, there might be instances of data corruption in your environment that causes data loss during migration. The migration process tracks and reports on any instances of data loss by generating a **DataConsistencyScore**. 
 
