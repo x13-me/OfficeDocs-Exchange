@@ -27,19 +27,16 @@ When you attempt a migration, any instances of corruption in your Exchange data 
 
 There are 4 possible grades that are derived from the **DataConsistencyScore**.
 
-- **Perfect** There were on instances of data loss noted during migration. The migration will succeed.
-
-- **Good** There was at least 1 instance of data corruption noted, but the corruption was not impactful. For example, if any metadata or folder permissions were lost during migration. The migration will succeed.
-
-- **Investigate** A notable amount of data loss was detected, but only to a relatively minor extent. The migration requires approval in order to succeed.
-
-- **Poor** Major data loss was detected. The migration will fail.
+|**Perfect**| No instances of data loss noted during migration. The migration will succeed.|
+|**Good**| At least 1 instance of data loss noted, but the loss was not impactful. For example, if only metadata or folder permissions were lost during migration. The migration will succeed.|
+|**Investigate**|Significant, but relatively minor data loss was detected. The migration requires approval in order to succeed.|
+|**Poor**|Major data loss was detected. The migration will fail.|
 
 ## How are my batches scored?
 
-*There are notes about this in OneNote, but how much should be published to users?*
+*There are notes about this in OneNote, but how much should be published to users? Guidance, please.*
 
-## Guidance or recommendations for migrations that fall under Investigate or Poor
+## Guidance for grades of Investigate or Poor
 
 If the migration receives a grade of **Investigate**, you can approve skipped items manually to allow the migration to succeed.
 
