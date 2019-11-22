@@ -74,7 +74,7 @@ For more examples of how to scope your disclaimer, see [Scoping your disclaimer]
 
 ## Use Exchange Online PowerShell to add a disclaimer or other email header or footer
 
-Use the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+Use the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
 This example creates a new mail flow rule that adds a disclaimer with an image to the end of all email messages that are sent outside the organization.
 

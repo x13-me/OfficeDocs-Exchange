@@ -26,7 +26,7 @@ Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, 
 
 Office 365 gives you flexibility in determining the best arrangement for how email is delivered to your organization's mailboxes. The path email takes from the internet to a mailbox and vice versa is called mail flow. Most organizations want Office 365 to manage all their mailboxes and filtering, and some organizations need more complex mail flow setups to make sure that they comply with specific regulatory or business needs. If you're part of a small business or simply an organization that wants Office 365 to manage all your mailboxes and mail flow, we recommend following the steps in [Set up Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkID=522378). That article provides a complete checklist for setting up Office 365 services and programs, including how to set up your mail flow and email clients.
 
-For information about how your email is protected with EOP, see [Exchange Online Protection Overview](https://technet.microsoft.com/library/1270a65f-ddc3-4430-b500-4d3a481efb1e.aspx).
+For information about how your email is protected with EOP, see [Exchange Online Protection Overview](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview).
 
 > [!TIP]
 > Are you new to Office 365 mail flow? Check out the [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records) topic. We especially recommend reading the part about SPF records because customers often list the wrong values in their SPF record, which can cause mail flow problems.
