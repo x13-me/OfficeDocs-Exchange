@@ -1,11 +1,11 @@
 ---
 localization_priority: Normal
-description: 'Summary: Preventing migration data loss'
+description: 'Summary: Preventing migration data loss with DataConsistencyScore'
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
-ms.date: 11/22/2018
+ms.date: 11/22/2019
 ms.reviewer: 
 title: Preventing Migration Data Loss
 ms.collection: exchange-server
