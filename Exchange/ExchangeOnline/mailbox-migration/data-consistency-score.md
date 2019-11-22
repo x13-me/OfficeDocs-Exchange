@@ -27,6 +27,7 @@ When you attempt a migration, any instances of corruption in your Exchange data 
 
 There are 4 possible grades that are derived from the **DataConsistencyScore**.
 
+|Grade|Description|
 |---|---|
 |**Perfect**| No instances of data loss noted during migration. The migration will succeed.|
 |**Good**| At least 1 instance of data loss noted, but the loss was not impactful. For example, if only metadata or folder permissions were lost during migration. The migration will succeed.|
