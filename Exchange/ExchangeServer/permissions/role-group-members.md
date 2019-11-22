@@ -53,9 +53,9 @@ To give a user the permissions that are granted by a role group, you need to add
 
 ### Use the Exchange Management Shell to add members to a role group
 
-To add a role group member, see the [Examples](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx#Examples) section in [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+To add a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember#examples) section in [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
-To add multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx#Examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+To add multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -82,9 +82,9 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 ### Use the Exchange Management Shell to remove members from a role group
 
-To remove a role group member, see the [Examples](https://technet.microsoft.com/library/eed5ec30-471f-4c60-b377-bdf4a249b3d5.aspx#Examples) section in [Remove-RoleGroupMember](https://technet.microsoft.com/library/eed5ec30-471f-4c60-b377-bdf4a249b3d5.aspx).
+To remove a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroupMember#Examples) section in [Remove-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroupMember).
 
-To remove multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx#Examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+To remove multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
 
 ### How do you know this worked?
 

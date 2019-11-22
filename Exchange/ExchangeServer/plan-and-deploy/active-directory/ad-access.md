@@ -83,7 +83,7 @@ Each domain controller contains a complete replica of the domain partition for t
 
 Exchange uses an Active Directory API to access information that's stored in Active Directory. This service reads information from all Active Directory partitions. The data that is retrieved is cached and is used by Exchange servers to discover the Active Directory site location of all Exchange services in the organization.
 
-For more information about topology and service discovery in Exchange 2013 or later, see [Planning to use Active Directory sites for routing Mail](https://technet.microsoft.com/library/aa996299(v=exchg.150).aspx).
+For more information about topology and service discovery in Exchange 2013 or later, see [Planning to use Active Directory sites for routing Mail](https://docs.microsoft.com/exchange/planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help).
 
 Exchange is an Active Directory site-aware application that prefers to communicate with the directory servers that are located in the same site as the Exchange server to optimize network traffic. Each Exchange server must communicate with Active Directory to retrieve information about recipients and information about the other Exchange servers. Mailbox servers store configuration information about mailbox users and mailbox stores in Active Directory. Additionally, the Mailbox server stores information in Active Directory for the Client Access protocols, Transport service, Mailbox databases, and so on. The Mailbox server handles all activity for the active mailboxes on that server.
 

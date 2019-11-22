@@ -43,8 +43,6 @@ To implement specific messaging policies by using mail flow rules, see these top
 
 - [Use mail flow rules to set the spam confidence level (SCL) in messages](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
 
-- [Create organization-wide safe sender or blocked sender lists in Office 365](https://msdn.microsoft.com/data/dn198251(v=exchg.149))
-
 - [Common message approval scenarios](common-message-approval-scenarios.md)
 
 - [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
