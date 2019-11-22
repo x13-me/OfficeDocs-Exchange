@@ -109,6 +109,9 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 Perform the following prerequisite steps before you begin the migration.
 
+> [!NOTE]
+> We recommend running the Source Side Validation script from an Exchange Server 2010 hosting public folder database. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622).
+
 ### General prerequisite steps
 
 - Make sure that there are no orphaned public folder mail objects in Active Directory, meaning objects in Active Directory without a corresponding Exchange object.
