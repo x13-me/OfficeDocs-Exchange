@@ -1,13 +1,13 @@
 ---
 localization_priority: Normal
-description: 'Summary: Learn about the DCS migration'
+description: 'Summary: Preventing migration data loss with DataConsistencyScore'
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
 ms.date: 11/22/2018
 ms.reviewer: 
-title: DCS Migration
+title: Preventing Migration Data Loss
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
@@ -17,13 +17,11 @@ manager: serdars
 
 # Migrating to the cloud
 
-When migrating your Exchange environment to the cloud, there might be instances of data corruption in your environment that causes data loss during migration. To track and report on any instances of data loss, the migration process uses what is called the **DataConsistencyScore**. 
+When migrating your Exchange environment to the cloud, there might be instances of data corruption in your environment that causes data loss during migration. The migration process tracks and reports on any instances of data loss by generating a **DataConsistencyScore**. 
 
-## The DataConsistencyScore
+## Migration and DataConsistencyScore
 
 When you attempt a migration, any instances of corruption in your Exchange data store will count towards the **DataConsistencyScore**. This score is then used to determine whether an Exchange migration will complete successfully or if intervention is needed.
-
-## Description of 4 categories (per migration or user level)
 
 There are 4 possible grades that are derived from the **DataConsistencyScore**.
 
@@ -34,7 +32,7 @@ There are 4 possible grades that are derived from the **DataConsistencyScore**.
 |**Investigate**|Significant, but relatively minor data loss was detected. The migration requires approval in order to succeed.|
 |**Poor**|Major data loss was detected. The migration will fail.|
 
-## How are my batches scored?
+## Scoring of migration batches
 
 *There are notes about this in OneNote, but how much should be published to users? Guidance, please.*
 
