@@ -64,13 +64,9 @@ You can create a mail flow rule by setting up a Data Loss Prevention (DLP) polic
 
 Each DLP policy is a collection of mail flow rules. After you create the DLP policy, you can fine-tune the rules using the procedures below.
 
-1. Create a DLP policy. For instructions, see:
+1. Create a DLP policy.
 
-   - [Exchange Server DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
-
-   - [Exchange Online DLP procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
-
-2. Modify the mail flow rules created by the DLP policy. See [View or modify a mail flow rule](#view-or-modify-a-mail-flow-rule).
+2. Modify the mail flow rules created by the DLP policy.
 
 ### Use the EAC to create a mail flow rule
 

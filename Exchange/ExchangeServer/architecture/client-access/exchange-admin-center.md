@@ -171,7 +171,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Configure message tracking](../../mail-flow/transport-logs/configure-message-tracking.md) , [Configure connectivity logging in Exchange Server](../../mail-flow/transport-logs/configure-connectivity-logging.md), and [Protocol logging](../../mail-flow/connectors/protocol-logging.md)
 
-  - [Manage Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx#managing)
+  - [Manage Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help)
 
   - [Manage mailbox database copies](../../high-availability/manage-ha/manage-database-copies.md)
 
