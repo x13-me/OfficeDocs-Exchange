@@ -110,7 +110,7 @@ If you have a role group that contains the permissions you want to grant to user
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and more.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
 
 ### Use the Exchange Management Shell to copy a role group with a custom scope
 
@@ -137,7 +137,7 @@ You can also add members to the role group when you create it by using the _Memb
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and perform other tasks.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
 
 ### Use the Exchange Management Shell to copy a role group with an OU scope
 
@@ -164,7 +164,7 @@ You can also add members to the role group when you create it by using the _Memb
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and more.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
 
 ### How do you know this worked?
 
@@ -204,7 +204,7 @@ You can view either a list of role groups or the detailed information about a sp
 
 ### Use the Exchange Management Shell to view a list of role groups and role group details
 
-To view a list of role groups, see the [Examples](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx#Examples) section in [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx).
+To view a list of role groups, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup#Examples) section in [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
 
 ## Add a role to a role group
 

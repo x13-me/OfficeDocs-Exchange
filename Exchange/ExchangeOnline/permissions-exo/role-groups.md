@@ -68,7 +68,7 @@ This example returns all role groups where the user Julia is a member. You need 
 Get-RoleGroup -Filter {Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'}
 ```
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
 
 ## Create role groups
 
