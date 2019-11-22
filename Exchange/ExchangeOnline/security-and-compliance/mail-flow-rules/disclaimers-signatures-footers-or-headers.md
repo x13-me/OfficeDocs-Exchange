@@ -60,7 +60,7 @@ For examples and information about how to scope and format disclaimers, signatur
 
 5. Next to the **Do the following** box, select **Enter text** to enter the text of your disclaimer. For information about what can be added, see [Formatting your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FormatDisclaimer).
 
-6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FallbackOptions).
+6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#fallback-options-for-disclaimer-rules).
 
 7. Specify the audit severity level to assign the severity level that appears in the message log.
 

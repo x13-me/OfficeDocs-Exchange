@@ -299,7 +299,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934%28v=exchg.150%29.aspx)
+[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934(v=exchg.150).aspx)
 
 #### Checkpoint: Validate the DAG file share witness
 

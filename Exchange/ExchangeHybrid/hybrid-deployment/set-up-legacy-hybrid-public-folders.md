@@ -55,7 +55,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 - These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments, and that the DNS records that are used for the Autodiscover service for most users reference an on-premises end point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
-- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
+- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
 
 - Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can occur because a non-routable email address that's assigned to mail-enabled public folders, conflicts with other users and groups in Office 365, and other reasons.
 
@@ -77,10 +77,10 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 ## Step 2: Make remote public folders discoverable
 
-1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/library/bb124778%28v=exchg.141%29.aspx).
+1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/library/bb124778(v=exchg.141).aspx).
 
     > [!NOTE]
-    > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247%28v=exchg.141%29.aspx).
+    > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247(v=exchg.141).aspx).
 
 2. Create an empty mailbox database on each public folder server.
 
