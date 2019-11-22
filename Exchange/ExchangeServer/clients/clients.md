@@ -23,7 +23,7 @@ The following table contains links to topics that will help you learn about and 
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx)|Learn about the client access method that provides connectivity to Outlook 2010. (This feature was formerly known as RPC/HTTP.)|
+|[Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help)|Learn about the client access method that provides connectivity to Outlook 2010. (This feature was formerly known as RPC/HTTP.)|
 |[Exchange ActiveSync](exchange-activesync/exchange-activesync.md)|Learn about the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
 |[POP3 and IMAP4 in Exchange Server](pop3-and-imap4/pop3-and-imap4.md)|Learn about how users can access their Exchange mailbox by using email programs that use POP3 or IMAP4.|
 |[Using Basic authentication with Outlook for iOS and Android](outlook-for-ios-and-android/use-basic-auth.md)|Learn about the Outlook for iOS and Android app and how it allows your users to securely access their mailbox data remotely with their iOS and Android devices.|

@@ -63,7 +63,7 @@ You can create a transport rule by setting up a Data Loss Prevention (DLP) polic
 
 Each DLP policy is a collection of transport rules. After you create the DLP policy, you can fine-tune the rules using the procedures below.
 
-1. Create a DLP policy. For instructions, see [Exchange Server 2013 DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx).
+1. Create a DLP policy. For instructions, see [DLP procedures](dlp-procedures-exchange-2013-help.md)).
 
 2. Modify the transport rules created by the DLP policy. See [View or modify a transport rule](manage-transport-rules-exchange-2013-help.md#view-or-modify-a-transport-rule).
 

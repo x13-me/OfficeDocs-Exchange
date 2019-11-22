@@ -107,7 +107,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
 |Outlook 2003 is not supported|To connect Microsoft Outlook to Exchange 2016, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.|
-|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
+|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
 
 ### Outlook Web App and Outlook
 

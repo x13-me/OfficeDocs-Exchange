@@ -34,7 +34,7 @@ For more information, see [Validate connectors in Office 365](use-connectors-to-
 
 ## Troubleshoot mail flow issues caused by incorrect SPF records or MX records
 
- [Troubleshooting: Best practices for SPF in Office 365](https://technet.microsoft.com/library/3aff33c5-1416-4867-a23b-e0c0c5b4d2be.aspx#SPFTroubleshoot) gives tips on how to fix several SPF record errors. The beginning of that article also provides an explanation of what SPF records are and how Office 365 uses them to prevent spoofing.
+ [Troubleshooting: Best practices for SPF in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing#troubleshooting-best-practices-for-spf-in-office-365) gives tips on how to fix several SPF record errors. The beginning of that article also provides an explanation of what SPF records are and how Office 365 uses them to prevent spoofing.
 
 Mail flow issues can also happen when your MX record is not setup correctly. To verify your MX record, see [Find and fix issues after adding your domain or DNS records in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=624017).
 
