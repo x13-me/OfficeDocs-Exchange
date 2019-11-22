@@ -33,7 +33,7 @@ Typically, this error indicates a security setting in your organization or the r
 
 - You don't have permission to send to the recipient.
 
-- The recipient is a group, and ou don't have permission to send to the group or one of its subgroups.
+- The recipient is a group, and you don't have permission to send to the group or one of its subgroups.
 
 - You don't have permission to send email through an email server that's between you and the recipient.
 
