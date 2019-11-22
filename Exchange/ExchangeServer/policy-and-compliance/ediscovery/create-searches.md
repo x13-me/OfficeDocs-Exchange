@@ -25,7 +25,7 @@ manager: serdars
 
 - To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Office 365 organization so that you can search cloud-based mailboxes. Or, if you sign in with an account that only exists in Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online license. For more information about the Office 365 licensing requirements for In-Place eDiscovery searches, see [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=275416).
 
-- Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](https://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
+- Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](https://docs.microsoft.com/Exchange/create-a-discovery-mailbox-exchange-2013-help).
 
 - When you create a search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. You can also export the search results to a .pst file. For details, see:
 

@@ -146,9 +146,9 @@ When you place an Exchange Server mailbox on In-Place Hold or Litigation Hold, S
 
 To enable archiving of Skype for Business content in Exchange Server mailboxes, you must configure Skype for Business Server 2015 integration with Exchange Server. For details, see the following topics:
 
-- [Planning for Archiving](https://technet.microsoft.com/library/jj205069%28v=ocs.15%29)
+- [Planning for Archiving](https://technet.microsoft.com/library/jj205069(v=ocs.15))
 
-- [Deploying Archiving](https://technet.microsoft.com/library/jj205147%28v=ocs.15%29)
+- [Deploying Archiving](https://technet.microsoft.com/library/jj205147(v=ocs.15))
 
 ## Deleting a mailbox on hold
 <a name="deletehold"> </a>

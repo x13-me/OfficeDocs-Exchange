@@ -25,7 +25,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
 - An eDiscovery search has to be created, by using the EAC or the Exchange Management Shell, before you can copy the search results. For details, see [Create an In-Place eDiscovery search in Exchange Server](create-searches.md).
 
-- Exchange Server Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](https://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
+- Exchange Server Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](https://docs.microsoft.com/Exchange/create-a-discovery-mailbox-exchange-2013-help).
 
 - It might take 5 minutes or longer to copy search results to a discovery mailbox, depending on the number of mailbox items returned in the results.
 

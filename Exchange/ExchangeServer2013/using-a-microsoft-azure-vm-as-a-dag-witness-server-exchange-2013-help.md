@@ -164,7 +164,8 @@ To establish the VPN gateway on the Azure side, see [VPN Gateway](https://azure.
 
 ## Export virtual network configuration settings
 
-The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://msdn.microsoft.com/library/azure/dn133804.aspx) to export your settings.
+The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[
+Create a virtual network (classic) by using the Azure porta](https://docs.microsoft.com/azure/virtual-network/virtual-networks-create-vnet-classic-pportal) to export your settings.
 
 ## Modify the network configuration settings for the multi-site VPN
 
@@ -274,7 +275,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
     ```
 
     > [!NOTE]
-    > A VM with a preferred IP address will attempt to use that address. However, if that address has been assigned to a different VM, the VM with the preferred IP address configuration will not start. To avoid this situation, make sure that the IP address you use isn't assigned to another VM. See <A href="https://msdn.microsoft.com/library/azure/dn630228.aspx">Configure a Static Internal IP Address for a VM</A> for more information.
+    > A VM with a preferred IP address will attempt to use that address. However, if that address has been assigned to a different VM, the VM with the preferred IP address configuration will not start. To avoid this situation, make sure that the IP address you use isn't assigned to another VM. See <A href="https://docs.microsoft.com/azure/virtual-network/virtual-networks-static-private-ip-arm-pportal">Configure private IP addresses for a virtual machine using the Azure portal</A> for more information.
 
 3. Provision the domain controller VM on Azure using the standards used by your organization.
 
