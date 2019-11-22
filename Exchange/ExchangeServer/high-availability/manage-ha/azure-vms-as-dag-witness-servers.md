@@ -191,7 +191,7 @@ Save the updated configuration settings file.
 
 #### Import virtual network configuration settings
 
-The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Import a Network Configuration File](https://msdn.microsoft.com/library/azure/jj156213.aspx). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
+The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Create a virtual network (classic) by using the Azure portal](https://docs.microsoft.com/azure/virtual-network/virtual-networks-create-vnet-classic-pportal). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
 
 #### Record the Azure gateway IP address and pre-shared keys
 
@@ -199,9 +199,9 @@ After the new network configuration settings are imported, the virtual network d
 
 You also will need to get the pre-shared IPsec/IKE keys for each tunnel that was created. You will use these keys along with the Azure gateway IP address to configure your on-premises VPN devices.
 
-You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://msdn.microsoft.com/library/azure/jj156055.aspx).
+You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/).
 
-Use the [Get-AzureVNetGatewayKey](https://msdn.microsoft.com/library/azure/dn495198.aspx) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
+Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
 ```
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" | Set-Content -Path C:\Keys\KeysForTunnelToSiteA.txt
