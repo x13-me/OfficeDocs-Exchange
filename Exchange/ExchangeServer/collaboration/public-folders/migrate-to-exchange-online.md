@@ -86,7 +86,7 @@ The scripts and files you're downloading are:
 ## Step 2: Prepare for the migration
 
 > [!NOTE]
-> We recommend running the Source Side Validation script from a mailbox server on Exchange Server 2010. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
+> We recommend running the Source Side Validation script from Exchange Server On-Premises. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
 
 Perform all prerequisite steps in the following sections before you begin the public folder migration.
 
