@@ -15,15 +15,15 @@ manager: serdars
 
 ---
 
-# Tracking and Preventing migration data loss
+# Tracking and preventing migration data loss
 
 When migrating your Exchange environment to the cloud, there might be instances of data corruption in your environment that causes data loss during migration. The migration process tracks and reports on any instances of data loss by generating a **DataConsistencyScore**.
 
 ## Migration and DataConsistencyScore
 
-When you attempt a migration, any instances of corruption in your Exchange data store will count towards the **DataConsistencyScore**. This score is then used to determine whether an Exchange migration will complete successfully or if intervention is needed.
+When you attempt a migration, any instances of corruption in your Exchange data store will count towards the DataConsistencyScore. This score is then used to determine whether an Exchange migration will complete successfully or if intervention is needed.
 
-There are 4 possible grades that are derived from the **DataConsistencyScore**.
+There are 4 possible grades that are derived from the DataConsistencyScore.
 
 |Grade|Description|
 |---|---|
@@ -34,7 +34,7 @@ There are 4 possible grades that are derived from the **DataConsistencyScore**.
 
 ## How the DataConsistencyScore is calculated
 
-There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange administrators so that they are not bothered with unnecessary information.
+There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange administrators.
 
 For batches, the DataConsistencyScore is equal to the worst DataConsistencyScore of any user within that batch. This behavior helps administrators know immediately whether there is any data loss that should be investigated.
 
@@ -62,5 +62,5 @@ As of late 2019, the [BadItemLimit parameter](https://docs.microsoft.com/powersh
 
 If the BadItemLimit parameter is not specified or if the box in the Exchange Admin Center wizard is left blank, then the new migration method and DataConsistencyScore are used.
 
-> NOTE:
+> [!Note:]
 > The BadItemLimit parameter is deprecated and will be removed at a future date.
