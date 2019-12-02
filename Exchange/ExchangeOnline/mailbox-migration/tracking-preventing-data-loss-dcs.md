@@ -63,4 +63,4 @@ As of late 2019, the [BadItemLimit parameter](https://docs.microsoft.com/powersh
 If the BadItemLimit parameter is not specified or if the box in the Exchange Admin Center wizard is left blank, then the new migration method and DataConsistencyScore are used.
 
 > [!NOTE]
-> The BadItemLimit parameter will be completely replaced by **DataConsistencyScore** at a future date.
+> The BadItemLimit parameter will be completely replaced by DataConsistencyScore at a future date.
