@@ -270,7 +270,7 @@ This example assigns the Message Tracking role to the Seattle Recipient Admins r
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 
 ### Use Exchange Online PowerShell to remove roles from role groups (remove role assignments)
@@ -291,7 +291,7 @@ This example removes the Distribution Groups role from the Seattle Recipient Adm
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-managementroleassignment).
 
 ### Use Exchange Online PowerShell to modify the scope of role assignments in role groups
 
@@ -337,7 +337,7 @@ To change the scope on an individual role assignment between a role group and a 
     Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
     ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://technet.microsoft.com/library/2e0659f9-dfb6-4d91-93fb-35a6a7f8a449.aspx).
+For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-managementroleassignment).
 
 ### Use Exchange Online PowerShell modify the list of delegates in role groups
 
@@ -365,7 +365,7 @@ This example adds Daigoro Akai and removes Valeria Barrio from the list of deleg
 Set-RoleGroup -Identity "Help Desk" -ManagedBy @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](https://technet.microsoft.com/library/c66ee1a2-cec7-4b76-a592-a5e626f4f9d3.aspx).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-rolegroup).
 
 ## Use Exchange Online PowerShell modify the list of members in role groups
 

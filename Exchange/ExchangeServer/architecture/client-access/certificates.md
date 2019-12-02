@@ -161,7 +161,7 @@ Some of the more interesting properties of the default self-signed certificates 
 
 - `Get-ExchangeCertificate -Thumbprint <Thumbprint> | Format-Table -Auto FriendlyName,*PrivateKey*`
 
-For more information, see [Get-ExchangeCertificate](https://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).
+For more information, see [Get-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-exchangecertificate).
 
 Further details about the default self-signed certificates that are visible in Windows Certificate Manger are described in the following table.
 

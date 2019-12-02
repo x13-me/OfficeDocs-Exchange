@@ -64,7 +64,7 @@ This procedure uses the `Configure-EnterpriseApplication.ps1` script to configur
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2016 , run the [Get-PartnerApplication](https://technet.microsoft.com/library/e6ce8128-f174-4bca-91e6-004fc94cf0f8.aspx) cmdlet in the Exchange Management Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://technet.microsoft.com/library/26aa9772-aa31-4765-b2a4-d0dd78d77fc8.aspx) cmdlet to test OAuth connectivity with a partner application for a user.
+To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2016 , run the [Get-PartnerApplication](https://docs.microsoft.com/powershell/module/exchange/organization/get-partnerapplication) cmdlet in the Exchange Management Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/organization/test-oauthconnectivity) cmdlet to test OAuth connectivity with a partner application for a user.
 
 ## Hybrid and on-premises deployments
 

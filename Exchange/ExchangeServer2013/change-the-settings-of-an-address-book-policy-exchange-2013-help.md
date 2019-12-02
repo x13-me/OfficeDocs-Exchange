@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 After you create an address book policy (ABP), you can view or modify the name and the assigned global address list (GAL), offline address book (OAB), room list, and address lists.
 
-For additional management tasks related to ABPs, see [Managing Address Book Policies](https://technet.microsoft.com/library/1204db89-ee4b-459a-8c14-e8d60dd6c4a4.aspx).
+For additional management tasks related to ABPs, see [Address book policy procedures](address-book-policy-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -76,4 +76,4 @@ Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
 
 ## For more information
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addressbookpolicy).

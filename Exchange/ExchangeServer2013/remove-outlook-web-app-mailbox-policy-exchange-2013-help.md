@@ -47,7 +47,7 @@ This example removes an Outlook Web App mailbox policy named `Policy1`.
 Remove-OwaMailboxPolicy -Name Policy1
 ```
 
-For more information about syntax and parameters, see [Remove-OwaMailboxPolicy](https://technet.microsoft.com/library/834bee7a-1044-4628-9d0d-1601e88a73f8.aspx).
+For more information about syntax and parameters, see [Remove-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/remove-owamailboxpolicy).
 
 ## How do you know this worked?
 

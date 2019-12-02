@@ -80,7 +80,7 @@ This example enables the MRS Proxy endpoint in Client Access services on all Mai
 Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-WebServicesVirtualDirectory](https://technet.microsoft.com/library/35871cc3-6e8f-48bc-86ed-8703c0e178f3.aspx).
+For detailed syntax and parameter information, see [Set-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-webservicesvirtualdirectory).
 
 ## How do you know this worked?
 
@@ -106,4 +106,4 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
 
   To run this command successfully, the MRS Proxy endpoint must be enabled.
 
-  For detailed syntax and parameter information, see [Test-MigrationServerAvailability](https://technet.microsoft.com/library/a0959dbe-94ae-4f2e-8e2c-e5d5bd5e1521.aspx).
+  For detailed syntax and parameter information, see [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/test-migrationserveravailability).

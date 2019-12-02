@@ -87,11 +87,11 @@ $TagList.Remove((Get-RetentionPolicyTag 'VPs-Inbox').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
 ```
 
-For detailed syntax and parameter information, see [set-RetentionPolicy](https://technet.microsoft.com/library/34fbc099-4f41-4f57-867c-ad1e08513c51.aspx) and [get-RetentionPolicy](https://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx).
+For detailed syntax and parameter information, see [set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentionpolicy) and [get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicy).
 
 ## How do you know this worked?
 
-To verify that you have successfully added or removed a retention tag from a retention policy, use the [get-RetentionPolicy](https://technet.microsoft.com/library/7a05203e-894b-4109-9647-ca7afc44a08f.aspx) cmdlet to verify the _RetentionPolicyTagLinks_ property.
+To verify that you have successfully added or removed a retention tag from a retention policy, use the [get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicy) cmdlet to verify the _RetentionPolicyTagLinks_ property.
 
 This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags added to the Default MRM Policy and pipes them to the **Format-Table** cmdlet to output only the name property of each tag.
 

@@ -31,8 +31,6 @@ DLP policies are simple packages that are collections of mail flow rules (also k
 
 - [Integrating classification rules with mail flow rules](https://technet.microsoft.com/library/feb014a7-89dd-4f2d-a06d-52806ce435d4.aspx)
 
-- [Messaging policy and compliance cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
-
 In addition to the customizable DLP policies themselves, you can also inform email senders when they're about to violate one of your policies, even before they send a message that contains sensitive information. You do this by configuring Policy Tips. Policy Tips present a brief note about the possible policy violations in Outlook 2013 or later, Outlook on the web (formerly known as Outlook Web App), and Outlook on the web for devices. For more information, see [Policy Tips](https://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).
 
  **Notes:**
@@ -99,5 +97,3 @@ To see information about messages that contain DLP policy detections in your env
 - [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
 
 - [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
-
-- [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)

@@ -21,7 +21,7 @@ manager: serdars
 
 You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
 
-Other information related to Exchange documentation is in [Third-Party Copyright Notices](https://technet.microsoft.com/library/e94f1244-acb8-4ddd-b54e-5cc37f903bbf.aspx).
+Other information related to Exchange documentation is in [Third-party copyright notices](https://docs.microsoft.com/exchange/about-documentation/third-party-copyrights).
 
 ## Where to find Exchange documentation
 
@@ -37,12 +37,12 @@ The [Exchange Team Blog](https://go.microsoft.com/fwlink/p/?LinkID=178595) conta
 
 Looking for more than just documentation? Check out these other Exchange resources:
 
-- [Exchange Server Downloads](https://go.microsoft.com/fwlink/p/?linkId=179447) Use this page to download service packs, add-ins, tools, and trial software to help you optimize your Exchange organization.
+- [Exchange Server Downloads](https://go.microsoft.com/fwlink/p/?linkId=179447): Use this page to download service packs, add-ins, tools, and trial software to help you optimize your Exchange organization.
 
-- [Exchange Server Forums](https://go.microsoft.com/fwlink/p/?linkId=60612) The forum provides a place to discuss Exchange with users and Exchange Team members.
+- [Exchange Server Forums](https://go.microsoft.com/fwlink/p/?linkId=60612): The forum provides a place to discuss Exchange with users and Exchange Team members.
 
-- [Exchange Server for Developers](https://go.microsoft.com/fwlink/p/?linkId=24705) You'll find Exchange developer documentation here.
+- [Exchange Server for Developers](https://go.microsoft.com/fwlink/p/?linkId=24705): You'll find Exchange developer documentation here.
 
-- [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967) Check out this page for support resources for multiple versions of Exchange.
+- [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967): Check out this page for support resources for multiple versions of Exchange.
 
-- [Accessibility for People with Disabilities_E15](https://technet.microsoft.com/library/a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8.aspx) This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.
+- [Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility): This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.

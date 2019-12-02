@@ -36,11 +36,11 @@ Here is a quick overview of the Exchange 2013 server roles in a hybrid deploymen
 
 - **Client Access server role**: The Client Access server role continues to provide essentially the same functionality typically provided by Client Access servers in your Exchange 2013 organization with a few additions required to support a hybrid deployment. The Client Access server also handles all secure mail messages sent between the on-premises and the Exchange Online organizations, as well as handling transport rules, journaling policies, and message delivery to user mailboxes in a hybrid deployment. By default, a dedicated Receive connector is configured on the Client Access server to support secure hybrid mail transport. All client connectivity, including Outlook client access, Outlook Web App, and Outlook Anywhere goes through the Client Access server role. Organization relationship features between the on-premises and Exchange Online organizations, such as free/busy sharing, are also handled by the Client Access server role.
 
-    Learn more at [Client Access Server](https://technet.microsoft.com/library/87e206ab-7a7b-4b4f-be1a-5035713c74d2.aspx).
+    Learn more at [Client Access server](https://docs.microsoft.com/exchange/client-access-server-exchange-2013-help).
 
 - **Mailbox server role**: The Mailbox server role hosts the on-premises recipient mailboxes and communicates with the Exchange Online organization by proxy via the on-premises Client Access server. By default, a dedicated Send connector is configured on the Mailbox server role to support secure hybrid mail transport.
 
-    Learn more at [Mailbox Server](https://technet.microsoft.com/library/1aacc1c9-c81b-47d4-b222-ee73956cf968.aspx).
+    Learn more at [Mailbox Server](https://docs.microsoft.com/exchange/mailbox-server-exchange-2013-help).
 
 Depending on the hybrid deployment configuration that you want, an Exchange 2013 server requires one or both of the server roles to be installed on it:
 

@@ -145,9 +145,9 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see:
 
-- [Add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
 
-- [Remove-MailboxPermission](https://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx).
+- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxpermission).
 
 ### How do you know this worked?
 
@@ -161,7 +161,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
    Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table User,Deny,IsInherited,AccessRights -Auto
    ```
 
-   For more information, see [Get-MailboxPermission](https://technet.microsoft.com/library/56bcc678-1598-4c9b-8b4f-4fa11c89ec41.aspx).
+   For more information, see [Get-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxpermission).
 
 ## Use Exchange Online PowerShell to assign the Send As permission to mailboxes and groups
 
@@ -185,9 +185,9 @@ Remove-RecipientPermission -Identity "Yan Li" -Trustee "Karen Toh" -AccessRights
 
 For detailed syntax and parameter information, see:
 
-- [Add-RecipientPermission](https://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
+- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission)
 
-- [Remove-RecipientPermission](https://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
+- [Remove-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-recipientpermission)
 
 ### How do you know this worked?
 
