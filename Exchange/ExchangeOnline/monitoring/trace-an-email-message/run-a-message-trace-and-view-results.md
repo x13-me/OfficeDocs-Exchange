@@ -49,45 +49,45 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 
 2. Depending on what you're searching for, you can enter values in the following fields. None of these fields are required for messages that are less than 7 days old. You can simply click **Search** to retrieve all message trace data over the default time period, which is the past 48 hours.
 
-  1. **Date range**: Using the drop-down list, select to search for messages sent or received within the past 24 hours, 48 hours, or 7 days. You can also select a custom time frame that includes any range within the past 90 days. For custom searches you can also change the time zone, in Coordinated Universal Time (UTC).
+   1. **Date range**: Using the drop-down list, select to search for messages sent or received within the past 24 hours, 48 hours, or 7 days. You can also select a custom time frame that includes any range within the past 90 days. For custom searches you can also change the time zone, in Coordinated Universal Time (UTC).
 
-  2. **Delivery status**: Using the drop-down list, select the status of the message you want to view information about. Leave the default value of **All** to cover all statuses. Other possible values are:
+   2. **Delivery status**: Using the drop-down list, select the status of the message you want to view information about. Leave the default value of **All** to cover all statuses. Other possible values are:
 
-    - **Delivered**: The message was successfully delivered to the intended destination.
+      - **Delivered**: The message was successfully delivered to the intended destination.
 
-    - **Failed**: The message was not delivered. Either it was attempted and failed or it was not delivered as a result of actions taken by the filtering service. For example, if the message was determined to contain malware.
+      - **Failed**: The message was not delivered. Either it was attempted and failed or it was not delivered as a result of actions taken by the filtering service. For example, if the message was determined to contain malware.
 
-    - **Pending**<sup>*</sup>: Delivery of the message is being attempted or re-attempted.
+      - **Pending**<sup>*</sup>: Delivery of the message is being attempted or re-attempted.
 
-    - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
+      - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
 
-    - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
+      - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
-    <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
+      <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
 
-  3. **Message ID**: This is the Internet message ID (also known as the Client ID) found in the message header in the **Message-ID:** header field. Users can provide you with this information in order to investigate specific messages.
+   3. **Message ID**: This is the Internet message ID (also known as the Client ID) found in the message header in the **Message-ID:** header field. Users can provide you with this information in order to investigate specific messages.
 
-    The form of this ID varies depending on the sending mail system. The following is an example: `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>`.
+      The form of this ID varies depending on the sending mail system. The following is an example: `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>`.
 
-    This ID should be unique; however, not all sending mail systems behave the same way. As a result, there's a possibility that you may get results for multiple messages when querying upon a single Message ID.
+      This ID should be unique; however, not all sending mail systems behave the same way. As a result, there's a possibility that you may get results for multiple messages when querying upon a single Message ID.
 
-    **Note**: Be sure to include the full Message ID string. This may include angle brackets (\<\>).
+      **Note**: Be sure to include the full Message ID string. This may include angle brackets (\<\>).
 
-  4. **Sender**: You can narrow the search for specific senders by clicking the **Add sender** button next to the **Sender** field. In the subsequent dialog box, select one or more senders from your company from the user picker list and then click **Add**. To add senders who aren't on the list, type their email addresses and click **Check names**. In this box, wildcards are supported for email addresses in the format: \*@contoso.com. When specifying a wildcard, other addresses can't be used. When you're done with your selections, click **OK**.
+   4. **Sender**: You can narrow the search for specific senders by clicking the **Add sender** button next to the **Sender** field. In the subsequent dialog box, select one or more senders from your company from the user picker list and then click **Add**. To add senders who aren't on the list, type their email addresses and click **Check names**. In this box, wildcards are supported for email addresses in the format: \*@contoso.com. When specifying a wildcard, other addresses can't be used. When you're done with your selections, click **OK**.
 
-  5. **Recipient**: You can narrow the search for specific recipients by clicking the **Add recipient** button next to the **Recipient** field. In the subsequent dialog box, select one or more recipients from your company from the user picker list and then click **Add**. To add recipients who aren't on the list, type their email addresses and click **Check names**. In this box, wildcards are supported for email addresses in the format: \*@contoso.com. When specifying a wildcard, other addresses can't be used. When you're done with your selections, click **OK**.
+   5. **Recipient**: You can narrow the search for specific recipients by clicking the **Add recipient** button next to the **Recipient** field. In the subsequent dialog box, select one or more recipients from your company from the user picker list and then click **Add**. To add recipients who aren't on the list, type their email addresses and click **Check names**. In this box, wildcards are supported for email addresses in the format: \*@contoso.com. When specifying a wildcard, other addresses can't be used. When you're done with your selections, click **OK**.
 
 3. If you're searching for messages that are older than 7 days, configure the following settings: (otherwise you can skip this step):
 
-  1. **Include message events and routing details with report**: We recommend selecting this check box only if you're looking for a small number of messages. Otherwise, the results will take longer to return.
+   1. **Include message events and routing details with report**: We recommend selecting this check box only if you're looking for a small number of messages. Otherwise, the results will take longer to return.
 
-  2. **Direction**: Leave the default **All** or select **Inbound** for messages sent to your organization or **Outbound** for messages sent from your organization.
+   2. **Direction**: Leave the default **All** or select **Inbound** for messages sent to your organization or **Outbound** for messages sent from your organization.
 
-  3. **Original client IP address**: Specify the IP address of the sender's client.
+   3. **Original client IP address**: Specify the IP address of the sender's client.
 
-  4. **Report title**: Specify the unique identifier for this report. This will also be used as the subject line text for the email notification. The default is "Message trace report \<day of the week\>, \<current date\> \<current time\>". For example, "Message trace report Thursday, October 17, 2018 7:21:09 AM".
+   4. **Report title**: Specify the unique identifier for this report. This will also be used as the subject line text for the email notification. The default is "Message trace report \<day of the week\>, \<current date\> \<current time\>". For example, "Message trace report Thursday, October 17, 2018 7:21:09 AM".
 
-  5. **Notification email address**: Specify the email address that you want to receive the notification when the message trace completes. This address must reside within your list of accepted domains.
+   5. **Notification email address**: Specify the email address that you want to receive the notification when the message trace completes. This address must reside within your list of accepted domains.
 
 4. Click **Search**: to run the message trace. You'll be warned if you're nearing the threshold of the amount of traces you're allowed to run over a 24 hour period.
 
@@ -120,9 +120,9 @@ After you review the list of items returned by running the message trace in the 
 
 - **Message ID**: This is the Internet message ID (also known as the Client ID) found in the header of the message with the "Message-ID:" token. The form of this varies depending on the sending mail system. The following is an example: `<08f1e0f6806a47b4ac103961109ae6ef@contoso.com>`.
 
-    This ID should be unique, however, it is dependent on the sending mail system for generation and not all sending mail systems behave the same way. As a result, there is a possibility that you may get results for multiple messages when querying upon a single Message ID.
+  This ID should be unique, however, it is dependent on the sending mail system for generation and not all sending mail systems behave the same way. As a result, there is a possibility that you may get results for multiple messages when querying upon a single Message ID.
 
-    This is given as output so that trace entries and the messages in question can be co-related.
+  This is given as output so that trace entries and the messages in question can be co-related.
 
 - **To IP**: The IP address or addresses to which the service attempted to deliver the message. If there are multiple recipients, these are displayed. For inbound messages sent to Exchange Online, this value is blank.
 
@@ -203,11 +203,11 @@ If you didn't include routing details when running the message trace, the follow
 
 - **total_bytes**: The size of the message, including attachments, in bytes.
 
-- **message_id**: This is the Internet message ID (also known as the Client ID) found in the header of the message with the "Message-ID:" token. The form of this varies depending on the sending mail system. The following is an example: \<*08f1e0f6806a47b4ac103961109ae6ef*@*server*.*domain*\>.
+- **message_id**: This is the Internet message ID (also known as the Client ID) found in the header of the message with the "Message-ID:" token. The form of this varies depending on the sending mail system. The following is an example: `<*08f1e0f6806a47b4ac103961109ae6ef*@*server*.*domain*>`.
 
-    This ID should be unique, however, it is dependent on the sending mail system for generation and not all sending mail systems behave the same way. As a result, there is a possibility that you may get results for multiple messages when querying upon a single Message ID.
+  This ID should be unique, however, it is dependent on the sending mail system for generation and not all sending mail systems behave the same way. As a result, there is a possibility that you may get results for multiple messages when querying upon a single Message ID.
 
-    This is given as output so that trace entries and the messages in question can be co-related.
+  This is given as output so that trace entries and the messages in question can be co-related.
 
 - **network_message_id**: This is a unique message ID value that persists across copies of the message that may be created due to bifurcation or distribution group expansion. An example value is 1341ac7b13fb42ab4d4408cf7f55890f.
 
@@ -227,7 +227,7 @@ If you included routing details when running the message trace, all information 
 
 Additionally, the **custom_data** field may contain values that are specific to the filtering service. The custom_data field in an AGENTINFO event is used by a variety of different agents to log details from the agent's processing of the message. Some of the message data protection related agents are described below.
 
- **Spam Filter Agent (S:SFA)**
+#### Spam Filter Agent (S:SFA)
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
@@ -277,7 +277,7 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201307282038|name=Test_File|file=filename`
 
- **Transport Rule Agent (S:TRA)**
+#### Transport Rule Agent (S:TRA)
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 

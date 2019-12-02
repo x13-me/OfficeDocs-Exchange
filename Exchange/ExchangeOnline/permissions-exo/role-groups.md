@@ -68,7 +68,7 @@ This example returns all role groups where the user Julia is a member. You need 
 Get-RoleGroup -Filter {Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'}
 ```
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://technet.microsoft.com/library/369800ff-fced-4d1c-adb0-1ddbe798670d.aspx).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
 
 ## Create role groups
 
@@ -124,7 +124,7 @@ This is the same example with a custom recipient write scope, which means Kim an
 New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients","Mail Enabled Public Folders" -Members "Kim","Martin" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, [New-RoleGroup](https://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
+For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
 
 ### How do you know this worked?
 
@@ -198,7 +198,7 @@ $RoleGroup = Get-RoleGroup "Organization Management"
 New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users"
 ```
 
-For detailed syntax and parameter information, [New-RoleGroup](https://technet.microsoft.com/library/c59f596d-cbdd-459e-b31f-99d03e684299.aspx).
+For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
 
 ### How do you know this worked?
 
@@ -395,7 +395,7 @@ This example adds Daigoro Akai and removes Valeria Barrio from the list of membe
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-For detailed syntax and parameter information, see [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+For detailed syntax and parameter information, see [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -453,7 +453,7 @@ This example removes the Vancouver Recipient Administrators role group. Because 
 Remove-RoleGroup - Identity "Vancouver Recipient Administrators" -BypassSecurityGroupManagerCheck
 ```
 
-For detailed syntax and parameter information, see [Remove-RoleGroup](https://technet.microsoft.com/library/6fe6975b-bc0f-4920-b0b0-6da245429f64.aspx).
+For detailed syntax and parameter information, see [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
 
 ### How do you know this worked?
 

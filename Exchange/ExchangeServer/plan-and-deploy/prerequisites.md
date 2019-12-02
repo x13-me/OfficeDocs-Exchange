@@ -58,7 +58,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 
 - Verify the computer is joined to the appropriate internal Active Directory domain.
 
-- Install the latest Windows updates on your computer. For more information, see [Deployment Security Checklist](https://technet.microsoft.com/library/aa996026(v=exchg.150).aspx).
+- Install the latest Windows updates on your computer.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
