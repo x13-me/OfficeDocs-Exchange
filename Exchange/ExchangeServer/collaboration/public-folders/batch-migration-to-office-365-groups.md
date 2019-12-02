@@ -36,7 +36,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](../../architecture/mailbox-servers/mrs-proxy-endpoint.md) for details.
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289(v=exchg.150).aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
@@ -173,7 +173,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx) and [Get-MigrationUser](https://technet.microsoft.com/library/ca5cbd36-fde3-41f4-8ddf-0b7c4d71fd31.aspx) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 

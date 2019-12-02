@@ -92,7 +92,7 @@ This example updates all GALs in the organization that require updates.
 Get-GlobalAddressList | where {$_.RecipientFilterApplied -eq $false} | Update-GlobalAddressList
 ```
 
-For detailed syntax and parameter information, see [Update-GlobalAddressList](https://technet.microsoft.com/library/6d3ee7f3-1205-4f04-a833-c5c47f2b774c.aspx).
+For detailed syntax and parameter information, see [Update-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -158,7 +158,7 @@ This example creates a GAL with a custom recipient filter:
 New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter {CustomAttribute15 -like "*AgencyA*"}
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -194,7 +194,7 @@ This example modifies the existing GAL named Contoso GAL by adding the **Company
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -226,7 +226,7 @@ This example removes the address list named Agency A GAL.
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -286,7 +286,7 @@ This example updates all address lists in the organization that require updates.
 Get-AddressList | where {$_.RecipientFilterApplied -eq $false} | Update-AddressList
 ```
 
-For detailed syntax and parameter information, see [Update-AddressList](https://technet.microsoft.com/library/50bf30ea-48cf-4cc9-b0fb-ce332da5bf16.aspx).
+For detailed syntax and parameter information, see [Update-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-addresslist).
 
 #### How do you know this worked?
 
@@ -384,7 +384,7 @@ This example creates an address list with a custom recipient filter:
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
 
 #### How do you know this worked?
 
@@ -440,7 +440,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](https://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
+For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addresslist).
 
 #### How do you know this worked?
 
@@ -470,7 +470,7 @@ This example moves the address list named Southeast Offices from the root (" `\`
 Move-AddressList -Identity "Southeast Offices" -Target "North America"
 ```
 
-For detailed syntax and parameter information, see [Move-AddressList](https://technet.microsoft.com/library/c5db411c-bfc7-4baa-b5ca-015b9e6ffa11.aspx).
+For detailed syntax and parameter information, see [Move-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/move-addresslist).
 
 #### How do you know this worked?
 
@@ -518,7 +518,7 @@ This example removes the address list named Southeast Offices and all its childr
 Remove-AddressList -Identity "North America\Southeast Offices" -Recursive
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/b628738c-ebbf-4116-ba85-b1dbd273df40.aspx).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addresslist).
 
 #### How do you know this worked?
 

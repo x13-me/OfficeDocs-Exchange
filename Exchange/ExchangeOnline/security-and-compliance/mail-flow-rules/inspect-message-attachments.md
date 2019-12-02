@@ -58,7 +58,7 @@ In order to start using these conditions when inspecting messages, you need to a
 
 **Notes**:
 
-- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
+- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
 
 - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
@@ -98,7 +98,7 @@ The following conditions can be used in mail flow rules to inspect different pro
 
  **Notes**:
 
-- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
+- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
 
 - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 

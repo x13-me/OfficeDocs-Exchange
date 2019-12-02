@@ -58,7 +58,7 @@ This example enables calendar access in the default mailbox policy.
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
-For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
+For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
 
 ## Use the Shell to view Outlook Web App mailbox policies
 
@@ -68,7 +68,7 @@ This example retrieves the properties of the Outlook Web App mailbox policyExecu
 Get-OwaMailboxPolicy -Identity Fabrikam\Executives
 ```
 
-For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
+For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy).
 
 ## How do you know this worked?
 

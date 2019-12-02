@@ -29,7 +29,7 @@ For more information about migrating on-premises Exchange organizations to Excha
 > You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md).
 
 > [!IMPORTANT]
-> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx).
+> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy).
 
 ## What do you need to know before you begin?
 

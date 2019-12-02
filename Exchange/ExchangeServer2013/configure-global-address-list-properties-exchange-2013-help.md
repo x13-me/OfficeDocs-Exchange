@@ -48,4 +48,4 @@ This example changes the recipients who will be included in the Fourth Coffee gl
 Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter {Company -eq "Fourth Coffee"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).

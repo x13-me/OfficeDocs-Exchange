@@ -65,7 +65,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Create an In-Place eDiscovery search in Exchange Server](create-searches.md)
 
-- [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)
+- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
 
 In the following example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the discovery mailbox that was specified by the _TargetMailbox_ parameter when the search was created.
 
@@ -92,9 +92,9 @@ Start-MailboxSearch "FY15 Q2 Financial Results"
 
 For more information about these cmdlets, see the following topics:
 
-- [Set-Mailboxsearch](https://technet.microsoft.com/library/23201ff0-e30a-4efd-9384-ab0af5815701.aspx)
+- [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
 
-- [Start-MailboxSearch](https://technet.microsoft.com/library/f0c4e047-7eca-4310-bfad-1ecfe1420ceb.aspx)
+- [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
 
 ## More information
 

@@ -55,7 +55,7 @@ You can use the following values for the _Type_ parameter:
 
 - Shared
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## How do you know this worked?
 
@@ -67,7 +67,7 @@ Get-Mailbox -Identity MarketingDept1 | Format-List RecipientTypeDetails
 
 The value for _RecipientTypeDetails_ should be _UserMailbox_.
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

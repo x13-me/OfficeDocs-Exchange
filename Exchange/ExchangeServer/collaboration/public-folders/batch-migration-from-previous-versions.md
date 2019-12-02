@@ -143,15 +143,15 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
 
 - [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
 
@@ -203,19 +203,19 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch)
 
-- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
 
-- [Get-MailPublicFolder](https://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder)
 
-- [Disable-MailPublicFolder](https://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder)
 
-- [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder)
 
-- [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -298,7 +298,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
@@ -317,7 +317,7 @@ Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` property value and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
