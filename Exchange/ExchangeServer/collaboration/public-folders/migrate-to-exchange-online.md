@@ -36,7 +36,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller, or divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information.
 
     > [!NOTE]
-    > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig cmdlet](https://go.microsoft.com/fwlink/p/?linkid=844062) to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
+    > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=844062) cmdlet to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
 
 - In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes.
 
@@ -65,7 +65,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 The scripts and files you're downloading are:
 
- ` ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with actions required to fix the issues. You'll run this script on the Exchange server on-premises.
+- `ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with actions required to fix the issues. You'll run this script on the Exchange server on-premises.
 
 - `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Office 365. You'll run this script on an on-premises Exchange server.
 
@@ -86,7 +86,7 @@ The scripts and files you're downloading are:
 ## Step 2: Prepare for the migration
 
 > [!NOTE]
-> We recommend running the Source Side Validation script from Exchange Server On-Premises. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
+> We strongly recommend running the Source Side Validation script from an on-premises Exchange Mailbox server. The script will scan and report issues that are known to cause migration to be slow, along with guidance to fix these issues. Use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
 
 Perform all prerequisite steps in the following sections before you begin the public folder migration.
 
@@ -386,7 +386,11 @@ You can use the following cmdlets to monitor your migration:
 
 ## Step 6: Lock down the public folders on the Exchange on-premises server (public folder downtime required)
 
-Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
+Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete. 
+
+> [!NOTE]
+>The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion.
+It is recommended to plan for miniumum of 48 hours of downtime for the final sync to complete
 
 Before you run the `PublicFolderMailboxesLockedForNewConnections` command as described below, make sure that all jobs are in the **Synced** state. You can do this by running the `Get-PublicFolderMailboxMigrationRequest` command. Continue with this step only after you've verified that all jobs are in the **Synced** state.
 
@@ -413,26 +417,39 @@ The expected result if public folders are locked is:
 
 ## Step 7: Finalize the public folder migration (public folder downtime required)
 
-Before you can complete your public folder migration, you need to confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange environment. To do this, use the `Get-MoveRequest` and `Get-PublicFolderMoveRequest` cmdlets to list any existing public folder moves. If there are any moves in progress, or in the **Completed** state, remove them.
+You need to check the following items before you can complete your public folder migration: 
 
-Microsoft recommends re-running the following command at this point, to ensure that any new mail-enabled public folders are synchronized with Exchange Online:
+1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange     environment. To do this, use the `Get-MoveRequest` and `Get-PublicFolderMoveRequest` cmdlets to list any existing public folder   
+    moves. If there are any moves in progress, or in the **Completed** state, remove them.
 
-```
-.\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
-```
+2. Ensure the migration batch and individual migration requests have successfully synced.
 
-Next, to complete the public folder migration, run the following command in Exchange Online PowerShell:
+   Run the following commands in Exchange Online PowerShell to get the details:
 
-```
-Complete-MigrationBatch PublicFolderMigration
-```
+   ```
+   Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | Format-Table *last*sync*
+   Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics |ft targetmailbox,*last*sync*`
+
+   The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within last 7 days. If it is too far off, like older than a month or so, you may want to take a look at public folder migration requests and ensure all the requests were synced recently.
+
+3. At this point, we recommend re-running the following script to ensure that any new mail-enabled public folders are synchronized with Exchange Online:
+
+   ```
+   .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
+   ```
+
+4. To complete the public folder migration, run the following command in Exchange Online PowerShell:
+
+   ```
+   Complete-MigrationBatch PublicFolderMigration
+   ```
 
 > [!IMPORTANT]
-> After a migration batch is completed, no additional data can be synchornized from Exchange servers on-premises and Exchange Online.
+> After a migration batch is completed, no additional data can be synchornized from the on-premises Exchange servers and Exchange Online.
 
 When you run `Complete-MigrationBatch PublicFolderMigration`, Exchange will perform a final synchronization between your Exchange on-premises organization and Exchange Online. During this period, the status of the migration batch will change from **Synced** to **Completing**, and then finally to **Completed**. If the final synchronization is successful, the public folders in Exchange Online will be unlocked. However, it is strongly recommended that you complete Step 8 and Step 9 of this article before you open up public folders to your users.
 
-It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.
+It's common for the status of migration batch to remain on **Synced** for a few hours before it switches to **Completing**. For migrations involving a large number of target mailboxes, it's normal to see the status remain in the **Synced** state for more than 24 hours, provided none of the underlying public folder migration requests have failed or were qurantined.
 
 ## Step 8: Test and unlock public folders in Exchange Online
 
