@@ -64,7 +64,7 @@ When centralized mail transport is **disabled** (default configuration), incomin
 
 7. EOP sends the message to an on-premises Exchange server in the on-premises organization.
 
-8. An Exchange sends the message to the Exchange Mailbox server where it's delivered to Julie's mailbox.
+8. An Exchange server sends the message to the Exchange Mailbox server where it's delivered to Julie's mailbox.
 
    **Route mail through the Exchange Online organization for both on-premises and Exchange Online organizations with centralized mail transport disabled (default configuration)**
 
@@ -86,7 +86,7 @@ When centralized mail transport is **enabled**, incoming Internet messages are r
 
 7. EOP sends the message to Exchange Online.
 
-8. Exchange delivers the message to David's mailbox.
+8. Exchange Online delivers the message to David's mailbox.
 
    **Route mail through the Exchange Online organization for both on-premises and Exchange Online organizations with centralized mail transport enabled**
 
