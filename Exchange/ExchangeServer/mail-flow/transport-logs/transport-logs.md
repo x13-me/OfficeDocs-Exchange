@@ -25,7 +25,7 @@ The transport logs in Exchange Server are described in the following sections.
 
 Agent logging records the actions that are performed on messages by specific antispam transport agents on the Exchange server. For more information, see these topics:
 
-- [Antispam Agent Logging](https://technet.microsoft.com/library/dbd478d2-7993-4931-80db-5b2f7d4269bd.aspx)
+- [Antispam Agent Logging](https://docs.microsoft.com/exchange/anti-spam-agent-logging-exchange-2013-help)
 
 - [Configure Antispam Agent Logging](https://technet.microsoft.com/library/df157ca3-ad8e-4302-acbc-5fbb8570c21d.aspx)
 

@@ -248,7 +248,7 @@ Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-Li
 
  **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
 
-For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://technet.microsoft.com/library/63c48908-1116-4bab-8e5a-6c4dccbf3574.aspx).
+For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-owavirtualdirectory).
 
 ## Use the Exchange Management Shell to configure Outlook on the web virtual directory settings
 
@@ -275,4 +275,4 @@ This example enables configures direct file access in Outlook on the web to bloc
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-owavirtualdirectory).

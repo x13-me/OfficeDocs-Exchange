@@ -66,7 +66,7 @@ These examples show you how to find the internal and external URL values for the
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 
-For more information, see [Get-EcpVirtualDirectory](https://technet.microsoft.com/library/afa04216-965d-4a6c-949c-170f916e8f4c.aspx).
+For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-ecpvirtualdirectory).
 
 In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
 

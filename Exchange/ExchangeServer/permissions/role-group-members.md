@@ -25,7 +25,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -111,4 +111,4 @@ The members of a role group are granted the permissions provided by the manageme
 
 ### Use the Exchange Management Shell to view the members of a role group
 
-To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://technet.microsoft.com/library/1ff116aa-1a62-4283-bc8e-5963d12958e1.aspx).
+To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-rolegroupmember).

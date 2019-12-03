@@ -94,7 +94,7 @@ This example displays detailed information for all queues on the local Exchange 
 Get-Queue -Filter {MessageCount -gt 100} | Format-List
 ```
 
-For more information, see [Get-Queue](https://technet.microsoft.com/library/df73c45e-3797-4da5-95e3-8478f48d06c1.aspx) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
+For more information, see [Get-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queue) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
 
 ### Use the Exchange Management Shell to view queue summary information on multiple Exchange servers
 
@@ -126,7 +126,7 @@ This example displays summary information about the queues on all Mailbox server
 Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
 ```
 
-For more information, see [Get-QueueDigest](https://technet.microsoft.com/library/64a6d710-0297-453b-aa35-3ae0a65bd81e.aspx).
+For more information, see [Get-QueueDigest](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queuedigest).
 
 ## Retry queues
 
@@ -228,7 +228,7 @@ This example resubmits all messages located in the Unreachable queue on the serv
 Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 ```
 
-For more information, see [Retry-Queue](https://technet.microsoft.com/library/a75a524b-2491-47b2-83e6-922cd0887c6d.aspx).
+For more information, see [Retry-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/retry-queue).
 
 ### How do you know this worked?
 
@@ -286,7 +286,7 @@ To resubmit a message from the poison message queue, perform the following steps
    Resume-Message 222
    ```
 
-For more information, see [Resume-Message](https://technet.microsoft.com/library/c15f872c-af1b-48ca-b95d-cca1b0a78977.aspx).
+For more information, see [Resume-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/resume-message).
 
 ### How do you know this worked?
 
@@ -346,7 +346,7 @@ This example suspends the queue named contoso.com on the server named Mailbox01.
 Suspend-Queue -Identity Mailbox01\contoso.com
 ```
 
-For more information, see [Suspend-Queue](https://technet.microsoft.com/library/7dca48c4-69a1-4157-a50e-88907dd32d04.aspx).
+For more information, see [Suspend-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/suspend-queue).
 
 ### How do you know this worked?
 
@@ -409,7 +409,7 @@ This example resumes the suspended delivery queue named contoso.com on the serve
 Resume-Queue -Identity Mailbox01\contoso.com
 ```
 
-For more information, see [Resume-Queue](https://technet.microsoft.com/library/ca3da195-5f4f-45b4-9941-ee6aec79ea3d.aspx).
+For more information, see [Resume-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/resume-queue).
 
 ### How do you know this worked?
 

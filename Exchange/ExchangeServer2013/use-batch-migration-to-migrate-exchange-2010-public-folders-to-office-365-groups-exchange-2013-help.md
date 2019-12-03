@@ -33,7 +33,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - Outlook Anywhere needs to be enabled on the Exchange 2010 server that hosts your public folder databases. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?linkid=187249).
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 

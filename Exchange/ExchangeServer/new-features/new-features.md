@@ -186,17 +186,17 @@ Exchange 2019 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2019, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
 
-  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
-  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
 
-  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
 
-  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
 
-  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
@@ -381,17 +381,17 @@ Exchange 2016 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2016, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
 
-  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
-  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
 
-  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
 
-  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
 
-  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
@@ -607,17 +607,17 @@ Exchange 2016 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2016, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](https://technet.microsoft.com/library/3bf7edeb-7674-464e-abad-4b1b8858114d.aspx)
+  - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
 
-  - [New-ComplianceSearch](https://technet.microsoft.com/library/433d1602-a026-4d63-be5e-605dd6b7b0d0.aspx)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
-  - [Remove-ComplianceSearch](https://technet.microsoft.com/library/6f952437-7ddd-42f8-b10b-5ab4e5562141.aspx)
+  - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
 
-  - [Set-ComplianceSearch](https://technet.microsoft.com/library/49464588-9e57-442f-97ec-ab9d9927983a.aspx)
+  - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
 
-  - [Start-ComplianceSearch](https://technet.microsoft.com/library/17ef8cc9-d716-446c-a8b9-b9109a6cab5a.aspx)
+  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
 
-  - [Stop-ComplianceSearch](https://technet.microsoft.com/library/675934e6-8a55-4615-8c46-a20bc656afdc.aspx)
+  - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.

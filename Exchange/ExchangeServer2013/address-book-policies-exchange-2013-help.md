@@ -41,8 +41,8 @@ In the following figure, Address Book Policy A consists of a subset of the vario
 
 |**New or existing mailbox?**|**Shell**|
 |:-----|:-----|
-|New|[New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the _AddressBookPolicy_ parameter|
-|Existing|[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _AddressBookPolicy_ parameter|
+|New|[New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
+|Existing|[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
 
 ABPs take effect when a user's client application connects to a Client Access server in Exchange 2013. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange 2013 Mailbox server.
 
@@ -88,6 +88,6 @@ ABPs won't function for Entourage users or Outlook for Mac users who are connect
 
 ## For more information
 
-[Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
+[Scenario: Deploying address book policies](scenario-deploying-address-book-policies-exchange-2013-help.md)
 
-[Address Book Policy Procedures](https://technet.microsoft.com/library/71e5dc2f-5de2-4089-8690-f2a0ed8ede0d.aspx)
+[Address book policy procedures](address-book-policy-procedures-exchange-2013-help.md)

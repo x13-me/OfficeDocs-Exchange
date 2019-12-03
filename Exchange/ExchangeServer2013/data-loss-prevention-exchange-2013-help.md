@@ -82,5 +82,3 @@ In order to make use of DLP features, you must have Exchange 2013 configured wit
 - [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
 
 - [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
-
-- [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)

@@ -28,7 +28,7 @@ There are two types of groups that can be used to distribute messages:
 It's important to note the terminology differences between Active Directory and Exchange. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
 
 > [!NOTE]
-> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-group) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups
 
 ## What do you need to know before you begin?
 
@@ -102,7 +102,7 @@ This example creates a distribution group with an alias **itadmin** and the name
 New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestriction open
 ```
 
-For more information about using the Exchange Management Shell to create distribution groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
+For more information about using the Exchange Management Shell to create distribution groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -264,9 +264,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Exchange Management Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
+- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup)
 
-- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
 
 Here are some examples of using the Exchange Management Shell to change distribution group properties.
 

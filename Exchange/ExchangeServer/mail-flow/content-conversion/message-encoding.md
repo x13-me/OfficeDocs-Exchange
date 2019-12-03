@@ -59,9 +59,9 @@ Mail contacts and mail users represent users that have external email addresses 
 
 When you configure message encoding options for a mail contact or a mail user, the settings are only applied to messages that are sent to that specific recipient. All settings are only available in the Exchange Management Shell in these cmdlets:
 
-- [Enable-MailContact](https://technet.microsoft.com/library/0accff85-3a03-4068-81e2-0508a4df21ec.aspx), [New-MailContact](https://technet.microsoft.com/library/c5abe0d4-3004-4d25-bda6-cb6155a47142.aspx), or [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx).
+- [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailcontact), [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailcontact), or [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact).
 
-- [Enable-MailUser](https://technet.microsoft.com/library/1a6e86d0-09d8-4570-bf43-7ae6f1386c78.aspx), [New-MailUser](https://technet.microsoft.com/library/128467a7-b8b8-4fa6-bca9-1131301f18ce.aspx), or [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx).
+- [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailuser), [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser), or [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser).
 
 The message encoding settings for mail contacts and mail users are described in this list:
 

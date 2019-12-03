@@ -170,9 +170,9 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx)
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission)
 
-- [Remove-MailboxPermission](https://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx)
+- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxpermission)
 
 ### Manage the Send As permission for mailboxes
 
@@ -195,9 +195,9 @@ Remove-ADPermission -Identity "James Alvord" -User pilarp -ExtendedRights "Send 
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/remove-adpermission)
 
 ### Manage the Send on Behalf permission for mailboxes
 
@@ -215,7 +215,7 @@ This example removes the Send on Behalf permission on the Contoso Executives sha
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@contoso.com"}
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ### How do you know this worked?
 
@@ -302,9 +302,9 @@ Remove-ADPermission -Identity "Corporate IT Admins" -User contoso\alans -Extende
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/remove-adpermission)
 
 ### Manage the Send on Behalf permission
 
@@ -330,9 +330,9 @@ Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{remove="admi
 
 For detailed syntax and parameter information, see:
 
-- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
 
 ### How do you know this worked?
 

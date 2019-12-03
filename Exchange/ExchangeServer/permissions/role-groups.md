@@ -25,7 +25,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 to 10 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -239,7 +239,7 @@ This example assigns the Transport Rules management role to the Seattle Complian
 New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a predefined scope
 
@@ -259,7 +259,7 @@ This example assigns the Message Tracking role to the Enterprise Support role gr
 New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a recipient filter-based scope
 
@@ -285,7 +285,7 @@ This example assigns the Message Tracking role to the Seattle Recipient Admins r
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a configuration scope
 
@@ -311,7 +311,7 @@ This example assigns the Databases role to the Seattle Server Admins role group 
 New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with an OU scope
 
@@ -335,7 +335,7 @@ This example assigns the Mail Recipients role to the Seattle Recipient Admins ro
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -385,7 +385,7 @@ This example removes the Distribution Groups role, which enables administrators 
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -457,7 +457,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-Ma
 
 For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
 
 ### Use the Exchange Management Shell to change the scope of individual role assignments on a role group
 
@@ -495,7 +495,7 @@ Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -Custo
 
 For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
 
-For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://technet.microsoft.com/library/2e0659f9-dfb6-4d91-93fb-35a6a7f8a449.aspx).
+For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -562,7 +562,7 @@ $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
 Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](https://technet.microsoft.com/library/c66ee1a2-cec7-4b76-a592-a5e626f4f9d3.aspx).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-rolegroup).
 
 ### Use the Exchange Management Shell to remove a delegate from a role group
 
@@ -599,7 +599,7 @@ $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
 Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](https://technet.microsoft.com/library/c66ee1a2-cec7-4b76-a592-a5e626f4f9d3.aspx).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-rolegroup).
 
 ### How do you know this worked?
 

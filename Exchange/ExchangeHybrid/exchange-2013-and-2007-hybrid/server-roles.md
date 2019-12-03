@@ -28,11 +28,11 @@ Here is a quick overview of the Exchange 2013 server roles in a hybrid deploymen
 
 - **Client Access server role**: The Exchange 2013 Client Access server role continues to provide many of the same functions that are typically provided by Exchange 2007 Client Access servers in your organization with some additions required to support a hybrid deployment and coexistence with Exchange 2007. The Client Access server also handles secure mail messages sent from the Exchange Online organization to the on-premises organization, as well as handling transport rules, journaling policies, and message delivery to Mailbox servers in a hybrid deployment. A dedicated Receive connector is configured by default on the Client Access server to support secure hybrid mail transport. All client connectivity, including Outlook client access, Outlook Web App, and Outlook Anywhere goes through the Client Access server role. Organization relationship features between the on-premises and Exchange Online organizations, such as free/busy sharing, are also handled by the Client Access server role.
 
-    Learn more at [Client Access services](https://technet.microsoft.com/library/87e206ab-7a7b-4b4f-be1a-5035713c74d2.aspx).
+    Learn more at [Client Access server](https://docs.microsoft.com/exchange/client-access-server-exchange-2013-help).
 
 - **Mailbox server role**: The Exchange 2013 Mailbox server role handles secure mail messages sent to the Exchange Online organization from the on-premises organization. Although not typical, it also can host on-premises recipient mailboxes and communicate with the Exchange Online organization by proxy via the on-premises Client Access server. By default, a dedicated Send connector is configured on the Mailbox server role to support secure hybrid mail transport.
 
-    Learn more at [Mailbox Server](https://technet.microsoft.com/library/1aacc1c9-c81b-47d4-b222-ee73956cf968.aspx).
+    Learn more at [Mailbox server](https://docs.microsoft.com/exchange/mailbox-server-exchange-2013-help).
 
 Depending on the hybrid deployment configuration that you want, an Exchange 2013 server requires one or both of the server roles to be installed on it:
 

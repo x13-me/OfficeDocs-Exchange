@@ -124,7 +124,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
-|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx) and [Set-SendConnector](https://technet.microsoft.com/library/5b9cf002-848a-4f35-b51f-e1ede131b136.aspx).|
+|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector) and [Set-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-sendconnector).|
 
 ### Antispam and antimalware
 

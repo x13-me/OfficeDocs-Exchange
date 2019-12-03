@@ -35,9 +35,9 @@ By default, the user workload settings allow users to increase their resource co
 
 You manage user workload settings with these cmdlets in the Exchange Management Shell:
 
-- **View, create, remove, and modify user workload settings**: [Get-ThrottlingPolicy](https://technet.microsoft.com/library/f7490b98-20e0-46ee-b369-6f77538da689.aspx), [New-ThrottlingPolicy](https://technet.microsoft.com/library/aa6afac5-12bf-41b5-829c-a39e1d276e8b.aspx), [Remove-ThrottlingPolicy](https://technet.microsoft.com/library/d98b709b-672e-42ad-afc4-c6e860d33bc9.aspx) and [Set-ThrottlingPolicy](https://technet.microsoft.com/library/80984ddd-0628-4115-92ed-6b3cef34c833.aspx).
+- **View, create, remove, and modify user workload settings**: [Get-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-throttlingpolicy), [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/new-throttlingpolicy), [Remove-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/remove-throttlingpolicy) and [Set-ThrottlingPolicy](https://technet.microsoft.com/library/80984ddd-0628-4115-92ed-6b3cef34c833.aspx).
 
-- **Assign user workload settings to users or computers**: [Get-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/45e1248f-89c2-467c-8d5d-de1367111e08.aspx) and [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/1d007408-e00d-48da-89aa-5994f490fbae.aspx)
+- **Assign user workload settings to users or computers**: [Get-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-throttlingpolicyassociation) and [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/set-throttlingpolicyassociation)
 
 ## Scopes in user workload settings
 
