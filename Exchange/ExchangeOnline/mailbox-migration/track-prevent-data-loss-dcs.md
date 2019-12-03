@@ -1,13 +1,13 @@
 ---
 localization_priority: Normal
-description: 'Summary: Tracking and preventing migration data loss with DataConsistencyScore'
+description: 'Summary: Track and prevent migration data loss with DataConsistencyScore'
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
 ms.date: 11/22/2019
 ms.reviewer: 
-title: Tracking and Preventing Migration Data Loss
+title: Track and Prevent Migration Data Loss
 ms.collection: exchange-server
 audience: ITPro
 ms.prod: exchange-server-it-pro
@@ -15,7 +15,7 @@ manager: serdars
 
 ---
 
-# Tracking and preventing migration data loss
+# Track and prevent migration data loss
 
 When migrating your Exchange environment to the cloud, the migration process might reveal inconsistencies that pose a risk of data loss. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
 
@@ -56,7 +56,7 @@ Set-MoveRequest -SkippedItemApprovalTime $([DateTime]::UtcNow)
 
 For a batch scored as **Investigate**, approving the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate.
 
-For a batch scored as **Poor**, choosing to approve the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate, but will not approve any migration in the batch with a score of Poor.
+For a batch scored as **Poor**, approving the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate, but will not approve any migration in the batch with a score of Poor.
 
 If the migration has failed with a grade of **Poor**, it is possible to force the migration to succeed, but this is not recommended. Please contact Microsoft Support for assistance.
 
