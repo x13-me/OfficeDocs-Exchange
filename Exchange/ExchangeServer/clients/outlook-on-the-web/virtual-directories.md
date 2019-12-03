@@ -94,7 +94,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **Features** tab:
 
-     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [Outlook Web App Mailbox Policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx).
+     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [View or configure Outlook on the web mailbox policy properties](../../clients/outlook-on-the-web/mailbox-policies.md).
 
      - **Communication management**
 

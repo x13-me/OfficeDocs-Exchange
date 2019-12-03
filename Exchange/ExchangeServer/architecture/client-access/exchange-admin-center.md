@@ -105,7 +105,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage role groups](../../permissions/role-groups.md) , [Manage role group members](../../permissions/role-group-members.md), and [Manage role assignment policies](../../permissions/role-assignment-policies.md).
 
-  - [Outlook on the web mailbox policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx)
+  - [View or configure Outlook on the web mailbox policy properties](../../clients/outlook-on-the-web/mailbox-policies.md)
 
 - **Compliance management**: This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing (mailbox audit logging and administrator audit logging), data loss prevention (DLP), retention policies, retention tags, and journal rules. For more information, see the following topics:
 
@@ -121,9 +121,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Organization**: Manage federated sharing, Outlook Apps, and address lists. For more information, see the following topics:
 
-  - [Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx)
+  - [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help)
 
-  - [Install or Remove Apps for Outlook for Your Organization](https://technet.microsoft.com/library/112f3ef7-9943-4a1e-8a42-e08e8e9f67f4.aspx)
+  - [Install or remove add-ins for Outlook for your organization in Exchange 2013](../../../ExchangeServer2013/install-or-remove-outlook-add-ins-exchange-2013-help.md)
 
   - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
 

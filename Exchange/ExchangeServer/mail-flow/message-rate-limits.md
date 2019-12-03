@@ -103,6 +103,6 @@ For more information, see the following topics:
 
 - [User workload management in Exchange Server](../server-health/workload-management.md)
 
-- [Change User Throttling Settings for Specific Users](https://technet.microsoft.com/library/c5f834d6-189d-485e-9800-5e0066815ecf.aspx)
+- [Change User Throttling Settings for Specific Users](https://docs.microsoft.com/exchange/change-user-throttling-settings-for-specific-users-exchange-2013-help)
 
-- [Change User Throttling Settings for All Users in Your Organization](https://technet.microsoft.com/library/c45cacfc-768d-4605-9bb0-53e30273fe4d.aspx)
+- [Change User Throttling Settings for All Users in Your Organization](https://docs.microsoft.com/exchange/change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help)

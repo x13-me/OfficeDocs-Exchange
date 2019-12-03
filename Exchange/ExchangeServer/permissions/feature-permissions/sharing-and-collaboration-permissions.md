@@ -17,7 +17,7 @@ manager: serdars
 
 # Sharing and collaboration permissions
 
-The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](https://technet.microsoft.com/library/f45c1be1-2a66-4610-a28d-4adc6d212769.aspx) and [Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
+The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](https://docs.microsoft.com/exchange/collaboration-exchange-2013-help) and [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 

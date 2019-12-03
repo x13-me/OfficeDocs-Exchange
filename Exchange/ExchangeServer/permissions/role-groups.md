@@ -455,7 +455,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-Ma
 > [!NOTE]
 > You can use the _WhatIf_ switch to verify that only the role assignments you want to change are changed. Run the preceding command with the _WhatIf_ switch to verify the results, and then remove the _WhatIf_ switch to apply the changes.
 
-For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
+For more information about changing management role assignments, see [Change a Role Assignment]https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
 
@@ -493,7 +493,7 @@ You use only the parameters you need to configure the scope you want to use. For
 Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
 ```
 
-For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
+For more information about changing management role assignments, see [Change a Role Assignment](https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
 For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-managementroleassignment).
 
