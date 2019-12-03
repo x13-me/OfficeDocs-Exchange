@@ -88,7 +88,7 @@ To create a Send connector that's configured to send messages to the internet, r
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
 
 ### Step 2: Create a dedicated Send connector to only send messages to the Exchange organization
 
@@ -114,7 +114,7 @@ To create a Send connector configured to send messages to the Exchange organizat
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces "--" -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
 
 ### Step 3: Modify the default Receive connector to only accept messages from the internet
 
@@ -130,7 +130,7 @@ To modify the default Receive connector to only accept messages from the interne
 Set-ReceiveConnector -Identity "Default internal Receive connector ServerName>" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-receiveconnector).
 
 ### Step 4: Create a dedicated Receive connector to only accept messages from the Exchange organization
 
@@ -152,7 +152,7 @@ To create a Receive connector configured to only accept messages from the Exchan
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -242,7 +242,7 @@ To create a Send connector to send outgoing messages to the Edge Transport serve
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
 
 #### How do you know this worked?
 

@@ -59,4 +59,4 @@ New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "http
 
 After you create a new OAB virtual directory, you must edit the settings on each OAB that uses Web-based distribution to reconnect to the OAB virtual directory. For more information, see [Change the offline address book generation schedule](change-address-book-generation-schedule-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [New-OABVirtualDirectory](https://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).
+For detailed syntax and parameter information, see [New-OABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-oabvirtualdirectory).

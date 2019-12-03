@@ -92,7 +92,7 @@ New-AcceptedDomain -Name "Contoso Corp" -DomainName contoso.com
 
 **Note**: We didn't need to use the _DomainType_ parameter, because the default value is `Authoritative`.
 
-For detailed syntax and parameter information, see [New-AcceptedDomain](https://technet.microsoft.com/library/08bcaaec-51e3-447d-b3bf-406a705c64b4.aspx).
+For detailed syntax and parameter information, see [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-accepteddomain).
 
 ### How do you know this worked?
 
@@ -146,7 +146,7 @@ This example enables Recipient Lookup on a Edge Transport server for the interna
 Set-AcceptedDomain -Identity "Fabrikam Corp" -AddressBookEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://technet.microsoft.com/library/2ef9a20b-0974-45d0-9dae-23bab22d736e.aspx).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).
 
 ### How do you know this worked?
 
@@ -198,7 +198,7 @@ This example removes the accepted domain named Fabrikam Corp.
 Remove-AcceptedDomain -Identity "Fabrikam Corp"
 ```
 
-For detailed syntax and parameter information, see [remove-AcceptedDomain](https://technet.microsoft.com/library/79bedc01-7b50-4127-ba54-06bf55c3f43d.aspx).
+For detailed syntax and parameter information, see [remove-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-accepteddomain).
 
 ### How do you know this worked?
 

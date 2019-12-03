@@ -92,7 +92,7 @@ After you create the Send connector, it appears in the Send connector list.
 
 ## Use the Exchange Management Shell to create a Send connector that uses smart host routing
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
@@ -116,7 +116,7 @@ After you create the Send connector, it appears in the Send connector list.
    New-SendConnector -Name "Smart host to Internet" -AddressSpaces * -Custom -DNSRoutingEnabled $false -SmartHosts 192.168.3.2 -SmartHostAuthMechanism None
    ```
 
-For information about other options, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
 
 ## How do you know this worked?
 

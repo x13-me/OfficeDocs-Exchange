@@ -111,7 +111,7 @@ This example creates a remote domain for messages sent to the contoso.com domain
 New-RemoteDomain -Name "Contoso and subdomains" -DomainName *.contoso.com
 ```
 
-For detailed syntax and parameter information, see [New-RemoteDomain](https://technet.microsoft.com/library/31442c97-1813-43d9-b9d1-da487e6b00ea.aspx).
+For detailed syntax and parameter information, see [New-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-remotedomain).
 
 #### Step 2: Configure the remote domain settings
 
@@ -169,7 +169,7 @@ This example specifies using the Unicode character set for non-MIME messages sen
 Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
 ```
 
-For detailed syntax and parameter information, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
+For detailed syntax and parameter information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-remotedomain).
 
 ### How do you know this worked?
 
@@ -215,7 +215,7 @@ This example removes the remote domain named Contoso.
 Remove-RemoteDomain -Identity Contoso
 ```
 
-For detailed syntax and parameter information, see [Remove-RemoteDomain](https://technet.microsoft.com/library/7c17847a-310e-45df-8c0c-58b4297e6f8d.aspx).
+For detailed syntax and parameter information, see [Remove-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-remotedomain).
 
 ### How do you know this worked?
 

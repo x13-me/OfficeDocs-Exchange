@@ -64,7 +64,7 @@ There are two ways you can manage public folder mailboxes:
 
 - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
 
-- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet to support public folder mailboxes:
+- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox) cmdlet to support public folder mailboxes:
 
   - _PublicFolder_: This parameter is used with the **New-Mailbox** cmdlet to create a public folder mailbox. When you create a public folder mailbox, a new mailbox is created with the mailbox type of `PublicFolder`. For more information, see [Create a public folder mailbox](create-public-folder-mailboxes.md).
 
@@ -99,7 +99,7 @@ The public folder hierarchy synchronization process uses Incremental Change Sync
 > [!IMPORTANT]
 > Because there's only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.
 
-In a large organization, when you create a new public folder mailbox, the hierarchy must synchronize to that public folder before users can connect to it. Otherwise, users may see an incomplete public folder structure when connecting with Outlook. To allow time for this synchronization to occur without users attempting to connect to the new public folder mailbox, set the _IsExcludedFromServingHierarchy_ parameter on the **New-Mailbox** cmdlet when creating the public folder mailbox. This parameter prevents users from connecting to the newly created public folder mailbox. When synchronization is complete, run the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _IsExcludedFromServingHierarchy_ parameter set to `false`, indicating that the public folder mailbox is ready to be connected to. You can use also the [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/library/e780d809-a408-4799-8175-46946835bee4.aspx) cmdlet to view the sync status by the _SyncInfo_ and the _AssistantInfo_ properties.
+In a large organization, when you create a new public folder mailbox, the hierarchy must synchronize to that public folder before users can connect to it. Otherwise, users may see an incomplete public folder structure when connecting with Outlook. To allow time for this synchronization to occur without users attempting to connect to the new public folder mailbox, set the _IsExcludedFromServingHierarchy_ parameter on the **New-Mailbox** cmdlet when creating the public folder mailbox. This parameter prevents users from connecting to the newly created public folder mailbox. When synchronization is complete, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet with the _IsExcludedFromServingHierarchy_ parameter set to `false`, indicating that the public folder mailbox is ready to be connected to. You can use also the [Get-PublicFolderMailboxDiagnostics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfoldermailboxdiagnostics) cmdlet to view the sync status by the _SyncInfo_ and the _AssistantInfo_ properties.
 
 For more information, see [Create a public folder](create-public-folders.md).
 
@@ -138,13 +138,13 @@ In addition to moving public folders, you can move public folder mailboxes to di
 ## Public folder quotas
 <a name="Quotas"> </a>
 
-By default, new public folder mailboxes automatically inherit the size limits of the mailbox database. As a result, to accurately evaluate the current storage quota status for the public folder mailbox using the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet, you first need to review the value of the _UseDatabaseQuotaDefaults_ property:
+By default, new public folder mailboxes automatically inherit the size limits of the mailbox database. As a result, to accurately evaluate the current storage quota status for the public folder mailbox using the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet, you first need to review the value of the _UseDatabaseQuotaDefaults_ property:
 
 - If the value is `True`, the per-mailbox settings are ignored and the mailbox database limits are used.
 
 - If the value is `False`, the per-mailbox settings are used.
 
-If the _UseDatabaseQuotaDefaults_ property is `True` and the _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, and _IssueWarningQuota_ properties are `unlimited`, the mailbox size isn't really unlimited. Instead, you need to use the [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet and review the corresponding mailbox database storage limits to find out what the limits for the mailbox are. The default mailbox database quota limits are:
+If the _UseDatabaseQuotaDefaults_ property is `True` and the _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, and _IssueWarningQuota_ properties are `unlimited`, the mailbox size isn't really unlimited. Instead, you need to use the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet and review the corresponding mailbox database storage limits to find out what the limits for the mailbox are. The default mailbox database quota limits are:
 
 - _IssueWarningQuota_: 1.9 GB
 
@@ -152,9 +152,9 @@ If the _UseDatabaseQuotaDefaults_ property is `True` and the _ProhibitSendQuota_
 
 - _ProhibitSendReceiveQuota_: 2.3 GB
 
-To find the mailbox database quotas, run the [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet.
+To find the mailbox database quotas, run the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet.
 
-To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet with the _DefaultPublicFolderIssueWarningQuota_ and _DefaultPublicFolderProhibitPostQuota_ parameters.
+To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet with the _DefaultPublicFolderIssueWarningQuota_ and _DefaultPublicFolderProhibitPostQuota_ parameters.
 
 ## Disaster recovery
 <a name="DR"> </a>

@@ -59,7 +59,7 @@ This example applies the Outlook Web App mailbox policy named "Calendar" to the 
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy:Calendar
 ```
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
 
 ## Remove an Outlook Web App mailbox policy
 
@@ -83,4 +83,4 @@ This example removes the Outlook Web App mailbox policy from mailbox of the user
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy:$null
 ```
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
