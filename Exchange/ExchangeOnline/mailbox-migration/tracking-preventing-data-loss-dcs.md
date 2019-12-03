@@ -21,20 +21,20 @@ When migrating your Exchange environment to the cloud, the migration process mig
 
 ## Migration and DataConsistencyScore
 
-When you attempt a migration, any inconsistencies in your Exchange data store will count towards the DataConsistencyScore. This score is then used to determine whether an Exchange migration will complete successfully or if intervention is needed.
+When you attempt a migration, any inconsistencies between the source and target data stores will count towards the DataConsistencyScore. This score is then used to determine whether an Exchange Online migration will complete successfully or if intervention is needed.
 
 There are 4 possible grades that are derived from the DataConsistencyScore.
 
 |Grade|Description|
 |---|---|
-|**Perfect**| No instances of data loss noted during migration. The migration will succeed.|
-|**Good**| At least 1 instance of data loss noted, but the loss was not impactful. For example, if only metadata or folder permissions were lost during migration. The migration will succeed.|
-|**Investigate**|Significant, but relatively minor data loss was detected. You must approve the migration for it to complete.|
+|**Perfect**| No inconsistencies noted during migration. The migration will succeed.|
+|**Good**| At least 1 inconsistency noted, but the data loss was not impactful. For example, if only metadata or folder permissions were lost during migration. The migration will succeed.|
+|**Investigate**|A small amount of significant data loss was detected, caused by some common inconsistency types. You must approve the migration for it to complete.|
 |**Poor**|Major data loss was detected. The migration cannot complete unless you contact Microsoft Support for assistance.|
 
 ## How the DataConsistencyScore is calculated
 
-There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange administrators.
+There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
 
 For batches, the DataConsistencyScore is equal to the worst DataConsistencyScore of any user within that batch. This behavior helps administrators know immediately whether there is any data loss that should be investigated.
 
@@ -53,6 +53,10 @@ If you are using MoveRequests directly, then run:
 ```
 Set-MoveRequest -SkippedItemApprovalTime $([DateTime]::UtcNow)
 ```
+
+For a batch scored as **Investigate**, approving the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate.
+
+For a batch scored as **Poor**, choosing to approve the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate, but will not approve any migration in the batch with a score of Poor.
 
 If the migration has failed with a grade of **Poor**, it is possible to force the migration to succeed, but this is not recommended. Please contact Microsoft Support for assistance.
 
