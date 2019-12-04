@@ -30,7 +30,7 @@ Mailbox audit logs are generated for each mailbox that has mailbox audit logging
 
 By default, mailbox audit log entries are retained in the mailbox for 90 days and then deleted. You can modify this retention period by using the _AuditLogAgeLimit_ parameter with the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet. If a mailbox is on In-Place Hold or Litigation Hold, audit log entries are only retained until the audit log retention period for the mailbox is reached. To retain audit log entries longer, you have to increase the retention period by changing the value for the _AuditLogAgeLimit_ parameter. You can also export audit log entries before the retention period is reached. For more information, see:
 
-- [Export Mailbox Audit Logs](https://docs.microsoft.com/en-us/exchange/export-mailbox-audit-logs-exchange-2013-help)
+- [Export Mailbox Audit Logs](https://docs.microsoft.com/exchange/export-mailbox-audit-logs-exchange-2013-help)
 
 - [Create a Mailbox Audit Log Search](https://docs.microsoft.com/exchange/create-a-mailbox-audit-log-search-exchange-2013-help)
 
