@@ -65,7 +65,7 @@ Verify that the following prerequisite steps have been completed, and then use t
 - The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
-    > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+    > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Office 365 portal and selecting the **Edit** button.
 

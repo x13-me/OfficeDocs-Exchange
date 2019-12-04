@@ -27,7 +27,7 @@ Agent logging records the actions that are performed on messages by specific ant
 
 - [Antispam Agent Logging](https://docs.microsoft.com/exchange/anti-spam-agent-logging-exchange-2013-help)
 
-- [Configure Antispam Agent Logging](https://technet.microsoft.com/library/df157ca3-ad8e-4302-acbc-5fbb8570c21d.aspx)
+- [Configure Antispam Agent Logging](https://docs.microsoft.com/exchange/configure-anti-spam-agent-logging-exchange-2013-help)
 
 - [Enable antispam functionality on Mailbox servers](../../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md)
 
@@ -101,9 +101,9 @@ Delivery reports for administrators is a targeted search of the message tracking
 
 Pipeline tracing records snapshots of messages before and after the message is affected by transport agents in the transport pipeline. For more information, see these topics:
 
-- [Pipeline Tracing](https://technet.microsoft.com/library/e7780499-9a6f-48b1-aea8-df88ecd8b18a.aspx)
+- [Pipeline Tracing](https://docs.microsoft.com/exchange/pipeline-tracing-exchange-2013-help)
 
-- [Configure Pipeline Tracing](https://technet.microsoft.com/library/10293c83-2157-474e-840d-942e064a4672.aspx)
+- [Configure Pipeline Tracing](https://docs.microsoft.com/exchange/configure-pipeline-tracing-exchange-2013-help)
 
  **Enabled by default?**: No
 
@@ -169,9 +169,9 @@ For more information about these connectors, see [Default Receive connectors cre
 
 Routing table logging periodically records snapshots of the routing table that Exchange servers uses to deliver messages. For more information, see these topics:
 
-- [Routing Table Logging](https://technet.microsoft.com/library/ecdd6ce8-85f2-4647-b5b2-b4f2d5ed1f54.aspx)
+- [Understanding Routing Table Logging](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb125148(v=exchg.141))
 
-- [Configure Routing Table Logging](https://technet.microsoft.com/library/7184f8f7-4eb8-468a-aafe-b2d72868f820.aspx)
+- [Configure Routing Table Logging](https://docs.microsoft.com/exchange/configure-routing-table-logging-exchange-2013-help)
 
  **Enabled by default?**: Yes
 

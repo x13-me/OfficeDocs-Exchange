@@ -24,7 +24,7 @@ You can use the Exchange Management Shell to retrieve statistics about a public 
 
 For additional management tasks related to managing public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
 
-For additional management tasks related to public folders, see [Public Folder Procedures in Exchange Online](https://technet.microsoft.com/library/c0c561cb-3d25-4a26-b94a-ba3876c49fbf.aspx).
+For additional management tasks related to public folders, see [Public Folder Procedures in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/public-folder-procedures).
 
 ## What do you need to know before you begin?
 

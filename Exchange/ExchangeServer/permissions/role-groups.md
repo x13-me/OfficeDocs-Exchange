@@ -399,7 +399,7 @@ To verify that you have successfully removed roles from a role group, do the fol
 
 The management role assignments between a role group and a role contain management scopes, which determine what objects are made available to members of that role group. By changing the write scope on a role group, you can change what objects are made available to role group members to create, change, or remove. You can't change the read scope on a role group.
 
-Exchange Server includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](https://technet.microsoft.com/library/b97a5be3-15cc-4954-ba30-a824a95e21be.aspx).
+Exchange Server includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](https://docs.microsoft.com/exchange/create-a-regular-or-exclusive-scope-exchange-2013-help).
 
 For more information about management role scopes and assignments in Exchange Server, see the following topics:
 

@@ -165,7 +165,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md)
 
-  - [Configure the Startup Mode on a Client Access Server](https://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx) and [Configure the Startup Mode on a Mailbox Server](https://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx)
+  - [Configure the Startup Mode on a Client Access Server](https://docs.microsoft.com/exchange/configure-the-startup-mode-on-a-client-access-server-exchange-2013-help) and [Configure the Startup Mode on a Mailbox Server](https://docs.microsoft.com/exchange/configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help)
 
   - [Message retry, resubmit, and expiration intervals](../../mail-flow/queues/message-intervals.md)
 

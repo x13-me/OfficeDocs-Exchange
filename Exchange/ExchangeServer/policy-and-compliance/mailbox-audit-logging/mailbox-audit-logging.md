@@ -30,9 +30,9 @@ Mailbox audit logs are generated for each mailbox that has mailbox audit logging
 
 By default, mailbox audit log entries are retained in the mailbox for 90 days and then deleted. You can modify this retention period by using the _AuditLogAgeLimit_ parameter with the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet. If a mailbox is on In-Place Hold or Litigation Hold, audit log entries are only retained until the audit log retention period for the mailbox is reached. To retain audit log entries longer, you have to increase the retention period by changing the value for the _AuditLogAgeLimit_ parameter. You can also export audit log entries before the retention period is reached. For more information, see:
 
-- [Export Mailbox Audit Logs](https://technet.microsoft.com/library/b458a95a-3321-4647-8884-cf97f8e7186a.aspx)
+- [Export Mailbox Audit Logs](https://docs.microsoft.com/en-us/exchange/export-mailbox-audit-logs-exchange-2013-help)
 
-- [Create a Mailbox Audit Log Search](https://technet.microsoft.com/library/48ba22cf-b1f2-4dbc-98fc-fed22d97db14.aspx)
+- [Create a Mailbox Audit Log Search](https://docs.microsoft.com/exchange/create-a-mailbox-audit-log-search-exchange-2013-help)
 
 ## Enabling mailbox audit logging
 <a name="Enable"> </a>
@@ -76,13 +76,13 @@ You can use the following methods to search mailbox audit log entries:
 
 - **Synchronously search a single mailbox**: You can use the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet to synchronously search mailbox audit log entries for a single mailbox. The cmdlet displays search results in the Exchange Management Shell window. For details, see [Search Mailbox Audit Log for a Mailbox](https://technet.microsoft.com/library/5b518a08-3b51-4ba3-bfbd-0e35cc5ff374.aspx).
 
-- **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) cmdlet. For details, see [Create a Mailbox Audit Log Search](https://technet.microsoft.com/library/48ba22cf-b1f2-4dbc-98fc-fed22d97db14.aspx).
+- **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) cmdlet. For details, see [Create a Mailbox Audit Log Search](https://docs.microsoft.com/exchange/create-a-mailbox-audit-log-search-exchange-2013-help).
 
 - **Use auditing reports in the Exchange admin center (EAC)**: You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report (contains entries for admin and delete actions) or export non-owner entries from the mailbox audit log. For details, see:
 
   - [Run a non-owner mailbox access report](../../policy-and-compliance/non-owner-mailbox-access-reports.md)
 
-  - [Export Mailbox Audit Logs](https://technet.microsoft.com/library/b458a95a-3321-4647-8884-cf97f8e7186a.aspx)
+  - [Export Mailbox Audit Logs](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## Mailbox audit log entries
 <a name="Mailbox"> </a>

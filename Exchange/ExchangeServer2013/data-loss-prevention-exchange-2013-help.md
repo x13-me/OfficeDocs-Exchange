@@ -67,7 +67,7 @@ To learn more about these new features, see [Integrating sensitive information r
 
 ## Information about DLP-processed messages
 
-For Exchange 2013 to obtain information about messages and DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://technet.microsoft.com/library/8e807f94-384c-43f5-be6f-06c5587175a0.aspx). Data related to DLP detections, is highly integrated into the delivery reports message tracking tool of Exchange 2013.
+For Exchange 2013 to obtain information about messages and DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md). Data related to DLP detections, is highly integrated into the delivery reports message tracking tool of Exchange 2013.
 
 ## Installation prerequisites
 

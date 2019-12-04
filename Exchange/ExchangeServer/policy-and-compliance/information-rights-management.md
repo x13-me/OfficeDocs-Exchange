@@ -116,7 +116,7 @@ To enforce messaging policies and for regulatory compliance, Exchange needs acce
 
 - **Journal report decryption**: Allows standard or premium journaling to save a clear-text copy of IRM-protected messages in journal reports. For more information, see [Enable journal report decryption](journaling/journaling-procedures.md#enable-journal-report-decryption).
 
-- **IRM decryption for Exchange Search**: Allows Exchange Search to index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in the search results. For more information, see [Configure IRM for Exchange Search and In-Place eDiscovery](https://technet.microsoft.com/library/d96790e9-93ad-4a56-b90f-2dbfa2f2073c.aspx).
+- **IRM decryption for Exchange Search**: Allows Exchange Search to index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in the search results. For more information, see [Configure IRM for Exchange Search and In-Place eDiscovery](https://docs.microsoft.com/exchange/configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help).
 
 To enable these decryption features, you need to add the Federation mailbox (a system mailbox that's created by Exchange), to the Super Users group on the AD RMS server. For instructions, see [Add the Federation Mailbox to the AD RMS Super Users Group](https://docs.microsoft.com/exchange/add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help).
 

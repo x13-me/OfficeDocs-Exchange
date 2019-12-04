@@ -23,7 +23,7 @@ An address list is a collection of mail-enabled recipient objects in Exchange On
 
 For additional management tasks related to manage address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
 
-Looking for the Exchange Server version of this topic? See [Create an Address List](https://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+Looking for the Exchange Server version of this topic? See [Create address lists](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-lists/address-list-procedures#create-address-lists).
 
 ## What do you need to know before you begin?
 

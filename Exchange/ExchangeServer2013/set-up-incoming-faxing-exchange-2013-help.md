@@ -38,7 +38,7 @@ For more information about fax partners, see [Microsoft Pinpoint for Fax Partner
 ### Step 1: Deploy Unified Messaging
 <a name="step1deployUM"> </a>
 
-Before you can set up faxing for your on-premises or hybrid organization, you need to successfully deploy Client Access and Mailbox servers and configure your supported Voice over IP (VoIP) gateways to allow faxing. For details about how to deploy UM, see [Deploy Exchange 2013 UM](https://technet.microsoft.com/library/d147d4b1-32d7-476b-b76f-ee3c0b35ba49.aspx). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect UM to Your Telephone System](https://technet.microsoft.com/library/92c3e029-f732-4d6d-b147-2b3006d5f088.aspx).
+Before you can set up faxing for your on-premises or hybrid organization, you need to successfully deploy Client Access and Mailbox servers and configure your supported Voice over IP (VoIP) gateways to allow faxing. For details about how to deploy UM, see [Deploy Exchange 2013 UM](deploy-exchange-2013-um-exchange-2013-help.md). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect UM to your telephone system in Exchange Server](connect-um-to-your-telephone-system-exchange-2013-help.md).
 
 > [!IMPORTANT]
 > Sending and receiving faxes using T.38 or G.711 isn't supported in an environment where Unified Messaging and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server are integrated.

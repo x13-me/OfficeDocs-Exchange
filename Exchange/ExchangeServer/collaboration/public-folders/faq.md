@@ -21,7 +21,7 @@ To learn more about public folders, see [Public folders](public-folders.md).
 
 ## FAQ about public folder migration
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
+This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
 
 ### What are the supported public folder migration scenarios?
 
@@ -152,7 +152,7 @@ Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administ
 
 ## If the master hierarchy goes down, what's the user impact?
 
-If the master hierarchy public folder mailbox goes down, users can view but not write to public folders. To help prevent the hierarchy from going down, we recommend that you include your public folders in a database availability group (DAG). To learn about DAGs, see [Database Availability Groups](https://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
+If the master hierarchy public folder mailbox goes down, users can view but not write to public folders. To help prevent the hierarchy from going down, we recommend that you include your public folders in a database availability group (DAG). To learn about DAGs, see [Database availability groups](../../high-availability/database-availability-groups/database-availability-groups.md).
 
 ## Can you change which public folder mailbox is the master hierarchy mailbox?
 

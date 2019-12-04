@@ -54,4 +54,4 @@ Although address lists are useful tools for users, poorly planned address lists 
 
 - Name your address lists in such a way that, when users glance at them, they will know immediately which recipient types are contained in the list. If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating an address list in Exchange Server, see [Create an Address List](https://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+For detailed instructions about creating an address list in Exchange Server, see [Create an address list](create-an-address-list-exchange-2013-help.md).

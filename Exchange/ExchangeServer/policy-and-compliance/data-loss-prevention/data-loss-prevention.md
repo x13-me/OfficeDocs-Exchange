@@ -85,7 +85,7 @@ You can still apply traditional message classifications to messages, and you can
 ## Information about DLP-processed messages
 <a name="dlp_information"> </a>
 
-To see information about messages that contain DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://technet.microsoft.com/library/8e807f94-384c-43f5-be6f-06c5587175a0.aspx). Data related to DLP detections is highly integrated in the delivery reports.
+To see information about messages that contain DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://docs.microsoft.com/exchange/create-incident-reports-for-dlp-policy-detections-exchange-2013-help). Data related to DLP detections is highly integrated in the delivery reports.
 
 ## For more information
 <a name="dlp_moreinfo"> </a>

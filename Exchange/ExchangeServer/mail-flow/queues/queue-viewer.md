@@ -47,7 +47,7 @@ The topics in the following table contain procedures that use Queue Viewer:
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Connect to a Server in Queue Viewer](https://technet.microsoft.com/library/6c1ad574-9ab5-4dcc-9398-ec10eca4fd11.aspx)|By default, Queue Viewer opens the queue database on the server where you opened Queue Viewer. However, you can connect to a different server.|
+|[Connect to a Server in Queue Viewer](https://docs.microsoft.com/exchange/connect-to-a-server-in-queue-viewer-exchange-2013-help)|By default, Queue Viewer opens the queue database on the server where you opened Queue Viewer. However, you can connect to a different server.|
 |[Set Queue Viewer Options](https://technet.microsoft.com/library/03a9134c-0714-4c13-b286-92bccc7ec05e.aspx)|You can configure the queue and message refresh intervals, and the number of items that are displayed on each page.|
 |[View queued message properties in Queue Viewer](queued-message-properties.md)|Explains how to use Queue Viewer to view messages, and explains the message properties.|
 |[Export Lists from Queue Viewer](https://technet.microsoft.com/library/dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194.aspx)|You can use the **Export List** link in the action pane to export the list of queues or a list of messages for troubleshooting and diagnostics.|

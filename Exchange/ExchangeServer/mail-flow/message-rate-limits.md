@@ -52,7 +52,7 @@ Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | 
 ```
 
 > [!NOTE]
-> The Pickup directory and the Replay directory that are available on Edge Transport servers and Mailbox servers also have messages rate limits that you can configure. Typically, the Pickup directory and the Replay directory aren't used in everyday mail flow. For more information, see [Configure the Pickup Directory and the Replay Directory](https://technet.microsoft.com/library/c9ca7358-9a08-4f57-89d0-910e4438df8a.aspx). The maximum number of message files per minute that can be processed by the Pickup directory and the Replay directory is 100. Each directory can independently process message files at this rate.
+> The Pickup directory and the Replay directory that are available on Edge Transport servers and Mailbox servers also have messages rate limits that you can configure. Typically, the Pickup directory and the Replay directory aren't used in everyday mail flow. For more information, see [Configure the Pickup Directory and the Replay Directory](https://docs.microsoft.com/exchange/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help). The maximum number of message files per minute that can be processed by the Pickup directory and the Replay directory is 100. Each directory can independently process message files at this rate.
 
 ## Message throttling on Send connectors
 <a name="SendConn"> </a>
