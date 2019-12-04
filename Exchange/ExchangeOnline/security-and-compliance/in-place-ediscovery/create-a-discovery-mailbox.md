@@ -61,7 +61,7 @@ For detailed syntax and parameter information, see [new-Mailbox](https://technet
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
 ```
-Get-Mailbox -Resultsize unlimited -Filter {RecipientTypeDetails -eq "DiscoveryMailbox"}
+Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).

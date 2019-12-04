@@ -67,7 +67,7 @@ This example creates an address list with a custom recipient filter:
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
 ```
-New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
+New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
 For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
@@ -76,7 +76,7 @@ For detailed syntax and parameter information, see [New-AddressList](https://tec
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
 
 ```
-New-AddressList -Name "Oregon and Washington" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+New-AddressList -Name "Oregon and Washington" -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates the child address list Building 34 Meeting Rooms in the All Rooms parent container, using built-in conditions.
@@ -126,7 +126,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 1. Use the query from the address list to find all users that should be in the address list. For example:
 
    ```
-   $Before = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))} -ResultSize Unlimited
+   $Before = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))" -ResultSize Unlimited
    ```
 
 2. Change the required property to a temporary value. For example, change the **StateOrProvince** values from `Oregon` to `OR`, and `Washington` to `WA`:
@@ -142,7 +142,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 3. Find those same users again by using the temporary property values. For example:
 
    ```
-   $After = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))} -ResultSize Unlimited
+   $After = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))" -ResultSize Unlimited
    ```
 
 4. Change the temporary value back to the required value. For example, change the **StateOrProvince** values from `OR` to `Oregon`, and `WA` to `Washington`:
@@ -324,7 +324,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
 
    ```
-   Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
+   Get-Recipient -ResultSize unlimited -Filter 'HiddenFromAddressListsEnabled -eq $true'
    ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.

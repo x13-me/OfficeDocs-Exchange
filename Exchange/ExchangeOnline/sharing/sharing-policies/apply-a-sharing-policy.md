@@ -73,7 +73,7 @@ Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
 This example finds all user mailboxes in the Marketing department and then applies the sharing policy Contoso Marketing.
 
 ```
-Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+Get-Mailbox -Filter "Department -eq 'Marketing'" | Set-Mailbox -SharingPolicy "Contoso Marketing"
 ```
 
 This example shows all mailboxes that have the sharing policy Contoso applied, and it sorts the users into a table that displays only their aliases and email addresses.
