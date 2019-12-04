@@ -115,13 +115,13 @@ New-DynamicDistributionGroup -IncludedRecipients MailboxUsers -Name "Mailbox Use
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users on a server called Server1.
 
 ```
-New-DynamicDistributionGroup -Name "Mailbox Users on Server1" -OrganizationalUnit Users -RecipientFilter {((RecipientTypeDetails -eq 'UserMailbox' -and ServerName -eq 'Server1'))}
+New-DynamicDistributionGroup -Name "Mailbox Users on Server1" -OrganizationalUnit Users -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (ServerName -eq 'Server1')"
 ```
 
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users that have a value of "FullTimeEmployee" in the **CustomAttribute10** property.
 
 ```
-New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter {(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')}
+New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')"
 ```
 
 For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-dynamicdistributiongroup).

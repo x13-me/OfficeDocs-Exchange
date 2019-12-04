@@ -63,7 +63,7 @@ This example creates a GAL with a custom recipient filter:
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
 ```
-New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter {CustomAttribute15 -like "*AgencyA*"}
+New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
 For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).

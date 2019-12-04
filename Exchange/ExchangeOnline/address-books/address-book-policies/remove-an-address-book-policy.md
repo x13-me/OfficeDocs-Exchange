@@ -47,13 +47,13 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
 2. To see if the ABP is assigned to an active mailbox, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following command:
 
    ```
-   Get-Mailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<ABPDistinguishedName>'}
+   Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    To remove the ABP assignment from any active mailboxes that you find, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following commands:
 
    ```
-   $a = Get-Mailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<ABPDistinguishedName>'}
+   $a = Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    ```
@@ -63,13 +63,13 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
 3. To see if the ABP is assigned to a soft-deleted (recoverable) mailbox, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following command:
 
    ```
-   Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<ABPDistinguishedName>'}
+   Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    To remove the ABP assignment from any soft-deleted mailboxes that you find, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following commands:
 
    ```
-   $s = Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<ABPDistinguishedName>'}
+   $s = Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    ```

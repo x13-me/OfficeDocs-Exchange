@@ -125,7 +125,7 @@ There are three basic methods you can use to apply an ABP to mailboxes:
   This example assigns the ABP named All Fabrikam to all mailbox users whose **CustomAttribute15** value is `FAB`.
 
   ```
-  $Fabrikam = Get-Mailbox -Filter {(CustomAttribute15 -eq 'FAB')}
+  $Fabrikam = Get-Mailbox -Filter "CustomAttribute15 -eq 'FAB'"
   ```
 
   ```
