@@ -123,7 +123,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help)
 
-  - [Install or remove add-ins for Outlook for your organization in Exchange 2013](../../../ExchangeServer2013/install-or-remove-outlook-add-ins-exchange-2013-help.md)
+  - [Install or remove add-ins for Outlook for your Exchange 2013 organization](https://docs.microsoft.com/exchange/install-or-remove-outlook-add-ins-2013-help)
 
   - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
 
