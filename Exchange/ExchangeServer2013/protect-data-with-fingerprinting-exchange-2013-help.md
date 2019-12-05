@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
+If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](overview-of-document-fingerprinting-in-exchange.md). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
 
 > [Document Fingerprinting](https://www.microsoft.com/videoplayer/embed/0f803e16-397a-4b83-8a85-06cd4264aaca?autoplay=false)
 
@@ -77,7 +77,7 @@ For syntax and parameter information, see [New-Fingerprint](https://docs.microso
 
 ## For more information
 
-[Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
+[Document Fingerprinting](overview-of-document-fingerprinting-in-exchange.md)
 
 [Manage DLP policies](manage-dlp-policies-exchange-2013-help.md)
 

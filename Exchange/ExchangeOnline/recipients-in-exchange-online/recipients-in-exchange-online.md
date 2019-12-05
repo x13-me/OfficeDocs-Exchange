@@ -19,7 +19,7 @@ manager: serdars
 
 # Recipients in Exchange Online
 
-In Exchange Online, the Exchange admin center (EAC) has replaced the Exchange Control Panel (ECP) as the GUI-based administrative tool used to manage cloud-based recipients. The EAC also replaces the Exchange Management Console in Exchange Server. For more information, see [Exchange admin center](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+In Exchange Online, the Exchange admin center (EAC) has replaced the Exchange Control Panel (ECP) as the GUI-based administrative tool used to manage cloud-based recipients. The EAC also replaces the Exchange Management Console in Exchange Server. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
 ## Managing recipients in Exchange Online
 

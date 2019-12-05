@@ -54,13 +54,13 @@ Set-Mailbox -Identity "Pilar Pinilla" -SingleItemRecoveryEnabled $true -RetainDe
 This example enables single item recovery for all user mailboxes in the organization.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -SingleItemRecoveryEnabled $true
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -SingleItemRecoveryEnabled $true
 ```
 
 This example enables single item recovery for all user mailboxes in the organization and sets the number of days that deleted items are retained to 30 days
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -SingleItemRecoveryEnabled $true -RetainDeletedItemsFor 30
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -SingleItemRecoveryEnabled $true -RetainDeletedItemsFor 30
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).

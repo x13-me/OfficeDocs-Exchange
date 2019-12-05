@@ -55,4 +55,4 @@ Items in the Deleted Items folder and items which may have a start and end date,
 
 - If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are removed from the Inbox but preserved in the Recoverable Items folder until the mailbox is removed from [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
 
-- In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and Import Retention Tags](https://technet.microsoft.com/library/18405ea2-7ccc-475e-bd84-8b040e17bf44.aspx) for more information.
+- In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and Import Retention Tags](https://docs.microsoft.com/exchange/export-and-import-retention-tags-exchange-2013-help) for more information.

@@ -30,7 +30,7 @@ The Exchange Management Shell offers several methods that you can use to format 
 
 To use the functionality that is described in this topic, you must be familiar with the following concepts:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Shell variables](https://technet.microsoft.com/library/bb124036\(v=exchg.150\))
 
@@ -238,7 +238,7 @@ Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
 
 In this example, the output from the **Get-Childitem** cmdlet is piped to the **Format-Wide** cmdlet for formatting and then is written to the end of the `OutputFile.txt` file. Notice that if the `OutputFile.txt` file didn't exist, use of the double right-angle brackets ( `>>` ) would create the file.
 
-For more information about pipelines, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+For more information about pipelines, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 For more information about the syntax used in the previous examples, see [Syntax](https://technet.microsoft.com/library/bb123552\(v=exchg.150\)).
 

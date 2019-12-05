@@ -185,7 +185,7 @@ To verify that you've successfully restored a deleted mailbox to the target mail
 
 For more information, see:
 
-- [Manage Mailbox Restore Requests](https://technet.microsoft.com/library/8e668a52-c601-4d96-a51c-ab60267e1321.aspx)
+- [Manage Mailbox Restore Requests](https://docs.microsoft.com/exchange/manage-mailbox-restore-requests-exchange-2013-help)
 
 - [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxrestorerequest)
 

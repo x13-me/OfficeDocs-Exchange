@@ -48,11 +48,11 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Federation**: Exchange 2013 and Exchange 2010 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 tenant organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
-    Learn more at [Understanding Federation](https://technet.microsoft.com/library/0046e2eb-6940-4941-bd5b-cbe6bffa3b94.aspx).
+    Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
 
 - **Organization relationships**: Exchange 2013 servers with the Client Access server role enable the creation of organization relationships between the on-premises and Exchange Online organizations. Organization relationships are required for many other services in a hybrid deployment, including calendar free/busy information sharing, message tracking, and mailbox moves between the on-premises and Exchange Online organizations.
 
-    Learn more at [Understanding Federated Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx).
+    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
 
 - **Message transport**: Exchange 2013 servers with the Client Access and Mailbox server roles are responsible for message transport in a hybrid deployment. Using Send and Receive connectors, they serve as the connection endpoints for incoming external messages and also provide outbound message delivery to the Internet and the Exchange Online organization.
 
@@ -64,7 +64,7 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Outlook Web App**: Exchange 2013 servers with the Client Access server role support configuring a single URL endpoint for external connections to on-premises and Exchange Online mailboxes. For on-premises mailboxes, Client Access servers are configured to service Outlook Web App requests. For Exchange Online organization mailboxes, Client Access servers are configured to automatically display a link to the Outlook Web App endpoint on the Exchange Online organization.
 
-    Learn more at [Outlook on the web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx).
+    Learn more at [Outlook Web App](https://docs.microsoft.com/exchange/outlook-web-app-exchange-2013-help).
 
 ## Exchange server topology
 

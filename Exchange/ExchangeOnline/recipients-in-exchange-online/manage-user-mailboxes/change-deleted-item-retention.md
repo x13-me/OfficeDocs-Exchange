@@ -52,7 +52,7 @@ Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 **Example 2:**: Set all user mailboxes in the organization to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -RetainDeletedItemsFor 30
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
 Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
@@ -71,7 +71,7 @@ Get-Mailbox <Name> | Format-List RetainDeletedItemsFor
 Or to check for all mailboxes, run the following command:
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Format-List Name,RetainDeletedItemsFor
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,RetainDeletedItemsFor
 ```
 
 ## More about deleted items and retention time

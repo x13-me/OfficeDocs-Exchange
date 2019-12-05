@@ -565,4 +565,4 @@ Installing Exchange updates on a server that's a member of a DAG is a relatively
 
 4. Optionally, use the RedistributeActiveDatabases.ps1 script to rebalance the active database copies across the DAG.
 
-For more information about the latest Exchange updates, see [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098.aspx).
+For more information about the latest Exchange updates, see [Exchange Server build numbers and release dates](../../new-features/build-numbers-and-release-dates.md).

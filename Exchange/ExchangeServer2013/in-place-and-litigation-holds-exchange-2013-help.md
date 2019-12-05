@@ -80,7 +80,7 @@ For more information, see:
 
 ## Placing a mailbox on In-Place Hold
 
-Authorized users that have been added to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group or assigned the Legal Hold and Mailbox Search management roles can place mailbox users on In-Place Hold. You can delegate the task to records managers, compliance officers, or attorneys in your organization's legal department, while assigning the least privileges. To learn more about assigning the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions-exchange-2013-help.md).
+Authorized users that have been added to the [Discovery Management](discovery-management-exchange-2013-help.md) role-based access control (RBAC) role group or assigned the Legal Hold and Mailbox Search management roles can place mailbox users on In-Place Hold. You can delegate the task to records managers, compliance officers, or attorneys in your organization's legal department, while assigning the least privileges. To learn more about assigning the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions-exchange-2013-help.md).
 
 > [!IMPORTANT]
 > In Exchange 2010, the Legal Hold role provided users with sufficient permissions to place mailboxes on Litigation Hold. In Exchange 2013, you can use the same permission to place mailboxes on an indefinite or time-based In-Place Hold. However, to create a query-based In-Place Hold, the user must be assigned the Mailbox Search role. The Discovery Management role group has both these roles assigned.

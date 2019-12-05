@@ -23,7 +23,7 @@ Exchange Server 2016 or Exchange 2019 Setup has detected that the target compute
 
 If you install Exchange on a domain controller, be aware of the following issues:
 
-- Configuring Exchange for Active Directory split permissions isn't supported. For more information about split permissions, see [Understanding split permissions](https://technet.microsoft.com/library/dd638106(v=exchg.150).aspx).
+- Configuring Exchange for Active Directory split permissions isn't supported. For more information about split permissions, see [Understanding split permissions](https://docs.microsoft.com/exchange/understanding-split-permissions-exchange-2013-help).
 
 - The Exchange Trusted Subsystem universal security group (USG) is added to the Domain Admins group. This action grants all Exchange servers domain administrator rights in the domain.
 

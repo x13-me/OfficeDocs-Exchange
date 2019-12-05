@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 Address book policies (ABPs) allow you to segment users into specific groups to provide customized views of your organization's global address list (GAL). When creating an ABP, you assign a GAL, an offline address book (OAB), a room list, and one or more address lists to the policy. You can then assign the ABP to mailbox users, providing them with access to a customized GAL in Outlook and Outlook Web App. The goal is to provide a simpler mechanism to accomplish GAL segmentation for on-premises organizations that require multiple GALs. To learn more about ABPs, see [Address book policies](address-book-policies-exchange-2013-help.md).
 
-Interested in scenarios that use this procedure? See [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+Interested in scenarios that use this procedure? See [Scenario: Deploying address book policies](scenario-deploying-address-book-policies-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -24,7 +24,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
 
-- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying address book policies](scenario-deploying-address-book-policies-exchange-2013-help.md).
 
 - You can't use the Exchange admin center (EAC) to create ABPs. You must use the Shell.
 

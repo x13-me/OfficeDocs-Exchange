@@ -114,7 +114,7 @@ For more information, see [Recovery databases](recovery-databases.md). For detai
 
 Database portability is a feature that enables an Exchange mailbox database to be moved to and mounted on any other Exchange Mailbox server in the same organization. By using database portability, reliability is improved by removing several error-prone, manual steps from the recovery processes. In addition, database portability reduces the overall recovery times for various failure scenarios.
 
-For more information, see [Database Portability](https://technet.microsoft.com/library/387b727a-ce51-4910-b5c4-613c693fa5bd.aspx). For detailed steps to use database portability, see [Move a mailbox database using database portability](database-portability.md).
+For detailed steps to use database portability, see [Move a mailbox database using database portability](database-portability.md).
 
 ## Dial Tone Portability
 <a name="DTPort"> </a>

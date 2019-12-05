@@ -55,7 +55,7 @@ Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attrib
 
 - [Set-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/set-remotemailbox)
 
-For more information about multivalued properties, see [Modifying multivalued properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about multivalued properties, see [Modifying multivalued properties](https://docs.microsoft.com/exchange/modifying-multivalued-properties-exchange-2013-help).
 
 ## Custom attribute examples
 <a name="CA"> </a>

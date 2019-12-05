@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can view, change, or remove existing data loss prevention (DLP) policies in Microsoft Exchange, using the Exchange admin center (EAC) or the Exchange Management Shell.
 
-For additional management tasks related to DLP, see [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx).
+For additional management tasks related to DLP, see [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
 For more information about the Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
 

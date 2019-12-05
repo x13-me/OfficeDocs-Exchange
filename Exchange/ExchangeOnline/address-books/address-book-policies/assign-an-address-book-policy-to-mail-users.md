@@ -23,7 +23,7 @@ Address book policies (ABPs) allow you to segment users into specific groups to 
 
 Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web.
 
-To identify your virtual organizations for ABPs, we recommend that you use the **CustomAttribute1** to **CustomAttribute15** attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+To identify your virtual organizations for ABPs, we recommend that you use the **CustomAttribute1** to **CustomAttribute15** attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types.
 
 To assign ABPs to mailboxes, you select the ABP in Exchange admin center (EAC), or specify the ABP in Exchange Online PowerShell.
 
@@ -125,7 +125,7 @@ There are three basic methods you can use to apply an ABP to mailboxes:
   This example assigns the ABP named All Fabrikam to all mailbox users whose **CustomAttribute15** value is `FAB`.
 
   ```
-  $Fabrikam = Get-Mailbox -Filter {(CustomAttribute15 -eq 'FAB')}
+  $Fabrikam = Get-Mailbox -Filter "CustomAttribute15 -eq 'FAB'"
   ```
 
   ```

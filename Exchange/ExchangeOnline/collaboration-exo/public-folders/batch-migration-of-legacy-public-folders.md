@@ -38,7 +38,7 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
 
 - `PublicFolderToMailboxMapGenerator.strings.psd1`: This support file is used by the `PublicFolderToMailboxMapGenerator.ps1` script and should be downloaded to the same location.
 
-- `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
+- `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://docs.microsoft.com/exchange/limits-for-public-folders-exchange-2013-help).
 
 - `Create-PublicFolderMailboxesForMigration.strings.psd1`: This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location.
 

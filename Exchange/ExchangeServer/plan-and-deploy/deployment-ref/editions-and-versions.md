@@ -40,7 +40,7 @@ The server editions are defined by a product key. When you enter a valid product
 
 For a list of Exchange Server versions and how to download and upgrade to the latest version of Exchange, see the following topics:
 
-- [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098(v=exchg.150).aspx)
+- [Exchange Server build numbers and release dates](../../new-features/build-numbers-and-release-dates.md)
 
 - [Install Exchange Mailbox servers using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md)
 

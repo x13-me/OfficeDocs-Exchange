@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange servers aren't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange server redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
+description: Admin can learn how to setup inbound faxing in Exchange Online.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -17,7 +17,7 @@ manager: serdars
 
 # Setting up incoming faxing in Exchange Online
 
-Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange servers aren't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange server redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
+Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange Online isn't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange Online redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
 
 For more information about fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
 
@@ -41,7 +41,7 @@ For more information about fax partners, see [Microsoft Pinpoint for Fax Partner
 ### Step 1: Deploy Unified Messaging
 <a name="step1deployUM"> </a>
 
-Before you can set up faxing for your on-premises or hybrid organization, you need to successfully deploy Client Access and Mailbox servers and configure your supported Voice over IP (VoIP) gateways to allow faxing. For details about how to deploy UM, see [Deploy Exchange Server UM](https://technet.microsoft.com/library/d147d4b1-32d7-476b-b76f-ee3c0b35ba49.aspx). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect UM to Your Telephone System](https://technet.microsoft.com/library/92c3e029-f732-4d6d-b147-2b3006d5f088.aspx).
+Before you can set up faxing for your organization, you need to successfully configure your supported Voice over IP (VoIP) gateways to allow faxing. For more information, see [Voice mail in Exchange Online: Unified Messaging](../voice-mail-unified-messaging.md). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect your voice mail system to your telephone network in Exchange Online](../connect-voice-mail-system/connect-voice-mail-system.md).
 
 > [!IMPORTANT]
 > Sending and receiving faxes using T.38 or G.711 isn't supported in an environment where Unified Messaging and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server are integrated.
@@ -100,34 +100,20 @@ To enable UM-enabled users to receive faxes, you must do the following:
 ### Step 4: Configure authentication
 <a name="step4configureauthentication"> </a>
 
-In addition to configuring your UM dial plans, UM mailbox policies, and UM-enabled users, you have to configure authentication between your Exchange servers and the fax partner server. The Exchange servers must be able to authenticate the origin of the messages that claim to be coming from the fax partner server. Any unauthenticated messages claiming to have come from a fax partner server won't be processed by an Exchange server.
+In addition to configuring your UM dial plans, UM mailbox policies, and UM-enabled users, you have to configure authentication between Exchange Online and the fax partner server. Exchange Online must be able to authenticate the origin of the messages that claim to be coming from the fax partner server. Any unauthenticated messages claiming to have come from a fax partner server won't be processed by Exchange Online.
 
-To authenticate the connection from the fax partner server to the Exchange servers, you can use:
+To authenticate the connection from the fax partner server to Exchange Online, you can use:
 
 - Mutual TLS
 
 - Sender ID validation
 
-- A dedicated receive connector
+- A dedicated Inbound connector
 
-A receive connector should be sufficient for authenticating the fax partner servers deployed in your organization. The receive connector will ensure that the Exchange servers treats all traffic coming from the fax partner server as authenticated.
+An Inbound connector should be sufficient for authenticating the fax partner servers deployed in your organization. The connector will ensure that Exchange Online treats all traffic coming from the fax partner server as authenticated.
 
-The receive connector will be configured on an Exchange server that's used by the fax partner server to submit SMTP fax messages, and must be configured with the following values:
+For details, see [Configure mail flow using connectors in Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
-- _AuthMechanism_: ExternalAuthoritative
+If the fax partner server hosted is in the cloud, it's a good idea to authenticate the fax partner server using a sender ID check. This type of authentication ensures that the IP address that the fax message came from is authorized to send email messages on behalf of the fax partner domain that the message claims to have come from. DNS is used to store the sender ID records (or sender policy framework (SPF) records) and fax partners must publish their SPF records in the DNS forward lookup zone. Exchange will validate the IP addresses by querying DNS. However, the sender ID agent must be running on a Mailbox server to be able to perform the DNS query.
 
-- _PermissionGroups_: ExchangeServers, PartnersFax
-
-- _RemoteIPRanges_: {the fax server's IP address}
-
-- _RequireTLS_: False
-
-- _EnableAuthGSSAPI_: False
-
-- _LiveCredentialEnabled_: False
-
-For details, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
-
-If the fax partner server sends network traffic to an Exchange server over a public network, for example, a service-based fax partner server hosted in the cloud, it's a good idea to authenticate the fax partner server using a sender ID check. This type of authentication ensures that the IP address that the fax message came from is authorized to send email messages on behalf of the fax partner domain that the message claims to have come from. DNS is used to store the sender ID records (or sender policy framework (SPF) records) and fax partners must publish their SPF records in the DNS forward lookup zone. Exchange will validate the IP addresses by querying DNS. However, the sender ID agent must be running on a Mailbox server to be able to perform the DNS query.
-
-You can also use TLS to encrypt the network traffic, or mutual TLS for encryption and authentication between the fax partner server and Exchange servers.
+You can also use TLS to encrypt the network traffic, or mutual TLS for encryption and authentication between the fax partner server and Exchange Online.
