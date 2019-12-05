@@ -174,7 +174,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |**BOOTLOADER**|The event source was unprocessed messages that exist on the server at boot time. This is related to the **LOAD** event type.|
 |**DNS**|The event source was DNS.|
 |**DSN**|The event source was a delivery status notification (also known as a DSN, bounce message, non-delivery report, or NDR).|
-|**GATEWAY**|The event source was a Foreign connector. For more information, see [Foreign Connectors](https://technet.microsoft.com/library/21c6a7a9-f4d2-4359-9ac9-930701b63a4e.aspx).|
+|**GATEWAY**|The event source was a Foreign connector. For more information, see [Foreign Connectors](https://docs.microsoft.com/exchange/foreign-connectors-exchange-2013-help).|
 |**MAILBOXRULE**|The event source was an Inbox rule. For more information, see [Inbox rules](https://go.microsoft.com/fwlink/p/?LinkID=285479).|
 |**MEETINGMESSAGEPROCESSOR**|The event source was the meeting message processor, which updates calendars based on meeting updates.|
 |**ORAR**|The event source was an Originator Requested Alternate Recipient (ORAR). You can enable or disable support for ORAR on Receive connectors using the _OrarEnabled_ parameter on the **New-ReceiveConnector** or **Set-ReceiveConnector** cmdlets.|

@@ -316,7 +316,7 @@ Use this tab to view or change the email addresses that are configured for the g
 
 #### MailTip
 
-Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](https://technet.microsoft.com/library/df8ee7ae-2486-4890-b057-cda87b4cb1ec.aspx).
+Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](https://docs.microsoft.com/exchange/configure-custom-mailtips-exchange-2013-help).
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.

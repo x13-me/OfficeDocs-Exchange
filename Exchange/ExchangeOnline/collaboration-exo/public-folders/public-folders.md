@@ -34,8 +34,6 @@ Public folders aren't designed for the following purposes:
 
 For more information about public folders and other collaboration methods in Office 365 and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
 
-For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](https://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
-
 For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).
 
 For a list of public folder management tasks, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).

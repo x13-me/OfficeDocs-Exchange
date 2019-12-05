@@ -72,7 +72,7 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
 
 2. In Queue Viewer, click the **Queues** tab. A list of all queues on the server to which you're connected is displayed.
 
-3. You can use the **Export List** link in the action pane to export the list of queues. For more information, see [How to Export Lists from the Exchange Management Consoles](https://technet.microsoft.com/library/dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194.aspx).
+3. You can use the **Export List** link in the action pane to export the list of queues. For more information, see [How to Export Lists from the Exchange Management Consoles](https://docs.microsoft.com/exchange/export-lists-from-queue-viewer-exchange-2013-help).
 
 ### Use the Exchange Management Shell to view queues
 
@@ -100,7 +100,7 @@ For more information, see [Get-Queue](https://docs.microsoft.com/powershell/modu
 
 The **Get-QueueDigest** cmdlet provides a high-level, aggregate view of the state of queues on all servers within a specific scope (for example, a DAG, an Active Directory site, a list of servers, or the entire Active Directory forest).
 
-By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](https://technet.microsoft.com/library/dn505733.aspx).
+By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](https://docs.microsoft.com/exchange/configure-get-queuedigest-exchange-2013-help).
 
  **Notes**:
 

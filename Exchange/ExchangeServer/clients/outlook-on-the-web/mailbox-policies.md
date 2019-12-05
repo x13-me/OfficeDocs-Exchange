@@ -96,4 +96,4 @@ To verify that you've successfully edited an Outlook on the web mailbox policy:
 
 ## See also
 
-[Outlook on the web mailbox policies procedures](https://technet.microsoft.com/library/2f9fc960-6d0b-472a-a81a-6d8b629b4d5d.aspx)
+[Outlook Web App mailbox policy procedures in Exchange 2013](https://docs.microsoft.com/exchange/outlook-web-app-mailbox-policy-procedures-exchange-2013-help)

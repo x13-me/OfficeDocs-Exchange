@@ -30,7 +30,7 @@ To find out what permissions you need to perform the procedure or run the cmdlet
     > [!NOTE]
     > You must be assigned the Role Management management role to run the **Get-ManagementRoleAssignment** cmdlet. If you don't have permissions to run the **Get-ManagementRoleAssignment** cmdlet, ask your Exchange administrator to retrieve the role groups or management roles assigned to you.
 
-If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://technet.microsoft.com/library/dd351237.aspx).
+If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://docs.microsoft.com/exchange/delegate-role-assignments-exchange-2013-help).
 
 ## Role management permissions
 
@@ -38,12 +38,12 @@ You can use the features in the following table to manage the management role gr
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Management roles|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
+|Management roles|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
 |Unscoped management roles|[Unscoped Role Management](https://technet.microsoft.com/library/d11eb843-64c9-4968-bfd5-9a8d94903058.aspx) management role|
-|Role groups|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Assignment policies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Role assignments|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Management scopes|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Management role entries|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Legacy permissions|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Active Directory split permissions|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> **Important**: To run the `setup.exe` command with the _PrepareAD_ and _ActiveDirectorySplitPermissions_ parameters, the account you use must be a member of the Schema Admins and Enterprise Administrators groups.|
+|Role groups|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Assignment policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Role assignments|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Management scopes|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Management role entries|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Legacy permissions|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Active Directory split permissions|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> **Important**: To run the `setup.exe` command with the _PrepareAD_ and _ActiveDirectorySplitPermissions_ parameters, the account you use must be a member of the Schema Admins and Enterprise Administrators groups.|

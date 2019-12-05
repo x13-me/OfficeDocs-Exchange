@@ -77,6 +77,6 @@ Optionally, you can use RPTs and personal tags to allow users to clean up their 
 
 ## For more information
 
-[Messaging Records Management Terminology in Exchange 2013](https://technet.microsoft.com/library/de3e3503-6de3-4666-aeb9-cd877efb93bb.aspx)
+[Messaging records management terminology in Exchange 2013](messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md)
 
 [Retention tags and retention policies](retention-tags-and-policies-exchange-2013-help.md)

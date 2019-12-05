@@ -215,4 +215,4 @@ The following table contains links to topics that will help you learn about and 
 |[Custom attributes](mailbox-custom-attributes.md)|Learn how to add information about a recipient by using custom attributes.|
 |[Filters in recipient Shell commands](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
 |[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
-|[Automatic Mailbox Distribution](https://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|
+|[Automatic Mailbox Distribution](https://docs.microsoft.com/exchange/automatic-mailbox-distribution-exchange-2013-help)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|

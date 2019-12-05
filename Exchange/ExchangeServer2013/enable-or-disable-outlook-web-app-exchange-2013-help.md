@@ -23,9 +23,9 @@ For additional management tasks related to managing email client access to a mai
 
 - [Enable or disable MAPI for a mailbox](enable-or-disable-mapi-exchange-2013-help.md)
 
-- [Enable or Disable IMAP4 Access for a User](https://technet.microsoft.com/library/a685fae4-b6f1-42fe-8bdc-5f99f9617799.aspx)
+- [Enable or disable IMAP4 access for a user](enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md)
 
-- [Enable or Disable POP3 Access for a User](https://technet.microsoft.com/library/57e12f07-3b14-45bd-9a82-e6032d14214f.aspx)
+- [Enable or disable POP3 access for a user](enable-or-disable-pop3-access-for-a-user-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 

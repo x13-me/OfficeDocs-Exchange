@@ -81,7 +81,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 ### To disable directory synchronization and uninstall Exchange hybrid
 
-1. Run `Get-OrganizationConfig | Format-List PublicFoldersEnabled` and ensure that it is not set to Remote. If it is set to Remote, and the public folders are something you want to continue to access, you would need to migrate them to Exchange Online. For more information, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
+1. Run `Get-OrganizationConfig | Format-List PublicFoldersEnabled` and ensure that it is not set to Remote. If it is set to Remote, and the public folders are something you want to continue to access, you would need to migrate them to Exchange Online. For more information, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders).
 
 2. Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](https://technet.microsoft.com/library/hh852557.aspx).
 
@@ -91,10 +91,13 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. Some examples are shown below:
 
    Exchange Server 2010 or 2013:
+
    ```
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
+
    Exchange Server 2016 or later:
+
    ```
    Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
@@ -173,7 +176,7 @@ The graphic below describes the actual end state:
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
-1. Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx).
+1. Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders).
 
    > [!IMPORTANT]
    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.

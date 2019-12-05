@@ -25,7 +25,7 @@ DLP policies are simple packages that are collections of mail flow rules (also k
 
  DLP policies can use the full power of mail flow rules to detect and then act on messages in transit. For example, a mail flow rule can perform deep content analysis through keyword matches, dictionary matches, text pattern matches through regular expressions, and other content examination techniques to detect content that violates your organization's DLP policies. Document fingerprinting is also available to help you detect sensitive information in standard forms. For more information, see the following topics:
 
-- [Document fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
+- [Document fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange)
 
 - [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
@@ -39,7 +39,7 @@ In addition to the customizable DLP policies themselves, you can also inform ema
 
 - In hybrid environments where some mailboxes are in on-premises Exchange and some are in Exchange Online, DLP policies are only applied in Exchange Online. Messages that are sent between on-premises users don't have DLP policies applied, because the messages don't leave the on-premises environment.
 
-Looking for management tasks related to Data Loss Prevention? See [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx).
+Looking for management tasks related to Data Loss Prevention? See [DLP Procedures](https://docs.microsoft.com/exchange/dlp-procedures-exchange-2013-help).
 
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
@@ -68,7 +68,7 @@ To make it easy for you to use rules that look for sensitive information, Exchan
 ## Detecting sensitive form data with Document Fingerprinting
 <a name="dlp_fingerprinting"> </a>
 
-Exchange lets you use [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx) to easily create a sensitive information type that's based on a standard form. To learn how to protect form data, see [Protect Form Data with Document Fingerprinting](https://technet.microsoft.com/library/110c839b-7693-42f6-aa5d-58ce64f4c357.aspx).
+Exchange lets you use [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange) to easily create a sensitive information type that's based on a standard form. To learn how to protect form data, see [Protect Form Data with Document Fingerprinting](https://technet.microsoft.com/library/110c839b-7693-42f6-aa5d-58ce64f4c357.aspx).
 
 ## Policy Tips notify users about sensitive content expectations
 <a name="dlp_tips"> </a>
@@ -85,15 +85,15 @@ You can still apply traditional message classifications to messages, and you can
 ## Information about DLP-processed messages
 <a name="dlp_information"> </a>
 
-To see information about messages that contain DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://technet.microsoft.com/library/8e807f94-384c-43f5-be6f-06c5587175a0.aspx). Data related to DLP detections is highly integrated in the delivery reports.
+To see information about messages that contain DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://docs.microsoft.com/exchange/create-incident-reports-for-dlp-policy-detections-exchange-2013-help). Data related to DLP detections is highly integrated in the delivery reports.
 
 ## For more information
 <a name="dlp_moreinfo"> </a>
 
 - [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md)
 
-- [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)
+- [DLP Procedures](https://docs.microsoft.com/exchange/dlp-procedures-exchange-2013-help)
 
 - [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
 
-- [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
+- [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange)
