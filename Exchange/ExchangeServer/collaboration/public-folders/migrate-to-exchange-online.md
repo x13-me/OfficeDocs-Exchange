@@ -389,19 +389,19 @@ You can use the following cmdlets to monitor your migration:
 Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete. 
 
 > [!NOTE]
->The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion. It is recommended to plan for miniumum of 48 hours of downtime for the final sync to complete
+> The final sync might take a substantial amount of time, depending on the changes made to the source environment, the size of the public folder deployment, server capacity, and so on. If the folder hierarchy had many corrupt ACLs that were not cleaned up before the migration, there might be a significant delay in completion. It is recommended that you plan for a minimum of 48 hours of downtime for the final sync to complete.
 
 Ensure the migration batch and individual migration requests have successfully synced.
 
-Run the following command in EXO PowerShell to get the details:
+Run the following command in EXO PowerShell for more information:
 
 `Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | ft *last*sync*`
 
 `Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics |ft targetmailbox,*last*sync*`
 
-The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within last 7 days. If it is too far off, like older than a month or so, you may want to take a look at public folder migration requests and ensure all the requests were synced recently.
+The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within the last 7 days. If the date is too far in the past, such as more than a month ago, you might want to review public folder migration requests and ensure that all the requests were synced recently.
 
-Once you have confirmed the batch and all migration requests have successfully synced, in your on-premises environment, run the following command to lock the Exchange Server public folders for finalization.
+After you have confirmed that the batch and all migration requests have successfully synced, in your on-premises environment, run the following command to lock the Exchange Server public folders for finalization.
 
 ```
 Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
