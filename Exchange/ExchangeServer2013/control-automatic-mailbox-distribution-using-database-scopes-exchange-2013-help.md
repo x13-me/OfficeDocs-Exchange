@@ -117,7 +117,7 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
 
 Use this procedure if you have an existing role group that already has role assignments between it and the roles you want to apply the new database scope to.
 
-This procedure uses pipelining. For more information, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+This procedure uses pipelining. For more information, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 Use the following syntax to modify a role assignment between the management role that you want to apply the database scope to, and an existing role group.
 

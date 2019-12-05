@@ -32,8 +32,6 @@ In addition to the customizable DLP policies themselves, you can also inform ema
 > [!NOTE]
 > DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). > Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied, because the message doesn't leave the on-premises infrastructure.
 
-Looking for management tasks related to Data Loss Prevention? See [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx) (Exchange Server) or [DLP Procedures](https://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx) (Exchange Online).
-
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
 

@@ -105,11 +105,11 @@ To authenticate the connection from the fax partner server to the Exchange serve
 
 - Sender ID validation
 
-- A dedicated receive connector
+- A dedicated Receive connector
 
-A receive connector should be sufficient for authenticating the fax partner servers deployed in your organization. The receive connector will ensure that the Exchange servers treats all traffic coming from the fax partner server as authenticated.
+A Receive connector should be sufficient for authenticating the fax partner servers deployed in your organization. The Receive connector will ensure that the Exchange servers treats all traffic coming from the fax partner server as authenticated.
 
-The receive connector will be configured on an Exchange server that's used by the fax partner server to submit SMTP fax messages, and must be configured with the following values:
+The Receive connector will be configured on an Exchange server that's used by the fax partner server to submit SMTP fax messages, and must be configured with the following values:
 
 - _AuthMechanism: ExternalAuthoritative_
 
@@ -123,7 +123,7 @@ The receive connector will be configured on an Exchange server that's used by th
 
 - _LiveCredentialEnabled: False_
 
-For details, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
+For details, see [Receive connectors](receive-connectors-exchange-2013-help.md).
 
 If the fax partner server sends network traffic to an Exchange server over a public network, for example, a service-based fax partner server hosted in the cloud, it's a good idea to authenticate the fax partner server using a sender ID check. This type of authentication ensures that the IP address that the fax message came from is authorized to send email messages on behalf of the fax partner domain that the message claims to have come from. DNS is used to store the sender ID records (or sender policy framework (SPF) records) and fax partners must publish their SPF records in the DNS forward lookup zone. Exchange will validate the IP addresses by querying DNS. However, the sender ID agent must be running on a Mailbox server to be able to perform the DNS query.
 

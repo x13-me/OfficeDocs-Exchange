@@ -38,10 +38,10 @@ Users who are assigned the View-Only Management role group can view the configur
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Address book policies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Address lists|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Email address policies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Details templates|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Global address lists|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Offline address books|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Offline address book connectivity|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
+|Address book policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Address lists|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Email address policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Details templates|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Global address lists|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Offline address books|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Offline address book connectivity|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|

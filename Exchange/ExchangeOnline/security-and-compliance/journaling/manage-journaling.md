@@ -194,8 +194,6 @@ To verify that you have successfully removed the journal rule, do one of the fol
 
 ## For more information
 
-[Disable or Enable Journaling of Voice Mail and Missed Call Notifications](https://technet.microsoft.com/library/5164a92e-69e6-4339-b80c-0cfbf0dc0198.aspx)
-
 [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
 
 [Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-journalrule)

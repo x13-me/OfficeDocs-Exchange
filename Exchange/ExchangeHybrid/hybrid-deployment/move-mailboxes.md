@@ -93,7 +93,7 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 6. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
 
     > [!NOTE]
-    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://technet.microsoft.com/library/fba87902-2a79-42ac-b394-46a9016f667e.aspx).
+    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://docs.microsoft.com/exchange/mail-flow/message-rate-limits).
 
 7. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Use the down arrow ![Down Arrow Icon](../media/ITPro_EAC_DownArrowIcon.gif) to select the **Target delivery domain for the mailboxes that are migrating to Office 365**. In most hybrid deployments, this is the primary SMTP domain used for the Exchange Online organization mailboxes. For example, contoso.mail.onmicrosoft.com. Verify that the **Move primary mailbox along with archive mailbox** option is selected, and then click **Next**.
 
@@ -118,7 +118,7 @@ You can use the remote move migration wizard in the EAC in Exchange Online to mo
 5. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
 
     > [!NOTE]
-    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the properties of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://technet.microsoft.com/library/fba87902-2a79-42ac-b394-46a9016f667e.aspx).
+    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the properties of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://docs.microsoft.com/exchange/mail-flow/message-rate-limits).
 
 6. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Then enter the target delivery domain in the **Target delivery domain for the mailboxes that are migrating to Office 365** field. In most hybrid deployments, this is the primary SMTP domain used for both on-premises and Exchange Online organization mailboxes. For example, contoso.com.
 

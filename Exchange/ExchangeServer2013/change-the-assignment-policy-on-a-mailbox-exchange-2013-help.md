@@ -62,7 +62,7 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 
 This procedure makes use of pipelining, the **Where** cmdlet, and the *WhatIf* parameter. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 

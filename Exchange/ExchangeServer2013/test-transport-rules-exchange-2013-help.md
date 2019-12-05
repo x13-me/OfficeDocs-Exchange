@@ -73,20 +73,6 @@ One way to test is to sign in as both the sender and recipient of a test message
 
 Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://go.microsoft.com/fwlink/p/?LinkId=402784), or a different computer, device, or web browser for each user.
 
-### Look at the message trace
-
-The message trace includes an entry for each rule that is matched for the message, and an entry for each action the rule takes. This is useful for tracking what happens to test messages, and also for tracking what happens to real messages going through your organization.
-
-![Message trace showing transport rule actions](images/TA_EX_Rule_Trace.png)
-
-1. In the EAC, go to **Mail flow** \> **Message trace**.
-
-2. Find the messages that you want to trace by using criteria such as the sender and the date sent. For help specifying criteria, see [Run a Message Trace and View Results](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx).
-
-3. After locating the message you want to trace, double-click it to view details about the message.
-
-4. Look in the **Event** column for **Transport rule**. The **Action** column shows the specific action taken.
-
 ## Step 3: When you're done testing, set the rule to enforce
 
 1. In the EAC, go to **Mail flow** \> **Rules**.

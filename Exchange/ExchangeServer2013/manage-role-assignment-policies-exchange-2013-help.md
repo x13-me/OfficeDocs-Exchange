@@ -132,7 +132,7 @@ You can view a list of all the assignment policies in your organization by not s
 
 This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -162,7 +162,7 @@ You can view the details of a specific assignment policy by using the **Get-Role
 
 This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -186,7 +186,7 @@ You can find the default assignment policy by piping the output of the **Get-Rol
 
 This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -204,7 +204,7 @@ You can find all the mailboxes assigned a specific assignment policy by piping t
 
 This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
@@ -296,7 +296,7 @@ You can remove roles from assignment policies by retrieving the associated manag
 
 For more information about regular and delegating role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
-This procedure uses pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+This procedure uses pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 To remove a role from an assignment policy, use the following syntax.
 

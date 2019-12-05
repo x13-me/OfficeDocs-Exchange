@@ -35,7 +35,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 - Download and use the latest available release of [Updates for Exchange Server](../../new-features/updates.md).
 
-- To provision an Exchange server object, you need to be a member of the [Organization Management](https://technet.microsoft.com/library/dd335087(v=exchg.150).aspx) role group.
+- To provision an Exchange server object, you need to be a member of the [Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) role group.
 
 - You can provision the Exchange server object in Active Directory from the target server itself, or from another computer.
 

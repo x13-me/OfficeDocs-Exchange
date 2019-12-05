@@ -197,7 +197,7 @@ Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | En
 
 For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/library/aa996896\(v=exchg.150\)).
 
-For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 ## How do you know this worked?
 

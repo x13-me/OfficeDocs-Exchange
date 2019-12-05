@@ -30,7 +30,7 @@ If your organization adheres to legal discovery requirements (related to organiz
 ## How In-Place eDiscovery works
 <a name="howitworks"> </a>
 
-In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources (HR) professionals.
+In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the Discovery Management role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources (HR) professionals.
 
 Authorized users can perform an In-Place eDiscovery search by selecting the mailboxes, and then specifying search criteria such as keywords, start and end dates, sender and recipient addresses, and message types. After the search is complete, authorized users can then select one of the following actions:
 
@@ -53,12 +53,12 @@ With a single content indexing engine, no additional resources are used to crawl
 
 In-Place eDiscovery uses Keyword Query Language (KQL), a querying syntax similar to the Advanced Query Syntax (AQS) used by Instant Search in Microsoft Outlook and Outlook on the web. Users familiar with KQL can easily construct powerful search queries to search content indexes.
 
-For more information about the file formats indexed by Exchange search, see [File Formats Indexed By Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx).
+For more information about the file formats indexed by Exchange search, see [File Formats Indexed By Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help).
 
 ## Discovery Management role group and management roles
 <a name="roles"> </a>
 
-For authorized users to perform In-Place eDiscovery searches, you must add them to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group. This role group consists of two management roles: the [Mailbox Search Role](https://technet.microsoft.com/library/f86b63ba-0c67-4748-8965-0c08a6a8aec1.aspx), which allows a user to perform an In-Place eDiscovery search, and the [Legal Hold Role](https://technet.microsoft.com/library/c98ce8ca-3477-479a-ad23-a8e6459bc4d0.aspx), which allows a user to place a mailbox on In-Place Hold or litigation hold.
+For authorized users to perform In-Place eDiscovery searches, you must add them to the Discovery Management role group. This role group consists of two management roles: the Mailbox Search role, which allows a user to perform an In-Place eDiscovery search, and the Legal Hold role, which allows a user to place a mailbox on In-Place Hold or litigation hold. For more information about roles and role groups, see [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md).
 
 By default, permissions to perform In-Place eDiscovery-related tasks aren't assigned to any user or Exchange administrators. Exchange administrators who are members of the Organization Management role group can add users to the Discovery Management role group and create custom role groups to narrow the scope of a discovery manager to a subset of users. To learn more about adding users to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions.md).
 
@@ -168,7 +168,7 @@ The following screenshot shows an example of a search query in the EAC.
 
 When using In-Place eDiscovery, also consider the following:
 
-- **Attachments**: In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
+- **Attachments**: In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [File Formats Indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
 
 - **Unsearchable items**: Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
 

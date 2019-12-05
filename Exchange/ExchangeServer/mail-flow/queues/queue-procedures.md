@@ -72,7 +72,7 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
 
 2. In Queue Viewer, click the **Queues** tab. A list of all queues on the server to which you're connected is displayed.
 
-3. You can use the **Export List** link in the action pane to export the list of queues. For more information, see [How to Export Lists from the Exchange Management Consoles](https://technet.microsoft.com/library/dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194.aspx).
+3. You can use the **Export List** link in the action pane to export the list of queues. For more information, see [How to Export Lists from the Exchange Management Consoles](https://docs.microsoft.com/exchange/export-lists-from-queue-viewer-exchange-2013-help).
 
 ### Use the Exchange Management Shell to view queues
 

@@ -48,7 +48,7 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Federation**: Exchange 2013 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 tenant organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
-    Learn more at [Understanding Federation](https://technet.microsoft.com/library/0046e2eb-6940-4941-bd5b-cbe6bffa3b94.aspx).
+    Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
 
 - **Organization relationships**: Exchange 2013 servers with the Client Access server role enable the creation of organization relationships between the on-premises and Exchange Online organizations. Organization relationships are required for many other services in a hybrid deployment, including calendar free/busy information sharing, message tracking, and mailbox moves between the on-premises and Exchange Online organizations.
 

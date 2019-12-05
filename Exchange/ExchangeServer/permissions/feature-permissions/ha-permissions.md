@@ -17,7 +17,7 @@ manager: serdars
 
 # High availability and site resilience permissions
 
-The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx).
+The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High availability and site resilience](../../high-availability/high-availability.md).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 
@@ -40,10 +40,10 @@ Users who are assigned the View-Only Management role group can view the configur
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Database availability group membership|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
-|Database availability group properties|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
-|Database availability groups|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
-|Database availability networks|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability group membership|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability group properties|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability groups|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability networks|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
 
 ## Mailbox database copy permissions
 
@@ -51,7 +51,7 @@ You can use the features in the following table to add, remove, update, and acti
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Database switchover|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
-|Mailbox database copies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
-|Server switchover|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
-|Update a mailbox database copy|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Database switchover|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Mailbox database copies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Server switchover|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Update a mailbox database copy|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|

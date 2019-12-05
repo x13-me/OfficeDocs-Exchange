@@ -56,7 +56,7 @@ In an Exchange organization that doesn't use ABPs, the following things occur wh
 
 If you're using ABPs, and you don't want users in separate virtual organizations to view each other's potentially private information, you can turn on the Address Book Policy Routing agent. The ABP Routing agent is a Transport agent that controls how recipients are resolved in your organization. When the ABP Routing agent is installed and configured, users that are assigned to different GALs appear as external recipients in that they can't view external recipients' contact cards.
 
-For details about how to turn on the ABP Routing agent in Exchange Server, see [Install and Configure the Address Book Policy Routing Agent](https://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx).
+For details about how to turn on the ABP Routing agent in Exchange Server, see [Install and configure the Address Book Policy Routing agent](install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md).
 
 ## ABP Example
 
