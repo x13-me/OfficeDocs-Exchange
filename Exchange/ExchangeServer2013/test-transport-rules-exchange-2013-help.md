@@ -21,7 +21,7 @@ Each time you create a transport rule, you should test it before turning it on. 
 
 ## Step 1: Create a rule in test mode
 
-You can evaluate the conditions for a rule without taking any actions that impact mail flow by choosing a test mode. You can set up a rule so that you get an email notification any time the rule is matched, or you can [look at the message trace](#look-at-the-message-trace) for messages that might match the rule. There are two test modes:
+You can evaluate the conditions for a rule without taking any actions that impact mail flow by choosing a test mode. You can set up a rule so that you get an email notification any time the rule is matched, or you can look at the message trace for messages that might match the rule. There are two test modes:
 
 - **Test without Policy Tips**: Use this mode together with an incident report action, and you can receive an email message each time an email matches the rule.
 
