@@ -133,7 +133,7 @@ This example creates a security group with these settings:
 New-DistributionGroup -Type Security -Name "File Server Managers" -Alias fsadmin -Members "Bishamon Tamura","Valeria Barrios" -CopyOwnerToMember
 ```
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
+For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -316,7 +316,7 @@ Use this tab to view or change the email addresses that are configured for the g
 
 #### MailTip
 
-Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](https://technet.microsoft.com/library/df8ee7ae-2486-4890-b057-cda87b4cb1ec.aspx).
+Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](https://docs.microsoft.com/exchange/configure-custom-mailtips-exchange-2013-help).
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
@@ -347,7 +347,7 @@ You use the **Set-DistributionGroup** cmdlet to modify mail-enabled security gro
 
 - Instead of specifying the internal recipients who *are* allowed to send messages to the group, you can specify the internal recipients who *aren't* allowed to send messages to the group (the _RejectMessagesFromSendersOrMembers_ parameter).
 
-For detailed syntax and parameter information, see [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx).
+For detailed syntax and parameter information, see [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup).
 
 This example configures the value DoNotMigrate for the **CustomAttribute5** property of the group named Experimental Project.
 
@@ -389,7 +389,7 @@ This example returns detailed information for the mail-enabled security group na
 Get-DistributionGroup -Identity "Help Desk" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-DistributionGroup](https://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx).
+For detailed syntax and parameter information, see [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup).
 
 ## Remove mail-enabled security groups
 
@@ -473,7 +473,7 @@ Enable-DistributionGroup -Identity "Help Desk" -Alias hdesk
 
 After you mail-enable the security group, the group will be visible to all other **\*-DistributionGroup** cmdlets.
 
-For detailed syntax and parameter information, see [Enable-DistributionGroup](https://technet.microsoft.com/library/7a218aaf-5858-48d6-885d-5eed12885c44.aspx).
+For detailed syntax and parameter information, see [Enable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-distributiongroup).
 
 #### How do you know this worked?
 
@@ -513,7 +513,7 @@ Disable-DistributionGroup -Identity "Human Resources"
 
 - After you mail-disable the security group, the group will be invisible to all **\*-DistributionGroup** cmdlets except **Enable-DistributionGroup**.
 
-For detailed syntax and parameter information, see [Disable-DistributionGroup](https://technet.microsoft.com/library/4e042d49-0cec-4b7d-aa64-fc9605077714.aspx).
+For detailed syntax and parameter information, see [Disable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/disable-distributiongroup).
 
 #### How do you know this worked?
 

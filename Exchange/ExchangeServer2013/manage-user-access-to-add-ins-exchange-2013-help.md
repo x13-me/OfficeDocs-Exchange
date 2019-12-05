@@ -26,7 +26,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 
 - Estimated time to complete: 5 minutes.
 
-- For more information about the EAC, see [Exchange admin center in Exchange 2013](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+- For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
@@ -91,7 +91,7 @@ If you want the add-in to be required for your users, replace _\<AppId\>_ with t
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser AlwaysEnabled
 ```
 
-For detailed syntax and parameters, see [Set-app](https://technet.microsoft.com/library/3506b2b9-dc23-4ed9-84f5-8839c4c3c974.aspx).
+For detailed syntax and parameters, see [Set-app](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
 
 ### How do you know this worked?
 
@@ -119,7 +119,7 @@ $a = Get-DistributionGroupMember Marketing
 Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
 ```
 
-For detailed syntax and parameters, see [Set-app](https://technet.microsoft.com/library/3506b2b9-dc23-4ed9-84f5-8839c4c3c974.aspx).
+For detailed syntax and parameters, see [Set-app](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
 
 ### How do you know this worked?
 

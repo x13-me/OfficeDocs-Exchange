@@ -25,14 +25,12 @@ Data loss prevention (DLP) is an important issue for enterprise message systems 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f?autoplay=false]
 
-DLP policies are simple packages that contain sets of conditions, which are made up of mail flow rule (also known as transport rule) conditions, exceptions, and actions that you create in the Exchange admin center (EAC) and then activate to filter email messages and attachments. You can create a DLP policy, but choose to not activate it. This allows you to test your policies without affecting mail flow. DLP policies can use the full power of existing mail flow rules. In fact, a number of new types of mail flow rules have been created in Microsoft Exchange Server and Exchange Online in order to accomplish new DLP capability. One important new feature of mail flow rules is a new approach to classifying sensitive information that can be incorporated into mail flow processing. This new DLP feature performs deep content analysis through keyword matches, dictionary matches, regular expression evaluation, and other content examination to detect content that violates organizational DLP policies. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../mail-flow-rules/mail-flow-rules.md), and [Integrating sensitive information rules with mail flow rules in Exchange Online](integrate-sensitive-information-rules.md). You can also manage your DLP policies by using Exchange Online PowerShell cmdlets. For more information about policy and compliance cmdlets, see [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
+DLP policies are simple packages that contain sets of conditions, which are made up of mail flow rule (also known as transport rule) conditions, exceptions, and actions that you create in the Exchange admin center (EAC) and then activate to filter email messages and attachments. You can create a DLP policy, but choose to not activate it. This allows you to test your policies without affecting mail flow. DLP policies can use the full power of existing mail flow rules. In fact, a number of new types of mail flow rules have been created in Microsoft Exchange Server and Exchange Online in order to accomplish new DLP capability. One important new feature of mail flow rules is a new approach to classifying sensitive information that can be incorporated into mail flow processing. This new DLP feature performs deep content analysis through keyword matches, dictionary matches, regular expression evaluation, and other content examination to detect content that violates organizational DLP policies. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../mail-flow-rules/mail-flow-rules.md), and [Integrating sensitive information rules with mail flow rules in Exchange Online](integrate-sensitive-information-rules.md). You can also manage your DLP policies by using Exchange Online PowerShell cmdlets at [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/).
 
 In addition to the customizable DLP policies themselves, you can also inform email senders that they may be about to violate one of your policies, even before they send an offending message. You can accomplish this by configuring Policy Tips. Policy Tips are similar to MailTips, and can be configured to present a brief note in the Microsoft Outlook 2013 client that provides information about possible policy violations to a person creating a message. In Exchange Online and in Exchange Server, Policy Tips are also displayed in Outlook on the web (formerly known as Outlook Web App) and OWA for Devices. For more information, see [Policy Tips](policy-tips.md).
 
 > [!NOTE]
 > DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). > Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied, because the message doesn't leave the on-premises infrastructure.
-
-Looking for management tasks related to Data Loss Prevention? See [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx) (Exchange Server) or [DLP Procedures](https://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx) (Exchange Online).
 
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
@@ -68,35 +66,14 @@ Exchange Server and Exchange Online present a new method of helping you manage m
 
 To learn more about these new features, see [Integrating sensitive information rules with mail flow rules in Exchange Online](integrate-sensitive-information-rules.md). The traditional message classification fields can still be applied to messages in Exchange and these can be combined with the new sensitive information detection either together within a single DLP policy or running concurrently so they are evaluated independently within Exchange. To learn more about the legacy Exchange 2010 message classifications, see [Understanding Message Classifications](https://go.microsoft.com/fwlink/p/?LinkId=266612).
 
-## Information about DLP-processed messages
-<a name="dlp_information"> </a>
-
-For Exchange Server to obtain information about messages and DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://technet.microsoft.com/library/8e807f94-384c-43f5-be6f-06c5587175a0.aspx). Data related to DLP detections, is highly integrated into the delivery reports message tracking tool of Exchange Server.
-
-For Exchange Online, see [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx) and [Create incident reports for DLP policy detection](https://technet.microsoft.com/library/f80d2505-e055-4ed1-896f-8946545d29f6.aspx).
-
 ## Installation prerequisites
 <a name="dlp_install"> </a>
 
-In order to make use of DLP features, you must have Exchange Server or Exchange Online configured with at least one sender mailbox. Data Loss Prevention is a premium feature that requires an Enterprise Client Access License (CAL). For more information about getting started with Exchange Server, see [Planning and Deployment](https://technet.microsoft.com/library/692c59e3-f0b0-4cef-a66e-751aa740abae.aspx). For more information about getting started with Exchange Online, see [Exchange Online](../../exchange-online.md).
+In order to make use of DLP features, you must have Exchange Online configured with at least one sender mailbox. Data Loss Prevention is a premium feature that requires an Enterprise Client Access License (CAL). For more information about getting started with Exchange Online, see [Exchange Online](../../exchange-online.md).
 
 ## For more information
 <a name="dlp_moreinfo"> </a>
 
-Exchange Server
-
-- [Messaging Policy and Compliance](https://technet.microsoft.com/library/65f20a20-27a4-4f6e-9b27-f8705d65b8d9.aspx)
-
-- [DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)
-
-- [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
-
-- [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
-
 Exchange Online
 
 - [Security and compliance for Exchange Online](../../security-and-compliance/security-and-compliance.md)
-
-- [DLP Procedures](https://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx)
-
-- [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)

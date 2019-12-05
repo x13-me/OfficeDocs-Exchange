@@ -322,7 +322,7 @@ Here's a comparison of each configuration option and the features they support.
 |Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
-|Device or application server must support TLS|Required|Required|Required|
+|Device or application server must support TLS|Required|Optional|Optional|
 |Requires authentication|Office 365 user name and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Office 365.|
 |**Limitations**|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).|

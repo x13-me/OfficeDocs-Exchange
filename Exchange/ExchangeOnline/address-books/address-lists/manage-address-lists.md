@@ -23,7 +23,7 @@ An address list is a collection of mail-enabled recipient objects in Exchange On
 
 For additional management tasks related to manage address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
 
-Looking for the Exchange Server version of this topic? See [Create an Address List](https://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+Looking for the Exchange Server version of this topic? See [Create address lists](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-lists/address-list-procedures#create-address-lists).
 
 ## What do you need to know before you begin?
 
@@ -67,16 +67,16 @@ This example creates an address list with a custom recipient filter:
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
 ```
-New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
+New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
 
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
 
 ```
-New-AddressList -Name "Oregon and Washington" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+New-AddressList -Name "Oregon and Washington" -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates the child address list Building 34 Meeting Rooms in the All Rooms parent container, using built-in conditions.
@@ -85,7 +85,7 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
 
 ### How do you know this worked?
 
@@ -126,7 +126,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 1. Use the query from the address list to find all users that should be in the address list. For example:
 
    ```
-   $Before = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))} -ResultSize Unlimited
+   $Before = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))" -ResultSize Unlimited
    ```
 
 2. Change the required property to a temporary value. For example, change the **StateOrProvince** values from `Oregon` to `OR`, and `Washington` to `WA`:
@@ -142,7 +142,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 3. Find those same users again by using the temporary property values. For example:
 
    ```
-   $After = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))} -ResultSize Unlimited
+   $After = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))" -ResultSize Unlimited
    ```
 
 4. Change the temporary value back to the required value. For example, change the **StateOrProvince** values from `OR` to `Oregon`, and `WA` to `Washington`:
@@ -159,9 +159,9 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 - Title, department and address properties require the **Get-User** and **Set-User** cmdlets. CustomAttribute1 through CustomAttribute15 properties require the **Get-Mailbox** and **Set-Mailbox** cmdlets. For more information about what properties are available on which cmdlet, see the following topics:
 
-   - [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
+   - [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
 
-   - [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+   - [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
 - If a only small number of users don't appear in the address list, you can modify the required property value for each user. For example:
 
@@ -203,7 +203,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](https://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
+For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addresslist).
 
 ### How do you know this worked?
 
@@ -227,7 +227,7 @@ This example removes the address list Sales Department, which doesn't contain ch
 Remove-AddressList -Identity "Sales Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/b628738c-ebbf-4116-ba85-b1dbd273df40.aspx).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addresslist).
 
 ### How do you know this worked?
 
@@ -324,7 +324,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
 
    ```
-   Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
+   Get-Recipient -ResultSize unlimited -Filter 'HiddenFromAddressListsEnabled -eq $true'
    ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.

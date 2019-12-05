@@ -58,7 +58,7 @@ This example removes the Outlook on the web mailbox policy named Sales Associate
 Remove-OwaMailboxPolicy -Identity "Sales Associates"
 ```
 
-For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](https://technet.microsoft.com/library/834bee7a-1044-4628-9d0d-1601e88a73f8.aspx).
+For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/remove-owamailboxpolicy).
 
 ## How do you know this worked?
 

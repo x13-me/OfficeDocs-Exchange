@@ -72,7 +72,7 @@ After you create the Send connector, it appears in the Send connector list. To c
 
 #### Use the Exchange Management Shell to create an internet Send connector
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
@@ -96,7 +96,7 @@ After you create the Send connector, it appears in the Send connector list. To c
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 
-   For information about other options, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+   For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
 
 > [!NOTE]
 > To configure the Send connector to proxy outbound mail through the Front End Transport service, add `-FrontEndProxyEnabled $true` to the command. For more information, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).

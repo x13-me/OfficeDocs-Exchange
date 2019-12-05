@@ -96,7 +96,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
 
 - Recipient
 
@@ -214,7 +214,7 @@ This example disables per-mailbox database journaling on the Sales Database mail
 Set-MailboxDatabase "Sales Database" -JournalRecipient $Null
 ```
 
-This example disables per-mailbox database journaling on all mailbox databases in the Exchange organization. The [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet is used to retrieve all mailbox databases in the Exchange organization, and results from the cmdlet are piped to the [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet.
+This example disables per-mailbox database journaling on all mailbox databases in the Exchange organization. The [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet is used to retrieve all mailbox databases in the Exchange organization, and results from the cmdlet are piped to the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase) cmdlet.
 
 ```powershell
 Get-MailboxDatabase | Set-MailboxDatabase -JournalRecipient $Null
@@ -238,18 +238,18 @@ Get-MailboxDatabase | Format-Table Name,JournalRecipient
 
 ## For more information
 
-[Disable or Enable Journaling of Voice Mail and Missed Call Notifications](https://technet.microsoft.com/library/5164a92e-69e6-4339-b80c-0cfbf0dc0198.aspx)
+[Disable or enable journaling of voice mail and missed call notifications](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md)
 
-[New-JournalRule](https://technet.microsoft.com/library/fcad9ef1-b3f2-442d-a1a7-cd1bbe442054.aspx)
+[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
 
-[Get-JournalRule](https://technet.microsoft.com/library/7620913f-cf28-4e82-983f-61a79f0b6e5a.aspx)
+[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-journalrule)
 
-[Set-JournalRule](https://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx)
+[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule)
 
-[Enable-JournalRule](https://technet.microsoft.com/library/9a4b01b9-27d4-41e6-9573-86e27e82de2d.aspx)
+[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/enable-journalrule)
 
-[Disable-JournalRule](https://technet.microsoft.com/library/0324144b-2818-4e7f-a483-d6d6a19f8276.aspx)
+[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/disable-journalrule)
 
-[Remove-JournalRule](https://technet.microsoft.com/library/7cb9d691-2b0c-4f64-982d-ce69f3c3e757.aspx)
+[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule)
 
-[Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx)
+[Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase)

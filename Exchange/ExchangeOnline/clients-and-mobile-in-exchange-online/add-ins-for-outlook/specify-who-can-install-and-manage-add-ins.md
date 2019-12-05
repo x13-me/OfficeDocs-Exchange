@@ -37,8 +37,6 @@ User roles
 
 By default, all administrators who have the **Organization Management** role group have both of the above administrative roles enabled. Also by default, end users have the above user roles enabled.
 
-For information about each of these roles, see [Org Marketplace Apps role](https://technet.microsoft.com/library/137ee328-0bad-4911-a7bf-82da7678f246.aspx), [Org Custom Apps role](https://technet.microsoft.com/library/ab2aac13-f783-43e6-a369-75cce1d4943f.aspx), [My Marketplace Apps role](https://technet.microsoft.com/library/5c208d2d-8f76-46a7-9d2e-7c616f21ee67.aspx), [My Custom Apps role](https://technet.microsoft.com/library/aa0321b3-2ec0-4694-875b-7a93d3d99089.aspx), and [My ReadWriteMailbox Apps role](https://technet.microsoft.com/library/febb73fb-3a0b-4c67-b53b-9566d7c32cd2.aspx).
-
 For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md).
 
 ## What do you need to know before you begin?
@@ -82,4 +80,4 @@ Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers
 
 In the results, review the entries in the **Effective Users** column.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).

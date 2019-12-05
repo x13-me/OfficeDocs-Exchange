@@ -135,7 +135,7 @@ If you have multiple Client Access servers, each Client Access server in your or
 
 ### Public Attachment Handling in Exchange Online
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library. Go here for details, [Public Attachment Handling in Exchange Online](https://technet.microsoft.com/library/dn530630\(v=exchg.150\).aspx).
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library.
 
 ### Browser Support for AppCache
 

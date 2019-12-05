@@ -126,13 +126,13 @@ To return all mailboxes that had a specific mailbox plan applied:
 2. Use the following syntax to return the mailboxes that have the mailbox plan assigned:
 
    ```
-   Get-Mailbox -ResultSize unlimited -Filter {MailboxPlan -eq '<MailboxPlanDistinguishedName>'}
+   Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq '<MailboxPlanDistinguishedName>'"
    ```
 
    This example returns the mailboxes that have the ExchangeOnline mailbox plan applied.
 
    ```
-   Get-Mailbox -ResultSize unlimited -Filter {MailboxPlan -eq 'CN=ExchangeOnline-93f46670-2ae7-4591-baa4-ee153e090945,OU=constoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR22B009,DC=PROD,DC=OUTLOOK,DC=COM'}
+   Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq 'CN=ExchangeOnline-93f46670-2ae7-4591-baa4-ee153e090945,OU=constoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR22B009,DC=PROD,DC=OUTLOOK,DC=COM'"
    ```
 
 For detailed syntax and parameter information, see [Get-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxplan) and [Get-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/client-access/get-casmailboxplan).

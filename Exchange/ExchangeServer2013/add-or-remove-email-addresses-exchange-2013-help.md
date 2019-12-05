@@ -68,7 +68,7 @@ This example shows how to add multiple SMTP addresses to a mailbox.
 Set-Mailbox "Dan Jump" -EmailAddresses @{add="dan.jump@northamerica.contoso.com","danj@tailspintoys.com"}
 ```
 
-For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md).
 
 This example shows another way to add email addresses to a mailbox by specifying all addresses associated with the mailbox. In this example, danj@tailspintoys.com is the new email address that you want to add. The other two email addresses are existing addresses. The address with the case-sensitive qualifier `SMTP` is the primary SMTP address. You have to include all email addresses for the mailbox when you use this command syntax. If you don't, the addresses specified in the command will overwrite the existing addresses.
 
@@ -76,7 +76,7 @@ This example shows another way to add email addresses to a mailbox by specifying
 Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northamerica.contoso.com,danj@tailspintoys.com
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ### How do you know this worked?
 
@@ -126,7 +126,7 @@ This example shows how to remove multiple addresses from a mailbox.
 Set-Mailbox "Janet Schorr" -EmailAddresses @{remove="janet.schorr@corp.contoso.com","janets@tailspintoys.com"}
 ```
 
-For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md).
 
 You can also remove an email address by omitting it from the command to set email addresses for a mailbox. For example, let's say Janet Schorr's mailbox has three email addresses: janets@contoso.com (the primary SMTP address), janets@corp.contoso.com, and janets@tailspintoys.com. To remove the address janets@corp.contoso.com, you would run the following command.
 
@@ -136,7 +136,7 @@ Set-Mailbox "Janet Schorr" -EmailAddresses SMTP:janets@contoso.com,janets@tailsp
 
 Because janets@corp.contoso.com was omitted in the previous command, it's removed from the mailbox.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ### How do you know this worked?
 

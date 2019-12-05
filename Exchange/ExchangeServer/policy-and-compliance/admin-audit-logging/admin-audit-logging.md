@@ -189,4 +189,4 @@ Administrator audit logging relies on Active Directory replication to replicate 
 
 The Admin Audit Log built-in cmdlet extension agent performs admin audit logging of cmdlet operations in Exchange Server. This agent reads the audit log configuration and then performs an evaluation of each cmdlet run in your organization. If the criteria you've specified in the admin audit log configuration matches the cmdlet that's being run, the agent generates an audit log entry.
 
-The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](https://technet.microsoft.com/library/0257790d-3988-46c3-8882-25ca11559e84.aspx).
+The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](https://docs.microsoft.com/exchange/cmdlet-extension-agents-exchange-2013-help).

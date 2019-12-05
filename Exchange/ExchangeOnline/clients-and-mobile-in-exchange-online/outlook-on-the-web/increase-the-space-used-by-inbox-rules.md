@@ -75,7 +75,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
     This example decreases the rules quota to 32 KB to all mailboxes whose **Title** attribute contains "Vendor" or "Contractor".
 
     ```
-    $V = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')}
+    $V = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')"
     ```
 
     ```

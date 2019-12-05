@@ -28,9 +28,7 @@ For additional management tasks related to managing email client access to a mai
 
 - [Enable or disable Outlook on the web for a mailbox](enable-or-disable-outlook-web-app.md)
 
-- [Enable or Disable IMAP4 Access for a User](https://technet.microsoft.com/library/a685fae4-b6f1-42fe-8bdc-5f99f9617799.aspx)
-
-- [Enable or Disable POP3 Access for a User](https://technet.microsoft.com/library/57e12f07-3b14-45bd-9a82-e6032d14214f.aspx)
+- [Enable or Disable POP3 or IMAP4 access for a user](../../clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access.md)
 
 ## What do you need to know before you begin?
 
@@ -75,7 +73,7 @@ This example enables MAPI for the mailbox of Esther Valle.
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
 
 ## How do you know this worked?
 

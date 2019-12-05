@@ -51,8 +51,8 @@ This example sets the external distribution point to https://contoso.com/OAB for
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 
-For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://technet.microsoft.com/library/d1184716-920c-47cf-9e03-638434c16462.aspx).
+For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-oabvirtualdirectory).
 
 ## For More Information
 
-[Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
+[Offline address books in Exchange Online](offline-address-books.md)

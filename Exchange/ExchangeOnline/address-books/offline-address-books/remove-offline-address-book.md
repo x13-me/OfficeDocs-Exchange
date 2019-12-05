@@ -40,7 +40,7 @@ This example removes an OAB named My OAB.
 Remove-OfflineAddressBook -Identity "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://technet.microsoft.com/library/88a8f173-34b9-4e75-8f1a-26ad6f972e98.aspx).
+For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-offlineaddressbook).
 
 
 ## How do you know this worked?

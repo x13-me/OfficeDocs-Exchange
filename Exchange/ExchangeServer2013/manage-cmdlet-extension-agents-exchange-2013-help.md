@@ -67,7 +67,7 @@ For detailed syntax and parameter information, see [Disable-CmdletExtensionAgent
 
 Viewing cmdlet extension agents enables you to see which agents are run first and which agents are enabled in an Exchange 2013 organization. For more information about pipelining and the **Format-Table** cmdlet, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 

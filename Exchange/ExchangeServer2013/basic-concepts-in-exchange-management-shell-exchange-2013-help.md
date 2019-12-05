@@ -32,7 +32,7 @@ mtps_version: v=EXCHG.150
 
 [Aliases](https://technet.microsoft.com/library/bb123977\(v=exchg.150\))
 
-[Arrays](https://technet.microsoft.com/library/aa998267\(v=exchg.150\))
+[about_Arrays](https://technet.microsoft.com/library/aa998267\(v=exchg.150\))
 
 [Comparison operators](https://technet.microsoft.com/library/bb125229\(v=exchg.150\))
 
@@ -42,7 +42,7 @@ mtps_version: v=EXCHG.150
 
 [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md)
 
-[Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+[about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
 
@@ -56,4 +56,4 @@ mtps_version: v=EXCHG.150
 
 [Shell variables](https://technet.microsoft.com/library/bb124036\(v=exchg.150\))
 
-[User-defined variables](https://technet.microsoft.com/library/bb123690\(v=exchg.150\))
+[about_Variables](https://technet.microsoft.com/library/bb123690\(v=exchg.150\))

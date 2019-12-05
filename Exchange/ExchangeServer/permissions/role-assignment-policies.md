@@ -17,7 +17,7 @@ manager: serdars
 
 # Manage role assignment policies
 
-If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](https://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
+If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](https://docs.microsoft.com/exchange/understanding-management-role-assignment-policies-exchange-2013-help).
 
 Looking for other management tasks related to managing permissions? Check out [Permissions](permissions.md).
 
@@ -25,7 +25,7 @@ Looking for other management tasks related to managing permissions? Check out [P
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Assignment policies" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -65,7 +65,7 @@ This example creates the explicit assignment policy Limited Mailbox Configuratio
 New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
 ```
 
-For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://technet.microsoft.com/library/25a56027-2e25-4f98-842f-c671a1bf56f9.aspx).
+For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-roleassignmentpolicy).
 
 ### Use the Exchange Management Shell to create a default assignment policy
 
@@ -81,7 +81,7 @@ This example creates the default assignment policy Limited Mailbox Configuration
 New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
 ```
 
-For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://technet.microsoft.com/library/25a56027-2e25-4f98-842f-c671a1bf56f9.aspx).
+For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-roleassignmentpolicy).
 
 ### Remove an assignment policy
 
@@ -115,7 +115,7 @@ This example removes the New York Temporary Users assignment policy.
 Remove-RoleAssignmentPolicy "New York Temporary Users"
 ```
 
-For detailed syntax and parameter information, see [Remove-RoleAssignmentPolicy](https://technet.microsoft.com/library/cfcfe435-cd52-4d40-a298-0c1ca11b8995.aspx).
+For detailed syntax and parameter information, see [Remove-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-roleassignmentpolicy).
 
 ### View a list of assignment policies or assignment policy details
 
@@ -135,7 +135,7 @@ You can view a list of all the assignment policies in your organization by not s
 
 This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
 
@@ -157,7 +157,7 @@ This example returns a list of all the assignment policies in your organization 
 Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) or [Get-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-roleassignmentpolicy).
 
 #### Use the Exchange Management Shell to view the details of a single assignment policy
 
@@ -165,7 +165,7 @@ You can view the details of a specific assignment policy by using the **Get-Role
 
 This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
 
@@ -181,7 +181,7 @@ This example views the details about the Redmond Users - no Text Messaging assig
 Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) or [Get-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-roleassignmentpolicy).
 
 #### Use the Exchange Management Shell to find the default assignment policy
 
@@ -189,7 +189,7 @@ You can find the default assignment policy by piping the output of the **Get-Rol
 
 This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
 
@@ -199,7 +199,7 @@ This example returns the default assignment policy.
 Get-RoleAssignmentPolicy | Where {$_.IsDefault -eq $True}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) or [Get-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-roleassignmentpolicy).
 
 #### Use the Exchange Management Shell to view mailboxes that are assigned a specific policy
 
@@ -207,7 +207,7 @@ You can find all the mailboxes assigned a specific assignment policy by piping t
 
 This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
 
@@ -223,7 +223,7 @@ This example finds all the mailboxes assigned the policy Vancouver End Users.
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Vancouver End Users"}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) or [Get-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-roleassignmentpolicy).
 
 ### Change the default assignment policy
 
@@ -249,7 +249,7 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 > [!IMPORTANT]
 > New mailboxes are assigned the default assignment policy even if the policy hasn't been assigned management roles. Mailboxes assigned assignment policies with no assigned management roles can't access any mailbox configuration features in Outlook on the web.
 
-For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](https://technet.microsoft.com/library/1c7a9d2a-db55-4bfb-82d2-60c859b8646c.aspx).
+For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-roleassignmentpolicy).
 
 ### Add a role to an assignment policy
 
@@ -277,7 +277,7 @@ This example creates the role assignment Seattle Users - Voicemail between the M
 New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
 
 ### Remove a role from an assignment policy
 
@@ -299,7 +299,7 @@ You can remove roles from assignment policies by retrieving the associated manag
 
 For more information about regular and delegating role assignments, see [Understanding Management Role Assignments](https://technet.microsoft.com/library/1dc33dd6-52fb-4852-a5ce-027bc73e1d8f.aspx).
 
-This procedure uses pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx).
+This procedure uses pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 To remove a role from an assignment policy, use the following syntax.
 
@@ -313,4 +313,4 @@ This example removes the MyVoicemail management role, which enables users to man
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-managementroleassignment).

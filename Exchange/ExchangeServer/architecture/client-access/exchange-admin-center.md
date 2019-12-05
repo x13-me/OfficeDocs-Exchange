@@ -21,9 +21,9 @@ manager: serdars
 
 The Exchange admin center (EAC) is the web-based management console in Exchange Server that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
 
 ## Accessing the EAC
 <a name="access"> </a>
@@ -66,7 +66,7 @@ These examples show you how to find the internal and external URL values for the
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 
-For more information, see [Get-EcpVirtualDirectory](https://technet.microsoft.com/library/afa04216-965d-4a6c-949c-170f916e8f4c.aspx).
+For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-ecpvirtualdirectory).
 
 In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
 
@@ -105,7 +105,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage role groups](../../permissions/role-groups.md) , [Manage role group members](../../permissions/role-group-members.md), and [Manage role assignment policies](../../permissions/role-assignment-policies.md).
 
-  - [Outlook on the web mailbox policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx)
+  - [View or configure Outlook on the web mailbox policy properties](../../clients/outlook-on-the-web/mailbox-policies.md)
 
 - **Compliance management**: This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing (mailbox audit logging and administrator audit logging), data loss prevention (DLP), retention policies, retention tags, and journal rules. For more information, see the following topics:
 
@@ -121,9 +121,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Organization**: Manage federated sharing, Outlook Apps, and address lists. For more information, see the following topics:
 
-  - [Sharing](https://technet.microsoft.com/library/09e6732a-4e99-44d0-801d-9463fdc57a9b.aspx)
+  - [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help)
 
-  - [Install or Remove Apps for Outlook for Your Organization](https://technet.microsoft.com/library/112f3ef7-9943-4a1e-8a42-e08e8e9f67f4.aspx)
+  - [Install or remove add-ins for Outlook for your Exchange 2013 organization](https://docs.microsoft.com/exchange/install-or-remove-outlook-add-ins-2013-help)
 
   - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
 
@@ -165,7 +165,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md)
 
-  - [Configure the Startup Mode on a Client Access Server](https://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx) and [Configure the Startup Mode on a Mailbox Server](https://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx)
+  - [Configure the Startup Mode on a Client Access Server](https://docs.microsoft.com/exchange/configure-the-startup-mode-on-a-client-access-server-exchange-2013-help) and [Configure the Startup Mode on a Mailbox Server](https://docs.microsoft.com/exchange/configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help)
 
   - [Message retry, resubmit, and expiration intervals](../../mail-flow/queues/message-intervals.md)
 

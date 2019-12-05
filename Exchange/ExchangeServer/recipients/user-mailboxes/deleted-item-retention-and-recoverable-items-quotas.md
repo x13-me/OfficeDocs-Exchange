@@ -65,7 +65,7 @@ This example configures April Stewart's mailbox to retain deleted items for 30 d
 Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## Use the Exchange Management Shell to configure recoverable items quotas for a mailbox
 
@@ -81,7 +81,7 @@ Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -Recove
 > [!NOTE]
 > To configure a mailbox to use different recoverable items quotas than the mailbox database in which it resides, you must set the _UseDatabaseQuotaDefaults_ parameter to `$false`.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## Use the Exchange Management Shell to configure deleted item retention for a mailbox database
 
@@ -94,7 +94,7 @@ This example configures a deleted item retention period of 10 days for the mailb
 Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase).
 
 ## Use the Exchange Management Shell to configure recoverable items quotas for a mailbox database
 
@@ -107,4 +107,4 @@ This example configures a recoverable items warning quota of 15 GB and a recover
 Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase).

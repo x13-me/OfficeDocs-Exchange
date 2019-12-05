@@ -146,7 +146,7 @@ New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectNam
 
 - Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
 
-- For more information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
+- For more information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-exchangecertificate).
 
 ## How do you know this worked?
 

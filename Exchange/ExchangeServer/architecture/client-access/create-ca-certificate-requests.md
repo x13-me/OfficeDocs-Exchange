@@ -186,7 +186,7 @@ New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.
 
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
 
-- For more information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
+- For more information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-exchangecertificate).
 
 ## How do you know this worked?
 

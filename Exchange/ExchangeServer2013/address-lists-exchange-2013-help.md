@@ -18,7 +18,7 @@ An address list is a collection of recipient and other Active Directory objects.
 
 As shown in the following figure, client applications, such as Microsoft Outlook, display the available address lists that Exchange provides.
 
-Address lists reside in Active Directory. Therefore, mobile users who are disconnected from the network are also disconnected from these server-side address lists. However, you can create offline address books (OABs) for users who are disconnected from the network. These OABs can be downloaded to a user's hard disk. Frequently, to conserve resources, OABs are subsets of the information in the actual address lists that reside on your servers. For more information, see [Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx).
+Address lists reside in Active Directory. Therefore, mobile users who are disconnected from the network are also disconnected from these server-side address lists. However, you can create offline address books (OABs) for users who are disconnected from the network. These OABs can be downloaded to a user's hard disk. Frequently, to conserve resources, OABs are subsets of the information in the actual address lists that reside on your servers. For more information, see [Offline address books in Exchange Online](../ExchangeOnline/address-books/offline-address-books/offline-address-books.md).
 
 ## Default address lists
 
@@ -54,4 +54,4 @@ Although address lists are useful tools for users, poorly planned address lists 
 
 - Name your address lists in such a way that, when users glance at them, they will know immediately which recipient types are contained in the list. If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating an address list in Exchange Server, see [Create an Address List](https://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+For detailed instructions about creating an address list in Exchange Server, see [Create an address list](create-an-address-list-exchange-2013-help.md).

@@ -36,7 +36,7 @@ User roles
 
 By default, all administrators who have the **Organization Management** role group have both of the above administrative roles enabled. Also by default, end users have the above user roles enabled.
 
-For information about each of these roles, see [Org Marketplace Apps role](https://technet.microsoft.com/library/137ee328-0bad-4911-a7bf-82da7678f246.aspx), [Org Custom Apps role](https://technet.microsoft.com/library/ab2aac13-f783-43e6-a369-75cce1d4943f.aspx), [My Marketplace Apps role](https://technet.microsoft.com/library/5c208d2d-8f76-46a7-9d2e-7c616f21ee67.aspx), [My Custom Apps role](https://technet.microsoft.com/library/aa0321b3-2ec0-4694-875b-7a93d3d99089.aspx), and [My ReadWriteMailbox Apps role](https://technet.microsoft.com/library/febb73fb-3a0b-4c67-b53b-9566d7c32cd2.aspx).
+For information about each of these roles, see [Org Marketplace Apps role](org-marketplace-apps-role-exchange-2013-help.md), [Org Custom Apps role](org-custom-apps-role-exchange-2013-help.md), [My Marketplace Apps role](my-marketplace-apps-role-exchange-2013-help.md), [My Custom Apps role](my-custom-apps-role-exchange-2013-help.md), and [My ReadWriteMailbox Apps role](my-readwritemailbox-apps-role-exchange-2013-help.md).
 
 For information about add-ins, see [Add-ins for Outlook in Exchange 2013](add-ins-for-outlook-2013-help.md).
 
@@ -75,4 +75,4 @@ This example shows you how to verify whom you've assigned permissions to install
 
 2. In the results, review the entries in the **Effective Users** column.
 
-For more information about syntax and parameters, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx).
+For more information about syntax and parameters, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).

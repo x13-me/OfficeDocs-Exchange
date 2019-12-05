@@ -60,7 +60,7 @@ This example creates a secondary public folder mailbox. The only difference betw
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
-For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
 
 ## How do you know this worked?
 
@@ -70,6 +70,6 @@ To verify that you have successfully created the primary public folder mailbox, 
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [get-OrganizationConfig](https://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
+For detailed syntax and parameter information, see [get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

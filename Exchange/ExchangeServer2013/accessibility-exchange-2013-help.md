@@ -28,7 +28,7 @@ Microsoft is committed to making its products and services easier for everyone t
 
 The following features help make Microsoft Exchange more accessible for people with disabilities:
 
-- [Keyboard shortcuts in Exchange 2013 Preview](https://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md)
 
 - [Keyboard Shortcuts in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
 
