@@ -10,7 +10,7 @@ ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 mtps_version: v=EXCHG.150
 ---
 
-# Test a transport rule in Exchange 2013
+# Test a transport rule in Exchange 2013 
 
 _**Applies to:** Exchange Server 2013_
 
