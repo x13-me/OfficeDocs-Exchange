@@ -135,7 +135,7 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 This example disables MAPI access to all user mailboxes in the North America\Finance OU.
 
 ```
-$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter {RecipientTypeDetails -eq 'UserMailbox'} -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -MAPIEnabled $false}
+$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -MAPIEnabled $false}
 ```
 
 This example disables MAPI access to all user mailboxes in the Engineering department in Washington state.
