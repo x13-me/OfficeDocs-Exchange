@@ -74,7 +74,7 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.
 
 ```
-New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+New-EmailAddressPolicy -Name "Sales" -RecipientFilter "CustomAttribute1 -eq 'SalesOU'" -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
 ```
 
 ## Custom attribute example using the ConditionalCustomAttributes parameter
@@ -103,7 +103,7 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 Next, a dynamic distribution group for all students enrolled MATH307 is created by using the _RecipientFilter_ parameter where _ExtensionCustomAttribute1_ is equal to MATH307. When using the _ExtentionCustomAttributes_ parameters, you can use the `-eq` operator instead of the `-like` operator.
 
 ```
-New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter "ExtensionCustomAttribute1 -eq 'MATH307'"
 ```
 
 In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to reflect that he's added the class ENGL210 and removed the class ECON202.

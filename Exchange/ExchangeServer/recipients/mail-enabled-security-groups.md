@@ -144,7 +144,7 @@ To verify that you've successfully created a mail-enabled security group, do any
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
   ```
-  Get-DistributionGroup -Filter {RecipientType -eq 'MailUniversalSecurityGroup'}
+  Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
@@ -380,7 +380,7 @@ You use the **Get-DistributionGroup** cmdlet to view mail-enabled security group
 This example returns a summary list of all security groups in the organization.
 
 ```
-Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')}
+Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'"
 ```
 
 This example returns detailed information for the mail-enabled security group named Help Desk.
@@ -432,7 +432,7 @@ To verify that you've successfully removed a mail-enabled security group, do any
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 
   ```
-  Get-DistributionGroup -Filter {RecipientType -eq 'MailUniversalSecurityGroup'}
+  Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify that the group isn't returned:
@@ -444,7 +444,7 @@ To verify that you've successfully removed a mail-enabled security group, do any
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
   ```
-  Get-Group -Filter {RecipientTypeDetails -eq 'UniversalSecurityGroup'}
+  Get-Group -Filter "RecipientTypeDetails -eq 'UniversalSecurityGroup'"
   ```
 
 ## Mail-enable or mail-disable existing security groups
@@ -484,7 +484,7 @@ To verify that you've successfully mail-enabled an existing security group, do a
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
   ```
-  Get-DistributionGroup -Filter {RecipientType -eq 'MailUniversalSecurityGroup'}
+  Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
@@ -524,7 +524,7 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 
   ```
-  Get-DistributionGroup -Filter {RecipientType -eq 'MailUniversalSecurityGroup'}
+  Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the name of the group, and run this command to verify that the group isn't returned:
@@ -536,5 +536,5 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
   ```
-  Get-Group -Filter {RecipientTypeDetails -eq 'UniversalSecurityGroup'}
+  Get-Group -Filter "RecipientTypeDetails -eq 'UniversalSecurityGroup'"
   ```

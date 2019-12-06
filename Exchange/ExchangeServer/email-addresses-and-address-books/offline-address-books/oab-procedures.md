@@ -395,7 +395,7 @@ Set-Mailbox -Identity laura@contoso.com -OfflineAddressBook "Contoso Executives 
 This example assigns the OAB named Contoso US to a filtered list of mailboxes.
 
 ```
-$USContoso = Get-User -ResultSize Unlimited -Filter {RecipientType -eq "UserMailbox" -and Company -eq "Contoso" -and CountryOrRegion -eq "US"}; $USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso United States"}
+$USContoso = Get-User -ResultSize Unlimited -Filter "RecipientType -eq 'UserMailbox' -and Company -eq 'Contoso' -and CountryOrRegion -eq 'US'"; $USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso United States"}
 ```
 
 ### How do you know this worked?
