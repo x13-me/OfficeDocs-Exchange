@@ -330,13 +330,13 @@ For more information, see [Procedures for address book policies in Exchange Serv
 This example assigns the ABP named ABP_FAB to all Fabrikam mailboxes.
 
 ```
-$Fab = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'FAB'}; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'"
+$Fab = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'FAB'"; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'}
 ```
 
 This example assigns the ABP named ABP_TAIL to all Tailspin Toys mailboxes.
 
 ```
-$Tail = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'"
+$Tail = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'TAIL'"; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
 ```
 
 This example assigns the ABP named ABP_CEO to the CEO named Gabriela Laureano.
