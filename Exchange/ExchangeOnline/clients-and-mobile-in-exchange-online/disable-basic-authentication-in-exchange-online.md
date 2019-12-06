@@ -18,9 +18,12 @@ title: Disable Basic authentication in Exchange Online
 
 # Disable Basic authentication in Exchange Online
 
+> [!NOTE]
+> If you've enabled _security defaults_ in your organization, Basic authentication is already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
 
-- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
+- Outlook 2013 or later (Outlook 2013 requires a [registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
