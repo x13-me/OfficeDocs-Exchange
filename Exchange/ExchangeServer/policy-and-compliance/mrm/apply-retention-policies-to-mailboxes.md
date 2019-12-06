@@ -66,7 +66,7 @@ This example applies the new retention policy New-Retention-Policy to all mailbo
 
 ```
 $OldPolicy={Get-RetentionPolicy "Old-Retention-Policy"}.distinguishedName
-Get-Mailbox -Filter {RetentionPolicy -eq $OldPolicy} -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
+Get-Mailbox -Filter "RetentionPolicy -eq '$OldPolicy'" -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
 ```
 
 This example applies the retention policy RetentionPolicy-Corp to all mailboxes in the Exchange organization.

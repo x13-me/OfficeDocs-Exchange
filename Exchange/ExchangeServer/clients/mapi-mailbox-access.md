@@ -141,7 +141,7 @@ $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=c
 This example disables MAPI access to all user mailboxes in the Engineering department in Washington state.
 
 ```
-Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Set-CasMailbox -MAPIEnabled $false
+Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -MAPIEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable MAPI access to the specified mailboxes.
@@ -169,11 +169,11 @@ To verify that you've successfully enabled or disabled MAPI access to a mailbox,
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
   ```
-  Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Get-CasMailbox
+  Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where Outlook on the web access is disabled:
 
   ```
-  Get-CasMailbox -ResultSize unlimited -Filter {MAPIEnabled -eq $false}
+  Get-CasMailbox -ResultSize unlimited -Filter "MAPIEnabled -eq `$false"
   ```

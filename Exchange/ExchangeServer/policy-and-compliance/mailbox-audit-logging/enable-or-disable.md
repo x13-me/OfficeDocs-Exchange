@@ -53,7 +53,7 @@ Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
 This example enables mailbox audit logging for all user mailboxes in your organization.
 
 ```
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Select PrimarySmtpAddress | ForEach {Set-Mailbox -Identity $_.PrimarySmtpAddress -AuditEnabled $true}
+Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Select PrimarySmtpAddress | ForEach {Set-Mailbox -Identity $_.PrimarySmtpAddress -AuditEnabled $true}
 ```
 
 This example disables mailbox audit logging for Ben Smith's mailbox.
@@ -103,7 +103,7 @@ A value of `True` for the **AuditEnabled** property verifies that audit logging 
 This example retrieves the auditing settings for all user mailboxes in your organization.
 
 ```
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,Audit*
+Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,Audit*
 ```
 
 ## More information
@@ -133,5 +133,5 @@ Set-Mailbox -Identity "Pilar Pinilla" -AuditLogAgeLimit 180
 This example decreases the age limit for mailbox audit log entries for all user mailboxes in your organization to 60 days.
 
 ```
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditLogAgeLimit 60
+Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -AuditLogAgeLimit 60
 ```
