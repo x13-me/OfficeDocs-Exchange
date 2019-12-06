@@ -418,9 +418,9 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
 - **Custom recipient filters**: Uses the required _RecipientFilter_ parameter with an OPATH filter.
 
-  - The basic OPATH filter syntax is `{<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'...}`.
+   - The basic OPATH filter syntax is `"<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'..."`.
 
-  - Braces `{ }` are required around the whole OPATH filter.
+  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion..
 
   - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
 
@@ -430,9 +430,11 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
   - `lt` and `gt` (less than and greater than).
 
-  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `{Department -like 'Sales*'}`.
+  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `"Department -like 'Sales*'"`.
 
-  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, {(Department -like 'Sales\*' -or Department -like 'Marketing\*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')}. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `"(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')"`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+
+  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
 
   - After you use the **New-EmailAddressPolicy** cmdlet to create a policy that uses custom recipient filters, you can't modify the recipient filters in the EAC. You need to use the **Set-EmailAddressPolicy** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
 
