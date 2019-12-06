@@ -155,7 +155,7 @@ This example creates a GAL with a custom recipient filter:
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
 ```
-New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter {CustomAttribute15 -like "*AgencyA*"}
+New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
 For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).
@@ -381,7 +381,7 @@ This example creates an address list with a custom recipient filter:
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
 ```
-New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
+New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
 For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
@@ -619,7 +619,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 - In the Exchange Management Shell, run the following command and verify the recipient is listed:
 
   ```
-  Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
+  Get-Recipient -ResultSize unlimited -Filter "HiddenFromAddressListsEnabled -eq `$true"
   ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.
@@ -690,9 +690,9 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
 - **Custom recipient filters**: Uses the required _RecipientFilter_ parameter with an OPATH filter.
 
-  - The basic OPATH filter syntax is `{<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'...}`.
+   - The basic OPATH filter syntax is `"<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'..."`.
 
-  - Braces `{ }` are required around the whole OPATH filter.
+  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion..
 
   - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
 
@@ -702,9 +702,11 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
   - `lt` and `gt` (less than and greater than).
 
-  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `{Department -like 'Sales*'}`.
+  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `"Department -like 'Sales*'"`.
 
-  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `{(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')}`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `"(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')"`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+
+  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
 
   - After you use the **New-AddressList** cmdlet to create an address list that uses custom recipient filters, you can't modify the address list in the EAC. You need to use the **Set-AddressList** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
 

@@ -55,7 +55,7 @@ Set-Mailbox "Florence Flipo" -AuditEnabled $true
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands:
 
 ```
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+$UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 ```
 
 ```

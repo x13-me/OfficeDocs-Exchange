@@ -153,7 +153,7 @@ Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
 
     Then, use the **DistinguishedName** value of the ABP in this command to show all mailboxes where the ABP is assigned:
 
-     `Get-Mailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<DistinguishedName>'}`
+     `Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<DistinguishedName>'"`
 
 - To remove ABP assignments from mailboxes, see the [Assign address book policies to mailboxes](#assign-address-book-policies-to-mailboxes) section in this topic.
 
@@ -286,7 +286,7 @@ You can use the **Get-Mailbox** or **Get-Content** cmdlets to identify the user 
 This example assigns the ABP named ABP_EngineeringDepartment to all user mailboxes where the `CustomAttribute11` attribute contains the value Engineering Department.
 
 ```
-Get-Mailbox -Filter {RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'} | Set-Mailbox -AddressBookPolicy "ABP_EngineeringDepartment"
+Get-Mailbox -Filter "RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'" | Set-Mailbox -AddressBookPolicy "ABP_EngineeringDepartment"
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to assign the same ABP to the specified user mailboxes.
@@ -314,7 +314,7 @@ To verify that you've successfully assigned an ABP to a mailbox, do any of these
 - In the Exchange Management Shell, use the same filter that you used to identify the mailboxes. For example:
 
   ```
-  Get-Mailbox -Filter {RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'} | Format-Table -Auto Name,EmailAddress,AddressBookPolicy
+  Get-Mailbox -Filter "RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'" | Format-Table -Auto Name,EmailAddress,AddressBookPolicy
   ```
 
 - In the Exchange Management Shell, replace _\<ABPIdentity\>_ with the name of the ABP, and run this command to get the **DistinguishedName** value:
@@ -326,7 +326,7 @@ To verify that you've successfully assigned an ABP to a mailbox, do any of these
   Then, use the **DistinguishedName** value of the ABP in this command to show all mailboxes where the ABP is assigned:
 
   ```
-  Get-Mailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<DistinguishedName>'}
+  Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<DistinguishedName>'"
   ```
 
 ## Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent
