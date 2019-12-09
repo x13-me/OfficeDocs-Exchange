@@ -145,13 +145,13 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 This example disables ActiveSync access to all user mailboxes in the North America\Finance OU.
 
 ```
-$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter {RecipientTypeDetails -eq 'UserMailbox'} -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -ActiveSyncEnabled $false}
+$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -ActiveSyncEnabled $false}
 ```
 
 This example disables ActiveSync access to all user mailboxes in the Engineering department in Washington state.
 
 ```
-Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Set-CasMailbox -ActiveSyncEnabled $false
+Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -ActiveSyncEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable ActiveSync access to the specified mailboxes.
@@ -183,11 +183,11 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync acces
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
   ```
-  Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Get-CasMailbox
+  Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where ActiveSync access is disabled:
 
   ```
-  Get-CasMailbox -ResultSize unlimited -Filter {ActiveSyncEnabled -eq $false}
+  Get-CasMailbox -ResultSize unlimited -Filter "ActiveSyncEnabled -eq `$false"
   ```

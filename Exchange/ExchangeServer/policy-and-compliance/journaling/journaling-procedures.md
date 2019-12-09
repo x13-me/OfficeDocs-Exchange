@@ -380,4 +380,4 @@ To enable journal report decryption, perform the following steps:
    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
    ```
 
-For more information, see [Enable or Disable Journal Report Decryption](https://technet.microsoft.com/library/1dedbe73-2c1a-4b14-8799-5091aaec7965.aspx).
+For more information, see [Enable or Disable Journal Report Decryption](https://docs.microsoft.com/exchange/enable-or-disable-journal-report-decryption-exchange-2013-help).

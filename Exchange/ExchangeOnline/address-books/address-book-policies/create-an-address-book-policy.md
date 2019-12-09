@@ -35,7 +35,7 @@ An ABP requires one global address list (GAL), one offline address book (OAB), o
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 

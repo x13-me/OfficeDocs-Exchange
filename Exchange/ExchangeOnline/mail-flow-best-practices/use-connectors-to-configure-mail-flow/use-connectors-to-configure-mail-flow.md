@@ -55,7 +55,7 @@ Exchange Online is ready to send and receive email from the internet right away.
 |You frequently exchange sensitive information with business partners, and you want to apply security restrictions.|You want to use Transport Layer Security (TLS) to encrypt sensitive information or you want to limit the source (IP addresses) for email from the partner domain.<br/><br/> For details, see [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md).|Optional|**Connector for incoming email:** <br/>• **From**: Partner organization <br/>• **To**: Office 365<br/> **Connector for outgoing email:** <br/>• **From**: Office 365 <br/>• To: Partner organization|
 
 > [!TIP]
-> If you don't have Exchange Online or EOP and are looking for information about Send connectors and Receive connectors in Exchange 2016 or Exchange 2019, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
+> If you don't have Exchange Online or EOP and are looking for information about Send connectors and Receive connectors in Exchange 2016 or Exchange 2019, see [Connectors](https://docs.microsoft.com/exchange/mail-flow/connectors/connectors).
 
 > [!IMPORTANT]
 > You cannot have an "allow" by sender domain connector when there is a restrict by IP/Cert connector. The restrict connector will take precedence, as partner connectors are pulled up by IP or Cert lookup when restriction and mail rejection are applied. You should not have IPs and Cert configured in the same partner connector. Please use separate connectors. Associated Accepted Domains shouldn't be used, unless you are testing the connector for a subset of the accepted domains or recipient domains.
@@ -111,7 +111,7 @@ When you create a connector, you can also specify the domain or IP address range
 
 ## Connectors for mail notifications from printers and devices
 
-This scenario applies only to organizations that have all their mailboxes in Exchange Online (no on-premises email servers) and allows a program or a device, such as a printer, to send email. For example, if you want a printer to send notifications when a print job is ready, or you want your scanner to email documents, you can use this option to send mail through Office 365 (but there are other options that don't require connectors). For details, see [How to Allow a Multi-function Device or Application to Send E-mail through Office 365 Using SMTP](https://technet.microsoft.com/library/2c0012a9-7e71-40cd-a516-1b26117bf491.aspx).
+This scenario applies only to organizations that have all their mailboxes in Exchange Online (no on-premises email servers) and allows a program or a device, such as a printer, to send email. For example, if you want a printer to send notifications when a print job is ready, or you want your scanner to email documents, you can use this option to send mail through Office 365 (but there are other options that don't require connectors). For details, see [How to set up a multifunction device or application to send email using Office 365](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
 
 ## How do I set up connectors?
 

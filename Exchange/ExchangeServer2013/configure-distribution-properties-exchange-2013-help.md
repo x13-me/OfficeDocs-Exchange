@@ -53,4 +53,4 @@ For detailed syntax and parameter information, see [Set-OabVirtualDirectory](htt
 ## For More Information
 <a name="UseShell"> </a>
 
-[Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
+[Offline address books](offline-address-books-exchange-2013-help.md)

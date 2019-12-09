@@ -74,7 +74,7 @@ When you set up the ASA credential, keep these guidelines in mind:
 
    Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://technet.microsoft.com/library/hh849725.aspx) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
 
 ## Cross-forest scenarios
 

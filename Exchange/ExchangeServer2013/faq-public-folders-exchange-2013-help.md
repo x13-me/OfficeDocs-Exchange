@@ -96,7 +96,7 @@ Outlook Web App is supported, but with some limitations. You can add and remove 
 > [!NOTE]
 > You can only create public folder rules that contain the element <STRONG>reply using a specific template</STRONG> in mail-enabled public folders. It is possible that pre-existing rules containing <STRONG>reply using a specific template</STRONG> will continue to work on non-mail-enabled public folders, but on those folders you cannot create new rules with this template element, or edit existing rules with this element.
 
-In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788\(v=exchg.150\).aspx) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
+In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-deployment) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
 
 ## How can I store a very large hierarchy in a public folder mailbox?
 

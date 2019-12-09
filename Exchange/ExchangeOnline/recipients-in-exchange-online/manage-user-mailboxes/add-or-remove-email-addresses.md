@@ -76,7 +76,7 @@ This example shows how to add multiple SMTP addresses to a mailbox.
 Set-Mailbox "Dan Jump" -EmailAddresses @{add="dan.jump@northamerica.contoso.com","danj@tailspintoys.com"}
 ```
 
-For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://docs.microsoft.com/exchange/modifying-multivalued-properties-exchange-2013-help).
 
 This example shows another way to add email addresses to a mailbox by specifying all addresses associated with the mailbox. In this example, danj@tailspintoys.com is the new email address that you want to add. The other two email addresses are existing addresses. The address with the case-sensitive qualifier `SMTP` is the primary SMTP address. You have to include all email addresses for the mailbox when you use this command syntax. If you don't, the addresses specified in the command will overwrite the existing addresses.
 
@@ -134,7 +134,7 @@ This example shows how to remove multiple addresses from a mailbox.
 Set-Mailbox "Janet Schorr" -EmailAddresses @{remove="janet.schorr@corp.contoso.com","janets@tailspintoys.com"}
 ```
 
-For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://docs.microsoft.com/exchange/modifying-multivalued-properties-exchange-2013-help).
 
 You can also remove an email address by omitting it from the command to set email addresses for a mailbox. For example, let's say Janet Schorr's mailbox has three email addresses: janets@contoso.com (the primary SMTP address), janets@corp.contoso.com, and janets@tailspintoys.com. To remove the address janets@corp.contoso.com, you would run the following command.
 

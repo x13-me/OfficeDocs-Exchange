@@ -70,7 +70,7 @@ To create new local move requests in the Exchange Management Shell, you only use
 
      - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
 
-   - **Specify the users with a CSV file**: Click **Browse** and go to the location of the comma-separated value (CSV) file that specifies the mailboxes to move. For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
+   - **Specify the users with a CSV file**: Click **Browse** and go to the location of the comma-separated value (CSV) file that specifies the mailboxes to move. For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help).
 
    - **Allow unknown columns in the CSV file**:
 
@@ -200,7 +200,7 @@ For detailed syntax and parameter information, see [New-MoveRequest](https://doc
 
 A local move request for mailboxes that are specified in a CSV file is known as a *migration batch*, and uses the **New-MigrationBatch** cmdlet.
 
-For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
+For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help).
 
 To create a migration batch, use this syntax:
 

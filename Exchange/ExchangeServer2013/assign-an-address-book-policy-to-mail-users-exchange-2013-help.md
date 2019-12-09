@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 After you create an address book policy (ABP), you must assign it to mailbox users. Users aren't assigned a default ABP when their user account is created. If you don't assign an ABP to a user, the global address list (GAL) for your entire organization will be accessible to the user through Outlook and Outlook Web App. To learn more, see [Address book policies](address-book-policies-exchange-2013-help.md).
 
-Interested in scenarios that use this procedure? See [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+Interested in scenarios that use this procedure? See [Scenario: Deploying address book policies](scenario-deploying-address-book-policies-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

@@ -21,11 +21,11 @@ manager: serdars
 # Exchange Server prerequisites
 
 > [!TIP]
-> Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://technet.microsoft.com/library/bb691354(v=exchg.150).aspx).
+> Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help).
 
 This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
 
-After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx).
+After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 > [!TIP]
 > Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=626978).
@@ -104,7 +104,7 @@ When you use one of these options, you don't need to restart the computer after 
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
       > [!NOTE]
       > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
@@ -211,7 +211,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
    c. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-   d. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+   d. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
       > [!NOTE]
       > • An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). <br/>• Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
@@ -253,7 +253,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
       > [!NOTE]
       > • An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). <br/>•  Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.

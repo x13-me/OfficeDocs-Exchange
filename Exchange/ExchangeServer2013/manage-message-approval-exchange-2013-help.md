@@ -87,4 +87,4 @@ By default, one arbitration mailbox is used for each Exchange organization. If y
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
-[Exchange Management Shell Quick Reference for Exchange 2013](https://technet.microsoft.com/library/3ea4a105-a93c-48ba-96ce-6170125354e1.aspx)
+[Exchange Management Shell quick reference for Exchange 2013](exchange-management-shell-quick-reference-for-exchange-2013-exchange-2013-help.md)

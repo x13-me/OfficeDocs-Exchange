@@ -25,7 +25,7 @@ ABP routing creates the virtual organizations within a single Exchange Online or
 
 In Exchange Online, you can only turn on ABP routing in Exchange Online PowerShell.
 
-Looking for the Exchange Server version of this topic? See [Install and Configure the Address Book Policy Routing Agent](https://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx).
+Looking for the Exchange Server version of this topic? See [Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-book-policies/abp-procedures#use-the-exchange-management-shell-to-install-and-configure-the-address-book-policy-routing-agent).
 
 ## What do you need to know before you begin?
 

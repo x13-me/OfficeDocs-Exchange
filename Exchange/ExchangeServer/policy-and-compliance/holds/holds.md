@@ -74,7 +74,7 @@ If you're upgrading from Exchange Server 2010, the notion of legal hold is to ho
 ## Placing a mailbox on hold
 <a name="MBX"> </a>
 
-The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](../../policy-and-compliance/ediscovery/assign-permissions.md).
+The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](https://docs.microsoft.com/exchange/discovery-management-exchange-2013-help) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](../../policy-and-compliance/ediscovery/assign-permissions.md).
 
 You can place a mailbox Litigation Hold on the **Recipients** page in the Exchange admin center or by using the `Set-Mailbox -LitigationHoldEnabled $true` command in the Exchange Management Shell.
 

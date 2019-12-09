@@ -238,7 +238,7 @@ Get-MailboxDatabase | Format-Table Name,JournalRecipient
 
 ## For more information
 
-[Disable or Enable Journaling of Voice Mail and Missed Call Notifications](https://technet.microsoft.com/library/5164a92e-69e6-4339-b80c-0cfbf0dc0198.aspx)
+[Disable or enable journaling of voice mail and missed call notifications](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md)
 
 [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
 
