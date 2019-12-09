@@ -78,7 +78,7 @@ Set-Mailbox <Identity> -AuditEnabled $true
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands.
 
 ```powershell
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+$UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 

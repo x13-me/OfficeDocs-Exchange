@@ -78,7 +78,7 @@ Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Exp
 To export specific messages from all queues on a server and use the **InternetMessageID** value of each message as the file name, use the following syntax.
 
 ```powershell
-Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+Get-Message -Filter "<MessageFilter>" [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
 Note that the **InternetMessageID** value contains angled brackets (\> and \<), which need to be removed because they aren't allowed in file names.
@@ -86,7 +86,7 @@ Note that the **InternetMessageID** value contains angled brackets (\> and \<), 
 This example exports a copy of all the messages from senders in the contoso.com domain from all queues on the server named Mailbox01 to the local directory named D:\\Contoso Export.
 
 ```powershell
-Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+Get-Message -Filter "FromAddress -like '*@contoso.com'" -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
 > [!NOTE]

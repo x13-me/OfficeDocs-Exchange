@@ -45,7 +45,7 @@ Set-GlobalAddressList -Identity 96d0c505-eba8-4103-ad4f-577a1bf4ad7b -Name Fourt
 This example changes the recipients who will be included in the Fourth Coffee global GAL to those whose company is set to Fourth Coffee.
 
 ```powershell
-Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter {Company -eq "Fourth Coffee"}
+Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter "Company -eq 'Fourth Coffee'"
 ```
 
 For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).

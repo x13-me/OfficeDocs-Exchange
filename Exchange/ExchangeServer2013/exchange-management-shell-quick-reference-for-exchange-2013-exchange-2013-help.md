@@ -164,14 +164,14 @@ The following commands are associated with various tasks that you can use when a
 <td><p>This command retrieves a list of all users who can modify the mailbox of <em>kima</em>.</p></td>
 </tr>
 <tr class="even">
-<td><p>New-ManagementScope &quot;<em>Seattle Users</em>&quot; -RecipientRestrictionFilter { <em>City</em> -Eq &quot;<em>Seattle</em>&quot; }</p>
+<td><p>New-ManagementScope &quot;<em>Seattle Users</em>&quot; -RecipientRestrictionFilter "<em>City</em> -Eq '<em>Seattle</em>'"</p>
 <p>New-RoleGroup &quot;<em>Seattle Admins</em>&quot; -Roles &quot;<em>Mail Recipients</em>&quot;, &quot;<em>Mail Recipient Creation</em>&quot;, &quot;<em>Mailbox Import Export</em>&quot;, -CustomRecipientWriteScope &quot;<em>Seattle Users</em>&quot;</p></td>
 <td><p>This command creates a new management scope and management role group to enable members of the role group to manage recipients in Seattle.</p>
 <p>First, the <em>Seattle Users</em> management scope is created, which matches only recipients who have <em>Seattle</em> in the <em>City</em> attribute on their user object.</p>
 <p>Then, a new role group called <em>Seattle Admins</em> is created and the <em>Mail Recipients</em>, <em>Mail Recipient Creation</em>, and <em>Mailbox Import Export</em> roles are assigned. The role group is scoped so that its members can manage only users who match the <em>Seattle Users</em> recipient filter scope.</p></td>
 </tr>
 <tr class="odd">
-<td><p>New-ManagementScope &quot;<em>Vancouver Servers</em>&quot; -ServerRestrictionFilter { <em>ServerSite</em> -Eq &quot;<em>Vancouver</em>&quot; }</p>
+<td><p>New-ManagementScope &quot;<em>Vancouver Servers</em>&quot; -ServerRestrictionFilter "<em>ServerSite</em> -Eq '<em>Vancouver</em>'"</p>
 <p>$RoleGroup = Get-RoleGroup &quot;<em>Server Management</em>&quot;</p>
 <p>New-RoleGroup &quot;<em>Vancouver Server Management</em>&quot; -Roles $RoleGroup.Roles -CustomConfigWriteScope &quot;<em>Vancouver Servers</em>&quot;</p></td>
 <td><p>This command creates a new management scope and copies an existing role group to enable members of the new role group to manage only servers in the Vancouver Active Directory site.</p>

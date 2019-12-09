@@ -53,13 +53,13 @@ A message that's being sent to multiple recipients might be located in more than
 To remove messages from queues, use the following syntax.
 
 ```powershell
-Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+Remove-Message <-Identity MessageIdentity | -Filter "MessageFilter"> -WithNDR <$true | $false>
 ```
 
 This example removes messages in the queues that have a subject of "Win Big" without sending an NDR.
 
 ```powershell
-Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+Remove-Message -Filter "Subject -eq 'Win Big'" -WithNDR $false
 ```
 
 This example removes the message with the message ID 3 from the unreachable queue on server named Mailbox01 and sends an NDR.
@@ -105,13 +105,13 @@ You can resume a message that currently has a status of Suspended. By resuming a
 To resume messages, use the following syntax:
 
 ```powershell
-Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+Resume-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example resumes all messages being sent from any sender in the Contoso.com domain.
 
 ```powershell
-Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+Resume-Message -Filter "FromAddress -eq '*contoso.com'"
 ```
 
 This example resumes the message with the message ID 3 in the unreachable queue on server Hub01.
@@ -153,13 +153,13 @@ A message being sent to multiple recipients might be located in multiple queues.
 To suspend messages, use the following syntax:
 
 ```powershell
-Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+Suspend-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example suspends all messages in the queues that are from any sender in the domain contoso.com.
 
 ```powershell
-Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+Suspend-Message -Filter "FromAddress -eq '*contoso.com'"
 ```
 
 This example suspends the message with the message ID 3 in the unreachable queue on server named Mailbox01:

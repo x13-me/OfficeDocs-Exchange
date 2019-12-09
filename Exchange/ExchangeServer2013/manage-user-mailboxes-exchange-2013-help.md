@@ -276,7 +276,7 @@ Set-Mailbox -Identity patc -DeliverToMailboxAndForward $true -ForwardingAddress 
 This example uses the **Get-Mailbox** command to find all user mailboxes in the organization, and then uses the **Set-Mailbox** command to set the recipient limit to 500 recipients allowed in the To:, Cc:, and Bcc: boxes of an email message.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -RecipientLimits 500
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RecipientLimits 500
 ```
 
 This example uses the **Get-Mailbox** command to find all the mailboxes in the Marketing organizational unit, and then uses the **Set-Mailbox** command to configure these mailboxes. The custom warning, prohibit send, and prohibit send and receive limits are set to 200 megabytes (MB), 250 MB, and 280 MB respectively, and the mailbox database's default limits are ignored. This command can be used to configure a specific set of mailboxes to have larger or smaller limits than other mailboxes in the organization.
@@ -306,7 +306,7 @@ To verify that you've successfully changed properties for a user mailbox, do the
 - In the Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. In the example above where the recipient limit was changed, run the following command to verify the new value.
 
   ```powershell
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Format-List Name,RecipientLimits
+  Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,RecipientLimits
   ```
 
     For the example above where the message limits were changed, run this command.
@@ -364,7 +364,7 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. For example, say you used the bulk edit feature in the EAC to enable the archive mailbox and assign a retention policy to all users in your organization. To verify these changes, you could run the following command:
 
   ```powershell
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Format-List Name,ArchiveDatabase,RetentionPolicy
+  Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,ArchiveDatabase,RetentionPolicy
   ```
 
   For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
