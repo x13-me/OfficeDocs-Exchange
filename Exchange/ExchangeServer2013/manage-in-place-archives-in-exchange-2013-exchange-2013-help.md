@@ -120,7 +120,7 @@ Enable-Mailbox "Tony Smith" -Archive
 This example retrieves mailboxes in database DB01 that don't have an on-premises or cloud-based archive enabled and don't have a name starting with DiscoverySearchMailbox. It pipes the result to the **Enable-Mailbox** cmdlet to enable the archive for all mailboxes on mailbox database DB01.
 
 ```powershell
-Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+Get-Mailbox -Database DB01 -Filter "ArchiveGuid -Eq `$null -AND ArchiveDomain -eq `$null -AND Name -NotLike 'DiscoverySearchMailbox*'" | Enable-Mailbox -Archive
 ```
 
 For detailed syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
