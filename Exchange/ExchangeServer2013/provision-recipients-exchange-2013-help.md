@@ -77,7 +77,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 This example specifies that all user mailboxes in the United States for Contoso will download the OAB Contoso United States.
 
 ```powershell
-Get-User -ResultSize Unlimited -Filter { Company -eq "Contoso" -and RecipientType -eq "UserMailbox" } | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
+Get-User -ResultSize Unlimited -Filter "Company -eq 'Contoso' -and RecipientType -eq 'UserMailbox'" | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
 ```
 
 For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).

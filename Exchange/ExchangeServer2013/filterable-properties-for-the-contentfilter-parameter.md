@@ -22,7 +22,7 @@ This topic lists the filterable properties for the *ContentFilter* parameter. Th
 
 Many of the properties for the *ContentFilter* parameter accept wildcard characters. If you use a wildcard character, use the **-like** operator instead of the **-eq** operator. The **-like** operator is used to find pattern matches in rich types, such as strings, whereas the **-eq** operator is used to find an exact match.
 
-The following table contains a list of the filterable properties for the *ContentFilter* parameter. This table lists the name of the property, a description, the acceptable values, and a syntax example. For more information about OPATH filters, see [Filters in recipient Shell commands](https://technet.microsoft.com/library/bb124268\(v=exchg.150\)).
+The following table contains a list of the filterable properties for the *ContentFilter* parameter. This table lists the name of the property, a description, the acceptable values, and a syntax example. For more information about OPATH filters, see [Recipient filters in Exchange PowerShell commands - Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {All -like '*Ayla*'}
+-ContentFilter "All -like '*Ayla*'"
 ```
 
 </td>
@@ -61,7 +61,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Attachment -like '*.jpg'}
+-ContentFilter "Attachment -like '*.jpg'"
 ```
 
 </td>
@@ -77,7 +77,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {(BCC -eq 'ayla@contoso.com') -or (BCC -eq 'tony@contoso.com')}
+-ContentFilter "(BCC -eq 'ayla@contoso.com') -or (BCC -eq 'tony@contoso.com')"
 ```
 
 </td>
@@ -90,7 +90,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Body -like '*prospectus*'}
+-ContentFilter "Body -like '*prospectus*'"
 ```
 
 </td>
@@ -103,7 +103,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Category -like '*Blue*'}
+-ContentFilter "Category -like '*Blue*'"
 ```
 
 </td>
@@ -119,7 +119,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')}
+-ContentFilter "(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')"
 ```
 
 </td>
@@ -131,7 +131,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Expires -lt '01/01/2013'}
+-ContentFilter "Expires -lt '01/01/2013'"
 ```
 
 </td>
@@ -144,7 +144,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {HasAttachment -eq $true}
+-ContentFilter "HasAttachment -eq `$true"
 ```
 
 </td>
@@ -158,11 +158,11 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Importance -eq 'high'}
+-ContentFilter "Importance -eq 'high'"
 ```
 
 ```powershell
--ContentFilter {Importance -eq 2}
+-ContentFilter "Importance -eq 2"
 ```
 
 </td>
@@ -175,7 +175,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {IsFlagged -eq $true}
+-ContentFilter "IsFlagged -eq `$true"
 ```
 
 </td>
@@ -188,7 +188,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {IsRead -eq $true}
+-ContentFilter "IsRead -eq `$true"
 ```
 
 </td>
@@ -211,11 +211,11 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {MessageKind -eq 'Calendar'}
+-ContentFilter "MessageKind -eq 'Calendar'"
 ```
 
 ```powershell
--ContentFilter {MessageKind -ne 'Email'}
+-ContentFilter "MessageKind -ne 'Email'"
 ```
 
 </td>
@@ -227,11 +227,11 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {MessageLocale -ne 'en-US'}
+-ContentFilter "MessageLocale -ne 'en-US'"
 ```
 
 ```powershell
--ContentFilter {MessageLocale -eq 'tr-TR'}
+-ContentFilter "MessageLocale -eq 'tr-TR'"
 ```
 
 </td>
@@ -247,7 +247,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')}
+-ContentFilter "(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')"
 ```
 
 </td>
@@ -261,7 +261,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {PolicyTag -ne '00000000-0000-0000-0000-000000000000'}
+-ContentFilter "PolicyTag -ne '00000000-0000-0000-0000-000000000000'"
 ```
 
 </td>
@@ -273,11 +273,11 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
--ContentFilter {Received -lt '01/01/2013 9:00'}
+-ContentFilter "Received -lt '01/01/2013 9:00'"
 ```
 
 ```powershell
--ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
+-ContentFilter "(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')"
 ```
 
 </td>
@@ -305,11 +305,11 @@ ContentFilter {Sender -eq 'tony'}
 <td>
 
 ```powershell
--ContentFilter {Sent -lt '01/01/2013 9:00'}
+-ContentFilter "Sent -lt '01/01/2013 9:00'"
 ```
 
 ```powershell
--ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
+-ContentFilter "(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')"
 ```
 
 </td>
@@ -323,7 +323,7 @@ ContentFilter {Sender -eq 'tony'}
 <td>
 
 ```powershell
--ContentFilter {Size -gt '10KB'}
+-ContentFilter "Size -gt '10KB'"
 ```
 
 </td>
@@ -336,7 +336,7 @@ ContentFilter {Sender -eq 'tony'}
 <td>
 
 ```powershell
--ContentFilter {Subject -like '*meeting*'}
+-ContentFilter "Subject -like '*meeting*'"
 ```
 
 </td>
@@ -352,7 +352,7 @@ ContentFilter {Sender -eq 'tony'}
 <td>
 
 ```powershell
--ContentFilter {To -eq 'aylakol'}
+-ContentFilter "To -eq 'aylakol'"
 ```
 
 </td>

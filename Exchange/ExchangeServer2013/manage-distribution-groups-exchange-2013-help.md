@@ -261,7 +261,7 @@ Set-DistributionGroup "Seattle Employees" -EmailAddresses SMTP:sea.employees@con
 This example limits the maximum message size that can be sent to all distribution groups in the organization to 10 megabytes (MB).
 
 ```powershell
-Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalDistributionGroup')} | Set-DistributionGroup -MaxReceiveSize 10MB
+Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalDistributionGroup'" | Set-DistributionGroup -MaxReceiveSize 10MB
 ```
 
 This example enables moderation for the distribution group Customer Support and sets the moderator to Amy. In addition, this moderated distribution group will notify senders who send mail from within the organization if their messages aren't approved.
@@ -285,7 +285,7 @@ To verify that you've successfully changed properties for a distribution group, 
 - In the Shell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the example above where the recipient limit was changed, run the following command to verify the new value.
 
   ```powershell
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Format-List Name,RecipientLimits
+  Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,RecipientLimits
   ```
 
   For the example above where the message limits were changed, run this command.

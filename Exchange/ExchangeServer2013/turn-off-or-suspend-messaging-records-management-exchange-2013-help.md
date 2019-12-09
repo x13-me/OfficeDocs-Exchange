@@ -77,13 +77,13 @@ Set-Mailbox jpeoples -RetentionPolicy $null.
 This Shell example removes the retention policy from all mailboxes in the Exchange organization.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+Get-Mailbox -ResultSize unlimited -Filter "RetentionPolicy -ne `$null" | Set-Mailbox -RetentionPolicy $null
 ```
 
 This Shell example removes the retention policy Corp-Finance from all mailbox users who have the policy applied.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+Get-Mailbox -ResultSize unlimited -Filter "RetentionPolicy -eq 'Corp-Finance'" | Set-Mailbox -RetentionPolicy $null
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).

@@ -66,7 +66,7 @@ Set-Mailbox -Identity joe@fabrikam.com -AddressBookPolicy "All Fabrikam"
 This example assigns the ABP ABP_EngineeringDepartment to all mailbox users whose `CustomAttribute11` value contains "Engineering Department".
 
 ```powershell
-Get-Mailbox -Filter {(CustomAttribute11 -like "Engineering Department")} | Set-Mailbox -AddressBookPolicy ABP_EngineeringDepartment
+Get-Mailbox -Filter "CustomAttribute11 -like 'Engineering Department'" | Set-Mailbox -AddressBookPolicy ABP_EngineeringDepartment
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).

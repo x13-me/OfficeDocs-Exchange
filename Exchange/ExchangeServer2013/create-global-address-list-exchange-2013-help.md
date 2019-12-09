@@ -49,7 +49,7 @@ For detailed syntax and parameter information, see [New-GlobalAddressList](https
 This example creates a GAL named GAL_AgencyA that includes recipients for which the _CustomAttribute15_ parameter has a value of `AgencyA`.
 
 ```powershell
-New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter {CustomAttribute15 -like "AgencyA"}
+New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter "CustomAttribute15 -like 'AgencyA'"
 ```
 
 For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).

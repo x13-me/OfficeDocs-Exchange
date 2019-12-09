@@ -192,7 +192,7 @@ You can also use the **Enable-Mailbox** cmdlet to mail-enable multiple users. Yo
 For example, the following command mailbox-enables users who aren't already mail-enabled and that have a value in the **UserPrincipalName** property, which helps ensure that you don't inadvertently convert a system account to a mailbox.
 
 ```powershell
-Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$Null" | Enable-Mailbox
 ```
 
 For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/library/aa996896\(v=exchg.150\)).
