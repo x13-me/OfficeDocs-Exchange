@@ -118,6 +118,9 @@ A journal report is the message that the Journaling agent generates when a messa
 
 When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
 
+> [!IMPORTANT]
+> The Journal Report Decryption feature currently does not support the use of custom OME templates. If you utilize a custom OME template, the Journal report will not contain a decrypted copy of the message. Journal Report Decryption currently only works with the default OME templates provided by Exchange Online (Encrypt and Do Not Forward).
+
 ## Troubleshooting
 
 When a message matches the scope of multiple journal rules, all matching rules will be triggered.

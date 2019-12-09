@@ -343,13 +343,13 @@ Here are some examples of using the Shell to change linked mailbox properties.
 This example uses the **Get-Mailbox** command to find all the linked mailboxes in the organization.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'"
 ```
 
 This example uses the **Set-Mailbox** command to limit the number of recipients allowed on the To:, Cc:, and Bcc: lines of an email message to 500. This limit applies to all linked mailboxes in the organization.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | Set-Mailbox -RecipientLimits 500
 ```
 
 This example changes the linked master account in the fabrikam.com account forest that is associated with a linked mailbox in an Exchange forest.
@@ -367,7 +367,7 @@ To verify that you have successfully changed properties for a linked mailbox, do
 - In the Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple linked mailboxes. In the example above where the recipient limit was changed, running the following command will verify the new value.
 
   ```powershell
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+  Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | fl Name,RecipientLimits
   ```
 
   For the example above where the linked master account was changed, run the following command to verify the new value.

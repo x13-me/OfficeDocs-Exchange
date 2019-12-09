@@ -81,7 +81,7 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 This example creates a scope that includes all the databases that contain the string "ACCT" in the **Name** property of the database.
 
 ```powershell
-New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter "Name -Like '*ACCT*'"
 ```
 
 For detailed syntax and parameter information, see [New-ManagementScope](https://technet.microsoft.com/library/dd335137\(v=exchg.150\)).

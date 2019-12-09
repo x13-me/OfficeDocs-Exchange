@@ -38,13 +38,13 @@ For additional management tasks related to address lists, see [Address list proc
 This example creates an address list for all users with Exchange mailboxes who reside in Washington or Oregon.
 
 ```powershell
-New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates an address list for all users with Exchange mailboxes who have `AgencyB` as the value for the _CustomAttribute15_ parameter.
 
 ```powershell
-New-AddressList -Name "AgencyB" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)}
+New-AddressList -Name "AgencyB" -RecipientFilter "(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)"
 ```
 
 For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
