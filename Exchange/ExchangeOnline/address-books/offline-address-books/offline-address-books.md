@@ -25,8 +25,6 @@ For more information about address lists in Exchange Online, see [Address lists]
 
 For OAB procedures, see [Offline address book procedures](offline-address-book-procedures.md).
 
-Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange Server](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx).
-
 ## How users download offline address books
 
 1. In Outlook, click **File** \> **Account Settings** \> **Download Address Book**.

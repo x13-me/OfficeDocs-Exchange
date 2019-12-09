@@ -29,11 +29,11 @@ When you install a server running Microsoft Exchange Server 2013 in your Exchang
 The EAC enables you to perform many deployment tasks and most common day-to-day administrative tasks on both the on-premises Exchange servers and the Exchange Online organization. It's installed by default on every Exchange 2013 server. In addition, because it's a web-based management console, you can also access it by using a web browser on other computers in your network or via the Internet by using the ECP virtual directory URL.
 
 > [!IMPORTANT]
-> If you want to access the EAC using an account with a mailbox located on an Exchange 2007 Mailbox server (such as a domain administrator account), you must use the following address in your browser to access the EAC: > https:// _\<FQDN of Exchange 2013 Client Access server\>_/ECP? ExchClientVer=15
+> If you want to access the EAC using an account with a mailbox located on an Exchange 2007 Mailbox server (such as a domain administrator account), you must use the following address in your browser to access the EAC: > https://_\<FQDN of Exchange 2013 Client Access server\>_/ECP?ExchClientVer=15
 
 You access the Exchange Online organization in the EAC by selecting the Office 365 cross-premises navigation tab. The cross-premises navigation allows you to easily switch between your Exchange Online and your on-premises Exchange organizations. If you've configured a hybrid deployment, selecting the Office 365 tab allows you to manage the Exchange Online organization and recipient objects. If you don't have an Exchange Online organization, selecting the Office 365 link will direct you to the Office 365 sign-up page.
 
-For more information about the EAC, see [Exchange admin center](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+For more information about the EAC, see [Exchange admin center in Exchange 2013](https://docs.microsoft.com/exchange/exchange-admin-center-in-exchange-2013-exchange-2013-help).
 
 ## The Exchange Management Shell
 

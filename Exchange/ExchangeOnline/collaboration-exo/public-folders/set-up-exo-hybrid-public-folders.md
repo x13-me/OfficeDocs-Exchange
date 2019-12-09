@@ -30,7 +30,7 @@ This article describes how to enable users in your Exchange Server on-premises e
 
 ## What do you need to know before you begin?
 
-1. These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](https://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx).
+1. These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard).
 
 2. These instructions assume that Outlook Anywhere is enabled and functional on the on-premises Exchange server(s). For information on how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
 

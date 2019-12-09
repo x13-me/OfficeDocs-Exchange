@@ -23,7 +23,7 @@ You use mailbox moves to move mailboxes to, from, and within your Exchange organ
 
 - **Cross-forest mailbox moves**: You move mailboxes to Exchange servers in a different Active Directory forest. You can initiate the move from the target forest where you want to move the mailboxes (known as a *pull* move type), or from the source forest that currently hosts the mailboxes (known as a *push* move type). For more information, see [Prepare mailboxes for cross-forest move requests](../architecture/mailbox-servers/prep-mailboxes-for-cross-forest-moves.md).
 
-- **Remote mailbox moves in hybrid deployments**: In hybrid deployments between on-premises Exchange and Microsoft Office 365, you can move mailboxes from Exchange to Office 365 (known as *onboarding remote move migrations*) and from Office 365 to Exchange (know as *offboarding remote move migrations*). For more information, see [Move Mailboxes Between On-Premises and Exchange Online Organizations in 2013 Hybrid Deployments](https://technet.microsoft.com/library/d6289f7b-f67e-48db-9570-9fd3c9547548.aspx).
+- **Remote mailbox moves in hybrid deployments**: In hybrid deployments between on-premises Exchange and Microsoft Office 365, you can move mailboxes from Exchange to Office 365 (known as *onboarding remote move migrations*) and from Office 365 to Exchange (know as *offboarding remote move migrations*). For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 
     **Note**: For more information about migrating on-premises Exchange organizations to Office 365, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
 
@@ -65,7 +65,7 @@ These are some scenarios for cross-forest mailbox moves:
 
 ## CSV files for mailbox moves
 
-One of the major benefits of the batch move architecture is the ability to use a comma-separated value (CSV) to specify the mailboxes to move. The information that's required in the CSV file depends on the type of move. For more information, see [CSV Files for Mailbox Migration](https://technet.microsoft.com/library/e67b3455-3946-4335-b80c-97823c76ac54.aspx).
+One of the major benefits of the batch move architecture is the ability to use a comma-separated value (CSV) to specify the mailboxes to move. The information that's required in the CSV file depends on the type of move. For more information, see [CSV Files for Mailbox Migration](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help).
 
 ## Migration endpoints for cross-forest and remote mailbox moves
 

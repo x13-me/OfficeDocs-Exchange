@@ -368,7 +368,7 @@ You can remove roles from role groups by retrieving the associated management ro
 
 For more information about regular and delegating role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
-This procedure uses pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+This procedure uses pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 To remove a role from a role group, use the following syntax.
 
@@ -433,7 +433,7 @@ To change the scope of all the role assignments between a role group and a set o
 
 This procedure uses the concepts of pipelining and the *WhatIf* switch. For more information, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
 
@@ -464,7 +464,7 @@ The scopes on the role assignments are managed using the **Set-ManagementRoleAss
 
 This procedure uses the concepts of pipelining and the **Format-List** cmdlet. For more information, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\))
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with command output](working-with-command-output-exchange-2013-help.md)
 

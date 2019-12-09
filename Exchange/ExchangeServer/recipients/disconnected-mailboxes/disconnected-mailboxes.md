@@ -141,5 +141,5 @@ The following table contains links to topics that will help you manage disconnec
 |[Connect a disabled mailbox](connect-disabled-mailboxes.md)|Learn how to connect a disabled mailbox to an existing user account.|
 |[Connect or restore a deleted mailbox](restore-deleted-mailboxes.md)|Learn how to connect a deleted mailbox to a user account or restore the contents of a deleted mailbox to an existing mailbox.|
 |[Connect or Restore a Soft-Deleted Mailbox](https://technet.microsoft.com/library/4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e.aspx)|Learn how to connect a soft-deleted mailbox to a user account or restore a soft-deleted mailbox to an existing mailbox.|
-|[Manage Mailbox Restore Requests](https://technet.microsoft.com/library/8e668a52-c601-4d96-a51c-ab60267e1321.aspx)|Learn how to manage mailbox restore requests using the Exchange Management Shell.|
+|[Manage Mailbox Restore Requests](https://docs.microsoft.com/exchange/manage-mailbox-restore-requests-exchange-2013-help)|Learn how to manage mailbox restore requests using the Exchange Management Shell.|
 |[Permanently delete a mailbox](permanently-delete-mailboxes.md)|Learn how to permanently delete a mailbox.|

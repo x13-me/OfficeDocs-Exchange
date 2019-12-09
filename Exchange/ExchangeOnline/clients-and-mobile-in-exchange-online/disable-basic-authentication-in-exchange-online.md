@@ -18,9 +18,12 @@ title: Disable Basic authentication in Exchange Online
 
 # Disable Basic authentication in Exchange Online
 
+> [!NOTE]
+> If you've enabled _security defaults_ in your organization, Basic authentication is already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
 
-- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
+- Outlook 2013 or later (Outlook 2013 requires a [registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
@@ -194,7 +197,7 @@ The methods that you can use to assign authentication policies to users are desc
    This example assigns the policy named Block Basic Auth to all user accounts whose **Title** attribute contains the value "Sales Associate".
 
    ```
-   $SalesUsers = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Sales Associate*')}
+   $SalesUsers = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Sales Associate*')"
    $Sales = $SalesUsers.MicrosoftOnlineServicesID
    $Sales | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Basic Auth"}
    ```
@@ -334,13 +337,13 @@ To confirm that the authentication policy was applied to users:
 2. Use the DN value of the authentication policy in the following command:
 
    ```
-   Get-User -Filter {AuthenticationPolicy -eq '<AuthPolicyDN>'}
+   Get-User -Filter "AuthenticationPolicy -eq '<AuthPolicyDN>'"
    ```
 
    For example:
 
    ```
-   Get-User -Filter {AuthenticationPolicy -eq 'CN=Block Basic Auth,CN=Auth Policies,CN=Configuration,CN=contoso.onmicrosoft.com,CN=ConfigurationUnits,DC=NAMPR11B009,DC=PROD,DC=OUTLOOK,DC=COM'}
+   Get-User -Filter "AuthenticationPolicy -eq 'CN=Block Basic Auth,CN=Auth Policies,CN=Configuration,CN=contoso.onmicrosoft.com,CN=ConfigurationUnits,DC=NAMPR11B009,DC=PROD,DC=OUTLOOK,DC=COM'"
    ```
 
 When an authentication policy blocks Basic authentication requests from a specific user for a specific protocol in Exchange Online, the response is `401 Unauthorized`. No additional information is returned to the client to avoid leaking any additional information about the blocked user. An example of the response looks like this:
@@ -414,13 +417,13 @@ $variable1 = Get-ADGroupMember -Identity "Developers" | select -ExpandProperty "
 Use the following syntax in Active Directory PowerShell to verify the attribute was applied to the user accounts (now or in the past):
 
 ```
-Get-ADUser -Filter {(Department -eq '<DepartmentName>')} -Properties Department
+Get-ADUser -Filter "Department -eq '<DepartmentName>'" -Properties Department
 ```
 
 This example returns all user accounts with the value "Developer" for the **Department** attribute.
 
 ```
-Get-ADUser -Filter {(Department -eq 'Developer')} -Properties Department
+Get-ADUser -Filter "Department -eq 'Developer'" -Properties Department
 ```
 
 ### Step 2: Disable legacy authentication in Exchange Online
@@ -439,7 +442,7 @@ $<VariableName2> | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block B
 This example assigns the policy named Block Basic Auth to all synchronized user accounts whose **Department** attribute contains the value "Developer".
 
 ```
-$developerUsers = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (department -like '*developer*')}
+$developerUsers = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (department -like '*developer*')"
 $developers = $developerUsers.MicrosoftOnlineServicesID
 $developers | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Basic Auth"}
 ```

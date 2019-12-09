@@ -37,6 +37,9 @@ Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Onlin
 
 Note these settings only apply to mailboxes that are hosted in Exchange Online (Office 365).
 
+> [!NOTE]
+> If you've enabled _security defaults_ in your organization, SMTP AUTH is already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+
 ## Disable SMTP AUTH in your organization
 
 You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).

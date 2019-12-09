@@ -89,13 +89,13 @@ For information about exporting messages from queues, see [Export messages from 
 To remove messages from queues, use the following syntax.
 
 ```
-Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+Remove-Message <-Identity MessageIdentity | -Filter "MessageFilter"> -WithNDR <$true | $false>
 ```
 
 This example removes messages in the queues that have a subject of "Win Big" without sending an NDR.
 
 ```
-Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+Remove-Message -Filter "Subject -eq 'Win Big'" -WithNDR $false
 ```
 
 This example removes the message with the message ID 3 from the Unreachable queue on server named Mailbox01 and sends an NDR.
@@ -115,7 +115,7 @@ To verify that you have successfully removed messages from queues, use either of
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify the messages no longer exist:
 
   ```
-  Get-Message -Filter {MessageFilter}
+  Get-Message -Filter "MessageFilter"
   ```
 
     Or
@@ -148,7 +148,7 @@ To verify that you have successfully removed messages from queues, use either of
 To suspend messages, use the following syntax:
 
 ```
-Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+Suspend-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example suspends the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
@@ -160,7 +160,7 @@ Suspend-Message -Identity Mailbox01\Unreachable\3
 This example suspends all messages in all queues on the local server that are from any sender in the domain contoso.com.
 
 ```
-Suspend-Message -Filter {FromAddress -like "*contoso.com"}
+Suspend-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example suspends all messages in the delivery queue for contoso.com on the server named Mailbox01.
@@ -186,7 +186,7 @@ To verify that you have successfully suspended messages in queues, use either of
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are suspended:
 
   ```
-  Get-Message -Filter {MessageFilter}
+  Get-Message -Filter "MessageFilter"
   ```
 
     Or
@@ -229,13 +229,13 @@ To verify that you have successfully suspended messages in queues, use either of
 To resume messages, use the following syntax:
 
 ```
-Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+Resume-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example resumes all messages being sent from any sender in the contoso.com domain.
 
 ```
-Resume-Message -Filter {FromAddress -like "*contoso.com"}
+Resume-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example resumes the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
@@ -253,7 +253,7 @@ To verify that you have successfully resumed messages in queues, use either of t
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are no longer suspended:
 
   ```
-  Get-Message -Filter {MessageFilter}
+  Get-Message -Filter "MessageFilter"
   ```
 
     Or

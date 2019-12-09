@@ -95,7 +95,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
   This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive".
 
   ```
-  $Mgmt = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')}
+  $Mgmt = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')"
   ```
 
   ```

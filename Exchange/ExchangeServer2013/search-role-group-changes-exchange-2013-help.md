@@ -129,9 +129,9 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 This procedure uses the following concepts:
 
-- [Arrays](https://technet.microsoft.com/library/599ed6d7-553a-41be-b4a3-aa75ab9dbb5d.aspx)
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [User-Defined Variables](https://technet.microsoft.com/library/8af62634-2e0b-4da0-ae94-a890f6f24d8a.aspx)
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. Decide the criteria you want to search for, run the **Search-AdminAuditLog** cmdlet, and store the results in a variable using the following command.
 

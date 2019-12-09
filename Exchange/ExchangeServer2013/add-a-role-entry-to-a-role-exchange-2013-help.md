@@ -35,7 +35,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 - A role entry that you want to add to a management role must exist in that role's immediate parent management role.
 
-- This topic makes use of pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/aa998260\(v=exchg.150\)).
+- This topic makes use of pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

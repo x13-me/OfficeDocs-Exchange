@@ -37,7 +37,7 @@ For procedures involving ABPs, see [Address book policy procedures in Exchange O
 
 - ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
 
-- Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+- Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 ## How ABPs Work
 

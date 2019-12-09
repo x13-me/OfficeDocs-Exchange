@@ -25,7 +25,7 @@ The following table contains links to topics that will help you learn about and 
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Exchange ActiveSync in Exchange Online](https://technet.microsoft.com/library/5fafaff3-eb37-4fdb-95f0-e56c45ea5884.aspx)|Learn about Exchange ActiveSync, the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
+|[Exchange ActiveSync in Exchange Online](exchange-activesync/exchange-activesync.md)|Learn about Exchange ActiveSync, the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
 |[Mobile device mailbox policies in Exchange Online](exchange-activesync/mobile-device-mailbox-policies.md)||
 |[POP3 and IMAP4](pop3-and-imap4/pop3-and-imap4.md)|Learn about how you can use the POP3 and IMAP4 protocols to provide users access to a number of the features in their Office 365 mailbox. These client protocols can be used on desktop email applications and on many mobile phones and devices.|
 ||[Outlook for iOS and Android in Exchange Online](outlook-for-ios-and-android/outlook-for-ios-and-android.md)|

@@ -174,4 +174,4 @@ Run the following command in the Exchange Online organization:
 Get-RMSTemplate
 ```
 
-Learn more at: [Understanding Information Rights Management in Outlook Web App](https://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx)
+Learn more at: [Information Rights Management in Outlook Web App](https://docs.microsoft.com/exchange/information-rights-management-in-outlook-web-app-exchange-2013-help)

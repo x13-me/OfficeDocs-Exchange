@@ -820,7 +820,7 @@ Exchange 2016 uses DAGs and mailbox database copies, along with other features s
 
 - **DAG network auto-configuration**: DAGs networks can be automatically configured by the system based on configuration settings. In addition to manual configuration options, DAGs can also distinguish between MAPI and Replication networks and configure DAG networks automatically.
 
-For more information about these features, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx) and [Changes to high availability and site resilience over previous versions](../high-availability/ha-changes.md).
+For more information about these features, see [High availability and site resilience](../high-availability/high-availability.md) and [Changes to high availability and site resilience over previous versions](../high-availability/ha-changes.md).
 
 #### Managed Store
 <a name="ManagedStore"> </a>
@@ -831,7 +831,7 @@ The Managed Store works with the Microsoft Exchange Replication service to manag
 
 The Managed Store uses the same search platform as SharePoint Server 2016 to provide more robust indexing and searching when compared to Microsoft Search engine that was used in previous versions of Exchange.
 
-For more information, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx).
+For more information, see [High availability and site resilience](../high-availability/high-availability.md).
 
 ### Exchange workload management
 <a name="WLM2010"> </a>

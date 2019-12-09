@@ -371,7 +371,7 @@ You can remove roles from role groups by retrieving the associated management ro
 
 For more information about regular and delegating role assignments, see [Understanding Management Role Assignments](https://technet.microsoft.com/library/1dc33dd6-52fb-4852-a5ce-027bc73e1d8f.aspx).
 
-This procedure uses pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx).
+This procedure uses pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 To remove a role from a role group, use the following syntax.
 
@@ -399,7 +399,7 @@ To verify that you have successfully removed roles from a role group, do the fol
 
 The management role assignments between a role group and a role contain management scopes, which determine what objects are made available to members of that role group. By changing the write scope on a role group, you can change what objects are made available to role group members to create, change, or remove. You can't change the read scope on a role group.
 
-Exchange Server includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](https://technet.microsoft.com/library/b97a5be3-15cc-4954-ba30-a824a95e21be.aspx).
+Exchange Server includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](https://docs.microsoft.com/exchange/create-a-regular-or-exclusive-scope-exchange-2013-help).
 
 For more information about management role scopes and assignments in Exchange Server, see the following topics:
 
@@ -436,7 +436,7 @@ To change the scope of all the role assignments between a role group and a set o
 
 This procedure uses the concepts of pipelining and the _WhatIf_ switch. For more information, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [WhatIf, Confirm, and ValidateOnly Switches](https://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx)
 
@@ -455,7 +455,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-Ma
 > [!NOTE]
 > You can use the _WhatIf_ switch to verify that only the role assignments you want to change are changed. Run the preceding command with the _WhatIf_ switch to verify the results, and then remove the _WhatIf_ switch to apply the changes.
 
-For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
+For more information about changing management role assignments, see [Change a Role Assignment]https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
 
@@ -467,7 +467,7 @@ The scopes on the role assignments are managed using the **Set-ManagementRoleAss
 
 This procedure uses the concepts of pipelining and the **Format-List** cmdlet. For more information, see the following topics:
 
-- [Pipelining](https://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
+- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 - [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
 
@@ -493,7 +493,7 @@ You use only the parameters you need to configure the scope you want to use. For
 Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
 ```
 
-For more information about changing management role assignments, see [Change a Role Assignment](https://technet.microsoft.com/library/0fa77efc-e393-461f-b3c0-232cc56cee85.aspx).
+For more information about changing management role assignments, see [Change a Role Assignment](https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
 For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-managementroleassignment).
 

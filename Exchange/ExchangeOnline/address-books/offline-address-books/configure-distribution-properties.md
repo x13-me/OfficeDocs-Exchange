@@ -55,4 +55,4 @@ For detailed syntax and parameter information, see [set-OabVirtualDirectory](htt
 
 ## For More Information
 
-[Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
+[Offline address books in Exchange Online](offline-address-books.md)
