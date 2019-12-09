@@ -83,7 +83,7 @@ In order to leverage S/MIME in Outlook for iOS and Android, the Exchange Online 
 > [!NOTE]
 > Outlook for Android will support automated certificate delivery in a future release. For more information, see the [Microsoft 365 Roadmap](https://aka.ms/m365roadmap).
 
-### S/MIME Prerequsites
+### S/MIME Prerequisites
 Ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). Specifically, this includes:
 
 1. Setting up the [virtual certificate collection](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime).
@@ -117,7 +117,7 @@ A user can export their own certificate and mail it to themselves using Outlook.
 
 With Endpoint Manager, organizations can import encryption certificate histories from any Certification Authority. Endpoint Manager will then automatically deliver those certificates to any device that the user enrolls. Generally, Simple Certificate Enrollment Protocol (SCEP) is used for signing certificates. With SCEP, the private key is generated and stored on the enrolled device and a unique certificate is delivered to each device that a user enrolls, which can be used for non-repudiation. Lastly, Endpoint Manager supports derived credentials for customers who need support for the NIST 800-157 standard. On iOS, the Company Portal is used to retrieve signing and encryption certificates from Intune.
 
-In order to deliver certificates to Outlook for iOS, the following prerequisitves must be completed:
+In order to deliver certificates to Outlook for iOS, the following prerequisites must be completed:
 
 - Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).
 - Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](https://docs.microsoft.com/en-us/intune/protect/certificates-imported-pfx-configure).
