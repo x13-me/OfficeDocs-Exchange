@@ -265,13 +265,13 @@ Get-MailUser | Set-MailUser -HiddenFromAddressListsEnabled $true
 This example sets the Company property for all mail users to Contoso.
 
 ```powershell
-Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Set-User -Company Contoso
+Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'mailuser'" | Set-User -Company Contoso
 ```
 
 This example sets the CustomAttribute1 property to a value of ContosoEmployee for all mail users that have a value of Contoso in the Company property.
 
 ```powershell
-Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')}| Set-MailUser -CustomAttribute1 ContosoEmployee
+Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')" | Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
 ### How do you know this worked?
@@ -289,7 +289,7 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
 
   ```powershell
-  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
+  Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'mailuser'" | Format-List Name,Company
   ```
 
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
@@ -330,5 +330,5 @@ To verify that you've successfully bulk edited mail users, do one of the followi
 - In the Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Shell:
 
   ```powershell
-  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
+  Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')" | Format-List Name,Office,Manager
   ```

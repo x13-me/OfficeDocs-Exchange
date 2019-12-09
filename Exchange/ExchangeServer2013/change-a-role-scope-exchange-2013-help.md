@@ -62,13 +62,13 @@ For detailed syntax and parameter information, see [Set-ManagementScope](https:/
 To change the recipient filter on a scope, use the following syntax.
 
 ```powershell
-Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+Set-ManagementScope <scope name> -RecipientRestrictionFilter "<new recipient filter>"
 ```
 
 This example changes the recipient filter to match all the recipient objects where the **Company** property is set to contoso.
 
 ```powershell
-Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter "Company -eq 'contoso'"
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
@@ -96,13 +96,13 @@ For detailed syntax and parameter information, see [Set-ManagementScope](https:/
 To change the server filter on a scope, use the following syntax.
 
 ```powershell
-Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+Set-ManagementScope <scope name> -ServerRestrictionFilter "<new server filter>"
 ```
 
 This example changes the server filter to match all the server objects where the **ServerSite** property is set to 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'.
 
 ```powershell
-Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+Set-ManagementScope "Company Scope" -ServerRestrictionFilter "ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'"
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
@@ -126,13 +126,13 @@ You can't change the list of servers on a scope. If you need to change the serve
 To change the database filter on a scope, use the following syntax.
 
 ```powershell
-Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter "<new database filter>"
 ```
 
 This example changes the database filter to match all the database objects where the **Name** property contains the string "Executive".
 
 ```powershell
-Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter "Name -Like '*Executive*'"
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).

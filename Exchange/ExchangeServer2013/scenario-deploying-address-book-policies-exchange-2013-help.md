@@ -283,7 +283,7 @@ In creating the ABP, you will create multiple address lists based on how you wan
 This example creates the address list AL\_TAIL\_Users\_DGs. The address list contains all users and distribution groups where CustomAttribute15 equals TAIL.
 
 ```powershell
-New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter "((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'TAIL')"
 ```
 
 For more information about creating address lists by using recipient filters, see [Create an address list by using recipient filters](https://docs.microsoft.com/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list).
@@ -291,19 +291,19 @@ For more information about creating address lists by using recipient filters, se
 In order to create an ABP, you have to provide a room address list. If your organization doesn't have resource mailboxes such as room or equipment mailboxes, we suggest that you create a blank room address list. The following example creates a blank room address list because there are no room mailboxes in the organization.
 
 ```powershell
-New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+New-AddressList -Name AL_BlankRoom -RecipientFilter "(Alias -ne `$null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))"
 ```
 
 However, in this scenario, Fabrikam and Contoso both have room mailboxes. This example creates room list for Fabrikam by using a recipient filter where CustomAttribute15 equals FAB.
 
 ```powershell
-New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+New-AddressList -Name AL_FAB_Room -RecipientFilter "(Alias -ne `$null) -and (CustomAttribute15 -eq 'FAB') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"
 ```
 
 The global address list used in an ABP must be a superset of the address lists. Do not create a GAL with fewer objects than exists in any or all of the address lists in the ABP. This example creates the global address list for Tailspin Toys that includes all of the recipients that exists in the address lists and room address list.
 
 ```powershell
-New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter "(CustomAttribute15 -eq 'TAIL')"
 ```
 
 For more information, see [Create a global address list](https://docs.microsoft.com/exchange/address-books/address-lists/create-global-address-list).

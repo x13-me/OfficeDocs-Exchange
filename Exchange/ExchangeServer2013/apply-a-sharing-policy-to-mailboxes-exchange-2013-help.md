@@ -67,7 +67,7 @@ Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
 This example specifies that all user mailboxes in the Marketing department use the sharing policy Contoso Marketing.
 
 ```powershell
-Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+Get-Mailbox -Filter "Department -eq 'Marketing'" | Set-Mailbox -SharingPolicy "Contoso Marketing"
 ```
 
 This example returns all mailboxes that have the sharing policy Contoso applied, and it sorts the users into a table that displays only their aliases and email addresses.
