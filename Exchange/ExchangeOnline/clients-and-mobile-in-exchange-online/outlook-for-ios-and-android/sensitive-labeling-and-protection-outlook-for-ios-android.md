@@ -155,6 +155,8 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
        - **Company Portal** – If selected, users will receive a push notification on their device, which will take them to the landing page in Company Portal where S/MIME certificates will be retrieved.
        - **Email** – Sends an email to the end user informing them that they need to launch Company Portal to retrieve their S/MIME certificates. If the user is on their enrolled iOS device when they click the link in the email, they will be redirected to the Company Portal to retrieve their certificates.
     
+    End-users will see an experience similar to the following for automated certificate delivery:
+    
 13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
