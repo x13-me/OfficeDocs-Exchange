@@ -138,6 +138,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 6. Click **Configuration settings** to add configuration settings. 
     - Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 7. Click **S/MIME** to display the **Outlook S/MIME settings**.
+    ![Screen shot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
 8. Set **Enable S/MIME** to **Yes**.
 9. Set **Deploy S/MIME certificates from Intune** to **Yes**.
 10. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
@@ -156,7 +157,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
        - **Email** – Sends an email to the end user informing them that they need to launch Company Portal to retrieve their S/MIME certificates. If the user is on their enrolled iOS device when they click the link in the email, they will be redirected to the Company Portal to retrieve their certificates.
     
     End-users will see an experience similar to the following for automated certificate delivery:
-    
+    ![Screen shot showing Outlook S/MIME settings.](../../media/all-in-one-certificate-delivery.png)
 13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
