@@ -91,7 +91,7 @@ Get-Queue -Server Mailbox01 -Exclude Empty
 This example displays detailed information for all queues on the local Exchange server that contain more than 100 messages.
 
 ```
-Get-Queue -Filter {MessageCount -gt 100} | Format-List
+Get-Queue -Filter "MessageCount -gt 100" | Format-List
 ```
 
 For more information, see [Get-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queue) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
@@ -117,13 +117,13 @@ Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2...> | -Dag <DagIdentit
 This example displays summary information about the queues on all Exchange 2013 or later Mailbox servers in the Active Directory site named FirstSite where the message count is greater than 100.
 
 ```
-Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+Get-QueueDigest -Site FirstSite -Filter "MessageCount -gt 100"
 ```
 
 This example displays summary information about the queues on all Mailbox servers in the database availability group (DAG) named DAG01 where the queue status has the value **Retry**.
 
 ```
-Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+Get-QueueDigest -Dag DAG01 -Filter "Status -eq 'Retry'"
 ```
 
 For more information, see [Get-QueueDigest](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queuedigest).
@@ -167,7 +167,7 @@ Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdenti
 This example retries all queues on the local server with the status of Retry.
 
 ```
-Retry-Queue -Filter {Status -eq "Retry"}
+Retry-Queue -Filter "Status -eq 'Retry'"
 ```
 
 This example retries the queue named contoso.com on the server named Mailbox01.
@@ -213,13 +213,13 @@ Resubmitting a queue sends all messages in the queue back to the Submission queu
 To resubmit queues, use the following syntax:
 
 ```
-Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+Retry-Queue <-Identity QueueIdentity | -Filter "Status -eq 'Retry'" -Server ServerIdentity> -Resubmit $true
 ```
 
 This example resubmits all messages located in any delivery queues with the status of Retry on the server named Mailbox01.
 
 ```
-Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+Retry-Queue -Filter "Status -eq 'Retry'" -Server Mailbox01 -Resubmit $true
 ```
 
 This example resubmits all messages located in the Unreachable queue on the server Mailbox01.
@@ -331,13 +331,13 @@ You can suspend a queue to stop mail flow, and then suspend one or more messages
 To suspend a queue, use the following syntax:
 
 ```
-Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+Suspend-Queue <-Identity QueueIdentity | -Filter "QueueFilter" [-Server ServerIdentity]>
 ```
 
 This example suspends all queues on the local server that have a message count equal to or greater than 1,000 and that have a status of Retry.
 
 ```
-Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+Suspend-Queue -Filter "MessageCount -ge 1000 -and Status -eq 'Retry'"
 ```
 
 This example suspends the queue named contoso.com on the server named Mailbox01.
@@ -394,13 +394,13 @@ By resuming a queue, you restart outgoing message delivery from a queue that has
 To resume queues, use the following syntax:
 
 ```
-Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+Resume-Queue <-Identity QueueIdentity | -Filter "QueueFilter" [-Server ServerIdentity]>
 ```
 
 This example resumes all queues on the local server that have a status of Suspended.
 
 ```
-Resume-Queue -Filter {Status -eq "Suspended"}
+Resume-Queue -Filter "Status -eq 'Suspended'"
 ```
 
 This example resumes the suspended delivery queue named contoso.com on the server named Mailbox01.

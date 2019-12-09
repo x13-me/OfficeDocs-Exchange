@@ -54,7 +54,7 @@ The following table explains the _Identity_ parameter syntax on the queue manage
 
 You can use the _Filter_ parameter on all of the queue management cmdlets to identify one or more queues based on the properties of the queues. The _Filter_ parameter creates an OPath filter with comparison operators to restrict the command to queues that meet the filter criteria. You can use the logical operator `-and` to specify multiple conditions for the match. Here's a generic example of the syntax:
 
- `Get-Queue -Filter {<Property1> -<ComparisonOperator> '<Value1>' -and <Property2> -<ComparisonOperator> '<Value2>'...}`
+ `Get-Queue -Filter "<Property1> -<ComparisonOperator> '<Value1>' -and <Property2> -<ComparisonOperator> '<Value2>'..."`
 
 For a complete list of queue properties you can use with the _Filter_ parameter, see [Queue properties](queues.md#queue-properties).
 
@@ -86,7 +86,7 @@ Note that you can duplicate the functionality of the _Include_ and _Exclude_ par
 
 - `Get-Queue -Exclude Empty`
 
-- `Get-Queue -Filter {MessageCount -gt 0}`
+- `Get-Queue -Filter "MessageCount -gt 0"`
 
 However, as you can see, the syntax of the _Include_ and _Exclude_ parameters is simpler and easier to remember.
 
@@ -143,7 +143,7 @@ The following table describes the syntax you can use with _Identity_ parameter o
 
 You can use the _Filter_ parameter with the **Get-Message**, **Remove-Message**, **Resume-Message**, and **Suspend-Message** cmdlets to identify one or more messages based on the properties of the messages. The _Filter_ parameter creates an OPath filter with comparison operators to restrict the command to messages that meet the filter criteria. You can use the logical operator `-and` to specify multiple conditions for the match. Here's a generic example of the syntax:
 
- `Get-Message -Filter {<Property1> -<ComparisonOperator> '<Value1>' -and <Property2> -<ComparisonOperator> '<Value2>'...}`
+ `Get-Message -Filter "<Property1> -<ComparisonOperator> '<Value1>' -and <Property2> -<ComparisonOperator> '<Value2>'..."`
 
 For a complete list of message properties you can use with the _Filter_ parameter, see [Message properties](queues.md#message-properties)).
 
@@ -161,26 +161,26 @@ When you create a queue or message filter expression by using the _Filter_ param
 
 |**Operator**|**Function**|**Code example**|
 |:-----|:-----|:-----|
-|`-eq`|Exact match of the specified value.|Show all queues that have a status of Retry: <br/> `Get-Queue -Filter {Status -eq "Retry"}` <br/> Show all messages that have a status of Retry: <br/> `Get-Message -Filter {Status -eq "Retry"}`|
-|`-ne`|Does not match the specified value.|Show all queues that don't have a status of Active: <br/> `Get-Queue -Filter {Status -ne "Active"}` <br/> Show all messages that don't have a status of Active: <br/> `Get-Message -Filter {Status -ne "Active"}`|
-|`-gt`|Greater than the specified integer or date/time value.|Show queues that currently contain more than 1,000 messages: <br/> `Get-Queue -Filter {MessageCount -gt 1000}` <br/> Show messages that currently have a retry count that's more than 3: <br/> `Get-Message -Filter {RetryCount -gt 3}`|
-|`-ge`|Greater than or equal to the specified integer or date/time value.|Show queues that currently contain 1,000 or more messages: <br/> `Get-Queue -Filter {MessageCount -ge 1000}` <br/> Show messages that currently have a retry count that's 3 or more: <br/> `Get-Message -Filter {RetryCount -ge 3}`|
-|`-lt`|Less than the specified integer or date/time value.|Show queues that currently contain less than 1,000 messages: <br/> `Get-Queue -Filter {MessageCount -lt 1000}` <br/> Show messages that have an SCL that's less than 6: <br/> `Get-Message -Filter {SCL -lt 6}`|
-|`-le`|Less than or equal to the specified integer or date/time value.|Show queues that currently contain 1,000 or fewer messages: <br/> `Get-Queue -Filter {MessageCount -le 1000}` <br/> Show messages that have an SCL that's 6 or less: <br/> `Get-Message -Filter {SCL -le 6}`|
-|`-like`|Contains the specified text. You need to include the wildcard character (\*) in the text string.|Show queues that have a destination to any SMTP domain that ends in Contoso.com: <br/> `Get-Queue -Filter {Identity -like "*contoso.com"}` <br/> Show messages that have a subject that contains the text "payday loan": <br/> `Get-Message -Filter {Subject -like "*payday loan*"}`|
+|`-eq`|Exact match of the specified value.|Show all queues that have a status of Retry: <br/> `Get-Queue -Filter "Status -eq 'Retry'"` <br/> Show all messages that have a status of Retry: <br/> `Get-Message -Filter "Status -eq 'Retry'"`|
+|`-ne`|Does not match the specified value.|Show all queues that don't have a status of Active: <br/> `Get-Queue -Filter "Status -ne 'Active'"` <br/> Show all messages that don't have a status of Active: <br/> `Get-Message -Filter "Status -ne 'Active'"`|
+|`-gt`|Greater than the specified integer or date/time value.|Show queues that currently contain more than 1,000 messages: <br/> `Get-Queue -Filter "MessageCount -gt 1000"` <br/> Show messages that currently have a retry count that's more than 3: <br/> `Get-Message -Filter "RetryCount -gt 3"`|
+|`-ge`|Greater than or equal to the specified integer or date/time value.|Show queues that currently contain 1,000 or more messages: <br/> `Get-Queue -Filter "MessageCount -ge 1000"` <br/> Show messages that currently have a retry count that's 3 or more: <br/> `Get-Message -Filter "RetryCount -ge 3"`|
+|`-lt`|Less than the specified integer or date/time value.|Show queues that currently contain less than 1,000 messages: <br/> `Get-Queue -Filter "MessageCount -lt 1000"` <br/> Show messages that have an SCL that's less than 6: <br/> `Get-Message -Filter "SCL -lt 6"`|
+|`-le`|Less than or equal to the specified integer or date/time value.|Show queues that currently contain 1,000 or fewer messages: <br/> `Get-Queue -Filter "MessageCount -le 1000"` <br/> Show messages that have an SCL that's 6 or less: <br/> `Get-Message -Filter "SCL -le 6"`|
+|`-like`|Contains the specified text. You need to include the wildcard character (\*) in the text string.|Show queues that have a destination to any SMTP domain that ends in Contoso.com: <br/> `Get-Queue -Filter "Identity -like '*contoso.com'"` <br/> Show messages that have a subject that contains the text "payday loan": <br/> `Get-Message -Filter "Subject -like '*payday loan*'"`|
 
 You can specify a filter that evaluates multiple expressions by using the logical operator `-and`. The queues or messages must match all of the filter conditions to be included in the results.
 
 This example displays a list of queues that have a destination to any SMTP domain name that ends in Contoso.com and that currently contain more than 500 messages.
 
 ```
-Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+Get-Queue -Filter "Identity -like '*contoso.com*' -and MessageCount -gt 500"
 ```
 
 This example displays a list of messages that are sent from any email address in the contoso.com domain that have an SCL value that's greater than 5.
 
 ```
-Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+Get-Message -Filter "FromAddress -like '*Contoso.com*' -and SCL -gt 5"
 ```
 
 ## Advanced paging parameters

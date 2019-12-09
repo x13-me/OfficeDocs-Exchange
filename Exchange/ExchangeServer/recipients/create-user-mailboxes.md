@@ -197,7 +197,7 @@ Enable-Mailbox -Identity kreiter@contoso.com -Database UsersMailboxDatabase
 This example finds all user accounts that aren't mail-enabled and that aren't system accounts (the **userPrincipalName** attribute isn't blank), and then creates mailboxes for those accounts.
 
 ```
-Get-User -RecipientTypeDetails User -Filter {UserPrincipalName -ne $null} -ResultSize unlimited | Enable-Mailbox
+Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$null" -ResultSize unlimited | Enable-Mailbox
 ```
 
 For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/enable-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
