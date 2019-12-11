@@ -327,34 +327,38 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
 
-2. On the Exchange on-premises server, find the MRS proxy endpoint server and make note of it. You will need this information to run the migration request. Save this information for step 3.2 below.
-
-3. In Exchange Online PowerShell, run the following commands to pass credential information and the MRS information from the previous step to cmdlet variables that will be used in the migration request.
-
-   a. Pass the credential of a user who has administrator permissions in the Exchange 2016 or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
+2. In Exchange Online PowerShell, pass the credential of a user who has administrator permissions in the Exchange 2016 or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
 
       ```
       $Source_Credential = Get-Credential <source_domain>\<PublicFolder_Administrator_Account>
       ```
 
-   b. Take the MRS Proxy Server information from the Exchange Server environment that you found in step 2 above and pass it into the variable:
+3. On your on-premises Exchange server, open Exchange Management Shell and find the GUID of the primary hierarchy     mailbox with the following command:
 
-      ```
-      $Source_RemoteServer = <paste the value here>
-      ```
+    ```
+    (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
+    ```
+  
+    Note the output of this command. You will need it in the next step.
+
+    Example: 
+    ```
+    [PS] C:\>(Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
+
+    91edc6dd-478a-497c-8731-b0b793f5a986 
+    ```
 
 4. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
    ```
-   $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
-   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -NotificationEmails <email addresses for migration notifications>
+   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <MailboxHierarchy-GUID> -AutoStart -NotificationEmails <email addresses for migration notifications>
    ```
 
    > [!NOTE]
    > Separate multiple email addresses with commas.
 
-   Where `folder_mapping.csv` is the map file that was generated in *Step 3: Create the .csv files*. Be sure to provide the full file path. If the map file was moved for any reason, be sure to use the new location.
+   Where `MailboxHierarchy-GUID` is the output you noted in *Step 3: Create the .csv files* and `folder_mapping.csv` is the map file that was generated in *Step 3: Create the .csv files*. Be sure to provide the full file path. If the map file was moved for any reason, be sure to use the new location.
 
 5. Finally, start the migration using the following command in Exchange Online PowerShell:
 
@@ -426,8 +430,7 @@ The expected result if public folders are locked is:
 
 You need to check the following items before you can complete your public folder migration: 
 
-1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange     environment. To do this, use the `Get-MoveRequest` and `Get-PublicFolderMoveRequest` cmdlets to list any existing public folder   
-    moves. If there are any moves in progress, or in the **Completed** state, remove them.
+1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange     environment. To do this, use the `Get-MoveRequest` and `Get-PublicFolderMoveRequest` cmdlets to list any existing public folder moves. If there are any moves in progress, or in the **Completed** state, remove them.
 
 2. At this point, we recommend re-running the following script to ensure that any new mail-enabled public folders are synchronized with Exchange Online:
 
