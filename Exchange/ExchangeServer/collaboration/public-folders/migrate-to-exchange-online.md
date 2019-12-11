@@ -358,7 +358,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    > [!NOTE]
    > Separate multiple email addresses with commas.
 
-   Where `MailboxHierarchy-GUID` is the output you noted in *Step 3: Create the .csv files* and `folder_mapping.csv` is the map file that was generated in *Step 3: Create the .csv files*. Be sure to provide the full file path. If the map file was moved for any reason, be sure to use the new location.
+   Where `folder_mapping.csv` is the map file that was generated in *Step 3: Create the .csv files* and `MailboxHierarchy-GUID` is the output you noted in *Step 3: Create the .csv files*. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
 
 5. Finally, start the migration using the following command in Exchange Online PowerShell:
 
