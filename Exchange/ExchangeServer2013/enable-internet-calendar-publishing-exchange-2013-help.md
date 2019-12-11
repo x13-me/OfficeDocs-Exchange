@@ -2,13 +2,13 @@
 title: 'Enable Internet calendar publishing: Exchange 2013 Help'
 TOCTitle: Enable Internet calendar publishing
 ms:assetid: b4c71696-52bb-492c-8259-0e419acd0bbc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ853046(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ853046(v=EXCHG.150)
 ms:contentKeyID: 50390855
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,7 +61,7 @@ This example configures a Web proxy URL on Mailbox server MAIL01.
 Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\)).
 
 ### How do you know this step worked?
 
@@ -84,7 +84,7 @@ Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<
 
 Where the identity `CAS01\owa (Default Web Site)` is both the server name and the Outlook Web App virtual directory.
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
 
 ### How do you know this step worked?
 
@@ -149,7 +149,7 @@ This example adds the sharing policy Internet to an organizational unit (OU).
 Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
 ```
 
-For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\)) and [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/library/dd298186\(v=exchg.150\)) and [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ### How do you know this step worked?
 
@@ -193,7 +193,7 @@ This example updates the Default Sharing Policy and configures the policy to sha
 Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ### How do you know this step worked?
 

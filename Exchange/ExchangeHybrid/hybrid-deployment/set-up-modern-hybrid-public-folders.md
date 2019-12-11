@@ -1,7 +1,7 @@
 ---
 title: "Configure Exchange 2013 public folders for a hybrid deployment"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -40,16 +40,16 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later.
 
-5. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/en-us/download/details.aspx?id=35702).
+5. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
 6. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
 
     > [!NOTE]
-    > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](https://technet.microsoft.com/library/bc9b8226-bd8b-4edc-882b-4f19cfe118eb.aspx).
+    > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac).
 
 ## Step 1: Download the scripts
 
-1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/en-us/download/details.aspx?id=46381):
+1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
    - `Sync-MailPublicFolders.ps1`
 
@@ -62,7 +62,7 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises and Office 365. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
 > [!NOTE]
-> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the EExchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command.
+> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be visible in the Exchange admin center. Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder) cmdlet. To recreate SendAs permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission) cmdlet.
 
 On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
@@ -86,7 +86,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 ```
 
 > [!NOTE]
-> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/en-us/library/jj151771.aspx).
+> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).
 
 ## How do I know this worked?
 

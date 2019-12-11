@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable, disable, and re-enable archive mailboxes in Exchange Server, and how to verify the archive mailbox settings for a user.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms.date: 7/6/2018
 ms.reviewer:
@@ -56,7 +56,7 @@ Enable-Mailbox "Tony Smith" -Archive
 This example retrieves mailboxes in database DB01 that don't have an on-premises or cloud-based archive enabled and don't have a name starting with DiscoverySearchMailbox. It pipes the results to the **Enable-Mailbox** cmdlet to enable the archive for all mailboxes on mailbox database DB01.
 
 ```
-Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+Get-Mailbox -Database DB01 -Filter "ArchiveGuid -Eq `$null -AND ArchiveDomain -eq `$null -AND Name -NotLike 'DiscoverySearchMailbox*'" | Enable-Mailbox -Archive
 ```
 
 ### How do you know this worked?
@@ -71,7 +71,7 @@ To verify that you've successfully enabled an on-premises archive for an existin
   Get-Mailbox <MailboxIdentity> | Format-List Name,*Archive*
   ```
 
-- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in the topic, [Test-ArchiveConnectivity](https://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
+- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in the topic, [Test-ArchiveConnectivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/test-archiveconnectivity).
 
 ## Enable an archive mailbox when you create a new mailbox
 
@@ -127,7 +127,7 @@ To verify that you've successfully created a user mailbox with an on-premises ar
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
   ```
 
-- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in [Test-ArchiveConnectivity](https://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx).
+- In the Exchange Management Shell, use the **Test-ArchiveConnectivity** cmdlet to test connectivity to the archive. For an example of how to test archive connectivity, see the Examples section in [Test-ArchiveConnectivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/test-archiveconnectivity).
 
 ## Disable an archive mailbox
 

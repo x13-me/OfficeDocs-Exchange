@@ -2,13 +2,13 @@
 title: 'Client Access server role is already installed: Exchange 2013 Help'
 TOCTitle: Client Access server role is already installed
 ms:assetid: 0103bf33-d553-445e-ba94-8c12e6cf507a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.caferolealreadyexists(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.caferolealreadyexists(v=EXCHG.150)
 ms:contentKeyID: 46628785
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

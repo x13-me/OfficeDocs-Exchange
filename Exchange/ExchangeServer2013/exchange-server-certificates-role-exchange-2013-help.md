@@ -2,13 +2,13 @@
 title: 'Exchange Server Certificates role: Exchange 2013 Help'
 TOCTitle: Exchange Server Certificates role
 ms:assetid: fffec840-6c7d-4958-905e-edc4bc060d52
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876963(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876963(v=EXCHG.150)
 ms:contentKeyID: 49289474
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

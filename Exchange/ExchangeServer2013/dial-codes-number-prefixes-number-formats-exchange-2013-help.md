@@ -1,8 +1,8 @@
 ---
 title: 'Dial codes, number prefixes, and number formats: Exchange 2013 Help'
 TOCTitle: Dial codes, number prefixes, and number formats
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 6/24/2018
 ms.reviewer: 

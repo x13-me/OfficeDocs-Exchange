@@ -2,13 +2,13 @@
 title: 'Configure the Managed Folder Assistant: Exchange 2013 Help'
 TOCTitle: Configure the Managed Folder Assistant
 ms:assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123958(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123958(v=EXCHG.150)
 ms:contentKeyID: 49318583
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 The *Managed Folder Assistant* is a Microsoft Exchange Mailbox Assistant that applies message retention settings configured in retention policies.
 
-For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365).
+For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -43,11 +43,11 @@ This example configures the Managed Folder Assistant to process all mailboxes wi
 Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxServer](https://technet.microsoft.com/en-us/library/aa998651\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxServer](https://technet.microsoft.com/library/aa998651\(v=exchg.150\)).
 
 ## How do I know this worked?
 
-To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\)) cmdlet to check the *ManagedFolderWorkCycle* parameter.
+To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\)) cmdlet to check the *ManagedFolderWorkCycle* parameter.
 
 This command retrieves all Mailbox servers in the organization and outputs the Managed Folder Assistant's workcycle properties from each server in a table format. The *Auto* switch is used to automatically fit column width.
 
@@ -63,4 +63,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://technet.microsoft.com/en-us/library/aa998864\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://technet.microsoft.com/library/aa998864\(v=exchg.150\)).

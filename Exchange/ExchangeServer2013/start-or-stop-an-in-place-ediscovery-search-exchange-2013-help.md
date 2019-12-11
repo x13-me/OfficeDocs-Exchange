@@ -1,8 +1,8 @@
 ---
 title: 'Start or stop an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Start or stop an In-Place eDiscovery search
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -40,6 +40,6 @@ You can stop or restart an In-Place eDiscovery search at any time. For example, 
 
 ## Use the Shell to start or stop an In-Place eDiscovery search
 
-For an example of how to start an In-Place eDiscovery search, see "Example 1" in [Start-MailboxSearch](https://technet.microsoft.com/library/f0c4e047-7eca-4310-bfad-1ecfe1420ceb.aspx).
+For an example of how to start an In-Place eDiscovery search, see "Example 1" in [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch).
 
-For an example of how to stop an In-Place eDiscovery search, see "Example 1" in [Stop-MailboxSearch](https://technet.microsoft.com/library/b718688e-261e-45b5-947e-4d34abcb568c.aspx).
+For an example of how to stop an In-Place eDiscovery search, see "Example 1" in [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch).

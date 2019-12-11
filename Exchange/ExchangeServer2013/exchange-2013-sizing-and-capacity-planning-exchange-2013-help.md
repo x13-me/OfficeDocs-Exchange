@@ -2,13 +2,13 @@
 title: 'Exchange 2013 sizing and capacity planning: Exchange 2013 Help'
 TOCTitle: Exchange 2013 sizing and capacity planning
 ms:assetid: d9852860-1a4c-4162-83f1-7131432be7d6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn178505(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn178505(v=EXCHG.150)
 ms:contentKeyID: 54468071
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

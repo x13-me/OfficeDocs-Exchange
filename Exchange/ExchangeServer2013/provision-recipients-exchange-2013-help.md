@@ -1,8 +1,8 @@
 ---
 title: 'Provision recipients for offline address book downloads: Exchange 2013 Help'
 TOCTitle: Provision recipients for offline address book downloads
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -47,7 +47,7 @@ This example sets up the web-based distribution of My OAB for the default mailbo
 Set-MailboxDatabase -Identity "Mailbox Database" -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase).
 
 ## Use the Shell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
 
@@ -68,7 +68,7 @@ This example specifies that the user Kim will download the OAB My OAB.
 Set-Mailbox -Identity Kim -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## Use the Shell to specify the OAB that multiple recipients will download
 
@@ -77,7 +77,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 This example specifies that all user mailboxes in the United States for Contoso will download the OAB Contoso United States.
 
 ```powershell
-Get-User -ResultSize Unlimited -Filter { Company -eq "Contoso" -and RecipientType -eq "UserMailbox" } | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
+Get-User -ResultSize Unlimited -Filter "Company -eq 'Contoso' -and RecipientType -eq 'UserMailbox'" | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
 ```
 
-For detailed syntax and parameter information, see [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) and [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).

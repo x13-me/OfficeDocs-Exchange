@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and internet email connectivity.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 251505e6-0907-44cd-859f-bd9402e6a397
 ms.date: 11/17/2014
 ms.reviewer: 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.date:
 ms.reviewer:
@@ -128,7 +128,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
 
 ### How do you know this worked?
 
@@ -197,10 +197,10 @@ Enable-Mailbox -Identity kreiter@contoso.com -Database UsersMailboxDatabase
 This example finds all user accounts that aren't mail-enabled and that aren't system accounts (the **userPrincipalName** attribute isn't blank), and then creates mailboxes for those accounts.
 
 ```
-Get-User -RecipientTypeDetails User -Filter {UserPrincipalName -ne $null} -ResultSize unlimited | Enable-Mailbox
+Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$null" -ResultSize unlimited | Enable-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/58de5b3c-05c3-4a1f-84c6-f082d990f22b.aspx) and [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
+For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/enable-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
 
 ### How do you know this worked?
 

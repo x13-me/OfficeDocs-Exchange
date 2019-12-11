@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In the Outlook client, users in your organization can add public folders to their Favorites folders. Then, depending on your organization's policies, they can use Outlook on the web to add those same public folders to their Favorites and perform certain functions in Outlook on the web that they use in the Outlook client.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 ms.date: 6/24/2018
 ms.reviewer: 

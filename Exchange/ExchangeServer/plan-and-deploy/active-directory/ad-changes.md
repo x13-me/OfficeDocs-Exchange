@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms.date: 9/20/2018
 ms.reviewer: 
@@ -196,6 +196,8 @@ Exchange makes the follwing changes to the Active Directory domains:
 - The Microsoft Exchange System Objects container is created in the root domain partition in Active Directory if it doesn't already exist.
 
 - Permissions are set on the Microsoft Exchange System Objects container for the Exchange Servers, Organization Management, and Authenticated Users security groups.
+
+- Modifying the **Default Domain Controllers GPO** to grant "Manage Auditing and Security Log policy" rights to **Exchange Enterprise Servers**.
 
 - The Exchange Install Domain Servers domain global group is created in the current domain and placed in the Microsoft Exchange System Objects container.
 

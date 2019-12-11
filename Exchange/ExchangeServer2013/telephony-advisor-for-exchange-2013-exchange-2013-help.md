@@ -1,8 +1,8 @@
 ---
 title: 'Telephony advisor for Exchange: Exchange 2013 Help'
 TOCTitle: Telephony advisor for Exchange
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 6/24/2018
 ms.reviewer:
@@ -222,7 +222,7 @@ IP PBXs using SIP media gateways are also supported by Unified Messaging. The fo
 
 For on-premises and hybrid deployments, Exchange Unified Messaging can be deployed together with Microsoft Office Communications Server 2007 R2, Microsoft Lync Server 2010 or Lync Server 2013 to provide voice messaging, Instant Messaging (IM), enhanced user presence, audio-video conferencing, and an integrated email and messaging experience for users in your organization. For more information, see:
 
-- [Integrate Exchange 2013 UM with Lync Server](https://technet.microsoft.com/library/96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1.aspx)
+- [Deploying Exchange 2013 UM and Lync Server overview](deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md)
 
 - [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
 

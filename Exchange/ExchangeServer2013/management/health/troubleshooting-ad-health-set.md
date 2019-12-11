@@ -2,13 +2,13 @@
 title: Troubleshooting AD Health Set
 TOCTitle: Troubleshooting AD Health Set
 ms:assetid: 274c1b08-e14c-496b-b2f5-ace84af7bcff
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ad(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ad(v=EXCHG.150)
 ms:contentKeyID: 49720744
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

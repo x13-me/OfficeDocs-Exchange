@@ -2,13 +2,13 @@
 title: 'Configure Content Filtering to Use Safe Domain Data: Exchange 2013 Help'
 TOCTitle: Configure Content Filtering to Use Safe Domain Data
 ms:assetid: 1ee2b663-b4f3-4fef-8954-986f2d820924
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn467930(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn467930(v=EXCHG.150)
 ms:contentKeyID: 58899940
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

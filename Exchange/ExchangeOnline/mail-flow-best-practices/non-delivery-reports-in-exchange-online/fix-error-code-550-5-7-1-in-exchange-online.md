@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 550 5.7.1 in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 
@@ -33,7 +33,7 @@ Typically, this error indicates a security setting in your organization or the r
 
 - You don't have permission to send to the recipient.
 
-- The recipient is a group, and ou don't have permission to send to the group or one of its subgroups.
+- The recipient is a group, and you don't have permission to send to the group or one of its subgroups.
 
 - You don't have permission to send email through an email server that's between you and the recipient.
 
@@ -83,9 +83,9 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Managing distribution groups**
 
-  - [Configure a moderated recipient in Exchange Online](https://technet.microsoft.com/library/jj983442.aspx)
+  - [Configure a moderated recipient in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/configure-a-moderated-recipient)
 
-  - [Manage Distribution Groups](https://technet.microsoft.com/library/bb124513.aspx)
+  - [Create and manage distribution groups in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 
 ## I'm an email admin. How can I fix this?
 

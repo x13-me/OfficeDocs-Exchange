@@ -2,13 +2,13 @@
 title: 'Local computer is a domain controller of a child domain'
 TOCTitle: The local computer is a domain controller of a child domain_LocalComputerIsDCInChildDomain
 ms:assetid: 7db1dcc0-d953-41b8-b081-2a47a70950c4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.localcomputerisdcinchilddomain(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.localcomputerisdcinchilddomain(v=EXCHG.150)
 ms:contentKeyID: 46628987
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

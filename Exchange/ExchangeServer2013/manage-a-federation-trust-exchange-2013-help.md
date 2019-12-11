@@ -2,13 +2,13 @@
 title: 'Manage a federation trust: Exchange 2013 Help'
 TOCTitle: Manage a federation trust
 ms:assetid: 0439839f-2052-4bc9-9d30-aa6e7d51b733
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673036(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673036(v=EXCHG.150)
 ms:contentKeyID: 49289152
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -81,7 +81,7 @@ For additional management tasks related to Federation, see [Federation procedure
     Add-FederatedDomain -DomainName marketing.contoso.com
     ```
 
-For detailed syntax and parameter information, see [Remove-FederatedDomain](https://technet.microsoft.com/en-us/library/dd298128\(v=exchg.150\)) and [Add-FederatedDomain](https://technet.microsoft.com/en-us/library/dd351208\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-FederatedDomain](https://technet.microsoft.com/library/dd298128\(v=exchg.150\)) and [Add-FederatedDomain](https://technet.microsoft.com/library/dd351208\(v=exchg.150\)).
 
 Run the following Shell commands to manage other aspects of a federation trust:
 
@@ -126,7 +126,7 @@ Run the following Shell commands to manage other aspects of a federation trust:
     ```
 
     > [!WARNING]
-    > Before configuring the federation trust to use the next certificate as the current federation certificate, make sure that the certificate is deployed on all Exchange servers in your organization. Use the <A href="https://technet.microsoft.com/en-us/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</A> cmdlet to check the deployment status of the certificate.
+    > Before configuring the federation trust to use the next certificate as the current federation certificate, make sure that the certificate is deployed on all Exchange servers in your organization. Use the <A href="https://technet.microsoft.com/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</A> cmdlet to check the deployment status of the certificate.
 
 6. **Refresh federation metadata and certificate from the Azure AD authentication system**
 
@@ -138,13 +138,13 @@ Run the following Shell commands to manage other aspects of a federation trust:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd298149\(v=exchg.150\))
+- [Get-FederatedOrganizationIdentifier](https://technet.microsoft.com/library/dd298149\(v=exchg.150\))
 
-- [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\))
+- [Get-FederationTrust](https://technet.microsoft.com/library/dd351262\(v=exchg.150\))
 
-- [Test-FederationTrustCertificate](https://technet.microsoft.com/en-us/library/dd335228\(v=exchg.150\))
+- [Test-FederationTrustCertificate](https://technet.microsoft.com/library/dd335228\(v=exchg.150\))
 
-- [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\))
+- [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\))
 
 ## How do you know this worked?
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to view and modify Outlook on the web mailbox policies (formerly known as Outlook Web App mailbox policies) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.date: 
 ms.reviewer: 
@@ -70,7 +70,7 @@ This example enables calendar access in the default mailbox policy.
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
+For detailed syntax and parameter information, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
 
 ## Use Exchange Online PowerShell to view Outlook on the web mailbox policies
 
@@ -92,7 +92,7 @@ This example retrieves detailed information for the policy named Executives.
 Get-OwaMailboxPolicy -Identity Executives
 ```
 
-For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
+For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy).
 
 ## How do you know this worked?
 

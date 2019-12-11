@@ -2,13 +2,13 @@
 title: 'Export lists from Queue Viewer: Exchange 2013 Help'
 TOCTitle: Export lists from Queue Viewer
 ms:assetid: dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691328(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb691328(v=EXCHG.150)
 ms:contentKeyID: 49286853
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

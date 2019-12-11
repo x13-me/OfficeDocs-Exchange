@@ -2,13 +2,13 @@
 title: 'Unsearchable items in Exchange eDiscovery: Exchange 2013 Help'
 TOCTitle: Unsearchable items in Exchange eDiscovery
 ms:assetid: 32550081-9af9-474b-ae7b-28f1e68cad41
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn602498(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn602498(v=EXCHG.150)
 ms:contentKeyID: 61071880
 ms.date: 12/10/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -32,9 +32,9 @@ For a successful eDiscovery search, your organization may be required to review 
 
 ## File types not supported for search
 
-Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, Exchange Search doesn't perform full-text indexing on these types of files. These types of files are considered as unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are considered unsearchable items in eDiscovery searches. These types of files, which are typically attached to an email message, are included in the result set when you include unsearchable items when copying or exporting search results. For a list of supported and disabled file formats, see [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md). In Exchange Server 2013, administrators can disable indexing for a supported file format by using the [Set-SearchDocumentFormat](https://technet.microsoft.com/en-us/library/jj873756\(v=exchg.150\)) cmdlet. This cmdlet isn't available in Exchange Online.
+Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, Exchange Search doesn't perform full-text indexing on these types of files. These types of files are considered as unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are considered unsearchable items in eDiscovery searches. These types of files, which are typically attached to an email message, are included in the result set when you include unsearchable items when copying or exporting search results. For a list of supported and disabled file formats, see [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md). In Exchange Server 2013, administrators can disable indexing for a supported file format by using the [Set-SearchDocumentFormat](https://technet.microsoft.com/library/jj873756\(v=exchg.150\)) cmdlet. This cmdlet isn't available in Exchange Online.
 
-To identify the unsearchable items in a specific mailbox, you can run the [Get-FailedContentIndexDocuments](https://technet.microsoft.com/en-us/library/dd351154\(v=exchg.150\)) cmdlet to get a list of items that would be copied or exported when you choose to include unsearchable items with the search results.
+To identify the unsearchable items in a specific mailbox, you can run the [Get-FailedContentIndexDocuments](https://technet.microsoft.com/library/dd351154\(v=exchg.150\)) cmdlet to get a list of items that would be copied or exported when you choose to include unsearchable items with the search results.
 
 ## Messages with unsupported file types returned in search results
 
@@ -62,9 +62,9 @@ Keep the following in mind when copying or exporting unsearchable items:
 
 For more information about including unsearchable items in search results, see:
 
-  - [Create an In-Place eDiscovery search](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
+  - [Create an In-Place eDiscovery search](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [Export eDiscovery search results to a PST file](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
+  - [Export eDiscovery search results to a PST file](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [SharePoint: Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

@@ -2,13 +2,13 @@
 title: "What's new in Exchange 2013: Exchange 2013 Help"
 TOCTitle: What's new in Exchange 2013
 ms:assetid: 97501135-2149-4590-8373-98e638ac8eb1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150540(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150540(v=EXCHG.150)
 ms:contentKeyID: 47560059
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -171,7 +171,7 @@ The Microsoft Rights Management connector (RMS connector) is an optional applica
 
 To learn more about these features see:
 
-[Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432)
 
@@ -232,9 +232,9 @@ Information Rights Management (IRM) is compatible with Cryptographic Mode 2, an 
 
 Exchange 2013 includes the following improvements to auditing:
 
-- **Auditing reports**: The EAC includes auditing functionality so that you can run reports or export entries from the mailbox audit log and the administrator audit log. The mailbox audit log records whenever a mailbox is accessed by someone other than the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they have done. The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of problems related to security or compliance. For more information, see [Exchange auditing reports](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
+- **Auditing reports**: The EAC includes auditing functionality so that you can run reports or export entries from the mailbox audit log and the administrator audit log. The mailbox audit log records whenever a mailbox is accessed by someone other than the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they have done. The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of problems related to security or compliance. For more information, see [Exchange auditing reports](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
-- **Viewing the administrator audit log**: Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can view administrator audit log entries in the EAC. To do this, go to **Compliance Management** \> **Auditing** and click **View the administrator audit log**. Up to 1000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see [View the administrator audit log](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
+- **Viewing the administrator audit log**: Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can view administrator audit log entries in the EAC. To do this, go to **Compliance Management** \> **Auditing** and click **View the administrator audit log**. Up to 1000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see [View the administrator audit log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 
 ## Anti-malware protection
 
@@ -250,7 +250,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Routing**: Mail routing in Exchange 2013 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).
 
-- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://technet.microsoft.com/en-us/library/aa998294\(v=exchg.150\)) and [Set-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125140\(v=exchg.150\)).
+- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://technet.microsoft.com/library/aa998294\(v=exchg.150\)) and [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
 
     You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
 
@@ -262,7 +262,7 @@ This section describes the enhancements for managing recipients in Exchange 2013
 
 - **Group naming policy**: Administrators can now use the EAC to create a *group naming policy*, which lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This capability helps you minimize the use of inappropriate words in group names.
 
-    For more information, see [Create a distribution group naming policy](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+    For more information, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 - **Message tracking**: Administrators can also use the EAC to track delivery information for email messages sent to or received by any user in your organization. You just select a mailbox, and then search for messages sent to or received by a different user. You can narrow the search by searching for specific words in the subject line. The resulting delivery report tracks a message through the delivery process and specifies if the message was successfully delivered, pending delivery, or if it wasn't delivered.
 

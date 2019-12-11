@@ -2,13 +2,13 @@
 title: 'Release notes for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Release notes for Exchange 2013
 ms:assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150489(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150489(v=EXCHG.150)
 ms:contentKeyID: 47559950
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -106,7 +106,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
     Starting with Exchange 2013 CU6, if you want external senders to send mail to a mail-enabled public folders, the **Anonymous** user needs to be granted at least the **Create Items** permission. If you've set up mail-enabled public folders and haven't done this, external senders will receive a delivery failure notification and the messages won't be delivered to the mail-enabled public folder.
 
-    You can use the Shell or Outlook to set the permissions on the Anonymous user. To read more about how to set permissions on the Anonymous user, see [Mail-enable or mail-disable a public folder](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder).
+    You can use the Shell or Outlook to set the permissions on the Anonymous user. To read more about how to set permissions on the Anonymous user, see [Mail-enable or mail-disable a public folder](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder).
 
   - The maximum number of public folders that can be migrated to Exchange 2013 from legacy Exchange servers is 500,000. For more information about public folder migration, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md).
 

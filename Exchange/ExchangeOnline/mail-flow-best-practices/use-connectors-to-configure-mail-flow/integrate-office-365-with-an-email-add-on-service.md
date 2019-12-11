@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to integrate Office 365 with a third-party service that affects mail flow.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 7c5b7408-bfa2-4695-a6b7-21ddc8084d52
 ms.date: 
 ms.reviewer: 
@@ -151,7 +151,7 @@ This example creates an outbound connector with these settings:
 New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OutboundConnector](https://technet.microsoft.com/library/ca73d195-542f-4acf-b2ff-84275e26a79a.aspx).
+For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-outboundconnector).
 
 ### How do you know this step worked?
 
@@ -219,7 +219,7 @@ This example creates the mail flow rule with these settings:
 New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
 
 ### How do you know this step worked?
 
@@ -247,7 +247,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
    ![The TXT proof of domain ownership record for the custom certificate domain.](../../media/fd0ab875-925d-46ea-96fd-00924e6f298f.png)
 
-For more information, see [Add your domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)
+For more information, see [Add your domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)
 
 ## Step 4: Create an inbound connector to receive messages from the email add-on service
 
@@ -317,7 +317,7 @@ This example creates an inbound connector with these settings:
 New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-InboundConnector](https://technet.microsoft.com/library/c8d0cba8-a8cb-41dc-b3fe-11d5882e425b.aspx).
+For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-inboundconnector).
 
 ### How do you know this step worked?
 

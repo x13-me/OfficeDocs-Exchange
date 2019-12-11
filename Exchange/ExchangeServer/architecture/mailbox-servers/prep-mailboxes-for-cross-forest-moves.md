@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about preparing mailboxes for cross-forest moves in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: fdbed4fc-a77e-40d5-a211-863b05d74784
 ms.date: 7/9/2018
 ms.reviewer: 
@@ -29,7 +29,7 @@ To prepare for the mailbox move, you need to create mail users (also known as ma
 
 - If you deployed Identity Lifecycle Manager (ILM) for cross-forest global address list (GAL) synchronization, we recommend that you use Microsoft Identity Manager 2016 Service Pack 1. We've created sample code that you can use to learn how to customize ILM to synchronize the source mailbox user and target mail user.
 
-    For more information, including how to download the sample code, see [Prepare mailboxes for cross-forest moves using sample code](https://technet.microsoft.com/en-us/library/ee861124(v=exchg.150).aspx).
+    For more information, including how to download the sample code, see [Prepare mailboxes for cross-forest moves using sample code](https://technet.microsoft.com/library/ee861124(v=exchg.150).aspx).
 
 - If you created the target mail user using an Active Directory tool other than ILM or Microsoft Identity Integration Server (MIIS), use the **Update-Recipient** cmdlet with the _Identity_ parameter to generate the **LegacyExchangeDN** attribute for the target mail user. We've created a sample PowerShell script that reads from and writes to Active Directory and calls the **Update-Recipient** cmdlet.
 

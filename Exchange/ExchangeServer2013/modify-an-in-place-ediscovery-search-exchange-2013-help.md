@@ -1,8 +1,8 @@
 ---
 title: 'Modify an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Modify an In-Place eDiscovery search
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -75,4 +75,4 @@ To verify that you have successfully modified an In-Place eDiscovery search, do 
 
 - Use the EAC to check properties of the search.
 
-- Use the **Get-MailboxSearch** cmdlet from the Shell to check the properties of the search. For examples of how to check the properties of a mailbox search, see the "Examples" section in [Get-MailboxSearch](https://technet.microsoft.com/library/a2f3ab70-6ec6-4c06-b862-f32d498c3ef8.aspx).
+- Use the **Get-MailboxSearch** cmdlet from the Shell to check the properties of the search. For examples of how to check the properties of a mailbox search, see the "Examples" section in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch).

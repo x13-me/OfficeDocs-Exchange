@@ -2,13 +2,13 @@
 title: 'Configure pipeline tracing: Exchange 2013 Help'
 TOCTitle: Configure pipeline tracing
 ms:assetid: 10293c83-2157-474e-840d-942e064a4672
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ916678(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ916678(v=EXCHG.150)
 ms:contentKeyID: 50934211
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

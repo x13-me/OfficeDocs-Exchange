@@ -2,13 +2,13 @@
 title: Troubleshooting Autodiscover.Proxy Health Set
 TOCTitle: Troubleshooting Autodiscover.Proxy Health Set
 ms:assetid: b6a817cf-0b85-4620-adb7-cc3616c11268
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.autodiscover.proxy(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.autodiscover.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720876
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,7 +51,7 @@ The Autodiscover service is monitored by using the following probes and monitors
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -141,6 +141,6 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Autodiscover service](https://technet.microsoft.com/en-us/library/bb124251\(v=exchg.150\))
+[Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\))

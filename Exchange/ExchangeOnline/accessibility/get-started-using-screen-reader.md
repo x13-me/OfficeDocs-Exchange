@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 0c8f04f0-e184-4ca7-b63b-0e7218086779
 ms.date: 
 ms.reviewer: 
@@ -66,7 +66,7 @@ Explore specific tasks that use the screen reader to work in the EAC.
 
 - [Accessibility in the Exchange admin center in Exchange Online](accessibility-in-exchange-admin-center.md)
 
-- [Keyboard Shortcuts in the Exchange admin center in Exchange Online](https://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Keyboard shortcuts for the Exchange admin center in Exchange Online](keyboard-shortcuts-in-admin-center.md)
 
 - [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md)
 

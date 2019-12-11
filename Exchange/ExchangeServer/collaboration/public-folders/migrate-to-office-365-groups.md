@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Why you should or shouldn't migrate your Exchange public folders to Office 365 Groups."
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -45,7 +45,7 @@ Office 365 Groups is the latest collaboration offering from Microsoft, which mea
 
 - **Collaboration over documents**: In Outlook, Groups has a dedicated **Files** tab that displays all files from the group's SharePoint team site, as well as from mail attachments. You get one view of all the files, so you don't have to go searching for them like you would in public folders. Co-authoring also becomes easier. If you're using public folders for storing files meant to be consumed by multiple people, consider migrating to Groups.
 
-- **Shared calendar**: Upon creation every group gets a shared calendar (see [Calendar sharing in Office 365](https://support.office.com/en-us/article/calendar-sharing-in-office-365-b576ecc3-0945-4d75-85f1-5efafb8a37b4?ui=en-US&rs=en-US&ad=US)). Any member of the group can create events on that calendar. When you favorite a group, that group's calendar can be displayed alongside your personal calendar. You can also subscribe to a group's events, in which case events created in that group appear in your personal calendar. If you're using public folders to host calendars for your team, such as a schedule or a timetable, Groups would be an improved experience.
+- **Shared calendar**: Upon creation every group gets a shared calendar (see [Calendar sharing in Office 365](https://support.office.com/article/b576ecc3-0945-4d75-85f1-5efafb8a37b4)). Any member of the group can create events on that calendar. When you favorite a group, that group's calendar can be displayed alongside your personal calendar. You can also subscribe to a group's events, in which case events created in that group appear in your personal calendar. If you're using public folders to host calendars for your team, such as a schedule or a timetable, Groups would be an improved experience.
 
 - **Simplified permissions**: When you assign users to a group, they immediately get the permissions they need, whereas with public folders you need to manually assign the proper permissions. Members can be added as "owners" or "members." Owners have full rights in the group, including the ability to perform group management tasks. Members can also create content and edit files like owners, but members cannot delete content that they have not created. If the public folders' permissions model is too overwhelming for you and you want something simple and quick, Office 365 Groups is the way to go.
 
@@ -110,7 +110,7 @@ The following prerequisites are required in your Exchange environment before you
 
    - Exchange 2016 CU4 or later
 
-2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) for more information.
+2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) for more information.
 
 ### Migration instructions
 

@@ -2,13 +2,13 @@
 title: 'Configure a federation trust: Exchange 2013 Help'
 TOCTitle: Configure a federation trust
 ms:assetid: 7c2b539f-faed-4374-8578-9f329ca628db
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657462(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657462(v=EXCHG.150)
 ms:contentKeyID: 49289316
 ms.date: 07/26/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -186,7 +186,7 @@ For additional management tasks related to federation, see [Federation procedure
 
    Remember, any domain or subdomain that you add to the federation trust requires a proof of domain ownership TXT record,
 
-For detailed syntax and parameter information, see [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)), [New-FederationTrust](https://technet.microsoft.com/en-us/library/dd351047\(v=exchg.150\)), [Get-FederatedDomainProof](https://technet.microsoft.com/en-us/library/ff717833\(v=exchg.150\)), [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\)), [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd351037\(v=exchg.150\)), and [Add-FederatedDomain](https://technet.microsoft.com/en-us/library/dd351208\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/aa998327\(v=exchg.150\)), [New-FederationTrust](https://technet.microsoft.com/library/dd351047\(v=exchg.150\)), [Get-FederatedDomainProof](https://technet.microsoft.com/library/ff717833\(v=exchg.150\)), [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\)), [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/library/dd351037\(v=exchg.150\)), and [Add-FederatedDomain](https://technet.microsoft.com/library/dd351208\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -206,7 +206,7 @@ To further verify that you have successfully created and configured the federati
    Get-FederationInformation -DomainName <PrimarySharedDomain>
    ```
 
-For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)) and [Get-FederationInformation](https://technet.microsoft.com/en-us/library/dd351221\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/library/dd351262\(v=exchg.150\)) and [Get-FederationInformation](https://technet.microsoft.com/library/dd351221\(v=exchg.150\)).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

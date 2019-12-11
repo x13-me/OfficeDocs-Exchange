@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
 ms.date:
 title: Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq
@@ -247,6 +247,21 @@ Administrators have additional capabilities with respect to contact synchronizat
 - Administrators can enable contact synchronization by default on enrolled devices. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 - Administrators can reduce the amount of data that is exported to the native Contacts app via an Intune App Protection Policy with contact field export controls. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
+### Q: Is Outlook for iOS and Android available in China?
+
+Yes, Outlook for iOS is available in Apple's App Store in China.
+
+The Google Play Store is not available in China. However, Microsoft has distributed the Outlook for Android app in the following third-party app stores that are available in China:
+
+- [Baidu](http://shouji.baidu.com/software/11483186.html)
+- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.outlook)
+- [Tencent (QQ)](http://android.app.qq.com/myapp/detail.htm?apkName=com.microsoft.office.outlook)
+- [Huawei](http://appstore.huawei.com/app/C10351487)
+- [Lenovo](http://www.lenovomm.com/app/21140763.html)
+- [Wandoujia](http://www.wandoujia.com/apps/com.microsoft.office.outlook)
+
+As Google's notification service, [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/), is not available in China, new mail push notifications do not function. Instead, Outlook for Android relies on polling notifications. For the native Microsoft sync technology, background polling occurs every 15 minutes while the app is in the background (assuming background synchronization is not disabled).
+
 ## Native Microsoft sync technology migration
 
 The following questions are about the migration from the REST API data sync protocol to the native Microsoft sync technology used by Outlook for iOS and Android for accessing mailbox data.
@@ -372,7 +387,7 @@ If you do not have organization chart data exposed in the app, consult with your
 Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to 500, in order to ensure optimal app performance.
 
 > [!NOTE]
-Microsoft sync technology has recently been changed to sync 500 items by default. Outlook for Android supports this. Outlook for iOS will in a future update.
+> Microsoft sync technology has recently been changed to sync 500 items by default. Outlook for Android supports this. Outlook for iOS will support this in a future update.
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 

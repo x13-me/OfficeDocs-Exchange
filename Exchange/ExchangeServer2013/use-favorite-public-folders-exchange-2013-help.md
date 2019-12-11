@@ -1,8 +1,8 @@
 ---
 title: 'Use favorite public folders in Outlook Web App: Exchange 2013 Help'
 TOCTitle: Use favorite public folders in Outlook Web App
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 
@@ -63,4 +63,4 @@ Your users can now use Outlook Web App to perform the following tasks in their f
 
 ## See also
 
-[Create a public folder in Outlook](https://support.office.com/article/c98ae570420a?ui=en-US&rs=en-US&ad=US)
+[Create a public folder in Outlook](https://support.office.com/article/a2835011-d524-4a5c-a207-05c159bb2a97)

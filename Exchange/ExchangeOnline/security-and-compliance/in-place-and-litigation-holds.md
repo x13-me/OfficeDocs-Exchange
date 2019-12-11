@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:"
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.date: 
 ms.reviewer: 
@@ -88,7 +88,7 @@ For more information, see:
 
 ## Placing a mailbox on In-Place Hold
 
-Authorized users that have been added to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group or assigned the Legal Hold and Mailbox Search management roles can place mailbox users on In-Place Hold. You can delegate the task to records managers, compliance officers, or attorneys in your organization's legal department, while assigning the least privileges. To learn more about assigning the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](in-place-ediscovery/assign-ediscovery-permissions.md).
+Authorized users that have been added to the Discovery Management role-based access control (RBAC) role group or assigned the Legal Hold and Mailbox Search management roles can place mailbox users on In-Place Hold. You can delegate the task to records managers, compliance officers, or attorneys in your organization's legal department, while assigning the least privileges. To learn more about assigning the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](in-place-ediscovery/assign-ediscovery-permissions.md).
 
 You can use the **In-Place eDiscovery & Hold** wizard in the Exchange admin center (EAC) or the **New-MailboxSearch** and related cmdlets in Exchange Online PowerShell to place a mailbox on In-Place Hold. To learn more about placing a mailbox on In-Place Hold, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds.md).
 

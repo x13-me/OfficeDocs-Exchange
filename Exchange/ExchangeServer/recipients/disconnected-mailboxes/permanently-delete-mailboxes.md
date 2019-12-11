@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to permanently delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms.date: 6/12/2018
 ms.reviewer:
@@ -38,7 +38,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Estimated time to complete: 2 minutes.
 
-- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -57,7 +57,7 @@ Run the following command to permanently delete an active mailbox and the associ
 Remove-Mailbox -Identity <Identity> -Permanent $true
 ```
 
-For detailed syntax and parameter information, see [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox).
 
 ### How do you know this worked?
 
@@ -119,7 +119,7 @@ This example permanently deletes all soft-deleted mailboxes from mailbox databas
 Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
 ```
 
-For detailed syntax and parameter information, see [Remove-StoreMailbox](https://technet.microsoft.com/library/d5cb00f2-f475-45cf-b72e-0962e5eed070.aspx) and [Get-MailboxStatistics](https://technet.microsoft.com/library/cec76f70-941f-4bc9-b949-35dcc7671146.aspx).
+For detailed syntax and parameter information, see [Remove-StoreMailbox](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/remove-storemailbox) and [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics).
 
 ### How do you know this worked?
 

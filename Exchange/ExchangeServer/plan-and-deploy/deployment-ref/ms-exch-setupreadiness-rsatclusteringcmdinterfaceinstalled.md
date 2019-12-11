@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Microsoft Exchange Server 2016 Setup can't continue because the local computer is missing a required Windows feature. You'll need to install this Windows feature before Exchange 2016 can continue.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.RsatClusteringCmdInterfaceInstalled
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 0d839514-5ab7-497d-8945-41392b4c3980
 ms.date: 7/22/2015
 ms.reviewer: 

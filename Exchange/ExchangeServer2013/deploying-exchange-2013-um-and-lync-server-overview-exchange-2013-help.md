@@ -2,13 +2,13 @@
 title: 'Deploying Exchange 2013 UM and Lync Server overview: Exchange 2013 Help'
 TOCTitle: Deploying Exchange 2013 UM and Lync Server overview
 ms:assetid: 96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb676409(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb676409(v=EXCHG.150)
 ms:contentKeyID: 49315469
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -44,7 +44,7 @@ The following list shows the simplified deployment steps for UM and Lync Server.
 7. Run the ExchUcUtil.ps1 script from the \<Exchange Installation folder\>\\Exchange Server\\Script folder on a Mailbox server.
 
    > [!IMPORTANT]
-   > The ExchUcUtil.ps1 script creates one or more UM IP gateways for Lync integration. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. To disable outgoing calls on a UM IP gateway, see <A href="disable-outgoing-calls-on-https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">Disable outgoing calls on UM IP gateways</A>.
+   > The ExchUcUtil.ps1 script creates one or more UM IP gateways for Lync integration. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. To disable outgoing calls on a UM IP gateway, see <A href="disable-outgoing-calls-on-https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">Disable outgoing calls on UM IP gateways</A>.
 
 8. Run **OcsUmUtil.exe** from the %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support folder on a Lync Server.
 
@@ -113,7 +113,7 @@ For details about Microsoft Lync Server, see [Microsoft Lync Server](https://go.
 
 You must complete the following steps to configure Unified Messaging to work with the Enterprise Voice features in Lync Server:
 
-1. Create one or more Unified Messaging SIP URI dial plans that each map to a corresponding Lync Server location profile. An Enterprise Voice location profile must be created for each Exchange UM dial plan. You can use the **Get-UMDialPlan** cmdlet to obtain the FQDN of a SIP URI dial plan. For more information about how to create a SIP URI dial plan, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+1. Create one or more Unified Messaging SIP URI dial plans that each map to a corresponding Lync Server location profile. An Enterprise Voice location profile must be created for each Exchange UM dial plan. You can use the **Get-UMDialPlan** cmdlet to obtain the FQDN of a SIP URI dial plan. For more information about how to create a SIP URI dial plan, see [Create a UM dial plan](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
    > [!IMPORTANT]
    > When you're integrating Exchange UM and Lync Server, you'll probably find it unnecessary to configure dialing rules or dialing rule groups in Exchange UM. Lync Server is designed to perform call routing and number translation for users in your organization, and will also do this when the calls are made by Unified Messaging on behalf of users.
@@ -160,9 +160,9 @@ You must complete the following steps to configure Unified Messaging to work wit
 
 5. Set the startup mode and the TLS listening port on the Client Access and Mailbox servers that are added to the SIP URI dial plan to Dual and then restart the Microsoft Exchange Unified Messaging service on each Mailbox server and the Microsoft Exchange Unified Messaging Call Router service on each Client Access server.
 
-6. Create and configure a UM auto attendant. For details, see [Set up a UM auto attendant](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant).
+6. Create and configure a UM auto attendant. For details, see [Set up a UM auto attendant](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant).
 
-7. When you enable users for voice mail, create a SIP address for the users who will use Enterprise Voice. In most cases, this SIP address will be the same SIP address that will be used when a user is enabled for Enterprise Voice. For details, see [Enable a user for voice mail](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
+7. When you enable users for voice mail, create a SIP address for the users who will use Enterprise Voice. In most cases, this SIP address will be the same SIP address that will be used when a user is enabled for Enterprise Voice. For details, see [Enable a user for voice mail](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
 
    > [!IMPORTANT]
    > Users who are associated with a SIP URI dial plan can't receive incoming faxes. This is because incoming voice and fax calls are routed through a Mediation Server and faxing isn't supported when using a Mediation Server.
@@ -171,11 +171,11 @@ You must complete the following steps to configure Unified Messaging to work wit
 
    - Grants Lync Server permission to read Exchange UM Active Directory components, specifically, the SIP URI dial plan that was created in the previous task. For details about how to configure permissions in Active Directory, see [How to Use ADSI Edit to Apply Permissions](https://go.microsoft.com/fwlink/p/?linkid=82751).
 
-   - Creates a UM IP gateway for each Lync Server pool or for each server running Lync Server Standard Edition that hosts users who will be enabled for Enterprise Voice. For details, see [Create a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
+   - Creates a UM IP gateway for each Lync Server pool or for each server running Lync Server Standard Edition that hosts users who will be enabled for Enterprise Voice. For details, see [Create a UM IP gateway](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
 
    - Create an Exchange UM hunt group for each UM IP gateway. The hunt group pilot identifier will be the name of the dial plan associated with the corresponding UM IP gateway. The hunt group must specify the UM SIP dial plan used with the UM IP gateway.
 
-9. Enable users for voice mail. When you enable them, make sure you enter a valid SIP address for the user and link them to a SIP dial plan. For details, see [Enable a user for voice mail](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
+9. Enable users for voice mail. When you enable them, make sure you enter a valid SIP address for the user and link them to a SIP dial plan. For details, see [Enable a user for voice mail](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
 
 You must also complete the following tasks to configure Lync Server to work with Exchange UM:
 

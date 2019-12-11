@@ -2,13 +2,13 @@
 title: 'Feature permissions: Exchange 2013 Help'
 TOCTitle: Feature permissions
 ms:assetid: 48d06fa6-e4a2-4d5c-bdbd-718eeaade4be
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638127(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638127(v=EXCHG.150)
 ms:contentKeyID: 48385045
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

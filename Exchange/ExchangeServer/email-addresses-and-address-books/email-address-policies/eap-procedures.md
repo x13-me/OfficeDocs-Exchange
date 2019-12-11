@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.date: 7/6/2018
 ms.reviewer:
@@ -113,7 +113,7 @@ This example creates an email address policy with a custom recipient filter:
 - **Priority**: 2
 
 ```
-New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')} -EnabledEmailAddressTemplates "SMTP:%2g%s@contoso.com" -Priority 2
+New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')" -EnabledEmailAddressTemplates "SMTP:%2g%s@contoso.com" -Priority 2
 ```
 
  **Notes**:
@@ -122,7 +122,7 @@ New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter {(Recipient
 
 - The _EnabledEmailAddressTemplates_ parameter requires at least one template with the `<Type>` value `SMTP` (to define the primary SMTP email address). After that, if you don't include a `<Type>` prefix for a template, the value `smtp` (an SMTP proxy address) is assumed.
 
-For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://technet.microsoft.com/library/23b6e364-b56e-4c5a-bc71-ff5652d7e42b.aspx).
+For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -204,7 +204,7 @@ This example clears the disabled email address templates from the email address 
 Set-EmailAddressPolicy -Identity "Contoso Executives" -DisabledEmailAddressTemplates $null
 ```
 
-For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://technet.microsoft.com/library/c5829edd-8b7d-4437-b17f-bae76ea237e8.aspx).
+For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -254,7 +254,7 @@ This example applies the email address policy named Northwest Executives.
 Update-EmailAddressPolicy -Identity "Northwest Executives"
 ```
 
-For detailed syntax and parameter information, see [Update-EmailAddressPolicy](https://technet.microsoft.com/library/283081a2-14bb-46cd-918e-e2dd168c43ab.aspx).
+For detailed syntax and parameter information, see [Update-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -296,7 +296,7 @@ This example removes the email address policy named Southeast Offices.
 Remove-EmailAddressPolicy -Identity "Southeast Offices"
 ```
 
-For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://technet.microsoft.com/library/c36aad43-ad3f-442f-9b52-316bb1f43e82.aspx).
+For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -418,9 +418,9 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
 - **Custom recipient filters**: Uses the required _RecipientFilter_ parameter with an OPATH filter.
 
-  - The basic OPATH filter syntax is `{<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'...}`.
+   - The basic OPATH filter syntax is `"<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'..."`.
 
-  - Braces `{ }` are required around the whole OPATH filter.
+  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion..
 
   - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
 
@@ -430,9 +430,11 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
   - `lt` and `gt` (less than and greater than).
 
-  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `{Department -like 'Sales*'}`.
+  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `"Department -like 'Sales*'"`.
 
-  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, {(Department -like 'Sales\*' -or Department -like 'Marketing\*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')}. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `"(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')"`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+
+  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
 
   - After you use the **New-EmailAddressPolicy** cmdlet to create a policy that uses custom recipient filters, you can't modify the recipient filters in the EAC. You need to use the **Set-EmailAddressPolicy** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
 

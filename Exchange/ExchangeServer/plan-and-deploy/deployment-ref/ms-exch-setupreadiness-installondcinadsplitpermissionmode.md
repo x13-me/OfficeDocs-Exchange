@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup detected that you're installing Exchange on a domain controller in an Active Directory split permissions organization.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.InstallOnDCInADSplitPermissionMode
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms.date: 8/2/2018
 ms.reviewer: 
@@ -34,10 +34,10 @@ If you want to use Active Directory split permissions, you need install Exchange
 
 For more information about split and shared permissions in Exchange 2013 or later, see the following topics:
 
-- [Understanding Split Permissions](https://technet.microsoft.com/library/dd638106(v=exchg.150).aspx)
+- [Understanding Split Permissions](https://docs.microsoft.com/exchange/understanding-split-permissions-exchange-2013-help)
 
-- [Configure Exchange 2013 for Split Permissions](https://technet.microsoft.com/library/dd638155(v=exchg.150).aspx)
+- [Configure Exchange 2013 for Split Permissions](https://docs.microsoft.com/exchange/configure-exchange-2013-for-split-permissions-exchange-2013-help)
 
-- [Configure Exchange 2013 for Shared Permissions](https://technet.microsoft.com/library/dd638146(v=exchg.150).aspx)
+- [Configure Exchange 2013 for Shared Permissions](https://docs.microsoft.com/exchange/configure-exchange-2013-for-shared-permissions-exchange-2013-help)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

@@ -2,13 +2,13 @@
 title: Troubleshooting OAB.Proxy Health Set
 TOCTitle: Troubleshooting OAB.Proxy Health Set
 ms:assetid: b717fc00-a787-44d6-8ccb-0eb4b2ea9e73
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720877
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +49,7 @@ The OAB service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -139,8 +139,8 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[Offline address books](https://technet.microsoft.com/en-us/library/bb232155\(v=exchg.150\))
+[Offline address books](https://technet.microsoft.com/library/bb232155\(v=exchg.150\))
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))

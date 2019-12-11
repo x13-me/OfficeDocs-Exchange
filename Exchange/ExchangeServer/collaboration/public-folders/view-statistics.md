@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to retrieve Exchange statistics for public folders to help make decisions to retain or delete those folders.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.date: 4/19/2018
 ms.reviewer:
@@ -24,7 +24,7 @@ You can use the Exchange Management Shell to retrieve statistics about a public 
 
 For additional management tasks related to managing public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
 
-For additional management tasks related to public folders, see [Public Folder Procedures in Exchange Online](https://technet.microsoft.com/library/c0c561cb-3d25-4a26-b94a-ba3876c49fbf.aspx).
+For additional management tasks related to public folders, see [Public Folder Procedures in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/public-folder-procedures).
 
 ## What do you need to know before you begin?
 
@@ -48,7 +48,7 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 > [!NOTE]
 > The value for the _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
 
-For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics).
 
 ## Use the Exchange Management Shell to view statistics for public folder items
 
@@ -82,7 +82,7 @@ This example returns additional information about the items within the public fo
 Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
 
 ## Use the Exchange Management Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
@@ -102,4 +102,4 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).

@@ -2,13 +2,13 @@
 title: 'Configure an accepted domain for an independent business unit'
 TOCTitle: Configure an accepted domain for an independent business unit
 ms:assetid: bc95dbdc-3669-4c06-ab94-90093bc0dbfd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657491(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657491(v=EXCHG.150)
 ms:contentKeyID: 49289397
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

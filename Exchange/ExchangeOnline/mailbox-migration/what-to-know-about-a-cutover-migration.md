@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - O365E_ExchSetupMigrStepsCutover
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.date: 8/15/2018
 ms.reviewer: 

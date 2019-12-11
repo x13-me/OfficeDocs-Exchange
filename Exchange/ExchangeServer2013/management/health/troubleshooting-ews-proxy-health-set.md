@@ -2,13 +2,13 @@
 title: Troubleshooting EWS.Proxy Health Set
 TOCTitle: Troubleshooting EWS.Proxy Health Set
 ms:assetid: 5bfbf7e9-d52d-4a3d-91ac-72427c6cb37d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews.proxy(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ews.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720789
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,7 +51,7 @@ The EWS service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## Common issues
 
@@ -141,6 +141,6 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))

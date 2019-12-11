@@ -2,13 +2,13 @@
 title: 'Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Recoverable Items folder
 ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364755(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -143,7 +143,7 @@ The following table lists the contents of and actions that can be performed in t
 </tbody>
 </table>
 
-In Exchange 2013, single item recovery isn't enabled by default for new mailboxes or mailboxes moved from a previous version of Exchange. You must use the Exchange Management Shell to enable single item recovery for a mailbox, and then configure or modify the deleted item retention period. For details about how to perform a single item recovery, see [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
+In Exchange 2013, single item recovery isn't enabled by default for new mailboxes or mailboxes moved from a previous version of Exchange. You must use the Exchange Management Shell to enable single item recovery for a mailbox, and then configure or modify the deleted item retention period. For details about how to perform a single item recovery, see [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
 
 ## In-Place Hold and Litigation Hold
 
@@ -192,9 +192,9 @@ The following table lists the contents of and actions that can be performed in t
 
 To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see the following topics:
 
-- [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+- [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds)
+- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ## Copy-on-write page protection and modified items
 
@@ -309,7 +309,7 @@ The following table lists the events logged when the Recoverable Items folder re
 </tbody>
 </table>
 
-If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/en-us/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
 ## More information
 

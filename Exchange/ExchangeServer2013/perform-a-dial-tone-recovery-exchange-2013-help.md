@@ -2,13 +2,13 @@
 title: 'Perform a dial tone recovery: Exchange 2013 Help'
 TOCTitle: Perform a dial tone recovery
 ms:assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979810(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd979810(v=EXCHG.150)
 ms:contentKeyID: 50873788
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -38,19 +38,19 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
 
 1. Make sure that any existing files for the database being recovered are preserved in case they're needed later for further recovery operations.
 
-2. Use the [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\)) cmdlet to create a dial tone database, as shown in this example.
+2. Use the [New-MailboxDatabase](https://technet.microsoft.com/library/aa997976\(v=exchg.150\)) cmdlet to create a dial tone database, as shown in this example.
 
     ```powershell
     New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
     ```
 
-3. Use the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet to rehome the user mailboxes hosted on the database being recovered, as shown in this example.
+3. Use the [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet to rehome the user mailboxes hosted on the database being recovered, as shown in this example.
 
     ```powershell
     Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
     ```
 
-4. Use the [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\)) cmdlet to mount the database so client computers can access the database and send and receive messages, as shown in this example.
+4. Use the [Mount-Database](https://technet.microsoft.com/library/aa998871\(v=exchg.150\)) cmdlet to mount the database so client computers can access the database and send and receive messages, as shown in this example.
 
     ```powershell
     Mount-Database -Identity DTDB1
@@ -60,7 +60,7 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
 
 6. After the data is copied to the RDB, but before mounting the restored database, copy any log files from the failed database to the recovery database log folder so they can be played against the restored database.
 
-7. Mount the RDB, and then use the [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\)) cmdlet to dismount it, as shown in this example.
+7. Mount the RDB, and then use the [Dismount-Database](https://technet.microsoft.com/library/bb124936\(v=exchg.150\)) cmdlet to dismount it, as shown in this example.
 
     ```powershell
     Mount-Database -Identity RDB1
@@ -94,7 +94,7 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
     Mount-Database -Identity RDB1
     ```
 
-13. Use the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) and [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)) cmdlets to export the data from the RDB and import it into the recovered database, as shown in this example. This will import all the messages sent and received using the dial tone database into the production database.
+13. Use the [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) and [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)) cmdlets to export the data from the RDB and import it into the recovered database, as shown in this example. This will import all the messages sent and received using the dial tone database into the production database.
 
     ```powershell
     $mailboxes = Get-Mailbox -Database DTDB1
@@ -113,17 +113,17 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\))
+- [New-MailboxDatabase](https://technet.microsoft.com/library/aa997976\(v=exchg.150\))
 
-- [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
 
-- [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
 
-- [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\))
+- [Mount-Database](https://technet.microsoft.com/library/aa998871\(v=exchg.150\))
 
-- [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\))
+- [Dismount-Database](https://technet.microsoft.com/library/bb124936\(v=exchg.150\))
 
-- [Remove-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997931\(v=exchg.150\))
+- [Remove-MailboxDatabase](https://technet.microsoft.com/library/aa997931\(v=exchg.150\))
 
 ## How do you know this worked?
 

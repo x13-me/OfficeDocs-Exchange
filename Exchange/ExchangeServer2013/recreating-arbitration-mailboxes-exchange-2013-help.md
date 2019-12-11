@@ -2,12 +2,12 @@
 title: 'Recreating arbitration mailboxes: Exchange 2013 Help'
 TOCTitle: Recreating arbitration mailboxes
 ms:assetid: bb6b8524-aaee-4be8-a04e-e61cd2ab3465
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt829264(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

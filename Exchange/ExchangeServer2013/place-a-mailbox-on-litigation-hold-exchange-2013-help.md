@@ -1,8 +1,8 @@
 ---
 title: 'Place a mailbox on Litigation Hold: Exchange 2013 Help'
 TOCTitle: Place a mailbox on Litigation Hold
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -79,10 +79,10 @@ Your organization may require that all mailbox data be preserved for a specific 
 This example places all user mailboxes in the organization on Litigation Hold for one year (365 days).
 
 ```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
 ```
 
-The example uses the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve all mailboxes in the organization, specifies a recipient filter to include all user mailboxes, and then pipes the list of mailboxes to the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet to enable the Litigation Hold and hold duration.
+The example uses the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve all mailboxes in the organization, specifies a recipient filter to include all user mailboxes, and then pipes the list of mailboxes to the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet to enable the Litigation Hold and hold duration.
 
 To place all user mailboxes on an indefinite hold, run the previous command but don't include the _LitigationHoldDuration_ parameter.
 
@@ -121,7 +121,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
     or
 
   ```powershell
-  Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,LitigationHold*
+  Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,LitigationHold*
   ```
 
   If a mailbox is placed on Litigation Hold indefinitely, the value for the _LitigationHoldDuration_ property mailbox is set to `Unlimited`.
@@ -159,7 +159,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
   ```
 
   ```powershell
-  Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+  Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -ne 'DiscoveryMailbox'"
   ```
 
-  You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](https://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
+  You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/filter-properties).

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 ms.date: 
 ms.reviewer: 
@@ -95,7 +95,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
   This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive".
 
   ```
-  $Mgmt = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')}
+  $Mgmt = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')"
   ```
 
   ```
@@ -126,7 +126,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
   $Mgrs | foreach {Set-CasMailbox -Identity $_ -OwaMailboxPolicy "Managers and Executives"}
   ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
 
 ### How do you know this worked?
 
@@ -174,7 +174,7 @@ This example removes the Outlook on the web mailbox policy from mailbox of the u
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
 
 ### How do you know this worked?
 

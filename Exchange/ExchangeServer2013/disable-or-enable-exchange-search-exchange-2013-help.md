@@ -2,13 +2,13 @@
 title: 'Disable or enable Exchange Search: Exchange 2013 Help'
 TOCTitle: Disable or enable Exchange Search
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996416(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 By default, Exchange Search is enabled for all new mailbox databases and doesn't require additional configuration. However, if you want to stop Exchange Search from indexing mailbox content, you can disable it for individual mailbox databases or for an entire Mailbox server.
 
 > [!WARNING]
-> Disabling Exchange Search impacts the functionality and performance of the full-text searches that are performed by your users using Outlook in online mode or on Windows mobile devices.<BR><A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">In-Place eDiscovery</A> also relies on Exchange Search. If you disable Exchange Search for a mailbox database or for a Mailbox server, In-Place eDiscovery searches won't return any messages from the database or server.
+> Disabling Exchange Search impacts the functionality and performance of the full-text searches that are performed by your users using Outlook in online mode or on Windows mobile devices.<BR><A href="https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">In-Place eDiscovery</A> also relies on Exchange Search. If you disable Exchange Search for a mailbox database or for a Mailbox server, In-Place eDiscovery searches won't return any messages from the database or server.
 
 For additional management tasks related to Exchange Search, see [Exchange Search procedures](exchange-search-procedures-exchange-2013-help.md).
 
@@ -54,7 +54,7 @@ This command enables Exchange Search for a mailbox database named EXCH01.
 Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).
 
 ## Disable or enable Exchange Search for a Mailbox server
 

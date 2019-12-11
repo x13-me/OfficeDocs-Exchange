@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to assign address book policies (ABPs) to users in Exchange Online
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 ms.date: 
 ms.reviewer: 
@@ -23,7 +23,7 @@ Address book policies (ABPs) allow you to segment users into specific groups to 
 
 Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web.
 
-To identify your virtual organizations for ABPs, we recommend that you use the **CustomAttribute1** to **CustomAttribute15** attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+To identify your virtual organizations for ABPs, we recommend that you use the **CustomAttribute1** to **CustomAttribute15** attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types.
 
 To assign ABPs to mailboxes, you select the ABP in Exchange admin center (EAC), or specify the ABP in Exchange Online PowerShell.
 
@@ -125,7 +125,7 @@ There are three basic methods you can use to apply an ABP to mailboxes:
   This example assigns the ABP named All Fabrikam to all mailbox users whose **CustomAttribute15** value is `FAB`.
 
   ```
-  $Fabrikam = Get-Mailbox -Filter {(CustomAttribute15 -eq 'FAB')}
+  $Fabrikam = Get-Mailbox -Filter "CustomAttribute15 -eq 'FAB'"
   ```
 
   ```
@@ -156,7 +156,7 @@ There are three basic methods you can use to apply an ABP to mailboxes:
   $Fab | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy "All Fabrikam"}
   ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) and [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
 
 ### How do you know this worked?
 

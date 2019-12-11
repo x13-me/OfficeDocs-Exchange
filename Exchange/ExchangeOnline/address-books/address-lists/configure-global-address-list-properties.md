@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 ms.date:
 ms.reviewer:
@@ -56,7 +56,7 @@ This example modifies the existing GAL named Contoso GAL by adding the **Company
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).
 
 #### How do you know this worked?
 

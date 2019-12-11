@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about subscribing an Edge Transport server to your internal Exchange Server 2016 or Exchange Server 2019 organization, which provides end-to-end mail flow, recipient look-up, and safelist aggregation.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms.date: 7/9/2018
 ms.reviewer: 

@@ -2,13 +2,13 @@
 title: Troubleshooting RPS Health Set
 TOCTitle: Troubleshooting RPS Health Set
 ms:assetid: a46c6c37-e7de-4c86-aa10-55c11f2f29cb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.rps(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.rps(v=EXCHG.150)
 ms:contentKeyID: 49720843
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

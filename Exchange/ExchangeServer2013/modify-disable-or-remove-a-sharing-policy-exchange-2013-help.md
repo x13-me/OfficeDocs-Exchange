@@ -2,13 +2,13 @@
 title: 'Modify, disable, or remove a sharing policy: Exchange 2013 Help'
 TOCTitle: Modify, disable, or remove a sharing policy
 ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657460(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -110,4 +110,4 @@ For details about how to create a sharing policy, see [Create a sharing policy](
   Remove-SharingPolicy -Identity Contoso -Confirm
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/en-us/library/dd297931\(v=exchg.150\)) and [Remove-SharingPolicy](https://technet.microsoft.com/en-us/library/dd351071\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/library/dd297931\(v=exchg.150\)) and [Remove-SharingPolicy](https://technet.microsoft.com/library/dd351071\(v=exchg.150\)).

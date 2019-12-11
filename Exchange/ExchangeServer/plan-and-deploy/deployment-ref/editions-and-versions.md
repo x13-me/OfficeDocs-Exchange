@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the different versions of Exchange 2016 and Exchange 2019.'
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
 ms.date: 7/30/2018
 ms.reviewer: 
@@ -40,7 +40,7 @@ The server editions are defined by a product key. When you enter a valid product
 
 For a list of Exchange Server versions and how to download and upgrade to the latest version of Exchange, see the following topics:
 
-- [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098(v=exchg.150).aspx)
+- [Exchange Server build numbers and release dates](../../new-features/build-numbers-and-release-dates.md)
 
 - [Install Exchange Mailbox servers using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md)
 

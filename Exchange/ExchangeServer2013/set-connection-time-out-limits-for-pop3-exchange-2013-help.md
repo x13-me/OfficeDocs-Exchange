@@ -2,13 +2,13 @@
 title: 'Set connection time-out limits for POP3: Exchange 2013 Help'
 TOCTitle: Set connection time-out limits for POP3
 ms:assetid: 40003115-be4e-4cf1-97b4-f5ca05b314dc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997604(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997604(v=EXCHG.150)
 ms:contentKeyID: 50395396
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -67,7 +67,7 @@ Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
 
 After you've set the connection time-out limits for POP3, you must restart the POP3 services for the settings to take effect. For information about how to restart the POP3 services, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/en-us/library/aa997154\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/library/aa997154\(v=exchg.150\)).
 
 ## How do you know this worked?
 

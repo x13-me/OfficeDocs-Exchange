@@ -1,8 +1,8 @@
 ---
 title: 'Common message approval scenarios: Exchange 2013 Help'
 TOCTitle: Common message approval scenarios
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 

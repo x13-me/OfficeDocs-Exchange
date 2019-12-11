@@ -3,8 +3,8 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about what you need in your environment before you install Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid:
 ms.date:
 ms.reviewer: 
@@ -50,7 +50,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
-|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
+|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help).|
 
 ## Directory server architecture for Exchange 2019
 
@@ -148,7 +148,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios for Exchange 2016
 
-Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://technet.microsoft.com/library/e7454db0-fed4-4662-8890-9501126b1ba2.aspx).
+Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory server requirements for Exchange 2016
 
@@ -179,10 +179,10 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 |**Component**|**Requirement**|**Notes**|
 |:-----|:-----|:-----|
-|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/><br/> **Note**: Intel Itanium IA64 processors are not supported.|For more information, see [Sizing Exchange 2016 Deployments](https://blogs.technet.microsoft.com/exchange/2015/10/15/ask-the-perf-guy-sizing-exchange-2016-deployments/). <br/> See the [Supported operating systems for Exchange 2016](#supported-operating-systems-for-exchange-2016) section later in this topic for supported operating systems.|
-|Memory|Varies by Exchange server role: <br/>• **Mailbox**: 8 GB minimum. <br/>• **Edge Transport**: 4 GB minimum.|For more information, see [Sizing Exchange 2016 Deployments](https://blogs.technet.microsoft.com/exchange/2015/10/15/ask-the-perf-guy-sizing-exchange-2016-deployments/).|
+|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/><br/> **Note**: Intel Itanium IA64 processors are not supported.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970). <br/> See the [Supported operating systems for Exchange 2016](#supported-operating-systems-for-exchange-2016) section later in this topic for supported operating systems.|
+|Memory|Varies by Exchange server role: <br/>• **Mailbox**: 8 GB minimum. <br/>• **Edge Transport**: 4 GB minimum.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
 |Paging file size|Set the paging file minimum and maximum value to the same size: <br/>• **Less than 32 GB of RAM installed**: Physical RAM plus 10MB, up to a maximum value of 32GB (32,778MB). <br/>• **32 GB of RAM or more installed**: 32GB|None|
-|Disk space|• At least 30 GB of free space on the drive where you're installing Exchange, plus an additional 500 MB for each Unified Messaging (UM) language pack that you plan to install. <br/>• At least 200 MB of free space on the System drive. <br/>• At least 500 MB of free space on the drive that contains the message queue database.|For more information, see [Sizing Exchange 2016 Deployments](https://blogs.technet.microsoft.com/exchange/2015/10/15/ask-the-perf-guy-sizing-exchange-2016-deployments/).|
+|Disk space|• At least 30 GB of free space on the drive where you're installing Exchange, plus an additional 500 MB for each Unified Messaging (UM) language pack that you plan to install. <br/>• At least 200 MB of free space on the System drive. <br/>• At least 500 MB of free space on the drive that contains the message queue database.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
 |Drive|DVD-ROM drive, local or network accessible.|None|
 |Screen resolution|1024 x 768 pixels (XGA) or higher|None|
 |File format|**NTFS**: Required on partitions that contain the following types of files: <br/> • The System partition. <br/> • Exchange binaries. <br/>• Files generated by Exchange diagnostic logging. <br/> • Transport database files (for example, the mail queue database). <br/><br/> **ReFS**: Supported on partitions that contain the following types of Exchange files: <br/> • Mailbox databases. <br/>• Transaction logs. <br/>• Content indexing files.|None|

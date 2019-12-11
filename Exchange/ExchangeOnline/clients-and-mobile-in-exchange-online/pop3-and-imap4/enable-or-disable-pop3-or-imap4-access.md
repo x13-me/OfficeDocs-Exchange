@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can disable them for individual users. For additional information related to POP3 and IMAP4, see POP3 and IMAP4.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4e351027-1a96-42c6-b4b2-8218d2070f25
 ms.date: 6/23/2017
 ms.reviewer: 
@@ -24,6 +24,8 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
 ## What do you need to know before you begin?
 
 - Estimated time to finish: two minutes.
+
+- If you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 settings" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 

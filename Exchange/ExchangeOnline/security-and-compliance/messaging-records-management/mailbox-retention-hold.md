@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Placing a mailbox on retention hold suspends the processing of a retention policy or managed folder mailbox policy for that mailbox. Retention hold is designed for situations such as a user being on vacation or away temporarily.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -48,7 +48,7 @@ This example places Michael Allen's mailbox on retention hold.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## Use Exchange Online PowerShell to remove retention hold for a mailbox
 
@@ -58,11 +58,11 @@ This example removes the retention hold from Michael Allen's mailbox.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## How do you know this worked?
 
-To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
 
 This command retrieves the _RetentionHoldEnabled_ property for Michael Allen's mailbox.
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Create a UM dial plan
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
 ms.date: 11/17/2014
 ms.reviewer: 

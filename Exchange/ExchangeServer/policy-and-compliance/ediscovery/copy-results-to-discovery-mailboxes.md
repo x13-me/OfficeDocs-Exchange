@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms.date: 7/6/2018
 ms.reviewer:
@@ -25,7 +25,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
 - An eDiscovery search has to be created, by using the EAC or the Exchange Management Shell, before you can copy the search results. For details, see [Create an In-Place eDiscovery search in Exchange Server](create-searches.md).
 
-- Exchange Server Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](https://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
+- Exchange Server Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](https://docs.microsoft.com/Exchange/create-a-discovery-mailbox-exchange-2013-help).
 
 - It might take 5 minutes or longer to copy search results to a discovery mailbox, depending on the number of mailbox items returned in the results.
 
@@ -65,7 +65,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Create an In-Place eDiscovery search in Exchange Server](create-searches.md)
 
-- [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)
+- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
 
 In the following example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the discovery mailbox that was specified by the _TargetMailbox_ parameter when the search was created.
 
@@ -92,9 +92,9 @@ Start-MailboxSearch "FY15 Q2 Financial Results"
 
 For more information about these cmdlets, see the following topics:
 
-- [Set-Mailboxsearch](https://technet.microsoft.com/library/23201ff0-e30a-4efd-9384-ab0af5815701.aspx)
+- [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
 
-- [Start-MailboxSearch](https://technet.microsoft.com/library/f0c4e047-7eca-4310-bfad-1ecfe1420ceb.aspx)
+- [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
 
 ## More information
 

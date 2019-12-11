@@ -2,13 +2,13 @@
 title: 'Delegate the installation of an Exchange 2013 server: Exchange 2013 Help'
 TOCTitle: Delegate the installation of an Exchange 2013 server
 ms:assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201741(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb201741(v=EXCHG.150)
 ms:contentKeyID: 62613983
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

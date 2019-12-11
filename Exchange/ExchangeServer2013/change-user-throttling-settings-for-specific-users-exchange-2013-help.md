@@ -2,13 +2,13 @@
 title: 'Change user throttling settings for specific users: Exchange 2013 Help'
 TOCTitle: Change user throttling settings for specific users
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863577(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -59,7 +59,7 @@ $b = Get-ThrottlingPolicy ITStaffPolicy
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
-For more information about syntax and parameters, see [New-ThrottlingPolicy](https://technet.microsoft.com/en-us/library/dd351045\(v=exchg.150\)) and [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/en-us/library/ff459231\(v=exchg.150\)).
+For more information about syntax and parameters, see [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\)) and [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231\(v=exchg.150\)).
 
 ## How do you know this worked?
 

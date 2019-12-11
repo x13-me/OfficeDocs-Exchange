@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms.date: 6/7/2018
 ms.reviewer:
@@ -73,10 +73,10 @@ To verify that you've successfully configured the DAG network, do the following:
 ## For more information
 <a name="UseShell"> </a>
 
-[Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/5c6add57-eef9-4af5-9cf3-54fd910dfe93.aspx)
+[Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroupnetwork)
 
-[Get-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/43f57126-a685-4208-ac63-4e3aba4a3e00.aspx)
+[Get-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/get-databaseavailabilitygroupnetwork)
 
-[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/3ef8d42f-9da0-456a-b4e8-6f7d99a1fa0f.aspx)
+[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/new-databaseavailabilitygroupnetwork)
 
-[Remove-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
+[Remove-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-databaseavailabilitygroupnetwork)

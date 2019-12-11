@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 9a2909e3-c185-4217-94e3-806809147cb3
 ms.date: 8/15/2018
 ms.reviewer: 
@@ -35,6 +35,6 @@ Here's what MONTI does:
 
 - It posts results under the People, Mail-In Databases, and Logs views. You can create these reports manually or on a scheduled basis.
 
-Download the [MONTI application and accompanying documentation](https://go.microsoft.com/fwlink/p/?LinkId=248641) from the Microsoft Download Center.
+Download the [MONTI application and accompanying documentation](https://www.microsoft.com/download/details.aspx?id=29567) from the Microsoft Download Center.
 
 The documentation describes how to deploy, configure, and run the MONTI application in a customer's Domino environment.

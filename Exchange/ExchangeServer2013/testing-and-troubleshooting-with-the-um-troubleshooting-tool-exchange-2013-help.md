@@ -2,13 +2,13 @@
 title: 'Test and troubleshoot with the UM Troubleshooting Tool: Exchange 2013 Help'
 TOCTitle: Testing and troubleshooting with the UM Troubleshooting Tool
 ms:assetid: 1fab2e52-bd2d-4e46-b222-53fee9d34cba
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg621148(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Gg621148(v=EXCHG.150)
 ms:contentKeyID: 55129208
 ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,4 +49,4 @@ The **Test-ExchangeUMCallFlow** cmdlet requires the following components to be i
 
 The **Test-ExchangeUMCallFlow** cmdlet isn't included on the Exchange 2010 SP1 DVD, the Exchange 2010 SP1-only download, or the Exchange 2013 installation media; however, you can download the cmdlet from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
 
-For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://technet.microsoft.com/en-us/library/ff630913\(v=exchg.150\)).
+For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://technet.microsoft.com/library/ff630913\(v=exchg.150\)).

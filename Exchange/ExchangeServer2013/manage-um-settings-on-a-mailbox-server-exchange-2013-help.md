@@ -2,13 +2,13 @@
 title: 'Manage UM settings on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Manage UM settings on a Mailbox server
 ms:assetid: 6df4853d-21d2-473f-b0ca-ebc996d8794a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998815(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998815(v=EXCHG.150)
 ms:contentKeyID: 49315441
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMServerPropertiesPropertyPage

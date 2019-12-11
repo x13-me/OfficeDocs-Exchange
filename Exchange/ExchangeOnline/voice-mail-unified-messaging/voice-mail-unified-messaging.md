@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 7ddf1356-d4c0-41c7-a495-101633ae2f50
 ms.date: 6/25/2018
 ms.reviewer: 
@@ -18,7 +18,7 @@ manager: serdars
 # Voice mail in Exchange Online: Unified Messaging
 
 > [!NOTE]
-> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Skype for Business Online voice users. For more information please check [Plan Cloud Voicemail service](https://docs.microsoft.com/en-us/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/).
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Skype for Business Online voice users. For more information please check [Plan Cloud Voicemail service](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization.
 
@@ -106,7 +106,7 @@ Office 365 UM offers administrators:
 - **Consolidation of voice mail systems**: Currently, most voice messaging systems require that all the voice messaging components be installed in every physical office location in an organization. In this kind of arrangement, the voice messaging systems in branch offices are located outside the central office and must be administered onsite. This frequently results in increased administration costs and complexity. UM lets you manage your voice mail system from a central location. To create a centralized management system for UM, you integrate your VoIP gateways, IP PBXs or PBXs, and your phone system and then deploy session border controllers (SBCs) to connect your phone system with your Office 365 deployment. Deploying a centralized voice messaging system this way can result in a significant savings in hardware and administrative costs.
 
     > [!NOTE]
-    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 - **Built-in UM administrative roles**: The set of UM-specific administrative roles for managing UM and voice mail features includes the following:
 
@@ -144,7 +144,7 @@ Office 365 UM offers administrators:
 Unified Messaging requires that you integrate your existing telephony system for your organization within Office 365 by using SBCs. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy and manage voice mail in UM.
 
 > [!NOTE]
-> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 When you plan to use UM in Office 365, you need to consider design and other issues that may affect your ability to reach your organizational goals when you configure UM. Generally, the simpler the UM setup is, the easier UM is to configure and maintain. As a general rule, create as few UM components like UM dial plans, auto attendants, and UM mailbox policies as you need to support your business and organizational goals. Large enterprises with complex network and telephony environments, multiple business units, or other complexities will require more planning than smaller organizations with relatively straightforward UM needs.
 

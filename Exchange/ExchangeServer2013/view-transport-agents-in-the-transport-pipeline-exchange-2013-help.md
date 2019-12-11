@@ -2,13 +2,13 @@
 title: 'View transport agents in the transport pipeline: Exchange 2013 Help'
 TOCTitle: View transport agents in the transport pipeline
 ms:assetid: bd715d8e-7b21-48de-8f68-d425d8506e4c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124395(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124395(v=EXCHG.150)
 ms:contentKeyID: 50873810
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

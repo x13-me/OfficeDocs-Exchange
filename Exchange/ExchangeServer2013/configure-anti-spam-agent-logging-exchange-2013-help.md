@@ -2,13 +2,13 @@
 title: 'Configure anti-spam agent logging: Exchange 2013 Help'
 TOCTitle: Configure anti-spam agent logging
 ms:assetid: df157ca3-ad8e-4302-acbc-5fbb8570c21d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691337(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb691337(v=EXCHG.150)
 ms:contentKeyID: 49289436
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -62,7 +62,7 @@ Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogM
 > <LI>
 > <P>Setting the <EM>AgentLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of agent log files because of their age.</P></LI></UL>
 
-For detailed syntax and parameter information, see the *AgentLog* parameters in [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\)).
+For detailed syntax and parameter information, see the *AgentLog* parameters in [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\)).
 
 ## How do you know this worked?
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.date: 7/6/2018
 ms.reviewer:
@@ -74,7 +74,7 @@ If you're upgrading from Exchange Server 2010, the notion of legal hold is to ho
 ## Placing a mailbox on hold
 <a name="MBX"> </a>
 
-The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](../../policy-and-compliance/ediscovery/assign-permissions.md).
+The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](https://docs.microsoft.com/exchange/discovery-management-exchange-2013-help) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](../../policy-and-compliance/ediscovery/assign-permissions.md).
 
 You can place a mailbox Litigation Hold on the **Recipients** page in the Exchange admin center or by using the `Set-Mailbox -LitigationHoldEnabled $true` command in the Exchange Management Shell.
 
@@ -126,7 +126,7 @@ If a mailbox isn't placed on Litigation Hold or In-Place Hold, items in the Purg
 ## Holds and mailbox quotas
 <a name="quotas"> </a>
 
-Items in the Recoverable Items folder aren't calculated toward the user's mailbox quota. In Exchange, the Recoverable Items folder has its own quota. For Exchange, the default values for the _RecoverableItemsWarningQuota_ and _RecoverableItemsQuota_ mailbox properties are set to 20 GB and 30 GB respectively. To modify these values for a mailbox database for Exchange Server, use the [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet. To modify them for individual mailboxes, use the [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.
+Items in the Recoverable Items folder aren't calculated toward the user's mailbox quota. In Exchange, the Recoverable Items folder has its own quota. For Exchange, the default values for the _RecoverableItemsWarningQuota_ and _RecoverableItemsQuota_ mailbox properties are set to 20 GB and 30 GB respectively. To modify these values for a mailbox database for Exchange Server, use the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase) cmdlet. To modify them for individual mailboxes, use the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet.
 
 When a user's Recoverable Items folder exceeds the warning quota for recoverable items (as specified by the _RecoverableItemsWarningQuota_ parameter), an event is logged in the Application event log of the Mailbox server. When the folder exceeds the quota for recoverable items (as specified by the _RecoverableItemsQuota_ parameter), users won't be able to empty the Deleted Items folder or permanently delete mailbox items. Also copy-on-write won't be able to create copies of modified items. Therefore, it's critical that you monitor Recoverable Items quotas for mailbox users placed on In-Place Hold.
 
@@ -146,9 +146,9 @@ When you place an Exchange Server mailbox on In-Place Hold or Litigation Hold, S
 
 To enable archiving of Skype for Business content in Exchange Server mailboxes, you must configure Skype for Business Server 2015 integration with Exchange Server. For details, see the following topics:
 
-- [Planning for Archiving](https://technet.microsoft.com/library/jj205069%28v=ocs.15%29)
+- [Planning for Archiving](https://technet.microsoft.com/library/jj205069(v=ocs.15))
 
-- [Deploying Archiving](https://technet.microsoft.com/library/jj205147%28v=ocs.15%29)
+- [Deploying Archiving](https://technet.microsoft.com/library/jj205147(v=ocs.15))
 
 ## Deleting a mailbox on hold
 <a name="deletehold"> </a>

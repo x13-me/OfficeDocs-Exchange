@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 ms.date:
 ms.reviewer: 

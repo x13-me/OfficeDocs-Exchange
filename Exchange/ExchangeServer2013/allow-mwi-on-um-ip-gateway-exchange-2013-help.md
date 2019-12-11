@@ -1,8 +1,8 @@
 ---
 title: 'Allow Message Waiting Indicator (MWI) on a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Allow Message Waiting Indicator (MWI) on a UM IP gateway
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 11/17/2014
 ms.reviewer:

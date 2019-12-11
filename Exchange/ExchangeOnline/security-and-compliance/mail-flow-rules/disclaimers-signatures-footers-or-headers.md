@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Exchange Online'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.date: 
 ms.reviewer: 
@@ -60,7 +60,7 @@ For examples and information about how to scope and format disclaimers, signatur
 
 5. Next to the **Do the following** box, select **Enter text** to enter the text of your disclaimer. For information about what can be added, see [Formatting your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FormatDisclaimer).
 
-6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FallbackOptions).
+6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#fallback-options-for-disclaimer-rules).
 
 7. Specify the audit severity level to assign the severity level that appears in the message log.
 
@@ -74,7 +74,7 @@ For more examples of how to scope your disclaimer, see [Scoping your disclaimer]
 
 ## Use Exchange Online PowerShell to add a disclaimer or other email header or footer
 
-Use the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+Use the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
 This example creates a new mail flow rule that adds a disclaimer with an image to the end of all email messages that are sent outside the organization.
 

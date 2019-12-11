@@ -2,13 +2,13 @@
 title: 'Enable or Disable Information Rights Management Logging: Exchange 2013 Help'
 TOCTitle: Enable or Disable Information Rights Management Logging
 ms:assetid: 6933bc65-4d98-4878-9167-0e9eaac68b6b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff686962(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff686962(v=EXCHG.150)
 ms:contentKeyID: 49319919
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,7 +53,7 @@ This example enables IRM log on a Mailbox server.
 Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\)).
 
 ## Use the Shell to disable IRM logging on a server
 
@@ -63,11 +63,11 @@ This example disables IRM logging on a Mailbox server.
 Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\)).
 
 ## How do you know this worked?
 
-To verify that you have successfully enabled or disbled IRM logging on a server, run the [Get-TransportService](https://technet.microsoft.com/en-us/library/jj215746\(v=exchg.150\)) cmdlet to retrieve IRM settings.
+To verify that you have successfully enabled or disbled IRM logging on a server, run the [Get-TransportService](https://technet.microsoft.com/library/jj215746\(v=exchg.150\)) cmdlet to retrieve IRM settings.
 
 This example retrieves all IRM logging properties on the server EXCH01.
 

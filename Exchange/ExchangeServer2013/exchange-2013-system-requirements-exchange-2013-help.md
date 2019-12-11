@@ -2,13 +2,13 @@
 title: 'Exchange 2013 system requirements: Exchange 2013 Help'
 TOCTitle: Exchange 2013 system requirements
 ms:assetid: 1e80857c-b870-4a6d-a0f4-ff7b3a7be037
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996719(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996719(v=EXCHG.150)
 ms:contentKeyID: 48384881
 ms.date: 12/18/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -76,7 +76,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios
 
-Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://technet.microsoft.com/en-us/library/hh534377\(v=exchg.150\)).
+Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://technet.microsoft.com/library/hh534377\(v=exchg.150\)).
 
 ## Network and directory servers
 
@@ -152,7 +152,7 @@ The following table lists the requirements for the network and the directory ser
 <li><p>Single label domains</p></li>
 <li><p>Disjoint</p></li>
 </ul>
-<p>For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces</a>.</p></td>
+<p>For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, <a href="https://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 support</p></td>
@@ -170,7 +170,7 @@ The following table lists the requirements for the network and the directory ser
 The use of 64-bit Active Directory domain controllers increases directory service performance for Exchange 2013.
 
 > [!NOTE]
-> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese, your servers might not receive some attributes that are stored on an object during inbound replication. For more information, see Microsoft Knowledge Base article 949189, <A href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">A Windows Server 2008 domain controller that is configured with the Japanese language locale may not apply updates to attributes on an object during inbound replication</A>.
+> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese, your servers might not receive some attributes that are stored on an object during inbound replication. For more information, see Microsoft Knowledge Base article 949189, <A href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">A Windows Server 2008 domain controller that is configured with the Japanese language locale may not apply updates to attributes on an object during inbound replication</A>.
 
 ## Installing Exchange 2013 on directory servers
 
@@ -342,7 +342,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU16, CU17, CU18||||X|
 |CU15||||X|
 
-**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
+**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
 
 ## Supported clients
 

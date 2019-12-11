@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
 ms.date: 7/6/2018
 ms.reviewer:
@@ -54,7 +54,7 @@ In the Exchange admin center (EAC), you can only configure existing Send connect
 
 In the Exchange Management Shell, you can configure new or existing Send connectors to proxy outbound mail.
 
-For information about how to open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+For information about how to open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - To configure a new Send connector to proxy outbound mail, add `-FrontEndProxyEnabled $true` to the **New-SendConnector** command.
 

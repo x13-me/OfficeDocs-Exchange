@@ -1,7 +1,7 @@
 ---
 title: "Exchange Server Hybrid Deployments"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -45,7 +45,7 @@ A hybrid deployment enables the following features:
 
 - Message tracking, MailTips, and multi-mailbox search between on-premises and Exchange Online organizations.
 
-- Cloud-based message archiving for on-premises Exchange mailboxes. Exchange Online Archiving can be used with a hybrid deployment. Learn more about Exchange Online Archiving at [Archive Features in Exchange Online Archiving](https://technet.microsoft.com/library/archive-features-in-exchange-online-archiving.aspx).
+- Cloud-based message archiving for on-premises Exchange mailboxes. Exchange Online Archiving can be used with a hybrid deployment. Learn more about Exchange Online Archiving at [Archive Features in Exchange Online Archiving](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features).
 
 ## Exchange hybrid deployment considerations
 

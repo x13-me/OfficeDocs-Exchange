@@ -2,13 +2,13 @@
 title: 'Enable or disable MailTips: Exchange 2013 Help'
 TOCTitle: Enable or disable MailTips
 ms:assetid: 11ad3848-f303-4ad5-a21d-9b0883db4bda
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ649321(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ649321(v=EXCHG.150)
 ms:contentKeyID: 49318493
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,4 +39,4 @@ You use the **Set-OrganizationConfig** cmdlet to enable or disable MailTips in y
 Set-OrganizationConfig -MailTipsAllTipsEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/en-us/library/aa997443\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)).
