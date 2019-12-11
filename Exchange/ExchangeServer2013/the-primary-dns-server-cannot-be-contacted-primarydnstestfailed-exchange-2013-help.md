@@ -2,13 +2,13 @@
 title: 'The primary DNS server cannot be contacted'
 TOCTitle: The primary DNS server cannot be contacted_PrimaryDNSTestFailed
 ms:assetid: 5b39cb64-c8f1-4fd3-843b-ecd23f99fe3a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.primarydnstestfailed(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.primarydnstestfailed(v=EXCHG.150)
 ms:contentKeyID: 46628919
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

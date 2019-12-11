@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: The Exchange Solution Reviewed Program (ESRP) Storage is a Microsoft Exchange Server program designed to facilitate third-party storage testing and solution publishing for Exchange Server.
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.date: 07/23/2018
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
@@ -83,8 +83,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell PowerEdge R730xd 10,000 20GB Mailbox Resiliency Exchange 2016 Storage Solution (July 22, 2016)](http://en.community.dell.com/techcenter/blueprints/blueprint_for_ucc/m/mediagallery/20442778)
 
-[Dell PowerEdge R730xd 8,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (May 15, 2015)](https://downloads.dell.com/solutions/general-solution-resources/White%20Papers/Deployment%20Guide%20-%20Exchange%202013%20on%20PowerEdge%20R730xd%20-%208000%205GB-10000%203GB%20Mailboxes.pdf)
-
 [Dell PowerEdge R730xd 10,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (May 15, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441135)
 
 [Dell PowerEdge R720xd 6,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 23, 2014)](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/6000-dell-poweredge-720xd-6000-mailbox-resiliency-microsoft-exchange-2013-storage-solution.pdf)
@@ -127,11 +125,6 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 [Dell EMC PowerEdge R740xd 10,000 Mailbox Exchange 2016 Resiliency Storage Solution (Nov 2nd, 2017)](http://en.community.dell.com/techcenter/blueprints/blueprint_for_ucc/m/mediagallery/20444661)
 
 [Dell EMC PowerEdge R740xd and MD1400 10,000 Mailbox Exchange 2016 Resiliency Storage Solution (Jan 31st, 2018)](http://en.community.dell.com/techcenter/ready_solutions/business_applications/m/resources/20444745)
-
-### EMC: Greater than 5000 mailboxes
-[EMC VNX 5700 Unified Storage 60,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Jun 1, 2013)](http://www.emc.com/collateral/white-papers/esrp-white-paper-emc-vnx5700-unified-storage-60000-users-virtualized-microsoft-exchange-server-2013-mailbox-resiliency-storage-solution.pdf)
-
-[EMC VNX5400 Unified Storage 20,000 Mailbox Virtualized Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 30, 2014)](http://www.emc.com/collateral/white-paper/h12997-emc-vnx5400-20k-users-virtualized-ms-exchange-wp.pdf)
 
 ### Fujitsu: 1001-5000 mailboxes
 [FUJITSU ETERNUS DX600 S3 Storage Array 5000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Oct 31, 2014)](http://solutions.us.fujitsu.com/pdf/storage/Storage-ETERNUS-DX600S3-5000-Mailbox-VME-whitepaper.pdf)
@@ -235,34 +228,6 @@ Dell Equallogic PS Series 75,000 Mailbox Exchange 2010 Mailbox Resiliency Storag
 
 [Dell PowerVault MD1200 Nearline SAS 7,200 Mailbox Microsoft Exchange 2010 Mailbox Resiliency Storage Solution (Jun 8, 2010)](http://www.dell.com/downloads/global/solutions/security/Dell_PV_MD1200_Nearline_SAS_7200_Mailbox_Resiliency_Exchange_2010_Solution.pdf)
 
-### EMC: 1-1000 mailboxes
-
-[EMC CLARiiON AX4-5i 500 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Mar 3, 2010)](http://www.emc.com/collateral/software/technical-documentation/h6716-esrp-clariion-500-user-exchange-2010.pdf)
-
-[EMC CLARiiON CX4-120 1,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jun 7, 2010)](http://uk.emc.com/collateral/hardware/technical-documentation/h6717-esrp-clariion-1000-user-exchange-2010.pdf)
-
-[EMC Iomega ix12-300r 260 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jun 16, 2010)](http://www.emc.com/collateral/hardware/technical-documentation/h6994-esrp-iomega-260-user-exchange-2010.pdf)
-
-[EMC VNXe3100 500 Mailbox Microsoft Exchange Server 2010 Mailbox Resiliency Storage Solution (Jun 27, 2011)](http://www.emc.com/collateral/hardware/technical-documentation/h8258-esrp-vnxe-500-user-exchange.pdf)
-
-[EMC VNXe3150 Unified Storage 1,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Dec 15, 2012)](http://www.emc.com/collateral/hardware/white-papers/h11362-esrp-vnx3150-unified-storage-exchange-2010.pdf)
-
-[EMC VNXe3300 1000 Mailbox Microsoft Exchange Server 2010 Mailbox Resiliency Storage Solution (Jun 27, 2011)](http://www.emc.com/collateral/hardware/technical-documentation/h8259-esrp-vnxe-1000-user-exchange.pdf)
-
-### EMC: 1001-5000 mailboxes
-
-[EMC Celerra NS-120 1,500 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (May 31, 2010)](http://www.emc.com/collateral/hardware/technical-documentation/h7137-esrp-celerra-1500-user-exchange-2010.pdf)
-
-### EMC: Greater than 5000 mailboxes
-
-[MC CLARiiON CX4-960 60,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jul 15, 2010)](http://www.emc.com/collateral/hardware/technical-documentation/h7202-esrp-clariion-60000-user-exchange-2010.pdf)
-
-[EMC Symmetrix VMAX 100,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (May 12, 2011)](http://www.emc.com/collateral/hardware/technical-documentation/h8225-vmax-100000-user-mailbox-resiliency-esrp.pdf)
-
-[EMC VNX5300 Unified Storage 20,000 Users with 1.5GB Mailbox Microsoft Exchange 2010 Mailboxes Resiliency Storage Solution (Aug 2, 2011)](http://www.emc.com/collateral/hardware/white-papers/h8849-esrp-vnx5300-20k-1-5gb-exchange-2010.pdf)
-
-[EMC VNX5700 Unified Storage 60,000 2GB Mailbox Microsoft Exchange Server 2010 Mailbox Resiliency Storage Solution (Jun 27, 2011)](http://www.emc.com/collateral/hardware/white-papers/h8813-esrp-vnx5700-60k-2gb-ex10mbx-resiliency.pdf)
-
 ### Huawei: Greater than 5000 mailboxes
 
 [HUAWEI OceanStor S5500T 20,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (Jul , 2012)](http://www.huawei.com/minisite/t-series/download/HUAWEI%20OceanStor%20S5500T%20Exchange%20Server%202010%20Solution.pdf)
@@ -301,4 +266,4 @@ IBM System Storage DCS3700 40,000 Mailbox Exchange 2010 Mailbox Resiliency Stora
 
 [Exchange 2010 mailbox server role requirements calculator](https://gallery.technet.microsoft.com/exchange/exchange-2010-mailbox-server-role-)
 
-[Exchange Server Jetstress 2013 Tool](https://www.microsoft.com/en-us/download/details.aspx?id=36849)
+[Exchange Server Jetstress 2013 Tool](https://www.microsoft.com/download/details.aspx?id=36849)

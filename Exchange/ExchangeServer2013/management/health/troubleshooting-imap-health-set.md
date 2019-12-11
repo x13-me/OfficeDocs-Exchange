@@ -2,13 +2,13 @@
 title: Troubleshooting IMAP Health Set
 TOCTitle: Troubleshooting IMAP Health Set
 ms:assetid: 2a06e671-4cc2-4ce5-bf53-6243ea140f20
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.imap(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap(v=EXCHG.150)
 ms:contentKeyID: 49720747
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -81,7 +81,7 @@ The IMAP4 service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 ## User Action
 
@@ -123,7 +123,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## ImapTestDeepMonitor and ImapSelfTestMonitor Recovery Actions
 
-1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/en-us/library/bb124022\(v=exchg.150\)).
+1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\)).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -153,7 +153,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This monitor alert is typically issued on CAS servers.
 
-1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/en-us/library/bb124022\(v=exchg.150\))
+1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
 
 2. Rerun the associated probe as shown in step 2.c. in the Verifying the issue still exists section.
 
@@ -165,7 +165,7 @@ This monitor alert is typically issued on CAS servers.
       Set-ImapSettings -server <CAS server name> -ProtocolLoggingEnabled $true
       ```
 
-   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/en-us/library/bb124022\(v=exchg.150\))
+   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
 
    3. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -217,7 +217,7 @@ This monitor alert is typically issued on CAS servers.
 
 This monitor alert is typically issued on CA and Mailbox servers.
 
-1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/en-us/library/bb124022\(v=exchg.150\))
+1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
 
 2. Wait 10 minutes to see whether the monitor stays healthy. After 10 minutes, run the following command:
 
@@ -259,8 +259,8 @@ This monitor alert is typically issued on CA and Mailbox servers.
 
 ## For More Information
 
-[POP3 and IMAP4](https://technet.microsoft.com/en-us/library/jj657728\(v=exchg.150\))
+[POP3 and IMAP4](https://technet.microsoft.com/library/jj657728\(v=exchg.150\))
 
-[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/en-us/library/bb124489\(v=exchg.150\))
+[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/library/bb124489\(v=exchg.150\))
 
-[Test-ImapConnectivity](https://technet.microsoft.com/en-us/library/bb738126\(v=exchg.150\))
+[Test-ImapConnectivity](https://technet.microsoft.com/library/bb738126\(v=exchg.150\))

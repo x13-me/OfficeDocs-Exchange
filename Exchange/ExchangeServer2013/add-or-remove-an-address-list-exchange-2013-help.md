@@ -1,8 +1,8 @@
 ---
 title: 'Add an address list to or remove an address list from an offline address book: Exchange 2013 Help'
 TOCTitle: Add an address list to or remove an address list from an offline address book
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -41,7 +41,7 @@ When using the _AddressLists_ parameter, any address lists that currently exist 
 Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList2,AddressList3
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
 
 ## Use the Shell to remove an address list from an OAB
 
@@ -51,4 +51,4 @@ To remove an address list from an OAB, simply omit that address list from the li
 Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList2
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).

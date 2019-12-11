@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: The list of procedures related to offline address books (OABs).
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.date: 
 ms.reviewer: 

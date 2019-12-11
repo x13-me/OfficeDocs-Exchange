@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable mailbox audit logging in Exchange 2016 or Exchange 2019 so that you run reports on non-owner mailbox access.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms.date: 7/8/2018
 ms.reviewer:
@@ -27,7 +27,7 @@ You enable mailbox audit logging in the Exchange Management Shell.
 
 - Estimated time to complete: 5 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions in Exchange Server](../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
 
@@ -55,7 +55,7 @@ Set-Mailbox "Florence Flipo" -AuditEnabled $true
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands:
 
 ```
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+$UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 ```
 
 ```

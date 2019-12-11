@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Message Waiting Indicator (MWI) is a feature that's found in most voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -69,7 +69,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
 
 - [Disable Message Waiting Indicator (MWI) for users](disable-mwi-for-users.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy)
 
 ### UM IP gateways and MWI
 
@@ -91,7 +91,7 @@ For more information about how to manage MWI settings, see the following topics:
 
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](prevent-mwi-on-um-ip-gateway.md)
 
-- [Set-UMIPGateway](https://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
+- [Set-UMIPGateway](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-umipgateway)
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 <a name="SMS"> </a>
@@ -117,7 +117,7 @@ For more information about how to manage text message notification settings on a
 
 - [Manage voice mail settings for a user](../../voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings.md)
 
-- [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
+- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailbox)
 
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
@@ -131,7 +131,7 @@ For more information about how to manage text message notification settings, see
 
 - [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy)
 
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks:
 

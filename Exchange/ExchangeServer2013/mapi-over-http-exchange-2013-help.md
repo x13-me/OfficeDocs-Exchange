@@ -2,13 +2,13 @@
 title: 'MAPI over HTTP: Exchange 2013 Help'
 TOCTitle: MAPI over HTTP
 ms:assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn635177(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn635177(v=EXCHG.150)
 ms:contentKeyID: 61218727
 ms.date: 05/10/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -157,7 +157,7 @@ Complete the following steps to prepare the clients and servers to support MAPI 
 
 Complete the following steps to configure MAPI over HTTP for your organization.
 
-1. **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\)).
+1. **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://technet.microsoft.com/library/dn595082\(v=exchg.150\)).
 
    For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to `https://contoso.com/mapi`, and the authentication method to `Negotiate`, run the following command:
 
@@ -195,7 +195,7 @@ MonitorIdentity                                        StartTime              En
 OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe  2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
 ```
 
-For more information, see [Test-OutlookConnectivity](https://technet.microsoft.com/en-us/library/dd638082\(v=exchg.150\)).
+For more information, see [Test-OutlookConnectivity](https://technet.microsoft.com/library/dd638082\(v=exchg.150\)).
 
 Logs for MAPI over HTTP activity are at the following locations:
 
@@ -209,10 +209,10 @@ Logs for MAPI over HTTP activity are at the following locations:
 
 You can manage the configuration of MAPI over HTTP by using the following cmdlets:
 
-- [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\))
+- [Set-MapiVirtualDirectory](https://technet.microsoft.com/library/dn595082\(v=exchg.150\))
 
-- [Get-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595080\(v=exchg.150\))
+- [Get-MapiVirtualDirectory](https://technet.microsoft.com/library/dn595080\(v=exchg.150\))
 
-- [New-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595081\(v=exchg.150\))
+- [New-MapiVirtualDirectory](https://technet.microsoft.com/library/dn595081\(v=exchg.150\))
 
-- [Remove-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595083\(v=exchg.150\))
+- [Remove-MapiVirtualDirectory](https://technet.microsoft.com/library/dn595083\(v=exchg.150\))

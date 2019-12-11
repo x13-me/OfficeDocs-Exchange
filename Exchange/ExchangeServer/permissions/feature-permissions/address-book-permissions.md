@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016 or Exchange Server 2019
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
 ms.date: 7/5/2018
 ms.reviewer:
@@ -30,7 +30,7 @@ To find out what permissions you need to perform the procedure or run the cmdlet
     > [!NOTE]
     > You must be assigned the Role Management management role to run the **Get-ManagementRoleAssignment** cmdlet. If you don't have permissions to run the **Get-ManagementRoleAssignment** cmdlet, ask your Exchange administrator to retrieve the role groups or management roles assigned to you.
 
-If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://technet.microsoft.com/library/dd351237.aspx).
+If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://docs.microsoft.com/exchange/delegate-role-assignments-exchange-2013-help).
 
 ## Email address and address book permissions
 
@@ -38,10 +38,10 @@ Users who are assigned the View-Only Management role group can view the configur
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Address book policies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Address lists|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Email address policies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Details templates|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Global address lists|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Offline address books|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Offline address book connectivity|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
+|Address book policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Address lists|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Email address policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Details templates|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Global address lists|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Offline address books|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|Offline address book connectivity|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|

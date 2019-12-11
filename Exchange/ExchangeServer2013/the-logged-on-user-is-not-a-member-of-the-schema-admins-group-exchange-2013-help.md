@@ -2,13 +2,13 @@
 title: 'Logged-on user is not a member of the Schema Admins group'
 TOCTitle: The logged-on user is not a member of the Schema Admins group
 ms:assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.schemaupdaterequired(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.schemaupdaterequired(v=EXCHG.150)
 ms:contentKeyID: 46629064
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

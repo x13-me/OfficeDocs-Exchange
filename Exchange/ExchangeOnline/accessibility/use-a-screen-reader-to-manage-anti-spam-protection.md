@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: adad2c0d-7452-4392-a95e-058c4678c05e
 ms.date: 
 ms.reviewer: 
@@ -23,7 +23,7 @@ ms.service: exchange-online
 Exchange Online includes spam filtering capabilities that help protect your network from spam transferred through email. Administrators do not need to set up or maintain these filtering technologies, which are enabled by default. However, administrators can make company-specific filtering customizations in the Exchange admin center (EAC), all using a screen reader and keyboard shortcuts.
 
 > [!NOTE]
-> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-Spam and Anti-Malware Protection](https://technet.microsoft.com/library/07d0f42d-2adc-48bf-b07f-189a560d365b.aspx).
+> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ## Get started
 

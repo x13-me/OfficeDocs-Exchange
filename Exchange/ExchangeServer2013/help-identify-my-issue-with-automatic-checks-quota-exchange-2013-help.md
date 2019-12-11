@@ -2,13 +2,13 @@
 title: 'Help Identify My Issue with Automatic Checks - Quota: Exchange 2013 Help'
 TOCTitle: Help Identify My Issue with Automatic Checks - Quota
 ms:assetid: ddb93b30-d25c-463e-9814-0c56601ae734
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793976(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn793976(v=EXCHG.150)
 ms:contentKeyID: 62632390
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy Unified Messaging.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -34,7 +34,7 @@ It's challenging to create guidelines for deploying telephony networks. They can
 - **Configuration Notes for Supported Session Border Controllers**: These configuration notes contain settings and other information that's very useful when you're configuring session border controllers (SBCs) to communicate with the Unified Messaging servers in hybrid and Exchange Online UM deployments. For more information, see [Configuration notes for supported session border controllers](configuration-notes-for-session-border-controllers.md).
 
     > [!NOTE]
-    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in December 2019. Please see the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2018/04/24/new-date-for-discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in December 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 Before you engage a Unified Messaging specialist, you should be able to answer key questions that they'll ask. Having the answers to the following questions will help make the conversation between you and the UM specialist productive:
 
@@ -245,7 +245,7 @@ IP PBXs using SIP media gateways are also supported by Unified Messaging. The fo
 
 For on-premises and hybrid deployments, Exchange Unified Messaging can be deployed together with Microsoft Office Communications Server 2007 R2, Microsoft Lync Server 2010 or Lync Server 2013 to provide voice messaging, Instant Messaging (IM), enhanced user presence, audio-video conferencing, and an integrated email and messaging experience for users in your organization. For more information, see:
 
-- [Integrate Exchange 2013 UM with Lync Server](https://technet.microsoft.com/library/96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1.aspx)
+- [Integrate Exchange 2013 UM with Lync Server](https://docs.microsoft.com/exchange/deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help)
 
 - [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
 

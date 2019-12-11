@@ -2,13 +2,13 @@
 title: 'Manage mailbox databases in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Manage mailbox databases in Exchange 2013
 ms:assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150580(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150580(v=EXCHG.150)
 ms:contentKeyID: 47560127
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -43,7 +43,7 @@ This topic shows you how to perform configuration tasks related to managing your
 
 ## Use the Shell to create a mailbox database
 
-For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\)).
+For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](https://technet.microsoft.com/library/aa997976\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -59,11 +59,11 @@ To verify that you have successfully created a database, do the following:
 
 ## Get mailbox database properties
 
-For detailed syntax and parameter information, see [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\)).
 
 ## Use the Shell to get mailbox database properties
 
-For an example of how to get mailbox database properties, see Example 2 in [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\)).
+For an example of how to get mailbox database properties, see Example 2 in [New-MailboxDatabase](https://technet.microsoft.com/library/aa997976\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -83,7 +83,7 @@ From the Shell, verify that all your mailbox database information is represented
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
-   - **Database path**: This read-only field displays the full path to the Exchange 2013 database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](https://technet.microsoft.com/en-us/library/bb124742\(v=exchg.150\)) cmdlet.
+   - **Database path**: This read-only field displays the full path to the Exchange 2013 database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](https://technet.microsoft.com/library/bb124742\(v=exchg.150\)) cmdlet.
 
    - **Last full backup**: This read-only field displays the date and time of the last complete backup of the mailbox database.
 
@@ -135,7 +135,7 @@ From the Shell, verify that all your mailbox database information is represented
 
 ## Use the Shell to set mailbox database properties
 
-For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
+For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -151,11 +151,11 @@ To verify that you have successfully set the attributes, do the following:
 
 ## Move a mailbox database path
 
-For detailed syntax and parameter information, see [Move-DatabasePath](https://technet.microsoft.com/en-us/library/bb124742\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Move-DatabasePath](https://technet.microsoft.com/library/bb124742\(v=exchg.150\)).
 
 ## Use the Shell to move a mailbox database path
 
-For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](https://technet.microsoft.com/en-us/library/bb124742\(v=exchg.150\)).
+For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](https://technet.microsoft.com/library/bb124742\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -167,11 +167,11 @@ To verify that you have successfully moved the database path, do the following:
 
 ## Mount a mailbox database
 
-For detailed syntax and parameter information, see [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Mount-Database](https://technet.microsoft.com/library/aa998871\(v=exchg.150\)).
 
 ## Use the Shell to mount a mailbox database
 
-For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\)).
+For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](https://technet.microsoft.com/library/aa998871\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -183,11 +183,11 @@ Get-MailboxDatabase -IncludePreExchange2013
 
 ## Dismount a mailbox database
 
-For detailed syntax and parameter information, see [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Dismount-Database](https://technet.microsoft.com/library/bb124936\(v=exchg.150\)).
 
 ## Use the Shell to dismount a mailbox database
 
-For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\)).
+For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](https://technet.microsoft.com/library/bb124936\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -207,7 +207,7 @@ To verify that you have successfully dismounted the database, do the following:
 
 ## Use the Shell to remove a mailbox database
 
-For detailed syntax and parameter information, see [Remove-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997931\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-MailboxDatabase](https://technet.microsoft.com/library/aa997931\(v=exchg.150\)).
 
 1. Run the following command to remove the mailbox database MyDatabase.
 

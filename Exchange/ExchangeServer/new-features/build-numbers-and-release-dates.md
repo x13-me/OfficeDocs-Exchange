@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 ms.date:
 ms.reviewer: 
@@ -84,7 +84,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2013 CU23](https://www.microsoft.com/en-us/download/details.aspx?id=58392)|June 18, 2019|15.0.1497.2|15.00.1497.002|
+|[Exchange Server 2013 CU23](https://www.microsoft.com/download/details.aspx?id=58392)|June 18, 2019|15.0.1497.2|15.00.1497.002|
 |[Exchange Server 2013 CU22](https://www.microsoft.com/download/details.aspx?id=57826)|February 12, 2019|15.0.1473.3|15.00.1473.003|
 |Exchange Server 2013 CU21|June 19, 2018|15.0.1395.4|15.00.1395.004|
 |Exchange Server 2013 CU20|March 20, 2018|15.0.1367.3|15.00.1367.003|

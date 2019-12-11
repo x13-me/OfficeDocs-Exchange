@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Admins can learn how to create, modify, and delete mail contacts in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailContactWizardForm.NewMailContactIntroductionWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
 ms.date: 
 ms.reviewer: 
@@ -163,13 +163,13 @@ Properties for a mail contact are stored in both Active Directory and Exchange. 
 
 For more information, see the following topics:
 
-- [Get-Contact](https://technet.microsoft.com/library/59315afb-fab5-4984-b3a1-ba1f82df8a10.aspx)
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-contact)
 
-- [Set-Contact](https://technet.microsoft.com/library/c86ca5af-bb1d-4619-8af8-9f04c83d84c5.aspx)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact)
 
-- [Get-MailContact](https://technet.microsoft.com/library/d254bdd5-d497-424c-97ad-d7e8f7e73c27.aspx)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailcontact)
 
-- [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
 
 Here are some examples of using Exchange Online PowerShell to change mail contact properties.
 
@@ -241,5 +241,5 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
 - In Exchange Online PowerShell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell.
 
   ```
-  Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
+  Get-Contact -ResultSize unlimited -Filter "Company -eq 'Adatum'" | Format-List Name,Office,Manager
   ```

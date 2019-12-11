@@ -2,13 +2,13 @@
 title: 'Delivery reports for administrators: Exchange 2013 Help'
 TOCTitle: Delivery reports for administrators
 ms:assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ919241(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ919241(v=EXCHG.150)
 ms:contentKeyID: 50646520
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 
 With delivery reports for administrators, you can track delivery information about messages sent by or received from any specific mailbox in your organization. Specifically, delivery reports for administrators uses the Exchange admin center (EAC) to perform a targeted search of the message tracking logs. The search is always scoped to a specific mailbox. You can search for messages sent by the mailbox, or sent to the mailbox, and you can filter the search results by the message subject.
 
-The content of the message body isn't returned in a delivery report, but the subject line is displayed in the results. If you want to search the mailboxes in your organization for specific email messages based on message content, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
+The content of the message body isn't returned in a delivery report, but the subject line is displayed in the results. If you want to search the mailboxes in your organization for specific email messages based on message content, see [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
 You may find delivery report searches useful in the following situations:
 

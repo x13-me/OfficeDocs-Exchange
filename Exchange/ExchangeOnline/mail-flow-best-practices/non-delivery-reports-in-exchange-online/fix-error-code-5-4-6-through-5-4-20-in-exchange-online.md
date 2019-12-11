@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 
@@ -45,7 +45,7 @@ The most common issues and fixes are described in the following sections.
 
 ### Accepted domain issues
 
-Verify that the recipient's domain is configured as an authoritative accepted domain in Exchange Online. For more information, see [Manage Accepted Domains in Exchange Online](https://technet.microsoft.com/library/jj945194.aspx).
+Verify that the recipient's domain is configured as an authoritative accepted domain in Exchange Online. For more information, see [Manage accepted domains in Exchange Online](../manage-accepted-domains/manage-accepted-domains.md).
 
 ### Hybrid configuration issues
 

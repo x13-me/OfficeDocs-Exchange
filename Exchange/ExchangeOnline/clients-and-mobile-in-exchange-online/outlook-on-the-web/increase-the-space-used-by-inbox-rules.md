@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to increase or decrease the space that's available to store Inbox rules in mailboxes in an Exchange Online organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3f01edde-1cdc-4891-ad9d-7d01582664e9
 ms.date: 
 ms.reviewer: 
@@ -75,7 +75,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
     This example decreases the rules quota to 32 KB to all mailboxes whose **Title** attribute contains "Vendor" or "Contractor".
 
     ```
-    $V = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')}
+    $V = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')"
     ```
 
     ```
@@ -84,31 +84,27 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
 - **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this:
 
-    `akol@contoso.com`
+  > akol@contoso.com <br/> tjohnston@contoso.com <br/> kakers@contoso.com
 
-    `tjohnston@contoso.com`
+  The syntax uses the following two commands (one to identify the user accounts, and the other to apply the rules quota to those users):
 
-    `kakers@contoso.com`
+  ```
+  $<VariableName> = Get-Content "<text file>"
+  ```
 
-    The syntax uses the following two commands (one to identify the user accounts, and the other to apply the rules quota to those users):
-
-    ```
-    $<VariableName> = Get-Content "<text file>"
-    ```
-
-    ```
+  ```
     $<VariableName> | foreach {Set-Mailbox -Identity $_ RulesQuota "<32 KB to 256 KB>"}
-    ```
+  ```
 
-   This example decreases the rules quota to 150 KB to the mailboxes specified in the file C:\My Documents\Junior Managers.txt.
+  This example decreases the rules quota to 150 KB to the mailboxes specified in the file C:\My Documents\Junior Managers.txt.
 
-    ```
-    $Jr = Get-Content "C:\My Documents\Junior Managers.txt"
-    ```
+  ```
+  $Jr = Get-Content "C:\My Documents\Junior Managers.txt"
+  ```
 
-    ```
-    $Jr | foreach {Set-Mailbox -Identity $_ -RulesQuota "150 KB"}
-    ```
+  ```
+  $Jr | foreach {Set-Mailbox -Identity $_ -RulesQuota "150 KB"}
+  ```
 
 ## How do you know this worked?
 

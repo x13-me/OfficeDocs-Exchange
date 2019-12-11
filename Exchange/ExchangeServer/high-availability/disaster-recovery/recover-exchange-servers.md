@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to recover a lost Exchange 2016 or Exchange 2019 server.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms.date:
 ms.reviewer:
@@ -25,7 +25,7 @@ Recovering a lost Exchange server is often accomplished by using new hardware. H
 
 This topic shows you how to recover a lost Exchange server that isn't a member of a database availability group (DAG). For detailed steps about how to recover a server that was a member of a DAG, see [Recover a database availability group member server](recover-dag-member-servers.md).
 
-Looking for other management tasks related to backing up and restoring data? Check out [Backup, Restore, and Disaster Recovery](https://technet.microsoft.com/library/394fc4ed-fa02-41fa-9159-cc2754ff8875.aspx).
+Looking for other management tasks related to backing up and restoring data? Check out [Backup, restore, and disaster recovery](disaster-recovery.md).
 
 ## What do you need to know before you begin?
 

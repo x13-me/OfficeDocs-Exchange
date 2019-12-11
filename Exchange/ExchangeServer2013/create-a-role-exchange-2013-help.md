@@ -2,13 +2,13 @@
 title: 'Create a role: Exchange 2013 Help'
 TOCTitle: Create a role
 ms:assetid: e614ad8f-5946-4135-b130-89ea626afcd4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351214(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351214(v=EXCHG.150)
 ms:contentKeyID: 49289443
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -54,7 +54,7 @@ This example copies the Mail Recipients role and its management role entries to 
 New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/en-us/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
 
 ## Step 2: Change the new role's management role entries
 

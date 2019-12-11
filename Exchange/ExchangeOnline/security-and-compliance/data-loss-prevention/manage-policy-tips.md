@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.date: 7/20/2018
 ms.reviewer: 
@@ -212,7 +212,7 @@ The following example creates a new English-language Policy Tip that will block 
 New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain restricted content and will not be delivered."
 ```
 
-For more information about DLP cmdlets, see [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
+For detailed syntax and parameter information, see [New-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-policytipconfig).
 
 ### Use Exchange Online PowerShell to modify custom Policy Tip notification text
 
@@ -222,7 +222,7 @@ The following example modifies an existing English-language, notify-only Policy 
 Set-PolicyTipConfig en\NotifyOnly "Sending bank account numbers in email is not recommended."
 ```
 
-For more information about DLP cmdlets, see [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
+For detailed syntax and parameter information, see [Set-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-policytipconfig).
 
 ### How do you know this worked?
 

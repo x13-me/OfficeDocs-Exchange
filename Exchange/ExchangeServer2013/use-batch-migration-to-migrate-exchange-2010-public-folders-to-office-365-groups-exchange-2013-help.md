@@ -4,9 +4,9 @@ TOCTitle: Use batch migration to migrate Exchange 2010 public folders to Office 
 ms:assetid: d018558d-3075-4dd3-9ff7-91ce66b8d5fb
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843875(v=EXCHG.150)
+ms.author: v-mapenn
+author: mattpennathe3rd
+ms:mtpsurl: https://technet.microsoft.com/library/Mt843875(v=EXCHG.150)
 ms:contentKeyID: 74468674
 mtps_version: v=EXCHG.150
 ---
@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 
 **Summary:** How to move your Exchange 2010 public folders to Office 365 Groups.
 
-Through a process known as *batch migration*, you can move some or all of your Exchange 2010 public folders to Office 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Office 365 Groups](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as *batch migration*, you can move some or all of your Exchange 2010 public folders to Office 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Office 365 Groups](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
 
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange 2010 public folders.
 
@@ -33,7 +33,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - Outlook Anywhere needs to be enabled on the Exchange 2010 server that hosts your public folder databases. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?linkid=187249).
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
@@ -51,7 +51,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 ## Step 1: Get the scripts
 
-The batch migration to Office 365 Groups requires running a number of scripts at different points in the migration, as described below in this article. Download the scripts and their supporting files [from this location](https://www.microsoft.com/en-us/download/details.aspx?id=55985). After all the scripts and files are downloaded, save them to the same location, such as `c:\PFtoGroups\Scripts`.
+The batch migration to Office 365 Groups requires running a number of scripts at different points in the migration, as described below in this article. Download the scripts and their supporting files [from this location](https://www.microsoft.com/download/details.aspx?id=55985). After all the scripts and files are downloaded, save them to the same location, such as `c:\PFtoGroups\Scripts`.
 
 Before proceeding, verify you have downloaded and saved all of the following scripts and files:
 
@@ -201,7 +201,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219164\(v=exchg.150\)) and [Get-MigrationUser](https://technet.microsoft.com/en-us/library/jj218702\(v=exchg.150\)) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/library/jj219164\(v=exchg.150\)) and [Get-MigrationUser](https://technet.microsoft.com/library/jj218702\(v=exchg.150\)) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 
@@ -295,7 +295,7 @@ The following known issues can occur during a typical public folders to Office 3
 
 ## Migration scripts
 
-For your reference, this section provides in-depth descriptions for three of the migration scripts and the tasks they execute in your Exchange environment. All of the scripts and supporting files can be [downloaded from this location](https://www.microsoft.com/en-us/download/details.aspx?id=55985).
+For your reference, this section provides in-depth descriptions for three of the migration scripts and the tasks they execute in your Exchange environment. All of the scripts and supporting files can be [downloaded from this location](https://www.microsoft.com/download/details.aspx?id=55985).
 
 ### AddMembersToGroups.ps1
 

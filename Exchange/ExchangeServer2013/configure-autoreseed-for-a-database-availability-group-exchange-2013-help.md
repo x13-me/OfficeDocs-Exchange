@@ -2,13 +2,13 @@
 title: 'Configure AutoReseed for a database availability group: Exchange 2013 Help'
 TOCTitle: Configure AutoReseed for a database availability group
 ms:assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619303(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619303(v=EXCHG.150)
 ms:contentKeyID: 49289245
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

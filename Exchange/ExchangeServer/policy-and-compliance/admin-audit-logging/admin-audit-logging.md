@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms.date: 7/8/2018
 ms.reviewer:
@@ -110,7 +110,7 @@ Each audit log entry contains the information described in the following table. 
 |`ObjectModified`|This field contains the object that was modified by the cmdlet specified in the `CmdletName` field.|
 |`CmdletName`|This field contains the name of the cmdlet that was run by the user in the `Caller` field.|
 |`CmdletParameters`|This field contains the parameters that were specified when the cmdlet in the `CmdletName` field was run. Also stored in this field, but not visible in the default output, is the value specified with the parameter, if any.|
-|`ModifiedProperties`|This field contains the properties that were modified on the object in the `ObjectModified` field. Also stored in this field, but not visible in the default output, are the old value of the property and the new value that was stored.  <br/> **Important**: This field is only populated if the _LogLevel_ parameter on the **Set-AdminAuditLogConfig** cmdlet is set to `erbose`.|
+|`ModifiedProperties`|This field contains the properties that were modified on the object in the `ObjectModified` field. Also stored in this field, but not visible in the default output, are the old value of the property and the new value that was stored.  <br/> **Important**: This field is only populated if the _LogLevel_ parameter on the **Set-AdminAuditLogConfig** cmdlet is set to `verbose`.|
 |`Caller`|This field contains the user account of the user who ran the cmdlet in the `CmdletName` field.|
 |`Succeeded`|This field specifies whether the cmdlet in the `CmdletName` field ran successfully. The value is either `True` or `False`.|
 |`Error`|This field contains the error message generated if the cmdlet in the `CmdletName` field failed to complete successfully.|
@@ -189,4 +189,4 @@ Administrator audit logging relies on Active Directory replication to replicate 
 
 The Admin Audit Log built-in cmdlet extension agent performs admin audit logging of cmdlet operations in Exchange Server. This agent reads the audit log configuration and then performs an evaluation of each cmdlet run in your organization. If the criteria you've specified in the admin audit log configuration matches the cmdlet that's being run, the agent generates an audit log entry.
 
-The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](https://technet.microsoft.com/library/0257790d-3988-46c3-8882-25ca11559e84.aspx).
+The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](https://docs.microsoft.com/exchange/cmdlet-extension-agents-exchange-2013-help).

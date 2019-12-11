@@ -2,13 +2,13 @@
 title: 'Manage administrator audit logging: Exchange 2013 Help'
 TOCTitle: Manage administrator audit logging
 ms:assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335109(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd335109(v=EXCHG.150)
 ms:contentKeyID: 50117640
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,7 +61,7 @@ This example audits the cmdlets specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/en-us/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
 
 ## Specify the parameters to be audited
 
@@ -90,7 +90,7 @@ This example audits the parameters specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/en-us/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
 
 ## Specify the audit log age limit
 
@@ -115,7 +115,7 @@ This example specifies an age limit of two years and six months.
 Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/en-us/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
 
 ## Enable or disable logging of Test cmdlets
 
@@ -133,7 +133,7 @@ This command disables the logging of **Test** cmdlets.
 Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/en-us/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
 
 ## Disable administrator audit logging
 

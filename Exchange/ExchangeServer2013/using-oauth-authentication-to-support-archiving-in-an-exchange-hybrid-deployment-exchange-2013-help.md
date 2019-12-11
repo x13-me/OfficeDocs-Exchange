@@ -2,13 +2,13 @@
 title: 'Using OAuth authentication to support Archiving in an Exchange hybrid deployment'
 TOCTitle: Using OAuth authentication to support Archiving in an Exchange hybrid deployment
 ms:assetid: deb882b1-1ae2-40f3-a71c-423fafe3d66a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn689104(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn689104(v=EXCHG.150)
 ms:contentKeyID: 62380199
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

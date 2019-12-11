@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
 ms.date: 7/5/2018
 title: Account setup in Outlook for iOS and Android using Basic authentication
@@ -51,7 +51,7 @@ If you're using Microsoft Intune as your mobile device management provider, the 
 8. Choose **Associated apps**, and then, on the **Associated apps** blade, choose **Microsoft Outlook**.
 
     > [!NOTE]
-    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios).
+    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
 9. Click **OK** to return to the **Add app configuration** blade.
 

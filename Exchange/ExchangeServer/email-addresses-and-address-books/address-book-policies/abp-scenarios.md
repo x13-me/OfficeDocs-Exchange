@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms.date:
 ms.reviewer:
@@ -196,25 +196,25 @@ This organization requires four custom address lists:
 This example creates the address list named AL_FAB_Users_DGs that contains all Fabrikam users, distribution groups, and dynamic distribution groups _and_ the CEO.
 
 ```
-New-AddressList -Name "AL_FAB_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')}
+New-AddressList -Name "AL_FAB_Users_DGs" -RecipientFilter "((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the address list named AL_FAB_Contacts that contains all Fabrikam mail contacts.
 
 ```
-New-AddressList -Name "AL_FAB_Contacts" -RecipientFilter {(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'FAB')}
+New-AddressList -Name "AL_FAB_Contacts" -RecipientFilter "(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'FAB')"
 ```
 
 This example creates the address list named AL_TAIL_Users_DGs that contains all Tailspin Toys users, distribution groups, and dynamic distribution groups _and_ the CEO.
 
 ```
-New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')}
+New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter "((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the address list named AL_TAIL_Contacts that contains all Tailspin Toys mail contacts.
 
 ```
-New-AddressList -Name "AL_TAIL_Contacts" -RecipientFilter {(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'TAIL')}
+New-AddressList -Name "AL_TAIL_Contacts" -RecipientFilter "(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'TAIL')"
 ```
 
 For more information, see [Create address lists](../address-lists/address-list-procedures.md#create-address-lists).
@@ -230,18 +230,18 @@ This organization requires two custom room lists:
 This example creates the room list named AL_FAB_Rooms for Fabrikam room mailboxes.
 
 ```
-New-AddressList -Name AL_FAB_Rooms -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq 'FAB') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+New-AddressList -Name AL_FAB_Rooms -RecipientFilter "(Alias -ne $null) -and (CustomAttribute15 -eq 'FAB') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"
 ```
 
 This example creates a room list named AL_TAIL_Rooms for Tailspin Toys room mailboxes.
 
 ```
-New-AddressList -Name AL_TAIL_Rooms -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq 'TAIL') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+New-AddressList -Name AL_TAIL_Rooms -RecipientFilter "(Alias -ne $null) -and (CustomAttribute15 -eq 'TAIL') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"
 ```
 
  **Note**: This example creates a blank room list named AL_BlankRoom if the organization doesn't have any room mailboxes (an ABP requires a room list, even if it's empty):
 
- `New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}`
+ `New-AddressList -Name AL_BlankRoom -RecipientFilter "(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))"`
 
 For more information about creating address lists, see [Create address lists](../address-lists/address-list-procedures.md#create-address-lists).
 
@@ -256,13 +256,13 @@ This organization requires two custom GALs:
 This example creates the GAL named GAL_FAB for Fabrikam that includes all Fabrikam recipients _and_ allows the Fabrikam users to see the CEO.
 
 ```
-New-GlobalAddressList -Name "GAL_FAB" -RecipientFilter {(CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')}
+New-GlobalAddressList -Name "GAL_FAB" -RecipientFilter "(CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the GAL named GAL_TAIL for Tailspin Toys that includes all Tailspin Toys recipients _and_ allows the Tailspin Toys users to see the CEO.
 
 ```
-New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')}
+New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter "(CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
  **Note**: Don't use a GAL in an ABP that contains recipients that are missing from address lists in the ABP. The combination of all address lists must match the recipients in the GAL.
@@ -330,13 +330,13 @@ For more information, see [Procedures for address book policies in Exchange Serv
 This example assigns the ABP named ABP_FAB to all Fabrikam mailboxes.
 
 ```
-$Fab = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'FAB'}; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'}
+$Fab = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'FAB'"; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'}
 ```
 
 This example assigns the ABP named ABP_TAIL to all Tailspin Toys mailboxes.
 
 ```
-$Tail = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
+$Tail = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'TAIL'"; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
 ```
 
 This example assigns the ABP named ABP_CEO to the CEO named Gabriela Laureano.

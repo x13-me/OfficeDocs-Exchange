@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use the Exchange Management Shell to view dynamic distribution group membership.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.date: 7/5/2018
 ms.reviewer:
@@ -45,4 +45,4 @@ $FTE = Get-DynamicDistributionGroup "Full Time Employees"
 Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 
-For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](https://technet.microsoft.com/library/d97ee738-dfa1-464b-855a-4242e8065473.aspx) and [Get-Recipient](https://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx).
+For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-dynamicdistributiongroup) and [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient).

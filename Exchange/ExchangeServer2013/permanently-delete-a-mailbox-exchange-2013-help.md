@@ -2,13 +2,13 @@
 title: 'Permanently delete a mailbox: Exchange 2013 Help'
 TOCTitle: Permanently delete a mailbox
 ms:assetid: df35765a-0bef-4561-9846-d91d69c0269c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863440(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ863440(v=EXCHG.150)
 ms:contentKeyID: 50387725
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -57,7 +57,7 @@ Remove-Mailbox -Identity <identity> -Permanent $true
 > [!NOTE]
 > If you don't include the <EM>Permanent</EM> parameter, the deleted mailbox is retained in the mailbox database for 30 days, by default, before it's permanently deleted.
 
-For detailed syntax and parameter information, see [Remove-Mailbox](https://technet.microsoft.com/en-us/library/aa995948\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://technet.microsoft.com/library/aa995948\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -119,7 +119,7 @@ This example permanently deletes all soft-deleted mailboxes from mailbox databas
 Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
 ```
 
-For detailed syntax and parameter information, see [Remove-StoreMailbox](https://technet.microsoft.com/en-us/library/ff829913\(v=exchg.150\)) and [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-StoreMailbox](https://technet.microsoft.com/library/ff829913\(v=exchg.150\)) and [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612\(v=exchg.150\)).
 
 ## How do you know this worked?
 

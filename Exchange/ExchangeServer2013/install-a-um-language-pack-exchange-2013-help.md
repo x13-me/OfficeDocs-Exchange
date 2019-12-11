@@ -2,13 +2,13 @@
 title: 'Install a UM language pack: Exchange 2013 Help'
 TOCTitle: Install a UM language pack
 ms:assetid: ed14ffa5-c9b0-4367-b5da-564024b360ff
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876951(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876951(v=EXCHG.150)
 ms:contentKeyID: 49315543
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -65,6 +65,6 @@ setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAccept
 ```
 
 > [!WARNING]
-> If you don't use the /IAcceptExchangeServerLicenseTerms parameter, you'll see the following error: Welcome to Microsoft Exchange Server 2013 Unattended Setup. You need to accept the license terms to install Microsoft Exchange Server 2013. To read the license agreement, visit http://go.microsoft.com/fwlink/p/?LinkId=150127. To accept the license agreement, add the /IAcceptExchangeServerLicenseTerms parameter to the command you're running. For more information, run setup /?.
+> If you don't use the /IAcceptExchangeServerLicenseTerms parameter, you'll see the following error: Welcome to Microsoft Exchange Server 2013 Unattended Setup. You need to accept the license terms to install Microsoft Exchange Server 2013. To read the license agreement, visit https://go.microsoft.com/fwlink/p/?LinkId=150127. To accept the license agreement, add the /IAcceptExchangeServerLicenseTerms parameter to the command you're running. For more information, run setup /?.
 
 For more information about available UM languages and the culture codes, see [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md).

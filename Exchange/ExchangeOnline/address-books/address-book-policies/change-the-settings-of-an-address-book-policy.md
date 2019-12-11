@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to modify address book policies (ABPs) in Exchange Online
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms.date:
 ms.reviewer:
@@ -77,7 +77,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
    Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
    ```
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addressbookpolicy).
 
 ### How do you know this worked?
 

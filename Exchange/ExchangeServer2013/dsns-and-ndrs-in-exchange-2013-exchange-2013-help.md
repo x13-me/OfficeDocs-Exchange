@@ -2,13 +2,13 @@
 title: 'DSNs and NDRs in Exchange 2013: Exchange 2013 Help'
 TOCTitle: DSNs and NDRs in Exchange 2013
 ms:assetid: 8e91de84-76fa-49b2-898c-c5eface76560
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232118(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232118(v=EXCHG.150)
 ms:contentKeyID: 49286851
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

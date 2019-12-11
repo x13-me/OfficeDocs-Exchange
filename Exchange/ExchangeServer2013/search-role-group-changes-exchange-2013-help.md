@@ -1,8 +1,8 @@
 ---
 title: 'Search the role group changes or administrator audit logs: Exchange 2013 Help'
 TOCTitle: Search the role group changes or administrator audit logs
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -119,7 +119,7 @@ Search-AdminAuditLog -StartDate 05/01/2012 -EndDate 10/03/2012 -ObjectID contoso
 
 If your searches return many log entries, we recommend that you use the procedure provided in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://technet.microsoft.com/library/87a0cd2d-dd59-4098-b740-75f0cc7bf8e7.aspx).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
 
 ### View details of audit log entries
 
@@ -129,9 +129,9 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 This procedure uses the following concepts:
 
-- [Arrays](https://technet.microsoft.com/library/599ed6d7-553a-41be-b4a3-aa75ab9dbb5d.aspx)
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [User-Defined Variables](https://technet.microsoft.com/library/8af62634-2e0b-4da0-ae94-a890f6f24d8a.aspx)
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. Decide the criteria you want to search for, run the **Search-AdminAuditLog** cmdlet, and store the results in a variable using the following command.
 
@@ -190,4 +190,4 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, Proh
 
 For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://technet.microsoft.com/library/52a221e0-ded1-44dc-a626-ca264eca4113.aspx).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-adminauditlogsearch).

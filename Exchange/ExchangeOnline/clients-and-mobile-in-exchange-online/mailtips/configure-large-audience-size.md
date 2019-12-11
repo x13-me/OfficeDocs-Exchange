@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 ms.date: 4/8/2015
 ms.reviewer: 
@@ -36,10 +36,10 @@ You can use Exchange Online PowerShell to configure various settings that define
 
 ## Use Exchange Online PowerShell to configure the large audience size for your organization
 
-You use the **Set-OrganizationConfig** cmdlet to configure the large audience size for your organization. When senders address messages to more recipients than the size you configure, they are shown the Large Audience MailTip. The large audience size is set to 25 by default. This example configures the large audience size to 50 in your organization.
+You use the **Set-OrganizationConfig** cmdlet to configure the large audience size for your organization. When the sender adds a distribution group that has more members than the configured large audience size, they are shown the Large Audience MailTip. The large audience size is set to 25 by default. This example configures the large audience size to 50 in your organization.
 
 ```
 Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
 ```
 
-For detailed syntax and parameter information, see [set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).

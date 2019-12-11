@@ -2,13 +2,13 @@
 title: 'Databases role: Exchange 2013 Help'
 TOCTitle: Databases role
 ms:assetid: 317d9945-668b-448e-963f-f7127b9b3d79
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876868(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876868(v=EXCHG.150)
 ms:contentKeyID: 49289220
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

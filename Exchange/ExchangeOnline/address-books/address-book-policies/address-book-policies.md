@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Online.
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.date: 
 ms.reviewer: 
@@ -37,7 +37,7 @@ For procedures involving ABPs, see [Address book policy procedures in Exchange O
 
 - ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
 
-- Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+- Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 ## How ABPs Work
 

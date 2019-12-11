@@ -2,13 +2,13 @@
 title: 'MyDistributionGroups role: Exchange 2013 Help'
 TOCTitle: MyDistributionGroups role
 ms:assetid: 0d23dec0-3832-43bb-bc89-e01408acd0e8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876849(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876849(v=EXCHG.150)
 ms:contentKeyID: 49289163
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

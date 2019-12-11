@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.date: 7/6/2018
 ms.reviewer: 

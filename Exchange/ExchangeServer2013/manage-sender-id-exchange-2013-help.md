@@ -2,13 +2,13 @@
 title: 'Manage Sender ID: Exchange 2013 Help'
 TOCTitle: Manage Sender ID
 ms:assetid: 2e7b646a-8a66-4be7-a7c1-0bd43bb79a5b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997136(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997136(v=EXCHG.150)
 ms:contentKeyID: 49287404
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

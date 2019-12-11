@@ -2,13 +2,13 @@
 title: 'Remove a role entry from a role: Exchange 2013 Help'
 TOCTitle: Remove a role entry from a role
 ms:assetid: 4736367a-750f-44d3-8a20-5149bd35e9ff
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd297947(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd297947(v=EXCHG.150)
 ms:contentKeyID: 49289243
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +49,7 @@ This example removes the **Enable-MailUser** cmdlet from the Seattle Server Admi
 Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351187\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-ManagementRoleEntry](https://technet.microsoft.com/library/dd351187\(v=exchg.150\)).
 
 ## Remove multiple entire role entries from a role
 
@@ -73,7 +73,7 @@ When you run the command with the *WhatIf* switch, the cmdlet returns a list of 
 Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)) and [Remove-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351187\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)) and [Remove-ManagementRoleEntry](https://technet.microsoft.com/library/dd351187\(v=exchg.150\)).
 
 ## Remove parameters from a role entry on a role
 
@@ -91,4 +91,4 @@ This example removes the *MaxSafeSenders*, *MaxSendSize*, *SecondaryAddress*, an
 Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).

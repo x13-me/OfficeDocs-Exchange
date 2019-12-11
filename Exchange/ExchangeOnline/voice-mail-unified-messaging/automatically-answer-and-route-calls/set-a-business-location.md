@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can specify the location of a business on a Unified Messaging (UM) auto attendant so that the location will be played for callers. By default, no business location is entered.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 19bbc20d-d11e-4e75-9bb4-c5d85cf17fc5
 ms.date: 11/17/2014
 ms.reviewer: 

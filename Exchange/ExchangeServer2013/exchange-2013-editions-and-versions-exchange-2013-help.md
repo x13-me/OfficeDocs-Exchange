@@ -2,13 +2,13 @@
 title: 'Exchange 2013: editions and versions: Exchange 2013 Help'
 TOCTitle: 'Exchange 2013: editions and versions'
 ms:assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232170(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232170(v=EXCHG.150)
 ms:contentKeyID: 50407954
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -30,7 +30,7 @@ As mentioned earlier, you can't use product keys to downgrade from Enterprise Ed
 
 For a list of Exchange 2013 versions and information on how to download and upgrade to the latest version of Exchange 2013, see the following topics:
 
-  - [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/en-us/library/hh135098\(v=exchg.150\))
+  - [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098\(v=exchg.150\))
 
   - [Upgrade Exchange 2013 to the latest cumulative update or service pack](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md)
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to add or remove address lists in offline address books (OABs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
 ms.date: 
 ms.reviewer: 
@@ -50,7 +50,7 @@ Similarly, to keep the OAB configured with Address List 1 and Address 2, but rem
 Set-OfflineAddressBook -Identity "Marketing OAB" -AddressLists "Address List 1","Address List 2"
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
 
 ## How do you know this worked?
 

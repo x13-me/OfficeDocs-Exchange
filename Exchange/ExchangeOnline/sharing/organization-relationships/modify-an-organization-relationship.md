@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6875cd79-41d4-422c-80a7-549ded9a1ea7
 ms.date: 4/29/2016
 ms.reviewer: 
@@ -108,7 +108,7 @@ To learn more about organization relationships, see [Organization relationships 
 
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/library/b689bf46-437b-4ac4-89ce-dcffc3a388f5.aspx) and [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-organizationrelationship) and [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
 
 ## How do you know this worked?
 

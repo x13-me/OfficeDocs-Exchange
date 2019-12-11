@@ -1,8 +1,8 @@
 ---
 title: 'Configure the large audience size for your organization: Exchange 2013 Help'
 TOCTitle: Configure the large audience size for your organization
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -37,4 +37,4 @@ You use the **Set-OrganizationConfig** cmdlet to configure the large audience si
 Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).

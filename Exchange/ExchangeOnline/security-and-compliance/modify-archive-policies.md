@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.date: 6/23/2018
 ms.reviewer: 
@@ -89,11 +89,11 @@ This example retrieves all archive DPTs and personal tags and disables them.
 Get-RetentionPolicyTag | ? {$_.RetentionAction -eq "MoveToArchive"} | Set-RetentionPolicyTag -RetentionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-RetentionPolicyTag](https://technet.microsoft.com/library/6ab21a02-7283-456a-a1c7-1a09b1722981.aspx) and [Get-RetentionPolicyTag](https://technet.microsoft.com/library/5cddcfea-6f67-4481-9c00-5b13c11d5ced.aspx).
+For detailed syntax and parameter information, see [Set-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentionpolicytag) and [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicytag).
 
 ## How do you know this worked?
 
-Use the [Get-RetentionPolicyTag](https://technet.microsoft.com/library/5cddcfea-6f67-4481-9c00-5b13c11d5ced.aspx) cmdlet to retrieve settings of the retention tag.
+Use the [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicytag) cmdlet to retrieve settings of the retention tag.
 
 This command retrieves properties of the `Default 2 year move to archive` retention tag and pipes the output to the **Format-List** cmdlet to display all properties in a list format.
 

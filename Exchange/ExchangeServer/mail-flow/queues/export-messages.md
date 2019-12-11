@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to export messages from queues in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 688b342c-f380-4fe0-afce-7e38cf490627
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -115,7 +115,7 @@ Get-Message -Queue Mailbox01\Contoso.com -ResultSize Unlimited | ForEach-Object 
 To export specific messages from all queues on a server, and use the **InternetMessageID** value of each message as the file name, use the following syntax:
 
 ```
-Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] -ResultSize Unlimited | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
+Get-Message -Filter "<MessageFilter>" [-Server <ServerIdentity>] -ResultSize Unlimited | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
 This example takes the following actions on the server named Mailbox01:
@@ -131,11 +131,11 @@ Suspend-Queue -Server Mailbox01
 ```
 
 ```
-Suspend-Message -Filter {FromAddress -like "*@fabrikam.com"} -Server Mailbox01
+Suspend-Message -Filter "FromAddress -like '*@fabrikam.com'" -Server Mailbox01
 ```
 
 ```
-Get-Message -Filter {FromAddress -like "*@fabrikam.com"} -Server Mailbox01 -ResultSize Unlimited | ForEach-Object {$Temp="D:\Fabrikam Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
+Get-Message -Filter "FromAddress -like '*@fabrikam.com'" -Server Mailbox01 -ResultSize Unlimited | ForEach-Object {$Temp="D:\Fabrikam Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
 ## Use the Exchange Management Shell to export all messages from all queues on a server

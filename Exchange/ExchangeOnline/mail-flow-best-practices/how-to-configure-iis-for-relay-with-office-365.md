@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "If a printer, scanner, or LOB application can't send email using Office 365, you might need to set up IIS to work as an intermediary. Learn how. "
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: eb57abd2-3859-4e79-b721-2ed1f0f579c9
 ms.reviewer: 
 title: How to configure IIS for relay with Office 365
@@ -36,7 +36,7 @@ You might want to do this in the following scenarios:
 Before proceeding, review [How to set up a multifunction device or application to send email using Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md) as there may be an available option that doesn't require setting up an additional server to relay.
 
 > [!NOTE]
-> • These instructions can be modified for other SMTP relays that you might have in your organization. <br><br>• The SMTP component that's discussed in this topic is in IIS 6.0, and support for IIS 6.0 has ended with the [support of Windows 2003](https://support.microsoft.com/lifecycle/search/810). We will continue to do a "best effort support" on this feature. We can continue to address most functionality questions, but we can't help with IIS 6.0 product issues or deep technical investigations. We recommend that you use a supported version of Exchange instead of IIS SMTP.
+> • These instructions can be modified for other SMTP relays that you might have in your organization. <br><br>• The SMTP component that's discussed in this topic is in IIS 6.0, and support for IIS 6.0 has ended with the [support of Windows 2003](https://support.microsoft.com/lifecycle/search/810). This article is here for reference purposes, but we recommend that you use a supported version of Exchange Server instead of IIS SMTP. We will continue to do a "best effort support" on this feature, however, no bug fixes or improvements are being made to this product. We can continue to address functionality questions as best we can, but we can't help with IIS 6.0 product issues or deep technical investigations. Please expect this product to be removed from future versions of Windows. 
 
 ## What you need to know before you begin
 

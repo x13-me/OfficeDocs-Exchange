@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange 2019 Setup can't continue because the target computer isn't a member of an Active Directory domain.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.ComputerNotPartofDomain
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: feb08845-6d44-4760-9932-6eca22f35eec
 ms.date: 8/2/2018
 ms.reviewer: 

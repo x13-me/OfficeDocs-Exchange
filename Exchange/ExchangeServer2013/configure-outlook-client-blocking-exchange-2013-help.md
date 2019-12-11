@@ -2,13 +2,13 @@
 title: 'Configure Outlook client blocking: Exchange 2013 Help'
 TOCTitle: Configure Outlook client blocking
 ms:assetid: 3a579c83-8bc7-4adc-a25c-8eb6eed7220c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335207(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd335207(v=EXCHG.150)
 ms:contentKeyID: 50873794
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -20,7 +20,7 @@ In Exchange Server 2013, you can use retention policies or managed folders for m
 
 You can block users who are running older versions of Outlook from accessing their Exchange mailboxes. You can also block access on a per-mailbox or on a per-Client Access server basis.
 
-For other management tasks related to MRM, see [Messaging Records Management Procedures](https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365).
+For other management tasks related to MRM, see [Messaging Records Management Procedures](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## MRM Feature Availability by Client Application and Version
 
@@ -156,7 +156,7 @@ This example restores access to a mailbox that's blocked by a version of Outlook
 Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/en-us/library/bb125264\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/bb125264\(v=exchg.150\)).
 
 ## Block Outlook versions on a Client Access server
 
@@ -171,4 +171,4 @@ This example blocks Outlook clients prior to version 12.0.0 from accessing the m
 Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
 ```
 
-For detailed syntax and parameter definition, see [Set-RpcClientAccess](https://technet.microsoft.com/en-us/library/dd351072\(v=exchg.150\)).
+For detailed syntax and parameter definition, see [Set-RpcClientAccess](https://technet.microsoft.com/library/dd351072\(v=exchg.150\)).

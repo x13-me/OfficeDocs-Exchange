@@ -2,13 +2,13 @@
 title: 'MyDiagnostics role: Exchange 2013 Help'
 TOCTitle: MyDiagnostics role
 ms:assetid: 62ba4bdd-6301-4daf-9368-3b393213ec1d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979793(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd979793(v=EXCHG.150)
 ms:contentKeyID: 49289277
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use enhanced filtering for connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Office 365.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 
 ms.date: 
 ms.reviewer: 
@@ -62,7 +62,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 - You apply Enhanced Filtering for Connectors individually on each inbound connector.
 
-- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 - The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
@@ -71,7 +71,7 @@ Using the previous example, you would configure the IP address of the third-part
 1. Open the Security and Compliance Center, expand **Threat Management**, choose **Policy**, and then choose **Enhanced Filtering**.
 
    > [!TIP]
-   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/?hash=/enhancedfiltering](https://protection.office.com/?hash=/enhancedfiltering)
+   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skiplisting](https://protection.office.com/skiplisting)
 
 2. Select the inbound connector that you want to configure.
 
@@ -146,7 +146,7 @@ For detailed syntax and parameter information, see [Set-InboundConnector](https:
 
 The ultimate goal of Enhanced Filtering is actually to show administrators that changing the MX record to EOP is not only possible but also better. It simplifies the mail flow in your environment and it allows you to see the value of using EOP, which you already purchased as part of Office 365.  This can easily be measured using variety of reports available in the [Reports dashboard](https://protection.office.com/insightdashboard).
 
-You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/view-email-security-reports):
+You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/view-email-security-reports):
 
 - Threat Protection Status report
 

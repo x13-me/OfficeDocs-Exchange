@@ -2,13 +2,13 @@
 title: 'Manage role group members: Exchange 2013 Help'
 TOCTitle: Manage role group members
 ms:assetid: c064729d-7cda-47fc-b105-acf4b300d430
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657492(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657492(v=EXCHG.150)
 ms:contentKeyID: 49289402
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,9 +49,9 @@ To give a user the permissions that are granted by a role group, you need to add
 
 ## Use the Shell to add members to a role group
 
-To add a role group member, see the [Examples](https://technet.microsoft.com/en-us/dd638207\(exchg.150\)#examples) section in [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207\(v=exchg.150\)).
+To add a role group member, see the [Examples](https://technet.microsoft.com/dd638207\(exchg.150\)#examples) section in [Add-RoleGroupMember](https://technet.microsoft.com/library/dd638207\(v=exchg.150\)).
 
-To add multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/en-us/dd638116\(exchg.150\)#examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638116\(v=exchg.150\)).
+To add multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/dd638116\(exchg.150\)#examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/dd638116\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -77,9 +77,9 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 ## Use the Shell to remove members from a role group
 
-To remove a role group member, see the [Examples](https://technet.microsoft.com/en-us/dd638208\(exchg.150\)#examples) section in [Remove-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638208\(v=exchg.150\)).
+To remove a role group member, see the [Examples](https://technet.microsoft.com/dd638208\(exchg.150\)#examples) section in [Remove-RoleGroupMember](https://technet.microsoft.com/library/dd638208\(v=exchg.150\)).
 
-To remove multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/en-us/dd638116\(exchg.150\)#examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638116\(v=exchg.150\)).
+To remove multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/dd638116\(exchg.150\)#examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/dd638116\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -105,4 +105,4 @@ The members of a role group are granted the permissions provided by the manageme
 
 ## Use the Shell to view the members of a role group
 
-To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638093\(v=exchg.150\)).
+To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://technet.microsoft.com/library/dd638093\(v=exchg.150\)).

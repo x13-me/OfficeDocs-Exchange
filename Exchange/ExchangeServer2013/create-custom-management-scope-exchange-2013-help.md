@@ -1,8 +1,8 @@
 ---
 title: 'Create a custom management scope for In-Place eDiscovery searches: Exchange 2013 Help'
 TOCTitle: Create a custom management scope for In-Place eDiscovery searches
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or Exchange Server 2019 deployment plan.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms.date: 7/9/2018
 ms.reviewer: 

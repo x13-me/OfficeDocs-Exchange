@@ -2,13 +2,13 @@
 title: 'Sharing: Exchange 2013 Help'
 TOCTitle: Sharing
 ms:assetid: 09e6732a-4e99-44d0-801d-9463fdc57a9b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638083(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638083(v=EXCHG.150)
 ms:contentKeyID: 48384809
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

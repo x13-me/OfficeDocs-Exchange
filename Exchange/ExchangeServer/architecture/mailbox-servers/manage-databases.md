@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms.date: 7/3/2018
 ms.reviewer:
@@ -23,7 +23,7 @@ A mailbox database is a unit of granularity where mailboxes are created and stor
 
 - Estimated time to complete each procedure: 10 minutes
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -44,7 +44,7 @@ A mailbox database is a unit of granularity where mailboxes are created and stor
 
 ### Use the Exchange Management Shell to create a mailbox database
 
-For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](https://technet.microsoft.com/library/5008090b-e776-4ff6-807c-208e00f4daab.aspx).
+For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/new-mailboxdatabase).
 
 ### How do you know this worked?
 
@@ -60,11 +60,11 @@ To verify that you have successfully created a database, do the following:
 
 ## Get mailbox database properties
 
-For detailed syntax and parameter information, see [Get-MailboxDatabase](https://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx).
+For detailed syntax and parameter information, see [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase).
 
 ### Use the Exchange Management Shell to get mailbox database properties
 
-For an example of how to get mailbox database properties, see Example 3 in [Get-MailboxDatabase](https://docs.microsoft.com/en-us/powershell/module/exchange/mailbox-databases-and-servers/Get-MailboxDatabase?view=exchange-ps).
+For an example of how to get mailbox database properties, see Example 3 in [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/Get-MailboxDatabase?view=exchange-ps).
 
 ### How do you know this worked?
 
@@ -84,7 +84,7 @@ To verify that you have successfully retrieved your mailbox database information
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
-   - **Database path**: This read-only field displays the full path to the Exchange database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](https://technet.microsoft.com/library/d6873ded-d521-428f-821f-d10ea2c44b7e.aspx) cmdlet.
+   - **Database path**: This read-only field displays the full path to the Exchange database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/move-databasepath) cmdlet.
 
    - **Last full backup**: This read-only field displays the date and time of the last complete backup of the mailbox database.
 
@@ -136,7 +136,7 @@ To verify that you have successfully retrieved your mailbox database information
 
 ### Use the Exchange Management Shell to set mailbox database properties
 
-For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
+For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase).
 
 ### How do you know this worked?
 
@@ -152,11 +152,11 @@ To verify that you have successfully set the attributes, do the following:
 
 ## Move a mailbox database path
 
-For detailed syntax and parameter information, see [Move-DatabasePath](https://technet.microsoft.com/library/d6873ded-d521-428f-821f-d10ea2c44b7e.aspx).
+For detailed syntax and parameter information, see [Move-DatabasePath](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/move-databasepath).
 
 ### Use the Exchange Management Shell to move a mailbox database path
 
-For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](https://technet.microsoft.com/library/d6873ded-d521-428f-821f-d10ea2c44b7e.aspx).
+For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/move-databasepath).
 
 ### How do you know this worked?
 
@@ -168,11 +168,11 @@ To verify that you have successfully moved the database path, do the following:
 
 ## Mount a mailbox database
 
-For detailed syntax and parameter information, see [Mount-Database](https://technet.microsoft.com/library/76a57f6a-a6c6-4c65-abf8-190522d47037.aspx).
+For detailed syntax and parameter information, see [Mount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/mount-database).
 
 ### Use the Exchange Management Shell to mount a mailbox database
 
-For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](https://technet.microsoft.com/library/76a57f6a-a6c6-4c65-abf8-190522d47037.aspx).
+For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/mount-database).
 
 ### How do you know this worked?
 
@@ -186,11 +186,11 @@ To verify that you have successfully mounted the mailbox database, do the follow
 
 ## Dismount a mailbox database
 
-For detailed syntax and parameter information, see [Dismount-Database](https://technet.microsoft.com/library/e261955b-a9f0-4d87-bf56-f9e67ea5ba3f.aspx).
+For detailed syntax and parameter information, see [Dismount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/dismount-database).
 
 ### Use the Exchange Management Shell to dismount a mailbox database
 
-For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](https://technet.microsoft.com/library/e261955b-a9f0-4d87-bf56-f9e67ea5ba3f.aspx).
+For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/dismount-database).
 
 ### How do you know this worked?
 
@@ -210,7 +210,7 @@ To verify that you have successfully dismounted the database, do the following:
 
 ### Use the Exchange Management Shell to remove a mailbox database
 
-For detailed syntax and parameter information, see [Remove-MailboxDatabase](https://technet.microsoft.com/library/4d07d736-1dd7-43af-9f54-37d7c648572e.aspx).
+For detailed syntax and parameter information, see [Remove-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/remove-mailboxdatabase).
 
 1. Run the following command to remove the mailbox database MyDatabase.
 

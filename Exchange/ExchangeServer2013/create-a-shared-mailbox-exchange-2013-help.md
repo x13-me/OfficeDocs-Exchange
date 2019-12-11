@@ -2,13 +2,13 @@
 title: 'Create a shared mailbox: Exchange 2013 Help'
 TOCTitle: Create a shared mailbox
 ms:assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150570(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150570(v=EXCHG.150)
 ms:contentKeyID: 47560108
 ms.date: 12/10/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -73,13 +73,13 @@ To learn how users can access and use shared mailboxes, check out the following:
 This example creates the shared mailbox Sales Department and grants Full Access and Send on Behalf permissions for the security group MarketingSG. Users who are members of the security group will be granted the permissions to the mailbox.
 
 > [!NOTE]
-> This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See <A href="https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Manage mail-enabled security groups</A>.
+> This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See <A href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Manage mail-enabled security groups</A>.
 
 ```powershell
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
 
 ## Which permissions should you use?
 
@@ -89,7 +89,7 @@ You can use the following permissions with a shared mailbox.
 
 - **Send As**: The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Kweku logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email.
 
-- **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet with the *GrantSendonBehalf* parameter.
+- **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet with the *GrantSendonBehalf* parameter.
 
 ## More information
 

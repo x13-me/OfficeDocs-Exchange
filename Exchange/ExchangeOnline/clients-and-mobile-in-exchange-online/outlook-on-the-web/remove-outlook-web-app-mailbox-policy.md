@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can remove a Microsoft Outlook on the web mailbox policy from an Exchange organization by using either the EAC or Exchange Online PowerShell.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
 ms.date: 
 ms.reviewer: 
@@ -58,7 +58,7 @@ This example removes the Outlook on the web mailbox policy named Sales Associate
 Remove-OwaMailboxPolicy -Identity "Sales Associates"
 ```
 
-For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](https://technet.microsoft.com/library/834bee7a-1044-4628-9d0d-1601e88a73f8.aspx).
+For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/remove-owamailboxpolicy).
 
 ## How do you know this worked?
 

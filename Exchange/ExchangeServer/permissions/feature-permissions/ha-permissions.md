@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms.date: 7/5/2018
 ms.reviewer:
@@ -17,7 +17,7 @@ manager: serdars
 
 # High availability and site resilience permissions
 
-The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High Availability and Site Resilience](https://technet.microsoft.com/library/6628285e-d07c-443d-866b-be784ad1ed1e.aspx).
+The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High availability and site resilience](../../high-availability/high-availability.md).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 
@@ -30,7 +30,7 @@ To find out what permissions you need to perform the procedure or run the cmdlet
     > [!NOTE]
     > You must be assigned the Role Management management role to run the **Get-ManagementRoleAssignment** cmdlet. If you don't have permissions to run the **Get-ManagementRoleAssignment** cmdlet, ask your Exchange administrator to retrieve the role groups or management roles assigned to you.
 
-If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://technet.microsoft.com/library/dd351237.aspx).
+If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://docs.microsoft.com/exchange/delegate-role-assignments-exchange-2013-help).
 
 ## Database availability group permissions
 
@@ -40,10 +40,10 @@ Users who are assigned the View-Only Management role group can view the configur
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Database availability group membership|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://technet.microsoft.com/library/0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc.aspx)|
-|Database availability group properties|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://technet.microsoft.com/library/0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc.aspx)|
-|Database availability groups|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://technet.microsoft.com/library/0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc.aspx)|
-|Database availability networks|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Availability Groups](https://technet.microsoft.com/library/0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc.aspx)|
+|Database availability group membership|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability group properties|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability groups|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
+|Database availability networks|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Availability Groups](https://docs.microsoft.com/exchange/database-availability-groups-role-exchange-2013-help)|
 
 ## Mailbox database copy permissions
 
@@ -51,7 +51,7 @@ You can use the features in the following table to add, remove, update, and acti
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|Database switchover|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx)|
-|Mailbox database copies|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx)|
-|Server switchover|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx)|
-|Update a mailbox database copy|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](https://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx)|
+|Database switchover|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Mailbox database copies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Server switchover|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|
+|Update a mailbox database copy|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Database Copies](https://docs.microsoft.com/exchange/database-copies-role-exchange-2013-help)|

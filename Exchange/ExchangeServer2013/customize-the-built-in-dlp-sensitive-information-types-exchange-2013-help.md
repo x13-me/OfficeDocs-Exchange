@@ -1,8 +1,8 @@
 ---
 title: 'Customize the built-in DLP sensitive information types: Exchange 2013 Help'
 TOCTitle: Customize the built-in DLP sensitive information types
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -36,7 +36,7 @@ To learn what the different parts of rules are and what they do, check out the [
 
 ## Export the XML file of the current rules
 
-To export the XML, you need to use the Exchange Management Shell. For more information, see [Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
+To export the XML, you need to use the Exchange Management Shell. For more information, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
 
 1. In the Exchange Management Shell, type `Get-ClassificationRuleCollection` to display your organization's rules on screen. If you haven't created your own, you'll only see the default, built-in rules, labeled "Microsoft Rule Package."
 
@@ -189,7 +189,7 @@ To upload your rule, you need to do the following.
 
 1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
 
-2. Connect to the [Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
+2. Connect to the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
 
 3. Replace `\C:\custompath\` with a real file path and run the following command:
 

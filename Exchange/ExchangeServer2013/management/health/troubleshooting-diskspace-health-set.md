@@ -2,13 +2,13 @@
 title: Troubleshooting DiskSpace Health Set
 TOCTitle: Troubleshooting DiskSpace Health Set
 ms:assetid: bc50a478-de70-48cf-b481-e01498729d7b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.diskspace(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.diskspace(v=EXCHG.150)
 ms:contentKeyID: 49720879
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,13 +2,13 @@
 title: 'Configure Kerberos authentication for load-balanced Client Access servers'
 TOCTitle: Configuring Kerberos authentication for load-balanced Client Access servers
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808312(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -78,7 +78,7 @@ When you set up the ASA credential, keep these guidelines in mind:
 
     Where *EXCH2013ASA* is the name of the account and the attribute to be modified is *msDS-SupportedEncryptionTypes* with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://technet.microsoft.com/library/hh849725.aspx) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
 
 ## Cross-forest scenarios
 
