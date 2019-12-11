@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about add-ins for Outlook in Exchange Online.
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms.date: 
 ms.reviewer: 

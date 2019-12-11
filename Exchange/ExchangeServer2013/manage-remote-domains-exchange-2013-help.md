@@ -2,13 +2,13 @@
 title: 'Manage remote domains: Exchange 2013 Help'
 TOCTitle: Manage remote domains
 ms:assetid: 41a86907-bd9e-40d0-94d3-6deb95a0bffa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997639(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997639(v=EXCHG.150)
 ms:contentKeyID: 51438504
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewRemoteDomainWizardForm.NewRemoteDomainWizardPage
@@ -69,7 +69,7 @@ To verify that you have successfully created a remote domain, do the following:
 
 ## Use the Shell to configure a remote domain
 
-You configure the settings in the remote domain entry using the **Set-RemoteDomain** cmdlet. There are many different settings that relate to automatic replies, message format and encoding, and other message settings. For more information, see [Set-RemoteDomain](https://technet.microsoft.com/en-us/library/aa997857\(v=exchg.150\)).
+You configure the settings in the remote domain entry using the **Set-RemoteDomain** cmdlet. There are many different settings that relate to automatic replies, message format and encoding, and other message settings. For more information, see [Set-RemoteDomain](https://technet.microsoft.com/library/aa997857\(v=exchg.150\)).
 
 To configure remote domains for specific scenarios, see the following topics:
 

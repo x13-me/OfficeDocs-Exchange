@@ -1,8 +1,8 @@
 ---
 title: 'Preserve Bcc and expanded distribution group recipients for eDiscovery: Exchange 2013 Help'
 TOCTitle: Preserve Bcc and expanded distribution group recipients for eDiscovery
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date: 
 ms.reviewer: 

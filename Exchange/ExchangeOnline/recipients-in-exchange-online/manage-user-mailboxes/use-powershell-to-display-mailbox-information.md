@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Office 365 organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
 ms.date: 3/1/2018
 ms.reviewer: 
@@ -25,7 +25,7 @@ To give you an idea of some of the things you can do with PowerShell in Office 3
 
 ## Before you begin
 
-To learn how to use remote PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+To learn how to use remote PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## Display mailbox information with Exchange Online PowerShell
 

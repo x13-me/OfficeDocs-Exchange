@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: You can use the EAC or the Exchange Management Shell to configure the properties of a database availability group (DAG), including DAG IP address configuration, the witness server, and the witness directory.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 50daeac5-a16f-4362-a325-19e0fe25d59d
 ms.date: 6/7/2018
 ms.reviewer:
@@ -133,6 +133,6 @@ To verify that you've successfully configured the DAG, do the following:
 
 [Manage database availability group membership](dag-memberships.md)
 
-[Get-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/ea64d731-55ae-4a39-9eec-a72aa36d6dad.aspx)
+[Get-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/get-databaseavailabilitygroup)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)

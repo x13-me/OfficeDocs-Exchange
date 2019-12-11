@@ -2,13 +2,13 @@
 title: 'Prepare mailboxes for cross-forest moves using the Prepare-MoveRequest.ps1 script in the Shell'
 TOCTitle: Prepare mailboxes for cross-forest moves using the Prepare-MoveRequest.ps1 script in the Shell
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861103(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee861103(v=EXCHG.150)
 ms:contentKeyID: 49360509
 ms.date: 11/22/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -24,7 +24,7 @@ To run the **New-MoveRequest** and **New-MigrationBatch** cmdlets, a mail user m
 
 The sample Windows PowerShell script described in this topic supports this task by synchronizing mailbox users from an Exchange 2013 source forest to Exchange 2013 target forests as mail-enabled users. The script copies the Active Directory attributes of the mailbox users in the source forest to the target forest, and then uses the **Update-Recipient** cmdlet to turn the target objects into mail-enabled users.
 
-For more information about using and writing scripts, see [Scripting with the Exchange Management Shell](https://technet.microsoft.com/en-us/library/bb123798\(v=exchg.150\)). For more information about preparing for cross-forest moves, see [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md).
+For more information about using and writing scripts, see [Scripting with the Exchange Management Shell](https://technet.microsoft.com/library/bb123798\(v=exchg.150\)). For more information about preparing for cross-forest moves, see [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md).
 
 Looking for other management tasks related to remote move requests? Check out [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).
 

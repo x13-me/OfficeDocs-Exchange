@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the support life cycle for Exchange
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.date:
 ms.reviewer: 
 title: Exchange Server supportability matrix

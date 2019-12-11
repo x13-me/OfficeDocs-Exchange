@@ -1,8 +1,8 @@
 ---
 title: 'Create an address list by using recipient filters: Exchange 2013 Help'
 TOCTitle: Create an address list by using recipient filters
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 This topic explains how to create an address list by using recipient filters. To learn more about address lists, see [Address lists](address-lists-exchange-2013-help.md).
 
-For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Address list procedures](address-list-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -38,13 +38,13 @@ For additional management tasks related to address lists, see [Managing Address 
 This example creates an address list for all users with Exchange mailboxes who reside in Washington or Oregon.
 
 ```powershell
-New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates an address list for all users with Exchange mailboxes who have `AgencyB` as the value for the _CustomAttribute15_ parameter.
 
 ```powershell
-New-AddressList -Name "AgencyB" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)}
+New-AddressList -Name "AgencyB" -RecipientFilter "(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).

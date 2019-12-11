@@ -1,10 +1,10 @@
 ---
 localization_priority: Critical
 ms.topic: get-started-article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
 ms.date: 7/27/2018
 ms.reviewer: 

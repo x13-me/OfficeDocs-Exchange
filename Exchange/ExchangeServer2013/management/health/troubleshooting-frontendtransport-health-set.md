@@ -2,13 +2,13 @@
 title: Troubleshooting FrontendTransport Health Set
 TOCTitle: Troubleshooting FrontendTransport Health Set
 ms:assetid: 397fdb57-32d2-4cf8-9243-b95dc17031bb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.frontendtransport(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.frontendtransport(v=EXCHG.150)
 ms:contentKeyID: 49720760
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

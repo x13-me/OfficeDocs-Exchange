@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can force users who receive protected voice mail messages to use the Play on Phone feature to listen to their messages. Or, if the client software doesn't support rights management, users must use Outlook Voice Access to listen to messages.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
 ms.date: 11/17/2014
 ms.reviewer: 

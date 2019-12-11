@@ -2,13 +2,13 @@
 title: 'Configure Deleted Item retention and Recoverable Items quotas'
 TOCTitle: Configure Deleted Item retention and Recoverable Items quotas
 ms:assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364752(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee364752(v=EXCHG.150)
 ms:contentKeyID: 50470878
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -62,7 +62,7 @@ This example configures April Stewart's mailbox to retain deleted items for 30 d
 Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## Use the Shell to configure recoverable items quotas for a mailbox
 
@@ -78,7 +78,7 @@ Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -Recove
 > [!NOTE]
 > To configure a mailbox to use different recoverable items quotas than the mailbox database in which it resides, you must set the <EM>UseDatabaseQuotaDefaults</EM> parameter to <CODE>$false</CODE>.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
 
 ## Use the Shell to configure deleted item retention for a mailbox database
 
@@ -91,7 +91,7 @@ This example configures a deleted item retention period of 10 days for the mailb
 Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).
 
 ## Use the Shell to configure recoverable items quotas for a mailbox database
 
@@ -104,4 +104,4 @@ This example configures a recoverable items warning quota of 15 GB and a recover
 Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).

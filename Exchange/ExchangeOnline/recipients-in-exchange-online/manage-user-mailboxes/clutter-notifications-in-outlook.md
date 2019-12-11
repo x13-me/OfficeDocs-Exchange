@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Clutter is a feature in Office 365 designed to help users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: abdd0474-db84-49b1-a915-f5710f206a58
 ms.date: 12/9/2016
 ms.reviewer: 

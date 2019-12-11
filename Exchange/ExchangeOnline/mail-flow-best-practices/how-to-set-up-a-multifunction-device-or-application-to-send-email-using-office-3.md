@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
 ms.reviewer: 
@@ -34,9 +34,9 @@ This article explains how you can send email from devices and business applicati
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
 > [!NOTE]
-> Beginning September 1st, 2018, Office 365 is slowly rolling out changes to SMTP client submission (also known as SMTP Authenticated Submission), which may affect your devices and your applications that send emails. For more information, see the KB article [Improvements to the SMTP Authenticated Submission client protocol](https://support.microsoft.com/help/4458479/improvements-in-smtp-authenticated-submission-client-protocol).
+> Beginning November 1st, 2019, Office 365 is slowly turning off the TLS cipher algorithm 3DES. If you are using devices or applications that only support 3DES, TLS will start failing. As TLS is mandatory for the SMTP AUTH client submission (also known as Authenticated SMTP or SMTP AUTH for short), you may experience emails no longer sending. You will need to upgrade or update all of your devices and applications to use the new TLS version and ciphers.
 
-## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP client submission
+## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP AUTH client submission
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
 
@@ -44,13 +44,13 @@ This option supports most usage scenarios and it's the easiest to set up. Choose
 
 - You want to send email to people inside and outside your organization.
 
-To configure your device or application, connect directly to Office 365 using the SMTP client submission endpoint **smtp.office365.com**.
+To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
 Each device/application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device/application.
 
-### How to set up SMTP client submission
+### How to set up SMTP AUTH client submission
 
-Enter the following settings directly on your device or in the application **as their guide instructs** (it might use different terminology than this article). As long as your scenario meets the requirements for SMTP client submission, the following settings will enable you to send email from your device or application.
+Enter the following settings directly on your device or in the application **as their guide instructs** (it might use different terminology than this article). As long as your scenario meets the requirements for SMTP AUTH client submission, the following settings will enable you to send email from your device or application.
 
 |**Device or Application setting**|**Value**|
 |:-----|:-----|
@@ -67,26 +67,26 @@ Determine what version of TLS your device supports by checking the device guide 
 
 - Use direct send (Option 2) or Office 365 SMTP relay (Option 3) for sending mail instead (depending on your requirements).
 
-- If it is essential to use SMTP client submission and your printer only supports SSL 3.0, you can set up an alternative configuration called Indirect SMTP client submission. This uses a local SMTP relay server to connect to Office 365. This is a much more complex setup. Instructions can be found here: [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md).
+- If it is essential to use SMTP AUTH client submission and your printer only supports SSL 3.0, you can set up an alternative configuration called Indirect SMTP AUTH client submission. This uses a local SMTP relay server to connect to Office 365. This is a much more complex setup. Instructions can be found here: [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md).
 
 > [!NOTE]
-> If your device recommends or defaults to port 465, it does not support SMTP client submission.
+> If your device recommends or defaults to port 465, it does not support SMTP AUTH client submission.
 
-#### How SMTP client submission works
+#### How SMTP AUTH client submission works
 
 The following diagram gives you a conceptual overview of what you're environment will look like.
 
 ![Shows how a multifunction printer connects to Office 365 using SMTP client submission.](../media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
 
-#### Features of SMTP client submission
+#### Features of SMTP AUTH client submission
 
-- SMTP client submission allows you to send email to people in your organization as well as outside your company.
+- SMTP AUTH client submission allows you to send email to people in your organization as well as outside your company.
 
 - This method bypasses most spam checks for email sent to people in your organization. This can help protect your company IP addresses from being blocked by a spam list.
 
 - With this method, you can send email from any location or IP address, including your (on-premises) organization's network, or a third-party cloud hosting service, like Microsoft Azure.
 
-#### Requirements for SMTP client submission
+#### Requirements for SMTP AUTH client submission
 
 - **Authentication**: You must be able to configure a user name and password to send email on the device.
 
@@ -101,7 +101,7 @@ The following diagram gives you a conceptual overview of what you're environment
 > [!NOTE]
 > For information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841).
 
-#### Limitations of SMTP client submission
+#### Limitations of SMTP AUTH client submission
 
 You can only send from one email address unless your device can store login credentials for multiple Office 365 mailboxes. Office 365 imposes a limit of 30 messages sent per minute, and a limit of 10,000 recipients per day.
 
@@ -322,7 +322,7 @@ Here's a comparison of each configuration option and the features they support.
 |Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
-|Device or application server must support TLS|Required|Required|Required|
+|Device or application server must support TLS|Required|Optional|Optional|
 |Requires authentication|Office 365 user name and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Office 365.|
 |**Limitations**|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).|

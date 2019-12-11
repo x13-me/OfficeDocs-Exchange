@@ -1,8 +1,8 @@
 ---
 title: 'Create a public folder: Exchange 2013 Help'
 TOCTitle: Create a public folder
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -63,7 +63,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 > [!IMPORTANT]
 > Don't use a backslash (\) in the name when creating a public folder.
 
-For detailed syntax and parameter information, see [New-PublicFolder](https://technet.microsoft.com/library/18b837bf-9ef7-4edf-8728-7f6bd346e75d.aspx).
+For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-publicfolder).
 
 ## How do you know this worked?
 

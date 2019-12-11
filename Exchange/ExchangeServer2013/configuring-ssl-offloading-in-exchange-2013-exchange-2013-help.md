@@ -2,13 +2,13 @@
 title: 'Configuring SSL offloading in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Configuring SSL offloading in Exchange 2013
 ms:assetid: 654cc2c2-918b-48fc-9532-9c8e3012810d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn635115(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn635115(v=EXCHG.150)
 ms:contentKeyID: 61200287
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,9 +35,9 @@ One of the biggest advantages to SSL offloading is having the ability to more ea
 
 - To see what permissions you need for Client Access servers, see "Outlook Web App permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
 
-- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
 
-- To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa996305\(v=exchg.150\)).
+- To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://technet.microsoft.com/library/aa996305\(v=exchg.150\)).
 
 - To use a new certificate, you must use EAC or the Shell to create, import, and enable the new certificate. For details, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
 

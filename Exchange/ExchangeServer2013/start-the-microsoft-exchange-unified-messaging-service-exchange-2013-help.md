@@ -2,13 +2,13 @@
 title: 'Start the Microsoft Exchange Unified Messaging service: Exchange 2013 Help'
 TOCTitle: Start the Microsoft Exchange Unified Messaging service
 ms:assetid: b54008e6-172e-4435-8516-57cff740e89c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124330(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124330(v=EXCHG.150)
 ms:contentKeyID: 49315502
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

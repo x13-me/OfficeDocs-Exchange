@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms.date: 7/5/2018
 ms.reviewer: 

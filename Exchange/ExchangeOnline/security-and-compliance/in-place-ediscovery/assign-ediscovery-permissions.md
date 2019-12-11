@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -24,7 +24,7 @@ If you want users to be able to use Microsoft Exchange Server In-Place eDiscover
 > [!CAUTION]
 > Members of the Discovery Management role group can access sensitive message content. Specifically, these members can use [In-Place eDiscovery](in-place-ediscovery.md) to search all mailboxes in your Exchange organization, preview messages (and other mailbox items), copy them to a Discovery mailbox and export the copied messages to a .pst file. In most organizations, this permission is granted to legal, compliance, or Human Resources personnel. >
 
-To learn more about the Discovery Management role group, see [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx). To learn more about Role Based Access Control (RBAC), see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+To learn more about the Discovery Management role group and role based access control (RBAC), see [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md).
 
 Interested in scenarios where this procedure is used? See the following topics:
 
@@ -64,7 +64,7 @@ This example adds the user Bsuneja to the Discovery Management role group.
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
-For detailed syntax and parameter information, see [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+For detailed syntax and parameter information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

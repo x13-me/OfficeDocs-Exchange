@@ -2,13 +2,13 @@
 title: 'Upgrade from Exchange 2007  to Exchange 2013: Exchange 2013 Help'
 TOCTitle: Upgrade from Exchange 2007  to Exchange 2013
 ms:assetid: a604b96d-2a51-480f-937f-45ad753c2cad
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ898581(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ898581(v=EXCHG.150)
 ms:contentKeyID: 50874005
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

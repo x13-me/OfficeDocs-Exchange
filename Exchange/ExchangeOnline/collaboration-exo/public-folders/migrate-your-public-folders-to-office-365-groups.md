@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Why you should or shouldn't migrate your Exchange public folders to Office 365 Groups."
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.date: 7/20/2018
 ms.reviewer: 
@@ -113,7 +113,7 @@ The following prerequisites are required in your Exchange environment before you
 
    - Exchange 2016 CU4 or later
 
-2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) for more information.
+2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) for more information.
 
 ### Migration instructions
 

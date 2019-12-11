@@ -2,13 +2,13 @@
 title: 'Exchange Server 2013 Performance Recommendations: Exchange 2013 Help'
 TOCTitle: Exchange Server 2013 Performance Recommendations
 ms:assetid: 6d0aea68-10d5-4a18-b632-a814ce3daa43
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn879084(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn879084(v=EXCHG.150)
 ms:contentKeyID: 63917937
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,7 +61,7 @@ More about Exchange 2013 architectural changes, and background information on ot
 
 [Load balancing](load-balancing-exchange-2013-help.md)
 
-[Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/en-us/library/hh135098\(v=exchg.150\))
+[Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098\(v=exchg.150\))
 
 [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md)
 

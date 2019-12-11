@@ -2,13 +2,13 @@
 title: 'Move the Exchange 2010 system mailbox to Exchange 2013: Exchange 2013 Help'
 TOCTitle: Move the Exchange 2010 system mailbox to Exchange 2013
 ms:assetid: a3b03c4e-0bc7-41a2-885c-e9cac37566c8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn249849(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn249849(v=EXCHG.150)
 ms:contentKeyID: 54770204
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

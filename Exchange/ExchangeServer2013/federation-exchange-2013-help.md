@@ -2,13 +2,13 @@
 title: 'Federation: Exchange 2013 Help'
 TOCTitle: Federation
 ms:assetid: 0046e2eb-6940-4941-bd5b-cbe6bffa3b94
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335047(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd335047(v=EXCHG.150)
 ms:contentKeyID: 48384773
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -108,7 +108,7 @@ If you want to use an X.509 certificate signed by an external CA, the certificat
 
 - **RSA signature algorithm**: The certificate must use RSA as the signature algorithm.
 
-- **Exportable private key**: The private key used to generate the certificate must be exportable. You can specify that the private key be exportable when you create the certificate request using the **New Exchange certificate** wizard in the EAC or the [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)) cmdlet in the Shell.
+- **Exportable private key**: The private key used to generate the certificate must be exportable. You can specify that the private key be exportable when you create the certificate request using the **New Exchange certificate** wizard in the EAC or the [New-ExchangeCertificate](https://technet.microsoft.com/library/aa998327\(v=exchg.150\)) cmdlet in the Shell.
 
 - **Current certificate**: The certificate must be current. You can't use an expired or revoked certificate to create a federation trust.
 
@@ -119,7 +119,7 @@ If you want to use an X.509 certificate signed by an external CA, the certificat
 
 ## Transitioning to a new certificate
 
-The certificate used to create the federation trust is designated as the current certificate. However, you may need to install and use a new certificate for the federation trust periodically. For example, you may need to use a new certificate if the current certificate expires or to meet a new business or security requirement. To ensure a seamless transition to a new certificate, you must install the new certificate on your Exchange 2013 server and configure the federation trust to designate it as the new certificate. Exchange 2013 automatically distributes the new certificate to all other Exchange 2013 servers in the organization. Depending on your Active Directory topology, distribution of the certificate may take a while. You can verify the certificate status using the [Test-FederationTrustCertificate](https://technet.microsoft.com/en-us/library/dd335228\(v=exchg.150\)) cmdlet in the Shell.
+The certificate used to create the federation trust is designated as the current certificate. However, you may need to install and use a new certificate for the federation trust periodically. For example, you may need to use a new certificate if the current certificate expires or to meet a new business or security requirement. To ensure a seamless transition to a new certificate, you must install the new certificate on your Exchange 2013 server and configure the federation trust to designate it as the new certificate. Exchange 2013 automatically distributes the new certificate to all other Exchange 2013 servers in the organization. Depending on your Active Directory topology, distribution of the certificate may take a while. You can verify the certificate status using the [Test-FederationTrustCertificate](https://technet.microsoft.com/library/dd335228\(v=exchg.150\)) cmdlet in the Shell.
 
 After you verify the certificate's distribution status, you can configure the trust to use the new certificate. After switching certificates, the current certificate is designated as the previous certificate, and the new certificate is designated as the current certificate. The new certificate is published to the Azure AD authentication system, and all new tokens exchanged with the Azure AD authentication system are encrypted using the new certificate.
 

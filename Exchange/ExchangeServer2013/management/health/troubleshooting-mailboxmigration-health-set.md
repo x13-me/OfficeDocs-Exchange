@@ -2,13 +2,13 @@
 title: Troubleshooting MailboxMigration Health Set
 TOCTitle: Troubleshooting MailboxMigration Health Set
 ms:assetid: 4219fe4b-6757-409a-9065-d81d07d144b2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.mailboxmigration(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailboxmigration(v=EXCHG.150)
 ms:contentKeyID: 49720772
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,13 +2,13 @@
 title: 'Restore public folders and public folder mailboxes from failed moves'
 TOCTitle: Restore public folders and public folder mailboxes from failed moves
 ms:assetid: 2ade83c9-5f9b-4945-bf32-48fa8185b515
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ983802(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ983802(v=EXCHG.150)
 ms:contentKeyID: 51407261
 ms.date: 03/27/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,7 +53,7 @@ This example restores the public folder \\Dev\\CustomerEnagagements to the targe
 New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
 
 ## Restore a soft-deleted public folder mailbox
 
@@ -63,4 +63,4 @@ This example restores the public folder mailbox PF\_Singapore to the new public 
 New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).

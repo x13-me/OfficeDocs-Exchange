@@ -2,13 +2,13 @@
 title: 'Move a public folder mailbox to a different mailbox database'
 TOCTitle: Move a public folder mailbox to a different mailbox database
 ms:assetid: 67601d45-4824-4ae6-9a7e-b645ec3af4d3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ906434(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ906434(v=EXCHG.150)
 ms:contentKeyID: 50630967
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,7 +45,7 @@ This example begins the move request for the public folder mailbox PF\_SanFranci
 New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\)).
 
 ## Create a move request to complete at a later time
 
@@ -57,7 +57,7 @@ This example begins the move request for the public folder mailbox PF\_SanFranci
 New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\)).
 
 This example retrieves the status of the ongoing mailbox move for the public folder mailbox PF\_SanFrancisco.
 
@@ -65,7 +65,7 @@ This example retrieves the status of the ongoing mailbox move for the public fol
 Get-MoveRequest -Identity "PF_SanFrancisco"
 ```
 
-For detailed syntax and parameter information, see [Get-MoveRequest](https://technet.microsoft.com/en-us/library/dd335227\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MoveRequest](https://technet.microsoft.com/library/dd335227\(v=exchg.150\)).
 
 When the move request reaches the status of Suspended, you can resume the request. This example resumes the move request for the public folder mailbox PF\_SanFrancisco.
 
@@ -73,7 +73,7 @@ When the move request reaches the status of Suspended, you can resume the reques
 Resume-MoveRequest -Identity "PF_SanFrancisco"
 ```
 
-For detailed syntax and parameter information, see [Resume-MoveRequest](https://technet.microsoft.com/en-us/library/ee332320\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Resume-MoveRequest](https://technet.microsoft.com/library/ee332320\(v=exchg.150\)).
 
 ## How do you know this worked?
 

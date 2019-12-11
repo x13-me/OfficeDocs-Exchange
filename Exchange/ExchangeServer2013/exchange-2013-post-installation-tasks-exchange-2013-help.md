@@ -2,13 +2,13 @@
 title: 'Exchange 2013 post-Installation tasks: Exchange 2013 Help'
 TOCTitle: Exchange 2013 post-Installation tasks
 ms:assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124397(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124397(v=EXCHG.150)
 ms:contentKeyID: 48385500
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,13 +2,13 @@
 title: 'Re-create the Discovery system mailbox: Exchange 2013 Help'
 TOCTitle: Re-create the Discovery system mailbox
 ms:assetid: 5ae8426b-5661-4ecb-99c4-cdd342107fb1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg588318(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Gg588318(v=EXCHG.150)
 ms:contentKeyID: 49289261
 ms.date: 01/17/2018
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

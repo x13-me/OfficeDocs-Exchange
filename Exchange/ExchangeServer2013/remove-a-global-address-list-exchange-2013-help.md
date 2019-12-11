@@ -1,8 +1,8 @@
 ---
 title: 'Remove a global address list: Exchange 2013 Help'
 TOCTitle: Remove a global address list
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 The global address list (GAL) is a directory that contains entries for every group, user, and contact within an Exchange organization.
 
-For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Address list procedures](address-list-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -43,4 +43,4 @@ Remove-GlobalAddressList -Identity "Fourth Coffee" -DomainController ad-server.f
 
 To confirm that you want to remove the GAL, type Y, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-globaladdresslist).

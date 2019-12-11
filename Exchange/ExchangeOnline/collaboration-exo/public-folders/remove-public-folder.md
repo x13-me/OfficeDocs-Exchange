@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.date: 6/24/2018
 ms.reviewer: 
@@ -66,4 +66,4 @@ This example removes the public folder Marketing and all its subfolders because 
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx).
+For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder).

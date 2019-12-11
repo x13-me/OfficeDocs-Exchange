@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d3856e24-9358-4957-a6d9-b7ec0d0e5fae
 ms.date: 
 ms.reviewer: 
@@ -42,7 +42,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To add a new shared mailbox, [Use a screen reader to open the Exchange admin center](https://technet.microsoft.com/library/c7091f4c-da4e-49fa-bae4-b9e34bf51d9e.aspx) and check that your Office 365 global administrator has assigned you to the Organization Management and Recipient Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To add a new shared mailbox, [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management and Recipient Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Create a shared mailbox
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
 ms.date: 7/11/2018
 ms.reviewer: 
@@ -33,8 +33,6 @@ Public folders aren't designed for the following purposes:
 - **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://products.office.com/SharePoint/sharepoint-online-collaboration-software) as your documentation sharing solution.
 
 For more information about public folders and other collaboration methods in Office 365 and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
-
-For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](https://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
 
 For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).
 
@@ -110,7 +108,7 @@ Exchange supports moving your public folders to Office 365 and Exchange Online f
 
 See [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online) to migrate your Exchange Server public folders.
 
-We recommend that you use batch migration instead of Outlook's PST export feature to migrate public folders to Office 365 and Exchange Online. Office 365 public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you might have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We provide batch migration instructions in [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md) and [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/en-us/Exchange/collaboration/public-folders/migrate-to-exchange-online). However, if you've elected to do a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
+We recommend that you use batch migration instead of Outlook's PST export feature to migrate public folders to Office 365 and Exchange Online. Office 365 public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you might have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We provide batch migration instructions in [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md) and [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online). However, if you've elected to do a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
 
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
 

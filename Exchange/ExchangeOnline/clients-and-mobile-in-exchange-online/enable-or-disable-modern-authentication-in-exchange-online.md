@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
@@ -44,7 +44,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - You should synchronize the state of modern authentication in Exchange Online with Skype for Business Online to prevent multiple log in prompts in Skype for Business clients. For instructions, see [Skype for Business Online: Enable your tenant for modern authentication](https://aka.ms/SkypeModernAuth).
 
-- A user with multiple accounts configured in their Outlook profile might receive an error when they try to connect to their mailbox. For more information, see [KB 4516672](https://support.microsoft.com/en-us/help/4516672/outlook-shows-disconnected-after-enabling-modern-authentication-in-off)
+- A user with multiple accounts configured in their Outlook profile might receive an error when they try to connect to their mailbox. For more information, see [KB 4516672](https://support.microsoft.com/help/4516672/outlook-shows-disconnected-after-enabling-modern-authentication-in-off)
 
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 

@@ -1,7 +1,7 @@
 ---
 title: "IRM in Exchange hybrid deployments"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -24,7 +24,7 @@ Information Rights Management (IRM) helps you to protect against leakage of sens
 
 IRM uses Active Directory Rights Management Services (AD RMS), which is a component of Windows Server 2008 and later. AD RMS allows users to create rights-protected content, such as email messages and attachments, and then control how that content is used, and to whom it's distributed. Users can specify templates that determine how content can be used. For example, a user may specify that an email message can't be forwarded to other recipients or that information in the message can't be copied.
 
-Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](https://technet.microsoft.com/library/dd638140%28v=exchg.141%29.aspx).
+Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](https://technet.microsoft.com/library/dd638140(v=exchg.141).aspx).
 
 Learn more about IRM in Exchange 2013 and Exchange 2016 at [Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
 
@@ -174,4 +174,4 @@ Run the following command in the Exchange Online organization:
 Get-RMSTemplate
 ```
 
-Learn more at: [Understanding Information Rights Management in Outlook Web App](https://technet.microsoft.com/library/60a49dab-17ac-4d2c-9b41-7d87250d6c00.aspx)
+Learn more at: [Information Rights Management in Outlook Web App](https://docs.microsoft.com/exchange/information-rights-management-in-outlook-web-app-exchange-2013-help)

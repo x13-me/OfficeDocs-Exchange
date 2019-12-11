@@ -2,13 +2,13 @@
 title: 'Create an address list: Exchange 2013 Help'
 TOCTitle: Create an address list
 ms:assetid: e86ba1b7-c41c-4050-bc29-13996cf53c59
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125036(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125036(v=EXCHG.150)
 ms:contentKeyID: 49289446
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewAddressListWizardForm.AddressListIntroductionPage
@@ -65,7 +65,7 @@ For other management tasks related to address lists, see [Address list procedure
 This example creates the address list MyAddressList by using the *RecipientFilter* parameter and includes recipients that are mailbox users and have `StateOrProvince` set to `Washington` or `Oregon`.
 
 ```powershell
-New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+New-AddressList -Name MyAddressList -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates the child address list Building 34 Meeting Rooms in the All Rooms parent container, using built-in conditions.
@@ -74,4 +74,4 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/en-us/library/aa996912\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/aa996912\(v=exchg.150\)).

@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and Exchange Server 2019.'
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.collection: exchange-server
@@ -90,7 +90,7 @@ This example returns values for the specified properties on all OABs in your org
 Get-OfflineAddressBook | Format-List Name,GUID,AddressLists,GeneratingMailbox,IsDefault,VirtualDirectories,GlobalWebDistributionEnabled,ShadowMailboxDistributionEnabled
 ```
 
-For detailed syntax and parameter information, see [Get-OfflineAddressBook](https://technet.microsoft.com/library/4f865c2b-21c6-46cc-9c77-a3fc98538a40.aspx).
+For detailed syntax and parameter information, see [Get-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-offlineaddressbook).
 
 ## Use the Exchange Management Shell to create offline address books
 
@@ -118,7 +118,7 @@ This example creates a new OAB named Contoso Executives OAB with the following p
 New-OfflineAddressBook -Name "Contoso Executives OAB" -AddressLists "Default Global Address List","Contoso Executives Address List" -GlobalWebDistributionEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OfflineAddressBook](https://technet.microsoft.com/library/8b9a3931-90c3-4b36-9dcb-5e2e65cd7e5e.aspx).
+For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-offlineaddressbook).
 
 ### How do you know this worked?
 
@@ -136,7 +136,7 @@ To modify OABs, use the following syntax:
 Set-OfflineAddressBook -Identity "<OABIdentity>" [-Name <Name>] [-AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..."] [-VirtualDirectories $null] [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity>] [-IsDefault $true] [-ShadowMailboxDistributionEnabled <$true | $false>]
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
 
 ### Use the Exchange Management Shell to configure the default offline address book
 
@@ -242,7 +242,7 @@ This example updates all OABs.
 Get-OfflineAddressBook | Update-OfflineAddressBook
 ```
 
-For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://technet.microsoft.com/library/08ee5bd7-1c23-492e-8952-d37b2a61c022.aspx).
+For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-offlineaddressbook).
 
 ## Use the Exchange Management Shell to remove offline address books
 
@@ -395,7 +395,7 @@ Set-Mailbox -Identity laura@contoso.com -OfflineAddressBook "Contoso Executives 
 This example assigns the OAB named Contoso US to a filtered list of mailboxes.
 
 ```
-$USContoso = Get-User -ResultSize Unlimited -Filter {RecipientType -eq "UserMailbox" -and Company -eq "Contoso" -and CountryOrRegion -eq "US"}; $USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso United States"}
+$USContoso = Get-User -ResultSize Unlimited -Filter "RecipientType -eq 'UserMailbox' -and Company -eq 'Contoso' -and CountryOrRegion -eq 'US'"; $USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso United States"}
 ```
 
 ### How do you know this worked?

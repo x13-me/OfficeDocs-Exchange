@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to configure connectivity logging for the transport services in Exchange 2016 and Exchange 2019
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.date: 7/10/2018
 ms.reviewer:
@@ -90,7 +90,7 @@ This example sets the following connectivity log settings in the Transport servi
 Set-TransportService -Identity Mailbox01 -ConnectivityLogPath "D:\Connectivity Log\Hub" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/library/42fb2dce-2300-45c6-ac8f-d7647ecf6d2c.aspx), [Set-FrontendTransportService](https://technet.microsoft.com/library/593be8fd-ae2d-4cd2-a98a-88c2e8c36ddd.aspx), and [Set-MailboxTransportService](https://technet.microsoft.com/library/72ed234d-cd25-4070-a5b2-ae5f056cc6a0.aspx).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-mailboxtransportservice).
 
  **Notes**:
 

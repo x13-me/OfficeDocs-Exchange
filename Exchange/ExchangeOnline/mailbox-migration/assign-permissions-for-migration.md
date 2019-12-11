@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.date: 8/16/2018
 ms.reviewer: 
@@ -69,7 +69,7 @@ The migration administrator must have the necessary administrative privileges in
 You can use Exchange Online PowerShell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
 
 > [!NOTE]
-> Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission. For more information, see [How to assign service account access to all mailboxes in Exchange Server 2003](https://support.microsoft.com/kb/821897/en-us).
+> Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission.
 
 For information about migrating mailboxes to Office 365 by using different migration types, see [Ways to migrate multiple email accounts to Office 365](mailbox-migration.md).
 
@@ -105,7 +105,7 @@ Get-DistributionGroupMember MigrationBatch1 | Add-MailboxPermission -User migadm
 FullAccess permission for all mailboxes that have the value of `MigBatch2` for _CustomAttribute10_ is assigned to the migration administrator.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute10 -eq 'MigBatch2')} | Add-MailboxPermission -User migadmin -AccessRights FullAccess -InheritanceType all
+Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute10 -eq 'MigBatch2'" | Add-MailboxPermission -User migadmin -AccessRights FullAccess -InheritanceType all
 ```
 
  **Example 4**
@@ -113,7 +113,7 @@ Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute10 -eq 'MigBatch2')} 
 FullAccess permission to all user mailboxes in the on-premises organization is assigned to the migration administrator account.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Add-MailboxPermission -User migadmin -AccessRights FullAccess -InheritanceType all
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Add-MailboxPermission -User migadmin -AccessRights FullAccess -InheritanceType all
 ```
 
 For detailed syntax and parameter information, see the following topics:
@@ -135,11 +135,11 @@ Get-DistributionGroupMember MigrationBatch1 | Get-MailboxPermission -User migadm
 ```
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute10 -eq 'MigBatch2')} | Get-MailboxPermission -User migadmin
+Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute10 -eq 'MigBatch2'" | Get-MailboxPermission -User migadmin
 ```
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Get-MailboxPermission -User migadmin
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Get-MailboxPermission -User migadmin
 ```
 
 ## Assign the Receive As permission
@@ -187,7 +187,7 @@ Get-DistributionGroupMember StagedBatch1 | Add-ADPermission User migadmin -Acces
 WriteProperty permission to modify the _TargetAddress_ property for all user accounts that have the value of `StagedMigration` for _CustomAttribute15_ is assigned to the migration administrator account.
 
 ```
-Get-User -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigration')} | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress
+Get-User -ResultSize unlimited -Filter "CustomAttribute15 -eq 'StagedMigration'" | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress
 ```
 
  **Example 4**
@@ -195,7 +195,7 @@ Get-User -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigration'
 WriteProperty permission to modify the _TargetAddress_ property for user mailboxes in the on-premises organization is assigned to the migration administrator account.
 
 ```
-Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress
+Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress
 ```
 
 For detailed syntax and parameter information, see the following topics:
@@ -217,9 +217,9 @@ Get-DistributionGroupMember MigrationBatch1 | Get-ADPermission -User migadmin
 ```
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigration')} | Get-MailboxPermission -User migadmin
+Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'StagedMigration'" | Get-MailboxPermission -User migadmin
 ```
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Get-ADPermission -User migadmin
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Get-ADPermission -User migadmin
 ```

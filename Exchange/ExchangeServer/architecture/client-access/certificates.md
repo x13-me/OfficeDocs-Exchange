@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 title: Digital certificates and encryption in Exchange Server
 ms.collection: exchange-server
@@ -20,7 +20,7 @@ manager: serdars
 Encryption and digital certificates are important considerations in any organization. By default, Exchange Server is configured to use Transport Layer Security (TLS) to encrypt communication between internal Exchange servers, and between Exchange services on the local server. But, Exchange administrators need to consider their encryption requirements for communication with internal and external clients (computers and mobile devices), and external messaging servers.
 
 > [!NOTE]
-> Exchange Server 2019 includes important changes to improve the security of client and server connections. The default configuration for encryption will enable TLS 1.2 only and disable support for older algorithms, namely; DES, 3DES, RC2, RC4 and MD5. It will also configure elliptic curve key exchange algorithms with priority over non-elliptic curve algorithms. In Exchange Server 2016 and later, all cryptography settings are inherited from the configuration specified in the operating system. For additional information, see [Exchange Server TLS Guidance](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/).
+> Exchange Server 2019 includes important changes to improve the security of client and server connections. The default configuration for encryption will enable TLS 1.2 only and disable support for older algorithms (namely, DES, 3DES, RC2, RC4 and MD5). It will also configure elliptic curve key exchange algorithms with priority over non-elliptic curve algorithms. In Exchange Server 2016 and later, all cryptography settings are inherited from the configuration specified in the operating system. For additional information, see [Exchange Server TLS Guidance](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Exchange-Server-TLS-guidance-part-1-Getting-Ready-for-TLS-1-2/ba-p/607649).
 
 This topic describes the different types of certificates that are available, the default configuration for certificates in Exchange, and recommendations for additional certificates that you'll need to use with Exchange.
 
@@ -78,17 +78,17 @@ These are the key issues that you need to consider when it comes to certificates
 
 The following elements of planning and deployment for Exchange Server are important drivers for your certificate requirements:
 
-- **Load balancing**: Do you plan to terminate the encrypted channel at load balancer or reverse proxy server, use Layer 4 or Layer 7 load balancers, and use session affinity or no session affinity? For more information, see [Load Balancing in Exchange 2016](https://blogs.technet.com/b/exchange/archive/2015/10/08/load-balancing-in-exchange-2016.aspx).
+- **Load balancing**: Do you plan to terminate the encrypted channel at load balancer or reverse proxy server, use Layer 4 or Layer 7 load balancers, and use session affinity or no session affinity? For more information, see [Load Balancing in Exchange 2016](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Load-Balancing-in-Exchange-2016/ba-p/604048).
 
-- **Namespace planning**: What versions of Exchange are present, are you using the bound or unbound namespace model, and are you using *split-brain DNS* (configuring different IP addresses for the same host based on internal vs. external access)? For more information, see [Namespace Planning in Exchange 2016](https://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx).
+- **Namespace planning**: What versions of Exchange are present, are you using the bound or unbound namespace model, and are you using *split-brain DNS* (configuring different IP addresses for the same host based on internal vs. external access)? For more information, see [Namespace Planning in Exchange 2016](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Namespace-Planning-in-Exchange-2016/ba-p/604072).
 
 - **Client connectivity**: What services will your clients use (web-based services, POP, IMAP, etc.) and what versions of Exchange are involved? For more information, see the following topics:
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2013](https://blogs.technet.com/b/exchange/archive/2015/10/28/client-connectivity-in-an-exchange-2016-coexistence-environment-with-exchange-2013.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2013](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/603925)
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2010](https://blogs.technet.com/b/exchange/archive/2015/10/26/client-connectivity-in-an-exchange-2016-coexistence-environment-with-exchange-2010.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Exchange 2010](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/603945)
 
-  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Mixed Exchange Versions](https://blogs.technet.com/b/exchange/archive/2015/10/30/client-connectivity-in-an-exchange-2016-coexistence-environment-with-mixed-exchange-versions.aspx)
+  - [Client Connectivity in an Exchange 2016 Coexistence Environment with Mixed Exchange Versions](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Client-Connectivity-in-an-Exchange-2016-Coexistence-Environment/ba-p/604284)
 
 ## Certificate requirements for Exchange services
 
@@ -99,8 +99,8 @@ The Exchange services that certificates can be assigned to are described in the 
 |IIS (HTTP)|By default, the following services are offered under the default website in the Client Access (frontend) services on a Mailbox server, and are used by clients to connect to Exchange: <br/>• Autodiscover <br/>• Exchange ActiveSync <br/>• Exchange admin center <br/>• Exchange Web Services <br/>• Offline address book (OAB) distribution <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Outlook MAPI over HTTP <br/>• Outlook on the web <br/>• Remote PowerShell<sup>\*</sup> <br/><br/> Because you can only associate a single certificate with a website, all the DNS names that clients use to connect to these services need to be included in the certificate. You can accomplish this by using a SAN certificate or a wildcard certificate.|
 |POP or IMAP|The certificates that are used for POP or IMAP can be different from the certificate that's used for IIS. However, to simplify administration, we recommend that you also include the host names that are used for POP or IMAP in your IIS certificate, and use the same certificate for all of these services.|
 |SMTP|SMTP connections from clients or messaging servers are accepted by one or more Receive connectors that are configured in the Front End Transport service on the Exchange server. For more information, see [Receive connectors](../../mail-flow/connectors/receive-connectors.md). <br/><br/> To require TLS encryption for SMTP connections, you can use a separate certificate for each Receive connector. The certificate must include the DNS name that's used by the SMTP clients or servers to connect to the Receive connector. To simplify certificate management, consider including all DNS names for which you have to support TLS traffic in a single certificate. <br/><br/> To require *mutual TLS authentication*, where the SMTP connections between the source and destination servers are both encrypted and authenticated, see [Domain Security](https://technet.microsoft.com/library/bce3dbca-30a3-4343-924e-4ccf9e3fe0e1.aspx).|
-|Unified Messaging (UM)|For more information, see [Deploying Certificates for UM](https://technet.microsoft.com/library/95658f6f-eac2-4674-90e7-f2d3f25c5242.aspx). <br/> **Note**: UM is not available in Exchange 2019.|
-|Hybrid deployment with Microsoft Office 365|For more information, see [Certificate Requirements for Hybrid Deployments](https://technet.microsoft.com/library/48d532cc-29f9-4009-9d2d-f19a9c13c320.aspx).|
+|Unified Messaging (UM)|For more information, see [Deploying Certificates for UM](https://docs.microsoft.com/exchange/deploying-certificates-for-um-exchange-2013-help). <br/> **Note**: UM is not available in Exchange 2019.|
+|Hybrid deployment with Microsoft Office 365|For more information, see [Certificate Requirements for Hybrid Deployments](https://docs.microsoft.com/exchange/certificate-requirements).|
 |Secure/Multipurpose Internet Mail Extensions (S/MIME)|For more information, see [S/MIME for message signing and encryption](../../policy-and-compliance/smime.md).|
 
 <sup>\*</sup> Kerberos authentication and Kerberos encryption are used for remote PowerShell access, from both the Exchange admin center and the Exchange Management Shell. Therefore, you don't need to configure your certificates for use with remote PowerShell, as long as you connect directly to an Exchange server (not to a load balanced namespace). To use remote PowerShell to connect to an Exchange server from a computer that isn't a member of the domain, or to connect from the Internet, you need to configure your certificates for use with remote PowerShell.
@@ -161,7 +161,7 @@ Some of the more interesting properties of the default self-signed certificates 
 
 - `Get-ExchangeCertificate -Thumbprint <Thumbprint> | Format-Table -Auto FriendlyName,*PrivateKey*`
 
-For more information, see [Get-ExchangeCertificate](https://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).
+For more information, see [Get-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-exchangecertificate).
 
 Further details about the default self-signed certificates that are visible in Windows Certificate Manger are described in the following table.
 

@@ -2,13 +2,13 @@
 title: 'POP3 and IMAP4 Protocols role: Exchange 2013 Help'
 TOCTitle: POP3 and IMAP4 Protocols role
 ms:assetid: 67dd66e0-3cca-4f87-8165-4918519b39b6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876898(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876898(v=EXCHG.150)
 ms:contentKeyID: 49289278
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

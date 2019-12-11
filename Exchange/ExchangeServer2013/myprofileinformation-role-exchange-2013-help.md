@@ -2,13 +2,13 @@
 title: 'MyProfileInformation role: Exchange 2013 Help'
 TOCTitle: MyProfileInformation role
 ms:assetid: 309c3a88-8abe-497d-aa92-30bdc58b9eae
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876865(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876865(v=EXCHG.150)
 ms:contentKeyID: 49289214
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

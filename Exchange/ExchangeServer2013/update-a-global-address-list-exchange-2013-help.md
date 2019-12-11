@@ -2,13 +2,13 @@
 title: 'Update a global address list: Exchange 2013 Help'
 TOCTitle: Update a global address list
 ms:assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb266966(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb266966(v=EXCHG.150)
 ms:contentKeyID: 49289195
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -46,4 +46,4 @@ This example updates a GAL for the Fourth Coffee company.
 Update-GlobalAddressList -Identity "Fourth Coffee"
 ```
 
-For detailed syntax and parameter information, see [Update-GlobalAddressList](https://technet.microsoft.com/en-us/library/aa998806\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Update-GlobalAddressList](https://technet.microsoft.com/library/aa998806\(v=exchg.150\)).

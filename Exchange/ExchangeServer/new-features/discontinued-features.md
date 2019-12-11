@@ -2,8 +2,8 @@
 localization_priority: Priority
 description: This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's discontinued in Exchange Server
@@ -107,7 +107,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
 |Outlook 2003 is not supported|To connect Microsoft Outlook to Exchange 2016, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.|
-|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
+|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
 
 ### Outlook Web App and Outlook
 
@@ -124,7 +124,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
-|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx) and [Set-SendConnector](https://technet.microsoft.com/library/5b9cf002-848a-4f35-b51f-e1ede131b136.aspx).|
+|Linked connectors|The ability to link a Send connector to a Receive connector has been removed. Specifically, the _LinkedReceiveConnector_ parameter has been removed from [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector) and [Set-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-sendconnector).|
 
 ### Antispam and antimalware
 

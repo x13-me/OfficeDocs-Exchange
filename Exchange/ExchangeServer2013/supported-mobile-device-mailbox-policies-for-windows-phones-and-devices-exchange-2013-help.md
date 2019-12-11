@@ -2,13 +2,13 @@
 title: 'Supported mobile device mailbox policies for Windows Phones and devices'
 TOCTitle: Supported mobile device mailbox policies for Windows Phones and devices
 ms:assetid: d76b1d4c-d1f6-4501-a7c9-854327aceda5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ983805(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ983805(v=EXCHG.150)
 ms:contentKeyID: 51407272
 ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

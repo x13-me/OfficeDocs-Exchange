@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3a219732-87e7-4f11-96bc-8edd2cc91926
 ms.date: 
 ms.reviewer: 
@@ -40,7 +40,7 @@ Administrative roles and end-user roles are the two types of management roles. F
 
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Online PowerShell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
 
-Exchange Online includes approximately 45 roles that you can use to grant permissions. For a list of roles, see [Built-in Management Roles](https://technet.microsoft.com/library/023f379a-40f6-43ef-b388-979f6dd85ec5.aspx).
+Exchange Online includes role groups that you can use to grant permissions. For more information, see [Permissions in Exchange Online](permissions-exo.md).
 
 > [!NOTE]
 > Some management roles many be available only to on-premises Exchange Server installations and won't be available in Exchange Online.

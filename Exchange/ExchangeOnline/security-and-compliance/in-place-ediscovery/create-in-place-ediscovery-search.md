@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Use In-Place eDiscovery to search across all mailbox content, including deleted items and original versions of modified items for users placed on In-Place Hold and Litigation Hold.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.date: 7/20/2017
 ms.reviewer: 
@@ -118,7 +118,7 @@ New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -
 
 After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch).
 
 ## Use the EAC to estimate or preview search results
 

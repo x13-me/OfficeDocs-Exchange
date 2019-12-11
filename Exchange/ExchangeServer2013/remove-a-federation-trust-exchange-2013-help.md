@@ -2,13 +2,13 @@
 title: 'Remove a federation trust: Exchange 2013 Help'
 TOCTitle: Remove a federation trust
 ms:assetid: dc4d126d-b567-470d-a5d0-e1402bf8f369
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657500(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657500(v=EXCHG.150)
 ms:contentKeyID: 49289432
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,7 +51,7 @@ This example removes the federation trust.
 Remove-FederationTrust
 ```
 
-For detailed syntax and parameter information, see [Remove-FederationTrust](https://technet.microsoft.com/en-us/library/dd351153\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-FederationTrust](https://technet.microsoft.com/library/dd351153\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -65,6 +65,6 @@ To verify that you have successfully removed the federation trust, do one of the
   Get-FederationTrust
   ```
 
-  For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)).
+  For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/library/dd351262\(v=exchg.150\)).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

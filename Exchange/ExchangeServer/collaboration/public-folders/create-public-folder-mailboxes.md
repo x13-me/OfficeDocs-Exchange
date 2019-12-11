@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to create a public folder mailbox in Exchange 2016 or Exchange 2019.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 ms.date: 7/12/2018
 ms.reviewer:
@@ -80,7 +80,7 @@ This example creates a secondary hierarcy public folder mailbox named Istanbul, 
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
 
 ## How do you know this worked?
 

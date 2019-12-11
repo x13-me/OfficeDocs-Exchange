@@ -2,13 +2,13 @@
 title: 'Move a mailbox database using database portability: Exchange 2013 Help'
 TOCTitle: Move a mailbox database using database portability
 ms:assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876926(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876926(v=EXCHG.150)
 ms:contentKeyID: 50873806
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -65,7 +65,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
     Mount-Database <DatabaseName>
     ```
 
-6. After the database is mounted, modify the user account settings with the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet so that the account points to the mailbox on the new mailbox server. To move all of the users from the old database to the new database, use the following syntax.
+6. After the database is mounted, modify the user account settings with the [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet so that the account points to the mailbox on the new mailbox server. To move all of the users from the old database to the new database, use the following syntax.
 
     ```powershell
     Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>

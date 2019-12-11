@@ -2,13 +2,13 @@
 title: 'Mailbox moves in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mailbox moves in Exchange 2013
 ms:assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150543(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150543(v=EXCHG.150)
 ms:contentKeyID: 47560063
 ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -133,6 +133,6 @@ The following table shows the migration endpoint types and values that you can m
 </tbody>
 </table>
 
-For more information about migration endpoints, see the **Migration** user interface in the EAC and [New-MigrationEndpoint](https://technet.microsoft.com/en-us/library/jj218611\(v=exchg.150\)).
+For more information about migration endpoints, see the **Migration** user interface in the EAC and [New-MigrationEndpoint](https://technet.microsoft.com/library/jj218611\(v=exchg.150\)).
 
 For more information about managing new and existing moves, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).

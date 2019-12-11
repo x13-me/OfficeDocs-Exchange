@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d161f94a-a243-4294-93b3-2bf1dc17b59f
 ms.date: 7/25/2017
 ms.reviewer: 
@@ -31,7 +31,7 @@ In hybrid or online deployments, a UM IP gateway represents an SBC. The subject 
 The following SBCs have been successfully tested for interoperability with Exchange hybrid and online deployments. Note that the capabilities and compatibilities of SBCs can vary, and the way you set them up can be different depending on other equipment on your network. Consult with the SBC manufacturer to see whether there are specific configuration notes for Unified Messaging in a hybrid or online deployment.
 
 > [!NOTE]
-> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in December 2019. Please see the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2018/04/24/new-date-for-discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in December 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 |**Vendor**|**Model**|**Configuration notes**|**Comments**|
 |:-----|:-----|:-----|:-----|

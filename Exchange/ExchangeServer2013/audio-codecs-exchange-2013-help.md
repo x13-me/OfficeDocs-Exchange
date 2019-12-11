@@ -2,13 +2,13 @@
 title: 'Unified Messaging audio codecs: Exchange 2013 Help'
 TOCTitle: Audio codecs
 ms:assetid: 6c39d65c-c2d3-4128-aae9-8596602819c3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998670(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998670(v=EXCHG.150)
 ms:contentKeyID: 49315434
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

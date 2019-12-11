@@ -2,13 +2,13 @@
 title: 'Built-in management roles: Exchange 2013 Help'
 TOCTitle: Built-in management roles
 ms:assetid: 023f379a-40f6-43ef-b388-979f6dd85ec5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638077(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638077(v=EXCHG.150)
 ms:contentKeyID: 49289149
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

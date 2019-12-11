@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to add, remove and view members of a management role group in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
 ms.date: 7/5/2018
 ms.reviewer:
@@ -25,7 +25,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -53,9 +53,9 @@ To give a user the permissions that are granted by a role group, you need to add
 
 ### Use the Exchange Management Shell to add members to a role group
 
-To add a role group member, see the [Examples](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx#Examples) section in [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+To add a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember#examples) section in [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
-To add multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx#Examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+To add multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -82,9 +82,9 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 ### Use the Exchange Management Shell to remove members from a role group
 
-To remove a role group member, see the [Examples](https://technet.microsoft.com/library/eed5ec30-471f-4c60-b377-bdf4a249b3d5.aspx#Examples) section in [Remove-RoleGroupMember](https://technet.microsoft.com/library/eed5ec30-471f-4c60-b377-bdf4a249b3d5.aspx).
+To remove a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroupMember#Examples) section in [Remove-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroupMember).
 
-To remove multiple role group members or to replace the role group membership entirely, see the [Examples](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx#Examples) section in [Update-RoleGroupMember](https://technet.microsoft.com/library/37f82792-aaf1-4306-a563-37d6de3a8ee8.aspx).
+To remove multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -111,4 +111,4 @@ The members of a role group are granted the permissions provided by the manageme
 
 ### Use the Exchange Management Shell to view the members of a role group
 
-To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://technet.microsoft.com/library/1ff116aa-1a62-4283-bc8e-5963d12958e1.aspx).
+To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-rolegroupmember).

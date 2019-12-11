@@ -2,13 +2,13 @@
 title: 'Configure calendar options for IMAP4: Exchange 2013 Help'
 TOCTitle: Configure calendar options for IMAP4
 ms:assetid: 6679c8b2-3f0f-449a-a17c-a7b30001538c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998606(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998606(v=EXCHG.150)
 ms:contentKeyID: 50395400
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -59,7 +59,7 @@ Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://Owa
 
 After you've specified the calendar options for IMAP4, you must restart the IMAP4 services. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/en-us/library/aa998252\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/library/aa998252\(v=exchg.150\)).
 
 ## How do you know this worked?
 

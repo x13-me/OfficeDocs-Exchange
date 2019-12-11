@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
 ms.date: 7/6/2018
 ms.reviewer:
