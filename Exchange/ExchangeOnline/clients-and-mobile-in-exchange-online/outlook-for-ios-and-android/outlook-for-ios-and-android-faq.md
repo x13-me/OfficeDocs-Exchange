@@ -247,6 +247,21 @@ Administrators have additional capabilities with respect to contact synchronizat
 - Administrators can enable contact synchronization by default on enrolled devices. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 - Administrators can reduce the amount of data that is exported to the native Contacts app via an Intune App Protection Policy with contact field export controls. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
+### Q: Is Outlook for iOS and Android available in China?
+
+Yes, Outlook for iOS is available in Apple's App Store in China.
+
+The Google Play Store is not available in China. However, Microsoft has distributed the Outlook for Android app in the following third-party app stores that are available in China:
+
+- [Baidu](http://shouji.baidu.com/software/11483186.html)
+- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.outlook)
+- [Tencent (QQ)](http://android.app.qq.com/myapp/detail.htm?apkName=com.microsoft.office.outlook)
+- [Huawei](http://appstore.huawei.com/app/C10351487)
+- [Lenovo](http://www.lenovomm.com/app/21140763.html)
+- [Wandoujia](http://www.wandoujia.com/apps/com.microsoft.office.outlook)
+
+As Google's notification service, [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/), is not available in China, new mail push notifications do not function. Instead, Outlook for Android relies on polling notifications. For the native Microsoft sync technology, background polling occurs every 15 minutes while the app is in the background (assuming background synchronization is not disabled).
+
 ## Native Microsoft sync technology migration
 
 The following questions are about the migration from the REST API data sync protocol to the native Microsoft sync technology used by Outlook for iOS and Android for accessing mailbox data.
