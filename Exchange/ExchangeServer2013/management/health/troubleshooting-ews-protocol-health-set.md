@@ -2,13 +2,13 @@
 title: Troubleshooting EWS.Protocol Health Set
 TOCTitle: Troubleshooting EWS.Protocol Health Set
 ms:assetid: 826b2d5b-adbb-4bf5-94b6-0a8de2e3aac0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews.protocol(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ews.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720829
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -65,7 +65,7 @@ The EwsSelfTestProbe does not depend on the Information Store. However, the EwsD
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
 When you receive an alert from this HealthSet, the email message contains the following information:
 
@@ -177,4 +177,4 @@ This monitor alert is typically issued for Mailbox servers.
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/en-us/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))

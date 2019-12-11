@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 ms.date: 7/9/2018
 ms.reviewer: 
@@ -78,7 +78,7 @@ Configuring the Microsoft Azure network is the most crucial part of the deployme
 
 #### Register DNS servers
 
-Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution (DNS)](https://msdn.microsoft.com/library/azure/jj156088.aspx) topic provides an overview of name resolution in Azure.
+Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution for resources in Azure virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) topic provides an overview of name resolution in Azure.
 
 Do the following to register your DNS servers:
 
@@ -156,7 +156,7 @@ For more information about configuring a multi-site VPN, see [Configure a Multi-
 
 When creating your virtual gateway, note that you already specified that it will be connected to your first on-premises site. When you go into the virtual network dashboard, you will see that the gateway has not been created.
 
-To establish the VPN gateway on the Azure side, follow the instructions in the [Start the virtual network gateway](https://msdn.microsoft.com/library/azure/jj156210.aspx#bkmk_StartGateway) section of [Configure a Virtual Network Gateway in the Management Portal](https://msdn.microsoft.com/library/azure/jj156210.aspx).
+To establish the VPN gateway on the Azure side, see [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
 
 > [!IMPORTANT]
 > Only perform the steps in the "Start the virtual network gateway" section of the article, and do not continue to the subsequent sections.
@@ -191,7 +191,7 @@ Save the updated configuration settings file.
 
 #### Import virtual network configuration settings
 
-The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Import a Network Configuration File](https://msdn.microsoft.com/library/azure/jj156213.aspx). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
+The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Create a virtual network (classic) by using the Azure portal](https://docs.microsoft.com/azure/virtual-network/virtual-networks-create-vnet-classic-pportal). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
 
 #### Record the Azure gateway IP address and pre-shared keys
 
@@ -199,9 +199,9 @@ After the new network configuration settings are imported, the virtual network d
 
 You also will need to get the pre-shared IPsec/IKE keys for each tunnel that was created. You will use these keys along with the Azure gateway IP address to configure your on-premises VPN devices.
 
-You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://msdn.microsoft.com/library/azure/jj156055.aspx).
+You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/).
 
-Use the [Get-AzureVNetGatewayKey](https://msdn.microsoft.com/library/azure/dn495198.aspx) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
+Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
 ```
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" | Set-Content -Path C:\Keys\KeysForTunnelToSiteA.txt
@@ -222,21 +222,7 @@ For example, if you're using a Routing and Remote Access Service (RRAS) VPN devi
 
 3. Find the **Add-VpnS2SInterface** command in this section. Verify that the value for the _SharedSecret_ parameter matches the pre-shared key for the site for which you're configuring the VPN device.
 
-Other devices might require additional verifications. For example, the configuration scripts for Cisco devices set ACL rules by using the local IP address ranges. You need to review and verify all references to the local site in the configuration script before you use it. See the following topics for more information:
-
-[Routing and Remote Access Service (RRAS) templates](https://msdn.microsoft.com/library/azure/dn133801.aspx)
-
-[Cisco ASR templates](https://msdn.microsoft.com/library/azure/dn133802.aspx)
-
-[Cisco ISR templates](https://msdn.microsoft.com/library/azure/dn133800.aspx)
-
-[Juniper SRX templates](https://msdn.microsoft.com/library/azure/dn133794.aspx)
-
-[Juniper J-series templates](https://msdn.microsoft.com/library/azure/dn133799.aspx)
-
-[Juniper ISG templates](https://msdn.microsoft.com/library/azure/dn133797.aspx)
-
-[Juniper SSG templates](https://msdn.microsoft.com/library/azure/dn133796.aspx)
+Other devices might require additional verifications. For example, the configuration scripts for Cisco devices set ACL rules by using the local IP address ranges. You need to review and verify all references to the local site in the configuration script before you use it. 
 
 #### Checkpoint: Review the VPN status
 
@@ -277,7 +263,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
    ```
 
    > [!NOTE]
-   > A VM with a preferred IP address will attempt to use that address. However, if that address has been assigned to a different VM, the VM with the preferred IP address configuration will not start. To avoid this situation, make sure that the IP address you use isn't assigned to another VM. See [Configure a Static Internal IP Address for a VM](https://msdn.microsoft.com/library/azure/dn630228.aspx) for more information.
+   > A VM with a preferred IP address will attempt to use that address. However, if that address has been assigned to a different VM, the VM with the preferred IP address configuration will not start. To avoid this situation, make sure that the IP address you use isn't assigned to another VM.
 
 3. Provision the domain controller VM on Azure using the standards used by your organization.
 
@@ -313,7 +299,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934%28v=exchg.150%29.aspx)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 

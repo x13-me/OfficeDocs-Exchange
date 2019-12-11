@@ -2,13 +2,13 @@
 title: 'Turn off access to the Exchange admin center: Exchange 2013 Help'
 TOCTitle: Turn off access to the Exchange admin center
 ms:assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218639(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ218639(v=EXCHG.150)
 ms:contentKeyID: 48385052
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,7 +45,7 @@ This example turns off the access to the EAC on server CAS01.
 Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://technet.microsoft.com/en-us/library/dd297991\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://technet.microsoft.com/library/dd297991\(v=exchg.150\)).
 
 ## How do you know this worked?
 

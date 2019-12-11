@@ -2,13 +2,13 @@
 title: 'Unified Messaging: Exchange 2013 Help'
 TOCTitle: Unified Messaging
 ms:assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150478(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150478(v=EXCHG.150)
 ms:contentKeyID: 47559933
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -231,19 +231,19 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn about UM language packs and language settings.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">Telephone system integration with UM</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">Telephone system integration with UM</a></p></td>
 <td><p>Learn about integrating your telephony network with UM.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">Connect your voice mail system to your telephone network</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">Connect your voice mail system to your telephone network</a></p></td>
 <td><p>Learn how to use and configure UM components to connect your telephony network to Exchange UM.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">Automatically answer and route incoming calls</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">Automatically answer and route incoming calls</a></p></td>
 <td><p>Learn how to create UM auto attendants and manage settings for navigation menus, greetings, and business and non-business hours.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">Set up voice mail for users</a></p></td>
+<td><p><a href="set-up-https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">Set up voice mail for users</a></p></td>
 <td><p>Learn how to create and manage UM mailbox policies and how to enable users for UM.</p></td>
 </tr>
 <tr class="odd">
@@ -251,7 +251,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to set up client features to enable users to access and manage their voice mail messages.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">Set Outlook Voice Access PIN security</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">Set Outlook Voice Access PIN security</a></p></td>
 <td><p>Learn how to set PIN requirements for Outlook Voice Access users.</p></td>
 </tr>
 <tr class="odd">
@@ -259,7 +259,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to use UM to protect voice messages.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">Run reports for voice mail calls</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">Run reports for voice mail calls</a></p></td>
 <td><p>Learn about UM call reports.</p></td>
 </tr>
 </tbody>

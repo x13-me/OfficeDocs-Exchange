@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.date: 7/6/2018
 ms.reviewer:
@@ -72,7 +72,7 @@ This example add the members of the mail-enabled security group named Contoso Co
 Add-RoleGroupMember -Identity "Discovery Management" -Member "Contoso Compliance Management"
 ```
 
-For more information, see [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+For more information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

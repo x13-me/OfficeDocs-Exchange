@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms.date: 7/9/2018
 ms.reviewer:
@@ -50,7 +50,7 @@ Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Di
 > [!NOTE]
 > To delete items from the mailbox without copying them to another mailbox, use the preceding command without the _TargetMailbox_ and _TargetFolder_ parameters.
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox).
 
 ## Use the Exchange Management Shell to clean up the Recoverable Items folder for mailboxes that are placed on hold or have single item recovery enabled
 
@@ -193,25 +193,25 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-- [Get-CASMailbox](https://technet.microsoft.com/library/d80a5990-9106-4eb8-bba8-b3975805c325.aspx)
+- [Get-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/get-casmailbox)
 
-- [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/212ca564-435e-4af6-8673-5564732bf118.aspx)
+- [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxfolderstatistics)
 
-- [Get-MailboxServer](https://technet.microsoft.com/library/838bc72a-e3bb-4583-934f-d93a7c93252c.aspx)
+- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxserver)
 
-- [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx)
+- [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox)
 
-- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
-- [Set-MailboxServer](https://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx)
+- [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxserver)
 
-- [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)
+- [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox)
 
 ## How do you know this worked?
 
-To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/212ca564-435e-4af6-8673-5564732bf118.aspx) cmdlet the check the size of the Recoverable Items folder.
+To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxfolderstatistics) cmdlet the check the size of the Recoverable Items folder.
 
 This example retrieves the size of the Recoverable Items folder and its subfolders and an item count in the folder and each subfolder.
 

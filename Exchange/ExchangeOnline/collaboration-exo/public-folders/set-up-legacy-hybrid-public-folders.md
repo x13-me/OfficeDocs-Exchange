@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.service: exchange-online
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms.collection:
@@ -51,9 +51,9 @@ The following table describes the version and location combinations of user mail
 
 ## Step 1: What do you have to know before you begin?
 
-- These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments, and that the DNS records that are used for the Autodiscover service for most users reference an on-premises end point. For more information, see [Hybrid Configuration Wizard](https://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx).
+- These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments, and that the DNS records that are used for the Autodiscover service for most users reference an on-premises end point. For more information, see [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard).
 
-- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](https://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx).
+- These instructions assume that Outlook Anywhere is enabled and functional on all the on-premises legacy Exchange public folder servers. For information about how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
 
 - Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can occur because a non-routable email address that's assigned to mail-enabled public folders, conflicts with other users and groups in Office 365, and other reasons.
 
@@ -121,7 +121,7 @@ The following table describes the version and location combinations of user mail
 
 ## Step 4: Configure directory synchronization
 
-The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
+The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command.

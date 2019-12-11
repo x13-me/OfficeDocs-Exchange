@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Create a new Sharing Policy to change how people in your organization share calendars with individual business associates, friends, or family members. Sharing policies control how your users share their calendars with people outside your organization. By default, all users can invite anyone with an email address to view their calendar. After you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. To apply a specific sharing policy to users, see Apply a sharing policy to mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: f412ce6c-74dc-4d77-93ab-362c37414015
 ms.date: 4/29/2016
 ms.reviewer: 
@@ -77,7 +77,7 @@ Create a new Sharing Policy to change how people in your organization share cale
   New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail' -Enabled $false
   ```
 
-For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/library/ffca8853-3429-448f-ad5e-5435dc44f9d0.aspx).
+For detailed syntax and parameter information, see [New-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-sharingpolicy).
 
 ## How do you know this worked?
 

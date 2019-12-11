@@ -2,13 +2,13 @@
 title: 'Mobile phone and tablet features: Exchange 2013 Help'
 TOCTitle: Mobile phone and tablet features
 ms:assetid: ad54d9e6-7a1c-4fb0-b5a9-0b042b98ada3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232162(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232162(v=EXCHG.150)
 ms:contentKeyID: 50396326
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

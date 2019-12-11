@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms.date:
 ms.reviewer:
@@ -106,7 +106,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
 
 ### How do you know this worked?
 
@@ -335,22 +335,22 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
 Here are some examples of using the Exchange Management Shell to change linked mailbox properties.
 
 This example uses the **Get-Mailbox** command to find all the linked mailboxes in the organization.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'"
 ```
 
 This example uses the **Set-Mailbox** command to limit the number of recipients allowed on the To:, Cc:, and Bcc: lines of an email message to 500. This limit applies to all linked mailboxes in the organization.
 
 ```
-Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | Set-Mailbox -RecipientLimits 500
 ```
 
 This example changes the linked master account in the fabrikam.com account forest that is associated with a linked mailbox in an Exchange forest.
@@ -368,7 +368,7 @@ To verify that you have successfully changed properties for a linked mailbox, do
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple linked mailboxes. In the example above where the recipient limit was changed, running the following command will verify the new value.
 
   ```
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Format-List Name,RecipientLimits
+  Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | Format-List Name,RecipientLimits
   ```
 
     For the example above where the linked master account was changed, run the following command to verify the new value.

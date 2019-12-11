@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: As an admin, you can set up both private and public attachment handling in Outlook on the web depending on how you configure your Outlook on the web mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook on the web on a computer that is part of a private or of a public network.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2b5b8f6a-1bce-4872-8989-bac53ffafaa4
 ms.reviewer: 
 title: Public attachment handling in Exchange Online
@@ -22,7 +22,7 @@ As an admin, you can set up both private and public attachment handling in Outlo
 
 ## How can I control public attachment handling?
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
 
 The Outlook on the web mailbox policy parameters in the following table should be set to `$true` to enable an admin to control attachment handling for public computers and networks.
 
@@ -50,7 +50,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
   - [Setting Up Single Sign On with Office 365 using AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=329949 )
 
-  - [Configure single sign on](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
+  - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 

@@ -2,13 +2,13 @@
 title: 'Transport rules in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Transport rules
 ms:assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351127(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351127(v=EXCHG.150)
 ms:contentKeyID: 49289403
 ms.date: 04/28/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,21 +22,21 @@ This article explains the components of transport rules, and how they work.
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage transport rules. For instructions on how to manage transport rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
-For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips).
+For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
 To implement specific messaging policies by using transport rules, see these topics:
 
 - [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-- [Common attachment blocking scenarios for transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
+- [Common attachment blocking scenarios for transport rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
 - [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-- [Use transport rules so messages can bypass Clutter](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
+- [Use transport rules so messages can bypass Clutter](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-- [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
+- [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-- [Common message approval scenarios](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
+- [Common message approval scenarios](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## Transport rule components
 
@@ -129,8 +129,8 @@ The following table describes the rule properties that are available in transpor
 <td><p><strong>Mode</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips).</p>
-<p>Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips">Policy Tips</a>.</p>
-<p>For more information about the modes, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">Test a transport rule</a>.</p></td>
+<p>Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips">Policy Tips</a>.</p>
+<p>For more information about the modes, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">Test a transport rule</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Activate this rule on the following date</strong></p>
@@ -257,7 +257,7 @@ There are two mixed environment scenarios that are common in Exchange 2013:
   In a hybrid environment, there's no replication of rules between your on-premises Exchange organization and Office 365. Therefore, when you create a rule in Exchange, you need to create a matching rule in Office 365. Rules you create in Office 365 are stored in the cloud, whereas the rules you create in your on-premises organization are stored locally in Active Directory. When you manage rules in a hybrid environment, you need to keep the two sets of rules synchronized by making the change in both places, or making the change in one environment and then exporting the rules and importing them in the other environment.
 
   > [!IMPORTANT]
-  > Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:<BR><A href="https://technet.microsoft.com/en-us/library/jj919235(v=exchg.150)">Transport rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj919237(v=exchg.150)">Transport rule actions in Exchange Online</A>
+  > Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:<BR><A href="https://technet.microsoft.com/library/jj919235(v=exchg.150)">Transport rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj919237(v=exchg.150)">Transport rule actions in Exchange Online</A>
 
 - **Coexistence with Exchange 2010 or Exchange 2007**
 

@@ -1,8 +1,8 @@
 ---
 title: 'Protect form data with document fingerprinting: Exchange 2013 Help'
 TOCTitle: Protect form data with document fingerprinting
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
+If your organization uses forms to collect sensitive information, users might try emailing those forms to outside contacts, which creates a security risk. Data loss prevention (DLP) in Exchange helps you protect that information by detecting it with [Document Fingerprinting](overview-of-document-fingerprinting-in-exchange.md). To use document fingerprinting, simply upload a blank form, such as an intellectual property document, government form, or other standard form used in your organization. Then, add the resulting document fingerprint to a DLP policy or transport rule. Here's how.
 
 > [Document Fingerprinting](https://www.microsoft.com/videoplayer/embed/0f803e16-397a-4b83-8a85-06cd4264aaca?autoplay=false)
 
@@ -73,11 +73,11 @@ New-TransportRule -Name "Notify :External Recipient Contoso confidential" -Notif
 
 The DLP agent now detects documents that match the Contoso Customer Form.docx document fingerprint.
 
-For syntax and parameter information, see [New-Fingerprint](https://technet.microsoft.com/library/b579682a-9922-4db0-b524-bcea0d2cef9b.aspx), [New-DataClassification](https://technet.microsoft.com/library/3c1e90e7-cf49-4a8b-a0c4-c189ab8ab166.aspx), [Set-DataClassification](https://technet.microsoft.com/library/6d40df36-18c7-46f5-b373-69c840a5599b.aspx), and [Get-DataClassification](https://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
+For syntax and parameter information, see [New-Fingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-fingerprint), [New-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dataclassification), [Set-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dataclassification), and [Get-DataClassification](https://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
 
 ## For more information
 
-[Document Fingerprinting](https://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
+[Document Fingerprinting](overview-of-document-fingerprinting-in-exchange.md)
 
 [Manage DLP policies](manage-dlp-policies-exchange-2013-help.md)
 

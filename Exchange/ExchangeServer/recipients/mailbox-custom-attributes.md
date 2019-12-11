@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.date: 4/19/2018
 ms.reviewer:
@@ -43,19 +43,19 @@ There are several advantages to using custom attributes:
 
 Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
-- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
 
-- [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
-- [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
 
-- [Set-MailPublicFolder](https://technet.microsoft.com/library/8db48034-24cd-43d8-9133-1c8226616be5.aspx)
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-mailpublicfolder)
 
-- [Set-RemoteMailbox](https://technet.microsoft.com/library/20bdcdc4-5a7c-4cef-9e7c-cef17e470efd.aspx)
+- [Set-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/set-remotemailbox)
 
-For more information about multivalued properties, see [Modifying multivalued properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
+For more information about multivalued properties, see [Modifying multivalued properties](https://docs.microsoft.com/exchange/modifying-multivalued-properties-exchange-2013-help).
 
 ## Custom attribute examples
 <a name="CA"> </a>
@@ -74,7 +74,7 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.
 
 ```
-New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+New-EmailAddressPolicy -Name "Sales" -RecipientFilter "CustomAttribute1 -eq 'SalesOU'" -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
 ```
 
 ## Custom attribute example using the ConditionalCustomAttributes parameter
@@ -103,7 +103,7 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 Next, a dynamic distribution group for all students enrolled MATH307 is created by using the _RecipientFilter_ parameter where _ExtensionCustomAttribute1_ is equal to MATH307. When using the _ExtentionCustomAttributes_ parameters, you can use the `-eq` operator instead of the `-like` operator.
 
 ```
-New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter "ExtensionCustomAttribute1 -eq 'MATH307'"
 ```
 
 In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to reflect that he's added the class ENGL210 and removed the class ECON202.

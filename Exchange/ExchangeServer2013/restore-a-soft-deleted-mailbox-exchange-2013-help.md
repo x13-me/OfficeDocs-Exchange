@@ -2,13 +2,13 @@
 title: 'Restore a soft-deleted mailbox: Exchange 2013 Help'
 TOCTitle: Restore a soft-deleted mailbox
 ms:assetid: 4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863435(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ863435(v=EXCHG.150)
 ms:contentKeyID: 50387715
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -83,7 +83,7 @@ This example restores Pilar Pinilla's soft-deleted archive mailbox, which is ide
 New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -93,6 +93,6 @@ For more information, see:
 
 - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-- [Get-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829907\(v=exchg.150\))
+- [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829907\(v=exchg.150\))
 
-- [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\))
+- [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/ff829912\(v=exchg.150\))

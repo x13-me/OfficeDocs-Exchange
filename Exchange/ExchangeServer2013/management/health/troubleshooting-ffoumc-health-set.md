@@ -2,13 +2,13 @@
 title: Troubleshooting FfoUmc Health Set
 TOCTitle: Troubleshooting FfoUmc Health Set
 ms:assetid: bfc50ffc-83fc-43ee-a723-56c686039160
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ffoumc(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ffoumc(v=EXCHG.150)
 ms:contentKeyID: 49720880
 ms.date: 10/08/2015
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

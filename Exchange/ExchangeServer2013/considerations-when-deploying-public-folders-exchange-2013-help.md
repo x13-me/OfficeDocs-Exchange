@@ -2,13 +2,13 @@
 title: 'Considerations when deploying public folders: Exchange 2013 Help'
 TOCTitle: Considerations when deploying public folders
 ms:assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn957481(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn957481(v=EXCHG.150)
 ms:contentKeyID: 64568563
 ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

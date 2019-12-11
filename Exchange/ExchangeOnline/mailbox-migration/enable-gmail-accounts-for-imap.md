@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - O365E_AdvSetupEnableGmailImap
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
 ms.date: 8/15/2018
 ms.reviewer: 

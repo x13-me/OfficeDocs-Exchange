@@ -21,7 +21,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Server-400x140.svg" alt="A monitor symbol and a server symbol" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-Server-400x140.svg" alt="A monitor symbol and a server symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -40,7 +40,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Server-400x140.svg" alt="A monitor symbol and a server symbol" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-Server-400x140.svg" alt="A monitor symbol and a server symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -59,7 +59,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Online-400x140.svg" alt="A monitor symbol and a cloud" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-Online-400x140.svg" alt="A monitor symbol and a cloud" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -78,7 +78,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Hybrid-400x140.svg" alt="A server symbol and a cloud symbol with a sync symbol in between" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-Hybrid-400x140.svg" alt="A server symbol and a cloud symbol with a sync symbol in between" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -97,7 +97,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Powershell-400x140.svg" alt="PowerShell logo over a book" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-Powershell-400x140.svg" alt="PowerShell logo over a book" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -110,13 +110,13 @@ description: Exchange
                                 </a>
                             </li>                            
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview">
+                                <a href="https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-ExchangeOnlineProtection-400x140.svg" alt="A shield symbol with a checkmark and clouds" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/Exchange-ExchangeOnlineProtection-400x140.svg" alt="A shield symbol with a checkmark and clouds" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

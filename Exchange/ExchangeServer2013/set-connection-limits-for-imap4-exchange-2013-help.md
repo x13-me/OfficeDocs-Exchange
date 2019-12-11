@@ -2,13 +2,13 @@
 title: 'Set connection limits for IMAP4: Exchange 2013 Help'
 TOCTitle: Set connection limits for IMAP4
 ms:assetid: 8e3aa366-e77c-4c70-b78d-ddbb178cb521
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123712(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123712(v=EXCHG.150)
 ms:contentKeyID: 50395402
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -85,7 +85,7 @@ Set-ImapSettings -MaxCommandSize Value
 
 After you set connection limits, you must restart the IMAP4 services. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/en-us/library/aa998252\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/library/aa998252\(v=exchg.150\)).
 
 ## How do you know this worked?
 

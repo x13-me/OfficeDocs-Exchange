@@ -2,13 +2,13 @@
 title: 'Older database files present_SecondSGFilesExist: Exchange 2013 Help'
 TOCTitle: Older database files present_SecondSGFilesExist
 ms:assetid: fe2908e7-df8b-4f35-946a-cfbf8521e93a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.secondsgfilesexist(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.secondsgfilesexist(v=EXCHG.150)
 ms:contentKeyID: 46629214
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

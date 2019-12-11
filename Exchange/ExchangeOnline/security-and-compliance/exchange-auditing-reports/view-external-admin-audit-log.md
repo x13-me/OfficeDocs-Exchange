@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Exchange Online, actions performed by Microsoft and delegated administrators are logged in the administrator audit log. You can use the EAC or Exchange Online PowerShell to search for and view audit log entries to determine if external administrators performed any actions on or changed the configuration of your Exchange Online organization. You can also use Exchange Online PowerShell to export these audit log entries.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 31892014-c921-45fd-9775-7a1ef40e3517
 ms.date: 6/23/2018
 ms.reviewer: 
@@ -78,7 +78,7 @@ This command returns entries in the administrator audit log for cmdlets run by e
 Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/2013
 ```
 
-For more information, see [Search-AdminAuditLog](https://technet.microsoft.com/library/87a0cd2d-dd59-4098-b740-75f0cc7bf8e7.aspx).
+For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
 
 ## Use Exchange Online PowerShell to export the admin audit log
 

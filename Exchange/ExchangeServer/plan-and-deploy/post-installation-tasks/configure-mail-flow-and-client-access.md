@@ -2,8 +2,8 @@
 localization_priority: Critical
 description: 'Summary: How to set up mail flow and client access in Exchange 2016 and Exchange 2019.'
 ms.topic: get-started-article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms.date: 7/30/2018
 ms.reviewer:

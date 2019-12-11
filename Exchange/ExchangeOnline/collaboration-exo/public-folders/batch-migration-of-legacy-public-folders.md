@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.service: exchange-online
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms.collection:
@@ -28,6 +28,8 @@ We recommend that you don't use Outlook's PST export feature to migrate public f
 
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts:
 
+- ` ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with action to fix the issues. You'll run this script on the legacy Exchange server On-Premises.
+
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file. You'll run this script on the legacy Exchange server.
 
 - `Export-PublicFolderStatistics.psd1`: This support file is used by the `Export-PublicFolderStatistics.ps1` script and should be downloaded to the same location.
@@ -36,7 +38,7 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
 
 - `PublicFolderToMailboxMapGenerator.strings.psd1`: This support file is used by the `PublicFolderToMailboxMapGenerator.ps1` script and should be downloaded to the same location.
 
-- `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
+- `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://docs.microsoft.com/exchange/limits-for-public-folders-exchange-2013-help).
 
 - `Create-PublicFolderMailboxesForMigration.strings.psd1`: This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location.
 
@@ -68,13 +70,15 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller. Or, we recommend that you divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information. **Note**: If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=844062) cmdlet to increase them with the `DefaultPublicFolderIssueWarningQuota` and `DefaultPublicFolderProhibitPostQuota` parameters.
 
+If you use a firewall and access control lists (ACLs), ensure that the [IP ranges used by Office 365 in your region](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) are permitted through your firewall.
+
 - In Office 365 and Exchange Online, you can create a maximum of 1,000 public folder mailboxes.
 
 - Before you migrate your public folders, we recommend that you first move all user mailboxes to Office 365 and Exchange Online. For details, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
 
 - Outlook Anywhere needs to be enabled on the legacy Exchange server. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249).
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
 
@@ -97,11 +101,19 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 
     - `SyncMailPublicFolders.strings.psd1`
 
-4. Save the scripts to the same location you did for step 2. For example, C:\PFScripts.
+4. Download the source side validation script from https://www.microsoft.com/download/confirmation.aspx?id=100414
+
+5. Save the scripts to the same location you did for step 2. For example, C:\PFScripts.
 
 ## Step 2: Prepare for the migration
 
+> [!NOTE]
+> We strongly recommend running the Source Side Validation script from an On-Premises Exchange Server2010 with mailbox role. The script will scan and report issues that are known to cause migration to be slow, along with guidance to fix these issues. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622). The script will perform all the following prerequisites.
+
 Perform the following prerequisite steps before you begin the migration.
+
+> [!NOTE]
+> We recommend running the Source Side Validation script from an Exchange Server 2010 hosting public folder database. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622).
 
 ### General prerequisite steps
 
@@ -112,6 +124,8 @@ Perform the following prerequisite steps before you begin the migration.
 - Make sure that there are no duplicate public folder objects in Active Directory, to avoid a situation where two or more Active Directory objects are pointing to the same mail-enabled public folder.
 
 ### Prerequisite steps on the legacy Exchange server
+
+Add an additional step here suggesting to run Source Side Validation script at mailbox server on Exchange Server 2010. Please use the examples as documented here: https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622
 
 1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
 
@@ -191,17 +205,17 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-AcceptedDomain](https://technet.microsoft.com/library/08bcaaec-51e3-447d-b3bf-406a705c64b4.aspx)
+- [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-accepteddomain)
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
 
-- [get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
+- [get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
 
 - [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
 
@@ -263,23 +277,23 @@ Get-Mailbox -PublicFolder:$true | Where-Object {$_.ExchangeGuid -eq $hierarchyMa
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
 - [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
 
-- [get-MailPublicFolder](https://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
+- [get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder)
 
-- [Disable-MailPublicFolder](https://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder)
 
-- [remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
+- [remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder)
 
-- [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -429,15 +443,15 @@ While batch migrations need to be created using the **New-MigrationBatch** cmdle
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-- [Get-ExchangeServer](https://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx)
+- [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-exchangeserver)
 
-- [Get-OutlookAnywhere](https://technet.microsoft.com/library/b160bc1d-7691-4b58-b85c-09759362fa99.aspx)
+- [Get-OutlookAnywhere](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-outlookanywhere)
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
@@ -447,15 +461,26 @@ For detailed syntax and parameter information, see the following topics:
 
 Until this point in the migration process, users have been able to access public folders. The next steps will log users off from the legacy public folders and lock the folders while the migration completes its final synchronization. Users won't be able to access public folders during this process. Also, any mail sent to mail-enabled public folders will be queued and won't be delivered until the public folder migration is complete.
 
-Before you run the `PublicFoldersLockedForMigration` command as described below, make sure that all jobs are in the **Synced** state. You can do this by running the `Get-PublicFolderMailboxMigrationRequest` command. Continue with this step only after you've verified that all jobs are in the **Synced** state.
+> [!NOTE]
+>The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion. It is recommended to plan for miniumum of 48 hours of downtime for the final sync to complete
 
-On the legacy Exchange server, run the following command to lock the legacy public folders for finalization.
+Ensure the migration batch and individual migration requests have successfully synced.
+
+Run the following command in EXO PowerShell to get the details:
+
+`Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | ft *last*sync*`
+
+`Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics |ft targetmailbox,*last*sync*`
+
+The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within last 7 days. If it is too far off, like older than a month or so, you may want to take a look at public folder migration requests and ensure all the requests were synced recently.
+
+Once you have confirmed the batch and all migration requests have successfully synced, On the legacy Exchange server, run the following command to lock the legacy public folders for finalization.
 
 ```
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
@@ -466,8 +491,10 @@ To complete the public folder migration, run the following command:
 ```
 Complete-MigrationBatch PublicFolderMigration
 ```
+> [!IMPORTANT]
+> After a migration batch is completed, no additional data can be synchornized from Exchange servers on-premises and Exchange Online.
 
-When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.
+When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the status of migration batch to remain on "Synced" for few hours before it switches to Completing. For migrations involving large number of target mailboxes, it is normal to see the status remain “Synced” state for more than 24 hours, provided none of underlying public folder migration requests have Failed or were quarantined.
 
 If you've configured a hybrid deployment between your on-premises Exchange servers and Office 365, you need to run the following command in Exchange Online PowerShell after migration is complete:
 
@@ -511,11 +538,11 @@ After you finalize the public folder migration, you should run the following tes
 
 For detailed syntax and parameter information, see the following topics:
 
-[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
-[Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+[Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
 
-[Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
+[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig)
 
 ## How do I know this worked?
 

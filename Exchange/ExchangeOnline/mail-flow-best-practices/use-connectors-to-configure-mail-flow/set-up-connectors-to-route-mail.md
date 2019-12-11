@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use connectors to route mail between Exchange Online and on-premises email servers.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.date: 
 ms.reviewer: 
@@ -79,7 +79,7 @@ Prepare your on-premises email server so that it's ready to connect with Office 
 
 2. Check that your on-premises email server has Transport Layer Security (TLS) enabled, with a valid certification authority-signed (CA-signed) certificate. We recommend that the certificate subject name includes the domain name that matches the primary email server in your organization. Buy a CA-signed digital certificate that matches this description, if necessary.
 
-3. If you want to use certificates for secure communication between Office 365 and your email server, update the connector your email server uses to receive mail. This connector must recognize the right certificate when Office 365 attempts a connection with your server. If you're using Exchange, see [Receive Connectors](https://technet.microsoft.com/library/17751a60-39fe-433f-84d2-bfc14ff4ba51.aspx) for more information. On the Edge Transport Server or Client Access Server (CAS), configure the default certificate for the Receive connector. Update the *TlsCertificateName* parameter on the **Set-ReceiveConnector** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+3. If you want to use certificates for secure communication between Office 365 and your email server, update the connector your email server uses to receive mail. This connector must recognize the right certificate when Office 365 attempts a connection with your server. If you're using Exchange, see [Receive Connectors](https://docs.microsoft.com/exchange/mail-flow/connectors/receive-connectors) for more information. On the Edge Transport Server or Client Access Server (CAS), configure the default certificate for the Receive connector. Update the *TlsCertificateName* parameter on the **Set-ReceiveConnector** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 4. Make a note of the name or IP address of your external-facing email server. If you're using Exchange, this is the Fully Qualified Domain Name (FQDN) of your Edge Transport server or CAS that will receive email from Office 365.
 
@@ -128,7 +128,7 @@ If any connectors already exist for your organization, you can see them listed h
 
 ![Office 365 example connectors to and from email server](../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png)
 
-Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx), connectors that deliver mail between Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
+Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
@@ -158,13 +158,13 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Choose from your organization's email server to Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://technet.microsoft.com/library/a188a123-540d-4780-8b4c-9adf825c6b33.aspx) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
 
 ### 2. Set up your email server to relay mail to the Internet via Office 365
 
 Next, you must prepare your email server to send mail to Office 365. This enables mail flow from your email servers to the Internet via Office 365.
 
-If your on-premises email environment is Microsoft Exchange, you create a Send connector that uses smart host routing to send messages to Office 365. For more information, see [Create a Send connector to route outbound email through a smart host ](https://technet.microsoft.com/library/4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b.aspx). For instructions on how to do this with Exchange Server 2010, see [Create an SMTP Send Connector](https://technet.microsoft.com/library/38ae9dc8-f11b-4f57-867a-4d74b453c9a3.aspx).
+If your on-premises email environment is Microsoft Exchange, you create a Send connector that uses smart host routing to send messages to Office 365. For more information, see [Create a Send connector to route outbound email through a smart host](https://docs.microsoft.com/exchange/mail-flow/connectors/outbound-smart-host-routing).
 
 To create the Send connector in Exchange Server, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 

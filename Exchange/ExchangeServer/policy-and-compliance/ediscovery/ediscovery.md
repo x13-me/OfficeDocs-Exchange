@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.date: 7/6/2018
 ms.reviewer:
@@ -24,7 +24,7 @@ If your organization adheres to legal discovery requirements (related to organiz
 
 ## How In-Place eDiscovery works
 
-In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources professionals.
+In-Place eDiscovery uses the content indexes created by Exchange Search. Role Based Access Control (RBAC) provides the [Discovery Management](https://docs.microsoft.com/exchange/discovery-management-exchange-2013-help) role group to delegate discovery tasks to non-technical personnel, without the need to provide elevated privileges that may allow a user to make any operational changes to Exchange configuration. The Exchange admin center (EAC) provides an easy-to-use search interface for non-technical personnel such as legal and compliance officers, records managers, and human resources professionals.
 
 Authorized users can perform an In-Place eDiscovery search by selecting the mailboxes, and then specifying search criteria such as keywords, start and end dates, sender and recipient addresses, and message types. After the search is complete, authorized users can then select one of the following actions:
 
@@ -42,7 +42,7 @@ In-Place eDiscovery uses Keyword Query Language (KQL). Users familiar with KQL c
 
 ## In-Place eDiscovery permissions
 
-For authorized users to perform In-Place eDiscovery searches, you need to add them to the [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role group. This role group consists of two management roles: the [Mailbox Search Role](https://technet.microsoft.com/library/f86b63ba-0c67-4748-8965-0c08a6a8aec1.aspx), which allows a user to perform an In-Place eDiscovery search, and the [Legal Hold Role](https://technet.microsoft.com/library/c98ce8ca-3477-479a-ad23-a8e6459bc4d0.aspx), which allows a user to place a mailbox on In-Place Hold and Litigation Hold.
+For authorized users to perform In-Place eDiscovery searches, you need to add them to the [Discovery Management](https://docs.microsoft.com/exchange/discovery-management-exchange-2013-help) role group. This role group consists of two management roles: the [Mailbox Search Role](https://docs.microsoft.com/exchange/mailbox-search-role-exchange-2013-help), which allows a user to perform an In-Place eDiscovery search, and the [Legal Hold Role](https://docs.microsoft.com/exchange/legal-hold-role-exchange-2013-help), which allows a user to place a mailbox on In-Place Hold and Litigation Hold.
 
 By default, permissions to perform In-Place eDiscovery-related tasks aren't assigned to any user or Exchange administrators. Exchange administrators who are members of the Organization Management role group can add users to the Discovery Management role group and create custom role groups to narrow the scope of a discovery manager to a subset of users. To learn more about adding users to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](assign-permissions.md).
 
@@ -90,7 +90,7 @@ The following screenshot shows an example of a search query in the EAC.
 
 When using In-Place eDiscovery, also consider the following:
 
-- **Attachments** - In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
+- **Attachments** - In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
 
 - **Unsearchable items** - Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
 
@@ -168,7 +168,7 @@ After you create an In-Place eDiscovery search, you can copy the search results 
 
 - **Email delivery disabled** - Users can't send email to a discovery mailbox. Email delivery to discovery mailboxes is prohibited by using delivery restrictions. This preserves the integrity of search results copied to a discovery mailbox. By default, discovery mailboxes aren't displayed in your organization's global address list.
 
-Exchange Server Setup creates one discovery mailbox with the display name **Discovery Search Mailbox**. You can use the Exchange Management Shell to create additional discovery mailboxes. By default, the discovery mailboxes you create won't have any mailbox access permissions assigned. You can assign Full Access permissions for a discovery manager to access messages copied to a discovery mailbox. For details, see [Create a Discovery Mailbox](https://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx) .
+Exchange Server Setup creates one discovery mailbox with the display name **Discovery Search Mailbox**. You can use the Exchange Management Shell to create additional discovery mailboxes. By default, the discovery mailboxes you create won't have any mailbox access permissions assigned. You can assign Full Access permissions for a discovery manager to access messages copied to a discovery mailbox. For details, see [Create a Discovery Mailbox](https://docs.microsoft.com/Exchange/create-a-discovery-mailbox-exchange-2013-help) .
 
 In-Place eDiscovery also uses a system mailbox with the display name **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}** to hold In-Place eDiscovery metadata. System mailboxes aren't visible in the EAC or in Exchange address lists. Before removing a mailbox database where the In-Place eDiscovery system mailbox is located, you must move the mailbox to another mailbox database. If the mailbox is removed or corrupted, your discovery managers are unable to perform eDiscovery searches until you re-create the mailbox. For details, see [Re-Create the Discovery System Mailbox](https://technet.microsoft.com/library/5ae8426b-5661-4ecb-99c4-cdd342107fb1.aspx).
 
@@ -225,11 +225,11 @@ In-Place eDiscovery uses the content indexes created by Exchange Search. Exchang
 
 With a single content indexing engine, no additional resources are used to crawl and index mailbox databases for In-Place eDiscovery when eDiscovery requests are received by IT departments.
 
-For more information about the file formats indexed by Exchange Search, see [File Formats Indexed By Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx).
+For more information about the file formats indexed by Exchange Search, see [File Formats Indexed By Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help).
 
 ## eDiscovery in an Exchange hybrid deployment
 
-In a hybrid deployment, which is an environment where some mailboxes exist on your on-premises Mailbox servers and some mailboxes exist in a cloud-based organization, you can perform In-Place eDiscovery searches of your cloud-based mailboxes using the EAC in your on-premises organization. If you intend to copy messages to a discovery mailbox, you must select an on-premises discovery mailbox. Messages from cloud-based mailboxes that are returned in search results are copied to the specified on-premises discovery mailbox. To learn more about hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx).
+In a hybrid deployment, which is an environment where some mailboxes exist on your on-premises Mailbox servers and some mailboxes exist in a cloud-based organization, you can perform In-Place eDiscovery searches of your cloud-based mailboxes using the EAC in your on-premises organization. If you intend to copy messages to a discovery mailbox, you must select an on-premises discovery mailbox. Messages from cloud-based mailboxes that are returned in search results are copied to the specified on-premises discovery mailbox. To learn more about hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 To successfully perform cross-premises eDiscovery searches in an Exchange Server hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication is a server-to-server authentication protocol that allows applications to authenticate to each other.
 
@@ -239,9 +239,9 @@ OAuth authentication supports the following eDiscovery scenarios in an Exchange 
 
 - Search on-premises and cloud-based mailboxes in the same eDiscovery search.
 
-For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
-For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://technet.microsoft.com/library/f703e153-98e2-4268-8a6e-07a86b0a1d22.aspx).
+For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
 ## Integration with SharePoint Server
 
@@ -255,7 +255,7 @@ Exchange Server offers integration with SharePoint Server, allowing a discovery 
 
 SharePoint Server also uses Microsoft Search Foundation for content indexing and querying. Regardless of whether a discovery manager uses the EAC or the eDiscovery Center to search Exchange content, the same mailbox content is returned.
 
-Before you can use eDiscovery Center in SharePoint Server to search Exchange mailboxes, you must establish trust between the two applications. In Exchange and SharePoint, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
+Before you can use eDiscovery Center in SharePoint Server to search Exchange mailboxes, you must establish trust between the two applications. In Exchange and SharePoint, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
 
 ## In-Place eDiscovery limits and throttling policies
 

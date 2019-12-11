@@ -2,13 +2,13 @@
 title: 'Not in schema master site/domain_NotInSchemaMasterDomain: Exchange 2013 Help'
 TOCTitle: Not in schema master site/domain_NotInSchemaMasterDomain
 ms:assetid: 5e44eb33-4c30-4c3d-ba68-5c30bef1731f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.notinschemamasterdomain(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.notinschemamasterdomain(v=EXCHG.150)
 ms:contentKeyID: 46628957
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

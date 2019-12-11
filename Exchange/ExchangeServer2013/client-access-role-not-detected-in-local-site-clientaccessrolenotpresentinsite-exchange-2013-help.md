@@ -2,13 +2,13 @@
 title: 'Client Access role not detected in local site'
 TOCTitle: Client Access role not detected in local site_ClientAccessRoleNotPresentInSite
 ms:assetid: b5bfc6af-9c55-46c0-a293-6078b64e87dd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)
 ms:contentKeyID: 46629089
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

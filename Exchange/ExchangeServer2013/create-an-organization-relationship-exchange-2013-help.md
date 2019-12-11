@@ -2,13 +2,13 @@
 title: 'Create an organization relationship: Exchange 2013 Help'
 TOCTitle: Create an organization relationship
 ms:assetid: 5ea61b96-c8ca-44fc-b8b5-ca4341af36a6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657451(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657451(v=EXCHG.150)
 ms:contentKeyID: 49289267
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -83,7 +83,7 @@ This example attempts to automatically discover configuration information from t
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/en-us/library/dd351221\(v=exchg.150\)) and [New-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332357\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/dd351221\(v=exchg.150\)) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
 
 This example creates an organization relationship with Fourth Coffee. In this example, the connection settings with the external Exchange organization are provided. The following conditions apply:
 
@@ -101,7 +101,7 @@ This example creates an organization relationship with Fourth Coffee. In this ex
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332357\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
 
 ## How do you know this worked?
 

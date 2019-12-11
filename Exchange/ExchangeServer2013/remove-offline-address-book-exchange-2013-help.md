@@ -1,8 +1,8 @@
 ---
 title: 'Remove an offline address book: Exchange 2013 Help'
 TOCTitle: Remove an offline address book
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -43,4 +43,4 @@ Remove-OfflineAddressBook -Identity "My OAB"
 
 Type Y to confirm that you want to remove the OAB, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://technet.microsoft.com/library/88a8f173-34b9-4e75-8f1a-26ad6f972e98.aspx).
+For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-offlineaddressbook).

@@ -1,8 +1,8 @@
 ---
 title: 'Create a global address list: Exchange 2013 Help'
 TOCTitle: Create a global address list
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -16,7 +16,7 @@ _**Applies to:** Exchange Server 2013_
 
 The global address list (GAL) is a directory that contains entries for every group, user, and contact within an organization's implementation of Microsoft Exchange. If your organization uses address book policies, you may want to create additional GALs. To learn more, see [Address book policies](address-book-policies-exchange-2013-help.md).
 
-For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Address list procedures](address-list-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -42,14 +42,14 @@ New-GlobalAddressList -Name "GAL_Contoso" -IncludedRecipients MailboxUsers -Cond
 > [!NOTE]
 > If you're using precanned conditional filter properties, the _IncludedRecipients_ parameter can't be blank.
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).
 
 ## Use the Shell create a GAL using a recipient filter
 
 This example creates a GAL named GAL_AgencyA that includes recipients for which the _CustomAttribute15_ parameter has a value of `AgencyA`.
 
 ```powershell
-New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter {CustomAttribute15 -like "AgencyA"}
+New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter "CustomAttribute15 -like 'AgencyA'"
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).

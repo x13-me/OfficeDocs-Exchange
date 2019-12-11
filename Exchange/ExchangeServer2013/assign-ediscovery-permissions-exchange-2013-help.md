@@ -1,8 +1,8 @@
 ---
 title: 'Assign eDiscovery permissions in Exchange: Exchange 2013 Help'
 TOCTitle: Assign eDiscovery permissions in Exchange
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -19,7 +19,7 @@ If you want users to be able to use Microsoft Exchange Server 2013 In-Place eDis
 > [!CAUTION]
 > Members of the Discovery Management role group can access sensitive message content. Specifically, these members can use [In-Place eDiscovery](in-place-ediscovery-exchange-2013-help.md) to search all mailboxes in your Exchange organization, preview messages (and other mailbox items), copy them to a Discovery mailbox and export the copied messages to a .pst file. In most organizations, this permission is granted to legal, compliance, or Human Resources personnel. >
 
-To learn more about the Discovery Management role group, see [Discovery Management](https://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx). To learn more about Role Based Access Control (RBAC), see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+To learn more about the Discovery Management role group, see [Discovery Management](discovery-management-exchange-2013-help.md). To learn more about Role Based Access Control (RBAC), see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
 
 Interested in scenarios where this procedure is used? See the following topics:
 
@@ -59,7 +59,7 @@ This example adds the user Bsuneja to the Discovery Management role group.
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
-For detailed syntax and parameter information, see [Add-RoleGroupMember](https://technet.microsoft.com/library/ed53e269-a855-4066-88a7-1ba36086bd72.aspx).
+For detailed syntax and parameter information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

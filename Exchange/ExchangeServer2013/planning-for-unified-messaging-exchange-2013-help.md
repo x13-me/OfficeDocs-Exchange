@@ -2,13 +2,13 @@
 title: 'Planning for Unified Messaging: Exchange 2013 Help'
 TOCTitle: Planning for Unified Messaging
 ms:assetid: 942788b1-b19d-40b3-a52e-2e1fef8df3f9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ674306(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ674306(v=EXCHG.150)
 ms:contentKeyID: 49319925
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

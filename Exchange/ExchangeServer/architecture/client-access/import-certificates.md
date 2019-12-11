@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
 ms.date: 7/5/2018
 ms.reviewer:
@@ -106,7 +106,7 @@ Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path 
 
 - If you want to be able to export the certificate from the server where you're importing it, you need to use the _PrivateKeyExportable_ parameter with the value `$true`.
 
-- For more information, see [Import-ExchangeCertificate](https://technet.microsoft.com/library/c1a98e97-e58a-49c8-a44d-948b2fc07876.aspx).
+- For more information, see [Import-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/import-exchangecertificate).
 
 ## How do you know this worked?
 

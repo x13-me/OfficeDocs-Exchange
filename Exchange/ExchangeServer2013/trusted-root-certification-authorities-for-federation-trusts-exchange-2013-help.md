@@ -2,13 +2,13 @@
 title: 'Trusted root certification authorities for federation trusts'
 TOCTitle: Trusted root certification authorities for federation trusts
 ms:assetid: d4224bf5-69b3-484c-8a70-4f230d3dbdd9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee332350(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee332350(v=EXCHG.150)
 ms:contentKeyID: 48385572
 ms.date: 07/26/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

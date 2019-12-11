@@ -1,8 +1,8 @@
 ---
 title: 'Update offline address book: Exchange 2013 Help'
 TOCTitle: Update offline address book
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -39,4 +39,4 @@ This example updates the OAB named My OAB.
 Update-OfflineAddressBook -Identity "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://technet.microsoft.com/library/08ee5bd7-1c23-492e-8952-d37b2a61c022.aspx).
+For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-offlineaddressbook).

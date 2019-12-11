@@ -2,13 +2,13 @@
 title: 'MailboxSearchApplication role: Exchange 2013 Help'
 TOCTitle: MailboxSearchApplication role
 ms:assetid: 914b9132-e420-4b27-ab30-57f672166d24
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657470(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657470(v=EXCHG.150)
 ms:contentKeyID: 49289345
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

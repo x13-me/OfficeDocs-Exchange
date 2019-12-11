@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to set storage quotas on Exchange mailboxes.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.date: 7/5/2018
 ms.reviewer:
@@ -74,7 +74,7 @@ This example sets the issue warning, prohibit send, and prohibit send and receiv
 Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## How do you know this worked?
 

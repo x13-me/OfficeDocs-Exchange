@@ -2,13 +2,13 @@
 title: 'Allow or prevent call answering on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Allow or prevent call answering on a Mailbox server
 ms:assetid: 4b860c09-6669-4e3d-b3dc-17b8018b3860
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997908(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997908(v=EXCHG.150)
 ms:contentKeyID: 49315413
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

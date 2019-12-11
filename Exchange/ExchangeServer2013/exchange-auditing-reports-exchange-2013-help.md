@@ -1,8 +1,8 @@
 ---
 title: 'Exchange auditing reports: Exchange 2013 Help'
 TOCTitle: Exchange auditing reports
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -78,7 +78,7 @@ Set-Mailbox <Identity> -AuditEnabled $true
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands.
 
 ```powershell
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+$UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 

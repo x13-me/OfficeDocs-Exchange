@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 ms.date: 
 ms.reviewer: 
@@ -41,7 +41,7 @@ Run the following commands:
 ```
 $AM = Get-Mailbox "<arbitration mailbox>" -Arbitration
 $AMDN = $AM.DistinguishedName
-Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
+Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 ```
 
 For example, to find all the recipients that use the arbitration mailbox named Arbitration Mailbox01, run the following commands:
@@ -49,11 +49,11 @@ For example, to find all the recipients that use the arbitration mailbox named A
 ```
 $AM = Get-Mailbox "Arbitration Mailbox01" -Arbitration
 $AMDN = $AM.DistinguishedName
-Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
+Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 ```
 
 > [!NOTE]
-> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`.
+> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '<DN>'"`.
 
 ## Step 2: Use Exchange Online PowerShell to specify a different arbitration mailbox or disable moderation for the recipients
 

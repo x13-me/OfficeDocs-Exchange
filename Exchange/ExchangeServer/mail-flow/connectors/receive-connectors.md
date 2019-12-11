@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
 ms.date: 7/6/2018
 ms.reviewer: 
@@ -253,7 +253,7 @@ The available Receive connector permissions are described in the following table
 
   - `ms-Exch-SMTP-Send-XMessageContext-FastIndex`
 
-- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://technet.microsoft.com/library/bb232136.aspx).
+- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://docs.microsoft.com/exchange/header-firewall-exchange-2013-help).
 
 ### Receive connector permission procedures
 

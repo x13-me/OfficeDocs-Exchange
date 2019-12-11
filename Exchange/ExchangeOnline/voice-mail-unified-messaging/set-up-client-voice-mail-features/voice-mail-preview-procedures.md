@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Configure Voice Mail Preview partner services for users
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 3154be11-1a9d-4e51-a2d0-592ddbcca7b1
 ms.date: 11/17/2014
 ms.reviewer: 

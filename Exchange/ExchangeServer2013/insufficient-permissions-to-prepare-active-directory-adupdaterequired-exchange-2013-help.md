@@ -2,13 +2,13 @@
 title: 'Insufficient permissions to prepare Active Directory'
 TOCTitle: Insufficient permissions to prepare Active Directory_ADUpdateRequired
 ms:assetid: 1412d8a1-605a-4b1e-bee3-0c97f2cc9e65
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.adupdaterequired(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adupdaterequired(v=EXCHG.150)
 ms:contentKeyID: 46628816
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

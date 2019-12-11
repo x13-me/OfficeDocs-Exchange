@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to use retention policies to manage an email lifecycle in Exchange Server. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.date: 6/8/2018
 ms.reviewer:
@@ -147,7 +147,7 @@ This example creates the retention policy RetentionPolicy-Corp and uses the _Ret
 New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/library/4cdd6f20-5bca-4269-ac21-0a4cde0d54d6.aspx).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 

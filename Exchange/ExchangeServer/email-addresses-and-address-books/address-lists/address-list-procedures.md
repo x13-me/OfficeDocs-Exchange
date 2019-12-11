@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn the tasks that Exchange Server 2016 and Exchange Server 2019 administrators need to know to manage address lists and global address lists (GAL).'
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 ms.collection: exchange-server
@@ -92,7 +92,7 @@ This example updates all GALs in the organization that require updates.
 Get-GlobalAddressList | where {$_.RecipientFilterApplied -eq $false} | Update-GlobalAddressList
 ```
 
-For detailed syntax and parameter information, see [Update-GlobalAddressList](https://technet.microsoft.com/library/6d3ee7f3-1205-4f04-a833-c5c47f2b774c.aspx).
+For detailed syntax and parameter information, see [Update-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -155,10 +155,10 @@ This example creates a GAL with a custom recipient filter:
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
 ```
-New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter {CustomAttribute15 -like "*AgencyA*"}
+New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -194,7 +194,7 @@ This example modifies the existing GAL named Contoso GAL by adding the **Company
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -226,7 +226,7 @@ This example removes the address list named Agency A GAL.
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-globaladdresslist).
 
 #### How do you know this worked?
 
@@ -286,7 +286,7 @@ This example updates all address lists in the organization that require updates.
 Get-AddressList | where {$_.RecipientFilterApplied -eq $false} | Update-AddressList
 ```
 
-For detailed syntax and parameter information, see [Update-AddressList](https://technet.microsoft.com/library/50bf30ea-48cf-4cc9-b0fb-ce332da5bf16.aspx).
+For detailed syntax and parameter information, see [Update-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-addresslist).
 
 #### How do you know this worked?
 
@@ -381,10 +381,10 @@ This example creates an address list with a custom recipient filter:
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
 ```
-New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
+New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
 
 #### How do you know this worked?
 
@@ -440,7 +440,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](https://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
+For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addresslist).
 
 #### How do you know this worked?
 
@@ -470,7 +470,7 @@ This example moves the address list named Southeast Offices from the root (" `\`
 Move-AddressList -Identity "Southeast Offices" -Target "North America"
 ```
 
-For detailed syntax and parameter information, see [Move-AddressList](https://technet.microsoft.com/library/c5db411c-bfc7-4baa-b5ca-015b9e6ffa11.aspx).
+For detailed syntax and parameter information, see [Move-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/move-addresslist).
 
 #### How do you know this worked?
 
@@ -518,7 +518,7 @@ This example removes the address list named Southeast Offices and all its childr
 Remove-AddressList -Identity "North America\Southeast Offices" -Recursive
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/b628738c-ebbf-4116-ba85-b1dbd273df40.aspx).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addresslist).
 
 #### How do you know this worked?
 
@@ -619,7 +619,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 - In the Exchange Management Shell, run the following command and verify the recipient is listed:
 
   ```
-  Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
+  Get-Recipient -ResultSize unlimited -Filter "HiddenFromAddressListsEnabled -eq `$true"
   ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.
@@ -690,9 +690,9 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
 - **Custom recipient filters**: Uses the required _RecipientFilter_ parameter with an OPATH filter.
 
-  - The basic OPATH filter syntax is `{<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'...}`.
+   - The basic OPATH filter syntax is `"<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'..."`.
 
-  - Braces `{ }` are required around the whole OPATH filter.
+  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion..
 
   - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
 
@@ -702,9 +702,11 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
 
   - `lt` and `gt` (less than and greater than).
 
-  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `{Department -like 'Sales*'}`.
+  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `"Department -like 'Sales*'"`.
 
-  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `{(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')}`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `"(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')"`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+
+  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
 
   - After you use the **New-AddressList** cmdlet to create an address list that uses custom recipient filters, you can't modify the address list in the EAC. You need to use the **Set-AddressList** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
 

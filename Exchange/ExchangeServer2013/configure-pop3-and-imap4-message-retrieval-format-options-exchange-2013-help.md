@@ -2,13 +2,13 @@
 title: 'Configure POP3 and IMAP4 message retrieval format options: Exchange 2013 Help'
 TOCTitle: Configure POP3 and IMAP4 message retrieval format options
 ms:assetid: 481096e0-4492-46c2-8ca8-bdf84a84531e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997869(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997869(v=EXCHG.150)
 ms:contentKeyID: 50395398
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -114,7 +114,7 @@ You can choose from the following settings. You can specify the value for the *M
 
 After you've set the message retrieval format settings for POP3, you must restart the POP3 services for the settings to take effect. For information about how to restart the POP3 services, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/en-us/library/aa997154\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/library/aa997154\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -211,7 +211,7 @@ You can choose from the following settings. You can specify the value for the *M
 
 After you've set the message retrieval format settings for IMAP4, you must restart the IMAP4 services for the settings to take effect. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/en-us/library/aa998252\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/library/aa998252\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -280,7 +280,7 @@ You can choose from the following settings. You can specify the value for the *P
 
 After you've set the message retrieval format settings for POP3, you must restart the POP3 services for the settings to take effect. For information about how to restart the POP3 services, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/en-us/library/bb125264\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/library/bb125264\(v=exchg.150\)).
 
 ## How do you know this worked?
 
@@ -349,7 +349,7 @@ You can specify the value for the *ImapMessagesRetrievalMimeFormat* parameter by
 
 After you've set the message retrieval format settings for IMAP4, you must restart the IMAP4 services for the settings to take effect. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/en-us/library/bb125264\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-CASMailbox](https://technet.microsoft.com/library/bb125264\(v=exchg.150\)).
 
 ## How do you know this worked?
 

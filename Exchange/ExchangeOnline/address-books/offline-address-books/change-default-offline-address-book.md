@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to specify the default offline address book (OAB) in Exchange Online
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 61abf78e-2543-4431-acc8-839e3c7a4548
 ms.date: 
 ms.reviewer: 
@@ -46,7 +46,7 @@ This example sets the OAB named My OAB as the default OAB.
 Set-OfflineAddressBook -Identity "My OAB" -IsDefault $true
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
 
 ## How do you know this worked?
 

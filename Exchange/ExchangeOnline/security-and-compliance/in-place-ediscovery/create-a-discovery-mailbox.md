@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Microsoft Exchange Server Setup creates a discovery mailbox by default. In Exchange Online, a discovery mailbox is also created by default. Discovery mailboxes are used as target mailboxes for In-Place eDiscovery searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
 ms.date: 
 ms.reviewer: 
@@ -56,15 +56,15 @@ New-Mailbox -Name SearchResults -Discovery
 > [!IMPORTANT]
 > The 'Name' parameter must not contain any spaces.
 
-For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
 
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
 ```
-Get-Mailbox -Resultsize unlimited -Filter {RecipientTypeDetails -eq "DiscoveryMailbox"}
+Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
 
 ## Step 3: Assign permissions to a discovery mailbox
 
@@ -80,7 +80,7 @@ For example, the following command assigns the Full Access permission to the Lit
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
 ```
 
-For detailed syntax and parameter information, see [Add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
+For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
 
 ## More information
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about recipient resolution in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms.date: 7/6/2018
 ms.reviewer:
@@ -216,7 +216,7 @@ Certain types of messages that are sent by authenticated senders are exempt from
 
 - **Messages sent by the Microsoft Exchange recipient**: These messages include DSNs and NDRs , journal reports, quota messages, and other system-generated messages that are sent to internal message senders. For more information about the Microsoft Exchange recipient, see [Recipients](../../recipients/recipients.md).
 
-- **Messages sent by the external postmaster address**: These messages include DSNs and NDRs, and other system-generated messages that are sent to external message senders. For more information about the external postmaster address, see [Managing the External Postmaster Address](https://technet.microsoft.com/library/6b0c8675-3238-462d-8973-b52305fb90d2.aspx).
+- **Messages sent by the external postmaster address**: These messages include DSNs and NDRs, and other system-generated messages that are sent to external message senders. For more information about the external postmaster address, see [Managing the External Postmaster Address](https://docs.microsoft.com/exchange/configure-the-external-postmaster-address-exchange-2013-help).
 
 Exchange blocks certain types of messages that are sent to external domains (for example, internal OOF messages, automatic replies, and meeting forward notifications). You configure these settings in remote domains (the default remote domain, or remote domains for specific external domains). For more information, see [Managing Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
 

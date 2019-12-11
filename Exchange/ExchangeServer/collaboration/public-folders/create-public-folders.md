@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.date: 4/19/2018
 ms.reviewer:
@@ -67,7 +67,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2016
 > [!IMPORTANT]
 > Don't use a backslash (\) in the name when creating a public folder.
 
-For detailed syntax and parameter information, see [New-PublicFolder](https://technet.microsoft.com/library/18b837bf-9ef7-4edf-8728-7f6bd346e75d.aspx).
+For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-publicfolder).
 
 ## How do you know this worked?
 <a name="BKMK_Shell"> </a>

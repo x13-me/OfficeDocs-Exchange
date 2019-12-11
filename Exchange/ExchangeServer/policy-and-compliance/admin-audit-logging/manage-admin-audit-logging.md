@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange Server, and how to view the admit audit log settings.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
 ms.date: 6/8/2018
 ms.reviewer:
@@ -58,7 +58,7 @@ This example audits the cmdlets specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/9d77294d-a501-4af6-8c3b-753235c741a7.aspx).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
 
 ## Specify the parameters to be audited
 <a name="parameters"> </a>
@@ -88,7 +88,7 @@ This example audits the parameters specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/9d77294d-a501-4af6-8c3b-753235c741a7.aspx).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
 
 ## Specify the admin audit log age limit
 <a name="agelimit"> </a>
@@ -114,7 +114,7 @@ This example specifies an age limit of two years and six months.
 Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/9d77294d-a501-4af6-8c3b-753235c741a7.aspx).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
 
 ## Enable or disable logging of Test cmdlets
 <a name="testcmdlets"> </a>
@@ -133,7 +133,7 @@ This command disables the logging of **Test** cmdlets.
 Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/9d77294d-a501-4af6-8c3b-753235c741a7.aspx).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
 
 ## Disable admin audit logging
 <a name="disable"> </a>

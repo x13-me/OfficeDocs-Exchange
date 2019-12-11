@@ -2,13 +2,13 @@
 title: Troubleshooting Monitoring Health Set
 TOCTitle: Troubleshooting Monitoring Health Set
 ms:assetid: 36a7b13d-a8ee-41e6-a697-ae910e142c2f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.monitoring(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.monitoring(v=EXCHG.150)
 ms:contentKeyID: 49720759
 ms.date:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

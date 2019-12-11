@@ -2,13 +2,13 @@
 title: 'Allow Message Waiting Indicator: Exchange 2013 Help'
 TOCTitle: Allow Message Waiting Indicator
 ms:assetid: 57fb439e-8208-499f-a20b-814677843a8c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298001(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298001(v=EXCHG.150)
 ms:contentKeyID: 53908377
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -197,7 +197,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
 
 - [Disable Message Waiting Indicator (MWI) for users in Exchange Server](disable-mwi-for-users-exchange-2013-help.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\))
 
 ## UM IP gateways and MWI
 
@@ -238,7 +238,7 @@ For more information about how to manage MWI settings, see the following topics:
 
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Server](prevent-mwi-on-um-ip-gateway-exchange-2013-help.md)
 
-- [Set-UMIPGateway](https://technet.microsoft.com/en-us/library/aa996577\(v=exchg.150\))
+- [Set-UMIPGateway](https://technet.microsoft.com/library/aa996577\(v=exchg.150\))
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 
@@ -275,7 +275,7 @@ For more information about how to manage text message notification settings on a
 
 - [Manage voice mail settings for a user in Exchange Server](manage-voice-mail-settings-exchange-2013-help.md)
 
-- [Set-UMMailbox](https://technet.microsoft.com/en-us/library/bb124893\(v=exchg.150\))
+- [Set-UMMailbox](https://technet.microsoft.com/library/bb124893\(v=exchg.150\))
 
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
@@ -308,7 +308,7 @@ For more information about how to manage text message notification settings, see
 
 - [Manage a UM mailbox policy in Exchange Server](manage-um-mailbox-policy-exchange-2013-help.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/en-us/library/bb124903\(v=exchg.150\))
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\))
 
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks:
 

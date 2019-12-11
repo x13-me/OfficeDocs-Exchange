@@ -2,13 +2,13 @@
 title: 'Exchange 2013 virtualization: Exchange 2013 Help'
 TOCTitle: Exchange 2013 virtualization
 ms:assetid: 36184b2f-4cd9-48f8-b100-867fe4c6b579
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619301(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619301(v=EXCHG.150)
 ms:contentKeyID: 49289229
 ms.date: 08/08/2017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

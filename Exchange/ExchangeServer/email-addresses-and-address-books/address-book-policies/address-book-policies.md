@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Server.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.date:
 ms.reviewer: 

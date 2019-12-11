@@ -2,13 +2,13 @@
 title: 'Help identify issues with automatic checks - 3rd Party Tools'
 TOCTitle: Help Identify My Issues with Automatic Checks - 3rd Party Tools
 ms:assetid: 83b71e35-892e-44e3-9fce-c608b49bbc61
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793974(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn793974(v=EXCHG.150)
 ms:contentKeyID: 62632388
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

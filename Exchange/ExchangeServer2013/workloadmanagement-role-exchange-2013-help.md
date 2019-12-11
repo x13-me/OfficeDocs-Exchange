@@ -2,13 +2,13 @@
 title: 'WorkloadManagement role: Exchange 2013 Help'
 TOCTitle: WorkloadManagement role
 ms:assetid: d5c90eae-95c3-44b0-add5-a97337d17743
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657498(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657498(v=EXCHG.150)
 ms:contentKeyID: 49289423
 ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: 'Manage transport rules: Exchange 2013 Help'
 TOCTitle: Manage transport rules
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -63,7 +63,7 @@ You can create a transport rule by setting up a Data Loss Prevention (DLP) polic
 
 Each DLP policy is a collection of transport rules. After you create the DLP policy, you can fine-tune the rules using the procedures below.
 
-1. Create a DLP policy. For instructions, see [Exchange Server 2013 DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx).
+1. Create a DLP policy. For instructions, see [DLP procedures](dlp-procedures-exchange-2013-help.md)).
 
 2. Modify the transport rules created by the DLP policy. See [View or modify a transport rule](manage-transport-rules-exchange-2013-help.md#view-or-modify-a-transport-rule).
 
@@ -142,7 +142,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
 ### Use the Exchange Management Shell to create a transport rule
 
-This example uses the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new transport rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
+This example uses the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule) cmdlet to create a new transport rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
 
 ```powershell
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
@@ -187,7 +187,7 @@ To view the properties of a specific transport rule, you provide the name of tha
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
-To modify the properties of an existing rule, use the [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
+To modify the properties of an existing rule, use the [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
 
 ```powershell
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
@@ -207,7 +207,7 @@ To verify that you have successfully modified a transport rule, do the following
 
 ## Transport rule properties
 
-You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
+You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule)
 
 |**Condition Name in the EAC**|**Condition name in Exchange Management Shell**|**Properties**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -314,7 +314,7 @@ To verify that you have successfully removed the transport rule, do the followin
 
 ## Import or export a transport rule collection
 
-You must use the Exchange Management Shell to import or export a transport rule collection. For information about how to import a transport rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a transport rule collection to an XML file, see [Export-TransportRuleCollection](https://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
+You must use the Exchange Management Shell to import or export a transport rule collection. For information about how to import a transport rule collection from an XML file, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/import-transportrulecollection). For information about how to export a transport rule collection to an XML file, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/export-transportrulecollection).
 
 ## Need more help?
 

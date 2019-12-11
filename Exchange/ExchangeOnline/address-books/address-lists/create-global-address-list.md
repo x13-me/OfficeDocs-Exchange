@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to create of global address lists (GALs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 ms.date:
 ms.reviewer:
@@ -63,10 +63,10 @@ This example creates a GAL with a custom recipient filter:
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
 ```
-New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter {CustomAttribute15 -like "*AgencyA*"}
+New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-globaladdresslist).
 
 #### How do you know this worked?
 

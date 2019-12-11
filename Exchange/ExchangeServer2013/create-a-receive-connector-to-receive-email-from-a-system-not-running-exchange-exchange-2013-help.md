@@ -2,13 +2,13 @@
 title: 'Create a Receive connector to receive email from a system not running Exchange'
 TOCTitle: Create a Receive connector to receive email from a system not running Exchange
 ms:assetid: 85f0864a-6502-49db-8804-16755a7292b4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657467(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657467(v=EXCHG.150)
 ms:contentKeyID: 49289337
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +49,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 6. Click the **Finish** button to create your connector.
 
-Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
+Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
 
 ## How do you know this worked?
 

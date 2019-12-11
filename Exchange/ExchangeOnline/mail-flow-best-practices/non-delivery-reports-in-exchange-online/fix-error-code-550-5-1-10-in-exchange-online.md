@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.10 in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer: 
@@ -199,7 +199,7 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 **Notes**:
 
-- Message routing (especially in hybrid configurations) can be complex. Even if changing the accepted domain setting fixes the bounce message problem, it might not be right solution for you. In some cases, changing the accepted domain type might cause other unanticipated problems. Review [Manage accepted domains in Exchange Online](https://technet.microsoft.com/library/jj945194.aspx) and then proceed with caution.
+- Message routing (especially in hybrid configurations) can be complex. Even if changing the accepted domain setting fixes the bounce message problem, it might not be right solution for you. In some cases, changing the accepted domain type might cause other unanticipated problems. Review [Manage accepted domains in Exchange Online](../manage-accepted-domains/manage-accepted-domains.md) and then proceed with caution.
 
   - **If the accepted domain in Exchange Online is Authoritative**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, message delivery stops and the sender will receive this bounce message. On-premises users must be represented in the Exchange Online organization by mail contacts or mail users (created manually or by directory synchronization).
 

@@ -2,13 +2,13 @@
 title: 'Change the location of the queue database: Exchange 2013 Help'
 TOCTitle: Change the location of the queue database
 ms:assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125177(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb125177(v=EXCHG.150)
 ms:contentKeyID: 50646241
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 

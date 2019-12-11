@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 8b9a1782-f6be-46bc-bec9-49633be0dc1f
 ms.date: 
 ms.reviewer: 
@@ -81,7 +81,7 @@ If you're not sure which domains Contoso has set up for cloud-based authenticati
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/e7e948c8-453d-49e2-97da-45fd2a7853ba.aspx) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
+For detailed syntax and parameter information, see [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/get-federationinformation) and [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-organizationrelationship).
 
 If you're setting up an organization relationship with an on-premises Exchange organization, you may want to provide the connection settings. This example creates an organization relationship with Fourth Coffee and specifies the connection settings to use. The following conditions apply:
 
@@ -99,7 +99,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-organizationrelationship).
 
 ## How do you know this worked?
 

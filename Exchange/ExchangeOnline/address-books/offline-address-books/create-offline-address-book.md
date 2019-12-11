@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Admins can learn how to create offline address books (OABs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewOabWizardForm.OabIntroductionWizardPage
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
 ms.date: 
 ms.reviewer: 
@@ -42,4 +42,4 @@ This example creates an OAB named OAB_Contoso that contains the default global a
 New-OfflineAddressBook -Name "OAB_Contoso" -AddressLists "\Default Global Address List"
 ```
 
-For detailed syntax and parameter information, see [New-OfflineAddressBook](https://technet.microsoft.com/library/8b9a3931-90c3-4b36-9dcb-5e2e65cd7e5e.aspx).
+For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-offlineaddressbook).

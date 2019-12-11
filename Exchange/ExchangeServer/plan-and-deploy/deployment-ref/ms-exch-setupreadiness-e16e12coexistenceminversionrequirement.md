@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Setup can't continue because the organization contains one or more Exchange 2007 servers.
 ms.topic: reference
-author: msdmaguire
+author: mattpennathe3rd
 f1_keywords:
 - ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement
-ms.author: dmaguire
+ms.author: v-mapenn
 ms.assetid: 4e1b9510-3188-43eb-9252-7c64cb2bc0e3
 ms.date: 4/19/2018
 ms.reviewer: 

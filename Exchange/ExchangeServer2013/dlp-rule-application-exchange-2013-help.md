@@ -1,8 +1,8 @@
 ---
 title: 'How DLP rules are applied to evaluate messages: Exchange 2013 Help'
 TOCTitle: How DLP rules are applied to evaluate messages
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -94,7 +94,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner:
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-classificationrulecollection) cmdlet in the Exchange Management Shell in the following manner:
 
 ```powershell
 $rule_collection = Get-ClassificationRuleCollection
@@ -110,4 +110,4 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 
 [Transport Rules](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
 
-[Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)
+[Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell)

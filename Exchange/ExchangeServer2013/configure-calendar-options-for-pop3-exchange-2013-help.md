@@ -2,13 +2,13 @@
 title: 'Configure calendar options for POP3: Exchange 2013 Help'
 TOCTitle: Configure calendar options for POP3
 ms:assetid: ac3d60a0-8697-4c06-9e93-f8d2c4b157b6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124133(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124133(v=EXCHG.150)
 ms:contentKeyID: 50395403
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
@@ -59,7 +59,7 @@ Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaSe
 
 After you've specified the calendar options for POP3, you must restart the POP3 services. For information about how to restart the POP3 services, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/en-us/library/aa997154\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/library/aa997154\(v=exchg.150\)).
 
 ## How do you know this worked?
 

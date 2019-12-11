@@ -1,8 +1,8 @@
 ---
 title: "Plan, deliver, and adopt Outlook for iOS and Android in your organization"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
 audience: ITPro
 ms.prod: outlook
 ms.topic: get-started-article
@@ -21,6 +21,10 @@ Outlook mobile brings the best of Office 365 – your email, calendar, documents
 Join the over 100 million customers across the world who trust Outlook mobile to stay connected, organized and get things done on the go.
 
 The following is content and guidance that IT administrators, trainers, champions, and change management professionals can use to drive Outlook mobile adoption in your organization and help ensure your users get up and running quickly.  
+
+## Microsoft Security and Compliance with Outlook mobile
+
+Deploy Outlook for iOS and Android with Microsoft Security and Compliance solutions with the latest in applying encryption, sensitivity labeling, end point management and app protection policies. Get peace of mind by protecting your company against external threats with built-in privacy and compliance capabilities. [Learn more in this article](media/outlook-mobile-security-for-enterprise.pdf) that explains how you can control access, protect data and prevent accidental leaks of your company information through email and calendaring.
 
 ## Outlook mobile Customer Adoption Pack
 

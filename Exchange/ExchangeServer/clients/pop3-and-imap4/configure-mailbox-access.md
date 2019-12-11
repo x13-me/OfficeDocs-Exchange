@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
 ms.date: 7/5/2018
 ms.reviewer:
@@ -84,7 +84,7 @@ This example enables POP3 and IMAP4 access to the mailbox named Rand Zaher.
 Set-CasMailbox -Identity "Rand Zaher" -POPEnabled $true -ImapEnabled $true
 ```
 
-For more information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For more information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
 
 ## Enable or disable POP3 or IMAP4 access to multiple mailboxes
 
@@ -118,7 +118,7 @@ You can use the **Get-Mailbox**, **Get-User**, or **Get-Content** cmdlets to ide
 
 - Use the _OrganizationalUnit_ parameter to filter the mailboxes by organizational unit (OU).
 
-- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
+- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/filter-properties).
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 
@@ -127,13 +127,13 @@ You can use the **Get-Mailbox**, **Get-User**, or **Get-Content** cmdlets to ide
 This example disables POP3 and IMAP4 access to all user mailboxes in the North America\Finance OU.
 
 ```
-$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter {RecipientTypeDetails -eq 'UserMailbox'} -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -PopEnabled $false -ImapEnabled $false}
+$NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -PopEnabled $false -ImapEnabled $false}
 ```
 
 This example disables POP3 and IMAP4 access to all mailboxes in the Engineering department in Washington state.
 
 ```
-Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Set-CasMailbox -PopEnabled $false -ImapEnabled $false
+Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -PopEnabled $false -ImapEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable POP3 or IMAP4 access to the specified mailboxes.
@@ -142,7 +142,7 @@ This example uses the text file C:\My Documents\Accounts.txt to disable POP3 or 
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CASMailbox $_ -PopEnabled $false -ImapEnabled $false}
 ```
 
-For more information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) and [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx).
+For more information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
 
 ## Restart the POP3 or IMAP4 services
 
@@ -213,11 +213,11 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
   ```
-  Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Get-CasMailbox
+  Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where POP3 and IMAP4 access is disabled:
 
   ```
-  Get-CasMailbox -ResultSize unlimited -Filter {PopEnabled -eq $false -and ImapEnabled -eq $false}
+  Get-CasMailbox -ResultSize unlimited -Filter "PopEnabled -eq `$false -and ImapEnabled -eq `$false"
   ```

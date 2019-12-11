@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Office 365 Message Encryption lets email users send encrypted messages to people inside or outside their organization.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.date: 8/13/2018
 ms.reviewer: 

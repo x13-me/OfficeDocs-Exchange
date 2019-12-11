@@ -1,8 +1,8 @@
 ---
 title: 'Create a Retention Policy: Exchange 2013 Help'
 TOCTitle: Create a Retention Policy
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 ms.date:
 ms.reviewer:
@@ -148,7 +148,7 @@ This example creates the retention policy RetentionPolicy-Corp and uses the _Ret
 New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/library/4cdd6f20-5bca-4269-ac21-0a4cde0d54d6.aspx).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 

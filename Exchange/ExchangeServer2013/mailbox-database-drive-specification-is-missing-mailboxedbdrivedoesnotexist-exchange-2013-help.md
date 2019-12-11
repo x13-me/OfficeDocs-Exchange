@@ -2,13 +2,13 @@
 title: 'Mailbox database drive specification is missing'
 TOCTitle: Mailbox database drive specification is missing_MailboxEDBDriveDoesNotExist
 ms:assetid: 0e487aa1-3194-4a14-b255-a8b9f9afbf0e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.mailboxedbdrivedoesnotexist(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.mailboxedbdrivedoesnotexist(v=EXCHG.150)
 ms:contentKeyID: 46628796
 ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 mtps_version: v=EXCHG.150
 ---
 
