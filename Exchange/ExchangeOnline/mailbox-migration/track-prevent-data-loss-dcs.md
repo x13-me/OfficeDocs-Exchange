@@ -34,7 +34,7 @@ There are 4 possible grades that are derived from the DataConsistencyScore.
 
 ## How the DataConsistencyScore is calculated
 
-There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
+There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to ensure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
 
 For batches, the DataConsistencyScore is equal to the worst DataConsistencyScore of any user within that batch. This behavior helps administrators know immediately whether there is any data loss that should be investigated.
 
