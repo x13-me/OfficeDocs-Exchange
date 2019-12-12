@@ -200,7 +200,7 @@ Outlook for iOS and Android supports app configuration policies for the followin
 
 - Managing the use of wearable technology
 
-- Managing mail and calendar reminder notifications on iOS
+- Managing sensitive data in mail and calendar reminder notifications
 
 - Managing the contact fields synchronized to the native contacts app
 
@@ -210,14 +210,49 @@ These settings can be deployed to the app regardless of device enrollment status
 
 By default, Outlook for iOS and Android supports wearable technology, allowing the user to receive message notifications and event reminders, and the ability to interact with messages and view daily calendars. Organizations that want to disable the ability to access corporate data on wearables can block wearables with an App Configuration Policy.
 
-### Configure Notifications for Outlook for iOS
+### Configure Notifications for Outlook for iOS and Android
 
-> [!IMPORTANT]
-> The app configuration settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting when they are released in December. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
+Mobile app notifications are critical in alerting users of new content or reminding them to act. Users interact with these notifications via the lock screen and in the operating system’s notification center. Notifications often include detailed information, which can be sensitive in nature. This information, unfortunately, can inadvertently be leaked to casual observers.
 
-The Apple notification architecture ensures that notifications are mirrored on iOS devices and WatchOS. Which device shows the notification depends on the device state: if the Apple Watch is unlocked and on a wrist, while the iOS device is locked, then WatchOS  alerts the user with the notification. Apple does not provide a mechanism where you can administratively control and prevent notifications on WatchOS while still allowing them to be delivered on iOS devices.
+Outlook for iOS and Android has designed its notifications to enable users to triage email and alert users to upcoming meetings, including incorporating Time to Leave suggestions. Mail notifications include the sender’s address, the subject of the message, and a short message preview of the message body. Calendar reminders include the subject, location, and start time of the meeting.
 
-Organizations that want to disable notifications completely on iOS and WatchOS can do so with an App Configuration Policy. The disadvantage is that the end user will never see new mail notifications or calendar reminders on iOS devices. The user has to launch the Outlook for iOS to discover new mail or see calendar appointments.
+Recognizing that these notifications may include sensitive data, organizations can leverage an Intune App Protection Policy setting, **Org Data Notifications**, to remove the sensitive data. As this is an App Protection Policy setting, it applies on all devices (phones, tablets, and wearables) for the user for the apps that support the setting. For more information on the setting, see [iOS App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
+
+In addition to the App Protection Policy setting, Outlook for iOS and Android has a data protection App Configuration Policy setting, **Calendar Notifications**, that provides additional flexibility with calendar notifications – organizations can block sensitive information in mail notifications, while allowing sensitive information in calendar notifications. After all, users might just need to know where they are going and when they should leave, at a glance. 
+
+The following table outlines the notification experience in Outlook for iOS and Android based on the combination of the App Protection and App Configuration policy settings:
+
+<table>
+<thead>
+<tr class="header">
+<th>Org Data Notifications value</th>
+<th>Calendar Notifications value</th>
+<th>Notification behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Allow (default)</td>
+<td>Not Configured (default)</td>
+<td>Default client behavior where sensitive data is exposed in mail and calendar notifications</td>
+</tr>
+<tr class="even">
+<td>Block</td>
+<td>Not Configured</td>
+<td>Sensitive data is exposed in mail and calendar notifications as Outlook ignores the block setting</td>
+</tr>
+<tr class="odd">
+<td>Block Org Data</td>
+<td>Not Configured</td>
+<td>Sensitive data is not available in mail or calendar notifications</td>
+</tr>
+<tr class="even">
+<td>Block Org Data</td>
+<td>Allowed</td>
+<td><p>Sensitive data is not available in mail notifications</p><p>Calendar notifications expose sensitive data</p></td>
+</tr>
+</tbody>
+</table>
 
 ### Configure Contact Field Sync to native Contacts for Outlook for iOS and Android
 
@@ -463,12 +498,3 @@ Outlook for iOS and Android offers administrators additional data protection cap
 |com.microsoft.outlook.ContactSync.PhoneWorkFaxAllowed|This key specifies if the contact's work fax number should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
 |com.microsoft.outlook.ContactSync.PrefixAllowed|This key specifies if the contact's name prefix should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
 |com.microsoft.outlook.ContactSync.SuffixAllowed|This key specifies if the contact's name suffix should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
-
-The below settings for configuring notifications in Outlook for iOS will be removed on December 16, 2019 and should not be used. Customers that need to manage notification data must adopt the new **Org data notifications** Intune App Protection Policy setting when they are released in December. For more information, see [iOS app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android app protection policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
-
-|**Key**|**Value**|**Device Enrollment Type**|
-|:-----|:-----|:-----|
-|com.microsoft.outlook.Mail.NotificationsEnabled|This key specifies if Outlook allows mail notifications. Setting the value to false disables mail notifications. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
-|com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed|This key specifies if the user can adjust the mail notification setting within the app. Setting the value to false prevents the user from adjusting the mail notification setting. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
-|com.microsoft.outlook.Calendar.NotificationsEnabled|This key specifies if Outlook allows calendar reminder notifications. Setting the value to false disables calendar reminder notifications. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
-|com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed|This key specifies if the user can adjust the calendar reminder notification setting within the app. Setting the value to false prevents the user from adjusting the calendar reminder notification setting. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
