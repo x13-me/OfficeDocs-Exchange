@@ -88,7 +88,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
       For example, assume that the failing monitor is **UMSelfTestMonitor**. The probe associated with that monitor is **UMSelfTestProbe**. To run that probe on server1.contoso.com, run the following command:
 
       ```powershell
-      Invoke-MonitoringProbe UM.Protocol\UMSelfTestMonitor -Server server1.contoso.com | Format-List
+      Invoke-MonitoringProbe UM.Protocol\UMSelfTestProbe -Server server1.contoso.com | Format-List
       ```
 
    4. In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
