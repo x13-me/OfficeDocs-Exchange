@@ -59,7 +59,7 @@ Email servers that supports the SMTP BDAT command can accept messages with bare 
 
 ## What's a bare line feed?
 
-
+A _bare line feed_ is a single line feed character (LF or ASCII 10) that isn't immediately preceded by the carriage return character (CR or ASCII 13). The line separator in an email message is supposed to be CRLF, not LF.
 
 ## Still need help?
 
