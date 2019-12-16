@@ -17,7 +17,7 @@ manager: serdars
 
 # Track and prevent migration data loss
 
-When migrating your Exchange environment to the cloud, the migration process might reveal inconsistencies that pose a risk of data loss. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
+When migrating to Exchange Online, the migration process might reveal inconsistencies that pose a risk of data loss. Such inconsistencies can occur during almost any migration, whether from on-premises Public Folders, PST file imports, G Suite migrations, or 3rd-party IMAP servers. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
 
 ## Migration and DataConsistencyScore
 
@@ -34,7 +34,7 @@ There are 4 possible grades that are derived from the DataConsistencyScore.
 
 ## How the DataConsistencyScore is calculated
 
-There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to insure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
+There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to ensure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
 
 For batches, the DataConsistencyScore is equal to the worst DataConsistencyScore of any user within that batch. This behavior helps administrators know immediately whether there is any data loss that should be investigated.
 
