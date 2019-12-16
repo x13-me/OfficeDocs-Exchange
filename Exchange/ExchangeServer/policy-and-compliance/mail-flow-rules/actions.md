@@ -21,7 +21,7 @@ Actions in mail flow rules (also known as transport rules) specify what you want
 
  Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
 
-For more information about mail flow rules in Exchange Server, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
+For more information about mail flow rules in Exchange Server, including how multiple actions are handled, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
 
