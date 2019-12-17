@@ -67,7 +67,7 @@ Determine what version of TLS your device supports by checking the device guide 
 
 - Use direct send (Option 2) or Office 365 SMTP relay (Option 3) for sending mail instead (depending on your requirements).
 
-- If it is essential to use SMTP AUTH client submission and your printer only supports SSL 3.0, you can set up an alternative configuration called Indirect SMTP AUTH client submission. This uses a local SMTP relay server to connect to Office 365. This is a much more complex setup. Instructions can be found here: [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md).
+- Use an on-premises Exchange server (or another SMTP email server) if your device is unable to meet the previous requirements for connecting to Office 365. In fact, you might find it easier to manage multiple devices and applications that send email messages in an on-premises Exchange server instead of connecting them all to Office 365 directly. The Exchange server would relay messages in the same way that a device would use Office 365 to relay messages using Option 3 below. You can find out more about configuring your own email server to send emails to Office 365 here: [Set up connectors to route mail between Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
 
 > [!NOTE]
 > If your device recommends or defaults to port 465, it does not support SMTP AUTH client submission.
@@ -339,4 +339,4 @@ If you happen to have an on-premises email server, you should seriously consider
 
 [Fix issues with printers, scanners, and LOB applications that send email using Office 365](fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 
-[How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md)
+[Set up connectors to route mail between Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md)
