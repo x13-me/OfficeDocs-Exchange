@@ -81,6 +81,8 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **TestFlight**: GCC accounts will not have access to pre-release features when using the TestFlight version of Outlook for iOS.
 
+- **Avatars**: GCC High and DoD accounts will not be able to see user avatars
+
 Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
 ```

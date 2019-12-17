@@ -21,7 +21,7 @@ Conditions and exceptions in mail flow rules (also known as transport rules) ide
 
 Most conditions and exceptions have one property that requires one or more values. For example, the **The sender is** condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Any attachment has executable content** condition simply looks for attachments in messages that have executable content.
 
-For more information about mail flow rules in Exchange Server, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
+For more information about mail flow rules in Exchange Server, including how multiple conditions/exceptions or multi-valued conditions/exceptions are handled, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
 
 For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
