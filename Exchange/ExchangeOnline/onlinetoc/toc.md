@@ -89,7 +89,6 @@
 ### [Manage mail flow for multiple locations](../mail-flow-best-practices/manage-mail-flow-for-multiple-locations.md)
 ### [Manage mail flow on Office 365 and on-prem](../mail-flow-best-practices/manage-mail-flow-on-office-365-and-on-prem.md)
 ### [How to set up a multifunction device or application to send email using Office 365](../mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md)
-### [How to configure IIS for relay with Office 365](../mail-flow-best-practices/how-to-configure-iis-for-relay-with-office-365.md)
 ### [Fix issues with printers, scanners, and LOB applications that send email using Office 365](../mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 ### [Email non-delivery reports in Exchange Online](../mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online.md)
 #### [Fix email delivery issues for error code 5.1.8 in Exchange Online](../mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online.md)
