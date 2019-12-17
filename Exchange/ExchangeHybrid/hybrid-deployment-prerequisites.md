@@ -126,7 +126,7 @@ The following tools and services are beneficial when you're configuring hybrid d
 
 - **Office 365 mail migration advisor**: Gives you set-by-step guidance to configure a hybrid deployment between your on-premises organization and Office 365, or migrate completely to Office 365.
 
-  Learn more at [Use the Office 365 mail migration advisor].
+  Learn more at [Use the Office 365 mail migration advisor](mail-migration-jump.md).
 
 - **Remote Connectivity Analyzer tool**: The Microsoft Remote Connectivity Analyzer tool checks the external connectivity of your on-premises Exchange organization and makes sure that you're ready to configure your hybrid deployment. We strongly recommend that you check your on-premises organization with the Remote Connectivity Analyzer tool prior to configuring your hybrid deployment with the Hybrid Configuration wizard.
 
