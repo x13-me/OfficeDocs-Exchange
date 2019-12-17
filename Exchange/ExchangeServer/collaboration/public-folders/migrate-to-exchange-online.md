@@ -183,7 +183,7 @@ In Exchange Management Shell (on-premises) perform the following steps:
    - Run the following command to take a snapshot of public folder permissions.
 
      ```
-     Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML OnPrem_PFPerms.xml
+     Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User,AccessRights -ExpandProperty AccessRights | Export-CliXML OnPrem_PFPerms.xml
      ```
 
    - Run the following command to take a snapshot of your mail-enabled public folders:
@@ -517,7 +517,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you t
 3. In Exchange Online PowerShell, run the following command to take a snapshot of the permissions:
 
    ```
-   Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User, AccessRights | Export-CliXML Cloud_PFPerms.xml
+   Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User,AccessRights | Export-CliXML Cloud_PFPerms.xml
    ```
 
 4. Exchange Online PowerShell, run the following command to take a snapshot of the mail-enabled public folders:
