@@ -81,7 +81,7 @@ Get-Mailbox -ResultSize unlimited | Format-Table DisplayName, LitigationHoldEnab
 
 In many cases, you only want to look at a subset of your mailboxes. For example, suppose you are asked to come up with a list of all the mailboxes that have been assigned a litigation hold. You can use the **Where-Object** cmdlet in conjunction with the **Get-Mailbox** cmdlet. The **Where-Object** cmdlet needs a filter phrase to tell Exchange Online PowerShell what set of mailboxes you are interested in.
 
-In their simplest form, filter phrases use the syntax `{<PropertyName> -<ComparisonOperator> <PropertyValue>}`.
+In their simplest form, filter phrases use the syntax `"<PropertyName> -<ComparisonOperator> <PropertyValue>"`.
 
 Some commonly used comparison operators are:
 
@@ -97,7 +97,7 @@ For a complete list of comparison operators, see [Where-Object](https://go.micro
 
 Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and `$Null` don't require quotation marks around the value.
 
-Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is `{LitigationHoldEnabled -eq $True}`:
+Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is `"LitigationHoldEnabled -eq $True"`:
 
 - The property name is `LitigationHoldEnabled`.
 
