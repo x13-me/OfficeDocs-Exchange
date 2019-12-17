@@ -88,7 +88,7 @@ When you create a new role group, you need to configure all of the settings your
 
     - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to select the roles that you want to be assigned to the role group in the new window that appears.
 
-    - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to select the members that you want to add to the role group in the new window that appears. You can select users, universal security groups (USGs), or other role groups (security principals).
+    - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to select the members that you want to add to the role group in the new window that appears. You can select users, mail-enabled universal security groups (USGs), or other role groups (security principals).
 
    When you're finished, click **Save** to create the role group.
 
@@ -102,7 +102,7 @@ New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1
 
   - The _Roles_ parameter specifies the management roles to assign to the role group by using the following syntax `"Role1","Role1",..."RoleN"`. You can see the available roles by using the **Get-ManagementRole** cmdlet.
 
-  - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, universal security groups (USGs), or other role groups (security principals).
+  - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).
 
   - The _ManagedBy_ parameter specifies the delegates who can modify and remove the role group by using the following syntax: `"Delegate1","Delegate2",..."DelegateN"`. Note that this setting isn't available in the EAC.
 
@@ -178,7 +178,7 @@ If an existing role group is close in terms of the permissions and settings that
     New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>] [-ManagedBy <Managers>] [-CustomRecipientWriteScope "<Existing Custom Recipient Write Scope Name>"]
     ```
 
-    - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, universal security groups (USGs), or other role groups (security principals).
+    - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).
     -
     - The _ManagedBy_ parameter specifies the delegates who can modify and remove the role group by using the following syntax: `"Delegate1","Delegate2",..."DelegateN"`. Note that this setting isn't available in the EAC.
     -
@@ -371,7 +371,7 @@ For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.
 
 - The **Add-RoleGroupMember** and **Remove-RoleGroupMember** cmdlets add or remove individual members one at a time. The **Update-RoleGroupMember** cmdlet can replace or modify the existing list of members.
 
-- The members of a role group can be users, universal security groups (USGs), or other role groups (security principals).
+- The members of a role group can be users, mail-enabled universal security groups (USGs), or other role groups (security principals).
 
 To modify the members of a role group, use the following syntax:
 
