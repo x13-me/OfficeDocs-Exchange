@@ -67,7 +67,7 @@ Determine what version of TLS your device supports by checking the device guide 
 
 - Use direct send (Option 2) or Office 365 SMTP relay (Option 3) for sending mail instead (depending on your requirements).
 
-- You may wish to keep an Exchange Server on your premises if your device is unable to meet the above requirements for connecting to Office 365. It may also be easier to manage multiple devices and applications sending emails from your organisation by keeping an Exchange Server and not having to point all devices to connect to Office 365 directly. The Exchange Server would then relay emails in the same way that a device would relay using Option 3 below. You can find out more about configuring your own server to send emails to Office 365 here: [Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) 
+- Use an on-premises Exchange server (or another SMTP email server) if your device is unable to meet the previous requirements for connecting to Office 365. In fact, you might find it easier to manage multiple devices and applications that send email messages in an on-premises Exchange server instead of connecting them all to Office 365 directly. The Exchange server would relay messages in the same way that a device would use Office 365 to relay messages using Option 3 below. You can find out more about configuring your own email server to send emails to Office 365 here: [Set up connectors to route mail between Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
 
 > [!NOTE]
 > If your device recommends or defaults to port 465, it does not support SMTP AUTH client submission.
@@ -339,4 +339,4 @@ If you happen to have an on-premises email server, you should seriously consider
 
 [Fix issues with printers, scanners, and LOB applications that send email using Office 365](fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 
-[Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) 
+[Set up connectors to route mail between Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md)
