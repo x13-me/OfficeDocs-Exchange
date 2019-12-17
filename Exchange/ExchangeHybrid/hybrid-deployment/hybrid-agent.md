@@ -334,7 +334,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
    - *appId*: 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 in this example (your value will be different).
 
    ```
-   Update-HybridApplication -targetUri "https://myloadbalancer.com" -targetUri "https://myloadbalancer.com" -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential (Get-Credential)
+   Update-HybridApplication -targetUri "https://myloadbalancer.com" -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential (Get-Credential)
    ```
 
    Example:
@@ -386,6 +386,9 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 After the test returns the success result, switch back to **Performance Monitor** and confirm that the number of requests has increased.
 
 Performing a test mailbox move from your on-premises Exchange organization to your Office 365 tenant is also an option.
+
+> [!NOTE]
+> If this test fails try running Update-HybridApplication and point it to a single Exchange Server instead of a load balancer.
 
 ### Free/Busy
 
