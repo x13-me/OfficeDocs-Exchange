@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting UM.Protocol Health Set
 ms:assetid: 8dd9a16f-77a1-4a8d-aea4-5e96ab922dd4
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.um.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720834
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

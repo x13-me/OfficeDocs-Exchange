@@ -4,7 +4,6 @@ TOCTitle: Search message tracking logs
 ms:assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124926(v=EXCHG.150)
 ms:contentKeyID: 50646519
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

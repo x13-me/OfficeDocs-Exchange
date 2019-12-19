@@ -4,7 +4,6 @@ TOCTitle: Integrating sensitive information rules with transport rules
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
 mtps_version: v=EXCHG.150

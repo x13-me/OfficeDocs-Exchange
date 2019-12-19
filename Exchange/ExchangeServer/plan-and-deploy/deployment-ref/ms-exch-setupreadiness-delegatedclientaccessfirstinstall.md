@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.DelegatedClientAccessFirstInstall
 ms.author: v-mapenn
 ms.assetid: 4cf9f1a1-aeac-455b-a5c3-efcd4185a467
-ms.date: 8/2/2018
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedClientAccessFirstInstall]
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Enable or disable MAPI for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 mtps_version: v=EXCHG.150

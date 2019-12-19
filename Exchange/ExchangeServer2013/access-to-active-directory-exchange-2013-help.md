@@ -4,7 +4,6 @@ TOCTitle: Access to Active Directory
 ms:assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998561(v=EXCHG.150)
 ms:contentKeyID: 49289272
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

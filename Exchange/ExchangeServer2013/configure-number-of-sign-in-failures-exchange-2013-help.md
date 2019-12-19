@@ -4,7 +4,6 @@ TOCTitle: Configure the number of sign-in failures before Outlook Voice Access u
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 mtps_version: v=EXCHG.150

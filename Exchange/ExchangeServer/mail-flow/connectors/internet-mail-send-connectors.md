@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
-ms.date: 7/6/2018
 ms.reviewer:
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server

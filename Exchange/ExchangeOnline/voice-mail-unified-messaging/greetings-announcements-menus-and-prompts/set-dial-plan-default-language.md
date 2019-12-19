@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Set the default language on a dial plan in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Exchange 2013 Client Access server configuration
 ms:assetid: 01432ae4-2a00-44a4-a4dd-4eb8d7e6cfae
 ms:mtpsurl: https://technet.microsoft.com/library/Hh529912(v=EXCHG.150)
 ms:contentKeyID: 49668969
-ms.date: 07/25/2017
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

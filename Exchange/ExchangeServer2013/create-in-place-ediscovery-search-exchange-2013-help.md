@@ -4,7 +4,6 @@ TOCTitle: Create an In-Place eDiscovery search
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 mtps_version: v=EXCHG.150

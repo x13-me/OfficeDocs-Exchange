@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Disable voice mail for a user in Exchange Online
 ms.collection: exchange-online

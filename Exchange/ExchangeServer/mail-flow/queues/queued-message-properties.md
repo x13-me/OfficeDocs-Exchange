@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage
 ms.author: v-mapenn
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
-ms.date: 7/11/2018
 ms.reviewer: 
 title: View queued message properties in Queue Viewer
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Remove an extension number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 7/21/2016
 ms.reviewer:
 ms.assetid: c2b896cf-21f7-4453-a4e6-b23d236a6dd3
 mtps_version: v=EXCHG.150

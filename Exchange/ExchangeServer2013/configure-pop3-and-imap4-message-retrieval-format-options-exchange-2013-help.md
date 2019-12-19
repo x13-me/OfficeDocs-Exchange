@@ -4,7 +4,6 @@ TOCTitle: Configure POP3 and IMAP4 message retrieval format options
 ms:assetid: 481096e0-4492-46c2-8ca8-bdf84a84531e
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997869(v=EXCHG.150)
 ms:contentKeyID: 50395398
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

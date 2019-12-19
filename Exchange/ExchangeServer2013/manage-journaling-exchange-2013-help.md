@@ -4,7 +4,6 @@ TOCTitle: Manage journaling
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 mtps_version: v=EXCHG.150

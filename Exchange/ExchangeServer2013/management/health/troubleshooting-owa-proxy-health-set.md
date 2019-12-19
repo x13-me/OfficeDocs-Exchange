@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting OWA.Proxy Health Set
 ms:assetid: 1eaa26ad-b489-402a-ad2d-bfae3b083f42
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720734
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

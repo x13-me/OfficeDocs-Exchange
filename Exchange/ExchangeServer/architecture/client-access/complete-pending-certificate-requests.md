@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
-ms.date: 7/5/2018
 ms.reviewer:
 title: Complete a pending Exchange Server certificate request
 ms.collection:

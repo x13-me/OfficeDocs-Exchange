@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-ms.date: 7/6/2018
 ms.reviewer:
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server

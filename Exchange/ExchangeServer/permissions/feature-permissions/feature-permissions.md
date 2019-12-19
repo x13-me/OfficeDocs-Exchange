@@ -5,7 +5,6 @@ ms.topic: hub-page
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48d06fa6-e4a2-4d5c-bdbd-718eeaade4be
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Feature permissions
 ms.collection: exchange-server

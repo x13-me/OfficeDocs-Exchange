@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
-ms.date: 7/9/2018
 ms.reviewer:
 title: Configure mailbox database copy properties
 ms.collection: exchange-server

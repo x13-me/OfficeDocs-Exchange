@@ -4,7 +4,6 @@ TOCTitle: Active Manager
 ms:assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 ms:mtpsurl: https://technet.microsoft.com/library/Dd776123(v=EXCHG.150)
 ms:contentKeyID: 48385718
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

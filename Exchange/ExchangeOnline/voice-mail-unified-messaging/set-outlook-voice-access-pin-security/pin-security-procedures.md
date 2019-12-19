@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58e4b02e-dc99-46b8-a65d-d441bbfee8a9
-ms.date: 6/24/2018
 ms.reviewer: 
 title: PIN security procedures in Exchange Online
 ms.collection: exchange-online

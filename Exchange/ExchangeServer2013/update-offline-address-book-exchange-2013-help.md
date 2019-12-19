@@ -4,7 +4,6 @@ TOCTitle: Update offline address book
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 448a207e-41b4-4cef-9fe9-a68b81e2ec4e
 mtps_version: v=EXCHG.150

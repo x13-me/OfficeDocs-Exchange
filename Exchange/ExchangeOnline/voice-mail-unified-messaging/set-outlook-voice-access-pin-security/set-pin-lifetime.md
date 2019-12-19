@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the PIN lifetime for voice mail in Exchange Online
 ms.collection: exchange-online

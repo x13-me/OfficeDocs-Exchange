@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Autodiscover.Protocol Health Set
 ms:assetid: 06afdcc8-7920-4e88-b85a-98e67a19d221
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.autodiscover.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720718
-ms.date: 10/08/2015
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

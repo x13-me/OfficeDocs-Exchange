@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ed7afc03-94af-4b23-8745-6a61f203c149
-ms.date: 11/17/2014
 ms.reviewer: 
 title: UM dial plans [ONP] in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Configure Voice Mail Preview partner services for users in Exchange Online
 ms.collection: exchange-online

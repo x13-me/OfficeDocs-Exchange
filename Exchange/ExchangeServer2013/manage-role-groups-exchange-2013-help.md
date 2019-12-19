@@ -4,7 +4,6 @@ TOCTitle: Manage role groups
 ms:assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657480(v=EXCHG.150)
 ms:contentKeyID: 49289369
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

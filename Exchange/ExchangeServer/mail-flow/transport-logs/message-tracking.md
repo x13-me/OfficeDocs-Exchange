@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
-ms.date: 7/6/2018
 ms.reviewer:
 title: Message tracking
 ms.collection: exchange-server

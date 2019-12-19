@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
-ms.date: 6/8/2018
 ms.reviewer:
 title: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 ms.collection:

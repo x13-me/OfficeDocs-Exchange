@@ -8,7 +8,6 @@ f1_keywords:
 - ms.exch.setupreadiness.NoE14ServerWarning
 ms.author: v-mapenn
 ms.assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
-ms.date: 6/12/2018
 ms.reviewer: 
 title: No Exchange 2010 servers detected [NoE14ServerWarning]
 ms.collection: exchange-server

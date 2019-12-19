@@ -4,7 +4,6 @@ TOCTitle: Enable or disable Exchange ActiveSync for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 mtps_version: v=EXCHG.150

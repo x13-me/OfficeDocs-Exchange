@@ -4,7 +4,6 @@ TOCTitle: Enable or Disable Information Rights Management Logging
 ms:assetid: 6933bc65-4d98-4878-9167-0e9eaac68b6b
 ms:mtpsurl: https://technet.microsoft.com/library/Ff686962(v=EXCHG.150)
 ms:contentKeyID: 49319919
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

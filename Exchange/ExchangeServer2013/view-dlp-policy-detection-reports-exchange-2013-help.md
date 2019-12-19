@@ -4,7 +4,6 @@ TOCTitle: View DLP policy detection reports
 ms:assetid: 5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150520(v=EXCHG.150)
 ms:contentKeyID: 47560019
-ms.date: 06/13/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

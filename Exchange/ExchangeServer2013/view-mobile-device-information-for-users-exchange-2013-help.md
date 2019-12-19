@@ -4,7 +4,6 @@ TOCTitle: View mobile device information for users
 ms:assetid: 4fd263c0-ad61-416c-bd68-339bf66605cf
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997974(v=EXCHG.150)
 ms:contentKeyID: 49345045
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

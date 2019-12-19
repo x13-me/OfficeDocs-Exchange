@@ -4,7 +4,6 @@ TOCTitle: Configure message delivery restrictions for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 mtps_version: v=EXCHG.150

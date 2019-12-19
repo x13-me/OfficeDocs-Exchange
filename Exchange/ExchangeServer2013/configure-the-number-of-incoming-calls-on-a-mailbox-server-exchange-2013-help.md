@@ -4,7 +4,6 @@ TOCTitle: Configure the number of incoming calls on a Mailbox server
 ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997637(v=EXCHG.150)
 ms:contentKeyID: 49315399
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

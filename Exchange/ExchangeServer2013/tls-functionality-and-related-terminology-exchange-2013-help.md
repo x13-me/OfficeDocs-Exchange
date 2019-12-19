@@ -4,7 +4,6 @@ TOCTitle: TLS functionality and related terminology
 ms:assetid: 294ba2a9-892d-4a90-beec-9d298426b5f4
 ms:mtpsurl: https://technet.microsoft.com/library/Bb430753(v=EXCHG.150)
 ms:contentKeyID: 50934214
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Data loss prevention
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 mtps_version: v=EXCHG.150

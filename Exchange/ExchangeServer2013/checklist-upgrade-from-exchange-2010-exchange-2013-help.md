@@ -4,7 +4,6 @@ TOCTitle: 'Checklist: Upgrade from Exchange 2010'
 ms:assetid: 06c1045a-5fcf-4e24-a901-1a979302fb8d
 ms:mtpsurl: https://technet.microsoft.com/library/Ee332309(v=EXCHG.150)
 ms:contentKeyID: 50873999
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

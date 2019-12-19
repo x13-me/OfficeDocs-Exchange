@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Select the language for an auto attendant in Exchange Online
 ms.collection: exchange-online

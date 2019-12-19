@@ -4,7 +4,6 @@ TOCTitle: Shared mailboxes
 ms:assetid: 1d71c01b-e261-408e-a633-1d1c9d00032a
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150498(v=EXCHG.150)
 ms:contentKeyID: 47559964
-ms.date: 10/24/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

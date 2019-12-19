@@ -4,7 +4,6 @@ TOCTitle: Modify an In-Place eDiscovery search
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3162743c-cc12-4997-91e0-bcbfea8bcb17
 mtps_version: v=EXCHG.150

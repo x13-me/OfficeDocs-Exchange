@@ -4,7 +4,6 @@ TOCTitle: About Exchange documentation
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.collection: Ent_O365_Hybrid
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b

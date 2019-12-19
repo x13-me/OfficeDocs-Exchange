@@ -4,7 +4,6 @@ TOCTitle: Enable POP3
 ms:assetid: e226a5f1-429d-4046-b925-da6cc151709e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124934(v=EXCHG.150)
 ms:contentKeyID: 49300732
-ms.date: 03/28/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

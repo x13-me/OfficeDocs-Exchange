@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
-ms.date: 
 ms.reviewer: 
 title: Manage mail flow using a third-party cloud service with Exchange Online
 ms.collection: 

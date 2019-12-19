@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 26d61e55-f8dd-4d25-81f1-78a87cf88bad
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Dial codes, number prefixes, and number formats in Exchange Online
 ms.collection: exchange-online

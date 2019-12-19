@@ -4,7 +4,6 @@ TOCTitle: '@NoTitle'
 ms:assetid: 3a12acb0-a6b7-4452-9306-a3d000c94a50
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195892(v=EXCHG.150)
 ms:contentKeyID: 53181763
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

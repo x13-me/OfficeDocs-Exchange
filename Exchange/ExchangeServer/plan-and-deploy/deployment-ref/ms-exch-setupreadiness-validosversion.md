@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.ValidOSVersion
 ms.author: v-mapenn
 ms.assetid: a3a948d9-4991-4088-9013-0a4c944295e4
-ms.date: 7/22/2015
 ms.reviewer: 
 title: An incompatible operating system was found [ValidOSVersion]
 ms.collection: exchange-server

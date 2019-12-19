@@ -4,7 +4,6 @@ TOCTitle: Common message approval scenarios
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
 mtps_version: v=EXCHG.150

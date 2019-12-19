@@ -4,7 +4,6 @@ TOCTitle: UM services
 ms:assetid: f36835f2-1e5f-4e5a-88bc-0672af1e3498
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125191(v=EXCHG.150)
 ms:contentKeyID: 49315560
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

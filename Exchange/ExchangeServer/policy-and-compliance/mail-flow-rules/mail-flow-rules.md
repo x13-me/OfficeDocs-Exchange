@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
-ms.date: 7/13/2018
 ms.reviewer:
 title: Mail flow rules in Exchange Server
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a2272b7d-de88-4d3f-81e6-ad81f0ee6c5e
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable a customized business hours greeting in Exchange Online
 ms.collection: exchange-online

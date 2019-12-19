@@ -4,7 +4,6 @@ TOCTitle: Connect your voice mail system to your telephone network
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: b606b49d-5bd3-4321-ae77-99fa4604c875
 mtps_version: v=EXCHG.150

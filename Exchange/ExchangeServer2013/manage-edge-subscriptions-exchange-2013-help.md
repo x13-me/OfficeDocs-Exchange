@@ -4,7 +4,6 @@ TOCTitle: Manage Edge Subscriptions
 ms:assetid: 27de4104-fb8e-4eab-9ad2-a64f81a4fb69
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996865(v=EXCHG.150)
 ms:contentKeyID: 61200280
-ms.date: 04/16/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Autodiscover Health Set
 ms:assetid: bc933621-df73-4d1d-bdef-825b98be8e09
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.autodiscover(v=EXCHG.150)
 ms:contentKeyID: 49720860
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

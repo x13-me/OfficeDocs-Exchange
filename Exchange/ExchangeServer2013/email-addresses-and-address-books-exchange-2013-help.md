@@ -4,7 +4,6 @@ TOCTitle: Email addresses and address books
 ms:assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657488(v=EXCHG.150)
 ms:contentKeyID: 49289386
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -9,7 +9,6 @@ monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
 ms.collection: exchange-server
 audience: ITPro
-ms.date: 9/20/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
 manager: serdars

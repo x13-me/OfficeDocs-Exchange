@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ca8b52ef-0af7-4d3d-96df-13df297585e0
-ms.date: 
 ms.reviewer: 
 title: Mail flow rule procedures in Exchange Online
 ms.collection: 

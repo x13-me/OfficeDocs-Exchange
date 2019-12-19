@@ -4,7 +4,6 @@ TOCTitle: Create a role
 ms:assetid: e614ad8f-5946-4135-b130-89ea626afcd4
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351214(v=EXCHG.150)
 ms:contentKeyID: 49289443
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

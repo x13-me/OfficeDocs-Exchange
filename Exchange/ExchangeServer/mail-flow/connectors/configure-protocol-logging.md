@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
-ms.date: 6/7/2018
 ms.reviewer: 
 title: Configure protocol logging
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: eaaff0b0-7d85-4845-a7b8-ac22b42bc415
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Remove a SIP address in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Keyboard shortcuts in the Exchange admin center
 ms.collection: exchange-server

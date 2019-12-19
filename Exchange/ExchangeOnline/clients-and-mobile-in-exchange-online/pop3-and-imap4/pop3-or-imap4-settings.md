@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bf4ca453-e79c-4b87-a9a5-3ae1b21181e2
-ms.date: 4/29/2016
 ms.reviewer: 
 title: Set POP3 or IMAP4 settings for a user
 ms.collection: 

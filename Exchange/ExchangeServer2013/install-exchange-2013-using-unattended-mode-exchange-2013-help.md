@@ -4,7 +4,6 @@ TOCTitle: Install Exchange 2013 using unattended mode
 ms:assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997281(v=EXCHG.150)
 ms:contentKeyID: 48384985
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

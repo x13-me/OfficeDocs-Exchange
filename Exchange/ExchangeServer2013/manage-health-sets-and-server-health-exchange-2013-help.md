@@ -4,7 +4,6 @@ TOCTitle: Manage health sets and server health
 ms:assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 ms:mtpsurl: https://technet.microsoft.com/library/Dn482054(v=EXCHG.150)
 ms:contentKeyID: 59888995
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
-ms.date: 7/5/2018
 ms.reviewer:
 title: In-Place Archiving in Exchange Server
 ms.collection: exchange-server

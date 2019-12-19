@@ -4,7 +4,6 @@ TOCTitle: Only the Mailbox role can be installed on a cluster server_ClusSvcInst
 ms:assetid: 3e20f408-2b8d-47c2-a402-07232ab9f234
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.clussvcinstalledroleblock(v=EXCHG.150)
 ms:contentKeyID: 46628894
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

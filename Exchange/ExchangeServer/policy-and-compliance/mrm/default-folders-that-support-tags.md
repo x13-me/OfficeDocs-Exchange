@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
-ms.date: 05/05/2019
 title: Retention tags and retention policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro

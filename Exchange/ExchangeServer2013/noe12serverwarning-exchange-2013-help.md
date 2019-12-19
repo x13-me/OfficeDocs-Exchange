@@ -4,7 +4,6 @@ TOCTitle: Cannot install Exchange 2007 roles after you prepare Active Directory 
 ms:assetid: 4e579f69-0de9-421c-ba31-4e63a25e6a45
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.noe12serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628900
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

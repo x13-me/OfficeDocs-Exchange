@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Enable a customized greeting for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online

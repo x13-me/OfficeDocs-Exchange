@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 572991d6-0dc7-4a65-b716-ac6acdc5c9c6
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set up voice mail for users in Exchange Online
 ms.collection: exchange-online

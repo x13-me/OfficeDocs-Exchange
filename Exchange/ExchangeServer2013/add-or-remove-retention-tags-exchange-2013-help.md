@@ -4,7 +4,6 @@ TOCTitle: Add retention tags to or remove retention tags from a retention policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 mtps_version: v=EXCHG.150

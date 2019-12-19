@@ -4,7 +4,6 @@ TOCTitle: Configure routing table logging
 ms:assetid: 7184f8f7-4eb8-468a-aafe-b2d72868f820
 ms:mtpsurl: https://technet.microsoft.com/library/Bb201696(v=EXCHG.150)
 ms:contentKeyID: 49289301
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

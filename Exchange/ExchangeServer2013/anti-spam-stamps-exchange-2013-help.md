@@ -4,7 +4,6 @@ TOCTitle: Anti-spam stamps
 ms:assetid: 28d3a5c2-8509-4b25-9876-763536e77c27
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996878(v=EXCHG.150)
 ms:contentKeyID: 49248677
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Create a Receive connector to receive email from a system not running 
 ms:assetid: 85f0864a-6502-49db-8804-16755a7292b4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657467(v=EXCHG.150)
 ms:contentKeyID: 49289337
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

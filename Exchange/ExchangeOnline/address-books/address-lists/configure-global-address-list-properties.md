@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
-ms.date:
 ms.reviewer:
 title: Configure global address list properties in Exchange Online
 ms.collection:

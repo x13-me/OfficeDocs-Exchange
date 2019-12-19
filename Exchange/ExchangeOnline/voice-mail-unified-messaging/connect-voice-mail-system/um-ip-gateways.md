@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab
-ms.date: 7/12/2018
 ms.reviewer: 
 title: UM IP gateways in Exchange Online
 ms.collection: exchange-online

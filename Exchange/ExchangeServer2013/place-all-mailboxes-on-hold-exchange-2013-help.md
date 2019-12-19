@@ -4,7 +4,6 @@ TOCTitle: Place all mailboxes on hold
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
 mtps_version: v=EXCHG.150

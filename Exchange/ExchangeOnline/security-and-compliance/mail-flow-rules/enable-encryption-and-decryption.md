@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
-ms.date: 8/13/2018
 ms.reviewer: 
 title: Enable message encryption and decryption in Office 365
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Protocol logging
 ms.collection: exchange-server

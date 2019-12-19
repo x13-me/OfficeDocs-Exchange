@@ -4,7 +4,6 @@ TOCTitle: Mail flow or transport rule procedures
 ms:assetid: f45f6eef-9e35-4ef4-97fa-1f6e277d14a1
 ms:mtpsurl: https://technet.microsoft.com/library/Dn600440(v=EXCHG.150)
 ms:contentKeyID: 61071244
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

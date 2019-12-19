@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1c57c3ba-2b0e-43dd-9b28-43bada1592c5
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Disable faxing for a group of users in Exchange Online
 ms.collection: exchange-online

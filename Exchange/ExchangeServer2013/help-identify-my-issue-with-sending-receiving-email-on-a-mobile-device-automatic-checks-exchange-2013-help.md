@@ -4,7 +4,6 @@ TOCTitle: Help Identify My Issue with Sending/Receiving Email on a Mobile Device
 ms:assetid: 7400a7c8-1e45-4e73-a642-b7d79d997462
 ms:mtpsurl: https://technet.microsoft.com/library/Dn793610(v=EXCHG.150)
 ms:contentKeyID: 62629953
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

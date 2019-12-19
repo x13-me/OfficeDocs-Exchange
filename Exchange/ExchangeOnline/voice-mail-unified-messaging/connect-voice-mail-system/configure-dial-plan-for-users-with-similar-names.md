@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 14783f45-95f5-49de-8215-0a3aef7dc034
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure a dial plan for users who have similar names in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: DLP policy templates in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: c7b1a8e4-30d9-4409-85c5-f85ae023737d
 mtps_version: v=EXCHG.150

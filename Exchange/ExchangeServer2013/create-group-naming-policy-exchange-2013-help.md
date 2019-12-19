@@ -4,7 +4,6 @@ TOCTitle: Create a distribution group naming policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 mtps_version: v=EXCHG.150

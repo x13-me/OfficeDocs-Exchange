@@ -4,7 +4,6 @@ TOCTitle: Manually configure Edge Transport server mail flow
 ms:assetid: cb4cc165-6c09-44ab-a95f-167ae8ed2485
 ms:mtpsurl: https://technet.microsoft.com/library/Dn606261(v=EXCHG.150)
 ms:contentKeyID: 61200302
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0fc0ecc0-e133-48fa-9d72-cb4793a73960
-ms.date: 
 ms.reviewer: 
 title: Manage accepted domains in Exchange Online
 ms.collection: 

@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewOabWizardForm.OabIntroductionWizardPage
 ms.author: v-mapenn
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
-ms.date: 
 ms.reviewer: 
 title: Create an offline address book
 ms.collection: exchange-online

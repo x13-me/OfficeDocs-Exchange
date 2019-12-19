@@ -4,7 +4,6 @@ TOCTitle: Primary DNS Suffix is missing
 ms:assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.fqdnmissing(v=EXCHG.150)
 ms:contentKeyID: 61200284
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

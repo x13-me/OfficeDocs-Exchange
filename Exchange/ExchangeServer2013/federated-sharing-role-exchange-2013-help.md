@@ -4,7 +4,6 @@ TOCTitle: Federated Sharing role
 ms:assetid: 3d81048c-24bf-447d-a1ee-7fb2974a51fd
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876876(v=EXCHG.150)
 ms:contentKeyID: 49289238
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

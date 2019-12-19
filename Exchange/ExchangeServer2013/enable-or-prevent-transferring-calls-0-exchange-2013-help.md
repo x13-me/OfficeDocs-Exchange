@@ -4,7 +4,6 @@ TOCTitle: Enable or prevent transferring calls from an auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: ca961cc8-cc24-4e05-b72d-79979c155cf9
 mtps_version: v=EXCHG.150

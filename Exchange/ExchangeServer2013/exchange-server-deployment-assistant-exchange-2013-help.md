@@ -4,7 +4,6 @@ TOCTitle: Exchange Server Deployment Assistant
 ms:assetid: 95f493d3-2c4f-48f3-a120-d4aadc448402
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218681(v=EXCHG.150)
 ms:contentKeyID: 48385370
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Track messages with delivery reports
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Import and export files in the Exchange Management Shell
 ms:assetid: b4b669e8-a3aa-4b0b-ad34-f1f15d9c9369
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638170(v=EXCHG.150)
 ms:contentKeyID: 50117647
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

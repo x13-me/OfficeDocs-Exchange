@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage
 ms.author: v-mapenn
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create a UM IP gateway in Exchange Online
 ms.collection: exchange-online

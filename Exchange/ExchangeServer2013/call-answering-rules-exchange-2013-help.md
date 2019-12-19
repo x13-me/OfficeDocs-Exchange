@@ -4,7 +4,6 @@ TOCTitle: Call answering rules
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 81863440-8b21-4523-bdab-6a2311889a0d
 mtps_version: v=EXCHG.150

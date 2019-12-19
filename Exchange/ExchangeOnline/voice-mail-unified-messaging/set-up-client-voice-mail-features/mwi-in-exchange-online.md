@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Message Waiting Indicator in Exchange Online
 ms.collection: exchange-online

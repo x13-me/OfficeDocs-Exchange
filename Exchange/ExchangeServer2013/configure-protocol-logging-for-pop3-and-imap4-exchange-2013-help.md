@@ -4,7 +4,6 @@ TOCTitle: Configure protocol logging for POP3 and IMAP4
 ms:assetid: 451b337b-cb6b-4460-8687-be0b19c469bc
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997690(v=EXCHG.150)
 ms:contentKeyID: 50395397
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

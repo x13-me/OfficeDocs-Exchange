@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abdd0474-db84-49b1-a915-f5710f206a58
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Clutter notifications in Outlook
 ms.collection: 

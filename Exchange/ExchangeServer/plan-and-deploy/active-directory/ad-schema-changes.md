@@ -6,7 +6,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
-ms.date:
 ms.reviewer: 
 title: Active Directory schema changes in Exchange Server
 ms.collection:

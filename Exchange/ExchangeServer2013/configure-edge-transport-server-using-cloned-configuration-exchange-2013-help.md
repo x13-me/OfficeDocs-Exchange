@@ -4,7 +4,6 @@ TOCTitle: Configure Edge Transport server using cloned configuration
 ms:assetid: 0bbc83e3-e5e8-4480-a8a6-15f035360856
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996008(v=EXCHG.150)
 ms:contentKeyID: 61200276
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Review the voice mail calls for a user
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 mtps_version: v=EXCHG.150

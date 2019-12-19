@@ -9,7 +9,6 @@ monikerRange: exchserver-2016 || exchserver-2019
 title: Release notes for Exchange Server
 ms.collection: exchange-server
 audience: ITPro
-ms.date: 6/8/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
 manager: serdars

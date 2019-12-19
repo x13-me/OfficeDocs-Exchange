@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
-ms.date:
 ms.reviewer:
 title: Place all mailboxes on hold
 ms.collection: exchange-server

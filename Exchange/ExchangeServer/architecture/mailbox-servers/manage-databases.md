@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
-ms.date: 7/3/2018
 ms.reviewer:
 title: Manage mailbox databases in Exchange Server
 ms.collection: exchange-server

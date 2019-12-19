@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Authorize calls for users in a dial plan in Exchange Online
 ms.collection: exchange-online

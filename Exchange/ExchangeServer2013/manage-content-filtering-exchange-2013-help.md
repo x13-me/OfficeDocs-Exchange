@@ -4,7 +4,6 @@ TOCTitle: Manage content filtering
 ms:assetid: 05bd9d39-81dc-4514-8b75-7be386d5bcad
 ms:mtpsurl: https://technet.microsoft.com/library/Aa995953(v=EXCHG.150)
 ms:contentKeyID: 49248674
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

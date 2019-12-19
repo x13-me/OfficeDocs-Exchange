@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: UM mailbox policy procedures in Exchange Online
 ms.collection: exchange-online

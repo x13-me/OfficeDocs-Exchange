@@ -4,7 +4,6 @@ TOCTitle: Prevent a user from receiving faxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
 mtps_version: v=EXCHG.150

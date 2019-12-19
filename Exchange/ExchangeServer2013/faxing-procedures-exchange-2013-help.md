@@ -4,7 +4,6 @@ TOCTitle: Faxing procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 6732a834-c9d2-4757-8ad9-44aeff6be9f7
 mtps_version: v=EXCHG.150

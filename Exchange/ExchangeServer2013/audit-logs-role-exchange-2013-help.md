@@ -4,7 +4,6 @@ TOCTitle: Audit Logs role
 ms:assetid: 36a7d375-76f8-441c-9da1-8a50dbd062f1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876870(v=EXCHG.150)
 ms:contentKeyID: 49289231
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

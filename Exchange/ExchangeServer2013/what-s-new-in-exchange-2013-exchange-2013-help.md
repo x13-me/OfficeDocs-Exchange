@@ -4,7 +4,6 @@ TOCTitle: What's new in Exchange 2013
 ms:assetid: 97501135-2149-4590-8373-98e638ac8eb1
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150540(v=EXCHG.150)
 ms:contentKeyID: 47560059
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

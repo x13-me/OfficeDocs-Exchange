@@ -4,7 +4,6 @@ TOCTitle: Manage linked mailboxes
 ms:assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Set the TLS listening port on a Client Access server
 ms:assetid: f4401923-61fa-4dc5-95f8-c0d2f515b2ea
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673576(v=EXCHG.150)
 ms:contentKeyID: 49315561
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

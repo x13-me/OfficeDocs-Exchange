@@ -4,7 +4,6 @@ TOCTitle: Create an Email Address Policy
 ms:assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125137(v=EXCHG.150)
 ms:contentKeyID: 49289449
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

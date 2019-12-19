@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e5b5efee-b734-4f70-8357-11be07b23bd0
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure dial codes in Exchange Online
 ms.collection: exchange-online

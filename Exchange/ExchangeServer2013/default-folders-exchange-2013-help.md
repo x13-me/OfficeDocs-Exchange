@@ -4,7 +4,6 @@ TOCTitle: Default folders that support Retention Policy Tags
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 mtps_version: v=EXCHG.150

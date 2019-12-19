@@ -4,7 +4,6 @@ TOCTitle: Allow users to make calls
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: b6e696ce-c848-475b-a598-9035677497e2
 mtps_version: v=EXCHG.150

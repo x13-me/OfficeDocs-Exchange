@@ -4,7 +4,6 @@ TOCTitle: Enable or Disable Information Rights Management on Client Access Serve
 ms:assetid: c7ce069b-a572-4755-90a3-7105472e4c83
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876938(v=EXCHG.150)
 ms:contentKeyID: 49319932
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

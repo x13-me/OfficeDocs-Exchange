@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Edge Subscriptions
 ms.collection: exchange-server

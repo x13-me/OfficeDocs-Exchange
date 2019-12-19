@@ -4,7 +4,6 @@ TOCTitle: Create an unscoped role
 ms:assetid: 5a042ccf-4d5f-4609-a91b-21c20d1e6459
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876886(v=EXCHG.150)
 ms:contentKeyID: 49289258
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

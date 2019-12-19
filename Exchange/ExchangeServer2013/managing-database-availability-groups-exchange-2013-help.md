@@ -4,7 +4,6 @@ TOCTitle: Managing database availability groups
 ms:assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298065(v=EXCHG.150)
 ms:contentKeyID: 48385234
-ms.date: 10/04/2017
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

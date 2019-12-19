@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
-ms.date: 
 ms.reviewer: 
 title: Manage user access to add-ins for Outlook in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid:
-ms.date:
 ms.reviewer:
 title: Enable or disable SMTP AUTH
 ms.collection:

@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
-ms.date: 7/30/2018
 ms.reviewer:
 title: Configure mail flow and client access on Exchange servers
 ms.collection:

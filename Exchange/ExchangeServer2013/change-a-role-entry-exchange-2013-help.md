@@ -4,7 +4,6 @@ TOCTitle: Change a role entry
 ms:assetid: 5aa4f39c-16a4-4815-ac4f-2cdcfa2b3ee1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298005(v=EXCHG.150)
 ms:contentKeyID: 49289260
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

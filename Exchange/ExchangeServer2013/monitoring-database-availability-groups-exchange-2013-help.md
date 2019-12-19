@@ -4,7 +4,6 @@ TOCTitle: Monitoring database availability groups
 ms:assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351258(v=EXCHG.150)
 ms:contentKeyID: 48385720
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

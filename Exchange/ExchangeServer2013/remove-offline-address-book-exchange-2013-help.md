@@ -4,7 +4,6 @@ TOCTitle: Remove an offline address book
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
-ms.date: 7/5/2018
 ms.reviewer:
 title: Manage mail contacts
 ms.collection: exchange-server

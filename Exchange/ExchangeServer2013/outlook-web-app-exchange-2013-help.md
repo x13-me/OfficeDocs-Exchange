@@ -4,7 +4,6 @@ TOCTitle: Outlook Web App
 ms:assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657718(v=EXCHG.150)
 ms:contentKeyID: 49300478
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

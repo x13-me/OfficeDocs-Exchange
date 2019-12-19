@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enter a business name in Exchange Online
 ms.collection: exchange-online

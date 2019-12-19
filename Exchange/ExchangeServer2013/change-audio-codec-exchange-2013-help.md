@@ -4,7 +4,6 @@ TOCTitle: Change the audio codec
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 139b2ccd-28c5-46c0-9050-777f4f59aade
 mtps_version: v=EXCHG.150

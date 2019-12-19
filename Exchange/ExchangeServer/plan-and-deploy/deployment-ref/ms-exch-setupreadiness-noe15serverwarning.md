@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.NoE15ServerWarning
 ms.author: v-mapenn
 ms.assetid: 55274feb-e683-4447-a053-8650ef174667
-ms.date: 6/12/2018
 ms.reviewer: 
 title: No Exchange 2013 servers detected [NoE15ServerWarning]
 ms.collection: exchange-server

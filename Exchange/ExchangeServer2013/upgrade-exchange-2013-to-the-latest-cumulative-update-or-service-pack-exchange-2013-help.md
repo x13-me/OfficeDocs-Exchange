@@ -4,7 +4,6 @@ TOCTitle: Upgrade Exchange 2013 to the latest cumulative update or service pack
 ms:assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ983803(v=EXCHG.150)
 ms:contentKeyID: 51407267
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

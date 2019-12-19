@@ -4,7 +4,6 @@ TOCTitle: Configure circular logging for a mailbox database
 ms:assetid: 29cbd7cd-382b-4e0d-8368-2e49e75df2fc
 ms:mtpsurl: https://technet.microsoft.com/library/Dn756374(v=EXCHG.150)
 ms:contentKeyID: 62524835
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

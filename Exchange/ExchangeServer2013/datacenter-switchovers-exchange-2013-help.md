@@ -4,7 +4,6 @@ TOCTitle: Datacenter Switchovers
 ms:assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351049(v=EXCHG.150)
 ms:contentKeyID: 62549506
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

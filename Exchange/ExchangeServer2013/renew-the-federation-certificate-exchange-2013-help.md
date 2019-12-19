@@ -4,7 +4,6 @@ TOCTitle: Renew the federation certificate
 ms:assetid: 0f390713-3058-44d0-9c07-3c982616e790
 ms:mtpsurl: https://technet.microsoft.com/library/Mt779252(v=EXCHG.150)
 ms:contentKeyID: 74429166
-ms.date: 02/28/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

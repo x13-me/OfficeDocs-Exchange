@@ -4,7 +4,6 @@ TOCTitle: Data Loss Prevention role
 ms:assetid: 026d0e48-f4da-416e-a00d-794bd3b38c5c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673034(v=EXCHG.150)
 ms:contentKeyID: 49289150
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

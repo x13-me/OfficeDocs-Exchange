@@ -4,7 +4,6 @@ TOCTitle: Receive connectors
 ms:assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996395(v=EXCHG.150)
 ms:contentKeyID: 49289180
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

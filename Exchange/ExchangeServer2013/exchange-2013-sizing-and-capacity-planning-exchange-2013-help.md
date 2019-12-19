@@ -4,7 +4,6 @@ TOCTitle: Exchange 2013 sizing and capacity planning
 ms:assetid: d9852860-1a4c-4162-83f1-7131432be7d6
 ms:mtpsurl: https://technet.microsoft.com/library/Dn178505(v=EXCHG.150)
 ms:contentKeyID: 54468071
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

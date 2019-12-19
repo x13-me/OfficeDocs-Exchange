@@ -4,7 +4,6 @@ TOCTitle: Add or remove users from a mobile mailbox policy
 ms:assetid: 4ca8e395-c074-4165-b788-16fae3e2ccab
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997929(v=EXCHG.150)
 ms:contentKeyID: 49318497
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

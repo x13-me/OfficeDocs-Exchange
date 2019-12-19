@@ -4,7 +4,6 @@ TOCTitle: Protect form data with document fingerprinting
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 110c839b-7693-42f6-aa5d-58ce64f4c357
 mtps_version: v=EXCHG.150

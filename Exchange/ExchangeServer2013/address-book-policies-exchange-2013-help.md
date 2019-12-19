@@ -4,7 +4,6 @@ TOCTitle: Address book policies
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 mtps_version: v=EXCHG.150

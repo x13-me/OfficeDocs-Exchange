@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
-ms.date: 6/24/2018
 ms.reviewer: 
 title: POP3 and IMAP4
 ms.collection: 

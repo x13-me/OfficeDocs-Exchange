@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: aa0cbb60-5422-474f-af16-621aade31c1f
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable missed call notifications for a user in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Move a public folder mailbox to a different mailbox database
 ms:assetid: 67601d45-4824-4ae6-9a7e-b645ec3af4d3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ906434(v=EXCHG.150)
 ms:contentKeyID: 50630967
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

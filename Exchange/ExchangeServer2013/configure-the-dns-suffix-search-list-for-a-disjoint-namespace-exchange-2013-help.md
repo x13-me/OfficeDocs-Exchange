@@ -4,7 +4,6 @@ TOCTitle: Configure the DNS suffix search list for a disjoint namespace
 ms:assetid: cfa715ac-7b69-47c3-b206-933ec2cf677b
 ms:mtpsurl: https://technet.microsoft.com/library/Bb847901(v=EXCHG.150)
 ms:contentKeyID: 49289414
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

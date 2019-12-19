@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e54937d5-3074-454f-b561-e601fecfc6ad
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Disable missed call notifications for a user in Exchange Online
 ms.collection: exchange-online

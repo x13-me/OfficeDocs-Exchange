@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Disable outgoing calls on UM IP gateways in Exchange Online
 ms.collection: exchange-online

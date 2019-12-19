@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
-ms.date: 6/7/2018
 ms.reviewer:
 title: Configure database availability group network properties
 ms.collection: exchange-server

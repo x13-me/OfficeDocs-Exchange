@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting IMAP.Protocol Health Set
 ms:assetid: ab0df2c9-5a85-4061-ba67-750962d14c1b
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720845
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

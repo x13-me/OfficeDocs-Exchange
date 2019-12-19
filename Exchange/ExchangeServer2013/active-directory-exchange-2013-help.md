@@ -4,7 +4,6 @@ TOCTitle: Active Directory
 ms:assetid: 8e8464df-2d1d-4d68-82de-b0c158c549c3
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123715(v=EXCHG.150)
 ms:contentKeyID: 49289336
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

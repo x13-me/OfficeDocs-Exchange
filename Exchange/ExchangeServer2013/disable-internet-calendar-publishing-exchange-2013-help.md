@@ -4,7 +4,6 @@ TOCTitle: Disable Internet calendar publishing
 ms:assetid: f26dbf04-9dae-460f-a987-2ad3dfbc7b7e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ853047(v=EXCHG.150)
 ms:contentKeyID: 50390856
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.CreateAutoAttendantWizardForm.CreateAutoAttendantWizardPage
 ms.author: v-mapenn
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create a UM auto attendant in Exchange Online
 ms.collection: exchange-online

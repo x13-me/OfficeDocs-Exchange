@@ -4,7 +4,6 @@ TOCTitle: Disable outgoing calls on UM IP gateways
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
 mtps_version: v=EXCHG.150

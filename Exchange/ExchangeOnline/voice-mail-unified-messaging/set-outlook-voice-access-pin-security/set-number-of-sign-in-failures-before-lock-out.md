@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 855e1980-2868-4983-b097-0b5f63f202b8
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the number of sign-in failures before a voice mail user Is locked out in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
-ms.date: 7/6/2018
 ms.reviewer:
 title: Recipient resolution in Exchange Server
 ms.collection: exchange-server

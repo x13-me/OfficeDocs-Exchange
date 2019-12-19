@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.UnwillingToRemoveMailboxDatabase
 ms.author: v-mapenn
 ms.assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
-ms.date: 8/2/2018
 ms.reviewer:
 title: Cannot remove mailbox database [UnwillingToRemoveMailboxDatabase]
 ms.collection: exchange-server

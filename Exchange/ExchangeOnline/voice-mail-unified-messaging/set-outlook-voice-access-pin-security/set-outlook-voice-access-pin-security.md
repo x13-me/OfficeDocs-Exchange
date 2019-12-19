@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ef6d9151-d333-4f52-9338-273f7a291e54
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Set Outlook Voice Access PIN security in Exchange Online
 ms.collection: exchange-online

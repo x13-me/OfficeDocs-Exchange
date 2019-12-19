@@ -4,7 +4,6 @@ TOCTitle: Configure an Outlook Voice Access number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
 mtps_version: v=EXCHG.150

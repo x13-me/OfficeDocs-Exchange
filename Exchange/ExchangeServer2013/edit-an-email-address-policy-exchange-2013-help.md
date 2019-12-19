@@ -4,7 +4,6 @@ TOCTitle: Edit an email address policy
 ms:assetid: cc8b36a0-95f4-43e9-bc64-87646d2e14e4
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124580(v=EXCHG.150)
 ms:contentKeyID: 49289411
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

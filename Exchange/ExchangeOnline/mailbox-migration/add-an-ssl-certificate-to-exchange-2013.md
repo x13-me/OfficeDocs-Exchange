@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
-ms.date: 8/16/2018
 ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
 title: Add an SSL certificate to Exchange 2013

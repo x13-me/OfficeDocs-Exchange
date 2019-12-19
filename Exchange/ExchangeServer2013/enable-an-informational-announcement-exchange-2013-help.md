@@ -4,7 +4,6 @@ TOCTitle: Enable an informational announcement for Outlook Voice Access users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: b69ed0e1-f978-498a-963e-42a047678db4
 mtps_version: v=EXCHG.150

@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage
 ms.author: v-mapenn
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Manage user mailboxes
 ms.collection:

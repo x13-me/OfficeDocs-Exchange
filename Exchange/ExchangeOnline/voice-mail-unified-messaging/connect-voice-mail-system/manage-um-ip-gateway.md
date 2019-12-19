@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
 ms.author: v-mapenn
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Manage a UM IP gateway in Exchange Online
 ms.collection: exchange-online

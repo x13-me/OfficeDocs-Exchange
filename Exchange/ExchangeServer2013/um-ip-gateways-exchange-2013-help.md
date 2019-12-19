@@ -4,7 +4,6 @@ TOCTitle: UM IP gateways
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab
 mtps_version: v=EXCHG.150

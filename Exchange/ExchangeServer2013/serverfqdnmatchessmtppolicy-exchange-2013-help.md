@@ -4,7 +4,6 @@ TOCTitle: The fully-qualified domain name of the computer matches a recipient po
 ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)
 ms:contentKeyID: 46629176
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

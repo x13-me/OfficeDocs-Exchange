@@ -4,7 +4,6 @@ TOCTitle: Mailbox audit logging
 ms:assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
 ms:mtpsurl: https://technet.microsoft.com/library/Ff459237(v=EXCHG.150)
 ms:contentKeyID: 49300455
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

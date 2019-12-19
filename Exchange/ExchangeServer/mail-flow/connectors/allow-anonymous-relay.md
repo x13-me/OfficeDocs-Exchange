@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
 ms.collection: exchange-server

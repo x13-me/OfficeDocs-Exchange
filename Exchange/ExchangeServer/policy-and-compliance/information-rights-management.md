@@ -6,7 +6,6 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
 monikerRange: exchserver-2016 || exchserver-2019
-ms.date:
 ms.reviewer:
 title: Information Rights Management in Exchange Server
 ms.collection: exchange-server

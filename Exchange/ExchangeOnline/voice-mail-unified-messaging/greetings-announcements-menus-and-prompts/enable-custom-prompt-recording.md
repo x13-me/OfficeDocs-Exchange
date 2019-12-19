@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f2e5c636-2be9-4d48-b5e7-37913ded62d1
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Enable custom prompt recording using the telephone user interface in Exchange Online
 ms.collection: exchange-online

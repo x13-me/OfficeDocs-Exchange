@@ -4,7 +4,6 @@ TOCTitle: Edge Transport servers
 ms:assetid: cfff9f59-afac-447c-8297-afcebe49a52d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124701(v=EXCHG.150)
 ms:contentKeyID: 61200300
-ms.date: 09/29/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

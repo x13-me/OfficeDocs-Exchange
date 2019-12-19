@@ -4,7 +4,6 @@ TOCTitle: Create non-business hours navigation menus
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
-ms.date:
 ms.reviewer: 
 title: Clients and mobile in Exchange Server
 ms.collection: exchange-server

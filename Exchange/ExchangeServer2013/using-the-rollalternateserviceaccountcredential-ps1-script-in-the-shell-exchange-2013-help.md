@@ -4,7 +4,6 @@ TOCTitle: Using the RollAlternateserviceAccountCredential.ps1 Script in the Shel
 ms:assetid: 6ac55aae-472a-4ed6-83df-2d0e7b48e05c
 ms:mtpsurl: https://technet.microsoft.com/library/Ff808311(v=EXCHG.150)
 ms:contentKeyID: 63937186
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

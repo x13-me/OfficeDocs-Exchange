@@ -4,7 +4,6 @@ TOCTitle: Reset Password role
 ms:assetid: d80101f1-7e3d-4a61-b93a-23da23e95e93
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657499(v=EXCHG.150)
 ms:contentKeyID: 49289428
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

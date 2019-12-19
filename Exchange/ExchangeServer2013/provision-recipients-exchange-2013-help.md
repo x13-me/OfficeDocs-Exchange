@@ -4,7 +4,6 @@ TOCTitle: Provision recipients for offline address book downloads
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
 mtps_version: v=EXCHG.150

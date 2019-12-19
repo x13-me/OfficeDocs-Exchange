@@ -4,7 +4,6 @@ TOCTitle: Remote and Accepted Domains role
 ms:assetid: 340c7546-5236-4743-a2b3-3c2363f3da1d
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876869(v=EXCHG.150)
 ms:contentKeyID: 49289226
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

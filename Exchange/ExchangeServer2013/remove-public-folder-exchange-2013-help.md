@@ -4,7 +4,6 @@ TOCTitle: Remove a public folder
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 mtps_version: v=EXCHG.150

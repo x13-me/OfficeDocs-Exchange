@@ -4,7 +4,6 @@ TOCTitle: Messaging Records Management Procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: bc2ff408-4a2b-4202-9515-e3e922a6320d
 mtps_version: v=EXCHG.150

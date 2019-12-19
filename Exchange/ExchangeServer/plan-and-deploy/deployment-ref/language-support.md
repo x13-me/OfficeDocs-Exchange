@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 934686fb-53a2-4b13-aaf0-498e4011d61a
-ms.date: 7/31/2018
 ms.reviewer: 
 title: Exchange Server language support
 ms.collection: exchange-server

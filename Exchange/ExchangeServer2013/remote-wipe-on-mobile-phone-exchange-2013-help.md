@@ -4,7 +4,6 @@ TOCTitle: Perform a remote wipe on a mobile phone
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.custom: SaRA
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520

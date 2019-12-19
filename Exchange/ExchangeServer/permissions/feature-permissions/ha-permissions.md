@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
-ms.date: 7/5/2018
 ms.reviewer:
 title: High availability and site resilience permissions
 ms.collection: exchange-server

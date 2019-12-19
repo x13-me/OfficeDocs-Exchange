@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
-ms.date: 7/9/2018
 ms.reviewer:
 title: Create a database availability group
 ms.collection: exchange-server

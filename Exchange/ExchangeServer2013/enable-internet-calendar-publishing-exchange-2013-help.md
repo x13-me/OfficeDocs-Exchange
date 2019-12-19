@@ -4,7 +4,6 @@ TOCTitle: Enable Internet calendar publishing
 ms:assetid: b4c71696-52bb-492c-8259-0e419acd0bbc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ853046(v=EXCHG.150)
 ms:contentKeyID: 50390855
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

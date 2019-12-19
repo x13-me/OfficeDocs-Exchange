@@ -4,7 +4,6 @@ TOCTitle: Voice mail-enabled user procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
 mtps_version: v=EXCHG.150

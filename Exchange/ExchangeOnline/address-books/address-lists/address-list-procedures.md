@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 595e1f02-4398-4a7a-b4a4-768af8b9e42e
-ms.date: 
 ms.reviewer: 
 title: Address list procedures in Exchange Online
 ms.collection: 

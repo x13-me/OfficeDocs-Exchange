@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
-ms.date: 7/5/2018
 ms.reviewer:
 title: Enable or disable single item recovery for a mailbox
 ms.collection: exchange-server

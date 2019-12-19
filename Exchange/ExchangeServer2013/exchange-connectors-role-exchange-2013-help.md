@@ -4,7 +4,6 @@ TOCTitle: Exchange Connectors role
 ms:assetid: 73f98c82-bde0-443d-9bcf-274047e84e15
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876908(v=EXCHG.150)
 ms:contentKeyID: 49289307
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

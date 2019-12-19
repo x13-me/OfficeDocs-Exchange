@@ -4,7 +4,6 @@ TOCTitle: Deploying Exchange 2013 UM and Lync Server overview
 ms:assetid: 96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1
 ms:mtpsurl: https://technet.microsoft.com/library/Bb676409(v=EXCHG.150)
 ms:contentKeyID: 49315469
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

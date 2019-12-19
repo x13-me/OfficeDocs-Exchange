@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailContactWizardForm.NewMailContactIntroductionWizardPage
 ms.author: v-mapenn
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
-ms.date: 
 ms.reviewer: 
 title: Manage mail contacts
 ms.collection: 

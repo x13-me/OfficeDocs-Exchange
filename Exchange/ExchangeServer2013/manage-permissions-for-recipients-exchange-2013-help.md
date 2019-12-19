@@ -4,7 +4,6 @@ TOCTitle: Manage permissions for recipients
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 mtps_version: v=EXCHG.150

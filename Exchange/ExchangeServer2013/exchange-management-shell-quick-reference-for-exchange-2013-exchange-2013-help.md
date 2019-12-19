@@ -4,7 +4,6 @@ TOCTitle: Exchange Management Shell quick reference for Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
 ms:mtpsurl: https://technet.microsoft.com/library/JJ619302(v=EXCHG.150)
 ms:contentKeyID: 49352789
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

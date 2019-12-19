@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
-ms.date: 7/9/2018
 ms.reviewer:
 title: Move the mailbox database path for a mailbox database copy
 ms.collection: exchange-server

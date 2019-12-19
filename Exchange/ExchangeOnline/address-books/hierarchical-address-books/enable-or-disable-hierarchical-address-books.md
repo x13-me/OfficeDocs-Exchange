@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
-ms.date: 
 ms.reviewer: 
 title: Enable or disable hierarchical address books in Exchange Online
 ms.collection: 

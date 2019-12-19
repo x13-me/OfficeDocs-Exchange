@@ -4,7 +4,6 @@ TOCTitle: Manage policy tips
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 mtps_version: v=EXCHG.150

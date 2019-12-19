@@ -4,7 +4,6 @@ TOCTitle: Prevent users in the same dial plan from receiving faxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
 mtps_version: v=EXCHG.150

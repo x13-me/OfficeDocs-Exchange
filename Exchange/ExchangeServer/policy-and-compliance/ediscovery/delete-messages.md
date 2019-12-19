@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
-ms.date: 6/12/2018
 ms.reviewer:
 title: Search for and delete messages in Exchange Server
 ms.collection: exchange-server

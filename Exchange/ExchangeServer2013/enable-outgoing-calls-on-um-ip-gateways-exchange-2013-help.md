@@ -4,7 +4,6 @@ TOCTitle: Enable outgoing calls on UM IP gateways
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c3ad8e53-d37e-499e-b1f1-defb0ba1bd12
 mtps_version: v=EXCHG.150
