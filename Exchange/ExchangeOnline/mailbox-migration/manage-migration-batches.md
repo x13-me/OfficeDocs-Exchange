@@ -6,7 +6,7 @@ ms.author: v-mapenn
 ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
 ms.date: 8/16/2018
 ms.reviewer: 
-description: You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server, or the contents of a G Suite users' mailboxes, calendars, and contacts to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+description: Admin can learn how to migrate Exchange mailboxes, IMAP mailboxes, and G Suite mailboxes, calendars, and contacts to Office 365.
 title: Manage migration batches in Office 365
 ms.collection: 
 - exchange-online
@@ -25,7 +25,7 @@ manager: serdars
 
 # Manage migration batches in Office 365
 
-You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server, or the contents of a G Suite users' mailboxes, calendars, and contacts to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server, or the contents of G Suite users' mailboxes, calendars, and contacts to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
 
 ## The Migration dashboard
 <a name="bk_dashboard"> </a>
