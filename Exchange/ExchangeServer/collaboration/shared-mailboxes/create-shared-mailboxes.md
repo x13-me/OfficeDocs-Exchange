@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
-ms.date: 6/8/2018
 ms.reviewer:
 title: Create shared mailboxes in the Exchange admin center
 ms.collection: exchange-server

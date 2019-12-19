@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
-ms.date: 7/10/2018
 ms.reviewer:
 title: Mail routing in Exchange Server
 ms.collection: exchange-server

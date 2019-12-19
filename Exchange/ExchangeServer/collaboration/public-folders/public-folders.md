@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
-ms.date: 6/8/2018
 ms.reviewer:
 title: Public folders
 ms.collection: exchange-server

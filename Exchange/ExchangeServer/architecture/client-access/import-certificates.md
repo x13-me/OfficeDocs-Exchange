@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
-ms.date: 7/5/2018
 ms.reviewer:
 title: Import or install a certificate on an Exchange server
 ms.collection:

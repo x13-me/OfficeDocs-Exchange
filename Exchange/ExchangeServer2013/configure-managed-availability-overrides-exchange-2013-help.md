@@ -4,7 +4,6 @@ TOCTitle: Configure managed availability overrides
 ms:assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 ms:mtpsurl: https://technet.microsoft.com/library/Dn482055(v=EXCHG.150)
 ms:contentKeyID: 59888994
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

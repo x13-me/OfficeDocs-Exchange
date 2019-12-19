@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
-ms.date: 12/13/2017
 ms.reviewer: 
 title: Security and compliance for Exchange Online
 ms.collection: 

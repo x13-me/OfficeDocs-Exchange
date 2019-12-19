@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a4f9c56a-cb9b-401b-9b45-d71c6e036871
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Sharing policies in Exchange Online
 ms.collection: 

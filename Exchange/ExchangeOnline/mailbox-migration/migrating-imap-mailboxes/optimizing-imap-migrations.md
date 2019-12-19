@@ -4,7 +4,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
-ms.date: 8/15/2018
 ms.reviewer: 
 description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Office 365, you have a few choices for optimizing the migration performance.
 title: Tips for optimizing IMAP migrations

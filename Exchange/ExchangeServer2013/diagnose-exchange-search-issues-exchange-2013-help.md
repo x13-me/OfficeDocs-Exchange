@@ -4,7 +4,6 @@ TOCTitle: Diagnose Exchange Search issues
 ms:assetid: 8cfa26f4-ccf0-42dd-8570-67018188b4e8
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123701(v=EXCHG.150)
 ms:contentKeyID: 51407264
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

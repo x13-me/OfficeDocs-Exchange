@@ -4,7 +4,6 @@ TOCTitle: Address Lists role
 ms:assetid: 31143e30-16f5-45f5-b9a6-a39e6aa831d9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876867(v=EXCHG.150)
 ms:contentKeyID: 49289217
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Configure database availability group network properties
 ms:assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms:mtpsurl: https://technet.microsoft.com/library/Dd297927(v=EXCHG.150)
 ms:contentKeyID: 48385020
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

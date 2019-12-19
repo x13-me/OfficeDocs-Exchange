@@ -5,7 +5,6 @@ ms.topic: hub-page
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
-ms.date:
 ms.reviewer:
 title: Connectors, Exchange connector, Exchange send connector, Exchange receive connector
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 81863440-8b21-4523-bdab-6a2311889a0d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Call answering rules in Exchange Online
 ms.collection: exchange-online

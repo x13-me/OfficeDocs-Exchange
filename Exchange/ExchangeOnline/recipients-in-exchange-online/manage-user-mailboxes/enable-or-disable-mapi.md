@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
-ms.date: 12/31/2017
 ms.reviewer: 
 title: Enable or disable MAPI for a mailbox
 ms.collection: 

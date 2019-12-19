@@ -4,7 +4,6 @@ TOCTitle: Reseed the search catalog
 ms:assetid: 9d873bd4-0422-4975-b5e2-82a347479115
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633475(v=EXCHG.150)
 ms:contentKeyID: 51407270
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

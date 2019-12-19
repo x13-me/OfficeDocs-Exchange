@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Voice mail for users in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
-ms.date: 7/6/2018
 ms.reviewer:
 title: Content conversion
 ms.collection: exchange-server

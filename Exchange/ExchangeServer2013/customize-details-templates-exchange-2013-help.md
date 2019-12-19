@@ -4,7 +4,6 @@ TOCTitle: Customize details templates
 ms:assetid: b4beeedd-e46f-442e-844a-e8575f95dca0
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.toolbox.detailstemplate(v=EXCHG.150)
 ms:contentKeyID: 49090993
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

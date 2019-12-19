@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
-ms.date:
 ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server

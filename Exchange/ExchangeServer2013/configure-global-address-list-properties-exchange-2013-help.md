@@ -4,7 +4,6 @@ TOCTitle: Configure global address list properties
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 mtps_version: v=EXCHG.150

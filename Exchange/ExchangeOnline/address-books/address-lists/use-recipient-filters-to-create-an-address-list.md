@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
-ms.date: 
 ms.reviewer: 
 title: Recipient filters for address lists in Exchange Online PowerShell
 ms.collection: 

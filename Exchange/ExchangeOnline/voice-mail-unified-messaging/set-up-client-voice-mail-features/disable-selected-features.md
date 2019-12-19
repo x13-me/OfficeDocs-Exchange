@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 37421edf-af60-4ca9-9e8b-262b8b851607
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Disable selected features for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online

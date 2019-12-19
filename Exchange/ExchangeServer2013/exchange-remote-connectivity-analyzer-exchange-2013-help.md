@@ -4,7 +4,6 @@ TOCTitle: Exchange Remote Connectivity Analyzer
 ms:assetid: dd26698e-d00c-47f5-a7aa-c3894fe86c75
 ms:mtpsurl: https://technet.microsoft.com/library/Ff701693(v=EXCHG.150)
 ms:contentKeyID: 49289433
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

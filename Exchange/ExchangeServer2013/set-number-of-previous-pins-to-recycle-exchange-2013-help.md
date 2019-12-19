@@ -4,7 +4,6 @@ TOCTitle: Set the number of previous voice mail PINs to recycle
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: b094e68e-c493-4576-a6b1-4c780e635405
 mtps_version: v=EXCHG.150

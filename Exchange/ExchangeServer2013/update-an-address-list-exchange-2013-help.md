@@ -4,7 +4,6 @@ TOCTitle: Update an address list
 ms:assetid: 163e7099-cf14-4bb0-a84c-1401e9db670e
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996375(v=EXCHG.150)
 ms:contentKeyID: 49289182
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

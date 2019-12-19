@@ -4,7 +4,6 @@ TOCTitle: Configure a DTMF fallback auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a82d85f7-de30-40db-8ee6-b091ac14da9d
 mtps_version: v=EXCHG.150

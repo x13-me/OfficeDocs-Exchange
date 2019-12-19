@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Message properties and search operators for In-Place eDiscovery
 ms.collection: 

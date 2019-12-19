@@ -4,7 +4,6 @@ TOCTitle: Configure the startup mode on a Mailbox server
 ms:assetid: 4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3
 ms:mtpsurl: https://technet.microsoft.com/library/Ee423544(v=EXCHG.150)
 ms:contentKeyID: 49315402
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

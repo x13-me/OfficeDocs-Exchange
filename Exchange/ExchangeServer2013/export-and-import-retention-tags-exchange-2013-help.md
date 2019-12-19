@@ -4,7 +4,6 @@ TOCTitle: Export and import retention tags
 ms:assetid: 18405ea2-7ccc-475e-bd84-8b040e17bf44
 ms:mtpsurl: https://technet.microsoft.com/library/JJ907307(v=EXCHG.150)
 ms:contentKeyID: 50639770
-ms.date: 12/10/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: LegalHoldApplication role
 ms:assetid: 8ac0e939-14fe-4f64-9fae-ea5767bd1e2c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657468(v=EXCHG.150)
 ms:contentKeyID: 49289341
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

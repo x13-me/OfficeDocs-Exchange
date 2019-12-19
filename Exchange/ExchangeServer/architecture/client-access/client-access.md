@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Client Access services
 ms.collection:

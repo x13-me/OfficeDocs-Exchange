@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab
 ms.author: v-mapenn
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Manage a UM mailbox policy in Exchange Online
 ms.collection: exchange-online

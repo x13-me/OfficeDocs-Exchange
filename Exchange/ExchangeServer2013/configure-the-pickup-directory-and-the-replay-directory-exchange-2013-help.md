@@ -4,7 +4,6 @@ TOCTitle: Configure the Pickup directory and the Replay directory
 ms:assetid: c9ca7358-9a08-4f57-89d0-910e4438df8a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124549(v=EXCHG.150)
 ms:contentKeyID: 49382862
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

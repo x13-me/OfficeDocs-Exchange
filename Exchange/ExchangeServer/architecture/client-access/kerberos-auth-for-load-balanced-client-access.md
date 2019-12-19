@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-ms.date:
 ms.reviewer:
 title: Configure Kerberos authentication for load-balanced Client Access services
 ms.collection: exchange-server

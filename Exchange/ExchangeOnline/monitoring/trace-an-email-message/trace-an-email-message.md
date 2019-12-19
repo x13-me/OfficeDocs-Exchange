@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0c83cde6-5b09-4106-8587-c200cdc59094
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Trace an email message
 ms.collection: 

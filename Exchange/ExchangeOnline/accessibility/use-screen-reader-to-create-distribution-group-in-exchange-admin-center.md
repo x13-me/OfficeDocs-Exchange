@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4de33fbd-00e8-4071-8d2c-2c1a696a8454
-ms.date: 
 ms.reviewer: 
 manager: serdars
 description: Admins can learn how to use a screen reader to create distribution groups in the Exchange admin center (EAC) in Exchange Online.

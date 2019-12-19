@@ -4,7 +4,6 @@ TOCTitle: Keyboard shortcuts in the Exchange admin center
 ms:assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150484(v=EXCHG.150)
 ms:contentKeyID: 47559942
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

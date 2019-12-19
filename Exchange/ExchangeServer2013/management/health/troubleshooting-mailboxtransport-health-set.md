@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting MailboxTransport Health Set
 ms:assetid: 02bfa4cf-6929-437e-bae5-079ea1b92373
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailboxtransport(v=EXCHG.150)
 ms:contentKeyID: 49720714
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

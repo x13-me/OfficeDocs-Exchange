@@ -4,7 +4,6 @@ TOCTitle: Change a role scope
 ms:assetid: 9180e1e0-c352-4ccd-8da6-885a2e309867
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298145(v=EXCHG.150)
 ms:contentKeyID: 49289346
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

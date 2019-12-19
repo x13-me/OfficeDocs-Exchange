@@ -4,7 +4,6 @@ TOCTitle: Exchange 2013 readiness checks
 ms:assetid: 3b232ad3-01b1-4cdb-88c9-006bdc660f72
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150508(v=EXCHG.150)
 ms:contentKeyID: 47559982
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

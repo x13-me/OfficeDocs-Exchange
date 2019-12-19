@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 51cd6dc4-11d1-4eb9-a6c6-1965fcd24267
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Disable Message Waiting Indicator (MWI) for users in Exchange Online
 ms.collection: exchange-online

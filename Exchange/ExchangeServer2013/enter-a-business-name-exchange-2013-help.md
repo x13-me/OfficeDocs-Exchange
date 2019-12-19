@@ -4,7 +4,6 @@ TOCTitle: Enter a business name
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78
 mtps_version: v=EXCHG.150

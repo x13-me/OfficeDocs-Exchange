@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
-ms.date: 
 ms.reviewer: 
 title: 'Remove an offline address book from Exchange '
 ms.collection: exchange-online

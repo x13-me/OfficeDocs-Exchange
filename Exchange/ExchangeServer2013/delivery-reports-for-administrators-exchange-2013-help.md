@@ -4,7 +4,6 @@ TOCTitle: Delivery reports for administrators
 ms:assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
 ms:mtpsurl: https://technet.microsoft.com/library/JJ919241(v=EXCHG.150)
 ms:contentKeyID: 50646520
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

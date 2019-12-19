@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fdbed4fc-a77e-40d5-a211-863b05d74784
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Prepare mailboxes for cross-forest move requests
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Third-party copyright notices
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.collection: Ent_O365_Hybrid
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf

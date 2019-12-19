@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
-ms.date: 7/5/2018
 ms.reviewer:
 title: Messaging policy and compliance permissions in Exchange Server
 ms.collection: exchange-server

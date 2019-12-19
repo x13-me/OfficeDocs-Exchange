@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the group of users that Outlook Voice Access users can contact in Exchange Online
 ms.collection: exchange-online

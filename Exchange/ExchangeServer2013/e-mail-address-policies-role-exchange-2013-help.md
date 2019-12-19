@@ -4,7 +4,6 @@ TOCTitle: E-Mail Address Policies role
 ms:assetid: d272e672-81ea-417c-b5d6-76a5efd5c036
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876944(v=EXCHG.150)
 ms:contentKeyID: 49289418
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

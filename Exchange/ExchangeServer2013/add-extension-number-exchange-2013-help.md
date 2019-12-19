@@ -4,7 +4,6 @@ TOCTitle: Add an extension number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
 mtps_version: v=EXCHG.150

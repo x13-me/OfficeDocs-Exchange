@@ -4,7 +4,6 @@ TOCTitle: Edge Subscriptions
 ms:assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997438(v=EXCHG.150)
 ms:contentKeyID: 61200285
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

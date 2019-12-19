@@ -4,7 +4,6 @@ description: Learn about the support life cycle for Exchange
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
-ms.date:
 ms.reviewer: 
 title: Exchange Server supportability matrix
 ms.collection: exchange-server

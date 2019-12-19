@@ -4,7 +4,6 @@ TOCTitle: Exchange 2013 deployment permissions reference
 ms:assetid: b13412d0-0cc4-4c1d-bf31-cae3d3e211a9
 ms:mtpsurl: https://technet.microsoft.com/library/Ee681663(v=EXCHG.150)
 ms:contentKeyID: 56348434
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

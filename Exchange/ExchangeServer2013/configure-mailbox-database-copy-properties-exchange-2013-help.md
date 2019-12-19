@@ -4,7 +4,6 @@ TOCTitle: Configure mailbox database copy properties
 ms:assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351151(v=EXCHG.150)
 ms:contentKeyID: 48385566
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

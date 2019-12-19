@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
-ms.date: 7/5/2018
 ms.reviewer:
 title: Recipients Permissions
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Create a global address list
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 mtps_version: v=EXCHG.150

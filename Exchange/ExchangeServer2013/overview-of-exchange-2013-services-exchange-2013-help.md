@@ -4,7 +4,6 @@ TOCTitle: Overview of Exchange 2013 services
 ms:assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
 ms:mtpsurl: https://technet.microsoft.com/library/Ee423542(v=EXCHG.150)
 ms:contentKeyID: 74479247
-ms.date: 10/20/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

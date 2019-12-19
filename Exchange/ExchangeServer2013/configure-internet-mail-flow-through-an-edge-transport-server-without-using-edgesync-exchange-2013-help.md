@@ -4,7 +4,6 @@ TOCTitle: Configure Internet mail flow through an Edge Transport server without 
 ms:assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232082(v=EXCHG.150)
 ms:contentKeyID: 61200290
-ms.date: 01/23/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

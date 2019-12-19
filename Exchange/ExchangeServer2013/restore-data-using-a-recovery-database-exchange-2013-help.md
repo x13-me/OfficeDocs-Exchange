@@ -4,7 +4,6 @@ TOCTitle: Restore data using a recovery database
 ms:assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
 ms:mtpsurl: https://technet.microsoft.com/library/Ee332351(v=EXCHG.150)
 ms:contentKeyID: 48385607
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

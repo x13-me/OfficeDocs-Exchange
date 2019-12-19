@@ -4,7 +4,6 @@ TOCTitle: Exchange auditing reports
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 mtps_version: v=EXCHG.150

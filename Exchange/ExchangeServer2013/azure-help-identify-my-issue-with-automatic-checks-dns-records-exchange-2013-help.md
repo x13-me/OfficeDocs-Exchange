@@ -4,7 +4,6 @@ TOCTitle: 'Azure: Help Identify My issue with Automatic Checks - DNS Records'
 ms:assetid: 1ef42cde-4df4-401a-b8f2-494630996ca8
 ms:mtpsurl: https://technet.microsoft.com/library/Dn793619(v=EXCHG.150)
 ms:contentKeyID: 62631020
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

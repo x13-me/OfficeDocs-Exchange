@@ -4,7 +4,6 @@ TOCTitle: Set the number of sign-in failures before a voice mail user Is locked 
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 855e1980-2868-4983-b097-0b5f63f202b8
 mtps_version: v=EXCHG.150

@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.EnableUnifiedMessagingWizardForm.EnableUnifiedMessagingWizardPage
 ms.author: v-mapenn
 ms.assetid: ad027767-5e14-4cb1-9f8a-0791d9188db5
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable a user for voice mail in Exchange Online
 ms.collection: exchange-online

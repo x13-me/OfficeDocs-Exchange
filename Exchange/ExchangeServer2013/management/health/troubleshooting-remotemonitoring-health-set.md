@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting RemoteMonitoring Health Set
 ms:assetid: 693d84bf-23bc-4130-aba5-4ab3f80a5c5d
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.remotemonitoring(v=EXCHG.150)
 ms:contentKeyID: 49720817
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
-ms.date: 6/8/2018
 ms.reviewer:
 title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:

@@ -4,7 +4,6 @@ TOCTitle: 'Checklist: Integrate Exchange 2013 UM with Lync Server'
 ms:assetid: 3b82e86f-9f30-4445-96ad-744082abeaeb
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638120(v=EXCHG.150)
 ms:contentKeyID: 49315388
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

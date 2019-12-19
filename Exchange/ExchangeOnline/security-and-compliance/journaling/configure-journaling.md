@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3033715d-a6d0-485e-af0d-15876550fd4d
-ms.date: 
 ms.reviewer: 
 title: Configure Journaling in Exchange Online
 ms.collection: 

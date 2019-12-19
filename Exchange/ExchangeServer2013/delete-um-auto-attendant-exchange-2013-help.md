@@ -4,7 +4,6 @@ TOCTitle: Delete a UM auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 92846bbc-e6b9-45fc-8702-ef5c92eeb08f
 mtps_version: v=EXCHG.150

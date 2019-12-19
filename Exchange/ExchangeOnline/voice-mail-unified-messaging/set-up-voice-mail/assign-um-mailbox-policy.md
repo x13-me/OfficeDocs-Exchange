@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Assign a UM mailbox policy in Exchange Online
 ms.collection: exchange-online

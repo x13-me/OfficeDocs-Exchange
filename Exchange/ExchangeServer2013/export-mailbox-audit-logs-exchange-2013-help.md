@@ -4,7 +4,6 @@ TOCTitle: Export mailbox audit logs
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 mtps_version: v=EXCHG.150

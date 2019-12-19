@@ -4,7 +4,6 @@ TOCTitle: Configure Exchange 2013 for split permissions
 ms:assetid: 8c74f893-a6f3-4869-8571-3bc0f662cc87
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638155(v=EXCHG.150)
 ms:contentKeyID: 49289342
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

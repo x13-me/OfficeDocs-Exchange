@@ -4,7 +4,6 @@ TOCTitle: Using AD FS claims-based authentication with Outlook Web App and EAC
 ms:assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms:mtpsurl: https://technet.microsoft.com/library/Dn635116(v=EXCHG.150)
 ms:contentKeyID: 61200292
-ms.date: 04/14/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

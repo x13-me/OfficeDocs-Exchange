@@ -4,7 +4,6 @@ TOCTitle: Retention tags and retention policies
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 

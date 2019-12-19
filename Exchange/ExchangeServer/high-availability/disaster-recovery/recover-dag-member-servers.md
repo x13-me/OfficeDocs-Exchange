@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
-ms.date:
 ms.reviewer:
 title: Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover
 ms.collection: exchange-server

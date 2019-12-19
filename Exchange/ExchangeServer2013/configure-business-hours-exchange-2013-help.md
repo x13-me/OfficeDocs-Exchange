@@ -4,7 +4,6 @@ TOCTitle: Configure business hours
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 96b4be99-af94-4fa4-959a-48413387a044
 mtps_version: v=EXCHG.150

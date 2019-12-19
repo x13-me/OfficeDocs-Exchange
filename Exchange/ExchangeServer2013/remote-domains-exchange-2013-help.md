@@ -4,7 +4,6 @@ TOCTitle: Remote domains
 ms:assetid: 10fb7d62-4d78-40a3-82db-d62bcd27ba42
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996309(v=EXCHG.150)
 ms:contentKeyID: 49289173
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

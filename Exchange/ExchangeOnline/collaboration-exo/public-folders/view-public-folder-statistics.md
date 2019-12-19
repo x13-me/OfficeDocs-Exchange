@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
-ms.date: 6/24/2018
 ms.reviewer: 
 title: View statistics for public folders and public folder items
 ms.collection: 

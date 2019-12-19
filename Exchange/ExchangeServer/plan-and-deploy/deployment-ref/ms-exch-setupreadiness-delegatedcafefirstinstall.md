@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.DelegatedCafeFirstInstall
 ms.author: v-mapenn
 ms.assetid: be975d74-632d-4190-9c3b-b0cafe4eb332
-ms.date: 8/2/2018
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedCafeFirstInstall]
 ms.collection: exchange-server

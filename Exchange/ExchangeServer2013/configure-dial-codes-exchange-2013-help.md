@@ -4,7 +4,6 @@ TOCTitle: Configure dial codes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: e5b5efee-b734-4f70-8357-11be07b23bd0
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Time to Upgrade from Exchange 2003
 ms:assetid: aabe635d-6dba-431c-a9ba-5aa2a4fd7a2d
 ms:mtpsurl: https://technet.microsoft.com/library/Dn201758(v=EXCHG.150)
 ms:contentKeyID: 53892776
-ms.date: 07/29/2013
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

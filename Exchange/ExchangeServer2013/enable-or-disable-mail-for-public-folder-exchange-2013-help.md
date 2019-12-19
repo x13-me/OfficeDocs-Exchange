@@ -4,7 +4,6 @@ TOCTitle: Mail-enable or mail-disable a public folder
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
-ms.date: 8/16/2018
 ms.reviewer: 
 description: Admins can learn how to migrate mailboxes from email systems other than Exchange to Office 365.
 title: Migrate other types of IMAP mailboxes to Office 365

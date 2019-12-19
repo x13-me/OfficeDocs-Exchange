@@ -4,7 +4,6 @@ TOCTitle: Exchange Server 2013 Performance Recommendations
 ms:assetid: 6d0aea68-10d5-4a18-b632-a814ce3daa43
 ms:mtpsurl: https://technet.microsoft.com/library/Dn879084(v=EXCHG.150)
 ms:contentKeyID: 63917937
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

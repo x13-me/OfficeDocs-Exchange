@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
-ms.date: 7/5/2018
 ms.reviewer:
 title: Add or remove email addresses for a mailbox
 ms.collection:

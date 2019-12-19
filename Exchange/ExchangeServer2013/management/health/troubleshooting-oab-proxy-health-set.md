@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting OAB.Proxy Health Set
 ms:assetid: b717fc00-a787-44d6-8ccb-0eb4b2ea9e73
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720877
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

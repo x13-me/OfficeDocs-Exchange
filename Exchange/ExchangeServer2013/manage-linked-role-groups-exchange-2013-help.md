@@ -4,7 +4,6 @@ TOCTitle: Manage linked role groups
 ms:assetid: e2a07395-90c2-4d62-b15d-ac3ff28fe786
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657502(v=EXCHG.150)
 ms:contentKeyID: 49289439
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

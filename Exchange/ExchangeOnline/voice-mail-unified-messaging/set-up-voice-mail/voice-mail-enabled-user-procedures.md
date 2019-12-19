@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Voice mail-enabled user procedures in Exchange Online
 ms.collection: exchange-online

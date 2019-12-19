@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
-ms.date: 7/9/2018
 ms.reviewer:
 title: Perform a dial tone recovery
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Database Availability Groups role
 ms:assetid: 0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876847(v=EXCHG.150)
 ms:contentKeyID: 49289157
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Outlook Anywhere
 ms:assetid: 9026d461-ec6a-4ef5-ba9d-de33030858f3
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123741(v=EXCHG.150)
 ms:contentKeyID: 48385337
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

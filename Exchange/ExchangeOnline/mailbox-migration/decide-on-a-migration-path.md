@@ -4,7 +4,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0d4f2396-9cef-43b8-9bd6-306d01df1e27
-ms.date: 8/15/2018
 ms.reviewer: 
 description: Deciding on the best migration path of your users' email to Office 365 can be difficult. This article gives guidance based on your current email system and other factors, such as how quickly you want to migrate to Office 365. Your migration performance will vary based on your network, mailbox size, migration speed, and so on.
 title: Decide on a migration path

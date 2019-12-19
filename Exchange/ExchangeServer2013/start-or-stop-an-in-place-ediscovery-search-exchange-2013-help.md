@@ -4,7 +4,6 @@ TOCTitle: Start or stop an In-Place eDiscovery search
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 0d546763-4bf5-4523-91f4-d181b7ee4ac2
 mtps_version: v=EXCHG.150

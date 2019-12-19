@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting POP.Proxy Health Set
 ms:assetid: ea634068-aa8c-4421-a3fc-d8695ea73b80
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720910
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

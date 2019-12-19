@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Pre-stage the cluster name object for a database availability group
 ms.collection: exchange-server

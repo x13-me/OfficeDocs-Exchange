@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2c7c9d8a-ed12-4dcf-a5b7-3cea0e785e49
-ms.date: 6/24/2018
 ms.reviewer: 
 title: DTMF interface in Exchange Online
 ms.collection: exchange-online

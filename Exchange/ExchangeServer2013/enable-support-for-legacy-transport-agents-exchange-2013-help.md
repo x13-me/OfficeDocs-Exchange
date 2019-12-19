@@ -4,7 +4,6 @@ TOCTitle: Enable support for legacy transport agents
 ms:assetid: 00617e87-7199-406e-b4a3-94378f657f1f
 ms:mtpsurl: https://technet.microsoft.com/library/JJ591524(v=EXCHG.150)
 ms:contentKeyID: 49084757
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

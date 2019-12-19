@@ -4,7 +4,6 @@ TOCTitle: Turn off access to the Exchange admin center
 ms:assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218639(v=EXCHG.150)
 ms:contentKeyID: 48385052
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

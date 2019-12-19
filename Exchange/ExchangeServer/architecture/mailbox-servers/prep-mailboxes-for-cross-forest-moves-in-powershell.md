@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Prepare mailboxes for cross-forest moves using the Exchange Management Shell
 ms.collection: exchange-server

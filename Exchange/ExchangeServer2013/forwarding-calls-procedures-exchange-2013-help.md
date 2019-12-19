@@ -4,7 +4,6 @@ TOCTitle: Forwarding calls procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
 mtps_version: v=EXCHG.150

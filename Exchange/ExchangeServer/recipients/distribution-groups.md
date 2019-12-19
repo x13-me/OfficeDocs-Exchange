@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8e98f141-81d3-4d07-b36e-fcd2dbcc9572
-ms.date:
 ms.reviewer:
 title: Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group
 ms.collection: exchange-server

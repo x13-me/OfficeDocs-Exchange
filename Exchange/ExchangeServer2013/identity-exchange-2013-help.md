@@ -4,7 +4,6 @@ TOCTitle: Identity
 ms:assetid: e90fae91-37e7-4fdc-9170-44f0dc965c66
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125042(v=EXCHG.150)
 ms:contentKeyID: 49352392
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

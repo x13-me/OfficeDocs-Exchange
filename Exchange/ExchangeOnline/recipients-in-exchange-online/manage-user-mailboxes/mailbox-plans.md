@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
-ms.date: 
 ms.reviewer: 
 title: Mailbox plans in Exchange Online
 ms.collection:

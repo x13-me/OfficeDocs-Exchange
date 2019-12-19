@@ -4,7 +4,6 @@ TOCTitle: Unified Messaging cmdlet updates
 ms:assetid: a42c6643-67ed-4003-854a-ac1d66efb965
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150557(v=EXCHG.150)
 ms:contentKeyID: 47560083
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: In-Place eDiscovery
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Call answering rules in the same mailbox policy in Exchange Online
 ms.collection: exchange-online

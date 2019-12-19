@@ -4,7 +4,6 @@ TOCTitle: Call answering rules in the same mailbox policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
 mtps_version: v=EXCHG.150

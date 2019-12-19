@@ -4,7 +4,6 @@ TOCTitle: In-Place Hold and Litigation Hold
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 mtps_version: v=EXCHG.150

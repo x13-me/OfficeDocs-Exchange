@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
-ms.date: 
 ms.reviewer: 
 title: Create an Outlook on the web mailbox policy in Exchange Online
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
-ms.date: 4/29/2016
 ms.reviewer: 
 title: Mobile device mailbox policies in Exchange Online
 ms.collection: 

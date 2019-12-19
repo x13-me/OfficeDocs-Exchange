@@ -4,7 +4,6 @@ TOCTitle: The computer needs to be restarted before Setup can continue
 ms:assetid: f2d8e504-18c1-4b86-9b97-7654d0391b19
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.pendingrebootwindowscomponents(v=EXCHG.150)
 ms:contentKeyID: 47560133
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

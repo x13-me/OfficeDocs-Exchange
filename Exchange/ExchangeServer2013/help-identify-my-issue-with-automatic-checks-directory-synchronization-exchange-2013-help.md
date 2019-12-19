@@ -4,7 +4,6 @@ TOCTitle: Help Identify My Issue with Automatic Checks - Directory Synchronizati
 ms:assetid: e6ea900a-c382-444c-a8ce-54d392bfeca3
 ms:mtpsurl: https://technet.microsoft.com/library/Dn793977(v=EXCHG.150)
 ms:contentKeyID: 62632392
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
-ms.date: 4/19/2018
 ms.reviewer:
 title: Mail-enable or mail-disable a public folder
 ms.collection: exchange-server

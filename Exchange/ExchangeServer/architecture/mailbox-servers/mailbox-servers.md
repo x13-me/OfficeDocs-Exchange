@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b6403e43-d263-46b6-bfeb-f70f13c32ff1
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Mailbox servers
 ms.collection: exchange-server

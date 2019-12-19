@@ -4,7 +4,6 @@ TOCTitle: Search for and delete messages in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 mtps_version: v=EXCHG.150

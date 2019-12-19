@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Modify the SMTP banner on Receive connectors
 ms.collection: exchange-server

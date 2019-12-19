@@ -4,7 +4,6 @@ TOCTitle: Digital certificates and SSL
 ms:assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351044(v=EXCHG.150)
 ms:contentKeyID: 48385423
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

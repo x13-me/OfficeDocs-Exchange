@@ -4,7 +4,6 @@ TOCTitle: Permanently delete a mailbox
 ms:assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863440(v=EXCHG.150)
 ms:contentKeyID: 50387725
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

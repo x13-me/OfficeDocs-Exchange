@@ -4,7 +4,6 @@ TOCTitle: Use transport rules to inspect message attachments
 ms:assetid: c0de687e-e33c-4e8a-b253-771494678795
 ms:mtpsurl: https://technet.microsoft.com/library/JJ674307(v=EXCHG.150)
 ms:contentKeyID: 49319929
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

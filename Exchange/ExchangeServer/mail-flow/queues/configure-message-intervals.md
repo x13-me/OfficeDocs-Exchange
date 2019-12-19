@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Configure message retry, resubmit, and expiration intervals
 ms.collection: exchange-server

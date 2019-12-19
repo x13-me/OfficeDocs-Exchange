@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
-ms.date: 6/11/2018
 ms.reviewer: 
 title: Procedures for Client Access Rules in Exchange Online
 ms.collection: 

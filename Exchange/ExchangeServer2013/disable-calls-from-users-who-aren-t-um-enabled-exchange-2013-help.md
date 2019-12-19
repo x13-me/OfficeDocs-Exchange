@@ -4,7 +4,6 @@ TOCTitle: Disable calls from users who aren't UM-enabled
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 272ff4ab-b4d9-4647-98e2-7c171f9dfc3f
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0a3492f8-8aba-4904-96fd-6e023175012a
-ms.date: 3/9/2015
 ms.reviewer: 
 title: Set up a UM auto attendant in Exchange Online
 ms.collection: exchange-online

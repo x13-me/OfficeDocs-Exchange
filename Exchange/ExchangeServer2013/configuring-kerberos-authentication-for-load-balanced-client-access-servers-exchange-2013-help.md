@@ -4,7 +4,6 @@ TOCTitle: Configuring Kerberos authentication for load-balanced Client Access se
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms:mtpsurl: https://technet.microsoft.com/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

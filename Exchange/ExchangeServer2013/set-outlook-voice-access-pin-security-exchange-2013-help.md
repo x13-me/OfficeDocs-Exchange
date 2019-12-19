@@ -4,7 +4,6 @@ TOCTitle: Set Outlook Voice Access PIN security
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: ef6d9151-d333-4f52-9338-273f7a291e54
 mtps_version: v=EXCHG.150

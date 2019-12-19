@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 251505e6-0907-44cd-859f-bd9402e6a397
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Remote Connectivity Analyzer tests for Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 71e5dc2f-5de2-4089-8690-f2a0ed8ede0d
-ms.date: 
 ms.reviewer: 
 title: Address book policy procedures in Exchange Online
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
-ms.date: 4/8/2015
 ms.reviewer: 
 title: Remove a call answering rule for a user in Exchange Online
 ms.collection: exchange-online

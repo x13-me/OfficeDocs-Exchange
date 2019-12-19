@@ -4,7 +4,6 @@ TOCTitle: Administrator audit log structure
 ms:assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms:mtpsurl: https://technet.microsoft.com/library/Ff459251(v=EXCHG.150)
 ms:contentKeyID: 50117644
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

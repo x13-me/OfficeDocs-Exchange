@@ -4,7 +4,6 @@ TOCTitle: UM languages, prompts, and greetings
 ms:assetid: d48df962-9669-420b-838f-44bfe1012e2f
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124728(v=EXCHG.150)
 ms:contentKeyID: 49315533
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

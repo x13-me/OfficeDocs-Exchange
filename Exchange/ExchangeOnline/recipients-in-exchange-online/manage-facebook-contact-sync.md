@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.eac.EditOwaMailboxPolicy_Facebook
 ms.author: v-mapenn
 ms.assetid: 0f7e88eb-2b47-41ef-aedf-add22937c658
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Manage Facebook contact sync in your organization
 ms.collection: 

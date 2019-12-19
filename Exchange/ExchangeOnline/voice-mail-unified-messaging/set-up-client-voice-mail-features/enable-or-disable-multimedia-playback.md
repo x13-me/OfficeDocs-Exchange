@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or disable multimedia playback of protected voice messages in Exchange Online
 ms.collection: exchange-online

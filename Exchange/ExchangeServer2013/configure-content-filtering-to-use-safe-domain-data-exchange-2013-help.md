@@ -4,7 +4,6 @@ TOCTitle: Configure Content Filtering to Use Safe Domain Data
 ms:assetid: 1ee2b663-b4f3-4fef-8954-986f2d820924
 ms:mtpsurl: https://technet.microsoft.com/library/Dn467930(v=EXCHG.150)
 ms:contentKeyID: 58899940
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

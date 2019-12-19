@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
-ms.date: 7/6/2018
 ms.reviewer:
 title: Message rate limits and throttling
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Enable or disable automatic speech recognition
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 92b3b679-b503-4068-8e88-25ec0f4537ab
 mtps_version: v=EXCHG.150

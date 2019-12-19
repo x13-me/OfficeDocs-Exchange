@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58ac4338-b883-404f-a6be-eca38ccd8088
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Organization relationships in Exchange Online
 ms.collection: 

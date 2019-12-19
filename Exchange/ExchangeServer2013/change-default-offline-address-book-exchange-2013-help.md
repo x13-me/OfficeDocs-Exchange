@@ -4,7 +4,6 @@ TOCTitle: Change the default offline address book
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 61abf78e-2543-4431-acc8-839e3c7a4548
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Create a Retention Policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 mtps_version: v=EXCHG.150

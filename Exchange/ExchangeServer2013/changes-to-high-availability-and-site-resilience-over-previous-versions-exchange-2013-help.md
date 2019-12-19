@@ -4,7 +4,6 @@ TOCTitle: Changes to high availability and site resilience over previous version
 ms:assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms:mtpsurl: https://technet.microsoft.com/library/Dn789066(v=EXCHG.150)
 ms:contentKeyID: 62523708
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Manage a federation trust
 ms:assetid: 0439839f-2052-4bc9-9d30-aa6e7d51b733
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673036(v=EXCHG.150)
 ms:contentKeyID: 49289152
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

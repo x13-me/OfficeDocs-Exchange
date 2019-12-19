@@ -4,7 +4,6 @@ TOCTitle: Configure the group of users that can be contacted
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 mtps_version: v=EXCHG.150

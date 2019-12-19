@@ -4,7 +4,6 @@ TOCTitle: Voice Mail Preview advisor
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: 0957dd54-df6d-4b50-9db5-4757f548b899
 mtps_version: v=EXCHG.150

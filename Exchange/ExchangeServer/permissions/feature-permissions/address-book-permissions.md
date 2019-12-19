@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
-ms.date: 7/5/2018
 ms.reviewer:
 title: Email address and address book permissions
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Online
 ms.collection: exchange-online

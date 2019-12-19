@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
-ms.date: 
 ms.reviewer: 
 title: Create an address book policy in Exchange Online
 ms.collection: 

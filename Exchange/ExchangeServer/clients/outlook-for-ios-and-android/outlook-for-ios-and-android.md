@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8b46e0bf-334d-44ed-bf20-eab605fdcae6
-ms.date: 7/5/2018
 title: Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4

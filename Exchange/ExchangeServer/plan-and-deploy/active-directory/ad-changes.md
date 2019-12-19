@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
-ms.date: 9/20/2018
 ms.reviewer: 
 title: What changes in Active Directory when Exchange is installed?
 ms.collection:

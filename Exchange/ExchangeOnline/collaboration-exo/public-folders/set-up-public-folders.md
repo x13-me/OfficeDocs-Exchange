@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Set up public folders in a new organization
 ms.collection: 

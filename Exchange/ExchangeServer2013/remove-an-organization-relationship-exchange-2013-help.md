@@ -4,7 +4,6 @@ TOCTitle: Remove an organization relationship
 ms:assetid: ff211394-f58b-4da7-bb3a-df6abcb5950e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657513(v=EXCHG.150)
 ms:contentKeyID: 49289477
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

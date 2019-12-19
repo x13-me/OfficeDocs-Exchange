@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0957dd54-df6d-4b50-9db5-4757f548b899
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Voice Mail Preview advisor in Exchange Online
 ms.collection: exchange-online

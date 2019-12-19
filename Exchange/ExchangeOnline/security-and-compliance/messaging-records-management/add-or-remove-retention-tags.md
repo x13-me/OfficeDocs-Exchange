@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
-ms.date: 6/23/2018
 ms.reviewer: 
 title: Add retention tags to or remove retention tags from a retention policy
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
-ms.date: 7/9/2018
 ms.reviewer:
 title: Clean up or delete items from the Recoverable Items folder
 ms.collection: exchange-server

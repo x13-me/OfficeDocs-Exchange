@@ -8,7 +8,6 @@ f1_keywords:
 - ms.exch.setupreadiness.E16E14CoexistenceMinVersionRequirement
 ms.author: v-mapenn
 ms.assetid: 24d16ace-249f-4c74-b617-3b0242e5aeca
-ms.date: 9/15/2015
 ms.reviewer: 
 title: Exchange 2010 SP3 RU11 or later is required for coexistence with Exchange 2016 [E16E14CoexistenceMinVersionRequirement]
 ms.collection: exchange-server

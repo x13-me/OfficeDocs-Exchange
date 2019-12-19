@@ -4,7 +4,6 @@ TOCTitle: Send and receive S/MIME signed and encrypted email
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 ms:mtpsurl:
 ms:contentKeyID:
-ms.date: 2/26/2019
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

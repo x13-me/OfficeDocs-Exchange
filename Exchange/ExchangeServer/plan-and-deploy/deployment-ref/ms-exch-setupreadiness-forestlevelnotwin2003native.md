@@ -8,7 +8,6 @@ f1_keywords:
 - ms.exch.setupreadiness.ForestLevelNotWin2003Native
 ms.author: v-mapenn
 ms.assetid: 45f45976-62ac-4b6c-889a-ebd449402009
-ms.date: 12/20/2016
 ms.reviewer: 
 title: Active Directory functional level isn't Windows Server 2003 or later [ForestLevelNotWin2003Native]
 ms.collection: exchange-server

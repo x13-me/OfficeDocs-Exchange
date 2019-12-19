@@ -4,7 +4,6 @@ TOCTitle: Create a mailbox audit log search
 ms:assetid: 48ba22cf-b1f2-4dbc-98fc-fed22d97db14
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461929(v=EXCHG.150)
 ms:contentKeyID: 49300496
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

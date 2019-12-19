@@ -4,7 +4,6 @@ TOCTitle: Manage user access to add-ins for Outlook
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
 mtps_version: v=EXCHG.150

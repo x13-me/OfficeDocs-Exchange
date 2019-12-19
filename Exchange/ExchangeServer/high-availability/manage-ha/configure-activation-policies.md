@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
-ms.date: 7/9/2018
 ms.reviewer:
 title: Configure activation policy for a mailbox database copy
 ms.collection: exchange-server

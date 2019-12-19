@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1efe7737-b573-4f36-a0f2-27714d2ebdb0
-ms.date:
 title: Account setup with modern authentication in Exchange Online
 ms.collection: 
 - exchange-online

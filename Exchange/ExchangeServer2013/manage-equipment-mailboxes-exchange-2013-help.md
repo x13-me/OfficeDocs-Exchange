@@ -4,7 +4,6 @@ TOCTitle: Manage equipment mailboxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 mtps_version: v=EXCHG.150

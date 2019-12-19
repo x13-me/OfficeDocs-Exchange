@@ -6,7 +6,6 @@ layout: LandingPage
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Exchange Server
 ms.collection: exchange-server

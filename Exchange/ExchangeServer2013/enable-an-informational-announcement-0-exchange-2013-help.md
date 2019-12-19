@@ -4,7 +4,6 @@ TOCTitle: Enable an informational announcement
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
-ms.date:
 ms.reviewer: 
 title: Exchange Server build numbers and release dates
 ms.collection: exchange-server

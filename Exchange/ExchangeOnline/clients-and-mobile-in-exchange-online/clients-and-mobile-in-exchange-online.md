@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
-ms.date: 
 ms.reviewer: 
 title: Clients and mobile in Exchange Online
 ms.collection: 

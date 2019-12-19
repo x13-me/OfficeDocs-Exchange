@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
-ms.date: 3/9/2015
 ms.reviewer: 
 title: Create dialing rules for users in Exchange Online
 ms.collection: exchange-online

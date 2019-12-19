@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-ms.date: 6/12/2018
 ms.reviewer:
 title: Create an In-Place eDiscovery search in Exchange Server
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Move a mailbox database using database portability
 ms:assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876926(v=EXCHG.150)
 ms:contentKeyID: 50873806
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

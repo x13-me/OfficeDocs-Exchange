@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable calls from users who aren't UM-enabled in Exchange Online
 ms.collection: exchange-online

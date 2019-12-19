@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
-ms.date:
 ms.reviewer: 
 title: Delegate the installation of Exchange servers
 ms.collection:

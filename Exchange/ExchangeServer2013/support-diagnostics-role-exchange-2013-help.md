@@ -4,7 +4,6 @@ TOCTitle: Support Diagnostics role
 ms:assetid: 3ad2c628-019e-4eb7-af43-64ab2a3a2fbf
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876875(v=EXCHG.150)
 ms:contentKeyID: 49289234
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

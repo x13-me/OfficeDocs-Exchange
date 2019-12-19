@@ -4,7 +4,6 @@ TOCTitle: Multi-tenancy in Exchange 2013
 ms:assetid: df09257d-dd98-4f59-b830-1818cedda15c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ862352(v=EXCHG.150)
 ms:contentKeyID: 50182057
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Create a Receive connector to receive messages from an internal Exchan
 ms:assetid: 546cead9-7a2d-4332-a5f6-35343d56c619
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657448(v=EXCHG.150)
 ms:contentKeyID: 49289255
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b80c57f1-394c-4608-8ad3-52a3e6d697db
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or prevent transferring calls from Outlook Voice Access in Exchange Online
 ms.collection: exchange-online

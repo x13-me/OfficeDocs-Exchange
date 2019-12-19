@@ -4,7 +4,6 @@ TOCTitle: Active Directory domain is mixed mode_PrepareDomainModeMixed
 ms:assetid: 97c9f480-7a2b-482e-8f51-f7b965fe1556
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.preparedomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629042
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

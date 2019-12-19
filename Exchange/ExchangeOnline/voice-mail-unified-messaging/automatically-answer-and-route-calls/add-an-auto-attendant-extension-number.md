@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f2bd62ba-1e01-4cb7-862c-c750752e20e0
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Add an auto attendant extension number in Exchange Online
 ms.collection: exchange-online

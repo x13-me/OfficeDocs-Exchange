@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
-ms.date: 6/8/2018
 ms.reviewer:
 title: Manage administrator audit logging
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: UM Prompts role
 ms:assetid: 262928e8-b938-404f-b941-a636f4d18169
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876861(v=EXCHG.150)
 ms:contentKeyID: 49289201
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

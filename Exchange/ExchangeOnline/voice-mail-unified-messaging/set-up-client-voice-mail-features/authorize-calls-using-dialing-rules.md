@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
-ms.date: 3/9/2015
 ms.reviewer: 
 title: Authorize calls using dialing rules in Exchange Online
 ms.collection: exchange-online

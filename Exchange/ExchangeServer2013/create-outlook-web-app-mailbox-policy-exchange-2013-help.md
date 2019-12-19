@@ -4,7 +4,6 @@ TOCTitle: Create an Outlook Web App mailbox policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 mtps_version: v=EXCHG.150

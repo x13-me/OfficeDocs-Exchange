@@ -4,7 +4,6 @@ TOCTitle: Remove a call answering rule for a user
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 4/8/2015
 ms.reviewer:
 ms.assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
 mtps_version: v=EXCHG.150

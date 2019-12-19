@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
-ms.date: 7/5/2018
 ms.reviewer:
 title: Sharing and collaboration permissions
 ms.collection: exchange-server

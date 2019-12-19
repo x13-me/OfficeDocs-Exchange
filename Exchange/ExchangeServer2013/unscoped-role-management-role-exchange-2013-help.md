@@ -4,7 +4,6 @@ TOCTitle: Unscoped Role Management role
 ms:assetid: d11eb843-64c9-4968-bfd5-9a8d94903058
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876943(v=EXCHG.150)
 ms:contentKeyID: 49289422
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

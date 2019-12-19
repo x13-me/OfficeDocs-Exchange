@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-ms.date: 7/9/2018
 ms.reviewer:
 title: Mail flow rule actions in Exchange Server
 ms.collection: exchange-server

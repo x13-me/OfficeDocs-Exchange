@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
-ms.date: 6/8/2018
 ms.reviewer:
 title: Exchange admin center in Exchange Server
 ms.collection:

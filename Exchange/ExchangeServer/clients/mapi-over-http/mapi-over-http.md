@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
-ms.date: 7/10/2018
 ms.reviewer: 
 title: MAPI over HTTP in Exchange Server
 ms.collection: exchange-server

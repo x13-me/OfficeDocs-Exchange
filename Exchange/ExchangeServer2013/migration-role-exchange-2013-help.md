@@ -4,7 +4,6 @@ TOCTitle: Migration role
 ms:assetid: 8b5a3385-7dc0-4492-9f00-a4616982016b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876920(v=EXCHG.150)
 ms:contentKeyID: 49289335
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3f01edde-1cdc-4891-ad9d-7d01582664e9
-ms.date: 
 ms.reviewer: 
 title: Modify the space used by Inbox rules in Exchange Online
 ms.collection: 

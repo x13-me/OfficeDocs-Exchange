@@ -4,7 +4,6 @@ TOCTitle: Manage message approval
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 mtps_version: v=EXCHG.150

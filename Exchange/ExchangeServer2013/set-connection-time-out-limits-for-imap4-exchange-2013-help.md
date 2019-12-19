@@ -4,7 +4,6 @@ TOCTitle: Set connection time-out limits for IMAP4
 ms:assetid: 6b6a5bd1-a878-4a70-8e21-14d5042a58f1
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998665(v=EXCHG.150)
 ms:contentKeyID: 50395405
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
-ms.date: 7/9/2018
 ms.reviewer:
 title: Activate a lagged mailbox database copy
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b8790117-b040-4c84-9d34-005c75088e76
-ms.date: 3/5/2018
 ms.reviewer: 
 title: Telephone system integration with UM in Exchange Online
 ms.collection: exchange-online

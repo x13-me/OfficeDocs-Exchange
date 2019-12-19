@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5d3cae58-1690-424d-9bef-011911d0b608
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Setting up incoming faxing in Exchange Online
 ms.collection: exchange-online

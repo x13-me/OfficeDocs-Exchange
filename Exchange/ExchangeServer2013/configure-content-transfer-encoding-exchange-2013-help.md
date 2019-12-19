@@ -4,7 +4,6 @@ TOCTitle: Configure content transfer encoding
 ms:assetid: c4922362-18d4-42f7-9189-9076720eb1d8
 ms:mtpsurl: https://technet.microsoft.com/library/Gg144562(v=EXCHG.150)
 ms:contentKeyID: 49318587
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

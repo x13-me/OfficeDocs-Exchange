@@ -4,7 +4,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0a4913fe-60fb-498f-9155-a86516418842
-ms.date: 9/19/2018
 ms.reviewer: 
 description: Learn all the ways admins can use to migrate user mailboxes to Office 365.
 title: Ways to migrate multiple email accounts to Office 365

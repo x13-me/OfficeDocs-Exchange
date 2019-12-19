@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantGeneralPropertyPage
 ms.author: v-mapenn
 ms.assetid: 4809ff56-ae34-4ce6-8e39-9193311c3f83
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Manage a UM auto attendant in Exchange Online
 ms.collection: exchange-online

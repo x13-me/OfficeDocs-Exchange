@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58f41016-e725-432b-953e-415d61e0664c
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or disable automatic speech recognition for an Outlook Voice Access user in Exchange Online
 ms.collection: exchange-online

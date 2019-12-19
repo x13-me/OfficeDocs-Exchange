@@ -4,7 +4,6 @@ TOCTitle: Help Identify My Issue with Sending/Receiving Email in Outlook (Automa
 ms:assetid: 0de16c79-807a-4cae-9097-22dd61a157b4
 ms:mtpsurl: https://technet.microsoft.com/library/Dn793609(v=EXCHG.150)
 ms:contentKeyID: 62629954
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

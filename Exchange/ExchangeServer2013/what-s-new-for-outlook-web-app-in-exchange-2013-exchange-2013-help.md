@@ -4,7 +4,6 @@ TOCTitle: What's new for Outlook Web App in Exchange 2013
 ms:assetid: 7010e116-9daf-4e76-9a37-964ffde27ee6
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150522(v=EXCHG.150)
 ms:contentKeyID: 47560022
-ms.date: 12/20/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

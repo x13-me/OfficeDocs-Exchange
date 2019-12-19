@@ -4,7 +4,6 @@ TOCTitle: Specify the text to display for email clients that don't support Windo
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
 mtps_version: v=EXCHG.150

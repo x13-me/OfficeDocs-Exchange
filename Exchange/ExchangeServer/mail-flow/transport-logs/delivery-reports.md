@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Delivery reports for administrators
 ms.collection: exchange-server

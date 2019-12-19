@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Add a mailbox database copy
 ms.collection:

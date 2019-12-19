@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
-ms.date: 1/6/2017
 ms.reviewer: 
 title: Manage all mailboxes and mail flow using Office 365
 ms.collection: 

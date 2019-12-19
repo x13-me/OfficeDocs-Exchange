@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Switchovers and failovers
 ms.collection: exchange-server

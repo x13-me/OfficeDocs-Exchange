@@ -4,7 +4,6 @@ TOCTitle: Verify an Exchange 2013 installation
 ms:assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125254(v=EXCHG.150)
 ms:contentKeyID: 48289471
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

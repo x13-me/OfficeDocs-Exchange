@@ -4,7 +4,6 @@ TOCTitle: Turn off or suspend messaging records management
 ms:assetid: 631191aa-3bba-4ebf-a727-c48ed2ebe176
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998580(v=EXCHG.150)
 ms:contentKeyID: 51439479
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

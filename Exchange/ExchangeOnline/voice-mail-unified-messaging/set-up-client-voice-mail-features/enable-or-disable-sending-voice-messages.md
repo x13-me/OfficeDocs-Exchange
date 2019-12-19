@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or disable sending voice messages from Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
