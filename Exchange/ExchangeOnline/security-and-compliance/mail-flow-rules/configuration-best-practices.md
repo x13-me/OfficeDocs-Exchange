@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
-ms.date: 
 ms.reviewer: 
 title: Best practices for configuring mail flow rules in Exchange Online
 ms.collection: 

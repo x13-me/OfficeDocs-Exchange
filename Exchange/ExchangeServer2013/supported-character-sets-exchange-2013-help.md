@@ -4,7 +4,6 @@ TOCTitle: Supported character sets for remote domains
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 mtps_version: v=EXCHG.150

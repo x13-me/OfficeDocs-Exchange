@@ -4,7 +4,6 @@ TOCTitle: Server health and performance
 ms:assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150551(v=EXCHG.150)
 ms:contentKeyID: 47560078
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

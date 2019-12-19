@@ -4,7 +4,6 @@ TOCTitle: Using Windows Server Backup to back up and restore Exchange data
 ms:assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876851(v=EXCHG.150)
 ms:contentKeyID: 48384824
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

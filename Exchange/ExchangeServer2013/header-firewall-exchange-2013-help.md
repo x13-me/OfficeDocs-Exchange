@@ -4,7 +4,6 @@ TOCTitle: Header firewall
 ms:assetid: 9b148f7b-47a9-4379-a55b-8d5310c1772f
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232136(v=EXCHG.150)
 ms:contentKeyID: 50934222
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

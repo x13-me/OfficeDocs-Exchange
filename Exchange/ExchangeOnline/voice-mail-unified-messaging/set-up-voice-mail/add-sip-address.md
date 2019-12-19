@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Add a SIP address in Exchange Online
 ms.collection: exchange-online

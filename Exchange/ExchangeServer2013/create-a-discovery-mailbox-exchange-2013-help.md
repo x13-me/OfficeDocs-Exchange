@@ -4,7 +4,6 @@ TOCTitle: Create a discovery mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
 mtps_version: v=EXCHG.150

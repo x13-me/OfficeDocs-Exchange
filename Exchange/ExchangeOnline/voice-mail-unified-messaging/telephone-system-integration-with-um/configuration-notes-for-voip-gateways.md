@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1583674f-5a57-45fd-8125-087d1624e686
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs in Exchange Online
 ms.collection: exchange-online

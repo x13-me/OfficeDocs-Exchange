@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Delete a UM dial plan in Exchange Online
 ms.collection: exchange-online

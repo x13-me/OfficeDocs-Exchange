@@ -4,7 +4,6 @@ TOCTitle: Not in schema master site/domain_NotInSchemaMasterDomain
 ms:assetid: 5e44eb33-4c30-4c3d-ba68-5c30bef1731f
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.notinschemamasterdomain(v=EXCHG.150)
 ms:contentKeyID: 46628957
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

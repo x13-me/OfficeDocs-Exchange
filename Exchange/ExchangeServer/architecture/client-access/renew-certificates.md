@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 356ca7cd-b9d4-487d-aa21-3b38e91bde58
-ms.date: 6/7/2018
 ms.reviewer:
 title: Renew an Exchange Server certificate
 ms.collection:

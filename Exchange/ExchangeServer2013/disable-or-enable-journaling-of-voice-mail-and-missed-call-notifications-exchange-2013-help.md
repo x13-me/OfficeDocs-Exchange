@@ -4,7 +4,6 @@ TOCTitle: Disable or enable journaling of voice mail and missed call notificatio
 ms:assetid: 5164a92e-69e6-4339-b80c-0cfbf0dc0198
 ms:mtpsurl: https://technet.microsoft.com/library/Bb201690(v=EXCHG.150)
 ms:contentKeyID: 49354854
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

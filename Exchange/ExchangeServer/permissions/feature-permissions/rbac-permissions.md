@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
-ms.date: 7/5/2018
 ms.reviewer:
 title: Role management permissions
 ms.collection: exchange-server

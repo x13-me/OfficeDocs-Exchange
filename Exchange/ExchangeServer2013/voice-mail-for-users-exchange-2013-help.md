@@ -4,7 +4,6 @@ TOCTitle: Voice mail for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
 mtps_version: v=EXCHG.150

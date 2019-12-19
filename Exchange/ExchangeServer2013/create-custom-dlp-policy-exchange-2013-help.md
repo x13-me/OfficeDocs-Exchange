@@ -4,7 +4,6 @@ TOCTitle: Create a custom DLP policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 mtps_version: v=EXCHG.150

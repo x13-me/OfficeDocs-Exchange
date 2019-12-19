@@ -4,7 +4,6 @@ ms.topic: hub-page
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3c368d31-5959-423f-a533-9639fee3501c
-ms.date: 12/9/2016
 ms.reviewer: 
 manager: serdars
 description: Admins can learn about the accessibility features that are available in the Exchange admin center (EAC) in Exchange Online.

@@ -4,7 +4,6 @@ TOCTitle: Org Marketplace Apps role
 ms:assetid: 137ee328-0bad-4911-a7bf-82da7678f246
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673043(v=EXCHG.150)
 ms:contentKeyID: 49289178
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

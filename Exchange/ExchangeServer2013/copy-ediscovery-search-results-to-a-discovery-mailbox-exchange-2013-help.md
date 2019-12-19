@@ -4,7 +4,6 @@ TOCTitle: Copy eDiscovery search results to a discovery mailbox
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms:mtpsurl: https://technet.microsoft.com/library/Dn624163(v=EXCHG.150)
 ms:contentKeyID: 61200239
-ms.date: 12/10/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

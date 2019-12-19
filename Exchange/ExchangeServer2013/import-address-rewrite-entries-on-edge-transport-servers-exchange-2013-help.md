@@ -4,7 +4,6 @@ TOCTitle: Import address rewrite entries on Edge Transport servers
 ms:assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms:mtpsurl: https://technet.microsoft.com/library/Bb331966(v=EXCHG.150)
 ms:contentKeyID: 61200296
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

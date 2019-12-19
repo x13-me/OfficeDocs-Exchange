@@ -4,7 +4,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b79fb81d-d6f4-4385-867e-7bdd0238366e
-ms.date: 8/15/2018
 ms.reviewer: 
 description: 'You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the New-MigrationBatch cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:'
 title: CSV files for Mailbox migration

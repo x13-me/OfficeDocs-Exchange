@@ -4,7 +4,6 @@ TOCTitle: Test a transport rule
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 mtps_version: v=EXCHG.150

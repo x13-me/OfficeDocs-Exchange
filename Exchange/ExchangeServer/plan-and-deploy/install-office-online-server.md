@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9c2b4186-be7d-4c57-b119-17a1c36fd6a0
-ms.date:
 ms.reviewer: 
 title: Install Office Online Server in an Exchange organization
 ms.collection:

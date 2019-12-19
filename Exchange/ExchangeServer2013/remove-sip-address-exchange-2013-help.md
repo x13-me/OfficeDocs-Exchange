@@ -4,7 +4,6 @@ TOCTitle: Remove a SIP address
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: eaaff0b0-7d85-4845-a7b8-ac22b42bc415
 mtps_version: v=EXCHG.150

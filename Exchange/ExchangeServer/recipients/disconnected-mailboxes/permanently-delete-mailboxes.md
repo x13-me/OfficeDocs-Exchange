@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
-ms.date: 6/12/2018
 ms.reviewer:
 title: Permanently delete a mailbox
 ms.collection: exchange-server

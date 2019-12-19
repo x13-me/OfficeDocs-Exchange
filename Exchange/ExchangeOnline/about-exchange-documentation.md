@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b
-ms.date: 12/9/2016
 ms.reviewer: 
 title: About Exchange documentation
 ms.collection:

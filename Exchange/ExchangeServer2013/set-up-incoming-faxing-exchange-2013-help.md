@@ -4,7 +4,6 @@ TOCTitle: Setting up incoming faxing
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: 5d3cae58-1690-424d-9bef-011911d0b608
 mtps_version: v=EXCHG.150

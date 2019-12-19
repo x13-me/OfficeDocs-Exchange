@@ -4,7 +4,6 @@ TOCTitle: Create an email address policy by using recipient filters
 ms:assetid: e3f446bd-1511-479c-8d87-2dfce5547c90
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232194(v=EXCHG.150)
 ms:contentKeyID: 49289441
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

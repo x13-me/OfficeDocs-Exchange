@@ -4,7 +4,6 @@ TOCTitle: Manage DLP policies
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
 mtps_version: v=EXCHG.150

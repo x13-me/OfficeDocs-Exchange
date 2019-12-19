@@ -4,7 +4,6 @@ TOCTitle: Mailbox server
 ms:assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150491(v=EXCHG.150)
 ms:contentKeyID: 47559954
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

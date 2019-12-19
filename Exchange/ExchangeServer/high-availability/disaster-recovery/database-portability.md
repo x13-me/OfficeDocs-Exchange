@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
-ms.date: 7/9/2018
 ms.reviewer:
 title: Move a mailbox database using database portability
 ms.collection: exchange-server

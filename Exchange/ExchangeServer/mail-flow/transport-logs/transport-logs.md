@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-ms.date: 7/6/2018
 ms.reviewer:
 title: Transport logs in Exchange Server
 ms.collection: exchange-server

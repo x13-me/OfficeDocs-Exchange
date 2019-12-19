@@ -4,7 +4,6 @@ TOCTitle: Apply a retention policy to mailboxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 mtps_version: v=EXCHG.150

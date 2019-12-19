@@ -4,7 +4,6 @@ TOCTitle: Sharing and collaboration permissions
 ms:assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150556(v=EXCHG.150)
 ms:contentKeyID: 47560082
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48244e58-b7d6-4f0e-bbae-d22bf0fc11ff
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Include text with the email message sent when a fax message is received in Exchange Online
 ms.collection: exchange-online

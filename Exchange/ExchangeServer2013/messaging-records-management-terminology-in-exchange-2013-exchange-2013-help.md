@@ -4,7 +4,6 @@ TOCTitle: Messaging records management terminology in Exchange 2013
 ms:assetid: de3e3503-6de3-4666-aeb9-cd877efb93bb
 ms:mtpsurl: https://technet.microsoft.com/library/Bb408414(v=EXCHG.150)
 ms:contentKeyID: 49289434
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

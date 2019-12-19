@@ -6,7 +6,6 @@ f1_keywords:
 - SetupIMAPOtherServerSettings619135
 ms.author: v-mapenn
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
-ms.date: 
 ms.reviewer: 
 description: Learn how to find your IMAP server name is Outlook on the web (Outlook Web App).
 title: Learn more about setting up your IMAP server connection

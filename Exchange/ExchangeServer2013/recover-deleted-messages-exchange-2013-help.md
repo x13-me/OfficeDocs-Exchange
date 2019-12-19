@@ -4,7 +4,6 @@ TOCTitle: Recover deleted messages in a user's mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 mtps_version: v=EXCHG.150

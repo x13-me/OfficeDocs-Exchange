@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.SchemaUpdateRequired
 ms.author: v-mapenn
 ms.assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
-ms.date: 7/22/2015
 ms.reviewer: 
 title: The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]
 ms.collection: exchange-server

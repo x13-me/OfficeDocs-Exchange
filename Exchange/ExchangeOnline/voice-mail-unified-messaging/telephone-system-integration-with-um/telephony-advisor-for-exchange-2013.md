@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Telephony advisor for Exchange Online
 ms.collection: exchange-online

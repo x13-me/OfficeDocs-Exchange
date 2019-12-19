@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d3281a97-6fc6-42a3-855f-1af1184a644a
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or disable Play on Phone for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online

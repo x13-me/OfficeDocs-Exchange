@@ -4,7 +4,6 @@ TOCTitle: Use favorite public folders in Outlook Web App
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 mtps_version: v=EXCHG.150

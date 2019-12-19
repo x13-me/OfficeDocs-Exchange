@@ -4,7 +4,6 @@ TOCTitle: Enable a user to receive faxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: a0505001-aac0-41ef-824f-76e5e56d7675
 mtps_version: v=EXCHG.150

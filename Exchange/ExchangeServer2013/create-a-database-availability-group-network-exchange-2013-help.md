@@ -4,7 +4,6 @@ TOCTitle: Create a database availability group network
 ms:assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298051(v=EXCHG.150)
 ms:contentKeyID: 48385202
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

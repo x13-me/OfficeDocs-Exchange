@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
-ms.date: 7/5/2018
 ms.reviewer:
 title: Disconnected mailboxes
 ms.collection: exchange-server

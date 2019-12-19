@@ -4,7 +4,6 @@ TOCTitle: Configure the Managed Folder Assistant
 ms:assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123958(v=EXCHG.150)
 ms:contentKeyID: 49318583
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

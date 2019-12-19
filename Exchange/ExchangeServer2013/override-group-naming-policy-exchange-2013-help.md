@@ -4,7 +4,6 @@ TOCTitle: Override the distribution group naming policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 9eb23fc9-3f59-4d09-9077-85c89a051ee0
 mtps_version: v=EXCHG.150

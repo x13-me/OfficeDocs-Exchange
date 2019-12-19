@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b094e68e-c493-4576-a6b1-4c780e635405
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the number of previous voice mail PINs to recycle in Exchange Online
 ms.collection: exchange-online

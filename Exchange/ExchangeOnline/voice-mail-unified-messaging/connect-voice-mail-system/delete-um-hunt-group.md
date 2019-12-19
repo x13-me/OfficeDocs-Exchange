@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Delete a UM hunt group in Exchange Online
 ms.collection: exchange-online

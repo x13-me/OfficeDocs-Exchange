@@ -4,7 +4,6 @@ TOCTitle: PIN security procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 58e4b02e-dc99-46b8-a65d-d441bbfee8a9
 mtps_version: v=EXCHG.150

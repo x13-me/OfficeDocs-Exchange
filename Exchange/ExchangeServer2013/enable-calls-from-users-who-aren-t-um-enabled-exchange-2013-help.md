@@ -4,7 +4,6 @@ TOCTitle: Enable calls from users who aren't UM-enabled
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 mtps_version: v=EXCHG.150

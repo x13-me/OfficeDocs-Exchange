@@ -4,7 +4,6 @@ TOCTitle: Delete a UM IP gateway
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Control automatic mailbox distribution using database scopes
 ms:assetid: 8eaff177-2251-4c8b-8570-c91a77d0a6fc
 ms:mtpsurl: https://technet.microsoft.com/library/Ff628332(v=EXCHG.150)
 ms:contentKeyID: 49289347
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

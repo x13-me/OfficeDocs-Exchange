@@ -4,7 +4,6 @@ TOCTitle: Create a digital certificate request
 ms:assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125165(v=EXCHG.150)
 ms:contentKeyID: 51492809
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

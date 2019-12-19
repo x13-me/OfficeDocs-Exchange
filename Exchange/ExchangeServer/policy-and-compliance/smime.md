@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-ms.date: 7/9/2018
 ms.reviewer:
 title: S/MIME for message signing and encryption
 ms.collection: exchange-server

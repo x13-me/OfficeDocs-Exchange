@@ -4,7 +4,6 @@ TOCTitle: Understanding split permissions
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638106(v=EXCHG.150)
 ms:contentKeyID: 49289207
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

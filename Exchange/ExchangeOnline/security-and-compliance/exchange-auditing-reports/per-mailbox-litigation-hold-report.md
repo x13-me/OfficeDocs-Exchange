@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Run a per-mailbox litigation hold report
 ms.collection: 

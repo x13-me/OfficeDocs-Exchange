@@ -4,7 +4,6 @@ TOCTitle: Enable a customized business hours greeting
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a2272b7d-de88-4d3f-81e6-ad81f0ee6c5e
 mtps_version: v=EXCHG.150

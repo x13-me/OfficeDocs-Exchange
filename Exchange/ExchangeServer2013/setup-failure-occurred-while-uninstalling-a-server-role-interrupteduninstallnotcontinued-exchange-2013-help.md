@@ -4,7 +4,6 @@ TOCTitle: Setup failure occurred while uninstalling a server role_InterruptedUni
 ms:assetid: 187967b2-cb28-45d7-8858-2a083c1ebe58
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.interrupteduninstallnotcontinued(v=EXCHG.150)
 ms:contentKeyID: 46628824
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

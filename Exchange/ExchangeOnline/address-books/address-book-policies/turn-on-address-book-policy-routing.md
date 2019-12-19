@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5627b8ac-0551-4558-b3b6-25c402698426
-ms.date: 
 ms.reviewer: 
 title: Turn on address book policy routing in Exchange Online
 ms.collection: 

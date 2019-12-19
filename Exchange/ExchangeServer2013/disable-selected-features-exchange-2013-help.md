@@ -4,7 +4,6 @@ TOCTitle: Disable selected features for Outlook Voice Access users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 37421edf-af60-4ca9-9e8b-262b8b851607
 mtps_version: v=EXCHG.150

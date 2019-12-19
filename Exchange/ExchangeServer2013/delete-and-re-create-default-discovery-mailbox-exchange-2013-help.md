@@ -4,7 +4,6 @@ TOCTitle: Delete and re-create the default discovery mailbox in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 mtps_version: v=EXCHG.150

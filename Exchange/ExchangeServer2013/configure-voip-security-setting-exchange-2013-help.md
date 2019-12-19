@@ -4,7 +4,6 @@ TOCTitle: Configure the VoIP security setting
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1
 mtps_version: v=EXCHG.150

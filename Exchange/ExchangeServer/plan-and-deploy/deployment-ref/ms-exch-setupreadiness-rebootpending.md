@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.RebootPending
 ms.author: v-mapenn
 ms.assetid: d5c73280-4e54-473a-b328-9673af11e2c0
-ms.date: 8/2/2018
 ms.reviewer: 
 title: The computer needs to be restarted before Setup can continue [RebootPending]
 ms.collection: exchange-server

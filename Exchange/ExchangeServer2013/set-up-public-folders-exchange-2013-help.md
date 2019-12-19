@@ -4,7 +4,6 @@ TOCTitle: Set up public folders in a new organization
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 mtps_version: v=EXCHG.150

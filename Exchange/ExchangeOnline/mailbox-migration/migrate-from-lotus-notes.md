@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9a2909e3-c185-4217-94e3-806809147cb3
-ms.date: 8/15/2018
 ms.reviewer: 
 description: Use the tool MONTI to plan your migration from Lotus Notes to Office 365.
 title: Migrate from Lotus Notes to Office 365

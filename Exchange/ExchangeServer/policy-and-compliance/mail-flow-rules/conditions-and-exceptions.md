@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
-ms.date:
 ms.reviewer:
 title: Mail flow rule conditions and exceptions (predicates) in Exchange Server
 ms.collection: exchange-server

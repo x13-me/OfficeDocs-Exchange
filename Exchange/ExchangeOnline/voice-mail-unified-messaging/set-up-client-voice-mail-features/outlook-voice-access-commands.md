@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b
-ms.date: 3/9/2015
 ms.reviewer: 
 title: Outlook Voice Access commands in Exchange Online
 ms.collection: exchange-online

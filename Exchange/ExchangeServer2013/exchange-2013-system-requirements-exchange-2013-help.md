@@ -4,7 +4,6 @@ TOCTitle: Exchange 2013 system requirements
 ms:assetid: 1e80857c-b870-4a6d-a0f4-ff7b3a7be037
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996719(v=EXCHG.150)
 ms:contentKeyID: 48384881
-ms.date: 12/18/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

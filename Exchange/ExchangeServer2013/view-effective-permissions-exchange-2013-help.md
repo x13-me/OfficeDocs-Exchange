@@ -4,7 +4,6 @@ TOCTitle: View effective permissions
 ms:assetid: ae6cb7cf-f998-44a6-a69a-02ad736c8260
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638167(v=EXCHG.150)
 ms:contentKeyID: 49289376
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

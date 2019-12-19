@@ -4,7 +4,6 @@ TOCTitle: Configure protocol logging
 ms:assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124531(v=EXCHG.150)
 ms:contentKeyID: 49289407
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

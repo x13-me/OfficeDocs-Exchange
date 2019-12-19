@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 ms.author: v-mapenn
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
-ms.date: 4/26/2018
 ms.reviewer: 
 title: Manage a UM dial plan in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
-ms.date: 7/6/2018
 ms.reviewer:
 title: Procedures for accepted domains in Exchange Server
 ms.collection: exchange-server

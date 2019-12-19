@@ -4,7 +4,6 @@ TOCTitle: Installing Exchange on a domain controller is not recommended
 ms:assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.warninginstallexchangerolesondomaincontroller(v=EXCHG.150)
 ms:contentKeyID: 46628923
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

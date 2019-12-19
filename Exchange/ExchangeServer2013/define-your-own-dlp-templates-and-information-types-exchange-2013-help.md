@@ -4,7 +4,6 @@ TOCTitle: Define your own DLP templates and information types
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: f4622dba-3347-4758-b4a2-f01b043c908c
 mtps_version: v=EXCHG.150

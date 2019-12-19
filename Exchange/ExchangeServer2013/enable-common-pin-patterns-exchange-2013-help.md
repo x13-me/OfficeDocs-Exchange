@@ -4,7 +4,6 @@ TOCTitle: Enable common PIN patterns for voice mail
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 9940a8c2-f576-4089-ab96-8b318ad3da0f
 mtps_version: v=EXCHG.150

@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.DelegatedMailboxFirstInstall
 ms.author: v-mapenn
 ms.assetid: d451581b-6161-4e95-99f1-03dac8313fae
-ms.date: 8/2/2018
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedMailboxFirstInstall]
 ms.collection: exchange-server

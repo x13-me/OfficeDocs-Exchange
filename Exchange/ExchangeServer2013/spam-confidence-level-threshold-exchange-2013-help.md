@@ -4,7 +4,6 @@ TOCTitle: Spam Confidence Level Threshold
 ms:assetid: 0009b4af-be6d-41d2-98bc-b5487272c74a
 ms:mtpsurl: https://technet.microsoft.com/library/Aa995744(v=EXCHG.150)
 ms:contentKeyID: 49248673
-ms.date: 11/17/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

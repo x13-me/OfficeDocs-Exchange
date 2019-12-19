@@ -4,7 +4,6 @@ TOCTitle: Prepare Active Directory and domains
 ms:assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125224(v=EXCHG.150)
 ms:contentKeyID: 48385726
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

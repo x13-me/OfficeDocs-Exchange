@@ -4,7 +4,6 @@ TOCTitle: Create an offline address book virtual directory
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 2c70e21f-2b12-414a-9e8c-65634a767c72
 mtps_version: v=EXCHG.150

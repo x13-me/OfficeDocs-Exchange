@@ -4,7 +4,6 @@ TOCTitle: Manage and troubleshoot message approval
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 mtps_version: v=EXCHG.150

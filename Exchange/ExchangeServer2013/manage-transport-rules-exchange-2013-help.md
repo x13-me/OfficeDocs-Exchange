@@ -4,7 +4,6 @@ TOCTitle: Manage transport rules
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 mtps_version: v=EXCHG.150

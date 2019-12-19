@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c0768815-8578-4385-8d4c-7d1e40304cec
-ms.date: 5/10/2016
 ms.reviewer: 
 title: Enable or disable directory lookups in Exchange Online
 ms.collection: exchange-online

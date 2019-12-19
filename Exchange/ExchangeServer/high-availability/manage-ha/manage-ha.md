@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
-ms.date: 7/9/2018
 ms.reviewer:
 title: Managing high availability and site resilience
 ms.collection: exchange-server

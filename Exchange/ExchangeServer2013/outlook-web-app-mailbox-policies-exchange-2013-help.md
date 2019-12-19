@@ -4,7 +4,6 @@ TOCTitle: Outlook Web App mailbox policies
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 213b8b7a-1c29-49ee-8c98-d0364ddf4f9d
 mtps_version: v=EXCHG.150

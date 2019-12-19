@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
-ms.date: 7/26/2018
 ms.reviewer: 
 title: Access to Active Directory by Exchange servers
 ms.collection: exchange-server

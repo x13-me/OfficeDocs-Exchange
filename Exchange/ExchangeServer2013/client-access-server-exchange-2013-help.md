@@ -4,7 +4,6 @@ TOCTitle: Client Access server
 ms:assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298114(v=EXCHG.150)
 ms:contentKeyID: 48385301
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

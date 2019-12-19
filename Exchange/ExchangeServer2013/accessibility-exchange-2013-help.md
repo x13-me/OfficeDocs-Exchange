@@ -4,7 +4,6 @@ TOCTitle: Accessibility for people with disabilities
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.collection: Ent_O365_Hybrid
 ms.custom: httpsfix

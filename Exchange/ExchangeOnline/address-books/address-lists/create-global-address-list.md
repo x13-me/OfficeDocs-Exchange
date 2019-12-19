@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
-ms.date:
 ms.reviewer:
 title: Create a global address list in Exchange Online
 ms.collection:

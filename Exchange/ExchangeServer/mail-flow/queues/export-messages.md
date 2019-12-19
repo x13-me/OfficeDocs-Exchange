@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 688b342c-f380-4fe0-afce-7e38cf490627
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Export messages from queues
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Migrate from managed folders
 ms:assetid: 6796a79d-501e-4216-9370-77965bc5835d
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298032(v=EXCHG.150)
 ms:contentKeyID: 51439480
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

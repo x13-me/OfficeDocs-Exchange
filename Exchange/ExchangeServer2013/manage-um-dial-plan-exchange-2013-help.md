@@ -4,7 +4,6 @@ TOCTitle: Manage a UM dial plan
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 4/26/2018
 ms.reviewer:
 f1_keywords:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage'

@@ -4,7 +4,6 @@ TOCTitle: Prevent callers without a caller ID from leaving a voice message
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a
 mtps_version: v=EXCHG.150

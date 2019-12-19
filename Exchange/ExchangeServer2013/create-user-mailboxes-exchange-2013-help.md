@@ -4,7 +4,6 @@ TOCTitle: Create user mailboxes
 ms:assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms:mtpsurl: https://technet.microsoft.com/library/JJ991919(v=EXCHG.150)
 ms:contentKeyID: 51588093
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

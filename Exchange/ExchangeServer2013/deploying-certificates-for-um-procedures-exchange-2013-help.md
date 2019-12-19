@@ -4,7 +4,6 @@ TOCTitle: Deploying certificates for UM procedures
 ms:assetid: 21631c68-86ad-4f00-a1eb-dcc2758f6bf0
 ms:mtpsurl: https://technet.microsoft.com/library/Dn205139(v=EXCHG.150)
 ms:contentKeyID: 53908376
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

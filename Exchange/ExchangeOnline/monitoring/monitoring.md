@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8
-ms.date: 12/18/2017
 ms.reviewer: 
 title: Monitoring, reporting, and message tracing in Exchange Online
 ms.collection: 

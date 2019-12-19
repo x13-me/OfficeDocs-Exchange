@@ -4,7 +4,6 @@ TOCTitle: Restore public folders and public folder mailboxes from failed moves
 ms:assetid: 2ade83c9-5f9b-4945-bf32-48fa8185b515
 ms:mtpsurl: https://technet.microsoft.com/library/JJ983802(v=EXCHG.150)
 ms:contentKeyID: 51407261
-ms.date: 03/27/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

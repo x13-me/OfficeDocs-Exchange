@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMHuntGroupWizardForm.CreateUMHuntGroupWizardPage1
 ms.author: v-mapenn
 ms.assetid: 43ecb1ec-5f82-4516-9010-de8f954d3758
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create a UM hunt group in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Cmdlet extension agents
 ms:assetid: 0257790d-3988-46c3-8882-25ca11559e84
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335054(v=EXCHG.150)
 ms:contentKeyID: 50117637
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Message retry, resubmit, and expiration intervals
 ms.collection: exchange-server

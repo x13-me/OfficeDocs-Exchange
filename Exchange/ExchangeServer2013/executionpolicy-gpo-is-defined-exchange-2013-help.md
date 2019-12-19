@@ -4,7 +4,6 @@ TOCTitle: ExecutionPolicy GPO is defined
 ms:assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.powershellexecutionpolicycheckset(v=EXCHG.150)
 ms:contentKeyID: 61200286
-ms.date: 12/15/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

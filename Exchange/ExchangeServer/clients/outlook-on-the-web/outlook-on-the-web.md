@@ -7,7 +7,6 @@ author: mattpennathe3rd
 ms.prod: exchange-server-it-pro
 ms.assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 ms.collection: exchange-server
-ms.date: 6/7/2018
 ms.reviewer: 
 manager: serdars
 audience: ITPro

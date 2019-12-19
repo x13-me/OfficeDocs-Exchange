@@ -4,7 +4,6 @@ TOCTitle: Configure remote domain automatic replies
 ms:assetid: 3d88a1fb-4b62-419a-a50d-ffd868e229d0
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657720(v=EXCHG.150)
 ms:contentKeyID: 49300519
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

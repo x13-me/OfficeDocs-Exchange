@@ -3,7 +3,6 @@ title: 'Use transport rules to route email based on a list of words, phrases, or
 TOCTitle: Use transport rules to route email based on a list of words, phrases, or patterns
 ms.author: v-mapenn
 author: mattpennathe3rd
-ms.date: 
 ms.reviewer: 
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 mtps_version: v=EXCHG.150

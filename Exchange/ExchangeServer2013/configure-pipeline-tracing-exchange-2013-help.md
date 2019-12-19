@@ -4,7 +4,6 @@ TOCTitle: Configure pipeline tracing
 ms:assetid: 10293c83-2157-474e-840d-942e064a4672
 ms:mtpsurl: https://technet.microsoft.com/library/JJ916678(v=EXCHG.150)
 ms:contentKeyID: 50934211
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

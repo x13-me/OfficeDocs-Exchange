@@ -4,7 +4,6 @@ TOCTitle: Add a role to a user or USG
 ms:assetid: ae5608de-a141-4714-8876-bce7d2a22cb5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351056(v=EXCHG.150)
 ms:contentKeyID: 49289370
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

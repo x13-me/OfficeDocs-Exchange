@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
-ms.date: 7/9/2018
 ms.reviewer:
 title: Perform a server switchover
 ms.collection: exchange-server

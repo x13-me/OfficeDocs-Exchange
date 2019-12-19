@@ -6,7 +6,6 @@ f1_keywords:
 - O365E_ExchSetupMigrStepsCutover
 ms.author: v-mapenn
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
-ms.date: 8/15/2018
 ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Office 365.
 title: What you need to know about a cutover email migration to Office 365

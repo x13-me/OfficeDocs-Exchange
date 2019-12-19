@@ -4,7 +4,6 @@ TOCTitle: S/MIME for message signing and encryption
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 ms:mtpsurl:
 ms:contentKeyID:
-ms.date: 2/26/2019
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

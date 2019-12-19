@@ -4,7 +4,6 @@ TOCTitle: IIS 6 Compatibility components not installed_LonghornIIS6MgmtConsoleNo
 ms:assetid: 8358eafb-def7-4b8d-8fe1-623bc5a0e20e
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis6mgmtconsolenotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628997
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

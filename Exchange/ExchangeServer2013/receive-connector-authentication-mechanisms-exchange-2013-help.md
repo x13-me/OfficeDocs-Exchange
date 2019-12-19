@@ -4,7 +4,6 @@ TOCTitle: Receive connector authentication mechanisms
 ms:assetid: 926424e1-83e3-4c4b-b2dd-bf814d81e877
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657472(v=EXCHG.150)
 ms:contentKeyID: 49289352
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

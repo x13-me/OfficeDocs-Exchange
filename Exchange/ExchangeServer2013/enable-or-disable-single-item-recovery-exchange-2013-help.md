@@ -4,7 +4,6 @@ TOCTitle: Enable or disable single item recovery for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 mtps_version: v=EXCHG.150

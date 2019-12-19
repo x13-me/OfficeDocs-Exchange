@@ -4,7 +4,6 @@ TOCTitle: Configure Exchange 2013 for shared permissions
 ms:assetid: 7d119977-b420-4b66-acf0-0a978b188cdd
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638146(v=EXCHG.150)
 ms:contentKeyID: 49289319
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

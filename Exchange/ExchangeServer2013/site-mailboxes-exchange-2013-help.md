@@ -4,7 +4,6 @@ TOCTitle: Site mailboxes
 ms:assetid: 2c4393f4-d274-4e6c-bd09-9577e68c5a33
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150499(v=EXCHG.150)
 ms:contentKeyID: 47559965
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Prevent users in the same dial plan from receiving faxes in Exchange Online
 ms.collection: exchange-online

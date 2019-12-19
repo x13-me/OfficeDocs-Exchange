@@ -4,7 +4,6 @@ TOCTitle: Working with command output
 ms:assetid: 8320e1a5-d3f5-4615-878d-b23e2aaa6b1e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123533(v=EXCHG.150)
 ms:contentKeyID: 49289327
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

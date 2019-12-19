@@ -4,7 +4,6 @@ TOCTitle: The Simple Mail Transport Protocol is currently installed_SMTPSvcInsta
 ms:assetid: f786a93c-876d-4f4e-adb6-4dfea3d820d1
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.smtpsvcinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629208
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

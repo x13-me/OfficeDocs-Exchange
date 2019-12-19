@@ -9,7 +9,6 @@ monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
 audience: ITPro
-ms.date:
 ms.reviewer:
 ms.prod: exchange-server-it-pro
 manager: serdars

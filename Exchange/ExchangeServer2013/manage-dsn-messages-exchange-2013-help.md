@@ -4,7 +4,6 @@ TOCTitle: Manage DSN messages
 ms:assetid: 23c9d844-6fc7-44c9-a308-587338281611
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996803(v=EXCHG.150)
 ms:contentKeyID: 49315373
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

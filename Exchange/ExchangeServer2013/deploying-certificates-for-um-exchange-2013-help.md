@@ -4,7 +4,6 @@ TOCTitle: Deploying certificates for UM
 ms:assetid: 95658f6f-eac2-4674-90e7-f2d3f25c5242
 ms:mtpsurl: https://technet.microsoft.com/library/Ee681661(v=EXCHG.150)
 ms:contentKeyID: 51439481
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

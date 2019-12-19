@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Outlook.Proxy Health Set
 ms:assetid: a85585c9-433e-4aa4-b016-28782a18144e
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.outlook.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720847
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

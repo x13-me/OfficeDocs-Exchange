@@ -4,7 +4,6 @@ TOCTitle: Disable Voice Mail Preview for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 362fed13-3a9c-4111-bfa4-8c45ab6a3a01
 mtps_version: v=EXCHG.150

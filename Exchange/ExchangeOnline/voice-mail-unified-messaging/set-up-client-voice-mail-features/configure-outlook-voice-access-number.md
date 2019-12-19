@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Configure an Outlook Voice Access number in Exchange Online
 ms.collection: exchange-online

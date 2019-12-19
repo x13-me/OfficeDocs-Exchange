@@ -4,7 +4,6 @@ TOCTitle: Manage remote domains
 ms:assetid: 41a86907-bd9e-40d0-94d3-6deb95a0bffa
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997639(v=EXCHG.150)
 ms:contentKeyID: 51438504
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

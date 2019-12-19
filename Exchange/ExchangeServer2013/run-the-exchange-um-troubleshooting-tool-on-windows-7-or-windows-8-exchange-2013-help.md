@@ -4,7 +4,6 @@ TOCTitle: Run the Exchange UM Troubleshooting Tool on Windows 7 or Windows 8
 ms:assetid: 98d6869d-ee4a-4088-849d-ef75b0f5d932
 ms:mtpsurl: https://technet.microsoft.com/library/Ff851872(v=EXCHG.150)
 ms:contentKeyID: 55129212
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

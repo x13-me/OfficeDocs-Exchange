@@ -4,7 +4,6 @@ TOCTitle: Assign an address book policy to mail users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 mtps_version: v=EXCHG.150

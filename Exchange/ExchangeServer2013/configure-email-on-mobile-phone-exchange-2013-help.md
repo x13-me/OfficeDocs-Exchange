@@ -4,7 +4,6 @@ TOCTitle: Configure mobile phones to access email
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 mtps_version: v=EXCHG.150

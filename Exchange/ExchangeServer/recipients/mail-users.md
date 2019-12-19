@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
-ms.date: 7/5/2018
 ms.reviewer:
 title: Manage mail users
 ms.collection: exchange-server

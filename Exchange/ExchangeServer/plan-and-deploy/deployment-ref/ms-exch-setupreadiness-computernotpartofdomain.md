@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.ComputerNotPartofDomain
 ms.author: v-mapenn
 ms.assetid: feb08845-6d44-4760-9932-6eca22f35eec
-ms.date: 8/2/2018
 ms.reviewer: 
 title: The local computer isn't joined to an Active Directory domain [ComputerNotPartofDomain]
 ms.collection: exchange-server

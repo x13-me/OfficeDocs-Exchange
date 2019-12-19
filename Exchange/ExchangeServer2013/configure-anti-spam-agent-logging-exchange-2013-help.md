@@ -4,7 +4,6 @@ TOCTitle: Configure anti-spam agent logging
 ms:assetid: df157ca3-ad8e-4302-acbc-5fbb8570c21d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb691337(v=EXCHG.150)
 ms:contentKeyID: 49289436
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

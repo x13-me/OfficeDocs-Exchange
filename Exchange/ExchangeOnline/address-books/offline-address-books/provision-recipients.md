@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
-ms.date: 
 ms.reviewer: 
 title: Provision recipients for offline address book downloads in Exchange Online
 ms.collection: exchange-online

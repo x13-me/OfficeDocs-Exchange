@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.GlobalUpdateRequired
 ms.author: v-mapenn
 ms.assetid: 0530f3c6-6fa6-456b-a33a-f3d2f7eaa2ef
-ms.date: 7/22/2015
 ms.reviewer: 
 title: Global updates required [GlobalUpdateRequired]
 ms.collection: exchange-server

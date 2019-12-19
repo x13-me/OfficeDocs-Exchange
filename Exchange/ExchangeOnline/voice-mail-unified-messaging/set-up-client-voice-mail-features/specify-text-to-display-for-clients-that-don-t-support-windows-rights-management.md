@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Specify the text to display for email clients that don't support Windows Rights Management in Exchange Online
 ms.collection: exchange-online

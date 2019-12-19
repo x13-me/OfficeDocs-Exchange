@@ -4,7 +4,6 @@ TOCTitle: Specify the administrators and users who can install and manage add-in
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 mtps_version: v=EXCHG.150

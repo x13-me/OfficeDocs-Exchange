@@ -4,7 +4,6 @@ TOCTitle: Installation of the first Exchange server in the organization can't be
 ms:assetid: 286b82ee-bddf-493c-b6ea-21aced6dbbad
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegatedunifiedmessagingfirstinstall(v=EXCHG.150)
 ms:contentKeyID: 46628839
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

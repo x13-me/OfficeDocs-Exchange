@@ -4,7 +4,6 @@ TOCTitle: Configure Exchange mail routing settings in Active Directory
 ms:assetid: d01f8545-c201-4a96-be39-ed4c7008afcf
 ms:mtpsurl: https://technet.microsoft.com/library/JJ674705(v=EXCHG.150)
 ms:contentKeyID: 49351085
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

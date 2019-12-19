@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
-ms.date: 7/5/2018
 ms.reviewer:
 title: POP3 and IMAP4 in Exchange Server
 ms.collection: exchange-server

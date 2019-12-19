@@ -4,7 +4,6 @@ TOCTitle: Create a public folder
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 f1_keywords:
 - 'Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage'

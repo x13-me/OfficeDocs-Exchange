@@ -4,7 +4,6 @@ TOCTitle: Insufficient permissions to remove all server roles_CannotUninstallDel
 ms:assetid: 214ae6f3-15e7-4337-99e8-40f9547c8e0c
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.cannotuninstalldelegatedserver(v=EXCHG.150)
 ms:contentKeyID: 46628832
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

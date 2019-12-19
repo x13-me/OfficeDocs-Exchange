@@ -4,7 +4,6 @@ TOCTitle: SMTP Addressing Format Not Supported_SMTPAddressLiteral
 ms:assetid: b8b55917-d81f-4c0a-ad65-7bb10ac58df8
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.smtpaddressliteral(v=EXCHG.150)
 ms:contentKeyID: 46629094
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

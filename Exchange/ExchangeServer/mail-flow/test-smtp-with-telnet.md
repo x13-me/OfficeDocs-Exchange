@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Use Telnet to test SMTP communication on Exchange servers
 ms.collection: exchange-server

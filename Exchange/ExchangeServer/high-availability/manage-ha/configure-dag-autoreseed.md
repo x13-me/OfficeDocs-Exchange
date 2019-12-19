@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
-ms.date: 7/9/2018
 ms.reviewer:
 title: Configure AutoReseed for a database availability group
 ms.collection: exchange-server

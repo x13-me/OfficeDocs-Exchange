@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting POP.Protocol Health Set
 ms:assetid: 4a205a83-153a-4e93-a7af-43d2ab815809
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720774
-ms.date: 10/08/2015
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

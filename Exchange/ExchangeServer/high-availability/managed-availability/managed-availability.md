@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
-ms.date: 7/9/2018
 ms.reviewer:
 title: Managed availability
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting EventAssistants Health Set
 ms:assetid: fdae7c16-2474-4fcc-9a4b-8fa1e15324c1
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.eventassistants(v=EXCHG.150)
 ms:contentKeyID: 49720928
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

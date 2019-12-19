@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the recording idle time-out value in Exchange Online
 ms.collection: exchange-online

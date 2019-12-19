@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage
 ms.author: v-mapenn
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Manage mail users
 ms.collection: 

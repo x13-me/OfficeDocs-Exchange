@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9f0f4a3d-de9a-4d8a-9172-2edf4288d766
-ms.date: 7/6/2018
 ms.reviewer:
 title: Use Compliance Search to search all mailboxes in Exchange Server
 ms.collection: exchange-server

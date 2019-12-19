@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure a fully qualified domain name in Exchange Online
 ms.collection: exchange-online

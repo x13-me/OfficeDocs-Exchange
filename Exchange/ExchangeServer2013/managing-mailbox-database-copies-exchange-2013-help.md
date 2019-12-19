@@ -4,7 +4,6 @@ TOCTitle: Managing mailbox database copies
 ms:assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335158(v=EXCHG.150)
 ms:contentKeyID: 48384912
-ms.date: 08/26/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

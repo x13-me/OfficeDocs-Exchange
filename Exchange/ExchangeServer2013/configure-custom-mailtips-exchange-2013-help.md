@@ -4,7 +4,6 @@ TOCTitle: Configure custom MailTips for recipients
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 mtps_version: v=EXCHG.150

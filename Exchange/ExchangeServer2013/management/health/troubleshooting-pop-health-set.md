@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting POP Health Set
 ms:assetid: 6114e9fe-d037-4cb9-a643-933eb5fabc45
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop(v=EXCHG.150)
 ms:contentKeyID: 49720812
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

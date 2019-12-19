@@ -4,7 +4,6 @@ TOCTitle: Add a role entry to a role
 ms:assetid: 30cd37bc-b3e8-4f39-a8ba-a4c20b1b27b7
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335180(v=EXCHG.150)
 ms:contentKeyID: 49289216
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

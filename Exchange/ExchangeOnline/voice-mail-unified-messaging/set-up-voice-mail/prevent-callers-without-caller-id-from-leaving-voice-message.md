@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Prevent callers without a caller ID from leaving a voice message in Exchange Online
 ms.collection: exchange-online

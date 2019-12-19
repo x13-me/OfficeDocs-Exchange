@@ -4,7 +4,6 @@ TOCTitle: Configure Voice Mail Preview partner services for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 mtps_version: v=EXCHG.150

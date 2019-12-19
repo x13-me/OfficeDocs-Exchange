@@ -4,7 +4,6 @@ TOCTitle: Run a per-mailbox litigation hold report
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 mtps_version: v=EXCHG.150

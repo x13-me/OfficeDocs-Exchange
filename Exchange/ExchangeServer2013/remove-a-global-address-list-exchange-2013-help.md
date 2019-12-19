@@ -4,7 +4,6 @@ TOCTitle: Remove a global address list
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
 mtps_version: v=EXCHG.150

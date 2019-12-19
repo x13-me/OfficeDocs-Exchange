@@ -8,7 +8,6 @@ f1_keywords:
 - O365E_MigrationsIMAPGmailAppPass
 ms.author: v-mapenn
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
-ms.date: 8/15/2018
 ms.reviewer: 
 description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 title: Prepare your Gmail or G Suite account for connecting to Outlook and Office 365

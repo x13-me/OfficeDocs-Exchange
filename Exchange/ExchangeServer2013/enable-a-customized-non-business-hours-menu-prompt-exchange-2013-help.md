@@ -4,7 +4,6 @@ TOCTitle: Enable a customized non-business hours menu prompt
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 094c50b2-072b-4929-aaf8-f7db5b19e9b6
 mtps_version: v=EXCHG.150

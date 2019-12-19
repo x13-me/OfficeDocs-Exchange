@@ -4,7 +4,6 @@ TOCTitle: Compliance Management
 ms:assetid: b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657489(v=EXCHG.150)
 ms:contentKeyID: 49289388
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

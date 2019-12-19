@@ -4,7 +4,6 @@ TOCTitle: Create a secure Receive connector to receive email from a partner
 ms:assetid: 06aa692c-7940-4a14-a722-058c47440f85
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673037(v=EXCHG.150)
 ms:contentKeyID: 49289153
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

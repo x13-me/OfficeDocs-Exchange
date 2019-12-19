@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
-ms.date:
 ms.reviewer:
 title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery
 ms.collection:

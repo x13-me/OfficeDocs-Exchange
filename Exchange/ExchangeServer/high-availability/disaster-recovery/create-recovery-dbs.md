@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
-ms.date: 7/9/2018
 ms.reviewer:
 title: Create a recovery database
 ms.collection:

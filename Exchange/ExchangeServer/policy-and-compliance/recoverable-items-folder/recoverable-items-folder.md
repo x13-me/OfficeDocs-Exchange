@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-ms.date: 7/9/2018
 ms.reviewer:
 title: Recoverable Items folder in Exchange Server
 ms.collection: exchange-server

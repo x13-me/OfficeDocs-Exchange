@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting ECP.Proxy Health Set
 ms:assetid: f2289f81-56cb-40b5-9108-8782976cccc8
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ecp.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720923
-ms.date: 10/08/2015
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

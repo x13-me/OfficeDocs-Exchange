@@ -4,7 +4,6 @@ TOCTitle: Route mail between Active Directory sites
 ms:assetid: 86b423e3-7bec-4430-9a5a-4f84ce9d82ea
 ms:mtpsurl: https://technet.microsoft.com/library/JJ916681(v=EXCHG.150)
 ms:contentKeyID: 50934220
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

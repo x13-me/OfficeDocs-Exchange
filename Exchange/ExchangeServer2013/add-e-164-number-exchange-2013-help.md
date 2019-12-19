@@ -4,7 +4,6 @@ TOCTitle: Add an E.164 number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Set the PIN lifetime for voice mail
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d
 mtps_version: v=EXCHG.150

@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
 ms.author: v-mapenn
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
-ms.date: 7/6/2018
 ms.reviewer:
 title: Procedures for email address policies in Exchange Server
 ms.collection: exchange-server

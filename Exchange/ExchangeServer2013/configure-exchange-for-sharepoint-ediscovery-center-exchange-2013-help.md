@@ -4,7 +4,6 @@ TOCTitle: Configure Exchange for SharePoint eDiscovery Center
 ms:assetid: 795c1a3b-295c-4ee5-ade9-52cf3fda3f19
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218665(v=EXCHG.150)
 ms:contentKeyID: 48385255
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

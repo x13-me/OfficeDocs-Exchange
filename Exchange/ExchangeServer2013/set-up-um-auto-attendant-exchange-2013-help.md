@@ -4,7 +4,6 @@ TOCTitle: Set up a UM auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 3/9/2015
 ms.reviewer: 
 ms.assetid: 0a3492f8-8aba-4904-96fd-6e023175012a
 mtps_version: v=EXCHG.150

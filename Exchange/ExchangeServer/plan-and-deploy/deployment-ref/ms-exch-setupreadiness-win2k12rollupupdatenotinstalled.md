@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.Win2k12RollupUpdateNotInstalled
 ms.author: v-mapenn
 ms.assetid: 8412a371-b5b1-42d9-9e75-ddef3a98dd26
-ms.date: 12/20/2016
 ms.reviewer: 
 title: A Windows Server 2012 update rollup hasn't been installed [Win2k12RollupUpdateNotInstalled]
 ms.collection: exchange-server

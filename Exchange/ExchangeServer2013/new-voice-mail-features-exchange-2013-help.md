@@ -4,7 +4,6 @@ TOCTitle: New voice mail features
 ms:assetid: 89faaa97-3485-4704-a56c-d13632f01e2a
 ms:mtpsurl: https://technet.microsoft.com/library/JJ649002(v=EXCHG.150)
 ms:contentKeyID: 49317361
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

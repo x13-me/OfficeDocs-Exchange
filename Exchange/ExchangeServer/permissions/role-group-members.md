@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
-ms.date: 7/5/2018
 ms.reviewer:
 title: Manage role group members
 ms.collection: exchange-server

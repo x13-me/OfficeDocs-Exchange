@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
-ms.date:
 title: Integrating sensitive information rules with mail flow rules in Exchange Online
 ms.reviewer: 
 ms.collection:

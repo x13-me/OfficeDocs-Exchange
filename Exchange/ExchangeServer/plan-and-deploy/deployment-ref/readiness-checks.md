@@ -5,7 +5,6 @@ ms.topic: hub-page
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3b232ad3-01b1-4cdb-88c9-006bdc660f72
-ms.date: 7/31/2018
 ms.reviewer: 
 title: Exchange Server readiness checks
 ms.collection: exchange-server

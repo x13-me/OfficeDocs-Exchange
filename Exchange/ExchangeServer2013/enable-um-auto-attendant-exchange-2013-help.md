@@ -4,7 +4,6 @@ TOCTitle: Enable a UM auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 16667a8f-50ab-4bb8-9a05-0389511974b1
 mtps_version: v=EXCHG.150

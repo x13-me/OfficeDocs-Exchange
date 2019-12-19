@@ -4,7 +4,6 @@ TOCTitle: Create a Transport Protection Rule
 ms:assetid: 3a857185-ee16-4ee7-9e57-8be95f7e753a
 ms:mtpsurl: https://technet.microsoft.com/library/Dd302432(v=EXCHG.150)
 ms:contentKeyID: 49319907
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

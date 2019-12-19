@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage
 ms.author: v-mapenn
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure offline address book distribution properties
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Disable a UM IP gateway
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: fe3a8797-1230-49cb-a839-ccec238266b6
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting ActiveSync.Proxy Health Set
 ms:assetid: f10acbb8-4d2e-43fb-b3a5-6dbb7a529e04
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.activesync.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720912
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

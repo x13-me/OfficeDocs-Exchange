@@ -4,7 +4,6 @@ TOCTitle: Deploying voice mail and UM
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673519(v=EXCHG.150)
 ms:contentKeyID: 49315394
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

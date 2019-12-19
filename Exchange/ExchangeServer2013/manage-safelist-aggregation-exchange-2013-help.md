@@ -4,7 +4,6 @@ TOCTitle: Manage safelist aggregation
 ms:assetid: 5ac17168-f411-4cb7-ae98-ebefb865b210
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998280(v=EXCHG.150)
 ms:contentKeyID: 49248682
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

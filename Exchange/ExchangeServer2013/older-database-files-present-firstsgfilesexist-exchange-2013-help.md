@@ -4,7 +4,6 @@ TOCTitle: Older database files present_FirstSGFilesExist
 ms:assetid: 907faeb8-1c6d-49fc-95a1-417f415a9d79
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.firstsgfilesexist(v=EXCHG.150)
 ms:contentKeyID: 46629029
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

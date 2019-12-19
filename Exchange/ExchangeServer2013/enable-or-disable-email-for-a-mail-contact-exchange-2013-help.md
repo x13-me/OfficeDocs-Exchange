@@ -4,7 +4,6 @@ TOCTitle: Enable or disable email for a mail contact
 ms:assetid: ca47441f-1aa4-4958-aba5-18d51e59837e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124552(v=EXCHG.150)
 ms:contentKeyID: 50383001
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

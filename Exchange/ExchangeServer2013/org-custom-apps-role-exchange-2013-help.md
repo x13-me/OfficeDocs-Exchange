@@ -4,7 +4,6 @@ TOCTitle: Org Custom Apps role
 ms:assetid: ab2aac13-f783-43e6-a369-75cce1d4943f
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657482(v=EXCHG.150)
 ms:contentKeyID: 49289371
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

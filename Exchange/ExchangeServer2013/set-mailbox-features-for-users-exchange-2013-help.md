@@ -4,7 +4,6 @@ TOCTitle: Set mailbox features for Outlook Voice Access users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 10960bf0-65cf-4d0b-bae5-d203c53662db
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Organization-wide disclaimers, signatures, footers, or headers
 ms:assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms:mtpsurl: https://technet.microsoft.com/library/Dn600437(v=EXCHG.150)
 ms:contentKeyID: 61071241
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

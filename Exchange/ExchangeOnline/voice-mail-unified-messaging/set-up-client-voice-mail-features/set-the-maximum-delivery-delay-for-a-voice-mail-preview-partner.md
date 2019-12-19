@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c9a07f6d-6f7f-4036-9a4a-d668d21e2c76
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the maximum delivery delay for a Voice Mail Preview partner in Exchange Online
 ms.collection: exchange-online

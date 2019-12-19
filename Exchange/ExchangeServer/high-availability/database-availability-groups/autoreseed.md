@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
-ms.date: 7/9/2018
 ms.reviewer:
 title: AutoReseed
 ms.collection: exchange-server

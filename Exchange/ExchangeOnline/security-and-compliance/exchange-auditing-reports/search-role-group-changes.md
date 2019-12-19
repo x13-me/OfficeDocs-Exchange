@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
-ms.date: 
 ms.reviewer: 
 title: Search the role group changes or administrator audit logs in Exchange Online
 ms.collection: 

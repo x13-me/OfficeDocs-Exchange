@@ -4,7 +4,6 @@ TOCTitle: The schema master is not running Windows Server 2003 Service Pack 1 or
 ms:assetid: 5edbe0b8-7610-4a52-aaaa-38c6a99e7e53
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.domaincontrollerisoutofsite(v=EXCHG.150)
 ms:contentKeyID: 46628929
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

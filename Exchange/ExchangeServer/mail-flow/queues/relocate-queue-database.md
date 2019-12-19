@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Change the location of the queue database
 ms.collection: exchange-server

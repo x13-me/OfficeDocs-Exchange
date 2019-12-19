@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the group of users that can be contacted in Exchange Online
 ms.collection: exchange-online

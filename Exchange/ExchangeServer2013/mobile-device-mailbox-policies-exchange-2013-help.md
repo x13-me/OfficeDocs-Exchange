@@ -4,7 +4,6 @@ TOCTitle: Mobile device mailbox policies
 ms:assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123783(v=EXCHG.150)
 ms:contentKeyID: 49318582
-ms.date: 06/16/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

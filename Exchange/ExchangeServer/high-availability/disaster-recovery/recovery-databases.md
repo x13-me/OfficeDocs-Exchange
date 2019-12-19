@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
-ms.date: 7/9/2018
 ms.reviewer:
 title: Recovery databases
 ms.collection: exchange-server

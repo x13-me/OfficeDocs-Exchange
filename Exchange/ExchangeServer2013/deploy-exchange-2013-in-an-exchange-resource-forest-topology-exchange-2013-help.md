@@ -4,7 +4,6 @@ TOCTitle: Deploy Exchange 2013 in an Exchange resource forest topology
 ms:assetid: 537a7b2b-d002-40a6-84ae-fd02635f9e23
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998031(v=EXCHG.150)
 ms:contentKeyID: 50406263
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

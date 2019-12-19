@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
-ms.date: 7/9/2018
 ms.reviewer:
 title: Monitor database availability groups
 ms.collection: exchange-server

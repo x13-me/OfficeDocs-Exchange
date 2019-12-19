@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting MailboxSpace Health Set
 ms:assetid: 59e3c19a-0d92-4a04-bd38-0060c2db2639
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailboxstorage(v=EXCHG.150)
 ms:contentKeyID: 49720787
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

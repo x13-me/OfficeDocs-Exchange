@@ -4,7 +4,6 @@ TOCTitle: Configure remote domain out of office replies
 ms:assetid: 0c1e56be-7a29-4294-9762-600f9f788741
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657713(v=EXCHG.150)
 ms:contentKeyID: 49300434
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

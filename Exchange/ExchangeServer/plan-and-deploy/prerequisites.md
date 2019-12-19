@@ -6,7 +6,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid:
-ms.date:
 ms.reviewer: 
 title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
 ms.collection:

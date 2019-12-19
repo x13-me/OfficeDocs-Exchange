@@ -4,7 +4,6 @@ TOCTitle: Allow voice mail users to forward calls
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 1f8e0a53-3d9d-4f8c-9be3-9f1e2a4347a3
 mtps_version: v=EXCHG.150

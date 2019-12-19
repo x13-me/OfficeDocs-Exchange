@@ -4,7 +4,6 @@ TOCTitle: OfficeExtensionApplication role
 ms:assetid: a78f69b8-2403-40a0-8c86-7e0fb7b10d29
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657479(v=EXCHG.150)
 ms:contentKeyID: 49289367
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

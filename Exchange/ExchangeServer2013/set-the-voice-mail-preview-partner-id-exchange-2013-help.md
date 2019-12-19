@@ -4,7 +4,6 @@ TOCTitle: Set the Voice Mail Preview partner ID
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: ab98c320-9952-47a7-b141-ddfc2c0ad419
 mtps_version: v=EXCHG.150

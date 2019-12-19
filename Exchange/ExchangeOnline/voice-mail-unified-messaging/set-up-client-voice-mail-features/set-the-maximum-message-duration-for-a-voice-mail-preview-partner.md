@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 18f928ff-f4cc-4eed-a466-de13388780b3
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set the maximum message duration for a Voice Mail Preview partner in Exchange Online
 ms.collection: exchange-online

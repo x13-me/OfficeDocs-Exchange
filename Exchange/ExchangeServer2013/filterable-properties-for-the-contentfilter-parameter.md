@@ -4,7 +4,6 @@ TOCTitle: Filterable properties for the -ContentFilter parameter
 ms:assetid: cf504a59-1938-489c-bb48-b27b2ac3234e
 ms:mtpsurl: https://technet.microsoft.com/library/Ff601762(v=EXCHG.150)
 ms:contentKeyID: 49895015
-ms.date: 02/22/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn
@@ -293,7 +292,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
-ContentFilter {Sender -eq 'tony'}
+ContentFilter "Sender -eq 'tony'"
 ```
 
 </td>

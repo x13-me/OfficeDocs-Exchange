@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a219732-87e7-4f11-96bc-8edd2cc91926
-ms.date: 
 ms.reviewer: 
 title: Permissions in Exchange Online
 ms.collection: 

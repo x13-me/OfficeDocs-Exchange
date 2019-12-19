@@ -4,7 +4,6 @@ TOCTitle: Allow users in the same dial plan to receive faxes
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: cb245028-0b86-4171-879e-934dd35fa626
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-ms.date:
 ms.reviewer: 
 title: Create a theme for Outlook on the web in Exchange Server
 ms.collection: exchange-server
