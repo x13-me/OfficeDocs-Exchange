@@ -5,7 +5,6 @@ ms.topic: hub-page
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
-ms.date: 3/27/2017
 ms.reviewer:
 title: Public folder procedures
 ms.collection: exchange-server

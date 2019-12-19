@@ -4,7 +4,6 @@ TOCTitle: Install a UM language pack
 ms:assetid: ed14ffa5-c9b0-4367-b5da-564024b360ff
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876951(v=EXCHG.150)
 ms:contentKeyID: 49315543
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

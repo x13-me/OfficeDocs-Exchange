@@ -4,7 +4,6 @@ TOCTitle: Configure offline address book distribution properties
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 f1_keywords:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage'

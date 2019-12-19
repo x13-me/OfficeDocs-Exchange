@@ -4,7 +4,6 @@ TOCTitle: Start and stop the POP3 services
 ms:assetid: 3d543921-d8c9-4d4b-99a1-82446b585ceb
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997475(v=EXCHG.150)
 ms:contentKeyID: 49300479
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

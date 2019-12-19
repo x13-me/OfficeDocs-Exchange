@@ -4,7 +4,6 @@ TOCTitle: Enable or disable automatic speech recognition for an Outlook Voice Ac
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 58f41016-e725-432b-953e-415d61e0664c
 mtps_version: v=EXCHG.150

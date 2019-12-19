@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f191e052-658d-4c74-bfe7-bcb1d525e4e3
-ms.date: 
 ms.reviewer: 
 title: Remote domains in Exchange Online
 ms.collection: 

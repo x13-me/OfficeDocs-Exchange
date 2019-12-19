@@ -4,7 +4,6 @@ TOCTitle: Policy templates from Microsoft partners
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 0f95336e-b3ef-4041-9604-adf7b0b335fe
 mtps_version: v=EXCHG.150

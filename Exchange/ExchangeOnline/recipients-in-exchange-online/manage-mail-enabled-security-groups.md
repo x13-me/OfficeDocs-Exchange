@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Manage mail-enabled security groups
 ms.collection: 

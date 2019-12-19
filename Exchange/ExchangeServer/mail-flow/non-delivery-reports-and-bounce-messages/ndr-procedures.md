@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-ms.date:
 ms.reviewer:
 title: Procedures for DSNs and NDRs in Exchange Server
 ms.collection: exchange-server

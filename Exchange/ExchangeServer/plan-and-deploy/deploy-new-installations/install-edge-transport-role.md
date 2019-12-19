@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
-ms.date: 7/24/2018
 ms.reviewer: 
 title: Install Exchange Edge Transport servers using the Setup wizard
 ms.collection:

@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
-ms.date: 
 ms.reviewer: 
 title: Hierarchical address books in Exchange Online
 ms.collection: 

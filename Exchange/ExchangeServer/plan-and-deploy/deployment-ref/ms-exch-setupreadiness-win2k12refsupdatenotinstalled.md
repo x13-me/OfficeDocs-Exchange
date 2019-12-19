@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.Win2k12RefsUpdateNotInstalled
 ms.author: v-mapenn
 ms.assetid: 50b23c15-53b8-46ee-a334-94534bd76e2c
-ms.date: 12/20/2016
 ms.reviewer: 
 title: Running 'dir' on an ReFS-formatted disk could cause the computer to freeze [Win2k12RefsUpdateNotInstalled]
 ms.collection: exchange-server

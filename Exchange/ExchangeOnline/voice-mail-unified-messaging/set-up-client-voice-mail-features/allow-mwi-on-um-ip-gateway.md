@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5667e37c-48c6-4659-9dc9-94b1dd8ba232
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Allow Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online
 ms.collection: exchange-online

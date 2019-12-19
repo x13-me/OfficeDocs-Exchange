@@ -4,7 +4,6 @@ TOCTitle: Understanding management role scope filters
 ms:assetid: 6acc2922-ee9c-41f1-8a0f-10a541e8c273
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298043(v=EXCHG.150)
 ms:contentKeyID: 49289288
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

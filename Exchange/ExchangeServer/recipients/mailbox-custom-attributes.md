@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-ms.date: 4/19/2018
 ms.reviewer:
 title: Custom attributes
 ms.collection: exchange-server

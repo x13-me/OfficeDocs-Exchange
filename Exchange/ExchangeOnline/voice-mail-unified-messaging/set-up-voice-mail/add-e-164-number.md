@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Add an E.164 number in Exchange Online
 ms.collection: exchange-online

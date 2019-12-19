@@ -4,7 +4,6 @@ TOCTitle: Enable Message Waiting Indicator (MWI) for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
 mtps_version: v=EXCHG.150

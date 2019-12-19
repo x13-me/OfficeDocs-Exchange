@@ -4,7 +4,6 @@ TOCTitle: Mail routing
 ms:assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998825(v=EXCHG.150)
 ms:contentKeyID: 48385209
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
-ms.date: 8/15/2018
 ms.reviewer: 
 description: Learn how to prepare your hotmail.com or outlook.com account for migration to Office 365
 title: Migrating your Outlook.com account to Office 365

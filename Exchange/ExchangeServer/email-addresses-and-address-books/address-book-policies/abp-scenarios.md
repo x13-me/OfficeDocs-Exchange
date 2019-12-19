@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
-ms.date:
 ms.reviewer:
 title: Scenario Deploying address book policies in Exchange Server
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Datacenter Activation Coordination mode
 ms:assetid: 57e4bf22-eeae-42a5-beb3-d68d06489592
 ms:mtpsurl: https://technet.microsoft.com/library/Dd979790(v=EXCHG.150)
 ms:contentKeyID: 48385111
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

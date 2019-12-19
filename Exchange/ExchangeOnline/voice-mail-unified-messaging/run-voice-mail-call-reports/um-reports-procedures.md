@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5b58a2ed-3780-4a0e-87f6-e19e6e49640c
-ms.date: 11/17/2014
 ms.reviewer: 
 title: UM reports procedures in Exchange Online
 ms.collection: exchange-online

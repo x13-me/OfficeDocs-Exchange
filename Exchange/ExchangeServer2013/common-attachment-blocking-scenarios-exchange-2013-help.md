@@ -4,7 +4,6 @@ TOCTitle: Common attachment blocking scenarios for transport rules
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 mtps_version: v=EXCHG.150

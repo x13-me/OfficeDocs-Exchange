@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
-ms.date: 7/8/2018
 ms.reviewer: 
 title: Administrator audit log structure
 ms.collection: exchange-server

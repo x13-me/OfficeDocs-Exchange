@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-ms.date: 6/8/2018
 ms.reviewer:
 title: Recipients
 ms.collection: exchange-server

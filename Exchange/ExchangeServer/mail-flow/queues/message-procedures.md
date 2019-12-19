@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 83358884-6036-4e91-87a8-35200541874d
-ms.date: 7/11/2018
 ms.reviewer:
 title: Procedures for messages in queues
 ms.collection: exchange-server

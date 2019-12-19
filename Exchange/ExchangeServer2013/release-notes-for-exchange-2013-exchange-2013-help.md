@@ -4,7 +4,6 @@ TOCTitle: Release notes for Exchange 2013
 ms:assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150489(v=EXCHG.150)
 ms:contentKeyID: 47559950
-ms.date: 04/16/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

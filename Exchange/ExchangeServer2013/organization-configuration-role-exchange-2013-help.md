@@ -4,7 +4,6 @@ TOCTitle: Organization Configuration role
 ms:assetid: db952cc5-ef70-4366-acbb-0e292d4cbdd0
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876946(v=EXCHG.150)
 ms:contentKeyID: 49289430
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

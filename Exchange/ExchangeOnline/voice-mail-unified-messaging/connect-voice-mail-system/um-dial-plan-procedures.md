@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
-ms.date: 11/17/2014
 ms.reviewer: 
 title: UM dial plan procedures [EXO] in Exchange Online
 ms.collection: exchange-online

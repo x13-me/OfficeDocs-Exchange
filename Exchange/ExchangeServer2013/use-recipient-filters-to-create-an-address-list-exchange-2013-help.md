@@ -4,7 +4,6 @@ TOCTitle: Create an address list by using recipient filters
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 mtps_version: v=EXCHG.150

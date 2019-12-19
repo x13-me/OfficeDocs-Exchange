@@ -4,7 +4,6 @@ TOCTitle: File formats indexed by Exchange Search
 ms:assetid: e5110ac1-28e1-4554-acc3-85d08c997bc5
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633485(v=EXCHG.150)
 ms:contentKeyID: 51407274
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
-ms.date: 6/8/2018
 ms.reviewer:
 title: Verify Exchange Server installations
 ms.collection:

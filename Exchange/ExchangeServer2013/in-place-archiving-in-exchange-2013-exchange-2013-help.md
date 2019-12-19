@@ -4,7 +4,6 @@ TOCTitle: In-Place Archiving in Exchange 2013
 ms:assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms:mtpsurl: https://technet.microsoft.com/library/Dd979800(v=EXCHG.150)
 ms:contentKeyID: 48385465
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

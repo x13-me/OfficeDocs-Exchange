@@ -4,7 +4,6 @@ TOCTitle: Change the settings of an address book policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 mtps_version: v=EXCHG.150

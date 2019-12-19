@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
 ms.author: v-mapenn
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
-ms.date: 4/19/2018
 ms.reviewer:
 title: Create a public folder
 ms.collection: exchange-server

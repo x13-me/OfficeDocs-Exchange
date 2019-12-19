@@ -4,7 +4,6 @@ TOCTitle: MailTips
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 

@@ -4,7 +4,6 @@ TOCTitle: Federation
 ms:assetid: 0046e2eb-6940-4941-bd5b-cbe6bffa3b94
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335047(v=EXCHG.150)
 ms:contentKeyID: 48384773
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

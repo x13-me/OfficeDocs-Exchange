@@ -4,7 +4,6 @@ TOCTitle: Organization Client Access role
 ms:assetid: ff84799a-b79c-498d-b797-7675a4afb1eb
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876962(v=EXCHG.150)
 ms:contentKeyID: 49289480
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

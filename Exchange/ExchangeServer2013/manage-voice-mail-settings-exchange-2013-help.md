@@ -4,7 +4,6 @@ TOCTitle: Manage voice mail settings for a user
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
 mtps_version: v=EXCHG.150

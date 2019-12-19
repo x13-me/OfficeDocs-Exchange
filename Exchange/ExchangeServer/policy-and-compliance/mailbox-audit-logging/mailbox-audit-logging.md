@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
-ms.date: 7/8/2018
 ms.reviewer:
 title: Mailbox audit logging in Exchange Server
 ms.collection: exchange-server

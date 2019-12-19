@@ -4,7 +4,6 @@ TOCTitle: Messaging records management
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 mtps_version: v=EXCHG.150

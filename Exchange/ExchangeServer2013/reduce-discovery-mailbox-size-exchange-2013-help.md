@@ -4,7 +4,6 @@ TOCTitle: Reduce the size of a discovery mailbox in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 mtps_version: v=EXCHG.150

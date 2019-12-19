@@ -4,7 +4,6 @@ TOCTitle: Backup, restore, and disaster recovery
 ms:assetid: 394fc4ed-fa02-41fa-9159-cc2754ff8875
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876874(v=EXCHG.150)
 ms:contentKeyID: 48384978
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

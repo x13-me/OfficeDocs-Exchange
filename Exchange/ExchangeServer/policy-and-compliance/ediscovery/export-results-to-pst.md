@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Export eDiscovery search results to a PST file
 ms.collection: exchange-server

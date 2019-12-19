@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
-ms.date: 
 ms.reviewer: 
 title: Mail flow rule actions in Exchange Online
 ms.collection: 

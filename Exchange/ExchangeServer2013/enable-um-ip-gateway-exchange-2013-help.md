@@ -4,7 +4,6 @@ TOCTitle: Enable a UM IP gateway
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 2706ae06-c45d-41b7-abbe-378a9fca104a
 mtps_version: v=EXCHG.150

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 928a466d-cc0c-4160-bd4c-f0fc76b038d4
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Fax advisor for Unified Messaging in Exchange Online
 ms.collection: exchange-online

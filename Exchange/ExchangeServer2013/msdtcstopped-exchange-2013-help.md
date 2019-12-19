@@ -4,7 +4,6 @@ TOCTitle: The Distributed Transaction Coordinator Service must be started before
 ms:assetid: 96e33c94-348e-4a0b-9585-9bee81be4355
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.msdtcstopped(v=EXCHG.150)
 ms:contentKeyID: 46629047
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

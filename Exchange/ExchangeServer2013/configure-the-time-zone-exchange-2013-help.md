@@ -4,7 +4,6 @@ TOCTitle: Configure the time zone
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9
 mtps_version: v=EXCHG.150

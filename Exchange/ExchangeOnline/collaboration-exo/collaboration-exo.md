@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7d433daa-c68f-4441-b2f5-1280991185c2
-ms.date: 
 ms.reviewer: 
 title: Collaboration in Exchange Online
 ms.collection: 

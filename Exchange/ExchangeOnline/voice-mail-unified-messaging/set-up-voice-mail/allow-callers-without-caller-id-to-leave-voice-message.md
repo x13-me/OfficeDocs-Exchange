@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 51367d98-e17c-4bcf-8b14-208bd1ac3af0
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Allow callers without a caller ID to leave a voice message in Exchange Online
 ms.collection: exchange-online

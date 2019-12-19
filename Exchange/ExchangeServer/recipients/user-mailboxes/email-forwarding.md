@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
-ms.date: 7/5/2018
 ms.reviewer:
 title: Configure email forwarding for a mailbox
 ms.collection: exchange-server

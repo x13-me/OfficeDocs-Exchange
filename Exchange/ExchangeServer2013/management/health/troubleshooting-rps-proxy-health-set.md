@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting RPS.Proxy Health Set
 ms:assetid: a5058323-5d86-438a-ad4a-fa4292310e98
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.rps.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720858
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

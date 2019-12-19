@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.DelegatedUnifiedMessagingFirstInstall
 ms.author: v-mapenn
 ms.assetid: 286b82ee-bddf-493c-b6ea-21aced6dbbad
-ms.date: 8/2/2018
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedUnifiedMessagingFirstInstall]
 ms.collection: exchange-server

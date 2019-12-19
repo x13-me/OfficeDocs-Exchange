@@ -4,7 +4,6 @@ TOCTitle: Management role scopes
 ms:assetid: f8f5b205-dd47-4fc3-8322-3fa115ae475a
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351270(v=EXCHG.150)
 ms:contentKeyID: 49289472
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

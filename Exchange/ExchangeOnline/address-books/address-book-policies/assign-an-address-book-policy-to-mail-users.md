@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
-ms.date: 
 ms.reviewer: 
 title: Assign an address book policy to users in Exchange Online
 ms.collection: 

@@ -4,7 +4,6 @@ TOCTitle: Management role assignments
 ms:assetid: 1d174faa-cea9-4267-a7b4-462041cf009b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638091(v=EXCHG.150)
 ms:contentKeyID: 49289189
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

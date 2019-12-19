@@ -4,7 +4,6 @@ TOCTitle: IIS 7 component not installed_LonghornIIS7HttpCompressionDynamicNotIns
 ms:assetid: d909e329-2436-43f9-af75-a5ee14e67ebf
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis7httpcompressiondynamicnotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629153
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

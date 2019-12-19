@@ -4,7 +4,6 @@ TOCTitle: Modify, disable, or remove a sharing policy
 ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

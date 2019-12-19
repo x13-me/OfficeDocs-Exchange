@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
-ms.date: 7/6/2018
 ms.reviewer:
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server

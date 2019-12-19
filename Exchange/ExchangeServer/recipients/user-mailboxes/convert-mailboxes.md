@@ -4,7 +4,6 @@ localization_priority: Normal
 ms.author: v-mapenn
 ms.topic: article
 author: mattpennathe3rd
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.prod: exchange-server-it-pro

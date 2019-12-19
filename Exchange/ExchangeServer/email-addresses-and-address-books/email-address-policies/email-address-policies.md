@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Email address policies in Exchange Server
 ms.collection: exchange-server

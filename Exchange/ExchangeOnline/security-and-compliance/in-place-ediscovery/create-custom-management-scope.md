@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Create a custom management scope for In-Place eDiscovery searches
 ms.collection: 

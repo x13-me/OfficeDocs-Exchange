@@ -4,7 +4,6 @@ TOCTitle: UM dial plan procedures
 ms:assetid: 1bda77c8-c4e2-4ae0-a001-76ae029bf843
 ms:mtpsurl: https://technet.microsoft.com/library/JJ822152(v=EXCHG.150)
 ms:contentKeyID: 49980466
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

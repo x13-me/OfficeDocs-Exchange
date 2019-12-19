@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7a518db5-2ece-48a8-b745-477928e32283
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Voice mail greetings, announcements, menus, and prompts in Exchange Online
 ms.collection: exchange-online

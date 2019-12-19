@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-ms.date: 7/8/2018
 ms.reviewer:
 title: Run a non-owner mailbox access report
 ms.collection: exchange-server

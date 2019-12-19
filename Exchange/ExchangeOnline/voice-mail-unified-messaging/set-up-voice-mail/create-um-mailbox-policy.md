@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMMailboxPolicyWizardForm.CreateUMMailboxPolicyWizardPage
 ms.author: v-mapenn
 ms.assetid: 7f20874b-c46c-4505-9a78-f63eacb578ff
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create a UM mailbox policy in Exchange Online
 ms.collection: exchange-online

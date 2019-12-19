@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Search Health Set
 ms:assetid: 4e4402b4-2cb7-4057-be41-45f01d31641f
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.search(v=EXCHG.150)
 ms:contentKeyID: 49720788
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

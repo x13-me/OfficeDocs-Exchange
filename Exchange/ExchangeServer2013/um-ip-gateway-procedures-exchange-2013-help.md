@@ -4,7 +4,6 @@ TOCTitle: UM IP gateway procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 298e51f5-9e42-4395-b9ea-6f16c28a8422
 mtps_version: v=EXCHG.150

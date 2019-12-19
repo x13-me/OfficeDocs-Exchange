@@ -4,7 +4,6 @@ TOCTitle: Configure Outlook to show the original sender in the quarantine mailbo
 ms:assetid: 9249425d-1b06-48a0-ad95-c4eefb641ff4
 ms:mtpsurl: https://technet.microsoft.com/library/Ee861109(v=EXCHG.150)
 ms:contentKeyID: 49345054
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

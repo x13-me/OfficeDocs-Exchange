@@ -4,7 +4,6 @@ TOCTitle: View or configure Outlook Web App virtual directories
 ms:assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298140(v=EXCHG.150)
 ms:contentKeyID: 49315461
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

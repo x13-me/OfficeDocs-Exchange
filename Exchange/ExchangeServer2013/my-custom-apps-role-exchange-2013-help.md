@@ -4,7 +4,6 @@ TOCTitle: My Custom Apps role
 ms:assetid: aa0321b3-2ec0-4694-875b-7a93d3d99089
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657478(v=EXCHG.150)
 ms:contentKeyID: 49289366
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
-ms.date: 04/15/2019
 ms.reviewer: 
 title: Exchange dev/test environment in Azure
 ms.collection:

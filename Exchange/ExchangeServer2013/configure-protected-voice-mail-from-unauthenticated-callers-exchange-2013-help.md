@@ -4,7 +4,6 @@ TOCTitle: Configure Protected Voice Mail from unauthenticated callers
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d
 mtps_version: v=EXCHG.150

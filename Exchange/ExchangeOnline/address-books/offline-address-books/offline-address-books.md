@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3f4b2c64-6cbc-445f-bf65-05b8fdfe9a0b
-ms.date: 7/19/2018
 ms.reviewer: 
 title: Offline address books in Exchange Online
 ms.collection: exchange-online

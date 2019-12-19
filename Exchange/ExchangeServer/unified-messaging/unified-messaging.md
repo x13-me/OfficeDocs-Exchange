@@ -6,7 +6,6 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
 monikerRange: exchserver-2016
-ms.date:
 title: Unified Messaging in Exchange Server 2016
 ms.collection: exchange-server
 audience: ITPro

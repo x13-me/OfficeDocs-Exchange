@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the IP address in Exchange Online
 ms.collection: exchange-online

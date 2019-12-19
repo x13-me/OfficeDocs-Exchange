@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting EWS.Protocol Health Set
 ms:assetid: 826b2d5b-adbb-4bf5-94b6-0a8de2e3aac0
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ews.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720829
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

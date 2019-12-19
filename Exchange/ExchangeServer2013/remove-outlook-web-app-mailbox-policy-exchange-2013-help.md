@@ -4,7 +4,6 @@ TOCTitle: Remove an Outlook Web App mailbox policy from Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
 mtps_version: v=EXCHG.150

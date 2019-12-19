@@ -4,7 +4,6 @@ TOCTitle: Manage dynamic distribution groups
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 f1_keywords:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage'

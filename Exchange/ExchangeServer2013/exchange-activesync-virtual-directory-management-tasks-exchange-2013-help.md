@@ -4,7 +4,6 @@ TOCTitle: Exchange ActiveSync virtual directory management tasks
 ms:assetid: f0b339b7-e184-4392-a133-20523183459d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125170(v=EXCHG.150)
 ms:contentKeyID: 49318512
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

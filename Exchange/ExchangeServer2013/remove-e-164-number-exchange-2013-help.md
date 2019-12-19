@@ -4,7 +4,6 @@ TOCTitle: Remove an E.164 number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 17941918-7dc5-41a0-b540-09f2f907362b
 mtps_version: v=EXCHG.150

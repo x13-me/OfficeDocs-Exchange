@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting IMAP Health Set
 ms:assetid: 2a06e671-4cc2-4ce5-bf53-6243ea140f20
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap(v=EXCHG.150)
 ms:contentKeyID: 49720747
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

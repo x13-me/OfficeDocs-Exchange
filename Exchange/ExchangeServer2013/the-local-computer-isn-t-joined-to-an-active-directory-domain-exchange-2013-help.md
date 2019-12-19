@@ -4,7 +4,6 @@ TOCTitle: The local computer isn't joined to an Active Directory domain
 ms:assetid: feb08845-6d44-4760-9932-6eca22f35eec
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.computernotpartofdomain(v=EXCHG.150)
 ms:contentKeyID: 46629216
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

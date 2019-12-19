@@ -4,7 +4,6 @@ TOCTitle: Information Rights Management in Exchange ActiveSync
 ms:assetid: ebf04460-4d61-4b00-86b9-85ec1dbbd6a1
 ms:mtpsurl: https://technet.microsoft.com/library/Ff657743(v=EXCHG.150)
 ms:contentKeyID: 49319938
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

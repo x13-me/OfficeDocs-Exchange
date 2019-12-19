@@ -4,7 +4,6 @@ TOCTitle: Change the UM dial plan
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
 mtps_version: v=EXCHG.150

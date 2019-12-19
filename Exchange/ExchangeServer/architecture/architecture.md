@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Exchange Server architecture
 ms.collection: exchange-server

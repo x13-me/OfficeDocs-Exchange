@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
-ms.date: 11/17/2014
 ms.reviewer: 
 title: View a UM hunt group in Exchange Online
 ms.collection: exchange-online

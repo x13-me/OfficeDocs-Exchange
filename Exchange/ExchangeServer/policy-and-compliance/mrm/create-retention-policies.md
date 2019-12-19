@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
-ms.date: 6/8/2018
 ms.reviewer:
 title: Create a retention policy in Exchange Server
 ms.collection: exchange-server

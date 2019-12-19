@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7e4c4013-8a2b-4c25-a287-b367c65e48aa
-ms.date: 6/7/2018
 ms.reviewer:
 title: Export a certificate from an Exchange server
 ms.collection:

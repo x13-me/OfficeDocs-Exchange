@@ -4,7 +4,6 @@ TOCTitle: Enable or Disable Transport Decryption
 ms:assetid: 4663f54e-dd0a-4a42-983e-8765e2adc412
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638126(v=EXCHG.150)
 ms:contentKeyID: 49319910
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

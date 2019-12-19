@@ -4,7 +4,6 @@ TOCTitle: The local domain needs to be updated_LocalDomainPrep
 ms:assetid: f33e6785-e85a-495e-a124-ebcb2b763e75
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.localdomainprep(v=EXCHG.150)
 ms:contentKeyID: 46629174
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

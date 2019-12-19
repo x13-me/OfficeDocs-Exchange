@@ -4,7 +4,6 @@ TOCTitle: Configure remote domain message reporting
 ms:assetid: 73dc686a-e7a3-44c7-b82f-f52ff9273199
 ms:mtpsurl: https://technet.microsoft.com/library/JJ649325(v=EXCHG.150)
 ms:contentKeyID: 49318499
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

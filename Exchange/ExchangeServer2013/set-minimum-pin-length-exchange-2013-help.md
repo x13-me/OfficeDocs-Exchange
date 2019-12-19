@@ -4,7 +4,6 @@ TOCTitle: Set the minimum PIN length for voice mail
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: b2ecab54-42e6-45af-8322-615cc1f68dd9
 mtps_version: v=EXCHG.150

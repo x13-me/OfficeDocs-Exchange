@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7c90d413-f978-4af5-8bc5-6b86d897edc3
-ms.date: 
 ms.reviewer: 
 title: Address books in Exchange Online
 ms.collection: 

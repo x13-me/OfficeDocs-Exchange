@@ -4,7 +4,6 @@ TOCTitle: View or configure Outlook Web App mailbox policy properties
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 mtps_version: v=EXCHG.150

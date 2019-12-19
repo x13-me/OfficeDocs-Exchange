@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Manage equipment mailboxes
 ms.collection: 

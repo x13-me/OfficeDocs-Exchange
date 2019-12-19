@@ -4,7 +4,6 @@ TOCTitle: Set connection limits for IMAP4
 ms:assetid: 8e3aa366-e77c-4c70-b78d-ddbb178cb521
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123712(v=EXCHG.150)
 ms:contentKeyID: 50395402
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

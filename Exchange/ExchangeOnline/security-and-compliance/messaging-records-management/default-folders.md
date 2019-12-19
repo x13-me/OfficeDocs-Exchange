@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Default folders that support Retention Policy Tags
 ms.collection: 

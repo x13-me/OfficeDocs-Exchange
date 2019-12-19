@@ -4,7 +4,6 @@ TOCTitle: Add an auto attendant extension number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: f2bd62ba-1e01-4cb7-862c-c750752e20e0
 mtps_version: v=EXCHG.150

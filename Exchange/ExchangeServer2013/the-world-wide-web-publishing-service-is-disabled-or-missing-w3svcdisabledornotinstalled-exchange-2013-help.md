@@ -4,7 +4,6 @@ TOCTitle: The World Wide Web Publishing Service is disabled or missing_W3SVCDisa
 ms:assetid: 2d26d778-ddf1-4225-b5e2-f6b49d819c94
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.w3svcdisabledornotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628847
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

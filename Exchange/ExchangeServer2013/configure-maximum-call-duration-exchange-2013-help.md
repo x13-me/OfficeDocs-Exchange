@@ -4,7 +4,6 @@ TOCTitle: Configure the maximum call duration
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
 mtps_version: v=EXCHG.150

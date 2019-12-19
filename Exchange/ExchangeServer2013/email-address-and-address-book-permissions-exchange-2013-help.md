@@ -4,7 +4,6 @@ TOCTitle: Email address and address book permissions
 ms:assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150492(v=EXCHG.150)
 ms:contentKeyID: 47559955
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

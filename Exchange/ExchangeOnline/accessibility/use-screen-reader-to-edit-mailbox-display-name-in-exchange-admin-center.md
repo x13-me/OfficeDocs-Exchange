@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 16615589-266f-4674-a36e-729c03be2521
-ms.date: 
 ms.reviewer: 
 manager: serdars
 description: Admins can learn how to use a screen reader to edit mailbox display names in the Exchange admin center (EAC) in Exchange Online.

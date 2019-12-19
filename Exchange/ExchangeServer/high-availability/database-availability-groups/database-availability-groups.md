@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cdaf6096-f23e-4e18-8130-40127e4a97be
-ms.date: 7/9/2018
 ms.reviewer:
 title: Database availability groups
 ms.collection:

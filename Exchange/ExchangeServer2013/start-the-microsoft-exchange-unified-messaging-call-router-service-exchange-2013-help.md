@@ -4,7 +4,6 @@ TOCTitle: Start the Microsoft Exchange Unified Messaging Call Router service
 ms:assetid: 8b7e1a4c-87b3-4477-a95f-6b41cf2d38f0
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673542(v=EXCHG.150)
 ms:contentKeyID: 49315458
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

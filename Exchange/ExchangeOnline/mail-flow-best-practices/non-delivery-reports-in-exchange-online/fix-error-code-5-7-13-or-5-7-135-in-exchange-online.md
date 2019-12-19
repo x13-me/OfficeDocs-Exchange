@@ -3,7 +3,6 @@ title: "Fix email delivery issues for error code 5.7.13 or 5.7.135 in Exchange O
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Exchange ActiveSync
 ms.collection: exchange-server

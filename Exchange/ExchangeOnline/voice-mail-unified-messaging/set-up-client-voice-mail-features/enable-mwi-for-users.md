@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable Message Waiting Indicator (MWI) for users in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Remove a database availability group
 ms.collection: exchange-server

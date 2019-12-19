@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Transport Health Set
 ms:assetid: 4bd6524c-dd34-440d-a5ec-2f974b81112a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.transport(v=EXCHG.150)
 ms:contentKeyID: 49720776
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

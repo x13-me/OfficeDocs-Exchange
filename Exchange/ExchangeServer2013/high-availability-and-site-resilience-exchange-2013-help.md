@@ -4,7 +4,6 @@ TOCTitle: High availability and site resilience
 ms:assetid: 6628285e-d07c-443d-866b-be784ad1ed1e
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638137(v=EXCHG.150)
 ms:contentKeyID: 48385176
-ms.date: 12/15/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

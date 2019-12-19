@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Manage voice mail settings for a user in Exchange Online
 ms.collection: exchange-online

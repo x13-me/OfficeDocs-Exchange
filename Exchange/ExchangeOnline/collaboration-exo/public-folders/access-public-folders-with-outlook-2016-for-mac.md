@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc9b8226-bd8b-4edc-882b-4f19cfe118eb
-ms.date: 5/19/2017
 ms.reviewer: 
 title: Accessing public folders with Outlook 2016 for Mac
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Outlook Voice Access procedures in Exchange Online
 ms.collection: exchange-online

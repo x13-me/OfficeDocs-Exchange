@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 30e8c819-4d41-4458-a746-a9ba9a84a7c0
-ms.date: 
 title: Managing Outlook for iOS and Android in Exchange Online
 ms.collection: 
 - exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c2b896cf-21f7-4453-a4e6-b23d236a6dd3
-ms.date: 7/21/2016
 ms.reviewer: 
 title: Remove an extension number in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Active Directory domain is mixed mode_RootDomainModeMixed
 ms:assetid: 9f60096e-3eaa-40d8-bde5-13ada5855702
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.rootdomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629053
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

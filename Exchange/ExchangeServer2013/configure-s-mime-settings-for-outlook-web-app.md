@@ -4,7 +4,6 @@ TOCTitle: Configure S/MIME settings for Outlook Web App
 ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms:mtpsurl:
 ms:contentKeyID:
-ms.date: 2/26/2019
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

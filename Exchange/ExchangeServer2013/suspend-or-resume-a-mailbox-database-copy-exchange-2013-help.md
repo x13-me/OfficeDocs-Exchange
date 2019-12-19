@@ -4,7 +4,6 @@ TOCTitle: Suspend or resume a mailbox database copy
 ms:assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298159(v=EXCHG.150)
 ms:contentKeyID: 48385374
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

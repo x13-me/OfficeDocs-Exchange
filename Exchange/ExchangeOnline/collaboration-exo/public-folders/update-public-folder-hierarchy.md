@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Update the public folder hierarchy
 ms.collection: 

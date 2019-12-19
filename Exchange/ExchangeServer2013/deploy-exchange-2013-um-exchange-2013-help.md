@@ -4,7 +4,6 @@ TOCTitle: Deploy Exchange 2013 UM
 ms:assetid: d147d4b1-32d7-476b-b76f-ee3c0b35ba49
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673564(v=EXCHG.150)
 ms:contentKeyID: 49315527
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

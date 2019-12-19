@@ -4,7 +4,6 @@ TOCTitle: Apply or remove an Outlook Web App mailbox policy on a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 mtps_version: v=EXCHG.150

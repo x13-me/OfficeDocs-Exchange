@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
-ms.date:
 ms.reviewer: 
 title: Upgrade Exchange to the latest Cumulative Update
 ms.collection:

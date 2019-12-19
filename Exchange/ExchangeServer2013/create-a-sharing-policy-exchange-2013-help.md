@@ -4,7 +4,6 @@ TOCTitle: Create a sharing policy
 ms:assetid: cae8cab0-6265-448b-8add-5202cdb20678
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657494(v=EXCHG.150)
 ms:contentKeyID: 49289410
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

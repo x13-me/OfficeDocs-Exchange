@@ -4,7 +4,6 @@ TOCTitle: 'FAQ: Public folders'
 ms:assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ552408(v=EXCHG.150)
 ms:contentKeyID: 48679371
-ms.date: 03/27/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

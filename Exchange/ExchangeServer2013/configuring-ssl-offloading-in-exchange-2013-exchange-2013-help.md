@@ -4,7 +4,6 @@ TOCTitle: Configuring SSL offloading in Exchange 2013
 ms:assetid: 654cc2c2-918b-48fc-9532-9c8e3012810d
 ms:mtpsurl: https://technet.microsoft.com/library/Dn635115(v=EXCHG.150)
 ms:contentKeyID: 61200287
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Enable or disable Outlook Web App for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 mtps_version: v=EXCHG.150

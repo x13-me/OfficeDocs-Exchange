@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the maximum call duration in Exchange Online
 ms.collection: exchange-online

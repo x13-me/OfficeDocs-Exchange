@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
-ms.date: 8/16/2018
 ms.reviewer: 
 description: You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
 title: Manage migration batches in Office 365

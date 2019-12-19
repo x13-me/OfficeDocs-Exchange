@@ -4,7 +4,6 @@ TOCTitle: Custom attributes
 ms:assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms:mtpsurl: https://technet.microsoft.com/library/Ee423541(v=EXCHG.150)
 ms:contentKeyID: 49352787
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the time zone in Exchange Online
 ms.collection: exchange-online

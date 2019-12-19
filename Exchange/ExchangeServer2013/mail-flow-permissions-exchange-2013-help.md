@@ -4,7 +4,6 @@ TOCTitle: Mail flow permissions
 ms:assetid: f49f4fb5-af75-43cb-900f-c5f7b8cfa143
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638213(v=EXCHG.150)
 ms:contentKeyID: 48385715
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

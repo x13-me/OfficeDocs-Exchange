@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
-ms.date: 6/8/2018
 ms.reviewer:
 title: Enable or disable mailbox audit logging for a mailbox
 ms.collection: exchange-server

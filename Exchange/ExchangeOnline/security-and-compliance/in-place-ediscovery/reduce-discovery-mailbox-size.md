@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Reduce the size of a discovery mailbox in Exchange
 ms.collection: 

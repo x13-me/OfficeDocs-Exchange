@@ -4,7 +4,6 @@ TOCTitle: Enable a customized non-business hours greeting
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 mtps_version: v=EXCHG.150

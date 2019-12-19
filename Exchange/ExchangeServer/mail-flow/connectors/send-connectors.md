@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
-ms.date: 7/10/2018
 ms.reviewer:
 title: Send connectors in Exchange Server
 ms.collection: exchange-server

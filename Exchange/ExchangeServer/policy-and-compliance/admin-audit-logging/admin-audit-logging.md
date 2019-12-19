@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
-ms.date: 7/8/2018
 ms.reviewer:
 title: Administrator audit logging in Exchange Server
 ms.collection: exchange-server

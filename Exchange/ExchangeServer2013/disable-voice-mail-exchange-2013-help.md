@@ -4,7 +4,6 @@ TOCTitle: Disable voice mail for a user
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552
 mtps_version: v=EXCHG.150

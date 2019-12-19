@@ -4,7 +4,6 @@ TOCTitle: What the sensitive information types look for
 ms:assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150541(v=EXCHG.150)
 ms:contentKeyID: 47560060
-ms.date: 05/05/2018
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

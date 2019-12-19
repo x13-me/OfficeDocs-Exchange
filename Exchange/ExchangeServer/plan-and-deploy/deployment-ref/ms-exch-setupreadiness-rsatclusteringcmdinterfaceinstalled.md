@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.RsatClusteringCmdInterfaceInstalled
 ms.author: v-mapenn
 ms.assetid: 0d839514-5ab7-497d-8945-41392b4c3980
-ms.date: 7/22/2015
 ms.reviewer: 
 title: Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]
 ms.collection: exchange-server

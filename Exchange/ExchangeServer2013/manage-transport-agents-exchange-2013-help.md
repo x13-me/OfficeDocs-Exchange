@@ -4,7 +4,6 @@ TOCTitle: Manage transport agents
 ms:assetid: f15ab7e4-015d-45b1-9c10-f733d7cd2a36
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125175(v=EXCHG.150)
 ms:contentKeyID: 49300743
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

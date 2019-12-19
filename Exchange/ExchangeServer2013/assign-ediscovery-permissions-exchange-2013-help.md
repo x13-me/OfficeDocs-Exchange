@@ -4,7 +4,6 @@ TOCTitle: Assign eDiscovery permissions in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 mtps_version: v=EXCHG.150

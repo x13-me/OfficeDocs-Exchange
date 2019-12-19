@@ -4,7 +4,6 @@ TOCTitle: Import a custom DLP policy template from a file
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 83f49dbd-f9b1-498e-b548-1529c5e1ccdb
 mtps_version: v=EXCHG.150

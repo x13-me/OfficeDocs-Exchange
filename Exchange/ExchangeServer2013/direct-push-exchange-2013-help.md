@@ -4,7 +4,6 @@ TOCTitle: Direct Push
 ms:assetid: 373c1629-3d4b-4828-b014-9e103de4ef25
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997252(v=EXCHG.150)
 ms:contentKeyID: 48384981
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

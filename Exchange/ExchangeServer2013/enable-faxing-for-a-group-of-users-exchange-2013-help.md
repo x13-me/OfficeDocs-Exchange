@@ -4,7 +4,6 @@ TOCTitle: Enable faxing for a group of users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178
 mtps_version: v=EXCHG.150

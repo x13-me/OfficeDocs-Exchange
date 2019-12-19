@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting HubTransport Health Set
 ms:assetid: e3932ce3-836c-4230-9f64-63af1b704d79
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.hubtransport(v=EXCHG.150)
 ms:contentKeyID: 49720900
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

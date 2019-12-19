@@ -4,7 +4,6 @@ TOCTitle: View queued message properties in Queue Viewer
 ms:assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123934(v=EXCHG.150)
 ms:contentKeyID: 49286850
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

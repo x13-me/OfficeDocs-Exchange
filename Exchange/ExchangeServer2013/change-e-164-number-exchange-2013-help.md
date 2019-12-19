@@ -4,7 +4,6 @@ TOCTitle: Change an E.164 number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 2a3da11b-bb9b-4d4d-9238-6a1a47ef63f2
 mtps_version: v=EXCHG.150

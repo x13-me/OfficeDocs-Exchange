@@ -4,7 +4,6 @@ TOCTitle: Transport Agents role
 ms:assetid: 1679402e-158f-4630-8ef1-01ab5c7ce811
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876853(v=EXCHG.150)
 ms:contentKeyID: 49289183
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

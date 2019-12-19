@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
-ms.date: 
 ms.reviewer: 
 title: Transport high availability in Exchange Server
 ms.collection: exchange-server

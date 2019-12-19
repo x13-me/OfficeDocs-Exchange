@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
-ms.date: 7/3/2018
 ms.reviewer:
 title: Address rewriting procedures on Edge Transport servers
 ms.collection: exchange-server

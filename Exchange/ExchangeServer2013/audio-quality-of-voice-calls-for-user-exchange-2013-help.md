@@ -4,7 +4,6 @@ TOCTitle: Investigate the audio quality of voice calls for a user
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 mtps_version: v=EXCHG.150

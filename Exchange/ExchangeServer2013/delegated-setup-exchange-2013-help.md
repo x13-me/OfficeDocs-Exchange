@@ -4,7 +4,6 @@ TOCTitle: Delegated Setup
 ms:assetid: 49362059-e53f-4135-ad2b-9edfbfff9a1e
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876881(v=EXCHG.150)
 ms:contentKeyID: 49289244
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

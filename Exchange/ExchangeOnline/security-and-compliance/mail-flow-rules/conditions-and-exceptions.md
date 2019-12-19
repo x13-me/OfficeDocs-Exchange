@@ -11,7 +11,6 @@ ms.assetid: 7235e5ed-f7f4-41b1-b1a0-47bb96223a2f
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.date: 
 ms.reviewer: 
 title: Mail flow rule conditions and exceptions (predicates) in Exchange Online
 

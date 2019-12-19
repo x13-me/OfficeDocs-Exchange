@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
-ms.date: 6/8/2018
 ms.reviewer:
 title: 'FAQ: Public folders'
 ms.collection: exchange-server

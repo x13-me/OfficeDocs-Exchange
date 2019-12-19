@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl
 ms.author: v-mapenn
 ms.assetid: 3cfc9a01-0a61-4d15-9561-621568dc30d9
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create menu navigation in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Authorize calls using dialing rules
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 3/9/2015
 ms.reviewer: 
 ms.assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
 mtps_version: v=EXCHG.150

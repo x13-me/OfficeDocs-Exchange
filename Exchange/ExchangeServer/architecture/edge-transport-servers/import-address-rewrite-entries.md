@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
-ms.date: 7/3/2018
 ms.reviewer:
 title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server

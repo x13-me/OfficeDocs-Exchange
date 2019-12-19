@@ -4,7 +4,6 @@ TOCTitle: Manage messages in queues
 ms:assetid: 83358884-6036-4e91-87a8-35200541874d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123535(v=EXCHG.150)
 ms:contentKeyID: 50646238
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

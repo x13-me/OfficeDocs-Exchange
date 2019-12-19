@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 27de4104-fb8e-4eab-9ad2-a64f81a4fb69
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Procedures for Edge Subscriptions
 ms.collection: exchange-server

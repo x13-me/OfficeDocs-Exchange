@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
-ms.date: 7/9/2018
 ms.reviewer:
 title: Suspend or resume a mailbox database copy
 ms.collection: exchange-server

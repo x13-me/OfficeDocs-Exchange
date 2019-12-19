@@ -4,7 +4,6 @@ TOCTitle: Transport rules
 ms:assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351127(v=EXCHG.150)
 ms:contentKeyID: 49289403
-ms.date: 04/28/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

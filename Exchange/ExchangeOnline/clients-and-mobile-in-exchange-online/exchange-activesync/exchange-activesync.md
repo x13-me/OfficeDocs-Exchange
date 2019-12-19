@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ff7f0d3d-1b9d-4c49-b7fe-1ab5d2805b00
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Exchange ActiveSync in Exchange Online
 ms.collection: 

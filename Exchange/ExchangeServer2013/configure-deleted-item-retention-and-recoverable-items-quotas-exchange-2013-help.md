@@ -4,7 +4,6 @@ TOCTitle: Configure Deleted Item retention and Recoverable Items quotas
 ms:assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364752(v=EXCHG.150)
 ms:contentKeyID: 50470878
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

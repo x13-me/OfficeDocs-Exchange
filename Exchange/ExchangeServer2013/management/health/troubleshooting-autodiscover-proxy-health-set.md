@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Autodiscover.Proxy Health Set
 ms:assetid: b6a817cf-0b85-4620-adb7-cc3616c11268
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.autodiscover.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720876
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

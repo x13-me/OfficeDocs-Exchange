@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bff15214-3e06-43af-b6f8-3fd341fe2389
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Protect voice mail in Exchange Online
 ms.collection: exchange-online

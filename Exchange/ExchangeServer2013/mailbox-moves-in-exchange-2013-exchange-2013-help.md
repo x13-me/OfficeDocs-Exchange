@@ -4,7 +4,6 @@ TOCTitle: Mailbox moves in Exchange 2013
 ms:assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150543(v=EXCHG.150)
 ms:contentKeyID: 47560063
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

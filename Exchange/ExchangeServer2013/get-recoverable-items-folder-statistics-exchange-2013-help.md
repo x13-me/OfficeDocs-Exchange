@@ -4,7 +4,6 @@ TOCTitle: Get Recoverable Items folder statistics
 ms:assetid: dee77958-ee87-4908-85e4-ad053bacd8b0
 ms:mtpsurl: https://technet.microsoft.com/library/Ff714343(v=EXCHG.150)
 ms:contentKeyID: 51439484
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Deploying high availability and site resilience
 ms:assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638129(v=EXCHG.150)
 ms:contentKeyID: 48385062
-ms.date: 06/06/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ description: The Exchange Solution Reviewed Program (ESRP) Storage is a Microsof
 ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
-ms.date: 07/23/2018
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
 ms.reviewer: mattgos

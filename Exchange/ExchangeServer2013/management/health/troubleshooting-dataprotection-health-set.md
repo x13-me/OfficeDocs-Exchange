@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting DataProtection Health Set
 ms:assetid: cde3cc34-2076-4e30-8d3c-265b66d00ae8
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.dataprotection(v=EXCHG.150)
 ms:contentKeyID: 49720873
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

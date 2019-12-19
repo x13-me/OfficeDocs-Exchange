@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
-ms.date: 7/6/2018
 ms.reviewer:
 title: Site mailboxes
 ms.collection: exchange-server

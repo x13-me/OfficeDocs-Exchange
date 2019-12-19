@@ -4,7 +4,6 @@ TOCTitle: Enable custom prompt recording using the telephone user interface
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: f2e5c636-2be9-4d48-b5e7-37913ded62d1
 mtps_version: v=EXCHG.150

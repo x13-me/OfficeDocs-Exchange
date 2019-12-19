@@ -4,7 +4,6 @@ TOCTitle: Change an extension number
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: ff22b366-3bfb-4bf7-9f11-62fba48f1caf
 mtps_version: v=EXCHG.150

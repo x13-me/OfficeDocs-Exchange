@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
-ms.date: 7/5/2018
 ms.reviewer:
 title: Clients and mobile devices permissions
 ms.collection: exchange-server

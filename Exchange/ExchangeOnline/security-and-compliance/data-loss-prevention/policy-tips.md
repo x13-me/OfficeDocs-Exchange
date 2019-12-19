@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Policy Tips in Exchange Online
 ms.collection: 

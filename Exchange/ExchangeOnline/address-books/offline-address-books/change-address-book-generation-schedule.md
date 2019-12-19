@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
 ms.author: v-mapenn
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Change the offline address book generation schedule
 ms.collection: exchange-online

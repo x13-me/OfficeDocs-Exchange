@@ -4,7 +4,6 @@ TOCTitle: Authorize calls for auto attendant callers
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716
 mtps_version: v=EXCHG.150

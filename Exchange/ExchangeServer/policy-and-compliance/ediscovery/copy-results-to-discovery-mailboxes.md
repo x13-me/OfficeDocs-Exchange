@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
-ms.date: 7/6/2018
 ms.reviewer:
 title: Copy eDiscovery search results to a discovery mailbox
 ms.collection: exchange-server

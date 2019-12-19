@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
-ms.date: 7/5/2018
 ms.reviewer:
 title: Unified Messaging permissions in Exchange 2016
 ms.collection: exchange-server

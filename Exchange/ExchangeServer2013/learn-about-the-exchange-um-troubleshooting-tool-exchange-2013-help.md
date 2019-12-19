@@ -4,7 +4,6 @@ TOCTitle: Learn about the Exchange UM Troubleshooting Tool
 ms:assetid: cc11bf5e-2c87-4495-b2ad-3e9a6bc81dbc
 ms:mtpsurl: https://technet.microsoft.com/library/Gg584301(v=EXCHG.150)
 ms:contentKeyID: 55129213
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 19bbc20d-d11e-4e75-9bb4-c5d85cf17fc5
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Set a business location in Exchange Online
 ms.collection: exchange-online

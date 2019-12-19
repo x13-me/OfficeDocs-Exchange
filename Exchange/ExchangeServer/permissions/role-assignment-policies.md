@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
-ms.date: 7/5/2018
 ms.reviewer:
 title: Manage role assignment policies
 ms.collection: exchange-server

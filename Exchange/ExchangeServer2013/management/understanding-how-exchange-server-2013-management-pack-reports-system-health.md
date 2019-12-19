@@ -4,7 +4,6 @@ TOCTitle: Understanding how Exchange Server 2013 Management Pack reports system 
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53181786
-ms.date: 
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

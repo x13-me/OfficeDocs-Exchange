@@ -4,7 +4,6 @@ TOCTitle: OAB server has been deleted_OffLineABServerDeleted
 ms:assetid: 38b5dacf-ef65-4b25-97f6-d8dec956d7d5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.offlineabserverdeleted(v=EXCHG.150)
 ms:contentKeyID: 46628863
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

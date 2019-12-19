@@ -4,7 +4,6 @@ TOCTitle: Journaling
 ms:assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998649(v=EXCHG.150)
 ms:contentKeyID: 49354855
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

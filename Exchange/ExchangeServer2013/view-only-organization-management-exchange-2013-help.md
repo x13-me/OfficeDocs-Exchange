@@ -4,7 +4,6 @@ TOCTitle: View-only Organization Management
 ms:assetid: c514c6d0-0157-4c52-9ec6-441d9a30f3df
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351130(v=EXCHG.150)
 ms:contentKeyID: 49289404
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

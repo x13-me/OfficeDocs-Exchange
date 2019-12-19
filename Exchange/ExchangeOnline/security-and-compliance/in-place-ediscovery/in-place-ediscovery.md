@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
-ms.date: 7/11/2018
 ms.reviewer: 
 title: In-Place eDiscovery
 ms.collection: 

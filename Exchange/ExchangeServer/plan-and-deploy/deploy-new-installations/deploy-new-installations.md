@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 681835cf-79fe-4aa7-8a28-4a39944d0efc
-ms.date: 7/26/2018
 ms.reviewer: 
 title: Deploy new installations of Exchange
 ms.collection:
