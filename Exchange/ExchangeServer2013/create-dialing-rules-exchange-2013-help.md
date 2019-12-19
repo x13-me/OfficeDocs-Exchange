@@ -4,7 +4,6 @@ TOCTitle: Create dialing rules for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 3/9/2015
 ms.reviewer:
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Create an address list
 ms:assetid: e86ba1b7-c41c-4050-bc29-13996cf53c59
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125036(v=EXCHG.150)
 ms:contentKeyID: 49289446
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

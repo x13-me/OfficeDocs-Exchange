@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
-ms.date:
 ms.reviewer:
 title: Message size limits in Exchange Server
 ms.collection: exchange-server

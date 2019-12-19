@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
-ms.date:
 ms.reviewer:
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server

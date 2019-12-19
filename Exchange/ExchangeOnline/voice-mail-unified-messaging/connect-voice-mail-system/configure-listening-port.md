@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the listening port in Exchange Online
 ms.collection: exchange-online

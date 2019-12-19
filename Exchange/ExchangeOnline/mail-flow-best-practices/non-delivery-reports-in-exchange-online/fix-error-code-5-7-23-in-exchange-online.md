@@ -3,7 +3,6 @@ title: "Fix email delivery issues for error code 5.7.23 in Exchange Online"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 5/25/2017
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting

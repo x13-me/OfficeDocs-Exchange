@@ -4,7 +4,6 @@ TOCTitle: Configure a cross-forest Send connector
 ms:assetid: 7840d172-071e-4f13-9379-2fe1eee1a7cc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ945053(v=EXCHG.150)
 ms:contentKeyID: 51423387
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

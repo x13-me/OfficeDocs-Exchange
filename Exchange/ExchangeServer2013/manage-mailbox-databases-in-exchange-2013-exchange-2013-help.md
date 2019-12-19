@@ -4,7 +4,6 @@ TOCTitle: Manage mailbox databases in Exchange 2013
 ms:assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150580(v=EXCHG.150)
 ms:contentKeyID: 47560127
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

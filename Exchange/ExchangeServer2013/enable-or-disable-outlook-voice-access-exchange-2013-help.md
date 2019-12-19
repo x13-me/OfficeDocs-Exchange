@@ -4,7 +4,6 @@ TOCTitle: Enable or disable Outlook Voice Access for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c0c244a0-ad2f-4adf-bc1f-1d55fd7ea2d5
 mtps_version: v=EXCHG.150

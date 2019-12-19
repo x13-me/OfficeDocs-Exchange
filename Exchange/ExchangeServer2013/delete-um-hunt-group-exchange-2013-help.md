@@ -4,7 +4,6 @@ TOCTitle: Delete a UM hunt group
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d
 mtps_version: v=EXCHG.150

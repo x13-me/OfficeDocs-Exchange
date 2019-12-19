@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 139b2ccd-28c5-46c0-9050-777f4f59aade
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Change the audio codec in Exchange Online
 ms.collection: exchange-online

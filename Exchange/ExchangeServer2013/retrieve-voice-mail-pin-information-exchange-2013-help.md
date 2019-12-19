@@ -4,7 +4,6 @@ TOCTitle: Retrieve voice mail PIN information
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 01517cca-99fe-46b2-b586-19e8d2707728
 mtps_version: v=EXCHG.150

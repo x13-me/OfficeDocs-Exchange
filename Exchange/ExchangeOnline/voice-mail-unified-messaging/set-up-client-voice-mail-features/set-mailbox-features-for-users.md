@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 10960bf0-65cf-4d0b-bae5-d203c53662db
-ms.date: 7/12/2018
 ms.reviewer: 
 title: Set mailbox features for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online

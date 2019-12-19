@@ -4,7 +4,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
-ms.date: 8/16/2018
 ms.reviewer: 
 description: Learn how to do an Express migration of on-premises Exchange mailboxes to Office 365..
 title: Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365

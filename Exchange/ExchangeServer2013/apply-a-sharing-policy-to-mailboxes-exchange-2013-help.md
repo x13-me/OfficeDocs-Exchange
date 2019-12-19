@@ -4,7 +4,6 @@ TOCTitle: Apply a sharing policy to mailboxes
 ms:assetid: dd4cc765-8469-4176-bb6e-d5b0f5235927
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657501(v=EXCHG.150)
 ms:contentKeyID: 49289435
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

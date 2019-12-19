@@ -4,7 +4,6 @@ TOCTitle: Manage mail-enabled security groups
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Exchange 2007 servers must be upgraded to Service Pack 3, Update Rollu
 ms:assetid: b8028a00-c451-412e-86f2-1669f6eee8fc
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.e15e12coexistenceminversionrequirement(v=EXCHG.150)
 ms:contentKeyID: 47899847
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

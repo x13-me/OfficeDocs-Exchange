@@ -4,7 +4,6 @@ TOCTitle: Configure calendar options for IMAP4
 ms:assetid: 6679c8b2-3f0f-449a-a17c-a7b30001538c
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998606(v=EXCHG.150)
 ms:contentKeyID: 50395400
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

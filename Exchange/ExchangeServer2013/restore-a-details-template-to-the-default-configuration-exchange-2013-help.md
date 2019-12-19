@@ -4,7 +4,6 @@ TOCTitle: Restore a details template to the default configuration
 ms:assetid: 84c5f49b-614d-4f0e-8701-0979a2eb90bf
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232102(v=EXCHG.150)
 ms:contentKeyID: 49289330
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

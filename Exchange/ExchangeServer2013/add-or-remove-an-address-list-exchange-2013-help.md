@@ -4,7 +4,6 @@ TOCTitle: Add an address list to or remove an address list from an offline addre
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
 mtps_version: v=EXCHG.150

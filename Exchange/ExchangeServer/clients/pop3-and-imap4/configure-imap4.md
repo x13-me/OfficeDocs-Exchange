@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
-ms.date: 7/5/2018
 ms.reviewer:
 title: Enable and configure IMAP4 on an Exchange server
 ms.collection: exchange-server

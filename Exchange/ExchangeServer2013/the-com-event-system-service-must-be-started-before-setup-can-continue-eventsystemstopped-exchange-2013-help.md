@@ -4,7 +4,6 @@ TOCTitle: The COM+ Event System Service must be started before setup can continu
 ms:assetid: 3b8d2ba3-87fb-4749-b4d1-5dfec97e1ca4
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.eventsystemstopped(v=EXCHG.150)
 ms:contentKeyID: 46628889
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

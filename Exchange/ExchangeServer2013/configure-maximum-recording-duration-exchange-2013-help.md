@@ -4,7 +4,6 @@ TOCTitle: Configure the maximum recording duration
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 18eeb567-1048-4c82-93cf-612cb12ec5e3
 mtps_version: v=EXCHG.150

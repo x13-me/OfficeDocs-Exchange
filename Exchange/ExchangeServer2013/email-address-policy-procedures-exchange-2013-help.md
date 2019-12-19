@@ -4,7 +4,6 @@ TOCTitle: Email address policy procedures
 ms:assetid: 7b49b51d-265e-4857-a283-4368e858f8a5
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998940(v=EXCHG.150)
 ms:contentKeyID: 49289317
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

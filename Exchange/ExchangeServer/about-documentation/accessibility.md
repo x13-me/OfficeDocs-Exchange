@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Accessibility for people with disabilities
 ms.collection:

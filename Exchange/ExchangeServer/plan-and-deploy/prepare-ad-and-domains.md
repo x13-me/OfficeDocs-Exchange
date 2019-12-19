@@ -6,7 +6,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
-ms.date:
 ms.reviewer: 
 title: Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory
 ms.collection:

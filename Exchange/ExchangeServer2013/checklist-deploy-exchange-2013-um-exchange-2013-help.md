@@ -4,7 +4,6 @@ TOCTitle: 'Checklist: Deploy Exchange 2013 UM'
 ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673520(v=EXCHG.150)
 ms:contentKeyID: 49315398
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 77a9013b-d76b-4af2-8b2c-cef435cf67af
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Set the partner fax server URI to allow faxing in Exchange Online
 ms.collection: exchange-online

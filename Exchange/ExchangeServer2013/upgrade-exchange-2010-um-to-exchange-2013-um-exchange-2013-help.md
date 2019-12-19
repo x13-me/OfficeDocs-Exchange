@@ -4,7 +4,6 @@ TOCTitle: Upgrade Exchange 2010 UM to Exchange 2013 UM
 ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169226(v=EXCHG.150)
 ms:contentKeyID: 53382778
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

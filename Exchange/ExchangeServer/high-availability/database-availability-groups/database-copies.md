@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
-ms.date: 7/9/2018
 ms.reviewer:
 title: Mailbox database copies
 ms.collection: exchange-server

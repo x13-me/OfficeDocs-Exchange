@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Mobile devices
 ms.collection: exchange-server

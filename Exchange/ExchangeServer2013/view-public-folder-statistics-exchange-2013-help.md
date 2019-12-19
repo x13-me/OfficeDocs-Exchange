@@ -4,7 +4,6 @@ TOCTitle: View statistics for public folders and public folder items
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 mtps_version: v=EXCHG.150

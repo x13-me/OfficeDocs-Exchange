@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
-ms.date: 7/6/2018
 ms.reviewer:
 title: Message encoding options in Exchange Server
 ms.collection: exchange-server

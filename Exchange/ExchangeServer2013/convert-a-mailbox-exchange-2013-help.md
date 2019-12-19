@@ -4,7 +4,6 @@ TOCTitle: Convert a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 mtps_version: v=EXCHG.150

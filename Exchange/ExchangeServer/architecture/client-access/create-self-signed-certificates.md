@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-ms.date: 7/5/2018
 ms.reviewer:
 title: Create a new Exchange Server self-signed certificate
 ms.collection:

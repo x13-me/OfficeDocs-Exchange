@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Configure message tracking
 ms.collection: exchange-server

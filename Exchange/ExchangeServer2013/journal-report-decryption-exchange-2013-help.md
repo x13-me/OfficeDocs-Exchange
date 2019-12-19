@@ -4,7 +4,6 @@ TOCTitle: Journal report decryption
 ms:assetid: c063e2bd-2444-480d-8b35-73f31064a31b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876936(v=EXCHG.150)
 ms:contentKeyID: 49319930
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

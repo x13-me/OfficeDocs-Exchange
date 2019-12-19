@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
-ms.date:
 ms.reviewer:
 title: Remove a global address list in Exchange Online
 ms.collection:

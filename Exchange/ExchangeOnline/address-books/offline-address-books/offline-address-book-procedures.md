@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
-ms.date: 
 ms.reviewer: 
 title: Offline address book procedures
 ms.collection: exchange-online

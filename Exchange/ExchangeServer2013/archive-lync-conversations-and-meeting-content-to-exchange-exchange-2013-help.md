@@ -4,7 +4,6 @@ TOCTitle: Archive Lync conversations and meeting content to Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3cff970e-e5ed-4a54-88e6-3665d84b5ed7
 mtps_version: v=EXCHG.150

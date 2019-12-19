@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
-ms.date: 
 ms.reviewer: 
 title: Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online
 ms.collection: 

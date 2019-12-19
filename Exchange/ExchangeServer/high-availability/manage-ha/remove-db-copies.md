@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
-ms.date: 7/9/2018
 ms.reviewer:
 title: Remove a mailbox database copy
 ms.collection: exchange-server

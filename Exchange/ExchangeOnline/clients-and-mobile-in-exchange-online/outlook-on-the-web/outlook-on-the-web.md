@@ -5,7 +5,6 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c30ff7b8-0f12-455b-a70e-3447634f17ce
-ms.date: 
 ms.reviewer: 
 title: Outlook on the web in Exchange Online
 ms.collection: 

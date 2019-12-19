@@ -3,7 +3,6 @@ title: 'Best practices for configuring transport rules: Exchange 2013 Help'
 TOCTitle: Best practices for configuring transport rules
 ms.author: v-mapenn
 author: mattpennathe3rd
-ms.date:
 ms.reviewer:
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 mtps_version: v=EXCHG.150

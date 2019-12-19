@@ -4,7 +4,6 @@ TOCTitle: View-Only Audit Logs role
 ms:assetid: 9298fe59-0a16-4a09-bdb8-514d1cea6e2f
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461933(v=EXCHG.150)
 ms:contentKeyID: 49289353
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

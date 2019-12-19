@@ -4,7 +4,6 @@ TOCTitle: Configure IP addresses and ports for POP3 and IMAP4 access
 ms:assetid: 8292747b-6626-4d7f-ba73-1e17f5d99fa4
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123530(v=EXCHG.150)
 ms:contentKeyID: 50395401
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

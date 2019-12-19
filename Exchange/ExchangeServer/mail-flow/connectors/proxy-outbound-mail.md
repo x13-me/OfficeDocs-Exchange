@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
-ms.date: 7/6/2018
 ms.reviewer:
 title: Configure Send connectors to proxy outbound mail
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Create a regular or exclusive scope
 ms:assetid: b97a5be3-15cc-4954-ba30-a824a95e21be
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351083(v=EXCHG.150)
 ms:contentKeyID: 49289387
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
-ms.date: 7/5/2018
 ms.reviewer:
 title: Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server
 ms.collection: exchange-server

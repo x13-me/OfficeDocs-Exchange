@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
-ms.date: 7/12/2018
 ms.reviewer:
 title: Create a public folder mailbox in Exchange Server
 ms.collection: exchange-server

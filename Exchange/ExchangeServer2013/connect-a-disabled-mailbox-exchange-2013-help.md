@@ -4,7 +4,6 @@ TOCTitle: Connect a disabled mailbox
 ms:assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863439(v=EXCHG.150)
 ms:contentKeyID: 50387720
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

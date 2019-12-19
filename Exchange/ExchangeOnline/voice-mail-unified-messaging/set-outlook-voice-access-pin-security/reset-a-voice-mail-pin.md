@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.ResetUnifiedMessagingPinPropertyControl
 ms.author: v-mapenn
 ms.assetid: bf07e6e7-01d2-4933-bff5-c615cc21a480
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Reset a voice mail PIN in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Use the Exchange Management Shell to manage queues
 ms:assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998047(v=EXCHG.150)
 ms:contentKeyID: 50646233
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

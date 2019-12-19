@@ -4,7 +4,6 @@ TOCTitle: Create a DLP policy from a template
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 mtps_version: v=EXCHG.150

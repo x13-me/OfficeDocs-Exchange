@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 89053e84-3490-4dc6-ade3-9b6c5dbf4020
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable a customized business hours menu prompt in Exchange Online
 ms.collection: exchange-online

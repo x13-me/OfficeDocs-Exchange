@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
-ms.date: 7/31/2018
 ms.reviewer: 
 title: Overview of Exchange services on Exchange servers
 ms.collection: exchange-server

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
-ms.date: 7/8/2018
 ms.reviewer:
 title: Configure and run the Managed Folder Assistant in Exchange Server
 ms.collection: exchange-server

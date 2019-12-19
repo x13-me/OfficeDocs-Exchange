@@ -4,7 +4,6 @@ TOCTitle: Telephone system integration with UM
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 3/5/2018
 ms.reviewer: 
 ms.assetid: b8790117-b040-4c84-9d34-005c75088e76
 mtps_version: v=EXCHG.150

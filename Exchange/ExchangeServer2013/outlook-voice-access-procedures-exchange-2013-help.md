@@ -4,7 +4,6 @@ TOCTitle: Outlook Voice Access procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d
 mtps_version: v=EXCHG.150

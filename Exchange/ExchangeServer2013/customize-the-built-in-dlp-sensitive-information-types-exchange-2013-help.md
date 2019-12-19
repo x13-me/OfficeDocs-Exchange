@@ -4,7 +4,6 @@ TOCTitle: Customize the built-in DLP sensitive information types
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 3f8bf141-2e7c-4ea7-b102-dfd6c41539da
 mtps_version: v=EXCHG.150

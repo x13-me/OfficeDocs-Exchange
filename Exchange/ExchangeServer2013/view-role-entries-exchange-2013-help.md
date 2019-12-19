@@ -4,7 +4,6 @@ TOCTitle: View role entries
 ms:assetid: d9bb0d14-db59-456c-8f50-a8d7f7323df9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351179(v=EXCHG.150)
 ms:contentKeyID: 49289429
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

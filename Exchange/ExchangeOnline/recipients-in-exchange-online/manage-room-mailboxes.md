@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Create and manage room mailboxes
 ms.collection: 

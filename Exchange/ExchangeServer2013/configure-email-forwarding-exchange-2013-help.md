@@ -4,7 +4,6 @@ TOCTitle: Configure email forwarding for a mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 mtps_version: v=EXCHG.150

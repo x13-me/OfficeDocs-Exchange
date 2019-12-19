@@ -7,7 +7,6 @@ f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMDialPlanWizardForm.CreateUMDialPlanWizardPage
 ms.author: v-mapenn
 ms.assetid: 963ff2e1-515d-439a-953a-664174e5e283
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create a UM dial plan in Exchange Online
 ms.collection: exchange-online

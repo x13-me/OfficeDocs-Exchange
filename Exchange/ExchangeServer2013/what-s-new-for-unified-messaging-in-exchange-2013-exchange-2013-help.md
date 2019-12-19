@@ -4,7 +4,6 @@ TOCTitle: What's new for Unified Messaging in Exchange 2013
 ms:assetid: a444ef2d-d893-408e-adf9-c9d8a8b07593
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150545(v=EXCHG.150)
 ms:contentKeyID: 47560068
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

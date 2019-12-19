@@ -4,7 +4,6 @@ TOCTitle: Remove an In-Place eDiscovery search
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 78461a78-1255-4a26-9d36-c6b8eb82a4f9
 mtps_version: v=EXCHG.150

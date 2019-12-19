@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable an informational announcement in Exchange Online
 ms.collection: exchange-online

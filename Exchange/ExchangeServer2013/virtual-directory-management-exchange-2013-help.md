@@ -4,7 +4,6 @@ TOCTitle: Virtual directory management
 ms:assetid: 1af30fd5-621c-4acb-b6df-d8fa64d719ba
 ms:mtpsurl: https://technet.microsoft.com/library/Ff952752(v=EXCHG.150)
 ms:contentKeyID: 49289186
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

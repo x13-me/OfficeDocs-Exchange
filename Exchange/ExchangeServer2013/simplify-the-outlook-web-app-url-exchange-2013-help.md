@@ -4,7 +4,6 @@ TOCTitle: Simplify the Outlook Web App URL
 ms:assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998359(v=EXCHG.150)
 ms:contentKeyID: 53957625
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

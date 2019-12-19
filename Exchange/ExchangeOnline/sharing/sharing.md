@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7a7bc6fe-3ab8-4d39-a655-ec3390a1437e
-ms.date: 3/9/2015
 ms.reviewer: 
 title: Sharing in Exchange Online
 ms.collection: 

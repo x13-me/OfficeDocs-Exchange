@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b6e696ce-c848-475b-a598-9035677497e2
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Allow users to make calls in Exchange Online
 ms.collection: exchange-online

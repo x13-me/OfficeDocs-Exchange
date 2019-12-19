@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cb245028-0b86-4171-879e-934dd35fa626
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Allow users in the same dial plan to receive faxes in Exchange Online
 ms.collection: exchange-online

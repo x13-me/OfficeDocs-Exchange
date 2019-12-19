@@ -4,7 +4,6 @@ TOCTitle: Move an address list
 ms:assetid: c843bbd5-6c0e-41e1-b749-7ae87c1beb25
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124534(v=EXCHG.150)
 ms:contentKeyID: 49289405
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

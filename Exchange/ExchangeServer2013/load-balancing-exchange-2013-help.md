@@ -4,7 +4,6 @@ TOCTitle: Load balancing
 ms:assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms:mtpsurl: https://technet.microsoft.com/library/JJ898588(v=EXCHG.150)
 ms:contentKeyID: 50874017
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

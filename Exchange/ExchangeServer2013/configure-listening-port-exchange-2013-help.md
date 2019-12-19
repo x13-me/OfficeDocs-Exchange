@@ -4,7 +4,6 @@ TOCTitle: Configure the listening port
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1
 mtps_version: v=EXCHG.150

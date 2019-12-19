@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 33f4f464-9baa-48af-bf5e-a0d55bb45f60
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Change a SIP address in Exchange Online
 ms.collection: exchange-online

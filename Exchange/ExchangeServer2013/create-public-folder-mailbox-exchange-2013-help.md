@@ -4,7 +4,6 @@ TOCTitle: Create a public folder mailbox
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 mtps_version: v=EXCHG.150

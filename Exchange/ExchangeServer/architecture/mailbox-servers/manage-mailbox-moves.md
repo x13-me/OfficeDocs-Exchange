@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
-ms.date:
 ms.reviewer:
 title: Manage on-premises mailbox moves in Exchange Server
 ms.collection: exchange-server

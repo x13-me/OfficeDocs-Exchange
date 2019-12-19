@@ -4,7 +4,6 @@ TOCTitle: IIS 6 Compatibility components not installed_LonghornIIS6MetabaseNotIn
 ms:assetid: 0bd52987-d3cc-496c-ac8c-d35591405195
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis6metabasenotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628802
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

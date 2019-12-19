@@ -4,7 +4,6 @@ TOCTitle: DTMF interface
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: 2c7c9d8a-ed12-4dcf-a5b7-3cea0e785e49
 mtps_version: v=EXCHG.150

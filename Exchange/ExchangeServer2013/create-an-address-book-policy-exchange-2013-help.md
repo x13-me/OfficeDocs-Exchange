@@ -4,7 +4,6 @@ TOCTitle: Create an address book policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
 mtps_version: v=EXCHG.150

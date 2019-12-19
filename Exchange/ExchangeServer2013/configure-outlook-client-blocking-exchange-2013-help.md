@@ -4,7 +4,6 @@ TOCTitle: Configure Outlook client blocking
 ms:assetid: 3a579c83-8bc7-4adc-a25c-8eb6eed7220c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335207(v=EXCHG.150)
 ms:contentKeyID: 50873794
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

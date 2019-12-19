@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d93a037-5820-41d3-9206-69f534414daf
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the primary way for Outlook Voice Access users to search in Exchange Online
 ms.collection: exchange-online

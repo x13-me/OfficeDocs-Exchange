@@ -4,7 +4,6 @@ TOCTitle: Set the partner fax server URI to allow faxing
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 12/9/2016
 ms.reviewer:
 ms.assetid: 77a9013b-d76b-4af2-8b2c-cef435cf67af
 mtps_version: v=EXCHG.150

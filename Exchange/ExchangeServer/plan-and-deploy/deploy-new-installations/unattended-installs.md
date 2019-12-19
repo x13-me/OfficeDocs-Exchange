@@ -5,7 +5,6 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
-ms.date:
 ms.reviewer: 
 title: Use unattended mode in Exchange Setup
 ms.collection:

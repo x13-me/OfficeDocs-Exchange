@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4e351027-1a96-42c6-b4b2-8218d2070f25
-ms.date: 6/23/2017
 ms.reviewer: 
 title: Enable or Disable POP3 or IMAP4 access for a user
 ms.collection: 

@@ -4,7 +4,6 @@ TOCTitle: UserApplication role
 ms:assetid: a4621e45-53db-42f7-a5d7-c1900a154b4e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657476(v=EXCHG.150)
 ms:contentKeyID: 49289361
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

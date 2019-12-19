@@ -4,7 +4,6 @@ TOCTitle: Configure the primary way for Outlook Voice Access users to search
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 3d93a037-5820-41d3-9206-69f534414daf
 mtps_version: v=EXCHG.150

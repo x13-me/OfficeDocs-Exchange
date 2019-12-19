@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
-ms.date: 
 ms.reviewer: 
 title: Create a discovery mailbox
 ms.collection: 

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-ms.date: 7/5/2018
 ms.reviewer:
 title: Assign certificates to Exchange Server services
 ms.collection:

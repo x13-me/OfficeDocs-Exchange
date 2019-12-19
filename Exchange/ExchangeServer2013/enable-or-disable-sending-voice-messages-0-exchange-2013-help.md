@@ -4,7 +4,6 @@ TOCTitle: Enable or disable sending voice messages to users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 mtps_version: v=EXCHG.150

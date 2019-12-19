@@ -4,7 +4,6 @@ TOCTitle: Managed Store
 ms:assetid: efdaf80b-335c-491c-8eb5-1fafd297e8a2
 ms:mtpsurl: https://technet.microsoft.com/library/Dn792020(v=EXCHG.150)
 ms:contentKeyID: 62613984
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

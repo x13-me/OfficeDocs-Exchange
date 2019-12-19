@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Configure mobile phones to access email
 ms.collection: exchange-server

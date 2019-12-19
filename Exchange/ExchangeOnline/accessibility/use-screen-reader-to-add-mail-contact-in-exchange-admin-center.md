@@ -4,7 +4,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 723ab221-3abe-40ee-8143-eee45e9d0519
-ms.date: 
 ms.reviewer: 
 manager: serdars
 description: Admins can learn how to use a screen reader to create a new mail contact in the Exchange admin center (EAC) in Exchange Online.

@@ -4,7 +4,6 @@ TOCTitle: Offline address book procedures
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 mtps_version: v=EXCHG.150

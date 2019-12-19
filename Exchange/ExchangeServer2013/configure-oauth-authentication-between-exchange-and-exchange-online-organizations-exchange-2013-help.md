@@ -4,7 +4,6 @@ TOCTitle: Configure OAuth authentication between Exchange and Exchange Online or
 ms:assetid: f703e153-98e2-4268-8a6e-07a86b0a1d22
 ms:mtpsurl: https://technet.microsoft.com/library/Dn594521(v=EXCHG.150)
 ms:contentKeyID: 61200240
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

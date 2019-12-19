@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
-ms.date: 6/24/2018
 ms.reviewer: 
 title: UM and voice mail terminology in Exchange Online
 ms.collection: exchange-online

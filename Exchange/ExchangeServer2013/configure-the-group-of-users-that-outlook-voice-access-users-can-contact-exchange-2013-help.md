@@ -4,7 +4,6 @@ TOCTitle: Configure the group of users that Outlook Voice Access users can conta
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
 mtps_version: v=EXCHG.150

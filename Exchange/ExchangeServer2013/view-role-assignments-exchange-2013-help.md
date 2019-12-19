@@ -4,7 +4,6 @@ TOCTitle: View role assignments
 ms:assetid: 0be4def9-af6d-476a-9c97-7155ae11b587
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335086(v=EXCHG.150)
 ms:contentKeyID: 49289159
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

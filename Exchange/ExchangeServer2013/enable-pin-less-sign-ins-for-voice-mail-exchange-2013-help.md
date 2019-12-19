@@ -4,7 +4,6 @@ TOCTitle: Enable PIN-less sign-Ins for voice mail
 ms:assetid: 54133753-317c-42ef-9b0d-ca9f2d2d6bd7
 ms:mtpsurl: https://technet.microsoft.com/library/Gg602127(v=EXCHG.150)
 ms:contentKeyID: 49315417
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

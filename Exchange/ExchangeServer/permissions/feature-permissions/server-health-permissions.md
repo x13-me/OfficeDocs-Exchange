@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
-ms.date: 6/8/2018
 ms.reviewer:
 title: Server health and performance permissions
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Place a mailbox on Litigation Hold
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 mtps_version: v=EXCHG.150

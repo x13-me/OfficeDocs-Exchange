@@ -4,7 +4,6 @@ TOCTitle: Information Rights Management
 ms:assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638140(v=EXCHG.150)
 ms:contentKeyID: 49319921
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178
-ms.date: 12/9/2016
 ms.reviewer: 
 title: Enable faxing for a group of users in Exchange Online
 ms.collection: exchange-online

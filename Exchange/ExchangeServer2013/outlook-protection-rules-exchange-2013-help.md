@@ -4,7 +4,6 @@ TOCTitle: Outlook protection rules
 ms:assetid: bd7d0ad7-1f8e-46da-a74b-58c58f3eff93
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638178(v=EXCHG.150)
 ms:contentKeyID: 49319928
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

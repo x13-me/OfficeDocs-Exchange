@@ -4,7 +4,6 @@ TOCTitle: Transport rule actions
 ms:assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998315(v=EXCHG.150)
 ms:contentKeyID: 49361077
-ms.date: 05/03/2017
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

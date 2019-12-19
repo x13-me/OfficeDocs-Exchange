@@ -4,7 +4,6 @@ TOCTitle: Protect voice mail
 ms:assetid: a88d41d5-2e70-4193-bcd3-dec50dff412b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351041(v=EXCHG.150)
 ms:contentKeyID: 49315484
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

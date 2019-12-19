@@ -5,7 +5,6 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
-ms.date: 4/19/2018
 ms.reviewer: 
 title: Third-party copyright notices
 ms.collection:

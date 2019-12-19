@@ -4,7 +4,6 @@ TOCTitle: Configure the IP address
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
 mtps_version: v=EXCHG.150

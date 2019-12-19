@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
-ms.date: 
 ms.reviewer: 
 title: Remove an Outlook on the web mailbox policy from Exchange Online
 ms.collection: 

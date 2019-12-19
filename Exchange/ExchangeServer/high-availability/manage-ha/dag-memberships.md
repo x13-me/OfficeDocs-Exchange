@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
-ms.date: 7/9/2018
 ms.reviewer:
 title: Manage database availability group membership
 ms.collection: exchange-server

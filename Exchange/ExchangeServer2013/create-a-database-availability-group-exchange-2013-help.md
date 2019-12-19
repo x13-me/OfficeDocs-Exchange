@@ -4,7 +4,6 @@ TOCTitle: Create a database availability group
 ms:assetid: d6b98299-e203-488b-af73-50753fe152c8
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351172(v=EXCHG.150)
 ms:contentKeyID: 48385609
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -4,7 +4,6 @@ TOCTitle: Place a mailbox on retention hold
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 mtps_version: v=EXCHG.150

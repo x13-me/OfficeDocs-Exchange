@@ -4,7 +4,6 @@ TOCTitle: Limits for public folders
 ms:assetid: 709b075e-9584-484b-bcaa-e781c26497b4
 ms:mtpsurl: https://technet.microsoft.com/library/Dn594582(v=EXCHG.150)
 ms:contentKeyID: 61218734
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

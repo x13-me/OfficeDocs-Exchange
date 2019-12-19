@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting Outlook.Protocol Health Set
 ms:assetid: 8a040c7e-ba9c-4163-b02b-ad59263fa151
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.outlook.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720830
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

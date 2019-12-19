@@ -4,7 +4,6 @@ TOCTitle: Delete a UM dial plan
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128
 mtps_version: v=EXCHG.150

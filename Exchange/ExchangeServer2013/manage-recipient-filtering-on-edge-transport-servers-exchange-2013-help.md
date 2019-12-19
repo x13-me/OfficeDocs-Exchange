@@ -4,7 +4,6 @@ TOCTitle: Manage recipient filtering on Edge Transport servers
 ms:assetid: f2d0041f-2872-4669-95ec-443233f4956d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125187(v=EXCHG.150)
 ms:contentKeyID: 49287411
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

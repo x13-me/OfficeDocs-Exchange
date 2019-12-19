@@ -4,7 +4,6 @@ TOCTitle: Domain Controller Override is set in the Registry_ConfigDCHostNameMism
 ms:assetid: 3aef5470-d510-4b59-a4b6-36d274a984ae
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.configdchostnamemismatch(v=EXCHG.150)
 ms:contentKeyID: 46628888
-ms.date: 12/15/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

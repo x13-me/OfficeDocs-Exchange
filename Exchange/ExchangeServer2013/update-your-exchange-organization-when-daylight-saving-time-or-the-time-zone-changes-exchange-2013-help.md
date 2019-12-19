@@ -4,7 +4,6 @@ TOCTitle: Update your Exchange organization when Daylight Saving Time or the tim
 ms:assetid: 5b12615c-24cf-4f46-bf3c-2334dc734ef8
 ms:mtpsurl: https://technet.microsoft.com/library/Hh530051(v=EXCHG.150)
 ms:contentKeyID: 66452205
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

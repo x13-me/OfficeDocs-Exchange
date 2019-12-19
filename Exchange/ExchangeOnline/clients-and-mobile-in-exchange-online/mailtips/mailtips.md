@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
-ms.date: 
 ms.reviewer: 
 title: MailTips
 ms.collection: 

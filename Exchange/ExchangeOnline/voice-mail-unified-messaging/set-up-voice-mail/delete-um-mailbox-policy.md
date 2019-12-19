@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c8758464-3c52-4dd3-b2a6-142a99bb0628
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Delete a UM mailbox policy in Exchange Online
 ms.collection: exchange-online

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
-ms.date: 7/9/2018
 ms.reviewer:
 title: Dial tone portability
 ms.collection: exchange-server

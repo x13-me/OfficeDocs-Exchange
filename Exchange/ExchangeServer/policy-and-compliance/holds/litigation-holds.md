@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
-ms.date: 7/6/2018
 ms.reviewer:
 title: Place a mailbox on Litigation Hold
 ms.collection: exchange-server

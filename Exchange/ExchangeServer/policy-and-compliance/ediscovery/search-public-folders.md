@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1845e557-be01-4921-8aa1-88da2b59c2ba
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Search and place a hold on public folders using In-Place eDiscovery
 ms.collection: exchange-server

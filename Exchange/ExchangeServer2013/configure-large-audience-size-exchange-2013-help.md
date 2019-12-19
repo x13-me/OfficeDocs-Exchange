@@ -4,7 +4,6 @@ TOCTitle: Configure the large audience size for your organization
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 mtps_version: v=EXCHG.150

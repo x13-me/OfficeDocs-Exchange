@@ -4,7 +4,6 @@ TOCTitle: Export eDiscovery search results to a PST file
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 mtps_version: v=EXCHG.150

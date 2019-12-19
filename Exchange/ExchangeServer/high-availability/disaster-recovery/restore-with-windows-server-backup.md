@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2d0f31dc-eb32-451a-8852-591269026506
-ms.date: 2/19/2016
 ms.reviewer:
 title: Use Windows Server Backup to restore a backup of Exchange
 ms.collection: exchange-server

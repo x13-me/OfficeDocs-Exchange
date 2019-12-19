@@ -4,7 +4,6 @@ TOCTitle: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 1583674f-5a57-45fd-8125-087d1624e686
 mtps_version: v=EXCHG.150

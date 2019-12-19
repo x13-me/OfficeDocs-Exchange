@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
-ms.date: 7/5/2018
 ms.reviewer:
 title: Connect a disabled mailbox
 ms.collection: exchange-server

@@ -4,7 +4,6 @@ TOCTitle: Change user throttling settings for specific users
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Active Manager
 ms.collection: exchange-server

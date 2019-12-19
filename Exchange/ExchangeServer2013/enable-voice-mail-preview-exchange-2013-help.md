@@ -4,7 +4,6 @@ TOCTitle: Enable Voice Mail Preview for users
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 206a5d2b-27c9-4e9b-a29a-6ddffaa07109
 mtps_version: v=EXCHG.150

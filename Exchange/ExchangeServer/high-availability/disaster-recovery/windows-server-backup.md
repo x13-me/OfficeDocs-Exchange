@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Using Windows Server Backup to back up and restore Exchange data
 ms.collection:

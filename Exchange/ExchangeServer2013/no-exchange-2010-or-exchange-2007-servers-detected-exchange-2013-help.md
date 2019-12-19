@@ -4,7 +4,6 @@ TOCTitle: No Exchange 2010 or Exchange 2007 servers detected
 ms:assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.noe14serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628970
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

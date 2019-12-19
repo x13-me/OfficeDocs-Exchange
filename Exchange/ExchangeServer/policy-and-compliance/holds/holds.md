@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
-ms.date: 7/6/2018
 ms.reviewer:
 title: In-Place Hold and Litigation Hold in Exchange Server
 ms.collection: exchange-server

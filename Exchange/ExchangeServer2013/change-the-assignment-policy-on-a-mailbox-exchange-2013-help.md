@@ -4,7 +4,6 @@ TOCTitle: Change the assignment policy on a mailbox
 ms:assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

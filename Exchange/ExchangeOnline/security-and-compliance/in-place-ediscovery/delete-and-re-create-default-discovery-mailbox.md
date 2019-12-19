@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Delete and re-create the default discovery mailbox in Exchange
 ms.collection: 

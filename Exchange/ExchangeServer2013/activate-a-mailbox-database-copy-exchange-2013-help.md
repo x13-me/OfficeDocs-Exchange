@@ -4,7 +4,6 @@ TOCTitle: Activate a mailbox database copy
 ms:assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364750(v=EXCHG.150)
 ms:contentKeyID: 48385619
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

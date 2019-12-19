@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f76472fd-aa1a-4cd8-8e26-cc674421d375
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Create business hours navigation menus in Exchange Online
 ms.collection: exchange-online

@@ -4,7 +4,6 @@ TOCTitle: Using OAuth authentication to support eDiscovery in an Exchange hybrid
 ms:assetid: b069f8db-fbe1-4047-ad97-d00172ee6a12
 ms:mtpsurl: https://technet.microsoft.com/library/Dn497703(v=EXCHG.150)
 ms:contentKeyID: 61310597
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

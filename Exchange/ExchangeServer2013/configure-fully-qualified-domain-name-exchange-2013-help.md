@@ -4,7 +4,6 @@ TOCTitle: Configure a fully qualified domain name
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
 mtps_version: v=EXCHG.150

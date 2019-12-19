@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57e4bf22-eeae-42a5-beb3-d68d06489592
-ms.date: 7/9/2018
 ms.reviewer:
 title: Datacenter Activation Coordination mode
 ms.collection: exchange-server

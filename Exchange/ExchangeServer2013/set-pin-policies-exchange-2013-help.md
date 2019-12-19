@@ -4,7 +4,6 @@ TOCTitle: Set Outlook Voice Access PIN policies
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
 mtps_version: v=EXCHG.150

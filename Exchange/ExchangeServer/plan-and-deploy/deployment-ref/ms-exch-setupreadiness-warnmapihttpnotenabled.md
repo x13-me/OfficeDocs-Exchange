@@ -7,7 +7,6 @@ f1_keywords:
 - ms.exch.setupreadiness.WarnMapiHttpNotEnabled
 ms.author: v-mapenn
 ms.assetid: 8c7e2b60-2973-47b1-ac1c-3c3e96824aee
-ms.date: 7/22/2015
 ms.reviewer: 
 title: MAPI over HTTP isn't enabled [WarnMapiHttpNotEnabled]
 ms.collection: exchange-server

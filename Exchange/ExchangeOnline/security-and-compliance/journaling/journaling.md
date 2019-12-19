@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
-ms.date: 
 ms.reviewer: 
 title: Journaling in Exchange Online
 ms.collection: 

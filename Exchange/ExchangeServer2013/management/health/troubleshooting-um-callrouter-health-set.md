@@ -4,7 +4,6 @@ TOCTitle: Troubleshooting UM.CallRouter Health Set
 ms:assetid: 444a9038-0952-4823-98fb-99fa59f4a378
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.um.callrouter(v=EXCHG.150)
 ms:contentKeyID: 49720778
-ms.date:
 ms.reviewer:
 manager: serdars
 ms.author: v-mapenn

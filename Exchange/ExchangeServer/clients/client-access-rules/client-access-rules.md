@@ -9,7 +9,6 @@ title: Client Access Rules in Exchange 2019
 ms.collection: exchange-server
 audience: ITPro
 ms.service: exchange-server-it-pro
-ms.date: 9/12/2018
 ms.reviewer: 
 manager: serdars
 

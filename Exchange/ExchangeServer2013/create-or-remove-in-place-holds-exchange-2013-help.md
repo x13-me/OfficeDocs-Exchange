@@ -4,7 +4,6 @@ TOCTitle: Create or remove an In-Place Hold
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 mtps_version: v=EXCHG.150

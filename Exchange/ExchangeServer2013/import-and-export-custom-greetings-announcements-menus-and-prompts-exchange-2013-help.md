@@ -4,7 +4,6 @@ TOCTitle: Import and export custom greetings, announcements, menus, and prompts
 ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/library/Ee681667(v=EXCHG.150)
 ms:contentKeyID: 53366393
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

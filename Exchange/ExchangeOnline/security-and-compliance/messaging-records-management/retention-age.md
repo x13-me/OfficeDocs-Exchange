@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
-ms.date: 7/27/2016
 ms.reviewer: 
 title: How retention age is calculated
 ms.collection: 

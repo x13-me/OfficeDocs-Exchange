@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Add an extension number in Exchange Online
 ms.collection: exchange-online

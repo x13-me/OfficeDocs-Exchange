@@ -5,7 +5,6 @@ ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
-ms.date: 
 ms.reviewer: 
 title: Manage message approval in Exchange Online
 ms.collection: 

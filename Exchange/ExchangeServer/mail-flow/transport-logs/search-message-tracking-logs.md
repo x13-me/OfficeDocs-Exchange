@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
-ms.date: 7/10/2018
 ms.reviewer: 
 title: Search message tracking logs
 ms.collection:

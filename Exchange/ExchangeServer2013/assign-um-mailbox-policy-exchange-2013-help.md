@@ -4,7 +4,6 @@ TOCTitle: Assign a UM mailbox policy
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 mtps_version: v=EXCHG.150

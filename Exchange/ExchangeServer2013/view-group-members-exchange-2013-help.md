@@ -4,7 +4,6 @@ TOCTitle: View members of a dynamic distribution group
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 mtps_version: v=EXCHG.150

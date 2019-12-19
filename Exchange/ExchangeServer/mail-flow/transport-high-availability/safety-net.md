@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
-ms.date: 7/10/2018
 ms.reviewer: 
 title: Safety Net in Exchange Server
 ms.collection: exchange-server

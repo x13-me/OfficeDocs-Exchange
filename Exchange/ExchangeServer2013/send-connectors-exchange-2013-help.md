@@ -4,7 +4,6 @@ TOCTitle: Send connectors
 ms:assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998662(v=EXCHG.150)
 ms:contentKeyID: 49289286
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

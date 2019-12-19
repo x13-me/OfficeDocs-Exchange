@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
-ms.date: 7/8/2018
 ms.reviewer:
 title: Apply a retention policy to mailboxes in Exchange Server
 ms.collection: exchange-server

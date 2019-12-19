@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
-ms.date:
 ms.reviewer:
 title: Manage address lists in Exchange Online
 ms.collection:

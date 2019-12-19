@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
-ms.date: 6/4/2018
 ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange
 ms.collection: exchange-server

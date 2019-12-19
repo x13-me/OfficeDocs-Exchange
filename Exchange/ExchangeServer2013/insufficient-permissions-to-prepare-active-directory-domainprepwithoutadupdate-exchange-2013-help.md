@@ -4,7 +4,6 @@ TOCTitle: Insufficient permissions to prepare Active Directory_DomainPrepWithout
 ms:assetid: 4283c4b9-983f-460e-a5de-42b2772eae0d
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.domainprepwithoutadupdate(v=EXCHG.150)
 ms:contentKeyID: 46628878
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn

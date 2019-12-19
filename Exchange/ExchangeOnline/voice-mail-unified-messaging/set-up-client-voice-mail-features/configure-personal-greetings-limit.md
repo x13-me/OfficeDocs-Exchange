@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf
-ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure the limit on personal greetings for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online

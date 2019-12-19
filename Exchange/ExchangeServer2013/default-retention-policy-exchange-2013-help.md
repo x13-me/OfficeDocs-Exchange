@@ -4,7 +4,6 @@ TOCTitle: Default Retention Policy in Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 mtps_version: v=EXCHG.150

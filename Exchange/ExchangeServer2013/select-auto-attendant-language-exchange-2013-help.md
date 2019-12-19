@@ -4,7 +4,6 @@ TOCTitle: Select the language for an auto attendant
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer:
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609
 mtps_version: v=EXCHG.150

@@ -4,7 +4,6 @@ TOCTitle: Delivery agents and Delivery Agent connectors
 ms:assetid: 38c942ee-b59d-47ec-87eb-bebad441ada5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638118(v=EXCHG.150)
 ms:contentKeyID: 49300477
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
 ms.author: v-mapenn
