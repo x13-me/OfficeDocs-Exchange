@@ -292,7 +292,7 @@ The following table contains a list of the filterable properties for the *Conten
 <td>
 
 ```powershell
-ContentFilter {Sender -eq 'tony'}
+ContentFilter "Sender -eq 'tony'"
 ```
 
 </td>
