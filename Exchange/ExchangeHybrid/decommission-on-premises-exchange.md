@@ -195,7 +195,7 @@ The graphic below describes the actual end state:
    Exchange Server 2016 or later:
    ```
    Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
-   ```
+   ```PowerShell
 
    > [!NOTE]
    > If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings
