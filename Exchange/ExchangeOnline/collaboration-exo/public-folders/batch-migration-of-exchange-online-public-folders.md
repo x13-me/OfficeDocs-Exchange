@@ -108,7 +108,7 @@ The .csv file needs to contain the following columns:
 
 An example .csv:
 
-```PowerShell
+```csv
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
 "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
