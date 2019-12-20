@@ -193,7 +193,7 @@ The graphic below describes the actual end state:
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
    Exchange Server 2016 or later:
-   ```
+   ```PowerShell
    Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
