@@ -39,12 +39,12 @@ You only need to update the public folder hierarchy if you want to manually invo
 
 This example updates the public folder hierarchy on the public folder mailbox PF_marketing and suppresses the command's output.
 
-```
+```PowerShell
 Update-PublicFolderMailbox -Identity PF_marketing -InvokeSynchronizer -SuppressStatus
 ```
 
 This example updates all public folder mailboxes and suppresses the command's output.
 
-```
+```PowerShell
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
