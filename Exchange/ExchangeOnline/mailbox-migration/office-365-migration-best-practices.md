@@ -230,7 +230,7 @@ IMAP, cutover, and staged Exchange migrations are performed by using the Migrati
 
 Customers now can specify migration concurrency (for example, the number of mailboxes to migrate simultaneously) by using Windows PowerShell. The default is 20 mailboxes. After you create a migration batch, you can use the following Windows PowerShell cmdlet to increase this to a maximum of 100.
 
-```
+``` PowerShell
 Set-MigrationEndPoint <Identity> -MaxConcurrentMigrations <value between 1 and 100>
 ```
 
