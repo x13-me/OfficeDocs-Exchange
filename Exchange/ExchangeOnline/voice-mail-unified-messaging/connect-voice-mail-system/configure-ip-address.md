@@ -52,18 +52,18 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example configures a UM IP gateway named `MyUMIPGateway` with an IP address of 10.10.10.1.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.1
 ```
 
 This example configures a UM IP gateway named `MyUMIPGateway` with an IP address of 10.10.10.10 and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.10 -Port 5061
 ```
 
 This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming and outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
