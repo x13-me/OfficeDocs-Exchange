@@ -64,7 +64,7 @@ This example changes an E.164 number for Tony Smith, a UM-enabled user.
 > [!NOTE]
 > Before you change an E.164 number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) E.164 number and it will be 0 in the list.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(1)="eum:+14255550123;phone-context=MyE.164DialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
