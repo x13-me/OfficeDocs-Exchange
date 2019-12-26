@@ -51,6 +51,6 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the maximum recording duration to 10 minutes for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -MaxRecordingDuration 10
 ```
