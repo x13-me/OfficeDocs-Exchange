@@ -54,12 +54,12 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example allows users who are linked with the UM mailbox policy `UMDialPlan Default Policy` to use TCP with port 5060 for the partner fax server `faxserver1`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy "UMDialPlan Default Policy" -FaxServerURI sip:faxserver1.contoso.com:5060;transport=tcp
 ```
 
 This example allows users who are linked with the UM mailbox policy `UMDialPlan Default Policy` to use TLS with port 5061 for the partner fax server `faxserver2`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy "UMDialPlan Default Policy" -FaxServerURI sip:faxserver2.contoso.com:5061;transport=tls
 ```

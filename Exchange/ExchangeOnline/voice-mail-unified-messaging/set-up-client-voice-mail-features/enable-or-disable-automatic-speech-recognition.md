@@ -44,12 +44,12 @@ For additional management tasks related to UM or voice mail users, see [Voice ma
 
 This example enables ASR for a UM-enabled user named `tonysmith`.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $true
 ```
 
 This example disables ASR for a UM-enabled user named `tonysmith`.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $false
 ```
