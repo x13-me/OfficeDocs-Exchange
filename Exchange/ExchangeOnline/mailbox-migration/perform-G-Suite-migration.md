@@ -253,7 +253,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 3. Run the following command:
 
-   ```
+   ```PowerShell
    Test-MigrationServerAvailability -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net
    ```
 
@@ -261,7 +261,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 5. If successful, run the following command:
 
-   ```
+   ```PowerShell
    New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net -Name gmailEndpoint
    ```
 

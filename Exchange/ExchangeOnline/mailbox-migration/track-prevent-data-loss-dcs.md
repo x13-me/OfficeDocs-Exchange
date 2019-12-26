@@ -43,13 +43,13 @@ If the migration receives a grade of **Investigate**, then you can approve skipp
 
 If you are using batches, then run:
 
-```
+```PowerShell
 Set-MigrationBatch -ApproveSkippedItems or Set-MigrationUser -ApproveSkippedItems
 ```
 
 If you are using MoveRequests directly, then run:
 
-```
+```PowerShell
 Set-MoveRequest -SkippedItemApprovalTime $([DateTime]::UtcNow)
 ```
 
