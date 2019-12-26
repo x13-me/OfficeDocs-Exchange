@@ -59,6 +59,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the input failures before disconnect to 5 on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -InputFailuresBeforeDisconnect 5
 ```

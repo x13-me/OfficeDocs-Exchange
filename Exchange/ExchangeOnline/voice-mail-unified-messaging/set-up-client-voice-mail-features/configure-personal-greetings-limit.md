@@ -49,6 +49,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example configures the maximum greeting duration on the UM mailbox policy `MyUMMailboxPolicy` to 3 minutes.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy MaxGreetingDuration 3
 ```
