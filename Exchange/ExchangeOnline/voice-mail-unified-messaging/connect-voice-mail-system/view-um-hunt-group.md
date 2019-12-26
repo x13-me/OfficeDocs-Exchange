@@ -43,13 +43,13 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 This example displays all the UM hunt groups in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMHuntGroup
 ```
 
 This example displays the details of a UM hunt group named `MyUMHuntGroup` in a formatted list.
 
-```
+```PowerShell
 Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 ```
 
