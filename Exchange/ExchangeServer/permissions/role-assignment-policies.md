@@ -54,13 +54,13 @@ After you've created the new assignment policy, you assign users to it. For more
 
 To create an explicit assignment policy that can be manually assigned to mailboxes, use the following syntax.
 
-```
+```powershell
 New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 ```
 
 This example creates the explicit assignment policy Limited Mailbox Configuration and assigns the `MyBaseOptions`, `MyAddressInformation`, and `MyDisplayName` roles to it.
 
-```
+```powershell
 New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
 ```
 
@@ -70,13 +70,13 @@ For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](ht
 
 To create a default assignment policy assigned to new mailboxes, use the following syntax.
 
-```
+```powershell
 New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
 ```
 
 This example creates the default assignment policy Limited Mailbox Configuration and assigns the `MyBaseOptions`, `MyAddressInformation`, and `MyDisplayName` roles to it.
 
-```
+```powershell
 New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
 ```
 
@@ -104,13 +104,13 @@ If you no longer need a management role assignment policy, you can remove it.
 
 To remove an assignment policy, use the following syntax.
 
-```
+```powershell
 Remove-RoleAssignmentPolicy <role assignment policy>
 ```
 
 This example removes the New York Temporary Users assignment policy.
 
-```
+```powershell
 Remove-RoleAssignmentPolicy "New York Temporary Users"
 ```
 
@@ -140,19 +140,19 @@ This procedure makes use of pipelining and the **Format-Table** cmdlet. For more
 
 To return a list of all assignment policies in your organization, use the following command.
 
-```
+```powershell
 Get-RoleAssignmentPolicy
 ```
 
 To return a list of specific properties for all the assignment policies in your organization, you can pipe the results to the **Format-Table** cmdlet and specify the properties you want in the list of results. Use the following syntax.
 
-```
+```powershell
 Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
 ```
 
 This example returns a list of all the assignment policies in your organization and includes the **Name** and **IsDefault** properties.
 
-```
+```powershell
 Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
 ```
 
@@ -170,13 +170,13 @@ This procedure makes use of pipelining and the **Format-List** cmdlet. For more 
 
 To view the details of a specific assignment policy, use the following syntax.
 
-```
+```powershell
 Get-RoleAssignmentPolicy <assignment policy name> | Format-List
 ```
 
 This example views the details about the Redmond Users - no Text Messaging assignment policy.
 
-```
+```powershell
 Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
 ```
 
@@ -194,7 +194,7 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 
 This example returns the default assignment policy.
 
-```
+```powershell
 Get-RoleAssignmentPolicy | Where {$_.IsDefault -eq $True}
 ```
 
@@ -212,13 +212,13 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 
 Use the following syntax.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<role assignment policy>"}
 ```
 
 This example finds all the mailboxes assigned the policy Vancouver End Users.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Vancouver End Users"}
 ```
 
@@ -235,13 +235,13 @@ You can change the management role assignment policy assigned to new mailboxes t
 
 To change the default assignment policy, use the following syntax.
 
-```
+```powershell
 Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
 ```
 
 This example sets the Vancouver End Users assignment policy as the default assignment policy.
 
-```
+```powershell
 Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 ```
 
@@ -266,13 +266,13 @@ For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](ht
 
 To create a management role assignment between a role and an assignment policy, use the following syntax.
 
-```
+```powershell
 New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
 ```
 
 This example creates the role assignment Seattle Users - Voicemail between the MyVoicemail role and the Seattle Users assignment policy.
 
-```
+```powershell
 New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
 ```
 
@@ -302,13 +302,13 @@ This procedure uses pipelining. For more information about pipelining, see [abou
 
 To remove a role from an assignment policy, use the following syntax.
 
-```
+```powershell
 Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
 ```
 
 This example removes the MyVoicemail management role, which enables users to manage their voice mail options, from the Seattle Users assignment policy.
 
-```
+```powershell
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
 ```
 
