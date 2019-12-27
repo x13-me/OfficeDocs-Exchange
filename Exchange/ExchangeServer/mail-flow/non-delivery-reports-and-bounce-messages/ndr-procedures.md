@@ -553,6 +553,6 @@ For example, if you want the NDR to display the text `Please contact the Help De
 
 This is an example of a custom NDR text value that uses HTML tags and escape codes.
 
-```console
+```
 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="https://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
