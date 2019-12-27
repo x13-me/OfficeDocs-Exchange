@@ -49,19 +49,19 @@ Here are some reasons that you might want to modify the default SMTP banner:
 
 Use the following syntax:
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity <ConnectorIdentity> -Banner "220 <Banner Text>"
 ```
 
 This example changes the SMTP banner on the Receive connector named Default Frontend Mailbox01 to the value 220 contoso.com.
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner "220 consoso.com"
 ```
 
 This example removes the custom SMTP banner, which returns the SMTP banner to the default value.
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner $null
 ```
 
@@ -71,7 +71,7 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
 
 1. Open a Telnet client on a computer that can access the Receive connector, and run the following command:
 
-   ```
+   ```PowerShell
    open <Connector FQDN or IP address><TCPPort>
    ```
 
