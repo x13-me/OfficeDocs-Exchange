@@ -42,7 +42,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands in the Exchange Management Shell to verify that the disabled mailbox that you want to connect to a user account exists and isn't a soft-deleted mailbox.
 
-  ```
+  ```PowerShell
   $dbs = Get-MailboxDatabase
   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,Database,DisconnectReason
   ```
@@ -81,19 +81,19 @@ Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a
 
 This example connects a user mailbox. The _Identity_ parameter specifies the disconnected mailbox in the Exchange database. The _User_ parameter specifies the Active Directory user account to reconnect the mailbox to.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
 ```
 
 This example connects a linked mailbox. The _Identity_ parameter specifies the disconnected mailbox in the Exchange database. The _LinkedMasterAccount_ parameter specifies the Active Directory user account in the account forest that you want to reconnect the mailbox to. The _Alias_ parameter specifies the alias, which is the portion of the email address on the left side of the at (@) symbol, for the reconnected mailbox.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
 ```
 
 This example connects a shared mailbox.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
 ```
 
@@ -112,7 +112,7 @@ To verify that you've successfully connected a disabled mailbox to a user accoun
 
 - In theExchange Management Shell,replace \<Identity\> with the name of the user account and run the following command:
 
-  ```
+  ```PowerShell
   Get-User "<Identity>"
   ```
 
