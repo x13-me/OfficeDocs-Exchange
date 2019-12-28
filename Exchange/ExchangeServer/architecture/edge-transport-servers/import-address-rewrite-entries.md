@@ -63,7 +63,7 @@ When you create the CSV file, consider the following items:
 
 The following example shows how a CSV file can be populated with the optional _ExceptionList_ and _OutboundOnly_ parameters included:
 
-```
+```CSV
 Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
 "Wingtip UK",*.wingtiptoys.co.uk,tailspintoys.com,"legal.wingtiptoys.co.uk,finance.wingtiptoys.co.uk,support.wingtiptoys.co.uk",True
 "Wingtip USA",*.wingtiptoys.com,tailspintoys.com,"legal.wingtiptoys.com,finance.wingtiptoys.com,support.wingtiptoys.com,corp.wingtiptoys.com",True
@@ -74,13 +74,13 @@ Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
 
 To import the CSV file, use the following syntax:
 
-```
+```PowerShell
 Import-Csv <FileNameAndPath> | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
 ```
 
 This example imports the address rewrite entries from C:\My Documents\ImportAddressRewriteEntries.csv.
 
-```
+```CSV
 Import-Csv "C:\My Documents\ImportAddressRewriteEntries.csv" | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
 ```
 
@@ -90,12 +90,12 @@ To verify that you have successfully imported address rewrite entries from a CSV
 
 - To see all address rewrite entries, run the following command:
 
-  ```
+  ```PowerShell
   Get-AddressRewriteEntry
   ```
 
 - To see details about a specific address rewrite entry, replace _\<AddressRewriteIdentity\>_ with the name of the address rewrite entry, and run the following command:
 
-  ```
+  ```PowerShell
   Get-AddressRewriteEntry "<AddressRewriteIdentity>" | Format-List
   ```
