@@ -68,24 +68,24 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 In the following example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the discovery mailbox that was specified by the _TargetMailbox_ parameter when the search was created.
 
-```
+```PowerShell
 Start-MailboxSearch "Fabrikam Investigation"
 ```
 
 If you used the _EstimateOnly_ switch to get an estimate of the search results, you have to remove the switch before you can copy the search results. You also have to specify a discovery mailbox to copy to search results to. For example, say you created an estimate-only search by using the following command:
 
-```
+```PowerShell
 New-MailboxSearch "FY15 Q2 Financial Results" -StartDate "04/01/2015" -EndDate "06/30/2015" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
 
 ```
 
 To copy the results of this search to a discovery mailbox, you would run the following commands:
 
-```
+```PowerShell
 Set-MailboxSearch "FY15 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "FY15 Q2 Financial Results"
 ```
 

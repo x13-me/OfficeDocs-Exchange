@@ -101,11 +101,11 @@ This example creates the search Discovery-CaseId012 for items containing the key
 > [!IMPORTANT]
 > If you don't specify a search query, a date range, or a message type, all items in the source mailboxes or public folders are returned in the results. The results would be similar to selecting **Include all content** on the **Search query** page in the EAC.
 
-```
+```PowerShell
 New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2013" -EndDate "12/31/2015" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full -InPlaceHoldEnabled $true
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Discovery-CaseId012"
 ```
 
@@ -118,11 +118,11 @@ After using the Exchange Management Shell to create an In-Place eDiscovery searc
 
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015.
 
-```
+```PowerShell
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "HRCase090116"
 ```
 
@@ -130,11 +130,11 @@ Start-MailboxSearch "HRCase090116"
 
 This example creates an estimate-only search that searches all public folders in the organization for items sent between January 1, 2015 and June 30, 2015, and that contain the phrase "patent infringement". The search doesn't include any mailboxes. The **Start-MailboxSearch** cmdlet is used to start the estimate-only search.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Northwind Subpoena-All PFs" -AllPublicFolderSources $true -AllSourceMailboxes $false -SearchQuery "patent infringement" -StartDate "01/01/2015" -EndDate "06/30/2015" -TargetMailbox "Discovery Search Mailbox" -EstimateOnly
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Northwind Subpoena-All PFs"
 ```
 
@@ -142,11 +142,11 @@ Start-MailboxSearch "Northwind Subpoena-All PFs"
 
 This example searches all mailboxes and public folders for any content that contains the words "price list" and "Contoso" and that was sent after January 1, 2015. The **Start-MailboxSearch** cmdlet is use to run the search and copy the search results to the discovery mailbox.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Contoso Litigation" -AllSourceMailboxes $true -AllPublicFolderSources $true -SearchQuery '"price list" AND "contoso"' -StartDate "01/01/2015" -TargetMailbox "Discovery Search Mailbox"
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Contoso Litigation"
 ```
 
@@ -175,22 +175,22 @@ You can use the _EstimateOnly_ switch to get an estimate of the search results a
 
 For example, you would run the following commands to create a new search and then display an estimate of the search results:
 
-```
+```PowerShell
 New-MailboxSearch "FY15 Q2 Financial Results" -StartDate "04/01/2015" -EndDate "06/30/2015" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
 
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "FY15 Q2 Financial Results"
 ```
 
-```
+```PowerShell
 Get-MailboxSearch "FY15 Q2 Financial Results"
 ```
 
 To display specific information about the estimated search results from the previous example, you could run the following command:
 
-```
+```PowerShell
 Get-MailboxSearch "FY15 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
 
