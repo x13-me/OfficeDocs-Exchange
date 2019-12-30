@@ -61,7 +61,7 @@ When you set up the ASA credential, keep these guidelines in mind:
 
 3. Use the **Set-ADComputer** cmdlet to enable the AES 256 encryption cipher support used by Kerberos using this cmdlet syntax:
 
-   ```
+   ```PowerShell
    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
    ```
 
@@ -151,7 +151,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:17:47 ==========
 Creating a new session for implicit remoting of "Get-ExchangeServer" command...
 Destination servers that will be updated:
@@ -205,7 +205,7 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:34:35 ==========
 Destination servers that will be updated:
 Name                                                        PSComputerName
@@ -249,7 +249,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and no previous ASA credential was set.
 
-```
+```output
 Name                                 : CAS-1
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: <Not set>
@@ -258,7 +258,7 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and an ASA credential was previously set. The previous ASA credential and the date and time it was set are returned.
 
-```
+```output
 Name                                 : CAS-3
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: 7/15/2015 12:58:35 PM, tailspin\oldSharedServiceAccountName$
@@ -278,13 +278,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -F -Q <SPN>
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -F -Q http/mail.corp.tailspintoys.com
    ```
 
@@ -296,13 +296,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -S <SPN> <Account>$
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
    ```
 
@@ -314,13 +314,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -L <Account>$
    ```
 
    Where \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -L tailspin\EXCH2016ASA$
    ```
 
