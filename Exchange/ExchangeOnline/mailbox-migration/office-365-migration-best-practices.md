@@ -182,7 +182,7 @@ Before performance of the service degrades to the point where end-user performan
 
 The following are examples from an Exchange migration statistics report. They show the entries logged when the service-throttling threshold is exceeded.
 
-```
+```output
 1/25/2018 12:56:01 AM [BL2PRD0410CA012] Copy progress: 723/1456 messages, 225.8 MB (236,732,045 bytes)/416.5 MB (436,712,733 bytes).
 
 1/25/2018 12:57:53 AM [BL2PRD0410CA012] Move for mailbox '/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx' is stalled because DataMoveReplicationConstraint is not satisfied for the database 'NAMPRD04DG031-db081' (agent MailboxDatabaseReplication). Failure Reason: Database edbf0766-1f2a-4552-9115-bb3a53a8380b doesn't satisfy constraint SecondDatacenter. There are no available healthy database copies. Will wait until 1/25/2018 1:27:53 AM.
