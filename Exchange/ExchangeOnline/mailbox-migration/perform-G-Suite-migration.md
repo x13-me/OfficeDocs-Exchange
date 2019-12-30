@@ -205,7 +205,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-   ```
+   ```CSV
    EmailAddress
    will@fabrikaminc.net
    user123@fabrikaminc.net
@@ -275,7 +275,7 @@ During completion, another incremental sync is run to copy any changes that have
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-   ```
+   ```CSV
    EmailAddress
    will@fabrikaminc.net
    user123@fabrikaminc.net
@@ -283,7 +283,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 3. Run the following command:
 
-   ```
+   ```CSV
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
 
