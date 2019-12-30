@@ -348,7 +348,7 @@ To confirm that the authentication policy was applied to users:
 
 When an authentication policy blocks Basic authentication requests from a specific user for a specific protocol in Exchange Online, the response is `401 Unauthorized`. No additional information is returned to the client to avoid leaking any additional information about the blocked user. An example of the response looks like this:
 
-```
+```output
 HTTP/1.1 401 Unauthorized
 Server: Microsoft-IIS/10.0
 request-id: 413ee498-f337-4b0d-8ad5-50d900eb1f72
