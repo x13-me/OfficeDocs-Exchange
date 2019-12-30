@@ -198,7 +198,7 @@ You only need to perform this step if you aren't using AD CS to issue the client
 
 2. On any domain member server (for example, a domain controller or an Exchange server), open an elevated command prompt run the following command:
 
-    ```
+    ```console
     %windir%\system32\certutil.exe -enterprise -addstore NTAuth "C:\Data\CARoot.cer"
     ```
 
