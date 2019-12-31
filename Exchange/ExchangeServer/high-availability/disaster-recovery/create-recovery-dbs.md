@@ -37,13 +37,13 @@ Looking for other management tasks related to recovery databases? Check out [Rec
 
 This example creates the recovery database RDB1 on the Mailbox server MBX2.
 
-```
+```powershell
 New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
 ```
 
 This example creates the recovery database RDB2 on the Mailbox server MBX1 using a custom path for the database file and log folder.
 
-```
+```powershell
 New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
 ```
 
@@ -55,7 +55,7 @@ To verify that you've successfully created a recovery database, do the following
 
 - In the Exchange Management Shell, run the following command to display configuration information for the recovery database.
 
-  ```
+  ```powershell
   Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
   ```
 

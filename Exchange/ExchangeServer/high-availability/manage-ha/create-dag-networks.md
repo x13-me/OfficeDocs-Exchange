@@ -55,7 +55,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 This example creates the network ReplicationDagNetwork02 with a subnet of 10.0.0.0 and a bitmask of 8 in the DAG DAG1. Replication is enabled for the network, and an optional description of the network is also being added.
 
-```
+```powershell
 New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
 ```
 
@@ -67,7 +67,7 @@ To verify that you've successfully created a DAG network, do one of the followin
 
 - In the Exchange Management Shell, run the following command to verify the DAG network was created and to display DAG network configuration information.
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
   ```
 
