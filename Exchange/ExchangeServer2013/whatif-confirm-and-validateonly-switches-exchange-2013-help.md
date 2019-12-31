@@ -37,7 +37,7 @@ New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf
 
 When you run this example command, the following text is returned by the Shell:
 
-```txt
+```console
 What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
 ```
 
@@ -73,7 +73,7 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 When you run this example command, the following confirmation prompt is returned by the Shell:
 
-```txt
+```console
 Confirm
 Are you sure you want to perform this action?
 Enabling journal rule "Litigation Journal Rule".

@@ -142,7 +142,7 @@ The syntax to export files in Exchange 2013 is used any time you want to accept 
 
 The Shell must know that you want to save the data stored in the **FileData** property to your local computer. To do so, use the following syntax.
 
-```command line
+```console
 <cmdlet> | ForEach {<cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte}
 ```
 
