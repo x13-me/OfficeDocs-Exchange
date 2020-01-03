@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Assign eDiscovery permissions in Exchange
 ms.collection: 
