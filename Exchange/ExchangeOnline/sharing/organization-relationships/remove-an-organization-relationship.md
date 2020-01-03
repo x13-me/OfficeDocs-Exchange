@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3de9e885-73f5-4743-9b55-38ef59a387f2
+ms.date: 4/29/2016
 ms.reviewer: 
 title: Remove an organization relationship in Exchange Online
 ms.collection: 
@@ -44,7 +45,7 @@ To learn more about organization relationships, see [Organization relationships 
 
 This example removes the organization relationship Contoso.
 
-```
+```PowerShell
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
@@ -58,7 +59,7 @@ To verify that you have successfully removed the organization relationship, do o
 
 - Run the following command to verify the organization relationship information is removed.
 
-  ```
+  ```PowerShell
   Get-OrganizationRelationship | Format-List
   ```
 

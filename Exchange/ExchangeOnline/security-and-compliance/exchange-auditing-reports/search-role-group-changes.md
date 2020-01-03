@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
+ms.date: 
 ms.reviewer: 
 title: Search the role group changes or administrator audit logs in Exchange Online
 ms.collection: 
@@ -80,7 +81,7 @@ If you want to send audit log search results in an email attachment to a recipie
 
 To search the audit log for criteria you specify, use the following syntax.
 
-```
+```PowerShell
 Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
 ```
 
@@ -99,7 +100,7 @@ This example performs a search for all audit log entries with the following crit
 
 - **Parameters**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
 
-```
+```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
 ```
 
@@ -111,7 +112,7 @@ This example searches for changes made to a specific mailbox. This is useful if 
 
 - **Object ID**: contoso.com/Users/DavidS
 
-```
+```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
@@ -133,19 +134,19 @@ This procedure uses the following concepts:
 
 1. Decide the criteria you want to search for, run the **Search-AdminAuditLog** cmdlet, and store the results in a variable using the following command.
 
-    ```
+    ```PowerShell
     $Results = Search-AdminAuditLog <search criteria>
     ```
 
 2. Each audit log entry is stored as an array element in the variable `$Results`. You can select an array element by specifying its array element index. Array element indexes start at zero (0) for the first array element. For example, to retrieve the 5th array element, which has an index of 4, use the following command.
 
-    ```
+    ```PowerShell
     $Results[4]
     ```
 
 3. The previous command returns the log entry stored in array element 4. To see the contents of the **CmdletParameters** and **ModifiedProperties** fields for this log entry, use the following commands.
 
-    ```
+    ```PowerShell
     $Results[4].CmdletParameters
     $Results[4].ModifiedProperties
     ```
@@ -162,7 +163,7 @@ You can use Exchange Online PowerShell to search for audit log entries that meet
 
 To search the audit log for criteria you specify, use the following syntax.
 
-```
+```PowerShell
 New-AdminAuditLogSearch -Cmdlets <cmdlet1, cmdlet2, ...> -Parameters <parameter1, parameter2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$true | $false > -StatusMailRecipients <recipient1, recipient2, ...> -Name <string to include in subject>
 ```
 
@@ -180,7 +181,7 @@ This example performs a search for all audit log entries with the following crit
 
 The command sends the results to the davids@contoso.com SMTP address with "Mailbox limit changes" included in the subject line of the message.
 
-```
+```PowerShell
 New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima -StatusMailRecipients davids@contoso.com -Name "Mailbox limit changes"
 ```
 

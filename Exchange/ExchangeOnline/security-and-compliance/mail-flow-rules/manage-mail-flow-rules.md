@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
+ms.date: 7/11/2018
 ms.reviewer: 
 title: Manage mail flow rules in Exchange Online
 ms.collection: 
@@ -144,7 +145,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
 This example uses the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule) cmdlet to create a new mail flow rule that prepends "`External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
 
-```
+```PowerShell
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
 ```
 
@@ -158,7 +159,7 @@ To verify that you have successfully created a new mail flow rule, do the follow
 
 - From Exchange Online PowerShell, verify that you created the new mail flow rule successfully by running the following command (the example below verifies the rule created in Exchange Online PowerShell example above):
 
-  ```
+  ```PowerShell
   Get-TransportRule "Mark messages from the Internet to Sales DG"
   ```
 
@@ -177,19 +178,19 @@ To verify that you have successfully created a new mail flow rule, do the follow
 
 The following example gives you a list of all rules configured in your organization:
 
-```
+```PowerShell
 Get-TransportRule
 ```
 
 To view the properties of a specific mail flow rule, you provide the name of that rule or its GUID. It is usually helpful to send the output to the **Format-List** cmdlet to format the properties. The following example returns all the properties of the mail flow rule named Sender is a member of Marketing:
 
-```
+```PowerShell
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
 To modify the properties of an existing rule, use the [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
 
-```
+```PowerShell
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
 ```
 
@@ -201,7 +202,7 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 - From Exchange Online PowerShell, verify that you modified the mail flow rule successfully by running the following command to list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
-  ```
+  ```PowerShell
   Get-TransportRule "Sender is a member of marketing" | Format-List Name,ExceptIfFrom
   ```
 
@@ -230,7 +231,7 @@ The rule at the top of the list is processed first. This rule has a **Priority**
 
 The following example sets the priority of "Sender is a member of Marketing" to 2:
 
-```
+```PowerShell
 Set-TransportRule "Sender is a member of Marketing" -Priority "2"
 ```
 
@@ -242,7 +243,7 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 - From Exchange Online PowerShell, verify the priority of the rules (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
-  ```
+  ```PowerShell
   Get-TransportRule * | Format-List Name,Priority
   ```
 
@@ -262,13 +263,13 @@ Rules are enabled when you create them. You can disable a mail flow rule.
 
 The following example disables the mail flow rule "Sender is a member of marketing":
 
-```
+```PowerShell
 Disable-TransportRule "Sender is a member of marketing"
 ```
 
 The following example enables the mail flow rule "Sender is a member of marketing":
 
-```
+```PowerShell
 Enable-TransportRule "Sender is a member of marketing"
 ```
 
@@ -280,7 +281,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
 
 - From Exchange Online PowerShell, run the following command which will return a list of all rules in your organization along with their status:
 
-  ```
+  ```PowerShell
   Get-TransportRule | Format-Table Name,State
   ```
 
@@ -296,7 +297,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
 
 The following example removes the mail flow rule "Sender is a member of marketing":
 
-```
+```PowerShell
 Remove-TransportRule "Sender is a member of marketing"
 ```
 
@@ -308,7 +309,7 @@ To verify that you have successfully removed the mail flow rule, do the followin
 
 - From Exchange Online PowerShell, run the following command and verify that the rule you remove is no longer listed:
 
-  ```
+  ```PowerShell
   Get-TransportRule
   ```
 

@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
+ms.date: 7/11/2018
 ms.reviewer: 
 title: Export mailbox audit logs
 ms.collection: 
@@ -89,7 +90,7 @@ To save and view the SearchResult.xml file:
 
 The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the admin purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
 
-```
+```XML
 <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
   Owner="PPLNSL-dom\david50001-1363917750"
   LastAccessed="2010-04-30T11:01:55.140625-07:00"

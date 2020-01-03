@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
+ms.date: 7/11/2018
 ms.reviewer: 
 title: Create or remove an In-Place Hold
 ms.collection:
@@ -85,7 +86,7 @@ This example creates an In-Place Hold named Hold-CaseId012 and adds the mailbox 
 > [!IMPORTANT]
 > If you don't specify additional search parameters for an In-Place Hold, all items in the specified source mailboxes are placed on hold. If you don't specify the _ItemHoldPeriod_ parameter, items are placed on hold indefinitely or until the mailbox is either removed from hold or the hold is deleted.
 
-```
+```PowerShell
 New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
 ```
 
@@ -120,7 +121,7 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 
 This example first disables In-Place Hold named Hold-CaseId012 and then removes the mailbox search.
 
-```
+```PowerShell
 Set-MailboxSearch "Hold-CaseId012" -InPlaceHoldEnabled $false
 Remove-MailboxSearch "Hold-CaseId012"
 ```

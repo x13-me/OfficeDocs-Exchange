@@ -9,6 +9,7 @@ ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+ms.date: 6/23/2018
 ms.reviewer: 
 manager: serdars
 audience: ITPro
@@ -34,7 +35,7 @@ This example blocks messages with common typos.
 
 If your list of words, phrases, or patterns is long, you can put them in a text file with each word, phrase, or pattern on its own line. Use Exchange Online PowerShell to read in the list of keywords into a variable, create a mail flow rule, and assign the variable with the keywords to the mail flow rule condition. For example, the following script takes a list of misspellings from a file called C:\My Documents\misspelled_companyname.txt.
 
-```
+```PowerShell
 $Keywords=Get-Content "C:\My Documents\misspelled_companyname.txt"
 New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyContainsWords $Keywords -SentToScope "NotInOrganization" -RejectMessageReasonText "Do not use internal acronyms, product names, or misspellings in external communications."
 ```

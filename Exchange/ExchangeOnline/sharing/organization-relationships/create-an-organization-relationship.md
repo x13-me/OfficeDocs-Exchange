@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8b9a1782-f6be-46bc-bec9-49633be0dc1f
+ms.date: 
 ms.reviewer: 
 title: Create an organization relationship in Exchange Online
 ms.collection: 
@@ -70,13 +71,13 @@ This example creates an organization relationship with Contoso, Ltd with the fol
 
 - Contoso.com and the subdomains get free/busy time, subject, and location information from your organization.
 
-```
+```PowerShell
 New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
 If you're not sure which domains Contoso has set up for cloud-based authentication, you can run this command to automatically find the configuration information. The **Get-FederationInformation** cmdlet is used to find the right information, which is then passed to the **New-OrganizationRelationship** cmdlet.
 
-```
+```PowerShell
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
@@ -94,7 +95,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 
 - Fourth Coffee sees free/busy information with the time.
 
-```
+```PowerShell
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
@@ -106,7 +107,7 @@ The successful completion of the **New organization relationship** wizard indica
 
 You can also run the following command to verify the organization relationship information:
 
-```
+```PowerShell
 Get-OrganizationRelationship | format-list
 ```
 

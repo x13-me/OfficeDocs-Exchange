@@ -5,6 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
+ms.date: 7/11/2018
 ms.reviewer: 
 title: View the administrator audit log
 ms.collection: 
@@ -31,13 +32,13 @@ In Exchange Online, you can use the Exchange admin center (EAC) to search for an
 
 - As previously stated, administrator audit logging is enabled by default. To verify that it's enabled, you can run the following command.
 
-  ```
+  ```PowerShell
   Get-AdminAuditLogConfig | Format-List AdminAuditLogEnabled
   ```
 
     In Exchange Server, you can enable administrator audit logging if it's disabled by running the following command.
 
-  ```
+  ```PowerShell
   Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
   ```
 
