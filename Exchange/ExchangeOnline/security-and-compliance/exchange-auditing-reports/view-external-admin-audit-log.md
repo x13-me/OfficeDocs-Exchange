@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 31892014-c921-45fd-9775-7a1ef40e3517
-ms.date: 6/23/2018
 ms.reviewer: 
 title: View and export the external admin audit log
 ms.collection: 
