@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f412ce6c-74dc-4d77-93ab-362c37414015
-ms.date: 4/29/2016
 ms.reviewer: 
 title: Create a sharing policy in Exchange Online
 ms.collection: 
