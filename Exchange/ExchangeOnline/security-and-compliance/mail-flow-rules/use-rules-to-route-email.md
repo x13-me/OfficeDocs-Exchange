@@ -9,7 +9,6 @@ ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.date: 6/23/2018
 ms.reviewer: 
 manager: serdars
 audience: ITPro
