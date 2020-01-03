@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
-ms.date: 
 ms.reviewer: 
 title: Common attachment blocking scenarios for mail flow rules in Exchange Online
 ms.collection: 
