@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
-ms.date: 4/29/2016
 ms.reviewer: 
 title: Modify, disable, or remove a sharing policy in Exchange Online
 ms.collection: 
