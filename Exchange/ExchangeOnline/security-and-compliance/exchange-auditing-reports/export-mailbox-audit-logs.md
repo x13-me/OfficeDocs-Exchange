@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
-ms.date: 7/11/2018
 ms.reviewer: 
 title: Export mailbox audit logs
 ms.collection: 
