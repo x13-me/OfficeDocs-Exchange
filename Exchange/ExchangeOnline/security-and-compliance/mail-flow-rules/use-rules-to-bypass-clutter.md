@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
-ms.date: 
 ms.reviewer: 
 title: Use mail flow rules so messages can bypass Clutter in Exchange Online
 ms.collection: 
