@@ -5,7 +5,6 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
-ms.date: 6/23/2018
 ms.reviewer: 
 title: Modify archive policies
 ms.collection: 
