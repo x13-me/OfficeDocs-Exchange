@@ -33,50 +33,69 @@ If you're using Microsoft Intune as your mobile device management provider, the 
 > [!NOTE]
 > If users in your organization use both iOS and Android for Work devices, you'll need to create a separate app configuration policy for each platform.
 
-1. Sign in to the Azure portal.
+1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
 
-2. Select **More Services \> Monitoring + Management \> Intune**.
+2. Select **Apps** and then select **App configuration policies**.
 
-3. On the **Mobile apps** blade of the Manage list, select **App configuration policies**.
+3. On the **App Configuration policies** blade, choose **Add** and select **Managed devices**.
 
-4. On the **App configuration policies** blade, choose **Add**.
+4. On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
 
-5. On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
+5. For **Platform**, choose either **iOS/iPadOS** or **Android**.
 
-6. For **Device enrollment type**, choose **Managed devices**.
-
-7. For **Platform**, choose **iOS** or **Android**.
-
-8. Choose **Associated apps**, and then, on the **Associated apps** blade, choose **Microsoft Outlook**.
+6. For **Associated app**, choose **Select the required app**, and then, on the **Targeted apps** blade, choose **Microsoft Outlook**.
 
     > [!NOTE]
     > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
-9. Click **OK** to return to the **Add app configuration** blade.
+7. Click **OK** to return to the **Add app configuration** blade.
 
-10. Choose **Configuration settings**. On the **Configuration settings** blade, define the key value pairs that will supply configurations for Outlook for iOS and Android. The key value pairs you enter are defined later in this article, in the section [Key value pairs](account-setup.md#kvp).
+8. Choose **Configuration Settings**. On the **Configuration** blade, select **Use configuration designer** for the **Configuration settings format**. The key value pairs used in this section are defined in the section [Key value pairs](account-setup.md#kvp).
 
-    > [!NOTE]
-    > To enter the key value pairs, you have a choice between using the configuration designer or entering an XML property list.
+9. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
 
-11. When you're done, choose **OK**.
+    - For **Authentication type**, select **Basic authentication**. This is required for on-premises accounts that do not leverage hybrid modern authentication.
+
+    - For **Username attribute from AAD**, select **User Principal Name** or **sAMAccountName**. If **sAMAccountName** is selected, enter the NetBIOS domain name in the **Account domain** field.
+
+    - For **Email address attribute from AAD**, select **Primary SMTP Address**.
+
+    - For **Email server**, enter the Exchange ActiveSync externally accessible domain name.
+    
+    - For **Email account name**, enter a descriptive value for the account.
+
+10. If you want to deploy general app configuration settings, configure the desired settings accordingly:
+
+    - For **Focused Inbox**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
+    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This setting is only available in Outlook for iOS.
+
+    - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+    - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
+    - For **Block external images**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+    - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
+11. When you are done, choose **OK**.
 
 12. On the **Add app configuration** blade, choose **Add**.
 
-The newly created configuration policy will be displayed on the **App configuration policies** blade.
+The newly created configuration policy is displayed on the **App configuration** blade.
 
 ## Assign configuration settings
 <a name="assignconfig"> </a>
 
-You assign the settings you created in the previous section to groups of users in Azure Active Directory. When a user has the Microsoft Outlook app installed, the app will be managed by the settings you have specified. To do this:
+You assign the settings to groups of users in Azure Active Directory. When a user has the Microsoft Outlook app installed, the app is managed by the settings you have specified. To do this:
 
-1. From the Intune blade, on the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
+1. From the **Apps - App configuration policies** blade, select the app configuration policy you want to assign.
 
-2. From the list of app configuration policies, select the one you want to assign.
+2. On the next blade, choose **Assignments**.
 
-3. On the next blade, choose **Assignments**.
+3. On the **Assignments** blade, select **Select groups to include** and choose the Azure AD group to which you want to assign the app configuration, and then choose **Select**.
 
-4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration policy, then choose **Select**, and then **OK**.
+4. Select **Save** to save and assign the app configuration policy.
 
 ## Key value pairs
 <a name="kvp"> </a>
