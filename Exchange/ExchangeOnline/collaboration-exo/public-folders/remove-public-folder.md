@@ -49,19 +49,19 @@ You may need to remove public folders that are no longer being used in your orga
 
 This example deletes the public folder Help Desk\Resolved. This command assumes that the Resolved public folder doesn't have any subfolders.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Help Desk\Resolved"
 ```
 
 This example tests the previous command without making any modifications.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\HelpDesk\Resolved" -WhatIf
 ```
 
 This example removes the public folder Marketing and all its subfolders because the command runs recursively.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 

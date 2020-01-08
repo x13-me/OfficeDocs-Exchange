@@ -117,6 +117,6 @@ To verify that you've successfully created a group naming policy, do the followi
 
 - In Windows PowerShell, run the following command to display the group naming policy.
 
-  ```
+  ```PowerShell
   Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```

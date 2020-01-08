@@ -28,13 +28,13 @@ To verify that Exchange installed successfully, run the following commands in th
 
 This command returns a summary list of the names, Active Directory sites, Exchange server roles, Exchange editions, and Exchange versions of all Exchange servers in the organization.
 
-```
+```powershell
 Get-ExchangeServer
 ```
 
 This example returns additional details about the Exchange server named Mailbox01.
 
-```
+```powershell
 Get-ExchangeServer -Identity Mailbox01 | Format-List
 ```
 

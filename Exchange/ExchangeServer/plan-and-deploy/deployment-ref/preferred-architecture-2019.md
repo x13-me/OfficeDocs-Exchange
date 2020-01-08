@@ -167,7 +167,7 @@ In the example above, we have 120 TB of Exchange database storage and 7.68 TB of
 
 Whether Traditional or Solid-State, all disks that houses an Exchange data are formatted with [ReFS](https://docs.microsoft.com/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 

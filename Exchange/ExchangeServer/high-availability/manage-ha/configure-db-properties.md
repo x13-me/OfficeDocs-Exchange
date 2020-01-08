@@ -69,13 +69,13 @@ Each mailbox database copy has its own properties, which you can configure. Thes
 
 This example configures a mailbox database copy with an activation preference number of 3.
 
-```
+```powershell
 Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
 ```
 
 This example configures a copy of the database DB1 that's hosted on Server1 with a replay lag time and truncation lag time of 1 day, and an activation preference number of 2.
 
-```
+```powershell
 Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
 ```
 
@@ -87,7 +87,7 @@ To verify that you've successfully configured a mailbox database copy, do one of
 
 - In the Exchange Management Shell, run the following command to display configuration information for a database copy.
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```
 

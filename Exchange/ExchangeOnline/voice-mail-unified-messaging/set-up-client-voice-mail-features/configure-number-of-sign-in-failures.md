@@ -49,6 +49,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the number of sign-in failures before users are disconnected to 5 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -LogonFailuresBeforeDisconnect 5
 ```

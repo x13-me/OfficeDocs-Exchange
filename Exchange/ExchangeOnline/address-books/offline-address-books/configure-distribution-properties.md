@@ -40,13 +40,13 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 This example sets the polling interval for OAB distribution on the OAB virtual directory OAB (Default Web Site) to six hours.
 
-```
+```PowerShell
 Set-OABVirtualDirectory "OAB (Default Web Site)" -PollInterval 360
 ```
 
 This example sets the external distribution point to https://contoso.com/OAB for the default OAB virtual directory OAB (Default Web Site).
 
-```
+```PowerShell
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 

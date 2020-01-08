@@ -50,6 +50,6 @@ For more information about fax partners, see [Microsoft PinPoint for Fax Partner
 
 This example enables Tony Smith to receive incoming faxes.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -FaxEnabled $true
 ```

@@ -39,13 +39,13 @@ When you modify the address lists that are configured in an OAB, the values that
 
 In this example, the OAB named Marketing OAB is already configured with Address List 1 and Address List 2. To keeps those address lists and add Address List 3, run the following command:
 
-```
+```PowerShell
 Set-OfflineAddressBook -Identity "Marketing OAB" -Address Lists "Address List1","Address List 2","Address List 3"
 ```
 
 Similarly, to keep the OAB configured with Address List 1 and Address 2, but remove Address List 3, run the following command:
 
-```
+```PowerShell
 Set-OfflineAddressBook -Identity "Marketing OAB" -AddressLists "Address List 1","Address List 2"
 ```
 
@@ -55,6 +55,6 @@ For detailed syntax and parameter information, see [Set-OfflineAddressBook](http
 
 To verify that you've successfully added or removed address lists from an OAB, run the following command to verify the property `AddressLists` property values:
 
-```
+```PowerShell
 Get-OfflineAddressBook | Format-List Name,AddressLists
 ```

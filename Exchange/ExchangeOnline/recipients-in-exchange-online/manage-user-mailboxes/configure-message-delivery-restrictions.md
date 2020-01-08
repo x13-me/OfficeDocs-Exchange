@@ -80,7 +80,7 @@ The following examples show how to use Exchange Online PowerShell to configure m
 
 This example configures the mailbox of Robin Wood to accept messages only from the users Lori Penor, Jeff Phillips, and members of the distribution group Legal Team 1.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 ```
 
@@ -89,25 +89,25 @@ Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Ph
 
 This example adds the user named David Pelton to the list of users whose messages will be accepted by the mailbox of Robin Wood.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom @{add="David Pelton"}
 ```
 
 This example configures the mailbox of Robin Wood to require all senders to be authenticated. This means the mailbox will only accept messages sent by other users in your Exchange organization.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RequireSenderAuthenticationEnabled $true
 ```
 
 This example configures the mailbox of Robin Wood to reject messages from the users Joe Healy, Terry Adams, and members of the distribution group Legal Team 2.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFrom "Joe Healy","Terry Adams" -RejectMessagesFromDLMembers "Legal Team 2"
 ```
 
 This example configures the mailbox of Robin Wood to also reject messages sent by members of the group Legal Team 3.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 ```
 
@@ -142,6 +142,6 @@ Or
 
 Run the following command in Exchange Online PowerShell.
 
-```
+```PowerShell
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
 ```

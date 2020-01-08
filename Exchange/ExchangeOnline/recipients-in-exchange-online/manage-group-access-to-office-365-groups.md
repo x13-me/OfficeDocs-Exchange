@@ -45,47 +45,47 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 2. Run this command to see if you have any versions of the Azure Active Directory Module for Windows PowerShell installed on your computer:
 
-   ```
+   ```PowerShell
    Get-Module -ListAvailable AzureAD*
    ```
 
    - If no results are returned, run this command to install the latest version of the **AzureADPreview** module:
 
-     ```
+     ```PowerShell
      Install-Module AzureADPreview
      ```
 
    - If *only* the **AzureAD** module is shown in the results, run these commands to install the **AzureADPreview** module:
 
-     ```
+     ```PowerShell
      Uninstall-Module AzureAD
      ```
 
-     ```
+     ```PowerShell
      Install-Module AzureADPreview
      ```
 
    - If *only* the **AzureADPreview** module is shown in the results, but the version is less than **2.0.0.98**, run these commands to update it:
 
-     ```
+     ```PowerShell
      Uninstall-Module AzureADPreview
      ```
 
-     ```
+     ```PowerShell
      Install-Module AzureADPreview
      ```
 
    - If both the **AzureAD** *and* **AzureADPreview** modules are shown in the results, but the version of the **AzureADPreview** module is less than **2.0.0.98**, run these commands to update it:
 
-     ```
+     ```PowerShell
      Uninstall-Module AzureAD
      ```
 
-     ```
+     ```PowerShell
      Uninstall-Module AzureADPreview
      ```
 
-     ```
+     ```PowerShell
      Install-Module AzureADPreview
      ```
 
@@ -97,7 +97,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 3. Run the script with this command:
 
-   ```
+   ```PowerShell
    Set-GuestAllowBlockDomainPolicy.ps1 -Update -AllowList @("contoso.com", "fabrikam.com")
    ```
 
@@ -105,7 +105,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
    OR
 
-   ```
+   ```PowerShell
    Set-GuestAllowBlockDomainPolicy.ps1 -Update -BlockList @("contoso.com", "fabrikam.com")
    ```
 
@@ -115,7 +115,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 To replace the existing policy with new list of domains, run this command:
 
-```
+```PowerShell
 Set-GuestAllowBlockDomainPolicy.ps1 -Update -AllowList @("contoso.com", "fabrikam.com")
 ```
 
@@ -123,7 +123,7 @@ Where you replace **contoso.com** and **fabrikam.com** with the domains you want
 
 OR
 
-```
+```PowerShell
 Set-GuestAllowBlockDomainPolicy.ps1 -Update -BlockList @("contoso.com", "fabrikam.com")
 ```
 
@@ -131,7 +131,7 @@ Set-GuestAllowBlockDomainPolicy.ps1 -Update -BlockList @("contoso.com", "fabrika
 
 To append a new domain to the your policy, run this command:
 
-```
+```PowerShell
 Set-GuestAllowBlockDomainPolicy.ps1 -Append -AllowList @("contoso.com")
 ```
 
@@ -139,7 +139,7 @@ Where you replace **contoso.com** and **fabrikam.com** with the domains you want
 
 OR
 
-```
+```PowerShell
 Set-GuestAllowBlockDomainPolicy.ps1 -Append -BlockList @("contoso.com")
 ```
 
@@ -153,7 +153,7 @@ However, if your organization already has an allow/block list for SharePoint Onl
 
 2. Run this command:
 
-   ```
+   ```PowerShell
    Set-GuestAllowBlockDomainPolicy.ps1 -MigrateFromSharepoint
    ```
 
@@ -161,7 +161,7 @@ However, if your organization already has an allow/block list for SharePoint Onl
 
 To remove all the domains from your policy, run this command:
 
-```
+```PowerShell
 Set-GuestAllowBlockDomainPolicy.ps1 -Remove
 ```
 
