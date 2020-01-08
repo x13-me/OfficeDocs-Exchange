@@ -49,13 +49,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 This example blocks the copy of the database DB1 on the server MBX2 for activation.
 
-```
+```powershell
 Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
 ```
 
 This example resumes the copy of the database DB1 on the server MBX2 for activation.
 
-```
+```powershell
 Resume-MailboxDatabaseCopy -Identity DB1\MBX2
 ```
 
@@ -66,19 +66,19 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 This example configures the database copies on server MBX2 as blocked for activation.
 
-```
+```powershell
 Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
 ```
 
 This example configures the database copies on server MBX3 as blocked for out-of-site activation.
 
-```
+```powershell
 Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
 ```
 
 This example configures the database copies on server MBX4 as unblocked for activation.
 
-```
+```powershell
 Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
 ```
 
@@ -91,12 +91,12 @@ To verify that you've successfully configured the activation policy, do one of t
 
 - In the Exchange Management Shell, run the following command to verify activation settings for a database copy.
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
   ```
 
 - In the Exchange Management Shell, run the following command to verify activation settings for a DAG member.
 
-  ```
+  ```powershell
   Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
   ```

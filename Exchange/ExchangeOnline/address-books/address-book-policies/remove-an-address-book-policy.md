@@ -39,39 +39,39 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
 
 1. Replace \<ABPName\> with the name of the ABP, and run the following command to get the **DistinguishedName** (DN) value of the ABP that you want to remove:
 
-   ```
+   ```PowerShell
    Get-AddressBookPolicy -Identity "<ABPName>" | Format-List DistinguishedName
    ```
 
 2. To see if the ABP is assigned to an active mailbox, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following command:
 
-   ```
+   ```PowerShell
    Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    To remove the ABP assignment from any active mailboxes that you find, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following commands:
 
-   ```
+   ```PowerShell
    $a = Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
-   ```
+   ```PowerShell
    $a | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null}
    ```
 
 3. To see if the ABP is assigned to a soft-deleted (recoverable) mailbox, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following command:
 
-   ```
+   ```PowerShell
    Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
    To remove the ABP assignment from any soft-deleted mailboxes that you find, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following commands:
 
-   ```
+   ```PowerShell
    $s = Get-Mailbox -SoftDeletedMailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<ABPDistinguishedName>'"
    ```
 
-   ```
+   ```PowerShell
    $s | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null}
    ```
 
@@ -81,13 +81,13 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
 
 To remove an ABP, use this syntax:
 
-```
+```PowerShell
 Remove-AddressBookPolicy -Identity <ABPIdentity>
 ```
 
 This example removes the ABP named ABP TailspinToys.
 
-```
+```PowerShell
 Remove-AddressBookPolicy -Identity "ABP TailspinToys"
 ```
 
@@ -99,12 +99,12 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
 - Run the following command to verify that the ABP isn't listed:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy
   ```
 
 - Replace _\<ABPName\>_ with the name of the ABP, and run the following command to confirm that an error is returned:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy -Identity "<ABPName>"
   ```

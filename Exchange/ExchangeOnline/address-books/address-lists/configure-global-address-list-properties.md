@@ -43,7 +43,7 @@ The same settings to configure a GAL are available as when you created the GAL. 
 
 To modify a GAL, use the following syntax:
 
-```
+```PowerShell
 Set-GlobalAddressList -Identity <GALIdentity>] [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>]
 ```
 
@@ -51,7 +51,7 @@ When you modify the precanned _Conditional_ parameter values, you can use the fo
 
 This example modifies the existing GAL named Contoso GAL by adding the **Company** value Fabrikam to the precanned recipient filter.
 
-```
+```PowerShell
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
@@ -61,6 +61,6 @@ For detailed syntax and parameter information, see [Set-GlobalAddressList](https
 
 To verify that you've successfully modified a GAL, replace _\<GAL Name\>_ with the name of the GAL and run the following command in Exchange Online PowerShell to verify the property values:
 
-```
+```PowerShell
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```

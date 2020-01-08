@@ -99,13 +99,13 @@ There are three basic methods you can use to apply an ABP to mailboxes:
 
 - **Individual mailboxes**: Use the following syntax:
 
-  ```
+  ```PowerShell
   Set-Mailbox -Identity <MailboxIdentity> -AddressBookPolicy <ABPIdentity>
   ```
 
   This example assigns the ABP named All Fabrikam to the mailbox joe@fabrikam.com.
 
-  ```
+  ```PowerShell
   Set-Mailbox -Identity joe@fabrikam.com -AddressBookPolicy "All Fabrikam"
   ```
 
@@ -113,21 +113,21 @@ There are three basic methods you can use to apply an ABP to mailboxes:
 
   The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the ABP to the mailboxes):
 
-  ```
+  ```PowerShell
   $<VariableName> = Get-Mailbox -ResultSize unlimited -Filter <Filter>
   ```
 
-  ```
+  ```PowerShell
   $<VariableName> | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy <ABPIdentity>}
   ```
 
   This example assigns the ABP named All Fabrikam to all mailbox users whose **CustomAttribute15** value is `FAB`.
 
-  ```
+  ```PowerShell
   $Fabrikam = Get-Mailbox -Filter "CustomAttribute15 -eq 'FAB'"
   ```
 
-  ```
+  ```PowerShell
   $Fabrikam | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy "All Fabrikam"}
   ```
 
@@ -137,21 +137,21 @@ There are three basic methods you can use to apply an ABP to mailboxes:
 
   The syntax uses the following two commands (one to identify the user accounts, and the other to apply the policy to those users):
 
-  ```
+  ```PowerShell
   $<VariableName> = Get-Content "<text file>"
   ```
 
-  ```
+  ```PowerShell
   $<VariableName> | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy <ABPIdentity>}
   ```
 
   This example assigns the ABP policy named All Fabrikam to the mailboxes specified in the file C:\My Documents\Fabrikam.txt.
 
-  ```
+  ```PowerShell
   $Fab = Get-Content "C:\My Documents\Fabrikam.txt"
   ```
 
-  ```
+  ```PowerShell
   $Fab | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy "All Fabrikam"}
   ```
 
@@ -165,13 +165,13 @@ To verify that you've successfully applied an ABP to a mailbox, use any of the f
 
 - In Exchange Online PowerShell, replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the value of the **AddressBookPolicy** property:
 
-  ```
+  ```PowerShell
   Get-Mailbox -Identity "<MailboxIdentity>" | Format-List AddressBookPolicy
   ```
 
 - In Exchange Online PowerShell, run the following command to verify the value of the **AddressBookPolicy** property:
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited | Format-Table Name,AddressBookPolicy -Auto
   ```
 

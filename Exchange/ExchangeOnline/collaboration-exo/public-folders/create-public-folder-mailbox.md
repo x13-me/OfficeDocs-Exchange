@@ -49,13 +49,13 @@ For additional management tasks related to public folders in Exchange Online, se
 
 This example creates the primary public folder mailbox.
 
-```
+```PowerShell
 New-Mailbox -PublicFolder -Name MasterHierarchy
 ```
 
 This example creates a secondary public folder mailbox. The only difference between creating the primary hierarchy mailbox and a secondary hierarchy mailbox is that the primary mailbox is the first one created in the organization. You can create additional public folder mailboxes for load balancing purposes.
 
-```
+```PowerShell
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
@@ -65,7 +65,7 @@ For detailed syntax and parameter information, see [new-Mailbox](https://docs.mi
 
 To verify that you have successfully created the primary public folder mailbox, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 

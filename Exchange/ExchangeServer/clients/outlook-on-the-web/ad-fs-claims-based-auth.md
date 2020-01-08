@@ -132,7 +132,7 @@ To use Server Manager to install AD FS, follow these steps:
 
 To use Windows PowerShell to install AD FS, run the following command:
 
-```
+```powershell
 Install-WindowsFeature ADFS-Federation -IncludeManagementTools
 ```
 
@@ -146,7 +146,7 @@ Before you configure the AD FS server, you need to create a group Managed Servic
 
 1. Run the following command:
 
-   ```
+   ```powershell
    Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
    ```
 
@@ -156,13 +156,13 @@ Before you configure the AD FS server, you need to create a group Managed Servic
 
 2. To create a new gMSA account for the AD FS server, use the following syntax:
 
-   ```
+   ```powershell
    New-ADServiceAccount -Name <AccountName> -DnsHostName <FederationServiceName> -ServicePrincipalNames http/<FederationServiceName>
    ```
 
    This example creates a new gMSA account named FSgMSA for the Federation Service named adfs.contoso.com. The Federation Service name is the value that's visible to clients.
 
-   ```
+   ```powershell
    New-ADServiceAccount -Name FSgMSA -DnsHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
    ```
 
@@ -240,19 +240,19 @@ To use Windows PowerShell to configure AD FS, follow these steps:
 
 1. Run the following command on the AD FS server to find the thumbprint value of the installed certificate that contains `adfs.contoso.com`:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 3. Use the following syntax:
 
-   ```
+   ```powershell
    Install-AdfsFarm -CertificateThumbprint <ThumbprintValue> -FederationServiceName <FederationServiceName> -FederationServiceDisplayName <FederationServiceDisplayName> -GroupServiceAccountIdentifier <gMSA>
    ```
 
@@ -266,7 +266,7 @@ This example configures AD FS with the following settings:
 
 - **Federation gMSA SAM account name and domain**: For example, for the gMSA account named `FSgMSA` in the `contoso.com` domain, the required value is `contoso\FSgMSA$`.
 
-```
+```powershell
 Install-AdfsFarm -CertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609 -FederationServiceName adfs.contoso.com -FederationServiceDisplayName "Contoso, Ltd." -GroupServiceAccountIdentifier "contoso\FSgMSA`$"
 ```
 
@@ -378,13 +378,13 @@ To use Windows PowerShell prompt to create the relying party trusts, follow thes
 
 1. In an elevated Windows PowerShell window, run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Add-AdfsRelyingPartyTrust -Name <"Outlook on the web" | EAC> -Notes "This is a trust for <OotwURL | EACURL>" -Identifier <OotwURL | EACURL> -WSFedEndpoint <OotwURL | EACURL> -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
    ```
 
@@ -398,7 +398,7 @@ This example creates a relying party trust for Outlook on the web using the foll
 
 - **WSFedEndpoint**: https://mail.contoso.com/owa/
 
-```
+```powershell
 Add-AdfsRelyingPartyTrust -Name "Outlook on the web" -Notes "This is a trust for https://mail.contoso.com/owa/" -Identifier https://mail.contoso.com/owa/ -WSFedEndpoint https://mail.contoso.com/owa/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
 ```
 
@@ -412,7 +412,7 @@ This example creates a relying party trust for the EAC using the following value
 
 - **WSFedEndpoint**: https://mail.contoso.com/ecp/
 
-```
+```powershell
 Add-AdfsRelyingPartyTrust -Name EAC -Notes "This is a trust for https://mail.contoso.com/ecp/" -Identifier https://mail.contoso.com/ecp/ -WSFedEndpoint https://mail.contoso.com/ecp/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
 ```
 
@@ -488,25 +488,25 @@ To use Windows PowerShell to create the custom claim rules, follow these steps:
 
 1. Open an elevated Windows PowerShell window, and run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Set-AdfsRelyingPartyTrust -TargetName <OotwRelyingPartyTrust | EACRelyingPartyTrust> -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
    ```
 
 To create the custom claim rules in the existing relying party trust named Outlook on the web, run the following command:
 
-```
+```powershell
 Set-AdfsRelyingPartyTrust -TargetName "Outlook on the web" -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
 ```
 
 To create the custom claim rules in the existing relying party trust named EAC, run the following command:
 
-```
+```powershell
 Set-AdfsRelyingPartyTrust -TargetName EAC -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
 ```
 
@@ -568,7 +568,7 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 To use Windows PowerShell to install Web Application Proxy, run the following command:
 
-```
+```powershell
 Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 ```
 
@@ -624,19 +624,19 @@ To use Windows PowerShell to configure Web Application Proxy, follow these steps
 
 1. Run the following command on the Web Application Proxy server to find the thumbprint value of the installed certificate that contains `adfs.contoso.com`:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Run the following command, and enter the username and password of a local administrator account on the AD FS server.
 
-   ```
+   ```powershell
    $ADFSServerCred = Get-Credential
    ```
 
 3. Use the following syntax:
 
-   ```
+   ```powershell
    Install-WebApplicationProxy -FederationServiceName <FederationServiceName> -FederationServiceTrustCredential $ADFSServerCred -CertificateThumprint <ADFSCertThumbprint>
    ```
 
@@ -646,7 +646,7 @@ To use Windows PowerShell to configure Web Application Proxy, follow these steps
 
    - **AD FS SSL certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
 
-   ```
+   ```powershell
    Install-WebApplicationProxy -FederationServiceName adfs.contoso.com -FederationServiceTrustCredential $ADFSServerCred -CertificateThumprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609
    ```
 
@@ -722,13 +722,13 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
 1. Run the following command on the Web Application Proxy server to find the thumbprint of the installed certificate that contains the host name of the Outlook on the web and EAC URLs (for example, `mail.contoso.com`):
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName <OotwRelyingParty | EACRelyingParty> -Name "<Outlook on the web  | EAC>" -ExternalUrl <OotwURL | EACURL> -ExternalCertificateThumbprint <Thumbprint> -BackendServerUrl <OotwURL | EACURL>
    ```
 
@@ -744,7 +744,7 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
    - **Backend server URL**: https://mail.contoso.com/owa/
 
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName "Outlook on the web" -Name "Outlook on the web" -ExternalUrl https://mail.contoso.com/owa/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE056093 -BackendServerUrl https://mail.contoso.com/owa/
    ```
 
@@ -758,7 +758,7 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
    - **Backend server URL**: https://mail.contoso.com/ecp/
 
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName EAC -Name EAC -ExternalUrl https://external.contoso.com/ecp/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609 -BackendServerUrl https://mail.contoso.com/ecp/
    ```
 
@@ -770,7 +770,7 @@ To configure the Exchange organization to use AD FS authentication, you need to 
 
 1. Run the following command to find the thumbprint value of the imported AD FS token signing certificate:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\Root; Get-ChildItem | Sort-Object Subject
    ```
 
@@ -780,7 +780,7 @@ To configure the Exchange organization to use AD FS authentication, you need to 
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Set-OrganizationConfig -AdfsIssuer https://<FederationServiceName>/adfs/ls/ -AdfsAudienceUris "<OotwURL>","<EACURL>" -AdfsSignCertificateThumbprint "<Thumbprint>"
    ```
 
@@ -794,7 +794,7 @@ To configure the Exchange organization to use AD FS authentication, you need to 
 
    - **AD FS token-signing certificate thumbprint**: The `ADFS Signing - adfs.contoso.com` certificate that has the thumbprint value `88970C64278A15D642934DC2961D9CCA5E28DA6B`.
 
-   ```
+   ```powershell
    Set-OrganizationConfig -AdfsIssuer https://adfs.contoso.com/adfs/ls/ -AdfsAudienceUris "https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/" -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
    ```
 
@@ -812,29 +812,29 @@ For the Outlook on the web and EAC virtual directories, you need to configure AD
 
 To use the Exchange Management Shell to configure an EAC or Outlook on the web virtual directory to only accept AD FS authentication, use the following syntax:
 
-```
+```powershell
 Set-EcpVirtualDirectory -Identity <VirtualDirectoryIdentity> -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
 This example configures the EAC virtual directory in the default web site on the server named Mailbox01:
 
-```
+```powershell
 Set-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
 This example configures the Outlook on the web virtual directory in the default we site on the server named Mailbox01:
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
  **Note**: To configure all EAC and Outlook on the web virtual directories on every Exchange server in your organization, run the following commands:
 
-```
+```powershell
 Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
-```
+```powershell
 Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
@@ -850,11 +850,11 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
-```
+```console
 net stop was /y
 ```
 
-```
+```console
 net start w3svc
 ```
 

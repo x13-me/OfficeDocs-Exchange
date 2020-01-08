@@ -47,12 +47,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example enables Outlook Voice Access users to transfer calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $true
 ```
 
 This example prevents Outlook Voice Access users from transferring calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $false
 ```

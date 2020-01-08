@@ -58,6 +58,6 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 
 This example enables an informational announcement that uses the informational.wav informational announcement file on a UM dial plan named `MyUMDialPlan`.
 
-```
+```Powershell
 Set-UMDialPlan -Identity MyUMDialPlan -InfoAnnouncementEnabled $true-InfoAnnouncementFilename c:\UMGreetings\informational.wav
 ```

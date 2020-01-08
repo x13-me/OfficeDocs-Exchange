@@ -46,7 +46,7 @@ The following script collects information from your cloud mailboxes and saves it
 
 Copy the script below to a .txt file and then save the file and save it as ExportO365UserInfo.ps1.
 
-```
+```PowerShell
 Param($migrationCSVFileName = "migration.csv")
 function O365Logon
 {
@@ -470,7 +470,7 @@ When you run the Exchange2003MBtoMEU.vbs script, it does the following for each 
     > [!IMPORTANT]
     > To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value of msExchMailboxGuid on the MEU with the Guid from the cloud-based mailbox. To obtain the Guids for the mailboxes in your cloud organization and save them to a CSV file, run the following PowerShell command:
 
-    ```
+    ```PowerShell
     Get-Mailbox | Select PrimarySmtpAddress, Guid | Export-csv -Path .\guid.csv
     ```
 
@@ -490,13 +490,13 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
 1. Run the ExportO365UserInfo in your cloud organization. Use the CSV file for the migration batch as the input file. The script creates a CSV file named Cloud.csv.
 
-   ```
+   ```PowerShell
    .\ExportO365UserInfo.ps1 <CSV input file>
    ```
 
    For example:
 
-   ```
+   ```PowerShell
    .\ExportO365UserInfo.ps1 .\MigrationBatch1.csv
    ```
 
@@ -506,19 +506,19 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
 3. In your on-premises organization, run the following command:
 
-    ```
+    ```VB
     cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv <FQDN of on-premises domain controller>
     ```
 
     For example:
 
-    ```
+    ```VB
     cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv DC1.contoso.com
     ```
 
     To run the script in manual mode, enter the following command. Use spaces between each value.
 
-    ```
+    ```VB
     cscript Exchange2003MBtoMEU.vbs "<DN of on-premises mailbox>" "<Primary SMTP of cloud mailbox>" "<ExchangeLegacyDN of cloud mailbox>" <FQDN of on-premises domain controller>
     ```
 
