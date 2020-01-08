@@ -45,25 +45,25 @@ You can use the Exchange Management Shell to get a summary of the health of an E
 
 Run either of the following commands to view the health sets and health information on an Exchange server:
 
-```
+```powershell
 Get-HealthReport -Identity <ServerName>
 ```
 
-```
+```powershell
 Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
 ```
 
 Run any of the following commands to view the health sets on an Exchange server or database availability group:
 
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
 
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
 
-```
+```powershell
 (Get-DatabaseAvailabilityGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
@@ -75,7 +75,7 @@ A *health set* is a group of monitors, probes and responders for a component tha
 
 Run the following command to view the health sets on an Exchange server:
 
-```
+```powershell
 Get-HealthReport -Server <ServerName>
 ```
 
@@ -87,7 +87,7 @@ You can use the Exchange Management Shell to view the list of probes, monitors, 
 
 Run the following command to view the probes, monitors and responders associated with a health set on an Exchange server:
 
-```
+```powershell
 Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
 ```
 
@@ -99,7 +99,7 @@ The health of a monitor is reported by using the "worst of" monitors in the heal
 
 Run the following command to view a list of the monitors and their current health on an Exchange server:
 
-```
+```powershell
 Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
 ```
 

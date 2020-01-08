@@ -77,13 +77,13 @@ As shown in the preceding table, adapters used for Replication networks don't us
 
 To configure routing for the Replication network adapters on MBX1 and MBX2, the following command was run on each server.
 
-```
+```powershell
 netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
 ```
 
 To configure routing for the Replication network adapters on MBX3 and MBX4, the following command was run on each server.
 
-```
+```powershell
 netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 ```
 
@@ -111,13 +111,13 @@ The administrator has decided to create a Windows PowerShell command-line interf
 
 The following are the commands used in the script:
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer MBX5 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
 ```
 
 The preceding command creates the DAG DAG1, configures MBX5 to act as the witness server, configures a specific witness directory (C:\DAGWitness\DAG1.contoso.com), and configures two IP addresses for the DAG (one for each subnet on the MAPI network).
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer MBX10
 ```
 
@@ -126,7 +126,7 @@ The preceding command configures DAG1 to use an alternate witness server of MBX1
 > [!NOTE]
 > Using the same path isn't required; Contoso has chosen to do this to standardize their configuration.
 
-```
+```powershell
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
@@ -135,7 +135,7 @@ Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
 
 The preceding commands add each of the Mailbox servers, one at a time, to the DAG. The commands also install the Windows Failover Clustering component on each Mailbox server (if it isn't already installed), create a failover cluster, and join each Mailbox server to the newly created cluster.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
 ```
 
@@ -159,7 +159,7 @@ To create this configuration, the administrator runs several commands.
 
 On MBX1, run the following commands.
 
-```
+```powershell
 Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
 Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
 Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
@@ -170,7 +170,7 @@ Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
 
 On MBX2, run the following commands.
 
-```
+```powershell
 Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
 Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
 Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
@@ -181,7 +181,7 @@ Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
 
 On MBX3, run the following commands.
 
-```
+```powershell
 Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
 Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
 Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
@@ -192,7 +192,7 @@ Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
 
 On MBX4, run the following commands.
 
-```
+```powershell
 Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
 Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
 Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
