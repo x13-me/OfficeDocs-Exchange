@@ -113,7 +113,7 @@ As previously explained, there might be a delay between the time that you enable
 
 In your Exchange Online organization, run the following PowerShell command to display properties related to an on-premises user's cloud-based archive mailbox. To connect to Exchange Online using remote PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?/linkid=396554).
 
-```
+```PowerShell
 Get-MailUser <cloud mail user> | FL *archive*
 ```
 
@@ -135,7 +135,7 @@ After directory synchronization provisions the cloud-based archive, the _Archive
 
 You can also run the following PowerShell command in your on-premises Exchange organization to display properties related to the cloud-based archive mailbox of an on-premises user.
 
-```
+```PowerShell
 Get-Mailbox <on-premises user mailbox> | FL *archive*
 ```
 
@@ -157,7 +157,7 @@ As previously explained, the cloud-base archive mailbox is created by the proces
 
 Sometimes you may want to start directory synchronization to provision the cloud-based archive mailbox before the next scheduled synchronization. You can do this by running the following PowerShell command on the server where Azure AD Connect is installed.
 
-```
+```PowerShell
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
 
