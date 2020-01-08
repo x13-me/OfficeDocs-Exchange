@@ -162,7 +162,7 @@ This procedure shows how to deploy the [Adobe PDF IFilter](https://www.adobe.com
 
 2. Start Registry Editor and locate the following subkey:
 
-   ```text
+   ```console
    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
    ```
 
@@ -179,7 +179,7 @@ This procedure shows how to deploy the [Adobe PDF IFilter](https://www.adobe.com
 
 4. Locate the following registry key:
 
-    ```text
+    ```console
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
     ```
 

@@ -60,7 +60,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 This example creates the journal rule Discovery Journal Recipients to journal all messages sent from and received by the recipient user1@contoso.com.
 
-```
+```PowerShell
 New-JournalRule -Name "Discovery Journal Recipients" -Recipient user1@contoso.com -JournalEmailAddress "Journal Mailbox" -Scope Global -Enabled $True
 ```
 
@@ -72,7 +72,7 @@ To verify that you have successfully created the journal rule, do one of the fol
 
 - From Exchange Online PowerShell, verify that the new journal rule exists by running the following command (the example below verifies the rule created in Exchange Online PowerShell example above):
 
-   ```
+   ```PowerShell
    Get-JournalRule -Identity "Discovery Journal Recipients"
    ```
 
@@ -92,13 +92,13 @@ To verify that you have successfully created the journal rule, do one of the fol
 
 This example displays a summary list of all journal rules in the Exchange organization:
 
-```
+```PowerShell
 Get-JournalRule
 ```
 
 This example retrieves the journal rule Brokerage Journal Rule, and pipes the output to the **Format-List** command to display rule properties in a list format:
 
-```
+```PowerShell
 Get-JournalRule -Identity "Brokerage Journal Rule" | Format-List
 ```
 
@@ -110,7 +110,7 @@ If you want to modify the properties of a specific rule, you need to use the [Se
 
 - Scope
 
-```
+```PowerShell
 Set-JournalRule -Identity "JR-Sales" -Name TraderVault -Recipient traders@woodgrovebank.com -JournalEmailAddress tradervault@woodgrovebank.com -Scope Internal
 ```
 
@@ -122,7 +122,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
 
 - From Exchange Online PowerShell, verify that you modified the journal rule successfully by running the following command. This command will list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
-  ```
+  ```PowerShell
   Get-JournalRule -Identity "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
   ```
 
@@ -141,13 +141,13 @@ To verify that you have successfully modified a journal rule, do one of the foll
 
 This example enables the rule Contoso.
 
-```
+```PowerShell
 Enable-JournalRule -Identity "Contoso Journal Rule"
 ```
 
 This example disables the rule Contoso.
 
-```
+```PowerShell
 Disable-JournalRule -Identity "Contoso Journal Rule"
 ```
 
@@ -159,7 +159,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
 
 - From Exchange Online PowerShell, run the following command to return a list of all journal rules in your organization along, including their status:
 
-  ```
+  ```PowerShell
   Get-JournalRule | Format-Table Name,Enabled
   ```
 
@@ -175,7 +175,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
 
 This example removes the rule Brokerage Journal Rule.
 
-```
+```PowerShell
 Remove-JournalRule -Identity "Brokerage Journal Rule"
 ```
 
@@ -187,7 +187,7 @@ To verify that you have successfully removed the journal rule, do one of the fol
 
 - From Exchange Online PowerShell, run the following command to verify that the rule you removed is no longer listed:
 
-  ```
+  ```PowerShell
   Get-JournalRule
   ```
 

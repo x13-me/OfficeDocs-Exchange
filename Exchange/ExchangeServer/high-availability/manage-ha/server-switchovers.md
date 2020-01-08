@@ -49,13 +49,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example performs a server switchover for the server MBX1. The system automatically selects the best Mailbox server for each active database on MBX1.
 
-```
+```powershell
 Move-ActiveMailboxDatabase -Server MBX1
 ```
 
 This example performs a server switchover of the Mailbox server MBX4. When the command completes, MBX5 hosts the active copy of the databases that were previously active on MBX4.
 
-```
+```powershell
 Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
 ```
 

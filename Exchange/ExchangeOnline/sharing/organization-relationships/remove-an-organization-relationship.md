@@ -44,7 +44,7 @@ To learn more about organization relationships, see [Organization relationships 
 
 This example removes the organization relationship Contoso.
 
-```
+```PowerShell
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
@@ -58,7 +58,7 @@ To verify that you have successfully removed the organization relationship, do o
 
 - Run the following command to verify the organization relationship information is removed.
 
-  ```
+  ```PowerShell
   Get-OrganizationRelationship | Format-List
   ```
 
