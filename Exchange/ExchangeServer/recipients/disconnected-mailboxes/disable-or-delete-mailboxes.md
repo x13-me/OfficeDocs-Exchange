@@ -61,25 +61,25 @@ When you disable a mailbox, all Exchange attributes are removed from the associa
 
 To disable a mailbox, use this syntax:
 
-```
+```PowerShell
 Disable-Mailbox <MailboxIdentity> [-Arbitration] [-Archive] [-PublicFolder] [-RemoteArchive]
 ```
 
 This example disables the user mailbox that has the alias value danj.
 
-```
+```PowerShell
 Disable-Mailbox danj
 ```
 
 This example disables the room mailbox named Conf Room 31/1234 (12).
 
-```
+```PowerShell
 Disable-Mailbox "Conf Room 31/1234 (12)"
 ```
 
 This example disables the shared mailbox that has the email address sharedmbx@contoso.com.
 
-```
+```PowerShell
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
@@ -95,7 +95,7 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
 - In the Exchange Management Shell, replace _\<DisplayName\>_ with the user's display name, and run the following commands to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
 
-  ```
+  ```PowerShell
   $dbs = Get-MailboxDatabase
   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
   ```
@@ -108,7 +108,7 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
   - If the command returns no results, replace _\<DatabaseName\>_ with the name of the mailbox database where the disconnected mailbox resides, and run this command to synchronize the mailbox state for all disconnected mailboxes on the database:
 
-  ```
+  ```PowerShell
   Get-MailboxStatistics -Database "<DatabaseName>" | foreach {Update-StoreMailboxState -Database $_.Database -Identity $_.MailboxGuid -Confirm:$false}
   ```
 
@@ -116,7 +116,7 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
 - In the Exchange Management Shell, replace _\<UserIdentity\>_ with the name or user principal name of the user (for example, user@contoso.com), and run this command to verify that the **RecipientType** property value is `User`, not `UserMailbox`.
 
-  ```
+  ```PowerShell
   Get-User -Identity <UserIdentity>
   ```
 
@@ -152,25 +152,25 @@ When you delete a mailbox, the mailbox is disconnected from the associated user 
 
 To delete a mailbox, use this syntax:
 
-```
+```PowerShell
 Remove-Mailbox <MailboxIdentity> [-Arbitration] [-PublicFolder]
 ```
 
 This example deletes the mailbox that has the email address pilarp@contoso.com.
 
-```
+```PowerShell
 Remove-Mailbox pilarp@contoso.com
 ```
 
 This example deletes the equipment mailbox named Fleet Van (16).
 
-```
+```PowerShell
 Remove-Mailbox "Fleet Van (16)"
 ```
 
 This example deletes the mailbox that has the alias value corpprint.
 
-```
+```PowerShell
 Remove-Mailbox corpprint
 ```
 
@@ -188,7 +188,7 @@ To verify that you've successfully deleted a mailbox, do any of these steps:
 
 - In the Exchange Management Shell replace _\<DisplayName\>_ with the user's display name, and run the following commands to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
 
-  ```
+  ```PowerShell
   $dbs = Get-MailboxDatabase
   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
   ```
@@ -199,7 +199,7 @@ To verify that you've successfully deleted a mailbox, do any of these steps:
 
   - If the command returns no results, replace _\<DatabaseName\>_ with the name of the mailbox database where the disconnected mailbox resides, and run the following command to synchronize the mailbox state for all disconnected mailboxes on the database:
 
-    ```
+    ```PowerShell
     Get-MailboxStatistics -Database "<DatabaseName>" | foreach {Update-StoreMailboxState -Database $_.Database -Identity $_.MailboxGuid -Confirm:$false}
     ```
 
@@ -207,7 +207,7 @@ To verify that you've successfully deleted a mailbox, do any of these steps:
 
 - In the Exchange Management Shell, replace _\<UserIdentity\>_ with the name or user principal name of the user (for example, user@contoso.com), and run this command to verify that the user can't be found.
 
-  ```
+  ```PowerShell
   Get-User <UserIdentity>
   ```
 
