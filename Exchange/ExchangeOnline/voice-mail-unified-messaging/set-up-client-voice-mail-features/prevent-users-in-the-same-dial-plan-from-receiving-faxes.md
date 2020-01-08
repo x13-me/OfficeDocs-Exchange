@@ -44,6 +44,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example prevents UM-enabled users associated with the UM dial plan named `MyUMDialPlan` from receiving faxes.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $false
 ```

@@ -38,7 +38,7 @@ Looking for the Exchange Server version of this topic? See [Use the Exchange Man
 
 To enable ABP routing in the Exchange Online organization, run the following command:
 
-```
+```PowerShell
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
@@ -50,7 +50,7 @@ To verify that you've successfully turned on ABP routing, use any of the followi
 
 - In Exchange Online PowerShell, run the following command to verify that ABP routing is enabled for the organization:
 
-   ```
+   ```PowerShell
    Get-TransportConfig | Format-List AddressBookPolicyRoutingEnabled
    ```
 

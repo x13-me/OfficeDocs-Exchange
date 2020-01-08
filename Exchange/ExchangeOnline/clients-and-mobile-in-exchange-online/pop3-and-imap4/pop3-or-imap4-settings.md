@@ -44,13 +44,13 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4](pop3-
 
 The following example sets all meeting requests in incoming mail to USER01 to iCal format for a POP3 user.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -PopUseProtocolDefaults $false -PopForceICalForCalendarRetrievalOption $true
 ```
 
 The following example sets all meeting requests in incoming mail to USER01 to iCal format for an IMAP4 user.
 
-```
+```PowerShell
 Set-CASMailbox USER01-ImapUseProtocolDefaults $false -ImapForceICalForCalendarRetrievalOption $true
 ```
 
@@ -58,7 +58,7 @@ Set-CASMailbox USER01-ImapUseProtocolDefaults $false -ImapForceICalForCalendarRe
 
 To verify that you successfully set the meeting request format for a POP3 or an IMAP4 user, run the following command in Exchange Online PowerShell and verify that the values displayed are the values that you configured:
 
-```
+```PowerShell
 Get-CASMailbox USER01 | format-list *ForceIcal*,*UseProtocolDefaults
 ```
 
@@ -66,13 +66,13 @@ Get-CASMailbox USER01 | format-list *ForceIcal*,*UseProtocolDefaults
 
 The following example sets it up so that the POP3 sender receives a read receipt only when the message is opened.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -PopUseProtocolDefaults $false -PopSuppressReadReceipt $true
 ```
 
 The following example sets it up so that the IMAP4 sender receives a read receipt only when the message is opened.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapSuppressReadReceipt $true
 ```
 
@@ -80,7 +80,7 @@ Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapSuppressReadReceipt $
 
 To verify that you successfully set the read receipt option for a POP3 or an IMAP4 user, run the following command in Exchange Online PowerShell and verify that the values displayed are the values that you configured:
 
-```
+```PowerShell
 Get-CASMailbox USER01 | format-list *SuppressReadReceipt,*UseProtocolDefaults
 ```
 
@@ -88,13 +88,13 @@ Get-CASMailbox USER01 | format-list *SuppressReadReceipt,*UseProtocolDefaults
 
 The following example sets the message retrieval format to text only for POP3 access for `USER01`.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -PopUseProtocolDefaults $false -PopMessagesRetrievalMimeFormat TextOnly
 ```
 
 The following example sets the message retrieval format to text only for IMAP4 access for `USER01`.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapMessagesRetrievalMimeFormat TextOnly
 ```
 
@@ -102,7 +102,7 @@ Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapMessagesRetrievalMime
 
 To verify that you successfully set the message retrieval format for a POP3 or an IMAP4 user, run the following command in Exchange Online PowerShell and verify that the values displayed are the values that you configured:
 
-```
+```PowerShell
 Get-CASMailbox USER01 | format-list *MessagesRetrievalMimeFormat,*UseProtocolDefaults
 ```
 
@@ -113,7 +113,7 @@ This example calculates the exact size of POP messages for USER01.
 > [!IMPORTANT]
 > Set the _PopEnableExactRFC822Size_ parameter to `$true` only if the POP client doesn't work for this user.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -PopUseProtocolDefaults $false -PopEnableExactRFC822Size $true
 ```
 
@@ -122,7 +122,7 @@ This example calculates the exact size of IMAP messages for USER01.
 > [!IMPORTANT]
 > Set the _ImapEnableExactRFC822Size_ parameter to `$true` only if the IMAP client doesn't work for this user.
 
-```
+```PowerShell
 Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapEnableExactRFC822Size $true
 ```
 
@@ -130,7 +130,7 @@ Set-CASMailbox USER01 -ImapUseProtocolDefaults $false -ImapEnableExactRFC822Size
 
 To verify that you successfully set the message size calculation for a POP3 or IMAP4 user, run the following command in Exchange Online PowerShell and verify that the values displayed are the values that you configured::
 
-```
+```PowerShell
 Get-CASMailbox USER01 | format-list *EnableExact*,*UseProtocolDefaults
 ```
 

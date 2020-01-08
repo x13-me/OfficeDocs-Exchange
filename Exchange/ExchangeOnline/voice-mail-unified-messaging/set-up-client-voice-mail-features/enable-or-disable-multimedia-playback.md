@@ -72,12 +72,12 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 This example allows users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` to play back protected voice messages using a media player.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $false
 ```
 
 This example prevents users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` from playing back protected voice messages using a media player.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $true
 ```

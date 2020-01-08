@@ -83,7 +83,7 @@ To enable UM-enabled users to receive faxes, you must do the following:
 
 - Configure the UM mailbox policy that's associated with the UM-enabled user. The UM mailbox policy must be configured to allow incoming faxes, including the fax partner's URI and the name of the fax partner's server. The _FaxServerURI_ parameter must use the following form: sip:\<_fax server URI_\>:\<_port_\>;\<_transport_\>, where "fax server URI" is either a fully qualified domain name (FQDN) or an IP address of the fax partner server. The "port" is the port on which the fax server listens for incoming fax calls and "transport" is the transport protocol that's used for the incoming fax (UDP, TCP, or Transport Layer Security (TLS)). For example, you might configure a UM mailbox policy to receive a fax as follows.
 
-  ```
+  ```PowerShell
   Set-UMMailboxPolicy MyUMMailboxPolicy -AllowFax $true -FaxServerURI "sip:faxserver.abc.com:5060;transport=tcp"
   ```
 
