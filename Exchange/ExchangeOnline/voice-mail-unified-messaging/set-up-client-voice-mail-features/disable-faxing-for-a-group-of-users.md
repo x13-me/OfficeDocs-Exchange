@@ -51,6 +51,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example prevents users who are linked with the UM mailbox policy `MyUMMailboxPolicy` from using inbound faxing.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowFax $false
 ```

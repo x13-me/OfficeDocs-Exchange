@@ -58,18 +58,18 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the primary dial by name method to `FirstLast`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their first and then last name.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary FirstLast
 ```
 
 This example sets the primary dial by name method to `LastFirst`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their last and then first name.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary LastFirst
 ```
 
 This example sets the primary dial by name method to `SMTP address`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their SMTP address.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary SMTPAddress
 ```

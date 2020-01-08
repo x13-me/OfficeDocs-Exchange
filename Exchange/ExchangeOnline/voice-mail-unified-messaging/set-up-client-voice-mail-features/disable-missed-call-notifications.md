@@ -54,6 +54,6 @@ For additional management tasks related to UM mailbox policies, see [Manage a UM
 
 This example disables missed call notifications for a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMissedCallNotifications $false
 ```
