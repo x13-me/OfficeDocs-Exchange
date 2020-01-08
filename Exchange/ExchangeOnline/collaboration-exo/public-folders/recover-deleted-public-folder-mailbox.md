@@ -45,13 +45,13 @@ To restore a primary public folder mailbox:
 
 1. Type the following command to find the soft-deleted mailbox:
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder -SoftDeletedMailbox
    ```
 
 2. Type the following command to restore the chosen mailbox:
 
-   ```
+   ```PowerShell
     Undo-SoftDeletedMailbox -PublicFolder
     ```
 
@@ -63,19 +63,19 @@ Perform the following steps to restore both a primary public folder mailbox and 
 
 1. Type the following command to find the soft-deleted mailboxes:
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder -SoftDeletedMailbox
    ```
 
 2. Type the following command to restore the primary mailbox:
 
-   ```
+   ```PowerShell
    Undo-SoftDeletedMailbox -PublicFolder
    ```
 
 3. Type the following for each secondary public folder mailbox that you want to restore (once per mailbox).
 
-   ```
+   ```PowerShell
    Undo-SoftDeletedMailbox -PublicFolder
    ```
 
@@ -85,7 +85,7 @@ Use this procedure if you want to restore one or more secondary public folder ma
 
 1. Type the following command to find the soft-deleted mailboxes:
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder -SoftDeletedMailbox
    ```
 
@@ -93,7 +93,7 @@ Use this procedure if you want to restore one or more secondary public folder ma
 
 2. Type the following for each secondary public folder mailbox that you want to restore (once per mailbox).
 
-   ```
+   ```PowerShell
    Undo-SoftDeletedMailbox -PublicFolder
    ```
 

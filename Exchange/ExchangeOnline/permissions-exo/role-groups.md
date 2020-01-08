@@ -45,25 +45,25 @@ A role group is a special kind of universal security group (USG) that's used in 
 
 To view a role group, use the following syntax:
 
-```
+```PowerShell
 Get-RoleGroup [-Identity "<Role Group Name>"] [-Filter <Filter>]
 ```
 
 This example returns a summary list of all role groups.
 
-```
+```PowerShell
 Get-RoleGroup
 ```
 
 This example returns detailed information for the role group named Recipient Administrators.
 
-```
+```PowerShell
 Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 ```
 
 This example returns all role groups where the user Julia is a member. You need to use the DistinguishedName (DN) value for Julia, which you can find by running the command: `Get-User -Identity Julia | Format-List DistinguishedName`.
 
-```
+```PowerShell
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
@@ -95,7 +95,7 @@ When you create a new role group, you need to configure all of the settings your
 
 To create a new role group, use the following syntax:
 
-```
+```PowerShell
 New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...> -ManagedBy <Managers> -Members <Members> -CustomRecipientWriteScope "<Existing Write Scope Name>"
 ```
 
@@ -113,13 +113,13 @@ This example creates a new role group named "Limited Recipient Management" with 
 
 - The users Kim and Martin are added as members. Because no custom recipient write scope was specified, Kim and Martin can manage any recipient in the organization.
 
-```
+```PowerShell
 New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients","Mail Enabled Public Folders" -Members "Kim","Martin"
 ```
 
 This is the same example with a custom recipient write scope, which means Kim and Martin can only manage recipients that are included in the Seattle Recipients scope (recipients who have their **City** property set to the value Seattle).
 
-```
+```PowerShell
 New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients","Mail Enabled Public Folders" -Members "Kim","Martin" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
@@ -133,7 +133,7 @@ To verify that you've successfully created a role group, do either of the follow
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
 
-    ```
+    ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List
     ```
 
@@ -167,13 +167,13 @@ If an existing role group is close in terms of the permissions and settings that
 
 1. Store the role group that you want to copy in a variable using the following syntax:
 
-    ```
+    ```PowerShell
     $RoleGroup = Get-RoleGroup "<Existing Role Group Name>"
     ```
 
 2. Create the new role group using the following syntax:
 
-    ```
+    ```PowerShell
     New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>] [-ManagedBy <Managers>] [-CustomRecipientWriteScope "<Existing Custom Recipient Write Scope Name>"]
     ```
 
@@ -185,14 +185,14 @@ If an existing role group is close in terms of the permissions and settings that
 
 This example copies the Organization Management role group to the new role group named "Limited Organization Management". The role group members are Isabelle, Carter, and Lukas and the role group delegates are Jenny and Katie.
 
-```
+```PowerShell
 $RoleGroup = Get-RoleGroup "Organization Management"
 New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas" -ManagedBy "Jenny","Katie"
 ```
 
 This example copies the Organization Management role group to the new role group called Vancouver Organization Management with the Vancouver Users recipient custom recipient write scope.
 
-```
+```PowerShell
 $RoleGroup = Get-RoleGroup "Organization Management"
 New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users"
 ```
@@ -207,7 +207,7 @@ To verify that you've successfully copied a role group, do either of the followi
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
 
-    ```
+    ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List
     ```
 
@@ -239,7 +239,7 @@ The same options are available when you modify role groups as when you [create r
 
 To add roles to role groups in Exchange Online PowerShell, you create _management role assignments_ by using the following syntax:
 
-```
+```PowerShell
 New-ManagementRoleAssignment [-Name "<Unique Name>"] -SecurityGroup "<Role Group Name>" -Role "<Role Name>" [-RecipientRelativeWriteScope <MyGAL | MyDistributionGroups | Organization | Self>] [-CustomRecipientWriteScope "<Role Scope Name>]
 ```
 
@@ -253,19 +253,19 @@ New-ManagementRoleAssignment [-Name "<Unique Name>"] -SecurityGroup "<Role Group
 
 This example assigns the Transport Rules management role to the Seattle Compliance role group.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
 ```
 
 This example assigns the Message Tracking role to the Enterprise Support role group and applies the Organization predefined scope.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
 ```
 
 This example assigns the Message Tracking role to the Seattle Recipient Admins role group and applies the Seattle Recipients scope.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
@@ -276,7 +276,7 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
 
 To remove roles from role groups in Exchange Online PowerShell, you remove _management role assignments_ by using the following syntax:
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" -Role "<Role Name>" -Delegating <$true | $false> | Remove-ManagementRoleAssignment
 ```
 
@@ -286,7 +286,7 @@ Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" -Role "<Role Name
 
 This example removes the Distribution Groups role from the Seattle Recipient Administrators role group.
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
 
@@ -304,13 +304,13 @@ The write scope of a role assignment in a role group defines the objects that th
 
 To set the scope on all of the role assignments on a role group at the same time, use the following syntax:
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" | Set-ManagementRoleAssignment [-CustomRecipientWriteScope "<Recipient Write Scope Name>"] [-RecipientRelativeScopeWriteScope <MyDistributionGroups | Organization | Self>] [-ExclusiveRecipientWriteScope "<Exclusive Recipient Write Scope name>"]
 ```
 
 This example changes the recipient scope for all role assignments on the Sales Recipient Management role group to Direct Sales Employees.
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
 ```
 
@@ -318,7 +318,7 @@ To change the scope on an individual role assignment between a role group and a 
 
 1. Replace \<Role Group Name\> with the name of the role group and run the following command to find the names of all the role assignments on the role group:
 
-    ```
+    ```PowerShell
     Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" | Format-List Name
     ```
 
@@ -326,13 +326,13 @@ To change the scope on an individual role assignment between a role group and a 
 
 3. To set the scope on the individual role assignment, use the following syntax:
 
-    ```
+    ```PowerShell
     Set-ManagementRoleAssignment -Identity "<Role Assignment Name"> [-CustomRecipientWriteScope "<Recipient Write Scope Name>"] [-RecipientRelativeScopeWriteScope <MyDistributionGroups | Organization | Self>] [-ExclusiveRecipientWriteScope "<Exclusive Recipient Write Scope name>"]
     ```
 
   This example changes the recipient scope for the role assignment named Mail Recipients_Sales Recipient Management to All Sales Employees.
 
-    ```
+    ```PowerShell
     Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
     ```
 
@@ -344,7 +344,7 @@ Role group delegates define who is allowed to modify and delete the role group. 
 
 To modify the list of delegates in a role group, use the following syntax:
 
-```
+```PowerShell
 Set-RoleGroup -Identity "<Role Group Name>" -ManagedBy <Delegates>
 ```
 
@@ -354,13 +354,13 @@ Set-RoleGroup -Identity "<Role Group Name>" -ManagedBy <Delegates>
 
 This example replaces all current delegates of the Help Desk role group with the specified users.
 
-```
+```PowerShell
 Set-RoleGroup -Identity "Help Desk" -ManagedBy "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
 This example adds Daigoro Akai and removes Valeria Barrio from the list of delegates on the Help Desk role group.
 
-```
+```PowerShell
 Set-RoleGroup -Identity "Help Desk" -ManagedBy @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
@@ -374,7 +374,7 @@ For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.
 
 To modify the members of a role group, use the following syntax:
 
-```
+```PowerShell
 Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members> [-BypassSecurityGroupManagerCheck]
 ```
 
@@ -384,13 +384,13 @@ Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members> [-Bypass
 
 This example replaces all current members of the Help Desk role group with the specified users.
 
-```
+```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
 This example adds Daigoro Akai and removes Valeria Barrio from the list of members on the Help Desk role group.
 
-```
+```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
@@ -404,13 +404,13 @@ To verify that you've successfully modified a role group, do any of the followin
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
 
-    ```
+    ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List
     ```
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
 
-  ```
+  ```PowerShell
   Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" | Format-Table *WriteScope
   ```
 
@@ -436,19 +436,19 @@ You can't remove built-in role groups, but you can remove custom role groups tha
 
 To remove a custom role group, use the following syntax:
 
-```
+```PowerShell
 Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck]
 ```
 
 This example removes the Training Administrators role group.
 
-```
+```PowerShell
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
 This example removes the Vancouver Recipient Administrators role group. Because the user running the command isn't defined in the **ManagedBy** property of the role group, the _BypassSecurityGroupManagerCheck_ switch is required in the command. The user that's running the command is assigned the Role Management role, which enables the user to bypass the security group manager check.
 
-```
+```PowerShell
 Remove-RoleGroup - Identity "Vancouver Recipient Administrators" -BypassSecurityGroupManagerCheck
 ```
 
@@ -462,6 +462,6 @@ To verify that you've removed a role group, do either of the following steps:
 
 - In Exchange Online PowerShell, run the following command to verify the role group is no longer listed:
 
-    ```
+    ```PowerShell
     Get-RoleGroup
     ```
