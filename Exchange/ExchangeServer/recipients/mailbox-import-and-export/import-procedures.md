@@ -86,7 +86,7 @@ This topic shows you how to:
 
 To create a mailbox import request, use this syntax:
 
-```
+```PowerShell
 New-MailboxImportRequest  [-Name <UniqueName>] -FilePath <UNCPathToPST> -Mailbox <TargetMailboxIdentity> [-IsArchive] [-SourceRootFolder <PSTFolder>] [-TargetRootFolder <MailboxFolder>] [-IncludeFolders <MailboxFolder1>,<MailboxFolder2>...] [-ExcludeFolders <MailboxFolder1>,<MailboxFolder2>...] [-Priority <PriorityValue>]
 ```
 
@@ -102,7 +102,7 @@ This example creates a new mailbox import request with these settings:
 
 - **Priority**: `Normal`, because we aren't using the _Priority_ parameter.
 
-```
+```PowerShell
 New-MailboxImportRequest -FilePath \\SERVER01\PSTFiles\Archives\Vbarrios.pst -Mailbox "Valeria Barrios"
 ```
 
@@ -118,7 +118,7 @@ This example creates a new mailbox import request with these settings:
 
 - **Priority**: `High`
 
-```
+```PowerShell
 New-MailboxImportRequest -Name "Kathleen Reiter Import" -FilePath \\SERVER01\PSTFiles\Recovered.pst -Mailbox kreiter -IsArchive -IncludeFolders "#Inbox#" -TargetRootFolder "Recovered Files" -Priority High
 ```
 
@@ -134,13 +134,13 @@ To verify that you've successfully created a mailbox import request, do any of t
 
 - Replace _\<MailboxIdentity\>_ with the name, email address, or alias of the target mailbox, and run this command in the Exchange Management Shell to verify the basic property values:
 
-  ```
+  ```PowerShell
   Get-MailboxImportRequest -Mailbox "<MailboxIdentity>" | Format-List Name,FilePath,Mailbox,Status
   ```
 
 - Replace _\<MailboxIdentity\>_ and _\<MailboxImportRequestName\>_ with the appropriate values, and run this command in the Exchange Management Shell to verify the details:
 
-  ```
+  ```PowerShell
   Get-MailboxImportRequestStatistics -Identity "<MailboxIdentity>\<MailboxImportRequestName>"
   ```
 
@@ -162,25 +162,25 @@ By default, the **Get-MailboxImportRequestStatistics** cmdlet returns the name, 
 
 This example returns the summary list of all mailbox import requests.
 
-```
+```PowerShell
 Get-MailboxImportRequest
 ```
 
 This example returns additional information for mailbox import requests to the mailbox Akia Al-Zuhairi.
 
-```
+```PowerShell
 Get-MailboxImportRequest -Mailbox "Akia Al-Zuhairi" | Format-List
 ```
 
 This example returns the summary list of in-progress mailbox import requests for mailboxes that reside on the mailbox database named DB01.
 
-```
+```PowerShell
 Get-MailboxImportRequest -Status InProgress -Database DB01
 ```
 
 This example returns the summary list of completed mailbox import requests in the batch named Import DB01 PSTs.
 
-```
+```PowerShell
 Get-MailboxImportRequest -Status Completed -BatchName "Import DB01 PSTs"
 ```
 
@@ -188,7 +188,7 @@ For detailed syntax and parameter information, see [Get-MailboxImportRequest](ht
 
 To view detailed information about a mailbox import request, use this syntax:
 
-```
+```PowerShell
 Get-MailboxImportRequestStatistics -Identity <MailboxImportRequestIdentity> [-IncludeReport] | Format-List
 ```
 
@@ -196,7 +196,7 @@ Where _\<MailboxImportRequestIdentity\>_ is the identity value of the mailbox im
 
 This example returns detailed information for the mailbox import request named MailboxImport for Akia Al-Zuhairi's mailbox, including the log of actions in the **Report** property.
 
-```
+```PowerShell
 Get-MailboxImportRequestStatistics -Identity "aal-zuhairi\MailboxImport" -IncludeReport | Format-List
 ```
 
@@ -208,13 +208,13 @@ You can modify mailbox import requests that haven't completed. You can't modify 
 
 To modify a mailbox import request, use this syntax:
 
-```
+```PowerShell
 Set-MailboxImportRequest -Identity <MailboxIdentity>\<MailboxImportRequestName> [-BadItemLimit <value>] [-LargeItemLimit <value>] [-AcceptLargeDataLoss]
 ```
 
 This example modifies the failed mailbox import request for the mailbox of Valeria Barrios to accept up to five corrupted mailbox items.
 
-```
+```PowerShell
 Set-MailboxImportRequest -Identity "Valeria Barrios\MailboxImport" -BadItemLimit 5
 ```
 
@@ -226,7 +226,7 @@ For detailed syntax and parameter information, see [Set-MailboxImportRequest](ht
 
 To verify that you've successfully modified a mailbox import request, replace _\<MailboxIdentity\>_ and _\<MailboxImportRequestName\>_ with the appropriate values, and run this command in the Exchange Management Shell to verify the details:
 
-```
+```PowerShell
 Get-MailboxImportRequestStatistics -Identity "<MailboxIdentity>\<MailboxImportRequestName>" | Format-List
 ```
 
@@ -236,19 +236,19 @@ You can suspend mailbox import requests that are in progress. You can't suspend 
 
 To suspend a mailbox import request, use this syntax:
 
-```
+```PowerShell
 Suspend-MailboxImportRequest -Identity <MailboxIdentity>\<MailboxImportRequestName> [-SuspendComment "<Descriptive Comment>"]
 ```
 
 This example suspends the mailbox import request to Kathleen Reiter's mailbox that's named Kathleen Reiter Import.
 
-```
+```PowerShell
 Suspend-MailboxImportRequest -Identity "kreiter@contoso.com\Kathleen Reiter Import"
 ```
 
 This example suspends all in-progress mailbox import requests with the comment "OK to resume after 10 P.M. on Monday 6/19"
 
-```
+```PowerShell
 Get-MailboxImportRequest -Status InProgress | Suspend-MailboxImportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
@@ -266,13 +266,13 @@ To verify that you've successfully suspended a mailbox import request, do any of
 
 - Replace _\<MailboxIdentity\>_ with the name, email address, or alias of the target mailbox, run this command in the Exchange Management Shell, and verify that the **Status** property has the value `Suspended`:
 
-  ```
+  ```PowerShell
   Get-MailboxImportRequest -Mailbox "<MailboxIdentity>" | Format-List Name,FilePath,Mailbox,Status
   ```
 
 - Run this command in the Exchange Management Shell, and verify that the suspended mailbox import request is listed:
 
-  ```
+  ```PowerShell
   Get-MailboxImportRequest -Status Suspended
   ```
 
@@ -282,19 +282,19 @@ You can resume suspended or failed mailbox import requests.
 
 To resume a mailbox import request, use this syntax:
 
-```
+```PowerShell
 Resume-MailboxImportRequest -Identity <MailboxIdentity>\<MailboxImportRequestName>
 ```
 
 This example resumes the failed mailbox import request for Valeria Barrios' mailbox.
 
-```
+```PowerShell
 Resume-MailboxImportRequest -Identity vbarrios\MailboxImport
 ```
 
 This example resumes all suspended mailbox import requests.
 
-```
+```PowerShell
 Get-MailboxImportRequest -Status Suspended | Resume-MailboxImportRequest
 ```
 
@@ -304,7 +304,7 @@ For detailed syntax and parameter information, see [Resume-MailboxImportRequest]
 
 To verify that you've successfully resumed a mailbox import request, replace _\<MailboxIdentity\>_ with the name, email address, or alias of the target mailbox, run this command in the Exchange Management Shell, and verify that the **Status** property doesn't have the value `Suspended`:
 
-```
+```PowerShell
 Get-MailboxImportRequest -Mailbox <MailboxIdentity> | Format-List Name,FilePath,Mailbox,Status
 ```
 
@@ -322,13 +322,13 @@ You can remove fully or partially completed mailbox import requests.
 
 This example removes the mailbox import request named MailboxImport for Akia Al-Zuhairi's mailbox.
 
-```
+```PowerShell
 Remove-MailboxImportRequest -Identity "aal-zuhairi\MailboxImport"
 ```
 
 This example removes all completed mailbox import requests.
 
-```
+```PowerShell
 Get-MailboxImportRequest -Status Completed | Remove-MailboxImportRequest
 ```
 
@@ -338,6 +338,6 @@ For detailed syntax and parameter information, see [Remove-MailboxImportRequest]
 
 To verify that you've successfully removed a mailbox import request, replace _\<MailboxIdentity\>_ with the name, email address, or alias of the target mailbox, run this command in the Exchange Management Shell, and verify that the mailbox import request isn't listed:
 
-```
+```PowerShell
 Get-MailboxImportRequest -Mailbox <MailboxIdentity> | Format-List Name,FilePath,Mailbox,Status
 ```

@@ -69,19 +69,19 @@ There are two types of accepted domains in Exchange Online:
 
 To view summary information about all accepted domains, run the following command:
 
-```
+```powershell
 Get-AcceptedDomain
 ```
 
 To view details about a specific accepted domain, use the following syntax.
 
-```
+```powershell
 Get-AcceptedDomain -Identity <Name> | Format-List
 ```
 
 This example shows details about the accepted domain named contoso.com.
 
-```
+```powershell
 Get-AcceptedDomain -Identity contoso.com | Format-List
 ```
 
@@ -107,13 +107,13 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 To configure the domain type, use the following syntax:
 
-```
+```powershell
 Set-AcceptedDomain -Identity <Name> -DomainType <Authoritative | InternalRelay>
 ```
 
 This example configures the accepted domain named contoso.com as an internal relay domain.
 
-```
+```powershell
 Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 ```
 

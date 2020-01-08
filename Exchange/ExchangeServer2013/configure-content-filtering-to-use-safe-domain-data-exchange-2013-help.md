@@ -46,7 +46,7 @@ We recommend that you don't modify the default setting in most cases. However, y
 
 2. Locate the *\</appsettings\>* key at the end of the file, and paste the following key before the *\</appsettings\>* key:
 
-   ```command line
+   ```xml
    <add key="IncludeSafeDomains" value="true" />
    ```
 

@@ -132,7 +132,7 @@ The important settings for the connector are:
 
 To create the outbound connector to the email add-on service in Exchange Online PowerShell, use this syntax:
 
-```
+```powershell
 New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts <SmartHost> -TlsSettings DomainValidation -TlsDomain <SmartHost> [-CloudServicesMailEnabled $true]
 ```
 
@@ -146,7 +146,7 @@ This example creates an outbound connector with these settings:
 
 - Internal Exchange message headers that identify messages as internal are preserved in the outbound messages.
 
-```
+```powershell
 New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
@@ -160,7 +160,7 @@ To verify that you've successfully created an outbound connector to route messag
 
 - In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values:
 
-  ```
+  ```powershell
   Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,ConnectorType,IsTransportRuleScoped,UseMxRecord,SmartHosts,TlsSettings,TlsDomain,CloudServicesMailEnabled
   ```
 
@@ -202,7 +202,7 @@ When you're finished, click **Save**.
 
 To create the mail flow rule in Exchange Online PowerShell, use this syntax:
 
-```
+```powershell
 New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMessageOutboundConnector "<Connector Name>" -ExceptIfHeaderContainsMessageHeader <HeaderName> -ExceptIfHeaderContainsWords <HeaderValue> -StopRuleProcessing $true
 ```
 
@@ -214,7 +214,7 @@ This example creates the mail flow rule with these settings:
 
 - **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
 
-```
+```powershell
 New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
 ```
 
@@ -228,7 +228,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
 - In Exchange Online PowerShell, replace _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values:
 
-  ```
+  ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List Name,FromScope,RouteMessageOutboundConnector,ExceptIfHeaderContainsMessageHeader,ExceptIfHeaderContainsWords,StopRuleProcessing
   ```
 
@@ -300,7 +300,7 @@ The important settings for the connector are:
 
 To create the inbound connector from the email add-on service in Exchange Online PowerShell, use this syntax:
 
-```
+```powershell
 New-InboundConnector -Name "<Descriptive Name>" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName <CertificateDomainName> [-CloudServicesMailEnabled $true]
 ```
 
@@ -312,7 +312,7 @@ This example creates an inbound connector with these settings:
 
 - Internal Exchange message headers that identify messages returning from the email add-on service as internal messages are preserved.
 
-```
+```powershell
 New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
@@ -326,6 +326,6 @@ To verify that you've successfully created an inbound connector to receive messa
 
 - In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values:
 
-  ```
+  ```powershell
   Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled
   ```

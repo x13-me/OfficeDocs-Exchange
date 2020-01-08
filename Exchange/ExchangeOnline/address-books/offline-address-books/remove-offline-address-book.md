@@ -35,7 +35,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 This example removes an OAB named My OAB.
 
-```
+```PowerShell
 Remove-OfflineAddressBook -Identity "My OAB"
 ```
 
@@ -46,6 +46,6 @@ For detailed syntax and parameter information, see [Remove-OfflineAddressBook](h
 
 To verify that you've successfully removed the OAB, run the following command to verify that the OAB is gone.
 
-```
+```PowerShell
 Get-OfflineAddressBook
 ```

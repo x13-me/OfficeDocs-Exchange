@@ -62,14 +62,14 @@ By default, delivery queues that have the status Active, Connecting, Ready, or R
 
 2. Add one or both of the following keys in the `<appSettings>` section.
 
-    ```Command&nbsp;Line
+    ```xml
     <add key="QueueLoggingThreshold" value="<integer>" />
     <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
     ```
 
     For example, to set the **QueueLoggingThreshold** value to 1 and the **QueueLoggingInterval** value to 30 seconds, use the following values:
 
-    ```Command&nbsp;Line
+    ```xml
     <add key="QueueLoggingThreshold" value="1" />
     <add key="QueueLoggingInterval" value="00:00:30" />
     ```

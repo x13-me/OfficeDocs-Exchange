@@ -53,7 +53,7 @@ You can use retention policies to group one or more retention tags and apply the
 
 This example applies the retention policy RP-Finance to Morris's mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Morris" -RetentionPolicy "RP-Finance"
 ```
 
@@ -63,20 +63,20 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 This example applies the new retention policy New-Retention-Policy to all mailboxes that have the old policy Old-Retention-Policy.
 
-```
+```PowerShell
 $OldPolicy={Get-RetentionPolicy "Old-Retention-Policy"}.distinguishedName
 Get-Mailbox -Filter "RetentionPolicy -eq '$OldPolicy'" -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
 ```
 
 This example applies the retention policy RetentionPolicy-Corp to all mailboxes in the Exchange organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited | Set-Mailbox -RetentionPolicy "RetentionPolicy-Corp"
-```
+```PowerShell
 
 This example applies the retention policy RetentionPolicy-Finance to all mailboxes in the Finance organizational unit.
 
-```
+```PowerShell
 Get-Mailbox -OrganizationalUnit "Finance" -ResultSize Unlimited | Set-Mailbox -RetentionPolicy "RetentionPolicy-Finance"
 ```
 
@@ -88,12 +88,12 @@ To verify that you have applied the retention policy, run the [Get-Mailbox](http
 
 This example retrieves the retention policy for Morris's mailbox.
 
-```
+```PowerShell
 Get-Mailbox Morris | Select RetentionPolicy
 ```
 
 This command retrieves all mailboxes that have the retention policy RP-Finance applied.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionPolicy -eq "RP-Finance"} | Format-Table Name,RetentionPolicy -Auto
 ```

@@ -85,19 +85,19 @@ For additional management tasks related to user access to mailboxes, see these t
 
 To enable or disable ActiveSync access to a single mailbox, use this syntax:
 
-```
+```powershell
 Set-CasMailbox -Identity <MailboxIdentity> -ActiveSyncEnabled <$true | $false>
 ```
 
 This example disables ActiveSync access to the mailbox named Yan Li.
 
-```
+```powershell
 Set-CasMailbox -Identity "Yan Li" -ActiveSyncEnabled $false
 ```
 
 This example enables ActiveSync access to the mailbox named Elly Nkya.
 
-```
+```powershell
 Set-CasMailbox -Identity "Elly Nkya" -ActiveSyncEnabled $true
 ```
 
@@ -143,19 +143,19 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 This example disables ActiveSync access to all user mailboxes in the North America\Finance OU.
 
-```
+```powershell
 $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -ActiveSyncEnabled $false}
 ```
 
 This example disables ActiveSync access to all user mailboxes in the Engineering department in Washington state.
 
-```
+```powershell
 Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -ActiveSyncEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable ActiveSync access to the specified mailboxes.
 
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -ActiveSyncEnabled $false}
 ```
 
@@ -175,18 +175,18 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync acces
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
-  ```
+  ```powershell
   Get-CasMailbox -Identity "<MailboxIdentity>"
   ```
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```
+  ```powershell
   Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where ActiveSync access is disabled:
 
-  ```
+  ```powershell
   Get-CasMailbox -ResultSize unlimited -Filter "ActiveSyncEnabled -eq `$false"
   ```

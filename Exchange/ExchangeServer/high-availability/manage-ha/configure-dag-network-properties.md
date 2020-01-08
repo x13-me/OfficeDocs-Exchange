@@ -54,7 +54,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 This example adds a subnet of 10.0.0.0 and subnet mask of 255.0.0.0 to the DAG network MapiDagNetwork in the DAG DAG1.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
 ```
 
@@ -65,7 +65,7 @@ To verify that you've successfully configured the DAG network, do the following:
 
 - In the Exchange Management Shell, run the following command to display DAG network configuration settings and verify the DAG network was configured successfully.
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
   ```
 
