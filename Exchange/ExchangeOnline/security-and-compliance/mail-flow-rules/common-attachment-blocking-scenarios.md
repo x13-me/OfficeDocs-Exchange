@@ -44,7 +44,7 @@ To get started implementing any of these scenarios to block certain message type
 
 Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
 
-```
+```PowerShell
 Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
 ```
 
