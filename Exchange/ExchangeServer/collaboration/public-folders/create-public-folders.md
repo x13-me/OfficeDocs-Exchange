@@ -59,7 +59,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 This example creates a public folder named Reports in the path Marketing\2016.
 
-```
+```PowerShell
 New-PublicFolder -Name Reports -Path \Marketing\2016
 ```
 
@@ -77,15 +77,15 @@ To verify that you've successfully created a public folder, do the following:
 
 - In the Exchange Management Shell, run any of the following commands:
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Identity \Marketing\2016\Reports | Format-List
   ```
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Identity \Marketing\2016 -GetChildren
   ```
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Recurse
   ```
 

@@ -124,7 +124,7 @@ To further verify that you have successfully created and configured your hybrid 
 
 - Run the following command in the Exchange Management Shell for the on-premises organization. This command displays the hybrid deployment configuration values and settings, hybrid features, and transport endpoints. Verify that these values are correct.
 
-  ```
+  ```PowerShell
   Get-HybridConfiguration
   ```
 

@@ -109,7 +109,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 To install an Exchange CU from the command line, use the following syntax:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade [/DomainController:<ServerFQDN>] [/EnableErrorReporting]
 ```
 
@@ -121,7 +121,7 @@ To install an Exchange CU from the command line, use the following syntax:
 
 This example uses the Exchange CU files on drive E: to install the CU on the local server, and uses the domain controller dc01.contoso.com to read from and write to Active Directory.
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade /DomainController:dc01.contoso.com
 ```
 

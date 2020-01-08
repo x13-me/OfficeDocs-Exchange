@@ -47,13 +47,13 @@ For additional management tasks related to Outlook on the web mailbox policies, 
 
 To remove an Outlook on the web mailbox policy, use the following syntax:
 
-```
+```PowerShell
 Remove-OwaMailboxPolicy -Identity "<Policy Name>"
 ```
 
 This example removes the Outlook on the web mailbox policy named Sales Associates.
 
-```
+```PowerShell
 Remove-OwaMailboxPolicy -Identity "Sales Associates"
 ```
 
@@ -67,6 +67,6 @@ To verify that you've successfully removed an Outlook on the web mailbox policy,
 
 - In Exchange Online PowerShell, run the following command to verify the policy is no longer listed:
 
-    ```
+    ```PowerShell
     Get-OwaMailboxPolicy
     ```

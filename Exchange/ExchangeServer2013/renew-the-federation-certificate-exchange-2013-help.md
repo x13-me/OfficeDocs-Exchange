@@ -101,7 +101,7 @@ You can safely perform this step now, because the proof of domain ownership TXT 
 
    The command output looks like this:
 
-   ```text
+   ```console
    Thumbprint : <new certificate thumbprint> (for example, 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73)
 
    Proof      : <new hash text> (for example, znMfbkgSbOQSsWFdsW+gm3to0nZSdE3zbcPPHGVAqdgsLFGsCPuLHiyVbKoPmgyZKX90NH2g1PbCZH0YTQF6oA==)

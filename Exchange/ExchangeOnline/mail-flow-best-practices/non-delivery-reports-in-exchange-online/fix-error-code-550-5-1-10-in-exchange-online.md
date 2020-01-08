@@ -230,15 +230,15 @@ If you have a hybrid configuration and the recipient is located in the on-premis
 
 2. Open Windows PowerShell on the server and run the following commands:
 
-   ```
+   ```powershell
    CD "C:\Program Files\Microsoft Online Directory Sync"
    ```
 
-   ```
+   ```powershell
    DirSyncConfigShell.psc1
    ```
 
-   ```
+   ```powershell
    Start-OnlineCoexistenceSync
    ```
 

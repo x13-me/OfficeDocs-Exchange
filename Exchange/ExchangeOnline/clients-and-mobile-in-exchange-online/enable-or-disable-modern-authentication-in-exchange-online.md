@@ -54,7 +54,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
    - Run the following command to enable modern authentication connections to Exchange Online by Outlook 2013 or later clients:
 
-     ```
+     ```PowerShell
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
      ```
 
@@ -62,13 +62,13 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
    - Run the following command to prevent modern authentication connections (force the use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
 
-     ```
+     ```PowerShell
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
      ```
 
 3. To verify that the change was successful, run the following command:
 
-     ```
+     ```PowerShell
      Get-OrganizationConfig | Format-Table Name,OAuth* -Auto
      ```
 

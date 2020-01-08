@@ -67,13 +67,13 @@ You can use the EAC to assign users the permissions required to view and modify 
 
 To verify that you've successfully assigned permissions for a user, replace \<Role  Name\> with the name of the role to verify, and run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -Role "<Role Name>" -GetEffectiveUsers
 ```
 
 This example shows you how to verify whom you've assigned permissions to install add-ins from the Office Store for the organization.
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers
 ```
 
