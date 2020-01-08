@@ -94,19 +94,19 @@ After you create the remote domain, you can configure the settings (you can't cr
 
 To create a new remote domain, use the following syntax:
 
-```
+```powershell
 New-RemoteDomain -Name "<Unique Name"> -DomainName <single SMTP domain | domain with subdomains>
 ```
 
 This example creates a remote domain for messages sent to the contoso.com domain.
 
-```
+```powershell
 New-RemoteDomain -Name Contoso -DomainName contoso.com
 ```
 
 This example creates a remote domain for messages sent to the contoso.com domain and all its subdomains.
 
-```
+```powershell
 New-RemoteDomain -Name "Contoso and subdomains" -DomainName *.contoso.com
 ```
 
@@ -116,55 +116,55 @@ For detailed syntax and parameter information, see [New-RemoteDomain](https://do
 
 To configure the settings for a remote domain, use the following syntax:
 
-```
+```powershell
 Set-RemoteDomain -Identity <Name> [-AllowedOOfType <External | InternalLegacy | ExternalLegacy | None>] [-AutoForwardEnabled <$true | $false>] [-AutoReplyEnabled <$true | $false>] [-CharacterSet <SupportedCharacterSet>] [-DeliveryReportEnabled <$true | $false>] [-NonMimeCharacterSet <SupportedCharacterSet>] [-TNEFEnabled <$true | $false>]
 ```
 
 This example disables automatic replies, automatic forwarding, and out-of-office replies to recipients at all remote domains that aren't specified with their own remote domain.
 
-```
+```powershell
 Set-RemoteDomain -Identity  Default -AutoReplyEnabled $false -AutoForwardEnabled $false -AllowedOOFType None
 ```
 
 This example sends internal out of office replies to users at the remote domain named Contoso.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -AllowedOOFType InternalLegacy
 ```
 
 This example disables prevents delivery reports and non-delivery reports from being sent to users at Contoso.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -DeliveryReportEnabled $false -NDREnabled $false
 ```
 
 This example sends all messages to Contoso using Transport Neutral Encapsulation Formation (TNEF) encoding, rather than MIME encoding. This preserves Rich Text format in messages.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $true
 ```
 
 This example sends all messages to Contoso using MIME encoding, which means that all RTF messages are always converted to HTML or plain text.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $false
 ```
 
 This example uses the message format settings the user has defined in Outlook or Outlook on the web for encoding messages.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $null
 ```
 
 This example uses the Korean (ISO) character set for MIME messages sent to Contoso.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -CharacterSet iso-2022-kr
 ```
 
 This example specifies using the Unicode character set for non-MIME messages sent to Contoso.
 
-```
+```powershell
 Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
 ```
 
@@ -178,7 +178,7 @@ To verify that you've successfully created and configured a remote domain, use e
 
 - In Exchange Online PowerShell, replace \<Remote Domain Name\> with the name of the remote domain and run the following command to verify the settings:
 
-  ```
+  ```powershell
   Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
   ```
 
@@ -204,13 +204,13 @@ To verify that you've successfully created and configured a remote domain, use e
 
 To remove a remote domain, use the following syntax:
 
-```
+```powershell
 Remove-RemoteDomain -Identity <Remote Domain Name>
 ```
 
 This example removes the remote domain named Contoso.
 
-```
+```powershell
 Remove-RemoteDomain -Identity Contoso
 ```
 
@@ -224,6 +224,6 @@ To verify that you've successfully removed a remote domain, do either of the fol
 
 - In Exchange Online PowerShell, run the following command and verify that the remote domain isn't listed:
 
-  ```
+  ```powershell
   Get-RemoteDomain
   ```

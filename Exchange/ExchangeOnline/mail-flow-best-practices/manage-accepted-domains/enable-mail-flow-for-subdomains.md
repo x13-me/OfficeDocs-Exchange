@@ -63,13 +63,13 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 To add match subdomains to a domain that is set up as an internal relay, use this syntax:
 
-```
+```powershell
 Set-AcceptedDomain -Identity <Domain Name> -MatchSubdomains $true
 ```
 
 This example sets up match subdomains for the contoso.com domain.
 
-```
+```powershell
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
 
@@ -79,6 +79,6 @@ For detailed syntax and parameter information, see [Set-AcceptedDomain](https://
 
 To verify that you've successfully added match subdomains to a domain using Exchange Online PowerShell, run the following command to verify the _MatchSubdomains_ property value:
 
-```
+```powershell
 Get-AcceptedDomain | Format-List Name,MatchSubdomains
 ```

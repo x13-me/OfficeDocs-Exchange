@@ -79,13 +79,13 @@ Regardless of the FQDN value, if you want external POP3 or IMAP4 clients to use 
 
 To configure the FQDN for authenticated SMTP clients, use the following syntax:
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -Fqdn <FQDN>
 ```
 
 This example configures the FQDN value mail.contoso.com.
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -Fqdn mail.contoso.com
 ```
 
@@ -97,7 +97,7 @@ To verify that you've successfully the FQDN on the "Client Frontend *\<Server na
 
 - In the Exchange Management Shell, run the following command:
 
-  ```
+  ```powershell
   Get-ReceiveConnector -Identity "Client Frontend*" | Format-List Name,Fqdn
   ```
 
@@ -109,29 +109,29 @@ Also, you need to assign the certificate to the Exchange SMTP service. For more 
 
 To specify the certificate that's used for authenticated SMTP client connections, use the following syntax:
 
-```
+```powershell
 $TLSCert = Get-ExchangeCertificate -Thumbprint <ThumbprintValue>
 ```
 
-```
+```powershell
 $TLSCertName = "<I>$($TLSCert.Issuer)<S>$($TLSCert.Subject)"
 ```
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -TlsCertificateName $TLSCertName
 ```
 
 This example uses the certificate that has the thumbprint value 434AC224C8459924B26521298CE8834C514856AB.
 
-```
+```powershell
 $TLSCert = Get-ExchangeCertificate -Thumbprint 434AC224C8459924B26521298CE8834C514856AB
 ```
 
-```
+```powershell
 $TLSCertName = "<I>$($TLSCert.Issuer)<S>$($TLSCert.Subject)"
 ```
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -TlsCertificateName $TLSCertName
 ```
 
@@ -141,13 +141,13 @@ To verify that you've specified the certificate that's used to encrypt authentic
 
 1. Run the following command in the Exchange Management Shell:
 
-   ```
+   ```powershell
    Get-ReceiveConnector -Identity "Client Frontend*" | Format-List Name,Fqdn,TlsCertificateName
    ```
 
 2. Run the following command in the Exchange Management Shell:
 
-   ```
+   ```powershell
    Get-ExchangeCertificate | Format-List Thumbprint,Issuer,Subject,CertificateDomains,Services
    ```
 
@@ -157,7 +157,7 @@ To verify that you've specified the certificate that's used to encrypt authentic
 
 To configure Outlook on the web to display the SMTP settings server for authenticated SMTP clients, run the following command:
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -AdvertiseClientSettings $true
 ```
 
