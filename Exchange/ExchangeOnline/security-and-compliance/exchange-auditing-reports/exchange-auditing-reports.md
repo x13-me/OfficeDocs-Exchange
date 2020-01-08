@@ -97,7 +97,7 @@ In the details pane, the user is listed under **Members** and can access the Aud
 
 Run the following command to assign the Audit Logs role to a user.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -Role "Audit Logs" -User <Identity>
 ```
 
@@ -112,6 +112,6 @@ When you export the mailbox audit log or administrator audit log, Exchange Onlin
 
 Run the following command to allow XML attachments in Outlook on the web:
 
-```
+```PowerShell
 Set-OwaMailboxPolicy -Identity Default -AllowedFileTypes @{Add=".xml"}
 ```
