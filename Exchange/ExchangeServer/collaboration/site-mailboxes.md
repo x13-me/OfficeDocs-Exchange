@@ -57,7 +57,7 @@ When the lifecycle application in SharePoint closes a site mailbox, the site mai
 
 You can use the following command to search for and remove site mailboxes that have been marked for deletion.
 
-```
+```PowerShell
 Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
 ```
 

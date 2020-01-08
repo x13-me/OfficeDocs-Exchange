@@ -40,7 +40,7 @@ For additional management tasks related to public folders, see [Public Folder Pr
 
 This example returns the statistics for the public folder Marketing with a piped command to format the list.
 
-```
+```PowerShell
 Get-PublicFolderStatistics -Identity \Marketing | Format-List
 ```
 
@@ -71,13 +71,13 @@ You can use this information to make decisions about what actions to take for yo
 
 This example returns default statistics for all items in the public folder Pamphlets under the path \Marketing\2013. Default information includes item identity, creation time, and subject.
 
-```
+```PowerShell
 Get-PublicFolderItemStatistics -Identity "\Marketing\2013\Pamphlets"
 ```
 
 This example returns additional information about the items within the public folder Pamphlets, such as subject, last modification time, creation time, attachments, message size, and the type of item. It also includes a piped command to format the list.
 
-```
+```PowerShell
 Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-List
 ```
 
@@ -97,7 +97,7 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 
 - Size of the item (`MessageSize`)
 
-```
+```PowerShell
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
