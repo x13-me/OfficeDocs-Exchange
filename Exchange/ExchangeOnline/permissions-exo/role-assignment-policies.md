@@ -85,13 +85,13 @@ The available end-user roles that you can assign to mailbox plans are described 
 
 To view the roles assigned to a role assignment policy, use the following syntax:
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "<RoleAssignmentPolicyName>" | Format-Table Name,Role -Auto
 ```
 
 This example returns the roles that are assigned to the policy named Default Role Assignment Policy.
 
-```
+```PowerShell
 Get-ManagementRoleAssignment -RoleAssignee "Default Role Assignment Policy" | Format-Table Name,Role -Auto
 ```
 
@@ -99,7 +99,7 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 **Note**: To return a list of all available end-user roles, run the following command:
 
-```
+```PowerShell
 Get-ManagementRole | Where {$_.IsEndUserRole -eq $true} | Format-Table Name,Parent
 ```
 
@@ -125,13 +125,13 @@ Adding a role to a role assignment policy creates a new role assignment with a u
 
 To add roles to a role assignment policy, use the following syntax:
 
-```
+```PowerShell
 New-ManagementRoleAssignment -Role <RoleName> -Policy "<RoleAssignmentPolicyName>"
 ```
 
 This example adds the role MyMailboxDelegation to the role assignment policy named Default Role Assignment Policy.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -Role MyMailboxDelegation -Policy "Default Role Assignment Policy"
 ```
 
@@ -144,13 +144,13 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
 
 2. To remove the role from the role assignment policy, use this syntax:
 
-   ```
+   ```PowerShell
    Remove-ManagementRoleAssignment -Identity "<RoleAssignmentName>"
    ```
 
    This example removes the MyDistributionGroups role from the role assignment policy named Default Role Assignment Policy.
 
-   ```
+   ```PowerShell
    Remove-ManagementRoleAssignment -Identity "MyDistributionGroups-Default Role Assignment Policy"
    ```
 
@@ -164,7 +164,7 @@ To verify that you've successfully added or removed roles from a role assignment
 
 - In Exchange Online PowerShell, replace \<RoleAssignmentPolicyName\> with the name of the role assignment policy, and run the following command:
 
-   ```
+   ```PowerShell
    Get-ManagementRoleAssignment -RoleAssignee "<RoleAssignmentPolicyName>" | Format-Table Name,Role -Auto
    ```
 
@@ -188,13 +188,13 @@ To verify that you've successfully added or removed roles from a role assignment
 
 To create a role assignment policy, use the following syntax:
 
-```
+```PowerShell
 New-RoleAssignmentPolicy -Name <UniqueName> [-Description "<Descriptive Text>"] [-Roles "<EndUserRole1>","<EndUserRole2>"...] [-IsDefault]
 ```
 
 This example creates a new role assignment policy named Contoso Contractors that includes the specified end-user roles.
 
-```
+```PowerShell
 New-RoleAssignmentPolicy -Name "Contoso Contractors" -Description "Limited self-management capabilities for contingent staff."] -Roles "MyBaseOptions","MyContactInformation","MyProfileInformation"
 ```
 
@@ -208,7 +208,7 @@ To verify that you've successfully created a role assignment policy, use either 
 
 - In Exchange Online PowerShell, replace \<RoleAssignmentPolicyName\> with the name of the role assignment policy, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-RoleAssignmentPolicy -Identity "<RoleAssignmentPolicyName>" | Format-List Description,AssignedRoles,IsDefault
    ```
 
@@ -224,13 +224,13 @@ Otherwise, all you can do in the EAC or Exchange Online PowerShell is modify the
 
 To specify the default role assignment policy, use the following syntax:
 
-```
+```PowerShell
 Set-RoleAssignmentPolicy -Identity "<RoleAssignmentPolicyName>" -IsDefault
 ```
 
 This example configures Contoso Users as the default role assignment policy.
 
-```
+```PowerShell
 Set-RoleAssignmentPolicy -Identity "Contoso Users" -IsDefault
 ```
 
@@ -246,7 +246,7 @@ To verify that you've successfully modified a role assignment policy, use either
 
 - In Exchange Online PowerShell, replace \<RoleAssignmentPolicyName\> with the name of the role assignment policy, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-RoleAssignmentPolicy -Identity "<RoleAssignmentPolicyName>" | Format-List Description,AssignedRoles,IsDefault
    ```
 
@@ -266,13 +266,13 @@ You can't remove a role assignment policy that's assigned to mailboxes. Use the 
 
 To remove a role assignment policy, use the following syntax:
 
-```
+```PowerShell
 Remove-RoleAssignmentPolicy -Identity "<RoleAssignmentPolicyName>"
 ```
 
 This example removes the role assignment policy named Contoso Managers.
 
-```
+```PowerShell
 Remove-RoleAssignmentPolicy -Identity "Contoso Managers"
 ```
 
@@ -286,7 +286,7 @@ To verify that you've successfully removed a role assignment policy, use either 
 
 - In Exchange Online PowerShell, run the following command to verify the role assignment policy isn't listed:
 
-   ```
+   ```PowerShell
    Get-RoleAssignmentPolicy | Format-Table Name
    ```
 
@@ -304,33 +304,33 @@ To verify that you've successfully removed a role assignment policy, use either 
 
 To see the role assignment policy assignment on a specific mailbox, use the following syntax:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List RoleAssignmentPolicy
 ```
 
 This example returns the role assignment policy for the mailbox named Pedro Pizarro.
 
-```
+```PowerShell
 Get-Mailbox -Identity "Pedro Pizarro" | Format-List RoleAssignmentPolicy
 ```
 
 To return all mailboxes that have a specific role assignment policy assigned, use the following syntax:
 
-```
+```PowerShell
 $<VariableName> = Get-Mailbox -ResultSize unlimited
 ```
 
-```
+```PowerShell
 $<VariableName> | where {$_.RoleAssignmentPolicy -eq '<RoleAssignmentPolicyName>'}
 ```
 
 This example returns all mailboxes that have the role assignment policy named Contoso Managers assigned.
 
-```
+```PowerShell
 $Mgrs = Get-Mailbox -ResultSize unlimited
 ```
 
-```
+```PowerShell
 $Mgrs | where {$_.RoleAssignmentPolicy -eq 'Contoso Managers'}
 ```
 
@@ -350,33 +350,33 @@ In the EAC, go to **Recipients** \> **Mailboxes**, and do one of the following s
 
 To change the role assignment policy assignment on a specific mailbox, use this syntax:
 
-```
+```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -RoleAssignmentPolicy "<RoleAssignmentPolicyName>"
 ```
 
 This example applies the role assignment policy named Contoso Managers to the mailbox named Pedro Pizarro.
 
-```
+```PowerShell
 Get-Mailbox -Identity "Pedro Pizarro" -RoleAssignmentPolicy "<RoleAssignmentPolicyName>"
 ```
 
 To change the assignment for all mailboxes that have a specific role assignment policy assigned, use the following syntax:
 
-```
+```PowerShell
 $<VariableName> = Get-Mailbox -ResultSize unlimited
 ```
 
-```
+```PowerShell
 $<VariableName> | where {$_.RoleAssignmentPolicy -eq '<CurrentRoleAssignmentPolicyName>'} | Set-Mailbox -RoleAssignmentPolicy '<NewRoleAssignmentPolicyName>'
 ```
 
 This example changes the role assignment policy from Default Role Assignment Policy to Contoso Staff for all mailboxes that currently have Default Role Assignment Policy assigned.
 
-```
+```PowerShell
 $Users = Get-Mailbox -ResultSize unlimited
 ```
 
-```
+```PowerShell
 $Users | where {$_.RoleAssignmentPolicy -eq 'Default Role Assignment Policy'} | Set-Mailbox -RoleAssignmentPolicy 'Contoso Staff'
 ```
 
@@ -388,16 +388,16 @@ To verify that you've successfully modified the role assignment policy assignmen
 
 - In Exchange Online PowerShell, replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the **RoleAssignmentPolicy** property value:
 
-   ```
+   ```PowerShell
    Get-Mailbox -Identity <MailboxIdentity> | Format-List RoleAssignmentPolicy
    ```
 
 - In Exchange Online PowerShell, replace \<RoleAssignmentPolicyName\> with the name of the role assignment policy, and run the following commands to verify the mailboxes that have the policy assigned:
 
-   ```
+   ```PowerShell
    $X = Get-Mailbox -ResultSize unlimited
    ```
 
-   ```
+   ```PowerShell
    $X | where {$_.RoleAssignmentPolicy -eq '<RoleAssignmentPolicyName>'}
    ```

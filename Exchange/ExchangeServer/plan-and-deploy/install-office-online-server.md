@@ -68,7 +68,7 @@ To install Office Online Server prerequisites, do the following:
 
 2. Install the required operating system features by running the following command:
 
-   ```
+   ```powershell
    Install-WindowsFeature Web-Server, Web-Mgmt-Tools, Web-Mgmt-Console, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Static-Content, Web-Performance, Web-Stat-Compression, Web-Dyn-Compression, Web-Security, Web-Filtering, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Includes, InkandHandwritingServices, Windows-Identity-Foundation
    ```
 
@@ -98,7 +98,7 @@ To install Office Online Server, do the following on the computer where you want
 
 7. Open Windows PowerShell and run the following commands. When you run the commands, replace the example FQDNs and certificate friendly name with your own.
 
-   ```
+   ```powershell
    New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
    ```
 
@@ -111,13 +111,13 @@ After you've configured the Office Online Server server, do the following on you
 
 1. Open the Exchange Management Shell and run the following command. Replace the example server name and URL with your own.
 
-   ```
+   ```powershell
    Set-MailboxServer MBX -WacDiscoveryEndpoint "https://oos.contoso.com/hosting/discovery"
    ```
 
 2. Restart the MsExchangeOwaAppPool by running the following command.
 
-   ```
+   ```powershell
    Restart-WebAppPool MsExchangeOwaAppPool
    ```
 
@@ -127,7 +127,7 @@ After you've configured the Office Online Server server, do the following on you
 
 1. Open the Exchange Management Shell and run the following command. Replace the example URL with your own.
 
-   ```
+   ```powershell
    Set-OrganizationConfig -WacDiscoveryEndpoint "https://oos.internal.contoso.com/hosting/discovery"
    ```
 
@@ -136,6 +136,6 @@ After you've configured the Office Online Server server, do the following on you
 
 2. Restart the MsExchangeOwaAppPool by running the following command.
 
-   ```
+   ```powershell
    Restart-WebAppPool MsExchangeOwaAppPool
    ```

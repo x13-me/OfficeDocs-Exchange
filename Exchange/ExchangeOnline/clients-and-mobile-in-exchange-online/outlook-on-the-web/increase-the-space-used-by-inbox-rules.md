@@ -45,13 +45,13 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
 - **Individual mailboxes**: Use the following syntax:
 
-    ```
+    ```PowerShell
     Set-Mailbox -Identity <MailboxIdentity> -RulesQuota "<32 KB to 256 KB>"
     ```
 
     This example decreases the rules quota to 200 KB for the user douglas@contoso.com.
 
-    ```
+    ```PowerShell
     Set-Mailbox -Identity douglas@contoso.com -RulesQuota "200 KB"
     ```
 
@@ -63,21 +63,21 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
     The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the rules quota to the mailboxes):
 
-    ```
+    ```PowerShell
     $<VariableName> = <Get-User | Get-Mailbox> -ResultSize unlimited -Filter <Filter>
     ```
 
-    ```
+    ```PowerShell
     $<VariableName> | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -RulesQuota "<32 KB to 256 KB>"}
     ```
 
     This example decreases the rules quota to 32 KB to all mailboxes whose **Title** attribute contains "Vendor" or "Contractor".
 
-    ```
+    ```PowerShell
     $V = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')"
     ```
 
-    ```
+    ```PowerShell
     $V | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -RulesQuota "32 KB"}
     ```
 
@@ -87,21 +87,21 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
   The syntax uses the following two commands (one to identify the user accounts, and the other to apply the rules quota to those users):
 
-  ```
+  ```PowerShell
   $<VariableName> = Get-Content "<text file>"
   ```
 
-  ```
+  ```PowerShell
     $<VariableName> | foreach {Set-Mailbox -Identity $_ RulesQuota "<32 KB to 256 KB>"}
   ```
 
   This example decreases the rules quota to 150 KB to the mailboxes specified in the file C:\My Documents\Junior Managers.txt.
 
-  ```
+  ```PowerShell
   $Jr = Get-Content "C:\My Documents\Junior Managers.txt"
   ```
 
-  ```
+  ```PowerShell
   $Jr | foreach {Set-Mailbox -Identity $_ -RulesQuota "150 KB"}
   ```
 
@@ -111,13 +111,13 @@ To verify that you've modified the Inbox rules quota on a mailbox, use any of th
 
 - Replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the value of the **RulesQuota** property:
 
-    ```
+    ```PowerShell
     Get-Mailbox -Identity "<MailboxIdentity>" | Format-List RulesQuota
     ```
 
 - Run the following command to verify the value of the **RulesQuota** property for all mailboxes:
 
-    ```
+    ```PowerShell
     Get-Mailbox -ResultSize unlimited | Format-Table Name,RulesQuota -Auto
     ```
 

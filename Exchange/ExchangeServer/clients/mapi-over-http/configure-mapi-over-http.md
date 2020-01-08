@@ -41,7 +41,7 @@ Complete the following steps to configure MAPI over HTTP for your organization. 
 
     For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to https://contoso.com/mapi, and the authentication method to `Negotiate`, run the following command:
 
-    ```
+    ```powershell
     Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl   https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
     ```
 
@@ -64,7 +64,7 @@ Complete the following steps to configure MAPI over HTTP for your organization. 
 
     The following example enables MAPI over HTTP connections for the entire organization:
 
-    ```
+    ```powershell
     Set-OrganizationConfig -MapiHttpEnabled $true
     ```
 
@@ -80,7 +80,7 @@ Complete the following steps to configure MAPI over HTTP for your organization. 
 
     The following example enables MAPI over HTTP connections for a single mailbox:
 
-    ```
+    ```powershell
     Set-CasMailbox <user or mailbox ID> -MapiHttpEnabled $true
     ```
 
@@ -90,7 +90,7 @@ You can test the end-to-end MAPI over HTTP connection by using the **Test-Outloo
 
 The following example tests the MAPI over HTTP connection from the Exchange server named ContosoMail.
 
-```
+```powershell
 Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
 ```
 

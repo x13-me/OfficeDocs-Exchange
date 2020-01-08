@@ -65,19 +65,19 @@ Sharing policies control how your users share their calendars with people outsid
 
 This example applies the sharing policy Contoso to Barbara's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
 ```
 
 This example finds all user mailboxes in the Marketing department and then applies the sharing policy Contoso Marketing.
 
-```
+```PowerShell
 Get-Mailbox -Filter "Department -eq 'Marketing'" | Set-Mailbox -SharingPolicy "Contoso Marketing"
 ```
 
 This example shows all mailboxes that have the sharing policy Contoso applied, and it sorts the users into a table that displays only their aliases and email addresses.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso"} | format-table Alias,EmailAddresses
 ```
 
@@ -91,7 +91,7 @@ To verify that you have successfully applied the sharing policy to a user mailbo
 
 - Run the following command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the _SharingPolicy_ parameter.
 
-  ```
+  ```PowerShell
   Get-Mailbox <username> | format-list
   ```
 

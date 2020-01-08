@@ -65,13 +65,13 @@ The email addresses associated with a mailbox are contained in the _EmailAddress
 
 This example shows how to add an SMTP address to the mailbox of Dan Jump.
 
-```
+```PowerShell
 Set-Mailbox "Dan Jump" -EmailAddresses @{add="dan.jump@northamerica.contoso.com"}
 ```
 
 This example shows how to add multiple SMTP addresses to a mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Dan Jump" -EmailAddresses @{add="dan.jump@northamerica.contoso.com","danj@tailspintoys.com"}
 ```
 
@@ -79,7 +79,7 @@ For more information about how to use this method of adding and removing values 
 
 This example shows another way to add email addresses to a mailbox by specifying all addresses associated with the mailbox. In this example, danj@tailspintoys.com is the new email address that you want to add. The other two email addresses are existing addresses. The address with the case-sensitive qualifier `SMTP` is the primary SMTP address. You have to include all email addresses for the mailbox when you use this command syntax. If you don't, the addresses specified in the command will overwrite the existing addresses.
 
-```
+```PowerShell
 Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northamerica.contoso.com,danj@tailspintoys.com
 ```
 
@@ -99,7 +99,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-Mailbox <identity> | Format-List EmailAddresses
   ```
 
@@ -123,13 +123,13 @@ Or
 
 This example shows how to remove an email address from the mailbox of Janet Schorr.
 
-```
+```PowerShell
 Set-Mailbox "Janet Schorr" -EmailAddresses @{remove="janets@corp.contoso.com"}
 ```
 
 This example shows how to remove multiple addresses from a mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Janet Schorr" -EmailAddresses @{remove="janet.schorr@corp.contoso.com","janets@tailspintoys.com"}
 ```
 
@@ -137,7 +137,7 @@ For more information about how to use this method of adding and removing values 
 
 You can also remove an email address by omitting it from the command to set email addresses for a mailbox. For example, let's say Janet Schorr's mailbox has three email addresses: janets@contoso.com (the primary SMTP address), janets@corp.contoso.com, and janets@tailspintoys.com. To remove the address janets@corp.contoso.com, you would run the following command.
 
-```
+```PowerShell
 Set-Mailbox "Janet Schorr" -EmailAddresses SMTP:janets@contoso.com,janets@tailspintoys.com
 ```
 
@@ -159,7 +159,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-Mailbox <identity> | Format-List EmailAddresses
   ```
 
@@ -171,7 +171,7 @@ You can add a new email address to multiple mailboxes at one time by using Excha
 
 This example imports data from C:\Users\Administrator\Desktop\AddEmailAddress.csv, which has the following format.
 
-```
+```PowerShell
 Mailbox,NewEmailAddress
 Dan Jump,danj@northamerica.contoso.com
 David Pelton,davidp@northamerica.contoso.com
@@ -185,7 +185,7 @@ Toni Poe,tonip@northamerica.contoso.com
 
 Run the following command to use the data in the CSV file to add the email address to each mailbox specified in the CSV file.
 
-```
+```PowerShell
 Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-Mailbox $_.Mailbox -EmailAddresses @{add=$_.NewEmailAddress}}
 ```
 
@@ -206,7 +206,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell, using the same CSV file that you used to add the new email address.
 
-  ```
+  ```PowerShell
   Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | Format-List Name,EmailAddresses}
   ```
 

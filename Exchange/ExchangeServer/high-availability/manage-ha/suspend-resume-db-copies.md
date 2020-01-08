@@ -53,13 +53,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 This example suspends continuous replication for a copy of the database DB1 hosted on the server MBX1. An optional comment has also been specified.
 
-```
+```powershell
 Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
 ```
 
 This example suspends activation for a copy of the database DB2 hosted on the server MBX2.
 
-```
+```powershell
 Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
 ```
 
@@ -82,13 +82,13 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 This example resumes a copy of the database DB1 on the server MBX1.
 
-```
+```powershell
 Resume-MailboxDatabaseCopy -Identity DB1\MBX1
 ```
 
 This example resumes a copy of the database DB2 on the server MBX2 for replication only.
 
-```
+```powershell
 Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
 ```
 
@@ -102,6 +102,6 @@ To verify that you have successfully suspended or resumed a mailbox database cop
 
 - In the Exchange Management Shell, run the following command to display status information for a database copy:
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```

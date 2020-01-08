@@ -60,25 +60,25 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example prevents users associated with a UM mailbox policy named `MyUMMailboxPolicy` from accessing their calendar when they dial in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowTUIAccessToCalendar $false
 ```
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from accessing the directory when they dial in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowTUIAccessToDirectory $false
 ```
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from accessing their email when they dial in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowTUIAccessToEmail -$false
 ```
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from accessing personal contacts when they dial in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowTUIAccessToPersonalContacts $false
 ```
 
@@ -88,12 +88,12 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example disables access to the calendar on a UM mailbox named tony@contoso.com when the user dials in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -TUIAccessToCalendarEnabled $false
 ```
 
 This example disables access to email on a UM mailbox named tony@contoso.com when the user dials in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -TUIAccessToEmailEnabled $false
 ```

@@ -44,6 +44,6 @@ For additional management tasks related to Voice Mail Preview, see [Voice Mail P
 
 This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
 ```

@@ -41,7 +41,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 In this example, the offline address book is generated every six hours each day on the Mailbox server, MBXServer01.
 
-```
+```PowerShell
 Set-MailboxServer -Identity MBXServer01 -OABGeneratorWorkCycle 01.00:00:00 -OABGeneratorWorkCycleCheckpoint 06:00:00
 ```
 
