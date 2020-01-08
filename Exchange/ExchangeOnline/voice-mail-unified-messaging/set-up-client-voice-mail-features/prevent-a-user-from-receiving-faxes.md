@@ -50,6 +50,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example prevents a UM-enabled user named Tony from receiving fax messages in his mailbox.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```
