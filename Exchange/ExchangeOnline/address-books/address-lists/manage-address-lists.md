@@ -41,7 +41,7 @@ You can create address lists with or without recipient filters. For details abou
 
 To create an address list, use the following syntax:
 
-```
+```PowerShell
 New-AddressList -Name "<Address List Name>" [-Container <ExistingAddressListPath>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
@@ -53,7 +53,7 @@ This example creates an address list with a precanned recipient filter:
 
 - **Precanned recipient filter**: All users with mailboxes where the **State or province** value is GA, AL, or LA (Georgia, Alabama, or Louisiana).
 
-```
+```PowerShell
 New-AddressList -Name "Southeast Offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "GA","AL","LA"
 ```
 
@@ -65,7 +65,7 @@ This example creates an address list with a custom recipient filter:
 
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
-```
+```PowerShell
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
@@ -74,13 +74,13 @@ For detailed syntax and parameter information, see [New-AddressList](https://doc
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
 
-```
+```PowerShell
 New-AddressList -Name "Oregon and Washington" -RecipientFilter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))"
 ```
 
 This example creates the child address list Building 34 Meeting Rooms in the All Rooms parent container, using built-in conditions.
 
-```
+```PowerShell
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
@@ -90,7 +90,7 @@ For detailed syntax and parameter information, see [New-AddressList](https://doc
 
 To verify that you've successfully created an address list, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command in Exchange Online Powershell to verify the property values:
 
-```
+```PowerShell
 Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
 
@@ -100,19 +100,19 @@ Technically, this procedure returns *all* recipients (including hidden recipient
 
 To view the members of an address list, use the following syntax:
 
-```
+```PowerShell
 $<VariableName> = Get-AddressList -Identity <AddressListIdentity>; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $<VariableName>.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example returns the members of the address list named Southeast Offices.
 
-```
+```PowerShell
 $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $AL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example exports the results to the file C:\My Documents\Southeast Offices Export.csv.
 
-```
+```PowerShell
 $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $AL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled | Export-Csv -NoTypeInformation -Path "C:\My Documents\Southeast Offices Export.csv"
 ```
 
@@ -124,33 +124,33 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 1. Use the query from the address list to find all users that should be in the address list. For example:
 
-   ```
+   ```PowerShell
    $Before = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))" -ResultSize Unlimited
    ```
 
 2. Change the required property to a temporary value. For example, change the **StateOrProvince** values from `Oregon` to `OR`, and `Washington` to `WA`:
 
-   ```
+   ```PowerShell
    $Before | where {$_.StateOrProvince -eq 'Oregon'} | foreach {Set-User $_.Identity -StateOrProvince OR}
    ```
 
-   ```
+   ```PowerShell
    $Before | where {$_.StateOrProvince -eq 'Washington'} | foreach {Set-User $_.Identity -StateOrProvince WA}
    ```
 
 3. Find those same users again by using the temporary property values. For example:
 
-   ```
+   ```PowerShell
    $After = Get-User -Filter "((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))" -ResultSize Unlimited
    ```
 
 4. Change the temporary value back to the required value. For example, change the **StateOrProvince** values from `OR` to `Oregon`, and `WA` to `Washington`:
 
-   ```
+   ```PowerShell
    $After | where {$_.StateOrProvince -eq 'OR'} | foreach {Set-User $_.Identity -StateOrProvince Oregon}
    ```
 
-   ```
+   ```PowerShell
    $After | where {$_.StateOrProvince -eq 'WA'} | foreach {Set-User $_.Identity -StateOrProvince Washington}
    ```
 
@@ -166,13 +166,13 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
    1. Set a temporary property value for the user:
 
-      ```
+      ```PowerShell
       Set-User -Identity <UserIdentity> -StateOrProvince WA
       ```
 
    2. Change the temporary value back to the required value:
 
-      ```
+      ```PowerShell
       Set-User -Identity <Identity> -StateOrProvince Washington
       ```
 
@@ -180,7 +180,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value:
 
-```
+```PowerShell
 Get-AddressList -Identity <AddressListIdentity> | Format-Table Name,RecipientFilterApplied -Auto
 ```
 
@@ -190,7 +190,7 @@ The same basic settings are available as when you created the address list. For 
 
 To modify an existing address list, use the following syntax:
 
-```
+```PowerShell
 Set-AddressList -Identity <AddressListIdentity> [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
@@ -198,7 +198,7 @@ When you modify the _Conditional_ parameter values, you can use the following sy
 
 This example modifies the existing address list named Southeast Offices by adding the **State or province** value TX (Texas) to the precanned recipient filter.
 
-```
+```PowerShell
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
@@ -208,7 +208,7 @@ For detailed syntax and parameter information, see [Set-AddressList](https://doc
 
 To verify that you've successfully modified an address list, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command in Exchange Online Powershell to verify the property values:
 
-```
+```PowerShell
 Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
 
@@ -216,13 +216,13 @@ Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFi
 
 To remove an address list, use the following syntax:
 
-```
+```PowerShell
 Remove-AddressList -Identity "<AddressListName>"
 ```
 
 This example removes the address list Sales Department, which doesn't contain child address lists.
 
-```
+```PowerShell
 Remove-AddressList -Identity "Sales Department"
 ```
 
@@ -232,7 +232,7 @@ For detailed syntax and parameter information, see [Remove-AddressList](https://
 
 To verify that you've successfully removed an address list, run the following command in Exchange Online Powershell to verify that the address list isn't listed:
 
-```
+```PowerShell
 Get-AddressList
 ```
 
@@ -280,7 +280,7 @@ You can't use the EAC to hide Office 365 groups from address lists.
 
 To hide a recipient from address lists, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled $true
 ```
 
@@ -302,13 +302,13 @@ Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled
 
 This example hides the distribution group named Internal Affairs from address lists.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Internal Affairs" -HiddenFromAddressListsEnabled $true
 ```
 
 This example hides the mailbox michelle@contoso.com from address lists.
 
-```
+```PowerShell
 Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
 ```
 
@@ -322,7 +322,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
 
-   ```
+   ```PowerShell
    Get-Recipient -ResultSize unlimited -Filter 'HiddenFromAddressListsEnabled -eq $true'
    ```
 
