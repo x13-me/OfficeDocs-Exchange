@@ -110,13 +110,13 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage the Full Access permission for mailboxes. These cmdlets use the same basic syntax:
 
-```
+```PowerShell
 Add-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All [-AutoMapping $false]
 ```
 
 For more information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
 
-```
+```PowerShell
 Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All
 ```
 
@@ -124,25 +124,25 @@ For more information, see [Remove-MailboxPermission](https://docs.microsoft.com/
 
 This example assigns the delegate Raymond Sam the Full Access permission to the mailbox of Terry Adams.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "Terry Adams" -User raymonds -AccessRights FullAccess -InheritanceType All
 ```
 
 This example assigns Esther Valle the Full Access permission to the organization's default discovery search mailbox, and prevents the mailbox from automatically opening in Esther Valle's Outlook.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -User estherv -AccessRights FullAccess -InheritanceType All -AutoMapping $false
 ```
 
 This example assigns members of the Helpdesk mail-enabled security group the Full Access permission to the shared mailbox named Helpdesk Tickets.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "Helpdesk Tickets" -User Helpdesk -AccessRights FullAccess -InheritanceType All
 ```
 
 This example removes Full Access permission for Jim Hance from Ayla Kol's mailbox.
 
-```
+```PowerShell
 Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAccess -InheritanceType All
 ```
 
@@ -154,7 +154,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
 
 - Replace _\<MailboxIdentity\>_ with the identity of the mailbox and run the following command in the Exchange Management Shell to verify that the delegate is or isn't listed..
 
-   ```
+   ```PowerShell
    Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table -Auto User,Deny,IsInherited,AccessRights
    ```
 
@@ -164,7 +164,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
 
 You use the **Add-AdPermission** and **Remove-AdPermission** cmdlets to manage the Send As permission for mailboxes. These cmdlets use the same basic syntax:
 
-```
+```PowerShell
 <Add-AdPermission | Remove-AdPermission> -Identity <MailboxOrGroupNameOrDN> -User <DelegateIdentity> [-AccessRights ExtendedRight] -ExtendedRights "Send As"
 ```
 
@@ -180,7 +180,7 @@ For more information, see [Add-AdPermission](https://docs.microsoft.com/powershe
 
    To find these values for a mailbox or group, you can use the **Get-Recipient** cmdlet, which accepts many different values for the _Identity_ parameter. For example:
 
-   ```
+   ```PowerShell
    Get-Recipient -Identity helpdesk@contoso.com | Format-List Name,DistinguishedName
    ```
 
@@ -188,13 +188,13 @@ For more information, see [Add-AdPermission](https://docs.microsoft.com/powershe
 
 This example assigns the Send As permission to the Helpdesk mail-enabled security group on the shared mailbox named Helpdesk Support Team.
 
-```
+```PowerShell
 Add-ADPermission -Identity "Helpdesk Support Team" -User Helpdesk -ExtendedRights "Send As"
 ```
 
 This example removes the Send As permission for the user Pilar Pinilla on the mailbox of James Alvord.
 
-```
+```PowerShell
 Remove-ADPermission -Identity "James Alvord" -User pilarp -ExtendedRights "Send As"
 ```
 
@@ -206,7 +206,7 @@ To verify that you've successfully assigned or removed the Send As permission fo
 
 - Replace _\<MailboxOrGroupNameOrDN\>_ with the name or distinguished name of the mailbox or group and run the following command in the Exchange Management Shell to verify that the delegate is or isn't listed.
 
-   ```
+   ```PowerShell
    Get-ADPermission -Identity <MailboxOrGroupNameOrDN> | where {$_.ExtendedRights -like 'Send*'} | Format-Table -Auto User,Deny,ExtendedRights
    ```
 
@@ -224,7 +224,7 @@ You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **S
 
 The basic syntax for these cmdlets is:
 
-```
+```PowerShell
 <Cmdlet> -Identity <MailboxOrGroupIdentity> -GrantSendOnBehalfTo <Delegates>
 ```
 
@@ -238,25 +238,25 @@ The _GrantSendOnBehalfTo_ parameter has the following options for delegate value
 
 This example assigns the delegate Holly Holt the Send on Behalf permission to the mailbox of Sean Chai.
 
-```
+```PowerShell
 Set-Mailbox -Identity seanc@contoso.com -GrantSendOnBehalfTo hollyh
 ```
 
 This example adds the group tempassistants@contoso.com to the list of delegates that have Send on Behalf permission to the Contoso Executives shared mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{Add="tempassistants@contoso.com"}
 ```
 
 This example assigns the delegate Sara Davis the Send on Behalf permission to the Printer Support distribution group.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity printersupport@contoso.com -GrantSendOnBehalfTo sarad
 ```
 
 This example removes the Send on Behalf permission that was assigned to the administrator on the All Employees dynamic distribution group.
 
-```
+```PowerShell
 Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{Remove="Administrator"}
 ```
 
@@ -270,19 +270,19 @@ To verify that you've successfully assigned or removed the Send on Behalf permis
 
    - Mailbox:
 
-     ```
+     ```PowerShell
      Get-Mailbox -Identity <MailboxIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
    - Group:
 
-     ```
+     ```PowerShell
      Get-DistributionGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
    - Dynamic distribution group:
 
-     ```
+     ```PowerShell
      Get-DynamicDistributionGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 

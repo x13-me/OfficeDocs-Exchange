@@ -99,7 +99,7 @@ You can open the message snapshot files by using Notepad or any text editor.
 
 Each message snapshot file starts with headers that are added to the message contents and list the SMTP event and transport agent that the message snapshot file relates to. These headers start with `X-CreatedBy: MessageSnapshot-Begin injected headers` and end with `X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers`. These headers are replaced in each message snapshot file by each subsequent transport agent and SMTP event. The following is an example of the headers that are added to an email message file:
 
-```text
+```console
 X-CreatedBy: MessageSnapshot-Begin injected headers
 X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
 X-MessageSnapshot-Record-Id: 21474836486

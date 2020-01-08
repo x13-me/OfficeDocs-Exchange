@@ -4,7 +4,7 @@ TOCTitle: WhatIf, Confirm, and ValidateOnly switches
 ms:assetid: a850eea7-431e-49c5-b877-1ebde2a2b48f
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124088(v=EXCHG.150)
 ms:contentKeyID: 49289365
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
@@ -37,7 +37,7 @@ New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf
 
 When you run this example command, the following text is returned by the Shell:
 
-```txt
+```powershell
 What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
 ```
 
@@ -73,7 +73,7 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 When you run this example command, the following confirmation prompt is returned by the Shell:
 
-```txt
+```console
 Confirm
 Are you sure you want to perform this action?
 Enabling journal rule "Litigation Journal Rule".

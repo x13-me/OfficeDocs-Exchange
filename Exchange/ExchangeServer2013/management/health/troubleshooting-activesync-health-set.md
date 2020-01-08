@@ -94,13 +94,13 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
    1. Open the Exchange Management Shell, and run the following command to retrieve the details of the health set that issued the alert:
 
-      ```
+      ```powershell
       Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
       ```
 
       For example, to retrieve the ActiveSync health set details about server1.contoso.com, run the following command:
 
-      ```
+      ```powershell
       Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -eq "ActiveSync"}
       ```
 
@@ -108,13 +108,13 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
    3. Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
 
-      ```
+      ```powershell
       Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
       ```
 
       For example, assume that the failing monitor is **ActiveSyncCTPMonitor**. The probe associated with that monitor is **ActiveSyncCTPProbe**. To run this probe on server1.contoso.com, run the following command:
 
-      ```
+      ```powershell
       Invoke-MonitoringProbe ActiveSync\ActiveSyncCTPProbe -Server server1.contoso.com | Format-List
       ```
 
@@ -134,7 +134,7 @@ This monitor alert is typically issued on Mailbox servers. To perform recovery a
 
 5. If the issue still exists, restart the server. To do this, first failover the databases that are hosted on the server by using the following command:
 
-   ```
+   ```powershell
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $true
    ```
 
@@ -142,7 +142,7 @@ This monitor alert is typically issued on Mailbox servers. To perform recovery a
 
 6. Next, verify that all databases have been moved off the server that is reporting the issue. To do this, run the following command:
 
-   ```
+   ```powershell
    Get-MailboxDatabaseCopyStatus -Server server1.contoso.com | Group Status
    ```
 
@@ -152,7 +152,7 @@ This monitor alert is typically issued on Mailbox servers. To perform recovery a
 
 9. If the probe succeeds, failover the databases by running the following command:
 
-   ```
+   ```powershell
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
    ```
 
@@ -174,7 +174,7 @@ This monitor alert is typically issued on CA servers (CAS).
 
    1. Run the following command for the appropriate Mailbox server. For example, run the following command a Mailbox server that's named mailbox1.contoso.com:
 
-      ```
+      ```powershell
       Get-ServerHealth mailbox1.contoso.com | ?{$_.HealthSetName -like "ActiveSync*"}
       ```
 
@@ -194,7 +194,7 @@ This monitor alert is typically issued on CA servers.
 
 2. Wait 10 minutes to see whether the monitor remains healthy. After 10 minutes, run the following command for the appropriate server. For example, run the following command for server1.contoso.com:
 
-   ```
+   ```powershell
    Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -like "ActiveSync*"}
    ```
 
@@ -206,7 +206,7 @@ This monitor alert is typically issued on CA servers.
 
    1. Failover the databases that are hosted on the server. To do this, run the following command:
 
-      ```
+      ```powershell
       Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $true
       ```
 
@@ -214,7 +214,7 @@ This monitor alert is typically issued on CA servers.
 
    2. Verify that all the databases have been moved off the server that is reporting the issue. To do this, run the following command:
 
-      ```
+      ```powershell
       Get-MailboxDatabaseCopyStatus -Server server1.contoso.com | Group Status
       ```
 
@@ -224,7 +224,7 @@ This monitor alert is typically issued on CA servers.
 
 7. If the monitor remains healthy, and if this is a Mailbox server, failover the databases by running the following command:
 
-   ```
+   ```powershell
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
    ```
 
