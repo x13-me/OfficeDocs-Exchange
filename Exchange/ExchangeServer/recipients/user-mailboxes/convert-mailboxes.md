@@ -59,25 +59,25 @@ You can convert the following mailboxes to a different type:
 
 To convert a mailbox to a different type, use this syntax:
 
-```
+```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared> [-Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-EnableRoomMailboxAccount <$true | $false>] [-RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-ResetPasswordOnNextLogon <$true | $false>]
 ```
 
 This example converts the shared mailbox named Marketing Dept 01 to a user mailbox with the new password P@ssw0rd25, and the requirement to change the password the next time the user logs in to the mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Marketing Dept 01" -Type Regular -Password (ConvertTo-SecureString -String 'P@ssw0rd25' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
 ```
 
 This example converts the user mailbox named Conference Room 01 to a room mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Conference Room 01" -Type Room
 ```
 
 This is the same example, but the user account for the room mailbox is enabled, and the password is P@ssw0rd25
 
-```
+```PowerShell
 Set-Mailbox -Identity "Conference Room 01" -Type Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String 'P@ssw0rd25' -AsPlainText -Force)
 ```
 
@@ -89,7 +89,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 To verify that you've successfully converted a mailbox, replace _\<MailboxIdentity\>_ with the name, alias, or email address of the mailbox, and run this command in the Exchange Management Shell to verify the property values:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Name,RecipientTypeDetails,UserPrincipalName,AccountDisabled
 ```
 

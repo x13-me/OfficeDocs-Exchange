@@ -104,7 +104,7 @@ This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Se
 
 - The mail user will be created in the default OU. To specify a different OU, you can use the _OrganizationalUnit_ parameter.
 
-```
+```PowerShell
 New-MailUser -Name "Jeffrey Zeng" -Alias jeffreyz -ExternalEmailAddress jzeng@tailspintoys.com -FirstName Jeffrey -LastName Zeng -UserPrincipalName jeffreyz@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
@@ -118,7 +118,7 @@ To verify that you've successfully created a mail user, do one of the following:
 
 - In the Exchange Management Shell, run the following command to display information about the new mail user.
 
-  ```
+  ```PowerShell
   Get-MailUser <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
@@ -266,25 +266,25 @@ Here are some examples of using the Exchange Management Shell to change mail use
 
 This example sets the external email address for Pilar Pinilla.
 
-```
+```PowerShell
 Set-MailUser "Pilar Pinilla" -ExternalEmailAddress pilarp@tailspintoys.com
 ```
 
 This example hides all mail users from the organization's address book.
 
-```
+```PowerShell
 Get-MailUser | Set-MailUser -HiddenFromAddressListsEnabled $true
 ```
 
 This example sets the Company property for all mail users to Contoso.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'mailuser'" | Set-User -Company Contoso
 ```
 
 This example sets the CustomAttribute1 property to a value of ContosoEmployee for all mail users that have a value of Contoso in the Company property.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')" | Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
@@ -298,19 +298,19 @@ To verify that you've successfully changed properties for mail users, do the fol
 
 - In the Exchange Management Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts.
 
-  ```
+  ```PowerShell
   Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
 
-  ```
+  ```PowerShell
   Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'mailuser'" | Format-List Name,Company
   ```
 
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
 
-  ```
+  ```PowerShell
   Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
@@ -344,6 +344,6 @@ To verify that you've successfully bulk edited mail users, do one of the followi
 
 - In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell:
 
-  ```
+  ```PowerShell
   Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')" | Format-List Name,Office,Manager
   ```
