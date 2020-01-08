@@ -64,7 +64,7 @@ This example removes the SIP address which is second in the list of available ad
 > [!NOTE]
 > Before you remove a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to modify. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.Remove($mbx.EmailAddresses.Item(1))
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
