@@ -76,7 +76,7 @@ This example removes the extension number 12345 from the mailbox of Tony Smith, 
 > [!NOTE]
 > Before you remove an extension number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to modify. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.remove("eum:22222;phone-context=MyDialPlan.contoso.com")
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
