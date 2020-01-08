@@ -104,7 +104,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 To configure Enhanced Filtering for Connectors on an inbound connector, use the following syntax:
 
-```
+```powershell
 Set-InboundConnector -Identity <ConnectorIdentity> [-EFSkipLastIP <$true | $false>] [-EFSkipIPs <IPAddresses>] [-EFUsers "emailaddress1","emailaddress2",..."emailaddressN"]
 ```
 
@@ -135,7 +135,7 @@ This example configures Enhanced Filtering for Connectors on the inbound connect
 
 - _EFUsers_: michelle@contoso.com, laura@contoso.com, julia@contoso.com.
 
-```
+```powershell
 Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true -EFUsers "michelle@contoso.com","laura@contoso.com","julia@contoso.com"
 ```
 

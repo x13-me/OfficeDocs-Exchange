@@ -55,31 +55,31 @@ This example uses the following hierarchy:
 
 - The distribution groups named Human Resources, Accounting Group, and Administration Group are child organizations under Corporate Office (members of the Corporate Office group).
 
-```
+```PowerShell
 New-DistributionGroup -Name "Contoso,Ltd" -Alias "ContosoRoot"
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Corporate Office"
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Product Support Organization" -Alias ProductSupport
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Sales & Marketing Organization" -Alias "Sales&Marketing"
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Human Resources"
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Accounting Group" -Alias Accounting
 ```
 
-```
+```PowerShell
 New-DistributionGroup -Name "Administration Group" -Alias Administration
 ```
 
@@ -91,7 +91,7 @@ For detailed syntax and parameter information, see [New-DistributionGroup](https
 
 This example specifies the distribution group named "Contoso,Ltd" from the previous step as the root organization for the HAB.
 
-```
+```PowerShell
 Set-OrganizationConfig -HierarchicalAddressBookRoot "Contoso,Ltd"
 ```
 
@@ -99,31 +99,31 @@ Set-OrganizationConfig -HierarchicalAddressBookRoot "Contoso,Ltd"
 
 The following examples designate the groups that we previously created as hierarchical groups:
 
-```
+```PowerShell
 Set-Group -Identity "Contoso,Ltd" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Corporate Office" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Product Support Organization" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Sales & Marketing Organization" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Human Resources" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Accounting Group" -IsHierarchicalGroup $true
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Administration Group" -IsHierarchicalGroup $true
 ```
 
@@ -133,13 +133,13 @@ For detailed syntax and parameter information, see [Set-Group](https://docs.micr
 
 This example adds the groups named Corporate Office, Product Support Organization, and Sales & Marketing Organization as members of Contoso,Ltd (the root organization).
 
-```
+```PowerShell
 Update-DistributionGroupMember -Identity "Contoso,Ltd" -Members "Corporate Office","Product Support Organization","Sales & Marketing Organization"
 ```
 
 This example adds the groups named Human Resources, Accounting Group, and Administration Group as members of Corporate Office.
 
-```
+```PowerShell
 Update-DistributionGroupMember -Identity "Corporate Office" -Members "Human Resources","Accounting Group","Administration Group"
 ```
 
@@ -149,7 +149,7 @@ For detailed syntax and parameter information, see [Update-DistributionGroupMemb
 
 This example adds the users Amy Alberts, David Hamilton, and Rajesh M. Patel to the group named Corporate Office without affecting other existing members.
 
-```
+```PowerShell
 Update-DistributionGroupMember -Identity "Corporate Office" -Members @{Add="aalberts@contoso.com","dhamilton@contoso.com","rmpatel@contoso.com"}
 ```
 
@@ -167,15 +167,15 @@ The following examples configure the child groups of the Corporate Office group 
 
 - Administration Group
 
-```
+```PowerShell
 Set-Group -Identity "Human Resources" -SeniorityIndex 100
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Accounting Group" -SeniorityIndex 50
 ```
 
-```
+```PowerShell
 Set-Group -Identity "Administration Group" -SeniorityIndex 25
 ```
 
@@ -193,15 +193,15 @@ The following examples configure the members of the Corporate Office group to di
 
 - Amy Alberts
 
-```
+```PowerShell
 Set-User -Identity DHamilton -SeniorityIndex 100
 ```
 
-```
+```PowerShell
 Set-User -Identity RMPatel -SeniorityIndex 50
 ```
 
-```
+```PowerShell
 Set-User -Identity AAlberts -SeniorityIndex 25
 ```
 
@@ -217,15 +217,15 @@ To verify that you've successfully enabled and configured a hierarchical address
 
 - In Exchange Online PowerShell, run the following commands to verify the property values:
 
-   ```
+   ```PowerShell
    Get-OrganizationConfig | Format-List HierarchicalAddressBookRoot
    ```
 
-   ```
+   ```PowerShell
    Get-Group -ResultSize unlimited | where {$_.IsHierarchicalGroup -match 'True'} | Format-Table SeniorityIndex,PhoneticDisplayName,DisplayName -Auto
    ```
 
-   ```
+   ```PowerShell
    Get-Group -ResultSize unlimited | Format-Table SeniorityIndex,PhoneticDisplayName,DisplayName -Auto
    ```
 
@@ -235,7 +235,7 @@ To disable a HAB, you don't need to delete the groups that are associated with t
 
 This example disables the hierarchical address book.
 
-```
+```PowerShell
 Set-OrganizationConfig -HierarchicalAddressBookRoot $null
 ```
 

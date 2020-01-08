@@ -49,6 +49,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to use the Voice Mail Preview feature.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - AllowVoiceMailPreview $true
 ```
