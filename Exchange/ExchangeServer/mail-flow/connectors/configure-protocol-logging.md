@@ -128,19 +128,19 @@ Use this procedure to enable or disable protocol logging on:
 
 To enable or disable protocol logging on a Send connector or a Receive connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 <Set-SendConnector | Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
 ```
 
 This example enables protocol logging for the Receive connector named Connection from Contoso.com on the server named Mailbox01.
 
-```
+```PowerShell
 Set-ReceiveConnector "Mailbox01\Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 ```
 
 This example disables protocol logging for the Send connector named Connection to Internet.
 
-```
+```PowerShell
 Set-ReceiveConnector "Connection to Internet" -ProtocolLoggingLevel None
 ```
 
@@ -152,19 +152,19 @@ Protocol logging for the intra-organization Send connector occurs in the Send co
 
 To enable or disable protocol logging on the intra-organization Send connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 <Set-TransportService | Set-FrontEndTransportService> <ServerIdentity> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
 ```
 
 This example enables protocol logging on the intra-organization Send connector in the Transport service and in the Mailbox Transport Submission service on the server named Mailbox01.
 
-```
+```PowerShell
 Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
 ```
 
 This example disables protocol logging on the intra-organization Send connector in the Front End Transport service on the same server.
 
-```
+```PowerShell
 Set-FrontEndTransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel None
 ```
 
@@ -174,19 +174,19 @@ Use this procedure to enable or disable protocol logging on the implicit and inv
 
 To enable or disable protocol logging on the mailbox delivery Receive connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 Set-MailboxTransportService <ServerIdentity> -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
 ```
 
 This example enables protocol logging on the mailbox delivery Receive connector on the server named Mailbox01.
 
-```
+```PowerShell
 Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
 ```
 
 This example disables protocol logging on the mailbox delivery Receive connector on the same server.
 
-```
+```PowerShell
 Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel None
 ```
 
@@ -196,7 +196,7 @@ To verify that you have successfully used the Exchange Management Shell to enabl
 
 1. Run the following command in the Exchange Management Shell to verify whether protocol logging is enabled or disabled for all connectors on the Exchange server:
 
-   ```
+   ```PowerShell
    Write-Host "Send Connectors:" -ForegroundColor yellow; Get-SendConnector | Format-List Name,ProtocolLoggingLevel; Write-Host "Receive Connectors:" -ForegroundColor yellow; Get-ReceiveConnector | Format-List Name,TransportRole,ProtocolLoggingLevel; Write-Host "Mailbox Transport Delivery service:" -ForegroundColor yellow; Get-MailboxTransportService | Format-List *ProtocolLoggingLevel; Write-Host "Front End Transport service:" -ForegroundColor yellow; Get-FrontEndTransportService | Format-List *ProtocolLoggingLevel; Write-Host "Transport service and Mailbox Transport Submission service:" -ForegroundColor yellow; Get-TransportService | Format-List *ProtocolLoggingLevel
    ```
 
@@ -208,7 +208,7 @@ Use this procedure to configure the protocol log settings for all Send connector
 
 To configure the protocol log settings in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 <Set-FrontEndTransportService | Set-MailboxTransportService | Set-TransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogPath <LocalFilePath> -SendProtocolLogMaxFileSize <Size> -SendProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxAge <dd.hh:mm:ss>
 ```
 
@@ -222,7 +222,7 @@ This example sets the following protocol log settings in the Transport service o
 
 - Sets the maximum age of a protocol log file for Receive connectors and Send connectors to 45 days.
 
-```
+```PowerShell
 Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub SMTP Receive Log" -ReceiveProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogPath "D:\Hub SMTP Send Log" -SendProtocolLogMaxFileSize 20MB -SendProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxAge 45.00:00:00
 ```
 
@@ -238,7 +238,7 @@ To verify that you have successfully used the Exchange Management Shell to confi
 
 1. Run the following command in the Exchange Management Shell and verify the protocol log settings on the Exchange server:
 
-   ```
+   ```PowerShell
    Write-Host "Front End Transport service:" -ForegroundColor yellow; Get-FrontEndTransportService | Format-List ReceiveProtocolLog*,SendProtocolLog*; Write-Host "Mailbox Transport Submission and Mailbox Transport Delivery services:" -ForegroundColor yellow; Get-MailboxTransportService | Format-List ReceiveProtocolLog*,SendProtocolLog*; Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | Format-List ReceiveProtocolLog*,SendProtocolLog*
    ```
 
