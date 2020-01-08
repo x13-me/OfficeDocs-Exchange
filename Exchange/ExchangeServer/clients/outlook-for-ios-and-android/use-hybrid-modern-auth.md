@@ -169,7 +169,7 @@ In order to block other mobile device clients (such as the native mail client in
 
 1. You can leverage the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following in the Exchange Management Shell:
 
-   ```
+   ```powershell
    Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
    ```
 
@@ -207,7 +207,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 
 2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
 
-   ```
+   ```powershell
    If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
    ```
 
@@ -216,7 +216,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 
 3. Create an Exchange on-premises device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
    ```
 
@@ -326,7 +326,7 @@ With ExpressRoute, there is no private IP space for ExpressRoute connections, no
 
 **A**: Yes, a user can bypass AutoDetect at any time and manually configure the connection using Basic authentication over the Exchange ActiveSync protocol. To ensure that the user does not establish a connection to your on-premises environment via a mechanism that does not support Azure Active Directory Conditional Access or Intune app protection policies, the on-premises Exchange Administrator needs to configure an Exchange device access rule that blocks the ActiveSync connection. To do this, type the following command in the Exchange Management Shell:
 
-```
+```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```
 
@@ -354,7 +354,7 @@ In either scenario, verify that your on-premises environment is correctly config
 
 When you review the output from the script, you should be seeing the following from AutoDiscover:
 
-```
+```json
 {
     "Protocol": "activesync",
     "Url": "https://mail.contoso.com/Microsoft-Server-ActiveSync"
@@ -383,7 +383,7 @@ If the AutoDiscover or ActiveSync responses are not similar to the above example
 
 4. If the ActiveSync endpoint does not contain an authorization_uri value, verify that the EvoSTS authentication server is configured as the default endpoint using Exchange Management Shell:
 
-   ```
+   ```powershell
    Get-AuthServer EvoSts | Format-List IsDefaultAuthorizationEndpoint
    ```
 
@@ -416,13 +416,13 @@ For EvoSTS Certificate Metadata, the certificate metadata leveraged by EvoSTS is
 
 Exchange Administrators can find this mailbox by executing the following cmdlet using Exchange Management Shell:
 
-```
+```powershell
 $x=Get-mailbox -arbitration | ? {$_.PersistedCapabilities -like "OrganizationCapabilityManagement"};Get-MailboxDatabaseCopyStatus $x.database.name
 ```
 
 On the server hosting the database for the OrganizationCapabilityManagement arbitration mailbox, review the application event logs for events with a source of **MSExchange AuthAdmin**. The events should tell you if Exchange was able to refresh the metadata. If the metadata is out of date, you can manually refresh it with this ccmdlet:
 
-```
+```powershell
 Set-AuthServer EvoSts -RefreshAuthMetadata
 ```
 

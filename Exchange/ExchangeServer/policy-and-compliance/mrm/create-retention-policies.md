@@ -79,31 +79,31 @@ Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different o
 
 This example creates a DPT to delete all messages in the mailbox after 7 years (2,556 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Delete" -Type All -AgeLimitForRetention 2556 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a DPT to move all messages to the In-Place Archive in 2 years (730 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Move" -Type All -AgeLimitForRetention 730 -RetentionAction MoveToArchive
 ```
 
 This example creates a DPT to delete voice mail messages after 20 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Voicemail" -Type All -MessageClass Voicemail -AgeLimitForRetention 20 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a RPT to permanently delete messages in the Junk EMail folder after 30 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "RPT-Corp-JunkMail" -Type JunkEmail -AgeLimitForRetention 30 -RetentionAction PermanentlyDelete
 ```
 
 This example creates a personal tag to never delete a message.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction DeleteAndAllowRecovery -RetentionEnabled $false
 ```
 
@@ -142,7 +142,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy.
 
-```
+```PowerShell
 New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
@@ -160,7 +160,7 @@ To verify that you have applied the retention policy, do the following:
 
 1. Run the following Exchange Management Shell command to run the MRM assistant manually against a single mailbox.
 
-   ```
+   ```PowerShell
    Start-ManagedFolderAssistant -Identity <mailbox identity>
    ```
 
