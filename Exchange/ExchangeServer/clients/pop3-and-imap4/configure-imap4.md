@@ -93,13 +93,13 @@ You can perform this step by using the Windows Services console, or the Exchange
 
 1. Run the following command to start the IMAP4 services:
 
-   ```
+   ```powershell
    Start-Service MSExchangeIMAP4; Start-Service MSExchangeIMAP4BE
    ```
 
 2. Run the following command to configure the IMAP4 services to start automatically:
 
-   ```
+   ```powershell
    Set-Service MSExchangeIMAP4 -StartupType Automatic; Set-Service MSExchangeIMAP4BE -StartupType Automatic
    ```
 
@@ -113,7 +113,7 @@ To verify that you've successfully started the IMAP4 services, use either of the
 
 - In the Exchange Management Shell, run the following command to verify that the IMAP4 services are running:
 
-  ```
+  ```powershell
   Get-Service MSExchangeIMAP4; Get-Service MSExchangeIMAP4BE
   ```
 
@@ -121,7 +121,7 @@ To verify that you've successfully started the IMAP4 services, use either of the
 
 To configure the IMAP4 settings for external clients, use the following syntax:
 
-```
+```powershell
 Set-ImapSettings -ExternalConnectionSettings "<FQDN1>:<TCPPort1>:<SSL | TLS | blank>", "<FQDN2>:<TCPPort2>:<SSL | TLS | blank>"...  -X509CertificateName <FQDN> [-SSLBindings "<IPv4Orv6Address1>:<TCPPort1>","<IPv4Orv6Address2>:<TCPPort2>"...] [-UnencryptedOrTLSBindings "<IPv4Orv6Address1>:<TCPPort1>","<IPv4Orv6Address2>:<TCPPort2>"...]
 ```
 
@@ -137,7 +137,7 @@ This example allows configures the following settings for external IMAP4 connect
 
 - **FQDN used for encryption**: mail.contoso.com. This value identifies the certificate that matches or contains the IMAP4 server FQDN.
 
-```
+```powershell
 Set-ImapSettings -ExternalConnectionSettings "mail.contoso.com:993:SSL","mail.contoso.com:143:TLS" -X509CertificateName mail.contoso.com
 ```
 
@@ -157,7 +157,7 @@ Set-ImapSettings -ExternalConnectionSettings "mail.contoso.com:993:SSL","mail.co
 
 To verify that you've successfully configured the IMAP4 settings for external clients, run the following command in the Exchange Management Shell and verify the settings:
 
-```
+```powershell
 Get-ImapSettings | Format-List *ConnectionSettings,*Bindings,X509CertificateName
 ```
 
@@ -179,7 +179,7 @@ After you enable and configure IMAP4, you need to restart the IMAP4 services on 
 
 Run the following command to restart the IMAP4 services.
 
-```
+```powershell
 Restart-Service MSExchangeIMAP4; Restart-Service MSExchangeIMAP4BE
 ```
 
@@ -187,7 +187,7 @@ For more information about this cmdlet, see [Restart-Service](https://go.microso
 
 To verify that you've successfully restarted the IMAP4 services, run the following command:
 
-```
+```powershell
 Get-Service MSExchangeIMAP4; Get-Service MSExchangeIMAP4BE
 ```
 

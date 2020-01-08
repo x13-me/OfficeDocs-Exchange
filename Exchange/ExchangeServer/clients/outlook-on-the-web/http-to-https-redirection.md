@@ -65,7 +65,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:access -sslFlags:None -commit:APPHOST
 ```
 
@@ -91,7 +91,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 **Note**: To perform these procedures on the command line, replace _\<VirtualDirectory\>_ with the name of the virtual directory, and run the following command in an elevated command prompt:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/<VirtualDirectory>" -section:Access -sslFlags:Ssl,Ssl128 -commit:APPHOST
 ```
 
@@ -119,7 +119,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt and run the following command:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:httpredirect -enabled:true -destination:"/owa" -childOnly:true
 ```
 
@@ -151,7 +151,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
  **Note**: To perform these procedures on the command line, replace _\<VirtualDirectory\>_ with the name of the virtual directory, and run the following command in an elevated command prompt:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/<VirtualDirectory>" -section:httpredirect -enabled:false -destination:"" -childOnly:false
 ```
 
@@ -165,11 +165,11 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 
-```
+```console
 net stop was /y
 ```
 
-```
+```console
 net start w3svc
 ```
 
