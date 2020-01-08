@@ -63,7 +63,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
 Run the following command:
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 ```
 
@@ -121,7 +121,7 @@ You must create a custom claim rule because an AD FS server relies on the presen
 
 Run the following command:
 
-```
+```PowerShell
 Set-OwaMailboxPolicy -Identity MyOWAPublicPolicy -DirectFileAccessOnPublicComputersEnabled $true -ForceWacViewingFirstOnPublicComputers $true -WacViewingOnPublicComputersEnabled $true -WebReadyDocumentViewingOnPublicComputersEnabled $true
 ```
 
