@@ -37,7 +37,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 This example creates an OAB named OAB_Contoso that contains the default global address list.
 
-```
+```PowerShell
 New-OfflineAddressBook -Name "OAB_Contoso" -AddressLists "\Default Global Address List"
 ```
 

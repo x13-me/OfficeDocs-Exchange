@@ -101,7 +101,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
       ```powershell
       Invoke-MonitoringProbe -Identity ActiveSync.Protocol\ActiveSyncSelfTestProbe -Server server1.contoso.com
-      ```powershell
+      ```
 
    4. In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
 

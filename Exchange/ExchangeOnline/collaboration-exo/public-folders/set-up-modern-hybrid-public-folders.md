@@ -68,7 +68,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 On Exchange Server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
-```
+```PowerShell
 Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
 ```
 
@@ -83,7 +83,7 @@ The final step in this procedure is to configure the Exchange online organizatio
 
 Enable the exchange online organization to access the on-premises public folders. You will point to all of you on-premises public folder mailboxes.
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 

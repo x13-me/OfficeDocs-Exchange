@@ -56,7 +56,7 @@ During creation, the DAG is given a unique name, and either assigned one or more
 
 This example shows you how to use the Exchange Management Shell to create a DAG with a cluster administrative access point that will have three servers. Two servers (EX1 and EX2) are on the same subnet (10.0.0.0), and the third server (EX3) is on a different subnet (192.168.0.0).
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
@@ -65,7 +65,7 @@ Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
 
 The commands to create a DAG without a cluster administrative access point are very similar:
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
