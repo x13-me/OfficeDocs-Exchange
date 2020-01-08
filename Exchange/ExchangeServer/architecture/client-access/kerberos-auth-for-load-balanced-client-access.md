@@ -41,19 +41,19 @@ When you set up the ASA credential, keep these guidelines in mind:
 
    Use the **Import-Module** cmdlet to import the Active Directory module.
 
-   ```
+   ```PowerShell
    Import-Module ActiveDirectory
    ```
 
 2. Use the **New-ADComputer** cmdlet to create a new Active Directory computer account using this cmdlet syntax:
 
-   ```
+   ```PowerShell
    New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
    ```
 
    **Example:**
 
-   ```
+   ```PowerShell
    New-ADComputer -Name EXCH2016ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2016ASA
    ```
 
@@ -61,13 +61,13 @@ When you set up the ASA credential, keep these guidelines in mind:
 
 3. Use the **Set-ADComputer** cmdlet to enable the AES 256 encryption cipher support used by Kerberos using this cmdlet syntax:
 
-   ```
+   ```PowerShell
    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
    ```
 
    **Example:**
 
-   ```
+   ```PowerShell
    Set-ADComputer EXCH2016ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
    ```
 
@@ -143,7 +143,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 
 3. Run the following command to deploy the ASA credential to the first Exchange 2016  or Exchange 2019 server running Client Access services:
 
-   ```
+   ```PowerShell
    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2016ASA$
    ```
 
@@ -151,7 +151,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:17:47 ==========
 Creating a new session for implicit remoting of "Get-ExchangeServer" command...
 Destination servers that will be updated:
@@ -197,7 +197,7 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 
 3. Run the following command to deploy the ASA credential to another Exchange 2016 or Exchange 2019 server running Client Access services:
 
-   ```
+   ```PowerShell
    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
    ```
 
@@ -205,7 +205,7 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:34:35 ==========
 Destination servers that will be updated:
 Name                                                        PSComputerName
@@ -241,7 +241,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 
 - Run the following command to check the settings on the server running Client Access services:
 
-  ```
+  ```PowerShell
   Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
   ```
 
@@ -249,7 +249,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and no previous ASA credential was set.
 
-```
+```output
 Name                                 : CAS-1
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: <Not set>
@@ -258,7 +258,7 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and an ASA credential was previously set. The previous ASA credential and the date and time it was set are returned.
 
-```
+```output
 Name                                 : CAS-3
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: 7/15/2015 12:58:35 PM, tailspin\oldSharedServiceAccountName$
@@ -278,13 +278,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -F -Q <SPN>
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -F -Q http/mail.corp.tailspintoys.com
    ```
 
@@ -296,13 +296,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -S <SPN> <Account>$
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
    ```
 
@@ -314,13 +314,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -L <Account>$
    ```
 
    Where \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -L tailspin\EXCH2016ASA$
    ```
 
@@ -332,18 +332,18 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
 
-   ```
+   ```PowerShell
    Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
    ```
 
 3. To enable Kerberos authentication for MAPI over HTTP clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
 
-   ```
+   ```PowerShell
    Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm,Negotiate
    ```
    In hybrid environments with Exchange Online or if you use OAuth internally, run the following commands on your Exchange 2016 or Exchange 2019 server that's running Client Access services:
 
-   ```
+   ```PowerShell
    $mapidir = Get-MapiVirtualDirectory -Server CAS-1
    $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods +='Negotiate')
    ```
@@ -396,7 +396,7 @@ To configure your servers that are running Client Access services to stop using 
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server, and run the following command:
 
-   ```
+   ```PowerShell
    Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
    ```
 
