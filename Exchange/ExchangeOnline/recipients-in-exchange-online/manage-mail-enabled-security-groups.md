@@ -73,7 +73,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 
 This example creates a security group with an alias fsadmin and the name File Server Managers. The security group is created in the default OU, and anyone can join this group with approval by the group owners.
 
-```
+```PowerShell
 New-DistributionGroup -Name "File Server Managers" -Alias fsadmin -Type security
 ```
 
@@ -87,7 +87,7 @@ To verify that you've successfully created a mail-enabled security group, do one
 
 - In Exchange Online PowerShell, run the following command to display information about the new mail-enabled security group.
 
-  ```
+  ```PowerShell
   Get-DistributionGroup <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
@@ -222,19 +222,19 @@ Here are some examples of using Exchange Online PowerShell to change security gr
 
 This example displays a list of all security groups in the organization.
 
-```
+```PowerShell
 Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'"
 ```
 
 This example changes the primary SMTP address (also called the reply address) for the Seattle Administrators security group from admins@contoso.com to seattle.admins@contoso.com. The previous reply address will be kept as a proxy address.
 
-```
+```PowerShell
 Set-DistributionGroup "Seattle Employees" -EmailAddresses SMTP:sea.admins@contoso.com,smtp:admins@contoso.com
 ```
 
 This example hides all security groups in the organization from the address book.
 
-```
+```PowerShell
 Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Set-DistributionGroup -HiddenFromAddressListsEnabled $true
 ```
 
@@ -246,6 +246,6 @@ To verify that you've successfully changed properties for a security group, do t
 
 - In Exchange Online PowerShell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Format-List Name,HiddenFromAddressListsEnabled
   ```
