@@ -61,7 +61,7 @@ You can use the **Clear-MobileDevice** cmdlet in the Exchange Management Shell t
 
 The following command wipes the device named WM_TonySmith and sends a confirmation message to admin@contoso.com.
 
-```
+```powershell
 Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
