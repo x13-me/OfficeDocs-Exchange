@@ -48,7 +48,7 @@ To create a certificate request in Microsoft Exchange Server 2007, use the [New-
 
 2. On the command line, type:
 
-    ```
+    ```PowerShell
     New-ExchangeCertificate -DomainName "owa.servername.contoso.com","mail.servername.contoso.com","autodiscover.servername.contoso.com","sts.servername,contoso.com","oos.servername.contoso.com","mail12.servername.contoso.com","edge.servername.contoso.com" -FriendlyName "Exchange 2007 Certificate" -GenerateRequest:$true -KeySize 2048 -Path "C:\certlocation" -PrivateKeyExportable $true -SubjectName "c=us, o=ContosoCorporation, cn=servername,contoso.com"
     ```
 
@@ -80,7 +80,7 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 
 2. On the command line, type:
 
-    ```
+    ```PowerShell
     Import-ExchangeCertificate C:\filepath
     ```
 
@@ -92,7 +92,7 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 
 1. To enable the certificate, you use the [Enable-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615770) command. On the command line, type:
 
-    ```
+    ```PowerShell
     Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis,smtp,pop,imap
     ```
 
