@@ -45,13 +45,13 @@ Looking for other management tasks related to permissions? Check out [Permission
 
 To change the assignment policy that's assigned to a mailbox, use the following syntax.
 
-```
+```powershell
 Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
 ```
 
 This example sets the assignment policy to Engineering Users on the mailbox Brian.
 
-```
+```powershell
 Set-Mailbox Brian -RoleAssignmentPolicy "Engineering Users"
 ```
 
@@ -70,19 +70,19 @@ This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ p
 
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<assignment policy to find>"} | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
 ```
 
 This example finds all the mailboxes assigned to the Redmond Users - No Voicemail assignment policy and changes the assignment policy to Redmond Users - Voicemail Enabled.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
 ```
 
 This example includes the _WhatIf_ parameter so that you can see all the mailboxes that would be changed without committing any changes.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 

@@ -44,7 +44,7 @@ For additional management tasks related to voice mail preview, see [Voice Mail P
 
 This example sets the Voice Mail Preview partner ID to CON123-2010 on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy
 -VoiceMailPreviewPartnerAssignedID CON123-2010
 ```

@@ -138,7 +138,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 2. On the UM mailbox policy that's linked to the user, verify that the _AllowSMSNotification_ parameter is set to `$true`. To set the parameter to `$true`, run the following command:
 
-    ```
+    ```PowerShell
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowSMSNotification $true
     ```
 
@@ -146,7 +146,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 4. Because the default setting is `None`, you must run the following command in Exchange Online PowerShell and set the text message notification option to either `VoiceMailAndMissedCalls` or `VoiceMail`. For example:
 
-    ```
+    ```PowerShell
     Set-UMMailbox -Identity MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls
     ```
 

@@ -52,13 +52,13 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
 This example configures the Availability service to retrieve per-user free/busy information on a Mailbox server in the target forest.
 
-```
+```PowerShell
 Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
 ```
 
 This example defines the free/busy access method that the Availability service uses on the local Mailbox server in the source forest. The local Mailbox server is configured to access free/busy information from the forest ContosoForest.com on a per-user basis. This example uses the service account to retrieve free/busy information.
 
-```
+```PowerShell
 Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount $true
 ```
 
@@ -71,7 +71,7 @@ If you choose to configure cross-forest availability with trust, and also choose
 
 This example configures trusted cross-forest availability with a service account.
 
-```
+```PowerShell
 Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
 ```
 
@@ -89,12 +89,12 @@ For detailed information about syntax and parameters, see the following topics:
 
 This example sets the organization-wide account on the availability configuration object to configure the access level for free/busy information in the target forest.
 
-```
+```PowerShell
 Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
 ```
 
 This example adds the Availability address space configuration object for the source forest, and you're prompted to enter the credentials for organization-wide user in Contoso.com domain.
 
-```
+```PowerShell
 Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential (Get-Credential)
 ```
