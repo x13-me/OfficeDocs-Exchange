@@ -54,7 +54,7 @@ You can use the **Clear-MobileDevice** cmdlet in Exchange Online PowerShell to w
 
 The following command wipes the device named WM_TonySmith and sends a confirmation message to admin@contoso.com.
 
-```
+```PowerShell
 Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
