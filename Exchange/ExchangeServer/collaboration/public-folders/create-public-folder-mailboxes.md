@@ -63,19 +63,19 @@ For additional management tasks related to public folders in Exchange Server, se
 
 To create a public folder mailbox, use the following syntax:
 
-```
+```PowerShell
 New-Mailbox -PublicFolder -Name <Name>
 ```
 
 This example creates the primary hierarchy public folder mailbox named Master Hierarchy, because this is the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is the primary hierarchy public folder mailbox).
 
-```
+```PowerShell
 New-Mailbox -PublicFolder -Name "Master Hierarchy"
 ```
 
 This example creates a secondary hierarcy public folder mailbox named Istanbul, because this isn't the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is a secondary hierarchy public folder mailbox).
 
-```
+```PowerShell
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
@@ -89,7 +89,7 @@ To verify that you've successfully created the a public folder mailbox, do any o
 
 - In the Exchange Management Shell, run the following command to verify the mailbox is listed, and check the value of the **IsRootPublicFolderMailbox** property to see if the mailbox is the primary hierarchy public folder mailbox (`True`) or a secondary hierarchy public folder mailbox (`False`):
 
-    ```
+    ```PowerShell
     Get-Mailbox -PublicFolder | Format-Table -Auto Name,ServerName,Database,IsRootPublicFolderMailbox
     ```
 
@@ -97,12 +97,12 @@ To verify that you've successfully created the a public folder mailbox, do any o
 
     1. Run the following command:
 
-      ```
+      ```PowerShell
       Get-OrganizationConfig | Format-List RootPublicFolderMailbox
       ```
 
     2. Use the GUID value returned by the first command with **Get-Mailbox** to confirm the mailbox name. You can copy the GUID value by right-clicking in the Exchange Management Shell window, selecting **Mark**, highlighting the GUID value, and then pressing ENTER.
 
-      ```
+      ```PowerShell
       Get-Mailbox -PublicFolder -Identity <GUID>
       ```
