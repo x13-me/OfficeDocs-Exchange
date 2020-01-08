@@ -66,13 +66,13 @@ A common scenario in many Exchange deployments is that of creating an e-mail add
 
 If the recipients in a particular OU don't share any common properties that you can filter by, such as department or location, you can populate one of the custom attributes with a common value, as shown in this example.
 
-```
+```PowerShell
 Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 ```
 
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.
 
-```
+```PowerShell
 New-EmailAddressPolicy -Name "Sales" -RecipientFilter "CustomAttribute1 -eq 'SalesOU'" -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
 ```
 
@@ -83,7 +83,7 @@ When creating dynamic distribution groups, email address policies, or address li
 
 This example creates a dynamic distribution group based on the recipients whose _CustomAttribute1_ is set to SalesOU.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 ```
 
@@ -95,18 +95,18 @@ New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipient
 
 In this example, the mailbox for Kweku will have _ExtensionCustomAttribute1_ updated to reflect that he's enrolled in the following educational classes: MATH307, ECON202, and ENGL300.
 
-```
+```PowerShell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 ```
 
 Next, a dynamic distribution group for all students enrolled MATH307 is created by using the _RecipientFilter_ parameter where _ExtensionCustomAttribute1_ is equal to MATH307. When using the _ExtentionCustomAttributes_ parameters, you can use the `-eq` operator instead of the `-like` operator.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter "ExtensionCustomAttribute1 -eq 'MATH307'"
 ```
 
 In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to reflect that he's added the class ENGL210 and removed the class ECON202.
 
-```
+```PowerShell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```

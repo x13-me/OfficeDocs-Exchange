@@ -71,25 +71,25 @@ The syntax that you use to complete a pending certificate request in the Exchang
 
 To import a binary certificate file (PKCS #12 files that have .cer, .crt, .der, .p12, or .pfx filename extensions), use the following syntax:
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileName "<FilePathOrUNCPath>\<FileName>" [-Password (ConvertTo-SecureString -String '<Password> ' -AsPlainText -Force)] [-PrivateKeyExportable <$true | $false>] [-Server <ServerIdentity>]
 ```
 
 This example imports the binary certificate file `\\FileServer01\Data\Contoso Cert.cer` that's protected by the password P@ssw0rd1 on the local Exchange server.
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileName "\\FileServer01\Data\Contoso Cert.cer" -Password (ConvertTo-SecureString -String 'P@ssw0rd1' -AsPlainText -Force)
 ```
 
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions), use the following syntax:
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))]
 ```
 
 This example imports the text certificate file `\\FileServer01\Data\Chain of Certificates.p7b` on the local Exchange server.
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileData "Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))]
 ```
 
@@ -109,7 +109,7 @@ To verify that you have successfully completed the certificate request and insta
 
 - In the Exchange Management Shell on the server where you installed the certificate, run the following command and verify that the certificate is listed:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $false} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint
   ```
 

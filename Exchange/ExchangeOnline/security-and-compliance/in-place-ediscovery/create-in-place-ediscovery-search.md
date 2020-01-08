@@ -102,7 +102,7 @@ This example creates the In-Place eDiscovery search named Discovery-CaseId012 th
 > [!IMPORTANT]
 > If you don't specify additional search parameters when running an In-Place eDiscovery search, all items in the specified source mailboxes are returned in the results. If you don't specify mailboxes to search, all mailboxes in your Exchange or Exchange Online organization are searched.
 
-```
+```PowerShell
 New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 ```
 
@@ -111,7 +111,7 @@ New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/
 
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015.
 
-```
+```PowerShell
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
@@ -144,21 +144,21 @@ You can use the _EstimateOnly_ switch to return only get an estimate of the sear
 
 For example, you would run the following commands to create a new eDiscovery search and then display an estimate of the search results:
 
-```
+```PowerShell
 New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
 To display specific information about the estimated search results from the previous example, you could run the following command:
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
 

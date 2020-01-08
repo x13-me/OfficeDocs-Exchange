@@ -56,7 +56,7 @@ To create an OAB virtual directory with all of the default settings, you can run
 
 This example creates an OAB virtual directory on the Client Access server named CASServer01 that has SSL enabled and an external URL.
 
-```
+```PowerShell
 New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "https://www.contoso.com/OAB"
 ```
 

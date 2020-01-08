@@ -89,13 +89,13 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
    For Exchange 2010, run the following command in the Exchange Management Shell. This command excludes the mailbox database from the mailbox provisioning load balancer. This prevents new mailboxes from automatically being added to this database.
 
-   ```
+   ```PowerShell
    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
    ```
 
    For Exchange 2007, run the following command in the Exchange Management Shell:
 
-   ```
+   ```PowerShell
    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
    ```
 
@@ -104,17 +104,17 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access.
 
-   ```
+   ```PowerShell
    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
    ```
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
    ```
 
 4. For Exchange 2010, enable Autodiscover to return the proxy public folder mailboxes.
 
-   ```
+   ```PowerShell
    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
    ```
 
@@ -139,7 +139,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 1. On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
-   ```
+   ```PowerShell
    Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
@@ -156,7 +156,7 @@ You will point to all of the proxy public folder mailboxes that you created in [
 
 Run the following command in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 

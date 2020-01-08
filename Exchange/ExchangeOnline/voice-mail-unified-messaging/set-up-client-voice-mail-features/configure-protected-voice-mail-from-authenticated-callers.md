@@ -63,6 +63,6 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 This example protects voice messages from all authenticated callers on the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy ProtectAuthenticatedVoiceMail -All
 ```

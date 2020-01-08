@@ -53,7 +53,7 @@ To verify that you have successfully created a database, do the following:
 
 - From the Exchange Management Shell, verify that the database was created on server Mailbox01 by running the following command.
 
-  ```
+  ```PowerShell
   Get-MailboxDatabase -Server "Mailbox01"
   ```
 
@@ -145,7 +145,7 @@ To verify that you have successfully set the attributes, do the following:
 
 - From the Exchange Management Shell, run the following command to retrieve mailbox database properties.
 
-  ```
+  ```PowerShell
   Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
   ```
 
@@ -179,7 +179,7 @@ To verify that you have successfully mounted the mailbox database, do the follow
 
 - From the Exchange Management Shell, run the following command to retrieve mailbox database properties for all mailbox databases.
 
-  ```
+  ```PowerShell
   Get-MailboxDatabase -IncludePreExchange2013
   ```
 
@@ -213,7 +213,7 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](http
 
 1. Run the following command to remove the mailbox database MyDatabase.
 
-   ```
+   ```PowerShell
    Remove-MailboxDatabase -Identity "MyDatabase"
    ```
 

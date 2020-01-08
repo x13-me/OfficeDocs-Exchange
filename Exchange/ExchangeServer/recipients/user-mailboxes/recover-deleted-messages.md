@@ -57,7 +57,7 @@ This example searches for messages in April Stewart's mailbox that meet the foll
 
 - Keyword: Seattle
 
-```
+```PowerShell
 Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
 ```
 
@@ -83,7 +83,7 @@ After messages have been recovered to a discovery mailbox, you can restore them 
 
 This example restores messages to April Stewart's mailbox and deletes them from the Discovery Search Mailbox.
 
-```
+```PowerShell
 Search-Mailbox "Discovery Search Mailbox" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "April Stewart" -TargetFolder "Recovered Messages" -LogLevel Full -DeleteContent
 ```
 
@@ -107,7 +107,7 @@ This example uses the following settings to export messages from the folder Apri
 
 - **PST file path**: \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 
-```
+```PowerShell
 New-MailboxExportRequest -Mailbox "Discovery Search Mailbox" -SourceRootFolder "April Stewart Recovery" -ContentFilter "Subject -eq 'April travel plans'" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 ```
 
@@ -121,7 +121,7 @@ This example uses the following settings to import messages from a .pst file to 
 
 - **PST file path**: \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 
-```
+```PowerShell
 New-MailboxImportRequest -Mailbox "April Stewart" -TargetRootFolder "Recovered By Helpdesk" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 ```
 

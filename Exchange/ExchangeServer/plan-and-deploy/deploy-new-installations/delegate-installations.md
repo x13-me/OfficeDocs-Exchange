@@ -52,7 +52,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 3. In the Command Prompt window, use the following syntax:
 
-    ```
+    ```console
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer[:<ServerName>]
     ```
 
@@ -60,13 +60,13 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
     This example uses the Exchange installation files on drive E: to provision the server Mailbox01:
 
-    ```
+    ```console
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer:Mailbox01
     ```
 
     This example uses the Exchange installation files on drive E: to provision the local server where you're running the command:
 
-    ```
+    ```console
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer
     ```
 
