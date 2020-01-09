@@ -75,7 +75,7 @@ $pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Sub
 
 When deleting a public calendar folder, a user sees the following options:
 
-![Delete calendar dialog box](..\..\media\delete-public-calendar-folder.png)
+![Delete calendar dialog box](../../media\delete-public-calendar-folder.png)
 
 If the user selected “Yes”, the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
