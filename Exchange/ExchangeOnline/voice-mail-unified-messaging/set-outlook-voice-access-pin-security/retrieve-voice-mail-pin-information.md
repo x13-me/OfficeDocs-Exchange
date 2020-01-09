@@ -53,6 +53,6 @@ For additional tasks related to PIN security, see [PIN security procedures](pin-
 
 This example displays the user ID, whether a PIN is expired, whether the UM mailbox is locked out, and whether Tony is a first-time user.
 
-```
+```PowerShell
 Get-UMMailboxPIN -identity tony@contoso.com
 ```

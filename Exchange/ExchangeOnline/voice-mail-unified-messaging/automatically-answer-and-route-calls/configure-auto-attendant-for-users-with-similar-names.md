@@ -64,12 +64,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the information to be included with users with similar names to Prompt for Alias for a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -MatchedNameSelectionMethod PromptForAlias
 ```
 
 This example sets the information to be included with users with similar names to the title of the users, enables name lookups, and enables callers that dial into the auto attendant to press \* to be presented with the Outlook Voice Access welcome greeting for a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -MatchedNameSelectionMethod Title -NameLookupEnabled $true -StarOutToDialPlanEnabled $true
 ```

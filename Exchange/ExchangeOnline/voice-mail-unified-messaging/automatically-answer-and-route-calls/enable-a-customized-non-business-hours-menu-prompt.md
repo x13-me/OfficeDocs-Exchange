@@ -59,13 +59,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example enables a UM auto attendant named `MyUMAutoAttendant` that has business hours configured to be 10:45 to 13:15 (Sunday), 09:00 to 17:00 (Monday), and 09:00 to 16:30 (Saturday) and holiday times and their associated greetings configured to be " `New Year`" on January 1, 2013, and " `Building Closed for Construction`" from April 24, 2013 through April 28, 2013.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30 -HolidaySchedule "New Year,newyrgrt.wav,1/2/2013","Building Closed for Construction,construction.wav,4/24/2013,4/28/2013"
 ```
 
 This example configures a UM auto attendant named `MyAutoAttendant` and enables non-business hours navigation menus so that when callers press 1, they're forwarded to another UM auto attendant named `SalesAutoAttendant`. When they press 2, they're forwarded to extension number 12345 for `Support`, and when they press 3, they're sent to another UM auto attendant that plays an audio file.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyAutoAttendant -
 AfterHoursKeyMappingEnabled $true -
 AfterHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"

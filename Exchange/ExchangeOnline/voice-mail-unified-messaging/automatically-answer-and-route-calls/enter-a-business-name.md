@@ -49,6 +49,6 @@ For additional tasks related to UM auto attendants, see [UM auto attendant proce
 
 This example sets the business name on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessName "Northwind Traders"
 ```

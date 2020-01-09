@@ -52,6 +52,6 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 This example deletes a UM hunt group named `MyUMHuntGroup`.
 
-```
+```PowerShell
 Remove-UMHuntGroup -identity MyUMHuntGroup
 ```

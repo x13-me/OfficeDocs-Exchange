@@ -51,6 +51,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the recording idle time-out value to 10 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -RecordingIdleTimeout 10
 ```

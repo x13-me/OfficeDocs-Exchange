@@ -59,6 +59,6 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2, InternationalGroup1, and InternationalGroup2 dialing authorizations on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```
