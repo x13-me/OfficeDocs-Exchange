@@ -320,7 +320,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for Android.
     
-    - For **Office Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
     
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
@@ -385,7 +385,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Office Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
     
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
