@@ -71,6 +71,8 @@ $pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Sub
 
 ### Restore a public calendar folder
 
+You can restore a public calendar folder using the same procedure as any other public folder, but there are special considerations.
+
 When deleting a public calendar folder, a user sees the following options:
 
 ![Delete calendar dialog box](../../media/delete-public-calendar-folder.png)
@@ -78,4 +80,4 @@ When deleting a public calendar folder, a user sees the following options:
 If the user selected "Yes", the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
 > [!NOTE]
-> Using Outlook to restore deleted public folders is not recommended because it truncates the public folder name and retains only the first name of the public folder. This issue is under investigation and this article will be updated when there is a fix available.
+> Using Outlook to restore deleted public folders is not recommended because it truncates the name of the public folder. This issue is under investigation and this article will be updated when there is a fix available.
