@@ -59,23 +59,25 @@ The user restoring the public folder must have the “Public Folders” role ass
     Set-PublicFolder -Identity \NON_IPM_SUBTREE\DUMPSTER_ROOT\DUMPSTER_EXTEND\RESERVED_1\RESERVED_1\9f32c468-4bc2-42aa-b979-16a057394b2f\PF1 -Path \
     ```
 
-    > [!NOTE]
-    > Deleting a folder also deletes all of its subfolders. Likewise, restoring a folder also restores all of its subfolders.
+### Restore a secific subfolder
 
-    Example 2:
+Deleting a folder also deletes all of its subfolders. Likewise, restoring a folder also restores all of its subfolders.
 
-    You can restore a specific subfolder. The following command restores `Subfolder1` under `\Parent1`:
+Example 2:
 
-    ```PowerShell
-    $pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Subfolder1"};Set-PublicFolder $pf.identity -Path \Parent1
-    ```
+You can restore a specific subfolder. The following command restores `Subfolder1` under `\Parent1`:
 
-    > [!NOTE]
-    > When deleting a public calendar folder, a user sees the following options:
-    >
-    > ![Delete calendar dialog box](..\..\media\delete-public-calendar-folder.png)
-    >
-    > If the user selected “Yes”, the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
+```PowerShell
+$pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Subfolder1"};Set-PublicFolder $pf.identity -Path \Parent1
+```
+
+### Restore a public calendar folder
+
+When deleting a public calendar folder, a user sees the following options:
+
+![Delete calendar dialog box](..\..\media\delete-public-calendar-folder.png)
+
+If the user selected “Yes”, the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
 > [!NOTE]
 > Using Outlook to restore deleted public folders is not recommended because it truncates the public folder name and retains only the first name of the public folder. This issue is under investigation and this article will be updated when there is a fix available.
