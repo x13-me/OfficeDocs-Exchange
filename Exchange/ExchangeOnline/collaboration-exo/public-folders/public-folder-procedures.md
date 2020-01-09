@@ -46,4 +46,6 @@ manager: serdars
 
 [Remove a public folder](remove-public-folder.md)
 
+[Restore a deleted public folder](restore-deleted-public-folder.md)
+
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)
