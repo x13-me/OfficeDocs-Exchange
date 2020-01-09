@@ -75,25 +75,25 @@ These are the types of certificate files that you can import on an Exchange serv
 
 To import a binary certificate file (PKCS #12 files that have .cer, .crt, .der, .p12, or .pfx filename extensions), use the following syntax:
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileName "<FilePathOrUNCPath>\<FileName>" -Password (ConvertTo-SecureString -String '<Password> ' -AsPlainText -Force) [-PrivateKeyExportable <$true | $false>] [-Server <ServerIdentity>]
 ```
 
 This example imports the certificate file `\\FileServer01\Data\Fabrikam.pfx` that's protected by the password P@ssw0rd1 on the local Exchange server.
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileName "\\FileServer01\Data\Fabrikam.pfx" -Password (ConvertTo-SecureString -String 'P@ssw0rd1' -AsPlainText -Force)
 ```
 
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions) that's associated with a certificate, use the following syntax:
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))]
 ```
 
 This example imports the chain of certificates file `\\FileServer01\Data\Chain of Certificates.p7b`.
 
-```
+```PowerShell
 Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))]
 ```
 
@@ -115,7 +115,7 @@ To verify that you have successfully imported (installed) a certificate on an Ex
 
 - In the Exchange Management Shell on the server where you installed the certificate, run the following command:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "Valid"} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
   ```
 

@@ -56,12 +56,12 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 
 This example disables Exchange ActiveSync for the mailbox of Yan Li.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Yan Li" -ActiveSyncEnabled $false
 ```
 
 This example enables Exchange ActiveSync for the mailbox of Elly Nkya.
-
+PowerShell
 ```
 Set-CASMailbox -Identity Ellyn@contoso.com -ActiveSyncEnabled $true
 ```
@@ -82,7 +82,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox <identity>
   ```
 

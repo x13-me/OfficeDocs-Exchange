@@ -58,7 +58,7 @@ Here's the formatting that you can use in your disclaimer text.
 
 Here's an example of an HTML disclaimer that includes a signature, an `IMG` tag, and embedded CSS.
 
-```
+```HTML
 <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
 %%displayname%%</br>
 %%title%%</br>

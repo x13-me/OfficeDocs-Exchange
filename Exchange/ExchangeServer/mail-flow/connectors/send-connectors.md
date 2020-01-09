@@ -179,30 +179,30 @@ The available Send connector permissions are described in the following table.
 
 To see the permissions that are assigned to security principals on a Send connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ADPermission -Identity <SendConnector> [-User <SecurityPrincipal>] | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 For example, to see the permissions that are assigned to all security principals on the Send connector named To Fabrikam.com, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "To Fabrikam.com" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To see the permissions that are assigned only to the security principal `NT AUTHORITY\ANONYMOUS LOGON` on the Send connector named To Fabrikam, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "To Fabrikam.com" -User "NT AUTHORITY\ANONYMOUS LOGON" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To add permissions to a security principal on a Send connector, use the following syntax:
 
-```
+```PowerShell
 Add-ADPermission -Identity <SendConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
 
 To remove permissions from a security principal on a Send connector, use the following syntax:
 
-```
+```PowerShell
 Remove-ADPermission -Identity <SendConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```

@@ -113,6 +113,6 @@ We recommend that you use batch migration instead of Outlook's PST export featur
 
 2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
 
-   ```
+   ```PowerShell
    New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
    ```

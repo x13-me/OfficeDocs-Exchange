@@ -60,18 +60,18 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the information to include with users with similar names to prompt for the user's alias on a UM dial plan named `MyDialPlan`.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -MatchedNameSelectionMethod PromptForAlias
 ```
 
 This example sets the information to include with users with similar names to department on a UM dial plan named `MyDialPlan`.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -MatchedNameSelectionMethod Department
 ```
 
 This example sets the information to include with users with similar names to location on a UM dial plan named `MyDialPlan`.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -MatchedNameSelectionMethod Location
 ```

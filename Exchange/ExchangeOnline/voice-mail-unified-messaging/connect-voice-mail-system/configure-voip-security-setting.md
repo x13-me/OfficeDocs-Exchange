@@ -58,18 +58,18 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example configures a UM dial plan named `MySecureDialPlan` to encrypt both SIP and RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Secured
 ```
 
 This example configures a UM dial plan named `MySecureDialPlan` to encrypt SIP but not encrypt RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity SIPsecured
 ```
 
 This example configures a UM dial plan named `MySecureDialPlan` to not encrypt SIP and RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Unsecured
 ```

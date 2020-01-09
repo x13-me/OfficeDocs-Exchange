@@ -295,7 +295,7 @@ No, the user agent string that Outlook for iOS and Android uses does not change.
 
 Yes, execute the following command from Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
 ```
 

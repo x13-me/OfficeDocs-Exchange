@@ -65,13 +65,13 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables Outlook on the web for the mailbox of Yan Li.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Yan Li" -OWAEnabled $false
 ```
 
 This example enables Outlook on the web for the mailbox of Elly Nkya.
 
-```
+```PowerShell
 Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
 ```
 
@@ -91,7 +91,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox <identity>
   ```
 

@@ -67,7 +67,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 1. Use Notepad to open the file `%ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css`. An easy way to do this is to press the Windows key + R, and run the following command:
 
-   ```
+   ```console
    Notepad.exe %ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css
    ```
 

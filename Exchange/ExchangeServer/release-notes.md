@@ -27,7 +27,7 @@ Welcome to Microsoft Exchange Server 2019! This topic contains important informa
 
 When you attempt to uninstall Exchange Server from Windows 2019 Server Core using the Exchange Setup Wizard, the operation will fail. The wizard attempts to launch the Windows Control Panel to uninstall Exchange, but the Control Panel does not exist in Windows Server Core. To uninstall Exchange from Windows Server Core, run the following Setup command from the command line:
 
-    ```
+    ```PowerShell
     Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
     ```
 
@@ -57,13 +57,13 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   2. Run the following command to get a list of mailbox databases that are located on your Exchange 2016 servers. Copy the name of the mailbox database where you want to move the migration mailbox to the clipboard.
 
-      ```
+      ```PowerShell
       Get-MailboxDatabase | Where {$_.AdminDisplayVersion -Like "*15.1*"} | Format-Table Name, ServerName
       ```
 
   3. Run the following command to move the migration mailbox to your Exchange 2016 server. Paste the mailbox database name you copied in the previous step after _TargetDatabase_.
 
-      ```
+      ```PowerShell
       New-MoveRequest "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -TargetDatabase "<mailbox database name>"
       ```
 
@@ -89,7 +89,7 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   - Disable MAPI over HTTP on the mailbox by running the following command.
 
-    ```
+    ```PowerShell
     Set-CasMailbox <email address> -MapiHttpEnabled $False
     ```
 
@@ -111,13 +111,13 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   - Disable recipient validation on the affected Edge Transport server(s) by running the following command.
 
-    ```
+    ```PowerShell
     Set-RecipientFilterConfig -RecipientValidationEnabled $False
     ```
 
   - Disable the recipient validation cache on the affected Edge Transport server(s) by running the following command.
 
-    ```
+    ```PowerShell
     Get-TransportService | Set-TransportService -RecipientValidationCacheEnabled $False
     ```
 

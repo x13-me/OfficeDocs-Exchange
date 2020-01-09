@@ -54,6 +54,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MySpeechEnabledAA` to use a DTMF fallback auto attendant named `MyDTMFAA`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA
 ```

@@ -51,6 +51,6 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example prevents UM-enabled user tonysmith@contoso.com from receiving voice messages from calls that don't contain caller ID information.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -AnonymousCallersCanLeaveMessages $false
 ```

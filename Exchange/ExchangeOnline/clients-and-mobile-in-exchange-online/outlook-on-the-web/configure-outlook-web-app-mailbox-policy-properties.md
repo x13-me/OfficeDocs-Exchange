@@ -59,13 +59,13 @@ For more information about Outlook on the web mailbox policies, see [Outlook on 
 
 To modify an Outlook on the web mailbox policy, use the following syntax:
 
-```
+```PowerShell
 Set-OwaMailboxPolicy -Identity "<Policy Name>" [Settings]
 ```
 
 This example enables calendar access in the default mailbox policy.
 
-```
+```PowerShell
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
@@ -75,19 +75,19 @@ For detailed syntax and parameter information, see [Set-OwaMailboxPolicy](https:
 
 To view an Outlook on the web mailbox policy, use the following syntax:
 
-```
+```PowerShell
 Get-OwaMailboxPolicy [-Identity "<Policy Name>"]
 ```
 
 This example returns a summary list of all policies in the organization
 
-```
+```PowerShell
 Get-OwaMailboxPolicy | Format-Table Name
 ```
 
 This example retrieves detailed information for the policy named Executives.
 
-```
+```PowerShell
 Get-OwaMailboxPolicy -Identity Executives
 ```
 
@@ -101,6 +101,6 @@ To verify that you've successfully modified an Outlook on the web mailbox policy
 
 - In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
 
-  ```
+  ```PowerShell
   Get-OwaMailboxPolicy -Identity "<Policy Name>"
   ```

@@ -69,12 +69,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example creates a UM auto attendant named `MyUMAutoAttendant` that can accept incoming calls but isn't speech-enabled.
 
-```
+```PowerShell
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 55000 -Enabled $false
 ```
 
 This example creates a speech-enabled UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true
 ```

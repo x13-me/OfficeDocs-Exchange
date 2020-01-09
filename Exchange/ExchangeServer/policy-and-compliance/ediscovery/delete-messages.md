@@ -53,11 +53,11 @@ In this example, the commands will create and start a search of all mailboxes in
 
 2. Run the following commands.
 
-   ```
+   ```PowerShell
    New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation all -ContentMatchQuery 'subject:"Update your account information"'
    ```
 
-   ```
+   ```PowerShell
    Start-ComplianceSearch -Identity "Remove Phishing Message"
    ```
 
@@ -87,13 +87,13 @@ Here are two examples of queries to find suspicious email messages.
 
 - This query returns messages that were received by users between April 13, 2016 and April 14, 2016 and that contain the words "action" and "required" in the subject line.
 
-  ```
+  ```PowerShell
   (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
   ```
 
 - This query returns messages that were sent by chatsuwloginsset12345@outlook.com and that contain the exact phrase "Update your account information" in the subject line.
 
-  ```
+  ```PowerShell
   (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
   ```
 
@@ -108,7 +108,7 @@ In this example, the command will delete the search results returned by a Compli
 
 2. Run the following command.
 
-   ```
+   ```PowerShell
    New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
    ```
 

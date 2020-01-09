@@ -59,7 +59,7 @@ Performing a datacenter switchover for DAGs that aren't in DAC mode involves usi
 
 DAC mode can be enabled only by using the Exchange Management Shell. Specifically, you can use the [Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup) cmdlet to enable DAC mode, as illustrated in the following example.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
 ```
 

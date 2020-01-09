@@ -81,19 +81,19 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 7. In the Command Prompt window, use the following syntax:
 
-    ```
+    ```console
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
     ```
 
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
-    ```
+    ```powershell
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer
     ```
 
     This is the same example, but a custom location for the Exchange program files is required to match the location on the lost server.
 
-    ```
+    ```powershell
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
@@ -109,7 +109,7 @@ The successful completion of Setup will be the primary indicator that the recove
 
 If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
 
-```
+```console
 "Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
@@ -117,7 +117,7 @@ If you have other Exchange servers in your organization, you'll need to:
 
 1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
-    ```
+    ```powershell
     Disable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 
@@ -125,7 +125,7 @@ If you have other Exchange servers in your organization, you'll need to:
 
 3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete:
 
-    ```
+    ```powershell
     Enable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 

@@ -35,12 +35,12 @@ You can configure the default prompt language setting on a Unified Messaging (UM
 
 This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to English (Great Britain).
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language en-GB
 ```
 
 This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to German.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language de-DE
 ```
