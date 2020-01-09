@@ -364,19 +364,19 @@ The following table lists the available parameters for the RedistributeActiveDat
 
 This example shows the current database distribution for a DAG, including preference count list.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
 ```
 
 This example redistributes and balances the active mailbox database copies in a DAG using activation preference without prompting for input.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
 ```
 
 This example redistributes and balances the active mailbox database copies in a DAG using activation preference, and produces a summary of the distribution.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
 ```
 

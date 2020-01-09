@@ -45,12 +45,12 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
 
 This example disables a UM IP gateway named `yUMIPGateway` and stops it from accepting incoming calls from a VoIP gateway, IP PBX, or SBC.
 
-```
+```PowerShell
 Disable-UMIPGateway -Identity MyUMIPGateway
 ```
 
 This example disables a UM IP gateway named `yUMIPGateway` and disconnects all current calls immediately.
 
-```
+```PowerShell
 Disable-UMIPGateway -Identity MyUMIPGateway -Immediate $true
 ```

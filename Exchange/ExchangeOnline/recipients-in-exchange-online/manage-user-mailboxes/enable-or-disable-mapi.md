@@ -62,13 +62,13 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables MAPI for the mailbox of Ken Sanchez.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Ken Sanchez" -MAPIEnabled $false
 ```
 
 This example enables MAPI for the mailbox of Esther Valle.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
@@ -88,7 +88,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
 

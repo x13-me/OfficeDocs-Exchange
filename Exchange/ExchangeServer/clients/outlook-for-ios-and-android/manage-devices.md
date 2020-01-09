@@ -81,19 +81,19 @@ You can define a default block rule and then configure an allow rule for Outlook
 
 1. Create the default block rule:
 
-   ```
+   ```powershell
    Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
    ```
 
 2. Create an allow rule for Outlook for iOS and Android
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Allow
    ```
 
 3. **Optional**: Create rules that allow Outlook on Windows devices for Exchange ActiveSync connectivity (WP refers to Windows Phone, WP8 refers to Windows Phone 8 and later, and WindowsMail refers to the Mail app included in Windows 10):
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP" -AccessLevel Allow
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP8" -AccessLevel Allow
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
@@ -105,19 +105,19 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 1. Confirm that there are no Exchange ActiveSync device access rules in place that block Outlook for iOS and Android:
 
-   ```
+   ```powershell
    Get-ActiveSyncDeviceAccessRule | where {$_.AccessLevel -eq "Block" -and $_.QueryString -like "Outlook*"} | ft Name,AccessLevel,QueryString -auto
    ```
 
    If any device access rules that block Outlook for iOS and Android are found, type the following to remove them:
 
-   ```
+   ```powershell
    Get-ActiveSyncDeviceAccessRule | where {$_.AccessLevel -eq "Block" -and $_.QueryString -like "Outlook*"} | Remove-ActiveSyncDeviceAccessRule
    ```
 
 2. You can block most Android and iOS devices with the following commands:
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Android" -AccessLevel Block
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPad" -AccessLevel Block
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPhone" -AccessLevel Block
@@ -126,13 +126,13 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 3. Not all Android device manufacturers specify "Android" as the DeviceType. Manufacturers may specify a unique value with each release. In order to find other Android devices that are accessing your environment, execute the following command to generate a report of all devices that have an active Exchange ActiveSync partnership:
 
-   ```
+   ```powershell
    Get-MobileDevice | Select-Object DeviceOS,DeviceModel,DeviceType | Export-CSV c:\temp\easdevices.csv
    ```
 
 4. Create additional block rules, depending on your results from Step 3. For example, if you find your environment has a high usage of HTCOne Android devices, you can create an Exchange ActiveSync device access rule that blocks that particular device, forcing the users to use Outlook for iOS and Android. In this example, you would type:
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "HTCOne" -AccessLevel Block
    ```
 
@@ -165,10 +165,10 @@ With the `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access
 
 The following are two examples of a device access rule. The first example uses the `DeviceModel` characteristic; the second example uses the `DeviceType` characteristic.
 
-```
+```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Outlook" -AccessLevel Block
 ```
 
-```
+```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```

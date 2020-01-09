@@ -57,7 +57,7 @@ On Mailbox servers and Edge Transport servers in Exchange Server, you can export
 
 To export a specific message from a queue, use the following syntax:
 
-```
+```powershell
 Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
 ```
 
@@ -69,15 +69,15 @@ This example takes the following actions on the server named Mailbox01:
 
 3. Exports a copy of the message to the file D:\contoso Export\export.eml.
 
-```
+```powershell
 Suspend-Queue Mailbox01\contoso.com
 ```
 
-```
+```powershell
 Suspend-Message -Identity Mailbox01\contoso.com\1234
 ```
 
-```
+```powershell
 Export-Message -Identity Mailbox01\contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
 ```
 
@@ -85,7 +85,7 @@ Export-Message -Identity Mailbox01\contoso.com\1234 | AssembleMessage -Path "D:\
 
 To export all messages from a queue, and use the **InternetMessageID** value of each message as the file name, use the following syntax:
 
-```
+```powershell
 Get-Message -Queue <QueueIdentity> -ResultSize Unlimited | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
@@ -97,15 +97,15 @@ This example takes the following actions on the server named Mailbox01:
 
 3. Exports copies of the messages to the local folder named D:\Contoso Export.
 
-```
+```powershell
 Suspend-Queue Mailbox01\contoso.com
 ```
 
-```
+```powershell
 Get-Queue Mailbox01\contoso.com | Get-Message -ResultSize Unlimited | Suspend-Message
 ```
 
-```
+```powershell
 Get-Message -Queue Mailbox01\Contoso.com -ResultSize Unlimited | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
@@ -113,7 +113,7 @@ Get-Message -Queue Mailbox01\Contoso.com -ResultSize Unlimited | ForEach-Object 
 
 To export specific messages from all queues on a server, and use the **InternetMessageID** value of each message as the file name, use the following syntax:
 
-```
+```powershell
 Get-Message -Filter "<MessageFilter>" [-Server <ServerIdentity>] -ResultSize Unlimited | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
@@ -125,15 +125,15 @@ This example takes the following actions on the server named Mailbox01:
 
 3. Exports copies of the messages to the local folder named D:\Fabrikam Export.
 
-```
+```powershell
 Suspend-Queue -Server Mailbox01
 ```
 
-```
+```powershell
 Suspend-Message -Filter "FromAddress -like '*@fabrikam.com'" -Server Mailbox01
 ```
 
-```
+```powershell
 Get-Message -Filter "FromAddress -like '*@fabrikam.com'" -Server Mailbox01 -ResultSize Unlimited | ForEach-Object {$Temp="D:\Fabrikam Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
@@ -141,7 +141,7 @@ Get-Message -Filter "FromAddress -like '*@fabrikam.com'" -Server Mailbox01 -Resu
 
 To export all messages from all queues on a server, and use the **InternetMessageID** value of each message as the file name, use the following syntax:
 
-```
+```powershell
 Get-Message [-Server <ServerIdentity>] -ResultSize Unlimited | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
 
@@ -153,14 +153,14 @@ This example takes the following actions on the server named Mailbox01:
 
 3. Exports copies of the messages to the local folder named D:\Mailbox01 Export.
 
-```
+```powershell
 Suspend-Queue -Server Mailbox01
 ```
 
-```
+```powershell
 Get-Queue -Server Mailbox01 | Get-Message -ResultSize Unlimited | Suspend-Message
 ```
 
-```
+```powershell
 Get-Message -Server Mailbox01 -ResultSize Unlimited | ForEach-Object {$Temp="D:\Mailbox01 Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```

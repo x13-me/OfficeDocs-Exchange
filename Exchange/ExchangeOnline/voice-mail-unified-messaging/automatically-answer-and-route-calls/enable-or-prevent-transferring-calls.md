@@ -52,12 +52,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example prevents call transfers on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowDialPlanSubscribers $false
 ```
 
 This example enables call transfers on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowDialPlanSubscribers $true
 ```

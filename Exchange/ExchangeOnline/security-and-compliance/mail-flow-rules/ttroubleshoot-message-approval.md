@@ -37,7 +37,7 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 Run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "<arbitration mailbox>" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
@@ -45,7 +45,7 @@ Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 
 For example, to find all the recipients that use the arbitration mailbox named Arbitration Mailbox01, run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "Arbitration Mailbox01" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
@@ -60,25 +60,25 @@ To stop moderated recipients from using the arbitration mailbox you are trying t
 
 If you choose to specify a different arbitration mailbox for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ArbitrationMailbox <different arbitration mailbox>
 ```
 
 For example, to reconfigure the distribution group named All Employees to use the arbitration mailbox named Arbitration Mailbox02 for membership approval, run the following command:
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ArbitrationMailbox "Arbitration Mailbox02"
 ```
 
 If you choose to disable moderation for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModerationEanbled $false
 ```
 
 For example, to disable moderation for the mailbox named Human Resources, run the following command:
 
-```
+```PowerShell
 Set-Mailbox "Human Resources" -ModerationEanbled $false
 ```
 

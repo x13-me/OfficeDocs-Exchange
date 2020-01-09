@@ -64,7 +64,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 As previously explained, you can use the **Set-TransportService** cmdlet to perform all message tracking configuration tasks on Mailbox servers and Edge Transport servers. To configure message tracking in the Exchange Management Shell, use the following syntax:
 
-```
+```powershell
 Set-TransportService [<ServerIdentity>] -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true | $false>
 ```
 
@@ -80,7 +80,7 @@ This example configures the following message tracking log settings on the serve
 
 - Sets the maximum age of a message tracking log file to 45 days.
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
 ```
 
@@ -89,13 +89,13 @@ Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Message Tracking Log"
 
 This example disables message subject logging in the message tracking log on the server named Mailbox01:
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
 ```
 
 This example disables message tracking on the Mailbox server named Mailbox01:
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 ```
 
@@ -103,7 +103,7 @@ Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 
-```
+```powershell
 Get-TransportService [<ServerIdentity>] | Format-List MessageTrackingLog*
 ```
 

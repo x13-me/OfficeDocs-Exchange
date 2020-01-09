@@ -61,13 +61,13 @@ The certificate request appears in the list of Exchange certificates with a stat
 
 To create a certificate renewal request for a certification authority on the local Exchange server, use the following syntax:
 
-```
+```PowerShell
 Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate -GenerateRequest -RequestFile <FilePathOrUNCPath>\<FileName>.req
 ```
 
 To find the thumbprint value of the certificate that you want to renew, run the following command:
 
-```
+```PowerShell
 Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $false} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
 ```
 
@@ -77,7 +77,7 @@ This example creates a certificate renewal request with the following properties
 
 - **RequestFile**: `\\FileServer01\Data\ContosoCertRenewal.req`
 
-```
+```PowerShell
 Get-ExchangeCertificate -Thumbprint 5DB9879E38E36BCB60B761E29794392B23D1C054 | New-ExchangeCertificate -GenerateRequest -RequestFile \\FileServer01\Data\ContosoCertRenewal.req
 ```
 
@@ -99,7 +99,7 @@ To verify that you have successfully created a certificate renewal request for a
 
 - In the Exchange Management Shell on the server where you stored the certificate request, run the following command:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "PendingRequest" -and $_.IsSelfSigned -eq $false} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint
   ```
 
@@ -121,13 +121,13 @@ When you renew an Exchange self-signed certificate, you're basically making a ne
 
 To renew a self-signed certificate, use the following syntax:
 
-```
+```PowerShell
 Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate [-Force] [-PrivateKeyExportable <$true | $false>]
 ```
 
 To find the thumbprint value of the certificate that you want to renew, run the following command:
 
-```
+```PowerShell
 Get-ExchangeCertificate | where {$_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
 ```
 
@@ -139,7 +139,7 @@ This example renews a self-signed certificate on the local Exchange server, and 
 
 - The private key is exportable. This allows you to export the certificate and import it on other servers.
 
-```
+```PowerShell
 Get-ExchangeCertificate -Thumbprint BC37CBE2E59566BFF7D01FEAC9B6517841475F2D | New-ExchangeCertificate -Force -PrivateKeyExportable $true
 ```
 
@@ -151,6 +151,6 @@ To verify that you have successfully renewed an Exchange self-signed certificate
 
 - In the Exchange Management Shell on the server where you renewed the self-signed certificate, run the following command to verify the property values:
 
-```
+```PowerShell
 Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
 ```

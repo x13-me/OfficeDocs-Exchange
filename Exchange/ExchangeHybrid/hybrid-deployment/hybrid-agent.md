@@ -122,13 +122,13 @@ You must run the HCW from the computer where you want the agent installed. After
 
    3. Import the cmdlets by running the following command:
 
-      ```
+      ```PowerShell
       Import-Module .\HybridManagement.psm1
       ```
 
    4. Next run the following command to verify the computer where you're installing can reach out to all required endpoints for the Hybrid Agent installation and Hybrid Configuration wizard setup.
 
-      ```
+      ```PowerShell
       Test-HybridConnectivity -TestO365Endpoints
       ```
 
@@ -138,7 +138,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 2. To allow installation of the Hybrid Agent and perform mailbox migrations to and from your Office 365 tenant, enable the Mailbox Replication service (MRS) proxy on the EWS virtual directory by running the following command:
 
-   ```
+   ```PowerShell
    Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSProxyEnabled $true
    ```
 
@@ -190,14 +190,14 @@ You can view the specific values configured for each of these by running **Get-M
 
 The following example shows the output that you might see when you run the **Get-MigrationEndpoint** and **Get-OrganizationRelationship** cmdlets:
 
-```
+```PowerShell
 Get-MigrationEndpoint | Format-List Identity,RemoteServer
 
 Identity : Hybrid Migration Endpoint - EWS (Default Web Site)
 RemoteServer : 087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net
 ```
 
-```
+```PowerShell
 Get-OrganizationRelationship | Format-List Name,TargetSharingEpr
 
 Name : O365 to On-premises - c6d22e11-2340-4432-9122-19097bacf0c1
@@ -242,7 +242,7 @@ A second option for installing additional agents is outside the HCW itself and i
 
 3. From that computer, open a Windows Command console as Administrator and run the following command to install the Hybrid Agent:
 
-   ```
+   ```PowerShell
    Msiexec /i MSHybridService.msi
    ```
 
@@ -280,13 +280,13 @@ With each installation of the Hybrid Agent, the HCW install the Hybrid Managemen
 
 To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
 
-```
+```PowerShell
 Import-module .\HybridManagement.psm1
 ```
 
 After that you can run the following command to view agent status:
 
-```
+```PowerShell
 Get-HybridAgent -Credential (Get-Credential)
 ```
 
@@ -309,7 +309,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - From the `TargetSharingEPR` value:
 
-     ```
+     ```PowerShell
      Get-OrganizationRelationship ((Get-OnPremisesOrganization).OrganizationRelationship) | Select-Object TargetSharingEpr
      ```
 
@@ -319,7 +319,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - From the MRS configuration:
 
-     ```
+     ```PowerShell
      Get-MigrationEndpoint "Hybrid Migration Endpoint - EWS (Default Web Site)" | Select-Object RemoteServer
      ```
 
@@ -333,7 +333,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - *appId*: 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 in this example (your value will be different).
 
-   ```
+   ```PowerShell
    Update-HybridApplication -targetUri "https://myloadbalancer.com" -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential (Get-Credential)
    ```
 
@@ -377,7 +377,7 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Replace \<your customguid\> with the unique endpoint GUID value as described in [Direct your Hybrid Agent(s) to the load balancer instead of a specific server](#direct-your-hybrid-agents-to-the-load-balancer-instead-of-a-specific-server) and run the following command:
 
-   ```
+   ```PowerShell
    Test-MigrationServerAvailability -ExchangeRemoteMove:$true -RemoteServer '<your customguid>.resource.mailboxmigration.his.msappproxy.net' -Credentials (Get-Credential)
    ```
 

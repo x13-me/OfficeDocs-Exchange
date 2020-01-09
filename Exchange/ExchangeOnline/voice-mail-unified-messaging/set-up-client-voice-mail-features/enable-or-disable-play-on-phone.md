@@ -49,12 +49,12 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example enables the Play on Phone feature for users who are associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowPlayOnPhone $true
 ```
 
 This example disables the Play on Phone feature for users who are associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowPlayOnPhone $false
 ```

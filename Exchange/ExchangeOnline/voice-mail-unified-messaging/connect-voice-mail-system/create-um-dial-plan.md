@@ -83,12 +83,12 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example creates a new UM dial plan named `MyUMDialPlan` that uses four-digit extension numbers.
 
-```
+```PowerShell
 New-UMDialplan -Name MyUMDialPlan -NumberofDigits 4
 ```
 
 This example creates a new UM dial plan named `MyUMDialPlan` that uses five-digit extension numbers and supports SIP URIs.
 
-```
+```PowerShell
 New-UMDialplan -Name MyUMDialPlan -UriType SIPName -NumberofDigits 5
 ```

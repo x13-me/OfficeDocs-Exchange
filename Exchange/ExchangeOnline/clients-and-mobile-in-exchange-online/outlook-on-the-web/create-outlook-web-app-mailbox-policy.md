@@ -55,13 +55,13 @@ In Exchange Online PowerShell, creating an Outlook on the web mailbox policy is 
 
 1. Create the policy by using the following syntax:
 
-   ```
+   ```PowerShell
    New-OwaMailboxPolicy -Name "<Unique Name>"
    ```
 
    This example creates an Outlook on the web mailbox policy named Executives.
 
-   ```
+   ```PowerShell
    New-OwaMailboxPolicy -Name Policy1
    ```
 
@@ -83,13 +83,13 @@ To verify that you've successfully created an Outlook on the web mailbox policy,
 
 - In Exchange Online PowerShell, run the following command to verify the policy is listed:
 
-  ```
+  ```PowerShell
   Get-OwaMailboxPolicy | Format-Table Name
   ```
 
 - In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
 
-  ```
+  ```PowerShell
   Get-OwaMailboxPolicy -Identity "<Policy Name>"
   ```
 

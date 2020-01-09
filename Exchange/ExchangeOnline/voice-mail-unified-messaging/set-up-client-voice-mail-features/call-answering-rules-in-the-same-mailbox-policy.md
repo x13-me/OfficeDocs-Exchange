@@ -49,12 +49,12 @@ For additional management tasks related to allowing users to forward calls, see 
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to create call answering rules.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $true
 ```
 
 This example prevents users who are associated with the UM mailbox policy `MyUMMailboxPolicy` from creating call answering rules.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $false
 ```

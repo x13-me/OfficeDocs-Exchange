@@ -67,7 +67,7 @@ You can configure mailbox policies in Exchange Server for Outlook on the web thr
 
 This example retrieves the properties of the Outlook on the web mailbox policy `Executives` in the organization `Fabrikam`.
 
-```
+```powershell
 Get-OwaMailboxPolicy -Identity Fabrikam\Executives
 ```
 
@@ -77,7 +77,7 @@ For more information about syntax and parameters, see [Get-OwaMailboxPolicy](htt
 
 This example enables calendar access in the default mailbox policy.
 
-```
+```powershell
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 

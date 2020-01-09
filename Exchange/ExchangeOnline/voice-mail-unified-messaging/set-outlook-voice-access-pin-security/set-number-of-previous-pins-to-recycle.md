@@ -56,6 +56,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the PIN recycle count on the UM mailbox policy `MyUMMailboxPolicy` to 10.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -PINHistoryCount 10
 ```

@@ -51,19 +51,19 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. Retrieve any replay lag or truncation lag settings for any mailbox database copies that exist on the server being recovered by using the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet:
 
-   ```
+   ```powershell
    Get-MailboxDatabase DB1 | Format-List *lag*
    ```
 
 2. Remove any mailbox database copies that exist on the server being recovered by using the [Remove-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-mailboxdatabasecopy) cmdlet:
 
-   ```
+   ```powershell
    Remove-MailboxDatabaseCopy DB1\MBX1
    ```
 
 3. Remove the failed server's configuration from the DAG by using the [Remove-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-databaseavailabilitygroupserver) cmdlet:
 
-   ```
+   ```powershell
    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
    ```
 
@@ -74,19 +74,19 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 5. Open a Command Prompt window. Using the original Setup media, run the following command:
 
-   ```
+   ```powershell
    Setup /m:RecoverServer
    ```
 
 6. When the Setup recovery process is complete, add the recovered server to the DAG by using the [Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/add-databaseavailabilitygroupserver) cmdlet:
 
-   ```
+   ```powershell
    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
    ```
 
 7. After the server has been added back to the DAG, you can reconfigure mailbox database copies by using the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/add-mailboxdatabasecopy) cmdlet. If any of the database copies being added previously had replay lag or truncation lag times greater than 0, you can use the _ReplayLagTime_ and _TruncationLagTime_ parameters of the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/add-mailboxdatabasecopy) cmdlet to reconfigure those settings:
 
-   ```
+   ```powershell
    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
@@ -98,11 +98,11 @@ To verify that you've successfully recovered the DAG member, do the following:
 
 - In the Exchange Management Shell, run the following command to verify the health and status of the recovered DAG member.
 
-  ```
+  ```powershell
   Test-ReplicationHealth <ServerName>
   ```
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus -Server <ServerName>
   ```
 

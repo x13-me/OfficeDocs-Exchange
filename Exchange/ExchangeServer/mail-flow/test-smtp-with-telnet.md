@@ -138,7 +138,7 @@ In this example, we're going to use the following values. When you run the comma
 
 Here's what a successful session using the steps above looks like:
 
-```
+```console
 C:\Windows\System32> telnet
 Microsoft Telnet> set localecho
 Microsoft Telnet> set logfile c:\TelnetTest.txt

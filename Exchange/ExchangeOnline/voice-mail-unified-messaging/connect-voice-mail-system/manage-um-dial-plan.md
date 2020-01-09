@@ -342,19 +342,19 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example configures a UM dial plan named `MyDialPlan` to use 9 for the outside line access code.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -OutsideLineAccessCode 9
 ```
 
 This example configures a UM dial plan named `MyDialPlan` to use a welcome greeting.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename welcome.wav
 ```
 
 This example configures a UM dial plan named `MyDialPlan` with dialing rules.
 
-```
+```PowerShell
 $csv=import-csv "C:\MyInCountryGroups.csv"
 Set-UMDialPlan -Identity MyDialPlan -ConfiguredInCountryGroups $csv
 Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distance"
@@ -364,12 +364,12 @@ Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distanc
 
 This example displays a list of all the UM dial plans.
 
-```
+```PowerShell
 Get-UMDialplan
 ```
 
 This example displays a formatted list of all of the settings on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Get-UMDialplan -Identity MyUMDialPlan | Format-List
 ```

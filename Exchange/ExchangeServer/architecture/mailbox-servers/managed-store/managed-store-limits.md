@@ -157,7 +157,7 @@ You can limit the maximum number of resources that a MAPI client (for example, O
 
 9. Restart the Microsoft Exchange Information Store service by running the following command in Windows PowerShell or the Exchange Management Shell:
 
-   ```
+   ```PowerShell
    Restart-Service MSExchangeIS
    ```
 

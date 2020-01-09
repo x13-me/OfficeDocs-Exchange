@@ -69,6 +69,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the PIN settings for users associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```

@@ -45,6 +45,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example deletes a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 RemoveUMDialplan -identity MyUMDialPlan
 ```

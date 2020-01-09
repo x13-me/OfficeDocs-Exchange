@@ -53,6 +53,6 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 
 This example sets the scope of the users that callers can contact to all users in the organization's address book on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -ContactScope GlobalAddressList
 ```

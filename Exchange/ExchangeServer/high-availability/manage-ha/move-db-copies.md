@@ -45,13 +45,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet, as shown in this example.
 
-   ```
+   ```powershell
    Get-MailboxDatabase DB1 | Format-List *lag*
    ```
 
 2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase) cmdlet, as shown in this example.
 
-   ```
+   ```powershell
    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
    ```
 
@@ -70,19 +70,19 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 8. On each server that contains a copy of the mailbox database being moved, run the following command to stop and restart the content index services.
 
-   ```
+   ```powershell
    Restart-Service MSExchangeFastSearch
    ```
 
 9. Optionally, enable circular logging by using the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase) cmdlet, as shown in this example.
 
-   ```
+   ```powershell
    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
    ```
 
 10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-mailboxdatabasecopy) cmdlet, as shown in this example.
 
-    ```
+    ```powershell
     Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
     ```
 
@@ -114,7 +114,7 @@ To verify that you've successfully moved the path for a mailbox database copy, d
 
 - In the Exchange Management Shell, run the following command to verify the mailbox database copy was created and is healthy.
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
   ```
 

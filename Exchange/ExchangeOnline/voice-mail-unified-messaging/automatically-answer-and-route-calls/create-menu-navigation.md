@@ -87,20 +87,20 @@ This example enables business hours key mappings so that:
 
 - When they press 3, they will be sent to another auto attendant that will play an audio file.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyAutoAttendant -BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
 
 This example sets key mappings defined in a comma-separated value (.csv) file. You must first create the .csv file with the following headings and the correct entry: \<key\>,\<description\>,[\<extension\>],[\<autoattendant name\>],[\<promptfilenamepath\>],[\<asrphrase1;asrphrase2\>],[\<leavevoicemailfor\>],[\<transfertomailbox\>]. The values in brackets are optional. After creating the .csv file, import the .csv file using the **Import-csv** cmdlet.
 
-```
+```PowerShell
 $o = Import-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv"
 Set-UMAutoAttendant MyAutoAttendant -BusinessHoursKeyMapping $o
 ```
 
 This example exports key mappings from an existing UM auto attendant into a .csv file, and then imports the same key mappings into another UM auto attendant. You could also export the key mappings to a .csv file, edit or modify the key mappings in the .csv file, and then import those key mappings into another UM auto attendant.
 
-```
+```PowerShell
 $aa = Get-UMAutoAttendant -Identity MyAutoAttendant
 $aa1 = Get-UMAutoAttendant -Identity MyAutoAttendant2
 $aa.BusinessHoursKeyMapping | Export-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv"

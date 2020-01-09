@@ -33,7 +33,7 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
 
   To identify the disabled mailboxes in your organization, run the following commands in the Exchange Management Shell:
 
-  ```
+  ```PowerShell
   $dbs = Get-MailboxDatabase
   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "Disabled"} | Format-Table DisplayName,Database,DisconnectDate
   ```
@@ -42,7 +42,7 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
 
   Run the following commands to identify soft-deleted mailboxes in your organization.
 
-  ```
+  ```PowerShell
   $dbs = Get-MailboxDatabase
   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "SoftDeleted"} | Format-Table DisplayName,Database,DisconnectDate
   ```

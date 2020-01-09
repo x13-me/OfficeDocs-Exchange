@@ -45,6 +45,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example deletes a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Remove-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
