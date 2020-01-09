@@ -16,14 +16,16 @@ title: Restore a deleted public folder
 
 # Restore a deleted public folder
 
-The public folders deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. The folders are preserved here until the time retention period is over. Any folders preserved in the public folder dumpster can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
+In some cases, you can restore a public folder that has been deleted.
+
+Public folders that have been deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. The folders are preserved here until the time retention period is over. Any folders preserved in the public folder dumpster can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
 
 > [!NOTE]
-> The folders in the dumpster are permanently deleted after the retention period is over. Such folders cannot be restored.
+> The folders in the dumpster are permanently deleted after the retention period is over. After a public folder is permanently deleted, it cannot be restored.
 
 ## Permissions required
 
-The user restoring the public folder must have the “Public Folders” role assigned. This role is assigned by default to users present in the “Organization Management” role group.
+The user restoring the public folder must have the "Public Folders" role assigned. This role is assigned by default to users present in the "Organization Management" role group.
 
 ## Restore a deleted public folder
 
@@ -37,7 +39,7 @@ The user restoring the public folder must have the “Public Folders” role ass
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.FolderClass -ne "$null"}
     ```
 
-    You can also search for specific folders. For example, the following command searches for a deleted public folder that was named Marketing:
+    You can also search for specific folders. For example, the following command searches for a deleted public folder that was named `Marketing`:
 
     ```PowerShell
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -like "Marketing"}
@@ -61,9 +63,9 @@ The user restoring the public folder must have the “Public Folders” role ass
 
 Deleting a folder also deletes all of its subfolders. Likewise, restoring a folder also restores all of its subfolders.
 
-Example 2:
+You can also restore only one subfolder.
 
-You can restore a specific subfolder. The following command restores `Subfolder1` under `\Parent1`:
+For example, the following command restores `Subfolder1` under `\Parent1`:
 
 ```PowerShell
 $pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Subfolder1"};Set-PublicFolder $pf.identity -Path \Parent1
@@ -80,4 +82,4 @@ When deleting a public calendar folder, a user sees the following options:
 If the user selected "Yes", the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
 > [!NOTE]
-> Using Outlook to restore deleted public folders is not recommended because it truncates the name of the public folder. This issue is under investigation and this article will be updated when there is a fix available.
+> Using Outlook to restore deleted public folders is not recommended because it truncates the name of the public folder. This issue is under investigation and this article will be updated when a fix is available.
