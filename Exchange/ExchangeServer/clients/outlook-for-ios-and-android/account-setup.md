@@ -52,7 +52,7 @@ If you're using Microsoft Intune as your mobile device management provider, the 
 
 8. Choose **Configuration Settings**. On the **Configuration** blade, select **Use configuration designer** for the **Configuration settings format**. The key value pairs used in this section are defined in the section [Key value pairs](account-setup.md#kvp).
 
-9. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
+9. If you want to deploy account setup configuration, select **Yes** for **Configure email account settings** and configure appropriately:
 
     - For **Authentication type**, select **Basic authentication**. This is required for on-premises accounts that do not leverage hybrid modern authentication.
 
