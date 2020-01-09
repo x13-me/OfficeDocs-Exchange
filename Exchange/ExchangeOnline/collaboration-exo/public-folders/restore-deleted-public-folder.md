@@ -59,7 +59,7 @@ The user restoring the public folder must have the “Public Folders” role ass
     Set-PublicFolder -Identity \NON_IPM_SUBTREE\DUMPSTER_ROOT\DUMPSTER_EXTEND\RESERVED_1\RESERVED_1\9f32c468-4bc2-42aa-b979-16a057394b2f\PF1 -Path \
     ```
 
-### Restore a secific subfolder
+### Restore a specific subfolder
 
 Deleting a folder also deletes all of its subfolders. Likewise, restoring a folder also restores all of its subfolders.
 
@@ -75,7 +75,7 @@ $pf=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -eq "Sub
 
 When deleting a public calendar folder, a user sees the following options:
 
-![Delete calendar dialog box](../../media\delete-public-calendar-folder.png)
+![Delete calendar dialog box](../../media/delete-public-calendar-folder.png)
 
 If the user selected “Yes”, the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
