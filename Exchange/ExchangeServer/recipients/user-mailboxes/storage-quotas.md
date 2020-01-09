@@ -63,13 +63,13 @@ This example sets the issue warning, prohibit send, and prohibit send and receiv
 > [!NOTE]
 > To ensure that the custom settings for the mailbox are used rather than the mailbox database defaults, you must set the _UseDatabaseQuotaDefaults_ parameter to `$false`.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
 ```
 
 This example sets the issue warning, prohibit send, and prohibit send and receive quotas for Ayla Kol's mailbox to 900 megabytes (MB), 950 MB, and 1 GB respectively, and configures the mailbox to use custom settings.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
 ```
 
@@ -93,6 +93,6 @@ Or
 
 In the Exchange Management Shell, replace \<Identity\> with the name, email address or alias of the mailbox, and run the following command:
 
-```
+```PowerShell
 Get-Mailbox <Identity> | Format-List IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
 ```

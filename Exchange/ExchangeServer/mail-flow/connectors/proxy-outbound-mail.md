@@ -59,13 +59,13 @@ For information about how to open the Exchange Management Shell, see [Open the E
 
 - To configure an existing Send connector to proxy outbound mail, run the following command:
 
-  ```
+  ```PowerShell
   Set-SendConnector <Send connector identity>  -FrontEndProxyEnabled $true
   ```
 
     This example configures the existing Send connector named "Contoso.com Outbound" to proxy outbound mail.
 
-  ```
+  ```PowerShell
   Set-SendConnector "Contoso.com Outbound" -FrontendProxyEnabled $true
   ```
 
@@ -77,7 +77,7 @@ To verify that a Send connector is configured for outbound proxy, perform either
 
 - In the Exchange Management Shell, run the following command:
 
-  ```
+  ```PowerShell
   Get-SendConnector | Format-Table -Auto Name,FrontEndProxyEnabled
   ```
 

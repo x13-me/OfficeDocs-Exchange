@@ -51,6 +51,6 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example disables Unified Messaging and voice mail for the user tonysmith@contoso.com, but keeps the UM mailbox settings.
 
-```
+```PowerShell
 Disable-UMMailbox -Identity tonysmith@contoso.com -KeepProperties $True
 ```

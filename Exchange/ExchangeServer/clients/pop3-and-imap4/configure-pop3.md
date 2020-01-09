@@ -93,13 +93,13 @@ You can perform this step by using the Windows Services console, or the Exchange
 
 1. Run the following command to start the POP3 services:
 
-   ```
+   ```powershell
    Start-Service MSExchangePOP3; Start-Service MSExchangePOP3BE
    ```
 
 2. Run the following command to configure the POP3 services to start automatically:
 
-   ```
+   ```powershell
    Set-Service MSExchangePOP3 -StartupType Automatic; Set-Service MSExchangePOP3BE -StartupType Automatic
    ```
 
@@ -113,7 +113,7 @@ To verify that you've successfully started the POP3 services, use either of the 
 
 - In the Exchange Management Shell, run the following command to verify that the POP3 services are running:
 
-  ```
+  ```powershell
   Get-Service MSExchangePOP3; Get-Service MSExchangePOP3BE
   ```
 
@@ -121,7 +121,7 @@ To verify that you've successfully started the POP3 services, use either of the 
 
 To configure the POP3 settings for external clients, use the following syntax:
 
-```
+```powershell
 Set-PopSettings -ExternalConnectionSettings "<FQDN1>:<TCPPort1>:<SSL | TLS | blank>", "<FQDN2>:<TCPPort2>:<SSL | TLS | blank>"...  -X509CertificateName <FQDN> [-SSLBindings "<IPv4Orv6Address1>:<TCPPort1>","<IPv4Orv6Address2>:<TCPPort2>"...] [-UnencryptedOrTLSBindings "<IPv4Orv6Address1>:<TCPPort1>","<IPv4Orv6Address2>:<TCPPort2>"...]
 ```
 
@@ -137,7 +137,7 @@ This example allows configures the following settings for external POP3 connecti
 
 - **FQDN used for encryption**: mail.contoso.com. This value identifies the certificate that matches or contains the POP3 server FQDN.
 
-```
+```powershell
 Set-PopSettings -ExternalConnectionSettings "mail.contoso.com:995:SSL","mail.contoso.com:110:TLS" -X509CertificateName mail.contoso.com
 ```
 
@@ -157,7 +157,7 @@ Set-PopSettings -ExternalConnectionSettings "mail.contoso.com:995:SSL","mail.con
 
 To verify that you've successfully configured the POP3 settings for external clients, run the following command in the Exchange Management Shell and verify the settings:
 
-```
+```powershell
 Get-PopSettings | Format-List *ConnectionSettings,*Bindings,X509CertificateName
 ```
 
@@ -179,7 +179,7 @@ After you enable and configure POP3, you need to restart the POP3 services on th
 
 Run the following command to restart the POP3 services.
 
-```
+```powershell
 Restart-Service MSExchangePOP3; Restart-Service MSExchangePOP3BE
 ```
 
@@ -187,7 +187,7 @@ For more information about this cmdlet, see [Restart-Service](https://go.microso
 
 To verify that you've successfully restarted the POP3 services, run the following command:
 
-```
+```powershell
 Get-Service MSExchangePOP3; Get-Service MSExchangePOP3BE
 ```
 

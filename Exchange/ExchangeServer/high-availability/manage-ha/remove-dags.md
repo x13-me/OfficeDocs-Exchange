@@ -45,7 +45,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 This example removes the DAG DAG1.
 
-```
+```powershell
 Remove-DatabaseAvailabilityGroup -Identity DAG1
 ```
 
@@ -57,7 +57,7 @@ To verify that you've successfully removed the DAG, do one of the following:
 
 - In the Exchange Management Shell, run the following command to see if the DAG still exists:
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroup <DAGName>
   ```
 

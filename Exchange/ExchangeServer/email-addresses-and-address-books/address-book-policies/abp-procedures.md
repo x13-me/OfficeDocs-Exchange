@@ -36,19 +36,19 @@ Address book policies (ABPs) allow you to segment users into specific groups to 
 
 To view ABPs, use this syntax:
 
-```
+```PowerShell
 Get-AddressBookPolicy [-Identity <ABPIdentity>]
 ```
 
 This example returns a summary list of all ABPs in the organization:
 
-```
+```PowerShell
 Get-AddressBookPolicy
 ```
 
 This example returns detailed information for the ABP named All Fabrikam ABP.
 
-```
+```PowerShell
 Get-AddressBookPolicy -Identity "All Fabrikam ABP" | Format-List
 ```
 
@@ -62,7 +62,7 @@ An ABP requires one global address list (GAL), one offline address book (OAB), o
 
 To create an ABP, use this syntax:
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "<Unique Name>" -GlobalAddressList "<GAL>" -OfflineAddressBook "<OAB>" -RoomList "<RoomList>" -AddressLists "<AddressList1>","<AddressList2>"...
 ```
 
@@ -76,7 +76,7 @@ This example creates an ABP named All Fabrikam ABP with the these settings:
 
 - **Address lists**: All Fabrikam Mailboxes, All Fabrikam DLs, and All Fabrikam Contacts
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "All Fabrikam ABP" -GlobalAddressList "\All Fabrikam" -OfflineAddressBook \Fabrikam-All-OAB -RoomList "\All Fabrikam Rooms" -AddressLists "\All Fabrikam Mailboxes","\All Fabrikam DLs","\All Fabrikam Contacts"
 ```
 
@@ -88,13 +88,13 @@ To verify that you've successfully created an ABP, use either of these procedure
 
 - Run this command in the Exchange Management Shell to verify that the ABP is listed:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy
   ```
 
 - Replace _\<ABPIdentity\>_ with the name of the ABP, and run this command in the Exchange Management Shell to verify the property values:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
   ```
 
@@ -106,7 +106,7 @@ You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The sett
 
     This example modifies the ABP named "All Fabrikam ABP" by replacing the OAB with the specified OAB.
 
-  ```
+  ```PowerShell
   Set-AddressBookPolicy -Identity "All Fabrikam ABP" -OfflineAddressBook \Fabrikam-OAB-2
   ```
 
@@ -114,7 +114,7 @@ You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The sett
 
     This example replaces the existing address lists in the ABP named Government Agency A with the specified address lists.
 
-  ```
+  ```PowerShell
   Set-AddressBookPolicy -Identity "Government Agency A" -AddressLists "GovernmentAgencyA-Atlanta","GovernmentAgencyA-Moscow"
   ```
 
@@ -122,7 +122,7 @@ You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The sett
 
     This example adds the address list named Contoso-Chicago to the ABP named ABP Contoso, which is already configured to use the address list named Contoso-Seattle.
 
-  ```
+  ```PowerShell
   Set-AddressBookPolicy -Identity "ABP Contoso" -AddressLists "Contoso-Chicago","Contoso-Seattle"
   ```
 
@@ -130,7 +130,7 @@ You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The sett
 
     For example, the ABP named ABP Fabrikam uses the address lists named Fabrikam-HR and Fabrikam-Finance. To remove the Fabrikam-HR address list, specify only the Fabrikam-Finance address list.
 
-  ```
+  ```PowerShell
   Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
   ```
 
@@ -140,7 +140,7 @@ For detailed syntax and parameter information, see [Set-AddressBookPolicy](https
 
 To verify that you've successfully modify an ABP, replace _\<ABPIdentity\>_ with the name of the ABP, and run this command in the Exchange Management Shell to verify the property values:
 
-```
+```PowerShell
 Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
 ```
 
@@ -158,13 +158,13 @@ Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
 
 To remove an ABP, use this syntax:
 
-```
+```PowerShell
 Remove-AddressBookPolicy -Identity <ABPIdentity>
 ```
 
 This example removes the ABP named ABP_TailspinToys.
 
-```
+```PowerShell
 Remove-AddressBookPolicy -Identity "ABP_TailspinToys"
 ```
 
@@ -176,13 +176,13 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
 - Run this command in the Exchange Management Shell to verify that the ABP isn't listed:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy
   ```
 
 - Replace _\<ABPIdentity\>_ with the name of the ABP, and run this command to confirm that an error is returned:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy -Identity "<ABPIdentity>"
   ```
 
@@ -226,13 +226,13 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
 To assign an ABP to a mailbox, use this syntax:
 
-```
+```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -AddressBookPolicy <ABPIdentity> or $null
 ```
 
 This example assigns the ABP named All Fabrikam to mailbox joe@fabrikam.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity joe@fabrikam.com -AddressBookPolicy "All Fabrikam"
 ```
 
@@ -284,13 +284,13 @@ You can use the **Get-Mailbox** or **Get-Content** cmdlets to identify the user 
 
 This example assigns the ABP named ABP_EngineeringDepartment to all user mailboxes where the `CustomAttribute11` attribute contains the value Engineering Department.
 
-```
+```PowerShell
 Get-Mailbox -Filter "RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'" | Set-Mailbox -AddressBookPolicy "ABP_EngineeringDepartment"
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to assign the same ABP to the specified user mailboxes.
 
-```
+```PowerShell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-Mailbox $_ -AddressBookPolicy "ABP_EngineeringDepartment"}
 ```
 
@@ -306,25 +306,25 @@ To verify that you've successfully assigned an ABP to a mailbox, do any of these
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
-  ```
+  ```PowerShell
   Get-Mailbox -Identity "<MailboxIdentity>" | Format-List AddressBookPolicy
   ```
 
 - In the Exchange Management Shell, use the same filter that you used to identify the mailboxes. For example:
 
-  ```
+  ```PowerShell
   Get-Mailbox -Filter "RecipientType -eq 'UserMailbox' -and CustomAttribute11 -like '*Engineering Department'" | Format-Table -Auto Name,EmailAddress,AddressBookPolicy
   ```
 
 - In the Exchange Management Shell, replace _\<ABPIdentity\>_ with the name of the ABP, and run this command to get the **DistinguishedName** value:
 
-  ```
+  ```PowerShell
   Get-AddressBookPolicy -Identity <ABPIdentity> | Format-List DistinguishedName
   ```
 
   Then, use the **DistinguishedName** value of the ABP in this command to show all mailboxes where the ABP is assigned:
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "AddressBookPolicy -eq '<DistinguishedName>'"
   ```
 
@@ -340,7 +340,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 To install the ABP Routing Agent on the local Mailbox server, run this command on every Mailbox server in the organization.
 
-```
+```PowerShell
 Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
 ```
 
@@ -352,7 +352,7 @@ For detailed syntax and parameter information, see [Install-TransportAgent](http
 
 To enable the ABP Routing Agent on the local Mailbox server, run this command on every Mailbox server in the organization.
 
-```
+```PowerShell
 Enable-TransportAgent "ABP Routing Agent"
 ```
 
@@ -362,7 +362,7 @@ For detailed syntax and parameter information, see [Enable-TransportAgent](https
 
 To restart the Transport service, run this command on every Mailbox server in the organization.
 
-```
+```PowerShell
 Restart-Service MSExchangeTransport
 ```
 
@@ -372,7 +372,7 @@ For detailed syntax and parameter information, see [Get-TransportAgent](https://
 
 To enable ABP routing globally in the Exchange organization, run this command once on any Mailbox server:
 
-```
+```PowerShell
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
@@ -382,19 +382,19 @@ For detailed syntax and parameter information, see [Set-TransportConfig](https:/
 
 1. Run this command once on any Mailbox server to globally disable ABP routing:
 
-   ```
+   ```PowerShell
    Set-TransportConfig -AddressBookPolicyRoutingEnabled $false
    ```
 
 2. Disable the ABP Routing Agent by running this command on every Mailbox server where the agent is installed:
 
-   ```
+   ```PowerShell
    Disable-TransportAgent "ABP Routing Agent"
    ```
 
 3. Run this command on every Mailbox server where the agent is installed:
 
-   ```
+   ```PowerShell
    Restart-Service MSExchangeTransport
    ```
 
@@ -404,13 +404,13 @@ To verify that you've successfully installed and configured the ABP Routing Agen
 
 - Run this command on a Mailbox server to verify that ABP routing is enabled for the organization:
 
-  ```
+  ```PowerShell
   Get-TransportConfig | Format-List AddressBookPolicyRoutingEnabled
   ```
 
 - Run this command on every Mailbox server to verify that the ABP Routing Agent is enabled:
 
-  ```
+  ```PowerShell
   Get-TransportAgent "ABP Routing Agent"
   ```
 

@@ -51,13 +51,13 @@ If you want external users to send mail to this public folder, make sure you fol
 
 This example mail-enables the public folder Help Desk.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Help Desk"
 ```
 
 This example mail-enables the public folder Reports under the Marketing public folder, but hides the folder from address lists.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEnabled $True
 ```
 
@@ -69,7 +69,7 @@ For detailed syntax and parameter information, see [Enable-MailPublicFolder](htt
 
 This example mail-disables the public folder Marketing\Reports.
 
-```
+```PowerShell
 Disable-MailPublicFolder -Identity "\Marketing\Reports"
 ```
 
@@ -96,7 +96,7 @@ You can use either Outlook or the Exchange Management Shell to set permissions o
 
 This example sets the `CreateItems` permission for the Anonymous account on the "Customer Feedback" mail-enabled public folder.
 
-```
+```PowerShell
 Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems -User Anonymous
 
 ```

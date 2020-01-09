@@ -47,6 +47,6 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example disables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $false
 ```
