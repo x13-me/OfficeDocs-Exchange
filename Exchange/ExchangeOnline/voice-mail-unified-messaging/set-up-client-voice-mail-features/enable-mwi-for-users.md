@@ -51,6 +51,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example enables Message Waiting Indicator for users associated with the UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMessageWaitingIndicator $true
 ```

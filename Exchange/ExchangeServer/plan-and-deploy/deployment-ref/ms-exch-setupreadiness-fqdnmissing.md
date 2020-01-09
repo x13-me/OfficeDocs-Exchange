@@ -24,7 +24,7 @@ To resolve this issue, add a primary DNS suffix on the computer and then run Set
 
 1. Replace \<Value\> with the DNS suffix you want to use (for example, contoso.com), and run the following command in Winows Powershell on the target server:
 
-```
+```powershell
 Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name 'NV Domain' -Value <Value>
 ```
 

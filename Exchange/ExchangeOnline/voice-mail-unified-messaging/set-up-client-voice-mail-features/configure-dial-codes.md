@@ -75,6 +75,6 @@ This example configures a UM dial plan named `yUMDialPlan` with an in-country or
 
 - 1 for the country or region code
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -OutsideLineAccessCode 9 -InternationalAccessCode 011 -NationalNumberPrefix 1 CountryorRegionCode 1 -InCountryOrRegionNumberFormat 1425xxxxxxx -InternationalNumberFormat 441425xxxxxxx
 ```

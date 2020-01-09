@@ -47,6 +47,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example disables a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Disable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```

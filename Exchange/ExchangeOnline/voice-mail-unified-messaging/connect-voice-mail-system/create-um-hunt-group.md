@@ -67,12 +67,12 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 This example creates a UM hunt group named `MyUMHuntGroup` that has a pilot identifier of 12345.
 
-```
+```PowerShell
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 12345 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
 
 This example creates a UM hunt group named `MyUMHuntGroup` that has multiple pilot identifiers.
 
-```
+```PowerShell
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```

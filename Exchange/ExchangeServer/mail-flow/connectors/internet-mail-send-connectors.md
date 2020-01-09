@@ -75,7 +75,7 @@ After you create the Send connector, it appears in the Send connector list. To c
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    New-SendConnector -Name <Name> -AddressSpaces * -Internet [-SourceTransportServer <fqdn1>,<fqdn2>...]
    ```
 
@@ -91,7 +91,7 @@ After you create the Send connector, it appears in the Send connector list. To c
 
    - The Send connector isn't scoped to the local Active Directory site. We aren't using the _IsScopedConnector_ parameter, and the default value is `$false`.
 
-   ```
+   ```PowerShell
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 

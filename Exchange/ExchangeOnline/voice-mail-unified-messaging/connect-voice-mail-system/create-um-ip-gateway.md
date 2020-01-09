@@ -57,18 +57,18 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example creates a UM IP gateway named `yUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an IP address of 10.10.10.1.
 
-```
+```PowerShell
 New-UMIPGateway -Name MyUMIPGateway -Address 10.10.10.1
 ```
 
 This example creates a UM IP gateway named `MyUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an FQDN of MyUMIPGateway.contoso.com and listens on port 5061.
 
-```
+```PowerShell
 New-UMIPGateway -Name MyUMIPGateway -Address "MyUMIPGateway.contoso.com" -Port 5061
 ```
 
 This example creates a UM IP gateway named `yUMIPGateway` and prevents the UM IP gateway from accepting incoming calls or sending outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses.
 
-```
+```PowerShell
 New-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```

@@ -45,7 +45,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example converts the shared mailbox, MarketingDept1 to a user mailbox.
 
-```
+```PowerShell
 Set-Mailbox MarketingDept1 -Type Regular
 ```
 
@@ -65,7 +65,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 To verify that you have successfully converted the mailbox, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-Mailbox -Identity MarketingDept1 | Format-List RecipientTypeDetails
 ```
 

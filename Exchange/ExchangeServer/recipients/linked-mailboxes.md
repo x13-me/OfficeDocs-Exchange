@@ -101,7 +101,7 @@ The following figure illustrates the relationship between the linked user accoun
 
 This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resource forest. The FABRIKAM domain is in the account forest. The administrator account FABRIKAM \administrator is used to access the linked domain controller.
 
-```
+```PowerShell
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
@@ -115,7 +115,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 - In the Exchange Management Shell, run the following command to display information about the new linked mailbox.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
   ```
 
@@ -342,19 +342,19 @@ Here are some examples of using the Exchange Management Shell to change linked m
 
 This example uses the **Get-Mailbox** command to find all the linked mailboxes in the organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'"
 ```
 
 This example uses the **Set-Mailbox** command to limit the number of recipients allowed on the To:, Cc:, and Bcc: lines of an email message to 500. This limit applies to all linked mailboxes in the organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | Set-Mailbox -RecipientLimits 500
 ```
 
 This example changes the linked master account in the fabrikam.com account forest that is associated with a linked mailbox in an Exchange forest.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
 ```
 
@@ -366,12 +366,12 @@ To verify that you have successfully changed properties for a linked mailbox, do
 
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple linked mailboxes. In the example above where the recipient limit was changed, running the following command will verify the new value.
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'LinkedMailbox'" | Format-List Name,RecipientLimits
   ```
 
     For the example above where the linked master account was changed, run the following command to verify the new value.
 
-  ```
+  ```PowerShell
   Get-Mailbox "Ayla Kol" | Format-List LinkedMasterAccount
   ```

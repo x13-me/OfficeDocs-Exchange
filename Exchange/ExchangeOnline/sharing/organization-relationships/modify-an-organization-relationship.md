@@ -88,7 +88,7 @@ To learn more about organization relationships, see [Organization relationships 
 
 - This example adds the domain name service.contoso.com to the organization relationship Contoso.
 
-  ```
+  ```PowerShell
   $domains = (Get-OrganizationRelationship Contoso).DomainNames
   $domains += 'service.contoso.com'
   Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
@@ -96,13 +96,13 @@ To learn more about organization relationships, see [Organization relationships 
 
 - This example disables the organization relationship Contoso.
 
-  ```
+  ```PowerShell
   Set-OrganizationRelationship -Identity Contoso -Enabled $false
   ```
 
 - This example enables calendar availability information access for the organization relationship WoodgroveBank and sets the access level to `AvailabilityOnly` (calendar free/busy information with time only).
 
-  ```
+  ```PowerShell
   Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
 
   ```
@@ -113,7 +113,7 @@ For detailed syntax and parameter information, see [Get-OrganizationRelationship
 
 To verify that you have successfully updated the organization relationship, run the following command and verify the organization relationship information.
 
-```
+```PowerShell
 Get-OrganizationRelationship | format-list
 ```
 

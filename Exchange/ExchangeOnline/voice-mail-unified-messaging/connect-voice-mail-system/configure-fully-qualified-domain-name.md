@@ -54,12 +54,12 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example configures a UM IP gateway named `MyUMIPGateway` with an FQDN named voipgateway.contoso.com.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com
 ```
 
 This example configures a UM IP gateway named `MySBC` with an FQDN of sbc.contoso.com and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MySBC -Address sbc.contoso.com -Port 5061
 ```

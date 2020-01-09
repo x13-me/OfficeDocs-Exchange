@@ -108,7 +108,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 To create the same Receive connector in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <ConnectorName> -TransportRole FrontendTransport -Custom -Bindings <LocalIPAddresses>:25 -RemoteIpRanges <RemoteIPAddresses>
 ```
 
@@ -124,7 +124,7 @@ This example creates a new Receive connector with the following configuration op
 
 - **Remote IP addresses that are allowed to use this connector**: 192.168.5.10 and 192.168.5.11
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Anonymous Relay" -TransportRole FrontendTransport -Custom -Bindings 0.0.0.0:25 -RemoteIpRanges 192.168.5.10,192.168.5.11
 ```
 
@@ -150,13 +150,13 @@ Run the following commands in the Exchange Management Shell:
 
 1.
 
-  ```
+  ```PowerShell
   Set-ReceiveConnector "Anonymous Relay" -PermissionGroups AnonymousUsers
   ```
 
 2.
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector "Anonymous Relay" | Add-ADPermission -User "NT AUTHORITY\ANONYMOUS LOGON" -ExtendedRights "Ms-Exch-SMTP-Accept-Any-Recipient"
   ```
 
@@ -174,7 +174,7 @@ Run the following commands in the Exchange Management Shell:
 
 To perform these same steps in the Exchange Management Shell, run the following command:
 
-```
+```PowerShell
 Set-ReceiveConnector "Anonymous Relay" -AuthMechanism ExternalAuthoritative -PermissionGroups ExchangeServers
 ```
 
@@ -184,19 +184,19 @@ To verify that you've successfully configured anonymous relay, do the following 
 
 - Verify the configuration of the dedicated Receive connector.
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector "Anonymous Relay" | Format-List Enabled,TransportRole,Bindings,RemoteIPRanges
   ```
 
 - Verify the permissions on the dedicated Receive connector.
 
-  ```
+  ```PowerShell
   Get-ADPermission "Anonymous Relay" -User "NT AUTHORITY\ANONYMOUS LOGON" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 
   Or
 
-  ```
+  ```PowerShell
   Get-ADPermission "Anonymous Relay" -User "MS Exchange\Externally Secured Servers" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 

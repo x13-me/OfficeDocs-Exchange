@@ -42,7 +42,7 @@ Here are some factors to consider when deciding the hold feature you should use 
 
 You can easily and quickly place all mailboxes on hold indefinitely or for a specified hold duration using the Exchange Management Shell. This command places all mailboxes on hold with a hold duration of 2555 days (approximately 7 years).
 
-```
+```PowerShell
 Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
 ```
 
@@ -67,23 +67,23 @@ To place more than 500 users on In-Place Hold, use the Exchange Management Shell
 
    Here are some examples of using the **Get-Mailbox** and **Get-Recipient** cmdlets to return a subset of mailboxes based on common user or mailbox properties. These examples assume that relevant mailbox properties (such as _CustomAttributeN_ or _Department_) have been populated.
 
-   ```
+   ```PowerShell
    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
    ```
 
-   ```
+   ```PowerShell
    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
    ```
 
-   ```
+   ```PowerShell
    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
    ```
 
-   ```
+   ```PowerShell
    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
    ```
 
-   ```
+   ```PowerShell
    Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -ne 'DiscoveryMailbox'"
    ```
 

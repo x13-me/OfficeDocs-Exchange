@@ -47,6 +47,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example enables the UM auto attendant named `MyUMAutoAttendant` to answer incoming calls.
 
-```
+```PowerShell
 Enable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```

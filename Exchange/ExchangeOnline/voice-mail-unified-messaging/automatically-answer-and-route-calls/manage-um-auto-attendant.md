@@ -274,13 +274,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MySpeechEnabledAA` to fall back to the `MyDTMFAA` auto attendant, sets the operator's extension to 50100, and enables transfers to this extension number after business hours.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true
 ```
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` that has: Business hours configured as 10:45 to 13:15 (10:45 A.M. to 1:15 P.M.) on Sunday, 09:00 to 17:00 (9:00 A.M. to 5:00 P.M.) on Monday, and 09:00 to 16:30 (9:00 A.M. to 4:30 P.M.) on Saturday; holiday times and their associated greetings configured as "New Year" on January 2, 2013; and "Building Closed for Construction" configured from April 24 through April 28, 2013.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30 -HolidaySchedule "New Year,newyrgrt.wav,1/2/2013","Building Closed for Construction,construction.wav,4/24/2013,4/28/2013"
 ```
 
@@ -288,12 +288,12 @@ Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0
 
 This example returns a formatted list of all UM auto attendants.
 
-```
+```PowerShell
 Get-UMAutoAttendant | Format-List
 ```
 
 This example displays the properties of a UM auto attendant named MyUMAutoAttendant.
 
-```
+```PowerShell
 Get-UMAutoAttendant -Identity MyUMAutoAttendant
 ```

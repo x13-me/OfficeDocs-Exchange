@@ -46,7 +46,7 @@ The following table shows the message throttling options that are available on M
 
 To see the values of these server message throttling settings, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | Format-List MaxConcurrent*,MaxConnection*,Max*OutboundConnections; Write-Host "Mailbox Transport service:" -ForegroundColor yellow; Get-MailboxTransportService | Format-List MaxConcurrent*
 ```
 
@@ -65,7 +65,7 @@ The following table shows the message throttling options that are available on S
 
 To see the values of these Send connector throttling settings, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-SendConnector | Format-List Name,ConnectionInactivityTimeout,SmtpMaxMessagesPerConnection
 ```
 
@@ -87,7 +87,7 @@ The following table shows the message throttling options that are available on R
 
 To see the values of these Receive connector message throttling settings, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ReceiveConnector | Format-List Name,Connection*,MaxInbound*,MessageRate*,TarpitInterval
 ```
 
