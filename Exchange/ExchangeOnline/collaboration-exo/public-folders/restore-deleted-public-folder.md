@@ -16,14 +16,12 @@ title: Restore a deleted public folder
 
 # Restore a deleted public folder
 
- **Summary**: This article describes how to restore a public folder in Exchange Online that was previously deleted.
-
-The public folders deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. The folders are preserved here until the time retention period is over. Any folders preserved in the public folder dumpster can be restored using EXO PowerShell. Restoring the public folder will restore all the sub-folders and items present in the folder.
+The public folders deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. The folders are preserved here until the time retention period is over. Any folders preserved in the public folder dumpster can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
 
 > [!NOTE]
 > The folders in the dumpster are permanently deleted after the retention period is over. Such folders cannot be restored.
 
-## What do you need to know before you begin?
+## Permissions required
 
 The user restoring the public folder must have the “Public Folders” role assigned. This role is assigned by default to users present in the “Organization Management” role group.
 
@@ -39,7 +37,7 @@ The user restoring the public folder must have the “Public Folders” role ass
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.FolderClass -ne "$null"}
     ```
 
-    You can also search for specific folders. For example, the following command searches for a deleted public folder that was named Marketing.
+    You can also search for specific folders. For example, the following command searches for a deleted public folder that was named Marketing:
 
     ```PowerShell
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -like "Marketing"}
@@ -48,7 +46,7 @@ The user restoring the public folder must have the “Public Folders” role ass
 1. Use the following command to restore the desired public folder:
 
     ```PowerShell
-    Set-PublicFolder -Identity “Full path of folder to be restored” -Path “Parent folder path where folder needs to be restored”
+    Set-PublicFolder -Identity "Full path of folder to be restored" -Path "Parent folder path where folder needs to be restored"
     ```
 
     Example 1:
@@ -77,7 +75,7 @@ When deleting a public calendar folder, a user sees the following options:
 
 ![Delete calendar dialog box](../../media/delete-public-calendar-folder.png)
 
-If the user selected “Yes”, the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
+If the user selected "Yes", the items were deleted. In this case, if you restore the folder, the public folder will be restored, but the items cannot be recovered.
 
 > [!NOTE]
 > Using Outlook to restore deleted public folders is not recommended because it truncates the public folder name and retains only the first name of the public folder. This issue is under investigation and this article will be updated when there is a fix available.
