@@ -131,7 +131,7 @@ A local move request for an individual mailbox uses the **New-MailboxMove** cmdl
 
 To create a local move request for an individual mailbox, use this syntax:
 
-```
+```PowerShell
 New-MoveRequest "<DescriptiveName>"] -Identity <MailboxIdentity> [<-ArchiveOnly | -PrimaryOnly>] [-TargetDatabase <DatabaseIdentity>] [-ArchiveTargetDatabase<DatabaseIdentity>] [-Priority <PriorityValue>] [-BadItemLimit <Value>] [-AcceptLargeDataLoss]
 ```
 
@@ -149,19 +149,19 @@ This example creates a new local move request with these settings:
 
 - **Bad item limit**: 10 (the default value in the Exchange Management Shell is 0). Because the value is less than 51, we don't need to use the `AcceptLargeDataLoss` switch.
 
-```
+```PowerShell
 New-MoveRequest -Identity agruber@contoso.com -TargetDatabase "MBX 02" -ArchiveTargetDatabase "MBX 03" -BadItemLimit 10
 ```
 
 This example uses similar settings, but only moves Angela's primary mailbox.
 
-```
+```PowerShell
 New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly-TargetDatabase "MBX 02" -BadItemLimit 10
 ```
 
 This example uses similar settings, but only moves Angela's archive mailbox.
 
-```
+```PowerShell
 New-MoveRequest -Identity agruber@contoso.com -ArchiveOnly -ArchiveTargetDatabase "MBX 03" -BadItemLimit 10
 ```
 
@@ -189,7 +189,7 @@ This example creates a batch move request with these settings:
 
 - **Bad item limit**: 51 (the default value in the Exchange Management Shell is 0), so we also need to use the _AcceptLargeDataLoss_ switch.
 
-```
+```PowerShell
 Get-Mailbox -Database "MBX DB01" | New-MoveRequest -BatchName "MBX DB01 to MBX DB02" -TargetDatabase "MBX DB02" -Priority High -BadItemLimit 51 -AcceptLargeDataLoss
 ```
 
@@ -203,7 +203,7 @@ For more information about the CSV file requirements for local move requests, se
 
 To create a migration batch, use this syntax:
 
-```
+```PowerShell
 New-MigrationBatch -Local [-AutoStart] [-AutoComplete] -Name "<MigrationBatchName>" -CSVData ([Byte[]](Get-Content -Encoding Byte -Path "<PathAndFileName>" -ReadCount 0)) [<-ArchiveOnly | -PrimaryOnly>] [-TargetDatabases "<MailboxDatabase1>","<MailboxDatabase1>"... [-TargetArchiveDatabases "<MailboxDatabase1>","<MailboxDatabase1>"...] [-Priority <PriorityValue>] [-BadItemLimit <Value>] [-AcceptLargeDataLoss]
 ```
 
@@ -227,7 +227,7 @@ This example creates a migration batch with these settings:
 
 - **Bad item limit**: 10 (the default value in the Exchange Management Shell is 0). Because the value is less than 51, we don't need to use the `AcceptLargeDataLoss` switch.
 
-```
+```PowerShell
 New-MigrationBatch -Local -AutoStart -AutoComplete -Name "LocalMove 01" -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove 01.csv")) -TargetDatabases "MBX DB02" -BadItemLimit 10
 ```
 
@@ -245,13 +245,13 @@ To verify that you've successfully created a local move request, do any of these
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the name, email address, or alias of the mailbox, and run this command to verify the basic property values:
 
-  ```
+  ```PowerShell
   Get-MoveRequest -Identity <MailboxIdentity> | Format-List DisplayName,Alias,Status,*database*
   ```
 
 - In the Exchange Management Shell, replace _\<BatchName\>_ with the batch name value of the move request, and run this command to verify the basic property values:
 
-  ```
+  ```PowerShell
   Get-MoveRequest -BatchName <BatchName> | Format-List DisplayName,Alias,Status,*database*
   ```
 
@@ -259,13 +259,13 @@ To verify that you've successfully created a local move request, do any of these
 
 - If you created the move request in the EAC, replace _\<BatchName\>_ with the batch name value you specified, and run this command in the Exchange Management Shell to verify summary information about all mailboxes in the move:
 
-  ```
+  ```PowerShell
   Get-MigrationUserStatistics -BatchId <BatchName>
   ```
 
 - If you created the move request in the EAC, replace _\<EmailAddress\>_ with the email address of the moved mailbox, and run this command to see detailed information about the specified mailbox:
 
-  ```
+  ```PowerShell
   Get-MigrationUserStatistics -Identity <EmailAddress> | Format-List
   ```
 
@@ -279,7 +279,7 @@ For an example of how to use the Exchange Management Shell to display a migratio
 
 This example configures the migration endpoint, and then creates a cross-forest batch move from the source forest to the target forest using a .csv file.
 
-```
+```PowerShell
 New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith)
 $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
 New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
@@ -301,7 +301,7 @@ To verify that you have successfully completed your migration, do the following:
 
 - From the Exchange Management Shell, run the following command to retrieve mailbox move information.
 
-  ```
+  ```PowerShell
   Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   ```
 

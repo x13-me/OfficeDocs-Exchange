@@ -122,13 +122,13 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
 
 2. To install the Exchange management tools from the command line, use the following syntax in elevated command prompt (a Command Prompt window you opened by selecting **Run as administrator**):
 
-   ```
+   ```console
    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
    ```
 
    This example uses the Exchange Setup files on drive E: to install the management tools on the local server
 
-   ```
+   ```console
    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools
    ```
 

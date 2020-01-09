@@ -43,6 +43,6 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example prevents Tony Smith from receiving voice calls from callers who aren't UM-enabled.
 
-```
+```PowerShell
 Set UMMailbox -Identity tony@contoso.com -AllowUMCallsFromNonUsers None
 ```

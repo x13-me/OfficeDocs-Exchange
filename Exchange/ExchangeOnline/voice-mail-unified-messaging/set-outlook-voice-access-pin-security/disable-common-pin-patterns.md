@@ -60,6 +60,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from using PINs that contain common patterns.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $false
 ```

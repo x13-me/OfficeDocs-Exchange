@@ -84,7 +84,7 @@ The following table describes the version and location combinations of user mail
 
    For Exchange 2010, run the following command. This command excludes the mailbox database from the mailbox provisioning load balancer. This prevents new mailboxes from being added automatically to this database.
 
-   ```
+   ```PowerShell
    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
    ```
 
@@ -93,17 +93,17 @@ The following table describes the version and location combinations of user mail
 
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access.
 
-   ```
+   ```PowerShell
    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
    ```
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
    ```
 
 4. For Exchange 2010, enable AutoDiscover to return the proxy public folder mailboxes.
 
-   ```
+   ```PowerShell
    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
    ```
 
@@ -128,7 +128,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
-```
+```PowerShell
 Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile "<sync_summary.csv>"
 ```
 
@@ -145,7 +145,7 @@ Enable the exchange online organization to access the on-premises public folders
 
 Run the following command in **Exchange Online PowerShell**:
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 

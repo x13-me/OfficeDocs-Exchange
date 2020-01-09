@@ -47,7 +47,7 @@ For a list of Exchange Server versions and how to download and upgrade to the la
 
 To view the Exchange version and edition information for all Exchange servers in your organization, run the following command in the Exchange Management Shell:
 
-```
+```powershell
 Get-ExchangeServer | Format-Table -Auto Name,Edition,AdminDisplayVersion
 ```
 

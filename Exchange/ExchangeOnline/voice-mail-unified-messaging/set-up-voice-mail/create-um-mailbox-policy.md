@@ -55,6 +55,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example creates a UM mailbox policy named `MyUMMailboxPolicy` associated with a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 ```

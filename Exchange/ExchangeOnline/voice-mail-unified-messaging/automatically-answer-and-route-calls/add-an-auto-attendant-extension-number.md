@@ -56,6 +56,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` with multiple extension numbers.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -PilotIdentifierList "12345, 72000, 75000"
 ```

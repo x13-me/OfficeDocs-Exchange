@@ -52,12 +52,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example prevents callers who call in to a UM auto attendant named `MyUMAutoAttendant` from sending voice messages.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $false
 ```
 
 This example enables callers who call in to a UM auto attendant named `MyUMAutoAttendant` to send voice messages.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $true
 ```

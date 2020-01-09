@@ -76,11 +76,11 @@ Therefore, a message size must be within the message size limits for both the se
 
 To see the values of these organizational limits, run the following commands in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-TransportConfig | Format-List MaxReceiveSize,MaxSendSize,MaxRecipientEnvelopeLimit
 ```
 
-```
+```PowerShell
 Get-TransportRule | where {($_.MessageSizeOver -ne $null) -or ($_.AttachmentSizeOver -ne $null)} | Format-Table Name,MessageSizeOver,AttachmentSizeOver
 ```
 
@@ -104,7 +104,7 @@ You can assign specific message size limits to the Delivery Agent connectors and
 
 To see the values of these connector limits, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ReceiveConnector | Format-Table Name,Max*Size,MaxRecipientsPerMessage; Get-SendConnector | Format-Table Name,MaxMessageSize; Get-AdSiteLink | Format-Table Name,MaxMessageSize; Get-DeliveryAgentConnector | Format-Table Name,MaxMessageSize; Get-ForeignConnector | Format-Table Name,MaxMessageSize
 ```
 
@@ -138,13 +138,13 @@ To see the values of these limits, run the corresponding **Get-** cmdlet for the
 
 For example, to see the limits that are configured on a specific mailbox, run the following command:
 
-```
+```PowerShell
 Get-Mailbox <MailboxIdentity> | Format-List MaxReceiveSize,MaxSendSize,RecipientLimits
 ```
 
 To see the limits that are configured on all user mailboxes, run the following command:
 
-```
+```PowerShell
 $mb= Get-Mailbox -ResultSize unlimited; $mb | where {$_.RecipientTypeDetails -eq 'UserMailbox'} | Format-Table Name,MaxReceiveSize,MaxSendSize,RecipientLimits
 ```
 

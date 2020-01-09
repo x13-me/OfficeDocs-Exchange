@@ -51,6 +51,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example enables ASR on a UM auto attendant named `MySpeechEnabled AA`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -SpeechEnabled $true
 ```

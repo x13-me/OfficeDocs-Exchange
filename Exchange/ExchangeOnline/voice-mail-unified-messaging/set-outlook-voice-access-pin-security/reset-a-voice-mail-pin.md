@@ -66,6 +66,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example resets the voice mail PIN for Tony Smith to 1985848. However, this PIN must be changed when the user first signs in to Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPIN -Identity tonysmith@contoso.com -PIN 1985848 -PinExpired $true
 ```

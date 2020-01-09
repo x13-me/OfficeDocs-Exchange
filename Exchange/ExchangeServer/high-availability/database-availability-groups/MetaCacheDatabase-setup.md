@@ -81,7 +81,7 @@ These DAG parameters are used to calculate the proper MCDB size on your SSD driv
 
 For example:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup testdag1 -AutoDagTotalNumberOfDatabases 50 -AutoDagDatabaseCopiesPerDatabase 4 -AutoDagTotalNumberOfServers 8
 ```
 
@@ -110,7 +110,7 @@ This parameter sets the Active Directory state for the DAG object. Full replicat
 
 **Example**:
 
-```
+```powershell
 Manage-MCDB -DagName TestDag1 -ConfigureMCDBPrerequisite -SSDSizeInBytes 5242880000 -SSDCountPerServer 2
 ```
 
@@ -138,11 +138,11 @@ This command sets the local state on each DAG member to allow/disallow MCDB popu
 
 **Examples**:
 
-```
+```powershell
 Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $true -ServerName "exhs-5046"
 ```
 
-```
+```powershell
 Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $false -ServerName "exhs-5046" -ForceFailover $true
 ```
 
@@ -170,7 +170,7 @@ This command identifies unformatted SSD devices and formats them, and also creat
 
 Example:
 
-```
+```powershell
 Manage-MCDB -DagName TestDag1 -ConfigureMCDBOnServer -ServerName "exhs-4056" -SSDSizeInBytes 5242880000
 ```
 
@@ -182,7 +182,7 @@ After performing the previous three steps (configuring _ConfigureMCDBPrerequisit
 
 You can use the _ServerAllowMCDB_ parameter set to cause fail overs of all DB instances present on a given server. Alternatively, you can use the **Move-ActiveMailboxDatabase** cmdlet to cause individual databases to fail over.
 
-```
+```powershell
 Manage-MCDB.ps1 -DagName TestDag1 -ServerAllowMCDB:$true -ServerName "exhs-5046" -ForceFailover $true
 ```
 

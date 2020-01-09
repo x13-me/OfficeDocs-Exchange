@@ -62,7 +62,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 First, run the following command to find the display names and add-in IDs for all the add-ins for Outlook installed for your organization.
 
-```
+```powershell
 Get-App -OrganizationApp | Format-List DisplayName,AppId
 ```
 
@@ -70,25 +70,25 @@ The **AppId** value is a GUID that uniquely identifies the add-in (for example, 
 
 To disable and hide an add-in from all your users, replace _\<AppId\>_ with the real **AppId** value and run the following command:
 
-```
+```powershell
 Set-App -Identity <AppId> -OrganizationApp -Enabled $false
 ```
 
 To enable an add-in by default, but allow your users to turn it off, replace _\<AppId\>_ with the real **AppId** value and run the following command:
 
-```
+```powershell
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser Enabled
 ```
 
 To disable an add-in by default, but allow your users to turn it on, replace _\<AppId\>_ with the real **AppId** value and run the following command:
 
-```
+```powershell
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser Disabled
 ```
 
 If you want the add-in to be required for your users, replace _\<AppId\>_ with the real **AppId** value and run the following command:
 
-```
+```powershell
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser AlwaysEnabled
 ```
 
@@ -102,7 +102,7 @@ To verify that you've successfully configured an add-in, use either of the follo
 
 - In the Exchange Management Shell, run the following command and verify the values of the **DefaultStateForUser** and **Enabled** properties:
 
-  ```
+  ```powershell
   Get-App -OrganizationApp | Format-List DisplayName,AppId,Enabled,DefaultStateForUser
   ```
 
@@ -112,11 +112,11 @@ To limit the availability of an add-in to specific users, you can't use the EAC.
 
 This example limits the LinkedIn add-in with the hypothetical **AppId** value `ac83a9d5-5af2-446f-956a-c583adc94d5e` to the members of the distribution group named Marketing.
 
-```
+```powershell
 $a = Get-DistributionGroupMember Marketing
 ```
 
-```
+```powershell
 Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
 ```
 
@@ -126,6 +126,6 @@ For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/pow
 
 To verify that you've successfully limited add-in availability to specific users, run the following command in the Exchange Management Shell and verify the value of the **ProvidedTo** and **UserList** properties:
 
-```
+```powershell
 Get-App -OrganizationApp | Format-List DisplayName,AppId,Enabled,DefaultStateForUser,ProvidedTo,UserList
 ```

@@ -63,19 +63,19 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
 To enable the MRS Proxy endpoint, use this syntax:
 
-```
+```PowerShell
 Set-WebServicesVirtualDirectory -Identity "[<Server>\]EWS (Default Web Site)" -MRSProxyEnabled $true
 ```
 
 This example enables the MRS Proxy endpoint in Client Access services on the Mailbox server named EXCH-SRV-01.
 
-```
+```PowerShell
 Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
 ```
 
 This example enables the MRS Proxy endpoint in Client Access services on all Mailbox servers in your Exchange organization.
 
-```
+```PowerShell
 Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 ```
 
@@ -91,7 +91,7 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
 
 - Run this command in the Exchange Management Shell, and verify that the **MRSProxyEnabled** property for the EWS virtual directory has the value `True`:
 
-  ```
+  ```PowerShell
   Get-WebServicesVirtualDirectory | Format-Table -Auto Identity,MRSProxyEnabled
   ```
 
@@ -99,7 +99,7 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
 
   Replace _\<EmailAddress\>_ with the email address of one of the mailboxes that you want to move, and run this command in the Exchange Management Shell:
 
-  ```
+  ```PowerShell
   Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress <EmailAddress> -Credentials (Get-Credential)
   ```
 

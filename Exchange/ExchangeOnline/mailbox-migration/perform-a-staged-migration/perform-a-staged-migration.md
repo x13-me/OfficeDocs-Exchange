@@ -160,7 +160,7 @@ Here's an example of the format for the CSV file. In this example, three on-prem
 
 The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
 
-```
+```CSV
 EmailAddress,Password,ForceChangePassword
 pilarp@contoso.com,Pa$$w0rd,False
 tobyn@contoso.com,Pa$$w0rd,False
