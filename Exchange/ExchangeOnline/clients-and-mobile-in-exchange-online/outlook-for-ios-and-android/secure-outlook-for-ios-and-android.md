@@ -342,4 +342,4 @@ If you want to stop your end users from accessing and installing Outlook add-ins
 - To prevent users from side loading add-ins, remove the My Custom Apps role from them.
 - To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
 
-For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Specify the administrators and users who can install and manage add-ins for Outlook]([https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
+For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
