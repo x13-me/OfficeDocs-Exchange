@@ -63,7 +63,7 @@ The user restoring the public folder must have the `Public Folders` role assigne
 
 ### Restore a specific subfolder
 
-Restoring a folder also restores all of its subfolders, but it is also possible to restore only one subfolder.
+Restoring a folder restores all of its subfolders, but it is also possible to restore only one subfolder.
 
 For example, the following command restores `Subfolder1` under `\Parent1`:
 
