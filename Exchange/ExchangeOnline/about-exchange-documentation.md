@@ -44,4 +44,4 @@ Looking for more than just documentation? Check out these other Exchange resourc
 
 - [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967): Check out this page for support resources for multiple versions of Exchange.
 
-- [Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility): This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities..
+- [Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility): This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.
