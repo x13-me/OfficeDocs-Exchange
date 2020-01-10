@@ -57,7 +57,7 @@ For a batch scored as **Investigate**, approving the migration allows you to com
 
 For a batch scored as **Poor**, approving the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate, but will not approve any migration in the batch with a score of Poor.
 
-If the migration has failed with a grade of **Poor**, it is possible to force the migration to succeed, but this is not recommended. Please contact Microsoft Support for assistance.
+If the migration has failed with a grade of **Poor**, it is not possible to force the migration to succeed. Please contact Microsoft Support for assistance.
 
 ## How to opt in or opt out of using DataConsistencyScore
 
