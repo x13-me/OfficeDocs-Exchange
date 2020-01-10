@@ -69,11 +69,11 @@ Here are three examples of using the Exchange Management Shell to search and pla
 
 This example creates an estimate-only search that searches all public folders in the organization for items sent between January 1, 2015 and June 30, 2015 and that contain the phrase "patent infringement". The search doesn't include any mailboxes. The **Start-MailboxSearch** cmdlet is used to start the estimate-only search.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Northwind Subpoena-All PFs" -AllPublicFolderSources $true -AllSourceMailboxes $false -SearchQuery "patent infringement" -StartDate "01/01/2015" -EndDate "06/30/2015" -TargetMailbox "Discovery Search Mailbox" -EstimateOnly
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Northwind Subpoena-All PFs"
 ```
 
@@ -81,11 +81,11 @@ Start-MailboxSearch "Northwind Subpoena-All PFs"
 
 This example places all content in all public folders on In-Place hold, with an unlimited hold duration. The **Start-MailboxSearch** cmdlet is use to run the search and place the content on hold.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Hold for all PFs" -AllPublicFolderSources $true -AllSourceMailboxes $false -EstimateOnly -InPlaceHoldEnabled $true
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Hold for all PFs"
 ```
 
@@ -93,11 +93,11 @@ Start-MailboxSearch "Hold for all PFs"
 
 This example searches all mailboxes and public folders for any content that contains the words "price list" and "Contoso" and that was sent after January 1, 2015. The **Start-MailboxSearch** cmdlet is use to run the search and copy the search results to the discovery mailbox.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Contoso Litigation" -AllSourceMailboxes $true -AllPublicFolderSources $true -SearchQuery '"price list" AND "contoso"' -StartDate "01/01/2015" -TargetMailbox "Discovery Search Mailbox"
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Contoso Litigation"
 ```
 

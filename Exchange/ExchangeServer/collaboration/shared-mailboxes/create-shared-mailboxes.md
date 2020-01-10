@@ -59,7 +59,7 @@ This example creates the shared mailbox Sales Department and grants Full Access 
 > [!NOTE]
 > This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See [Manage mail-enabled security groups in Exchange Server](../../recipients/mail-enabled-security-groups.md).
 
-```
+```PowerShell
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
 ```
 

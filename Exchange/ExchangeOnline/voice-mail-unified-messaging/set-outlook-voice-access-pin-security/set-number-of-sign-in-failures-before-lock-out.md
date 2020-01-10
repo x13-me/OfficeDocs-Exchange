@@ -53,13 +53,13 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the maximum number sign-in attempts to 10 for UM-enabled users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -MaxLogonAttempts 10
 ```
 
 This example sets the number of sign-in failures before the Outlook Voice Access user's PIN is reset to 3, the maximum number of sign-in attempts to 5, and a minimum PIN length to 9 for UM-enabled users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3
 -MaxLogonAttempts 5 -MinPINLength 9
 ```

@@ -65,6 +65,6 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 
 This example sets the Outlook Voice Access number to 4255550100 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AccessTelephoneNumbers 4255550100
 ```

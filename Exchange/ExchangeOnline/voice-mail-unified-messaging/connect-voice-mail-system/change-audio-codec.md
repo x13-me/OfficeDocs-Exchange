@@ -57,12 +57,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to G.711.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec G711
 ```
 
 This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to WMA.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec Wma
 ```

@@ -46,12 +46,12 @@ For additional management tasks related to allowing users to forward calls, see 
 
 This example enables Call Answering Rules for the user tony@contoso.com.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -CallAnsweringRulesEnabled $true
 ```
 
 This example disables Call Answering Rules for the user tony@contoso.com.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -CallAnsweringRulesEnabled $false
 ```

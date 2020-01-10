@@ -123,13 +123,13 @@ After you export the TPD data from your on-premises AD RMS servers, you need to 
 
 1. In the Exchange Online organization, import the TPD data.
 
-   ```
+   ```PowerShell
    Import-RMSTrustedPublishingDomain -FileData $( [Byte[]] (Get-Content -Encoding Byte -Path "<Path to exported TPD file>" -ReadCount 0))
    ```
 
 2. Enable IRM in the Exchange Online organization.
 
-   ```
+   ```PowerShell
    Set-IRMConfiguration -InternalLicensingEnabled $True
    ```
 
@@ -149,13 +149,13 @@ After you've enabled IRM in the Exchange Online organization, you must distribut
 
 1. In the Exchange Online organization, retrieve a list of AD RMS templates.
 
-   ```
+   ```PowerShell
    Get-RMSTemplate -Type All
    ```
 
 2. Distribute the AD RMS templates to users and features in the Exchange Online organization.
 
-   ```
+   ```PowerShell
    Set-RMSTemplate <template name> -Type Distributed
    ```
 
@@ -170,7 +170,7 @@ Outlook on the web users should be able to apply AD RMS templates to new message
 
 Run the following command in the Exchange Online organization:
 
-```
+```PowerShell
 Get-RMSTemplate
 ```
 

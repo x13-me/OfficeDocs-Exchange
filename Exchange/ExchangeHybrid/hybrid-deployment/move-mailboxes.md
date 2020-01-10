@@ -155,7 +155,7 @@ After the mailbox move has completed, you can check that the remote mailbox loca
 
 You can also run the following cmdlet in the Exchange Management Shell to verify the status of the migration batch.
 
-```
+```PowerShell
 Get-MigrationBatch -Identity <batch name>
 ```
 

@@ -74,13 +74,13 @@ For example, you want to grant Send As permission for an on-premises mailbox nam
   
 Run the following command in the Exchange Management Shell on your on-premises Exchange server:
 
-```
+```PowerShell
 Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
 ```
 
 Then run the corresponding command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
 ```
 

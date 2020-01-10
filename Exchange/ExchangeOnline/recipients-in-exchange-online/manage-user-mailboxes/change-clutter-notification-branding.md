@@ -65,7 +65,7 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
 
 2. Type the following commands:
 
-   ```
+   ```PowerShell
    New-Mailbox -Shared -Name branding@contoso.com -DisplayName "Branding Clutter Mailbox" -Alias branding
    Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
    ```

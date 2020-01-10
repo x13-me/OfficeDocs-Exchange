@@ -46,13 +46,13 @@ The first step involves configuring the root directories for the databases (_Aut
 
 This example illustrates how to configure the root path for the databases.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
 ```
 
 This example illustrates how to configure the root path for the storage volumes.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 ```
 
@@ -60,7 +60,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 
 To verify that you've successfully configured the root paths for databases and volumes, run the following command.
 
-```
+```powershell
 Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
@@ -72,7 +72,7 @@ Next, configure the number of databases per volume (_AutoDagDatabaseCopiesPerVol
 
 This example illustrates how to configure this AutoReseed setting for a DAG configured with 4 databases per volume.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 ```
 
@@ -80,7 +80,7 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 
 To verify that you've successfully configured the number of databases per volume, run the following command.
 
-```
+```powershell
 Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 ```
 
@@ -90,7 +90,7 @@ The output for _AutoDagDatabaseCopiesPerVolume_ should reflect the configured va
 
 Next, create the directories that correspond to the root directories you configured in Step 1. This example shows how to create the default directories using the command prompt.
 
-```
+```powershell
 md C:\ExchangeDatabases
 md C:\ExchangeVolumes
 ```
@@ -99,7 +99,7 @@ md C:\ExchangeVolumes
 
 To verify that you've successfully configured the root directories for databases and volumes, run the following command.
 
-```
+```powershell
 Dir C:\
 ```
 
@@ -121,7 +121,7 @@ The names of the mounted folders can be any folder name, as long as the folders 
 
 To verify that you've successfully mounted the volume folders, run the following command.
 
-```
+```powershell
 Dir C:\
 ```
 
@@ -131,19 +131,19 @@ The mounted volumes should appear in the output list.
 
 Next, create the database directories under the root path C:\ExchangeDatabases. This example illustrates how to create directories for a storage configuration with 4 databases on each volume.
 
-```
+```powershell
 md c:\ExchangeDatabases\db001
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004
 ```
 
@@ -151,7 +151,7 @@ md c:\ExchangeDatabases\db004
 
 To verify that you've successfully mounted the database folders, run the following command.
 
-```
+```powershell
 Dir C:\ExchangeDatabases
 ```
 
@@ -161,7 +161,7 @@ The created directories should appear in the output list.
 
 Create the mount points for each database and link the mount point to the correct volume. For example, the mounted folder for db001 should be at C:\ExchangeDatabases\db001. You can use diskmgmt.msc or mountvol.exe to do this. This example illustrates how to mount db001 to C:\ExchangeDatabases\db001 using mountvol.exe.
 
-```
+```powershell
 Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
 ```
 
@@ -169,7 +169,7 @@ Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
 
 To verify that you've successfully created the mount points for the database, run the following command.
 
-```
+```powershell
 Mountvol.exe C:\ExchangeDatabases\db001 /L
 ```
 
@@ -185,35 +185,35 @@ C:\\<*DatabaseFolderName* \>\ *DatabaseName* \\<*DatabaseName* \>.log
 
 This example illustrates how to create directories for 4 databases that will be stored on Volume 1:
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.log
 ```
 
@@ -223,7 +223,7 @@ Repeat the preceding commands for databases on every volume.
 
 To verify that you've successfully created the database directory structure, run the following command.
 
-```
+```powershell
 Dir C:\ExchangeDatabases /s
 ```
 
@@ -233,7 +233,7 @@ The created directories should appear in the output list.
 
 Create databases with log and database paths configured with the appropriate folders. This example illustrates how to create a database that's stored in the newly created directory and mount point structure.
 
-```
+```powershell
 New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
 ```
 
@@ -241,7 +241,7 @@ New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases
 
 To verify that you've successfully created databases in the appropriate folder, run the following command.
 
-```
+```powershell
 Get-MailboxDatabase db001 | Format List *path*
 ```
 
@@ -253,16 +253,16 @@ To verify that you've configured AutoReseed for a DAG, do the following:
 
 1. Run the following command to verify the DAG is configured correctly.
 
-   ```
+   ```powershell
    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
    ```
 
 2. Run the following command to verify the directory structure is configured correctly (below are the default paths; if necessary, substitute the paths for the paths you're using).
 
-   ```
+   ```powershell
    Dir c:\ExchangeDatabases /s
    ```
 
-   ```
+   ```powershell
    Dir c:\ExchangeVolumes /s
    ```

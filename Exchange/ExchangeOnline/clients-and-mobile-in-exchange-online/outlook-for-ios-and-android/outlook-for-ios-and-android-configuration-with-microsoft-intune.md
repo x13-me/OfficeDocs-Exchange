@@ -22,7 +22,7 @@ manager: serdars
 
 Outlook for iOS and Android supports app settings that allow Office 365 and mobile device management (MDM), like Microsoft Endpoint Manager, administrators to customize the behavior of the app.
 
-App configuration can be delivered either through through the MDM OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Intune App Protection Policy (APP) channel. Outlook for iOS and Android supports the following configuration scenarios:
+App configuration can be delivered either through the MDM OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Intune App Protection Policy (APP) channel. Outlook for iOS and Android supports the following configuration scenarios:
 
 - Account setup configuration
 - Organization allowed accounts mode
@@ -320,7 +320,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for Android.
     
-    - For **Office Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
     
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
@@ -385,7 +385,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Office Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
     
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 

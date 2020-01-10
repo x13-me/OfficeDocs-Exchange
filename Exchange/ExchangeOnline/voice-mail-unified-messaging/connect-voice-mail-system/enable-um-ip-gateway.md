@@ -45,6 +45,6 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
 
 This example enables a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Enable-UMIPGateway -Identity MyUMIPGateway
 ```

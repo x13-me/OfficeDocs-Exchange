@@ -70,19 +70,19 @@ Mail contacts are mail-enabled directory service objects that contain informatio
 
 This example creates a mail contact for Debra Garcia in Exchange Server.
 
-```
+```PowerShell
 New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -OrganizationalUnit Users
 ```
 
 This example creates a mail contact for Alan Shen in Exchange Online.
 
-```
+```PowerShell
 New-MailContact -Name "Alan Shen" -ExternalEmailAddress alans@fourthcoffee.com
 ```
 
 This example mail-enables an existing contact named Karen Toh in Exchange Server.
 
-```
+```PowerShell
 Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
 ```
 
@@ -94,7 +94,7 @@ To verify that you've successfully created a mail contact, do one of the followi
 
 - In Exchange Online PowerShell, run the following command to display information about the new mail contact.
 
-  ```
+  ```PowerShell
   Get-MailContact <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
@@ -174,19 +174,19 @@ Here are some examples of using Exchange Online PowerShell to change mail contac
 
 This example configures the Title, Department, Company, and Manager properties for the mail contact Kai Axford.
 
-```
+```PowerShell
 Set-Contact "Kai Axford" -Title Consultant -Department "Public Relations" -Company Fabrikam -Manager "Karen Toh"
 ```
 
 This example sets the CustomAttribute1 property to a value of PartTime for all mail contacts and hides them from the organization's address book.
 
-```
+```PowerShell
 Get-MailContact | Set-MailContact -CustomAttribute1 PartTime -HiddenFromAddressListsEnabled $true
 ```
 
 This example sets the CustomAttribute15 property to a value of TemporaryEmployee for all mail contacts in the Public Relations department.
 
-```
+```PowerShell
 Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -CustomAttribute15 TemporaryEmployee
 ```
 
@@ -198,13 +198,13 @@ To verify that you've successfully changed properties for a mail contact, do the
 
 - In Exchange Online PowerShell, use the **Get-Contact** and **Get-MailContact** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. In the example above where all mail contacts had the CustomAttribute1 property set to PartTime and were hidden from the address book, run the following command to verify the changes.
 
-  ```
+  ```PowerShell
   Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
   ```
 
   In the previous example where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
 
-  ```
+  ```PowerShell
   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
   ```
 
@@ -239,6 +239,6 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
 
 - In Exchange Online PowerShell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-Contact -ResultSize unlimited -Filter "Company -eq 'Adatum'" | Format-List Name,Office,Manager
   ```

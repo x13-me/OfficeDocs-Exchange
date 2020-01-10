@@ -51,6 +51,6 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the maximum call duration to 10 minutes on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -MaxCallDuration 10
 ```

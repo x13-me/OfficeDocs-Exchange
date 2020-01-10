@@ -216,7 +216,7 @@ In Exchange 2010, page patching wasn't available for lagged copies. In Exchange 
 
 Lagged copy play down behavior is disabled by default, and can be enabled by running the following command.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
 ```
 

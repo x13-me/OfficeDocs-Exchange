@@ -112,7 +112,7 @@ The following table describes the filtering and sorting parameters that are avai
 
 This example returns all non-empty external queues on the servers named Mailbox01, Mailbox02, and Mailbox03.
 
-```
+```powershell
 Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
 ```
 
@@ -172,13 +172,13 @@ You can specify a filter that evaluates multiple expressions by using the logica
 
 This example displays a list of queues that have a destination to any SMTP domain name that ends in Contoso.com and that currently contain more than 500 messages.
 
-```
+```powershell
 Get-Queue -Filter "Identity -like '*contoso.com*' -and MessageCount -gt 500"
 ```
 
 This example displays a list of messages that are sent from any email address in the contoso.com domain that have an SCL value that's greater than 5.
 
-```
+```powershell
 Get-Message -Filter "FromAddress -like '*Contoso.com*' -and SCL -gt 5"
 ```
 
@@ -204,7 +204,7 @@ The advanced paging parameters are described in the following table.
 
 This example shows how to use the advanced paging parameters in a query. The command returns the first 500 messages on the specified server. The results are sorted first in ascending order by sender address, and then in descending order by message size.
 
-```
+```powershell
 Get-Message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
 ```
 
@@ -212,18 +212,18 @@ This example returns the first 500 messages on the specified server in the speci
 
 1. Run the following command to retrieve the first page of results.
 
-   ```
+   ```powershell
    $Results=Get-Message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
    ```
 
 2. To set the bookmark object, run the following command to save the last element of the first page to a variable.
 
-   ```
+   ```powershell
    $Temp=$Results[$results.length-1]
    ```
 
 3. To retrieve the next 500 objects on the specified server, and to exclude the bookmark object, run the following command.
 
-   ```
+   ```powershell
    Get-Message -Server mailbox01.contoso.com -BookmarkObject:$Temp -IncludeBookmark $false -ResultSize 500 -SortOrder +FromAddress,-Size
    ```

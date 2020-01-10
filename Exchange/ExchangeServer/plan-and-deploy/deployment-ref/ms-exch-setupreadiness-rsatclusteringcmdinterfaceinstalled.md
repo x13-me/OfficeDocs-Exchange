@@ -31,7 +31,7 @@ Do the following to install the Windows feature on this computer. If the feature
 
 2. Run the following command to install the required Windows feature.
 
-   ```
+   ```powershell
    Install-WindowsFeature RSAT-Clustering-CmdInterface
    ```
 

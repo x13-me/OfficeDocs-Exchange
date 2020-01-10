@@ -49,12 +49,12 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to use Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowSubscriberAccess $true
 ```
 
 This example prevents users who are associated with the UM mailbox policy `MyUMMailboxPolicy` from using Outlook Voice Access.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowSubscriberAccess $false
 ```
