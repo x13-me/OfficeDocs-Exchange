@@ -55,7 +55,7 @@ The user restoring the public folder must have the `Public Folders` role assigne
 
     Example 1:
 
-    To restore a public folder named `PF1`, located under the root of the public folder tree:
+    To restore a public folder named `PF1` to the root of the public folder tree:
 
     ```PowerShell
     Set-PublicFolder -Identity \NON_IPM_SUBTREE\DUMPSTER_ROOT\DUMPSTER_EXTEND\RESERVED_1\RESERVED_1\9f32c468-4bc2-42aa-b979-16a057394b2f\PF1 -Path \
