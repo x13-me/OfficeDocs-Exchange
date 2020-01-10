@@ -346,10 +346,16 @@ A number of commands now need to be run both in your Exchange Server on-premises
 4. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
    ```PowerShell
+   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart
+   ```
+
+   **Note:**
+   If you receive an error that states, "A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'", then instead use the following command to create the migration batch:
+
+   ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
    New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <HierarchyMailboxGUID> -AutoStart -NotificationEmails <email addresses for migration notifications>
    ```
-
    > [!NOTE]
    > Separate multiple email addresses with commas.
 
