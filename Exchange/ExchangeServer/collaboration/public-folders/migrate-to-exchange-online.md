@@ -349,8 +349,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart
    ```
 
-  > [!Note]
-  > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
+  **Note:** If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
 
    ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
