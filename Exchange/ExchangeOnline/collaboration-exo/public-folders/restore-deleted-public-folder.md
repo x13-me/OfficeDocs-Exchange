@@ -33,7 +33,7 @@ The user restoring the public folder must have the `Public Folders` role assigne
 
 1. Connect to EXO PowerShell for Exchange Online.
 
-1. Determine if the public folder you want to restore is present in the public folder dumpster.
+1. Determine if the public folder you want to restore is in the public folder dumpster.
 
     The following command lists all non-system public folders in the dumpster:
 
@@ -53,9 +53,7 @@ The user restoring the public folder must have the `Public Folders` role assigne
     Set-PublicFolder -Identity "Full path of folder to be restored" -Path "Parent folder path where folder needs to be restored"
     ```
 
-    Example 1:
-
-    To restore a public folder named `PF1` to the root of the public folder tree:
+    For example, to restore a public folder named `PF1` to the root of the public folder tree:
 
     ```PowerShell
     Set-PublicFolder -Identity \NON_IPM_SUBTREE\DUMPSTER_ROOT\DUMPSTER_EXTEND\RESERVED_1\RESERVED_1\9f32c468-4bc2-42aa-b979-16a057394b2f\PF1 -Path \
