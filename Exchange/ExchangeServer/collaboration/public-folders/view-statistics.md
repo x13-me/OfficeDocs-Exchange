@@ -49,6 +49,8 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 
 For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics).
 
+Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
+
 ## Use the Exchange Management Shell to view statistics for public folder items
 
 You can view the following information about items within a public folder:
@@ -82,6 +84,8 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-Li
 ```
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
+
+Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
 
 ## Use the Exchange Management Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
