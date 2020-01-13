@@ -16,7 +16,7 @@ manager: serdars
 
 # View statistics for public folders and public folder items
 
-You can use the Exchange Management Shell to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.  'LastAccessedTime' is not available for Exchange Online.
+You can use the Exchange Management Shell to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
 
 > [!NOTE]
 > While you can view some of the quota and usage information in the Exchange admin center (EAC), this information is incomplete, and we recommend that you use the Exchange Management Shell to view public folder statistics. To view quota and usage information for public folders by navigating to **Public Folders** \> **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox usage**.
@@ -48,6 +48,8 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 > The value for the _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
 
 For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics).
+
+Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
 
 ## Use the Exchange Management Shell to view statistics for public folder items
 
@@ -82,6 +84,8 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-Li
 ```
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
+
+Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
 
 ## Use the Exchange Management Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
