@@ -87,14 +87,14 @@ After you license a Mailbox server, do the following steps to restart the Micros
 
 To enter the product key in the Exchange Management Shell, use this syntax:
 
-```
+```powershell
 Set-ExchangeServer <ServerName> -ProductKey <ProductKey>
 ```
 Note that this command works to license an unlicensed server or to upgrade a licensed server from a Standard Edition license to an Enterprise Edition license.
 
 This example licenses the Exchange server named Mailbox01.
 
-```
+```powershell
 Set-ExchangeServer Mailbox01 -ProductKey 12345-12345-12345-12345-12345
 ```
 
@@ -102,7 +102,7 @@ For detailed syntax and parameter information, see [Set-ExchangeServer](https://
 
 After you license a Mailbox server, run the following command in the Exchange Management Shell to restart the Microsoft Exchange Information Store service:
 
-```
+```powershell
 Restart-Service MSExchangeIS
 ```
 
@@ -116,12 +116,12 @@ To verify that you've successfully licensed the Exchange server, do any of the f
 
 - In the Exchange Management Shell, replace _\<ServerName\>_ with the name of the Exchange server you licensed, and run the following command to verify the property values:
 
-  ```
+  ```powershell
   Get-ExchangeServer <ServerName> | Format-List Name,Edition,*Trial*
   ```
 
 - In the Exchange Management Shell, run the following command to view the licensing status of all Exchange servers in your organization:
 
-  ```
+  ```powershell
   Get-ExchangeServer | Format-Table -Auto Name,Edition,*Trial*
   ```

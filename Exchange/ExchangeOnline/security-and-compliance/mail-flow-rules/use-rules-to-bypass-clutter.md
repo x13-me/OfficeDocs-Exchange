@@ -48,7 +48,7 @@ This example allows all messages with title "Meeting" to bypass clutter.
 
 This example allows all messages with title "Meeting" to bypass clutter.
 
-```
+```PowerShell
 New-TransportRule -Name "<Unique rule name>" -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 ```
 

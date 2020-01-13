@@ -49,6 +49,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the business location on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessLocation 'Redmond'
 ```

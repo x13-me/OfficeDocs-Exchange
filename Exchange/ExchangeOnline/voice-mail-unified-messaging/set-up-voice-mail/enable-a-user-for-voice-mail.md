@@ -76,12 +76,12 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, sets the extension number to 51234, sets the PIN for the user to 5643892, and assigns the user to a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -PINExpired $true
 ```
 
 This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, assigns the user to a UM mailbox policy named `MyUMMailboxPolicy`, and sets the extension number, SIP address, and PIN for the user.
 
-```
+```PowerShell
 Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -SIPResourceIdentifier "tonysmith@contoso.com" -PINExpired $true
 ```

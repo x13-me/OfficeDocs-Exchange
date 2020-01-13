@@ -48,12 +48,12 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
 
 This example removes the call answering rule `MyUMCallAnsweringRule` from a user's mailbox. The user's mailbox is the mailbox of the user running the cmdlet.
 
-```
+```PowerShell
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule
 ```
 
 This example removes the call answering rule `MyUMCallAnsweringRule` from the mailbox of Tony Smith.
 
-```
+```PowerShell
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```

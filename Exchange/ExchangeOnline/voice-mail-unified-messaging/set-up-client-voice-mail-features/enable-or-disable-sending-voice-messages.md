@@ -51,12 +51,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example enables Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` to send voice messages to users associated with the same dial plan.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $true
 ```
 
 This example prevents Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` from sending voice messages to users associated with the same dial plan.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $false
 ```

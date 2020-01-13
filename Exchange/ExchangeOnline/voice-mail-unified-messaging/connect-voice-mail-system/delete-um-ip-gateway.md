@@ -48,6 +48,6 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 This example deletes the UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Remove-UMIPGateway -Identity MyUMIPGateway
 ```

@@ -48,7 +48,7 @@ For instructions, see [Connect to Exchange Online PowerShell](https://go.microso
 
 This example creates a discovery mailbox named SearchResults.
 
-```
+```PowerShell
 New-Mailbox -Name SearchResults -Discovery
 ```
 
@@ -59,7 +59,7 @@ For detailed syntax and parameter information, see [new-Mailbox](https://docs.mi
 
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
-```
+```PowerShell
 Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
@@ -69,13 +69,13 @@ For detailed syntax and parameter information, see [Get-Mailbox](https://docs.mi
 
 You have to explicitly assign users or groups the necessary permissions to open a discovery mailbox that you've created. Use the following syntax to assign a user or group permissions to open a discovery mailbox and view search results:
 
-```
+```PowerShell
 Add-MailboxPermission <Name of the discovery mailbox> -User <Name of user or group> -AccessRights FullAccess -InheritanceType all
 ```
 
 For example, the following command assigns the Full Access permission to the Litigation Managers group, so members of the group can open the Fabrikam Litigation discovery mailbox.
 
-```
+```PowerShell
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
 ```
 

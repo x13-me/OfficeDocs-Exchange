@@ -101,7 +101,7 @@ The procedures in this section describe how to create a new mailbox and the asso
 
 To create a user mailbox in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 New-Mailbox -Name <Name> -UserPrincipalName <UPN> -Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force) [-Alias <Alias>] [-FirstName <FirstName>] [-LastName <LastName>] [-DisplayName <DisplayName>] -[OrganizationalUnit <OU>]
 ```
 
@@ -123,7 +123,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
 
   - The alias value is `pilarp` because we aren't using the _Alias_ parameter, and `pilarp` is taken from the _UserPrincipalName_ parameter value.
 
-```
+```PowerShell
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
@@ -137,7 +137,7 @@ To verify that you've successfully created a user mailbox, use either of the fol
 
 - In the Exchange Management Shell, replace _\<Name\>_ with the _Name_ parameter value that you used, and run the following command:
 
-  ```
+  ```PowerShell
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
   ```
 
@@ -179,7 +179,7 @@ When you mailbox-enable a user account, you can only select existing Active Dire
 
 To create a mailbox for an existing user account, use the following syntax:
 
-```
+```PowerShell
 Enable-Mailbox -Identity <Account> [-Alias <Alias>] [-DisplayName <DisplayName>] [-Database <Database>]
 ```
 
@@ -189,13 +189,13 @@ This example creates a mailbox in the mailbox database named UsersMailboxDatabas
 
 - Because we aren't using the _DisplayName_ parameter, the value of the **name** attribute in Active Directory is used as the display name.
 
-```
+```PowerShell
 Enable-Mailbox -Identity kreiter@contoso.com -Database UsersMailboxDatabase
 ```
 
 This example finds all user accounts that aren't mail-enabled and that aren't system accounts (the **userPrincipalName** attribute isn't blank), and then creates mailboxes for those accounts.
 
-```
+```PowerShell
 Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$null" -ResultSize unlimited | Enable-Mailbox
 ```
 
@@ -209,6 +209,6 @@ To verify that you've successfully created a mailbox for an existing user, use e
 
 - In the Exchange Management Shell, replace _\<Name\>_ with the name attribute of the user, and run the following command:
 
-  ```
+  ```PowerShell
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
   ```

@@ -103,7 +103,7 @@ When you create an Edge Subscription file by running the **New-EdgeSubscription*
 
 This example creates and exports the Edge Subscription file on the Edge Transport server.
 
-```
+```PowerShell
 New-EdgeSubscription -FileName "C:\Data\EdgeSubscriptionInfo.xml"
 ```
 
@@ -142,7 +142,7 @@ When you import the Edge Subscription file to the Active Directory site by runni
 
 This example subscribes an Edge Transport server to the specified site and automatically creates the Internet Send connector and the Send connector from the Edge Transport server to the Mailbox servers.
 
-```
+```PowerShell
 New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
 ```
 

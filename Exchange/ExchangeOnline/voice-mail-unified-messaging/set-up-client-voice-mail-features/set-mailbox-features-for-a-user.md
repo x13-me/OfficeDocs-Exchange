@@ -51,7 +51,7 @@ For additional management tasks related to UM users, see [Set mailbox features f
 
 This example enables calendar and email access using the TUI for a UM-enabled user named Tony Smith.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail True -OperatorNumber 111111 -DisableMissedCallNotification False -AnonCallBlock True
 ```
 

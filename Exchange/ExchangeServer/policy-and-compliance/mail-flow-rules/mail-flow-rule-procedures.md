@@ -112,7 +112,7 @@ There are two settings that you can configure on new mail flow rules in the Exch
 
 To create mail flow rules in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 New-TransportRule -Name <RuleName> [<Conditions>] [<Exceptions>] <Actions> [<Properties>]
 ```
 
@@ -130,7 +130,7 @@ This example creates a new rule with the following settings:
 
 - **Action**: Prepend the message's **Subject** field with the value `"External message to Sales DG: "`. The trailing colon and space help to distinguish the added text from the original value.
 
-```
+```PowerShell
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG: "
 ```
 
@@ -148,13 +148,13 @@ To verify that you've successfully created a mail flow rule, use either of the f
 
   - Run the following command to see the new rule in the list of rules:
 
-  ```
+  ```PowerShell
   Get-TransportRule
   ```
 
   - Replace _\<RuleName\>_ with the name of the rule, and run the following command to see the details of the rule:
 
-  ```
+  ```PowerShell
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
@@ -176,25 +176,25 @@ Mail flow rules that you create on a Mailbox server are stored in Active Directo
 
 To return a summary list of all mail flow rules, run the following command:
 
-```
+```PowerShell
 Get-TransportRule
 ```
 
 To return detailed information about a specific rule, use the following syntax:
 
-```
+```PowerShell
 Get-TransportRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
 ```
 
 This example returns all the property values for the rule named "Sender is a member of marketing".
 
-```
+```PowerShell
 Get-TransportRule -Identity "Sender is a member of marketing" | Format-List
 ```
 
 This example returns only the specified properties for the same rule.
 
-```
+```PowerShell
 Get-TransportRule -Identity "Sender is a member of marketing" | Format-List Name,State,Mode,Priority,Comments,Conditions,Exceptions,RuleVersion
 ```
 
@@ -206,7 +206,7 @@ The conditions and exceptions in mail flow rules are collectively known as *pred
 
 To view the conditions and exceptions that are available in mail flow rules, run the following command:
 
-```
+```PowerShell
 Get-TransportRulePredicate
 ```
 
@@ -226,7 +226,7 @@ You can only view the list of actions in the Exchange Management Shell.
 
 To view the actions that are available in mail flow rules, run the following command:
 
-```
+```PowerShell
 Get-TransportRuleAction
 ```
 
@@ -254,13 +254,13 @@ When you modify a mail flow rule in the Exchange Management Shell, you can't dis
 
 To modify a mail flow rule in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 Set-MailFlowRule -Identity "<RuleName>" [<Conditions>] [<Exceptions>] [<Actions>] [<Properties>]
 ```
 
 This example adds an exception to the rule named "Sender is a member of marketing" so that it won't apply to messages that are sent by the user named Kelly Rollin.
 
-```
+```PowerShell
 Set-TransportRule -Identity "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
 ```
 
@@ -274,7 +274,7 @@ To verify that you have successfully modified a mail flow rule, use either of th
 
 - In the Exchange Management Shell, replace _\<RuleName\>_ with the name of the rule, and run the following command:
 
-  ```
+  ```PowerShell
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
@@ -302,13 +302,13 @@ The highest priority value you can set on a rule is 0. The lowest value you can 
 
 To set the priority of a rule in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 Set-TransportRule -Identity "<RuleName>" -Priority <Number>
 ```
 
 This example sets the priority of the rule named "Sender is a member of marketing" to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
-```
+```PowerShell
 Set-TransportRule -Identity "Sender is a member of marketing" -Priority 2
 ```
 
@@ -324,13 +324,13 @@ To verify that you have successfully modified the priority of a mail flow rule, 
 
   - Run the following command to see the list of rules and their **Priority** values:
 
-  ```
+  ```PowerShell
   Get-TransportRule
   ```
 
   - Replace _\<RuleName\>_ with the name of the rule, and run the following command:
 
-  ```
+  ```PowerShell
   Get-TransportRule -Identity "<RuleName>" | Format-List Name,Priority
   ```
 
@@ -354,19 +354,19 @@ By default, mail flow rules are enabled when you create them in the EAC or the E
 
 To enable or disable a mail flow rule in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 <Enable-TransportRule | Disable-TransportRule> -Identity "<RuleName>"
 ```
 
 This example disables the mail flow rule named "Sender is a member of marketing".
 
-```
+```PowerShell
 Disable-TransportRule "Sender is a member of marketing"
 ```
 
 This example enables the mail flow rule named "Sender is a member of marketing".
 
-```
+```PowerShell
 Enable-TransportRule "Sender is a member of marketing"
 ```
 
@@ -382,13 +382,13 @@ To verify that you have successfully enabled or disabled a mail flow rule, use e
 
   - Run the following command to see the list of rules and their **State** values:
 
-  ```
+  ```PowerShell
   Get-TransportRule
   ```
 
   - Replace _\<RuleName\>_ with the name of the rule, and run the following command:
 
-  ```
+  ```PowerShell
   Get-TransportRule -Identity "<RuleName>" | Format-List Name,State
   ```
 
@@ -404,13 +404,13 @@ To verify that you have successfully enabled or disabled a mail flow rule, use e
 
 To remove mail flow rules in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 Remove-TransportRule -Identity "<RuleName>"
 ```
 
 This example removes the mail flow rule named "Sender is a member of marketing":
 
-```
+```PowerShell
 Remove-TransportRule -Identity "Sender is a member of marketing"
 ```
 
@@ -424,7 +424,7 @@ To verify that you have successfully removed a mail flow rule, use either of the
 
 - In the Exchange Management Shell, run the following command to verify that the rule you removed is no longer listed:
 
-  ```
+  ```PowerShell
   Get-TransportRule
   ```
 
@@ -442,19 +442,19 @@ You can import a mail flow rule collection that you've previously exported as a 
 
 1. Run the following command:
 
-   ```
+   ```PowerShell
    $File = Export-TransportRuleCollection
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    Set-Content -Path "<OutputFile>" -Value $file.FileData -Encoding Byte
    ```
 
    For example, to save the exported mail flow rule collection to the file C:\My Documents\Exported Rules.xml, run the following command:
 
-   ```
+   ```PowerShell
    Set-Content -Path "C:\My Documents\Exported Rules.xml" -Value $file.FileData -Encoding Byte
    ```
 
@@ -464,19 +464,19 @@ For detailed syntax and parameter information, see [Export-TransportRuleCollecti
 
 1. Use the following syntax:
 
-   ```
+   ```PowerShell
    [Byte[]]$Data = Get-Content -Path "<OutputFile>" -Encoding Byte -ReadCount 0
    ```
 
    For example, to import the mail flow rule collection from C:\My Documents\Exported Rules.xml, run the following command:
 
-   ```
+   ```PowerShell
    Byte[]]$Data = Get-Content -Path "C:\My Documents\Exported Rules.xml" -Encoding Byte -ReadCount 0
    ```
 
 2. Run the following command:
 
-   ```
+   ```PowerShell
    Import-TransportRuleCollection -FileData $Data
    ```
 

@@ -32,18 +32,18 @@ manager: serdars
 
 This example sets the default language on a UM dial plan named `MyUMDialPlan` to German.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DefaultLanguage de-DE
 ```
 
 This example sets the default language on a UM dial plan named `MyUMDialPlan` to Japanese.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DefaultLanguage ja-JP
 ```
 
 This example sets the default language on a UM dial plan named `MyUMDialPlan` to Australian English.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DefaultLanguage en-AU
 ```

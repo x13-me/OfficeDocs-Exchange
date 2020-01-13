@@ -193,7 +193,7 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 - **Windows Server 2012 and Windows Server 2012 R2**: Run the following command in Windows PowerShell
 
-  ```
+  ```PowerShell
   Install-WindowsFeature Server-Gui-Mgmt-Infra,Server-Gui-Shell -Restart
   ```
 

@@ -64,7 +64,7 @@ This example changes the extension number to 22222 for Tony Smith, a UM-enabled 
 > [!NOTE]
 > Before you change an extension number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) extension number and it will be 0 in the list.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(0)="eum:22222;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

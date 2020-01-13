@@ -54,18 +54,18 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example configures a UM IP gateway named `MyUMIPGateway` that has an FQDN of mTLS.MyUMIPGateway.contoso.com and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address mTLS.MYUMIPGateway.contoso.com -Port 5061
 ```
 
 This example configures a UM IP gateway named `MyUMIPGateway` that has an FQDN of SIPSecured.MyUMIPGateway.contoso.com and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address SIPSecured.MyUMIPGateway.contoso.com -Port 5061
 ```
 
 This example configures a UM IP gateway named `MyUMIPGateway` that has an FQDN of MyOCSUMIPGateway.contoso.com and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address MyOCSUMIPGateway.contoso.com -Port 5061
 ```

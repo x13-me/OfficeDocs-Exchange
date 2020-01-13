@@ -23,7 +23,7 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected that the
 
 - **Windows Server 2012 and Windows Server 2012 R2**: Run the following command in Windows PowerShell:
 
-  ```
+  ```powershell
   Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
   ```
 

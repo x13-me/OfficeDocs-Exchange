@@ -59,7 +59,7 @@ To record custom prompts and greetings by using the telephone user interface (TU
 
 7. Run the following cmdlet:
 
-   ```
+   ```PowerShell
    Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
    ```
 

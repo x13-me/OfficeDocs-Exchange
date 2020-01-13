@@ -45,7 +45,7 @@ This procedure uses the `Configure-EnterpriseApplication.ps1` script to configur
 
 1. This example configures OAuth authentication for SharePoint 2016.
 
-   ```
+   ```console
    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
 
@@ -53,7 +53,7 @@ This procedure uses the `Configure-EnterpriseApplication.ps1` script to configur
 
 2. This example configures OAuth authentication for Skype for Business or Lync Server 2013.
 
-   ```
+   ```console
    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
 

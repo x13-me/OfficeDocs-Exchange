@@ -45,19 +45,19 @@ You can use the Exchange Management Shell to enable or disable mailbox audit log
 
 This example enables mailbox audit logging for Ben Smith's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
 ```
 
 This example enables mailbox audit logging for all user mailboxes in your organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Select PrimarySmtpAddress | ForEach {Set-Mailbox -Identity $_.PrimarySmtpAddress -AuditEnabled $true}
 ```
 
 This example disables mailbox audit logging for Ben Smith's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
 ```
 
@@ -69,19 +69,19 @@ When mailbox audit logging is enabled for a mailbox, only the administrator, del
 
 This example specifies that the `MessageBind` and `FolderBind` actions performed by administrators will be logged for Ben Smith's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
 ```
 
 This example specifies that the `SendAs` or `SendOnBehalf` actions performed by delegate users will be logged for Ben Smith's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
 ```
 
 This example specifies that the `HardDelete` action performed by the mailbox owner will be logged for Ben Smith's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 ```
 
@@ -93,7 +93,7 @@ To verify that you have successfully enabled mailbox audit logging for a mailbox
 
 This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 
-```
+```PowerShell
 Get-Mailbox "Ben Smith" | Format-List Audit*
 ```
 
@@ -101,7 +101,7 @@ A value of `True` for the **AuditEnabled** property verifies that audit logging 
 
 This example retrieves the auditing settings for all user mailboxes in your organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,Audit*
 ```
 
@@ -109,15 +109,15 @@ Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 
 The actions that are audited for each type of user may not all be displayed when you run the **Get-Mailbox** cmdlet. But you can run the following commands to display all the audited actions for a specific user logon type.
 
-```
+```PowerShell
 Get-Mailbox <identity of mailbox> | Select-Object -ExpandProperty AuditAdmin
 ```
 
-```
+```PowerShell
 Get-Mailbox <identity of mailbox> | Select-Object -ExpandProperty AuditDelegate
 ```
 
-```
+```PowerShell
 Get-Mailbox <identity of mailbox> | Select-Object -ExpandProperty AuditOwner
 ```
 
@@ -125,12 +125,12 @@ By default, entries in the mailbox audit log are kept for 90 days. When an entry
 
 This example increases the age limit for mailbox audit log entries in Pilar Pinilla's mailbox to 180 days.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Pilar Pinilla" -AuditLogAgeLimit 180
 ```
 
 This example decreases the age limit for mailbox audit log entries for all user mailboxes in your organization to 60 days.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -AuditLogAgeLimit 60
 ```

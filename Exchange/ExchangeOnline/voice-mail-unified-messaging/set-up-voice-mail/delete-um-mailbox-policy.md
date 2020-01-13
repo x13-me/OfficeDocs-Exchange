@@ -43,6 +43,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example deletes a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Remove-UMMailboxPolicy -Identity MyUMMailboxPolicy
 ```

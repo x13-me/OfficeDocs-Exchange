@@ -43,13 +43,13 @@ If the migration receives a grade of **Investigate**, then you can approve skipp
 
 If you are using batches, then run:
 
-```
+```PowerShell
 Set-MigrationBatch -ApproveSkippedItems or Set-MigrationUser -ApproveSkippedItems
 ```
 
 If you are using MoveRequests directly, then run:
 
-```
+```PowerShell
 Set-MoveRequest -SkippedItemApprovalTime $([DateTime]::UtcNow)
 ```
 
@@ -57,7 +57,7 @@ For a batch scored as **Investigate**, approving the migration allows you to com
 
 For a batch scored as **Poor**, approving the migration allows you to complete all migrations in the batch with a score of Perfect, Good, or Investigate, but will not approve any migration in the batch with a score of Poor.
 
-If the migration has failed with a grade of **Poor**, it is possible to force the migration to succeed, but this is not recommended. Please contact Microsoft Support for assistance.
+If the migration fails with a grade of **Poor**, you cannot force the migration to succeed. Please contact Microsoft Support for assistance.
 
 ## How to opt in or opt out of using DataConsistencyScore
 

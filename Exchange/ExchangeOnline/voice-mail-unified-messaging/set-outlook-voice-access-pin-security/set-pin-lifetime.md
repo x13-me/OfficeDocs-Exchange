@@ -56,7 +56,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the number of days that a PIN can be used for Outlook Voice Access users who are associated with a UM mailbox policy named `MyUMMailboxPolicy` to 30.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -PINLifetime 30
 ```
 
@@ -70,7 +70,7 @@ This example configures the following PIN-related settings for Outlook Voice Acc
 
 - Sets the PIN to expire in 40 days.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3
 -MaxLogonAttempts 5 -MinPINLength 9 -PINLifetime 40
 ```

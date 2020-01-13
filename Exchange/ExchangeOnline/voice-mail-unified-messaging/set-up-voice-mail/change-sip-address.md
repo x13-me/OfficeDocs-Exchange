@@ -66,7 +66,7 @@ This example changes a SIP address for Tony Smith.
 > [!NOTE]
 > Before you change a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) SIP address and it will be 0 in the list.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(1)="eum:tsmith@contoso.com;phone-context=MySIPDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

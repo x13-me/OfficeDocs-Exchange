@@ -75,19 +75,19 @@ After you create or modify a GAL, you need to update its membership. Updating a 
 
 To update a GAL, use the following syntax:
 
-```
+```PowerShell
 Update-GlobalAddressList -Identity <GALIdentity>
 ```
 
 This example updates the GAL named Contoso GAL.
 
-```
+```PowerShell
 Update-AddressList -Identity "Contoso GAL"
 ```
 
 This example updates all GALs in the organization that require updates.
 
-```
+```PowerShell
 Get-GlobalAddressList | where {$_.RecipientFilterApplied -eq $false} | Update-GlobalAddressList
 ```
 
@@ -97,7 +97,7 @@ For detailed syntax and parameter information, see [Update-GlobalAddressList](ht
 
 To verify that you've successfully updated the GAL, replace _\<GALIdentity\>_ with the name of the address list, and run the following command to verify that the **RecipientFilterApplied** property value is present:
 
-```
+```PowerShell
 Get-AddressList -Identity <GALIdentity> | Format-Table -Auto Name,RecipientFilterApplied
 ```
 
@@ -109,19 +109,19 @@ Get-AddressList -Identity <GALIdentity> | Format-Table -Auto Name,RecipientFilte
 
 To view the members of a GAL, use the following syntax:
 
-```
+```PowerShell
 $GAL = Get-GlobalAddressList -Identity <GALIdentity>; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $GAL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example returns the members of the GAL named Humongous Insurance.
 
-```
+```PowerShell
 $GAL = Get-GlobalAddressList -Identity "Humongous Insurance"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $GAL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example exports the results to the file C:\My Documents\Humongous Insurance Export.csv.
 
-```
+```PowerShell
 $GAL = Get-GlobalAddressList -Identity "Humongous Insurance"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $GAL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled | Export-Csv -NoTypeInformation -Path "C:\My Documents\Humongous Insurance Export.csv"
 ```
 
@@ -133,7 +133,7 @@ For details about recipient filters in the Exchange Management Shell, see the [R
 
 To create a GAL, use the following syntax:
 
-```
+```PowerShell
 New-GlobalAddressList -Name "<GAL Name>" [<Precanned recipient filter | Custom recipient filter>]
 ```
 
@@ -143,7 +143,7 @@ This example creates a GAL with a precanned recipient filter:
 
 - **Precanned recipient filter**: All recipient types where the **Company** value is Contoso.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "Contoso GAL" -IncludedRecipients AllRecipients -ConditionalCompany Contoso
 ```
 
@@ -153,7 +153,7 @@ This example creates a GAL with a custom recipient filter:
 
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
@@ -167,7 +167,7 @@ To verify that you've successfully created a GAL, use either of the following pr
 
 - In the Exchange Management Shell, replace _\<GAL Name\>_ with the name of the GAL, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
    ```
 
@@ -181,7 +181,7 @@ To verify that you've successfully created a GAL, use either of the following pr
 
 To modify a GAL, use the following syntax:
 
-```
+```PowerShell
 Set-GlobalAddressList -Identity <GALIdentity>] [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
@@ -189,7 +189,7 @@ When you modify the _Conditional_ parameter values, you can use the following sy
 
 This example modifies the existing GAL named Contoso GAL by adding the **Company** value Fabrikam to the precanned recipient filter.
 
-```
+```PowerShell
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
@@ -203,7 +203,7 @@ To verify that you've successfully modified a GAL, use either of the following p
 
 - In the Exchange Management Shell, replace _\<GAL Name\>_ with the name of the GAL, and run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
   ```
 
@@ -215,13 +215,13 @@ To verify that you've successfully modified a GAL, use either of the following p
 
 To remove a GAL, use the following syntax:
 
-```
+```PowerShell
 Remove-GlobalAddressList -Identity <GALIdentity>
 ```
 
 This example removes the address list named Agency A GAL.
 
-```
+```PowerShell
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
@@ -235,7 +235,7 @@ To verify that you've successfully removed a GAL, use either of the following pr
 
 - In the Exchange Management Shell, run the following command to verify that the GAL isn't listed:
 
-  ```
+  ```PowerShell
   Get-GlobalAddressList
   ```
 
@@ -263,25 +263,25 @@ After you create or modify an address list in the EAC or the Exchange Management
 
 To update an address list, use the following syntax:
 
-```
+```PowerShell
 Update-AddressList -Identity [<AddressListIdentity>]
 ```
 
 This example updates the address list named Northwest Executives.
 
-```
+```PowerShell
 Update-AddressList -Identity "Northwest Executives"
 ```
 
 This example updates the address list named Sales that's located under the address list named North America.
 
-```
+```PowerShell
 Update-AddressList "North America\Sales"
 ```
 
 This example updates all address lists in the organization that require updates.
 
-```
+```PowerShell
 Get-AddressList | where {$_.RecipientFilterApplied -eq $false} | Update-AddressList
 ```
 
@@ -295,7 +295,7 @@ To verify that you've successfully updated an address list, use either of the fo
 
 - In the Exchange Management Shell, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command to verify the **RecipientFilterApplied** property value:
 
-  ```
+  ```PowerShell
   Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,RecipientFilterApplied
   ```
 
@@ -315,19 +315,19 @@ If the address list isn't up to date, you should update the address list before 
 
 To view the members of an address list, use the following syntax:
 
-```
+```PowerShell
 $AL = Get-AddressList -Identity <AddressListIdentity>; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $AL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example returns the members of the address list named Southeast Offices.
 
-```
+```PowerShell
 $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $AL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled
 ```
 
 This example exports the results to the file C:\My Documents\Southeast Offices Export.csv.
 
-```
+```PowerShell
 $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize unlimited -RecipientPreviewFilter $AL.RecipientFilter | select Name,PrimarySmtpAddress,HiddenFromAddressListsEnabled | Export-Csv -NoTypeInformation -Path "C:\My Documents\Southeast Offices Export.csv"
 ```
 
@@ -355,7 +355,7 @@ You can create address lists by using the EAC or the Exchange Management Shell. 
 
 To create an address list, use the following syntax:
 
-```
+```PowerShell
 New-AddressList -Name "<Address List Name>" [-Container <ExistingAddressListPath>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
@@ -367,7 +367,7 @@ This example creates an address list with a precanned recipient filter:
 
 - **Precanned recipient filter**: All users with mailboxes where the **State or province** value is GA, AL, or LA (Georgia, Alabama, or Louisiana).
 
-```
+```PowerShell
 New-AddressList -Name "Southeast Offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "GA","AL","LA"
 ```
 
@@ -379,7 +379,7 @@ This example creates an address list with a custom recipient filter:
 
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
 
-```
+```PowerShell
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
@@ -393,7 +393,7 @@ To verify that you've successfully created an address list, use either of the fo
 
 - In the Exchange Management Shell, replace _[\<AddressListPath\>_\] _\<AddressListName\>_ with the name and (optionally) location of the address list, and run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-AddressList -Identity "[<AddressListPath>\]<AddressListName>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
   ```
 
@@ -427,7 +427,7 @@ To verify that you've successfully created an address list, use either of the fo
 
 To modify an existing address list, use the following syntax:
 
-```
+```PowerShell
 Set-AddressList -Identity <AddressListIdentity> [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
@@ -435,7 +435,7 @@ When you modify the _Conditional_ parameter values, you can use the following sy
 
 This example modifies the existing address list named Southeast Offices by adding the **State or province** value TX (Texas) to the precanned recipient filter.
 
-```
+```PowerShell
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
@@ -449,7 +449,7 @@ To verify that you've successfully modified an address list, use either of the f
 
 - In the Exchange Management Shell, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
   ```
 
@@ -459,13 +459,13 @@ You can select the location of an address list when you create an address list i
 
 To move an address list, use the following syntax:
 
-```
+```PowerShell
 Move-AddressList -Identity "<AddressListIdentity>" -Target "<AddressListIdentity or \>"
 ```
 
 This example moves the address list named Southeast Offices from the root (" `\`", also known as All Address Lists) to the address list named North America.
 
-```
+```PowerShell
 Move-AddressList -Identity "Southeast Offices" -Target "North America"
 ```
 
@@ -479,7 +479,7 @@ To verify that you've successfully modified an address list, use either of the f
 
 - In the Exchange Management Shell, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
   ```
 
@@ -507,13 +507,13 @@ If the address list contains more than 3000 recipients, we recommend that you us
 
 To remove an address list, use the following syntax:
 
-```
+```PowerShell
 Remove-AddressList -Identity "[<AddressListPath>\]<AddressListName>" [-Recursive]
 ```
 
 This example removes the address list named Southeast Offices and all its children from under the North America address list.
 
-```
+```PowerShell
 Remove-AddressList -Identity "North America\Southeast Offices" -Recursive
 ```
 
@@ -527,7 +527,7 @@ To verify that you've successfully removed an address list, use either of the fo
 
 - In the Exchange Management Shell, run the following command to verify that the address list isn't listed:
 
-  ```
+  ```PowerShell
   Get-AddressList
   ```
 
@@ -571,7 +571,7 @@ Hiding a mailbox from address lists also prevents Outlook from finding the mailb
 
 To hide a recipient from address lists, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled $true
 ```
 
@@ -593,13 +593,13 @@ Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled
 
 This example hides the distribution group named Internal Affairs from address lists.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Internal Affairs" -HiddenFromAddressListsEnabled $true
 ```
 
 This example hides the mailbox michelle@contoso.com from address lists.
 
-```
+```PowerShell
 Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
 ```
 
@@ -617,7 +617,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 
 - In the Exchange Management Shell, run the following command and verify the recipient is listed:
 
-  ```
+  ```PowerShell
   Get-Recipient -ResultSize unlimited -Filter "HiddenFromAddressListsEnabled -eq `$true"
   ```
 

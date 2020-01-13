@@ -106,13 +106,13 @@ If one of these connectors exists, and you try to create a custom Receive connec
 
 To create an Internet Receive connector, use this syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <UniqueName> [-TransportRole Frontend] -Internet -Bindings <UniqueValidLocalIPAddress>
 ```
 
 This example creates a new Receive connector named Internet Receive Connector on a Mailbox server that listens on port 25 on the local IP address 10.1.15 from all remote IP addresses:
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend -Internet -Bindings 10.10.1.1:25
 ```
 
@@ -124,7 +124,7 @@ New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend 
 
 This example creates a new Receive connector named Internet Receive Connector that listens on port 25 from all remote IP addresses, but on all available local IP addresses. You can only run this command if the server has no other Receive connectors that are configured to listen on port 25 using all available local IP addresses.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend -Internet -Bindings "0.0.0.0","[::]:"
 ```
 
@@ -140,7 +140,7 @@ To verify that you've successfully created a Receive connector to receive messag
 
 - In the Exchange Management Shell, run this command on the server, and verify the property values:
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector | where {$_.Bindings -like '*25' -AND $_.PermissionGroups -like '*AnonymousUsers*'} | Format-List Identity,Bindings,RemoteIPRanges,PermissionGroups
   ```
 
@@ -200,13 +200,13 @@ For this scenario, the Receive connector listens for TLS authenticated SMTP conn
 
 To create a Receive connector that uses TLS to encrypt messages from a partner, use this syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <UniqueName> [-TransportRole Frontend] -Partner  -Bindings <0.0.0.0:25 | LocalIPAddress:25> -RemoteIPRanges <RemoteIPAddresses>
 ```
 
 This example creates a Receive connector named Fabrikam.com TLS on a Mailbox server that only accepts messages from the IP addresses 17.17.17.1/24 using all available local IP addresses.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Fabrikam.com TLS" -TransportRole Frontend -Partner -RemoteIPRanges 17.17.17.1/24 -Bindings 0.0.0.0:25
 ```
 
@@ -222,7 +222,7 @@ To verify that you've successfully created a Receive connector to receive TLS en
 
 - In the Exchange Management Shell, run this command on the server, and verify the property values:
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector | where {$_.Bindings -like '*25' -AND $_.PermissionGroups -like '*Partners*'} | Format-List Identity,Bindings,RemoteIPRanges,PermissionGroups
   ```
 
@@ -295,7 +295,7 @@ For this scenario, the Receive connector listens for connections on port 25, but
 
 To create a Receive connector that only accepts messages from a specific service or device, use this syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <UniqueName> [-TransportRole Frontend] -Custom -Bindings <0.0.0.0:25 | LocalIPAddress:25> -RemoteIPRanges <RemoteIPAddresses> -AuthMechanism <AuthMechanism1>,<AuthMechanism2>... - PermissionGroups <PermissionGroup1>,<PermissionGroup2>...
 ```
 
@@ -309,7 +309,7 @@ This example creates a Receive connector named Inbound From Service on a Mailbox
 
 - **Permission groups**: Anonymous users.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Inbound From Service" -TransportRole Frontend -Custom -Bindings 0.0.0.0:25 -RemoteIPRanges 192.168.10.5 -AuthMechanism BasicAuth -PermissionGroups AnonymousUsers
 ```
 
@@ -325,7 +325,7 @@ To verify that you've successfully created a Receive connector that only accepts
 
 - In the Exchange Management Shell, run this command on the server, and verify the property values:
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector | where {$_.Bindings -like '*25'} | Format-List Identity,RemoteIPRanges,PermissionGroups,AuthMechanism
   ```
 
@@ -341,13 +341,13 @@ You don't need to configure custom Receive connectors for internal mail flow bet
 
 To create a Receive connector that only accepts messages from an internal Exchange server, use this syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <UniqueName> [-TransportRole Frontend] -Internal -RemoteIPRanges <RemoteIPAddress>
 ```
 
 This example creates a Receive connector named Inbound From Organization on an unsubscribed Edge Transport server that listens for inbound messages from the internal Mailbox servers at IP addresses 10.1.2.10, 10.1.2.15, and 10.1.2.20.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Inbound From Organization" -Internal -RemoteIPRanges 10.1.2.10,10.1.2.15,10.1.2.20
 ```
 
@@ -363,7 +363,7 @@ To verify that you've successfully created a Receive connector that only accepts
 
 - In the Exchange Management Shell, run this command on the server, and verify the property values:
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector | where {$_.Bindings -like '*25'} | Format-List Identity,RemoteIPRanges,PermissionGroups,AuthMechanism
   ```
 

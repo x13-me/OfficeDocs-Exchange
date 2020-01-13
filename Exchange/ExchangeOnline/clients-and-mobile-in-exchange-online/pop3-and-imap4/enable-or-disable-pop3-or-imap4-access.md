@@ -57,25 +57,25 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
 
 This example enables POP3 for the user Christa Knapp.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Christa Knapp" -POPEnabled $true
 ```
 
 This example enables IMAP4 for the user Christa Knapp.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $true
 ```
 
 This example disables POP3 for the user Christa Knapp.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Christa Knapp" -POPEnabled $false
 ```
 
 This example disables IMAP4 for the user Christa Knapp.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $false
 ```
 
