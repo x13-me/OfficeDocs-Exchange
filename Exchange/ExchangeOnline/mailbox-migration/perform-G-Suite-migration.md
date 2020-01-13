@@ -249,7 +249,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 1. Connect to the service using Remote Powershell. See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) for more information.
 
-2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365. The following step uses 'admin123' as an example.
+2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365. The following steps use 'admin123' as an example.
 
 3. Run the following command:
 
