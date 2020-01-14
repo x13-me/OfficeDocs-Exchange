@@ -26,7 +26,7 @@ manager: serdars
 
 # Ways to migrate multiple email accounts to Office 365
 
-Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [Have users import their own email](mailbox-migration.md#Import) their own email, contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [Work with a partner to migrate email](mailbox-migration.md#Partner) to migrate email.
+Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [import their own email](mailbox-migration.md#Import), contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [work with a partner to migrate email](mailbox-migration.md#Partner).
 
 Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/p/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration.
 
