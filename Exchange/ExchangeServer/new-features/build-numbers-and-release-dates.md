@@ -55,7 +55,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2016 CU15](https://www.microsoft.com/en-us/download/details.aspx?familyID=0d01ba8c-d415-4bc9-b5c7-3bce431d2e3b)|December 17, 2019|15.1.1913.5|15.01.1913.005|
+|[Exchange Server 2016 CU15](https://www.microsoft.com/download/details.aspx?familyID=0d01ba8c-d415-4bc9-b5c7-3bce431d2e3b)|December 17, 2019|15.1.1913.5|15.01.1913.005|
 |[Exchange Server 2016 CU14](https://www.microsoft.com/download/details.aspx?id=100302)|September 17, 2019|15.1.1847.3|15.01.1847.003|
 |Exchange Server 2016 CU13|June 18, 2019|15.1.1779.2|15.01.1779.002|
 |Exchange Server 2016 CU12|February 12, 2019|15.1.1713.5|15.01.1713.005|
