@@ -23,13 +23,13 @@ You can create this SST certificate store file by exporting the certificates fro
 
 Once you have the SST certificate store file, use the following syntax in the Exchange Management Shell to save the SST file contents in the Exchange Online virtual certificate store. To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
 ```
 
 This example imports the SST file C:\My Documents\Exported Certificate Store.sst.
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
