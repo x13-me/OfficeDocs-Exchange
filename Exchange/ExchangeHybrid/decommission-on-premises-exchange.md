@@ -99,7 +99,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
    Exchange Server 2016 or later:
 
    ```PowerShell
-   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
+   Get-ClientAccessService | Set-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
    > [!NOTE]
@@ -189,13 +189,16 @@ The graphic below describes the actual end state:
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
    Exchange Server 2010 or 2013:
+
    ```PowerShell
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
+
    Exchange Server 2016 or later:
+
    ```PowerShell
-   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
-   ```PowerShell
+   Get-ClientAccessService | Set-ClientAccessService -AutoDiscoverServiceInternalUri $Null
+   ```
 
    > [!NOTE]
    > If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings
