@@ -299,7 +299,7 @@ ContentFilter "Sender -eq 'tony'"
 </tr>
 <tr class="even">
 <td><p>Sent</p></td>
-<td><p>This property returns messages that were sent by with the specified Sent time stamp.</p></td>
+<td><p>This property returns messages that were sent with the specified Sent time stamp.</p></td>
 <td><p>Date-Time stamp</p></td>
 <td>
 
