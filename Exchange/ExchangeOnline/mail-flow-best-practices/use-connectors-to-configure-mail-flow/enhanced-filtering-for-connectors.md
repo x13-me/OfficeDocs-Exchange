@@ -61,7 +61,9 @@ Using the previous example, you would configure the IP address of the third-part
 
 - You apply Enhanced Filtering for Connectors individually on each inbound connector.
 
-- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center). To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center).
+
+- The cmdlets to manage inbound connectors are available in Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
@@ -100,7 +102,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 5. If you have an mail flow rule (also known as a transport rule) rule that force messages to skip filtering once it comes into EOP (i.e., marking the SCL of the message to -1 to prevent double filtering), you will need to disable that mail flow rule.
 
-### Use Security & Compliance PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
+### Use Exchange Online PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
 
 To configure Enhanced Filtering for Connectors on an inbound connector, use the following syntax:
 
@@ -123,11 +125,6 @@ Set-InboundConnector -Identity <ConnectorIdentity> [-EFSkipLastIP <$true | $fals
   - **Classless Inter-Domain Routing (CIDR) IP**: For example, `192.168.3.1/24`.
 
 - _EFUsers_: The comma-separated email address of the recipients that you want to apply Enhanced Filtering for Connectors to. The default value is blank (`$null`), which means Enhanced Filtering for Connectors is applied to all recipients.
-
-- _EFSkipMailGateway_: Reserved for future use.
-
-- _EFTestMode_: Reserved for future use.
-
 
 This example configures Enhanced Filtering for Connectors on the inbound connector named From Anti-spam Service with the following settings:
 

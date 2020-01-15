@@ -252,13 +252,6 @@ The actions that are available in transport rules on Mailbox servers are describ
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Notify the recipient with a message</strong></p></td>
-<td><p><em>GenerateNotification</em></p></td>
-<td><p><code>NotificationMessageText</code></p></td>
-<td><p>Specifies the text, HTML tags, and message keywords to include in the notification message that's sent to the message's recipients. For example, you can notify recipients that the message was rejected by the rule, or marked as spam and delivered to their Junk Email folder.</p></td>
-<td><p>Exchange 2013 or later</p></td>
-</tr>
-<tr class="odd">
 <td><p><strong>Properties of this rule</strong> section &gt; <strong>Audit this rule with severity level</strong></p></td>
 <td><p><em>SetAuditSeverity</em></p></td>
 <td><p><code>AuditSeverityLevel</code></p></td>
@@ -269,7 +262,7 @@ The actions that are available in transport rules on Mailbox servers are describ
 </ul></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><strong>Properties of this rule</strong> section &gt; <strong>Stop processing more rules</strong></p>
 <p><strong>More options</strong> &gt; <strong>Properties of this rule</strong> section &gt; <strong>Stop processing more rules</strong></p></td>
 <td><p><em>StopRuleProcessing</em></p></td>
