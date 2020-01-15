@@ -362,8 +362,6 @@ A number of commands now need to be run both in your Exchange Server on-premises
    > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -AutoStart -NotificationEmails <email addresses for migration notifications>
    > ```
 
-   Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
-
 5. Finally, start the migration using the following command in Exchange Online PowerShell:
 
    ```PowerShell
