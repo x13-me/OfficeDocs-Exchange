@@ -346,19 +346,20 @@ A number of commands now need to be run both in your Exchange Server on-premises
 4. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
    ```PowerShell
+   [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
+   $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
    New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart
    ```
 
-   >[!Note]
+   > [!Note]
    > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
    >
    > ```PowerShell
-   >[byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
-   >New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <HierarchyMailboxGUID> -AutoStart -NotificationEmails <email addresses for migration notifications>
-   >```
+   > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -AutoStart -NotificationEmails <email addresses for migration notifications>
+   > ```
    >
-   >Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
-   >   
+   > Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
+   >
    > Separate multiple email addresses with commas.
 
 5. Finally, start the migration using the following command in Exchange Online PowerShell:
