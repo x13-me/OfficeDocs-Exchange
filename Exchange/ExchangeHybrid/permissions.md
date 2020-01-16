@@ -39,7 +39,7 @@ In on-premises Exchange deployments, users can be granted a variety of permissio
 
 ### Mailbox permissions in hybrid environments
 
-Not all milbox permissions are fully supported in an Exchange hybrid environment.
+Not all mailbox permissions are fully supported in an Exchange hybrid environment.
 
 #### Mailbox permissions supported in hybrid environments
 
