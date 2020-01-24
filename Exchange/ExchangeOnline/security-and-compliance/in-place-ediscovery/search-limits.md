@@ -18,7 +18,7 @@ manager: serdars
 
 # Search limits for In-Place eDiscovery in Exchange Online
 
-Various types of limits are applied to In-Place eDiscovery searches in Exchange Online and Office 365. These limits help to maintain the health and quality of services provided to Office 365 organizations. In most cases, you can't modify these limits, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
+Various types of limits are applied to In-Place eDiscovery searches in Exchange Online. These limits help to maintain the health and quality of services provided to Office 365 organizations. In most cases, you can't modify these limits, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
 ## Source mailbox limits
 <a name="mailboxlimits"> </a>
