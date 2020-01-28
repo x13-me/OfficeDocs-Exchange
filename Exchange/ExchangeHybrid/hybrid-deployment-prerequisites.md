@@ -79,7 +79,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 - **EdgeSync**: If you've deployed Edge Transport servers in your on-premises organization and want to configure the Edge Transport servers for hybrid secure mail transport, you need configure EdgeSync prior to using the Hybrid Configuration wizard. You also need to run EdgeSync each time you apply a new CU to an Edge Transport server.
 
   > [!IMPORTANT]
-  > Although EdgeSync is a requirement in deployments with Edge Transport servers, additional manual transport configuration settings are be required when you configure Edge Transport servers for hybrid secure mail transport.
+  > Although EdgeSync is a requirement in deployments with Edge Transport servers, additional configuration settings are required when you configure Edge Transport servers for hybrid secure mail transport.
 
   Learn more at [Edge Transport servers with hybrid deployments](edge-transport-servers.md).
 
@@ -110,7 +110,7 @@ You need to configure the following protocols, ports, and connection endpoints i
 - The outbound ports required for mail flow and client connectivity in your on-premises Exchange organization are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
 
 |**Description**|**Port**|**On-premises endpoint**|**Authentication Provider**|**Authorization Method**|**Pre-Auth Supported?**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |SMTP mail flow between Office 365 and on-premises Exchange|TCP 25 (SMTP)|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 Hub/Edge|N/A|Certificate-based|No|
 |Autodiscover|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox server: /autodiscover/autodiscover.svc/wssecurity<br/><br/> Exchange 2013/2010 CAS: /autodiscover/autodiscover.svc|Azure AD authentication system|WS-Security Authentication|No|
 |Free/busy, MailTips, and message tracking (EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/> /ews/exchange.asmx/wssecurity|Azure AD authentication system|WS-Security Authentication|No|
@@ -118,7 +118,7 @@ You need to configure the following protocols, ports, and connection endpoints i
 |Mailbox migrations (EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/>/ews/mrsproxy.svc|NTLM|Basic|No|
 |OAuth (Autodiscover and EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/> /ews/exchange.asmx/wssecurity <br/> /autodiscover/autodiscover.svc/wssecurity <br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
 |AD FS (Windows Server)|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server: /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
-|AAD Connect|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server (AD FS)|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
+|AAD Connect|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server (AD FS): /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 
 ## Recommended tools and services
 
