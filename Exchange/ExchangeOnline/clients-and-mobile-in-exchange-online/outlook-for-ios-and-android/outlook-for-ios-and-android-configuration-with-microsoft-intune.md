@@ -119,8 +119,7 @@ Outlook supports the following settings for configuration:
 <tr class="odd">
 <td>Suggested replies</td>
 <td>On</td>
-<td><p>By default, Outlook for Android suggests replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</p>
-<p>This setting is only available for Outlook for Android.</p></td>
+<p>By default, Outlook for iOS and Android suggests replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 <td>App default</td>
 </tr>
 <tr class="even">
