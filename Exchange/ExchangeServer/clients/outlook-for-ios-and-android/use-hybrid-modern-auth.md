@@ -253,6 +253,8 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Play My Emails
 
+- Sensitivity labeling
+
 ## Connection Flow FAQ
 
 **Q**: My organization has a security policy that requires Internet inbound connections to be restricted to approved IP addresses or FQDNs. Is that possible with this architecture?
