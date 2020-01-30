@@ -88,3 +88,5 @@ The following features are not support for on-premises mailboxes using basic aut
 - Interesting Calendars
 
 - Avatar support
+
+- Play My Emails
