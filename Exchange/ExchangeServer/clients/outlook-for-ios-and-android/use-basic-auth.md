@@ -24,7 +24,7 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
 
 Outlook for iOS and Android is a cloud-backed application. This means your experience consists of a locally installed app powered by a secure and scalable service running in the Microsoft Cloud.
 
-For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud (using Office 365 and Microsoft Azure) customers receive the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://www.microsoft.com/trust-center). 
+For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud, providing  customers the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://www.microsoft.com/trust-center). 
 
 The following environments will take advantage of this Office 365-based architecture:
 
