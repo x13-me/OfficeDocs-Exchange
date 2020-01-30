@@ -90,3 +90,7 @@ The following features are not support for on-premises mailboxes using basic aut
 - Avatar support
 
 - Play My Emails
+
+- S/MIME
+
+- Sensitivity labeling
