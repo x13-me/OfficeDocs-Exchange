@@ -247,8 +247,6 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Task management with Microsoft To-Do
 
-- Favorite People with Notifications
-
 - Add-ins
 
 - Interesting Calendars
