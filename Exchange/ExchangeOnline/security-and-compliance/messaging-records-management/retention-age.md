@@ -43,7 +43,7 @@ Items in the Deleted Items folder and items which may have a start and end date,
 
 |**If the user...**|**The retention tags on folder...**|**The Managed Folder Assistant...**|
 |:-----|:-----|:-----|
-|Receives a message in the Inbox on 01/26/2019. Deletes the message on 2/27/2019.|Inbox: Delete in 365 days <br/><br/> Deleted Items: Delete in 30 days|Processes the message in the Inbox on 1/26/2019, stamps it with a start date of 01/26/2019 and an expiration date of 01/26/2014. <br/><br/> Processes the message again in the Deleted Items folder on 2/27/2019. It recalculates the expiration date based on the same start date (01/26/2019). Because the item is older than 30 days, it is expired immediately.|
+|Receives a message in the Inbox on 01/26/2019. Deletes the message on 2/27/2019.|Inbox: Delete in 365 days <br/><br/> Deleted Items: Delete in 30 days|Processes the message in the Inbox on 1/26/2019, stamps it with a start date of 01/26/2019 and an expiration date of 01/26/2020. <br/><br/> Processes the message again in the Deleted Items folder on 2/27/2019. It recalculates the expiration date based on the same start date (01/26/2019). Because the item is older than 30 days, it is expired immediately.|
 |Receives a message in the Inbox on 01/26/2019. Deletes the message on 2/27/2019.|Inbox: None (inherited or implicit) <br/><br/> Deleted Items: Delete in 30 days|Processes the message in the Deleted Items folder on 02/27/2019 and determines the item doesn't have a start date. <br/><br/> It stamps the current date as the start date, and 03/27/2019 as the expiration date. The item is expired on 3/27/2019, which is 30 days after the user deleted or moved it to the Deleted Items folder.|
 
 ## More Info
