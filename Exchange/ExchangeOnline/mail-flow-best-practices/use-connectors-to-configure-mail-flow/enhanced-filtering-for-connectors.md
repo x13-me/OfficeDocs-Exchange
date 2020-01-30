@@ -44,7 +44,7 @@ In this example, the source of the incoming messages is somewhere on the interne
 When the message comes into Office 365, Exchange Online Protection (EOP) believes that the third-party filter is the source of the message. This isn't a limitation of Office 365; it's simply how SMTP works.
 
 > [!IMPORTANT]
-> Do not put another scanning service or host after Exchange Online Protection (EOP). Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization; when the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](https://docs.microsoft.com/en-us/exchange/transport-options) should not be used to introduce non-Exchange servers into the mail flow path.  
+> Do not put another scanning service or host after Exchange Online Protection (EOP). Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization; when the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](https://docs.microsoft.com/exchange/transport-options) should not be used to introduce non-Exchange servers into the mail flow path.  
 
 ## What happens when you enable Enhanced Filtering for Connectors?
 
