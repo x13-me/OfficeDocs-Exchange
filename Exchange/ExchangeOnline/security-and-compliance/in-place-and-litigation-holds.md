@@ -59,6 +59,9 @@ Using this new model, In-Place Hold allows you to create granular hold policies 
 
 - **Indefinite hold**: The indefinite hold scenario is similar to Litigation Hold. It's intended to preserve mailbox items so you can meet eDiscovery requirements. During the period of litigation or investigation, items are never deleted. The duration isn't known in advance, so no end date is configured. To hold all mail items indefinitely, you don't specify any query parameters or time duration when creating an In-Place Hold.
 
+    > [!IMPORTANT]
+    > Placing a mailbox on an indefinite hold means that mail items meeting the hold requirements will never be removed from the mailbox. This could result in the mailbox exceeding the [Recoverable Items Quota](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds#holds-and-the-recoverable-items-folder), which could make the mailbox unusable. Microsoft recommends enabling an [Archive](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features) for the mailbox, as well as enabling the [auto-expanding archive feature](https://docs.microsoft.com/en-us/microsoft-365/compliance/unlimited-archiving). See [Holds and Mailbox Quotas](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds#holds-and-mailbox-quotas) for more information.
+
 - **Query-based hold**: If your organization preserves items based on specified query parameters, you can use a query-based In-Place Hold. You can specify query parameters such as keywords, start and end dates, sender and recipient addresses, and message types. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved.
 
     > [!IMPORTANT]
