@@ -94,3 +94,5 @@ The following features are not support for on-premises mailboxes using basic aut
 - S/MIME
 
 - Sensitivity labeling
+
+- Discover Feed
