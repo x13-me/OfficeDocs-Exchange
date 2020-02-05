@@ -20,6 +20,9 @@ To manually provision mail-enabled users without DirSync, see [Manage mail users
 
 All of the procedures in this article assume that your Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
+   > [!NOTE]
+   > G Suite migration is not currently available for Office 365 US Government GCC High or DoD. 
+
 ## Overview of the process
 
 Before beginning your migration, please review the following diagrams to understand how a G Suite staged migration works. The diagrams show how a fictitious company named Fabrikam, Inc., with the domain name *fabrikaminc.net* performed their migration.
