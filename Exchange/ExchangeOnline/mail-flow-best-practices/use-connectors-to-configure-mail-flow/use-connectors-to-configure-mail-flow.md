@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure mail flow using connectors in Office 365
 ms.collection: exchange-online
 audience: ITPro

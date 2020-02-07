@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable a customized non-business hours greeting in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

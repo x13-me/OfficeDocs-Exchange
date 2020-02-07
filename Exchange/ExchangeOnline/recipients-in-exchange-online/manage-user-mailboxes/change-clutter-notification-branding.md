@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change the branding of Clutter notifications
 ms.collection: 
 - exchange-online

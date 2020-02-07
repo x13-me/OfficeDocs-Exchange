@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f76472fd-aa1a-4cd8-8e26-cc674421d375
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create business hours navigation menus in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

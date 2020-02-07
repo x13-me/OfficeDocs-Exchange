@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d161f94a-a243-4294-93b3-2bf1dc17b59f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configuration notes for supported session border controllers in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fe3a8797-1230-49cb-a839-ccec238266b6
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

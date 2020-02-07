@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Common message approval scenarios in Exchange Online
 ms.collection: 
 - exchange-online

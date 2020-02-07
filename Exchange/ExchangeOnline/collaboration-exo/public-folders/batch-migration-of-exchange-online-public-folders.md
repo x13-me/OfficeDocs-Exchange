@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: How to move your Exchange Online public folders to Office 365 Groups.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Use batch migration to migrate Exchange Online public folders to Office 365 Groups
 
 ---

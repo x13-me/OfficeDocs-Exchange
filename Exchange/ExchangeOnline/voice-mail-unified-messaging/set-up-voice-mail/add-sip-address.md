@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add a SIP address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

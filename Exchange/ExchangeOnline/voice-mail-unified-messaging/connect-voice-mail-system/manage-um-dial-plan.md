@@ -3,11 +3,13 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 ms.author: v-mapenn
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
 ms.reviewer: 
+f1.keywords:
+- NOCSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 title: Manage a UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

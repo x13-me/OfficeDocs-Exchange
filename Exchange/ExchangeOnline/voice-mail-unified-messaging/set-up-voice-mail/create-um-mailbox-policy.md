@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 7f20874b-c46c-4505-9a78-f63eacb578ff
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: UM IP gateways in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

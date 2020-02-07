@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 51cd6dc4-11d1-4eb9-a6c6-1965fcd24267
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable Message Waiting Indicator (MWI) for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

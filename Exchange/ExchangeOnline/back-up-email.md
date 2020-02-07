@@ -7,6 +7,8 @@ ms.author: v-mapenn
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
 ms.reviewer: 
 title: Back up email in Exchange Online
+f1.keywords:
+- NOCSH
 ms.collection: 
 - exchange-online
 - M365-email-calendar

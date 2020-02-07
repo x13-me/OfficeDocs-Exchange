@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Messaging records management
 ms.collection: 
 - exchange-online

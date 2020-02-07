@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 094c50b2-072b-4929-aaf8-f7db5b19e9b6
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable a customized non-business hours menu prompt in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

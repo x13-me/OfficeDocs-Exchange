@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a DLP policy from a template
 ms.collection:
 - exchange-online

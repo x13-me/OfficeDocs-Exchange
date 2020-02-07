@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a56bfd75-7bc5-49b9-b098-06855a720dcd
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set mailbox features for an Outlook Voice Access user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
