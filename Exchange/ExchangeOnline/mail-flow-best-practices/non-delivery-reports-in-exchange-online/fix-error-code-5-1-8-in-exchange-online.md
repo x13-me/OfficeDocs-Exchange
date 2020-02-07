@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 search.appverid:
 - BCS160
