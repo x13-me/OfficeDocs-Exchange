@@ -12,6 +12,8 @@ ms.collection:
 - Adm_O365
 - Hybrid
 - M365-email-calendar
+f1.keywords:
+- CSH
 ms.custom:
 - Adm_O365
 - httpsfix

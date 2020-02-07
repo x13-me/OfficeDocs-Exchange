@@ -10,6 +10,8 @@ title: Remote Connectivity Analyzer tests for Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
