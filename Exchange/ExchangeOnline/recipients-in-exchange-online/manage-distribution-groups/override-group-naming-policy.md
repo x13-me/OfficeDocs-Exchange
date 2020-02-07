@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9eb23fc9-3f59-4d09-9077-85c89a051ee0
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Override the distribution group naming policy
 ms.collection: 
 - exchange-online

@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a public folder
 ms.collection: 
 - exchange-online

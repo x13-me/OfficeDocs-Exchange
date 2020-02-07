@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: In-Place eDiscovery
 ms.collection: 
 - exchange-online

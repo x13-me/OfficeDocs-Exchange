@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange Server environment.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Configure Exchange Server public folders for a hybrid deployment
 
 ---

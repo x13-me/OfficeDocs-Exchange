@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
 ms.collection: 
 - exchange-online

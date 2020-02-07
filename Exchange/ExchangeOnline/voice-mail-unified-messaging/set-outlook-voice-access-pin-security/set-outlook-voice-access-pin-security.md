@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ef6d9151-d333-4f52-9338-273f7a291e54
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set Outlook Voice Access PIN security in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

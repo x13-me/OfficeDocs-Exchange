@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: What happened to delivery reports in Office 365?
 ms.collection: exchange-online
 search.appverid:

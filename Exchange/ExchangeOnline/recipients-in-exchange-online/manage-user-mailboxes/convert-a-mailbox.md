@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Convert a mailbox
 ms.collection: 
 - exchange-online

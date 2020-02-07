@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Include text with the email message sent when a user Is enabled for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -2,10 +2,6 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- O365P_MigrationsIMAPGmailAppPass
-- O365M_MigrationsIMAPGmailAppPass
-- O365E_MigrationsIMAPGmailAppPass
 ms.author: v-mapenn
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
 ms.reviewer: 
@@ -29,7 +25,11 @@ search.appverid:
 audience: Admin
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom: 
+- Adm_O365_Setup
+- O365P_MigrationsIMAPGmailAppPass
+- O365M_MigrationsIMAPGmailAppPass
+- O365E_MigrationsIMAPGmailAppPass
 ms.service: exchange-online
 manager: serdars
 

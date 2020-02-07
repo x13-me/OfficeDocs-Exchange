@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Manage journaling in Exchange Online
 ms.collection: 
 - exchange-online

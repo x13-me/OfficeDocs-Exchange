@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Monitoring, reporting, and message tracing in Exchange Online
 ms.collection: 
 - exchange-online

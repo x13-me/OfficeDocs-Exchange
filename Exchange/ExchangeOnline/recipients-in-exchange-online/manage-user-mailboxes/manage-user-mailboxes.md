@@ -3,7 +3,9 @@ localization_priority: Normal
 description: After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage
 ms.author: v-mapenn
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566

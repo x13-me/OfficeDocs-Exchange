@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a82d85f7-de30-40db-8ee6-b091ac14da9d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure a DTMF fallback auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

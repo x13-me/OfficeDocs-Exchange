@@ -8,6 +8,10 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab
 title: Manage a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
