@@ -10,6 +10,8 @@ title: Add an address list to or remove an address list from an offline address 
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---

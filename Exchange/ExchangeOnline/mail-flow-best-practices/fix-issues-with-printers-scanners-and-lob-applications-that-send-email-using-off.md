@@ -14,6 +14,8 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: serdars

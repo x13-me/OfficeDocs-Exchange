@@ -17,6 +17,8 @@ search.appverid:
 - MED150
 - MET150
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom:
 - Adm_O365
 - Adm_O365_FullSet
