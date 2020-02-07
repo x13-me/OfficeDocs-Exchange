@@ -26,31 +26,31 @@ additionalContent:
         # Card
         - title: Exchange Server 2016 and Exchange Server 2019
           summary: Deploy and manage Exchange 2016 and Exchange 2019 for your organization.
-          url: /Exchange/exchange-server.md
+          url: /Exchange/exchange-server
         # Card
         - title: Exchange Server 2013
           summary: Deploy and manage Exchange 2013 for your organization.
-          url: /Exchange/exchange-server-2013-exchange-2013-help.md
+          url: /Exchange/exchange-server-2013-exchange-2013-help
         # Card
         - title: Exchange Online
           summary: Find resources for managing Exchange Online in your Office 365 environment.
-          url: /Exchange/exchange-online.md
+          url: /Exchange/exchange-online
         # Card
         - title: Hybrid deployments
           summary: Learn about solutions for Exchange hybrid environments, and how to connect Exchange Server and Office 365.
-          url: /Exchange/exchange-hybrid.md
+          url: /Exchange/exchange-hybrid
         # Card
         - title: PowerShell Reference for Exchange
           summary: Learn about the PowerShell cmdlets you need to manage Exchange Server, Exchange Online, Office 365 Security &amp; Compliance Center, and Exchange Online Protection.
-          url: https://docs.microsoft.com/powershell/exchange
+          url: /powershell/exchange
         # Card
         - title: Exchange Online Protection
           summary: Help protect your organization against spam &amp; malware, and use safeguard features that protect your organization from messaging-policy violations.
-          url: https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview
+          url: /Office365/SecurityCompliance/eop/exchange-online-protection-overview
         # Card
         - title: Troubleshoot
           summary: Find troubleshooting and support resources for IT Professionals and admins.
-          url: https://docs.microsoft.com/office/troubleshoot
+          url: /office/troubleshoot
     - title: For other audiences # < 60 chars (optional)
       items:
         # Card
@@ -60,5 +60,5 @@ additionalContent:
         # Card
         - title: Developers
           summary: Guidance for developing solutions for Exchange.
-          url: https://docs.microsoft.com/exchange/client-developer/exchange-server-development
+          url: /Exchange/client-developer/exchange-server-development
 
