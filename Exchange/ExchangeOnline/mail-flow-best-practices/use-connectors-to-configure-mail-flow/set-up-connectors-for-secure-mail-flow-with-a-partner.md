@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set up connectors for secure mail flow with a partner organization
 ms.collection: exchange-online
 audience: ITPro

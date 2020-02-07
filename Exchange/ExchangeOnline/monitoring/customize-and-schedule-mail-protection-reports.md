@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 51832055-1696-4443-8579-bc76b8db92a3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Customize and schedule mail protection reports in Office 365 to be automatically sent to your inbox
 ms.collection: 
 - exchange-online

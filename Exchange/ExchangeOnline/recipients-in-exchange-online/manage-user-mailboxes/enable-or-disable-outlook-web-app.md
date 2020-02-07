@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Outlook on the web for a mailbox
 ms.collection: 
 - exchange-online

@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure message delivery restrictions for a mailbox
 ms.collection: 
 - exchange-online

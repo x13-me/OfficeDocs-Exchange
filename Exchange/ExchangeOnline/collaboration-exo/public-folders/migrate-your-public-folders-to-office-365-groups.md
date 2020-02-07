@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Migrate your public folders to Office 365 Groups
 ms.collection:
 - Strat_EX_EXOBlocker

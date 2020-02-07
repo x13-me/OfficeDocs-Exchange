@@ -8,6 +8,8 @@ f1_keywords:
 ms.author: v-mapenn
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Do I need to create a connector in Exchange Online?
 ms.collection: exchange-online
 audience: ITPro

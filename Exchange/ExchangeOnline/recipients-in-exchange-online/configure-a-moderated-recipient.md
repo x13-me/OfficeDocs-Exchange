@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure a moderated recipient in Exchange Online
 ms.collection: 
 - exchange-online

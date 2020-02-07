@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create and manage room mailboxes
 ms.collection: 
 - exchange-online

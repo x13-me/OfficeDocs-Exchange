@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable faxing for a group of users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

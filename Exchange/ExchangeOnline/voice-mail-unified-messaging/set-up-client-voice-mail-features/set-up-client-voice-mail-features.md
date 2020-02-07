@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58493d02-0f66-4ea0-9686-ece51828f9f9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set up client voice mail features in Exchange
 ms.collection: exchange-online
 audience: ITPro

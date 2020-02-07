@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Use favorite public folders in Outlook on the web
 ms.collection: 
 - exchange-online

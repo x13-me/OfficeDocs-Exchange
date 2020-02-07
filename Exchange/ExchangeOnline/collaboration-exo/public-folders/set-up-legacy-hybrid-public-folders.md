@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: Use the steps in this article to synchronize public folders between Office 365 and your Exchange Server 2010 on-premises deployment.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Configure legacy on-premises public folders for a hybrid deployment
 
 ---

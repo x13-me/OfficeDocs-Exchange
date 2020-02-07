@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms.reviewer:
+f1.keywords:
+- NOCSH
 title: Clean up or delete items from the Recoverable Items folder in Exchange Online
 ms.collection:
 - exchange-online
