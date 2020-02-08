@@ -8,6 +8,8 @@ ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
 ms.reviewer:
 title: Mailbox database copies
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

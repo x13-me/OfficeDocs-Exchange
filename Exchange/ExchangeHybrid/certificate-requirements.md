@@ -4,6 +4,8 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

@@ -8,6 +8,8 @@ ms.assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
 ms.reviewer:
 title: Connect a disabled mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

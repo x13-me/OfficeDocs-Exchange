@@ -7,7 +7,7 @@ ms.author: v-mapenn
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
 ms.reviewer: 
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 title: Manage a UM dial plan in Exchange Online

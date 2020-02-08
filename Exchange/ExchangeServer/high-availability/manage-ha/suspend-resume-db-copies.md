@@ -8,6 +8,8 @@ ms.assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
 ms.reviewer:
 title: Suspend or resume a mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

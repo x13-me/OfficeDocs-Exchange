@@ -3,6 +3,8 @@ title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

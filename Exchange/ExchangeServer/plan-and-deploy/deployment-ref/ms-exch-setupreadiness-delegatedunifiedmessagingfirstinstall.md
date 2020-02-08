@@ -3,13 +3,15 @@ localization_priority: Normal
 description: Exchange Server 2016 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization.
 ms.topic: reference
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.DelegatedUnifiedMessagingFirstInstall
 ms.author: v-mapenn
 ms.assetid: 286b82ee-bddf-493c-b6ea-21aced6dbbad
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedUnifiedMessagingFirstInstall]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: Developer
 ms.prod: exchange-server-it-pro
 manager: serdars

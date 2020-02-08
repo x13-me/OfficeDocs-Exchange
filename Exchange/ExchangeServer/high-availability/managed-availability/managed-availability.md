@@ -8,6 +8,8 @@ ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 ms.reviewer:
 title: Managed availability
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

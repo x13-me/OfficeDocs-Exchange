@@ -8,6 +8,8 @@ ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.reviewer:
 title: Enable or disable single item recovery for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms.reviewer:
 title: Configure database availability group network properties
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

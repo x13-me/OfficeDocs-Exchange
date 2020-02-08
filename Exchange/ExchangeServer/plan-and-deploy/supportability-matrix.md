@@ -7,6 +7,8 @@ ms.author: v-mapenn
 ms.reviewer: 
 title: Exchange Server supportability matrix
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
 ms.prod: exchange-server-it-pro

@@ -5,7 +5,9 @@ author: mattpennathe3rd
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - 'O365E_HRCMoveRequest_FL312271'
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

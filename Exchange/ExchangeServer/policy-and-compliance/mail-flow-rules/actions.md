@@ -8,6 +8,8 @@ ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
 ms.reviewer:
 title: Mail flow rule actions in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

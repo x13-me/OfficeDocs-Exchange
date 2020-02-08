@@ -3,6 +3,8 @@ title: "How and when to decommission your on-premises Exchange servers in a hybr
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer:
 ms.topic: article

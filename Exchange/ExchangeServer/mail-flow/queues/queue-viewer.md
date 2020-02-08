@@ -8,6 +8,8 @@ ms.assetid: db892f88-5c13-4607-a38c-8845b35ab8b2
 ms.reviewer:
 title: Queue Viewer
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
 ms.reviewer: 
 title: Server health and performance in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
