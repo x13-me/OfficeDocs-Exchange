@@ -8,6 +8,8 @@ ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
 ms.reviewer:
 title: Transport logs in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

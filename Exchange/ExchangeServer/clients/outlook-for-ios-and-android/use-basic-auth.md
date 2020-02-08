@@ -7,6 +7,8 @@ ms.author: v-mapenn
 title: Using Basic authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

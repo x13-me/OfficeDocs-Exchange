@@ -8,6 +8,8 @@ ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
 ms.reviewer: 
 title: High availability and site resilience
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

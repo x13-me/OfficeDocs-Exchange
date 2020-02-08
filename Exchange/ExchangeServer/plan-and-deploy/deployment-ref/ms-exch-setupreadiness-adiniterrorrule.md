@@ -3,13 +3,15 @@ localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because another Microsoft Exchange System Object container exists in Active Directory.
 ms.topic: reference
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.AdInitErrorRule
 ms.author: v-mapenn
 ms.assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms.reviewer: 
 title: Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: Developer
 ms.prod: exchange-server-it-pro
 manager: serdars

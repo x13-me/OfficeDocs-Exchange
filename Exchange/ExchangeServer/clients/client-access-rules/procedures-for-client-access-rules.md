@@ -7,6 +7,8 @@ ms.author: v-mapenn
 monikerRange: exchserver-2019
 title: Procedures for Client Access Rules in Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-server-it-pro
 ms.reviewer:

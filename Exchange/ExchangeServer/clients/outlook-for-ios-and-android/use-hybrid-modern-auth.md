@@ -8,6 +8,8 @@ ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
 title: Using hybrid Modern Authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

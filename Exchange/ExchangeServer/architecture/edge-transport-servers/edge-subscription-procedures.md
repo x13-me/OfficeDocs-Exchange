@@ -8,6 +8,8 @@ ms.assetid: 27de4104-fb8e-4eab-9ad2-a64f81a4fb69
 ms.reviewer: 
 title: Procedures for Edge Subscriptions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -10,6 +10,8 @@ title: Migrate your public folders to Office 365 Groups
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

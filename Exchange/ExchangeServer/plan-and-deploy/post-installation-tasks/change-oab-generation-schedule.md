@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
 ms.author: v-mapenn
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
@@ -12,6 +12,8 @@ title: Change the offline address book generation schedule in Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

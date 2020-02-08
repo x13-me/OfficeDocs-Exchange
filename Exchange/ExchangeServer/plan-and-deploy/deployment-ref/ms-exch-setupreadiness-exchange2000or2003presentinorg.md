@@ -4,13 +4,15 @@ monikerRange: exchserver-2016 || exchserver-2019
 description: Setup can't continue because the organization contains one or more Exchange servers that are too old.
 ms.topic: reference
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.Exchange2000or2003PresentInOrg
 ms.author: v-mapenn
 ms.assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms.reviewer: 
 title: Can't install Exchange 2016 in a forest that contains Exchange 2000 or Exchange 2003 servers. [Exchange2000or2003PresentInOrg]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

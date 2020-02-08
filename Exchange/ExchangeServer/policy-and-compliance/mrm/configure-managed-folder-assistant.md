@@ -8,6 +8,8 @@ ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
 ms.reviewer:
 title: Configure and run the Managed Folder Assistant in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

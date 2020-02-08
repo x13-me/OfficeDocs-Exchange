@@ -6,13 +6,13 @@ manager: serdars
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting
-f1_keywords:
-- '125'
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: MiniMaven
+ms.custom: 
+- MiniMaven
+- '125'
 search.appverid:
 - BCS160
 - MOE150

@@ -11,6 +11,8 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: How to move your Exchange Server public folders to Office 365 Groups.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Use batch migration to migrate Exchange Server public folders to Office 365 Groups
 

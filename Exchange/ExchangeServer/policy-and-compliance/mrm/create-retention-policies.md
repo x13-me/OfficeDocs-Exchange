@@ -8,6 +8,8 @@ ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.reviewer:
 title: Create a retention policy in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms.reviewer: 
 title: Message properties and search operators for In-Place eDiscovery in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

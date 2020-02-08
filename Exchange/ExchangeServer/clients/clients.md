@@ -8,6 +8,8 @@ ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
 ms.reviewer: 
 title: Clients and mobile in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

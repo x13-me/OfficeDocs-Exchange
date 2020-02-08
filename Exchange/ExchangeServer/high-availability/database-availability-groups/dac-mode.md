@@ -8,6 +8,8 @@ ms.assetid: 57e4bf22-eeae-42a5-beb3-d68d06489592
 ms.reviewer:
 title: Datacenter Activation Coordination mode
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

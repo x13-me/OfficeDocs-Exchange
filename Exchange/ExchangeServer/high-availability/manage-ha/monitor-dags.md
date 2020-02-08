@@ -8,6 +8,8 @@ ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms.reviewer:
 title: Monitor database availability groups
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

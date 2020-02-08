@@ -8,6 +8,8 @@ ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer:
 title: In-Place eDiscovery in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
 title: Account setup in Outlook for iOS and Android using Basic authentication
 ms.collection: exchange-server
 ms.reviewer: smithre4
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
