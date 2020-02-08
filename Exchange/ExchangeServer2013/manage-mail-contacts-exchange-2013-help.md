@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailContactWizardForm.NewMailContactIntroductionWizardPage'
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

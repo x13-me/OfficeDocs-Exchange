@@ -8,6 +8,8 @@ ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.reviewer:
 title: In-Place Hold and Litigation Hold in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

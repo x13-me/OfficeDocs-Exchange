@@ -8,6 +8,8 @@ ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms.reviewer: 
 title: Message retry, resubmit, and expiration intervals
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

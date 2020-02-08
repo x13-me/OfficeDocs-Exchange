@@ -8,6 +8,8 @@ ms.assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms.reviewer:
 title: Move a mailbox database using database portability
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

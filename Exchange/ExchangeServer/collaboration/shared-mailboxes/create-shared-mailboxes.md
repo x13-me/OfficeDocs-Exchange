@@ -8,6 +8,8 @@ ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
 ms.reviewer:
 title: Create shared mailboxes in the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

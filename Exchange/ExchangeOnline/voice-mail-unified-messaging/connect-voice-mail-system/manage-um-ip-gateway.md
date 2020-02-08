@@ -3,13 +3,13 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
 ms.author: v-mapenn
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
 ms.reviewer: 
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
 f1.keywords:
-- NOCSH
+- CSH
 title: Manage a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

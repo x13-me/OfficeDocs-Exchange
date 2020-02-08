@@ -8,6 +8,8 @@ ms.assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms.reviewer: 
 title: Sensitive information types in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 keywords:
 - data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types

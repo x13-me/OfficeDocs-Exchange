@@ -8,6 +8,8 @@ ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 ms.reviewer:
 title: S/MIME for message signing and encryption
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

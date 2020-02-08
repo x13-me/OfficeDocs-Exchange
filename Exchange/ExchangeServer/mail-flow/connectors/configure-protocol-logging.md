@@ -8,6 +8,8 @@ ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms.reviewer: 
 title: Configure protocol logging
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms.reviewer: 
 title: Exchange Server architecture
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

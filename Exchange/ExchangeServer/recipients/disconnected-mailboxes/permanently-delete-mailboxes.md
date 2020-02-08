@@ -8,6 +8,8 @@ ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms.reviewer:
 title: Permanently delete a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

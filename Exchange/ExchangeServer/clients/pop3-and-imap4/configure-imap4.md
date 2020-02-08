@@ -8,6 +8,8 @@ ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
 ms.reviewer:
 title: Enable and configure IMAP4 on an Exchange server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

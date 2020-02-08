@@ -8,6 +8,8 @@ ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms.reviewer:
 title: Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
 ms.reviewer:
 title: Scenarios for custom Receive connectors in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

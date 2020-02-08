@@ -9,6 +9,8 @@ ms.assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms.collection: exchange-server
 ms.reviewer: 
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Mailbox imports and exports in Exchange Server
 

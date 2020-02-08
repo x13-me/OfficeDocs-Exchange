@@ -8,6 +8,8 @@ ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms.reviewer:
 title: Enable or disable mailbox audit logging for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

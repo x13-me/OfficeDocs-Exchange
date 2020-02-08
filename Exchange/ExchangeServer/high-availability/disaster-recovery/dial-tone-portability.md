@@ -8,6 +8,8 @@ ms.assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
 ms.reviewer:
 title: Dial tone portability
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

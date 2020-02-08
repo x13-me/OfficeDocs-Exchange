@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage'
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 
