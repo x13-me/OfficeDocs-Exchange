@@ -74,7 +74,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   The Internet Information Services (IIS) instance on the Exchange servers that are configured in the hybrid deployment require a valid digital certificate purchased from a trusted CA.
   
-  The EWS external URL and the Autodiscover endpoint that you specified in your public DNS must be listed in the Subject Alternative Name (SAN) field of the certificate. The certificates that you install on the Exchange servers for mail flow in the hybrid deployment must all be issued by the same certificate authority (CA) and have the same subject.
+  The EWS external URL and the Autodiscover endpoint that you specified in your public DNS must be listed in the Subject Alternative Name (SAN) field of the certificate. The certificates that you install on the Exchange servers for mail flow in the hybrid deployment must all be issued by the same certificate authority and have the same subject.
 
   Learn more at [Certificate requirements for hybrid deployments](certificate-requirements.md).
 
