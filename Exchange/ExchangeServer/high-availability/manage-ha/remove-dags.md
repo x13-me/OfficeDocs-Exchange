@@ -8,6 +8,8 @@ ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 ms.reviewer: 
 title: Remove a database availability group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

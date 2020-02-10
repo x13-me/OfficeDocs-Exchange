@@ -8,6 +8,8 @@ ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
 ms.reviewer:
 title: Disconnected mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

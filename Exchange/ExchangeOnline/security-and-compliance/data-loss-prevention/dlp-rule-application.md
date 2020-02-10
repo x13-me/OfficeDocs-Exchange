@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: How DLP rules are applied to evaluate messages
 ms.collection:
 - exchange-online

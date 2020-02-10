@@ -8,6 +8,8 @@ ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 ms.reviewer:
 title: Place a mailbox on Litigation Hold
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

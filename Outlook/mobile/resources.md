@@ -8,6 +8,8 @@ ms.prod: outlook
 ms.topic: get-started-article
 localization_priority: Normal
 ms.collection: Ent_Office_Outlook
+f1.keywords:
+- CSH
 ms.custom: Outlook_mobile
 description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook for iOS and Android in your organization"
 ---

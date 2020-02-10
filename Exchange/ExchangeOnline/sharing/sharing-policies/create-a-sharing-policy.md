@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f412ce6c-74dc-4d77-93ab-362c37414015
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a sharing policy in Exchange Online
 ms.collection: 
 - exchange-online

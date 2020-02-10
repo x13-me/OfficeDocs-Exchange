@@ -8,6 +8,8 @@ ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.reviewer: 
 title: Configure message tracking
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

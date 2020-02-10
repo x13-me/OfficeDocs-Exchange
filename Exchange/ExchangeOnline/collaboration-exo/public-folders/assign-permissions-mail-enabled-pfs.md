@@ -7,6 +7,8 @@ author: mattpennathe3rd
 ms.service: exchange-online
 description: 'Summary: How to assign "Send As" or "Send on Behalf" permissions to your Exchange Online public folders.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
 
 ---

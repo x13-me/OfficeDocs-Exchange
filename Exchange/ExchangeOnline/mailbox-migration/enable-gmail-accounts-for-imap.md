@@ -2,8 +2,6 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- O365E_AdvSetupEnableGmailImap
 ms.author: v-mapenn
 ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
 ms.reviewer: 
@@ -23,7 +21,9 @@ search.appverid:
 audience: Admin
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom: 
+- Adm_O365
+- O365E_AdvSetupEnableGmailImap
 ms.service: exchange-online
 manager: serdars
 

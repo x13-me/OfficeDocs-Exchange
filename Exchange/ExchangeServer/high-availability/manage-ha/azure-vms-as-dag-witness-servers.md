@@ -8,6 +8,8 @@ ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 ms.reviewer: 
 title: Using a Microsoft Azure VM as a DAG witness server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

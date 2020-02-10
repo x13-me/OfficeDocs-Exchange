@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Navigating menus with Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

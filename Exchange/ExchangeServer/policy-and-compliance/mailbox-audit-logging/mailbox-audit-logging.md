@@ -8,6 +8,8 @@ ms.assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
 ms.reviewer:
 title: Mailbox audit logging in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

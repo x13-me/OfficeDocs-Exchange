@@ -8,6 +8,8 @@ ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 ms.reviewer:
 title: Create a public folder mailbox in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

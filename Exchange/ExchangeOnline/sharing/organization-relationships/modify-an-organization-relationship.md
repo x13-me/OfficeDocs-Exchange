@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6875cd79-41d4-422c-80a7-549ded9a1ea7
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Modify an organization relationship in Exchange Online
 ms.collection: 
 - exchange-online

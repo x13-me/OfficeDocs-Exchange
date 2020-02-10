@@ -8,6 +8,8 @@ ms.assetid: bea9ec15-bfb5-4716-b14e-010e389c9f9e
 ms.reviewer: 
 title: Managed Store Limits  in Exchange 2016 and Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp

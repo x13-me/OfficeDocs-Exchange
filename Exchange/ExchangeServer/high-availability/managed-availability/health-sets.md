@@ -8,6 +8,8 @@ ms.assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 ms.reviewer:
 title: Manage health sets and server health
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

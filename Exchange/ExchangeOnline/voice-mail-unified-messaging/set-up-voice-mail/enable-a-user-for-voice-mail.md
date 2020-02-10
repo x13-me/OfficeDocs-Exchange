@@ -3,11 +3,13 @@ localization_priority: Normal
 description: When you enable a user for Unified Messaging (UM), a default set of properties are applied to the user, and the user will be able to use the voice mail features included with Unified Messaging. After you enable a user for voice mail, you have the option of adding a Session Initiation Protocol (SIP) address for the user if they're assigned to a UM mailbox policy that's linked to a SIP URI dial plan. Or, you can add an E.164 number for the user if they're assigned to a UM mailbox policy that's linked to an E.164 dial plan. In both cases, the user must still have an extension number configured.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.EnableUnifiedMessagingWizardForm.EnableUnifiedMessagingWizardPage
 ms.author: v-mapenn
 ms.assetid: ad027767-5e14-4cb1-9f8a-0791d9188db5
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.EnableUnifiedMessagingWizardForm.EnableUnifiedMessagingWizardPage
 title: Enable a user for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

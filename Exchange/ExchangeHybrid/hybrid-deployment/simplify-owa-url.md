@@ -3,6 +3,8 @@ title: "Simplify the Outlook Web App URL for Office 365 Hybrid"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

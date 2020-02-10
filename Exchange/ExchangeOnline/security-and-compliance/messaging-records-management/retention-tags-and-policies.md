@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Retention tags and retention policies
 ms.collection: 
 - exchange-online

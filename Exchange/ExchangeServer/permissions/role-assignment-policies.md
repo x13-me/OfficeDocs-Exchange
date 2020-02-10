@@ -8,6 +8,8 @@ ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms.reviewer:
 title: Manage role assignment policies
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

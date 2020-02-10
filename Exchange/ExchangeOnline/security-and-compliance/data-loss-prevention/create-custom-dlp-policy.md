@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a custom DLP policy
 ms.collection:
 - exchange-online

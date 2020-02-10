@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Authorize calls for auto attendant callers in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

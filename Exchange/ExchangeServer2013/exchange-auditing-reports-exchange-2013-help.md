@@ -6,6 +6,8 @@ author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

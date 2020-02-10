@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change the UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

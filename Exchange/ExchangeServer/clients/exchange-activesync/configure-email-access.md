@@ -8,6 +8,8 @@ ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.reviewer: 
 title: Configure mobile phones to access email
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

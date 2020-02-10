@@ -7,6 +7,8 @@ manager: serdars
 ms.reviewer:
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -8,6 +8,8 @@ ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
 ms.reviewer: 
 title: Mail flow and the transport pipeline
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

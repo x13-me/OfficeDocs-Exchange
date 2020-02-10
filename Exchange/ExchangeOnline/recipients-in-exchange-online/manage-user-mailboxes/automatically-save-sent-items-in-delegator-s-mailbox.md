@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Automatically save sent items in delegator's mailbox
 ms.collection: 
 - exchange-online

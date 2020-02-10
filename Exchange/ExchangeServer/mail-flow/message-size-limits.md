@@ -8,6 +8,8 @@ ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms.reviewer:
 title: Message size limits in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

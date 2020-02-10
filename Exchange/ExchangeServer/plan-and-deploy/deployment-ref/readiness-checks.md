@@ -8,6 +8,8 @@ ms.assetid: 3b232ad3-01b1-4cdb-88c9-006bdc660f72
 ms.reviewer: 
 title: Exchange Server readiness checks
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

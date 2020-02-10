@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View members of a dynamic distribution group
 ms.collection: 
 - exchange-online

@@ -8,6 +8,8 @@ ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms.reviewer:
 title: Server health and performance permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

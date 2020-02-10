@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 01517cca-99fe-46b2-b586-19e8d2707728
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Retrieve voice mail PIN information in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

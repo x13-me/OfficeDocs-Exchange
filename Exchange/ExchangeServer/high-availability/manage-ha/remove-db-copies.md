@@ -8,6 +8,8 @@ ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
 ms.reviewer:
 title: Remove a mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

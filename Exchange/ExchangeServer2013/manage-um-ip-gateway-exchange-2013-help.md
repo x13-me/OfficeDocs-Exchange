@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl'
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

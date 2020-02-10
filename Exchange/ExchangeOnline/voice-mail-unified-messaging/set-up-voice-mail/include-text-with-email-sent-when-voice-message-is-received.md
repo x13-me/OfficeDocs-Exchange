@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Include text with the email message sent when a voice message Is received in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

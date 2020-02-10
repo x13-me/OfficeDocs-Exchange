@@ -3,6 +3,8 @@ title: "Server roles in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 572991d6-0dc7-4a65-b716-ac6acdc5c9c6
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set up voice mail for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
