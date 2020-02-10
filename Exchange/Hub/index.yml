@@ -46,7 +46,7 @@ additionalContent:
         # Card
         - title: Exchange Online Protection
           summary: Help protect your organization against spam &amp; malware, and use safeguard features that protect your organization from messaging-policy violations.
-          url: /Office365/SecurityCompliance/eop/exchange-online-protection-overview
+          url: /microsoft-365/security/office-365-security/exchange-online-protection-overview
         # Card
         - title: Troubleshoot
           summary: Find troubleshooting and support resources for IT Professionals and admins.
