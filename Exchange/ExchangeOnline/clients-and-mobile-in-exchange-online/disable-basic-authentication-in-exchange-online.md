@@ -377,7 +377,7 @@ This method uses one specific attribute as a filter for on-premises Active Direc
 
 Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx).
 
-### Step 1: Find the Active Directory users and setSet the Active Directory user attributes
+### Step 1: Find the Active Directory users and set the Active Directory user attributes
 
 #### Get the members of an Active Directory group
 
