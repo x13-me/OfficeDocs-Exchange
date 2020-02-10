@@ -8,6 +8,8 @@ ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms.reviewer:
 title: Manage mailbox databases in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

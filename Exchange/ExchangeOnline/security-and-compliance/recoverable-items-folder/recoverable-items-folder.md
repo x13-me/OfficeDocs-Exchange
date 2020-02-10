@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.reviewer:
+f1.keywords:
+- NOCSH
 title: Recoverable Items folder in Exchange Online
 ms.collection:
 - exchange-online

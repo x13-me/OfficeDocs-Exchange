@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Place a mailbox on retention hold
 ms.collection: 
 - exchange-online

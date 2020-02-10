@@ -8,6 +8,8 @@ ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms.reviewer:
 title: Configure Kerberos authentication for load-balanced Client Access services
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

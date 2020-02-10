@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2a3da11b-bb9b-4d4d-9238-6a1a47ef63f2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

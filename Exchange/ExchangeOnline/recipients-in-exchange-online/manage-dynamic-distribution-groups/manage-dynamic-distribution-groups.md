@@ -3,7 +3,9 @@ localization_priority: Normal
 description: Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
 ms.author: v-mapenn
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca

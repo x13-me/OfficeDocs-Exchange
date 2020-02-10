@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58e4b02e-dc99-46b8-a65d-d441bbfee8a9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: PIN security procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

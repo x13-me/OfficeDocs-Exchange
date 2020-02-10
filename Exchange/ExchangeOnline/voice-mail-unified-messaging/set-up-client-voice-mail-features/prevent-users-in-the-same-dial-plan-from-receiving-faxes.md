@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Prevent users in the same dial plan from receiving faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

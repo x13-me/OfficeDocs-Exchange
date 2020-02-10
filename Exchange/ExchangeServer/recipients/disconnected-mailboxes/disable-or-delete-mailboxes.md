@@ -9,6 +9,8 @@ ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 ms.collection: exchange-server
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Disable or delete a mailbox in Exchange Server
 

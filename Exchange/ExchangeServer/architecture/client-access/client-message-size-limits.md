@@ -8,6 +8,8 @@ ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms.reviewer: 
 title: Configure client-specific message size limits
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

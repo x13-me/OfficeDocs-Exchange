@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View and manage a call answering rule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -8,6 +8,8 @@ ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 ms.reviewer:
 title: Create a Send connector to route outbound mail through a smart host
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

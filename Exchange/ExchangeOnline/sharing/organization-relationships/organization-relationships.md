@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58ac4338-b883-404f-a6be-eca38ccd8088
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Organization relationships in Exchange Online
 ms.collection: 
 - exchange-online

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete and re-create the default discovery mailbox in Exchange
 ms.collection: 
 - exchange-online

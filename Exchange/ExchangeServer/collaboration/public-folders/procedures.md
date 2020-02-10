@@ -8,6 +8,8 @@ ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 ms.reviewer:
 title: Public folder procedures
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

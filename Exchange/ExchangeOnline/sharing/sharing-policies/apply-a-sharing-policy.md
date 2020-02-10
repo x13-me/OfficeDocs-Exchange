@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a075b1ec-5a96-4d0e-a609-ab64e50cdb9e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Apply a sharing policy to mailboxes in Exchange Online
 ms.collection: 
 - exchange-online

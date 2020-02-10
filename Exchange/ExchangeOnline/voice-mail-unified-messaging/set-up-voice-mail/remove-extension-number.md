@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c2b896cf-21f7-4453-a4e6-b23d236a6dd3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove an extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

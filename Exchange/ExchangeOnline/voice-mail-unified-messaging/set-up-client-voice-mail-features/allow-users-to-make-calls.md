@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b6e696ce-c848-475b-a598-9035677497e2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Allow users to make calls in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

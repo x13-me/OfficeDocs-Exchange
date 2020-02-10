@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View the administrator audit log
 ms.collection: 
 - exchange-online

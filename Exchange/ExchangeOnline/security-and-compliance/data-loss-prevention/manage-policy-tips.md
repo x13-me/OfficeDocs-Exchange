@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Manage policy tips
 ms.collection: 
 - exchange-online

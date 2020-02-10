@@ -10,6 +10,8 @@ title: Test mail flow by validating your Office 365 connectors
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-online
 manager: serdars

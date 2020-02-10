@@ -8,6 +8,8 @@ ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms.reviewer:
 title: Configure activation policy for a mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

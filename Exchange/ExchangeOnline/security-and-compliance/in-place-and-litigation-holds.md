@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: In-Place Hold and Litigation Hold
 ms.collection: 
 - exchange-online

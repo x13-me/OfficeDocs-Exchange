@@ -8,6 +8,8 @@ ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms.reviewer:
 title: Message encoding options in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

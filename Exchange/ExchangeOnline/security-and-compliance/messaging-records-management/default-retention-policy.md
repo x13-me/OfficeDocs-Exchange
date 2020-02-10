@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Default Retention Policy in Exchange Online and Exchange Server
 ms.collection: 
 - exchange-online

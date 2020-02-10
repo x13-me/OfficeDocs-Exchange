@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable a call answering rule for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

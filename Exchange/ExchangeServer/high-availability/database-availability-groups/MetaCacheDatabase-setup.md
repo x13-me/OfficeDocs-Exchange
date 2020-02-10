@@ -8,6 +8,8 @@ monikerRange: exchserver-2019
 title: MetaCacheDatabase (MCDB) setup
 ms.collection: exchange-server
 ms.reviewer: toklima
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

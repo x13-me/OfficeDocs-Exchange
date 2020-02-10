@@ -8,6 +8,8 @@ ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
 ms.reviewer:
 title: Procedures for accepted domains in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

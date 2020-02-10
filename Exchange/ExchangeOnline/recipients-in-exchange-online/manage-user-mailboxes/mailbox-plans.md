@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mailbox plans in Exchange Online
 ms.collection:
 - exchange-online

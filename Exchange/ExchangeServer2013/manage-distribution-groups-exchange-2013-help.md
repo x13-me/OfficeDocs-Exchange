@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDistributionGroupWizardForm.CreateDistributionGroupIntroductionWizardPage'
 ms.assetid: c4c43493-55e1-46d2-bd4b-d6f6cecd747f
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

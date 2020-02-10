@@ -10,6 +10,8 @@ title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 743bd525-0ca2-426d-b76c-b4a052bc8886
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mail flow rules (transport rules) in Exchange Online
 ms.collection: 
 - exchange-online

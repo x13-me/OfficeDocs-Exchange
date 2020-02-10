@@ -3,6 +3,8 @@ title: "Create a hybrid deployment with the Hybrid Configuration wizard"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

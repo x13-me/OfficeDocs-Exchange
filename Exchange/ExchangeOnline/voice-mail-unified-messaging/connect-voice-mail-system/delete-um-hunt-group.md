@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete a UM hunt group in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
