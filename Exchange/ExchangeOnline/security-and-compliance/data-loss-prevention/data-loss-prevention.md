@@ -34,7 +34,7 @@ In addition to the customizable DLP policies themselves, you can also inform ema
 > Data Loss Prevention is a premium feature. For more information, see [Exchange Online Licensing](https://products.office.com/exchange/compare-microsoft-exchange-online-plans), [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description), and [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 > [!NOTE]
-> Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied because the message doesn't leave the on-premises infrastructure.
+> Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied because the messages do not leave the on-premises infrastructure.
 
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
