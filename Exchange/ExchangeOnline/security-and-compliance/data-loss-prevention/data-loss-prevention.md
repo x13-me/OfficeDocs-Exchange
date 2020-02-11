@@ -31,7 +31,10 @@ DLP policies are simple packages that contain sets of conditions, which are made
 In addition to the customizable DLP policies themselves, you can also inform email senders that they may be about to violate one of your policies, even before they send an offending message. You can accomplish this by configuring Policy Tips. Policy Tips are similar to MailTips, and can be configured to present a brief note in the Microsoft Outlook 2013 client that provides information about possible policy violations to a person creating a message. In Exchange Online and in Exchange Server, Policy Tips are also displayed in Outlook on the web (formerly known as Outlook Web App) and OWA for Devices. For more information, see [Policy Tips](policy-tips.md).
 
 > [!NOTE]
-> DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). > Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied, because the message doesn't leave the on-premises infrastructure.
+> Data Loss Prevention is a premium feature. For more information, see [Exchange Online Licensing](https://products.office.com/exchange/compare-microsoft-exchange-online-plans), [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description), and [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+> [!NOTE]
+> Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied because the messages do not leave the on-premises infrastructure.
 
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
