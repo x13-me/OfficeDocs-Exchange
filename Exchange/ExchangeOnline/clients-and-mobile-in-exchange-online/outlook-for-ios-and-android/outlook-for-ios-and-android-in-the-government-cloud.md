@@ -74,15 +74,11 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
 
-- **MailTips**: The External recipients MailTip is not available with GCC accounts.
-
 - **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
 - **File picker**: The file picker used for adding attachments during email composition is limited to email attachments, iCloud & Device, OneDrive for Business files, and SharePoint sites. The Recent Files list is limited to email attachments.
 
 - **TestFlight**: GCC accounts will not have access to pre-release features when using the TestFlight version of Outlook for iOS.
-
-- **Avatars**: GCC High and DoD accounts will not be able to see user avatars
 
 Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
