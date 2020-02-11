@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 Information workers frequently need to collaborate with external recipients, vendors, partners, and customers and share their free/busy (also known as calendar availability) information. Federation in Microsoft Exchange Server 2013 helps with these collaboration efforts. *Federation* refers to the underlying trust infrastructure that supports *federated sharing*, an easy method for users to share calendar information with recipients in other external federated organizations. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 Operated by 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## Key terminology
 
