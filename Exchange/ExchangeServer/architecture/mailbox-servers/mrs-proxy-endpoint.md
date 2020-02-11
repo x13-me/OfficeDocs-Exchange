@@ -45,7 +45,7 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
 ## Use the EAC to enable the MRS Proxy endpoint
 
-1. In the EAC, go to **Recipients** \> **Servers** \> **Virtual Directories**.
+1. In the EAC, go to **Servers** \> **Virtual Directories**.
 
 2. Select the EWS virtual directory that you want to configure.
 
@@ -87,7 +87,7 @@ For detailed syntax and parameter information, see [Set-WebServicesVirtualDirect
 
 To verify that you've successfully enabled the MRS Proxy endpoint, do any of these steps:
 
-- In the EAC, got to **Recipients** \> **Servers** \> **Virtual Directories** \> select the EWS virtual directory, and verify in the details pane that the MRS Proxy endpoint is enabled.
+- In the EAC, go to **Servers** \> **Virtual Directories** \> select the EWS virtual directory, and verify in the details pane that the MRS Proxy endpoint is enabled.
 
   ![In the EAC, select the EWS virtual directory, and verify that the MRS Proxy endpoint is enabled in the details pane.](../../media/3999dc9a-44a1-442d-bda7-866c365f7846.png)
 
