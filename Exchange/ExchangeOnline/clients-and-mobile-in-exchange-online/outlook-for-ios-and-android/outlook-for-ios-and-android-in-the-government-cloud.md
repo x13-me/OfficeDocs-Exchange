@@ -60,7 +60,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
-- **In-app feature requests**: Users will not be able to submit in-app feature requests. Instead, users will be directed to use [Outlook Uservoice](http://outlook.uservoice.com).
+- **In-app feature requests**: Users will not be able to submit in-app feature requests. Instead, users will be directed to use [Outlook UserVoice](http://outlook.uservoice.com).
 
 - **Multiple accounts**: Only the user's Office 365 GCC account and OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an ActiveSync client from another provider.
 
