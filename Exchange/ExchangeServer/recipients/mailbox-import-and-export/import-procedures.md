@@ -9,6 +9,8 @@ ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
 ms.collection: exchange-server
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Procedures for mailbox imports from .pst files in Exchange Server
 

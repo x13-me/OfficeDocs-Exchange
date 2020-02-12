@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mail flow rule actions in Exchange Online
 ms.collection: 
 - exchange-online

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2706ae06-c45d-41b7-abbe-378a9fca104a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

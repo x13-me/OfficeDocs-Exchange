@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.reviewer:
+f1.keywords:
+- NOCSH
 title: Manage permissions for recipients in Exchange Online
 ms.collection:
 - exchange-online

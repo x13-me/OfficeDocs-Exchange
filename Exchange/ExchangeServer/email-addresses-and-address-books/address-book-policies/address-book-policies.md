@@ -8,6 +8,8 @@ ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.reviewer: 
 title: Address book policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

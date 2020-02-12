@@ -8,6 +8,8 @@ ms.assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 ms.reviewer:
 title: Configure managed availability overrides
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dfae629e-ee89-4494-a3ed-9655b67eb87e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: UM mailbox policies in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

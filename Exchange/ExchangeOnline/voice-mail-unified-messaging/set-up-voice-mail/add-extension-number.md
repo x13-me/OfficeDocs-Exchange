@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add an extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

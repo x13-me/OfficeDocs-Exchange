@@ -8,6 +8,8 @@ ms.assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
 ms.reviewer: 
 title: Track messages with delivery reports
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

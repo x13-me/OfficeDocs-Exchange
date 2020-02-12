@@ -8,6 +8,8 @@ ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms.reviewer:
 title: Properties of messages in queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

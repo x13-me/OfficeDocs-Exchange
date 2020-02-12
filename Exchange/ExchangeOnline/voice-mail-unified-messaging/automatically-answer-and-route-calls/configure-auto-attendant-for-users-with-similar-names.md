@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2e7318a0-67f9-4d7b-8300-5f0ef77656a8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure an auto attendant for users who have similar names in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

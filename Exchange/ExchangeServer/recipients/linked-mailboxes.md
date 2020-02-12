@@ -8,6 +8,8 @@ ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms.reviewer:
 title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

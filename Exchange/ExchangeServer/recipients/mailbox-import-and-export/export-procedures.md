@@ -9,6 +9,8 @@ ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
 ms.collection: exchange-server
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Procedures for mailbox exports to .pst files in Exchange Server
 

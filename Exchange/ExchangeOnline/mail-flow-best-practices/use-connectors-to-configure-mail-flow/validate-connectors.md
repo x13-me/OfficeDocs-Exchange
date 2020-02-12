@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7805c2f9-302d-4409-a57f-2b4d8296cd5e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Validate connectors in Office 365
 ms.collection: exchange-online
 audience: ITPro

@@ -2,7 +2,7 @@
 localization_priority: Critical
 ms.topic: get-started-article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
 ms.author: v-mapenn
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
@@ -12,6 +12,8 @@ title: Install Exchange Mailbox servers using the Setup wizard
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

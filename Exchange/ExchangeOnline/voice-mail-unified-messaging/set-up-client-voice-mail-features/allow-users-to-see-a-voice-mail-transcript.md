@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c5192e05-905c-440f-beec-1f697edc15b3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Allow users to see a voice mail transcript in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -8,6 +8,8 @@ ms.assetid: 9722dea2-2bf8-437c-85c0-3ab65b8a07b9
 ms.reviewer: 
 title: Availability service in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

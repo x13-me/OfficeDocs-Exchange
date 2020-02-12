@@ -8,6 +8,8 @@ ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 ms.reviewer:
 title: How retention age is calculated in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

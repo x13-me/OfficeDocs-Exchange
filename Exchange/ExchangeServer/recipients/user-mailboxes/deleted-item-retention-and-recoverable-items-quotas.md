@@ -8,6 +8,8 @@ ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms.reviewer:
 title: Configure Deleted Item retention and Recoverable Items quotas
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

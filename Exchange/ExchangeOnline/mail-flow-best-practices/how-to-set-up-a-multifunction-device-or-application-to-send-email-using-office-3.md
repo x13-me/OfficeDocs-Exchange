@@ -15,6 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: serdars

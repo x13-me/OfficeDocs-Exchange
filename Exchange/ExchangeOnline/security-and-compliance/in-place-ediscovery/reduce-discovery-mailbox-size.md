@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Reduce the size of a discovery mailbox in Exchange
 ms.collection: 
 - exchange-online

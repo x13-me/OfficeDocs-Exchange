@@ -8,6 +8,8 @@ ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.reviewer:
 title: Configure connectivity logging in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

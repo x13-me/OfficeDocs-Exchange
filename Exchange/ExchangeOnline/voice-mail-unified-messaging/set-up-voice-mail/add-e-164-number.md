@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

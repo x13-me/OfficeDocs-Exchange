@@ -8,6 +8,8 @@ ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms.reviewer:
 title: Autodiscover service in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

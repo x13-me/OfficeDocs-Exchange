@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Policy Tips in Exchange Online
 ms.collection: 
 - exchange-online

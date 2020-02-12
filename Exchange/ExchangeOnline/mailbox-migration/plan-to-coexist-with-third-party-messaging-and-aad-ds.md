@@ -16,6 +16,8 @@ search.appverid:
 - MBS150
 - BCS160
 ms.audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars

@@ -9,6 +9,8 @@ ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms.collection: exchange-server
 ms.reviewer: 
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Roll back a public folder migration from Exchange Server to Exchange Online
 

@@ -12,6 +12,8 @@ ms.collection:
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -40,7 +42,7 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 Microsoft recommends Office 365 customers use the features of the Enterprise Mobility + Security suite to protect corporate data on mobile devices, due to the advanced capabilities provided by these services. The core capabilities of the built-in MDM for Office 365 are included with an Office 365 subscription, while the broader capabilities of the Enterprise Mobility + Security require an additional subscription purchase.
 
 > [!IMPORTANT]
-> Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
+> Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).
 

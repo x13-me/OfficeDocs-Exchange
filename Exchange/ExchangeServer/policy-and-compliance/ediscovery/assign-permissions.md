@@ -8,6 +8,8 @@ ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.reviewer:
 title: Assign eDiscovery permissions in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

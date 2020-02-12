@@ -3,6 +3,8 @@ title: "Transport options in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

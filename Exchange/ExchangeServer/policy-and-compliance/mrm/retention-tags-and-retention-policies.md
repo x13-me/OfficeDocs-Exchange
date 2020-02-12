@@ -8,6 +8,8 @@ ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer:
 title: Retention tags and retention policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

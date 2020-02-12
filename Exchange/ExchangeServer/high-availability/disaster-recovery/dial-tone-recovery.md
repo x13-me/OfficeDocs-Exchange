@@ -8,6 +8,8 @@ ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms.reviewer:
 title: Perform a dial tone recovery
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

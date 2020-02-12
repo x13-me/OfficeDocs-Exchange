@@ -8,6 +8,8 @@ ms.assetid: 83358884-6036-4e91-87a8-35200541874d
 ms.reviewer:
 title: Procedures for messages in queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

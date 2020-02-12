@@ -8,6 +8,8 @@ ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

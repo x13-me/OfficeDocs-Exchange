@@ -15,6 +15,8 @@ search.appverid:
 - MOE150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars

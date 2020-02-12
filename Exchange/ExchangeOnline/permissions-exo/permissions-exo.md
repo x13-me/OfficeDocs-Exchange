@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a219732-87e7-4f11-96bc-8edd2cc91926
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Permissions in Exchange Online
 ms.collection: 
 - exchange-online

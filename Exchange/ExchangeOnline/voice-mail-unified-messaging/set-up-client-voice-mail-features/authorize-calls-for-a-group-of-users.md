@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Authorize calls for a group of users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
