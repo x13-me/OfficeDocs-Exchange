@@ -8,6 +8,8 @@ ms.assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms.reviewer:
 title: Create a database availability group network
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

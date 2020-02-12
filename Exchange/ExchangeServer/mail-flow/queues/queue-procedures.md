@@ -8,6 +8,8 @@ ms.assetid: 37f11378-a884-4aff-ab55-689f40a46321
 ms.reviewer:
 title: Procedures for queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

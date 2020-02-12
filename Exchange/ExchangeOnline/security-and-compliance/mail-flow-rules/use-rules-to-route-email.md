@@ -12,6 +12,8 @@ ms.collection:
 ms.reviewer: 
 manager: serdars
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
 
 ---

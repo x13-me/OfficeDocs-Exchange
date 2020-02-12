@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0976f8f2-3449-44f1-b0d1-20c91622e827
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a call answering rule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

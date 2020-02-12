@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Public folders in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online

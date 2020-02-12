@@ -12,6 +12,8 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mail flow rule conditions and exceptions (predicates) in Exchange Online
 
 ---

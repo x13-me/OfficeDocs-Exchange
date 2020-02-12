@@ -10,6 +10,8 @@ title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

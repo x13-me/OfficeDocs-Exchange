@@ -9,6 +9,8 @@ ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
 ms.reviewer: 
 title: Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

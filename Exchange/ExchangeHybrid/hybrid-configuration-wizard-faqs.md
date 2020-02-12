@@ -3,6 +3,8 @@ title: "Hybrid Configuration wizard FAQs"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro

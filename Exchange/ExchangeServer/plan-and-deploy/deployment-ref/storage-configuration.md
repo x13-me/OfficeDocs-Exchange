@@ -8,6 +8,8 @@ ms.assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
 ms.reviewer: 
 title: Exchange Server storage configuration options
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

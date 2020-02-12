@@ -8,6 +8,8 @@ ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

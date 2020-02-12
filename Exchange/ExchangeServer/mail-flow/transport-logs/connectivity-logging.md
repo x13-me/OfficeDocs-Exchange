@@ -8,6 +8,8 @@ ms.assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
 ms.reviewer: 
 title: Connectivity logging in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office 365, migrate Exchange public folders to Microsoft 365
 
@@ -59,7 +61,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkid=844893).
+1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855) and [Exchange 2010/2013/2016/EXO Public Folders to Office365 Pre-Migration Scripts](https://www.microsoft.com/download/details.aspx?id=100414).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 

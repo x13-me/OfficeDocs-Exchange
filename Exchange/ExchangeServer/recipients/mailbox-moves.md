@@ -8,6 +8,8 @@ ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
 ms.reviewer:
 title: Mailbox moves in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's discontinued in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer:
 ms.prod: exchange-server-it-pro

@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 
@@ -19,6 +21,9 @@ If you don't have Azure AD Connect in your environment, see [Deploy Office 365 D
 To manually provision mail-enabled users without DirSync, see [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) for more information.
 
 All of the procedures in this article assume that your Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+
+   > [!NOTE]
+   > G Suite migration is not currently available for Office 365 US Government GCC High or DoD. 
 
 ## Overview of the process
 

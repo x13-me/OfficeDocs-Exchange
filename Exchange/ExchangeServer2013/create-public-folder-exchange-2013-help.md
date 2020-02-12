@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage'
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

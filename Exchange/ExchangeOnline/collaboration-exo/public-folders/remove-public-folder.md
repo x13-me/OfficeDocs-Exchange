@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove a public folder
 ms.collection: 
 - exchange-online

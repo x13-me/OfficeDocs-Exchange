@@ -9,6 +9,8 @@ monikerRange: exchserver-2016 || exchserver-2019
 ms.reviewer:
 title: Information Rights Management in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

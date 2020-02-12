@@ -8,6 +8,8 @@ ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
 ms.reviewer: 
 title: Exchange Server editions and versions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

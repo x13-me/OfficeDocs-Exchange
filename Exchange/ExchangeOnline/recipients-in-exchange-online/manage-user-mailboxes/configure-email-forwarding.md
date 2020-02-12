@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure email forwarding for a mailbox
 ms.collection: 
 - exchange-online

@@ -1,4 +1,6 @@
 ---
+f1.keywords:
+- NOCSH
 audience: ITPro
 localization_priority: Priority
 ms.author: v-mapenn

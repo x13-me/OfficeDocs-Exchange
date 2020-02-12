@@ -11,6 +11,8 @@ title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchang
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

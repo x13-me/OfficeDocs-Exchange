@@ -10,6 +10,8 @@ title: Accessibility for people with disabilities
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms.reviewer: 
 title: Mobile devices
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -5,6 +5,8 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
+f1.keywords:
+- NOCSH
 title: Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient
 ms.reviewer: 
 ms.collection:

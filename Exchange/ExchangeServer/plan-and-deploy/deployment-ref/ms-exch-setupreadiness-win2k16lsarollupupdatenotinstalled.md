@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.Win2k16LSARollupUpdateNotInstalled
 ms.author: v-mapenn
 ms.assetid: 0d64b18a-4198-4ddf-836a-1f4ab08fb9b8
@@ -11,6 +11,8 @@ manager: serdars
 description: Microsoft Exchange Server 2016 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2016 Setup can continue.
 title: KB3206632 security update not installed [Win2k16LSARollupUpdateNotInstalled]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: Developer
 ms.prod: exchange-server-it-pro
 

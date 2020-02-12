@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Export eDiscovery search results to a PST file
 ms.collection: 
 - exchange-online

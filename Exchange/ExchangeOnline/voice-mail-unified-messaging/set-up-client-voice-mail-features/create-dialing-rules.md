@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create dialing rules for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Call answering rules in the same mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -9,6 +9,8 @@ manager: serdars
 ms.prod: exchange-server-it-pro
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Convert a mailbox in Exchange Server
 

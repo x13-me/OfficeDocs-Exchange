@@ -10,6 +10,8 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: Learn how to manage mail flow in an Exchange hybrid environment (some mailboxes are on-premises and some are in Exchange Online).
+f1.keywords:
+- NOCSH
 ms.reviewer: 
 title: Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
 

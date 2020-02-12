@@ -10,6 +10,8 @@ ms.reviewer:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 description: Admins can learn about the mail flow troubleshooting options in Office 365.
 audience: ITPro
 title: Troubleshoot Office 365 mail flow

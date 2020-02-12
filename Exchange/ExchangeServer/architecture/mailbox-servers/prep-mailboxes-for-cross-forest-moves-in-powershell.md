@@ -8,6 +8,8 @@ ms.assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms.reviewer: 
 title: Prepare mailboxes for cross-forest moves using the Exchange Management Shell
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

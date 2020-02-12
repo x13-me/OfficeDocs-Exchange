@@ -8,6 +8,8 @@ ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms.reviewer:
 title: Message rate limits and throttling
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

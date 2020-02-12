@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Modify, disable, or remove a sharing policy in Exchange Online
 ms.collection: 
 - exchange-online

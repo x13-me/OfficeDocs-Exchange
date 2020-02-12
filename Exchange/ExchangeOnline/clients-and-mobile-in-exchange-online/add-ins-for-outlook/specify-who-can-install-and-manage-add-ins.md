@@ -10,6 +10,8 @@ title: Specify the administrators and users who can install and manage add-ins f
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---

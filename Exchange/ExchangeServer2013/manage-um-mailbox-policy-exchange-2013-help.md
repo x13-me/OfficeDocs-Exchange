@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab'
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

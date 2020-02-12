@@ -8,6 +8,8 @@ ms.assetid: efdaf80b-335c-491c-8eb5-1fafd297e8a2
 ms.reviewer: 
 title: Managed Store in Exchange 2016 and Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp

@@ -8,6 +8,8 @@ ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms.reviewer:
 title: Manage database availability group membership
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

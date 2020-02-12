@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable a UM auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

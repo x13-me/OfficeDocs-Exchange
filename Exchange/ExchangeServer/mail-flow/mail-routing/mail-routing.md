@@ -8,6 +8,8 @@ ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
 ms.reviewer:
 title: Mail routing in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

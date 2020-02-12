@@ -3,13 +3,15 @@ localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization.
 ms.topic: reference
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.DelegatedClientAccessFirstInstall
 ms.author: v-mapenn
 ms.assetid: 4cf9f1a1-aeac-455b-a5c3-efcd4185a467
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedClientAccessFirstInstall]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: Developer
 ms.prod: exchange-server-it-pro
 manager: serdars

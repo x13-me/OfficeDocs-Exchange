@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Setting up Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

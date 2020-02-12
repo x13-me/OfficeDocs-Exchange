@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable sending voice messages to users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
