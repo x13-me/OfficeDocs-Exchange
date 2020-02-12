@@ -47,6 +47,8 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
+- There are additional considerations when the target forest is Exchange Server 2013 or Exchange Server 2016. See [Cross forest free/busy lookup fails when target forest is Exchange Server 2013 or Exchange Server 2016](https://support.microsoft.com/en-us/help/3010570/cross-forest-free-busy-lookup-fails-when-target-forest-is-exchange-ser) for more information.
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
