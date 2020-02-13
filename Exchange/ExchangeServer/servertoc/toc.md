@@ -39,7 +39,7 @@
 ###### [Import certificates](../architecture/client-access/import-certificates.md)
 #### [Client message size limits](../architecture/client-access/client-message-size-limits.md)
 #### [Availability service](../architecture/client-access/availability-service.md)
-##### [Availability service for cross-forest topologies](../architecture/client-access/availibity-service-for-cross-forest-topologies.md)
+##### [Availability service for cross-forest topologies](../architecture/client-access/availability-service-for-cross-forest-topologies.md)
 ## [Plan and deploy](../plan-and-deploy/plan-and-deploy.md)
 ### [Exchange Server system requirements](../plan-and-deploy/system-requirements.md)
 ### [Exchange prerequisites](../plan-and-deploy/prerequisites.md)
