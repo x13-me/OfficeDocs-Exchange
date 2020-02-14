@@ -31,6 +31,8 @@ There are 4 possible grades that are derived from the DataConsistencyScore.
 |**Investigate**|A small amount of significant data loss was detected, caused by some common inconsistency types. You must approve the migration for it to complete.|
 |**Poor**|Major data loss was detected. The migration cannot complete unless you contact Microsoft Support for assistance.|
 
+You can view the DataConsistencyScore for your migration in the legacy Exchange Admin Center at a per-user and per-batch level. You can also find it using PowerShell cmdlets; the **DataConsistencyScore** property exists on **MigrationBatch** (as the worst status from any user in the batch), **MigrationUser**, and **RequestStatistics** objects.
+
 ## How the DataConsistencyScore is calculated
 
 There are various thresholds used to determine the DataConsistencyScore. Microsoft is constantly tuning these thresholds to ensure that problematic data loss does not occur during migrations. The details of these thresholds are not presented to Exchange Online administrators.
