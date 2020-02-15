@@ -75,7 +75,7 @@ This example deletes an Exchange Online mailbox and the corresponding Office 365
 Remove-Mailbox -Identity "Walter Harp"
 ```
 
-### Use Windows Powershell to permanently delete a user mailbox
+### Use Windows PowerShell to permanently delete a user mailbox
 
 This example deletes the user account for Walter Harp from Azure AD.
 
