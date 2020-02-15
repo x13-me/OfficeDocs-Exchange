@@ -371,7 +371,8 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Add the object **Microsoft AD App Proxy Connector** and the **\# requests** counter to your view.
 
-  ![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    ![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    
 
 ### Migration
 
