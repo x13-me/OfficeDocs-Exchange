@@ -80,7 +80,7 @@ Remove-Mailbox -Identity "Walter Harp"
 This example deletes the user account for Walter Harp from Azure AD.
 
 ```PowerShell
-Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin true
+Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
 ```
 
 For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).
