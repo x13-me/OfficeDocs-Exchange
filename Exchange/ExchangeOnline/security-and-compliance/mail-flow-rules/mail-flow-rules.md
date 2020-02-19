@@ -118,6 +118,8 @@ There are several types of messages that pass through an organization. The follo
 
 - After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to messages.
 
+- You can create a transport rule to bypass ATP and allow mail to flow without delay from internal senders such as scanners, faxes, and other trusted sources that send attachments that are known to be safe. Do not bypass filtering for all internal messages; in this situation, a compromised account could send malicious content.
+
 ## For more information
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
