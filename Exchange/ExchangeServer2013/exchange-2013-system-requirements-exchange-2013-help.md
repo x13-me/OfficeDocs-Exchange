@@ -47,7 +47,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Exchange 2007</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Update Rollup 10 for Exchange 2007 Service Pack 3 (SP3) on all Exchange 2007 servers in the organization, including Edge Transport servers. (See Note 1 below.)</p></li>
+<li><p>Update Rollup 10 for Exchange 2007 Service Pack 3 (SP3) on all Exchange 2007 servers in the organization, including Edge Transport servers (see Note 1 below).</p></li>
 <li><p>Exchange 2013 Cumulative Update 2 (CU2) or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
@@ -55,7 +55,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Exchange 2010</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers. (See Note 2 below.)</p></li>
+<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers (see Note 2 below).</p></li>
 <li><p>Exchange 2013 CU2 or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
@@ -63,8 +63,8 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Mixed Exchange 2010 and Exchange 2007 organization</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Update Rollup 10 for Exchange 2007 SP3 on all Exchange 2007 servers in the organization, including Edge Transport servers. (See Note 1 below.)</p></li>
-<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers. (See Note 2 below.)</p></li>
+<li><p>Update Rollup 10 for Exchange 2007 SP3 on all Exchange 2007 servers in the organization, including Edge Transport servers (see Note 1 below).</p></li>
+<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers (see Note 2 below).</p></li>
 <li><p>Exchange 2013 CU2 or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
