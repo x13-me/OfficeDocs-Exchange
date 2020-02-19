@@ -136,7 +136,7 @@ Limits how far in advance an event can be scheduled. The default is 180 days.
 
 - **Always decline if the end date is beyond this limit**
 
-Requests beyond the maximum number of days specified will be automatically declined. Valid values are between 0 (today) and 1080 (about three years).
+Requests beyond the maximum number of days specified will be automatically declined. Valid values are between 0 (today) and 1080 (about three years in the future).
 
 - **Limit meeting duration and Maximum allowed minutes**
 
