@@ -127,13 +127,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
      - One DPT with the **Move to Archive** action
 
-    - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions
+     - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions
 
-    - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions
+     - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions
 
-    - One RPT per default folder such as **Inbox** to delete items
+     - One RPT per default folder such as **Inbox** to delete items
 
-    - Any number of personal tags
+     - Any number of personal tags
 
       > [!NOTE]
       > Although you can add any number of personal tags to a retention policy, having many personal tags with different retention settings can confuse users. We recommend linking no more than ten personal tags to a retention policy.

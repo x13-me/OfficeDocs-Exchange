@@ -222,7 +222,7 @@ The graphic below describes the actual end state:
    2. Run the following command:
 
       ```PowerShell
-      Set-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
+      Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
    To disable the Exchange Online configuration:
