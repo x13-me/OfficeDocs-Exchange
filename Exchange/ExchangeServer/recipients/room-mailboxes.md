@@ -108,7 +108,7 @@ There's also a box on this page that you can use to write a message that will be
 
 An Admin or user with full access to the resource mailbox can make changes to the resource scheduling settings.
 
-1. Log in to [Outlook Web App](outlook.office365.com) and click on **Your name** in the top right corner.
+1. Log in to [Outlook Web App](https://outlook.office365.com) and click on **Your name** in the top right corner.
 
 2. Click **Open another mailbox**. Locate the meeting room resource you want and click **Open**.
 
