@@ -335,7 +335,13 @@ A number of commands now need to be run both in your Exchange Server on-premises
    $Source_Credential = Get-Credential <source_domain>\<PublicFolder_Administrator_Account>
    ```
 
-3. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
+3. In Exchange Online Powershell, pass the Internet routable fully qualified domain name of your Exchange Mailbox Replication Service (MRS) into the variable `$Source_RemoteServer`. The migration request that you run in Exchange Online will use this remote server to copy the public folder content to Exchange Online.
+
+   ```PowerShell
+   $Source_RemoteServer = "<MRS proxy endpoint server>"
+   ```
+
+4. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
 
    ```PowerShell
    (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
