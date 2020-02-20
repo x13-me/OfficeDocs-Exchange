@@ -340,13 +340,13 @@ A number of commands now need to be run both in your Exchange Server on-premises
 3. In Exchange Online Powershell, pass the Internet routable fully qualified domain name of your Exchange Mailbox Replication Service (MRS) into the variable `$Source_RemoteServer`. The migration request that you run in Exchange Online will use this remote server to copy the public folder content to Exchange Online.
 
    ```PowerShell
-   $Source_RemoteServer = "<MRS proxy endpoint server>" 
+   $Source_RemoteServer = "<MRS proxy endpoint server>"
    ```
 
 4. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
 
    ```PowerShell
-   (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
+   (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID
    ```
 
    Note the output of this command. You will need it in the next step. For example:
@@ -402,7 +402,7 @@ You can use the following cmdlets to monitor your migration:
 
 ## Step 6: Lock down the public folders on the Exchange on-premises server (public folder downtime required)
 
-Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete. 
+Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
 
 > [!NOTE]
 > The final sync might take a substantial amount of time, depending on the changes made to the source environment, the size of the public folder deployment, server capacity, and so on. If the folder hierarchy had many corrupt ACLs that were not cleaned up before the migration, there might be a significant delay in completion. It is recommended that you plan for a minimum of 48 hours of downtime for the final sync to complete.
@@ -440,7 +440,7 @@ The expected result if public folders are locked is:
 
 ## Step 7: Finalize the public folder migration (public folder downtime required)
 
-You need to check the following items before you can complete your public folder migration: 
+You need to check the following items before you can complete your public folder migration:
 
 1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange environment. To do this, use the **Get-MoveRequest** and **Get-PublicFolderMoveRequest** cmdlets to list any existing public folder moves. If there are any moves in progress, or in the **Completed** state, remove them.
 
