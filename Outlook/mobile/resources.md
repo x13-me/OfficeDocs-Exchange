@@ -30,7 +30,7 @@ Deploy Outlook for iOS and Android and Microsoft 365 Security, Compliance, and I
 
 ### Microsoft 365 Security, Compliance, and Identity with Outlook mobile
 
-[Learn more in this article](media/outlook-mobile-security-for-enterprise.pdf) that explains how you can control access, protect data and help prevent accidental leaks of your company information through email and calendaring.
+[Learn more in this article](media/outlook-mobile-security-for-enterprise.pdf) that explains how you can control access, protect data, and help prevent accidental leaks of your company information through email and calendaring.
 
 ### TEI study shows Outlook mobile cost savings
 
