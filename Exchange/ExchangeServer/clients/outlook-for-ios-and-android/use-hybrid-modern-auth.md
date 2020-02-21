@@ -108,10 +108,10 @@ The hybrid Modern Authentication architecture has the following technical requir
 
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
 
-   - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy)
+   - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
 
-    > [!Note]
-    > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
+       > [!Note]
+       > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
 
    - Requires an Office 365 Enterprise, Business, or Education tenant.
 
@@ -155,8 +155,8 @@ When an organization decides to standardize how users access Exchange data, usin
 
 1. Follow the first step in [App protection-based or app-based policy for Exchange Online and SharePoint Online](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#app-protection-based-or-app-based-policy-for-exchange-online-and-sharepoint-online) which allows Outlook for iOS and Android, and it blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1: Configure an Azure AD Conditional Access policy for Exchange Online".
 
-> [!NOTE] 
-> This first policy enables Exchange and SharePoint access for mobile apps, provided those mobile apps and users are targeted with an Intune App Protection Policy. Administrators should consider also adding Skype for Business Online, Microsoft Teams, and Office 365 Yammer as additional cloud apps in this policy. This ensures all mobile apps and Office 365 services are supported and accesssible with a single policy. 
+   > [!NOTE] 
+   > This first policy enables Exchange and SharePoint access for mobile apps, provided those mobile apps and users are targeted with an Intune App Protection Policy. Administrators should consider also adding Skype for Business Online, Microsoft Teams, and Office 365 Yammer as additional cloud apps in this policy. This ensures all mobile apps and Office 365 services are supported and accesssible with a single policy. 
 
 2. Follow the second step in [App protection-based policy for Exchange Online](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#app-protection-based-policy-for-exchange-online) which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. See "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)".
 
@@ -177,8 +177,8 @@ In order to block other mobile device clients (such as the native mail client in
 
 2. You can leverage an on-premises conditional access policy within Intune after installing the on-premises Exchange connector. For more information, see [Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
 
-> [!NOTE]
-> When implementing either of the above on-premises options, be aware that it may impact users connecting to Exchange on their mobile devices.
+   > [!NOTE]
+   > When implementing either of the above on-premises options, be aware that it may impact users connecting to Exchange on their mobile devices.
 
 ### Create an Intune app protection policy
 
@@ -213,8 +213,8 @@ In addition to the above minimum policy requirements, you should consider deploy
    If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
    ```
 
-> [!NOTE]
-> Device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
+   > [!NOTE]
+   > Device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
 
 3. Create an Exchange on-premises device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
 
@@ -222,8 +222,8 @@ In addition to the above minimum policy requirements, you should consider deploy
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
    ```
 
-> [!NOTE]
-> Once this rule is created, Outlook for iOS and Android with Basic authentication users will be blocked.
+   > [!NOTE]
+   > Once this rule is created, Outlook for iOS and Android with Basic authentication users will be blocked.
 
 3. Ensure your on-premises Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
 
