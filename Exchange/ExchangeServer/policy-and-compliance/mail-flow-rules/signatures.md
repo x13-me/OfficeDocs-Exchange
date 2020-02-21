@@ -62,17 +62,17 @@ Here's an example of an HTML disclaimer that includes a signature, an `IMG` tag,
 
 ```HTML
 <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
-%%displayname%%</br>
-%%title%%</br>
-%%company%%</br>
-%%street%%</br>
+%%displayname%%<br/>
+%%title%%<br/>
+%%company%%<br/>
+%%street%%<br/>
 %%city%%, %%state%% %%zipcode%%</div>
-&nbsp;</br>
+&nbsp;<br/>
 <div style="background-color:#D5EAFF; border:1px dotted #003333; padding:.8em; ">
 <div><img alt="Fabrikam"  src="http://fabrikam.com/images/fabrikamlogo.png"></div>
-<span style="font-size:12pt;  font-family: 'Cambria','times new roman','garamond',serif; color:#ff0000;">HTML Disclaimer Title</span></br>
+<span style="font-size:12pt;  font-family: 'Cambria','times new roman','garamond',serif; color:#ff0000;">HTML Disclaimer Title</span><br/>
 <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you aren't the named addressee, you should not disseminate, distribute, or copy this e-mail. If you aren't the intended recipient, you aren'tified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
-<span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
+<span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span><br/><br/>
 </div>
 ```
 
