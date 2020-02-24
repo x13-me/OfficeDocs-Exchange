@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: Priority
 description: The privacy statement for Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
 author: mattpennathe3rd
