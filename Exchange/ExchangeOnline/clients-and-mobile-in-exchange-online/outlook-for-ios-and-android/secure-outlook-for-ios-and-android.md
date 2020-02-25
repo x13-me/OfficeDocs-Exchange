@@ -86,7 +86,7 @@ The above policies leverage the grant control [Require app protection policy](ht
 > [!NOTE]
 > After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
 > 
-> When the user authenticates, if there are any conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
 > 
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
