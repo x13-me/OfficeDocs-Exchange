@@ -42,7 +42,7 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 Microsoft recommends Office 365 customers use the features of the Enterprise Mobility + Security suite to protect corporate data on mobile devices, due to the advanced capabilities provided by these services. The core capabilities of the built-in MDM for Office 365 are included with an Office 365 subscription, while the broader capabilities of the Enterprise Mobility + Security require an additional subscription purchase.
 
 > [!IMPORTANT]
-> When the user authenticates, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
 
 A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).
 
