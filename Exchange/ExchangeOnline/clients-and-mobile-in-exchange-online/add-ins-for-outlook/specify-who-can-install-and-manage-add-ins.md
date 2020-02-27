@@ -41,7 +41,7 @@ By default, all administrators who are in the **Organization Management** role g
  By default, all end users have all of the above user roles enabled.
 
 > [!NOTE]
-> There is a setting available via PowerShell in Exchange Online that will override all of the above settings and will prevent any new apps from being activated by any user in the organization. To do this, use the **Set-OrganizationConfig** Powershell cmdlets to set the _AppsForOfficeEnabled_ parameter to False.
+> You can override all of the above settings and prevent any new apps from being activated by any user in the organization. To do this, use the **Set-OrganizationConfig** Powershell cmdlet to set the _AppsForOfficeEnabled_ parameter to False.
 >
 > The admin can also query the current state of the _AppsForOfficeEnabled_ parameter using the **Get-OrganizationConfig** cmdlet. If this parameter returns a value of True, then the settings described above will be followed.
 
