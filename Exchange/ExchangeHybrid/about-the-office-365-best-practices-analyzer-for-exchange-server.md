@@ -1,5 +1,5 @@
 ---
-title: "About the Office 365 Best Practices Analyzer for Exchange Server"
+title: "The Best Practices Analyzer for Exchange Server is no longer available"
 ms.author: v-mapenn
 author: mattpennathe3rd
 ms.reviewer: 
@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c137e46e-c05d-4bdc-b968-67fe5ae68765
-description: "The Best Practices Analyzer is no longer available"
+description: "The Best Practices Analyzer for Exchange Server is no longer available"
 ---
 
-The Best Practices Analyzer is deprecated and should not be used. The tool is no longer available for download and there is no replacement available.
+The Best Practices Analyzer for Exchange Server is deprecated and should not be used. The tool is no longer available for download and there is no replacement available.
