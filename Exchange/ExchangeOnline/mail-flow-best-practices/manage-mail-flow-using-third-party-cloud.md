@@ -67,6 +67,23 @@ Since the anti-spam service is external, you need to create a mail flow rule (al
 
 ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
+Next, you will need to lock down your tenant in Exchange Online to only accept mail from your third-party service.
+Create a **partner** connector configured based on either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses*, then set the respective flag *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* attributes to **$True**. Any messages which are smart-hosted directly to Exchange Online and hence do not come over a connection established with the specified certificate or from the configured IP addresses will be rejected. 
+
+**Example configuration**
+```powershell
+New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
+```
+or
+
+```powershell
+New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <static list of on-premises IPs or IP ranges of the third-party service>
+```
+
+> [!NOTE]
+> If you already have an **OnPremises** type inbound connector for the same certificate or sender IP addresses, you would still need to create the above **Partner** type inbound connector. The two connectors can coexist without a problem. *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* flags are only applied to **Partner** connectors.
+
+
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
