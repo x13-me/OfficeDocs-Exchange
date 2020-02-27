@@ -25,4 +25,6 @@ ms.assetid: c137e46e-c05d-4bdc-b968-67fe5ae68765
 description: "The Best Practices Analyzer for Exchange Server is no longer available"
 ---
 
+# The Best Practices Analyzer for Exchange Server is no longer available
+
 The Best Practices Analyzer for Exchange Server is deprecated and should not be used. The tool is no longer available for download and there is no replacement available.
