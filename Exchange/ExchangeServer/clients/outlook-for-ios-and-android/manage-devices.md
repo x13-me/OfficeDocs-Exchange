@@ -56,10 +56,18 @@ Even if the Android device is unencrypted and an attacker is in possession of th
 
 ### Remote wipe with Exchange ActiveSync
 
-Exchange ActiveSync enables administrators to remotely wipe devices, such as if they become compromised or lost/stolen. With Outlook for iOS and Android, a remote wipe is done on the Outlook app itself, and does not trigger a full device wipe.
+Exchange ActiveSync enables administrators to remotely wipe devices, such as if they become compromised or lost/stolen. With Outlook for iOS and Android, a remote wipe only wipes data within the Outlook app itself and does not trigger a full device wipe.
 
-> [!NOTE]
-> Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device."
+> [!CAUTION]
+> Exchange ActiveSync supports two different remote wipe processes: A "Wipe Data" remote wipe and also an "Account Only Remote Wipe Device" remote wipe. There are important differences between how Outlook responds and how native mail apps on iOS and Android respond to these different wipe commands.
+>
+> Outlook for iOS and Android only supports the "Wipe Data" command, which only wipes data within Outlook and does not wipe any other data from the device. The "Account Only Remote Wipe Device" command is therefore redundant and is not supported by Outlook for iOS or Android.
+>
+> However, if a native iOS or Android mail app is connected to Exchange and receives a "Wipe Data" command from Exchange ActiveSync, all data on the device will be wiped.
+>
+> If a native iOS or Android mail app is connected to Exchange and receives an "Account Only Remote Wipe Device" command from Exchange ActiveSync, only the native mail app's Exchange ActiveSync mail and account data are wiped.
+>
+> Use caution when sending these commands to your mobile devices.
 
 After the remote wipe command is requested by the administrator, the wipe happens within seconds of the Outlook app's next connection to Exchange. The Outlook app will reset and all Outlook email, calendar, contacts, and files data will be removed from the device, as well as from the Outlook service. The wipe will not affect any of the user's personal apps and information outside of Outlook.
 
