@@ -22,21 +22,28 @@ You can specify which administrators in your organization have permissions to in
 
 This is done by assigning or removing management roles specific to add-ins. There are five built-in roles you can use.
 
-Administrative roles
+## Administrative roles
 
 - **Org Marketplace Apps**: Enables an administrator to install and manage add-ins that are available from the Office Store for their organization.
 
 - **Org Custom Apps**: Enables an administrator to install and manage custom add-ins for their organization.
 
-User roles
+By default, all administrators who are in the **Organization Management** role group have both of the above administrative roles enabled.
+
+## User roles
 
 - **My Marketplace Apps**: Enables a user to install and manage Office Store add-ins for their own use.
 
 - **My Custom Apps**: Enables a user to install and manage custom add-ins for their own use.
 
-- **My ReadWriteMailbox Apps**: Enables a user to install and manage add-ins that request the ReadWriteMailbox permission level in their manifest.
+- **My ReadWriteMailbox Apps**: Enables a user to install and manage add-ins that request the `ReadWriteMailbox` permission level in their manifest.
 
-By default, all administrators who have the **Organization Management** role group have both of the above administrative roles enabled. Also by default, end users have the above user roles enabled.
+ By default, all end users have all of the above user roles enabled.
+
+> [!NOTE]
+> There is a setting available via PowerShell in Exchange Online that will override all of the above settings and will prevent any new apps from being activated by any user in the organization. To do this, use the **Set-OrganizationConfig** Powershell cmdlets to set the _AppsForOfficeEnabled_ parameter to False.
+
+The admin can also query the current state of the _AppsForOfficeEnabled_ parameter using the **Get-OrganizationConfig** cmdlet. If this parameter returns a value of True, then the settings described above will be followed.
 
 For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md).
 
