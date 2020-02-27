@@ -67,7 +67,7 @@ Exchange ActiveSync enables administrators to remotely wipe devices, such as if 
 >
 > If a native iOS or Android mail app is connected to Exchange and receives an "Account Only Remote Wipe Device" command from Exchange ActiveSync, only the native mail app's Exchange ActiveSync mail and account data are wiped.
 >
-> Because these commands are designed to destroy data, exercise caution when using them.
+> These commands are designed to destroy data. Exercise caution when using them.
 
 After the remote wipe command is requested by the administrator, the wipe happens within seconds of the Outlook app's next connection to Exchange. The Outlook app will reset and all Outlook email, calendar, contacts, and files data will be removed from the device, as well as from the Outlook service. The wipe will not affect any of the user's personal apps and information outside of Outlook.
 
