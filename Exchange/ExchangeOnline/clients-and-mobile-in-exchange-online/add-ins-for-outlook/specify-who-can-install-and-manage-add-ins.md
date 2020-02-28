@@ -41,9 +41,10 @@ By default, all administrators who are in the **Organization Management** role g
  By default, all end users have all of the above user roles enabled.
 
 > [!NOTE]
-> You can override all of the above settings and prevent any new apps from being activated by any user in the organization. To do this, use the **Set-OrganizationConfig** Powershell cmdlet to set the _AppsForOfficeEnabled_ parameter to False.
 >
-> The admin can also query the current state of the _AppsForOfficeEnabled_ parameter using the **Get-OrganizationConfig** cmdlet. If this parameter returns a value of True, then the settings described above will be followed.
+> If you are testing Outlook add-ins and none are showing up, then as a first troubleshooting step, use the **Get-OrganizationConfig** PowerShell cmdlet to query the *AppsForOfficeEnabled* parameter. If the query returns a value of False, then set this parameter to True using the **Set-OrganizationConfig** Powershell cmdlet and then add-ins should appear as expected.
+>
+> We do not recommend that the *AppsForOfficeEnabled* parameter be set to False. A value of False will override all of the above Administrative and User role settings and prevent any new apps from being activated by any user in the organization.
 
 For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md).
 
