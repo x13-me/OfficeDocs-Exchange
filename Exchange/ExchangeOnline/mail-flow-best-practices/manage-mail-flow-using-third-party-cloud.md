@@ -67,13 +67,16 @@ Since the anti-spam service is external, you need to create a mail flow rule (al
 
 ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
-Next, you will need to lock down your tenant in Exchange Online to only accept mail from your third-party service.
-Create a **partner** connector configured based on either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses*, then set the respective flag *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* attributes to **$True**. Any messages which are smart-hosted directly to Exchange Online and hence do not come over a connection established with the specified certificate or from the configured IP addresses will be rejected. 
+Next, you need to lock down your Exchange Online organization to only accept mail from your third-party service.
 
-**Example configuration**
+Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
+
+For example:
+
 ```powershell
 New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
 ```
+
 or
 
 ```powershell
@@ -81,7 +84,7 @@ New-InboundConnector –Name "Reject mail not routed through MX (third-party ser
 ```
 
 > [!NOTE]
-> If you already have an **OnPremises** type inbound connector for the same certificate or sender IP addresses, you would still need to create the above **Partner** type inbound connector. The two connectors can coexist without a problem. *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* flags are only applied to **Partner** connectors.
+> If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
 
 
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
