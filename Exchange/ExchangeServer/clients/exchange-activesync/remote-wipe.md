@@ -36,7 +36,7 @@ Your users carry sensitive corporate information in their pockets every day. If 
 >
 > Outlook for iOS and Outlook for Android support only the **Wipe Data** command, which wipes only data within Outlook. The Outlook app will reset and all Outlook email, calendar, contacts, and file data will be removed, but no other data is wiped from the device. The **Account Only Remote Wipe Device** command is therefore redundant and is not supported by Outlook for iOS or Android.
 >
-> However, if a native iOS or Android mail app is connected to Exchange and receives a **Wipe Data** command from Exchange ActiveSync, all data on the device will be wiped.
+> However, if a native iOS or Android mail app is connected to Exchange and receives a **Wipe Data** command from Exchange ActiveSync, all data on the device will be wiped, including photos, personal files, and so on.
 >
 > If a native iOS or Android mail app is connected to Exchange and receives an **Account Only Remote Wipe Device** command from Exchange ActiveSync, only the native mail app's Exchange ActiveSync mail, calendar, and account data are wiped.
 >
