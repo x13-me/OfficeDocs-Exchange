@@ -58,7 +58,7 @@ Even if the Android device is unencrypted and an attacker is in possession of th
 
 Exchange ActiveSync enables administrators to remotely wipe devices, such as if they become compromised or lost/stolen. With Outlook for iOS and Android, a remote wipe only wipes data within the Outlook app itself and does not trigger a full device wipe.
 
-See [Perform a remote wipe on a mobile phone](../clients/exchange-activesync/remote-wipe.md) for more information.
+See [Perform a remote wipe on a mobile phone](../exchange-activesync/remote-wipe.md) for more information.
 
 ## Device access policy
 
