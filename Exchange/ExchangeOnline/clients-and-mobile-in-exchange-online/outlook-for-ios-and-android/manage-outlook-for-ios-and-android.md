@@ -72,6 +72,11 @@ Key features of the Enterprise Mobility + Security suite with Outlook for iOS an
 
 - **Selective wipe**. Microsoft Intune can remove Office 365 email data from Outlook for iOS and Android, while leaving any personal email accounts intact (whether the device is enrolled or not). This is an increasingly important requirement as more businesses adopt a "bring your own device" approach to phones and tablets.
 
+Exchange administrators can also initiate a remote device wipe against Outlook for iOS and Android using Exchange Admin Center. Upon receiving the remote wipe request, the app will remove the Outlook profile and all data associated with it.
+
+> [!NOTE]
+> Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device" as defined in the Exchange Admin Center. For more information on how to perform a remote wipe, see [Perform a remote wipe on a mobile phone](https://docs.microsoft.com/Exchange/clients/exchange-activesync/remote-wipe).
+
 For more about Microsoft Intune see [Documentation for Microsoft Intune](https://docs.microsoft.com/intune/).
 
 ### Using built-in Mobile Device Management (MDM) for Office 365
@@ -110,8 +115,3 @@ Outlook for iOS and Android supports the following Exchange mobile device mailbo
 - Password enabled
 
 See [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md) for more information.
-
-Exchange administrators can initiate a remote device wipe against Outlook for iOS and Android. Upon receiving the remote wipe request, the app will remove the profile and all data associated with it.
-
-> [!NOTE]
-> Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device."

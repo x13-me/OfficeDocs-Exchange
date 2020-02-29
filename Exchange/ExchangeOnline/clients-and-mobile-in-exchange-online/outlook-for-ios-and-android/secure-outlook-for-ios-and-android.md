@@ -144,10 +144,7 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
 
 For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
 
-In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. When executed, only the app is wiped, because Exchange Online considers the Outlook for iOS and Android app as the mobile device. For more information on how to perform a remote wipe, see [Perform a remote wipe on a mobile phone](https://docs.microsoft.com/Exchange/clients/exchange-activesync/remote-wipe).
-
-> [!NOTE]
-> Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device" as defined in the Exchange Admin Center. For more information on how to perform a remote wipe, see [Perform a remote wipe on a mobile phone](https://docs.microsoft.com/Exchange/clients/exchange-activesync/remote-wipe).
+In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. With Outlook, a remote wipe only wipes data within the Outlook app itself and does not trigger a full device wipe. For more information on how to perform a remote wipe, see [Perform a remote wipe on a mobile phone](../../../ExchangeServer/clients/exchange-activesync/remote-wipe.md).
 
 ### Device access policy
 
