@@ -411,6 +411,21 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 The newly created configuration policy is displayed on the **App configuration** blade.
 
 ## Configuration keys
+The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the MDM OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
+
+If the **Managed devices** device enrollment type configuration keys are deployed with third-party MDM provider, then the following additional key must also be delivered:
+
+   **key** = IntuneMAMUPN, **value** = <username@company.com>
+
+The exact syntax of the key/value pair may differ based on the third-party MDM provider used. The following table shows examples of some third-party MDM providers and the exact values for the key/value pair:
+
+   |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
+   | ------- | ---- | ---- | ---- |
+   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
+   |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+   |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
+   |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
+   |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
 
 ### Account setup configuration
 
