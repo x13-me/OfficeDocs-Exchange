@@ -36,7 +36,7 @@ Your users carry sensitive corporate information in their pockets every day. If 
 > [!CAUTION]
 > Exchange ActiveSync v16.1 supports two different remote wipe processes: A "Wipe Data" remote wipe and also an "Account Only Remote Wipe Device" remote wipe. There are important differences between how Outlook responds and how native mail apps on iOS and Android respond to these different wipe commands.
 >
-> Outlook for iOS and Outlook for Android support only the "Wipe Data" command, which wipes only data within Outlook. The Outlook app will reset and all Outlook email, calendar, contacts, and file data will be removed from the device, but no other data is wiped from the device. The "Account Only Remote Wipe Device" command is therefore redundant and is not supported by Outlook for iOS or Android.
+> Outlook for iOS and Outlook for Android support only the "Wipe Data" command, which wipes only data within Outlook. The Outlook app will reset and all Outlook email, calendar, contacts, and file data will be removed, but no other data is wiped from the device. The "Account Only Remote Wipe Device" command is therefore redundant and is not supported by Outlook for iOS or Android.
 >
 > However, if a native iOS or Android mail app is connected to Exchange and receives a "Wipe Data" command from Exchange ActiveSync, all data on the device will be wiped.
 >
@@ -73,7 +73,7 @@ The following command wipes the device named WM_TonySmith and sends a confirmati
 Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
-If the device is running a native mail client instead of Outlook, you can use the following command to wipe only Outlook data and leave all other data on the device intact:
+If the device connects to Exchange using a mail app other than Outlook, you can use the following command to wipe only the mail app's Exchange ActiveSync mail, calendar, and account data and leave all other data on the device intact:
 
 ```PowerShell
 Clear-MobileDevice -AccountOnly -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
