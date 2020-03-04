@@ -6,7 +6,9 @@
       "build_output_subfolder": "OfficeDocs-Exchange",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        "=exchserver-2016 || =exchserver-2019"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -24,7 +26,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -62,15 +64,26 @@
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
       "branch": "live",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
     "live": [
-      "Publish"
+      "Publish",
+      "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": false,
-  "targets": {},
+  "need_generate_pdf_url_template": true,
+  "targets": {
+    "pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }

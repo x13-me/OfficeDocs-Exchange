@@ -1,187 +1,310 @@
 ---
-title: "Exchange 2016 prerequisites"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
-ms.assetid: e21cf744-7813-48b3-9293-5cecd89a6c25
-description: "Summary: Windows operating system prerequisites for Exchange 2016 and Exchange management tools."
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools.'
+ms.topic: conceptual
+author: mattpennathe3rd
+ms.author: v-mapenn
+ms.assetid:
+ms.reviewer: 
+title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
-# Exchange 2016 prerequisites
-
- **Summary**: Windows operating system prerequisites for Exchange 2016 and Exchange management tools.
+# Exchange Server prerequisites
 
 > [!TIP]
-> Coming from the Exchange Deployment Assistant? Click [Exchange 2013 prerequisites](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx).
+> Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help).
 
-This topic provides the steps for installing the necessary Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016 operating system prerequisites for the Exchange 2016 Mailbox and Edge Transport server roles. It also provides the prerequisites required to install the Exchange 2016 management tools on Windows 8.1 and Windows 10 client computers.
+This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
+
+After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+
+> [!TIP]
+> Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=626978).
+
+To actually install Exchange 2016 and Exchange 2019, see [Deploy new installations of Exchange](deploy-new-installations/deploy-new-installations.md).
 
 ## What do you need to know before you begin?
-<a name="prereq"> </a>
 
-> [!TIP]
-> Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange 2016 in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to **Exchange Server Deployment Assistant**.
+::: moniker range="exchserver-2019"
+- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#network-and-directory-servers).
+::: moniker-end
 
-- Make sure that the functional level of your forest is at least Windows Server 2008 R2, and that the schema master is running Windows Server 2008 R2 or later. For more information about the Windows functional level, see [Understanding Active Directory Domain Services (AD DS) Functional Levels](https://go.microsoft.com/fwlink/p/?linkId=137037).
+::: moniker range="exchserver-2016"
+- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#network-and-directory-servers).
 
 - The full installation option of Windows Server 2012 and Windows Server 2012 R2 must be used for all servers running Exchange 2016 server roles or management tools.
 
-- You must first join the computer to the appropriate internal Active Directory forest and domain.
-
 - Some prerequisites require you to reboot the server to complete installation.
 
-- Install the latest Windows updates on your computer. For more information, see [Deployment Security Checklist](http://technet.microsoft.com/library/0cbfad59-f503-48a0-8184-6ca999d89e61.aspx).
+> [!NOTE]
+> You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
+::: moniker-end
 
-    > [!NOTE]
-    > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
+- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#supported-operating-systems-for-exchange-2016).
+
+::: moniker range="exchserver-2019"
+> [!NOTE]
+> New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
+::: moniker-end
+
+- Verify the computer is joined to the appropriate internal Active Directory domain.
+
+- Install the latest Windows updates on your computer.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
-The following sections describe how to prepare your environment for Exchange 2016. Once your environment is prepared, use the Exchange Deployment Assistant for next steps on your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+::: moniker range="exchserver-2019"
+## Exchange 2019 prerequisites for preparing Active Directory
 
-## Active Directory preparation
-<a name="ADPrep"> </a>
+You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2019.
 
-The computer you want to use to prepare Active Directory for Exchange 2016 has specific prerequisites that must be met.
+1. The computer requires the following software:
 
-First, install the following software on the computer that will be used to prepare Active Directory:
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
 
-- [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-- [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+      > [!NOTE]
+      > • An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). <br/>•  The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
 
-After you've installed the software listed above, complete the following steps to install the Remote Tools Administration Pack. After you've installed the Remote Tools Administration Pack you'll be able to use the computer to prepare Active Directory. For more information about preparing Active Directory, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
+2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
-1. Open Windows PowerShell.
+   ```PowerShell
+   Install-WindowsFeature RSAT-ADDS
+   ```
 
-2. Install the Remote Tools Administration Pack using the following command.
+> [!NOTE]
+> Using the Exchange Setup Wizard to prepare Active Directory requires the installation of the Management Tools Exchange role.
 
-  ```
-  Install-WindowsFeature RSAT-ADDS
-  ```
+## Windows Server 2019 prerequisites for Exchange 2019
 
-## Windows Server 2012 and Windows Server 2012 R2 prerequisites
-<a name="WS2012"> </a>
+The requirements to install Exchange 2019 on Windows Server 2019 computers are described in the following sections. We recommend either of the following methods to install the Windows prerequisites for Exchange 2019:
 
-The prerequisites that are needed to install Exchange 2016 on computers running Windows Server 2012 or Windows Server 2012 R2 depends on which Exchange role you want to install. Read the section below that matches the role you want to install.
+- Use the /InstallWindowsComponents switch in unattended Setup mode.
 
-### Mailbox server role
-<a name="WS2012MBX"> </a>
+- Select the check box in the Exchange Setup Wizard to install Windows prerequisites.
 
-Follow the instructions in this section to install the prerequisites on computers running Windows Server 2012 or Windows Server 2012 R2 where you want to install the Mailbox server role.
+When you use one of these options, you don't need to restart the computer after the Windows components have been added.
 
-Do the following to install the required Windows roles and features:
+### Exchange 2019 Mailbox servers on Windows Server 2019
 
-1. Open Windows PowerShell.
+1. Install the following software:
 
-2. Run the following command to install the required Windows components.
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
 
-  ```
-  Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
-  ```
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-After you've installed the operating system roles and features, install the following software in the order shown:
+   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
-1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+      > [!NOTE]
+      > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
-2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+2. Add the required Lync Server or Skype for Business Server components:
 
-3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+   a. Install the Server Media Foundation windows feature by executing the following command in Windows PowerShell:
 
-### Edge Transport server role
-<a name="WS2012Edge"> </a>
+      ```PowerShell
+      Install-WindowsFeature Server-Media-Foundation
+      ```
 
-Follow the instructions in this section to install the prerequisites on computers running Windows Server 2012 or Windows Server 2012 R2 where you want to install the Edge Transport server role.
+   b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
-Do the following to install the required Windows roles and features:
+   > [!NOTE]
+   > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
 
-1. Open Windows PowerShell.
+3. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the one of the following commands in Windows PowerShell:
 
-2. Run the following command to install the required Windows components.
+   - **Desktop Experience**:
 
-  ```
-  Install-WindowsFeature ADLDS
-  ```
+      ```PowerShell
+      Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+      ```
 
-After you've installed the operating system roles and features, install the following software in the order shown:
+   - **Server Core**:
 
-1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+      ```PowerShell
+      Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Metabase, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+      ```
 
-2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+### Exchange 2019 Edge Transport servers on Windows Server 2019
 
-## Windows Server 2016 prerequisites
-<a name="WS2016"> </a>
+1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
+   > [!NOTE]
+   > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
+
+   ```PowerShell
+   Install-WindowsFeature ADLDS
+   ```
+
+## Windows 10 client prerequisites for the Exchange 2019 management tools
+
+1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
+   > [!NOTE]
+   > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
+
+   ```PowerShell
+   Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
+   ```
+::: moniker-end
+
+::: moniker range="exchserver-2016"
+## Exchange 2016 prerequisites for preparing Active Directory
+
+You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2016.
+
+1. The computer requires the following software:
+
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
+   > [!NOTE]
+   > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
+
+   ```PowerShell
+   Install-WindowsFeature RSAT-ADDS
+   ```
+
+After you've installed the Remote Tools Administration Pack you can use the computer to prepare Active Directory. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
+
+## Windows Server 2016 prerequisites for Exchange 2016
 
 The prerequisites that are needed to install Exchange 2016 on computers running Windows Server 2016 depends on which Exchange role you want to install. Read the section below that matches the role you want to install.
 
 > [!IMPORTANT]
-> Exchange 2016 Cumulative Update 3 or later is required if you want to install Exchange on Windows Server 2016.
+> Windows Server 2016 requires Exchange 2016 Cumulative Update 3 or later.
 
-### Mailbox server role
-<a name="WS2016MBX"> </a>
+### Exchange 2016 Mailbox servers on Windows Server 2016
 
-Follow the instructions in this section to install the prerequisites on computers running Windows Server 2016 where you want to install the Mailbox server role.
+1. Run the following command in Windows PowerShell to install the required Windows components:
 
-Do the following to install the required Windows roles and features:
+   ```PowerShell
+   Install-WindowsFeature NET-Framework-45-Features, Server-Media-Foundation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+   ```
 
-1. Open Windows PowerShell.
+2. Install the following software in order:
 
-2. Run the following command to install the required Windows components.
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
 
-  ```
-  Install-WindowsFeature NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
-  ```
+   b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
-After you've installed the operating system roles and features, install the following software in the order shown:
+      > [!NOTE]
+      > You can only install this update if your Windows Server 2016 version is 14393.576 or earlier (circa December, 2016). You can see your Windows Server version by running the **winver** command. If your Windows Server 2016 version is greater than 14393.576, you don't need this update or its replacement [KB3213522](https://support.microsoft.com/help/3213522/cumulative-update-for-windows-10-version-1607-and-windows-server-2016), which was released one week later. <br/><br/> Exchange 2016 Setup looks for the installation of this update, won't allow you to continue if this update is missing, and will clearly inform you if you need it.
 
-1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+   c. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-2. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
+   d. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
-3. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+      > [!NOTE]
+      > • An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). <br/>• Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
-4. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+   e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
-### Edge Transport server role
-<a name="WS2016Edge"> </a>
+### Exchange 2016 Edge Transport servers on Windows Server 2016
 
-Follow the instructions in this section to install the prerequisites on computers running Windows Server 2016 where you want to install the Edge Transport server role.
+1. Run the following command in Windows PowerShell to install the required Windows components:
 
-Do the following to install the required Windows roles and features:
+   ```PowerShell
+   Install-WindowsFeature ADLDS
+   ```
 
-1. Open Windows PowerShell.
+2. Install the following software in order:
 
-2. Run the following command to install the required Windows components.
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
 
-  ```
-  Install-WindowsFeature ADLDS
-  ```
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-After you've installed the operating system roles and features, install the following software in the order shown:
+      > [!NOTE]
+      > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
-1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+## Windows Server 2012 and Windows Server 2012 R2 prerequisites for Exchange 2016
 
-2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 2012 R2 computers depend on the Exchange role that you're installing. Read the following section that matches the role you want to install.
 
-## Windows 8.1 and Windows 10 prerequisites (admin tools only)
-<a name="Windows8"> </a>
+### Exchange 2016 Mailbox servers on Windows Server 2012 or Windows Server 2012 R2
 
-Follow the instructions in this section to install the prerequisites on computers running Windows 8.1 or Windows 10 where you want to install the Exchange 2016 Admin Tools.
+1. Run the following command in Windows Powershell to install the required Windows components:
 
-On Windows 8.1 computers, install [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
+   ```PowerShell
+   Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+   ```
 
-On Windows 8.1 and Windows 10 computers, install [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+2. Install the following software in order:
 
-On Windows 8.1 and Windows 10 computers, run the following command from an elevated Windows PowerShell session.
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
 
-```
-Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
-```
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
+   c. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
+      > [!NOTE]
+      > • An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). <br/>•  Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
+
+   d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+
+### Exchange 2016 Edge Transport servers on Windows Server 2012 or Windows Server 2012 R2
+
+1. Run the following command in Windows PowerShell to install the required Windows components:
+
+   ```PowerShell
+   Install-WindowsFeature ADLDS
+   ```
+
+2. Install the following software in order:
+
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+      > [!NOTE]
+      > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+## Windows client prerequisites for the Exchange 2016 management tools
+
+### Exchange 2016 management tools on Windows 10
+
+1. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+   > [!NOTE]
+   > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
+
+   ```PowerShell
+   Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
+   ```
+
+### Exchange 2016 management tools on Windows 8.1
+
+1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+
+2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+   > [!NOTE]
+   > An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
+
+   ```PowerShell
+   Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
+   ```
+::: moniker-end

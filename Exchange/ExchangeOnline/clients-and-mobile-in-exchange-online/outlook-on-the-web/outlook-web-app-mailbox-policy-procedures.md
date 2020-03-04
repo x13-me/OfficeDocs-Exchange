@@ -1,25 +1,29 @@
 ---
-title: "Outlook Web App mailbox policy procedures"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: hub-page
-ms.service: exchange-online
 localization_priority: Normal
+description: The list of Outlook on the web mailbox policy procedure topics in Exchange Online
+ms.topic: hub-page
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d
-description: "Create an Outlook Web App mailbox policy"
+ms.reviewer: 
+title: Outlook on the web mailbox policy procedures in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
-# Outlook Web App mailbox policy procedures
+# Outlook on the web mailbox policy procedures in Exchange Online
 
-[Create an Outlook Web App mailbox policy](create-outlook-web-app-mailbox-policy.md)
-  
-[Apply or remove an Outlook Web App mailbox policy on a mailbox](apply-or-remove-outlook-web-app-mailbox-policy.md)
-  
-[Remove an Outlook Web App mailbox policy from Exchange](remove-outlook-web-app-mailbox-policy.md)
-  
-[View or configure Outlook Web App mailbox policy properties](configure-outlook-web-app-mailbox-policy-properties.md)
-  
+[Create an Outlook on the web mailbox policy in Exchange Online](create-outlook-web-app-mailbox-policy.md)
 
+[Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](apply-or-remove-outlook-web-app-mailbox-policy.md)
+
+[Remove an Outlook on the web mailbox policy from Exchange Online](remove-outlook-web-app-mailbox-policy.md)
+
+[View or configure Outlook on the web mailbox policy properties](configure-outlook-web-app-mailbox-policy-properties.md)

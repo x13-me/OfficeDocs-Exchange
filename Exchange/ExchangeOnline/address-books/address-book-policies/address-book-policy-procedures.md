@@ -1,27 +1,31 @@
 ---
-title: "Address book policy procedures"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: A list of links to the procedure topics for address book policies (ABPs) in Exchange Online
+ms.topic: overview
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 71e5dc2f-5de2-4089-8690-f2a0ed8ede0d
-description: "Turn on address book policy routing"
+ms.reviewer: 
+title: Address book policy procedures in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
-# Address book policy procedures
+# Address book policy procedures in Exchange Online
 
-[Turn on address book policy routing](turn-on-address-book-policy-routing.md)
-  
-[Create an address book policy](create-an-address-book-policy.md)
-  
-[Assign an address book policy to mail users](assign-an-address-book-policy-to-mail-users.md)
-  
-[Change the settings of an address book policy](change-the-settings-of-an-address-book-policy.md)
-  
-[Remove an address book policy](remove-an-address-book-policy.md)
-  
+[Turn on address book policy routing in Exchange Online](turn-on-address-book-policy-routing.md)
 
+[Create an address book policy in Exchange Online](create-an-address-book-policy.md)
+
+[Assign an address book policy to users in Exchange Online](assign-an-address-book-policy-to-mail-users.md)
+
+[Change the settings of an address book policy in Exchange Online](change-the-settings-of-an-address-book-policy.md)
+
+[Remove an address book policy in Exchange Online](remove-an-address-book-policy.md)

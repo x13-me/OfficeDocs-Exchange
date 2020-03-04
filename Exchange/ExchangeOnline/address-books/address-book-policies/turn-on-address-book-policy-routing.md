@@ -1,48 +1,59 @@
 ---
-title: "Turn on address book policy routing"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to turn on address book policy routing in Exchange Online to enable virtual organizations within an organization.
+ms.topic: article
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 5627b8ac-0551-4558-b3b6-25c402698426
-description: "Estimated time to complete: 5 minutes"
+ms.reviewer: 
+title: Turn on address book policy routing in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
-# Turn on address book policy routing
+# Turn on address book policy routing in Exchange Online
 
- **Estimated time to complete: 5 minutes**
-  
-Address book policy (ABP) routing controls how users in one virtual organization view the users of a different virtual organization. Your virtual organization is determined by the global address list (GAL) you reside in. When ABP routing is turned on, users that are assigned to different GALs appear as external recipients and won't be able to view external recipients' contact cards. 
-  
-Looking for the Exchange Server version of this topic? See [Install and Configure the Address Book Policy Routing Agent](http://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx).
-  
-> [!NOTE]
-> By default, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For details, see the "Add a role to a role assignment policy" section of **Manage role assignment policies**. 
-  
-## Use the Exchange Management Shell to turn on ABP routing
+Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Online](address-book-policies.md).
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
-  
-> [!NOTE]
-> You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Exchange Management Shell. 
-  
-This example turns on ABP routing for the entire Exchange organization:
-  
-```
+ABP routing creates the virtual organizations within a single Exchange Online organization. Your virtual organization is determined by the global address list (GAL) you reside in. When ABP routing is turned on, users that are assigned to different GALs appear as external recipients and won't be able to view each other's contact cards.
+
+In Exchange Online, you can only turn on ABP routing in Exchange Online PowerShell.
+
+Looking for the Exchange Server version of this topic? See [Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-book-policies/abp-procedures#use-the-exchange-management-shell-to-install-and-configure-the-address-book-policy-routing-agent).
+
+## What do you need to know before you begin?
+
+- You need to be a member of the Organization Management role group in Exchange Online (or an Office 365 global administrator) before you can perform the procedure in this topic.
+
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
+## Use Exchange Online PowerShell to turn on ABP routing
+
+To enable ABP routing in the Exchange Online organization, run the following command:
+
+```PowerShell
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](http://technet.microsoft.com/library/ad3910a5-2227-47a2-8ccc-a208ce6210bb.aspx).
-  
-## For more information
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportconfig).
 
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
-For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
-  
+### How do you know this worked?
 
+To verify that you've successfully turned on ABP routing, use any of the following steps:
+
+- In Exchange Online PowerShell, run the following command to verify that ABP routing is enabled for the organization:
+
+   ```PowerShell
+   Get-TransportConfig | Format-List AddressBookPolicyRoutingEnabled
+   ```
+
+- Have a user that's assigned an ABP send an email message to an user that's assigned a different ABP, and verify that the sender's email address doesn't resolve to their display name.

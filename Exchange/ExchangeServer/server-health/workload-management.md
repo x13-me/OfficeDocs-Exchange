@@ -1,20 +1,22 @@
 ---
-title: "User workload management in Exchange 2016"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about user workload management and throttling in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
-description: "Summary: Learn about user workload management and throttling in Exchange 2016."
+ms.reviewer:
+title: User workload management in Exchange Server
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
-# User workload management in Exchange 2016
-
- **Summary**: Learn about user workload management and throttling in Exchange 2016.
+# User workload management in Exchange Server
 
 User workload management allows you to control how Exchange system resources are consumed by users. This feature was available in Exchange 2010 (known as *user throttling*), and was expanded to its current level in Exchange 2013.
 
@@ -34,9 +36,9 @@ By default, the user workload settings allow users to increase their resource co
 
 You manage user workload settings with these cmdlets in the Exchange Management Shell:
 
-- **View, create, remove, and modify user workload settings**: [Get-ThrottlingPolicy](http://technet.microsoft.com/library/f7490b98-20e0-46ee-b369-6f77538da689.aspx), [New-ThrottlingPolicy](http://technet.microsoft.com/library/aa6afac5-12bf-41b5-829c-a39e1d276e8b.aspx), [Remove-ThrottlingPolicy](http://technet.microsoft.com/library/d98b709b-672e-42ad-afc4-c6e860d33bc9.aspx) and [Set-ThrottlingPolicy](http://technet.microsoft.com/library/80984ddd-0628-4115-92ed-6b3cef34c833.aspx).
+- **View, create, remove, and modify user workload settings**: [Get-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-throttlingpolicy), [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/new-throttlingpolicy), [Remove-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/remove-throttlingpolicy) and [Set-ThrottlingPolicy](https://technet.microsoft.com/library/80984ddd-0628-4115-92ed-6b3cef34c833.aspx).
 
-- **Assign user workload settings to users or computers**: [Get-ThrottlingPolicyAssociation](http://technet.microsoft.com/library/45e1248f-89c2-467c-8d5d-de1367111e08.aspx) and [Set-ThrottlingPolicyAssociation](http://technet.microsoft.com/library/1d007408-e00d-48da-89aa-5994f490fbae.aspx)
+- **Assign user workload settings to users or computers**: [Get-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-throttlingpolicyassociation) and [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/set-throttlingpolicyassociation)
 
 ## Scopes in user workload settings
 
@@ -59,12 +61,10 @@ If you create custom throttling policies, the settings should be different than 
 > [!NOTE]
 > We strongly recommend that you don't modify the default throttling policy, because changes to the default policy could be overwritten by future Exchange updates. Instead, you should create custom throttling policies that contain customized settings.
 
-## User throttling in Exchange coexistence environments
+## User throttling in Exchange 2010 coexistence environments
 
 Users with mailboxes on Exchange 2016 servers are throttled using Exchange 2016 throttling features, even if you install Exchange 2016 in an Exchange 2010 organization. This list describes the important considerations for throttling in coexistence environments:
 
 - Exchange 2010 mailboxes remain throttled by Exchange 2010 throttling features when users access their mailboxes through Exchange 2010 Client Access servers.
 
 - When you install Exchange 2016 in an Exchange 2010 organization, Exchange 2016 setup might try to carry some of the Exchange 2010 throttling settings forward. However, the throttling functionality is so different that the effects of any legacy throttling settings will generally not alter how throttling works in Exchange 2016.
-
-

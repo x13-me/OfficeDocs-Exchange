@@ -1,0 +1,150 @@
+{
+
+  "redirections": [
+      {
+        "source_path": "Exchange/ExchangeOnline/security-and-compliance/data-loss-prevention/document-fingerprinting.md",
+        "redirect_url": "/Office365/SecurityCompliance/document-fingerprinting",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting.md",
+        "redirect_url": "/Office365/SecurityCompliance/document-fingerprinting",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-fully-qualified-domain-name-of-the-computer-matches-a-recipient-policy-serverfqdnmatchessmtppolicy-exchange-2013-help.md",
+        "redirect_url": "/Exchange/serverfqdnmatchessmtppolicy-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/configure-an-accepted-domain-for-a-business-unit-with-mailboxes-outside-your-exchange-organization-exchange-2013-help.md",
+        "redirect_url": "/Exchange/config-accepted-domain-business-unit-outside-org-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-schemafsmonotwin2003spn-exchange-2013-help.md",
+        "redirect_url": "/Exchange/schemafsmonotwin2003spn-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-distributed-transaction-coordinator-service-must-be-started-before-setup-can-continue-msdtcstopped-exchange-2013-help.md",
+        "redirect_url": "/Exchange/msdtcstopped-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-local-computer-is-responsible-for-expanding-group-membership-serverisdynamicgroupexpansionserver-exchange-2013-help.md",
+        "redirect_url": "/Exchange/serverisdynamicgroupexpansionserver-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/cannot-install-exchange-2007-roles-after-you-prepare-active-directory-for-exchange-2010-noe12serverwarning-exchange-2013-help.md",
+        "redirect_url": "/Exchange/noe12serverwarning-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-windows-process-activation-service-process-model-component-is-required-longhornwasprocessmodelinstalled-exchange-2013-help.md",
+        "redirect_url": "/Exchange/longhornwasprocessmodelinstalled-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-domaincontrollerisoutofsite-exchange-2013-help.md",
+        "redirect_url": "/Exchange/domaincontrollerisoutofsite-exchange-2013-help",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/exchange-server-supportability-matrix-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/plan-and-deploy/supportability-matrix",
+        "redirect_document_id": false
+      },
+     {
+        "source_path": "Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/outlook-for-ios-and-android?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-basic-auth?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/account-setup?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/passwords-and-security?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/manage-devices?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "exchange/outlook/common/office/enterprise-includes/o365endpoints/office-365-worldwide-endpoints.md",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/exchange-online-and-exchange-online-protection-service-upgrade.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview",
+        "redirect_document_id": false
+      },
+      {      
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/fix-outlook-and-office-365-issues.md",
+      "redirect_url": "https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/diagnostic-log-collection-in-support-and-recovery-assistant.md",
+      "redirect_url": "https://docs.microsoft.com/office365/troubleshoot/administration/diagnostic-log-collection-in-support-and-recovery-assistant",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+      "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/cached-exchange-mode.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/kerberos-authentication-outlook-2016-for-mac.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/sign-in/set-delay-renew-kerberos-ticket",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Outlook/plan-outlook-2016-deployment.md",
+        "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/plan-outlook-2016-deployment",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/mail-flow-best-practices/how-to-configure-iis-for-relay-with-office-365.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3",
+        "redirect_document_id": false
+      }
+    ]
+}

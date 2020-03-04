@@ -23,6 +23,22 @@
           "**/**.yml"
         ],
         "src": "ExchangeServer",
+        "group": "exchangeserver",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "src": "ExchangeServer2013",
         "dest": ".",
         "exclude": [
           "**/obj/**",
@@ -73,14 +89,36 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.pdf",
-          "**/*.svg"
+          "**/*.svg",
+          "**/*.docx"
         ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.svg",
+          "**/*.docx"
+        ],
+        "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       }
     ],
+    "groups": {
+      "exchangeserver": {
+        "dest": "exchserver-dest",
+        "moniker_range": "=exchserver-2016 || =exchserver-2019"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -100,6 +138,7 @@
         
     },
     "template": [],
-    "dest": "OfficeDocs-Exchange"
+    "dest": "OfficeDocs-Exchange",
+    "markdownEngineName":  "markdig"
   }
 }

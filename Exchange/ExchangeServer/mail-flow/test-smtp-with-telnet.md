@@ -1,20 +1,22 @@
 ---
-title: "Use Telnet to test SMTP communication on Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
+ms.topic: article
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
-description: "Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers."
+ms.reviewer: 
+title: Use Telnet to test SMTP communication on Exchange servers
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use Telnet to test SMTP communication on Exchange servers
-
- **Summary**: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.
 
 You can use Telnet to test Simple Mail Transfer Protocol (SMTP) communication between messaging servers. SMTP is the protocol that's used to send email messages from one messaging server to another. Using Telnet can be helpful if you're having trouble sending or receiving messages because you can manually send SMTP commands to a messaging server. In return, the server will reply with responses that would be returned in a typical connection. These results can sometimes help you to figure out why you can't send or receive messages.
 
@@ -25,7 +27,7 @@ You can use Telnet to test SMTP communication to:
 - Test mail flow from your Exchange to another messaging server on the Internet.
 
 > [!TIP]
-> Did you know that, instead of using Telnet to test SMTP connectivity, you can use the Microsoft Remote Connectivity Analyzer at [https://testconnectivity.microsoft.com/](https://testconnectivity.microsoft.com/)? With the Remote Connectivity Analyzer, you can choose the connectivity test you want to do, in this case **Inbound SMTP Email**, and follow the instructions shown. It'll step you through the information you need to enter, run the test for you, and then give you the results. Give it a try! 
+> Did you know that, instead of using Telnet to test SMTP connectivity, you can use the Microsoft Remote Connectivity Analyzer at [https://testconnectivity.microsoft.com/](https://testconnectivity.microsoft.com/)? With the Remote Connectivity Analyzer, you can choose the connectivity test you want to do, in this case **Inbound SMTP Email**, and follow the instructions shown. It'll step you through the information you need to enter, run the test for you, and then give you the results. Give it a try!
 
 ## What do you need to know before you begin?
 
@@ -98,47 +100,47 @@ In this example, we're going to use the following values. When you run the comma
 > [!TIP]
 > The commands in the Telnet Client aren't case-sensitive. The SMTP command verbs in this example are capitalized for clarity. You can't use the backspace key in the Telnet session after you connect to the destination SMTP server. If you make a mistake as you type an SMTP command, you need to press Enter, and then type the command again. Unrecognized SMTP commands or syntax errors result in an error message that looks like this: `500 5.3.3 Unrecognized command`
 
-1. Open a Command Prompt window, type telnet, and then press Enter.
+1. Open a Command Prompt window, type `telnet`, and then press Enter.
 
      This command opens the Telnet session.
 
-2. Type set localecho, and then press Enter.
+2. Type `set localecho`, and then press Enter.
 
      This **optional** command lets you view the characters as you type them, and it might be required for some SMTP servers.
 
-3. Type set logfile _\<filename\>_, and then press Enter.
+3. Type `set logfile <filename>`, and then press Enter.
 
      This **optional** command enables logging and specifies the log file for the Telnet session. If you only specify a file name, the log file is located in the current folder. If you specify a path and file name, the path needs to be on the local computer, and you might need to enter the path and file name in the Windows DOS 8.3 format (short name with no spaces). The path needs to exist, but the log file is created automatically.
 
-4. Type OPEN mail1.fabrikam.com 25, and then press Enter.
+4. Type `OPEN mail1.fabrikam.com 25`, and then press Enter.
 
-5. Type EHLO contoso.com, and then press Enter.
+5. Type `EHLO contoso.com`, and then press Enter.
 
-6. Type MAIL FROM:chris@contoso.com, and then press Enter.
+6. Type `MAIL FROM:<chris@contoso.com>`, and then press Enter.
 
-7. Type RCPT TO:kate@fabrikam.com NOTIFY=success,failure, and then press Enter.
+7. Type `RCPT TO:<kate@fabrikam.com> NOTIFY=success,failure`, and then press Enter.
 
      The optional NOTIFY command specifies the particular delivery status notification (DSN) messages (also known as bounce messages, nondelivery reports, or NDRs) that the SMTP is required to provide. In this example, you're requesting a DSN message for successful or failed message delivery.
 
-8. Type DATA, and then press Enter.
+8. Type `DATA`, and then press Enter.
 
-9. Type Subject: Test from Contoso, and then press Enter.
+9. Type `Subject: Test from Contoso`, and then press Enter.
 
 10. Press Enter again.
 
-     A blank line is needed between the `Subject:` field and the message body.
+     A blank line is needed between the **Subject:** field and the message body.
 
-11. Type This is a test message, and then press Enter.
+11. Type `This is a test message`, and then press Enter.
 
 12. Type a period ( . ), and then press Enter.
 
-13. To disconnect from the SMTP server, type QUIT, and then press Enter.
+13. To disconnect from the SMTP server, type `QUIT`, and then press Enter.
 
-14. To close the Telnet session, type quit, and then press Enter.
+14. To close the Telnet session, type `quit`, and then press Enter.
 
 Here's what a successful session using the steps above looks like:
 
-```
+```console
 C:\Windows\System32> telnet
 Microsoft Telnet> set localecho
 Microsoft Telnet> set logfile c:\TelnetTest.txt
@@ -158,14 +160,14 @@ EHLO contoso.com
 250-BINARYMIME
 250-CHUNKING
 250 XRDST
-MAIL FROM: chris@contoso.com
+MAIL FROM: <chris@contoso.com>
 250 2.1.0 Sender OK
-RCPT TO: kate@fabrikam.com NOTIFY=success,failure
+RCPT TO: <kate@fabrikam.com> NOTIFY=success,failure
 250 2.1.5 Recipient OK
 DATA
 354 Start mail input; end with <CRLF>.<CRLF>
 Subject: test
- 
+
 This is a test message.
 .
 250 2.6.0 <c89b4fcc-3ad1-4758-a1ab-1e820065d622@mail1.fabrikam.com> [InternalId=5111011082268, Hostname=mail1.fabrikam.com] Queued mail for delivery
@@ -196,11 +198,11 @@ The first digit (X) is particularly important to understand because it indicates
 
 |**Reply code**|**Meaning**|
 |:-----|:-----|
-|2.y.z  <br/> |The command that was sent was successfully completed on the remote server. The remote server is ready for the next command.  <br/> |
-|3.y.z  <br/> |The command was accepted but the remote server needs more information before the operation can be completed. The sending server needs to send a new command with the needed information.  <br/> |
-|4.y.z  <br/> |The command wasn't accepted by the remote server for a reason that might be temporary. The sending server should try to connect again later to see if the remote server can successfully accept the command. The sending server will continue to retry the connection until either a successful connection is completed (indicated by a 2.y.z code) or fails permanently (indicated by a 5.y.z code).  <br/> An example of a temporary error is low storage space on the remote server. Once more space is made available, the remote server should be able to successfully accept the command.  <br/> |
-|5.y.z  <br/> |The command wasn't accepted by the remote server for a reason that is isn't recoverable. The sending server won't retry the connection and will send a non-delivery report back to the user who sent the message.  <br/> An example of an unrecoverable error is a message that's sent to an email address that doesn't exist.  <br/> |
- 
+|2.y.z|The command that was sent was successfully completed on the remote server. The remote server is ready for the next command.|
+|3.y.z|The command was accepted but the remote server needs more information before the operation can be completed. The sending server needs to send a new command with the needed information.|
+|4.y.z|The command wasn't accepted by the remote server for a reason that might be temporary. The sending server should try to connect again later to see if the remote server can successfully accept the command. The sending server will continue to retry the connection until either a successful connection is completed (indicated by a 2.y.z code) or fails permanently (indicated by a 5.y.z code).  <br/> An example of a temporary error is low storage space on the remote server. Once more space is made available, the remote server should be able to successfully accept the command.|
+|5.y.z|The command wasn't accepted by the remote server for a reason that is isn't recoverable. The sending server won't retry the connection and will send a non-delivery report back to the user who sent the message.  <br/> An example of an unrecoverable error is a message that's sent to an email address that doesn't exist.|
+
 The table above is based on information provided by [RFC 5321 (Simple Mail Transfer Protocol), section 4.2.1](https://go.microsoft.com/fwlink/p/?LinkID=824668). Additional information, including descriptions of the second (Y) and third (Z) digits of SMTP reply codes is included in this section, and in sections [4.2.2](https://go.microsoft.com/fwlink/p/?LinkId=824669) and [4.2.3](https://go.microsoft.com/fwlink/p/?LinkId=824670).
 
 ### OPEN command
@@ -255,5 +257,3 @@ The table above is based on information provided by [RFC 5321 (Simple Mail Trans
  **Failure response**: `550 5.1.1 User unknown`
 
  **Possible reasons for failure**: The specified recipient doesn't exist.
-
-

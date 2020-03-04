@@ -1,22 +1,24 @@
 ---
-title: "S/MIME for message signing and encryption"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about how S/MIME in Exchange Server adds S/MIME-based security and lets you encrypt and digitally sign emails.'
+ms.topic: article
+author: mattpennathe3rd
+ms.author: v-mapenn
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: "Summary: Learn about how S/MIME in Exchange 2016 adds S/MIME-based security and lets you encrypt and digitally sign emails."
+ms.reviewer:
+title: S/MIME for message signing and encryption
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # S/MIME for message signing and encryption
 
- **Summary**: Learn about how S/MIME in Exchange 2016 adds S/MIME-based security and lets you encrypt and digitally sign emails.
-
-As an administrator in Exchange 2016, you can enable Secure/Multipurpose Internet Mail Extensions (S/MIME) for your organization. S/MIME is a widely accepted method (more precisely, a protocol) for sending digitally signed and encrypted messages. S/MIME allows you to encrypt emails and digitally sign them. When you use S/MIME, it helps the people who receive the message by:
+As an administrator in Exchange Server, you can enable Secure/Multipurpose Internet Mail Extensions (S/MIME) for your organization. S/MIME is a widely accepted method (more precisely, a protocol) for sending digitally signed and encrypted messages. S/MIME allows you to encrypt emails and digitally sign them. When you use S/MIME, it helps the people who receive the message by:
 
 - Ensuring that the message in their inbox is the exact message that started with the sender.
 
@@ -52,9 +54,9 @@ The steps that you follow to set up S/MIME with each of these endpoints are slig
 
 Setting up S/MIME with Outlook on the web involves these key steps:
 
-1. [Configure S/MIME settings for Outlook on the web](http://technet.microsoft.com/library/c7dee22c-9b5b-425c-91a9-d093204ff84e.aspx)
+1. [Configure S/MIME settings for Outlook on the web](https://technet.microsoft.com/library/c7dee22c-9b5b-425c-91a9-d093204ff84e.aspx)
 
-2. [Set up Virtual Certificate Collection to Validate S/MIME](http://technet.microsoft.com/library/04a616e6-197c-490c-ae8c-c8d5f0f0b3dd.aspx)
+2. [Set up Virtual Certificate Collection to Validate S/MIME](https://technet.microsoft.com/library/04a616e6-197c-490c-ae8c-c8d5f0f0b3dd.aspx)
 
 For information about how to send an S/MIME encrypted message in Outlook on the web, see [Encrypt messages by using S/MIME in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=392520).
 
@@ -67,5 +69,3 @@ A variety of encryption technologies work together to provide protection for mes
 **Note**: Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
 
 > **BitLocker**: Encrypts the data on a hard drive in a datacenter so that if someone gets unauthorized access, they can't read it.
-
-
