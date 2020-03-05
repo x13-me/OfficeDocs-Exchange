@@ -10,6 +10,8 @@ ms.collection:
 - exchange-online
 description: 'Summary: This article describes how to restore a public folder that was previously deleted in Exchange Online'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Restore a deleted public folder
 
 ---

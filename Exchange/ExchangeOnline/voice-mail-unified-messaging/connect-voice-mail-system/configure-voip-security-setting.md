@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the VoIP security setting in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

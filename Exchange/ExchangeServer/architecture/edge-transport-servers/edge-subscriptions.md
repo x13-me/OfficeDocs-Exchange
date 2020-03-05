@@ -8,6 +8,8 @@ ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms.reviewer: 
 title: Edge Subscriptions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

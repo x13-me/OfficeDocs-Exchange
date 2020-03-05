@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.EnableUnifiedMessagingWizardForm.EnableUnifiedMessagingWizardPage'
 ms.assetid: ad027767-5e14-4cb1-9f8a-0791d9188db5
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

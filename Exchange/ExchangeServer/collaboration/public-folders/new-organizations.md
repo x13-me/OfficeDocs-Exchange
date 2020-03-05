@@ -8,6 +8,8 @@ ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer:
 title: Set up public folders in a new organization
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

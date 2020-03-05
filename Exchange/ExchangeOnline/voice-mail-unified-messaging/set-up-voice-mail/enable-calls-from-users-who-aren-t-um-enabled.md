@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable calls from users who aren't UM-enabled in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

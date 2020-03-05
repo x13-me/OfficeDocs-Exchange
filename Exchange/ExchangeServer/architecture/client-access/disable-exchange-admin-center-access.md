@@ -8,6 +8,8 @@ ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer: 
 ms.prod: exchange-server-it-pro

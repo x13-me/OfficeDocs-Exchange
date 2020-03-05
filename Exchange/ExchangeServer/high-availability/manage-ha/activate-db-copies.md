@@ -8,6 +8,8 @@ ms.assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms.reviewer:
 title: Activate a mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

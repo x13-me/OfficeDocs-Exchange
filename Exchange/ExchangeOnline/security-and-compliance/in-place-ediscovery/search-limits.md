@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 65864987-f734-4fab-be97-1ba190a083d4
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Search limits for In-Place eDiscovery in Exchange Online
 ms.collection: 
 - exchange-online

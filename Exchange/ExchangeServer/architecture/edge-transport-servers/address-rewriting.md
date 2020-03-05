@@ -8,6 +8,8 @@ ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms.reviewer: 
 title: Address rewriting on Edge Transport servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

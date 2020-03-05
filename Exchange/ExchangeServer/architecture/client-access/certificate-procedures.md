@@ -8,6 +8,8 @@ ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms.reviewer:
 title: Certificate procedures in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

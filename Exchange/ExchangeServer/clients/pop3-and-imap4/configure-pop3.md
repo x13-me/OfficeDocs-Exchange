@@ -8,6 +8,8 @@ ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
 ms.reviewer:
 title: Enable and configure POP3 on an Exchange server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

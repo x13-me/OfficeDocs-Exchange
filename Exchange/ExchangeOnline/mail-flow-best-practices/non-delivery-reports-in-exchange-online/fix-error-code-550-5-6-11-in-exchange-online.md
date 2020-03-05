@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 search.appverid: BCS160
 ms.assetid: 81dafee7-26af-4d79-b174-8f78980dfafb

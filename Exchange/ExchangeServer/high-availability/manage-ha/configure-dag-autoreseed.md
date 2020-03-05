@@ -8,6 +8,8 @@ ms.assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
 ms.reviewer:
 title: Configure AutoReseed for a database availability group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

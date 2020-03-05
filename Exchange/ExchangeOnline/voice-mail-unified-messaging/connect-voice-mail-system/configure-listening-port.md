@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the listening port in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

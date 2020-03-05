@@ -8,6 +8,8 @@ ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.reviewer:
 title: View statistics for public folders and public folder items
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

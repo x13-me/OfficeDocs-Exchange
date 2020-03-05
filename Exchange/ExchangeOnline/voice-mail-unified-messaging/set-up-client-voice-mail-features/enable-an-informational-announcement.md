@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b69ed0e1-f978-498a-963e-42a047678db4
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable an informational announcement for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

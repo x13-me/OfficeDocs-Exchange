@@ -8,6 +8,8 @@ ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms.reviewer:
 title: Queues and messages in queues in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

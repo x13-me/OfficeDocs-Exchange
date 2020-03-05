@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -60,7 +62,7 @@ For detailed syntax and parameter information, see [Get-MailboxFolderStatistics]
 This example retrieves a list of all mailboxes placed on Litigation Hold and retrieves mailbox folder statistics for the Recoverable Items folder and its subfolders for each mailbox. The **Identity** (mailbox folder identity) and the **FolderAndSubfolderSize** properties are displayed in a table format.
 
 ```powershell
-Get-Mailbox -ResultSize Unlimited -Filter "LitigationHoldEnabled -eq `$true" | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+Get-Mailbox -ResultSize Unlimited -Filter "LitigationHoldEnabled -eq `$true" | Get-MailboxFolderStatistics -FolderScope RecoverableItems | Format-Table Identity,FolderAndSubfolderSize
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)).

@@ -8,6 +8,8 @@ ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms.reviewer:
 title: Activate a lagged mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

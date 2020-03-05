@@ -3,11 +3,13 @@ localization_priority: Normal
 description: Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- ms.exch.eac.ConnectorSelection
 ms.author: v-mapenn
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- ms.exch.eac.ConnectorSelection
 title: Configure mail flow using connectors in Office 365
 ms.collection: exchange-online
 audience: ITPro

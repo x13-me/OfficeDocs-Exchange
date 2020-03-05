@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -56,11 +58,11 @@ Here are a few ideas for how to use disclaimers.
 </tr>
 <tr class="even">
 <td><p>Signature - pulls in data for each employee</p></td>
-<td><p>Kathleen Mayer<br />
-Sales Department<br />
-Contoso<br />
-www.contoso.com<br />
-kathleen@contoso.com<br />
+<td><p>Kathleen Mayer<br/>
+Sales Department<br/>
+Contoso<br/>
+www.contoso.com<br/>
+kathleen@contoso.com<br/>
 cell: 111-222-1234</p></td>
 </tr>
 <tr class="odd">
@@ -205,17 +207,17 @@ For example, here's an example of an HTML disclaimer that includes a signature, 
 
 ```HTML
 <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
-%%displayname%%</br>
-%%title%%</br>
-%%company%%</br>
-%%street%%</br>
+%%displayname%%<br/>
+%%title%%<br/>
+%%company%%<br/>
+%%street%%<br/>
 %%city%%, %%state%% %%zipcode%%</div>
-&nbsp;</br>
+&nbsp;<br/>
 <div style="background-color:#D5EAFF; border:1px dotted #003333; padding:.8em; ">
 <div><img alt="Fabrikam"  src="http://fabrikam.com/images/fabrikamlogo.png"></div>
-<span style="font-size:12pt;  font-family: 'Cambria','times new roman','garamond',serif; color:#ff0000;">HTML Disclaimer Title</span></br>
+<span style="font-size:12pt;  font-family: 'Cambria','times new roman','garamond',serif; color:#ff0000;">HTML Disclaimer Title</span><br/>
 <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you are not the named addressee, you should not disseminate, distribute, or copy this e-mail. If you are not the intended recipient, you are notified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
-<span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
+<span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span><br/><br/>
 </div>
 ```
 

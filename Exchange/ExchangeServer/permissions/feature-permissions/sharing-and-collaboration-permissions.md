@@ -8,6 +8,8 @@ ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
 ms.reviewer:
 title: Sharing and collaboration permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -16,7 +18,7 @@ manager: serdars
 
 # Sharing and collaboration permissions
 
-The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](https://docs.microsoft.com/exchange/collaboration-exchange-2013-help) and [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](https://docs.microsoft.com/Exchange/collaboration/collaboration) and [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 

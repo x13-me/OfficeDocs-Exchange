@@ -10,6 +10,8 @@ title: Third-party copyright notices
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

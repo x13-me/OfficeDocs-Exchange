@@ -8,6 +8,8 @@ ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.reviewer:
 title: View members of a dynamic distribution group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

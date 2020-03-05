@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: eecc40ae-fac7-41e4-a1e1-16330f4462a3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable common PIN patterns for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -8,6 +8,8 @@ ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms.reviewer:
 title: Clean up or delete items from the Recoverable Items folder
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

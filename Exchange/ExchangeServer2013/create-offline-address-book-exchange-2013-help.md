@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewOabWizardForm.OabIntroductionWizardPage'
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

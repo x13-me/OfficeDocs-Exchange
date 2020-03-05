@@ -8,6 +8,8 @@ ms.assetid: 8b46e0bf-334d-44ed-bf20-eab605fdcae6
 title: Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

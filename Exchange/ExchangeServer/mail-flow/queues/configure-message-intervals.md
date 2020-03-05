@@ -8,6 +8,8 @@ ms.assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
 ms.reviewer: 
 title: Configure message retry, resubmit, and expiration intervals
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
 ms.reviewer:
 title: Recipients Permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

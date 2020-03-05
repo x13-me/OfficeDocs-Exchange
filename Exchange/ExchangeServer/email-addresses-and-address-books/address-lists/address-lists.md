@@ -9,6 +9,8 @@ ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.collection: exchange-server
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Address lists in Exchange Server
 

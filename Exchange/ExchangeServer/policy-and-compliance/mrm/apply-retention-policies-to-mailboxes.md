@@ -8,6 +8,8 @@ ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer:
 title: Apply a retention policy to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

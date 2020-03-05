@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abdd0474-db84-49b1-a915-f5710f206a58
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Clutter notifications in Outlook
 ms.collection: 
 - exchange-online

@@ -3,6 +3,8 @@ title: "Exchange Deployment Assistant release notes"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 layout: LandingPage
 ms.topic: landing-page

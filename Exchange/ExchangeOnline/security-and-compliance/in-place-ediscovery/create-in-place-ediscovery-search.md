@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create an In-Place eDiscovery search
 ms.collection: 
 - exchange-online

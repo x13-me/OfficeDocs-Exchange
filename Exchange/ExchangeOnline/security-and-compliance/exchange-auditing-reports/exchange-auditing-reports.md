@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Exchange Online auditing reports
 ms.collection: 
 - exchange-online

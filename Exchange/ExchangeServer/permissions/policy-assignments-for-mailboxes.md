@@ -8,6 +8,8 @@ ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms.reviewer:
 title: Change the assignment policy on a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

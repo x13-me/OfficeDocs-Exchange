@@ -8,6 +8,8 @@ ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
 ms.reviewer: 
 title: Use Telnet to test SMTP communication on Exchange servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

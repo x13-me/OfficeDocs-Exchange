@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 17941918-7dc5-41a0-b540-09f2f907362b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

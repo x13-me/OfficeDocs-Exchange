@@ -10,6 +10,8 @@ title: Manage accepted domains in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-online
 manager: serdars

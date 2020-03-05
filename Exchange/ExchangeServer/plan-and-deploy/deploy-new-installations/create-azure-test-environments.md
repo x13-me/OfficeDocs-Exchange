@@ -11,6 +11,8 @@ ms.collection:
 - Strat_EX_Admin
 - Ent_O365
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

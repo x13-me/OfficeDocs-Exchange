@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Assign eDiscovery permissions in Exchange
 ms.collection: 
 - exchange-online

@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -43,9 +45,6 @@ For more information about federation trusts and federation, see [Federation](fe
 ## Update a working federation certificate
 
 If the federation certificate hasn't expired, you can update the existing federation trust with a new federation certificate.
-
-> [!NOTE]
-> The Graphical User Interface/Wizard can be used as an alternative to update the Microsoft Teams certificate automatically.
 
 ## Step 1: Create a new federation certificate
 

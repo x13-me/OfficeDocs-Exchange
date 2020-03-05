@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage'
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 
