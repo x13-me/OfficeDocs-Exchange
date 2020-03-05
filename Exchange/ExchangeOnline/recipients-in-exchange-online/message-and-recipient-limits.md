@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0932b938-43c8-40b8-a037-4780a3349e82
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Message and recipient limits in Exchange Online
 ms.collection:
 - exchange-online

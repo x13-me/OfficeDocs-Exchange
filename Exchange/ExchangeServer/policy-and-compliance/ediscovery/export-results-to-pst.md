@@ -8,6 +8,8 @@ ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.reviewer: 
 title: Export eDiscovery search results to a PST file
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

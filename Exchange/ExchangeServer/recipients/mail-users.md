@@ -8,6 +8,8 @@ ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
 ms.reviewer:
 title: Manage mail users
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

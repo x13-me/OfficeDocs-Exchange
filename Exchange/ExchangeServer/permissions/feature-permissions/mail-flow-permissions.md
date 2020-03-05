@@ -8,6 +8,8 @@ ms.assetid: f49f4fb5-af75-43cb-900f-c5f7b8cfa143
 ms.reviewer:
 title: Mail flow permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

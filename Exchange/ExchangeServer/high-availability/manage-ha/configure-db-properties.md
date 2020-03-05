@@ -8,6 +8,8 @@ ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms.reviewer:
 title: Configure mailbox database copy properties
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

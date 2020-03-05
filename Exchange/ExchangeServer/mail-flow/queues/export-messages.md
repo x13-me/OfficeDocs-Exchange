@@ -8,6 +8,8 @@ ms.assetid: 688b342c-f380-4fe0-afce-7e38cf490627
 ms.reviewer: 
 title: Export messages from queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

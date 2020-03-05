@@ -8,6 +8,8 @@ ms.assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
 ms.reviewer:
 title: Manage administrator audit logging
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -8,6 +8,8 @@ ms.assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms.reviewer:
 title: Configure message size limits for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 96b4be99-af94-4fa4-959a-48413387a044
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure business hours in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

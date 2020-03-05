@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 511e4950-340a-48cc-a020-35d11e76b993
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Play on Phone in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

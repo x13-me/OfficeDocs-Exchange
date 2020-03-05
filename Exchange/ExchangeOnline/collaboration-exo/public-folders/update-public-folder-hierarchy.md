@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Update the public folder hierarchy
 ms.collection: 
 - exchange-online

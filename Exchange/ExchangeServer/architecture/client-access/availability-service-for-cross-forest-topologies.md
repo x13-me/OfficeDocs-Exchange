@@ -8,6 +8,8 @@ ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms.reviewer:
 title: Configure the Availability service for cross-forest topologies
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -45,8 +47,10 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
+- There are additional considerations when the target forest is Exchange Server 2013 or Exchange Server 2016. See [Cross forest free/busy lookup fails when target forest is Exchange Server 2013 or Exchange Server 2016](https://support.microsoft.com/help/3010570/cross-forest-free-busy-lookup-fails-when-target-forest-is-exchange-ser) for more information.
+
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/Forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Management Shell to configure per-user free/busy information in a trusted cross-forest topology
 

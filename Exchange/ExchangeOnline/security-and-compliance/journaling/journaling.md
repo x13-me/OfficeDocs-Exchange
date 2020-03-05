@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Journaling in Exchange Online
 ms.collection: 
 - exchange-online

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Manage journaling in Exchange Online
 ms.collection: 
 - exchange-online
@@ -28,7 +30,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
 
-- You need to have a journaling mailbox and (optionally) an alternate journaling mailbox configured. For more information, see [Configure Journaling in Exchange Online](configure-journaling.md).
+- You need to have a journaling mailbox and an alternate journaling mailbox configured. For more information, see [Configure Journaling in Exchange Online](configure-journaling.md).
 
 - In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
 

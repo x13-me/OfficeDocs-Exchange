@@ -8,6 +8,8 @@ ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
 ms.reviewer:
 title: Connectors, Exchange connector, Exchange send connector, Exchange receive connector
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

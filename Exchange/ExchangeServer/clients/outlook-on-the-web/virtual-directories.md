@@ -8,6 +8,8 @@ ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms.reviewer:
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

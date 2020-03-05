@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete or restore user mailboxes in Exchange Online
 ms.collection: 
 - exchange-online
@@ -73,12 +75,12 @@ This example deletes an Exchange Online mailbox and the corresponding Office 365
 Remove-Mailbox -Identity "Walter Harp"
 ```
 
-### Use Windows Powershell to permanently delete a user mailbox
+### Use Windows PowerShell to permanently delete a user mailbox
 
 This example deletes the user account for Walter Harp from Azure AD.
 
 ```PowerShell
-Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin true
+Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
 ```
 
 For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).

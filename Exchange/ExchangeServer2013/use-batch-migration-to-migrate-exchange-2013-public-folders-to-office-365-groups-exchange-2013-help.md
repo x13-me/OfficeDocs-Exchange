@@ -8,6 +8,8 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 ms:mtpsurl: https://technet.microsoft.com/library/Mt843873(v=EXCHG.150)
 ms:contentKeyID: 74468675
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

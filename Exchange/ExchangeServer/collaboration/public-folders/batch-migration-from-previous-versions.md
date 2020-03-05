@@ -10,6 +10,8 @@ ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:
 ms.collection: exchange-server
 description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
 
@@ -432,11 +434,11 @@ If you run into issues with the migration and need to reactivate your Exchange 2
 2. On the Exchange 2016 server, run the following commands to remove the public folder mailboxes.
 
    ```PowerShell
-   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
    ```PowerShell
-   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
 3. On the Exchange 2010 server, run the following command to set the `PublicFolderMigrationComplete` property value to `False`.

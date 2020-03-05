@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable an informational announcement in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

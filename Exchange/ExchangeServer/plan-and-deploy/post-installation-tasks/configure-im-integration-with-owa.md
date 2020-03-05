@@ -10,6 +10,8 @@ title: Configure instant messaging integration with Outlook on the web in Exchan
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

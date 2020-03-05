@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Message Trace FAQ
 ms.collection: 
 - exchange-online

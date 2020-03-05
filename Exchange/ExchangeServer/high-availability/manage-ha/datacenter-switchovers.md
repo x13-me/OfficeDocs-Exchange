@@ -8,6 +8,8 @@ ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms.reviewer:
 title: Datacenter switchovers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

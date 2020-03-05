@@ -8,6 +8,8 @@ ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's new in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer:
 ms.prod: exchange-server-it-pro

@@ -8,6 +8,8 @@ ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
 ms.reviewer:
 title: Public folders
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 14783f45-95f5-49de-8215-0a3aef7dc034
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure a dial plan for users who have similar names in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

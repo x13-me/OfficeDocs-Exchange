@@ -8,6 +8,8 @@ ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms.reviewer:
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enter a business name in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

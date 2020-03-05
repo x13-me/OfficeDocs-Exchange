@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage'
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

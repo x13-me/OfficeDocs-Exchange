@@ -8,6 +8,8 @@ ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms.reviewer: 
 title: Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

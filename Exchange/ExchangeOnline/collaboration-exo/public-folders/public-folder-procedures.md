@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Public folder procedures in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online

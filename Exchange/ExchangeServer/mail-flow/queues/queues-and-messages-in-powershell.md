@@ -8,6 +8,8 @@ ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms.reviewer: 
 title: Find queues and messages in queues in the Exchange Management Shell
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

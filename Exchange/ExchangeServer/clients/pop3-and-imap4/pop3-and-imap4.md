@@ -8,6 +8,8 @@ ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms.reviewer:
 title: POP3 and IMAP4 in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
