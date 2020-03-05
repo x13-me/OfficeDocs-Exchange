@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Modify archive policies
 ms.collection: 
 - exchange-online

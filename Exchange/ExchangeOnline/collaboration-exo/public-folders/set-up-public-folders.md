@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set up public folders in a new organization
 ms.collection: 
 - exchange-online

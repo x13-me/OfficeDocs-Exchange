@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a4f9c56a-cb9b-401b-9b45-d71c6e036871
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Sharing policies in Exchange Online
 ms.collection: 
 - exchange-online

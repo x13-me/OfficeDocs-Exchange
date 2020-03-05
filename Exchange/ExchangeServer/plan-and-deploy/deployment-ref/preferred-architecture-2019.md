@@ -8,6 +8,8 @@ ms.assetid:
 monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer:
 ms.prod: exchange-server-it-pro

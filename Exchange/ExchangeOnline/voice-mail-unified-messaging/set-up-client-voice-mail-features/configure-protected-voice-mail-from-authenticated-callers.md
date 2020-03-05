@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f69e94a7-9768-4445-9ded-e78d732bd623
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure Protected Voice Mail from authenticated callers in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

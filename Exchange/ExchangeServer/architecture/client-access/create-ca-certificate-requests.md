@@ -10,6 +10,8 @@ title: Create an Exchange Server certificate request for a certification authori
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -159,8 +161,10 @@ This example creates a certificate request on the local Exchange server for a SA
 
 - **FriendlyName**: Contoso.com SAN Cert
 
+- **DomainName**: Unquoted comma-separated list of domains
+
 ```PowerShell
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com" -DomainName "autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net"
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com" -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
 ```
 
 This example creates a request for a single subject certificate with the following properties:

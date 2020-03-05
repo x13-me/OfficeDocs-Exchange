@@ -8,6 +8,8 @@ ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms.reviewer:
 title: Configure internet mail flow through Edge Transport servers without using EdgeSync
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -159,7 +161,7 @@ To verify that you have successfully configured the required Send connectors and
 
 ```PowerShell
 Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism; Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
-```PowerShell
+```
 
 ## Mailbox server procedures
 

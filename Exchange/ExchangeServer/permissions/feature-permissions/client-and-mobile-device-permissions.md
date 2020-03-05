@@ -8,6 +8,8 @@ ms.assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
 ms.reviewer:
 title: Clients and mobile devices permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

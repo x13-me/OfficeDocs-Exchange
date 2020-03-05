@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1f8e0a53-3d9d-4f8c-9be3-9f1e2a4347a3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Allow voice mail users to forward calls in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

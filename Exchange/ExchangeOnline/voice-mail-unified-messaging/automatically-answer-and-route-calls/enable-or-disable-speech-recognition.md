@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 92b3b679-b503-4068-8e88-25ec0f4537ab
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable automatic speech recognition in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

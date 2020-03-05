@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add or remove email addresses for a mailbox
 ms.collection: 
 - exchange-online

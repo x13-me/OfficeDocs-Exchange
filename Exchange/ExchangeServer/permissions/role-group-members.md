@@ -8,6 +8,8 @@ ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
 ms.reviewer:
 title: Manage role group members
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

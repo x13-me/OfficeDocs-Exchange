@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Interpret voice mail call records in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

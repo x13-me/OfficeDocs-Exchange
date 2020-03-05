@@ -8,6 +8,8 @@ ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
 ms.reviewer:
 title: Recovery databases
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

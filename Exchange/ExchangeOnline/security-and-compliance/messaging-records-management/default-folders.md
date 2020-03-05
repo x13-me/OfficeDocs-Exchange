@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Default folders that support Retention Policy Tags
 ms.collection: 
 - exchange-online

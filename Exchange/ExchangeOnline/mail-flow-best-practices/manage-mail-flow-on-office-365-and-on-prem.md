@@ -10,6 +10,8 @@ title: Manage mail flow using a third-party cloud service with Exchange Online a
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-online
 manager: serdars

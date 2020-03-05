@@ -8,6 +8,8 @@ ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 ms.reviewer:
 title: Exchange high availability, Exchange high availability step by step, Exchange site resilience, Site resilience Exchange, High availability for Exchange, High availability Exchange Server, Exchange DAG high availability, High availability DAG
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

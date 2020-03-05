@@ -8,6 +8,8 @@ ms.assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
 ms.reviewer:
 title: Role management permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

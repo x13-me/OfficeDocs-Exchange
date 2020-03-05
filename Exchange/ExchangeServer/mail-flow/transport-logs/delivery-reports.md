@@ -8,6 +8,8 @@ ms.assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
 ms.reviewer: 
 title: Delivery reports for administrators
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

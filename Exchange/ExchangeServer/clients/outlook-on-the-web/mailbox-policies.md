@@ -8,6 +8,8 @@ ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.reviewer:
 title: View or configure Outlook on the web mailbox policy properties
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

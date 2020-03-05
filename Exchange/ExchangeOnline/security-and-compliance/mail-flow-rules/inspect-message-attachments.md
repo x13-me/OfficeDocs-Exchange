@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 874d1c78-a8ec-4938-b388-d3208c2fa971
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Use mail flow rules to inspect message attachments in Exchange Online
 ms.collection: 
 - exchange-online

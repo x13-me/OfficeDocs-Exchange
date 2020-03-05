@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Message Waiting Indicator in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

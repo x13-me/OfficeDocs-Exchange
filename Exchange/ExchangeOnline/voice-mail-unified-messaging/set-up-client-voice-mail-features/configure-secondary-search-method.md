@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the secondary way for Outlook Voice Access users to search in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

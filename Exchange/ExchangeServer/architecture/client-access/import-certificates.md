@@ -10,6 +10,8 @@ title: Import or install a certificate on an Exchange server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -88,13 +90,13 @@ Import-ExchangeCertificate -FileName "\\FileServer01\Data\Fabrikam.pfx" -Passwor
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions) that's associated with a certificate, use the following syntax:
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))]
+Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))
 ```
 
 This example imports the chain of certificates file `\\FileServer01\Data\Chain of Certificates.p7b`.
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))]
+Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))
 ```
 
  **Notes:**

@@ -8,6 +8,8 @@ ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
 ms.reviewer:
 title: Manage mail contacts
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

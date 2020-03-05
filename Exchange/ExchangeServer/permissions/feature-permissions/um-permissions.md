@@ -8,6 +8,8 @@ ms.assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
 ms.reviewer:
 title: Unified Messaging permissions in Exchange 2016
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

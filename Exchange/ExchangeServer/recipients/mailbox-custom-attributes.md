@@ -8,6 +8,8 @@ ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.reviewer:
 title: Custom attributes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

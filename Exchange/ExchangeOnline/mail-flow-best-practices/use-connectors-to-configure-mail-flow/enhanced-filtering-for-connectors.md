@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enhanced filtering for connectors
 ms.collection: exchange-online
 audience: ITPro

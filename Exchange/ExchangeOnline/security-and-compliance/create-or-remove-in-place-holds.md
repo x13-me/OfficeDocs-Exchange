@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create or remove an In-Place Hold
 ms.collection:
 - exchange-online

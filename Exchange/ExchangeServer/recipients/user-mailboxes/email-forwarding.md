@@ -8,6 +8,8 @@ ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer:
 title: Configure email forwarding for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

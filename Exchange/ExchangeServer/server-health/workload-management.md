@@ -8,6 +8,8 @@ ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
 ms.reviewer:
 title: User workload management in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

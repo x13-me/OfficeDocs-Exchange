@@ -8,6 +8,8 @@ ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms.reviewer:
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

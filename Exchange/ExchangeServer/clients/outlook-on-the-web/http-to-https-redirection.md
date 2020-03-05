@@ -8,6 +8,8 @@ ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
 ms.reviewer: 
 title: Configure http to https redirection for Outlook on the web in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -107,7 +109,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 4. On the **HTTP Redirect** page, configure the following settings:
 
-5. Select the **Redirect requests to this destination** check box, and enter the value /owa.
+5. Select the **Redirect requests to this destination** check box, and enter the value https://*\<OWAUrl\>*/owa (For example, https://webmail.contoso.com/owa).
 
 6. In the **Redirect Behavior** section, select the **Only redirect requests to content in this directory (not subdirectories)** check box.
 
@@ -117,10 +119,10 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
     ![In IIS Manager, select the default web site, and then double-click HTTP Redirect](../../media/0d849f12-0310-4f09-9a12-18d5953c4856.png)
 
-**Note**: To perform this procedure on the command line, open an elevated command prompt and run the following command:
+**Note**: To perform this procedure on the command line, replace _\<OWAUrl\>_ with the URL of the OWA virtual directory, open an elevated command prompt and run the following command:
 
 ```console
-%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:httpredirect -enabled:true -destination:"/owa" -childOnly:true
+%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:httpredirect -enabled:true -destination:"https://<OWAUrl>/owa" -childOnly:true
 ```
 
 ## Step 4: Use IIS Manager to remove http redirection from all virtual directories in the default website

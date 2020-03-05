@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Exchange ActiveSync for a mailbox
 ms.collection: 
 - exchange-online

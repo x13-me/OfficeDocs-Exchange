@@ -8,6 +8,8 @@ ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.reviewer:
 title: Enable or disable MAPI access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: Admin
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---

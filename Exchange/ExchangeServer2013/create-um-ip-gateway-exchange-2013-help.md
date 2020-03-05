@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage'
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

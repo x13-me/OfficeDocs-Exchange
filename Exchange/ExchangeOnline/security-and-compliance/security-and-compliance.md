@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Security and compliance for Exchange Online
 ms.collection: 
 - exchange-online

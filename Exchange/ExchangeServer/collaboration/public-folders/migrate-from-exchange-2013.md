@@ -9,6 +9,8 @@ ms.assetid: 0f98801d-ad5c-4109-a021-63645e9c9ca2
 ms.reviewer: 
 ms.collection: exchange-server
 description: Learn how to migrate on-premises public folders from Exchange 2013 to Exchange 2016 or Exchange 2019.
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019
 

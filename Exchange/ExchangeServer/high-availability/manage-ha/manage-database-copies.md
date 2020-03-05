@@ -8,6 +8,8 @@ ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms.reviewer:
 title: Manage mailbox database copies
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

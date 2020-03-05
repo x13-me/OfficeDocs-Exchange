@@ -9,6 +9,8 @@ ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 ms.collection: exchange-server
 ms.reviewer:
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Procedures for address lists in Exchange Server
 

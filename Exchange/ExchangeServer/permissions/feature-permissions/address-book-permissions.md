@@ -8,6 +8,8 @@ ms.assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
 ms.reviewer:
 title: Email address and address book permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

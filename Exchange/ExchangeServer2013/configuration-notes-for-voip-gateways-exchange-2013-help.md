@@ -5,7 +5,6 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 
-ms.assetid: 1583674f-5a57-45fd-8125-087d1624e686
 mtps_version: v=EXCHG.150
 ---
 
@@ -44,8 +43,8 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 
 |**PBX model**|**PBX software release**|**Protocol**|**Gateway vendor**|**Gateway model**|**Configuration author**|**Configuration file download**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Aastra MD110 (formerly Ericsson MD110)|MX1 TSW R2A (aka BC13)|Analog - Serial MD110|Dialogic|DMG1008LSW|Dialogic|[Download](https://www.dialogic.com/support/helpweb/mg/integration-exchange-2013-help.md)|
-| Aastra MD110 (formerly Ericsson MD110)|MX1 TSW R2A (aka BC13)|E1 Q.SIG|Dialogic|DMG2030DTIQ|Dialogic|[Download](https://www.dialogic.com/support/helpweb/mg/integration-exchange-2013-help.md)|
+|Aastra MD110 (formerly Ericsson MD110)|MX1 TSW R2A (aka BC13)|Analog - Serial MD110|Dialogic|DMG1008LSW|Dialogic|[Download](https://www.dialogic.com/support/helpweb/mg/)|
+| Aastra MD110 (formerly Ericsson MD110)|MX1 TSW R2A (aka BC13)|E1 Q.SIG|Dialogic|DMG2030DTIQ|Dialogic|[Download](https://www.dialogic.com/support/helpweb/mg/)|
 | Aastra MX-ONE|4.0|Direct SIP Connection|N.A.|N.A.|Aastra|[Download](http://www.aastra.com/cps/rde/aareddownload?file_id=4384-14746-_P06_XML&dsproject=aastra&mtype=pdf)|
 
 ### Alcatel

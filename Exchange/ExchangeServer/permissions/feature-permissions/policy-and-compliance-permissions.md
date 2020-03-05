@@ -8,6 +8,8 @@ ms.assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
 ms.reviewer:
 title: Messaging policy and compliance permissions in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

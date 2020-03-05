@@ -8,6 +8,8 @@ ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
 ms.reviewer: 
 title: Email address policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

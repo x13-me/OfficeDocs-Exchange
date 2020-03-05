@@ -8,6 +8,8 @@ ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 ms.reviewer: 
 title: Safety Net in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
