@@ -54,7 +54,7 @@ The steps that you follow to set up S/MIME with each of these endpoints are slig
 
 Setting up S/MIME with Outlook on the web involves these key steps:
 
-1. [Configure S/MIME settings in Exchange Server for Outlook on the web](configure-smime-settings-for-owa.md).
+1. [S/MIME settings for Outlook on the web in Exchange Server](smime-settings-for-owa.md).
 
 2. [Set up Virtual Certificate Collection to Validate S/MIME](https://docs.microsoft.com/Exchange/set-up-virtual-certificate-collection-to-validate-s-mime)
 
