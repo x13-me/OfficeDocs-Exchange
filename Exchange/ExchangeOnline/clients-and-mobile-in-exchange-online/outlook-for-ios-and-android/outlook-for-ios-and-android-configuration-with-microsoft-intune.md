@@ -339,6 +339,8 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
+    - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
 11. When you are finished selecting settings, choose **Next**.
 
 12. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
@@ -397,6 +399,8 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. 
 
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+
+    - For **Play My Emails**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
     
 9. If you want to manage the data protection settings, configure the desired settings accordingly:
 
@@ -474,6 +478,7 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Discover Feed which shows the user's and the user's coworkers Office files. Setting the value to false will disable the Discover Feed. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.OrganizeByThreadEnabled|This key specifies whether the app enables Organize by thread view. Setting the value to false will disable mail threaded conversation view.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.PlayMyEmailsEnabled|This key specifies whether the Play My Emails is promoted to eligible users via a banner in the inbox. When set to Off, this feature will not be promoted to eligible users in the app. Users can choose to manually enable Play My Emails from within the app, even when this feature is set to Off. When set as Not configured, the default app setting is On and the feature will be promoted to eligible users. .<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### S/MIME settings
 
