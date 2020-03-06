@@ -127,7 +127,7 @@ Outlook supports the following settings for configuration:
 <tr class="even">
 <td>Discover Feed</td>
 <td>On</td>
-<td><p>The Discover capability, powered by Microsoft Graph, provides a feed of your company’s Office files connected to the people in your organization. This feature can be found in the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</p>
+<td><p>The Discover capability, powered by Microsoft Graph, provides a feed of your company's Office files connected to the people in your organization. This feature can be found in the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</p>
 <p>This setting is only available for Outlook for iOS.</p></td>
 <td>App default</td>
 </tr>
@@ -137,8 +137,16 @@ Outlook supports the following settings for configuration:
 <td><p>By default, Outlook for iOS and Android collates related emails into a single threaded conversation view.</p></td>
 <td>App default</td>
 </tr>
+<tr class="even">
+<td>Play My Emails</td>
+<td>On</td>
+<td><p>By default, Play My Emails is promoted to eligible users via a banner in the inbox.</p><p>This setting is only available for Outlook for iOS.</p></td>
+<td>App default</td>
+</tr>
 </tbody>  
 </table>
+
+
 
 Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
 
@@ -213,9 +221,9 @@ By default, Outlook for iOS and Android supports wearable technology, allowing t
 
 ### Configure Notifications for Outlook for iOS and Android
 
-Mobile app notifications are critical in alerting users of new content or reminding them to act. Users interact with these notifications via the lock screen and in the operating system’s notification center. Notifications often include detailed information, which can be sensitive in nature. This information, unfortunately, can inadvertently be leaked to casual observers.
+Mobile app notifications are critical in alerting users of new content or reminding them to act. Users interact with these notifications via the lock screen and in the operating system's notification center. Notifications often include detailed information, which can be sensitive in nature. This information, unfortunately, can inadvertently be leaked to casual observers.
 
-Outlook for iOS and Android has designed its notifications to enable users to triage email and alert users to upcoming meetings, including incorporating Time to Leave suggestions. Mail notifications include the sender’s address, the subject of the message, and a short message preview of the message body. Calendar reminders include the subject, location, and start time of the meeting.
+Outlook for iOS and Android has designed its notifications to enable users to triage email and alert users to upcoming meetings, including incorporating Time to Leave suggestions. Mail notifications include the sender's address, the subject of the message, and a short message preview of the message body. Calendar reminders include the subject, location, and start time of the meeting.
 
 Recognizing that these notifications may include sensitive data, organizations can leverage an Intune App Protection Policy setting, **Org Data Notifications**, to remove the sensitive data. As this is an App Protection Policy setting, it applies on all devices (phones, tablets, and wearables) for the user for the apps that support the setting. For more information on the setting, see [iOS App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
 
