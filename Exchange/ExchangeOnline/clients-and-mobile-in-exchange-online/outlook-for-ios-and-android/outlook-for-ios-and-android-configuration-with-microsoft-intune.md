@@ -127,7 +127,7 @@ Outlook supports the following settings for configuration:
 <tr class="even">
 <td>Discover Feed</td>
 <td>On</td>
-<td><p>The Discover capability, powered by Microsoft Graph, provides a feed of your company’s Office files connected to the people in your organization. This feature can be found in the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</p>
+<td><p>The Discover capability, powered by Microsoft Graph, provides a feed of your company's Office files connected to the people in your organization. This feature can be found in the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</p>
 <p>This setting is only available for Outlook for iOS.</p></td>
 <td>App default</td>
 </tr>
@@ -137,8 +137,16 @@ Outlook supports the following settings for configuration:
 <td><p>By default, Outlook for iOS and Android collates related emails into a single threaded conversation view.</p></td>
 <td>App default</td>
 </tr>
+<tr class="even">
+<td>Play My Emails</td>
+<td>On</td>
+<td><p>By default, Play My Emails is promoted to eligible users via a banner in the inbox.</p><p>This setting is only available for Outlook for iOS.</p></td>
+<td>App default</td>
+</tr>
 </tbody>  
 </table>
+
+
 
 Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
 
@@ -213,9 +221,9 @@ By default, Outlook for iOS and Android supports wearable technology, allowing t
 
 ### Configure Notifications for Outlook for iOS and Android
 
-Mobile app notifications are critical in alerting users of new content or reminding them to act. Users interact with these notifications via the lock screen and in the operating system’s notification center. Notifications often include detailed information, which can be sensitive in nature. This information, unfortunately, can inadvertently be leaked to casual observers.
+Mobile app notifications are critical in alerting users of new content or reminding them to act. Users interact with these notifications via the lock screen and in the operating system's notification center. Notifications often include detailed information, which can be sensitive in nature. This information, unfortunately, can inadvertently be leaked to casual observers.
 
-Outlook for iOS and Android has designed its notifications to enable users to triage email and alert users to upcoming meetings, including incorporating Time to Leave suggestions. Mail notifications include the sender’s address, the subject of the message, and a short message preview of the message body. Calendar reminders include the subject, location, and start time of the meeting.
+Outlook for iOS and Android has designed its notifications to enable users to triage email and alert users to upcoming meetings, including incorporating Time to Leave suggestions. Mail notifications include the sender's address, the subject of the message, and a short message preview of the message body. Calendar reminders include the subject, location, and start time of the meeting.
 
 Recognizing that these notifications may include sensitive data, organizations can leverage an Intune App Protection Policy setting, **Org Data Notifications**, to remove the sensitive data. As this is an App Protection Policy setting, it applies on all devices (phones, tablets, and wearables) for the user for the apps that support the setting. For more information on the setting, see [iOS App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-ios) and [Android App Protection Policy settings](https://docs.microsoft.com/intune/apps/app-protection-policy-settings-android).
 
@@ -331,6 +339,8 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
+    - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
 11. When you are finished selecting settings, choose **Next**.
 
 12. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
@@ -389,6 +399,8 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. 
 
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+
+    - For **Play My Emails**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
     
 9. If you want to manage the data protection settings, configure the desired settings accordingly:
 
@@ -466,6 +478,7 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Discover Feed which shows the user's and the user's coworkers Office files. Setting the value to false will disable the Discover Feed. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.OrganizeByThreadEnabled|This key specifies whether the app enables Organize by thread view. Setting the value to false will disable mail threaded conversation view.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.PlayMyEmailsEnabled|This key specifies whether the Play My Emails is promoted to eligible users via a banner in the inbox. When set to Off, this feature will not be promoted to eligible users in the app. Users can choose to manually enable Play My Emails from within the app, even when this feature is set to Off. When set as Not configured, the default app setting is On and the feature will be promoted to eligible users. .<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### S/MIME settings
 
