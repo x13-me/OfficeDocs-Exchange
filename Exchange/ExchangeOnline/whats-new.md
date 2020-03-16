@@ -18,7 +18,7 @@ manager: serdars
 
 # What's new in Exchange Online
 
-We're continuously adding new features to Exchange Online, fixing issues as we learn about them, and making changes based on your feedback. Take a look below to see what recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
+We're continuously adding new features to Exchange Online, fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
 ## March 2020
 
@@ -82,7 +82,7 @@ We are working hard to create modern experiences for Exchange admins. Here are s
       - Migration reports
       - Recoverable items
       - Search
-      - G-Suite Automation (Ignite video/blog)
+      - G-Suite Automation: See our [Ignite blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121).
 
 ### Feedback and Wishlist
 
