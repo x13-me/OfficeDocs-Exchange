@@ -82,7 +82,9 @@ We are working hard to create modern experiences for Exchange admins. Here are s
       - Migration reports
       - Recoverable items
       - Search
-      - G-Suite Automation: See our [Ignite blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121).
+      - G-Suite Automation
+
+See the [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) detailing the Exchange Admin Center Improvements that we announced at Microsoft Ignite 2019.
 
 ### Feedback and Wishlist
 
