@@ -84,7 +84,7 @@ We are working hard to create modern experiences for Exchange admins. Here are s
       - Search
       - G-Suite Automation
 
-See the [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) detailing the Exchange Admin Center Improvements that we announced at Microsoft Ignite 2019.
+Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange Admin Center, as well as other Exchange Online improvements that we announced at Microsoft Ignite 2019.
 
 ### Feedback and Wishlist
 
