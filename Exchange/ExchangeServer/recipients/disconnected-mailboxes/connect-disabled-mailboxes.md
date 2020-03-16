@@ -115,7 +115,7 @@ Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -
 ```
 
 > [!NOTE]
-> You can connect a personal archive mailbox to a different primary mailbox, not matching the previous owner mailbox. Ensure using the _AllowLegacyDNMismatch_ parameter to allow connecting the archive mailbox to a different primary mailbox.
+> You can connect a personal archive mailbox to a different primary mailbox, not matching the previous owner mailbox. Ensure that you are using the _AllowLegacyDNMismatch_ parameter to allow the connection of the archive mailbox to a different primary mailbox.
 
 For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/connect-mailbox).
 
