@@ -1,12 +1,12 @@
 ---
 localization_priority: Normal
-description: What's new in Exchange Online.
+description: What's new in Exchange Online
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid:
 ms.reviewer: 
-title: What's New in Exchange Online
+title: What's new in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection: 
@@ -65,7 +65,7 @@ To access familiar features that were in the classic Exchange Admin Center, clic
 
 ![Screen capture of more features](./media/whats-new-2020-03-morefeatures.png)
 
-### What's Next?
+### What's next?
 
 We are working hard to create modern experiences for Exchange admins. Here are some features that are coming soon:
 
@@ -86,6 +86,6 @@ We are working hard to create modern experiences for Exchange admins. Here are s
 
 Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange Admin Center, as well as other Exchange Online improvements that we announced at Microsoft Ignite 2019.
 
-### Feedback and Wishlist
+### Feedback and wishlist
 
 Our goal is to deliver the features that IT admins need, so please share your feedback and wishlist with us through the "Give Feedback" button on the new portal.
