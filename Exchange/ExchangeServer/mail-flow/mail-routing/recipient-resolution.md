@@ -8,6 +8,8 @@ ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms.reviewer:
 title: Recipient resolution in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

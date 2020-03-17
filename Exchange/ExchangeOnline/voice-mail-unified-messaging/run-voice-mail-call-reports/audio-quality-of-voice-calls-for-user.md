@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Investigate the audio quality of voice calls for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

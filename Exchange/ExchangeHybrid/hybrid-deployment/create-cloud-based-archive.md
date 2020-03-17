@@ -3,6 +3,8 @@ title: "Create a cloud-based archive for an on-premises primary mailbox in an Ex
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

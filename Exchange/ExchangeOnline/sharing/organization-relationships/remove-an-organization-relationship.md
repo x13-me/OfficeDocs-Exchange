@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3de9e885-73f5-4743-9b55-38ef59a387f2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove an organization relationship in Exchange Online
 ms.collection: 
 - exchange-online

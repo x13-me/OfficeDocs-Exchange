@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 743bd525-0ca2-426d-b76c-b4a052bc8886
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mail flow rules (transport rules) in Exchange Online
 ms.collection: 
 - exchange-online
@@ -115,6 +117,8 @@ There are several types of messages that pass through an organization. The follo
 - The **Version** or **RuleVersion** property value for a rule isn't important in Exchange Online.
 
 - After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to messages.
+
+- You can create a transport rule to bypass ATP and allow mail to flow without delay from internal senders such as scanners, faxes, and other trusted sources that send attachments that are known to be safe. Do not bypass filtering for all internal messages; in this situation, a compromised account could send malicious content.
 
 ## For more information
 

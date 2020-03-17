@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a holiday schedule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

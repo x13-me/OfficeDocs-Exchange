@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ce17f1ec-b96c-4c9e-b20a-507fe0afc684
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change how long permanently deleted items are kept for an Exchange Online mailbox
 ms.collection: 
 - exchange-online

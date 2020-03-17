@@ -3,6 +3,8 @@ title: "Configure Exchange 2013 public folders for a hybrid deployment"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

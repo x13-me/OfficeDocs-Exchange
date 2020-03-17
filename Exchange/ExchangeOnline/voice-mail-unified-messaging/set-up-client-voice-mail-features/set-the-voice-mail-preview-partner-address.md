@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57fbed1e-1b14-4939-95e6-ef7c072f32a9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set the Voice Mail Preview partner address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

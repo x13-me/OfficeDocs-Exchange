@@ -8,6 +8,8 @@ ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 ms.reviewer:
 title: Search for and delete messages in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

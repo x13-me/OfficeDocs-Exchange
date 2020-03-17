@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 8b9a1782-f6be-46bc-bec9-49633be0dc1f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create an organization relationship in Exchange Online
 ms.collection: 
 - exchange-online

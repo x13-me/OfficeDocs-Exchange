@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b2ecab54-42e6-45af-8322-615cc1f68dd9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set the minimum PIN length for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

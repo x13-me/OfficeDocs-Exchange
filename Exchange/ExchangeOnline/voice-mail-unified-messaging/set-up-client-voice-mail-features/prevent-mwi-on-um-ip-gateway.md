@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7af6d094-199f-4134-a25d-9fc7e9c05fe1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

@@ -16,7 +16,7 @@ manager: serdars
 
 # Track and prevent migration data loss
 
-When migrating to Exchange Online, the migration process might reveal inconsistencies that pose a risk of data loss. Such inconsistencies can occur during almost any migration, whether from on-premises Public Folders, PST file imports, G Suite migrations, or 3rd-party IMAP servers. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
+When migrating to Exchange Online, the migration process might reveal inconsistencies that pose a risk of data loss. Such inconsistencies can occur during almost any migration, whether from on-premises Exchange Server, Public Folders, PST file imports, G Suite migrations, or 3rd-party IMAP servers. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
 
 ## Migration and DataConsistencyScore
 
@@ -30,6 +30,8 @@ There are 4 possible grades that are derived from the DataConsistencyScore.
 |**Good**| At least 1 inconsistency noted, but the data loss was not impactful. For example, if only metadata or folder permissions were lost during migration. The migration will succeed.|
 |**Investigate**|A small amount of significant data loss was detected, caused by some common inconsistency types. You must approve the migration for it to complete.|
 |**Poor**|Major data loss was detected. The migration cannot complete unless you contact Microsoft Support for assistance.|
+
+You can view the DataConsistencyScore for your migration in the Classic Exchange Admin Center at a per-user and per-batch level. You can also find it using PowerShell cmdlets; the *DataConsistencyScore* property exists on **MigrationBatch** (as the worst status from any user in the batch), **MigrationUser**, and **RequestStatistics** objects.
 
 ## How the DataConsistencyScore is calculated
 
@@ -61,9 +63,9 @@ If the migration fails with a grade of **Poor**, you cannot force the migration 
 
 ## How to opt in or opt out of using DataConsistencyScore
 
-As of late 2019, the [BadItemLimit and LargeItemLimit parameters](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) are still available as options. You can specify a value for the BadItemLimit and LargeItemLimit parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
+As of late 2019, the [BadItemLimit and LargeItemLimit parameters](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) are still available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
 
-If neither the BadItemLimit parameter nor the LargeItemLimit parameter are specified, or if the boxes in the Exchange Admin Center wizard are left blank, then the new migration method and DataConsistencyScore are used.
+If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter are specified, or if the boxes in the Exchange Admin Center wizard are left blank, then the new migration method and DataConsistencyScore are used.
 
 > [!NOTE]
 > The BadItemLimit and LargeItemLimit parameters will be completely replaced by DataConsistencyScore at a future date.

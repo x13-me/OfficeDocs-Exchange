@@ -2,8 +2,6 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- SetupIMAPOtherServerSettings619135
 ms.author: v-mapenn
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.reviewer: 
@@ -18,7 +16,11 @@ search.appverid:
 - MED150
 - BCS160
 audience: Admin
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom: 
+- Adm_O365
+- SetupIMAPOtherServerSettings619135
 ms.service: exchange-online
 manager: serdars
 

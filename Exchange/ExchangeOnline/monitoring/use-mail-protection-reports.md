@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Use mail protection reports in Office 365 to view data about malware, spam, and rule detections
 ms.collection: 
 - exchange-online

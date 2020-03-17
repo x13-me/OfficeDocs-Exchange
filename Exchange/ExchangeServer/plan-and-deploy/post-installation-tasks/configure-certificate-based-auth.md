@@ -10,6 +10,8 @@ title: Configure certificate based authentication in Exchange 2016
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

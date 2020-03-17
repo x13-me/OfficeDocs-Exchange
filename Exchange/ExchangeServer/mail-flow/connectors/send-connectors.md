@@ -8,6 +8,8 @@ ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 ms.reviewer:
 title: Send connectors in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

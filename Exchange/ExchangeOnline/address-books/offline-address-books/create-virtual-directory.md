@@ -10,6 +10,8 @@ title: Create an offline address book virtual directory
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 ROBOTS: NOINDEX, NOFOLLOW
 

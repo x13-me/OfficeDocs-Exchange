@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage'
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

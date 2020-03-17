@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.CreateAutoAttendantWizardForm.CreateAutoAttendantWizardPage'
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

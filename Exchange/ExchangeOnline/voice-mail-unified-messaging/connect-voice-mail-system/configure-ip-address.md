@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the IP address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

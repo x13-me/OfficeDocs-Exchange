@@ -8,6 +8,8 @@ ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 ms.reviewer: 
 title: Active Manager
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 026129a1-b0b5-410a-bed6-2d49f85205b3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: UM hunt groups in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

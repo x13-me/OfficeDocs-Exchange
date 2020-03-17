@@ -8,6 +8,8 @@ ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms.reviewer:
 title: Copy eDiscovery search results to a discovery mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

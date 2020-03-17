@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a custom management scope for In-Place eDiscovery searches
 ms.collection: 
 - exchange-online

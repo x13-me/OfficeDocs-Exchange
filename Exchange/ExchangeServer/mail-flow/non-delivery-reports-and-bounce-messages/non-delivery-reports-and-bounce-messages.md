@@ -8,6 +8,8 @@ ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms.reviewer:
 title: DSNs and NDRs in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

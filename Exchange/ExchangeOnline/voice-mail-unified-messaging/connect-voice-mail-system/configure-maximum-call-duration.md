@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the maximum call duration in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

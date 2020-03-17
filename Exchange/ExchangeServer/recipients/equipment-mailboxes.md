@@ -8,6 +8,8 @@ ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 ms.reviewer:
 title: Manage equipment mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

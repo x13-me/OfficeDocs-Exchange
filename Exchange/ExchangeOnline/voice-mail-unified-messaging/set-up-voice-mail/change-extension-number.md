@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ff22b366-3bfb-4bf7-9f11-62fba48f1caf
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change an extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

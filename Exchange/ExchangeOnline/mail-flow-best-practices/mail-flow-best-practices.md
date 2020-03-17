@@ -10,6 +10,8 @@ ms.reviewer:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 description: Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, and get tips and best practices for setting up and managing your email.
 audience: ITPro
 title: Mail flow best practices for Exchange Online and Office 365 (overview)
