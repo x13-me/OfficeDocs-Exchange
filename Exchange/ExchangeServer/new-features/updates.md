@@ -23,7 +23,7 @@ Because each CU is a full installation of Exchange that includes updates and cha
 ::: moniker range="exchserver-2019"
 |**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2019 CU5|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/xxxxxxx)|
+|Exchange 2019 CU5|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2019 CU4|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2019 CU3|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2019 CU2|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
@@ -40,7 +40,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2016 CU16|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/xxxxxxx)|
+|Exchange 2016 CU16|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2016 CU15|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2016 CU14|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2016 CU13|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
