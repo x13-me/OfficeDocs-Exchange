@@ -102,7 +102,7 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 > [!NOTE]
 > If you don't include the _Alias_ parameter when you run the **Connect-Mailbox** cmdlet, the value specified in the _User_ or _LinkedMasterAccount_ parameter is used to create the email address alias for the reconnected mailbox.
 
-This example connects a personal archive to the primary mailbox using the mailbox Guid stored in mailbox database DB01.
+This example connects a personal archive to the primary mailbox using the mailbox GUID stored in mailbox database DB01.
 
 ```PowerShell
 Connect-Mailbox -Identity "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -Archive -User "Megan Bown" -Database "DB01"
