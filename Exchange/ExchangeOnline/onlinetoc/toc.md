@@ -77,6 +77,7 @@
 #### [Validate connectors](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors.md)
 #### [Conditional mail routing](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing.md)
 #### [Integrate Office 365 with an email add-on service](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/integrate-office-365-with-an-email-add-on-service.md)
+#### [Enhanced Filtering for Connectors](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md)
 ### [Use Directory Based Edge Blocking](../mail-flow-best-practices/use-directory-based-edge-blocking.md)
 ### [Manage accepted domains](../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md)
 #### [Enable mail flow for subdomains](../mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains.md)
