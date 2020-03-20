@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: What's new in Exchange Online
+description: What's new in Exchange Admin Center
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -16,15 +16,15 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# What's new in Exchange Online
+# What's new in Exchange Admin Center
 
-We're continuously adding new features to Exchange Online, fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
+We're continuously adding new features to Exchange Admin Center, fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
 ## March 2020
 
 ### What's new in the modern Exchange Admin Center?
 
-As previously announced, Exchange Admin Center (EAC) now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
+As previously announced, Exchange Admin Center (EAC) now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
