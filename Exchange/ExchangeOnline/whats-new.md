@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: What's new in Exchange Online
+description: What's new in Exchange Admin Center
 ms.topic: overview
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -16,9 +16,9 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# What's new in Exchange Online
+# What's new in Exchange Admin Center
 
-We're continuously adding new features to Exchange Online, fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
+We're continuously adding new features to Exchange Admin Center, fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
 ## March 2020
 
