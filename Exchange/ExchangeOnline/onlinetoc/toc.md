@@ -3,7 +3,7 @@
 
 # [Exchange Online](../exchange-online.md)
 ## [Exchange admin center](../exchange-admin-center.md)
-## [What's New in Exchange Online](../whats-new.md)
+## [What's New in Exchange Admin Center](../whats-new.md)
 ## [Permissions](../permissions-exo/permissions-exo.md)
 ### [Feature permissions](../permissions-exo/feature-permissions.md)
 ### [Role groups](../permissions-exo/role-groups.md)
