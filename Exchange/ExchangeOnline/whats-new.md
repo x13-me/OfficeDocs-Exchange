@@ -24,7 +24,7 @@ We're continuously adding new features to Exchange Admin Center, fixing issues a
 
 ### What's new in the modern Exchange Admin Center?
 
-As previously announced, Exchange Admin Center (EAC) now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
+As previously announced, Exchange Admin Center (EAC) now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
