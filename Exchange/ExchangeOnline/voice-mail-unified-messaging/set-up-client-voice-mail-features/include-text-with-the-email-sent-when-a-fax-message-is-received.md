@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 48244e58-b7d6-4f0e-bbae-d22bf0fc11ff
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Include text with the email message sent when a fax message is received in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,6 +56,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example enables UM-enabled users who are associated with a UM mailbox policy to receive additional instructions on how to open a fax message that they've received in their mailbox.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -FaxMessageText "To open this fax message, double-click the file attachment."
 ```

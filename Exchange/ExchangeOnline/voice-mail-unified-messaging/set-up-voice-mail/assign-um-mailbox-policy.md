@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Assign a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -66,6 +68,6 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example associates a UM-enabled user named Tony Smith with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy
 ```

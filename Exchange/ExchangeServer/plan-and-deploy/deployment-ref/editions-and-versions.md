@@ -8,6 +8,8 @@ ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
 ms.reviewer: 
 title: Exchange Server editions and versions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -47,7 +49,7 @@ For a list of Exchange Server versions and how to download and upgrade to the la
 
 To view the Exchange version and edition information for all Exchange servers in your organization, run the following command in the Exchange Management Shell:
 
-```
+```powershell
 Get-ExchangeServer | Format-Table -Auto Name,Edition,AdminDisplayVersion
 ```
 

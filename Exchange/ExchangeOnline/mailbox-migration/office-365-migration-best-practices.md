@@ -16,6 +16,8 @@ search.appverid:
 - MED150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
@@ -182,7 +184,7 @@ Before performance of the service degrades to the point where end-user performan
 
 The following are examples from an Exchange migration statistics report. They show the entries logged when the service-throttling threshold is exceeded.
 
-```
+```output
 1/25/2018 12:56:01 AM [BL2PRD0410CA012] Copy progress: 723/1456 messages, 225.8 MB (236,732,045 bytes)/416.5 MB (436,712,733 bytes).
 
 1/25/2018 12:57:53 AM [BL2PRD0410CA012] Move for mailbox '/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx' is stalled because DataMoveReplicationConstraint is not satisfied for the database 'NAMPRD04DG031-db081' (agent MailboxDatabaseReplication). Failure Reason: Database edbf0766-1f2a-4552-9115-bb3a53a8380b doesn't satisfy constraint SecondDatacenter. There are no available healthy database copies. Will wait until 1/25/2018 1:27:53 AM.
@@ -230,7 +232,7 @@ IMAP, cutover, and staged Exchange migrations are performed by using the Migrati
 
 Customers now can specify migration concurrency (for example, the number of mailboxes to migrate simultaneously) by using Windows PowerShell. The default is 20 mailboxes. After you create a migration batch, you can use the following Windows PowerShell cmdlet to increase this to a maximum of 100.
 
-```
+``` PowerShell
 Set-MigrationEndPoint <Identity> -MaxConcurrentMigrations <value between 1 and 100>
 ```
 

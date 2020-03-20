@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 33f4f464-9baa-48af-bf5e-a0d55bb45f60
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change a SIP address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -66,7 +68,7 @@ This example changes a SIP address for Tony Smith.
 > [!NOTE]
 > Before you change a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) SIP address and it will be 0 in the list.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(1)="eum:tsmith@contoso.com;phone-context=MySIPDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

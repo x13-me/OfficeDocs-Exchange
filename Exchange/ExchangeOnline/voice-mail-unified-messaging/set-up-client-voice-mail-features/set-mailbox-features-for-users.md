@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 10960bf0-65cf-4d0b-bae5-d203c53662db
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set mailbox features for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,6 +56,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example sets TUI-related settings on a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailbox -identity MyUMMailboxPolicy -AllowSubscriberAccess $true -AllowTUIAccessToCalendar $false -AllowTUIAccessToDirectory $false -AllowTUIAccessToEmail -$true -AllowTUIAccessToPersonalContacts $true
 ```

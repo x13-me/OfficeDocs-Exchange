@@ -8,6 +8,8 @@ ms.assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
 ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

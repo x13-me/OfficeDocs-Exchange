@@ -8,6 +8,8 @@ ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms.reviewer:
 title: Perform a dial tone recovery
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -40,19 +42,19 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
 2. Use the [New-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/new-mailboxdatabase) cmdlet to create a dial tone database, as shown in this example.
 
-   ```
+   ```powershell
    New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
    ```
 
 3. Use the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet to rehome the user mailboxes hosted on the database being recovered, as shown in this example.
 
-   ```
+   ```powershell
    Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
    ```
 
 4. Use the [Mount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/mount-database) cmdlet to mount the database so client computers can access the database and send and receive messages, as shown in this example.
 
-   ```
+   ```powershell
    Mount-Database -Identity DTDB1
    ```
 
@@ -62,7 +64,7 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
 7. Mount the RDB, and then use the [Dismount-Database](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/dismount-database) cmdlet to dismount it, as shown in this example.
 
-   ```
+   ```powershell
    Mount-Database -Identity RDB1
    Dismount-Database -Identity RDB1
    ```
@@ -71,7 +73,7 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
 9. Dismount the dial tone database, as shown in this example. Note that your end users will experience an interruption in service when you dismount this database.
 
-   ```
+   ```powershell
    Dismount-Database -Identity DTDB1
    ```
 
@@ -79,7 +81,7 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
 11. Move the database and log files from the safe location containing the recovered database into the dial tone database folder, and then mount the database, as shown in this example.
 
-    ```
+    ```powershell
     Mount-Database -Identity DTDB1
     ```
 
@@ -87,23 +89,23 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
 12. Mount the RDB, as shown in this example.
 
-    ```
+    ```powershell
     Mount-Database -Identity RDB1
     ```
 
 13. Use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxrestorerequest) cmdlets to export the data from the RDB and import it into the recovered database, as shown in this example. This will import all the messages sent and received using the dial tone database into the production database.
 
-    ```
+    ```powershell
     $mailboxes = Get-Mailbox -Database DTDB1
     ```
 
-    ```
+    ```powershell
     $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
     ```
 
 14. After the restore operation is complete, you can dismount and remove the RDB, as shown in this example.
 
-    ```
+    ```powershell
     Dismount-Database -Identity RDB1
     Remove-MailboxDatabase -Identity RDB1
     ```

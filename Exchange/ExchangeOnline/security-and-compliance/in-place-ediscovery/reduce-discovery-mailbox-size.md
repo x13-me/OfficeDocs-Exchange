@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Reduce the size of a discovery mailbox in Exchange
 ms.collection: 
 - exchange-online
@@ -50,7 +52,7 @@ The strategy presented here groups the search results from the original discover
 
 - Run the following command to determine the size of the discovery mailboxes in your organization.
 
-  ```
+  ```PowerShell
   Get-Mailbox -RecipientTypeDetails DiscoveryMailbox | Get-MailboxStatistics | Format-List DisplayName,TotalItemSize
   ```
 
@@ -68,13 +70,13 @@ The first step is to create additional discovery mailboxes so that you can copy 
 
 1. Run the following command to create a new discovery mailbox.
 
-   ```
+   ```PowerShell
    New-Mailbox -Name <discovery mailbox name> -Discovery
    ```
 
 2. Run the following command to assign a user or group permissions to open the discovery mailbox and view search results.
 
-   ```
+   ```PowerShell
    Add-MailboxPermission <discovery mailbox name> -User <name of user or group> -AccessRights FullAccess -InheritanceType all
    ```
 
@@ -84,7 +86,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
 1. Run the following command to create a new eDiscovery search.
 
-   ```
+   ```PowerShell
    New-MailboxSearch -Name "Search results from 2010" -SourceMailboxes "Discovery Search Mailbox" -StartDate "01/01/2010" -EndDate "12/31/2010" -TargetMailbox "Discovery Mailbox Backup 01" -EstimateOnly -StatusMailRecipients admin@contoso.com
    ```
 
@@ -109,7 +111,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - **Using Exchange Online PowerShell**: Run the following command to start the search created in the previous step. Because the _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox.
 
-   ```
+   ```PowerShell
    Start-MailboxSearch "Search results from 2010"
    ```
 
@@ -121,11 +123,11 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - **Using Exchange Online PowerShell**: Run the following commands to copy the search results. You have to remove the _EstimateOnly_ switch before you can copy the search results.
 
-   ```
+   ```PowerShell
    Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
    ```
 
-   ```
+   ```PowerShell
    Start-MailboxSearch "Search results from 2010"
    ```
 
@@ -141,7 +143,7 @@ After you've copied search results from the original discovery mailbox to anothe
 
 Before deleting a search, you can run the following command to identify the size of the search results that have been copied to a discovery mailbox for all searches in your organization.
 
-```
+```PowerShell
 Get-MailboxSearch | Format-List Name,TargetMailbox,ResultSizeCopied
 ```
 
@@ -149,7 +151,7 @@ You can use Exchange Online PowerShell or the EAC to delete an eDiscovery search
 
 - **Using Exchange Online PowerShell**: Run the following command.
 
-  ```
+  ```PowerShell
   Remove-MailboxSearch -Identity <name of search>
   ```
 
@@ -159,6 +161,6 @@ You can use Exchange Online PowerShell or the EAC to delete an eDiscovery search
 
 After you've deleted the eDiscovery searches to remove the results from the discovery mailbox where they were stored, run the following command to display the size of a selected discovery mailbox.
 
-```
+```PowerShell
 Get-Mailbox <name of discovery mailbox> | Get-MailboxStatistics | Format-List TotalItemSize
 ```

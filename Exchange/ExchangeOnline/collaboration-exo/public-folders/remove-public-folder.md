@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove a public folder
 ms.collection: 
 - exchange-online
@@ -49,19 +51,19 @@ You may need to remove public folders that are no longer being used in your orga
 
 This example deletes the public folder Help Desk\Resolved. This command assumes that the Resolved public folder doesn't have any subfolders.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Help Desk\Resolved"
 ```
 
 This example tests the previous command without making any modifications.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\HelpDesk\Resolved" -WhatIf
 ```
 
 This example removes the public folder Marketing and all its subfolders because the command runs recursively.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 

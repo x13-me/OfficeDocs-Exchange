@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: In-Place Hold and Litigation Hold
 ms.collection: 
 - exchange-online
@@ -18,8 +20,8 @@ manager: serdars
 
 # In-Place Hold and Litigation Hold
 
-> [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place Holds in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. As an alternative to using In-Place Holds, you can use [eDiscovery cases](https://go.microsoft.com/fwlink/p/?linkid=780738) or [Office 365 retention policies](https://go.microsoft.com/fwlink/p/?linkid=827811) in the Office 365 Security & Compliance Center. After we decommission new In-Place Holds, you'll still be able to modify existing In-Place Holds, and creating new In-Place Holds in an Exchange hybrid deployment will still be supported. And, you'll still be able to place mailboxes on Litigation Hold.
+> [!IMPORTANT]
+>  As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center (EAC) in Exchange Online. Starting April 1, 2020 you won't be able to create new In-Place Holds. But you'll still be able to manage In-Place Holds in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting July 1, 2020, you won't be able to manage In-Place Holds. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place Holds in Exchange Server and Exchange hybrid deployments will still be supported. You will also still be able to place mailboxes on Litigation Hold. For more information about the retirement of In-Place Holds in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
 
 When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:
 
@@ -58,6 +60,9 @@ In previous versions of Exchange, the notion of legal hold is to hold all mailbo
 Using this new model, In-Place Hold allows you to create granular hold policies to preserve mailbox items in the following scenarios:
 
 - **Indefinite hold**: The indefinite hold scenario is similar to Litigation Hold. It's intended to preserve mailbox items so you can meet eDiscovery requirements. During the period of litigation or investigation, items are never deleted. The duration isn't known in advance, so no end date is configured. To hold all mail items indefinitely, you don't specify any query parameters or time duration when creating an In-Place Hold.
+
+    > [!IMPORTANT]
+    > Placing a mailbox on an indefinite hold means that mail items meeting the hold requirements will never be removed from the mailbox. This could result in the mailbox exceeding the [Recoverable Items Quota](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds#holds-and-the-recoverable-items-folder), which could make the mailbox unusable. Microsoft recommends enabling an [Archive](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features) for the mailbox, as well as enabling the [auto-expanding archive feature](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving). See [Holds and Mailbox Quotas](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds#holds-and-mailbox-quotas) for more information.
 
 - **Query-based hold**: If your organization preserves items based on specified query parameters, you can use a query-based In-Place Hold. You can specify query parameters such as keywords, start and end dates, sender and recipient addresses, and message types. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved.
 

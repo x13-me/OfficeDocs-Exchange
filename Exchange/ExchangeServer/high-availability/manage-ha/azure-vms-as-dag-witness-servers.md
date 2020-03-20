@@ -8,6 +8,8 @@ ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 ms.reviewer: 
 title: Using a Microsoft Azure VM as a DAG witness server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -168,7 +170,7 @@ The Azure management portal doesn't currently allow you to configure a multi-sit
 
 Open the file you exported in any XML editor. The gateway connections to your on-premises sites are listed in the "ConnectionsToLocalNetwork" section. Search for that term in the XML file to locate the section. This section in the configuration file will look like the following (assuming the site name you created for your local site is "Site A").
 
-```
+```xml
 <ConnectionsToLocalNetwork>
     <LocalNetworkSiteRef name="Site A">
         <Connection type="IPsec" />
@@ -177,7 +179,7 @@ Open the file you exported in any XML editor. The gateway connections to your on
 
 To configure your second site, add another "LocalNetworkSiteRef" section under the "ConnectionsToLocalNetwork" section. The section in the updated configuration file will look like the following (assuming the site name for your second local site is "Site B").
 
-```
+```xml
 <ConnectionsToLocalNetwork>
     <LocalNetworkSiteRef name="Site A">
         <Connection type="IPsec" />
@@ -202,7 +204,7 @@ You need to use PowerShell to get the pre-shared keys. If you aren't familiar wi
 
 Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
-```
+```powershell
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" | Set-Content -Path C:\Keys\KeysForTunnelToSiteA.txt
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" | Set-Content -Path C:\Keys\KeysForTunnelToSiteB.txt
 ```
@@ -227,13 +229,13 @@ Other devices might require additional verifications. For example, the configura
 
 At this point, both of your sites are connected to your Azure virtual network through the VPN gateways. You can validate the status of the multi-site VPN by running the following command in PowerShell.
 
-```
+```powershell
 Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
 ```
 
 If both tunnels are up and running, the output of this command will look like the following.
 
-```
+```console
 LocalNetworkSiteName    ConnectivityState
 --------------------    -----------------
 Site A                  Connected
@@ -253,11 +255,11 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 2. Specify preferred IP addresses for both the domain controller and the file server using Azure PowerShell. When you specify a preferred IP address for a VM, it needs to be updated, which will require restarting the VM. The following example sets the IP addresses for Azure-DC and Azure-FSW to 10.0.0.10 and 10.0.0.11 respectively.
 
-   ```
+   ```powershell
    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
    ```
 
-   ```
+   ```powershell
    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
    ```
 
@@ -290,7 +292,7 @@ Finally, you need to configure your DAG to use the new witness server. By defaul
 
 2. Run the following command to configure the witness server for your DAGs.
 
-   ```
+   ```powershell
    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
    ```
 
@@ -306,7 +308,7 @@ At this point, you have configured your DAG to use the file server on Azure as y
 
 1. Validate the DAG configuration by running the following command.
 
-   ```
+   ```powershell
    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
    ```
 
@@ -314,13 +316,13 @@ At this point, you have configured your DAG to use the file server on Azure as y
 
 2. If the DAG has an even number of nodes, the file share witness will be configured. Validate the file share witness setting in cluster properties by running the following command. The value for the _SharePath_ parameter should point to the file server and display the correct path.
 
-   ```
+   ```powershell
    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
    ```
 
 3. Next, verify the status of the "File Share Witness" cluster resource by running the following command. The _State_ of the cluster resource should display **Online**.
 
-   ```
+   ```powershell
    Get-ClusterResource -Cluster MBX1
    ```
 

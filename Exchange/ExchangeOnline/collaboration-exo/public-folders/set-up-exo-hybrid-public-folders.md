@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Configure Exchange Online public folders for a hybrid deployment
 
 ---
@@ -70,7 +72,7 @@ Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize th
 
 On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
 
-```
+```PowerShell
 Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
 ```
 
@@ -87,7 +89,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
 
 1. On Exchange Server, run the following command to import public folder mailbox objects from the cloud to your on-premises Active Directory.
 
-   ```
+   ```PowerShell
    Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
    ```
 
@@ -98,7 +100,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
 
 2. Enable the Exchange 2013 on-premises organization to access the Exchange Online public folders.
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFoldersEnabled Remote
    ```
 

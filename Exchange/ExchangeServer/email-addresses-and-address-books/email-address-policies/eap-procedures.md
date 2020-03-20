@@ -3,13 +3,15 @@ localization_priority: Normal
 description: 'Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
 ms.author: v-mapenn
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.reviewer:
 title: Procedures for email address policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -79,7 +81,7 @@ Email address templates use the syntax `<Type>:<AddressFormat>`:
 
 To create an email address policy, use the following syntax:
 
-```
+```PowerShell
 New-EmailAddressPolicy -Name "<Policy Name>" <Precanned recipient filter | Custom recipient filter> [-RecipientContainer <OrganizationalUnit>] [-Priority <AllowedInteger>] -EnabledEmailAddressTemplates "SMTP:<PrimaryEmailAddressFormat>","smtp:<ProxyEmailAddress1>","smtp:<ProxyEmailAddress2>"...
 ```
 
@@ -95,7 +97,7 @@ This example creates an email address policy with a precanned recipient filter:
 
 - **Priority**: _n_+1, where _n_ is the number of manually created email address policies that already exist (we didn't use the _Priority_ parameter, and the default value is _n_+1). Remember, the first email address policy that identifies a recipient configures the recipient's email addresses. All other policies are ignored, even if the first policy is unapplied and can't configure the recipient's email addresses.
 
-```
+```PowerShell
 New-EmailAddressPolicy -Name "Southeast Offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "GA","AL","LA" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com","smtp:%s%2g@southeast.contoso.net"
 ```
 
@@ -111,7 +113,7 @@ This example creates an email address policy with a custom recipient filter:
 
 - **Priority**: 2
 
-```
+```PowerShell
 New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')" -EnabledEmailAddressTemplates "SMTP:%2g%s@contoso.com" -Priority 2
 ```
 
@@ -131,7 +133,7 @@ To verify that you've successfully created an email address policy, use either o
 
 - In the Exchange Management Shell, run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-EmailAddressPolicy | Format-List Name,Priority,Enabled*,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
   ```
 
@@ -183,7 +185,7 @@ The same basic settings are available as when you created the policy. For more i
 
 To modify an existing email address template, use the following syntax:
 
-```
+```PowerShell
 Set-EmailAddressPolicy -Identity <EmailAdressPolicyIdentity> [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>] [-Priority <AllowedInteger>] [-EnabledEmailAddressTemplates <"Type1:AddressFormat1","Type2:AddressFormat2"...] [-DisabledEmailAddressTemplates <"Type1:AddressFormat1","Type2:AddressFormat2"... | $null>]
 ```
 
@@ -191,7 +193,7 @@ When you modify the _Conditional_ parameter values, you can use the following sy
 
 This example modifies the existing email address policy named Southeast Executives by adding the **State or province** value TX (Texas) to the precanned recipient filter.
 
-```
+```PowerShell
 Set-EmailAddressPolicy -Identity "Southeast Executives" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
@@ -199,7 +201,7 @@ The _DisabledEmailAddressTemplates_ parameter specifies inactive email address t
 
 This example clears the disabled email address templates from the email address policy named Contoso Executives.
 
-```
+```PowerShell
 Set-EmailAddressPolicy -Identity "Contoso Executives" -DisabledEmailAddressTemplates $null
 ```
 
@@ -213,7 +215,7 @@ To verify that you've successfully modified an email address policy, use either 
 
 - In the Exchange Management Shell, run the following command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-EmailAddressPolicy | Format-List Name,Priority,*Template*,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipientsConditional*
   ```
 
@@ -243,13 +245,13 @@ After you create or modify an email address policy in the EAC or the Exchange Ma
 
 To apply an email address policy to recipients, use the following syntax:
 
-```
+```PowerShell
 Update-EmailAddressPolicy -Identity <EmailAddressPolicyIdentity> [-FixMissingAlias] -[UpdateSecondaryAddressesOnly]
 ```
 
 This example applies the email address policy named Northwest Executives.
 
-```
+```PowerShell
 Update-EmailAddressPolicy -Identity "Northwest Executives"
 ```
 
@@ -263,7 +265,7 @@ To verify that you've successfully applied an email address policy, use either o
 
 - In the Exchange Management Shell, run the following command to verify the **RecipientFilterApplied** property has the value `True`:
 
-  ```
+  ```PowerShell
   Get-EmailAddressPolicy | Format-Table -Auto Name,RecipientFilterApplied
   ```
 
@@ -285,13 +287,13 @@ To verify that you've successfully applied an email address policy, use either o
 
 To remove an email address policy, use the following syntax:
 
-```
+```PowerShell
 Remove-EmailAddressPolicy -Identity <EmailAddressPolicyIdentity>
 ```
 
 This example removes the email address policy named Southeast Offices.
 
-```
+```PowerShell
 Remove-EmailAddressPolicy -Identity "Southeast Offices"
 ```
 
@@ -305,7 +307,7 @@ To verify that you've successfully removed an email address policy, use either o
 
 - In the Exchange Management Shell, run the following command to verify that the email address policy isn't listed:
 
-  ```
+  ```PowerShell
   Get-EmailAddressPolicy
   ```
 

@@ -8,6 +8,8 @@ ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 ms.reviewer:
 title: Manage equipment mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -68,7 +70,7 @@ This example creates an equipment mailbox with the following configuration:
 
 - The _Equipment_ parameter specifies that this mailbox will be created as an equipment mailbox.
 
-```
+```PowerShell
 New-Mailbox -Database "Mailbox Database 1" -Name MotorVehicle2 -OrganizationalUnit Equipment -DisplayName "Motor Vehicle 2" -Equipment
 ```
 
@@ -82,7 +84,7 @@ To verify that you've successfully created a user mailbox, do one of the followi
 
 - In the Exchange Management Shell, run the following command to display information about the new equipment mailbox.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
@@ -242,19 +244,19 @@ Here are some examples of using the Exchange Management Shell to change equipmen
 
 This example changes the display name and primary SMTP address (called the default reply address) for the MotorPool 1 equipment mailbox. The previous reply address is kept as a proxy address.
 
-```
+```PowerShell
 Set-Mailbox "MotorPool 1" -DisplayName "Motor Pool 1 - Compact" -EmailAddresses SMTP:MP1.compact@contoso.com,smtp:MP.1@contoso.com
 ```
 
 This example configures equipment mailboxes to allow booking requests to be scheduled only during working hours.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'EquipmentMailbox'" | Set-CalendarProcessing -ScheduleOnlyDuringWorkHours $true
 ```
 
 This example uses the **Get-User** cmdlet to find all equipment mailboxes in the Audio Visual department, and then uses the **Set-CalendarProcessing** cmdlet to send booking requests to a delegate named Ann Beebe to accept or decline.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'EquipmentMailbox') -and (Department -eq 'Audio Visual')" | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Ann Beebe"
 ```
 
@@ -266,6 +268,6 @@ To verify that you've successfully changed properties for an equipment mailbox, 
 
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours, run the following command to verify the new value.
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'EquipmentMailbox'" | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```

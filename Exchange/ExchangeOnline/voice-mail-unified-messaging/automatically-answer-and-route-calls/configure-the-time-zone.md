@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the time zone in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,6 +51,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the time zone to the Pacific time zone on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -TimeZoneName Pacific
 ```

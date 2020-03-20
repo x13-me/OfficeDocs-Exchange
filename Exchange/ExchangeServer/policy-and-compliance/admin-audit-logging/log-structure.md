@@ -8,6 +8,8 @@ ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms.reviewer: 
 title: Administrator audit log structure
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -48,7 +50,7 @@ The audit logs are XML files and can contain multiple audit log entries. The fol
 
 The following is an example of a typical log entry in the admin audit log.
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <SearchResults>
   <Event Caller="corp.e16.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e16.contoso.com/Users/david" RunDate="2015-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.01.0396.030)">

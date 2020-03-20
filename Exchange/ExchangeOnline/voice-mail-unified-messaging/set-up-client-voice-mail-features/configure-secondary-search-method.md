@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the secondary way for Outlook Voice Access users to search in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -60,24 +62,24 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the secondary dial by name method to `FirstLast`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their first and then last name.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNameSecondary FirstLast
 ```
 
 This example sets the secondary dial by name method to `LastFirst`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their last and then first name.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNameSecondary LastFirst
 ```
 
 This example sets the secondary dial by name method to `SMTP address`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their SMTP address.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNameSecondary SMTPAddress
 ```
 
 This example sets the secondary dial by name method to `None` and the primary dial by name method to `SMTP address`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their SMTP address only.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -DialByNamePrimary SMTPAddress -DialByNameSecondary None
 ```

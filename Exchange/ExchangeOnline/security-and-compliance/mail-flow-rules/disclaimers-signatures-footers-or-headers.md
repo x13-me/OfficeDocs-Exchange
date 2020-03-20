@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
 ms.collection: 
 - exchange-online
@@ -77,13 +79,13 @@ Use the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchang
 
 This example creates a new mail flow rule that adds a disclaimer with an image to the end of all email messages that are sent outside the organization.
 
-```
+```PowerShell
 New-TransportRule -Name "External Disclaimer" -SentToScope NotInOrganization -ApplyHtmlDisclaimerText "<h3>Disclaimer Title</h3><p>This is the disclaimer text.</p><img alt='Contoso logo' src='http://www.contoso.com/images/logo.gif'>"
 ```
 
 This example creates a new mail flow rule that adds an advertisement for one month to the beginning of all outgoing messages.
 
-```
+```PowerShell
 New-TransportRule -Name "March Special" -Enabled $true -SentToScope NotInOrganization -ApplyHtmlDisclaimerLocation Prepend -ActivationDate '03/1/2017' -ExpiryDate '03/31/2017'-ApplyHtmlDisclaimerText "<table align=center width=200 border=1 bordercolor=blue bgcolor=green cellpadding=10 cellspacing=0><tr><td nowrap><a href=http://www.contoso.com/marchspecials.htm>Click to see March specials</a></td></tr></table>"
 ```
 

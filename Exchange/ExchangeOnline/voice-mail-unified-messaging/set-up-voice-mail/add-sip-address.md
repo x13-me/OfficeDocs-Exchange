@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add a SIP address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -68,7 +70,7 @@ This example adds a SIP address for Tony Smith, a UM-enabled user.
 > [!NOTE]
 > Before you add a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to add. To determine the position, use the **$mbx.EmailAddresses** command. The first proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses +="eum:tsmit@contoso.com;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

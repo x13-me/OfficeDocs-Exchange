@@ -3,11 +3,13 @@ localization_priority: Normal
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
 ms.author: v-mapenn
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
 title: Create a public folder
 ms.collection: 
 - exchange-online
@@ -62,7 +64,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 This example creates a public folder named Reports in the path Marketing\2013.
 
-```
+```PowerShell
 New-PublicFolder -Name Reports -Path \Marketing\2013
 ```
 
@@ -79,15 +81,15 @@ To verify that you've successfully created a public folder, do the following:
 
 - In Exchange Online PowerShell, run any of the following commands:
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
   ```
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Identity \Marketing\2013 -GetChildren
   ```
 
-  ```
+  ```PowerShell
   Get-PublicFolder -Recurse
   ```
 

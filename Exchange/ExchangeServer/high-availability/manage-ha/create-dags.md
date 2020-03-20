@@ -8,6 +8,8 @@ ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
 ms.reviewer:
 title: Create a database availability group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -80,31 +82,31 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 The following example creates a DAG named DAG1, which is configured to use the witness server FILESRV1 and the local directory C:\DAG1. DAG1 is also configured to use DHCP for the DAG's IP addresses.
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
 ```
 
 The next example creates a DAG named DAG2. For the DAG's witness server, the system automatically selects an Exchange server with Client Access services that is in the local Active Directory site. DAG2 is assigned a single static IP address because in this example all DAG members have the MAPI network on the same subnet.
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
 ```
 
 This example creates the DAG DAG3. DAG3 is configured to use the witness server MBX2 and the local directory C:\DAG3. DAG3 is assigned multiple static IP addresses because its DAG members are on different subnets on the MAPI network.
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
 ```
 
 This example creates the DAG DAG4 that's configured to use DHCP. In addition, the witness server will be automatically selected by the system, and the default witness directory will be created.
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG4
 ```
 
 This example creates the DAG DAG5 that will not have an administrative access point (valid for Windows Server 2012 R2 DAGs only). In addition, MBX4 will be used as the witness server for the DAG, and the default witness directory will be created.
 
-```
+```powershell
 New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
 ```
 
@@ -116,7 +118,7 @@ To verify that you've successfully created a DAG, do one of the following:
 
 - In the Exchange Management Shell, run the following command to verify the DAG was created and to display DAG property information.
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroup <DAGName> | Format-List
   ```
 

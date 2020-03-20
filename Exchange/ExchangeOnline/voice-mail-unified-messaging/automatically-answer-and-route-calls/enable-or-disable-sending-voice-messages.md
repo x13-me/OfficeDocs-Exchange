@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable sending voice messages to users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -52,12 +54,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example prevents callers who call in to a UM auto attendant named `MyUMAutoAttendant` from sending voice messages.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $false
 ```
 
 This example enables callers who call in to a UM auto attendant named `MyUMAutoAttendant` to send voice messages.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $true
 ```

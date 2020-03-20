@@ -10,6 +10,8 @@ title: Configure the external postmaster address in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
@@ -37,19 +39,19 @@ There's no mailbox associated with the postmaster@\<_Default accepted domain_\> 
 
 To configure the external postmaster address, use the following syntax:
 
-```
+```powershell
 Set-TransportConfig -ExternalPostmasterAddress <EmailAddress>
 ```
 
 This example sets the external postmaster address to the value `postmaster@contoso.com`.
 
-```
+```powershell
 Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
 ```
 
 This example returns the external postmaster address to the default value.
 
-```
+```powershell
 Set-TransportConfig -ExternalPostmasterAddress $null
 ```
 
@@ -59,7 +61,7 @@ To verify that you have successfully configured the external postmaster address,
 
 1. Run the following command to verify the property value:
 
-   ```
+   ```powershell
    Get-TransportConfig | Format-List ExternalPostmasterAddress
    ```
 

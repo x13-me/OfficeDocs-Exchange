@@ -8,6 +8,8 @@ ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms.reviewer:
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -48,13 +50,13 @@ You can use the Exchange admin center or the Exchange Management Shell to enable
 
 This example enables the archive mailbox for Tony Smith.
 
-```
+```PowerShell
 Enable-Mailbox "Tony Smith" -Archive
 ```
 
 This example retrieves mailboxes in database DB01 that don't have an on-premises or cloud-based archive enabled and don't have a name starting with DiscoverySearchMailbox. It pipes the results to the **Enable-Mailbox** cmdlet to enable the archive for all mailboxes on mailbox database DB01.
 
-```
+```PowerShell
 Get-Mailbox -Database DB01 -Filter "ArchiveGuid -Eq `$null -AND ArchiveDomain -eq `$null -AND Name -NotLike 'DiscoverySearchMailbox*'" | Enable-Mailbox -Archive
 ```
 
@@ -66,7 +68,7 @@ To verify that you've successfully enabled an on-premises archive for an existin
 
 - In the Exchange Management Shell, run the following command to display information about the new archive.
 
-  ```
+  ```PowerShell
   Get-Mailbox <MailboxIdentity> | Format-List Name,*Archive*
   ```
 
@@ -106,11 +108,11 @@ You can also enable an archive mailbox when you first create a new mailbox for a
 
 This example creates the user named Chris Ashton in Active Directory, creates the mailbox on mailbox database DB01, and enables and creates an archive mailbox on DB01. To set the initial value of the password, this example creates a variable ($password), prompts you to enter a password, and assigns that password to the variable as a SecureString object.
 
-```
+```PowerShell
 $password = Read-Host "Enter password" -AsSecureString
 ```
 
-```
+```PowerShell
 New-Mailbox -UserPrincipalName cashton@contoso.com -Alias cashton -Database "DB01" -Archive -Name "Chris Ashton" -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton
 ```
 
@@ -122,7 +124,7 @@ To verify that you've successfully created a user mailbox with an on-premises ar
 
 - In the Exchange Management Shell, run the following command to display information about the new user mailbox and archive.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
   ```
 
@@ -146,7 +148,7 @@ You may want to disable a user's archive for troubleshooting purposes or complia
 
 This example disables the archive mailbox for Chris Ashton's mailbox. It doesn't disable the user's primary mailbox.
 
-```
+```PowerShell
 Disable-Mailbox "Chris Ashton" -Archive
 ```
 
@@ -158,7 +160,7 @@ To verify that you have successfully disabled an archive mailbox, do the followi
 
 - In the Exchange Management Shell, run the following command to check the archive properties for the mailbox user.
 
-  ```
+  ```PowerShell
   Get-Mailbox "Chris Ashton" | Format-List *Archive*
   ```
 
@@ -191,7 +193,7 @@ When you disable an archive mailbox, it becomes disconnected. A disconnected arc
 
 Use the **Enable-Mailbox -Archive** command to re-enable an archive mailbox. For example:
 
-```
+```PowerShell
 Enable-Mailbox "Chris Ashton" -Archive
 ```
 
@@ -199,7 +201,7 @@ Enable-Mailbox "Chris Ashton" -Archive
 
 To verify that you have successfully connected a disabled archive mailbox to the user's primary mailbox, run the following command to retrieve the mailbox user's archive properties, and verify the values returned for the _ArchiveGuid_ and _ArchiveDatabase_ properties.
 
-```
+```PowerShell
 Get-Mailbox "Chris Ashton" | Format-List *Archive*
 ```
 

@@ -8,6 +8,8 @@ ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer:
 title: Configure email forwarding for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -49,13 +51,13 @@ Haven't used Exchange Management Shell much? Check out the [Exchange Management 
 
 This example delivers email to the mailbox of Douglas Kohn and, at the same time, forwards all mail sent to Douglas Kohn to douglaskohn.parents@fineartschool.net.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Douglas Kohn" -DeliverToMailboxAndForward $true -ForwardingSMTPAddress "douglaskohn.parents@fineartschool.net"
 ```
 
 This example forwards all email sent to the mailbox of Ken Sanchez, an employee of Contoso Suites, to one of his coworkers, pilarp@contoso.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ken Sanchez" -ForwardingSMTPAddress "pilarp@contoso.com"
 ```
 
@@ -77,7 +79,7 @@ Or
 
 Run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-Mailbox <identity> | Format-List ForwardingSMTPAddress,DeliverToMailboxandForward
 ```
 

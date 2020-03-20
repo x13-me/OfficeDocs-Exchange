@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable a call answering rule for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -47,19 +49,19 @@ When a call answering rule is created, it's enabled. You can use Exchange Online
 
 This example enables the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith.
 
-```
+```PowerShell
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
 
 The example uses the _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be enabled and if there are any errors within the command.
 
-```
+```PowerShell
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -WhatIf
 ```
 
 This example enables the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith and prompts the signed-in user to confirm that the call answering rule is to be enabled.
 
-```
+```PowerShell
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -Confirm
 ```
 
@@ -69,18 +71,18 @@ Disabling a call answering rule prevents it from being retrieved and processed w
 
 This example disables the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith.
 
-```
+```PowerShell
 Disable -UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
 
 This example uses the _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be disabled and if there are any errors within the command.
 
-```
+```PowerShell
 Disable -UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -WhatIf
 ```
 
 This example disables the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith and prompts the signed-in user to confirm that they're disabling the call answering rule.
 
-```
+```PowerShell
 Disable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -Confirm
 ```

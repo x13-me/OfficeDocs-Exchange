@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f2bd62ba-1e01-4cb7-862c-c750752e20e0
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add an auto attendant extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -56,6 +58,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` with multiple extension numbers.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -PilotIdentifierList "12345, 72000, 75000"
 ```

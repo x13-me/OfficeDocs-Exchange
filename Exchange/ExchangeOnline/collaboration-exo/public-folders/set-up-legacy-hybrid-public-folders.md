@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: Use the steps in this article to synchronize public folders between Office 365 and your Exchange Server 2010 on-premises deployment.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Configure legacy on-premises public folders for a hybrid deployment
 
 ---
@@ -84,7 +86,7 @@ The following table describes the version and location combinations of user mail
 
    For Exchange 2010, run the following command. This command excludes the mailbox database from the mailbox provisioning load balancer. This prevents new mailboxes from being added automatically to this database.
 
-   ```
+   ```PowerShell
    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
    ```
 
@@ -93,17 +95,17 @@ The following table describes the version and location combinations of user mail
 
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access.
 
-   ```
+   ```PowerShell
    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
    ```
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
    ```
 
 4. For Exchange 2010, enable AutoDiscover to return the proxy public folder mailboxes.
 
-   ```
+   ```PowerShell
    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
    ```
 
@@ -128,7 +130,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
-```
+```PowerShell
 Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile "<sync_summary.csv>"
 ```
 
@@ -145,8 +147,8 @@ Enable the exchange online organization to access the on-premises public folders
 
 Run the following command in **Exchange Online PowerShell**:
 
-```
-Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
+```PowerShell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes 'PFMailbox1','PFMailbox2','PFMailbox3'
 ```
 
 You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Method 1: Manually verify that the service is started and that the admin account can sign in](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-wa). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.

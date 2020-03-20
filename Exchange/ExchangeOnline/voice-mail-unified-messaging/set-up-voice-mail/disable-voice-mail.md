@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable voice mail for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional management tasks related to users who are enabled for voice mail,
 
 This example disables Unified Messaging and voice mail for the user tonysmith@contoso.com, but keeps the UM mailbox settings.
 
-```
+```PowerShell
 Disable-UMMailbox -Identity tonysmith@contoso.com -KeepProperties $True
 ```

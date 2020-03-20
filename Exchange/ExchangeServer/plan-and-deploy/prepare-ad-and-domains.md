@@ -11,6 +11,8 @@ title: Prepare Active Directory and domains for Exchange Server, Active Director
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -81,13 +83,13 @@ When you extend the Active Directory schema for Exchange, the following requirem
 
 To extend the schema for Exchange, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
@@ -118,13 +120,13 @@ When you prepare Active Directory for Exchange, the following requirements apply
 
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD  /OrganizationName:"<Organization name>"
 ```
 
 This example uses the Exchange installation files on drive E: and names the Exchange organization "Contoso Corporation".
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Contoso Corporation"
 ```
 
@@ -154,13 +156,13 @@ When you prepare all domains in the Active Directory forest for Exchange, your a
 
 To prepare all domains in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
@@ -181,7 +183,7 @@ When you prepare specific domains in your Active Directory forest, the following
 
 To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
 ```
 
@@ -193,13 +195,13 @@ To a prepare a specific domain in your Active Directory forest, run the followin
 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain:engineering.corp.contoso.com
 ```
 
 This is the same example, but run on a computer that's a member of the engineering.corp.contoso.com domain:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 ```
 
@@ -229,6 +231,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU5|17001|13237|16754|
 |Exchange 2019 CU4|17001|13237|16754|
 |Exchange 2019 CU3|17001|13237|16754|
 |Exchange 2019 CU2|17001|13237|16754|
@@ -242,6 +245,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU16|15332|13237|16217|
 |Exchange 2016 CU15|15332|13237|16217|
 |Exchange 2016 CU14|15332|13237|16217|
 |Exchange 2016 CU13|15332|13237|16217|

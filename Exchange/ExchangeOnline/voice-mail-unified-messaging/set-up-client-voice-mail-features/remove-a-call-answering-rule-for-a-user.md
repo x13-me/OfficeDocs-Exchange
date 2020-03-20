@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove a call answering rule for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -48,12 +50,12 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
 
 This example removes the call answering rule `MyUMCallAnsweringRule` from a user's mailbox. The user's mailbox is the mailbox of the user running the cmdlet.
 
-```
+```PowerShell
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule
 ```
 
 This example removes the call answering rule `MyUMCallAnsweringRule` from the mailbox of Tony Smith.
 
-```
+```PowerShell
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```

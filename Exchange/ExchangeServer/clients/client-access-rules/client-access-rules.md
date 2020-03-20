@@ -7,6 +7,8 @@ ms.author: v-mapenn
 monikerRange: exchserver-2019
 title: Client Access Rules in Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.service: exchange-server-it-pro
 ms.reviewer: 
@@ -79,7 +81,7 @@ You can only use the Exchange Management Shell (remote PowerShell) to manage Cli
 
 As a best practice, create a Client Access Rule with the highest priority to preserve your access to remote PowerShell. For example:
 
-```
+```powershell
 New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1
 ```
 

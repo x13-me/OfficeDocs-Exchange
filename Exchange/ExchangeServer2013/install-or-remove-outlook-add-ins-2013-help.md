@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -64,13 +66,13 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 This example shows you how to add an add-in from a URL.
 
-```
+```PowerShell
 New-App -OrganizationApp -Url <URL location for add-in manifest file>
 ```
 
 This example shows you how to add an add-in from a file.
 
-```
+```PowerShell
 New-App -OrganizationApp -FileData <File location for add-in manifest file>
 ```
 
@@ -94,13 +96,13 @@ You can use the Exchange Management Shell to remove an add-in from your organiza
 > [!NOTE]
 > Run the following command to look up the display names and application IDs for all the add-ins for Outlook installed for your organization.
 
-```
+```PowerShell
 Get-App -OrganizationApp |Format-List DisplayName,AppID
 ```
 
 Run the following command to remove the custom add-in Finance Test Add-in from the organization.
 
-```
+```PowerShell
 Remove-App -OrganizationApp -Identity <GUID for Finance Test Add-in>
 ```
 

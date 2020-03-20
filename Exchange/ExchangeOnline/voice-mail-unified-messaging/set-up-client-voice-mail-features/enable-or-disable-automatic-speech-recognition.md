@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 58f41016-e725-432b-953e-415d61e0664c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable automatic speech recognition for an Outlook Voice Access user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -44,12 +46,12 @@ For additional management tasks related to UM or voice mail users, see [Voice ma
 
 This example enables ASR for a UM-enabled user named `tonysmith`.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $true
 ```
 
 This example disables ASR for a UM-enabled user named `tonysmith`.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $false
 ```

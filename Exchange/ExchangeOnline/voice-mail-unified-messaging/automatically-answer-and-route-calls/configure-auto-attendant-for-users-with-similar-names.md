@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2e7318a0-67f9-4d7b-8300-5f0ef77656a8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure an auto attendant for users who have similar names in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -64,12 +66,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the information to be included with users with similar names to Prompt for Alias for a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -MatchedNameSelectionMethod PromptForAlias
 ```
 
 This example sets the information to be included with users with similar names to the title of the users, enables name lookups, and enables callers that dial into the auto attendant to press \* to be presented with the Outlook Voice Access welcome greeting for a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -MatchedNameSelectionMethod Title -NameLookupEnabled $true -StarOutToDialPlanEnabled $true
 ```

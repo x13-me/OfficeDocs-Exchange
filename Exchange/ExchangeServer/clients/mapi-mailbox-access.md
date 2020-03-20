@@ -8,6 +8,8 @@ ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.reviewer:
 title: Enable or disable MAPI access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -75,19 +77,19 @@ For additional management tasks related to user access to mailboxes, see these t
 
 To enable or disable MAPI access to a single mailbox, use this syntax:
 
-```
+```powershell
 Set-CasMailbox -Identity <MailboxIdentity> -MAPIEnabled <$true | $false>
 ```
 
 This example disables MAPI access to the mailbox named Ken Sanchez.
 
-```
+```powershell
 Set-CasMailbox -Identity "Ken Sanchez" -MAPIEnabled $false
 ```
 
 This example enables MAPI access to the mailbox named Esther Valle.
 
-```
+```powershell
 Set-CasMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
@@ -133,19 +135,19 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 This example disables MAPI access to all user mailboxes in the North America\Finance OU.
 
-```
+```powershell
 $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -MAPIEnabled $false}
 ```
 
 This example disables MAPI access to all user mailboxes in the Engineering department in Washington state.
 
-```
+```powershell
 Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -MAPIEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable MAPI access to the specified mailboxes.
 
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -MAPIEnabled $false}
 ```
 
@@ -161,18 +163,18 @@ To verify that you've successfully enabled or disabled MAPI access to a mailbox,
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
-  ```
+  ```powershell
   Get-CasMailbox -Identity "<MailboxIdentity>"
   ```
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```
+  ```powershell
   Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where Outlook on the web access is disabled:
 
-  ```
+  ```powershell
   Get-CasMailbox -ResultSize unlimited -Filter "MAPIEnabled -eq `$false"
   ```

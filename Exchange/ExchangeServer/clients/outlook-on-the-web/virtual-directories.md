@@ -8,6 +8,8 @@ ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms.reviewer:
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -211,11 +213,11 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
 
     Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
-     ```
+     ```console
      net stop was /y
      ```
 
-     ```
+     ```console
      net start w3svc
      ```
 
@@ -223,25 +225,25 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
 
 To use the Exchange Management Shell to view the properties of Outlook on the web virtual directories, use the following syntax:
 
-```
+```powershell
 Get-OWAVirtualDirectory [-Identity "<ExchangeServer>\owa <Website>"]
 ```
 
 This example returns a summary list of all Outlook on the web virtual directories on all Exchange servers in the organization.
 
-```
+```powershell
 Get-OWAVirtualDirectory
 ```
 
 This example returns detailed information for the Outlook on the web virtual directory in the default website on the Exchange server named Mailbox01.
 
-```
+```powershell
 Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-List
 ```
 
 This example returns the authentication methods and settings for the same virtual directory:
 
-```
+```powershell
 Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-List *Authentication*
 ```
 
@@ -264,13 +266,13 @@ There are many more configuration settings available for Outlook on the web virt
 
 To use the Exchange Management Shell to configure the properties of Outlook on the web virtual directories, use the following syntax:
 
-```
+```powershell
 Set-OWAVirtualDirectory -Identity "<ExchangeServer>\owa <Website>" <Settings>
 ```
 
 This example enables configures direct file access in Outlook on the web to block file types that aren't specifically defined in the Allow list (the default action is allow).
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 

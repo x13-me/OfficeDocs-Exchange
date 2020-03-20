@@ -8,6 +8,8 @@ ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms.reviewer:
 title: Activate a lagged mailbox database copy
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -45,7 +47,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 
 1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy) cmdlet.
 
-   ```
+   ```powershell
    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
    ```
 
@@ -60,7 +62,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 
 5. This example uses Eseutil to perform the recovery operation.
 
-   ```
+   ```powershell
    Eseutil.exe /r eXX /a
    ```
 
@@ -71,7 +73,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 
 7. After the recovery process is complete, this example resumes replication for the database that was used as part of the recovery process.
 
-   ```
+   ```powershell
    Resume-MailboxDatabaseCopy DB1\EX3
    ```
 
@@ -83,7 +85,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy) cmdlet.
 
-   ```
+   ```powershell
    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
    ```
 
@@ -94,7 +96,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 2. This example activates the lagged mailbox database copy using the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/move-activemailboxdatabase) cmdlet with the _SkipLagChecks_ parameter.
 
-  ```
+  ```powershell
   Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
   ```
 
@@ -104,7 +106,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 2. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy) cmdlet.
 
-   ```
+   ```powershell
    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
    ```
 
@@ -115,7 +117,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 4. Determine the required logs for the lagged database copy by looking for the "Log Required:" value in ESEUTIL database header output
 
-   ```
+   ```powershell
    Eseutil /mh <DBPath> | findstr /c:"Log Required"
    ```
 
@@ -125,7 +127,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 4. Perform a database switchover and activate the lagged copy. This example activates the database by using the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/move-activemailboxdatabase) cmdlet with several parameters.
 
-   ```
+   ```powershell
    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
    ```
 
@@ -139,6 +141,6 @@ To verify that you've successfully activated a lagged mailbox database copy, do 
 
 - In the Exchange Management Shell, run the following command to display status information for a database copy.
 
-  ```
+  ```powershell
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```

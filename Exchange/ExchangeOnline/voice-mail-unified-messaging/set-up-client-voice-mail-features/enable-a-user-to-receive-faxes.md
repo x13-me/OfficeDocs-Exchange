@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a0505001-aac0-41ef-824f-76e5e56d7675
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable a user to receive faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -50,6 +52,6 @@ For more information about fax partners, see [Microsoft PinPoint for Fax Partner
 
 This example enables Tony Smith to receive incoming faxes.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tonysmith@contoso.com -FaxEnabled $true
 ```

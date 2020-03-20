@@ -8,6 +8,8 @@ ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms.reviewer:
 title: In-Place Archiving in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

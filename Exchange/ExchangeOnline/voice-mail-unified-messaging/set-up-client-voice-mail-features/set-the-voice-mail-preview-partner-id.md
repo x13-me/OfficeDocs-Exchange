@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ab98c320-9952-47a7-b141-ddfc2c0ad419
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set the Voice Mail Preview partner ID in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -44,7 +46,7 @@ For additional management tasks related to voice mail preview, see [Voice Mail P
 
 This example sets the Voice Mail Preview partner ID to CON123-2010 on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy
 -VoiceMailPreviewPartnerAssignedID CON123-2010
 ```

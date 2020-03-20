@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: eecc40ae-fac7-41e4-a1e1-16330f4462a3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable common PIN patterns for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -60,6 +62,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example prevents users associated with the UM mailbox policy named `MyUMMailboxPolicy` from using PINs that contain common patterns.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $false
 ```

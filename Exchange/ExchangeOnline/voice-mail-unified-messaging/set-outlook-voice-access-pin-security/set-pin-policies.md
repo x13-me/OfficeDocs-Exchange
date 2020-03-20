@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set Outlook Voice Access PIN policies in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -69,6 +71,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the PIN settings for users associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```

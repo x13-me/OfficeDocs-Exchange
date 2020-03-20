@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Public folders in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online
@@ -81,7 +83,7 @@ For more information, see [Update the public folder hierarchy](update-public-fol
 
 #### Public folder content
 
-Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
+Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders (except when using the [Content Search eDiscovery tool](https://docs.microsoft.com/microsoft-365/compliance/content-search) in the Security & Compliance Center in Office 365) and the content isn't indexed by Exchange Search.
 
 ## Considerations
 
@@ -113,6 +115,6 @@ We recommend that you use batch migration instead of Outlook's PST export featur
 
 2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
 
-   ```
+   ```PowerShell
    New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
    ```

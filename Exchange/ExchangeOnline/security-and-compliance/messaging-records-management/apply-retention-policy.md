@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Apply a retention policy to mailboxes
 ms.collection: 
 - exchange-online
@@ -62,7 +64,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 This example applies the retention policy RP-Finance to Morris's mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Morris" -RetentionPolicy "RP-Finance"
 ```
 
@@ -72,20 +74,20 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 This example applies the new retention policy New-Retention-Policy to all mailboxes that have the old policy Old-Retention-Policy.
 
-```
+```PowerShell
 $OldPolicy={Get-RetentionPolicy "Old-Retention-Policy"}.distinguishedName
 Get-Mailbox -Filter "RetentionPolicy -eq '$OldPolicy'" -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
 ```
 
 This example applies the retention policy RetentionPolicy-Corp to all mailboxes in the Exchange organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited | Set-Mailbox -RetentionPolicy "RetentionPolicy-Corp"
 ```
 
 This example applies the retention policy RetentionPolicy-Finance to all mailboxes in the Finance organizational unit.
 
-```
+```PowerShell
 Get-Mailbox -OrganizationalUnit "Finance" -ResultSize Unlimited | Set-Mailbox -RetentionPolicy "RetentionPolicy-Finance"
 ```
 
@@ -97,12 +99,12 @@ To verify that you have applied the retention policy, run the [Get-Mailbox](http
 
 This example retrieves the retention policy for Morris's mailbox.
 
-```
+```PowerShell
 Get-Mailbox Morris | Select RetentionPolicy
 ```
 
 This command retrieves all mailboxes that have the retention policy RP-Finance applied.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionPolicy -eq "RP-Finance"} | Format-Table Name,RetentionPolicy -Auto
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add retention tags to or remove retention tags from a retention policy
 ms.collection: 
 - exchange-online
@@ -66,13 +68,13 @@ This example adds the retention tags VPs-Default, VPs-Inbox, and VPs-DeletedItem
 > [!CAUTION]
 > If the policy has retention tags linked to it, this command replaces the existing tags.
 
-```
+```PowerShell
 Set-RetentionPolicy -Identity "RetPolicy-VPs" -RetentionPolicyTagLinks "VPs-Default","VPs-Inbox","VPs-DeletedItems"
 ```
 
 This example adds the retention tag VPs-DeletedItems to the retention policy RetPolicy-VPs, which already has other retention tags linked to it.
 
-```
+```PowerShell
 $TagList = (Get-RetentionPolicy "RetPolicy-VPs").RetentionPolicyTagLinks
 $TagList.Add((Get-RetentionPolicyTag 'VPs-DeletedItems').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
@@ -80,7 +82,7 @@ Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
 
 This example removes the retention tag VPs-Inbox from the retention policy RetPolicy-VPs.
 
-```
+```PowerShell
 $TagList = (Get-RetentionPolicy "RetPolicy-VPs").RetentionPolicyTagLinks
 $TagList.Remove((Get-RetentionPolicyTag 'VPs-Inbox').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
@@ -94,6 +96,6 @@ To verify that you have successfully added or removed a retention tag from a ret
 
 This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags added to the Default MRM Policy and pipes them to the **Format-Table** cmdlet to output only the name property of each tag.
 
-```
+```PowerShell
 (Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks | Format-Table name
 ```

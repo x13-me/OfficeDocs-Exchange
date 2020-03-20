@@ -10,6 +10,8 @@ title: Configure instant messaging integration with Outlook on the web in Exchan
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -53,7 +55,7 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 
 Use the following syntax in the Exchange Management Shell to specify the IM server and IM certificate thumbprint:
 
-```
+```powershell
 New-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
 ```
 
@@ -73,13 +75,13 @@ This example specifies the IM server and IM certificate thumbprint on all Exchan
 
 - **Override reason**: Configure IM
 
-```
+```powershell
 New-SettingOverride -Name "IM Override"  -Component OwaServer -Section IMSettings -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM"
 ```
 
 This example specifies the IM server and IM certificate thumbprint, but only on the server named Mailbox01.
 
-```
+```powershell
 New-SettingOverride -Name "Mailbox01 IM Override"  -Component OwaServer -Section IMSettings -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM" -Server Mailbox01
 ```
 
@@ -87,13 +89,13 @@ New-SettingOverride -Name "Mailbox01 IM Override"  -Component OwaServer -Section
 
 Use the following syntax in the Exchange Management Shell to refresh the IM settings on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Server <ServerName> -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
 This example refreshes the IM settings on the server named Mailbox01.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
@@ -101,7 +103,7 @@ Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directo
 
 Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
 
-```
+```powershell
 Restart-WebAppPool MSExchangeOWAAppPool
 ```
 
@@ -111,7 +113,7 @@ You'll know that you've successfully configured IM integration with Outlook on t
 
 To verify the values of the **IMServerName** and **IMCertificateThumbprint** properties on an Exchange server, replace _\<ServerName\>_ with the name of the server (not the FQDN), and run the following command:
 
-```
+```powershell
 [xml]$diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=OwaServer"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.OwaServer.IMSettings
 ```
 

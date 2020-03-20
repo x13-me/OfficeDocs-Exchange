@@ -7,6 +7,8 @@ ms.author: v-mapenn
 ms.reviewer: 
 title: Exchange Server supportability matrix
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
 ms.prod: exchange-server-it-pro
@@ -209,14 +211,14 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework version**|**CU4**|**CU3, CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU5, CU4**|**CU3, CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|
 |4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
 |4.7.2||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 
 ### Exchange 2016
 
-|**.NET Framework version**|**CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU16, CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||||||
 |4.7.2||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||||||
@@ -253,7 +255,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 <sup>1</sup> On Windows Server 2012, you need to install the .NET Framework 3.5 before you can use Exchange 2010 SP3.
 
-<sup>2</sup> Exchange 2010 uses only the .NET Framework 3.5 and the .NET Framework 3.5 SP1 libraries. It doesn't use the .NET Framework 4.5 libraries if they're installed on the server. We support the installation of any major or minor version of the .NET Framework 4.5 (for example, .NET Framework 4.5.1, .NET Framework 4.5.2, etc.) as long as the .NET Framework 3.5 or the .NET Framework 3.5 SP1 are also installed on the server.
+<sup>2</sup> Exchange 2010 uses only the .NET Framework 3.5 and the .NET Framework 3.5 SP1 libraries. It doesn't use the .NET Framework 4.5 libraries if they're installed on the server. We support the installation of any version of the .NET Framework 4.5 (for example, .NET Framework 4.5.1, .NET Framework 4.5.2, etc.) as long as the .NET Framework 3.5 or the .NET Framework 3.5 SP1 are also installed on the server.
 
 ## Windows PowerShell
 

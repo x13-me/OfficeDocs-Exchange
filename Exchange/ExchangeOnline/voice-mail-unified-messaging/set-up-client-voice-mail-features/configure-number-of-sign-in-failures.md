@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the number of sign-in failures before Outlook Voice Access users are disconnected in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,6 +51,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the number of sign-in failures before users are disconnected to 5 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -LogonFailuresBeforeDisconnect 5
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Select the language for an auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -35,12 +37,12 @@ You can configure the default prompt language setting on a Unified Messaging (UM
 
 This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to English (Great Britain).
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language en-GB
 ```
 
 This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to German.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language de-DE
 ```

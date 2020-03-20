@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 31892014-c921-45fd-9775-7a1ef40e3517
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View and export the external admin audit log
 ms.collection: 
 - exchange-online
@@ -28,7 +30,7 @@ In Exchange Online, actions performed by Microsoft and delegated administrators 
 
 - When you export the admin audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message that is sent to the specified recipients. However, Outlook on the web (formerly known as Outlook Web App) blocks XML attachments by default. If you want to use Outlook on the web to access these audit logs, you have to configure Outlook on the web to allow XML attachments. Run the following command to allow XML attachments in Outlook on the web.
 
-  ```
+  ```PowerShell
   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes '.rpmsg','.xlsx','.xlsm','.xlsb','.tiff','.pptx','.pptm','.ppsx','.ppsm','.docx','.docm','.zip','.xls','.wmv','.wma','.wav','.vsd','.txt','.tif','.rtf','.pub','.ppt','.png','.pdf','.one','.mp3','.jpg','.gif','.doc','.bmp','.avi','.xml'
   ```
 
@@ -67,13 +69,13 @@ You can use the **Search-AdminAuditLog** cmdlet with the _ExternalAccess_ parame
 
 This command returns all entries in the administrator audit log for cmdlets run by external administrators.
 
-```
+```PowerShell
 Search-AdminAuditLog -ExternalAccess $true
 ```
 
 This command returns entries in the administrator audit log for cmdlets run by external administrators between September 17, 2013 and October 2, 2013.
 
-```
+```PowerShell
 Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/2013
 ```
 
@@ -87,7 +89,7 @@ You can use the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ par
 
 The following command returns entries in the administrator audit log for cmdlets run by external administrators between September 25, 2013 and October 24, 2013. The search results are sent to the admin@contoso.com and pilarp@contoso.com SMTP addresses and the text "External admin audit log" is added to the subject line of the message.
 
-```
+```PowerShell
 New-AdminAuditLogSearch -ExternalAccess $true -EndDate 10/24/2013 -StartDate 07/25/2013 -StatusMailRecipients admin@contoso.com,pilarp@contoso.com -Name "External admin audit log"
 ```
 
@@ -96,7 +98,7 @@ New-AdminAuditLogSearch -ExternalAccess $true -EndDate 10/24/2013 -StartDate 07/
 
 To verify that the command to export the admin audit log entries performed by external administrators was successful, and to display information about current administrator audit log searches, run the following command:
 
-```
+```PowerShell
 Get-AuditLogSearch | Format-List
 ```
 

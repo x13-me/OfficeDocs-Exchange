@@ -47,7 +47,11 @@
       "feedback_system": "None",
       "hideEdit": true
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      titleSuffix:{
+        "Outlook/mobile/**/*.md": "Outlook mobile"
+      }
+    },
     "template": [],
     "dest": "OfficeDocs-OutlookClient",
     "markdownEngineName": "markdig"

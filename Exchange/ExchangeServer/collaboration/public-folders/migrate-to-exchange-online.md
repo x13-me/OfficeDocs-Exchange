@@ -8,6 +8,8 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office 365, migrate Exchange public folders to Microsoft 365
 
@@ -38,13 +40,15 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
     > [!NOTE]
     > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=844062) cmdlet to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
 
-- In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes.
+- In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes. However, a maximum of 100 public folders is supported for migration from Exchange Server.
 
 - If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=842798).
 
 - MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://go.microsoft.com/fwlink/p/?linkid=844909) for details.
 
 - To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
+
+- To run the migration scripts in this article, you must use an account that has basic authentication enabled. Accounts that use multi-factor authentication (MFA) are currently not supported.
 
 - Skipping the migration of deleted items and deleted folders from Exchange Server to Exchange Online is supported. For more information, see the Exchange Team blog post about [modern public folder migrations without dumpster data](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Announcing-the-support-for-modern-public-folder-migrations/ba-p/608004).
 
@@ -59,7 +63,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkid=844893).
+1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855) and [Exchange 2010/2013/2016/EXO Public Folders to Office365 Pre-Migration Scripts](https://www.microsoft.com/download/details.aspx?id=100414).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -106,13 +110,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
 1. Once your migration is complete, it will take some time for DNS caches across the Internet to direct messages to your mail-enabled public folders in their new location in Exchange Online. You can ensure that your newly migrated mail-enabled public folders receive messages during this DNS transition period by creating an accepted domain with a well-known name. To do this, run the following command in your Exchange on-premises environment. In this example, `target domain` is your Office 365 or Exchange Online domain, for which a send connector has already been configured by the Hybrid Configuration Wizard.
 
-   ```
+   ```PowerShell
    New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
    ```
 
    **Example**:
 
-   ```
+   ```PowerShell
    New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName "contoso.mail.onmicrosoft.com" -DomainType InternalRelay
    ```
 
@@ -120,13 +124,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
    To check if the accepted domain is already present in your on-premises environment, run the following:
 
-   ```
+   ```PowerShell
    Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
    ```
 
    To rename the accepted domain to `PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99`, run the following:
 
-   ```
+   ```PowerShell
    Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
    ```
 
@@ -137,13 +141,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
    a. To locate public folders that have a backslash in the name, run the following command:
 
-      ```
+      ```PowerShell
       Get-PublicFolder -Recurse -ResultSize Unlimited | Where {$_.Name -like "*\*" -or $_.Name -like "*/*"} | Format-List Name, Identity, EntryId
       ```
 
    b. If any public folders are returned, you can rename them by running the following command:
 
-      ```
+      ```PowerShell
       Set-PublicFolder -Identity "<public folder EntryId>" -Name "<new public folder name>"
       ```
 
@@ -153,13 +157,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
    a. Run the following command to check for any previous migrations, and the status of those migrations:
 
-      ```
+      ```PowerShell
       Get-OrganizationConfig | Format-List  PublicFolderMailboxesLockedForNewConnections, PublicFolderMailboxesMigrationComplete
       ```
 
    b. If any of the above is returned with a value set to `$true`, make them `$false` by running:
 
-      ```
+      ```PowerShell
       Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false
       ```
 
@@ -170,25 +174,25 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
    - Run the following command to take a snapshot of the original source folder structure.
 
-     ```
+     ```PowerShell
      Get-PublicFolder -Recurse -ResultSize Unlimited | Export-CliXML OnPrem_PFStructure.xml
      ```
 
    - Run the following command to take a snapshot of public folder statistics such as item count, size, and owner.
 
-     ```
+     ```PowerShell
      Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML OnPrem_PFStatistics.xml
      ```
 
    - Run the following command to take a snapshot of public folder permissions.
 
-     ```
+     ```PowerShell
      Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User,AccessRights -ExpandProperty AccessRights | Export-CliXML OnPrem_PFPerms.xml
      ```
 
    - Run the following command to take a snapshot of your mail-enabled public folders:
 
-     ```
+     ```PowerShell
      Get-MailPublicFolder -ResultSize Unlimited | Export-CliXML OnPrem_MEPF.xml
      ```
 
@@ -217,13 +221,13 @@ In Exchange Online PowerShell, do the following steps:
 
    The following example will discover any existing batch migration requests:
 
-   ```
+   ```PowerShell
    Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
    ```
 
    The following example removes any existing public folder batch migration requests:
 
-   ```
+   ```PowerShell
    Remove-MigrationBatch <name of migration batch> -Confirm:$false
    ```
 
@@ -231,26 +235,26 @@ In Exchange Online PowerShell, do the following steps:
 
    a. In Exchange Online PowerShell, run the following command to see if any public folders mailboxes exist:
 
-      ```
+      ```PowerShell
       Get-Mailbox -PublicFolder
       ```
 
    b. If the command doesn't return any public folder mailboxes, continue to [Step 3: Generate the .csv files](#step-3-generate-the-csv-files). If the command does return any public folders mailboxes, run the following command to see if any public folders exist:
 
-      ```
+      ```PowerShell
       Get-PublicFolder -Recurse
       ```
 
 3. If you do have any public folders in Office 365 or Exchange Online, run the following PowerShell command to remove them (after confirming that they are not needed). Make sure that you've saved any information within these public folders before deleting them, because all information will be permanently deleted when you remove the public folders.
 
-   ```
+   ```PowerShell
    Get-MailPublicFolder -ResultSize Unlimited | where {$_.EntryId -ne $null}| Disable-MailPublicFolder -Confirm:$false
    Get-PublicFolder -GetChildren \ -ResultSize Unlimited | Remove-PublicFolder -Recurse -Confirm:$false
    ```
 
 4. After the public folders are removed, run the following commands to remove all public folder mailboxes:
 
-   ```
+   ```PowerShell
    $hierarchyMailboxGuid = $(Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid
    Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -ne $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
    Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -eq $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
@@ -263,13 +267,13 @@ Use the previously downloaded scripts to generate the .csv files that will be us
 
 1. From the Exchange Management Shell (on premises), run the `Export-ModernPublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. You must have local administrator permissions to run this script. The resulting file will contain three columns: **FolderName**, **FolderSize**, and **DeletedItemSize**. The values for the **FolderSize** and **DeletedItemSize** columns will be displayed in bytes. For example, **\PublicFolder01,10240, 100** means the public folder in the root of your hierarchy named PublicFolder01 is 10240 bytes, or 10.240 MB, in size, and there are 100 bytes of recoverable items in it.
 
-   ```
+   ```PowerShell
    .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
    ```
 
    **Example**:
 
-   ```
+   ```PowerShell
    .\Export-ModernPublicFolderStatistics.ps1 stats.csv
    ```
 
@@ -277,7 +281,7 @@ Use the previously downloaded scripts to generate the .csv files that will be us
 
 Note that the file generated by `ModernPublicFolderToMailboxMapGenerator.ps1` will not contain the name of every public folder in your organization. It will contain references to the parent folders of larger folder trees, or the names of folders which themselves are significantly large. You can think of this file as an "exception" file used to make sure certain folder trees and larger folders get placed into specific public folder mailboxes. It is normal to not see every one of your public folders in this file. Child folders of any folder listed in this mapping file will also be migrated to the same public folder mailbox as their parent folder (unless explicitly mentioned on another line within the mapping file that directs them to a different public folder mailbox).
 
-```
+```PowerShell
 .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
 ```
 
@@ -291,12 +295,12 @@ Note that the file generated by `ModernPublicFolderToMailboxMapGenerator.ps1` wi
 
 **Example**:
 
-```
+```PowerShell
 .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 ```
 
 > [!NOTE]
-> We don't support the migration of public folders to Exchange Online when there are more than 100 unique public folder mailboxes in Exchange Online. During migration you can have up to 100 public folder mailboxes enabled to serve hierarchy.
+> We don't support the migration of public folders to Exchange Online when there are more than 100 unique public folder mailboxes in Exchange Online. During migration, you can have up to 100 public folder mailboxes enabled.
 
 ## Step 4: Create the public folder mailboxes in Exchange Online
 
@@ -304,7 +308,7 @@ Next, in Exchange Online PowerShell, create the target public folder mailboxes t
 
 Run the following script to create the target public folder mailboxes. The script will create a target mailbox for each mailbox in the .csv file that you generated previously in *Step 3: Generate the .csv files*, when you ran the `ModernPublicFoldertoMailboxMapGenerator.ps1` script.
 
-```powershell
+```PowerShell
 $mappings = Import-Csv <Folder-to-mailbox map path>
 $primaryMailboxName = ($mappings | Where-Object FolderPath -eq "\" ).TargetMailbox;
 New-Mailbox -HoldForMigration:$true -PublicFolder -IsExcludedFromServingHierarchy:$false $primaryMailboxName
@@ -319,7 +323,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
 1. From any of your Exchange 2016 or Exchange 2019 servers hosting public folder mailboxes, execute the following script. This script will synchronize mail-enabled public folders from your local Active Directory to Exchange Online. Make sure that you have downloaded the latest version of this script and that you're running it from Exchange Management Shell.
 
-   ```
+   ```PowerShell
    .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
@@ -327,37 +331,50 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
 
-2. In Exchange Online PowerShell, pass the credential of a user who has administrator permissions in the Exchange 2016 or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
+2. In Exchange Online PowerShell, pass the credential of a user who has administrator permissions in the Exchange 2013, Exchange 2016, or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
 
-   ```
+   ```PowerShell
    $Source_Credential = Get-Credential <source_domain>\<PublicFolder_Administrator_Account>
    ```
 
-3. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
+3. In Exchange Online Powershell, pass the Internet routable fully qualified domain name of your Exchange Mailbox Replication Service (MRS) into the variable `$Source_RemoteServer`. The migration request that you run in Exchange Online will use this remote server to copy the public folder content to Exchange Online.
 
+   ```PowerShell
+   $Source_RemoteServer = "<MRS proxy endpoint server>"
    ```
-   (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
+
+4. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
+
+   ```PowerShell
+   (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID
    ```
 
    Note the output of this command. You will need it in the next step. For example:
 
    > 91edc6dd-478a-497c-8731-b0b793f5a986
 
-4. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
+5. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
-   ```
+   ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
-   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <HierarchyMailboxGUID> -AutoStart -NotificationEmails <email addresses for migration notifications>
+   $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
+   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart -NotificationEmails <email addresses for migration notifications>
    ```
-
-   > [!NOTE]
-   > Separate multiple email addresses with commas.
 
    Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
 
-5. Finally, start the migration using the following command in Exchange Online PowerShell:
+   Separate multiple email addresses with commas.
 
-   ```
+   > [!Note]
+   > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
+   >
+   > ```PowerShell
+   > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -AutoStart -NotificationEmails <email addresses for migration notifications>
+   > ```
+
+6. Finally, start the migration using the following command in Exchange Online PowerShell:
+
+   ```PowerShell
    Start-MigrationBatch PublicFolderMigration
    ```
 
@@ -385,7 +402,7 @@ You can use the following cmdlets to monitor your migration:
 
 ## Step 6: Lock down the public folders on the Exchange on-premises server (public folder downtime required)
 
-Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete. 
+Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange Server public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
 
 > [!NOTE]
 > The final sync might take a substantial amount of time, depending on the changes made to the source environment, the size of the public folder deployment, server capacity, and so on. If the folder hierarchy had many corrupt ACLs that were not cleaned up before the migration, there might be a significant delay in completion. It is recommended that you plan for a minimum of 48 hours of downtime for the final sync to complete.
@@ -402,7 +419,7 @@ The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on indi
 
 After you have confirmed that the batch and all migration requests have successfully synced, in your on-premises environment, run the following command to lock the Exchange Server public folders for finalization.
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 ```
 
@@ -413,7 +430,7 @@ If your organization has public folder mailboxes on multiple Exchange servers, y
 
 Run the following command in your on-premises environment to ensure that public folders are locked:
 
-```
+```PowerShell
 Get-PublicFolder \
 ```
 
@@ -423,19 +440,19 @@ The expected result if public folders are locked is:
 
 ## Step 7: Finalize the public folder migration (public folder downtime required)
 
-You need to check the following items before you can complete your public folder migration: 
+You need to check the following items before you can complete your public folder migration:
 
 1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange environment. To do this, use the **Get-MoveRequest** and **Get-PublicFolderMoveRequest** cmdlets to list any existing public folder moves. If there are any moves in progress, or in the **Completed** state, remove them.
 
 2. At this point, we recommend re-running the following script to ensure that any new mail-enabled public folders are synchronized with Exchange Online:
 
-   ```
+   ```PowerShell
    .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
 3. To complete the public folder migration, run the following command in Exchange Online PowerShell:
 
-   ```
+   ```PowerShell
    Complete-MigrationBatch PublicFolderMigration
    ```
 
@@ -452,7 +469,7 @@ Once the public folder migration is complete, take the following steps to test t
 
 1. In Exchange Online PowerShell, configure some test user mailboxes to use one of your newly migrated public folder mailboxes as their default public folder mailbox:
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity <test user> -DefaultPublicFolderMailbox <public folder mailbox identity>
    ```
 
@@ -472,7 +489,7 @@ Once the public folder migration is complete, take the following steps to test t
 
 3. Run the following command in Exchange Online PowerShell to unlock your public folders in Exchange Online. After you run the command, it may take approximately 15 to 30 minutes for the changes to take effect. Once Outlook is aware of the changes, it might prompt your users to restart Outlook a couple of times.
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -RemotePublicFolderMailboxes $Null -PublicFoldersEnabled Local
    ```
 
@@ -482,19 +499,19 @@ To enable emails to mail-enabled public folders on-premises, perform the followi
 
 1. Run the following command in your on-premises environment, to take a backup of the emails in the queue that were sent to your mail-enabled public folders. This backup can be used in scenarios where email delivery to mail-enabled public folders failed for any reason:
 
-   ```
-   Get-TransportService | Get-Message -ResultSize Unlimited| ?{$_.Recipients -like "*PF.InTransit*"} | ForEach {suspend-message $_.Identity -Confirm:$false;$Temp="C:\MEPFQ\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp;Resume-message $_.Identity -Confirm:$false}
+   ```PowerShell
+   $Server=Get-TransportService;ForEach ($t in $server) {Get-Message -Server $t -ResultSize Unlimited| ?{$_.Recipients -like "*PF.InTransit*"} | ForEach-Object {Suspend-Message $_.Identity -Confirm:$False; $Temp="C:\ExportFolder\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp;Resume-message $_.Identity -Confirm:$false}}
    ```
 
 2. In your on-premises environment, run the following script to make sure all emails to mail-enabled public folders are correctly routed to Exchange Online. The script will stamp mail-enabled public folders with an `ExternalEmailAddress` that points them to their Exchange Online counterparts:
 
-   ```
+   ```PowerShell
    .\SetMailPublicFolderExternalAddress.ps1 -ExecutionSummaryFile:mepf_summary.csv
    ```
 
 3. If your testing is successful, in your on-premises environment, run the following command to indicate that the public folder migration is complete:
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFolderMailboxesMigrationComplete:$true -PublicFoldersEnabled Remote
    ```
 
@@ -504,25 +521,25 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you t
 
 1. In Exchange Online PowerShell, run the following command to take a snapshot of the new folder structure:
 
-   ```
+   ```PowerShell
    Get-PublicFolder -Recurse -ResultSize Unlimited | Export-CliXML Cloud_PFStructure.xml
    ```
 
 2. In Exchange Online PowerShell, run the following command to take a snapshot of the public folder statistics, including item count, size, and owner:
 
-   ```
+   ```PowerShell
    Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderStatistics | Export-CliXML Cloud_PFStatistics.xml
    ```
 
 3. In Exchange Online PowerShell, run the following command to take a snapshot of the permissions:
 
-   ```
+   ```PowerShell
    Get-PublicFolder -Recurse -ResultSize Unlimited | Get-PublicFolderClientPermission | Select-Object Identity,User,AccessRights | Export-CliXML Cloud_PFPerms.xml
    ```
 
 4. Exchange Online PowerShell, run the following command to take a snapshot of the mail-enabled public folders:
 
-   ```
+   ```PowerShell
    Get-MailPublicFolder -ResultSize Unlimited | Export-CliXML Cloud_MEPF.xml
    ```
 
@@ -534,10 +551,10 @@ The following are common public folder migration issues that you may encounter i
 
 - Permissions for the root public folder and the EFORMS REGISTRY folder will not be migrated to Exchange Online, and you will have to manually apply them in Exchange Online. To do this, run the following command in your Exchange Online PowerShell. Run the command once for each permission entry that is present on-premises but missing in Exchange Online:
 
-  ```
+  ```PowerShell
   Add-PublicFolderClientPermission "\" -User <user> -AccessRights <access rights>
   Add-PublicFolderClientPermission "\NON_IPM_SUBTREE\EFORMS REGISTRY" -User <user> -AccessRights <access rights>
-  ``
+  ```
 
 - There is a known issue where some public folder migrations will fail if some public folder mailboxes are not serving the public folder hierarchy. This means the `IsExcludedFromServingHierarchy` parameter on one or more mailboxes is set to `$true`. To avoid this, set all mailboxes in Exchange Online to serve the hierarchy.
 
@@ -545,43 +562,43 @@ The following are common public folder migration issues that you may encounter i
 
   To see which public folders have Send As permissions on-premises:
 
-  ```
+  ```PowerShell
   Get-MailPublicFolder | Get-ADPermission | ?{$_.ExtendedRights -like "*Send-As*"}
   ```
 
   To see which public folders have Send on Behalf permissions on-premises:
 
-  ```
+  ```PowerShell
   Get-MailPublicFolder | ?{$_.GrantSendOnBehalfTo -ne "$null"} | Format-Table name,GrantSendOnBehalfTo
   ```
 
   To add Send As permission to a mail-enabled public folder in Exchange Online, in Exchange Online PowerShell type:
 
-  ```
+  ```PowerShell
   Add-RecipientPermission -Identity <mail-enabled public folder primary SMTP address> -Trustee <name of user to be assigned permission> -AccessRights SendAs
   ```
 
   **Example**:
 
-  ```
+  ```PowerShell
   Add-RecipientPermission -Identity send1 -Trustee Exo1 -AccessRights SendAs
   ```
 
   To add Send on Behalf permission to a mail-enabled public folder in Exchange Online, in Exchange Online PowerShell type:
 
-  ```
+  ```PowerShell
   Set-MailPublicFolder -Identity <name of public folder> -GrantSendOnBehalfTo <user or comma-separated list of users>
   ```
 
   **Example**:
 
-  ```
+  ```PowerShell
   Set-MailPublicFolder send2 -GrantSendOnBehalfTo exo1,exo2
   ```
 
 - Having more than 10,000 folders under the "\NON_IPM_SUBTREE\DUMPSTER_ROOT" folder can cause the migration to fail. Therefore, check the "\NON_IPM_SUBTREE\DUMPSTER_ROOT" folder to see if there are more than 10,000 folders directly under it (immediate children). You can use the following command to find the number of public folders in this location:
 
-  ```
+  ```PowerShell
   (Get-PublicFolder -GetChildren "\NON_IPM_SUBTREE\DUMPSTER_ROOT").Count
   ```
 
@@ -589,7 +606,7 @@ The following are common public folder migration issues that you may encounter i
 
 - Migration jobs are not making progress or are stalled. This can happen if there are too many jobs running in parallel, causing jobs to fail with intermittent errors. You can reduce the number of concurrent jobs by modifying `MaxConcurrentMigrations` and  `MaxConcurrentIncrementalSyncs` to a smaller number. Use the following example to set these values:
 
-  ```
+  ```PowerShell
   Set-MigrationEndpoint <PublicFolderEndpoint> -MaxConcurrentMigrations 30 -MaxConcurrentIncrementalSyncs 20 -SkipVerification
   ```
 

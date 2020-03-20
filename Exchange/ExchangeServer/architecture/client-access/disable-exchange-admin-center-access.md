@@ -8,6 +8,8 @@ ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
@@ -53,13 +55,13 @@ Remember, this step disables access to the EAC on the server for internal and ex
 
 To disable access to the EAC on an Exchange server, use the following syntax:
 
-```
+```PowerShell
 Set-ECPVirtualDirectory -Identity "<Server>\ecp (Default Web Site)" -AdminEnabled $false
 ```
 
 This example turns disables access to the EAC on the server named MBX01.
 
-```
+```PowerShell
 Set-ECPVirtualDirectory -Identity "MBX01\ecp (Default Web Site)" -AdminEnabled $false
 ```
 
@@ -67,8 +69,8 @@ Set-ECPVirtualDirectory -Identity "MBX01\ecp (Default Web Site)" -AdminEnabled $
 
 To verify that you've disabled access to the EAC on the server, replace _\<Server\>_ with the name of your Exchange server, and run the following command to verify the value of the **AdminEnabled** property:
 
-```
-Get-ECPVirtualDirectory -Identity "MBX01\ecp (Default Web Site)" | Format-List AdminEnabled
+```PowerShell
+ -Identity "MBX01\ecp (Default Web Site)" | Format-List AdminEnabled
 ```
 
 When you open https://\<servername\>/ecp or from the internal network, your own **Settings** \> **Options** page in Outlook on the web opens instead of the EAC.
@@ -81,13 +83,13 @@ Choose either of the following options.
 
 The default value of the **AdminEnabled** property is `True` on the default EAC virtual directory. To confirm this value on the second server, replace _\<Server\>_ with the name of the server, and run the following command:
 
-```
+```PowerShell
 Get-ECPVirtualDirectory -Identity "<Server>\ecp (Default Web Site)" | Format-List AdminEnabled
 ```
 
 If the value is `False`, replace _\<Server\>_ with the name of the server, and run the following command:
 
-```
+```PowerShell
 Set-ECPVirtualDirectory -Identity "<Server>\ecp (Default Web Site)" -AdminEnabled $true
 ```
 
@@ -216,11 +218,11 @@ To learn how to open the Exchange Management Shell in your on-premises Exchange 
 
 Replace _\<Server\>_ with the name of your server, and run the following commands to create the new EAC and Outlook on the web virtual directories for the new web site.
 
-```
+```PowerShell
 New-EcpVirtualDirectory -Server <Server> -Role ClientAccess -WebSiteName EAC_Secondary -Path "C:\inetpub\EAC_Secondary\ecp"
 ```
 
-```
+```PowerShell
 New-OwaVirtualDirectory -Server <Server> -Role ClientAccess -WebSiteName EAC_Secondary -Path "C:\inetpub\EAC_Secondary\owa"
 ```
 
@@ -232,11 +234,11 @@ New-OwaVirtualDirectory -Server <Server> -Role ClientAccess -WebSiteName EAC_Sec
 
 **Note**: To restart IIS from the command line, open an elevated command prompt (a Command Prompt window that you opened by selecting **Run as administrator**) and run the following commands:
 
-```
+```console
 net stop was /y
 ```
 
-```
+```console
 net start w3svc
 ```
 

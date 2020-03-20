@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 139b2ccd-28c5-46c0-9050-777f4f59aade
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change the audio codec in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -57,12 +59,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to G.711.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec G711
 ```
 
 This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to WMA.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec Wma
 ```

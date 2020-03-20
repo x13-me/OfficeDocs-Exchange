@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Outlook on the web for a mailbox
 ms.collection: 
 - exchange-online
@@ -65,13 +67,13 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables Outlook on the web for the mailbox of Yan Li.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Yan Li" -OWAEnabled $false
 ```
 
 This example enables Outlook on the web for the mailbox of Elly Nkya.
 
-```
+```PowerShell
 Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
 ```
 
@@ -91,7 +93,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox <identity>
   ```
 

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f412ce6c-74dc-4d77-93ab-362c37414015
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a sharing policy in Exchange Online
 ms.collection: 
 - exchange-online
@@ -66,13 +68,13 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
 
-  ```
+  ```PowerShell
   New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
   ```
 
 - This example creates the sharing policy ContosoWoodgrove for two different domains (contoso.com and woodgrovebank.com) with different sharing settings configured for each domain. The policy is disabled.
 
-  ```
+  ```PowerShell
   New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail' -Enabled $false
   ```
 
@@ -82,7 +84,7 @@ For detailed syntax and parameter information, see [New-SharingPolicy](https://d
 
 To verify that you have successfully created the sharing policy, run the following command to view the sharing policy information.
 
-```
+```PowerShell
 Get-SharingPolicy <policy name> | format-list
 ```
 

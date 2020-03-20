@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable MAPI for a mailbox
 ms.collection: 
 - exchange-online
@@ -62,13 +64,13 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables MAPI for the mailbox of Ken Sanchez.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Ken Sanchez" -MAPIEnabled $false
 ```
 
 This example enables MAPI for the mailbox of Esther Valle.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
@@ -88,7 +90,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
 

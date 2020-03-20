@@ -10,6 +10,8 @@ title: Assign certificates to Exchange Server services
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -64,13 +66,13 @@ The available Exchange services are described in the following table.
 
 To assign a certificate to Exchange services, use the following syntax:
 
-```
+```PowerShell
 Enable-ExchangeCertificate -Thumbprint <Thumbprint> -Services <Service1>,<Service2>... [-Server <ServerIdentity>]
 ```
 
 This example assigns the certificate that has the thumbprint value `434AC224C8459924B26521298CE8834C514856AB` to the POP, IMAP, IIS, and SMTP services.
 
-```
+```PowerShell
 Enable-ExchangeCertificate -Thumbprint 434AC224C8459924B26521298CE8834C514856AB -Services POP,IMAP,IIS,SMTP
 ```
 
@@ -84,6 +86,6 @@ To verify that you have successfully assigned a certificate to one or more Excha
 
 - In the Exchange Management Shell on the server where you installed the certificate, run the following command to verify the Exchange services for the certificate:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,Services
   ```

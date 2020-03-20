@@ -10,6 +10,8 @@ title: Configure certificate based authentication in Exchange 2016
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -51,7 +53,7 @@ All Exchange servers that share the same namespace and URLs need to use the same
 
 In the Exchange Management Shell, run the following command:
 
-```
+```powershell
 Install-WindowsFeature Web-Client-Auth
 ```
 
@@ -101,15 +103,15 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
 
  To perform these procedures on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/owa/" -section:system.webserver/security/access /sslFlags:"Ssl, SslRequireCert" /commit:apphost
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/ecp/" -section:system.webserver/security/access /sslFlags:"Ssl, SslRequireCert" /commit:apphost
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/security/access /sslFlags:"Ssl, SslRequireCert" /commit:apphost
 ```
 
@@ -119,7 +121,7 @@ After you require client certificates for authentication, you need to disable al
 
 1. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the Outlook on the web virtual directory:
 
-    ```
+    ```powershell
     Set-OwaVirtualDirectory "<ServerName>\owa (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false -OAuthAuthentication $false
     ```
 
@@ -127,7 +129,7 @@ After you require client certificates for authentication, you need to disable al
 
 2. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the EAC virtual directory:
 
-    ```
+    ```powershell
     Set-EcpVirtualDirectory "<ServerName>\ecp (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false
     ```
 
@@ -135,7 +137,7 @@ After you require client certificates for authentication, you need to disable al
 
 3. Replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the ActiveSync virtual directory:
 
-    ```
+    ```powershell
     Set-ActiveSyncVirtualDirectory "<ServerName>\Microsoft-Server-ActiveSync (Default Web Site)" -BasicAuthEnabled $false -WindowsAuthEnabled $false
     ```
 
@@ -178,15 +180,15 @@ After you require client certificates for authentication, you need to disable al
 
  **Note**: To perform these procedures on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/owa/" -section:system.webserver/security/authentication/clientCertificateMappingAuthentication /enabled:"True" /commit:apphost
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/ecp/" -section:system.webserver/security/authentication/clientCertificateMappingAuthentication /enabled:"True" /commit:apphost
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/security/authentication/clientCertificateMappingAuthentication /enabled:"True" /commit:apphost
 ```
 
@@ -198,7 +200,7 @@ You only need to perform this step if you aren't using AD CS to issue the client
 
 2. On any domain member server (for example, a domain controller or an Exchange server), open an elevated command prompt run the following command:
 
-    ```
+    ```console
     %windir%\system32\certutil.exe -enterprise -addstore NTAuth "C:\Data\CARoot.cer"
     ```
 
@@ -240,14 +242,14 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
 
  **Note**: To perform these procedures on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/owa/" -section:system.webserver/serverRuntime /uploadReadAheadSize:49152
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/ecp/" -section:system.webserver/serverRuntime /uploadReadAheadSize:49152
 ```
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/serverRuntime /uploadReadAheadSize:49152
 ```

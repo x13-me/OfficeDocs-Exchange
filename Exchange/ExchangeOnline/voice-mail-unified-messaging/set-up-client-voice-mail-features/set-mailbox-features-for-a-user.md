@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a56bfd75-7bc5-49b9-b098-06855a720dcd
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set mailbox features for an Outlook Voice Access user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,7 +53,7 @@ For additional management tasks related to UM users, see [Set mailbox features f
 
 This example enables calendar and email access using the TUI for a UM-enabled user named Tony Smith.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail True -OperatorNumber 111111 -DisableMissedCallNotification False -AnonCallBlock True
 ```
 

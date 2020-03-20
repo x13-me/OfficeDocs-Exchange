@@ -3,6 +3,8 @@ title: "Troubleshoot a hybrid deployment"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -94,7 +96,7 @@ To verify that the certificate for hybrid mail transport is correctly configured
 
 2. In the Exchange Management Shell, run the following command.
 
-   ```
+   ```PowerShell
    Get-ExchangeCertificate| format-list
    ```
 
@@ -118,7 +120,7 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
 
   To verify that the Receive connectors on the Exchange servers listed when you run the `(Get-HybridConfiguration).ReceivingTransportServers.` have the correct bindings, run the following command in the Exchange Management Shell.
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector -Server <Server Name> | Format-Table Identity, Bindings
   ```
 

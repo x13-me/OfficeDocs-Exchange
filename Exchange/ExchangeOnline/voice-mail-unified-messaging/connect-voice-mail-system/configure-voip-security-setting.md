@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the VoIP security setting in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -58,18 +60,18 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example configures a UM dial plan named `MySecureDialPlan` to encrypt both SIP and RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Secured
 ```
 
 This example configures a UM dial plan named `MySecureDialPlan` to encrypt SIP but not encrypt RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity SIPsecured
 ```
 
 This example configures a UM dial plan named `MySecureDialPlan` to not encrypt SIP and RTP traffic.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MySecureDialPlan -VoIPSecurity Unsecured
 ```

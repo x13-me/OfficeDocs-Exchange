@@ -8,6 +8,8 @@ ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
 ms.reviewer: 
 title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -67,7 +69,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 1. Use Notepad to open the file `%ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css`. An easy way to do this is to press the Windows key + R, and run the following command:
 
-   ```
+   ```console
    Notepad.exe %ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css
    ```
 

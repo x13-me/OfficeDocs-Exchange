@@ -8,6 +8,8 @@ ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 ms.reviewer:
 title: Create a Send connector to route outbound mail through a smart host
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -95,7 +97,7 @@ After you create the Send connector, it appears in the Send connector list.
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    New-SendConnector -Name <Name> -AddressSpaces * -Custom -DnsRoutingEnabled $false -SmartHosts <SmartHost1>[,<SmartHost2>...] [-SourceTransportServer <fqdn1>,<fqdn2>...]
    ```
 
@@ -111,7 +113,7 @@ After you create the Send connector, it appears in the Send connector list.
 
    - The Send connector isn't scoped to the local Active Directory site. We aren't using the _IsScopedConnector_ parameter, and the default value is `$false`. The Send connector is useable by all Exchange transport servers in the Active Directory forest.
 
-   ```
+   ```PowerShell
    New-SendConnector -Name "Smart host to Internet" -AddressSpaces * -Custom -DNSRoutingEnabled $false -SmartHosts 192.168.3.2 -SmartHostAuthMechanism None
    ```
 

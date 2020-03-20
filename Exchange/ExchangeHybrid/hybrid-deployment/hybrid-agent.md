@@ -3,6 +3,8 @@ title: "Microsoft Hybrid Agent"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -51,9 +53,6 @@ The SHCW can download and install the agent MSI automatically. Using this method
 
   - Be a member of the local Administrators group on the computer where you're installing the Hybrid Agent.
 
-> [!NOTE]
-> The account you use to connect to your Office 365 tenant must be a Global Administrator.
-
 ## Port and protocol requirements
 
 - Outbound ports HTTPS (TCP) 443 and 80 must be open between the computer that has the Hybrid Agent installed and the Internet, as shown here: [https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-enable](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-enable).
@@ -92,7 +91,7 @@ If you encounter any problems or need to troubleshoot, see [How to troubleshoot 
 
 Keep the following issues in mind before you install the Hybrid Agent:
 
-- [Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) is not supported with the Hybrid Agent. Customers will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover, EWS, MAPI and OAB endpoints for hybrid Modern Authentication to function with various Outlook clients.
+- [Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) is not supported with the Hybrid Agent. Customers will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover, EWS, ActiveSync, MAPI and OAB endpoints for hybrid Modern Authentication to function with various Outlook clients.
 
 - Team's Calendaring features that require access to on premises mailboxes are not supported with the Hybrid Agent. You will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover and EWS to support these features.
 
@@ -122,13 +121,13 @@ You must run the HCW from the computer where you want the agent installed. After
 
    3. Import the cmdlets by running the following command:
 
-      ```
+      ```PowerShell
       Import-Module .\HybridManagement.psm1
       ```
 
    4. Next run the following command to verify the computer where you're installing can reach out to all required endpoints for the Hybrid Agent installation and Hybrid Configuration wizard setup.
 
-      ```
+      ```PowerShell
       Test-HybridConnectivity -TestO365Endpoints
       ```
 
@@ -138,14 +137,14 @@ You must run the HCW from the computer where you want the agent installed. After
 
 2. To allow installation of the Hybrid Agent and perform mailbox migrations to and from your Office 365 tenant, enable the Mailbox Replication service (MRS) proxy on the EWS virtual directory by running the following command:
 
-   ```
+   ```PowerShell
    Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSProxyEnabled $true
    ```
 
    > [!NOTE]
    > If you don't complete this step before you run the HCW, the HCW will enable MRS proxy. However, we recommend that you complete this step before you run the HCW to ensure the IIS cache has time to clear before HCW validates the endpoint.
 
-3. Go to **Programs and Features** in Conrol Panel and verify that a previous version of the Microsoft Office 365 Hybrid Configuration wizard is not already installed. If it is, uninstall it.
+3. Go to **Programs and Features** in Control Panel and verify that a previous version of the Microsoft Office 365 Hybrid Configuration wizard is not already installed. If it is, uninstall it.
 
 4. Install .NET Framework version 4.6.2 on the computer where the HCW is being run. You might need to install a later version of .NET Framework depending on the version of Exchange you have installed. Alternatively, if this version isn't installed, the HCW prompts you to install it or upgrade the version already installed on your computer.
 
@@ -190,14 +189,14 @@ You can view the specific values configured for each of these by running **Get-M
 
 The following example shows the output that you might see when you run the **Get-MigrationEndpoint** and **Get-OrganizationRelationship** cmdlets:
 
-```
+```PowerShell
 Get-MigrationEndpoint | Format-List Identity,RemoteServer
 
 Identity : Hybrid Migration Endpoint - EWS (Default Web Site)
 RemoteServer : 087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net
 ```
 
-```
+```PowerShell
 Get-OrganizationRelationship | Format-List Name,TargetSharingEpr
 
 Name : O365 to On-premises - c6d22e11-2340-4432-9122-19097bacf0c1
@@ -242,7 +241,7 @@ A second option for installing additional agents is outside the HCW itself and i
 
 3. From that computer, open a Windows Command console as Administrator and run the following command to install the Hybrid Agent:
 
-   ```
+   ```PowerShell
    Msiexec /i MSHybridService.msi
    ```
 
@@ -276,17 +275,17 @@ You can repeat this step on each computer where you would like an additional Hyb
 
 ### Option 2: Get status via the Hybrid Management PowerShell Module
 
-With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](https://go.microsoft.com/fwlink/?LinkID=746217) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
+With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](https://www.powershellgallery.com/packages/PackageManagement/) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
 
 To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
 
-```
+```PowerShell
 Import-module .\HybridManagement.psm1
 ```
 
 After that you can run the following command to view agent status:
 
-```
+```PowerShell
 Get-HybridAgent -Credential (Get-Credential)
 ```
 
@@ -295,7 +294,7 @@ The output of the command looks like this:
 ![Get-HybridAgent results](../media/get-hybridagent-output.png)
 
 > [!NOTE]
-> The 'id' value in the results is the agent identity and not your unique tenant guid assigned to the route.
+> The **id** value in the results is the agent identity and not your unique tenant guid assigned to the route.
 
 ## Direct your Hybrid Agent(s) to the load balancer instead of a specific server
 
@@ -309,7 +308,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - From the `TargetSharingEPR` value:
 
-     ```
+     ```PowerShell
      Get-OrganizationRelationship ((Get-OnPremisesOrganization).OrganizationRelationship) | Select-Object TargetSharingEpr
      ```
 
@@ -319,7 +318,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - From the MRS configuration:
 
-     ```
+     ```PowerShell
      Get-MigrationEndpoint "Hybrid Migration Endpoint - EWS (Default Web Site)" | Select-Object RemoteServer
      ```
 
@@ -333,7 +332,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    - *appId*: 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 in this example (your value will be different).
 
-   ```
+   ```PowerShell
    Update-HybridApplication -targetUri "https://myloadbalancer.com" -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential (Get-Credential)
    ```
 
@@ -369,7 +368,8 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Add the object **Microsoft AD App Proxy Connector** and the **\# requests** counter to your view.
 
-![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    ![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    
 
 ### Migration
 
@@ -377,7 +377,7 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Replace \<your customguid\> with the unique endpoint GUID value as described in [Direct your Hybrid Agent(s) to the load balancer instead of a specific server](#direct-your-hybrid-agents-to-the-load-balancer-instead-of-a-specific-server) and run the following command:
 
-   ```
+   ```PowerShell
    Test-MigrationServerAvailability -ExchangeRemoteMove:$true -RemoteServer '<your customguid>.resource.mailboxmigration.his.msappproxy.net' -Credentials (Get-Credential)
    ```
 

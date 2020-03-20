@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a custom management scope for In-Place eDiscovery searches
 ms.collection: 
 - exchange-online
@@ -54,13 +56,13 @@ This procedure uses Exchange Online PowerShell commands to create a custom scope
 
 1. Run this command to get and save the properties of the Ottawa Users group to a variable, which is used in the next command.
 
-   ```
+   ```PowerShell
    $DG = Get-DistributionGroup -Identity "Ottawa Users"
    ```
 
 2. Run this command to create a custom management scope based on the membership of the Ottawa Users distribution group.
 
-   ```
+   ```PowerShell
    New-ManagementScope "Ottawa Users eDiscovery Scope" -RecipientRestrictionFilter "MemberOfGroup -eq '$($DG.DistinguishedName)'"
    ```
 
@@ -76,7 +78,7 @@ In the following examples, the Ottawa Users eDiscovery Managers security group w
 
 Run this command to create a new role group that uses the custom scope created in step 2. The command also adds the Legal Hold and Mailbox Search roles, and adds the Ottawa Users eDiscovery Managers security group as members of the new role group.
 
-```
+```PowerShell
 New-RoleGroup "Ottawa Discovery Management" -Roles "Mailbox Search","Legal Hold" -CustomRecipientWriteScope "Ottawa Users eDiscovery Scope" -Members "Ottawa Users eDiscovery Managers"
 ```
 
@@ -106,7 +108,7 @@ You only need to perform this step if you want to let a discovery manager previe
 
 Run this command to add the Ottawa Users eDiscovery Managers security group as a member of the Ottawa Users distribution group.
 
-```
+```PowerShell
 Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Users eDiscovery Managers"
 ```
 
@@ -118,7 +120,7 @@ You only need to perform this step if you want to let a discovery manager copy e
 
 Run this command to add a discovery mailbox named Ottawa Discovery Mailbox as a member of the Ottawa Users distribution group.
 
-```
+```PowerShell
 Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 ```
 
@@ -147,11 +149,11 @@ Here are some ways to verify if you've successfully implemented custom managemen
 
     In the following example, the first command creates a distribution group with closed membership and moderation enabled. The second command hides the group from the shared address book.
 
-    ```
+    ```PowerShell
     New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
     ```
 
-    ```
+    ```PowerShell
     Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
     ```
 
@@ -159,39 +161,39 @@ Here are some ways to verify if you've successfully implemented custom managemen
 
 - Though you can use only distribution group membership as the recipient filter for a custom management scope used for eDiscovery, you can use other recipient properties to add users to that distribution group. Here are some examples of using the **Get-Mailbox** and **Get-Recipient** cmdlets to return a specific group of users based on common user or mailbox attributes.
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
   ```
 
-  ```
+  ```PowerShell
   Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
   ```
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
   ```
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
   ```
 
-  ```
+  ```PowerShell
   Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
   ```
 
 - You can then use the examples from the previous bullet to create a variable that can be used with the **Add-DistributionGroupMember** cmdlet to add a group of users to a distribution group. In the following example, the first command creates a variable that contains all user mailboxes that have the value **Vancouver** for the _Department_ property in their user account. The second command adds these users to the Vancouver Users distribution group.
 
-  ```
+  ```PowerShell
   $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
   ```
 
-  ```
+  ```PowerShell
   $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
   ```
 
 - You can use the **Add-RoleGroupMember** cmdlet to add a member to an existing role group that's used to scope eDiscovery searches. For example, the following command adds the user admin@ottawa.contoso.com to the Ottawa Discovery Management role group.
 
-  ```
+  ```PowerShell
   Add-RoleGroupMember "Vancouver Discovery Management" -Member paralegal@vancouver.contoso.com
   ```
 

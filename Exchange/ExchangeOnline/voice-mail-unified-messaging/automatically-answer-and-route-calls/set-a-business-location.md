@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 19bbc20d-d11e-4e75-9bb4-c5d85cf17fc5
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set a business location in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,6 +51,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the business location on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessLocation 'Redmond'
 ```

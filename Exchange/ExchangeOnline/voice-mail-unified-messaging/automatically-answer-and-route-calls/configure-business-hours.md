@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 96b4be99-af94-4fa4-959a-48413387a044
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure business hours in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -58,6 +60,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example sets the business hours for a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30
 ```

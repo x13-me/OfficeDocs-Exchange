@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Authorize calls for users in a dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -59,6 +61,6 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2, InternationalGroup1, and InternationalGroup2 dialing authorizations on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```

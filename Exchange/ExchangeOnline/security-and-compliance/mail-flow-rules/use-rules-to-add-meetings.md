@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Use mail flow rules to automatically add meetings to calendars in Exchange Online
 ms.collection: 
 - exchange-online
@@ -104,25 +106,25 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 1. To create the mail flow rule that turns regular meeting invitations into Direct to Calendar meeting invitations, use the following syntax:
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar response" -From "<designated sender 1>","<designated sender 2>"... -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-Response" -SetHeaderValue Accept
    ```
 
    This example configures the rule using the dedicated mailbox named Direct to Calendar invites.
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar response" -From "Direct to Calendar invites" -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-Response" -SetHeaderValue Accept
    ```
 
 2. To create the mail flow rule that prevents Direct to Calendar meeting invitations from appearing in the Inbox of recipients, use the following syntax:
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar triage action" -From "<designated sender 1>","<designated sender 2>"... -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-TriageAction" -SetHeaderValue MoveToDeletedItems
    ```
 
    This example configures the rule using the dedicated mailbox named Direct to Calendar invites.
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar triage action" -From "Direct to Calendar invites" -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-TriageAction" -SetHeaderValue MoveToDeletedItems
    ```
 

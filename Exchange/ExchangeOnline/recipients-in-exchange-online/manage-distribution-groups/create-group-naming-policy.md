@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a distribution group naming policy
 ms.collection: 
 - exchange-online
@@ -117,6 +119,6 @@ To verify that you've successfully created a group naming policy, do the followi
 
 - In Windows PowerShell, run the following command to display the group naming policy.
 
-  ```
+  ```PowerShell
   Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```

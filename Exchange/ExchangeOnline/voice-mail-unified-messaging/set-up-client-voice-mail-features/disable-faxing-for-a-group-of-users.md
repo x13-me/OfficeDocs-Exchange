@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1c57c3ba-2b0e-43dd-9b28-43bada1592c5
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable faxing for a group of users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example prevents users who are linked with the UM mailbox policy `MyUMMailboxPolicy` from using inbound faxing.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowFax $false
 ```

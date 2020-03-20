@@ -10,6 +10,8 @@ title: Use unattended mode in Exchange Setup
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -117,7 +119,7 @@ The optional (supporting) command line switches that are available in unattended
 
 3. In the Command Prompt window, use the following syntax:
 
-   ```
+   ```console
    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms [Switches]
    ```
 
@@ -135,7 +137,7 @@ The optional (supporting) command line switches that are available in unattended
 
 This example configures "Fabrikam Ltd" as the Exchange organization name in Active Directory and prepares Active Directory for the version of Exchange that's being installed.
 
-```
+```console
 Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Fabrikam Ltd"
 ```
 
@@ -145,37 +147,37 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 
 - This example installs the first Exchange server (Mailbox server) in the organization, configures "Contoso Corporation" as the Exchange organization name in Active Directory, and installs the Exchange management tools on the local server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Roles:Mailbox /on:"Contoso Corporation"
    ```
 
 - This example installs the Mailbox server role and the management tools in the default folder on the local server in an organization where Active Directory has already been prepared for the version of Exchange that's being installed.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:MB
    ```
 
 - This example installs the Mailbox server role and the management tools in the "C:\Exchange Server" folder on the local server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Role:Mailbox /TargetDir:"C:\Exchange Server"
    ```
 
 - This example installs the Mailbox server role on the local server by using the settings in the ExchangeConfig.txt file.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /AnswerFile:c:\ExchangeConfig.txt
    ```
 
 - This example uses the domain controller named DC01 to read from and write to Active Directory while installing the Mailbox server role and the management tools on the local server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /DomainController:DC01
    ```
 
 - This example updates Exchange Setup with patches from the specified folder, and then installs the Mailbox server role and the management tools on the local server. In Exchange 2016 only, if any UM language packs are located in this folder, the language packs are automatically installed.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /role:Mailbox /UpdatesDir:"C:\ExchangeServer\New Patches"
    ```
 
@@ -183,13 +185,13 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 
 - This example installs the Edge Transport server role and the management tools in the default location on the local server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:EdgeTransport
    ```
 
 - This example installs the Edge Transport server role and the management tools in the specified folder on the local server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:ET /TargetDir:"D:\Exchange Server"
    ```
 
@@ -197,7 +199,7 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 
 This example completely removes Exchange from the local server and removes the server's Exchange configuration from Active Directory.
 
-```
+```console
 Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
 ```
 
@@ -205,7 +207,7 @@ Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
 
 This example removes the provisioned Exchange server object named Exchange03 from Active Directory _before_ Exchange is installed on the server (if Exchange is already installed on the server, the command won't work).
 
-```
+```console
 Setup.exe /IAcceptExchangeServerLicenseTerms /rprs:Exchange03
 ```
 
@@ -218,13 +220,13 @@ For more information, see [Delegate the installation of Exchange servers](delega
 
 - This example installs the Russian and Spain Spanish language packs on the local Exchange 2016 Mailbox server from the specified folder.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /AddUmLanguagePack:ru-RU,es-ES /SourceDir:"D:\UM Language Packs"
    ```
 
 - This example uninstalls the Korean UM language pack from the local Exchange 2016 Mailbox server.
 
-   ```
+   ```console
    Setup.exe /IAcceptExchangeServerLicenseTerms /RemoveUmLanguagePack:ko-KR
    ```
 

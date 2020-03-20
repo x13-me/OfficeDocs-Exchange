@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable single item recovery for a mailbox
 ms.collection: 
 - exchange-online
@@ -40,25 +42,25 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at [Excha
 
 This example enables single item recovery for the mailbox of April Summers.
 
-```
+```PowerShell
 Set-Mailbox -Identity "April Summers" -SingleItemRecoveryEnabled $true
 ```
 
 This example enables single item recovery for the mailbox of Pilar Pinilla and sets the number of days that deleted items are retained to 30 days.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Pilar Pinilla" -SingleItemRecoveryEnabled $true -RetainDeletedItemsFor 30
 ```
 
 This example enables single item recovery for all user mailboxes in the organization.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -SingleItemRecoveryEnabled $true
 ```
 
 This example enables single item recovery for all user mailboxes in the organization and sets the number of days that deleted items are retained to 30 days
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -SingleItemRecoveryEnabled $true -RetainDeletedItemsFor 30
 ```
 
@@ -70,7 +72,7 @@ You might need to disable single item recovery for a user's mailbox. For example
 
 This example disables single item recovery for the mailbox of Ayla Kol.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Ayla Kol" -SingleItemRecoveryEnabled $false
 ```
 
@@ -78,7 +80,7 @@ Set-Mailbox -Identity "Ayla Kol" -SingleItemRecoveryEnabled $false
 
 To verify that you've enabled single item recovery for a mailbox and display the value for how long deleted items will be retained (in days), run the following command.
 
-```
+```PowerShell
 Get-Mailbox <Name> | Format-List SingleItemRecoveryEnabled,RetainDeletedItemsFor
 ```
 

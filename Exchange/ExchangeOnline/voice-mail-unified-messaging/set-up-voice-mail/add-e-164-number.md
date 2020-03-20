@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -66,7 +68,7 @@ This example adds an E.164 number for Tony Smith, a UM-enabled user.
 > [!NOTE]
 > Before you add an E.164 number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to add. To determine the position, use the **$mbx.EmailAddresses** command. The first proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(2)="eum:+14255550123;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

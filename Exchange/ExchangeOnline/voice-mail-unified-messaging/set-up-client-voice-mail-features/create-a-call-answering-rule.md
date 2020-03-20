@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 0976f8f2-3449-44f1-b0d1-20c91622e827
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a call answering rule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -48,7 +50,7 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
 
 This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith with the priority of 2.
 
-```
+```PowerShell
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith
 ```
 
@@ -60,7 +62,7 @@ This example creates the call answering rule `MyCallAnsweringRule` in the mailbo
 
 - Sets the call answering rule to allow callers to interrupt the greeting.
 
-```
+```PowerShell
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1,4255550123,," -Priority 2 -CallersCanInterruptGreeting $true -Mailbox tonysmith
 ```
 
@@ -76,6 +78,6 @@ This example creates the call answering rule `MyCallAnsweringRule` in the mailbo
 
     - Press the 2 key so the Find Me feature will be used for urgent issues, ring extension 23456 first, and then ring extension 45671.
 
-```
+```PowerShell
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith -ScheduleStatus 0x4 - -KeyMappings "1,1,Receptionist,,,,,45678,","5,2,Urgent Issues,23456,23,45671,50,,"
 ```

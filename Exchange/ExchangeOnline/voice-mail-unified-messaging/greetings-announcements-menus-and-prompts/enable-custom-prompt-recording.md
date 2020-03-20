@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f2e5c636-2be9-4d48-b5e7-37913ded62d1
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable custom prompt recording using the telephone user interface in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -59,7 +61,7 @@ To record custom prompts and greetings by using the telephone user interface (TU
 
 7. Run the following cmdlet:
 
-   ```
+   ```PowerShell
    Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
    ```
 

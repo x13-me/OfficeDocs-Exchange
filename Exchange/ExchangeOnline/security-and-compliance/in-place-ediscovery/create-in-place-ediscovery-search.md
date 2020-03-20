@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create an In-Place eDiscovery search
 ms.collection: 
 - exchange-online
@@ -18,8 +20,8 @@ manager: serdars
 
 # Create an In-Place eDiscovery search
 
-> [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/p/?linkid=847843) in the Office 365 Security & Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported.
+> [!IMPORTANT]
+>  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting April 1, 2020 you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting July 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
 
 Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox content, including deleted items and original versions of modified items for users placed on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
 
@@ -102,7 +104,7 @@ This example creates the In-Place eDiscovery search named Discovery-CaseId012 th
 > [!IMPORTANT]
 > If you don't specify additional search parameters when running an In-Place eDiscovery search, all items in the specified source mailboxes are returned in the results. If you don't specify mailboxes to search, all mailboxes in your Exchange or Exchange Online organization are searched.
 
-```
+```PowerShell
 New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 ```
 
@@ -111,7 +113,7 @@ New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/
 
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015.
 
-```
+```PowerShell
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
@@ -144,21 +146,21 @@ You can use the _EstimateOnly_ switch to return only get an estimate of the sear
 
 For example, you would run the following commands to create a new eDiscovery search and then display an estimate of the search results:
 
-```
+```PowerShell
 New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
 To display specific information about the estimated search results from the previous example, you could run the following command:
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
 

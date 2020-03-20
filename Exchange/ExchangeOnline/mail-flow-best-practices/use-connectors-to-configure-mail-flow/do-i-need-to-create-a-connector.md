@@ -3,11 +3,13 @@ localization_priority: Normal
 description: Find your mail flow scenario to see if you need to create a connector for your Exchange Online or Exchange Online Protection organization.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- ms.exch.eac.ConnectorIsConnectorNeeded
 ms.author: v-mapenn
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- ms.exch.eac.ConnectorIsConnectorNeeded
 title: Do I need to create a connector in Exchange Online?
 ms.collection: exchange-online
 audience: ITPro

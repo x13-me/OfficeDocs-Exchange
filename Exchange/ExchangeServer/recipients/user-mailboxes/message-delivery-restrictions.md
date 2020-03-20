@@ -8,6 +8,8 @@ ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.reviewer:
 title: Configure message delivery restrictions for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -75,7 +77,7 @@ The following examples show how to use the Exchange Management Shell to configur
 
 This example configures the mailbox of Robin Wood to accept messages only from the users Lori Penor, Jeff Phillips, and members of the distribution group Legal Team 1.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 ```
 
@@ -84,25 +86,25 @@ Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Ph
 
 This example adds the user named David Pelton to the list of users whose messages will be accepted by the mailbox of Robin Wood.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom @{add="David Pelton"}
 ```
 
 This example configures the mailbox of Robin Wood to require all senders to be authenticated. This means the mailbox will only accept messages sent by other users in your Exchange organization.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RequireSenderAuthenticationEnabled $true
 ```
 
 This example configures the mailbox of Robin Wood to reject messages from the users Joe Healy, Terry Adams, and members of the distribution group Legal Team 2.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFrom "Joe Healy","Terry Adams" -RejectMessagesFromDLMembers "Legal Team 2"
 ```
 
 This example configures the mailbox of Robin Wood to also reject messages sent by members of the group Legal Team 3.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 ```
 
@@ -137,6 +139,6 @@ Or
 
 Run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
 ```

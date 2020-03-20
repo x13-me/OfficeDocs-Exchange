@@ -8,6 +8,8 @@ ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms.reviewer:
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -75,7 +77,7 @@ After you create the Send connector, it appears in the Send connector list. To c
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    New-SendConnector -Name <Name> -AddressSpaces * -Internet [-SourceTransportServer <fqdn1>,<fqdn2>...]
    ```
 
@@ -91,7 +93,7 @@ After you create the Send connector, it appears in the Send connector list. To c
 
    - The Send connector isn't scoped to the local Active Directory site. We aren't using the _IsScopedConnector_ parameter, and the default value is `$false`.
 
-   ```
+   ```PowerShell
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 

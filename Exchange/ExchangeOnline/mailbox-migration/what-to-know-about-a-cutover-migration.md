@@ -2,8 +2,6 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: mattpennathe3rd
-f1_keywords:
-- O365E_ExchSetupMigrStepsCutover
 ms.author: v-mapenn
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
@@ -19,7 +17,11 @@ search.appverid:
 - MBS150
 - BCS160
 audience: Admin
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom: 
+- Adm_O365
+- O365E_ExchSetupMigrStepsCutover
 ms.service: exchange-online
 manager: serdars
 

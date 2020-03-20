@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Include text with the email message sent when a voice message Is received in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -52,6 +54,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example includes the additional text, "Do not forward voice messages to users outside this organization", with voice messages sent to users who are associated with the UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailText "Do not forward voice messages to users outside this organization."
 ```

@@ -3,8 +3,6 @@ localization_priority: Normal
 description: 
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage
 ms.author: v-mapenn
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
 ms.reviewer: 
@@ -12,6 +10,10 @@ title: Configure offline address book distribution properties
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage
 manager: serdars
 ROBOTS: NOINDEX, NOFOLLOW
 
@@ -40,13 +42,13 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 This example sets the polling interval for OAB distribution on the OAB virtual directory OAB (Default Web Site) to six hours.
 
-```
+```PowerShell
 Set-OABVirtualDirectory "OAB (Default Web Site)" -PollInterval 360
 ```
 
 This example sets the external distribution point to https://contoso.com/OAB for the default OAB virtual directory OAB (Default Web Site).
 
-```
+```PowerShell
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 

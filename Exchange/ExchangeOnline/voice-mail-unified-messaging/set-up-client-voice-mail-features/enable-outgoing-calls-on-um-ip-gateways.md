@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c3ad8e53-d37e-499e-b1f1-defb0ba1bd12
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable outgoing calls on UM IP gateways in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -57,6 +59,6 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example enables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $true
 ```

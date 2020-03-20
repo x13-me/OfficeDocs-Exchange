@@ -8,6 +8,8 @@ ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 ms.reviewer:
 title: Queue properties in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

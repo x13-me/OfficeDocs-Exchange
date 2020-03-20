@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View a UM hunt group in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -43,13 +45,13 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 This example displays all the UM hunt groups in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMHuntGroup
 ```
 
 This example displays the details of a UM hunt group named `MyUMHuntGroup` in a formatted list.
 
-```
+```PowerShell
 Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 ```
 

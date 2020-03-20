@@ -8,6 +8,8 @@ ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
 ms.reviewer:
 title: Create shared mailboxes in the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -59,7 +61,7 @@ This example creates the shared mailbox Sales Department and grants Full Access 
 > [!NOTE]
 > This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See [Manage mail-enabled security groups in Exchange Server](../../recipients/mail-enabled-security-groups.md).
 
-```
+```PowerShell
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
 ```
 

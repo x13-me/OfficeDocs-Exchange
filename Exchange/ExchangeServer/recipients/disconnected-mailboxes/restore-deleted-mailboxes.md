@@ -8,6 +8,8 @@ ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms.reviewer:
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -45,7 +47,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox, run the following command:
 
-   ```
+   ```PowerShell
    Get-MailboxDatabase | foreach {Get-MailboxStatistics -Database $_.name} | where {$_.DisplayName -eq "<display name>"} | Format-List DisplayName,Database,DisconnectReason
    ```
 
@@ -93,7 +95,7 @@ Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a
 
 This example connects a deleted user mailbox to a user account that isn't mail enabled. The _Identity_ parameter specifies the display name of the deleted mailbox retained in the mailbox database named MBXDB01. The _User_ parameter specifies the Active Directory user account to connect the mailbox to.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 ```
 
@@ -102,25 +104,25 @@ Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Al
 
 This example connects a linked mailbox. The _Identity_ parameter specifies the deleted mailbox on the mailbox database named MBXDB02. The _LinkedMasterAccount_ parameter specifies the Active Directory user account in the account forest that you want to connect the mailbox to. The _LinkedDomainController_ parameter specifies a domain controller in the account forest.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
 ```
 
 This example connects a room mailbox.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
 ```
 
 This example connects an equipment mailbox.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
 ```
 
 This example connects a shared mailbox.
 
-```
+```PowerShell
 Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 ```
 
@@ -139,7 +141,7 @@ To verify that you've successfully connected a deleted mailbox to a user account
 
 - In the Exchange Management Shell, run the following command.
 
-   ```
+   ```PowerShell
    Get-User <identity>
    ```
 
@@ -159,20 +161,20 @@ After a mailbox restore request is successfully completed, it's retained for 30 
 
 To create a mailbox restore request, you have to use the display name, legacy distinguished name (DN), or mailbox GUID of the deleted mailbox. Use the **Get-MailboxStatistics** cmdlet to display the values of the `DisplayName`, `MailboxGuid`, and `LegacyDN` properties for the deleted mailbox that you want to restore. For example, run the following commands to return this information for all disabled and deleted mailboxes in your organization.
 
-```
+```PowerShell
 $dbs = Get-MailboxDatabase
 $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "Disabled"} | Format-Table DisplayName,MailboxGuid,Database,DisconnectDate
 ```
 
 This example restores the deleted mailbox, which is identified by the _SourceStoreMailbox_ parameter and is located on the MBXDB01 mailbox database, to the target mailbox Debra Garcia. The _AllowLegacyDNMismatch_ parameter is used so the source mailbox can be restored to a different mailbox, one that doesn't have the same legacy DN value.
 
-```
+```PowerShell
 New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
 ```
 
 This example restores Pilar Pinilla's deleted archive mailbox to her current archive mailbox. The _AllowLegacyDNMismatch_ parameter isn't necessary because a primary mailbox and its corresponding archive mailbox have the same legacy DN.
 
-```
+```PowerShell
 New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 

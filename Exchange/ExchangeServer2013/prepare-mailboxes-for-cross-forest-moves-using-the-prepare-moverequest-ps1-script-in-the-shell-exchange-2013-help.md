@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -201,7 +203,7 @@ You can generate a .csv file containing a list of mailbox identities from the so
 
 For example, the content of the .csv file can be:
 
-```text
+```console
 Identity
 Ian@contoso.com
 John@contoso.com

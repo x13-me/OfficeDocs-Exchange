@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Public folder procedures in Office 365 and Exchange Online
 ms.collection: 
 - exchange-online
@@ -45,5 +47,7 @@ manager: serdars
 [Update the public folder hierarchy](update-public-folder-hierarchy.md)
 
 [Remove a public folder](remove-public-folder.md)
+
+[Restore a deleted public folder](restore-deleted-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)

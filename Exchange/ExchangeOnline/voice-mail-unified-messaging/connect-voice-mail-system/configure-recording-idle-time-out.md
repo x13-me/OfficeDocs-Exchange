@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the recording idle time-out value in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the recording idle time-out value to 10 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -RecordingIdleTimeout 10
 ```

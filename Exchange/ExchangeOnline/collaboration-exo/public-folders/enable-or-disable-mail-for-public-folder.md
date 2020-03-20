@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mail-enable or mail-disable a public folder
 ms.collection: 
 - exchange-online
@@ -55,13 +57,13 @@ If you want external users to send mail to this public folder, make sure you fol
 
 This example mail-enables the public folder Help Desk.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Help Desk"
 ```
 
 This example mail-enables the public folder Reports under the Marketing public folder, but hides the folder from address lists.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEnabled $True
 ```
 
@@ -73,7 +75,7 @@ For detailed syntax and parameter information, see [Enable-MailPublicFolder](htt
 
 This example mail-disables the public folder Marketing\Reports.
 
-```
+```PowerShell
 Disable-MailPublicFolder -Identity "\Marketing\Reports"
 ```
 
@@ -99,7 +101,7 @@ You can use either Outlook or Exchange Online PowerShell to set permissions on a
 
 This example sets the `CreateItems` permission for the Anonymous account on the "Customer Feedback" mail-enabled public folder.
 
-```
+```PowerShell
 Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems -User Anonymous
 ```
 

@@ -8,6 +8,8 @@ ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
 ms.reviewer:
 title: Site mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -57,7 +59,7 @@ When the lifecycle application in SharePoint closes a site mailbox, the site mai
 
 You can use the following command to search for and remove site mailboxes that have been marked for deletion.
 
-```
+```PowerShell
 Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
 ```
 

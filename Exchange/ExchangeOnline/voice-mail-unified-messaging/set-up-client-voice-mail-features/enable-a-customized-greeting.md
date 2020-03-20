@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable a customized greeting for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -56,6 +58,6 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 
 This example enables a welcome greeting that uses the C:\UMPrompts\welcome.wav file on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename c:\UMPrompts\welcome.wav
 ```

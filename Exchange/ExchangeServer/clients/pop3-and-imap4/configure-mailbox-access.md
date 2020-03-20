@@ -8,6 +8,8 @@ ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
 ms.reviewer:
 title: Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -67,19 +69,19 @@ For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Serve
 
 To enable or disable POP3 or IMAP4 access to a single mailbox use the following syntax:
 
-```
+```powershell
 Set-CasMailbox -Identity <MailboxIdentity> -PopEnabled <$true | $false> -ImapEnabled <$true | $false>
 ```
 
 This example disables POP3 and IMAP4 access to the mailbox named Rand Zaher.
 
-```
+```powershell
 Set-CasMailbox -Identity "Rand Zaher" -PopEnabled $false -ImapEnabled $false
 ```
 
 This example enables POP3 and IMAP4 access to the mailbox named Rand Zaher.
 
-```
+```powershell
 Set-CasMailbox -Identity "Rand Zaher" -POPEnabled $true -ImapEnabled $true
 ```
 
@@ -125,19 +127,19 @@ You can use the **Get-Mailbox**, **Get-User**, or **Get-Content** cmdlets to ide
 
 This example disables POP3 and IMAP4 access to all user mailboxes in the North America\Finance OU.
 
-```
+```powershell
 $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -PopEnabled $false -ImapEnabled $false}
 ```
 
 This example disables POP3 and IMAP4 access to all mailboxes in the Engineering department in Washington state.
 
-```
+```powershell
 Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -PopEnabled $false -ImapEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable POP3 or IMAP4 access to the specified mailboxes.
 
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CASMailbox $_ -PopEnabled $false -ImapEnabled $false}
 ```
 
@@ -173,13 +175,13 @@ After you change the POP3 or IMAP4 access settings on a mailbox, you need to res
 
 To restart the POP3 services, run the following command:
 
-```
+```powershell
 Restart-Service MSExchangePOP3; Restart-Service MSExchangePOP3BE
 ```
 
 To restart the IMAP4 services, run the following command:
 
-```
+```powershell
 Restart-Service MSExchangeIMAP4; Restart-Service MSExchangeIMAP4BE
 ```
 
@@ -187,7 +189,7 @@ For more information about this cmdlet, see [Restart-Service](https://go.microso
 
 To verify that you've successfully restarted the POP3 or IMAP4 services, run the following command:
 
-```
+```powershell
 Get-Service MSExchangePOP3; Get-Service MSExchangePOP3BE; Get-Service MSExchangeIMAP4; Get-Service MSExchangeIMAP4BE
 ```
 
@@ -205,18 +207,18 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run the following command:
 
-  ```
+  ```powershell
   Get-CasMailbox - Identity <MailboxIdentity>
   ```
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```
+  ```powershell
   Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where POP3 and IMAP4 access is disabled:
 
-  ```
+  ```powershell
   Get-CasMailbox -ResultSize unlimited -Filter "PopEnabled -eq `$false -and ImapEnabled -eq `$false"
   ```

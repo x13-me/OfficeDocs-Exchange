@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure a moderated recipient in Exchange Online
 ms.collection: 
 - exchange-online
@@ -73,7 +75,7 @@ To accomplish the tasks in this example scenario, perform the following procedur
 
 Run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModerationEnabled $true -ModeratedBy <recipient1,recipient2...> -ByPassModerationFromSendersOrMembers <recipient1,recipient2...> -SendModerationNotifications <Never | Always | Internal>
 ```
 
@@ -89,13 +91,13 @@ This example configures the following moderation settings for the distribution g
 
 To accomplish the tasks in this example scenario, run the following command:
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ModerationEnabled $true -ModeratedBy "David Hamilton","Yossi Ran" -ByPassModerationFromSendersOrMembers HR -SendModerationNotifications Internal
 ```
 
 To add or remove users from the list of moderators or recipients who bypass moderation without affecting other entries, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModeratedBy @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -ByPassModerationFromSendersOrMembers @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
 ```
 
@@ -105,7 +107,7 @@ This example configures the following moderation settings for the distribution g
 
 - Remove the user michelle@contoso.com from the list of existing senders who bypass moderation.
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ModeratedBy @{Add="chris@contoso.com"} -ByPassModerationFromSendersOrMembers @{Remove="michelle@contoso.com"
 ```
 

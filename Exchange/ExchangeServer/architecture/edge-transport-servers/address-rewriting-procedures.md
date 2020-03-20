@@ -8,6 +8,8 @@ ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms.reviewer:
 title: Address rewriting procedures on Edge Transport servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -51,13 +53,13 @@ To completely enable or disable address rewriting, you enable or disable the add
 
 To disable address rewriting, run the following command:
 
-```
+```PowerShell
 Disable-TransportAgent "Address Rewriting Inbound Agent"; Disable-TransportAgent "Address Rewriting Outbound Agent"
 ```
 
 To enable address rewriting, run the following command:
 
-```
+```PowerShell
 Enable-TransportAgent "Address Rewriting Inbound Agent"; Enable-TransportAgent "Address Rewriting Outbound Agent"
 ```
 
@@ -65,7 +67,7 @@ Enable-TransportAgent "Address Rewriting Inbound Agent"; Enable-TransportAgent "
 
 To verify that you have successfully enabled or disabled address rewriting, run the following command to verify the **Enabled** property value:
 
-```
+```PowerShell
 Get-TransportAgent "Address Rewriting *"
 ```
 
@@ -73,19 +75,19 @@ Get-TransportAgent "Address Rewriting *"
 
 To view a summary list of all address rewrite entries, run the following command.
 
-```
+```PowerShell
 Get-AddressRewriteEntry
 ```
 
 To view details of an address rewrite entry, use the following syntax.
 
-```
+```PowerShell
 Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
 ```
 
 The following example displays the details of the address rewrite entry named Rewrite Contoso.com to Northwindtraders.com:
 
-```
+```PowerShell
 Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
 ```
 
@@ -97,13 +99,13 @@ For more information, see [Get-AddressRewriteEntry](https://docs.microsoft.com/p
 
 To rewrite the email address for a single recipient, use the following syntax:
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
 ```
 
 This example rewrites the email address of all messages entering and leaving the Exchange organization for joe@contoso.com. Outbound messages are rewritten so they appear to come from support@nortwindtraders.com. Inbound messages sent to support@northwindtraders.com are rewritten to joe@contoso.com for delivery to the recipient (the _OutboundOnly_ parameter is `$false` by default).
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
 ```
 
@@ -111,19 +113,19 @@ New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" 
 
 To rewrite the email addresses in a single domain or subdomain, use the following syntax:
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
 ```
 
 This example rewrites the email addresses of all messages entering and leaving the Exchange organization for the contoso.com domain. Outbound messages are rewritten so they appear to come from the fabrikam.com domain. Inbound messages sent to fabrikam.com email addresses are rewritten to contoso.com for delivery to the recipients (the _OutboundOnly_ parameter is `$false` by default).
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
 ```
 
 This example rewrites the email addresses of all messages leaving the Exchange organization for the sales.contoso.com subdomain. Outbound messages are rewritten so they appear to come from the contoso.com domain. Inbound messages sent to contoso.com email addresses aren't rewritten.
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
 ```
 
@@ -131,19 +133,19 @@ New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddres
 
 To rewrite the email addresses in a domain and all subdomains, use the following syntax.
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
 ```
 
 This example rewrites the email addresses of all messages leaving the Exchange organization for the contoso.com domain and all subdomains. Outbound messages are rewritten so they appear to come from the contoso.com domain. Inbound messages sent to contoso.com recipients can't be rewritten, because a wildcard is used in the _InternalAddress_ parameter.
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
 ```
 
 This example is just like the previous example, except now messages sent from the legal.contoso.com and corp.contoso.com subdomains are never rewritten:
 
-```
+```PowerShell
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
 ```
 
@@ -155,7 +157,7 @@ To verify that you have successfully created address rewrite entries, do the fol
 
 1. Replace _\<AddressRewriteEntryIdentity\>_ with the name of the address rewrite entry, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
    ```
 
@@ -171,7 +173,7 @@ The configuration options that are available when you modify an existing address
 
 To modify an address rewrite entry that rewrites the email address of a single recipient, use the following syntax:
 
-```
+```PowerShell
 Set-AddressRewriteEntry <AddressRewriteEntryIdentity> [-Name "<Descriptive Name>"] [-InternalAddress <internal email address>] [-ExternalAddress <external email address>] [-OutboundOnly <$true | $false>]
 ```
 
@@ -183,7 +185,7 @@ This example modifies the following properties of the address rewrite entry name
 
 - Changes the value of _OutboundOnly_ to `$true`. Note that this change requires you to configure support@northwindtraders.net as a proxy address on Joe's mailbox.
 
-```
+```PowerShell
 Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
 ```
 
@@ -191,13 +193,13 @@ Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "
 
 To modify an address rewrite entry that rewrites the email addresses from a single domain or subdomain, use the following syntax.
 
-```
+```PowerShell
 Set-AddressRewriteEntry <AddressRewriteEntryIdentity> [-Name "<Descriptive Name>"] [-InternalAddress <domain or subdomain>] [-ExternalAddress <domain>] [-OutboundOnly <$true | $false>]
 ```
 
 This example changes the internal address value of the address rewrite entry named "Northwind Traders to Contoso".
 
-```
+```PowerShell
 Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
 ```
 
@@ -205,31 +207,31 @@ Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwind
 
 To modify an address rewrite entry that rewrites the email addresses in a domain and all subdomains, use the following syntax.
 
-```
+```PowerShell
 Set-AddressRewriteEntry <AddressRewriteEntryIdentity> [-Name "<Descriptive Name>"] [-InternalAddress *.<domain>] [-ExternalAddress <domain>] [-ExceptionList <list of domains>]
 ```
 
 To replace the existing exception list values of an address rewrite entry, use the following syntax:
 
-```
+```PowerShell
 Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
 ```
 
 This example replaces the existing exception list for the address rewrite entry named Contoso to Northwind Traders with the values marketing.contoso.com and legal.contoso.com:
 
-```
+```PowerShell
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
 ```
 
 To add or remove exception list values without affecting other exception list entries, use the following syntax:
 
-```
+```PowerShell
 Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain3>","<domain4>"...}
 ```
 
 This example adds finanace.contoso.com and removes marketing.contoso.com from the exception list of the address rewrite entry named Contoso to Northwind Traders:
 
-```
+```PowerShell
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
 ```
 
@@ -241,7 +243,7 @@ To verify that you have successfully modified an address rewrite entry, do the f
 
 1. Replace _\<AddressRewriteEntryIdentity\>_ with the name of the address rewrite entry, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
    ```
 
@@ -253,37 +255,37 @@ To verify that you have successfully modified an address rewrite entry, do the f
 
 To remove a single address rewrite entry, use the following syntax:
 
-```
+```PowerShell
 Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
 ```
 
 This example removes the address rewrite entry named "Contoso.com to Northwindtraders.com":
 
-```
+```PowerShell
 Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
 ```
 
 To remove multiple address rewrite entries, use the following syntax:
 
-```
+```PowerShell
 Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
 ```
 
 This example removes all address rewrite entries:
 
-```
+```PowerShell
 Get-AddressRewriteEntry | Remove-AddressRewriteEntry
 ```
 
 This example simulates the removal of address rewrite entries that contain the text "to contoso.com" in the name. The _WhatIf_ switch allows you to preview the result without committing any changes.
 
-```
+```PowerShell
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
 ```
 
 If you're satisfied with the result, run the command again without the _WhatIf_ switch to remove the address rewrite entries.
 
-```
+```PowerShell
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
 ```
 

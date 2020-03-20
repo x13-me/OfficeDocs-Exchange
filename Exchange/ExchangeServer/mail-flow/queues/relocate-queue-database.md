@@ -8,6 +8,8 @@ ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms.reviewer: 
 title: Change the location of the queue database
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -57,20 +59,20 @@ The location of the queue database and the queue database transaction logs is co
 
 2. In a Command prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
 
-   ```
+   ```console
    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
    ```
 
 3. Find and modify the following keys in the `<appSettings>` section.
 
-   ```
+   ```xml
    <add key="QueueDatabasePath" value="<LocalPath>" />
    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
    ```
 
    For example, to create a new queue database and transaction logs in D:\Queue\QueueDB, use the following values:
 
-   ```
+   ```xml
    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueDB" />
    ```
@@ -79,7 +81,7 @@ The location of the queue database and the queue database transaction logs is co
 
 4. Restart the Exchange Transport service by running the following command:
 
-   ```
+   ```console
    net stop MSExchangeTransport && net start MSExchangeTransport
    ```
 
@@ -109,20 +111,20 @@ Although you'll need to move the existing queue database to preserve any undeliv
 
 2. In a Command prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
 
-   ```
+   ```console
    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
    ```
 
 3. Find and modify the following keys in the `<appSettings>` section:
 
-   ```
+   ```xml
    <add key="QueueDatabasePath" value="<LocalPath>" />
    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
    ```
 
    For example, to change the location of the queue database and transaction logs to D:\Queue\QueueDB, use the following values:
 
-   ```
+   ```xml
    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueDB" />
    ```
@@ -131,7 +133,7 @@ Although you'll need to move the existing queue database to preserve any undeliv
 
 4. Stop the Exchange Transport service by running the following command:
 
-   ```
+   ```console
    net stop MSExchangeTransport
    ```
 
@@ -141,7 +143,7 @@ Although you'll need to move the existing queue database to preserve any undeliv
 
 7. Start the Exchange Transport service by running the following command:
 
-   ```
+   ```console
    net start MSExchangeTransport
    ```
 

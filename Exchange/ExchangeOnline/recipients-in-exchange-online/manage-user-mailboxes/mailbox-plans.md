@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Mailbox plans in Exchange Online
 ms.collection:
 - exchange-online
@@ -80,37 +82,37 @@ Modifying the settings of a mailbox plan won't update the settings of an existin
 
 These examples return a summary list of all mailbox plans:
 
-```
+```PowerShell
 Get-MailboxPlan
 ```
 
-```
+```PowerShell
 Get-CasMailboxPlan
 ```
 
 These examples return the modifiable property values in all mailbox plans:
 
-```
+```PowerShell
 Get-MailboxPlan | Format-List DisplayName,IsDefault,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
 ```
 
-```
+```PowerShell
 Get-CasMailboxPlan | Format-List DisplayName,ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
 ```
 
 These examples return detailed information for the mailbox plan named ExchangeOnlineEnterprise.
 
-```
+```PowerShell
 Get-MailboxPlan -Identity ExchangeOnlineEnterprise | Format-List
 ```
 
-```
+```PowerShell
 Get-CasMailboxPlan -Identity ExchangeOnlineEnterprise | Format-List
 ```
 
 This example returns the mailbox plan that's assigned to the user named Suk-Jae Yoo.
 
-```
+```PowerShell
 Get-Mailbox -Identity "Suk-Jae Yoo" | Format-List MailboxPlan
 ```
 
@@ -118,19 +120,19 @@ To return all mailboxes that had a specific mailbox plan applied:
 
 1. Run the following command to find the distinguished name of the mailbox plan:
 
-   ```
+   ```PowerShell
    Get-MailboxPlan | Format-List DisplayName,DistinguishedName
    ```
 
 2. Use the following syntax to return the mailboxes that have the mailbox plan assigned:
 
-   ```
+   ```PowerShell
    Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq '<MailboxPlanDistinguishedName>'"
    ```
 
    This example returns the mailboxes that have the ExchangeOnline mailbox plan applied.
 
-   ```
+   ```PowerShell
    Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq 'CN=ExchangeOnline-93f46670-2ae7-4591-baa4-ee153e090945,OU=constoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR22B009,DC=PROD,DC=OUTLOOK,DC=COM'"
    ```
 
@@ -142,13 +144,13 @@ The default mailbox plan is used as the default template for new mailboxes that 
 
 To specify the default mailbox plan, use the following syntax:
 
-```
+```PowerShell
 Set-MailboxPlan -Identity <MailboxPlanIdentity> -IsDefault
 ```
 
 This example specifies the ExchangeOnline mailbox plan as the default.
 
-```
+```PowerShell
 Set-MailboxPlan -Identity ExchangeOnline -IsDefault
 ```
 
@@ -160,13 +162,13 @@ To verify that you've successfully specified the default mailbox plan, use any o
 
 - In Exchange Online PowerShell, run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-MailboxPlan | Format-Table DisplayName,IsDefault -Auto
    ```
 
 - Create a new mailbox without assigning a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md). Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following command in Exchange Online PowerShell to verify the **MailboxPlan** property value:
 
-   ```
+   ```PowerShell
    Get-Mailbox -Identity <MailboxIdentity> | Format-List MailboxPlan
    ```
 
@@ -174,23 +176,23 @@ To verify that you've successfully specified the default mailbox plan, use any o
 
 To modify a mailbox plan, use the following syntax:
 
-```
+```PowerShell
 Set-MailboxPlan -Identity <MailboxPlanIdentity> [-MaxReceiveSize <Size>] [-MaxSendSize <Size>] [-IssueWarningQuota <Size>] [-ProhibitSendQuota <Size>] [-ProhibitSendReceiveQuota <Size>] [-RetainDeletedItemsFor <TimeSpan>] [-RetentionPolicy <RetentionPolicyIdentity>] [-RoleAssignmentPolicy <RoleAssignmentPolicyIdentity>]
 ```
 
-```
+```PowerShell
 Set-CASMailboxPlan -Identity <MailboxPlanIdentity> [-ActiveSyncEnabled <$true | $false>] [-ImapEnabled <$true | $false>] [-PopEnabled <$true | $false>] [-OwaMailboxPolicy <PolicyIdentity>]
 ```
 
 This example modifies the mailbox plan named ExchangeOnlineEnterprise to use the retention policy named Contoso Retention Policy.
 
-```
+```PowerShell
 Set-MailboxPlan -Identity -RetentionPolicy "Contoso Retention Policy"
 ```
 
 This example disables Exchange ActiveSync, POP3, and IMAP4 access to mailboxes in all CAS mailbox plans.
 
-```
+```PowerShell
 Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $false -PopEnabled $false
 ```
 
@@ -202,11 +204,11 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
 
 - In Exchange Online PowerShell, run the following commands to verify the property values:
 
-   ```
+   ```PowerShell
    Get-MailboxPlan | Format-List DisplayName,IsDefault,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
    ```
 
-   ```
+   ```PowerShell
    Get-CasMailboxPlan | Format-List DisplayName,ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
 
@@ -218,10 +220,10 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
 
    Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following commands in Exchange Online PowerShell to verify the property values:
 
-   ```
+   ```PowerShell
    Get-Mailbox -Identity "<MailboxIdentity>" | Format-List MailboxPlan,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
    ```
 
-   ```
+   ```PowerShell
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```

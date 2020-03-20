@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure a fully qualified domain name in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,12 +56,12 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example configures a UM IP gateway named `MyUMIPGateway` with an FQDN named voipgateway.contoso.com.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com
 ```
 
 This example configures a UM IP gateway named `MySBC` with an FQDN of sbc.contoso.com and listens for SIP requests on TCP port 5061.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MySBC -Address sbc.contoso.com -Port 5061
 ```

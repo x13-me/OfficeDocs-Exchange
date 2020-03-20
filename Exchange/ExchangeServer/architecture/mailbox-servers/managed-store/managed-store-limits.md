@@ -8,6 +8,8 @@ ms.assetid: bea9ec15-bfb5-4716-b14e-010e389c9f9e
 ms.reviewer: 
 title: Managed Store Limits  in Exchange 2016 and Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
@@ -157,7 +159,7 @@ You can limit the maximum number of resources that a MAPI client (for example, O
 
 9. Restart the Microsoft Exchange Information Store service by running the following command in Windows PowerShell or the Exchange Management Shell:
 
-   ```
+   ```PowerShell
    Restart-Service MSExchangeIS
    ```
 

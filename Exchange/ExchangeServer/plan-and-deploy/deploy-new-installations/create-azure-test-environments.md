@@ -11,6 +11,8 @@ ms.collection:
 - Strat_EX_Admin
 - Ent_O365
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -47,32 +49,32 @@ You can create a new Azure virtual network with a domain controller with Azure P
 
 1. Sign into your Azure account.
 
-   ```
+   ```powershell
    Connect-AzAccount
    ```
 
 2. Get your subscription name using the following command.
 
-   ```
+   ```powershell
    Get-AZSubscription | Sort SubscriptionName | Select SubscriptionName
    ```
 
 3. Set your Azure subscription with the following commands. Set the **$subscr** variable by replacing everything within the quotes, including the \< and \> characters, with the correct name.
 
-   ```
+   ```powershell
    $subscrName="<subscription name>"
    Select-AzSubscription -SubscriptionName $subscrName
    ```
 
 4. Create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.
 
-   ```
+   ```powershell
    Get-AZResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
    ```
 
    Create your new resource group with these commands. Set the variables by replacing everything within the quotes, including the \< and \> characters, with the correct names.
 
-   ```
+   ```powershell
    $rgName="<resource group name>"
    $locName="<location name, such as West US>"
    New-AZResourceGroup -Name $rgName -Location $locName
@@ -80,19 +82,19 @@ You can create a new Azure virtual network with a domain controller with Azure P
 
 5. Resource Manager-based virtual machines require a Resource Manager-based storage account. You must pick a globally unique name for your storage account *that contains only lowercase letters and numbers*. You can use this command to list the existing storage accounts.
 
-   ```
+   ```powershell
    Get-AZStorageAccount | Sort StorageAccountName | Select StorageAccountName
    ```
 
    Use this command to test whether a proposed storage account name is unique.
 
-   ```
+   ```powershell
    Get-AZStorageAccountNameAvailability "<proposed name>"
    ```
 
    Create a new storage account for your new test environment with these commands.
 
-   ```
+   ```powershell
    $rgName="<your new resource group name>"
    $saName="<storage account name>"
    $locName=(Get-AZResourceGroup -Name $rgName).Location
@@ -101,7 +103,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
 
 6. Create the EXSrvrVnet Azure Virtual Network that will host the EXSrvrSubnet subnet and protect it with a network security group.
 
-   ```
+   ```powershell
    $rgName="<name of your new resource group>"
    $locName=(Get-AZResourceGroup -Name $rgName).Location
    $exSubnet=New-AZVirtualNetworkSubnetConfig -Name EXSrvrSubnet -AddressPrefix 10.0.0.0/24
@@ -119,7 +121,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
 
    First, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer to create an Azure virtual machine for adVM.
 
-   ```
+   ```powershell
    $rgName="<resource group name>"
    # Create an availability set for domain controller virtual machines
    New-AZAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
@@ -168,7 +170,7 @@ It can take a few minutes for Azure to build the virtual machine.
 
 6. Add an extra data disk as a new volume with the drive letter F: with these commands at an administrator-level Windows PowerShell command prompt on adVM.
 
-   ```
+   ```powershell
    $disk=Get-Disk | where {$_.PartitionStyle -eq "RAW"}
    $diskNumber=$disk.Number
    Initialize-Disk -Number $diskNumber
@@ -178,7 +180,7 @@ It can take a few minutes for Azure to build the virtual machine.
 
 7. Configure adVM as a domain controller and DNS server for the corp.contoso.com domain. Run these commands at an administrator-level Windows PowerShell command prompt on adVM.
 
-   ```
+   ```powershell
    Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
    Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
    ```
@@ -201,7 +203,7 @@ After adVM restarts, reconnect to the adVM virtual machine.
 
 6. From the desktop, open an administrator-level Windows PowerShell command prompt and run the following command:
 
-   ```
+   ```powershell
    Add-WindowsFeature RSAT-ADDS-Tools
    ```
 
@@ -215,13 +217,13 @@ In this phase, you create an Exchange virtual machine in the EXSrvrVNet virtual 
 
 To create the Exchange virtual machine with Azure PowerShell, first log in to Azure with your Azure account from the Windows PowerShell command prompt (if needed).
 
-```
+```powershell
 Connect-AzAccount
 ```
 
 You must determine a globally unique DNS name for the exVM virtual machine. You must pick a globally unique DNS name *that contains only lowercase letters and numbers*. You can do this with the following PowerShell commands:
 
-```
+```powershell
 $vmDNSName="<DNS name to test>"
 $rgName="<resource group name>"
 $locName=(Get-AZResourceGroup -Name $rgName).Location
@@ -232,7 +234,7 @@ If you see "True", your proposed name is globally unique.
 
 Next, fill in the variable values and run the resulting block at the PowerShell prompt.
 
-```
+```powershell
 # Set up key variables
 $subscrName="<name of your Azure subscription>"
 $rgName="<your resource group name>"
@@ -271,7 +273,7 @@ From the Azure portal, connect to the exVM virtual machine using the credentials
 
 Next, join exVM to the Windows AD domain with these commands at a Windows PowerShell prompt.
 
-```
+```powershell
 Add-Computer -DomainName "corp.contoso.com"
 Restart-Computer
 ```
@@ -290,7 +292,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 1. At the PowerShell command prompt on your local computer, run the following command:
 
-   ```
+   ```powershell
    Write-Host (Get-AZPublicIpaddress -Name "exVM-PublicIP" -ResourceGroup $rgName).DnsSettings.Fqdn
    ```
 
@@ -312,7 +314,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 2. From exVM, open an administrator-level Windows PowerShell command prompt and run the following commands.
 
-   ```
+   ```powershell
    Install-WindowsFeature NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS-Tools
    Restart-Computer
 
@@ -336,7 +338,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 11. From an administrator-level Windows PowerShell command prompt on exVM, run the following:
 
-   ```
+   ```powershell
    e:
    .\setup.exe /mode:Install /role:Mailbox /OrganizationName:Contoso /IacceptExchangeServerLicenseTerms
    Restart-Computer
@@ -352,7 +354,7 @@ Wait until Exchange setup completes, which can take some time, and exVM restarts
 
 3. Copy the following commands to Notepad, insert the Internet DNS name of the exVM virtual machine for the **$dnsName** variable, and then copy and paste the resulting commands into the Exchange Management Shell.
 
-   ```
+   ```powershell
    $dnsName="<Internet DNS name of the exVM virtual machine>"
    $user1Name="chris@" + $dnsName
    $user2Name="janet@" + $dnsName
@@ -363,7 +365,7 @@ Wait until Exchange setup completes, which can take some time, and exVM restarts
 
 4. Record the password specified in a safe place. Next, run these commands to create two mailboxes.
 
-   ```
+   ```powershell
    New-Mailbox -UserPrincipalName $user1Name -Alias chris -Database $dbName -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton"
    New-Mailbox -UserPrincipalName $user2Name -Alias janet -Database $dbName -Name JanetSchorr -OrganizationalUnit Users -Password $password -FirstName Janet -LastName Schorr -DisplayName "Janet Schorr"
    ```
@@ -392,7 +394,7 @@ You are now ready to test Exchange features or applications.
 
 Azure virtual machines incur an ongoing cost when they are running. To help minimize the cost of your Exchange dev/test environment, use these commands to stop the virtual machines:
 
-```
+```powershell
 $rgName="<your resource group name>"
 Stop-AZVM -Name exVM -ResourceGroupName $rgName -Force
 Stop-AZVM -Name adVM -ResourceGroupName $rgName -Force
@@ -400,7 +402,7 @@ Stop-AZVM -Name adVM -ResourceGroupName $rgName -Force
 
 To start them again, use these commands:
 
-```
+```powershell
 $rgName="<your resource group name>"
 Start-AZVM -Name adVM -ResourceGroupName $rgName
 Start-AZVM -Name exVM -ResourceGroupName $rgName

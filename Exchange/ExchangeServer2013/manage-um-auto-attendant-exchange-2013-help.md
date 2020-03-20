@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantGeneralPropertyPage'
 ms.assetid: 4809ff56-ae34-4ce6-8e39-9193311c3f83
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

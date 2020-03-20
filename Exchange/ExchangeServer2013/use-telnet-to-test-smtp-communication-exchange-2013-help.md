@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,7 +63,7 @@ To connect to a destination SMTP server by using Telnet on port 25, you must use
 
    The output of the command will resemble the following:
 
-   ```text
+   ```console
    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
    mail1.fabrikam.com internet address = 192.168.1.10
@@ -98,7 +100,7 @@ In this example, the following values are used:
 > <LI>
 > <P>You can't use the backspace key after you have connected to the destination SMTP server within the Telnet session. If you make a mistake as you type an SMTP command, you must press ENTER and then type the command again. Unrecognized SMTP commands or syntax errors result in an error message that resembles the following:</P>
 >
-> ```powershell
+> ```console
 > 500 5.3.3 Unrecognized command
 > ```
 > </LI></UL>
@@ -119,7 +121,7 @@ In this example, the following values are used:
 
 8. Type **DATA** and then press ENTER. You will receive a response that resembles the following:
 
-    ```text
+    ```console
     354 Start mail input; end with <CLRF>.<CLRF>
     ```
 
@@ -131,13 +133,13 @@ In this example, the following values are used:
 
 12. Press ENTER, type a period ( **.** ) and then press ENTER. You will receive a response that resembles the following:
 
-    ```text
+    ```console
     250 2.6.0 <GUID> Queued mail for delivery
     ```
 
 13. To disconnect from the destination SMTP server, type **QUIT** and then press ENTER. You will receive a response that resembles the following:
 
-    ```text
+    ```console
     221 2.0.0 Service closing transmission channel
     ```
 

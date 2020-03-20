@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete or restore user mailboxes in Exchange Online
 ms.collection: 
 - exchange-online
@@ -69,16 +71,16 @@ When you delete an Exchange Online mailbox using Exchange Online PowerShell, the
 
 This example deletes an Exchange Online mailbox and the corresponding Office 365 user account for Walter Harp.
 
-```
+```PowerShell
 Remove-Mailbox -Identity "Walter Harp"
 ```
 
-### Use Windows Powershell to permanently delete a user mailbox
+### Use Windows PowerShell to permanently delete a user mailbox
 
 This example deletes the user account for Walter Harp from Azure AD.
 
-```
-Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin true
+```PowerShell
+Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
 ```
 
 For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).
@@ -95,7 +97,7 @@ To verify that you've successfully deleted an Exchange Online mailbox, do one of
 
 - In Exchange Online PowerShell, use the following syntax to verify that the mailbox has been deleted.
 
-  ```
+  ```PowerShell
   Get-Mailbox <identity>
   ```
 
@@ -121,7 +123,7 @@ You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cm
 
 2. Run the **Undo-SoftDeletedMailbox** cmdlet.
 
-   ```
+   ```PowerShell
    Undo-SoftDeletedMailbox allieb@contoso.com -WindowsLiveID allieb@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
    ```
 
@@ -135,7 +137,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
 
 - In Exchange Online PowerShell, use the following syntax to verify that the mailbox was restored.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Identity>
   ```
 
@@ -147,7 +149,7 @@ For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted an
 
 2. Run the following cmdlet to identify the soft-deleted mailbox that you want to restore.
 
-   ```
+   ```PowerShell
    Get-Mailbox -SoftDeletedMailbox | Select-Object Name,ExchangeGuid
    ```
 
@@ -155,13 +157,13 @@ For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted an
 
 3. Create a target mailbox for the restored mailbox. For more information, see [Create user mailboxes in Exchange Online](create-user-mailboxes.md). After you create the target mailbox, run the following command to get the GUID value of the target mailbox that you'll need in the next step.
 
-   ```
+   ```PowerShell
    Get-Mailbox -Identity <NameOrAliasOfNewTargetMailbox> | Format-List ExchangeGuid
    ```
 
 4. Replace \<SoftDeletedMailboxGUID\> with the GUID value from Step 2, and \<NewTargetMailboxGUID\> with the GUID value from Step 3, and run the following cmdlet to restore the mailbox:
 
-   ```
+   ```PowerShell
    New-MailboxRestoreRequest -SourceMailbox <SoftDeletedMailboxGUID> -TargetMailbox <NewTargetMailboxGUID>
    ```
 

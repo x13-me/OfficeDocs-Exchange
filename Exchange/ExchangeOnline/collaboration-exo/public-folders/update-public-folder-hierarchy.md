@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Update the public folder hierarchy
 ms.collection: 
 - exchange-online
@@ -39,12 +41,12 @@ You only need to update the public folder hierarchy if you want to manually invo
 
 This example updates the public folder hierarchy on the public folder mailbox PF_marketing and suppresses the command's output.
 
-```
+```PowerShell
 Update-PublicFolderMailbox -Identity PF_marketing -InvokeSynchronizer -SuppressStatus
 ```
 
 This example updates all public folder mailboxes and suppresses the command's output.
 
-```
+```PowerShell
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```

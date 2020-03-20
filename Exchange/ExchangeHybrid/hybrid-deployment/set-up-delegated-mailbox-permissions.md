@@ -3,6 +3,8 @@ title: "Configure Exchange to support delegated mailbox permissions in a hybrid 
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -51,7 +53,7 @@ To enable ACLable object synchronization at the organization level, do the follo
 
 3. Run the following command.
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -ACLableSyncedObjectEnabled $True
    ```
 
@@ -68,19 +70,19 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
 
 2. To enable ACLs on a single mailbox, run the following command:
 
-   ```
+   ```PowerShell
    Get-AdUser <UserMailbox's Identity> | Set-AdObject -Replace @{msExchRecipientDisplayType=-1073741818}
    ```
 
 3. To enable ACLs on all mailboxes moved to Office 365, run the following command:
 
-   ```
+   ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | where {$_.RecipientTypeDetails -eq "RemoteUserMailbox"} | foreach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
    ```
 
 4. To verify that the mailboxes have been successfully updated, run the following command:
 
-   ```
+   ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid -Properties msExchRecipientDisplayType | Format-Table DistinguishedName,msExchRecipientDisplayType -Auto}
    ```
 
@@ -99,18 +101,18 @@ To enable ACLs on mailboxes moved to Office 365, do the following.
 
 2. To enable ACLs on a single mailbox, run the following command.
 
-   ```
+   ```PowerShell
    Get-AdUser <Identity> | Set-AdObject -Replace @{msExchRecipientDisplayType=-1073741818}
    ```
 
 3. To enable ACLs on all mailboxes moved to Office 365, run the following command.
 
-   ```
+   ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
    ```
 
 4. To verify that the mailboxes have been successfully updated, run the following command.
 
-   ```
+   ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid -Properties msExchRecipientDisplayType | Format-Table DistinguishedName,msExchRecipientDisplayType -Auto}
    ```

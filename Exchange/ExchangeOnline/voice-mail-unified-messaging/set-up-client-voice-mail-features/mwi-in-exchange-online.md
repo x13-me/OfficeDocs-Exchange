@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Message Waiting Indicator in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -138,7 +140,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 2. On the UM mailbox policy that's linked to the user, verify that the _AllowSMSNotification_ parameter is set to `$true`. To set the parameter to `$true`, run the following command:
 
-    ```
+    ```PowerShell
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowSMSNotification $true
     ```
 
@@ -146,7 +148,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 4. Because the default setting is `None`, you must run the following command in Exchange Online PowerShell and set the text message notification option to either `VoiceMailAndMissedCalls` or `VoiceMail`. For example:
 
-    ```
+    ```PowerShell
     Set-UMMailbox -Identity MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls
     ```
 

@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -41,7 +43,7 @@ For additional GAL management tasks, see [Address list procedures in Exchange On
 
 To create a GAL, use the following syntax:
 
-```
+```PowerShell
 New-GlobalAddressList -Name "<GAL Name>" [<Precanned recipient filter | Custom recipient filter>]
 ```
 
@@ -51,7 +53,7 @@ This example creates a GAL with a precanned recipient filter:
 
 - **Precanned recipient filter**: All recipient types where the **Company** value is Contoso.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "Contoso GAL" -IncludedRecipients AllRecipients -ConditionalCompany Contoso
 ```
 
@@ -61,7 +63,7 @@ This example creates a GAL with a custom recipient filter:
 
 - **Custom recipient filter**: All recipient types where the CustomAttribute15 property contains the value AgencyA.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
@@ -71,6 +73,6 @@ For detailed syntax and parameter information, see [New-GlobalAddressList](https
 
 To verify that you've successfully created a GAL, replace _\<GAL Name\>_ with the name of the GAL and run the following command in Exchange Online PowerShell to verify the property values:
 
-```
+```PowerShell
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```

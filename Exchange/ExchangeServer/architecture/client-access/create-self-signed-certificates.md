@@ -10,6 +10,8 @@ title: Create a new Exchange Server self-signed certificate
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -97,7 +99,7 @@ You can create self-signed certificates certificate in the Exchange admin center
 
 To create a new Exchange self-signed certificate, use the following syntax:
 
-```
+```PowerShell
 New-ExchangeCertificate [-FriendlyName <DescriptiveName>] [-SubjectName [C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>],CN=<HostNameOrFQDN>]] [-DomainName <Host1>,<Host2>...] [-Services <None | IIS | IMAP | POP | SMTP | UM | UMCallRouter> [-PrivateKeyExportable < $true | $false>] [-Server <ServerIdentity>] -[Force]
 ```
 
@@ -111,7 +113,7 @@ This example creates a self-signed certificate on the local Exchange server with
 
 - **Services**: POP, IMAP, SMTP.
 
-```
+```PowerShell
 New-ExchangeCertificate
 ```
 
@@ -135,7 +137,7 @@ This example creates a creates a self-signed certificate on the local Exchange s
 
 - The private key is exportable. This allows you to export the certificate from the server (and import it on other servers).
 
-```
+```PowerShell
 New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectName CN=Exchange01 -DomainName mail.contoso.com,autodiscover.contoso.com,Exchange01.contoso.com,Exchange02.contoso.com -Services SMTP,IIS -PrivateKeyExportable $true
 ```
 
@@ -155,6 +157,6 @@ To verify that you have successfully created an Exchange self-signed certificate
 
 - In the Exchange Management Shell on the server where you created the self-signed certificate, run the following command and verify the properties:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
   ```

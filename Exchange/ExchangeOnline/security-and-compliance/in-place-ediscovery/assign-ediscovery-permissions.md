@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Assign eDiscovery permissions in Exchange
 ms.collection: 
 - exchange-online
@@ -59,7 +61,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 This example adds the user Bsuneja to the Discovery Management role group.
 
-```
+```PowerShell
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
@@ -77,7 +79,7 @@ To verify that you've added the user to the Discovery Management role group, do 
 
 You can also run this command to list the members of the Discovery Management role group.
 
-```
+```PowerShell
 Get-RoleGroupMember -Identity "Discovery Management"
 ```
 

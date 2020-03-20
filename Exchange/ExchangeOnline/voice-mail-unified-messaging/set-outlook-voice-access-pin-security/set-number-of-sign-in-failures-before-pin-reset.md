@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4de38499-0a6f-4f00-8697-eeff805d7266
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set the number of sign-in failures before a voice mail PIN is reset in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,12 +56,12 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example sets the number of sign-in failures before the user's PIN is reset to 3 for UM-enabled users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3
 ```
 
 This example sets the number of sign-in failures before the user's PIN is reset to 3, the maximum number of sign-in attempts to 5, and the minimum PIN length to 9 for UM-enabled users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 3 -MaxLogonAttempts 5 -MinPINLength 9
 ```

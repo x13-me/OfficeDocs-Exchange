@@ -8,6 +8,8 @@ ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 ms.reviewer: 
 title: Safety Net in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -68,13 +70,13 @@ When a Hub-and-spoke topology is used, the transport Safety Net JET database can
 
   1. In a Command prompt window, open the EdgeTransport.exe.config file in **Notepad** by running the following command on the server:
 
-     ```
+     ```console
      Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
      ```
 
   2. Add the following key in the **appSettings** section.
 
-     ```
+     ```xml
      <add key="SafetyNetHoldTimeInterval" value="0.00:00:15" />
      ```
 
@@ -82,7 +84,7 @@ When a Hub-and-spoke topology is used, the transport Safety Net JET database can
 
   3. Restart the Exchange Transport service by running the following command:
 
-     ```
+     ```console
      net stop MSExchangeTransport && net start MSExchangeTransport
      ```
     

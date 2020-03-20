@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Specify the text to display for email clients that don't support Windows Rights Management in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -61,6 +63,6 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 This example specifies the text to display to users associated with the UM mailbox policy named `MyUMMailboxPolicy` who have email clients that don't support Windows Rights Management.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ProtectedVoiceMailText "Your email client software does not support Protected Voice Mail. Please contact the Help Desk."
 ```

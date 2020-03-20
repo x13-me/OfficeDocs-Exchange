@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure an Outlook Voice Access number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -65,6 +67,6 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 
 This example sets the Outlook Voice Access number to 4255550100 for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AccessTelephoneNumbers 4255550100
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c0768815-8578-4385-8d4c-7d1e40304cec
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable directory lookups in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -52,6 +54,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example disables directory lookups on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -NameLookupEnabled $false
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable Message Waiting Indicator (MWI) for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example enables Message Waiting Indicator for users associated with the UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMessageWaitingIndicator $true
 ```

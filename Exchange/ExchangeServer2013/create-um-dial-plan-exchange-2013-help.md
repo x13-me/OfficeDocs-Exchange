@@ -5,9 +5,11 @@ ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMDialPlanWizardForm.CreateUMDialPlanWizardPage'
 ms.assetid: 963ff2e1-515d-439a-953a-664174e5e283
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 

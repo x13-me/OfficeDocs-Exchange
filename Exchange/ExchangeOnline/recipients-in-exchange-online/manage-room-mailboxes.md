@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create and manage room mailboxes
 ms.collection: 
 - exchange-online
@@ -64,7 +66,7 @@ This example creates a room mailbox with the following configuration:
 
 - The _Room_ switch specifies that this mailbox will be created as a room mailbox.
 
-```
+```PowerShell
 New-Mailbox -Name ConfRoom1 -DisplayName "Conference Room 1" -Room
 ```
 
@@ -78,7 +80,7 @@ You can make sure you've created the room mailbox correctly a couple of differen
 
 - In Exchange Online PowerShell, run the following command to display information about the new room mailbox.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
@@ -90,7 +92,7 @@ If you're planning to have more than a hundred rooms, or already have more than 
 
 This example creates a room list for building 32.
 
-```
+```PowerShell
 New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "contoso.com/rooms" -RoomList
 ```
 
@@ -98,7 +100,7 @@ New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "
 
 This example adds confroom3223 to the building 32 room list.
 
-```
+```PowerShell
 Add-DistributionGroupMember -Identity "Building 32 Conference Rooms" -Member confroom3223@contoso.com
 ```
 
@@ -108,7 +110,7 @@ You may already have created distribution groups in the past that contain your c
 
 This example converts the distribution group, building 34 conference rooms, to a room list.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 ```
 
@@ -245,19 +247,19 @@ Here are some examples of using Exchange Online PowerShell to change room mailbo
 
 This example changes the display name, the primary SMTP address (called the default reply address), and the room capacity. Also, the previous reply address is kept as a proxy address.
 
-```
+```PowerShell
 Set-Mailbox "Conf Room 123" -DisplayName "Conf Room 31/123 (12)" -EmailAddresses SMTP:Rm33.123@contoso.com,smtp:rm123@contoso.com -ResourceCapacity 12
 ```
 
 This example configures room mailboxes to allow booking requests to be scheduled only during working hours and sets a maximum duration of 9 hours.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Set-CalendarProcessing -ScheduleOnlyDuringWorkHours $true -MaximumDurationInMinutes 540
 ```
 
 This example uses the **Get-User** cmdlet to find all room mailboxes that correspond to private conference rooms, and then uses the **Set-CalendarProcessing** cmdlet to send booking requests to a delegate named Robin Wood to accept or decline.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'RoomMailbox') -and (DisplayName -like 'Private*')" | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Robin Wood"
 ```
 
@@ -269,7 +271,7 @@ To verify that you've successfully changed properties for a room mailbox, do the
 
 - In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```
 

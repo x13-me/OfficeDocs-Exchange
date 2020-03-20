@@ -8,6 +8,8 @@ ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.reviewer:
 title: Assign eDiscovery permissions in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -55,19 +57,19 @@ If you want users to be able to use Exchange Server In-Place eDiscovery, you fir
 
 To add a user to the Discovery Management role group, use the following syntax:
 
-```
+```PowerShell
 Add-RoleGroupMember -Identity "Discovery Management" -Member <Identity>
 ```
 
 This example adds the user Bsuneja to the Discovery Management role group.
 
-```
+```PowerShell
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
 This example add the members of the mail-enabled security group named Contoso Compliance Management.
 
-```
+```PowerShell
 Add-RoleGroupMember -Identity "Discovery Management" -Member "Contoso Compliance Management"
 ```
 
@@ -81,6 +83,6 @@ To verify that you've added the user to the Discovery Management role group, use
 
 - In the Exchange Management Shell, run the following command to view the members of the Discovery Management role group.
 
-  ```
+  ```PowerShell
   Get-RoleGroupMember -Identity "Discovery Management"
   ```

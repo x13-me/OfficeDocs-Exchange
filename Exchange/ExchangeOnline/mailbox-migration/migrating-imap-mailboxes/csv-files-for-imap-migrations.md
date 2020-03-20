@@ -16,6 +16,8 @@ search.appverid:
 - MED150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
@@ -44,7 +46,7 @@ The migration will fail if any one of these attributes isn't included in the hea
 
 Here's an example of the format for the CSV file. In this example, user credentials are used to migrate three mailboxes:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso\terry.adams,1091990
 annb@contoso.edu,contoso\ann.beebe,2111991
@@ -100,7 +102,7 @@ The following sections explain how to format the administrator credentials in th
 
 If you're migrating email from the IMAP implementation for Microsoft Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the CSV file. Let's say you're migrating email from Exchange for Terry Adams, Ann Beebe, and Paul Cannon. You have a mail administrator account, where the username is mailadmin and the password is P@ssw0rd. Here's what your CSV file would look like:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso-students/mailadmin/terry.adams,P@ssw0rd
 annb@contoso.edu,contoso-students/mailadmin/ann.beebe,P@ssw0rd
@@ -112,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
 For IMAP servers that support Simple Authentication and Security Layer (SASL), such as a Dovecot IMAP server, use the format **User_UserName\*Admin_UserName**, where the asterisk ( **\*** ) is a configurable separator character. Let's say you're migrating those same users' email from a Dovecot IMAP server using the administrator credentials mailadmin and P@ssw0rd. Here's what your CSV file would look like:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
@@ -124,7 +126,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
 If you're migrating email from Mirapoint Message Server, use the format **#user@domain#Admin_UserName#** for the administrator credentials. To migrate email from Mirapoint using the administrator credentials mailadmin and P@ssw0rd, your CSV file would look like this:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,#terry.adams@contoso-students.edu#mailadmin#,P@ssw0rd
 annb@contoso.edu,#ann.beebe@contoso-students.edu#mailadmin#,P@ssw0rd

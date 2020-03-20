@@ -10,6 +10,8 @@ title: Exchange admin center in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -49,19 +51,19 @@ These examples show you how to find the internal and external URL values for the
 
 - To find the values on all Exchange servers in your organization, run the following command:
 
-  ```
+  ```PowerShell
   Get-EcpVirtualDirectory | Format-List Server,Name,*Url
   ```
 
 - To find the values on the server named Mailbox01, run the following command:
 
-  ```
+  ```PowerShell
   Get-EcpVirtualDirectory | Format-List Name,*Url
   ```
 
 - To find the value for the virtual directory named "ecp (Default Web Site)" on the server named Mailbox01, run the following command.
 
-  ```
+  ```PowerShell
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 

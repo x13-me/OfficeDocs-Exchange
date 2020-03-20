@@ -3,11 +3,13 @@ localization_priority: Normal
 description: A Unified Messaging (UM) hunt group is a logical representation of a Private Branch eXchange (PBX) or IP PBX hunt group. A UM hunt group acts as a connection or link between a UM IP gateway and a UM dial plan.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMHuntGroupWizardForm.CreateUMHuntGroupWizardPage1
 ms.author: v-mapenn
 ms.assetid: 43ecb1ec-5f82-4516-9010-de8f954d3758
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMHuntGroupWizardForm.CreateUMHuntGroupWizardPage1
 title: Create a UM hunt group in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -67,12 +69,12 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 This example creates a UM hunt group named `MyUMHuntGroup` that has a pilot identifier of 12345.
 
-```
+```PowerShell
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 12345 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```
 
 This example creates a UM hunt group named `MyUMHuntGroup` that has multiple pilot identifiers.
 
-```
+```PowerShell
 New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialplan MyUMDialPlan -UMIPGateway MyUMIPGateway
 ```

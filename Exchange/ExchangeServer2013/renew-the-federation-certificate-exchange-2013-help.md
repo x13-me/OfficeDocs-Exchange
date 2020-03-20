@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -43,9 +45,6 @@ For more information about federation trusts and federation, see [Federation](fe
 ## Update a working federation certificate
 
 If the federation certificate hasn't expired, you can update the existing federation trust with a new federation certificate.
-
-> [!NOTE]
-> The Graphical User Interface/Wizard can be used as an alternative to update the Microsoft Teams certificate automatically.
 
 ## Step 1: Create a new federation certificate
 
@@ -101,7 +100,7 @@ You can safely perform this step now, because the proof of domain ownership TXT 
 
    The command output looks like this:
 
-   ```text
+   ```console
    Thumbprint : <new certificate thumbprint> (for example, 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73)
 
    Proof      : <new hash text> (for example, znMfbkgSbOQSsWFdsW+gm3to0nZSdE3zbcPPHGVAqdgsLFGsCPuLHiyVbKoPmgyZKX90NH2g1PbCZH0YTQF6oA==)

@@ -13,6 +13,8 @@ ms.collection:
 - M365-email-calendar
 description: 'Summary: How to move your Exchange Online public folders to Office 365 Groups.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Use batch migration to migrate Exchange Online public folders to Office 365 Groups
 
 ---
@@ -84,7 +86,7 @@ The following steps are necessary to prepare your organization for the migration
 
 4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
 
-   ```
+   ```PowerShell
    Get-MigrationConfig
    ```
 
@@ -102,13 +104,13 @@ The .csv file needs to contain the following columns:
 
 - **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
 
-  ```
+  ```PowerShell
   Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
   ```
 
 An example .csv:
 
-```
+```csv
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
 "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
@@ -130,13 +132,13 @@ In this step, you gather information from your Exchange environment, and then yo
 
    - **PublicFolderToUnifiedGroup** is the parameter to indicate that it is a public folder to Office 365 Groups migration batch.
 
-     ```
+     ```PowerShell
      New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-AutoStart]
      ```
 
 2. Start the migration by running the following command in Exchange Online PowerShell. Note that this step is necessary only if the `-AutoStart` parameter was not used while creating the batch above in step 1.
 
-    ```
+    ```PowerShell
     Start-MigrationBatch PublicFolderToGroupMigration
     ```
 
@@ -164,7 +166,7 @@ In the following command:
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-```
+```PowerShell
 .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $false
 ```
 
@@ -185,7 +187,7 @@ In the following command:
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-```
+```PowerShell
 .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $false
 ```
 
@@ -193,7 +195,7 @@ In the following command:
 
 After you've made your public folders read-only, you'll need to perform the migration again. This is necessary for a final incremental copy of your data. Before you can run the migration again, you'll have to remove the existing batch, which you can do by running the following command:
 
-```
+```PowerShell
 Remove-MigrationBatch <name of migration batch>
 ```
 
@@ -205,13 +207,13 @@ Next, create a new batch with the same .csv file by running the following comman
 
 - **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
 
-```
+```PowerShell
 New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
 ```
 
 After the new batch is created, start the migration by running the following command in Exchange Online PowerShell. Note that this step is only necessary if the `-AutoStart` parameter was not used in the preceding command.
 
-```
+```PowerShell
 Start-MigrationBatch PublicFolderToGroupMigration
 ```
 
@@ -340,7 +342,7 @@ Run the following command. In this command:
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-```
+```PowerShell
 .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $false
 ```
 

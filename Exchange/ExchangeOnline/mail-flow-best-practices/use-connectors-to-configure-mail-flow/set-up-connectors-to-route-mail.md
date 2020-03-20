@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set up connectors to route mail between Office 365 and your own email servers
 ms.collection: exchange-online
 audience: ITPro
@@ -170,7 +172,7 @@ To create the Send connector in Exchange Server, use the following syntax in the
 > [!NOTE]
 > In the following procedures, the _CloudServicesMailEnabled_ parameter is available in Exchange 2013 or later.
 
-```
+```powershell
 New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn <CertificateHostNameValue> -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts <YourDomain>-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation
 ```
 
@@ -182,7 +184,7 @@ This example creates a new Send Connector with the following properties:
 
 - **SmartHosts**: contoso-com.mail.protection.outlook.com
 
-```
+```powershell
 New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn mail.contoso.com -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts contoso-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation
 ```
 

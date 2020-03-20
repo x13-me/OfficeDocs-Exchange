@@ -4,10 +4,12 @@ TOCTitle: Import and export files in the Exchange Management Shell
 ms:assetid: b4b669e8-a3aa-4b0b-ad34-f1f15d9c9369
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638170(v=EXCHG.150)
 ms:contentKeyID: 50117647
-ms.reviewer: 
+ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -142,7 +144,7 @@ The syntax to export files in Exchange 2013 is used any time you want to accept 
 
 The Shell must know that you want to save the data stored in the **FileData** property to your local computer. To do so, use the following syntax.
 
-```command line
+```powershell
 <cmdlet> | ForEach {<cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte}
 ```
 

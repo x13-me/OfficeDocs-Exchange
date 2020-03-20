@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e54937d5-3074-454f-b561-e601fecfc6ad
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable missed call notifications for a user in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,6 +56,6 @@ For additional management tasks related to UM mailbox policies, see [Manage a UM
 
 This example disables missed call notifications for a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowMissedCallNotifications $false
 ```

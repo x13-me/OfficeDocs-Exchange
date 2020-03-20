@@ -8,6 +8,8 @@ ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer:
 title: Enable or disable Outlook on the web access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -73,19 +75,19 @@ For additional management tasks related to user access to mailboxes, see these t
 
 To enable or disable Outlook on the web access to a single mailbox, use this syntax:
 
-```
+```powershell
 Set-CasMailbox -Identity <MailboxIdentity> -OWAEnabled <$true | $false>
 ```
 
 This example disables Outlook on the web access to the mailbox named Yan Li.
 
-```
+```powershell
 Set-CasMailbox -Identity "Yan Li" -OWAEnabled $false
 ```
 
 This example enables Outlook on the web access to the mailbox named Elly Nkya.
 
-```
+```powershell
 Set-CasMailbox -Identity "Elly Nkya" -OWAEnabled $true
 ```
 
@@ -131,19 +133,19 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 This example disables Outlook on the web access to all user mailboxes in the North America\Finance OU.
 
-```
+```powershell
 $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach  {Set-CasMailbox  $_.Identity -OWAEnabled $false}
 ```
 
 This example disables Outlook on the web access to all user mailboxes in the Engineering department in Washington state.
 
-```
+```powershell
 Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -OWAEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable Outlook on the web access to the specified mailboxes.
 
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -OWAEnabled $false}
 ```
 
@@ -159,18 +161,18 @@ To verify that you've successfully enabled or disabled Outlook on the web access
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
-  ```
+  ```powershell
   Get-CasMailbox -Identity "<MailboxIdentity>"
   ```
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```
+  ```powershell
   Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where Outlook on the web access is disabled:
 
-  ```
+  ```powershell
   Get-CasMailbox -ResultSize unlimited -Filter "OWAEnabled -eq `$false"
   ```

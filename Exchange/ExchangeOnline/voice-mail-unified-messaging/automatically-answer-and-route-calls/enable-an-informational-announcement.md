@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable an informational announcement in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,6 +56,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example enables an informational announcement that uses the `MyInfoAnnouncement.wav` file for the UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -InfoAnnouncementEnabled $true -InfoAnnouncementFilename MyInfoAnnouncement.wav
 ```

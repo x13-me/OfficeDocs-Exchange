@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Common attachment blocking scenarios for mail flow rules in Exchange Online
 ms.collection: 
 - exchange-online
@@ -44,7 +46,7 @@ To get started implementing any of these scenarios to block certain message type
 
 Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
 
-```
+```PowerShell
 Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
 ```
 

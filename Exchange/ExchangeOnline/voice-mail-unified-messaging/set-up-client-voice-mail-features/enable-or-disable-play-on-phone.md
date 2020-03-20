@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: d3281a97-6fc6-42a3-855f-1af1184a644a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Play on Phone for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,12 +51,12 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example enables the Play on Phone feature for users who are associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowPlayOnPhone $true
 ```
 
 This example disables the Play on Phone feature for users who are associated with the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowPlayOnPhone $false
 ```

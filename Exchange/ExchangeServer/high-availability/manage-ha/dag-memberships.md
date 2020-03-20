@@ -8,6 +8,8 @@ ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms.reviewer:
 title: Manage database availability group membership
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -59,19 +61,19 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 This example adds the Mailbox server MBX1 to the DAG DAG1.
 
-```
+```powershell
 Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
 ```
 
 This example removes the Mailbox server MBX1 from the DAG DAG1. Before running this command, make sure that no replicated databases exist on the Mailbox server.
 
-```
+```powershell
 Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
 ```
 
 This example removes the configuration settings for the Mailbox server MBX4 from the DAG DAG2. MBX4 is expected to be offline for an extended period, so its configuration is being removed from the DAG while it's offline to establish quorum with the remaining online DAG members.
 
-```
+```powershell
 Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
 ```
 
@@ -83,7 +85,7 @@ To verify that you've successfully managed DAG membership, do one of the followi
 
 - In the Exchange Management Shell, run the following command to display DAG membership information.
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
   ```
 

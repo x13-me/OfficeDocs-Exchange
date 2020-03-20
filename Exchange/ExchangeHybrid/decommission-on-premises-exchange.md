@@ -3,6 +3,8 @@ title: "How and when to decommission your on-premises Exchange servers in a hybr
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.reviewer:
 ms.topic: article
@@ -92,14 +94,14 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    Exchange Server 2010 or 2013:
 
-   ```
+   ```PowerShell
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
 
    Exchange Server 2016 or later:
 
-   ```
-   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
+   ```PowerShell
+   Get-ClientAccessService | Set-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
    > [!NOTE]
@@ -137,7 +139,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command:
 
-      ```
+      ```PowerShell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -147,7 +149,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command:
 
-      ```
+      ```PowerShell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
@@ -189,12 +191,15 @@ The graphic below describes the actual end state:
 3. Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP's are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
 
    Exchange Server 2010 or 2013:
-   ```
+
+   ```PowerShell
    Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
    ```
+
    Exchange Server 2016 or later:
-   ```
-   Get-Get-ClientAccessService | Set-Get-ClientAccessService -AutoDiscoverServiceInternalUri $Null
+
+   ```PowerShell
+   Get-ClientAccessService | Set-ClientAccessService -AutoDiscoverServiceInternalUri $Null
    ```
 
    > [!NOTE]
@@ -202,7 +207,7 @@ The graphic below describes the actual end state:
 
 4. To prevent the hybrid configuration objects from being recreated in the future, you should remove the hybrid configuration object from Active Directory. To do this, open the Exchange Management Shell and run the following:
 
-   ```
+   ```PowerShell
    Remove-HybridConfiguration
    ```
 
@@ -216,8 +221,8 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```
-      Set-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
+      ```PowerShell
+      Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
       ```
 
    To disable the Exchange Online configuration:
@@ -226,7 +231,7 @@ The graphic below describes the actual end state:
 
    2. Run the following command:
 
-      ```
+      ```PowerShell
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 

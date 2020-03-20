@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable multimedia playback of protected voice messages in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -72,12 +74,12 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 This example allows users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` to play back protected voice messages using a media player.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $false
 ```
 
 This example prevents users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` from playing back protected voice messages using a media player.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $true
 ```

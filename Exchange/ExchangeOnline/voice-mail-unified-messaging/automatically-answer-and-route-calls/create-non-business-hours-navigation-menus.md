@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create non-business hours navigation menus in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -81,6 +83,6 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MyAutoAttendant` and enables non-business hours key mappings so that when callers say "After Hours" they will be forwarded to extension number 12345, and if they say "Directions" they will be forwarded to extension number 23456.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AfterHoursKeyMappingEnabled $true -AfterHoursKeyMapping "AfterhoursOperator,12345","Directions,23456"
 ```

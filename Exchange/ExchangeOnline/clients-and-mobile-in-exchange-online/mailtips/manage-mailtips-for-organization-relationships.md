@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -43,13 +45,13 @@ You use the **Set-OrganizationRelationship** cmdlet to configure these settings.
 
 This example configures the organizational relationship so that MailTips are returned to senders in the remote organization when composing messages to recipients in your organization.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $true
 ```
 
 This example configures the organizational relationship to prevent MailTips from being returned to senders in the remote organization when composing messages to recipients in your organization.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $false
 ```
 
@@ -59,13 +61,13 @@ For detailed syntax and parameter information, see [Set-OrganizationRelationship
 
 For each organizational relationship, you can determine which set of MailTips are returned to senders in the other organization. This example configures the organizational relationship so that all MailTips are returned.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel All
 ```
 
 This example configures the organizational relationship so that only the Automatic Replies, Oversize Message, Restricted Recipient, and Mailbox Full MailTips are returned.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel Limited
 ```
 
@@ -74,7 +76,7 @@ This example configures the organizational relationship so that no MailTips are 
 > [!NOTE]
 > Don't use this method to disable MailTips for this relationship. To disable MailTips, set the _MailTipsAccessEnabled_ parameter to `$false`.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None
 ```
 
@@ -92,7 +94,7 @@ You can restrict the return of recipient-specific MailTips to a specific group o
 
 You can specify a MailTips access group on the organizational relationship. After you specify a group, the recipient-specific MailTips are returned only for mailboxes, mail contacts, and mail users that are members of that group. This example configures the organizational relationship to return recipient-specific MailTips only for members of the ShareMailTips@contoso.com group.
 
-```
+```PowerShell
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessScope ShareMailTips@contoso.com
 ```
 

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b80c57f1-394c-4608-8ad3-52a3e6d697db
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or prevent transferring calls from Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -47,12 +49,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example enables Outlook Voice Access users to transfer calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $true
 ```
 
 This example prevents Outlook Voice Access users from transferring calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $false
 ```

@@ -8,6 +8,8 @@ ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms.reviewer:
 title: Manage mailbox database copies
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -364,19 +366,19 @@ The following table lists the available parameters for the RedistributeActiveDat
 
 This example shows the current database distribution for a DAG, including preference count list.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
 ```
 
 This example redistributes and balances the active mailbox database copies in a DAG using activation preference without prompting for input.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
 ```
 
 This example redistributes and balances the active mailbox database copies in a DAG using activation preference, and produces a summary of the distribution.
 
-```
+```powershell
 RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
 ```
 

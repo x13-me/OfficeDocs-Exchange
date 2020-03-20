@@ -8,6 +8,8 @@ ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
 ms.reviewer: 
 title: Journaling in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

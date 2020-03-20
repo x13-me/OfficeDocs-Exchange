@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: bc9b8226-bd8b-4edc-882b-4f19cfe118eb
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Accessing public folders with Outlook 2016 for Mac
 ms.collection: 
 - exchange-online

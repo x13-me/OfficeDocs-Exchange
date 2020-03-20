@@ -10,6 +10,8 @@ title: Export a certificate from an Exchange server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -53,7 +55,7 @@ You can export a certificate from an Exchange server as a backup or to import th
 
 To export a binary certificate file that you can import on other clients or servers, use the following syntax:
 
-```
+```PowerShell
 Export-ExchangeCertificate -Thumbprint <Thumbprint> -FileName "<FilePathOrUNCPath>\<FileName>.pfx" -BinaryEncoded -Password (ConvertTo-SecureString -String '<Password> ' -AsPlainText -Force) [-Server <ServerIdentity>]
 ```
 
@@ -65,7 +67,7 @@ This example exports a certificate from the local Exchange server to a file with
 
 - The password for the certificate file is `P@ssw0rd1`.
 
-```
+```PowerShell
 Export-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -FileName "C:\Data\Fabrikam.pfx" -BinaryEncoded -Password (ConvertTo-SecureString -String 'P@ssw0rd1' -AsPlainText -Force)
 ```
 

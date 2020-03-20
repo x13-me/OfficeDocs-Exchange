@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -42,7 +44,7 @@ An ABP requires one global address list (GAL), one offline address book (OAB), o
 
 To create an ABP, use this syntax:
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "<Unique Name>" -GlobalAddressList "<GAL>" -OfflineAddressBook "<OAB>" -RoomList "<RoomList>" -AddressLists "<AddressList1>","<AddressList2>"...
 ```
 
@@ -58,7 +60,7 @@ This example creates an ABP with the following settings:
 
 - **Address lists**: All Fabrikam, All Fabrikam Mailboxes, All Fabrikam DLs, and All Fabrikam Contacts
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "All Fabrikam ABP" -AddressLists "\All Fabrikam","\All Fabrikam Mailboxes","\All Fabrikam DLs","\All Fabrikam Contacts" -OfflineAddressBook \Fabrikam-All-OAB -GlobalAddressList "\All Fabrikam" -RoomList "\All Fabrikam Rooms"
 ```
 
@@ -70,13 +72,13 @@ To verify that you've successfully created an ABP, use either of these procedure
 
 - Run the following command to verify that the ABP is listed:
 
-   ```
+   ```PowerShell
    Get-AddressBookPolicy
    ```
 
 - Replace _\<ABPName\>_ with the name of the ABP, and run the following command to verify the property values:
 
-   ```
+   ```PowerShell
    Get-AddressBookPolicy -Identity "<ABPName>" | Format-List
    ```
 

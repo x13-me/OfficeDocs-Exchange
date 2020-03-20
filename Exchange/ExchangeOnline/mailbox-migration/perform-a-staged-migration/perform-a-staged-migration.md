@@ -17,6 +17,8 @@ search.appverid:
 - MBS150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
@@ -160,7 +162,7 @@ Here's an example of the format for the CSV file. In this example, three on-prem
 
 The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
 
-```
+```CSV
 EmailAddress,Password,ForceChangePassword
 pilarp@contoso.com,Pa$$w0rd,False
 tobyn@contoso.com,Pa$$w0rd,False

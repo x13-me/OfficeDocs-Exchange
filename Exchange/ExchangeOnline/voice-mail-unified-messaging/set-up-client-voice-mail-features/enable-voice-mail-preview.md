@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 206a5d2b-27c9-4e9b-a29a-6ddffaa07109
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable Voice Mail Preview for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,6 +51,6 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to use the Voice Mail Preview feature.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - AllowVoiceMailPreview $true
 ```

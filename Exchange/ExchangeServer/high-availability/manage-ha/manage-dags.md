@@ -8,6 +8,8 @@ ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms.reviewer:
 title: Manage database availability groups
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -239,7 +241,7 @@ A DAG network is a collection of one or more subnets used for either replication
 
 In Exchange 2010, manual configuration of DAG networks was necessary in many scenarios. By default, in later versions of Exchange, DAG networks are automatically configured by the system. Before you can create or modify DAG networks, you must first enable manual DAG network control by running the following command:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
 ```
 
@@ -282,7 +284,7 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 To complete the configuration of ReplicationDagNetwork01 as the dedicated replication network, disable replication for MapiDagNetwork by running the following command.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
 ```
 
@@ -316,7 +318,7 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 By default, DAGs perform discovery of all networks detected and configured for use by the underlying cluster. This includes any Internet SCSI (iSCSI) networks in use as a result of using iSCSI storage for one or more DAG members. As a best practice, iSCSI storage should use dedicated networks and network adapters. These networks shouldn't be managed by the DAG or its cluster, or used as DAG networks (MAPI or replication). Instead, these networks should be manually disabled from use by the DAG, so they can be dedicated to iSCSI storage traffic. To disable iSCSI networks from being detected and used as DAG networks, configure the DAG to ignore any currently detected iSCSI networks using the [Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroupnetwork) cmdlet, as shown in this example:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
 ```
 
@@ -348,7 +350,7 @@ The default value is `GoodAvailability`. If you specify either `BestAvailability
 
 The following example configures a Mailbox server with an _AutoDatabaseMountDial_ setting of `GoodAvailability`.
 
-```
+```powershell
 Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
 ```
 
@@ -366,7 +368,7 @@ The _DatabaseCopyAutoActivationPolicy_ parameter specifies the type of automatic
 
 The following example configures a Mailbox server with a _DatabaseCopyAutoActivationPolicy_ setting of `Blocked`.
 
-```
+```powershell
 Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
 ```
 
@@ -380,7 +382,7 @@ The _MaximumActiveDatabases_ parameter is configured with a whole number numeric
 
 The following example configures a Mailbox server to support a maximum of 20 active databases.
 
-```
+```powershell
 Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 ```
 
@@ -413,31 +415,31 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 1. To empty the transport queues, run the following command:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component HubTransport -State Draining -Requester Maintenance
    ```
 
 2. To initiate the draining of the transport queues, run the following command:
 
-   ```
+   ```powershell
    Restart-Service MSExchangeTransport
    ```
 
 3. To begin the process of draining all Unified Messaging calls (in Exchange 2016 only), run the following command:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
    ```
 
 4. To access the DAG maintenance scripts, run the following command:
 
-   ```
+   ```powershell
    CD $ExScripts
    ```
 
 5. To run the StartDagServerMaintenance.ps1 script, run the following command:
 
-   ```
+   ```powershell
    .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
    ```
 
@@ -448,13 +450,13 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 6. To redirect messages pending delivery in the local queues to the Exchange server specified by the Target parameter, run
 
-   ```
+   ```powershell
    Redirect-Message -Server <ServerName> -Target <Server FQDN>
    ```
 
 7. To place the server into maintenance mode, run:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
    ```
 
@@ -462,25 +464,25 @@ To verify that a server is ready for maintenance, perform the following tasks:
 
 1. To verify the server has been placed into maintenance mode, confirm that only `Monitoring` and `RecoveryActionsEnabled` are in an Active state when you run the following command:
 
-   ```
+   ```powershell
    Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
    ```
 
 2. To verify the server is not hosting any active database copies, run:
 
-   ```
+   ```powershell
    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
    ```
 
 3. To verify that the cluster node is paused, run:
 
-   ```
+   ```powershell
    Get-ClusterNode <ServerName> | Format-List
    ```
 
 4. To verify that all transport queues have been emptied, run:
 
-   ```
+   ```powershell
    Get-Queue
    ```
 
@@ -496,37 +498,37 @@ When you're ready to restore the DAG member to full production status, including
 
 1. To configure the server as out of maintenance mode and ready to accept client connections, run:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
    ```
 
 2. To allow the server to accept Unified Messaging calls (in Exchange 2016 only), run:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
    ```
 
 3. To access the DAG maintenance scripts, run the following command:
 
-   ```
+   ```powershell
    CD $ExScripts
    ```
 
 4. To execute the StopDagServerMaintenance.ps1 script, run:
 
-   ```
+   ```powershell
    .\StopDagServerMaintenance.ps1 -serverName <ServerName>
    ```
 
 5. To enable the transport queues to resume accepting and processing messages, run:
 
-   ```
+   ```powershell
    Set-ServerComponentState <ServerName> -Component HubTransport -State Active -Requester Maintenance
    ```
 
 6. To resume transport activity, run:
 
-   ```
+   ```powershell
    Restart-Service MSExchangeTransport
    ```
 
@@ -534,7 +536,7 @@ To verify that a server is ready for production use, perform the following tasks
 
 1. To verify the server is not in maintenance mode, run
 
-   ```
+   ```powershell
    Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
    ```
 

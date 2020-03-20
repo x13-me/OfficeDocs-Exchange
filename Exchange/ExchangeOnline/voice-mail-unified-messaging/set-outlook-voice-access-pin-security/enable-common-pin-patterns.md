@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 9940a8c2-f576-4089-ab96-8b318ad3da0f
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable common PIN patterns for voice mail in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -60,6 +62,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example allows users associated with the UM mailbox policy named `MyUMMailboxPolicy` to use PINs that contain common patterns.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowCommonPatterns $true
 ```

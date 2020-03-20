@@ -8,6 +8,8 @@ ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 ms.reviewer: 
 title: Understanding back pressure
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -263,7 +265,7 @@ You can use the **Get-ExchangeDiagnosticInfo** cmdlet in the Exchange Management
 
 To view the back pressure settings on an Exchange server, run the following command:
 
-```
+```PowerShell
 [xml]$bp=Get-ExchangeDiagnosticInfo [-Server <ServerIdentity> ] -Process EdgeTransport -Component ResourceThrottling; $bp.Diagnostics.Components.ResourceThrottling.ResourceTracker.ResourceMeter
 ```
 

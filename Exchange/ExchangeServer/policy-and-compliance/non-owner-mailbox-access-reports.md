@@ -8,6 +8,8 @@ ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms.reviewer:
 title: Run a non-owner mailbox access report
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -41,23 +43,23 @@ You have to enable mailbox audit logging for each mailbox that you want to inclu
 
 To enable mailbox audit logging for a single mailbox, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Set-Mailbox <Identity> -AuditEnabled $true
 ```
 
 For example, to enable mailbox auditing for a user named Florence Flipo, run the following command.
 
-```
+```PowerShell
 Set-Mailbox "Florence Flipo" -AuditEnabled $true
 ```
 
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands:
 
-```
+```PowerShell
 $UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 ```
 
-```
+```PowerShell
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 
@@ -65,7 +67,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 Run the following command to verify that you've successfully configured mailbox audit logging.
 
-```
+```PowerShell
 Get-Mailbox | Format-List Name,AuditEnabled
 ```
 

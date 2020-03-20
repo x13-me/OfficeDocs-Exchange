@@ -3,11 +3,13 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) mailbox policy, you can view and configure a variety of settings. For example, you can configure UM features like Voice Mail Preview or Play on Phone and other security-related options such as Protected Voice Mail and PIN policy settings.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab
 ms.author: v-mapenn
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab
 title: Manage a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -222,19 +224,19 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 This example sets the PIN settings for users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN that is used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```
 
 This example selects the in-country or region groups and international groups from those configured on the UM dial plan associated with the UM mailbox policy. UM-enabled users associated with this UM mailbox policy will be able to place outbound calls according to the rules defined on these groups.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowDialPlanSubscribers $true -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2 -AllowExtensions $true
 ```
 
 This example configures the text of voice messages sent to UM-enabled users and the text included in an email message sent to a user who has been UM-enabled.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been enabled for Unified Messaging." -VoiceMailText "You have received a voice message from Microsoft Exchange Unified Messaging."
 ```
 
@@ -242,12 +244,12 @@ Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been en
 
 This example returns a formatted list of all UM mailbox policies in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMMailboxPolicy | Format-List
 ```
 
 This example returns the properties and values for a UM mailbox policy named `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Get-UMMailboxPolicy -Identity MyUMMailboxPolicy
 ```

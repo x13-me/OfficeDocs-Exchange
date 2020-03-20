@@ -3,11 +3,13 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 ms.author: v-mapenn
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
 title: Manage a UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -342,19 +344,19 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example configures a UM dial plan named `MyDialPlan` to use 9 for the outside line access code.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -OutsideLineAccessCode 9
 ```
 
 This example configures a UM dial plan named `MyDialPlan` to use a welcome greeting.
 
-```
+```PowerShell
 Set-UMDialplan -Identity MyDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename welcome.wav
 ```
 
 This example configures a UM dial plan named `MyDialPlan` with dialing rules.
 
-```
+```PowerShell
 $csv=import-csv "C:\MyInCountryGroups.csv"
 Set-UMDialPlan -Identity MyDialPlan -ConfiguredInCountryGroups $csv
 Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distance"
@@ -364,12 +366,12 @@ Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distanc
 
 This example displays a list of all the UM dial plans.
 
-```
+```PowerShell
 Get-UMDialplan
 ```
 
 This example displays a formatted list of all of the settings on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Get-UMDialplan -Identity MyUMDialPlan | Format-List
 ```

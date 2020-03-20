@@ -8,6 +8,8 @@ ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 ms.reviewer:
 title: Place a mailbox on Litigation Hold
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -58,7 +60,7 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 This example places the mailbox bsuneja@contoso.com on Litigation Hold. Items in the mailbox are held indefinitely or until the hold is removed.
 
-```
+```PowerShell
 Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 ```
 
@@ -69,7 +71,7 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
 This example places the mailbox bsuneja@contoso.com on Litigation Hold and preserves items for 2555 days (approximately 7 years).
 
-```
+```PowerShell
 Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
 ```
 
@@ -79,7 +81,7 @@ Your organization may require that all mailbox data be preserved.
 
 This example places all user mailboxes in the organization on Litigation Hold and sets the hold duration for one year (365 days).
 
-```
+```PowerShell
 Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
 ```
 
@@ -93,7 +95,7 @@ See the [More information](#more-information) section for examples of using othe
 
 This example removes the mailbox bsuneja@contoso.com from Litigation Hold.
 
-```
+```PowerShell
 Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 ```
 
@@ -115,13 +117,13 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
 - In the Exchange Management Shell, run one of the following commands:
 
-  ```
+  ```PowerShell
   Get-Mailbox <name of mailbox> | Format-List LitigationHold*
   ```
 
     or
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,LitigationHold*
   ```
 
@@ -156,23 +158,23 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
   Here are some examples of using the **Get-Mailbox** and **Get-Recipient** cmdlets to return a subset of mailboxes based on common user or mailbox properties. These examples assume that relevant mailbox properties (such as _CustomAttributeN_ or _Department_) have been populated.
 
-  ```
+  ```PowerShell
   Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
   ```
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
   ```
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
   ```
 
-  ```
+  ```PowerShell
   Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
   ```
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize Unlimited -Filter "RecipientTypeDetails -ne 'DiscoveryMailbox'"
   ```
 

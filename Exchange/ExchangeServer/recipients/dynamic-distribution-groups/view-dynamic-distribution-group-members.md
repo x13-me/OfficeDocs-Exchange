@@ -8,6 +8,8 @@ ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.reviewer:
 title: View members of a dynamic distribution group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -36,11 +38,11 @@ You can't use the Exchange admin center (EAC) to view the members of a dynamic d
 
 This example returns the list of members for the dynamic distribution group named Full Time Employees. The first command stores the dynamic distribution group object in the variable `$FTE`. The second command uses the **Get-Recipient** cmdlet to list the recipients that match the criteria defined for the dynamic distribution group.
 
-```
+```PowerShell
 $FTE = Get-DynamicDistributionGroup "Full Time Employees"
 ```
 
-```
+```PowerShell
 Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 

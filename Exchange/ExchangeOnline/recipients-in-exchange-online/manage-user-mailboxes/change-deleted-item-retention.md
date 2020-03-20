@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ce17f1ec-b96c-4c9e-b20a-507fe0afc684
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change how long permanently deleted items are kept for an Exchange Online mailbox
 ms.collection: 
 - exchange-online
@@ -44,13 +46,13 @@ In these examples, we increase the retention period to 30 days, the maximum for 
 
 **Example 1:**: Set Emily Maier's mailbox to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 ```
 
 **Example 2:**: Set all user mailboxes in the organization to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
@@ -63,13 +65,13 @@ Need more details about using these commands? See Exchange Online PowerShell Hel
 
 To check for one mailbox, run the following command:
 
-```
+```PowerShell
 Get-Mailbox <Name> | Format-List RetainDeletedItemsFor
 ```
 
 Or to check for all mailboxes, run the following command:
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,RetainDeletedItemsFor
 ```
 

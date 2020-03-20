@@ -3,6 +3,8 @@ title: "Permissions in Exchange hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -39,7 +41,7 @@ In on-premises Exchange deployments, users can be granted a variety of permissio
 
 ### Mailbox permissions in hybrid environments
 
-Not all milbox permissions are fully supported in an Exchange hybrid environment.
+Not all mailbox permissions are fully supported in an Exchange hybrid environment.
 
 #### Mailbox permissions supported in hybrid environments
 
@@ -74,13 +76,13 @@ For example, you want to grant Send As permission for an on-premises mailbox nam
   
 Run the following command in the Exchange Management Shell on your on-premises Exchange server:
 
-```
+```PowerShell
 Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
 ```
 
 Then run the corresponding command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
 ```
 
@@ -88,7 +90,7 @@ Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
 
 Send As permission is also needed to comply with the following on-premises Exchange server and AAD Connect requirements:
 
-- **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup.
+- **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup. (Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group.)
 
 - **Folder permissions**: Grants access to the contents of a particular folder.
 

@@ -17,6 +17,8 @@ search.appverid:
 - MED150
 - MET150
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom:
 - Adm_O365
 - Adm_O365_FullSet
@@ -38,6 +40,9 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - Modern authentication is enabled by default in Exchange Online, Skype for Business Online and SharePoint Online.
 
+> [!Note]
+> For tenants created **before** August 1, 2017, modern authentication is turned **off** by default for Exchange Online and Skype for Business Online.
+
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **only** affects modern authentication connections by Windows-based Outlook clients that support modern authentication (Outlook 2013 or later).
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **does not** affect other email clients that support modern authentication (for example, Outlook Mobile, Outlook for Mac 2016, and Exchange ActiveSync in iOS 11 or later). These other email clients **always** use modern authentication to log in to Exchange Online mailboxes.
@@ -54,7 +59,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
    - Run the following command to enable modern authentication connections to Exchange Online by Outlook 2013 or later clients:
 
-     ```
+     ```PowerShell
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
      ```
 
@@ -62,13 +67,13 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
    - Run the following command to prevent modern authentication connections (force the use of basic authentication connections) to Exchange Online by Outlook 2013 or later clients:
 
-     ```
+     ```PowerShell
      Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
      ```
 
 3. To verify that the change was successful, run the following command:
 
-     ```
+     ```PowerShell
      Get-OrganizationConfig | Format-Table Name,OAuth* -Auto
      ```
 

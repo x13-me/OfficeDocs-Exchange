@@ -10,6 +10,8 @@ title: Create an Exchange Server certificate request for a certification authori
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -123,7 +125,7 @@ The certificate request appears in the list of Exchange certificates with a stat
 
 To create a new certificate request for a wildcard certificate, a SAN certificate, or a certificate for a single host, use the following syntax:
 
-```
+```PowerShell
 New-ExchangeCertificate -GenerateRequest -RequestFile <FilePathOrUNCPath>\<FileName>.req [-FriendlyName <DescriptiveName>] -SubjectName [C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>],CN=<HostNameOrFQDN> [-DomainName <Host1>,<Host2>...] [-BinaryEncoded <$true | $false>] [-KeySize <1024 | 2048 | 4096>] [-Server <ServerIdentity>]
 ```
 
@@ -135,7 +137,7 @@ This example creates a certificate request on the local Exchange server for a wi
 
 - **FriendlyName**: Contoso.com Wildcard Cert
 
-```
+```PowerShell
 New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName "C=US,CN=*.contoso.com"
 ```
 
@@ -159,8 +161,10 @@ This example creates a certificate request on the local Exchange server for a SA
 
 - **FriendlyName**: Contoso.com SAN Cert
 
-```
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net"
+- **DomainName**: Unquoted comma-separated list of domains
+
+```PowerShell
+New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com" -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
 ```
 
 This example creates a request for a single subject certificate with the following properties:
@@ -171,7 +175,7 @@ This example creates a request for a single subject certificate with the followi
 
 - **FriendlyName**: Mail.contoso.com Cert
 
-```
+```PowerShell
 New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName "C=US,CN=mail.contoso.com"
 ```
 
@@ -195,7 +199,7 @@ To verify that you have successfully created a new certificate request, perform 
 
 - In the Exchange Management Shell on the server where you stored the certificate request, run the following command:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "PendingRequest" -and $_.IsSelfSigned -eq $false} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint
   ```
 

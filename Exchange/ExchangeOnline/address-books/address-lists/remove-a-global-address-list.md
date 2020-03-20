@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -43,13 +45,13 @@ For additional GAL management tasks, see [Address list procedures in Exchange On
 
 To remove a GAL, use the following syntax:
 
-```
+```PowerShell
 Remove-GlobalAddressList -Identity <GALIdentity>
 ```
 
 This example removes the address list named Agency A GAL.
 
-```
+```PowerShell
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
@@ -59,6 +61,6 @@ For detailed syntax and parameter information, see [Remove-GlobalAddressList](ht
 
 To verify that you've successfully removed a GAL, run the following command in Exchange Online PowerShell to verify that the GAL isn't listed:
 
-```
+```PowerShell
 Get-GlobalAddressList
 ```

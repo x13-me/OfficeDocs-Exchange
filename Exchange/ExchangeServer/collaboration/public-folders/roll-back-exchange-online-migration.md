@@ -9,6 +9,8 @@ ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms.collection: exchange-server
 ms.reviewer: 
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Roll back a public folder migration from Exchange Server to Exchange Online
 
@@ -24,7 +26,7 @@ Note that if you roll back your migration, you will lose any content that was ad
 
 1. In your Exchange on-premises environment, run the following command to unlock your Exchange Server public folders (note that the unlocking may take several hours):
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false -PublicFoldersEnabled Local
    ```
 
@@ -32,7 +34,7 @@ Note that if you roll back your migration, you will lose any content that was ad
 
 3. In Exchange Online PowerShell, run the following commands to remove all Exchange Online public folders and mailboxes:
 
-   ```
+   ```PowerShell
    Get-MailPublicFolder -ResultSize Unlimited | where {$_.EntryId -ne $null}| Disable-MailPublicFolder -Confirm:$false
    Get-PublicFolder -GetChildren \ -ResultSize Unlimited | Remove-PublicFolder -Recurse -Confirm:$false
    $hierarchyMailboxGuid = $(Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid
@@ -43,7 +45,7 @@ Note that if you roll back your migration, you will lose any content that was ad
 
 4. Run the following command in your Exchange Online environment to redirect public folder traffic back to on-premises (Exchange Server):
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFoldersEnabled Remote
    ```
 

@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -60,7 +62,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This error indicates a required registry key is missing on the Mailbox server. This registry key should have been configured when the Microsoft Unified Communications Managed API (UCMA) 4.0 was installed on the server. The missing registry key is:
 
-```
+```console
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\MSExchange OWA\InstantMessaging
 ```
 

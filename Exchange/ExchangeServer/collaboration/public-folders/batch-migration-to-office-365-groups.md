@@ -11,6 +11,8 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: How to move your Exchange Server public folders to Office 365 Groups.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Use batch migration to migrate Exchange Server public folders to Office 365 Groups
 
@@ -91,7 +93,7 @@ The following steps are necessary to prepare your organization for the migration
 
 4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
 
-   ```
+   ```PowerShell
    Get-MigrationConfig
    ```
 
@@ -109,13 +111,13 @@ The .csv file needs to contain the following columns:
 
 - **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
 
-  ```
+  ```PowerShell
   Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
   ```
 
 An example .csv:
 
-```
+```CSV
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
 "\Sales\APAC","apacsales@contoso.onmicrosoft.com"
@@ -136,20 +138,20 @@ In this step, you gather information from your Exchange environment, and then yo
 
    1. Pass the credential of a user with administrator permissions in the Exchange Server environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2016 or Exchange 2019 servers in order to copy the content over to Exchange Online.
 
-      ```
+      ```PowerShell
       $Source_Credential = Get-Credential
       <source_domain>\<PublicFolder_Administrator_Account>
       ```
 
    2. Use the MRS proxy server information from your Exchange Server environment that you noted in Step 1 above and pass that value into the variable `$Source_RemoteServer`.
 
-      ```
+      ```PowerShell
       $Source_RemoteServer = "<MRS proxy endpoint>"
       ```
 
 3. In Exchange Online PowerShell, run the following command to create a migration endpoint:
 
-   ```
+   ```PowerShell
    $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
    ```
 
@@ -163,13 +165,13 @@ In this step, you gather information from your Exchange environment, and then yo
 
    - **PublicFolderToUnifiedGroup** is the parameter to indicate that it is a public folder to Office 365 Groups migration batch.
 
-   ```
+   ```PowerShell
    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint  $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
    ```
 
 5. Start the migration by running the following command in Exchange Online PowerShell. Note that this step is necessary only if the `-AutoStart` parameter was not used while creating the batch above in step 4.
 
-   ```
+   ```PowerShell
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
@@ -199,7 +201,7 @@ In the following command:
 
 - **Credential** is the Exchange Online user name and password.
 
-```
+```PowerShell
 .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
@@ -222,7 +224,7 @@ In the following command:
 
 - **Credential** is the Exchange Online user name and password.
 
-```
+```PowerShell
 .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
@@ -230,7 +232,7 @@ In the following command:
 
 After you've made your public folders read-only, you'll need to perform the migration again. This is necessary for a final incremental copy of your data. Before you can run the migration again, you'll have to remove the existing batch, which you can do by running the following command:
 
-```
+```PowerShell
 Remove-MigrationBatch <name of migration batch>
 ```
 
@@ -242,13 +244,13 @@ Next, create a new batch with the same .csv file by running the following comman
 
 - **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
 
-```
+```PowerShell
 New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
 ```
 
 After the new batch is created, start the migration by running the following command in Exchange Online PowerShell. Note that this step is only necessary if the `-AutoStart` parameter was not used in the preceding command.
 
-```
+```PowerShell
 Start-MigrationBatch PublicFolderToGroupMigration
 ```
 
@@ -378,7 +380,7 @@ On your Exchange 2016 or Exchange 2019 server, run the following command. In thi
 
 - **Credential** is the Exchange Online user name and password.
 
-```
+```PowerShell
 .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 

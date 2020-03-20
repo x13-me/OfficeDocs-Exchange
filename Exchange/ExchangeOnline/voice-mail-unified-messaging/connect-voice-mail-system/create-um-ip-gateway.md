@@ -3,11 +3,13 @@ localization_priority: Normal
 description: When you create a Unified Messaging (UM) IP gateway, you enable Exchange servers to connect to a new Voice over IP (VoIP) gateway, a Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), an IP PBX, or a session border controller (SBC). Immediately after you create a UM IP gateway, you should create a new UM hunt group and then associate the UM hunt group with the UM IP gateway. You can associate the UM IP gateway with one or more UM dial plans by creating one or more UM hunt groups.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage
 ms.author: v-mapenn
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage
 title: Create a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -57,18 +59,18 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example creates a UM IP gateway named `yUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an IP address of 10.10.10.1.
 
-```
+```PowerShell
 New-UMIPGateway -Name MyUMIPGateway -Address 10.10.10.1
 ```
 
 This example creates a UM IP gateway named `MyUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an FQDN of MyUMIPGateway.contoso.com and listens on port 5061.
 
-```
+```PowerShell
 New-UMIPGateway -Name MyUMIPGateway -Address "MyUMIPGateway.contoso.com" -Port 5061
 ```
 
 This example creates a UM IP gateway named `yUMIPGateway` and prevents the UM IP gateway from accepting incoming calls or sending outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses.
 
-```
+```PowerShell
 New-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```

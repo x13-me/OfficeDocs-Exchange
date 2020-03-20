@@ -8,6 +8,8 @@ ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 ms.reviewer: 
 title: Create a theme for Outlook on the web in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -145,13 +147,13 @@ Setting a new default theme only affects users who haven't manually selected the
 
 To set the default theme and prevent users from changing their theme in Outlook on the web, use the following syntax:
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity <VirtualDirectoryIdentity> -DefaultTheme <ThemeFolderName> -ThemeSelectionEnabled $false
 ```
 
 This example configures the theme folder named `fourthcoffee` as the default theme in Outlook on the web for the default website on the server named Mailbox01.
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" -DefaultTheme fourthcoffee -ThemeSelectionEnabled $false
 ```
 
@@ -185,11 +187,11 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
-```
+```console
 net stop was /y
 ```
 
-```
+```console
 net start w3svc
 ```
 

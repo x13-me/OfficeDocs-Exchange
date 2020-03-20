@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 57fbed1e-1b14-4939-95e6-ef7c072f32a9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Set the Voice Mail Preview partner address in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -44,6 +46,6 @@ For additional management tasks related to Voice Mail Preview, see [Voice Mail P
 
 This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
 ```

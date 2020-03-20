@@ -8,6 +8,8 @@ ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms.reviewer:
 title: Scenario Deploying address book policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -134,7 +136,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 - Deploying ABPs doesn't prevent users in one virtual organization from sending email to users in another virtual organization. If you want to prevent users from sending email across virtual organizations, we recommend that you create a mail flow rule (also known as a transport rule) that looks for messages sent between the recipients. For example, to prevent Contoso users from receiving messages from Fabrikam users and vice-versa, but still allow Fabrikam's senior leadership team to send messages to Contoso users, you can create the following mail flow rule in the Exchange Management Shell:
 
-  ```
+  ```PowerShell
   New-TransportRule -Name "Ethical Wall: Contoso-Fabrikam" -BetweenMemberOf1 "AllFabrikamEmployees" -BetweenMemberOf2 "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
   ```
 
@@ -160,7 +162,7 @@ In this scenario, the **CustomAttribute15** attribute defines the virtual organi
 
 To set the **CustomAttribute15** attribute value for the Fabrikam and Tailspin Toys mailboxes, distribution groups, dynamic distribution groups, mail contacts, and mail users, use the following syntax:
 
-```
+```PowerShell
 $<VariableName> = Get-<RecipientType> -ResultSize Unlimited | where PrimarySMTPAddress -match <fabrikam.com | tailspintoys.com>
 $<VariableName> | foreach {Set-<RecipientType> -Identity ($_.GUID).ToString() -CustomAttribute15 <FAB | TAIL>
 ```
@@ -173,7 +175,7 @@ $<VariableName> | foreach {Set-<RecipientType> -Identity ($_.GUID).ToString() -C
 
 This example sets the value `FAB` for the **CustomAttribute15** attribute on all Fabrikam mailboxes.
 
-```
+```PowerShell
 $FAB_MBX = Get-Mailbox -ResultSize Unlimited | where PrimarySMTPAddress -match fabrikam.com
 $FAB_MBX | foreach {Set-Mailbox -Identity ($_.GUID).ToString() -CustomAttribute15 FAB}
 ```
@@ -194,25 +196,25 @@ This organization requires four custom address lists:
 
 This example creates the address list named AL_FAB_Users_DGs that contains all Fabrikam users, distribution groups, and dynamic distribution groups _and_ the CEO.
 
-```
+```PowerShell
 New-AddressList -Name "AL_FAB_Users_DGs" -RecipientFilter "((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the address list named AL_FAB_Contacts that contains all Fabrikam mail contacts.
 
-```
+```PowerShell
 New-AddressList -Name "AL_FAB_Contacts" -RecipientFilter "(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'FAB')"
 ```
 
 This example creates the address list named AL_TAIL_Users_DGs that contains all Tailspin Toys users, distribution groups, and dynamic distribution groups _and_ the CEO.
 
-```
+```PowerShell
 New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter "((RecipientType -eq 'UserMailbox') -or (RecipientType -eq 'MailUniversalDistributionGroup') -or (RecipientType -eq 'DynamicDistributionGroup')) -and (CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the address list named AL_TAIL_Contacts that contains all Tailspin Toys mail contacts.
 
-```
+```PowerShell
 New-AddressList -Name "AL_TAIL_Contacts" -RecipientFilter "(RecipientType -eq 'MailContact') -and (CustomAttribute15 -eq 'TAIL')"
 ```
 
@@ -228,13 +230,13 @@ This organization requires two custom room lists:
 
 This example creates the room list named AL_FAB_Rooms for Fabrikam room mailboxes.
 
-```
+```PowerShell
 New-AddressList -Name AL_FAB_Rooms -RecipientFilter "(Alias -ne $null) -and (CustomAttribute15 -eq 'FAB') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"
 ```
 
 This example creates a room list named AL_TAIL_Rooms for Tailspin Toys room mailboxes.
 
-```
+```PowerShell
 New-AddressList -Name AL_TAIL_Rooms -RecipientFilter "(Alias -ne $null) -and (CustomAttribute15 -eq 'TAIL') -and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"
 ```
 
@@ -254,13 +256,13 @@ This organization requires two custom GALs:
 
 This example creates the GAL named GAL_FAB for Fabrikam that includes all Fabrikam recipients _and_ allows the Fabrikam users to see the CEO.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "GAL_FAB" -RecipientFilter "(CustomAttribute15 -eq 'FAB') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
 This example creates the GAL named GAL_TAIL for Tailspin Toys that includes all Tailspin Toys recipients _and_ allows the Tailspin Toys users to see the CEO.
 
-```
+```PowerShell
 New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter "(CustomAttribute15 -eq 'TAIL') -or (CustomAttribute15 -eq 'CEO')"
 ```
 
@@ -278,13 +280,13 @@ This organization requires two custom GALs:
 
 This example creates the OAB named OAB_FAB for Fabrikam that includes the Fabrikam GAL.
 
-```
+```PowerShell
 New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 ```
 
 This example creates the OAB named OAB_TAIL for Tailspin Toys that includes the Tailspin Toys GAL.
 
-```
+```PowerShell
 New-OfflineAddressBook -Name "OAB_TAIL" -AddressLists "GAL_TAIL"
 ```
 
@@ -306,19 +308,19 @@ This organization requires three ABPs:
 
 This example creates the ABP named ABP_FAB that contains the GAL, OAB, room list and address lists for Fabrikam.
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "ABP_FAB" -AddressLists "AL_FAB_Users_DGs","AL_FAB_Contacts" -OfflineAddressBook "\OAB_FAB" -GlobalAddressList "\GAL_FAB" -RoomList "\AL_FAB_Rooms"
 ```
 
 This example creates the ABP named ABP_TAIL that contains the GAL, OAB, room list and address lists for Tailspin Toys.
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs","AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 ```
 
 This example creates the ABP named ABP_CEO that contains the GAL, OAB, room list and address lists for the CEO.
 
-```
+```PowerShell
 New-AddressBookPolicy -Name "ABP_CEO" -AddressLists "AL_FAB_Users_DGs","AL_FAB_Contacts","AL_TAIL_Users_DGs","AL_TAIL_Contacts" -OfflineAddressBook "\Default Offline Address Book" -GlobalAddressList "\Default Global Address List" -RoomList "\All Rooms"
 ```
 
@@ -328,19 +330,19 @@ For more information, see [Procedures for address book policies in Exchange Serv
 
 This example assigns the ABP named ABP_FAB to all Fabrikam mailboxes.
 
-```
+```PowerShell
 $Fab = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'FAB'"; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'}
 ```
 
 This example assigns the ABP named ABP_TAIL to all Tailspin Toys mailboxes.
 
-```
+```PowerShell
 $Tail = Get-Mailbox -ResultSize unlimited -Filter "CustomAttribute15 -eq 'TAIL'"; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
 ```
 
 This example assigns the ABP named ABP_CEO to the CEO named Gabriela Laureano.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Gabriela Laureano" -AddressBookPolicy "ABP_CEO"
 ```
 

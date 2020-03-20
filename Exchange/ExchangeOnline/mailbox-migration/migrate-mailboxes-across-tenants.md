@@ -15,6 +15,8 @@ search.appverid:
 - MOE150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
@@ -208,13 +210,13 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
 
 3. Use the Windows PowerShell command:
 
-   ```Powershell
+   ```PowerShell
    Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
    ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 
-```powershell
+```PowerShell
 ##########################################################################
 # Script: showproxies.ps1
 # Copies all accounts in Office 365 that contain/don't contain a specific
@@ -253,7 +255,7 @@ Invoke-Item addresses.csv
 
 ### Bulk Create es in Office 365
 
-```powershell
+```PowerShell
 ################################################################################
 # Script: create-rooms.ps1
 # Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
@@ -297,7 +299,7 @@ New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -reso
 
 ### Bulk remove secondary email address from mailboxes
 
-```powershell
+```PowerShell
 ##########################################################################
 #      Script:  remove-proxy.ps1
 # Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***

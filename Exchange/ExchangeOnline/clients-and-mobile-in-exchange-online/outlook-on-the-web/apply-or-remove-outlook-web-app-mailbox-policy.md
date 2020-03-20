@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -65,13 +67,13 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
 
 - **Individual mailboxes**: Use the following syntax:
 
-    ```
+    ```PowerShell
     Set-CasMailbox -Identity <MailboxIdentity> -OwaMailboxPolicy "<Policy Name>"
     ```
 
     This example applies the Outlook on the web mailbox policy named Sales Associates to tony@contoso.com.
 
-    ```
+    ```PowerShell
     Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy "Sales Associates"
     ```
 
@@ -83,21 +85,21 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
 
   The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the policy to the mailboxes):
 
-  ```
+  ```PowerShell
   $<VariableName> = <Get-User | Get-Mailbox> -ResultSize unlimited -Filter <Filter>
   ```
 
-  ```
+  ```PowerShell
   $<VariableName> | foreach {Set-CasMailbox -Identity $_.MicrosoftOnlineServicesID -OwaMailboxPolicy "<Policy Name>"}
   ```
 
   This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive".
 
-  ```
+  ```PowerShell
   $Mgmt = Get-User -ResultSize unlimited -Filter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')"
   ```
 
-  ```
+  ```PowerShell
   $Mgmt | foreach {Set-CasMailbox -Identity $_.MicrosoftOnlineServicesID -OwaMailboxPolicy "Managers and Executives"}
   ```
 
@@ -107,21 +109,21 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
 
   The syntax uses the following two commands (one to identify the user accounts, and the other to apply the policy to those users):
 
-  ```
+  ```PowerShell
   $<VariableName> = Get-Content "<text file>"
   ```
 
-  ```
+  ```PowerShell
   $<VariableName> | foreach {Set-CasMailbox -Identity $_ -OwaMailboxPolicy "<Policy Name>"}
   ```
 
   This example assigns the policy named Managers and Executives to the mailboxes specified in the file C:\My Documents\Management.txt.
 
-  ```
+  ```PowerShell
   $Mgrs = Get-Content "C:\My Documents\Management.txt"
   ```
 
-  ```
+  ```PowerShell
   $Mgrs | foreach {Set-CasMailbox -Identity $_ -OwaMailboxPolicy "Managers and Executives"}
   ```
 
@@ -137,13 +139,13 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
 
 - In Exchange Online PowerShell, replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the value of the **OwaMailboxPolicy** property:
 
-  ```
+  ```PowerShell
   Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List OwaMailboxPolicy
   ```
 
 - In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property for all mailboxes:
 
-  ```
+  ```PowerShell
   Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
   ```
 
@@ -163,13 +165,13 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
 
 To remove the policy assignment from the mailbox, use the following syntax:
 
-```
+```PowerShell
 Set-CasMailbox -Identity "<MailboxIdentity>" -OwaMailboxPolicy $null
 ```
 
 This example removes the Outlook on the web mailbox policy from mailbox of the user tony@contoso.com.
 
-```
+```PowerShell
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy $null
 ```
 
@@ -185,12 +187,12 @@ To verify that you've removed an Outlook on the web mailbox policy assignment fr
 
 - In Exchange Online PowerShell, replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the value of the **OwaMailboxPolicy** property:
 
-  ```
+  ```PowerShell
   Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List OwaMailboxPolicy
   ```
 
 - In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property:
 
-  ```
+  ```PowerShell
   Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
   ```

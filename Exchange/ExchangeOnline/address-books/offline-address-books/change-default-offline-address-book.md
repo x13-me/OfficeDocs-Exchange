@@ -10,6 +10,8 @@ title: Change the default offline address book in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -41,7 +43,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 This example sets the OAB named My OAB as the default OAB.
 
-```
+```PowerShell
 Set-OfflineAddressBook -Identity "My OAB" -IsDefault $true
 ```
 
@@ -51,6 +53,6 @@ For detailed syntax and parameter information, see [Set-OfflineAddressBook](http
 
 To verify that you've successfully changed the default OAB, run the following command to verify the `IsDefault` property value:
 
-```
+```PowerShell
 Get-OfflineAddressBook | Format-List Name,IsDefault
 ```

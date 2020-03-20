@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: cb245028-0b86-4171-879e-934dd35fa626
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Allow users in the same dial plan to receive faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -44,6 +46,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example enables UM-enabled users who are linked with the UM dial plan named `MyUMDialPlan` to receive incoming faxes.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $true
 ```

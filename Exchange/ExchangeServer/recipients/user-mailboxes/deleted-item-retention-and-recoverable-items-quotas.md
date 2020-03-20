@@ -8,6 +8,8 @@ ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms.reviewer:
 title: Configure Deleted Item retention and Recoverable Items quotas
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -60,7 +62,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 This example configures April Stewart's mailbox to retain deleted items for 30 days.
 
-```
+```PowerShell
 Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 ```
 
@@ -73,7 +75,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 This example configures a recoverable items warning quota of 12 GB and a recoverable items quota of 15 GB for April Stewart's mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
 ```
 
@@ -89,7 +91,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 This example configures a deleted item retention period of 10 days for the mailbox database MDB2.
 
-```
+```PowerShell
 Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
 ```
 
@@ -102,7 +104,7 @@ For detailed syntax and parameter information, see [Set-MailboxDatabase](https:/
 
 This example configures a recoverable items warning quota of 15 GB and a recoverable items quota of 20 GB on mailbox database MDB2.
 
-```
+```PowerShell
 Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
 ```
 

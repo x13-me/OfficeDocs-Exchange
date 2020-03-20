@@ -3,6 +3,8 @@ title: "Configure document collaboration with OneDrive for Business and Exchange
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -81,7 +83,7 @@ Perform the following steps:
 
    Using the following example as a basis, use the Exchange Management Shell to configure the internal and external MySite URL on the Default Outlook on the web mailbox policy:
 
-   ```
+   ```PowerShell
    Set-OwaMailboxPolicy Default -InternalSPMySiteHostURL https://Contoso-my.sharepoint.com -ExternalSPMySiteHostURL https://Contoso-my.sharepoint.com
    ```
 
@@ -89,19 +91,19 @@ Perform the following steps:
 
    To make the policy the default Outlook on the web mailbox policy, type the following command in the Exchange Management Shell:
 
-   ```
+   ```PowerShell
    Set-OwaMailboxPolicy Default -IsDefault
    ```
 
    To assign the policy to an individual's mailbox, type the following command in the Exchange Management Shell:
 
-   ```
+   ```PowerShell
    Set-CASMailbox <user mailbox> -OwaMailboxPolicy Default
    ```
 
 3. (Optional) On each Exchange 2016 server, restart **OWAApplicationPool**, which will allow the configuration to work immediately. If you don't run this command, it'll take a few minutes for your Exchange 2016 servers to apply the updated mailbox policy. In the Exchange Management Shell run:
 
-   ```
+   ```PowerShell
    Restart-WebAppPool MSExchangeOWAAppPool
    ```
 

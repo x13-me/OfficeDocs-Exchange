@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the group of users that can be contacted in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -53,6 +55,6 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 
 This example sets the scope of the users that callers can contact to all users in the organization's address book on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -ContactScope GlobalAddressList
 ```

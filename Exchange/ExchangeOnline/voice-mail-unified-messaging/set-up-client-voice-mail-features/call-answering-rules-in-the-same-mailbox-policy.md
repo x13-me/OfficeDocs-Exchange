@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Call answering rules in the same mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -49,12 +51,12 @@ For additional management tasks related to allowing users to forward calls, see 
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to create call answering rules.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $true
 ```
 
 This example prevents users who are associated with the UM mailbox policy `MyUMMailboxPolicy` from creating call answering rules.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $false
 ```

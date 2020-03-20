@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure Voice Mail Preview partner services for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -48,7 +50,7 @@ In Step 2, you'll apply the Partner ID and SMTP address you acquired in Step 1 t
 
 This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com and the Voice Mail Preview partner ID to CON123-2010 on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
 -VoiceMailPreviewPartnerAssignedID CON123-2010
 ```
@@ -63,7 +65,7 @@ If the partner requires custom settings, you may want to set two additional para
 
 This example sets the maximum message duration to 300 seconds (5 minutes) and the maximum delivery delay to 600 seconds (10 minutes) on a UM mailbox policy named _MyUMMailboxPolicy_.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerMaxMessageDuration 300 -VoiceMailPreviewPartnerMaxDeliveryDelay 600
 ```
 

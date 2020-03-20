@@ -7,6 +7,8 @@ ms.author: v-mapenn
 title: Managing devices for Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -54,19 +56,9 @@ Even if the Android device is unencrypted and an attacker is in possession of th
 
 ### Remote wipe with Exchange ActiveSync
 
-Exchange ActiveSync enables administrators to remotely wipe devices, such as if they become compromised or lost/stolen. With Outlook for iOS and Android, a remote wipe is done on the Outlook app itself, and does not trigger a full device wipe.
+Exchange ActiveSync enables administrators to remotely wipe devices, such as if they become compromised or lost/stolen. With Outlook for iOS and Android, a remote wipe only wipes data within the Outlook app itself and does not trigger a full device wipe.
 
-> [!NOTE]
-> Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device."
-
-After the remote wipe command is requested by the administrator, the wipe happens within seconds of the Outlook app's next connection to Exchange. The Outlook app will reset and all Outlook email, calendar, contacts, and files data will be removed from the device, as well as from the Outlook service. The wipe will not affect any of the user's personal apps and information outside of Outlook.
-
-Since Outlook for iOS and Android appears as a single mobile device association under a user's mobile devices in Exchange, a remote wipe command will remove data and delete sync relationships from all devices running Outlook (iPhone, iPad, Android) associated with that user.
-
-As a remote wipe action deletes the synchronization profile, when the user adds his or her account to Outlook for iOS and Android, a new Device ID is generated and reported to Exchange on-premises.
-
-> [!NOTE]
-> Due to the Office 365-based architecture, the result of a remote device wipe is not reported back to Exchange. Even when the wipe is successful, the status will display as **Pending**.
+See [Perform a remote wipe on a mobile phone](../exchange-activesync/remote-wipe.md) for more information.
 
 ## Device access policy
 
@@ -81,19 +73,19 @@ You can define a default block rule and then configure an allow rule for Outlook
 
 1. Create the default block rule:
 
-   ```
+   ```powershell
    Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
    ```
 
 2. Create an allow rule for Outlook for iOS and Android
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Allow
    ```
 
 3. **Optional**: Create rules that allow Outlook on Windows devices for Exchange ActiveSync connectivity (WP refers to Windows Phone, WP8 refers to Windows Phone 8 and later, and WindowsMail refers to the Mail app included in Windows 10):
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP" -AccessLevel Allow
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP8" -AccessLevel Allow
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
@@ -105,19 +97,19 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 1. Confirm that there are no Exchange ActiveSync device access rules in place that block Outlook for iOS and Android:
 
-   ```
+   ```powershell
    Get-ActiveSyncDeviceAccessRule | where {$_.AccessLevel -eq "Block" -and $_.QueryString -like "Outlook*"} | ft Name,AccessLevel,QueryString -auto
    ```
 
    If any device access rules that block Outlook for iOS and Android are found, type the following to remove them:
 
-   ```
+   ```powershell
    Get-ActiveSyncDeviceAccessRule | where {$_.AccessLevel -eq "Block" -and $_.QueryString -like "Outlook*"} | Remove-ActiveSyncDeviceAccessRule
    ```
 
 2. You can block most Android and iOS devices with the following commands:
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Android" -AccessLevel Block
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPad" -AccessLevel Block
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPhone" -AccessLevel Block
@@ -126,13 +118,13 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 3. Not all Android device manufacturers specify "Android" as the DeviceType. Manufacturers may specify a unique value with each release. In order to find other Android devices that are accessing your environment, execute the following command to generate a report of all devices that have an active Exchange ActiveSync partnership:
 
-   ```
+   ```powershell
    Get-MobileDevice | Select-Object DeviceOS,DeviceModel,DeviceType | Export-CSV c:\temp\easdevices.csv
    ```
 
 4. Create additional block rules, depending on your results from Step 3. For example, if you find your environment has a high usage of HTCOne Android devices, you can create an Exchange ActiveSync device access rule that blocks that particular device, forcing the users to use Outlook for iOS and Android. In this example, you would type:
 
-   ```
+   ```powershell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "HTCOne" -AccessLevel Block
    ```
 
@@ -165,10 +157,10 @@ With the `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access
 
 The following are two examples of a device access rule. The first example uses the `DeviceModel` characteristic; the second example uses the `DeviceType` characteristic.
 
-```
+```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Outlook" -AccessLevel Block
 ```
 
-```
+```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```

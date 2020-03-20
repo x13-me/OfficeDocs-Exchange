@@ -7,6 +7,8 @@ ms.author: v-mapenn
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
 ms.reviewer: mattgos
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

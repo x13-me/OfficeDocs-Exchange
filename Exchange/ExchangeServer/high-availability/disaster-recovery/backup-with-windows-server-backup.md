@@ -8,6 +8,8 @@ ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -77,7 +79,7 @@ To verify that you've successfully backed up the data, do any of the following:
 
 - Run the following command in the Exchange Management Shell to verify that each database on the selected volume(s) was backed up successfully:
 
-  ```
+  ```powershell
   Get-MailboxDatabase -Server <ServerName> -Status | Format-List Name,*FullBackup
   ```
 

@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -45,7 +47,7 @@ You can only disable (or enable) SMTP AUTH globally for your organization by usi
 
 To disable SMTP AUTH globally in your organization, run the following command:
 
-```
+```PowerShell
 Set-TransportConfig -SmtpClientAuthenticationDisabled $true
 ```
 
@@ -55,7 +57,7 @@ Set-TransportConfig -SmtpClientAuthenticationDisabled $true
 
 To verify that you've globally disabled SMTP AUTH in your organization, run the following command and verify the value of the **SmtpClientAuthenticationDisabled** property is `True`:
 
-```
+```PowerShell
 Get-TransportConfig | Format-List SmtpClientAuthenticationDisabled
 ```
 
@@ -79,7 +81,7 @@ The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Mic
 
 Use the following syntax:
 
-```
+```PowerShell
 Set-CASMailbox -Identity <MailboxIdentity> -SmtpClientAuthenticationDisabled <$true | $false | $null>
 ```
 
@@ -87,13 +89,13 @@ The value `$null` indicates the setting for the mailbox is controlled by the glo
 
 This example enables SMTP AUTH for mailbox sean@contoso.com.
 
-```
+```PowerShell
 Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $false
 ```
 
 This example disables SMTP AUTH for mailbox chris@contoso.com.
 
-```
+```PowerShell
 Set-CASMailbox -Identity chris@contoso.com -SmtpClientAuthenticationDisabled $true
 ```
 
@@ -105,14 +107,14 @@ Use a text file to identify the mailboxes. Values that don't contain spaces (for
 
 The syntax uses the following two commands (one to identify the mailboxes, and the other to enable SMTP AUTH for those mailboxes):
 
-```
+```PowerShell
 $<VariableName> = Get-Content "<text file>"
 $<VariableName> | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled <$true | $false | $null>}
 ```
 
 This example enables SMTP AUTH for the mailboxes specified in the file C:\My Documents\Allow SMTP AUTH.txt.
 
-```
+```PowerShell
 $Allow = Get-Content "C:\My Documents\Allow SMTP AUTH.txt"
 $Allow | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled $false}
 ```
@@ -127,27 +129,27 @@ To verify that you've enabled or disabled SMTP AUTH for a specific mailbox, do a
 
 - **Individual mailboxes in Exchange Online PowerShell**: Replace `<MailboxIdentity>`, with the name, alias, email address or account name of the mailbox, run the following command, and verify the value of the **SmtpClientAuthenticationDisabled** property (`False` = enabled, `True` = disabled, blank = use organization setting).
 
-  ```
+  ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>  | Format-List SmtpClientAuthenticationDisabled
   ```
 
 - **All mailboxes where SMTP AUTH is disabled**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $true}
   ```
 
 - **All mailboxes where SMTP AUTH is enabled**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $false}
   ```
 
 - **All mailboxes where SMTP AUTH is controlled by the organization setting**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $null}
   ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change the branding of Clutter notifications
 ms.collection: 
 - exchange-online
@@ -65,7 +67,7 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
 
 2. Type the following commands:
 
-   ```
+   ```PowerShell
    New-Mailbox -Shared -Name branding@contoso.com -DisplayName "Branding Clutter Mailbox" -Alias branding
    Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
    ```

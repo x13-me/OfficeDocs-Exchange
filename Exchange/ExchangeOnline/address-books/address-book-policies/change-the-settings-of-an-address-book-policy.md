@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -40,7 +42,7 @@ For additional management tasks related to ABPs, see [Address book policy proced
 
 To modify an ABP, use this syntax:
 
-```
+```PowerShell
 Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddressList "<GAL>"] [-OfflineAddressBook "<OAB>"] [-RoomList "<RoomList>"] [-AddressLists <AddressLists>]
 ```
 
@@ -48,7 +50,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
 
    This example modifies the ABP named "All Fabrikam ABP" by replacing the OAB with the specified OAB.
 
-    ```
+    ```PowerShell
     Set-AddressBookPolicy -Identity "All Fabrikam ABP" -OfflineAddressBook \Fabrikam-OAB-2
     ```
 
@@ -56,7 +58,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
 
    This example replaces the existing address lists in the ABP named Government Agency A with the specified address lists.
 
-   ```
+   ```PowerShell
    Set-AddressBookPolicy -Identity "Government Agency A" -AddressLists "GovernmentAgencyA-Atlanta","GovernmentAgencyA-Moscow"
    ```
 
@@ -64,7 +66,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
 
    This example adds the address list named Contoso-Chicago to the ABP named ABP Contoso, which is already configured to use the address list named Contoso-Seattle.
 
-   ```
+   ```PowerShell
    Set-AddressBookPolicy -Identity "ABP Contoso" -AddressLists "Contoso-Chicago","Contoso-Seattle"
    ```
 
@@ -72,7 +74,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
 
    For example, the ABP named ABP Fabrikam uses the address lists named Fabrikam-HR and Fabrikam-Finance. To remove the Fabrikam-HR address list, specify only the Fabrikam-Finance address list.
 
-   ```
+   ```PowerShell
    Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
    ```
 
@@ -82,6 +84,6 @@ For detailed syntax and parameter information, see [Set-AddressBookPolicy](https
 
 To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the name of the ABP, and run the following command in Exchange Online PowerShell to verify the property values:
 
-```
+```PowerShell
 Get-AddressBookPolicy -Identity "<ABPName>" | Format-List
 ```

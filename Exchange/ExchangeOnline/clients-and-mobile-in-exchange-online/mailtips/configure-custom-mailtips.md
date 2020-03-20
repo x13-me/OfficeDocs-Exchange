@@ -12,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -79,7 +81,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 To configure a MailTip for a recipient, use the following syntax.
 
-```
+```PowerShell
 Set-<RecipientType> <RecipientIdentity> -MailTip "<MailTip text>"
 ```
 
@@ -87,7 +89,7 @@ Set-<RecipientType> <RecipientIdentity> -MailTip "<MailTip text>"
 
 For example, suppose you have a mailbox named "Help Desk" for users to submit support requests, and the promised response time is two hours. To configure a custom MailTip that explains this, run the following command:
 
-```
+```PowerShell
 Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you within 2 hours."
 ```
 
@@ -95,7 +97,7 @@ Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you wi
 
 To configure additional MailTip translations without affecting the existing MailTip text or other existing MailTip translations, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> -MailTipTranslations @{Add="<culture1>:<localized text 1>","<culture2>:<localized text 2>"...; Remove="<culture1>:<localized text 1>","<culture2>:<localized text 2>"...}
 ```
 
@@ -103,7 +105,7 @@ Set-<RecipientType> -MailTipTranslations @{Add="<culture1>:<localized text 1>","
 
 For example, suppose the mailbox named Notifications currently has the MailTip: "This mailbox is not monitored." To add the Spanish translation, run the following command:
 
-```
+```PowerShell
 Set-Mailbox -MailTipTranslations @{Add="ES:Esta caja no se supervisa."}
 ```
 

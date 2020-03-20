@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - ms.exch.setupreadiness.IsServerCoreInstalled
 ms.author: v-mapenn
 ms.assetid: 3d297c4f-7b5a-4faa-bf5e-320fe0529dfe
@@ -10,6 +10,8 @@ monikerRange: exchserver-2016
 description: Exchange Server 2016 Setup can't continue because it detected that the local computer is running Windows Server Core or Windows Nano Server.
 title: Windows Server Core or Windows Nano Server is installed [IsServerCoreInstalled]
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: Developer
 ms.reviewer: 
 manager: serdars
@@ -23,7 +25,7 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected that the
 
 - **Windows Server 2012 and Windows Server 2012 R2**: Run the following command in Windows PowerShell:
 
-  ```
+  ```powershell
   Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
   ```
 

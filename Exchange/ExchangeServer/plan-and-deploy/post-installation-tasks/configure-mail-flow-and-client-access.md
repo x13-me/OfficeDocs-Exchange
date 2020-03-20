@@ -10,6 +10,8 @@ title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -166,33 +168,33 @@ For more information about internal and external URLs on virtual directories, se
 
 2. Store the host name of your Mailbox server in a variable that will be used in the next step. For example, Mailbox01.
 
-   ```
+   ```powershell
    $HostName = "Mailbox01"
    ```
 
 3. Run each of the following commands in the Exchange Management Shell to configure each internal URL to match the virtual directory's external URL.
 
-   ```
+   ```powershell
    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((Get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
    ```
 

@@ -3,6 +3,8 @@ title: "Performance factors and best practices for hybrid migrations"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -89,7 +91,7 @@ MRS Proxy is the on-premises migration feature that works with the Mailbox Repli
 
 It's possible to configure the maximum number of MRSProxy connections for the on-premises Exchange hybrid server. Run the following Windows PowerShell command.
 
-```
+```PowerShell
 Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSMaxConnections <number between 0 and unlimited; default is 100>
 ```
 

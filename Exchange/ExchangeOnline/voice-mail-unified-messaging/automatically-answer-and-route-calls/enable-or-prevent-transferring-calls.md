@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: ca961cc8-cc24-4e05-b72d-79979c155cf9
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or prevent transferring calls from an auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -52,12 +54,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example prevents call transfers on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowDialPlanSubscribers $false
 ```
 
 This example enables call transfers on a UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowDialPlanSubscribers $true
 ```

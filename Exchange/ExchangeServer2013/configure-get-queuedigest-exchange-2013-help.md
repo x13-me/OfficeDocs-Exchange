@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: v-mapenn
 author: mattpennathe3rd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -62,14 +64,14 @@ By default, delivery queues that have the status Active, Connecting, Ready, or R
 
 2. Add one or both of the following keys in the `<appSettings>` section.
 
-    ```Command&nbsp;Line
+    ```xml
     <add key="QueueLoggingThreshold" value="<integer>" />
     <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
     ```
 
     For example, to set the **QueueLoggingThreshold** value to 1 and the **QueueLoggingInterval** value to 30 seconds, use the following values:
 
-    ```Command&nbsp;Line
+    ```xml
     <add key="QueueLoggingThreshold" value="1" />
     <add key="QueueLoggingInterval" value="00:00:30" />
     ```

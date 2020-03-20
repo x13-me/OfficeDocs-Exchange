@@ -3,11 +3,13 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
 ms.author: v-mapenn
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
 ms.reviewer: 
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
+f1.keywords:
+- CSH
 title: Manage a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -65,19 +67,19 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example modifies the IP address of a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.1
 ```
 
 This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com -Status 2 -OutcallsAllowed $false
 ```
 
 This example enables the UM IP gateway to function as a VoIP gateway simulator and can be used with the **Test-UMConnectivity** cmdlet.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 ```
 
@@ -86,7 +88,7 @@ Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
 This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
@@ -94,18 +96,18 @@ Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -I
 
 This example displays a formatted list of all the UM IP gateways in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMIPGateway |Format-List
 ```
 
 This example displays the properties for a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Get-UMIPGateway -Identity MyUMIPGateway
 ```
 
 This example displays all the UM IP gateways including VoIP gateway simulators in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMIPGateway -IncludeSimulator $true
 ```

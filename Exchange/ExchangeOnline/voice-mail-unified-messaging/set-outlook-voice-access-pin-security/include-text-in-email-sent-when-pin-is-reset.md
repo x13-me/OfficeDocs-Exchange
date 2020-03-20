@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f7a4d775-a588-412f-ac2c-11ab1a5c67eb
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Include text with the email message sent when a PIN Is reset in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -54,6 +56,6 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 This example includes the additional text, "Do not share your PIN with other users. Doing so may result in disciplinary action", in the email message sent to users who are associated with the UM mailbox policy `MyUMMailboxPolicy` when their PIN is reset.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ResetPINText "Do not share your PIN with other users. Doing so may result in disciplinary action."
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 17941918-7dc5-41a0-b540-09f2f907362b
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Remove an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -64,7 +66,7 @@ This example removes the E.164 number +14255551010 from the mailbox of Tony Smit
 > [!NOTE]
 > Before you remove an E.164 number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to modify. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx = Get-Mailbox tony.smith
 $mbx.EmailAddresses.Item(1) -="eum:+14255551010;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

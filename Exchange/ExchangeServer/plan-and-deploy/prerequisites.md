@@ -11,6 +11,8 @@ title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchang
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -69,7 +71,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -78,7 +80,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature RSAT-ADDS
    ```
 
@@ -99,7 +101,7 @@ When you use one of these options, you don't need to restart the computer after 
 
 1. Install the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -112,7 +114,7 @@ When you use one of these options, you don't need to restart the computer after 
 
    a. Install the Server Media Foundation windows feature by executing the following command in Windows PowerShell:
 
-      ```
+      ```PowerShell
       Install-WindowsFeature Server-Media-Foundation
       ```
 
@@ -125,13 +127,13 @@ When you use one of these options, you don't need to restart the computer after 
 
    - **Desktop Experience**:
 
-      ```
+      ```PowerShell
       Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
       ```
 
    - **Server Core**:
 
-      ```
+      ```PowerShell
       Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Metabase, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
       ```
 
@@ -144,7 +146,7 @@ When you use one of these options, you don't need to restart the computer after 
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature ADLDS
    ```
 
@@ -157,7 +159,7 @@ When you use one of these options, you don't need to restart the computer after 
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
-   ```
+   ```PowerShell
    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
    ```
 ::: moniker-end
@@ -169,7 +171,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -178,7 +180,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature RSAT-ADDS
    ```
 
@@ -195,13 +197,13 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 1. Run the following command in Windows PowerShell to install the required Windows components:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature NET-Framework-45-Features, Server-Media-Foundation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
    ```
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
@@ -221,13 +223,13 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 1. Run the following command in Windows PowerShell to install the required Windows components:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature ADLDS
    ```
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -242,13 +244,13 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 1. Run the following command in Windows Powershell to install the required Windows components:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
    ```
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -263,13 +265,13 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 1. Run the following command in Windows PowerShell to install the required Windows components:
 
-   ```
+   ```PowerShell
    Install-WindowsFeature ADLDS
    ```
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -287,13 +289,13 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
 
-   ```
+   ```PowerShell
    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
    ```
 
 ### Exchange 2016 management tools on Windows 8.1
 
-1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631) or later
+1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 
 2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -302,7 +304,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
 
-   ```
+   ```PowerShell
    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
    ```
 ::: moniker-end

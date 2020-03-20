@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
 ms.author: v-mapenn
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
@@ -12,6 +12,8 @@ title: Change the offline address book generation schedule in Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -47,7 +49,7 @@ Changing the OAB generation schedule is a two-step process:
 
 To change the OAB generation schedule, use this syntax:
 
-```
+```powershell
 New-SettingOverride -Name "<UniqueOverrideName>" -Component TimeBasedAssistants -Section OABGeneratorAssistant -Parameters @("WorkCycle=<Timespan>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
 ```
 
@@ -69,13 +71,13 @@ This example specifies that the OAB is generated every two hours on all Exchange
 
 - **Override reason**: Generate OAB every 2 hours
 
-```
+```powershell
 New-SettingOverride -Name "OAB Generation Override" -Component TimeBasedAssistants -Section OABGeneratorAssistant -Parameters @("WorkCycle=02:00:00") -Reason "Generate OAB every 2 hours"
 ```
 
 This example specifies the same OAB generation schedule, but only on the server named Mailbox01.
 
-```
+```powershell
 New-SettingOverride -Name "Mailbox01 OAB Generation Override" -Component TimeBasedAssistants -Section OABGeneratorAssistant -Parameters @("WorkCycle=02:00:00") -Reason "Generate OAB every 2 hours" -Server Mailbox01
 ```
 
@@ -83,7 +85,7 @@ New-SettingOverride -Name "Mailbox01 OAB Generation Override" -Component TimeBas
 
 To apply the new OAB generation schedule, use this syntax:
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh [-Server <ServerName>]
 ```
 
@@ -95,13 +97,13 @@ Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService
 
 This example applies the new OAB generation schedule on all Exchange 2016 and Exchange 2019 Mailbox servers in the organization.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
 This example applies the new OAB generation schedule on the server named Mailbox01.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh -Server Mailbox01
 ```
 
@@ -109,7 +111,7 @@ Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService
 
 To verify that you've configured the OAB generation schedule on one or more Exchange servers, replace _\<ServerName\>_ with the name of the server (not the FQDN), and run the following command to verify the value of the **WorkCycle** property:
 
-```
+```powershell
 [xml]$diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=TimeBasedAssistants"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.TimeBasedAssistants.OABGeneratorAssistant
 ```
 

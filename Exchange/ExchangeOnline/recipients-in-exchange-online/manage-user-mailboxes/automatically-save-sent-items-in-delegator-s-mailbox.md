@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Automatically save sent items in delegator's mailbox
 ms.collection: 
 - exchange-online
@@ -58,13 +60,13 @@ When you do these steps, any messages **sent as** the manager whose mailbox you'
 
 3. Use the following syntax in Exchange Online PowerShell window:
 
-   ```
+   ```PowerShell
    Set-Mailbox <manager's email address> -MessageCopyForSentAsEnabled $true
    ```
 
 For example, if Mary's email address is mary@contoso.com, her IT department would run the following command:
 
-```
+```PowerShell
 Set-Mailbox mary@contoso.com -MessageCopyForSentAsEnabled $true
 ```
 
@@ -83,13 +85,13 @@ When you do these steps, any messages **sent on behalf** the manager whose mailb
 
 3. Use the following syntax in the Exchange Online PowerShell:
 
-   ```
+   ```PowerShell
    Set-Mailbox <manager's email address> -MessageCopyForSendOnBehalfEnabled $true
    ```
 
 For example, if Mary's email address is mary@contoso.com, her IT department would run the following command
 
-```
+```PowerShell
 Set-Mailbox mary@contoso.com -MessageCopyForSendOnBehalfEnabled $true
 ```
 

@@ -8,6 +8,8 @@ ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.reviewer:
 title: Manage mail-enabled security groups in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -106,7 +108,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 To create a mail-enabled security group, use this syntax:
 
-```
+```PowerShell
 New-DistributionGroup -Type Security -Name <UniqueName> [-IgnoreNamingPolicy] [-Alias <Alias>] [-DisplayName "<DisplayName>"] [-Notes "<Description>"] [-OrganizationalUnit <OU>] [-ManagedBy "<owner1>","<owner2>"...] [-Members "<member1>","<member2>"...] [-CopyOwnerToMember] [-MemberJoinRestriction <Closed | ApprovalRequired>] [-RequireSenderAuthenticationEnabled <$true | $false>]
 ```
 
@@ -128,7 +130,7 @@ This example creates a security group with these settings:
 
 - **Accept messages from external senders**: No, because we're aren't using the _RequireSenderAuthenticationEnabled_ parameter, and the default value is `$true`.
 
-```
+```PowerShell
 New-DistributionGroup -Type Security -Name "File Server Managers" -Alias fsadmin -Members "Bishamon Tamura","Valeria Barrios" -CopyOwnerToMember
 ```
 
@@ -142,13 +144,13 @@ To verify that you've successfully created a mail-enabled security group, do any
 
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Identity <GroupIdentity> | Format-List
   ```
 
@@ -350,13 +352,13 @@ For detailed syntax and parameter information, see [Set-DistributionGroup](https
 
 This example configures the value DoNotMigrate for the **CustomAttribute5** property of the group named Experimental Project.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Experimental Project" -CustomAttribute5 DoNotMigrate
 ```
 
 This example adds the Spanish translation for the existing English MailTip, "Please allow 4 business days for a response to messages sent to this group" that's configured on the mail-enabled security group events@contoso.com.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity events@contoso.com -MailTipTranslations @{Add="ES:Espere 4 días hábiles para responder a los mensajes enviados a este grupo."}
 ```
 
@@ -368,7 +370,7 @@ To verify that you've successfully modified a mail-enabled security group, do an
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Identity <GroupIdentity> | Format-List
   ```
 
@@ -378,13 +380,13 @@ You use the **Get-DistributionGroup** cmdlet to view mail-enabled security group
 
 This example returns a summary list of all security groups in the organization.
 
-```
+```PowerShell
 Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'"
 ```
 
 This example returns detailed information for the mail-enabled security group named Help Desk.
 
-```
+```PowerShell
 Get-DistributionGroup -Identity "Help Desk" | Format-List
 ```
 
@@ -412,13 +414,13 @@ For detailed syntax and parameter information, see [Get-DistributionGroup](https
 
 To remove a mail-enabled security group, use this syntax:
 
-```
+```PowerShell
 Remove-DistributionGroup -Identity <GroupIdentity>
 ```
 
 This example removes the mail-enabled security group that has the alias value contractors.
 
-```
+```PowerShell
 Remove-DistributionGroup -Identity contractors
 ```
 
@@ -430,19 +432,19 @@ To verify that you've successfully removed a mail-enabled security group, do any
 
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify that the group isn't returned:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Identity <GroupIdentity> | Format-List
   ```
 
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
-  ```
+  ```PowerShell
   Get-Group -Filter "RecipientTypeDetails -eq 'UniversalSecurityGroup'"
   ```
 
@@ -454,7 +456,7 @@ To mail-enable an existing universal security group that's not already mail-enab
 
 To mail-enable an existing universal security group, use this syntax:
 
-```
+```PowerShell
 Enable-DistributionGroup -Identity <GroupIdentity> [-Alias <Alias>] [-DisplayName <DisplayName>] [-PrimarySMTPAddress <EmailAddress>]
 ```
 
@@ -466,7 +468,7 @@ This example mail-enables the existing universal security group named Help Desk 
 
 - **Primary email address**: Because we're using the _Alias_ parameter, the group's primary email address is _\<alias\>_@ _\<domain\>_, where \<domain\> is specified by the email address policy that applies to the group. If we specified a value for the _PrimarySMTPAddress_ parameter, the **EmailAddressPolicyEnabled** property would be set to the value `$false`, which means the email addresses of the group aren't automatically updated by email address policies.
 
-```
+```PowerShell
 Enable-DistributionGroup -Identity "Help Desk" -Alias hdesk
 ```
 
@@ -482,13 +484,13 @@ To verify that you've successfully mail-enabled an existing security group, do a
 
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Identity <GroupIdentity> | Format-List
   ```
 
@@ -496,13 +498,13 @@ To verify that you've successfully mail-enabled an existing security group, do a
 
 To mail-disable an existing mail-enabled universal security group, use this syntax:
 
-```
+```PowerShell
 Disable-DistributionGroup -Identity <GroupIdentity> [-IgnoreDefaultScope]
 ```
 
 This example mail-disables the mail-enabled security group named Human Resources.
 
-```
+```PowerShell
 Disable-DistributionGroup -Identity "Human Resources"
 ```
 
@@ -522,18 +524,18 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
 
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Filter "RecipientType -eq 'MailUniversalSecurityGroup'"
   ```
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the name of the group, and run this command to verify that the group isn't returned:
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -Identity <GroupIdentity> | Format-List
   ```
 
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
-  ```
+  ```PowerShell
   Get-Group -Filter "RecipientTypeDetails -eq 'UniversalSecurityGroup'"
   ```

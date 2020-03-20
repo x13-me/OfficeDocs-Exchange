@@ -8,6 +8,8 @@ ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
 ms.reviewer: 
 title: Modify the SMTP banner on Receive connectors
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -49,19 +51,19 @@ Here are some reasons that you might want to modify the default SMTP banner:
 
 Use the following syntax:
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity <ConnectorIdentity> -Banner "220 <Banner Text>"
 ```
 
 This example changes the SMTP banner on the Receive connector named Default Frontend Mailbox01 to the value 220 contoso.com.
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner "220 consoso.com"
 ```
 
 This example removes the custom SMTP banner, which returns the SMTP banner to the default value.
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner $null
 ```
 

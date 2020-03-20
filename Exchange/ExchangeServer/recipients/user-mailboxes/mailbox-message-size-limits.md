@@ -8,6 +8,8 @@ ms.assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms.reviewer:
 title: Configure message size limits for a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -58,7 +60,7 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 
 This example sets the maximum size for sent messages to 25 MB and the maximum size for received messages to 35 MB for the mailbox of Debra Garcia.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
 ```
 
@@ -80,6 +82,6 @@ Or
 
 Run the following command in the Exchange Management Shell.
 
-```
+```PowerShell
 Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
 ```

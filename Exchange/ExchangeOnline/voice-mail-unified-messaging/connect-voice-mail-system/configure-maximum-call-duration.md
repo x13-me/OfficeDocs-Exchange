@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the maximum call duration in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the maximum call duration to 10 minutes on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -MaxCallDuration 10
 ```

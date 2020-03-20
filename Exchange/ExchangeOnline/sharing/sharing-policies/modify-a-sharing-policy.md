@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Modify, disable, or remove a sharing policy in Exchange Online
 ms.collection: 
 - exchange-online
@@ -86,35 +88,35 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
   ```
 
 - This example adds a second domain to the sharing policy Contoso. When you're adding a domain to an existing policy, you must include any previously included domains.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
   ```
 
 - This example sets the sharing policy Contoso as the default sharing policy.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Default $True
   ```
 
 - This example disables the sharing policy Contoso.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity "Contoso" -Enabled $False
   ```
 
 - The first example removes the sharing policy Contoso. The second example removes the sharing policy Contoso and suppresses the confirmation that you want to remove the policy.
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso
   ```
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso -Confirm
 
   ```

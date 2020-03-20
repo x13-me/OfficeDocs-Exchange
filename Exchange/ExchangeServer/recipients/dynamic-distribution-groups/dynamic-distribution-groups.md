@@ -3,13 +3,15 @@ localization_priority: Normal
 description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
 ms.author: v-mapenn
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer:
 title: Manage dynamic distribution groups
 ms.collection: exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -111,19 +113,19 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -IncludedRecipients MailboxUsers -Name "Mailbox Users DDG" -RecipientContainer Users
 ```
 
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users on a server called Server1.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Mailbox Users on Server1" -RecipientContainer Users -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (ServerName -eq 'Server1')"
 ```
 
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users that have a value of "FullTimeEmployee" in the **CustomAttribute10** property.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')"
 ```
 
@@ -137,7 +139,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
 - In the Exchange Management Shell, run the following command to display information about the new dynamic distribution group.
 
-  ```
+  ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
 
@@ -286,13 +288,13 @@ This example changes the following parameters for all dynamic distribution group
 
 - Assign the administrator as the group moderator
 
-```
+```PowerShell
 Get-DynamicDistributionGroup -ResultSize unlimited | Set-DynamicDistributionGroup -HiddenFromAddressListsEnabled $true -MaxReceiveSize 5MB -ModerationEnabled $true -ModeratedBy administrator
 ```
 
 This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, to the All Employees group.
 
-```
+```PowerShell
 Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
 ```
 
@@ -304,12 +306,12 @@ To verify that you've successfully changed properties for a dynamic distribution
 
 - In the Exchange Management Shell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
 
-  ```
+  ```PowerShell
   Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
   ```
 
   For the example above where the message limits were changed, run this command.
 
-  ```
+  ```PowerShell
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```

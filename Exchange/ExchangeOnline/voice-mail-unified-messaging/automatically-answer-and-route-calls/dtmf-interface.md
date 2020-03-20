@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 2c7c9d8a-ed12-4dcf-a5b7-3cea0e785e49
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: DTMF interface in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

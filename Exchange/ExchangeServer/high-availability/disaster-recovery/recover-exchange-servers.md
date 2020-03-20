@@ -10,6 +10,8 @@ title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Serv
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -48,7 +50,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
    4. Find the **msExchInstallPath** attribute. This attribute stores the current installation path.
 
-- You can recover a server using the latest available Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
+- If you do not have the installation media for the Cumulative Update (CU) version that was installed on the server to be recovered, you can recover a server using the latest available Cumulative Update. Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
 
 - The target server must use the same version of Windows Server as the lost server. For example, you can't recover a lost Exchange 2016 server that was running Windows 2012 R2 on a new server that's running Windows 2016, or vice-versa.
 
@@ -81,19 +83,19 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 7. In the Command Prompt window, use the following syntax:
 
-    ```
+    ```console
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
     ```
 
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
-    ```
+    ```powershell
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer
     ```
 
     This is the same example, but a custom location for the Exchange program files is required to match the location on the lost server.
 
-    ```
+    ```powershell
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
@@ -109,7 +111,7 @@ The successful completion of Setup will be the primary indicator that the recove
 
 If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
 
-```
+```console
 "Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
@@ -117,7 +119,7 @@ If you have other Exchange servers in your organization, you'll need to:
 
 1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
-    ```
+    ```powershell
     Disable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 
@@ -125,7 +127,7 @@ If you have other Exchange servers in your organization, you'll need to:
 
 3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete:
 
-    ```
+    ```powershell
     Enable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 

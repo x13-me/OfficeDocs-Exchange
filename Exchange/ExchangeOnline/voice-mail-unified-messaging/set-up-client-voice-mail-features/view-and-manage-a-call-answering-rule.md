@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View and manage a call answering rule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -50,13 +52,13 @@ You can retrieve the properties for a single call answering rule or a list of ca
 
 This example returns a formatted list of call answering rules in a user's UM-enabled mailbox.
 
-```
+```PowerShell
 Get-UMCallAnsweringRule-Mailbox tonysmith | Format-List
 ```
 
 This example displays the properties of the call answering rule `MyUMCallAnsweringRule`.
 
-```
+```PowerShell
 Get-UMCallAnsweringRule -Identity MyUMCallAnsweringRule
 ```
 
@@ -82,7 +84,7 @@ You can also specify the following actions:
 
 This example sets the priority to 2 on the call answering rule `MyCallAnsweringRule` that exists in the mailbox for Tony Smith.
 
-```
+```PowerShell
 Set-UMCallAnsweringRule -Mailbox tonysmith -Name MyCallAnsweringRule -Priority 2
 ```
 
@@ -94,12 +96,12 @@ This example performs the following actions on the call answering rule `MyCallAn
 
 - Sets the call answering rule to allow callers to interrupt the greeting.
 
-```
+```PowerShell
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1,4255550123,," -Priority 2 -CallersCanInterruptGreeting $true -Mailbox tonysmith
 ```
 
 This example changes the free/busy status to Away on the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and sets the priority to 2.
 
-```
+```PowerShell
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith@contoso.com -ScheduleStatus 0x8
 ```

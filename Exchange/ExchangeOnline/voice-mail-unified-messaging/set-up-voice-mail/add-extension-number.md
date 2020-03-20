@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Add an extension number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -82,7 +84,7 @@ This example adds an extension number 22222 for Tony Smith, a UM-enabled user.
 > [!NOTE]
 > Before you add an extension number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to add. To determine the position, use the **$mbx.EmailAddresses** command. The first proxy address in the list will be 0.
 
-```
+```PowerShell
 $mbx=Get-Mailbox tony.smith
 $mbx.EmailAddresses +="eum:22222;phone-context=MyDialPlan.contoso.com"
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses

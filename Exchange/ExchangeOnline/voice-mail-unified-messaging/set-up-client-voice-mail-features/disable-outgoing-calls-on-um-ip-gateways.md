@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Disable outgoing calls on UM IP gateways in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -47,6 +49,6 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example disables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $false
 ```

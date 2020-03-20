@@ -3,7 +3,9 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) auto attendant, incoming calls to an external telephone number that a human operator would ordinarily answer are answered by the auto attendant. Unlike with other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them.
 ms.topic: article
 author: mattpennathe3rd
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.CreateAutoAttendantWizardForm.CreateAutoAttendantWizardPage
 ms.author: v-mapenn
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
@@ -69,12 +71,12 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example creates a UM auto attendant named `MyUMAutoAttendant` that can accept incoming calls but isn't speech-enabled.
 
-```
+```PowerShell
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 55000 -Enabled $false
 ```
 
 This example creates a speech-enabled UM auto attendant named `MyUMAutoAttendant`.
 
-```
+```PowerShell
 New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true
 ```

@@ -8,6 +8,8 @@ ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms.reviewer: 
 title: Configure client-specific message size limits
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -105,11 +107,11 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
 1. Open the appropriate web.config files in Notepad. For example, to open the web.config files for EWS clients, run the following commands:
 
-   ```
+   ```console
    Notepad %ExchangeInstallPath%ClientAccess\exchweb\ews\web.config
    ```
 
-   ```
+   ```console
    Notepad %ExchangeInstallPath%FrontEnd\HttpProxy\ews\web.config
    ```
 
@@ -137,11 +139,11 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
    - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
 
-     ```
+     ```console
      net stop was /y
      ```
 
-     ```
+     ```console
      net start w3svc
      ```
 

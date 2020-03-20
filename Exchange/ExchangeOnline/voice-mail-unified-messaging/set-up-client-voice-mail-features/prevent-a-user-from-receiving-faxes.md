@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Prevent a user from receiving faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -50,6 +52,6 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 This example prevents a UM-enabled user named Tony from receiving fax messages in his mailbox.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```

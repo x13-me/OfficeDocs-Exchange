@@ -8,6 +8,8 @@ ms.assetid: b6403e43-d263-46b6-bfeb-f70f13c32ff1
 ms.reviewer: 
 title: Mailbox servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

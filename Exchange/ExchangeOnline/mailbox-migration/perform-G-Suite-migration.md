@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: "Summary: Instructions for performing a G Suite migration to Office 365."
 ---
 
@@ -19,6 +21,9 @@ If you don't have Azure AD Connect in your environment, see [Deploy Office 365 D
 To manually provision mail-enabled users without DirSync, see [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) for more information.
 
 All of the procedures in this article assume that your Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+
+   > [!NOTE]
+   > G Suite migration is not currently available for Office 365 US Government GCC High or DoD. 
 
 ## Overview of the process
 
@@ -76,7 +81,7 @@ Additional migration limitations are described in the following table:
 ## Create a Google Service Account
 
 > [!IMPORTANT]
-> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly. <br/><br/> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well. Please look at Google's Documentation for how to [Create a Service Account]((https://support.google.com/a/answer/7378726)) for clarifications in case the UI has changed significantly.
+> Use Chrome to create your Google Service account. Other browsers may not allow you to do this properly. <br/><br/> Because elements of the G Suite user interface can change over time, the screens you see might vary from the examples in this section. The locations of certain fields may vary as well. Please look at Google's Documentation for how to [Create a Service Account](https://support.google.com/a/answer/7378726) for clarifications in case the UI has changed significantly.
 
 1. In Chrome, go to the [Developer page for Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) and sign in as a Google user (such as the G Suite admin).
 
@@ -132,7 +137,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 3. In **Client Name**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
 
-4. In **API Scopes** add the required scopes (https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing). The scopes need to be entered in comma-separated format, with no spaces in between. If the API Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
+4. In **API Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example, `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`. If the API Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
 
 5. Click **Authorize**. Verify that the resulting list shows "Email (Read/Write/Send)", "Calendar (Read-Write)", "Contacts (Read/Write)", and "<https://www.googleapis.com/auth/gmail.settings.sharing>".
 
@@ -205,7 +210,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-   ```
+   ```CSV
    EmailAddress
    will@fabrikaminc.net
    user123@fabrikaminc.net
@@ -217,7 +222,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-7. Enter an email address for a user within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
+7. Enter the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
 
 8. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
@@ -249,20 +254,20 @@ During completion, another incremental sync is run to copy any changes that have
 
 1. Connect to the service using Remote Powershell. See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) for more information.
 
-2. Select a user in the gmail tenant for testing the connection settings. This can be any user. The following step uses 'user123' as an example.
+2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365. The following steps use 'admin123' as an example.
 
 3. Run the following command:
 
-   ```
-   Test-MigrationServerAvailability -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net
+   ```PowerShell
+   Test-MigrationServerAvailability -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress admin123@fabrikaminc.net
    ```
 
 4. Verify the test is successful.
 
 5. If successful, run the following command:
 
-   ```
-   New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress user123@fabrikaminc.net -Name gmailEndpoint
+   ```PowerShell
+   New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress admin123@fabrikaminc.net -Name gmailEndpoint
    ```
 
 ### Create a migration batch in Office 365
@@ -275,7 +280,7 @@ During completion, another incremental sync is run to copy any changes that have
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-   ```
+   ```CSV
    EmailAddress
    will@fabrikaminc.net
    user123@fabrikaminc.net
@@ -283,7 +288,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 3. Run the following command:
 
-   ```
+   ```CSV
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
 

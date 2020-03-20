@@ -8,6 +8,8 @@ ms.assetid: 83358884-6036-4e91-87a8-35200541874d
 ms.reviewer:
 title: Procedures for messages in queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -87,19 +89,19 @@ For information about exporting messages from queues, see [Export messages from 
 
 To remove messages from queues, use the following syntax.
 
-```
+```powershell
 Remove-Message <-Identity MessageIdentity | -Filter "MessageFilter"> -WithNDR <$true | $false>
 ```
 
 This example removes messages in the queues that have a subject of "Win Big" without sending an NDR.
 
-```
+```powershell
 Remove-Message -Filter "Subject -eq 'Win Big'" -WithNDR $false
 ```
 
 This example removes the message with the message ID 3 from the Unreachable queue on server named Mailbox01 and sends an NDR.
 
-```
+```powershell
 Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
 ```
 
@@ -113,13 +115,13 @@ To verify that you have successfully removed messages from queues, use either of
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify the messages no longer exist:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
@@ -146,31 +148,31 @@ To verify that you have successfully removed messages from queues, use either of
 
 To suspend messages, use the following syntax:
 
-```
+```powershell
 Suspend-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example suspends the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
 
-```
+```powershell
 Suspend-Message -Identity Mailbox01\Unreachable\3
 ```
 
 This example suspends all messages in all queues on the local server that are from any sender in the domain contoso.com.
 
-```
+```powershell
 Suspend-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example suspends all messages in the delivery queue for contoso.com on the server named Mailbox01.
 
-```
+```powershell
 Get-Queue Mailbox01\contoso.com | Get-Message | Suspend-Message
 ```
 
 This example suspends all messages in all queues on the local server.
 
-```
+```powershell
 Get-Queue | Get-Message | Suspend-Message
 ```
 
@@ -184,13 +186,13 @@ To verify that you have successfully suspended messages in queues, use either of
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are suspended:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
@@ -227,19 +229,19 @@ To verify that you have successfully suspended messages in queues, use either of
 
 To resume messages, use the following syntax:
 
-```
+```powershell
 Resume-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example resumes all messages being sent from any sender in the contoso.com domain.
 
-```
+```powershell
 Resume-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example resumes the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
 
-```
+```powershell
 Resume-Message -Identity Mailbox01\Unreachable\3
 ```
 
@@ -251,13 +253,13 @@ To verify that you have successfully resumed messages in queues, use either of t
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are no longer suspended:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
@@ -284,13 +286,13 @@ Redirecting messages drains all active messages from delivery queues on the sour
 
 To redirect messages, use the following syntax:
 
-```
+```powershell
 Redirect-Message -Server <ServerIdentity> -Target <ServerFQDN>
 ```
 
 This example redirects messages from all delivery queues on the server named Mailbox01 to the server named Mailbox02.contoso.com.
 
-```
+```powershell
 Redirect-Message -Server Mailbox01 -Target Mailbox02.contoso.com
 ```
 
@@ -304,6 +306,6 @@ To verify that you have successfully redirected messages in queues, use either o
 
 - In the Exchange Management Shell, run the following command to verify that the **MessageCount** property value for the delivery queues on the source server is decreasing or empty.
 
-  ```
+  ```powershell
   Get-Queue
   ```

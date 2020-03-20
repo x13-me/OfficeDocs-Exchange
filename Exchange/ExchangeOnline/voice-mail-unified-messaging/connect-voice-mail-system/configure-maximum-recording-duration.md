@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 18eeb567-1048-4c82-93cf-612cb12ec5e3
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the maximum recording duration in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,6 +53,6 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the maximum recording duration to 10 minutes for a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -MaxRecordingDuration 10
 ```

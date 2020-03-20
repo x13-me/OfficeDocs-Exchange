@@ -8,6 +8,8 @@ ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.reviewer:
 title: Configure connectivity logging in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -71,7 +73,7 @@ On Edge Transport servers, connectivity logging is available on the Transport se
 
 To configure connectivity logging, use the following syntax:
 
-```
+```powershell
 <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> -Identity <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
 ```
 
@@ -85,7 +87,7 @@ This example sets the following connectivity log settings in the Transport servi
 
 - **Maximum age of a connectivity log file**: Sets the maximum age of a connectivity log file to 45 days.
 
-```
+```powershell
 Set-TransportService -Identity Mailbox01 -ConnectivityLogPath "D:\Connectivity Log\Hub" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
@@ -109,7 +111,7 @@ To verify that you've successfully configured connectivity logging, use these st
 
 1. Run the following command in the Exchange Management Shell to verify the connectivity log settings on the Exchange servers:
 
-   ```
+   ```powershell
    Write-Host "Front End Transport service:" -ForegroundColor yellow; Get-FrontEndTransportService | Format-List Name,ConnectivityLog*; Write-Host "Mailbox Transport Submission and Mailbox Transport Delivery services:" -ForegroundColor yellow; Get-MailboxTransportService | Format-List Name,ConnectivityLog*; Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | Format-List Name,ConnectivityLog*
    ```
 

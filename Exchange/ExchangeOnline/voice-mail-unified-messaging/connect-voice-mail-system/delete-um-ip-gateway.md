@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -48,6 +50,6 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 This example deletes the UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Remove-UMIPGateway -Identity MyUMIPGateway
 ```

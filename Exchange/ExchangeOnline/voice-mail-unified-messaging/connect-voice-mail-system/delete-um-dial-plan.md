@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Delete a UM dial plan in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -45,6 +47,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example deletes a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 RemoveUMDialplan -identity MyUMDialPlan
 ```

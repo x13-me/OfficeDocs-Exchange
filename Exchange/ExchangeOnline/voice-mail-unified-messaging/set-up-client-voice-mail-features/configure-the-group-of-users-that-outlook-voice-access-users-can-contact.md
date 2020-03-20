@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the group of users that Outlook Voice Access users can contact in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -57,12 +59,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example sets the group of users that Outlook Voice Access users can contact for a UM dial plan named `MyUMDialPlan` to the entire organization.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -ContactScope 'GlobalAddressList' -UMAutoAttendant $null -AllowDialPlanSubscribers $false -AllowExtensions $false
 ```
 
 This example sets the group of users that Outlook Voice Access users can contact for a UM dial plan named `MyUMDialPlan` to the `DialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -Identity MyUMDialPlan -ContactScope DialPlan -AllowDialPlanSubscribers $false -AllowExtensions $false
 ```

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable sending voice messages from Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -51,12 +53,12 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 
 This example enables Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` to send voice messages to users associated with the same dial plan.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $true
 ```
 
 This example prevents Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` from sending voice messages to users associated with the same dial plan.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $false
 ```

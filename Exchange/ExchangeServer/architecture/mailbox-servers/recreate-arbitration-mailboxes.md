@@ -8,6 +8,8 @@ ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
 ms.reviewer: 
 title: Recreate missing arbitration mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -74,7 +76,7 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042" -Arbitration
    ```
 
@@ -96,13 +98,13 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management $true -Force
    ```
 
@@ -124,7 +126,7 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Get-User -ResultSize Unlimited | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
    ```
 
@@ -146,19 +148,19 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar $true -OABGen $true -GMGen $true -ClientExtensions $true -MessageTracking $true -PstProvider $true -MaxSendSize 1GB -Force
    ```
 
 4. In the Exchange Management Shell, add the required capabilities to the mailbox by running the following commands:
 
-   ```
+   ```PowerShell
    $OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration; Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
    ```
 
@@ -180,13 +182,13 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration -UMDataStorage $true -Force
    ```
 
@@ -208,14 +210,14 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}" -Arbitration
    Enable-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    $ShardMBX = Get-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration
    Set-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
    Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="66"} 
@@ -229,7 +231,7 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 
 To verify that you've successfully re-created the arbitration mailbox, set the search scope to search the entire Active Directory forest, an then use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
 
-```
+```PowerShell
 Set-ADServerSettings -ViewEntireForest $true; Get-Mailbox -Arbitration | Format-Table Name,DisplayName
 ```
 

@@ -6,6 +6,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -59,6 +61,6 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 This example sets the input failures before disconnect to 5 on a UM dial plan named `MyUMDialPlan`.
 
-```
+```PowerShell
 Set-UMDialPlan -identity MyUMDialPlan -InputFailuresBeforeDisconnect 5
 ```

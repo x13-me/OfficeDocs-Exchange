@@ -8,6 +8,8 @@ ms.assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
 ms.reviewer: 
 title: Pre-stage the cluster name object for a database availability group
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
