@@ -239,9 +239,9 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Draft folder and Draft messages synchronization
 
-- Shared calendar access and Delegate calendar access
+- Shared calendar access and delegate calendar access
 
-- Shared mailbox data access
+- Shared and delegate mailbox data access
 
 - Cortana Time to Leave
 
