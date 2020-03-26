@@ -70,7 +70,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **Storage Providers**: Only the GCC account's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (for example, Dropbox, Box) cannot be added.
 
-- **Office Lens**: Office Lens technology (for example, scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
+- **Office Lens**: Office Lens technology (for example, scanning business cards and taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
 - **File picker**: The file picker used for adding attachments during email composition is limited to email attachments, iCloud & Device, OneDrive for Business files, and SharePoint sites. The Recent Files list is limited to email attachments.
 
