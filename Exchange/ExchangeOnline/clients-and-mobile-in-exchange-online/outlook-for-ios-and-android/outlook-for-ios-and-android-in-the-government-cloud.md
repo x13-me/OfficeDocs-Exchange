@@ -54,13 +54,13 @@ End users need to install the app on their devices. How the installation happens
 > [!NOTE]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
-## Services and features not available
+## Disabled services and features
 
 By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
 
-- **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
+- **In-app support**: Users are not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
-- **In-app feature requests**: Users will not be able to submit in-app feature requests. Instead, users will be directed to use [Outlook UserVoice](http://outlook.uservoice.com).
+- **In-app feature requests**: Users are not be able to submit in-app feature requests. Instead, users are directed to use [Outlook UserVoice](http://outlook.uservoice.com).
 
 - **Multiple accounts**: Only the user's Office 365 GCC account and OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an ActiveSync client from another provider.
 
@@ -70,28 +70,34 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **Storage Providers**: Only the GCC account's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
 
-- **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
-
-- **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
-
 - **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
 - **File picker**: The file picker used for adding attachments during email composition is limited to email attachments, iCloud & Device, OneDrive for Business files, and SharePoint sites. The Recent Files list is limited to email attachments.
 
-- **TestFlight**: GCC accounts will not have access to pre-release features when using the TestFlight version of Outlook for iOS.
+- **TestFlight**: GCC accounts do not have access to pre-release features when using the TestFlight version of Outlook for iOS.
 
-Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
+Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to the above features and services that are not FedRAMP compliant:
 
 ```PowerShell
 Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
 ```
 
-At any time, access to these features can be revoked by resetting the parameter back to the default value:
+At any time, access to the above features can be revoked by resetting the parameter back to the default value:
 
 ```PowerShell
 Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
 ```
 
-Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected.
+Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization are affected.
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps).
+
+## Services and features not available
+
+Certain services and features of Outlook for iOS and Android are not available for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
+
+- **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
+
+- **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
+
+- **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service. 
