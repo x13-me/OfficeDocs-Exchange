@@ -76,7 +76,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
 
 - **TestFlight**: GCC accounts are not able to access pre-release features when using the TestFlight version of Outlook for iOS.
 
-Executing the below Exchange Online cmdlet will enable GCC users using Outlook for iOS and Android access to the above features and services that are not FedRAMP compliant:
+Executing the below Exchange Online cmdlet enables GCC users using Outlook for iOS and Android access to the above features and services that are not FedRAMP compliant:
 
 ```PowerShell
 Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
