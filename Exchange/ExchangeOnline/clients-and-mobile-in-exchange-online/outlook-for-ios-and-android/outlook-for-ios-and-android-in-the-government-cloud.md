@@ -101,3 +101,5 @@ Certain services and features of Outlook for iOS and Android are not available f
 - **Favorites**: Favorite folders, groups, and people are not available with GCC accounts.
 
 - **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service. 
+
+- **Play My Emails**: Play My Emails is not available for GCC accounts. 
