@@ -397,9 +397,9 @@ If the AutoDiscover or ActiveSync responses are not similar to the above example
 
 There are a few scenarios that can result in data being stale in Outlook for iOS and Android. Typically, this is due to an issue with the second access token (the token used by MRS in Exchange Online to synchronize the data with the on-premises environment). The two most common reasons for this issue are:
 
-1. SSL/TLS offloading on-premises.
+ - SSL/TLS offloading on-premises.
 
-2. EvoSTS certificate metadata issues.
+ - EvoSTS certificate metadata issues.
 
 With SSL/TLS offloading, tokens are issued for a specific uri and that value includes the protocol value ("https://"). When the load balancer offloads SSL/TLS, the request Exchange receives comes in via HTTP, resulting in a claim mismatch due to the protocol value being http://. The following is an example of a response header from a Fiddler trace:
 
