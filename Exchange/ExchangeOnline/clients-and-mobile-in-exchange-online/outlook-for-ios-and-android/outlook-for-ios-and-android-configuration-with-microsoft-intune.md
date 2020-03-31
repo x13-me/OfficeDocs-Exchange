@@ -282,7 +282,7 @@ The following steps allow you to create an app configuration policy. After the c
 
 #### Create a managed devices app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
@@ -361,7 +361,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
 #### Create a managed apps app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
