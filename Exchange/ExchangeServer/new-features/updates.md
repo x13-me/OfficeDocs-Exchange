@@ -18,7 +18,7 @@ manager: serdars
 
 # Updates for Exchange Server
 
-Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address issues reported by customers. CUs also might add new features and functionality.
+Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address issues reported by customers. CUs sometimes also add new features and functionality.
 
 Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
