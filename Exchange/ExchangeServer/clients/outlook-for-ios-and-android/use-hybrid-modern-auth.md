@@ -151,16 +151,16 @@ Enabling support for hybrid Modern Authentication in your organization requires 
 
 ### Create a conditional access policy
 
-When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you will need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this, you will need two conditional access policies, with each policy targeting all potential users. Details on creating these polices can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you will need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this, you will need two conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow the first step in [App protection-based or app-based policy for Exchange Online and SharePoint Online](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#app-protection-based-or-app-based-policy-for-exchange-online-and-sharepoint-online) which allows Outlook for iOS and Android, and it blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1: Configure an Azure AD Conditional Access policy for Exchange Online".
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
-   > [!NOTE] 
-   > This first policy enables Exchange and SharePoint access for mobile apps, provided those mobile apps and users are targeted with an Intune App Protection Policy. Administrators should consider also adding Skype for Business Online, Microsoft Teams, and Office 365 Yammer as additional cloud apps in this policy. This ensures all mobile apps and Office 365 services are supported and accesssible with a single policy. 
+   > [!NOTE]
+   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
-2. Follow the second step in [App protection-based policy for Exchange Online](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#app-protection-based-policy-for-exchange-online) which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. See "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)".
+2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
-The above policies leverage the grant control [Require app protection policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
+   The above policies leverage the grant control [Require app protection policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
 
 3. Finally, follow [How to: Block legacy authentication to Azure AD with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication for other Exchange protocols on iOS and Android devices; this policy should target only Office 365 Exchange Online cloud app and iOS and Android device platforms. This ensures mobile apps using Exchange Web Services, IMAP4, or POP3 protocols with basic authentication cannot connect to Exchange Online.
 
@@ -239,9 +239,9 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Draft folder and Draft messages synchronization
 
-- Shared calendar access and Delegate calendar access
+- Shared calendar access and delegate calendar access
 
-- Shared mailbox data access
+- Shared and delegate mailbox data access
 
 - Cortana Time to Leave
 
@@ -397,9 +397,9 @@ If the AutoDiscover or ActiveSync responses are not similar to the above example
 
 There are a few scenarios that can result in data being stale in Outlook for iOS and Android. Typically, this is due to an issue with the second access token (the token used by MRS in Exchange Online to synchronize the data with the on-premises environment). The two most common reasons for this issue are:
 
-1. SSL/TLS offloading on-premises.
+ - SSL/TLS offloading on-premises.
 
-2. EvoSTS certificate metadata issues.
+ - EvoSTS certificate metadata issues.
 
 With SSL/TLS offloading, tokens are issued for a specific uri and that value includes the protocol value ("https://"). When the load balancer offloads SSL/TLS, the request Exchange receives comes in via HTTP, resulting in a claim mismatch due to the protocol value being http://. The following is an example of a response header from a Fiddler trace:
 
