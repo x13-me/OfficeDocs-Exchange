@@ -38,7 +38,7 @@ The **Diagnostic information for administrators** section in the bounce message 
 
 To fix this issue, do the following steps:
 
-- Verify the SPF DNS record for your domain using a publicly available SPF or DNS record checker on the web.
+- Verify the SPF DNS record for your domain. To do this, we recommend that you use a publicly available SPF or DNS record checker on the web.
 
 - Provision all of the domains you own. We limit the number of emails with unprovisioned domains that a tenant can send.
 
