@@ -89,7 +89,7 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 |Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
 |High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
 
-From an Exchange mobile device mailbox policy perspective, Android's password complexity levels are mapped to the following policy settings:
+From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
 |---------|---------|
