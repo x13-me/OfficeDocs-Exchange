@@ -82,7 +82,7 @@ You can implement targeted journaling rules by specifying the SMTP address of th
 
 All messages sent to or from the journaling recipients you specify in a journaling rule are journaled. If you specify a distribution group as the journaling recipient, all messages sent to or from members of the distribution group are journaled. If you don't specify a journaling recipient, all messages sent to or from recipients that match the journal rule scope are journaled.
 
-Note: The SMTP address specified for the Journal recipient cannot contain a wildcard character. For example, the SMTP address cannot be listed as "*@contoso.com". 
+Note: The SMTP address specified for the journaling recipient cannot contain a wildcard character. For example, the SMTP address cannot be listed as "*@contoso.com". 
 
 ### Journaling mailbox
 
