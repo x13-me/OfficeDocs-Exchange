@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server Hybrid Deployments"
+title: "Exchange Server hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
