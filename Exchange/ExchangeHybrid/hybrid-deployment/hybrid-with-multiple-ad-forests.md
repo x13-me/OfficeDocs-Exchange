@@ -25,7 +25,7 @@ The migration of public folders from an on-premises environment to Office 365 is
 > [!IMPORTANT]
 > Hybrid deployments require the latest cumulative update available for the version of Exchange you have installed in your on-premises organization. If you can't install the latest cumulative update, the immediately previous release is also supported. Older cumulative updates aren't supported. For more information, see [Hybrid deployment prerequisites](hybrid-deployment-prerequisites.md).
 
-For more information about hybrid deployments, see [Exchange Server hybrid deployments](exchange-hybrid.md).
+For more information about hybrid deployments, see [Exchange Server hybrid deployments](hybrid-deployment.md).
 
 ## Multi-forest hybrid deployment prerequisites
 
@@ -49,7 +49,7 @@ Multi-forest hybrid deployment prerequisites are virtually identical to the hybr
   > $tlscertificatename = "<i>$($cert.Issuer)<s>$($cert.Subject)"
   > Get-ReceiveConnector "Receiveconnectorname" | Set-ReceiveConnector -TlsCertificateName $tlscertificatename
   > ```
-
+  
 - **Exchange servers**: At least one Exchange 2013 server with the Client Access server role, or one Exchange 2016 or later server with the Mailbox role, must be installed in each Active Directory forest configured for hybrid deployment.
 
   In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Office 365 tenant service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
@@ -62,7 +62,7 @@ Multi-forest hybrid deployment prerequisites are virtually identical to the hybr
 
 - **Single sign-on**: Although not a requirement for hybrid deployments with single Active Directory forests, administrators can choose to configure an SSO server in each Active Directory forest, or to configure a single SSO server if there is a two-way forest trust configured between the on-premises forests. You use either AD FS or password sync to allow for a seamless user authentication experience.
 
-  For more information, see [Single sign-on with hybrid deployments](single-sign-on.md).
+  For more information, see [Single sign-on with hybrid deployments](../single-sign-on.md).
 
 For a full listing of hybrid deployment prerequisites, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites)
 
@@ -102,18 +102,18 @@ If you compare Contoso's existing organization configuration and the hybrid depl
 
 To configure a hybrid deployment for a multi-forest organization, you'll need to complete the basic steps below:
 
-1. Verify that you've met the hybrid deployment prerequisites. See the prerequisites listed earlier in this topic and [Hybrid deployment prerequisites](hybrid-deployment-prerequisites.md). Typically, only one forest needs an Active Directory synchronization server installed. A server with Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS) must be installed in each forest to enable single sign-on if a two-way forest trust isn't configured between the forests.
+1. Verify that you've met the hybrid deployment prerequisites. See the prerequisites listed earlier in this topic and [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). Typically, only one forest needs an Active Directory synchronization server installed. A server with Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS) must be installed in each forest to enable single sign-on if a two-way forest trust isn't configured between the forests.
 
 2. Obtain a third-party CA certificate for each Active Directory forest that meets the requirements listed previously in this topic.
 
 3. Install the certificate on all Exchange 2013 Client Access and Mailbox servers, or Exchange 2016 Mailbox servers, in each forest.
 
-4. Complete the steps outlined in the [Create a hybrid deployment with the Hybrid Configuration wizard](hybrid-deployment/deploy-hybrid.md) topic for the primary forest.
+4. Complete the steps outlined in the [Create a hybrid deployment with the Hybrid Configuration wizard](deploy-hybrid.md) topic for the primary forest.
 
    > [!IMPORTANT]
    > Be sure to select the certificate designated for the primary forest in the Hybrid Configuration wizard and select the primary SMTP domain for the forest.
 
-5. Complete the steps outlined in the [Create a hybrid deployment with the Hybrid Configuration wizard](hybrid-deployment/deploy-hybrid.md) topic for the secondary forest.
+5. Complete the steps outlined in the [Create a hybrid deployment with the Hybrid Configuration wizard](deploy-hybrid.md) topic for the secondary forest.
 
    > [!IMPORTANT]
    > Be sure to select the certificate designated for the secondary forest in the Hybrid Configuration wizard and select the primary SMTP domain for the forest.
