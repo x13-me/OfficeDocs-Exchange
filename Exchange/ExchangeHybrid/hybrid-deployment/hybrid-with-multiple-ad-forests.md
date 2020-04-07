@@ -40,7 +40,7 @@ Multi-forest hybrid deployment prerequisites are virtually identical to the hybr
   - **Issuer**: The third-party CA that verified the organization information and issued the certificate. For example, VeriSign or Go Daddy. As an example in a multi-forest hybrid deployment, one forest would have a certificate issued by VeriSign and one forest would have a certificate issued by Go Daddy.
 
   > [!IMPORTANT]
-  > The certificate installed on the Mailbox and Client Access (and Edge Transport if deployed) servers in each Active Directory forest used for mail transport in the hybrid deployment must all be issued by the same CA and have the same common name.
+  > The certificate installed on the Mailbox and Client Access (and Edge Transport, if deployed) servers in each Active Directory forest used for mail transport in the hybrid deployment must all be issued by the same CA and have the same common name.
   >
   > On an Edge Transport server, if the certificate common name and issuer name do not match, you can manually set them in the receive connector using following commands:
   >
