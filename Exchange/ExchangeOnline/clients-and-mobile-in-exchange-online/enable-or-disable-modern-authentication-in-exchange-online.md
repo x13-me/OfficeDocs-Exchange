@@ -40,7 +40,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - Modern authentication is enabled by default in Exchange Online, Skype for Business Online and SharePoint Online.
 
-> [!Note]
+> [!NOTE]
 > For tenants created **before** August 1, 2017, modern authentication is turned **off** by default for Exchange Online and Skype for Business Online.
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **only** affects modern authentication connections by Windows-based Outlook clients that support modern authentication (Outlook 2013 or later).
