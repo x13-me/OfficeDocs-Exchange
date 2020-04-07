@@ -106,7 +106,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Intune
 
-    If you do not have **Azure AD app and attribute filtering** option enabled in Azure AD Connect configuration – all required applications are already selected by default.
+    If you do not have **Azure AD app and attribute filtering** option enabled in Azure AD Connect configuration, all required applications are already selected by default.
 
     > [!IMPORTANT]
     > Outlook for iOS and Android utilizes the tenant's Exchange Online Global Address List for on-premises mailboxes leveraging hybrid Modern Authentication. If all mail recipients are not synchronized into Azure Active Directory, users will experience mail flow issues.
