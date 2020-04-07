@@ -23,7 +23,7 @@ Exchange 2013 and later hybrid deployments are supported for organizations with 
 The migration of public folders from an on-premises environment to Office 365 is only supported from a single Active Directory forest. Similarly, accessing public folders in a hybrid state is only supported when the on-premises public folders are housed in a single Active Directory forest.
 
 > [!IMPORTANT]
-> Hybrid deployments require the latest cumulative update available for the version of Exchange you have installed in your on-premises organization. If you can't install the latest cumulative update, the immediately previous release is also supported. Older cumulative updates aren't supported. For more information, see [Hybrid deployment prerequisites](hybrid-deployment-prerequisites.md).
+> Hybrid deployments require the latest cumulative update available for the version of Exchange you have installed in your on-premises organization. If you can't install the latest cumulative update, the immediately previous release is also supported. Older cumulative updates aren't supported. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 
 For more information about hybrid deployments, see [Exchange Server hybrid deployments](hybrid-deployment.md).
 
@@ -64,7 +64,7 @@ Multi-forest hybrid deployment prerequisites are virtually identical to the hybr
 
   For more information, see [Single sign-on with hybrid deployments](../single-sign-on.md).
 
-For a full listing of hybrid deployment prerequisites, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites)
+For a full listing of hybrid deployment prerequisites, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md)
 
 ## Multi-forest hybrid deployment scenario
 
