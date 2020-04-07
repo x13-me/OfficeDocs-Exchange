@@ -20,6 +20,7 @@
 ## [Hybrid Deployment](../hybrid-deployment/hybrid-deployment.md)
 ### [Hybrid agent](../hybrid-deployment/hybrid-agent.md)
 ### [Deploy hybrid](../hybrid-deployment/deploy-hybrid.md)
+### [Hybrid deployments with multiple Active Directory forests](../hybrid-deployment/hybrid-with-multiple-ad-forests.md)
 ### [Move mailboxes](../hybrid-deployment/move-mailboxes.md)
 ### [Set up legacy hybrid public folders](../hybrid-deployment/set-up-legacy-hybrid-public-folders.md)
 ### [Set up modern hybrid public folders](../hybrid-deployment/set-up-modern-hybrid-public-folders.md)
