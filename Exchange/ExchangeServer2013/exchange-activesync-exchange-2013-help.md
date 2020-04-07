@@ -39,7 +39,7 @@ Exchange ActiveSync is a Microsoft Exchange synchronization protocol that's opti
 > Exchange ActiveSync does not support shared mailboxes or delegate access.
 
 > [!IMPORTANT]
-> Windows Phone 7 mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see Windows Phone 7 Synchronization.
+> Windows Phone 7 mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone 7 synchronization](#windows-phone-7-synchronization).
 
 ## Features in Exchange ActiveSync
 
