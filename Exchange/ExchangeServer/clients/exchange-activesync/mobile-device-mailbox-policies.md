@@ -95,10 +95,10 @@ From the perspective of an Exchange mobile device mailbox policy, Android's pass
 |---------|---------|
 |Password enabled = false     | None        |
 |Allow simple password = true<br/>Min password length < 4      |Low         |
-|Allow simple password = true<br/>Min password length <= 6      |Medium         |
-|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length <= 6      |Medium         |
-|Allow simple password = true<br/>Min password length > 6      |True         |
-|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length > 6      |High         |
+|Allow simple password = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = true<br/>Min password length > 6      |High         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length >= 6      |High         |
 
 ## Mobile device mailbox policy settings
 
