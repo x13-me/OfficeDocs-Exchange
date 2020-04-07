@@ -22,8 +22,8 @@ In Microsoft Exchange Server 2013, you can create mobile device mailbox policie
 > [!IMPORTANT]
 > Windows Phone 7 mobile phones only support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see Windows Phone 7 Synchronization.
 
-> [!WARNING]
-> The iOS7 fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS7 device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
+> [!NOTE]
+> Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
 
 ## Overview of mobile device mailbox policies
 
