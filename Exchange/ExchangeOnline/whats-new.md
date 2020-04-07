@@ -6,7 +6,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid:
 ms.reviewer: 
-title: What's new in Exchange Online
+title: What's new in Exchange admin center
 f1.keywords:
 - NOCSH
 ms.collection: 
