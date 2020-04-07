@@ -49,19 +49,19 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 |---------|---------|
 |None     |No password requirements are configured         |
 |Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
-|Medium     |Passwords that meet one of the following criteria:<br>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br>- Alphabetic passwords with a minimum length of 4 characters<br>- Alphanumeric passwords with a minimum length of 4 characters        |
-|High     |Passwords that meet one of the following criteria:<br>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br>- Alphabetic passwords with a minimum length of 6 characters<br>- Alphanumeric passwords with a minimum length of 6 characters         |
+|Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
+|High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
 
 From an Exchange mobile device mailbox policy perspective, Android's password complexity levels are mapped to the following policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
 |---------|---------|
 |Password enabled = false     | None        |
-|Allow simple password = true<br>Min password length < 4      |Low         |
-|Allow simple password = true<br>Min password length <= 6      |Medium         |
-|Allow simple password = false<br>Alphanumeric password required = true<br>Min password length <= 6      |Medium         |
-|Allow simple password = true<br>Min password length > 6      |True         |
-|Allow simple password = false<br>Alphanumeric password required = true<br>Min password length > 6      |High         |
+|Allow simple password = true<br/>Min password length < 4      |Low         |
+|Allow simple password = true<br/>Min password length <= 6      |Medium         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length <= 6      |Medium         |
+|Allow simple password = true<br/>Min password length > 6      |True         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length > 6      |High         |
 
 ## Mobile device mailbox policy settings
 
