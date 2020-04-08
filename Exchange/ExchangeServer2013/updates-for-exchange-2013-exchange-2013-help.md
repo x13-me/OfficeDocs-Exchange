@@ -23,7 +23,7 @@ With Microsoft Exchange Server 2013, we changed the way we deliver hotfixes and 
 
 Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
-To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CU's, you don't need to install any previous CU's or service packs first.
+To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CUs, you don't need to install any previous CUs or service packs first.
 
 For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=282528) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613).
 
