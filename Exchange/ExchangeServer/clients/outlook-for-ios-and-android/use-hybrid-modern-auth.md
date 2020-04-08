@@ -94,7 +94,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - All Exchange 2007 or Exchange 2010 servers must be removed from the environment. These versions of Exchange are out of mainstream support and will not work with Intune-managed Outlook for iOS and Android. In this architecture, Outlook for iOS and Android uses OAuth as the authentication mechanism. One of the on-premises configuration changes that occurs enables the OAuth endpoint to the Microsoft Cloud as the default authorization endpoint. When this change is made, clients can start negotiating the use of OAuth. Because this is an organization-wide change, Exchange 2010 mailboxes fronted by either Exchange 2013 or 2016 will incorrectly think they can perform OAuth and will end up in a disconnected state, since Exchange 2010 does not support OAuth as an authentication mechanism.
 
-2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises directory with Azure Active Directory, via Azure AD Connect. You must ensure the following attributes are synchronized:
+2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises mail recipient directory with Azure Active Directory, via Azure AD Connect. If you have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, ensure that the following applications are selected:
 
    - Office 365 ProPlus
 
@@ -106,11 +106,16 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Intune
 
+    If you do not have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, all required applications are already selected by default.
+
+    > [!IMPORTANT]
+    > Outlook for iOS and Android uses the tenant's Exchange Online Global Address List for on-premises mailboxes that leverage hybrid Modern Authentication. If all mail recipients are not synchronized into Azure Active Directory, users will experience mail flow issues.
+    
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
 
    - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
 
-       > [!Note]
+       > [!NOTE]
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
 
    - Requires an Office 365 Enterprise, Business, or Education tenant.
