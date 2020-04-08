@@ -35,7 +35,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 |Security hotfixes delivered separately|Yes|Yes|Yes|No|
 
 > [!NOTE]
-> At this time, no additional CUs are planned for Exchange Server 2013 and no addition RUs are planned for Exchange Server 2010.
+> At this time, no additional CUs are planned for Exchange Server 2013 and no additional RUs are planned for Exchange Server 2010.
 
 ## Support lifecycle
 
