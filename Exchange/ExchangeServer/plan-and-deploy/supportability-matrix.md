@@ -105,7 +105,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 ## Web browsers supported for use with the premium version of Outlook Web App or Outlook on the web
 
-The following table identifies the Web browsers supported for use together with the premium version of Outlook Web App or Outlook on the web.
+The following table identifies the web browsers supported for use together with the premium version of Outlook Web App or Outlook on the web.
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -129,7 +129,7 @@ The following table identifies the Web browsers supported for use together with 
 
 ## Web browsers supported for use with the basic version of Outlook Web App or Outlook on the web
 
-The following table identifies the Web browsers supported for use together with the light (basic) version of Outlook Web App or Outlook on the web.
+The following table identifies the web browsers supported for use together with the light (basic) version of Outlook Web App or Outlook on the web.
 
 > [!NOTE]
 > Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can't be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
@@ -153,7 +153,7 @@ The following table identifies the Web browsers supported for use together with 
 
 ## Web browsers supported for use of S/MIME with Outlook Web App or Outlook on the web
 
-The following table identifies the Web browsers supported for the use of S/MIME together with Outlook Web App or Outlook on the web.
+The following table identifies the web browsers supported for the use of S/MIME together with Outlook Web App or Outlook on the web.
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
