@@ -126,7 +126,7 @@
 #### [Convert a mailbox](../recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox.md)
 #### [Enable or disable Exchange ActiveSync](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync.md)
 #### [Enable or disable MAPI](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi.md)
-#### [Enable or disable Outlook on the wb](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app.md)
+#### [Enable or disable Outlook on the web](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app.md)
 #### [Mailbox plans](../recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans.md)
 #### [Automatically save sent items in delegator's mailbox](../recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox.md)
 #### [Clutter notifications in Outlook](../recipients-in-exchange-online/manage-user-mailboxes/clutter-notifications-in-outlook.md)
