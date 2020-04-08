@@ -94,7 +94,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "ExchangeServer/**",
         ]
       },
       {
@@ -109,7 +110,11 @@
         "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "ExchangeHybrid/**",
+          "ExchangeOnline/**",
+          "ExchangeServer2013/**",
+          "Hub/**",
         ]
       }
     ],
