@@ -98,7 +98,7 @@ Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information
 
 Deploying and configuring Active Directory Federation Services (AD FS) using claims means multifactor authentication can be used with Exchange 2013 SP1 including supporting smartcard and certificate-based authentication in Outlook Web App. In a nutshell, to implement AD FS to support multifactor authentication:
 
-- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://technet.microsoft.com/library/hh831502)
+- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://technet.microsoft.com/library/hh831502).
 
 - Create relying party trusts and the required AD FS claims.
 
@@ -110,7 +110,7 @@ Deploying and configuring Active Directory Federation Services (AD FS) using cla
 
 - Restart Internet Information Services on each Client Access server to load the configuration.
 
-For details, see [Using AD FS claims-based authentication with Outlook Web App and EAC](using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md)
+For details, see [Using AD FS claims-based authentication with Outlook Web App and EAC](using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md).
 
 ### SSL Offloading support
 
@@ -134,7 +134,7 @@ SSL offloading is supported with following protocols and services:
 
 - MAPI virtual directory for Outlook clients
 
-If you have multiple Client Access servers, each Client Access server in your organization must be configured identically. You need to perform the required steps for each protocol or service on every Client Access server in your on-premises organization. For details, see [Configuring SSL offloading in Exchange 2013](configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md)
+If you have multiple Client Access servers, each Client Access server in your organization must be configured identically. You need to perform the required steps for each protocol or service on every Client Access server in your on-premises organization. For details, see [Configuring SSL offloading in Exchange 2013](configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md).
 
 ### Public Attachment Handling in Exchange Online
 
@@ -158,7 +158,7 @@ Information workers in Exchange on-premises organizations need to collaborate wi
 
 - Exchange hybrid deployment features, such as shared free/busy calendar information, MailTips, and Message Tracking.
 
-- Exchange In-place eDiscovery
+- Exchange In-place eDiscovery.
 
 For more information, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
