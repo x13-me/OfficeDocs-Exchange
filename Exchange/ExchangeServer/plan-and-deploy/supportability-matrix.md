@@ -26,7 +26,7 @@ The following table identifies the release model for each supported version of E
 
 In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulative. An RU for Exchange Server 2010 includes all fixes for Exchange Server from all previous update rollup packages, so you only need to install the latest RU to apply all of the fixes that were released up to that point. However, individual updates or hotfixes for Exchange 2010 or earlier do not contain all previous fixes for Exchange Server. The updated files that are included in an individual update or hotfix include all updates that were applied only to those specific files by all previous updates, but any other files on Exchange Server will not be updated. For more information, see [Exchange 2010 Servicing](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/).
 
-In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). Each CU is a full installation of Exchange that includes updates and changes from all previous CU's, so you don't need to install any previous CU's or Exchange Server RTM first. For more information, see [Updates for Exchange Server](../new-features/updates.md).
+In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). Each CU is a full installation of Exchange that includes updates and changes from all previous CUs, so you don't need to install any previous CUs or Exchange Server RTM first. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
 |**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -35,7 +35,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 |Security hotfixes delivered separately|Yes|Yes|Yes|No|
 
 > [!NOTE]
-> At this time, no additional CU's are planned for Exchange Server 2013 and no addition RU's are planned for Exchange Server 2010.
+> At this time, no additional CUs are planned for Exchange Server 2013 and no addition RUs are planned for Exchange Server 2010.
 
 ## Support lifecycle
 
@@ -194,7 +194,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 > [!IMPORTANT]
 > Versions of the .NET Framework that aren't listed in the tables below are not supported on any version of Exchange. This includes minor and patch-level releases of the .NET Framework.
 >
-> If you are upgrading Exchange Server from an unsupported CU to the current CU and no intermediate CU's are available, you should first upgrade to the latest version of .NET that's supported by your version of Exchange Server and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
+> If you are upgrading Exchange Server from an unsupported CU to the current CU and no intermediate CUs are available, you should first upgrade to the latest version of .NET that's supported by your version of Exchange Server and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
 ### Exchange 2019
 
