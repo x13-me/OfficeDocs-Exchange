@@ -365,7 +365,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    Separate multiple email addresses with commas.
 
-   > [!Note]
+   > [!NOTE]
    > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
    >
    > ```PowerShell
