@@ -29,15 +29,15 @@ In Microsoft Exchange Server 2013, you can create mobile device mailbox policie
 
 You can use mobile device mailbox policies to manage many different settings. These include the following:
 
-  - Require a password
+  - Require a password.
 
-  - Specify the minimum password length
+  - Specify the minimum password length.
 
-  - Require a number or special character in the password
+  - Require a number or special character in the password.
 
-  - Designate how long a device can be inactive before requiring the user to re-enter a password
+  - Designate how long a device can be inactive before requiring the user to re-enter a password.
 
-  - Wipe a device after a specific number of failed password attempts
+  - Wipe a device after a specific number of failed password attempts.
 
 For more information about all the settings you can configure, see Mobile device policy settings.
 
