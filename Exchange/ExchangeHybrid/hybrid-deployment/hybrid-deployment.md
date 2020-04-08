@@ -26,7 +26,7 @@ Select a topic below to get started:
 
 [Create a hybrid deployment with the Hybrid Configuration wizard](deploy-hybrid.md)
 
-[Hybrid deployments with multiple Active Directory forests](hybrid-with-multiple-ad-forests.md)
+[Hybrid deployments with multiple Active Directory forests](hybrid-with-multiple-forests.md)
 
 [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](move-mailboxes.md)
 

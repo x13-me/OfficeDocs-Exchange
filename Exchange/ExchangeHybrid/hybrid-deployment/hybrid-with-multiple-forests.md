@@ -1,5 +1,5 @@
 ---
-title: "Hybrid deployments with multiple Active Directory forests: Exchange 2016 Help"
+title: "Hybrid deployments with multiple forests"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
@@ -13,10 +13,10 @@ ms.collection:
 - M365-email-calendar
 ms:assetid: d5d77069-f70f-4e85-bbe0-d06bfa73b613
 ms.reviewer:
-description: "Learn about hybrid deployments with with multiple on-premises Active Directory forests and a single Office 365 tenant."
+description: "Learn about hybrid deployments with with multiple on-premises forests and a single Office 365 tenant."
 ---
 
-# Hybrid deployments with multiple Exchange forests
+# Hybrid deployments with multiple forests
 
 Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Office 365 tenant. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
