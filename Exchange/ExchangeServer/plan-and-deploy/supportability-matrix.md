@@ -242,7 +242,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 <sup>1</sup> On Windows Server 2012, you need to install the .NET Framework 3.5 before you can use Exchange 2010 SP3.
 
-<sup>2</sup> Exchange 2010 uses only the .NET Framework 3.5 and the .NET Framework 3.5 SP1 libraries. It doesn't use the .NET Framework 4.5 libraries if they're installed on the server. We support the installation of any version of the .NET Framework 4.5 (for example, .NET Framework 4.5.1, .NET Framework 4.5.2, etc.) as long as the .NET Framework 3.5 or the .NET Framework 3.5 SP1 are also installed on the server.
+<sup>2</sup> Exchange 2010 uses only the .NET Framework 3.5 and the .NET Framework 3.5 SP1 libraries. It doesn't use the .NET Framework 4.5 libraries if they're installed on the server. We support the installation of any version of the .NET Framework 4.5 (for example, .NET Framework 4.5.1, .NET Framework 4.5.2, etc.) as long as the .NET Framework 3.5 or the .NET Framework 3.5 SP1 is also installed on the server.
 
 ## Windows PowerShell
 
