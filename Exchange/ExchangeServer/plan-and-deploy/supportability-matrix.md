@@ -179,7 +179,7 @@ The following tables identify the mail clients that are supported for use togeth
 |Outlook for Mac for Office 365|Not supported|Supported<sup>1</sup>|Supported|Supported|
 |Entourage 2008 (EWS)|Not supported|Supported<sup>4</sup>|Supported<sup>4</sup>|Supported<sup>4</sup>|
 
-<sup>1</sup> Requires the latest Office service pack and public update.
+<sup>1</sup> Requires the latest Office service pack and the latest public update.
 
 <sup>2</sup> Requires Outlook 2010 Service Pack 1 and the latest public update.
 
