@@ -13,7 +13,7 @@ ms.collection:
 - M365-email-calendar
 ms:assetid: d5d77069-f70f-4e85-bbe0-d06bfa73b613
 ms.reviewer:
-description: "Learn about hybrid deployments with with multiple on-premises forests and a single Office 365 tenant."
+description: "Learn about hybrid deployments with multiple on-premises forests and a single Office 365 tenant."
 ---
 
 # Hybrid deployments with multiple forests
