@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server Hybrid Deployments"
+title: "Exchange Server hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
@@ -267,7 +267,7 @@ The following table contains links to topics that will help you learn about and 
 |[Shared free/busy in Exchange hybrid deployments](shared-free-busy.md)|Learn more about calendar free/busy sharing between on-premises and Exchange Online organizations in a hybrid deployment.|
 |[Server roles in Exchange hybrid deployments](server-roles.md)|Learn more about how the Exchange server roles function in a hybrid deployment.|
 |[IRM in Exchange hybrid deployments](irm.md)|Learn more about how Information Rights Management functions in a hybrid deployment.|
-|[Permissions in Exchange hybrid deployments](permissions.md)|Learn more about how a hybrid deployment uses Role Based Access Control (RBAC) to control permissions.|
+|[Permissions in Exchange hybrid deployments](permissions.md)|Learn more about how a hybrid deployment uses Role-Based Access Control (RBAC) to control permissions.|
 |[Edge Transport servers with hybrid deployments](edge-transport-servers.md)|Learn more about Exchange Edge Transport servers and how they are deployed and operate in a hybrid deployment.|
 |[Single sign-on with hybrid deployments](single-sign-on.md)|Learn more about how single sign-on using password synchronization and AD FS function in a hybrid deployment.|
 |[Hybrid Deployment procedures](hybrid-deployment/hybrid-deployment.md)|Explore procedures for creating and modifying hybrid deployments for your Exchange on-premises and Exchange Online organizations.|
