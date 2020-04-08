@@ -18,7 +18,7 @@
 ## [Performance best practices](../performance-best-practices.md)
 ## [Decommission on-premises Exchange](../decommission-on-premises-exchange.md)
 ## [Hybrid deployment](../hybrid-deployment/hybrid-deployment.md)
-### [Hybrid deployments with multiple Active Directory forests](../hybrid-deployment/hybrid-with-multiple-forests.md)
+### [Hybrid deployments with multiple forests](../hybrid-deployment/hybrid-with-multiple-forests.md)
 ### [Hybrid agent](../hybrid-deployment/hybrid-agent.md)
 ### [Deploy hybrid](../hybrid-deployment/deploy-hybrid.md)
 ### [Move mailboxes](../hybrid-deployment/move-mailboxes.md)

@@ -166,7 +166,7 @@ For more information, see [Configure OAuth authentication between Exchange and E
 
 New in Exchange 2013 SP1, hybrid deployments are now supported in organizations with multiple Active Directory forests. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple Active Directory forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
-For more information, see [Hybrid deployments with multiple Active Directory forests](https://technet.microsoft.com/library/jj873754\(v=exchg.150\)).
+For more information, see [Hybrid deployments with multiple forests](../ExchangeHybrid/hybrid-deployment/hybrid-with-multiple-forests.md).
 
 ### Database Availability Group without an Administrative Access Point
 
