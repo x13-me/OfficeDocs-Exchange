@@ -207,7 +207,7 @@ To install AD FS on Windows Server 2012 R2:
 After you install the required AD FS servers and generate the required certificates, you must configure AD FS and then test that AD FS is working correctly. You can also use the checklist here to help you in setting up and configuring AD FS: [Checklist: Setting Up a Federation Server](https://go.microsoft.com/fwlink/?linkid=392700).
 
 To configure Active Directory Federation Services:
-**
+
 1. On the **Installation Progress** page, in the window under **Active Directory Federation Services**, click **Configure the federation service on this server**. The Active Directory Federation Service Configuration Wizard opens.
 
 2. On the **Welcome** page, click **Create the first federation server in a federation server farm**, and then click **Next**.
