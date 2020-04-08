@@ -95,7 +95,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
-          "ExchangeServer/**",
+          "ExchangeServer/**"
         ]
       },
       {
@@ -114,7 +114,7 @@
           "ExchangeHybrid/**",
           "ExchangeOnline/**",
           "ExchangeServer2013/**",
-          "Hub/**",
+          "Hub/**"
         ]
       }
     ],
