@@ -187,22 +187,14 @@ The following tables identify the mail clients that are supported for use togeth
 
 <sup>4</sup> EWS only. There is no DAV support for Exchange 2010.
 
-|**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
-|:-----|:-----:|:-----:|:-----:|:-----:|
-|Windows Mobile 10|Not supported|Supported|Supported|Supported|
-|Windows Phone 8.1|Not supported|Supported|Supported|Supported|
-|Windows Phone 8|Not supported|Supported|Supported|Supported|
-|Windows Phone 7.5|Not supported|Not supported|Supported|Supported|
-|Windows Phone 7|Not supported|Not supported|Supported|Supported|
-
 ## Microsoft .NET Framework
 
 The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange.
 
 > [!IMPORTANT]
-> Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange. This includes minor and patch-level releases of .NET Framework.
+> Versions of the .NET Framework that aren't listed in the tables below are not supported on any version of Exchange. This includes minor and patch-level releases of the .NET Framework.
 >
-> When upgrading Exchange Server from an unsupported CU to the current CU and no intermediate CUs are available, you should first upgrade to the latest version of .NET that's supported by your version of Exchange Server and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
+> If you are upgrading Exchange Server from an unsupported CU to the current CU and no intermediate CU's are available, you should first upgrade to the latest version of .NET that's supported by your version of Exchange Server and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
 ### Exchange 2019
 
