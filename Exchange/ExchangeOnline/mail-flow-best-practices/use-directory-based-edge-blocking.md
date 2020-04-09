@@ -29,7 +29,7 @@ If a message is sent to a valid email address in Office 365, the message continu
 > [!NOTE]
 > - In hybrid environments, in order for DBEB to work, the MX record for the domain must point to Office 365 so that email for the domain is routed to Office 365 first.
 >
-> - There are additional considerations for using DBEB with mail-enabled public folders. DBEB is not supported for mail-enabled public folders hosted in Exchange Online. DBEB is only supported for mail-enabled public folders hosted on-premises. For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Office-365-Directory-Based-Edge-Blocking-support-for-on-premises/ba-p/606740).
+> - There are additional considerations when using DBEB with mail-enabled public folders. DBEB is not supported for mail-enabled public folders hosted in Exchange Online. DBEB is only supported for mail-enabled public folders hosted on-premises. For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Office-365-Directory-Based-Edge-Blocking-support-for-on-premises/ba-p/606740).
 
 ## What do you need to know before you begin?
 
