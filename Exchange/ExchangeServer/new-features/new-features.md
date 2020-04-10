@@ -56,8 +56,6 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 - **Calendar - Remove-CalendarEvents cmdlet**: Enables administrators to cancel meetings that were organized by a user that has left the company. Previously, conference rooms or meeting attendees would have these defunct meetings permanently on their calendars.
 
-- **Assign delegate permission via PowerShell**: Updates to the Add-FolderPermissions cmdlet so administrators can assign delegate permissions.
-
 - **Email address internationalization (EAI)**: Email addresses that contain non-English characters can now be routed and delivered natively.
 
 ## What's new when upgrading from Exchange 2013 to Exchange 2019?
