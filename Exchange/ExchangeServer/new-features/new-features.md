@@ -185,17 +185,17 @@ Exchange 2019 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2019, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
+    - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
 
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+    - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
-  - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
+    - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
 
-  - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+    - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+    - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
 
-  - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
+    - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
 
     > [!NOTE]
     > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
