@@ -85,7 +85,7 @@ Using the previous example, you would configure the IP address of the third-part
 
    - **IP addresses to skip**: Choose one of the following values:
 
-     - **Automatically detect and skip the last IP address**: Whe recommend this option if you have only one message source to skip.
+     - **Automatically detect and skip the last IP address**: We recommend this option if you have only one message source to skip.
 
      - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
 
