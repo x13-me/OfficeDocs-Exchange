@@ -64,7 +64,9 @@ To set up Office Online Server, you will need the following:
 
 - All available Windows updates installed
 
-Office Online Server can't be installed on an Exchange server, SharePoint server, Active Directory domain controller, or any other computer with existing applications installed.
+> [!NOTE]
+>
+> Office Online Server can't be installed on an Exchange server, SharePoint server, Active Directory domain controller, or any other computer with existing applications installed.
 
 ## Install Office Online Server
 
