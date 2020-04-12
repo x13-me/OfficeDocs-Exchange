@@ -60,7 +60,7 @@ To set up Office Online Server, you will need the following:
 
 - [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)
 
-- [Microsoft.IdentityModel.Extention.dll](http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/MicrosoftIdentityExtensions-64.msi)
+- [Microsoft.IdentityModel.Extention.dll](https://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/MicrosoftIdentityExtensions-64.msi)
 
 - All available Windows updates installed
 
