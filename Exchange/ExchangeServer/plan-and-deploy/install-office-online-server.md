@@ -45,7 +45,7 @@ If you want users outside of your network to view supported file attachments in 
 
 ## Office Online Server system requirements
 
-Office Online Server requires the following to install:
+To set up Office Online Server, you will need the following:
 
 - Windows Server 2012 R2 or Windows Server 2016
 
@@ -56,7 +56,7 @@ Office Online Server requires the following to install:
 
 - [Microsoft .NET Framework 4.5.2](https://www.microsoft.com/download/details.aspx?id=42643)
 
-- [Visual C++ Redistributable for Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkId=616889)
+- [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 - [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)
 
@@ -68,7 +68,7 @@ Office Online Server can't be installed on an Exchange server, SharePoint server
 
 ## Install Office Online Server
 
-1. To install Office Online Server, follow Steps 1 through 3 in the section "Prepare servers to run Office Online Server" of the article [Deploy Office Online Server](https://docs.microsoft.com/officeonlineserver/deploy-office-online-server#prepare-servers-to-run-office-online-server). Your Office Online Server should be installed before proceeding to the next step.
+1. To install Office Online Server, follow Steps 1 through 3 in the section "Prepare servers to run Office Online Server" of the article [Deploy Office Online Server](https://docs.microsoft.com/officeonlineserver/deploy-office-online-server#prepare-servers-to-run-office-online-server) before proceeding.
 
 5. Obtain and import an SSL certificate with the fully qualified domain name(s) (FQDN) of the Office Online Server server. If your organization is configured for split DNS, you only need to configure one FQDN on the certificate. For example, oos.contoso.com. If you have different internal and external FQDNs, you'll need to configure both FQDNs on the certificate. For example, oos.internal.contoso.com and oos.contoso.com.
 
