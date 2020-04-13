@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: High
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
 author: mattpennathe3rd
