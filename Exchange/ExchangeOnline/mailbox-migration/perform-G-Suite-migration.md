@@ -9,7 +9,8 @@ ms.service: exchange-online
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: "Summary: Instructions for performing a G Suite migration to Office 365."
+description: Instructions for migrating from G Suite to Microsoft Office 365 in stages by migrating users in batches.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Perform a G Suite migration
