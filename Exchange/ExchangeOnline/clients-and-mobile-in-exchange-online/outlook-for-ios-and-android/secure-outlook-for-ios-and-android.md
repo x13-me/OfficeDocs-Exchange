@@ -5,7 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
-title: Outlook for iOS security, Outlook for Android security, Outlook for iOS data security, Outlook for Android data security, Outlook iOS Security MDM, Outlook Android security MDM, Outlook iOS security Exchange policies
+title: Securing Outlook for iOS and Android in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -15,7 +15,7 @@ ms.service: exchange-online
 f1.keywords:
 - NOCSH
 manager: serdars
-
+ms.custom: seo-marvel-apr2020
 ---
 
 # Securing Outlook for iOS and Android in Exchange Online
