@@ -57,8 +57,8 @@ Using the previous example, you would configure the IP address of the third-part
 ||**Before Enhanced Filtering is enabled**|**After Enhanced Filtering is enabled**|
 |:-----|:-----|:-----|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
-|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skiplisting was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
-|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skiplisting was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
+|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
+|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
 
 ## Procedures for Enhanced Filtering for Connectors
 
@@ -77,7 +77,7 @@ Using the previous example, you would configure the IP address of the third-part
 1. Open the Security and Compliance Center, expand **Threat Management**, choose **Policy**, and then choose **Enhanced Filtering**.
 
    > [!TIP]
-   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skiplisting](https://protection.office.com/skiplisting)
+   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skip listing](https://protection.office.com/skiplisting)
 
 2. Select the inbound connector that you want to configure.
 
@@ -85,7 +85,7 @@ Using the previous example, you would configure the IP address of the third-part
 
    - **IP addresses to skip**: Choose one of the following values:
 
-     - **Automatically detect and skip the last IP address**: Whe recommend this option if you have only one message source to skip.
+     - **Automatically detect and skip the last IP address**: We recommend this option if you have only one message source to skip.
 
      - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
 
