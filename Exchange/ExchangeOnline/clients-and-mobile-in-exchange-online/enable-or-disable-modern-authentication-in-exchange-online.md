@@ -47,6 +47,8 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **does not** affect other email clients that support modern authentication (for example, Outlook Mobile, Outlook for Mac 2016, and Exchange ActiveSync in iOS 11 or later). These other email clients **always** use modern authentication to log in to Exchange Online mailboxes.
 
+- When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication will be prompted to log in again. Further, the Basic Auth login dialog box and the Modern Auth dialog box look very different. See the **Outlook and Basic Auth** section of the [Basic Auth and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282) blog post for details.
+
 - You should synchronize the state of modern authentication in Exchange Online with Skype for Business Online to prevent multiple log in prompts in Skype for Business clients. For instructions, see [Skype for Business Online: Enable your tenant for modern authentication](https://aka.ms/SkypeModernAuth).
 
 - A user with multiple accounts configured in their Outlook profile might receive an error when they try to connect to their mailbox. For more information, see [KB 4516672](https://support.microsoft.com/help/4516672/outlook-shows-disconnected-after-enabling-modern-authentication-in-off)
