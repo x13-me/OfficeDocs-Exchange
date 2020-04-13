@@ -5,7 +5,7 @@ ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
-title: Outlook for iOS and Android in Exchange Online: FAQ
+title: "Outlook for iOS and Android in Exchange Online: FAQ"
 ms.collection:
 - exchange-online
 - M365-email-calendar
