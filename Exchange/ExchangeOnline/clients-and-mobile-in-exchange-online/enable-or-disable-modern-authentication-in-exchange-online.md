@@ -43,6 +43,10 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 > [!NOTE]
 > For tenants created **before** August 1, 2017, modern authentication is turned **off** by default for Exchange Online and Skype for Business Online.
 
+> [!IMPORTANT]
+>
+> At this time, enabling modern auth will block connections from IMAP and POP3 clients. To continue using IMAP and POP3 clients with Exchange Online when modern auth is enabled, you must set up conditional access policies in Azure Active Directory to allow IMAP and POP3 access for individual accounts.
+
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **only** affects modern authentication connections by Windows-based Outlook clients that support modern authentication (Outlook 2013 or later).
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **does not** affect other email clients that support modern authentication (for example, Outlook Mobile, Outlook for Mac 2016, and Exchange ActiveSync in iOS 11 or later). These other email clients **always** use modern authentication to log in to Exchange Online mailboxes.
