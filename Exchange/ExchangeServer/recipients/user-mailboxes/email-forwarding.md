@@ -58,7 +58,7 @@ Set-Mailbox -Identity "Douglas Kohn" -DeliverToMailboxAndForward $true -Forwardi
 This example forwards all email sent to the mailbox of Ken Sanchez, an employee of Contoso Suites, to one of his coworkers, pilarp@contoso.com.
 
 ```PowerShell
-Set-Mailbox -Identity "Ken Sanchez" -ForwardingSMTPAddress "pilarp@contoso.com"
+Set-Mailbox -Identity "Ken Sanchez" -ForwardingAddress "pilarp@contoso.com"
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
