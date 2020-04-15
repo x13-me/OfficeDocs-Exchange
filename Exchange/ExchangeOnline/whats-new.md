@@ -20,13 +20,59 @@ manager: serdars
 
 We're continuously adding new features to Exchange admin center (EAC), fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
-## March 2020
-
-### What's new in the modern Exchange admin center?
-
-As previously announced, Exchange admin center now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
+Exchange admin center now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall M365 admin experience.
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
+
+## April 2020
+
+Here are some of the features we introduced in the modern EAC in April 2020.
+
+### Parity features
+
+#### Contacts
+
+Admins now have a new experience when managing contacts for people outside the organization. Admins can create and manage new mail contacts as well as mail users with external email addresses.
+
+![Screen capture of contacts](./media/whats-new-2020-04--1-contacts.png)
+
+#### Column chooser
+
+This addition to the modern EAC allows admins to choose the columns they want to see on their screen.
+
+![Screen capture of column chooser](./media/whats-new-2020-04--2-column-chooser.png)
+
+#### People picker for remote migration
+
+A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange online.
+
+![Screen capture of people picker for remote migration](./media/whats-new-2020-04--3-people-picker.png)
+
+### Value-add features
+
+#### Personalized Dashboard and Reports
+
+We now have a dashboard with a wide variety of cards available for Exchange admins to choose from. This helps admins personalize their experience in the EAC for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select **Add Card (+)** to see the new cards:
+
+- Mail flow reports: Find and understand trends related to mail flow in your Office 365 organization. These reports were formerly available in the Security & Compliance Center (SCC) portal.
+  - Auto-forwarded messages: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as to a personal email address. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
+  - Inbound & outbound messages details: Monitor message volume and TLS encryption for each connector. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
+  - Non-accepted domain: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Office 365. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-accepted-domain-report).
+  - Non-delivery report: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-delivery-report).
+
+- Migration Report: Learn about the status of the migration batches in your exchange environment.
+
+![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
+
+#### Recoverable Items
+
+Admins now have a new experience for finding recoverable items. With this feature, items that were deleted from a user's mailbox can now be recovered back to the inbox.
+
+![Screen capture of what's new in dashboard](./media/whats-new-2020-04--5-recoverable-items.png)
+
+## March 2020
+
+Here are some of the features we introduced in the modern EAC in March 2020.
 
 #### Recipients
 
