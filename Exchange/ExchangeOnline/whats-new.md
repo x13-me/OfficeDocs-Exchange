@@ -28,29 +28,25 @@ For now, it is possible to switch back to the existing EAC (often called the "cl
 
 Here are some of the features we introduced in the modern EAC in April 2020.
 
-### Parity features
-
-#### Contacts
+### Contacts
 
 Admins now have a new experience when managing contacts for people outside the organization. Admins can create and manage new mail contacts as well as mail users with external email addresses.
 
 ![Screen capture of contacts](./media/whats-new-2020-04--1-contacts.png)
 
-#### Column chooser
+### Column chooser
 
 This addition to the modern EAC allows admins to choose the columns they want to see on their screen.
 
 ![Screen capture of column chooser](./media/whats-new-2020-04--2-column-chooser.png)
 
-#### People picker for remote migration
+### People picker for remote migration
 
 A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange online.
 
 ![Screen capture of people picker for remote migration](./media/whats-new-2020-04--3-people-picker.png)
 
-### Value-add features
-
-#### Personalized Dashboard and Reports
+### Personalized Dashboard and Reports
 
 We now have a dashboard with a wide variety of cards available for Exchange admins to choose from. This helps admins personalize their experience in the EAC for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select **Add Card (+)** to see the new cards:
 
@@ -64,7 +60,7 @@ We now have a dashboard with a wide variety of cards available for Exchange admi
 
 ![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
 
-#### Recoverable Items
+### Recoverable Items
 
 Admins now have a new experience for finding recoverable items. With this feature, items that were deleted from a user's mailbox can now be recovered back to the inbox.
 
