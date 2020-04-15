@@ -26,17 +26,17 @@ For now, it is possible to switch back to the existing EAC (often called the "cl
 
 ## April 2020
 
-Here are some of the features we introduced in the modern EAC in April 2020.
+Here are some of the changes and new features we introduced in the modern EAC in April 2020.
 
 ### Contacts
 
-Admins now have a new experience when managing contacts for people outside the organization. Admins can create and manage new mail contacts as well as mail users with external email addresses.
+Admins now have a new experience when managing contacts for people outside the organization. Admins can create and manage new mail contacts and mail users with external email addresses.
 
 ![Screen capture of contacts](./media/whats-new-2020-04--1-contacts.png)
 
 ### Column chooser
 
-This addition to the modern EAC allows admins to choose the columns they want to see on their screen.
+Admins can now customize the columns that appear in the EAC.
 
 ![Screen capture of column chooser](./media/whats-new-2020-04--2-column-chooser.png)
 
@@ -48,27 +48,26 @@ A very common request from our customers was to bring back the people picker for
 
 ### Personalized Dashboard and Reports
 
-We now have a dashboard with a wide variety of cards available for Exchange admins to choose from. This helps admins personalize their experience in the EAC for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select **Add Card (+)** to see the new cards:
+Exchange admins can now use a dashboard to choose from a wide variety of cards that personalize their experience for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select **Add Card (+)** to see the new cards:
 
-- Mail flow reports: Find and understand trends related to mail flow in your Office 365 organization. These reports were formerly available in the Security & Compliance Center (SCC) portal.
-  - Auto-forwarded messages: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as to a personal email address. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
-  - Inbound & outbound messages details: Monitor message volume and TLS encryption for each connector. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
-  - Non-accepted domain: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Office 365. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-accepted-domain-report).
-  - Non-delivery report: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-delivery-report).
-
-- Migration Report: Learn about the status of the migration batches in your exchange environment.
+- **Migration report**: Learn about the status of the migration batches in your exchange environment.
+- **Mail flow reports**: Find and understand trends related to mail flow in your Office 365 organization. These reports were already available in the Security & Compliance Center (SCC) portal, but are now available in the EAC for added convenience.
+  - **Auto-forwarded messages**: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as to a personal email address. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
+  - **Inbound & outbound messages details**: Monitor message volume and TLS encryption for each connector. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
+  - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Office 365. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-accepted-domain-report).
+  - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-delivery-report).
 
 ![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
 
 ### Recoverable Items
 
-Admins now have a new experience for finding recoverable items. With this feature, items that were deleted from a user's mailbox can now be recovered back to the inbox.
+Admins now have a new experience for finding recoverable items. With this feature, items that were deleted from a user's mailbox can be recovered back to the inbox.
 
 ![Screen capture of what's new in dashboard](./media/whats-new-2020-04--5-recoverable-items.png)
 
 ## March 2020
 
-Here are some of the features we introduced in the modern EAC in March 2020.
+Here are some of the changes and new features we introduced in the modern EAC in March 2020.
 
 #### Recipients
 
