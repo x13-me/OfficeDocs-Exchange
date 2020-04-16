@@ -77,4 +77,4 @@ Support for third-party remote meeting add-ins includes making it easy for users
 
 :::image type="content" source="../../media/android-join.png" alt-text="Joining a meeting with a third-party meeting provider in Outlook for Android":::
 
-The new Join button does not require any add-ins to be installed. The join button is shown regardless of which client created the online meeting.
+The new Join button does not require any add-ins to be installed. The Join button is shown regardless of which client created the online meeting.
