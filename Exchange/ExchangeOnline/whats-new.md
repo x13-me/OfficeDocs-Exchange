@@ -94,7 +94,6 @@ The Mail flow Experience, which was a part of the Security and compliance portal
   - Accepted domains
   - Remote domains
   - Connectors
-  - Message trace
 
 ![Screen capture of what's new in mail flow](./media/whats-new-2020-03-mailflow.png)
 
@@ -111,17 +110,12 @@ To access familiar features that were in the classic Exchange admin center, clic
 We are working hard to create modern experiences for Exchange admins. Here are some features that are coming soon:
 
   - Parity Experience with the classic EAC
-      - Contacts
       - Groups
       - Permissions
       - Organization
       - Public Folders
   - New Value additions for customers
-      - Personalized Dashboard
       - Recommendations
-      - Mail flow reports
-      - Migration reports
-      - Recoverable items
       - Search
       - G-Suite Automation
 
