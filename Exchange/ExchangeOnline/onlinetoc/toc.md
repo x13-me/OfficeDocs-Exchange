@@ -464,6 +464,8 @@
 #### [MailTips over organization relationships](../clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships.md)
 ##### [Manage MailTips for organization relationships](../clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships.md)
 ### [Add-ins for Outlook](../clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook.md)
+#### [Specify who can install and manage add-ins](../clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins.md)
+#### [Using third-party add-ins for online meetings](../clients-and-mobile-in-exchange-online/add-ins-for-outlook/online-meetings-add-ins-for-ios-and-android.md)
 ### [Remote Connectivity Analyzer tests](../clients-and-mobile-in-exchange-online/remote-connectivity-analyzer-tests.md)
 ### [Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules.md)
 #### [Procedures for Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules.md)
