@@ -47,7 +47,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **does not** affect other email clients that support modern authentication (for example, Outlook Mobile, Outlook for Mac 2016, and Exchange ActiveSync in iOS 11 or later). These other email clients **always** use modern authentication to log in to Exchange Online mailboxes.
 
-- Enabling or disabling modern auth has no effect on IMAP or POP3 clients. However, if you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+- Enabling or disabling modern authentication has no effect on IMAP or POP3 clients. However, if you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 
 - When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication will be prompted to log in again. Further, the Basic Auth login dialog box and the Modern Auth dialog box look very different. See the **Outlook and Basic Auth** section of the [Basic Auth and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282) blog post for details.
 
