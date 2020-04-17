@@ -6,7 +6,7 @@ ms.author: v-mapenn
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
-title: Enable modern authentication for Outlook in Exchange Online
+title: Enable or disable modern authentication for Outlook in Exchange Online
 ms.collection:
 - Adm_O365
 - exchange-online
@@ -28,7 +28,7 @@ manager: serdars
 
 ---
 
-# Enable modern authentication for Outlook in Exchange Online
+# Enable or disable modern authentication for Outlook in Exchange Online
 
 Modern authentication in Exchange Online enables authentication features like multi-factor authentication (MFA), smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the [Active Directory Authentication Library](https://go.microsoft.com/fwlink/p/?LinkId=717281) (ADAL) and OAuth 2.0.
 

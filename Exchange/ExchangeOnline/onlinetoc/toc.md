@@ -469,7 +469,7 @@
 #### [Procedures for Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules.md)
 ### [Disable Basic authentication in Exchange Online](../clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online.md)
 ### [Disable SMTP AUTH in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md)
-### [Enable modern authentication for Outlook in Exchange Online](../clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online.md)
+### [Enable or disable modern authentication for Outlook in Exchange Online](../clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online.md)
 ## [Monitoring](../monitoring/monitoring.md)
 ### [Use mail protection reports](../monitoring/use-mail-protection-reports.md)
 ### [Customize and schedule mail protection reports](../monitoring/customize-and-schedule-mail-protection-reports.md)
