@@ -76,6 +76,8 @@ Capabilities exposed to online meeting add-ins include:
 
 ## How users join meetings
 
-Support for third-party remote meeting add-ins includes making it easy for users to join meetings. A **Join** button gets added to users' calendar events in Outlook for iOS and Android. Clicking **Join** will launch the online meeting app, if the user has it installed. If the app is not installed, the browser will launch and guide the user through the process to join the meeting.  
+Support for third-party remote meeting add-ins includes making it easy for users to join meetings. A **Join** button gets added to users' calendar events in Outlook for iOS and Android. Clicking **Join** will launch the online meeting app, if the user has it installed. If the app is not installed, the browser will launch and guide the user through the process to join the meeting. 
+
+Note that recipients of meeting invitations don't need to have the add-in for the corresponding third-party meeting provider installed on their devices in order to join the meeting.
 
 :::image type="content" source="../../media/android-join.png" alt-text="Joining a meeting with a third-party meeting provider in Outlook for Android":::
