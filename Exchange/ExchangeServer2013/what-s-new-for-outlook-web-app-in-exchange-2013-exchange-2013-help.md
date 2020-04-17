@@ -272,7 +272,7 @@ With the OWA for Android app, you can:
 
 - Skip the administrator phone setup.
 
-- Keep your Office 365 business data secure.
+- Keep your Microsoft 365 Apps for business data secure.
 
 - Use the Remote Wipe feature.
 

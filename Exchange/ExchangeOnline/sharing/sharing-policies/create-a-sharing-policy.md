@@ -60,7 +60,7 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 9. Click **save** to set the rules for the sharing policy.
 
-10. If you want to set this sharing policy as the new default sharing policy for all users in your Office 365 organization, select the **Make this policy my default sharing policy** check box.
+10. If you want to set this sharing policy as the new default sharing policy for all users in your Microsoft 365 or Office 365 organization, select the **Make this policy my default sharing policy** check box.
 
 11. Click **save** to create the sharing policy.
 

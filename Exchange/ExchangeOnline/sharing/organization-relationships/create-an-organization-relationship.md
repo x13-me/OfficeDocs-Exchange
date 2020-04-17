@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
+description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Create an organization relationship in Exchange Online
 
-Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
+Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 
 ## What do you need to know before you begin?
 

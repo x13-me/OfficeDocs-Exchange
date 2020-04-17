@@ -45,7 +45,7 @@ Read the section below that matches how you plan to route messages sent from Int
 
 ### Route incoming Internet messages through the Exchange Online organization
 
-The following steps and diagrams illustrate the inbound message path that occur in your hybrid deployment if you decide to point your MX record to the EOP service in the Office 365 organization. The message path differs depending on whether you choose to enable centralized mail transport.
+The following steps and diagrams illustrate the inbound message path that occur in your hybrid deployment if you decide to point your MX record to the EOP service in the Microsoft 365 or Office 365 organization. The message path differs depending on whether you choose to enable centralized mail transport.
 
 > [!IMPORTANT]
 > You may need to purchase EOP licenses for each on-premises mailbox that receives messages that are first delivered to EOP and then routed through the Exchange Online organization. Contact your Microsoft reseller for more information.

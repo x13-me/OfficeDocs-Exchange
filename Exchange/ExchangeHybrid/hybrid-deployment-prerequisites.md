@@ -52,7 +52,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
     Hybrid deployments also support Exchange servers running the Edge Transport server role. Edge Transport servers also need to be updated to the latest CU or RU. We strongly recommend that you deploy Edge Transport servers in a perimeter network. You can't deploy Mailbox or Client Access servers in a perimeter network.
 
-- **Office 365**: Hybrid deployments are supported in all Office 365 plans that support Azure Active Directory synchronization. All Office 365 Business Premium, Business Essentials, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Office 365 Business and Home plans don't support hybrid deployments.
+- **Office 365**: Hybrid deployments are supported in all Office 365 plans that support Azure Active Directory synchronization. All Microsoft 365 Business Standard, Business Basic, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Microsoft 365 Apps for business and Home plans don't support hybrid deployments.
 
   Learn more at [Sign up for Office 365](https://go.microsoft.com/fwlink/p/?linkId=203981).
 
@@ -66,7 +66,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 - **Autodiscover DNS records**: Configure the Autodiscover record for your existing SMTP domains in your public DNS to point to your on-premises Exchange servers (an Exchange 2010/2013 Client Access server or an Exchange 2016/2019 Mailbox Server).
 
-- **Office 365 organization in the Exchange admin center (EAC)**: The Office 365 organization node is available in your on-premises EAC, but you need to use your Office 365 admin credentials to connect the EAC to your Office 365 organization before you can use the Hybrid Configuration wizard. This also allows you to manage both the on-premises and Exchange Online organizations from a single management console.
+- **Microsoft 365 or Office 365 organization in the Exchange admin center (EAC)**: The Microsoft 365 or Office 365 organization node is available in your on-premises EAC, but you need to use your Office 365 admin credentials to connect the EAC to your Microsoft 365 or Office 365 organization before you can use the Hybrid Configuration wizard. This also allows you to manage both the on-premises and Exchange Online organizations from a single management console.
 
   Learn more at [Hybrid management in Exchange hybrid deployments](hybrid-management.md).
 

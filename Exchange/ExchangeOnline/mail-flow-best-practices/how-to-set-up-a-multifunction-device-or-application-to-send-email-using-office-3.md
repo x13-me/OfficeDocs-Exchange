@@ -24,9 +24,9 @@ localization_priority: Priority
 
 ---
 
-# How to set up a multifunction device or application to send email using Office 365
+# How to set up a multifunction device or application to send email using Office 365 and Microsoft 365
 
-Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
+Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Office 365. For example:
 
