@@ -305,7 +305,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - **Port**: Port 25 is required and must not be blocked on your network or by your ISP.
 
-- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This means that any user who sends email from devices or applications that are configured for SMTP relay must have their own license. If any user uses a devices or LOB application and that user does not have an Office 365 mailbox license, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
+- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This means that any user must have their own license if they send email from devices or applications that are configured for SMTP relay. If any user uses a devices or LOB application and that user does not have an Office 365 mailbox license, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
 
 ### Limitations of Office 365 SMTP relay
 
