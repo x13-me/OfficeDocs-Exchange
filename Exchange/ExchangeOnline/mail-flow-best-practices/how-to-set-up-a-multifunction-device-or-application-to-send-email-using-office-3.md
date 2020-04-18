@@ -45,6 +45,10 @@ This option supports most usage scenarios and it's the easiest to set up. Choose
 
 - You want to send email to people inside and outside your organization.
 
+> [!NOTE]
+>
+> This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+
 To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
 Each device/application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device/application.
@@ -89,7 +93,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which disable basic authentication and are designed to protect your users from compromise. If at all possble, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Office 365 mailbox to send email from.
 
@@ -109,6 +113,8 @@ You can only send from one email address unless your device can store login cred
 ## Option 2: Send mail directly from your printer or application to Office 365 (direct send)
 
 Choose this option when:
+
+- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
 
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device.
 
@@ -211,6 +217,8 @@ Direct send has higher sending limits than SMTP client submission. Senders are n
 
 This option is more difficult to implement than the others. Only choose this option when:
 
+- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
+
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device
 
 - You can't use direct send (Option 2) because you must send email to external recipients.
@@ -300,7 +308,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - **Port**: Port 25 is required and must not be blocked on your network or by your ISP.
 
-- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This is why it's important that only licensed users send email from devices or applications configured for SMTP relay. If you have senders using devices or LOB applications who don't have an Office 365 mailbox license, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
+- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This means that any user who sends email from devices or applications that are configured for SMTP relay must have their own license. If any user uses a devices or LOB application and that user does not have an Office 365 mailbox license, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
 
 ### Limitations of Office 365 SMTP relay
 
