@@ -34,9 +34,6 @@ This article explains how you can send email from devices and business applicati
 
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
-> [!NOTE]
-> Beginning November 1st, 2019, Office 365 is slowly turning off the TLS cipher algorithm 3DES. If you are using devices or applications that only support 3DES, TLS will start failing. As TLS is mandatory for the SMTP AUTH client submission (also known as Authenticated SMTP or SMTP AUTH for short), you may experience emails no longer sending. You will need to upgrade or update all of your devices and applications to use the new TLS version and ciphers.
-
 ## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP AUTH client submission
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
@@ -47,7 +44,9 @@ This option supports most usage scenarios and it's the easiest to set up. Choose
 
 > [!NOTE]
 >
-> This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+> This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+>
+> You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) for more information.
 
 To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
