@@ -50,7 +50,7 @@ This option supports most usage scenarios and it's the easiest to set up. Choose
 
 To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
-Each device/application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device/application.
+Each device or application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device or application.
 
 ### How to set up SMTP AUTH client submission
 
