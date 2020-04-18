@@ -36,17 +36,17 @@ This article explains how you can send email from devices and business applicati
 
 ## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP AUTH client submission
 
-This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
-
-- You want to send email from a third-party hosted application, service, or device.
-
-- You want to send email to people inside and outside your organization.
-
 > [!NOTE]
 >
 > This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 >
 > You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md) for more information.
+
+This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
+
+- You want to send email from a third-party hosted application, service, or device.
+
+- You want to send email to people inside and outside your organization.
 
 To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
@@ -62,8 +62,6 @@ Enter the following settings directly on your device or in the application **as 
 |Port|Port 587 (recommended) or port 25|
 |TLS/StartTLS|Enabled|
 |Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
-
-For more information, expand the following sections.
 
 #### TLS and other encryption options
 
