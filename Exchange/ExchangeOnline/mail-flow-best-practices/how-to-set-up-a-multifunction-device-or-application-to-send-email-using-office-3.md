@@ -220,7 +220,7 @@ This option is more difficult to implement than the others. Only choose this opt
 
 - You can't use direct send (Option 2) because you must send email to external recipients.
 
-SMTP relay lets Office 365 relay emails on your behalf by using a connector that's configured with your public IP address or TLS certificate. Setting up a connector makes this a more complicated option.
+SMTP relay lets Office 365 relay emails on your behalf by using a connector that's configured with your public IP address or a TLS certificate. Setting up a connector makes this a more complicated option.
 
 ### Settings for Office 365 SMTP relay
 
