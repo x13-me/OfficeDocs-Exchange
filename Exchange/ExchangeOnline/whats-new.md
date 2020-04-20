@@ -94,7 +94,6 @@ The Mail flow Experience, which was a part of the Security and compliance portal
   - Accepted domains
   - Remote domains
   - Connectors
-  - Message trace
 
 ![Screen capture of what's new in mail flow](./media/whats-new-2020-03-mailflow.png)
 
@@ -106,27 +105,22 @@ To access familiar features that were in the classic Exchange admin center, clic
 
 ![Screen capture of more features](./media/whats-new-2020-03-morefeatures.png)
 
-### What's next?
+## What's next?
 
 We are working hard to create modern experiences for Exchange admins. Here are some features that are coming soon:
 
   - Parity Experience with the classic EAC
-      - Contacts
       - Groups
       - Permissions
       - Organization
       - Public Folders
   - New Value additions for customers
-      - Personalized Dashboard
       - Recommendations
-      - Mail flow reports
-      - Migration reports
-      - Recoverable items
       - Search
       - G-Suite Automation
 
 Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange admin center, as well as other Exchange Online improvements that we announced at Microsoft Ignite 2019.
 
-### Feedback and wishlist
+## Feedback and wishlist
 
 Our goal is to deliver the features that IT admins need, so please share your feedback and wishlist with us through the "Give Feedback" button on the new portal.
