@@ -349,7 +349,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
-- Office 365 ProPlus
+- Microsoft 365 Apps for enterprise
 
 - Outlook 2019
 

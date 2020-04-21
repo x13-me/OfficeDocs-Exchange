@@ -28,11 +28,11 @@ This topic describes what you can do if you see error code 550 5.7.23 in a non-d
 
 ## I got this bounce message. How do I fix it?
 
-Only an email admin in your Office 365 organization can fix this issue. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
+Only an email admin in your Microsoft 365 or Office 365 organization can fix this issue. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
 
 ## I'm an email admin. How do I fix this?
 
-This bounce message most likely indicates a [Sender policy framework (SPF)](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) configuration issue in your Office 365 organization.
+This bounce message most likely indicates a [Sender policy framework (SPF)](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) configuration issue in your Microsoft 365 or Office 365 organization.
 
 The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service.
 

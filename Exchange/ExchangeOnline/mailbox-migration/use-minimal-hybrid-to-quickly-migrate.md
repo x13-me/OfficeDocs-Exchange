@@ -43,7 +43,7 @@ Use minimal hybrid to migrate emails if you:
 ## Step 1: Verify you own the domain
 <a name="VerifyDomain"> </a>
 
-During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run an express migration, the on-premises domain must be a verified domain in your Office 365 organization.
+During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run an express migration, the on-premises domain must be a verified domain in your Microsoft 365 or Office 365 organization.
 
 1. Sign in to Office 365 with your work or school account.
 

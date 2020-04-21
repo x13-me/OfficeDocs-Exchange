@@ -39,7 +39,7 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 > [!NOTE]
 > For implementation details on each of these three options, see [Securing Outlook for iOS and Android in Exchange Online](secure-outlook-for-ios-and-android.md).
 
-Microsoft recommends Office 365 customers use the features of the Enterprise Mobility + Security suite to protect corporate data on mobile devices, due to the advanced capabilities provided by these services. The core capabilities of the built-in MDM for Office 365 are included with an Office 365 subscription, while the broader capabilities of the Enterprise Mobility + Security require an additional subscription purchase.
+Microsoft recommends that customers use the features of the Enterprise Mobility + Security suite to protect corporate data on mobile devices, due to the advanced capabilities provided by these services.
 
 > [!IMPORTANT]
 > When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.

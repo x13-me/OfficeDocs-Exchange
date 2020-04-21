@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system and supports federated sharing with other federated Exchange organizations. Normally, you shouldn't have to manage or modify the federation trust after it's created. However, there may be circumstances that require adding or removing federated domains or resetting the domain used to configure the organization identifier (OrgID) for the federation trust.
 
 > [!NOTE]
-> Modifying an existing federation trust, especially the primary shared domain used to define the OrgID, can disrupt federated sharing between federated Exchange organizations or for hybrid deployments with Office 365 organizations.
+> Modifying an existing federation trust, especially the primary shared domain used to define the OrgID, can disrupt federated sharing between federated Exchange organizations or for hybrid deployments with Microsoft 365 or Office 365 organizations.
 
 For additional management tasks related to Federation, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
