@@ -107,7 +107,7 @@ You need to configure the following protocols, ports, and connection endpoints i
 
 **Notes**:
 
-- The Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- The Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 - The outbound ports required for mail flow and client connectivity in your on-premises Exchange organization are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
 

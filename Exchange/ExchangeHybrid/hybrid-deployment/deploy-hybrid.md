@@ -100,7 +100,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 15. In the **Select a certificate** field, select the certificate to use for secure mail transport. This list displays the digital certificates issued by a third-party certificate authority (CA) installed on the Mailbox server selected in the previous step. Click **Next**.
 
-16. On the **Organization FQDN** page, enter the externally accessible FQDN for your Internet-facing Exchange server. Office 365 uses this FQDN to configure the service connectors for secure mail transport between your Exchange organizations. For example, enter "mail.contoso.com". Click **Next**.
+16. On the **Organization FQDN** page, enter the externally accessible FQDN for your Internet-facing Exchange server. Microsoft 365 and Office 365 use this FQDN to configure the service connectors for secure mail transport between your Exchange organizations. For example, enter "mail.contoso.com". Click **Next**.
 
 17. The hybrid deployment configuration selections have been updated, and you're ready to start the Exchange services changes and the hybrid deployment configuration. Click **Update** to start the configuration process. While the hybrid configuration process is running, the wizard displays the feature and service areas that are being configured for the hybrid deployment as they are updated.
 
@@ -108,7 +108,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 ## Configure OAuth authentication between Exchange and Exchange Online organizations
 
-For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features such as Message Records Management (MRM), Exchange In-place Archiving, and In-place eDiscovery are only fully available across your organization by using the new Exchange OAuth authentication protocol. We recommend that all mixed Exchange 2013/2010 and Exchange 2013/2007 organizations that wish to implement these features as part of a new hybrid deployment with Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
+For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Microsoft 365 or Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features such as Message Records Management (MRM), Exchange In-place Archiving, and In-place eDiscovery are only fully available across your organization by using the new Exchange OAuth authentication protocol. We recommend that all mixed Exchange 2013/2010 and Exchange 2013/2007 organizations that wish to implement these features as part of a new hybrid deployment with Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
 For detailed configuration steps, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
 
