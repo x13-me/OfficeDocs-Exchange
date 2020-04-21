@@ -30,7 +30,7 @@ LinkedIn contact synchronization lets people set up a connection between their L
 > As an administrator, you probably want to keep LinkedIn contact sync turned on if your organization uses LinkedIn for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their LinkedIn connections as contacts in Outlook on the web. For more information about how people can set up LinkedIn contact sync, see [Managed LinkedIn contact sync in your organization](https://support.office.com/article/8097C125-8628-4453-8138-BAEC6438863F).
 
 > [!NOTE]
-> The features that are available to your Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
+> The features that are available to your Microsoft 365 or Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
 
 ## Turn LinkedIn contact sync on or off
 

@@ -170,7 +170,7 @@ The following tables identify the mail clients that are supported for use togeth
 
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Office 365 ProPlus|Supported|Supported|Supported|Not supported|
+|Microsoft 365 Apps for enterprise|Supported|Supported|Supported|Not supported|
 |Outlook 2019|Supported|Supported|Supported|Not supported|
 |Outlook 2016|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|
 |Outlook 2013|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|

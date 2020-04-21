@@ -62,7 +62,7 @@ This architectural change provides the following key benefits:
 
 - When a mailbox is moved to another mailbox database, the Recoverable Items folder moves with it.
 
-- The Recoverable Items folder is indexed by Exchange Search and can be discovered by using In-Place eDiscovery or Content Search in the Office 365 Security & Compliance Center.
+- The Recoverable Items folder is indexed by Exchange Search and can be discovered by using In-Place eDiscovery or Content Search in the Microsoft 365 Compliance Center.
 
 - The Recoverable Items folder has its own storage quota.
 

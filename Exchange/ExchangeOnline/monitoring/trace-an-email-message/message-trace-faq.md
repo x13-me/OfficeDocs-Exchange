@@ -26,7 +26,7 @@ This topic presents messaging questions that a user may have, along with possibl
 
 - In the Exchange admin center (EAC), the search results appear immediately for messages that are less than 7 days old.
 
-- In the Office 365 Security & Compliance Center, the search results appear immediately for messages that are less than 10 days old.
+- In the Microsoft 365 Security Center, the search results appear immediately for messages that are less than 10 days old.
 
 When you run a message trace for older messages, the results are returned within a few hours as a downloadable CSV file.
 
