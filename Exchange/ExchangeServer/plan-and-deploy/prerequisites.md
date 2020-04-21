@@ -22,6 +22,9 @@ manager: serdars
 # Exchange Server prerequisites
 
 > [!TIP]
+> Remote Registry Service is required to be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
+
+> [!TIP]
 > Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help).
 
 This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
