@@ -213,7 +213,7 @@ To view the mailbox migration page:
 
 3. Select the migration request that was just created and then, on the **Details** pane, select **View Details**.
 
-When the batch status is **Completed**, you can move on to [Step 5: Add members to Microsoft 365 groups from public folders](#step-5-add-members-to-microsoft-365-groups-from-public-folders).
+When the batch status is **Completed**, you can move on to Step 5 below.
 
 ## Step 5: Add members to Microsoft 365 groups from public folders
 
