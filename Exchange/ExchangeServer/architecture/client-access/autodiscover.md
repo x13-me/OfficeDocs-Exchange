@@ -28,7 +28,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 
 - Client Access services on Mailbox servers provide authentication and proxy services for internal and external client connections.
 
-- Outlook configures services with only the user name and password.
+- Outlook configures services with only the username and password.
 
 > [!NOTE]
 > If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).

@@ -57,7 +57,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <td><p>Data loss prevention (DLP)</p></td>
 <td><p>If using Office 365:</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 global admin</a>, which automatically includes Exchange <a href="organization-management-exchange-2013-help.md">Organization Management</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">global admin</a>, which automatically includes Exchange <a href="organization-management-exchange-2013-help.md">Organization Management</a></p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 service admin</a>, plus the <a href="organization-management-exchange-2013-help.md">Organization Management</a> admin role group in Exchange</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 password admin</a></p></li>
 </ul>

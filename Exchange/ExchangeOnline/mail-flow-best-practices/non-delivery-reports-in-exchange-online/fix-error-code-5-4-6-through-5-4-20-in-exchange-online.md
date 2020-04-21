@@ -58,7 +58,7 @@ This error can happen when the MX record for your hybrid domain points to Exchan
 
 To fix the problem, configure a dedicated outbound connector that uses smart host routing and that has your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
 
-1. Open the Microsoft 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
+1. Open the Microsoft 365 portal at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
 
 2. In the Exchange admin center (EAC), click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and then click **Edit**.
 
@@ -80,7 +80,7 @@ In this configuration, the error is caused by either of the following issues on 
 
 To fix the problem, configure a dedicated inbound connector that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the Inbound connector that's used for hybrid by following these steps:
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
+1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
 
 2. In the EAC, click **Mail Flow** \> **Connectors**. In the **Inbound connectors** section, select the connector that's used for hybrid, and then click **Edit** ![Edit icon](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 

@@ -80,7 +80,7 @@ For detailed syntax and parameter information, see [New-SendConnector](https://t
 Use the **New-SendConnector** cmdlet to create a Send connector.
 
 > [!NOTE]
-> Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the user name and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
+> Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the username and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
 
 This Send connector requires the following configuration:
 
@@ -96,7 +96,7 @@ This Send connector requires the following configuration:
 
 - **Smart host authentication methods**: Basic authentication over TLS
 
-- **Smart host authentication credentials**: Credentials for the user account in the internal domain. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+- **Smart host authentication credentials**: Credentials for the user account in the internal domain. You first need to save the username and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send messages to the Exchange organization, run the following commands.
 
@@ -178,7 +178,7 @@ This Send connector requires the following configuration:
 
 - **Smart host authentication method**: Basic authentication over TLS.
 
-- **Smart host authentication credentials**: Credentials for the user account on the Edge Transport server. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+- **Smart host authentication credentials**: Credentials for the user account on the Edge Transport server. You first need to save the username and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send outgoing messages to the Edge Transport server, run the following commands.
 

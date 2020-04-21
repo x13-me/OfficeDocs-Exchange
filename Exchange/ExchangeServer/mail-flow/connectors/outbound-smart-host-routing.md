@@ -62,7 +62,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
    |**Authentication mechanism**|**Description**|
    |:-----|:-----|
    |**None**|No authentication. For example, when access to the smart host is restricted by the source IP address.|
-   |**Basic authentication**|Basic authentication. Requires a user name and password. The user name and password are sent in clear text.|
+   |**Basic authentication**|Basic authentication. Requires a username and password. The username and password are sent in clear text.|
    |**Offer basic authentication only after starting TLS**|Basic authentication that's encrypted with TLS. This requires a server certificate on the smart host that contains the exact FQDN of the smart host that's defined on the Send connector.|
    |**Exchange Server authentication**|Generic Security Services application programming interface (GSSAPI) and Mutual GSSAPI authentication.|
    |**Externally secured**|The connection is presumed to be secured by using a security mechanism that's external to Exchange. The connection may be an Internet Protocol security (IPsec) association or a virtual private network (VPN). Alternatively, the servers may reside in a trusted, physically controlled network.|

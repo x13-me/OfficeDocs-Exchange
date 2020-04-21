@@ -29,9 +29,9 @@ For most organizations, we recommend using hosted mail flow because it's the sim
 
 ### Hosted mail flow scenarios
 
-- I'm a new Office 365 customer, and all my users' mailboxes are in Office 365. I want to use all filtering solutions that Office 365 offers.
+- I'm a new Microsoft 365 or Office 365 customer, and all my users' mailboxes are in Microsoft 365 or Office 365. I want to use all filtering solutions that Office 365 offers.
 
-- I'm a new Office 365 customer. I have an existing email service, but I plan to immediately move all existing mailboxes to the cloud. I want to use all filtering solutions that Office 365 offers.
+- I'm a new Microsoft 365 or Office 365 customer. I have an existing email service, but I plan to immediately move all existing mailboxes to the cloud. I want to use all filtering solutions that Office 365 offers.
 
 For this scenario, your organization's mail flow setup looks like the following diagram:
 

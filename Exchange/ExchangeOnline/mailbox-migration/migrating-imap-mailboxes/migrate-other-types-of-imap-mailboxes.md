@@ -297,7 +297,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the **Status** is **Synced**.
 
-    If this step task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Office 365 email address in the **EmailAddress** column.
+    If this step task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
 #### Verify a successful mailbox migration to Office 365
 
@@ -307,7 +307,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 
-  - When Outlook on the web opens, send an email message to the another Office 365 user to verify that you can send email.
+  - When Outlook on the web opens, send an email message to another Microsoft 365 or Office 365 user to verify that you can send email.
 
   - Choose **Outlook**, and check that your email messages and folders are all there.
 

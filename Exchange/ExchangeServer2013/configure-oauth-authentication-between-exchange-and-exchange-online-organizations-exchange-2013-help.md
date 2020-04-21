@@ -161,7 +161,7 @@ Get-OABVirtualDirectory | FL server,*url*
 
 ### Step 6: Create an IntraOrganizationConnector from your on-premises organization to Office 365
 
-You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 tenant is created. For example, if your organization's domain hosted in the Office 365 tenant is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
+You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 organization is created. For example, if your organization's domain hosted in the Office 365 organization is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
 
 Using Exchange PowerShell, run the following cmdlet in your on-premises organization:
 
@@ -170,7 +170,7 @@ $ServiceDomain = Get-AcceptedDomain | where {$_.DomainName -like "*.mail.onmicro
 New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains $ServiceDomain
 ```
 
-### Step 7: Create an IntraOrganizationConnector from your Office 365 tenant to your on-premises Exchange organization
+### Step 7: Create an IntraOrganizationConnector from your Office 365 organization to your on-premises Exchange organization
 
 You must define a target address for your mailboxes that are hosted in your on-premises organization. If you organization's primary SMTP adddress is "contoso.com", this would be "contoso.com".
 You must also define the external Autodiscover endpoint for your on-premises organization. If your company is "contoso.com" this is usually either of the following:
@@ -180,7 +180,7 @@ You must also define the external Autodiscover endpoint for your on-premises org
 - https://\<your primary SMTP domain\>/autodiscover/autodiscover.svc
 
 > [!NOTE]
-> You can use the [Get-IntraOrganizationConfiguration](https://technet.microsoft.com/library/dn551183(v=exchg.150)) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://technet.microsoft.com/library/dn551178(v=exchg.150)) cmdlet.
+> You can use the [Get-IntraOrganizationConfiguration](https://technet.microsoft.com/library/dn551183(v=exchg.150)) cmdlet in both your on-premises and Office 365 organizations to determine the endpoint values needed by [New-IntraOrganizationConnector](https://technet.microsoft.com/library/dn551178(v=exchg.150)) cmdlet.
 
 Using Windows PowerShell, run the following cmdlet:
 
@@ -201,14 +201,14 @@ Before you complete the following step, make sure:
 
 - The frontend hybrid servers are Exchange 2013 SP1 or greater
 
-- You have a unique external EWS URL for the Exchange 2013 server(s). The Office 365 tenant must connect to these servers in order for cloud-based requests for hybrid features to work correctly.
+- You have a unique external EWS URL for the Exchange 2013 server(s). The Office 365 organization must connect to these servers in order for cloud-based requests for hybrid features to work correctly.
 
 - The servers have both the Mailbox and Client Access server roles
 
 - Any existing Exchange 2010/2007 Mailbox and Client Access servers have the latest Cumulative Update (CU) or Service Pack (SP) applied.
 
 > [!NOTE]
-> Existing Exchange 2010/2007 Mailbox servers can continue to use Exchange 2010/2007 Client Access servers for frontend servers for non-hybrid feature connections. Only hybrid deployment feature requests from the Office 365 tenant need to connect to Exchange 2013 servers.
+> Existing Exchange 2010/2007 Mailbox servers can continue to use Exchange 2010/2007 Client Access servers for frontend servers for non-hybrid feature connections. Only hybrid deployment feature requests from the Office 365 organization need to connect to Exchange 2013 servers.
 
 An *AvailabilityAddressSpace* must be configured on pre-Exchange 2013 Client Access servers that points to the Exchange Web Services endpoint of your on-premises Exchange 2013 SP1 Client Access server(s). This endpoint is the same endpoint as previously outlined in Step 5 or can be determined by running the following cmdlet on your on-premises Exchange 2013 SP1 Client Access server:
 

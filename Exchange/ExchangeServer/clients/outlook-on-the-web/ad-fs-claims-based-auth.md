@@ -868,7 +868,7 @@ To test the AD FS claims for Outlook on the web:
 
 2. If you get a certificate error in the web browser, just continue on to the Outlook on the web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. Outlook on the web will load in the window.
 
@@ -878,7 +878,7 @@ To test the AD FS claims for EAC:
 
 2. If you get a certificate error in the web browser, just continue on to the EAC web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. EAC will load in the window.
 

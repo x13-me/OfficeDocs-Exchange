@@ -69,7 +69,7 @@ Verify that the following prerequisite steps have been completed, and then use t
     > [!IMPORTANT]
     > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
-- Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Office 365 portal and selecting the **Edit** button.
+- Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
     > [!NOTE]
     > See [Set up OneDrive for Business in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627455) for more information.

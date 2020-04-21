@@ -565,7 +565,7 @@ To test the AD FS claims for Outlook Web App:
 
 - In the browser window, if you get a certificate error, just continue on to the Outlook Web App website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-- Type your user name (domain\\user) and password, and then click **Sign in**.
+- Type your username (domain\\user) and password, and then click **Sign in**.
 
 Outlook Web App will load in the window.
 
@@ -575,7 +575,7 @@ To test the AD FS claims for EAC:
 
 2. In the browser window, if you get a certificate error, just continue on to the ECP website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-3. Type your user name (domain\\user) and password, and then click **Sign in**.
+3. Type your username (domain\\user) and password, and then click **Sign in**.
 
 4. EAC should load in the window.
 

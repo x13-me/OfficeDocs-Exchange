@@ -55,7 +55,7 @@ The following figure illustrates the relationship between the linked user accoun
 
 3. On the **New linked mailbox** page, in the **Trusted forest or domain** box, select the name of the account forest that contains the user account that you're creating the linked mailbox for. Click **Next**.
 
-4. If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you're prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the user name and password for an administrator account in the account forest, and then click **Next**.
+4. If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you're prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the username and password for an administrator account in the account forest, and then click **Next**.
 
     > [!NOTE]
     > You won't be prompted for administrator credentials if you've created a two-way trust or have created another one-way outgoing trust where the account forest trusts the Exchange forest.
@@ -74,7 +74,7 @@ The following figure illustrates the relationship between the linked user accoun
 
      To select a different OU, click **Browse**. The dialog box displays all OUs in the Exchange forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-   - **&#42; User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the user name here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
+   - **&#42; User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the username here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
 
      > [!NOTE]
      > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn't use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
@@ -84,7 +84,7 @@ The following figure illustrates the relationship between the linked user accoun
    - **Alias**: Type the alias, which specifies the email alias for the linked mailbox. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
      > [!NOTE]
-     > If you leave this box blank, the value from the user name portion of the <STRONG>User Logon Name</STRONG> is used for the email alias.
+     > If you leave this box blank, the value from the username portion of the <STRONG>User Logon Name</STRONG> is used for the email alias.
 
    - **First name**, **Initials**, **Last name**
 

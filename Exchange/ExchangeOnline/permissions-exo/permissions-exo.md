@@ -113,7 +113,7 @@ The Default Role Assignment Policy role assignment policy is included with Excha
 When you create a user in Office 365, you can choose whether to assign various administrative roles, such as Global administrator, Service administrator, Password administrator, and so on, to the user. Some, but not all, Office 365 roles grant the user administrative permissions in Exchange Online.
 
 > [!NOTE]
-> The user that was used to create your Office 365 tenant is automatically assigned to the Global administrator Office 365 role.
+> The user that was used to create your Office 365 organization is automatically assigned to the Global administrator Office 365 role.
 
 The following table lists the Office 365 roles and the Exchange Online role group they correspond to.
 

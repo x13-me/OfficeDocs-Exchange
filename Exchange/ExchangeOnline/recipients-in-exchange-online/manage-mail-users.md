@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Microsoft 365 or Office 365 organization and can access resources. For more information, see Recipients.
+description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange, Microsoft 365, or Office 365 organization and can access resources. For more information, see Recipients.
 ms.topic: article
 author: mattpennathe3rd
 f1.keywords:
@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage mail users
 
-Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Microsoft 365 or Office 365 organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange, Microsoft 365, or Office 365 organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 
 ## What do you need to know before you begin?
 
@@ -354,7 +354,7 @@ This section provides information about managing email users by using directory 
 
    - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
-   - **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. >
+   - **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid Microsoft 365 or Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. >
 
    - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them via the EAC or Exchange Online PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/p/?LinkId=507569) can't be synchronized via directory synchronization.
 

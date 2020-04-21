@@ -67,7 +67,7 @@ To delete an Office 365 work or school account, see [Delete or restore users](ht
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
-When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Office 365 user is deleted and removed from the list of users in the Microsoft 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
+When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Microsoft 365 or Office 365 user is deleted and removed from the list of users in the Microsoft 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
 
 This example deletes an Exchange Online mailbox and the corresponding user account for Walter Harp.
 

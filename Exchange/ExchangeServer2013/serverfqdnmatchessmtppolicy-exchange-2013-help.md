@@ -35,7 +35,7 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 
 2. On the **Computer Name** tab, click **Change**.
 
-3. Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a user name and user password to rename the computer in the domain.
+3. Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a username and user password to rename the computer in the domain.
 
 4. Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
 

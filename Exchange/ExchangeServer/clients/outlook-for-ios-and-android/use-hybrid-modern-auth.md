@@ -113,14 +113,14 @@ The hybrid Modern Authentication architecture has the following technical requir
     
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
 
-   - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
+   - Hybrid Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
 
        > [!NOTE]
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
 
    - Requires an Office 365 Enterprise, Business, or Education tenant.
 
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 tenant is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 organization is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
 

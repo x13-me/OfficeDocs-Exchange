@@ -89,7 +89,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
        - **User principal name (UPN)** For example, vbarrios@contoso.com. Note that if the UPN doesn't match the email address, users can't access Outlook on the web by using this method.
 
-       - **User name only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and user name when they sign in.
+       - **Username only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and username when they sign in.
 
        ![The Authentication tab in the properties of the Outlook on the web virtual directory in the EAC.](../../media/044c1a98-8109-4745-9827-f256303fcd46.png)
 

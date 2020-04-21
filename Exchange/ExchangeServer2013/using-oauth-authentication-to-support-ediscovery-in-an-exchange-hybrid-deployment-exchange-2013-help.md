@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 organization administrator or a compliance officer signed in to an user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>

@@ -84,7 +84,7 @@ The following steps are necessary to prepare your organization for the migration
 
 3. Rename any public folders that contain a backslash ( **\\**) in their name. Otherwise, those public folders may not get migrated correctly.
 
-4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
+4. You need to have the migration feature **PAW** enabled for your Office 365 organization. To verify this, run the following command in Exchange Online PowerShell:
 
    ```PowerShell
    Get-MigrationConfig

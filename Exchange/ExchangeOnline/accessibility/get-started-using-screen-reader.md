@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md)[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to any admin role group, for example, Organization Management. You know you are assigned to at least one admin role group if you can open the EAC. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md)[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to any admin role group, for example, Organization Management. You know you are assigned to at least one admin role group if you can open the EAC. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Work with screen readers
 

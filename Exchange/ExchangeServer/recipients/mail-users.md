@@ -76,7 +76,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 
      To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-   - **\* User logon name**: Type the name that the mail user will use to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in.
+   - **\* User logon name**: Type the name that the mail user will use to log on to the domain. The user logon name consists of a username on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in.
 
    - **\* New Password**: Type the password that the mail user must use to log on to the domain. Make sure that the password you supply complies with the password length, complexity, and history requirements of the domain you're creating the user account in.
 
