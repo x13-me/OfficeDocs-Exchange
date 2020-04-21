@@ -23,7 +23,7 @@ description: "By establishing a hybrid deployment, you can extend the feature-ri
 
 By establishing a hybrid deployment, you can extend the feature-rich experience and administrative control you have with your existing on-premises Exchange Server organization to the cloud. A hybrid deployment also offers support for a cloud-based archiving solution for your on-premises mailboxes with Exchange Online Archiving and may also serve as an intermediate step towards a complete migration of your on-premises mailboxes to Exchange Online.
 
-This topic covers configuring a hybrid deployment for your on-premises Exchange organization and your Exchange Online organization in Office 365 for enterprises using the Hybrid Configuration wizard. In this topic, a hybrid deployment is created for the following organization configuration:
+This topic covers configuring a hybrid deployment for your on-premises Exchange organization and your Exchange Online organization in Microsoft 365 or Office 365 using the Hybrid Configuration wizard. In this topic, a hybrid deployment is created for the following organization configuration:
 
 - The on-premises organization is a single-forest on-premises Exchange organization.
 
@@ -32,11 +32,11 @@ This topic covers configuring a hybrid deployment for your on-premises Exchange 
 - The on-premises organization doesn't have Edge Transport servers deployed. The Hybrid Configuration wizard supports configuring Edge Transport servers as part of a hybrid deployment, but configuring Edge Transport servers in the wizard isn't covered in this topic.
 
 > [!IMPORTANT]
-> Configuring a hybrid deployment with the Hybrid Configuration wizard requires several important prerequisites for the wizard to complete successfully and for the hybrid deployment features to function correctly. You must complete all the prerequisites outlined in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md) before you use the Hybrid Configuration wizard to create and configure your hybrid deployment. > Additionally, the [Exchange Server Deployment Assistant](https://technet.microsoft.com/exdeploy2013) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Office 365, or to migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend that you use the Deployment Assistant to generate a customized hybrid deployment checklist for your specific organization's needs.
+> Configuring a hybrid deployment with the Hybrid Configuration wizard requires several important prerequisites for the wizard to complete successfully and for the hybrid deployment features to function correctly. You must complete all the prerequisites outlined in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md) before you use the Hybrid Configuration wizard to create and configure your hybrid deployment. > Additionally, the [Exchange Server Deployment Assistant](https://technet.microsoft.com/exdeploy2013) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Microsoft 365 or Office 365, or to migrate completely to Microsoft 365 or Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend that you use the Deployment Assistant to generate a customized hybrid deployment checklist for your specific organization's needs.
 
 For additional management tasks related to hybrid deployments, see [Hybrid Deployment procedures](hybrid-deployment.md).
 
-Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../exchange-hybrid.md). Learn more about Office 365 at [What is Office 365?](https://go.microsoft.com/fwlink/?LinkId=266712).
+Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../exchange-hybrid.md). Learn more about Microsoft 365 and Office 365 at [What are Microsoft 365 and Office 365?](https://go.microsoft.com/fwlink/?LinkId=266712).
 
 ## What do you need to know before you begin?
 
@@ -66,12 +66,12 @@ Use the following procedure to create and configure a hybrid deployment:
 
 1. In the EAC on an Exchange server in your on-premises organization, navigate to the **Hybrid** node.
 
-2. In the **Hybrid** node, click **Configure** to enter your Office 365 credentials.
+2. In the **Hybrid** node, click **Configure** to enter your Microsoft 365 or Office 365 credentials.
 
     > [!IMPORTANT]
-    > If your on-premises organization is located in China and your Office 365 organization is hosted by 21Vianet, you must select the **My Microsoft 365 or Office 365 organization is hosted by 21Vianet** check box. If your Office 365 organization is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Office 365 account credentials won't be recognized and the wizard won't complete properly.
+    > If your on-premises organization is located in China and your Office 365 organization is hosted by 21Vianet, you must select the **My Microsoft 365 or Office 365 organization is hosted by 21Vianet** check box. If your Office 365 organization is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Microsoft 365 or Office 365 account credentials won't be recognized and the wizard won't complete properly.
 
-3. At the prompt to log in to Office 365, select **sign in to Office 365** and enter the account credentials. The account you log into needs to be a Global Administrator in Office 365.
+3. At the prompt to log in to Microsoft 365 or Office 365, select **sign in to Office 365** and enter the account credentials. The account you log into needs to be a Global Administrator in Microsoft 365 or Office 365.
 
 4. Click **Configure** again to start the Hybrid Configuration wizard.
 
@@ -83,7 +83,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 8. On the **Credentials** page, in the **Enter your on-premises account credentials** section, select **Use current Windows credentials** to have the wizard use the account you're logged into to access your on-premises Active Directory and Exchange servers. If you want to specify a different set of credentials, unselect **Use current Windows credentials** and specify the username and password an Active Directory account you want to use. Whichever selection you choose, the account used needs to be a member of the Enterprise Admins security group.
 
-9. In the **Enter your Office 365** credentials section, specify the username and password of an Office 365 account that has Global Administrator permissions. Click **Next**.
+9. In the **Enter your Office 365** credentials section, specify the username and password of a Microsoft 365 or Office 365 account that has Global Administrator permissions. Click **Next**.
 
 10. On the **Validating Connections and Credentials** page, the wizard will connect to both your on-premises organization and your Microsoft 365 or Office 365 organization to validate credentials and examine the current configuration of both organizations. Click **Next** when it's done.
 
