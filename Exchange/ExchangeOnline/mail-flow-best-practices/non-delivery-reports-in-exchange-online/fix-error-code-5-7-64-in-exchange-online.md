@@ -28,7 +28,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 ## I got this bounce message. How do I fix it?
 
-Only an email admin in your Office 365 organization can fix this issue. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
+Only an email admin in your Microsoft 365 or Office 365 organization can fix this issue. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
 
 ## I'm an email admin. How do I fix this?
 

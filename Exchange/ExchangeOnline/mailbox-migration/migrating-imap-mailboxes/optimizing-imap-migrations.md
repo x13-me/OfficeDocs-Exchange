@@ -77,7 +77,7 @@ Here are some tips for optimizing an IMAP migration:
 
 - **Don't delete mailboxes or change their SMTP addresses during migration**: The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of an Office 365 or on-premises mailbox that's been migrated.
 
-- **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Office 365 organization. Consider the following:
+- **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Microsoft 365 or Office 365 organization. Consider the following:
 
   - Tell users that email messages larger than 35 MB won't be migrated. Ask users to save very large messages and attachments to their local computer or to a removable USB drive.
 

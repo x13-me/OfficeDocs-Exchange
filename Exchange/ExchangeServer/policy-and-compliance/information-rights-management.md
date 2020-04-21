@@ -106,7 +106,7 @@ This table describes the scenarios for sending messages, and whether IRM protect
 |:-----|:-----|:-----|
 |Sending messages within the same on-premises Exchange organization|Yes|For the requirements, see the [IRM requirements](#irm-requirements) section later in this topic.|
 |Sending messages between different Active Directory forests in an on-premises organization.|Yes|For the requirements, see [Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests](https://go.microsoft.com/fwlink/p/?linkId=199009).|
-|Sending messages between an on-premises Exchange organization and an Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange hybrid deployments](https://docs.microsoft.com/exchange/irm).|
+|Sending messages between an on-premises Exchange organization and an Microsoft 365 or Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange hybrid deployments](https://docs.microsoft.com/exchange/irm).|
 |Sending messages to external recipients|No|Exchange doesn't include a solution for sending IRM-protected messages to external recipients in non-federated organizations. To create a federated trust between two Active Directory forests by using Active Directory Federation Services (AD FS), see [Understanding AD RMS Trust Policies](https://go.microsoft.com/fwlink/p/?linkId=182909).|
 
 ## Decrypt IRM-protected messages to enforce messaging policies
