@@ -1,4 +1,3 @@
----
 localization_priority: Normal
 description: Learn about the requirements for the journaling mailbox and the alternate journaling mailbox in Exchange Online.
 ms.topic: article
@@ -35,7 +34,7 @@ Exchange Online doesn't support delivering journal reports to an Exchange Online
 
 ## Specify an alternate journaling mailbox for undeliverable journal reports
 
-As previously explained, undeliverable journal reports are queued on Microsoft datacenter servers. Undeliverable journal reports can't be returned to the sender in a non-delivery report (also known as an NDR or bounce message) because the sender is the Exchange Online service. To handle the NDRs for undelivered journal reports, you have to you specify an alternate journaling mailbox that accepts the NDRs for all undeliverable journal reports. Like the journaling mailbox, the alternate journaling mailbox can't be an Exchange Online mailbox.
+As previously explained, undeliverable journal reports are queued on Microsoft datacenter servers and will be retried periodically till the MessageExpirationTimeout. After expiration, undeliverable journal reports can't be returned to the sender in a non-delivery report (also known as an NDR or bounce message) because the sender is the Exchange Online service. To handle the NDRs for undelivered journal reports, you have to you specify an alternate journaling mailbox that accepts the NDRs for all undeliverable journal reports. Like the journaling mailbox, the alternate journaling mailbox can't be an Exchange Online mailbox.
 
 ![Select an alternative journaling mailbox to receive NDRs for undeliverable journal reports](../../media/23408455-a7d2-454b-8375-45be81563c36.png)
 
