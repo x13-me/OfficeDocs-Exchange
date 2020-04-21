@@ -69,7 +69,7 @@ Use the following procedure to create and configure a hybrid deployment:
 2. In the **Hybrid** node, click **Configure** to enter your Microsoft 365 or Office 365 credentials.
 
     > [!IMPORTANT]
-    > If your on-premises organization is located in China and your Office 365 organization is hosted by 21Vianet, you must select the **My Microsoft 365 or Office 365 organization is hosted by 21Vianet** check box. If your Office 365 organization is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Microsoft 365 or Office 365 account credentials won't be recognized and the wizard won't complete properly.
+    > If your on-premises organization is located in China and your Microsoft 365 or Office 365 organization is hosted by 21Vianet, you must select the **Office 365 organization is hosted by 21Vianet** check box. If your Office 365 tenant is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Office 365 account credentials won't be recognized and the wizard won't complete properly.
 
 3. At the prompt to log in to Microsoft 365 or Office 365, select **sign in to Office 365** and enter the account credentials. The account you log into needs to be a Global Administrator in Microsoft 365 or Office 365.
 

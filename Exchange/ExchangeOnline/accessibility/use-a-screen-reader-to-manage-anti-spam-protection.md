@@ -42,7 +42,7 @@ Many tasks in the EAC require the use of pop-up windows so, in your browser, be 
 
 Exchange Online is included in several different subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=797553).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=797553).
 
 ### Open the EAC, and confirm your admin role
 

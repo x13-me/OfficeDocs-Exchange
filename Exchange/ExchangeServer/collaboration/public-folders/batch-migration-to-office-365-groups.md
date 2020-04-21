@@ -257,7 +257,7 @@ Start-MigrationBatch PublicFolderToGroupMigration
 After you have finished this step (the batch status is **Completed**), verify that all data has been copied to Microsoft 365 Groups. At that point, provided you're satisfied with the Groups experience, you can begin deleting the migrated public folders from your Exchange Server environment.
 
 > [!IMPORTANT]
-> While there are supported procedures for rolling back your migration and returning to public folders, this isn't possible after the source public folders have been deleted. See [How do I roll back to public folders from Microsoft 365 Groups?](#how-do-i-roll-back-to-public-folders-from-office-365-groups)) for more information.
+> While there are supported procedures for rolling back your migration and returning to public folders, this isn't possible after the source public folders have been deleted. See [How do I roll back to public folders from Microsoft 365 Groups?](#how-do-i-roll-back-to-public-folders-from-microsoft-365-groups) for more information.
 
 ## Known issues
 
@@ -315,7 +315,7 @@ The following mail properties will be stored, along with respective mail-enabled
 
 - SendAs Trustee list
 
-The above mail properties will be stored in a .csv file, which can be used in the roll back process (if you want to return to using public folders, see [How do I roll back to public folders from Microsoft 365 Groups?](#how-do-i-roll-back-to-public-folders-from-office-365-groups) for more information). A snapshot of the mail-enabled public folders' properties will also be stored in a file called PfMailProperties.csv. This file is not necessary for the roll back process, but can still be used for your reference.
+The above mail properties will be stored in a .csv file, which can be used in the roll back process (if you want to return to using public folders, see [How do I roll back to public folders from Microsoft 365 Groups?](#how-do-i-roll-back-to-public-folders-from-microsoft-365-groups) for more information). A snapshot of the mail-enabled public folders' properties will also be stored in a file called PfMailProperties.csv. This file is not necessary for the roll back process, but can still be used for your reference.
 
 The following mail properties will be migrated to target groups as part of lock down:
 
