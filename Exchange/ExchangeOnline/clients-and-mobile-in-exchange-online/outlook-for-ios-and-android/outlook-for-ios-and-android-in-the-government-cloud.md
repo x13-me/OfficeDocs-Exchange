@@ -103,3 +103,5 @@ Certain services and features of Outlook for iOS and Android are not available f
 - **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service.
 
 - **Play My Emails**: Play My Emails is not available for GCC accounts.
+
+- **To Do**: To Do is currently not available for GCC accounts.
