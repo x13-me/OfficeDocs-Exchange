@@ -1,7 +1,7 @@
 ---
 title: "Hybrid Configuration wizard options"
-ms.author: dmaguire
-author: msdmaguire
+ms.author: v-mapenn
+author: mattpennathe3rd
 manager: serdars
 f1.keywords:
 - NOCSH
