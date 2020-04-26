@@ -52,11 +52,11 @@ It's important to note the terminology differences between Active Directory and 
 
 2. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Distribution group**.
 
-3. ![New Try Office 365 Groups](../../media/3ea82c95-9dda-450f-823b-cd0772249d81.png)
+3. ![New Try Microsoft 365 Groups](../../media/3ea82c95-9dda-450f-823b-cd0772249d81.png)
 
-    You can now create an Office 365 group instead of a distribution group, if you have an Office 365 for business plan or an Exchange Online plan. Office 365 groups have the features of a distribution group and much more. With Office 365 groups, you can send email to a group, share a common calendar, have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Office 365 group** to get started and check out [Office 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=800653).
+    You can now create an Office 365 group instead of a distribution group, if you have an Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Office 365 group** to get started and check out [Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=800653).
 
-    If you have existing distribution groups that you want to migrate to Office 365 groups, check out [Migrate distribution lists to Office 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=824756).
+    If you have existing distribution groups that you want to migrate to Microsoft 365 groups, check out [Migrate distribution lists to Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=824756).
 
     If you still want to create a distribution group, click or tap the **New distribution group** wizard.
 

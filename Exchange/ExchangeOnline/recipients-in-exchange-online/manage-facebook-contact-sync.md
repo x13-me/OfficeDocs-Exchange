@@ -28,7 +28,7 @@ Facebook contact synchronization lets people set up a connection between their F
 > As an administrator, you probably want to keep Facebook contact sync turned on if your organization uses Facebook for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their Facebook friends as contacts in Outlook on the web. For information about how people set up Facebook contact sync, see [Add Facebook friends as contacts](https://go.microsoft.com/fwlink/p/?LinkId=280217).
 
 > [!NOTE]
-> The features that are available to your Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
+> The features that are available to your Microsoft 365 or Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
 
 ## Turn Facebook contact sync on or off
 

@@ -29,7 +29,7 @@ The following table describes the mailbox plans that you're likely to see in Exc
 |Exchange Online Kiosk|ExchangeOnlineDeskless|
 |Office 365 Enterprise E1 <br/><br/> Exchange Online Plan 1|ExchangeOnline|
 |Office 365 Enterprise E3 <br/><br/> Office 365 Enterprise E5 <br/><br/> Exchange Online Plan 2|ExchangeOnlineEnterprise|
-|Office 365 Business Essentials|ExchangeOnlineEssentials|
+|Microsoft 365 Business Basic |ExchangeOnlineEssentials|
 
 **Notes**:
 
