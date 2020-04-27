@@ -98,7 +98,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
 
 ## Verify you own the domain
 
-During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run a staged migration, the on-premises domain must be verified as a domain you own in your Office 365 organization.
+During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run a staged migration, the on-premises domain must be verified as a domain you own in your Microsoft 365 or Office 365 organization.
 
 **Use the domains wizard to verify you own the on-premises domain**:
 
@@ -131,13 +131,13 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 ## Use directory synchronization to create users in Office 365
 
-You use directory synchronization to create all the on-premises users in your Office 365 organization.
+You use directory synchronization to create all the on-premises users in your Microsoft 365 or Office 365 organization.
 
 You will need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see the [Complete post migration tasks](#complete-post-migration-tasks) section later in this topic.
 
 **To create new users**:
 
-You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365. After mailboxes are migrated to Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) .
+You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365. After mailboxes are migrated to Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) .
 
 ## Create a list of mailboxes to migrate
 
@@ -153,7 +153,7 @@ The CSV file for a staged migration supports the following three attributes. Eac
 |**Attribute**|**Description**|**Required?**|
 |:-----|:-----|:-----|
 |EmailAddress|Specifies the primary SMTP email address, for example, pilarp@contoso.com, for on-premises mailboxes. <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.|Required|
-|Password|The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.|Optional|
+|Password|The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Microsoft 365 or Office 365 organization also apply to the passwords included in the CSV file.|Optional|
 |ForceChangePassword|Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. Note that if you've implemented a single sign-on solution by deploying Active Directory Federation Services (AD FS) 2.0 (AD FS 2.0) or greater in your on-premises organization, you must use **False** for the value of the **ForceChangePassword** attribute.|Optional|
 
 ### CSV file format
@@ -362,9 +362,9 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 
 **To complete post-migration tasks**:
 
-1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+1. **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
-2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
+2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Microsoft 365 or Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 or Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
 

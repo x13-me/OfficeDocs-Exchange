@@ -60,7 +60,7 @@ The SHCW can download and install the agent MSI automatically. Using this method
 - Ports HTTPS (TCP) 443, 80, 5985 and 5986 must be open between the computer that has the Hybrid Agent installed on the CAS that's selected in the Hybrid Configuration wizard.
 
 > [!IMPORTANT]
-> All Client Access Servers must be able to reach outbound to Office 365 endpoints via HTTPS (TCP) 443, because free/busy request from on-premises users to Office 365 users do not traverse the Hybrid Agent. These requests still require your Exchange servers have outbound connectivity to Office 365 end points. Office 365 URLs and IP address ranges describes the required (and hybrid) ports and IPs outbound from on-prem to the service here: [https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+> All Client Access Servers must be able to reach outbound to Office 365 endpoints via HTTPS (TCP) 443, because free/busy request from on-premises users to Microsoft 365 or Office 365 users do not traverse the Hybrid Agent. These requests still require your Exchange servers have outbound connectivity to Office 365 end points. Office 365 URLs and IP address ranges describes the required (and hybrid) ports and IPs outbound from on-prem to the service here: [https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ### Proxy server considerations
 

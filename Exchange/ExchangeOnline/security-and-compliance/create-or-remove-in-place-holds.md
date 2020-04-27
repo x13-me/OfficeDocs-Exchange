@@ -41,7 +41,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
 - In Exchange Online, the quota for the Recoverable Items folder is automatically increased to 100 GB when you place an In-Place Hold on a mailbox. The default size of the Recoverable Items folder is 30 GB.
 
-- In Exchange Online, you can place an In-Place hold on Office 365 groups. When you place an Office 365 group on hold, the group mailbox is placed on hold; the mailboxes of the group members aren't placed on hold. For information about Office 365 groups, see [Learn about Office 365 groups](https://go.microsoft.com/fwlink/p/?LinkId=724066).
+- In Exchange Online, you can place an In-Place hold on Microsoft 365 groups. When you place an Office 365 group on hold, the group mailbox is placed on hold; the mailboxes of the group members aren't placed on hold. For information about Microsoft 365 groups, see [Learn about Microsoft 365 groups](https://go.microsoft.com/fwlink/p/?LinkId=724066).
 
 ## Create an In-Place Hold
 
@@ -61,7 +61,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
    2. **Don't search any mailboxes**: Select this option when you're creating an In-Place Hold exclusively for public folders.
 
-   3. **Specify mailboxes to search**: Select this option and then click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Office 365 groups to place on hold.
+   3. **Specify mailboxes to search**: Select this option and then click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Microsoft 365 groups to place on hold.
 
    4. **Search all public folders**: In Exchange Online, you can select this checkbox to place all public folders in your organization on hold. As previously explained, to create an In-Place Hold only for public folders, be sure to select the **Don't search any mailboxes** option.
 

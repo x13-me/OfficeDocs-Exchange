@@ -294,7 +294,7 @@ The following table describes the supported attributes for a CSV file for a stag
 <tr class="even">
 <td><p>Password</p></td>
 <td><p>Optional</p></td>
-<td><p>A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Office 365 organization.</p></td>
+<td><p>A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Microsoft 365 or Office 365 organization.</p></td>
 <td><p>This password is set on the user account when the corresponding mail-enabled user in Exchange Online is converted to a mailbox during the migration.</p></td>
 </tr>
 <tr class="odd">

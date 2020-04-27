@@ -25,7 +25,7 @@ You can use your screen reader in the Exchange admin center (EAC) to enable the 
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 subscription and admin role to work in the EAC. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
 
 ### Use your browser and keyboard to navigate in the EAC
 
@@ -35,11 +35,11 @@ For best results when working in the EAC in Exchange Online, use Internet Explor
 
 Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
 
-### Confirm your Office 365 subscription plan
+### Confirm your Office 365 or Microsoft 365 subscription plan
 
-Exchange Online is included in Office 365 business and enterprise subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
+Exchange Online is included in several different subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 Apps for business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
 ) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
 

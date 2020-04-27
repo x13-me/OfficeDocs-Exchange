@@ -5,7 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
-title: Outlook for iOS security, Outlook for Android security, Outlook for iOS data security, Outlook for Android data security, Outlook iOS Security MDM, Outlook Android security MDM, Outlook iOS security Exchange policies
+title: Securing Outlook for iOS and Android in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -15,7 +15,7 @@ ms.service: exchange-online
 f1.keywords:
 - NOCSH
 manager: serdars
-
+ms.custom: seo-marvel-apr2020
 ---
 
 # Securing Outlook for iOS and Android in Exchange Online
@@ -26,7 +26,7 @@ Protecting company or organizational data on users' mobile devices is extremely 
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Office 365 capabilities that are included in your Office 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 

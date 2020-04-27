@@ -1,11 +1,11 @@
 ---
 localization_priority: Normal
-description: 'Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.'
+description: Learn about the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.
 ms.topic: conceptual
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
-title: Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq
+title: "Outlook for iOS and Android in Exchange Online: FAQ"
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -15,7 +15,7 @@ ms.service: exchange-online
 f1.keywords:
 - NOCSH
 manager: serdars
-
+ms.custom: seo-marvel-apr2020
 ---
 
 # Outlook for iOS and Android in Exchange Online: FAQ
@@ -347,7 +347,7 @@ For more information, please see [Managing Outlook for iOS and Android in Exchan
 
 ### Q: Is a license required to use Outlook for iOS and Android?
 
-Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
+Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 or Microsoft 365 subscription that includes the Office desktop applications: Microsoft 365 Apps for Business, Microsoft 365 Business Standard, Microsoft 365 Apps for enterprise, Office 365 Enterprise E3, Office 365 Enterprise E5, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 A1, Microsoft 365 Business Basic, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
 
 ## Common questions from end-users
 

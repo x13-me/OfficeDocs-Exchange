@@ -41,9 +41,9 @@ The following sharing scenarios are supported in Exchange 2013:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Share calendars with an Office 365 organization</p></td>
+<td><p>Share calendars with an Microsoft 365 or Office 365 organization</p></td>
 <td><p>Organization relationships</p></td>
-<td><p>The Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
+<td><p>The Microsoft 365 or Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Share calendars with another on-premises Exchange organization</p></td>

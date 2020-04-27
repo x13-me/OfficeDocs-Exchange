@@ -55,7 +55,7 @@ The available end-user roles that you can assign to mailbox plans are described 
 |MyMailSubscriptions|Yes|Connected accounts were removed from Outlook on the web in November, 2018. For more information, see [Connected accounts is no longer supported in Outlook on the web](https://support.office.com/article/5cc526bf-e928-4a99-8b9f-5e089df7d887).|
 |MyProfileInformation|Yes|Edit their first name, middle initial, last name, and display name in the GAL. <br/><br/> This role contains the following child roles: <br/>• **MyDisplayName**: Change their display name. <br/>• **MyName**: Change their first name, middle initial, last name and Notes property. <br/><br/> If you think this role gives users too much power, you can remove the role from the role assignment policy, and assign one of the child roles. For instructions, see the [Add or remove roles from a role assignment policy](#add-or-remove-roles-from-a-role-assignment-policy) section in this topic.|
 |MyRetentionPolicies|Yes|Allows users to add personal tags that aren't part of their assigned retention policy.<sup>*</sup>|
-|MyTeamMailboxes|Yes|Site mailboxes were discontinued in favor of Office 365 groups in September, 2017. For more information, see [Use Office 365 Groups instead of Site Mailboxes](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b).|
+|MyTeamMailboxes|Yes|Site mailboxes were discontinued in favor of Microsoft 365 groups in September, 2017. For more information, see [Use Microsoft 365 Groups instead of Site Mailboxes](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b).|
 |MyTextMessaging|Yes|Enable text message notifications for meetings and new email messages.<sup>*</sup>|
 |MyVoiceMail|Yes|Update their voice mail settings.<sup>*</sup>|
 

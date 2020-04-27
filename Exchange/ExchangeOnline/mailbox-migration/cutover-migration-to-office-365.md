@@ -44,7 +44,7 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 - A maximum of 2,000 mailboxes can be migrated to Office 365 by using a cutover Exchange migration. However, it is recommended that you only migrate 150 mailboxes.
 
-- The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Office 365 organization.
+- The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Microsoft 365 or Office 365 organization.
 
 - After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
 
@@ -53,7 +53,7 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 ## Impact to users
 
-After your on-premises and Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.
+After your on-premises and Microsoft 365 or Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.
 
 - **Administrators or users must configure desktop computers**: Make sure that desktop computers are updated and set up for use with Office 365. These actions allow users to use local user credentials to sign in to Office 365 from desktop applications. Users with permission to install applications can update and set up their own desktops. Or updates can be installed for them. After updates are made, users can send email from Outlook 2013, Outlook 2010, or Outlook 2007.
 
@@ -138,7 +138,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
 
 ## Step 1: Verify you own the domain
 
-During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run a cutover migration, the on-premises domain must be a verified domain in your Office 365 organization.
+During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run a cutover migration, the on-premises domain must be a verified domain in your Microsoft 365 or Office 365 organization.
 
 1. Sign in to Office 365 with your work or school account.
 
@@ -299,13 +299,13 @@ When you delete a cutover migration batch, the migration service cleans up any r
 
 ## Step 7: Assign licenses to Office 365 users
 
-**Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+**Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
 ## Complete post migration tasks
 
 After migrating mailboxes to Office 365, there are post-migration tasks that must be completed.
 
-1. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
+1. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Microsoft 365 or Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 or Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
    If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox. Replace \<ServerName\> with the name of the Client Access server and run the following command in the Exchange Management Shell to prevent client connections to the server. You'll need to run the command on every Client Access server.
 

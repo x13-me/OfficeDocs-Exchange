@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see Recipients.
+description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Microsoft 365 or Office 365 organization and can access resources. For more information, see Recipients.
 ms.topic: article
 author: mattpennathe3rd
 f1.keywords:
@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage mail users
 
-Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Microsoft 365 or Office 365 organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 
 ## What do you need to know before you begin?
 

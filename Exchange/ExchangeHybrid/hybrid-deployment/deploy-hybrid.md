@@ -69,7 +69,7 @@ Use the following procedure to create and configure a hybrid deployment:
 2. In the **Hybrid** node, click **Configure** to enter your Office 365 credentials.
 
     > [!IMPORTANT]
-    > If your on-premises organization is located in China and your Office 365 tenant is hosted by 21Vianet, you must select the **My Office 365 organization is hosted by 21Vianet** check box. If your Office 365 tenant is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Office 365 account credentials won't be recognized and the wizard won't complete properly.
+    > If your on-premises organization is located in China and your Office 365 tenant is hosted by 21Vianet, you must select the **Office 365 organization is hosted by 21Vianet** check box. If your Office 365 tenant is hosted by 21Vianet and this checkbox isn't selected, the Hybrid Configuration wizard won't connect to 21Vianet service, your Office 365 account credentials won't be recognized and the wizard won't complete properly.
 
 3. At the prompt to log in to Office 365, select **sign in to Office 365** and enter the account credentials. The account you log into needs to be a Global Administrator in Office 365.
 
@@ -85,7 +85,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 9. In the **Enter your Office 365** credentials section, specify the username and password of an Office 365 account that has Global Administrator permissions. Click **Next**.
 
-10. On the **Validating Connections and Credentials** page, the wizard will connect to both your on-premises organization and your Office 365 organization to validate credentials and examine the current configuration of both organizations. Click **Next** when it's done.
+10. On the **Validating Connections and Credentials** page, the wizard will connect to both your on-premises organization and your Microsoft 365 or Office 365 organization to validate credentials and examine the current configuration of both organizations. Click **Next** when it's done.
 
 11. On the **Hybrid Domains**, select the domains you want to include in your hybrid deployment. In most deployments you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain. Click **Next**.
 

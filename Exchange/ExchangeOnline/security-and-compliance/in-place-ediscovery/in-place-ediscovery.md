@@ -21,7 +21,7 @@ manager: serdars
 # In-Place eDiscovery
 
 > [!IMPORTANT]
->  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
+>  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
 
 If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Microsoft Exchange Server and Exchange Online can help you perform discovery searches for relevant content within mailboxes. Exchange Server and Exchange Online also offer federated search capability and integration with Microsoft SharePoint 2013 and Microsoft SharePoint Online. Using the eDiscovery Center in SharePoint, you can search for and hold all content related to a case, including SharePoint 2013 and SharePoint Online websites, documents, file shares indexed by SharePoint (SharePoint 2013 only), mailbox content in Exchange, and archived Lync 2013 content. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 
@@ -90,7 +90,7 @@ SharePoint also uses Microsoft Search Foundation for content indexing and queryi
 
 In on-premises deployments, before you can use eDiscovery Center in SharePoint to search Exchange mailboxes, you must establish trust between the two applications. In Exchange Server and SharePoint 2013, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
 
-For step-by step instructions for setting up an eDiscovery Center in an Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
+For step-by step instructions for setting up an eDiscovery Center in an Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
 
 ## eDiscovery in an Exchange hybrid deployment
 <a name="oauth"> </a>
@@ -142,7 +142,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 - **Mailboxes**: You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search.
 
-    In Exchange Online, you can also specify Office 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add an Office 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
+    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add an Office 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
 
 - **Search query**: You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query:
 
@@ -298,7 +298,7 @@ The default throttling policy contains the following throttling parameters.
 |DiscoverySearchTimeoutPeriod|The number of minutes that an In-Place eDiscovery search will run before it times out.|10 minutes|
 
 > [!NOTE]
-> <sup>1</sup> If you initiate an eDiscovery search from the eDiscovery Center in SharePoint Online in an Office 365 organization, you can search a maximum of 1,500 mailboxes in a single search.
+> <sup>1</sup> If you initiate an eDiscovery search from the eDiscovery Center in SharePoint Online in an Microsoft 365 or Office 365 organization, you can search a maximum of 1,500 mailboxes in a single search.
 
 In Exchange Server, you can change the default values for these parameters to suit your requirements or create additional throttling policies and assign them to users with delegated Discovery Management permission. In Exchange Online, the default values for these throttling parameters can't be changed.
 
@@ -313,7 +313,7 @@ The following table contains links to topics that will help you learn about and 
 |[Create a discovery mailbox](create-a-discovery-mailbox.md)|Learn how to use Exchange Online PowerShell to create a discovery mailbox and assign access permissions.|
 |[Create an In-Place eDiscovery search](create-in-place-ediscovery-search.md)|Learn how to create an In-Place eDiscovery search, and how to estimate and preview eDiscovery search results.|
 |[Message properties and search operators for In-Place eDiscovery](https://go.microsoft.com/fwlink/p/?LinkId=506799)|Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.|
-|[Search limits for In-Place eDiscovery in Exchange Online](search-limits.md)|Learn In-Place eDiscovery limits in Exchange Online that help maintain the health and quality of eDiscovery services for Office 365 organizations.|
+|[Search limits for In-Place eDiscovery in Exchange Online](search-limits.md)|Learn In-Place eDiscovery limits in Exchange Online that help maintain the health and quality of eDiscovery services for Microsoft 365 or Office 365 organizations.|
 |[Start or Stop an In-Place eDiscovery Search](https://technet.microsoft.com/library/0d546763-4bf5-4523-91f4-d181b7ee4ac2.aspx)|Learn how to start, stop, and restart eDiscovery searches.|
 |[Modify an In-Place eDiscovery Search](https://technet.microsoft.com/library/3162743c-cc12-4997-91e0-bcbfea8bcb17.aspx)|Learn how to modify an existing eDiscovery search.|
 |[Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)|Learn how to copy the results of an eDiscovery search to a discovery mailbox.|
