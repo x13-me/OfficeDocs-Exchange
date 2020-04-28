@@ -38,7 +38,7 @@ The Office 365-based architecture provides the following benefits:
 
 4. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
 
-Within the Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization.
+Within the Office 365-based architecture, Outlook for iOS and Android uses the native Microsoft sync technology as the protocol for data synchronization.
 
 ![new synch image](../../media/newsync.png)
 
