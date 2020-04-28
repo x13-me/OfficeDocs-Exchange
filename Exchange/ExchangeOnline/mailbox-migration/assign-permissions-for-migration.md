@@ -57,6 +57,20 @@ The migration administrator must have the necessary administrative privileges in
 
   - Assigned the Receive As permission on the on-premises mailbox database that stores the user mailboxes.
 
+- **Remote move (Hybrid) Exchange migration**
+
+    For a remove move migration, the migration administrator account must be:
+
+  - A member of the Domain Admins group in Active Directory Domain Services (AD DS) in the on-premises organization.
+
+    or
+
+  - A member of the Exchange Recipients Administrators group in Active Directory in the on-premises organization.
+
+    or
+
+  - A member of the Organization Management or Recipient Management group in Exchange 2010 or above.
+  
 - **Internet Message Access Protocol 4 (IMAP4) migration**
 
     For an IMAP4 migration, the comma-separated value (.csv) file for the migration batch must contain:
