@@ -46,7 +46,7 @@ The native Microsoft sync technology offers several benefits:
 
 1. **Eliminates middle tier services**: Data synchronization with the native Microsoft sync technology occurs between the app and Office 365, eliminating the need for any middle tier services.
 
-2. **Latency reduction**: By replacing the propietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the app and Office 365.
+2. **Latency reduction**: By replacing the proprietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the app and Office 365.
 
 3. **Additional Office 365 instance support**: Removing the intermediary Stateless Protocol Translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
 
