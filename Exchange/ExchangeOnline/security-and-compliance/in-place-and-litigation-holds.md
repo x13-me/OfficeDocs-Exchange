@@ -12,6 +12,7 @@ title: In-Place Hold and Litigation Hold
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+search.appverid: MET150
 audience: Admin
 ms.service: exchange-online
 manager: serdars

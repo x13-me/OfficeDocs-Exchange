@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 477289e6-9150-4627-afce-f61fc7c4605b
 description: "Learn how to fix email issues for error code 550 5.5.0 or address rejected: SPF Permanent Error in Exchange Online (the destination email server won't accept messages from the sender or for the recipient)."
 ---

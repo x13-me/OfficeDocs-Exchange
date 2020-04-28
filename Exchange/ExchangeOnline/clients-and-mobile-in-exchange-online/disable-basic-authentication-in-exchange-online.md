@@ -12,6 +12,7 @@ ms.reviewer:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+search.appverid: MET150
 description: Learn how to block Basic auth for client authentication in Exchange Online
 audience: Admin
 title: Disable Basic authentication in Exchange Online
