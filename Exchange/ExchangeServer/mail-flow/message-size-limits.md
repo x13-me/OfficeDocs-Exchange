@@ -6,7 +6,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms.reviewer:
-title: Message size limits in Exchange Server
+title: Message size and recipient limits in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Message size limits in Exchange Server
+# Message size and recipient limits in Exchange Server
 
 You can apply limits to messages that move through your organization. You can set the maximum size of an entire message as a whole, or the size of individual parts of a message, or both. For example, you could restrict the maximum size of the message header or attachments, or set a maximum number of recipients that can be added to the message. You can apply these limits to your entire Exchange organization, to specific mail transport connectors, specific servers, and to individual mailboxes.
 
@@ -159,6 +159,24 @@ An exception to the order is message size limits on mailboxes and messages size 
 Recipient limits between authenticated senders and recipients (typically, internal message senders and recipients) are exempt from the organizational message size restrictions. Therefore, you can configure specific senders and recipients to exceed the default message size limits for your organization. For example, you can allow specific mailboxes to send and receive larger messages than the rest of the organization by configuring custom send and receive limits for those mailboxes.
 
 However, this exemption applies only to messages sent between authenticated senders and recipients (typically, internal senders and recipients). For messages sent between anonymous senders and recipients (typically, Internet senders or Internet recipients), the organizational limits apply. For example, suppose your organizational message size limit is 10 MB, but you configured the users in your marketing department to send and receive messages up to 50 MB. These users will be able to exchange large messages with each other, but not with Internet senders and recipients (unauthenticated senders and recipients).
+
+### How recipient limits work together
+
+The recipient limit on a message is enforced in two places:
+
+  - At the protocol level during email transfer where the receive connector *MaxRecipientsPerMessage* is enforced.
+
+  - At the Transport level during categorization where *MaxRecipientEnvelopeLimit* is enforced.
+  
+We also have the mailbox level *RecipientLimits*, which overrides the Transport level *MaxRecipientEnvelopeLimit*. This limit is also enforced during message categorization. If the mailbox level *RecipientLimits* is set to `unlimited` (the default value), it indicates the maximum number of recipients per message for the mailbox is controlled by the Transport level *MaxRecipientEnvelopeLimit*.
+
+For inbound email, the Receive connector *MaxRecipientsPerMessage* is verified first. However, if the number of recipients exceeds the limit, the message is not rejected; the connection receives the error, `452 4.5.3 Too many recipients`. Most mail servers understand this error and they will continue to resend the message in another connection until the message is delivered to all recipients. The Receive connector *MaxRecipientsPerMessage* also applies to authenticated SMTP client submissions.
+
+However, when an Exchange Server relays email through another Exchange server in the same organization, the Receive connector *MaxRecipientsPerMessage* is bypassed. When the message is accepted and email is sent to the categorizer, the mailbox level *RecipientLimits* (if it is not set to `unlimited`) or Transport level *MaxRecipientEnvelopeLimit* are checked. If the number of recipients exceeds this limit, the message is rejected and a bounce message is sent with the error `550 5.5.3 RESOLVER.ADR.RecipLimit; too many recipients`.
+
+Here is an example scenario:
+
+The receive connector `MaxRecipientsPerMessage` is set to 100 and the Transport level `MaxRecipientEnvelopeLimit` is set to 500. Now, if someone sends an inbound email to 1000 recipients, the email will typically be accepted because the Receive connector limit will force the sending server to send email in 10 chunks with 100 recipients on each message, which is lower than the transport categorizer setting `MaxRecipientEnvelopeLimit`.
 
 ## Messages exempt from size limits
 
