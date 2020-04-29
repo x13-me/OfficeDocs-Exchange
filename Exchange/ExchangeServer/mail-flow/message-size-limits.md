@@ -164,11 +164,11 @@ However, this exemption applies only to messages sent between authenticated send
 
 The recipient limit on a message is enforced in two places:
 
-  - At the protocol level during email transfer where the receive connector *MaxRecipientsPerMessage* is enforced.
+  - At the protocol level during email transfer where the Receive connector *MaxRecipientsPerMessage* is enforced.
 
   - At the Transport level during categorization where *MaxRecipientEnvelopeLimit* is enforced.
   
-We also have the mailbox level *RecipientLimits*, which overrides the Transport level *MaxRecipientEnvelopeLimit*. This limit is also enforced during message categorization. If the mailbox level *RecipientLimits* is set to `unlimited` (the default value), it indicates the maximum number of recipients per message for the mailbox is controlled by the Transport level *MaxRecipientEnvelopeLimit*.
+There is also the mailbox level *RecipientLimits*, which overrides the Transport level *MaxRecipientEnvelopeLimit* and is also enforced during message categorization. If the mailbox level *RecipientLimits* is set to `unlimited` (the default value), then the maximum number of recipients per message for the mailbox is controlled by the Transport level *MaxRecipientEnvelopeLimit*.
 
 For inbound email, the Receive connector *MaxRecipientsPerMessage* is verified first. However, if the number of recipients exceeds the limit, the message is not rejected; the connection receives the error, `452 4.5.3 Too many recipients`. Most mail servers understand this error and they will continue to resend the message in another connection until the message is delivered to all recipients.
 
