@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 7dcf7a8b-e00e-49f8-bf8d-74aba79c5a6a
 description: "Learn how to fix email issues for error code 5.4.1 in Exchange Online (the destination email server doesn't accept email from the sender's domain)."
 ---

@@ -12,6 +12,7 @@ title: Search limits for In-Place eDiscovery in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+search.appverid: MET150
 audience: Admin
 ms.service: exchange-online
 manager: serdars
