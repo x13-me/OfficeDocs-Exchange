@@ -78,10 +78,10 @@ To verify that you've successfully set up message size limits for a mailbox, do 
 
 4. Under **Message Size Restrictions**, click **View details** to verify the message size limits for the mailbox.
 
-Or
+   Or
 
-Run the following command in the Exchange Management Shell.
+   Run the following command in the Exchange Management Shell.
 
-```PowerShell
-Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
-```
+   ```PowerShell
+   Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
+   ```
