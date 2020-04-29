@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 5a04a25a-a34f-476b-afc6-007fb92f86a1
 description: "Learn how to fix email issues for error code 550 5.1.10 in Exchange Online (invalid recipient or backscatter)."
 ---

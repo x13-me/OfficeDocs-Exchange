@@ -14,6 +14,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 
 description: "Learn how to fix email issues for error code 5.7.23 in Exchange Online (The message was rejected because of Sender Policy Framework violation)."
 ---
