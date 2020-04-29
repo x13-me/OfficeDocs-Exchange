@@ -172,7 +172,7 @@ We also have the mailbox level *RecipientLimits*, which overrides the Transport 
 
 For inbound email, the Receive connector *MaxRecipientsPerMessage* is verified first. However, if the number of recipients exceeds the limit, the message is not rejected; the connection receives the error, `452 4.5.3 Too many recipients`. Most mail servers understand this error and they will continue to resend the message in another connection until the message is delivered to all recipients.
 
-The Receive connector *MaxRecipientsPerMessage* applies to authenticated and anonymous SMTP client submissions. However, when an Exchange Server relays email through another Exchange server in the same organization, the Receive connector *MaxRecipientsPerMessage* is bypassed.
+The Receive connector *MaxRecipientsPerMessage* applies to authenticated and anonymous SMTP client submissions. However, when an Exchange server relays email through another Exchange server in the same organization, the Receive connector *MaxRecipientsPerMessage* is bypassed.
 
 When the message is accepted and email is sent to the categorizer, the mailbox level *RecipientLimits* (if it is not set to `unlimited`) or Transport level *MaxRecipientEnvelopeLimit* are checked. If the number of recipients exceeds this limit, the message is rejected and a bounce message is sent with the error `550 5.5.3 RESOLVER.ADR.RecipLimit; too many recipients`.
 
