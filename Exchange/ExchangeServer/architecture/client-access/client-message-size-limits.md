@@ -151,11 +151,11 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
 Instead of using Notepad, you can also configure the client-specific message size limits from the command line. Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the appropriate commands for the limits that you want to configure.
 
- **Notes**:
-
-- The size values in the commands are the default values, so you'll need to change them.
-
-- Pay attention to whether the value is in bytes or kilobytes.
+> [!NOTE]
+> 
+> - The size values in the commands are the default values, so you'll need to change them.
+> 
+> - Pay attention to whether the value is in bytes or kilobytes.
 
 ### ActiveSync
 
