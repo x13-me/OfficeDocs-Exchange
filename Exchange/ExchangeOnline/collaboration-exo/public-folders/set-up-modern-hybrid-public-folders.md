@@ -44,10 +44,10 @@ An Exchange Online, Office 365, or Microsoft 365 user must be represented by a M
 
   - To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
 
-- Outlook 2016 for Mac, Outlook 2019 for Mac support cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md).
+- Outlook 2016 for Mac, Outlook 2019 for Mac, and Outlook for Microsoft 365 for Mac support cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md).
 
   > [!NOTE]
-  > Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook on the web (formerly known as Outlook Web App).
+  > Outlook 2011 for Mac is not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook on the web (formerly known as Outlook Web App).
 
 - You must synchronize the Active Directory container where your public folder mailboxes are stored (such as the **Users** container) with the AAD Connect tool. Otherwise your public folder mailbox objects won't be synchronized with Exchange Online.
 
