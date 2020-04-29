@@ -318,7 +318,7 @@ Directory synchronization is available for hybrid customers with on-premises and
 
   - **End user access to quarantine**: To access their quarantined messages, users must have a valid user ID and password in the cloud. For more information, see [Find and release quarantined messages as a user](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
 
-  - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them via the EAC or Exchange Online PowerShell. Note that [dynamic distribution groups](../../ExchangeServer/recipients/dynamic-distribution-groups/dynamic-distribution-groups.md) can't be synchronized via directory synchronization.
+  - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them via the EAC or Exchange Online PowerShell. Note that [dynamic distribution groups](manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) can't be synchronized via directory synchronization.
 
 Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
