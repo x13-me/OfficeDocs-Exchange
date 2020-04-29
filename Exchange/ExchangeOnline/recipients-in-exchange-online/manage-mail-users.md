@@ -67,7 +67,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of contacts, select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
 
 3. On the mail user properties page that opens, click one of the following tabs to view or change properties.
 
@@ -89,8 +89,8 @@ Use the **General** tab to view or change basic information about the mail user.
 
 - **Hide from address lists**: Select this check box to prevent the mail user from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send messages to the recipient by using the email address.
 
-- **More options** \> **Custom attributes**: Click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png) in the **Custom attributes** pages that opens, enter values for Custom Attribute 1 through Custom Attribute 15. When you're finished, click **OK**.
-
+- **More options** \> **Custom attributes**: Click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) in the **Custom attributes** pages that opens, enter values for Custom Attribute 1 through Custom Attribute 15. When you're finished, click **OK**.
+:::image type="content" source="../media/ITPro_EAC_EditIcon.png" alt-text="Edit icon":::
 #### Contact information
 
 Use the **Contact information** tab to view or change the user's contact information. The information on this page is displayed in the address book.
@@ -131,7 +131,7 @@ Use the **Organization** tab to record detailed information about the user's rol
 
 Use the **Email addresses** tab to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, the external email address is the primary SMTP address.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). In the **New email address** page that appears, configure the following settings:
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
 
   - **Email address type**: Verify **SMTP** is selected.
   - **Email address**: Enter the email address to add.
@@ -139,14 +139,14 @@ Use the **Email addresses** tab to view or change the email addresses associated
 
   When you're finished, click **OK**.
 
-- **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png). In the **Email address** page that appears, configure the following settings:
+- **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
 
   - **Email address**: Modify the existing email address.
   - **Make this the reply address**: This setting only appears if the email address you selected isn't already the reply address.
 
   When you're finished, click **OK**.
 
-- **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif). You can't remove the reply address.
+- **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif). You can't remove the reply address.
 
 #### Mail flow settings
 
@@ -155,14 +155,14 @@ In the **Message delivery restrictions** section, click **View details**. In the
 - **Accept messages from**: Specify who can send messages to this mail user. Unspecified senders are blocked.
 
   - **All senders**: This is the default value.
-  - **Only senders in the following list**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). Select a recipient, click **Add**, and repeat as many times as necessary. When you're finished, click **OK**.
+  - **Only senders in the following list**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). Select a recipient, click **Add**, and repeat as many times as necessary. When you're finished, click **OK**.
 
 - **Require that all senders are authenticated**: Select this option to prevent anonymous users (external users) from sending messages to the user.
 
 - **Reject messages from**: Specify who isn't allowed to send messages to this mail user.
 
   - **No senders**: This is the default value.
-  - **Senders in the following list**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). Select a recipient, click **Add**, and repeat as many times as necessary. When you're finished, click **OK**.
+  - **Senders in the following list**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). Select a recipient, click **Add**, and repeat as many times as necessary. When you're finished, click **OK**.
 
 When you're finished, click **OK**.
 
@@ -197,7 +197,7 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
 
 ## Use PowerShell to manage mail users
 
