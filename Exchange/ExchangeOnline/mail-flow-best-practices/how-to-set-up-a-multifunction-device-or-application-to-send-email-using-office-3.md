@@ -279,6 +279,12 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 10. To test the configuration, send a test email from your device or application, and confirm that it was received by the recipient.
 
+### Configure a certificate-based connector to relay email through Microsoft 365 or Office 365
+
+If your devices or applications are capable of using a certificate for mail flow, you can configure a certificate-based connector to relay email through Microsoft 365 or Office 365.
+
+To do this, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](https://docs.microsoft.com/exchange/troubleshoot/connectors/office-365-notice).
+
 ### How Office 365 SMTP relay works
 
 In the following diagram, the application or device in your organization's network uses a connector for SMTP relay to email recipients in your organization.
