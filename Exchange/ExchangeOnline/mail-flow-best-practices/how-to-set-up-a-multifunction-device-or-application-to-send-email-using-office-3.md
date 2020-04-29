@@ -156,7 +156,8 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.
 
-   **Note**: Do NOT use an IP address for the Office 365 server connection, as IP addresses are not supported.
+   > [!NOTE]
+   > Do NOT use an IP address for the Office 365 server connection, as IP addresses are not supported.
 
 5. Now that you are done configuring your device settings, go to your domain registrar's website to update your DNS records. Edit your sender policy framework (SPF) record. In the entry, include the IP address that you noted in step 1. The finished string looks similar to this:
 
