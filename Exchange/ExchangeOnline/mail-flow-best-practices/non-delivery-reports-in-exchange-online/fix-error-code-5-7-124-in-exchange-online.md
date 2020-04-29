@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 3269ef55-dabe-4710-9921-a3753c66b2c9
 description: "Learn how to fix email issues for error code 5.7.124 in Exchange Online (the sender isn't in the recipient group's allowed senders list)."
 ---

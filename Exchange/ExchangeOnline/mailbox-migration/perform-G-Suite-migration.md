@@ -7,6 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
+search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Instructions for migrating from G Suite to Microsoft Office 365 in stages by migrating users in batches.

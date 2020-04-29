@@ -9,6 +9,7 @@ ms.reviewer:
 f1.keywords:
 - NOCSH
 title: View the administrator audit log
+search.appverid: MET150
 ms.collection: 
 - exchange-online
 - M365-email-calendar
