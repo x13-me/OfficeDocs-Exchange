@@ -9,6 +9,7 @@ ms.reviewer:
 f1.keywords:
 - NOCSH
 title: Use Exchange Online PowerShell to display Office 365 mailbox information
+search.appverid: MET150
 ms.collection:
 - Ent_O365
 - exchange-online
