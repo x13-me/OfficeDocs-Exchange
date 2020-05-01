@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 08793285-463d-4198-9626-60794835a3b5
 description: "Learn how to fix email issues for error code 5.7.12 in Exchange Online (the recipient rejects messages from external or unauthenticated senders)."
 ---
