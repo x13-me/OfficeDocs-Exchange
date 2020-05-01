@@ -108,7 +108,7 @@ A user can export their own certificate and mail it to themselves using Outlook.
 > [!IMPORTANT]
 > Outlook for iOS and Android only supports automated certificate delivery when Microsoft Endpoint Manager is the enrollment provider. 
 >
-> For Outlook for iOS, this is due to the iOS keychain architecture. iOS offers a system keychain and publisher keychains. iOS prevents third-party apps from accessing the system keychain (only first-party apps and the Safari webview controller can access the system keychain). In order to deliver  certificates that can be accessed by Outlook for iOS, the certificates must reside in the Microsoft publisher keychain to which Outlook for iOS has access. Only Microsoft published apps, like the Company Portal, can place certificates into the Microsoft publisher keychain.
+> For Outlook for iOS, this is due to the iOS keychain architecture. iOS offers a system keychain and publisher keychains. iOS prevents third-party apps from accessing the system keychain (only first-party apps and the Safari webview controller can access the system keychain). In order to deliver certificates that can be accessed by Outlook for iOS, the certificates must reside in the Microsoft publisher keychain to which Outlook for iOS has access. Only Microsoft published apps, like the Company Portal, can place certificates into the Microsoft publisher keychain.
 >
 > Outlook for Android relies on Endpoint Manager to deliver and approve the S/MIME certificates.
 
