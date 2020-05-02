@@ -41,7 +41,7 @@ Administrative roles and end-user roles are the two types of management roles. F
 
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Online PowerShell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
 
-Exchange Online includes role groups that you can use to grant permissions. For more information, see [Permissions in Exchange Online](permissions-exo.md).
+Exchange Online includes role groups that you can use to grant permissions. For more information, see the next section.
 
 > [!NOTE]
 > Some management roles many be available only to on-premises Exchange Server installations and won't be available in Exchange Online.
