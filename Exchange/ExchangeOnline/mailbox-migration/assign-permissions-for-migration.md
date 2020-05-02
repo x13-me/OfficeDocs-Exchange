@@ -59,7 +59,7 @@ The migration administrator must have the necessary administrative privileges in
 
 - **Remote move (Hybrid) Exchange migration**
 
-    For a remove move migration, the migration administrator account must be:
+    For a remote move migration, the migration administrator account must be:
 
   - A member of the Domain Admins group in Active Directory Domain Services (AD DS) in the on-premises organization.
 
