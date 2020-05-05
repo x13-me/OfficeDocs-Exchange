@@ -111,7 +111,7 @@ If you still want to create a distribution group, use the following steps:
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution group that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
+2. In the list of groups, select the distribution group that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_AddIcon.png).
 
 3. On the distribution group properties page that opens, click one of the following tabs to view or change properties.
 
@@ -214,7 +214,7 @@ Use this tab to set options for moderating the group. Moderators approve or reje
 
 Use the **Email addresses** tab to view or change the email addresses associated with the group. This includes the group's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
+- **Add**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
 
   - **Email address type**: Verify **SMTP** is selected.
   - **Email address**: Enter the email address to add.
@@ -222,14 +222,14 @@ Use the **Email addresses** tab to view or change the email addresses associated
 
   When you're finished, click **OK**.
 
-- **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
+- **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
 
   - **Email address**: Modify the existing email address.
   - **Make this the reply address**: This setting only appears if the email address you selected isn't already the reply address.
 
   When you're finished, click **OK**.
 
-- **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif). You can't remove the reply address.
+- **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). You can't remove the reply address.
 
 #### MailTip
 
@@ -253,7 +253,7 @@ To remove a sender from the list, select the sender, and then click **Remove** !
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution group that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+2. In the list of groups, select the distribution group that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
 ## Use PowerShell to manage distribution groups
 
