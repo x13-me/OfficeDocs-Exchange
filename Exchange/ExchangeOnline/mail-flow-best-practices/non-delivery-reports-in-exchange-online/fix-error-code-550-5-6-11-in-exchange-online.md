@@ -11,7 +11,9 @@ localization_priority: Normal
 f1.keywords:
 - CSH
 ms.custom: MiniMaven
-search.appverid: BCS160
+search.appverid: 
+- BCS160
+- MET150
 ms.assetid: 81dafee7-26af-4d79-b174-8f78980dfafb
 description: "Learn how to fix email issues for error code 5.6.11 in Exchange Online (the destination email server rejects messages with bare line feeds)."
 ---

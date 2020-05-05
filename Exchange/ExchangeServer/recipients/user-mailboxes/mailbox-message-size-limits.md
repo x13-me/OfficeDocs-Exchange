@@ -20,7 +20,7 @@ manager: serdars
 
 Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages.
 
-Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
+Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size and recipient limits in Exchange Server](../../mail-flow/message-size-limits.md).
 
 For additional management tasks related to user mailboxes, see [Manage user mailboxes](user-mailboxes.md).
 
@@ -78,10 +78,10 @@ To verify that you've successfully set up message size limits for a mailbox, do 
 
 4. Under **Message Size Restrictions**, click **View details** to verify the message size limits for the mailbox.
 
-Or
+   Or
 
-Run the following command in the Exchange Management Shell.
+   Run the following command in the Exchange Management Shell.
 
-```PowerShell
-Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
-```
+   ```PowerShell
+   Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
+   ```

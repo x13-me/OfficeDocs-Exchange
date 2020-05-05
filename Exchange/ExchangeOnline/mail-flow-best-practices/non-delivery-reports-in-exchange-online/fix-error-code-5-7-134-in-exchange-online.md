@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 033fcaaf-7916-47ae-b2cd-2a63456bb812
 description: "Learn how to fix email issues for error code 5.7.134 in Exchange Online (the mailbox recipient is configured to reject messages from external or unauthenticated senders)."
 ---
