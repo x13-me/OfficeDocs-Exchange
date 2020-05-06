@@ -20,9 +20,6 @@ manager: serdars
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 
-> [!NOTE]
-> Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
-
 ## Overview of mobile device mailbox policies
 
 You can use mobile device mailbox policies to manage many different settings. These include the following:
