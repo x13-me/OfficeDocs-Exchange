@@ -73,7 +73,7 @@ If any log entries are found using the criteria you specified, an XML file will 
 
 ## Use Exchange Online PowerShell to search for audit log entries
 
-You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Search-AdminAuditLog cmdlet](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Search-AdminAuditLog cmdlet](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
 
 If you want to send audit log search results in an email attachment to a recipient, see the [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
 
