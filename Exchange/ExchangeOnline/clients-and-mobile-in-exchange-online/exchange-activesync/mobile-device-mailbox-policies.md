@@ -44,7 +44,7 @@ Mobile device mailbox policies can be created in the Exchange admin center (EAC)
 
 Many mobile devices support biometrics such as Apple Touch ID or Face ID. Exchange mobile device mailbox policies do not control whether biometrics can be used instead of typing the device PIN. Mobile device mailbox policies can be configured to require a device PIN, but then the users control whether they use biometrics after complying with the device PIN requirement.
 
-Customers that need advanced control over the use of biometrics should consider device enrollment solutions such as Microsoft Intune. See [Deploying Outlook for iOS and Android app configuration settings](../outlook-for-ios-and-android\outlook-for-ios-and-android-configuration-with-microsoft-intune.md) for more information.
+Customers that need advanced control over the use of biometrics should consider device enrollment solutions such as Microsoft Intune. See [Deploying Outlook for iOS and Android app configuration settings](../outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune.md) for more information.
 
 ## Mobile device password settings and Android
 
