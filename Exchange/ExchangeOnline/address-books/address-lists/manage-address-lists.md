@@ -246,7 +246,7 @@ Hiding a recipient from address lists doesn't prevent the recipient from receivi
 
 To open the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-You can't use the EAC to hide Office 365 groups from address lists.
+You can't use the EAC to hide Microsoft 365 groups from address lists.
 
 1. In the EAC, go to one of the following locations based on the recipient type:
 

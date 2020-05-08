@@ -21,7 +21,7 @@ manager: serdars
 # Run a message trace and view the results in the Exchange admin center
 
 > [!NOTE]
-> Message trace is available in the Office 365 Security & Compliance Center. For more information, see [Message trace in the Office 365 Security & Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803).
+> Message trace is available in the Microsoft 365 Security Center. For more information, see [Message trace in the Office 365 Security & Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 

@@ -21,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 Log Parser Studio is a utility that allows you to search through and create reports from several types of log files, including those for Internet Information Services (IIS). It builds on top of Log Parser 2.2 and has a full user interface for easy creation and management of related SQL queries.
 
-[Download Log Parser Studio](https://go.microsoft.com/fwlink/p/?linkid=524244) and then review the blog post [Getting Started with Log Parser Studio](https://go.microsoft.com/fwlink/p/?linkid=524243).
+[Download Log Parser Studio](https://go.microsoft.com/fwlink/p/?linkid=524244) and then review [Introducing: Log Parser Studio](https://techcommunity.microsoft.com/t5/exchange-team-blog/introducing-log-parser-studio/ba-p/601131).
 
 Remember that in Exchange 2013, all traffic has to go through IIS. This means analyzing IIS logs is the best way to get a complete picture of the number of connections that are hitting a server, of protocol-specific information about the connections, and of the users who are most impacting performance. Over twenty new reports have been developed for Log Parser Studio, for the purpose of troubleshooting Exchange 2013 performance issues.
 

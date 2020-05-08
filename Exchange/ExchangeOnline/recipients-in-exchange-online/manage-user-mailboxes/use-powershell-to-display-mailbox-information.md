@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Office 365 organization.
+description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -9,6 +9,7 @@ ms.reviewer:
 f1.keywords:
 - NOCSH
 title: Use Exchange Online PowerShell to display Office 365 mailbox information
+search.appverid: MET150
 ms.collection:
 - Ent_O365
 - exchange-online
@@ -20,7 +21,7 @@ manager: serdars
 
 # Use Exchange Online PowerShell to display Office 365 mailbox information
 
-Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Office 365 organization.
+Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 
 To give you an idea of some of the things you can do with PowerShell in Office 365, let's take a look at user mailboxes in Exchange Online PowerShell
 

@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: f171e842-9fdb-4e68-8f3d-53fcd9e43c62
 description: "Learn how to fix email issues for error code 5.7.136 in Exchange Online (the mail user recipient is configured to reject messages from external or unauthenticated senders)."
 ---

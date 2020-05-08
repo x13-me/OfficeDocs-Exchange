@@ -37,7 +37,7 @@ To allow the affected users to connect to their mailboxes by using Outlook on th
 
   - The endpoint for the cloud mailboxes is external (it's not in the domain that users expect).
 
-  - The endpoint requires the domain in the URL (to distinguish between Office 365 business and outlook.com consumer offerings).
+  - The endpoint requires the domain in the URL (to distinguish between Microsoft 365 Apps for business and outlook.com consumer offerings).
 
   - The endpoint causes users to see certificate mismatch warnings.
 

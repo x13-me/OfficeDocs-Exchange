@@ -91,7 +91,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
    |**Department**|The specified value matches the recipient's Department property.|
    |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
 
-    **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
+    > [!IMPORTANT]
+    > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
 
 6. In the **Specify words or phrases** window, type the value in the text box. Click **Add** and then click **OK**.
 
