@@ -96,11 +96,9 @@ The hybrid Modern Authentication architecture has the following technical requir
 
 2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises mail recipient directory with Azure Active Directory, via Azure AD Connect. If you have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, ensure that the following applications are selected:
 
-   - Microsoft 365 Apps for enterprise
+   - Office 365 ProPlus
 
    - Exchange Online
-
-   - Exchange Hybrid write-back
 
    - Azure RMS
 

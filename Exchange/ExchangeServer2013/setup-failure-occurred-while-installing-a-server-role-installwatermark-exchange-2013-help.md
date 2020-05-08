@@ -34,7 +34,7 @@ To address this issue, either reinstall just the failed server role(s), or remov
 2. Run the following command:
 
     ```powershell
-    Setup /roles:<Failed Server Role>
+    Setup /role:<Failed Server Role>
     ```
 
     Select from one or more of the following roles, in a comma-separated list:
@@ -44,10 +44,9 @@ To address this issue, either reinstall just the failed server role(s), or remov
     EdgeTransport (or ET, or E)
 
     > [!NOTE]
-    > The Edge Transport server role cannot coexist on the same computer with any other server role.
-
-    > [!NOTE]
-    > You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
+    > - The Edge Transport server role cannot coexist on the same computer with any other server role.
+    >
+    > - You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
 
     HubTransport (or HT, or H)
 
