@@ -76,7 +76,7 @@ Client applications use the Autodiscover service when the application starts for
 |:-----|:-----|
 |https://longview.contoso.com/autodiscover/autodiscover.xml|SCP results|
 |https://email.contoso.com/autodiscover/autodiscover.xml|SCP results|
-|https://newark.contoso.com/autodiscover/autodiscovfer.xml|SCP results|
+|https://newark.contoso.com/autodiscover/autodiscover.xml|SCP results|
 |https://contoso.com/autodiscover/autodiscover.exc|Derived from email address|
 |https://autodiscover.contoso.com/autodiscover/autodiscover|Derived from email address|
 
