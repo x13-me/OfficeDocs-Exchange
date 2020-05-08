@@ -30,7 +30,7 @@ We recommend that you don't use Outlook's PST export feature to migrate public f
 
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts:
 
-- ` ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with action to fix the issues. You'll run this script on the legacy Exchange server On-Premises.
+- `SourceSideValidations.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with action to fix the issues. You'll run this script on the legacy Exchange server On-Premises.
 
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file. You'll run this script on the legacy Exchange server.
 
