@@ -25,9 +25,9 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 ## Before you begin
 
-- The user with the on-premises primary mailbox must have a user account in your Office 365 organization.
+- The user with the on-premises primary mailbox must have a user account in your Microsoft 365 or Office 365 organization.
 
-- The Office 365 user account must be assigned an Exchange Online Archiving for Exchange Server license. The steps for assigning a license are included in the procedures in Step 1.
+- The user account must be assigned an Exchange Online Archiving for Exchange Server license. The steps for assigning a license are included in the procedures in Step 1.
 
 - After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Office 365. By default, directory synchronization runs once every 30 minutes.
 
@@ -62,7 +62,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
     > [!TIP]
     > In the Microsoft 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
 
-8. After verifying that directory synchronization has occurred after you created the new on-premises mailbox, in the admin center, go to **Users** \> **Active users**, and then select the new Office 365 user account that was created for the new on-premises mailbox.
+8. After verifying that directory synchronization has occurred after you created the new on-premises mailbox, in the admin center, go to **Users** \> **Active users**, and then select the new user account that was created for the new on-premises mailbox.
 
 9. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 

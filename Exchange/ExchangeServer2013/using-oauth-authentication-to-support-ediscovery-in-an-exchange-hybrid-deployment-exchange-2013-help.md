@@ -29,7 +29,7 @@ For step-by-step instructions for configuring OAuth authentication to support eD
 
 OAuth authentication is a server-to-server authentication protocol that allows applications to authenticate to each other. With OAuth authentication, user credentials and passwords are not passed from one computer to another. Instead, authentication and authorization is based on the exchange of security tokens, which grant access to a specific set of resources for a specific amount of time.
 
-OAuth authentication typically involves three parties: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. When using OAuth authentication between an on-premises Exchange organization and Exchange Online, the function of the authorization server is provided by Microsoft Azure Active Directory Access Control Services (ACS) in your Office 365 organization. For example, during a cross-premises eDiscovery search, Azure ACS issues tokens that verify that an administrator or compliance officer from the Exchange on-premises organization is able to access mailboxes in the Exchange Online organization, and vice-versa.
+OAuth authentication typically involves three parties: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. When using OAuth authentication between an on-premises Exchange organization and Exchange Online, the function of the authorization server is provided by Microsoft Azure Active Directory Access Control Services (ACS) in your Microsoft 365 or Office 365 organization. For example, during a cross-premises eDiscovery search, Azure ACS issues tokens that verify that an administrator or compliance officer from the Exchange on-premises organization is able to access mailboxes in the Exchange Online organization, and vice-versa.
 
 ## eDiscovery scenarios in a hybrid deployment
 
@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an Office 365 user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>

@@ -24,7 +24,7 @@ For migrations from an existing on-premises Exchange Server environment, you can
 
 To run the Office 365 migration advisor, you'll need the following:
 
-- An Office 365 subscription plan that includes Exchange Online. To see which plans support Exchange Online, see [Office 365 Plan Options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+- An Office 365 or Microsoft 365 subscription plan that includes Exchange Online. To see which plans support Exchange Online, see [Office 365 Plan Options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 - An Office 365 account with Global administrator permissions.
 
 After you have everything you need, you can open the mail migration advisor by going to [Office 365 mail migration advisor](https://aka.ms/MailSetupAdvisorFromEDA). You'll need to log into your Office 365 tenant when you open this link.

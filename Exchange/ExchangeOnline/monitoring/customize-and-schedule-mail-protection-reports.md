@@ -24,7 +24,7 @@ manager: serdars
 
 As an Exchange Online or Exchange Online Protection (EOP) admin, you probably want to keep an eye on your organization's mail flow, how much spam and malware is being detected, or how often your rules and policies are being matched. By using mail protection reports, you'll get a quick summary of the messages that Office 365 has delivered or rejected based on spam or malware characteristics, rules, or data loss prevention (DLP) policies.
 
-You can choose to either schedule mail protection reports to be sent to your inbox automatically, or you can view them any time in the Office 365 Security & Compliance Center.
+You can choose to either schedule mail protection reports to be sent to your inbox automatically, or you can view them any time in the Microsoft 365 Security Center.
 
 To get started customizing and downloading reports, see the following resources:
 

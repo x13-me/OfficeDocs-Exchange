@@ -55,7 +55,7 @@ The following list contains the migration tasks given in the order in which you 
 In this task, you'll first verify to Office 365 that you own the domain you used for your G Suite accounts.
 
 > [!NOTE]
-> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain.
+> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 or Microsoft 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain.
 
 Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
 

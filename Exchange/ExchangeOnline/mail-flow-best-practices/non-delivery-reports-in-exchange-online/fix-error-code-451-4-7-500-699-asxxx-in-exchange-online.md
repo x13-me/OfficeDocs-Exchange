@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 51356082-9fef-4639-a18a-fc7c5beae0c8
 description: "Learn how to fix email issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online (IP throttling)."
 ---
@@ -52,7 +53,7 @@ To remove throttling for these messages, you need to configure a connector:
 
 1. If you're trying to relay outbound email from your on-premises email server through Office 365, you need to configure a connector from your email server to Office 365. For more information, see [Set up connectors to route mail between Office 365 and your own email servers](https://go.microsoft.com/fwlink/p/?LinkId=785273).
 
-2. If inbound email to your Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](https://go.microsoft.com/fwlink/p/?LinkId=785272).
+2. If inbound email to your Microsoft 365 or Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](https://go.microsoft.com/fwlink/p/?LinkId=785272).
 
 After you set up a connector, you can [validate your connectors in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=785240).
 

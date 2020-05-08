@@ -402,7 +402,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote
 Once that is done, you can complete the public folder migration by running the following command:
 
 ```powershell
-Complete-MigrationBatch PublicFolderMigration
+Complete-MigrationBatch PFMigration
 ```
 
 Or, in EAC, you can complete the migration by clicking **Complete this migration batch**.

@@ -24,9 +24,9 @@ localization_priority: Priority
 
 ---
 
-# How to set up a multifunction device or application to send email using Office 365
+# How to set up a multifunction device or application to send email using Office 365 and Microsoft 365
 
-Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
+Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Office 365. For example:
 
@@ -156,7 +156,8 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.
 
-   **Note**: Do NOT use an IP address for the Office 365 server connection, as IP addresses are not supported.
+   > [!NOTE]
+   > Do NOT use an IP address for the Office 365 server connection, as IP addresses are not supported.
 
 5. Now that you are done configuring your device settings, go to your domain registrar's website to update your DNS records. Edit your sender policy framework (SPF) record. In the entry, include the IP address that you noted in step 1. The finished string looks similar to this:
 
@@ -278,6 +279,12 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 9. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
 
 10. To test the configuration, send a test email from your device or application, and confirm that it was received by the recipient.
+
+### Configure a certificate-based connector to relay email through Microsoft 365 or Office 365
+
+If your devices or applications are capable of using a certificate for mail flow, you can configure a certificate-based connector to relay email through Microsoft 365 or Office 365.
+
+To do this, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](https://docs.microsoft.com/exchange/troubleshoot/connectors/office-365-notice).
 
 ### How Office 365 SMTP relay works
 
