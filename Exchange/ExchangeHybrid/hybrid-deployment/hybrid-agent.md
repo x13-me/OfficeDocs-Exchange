@@ -29,7 +29,7 @@ The agent install and the configuration of Hybrid via the Hybrid Configuration w
 
 The Hybrid Agent has multiple methods of installation with different requirements. In all cases, the core computer requirements are the same:
 
-- Windows Server 2012 R2 or 2016 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
+- Windows Server 2012 R2, 2016, or 2019 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
 
   - TLS 1.2 enabled.
 
