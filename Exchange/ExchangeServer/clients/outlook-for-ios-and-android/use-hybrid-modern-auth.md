@@ -442,7 +442,7 @@ You can use the following Exchange Online cmdlets to see statistical information
 1. First, obtain the location of the synchronized on-premises mailbox in the tenant, specifying the on-premises mailbox's identity (for example, jane@contoso.com).
 
     ```PowerShell
-    $m = get-mailboxlocation <identity>
+    $m = Get-MailboxLocation <identity>
     ```
 
 2. To see mailbox-related statistics, use
