@@ -454,7 +454,7 @@ You can use the following Exchange Online cmdlets to see statistical information
 3. To see mobile device statistics (like seeing when Outlook for iOS and Android last synchronized to Exchange Online), use
 
     ```PowerShell
-    get-mobiledevicestatistics -Mailbox $m.id
+    Get-MobileDeviceStatistics -Mailbox $m.id
     ```
 
 For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/devices/get-mobiledevicestatistics?view=exchange-ps).
