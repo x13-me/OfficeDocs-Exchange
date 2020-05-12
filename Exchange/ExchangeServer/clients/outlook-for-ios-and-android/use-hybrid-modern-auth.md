@@ -447,7 +447,7 @@ You can use the following Exchange Online cmdlets to see statistical information
 
 2. To see mailbox-related statistics, use
 
-    ```powershell
+    ```PowerShell
     get-mailboxstatistics $m.id
     ```
 
