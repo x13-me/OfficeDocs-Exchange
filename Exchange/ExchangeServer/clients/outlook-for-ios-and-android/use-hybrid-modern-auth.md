@@ -435,6 +435,30 @@ Set-AuthServer EvoSts -RefreshAuthMetadata
 
 You can also create a scheduled task that executes the above command every 24 hours.
 
+### Exchange Online statistics
+
+You can use the following Exchange Online cmdlets to see statistical information for each synchronized on-premises mailbox.
+
+1. First, obtain the location of the synchronized on-premises mailbox in the tenant, specifying the on-premises mailbox's identity (for example, jane@contoso.com).
+
+    ```powershell
+    $m = get-mailboxlocation <identity>
+    ```
+
+2. To see mailbox-related statistics, use
+
+    ```powershell
+    get-mailboxstatistics $m.id
+    ```
+
+3. To see mobile device statistics (like seeing when Outlook for iOS and Android last synchronized to Exchange Online), use
+
+    ```powershell
+    get-mobiledevicestatistics -Mailbox $m.id
+    ```
+
+For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/devices/get-mobiledevicestatistics?view=exchange-ps).
+
 ### Other issues
 
 There are other issues that may prevent hybrid Modern Authentication from functioning correctly. For more information, see the troubleshooting section in [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Announcing-Hybrid-Modern-Authentication-for-Exchange-On-Premises/ba-p/607476).
