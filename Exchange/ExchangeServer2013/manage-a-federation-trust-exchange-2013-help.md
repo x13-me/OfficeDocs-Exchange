@@ -147,6 +147,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\))
 
+>[!NOTE]
+>There are additional considerations if the tenant is hosted in the Office 365 U.S. Government GCC High or DoD environment. In these environments, you must run the **Set-FederationTrust** cmdlet in the on-premises Exchange environment with a different value for the *MetadataUrl* parameter. See [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust) for more information.
+
 ## How do you know this worked?
 
 The successful completion of the **Sharing-enabled domains** wizard is your first indication that you configured the federation trust as expected.
