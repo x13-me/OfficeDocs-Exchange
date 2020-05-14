@@ -83,7 +83,7 @@ The following table describes briefly the changes in services after configuring 
 
 Exchange 2013 CU1 or later enables hybrid deployment functionality with the Hybrid Configuration wizard (HCW). You can use any Exchange 2013 CU1 or later media when installing additional Exchange 2013 servers.
 
-For information on how to download the latest version of Exchange Server, see [Updates for Exchange](https://technet.microsoft.com/Library/jj907309).
+For information on how to download the latest version of Exchange Server, see [Updates for Exchange Server](https://docs.microsoft.com/Exchange/new-features/updates).
 
 > [!IMPORTANT]
 > You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](https://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.

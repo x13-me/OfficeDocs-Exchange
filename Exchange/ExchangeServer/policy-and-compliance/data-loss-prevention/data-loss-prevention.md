@@ -69,7 +69,7 @@ To make it easy for you to use rules that look for sensitive information, Exchan
 ## Detecting sensitive form data with Document Fingerprinting
 <a name="dlp_fingerprinting"> </a>
 
-Exchange lets you use [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange) to easily create a sensitive information type that's based on a standard form. To learn how to protect form data, see [Protect Form Data with Document Fingerprinting](https://technet.microsoft.com/library/110c839b-7693-42f6-aa5d-58ce64f4c357.aspx).
+Exchange lets you use [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange) to easily create a sensitive information type that's based on a standard form.
 
 ## Policy Tips notify users about sensitive content expectations
 <a name="dlp_tips"> </a>
