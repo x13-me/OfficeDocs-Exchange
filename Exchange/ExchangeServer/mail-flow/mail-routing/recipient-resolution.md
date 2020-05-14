@@ -219,7 +219,7 @@ Certain types of messages that are sent by authenticated senders are exempt from
 
 - **Messages sent by the external postmaster address**: These messages include DSNs and NDRs, and other system-generated messages that are sent to external message senders. For more information about the external postmaster address, see [Managing the External Postmaster Address](https://docs.microsoft.com/exchange/configure-the-external-postmaster-address-exchange-2013-help).
 
-Exchange blocks certain types of messages that are sent to external domains (for example, internal OOF messages, automatic replies, and meeting forward notifications). You configure these settings in remote domains (the default remote domain, or remote domains for specific external domains). For more information, see [Managing Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Exchange blocks certain types of messages that are sent to external domains (for example, internal OOF messages, automatic replies, and meeting forward notifications). You configure these settings in remote domains (the default remote domain, or remote domains for specific external domains). For more information, see [Managing Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help).
 
 ## Bifurcation and controlling recipient expansion
 

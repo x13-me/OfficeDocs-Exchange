@@ -160,7 +160,7 @@ The procedure below lets you choose whether you want users to use the same URL o
 
 Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
 
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help).
 
 ### Configure internal and external URLs to be the same
 
