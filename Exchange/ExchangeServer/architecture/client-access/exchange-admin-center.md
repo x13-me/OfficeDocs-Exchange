@@ -140,7 +140,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md)
 
-  - [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
+  - [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help)
 
   - [Email address policies in Exchange Server](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
 
@@ -178,7 +178,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage database availability groups](../../high-availability/manage-ha/manage-dags.md)
 
-  - [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
+  - [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help)
 
   - [Certificate procedures in Exchange Server](certificate-procedures.md)
 

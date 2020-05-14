@@ -42,7 +42,7 @@ For more information about content conversion in Exchange, see [Content conversi
 
 ## Remote domain settings
 
-Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help).
 
 When you configure message encoding options for a remote domain, the settings are applied to all messages that are sent to recipients in that domain. Some settings are available in the Exchange admin center (EAC), but most are only available in the Exchange Management Shell. The message encoding settings are described in this table:
 
