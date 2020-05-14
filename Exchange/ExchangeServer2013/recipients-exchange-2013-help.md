@@ -361,7 +361,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to add information about a recipient by using custom attributes.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/bb124268(v=exchg.150)">Filters in recipient Shell commands</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters">Filters in recipient Shell commands</a></p></td>
 <td><p>Learn how to use precanned or custom filters with commands to filter a set of recipients.</p></td>
 </tr>
 <tr class="even">

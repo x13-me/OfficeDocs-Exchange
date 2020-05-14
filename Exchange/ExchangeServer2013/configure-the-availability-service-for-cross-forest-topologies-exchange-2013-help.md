@@ -76,11 +76,11 @@ For detailed information about syntax and parameters, see the following topics:
 
 - [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\))
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission)
 
-- [Add-AvailabilityAddressSpace](https://technet.microsoft.com/library/bb124122\(v=exchg.150\))
+- [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Add-AvailabilityAddressSpace)
 
-- [Set-AvailabilityConfig](https://technet.microsoft.com/library/bb124103\(v=exchg.150\))
+- [Set-AvailabilityConfig](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Set-AvailabilityConfig)
 
 ## Use the Shell to configure organization-wide free/busy information in an untrusted cross-forest topology
 

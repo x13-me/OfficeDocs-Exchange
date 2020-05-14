@@ -211,13 +211,13 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
 
-- [Get-CASMailbox](https://technet.microsoft.com/library/bb124754\(v=exchg.150\))
+- [Get-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/Get-CASMailbox)
 
 - [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\))
 
 - [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\))
 
-- [Set-CASMailbox](https://technet.microsoft.com/library/bb125264\(v=exchg.150\))
+- [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/Set-CASMailbox)
 
 - [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
 

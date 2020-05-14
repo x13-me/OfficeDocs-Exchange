@@ -258,4 +258,4 @@ In Exchange 2013, creating and managing archive mailboxes is integrated with com
 
 - **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)) cmdlets.
 
-- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.
+- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Test-ArchiveConnectivity) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.

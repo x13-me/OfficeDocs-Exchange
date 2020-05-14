@@ -27,7 +27,7 @@ mtps_version: v=EXCHG.150
 
 [Structured data](https://technet.microsoft.com/library/aa996386\(v=exchg.150\))
 
-[Syntax](https://technet.microsoft.com/library/bb123552\(v=exchg.150\))
+[Syntax](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-cmdlet-syntax)
 
 ## Running commands
 

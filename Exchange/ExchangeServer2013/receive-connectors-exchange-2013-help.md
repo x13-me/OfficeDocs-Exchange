@@ -89,9 +89,9 @@ The type determines the default permission groups that are assigned to the Recei
 
 Each type is appropriate for a specific connection scenario. Select the type that has the default settings most applicable to the configuration that you want. You can modify permissions by using the **Add-ADPermission** and **Remove-ADPermission** cmdlets. For more information, see the following topics:
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/aa996048\(v=exchg.150\))
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Remove-ADPermission)
 
 ## Receive connector permissions
 

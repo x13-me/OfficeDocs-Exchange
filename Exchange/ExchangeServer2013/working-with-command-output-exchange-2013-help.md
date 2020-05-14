@@ -241,7 +241,7 @@ In this example, the output from the **Get-Childitem** cmdlet is piped to the **
 
 For more information about pipelines, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
-For more information about the syntax used in the previous examples, see [Syntax](https://technet.microsoft.com/library/bb123552\(v=exchg.150\)).
+For more information about the syntax used in the previous examples, see [Syntax](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-cmdlet-syntax).
 
 ## Viewing data in Internet Explorer
 

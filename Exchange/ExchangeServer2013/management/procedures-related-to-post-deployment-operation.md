@@ -128,14 +128,14 @@ You also may need to modify specific thresholds for various monitor properties. 
 
 See the following topics for more information about the cmdlets you can use to configure monitoring overrides.
 
-- [Add-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272114)
+- [Add-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Add-GlobalMonitoringOverride)
 
-- [Get-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272115)
+- [Get-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-GlobalMonitoringOverride5)
 
-- [Remove-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/?linkid=272116)
+- [Remove-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Remove-GlobalMonitoringOverride)
 
-- [Add-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272117)
+- [Add-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Add-ServerMonitoringOverride)
 
-- [Get-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272118)
+- [Get-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-ServerMonitoringOverride)
 
-- [Get-MonitoringItemIdentity](https://technet.microsoft.com/library/jj218668\(v=exchg.150\))
+- [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-monitoringitemidentity)

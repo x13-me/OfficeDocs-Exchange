@@ -140,4 +140,4 @@ To help troubleshoot this issue, perform the following:
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)

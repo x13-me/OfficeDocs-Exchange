@@ -57,7 +57,7 @@ In the Exchange Management Shell, run the following command:
 Install-WindowsFeature Web-Client-Auth
 ```
 
-For detailed syntax and parameter information, see [Install-WindowsFeature](https://go.microsoft.com/fwlink/p/?linkid=323998).
+For detailed syntax and parameter information, see [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature).
 
 ## Step 2: Use IIS Manager to enable Active Directory Client Certificate Authentication for the Exchange server
 

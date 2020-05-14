@@ -118,4 +118,4 @@ To resolve this issue, review the Windows Application event log on the server th
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)

@@ -61,7 +61,7 @@ If the server will only be down for a short time, and you don't want to permanen
 Remove-RPCClientAccess -Server Server.Contoso.com
 ```
 
-After the RPC Client Access service has been removed, the server won't be returned as an array member by [Get-ClientAccessArray](https://technet.microsoft.com/library/dd297976\(v=exchg.150\)) and the script won't target it. As soon as the server is functional again, you can re-add the RPC Client Access service by using the **New-RpcClientAccess** cmdlet. When the RPC Client Access service is re-added, be sure to restart the Microsoft Exchange Address Book service on the affected server.
+After the RPC Client Access service has been removed, the server won't be returned as an array member by [Get-ClientAccessArray](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Get-ClientAccessArray) and the script won't target it. As soon as the server is functional again, you can re-add the RPC Client Access service by using the **New-RpcClientAccess** cmdlet. When the RPC Client Access service is re-added, be sure to restart the Microsoft Exchange Address Book service on the affected server.
 
 > [!WARNING]
 > Before you remove the RPC Client Access service from a server, see the topic <A href="https://technet.microsoft.com/library/dd298151(v=exchg.150)">Remove-RpcClientAccess</A>.

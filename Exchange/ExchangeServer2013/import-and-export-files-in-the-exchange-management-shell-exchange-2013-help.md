@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Microsoft Exchange Server 2013 uses Windows PowerShell command-line interface remoting to establish a connection between the server or workstation from which you're administering Exchange and the server running Exchange 2013 that you're administering. In Exchange 2013, this is called remote Exchange Management Shell, or remote Shell. Even if you're administering the local Exchange 2013 server, remote Shell is used to make the connection. For more information about local and remote Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\)).
+Microsoft Exchange Server 2013 uses Windows PowerShell command-line interface remoting to establish a connection between the server or workstation from which you're administering Exchange and the server running Exchange 2013 that you're administering. In Exchange 2013, this is called remote Exchange Management Shell, or remote Shell. Even if you're administering the local Exchange 2013 server, remote Shell is used to make the connection. For more information about local and remote Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
 
 How you import and export files to and from an Exchange server in Exchange 2013 is different than how you might have done it in Exchange Server 2007. This is due to the use of remote Shell in Exchange 2013. This topic discusses why this new process is required and how to import and export files between a local server or workstation and an Exchange 2013 server.
 

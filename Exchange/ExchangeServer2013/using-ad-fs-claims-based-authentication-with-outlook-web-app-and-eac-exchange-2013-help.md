@@ -114,7 +114,7 @@ Additional information you might want to know
 
 - You need to be assigned permissions for managing EAC. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -259,7 +259,7 @@ Import-Module ADFS
 Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
 ```
 
-For details and syntax, see [Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704).
+For details and syntax, see [Install-AdfsFarm](https://docs.microsoft.com/powershell/module/adfs/install-adfsfarm).
 
 To verify the installation: On the AD FS server, open your web browser, and then browse to the URL of the federation metadata (for example, **https://adfs.contoso.com/federationmetadata/2007-06/federationmetadata.xml**).
 

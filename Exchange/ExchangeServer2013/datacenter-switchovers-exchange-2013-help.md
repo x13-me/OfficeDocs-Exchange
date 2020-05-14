@@ -88,7 +88,7 @@ When the DAG is in DAC mode, the steps to complete activation of the mailbox ser
 
    1. Clear the setting that blocks activation. This will make the system return to its default behavior, which is to activate any available copy.
 
-   2. Leave the setting unchanged and use the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)) cmdlet to complete the database activation in the second datacenter. To complete this step using the **Move-ActiveMailboxDatabase** cmdlet when activation blocked is set, you must explicitly identify the target of the move.
+   2. Leave the setting unchanged and use the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Move-ActiveMailboxDatabase) cmdlet to complete the database activation in the second datacenter. To complete this step using the **Move-ActiveMailboxDatabase** cmdlet when activation blocked is set, you must explicitly identify the target of the move.
 
 4. The last step is to review all error and warning messages from the tasks. Any indicated warnings should be followed up and corrected. The task design model for these commands is to only fail if they can't achieve the fundamental goal of their design. For example, the **Restore-DatabaseAvailabilityGroup** cmdlet will fail if it can't shrink the quorum of the DAG to allow a server in the second datacenter to be restarted for servicing without causing a quorum outage. However, each task's output is also used to identify the issues that require administrator follow-up. You're strongly encouraged to save all task output and review it for follow-up actions.
 
@@ -213,7 +213,7 @@ The Mailbox server role should be the first role that's switched back to the pri
       > [!IMPORTANT]
       > Don't proceed to the next step until the Client Access server URLs have been moved and the DNS TTL and cache entries have expired. Activating the databases in the primary datacenter prior to moving the Client Access server URLs to the primary datacenter will result in an invalid configuration (for example, a mounted database that has no Client Access servers in its Active Directory site).
 
-   4. Because each database in the primary datacenter is in a healthy state, it can be activated in the primary datacenter by performing database switchovers. This is accomplished by using the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)) cmdlet for each database that will be activated.
+   4. Because each database in the primary datacenter is in a healthy state, it can be activated in the primary datacenter by performing database switchovers. This is accomplished by using the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Move-ActiveMailboxDatabase) cmdlet for each database that will be activated.
 
    5. After each database is moved to the primary datacenter, it can be mounted by using the [Mount-Database](https://technet.microsoft.com/library/aa998871\(v=exchg.150\)) cmdlet.
 

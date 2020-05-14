@@ -64,7 +64,7 @@ For additional management tasks related to Messaging Records Management, see [Me
 2. Run the Export-RetentionTags.ps1 script to export retention tags to an XML file.
 
    > [!IMPORTANT]
-   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>.
+   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell">Connect to Exchange Online using remote PowerShell</A>.
 
    ```powershell
    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
@@ -89,7 +89,7 @@ To verify that you have successfully exported retention tags and retention polic
 2. Run the Import-RetentionTags.ps1 script to import retention tags from a previously exported XML file.
 
    > [!IMPORTANT]
-   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://technet.microsoft.com/library/jj984289(v=exchg.150)">Connect to Exchange Online using remote PowerShell</A>. <br>/<br/> When running this script against Exchange Online, you may be prompted to confirm that you want to run software from an untrusted publisher. Verify that the name of the publisher appears as <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE>, and then click <STRONG>R</STRONG> to allow the script to be run once or <STRONG>A</STRONG> to always run.
+   > If you're importing or exporting retention tags and retention policies to Exchange Online, you must connect your Windows PowerShell session to Exchange Online. For details, see <A href="https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell">Connect to Exchange Online using remote PowerShell</A>. <br>/<br/> When running this script against Exchange Online, you may be prompted to confirm that you want to run software from an untrusted publisher. Verify that the name of the publisher appears as <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE>, and then click <STRONG>R</STRONG> to allow the script to be run once or <STRONG>A</STRONG> to always run.
 
    ```powershell
    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"

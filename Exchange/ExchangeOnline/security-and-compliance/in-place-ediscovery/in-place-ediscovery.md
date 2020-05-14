@@ -319,7 +319,7 @@ The following table contains links to topics that will help you learn about and 
 |[Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)|Learn how to copy the results of an eDiscovery search to a discovery mailbox.|
 |[Export eDiscovery search results to a PST file](export-search-results.md)|Learn how to export the results of an eDiscovery search to a PST file.|
 |[Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md)|Learn how to use custom management scopes to limit the mailboxes that a discovery manager can search.|
-|[Remove an In-Place eDiscovery Search](https://technet.microsoft.com/library/78461a78-1255-4a26-9d36-c6b8eb82a4f9.aspx)|Learn how to delete an eDiscovery search.|
+|[Create and run queries in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center)|Learn how to delete an eDiscovery search.|
 |[Search and Delete Messages](https://technet.microsoft.com/library/8c36bb03-e716-4fdd-9958-4aa7a2a1db42.aspx)|Learn how to use the **Search-Mailbox** cmdlet to search for and then delete email messages.|
 |[Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md)|Use this process to reduce the size of a discovery mailbox that's larger than 50 GB.|
 |[Delete and re-create the default discovery mailbox in Exchange](delete-and-re-create-default-discovery-mailbox.md)|Learn how to delete the default discovery mailbox, re-create it, and then reassign permissions to it. Use this procedure if this mailbox has exceeded the 50 GB limit and you don't need the search results.|

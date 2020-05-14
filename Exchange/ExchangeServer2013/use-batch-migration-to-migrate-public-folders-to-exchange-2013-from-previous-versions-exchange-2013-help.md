@@ -70,7 +70,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://go.microsoft.com/fwlink/p/?linkid=81779).
 
-- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://support.microsoft.com/help/968930).
 
 - Before you migrate, you should consider the [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 
@@ -163,19 +163,19 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://technet.microsoft.com/library/aa998596\(v=exchg.150\))
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://technet.microsoft.com/library/aa998663\(v=exchg.150\))
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/bb124365\(v=exchg.150\))
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
+- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183213)
+- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2013 server
 

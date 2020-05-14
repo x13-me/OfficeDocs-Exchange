@@ -225,6 +225,6 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Set-MailboxServer](https://technet.microsoft.com/library/aa998651\(v=exchg.150\))
 
-- [Set-ClientAccessServer](https://technet.microsoft.com/library/bb125157\(v=exchg.150\))
+- [Set-ClientAccessServer](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-ClientAccessServer)
 
 - [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\))

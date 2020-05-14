@@ -93,7 +93,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
         > [!NOTE]
         > At this point, continuing to perform this procedure on the existing volume would incur a copy on write performance penalty. If this isn't desirable, you can copy the database and log files to another volume to perform the recovery.
 
-2. This example activates the lagged mailbox database copy using the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)) cmdlet with the *SkipLagChecks* parameter.
+2. This example activates the lagged mailbox database copy using the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Move-ActiveMailboxDatabase) cmdlet with the *SkipLagChecks* parameter.
 
     ```powershell
     Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
@@ -124,7 +124,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 3. On the server hosting the active copy of database, either delete the log files for the lagged copy being activated from the active copy, or stop the Microsoft Exchange Replication service.
 
-4. Perform a database switchover and activate the lagged copy. This example activates the database by using the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)) cmdlet with several parameters.
+4. Perform a database switchover and activate the lagged copy. This example activates the database by using the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Move-ActiveMailboxDatabase) cmdlet with several parameters.
 
     ```powershell
     Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks

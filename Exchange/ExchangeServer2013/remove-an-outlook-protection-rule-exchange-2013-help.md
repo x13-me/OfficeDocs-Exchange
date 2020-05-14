@@ -52,8 +52,8 @@ This example removes all Outlook protection rules in the Exchange organization.
 Get-OutlookProtectionRule | Remove-OutlookProtectionRule
 ```
 
-For detailed syntax and parameter information, see [Get-OutlookProtectionRule](https://technet.microsoft.com/library/dd298004\(v=exchg.150\)) and [Remove-OutlookProtectionRule](https://technet.microsoft.com/library/dd297961\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule) and [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Remove-OutlookProtectionRule).
 
 ## How do you know this worked?
 
-To verify that you have successfully removed an Outlook protection rule, use the [Get-OutlookProtectionRule](https://technet.microsoft.com/library/dd298004\(v=exchg.150\)) cmdlet to retrieve Outlook protection rules. For an example of how to retrieve Outlook protection rules, see [Examples](https://technet.microsoft.com/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
+To verify that you have successfully removed an Outlook protection rule, use the [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule) cmdlet to retrieve Outlook protection rules. For an example of how to retrieve Outlook protection rules, see [Examples](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule#examples).

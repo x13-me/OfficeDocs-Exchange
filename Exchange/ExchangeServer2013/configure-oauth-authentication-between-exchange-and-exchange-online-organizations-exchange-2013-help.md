@@ -238,7 +238,7 @@ To verify that your on-premises Exchange organization can successfully connect t
 Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
-To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\)) to connect to your Exchange Online organization and run the following command:
+To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to connect to your Exchange Online organization and run the following command:
 
 ```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List

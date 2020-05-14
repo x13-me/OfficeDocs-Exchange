@@ -206,7 +206,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 9. Choose **New** to create the migration endpoint.
 
-   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://go.microsoft.com/fwlink/p/?linkid=534752).
+   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Test-MigrationServerAvailability).
 
 ## Step 3: Create the cutover migration batch
 

@@ -59,7 +59,7 @@ When you install a Client Access server in Exchange 2013, a default virtual dire
 
 Additionally, a new Active Directory object named the service connection point (SCP) is created on the server where you install the Client Access server.
 
-The SCP object contains the authoritative list of Autodiscover service URLs for the forest. You can use the **Set-ClientAccessServer** cmdlet to update the SCP object. For more information, see [Set-ClientAccessServer](https://technet.microsoft.com/library/bb125157\(v=exchg.150\)).
+The SCP object contains the authoritative list of Autodiscover service URLs for the forest. You can use the **Set-ClientAccessServer** cmdlet to update the SCP object. For more information, see [Set-ClientAccessServer](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-ClientAccessServer).
 
 > [!IMPORTANT]
 > Before you run the <STRONG>Set-ClientAccessServer</STRONG> cmdlet, make sure the Authenticated Users account on the Client Access server has Read permissions for the SCP object. If users don't have the correct permissions, they can't search for and read items.

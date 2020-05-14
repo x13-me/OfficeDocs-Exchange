@@ -276,7 +276,7 @@ To verify the overall health of the DAG, the administrator runs the [Test-Replic
 
 To verify replication and replay activity, the administrator runs the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\)) cmdlet. This cmdlet can provide real-time status information about a specific mailbox database copy or for all mailbox database copies on a specific server. For more information about monitoring the health and status of replicated databases in a DAG, see [Monitoring database availability groups](monitoring-database-availability-groups-exchange-2013-help.md).
 
-To verify that switchovers work as expected, the administrator uses the [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)) cmdlet to perform a series of database switchovers and server switchovers. When these tasks have completed successfully, the administrator uses the same cmdlet to move the active database copies back to their original locations.
+To verify that switchovers work as expected, the administrator uses the [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Move-ActiveMailboxDatabase) cmdlet to perform a series of database switchovers and server switchovers. When these tasks have completed successfully, the administrator uses the same cmdlet to move the active database copies back to their original locations.
 
 To verify the expected behaviors in various failure scenarios, the administrator performs several tasks that either simulate failures or actually cause failures to occur. For example, the administrator might:
 
