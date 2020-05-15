@@ -23,7 +23,7 @@ Most conditions and exceptions have one property that requires one or more value
 
 For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) or [Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## Conditions and exceptions for transport rules on Mailbox servers
 
@@ -1169,6 +1169,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) for Exchange Online
-
-[Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)) for Exchange Online Protection
+[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)

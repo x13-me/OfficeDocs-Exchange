@@ -108,7 +108,7 @@ The message tracking log stores each message event on a single line in the log. 
 |**tenant-id**|This field isn't used in on-premises Exchange organizations.|
 |**original-client-ip**|The IPv4 or IPv6 address of the original client.|
 |**original-server-ip**|The IPv4 or IPv6 address of the original server.|
-|**custom-data**|This field contains data related to specific event types. For example, the Transport Rule agent uses this field to record the GUID of the mail flow rule (also known as a transport rule) or DLP policy that acted on the message. For more information about these Transport Rule agent values, see the "Data logging" section in the [DLP Policy Detection Management](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) topic,|
+|**custom-data**|This field contains data related to specific event types. For example, the Transport Rule agent uses this field to record the GUID of the mail flow rule (also known as a transport rule) or DLP policy that acted on the message. For more information, see [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help).|
 |**transport-traffic-type**|In on-premises Exchange, this field is blank or has the value `Email`.|
 |**log-id**|A unique identifier for a row in the in the message tracking log. This field isn't important in on-premises Exchange organizations.|
 |**schema-version**|Version number of the Exchange server that created the entry in the message tracking log. The value uses the format `15.01.nnnn.nnn`.|

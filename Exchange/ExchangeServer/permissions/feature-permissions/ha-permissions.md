@@ -37,7 +37,7 @@ If you want to delegate the ability to manage a feature to another user, see [De
 
 You can use the features in the following table to add, remove, and configure settings for database availability groups (DAGs).
 
-Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://technet.microsoft.com/library/dd351130.aspx).
+Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://docs.microsoft.com/exchange/view-only-organization-management-exchange-2013-help).
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|

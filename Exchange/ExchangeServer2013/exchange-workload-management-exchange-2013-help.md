@@ -68,19 +68,19 @@ You manage throttling settings with the following cmdlets, which were introduced
 
 Manage throttling policies
 
-  - [Get-ThrottlingPolicy](https://technet.microsoft.com/library/dd351264\(v=exchg.150\))
+  - [Get-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-ThrottlingPolicy)
 
-  - [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\))
+  - [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/New-ThrottlingPolicy)
 
-  - [Remove-ThrottlingPolicy](https://technet.microsoft.com/library/dd351178\(v=exchg.150\))
+  - [Remove-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Remove-ThrottlingPolicy)
 
-  - [Set-ThrottlingPolicy](https://technet.microsoft.com/library/dd298094\(v=exchg.150\))
+  - [Set-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Set-ThrottlingPolicy)
 
 Assign throttling policies
 
-  - [Get-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459241\(v=exchg.150\))
+  - [Get-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-ThrottlingPolicyAssociation)
 
-  - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231\(v=exchg.150\))
+  - [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Set-ThrottlingPolicyAssociation)
 
 > [!NOTE]
 > The <STRONG>&#42;-ResourcePolicy</STRONG>, <STRONG>&#42;-WorkloadManagementPolicy</STRONG> and <STRONG>&#42;-WorkloadPolicy</STRONG> system workload management cmdlets have been deprecated. System workload management settings should be customized only under the direction of Microsoft Customer Service and Support.

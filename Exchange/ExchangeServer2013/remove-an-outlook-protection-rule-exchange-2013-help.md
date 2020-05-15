@@ -42,7 +42,7 @@ This example removes the Outlook protection rule OPR-DG-Finance.
 Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
 ```
 
-For detailed syntax and parameter information, see [Remove-OutlookProtectionRule](https://technet.microsoft.com/library/dd297961\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Remove-OutlookProtectionRule).
 
 ## Use the Shell to remove all Outlook protection rules
 

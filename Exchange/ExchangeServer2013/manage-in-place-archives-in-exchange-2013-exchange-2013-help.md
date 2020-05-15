@@ -77,7 +77,7 @@ $password = Read-Host "Enter password" -AsSecureString
 New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton"
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/New-Mailbox).
 
 ## How do you know this worked?
 
@@ -124,7 +124,7 @@ This example retrieves mailboxes in database DB01 that don't have an on-premises
 Get-Mailbox -Database DB01 -Filter "ArchiveGuid -Eq `$null -AND ArchiveDomain -eq `$null -AND Name -NotLike 'DiscoverySearchMailbox*'" | Enable-Mailbox -Archive
 ```
 
-For detailed syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Enable-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox).
 
 ## How do you know this worked?
 
@@ -147,7 +147,7 @@ You may want to disable a user's archive for troubleshooting purposes or if you'
 > [!IMPORTANT]
 > Disabling the archive will remove the archive from the mailbox and mark it in the mailbox database for deletion.
 
-If you want to reconnect the on-premises archive to that mailbox, you can use the [Connect-Mailbox](https://technet.microsoft.com/library/aa997878\(v=exchg.150\)) cmdlet with the *Archive* parameter.
+If you want to reconnect the on-premises archive to that mailbox, you can use the [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Connect-Mailbox) cmdlet with the *Archive* parameter.
 
 ## Use the EAC
 
@@ -168,7 +168,7 @@ This example disables the archive for Chris Ashton's mailbox. It doesn't disable
 Disable-Mailbox -Identity "Chris Ashton" -Archive
 ```
 
-For detailed syntax and parameter information, see [Disable-Mailbox](https://technet.microsoft.com/library/aa997210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Disable-Mailbox).
 
 ## How do you know this worked?
 
@@ -241,11 +241,11 @@ When you disable an archive mailbox, it becomes disconnected. A disconnected arc
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\))
+- [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/Get-MailboxDatabase)
 
-- [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612\(v=exchg.150\))
+- [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxStatistics)
 
-- [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\))
+- [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Enable-Mailbox)
 
 ## How do you know this worked?
 

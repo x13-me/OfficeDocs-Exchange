@@ -74,7 +74,7 @@ Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright 
 
 For detailed information about syntax and parameters, see the following topics:
 
-- [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\))
+- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/Get-MailboxServer)
 
 - [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission)
 

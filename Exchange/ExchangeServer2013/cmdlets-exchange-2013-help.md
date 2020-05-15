@@ -56,7 +56,7 @@ All cmdlets in the Shell are presented in verb-noun pairs. The verb-noun pair is
 <td><p><strong>Get</strong> cmdlets retrieve information about a specific Exchange object.</p>
 
 > [!NOTE]
-> Most <STRONG>Get</STRONG> cmdlets only return summary information when you run them. To tell the <STRONG>Get</STRONG> cmdlet to return verbose information when you run a command, pipe the command to the <STRONG>Format-List</STRONG> cmdlet. For more information about the <STRONG>Format-List</STRONG> command, see <A href="working-with-command-output-exchange-2013-help.md">Working with command output</A>. For more information about pipelining, see <A href="https://technet.microsoft.com/library/aa998260(v=exchg.150)">Pipelining</A>.
+> Most <STRONG>Get</STRONG> cmdlets only return summary information when you run them. To tell the <STRONG>Get</STRONG> cmdlet to return verbose information when you run a command, pipe the command to the <STRONG>Format-List</STRONG> cmdlet. For more information about the <STRONG>Format-List</STRONG> command, see <A href="working-with-command-output-exchange-2013-help.md">Working with command output</A>. For more information about pipelining, see <A href="https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines">Pipelining</A>.
 
 </td>
 </tr>

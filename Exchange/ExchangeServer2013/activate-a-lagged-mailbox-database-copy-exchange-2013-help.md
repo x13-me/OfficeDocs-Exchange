@@ -44,7 +44,7 @@ Looking for other information related to lagged mailbox database copies? Check o
 > [!NOTE]
 > You can't use the EAC to activate a lagged mailbox database copy to a specific point in time. Instead, you perform a series of steps using the Shell and the command line.
 
-1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd351074\(v=exchg.150\)) cmdlet.
+1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Suspend-MailboxDatabaseCopy) cmdlet.
 
    ```powershell
    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
@@ -76,13 +76,13 @@ Looking for other information related to lagged mailbox database copies? Check o
    Resume-MailboxDatabaseCopy DB1\EX3
    ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd351074\(v=exchg.150\)) or [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335220\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Suspend-MailboxDatabaseCopy) or [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Resume-MailboxDatabaseCopy).
 
 ## Use the Shell to activate a lagged mailbox database copy by replaying all uncommitted log files
 
 1. Optionally (to preserve a lagged copy), make a copy of the database copy and its log files.
 
-    1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd351074\(v=exchg.150\)) cmdlet.
+    1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Suspend-MailboxDatabaseCopy) cmdlet.
 
        ```powershell
        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
@@ -103,7 +103,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 1. Optionally (to preserve a lagged copy), take a file system-based (non-Exchange aware) Volume Shadow Copy Service (VSS) snapshot of the volumes containing the database copy and its log files.
 
-    1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd351074\(v=exchg.150\)) cmdlet.
+    1. This example suspends replication for the lagged copy being activated by using the [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Suspend-MailboxDatabaseCopy) cmdlet.
 
         ```powershell
         Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false

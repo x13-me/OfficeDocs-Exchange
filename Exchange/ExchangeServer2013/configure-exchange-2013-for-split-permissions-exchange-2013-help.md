@@ -171,17 +171,17 @@ To configure RBAC split permissions, do the following:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://technet.microsoft.com/library/dd638181\(v=exchg.150\))
+- [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup)
 
-- [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193\(v=exchg.150\))
+- [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementRoleAssignment)
 
-- [Add-RoleGroupMember](https://technet.microsoft.com/library/dd638207\(v=exchg.150\))
+- [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)
 
-- [Set-RoleGroup](https://technet.microsoft.com/library/dd638182\(v=exchg.150\))
+- [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-RoleGroup)
 
-- [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\))
+- [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-ManagementRoleAssignment)
 
-- [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351205\(v=exchg.150\))
+- [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-ManagementRoleAssignment)
 
 ## Switch to Active Directory split permissions
 

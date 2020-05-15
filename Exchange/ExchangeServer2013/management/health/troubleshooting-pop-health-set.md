@@ -241,4 +241,4 @@ This monitor alert is typically issued on CA or Mailbox servers.
 
 [Start and stop the POP3 services](https://technet.microsoft.com/library/aa997475\(v=exchg.150\))
 
-[Test-PopConnectivity](https://technet.microsoft.com/library/bb738143\(v=exchg.150\))
+[Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/Test-PopConnectivity)

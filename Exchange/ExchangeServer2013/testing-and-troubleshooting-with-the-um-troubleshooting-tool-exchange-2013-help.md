@@ -50,4 +50,4 @@ The **Test-ExchangeUMCallFlow** cmdlet requires the following components to be i
 
 The **Test-ExchangeUMCallFlow** cmdlet isn't included on the Exchange 2010 SP1 DVD, the Exchange 2010 SP1-only download, or the Exchange 2013 installation media; however, you can download the cmdlet from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
 
-For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://technet.microsoft.com/library/ff630913\(v=exchg.150\)).
+For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://www.microsoft.com/download/details.aspx?id=20839).

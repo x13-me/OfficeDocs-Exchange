@@ -29,7 +29,7 @@ manager: serdars
 There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 
 > [!NOTE]
-> The performance information listed in this topic doesn't apply to Office 365 service for dedicated subscription plans. For more information about Dedicated Plans, see [Office 365 Dedicated Plans Service Descriptions](https://technet.microsoft.com/library/mt422899.aspx).
+> The performance information listed in this topic doesn't apply to Office 365 service for dedicated subscription plans. For more information about Dedicated Plans, see [Office 365 Dedicated Plans Service Descriptions](https://docs.microsoft.com/previous-versions//mt422899(v=technet.10)).
 
 ## Overview of migrating email to Office 365
 

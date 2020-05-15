@@ -51,7 +51,7 @@ New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso
 
 You can also use the `FromDepartment` and `SentToScope` predicates to apply IRM protection to messages sent from users in the specified department or messages sent to the specified scope (`InOrganization` for internal messages, `All` for all recipients).
 
-For detailed syntax and parameter information, see [New-OutlookProtectionRule](https://technet.microsoft.com/library/dd298182\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-OutlookProtectionRule).
 
 ## How do you know this worked?
 

@@ -239,27 +239,27 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://technet.microsoft.com/library/jj219164\(v=exchg.150\))
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
 - [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218718\(v=exchg.150\))
+- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-PublicFolderMigrationRequest)
 
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218625\(v=exchg.150\))
+- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Remove-PublicFolderMigrationRequest)
 
-- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox)
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolder)
 
-- [Get-MailPublicFolder](https://technet.microsoft.com/library/bb124772\(v=exchg.150\))
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-MailPublicFolder)
 
-- [Disable-MailPublicFolder](https://technet.microsoft.com/library/bb123781\(v=exchg.150\))
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Disable-MailPublicFolder)
 
-- [Remove-PublicFolder](https://technet.microsoft.com/library/bb124894\(v=exchg.150\))
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Remove-PublicFolder)
 
-- [Remove-Mailbox](https://technet.microsoft.com/library/aa995948\(v=exchg.150\))
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-Mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -369,7 +369,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolderDatabase)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
 
@@ -387,7 +387,7 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
