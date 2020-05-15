@@ -153,7 +153,7 @@ The following table lists the requirements for the network and the directory ser
 <li><p>Single label domains</p></li>
 <li><p>Disjoint</p></li>
 </ul>
-<p>For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, <a href="https://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces</a>.</p></td>
+<p>For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, <a href="https://support.microsoft.com/help/2269838">Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 support</p></td>
@@ -171,7 +171,7 @@ The following table lists the requirements for the network and the directory ser
 The use of 64-bit Active Directory domain controllers increases directory service performance for Exchange 2013.
 
 > [!NOTE]
-> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese, your servers might not receive some attributes that are stored on an object during inbound replication. For more information, see Microsoft Knowledge Base article 949189, <A href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">A Windows Server 2008 domain controller that is configured with the Japanese language locale may not apply updates to attributes on an object during inbound replication</A>.
+> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese, your servers might not receive some attributes that are stored on an object during inbound replication. For more information, see Microsoft Knowledge Base article 949189, <A href="https://www.microsoft.com/download/details.aspx?id=1050">A Windows Server 2008 domain controller that is configured with the Japanese language locale may not apply updates to attributes on an object during inbound replication</A>.
 
 ## Installing Exchange 2013 on directory servers
 

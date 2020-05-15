@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 The permissions required to perform tasks to manage Microsoft Exchange Online vary depending on the procedure being performed or the cmdlet you want to run.
 
-For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx).
+For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 

@@ -198,7 +198,7 @@ You can format your disclaimer as needed. Here's what can be included in your di
 <td><p>Add information for personalized signatures</p></td>
 <td><p>If you want everyone to have signatures formatted the same way with the same information, you can add unique information for each employee, such as <code>DisplayName</code>, <code>FirstName</code>, <code>LastName</code>, <code>PhoneNumber</code>, <code>Email</code>, <code>FaxNumber</code>, and <code>Department</code>. This information must be enclosed in two percent signs (%%) on each side of the information. For example, to use <code>DisplayName</code>, you must use <strong>%%DisplayName%%</strong> in your disclaimer.</p>
 <p>When a disclaimer rule is triggered, the corresponding values for that user are inserted. The data comes from the sender's Active Directory user account (for on-premises Exchange Server), or from the sender's Office 365 account for Exchange Online.</p>
-<p>For a complete list of attributes that can be used in disclaimers and personalized signatures, see the description for the <code>ADAttribute</code> property in <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Transport rule conditions (predicates)</a> (Exchange Server), <a href="https://technet.microsoft.com/library/jj919235(v=exchg.150)">Transport rule conditions (predicates)</a> (Exchange Online), or <a href="https://technet.microsoft.com/library/jj919234(v=exchg.150)">Transport rule conditions (predicates)</a> (Exchange Online Protection).</p></td>
+<p>For a complete list of attributes that can be used in disclaimers and personalized signatures, see the description for the <code>ADAttribute</code> property in <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Transport rule conditions (predicates)</a> (Exchange Server) or <a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions">Mail flow rule conditions and exceptions (predicates) in Exchange Online</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -240,8 +240,8 @@ The following list describes each fallback action:
 
 [Add an email disclaimer, legal disclaimer, common signature, or email footer or header](https://technet.microsoft.com/library/dn600323\(v=exchg.150\))
 
-[Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
+[Transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
 
-[Mail flow or transport rules](https://technet.microsoft.com/library/jj919238\(v=exchg.150\)) (Exchange Online)
+[Mail flow rules in Exchange Online](https://technet.microsoft.com/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-[Transport rules](https://technet.microsoft.com/library/dn271424\(v=exchg.150\)) (Exchange Online Protection)
+[Mail flow rules in standalone EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0) (Exchange Online Protection)

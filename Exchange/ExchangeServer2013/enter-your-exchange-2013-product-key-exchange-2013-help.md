@@ -79,7 +79,7 @@ This example uses the **set-ExchangeServer** cmdlet to enter the product key.
 Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/Set-ExchangeServer).
 
 If you licensed an Exchange server running the Mailbox server role, do the following to restart the Microsoft Exchange Information Store service:
 

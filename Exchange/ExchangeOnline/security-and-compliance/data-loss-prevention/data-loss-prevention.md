@@ -45,11 +45,11 @@ Three different methods exist for you to begin using DLP:
 
 1. **Apply an out-of-the-box template supplied by Microsoft**: The quickest way to start using DLP policies is to create and implement a new policy using a template. This saves you the effort of building a new set of rules from nothing. You will need to know what type of data you want to check for or which compliance regulation you are attempting to address. You will also need to know your organizations expectations for processing such data. More information at [DLP policy templates supplied in Exchange](dlp-policy-templates.md) and [Create a DLP policy from a template](create-dlp-policy-from-template.md).
 
-2. **Import a pre-built policy file from outside your organization**: You can import policies that have already been created outside of your messaging environment by independent software vendors. In this way you can extend the DLP solutions to suit your business requirements. For more information, see [Define Your Own DLP Templates and Information Types](https://technet.microsoft.com/library/f4622dba-3347-4758-b4a2-f01b043c908c.aspx) and [Import a DLP Policy From a File](https://technet.microsoft.com/library/83f49dbd-f9b1-498e-b548-1529c5e1ccdb.aspx).
+2. **Import a pre-built policy file from outside your organization**: You can import policies that have already been created outside of your messaging environment by independent software vendors. In this way you can extend the DLP solutions to suit your business requirements.
 
 3. **Create a custom policy without any pre-existing conditions**: Your enterprise may have its own requirements for monitoring certain types of data known to exist within a messaging system. You can create a custom policy entirely on your own in order to start checking and acting upon your own unique message data. You will need to know the requirements and constraints of the environment in which the DLP policy will be enforced in order to create such a custom policy. More information at [Create a custom DLP policy](create-custom-dlp-policy.md).
 
-After you have added a policy, you can review and change its rules, make the policy inactive, or remove it completely. The procedures for these actions are provided in the [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx) topic.
+After you have added a policy, you can review and change its rules, make the policy inactive, or remove it completely.
 
 ## Sensitive information types in DLP policies
 <a name="dlp_senstypes"> </a>

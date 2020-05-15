@@ -238,13 +238,13 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |SFV=SPM|The message was marked as spam by the content filter.|
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |SFV=SKS|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a mail flow rule to automatically mark it as spam and bypass all additional filtering.|
-|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
-|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
+|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levels).|
+|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
 |DI=SB|The sender of the message was blocked.|
 |DI=SQ|The message was quarantined.|
 |DI=SD|The message was deleted.|
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
-|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [Higher risk delivery pool for Outbound Messages](https://technet.microsoft.com/library/ac11edd9-2da3-462d-8ea3-bbf9dbc6f948.aspx).|
+|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
 |SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|

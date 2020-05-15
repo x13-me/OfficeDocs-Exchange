@@ -62,7 +62,7 @@ This example enables IRM on a Client Access server for an Exchange organization.
 Set-IRMConfiguration -ClientAccessServerEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
 
 ## Use the Shell to disable IRM on Client Access servers
 
@@ -72,7 +72,7 @@ This example disables IRM on a Client Access server for an Exchange organization
 Set-IRMConfiguration -ClientAccessServerEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
 
 ## How do you know this worked?
 

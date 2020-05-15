@@ -155,9 +155,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
+- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183213)
+- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2016 server
 

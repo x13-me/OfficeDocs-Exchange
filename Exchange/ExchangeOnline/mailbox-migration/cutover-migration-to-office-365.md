@@ -114,7 +114,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
 
    - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
 
-   - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/library/dd439364(v=exchg.80).aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
+   - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://docs.microsoft.com/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
    - Wait for the connection to automatically be tested when you connect Office 365 to your email system later in this procedure.
 
@@ -206,7 +206,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 9. Choose **New** to create the migration endpoint.
 
-   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://go.microsoft.com/fwlink/p/?linkid=534752).
+   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Test-MigrationServerAvailability).
 
 ## Step 3: Create the cutover migration batch
 

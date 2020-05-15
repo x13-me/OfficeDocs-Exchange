@@ -264,4 +264,4 @@ This monitor alert is typically issued on CA and Mailbox servers.
 
 [Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/library/bb124489\(v=exchg.150\))
 
-[Test-ImapConnectivity](https://technet.microsoft.com/library/bb738126\(v=exchg.150\))
+[Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/Test-ImapConnectivity)

@@ -31,7 +31,7 @@ The SiteMailbox monitoring system receives passive sync results from the backgro
 
 - You open the Outlook Web App Options window, and then you click the **Start Sync** button on the **Sync Status** page for the selected site mailbox
 
-For more information about the Update-SiteMailbox cmdlet, see: [Update-SiteMailbox](https://technet.microsoft.com/library/jj218690\(v=exchg.150\))
+For more information about the Update-SiteMailbox cmdlet, see: [Update-SiteMailbox](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Update-SiteMailbox)
 
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
 
@@ -118,4 +118,4 @@ To resolve this issue, review the Windows Application event log on the server th
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)

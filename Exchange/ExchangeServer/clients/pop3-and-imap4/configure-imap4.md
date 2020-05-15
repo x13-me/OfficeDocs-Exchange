@@ -105,7 +105,7 @@ You can perform this step by using the Windows Services console, or the Exchange
    Set-Service MSExchangeIMAP4 -StartupType Automatic; Set-Service MSExchangeIMAP4BE -StartupType Automatic
    ```
 
-For more information about these cmdlets, see [Start-Service](https://go.microsoft.com/fwlink/p/?LinkID=113406) and [Set-Service](https://go.microsoft.com/fwlink/p/?LinkID=113399).
+For more information about these cmdlets, see [Start-Service](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/start-service) and [Set-Service](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-service).
 
 ### How do you know this step worked?
 
@@ -185,7 +185,7 @@ Run the following command to restart the IMAP4 services.
 Restart-Service MSExchangeIMAP4; Restart-Service MSExchangeIMAP4BE
 ```
 
-For more information about this cmdlet, see [Restart-Service](https://go.microsoft.com/fwlink/p/?LinkID=113385).
+For more information about this cmdlet, see [Restart-Service](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/restart-service).
 
 To verify that you've successfully restarted the IMAP4 services, run the following command:
 

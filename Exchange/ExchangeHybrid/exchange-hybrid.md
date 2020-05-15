@@ -63,7 +63,7 @@ Consider the following before you implement an Exchange hybrid deployment:
 
 - **Offboarding**: As part of ongoing recipient management, you might have to move Exchange Online mailboxes back to your on-premises environment.
 
- For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](https://technet.microsoft.com/library/5ef062b5-92fe-40c2-a020-e956e1d14645.aspx).
+ For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](https://docs.microsoft.com/previous-versions/exchange-server/exchange-141/hh882527(v=exchg.141)).
 
    For more information about how to move mailboxes in hybrid deployments based on Exchange 2013 or newer, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](hybrid-deployment/move-mailboxes.md).
 
@@ -200,7 +200,7 @@ To create mailboxes in, or move mailboxes to, Microsoft 365 or Office 365, you n
 
 Mailboxes moved to the cloud are automatically provided with antivirus and anti-spam protection by Exchange Online Protection (EOP), a service provided by Microsoft 365 and Office 365. You may need to purchase additional EOP licenses for your on-premises users if you chose to route all incoming Internet mail through the EOP service. We recommend that you carefully evaluate whether the EOP protection in your Microsoft 365 or Office 365 is also appropriate to meet the antivirus and anti-spam needs of your on-premises organization. If you have protection in place for your on-premises organization, you may need to upgrade or configure your on-premises antivirus and anti-spam solutions for maximum protection across your organization.
 
-Learn more at: [Anti-Spam and Anti-Malware Protection](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+Learn more at: [Anti-spam and anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ### Public folders
 
