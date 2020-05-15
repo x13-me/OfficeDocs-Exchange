@@ -34,7 +34,7 @@ Messaging records management (MRM) is the records management technology in Excha
 
 MRM provides the flexibility to implement the records management policy that best meets your organization's requirements. With a good understanding of MRM, In-Place Archiving, and In-Place Hold, you can help meet your goals of managing mailbox storage and meeting regulatory retention requirements.
 
-Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## MRM in Exchange Server and Exchange Online
 

@@ -94,7 +94,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
      Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
      ```
 
-     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://go.microsoft.com/fwlink/p/?linkid=268413)
+     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Add-AvailabilityAddressSpace)
 
 ## Configure Free/Busy Sharing Between Exchange 2013 and Exchange 2003 Organizations
 
@@ -107,7 +107,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
      An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2003 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2003 organization, see [Exchange 2003 - Planning Roadmap for Upgrade and Coexistence](https://go.microsoft.com/fwlink/?linkid=268414).
 
      > [!WARNING]
-     > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see <A href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">How to troubleshoot Free/Busy issues when you use Exchange Federation in the Microsoft Office 365 for enterprises environment</A>.
+     > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see <A href="https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem">How to troubleshoot Free/Busy issues when you use Exchange Federation in the Microsoft Office 365 for enterprises environment</A>.
 
   2. **Configure federated delegation**.
 

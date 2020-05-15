@@ -140,14 +140,14 @@ In a site mailbox, content is kept where it belongs. Exchange stores the email, 
 
 You can provision and manage site mailboxes from SharePoint Server 2016. For more information, including how to configure site mailboxes, see the following topics.
 
-- [Site Mailboxes](https://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
+- [Site Mailboxes](https://docs.microsoft.com/exchange/site-mailboxes-exchange-2013-help)
 
-- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941(v=office.16).aspx)
+- [Configure email integration for a SharePoint Server farm](hhttps://docs.microsoft.com/SharePoint/administration/configure-email-integration)
 
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>
 
-The unified contact store (UCS) feature provides a consistent contact experience across Office products. This feature lets users store all contact information in their Exchange 2016 mailbox so that the same contact information is available globally across Skype for Business, SharePoint, Exchange, Outlook and Outlook on the web. When you deploy aSkype for Business Server and publish the topology, UCS is enabled for all users by default and no additional action is needed. For more information, see [Configure Skype for Business Server 2015 to use the unified contact store](https://technet.microsoft.com/library/jj688083.aspx).
+The unified contact store (UCS) feature provides a consistent contact experience across Office products. This feature lets users store all contact information in their Exchange 2016 mailbox so that the same contact information is available globally across Skype for Business, SharePoint, Exchange, Outlook and Outlook on the web. When you deploy aSkype for Business Server and publish the topology, UCS is enabled for all users by default and no additional action is needed. For more information, see [Configure Skype for Business Server to use the unified contact store](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/use-the-unified-contact-store).
 
 A user's contacts are automatically migrated to the Exchange 2016 server when the user:
 

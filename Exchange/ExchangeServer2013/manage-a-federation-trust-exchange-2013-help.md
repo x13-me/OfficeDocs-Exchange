@@ -82,7 +82,7 @@ For additional management tasks related to Federation, see [Federation procedure
     Add-FederatedDomain -DomainName marketing.contoso.com
     ```
 
-For detailed syntax and parameter information, see [Remove-FederatedDomain](https://technet.microsoft.com/library/dd298128\(v=exchg.150\)) and [Add-FederatedDomain](https://technet.microsoft.com/library/dd351208\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-FederatedDomain](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Remove-FederatedDomain) and [Add-FederatedDomain](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Add-FederatedDomain).
 
 Run the following Shell commands to manage other aspects of a federation trust:
 
@@ -127,7 +127,7 @@ Run the following Shell commands to manage other aspects of a federation trust:
     ```
 
     > [!WARNING]
-    > Before configuring the federation trust to use the next certificate as the current federation certificate, make sure that the certificate is deployed on all Exchange servers in your organization. Use the <A href="https://technet.microsoft.com/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</A> cmdlet to check the deployment status of the certificate.
+    > Before configuring the federation trust to use the next certificate as the current federation certificate, make sure that the certificate is deployed on all Exchange servers in your organization. Use the <A href="https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Test-FederationTrustCertificate">Test-FederationTrustCertificate</A> cmdlet to check the deployment status of the certificate.
 
 6. **Refresh federation metadata and certificate from the Azure AD authentication system**
 
@@ -139,13 +139,13 @@ Run the following Shell commands to manage other aspects of a federation trust:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-FederatedOrganizationIdentifier](https://technet.microsoft.com/library/dd298149\(v=exchg.150\))
+- [Get-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederatedOrganizationIdentifier)
 
-- [Get-FederationTrust](https://technet.microsoft.com/library/dd351262\(v=exchg.150\))
+- [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederationTrust)
 
-- [Test-FederationTrustCertificate](https://technet.microsoft.com/library/dd335228\(v=exchg.150\))
+- [Test-FederationTrustCertificate](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Test-FederationTrustCertificate)
 
-- [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\))
+- [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust)
 
 >[!NOTE]
 >There are additional considerations if the tenant is hosted in the Office 365 U.S. Government GCC High or DoD environment. In these environments, you must run the **Set-FederationTrust** cmdlet in the on-premises Exchange environment with a different value for the *MetadataUrl* parameter. See [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust) for more information.

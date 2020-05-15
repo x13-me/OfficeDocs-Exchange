@@ -72,7 +72,7 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
 
    Optional properties:
 
-   - **Audit this rule with severity level**: For DLP policies, this setting specifies how rule match data is displayed in the DLP policy detection reports. For more information, [View DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx). If you clear the check box, or select the value **Not specified**, rule matches won't appear in the rule reports.
+   - **Audit this rule with severity level**: For DLP policies, this setting specifies how rule match data is displayed in the DLP policy detection reports. For more information, [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help). If you clear the check box, or select the value **Not specified**, rule matches won't appear in the rule reports.
 
    - **Choose a mode for this rule**: You can use one of the two test modes to test the rule without impacting mail flow. In both test modes, when the conditions are met, an entry is added to the message tracking log. Select one of the following values:
 

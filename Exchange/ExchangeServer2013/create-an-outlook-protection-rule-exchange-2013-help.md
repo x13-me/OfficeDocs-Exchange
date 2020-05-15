@@ -51,13 +51,13 @@ New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso
 
 You can also use the `FromDepartment` and `SentToScope` predicates to apply IRM protection to messages sent from users in the specified department or messages sent to the specified scope (`InOrganization` for internal messages, `All` for all recipients).
 
-For detailed syntax and parameter information, see [New-OutlookProtectionRule](https://technet.microsoft.com/library/dd298182\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-OutlookProtectionRule).
 
 ## How do you know this worked?
 
 To verify that you have successfully created an Outlook protection rule, do the following:
 
-- Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
+- Run the [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule#examples).
 
 - Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
 

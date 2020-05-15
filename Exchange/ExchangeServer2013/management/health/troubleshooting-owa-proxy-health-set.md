@@ -149,6 +149,6 @@ To troubleshoot this issue, follow these steps:
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
 [Managing Outlook Web App](https://technet.microsoft.com/3814b665-01e8-4881-9a44-163f14789ee4\(exchg.150\)#managing)

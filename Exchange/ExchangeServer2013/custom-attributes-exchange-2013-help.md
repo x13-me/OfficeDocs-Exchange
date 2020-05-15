@@ -37,17 +37,17 @@ Some of the advantages of using custom attributes include:
 
 In Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The *ExtensionCustomAttribute1* to *ExtensionCustomAttribute5* parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
-- [Set-DistributionGroup](https://technet.microsoft.com/library/bb124955\(v=exchg.150\))
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-DistributionGroup)
 
-- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/bb123796\(v=exchg.150\))
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-DynamicDistributionGroup)
 
-- [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
 
-- [Set-MailContact](https://technet.microsoft.com/library/aa995950\(v=exchg.150\))
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-MailContact)
 
-- [Set-MailPublicFolder](https://technet.microsoft.com/library/bb123707\(v=exchg.150\))
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Set-MailPublicFolder)
 
-- [Set-RemoteMailbox](https://technet.microsoft.com/library/ff607302\(v=exchg.150\))
+- [Set-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-RemoteMailbox)
 
 For more information about multivalued properties, see [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md).
 

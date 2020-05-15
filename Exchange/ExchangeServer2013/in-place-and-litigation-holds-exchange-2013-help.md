@@ -158,9 +158,9 @@ When you place an Exchange 2013 mailbox on In-Place Hold or Litigation Hold, Mic
 
 To enable archiving of Lync content in Exchange 2013 mailbox, you must configure Lync 2013 integration with Exchange 2013. For details, see the following topics:
 
-- [Planning for Archiving](https://technet.microsoft.com/library/jj205069(v=ocs.15))
+- [Planning for Archiving](https://docs.microsoft.com/lyncserver/lync-server-2013-planning-for-archiving)
 
-- [Deploying Archiving](https://technet.microsoft.com/library/jj205147(v=ocs.15))
+- [Deploying Archiving](https://docs.microsoft.com/lyncserver/lync-server-2013-deploying-archiving)
 
 ## Deleting a mailbox on hold
 

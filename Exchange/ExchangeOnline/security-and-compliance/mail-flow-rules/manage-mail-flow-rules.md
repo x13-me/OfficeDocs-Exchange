@@ -371,7 +371,7 @@ Resources for Exchange Online:
 
 Resources for Exchange Online Protection:
 
-[Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)
 
 [Journal, Transport, and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
 

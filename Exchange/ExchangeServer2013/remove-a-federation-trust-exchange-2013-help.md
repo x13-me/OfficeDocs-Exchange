@@ -52,7 +52,7 @@ This example removes the federation trust.
 Remove-FederationTrust
 ```
 
-For detailed syntax and parameter information, see [Remove-FederationTrust](https://technet.microsoft.com/library/dd351153\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Remove-FederationTrust).
 
 ## How do you know this worked?
 
@@ -66,6 +66,6 @@ To verify that you have successfully removed the federation trust, do one of the
   Get-FederationTrust
   ```
 
-  For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/library/dd351262\(v=exchg.150\)).
+  For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederationTrust).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

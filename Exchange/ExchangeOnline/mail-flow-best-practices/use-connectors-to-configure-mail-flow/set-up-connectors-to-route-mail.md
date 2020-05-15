@@ -104,7 +104,7 @@ There are three steps for this:
 
 Make sure you have completed the following in Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the "Office 365 connectors" entry in the [Feature permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx) topic.
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the "Office 365 connectors" entry in the [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 
@@ -139,7 +139,7 @@ Click **Next**, and follow the instructions in the wizard. Click the **Help** or
 
 ### 3. Change your MX record to redirect your mail flow from the Internet to Office 365
 
-To redirect email flow to Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](https://go.microsoft.com/fwlink/p/?LinkID=529074&clcid=0x409).
+To redirect email flow to Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-mx-record-to-route-email).
 
 ## Part 2: Configure mail to flow from your email server to Office 365
 

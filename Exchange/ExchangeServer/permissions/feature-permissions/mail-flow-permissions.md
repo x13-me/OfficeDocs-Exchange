@@ -45,7 +45,7 @@ If you want to delegate the ability to manage a feature to another user, see [De
 
 You can use the features in the following tables to configure mail flow settings in the Front End Transport, Mailbox Transport, and Transport services on Mailbox servers, and on Edge Transport servers. The permissions that are required to configure each feature are listed.
 
-Users who are assigned the View Only Management role group can view the configuration of the features shown in the following table. For more information, see [View Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx).
+Users who are assigned the View Only Management role group can view the configuration of the features shown in the following table. For more information, see [View Only Organization Management](https://docs.microsoft.com/exchange/view-only-organization-management-exchange-2013-help).
 
  **Mailbox servers**
 

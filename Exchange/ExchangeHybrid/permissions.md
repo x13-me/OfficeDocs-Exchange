@@ -123,7 +123,7 @@ If you do want to customize end user permissions, you can either modify the exis
 
 Like administrator permissions, end user permissions aren't transferred between the on-premises organization and the Exchange Online organization. Any permissions that you've defined in the on-premises organization must be re-created in the Exchange Online organization.
 
-For more information, see [Manage Role Assignment Policies](https://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) and [Change the Assignment Policy on a Mailbox](https://technet.microsoft.com/library/011690a5-233a-4c03-8842-92276f899a89.aspx).
+For more information, see [Manage Role Assignment Policies](https://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) and [Change the Assignment Policy on a Mailbox](https://docs.microsoft.com/Exchange/permissions/policy-assignments-for-mailboxes).
 
 The following table lists the permissions granted by the default role assignment policies in the Exchange Online organization.
 

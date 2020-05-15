@@ -29,7 +29,7 @@ For more information about federation trusts and federation, see [Federation](fe
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- The procedures in this topic use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
+- The procedures in this topic use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - To see if your existing federation certificate has expired, run the following command in the Exchange Management Shell:
 
@@ -54,7 +54,7 @@ Run the following command in the Exchange Management Shell to create a new feder
 $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
 ```
 
-For detailed syntax and parameter information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/aa998327\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/New-ExchangeCertificate).
 
 The command output contains the thumbprint value of the new certificate. You'll need this value in the remaining steps, and you can copy the value directly from the Exchange Management Shell window:
 
@@ -78,7 +78,7 @@ This example uses the certificate thumbprint value `6A99CED2E4F2B5BE96C5D17D662D
 Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
 ```
 
-For detailed syntax and parameter information, see [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust).
 
 **Note:** The command output contains a warning that you need to update the proof of domain ownership TXT record in DNS. You'll do that in the next step.
 
@@ -134,7 +134,7 @@ To use the Exchange Management Shell to activate the new federation certificate,
 Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
 ```
 
-For detailed syntax and parameter information, see [Set-FederationTrust](https://technet.microsoft.com/library/dd298034\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust).
 
 **Note:** The command output contains a warning that you need to update the proof of domain ownership TXT record in DNS (which you already did in Step 3).
 

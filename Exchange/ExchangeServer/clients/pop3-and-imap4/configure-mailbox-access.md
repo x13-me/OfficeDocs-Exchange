@@ -185,7 +185,7 @@ To restart the IMAP4 services, run the following command:
 Restart-Service MSExchangeIMAP4; Restart-Service MSExchangeIMAP4BE
 ```
 
-For more information about this cmdlet, see [Restart-Service](https://go.microsoft.com/fwlink/p/?LinkID=113385).
+For more information about this cmdlet, see [Restart-Service](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/restart-service).
 
 To verify that you've successfully restarted the POP3 or IMAP4 services, run the following command:
 

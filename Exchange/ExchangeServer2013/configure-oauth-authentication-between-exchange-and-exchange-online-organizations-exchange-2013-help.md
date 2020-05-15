@@ -180,7 +180,7 @@ You must also define the external Autodiscover endpoint for your on-premises org
 - https://\<your primary SMTP domain\>/autodiscover/autodiscover.svc
 
 > [!NOTE]
-> You can use the [Get-IntraOrganizationConfiguration](https://technet.microsoft.com/library/dn551183(v=exchg.150)) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://technet.microsoft.com/library/dn551178(v=exchg.150)) cmdlet.
+> You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/New-IntraOrganizationConnector) cmdlet.
 
 Using Windows PowerShell, run the following cmdlet:
 
@@ -227,7 +227,7 @@ Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-prem
 
 ## How do you know this worked?
 
-You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://technet.microsoft.com/library/jj218623\(v=exchg.150\)) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
+You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/organization/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
 
 > [!IMPORTANT]
 > When connecting to your Exchange Online organization using Remote PowerShell, you may have to use the <EM>AllowClobber</EM> parameter with the <STRONG>Import-PSSession</STRONG> cmdlet to import the latest commands in to the local PowerShell session.
@@ -238,7 +238,7 @@ To verify that your on-premises Exchange organization can successfully connect t
 Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
-To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\)) to connect to your Exchange Online organization and run the following command:
+To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to connect to your Exchange Online organization and run the following command:
 
 ```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List

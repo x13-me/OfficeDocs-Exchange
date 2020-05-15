@@ -136,7 +136,7 @@ Corruption occurs when the migration meta-data has encountered issues. Upon corr
    New-MigrationBatch -Local -Name
    ```
 
-For more information, see [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+For more information, see [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
 ### MailboxMigration alert: CriticalError
 
@@ -250,4 +250,4 @@ Restart-Service msexchangemailboxreplication
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)

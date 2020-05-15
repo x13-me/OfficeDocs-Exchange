@@ -48,7 +48,7 @@ This example enables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
 
 ## Use the Shell to disable journal report decryption
 
@@ -58,7 +58,7 @@ This example disables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
 
 ## How do you know this worked?
 

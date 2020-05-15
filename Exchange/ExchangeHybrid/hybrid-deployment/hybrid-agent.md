@@ -85,8 +85,6 @@ If you need to configure free/busy sharing with a third-party company, go to the
 
 If you encounter any problems or need to troubleshoot, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
-
-
 ## Constraints
 
 Keep the following issues in mind before you install the Hybrid Agent:

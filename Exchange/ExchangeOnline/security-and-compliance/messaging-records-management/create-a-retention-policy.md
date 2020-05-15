@@ -24,7 +24,7 @@ In Exchange Online, you can use retention policies to manage email lifecycle. Re
 
 Here's a [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
 
-For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 

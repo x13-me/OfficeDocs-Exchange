@@ -95,9 +95,9 @@ Before you can implement IRM in Exchange, you must first deploy and configure yo
 
 ## Configuring and testing IRM
 
-You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
+You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
-After you've set up an Exchange server, you can use the [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798\(v=exchg.150\)) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
+After you've set up an Exchange server, you can use the [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Test-IRMConfiguration) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
 
 - Inspects the IRM configuration for your Exchange organization.
 
@@ -257,7 +257,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 </tbody>
 </table>
 
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://technet.microsoft.com/library/bb124903\(v=exchg.150\)).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/Set-UMMailboxPolicy).
 
 ## Text message notifications and Protected Voice Mail
 
