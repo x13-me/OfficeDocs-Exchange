@@ -25,7 +25,7 @@ For more information about transport rules in Exchange Server 2013, see [Transpo
 
 For more information about conditions and exceptions in transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
-For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/-exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 ## Actions for transport rules on Mailbox servers
 
@@ -621,6 +621,6 @@ The property values that are used for actions in transport rules are described i
 
 [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Mail flow rule actions in Exchange Online](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+[Mail flow rule actions in Exchange Online](https://docs.microsoft.com/-exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](https://technet.microsoft.com/library/dn600323\(v=exchg.150\))
