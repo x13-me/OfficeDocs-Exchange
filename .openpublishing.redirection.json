@@ -150,6 +150,11 @@
         "source_path": "Exchange/ExchangeServer/policy-and-compliance/smime.md",
         "redirect_url": "https://docs.microsoft.com/Exchange/policy-and-compliance/smime/smime",
         "redirect_document_id": true
-      }      
+      },
+      {
+        "source_path": "outlook/mobile/resources.md",
+        "redirect_url": "https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/",
+        "redirect_document_id": true
+      }       
     ]
 }
