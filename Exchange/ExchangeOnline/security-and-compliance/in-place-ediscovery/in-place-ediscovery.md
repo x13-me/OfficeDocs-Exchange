@@ -328,4 +328,4 @@ The following table contains links to topics that will help you learn about and 
 |[Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help)|Learn how to configure Exchange Server so that you can use the eDiscovery Center in SharePoint 2013 to search Exchange mailboxes.|
 |[Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)|Learn about mailbox items that can't be indexed by Exchange Search and are returned in eDiscovery search results as unsearchable items.|
 
-For more information about eDiscovery in Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [eDiscovery FAQ](https://go.microsoft.com/fwlink/p/?LinkId=386633).
+For more information about eDiscovery in Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).

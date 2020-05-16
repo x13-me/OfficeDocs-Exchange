@@ -36,7 +36,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - **Use transport rules to aggressively filter bulk email messages**
 
-- [Define rules to encrypt or decrypt messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 - **Create a Domain or User-Based Safe Sender or Blocked Sender List Using Transport Rules**
 

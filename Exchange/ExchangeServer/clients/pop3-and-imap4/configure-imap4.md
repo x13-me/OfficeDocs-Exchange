@@ -217,7 +217,7 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 
    **Note**: The _Lightmode_ switch tells the command test IMAP4 logons to the server. To test sending (SMTP) and receiving (IMAP4) a message, you need to configure the authenticated SMTP settings as described in [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md).
 
-   - **External clients**: Use the **Exchange Server** \> **Imap Email** test in the Microsoft Remote Connectivity Analyzer at [https://go.microsoft.com/fwlink/p/?LinkID=313840](https://go.microsoft.com/fwlink/p/?LinkID=313840).
+   - **External clients**: Use the **Imap Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
    **Note**: You can't use IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
 

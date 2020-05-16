@@ -324,13 +324,13 @@ Using a short interval, such as 3,600 seconds (one hour) or less, means that mos
 
 *The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*. This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less.
 
-If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166).
+If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## Route your email directly to Office 365
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises email system. Now that the email migration to Office 365 is complete for all of your users, it's time to point your MX record to Office 365. This helps ensure that incoming email is delivered to your Office 365mailboxes. Moving the MX record also let you turn off your old email system when you are ready.
 
-For many DNS providers, we have [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided [general MX record instructions](https://go.microsoft.com/fwlink/p/?LinkId=397449) as well.
+For many DNS providers, we have [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided [general MX record instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
 
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task.
 

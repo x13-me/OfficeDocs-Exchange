@@ -50,11 +50,11 @@ Before installing Exchange 2013, perform the following procedures.
 <td><p> </p></td>
 </tr>
 <tr class="even">
-<td><p>Run the Microsoft Windows Malicious Software Removal Tool. The Malicious Software Removal Tool is included with Microsoft Update. More information about the tool can be found at <a href="https://go.microsoft.com/fwlink/p/?linkid=73452">Malicious Software Removal Tool</a>.</p></td>
+<td><p>Run the Microsoft Windows Malicious Software Removal Tool. The Malicious Software Removal Tool is included with Microsoft Update. More information about the tool can be found at <a href="https://www.microsoft.com/download/details.aspx?id=9905">Malicious Software Removal Tool</a>.</p></td>
 <td><p> </p></td>
 </tr>
 <tr class="odd">
-<td><p>Run the <a href="https://go.microsoft.com/fwlink/p/?linkid=16526">Microsoft Baseline Security Analyzer</a>.</p></td>
+<td><p>Run the <a href="https://www.microsoft.com/download/details.aspx?id=19892">Microsoft Baseline Security Analyzer</a>.</p></td>
 <td><p> </p></td>
 </tr>
 </tbody>

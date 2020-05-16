@@ -42,11 +42,7 @@ You have to use the Microsoft 365 admin center or Exchange Online PowerShell to 
 
 ## Use the Microsoft 365 admin center to create a new mailbox
 
-You can use the Microsoft 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Microsoft 365 admin center, see the following topics:
-
-- [Create or edit users](https://go.microsoft.com/fwlink/p/?LinkId=276796)
-
-- [Add multiple users with a CSV file](https://go.microsoft.com/fwlink/p/?LinkId=279605)
+You can use the Microsoft 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ## Use Exchange Online PowerShell to create a new mailbox
 

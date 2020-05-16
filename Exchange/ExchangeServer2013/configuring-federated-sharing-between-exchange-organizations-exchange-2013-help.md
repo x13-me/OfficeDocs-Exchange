@@ -32,7 +32,7 @@ This topic provides a summary of the requirements and configuration steps necess
 For additional management tasks related to federated sharing, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 
@@ -115,7 +115,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
   3. **Configure Active Directory synchronization**.
 
-     Active Directory synchronization must be configured for all users that need to share free/busy information between the organizations. You can either configure the Active Directory synchronization manually or use an automated Active Directory synchronization service. To learn more about Active Directory synchronization, see [Forefront Identity Management](https://go.microsoft.com/fwlink/?linkid=294645).
+     Active Directory synchronization must be configured for all users that need to share free/busy information between the organizations. You can either configure the Active Directory synchronization manually or use an automated Active Directory synchronization service. To learn more about Active Directory synchronization, see [Forefront Identity Management](https://technet.microsoft.com/library/ff684076.aspx).
 
      - **Prerequisites**: Make sure your organization meets the requirements for installing Active Directory synchronization.
 
