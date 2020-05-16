@@ -53,7 +53,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 - **Verify only one MX record is configured for your domain**: We don't support using more than one MX record for domains enrolled in Exchange Online.
 
-- **Test your MX record**: Use the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
+- **Test your MX record**: Use the **Outbound SMTP EMail** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 ### Domain configuration issues
 

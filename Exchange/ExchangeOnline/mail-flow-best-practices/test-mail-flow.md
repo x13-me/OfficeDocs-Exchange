@@ -31,7 +31,7 @@ For more information, see [Validate connectors in Office 365](use-connectors-to-
 Mail flow issues can also happen when your MX record is not setup correctly. To verify your MX record, see [Find and fix issues after adding your domain or DNS records in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=624017).
 
 > [!NOTE]
-> These tests replace Office 365 mail flow troubleshooting that was previously available in the [Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=154308).
+> These tests replace Office 365 mail flow troubleshooting that was previously available in the [Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 ## See also
 

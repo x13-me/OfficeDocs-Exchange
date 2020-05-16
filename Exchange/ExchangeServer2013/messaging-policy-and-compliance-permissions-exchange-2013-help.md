@@ -55,16 +55,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <tbody>
 <tr class="odd">
 <td><p>Data loss prevention (DLP)</p></td>
-<td><p>If using Office 365:</p>
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 global admin</a>, which automatically includes Exchange <a href="organization-management-exchange-2013-help.md">Organization Management</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 service admin</a>, plus the <a href="organization-management-exchange-2013-help.md">Organization Management</a> admin role group in Exchange</p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 password admin</a></p></li>
-</ul>
-<p>If using Exchange Server 2013 or Exchange Online only:</p>
-<ul>
-<li><p><a href="compliance-management-exchange-2013-help.md">Compliance Management</a></p></li>
-</ul></td>
+<td><p><a href="compliance-management-exchange-2013-help.md">Compliance Management</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Delete mailbox content (using the <a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>

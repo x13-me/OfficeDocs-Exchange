@@ -72,7 +72,7 @@ The following table lists the client applications that can be used to access arc
 </table>
 
 > [!NOTE]
-> In-Place Archiving is a premium feature and requires an Exchange Enterprise client access license (CAL). For details about how to license Exchange, see <A href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server Licensing</A>. For details about the versions of Outlook required to access an archive mailbox, see <A href="https://go.microsoft.com/fwlink/?linkid=237276">License requirements for Personal Archive and retention policies</A>.
+> In-Place Archiving is a premium feature and requires an Exchange Enterprise client access license (CAL). For details about how to license Exchange, see <A href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server Licensing</A>. For details about the versions of Outlook required to access an archive mailbox, see <A href="https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99">License requirements for Personal Archive and retention policies</A>.
 
 Outlook doesn't create a local copy of the archive mailbox on a user's computer, even if it's configured to use Cached Exchange Mode. Users can access an archive mailbox in online mode only.
 
