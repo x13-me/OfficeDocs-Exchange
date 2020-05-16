@@ -189,7 +189,7 @@ This section provides links to more information about migrating mailboxes from y
 
 As previously stated, the majority of messaging migration tools that are included with Microsoft 365 are designed to work with Exchange Server. However, Microsoft 365 also includes the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
 
-For organizations that use Outlook as an email client, you can also use the [PST Capture tool](https://go.microsoft.com/fwlink/p/?linkid=246929) to migrate messaging data to the cloud.
+For organizations that use Outlook as an email client, you can also use the [PST Capture tool](https://docs.microsoft.com/microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization) to migrate messaging data to the cloud.
 
 For other messaging migration solutions, you might need to work with a third-party solution provider.
 

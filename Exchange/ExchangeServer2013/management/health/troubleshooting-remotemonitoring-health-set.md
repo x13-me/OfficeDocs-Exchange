@@ -27,4 +27,4 @@ Thanks for clicking the link that brought you to this page. Although we don't cu
 
 - View the content available from the [Exchange Server Community](https://go.microsoft.com/fwlink/p/?linkid=14927).
 
-- If you still can't resolve the issue, contact Microsoft Customer Service and Support. To contact support, go to [Exchange Server 2013 for IT Pros](https://go.microsoft.com/fwlink/p/?linkid=402506) and click on **Contact a Microsoft support professional**.
+- If you still can't resolve the issue, contact Microsoft Customer Service and Support. To contact support, go to [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and select **Servers** \> **Exchange Server**.
