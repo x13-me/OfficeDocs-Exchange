@@ -71,7 +71,7 @@ Here are some steps for you to try:
 
 - **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://support.office.com/article/854b6b2b-0255-4089-8019-b765cff70377.aspx).
 
-- **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
+- **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 - **Solution 3**: The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
 

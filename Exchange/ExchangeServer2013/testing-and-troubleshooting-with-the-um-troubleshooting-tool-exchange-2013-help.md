@@ -46,7 +46,7 @@ The **Test-ExchangeUMCallFlow** cmdlet requires the following components to be i
 
 - Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu). For more information, see Microsoft Knowledge Base article 968930, [Windows Management Framework core package (Windows PowerShell 2.0 and WinRM 2.0)](https://support.microsoft.com/help/968930).
 
-- Unified Communications Managed AP1 2.0, Core Runtime (64-bit). To download the UcmaRuntimeWebDownloadX64.msi program file, see [Unified Communications Managed API 2.0, Core Runtime (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175).
+- Unified Communications Managed AP1 2.0, Core Runtime (64-bit).
 
 The **Test-ExchangeUMCallFlow** cmdlet isn't included on the Exchange 2010 SP1 DVD, the Exchange 2010 SP1-only download, or the Exchange 2013 installation media; however, you can download the cmdlet from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
 

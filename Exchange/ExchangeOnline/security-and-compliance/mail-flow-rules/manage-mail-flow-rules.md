@@ -39,7 +39,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
 
-- [Define rules to encrypt or decrypt messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 ## What do you need to know before you begin?
 
