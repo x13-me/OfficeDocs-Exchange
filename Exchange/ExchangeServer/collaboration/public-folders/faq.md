@@ -22,19 +22,19 @@ To learn more about public folders, see [Public folders](public-folders.md).
 
 ## FAQ about public folder migration
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
+This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md), [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md), or [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md).
 
 ### What are the supported public folder migration scenarios?
 
 The following list details the available options for migrating public folders to Exchange or Exchange Online.
 
-- Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2016 or Exchange Online.
+- Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2016, Exchange Online, or Microsoft 365 groups.
 
-- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016, Exchange 2019, or Exchange Online.
+- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016, Exchange 2019, Exchange Online, or Microsoft 365 groups.
 
-- Exchange 2016 public folders (CU4 or later) can be migrated to Exchange Online.
+- Exchange 2016 public folders (CU4 or later) can be migrated to Exchange Online or Microsoft 365 groups.
 
-- Exchange 2019 public folders can be migrated to Exchange Online.
+- Exchange 2019 public folders can be migrated to Exchange Online or Microsoft 365 groups.
 
 Currently only migrations to Exchange 2016 or Exchange 2019 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
 
