@@ -111,6 +111,8 @@ The following prerequisites are required in your Exchange environment before you
 
    - Exchange 2016 CU4 or later
 
+   - Exchange 2019
+
 2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) for more information.
 
 ### Migration instructions
