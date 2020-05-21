@@ -30,7 +30,7 @@ For more information on public folder migrations, see:
 - [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
 - [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
 - [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
-- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md).
+- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md)
 
 ### What are the supported public folder migration scenarios?
 
