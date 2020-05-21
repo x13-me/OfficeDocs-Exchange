@@ -91,7 +91,7 @@ Use an image editing tool to open and edit the images used to build the sign-in 
 
    - olk\_exchange\_text\_stacked\_white\_small.png is used in tnarrow.
 
-3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
+3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use.
 
 4. Save and close the file.
 
