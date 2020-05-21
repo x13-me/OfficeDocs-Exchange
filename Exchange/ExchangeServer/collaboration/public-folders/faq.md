@@ -16,13 +16,21 @@ manager: serdars
 
 ---
 
-# FAQ: Public folders
+# FAQ about public folder migration
+
+This article contains frequently asked questions about public folder migrations.
+
+## FAQs and more information
 
 To learn more about public folders, see [Public folders](public-folders.md).
 
-## FAQ about public folder migration
+For more information on public folder migrations, see:
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md), [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md), or [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md).
+- [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md)
+- [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
+- [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
+- [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
+- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md).
 
 ### What are the supported public folder migration scenarios?
 
