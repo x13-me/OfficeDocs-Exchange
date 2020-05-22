@@ -49,7 +49,7 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 > [!NOTE]
 > The value for the _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
 
-For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics).
+For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics).
 
 Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
 
@@ -85,7 +85,7 @@ This example returns additional information about the items within the public fo
 Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics).
 
 Note that some parameters and settings might be available only in Exchange Online or only in Exchange Server.
 
@@ -107,4 +107,8 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
+<<<<<<< Updated upstream
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
+=======
+For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics).
+>>>>>>> Stashed changes

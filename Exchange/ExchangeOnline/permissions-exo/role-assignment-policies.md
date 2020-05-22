@@ -97,7 +97,7 @@ This example returns the roles that are assigned to the policy named Default Rol
 Get-ManagementRoleAssignment -RoleAssignee "Default Role Assignment Policy" | Format-Table Name,Role -Auto
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment).
 
 **Note**: To return a list of all available end-user roles, run the following command:
 
@@ -137,7 +137,7 @@ This example adds the role MyMailboxDelegation to the role assignment policy nam
 New-ManagementRoleAssignment -Role MyMailboxDelegation -Policy "Default Role Assignment Policy"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### Use Exchange Online PowerShell to remove roles from a role assignment policy
 
@@ -156,7 +156,7 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
    Remove-ManagementRoleAssignment -Identity "MyDistributionGroups-Default Role Assignment Policy"
    ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-managementroleassignment).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/remove-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -200,7 +200,7 @@ This example creates a new role assignment policy named Contoso Contractors that
 New-RoleAssignmentPolicy -Name "Contoso Contractors" -Description "Limited self-management capabilities for contingent staff."] -Roles "MyBaseOptions","MyContactInformation","MyProfileInformation"
 ```
 
-For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-roleassignmentpolicy).
+For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-roleassignmentpolicy).
 
 ### How do you know this worked?
 
@@ -238,7 +238,7 @@ Set-RoleAssignmentPolicy -Identity "Contoso Users" -IsDefault
 
 **Note**: The _IsDefault_ switch is also available on the **New-RoleAssignmentPolicy** cmdlets.
 
-For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-roleassignmentpolicy).
+For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-roleassignmentpolicy).
 
 ### How do you know this worked?
 
@@ -278,7 +278,7 @@ This example removes the role assignment policy named Contoso Managers.
 Remove-RoleAssignmentPolicy -Identity "Contoso Managers"
 ```
 
-For detailed syntax and parameter information, see [Remove-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-roleassignmentpolicy).
+For detailed syntax and parameter information, see [Remove-RoleAssignmentPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-roleassignmentpolicy).
 
 ### How do you know this worked?
 

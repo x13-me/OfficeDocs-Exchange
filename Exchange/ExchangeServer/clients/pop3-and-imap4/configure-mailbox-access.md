@@ -85,7 +85,7 @@ This example enables POP3 and IMAP4 access to the mailbox named Rand Zaher.
 Set-CasMailbox -Identity "Rand Zaher" -POPEnabled $true -ImapEnabled $true
 ```
 
-For more information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For more information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## Enable or disable POP3 or IMAP4 access to multiple mailboxes
 
@@ -143,7 +143,7 @@ This example uses the text file C:\My Documents\Accounts.txt to disable POP3 or 
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CASMailbox $_ -PopEnabled $false -ImapEnabled $false}
 ```
 
-For more information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+For more information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ## Restart the POP3 or IMAP4 services
 

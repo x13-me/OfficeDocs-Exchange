@@ -91,7 +91,7 @@ Get-ExchangeCertificate -Thumbprint 5DB9879E38E36BCB60B761E29794392B23D1C054 | N
 
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
 
-- For more information, see [Get-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-exchangecertificate) and [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-exchangecertificate).
+- For more information, see [Get-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/get-exchangecertificate) and [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/new-exchangecertificate).
 
 ### How do you know this worked?
 

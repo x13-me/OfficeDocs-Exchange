@@ -91,7 +91,7 @@ This example enables Outlook on the web access to the mailbox named Elly Nkya.
 Set-CasMailbox -Identity "Elly Nkya" -OWAEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## Enable or disable Outlook on the web access to multiple mailboxes
 
@@ -149,7 +149,7 @@ This example uses the text file C:\My Documents\Accounts.txt to disable Outlook 
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -OWAEnabled $false}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ## How do you know this worked?
 

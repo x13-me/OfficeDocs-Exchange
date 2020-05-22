@@ -291,7 +291,7 @@ You can manage public folders by using either the EAC or the Shell. For more inf
 
 The Microsoft Exchange recipient is a special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender that was used for system-generated messages in earlier versions of Exchange.
 
-The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
+The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
 
 > [!NOTE]
 > When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.

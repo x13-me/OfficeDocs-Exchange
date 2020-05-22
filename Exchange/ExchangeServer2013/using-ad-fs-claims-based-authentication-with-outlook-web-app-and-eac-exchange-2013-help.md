@@ -123,7 +123,7 @@ Additional information you might want to know
 
 ## Step 1 - Review the certificate requirements for AD FS
 
-Certificates play a critical role in securing communications between Exchange 2013 SP1 servers; web clients such as Outlook Web App; and EAC, Windows Server 2012 R2 servers, including Active Directory Federation Services (AD FS) servers and Web Application Proxy servers. The requirements for certificates vary depending on whether you are setting up an AD FS server, AD FS Proxy, or Web Application Proxy server. The certificates that are used for AD FS services including the SSL and token signing certificates must be imported into the Trust Root Certification Authorities store on all of your Exchange, AD FS and Web Application Proxy servers. The thumbprint for the certificate that is imported is also used on the Exchange 2013 SP1 servers when you use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet.
+Certificates play a critical role in securing communications between Exchange 2013 SP1 servers; web clients such as Outlook Web App; and EAC, Windows Server 2012 R2 servers, including Active Directory Federation Services (AD FS) servers and Web Application Proxy servers. The requirements for certificates vary depending on whether you are setting up an AD FS server, AD FS Proxy, or Web Application Proxy server. The certificates that are used for AD FS services including the SSL and token signing certificates must be imported into the Trust Root Certification Authorities store on all of your Exchange, AD FS and Web Application Proxy servers. The thumbprint for the certificate that is imported is also used on the Exchange 2013 SP1 servers when you use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 In any AD FS design, various certificates must be used to secure communication between users on the Internet and AD FS servers. Each federation server must have a service communication certificate or Secure Socket Layer (SSL) certificate and a token-signing certificate before AD FS servers, Active Directory domain controllers, and Exchange 2013 servers can communicate and authenticate. Depending on your security and budget requirements, carefully consider which of your certificates will be obtained by a public CA or an Enterprise CA. If you want to install and configure an Enterprise Root or Subordinate CA, you can use Active Directory Certificate Services (AD CS). If you want to know more about AD CS, see [Active Directory Certificate Services Overview](https://go.microsoft.com/fwlink/?linkid=392697).
 
@@ -499,13 +499,13 @@ After you complete these steps, Web Application Proxy will perform AD FS authent
 
 ## Step 7 - Configure Exchange 2013 to use AD FS authentication
 
-When you are configuring AD FS to be used for claims-based authentication with Outlook Web App and EAC in Exchange 2013, you must enable AD FS for your Exchange organization. You must use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet to configure AD FS settings for your organization:
+When you are configuring AD FS to be used for claims-based authentication with Outlook Web App and EAC in Exchange 2013, you must enable AD FS for your Exchange organization. You must use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to configure AD FS settings for your organization:
 
 - Set the AD FS issuer to **https://adfs.contoso.com/adfs/ls/**.
 
 - Set the AD FS URIs to **https://mail.contoso.com/owa/** and **https://mail.contoso.com/ecp/**.
 
-- Find the AD FS token signing certificate thumbprint by using Windows PowerShell on the AD FS server and entering `Get-ADFSCertificate -CertificateType "Token-signing"`. Then, assign the token-signing certificate thumbprint that you found. If the AD FS token-signing certificate has expired, the thumbprint from the new AD FS token-signing certificate must be updated by using the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet.
+- Find the AD FS token signing certificate thumbprint by using Windows PowerShell on the AD FS server and entering `Get-ADFSCertificate -CertificateType "Token-signing"`. Then, assign the token-signing certificate thumbprint that you found. If the AD FS token-signing certificate has expired, the thumbprint from the new AD FS token-signing certificate must be updated by using the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 Run the following commands in the Exchange Management Shell.
 
@@ -517,7 +517,7 @@ Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudi
 > [!NOTE]
 > The <EM>-AdfsEncryptCertificateThumbprint</EM> parameter isn't supported for these scenarios.
 
-For details and syntax, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) and [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
+For details and syntax, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) and [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
 
 ## Step 8 - Enable AD FS authentication on the OWA and ECP virtual directories
 

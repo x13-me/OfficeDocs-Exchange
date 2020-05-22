@@ -40,9 +40,9 @@ After creating the target mail user, you can then run the **New-MoveRequest** or
 
 For more information about remote move requests, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest)
+- [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest)
 
 For more information about remote mailbox moves and remote legacy moves, see [Move Mailboxes to Exchange 2016](https://technet.microsoft.com/library/mt473797.aspx).
 

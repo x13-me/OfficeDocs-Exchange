@@ -90,11 +90,11 @@ This example retrieves all archive DPTs and personal tags and disables them.
 Get-RetentionPolicyTag | ? {$_.RetentionAction -eq "MoveToArchive"} | Set-RetentionPolicyTag -RetentionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentionpolicytag) and [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicytag).
+For detailed syntax and parameter information, see [Set-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/set-retentionpolicytag) and [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicytag).
 
 ## How do you know this worked?
 
-Use the [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicytag) cmdlet to retrieve settings of the retention tag.
+Use the [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicytag) cmdlet to retrieve settings of the retention tag.
 
 This command retrieves properties of the `Default 2 year move to archive` retention tag and pipes the output to the **Format-List** cmdlet to display all properties in a list format.
 

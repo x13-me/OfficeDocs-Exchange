@@ -97,7 +97,7 @@ After you create the Send connector, it appears in the Send connector list. To c
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 
-   For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+   For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 > [!NOTE]
 > To configure the Send connector to proxy outbound mail through the Front End Transport service, add `-FrontEndProxyEnabled $true` to the command. For more information, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).

@@ -110,7 +110,7 @@ This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Se
 New-MailUser -Name "Jeffrey Zeng" -Alias jeffreyz -ExternalEmailAddress jzeng@tailspintoys.com -FirstName Jeffrey -LastName Zeng -UserPrincipalName jeffreyz@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser).
+For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser).
 
 ### How do you know this worked?
 
@@ -256,13 +256,13 @@ Properties for a mail user are stored in both Active Directory and Exchange. In 
 
 Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 Here are some examples of using the Exchange Management Shell to change mail user properties.
 
@@ -290,7 +290,7 @@ This example sets the CustomAttribute1 property to a value of ContosoEmployee fo
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')" | Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
-For detailed syntax and parameter information, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser).
+For detailed syntax and parameter information, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
 
 ### How do you know this worked?
 

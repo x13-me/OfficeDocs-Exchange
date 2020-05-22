@@ -170,7 +170,7 @@ New-JournalRule -Name "Regulation 123" -JournalEmailAddress "Journal Mailbox" -R
 
  **Note**: To create a journal rule that applies to all recipients, don't use the _Recipient_ parameter.
 
-For detailed syntax and parameter information, see [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule).
+For detailed syntax and parameter information, see [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule).
 
 #### How do you know this worked?
 
@@ -249,7 +249,7 @@ No additional settings are available when you modify a journal rule. They're the
 
     You can't use the **Set-Journal** cmdlet to enable or disable the rule (there's no _Enabled_ parameter). To enable or disable the rule, you use the **Enable-JournalRule** and **Disable-JournalRule** cmdlets as described in the [Enable or disable journal rules](#enable-or-disable-journal-rules) section.
 
-    For detailed syntax and parameter information, see [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule).
+    For detailed syntax and parameter information, see [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule).
 
 ### Remove journal rules
 
@@ -273,7 +273,7 @@ This example removes the journal rule named Brokerage Journal Rule.
 Remove-JournalRule "Brokerage Journal Rule"
 ```
 
-For detailed syntax and parameter information, see [Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule).
+For detailed syntax and parameter information, see [Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule).
 
 #### How do you know this worked?
 

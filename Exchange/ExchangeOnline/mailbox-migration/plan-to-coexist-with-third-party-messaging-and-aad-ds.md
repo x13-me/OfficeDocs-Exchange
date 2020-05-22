@@ -129,7 +129,7 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 After you've updated your Active Directory with the Exchange schema, you can now *mail-enable* existing users in your Active Directory. In the context of this scenario, mail-enabled users represent the users (that have mailboxes) in your on-premises messaging system that you want to represent in the cloud address book.
 
-Using the Exchange Management Shell, run [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
+Using the Exchange Management Shell, run [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
 
 The **Enable-MailUser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the *target address* of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
 
@@ -151,9 +151,9 @@ To learn more about how to install, configure, and run Exchange Management Shell
 
 If you need to create or modify users in your on-premises Active Directory, see the following topics:
 
-- **Create new users**: [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser)
+- **Create new users**: [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser)
 
-- **Modify existing users**: [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- **Modify existing users**: [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 ## Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365)
 

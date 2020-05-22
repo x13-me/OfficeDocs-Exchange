@@ -138,7 +138,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [New-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/New-SharingPolicy)
 
-- [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/Set-ExchangeServer)
+- [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer)
 
 - [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OwaVirtualDirectory)
 

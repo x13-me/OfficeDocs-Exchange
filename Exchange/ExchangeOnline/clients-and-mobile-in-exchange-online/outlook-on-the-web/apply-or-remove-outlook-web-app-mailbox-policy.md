@@ -127,7 +127,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
   $Mgrs | foreach {Set-CasMailbox -Identity $_ -OwaMailboxPolicy "Managers and Executives"}
   ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ### How do you know this worked?
 
@@ -175,7 +175,7 @@ This example removes the Outlook on the web mailbox policy from mailbox of the u
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ### How do you know this worked?
 

@@ -96,7 +96,7 @@ If you still want to create a distribution group, use the following steps:
 
      - **Owner Approval**: All requests are manually approved or rejected by the group owners. If you select this option, the group owners will receive an email message requesting approval to join the group.
 
-   - **Choose whether the group is open to leave**: Specify whether approval is required for people to leave the group. Select one of the following settings:
+For more information about using Exchange Online PowerShell to create distribution groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
      - **Open**: Anyone can leave this group without being approved by the group owners. This is the default value.
 
@@ -105,7 +105,7 @@ If you still want to create a distribution group, use the following steps:
 4. When you're finished, click **Save** to create the distribution group.
 
 > [!NOTE]
-> By default, new distribution groups only accept messages from authenticated (internal) senders, and messages from external senders are rejected. To configure a distribution group to accept messages from all senders, you need to modify the [message delivery restriction settings](#delivery-management) for the group.
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group) cmdlet using Exchange Online PowerShell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or Exchange Online PowerShell to manage these groups
 
 ### Use the EAC to modify distribution groups
 
@@ -271,9 +271,9 @@ For detailed syntax and parameter information, see [New-DistributionGroup](https
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup)
+- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup)
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change distribution group properties.
 

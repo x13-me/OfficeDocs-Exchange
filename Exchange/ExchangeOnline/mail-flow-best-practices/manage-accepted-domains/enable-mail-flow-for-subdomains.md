@@ -75,7 +75,7 @@ This example sets up match subdomains for the contoso.com domain.
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
 #### How do you know this worked?
 

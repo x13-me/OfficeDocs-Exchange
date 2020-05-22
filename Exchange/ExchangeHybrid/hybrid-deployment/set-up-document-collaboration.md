@@ -64,7 +64,7 @@ Verify that the following prerequisite steps have been completed, and then use t
 
 - Exchange 2016 must be installed in your on-premises organization. Exchange 2016 can coexist with earlier versions of Exchange, but document collaboration will only work for mailboxes on an Exchange 2016 server.
 
-- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
+- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
     > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).

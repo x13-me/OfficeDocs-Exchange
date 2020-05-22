@@ -52,4 +52,4 @@ This example removes the ABP ABP_TailspinToys.
 Remove-AddressBookPolicy -Identity "ABP_TailspinToys"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addressbookpolicy).
+For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-addressbookpolicy).

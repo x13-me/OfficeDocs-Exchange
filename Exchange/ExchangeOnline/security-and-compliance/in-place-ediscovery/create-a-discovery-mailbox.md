@@ -57,7 +57,7 @@ New-Mailbox -Name SearchResults -Discovery
 > [!IMPORTANT]
 > The 'Name' parameter must not contain any spaces.
 
-For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
@@ -65,7 +65,7 @@ To display a list of all discovery mailboxes in an Exchange organization, run th
 Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
 ## Step 3: Assign permissions to a discovery mailbox
 
@@ -81,7 +81,7 @@ For example, the following command assigns the Full Access permission to the Lit
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
 ```
 
-For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
+For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
 
 ## More information
 

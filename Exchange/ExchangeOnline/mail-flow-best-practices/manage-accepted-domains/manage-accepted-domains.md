@@ -119,7 +119,7 @@ This example configures the accepted domain named contoso.com as an internal rel
 Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
 ### How do you know this worked?
 
