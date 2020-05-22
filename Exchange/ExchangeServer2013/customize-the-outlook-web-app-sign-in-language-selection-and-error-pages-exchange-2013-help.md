@@ -61,7 +61,7 @@ For information about creating a custom theme, see [Create a theme for Outlook W
 
 ## Customize the color of the language selection page
 
-1. Log on to the Exchange server and use Windows Explorer to go to the Exchange server installation directory and find \\V15\\ClientAccess\\Owa\\prem\\\<version\>\\resources\\styles.
+1. Log on to the Exchange server, then use Windows Explorer to go to the Exchange server installation directory and find \\V15\\ClientAccess\\Owa\\prem\\\<version\>\\resources\\styles.
 
 2. Use a text editor, such as Notepad, to open LanguageSelection.css.
 
