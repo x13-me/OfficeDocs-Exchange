@@ -93,7 +93,7 @@ I plan to use Exchange Online to host all my organization's mailboxes. All email
 
 We don't recommend or support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). If you choose this scenario, your organization's mail flow setup looks like the following diagram:
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
 #### Best practices for using a third-party cloud service with Office 365
 
