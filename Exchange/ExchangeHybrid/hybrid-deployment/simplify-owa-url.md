@@ -62,7 +62,7 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
    ```
 
    > [!NOTE]
-   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-organizationrelationship) cmdlet to find the organization relationship name.
+   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
 
 ## Multiple authentication prompts
 

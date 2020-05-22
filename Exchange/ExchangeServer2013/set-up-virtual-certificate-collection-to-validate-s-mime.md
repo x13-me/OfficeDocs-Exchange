@@ -35,7 +35,7 @@ This example imports the SST file C:\My Documents\Exported Certificate Store.sst
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
-For detailed syntax and parameter information, see [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).
+For detailed syntax and parameter information, see [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig).
 
 ## Validating certificates
 
@@ -45,4 +45,4 @@ Exchange 2013 SP1 or later first checks for the SST file and validates the certi
 
 [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 
-[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
+[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig)

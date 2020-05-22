@@ -207,17 +207,21 @@ Add an additional step here suggesting to run Source Side Validation script at m
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-accepteddomain)
+- [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/new-accepteddomain)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
+<<<<<<< Updated upstream
 - [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
+=======
+- [get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
+>>>>>>> Stashed changes
 
-- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
 - [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig)
 
@@ -279,23 +283,23 @@ Get-Mailbox -PublicFolder:$true | Where-Object {$_.ExchangeGuid -eq $hierarchyMa
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder)
+- [get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder)
 
-- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder)
 
-- [remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder)
+- [remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder)
 
-- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -445,19 +449,19 @@ While batch migrations need to be created using the **New-MigrationBatch** cmdle
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-exchangeserver)
+- [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/get-exchangeserver)
 
-- [Get-OutlookAnywhere](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-outlookanywhere)
+- [Get-OutlookAnywhere](https://docs.microsoft.com/powershell/module/exchange/get-outlookanywhere)
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 
@@ -482,7 +486,7 @@ Once you have confirmed the batch and all migration requests have successfully s
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).
+For detailed syntax and parameter information, see [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
@@ -540,11 +544,11 @@ After you finalize the public folder migration, you should run the following tes
 
 For detailed syntax and parameter information, see the following topics:
 
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-[Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+[Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig)
+[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)
 
 ## How do I know this worked?
 

@@ -100,7 +100,7 @@ This example licenses the Exchange server named Mailbox01.
 Set-ExchangeServer Mailbox01 -ProductKey 12345-12345-12345-12345-12345
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/set-exchangeserver).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/set-exchangeserver).
 
 After you license a Mailbox server, run the following command in the Exchange Management Shell to restart the Microsoft Exchange Information Store service:
 

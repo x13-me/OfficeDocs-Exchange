@@ -49,7 +49,7 @@ This example places Michael Allen's mailbox on retention hold.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## Use Exchange Online PowerShell to remove retention hold for a mailbox
 
@@ -59,11 +59,15 @@ This example removes the retention hold from Michael Allen's mailbox.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
+<<<<<<< Updated upstream
 To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve the *RetentionHoldEnabled* property of the mailbox.
+=======
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
+>>>>>>> Stashed changes
 
 This command retrieves the *RetentionHoldEnabled* property for Michael Allen's mailbox.
 

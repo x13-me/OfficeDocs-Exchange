@@ -81,13 +81,13 @@ Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright 
 
 For detailed information about syntax and parameters, see the following topics:
 
-- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxserver)
+- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/get-mailboxserver)
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission)
 
-- [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/add-availabilityaddressspace)
+- [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/add-availabilityaddressspace)
 
-- [Set-AvailabilityConfig](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-availabilityconfig)
+- [Set-AvailabilityConfig](https://docs.microsoft.com/powershell/module/exchange/set-availabilityconfig)
 
 ## Use the Exchange Management Shell to configure organization-wide free/busy information in an untrusted cross-forest topology
 

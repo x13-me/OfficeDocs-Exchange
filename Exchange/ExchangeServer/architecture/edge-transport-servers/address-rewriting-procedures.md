@@ -91,7 +91,7 @@ The following example displays the details of the address rewrite entry named Re
 Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
 ```
 
-For more information, see [Get-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-addressrewriteentry).
+For more information, see [Get-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/get-addressrewriteentry).
 
 ## Use the Exchange Management Shell to create address rewrite entries
 
@@ -149,7 +149,7 @@ This example is just like the previous example, except now messages sent from th
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
 ```
 
-For more information, see [New-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-addressrewriteentry).
+For more information, see [New-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/new-addressrewriteentry).
 
 ### How do you know this worked?
 
@@ -235,7 +235,7 @@ This example adds finanace.contoso.com and removes marketing.contoso.com from th
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
 ```
 
-For more information, see [Set-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-addressrewriteentry).
+For more information, see [Set-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/set-addressrewriteentry).
 
 ### How do you know this worked?
 
@@ -289,7 +289,7 @@ If you're satisfied with the result, run the command again without the _WhatIf_ 
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
 ```
 
-For more information, see [Remove-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-addressrewriteentry).
+For more information, see [Remove-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/remove-addressrewriteentry).
 
 ### How do you know this worked?
 

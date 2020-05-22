@@ -18,7 +18,7 @@ manager: serdars
 
 # Remove a mailbox database copy
 
-You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#remove-a-mailbox-database) or [Remove-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/remove-mailboxdatabase).
+You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#remove-a-mailbox-database) or [Remove-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxdatabase).
 
 Looking for other management tasks related to mailbox database copies? Check out [Manage mailbox database copies](manage-database-copies.md).
 
@@ -63,7 +63,7 @@ This example removes a copy of the mailbox database DB1 from the Mailbox server 
 Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Remove-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxdatabasecopy).
 
 ## How do you know this worked?
 

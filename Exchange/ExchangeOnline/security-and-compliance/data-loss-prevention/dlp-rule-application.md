@@ -102,7 +102,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-classificationrulecollection) cmdlet in Exchange Online PowerShell in the following manner:
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/get-classificationrulecollection) cmdlet in Exchange Online PowerShell in the following manner:
 
 ```
 $rule_collection = Get-ClassificationRuleCollection

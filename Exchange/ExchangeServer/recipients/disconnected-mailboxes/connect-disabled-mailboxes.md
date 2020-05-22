@@ -102,6 +102,7 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 > [!NOTE]
 > If you don't include the _Alias_ parameter when you run the **Connect-Mailbox** cmdlet, the value specified in the _User_ or _LinkedMasterAccount_ parameter is used to create the email address alias for the reconnected mailbox.
 
+<<<<<<< Updated upstream
 This example connects a personal archive to the primary mailbox using the mailbox GUID stored in mailbox database DB01.
 
 ```PowerShell
@@ -118,6 +119,9 @@ Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -
 > You can connect a personal archive mailbox to any primary mailbox you wish, even if it is not the original owner's mailbox. Use the _AllowLegacyDNMismatch_ parameter to allow the connection of the archive mailbox to a different primary mailbox.
 
 For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/connect-mailbox).
+=======
+For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/connect-mailbox).
+>>>>>>> Stashed changes
 
 ## How do you know this worked?
 

@@ -55,7 +55,7 @@ This example removes the address list named Agency A GAL.
 Remove-GlobalAddressList -Identity "Agency A GAL"
 ```
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-globaladdresslist).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/remove-globaladdresslist).
 
 #### How do you know this worked?
 

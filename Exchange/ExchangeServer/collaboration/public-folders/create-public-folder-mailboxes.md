@@ -81,7 +81,7 @@ This example creates a secondary hierarcy public folder mailbox named Istanbul, 
 New-Mailbox -PublicFolder -Name Istanbul
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 ## How do you know this worked?
 

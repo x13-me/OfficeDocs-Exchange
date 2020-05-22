@@ -59,7 +59,7 @@ This example audits the cmdlets specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/set-adminauditlogconfig).
 
 ## Specify the parameters to be audited
 <a name="parameters"> </a>
@@ -89,7 +89,7 @@ This example audits the parameters specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/set-adminauditlogconfig).
 
 ## Specify the admin audit log age limit
 <a name="agelimit"> </a>
@@ -115,7 +115,7 @@ This example specifies an age limit of two years and six months.
 Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/set-adminauditlogconfig).
 
 ## Enable or disable logging of Test cmdlets
 <a name="testcmdlets"> </a>
@@ -134,7 +134,7 @@ This command disables the logging of **Test** cmdlets.
 Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-adminauditlogconfig).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/set-adminauditlogconfig).
 
 ## Disable admin audit logging
 <a name="disable"> </a>

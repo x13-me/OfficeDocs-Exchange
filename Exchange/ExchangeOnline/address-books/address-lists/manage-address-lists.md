@@ -71,7 +71,7 @@ This example creates an address list with a custom recipient filter:
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/new-addresslist).
 
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
@@ -86,7 +86,7 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addresslist).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/new-addresslist).
 
 ### How do you know this worked?
 
@@ -160,9 +160,9 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 - Title, department and address properties require the **Get-User** and **Set-User** cmdlets. CustomAttribute1 through CustomAttribute15 properties require the **Get-Mailbox** and **Set-Mailbox** cmdlets. For more information about what properties are available on which cmdlet, see the following topics:
 
-   - [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+   - [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-   - [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+   - [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
 - If a only small number of users don't appear in the address list, you can modify the required property value for each user. For example:
 
@@ -204,7 +204,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addresslist).
+For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/set-addresslist).
 
 ### How do you know this worked?
 
@@ -228,7 +228,7 @@ This example removes the address list Sales Department, which doesn't contain ch
 Remove-AddressList -Identity "Sales Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addresslist).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/remove-addresslist).
 
 ### How do you know this worked?
 

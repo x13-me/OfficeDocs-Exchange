@@ -51,7 +51,7 @@ Similarly, to keep the OAB configured with Address List 1 and Address 2, but rem
 Set-OfflineAddressBook -Identity "Marketing OAB" -AddressLists "Address List 1","Address List 2"
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
 
 ## How do you know this worked?
 

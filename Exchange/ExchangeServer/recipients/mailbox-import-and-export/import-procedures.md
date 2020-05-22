@@ -124,7 +124,7 @@ This example creates a new mailbox import request with these settings:
 New-MailboxImportRequest -Name "Kathleen Reiter Import" -FilePath \\SERVER01\PSTFiles\Recovered.pst -Mailbox kreiter -IsArchive -IncludeFolders "#Inbox#" -TargetRootFolder "Recovered Files" -Priority High
 ```
 
-For detailed syntax and parameter information, see [New-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboximportrequest).
+For detailed syntax and parameter information, see [New-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboximportrequest).
 
 ### How do you know this worked?
 
@@ -186,7 +186,7 @@ This example returns the summary list of completed mailbox import requests in th
 Get-MailboxImportRequest -Status Completed -BatchName "Import DB01 PSTs"
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboximportrequest).
+For detailed syntax and parameter information, see [Get-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/get-mailboximportrequest).
 
 To view detailed information about a mailbox import request, use this syntax:
 
@@ -202,7 +202,7 @@ This example returns detailed information for the mailbox import request named M
 Get-MailboxImportRequestStatistics -Identity "aal-zuhairi\MailboxImport" -IncludeReport | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxImportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboximportrequeststatistics).
+For detailed syntax and parameter information, see [Get-MailboxImportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboximportrequeststatistics).
 
 ## Use the Exchange Management Shell to modify mailbox import requests
 
@@ -220,7 +220,7 @@ This example modifies the failed mailbox import request for the mailbox of Valer
 Set-MailboxImportRequest -Identity "Valeria Barrios\MailboxImport" -BadItemLimit 5
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboximportrequest).
+For detailed syntax and parameter information, see [Set-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/set-mailboximportrequest).
 
  **Note**: After you modify a suspended or failed mailbox import request, you need to resume it by using the **Resume-MailboxImportRequest** cmdlet.
 
@@ -254,7 +254,7 @@ This example suspends all in-progress mailbox import requests with the comment "
 Get-MailboxImportRequest -Status InProgress | Suspend-MailboxImportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/suspend-mailboximportrequest).
+For detailed syntax and parameter information, see [Suspend-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboximportrequest).
 
  **Notes**:
 
@@ -300,7 +300,7 @@ This example resumes all suspended mailbox import requests.
 Get-MailboxImportRequest -Status Suspended | Resume-MailboxImportRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/resume-mailboximportrequest).
+For detailed syntax and parameter information, see [Resume-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/resume-mailboximportrequest).
 
 ### How do you know this worked?
 
@@ -334,7 +334,7 @@ This example removes all completed mailbox import requests.
 Get-MailboxImportRequest -Status Completed | Remove-MailboxImportRequest
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboximportrequest).
+For detailed syntax and parameter information, see [Remove-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/remove-mailboximportrequest).
 
 ### How do you know this worked?
 

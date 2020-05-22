@@ -69,7 +69,7 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 (Get-DatabaseAvailabilityGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
-For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-healthreport).
+For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/get-healthreport).
 
 ## Use the Exchange Management Shell to view a list of health sets
 
@@ -81,7 +81,7 @@ Run the following command to view the health sets on an Exchange server:
 Get-HealthReport -Server <ServerName>
 ```
 
-For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-healthreport).
+For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/get-healthreport).
 
 ## Use the Exchange Management Shell to view the probes, monitors and responders for a health set
 
@@ -93,7 +93,7 @@ Run the following command to view the probes, monitors and responders associated
 Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
 ```
 
-For detailed syntax and parameter information, see [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-monitoringitemidentity).
+For detailed syntax and parameter information, see [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/get-monitoringitemidentity).
 
 ## Use the Exchange Management Shell to View a List of Monitors and Their Current Health
 
@@ -105,4 +105,4 @@ Run the following command to view a list of the monitors and their current healt
 Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
 ```
 
-For detailed syntax and parameter information, see [Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-serverhealth).
+For detailed syntax and parameter information, see [Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/get-serverhealth).

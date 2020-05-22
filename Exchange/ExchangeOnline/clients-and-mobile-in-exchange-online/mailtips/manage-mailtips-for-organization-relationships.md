@@ -55,7 +55,7 @@ This example configures the organizational relationship to prevent MailTips from
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
 
 ## Use Exchange Online PowerShell to configure which MailTips are returned to the remote organization
 
@@ -80,7 +80,7 @@ This example configures the organizational relationship so that no MailTips are 
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
 
 ## Use Exchange Online PowerShell to configure a specific group of users for whom recipient-specific MailTips are returned
 
@@ -98,4 +98,4 @@ You can specify a MailTips access group on the organizational relationship. Afte
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessScope ShareMailTips@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).

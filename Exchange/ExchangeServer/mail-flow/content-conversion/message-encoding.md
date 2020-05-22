@@ -60,9 +60,9 @@ Mail contacts and mail users represent users that have external email addresses 
 
 When you configure message encoding options for a mail contact or a mail user, the settings are only applied to messages that are sent to that specific recipient. All settings are only available in the Exchange Management Shell in these cmdlets:
 
-- [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailcontact), [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailcontact), or [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact).
+- [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/enable-mailcontact), [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/new-mailcontact), or [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact).
 
-- [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailuser), [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser), or [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser).
+- [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/enable-mailuser), [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser), or [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
 
 The message encoding settings for mail contacts and mail users are described in this list:
 

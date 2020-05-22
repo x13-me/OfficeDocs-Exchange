@@ -241,9 +241,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
 
 - [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-PublicFolderMigrationRequest)
 
@@ -367,13 +367,13 @@ The progress and completion of the migration can be viewed and managed in the EA
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
 - [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolderDatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 

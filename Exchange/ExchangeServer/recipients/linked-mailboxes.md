@@ -107,7 +107,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 ### How do you know this worked?
 
@@ -336,9 +336,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
 Here are some examples of using the Exchange Management Shell to change linked mailbox properties.
 

@@ -78,7 +78,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
    Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
    ```
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addressbookpolicy).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/set-addressbookpolicy).
 
 ### How do you know this worked?
 
