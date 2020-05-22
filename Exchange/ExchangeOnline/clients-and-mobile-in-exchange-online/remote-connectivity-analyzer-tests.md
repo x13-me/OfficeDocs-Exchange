@@ -24,7 +24,7 @@ The [Microsoft Exchange Remote Connectivity Analyzer (ExRCA)](https://testconnec
 
 You can perform several tests with the ExRCA. The following tests work on Exchange 2010 and later versions, including Exchange Online:
 
-- Exchange DNS (only Exchange Online)
+- Exchange DNS (only available in the Office 365 tab)
 
 - Exchange ActiveSync
 
@@ -38,7 +38,7 @@ You can perform several tests with the ExRCA. The following tests work on Exchan
 
 You can run the following tests for Exchange DNS:
 
-- **Help Identify My Issue with Exchange DNS**: This test will check the external domain name settings for your verified domain in Office 365. The test will look for issues with mail delivery such as not receiving incoming email from the Internet and Outlook client connectivity issues that involve connecting to Outlook and Exchange Online.
+- **Help Identify My Issue with Exchange DNS (only available in the Office 365 tab)**: This test will check the external domain name settings for your verified domain in Office 365. The test will look for issues with mail delivery such as not receiving incoming email from the Internet and Outlook client connectivity issues that involve connecting to Outlook and Exchange Online.
 
 ### Exchange ActiveSync tests
 
@@ -53,6 +53,8 @@ The Exchange Web Services tests check the settings for many of the Exchange Web 
 - **Synchronization, Notification, Availability, and Automatic Replies**: These tests walk through many basic Exchange Web Services tasks to confirm that they're working. This is useful for IT administrators who want to troubleshoot external access using Entourage EWS or other Web Services clients.
 
 - **Service Account Access (Developers)**: This test verifies a service account's ability to access a specified mailbox, create and delete items in it, and access it via Exchange impersonation. This test is primarily used by application developers to test the ability to access mailboxes with alternate credentials.
+
+- **Free/Busy (only available in the Office 365 tab)**: This test verifies that an Office 365 mailbox can access the free/busy information of an on-premises mailbox, and vice versa (one direction per test run).
 
 ### Microsoft Office Outlook Connectivity tests
 
