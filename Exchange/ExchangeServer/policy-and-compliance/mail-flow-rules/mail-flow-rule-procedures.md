@@ -136,7 +136,7 @@ This example creates a new rule with the following settings:
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG: "
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
  **Note**: The conditions and actions in the example are for illustrative purposes only. Review the available mail flow rule conditions, exceptions, and actions to determine which ones meet your requirements.
 
@@ -200,7 +200,7 @@ This example returns only the specified properties for the same rule.
 Get-TransportRule -Identity "Sender is a member of marketing" | Format-List Name,State,Mode,Priority,Comments,Conditions,Exceptions,RuleVersion
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-transportrule).
+For detailed syntax and parameter information, see [Get-TransportRule](https://docs.microsoft.com/powershell/module/exchange/get-transportrule).
 
 ### Use the Exchange Management Shell to view the available conditions and exceptions (predicates) for mail flow rules
 
@@ -212,7 +212,7 @@ To view the conditions and exceptions that are available in mail flow rules, run
 Get-TransportRulePredicate
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRulePredicate](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-transportrulepredicate).
+For detailed syntax and parameter information, see [Get-TransportRulePredicate](https://docs.microsoft.com/powershell/module/exchange/get-transportrulepredicate).
 
  **Notes**:
 
@@ -232,7 +232,7 @@ To view the actions that are available in mail flow rules, run the following com
 Get-TransportRuleAction
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRuleAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-transportruleaction).
+For detailed syntax and parameter information, see [Get-TransportRuleAction](https://docs.microsoft.com/powershell/module/exchange/get-transportruleaction).
 
  **Notes**:
 
@@ -266,7 +266,7 @@ This example adds an exception to the rule named "Sender is a member of marketin
 Set-TransportRule -Identity "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
 ```
 
-For detailed syntax and parameter information, see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule).
+For detailed syntax and parameter information, see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule).
 
 ### How do you know this worked?
 
@@ -372,7 +372,7 @@ This example enables the mail flow rule named "Sender is a member of marketing".
 Enable-TransportRule "Sender is a member of marketing"
 ```
 
-For detailed syntax and parameter information, see [Enable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/enable-transportrule) and [Disable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/disable-transportrule).
+For detailed syntax and parameter information, see [Enable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/enable-transportrule) and [Disable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/disable-transportrule).
 
 ### How do you know this worked?
 
@@ -416,7 +416,7 @@ This example removes the mail flow rule named "Sender is a member of marketing":
 Remove-TransportRule -Identity "Sender is a member of marketing"
 ```
 
-For detailed syntax and parameter information, see [Remove-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-transportrule).
+For detailed syntax and parameter information, see [Remove-TransportRule](https://docs.microsoft.com/powershell/module/exchange/remove-transportrule).
 
 ### How do you know this worked?
 
@@ -460,7 +460,7 @@ You can import a mail flow rule collection that you've previously exported as a 
    Set-Content -Path "C:\My Documents\Exported Rules.xml" -Value $file.FileData -Encoding Byte
    ```
 
-For detailed syntax and parameter information, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/export-transportrulecollection).
+For detailed syntax and parameter information, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/export-transportrulecollection).
 
 ### Use the Exchange Management Shell to import a mail flow rule collection
 
@@ -482,7 +482,7 @@ For detailed syntax and parameter information, see [Export-TransportRuleCollecti
    Import-TransportRuleCollection -FileData $Data
    ```
 
-For detailed syntax and parameter information, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/import-transportrulecollection).
+For detailed syntax and parameter information, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/import-transportrulecollection).
 
 ## Need more help?
 

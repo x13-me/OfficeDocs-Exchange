@@ -300,7 +300,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 

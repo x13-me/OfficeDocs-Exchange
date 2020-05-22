@@ -116,7 +116,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 If your searches return many log entries, we recommend that you use the procedure provided in [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### View details of audit log entries
 
@@ -187,4 +187,4 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohi
 
 For more information about the format of the XML file, see [Administrator audit log structure](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/log-structure).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-adminauditlogsearch).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-adminauditlogsearch).

@@ -124,7 +124,7 @@ This example creates a new mailbox export request with these settings:
 New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority Hight
 ```
 
-For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxexportrequest).
+For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxexportrequest).
 
 ### How do you know this worked?
 
@@ -186,7 +186,7 @@ This example returns the summary list of completed mailbox export requests in th
 Get-MailboxExportRequest -Status Completed -BatchName "Export DB01 PSTs"
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxexportrequest).
+For detailed syntax and parameter information, see [Get-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/get-mailboxexportrequest).
 
 To view detailed information about a mailbox export request, use this syntax:
 
@@ -202,7 +202,7 @@ This example returns detailed information for the mailbox export request named M
 Get-MailboxExportRequestStatistics -Identity "aal-zuhairi\MailboxExport" -IncludeReport | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxexportrequeststatistics).
+For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxexportrequeststatistics).
 
 ## Use the Exchange Management Shell to modify mailbox export requests
 
@@ -220,7 +220,7 @@ This example modifies the failed mailbox export request for the mailbox of Valer
 Set-MailboxExportRequest -Identity "Valeria Barrios\MailboxExport" -BadItemLimit 5
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxexportrequest).
+For detailed syntax and parameter information, see [Set-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/set-mailboxexportrequest).
 
  **Note**: After you modify a suspended or failed mailbox export request, you need to resume it by using the **Resume-MailboxExportRequest** cmdlet.
 
@@ -254,7 +254,7 @@ This example suspends all in-progress mailbox export requests with the comment "
 Get-MailboxExportRequest -Status InProgress | Suspend-MailboxExportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/suspend-mailboxexportrequest).
+For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxexportrequest).
 
  **Notes**:
 
@@ -300,7 +300,7 @@ This example resumes all suspended mailbox export requests.
 Get-MailboxExportRequest -Status Suspended | Resume-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/resume-mailboxexportrequest).
+For detailed syntax and parameter information, see [Resume-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxexportrequest).
 
 ### How do you know this worked?
 
@@ -334,7 +334,7 @@ This example removes all completed mailbox export requests.
 Get-MailboxExportRequest -Status Completed | Remove-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxexportrequest).
+For detailed syntax and parameter information, see [Remove-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxexportrequest).
 
 ### How do you know this worked?
 

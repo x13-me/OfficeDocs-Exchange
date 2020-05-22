@@ -123,7 +123,7 @@ New-EmailAddressPolicy -Name "Northwest Executives" -RecipientFilter "(Recipient
 
 - The _EnabledEmailAddressTemplates_ parameter requires at least one template with the `<Type>` value `SMTP` (to define the primary SMTP email address). After that, if you don't include a `<Type>` prefix for a template, the value `smtp` (an SMTP proxy address) is assumed.
 
-For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-emailaddresspolicy).
+For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/new-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -205,7 +205,7 @@ This example clears the disabled email address templates from the email address 
 Set-EmailAddressPolicy -Identity "Contoso Executives" -DisabledEmailAddressTemplates $null
 ```
 
-For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-emailaddresspolicy).
+For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/set-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -255,7 +255,7 @@ This example applies the email address policy named Northwest Executives.
 Update-EmailAddressPolicy -Identity "Northwest Executives"
 ```
 
-For detailed syntax and parameter information, see [Update-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-emailaddresspolicy).
+For detailed syntax and parameter information, see [Update-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/update-emailaddresspolicy).
 
 ### How do you know this worked?
 
@@ -297,7 +297,7 @@ This example removes the email address policy named Southeast Offices.
 Remove-EmailAddressPolicy -Identity "Southeast Offices"
 ```
 
-For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-emailaddresspolicy).
+For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-emailaddresspolicy).
 
 ### How do you know this worked?
 

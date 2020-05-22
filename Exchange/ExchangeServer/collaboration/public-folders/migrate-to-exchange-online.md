@@ -38,7 +38,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller, or divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information.
 
     > [!NOTE]
-    > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
+    > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
 
 - In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes. However, a maximum of 100 public folders is supported for migration from Exchange Server.
 
@@ -394,11 +394,11 @@ Once these commands have run, you can proceed to the next step. Note that these 
 
 You can use the following cmdlets to monitor your migration:
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest?view=exchange-ps)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest?view=exchange-ps)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics?view=exchange-ps)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics?view=exchange-ps)
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch?view=exchange-ps)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch?view=exchange-ps)
 
 ## Step 6: Lock down the public folders on the Exchange on-premises server (public folder downtime required)
 

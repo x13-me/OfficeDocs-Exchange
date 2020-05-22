@@ -43,7 +43,7 @@ Exchange automatically creates at installation the virtual directory `autodiscov
 
 The SCP object is also created in Active Directory at the same time as the Autodiscover service virtual directory. The SCP stores and provides authoritative URLs of the Autodiscover service for domain-joined computers.
 
- You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-clientaccessservice).
+ You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](https://docs.microsoft.com/powershell/module/exchange/set-clientaccessservice).
 
 > [!IMPORTANT]
 > You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
@@ -179,10 +179,10 @@ You'll need to make sure that you have configured the correct external URLs for 
 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|
-|[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/Set-OabVirtualDirectory)|`Get-OabVirtualDirectory | Set-OabVirtualDirectory -ExternalURL https://mail.companycontoso.com/oab`|OAB virtual directories used in IIS|
-|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|`Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -ExternalURL https://mail.companycontoso.com/ews/exchange.asmx`|Exchange Web Services virtual directories in IIS|
-|[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OutlookAnywhere)|`Get-OutlookAnywhere | Set-OutlookAnywhere -ExternalHostname mail.contoso.com -ExternalClientsRequireSsl $true`|Outlook Anywhere virtual directories in IIS|
-|[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <br/><br/> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
+|[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/Set-OabVirtualDirectory)|`Get-OabVirtualDirectory | Set-OabVirtualDirectory -ExternalURL https://mail.companycontoso.com/oab`|OAB virtual directories used in IIS|
+|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/Set-WebServicesVirtualDirectory)|`Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -ExternalURL https://mail.companycontoso.com/ews/exchange.asmx`|Exchange Web Services virtual directories in IIS|
+|[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/Set-OutlookAnywhere)|`Get-OutlookAnywhere | Set-OutlookAnywhere -ExternalHostname mail.contoso.com -ExternalClientsRequireSsl $true`|Outlook Anywhere virtual directories in IIS|
+|[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <br/><br/> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
 
 
 Click the Service name in the preceding table for more information about how to obtain or reconfigure these URLs.

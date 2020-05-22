@@ -42,4 +42,4 @@ This example creates an OAB named OAB_Contoso that uses web-based distribution f
 New-OfflineAddressBook -Name "OAB_Contoso" -AddressLists "\Default Global Address List" -VirtualDirectories $Null -GlobalWebDistributionEnabled $True
 ```
 
-For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-offlineaddressbook).
+For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/new-offlineaddressbook).

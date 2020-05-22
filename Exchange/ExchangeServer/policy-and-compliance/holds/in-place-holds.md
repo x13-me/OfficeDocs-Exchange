@@ -93,7 +93,7 @@ This example places an In-Place Hold on all public folders in the organization, 
 New-MailboxSearch -Name "Hold for Public Folders" -AllPublicFolderSources $true -AllSourceMailboxes $false -ItemHoldPeriod 2555 -InPlaceHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch).
 
 ### How do you know this worked?
 
@@ -143,7 +143,7 @@ This example first disables In-Place Hold named Hold-CaseId012 and then removes 
 Set-MailboxSearch "Hold-CaseId012" -InPlaceHoldEnabled $false; Remove-MailboxSearch "Hold-CaseId012"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch).
+For detailed syntax and parameter information, see [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch).
 
 ### How do you know this worked?
 

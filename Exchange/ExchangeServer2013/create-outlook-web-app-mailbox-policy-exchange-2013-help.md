@@ -53,7 +53,7 @@ This example creates an Outlook Web App mailbox policy named `Policy1`.
   New-OwaMailboxPolicy -Name Policy1
   ```
 
-For more information about syntax and parameters, see [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/new-owamailboxpolicy). For information about using the Shell to configure an Outlook Web App mailbox policy, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
+For more information about syntax and parameters, see [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy). For information about using the Shell to configure an Outlook Web App mailbox policy, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
 ## How do you know this worked?
 

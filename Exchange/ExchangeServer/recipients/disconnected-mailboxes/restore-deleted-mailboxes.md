@@ -129,7 +129,7 @@ Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printe
 > [!NOTE]
 > You can also use the `LegacyDN` or `MailboxGuid` values to identify the deleted mailbox.
 
-For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/connect-mailbox).
+For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/connect-mailbox).
 
 ### How do you know this worked?
 
@@ -178,7 +178,7 @@ This example restores Pilar Pinilla's deleted archive mailbox to her current arc
 New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxrestorerequest).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxrestorerequest).
 
 ### How do you know this worked?
 
@@ -188,6 +188,6 @@ For more information, see:
 
 - [Manage Mailbox Restore Requests](https://docs.microsoft.com/exchange/manage-mailbox-restore-requests-exchange-2013-help)
 
-- [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxrestorerequest)
+- [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/get-mailboxrestorerequest)
 
-- [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxrestorerequeststatistics)
+- [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxrestorerequeststatistics)

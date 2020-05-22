@@ -143,7 +143,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
 ### Use the Exchange Management Shell to create a transport rule
 
-This example uses the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule) cmdlet to create a new transport rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
+This example uses the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule) cmdlet to create a new transport rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
 
 ```powershell
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
@@ -188,7 +188,7 @@ To view the properties of a specific transport rule, you provide the name of tha
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
-To modify the properties of an existing rule, use the [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
+To modify the properties of an existing rule, use the [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
 
 ```powershell
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
@@ -208,7 +208,7 @@ To verify that you have successfully modified a transport rule, do the following
 
 ## Transport rule properties
 
-You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-transportrule)
+You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule)
 
 |**Condition Name in the EAC**|**Condition name in Exchange Management Shell**|**Properties**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -315,7 +315,7 @@ To verify that you have successfully removed the transport rule, do the followin
 
 ## Import or export a transport rule collection
 
-You must use the Exchange Management Shell to import or export a transport rule collection. For information about how to import a transport rule collection from an XML file, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/import-transportrulecollection). For information about how to export a transport rule collection to an XML file, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/export-transportrulecollection).
+You must use the Exchange Management Shell to import or export a transport rule collection. For information about how to import a transport rule collection from an XML file, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/import-transportrulecollection). For information about how to export a transport rule collection to an XML file, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/export-transportrulecollection).
 
 ## Need more help?
 

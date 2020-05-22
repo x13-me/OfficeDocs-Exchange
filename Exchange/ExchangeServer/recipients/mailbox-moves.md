@@ -40,7 +40,7 @@ Mailbox moves in Exchange 2016 and Exchange 2019 use the batch move architecture
 
 - Periodic incremental syncs to update migration changes.
 
-You can move mailboxes in the Exchange admin center (EAC), or by using the [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) or [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) cmdlets in the Exchange Management Shell.
+You can move mailboxes in the Exchange admin center (EAC), or by using the [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) or [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) cmdlets in the Exchange Management Shell.
 
 ## Scenarios for local and cross-forest mailbox moves
 
@@ -80,7 +80,7 @@ Migration endpoints specify the remote server information, source throttling set
 
 - Offboarding mailbox move migrations in hybrid organizations (from Office 365 to Exchange) require an ExchangeRemoteMove migration endpoint as the *target* of the migration batch.
 
-You can create migration endpoints in the EAC or by using the [New-MigrationEndpoint](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationendpoint) cmdlet in the Exchange Management Shell.
+You can create migration endpoints in the EAC or by using the [New-MigrationEndpoint](https://docs.microsoft.com/powershell/module/exchange/new-migrationendpoint) cmdlet in the Exchange Management Shell.
 
 ## MRS Proxy endpoints for cross-forest and remote mailbox moves
 

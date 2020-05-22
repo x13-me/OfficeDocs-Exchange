@@ -49,7 +49,7 @@ Get-SystemMessage -Original | Select-Object -Property Identity,DsnCode,Language,
 
  **Note**: You should output the list to a file, because the list is very long, and you'll receive errors if you don't have the required language packs installed.
 
-For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-systemmessage).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/get-systemmessage).
 
 ## Use the Exchange Management Shell to view custom NDRs
 
@@ -81,7 +81,7 @@ This example returns detailed information for the custom English NDR for the **P
 Get-SystemMessage En\ProhibitSendReceiveMailBox | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-systemmessage).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/get-systemmessage).
 
 ## Create custom NDRs
 
@@ -115,7 +115,7 @@ New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried 
 New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="https://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-systemmessage).
+For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/new-systemmessage).
 
 ### Use the Exchange Management Shell to create custom NDRs for quotas
 
@@ -139,7 +139,7 @@ This example creates a custom English plain text NDR for the **ProhibitSendRecei
 New-SystemMessage -Language En -QuotaMessageType ProhibitSendReceiveMailBox -Text "Your mailbox is full, and can't send or receive messages. Delete any unwanted large messages (messages with attachments) and empty your Deleted Items folder"
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-systemmessage).
+For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/new-systemmessage).
 
 ### How do you know this worked?
 
@@ -183,7 +183,7 @@ Set-SystemMessage -Identity En\Internal\5.1.2 -Original
 
  **Note**: If there's no corresponding default NDR, you receive an error when you use the _Original_ switch.
 
-For detailed syntax and parameter information, see [Set-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-systemmessage).
+For detailed syntax and parameter information, see [Set-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/set-systemmessage).
 
 ### How do you know this worked?
 
@@ -215,7 +215,7 @@ This example removes the custom English NDR for the **ProhibitSendReceive** quot
 Remove-SystemMessage -Identity En\ProhibitSendReceiveMailBox
 ```
 
-For detailed syntax and parameter information, see [Remove-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-systemmessage).
+For detailed syntax and parameter information, see [Remove-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/remove-systemmessage).
 
 ### How do you know this worked?
 

@@ -49,7 +49,7 @@ This example places Michael Allen's mailbox on retention hold.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## Use Exchange Online PowerShell to remove retention hold for a mailbox
 
@@ -59,11 +59,11 @@ This example removes the retention hold from Michael Allen's mailbox.
 Set-Mailbox "Michael Allen" -RetentionHoldEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
-To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve the *RetentionHoldEnabled* property of the mailbox.
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
 
 This command retrieves the *RetentionHoldEnabled* property for Michael Allen's mailbox.
 
@@ -82,7 +82,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $t
 
 ## Difference between *ElcProcessingDisabled* and *RetentionHoldEnabled*
 
-*ElcProcessingDisabled* is another mailbox property that's related to the processing of a mailbox by the Managed Folder Assistant (the default value for this property is **False**). When the *ElcProcessingDisabled* property is set to **True** (by using the `Set-Mailbox -ElcProcessingDisabled $true` command), it prevents the Managed Folder Assistant from processing the mailbox at all. So in addition to not processing the MRM retention policy, other functions performed by the Managed Folder assistant, such as expiring items in the Recoverable Items folder by marking them for permanent removal, won't be performed. For more information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).
+*ElcProcessingDisabled* is another mailbox property that's related to the processing of a mailbox by the Managed Folder Assistant (the default value for this property is **False**). When the *ElcProcessingDisabled* property is set to **True** (by using the `Set-Mailbox -ElcProcessingDisabled $true` command), it prevents the Managed Folder Assistant from processing the mailbox at all. So in addition to not processing the MRM retention policy, other functions performed by the Managed Folder assistant, such as expiring items in the Recoverable Items folder by marking them for permanent removal, won't be performed. For more information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 
 In contrast, when *RetentionHoldEnabled* is set to **True**, the Managed Folder Assistant will continue to process the MRM retention policy on the mailbox (including applying retention tags to items), but it will not expire items in folders that are visible to the user (that is, in folders in the IPM subtree of the mailbox). However, the Managed Folder Assistant will continue to process items in the Recoverable Items folder, including purging expired items. So setting *ElcProcessingDisabled* to **True** is more restrictive and has more consequences than setting the *RetentionHoldEnabled* property to **True**.
 

@@ -47,7 +47,7 @@ This example sets the OAB named My OAB as the default OAB.
 Set-OfflineAddressBook -Identity "My OAB" -IsDefault $true
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
 
 ## How do you know this worked?
 

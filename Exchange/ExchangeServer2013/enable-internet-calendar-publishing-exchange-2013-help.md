@@ -62,7 +62,7 @@ This example configures a Web proxy URL on Mailbox server MAIL01.
 Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/Set-ExchangeServer).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer).
 
 ### How do you know this step worked?
 

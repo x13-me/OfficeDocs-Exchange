@@ -129,7 +129,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 ### How do you know this worked?
 
@@ -201,7 +201,7 @@ This example finds all user accounts that aren't mail-enabled and that aren't sy
 Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$null" -ResultSize unlimited | Enable-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/enable-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/enable-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ### How do you know this worked?
 

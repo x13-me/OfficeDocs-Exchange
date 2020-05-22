@@ -134,7 +134,7 @@ This example creates a security group with these settings:
 New-DistributionGroup -Type Security -Name "File Server Managers" -Alias fsadmin -Members "Bishamon Tamura","Valeria Barrios" -CopyOwnerToMember
 ```
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
+For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -348,7 +348,7 @@ You use the **Set-DistributionGroup** cmdlet to modify mail-enabled security gro
 
 - Instead of specifying the internal recipients who *are* allowed to send messages to the group, you can specify the internal recipients who *aren't* allowed to send messages to the group (the _RejectMessagesFromSendersOrMembers_ parameter).
 
-For detailed syntax and parameter information, see [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup).
+For detailed syntax and parameter information, see [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup).
 
 This example configures the value DoNotMigrate for the **CustomAttribute5** property of the group named Experimental Project.
 
@@ -390,7 +390,7 @@ This example returns detailed information for the mail-enabled security group na
 Get-DistributionGroup -Identity "Help Desk" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup).
+For detailed syntax and parameter information, see [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup).
 
 ## Remove mail-enabled security groups
 
@@ -474,7 +474,7 @@ Enable-DistributionGroup -Identity "Help Desk" -Alias hdesk
 
 After you mail-enable the security group, the group will be visible to all other **\*-DistributionGroup** cmdlets.
 
-For detailed syntax and parameter information, see [Enable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-distributiongroup).
+For detailed syntax and parameter information, see [Enable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/enable-distributiongroup).
 
 #### How do you know this worked?
 
@@ -514,7 +514,7 @@ Disable-DistributionGroup -Identity "Human Resources"
 
 - After you mail-disable the security group, the group will be invisible to all **\*-DistributionGroup** cmdlets except **Enable-DistributionGroup**.
 
-For detailed syntax and parameter information, see [Disable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/disable-distributiongroup).
+For detailed syntax and parameter information, see [Disable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/disable-distributiongroup).
 
 #### How do you know this worked?
 

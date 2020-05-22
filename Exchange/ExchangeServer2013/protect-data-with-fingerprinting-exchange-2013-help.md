@@ -74,7 +74,11 @@ New-TransportRule -Name "Notify :External Recipient Contoso confidential" -Notif
 
 The DLP agent now detects documents that match the Contoso Customer Form.docx document fingerprint.
 
+<<<<<<< Updated upstream
 For syntax and parameter information, see [New-Fingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-fingerprint), [New-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dataclassification), [Set-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dataclassification), and [Get-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DataClassification).
+=======
+For syntax and parameter information, see [New-Fingerprint](https://docs.microsoft.com/powershell/module/exchange/new-fingerprint), [New-DataClassification](https://docs.microsoft.com/powershell/module/exchange/new-dataclassification), [Set-DataClassification](https://docs.microsoft.com/powershell/module/exchange/set-dataclassification), and [Get-DataClassification](https://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
+>>>>>>> Stashed changes
 
 ## For more information
 

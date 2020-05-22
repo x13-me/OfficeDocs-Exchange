@@ -227,7 +227,7 @@ Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-prem
 
 ## How do you know this worked?
 
-You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/organization/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
+You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
 
 > [!IMPORTANT]
 > When connecting to your Exchange Online organization using Remote PowerShell, you may have to use the <EM>AllowClobber</EM> parameter with the <STRONG>Import-PSSession</STRONG> cmdlet to import the latest commands in to the local PowerShell session.

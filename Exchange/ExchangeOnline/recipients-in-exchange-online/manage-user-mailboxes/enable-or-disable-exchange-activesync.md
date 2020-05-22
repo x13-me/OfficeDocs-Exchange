@@ -68,7 +68,7 @@ PowerShell
 Set-CASMailbox -Identity Ellyn@contoso.com -ActiveSyncEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 

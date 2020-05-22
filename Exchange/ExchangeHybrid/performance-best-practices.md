@@ -104,7 +104,7 @@ Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSMaxConnec
 
 For customers running Exchange 2010 or later, testing the network performance for hybrid migrations can be done by performing multiple test mailbox migrations. Alternatively, you can migrate actual user mailboxes with the -SuspendWhenReadyToComplete option to get an indication of migration performance. When testing is complete, remove the move request to avoid affecting end users.
 
-For more information about move requests, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For more information about move requests, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 ### Factor 5: Office 365 service
 

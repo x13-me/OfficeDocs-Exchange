@@ -144,4 +144,4 @@ Get-CASMailbox USER01 | format-list *EnableExact*,*UseProtocolDefaults
 
 [Enable or Disable POP3 or IMAP4 access for a user](enable-or-disable-pop3-or-imap4-access.md)
 
-[Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox)
+[Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox)

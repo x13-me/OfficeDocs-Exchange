@@ -85,7 +85,7 @@ This example disables the shared mailbox that has the email address sharedmbx@co
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-mailbox).
+For detailed syntax and parameter information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/disable-mailbox).
 
 ### How do you know this worked?
 
@@ -176,7 +176,7 @@ This example deletes the mailbox that has the alias value corpprint.
 Remove-Mailbox corpprint
 ```
 
-For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox).
 
 **Note**: If you use the **Remove-Mailbox** cmdlet with the _Purge_ switch, the mailbox is immediately purged and isn't recoverable. For more information, see [Permanently delete a mailbox](permanently-delete-mailboxes.md).
 

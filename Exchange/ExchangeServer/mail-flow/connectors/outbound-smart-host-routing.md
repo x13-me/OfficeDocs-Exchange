@@ -117,7 +117,7 @@ After you create the Send connector, it appears in the Send connector list.
    New-SendConnector -Name "Smart host to Internet" -AddressSpaces * -Custom -DNSRoutingEnabled $false -SmartHosts 192.168.3.2 -SmartHostAuthMechanism None
    ```
 
-For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 ## How do you know this worked?
 

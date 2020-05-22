@@ -128,10 +128,10 @@ To verify that you've successfully created a DAG, do one of the following:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
 
-[New-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/new-databaseavailabilitygroup)
+[New-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/new-databaseavailabilitygroup)
 
-[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/new-databaseavailabilitygroupnetwork)
+[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/new-databaseavailabilitygroupnetwork)
 
-[Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/add-databaseavailabilitygroupserver)
+[Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/add-databaseavailabilitygroupserver)

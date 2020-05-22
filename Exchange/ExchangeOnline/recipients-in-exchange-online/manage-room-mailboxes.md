@@ -70,7 +70,7 @@ This example creates a room mailbox with the following configuration:
 New-Mailbox -Name ConfRoom1 -DisplayName "Conference Room 1" -Room
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 #### How do you know this worked?
 
@@ -231,17 +231,17 @@ Use the following sets of cmdlets to view and change room mailbox properties: **
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-calendarprocessing)
+- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
+- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using Exchange Online PowerShell to change room mailbox properties.
 

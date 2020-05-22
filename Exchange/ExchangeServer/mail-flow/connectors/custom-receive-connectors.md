@@ -132,7 +132,7 @@ New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend 
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -214,7 +214,7 @@ New-ReceiveConnector -Name "Fabrikam.com TLS" -TransportRole Frontend -Partner -
 
  **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -320,7 +320,7 @@ New-ReceiveConnector -Name "Inbound From Service" -TransportRole Frontend -Custo
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -358,7 +358,7 @@ New-ReceiveConnector -Name "Inbound From Organization" -Internal -RemoteIPRanges
 
 **Note**: If your Edge Transport server uses different network adapters for internal and external networks, be sure to use the _Bindings_ parameter on the **Set-ReceiveConnector** cmdlet after you create the connector to specify the correct local IP address for the connector.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 

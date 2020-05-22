@@ -65,7 +65,7 @@ This example suspends activation for a copy of the database DB2 hosted on the se
 Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxdatabasecopy).
 
 ## Resume a mailbox database copy
 
@@ -94,7 +94,7 @@ This example resumes a copy of the database DB2 on the server MBX2 for replicati
 Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/resume-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxdatabasecopy).
 
 ## How do you know this worked?
 

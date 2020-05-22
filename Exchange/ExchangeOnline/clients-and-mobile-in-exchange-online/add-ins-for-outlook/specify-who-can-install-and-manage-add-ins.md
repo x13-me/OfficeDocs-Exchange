@@ -89,4 +89,4 @@ Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers
 
 In the results, review the entries in the **Effective Users** column.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment).

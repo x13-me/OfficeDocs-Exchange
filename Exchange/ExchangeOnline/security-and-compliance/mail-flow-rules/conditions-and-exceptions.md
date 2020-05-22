@@ -242,4 +242,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
 
-[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)
+[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)

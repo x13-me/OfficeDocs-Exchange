@@ -167,7 +167,7 @@ This example uses similar settings, but only moves Angela's archive mailbox.
 New-MoveRequest -Identity agruber@contoso.com -ArchiveOnly -ArchiveTargetDatabase "MBX 03" -BadItemLimit 10
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 A batch move request uses virtually the same syntax as a move request for an individual mailbox. The main differences are:
 
@@ -195,7 +195,7 @@ This example creates a batch move request with these settings:
 Get-Mailbox -Database "MBX DB01" | New-MoveRequest -BatchName "MBX DB01 to MBX DB02" -TargetDatabase "MBX DB02" -Priority High -BadItemLimit 51 -AcceptLargeDataLoss
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 ### Use the Exchange Management Shell to create a local move request from a CSV file
 
@@ -271,11 +271,11 @@ To verify that you've successfully created a local move request, do any of these
   Get-MigrationUserStatistics -Identity <EmailAddress> | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuserstatistics).
+For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics).
 
 ## Display migration batches
 
-For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch).
+For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch).
 
 ## Create a cross-forest move using a .csv batch file
 
@@ -295,7 +295,7 @@ For more information about preparing your forest for cross-forest moves, see the
 
 - [Prepare mailboxes for cross-forest moves using the Exchange Management Shell](prep-mailboxes-for-cross-forest-moves-in-powershell.md)
 
-For detailed syntax and parameter information, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) and [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) and [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 ### How do you know this worked?
 
@@ -307,4 +307,4 @@ To verify that you have successfully completed your migration, do the following:
   Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuserstatistics).
+For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics).

@@ -123,4 +123,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/start-managedfolderassistant).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/start-managedfolderassistant).

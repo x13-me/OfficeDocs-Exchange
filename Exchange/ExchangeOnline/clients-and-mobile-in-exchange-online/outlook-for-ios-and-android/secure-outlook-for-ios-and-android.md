@@ -224,11 +224,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 **Additional resources**:
 
-- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/devices/New-ActiveSyncDeviceAccessRule)
+- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/New-ActiveSyncDeviceAccessRule)
 
-- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/devices/Get-MobileDevice)
+- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/Get-MobileDevice)
 
-- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/devices/Set-ActiveSyncOrganizationSettings)
+- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ActiveSyncOrganizationSettings)
 
 ## Blocking Outlook for iOS and Android
 
