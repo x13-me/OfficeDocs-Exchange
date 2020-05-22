@@ -139,7 +139,7 @@ When created, public folder mailboxes automatically inherit the size limits of t
 
 To find the mailbox database quotas, run the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/Get-MailboxDatabase) cmdlet.
 
-To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig) cmdlet.
+To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 ## Disaster recovery
 

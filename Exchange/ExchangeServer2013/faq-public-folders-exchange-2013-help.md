@@ -111,7 +111,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
