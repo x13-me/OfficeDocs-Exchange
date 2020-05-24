@@ -63,10 +63,6 @@ When you're configuring this scenario, the "host" that you need to configure to 
 
 In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
 
-Since the anti-spam service is external, you need to create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** \> **Mail flow** \> **Rules** to prevent a double anti-spam check, which would result in the followin rejection of the messages:
-
-![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
-
 Next, you need to lock down your Exchange Online organization to only accept mail from your third-party service.
 
 Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
@@ -86,18 +82,35 @@ New-InboundConnector –Name "Reject mail not routed through MX (third-party ser
 > [!NOTE]
 > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
 
+There are two options for the next step that you might decide; if you want to prevent double anti-spam check, you may choose option A, this will prevent most of EOP and Office 365 ATP controls through a bypass transport rule. If you want to take advantage of EOP and Office 365 ATP controls, you should opt for option B which consist of enabling Enhanced Filtering.
 
-### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
+> [!IMPORTANT]
+> In alternative of bypass spam filtering through transport rule, we recommend you enable [Enhanced Filtering Connector (also known as Skip Listing)](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Most of times third-party cloud anti-spam shares IPs across many customers, bypassing IPs in this situation may result in spoofed and phishing messages being marked as legitimate from these IPs.
+
+
+#### Option A:
+Create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin > Mail flow > Rules** to bypass anti-spam check:
+
+![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
+
+#### Option B (recommended):
+Enable [Enhanced Filtering](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#procedures-for-enhanced-filtering-for-connectors) on the Inbound Connector of type *Partner*, which you created to receive messages from the third-party application.
+
+> [!NOTE]
+> For hybrid scenarios where third-party application relay on Exchange on-premises to send to EXO, you need to enable Enhanced Filtering on the Inbound Connector of type *OnPremises*. Even so, you can lockdown inbound flow using Inbound Connector of type *Partner*.
+
+### Scenario 2 - MX record points to third-party solution without spam filtering
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
 
-We don't recommend or support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). If you choose this scenario, your organization's mail flow setup looks like the following diagram:
+We can support this scenario only if you enabled Enhanced Filtering. If you choose to bypass inbound flow through transport rule, we cannot support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). 
+If you choose to enable Enhanced Filtering, your organization's mail flow setup looks like the following diagram:
 
 ![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
 #### Best practices for using a third-party cloud service with Office 365
 
-Don't use this scenario because it isn't currently supported. We recommend that you use the archiving and auditing solutions that are provided by Office 365.
+This scenario is currently supported but we strongly recommend that you use the archiving and auditing solutions that are provided by Office 365.
 
 ## See also
 
