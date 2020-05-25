@@ -200,12 +200,12 @@ The following tables displays acceptable thresholds and information about common
 <tr class="even">
 <td><p>TCPv4\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 <tr class="odd">
 <td><p>TCPv6\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 </tbody>
 </table>
