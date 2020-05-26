@@ -102,7 +102,7 @@ Below are the three configuration options to help you identify which one is in u
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
-   For more information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
+   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
 
 ### I receive an authentication error when my device tries to send email
 

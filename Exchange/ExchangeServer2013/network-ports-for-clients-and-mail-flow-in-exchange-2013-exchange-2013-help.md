@@ -69,7 +69,7 @@ The network ports that are required for email clients to access mailboxes and ot
 <ul>
 <li><p><a href="autodiscover-service-for-exchange-2013.md">Autodiscover service</a></p></li>
 <li><p><a href="exchange-activesync-exchange-2013-help.md">Exchange ActiveSync</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/?linkid=529544">EWS reference for Exchange</a></p></li>
+<li><p><a href="https://docs.microsoft.com/exchange/client-developer/web-service-reference/ews-reference-for-exchange">EWS reference for Exchange</a></p></li>
 <li><p><a href="offline-address-books-exchange-2013-help.md">Offline address books</a></p></li>
 <li><p><a href="outlook-anywhere-exchange-2013-help.md">Outlook Anywhere</a></p></li>
 <li><p><a href="mapi-over-http-exchange-2013-help.md">MAPI over HTTP</a></p></li>

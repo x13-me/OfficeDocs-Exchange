@@ -112,7 +112,7 @@ You can safely perform this step now, because the proof of domain ownership TXT 
 
    Note that the command output returns information for two proof of domain ownership records: one for the new certificate, and one for the current certificate that you're replacing. You can tell which is which by the thumbprint value, and the hash text value that's configured in the current proof of domain ownership TXT record in your external (public) DNS.
 
-2. Update the federation proof of domain ownership TXT record in your external DNS. The instructions will vary based on your DNS provider, but you can edit the current TXT record to replace the current hash text value with the new hash text value. For more information, see the Exchange Online section in [External Domain Name System records for Office 365](https://go.microsoft.com/fwlink/p/?linkid=265522).
+2. Update the federation proof of domain ownership TXT record in your external DNS. The instructions will vary based on your DNS provider, but you can edit the current TXT record to replace the current hash text value with the new hash text value. For more information, see the Exchange Online section in [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
 
 ## Step 4: Verify the distribution of the new federation certificate to all Exchange servers
 

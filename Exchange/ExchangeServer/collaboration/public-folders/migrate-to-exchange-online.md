@@ -42,9 +42,9 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes. However, a maximum of 100 public folders is supported for migration from Exchange Server.
 
-- If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=842798).
+- If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
-- MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://go.microsoft.com/fwlink/p/?linkid=844909) for details.
+- MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://docs.microsoft.com/Exchange/architecture/mailbox-servers/mrs-proxy-endpoint) for details.
 
 - To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
 

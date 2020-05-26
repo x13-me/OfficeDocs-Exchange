@@ -111,4 +111,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
 
-[Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=526003)
+[Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption)

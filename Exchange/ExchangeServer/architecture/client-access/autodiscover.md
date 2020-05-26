@@ -56,7 +56,7 @@ Exchange publishes two types of SCP objects for the Autodiscover service:
 
 - **SCP URLs**: Contains URLs for Autodiscover endpoints. SCP URLs are stamped with the following GUID: 77378F46-2C66-4aa9-A6A6-3E7A48B19596
 
-The SCP object contains the authoritative list of Autodiscover service URLs for the forest. To learn more about locating Autodiscover service endpoints, see [Generate a list of Autodiscover endpoints](https://go.microsoft.com/fwlink/p/?linkId=843957).
+The SCP object contains the authoritative list of Autodiscover service URLs for the forest. To learn more about locating Autodiscover service endpoints, see [Generate a list of Autodiscover endpoints](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-generate-a-list-of-autodiscover-endpoints).
 
 Client connectivity in Exchange 2016 and Exchange 2019 is like Exchange 2013 and differs from Exchange 2010. In Exchange 2016 and 2019, MAPI over HTTP is enabled by default, when previously Outlook clients used Outlook Anywhere (RPC over HTTP). Exchange 2016 and 2019 require fewer name spaces for site-resilient solutions than Exchange 2010, reducing to two from the previously required seven namespaces. To read more about namespace and Exchange Server, see the blog [Namespace Planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937).
 
