@@ -21,7 +21,7 @@ ms.service: exchange-online
 
 # Use a screen reader to archive mailbox items in the Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](https://docs.microsoft.com/en-us/microsoft-365/compliance/enable-archive-mailboxes).
+You can use your screen reader in the Exchange admin center (EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Get started
 
