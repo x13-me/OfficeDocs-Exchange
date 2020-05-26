@@ -125,7 +125,7 @@ If you already have Exchange 2010 SP3 public folders in your organization prior 
 
 Due to the changes in how public folders are stored, Exchange 2010 mailboxes are unable to access the public folder hierarchy on Exchange 2016 or on Exchange Online. However, user mailboxes on Exchange 2016 can connect to Exchange 2010 public folders. Exchange 2016 public folders and legacy public folders can't exist in your Exchange organization simultaneously. This effectively means that there's no coexistence between versions. Migrating public folders to Exchange Server 2016 or Exchange Online is currently a one-time cutover process.
 
-For this reason, we recommend that prior to migrating your Exchange 2010 public folders, you should first migrate your Exchange 2010 mailboxes to Exchange 2016 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md), [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=536689), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=536687).
+For this reason, we recommend that prior to migrating your Exchange 2010 public folders, you should first migrate your Exchange 2010 mailboxes to Exchange 2016 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md), [Perform a cutover migration of email to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/cutover-migration-to-office-365), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=536687).
 
 ## Public folder moves
 <a name="Moves"> </a>

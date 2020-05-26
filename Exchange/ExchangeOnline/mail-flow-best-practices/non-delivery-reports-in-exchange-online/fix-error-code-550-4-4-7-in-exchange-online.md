@@ -73,7 +73,7 @@ Here are some steps for you to try:
 
 - **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
-- **Solution 3**: The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
+- **Solution 3**: The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 - **Solution 4**: Your domain might have expired due to non-payment. Verify with your domain registrar that your domain is active and not expired.
 

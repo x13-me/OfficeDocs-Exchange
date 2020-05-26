@@ -60,7 +60,7 @@ To use a delivery agent in your organization, you have to complete the following
 
 When all of these steps are completed, messages to the foreign systems will be routed through the Delivery Agent connectors and processed by the delivery agent.
 
-[Microsoft.Exchange.Data.Transport.Delivery Namespace](https://go.microsoft.com/fwlink/?linkid=262690) provides more information about developing a delivery agent.
+[Microsoft.Exchange.Data.Transport.Delivery Namespace](https://docs.microsoft.com/previous-versions/office/exchange-server-api/aa564119(v=exchg.150)) provides more information about developing a delivery agent.
 
 ## Delivery Agent connectors
 

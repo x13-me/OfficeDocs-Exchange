@@ -101,7 +101,7 @@ The following diagram gives you a conceptual overview of what you're environment
 - **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Office 365 server, as IP Addresses are not supported.
 
 > [!NOTE]
-> For information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841).
+> For information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841).
 
 #### Limitations of SMTP AUTH client submission
 
@@ -318,7 +318,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - Sent mail can be disrupted if your IP addresses are blocked by a spam list.
 
-- Reasonable limits are imposed for sending. For more information, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).
+- Reasonable limits are imposed for sending. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).
 
 - Requires static unshared IP addresses (unless a certificate is used).
 
@@ -339,7 +339,7 @@ Here's a comparison of each configuration option and the features they support.
 |Device or application server must support TLS|Required|Optional|Optional|
 |Requires authentication|Office 365 user name and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Office 365.|
 |**Limitations**|
-|Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).|
+|Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 
 ## Use your own email server to send email from multifunction devices and applications
 

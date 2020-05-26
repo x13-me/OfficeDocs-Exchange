@@ -117,7 +117,7 @@ If you already have Exchange 2010 SP3 or Exchange 2007 SP3 RU10 public folders i
 
 Due to the changes in how public folders are stored, legacy Exchange mailboxes are unable to access the public folder hierarchy on Exchange 2013 servers or on Exchange Online. However, user mailboxes on Exchange 2013 servers or Exchange Online can connect to legacy public folders. Exchange 2013 public folders and legacy public folders can't exist in your Exchange organization simultaneously. This effectively means that there's no coexistence between versions. Migrating public folders to Exchange Server 2013 or Exchange Online is currently a one-time cutover process.
 
-For this reason, it's recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536689), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536687).
+For this reason, it's recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/cutover-migration-to-office-365), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536687).
 
 ## Public folder moves
 
