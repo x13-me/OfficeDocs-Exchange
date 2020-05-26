@@ -457,7 +457,7 @@ You can use the following Exchange Online cmdlets to see statistical information
     Get-MobileDeviceStatistics -Mailbox $m.id
     ```
 
-For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/devices/get-mobiledevicestatistics?view=exchange-ps).
+For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicestatistics?view=exchange-ps).
 
 ### Other issues
 

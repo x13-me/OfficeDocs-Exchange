@@ -78,7 +78,7 @@ Outlook Web App customers can report missed spam in the inbox (false negative) a
 
 ### S/MIME for Message Signing and Encryption
 
-Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Get-SmimeConfig) cmdlet reference.
+Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/Get-SmimeConfig) cmdlet reference.
 
 ### DLP Policy Tips available in the desktop and mobile version of Outlook Web App
 

@@ -25,6 +25,6 @@ The POP.Protocol health set works in conjunction with the POP health set. For de
 
 ## For More Information
 
-[Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/Test-PopConnectivity)
+[Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-PopConnectivity)
 
 [POP3 and IMAP4](https://technet.microsoft.com/library/jj657728\(v=exchg.150\))

@@ -208,21 +208,21 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 
 In Exchange Online PowerShell, you use the following cmdlets to manage mail users:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
-- [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser)
-- [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailuser)
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser)
+- [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
+- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 In standalone EOP PowerShell, you use the following cmdlets:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
-- **[Set-EOPUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopuser)**
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
-- **[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)**
-- **[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)**
-- **[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)**
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- **[Set-EOPUser](https://docs.microsoft.com/powershell/module/exchange/set-eopuser)**
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- **[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)**
+- **[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)**
+- **[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)**
 
 The examples in this section are written for Exchange Online PowerShell, but you can use them in standalone EOP PowerShell by substituting the corresponding EOP cmdlet.
 
@@ -295,7 +295,7 @@ This example remove the mail user for Pilar Pinilla:
 Remove-MailUser -Identity "Pilar Pinilla"
 ```
 
-For detailed syntax and parameter information, see [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailuser)
+For detailed syntax and parameter information, see [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
 
 ## How do you know these procedures worked?
 

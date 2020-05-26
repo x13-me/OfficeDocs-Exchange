@@ -163,15 +163,15 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
 - [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)
 
@@ -239,27 +239,27 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
 - [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-PublicFolderMigrationRequest)
+- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderMigrationRequest)
 
-- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Remove-PublicFolderMigrationRequest)
+- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolderMigrationRequest)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolder)
 
-- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-MailPublicFolder)
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-MailPublicFolder)
 
-- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Disable-MailPublicFolder)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Disable-MailPublicFolder)
 
-- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Remove-PublicFolder)
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolder)
 
-- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-Mailbox)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-Mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -369,7 +369,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolderDatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderDatabase)
 
 - [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 

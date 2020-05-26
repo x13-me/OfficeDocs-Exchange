@@ -107,17 +107,17 @@ When you configure message encoding options for a mail contact or a mail user, t
 
 You need to use these parameters in the Exchange Management Shell to set the message encoding options for mail users and mail contacts. For more information, see the following topics:
 
-  - [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Enable-MailContact)
+  - [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/Enable-MailContact)
 
-  - [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-MailContact)
+  - [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/New-MailContact)
 
-  - [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-MailContact)
+  - [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/Set-MailContact)
 
-  - [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Enable-MailUser)
+  - [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/Enable-MailUser)
 
-  - [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-MailUser)
+  - [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/New-MailUser)
 
-  - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-MailUser)
+  - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/Set-MailUser)
 
 ## Message encoding options available in Outlook
 

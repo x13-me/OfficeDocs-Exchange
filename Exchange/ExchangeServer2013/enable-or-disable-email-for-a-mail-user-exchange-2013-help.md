@@ -61,7 +61,7 @@ This example disables email for the mail user Yan Li.
 Disable-MailUser -Identity "Yan Li"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Disable-MailUser).
+For detailed syntax and parameter information, see [Disable-MailUser](https://docs.microsoft.com/powershell/module/exchange/Disable-MailUser).
 
 ## How do you know this worked?
 

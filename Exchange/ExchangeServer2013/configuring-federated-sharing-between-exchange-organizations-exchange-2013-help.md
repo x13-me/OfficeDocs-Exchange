@@ -94,7 +94,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
      Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
      ```
 
-     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Add-AvailabilityAddressSpace)
+     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/Add-AvailabilityAddressSpace)
 
 ## Configure Free/Busy Sharing Between Exchange 2013 and Exchange 2003 Organizations
 
