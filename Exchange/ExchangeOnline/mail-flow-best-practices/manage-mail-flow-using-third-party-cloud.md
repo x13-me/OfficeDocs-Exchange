@@ -82,7 +82,7 @@ New-InboundConnector –Name "Reject mail not routed through MX (third-party ser
 > [!NOTE]
 > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
 
-There are two options for the next step that you might decide; if you want to prevent double anti-spam check, you may choose option A, this will prevent most of EOP and Office 365 ATP controls through a bypass transport rule. If you want to take advantage of EOP and Office 365 ATP controls, you should opt for option B which consist of enabling Enhanced Filtering.
+There are two options for the next step that you may choose from; if you want to prevent double anti-spam check, you may choose option A, which will prevent most of EOP and Office 365 ATP controls through a bypass transport rule. If you want to take advantage of EOP and Office 365 ATP controls you should opt for option B, which consists of enabling Enhanced Filtering.
 
 > [!IMPORTANT]
 > In alternative of bypass spam filtering through transport rule, we recommend you enable [Enhanced Filtering Connector (also known as Skip Listing)](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Most of times third-party cloud anti-spam shares IPs across many customers, bypassing IPs in this situation may result in spoofed and phishing messages being marked as legitimate from these IPs.
