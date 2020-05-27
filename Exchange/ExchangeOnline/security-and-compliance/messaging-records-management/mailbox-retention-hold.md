@@ -63,7 +63,11 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 ## How do you know this worked?
 
+<<<<<<< Updated upstream
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve the *RetentionHoldEnabled* property of the mailbox.
+=======
 To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
+>>>>>>> Stashed changes
 
 This command retrieves the *RetentionHoldEnabled* property for Michael Allen's mailbox.
 
