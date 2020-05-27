@@ -126,7 +126,7 @@ This example creates a new user account and mailbox for Pilar Pinilla with the f
 New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/New-Mailbox).
+For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/New-Mailbox).
 
 ## How do you know this worked?
 
@@ -196,7 +196,7 @@ For example, the following command mailbox-enables users who aren't already mail
 Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$Null" | Enable-Mailbox
 ```
 
-For syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Enable-Mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-User).
+For syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Enable-Mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/Get-User).
 
 For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 

@@ -59,7 +59,7 @@ When you install a Client Access server in Exchange 2013, a default virtual dire
 
 Additionally, a new Active Directory object named the service connection point (SCP) is created on the server where you install the Client Access server.
 
-The SCP object contains the authoritative list of Autodiscover service URLs for the forest. You can use the **Set-ClientAccessServer** cmdlet to update the SCP object. For more information, see [Set-ClientAccessServer](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-ClientAccessServer).
+The SCP object contains the authoritative list of Autodiscover service URLs for the forest. You can use the **Set-ClientAccessServer** cmdlet to update the SCP object. For more information, see [Set-ClientAccessServer](https://docs.microsoft.com/powershell/module/exchange/Set-ClientAccessServer).
 
 > [!IMPORTANT]
 > Before you run the <STRONG>Set-ClientAccessServer</STRONG> cmdlet, make sure the Authenticated Users account on the Client Access server has Read permissions for the SCP object. If users don't have the correct permissions, they can't search for and read items.
@@ -79,6 +79,6 @@ The Autodiscover service must be deployed and configured correctly for Outlook 2
 
 ## Configuring Autodiscover for cross-forest moves
 
-The Autodiscover service can provide user profile information to connecting Outlook clients for mailboxes that have been moved from one Exchange forest to another. For this to happen, you must configure a mail-enabled user in both the original forest where the user's mailbox resided and in the target forest using the **New-MailUser** cmdlet. In the source forest, you should use the *ExternalEmailAddress* parameter in the cmdlet to specify the new email address of the mailbox in the target forest. For more information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-MailUser).
+The Autodiscover service can provide user profile information to connecting Outlook clients for mailboxes that have been moved from one Exchange forest to another. For this to happen, you must configure a mail-enabled user in both the original forest where the user's mailbox resided and in the target forest using the **New-MailUser** cmdlet. In the source forest, you should use the *ExternalEmailAddress* parameter in the cmdlet to specify the new email address of the mailbox in the target forest. For more information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/New-MailUser).
 
 When you configure a mail-enabled user, the Autodiscover service in the original forest will redirect the authenticating user to the new email address in the target forest. The connecting Outlook client will then be redirected to the Client Access server in the target forest where the mailbox has been moved.

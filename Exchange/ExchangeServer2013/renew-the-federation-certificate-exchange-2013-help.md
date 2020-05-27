@@ -54,7 +54,7 @@ Run the following command in the Exchange Management Shell to create a new feder
 $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
 ```
 
-For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/New-ExchangeCertificate).
+For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/New-ExchangeCertificate).
 
 The command output contains the thumbprint value of the new certificate. You'll need this value in the remaining steps, and you can copy the value directly from the Exchange Management Shell window:
 
@@ -78,7 +78,7 @@ This example uses the certificate thumbprint value `6A99CED2E4F2B5BE96C5D17D662D
 Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
 ```
 
-For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust).
+For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Set-FederationTrust).
 
 **Note:** The command output contains a warning that you need to update the proof of domain ownership TXT record in DNS. You'll do that in the next step.
 
@@ -112,7 +112,7 @@ You can safely perform this step now, because the proof of domain ownership TXT 
 
    Note that the command output returns information for two proof of domain ownership records: one for the new certificate, and one for the current certificate that you're replacing. You can tell which is which by the thumbprint value, and the hash text value that's configured in the current proof of domain ownership TXT record in your external (public) DNS.
 
-2. Update the federation proof of domain ownership TXT record in your external DNS. The instructions will vary based on your DNS provider, but you can edit the current TXT record to replace the current hash text value with the new hash text value. For more information, see the Exchange Online section in [External Domain Name System records for Office 365](https://go.microsoft.com/fwlink/p/?linkid=265522).
+2. Update the federation proof of domain ownership TXT record in your external DNS. The instructions will vary based on your DNS provider, but you can edit the current TXT record to replace the current hash text value with the new hash text value. For more information, see the Exchange Online section in [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
 
 ## Step 4: Verify the distribution of the new federation certificate to all Exchange servers
 
@@ -134,7 +134,7 @@ To use the Exchange Management Shell to activate the new federation certificate,
 Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
 ```
 
-For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust).
+For detailed syntax and parameter information, see [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Set-FederationTrust).
 
 **Note:** The command output contains a warning that you need to update the proof of domain ownership TXT record in DNS (which you already did in Step 3).
 

@@ -70,7 +70,7 @@ You can use the transport rule conditions in the following table to examine the 
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -205,7 +205,7 @@ The following transport rule conditions inspect the properties of a file that is
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 

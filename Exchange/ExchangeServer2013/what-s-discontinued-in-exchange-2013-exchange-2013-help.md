@@ -25,7 +25,7 @@ This topic discusses the components, features, or functionality that have been r
 > <LI>
 > <P><A href="what-s-new-in-exchange-2013-exchange-2013-help.md">What's new in Exchange 2013</A>&nbsp;&nbsp;&nbsp;Information about new features and functionality in Exchange Server 2013.</P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=267479">Developer roadmap for Exchange 2013</A>&nbsp;&nbsp;&nbsp;&nbsp;See the "Development technologies removed from Exchange" section for information about the API and Development features discontinued in Exchange 2013.</P></LI></UL>
+> <P><A href="https://docs.microsoft.com/exchange/client-developer/exchange-server-development">Exchange Online and Exchange development</A></P></LI></UL>
 
 ## Discontinued features from Exchange 2010 to Exchange 2013
 
@@ -156,7 +156,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Linked connectors</p></td>
-<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/Set-SendConnector">Set-SendConnector</a>.</p></td>
+<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector">Set-SendConnector</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +482,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>ISInteg</p></td>
-<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
+<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
 </tr>
 </tbody>
 </table>

@@ -74,7 +74,7 @@ To use public folders, you need to set up at least one public folder mailbox.
 
 8. With the focus on the **OK** button, press Enter. The new public folder mailbox is added to the public folder mailboxes list view.
 
-[Learn more about creating public folders](https://go.microsoft.com/fwlink/p/?LinkId=799146).
+[Learn more about creating public folders](../collaboration-exo/public-folders/create-public-folder.md).
 
 ### Create a public folder
 
@@ -128,7 +128,7 @@ After you create a public folder, specify the users who can access it. Also spec
 12. When you finish adding users, in the **Public Folder Permissions** dialog box, tab to the **Save** button and press Enter. Wait several seconds for the information to be saved. An alert specifies that the save operation is complete, and you hear "Close button." To close the alert, press Enter. The **public folders** main page view has the focus again.
 
    > [!NOTE]
-   > Public folders have size limits, and subfolders inherit permission settings from parent folders in specific ways. In addition, you can enable mail settings for a public folder. [Learn more about creating public folders](https://go.microsoft.com/fwlink/p/?LinkId=799146).
+   > Public folders have size limits, and subfolders inherit permission settings from parent folders in specific ways. In addition, you can enable mail settings for a public folder. [Learn more about creating public folders](../collaboration-exo/public-folders/create-public-folder.md).
 
 ## Create a distribution group
 

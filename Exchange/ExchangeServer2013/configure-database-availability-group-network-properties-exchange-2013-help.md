@@ -66,10 +66,10 @@ To verify that you've successfully configured the DAG network, do the following:
 
 ## For more information
 
-[Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Set-DatabaseAvailabilityGroupNetwork)
+[Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/Set-DatabaseAvailabilityGroupNetwork)
 
-[Get-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Get-DatabaseAvailabilityGroupNetwork)
+[Get-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/Get-DatabaseAvailabilityGroupNetwork)
 
-[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/New-DatabaseAvailabilityGroupNetwork)
+[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/New-DatabaseAvailabilityGroupNetwork)
 
-[Remove-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/Remove-DatabaseAvailabilityGroupNetwork)
+[Remove-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/Remove-DatabaseAvailabilityGroupNetwork)

@@ -147,7 +147,7 @@ Email systems use a DNS record called an MX record to figure out where to delive
 
 [Office 365 migration performance and best practices](office-365-migration-best-practices.md)
 
-[How to decommission Exchange servers in a Hybrid environment](https://go.microsoft.com/fwlink/p/?linkid=839914)
+[How to decommission Exchange servers in a Hybrid environment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange)
 
 [Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
 

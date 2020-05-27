@@ -119,7 +119,7 @@ Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-MailboxPermission)
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
 
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
 
@@ -152,7 +152,7 @@ The following example shows how to use the Exchange Online PowerShell **Add-ADPe
 Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -ExtendedRights receive-as
 ```
 
-For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission).
+For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission).
 
 ### How do you know the assignment of permission worked?
 
@@ -201,7 +201,7 @@ Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
 

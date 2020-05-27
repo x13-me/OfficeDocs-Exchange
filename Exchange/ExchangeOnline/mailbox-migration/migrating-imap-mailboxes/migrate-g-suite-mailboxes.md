@@ -34,7 +34,7 @@ manager: serdars
 
 [Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes.md) gives you an overview of the migration process. Read it first and when you're familiar with the contents of that article, return to this topic to learn how to migrate mailboxes from G Suite (formerly known as Google Apps) Gmail to Office 365. You must be a global admin in Office 365 to complete IMAP migration steps.
 
-Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=615256).
+Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Office 365](migrate-other-types-of-imap-mailboxes.md) .
 

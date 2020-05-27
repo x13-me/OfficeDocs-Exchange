@@ -57,7 +57,7 @@ This example enables transport decryption for the Exchange 2013 organization. Me
 Set-IRMConfiguration -TransportDecryptionSetting Mandatory
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to disable transport decryption
 
@@ -67,7 +67,7 @@ This example disables transport decryption for the Exchange 2013 organization.
 Set-IRMConfiguration -TransportDecryptionSetting Disabled
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-IRMConfiguration).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do I know this worked?
 

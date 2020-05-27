@@ -44,7 +44,7 @@ This topic contains links to topics and information about planning for and then 
 
 > Learn about the Windows Server features and the other software that needs to be installed for a successful installation of Exchange.
 
-[Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=626978)
+[Microsoft Exchange Server Deployment Assistant](https://aka.ms/EDA)
 
 > Use this tool to generate a customized checklist for planning, installing, or upgrading Exchange. Guidance is available for multiple scenarios, including an on-premises, hybrid, or cloud deployment.
 
