@@ -104,4 +104,8 @@ Certain services and features of Outlook for iOS and Android are not available f
 
 - **Play My Emails**: Play My Emails is not available for GCC accounts.
 
+<<<<<<< Updated upstream
+- **To Do**: To Do is currently not available for GCC accounts.
+=======
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+>>>>>>> Stashed changes
