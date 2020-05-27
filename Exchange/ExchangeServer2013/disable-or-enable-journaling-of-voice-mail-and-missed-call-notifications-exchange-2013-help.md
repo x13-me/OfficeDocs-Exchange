@@ -48,7 +48,7 @@ This example enables the journaling of voice mail and missed call notifications 
 Set-TransportConfig -VoicemailJournalingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/mail-flow/Set-TransportConfig).
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig).
 
 ## For More Information
 

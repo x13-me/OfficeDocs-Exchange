@@ -158,7 +158,7 @@ Complete the following steps to prepare the clients and servers to support MAPI 
 
 Complete the following steps to configure MAPI over HTTP for your organization.
 
-1. **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory).
+1. **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-MapiVirtualDirectory).
 
    For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to `https://contoso.com/mapi`, and the authentication method to `Negotiate`, run the following command:
 
@@ -196,7 +196,7 @@ MonitorIdentity                                        StartTime              En
 OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe  2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
 ```
 
-For more information, see [Test-OutlookConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/Test-OutlookConnectivity).
+For more information, see [Test-OutlookConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OutlookConnectivity).
 
 Logs for MAPI over HTTP activity are at the following locations:
 
@@ -210,10 +210,10 @@ Logs for MAPI over HTTP activity are at the following locations:
 
 You can manage the configuration of MAPI over HTTP by using the following cmdlets:
 
-- [Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory)
+- [Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-MapiVirtualDirectory)
 
-- [Get-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Get-MapiVirtualDirectory)
+- [Get-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-MapiVirtualDirectory)
 
-- [New-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/New-MapiVirtualDirectory)
+- [New-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/New-MapiVirtualDirectory)
 
-- [Remove-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Remove-MapiVirtualDirectory)
+- [Remove-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Remove-MapiVirtualDirectory)

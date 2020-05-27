@@ -267,7 +267,7 @@ To verify the installation: On the AD FS server, open your web browser, and then
 
 For all applications and services that you want to publish through Web Application Proxy, you must configure a relying party trust on the AD FS server. For deployments with multiple Active Directory sites that use separate namespaces, a relying party trust for Outlook Web App and EAC must be added for each namespace.
 
-EAC uses the ECP virtual directory. You can view or configure settings for EAC by using the [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Get-EcpVirtualDirectory) and the [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-EcpVirtualDirectory) cmdlets. To access EAC, you must use a web browser and go to **http://server1.contoso.com/ecp**.
+EAC uses the ECP virtual directory. You can view or configure settings for EAC by using the [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory) and the [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-EcpVirtualDirectory) cmdlets. To access EAC, you must use a web browser and go to **http://server1.contoso.com/ecp**.
 
 > [!NOTE]
 > The inclusion of the trailing slash <STRONG>/</STRONG> in the URL examples shown below is intentional. It's important to ensure that both the AD FS relying party trusts and Exchange Audience URI's <STRONG>are identical</STRONG>. This means the AD FS relying party trusts and Exchange Audience URI's should <STRONG>both have</STRONG> or <STRONG>both emit</STRONG> the trailing slashes in their URLs. The examples in this section contain the trailing <STRONG>/</STRONG>'s after any url ending with "owa" ( /owa/) or "ecp" (/ecp/).
@@ -541,7 +541,7 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 > [!NOTE]
 > The preceding Exchange Management Shell commands configure the OWA and ECP virtual directories on every Client Access server in your organization. If you don't want to apply these settings to all Client Access servers, use the <EM>-Identity</EM> parameter and specify the Client Access server. It's likely you will want to apply these settings only to the Client Access servers in your organization that are Internet facing.
 
-For details and syntax, see [Get-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Get-OwaVirtualDirectory) and [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OwaVirtualDirectory) or [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Get-EcpVirtualDirectory) and [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-EcpVirtualDirectory).
+For details and syntax, see [Get-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-OwaVirtualDirectory) and [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory) or [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory) and [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-EcpVirtualDirectory).
 
 ## Step 9 - Restart or recycle Internet Information Services (IIS)
 

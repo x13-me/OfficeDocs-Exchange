@@ -107,8 +107,4 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
-<<<<<<< Updated upstream
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
-=======
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics).
->>>>>>> Stashed changes

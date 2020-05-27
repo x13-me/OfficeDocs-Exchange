@@ -156,7 +156,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Linked connectors</p></td>
-<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/Set-SendConnector">Set-SendConnector</a>.</p></td>
+<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector">Set-SendConnector</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +482,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>ISInteg</p></td>
-<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
+<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
 </tr>
 </tbody>
 </table>

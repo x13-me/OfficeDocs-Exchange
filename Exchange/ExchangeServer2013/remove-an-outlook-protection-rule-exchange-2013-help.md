@@ -42,7 +42,7 @@ This example removes the Outlook protection rule OPR-DG-Finance.
 Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
 ```
 
-For detailed syntax and parameter information, see [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Remove-OutlookProtectionRule).
+For detailed syntax and parameter information, see [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/Remove-OutlookProtectionRule).
 
 ## Use the Shell to remove all Outlook protection rules
 
@@ -52,8 +52,8 @@ This example removes all Outlook protection rules in the Exchange organization.
 Get-OutlookProtectionRule | Remove-OutlookProtectionRule
 ```
 
-For detailed syntax and parameter information, see [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule) and [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Remove-OutlookProtectionRule).
+For detailed syntax and parameter information, see [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/Get-OutlookProtectionRule) and [Remove-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/Remove-OutlookProtectionRule).
 
 ## How do you know this worked?
 
-To verify that you have successfully removed an Outlook protection rule, use the [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule) cmdlet to retrieve Outlook protection rules. For an example of how to retrieve Outlook protection rules, see [Examples](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/Get-OutlookProtectionRule#examples).
+To verify that you have successfully removed an Outlook protection rule, use the [Get-OutlookProtectionRule](https://docs.microsoft.com/powershell/module/exchange/Get-OutlookProtectionRule) cmdlet to retrieve Outlook protection rules. For an example of how to retrieve Outlook protection rules, see [Examples](https://docs.microsoft.com/powershell/module/exchange/Get-OutlookProtectionRule#examples).
