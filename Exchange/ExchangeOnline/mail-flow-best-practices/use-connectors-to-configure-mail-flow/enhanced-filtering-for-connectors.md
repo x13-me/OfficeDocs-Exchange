@@ -147,12 +147,23 @@ This example configures Enhanced Filtering for Connectors on the inbound connect
 Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true -EFUsers "michelle@contoso.com","laura@contoso.com","julia@contoso.com"
 ```
 
+<<<<<<< HEAD
 For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/set-inboundconnector).
 
 > [!IMPORTANT]
 > - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the mail systems that will handle your own organization's messages prior to Microsoft 365 or Office 365. >
 >
 > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses.
+=======
+<<<<<<< Updated upstream
+> [!IMPORTANT]
+> Entering the IP addresses of Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the mail systems that will handle your own organization's messages prior to Office 365.
+
+For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-inboundconnector)
+=======
+For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/set-inboundconnector)
+>>>>>>> Stashed changes
+>>>>>>> parent of 8d797c141... Update enhanced-filtering-for-connectors.md
 
 ## How to measure success
 
