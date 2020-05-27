@@ -183,6 +183,12 @@ In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and chan
 
 For more information, see the following topics:
 
+<<<<<<< Updated upstream
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-contact)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
+=======
 - [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
 
 - [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
@@ -190,6 +196,7 @@ For more information, see the following topics:
 - [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
 
 - [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
+>>>>>>> Stashed changes
 
 Here are some examples of using Exchange Online PowerShell to change mail contact properties:
 
