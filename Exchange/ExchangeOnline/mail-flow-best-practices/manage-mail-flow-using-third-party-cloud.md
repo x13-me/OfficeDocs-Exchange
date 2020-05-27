@@ -94,7 +94,7 @@ Create a mail flow rule (also known as a transport rule) in the Exchange admin c
 ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
 #### Option B (recommended):
-Enable [Enhanced Filtering](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#procedures-for-enhanced-filtering-for-connectors) on the Inbound Connector of type *Partner*, which you created to receive messages from the third-party application.
+Enable [Enhanced Filtering](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#procedures-for-enhanced-filtering-for-connectors) on the Inbound Connector type *Partner* that you created to receive messages from the third-party application.
 
 > [!NOTE]
 > For hybrid scenarios where third-party application relay on Exchange on-premises to send to EXO, you need to enable Enhanced Filtering on the Inbound Connector of type *OnPremises*. Even so, you can lockdown inbound flow using Inbound Connector of type *Partner*.
