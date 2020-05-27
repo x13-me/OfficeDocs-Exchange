@@ -215,11 +215,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-<<<<<<< Updated upstream
-- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
-=======
-- [get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
->>>>>>> Stashed changes
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
 - [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
