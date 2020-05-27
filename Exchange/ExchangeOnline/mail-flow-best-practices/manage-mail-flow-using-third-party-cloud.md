@@ -103,14 +103,14 @@ Enable [Enhanced Filtering](https://docs.microsoft.com/exchange/mail-flow-best-p
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
 
-We can support this scenario only if you enabled Enhanced Filtering. If you choose to bypass inbound flow through transport rule, we cannot support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). 
+If you choose to bypass inbound flow through transport rule, we cannot support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). 
 If you choose to enable Enhanced Filtering, your organization's mail flow setup looks like the following diagram:
 
 ![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
 #### Best practices for using a third-party cloud service with Office 365
 
-This scenario is currently supported but we strongly recommend that you use the archiving and auditing solutions that are provided by Office 365.
+Although, it is possible to keep Enhanced Filtering in this scenario, it is not recommended. We strongly recommend that you use the archiving and auditing solutions that are provided by Office 365
 
 ## See also
 
