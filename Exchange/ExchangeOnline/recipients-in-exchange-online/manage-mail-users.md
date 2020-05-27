@@ -244,6 +244,15 @@ This example creates a mail user for Rene Valdes:
 New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@fabrikam.com -FirstName Rene -LastName Valdes -MicrosoftOnlineServicesID renev@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force)
 ```
 
+<<<<<<< Updated upstream
+For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser).
+
+### Use Exchange Online PowerShell to modify mail users
+
+In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
+
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users.
+=======
 - [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
 - [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
@@ -251,6 +260,7 @@ New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@f
 - [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
 
 - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
+>>>>>>> Stashed changes
 
 Here are some examples of using Exchange Online PowerShell to change mail user properties.
 
