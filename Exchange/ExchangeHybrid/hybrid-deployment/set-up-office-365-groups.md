@@ -170,7 +170,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **On-premises users can't become an administrator of a group**: On-premises users can't access the group space directly. Because of this, they can't be added as an administrator of a group.
 
-- **Delivery of external mail to a group can fail if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows mails from external senders.
+- **Delivery of external mail to a group fail if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows mails from external senders.
 
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as an Office 365 Group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
