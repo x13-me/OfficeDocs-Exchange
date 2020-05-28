@@ -263,7 +263,7 @@ Before you can use eDiscovery Center in SharePoint Server to search Exchange mai
 
 In Exchange Server, the resources In-Place eDiscovery uses are controlled with throttling policies.
 
-The default throttling policy contains the following parameters. You can change the default values to meet your organization's requirements by creating a new throttling policy with an Organization scope.
+The default throttling policy contains the following parameters. You can change the default values to meet your organization's requirements by creating a new throttling policy with an Organization scope and name it as "DiscoveryThrottlingPolicy" only.
 
 |**Parameter**|**Description**|**Default value**|
 |:-----|:-----|:-----|
