@@ -110,7 +110,7 @@ If you choose to enable Enhanced Filtering, your organization's mail flow setup 
 
 #### Best practices for using a third-party cloud service with Office 365
 
-Although, it is possible to keep Enhanced Filtering in this scenario, it is not recommended. We strongly recommend that you use the archiving and auditing solutions that are provided by Office 365
+Although it is possible to keep Enhanced Filtering in this scenario, it is not recommended. We strongly recommend that you use the archiving and auditing solutions that are provided by Office 365
 
 ## See also
 
