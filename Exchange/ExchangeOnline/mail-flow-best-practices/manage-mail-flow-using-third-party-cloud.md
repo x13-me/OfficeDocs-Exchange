@@ -97,7 +97,7 @@ Create a mail flow rule (also known as a transport rule) in the Exchange admin c
 Enable [Enhanced Filtering](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#procedures-for-enhanced-filtering-for-connectors) on the Inbound Connector type *Partner* that you created to receive messages from the third-party application.
 
 > [!NOTE]
-> For hybrid scenarios where third-party application relay on Exchange on-premises to send to EXO, you need to enable Enhanced Filtering on the Inbound Connector of type *OnPremises*. Even so, you can lockdown inbound flow using Inbound Connector of type *Partner*.
+> For hybrid scenarios where third-party applications rely on Exchange on-premises to send to EXO, you need to enable Enhanced Filtering on the Inbound Connector type *OnPremises*. Even so, you can lock down inbound flow using Inbound Connector type *Partner*.
 
 ### Scenario 2 - MX record points to third-party solution without spam filtering
 
