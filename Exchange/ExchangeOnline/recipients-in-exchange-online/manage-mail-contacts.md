@@ -175,7 +175,7 @@ This example creates a mail contact for Debra Garcia
 New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -Alias dgarcia
 ```
 
-For detailed syntax and parameter information, see [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailcontact).
+For detailed syntax and parameter information, see [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/new-mailcontact).
 
 ### Use Exchange Online PowerShell to modify mail contacts
 
@@ -227,7 +227,7 @@ This example remove the mail contact for Pilar Pinilla:
 Remove-MailContact -Identity "Pilar Pinilla"
 ```
 
-For detailed syntax and parameter information, see [Remove-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailcontact).
+For detailed syntax and parameter information, see [Remove-MailContact](https://docs.microsoft.com/powershell/module/exchange/remove-mailcontact).
 
 ## How do you know these procedures worked?
 

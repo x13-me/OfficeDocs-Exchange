@@ -180,7 +180,7 @@ You must also define the external Autodiscover endpoint for your on-premises org
 - https://\<your primary SMTP domain\>/autodiscover/autodiscover.svc
 
 > [!NOTE]
-> You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/New-IntraOrganizationConnector) cmdlet.
+> You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/New-IntraOrganizationConnector) cmdlet.
 
 Using Windows PowerShell, run the following cmdlet:
 

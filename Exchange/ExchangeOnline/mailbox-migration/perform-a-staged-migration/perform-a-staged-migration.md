@@ -31,7 +31,7 @@ You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange
 
 This article walks you through the tasks involved with for a staged email migration. [What you need to know about a staged email migration to Office 365](../what-to-know-about-a-staged-migration.md) gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
 
-For Windows PowerShell steps, see [Use PowerShell to perform a staged migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615255).
+For Windows PowerShell steps, see [Use PowerShell to perform a staged migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365).
 
 ## Migration Tasks
 
@@ -220,7 +220,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 9. Choose **New** to create the migration endpoint.
 
-   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Test-MigrationServerAvailability).
+   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
 
 ## Migrate your mailboxes
 

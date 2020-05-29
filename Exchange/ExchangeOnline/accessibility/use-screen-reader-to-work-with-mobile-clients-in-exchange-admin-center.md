@@ -65,7 +65,7 @@ You can also specify Exchange ActiveSync access settings, maintain a list of qua
 
 ## Enable Exchange ActiveSync and Outlook on the web for users
 
-Exchange ActiveSync is an Exchange synchronization protocol which allows mobile phones to access your organization's Exchange server. With Exchange ActiveSync, recipients can use their mobile devices to access their email, calendar, contacts, and tasks. They can also continue to access this information while working offline. Learn more about [Exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=799149).
+Exchange ActiveSync is an Exchange synchronization protocol which allows mobile phones to access your organization's Exchange server. With Exchange ActiveSync, recipients can use their mobile devices to access their email, calendar, contacts, and tasks. They can also continue to access this information while working offline. Learn more about [Exchange ActiveSync](../clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync.md).
 
 With Outlook on the web (formerly known as Outlook Web App), users can access their Exchange mailbox from almost any web browser, including from a browser on their mobile devices. [Learn more about Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=799150).
 

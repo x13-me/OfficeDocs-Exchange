@@ -43,7 +43,7 @@ Exchange Online is part of the Office 365 suite of products.
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?LinkID=255444">
+        <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

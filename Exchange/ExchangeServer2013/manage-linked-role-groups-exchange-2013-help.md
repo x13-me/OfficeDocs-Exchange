@@ -21,9 +21,9 @@ You can use a linked management role group to enable members of a universal secu
 
 To create and configure linked role groups, you need to use the **New-RoleGroup** and **Set-RoleGroup** cmdlets. For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup)
+- [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)
 
-- [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-RoleGroup)
+- [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Set-RoleGroup)
 
 For additional management tasks related to role groups, see [Permissions](permissions-exchange-2013-help.md).
 

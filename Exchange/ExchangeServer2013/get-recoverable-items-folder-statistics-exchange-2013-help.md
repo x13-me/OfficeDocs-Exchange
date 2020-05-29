@@ -55,7 +55,7 @@ This example gets folder statistics for Soumya Singhi's Recoverable Items folder
 Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxFolderStatistics).
+For detailed syntax and parameter information, see [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics).
 
 ## Get Recoverable Items folder statistics for all mailboxes on Litigation Hold
 
@@ -65,7 +65,7 @@ This example retrieves a list of all mailboxes placed on Litigation Hold and ret
 Get-Mailbox -ResultSize Unlimited -Filter "LitigationHoldEnabled -eq `$true" | Get-MailboxFolderStatistics -FolderScope RecoverableItems | Format-Table Identity,FolderAndSubfolderSize
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox) and [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxFolderStatistics).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox) and [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics).
 
 ## Get Recoverable Items quota for a mailbox
 

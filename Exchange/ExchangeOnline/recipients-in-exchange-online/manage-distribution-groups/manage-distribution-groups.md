@@ -56,7 +56,7 @@ It's important to note the terminology differences between Active Directory and 
 
 You can now create an Office 365 group instead of a distribution group, if you have an Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Office 365 group** to get started and check out [Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=800653).
 
-If you have existing distribution groups that you want to migrate to Microsoft 365 groups, check out [Migrate distribution lists to Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=824756).
+If you have existing distribution groups that you want to migrate to Microsoft 365 groups, check out [Migrate distribution lists to Microsoft 365 Groups - Admin help](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
 
 If you still want to create a distribution group, use the following steps:
 
@@ -265,7 +265,7 @@ This example creates a distribution group with an alias **itadmin** and the name
 New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestriction open
 ```
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
+For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 ### Use Exchange Online PowerShell to modify distribution groups
 
@@ -319,4 +319,4 @@ To verify that you've successfully created, modified, or removed a distribution 
   Get-DistributionGroupMember -Identity "<GroupIdentity>"
   ```
 
-  For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).
+  For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember).

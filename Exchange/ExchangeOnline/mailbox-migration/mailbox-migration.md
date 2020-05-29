@@ -82,7 +82,7 @@ If your organization has many large PST files, you can use the Office 365 Import
 
 You can use the Office 365 Import Service to either upload the PST files through a network, or to mail the PST files in a drive that you prepare.
 
-For instructions, see [Office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=544944).
+For instructions, see [Overview of importing your organization's PST files](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
 
 ## Migrate email from another IMAP-enabled email system
 <a name="IMAP"> </a>
@@ -115,4 +115,4 @@ If none of the types of migrations described will work for your organization, co
 ## Related Topics
 <a name="Partner"> </a>
 
-[Use PowerShell for email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615247)
+[Use PowerShell for email migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-for-email-migration-to-office-365)
