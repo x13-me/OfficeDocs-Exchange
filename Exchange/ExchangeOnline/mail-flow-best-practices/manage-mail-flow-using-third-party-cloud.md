@@ -89,7 +89,7 @@ There are two options for the next step that you may choose from; if you want to
 
 
 #### Option A:
-Create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin > Mail flow > Rules** to bypass anti-spam check:
+Create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** > **Mail flow** > **Rules** to bypass the anti-spam check:
 
 ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
