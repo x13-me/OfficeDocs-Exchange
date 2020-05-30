@@ -21,7 +21,7 @@ The Address Book Policy Routing agent is a Transport agent that runs on the Mail
 
 For additional management tasks related to ABPs, see [Address book policy procedures](address-book-policy-procedures-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Turn on address book policy routing](https://technet.microsoft.com/library/jj891095\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Turn on address book policy routing](https://docs.microsoft.com/Exchange/address-books/address-book-policies/turn-on-address-book-policy-routing).
 
 ## What do you need to know before you begin?
 

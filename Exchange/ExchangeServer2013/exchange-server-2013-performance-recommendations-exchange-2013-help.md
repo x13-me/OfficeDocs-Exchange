@@ -62,7 +62,7 @@ More about Exchange 2013 architectural changes, and background information on ot
 
 [Load balancing](load-balancing-exchange-2013-help.md)
 
-[Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098\(v=exchg.150\))
+[Exchange Server Updates: build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates)
 
 [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md)
 

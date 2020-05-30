@@ -41,7 +41,7 @@ For more information about the limits and quotas for public folders, see [Limits
 
 For a list of public folder management tasks, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Public folders in Office 365 and Exchange Online](https://technet.microsoft.com/library/jj200758\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Public folders in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/public-folders).
 
 ## Public folder architecture
 

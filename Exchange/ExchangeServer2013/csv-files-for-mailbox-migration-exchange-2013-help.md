@@ -125,7 +125,7 @@ The following table describes the supported attributes for a CSV file for local 
 
 ## Onboarding remote move migrations in a hybrid deployment
 
-In a hybrid deployment, you can move mailboxes from an on-premises Exchange organization to Exchange Online. When onboarding mailboxes, the migration batch is created in the Exchange Online organization and initiated by an Exchange Online administrator. For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://technet.microsoft.com/library/jj906432\(v=exchg.150\)).
+In a hybrid deployment, you can move mailboxes from an on-premises Exchange organization to Exchange Online. When onboarding mailboxes, the migration batch is created in the Exchange Online organization and initiated by an Exchange Online administrator. For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 
 The following table describes the supported attributes for a CSV file for onboarding remote move migrations.
 
@@ -188,9 +188,9 @@ The following table describes the supported attributes for a CSV file for onboar
 
 As previously stated, cross-forest moves are initiated either from the target forest or from the source forest. Offboarding remote move migrations are initiated from your Exchange Online organization. For more information, see:
 
-  - [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
+- [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
 
-  - [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://technet.microsoft.com/library/jj906432\(v=exchg.150\))
+- [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
 
 The following table describes the supported attributes for a CSV file for cross-forest enterprise moves and for offboarding remote move migrations in an Exchange hybrid deployment.
 
@@ -315,9 +315,9 @@ The following table describes the supported attributes for a CSV file for a stag
 
 A CSV file for an IMAP migration batch can have maximum of 50,000 rows. But it's a good idea to migrate users in several smaller batches. For more information about IMAP migrations, see the following topics:
 
-  - [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://technet.microsoft.com/library/jj874015\(v=exchg.150\))
+- [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)
 
-  - [CSV files for IMAP migration batches](https://technet.microsoft.com/library/jj200730\(v=exchg.150\))
+- [CSV files for IMAP migration batches](https://technet.microsoft.com/library/jj200730\(v=exchg.150\))
 
 The following table describes the supported attributes for a CSV file for an IMAP migration.
 

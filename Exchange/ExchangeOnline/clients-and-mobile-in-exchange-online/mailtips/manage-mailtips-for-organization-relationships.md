@@ -32,7 +32,7 @@ You use the **Set-OrganizationRelationship** cmdlet to configure these settings.
 
 - Estimated time to complete each procedure: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform this procedure.
 

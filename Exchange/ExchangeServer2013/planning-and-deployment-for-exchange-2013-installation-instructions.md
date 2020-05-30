@@ -43,7 +43,7 @@ Use the following links to access information to help you plan the deployment of
 
 - [Anti-malware protection](anti-malware-protection-exchange-2013-help.md): Read this topic to understand anti-malware protection options for Exchange 2013.
 
-- [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581\(v=exchg.150\)): Read this topic to help you with planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange 2013 organization.
+- [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid): Read this topic to help you with planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange 2013 organization.
 
 - [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md): Read this topic to help you with planning to achieve your high availability and business continuity requirements.
 
@@ -93,7 +93,7 @@ Use the following links to access the information you need to help you with depl
 
 - [Deploying voice mail and UM](deploying-voice-mail-and-um-exchange-2013-help.md): Read this topic for information that will help you understand deploying Exchange 2013 Unified Messaging, whether a new deployment or an upgrade.
 
-- [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788\(v=exchg.150\)): Read this topic for information that will help you deploy Exchange 2013 in an existing hybrid deployment.
+- [Hybrid Deployment procedures](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-deployment): Read this topic for information that will help you deploy Exchange 2013 in an existing hybrid deployment.
 
 - [Exchange 2013 post-Installation tasks](exchange-2013-post-installation-tasks-exchange-2013-help.md): Learn about post-installation tasks to complete your Exchange 2013 installation.
 
