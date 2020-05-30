@@ -23,7 +23,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 
 - Estimated time to complete each procedure: less than 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 - Administrator audit logging is enabled by default. To verify that it's enabled, run the following command:
 

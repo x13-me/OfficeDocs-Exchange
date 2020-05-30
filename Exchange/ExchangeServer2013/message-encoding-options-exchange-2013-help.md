@@ -382,7 +382,7 @@ The following table describes the order of precedence from lowest priority to hi
 
 [Remote domains](remote-domains-exchange-2013-help.md)
 
-[Remote domains in Exchange Online](https://technet.microsoft.com/library/jj966211\(v=exchg.150\))
+[Remote domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)
 
 [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users)
 

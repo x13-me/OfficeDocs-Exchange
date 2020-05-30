@@ -155,6 +155,16 @@
         "source_path": "outlook/mobile/resources.md",
         "redirect_url": "https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/",
         "redirect_document_id": true
-      }       
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/change-address-book-generation-schedule.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/change-address-book-generation-schedule-exchange-2013-help",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/create-virtual-directory.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/create-virtual-directory-exchange-2013-help",
+        "redirect_document_id": true
+      }
     ]
 }
