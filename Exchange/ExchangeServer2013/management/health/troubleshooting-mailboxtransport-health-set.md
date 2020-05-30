@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **MailboxTransport** health set monitors the overall health of the Mailbox Transport Submission and Mailbox Transport Delivery services on Mailbox servers. These services are responsible for sending mail to and from mailbox databases. For more information, see [Mail flow](https://technet.microsoft.com/library/aa996349\(v=exchg.150\)).
+The **MailboxTransport** health set monitors the overall health of the Mailbox Transport Submission and Mailbox Transport Delivery services on Mailbox servers. These services are responsible for sending mail to and from mailbox databases. For more information, see [Mail flow](https://docs.microsoft.com/exchange/mail-flow-exchange-2013-help).
 
 If you receive an alert that indicates that the **MailboxTransport** health set is unhealthy, this indicates an issue that may prevent mail from being sent or received from mailbox databases.
 

@@ -140,7 +140,7 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[Offline address books](https://technet.microsoft.com/library/bb232155\(v=exchg.150\))
+[Offline address books](https://docs.microsoft.com/exchange/offline-address-books-exchange-2013-help)
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 

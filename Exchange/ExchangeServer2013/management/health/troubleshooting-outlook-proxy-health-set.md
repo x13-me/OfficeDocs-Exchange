@@ -140,7 +140,7 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[Outlook Anywhere](https://technet.microsoft.com/library/bb123741\(v=exchg.150\))
+[Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help)
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
