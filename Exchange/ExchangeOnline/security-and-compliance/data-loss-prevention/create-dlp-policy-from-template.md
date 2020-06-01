@@ -37,8 +37,6 @@ You can customize any of these DLP templates or use them as-is. DLP policy templ
 
 - Estimated time to complete: 30 minutes
 
-- Ensure that Exchange Server is set up as described in [Planning and deployment for Exchange Server](../../../ExchangeServer/plan-and-deploy/plan-and-deploy.md).
-
 - Configure both administrator and user accounts within your organization and validate basic mail flow.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
