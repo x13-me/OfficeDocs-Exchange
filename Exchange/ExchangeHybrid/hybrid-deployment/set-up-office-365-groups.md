@@ -56,7 +56,7 @@ Before you start, make sure that you've done the following:
 
 4. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**.
 
-5. Select **Group writeback (Preview)** and then click **Next**.
+5. Select **Group writeback** and then click **Next**.
 
 6. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
 
