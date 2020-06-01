@@ -29,7 +29,7 @@ If you were viewing mail protection reports in the Exchange admin center, they'v
 To get to the Security & Compliance Center, visit [https://protection.office.com](https://protection.office.com), and sign in using your work or school account.
 
 > [!NOTE]
-> You must be an Office 365 global administrator or have appropriate permissions assigned in order to use the Security & Compliance Center. For more details, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
+> You must be a global administrator or have appropriate permissions assigned in order to use the Security & Compliance Center. For more details, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
 
 ## Reporting overview
 

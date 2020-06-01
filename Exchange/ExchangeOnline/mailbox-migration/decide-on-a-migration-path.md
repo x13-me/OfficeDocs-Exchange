@@ -29,13 +29,13 @@ manager: serdars
 Deciding on the best migration path of your users' email to Office 365 can be difficult. This article gives guidance based on your current email system and other factors, such as how quickly you want to migrate to Office 365. Your migration performance will vary based on your network, mailbox size, migration speed, and so on.
 
 > [!IMPORTANT]
-> This topic is intended for Office 365 global administrators. If you want to migrate email for a single account, see [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) instead.
+> This topic is intended for global administrators. If you want to migrate email for a single account, see [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) instead.
 
 ## How do I decide which method to use?
 
 Before you start an email migration, review the [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [Office 365 migration performance and best practices](office-365-migration-best-practices.md) for Exchange Online to make sure you get the performance and behavior you expect after migration.
 
-You, as Office 365 global administrator, can migrate mailboxes from an [Exchange Server](decide-on-a-migration-path.md#BK_Exchange) or [from another email system](decide-on-a-migration-path.md#BK_Other). The content in the following sections is organized by email system, and the linked topics help you decide on the best method based on number of mailboxes and your time and mailbox size constraints.
+You, as global administrator, can migrate mailboxes from an [Exchange Server](decide-on-a-migration-path.md#BK_Exchange) or [from another email system](decide-on-a-migration-path.md#BK_Other). The content in the following sections is organized by email system, and the linked topics help you decide on the best method based on number of mailboxes and your time and mailbox size constraints.
 
 ## Your existing system is an Exchange Server
 <a name="BK_Exchange"> </a>
