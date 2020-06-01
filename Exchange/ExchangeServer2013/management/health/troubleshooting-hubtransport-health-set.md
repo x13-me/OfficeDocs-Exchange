@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **HubTransport** health set monitors the overall health of the transport pipeline on Mailbox servers that's responsible for routing mail in your organization. For more information, see [Mail flow](https://technet.microsoft.com/library/aa996349\(v=exchg.150\)).
+The **HubTransport** health set monitors the overall health of the transport pipeline on Mailbox servers that's responsible for routing mail in your organization. For more information, see [Mail flow](https://docs.microsoft.com/exchange/mail-flow-exchange-2013-help).
 
 If you receive an alert that indicates that the **HubTransport** health set is unhealthy, this indicates an issue that may prevent mail from being routed and delivered.
 

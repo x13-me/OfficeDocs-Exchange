@@ -242,7 +242,7 @@
 ### [Content conversion](../mail-flow/content-conversion/content-conversion.md)
 #### [Message encoding](../mail-flow/content-conversion/message-encoding.md)
 #### [TNEF conversion](../mail-flow/content-conversion/tnef-conversion.md)
-### [Message size limits](../mail-flow/message-size-limits.md)
+### [Message size and recipient limits](../mail-flow/message-size-limits.md)
 ### [Message rate limits](../mail-flow/message-rate-limits.md)
 ### [Back pressure](../mail-flow/back-pressure.md)
 ### [Test SMTP with telnet](../mail-flow/test-smtp-with-telnet.md)

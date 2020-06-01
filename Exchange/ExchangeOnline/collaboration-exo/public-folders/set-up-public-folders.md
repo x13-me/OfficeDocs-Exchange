@@ -72,7 +72,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 8. You can add multiple users by clicking **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
 
-For information about how to use Exchange Online PowerShell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/add-publicfolderclientpermission).
+For information about how to use Exchange Online PowerShell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission).
 
 ## Step 4 (Optional): Mail-enable the public folder
 <a name="Perms"> </a>
@@ -89,7 +89,7 @@ If you want users to send mail to the public folder, you can mail-enable it. Thi
 
 The public folder will be mail-enabled and the name of the public folder will become the alias of the public folder. If you have multiple recipients with that name, the public folder's alias will be appended with a number. For example, if you have a distribution group named SalesTeam and you create a public folder named SalesTeam and then mail-enable it, the alias of that public folder will be SalesTeam1.
 
-For information about how to use Exchange Online PowerShell to mail-enable a public folder, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/enable-mailpublicfolder).
+For information about how to use Exchange Online PowerShell to mail-enable a public folder, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/enable-mailpublicfolder).
 
 > [!NOTE]
 > If you have a hybrid configuration, the public folders created on Exchange Online are only visible to cloud-based mailboxes. Conversely, public folders created on-premises are only visible to on-premises mailboxes. <br/><br/> To complete a migration from Exchange Server 2010 to Exchange Online with public folders, see [Configure legacy on-premises public folders for a hybrid deployment](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders).

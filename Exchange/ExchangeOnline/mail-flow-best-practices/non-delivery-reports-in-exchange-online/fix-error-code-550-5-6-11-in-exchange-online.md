@@ -11,7 +11,9 @@ localization_priority: Normal
 f1.keywords:
 - CSH
 ms.custom: MiniMaven
-search.appverid: BCS160
+search.appverid: 
+- BCS160
+- MET150
 ms.assetid: 81dafee7-26af-4d79-b174-8f78980dfafb
 description: "Learn how to fix email issues for error code 5.6.11 in Exchange Online (the destination email server rejects messages with bare line feeds)."
 ---
@@ -52,7 +54,7 @@ If the steps in the previous section didn't fix the problem, the **recipient's**
 
 ### Solution 1: Disable bare line feed rejection (allow messages that contain bare line feeds) in the destination email server
 
-Some email servers support the ability to disable bare line feed rejection. For example, Receive connectors in Exchange Server support the _BareLinefeedRejectionEnabled_ setting. If the recipient's email server is Exchange, the admin could configure the setting `-BareLinefeedRejectionEnabled $false` on the server's Receive connector for internet mail. For more information, see [Set-ReceiveConnector](https://go.microsoft.com/fwlink/p/?LinkId=784894).
+Some email servers support the ability to disable bare line feed rejection. For example, Receive connectors in Exchange Server support the _BareLinefeedRejectionEnabled_ setting. If the recipient's email server is Exchange, the admin could configure the setting `-BareLinefeedRejectionEnabled $false` on the server's Receive connector for internet mail. For more information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
 ### Solution 2: Upgrade the destination email server to a newer version (or different email server software) that supports the SMTP BDAT command
 

@@ -91,7 +91,7 @@ This example returns values for the specified properties on all OABs in your org
 Get-OfflineAddressBook | Format-List Name,GUID,AddressLists,GeneratingMailbox,IsDefault,VirtualDirectories,GlobalWebDistributionEnabled,ShadowMailboxDistributionEnabled
 ```
 
-For detailed syntax and parameter information, see [Get-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-offlineaddressbook).
+For detailed syntax and parameter information, see [Get-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/get-offlineaddressbook).
 
 ## Use the Exchange Management Shell to create offline address books
 
@@ -119,7 +119,7 @@ This example creates a new OAB named Contoso Executives OAB with the following p
 New-OfflineAddressBook -Name "Contoso Executives OAB" -AddressLists "Default Global Address List","Contoso Executives Address List" -GlobalWebDistributionEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-offlineaddressbook).
+For detailed syntax and parameter information, see [New-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/new-offlineaddressbook).
 
 ### How do you know this worked?
 
@@ -137,7 +137,7 @@ To modify OABs, use the following syntax:
 Set-OfflineAddressBook -Identity "<OABIdentity>" [-Name <Name>] [-AddressLists "<GlobalAddressListOrAddressList1>","<GlobalAddressListOrAddressList2>,..."] [-VirtualDirectories $null] [-GlobalWebDistributionEnabled $true] [-GeneratingMailbox <OrganizationMailboxIdentity>] [-IsDefault $true] [-ShadowMailboxDistributionEnabled <$true | $false>]
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
 
 ### Use the Exchange Management Shell to configure the default offline address book
 
@@ -243,7 +243,7 @@ This example updates all OABs.
 Get-OfflineAddressBook | Update-OfflineAddressBook
 ```
 
-For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/update-offlineaddressbook).
+For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/update-offlineaddressbook).
 
 ## Use the Exchange Management Shell to remove offline address books
 

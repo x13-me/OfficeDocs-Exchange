@@ -94,7 +94,7 @@ If you want the add-in to be required for your users, replace _\<AppId\>_ with t
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser AlwaysEnabled
 ```
 
-For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
+For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/set-app).
 
 ### How do you know this worked?
 
@@ -122,7 +122,7 @@ $a = Get-DistributionGroupMember Marketing
 Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
 ```
 
-For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
+For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/set-app).
 
 ### How do you know this worked?
 

@@ -29,7 +29,7 @@ The agent install and the configuration of Hybrid via the Hybrid Configuration w
 
 The Hybrid Agent has multiple methods of installation with different requirements. In all cases, the core computer requirements are the same:
 
-- Windows Server 2012 R2 or 2016 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
+- Windows Server 2012 R2, 2016, or 2019 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
 
   - TLS 1.2 enabled.
 
@@ -84,8 +84,6 @@ The hybrid wizard automatically handles the free/busy information that's require
 If you need to configure free/busy sharing with a third-party company, go to the **Organization** tab in the Exchange admin center and configure individual or organization sharing between the two systems (Exchange online/Exchange on-premises or Exchange on-premises/Exchange on-premises).
 
 If you encounter any problems or need to troubleshoot, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Microsoft 365 or Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
-
-
 
 ## Constraints
 

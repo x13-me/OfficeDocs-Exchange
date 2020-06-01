@@ -9,6 +9,7 @@ ms.reviewer:
 f1.keywords:
 - NOCSH
 title: Use Exchange Online PowerShell to display Office 365 mailbox information
+search.appverid: MET150
 ms.collection:
 - Ent_O365
 - exchange-online
@@ -94,7 +95,7 @@ Some commonly used comparison operators are:
 
 - `lt` (less than)
 
-For a complete list of comparison operators, see [Where-Object](https://go.microsoft.com/fwlink/p/?linkid=113423).
+For a complete list of comparison operators, see [Where-Object](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object).
 
 Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and `$Null` don't require quotation marks around the value.
 

@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 79e91ade-5c83-405b-a37d-d99c7d069b13
 description: "Learn how to fix email issues for error code 5.1.1 through 5.1.20 in Exchange Online (the recipient doesn't exist or your Auto-Complete list entry for the recipient is bad)."
 ---
@@ -114,7 +115,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 Check your recent messages in the **Sent Items** folder for strange or unknown messages (messages that you didn't send). If you don't see any suspicious messages, it's likely that the NDR you received is backscatter. If you've already changed your password and run an anti-malware scan, you can ignore these backscatter NDRs.
 
-To learn more, see [Backscatter messages and EOP](https://technet.microsoft.com/library/dn499795.aspx).
+To learn more, see [Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop).
 
 ## I'm an email admin. What can I do to fix this?
 

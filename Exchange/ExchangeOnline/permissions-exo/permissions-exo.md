@@ -24,7 +24,7 @@ Exchange Online in Office 365 includes a large set of predefined permissions, ba
 
 RBAC is also the permissions model that's used in Microsoft Exchange Server. Most of the links in this topic refer to topics that reference Exchange Server. The concepts in those topics also apply to Exchange Online.
 
-For information about permissions across Office 365, see [Permissions in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=263762)
+For information about permissions across Office 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 > [!NOTE]
 > Several RBAC features and concepts aren't discussed in this topic because they're advanced features. If the functionality discussed in this topic doesn't meet your needs, and you want to further customize your permissions model, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
@@ -41,7 +41,7 @@ Administrative roles and end-user roles are the two types of management roles. F
 
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Online PowerShell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
 
-Exchange Online includes role groups that you can use to grant permissions. For more information, see [Permissions in Exchange Online](permissions-exo.md).
+Exchange Online includes role groups that you can use to grant permissions. For more information, see the next section.
 
 > [!NOTE]
 > Some management roles many be available only to on-premises Exchange Server installations and won't be available in Exchange Online.
@@ -205,5 +205,4 @@ The following table contains links to topics that will help you learn about and 
 |[Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx)|Learn about each of the components that make up RBAC and how you can create advanced permissions models if role groups and management roles aren't enough.|
 |[Manage role groups in Exchange Online](role-groups.md)|Configure permissions for Exchange Online administrators and specialist users using role groups, including adding and removing members to and from role groups.|
 |[Role assignment policies in Exchange Online](role-assignment-policies.md)|Configure which features end-users have access to on their mailboxes using role assignment policies, view, create, modify, and remove role assignment policies, specify the default role assignment policy, and apply role assignment policies to mailboxes.|
-|[View Effective Permissions](https://technet.microsoft.com/library/ae6cb7cf-f998-44a6-a69a-02ad736c8260.aspx)|View who has permissions to administer Exchange Online features.|
 |[Feature permissions in Exchange Online](feature-permissions.md)|Learn more about the permissions required to manage Exchange Online features and services.|

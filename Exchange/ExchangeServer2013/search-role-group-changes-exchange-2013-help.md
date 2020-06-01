@@ -23,7 +23,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 
 - Estimated time to complete each procedure: less than 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 - Administrator audit logging is enabled by default. To verify that it's enabled, run the following command:
 
@@ -120,7 +120,7 @@ Search-AdminAuditLog -StartDate 05/01/2012 -EndDate 10/03/2012 -ObjectID contoso
 
 If your searches return many log entries, we recommend that you use the procedure provided in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### View details of audit log entries
 
@@ -191,4 +191,4 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, Proh
 
 For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-adminauditlogsearch).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-adminauditlogsearch).

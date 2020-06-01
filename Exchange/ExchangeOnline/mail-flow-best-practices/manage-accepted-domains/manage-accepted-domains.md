@@ -34,7 +34,7 @@ There are two types of accepted domains in Exchange Online:
 
     - **Exchange Online**: [Manage mail users](../../recipients-in-exchange-online/manage-mail-users.md)
 
-    - **Exchange Online Protection**: [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx)
+    - **Exchange Online Protection**: [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eopx)
 
   - Setting this option enables Directory Based Edge Blocking (DBEB), which rejects messages for invalid recipients at the service network perimeter. For more information about configuring DBEB during a migration, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
@@ -50,7 +50,7 @@ There are two types of accepted domains in Exchange Online:
 
 - Estimated time to complete: 10 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -119,7 +119,7 @@ This example configures the accepted domain named contoso.com as an internal rel
 Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
 ### How do you know this worked?
 

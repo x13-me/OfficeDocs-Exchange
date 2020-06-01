@@ -67,7 +67,7 @@ After you have your Azure subscription, you need to do the following in order:
 
 - A public IP address that is not behind NAT for the VPN gateways in each site.
 
-- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://go.microsoft.com/fwlink/p/?linkId=522619) for more information about compatible devices.
+- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices.
 
 - Familiarity with DAG concepts and management.
 
@@ -300,7 +300,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 

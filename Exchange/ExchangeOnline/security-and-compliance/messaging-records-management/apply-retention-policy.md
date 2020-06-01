@@ -25,7 +25,7 @@ You can use retention policies to group one or more retention tags and apply the
 > [!CAUTION]
 > Messages are expired based on settings defined in the retention tags linked to the policy. These settings include actions such moving messages to the archive or permanently deleting them. Before applying a retention policy to one or more mailboxes, we recommended that you test the policy and inspect each retention tag associated with it.
 
-For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -68,7 +68,7 @@ This example applies the retention policy RP-Finance to Morris's mailbox.
 Set-Mailbox "Morris" -RetentionPolicy "RP-Finance"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## Use Exchange Online PowerShell to apply a retention policy to multiple mailboxes
 
@@ -91,11 +91,11 @@ This example applies the retention policy RetentionPolicy-Finance to all mailbox
 Get-Mailbox -OrganizationalUnit "Finance" -ResultSize Unlimited | Set-Mailbox -RetentionPolicy "RetentionPolicy-Finance"
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
-To verify that you have applied the retention policy, run the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) cmdlet to retrieve the retention policy for the mailbox or mailboxes.
+To verify that you have applied the retention policy, run the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the retention policy for the mailbox or mailboxes.
 
 This example retrieves the retention policy for Morris's mailbox.
 

@@ -73,7 +73,7 @@ This example retrieves the properties of the Outlook on the web mailbox policy `
 Get-OwaMailboxPolicy -Identity Fabrikam\Executives
 ```
 
-For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy).
+For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy).
 
 ## Use the Exchange Management Shell to configure Outlook on the web mailbox policies
 
@@ -83,7 +83,7 @@ This example enables calendar access in the default mailbox policy.
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
-For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
+For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
 ### How do you know this worked?
 

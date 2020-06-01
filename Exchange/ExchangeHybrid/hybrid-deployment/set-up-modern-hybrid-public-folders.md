@@ -64,7 +64,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises and Office 365. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
 > [!NOTE]
-> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be visible in the Exchange admin center. Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder) cmdlet. To recreate SendAs permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission) cmdlet.
+> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be visible in the Exchange admin center. Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder) cmdlet. To recreate SendAs permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission) cmdlet.
 
 On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 

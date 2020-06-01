@@ -56,7 +56,7 @@ Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
-Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 > [!TIP]
 > Need to keep deleted items for longer than 30 days? To do this, place the mailbox on In-Place Hold or Litigation Hold. This works because when a mailbox is placed on hold, deleted items are kept and retention settings for deleted items are ignored. See [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).

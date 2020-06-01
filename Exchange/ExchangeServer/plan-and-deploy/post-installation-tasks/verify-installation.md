@@ -40,7 +40,7 @@ This example returns additional details about the Exchange server named Mailbox0
 Get-ExchangeServer -Identity Mailbox01 | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-exchangeserver).
+For detailed syntax and parameter information, see [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/get-exchangeserver).
 
 ## Review the Windows Application log and the Exchange Setup log
 

@@ -175,7 +175,7 @@ After you install and configure a Mailbox server, you can use the **Test-IRMConf
 
 - Acquires a prelicense for the specified recipient.
 
-For more information, see [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/test-irmconfiguration).
+For more information, see [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/test-irmconfiguration).
 
 ::: moniker range="exchserver-2016"
 

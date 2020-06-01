@@ -73,7 +73,7 @@ This example add the members of the mail-enabled security group named Contoso Co
 Add-RoleGroupMember -Identity "Discovery Management" -Member "Contoso Compliance Management"
 ```
 
-For more information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+For more information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

@@ -34,7 +34,7 @@ manager: serdars
 
 As part of the process of deploying Office 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Office 365.
 
-Looking for PowerShell commands for general IMAP migrations? See [Use PowerShell to perform an IMAP migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=615256).
+Looking for PowerShell commands for general IMAP migrations? See [Use PowerShell to perform an IMAP migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 ## Migration tasks for IMAP mailboxes
 

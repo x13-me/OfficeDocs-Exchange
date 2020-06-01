@@ -27,7 +27,7 @@ In Microsoft Exchange Server and Exchange Online, you can use data loss preventi
 
 ## Templates available for DLP
 
-The following table lists the DLP policy templates in Exchange. To learn more about customizing these templates to create DLP policies, see [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx).
+The following table lists the DLP policy templates in Exchange.
 
 |**Template**|**Description**|
 |:-----|:-----|

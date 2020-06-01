@@ -91,7 +91,7 @@ This example sets the following connectivity log settings in the Transport servi
 Set-TransportService -Identity Mailbox01 -ConnectivityLogPath "D:\Connectivity Log\Hub" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-mailboxtransportservice).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/set-mailboxtransportservice).
 
  **Notes**:
 

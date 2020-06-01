@@ -65,7 +65,7 @@ This example returns information about the fictitious DLP policy named Employee 
 Get-DlpPolicy "Employee Numbers" | Format-List
 ```
 
-For syntax and parameter information, see [Get-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlppolicy).
+For syntax and parameter information, see [Get-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlppolicy).
 
 ## Change a DLP policy
 
@@ -97,7 +97,7 @@ You can specify the action and notification level of a policy using the Exchange
 Set-DlpPolicy "Employee Numbers" -Mode Audit
 ```
 
-For syntax and parameter information, see [Set-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlppolicy).
+For syntax and parameter information, see [Set-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dlppolicy).
 
 ## Delete a DLP policy
 
@@ -119,7 +119,7 @@ This example removes the fictitious DLP policy named Employee Numbers.
 Remove-DlpPolicy "Employee Numbers"
 ```
 
-For syntax and parameter information, see [Remove-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlppolicy).
+For syntax and parameter information, see [Remove-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-dlppolicy).
 
 ## For more information
 

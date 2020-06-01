@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: da1ff375-f88f-4a3e-b81f-06cdb6ecae3c
 description: "Learn how to fix email issues for error code 5.7.1 (and also 5.7.0 to 5.7.999) in Exchange Online (the recipient is configured to reject email from the sender)."
 ---
@@ -146,13 +147,13 @@ If you have an incorrect MX record, try the following steps:
 
 2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\>_.mail.protection.outlook.com.
 
-3. Verify **MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
+3. Verify **MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 4. Verify you have only one MX record configured for your domain. Microsoft doesn't support using more than one MX record for a domain that's enrolled in Exchange Online.
 
 ### Your domain's SPF record has a problem
 
-The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
+The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ### Hybrid configuration issues
 
@@ -164,7 +165,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
      - **Delivery**: If **Route mail through smart hosts** is selected, confirm the correct IP address or FQDN is specified. If **MX record associated with the recipient domain** is selected, confirm the MX record for the domain points to the correct mail server.
 
-       You can test your MX record and your ability to send mail from your Exchange Online organization by using the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
+       You can test your MX record and your ability to send mail from your Exchange Online organization by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
      - **Scope**: If you need to route inbound internet mail to your on-premises Exchange organization, **Domains** needs to include all email domains that are used in your on-premises organization. You can use the value asterisk (\*) to also route all outbound internet mail through the on-premises organization.
 

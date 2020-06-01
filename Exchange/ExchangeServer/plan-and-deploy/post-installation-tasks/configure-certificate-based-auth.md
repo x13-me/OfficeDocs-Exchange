@@ -57,7 +57,7 @@ In the Exchange Management Shell, run the following command:
 Install-WindowsFeature Web-Client-Auth
 ```
 
-For detailed syntax and parameter information, see [Install-WindowsFeature](https://go.microsoft.com/fwlink/p/?linkid=323998).
+For detailed syntax and parameter information, see [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature).
 
 ## Step 2: Use IIS Manager to enable Active Directory Client Certificate Authentication for the Exchange server
 
@@ -125,7 +125,7 @@ After you require client certificates for authentication, you need to disable al
     Set-OwaVirtualDirectory "<ServerName>\owa (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false -OAuthAuthentication $false
     ```
 
-    For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-owavirtualdirectory).
+    For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-owavirtualdirectory).
 
 2. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the EAC virtual directory:
 
@@ -133,7 +133,7 @@ After you require client certificates for authentication, you need to disable al
     Set-EcpVirtualDirectory "<ServerName>\ecp (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false
     ```
 
-    For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-ecpvirtualdirectory).
+    For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-ecpvirtualdirectory).
 
 3. Replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the ActiveSync virtual directory:
 
@@ -141,7 +141,7 @@ After you require client certificates for authentication, you need to disable al
     Set-ActiveSyncVirtualDirectory "<ServerName>\Microsoft-Server-ActiveSync (Default Web Site)" -BasicAuthEnabled $false -WindowsAuthEnabled $false
     ```
 
-    For detailed syntax and parameter information, see [Set-ActiveSyncVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-activesyncvirtualdirectory).
+    For detailed syntax and parameter information, see [Set-ActiveSyncVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-activesyncvirtualdirectory).
 
 ## Step 5: Use IIS Manager to enable client certificate mapping for the Outlook on the web, Exchange admin center, and ActiveSync virtual directories
 

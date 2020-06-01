@@ -118,7 +118,7 @@ In hybrid deployments, you need to configure OAuth authorization protocol betwee
 
 Certain Exchange 2016 features are only fully available across your organization by using the new OAuth protocol. For example, before you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes in an Exchange hybrid organization, you need to configure OAuth authentication between your Exchange on-premises and Exchange Online organizations. The Hybrid Configuration Wizard doesn't manage the OAuth authorization connection. For more information, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
-In online deployments, Exchange Online, SharePoint Online and Skype for Business Online need to be configured for a modern authentication connection. Modern authentication brings Active Directory Authentication Library (ADAL)-based sign in to Office 2013 Windows clients. Office 2013 client applications sign in to the Office 365 service to gain access to Exchange Online, SharePoint Online and Skype for Business Online. We recommend that you enable Exchange Online for modern authentication when enabling modern authentication for Skype for Business. Modern authentication is enabled by default in SharePoint Online. For more information, see [Enable Exchange Online for modern authentication](https://go.microsoft.com/fwlink/p/?linkId=846120).
+In online deployments, Exchange Online, SharePoint Online and Skype for Business Online need to be configured for a modern authentication connection. Modern authentication brings Active Directory Authentication Library (ADAL)-based sign in to Office 2013 Windows clients. Office 2013 client applications sign in to the Office 365 service to gain access to Exchange Online, SharePoint Online and Skype for Business Online. We recommend that you enable Exchange Online for modern authentication when enabling modern authentication for Skype for Business. Modern authentication is enabled by default in SharePoint Online. For more information, see [Enable or disable modern authentication for Outlook in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 The per service default state of modern authentication is:
 
@@ -140,14 +140,14 @@ In a site mailbox, content is kept where it belongs. Exchange stores the email, 
 
 You can provision and manage site mailboxes from SharePoint Server 2016. For more information, including how to configure site mailboxes, see the following topics.
 
-- [Site Mailboxes](https://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
+- [Site Mailboxes](https://docs.microsoft.com/exchange/site-mailboxes-exchange-2013-help)
 
-- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941(v=office.16).aspx)
+- [Configure email integration for a SharePoint Server farm](hhttps://docs.microsoft.com/SharePoint/administration/configure-email-integration)
 
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>
 
-The unified contact store (UCS) feature provides a consistent contact experience across Office products. This feature lets users store all contact information in their Exchange 2016 mailbox so that the same contact information is available globally across Skype for Business, SharePoint, Exchange, Outlook and Outlook on the web. When you deploy aSkype for Business Server and publish the topology, UCS is enabled for all users by default and no additional action is needed. For more information, see [Configure Skype for Business Server 2015 to use the unified contact store](https://technet.microsoft.com/library/jj688083.aspx).
+The unified contact store (UCS) feature provides a consistent contact experience across Office products. This feature lets users store all contact information in their Exchange 2016 mailbox so that the same contact information is available globally across Skype for Business, SharePoint, Exchange, Outlook and Outlook on the web. When you deploy aSkype for Business Server and publish the topology, UCS is enabled for all users by default and no additional action is needed. For more information, see [Configure Skype for Business Server to use the unified contact store](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/use-the-unified-contact-store).
 
 A user's contacts are automatically migrated to the Exchange 2016 server when the user:
 

@@ -53,7 +53,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 ### Use the Exchange Management Shell to create a role group
 
-To create a role group, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroups#examples) section in [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+To create a role group, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroups#examples) section in [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### How do you know this worked?
 
@@ -111,7 +111,7 @@ If you have a role group that contains the permissions you want to grant to user
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and more.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### Use the Exchange Management Shell to copy a role group with a custom scope
 
@@ -138,7 +138,7 @@ You can also add members to the role group when you create it by using the _Memb
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and perform other tasks.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### Use the Exchange Management Shell to copy a role group with an OU scope
 
@@ -165,7 +165,7 @@ You can also add members to the role group when you create it by using the _Memb
 
 After the new role group is created, you can add or remove roles, change the scope of role assignments on the role, and more.
 
-For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup) and [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### How do you know this worked?
 
@@ -191,7 +191,7 @@ If you no longer need a role group you created, you can remove it. When you remo
 
 ### Use the Exchange Management Shell to remove a role group
 
-To remove a role group, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup#examples) section in [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+To remove a role group, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup#examples) section in [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ## View role groups
 
@@ -205,7 +205,7 @@ You can view either a list of role groups or the detailed information about a sp
 
 ### Use the Exchange Management Shell to view a list of role groups and role group details
 
-To view a list of role groups, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup#Examples) section in [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+To view a list of role groups, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup#Examples) section in [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
 ## Add a role to a role group
 
@@ -240,7 +240,7 @@ This example assigns the Transport Rules management role to the Seattle Complian
 New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a predefined scope
 
@@ -260,7 +260,7 @@ This example assigns the Message Tracking role to the Enterprise Support role gr
 New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a recipient filter-based scope
 
@@ -286,7 +286,7 @@ This example assigns the Message Tracking role to the Seattle Recipient Admins r
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with a configuration scope
 
@@ -312,7 +312,7 @@ This example assigns the Databases role to the Seattle Server Admins role group 
 New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### Use the Exchange Management Shell to create a role assignment with an OU scope
 
@@ -336,7 +336,7 @@ This example assigns the Mail Recipients role to the Seattle Recipient Admins ro
 New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -386,7 +386,7 @@ This example removes the Distribution Groups role, which enables administrators 
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/remove-managementroleassignment).
+For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/remove-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -458,7 +458,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-Ma
 
 For more information about changing management role assignments, see [Change a Role Assignment]https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/get-managementroleassignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment).
 
 ### Use the Exchange Management Shell to change the scope of individual role assignments on a role group
 
@@ -496,7 +496,7 @@ Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -Custo
 
 For more information about changing management role assignments, see [Change a Role Assignment](https://docs.microsoft.com/exchange/change-a-role-assignment-exchange-2013-help).
 
-For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-managementroleassignment).
+For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/set-managementroleassignment).
 
 ### How do you know this worked?
 
@@ -563,7 +563,7 @@ $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
 Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-rolegroup).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/set-rolegroup).
 
 ### Use the Exchange Management Shell to remove a delegate from a role group
 
@@ -600,7 +600,7 @@ $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
 Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
 ```
 
-For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/set-rolegroup).
+For detailed syntax and parameter information, see [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/set-rolegroup).
 
 ### How do you know this worked?
 

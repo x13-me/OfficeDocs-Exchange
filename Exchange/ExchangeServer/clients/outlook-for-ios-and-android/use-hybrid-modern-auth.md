@@ -96,11 +96,9 @@ The hybrid Modern Authentication architecture has the following technical requir
 
 2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises mail recipient directory with Azure Active Directory, via Azure AD Connect. If you have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, ensure that the following applications are selected:
 
-   - Microsoft 365 Apps for enterprise
+   - Office 365 ProPlus
 
    - Exchange Online
-
-   - Exchange Hybrid write-back
 
    - Azure RMS
 
@@ -436,6 +434,30 @@ Set-AuthServer EvoSts -RefreshAuthMetadata
 ```
 
 You can also create a scheduled task that executes the above command every 24 hours.
+
+### Exchange Online statistics
+
+You can use the following Exchange Online cmdlets to see statistical information for each synchronized on-premises mailbox.
+
+1. First, obtain the location of the synchronized on-premises mailbox in the tenant, specifying the on-premises mailbox's identity (for example, jane@contoso.com).
+
+    ```PowerShell
+    $m = Get-MailboxLocation <identity>
+    ```
+
+2. To see mailbox-related statistics, use
+
+    ```PowerShell
+    Get-MailboxStatistics $m.id
+    ```
+
+3. To see mobile device statistics (like seeing when Outlook for iOS and Android last synchronized to Exchange Online), use
+
+    ```PowerShell
+    Get-MobileDeviceStatistics -Mailbox $m.id
+    ```
+
+For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicestatistics?view=exchange-ps).
 
 ### Other issues
 

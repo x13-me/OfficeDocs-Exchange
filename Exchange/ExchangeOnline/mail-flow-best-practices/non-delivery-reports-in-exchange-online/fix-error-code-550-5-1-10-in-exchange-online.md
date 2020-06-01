@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 5a04a25a-a34f-476b-afc6-007fb92f86a1
 description: "Learn how to fix email issues for error code 550 5.1.10 in Exchange Online (invalid recipient or backscatter)."
 ---
@@ -36,7 +37,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
+  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## I got this bounce message. How do I fix it?
 
@@ -260,7 +261,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 3. Verify that there's only one MX record configured for the recipient's domain. Microsoft doesn't support using more than one MX record for a domain that's enrolled in Exchange Online.
 
-4. If Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records for Office 365 at any DNS hosting provider](https://go.microsoft.com/fwlink/p/?LinkID=512839).
+4. If Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
    > [!NOTE]
    > Typically, your domain's MX record should point to the Office 365 fully qualified domain name: \<your domain\>.mail.protection.outlook.com. DNS record updates usually propagate across the Internet in a few hours, but they can take up to 72 hours.
@@ -277,12 +278,12 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Backscatter messages and EOP](https://go.microsoft.com/fwlink/p/?linkid=833530)
+[Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop)
 
 [Configure email forwarding for a mailbox](https://go.microsoft.com/fwlink/p/?linkid=833531)
 
 [Synchronizing your directory with Office 365 is easy](https://go.microsoft.com/fwlink/p/?linkid=833532)
 
-[Create DNS records at any DNS hosting provider for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=512839)
+[Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
-[Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403)
+[Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)

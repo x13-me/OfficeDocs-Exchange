@@ -12,6 +12,7 @@ ms.reviewer:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+search.appverid: MET150
 description: Learn how to block Basic auth for client authentication in Exchange Online
 audience: Admin
 title: Disable Basic authentication in Exchange Online
@@ -165,7 +166,7 @@ This example creates an authentication policy named Block Basic Auth.
 New-AuthenticationPolicy -Name "Block Basic Auth"
 ```
 
-For detailed syntax and parameter information, see [New-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-authenticationpolicy).
+For detailed syntax and parameter information, see [New-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/new-authenticationpolicy).
 
  **Notes**:
 
@@ -274,7 +275,7 @@ This example returns detailed information about the policy named Block Basic Aut
 Get-AuthenticationPolicy -Identity "Block Basic Auth"
 ```
 
-For detailed syntax and parameter information, see [Get-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/get-authenticationpolicy).
+For detailed syntax and parameter information, see [Get-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/get-authenticationpolicy).
 
 ### Modify authentication policies
 
@@ -292,7 +293,7 @@ This example enables basic authentication for the POP3 protocol and disables bas
 Set-AuthenticationPolicy -Identity "Block Basic Auth" -AllowBasicAuthPop -AllowBasicAuthImap:$false
 ```
 
-For detailed syntax and parameter information, see [Set-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-authenticationpolicy).
+For detailed syntax and parameter information, see [Set-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/set-authenticationpolicy).
 
 ### Configure the default authentication policy
 
@@ -325,7 +326,7 @@ This example removes the policy named Test Auth Policy.
 Remove-AuthenticationPolicy -Identity "Test Auth Policy"
 ```
 
-For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/remove-authenticationpolicy).
+For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-authenticationpolicy).
 
 ### How do you know that you've successfully disabled Basic authentication in Exchange Online?
 

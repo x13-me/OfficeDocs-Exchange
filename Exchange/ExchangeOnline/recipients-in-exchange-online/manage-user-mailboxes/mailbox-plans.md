@@ -136,7 +136,7 @@ To return all mailboxes that had a specific mailbox plan applied:
    Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq 'CN=ExchangeOnline-93f46670-2ae7-4591-baa4-ee153e090945,OU=constoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR22B009,DC=PROD,DC=OUTLOOK,DC=COM'"
    ```
 
-For detailed syntax and parameter information, see [Get-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxplan) and [Get-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/client-access/get-casmailboxplan).
+For detailed syntax and parameter information, see [Get-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/get-mailboxplan) and [Get-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/get-casmailboxplan).
 
 ## Use Exchange Online PowerShell to specify the default mailbox plan
 
@@ -154,7 +154,7 @@ This example specifies the ExchangeOnline mailbox plan as the default.
 Set-MailboxPlan -Identity ExchangeOnline -IsDefault
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxplan).
+For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan).
 
 ### How do you know this worked?
 
@@ -196,7 +196,7 @@ This example disables Exchange ActiveSync, POP3, and IMAP4 access to mailboxes i
 Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $false -PopEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxplan) and [Set-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailboxplan).
+For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan) and [Set-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-casmailboxplan).
 
 ### How do you know this worked?
 

@@ -45,7 +45,7 @@ Because the Office 365 authentication system is updated when DST or a time zone 
 
 2. Send a message to your users who need to update their computers, giving them a link to the appropriate tool.
 
-The following table shows when users should run the [Time Zone Data Update Tool for Microsoft Office Outlook](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667). Find which version your organization's servers are running and then determine which client programs your users are running.
+The following table shows when users should [change time zone in Microsoft Outlook](https://support.office.com/article/5ab3e10e-5a6c-46af-ab48-156fedf70c04). Find which version your organization's servers are running and then determine which client programs your users are running.
 
 <table summary="table">
 <tbody>

@@ -33,7 +33,7 @@ The following features help make Microsoft Exchange more accessible for people w
 
 - [Keyboard Shortcuts in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
 
-In addition, some accessibility features and utilities of Windows may benefit Exchange users with disabilities. Also, Windows PowerShell size and color changes provide accessibility options when using the Exchange Management Shell. For more information about Windows PowerShell accessibility options, see [Accessibility in Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+In addition, some accessibility features and utilities of Windows may benefit Exchange users with disabilities. Also, Windows PowerShell size and color changes provide accessibility options when using the Exchange Management Shell. For more information about Windows PowerShell accessibility options, see [Accessibility in Windows PowerShell 2.0 ISE](https://docs.microsoft.com/powershell/scripting/components/ise/accessibility-in-windows-powershell-ise).
 
 ## Accessibility features of Exchange Help
 

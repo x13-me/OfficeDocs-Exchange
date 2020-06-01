@@ -90,7 +90,7 @@ This example shows another way to add email addresses to a mailbox by specifying
 Set-Mailbox "Dan Jump" -EmailAddresses "SMTP:dan.jump@contoso.com","dan.jump@northamerica.contoso.com","danj@tailspintoys.com"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 
@@ -150,7 +150,7 @@ Set-Mailbox "Janet Schorr" -EmailAddresses "SMTP:janets@contoso.com","janets@tai
 
 Because janets@corp.contoso.com was omitted in the previous command, it's removed from the mailbox.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 

@@ -241,13 +241,13 @@ Properties for a mail user are stored in both Active Directory and Exchange. In 
 
 Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 Here are some examples of using the Shell to change mail user properties.
 

@@ -238,9 +238,9 @@ To assign permissions to delegates, click **Add** ![Add Icon](../../media/ITPro_
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using Exchange Online PowerShell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
 Here are some examples of using Exchange Online PowerShell to change user mailbox properties.
 
@@ -344,4 +344,4 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,ArchiveDatabase,RetentionPolicy
   ```
 
-    For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
+    For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).

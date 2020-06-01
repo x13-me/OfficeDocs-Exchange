@@ -24,7 +24,7 @@ In Exchange Online, you can use retention policies to manage email lifecycle. Re
 
 Here's a [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
 
-For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -156,7 +156,7 @@ This example creates the retention policy RetentionPolicy-Corp and uses the _Ret
 New-RetentionPolicy "RetentionPolicy-Corp"  -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentionpolicy).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 

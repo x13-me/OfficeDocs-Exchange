@@ -25,7 +25,7 @@ Exchange Online is part of the Office 365 suite of products.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?LinkId=827695">
+        <a href="https://support.office.com/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -43,7 +43,7 @@ Exchange Online is part of the Office 365 suite of products.
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?LinkID=255444">
+        <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -91,8 +91,8 @@ Exchange Online is part of the Office 365 suite of products.
 </ol>
 
 <h2>Help for Microsoft 365 Admins</h2>
-<p>We're consolidating our content on the <a href="https://go.microsoft.com/fwlink/p/?LinkId=827695">Office help and training site</a>. See the following:
+<p>We're consolidating our content on the <a href="https://support.office.com/">Office help and training site</a>. See the following:
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=534936">Office 365 for business - Admin Help</a>: how to get started with the Microsoft  365 admin center, reset passwords, and more.</p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=252604">Email in Office 365 for business - Admin Help</a>: how to set up email, fix problems, and import email.</p></li>
+<li><p><a href="https://docs.microsoft.com/microsoft-365/admin">Office 365 for business - Admin Help</a>: how to get started with the Microsoft  365 admin center, reset passwords, and more.</p></li>
+<li><p><a href="https://docs.microsoft.com/microsoft-365/admin/email/">Email in Office 365 for business - Admin Help</a>: how to set up email, fix problems, and import email.</p></li>
 </ul>

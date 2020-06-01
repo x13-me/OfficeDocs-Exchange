@@ -64,15 +64,15 @@ For detailed information about how to develop a strong planning strategy, see:
 
 - [Planning and Deployment](https://technet.microsoft.com/library/aa998636\(v=exchg.150\))
 
-- [Active Directory](https://technet.microsoft.com/library/bb123715\(v=exchg.150\))
+- [Active Directory](../active-directory-exchange-2013-help.md)
 
-- [Exchange 2013 Storage Configuration Options](https://technet.microsoft.com/library/ee832792\(v=exchg.150\))
+- [Exchange 2013 Storage Configuration Options](https://docs.microsoft.com/exchange/exchange-2013-storage-configuration-options-exchange-2013-help)
 
 Before you can upgrade to Exchange 2013, your organization must meet certain requirements. Don't worry, we've automated the installation of some of the Windows prerequisites, so all you have to do is select a check box in the Setup wizard and it will be completed for you. For more information about Exchange 2013 requirements, see the following resources:
 
-- [Exchange 2013 System Requirements](https://technet.microsoft.com/library/aa996719\(v=exchg.150\))
+- [Exchange 2013 System Requirements](https://docs.microsoft.com/exchange/exchange-2013-system-requirements-exchange-2013-help)
 
-- [Exchange 2013 Prerequisites](https://technet.microsoft.com/library/bb691354\(v=exchg.150\))
+- [Exchange 2013 Prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help)
 
 ## Upgrading from Exchange 2003 to Exchange 2013
 
@@ -82,13 +82,13 @@ You've got two options to consider when upgrading your Exchange 2003 organizatio
 
 - Upgrade your current on-premises organization.
 
-To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=267504).
+To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](https://aka.ms/eda).
 
 ## Go to the cloud with Office 365
 
 Have you heard of Microsoft Office 365 yet? Office 365 delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. Office 365 combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
 
-To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://technet.microsoft.com/library/jj218681\(v=exchg.150\)). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
+To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://docs.microsoft.com/exchange/exchange-server-deployment-assistant-exchange-2013-help). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
 
 ## Upgrade to Exchange 2013 on-premises
 

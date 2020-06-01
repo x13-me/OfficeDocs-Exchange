@@ -134,7 +134,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
 
 ---
 <h2>Exchange Server Deployment Assistant</h2>
-<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://go.microsoft.com/fwlink/?linkid=626978">Exchange Server Deployment Assistant</a>.</p>
+<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://aka.ms/EDA">Exchange Server Deployment Assistant</a>.</p>
 
 <h2>Planning and deployment</h2>
 <ul class="panelContent cardsW">

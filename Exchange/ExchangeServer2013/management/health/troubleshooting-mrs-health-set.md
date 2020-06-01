@@ -136,7 +136,7 @@ Corruption occurs when the migration meta-data has encountered issues. Upon corr
    New-MigrationBatch -Local -Name
    ```
 
-For more information, see [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+For more information, see [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
 ### MailboxMigration alert: CriticalError
 
@@ -244,10 +244,10 @@ Restart-Service msexchangemailboxreplication
 
 7. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)

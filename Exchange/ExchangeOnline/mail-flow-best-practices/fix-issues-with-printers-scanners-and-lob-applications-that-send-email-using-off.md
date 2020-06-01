@@ -69,42 +69,40 @@ Below are the three configuration options to help you identify which one is in u
 
 1. Check the settings entered directly into the printer:
 
-|
-|
-|**Printer setting**|**Value**|
-|:-----|:-----|
-|Server/smart host|smtp.office365.com|
-|Port|Port 587 (recommended) or port 25|
-|TLS/ StartTLS|Enabled|
-|Username/email address and password|Login credentials of Office 365 mailbox the printer uses|
+   |**Printer setting**|**Value**|
+   |:-----|:-----|
+   |Server/smart host|smtp.office365.com|
+   |Port|Port 587 (recommended) or port 25|
+   |TLS/ StartTLS|Enabled|
+   |Username/email address and password|Login credentials of Office 365 mailbox the printer uses|
 
 2. If your printer didn't require a password for the email address you entered, your printer is trying to send emails without logging on to Office 365. SMTP client submission requires your printer to log on to Office 365. Direct send and Office 365 SMTP relay do not require a logon; consider one of these options instead.
 
 3. Your printer or application must send email from the same address that you entered logon credentials for during email setup. If the printer or application tries to send email from a different account, this results in an error similar to:
 
-    **5.7.60 SMTP; Client does not have permissions to send as this sender.**
+   > 5.7.60 SMTP; Client does not have permissions to send as this sender.
 
-    For example, if you entered login credentials for sales@contoso.com in your application settings, but the application tries to send emails from salesperson1@contoso.com, this is not supported. For this scenario, use Office 365 SMTP relay instead.
+   For example, if you entered login credentials for sales@contoso.com in your application settings, but the application tries to send emails from salesperson1@contoso.com, this is not supported. For this scenario, use Office 365 SMTP relay instead.
 
-4. Test the username and password by logging on to Outlook on the web, and try to send a test email to make sure the account is not blocked. If the user is blocked, you can find help in the article, [Removing a user, domain, or IP address from a block list after sending spam email](https://go.microsoft.com/fwlink/?linkid=830790).
+4. Test the user name and password by logging on to Outlook on the web, and try to send a test email to make sure the account is not blocked. If the user is blocked, you can find help in the article, [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 5. Next, test that you can connect to Office 365 from your network by doing the following:
 
-1. Follow the instructions to [install the Telnet Client tool](https://go.microsoft.com/fwlink/p/?linkId=179054) on a computer on the same network as the device or application.
+   1. Follow the instructions to [install the Telnet Client tool](https://go.microsoft.com/fwlink/p/?linkId=179054) on a computer on the same network as the device or application.
 
-2. Run the tool from the command line by typing **telnet**.
+   2. Run the tool from the command line by typing **telnet**.
 
-3. Type **open smtp.office365.com 587** (or substitute **25** for **587** if you are using that port setting instead).
+   3. Type **open smtp.office365.com 587** (or substitute **25** for **587** if you are using that port setting instead).
 
-4. If you connected successfully to an Office 365 server, expect to receive a response line similar to this:
+   4. If you connected successfully to an Office 365 server, expect to receive a response line similar to this:
 
-    **220 BY1PR10CA0041.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 1 Jun 2015 12:00:00 +0000**
+      > 220 BY1PR10CA0041.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 1 Jun 2015 12:00:00 +0000
 
-5. If you can't connect to Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
+   5. If you can't connect to Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
-    For more information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
+   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
 
 ### I receive an authentication error when my device tries to send email
 
@@ -126,7 +124,7 @@ This error indicates that your printer connects to the SMTP client submission en
 
 ### Error: 550 5.1.8 Bad outbound sender
 
-This error indicates that the device is trying to send an email from an Office 365 mailbox that is on a spam block list. For help, see [Removing a user, domain, or IP address from a block list after sending spam email](https://go.microsoft.com/fwlink/?linkid=830790).
+This error indicates that the device is trying to send an email from an Office 365 mailbox that is on a spam block list. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ## Fix issues with direct send
 <a name="Troubleshootdirectsend"> </a>
@@ -135,7 +133,7 @@ This error indicates that the device is trying to send an email from an Office 3
 
 This can be caused by a number of issues.
 
-1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Removing a user, domain, or IP address from a block list after sending spam email](https://go.microsoft.com/fwlink/?linkid=830790).
+1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
@@ -161,7 +159,7 @@ For direct send, we recommend using a device that sends from a static IP address
 
 This can be caused by a number of issues.
 
-1. A common reason for issues with Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Removing a user, domain, or IP address from a block list after sending spam email](https://go.microsoft.com/fwlink/?linkid=830790).
+1. A common reason for issues with Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 

@@ -34,7 +34,7 @@ Messaging records management (MRM) is the records management technology in Excha
 
 MRM provides the flexibility to implement the records management policy that best meets your organization's requirements. With a good understanding of MRM, In-Place Archiving, and In-Place Hold, you can help meet your goals of managing mailbox storage and meeting regulatory retention requirements.
 
-Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## MRM in Exchange Server and Exchange Online
 
@@ -52,7 +52,7 @@ You can use retention policies to enforce basic message retention for an entire 
 
 - **Exchange Server 2016**: [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx)
 
-- **Exchange Online**: [Archive Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=825607)
+- **Exchange Online**: [Archive Mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 
 > [!NOTE]
 > In an Exchange hybrid deployment, you can enable a cloud-based archive mailbox for an on-premises primary mailbox. If you assign an archive policy to an on-premises mailbox, items are moved to the cloud-based archive. If an item is moved to the archive mailbox, a copy of it isn't retained in the on-premises mailbox. If the on-premises mailbox is placed on hold, an archive policy will still move items to the cloud-based archive mailbox where they are preserved for the duration specified by the hold.

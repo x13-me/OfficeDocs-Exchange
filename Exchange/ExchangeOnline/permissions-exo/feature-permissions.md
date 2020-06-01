@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 The permissions required to perform tasks to manage Microsoft Exchange Online vary depending on the procedure being performed or the cmdlet you want to run.
 
-For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx).
+For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 
@@ -45,19 +45,23 @@ You can use the features in the following table to manage your Exchange Online o
 |:-----|:-----|
 |Anti-malware|Organization Management <br/><br/> Hygiene Management|
 |Anti-spam|Organization Management <br/><br/> Hygiene Management|
+|Client Access user settings|Organization Management|
 |Data loss prevention|Organization Management <br/><br/> Compliance Management|
 |Office 365 connectors|Organization Management|
 |Journal archiving|Organization Management <br/><br/> Recipient Management|
 |Linked user|Organization Management <br/><br/> Recipient Management|
 |Mail flow|Organization Management|
+|Mail flow rules|Organization Management|
 |Mailbox settings|Organization Management <br/><br/> Recipient Management|
 |Microsoft Office 365 Message Encryption (OME)|Organization Management <br/><br/> Compliance Management <br/><br/> Records Management|
 |Message trace|Organization Management <br/><br/> Compliance Management <br/><br/> Help Desk|
+|Mobile devices|Organization Management <br/><br/> Recipient Management
 |Organization configuration|Organization Management|
-|Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management
+|Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management|
 |POP3 and IMAP4 permissions|Organization Management|
 |Quarantine|Organization Management <br/><br/> Hygiene Management|
 |Supervision|Organization Management|
+|View-only administrator audit logging|Organization Management <br/><br/> Records Management|
 |View reports|Organization Management: Users have access to mailbox reports and mail protection reports. <br/><br/> View-Only Organization Management: Users have access to mailbox reports. <br/><br/> View-Only Recipients: Users have access to mail protection reports. <br/><br/> Compliance Management: Users have access to mail protection reports and Data Loss Prevention (DLP) reports (if their subscription has DLP capabilities).|
 
 > [!NOTE]

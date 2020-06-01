@@ -104,7 +104,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule -Identity "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
 
 - Recipient
 
@@ -195,14 +195,14 @@ To verify that you have successfully removed the journal rule, do one of the fol
 
 ## For more information
 
-[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
+[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule)
 
-[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-journalrule)
+[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/get-journalrule)
 
-[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule)
+[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule)
 
-[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/enable-journalrule)
+[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/enable-journalrule)
 
-[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/disable-journalrule)
+[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/disable-journalrule)
 
-[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule)
+[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule)

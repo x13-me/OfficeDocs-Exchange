@@ -55,7 +55,7 @@ If a distribution group has been created and configured as a super users group i
 
 1. Create a distribution group dedicated for use as an AD RMS super users group. For details, see [Create and manage distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
-2. Add the user **FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042** to the new distribution group. The Federation mailbox is a system mailbox, and therefore not visible in the EAC. To add it to a distribution group, you must use the [Add-DistributionGroupMember](https://technet.microsoft.com/library/bb124340\(v=exchg.150\)) cmdlet from the Shell.
+2. Add the user **FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042** to the new distribution group. The Federation mailbox is a system mailbox, and therefore not visible in the EAC. To add it to a distribution group, you must use the [Add-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-DistributionGroupMember) cmdlet from the Shell.
 
    This example adds the Federation mailbox to the ADRMSSuperUsers distribution group.
 
@@ -63,7 +63,7 @@ If a distribution group has been created and configured as a super users group i
    Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
    ```
 
-For detailed syntax and parameter information, see [Add-DistributionGroupMember](https://technet.microsoft.com/library/bb124340\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Add-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-DistributionGroupMember).
 
 ## Step 2: Use AD RMS to set up a super users group
 
@@ -81,11 +81,11 @@ Perform the following procedure on an AD RMS cluster. The account used to perfo
 
 ## How do you know this worked?
 
-After you have added the Federation mailbox to a new or existing distribution group, use the [Get-DistributionGroupMember](https://technet.microsoft.com/library/aa996367\(v=exchg.150\)) cmdlet to check the membership of the group.
+After you have added the Federation mailbox to a new or existing distribution group, use the [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-DistributionGroupMember) cmdlet to check the membership of the group.
 
-For an example of how to check distribution group membership, see [Example 1](https://technet.microsoft.com/aa996367\(exchg.150\)#examples) in **Get-DistributionGroupMember**.
+For an example of how to check distribution group membership, see [Example 1](https://docs.microsoft.com/powershell/module/exchange/Get-DistributionGroupMember#examples) in **Get-DistributionGroupMember**.
 
-After you have used AD RMS to set up a super users group, you can use the following methods to verify that the super users group has been configured correctly. Additionally, you can use [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798\(v=exchg.150\)) cmdlet to verify IRM functionality.
+After you have used AD RMS to set up a super users group, you can use the following methods to verify that the super users group has been configured correctly. Additionally, you can use [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Test-IRMConfiguration) cmdlet to verify IRM functionality.
 
 - Use the AD RMS console to verify that the correct group has been configured as the super users group.
 

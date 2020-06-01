@@ -101,7 +101,7 @@ Import-ExchangeCertificate -FileData "Import-ExchangeCertificate -FileData ([Byt
 
 - If you want to be able to export the certificate from the server where you're importing it, you need to use the _PrivateKeyExportable_ parameter with the value `$true`.
 
-- For more information, see [Import-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/import-exchangecertificate).
+- For more information, see [Import-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/import-exchangecertificate).
 
 ## How do you know this worked?
 

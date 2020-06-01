@@ -45,31 +45,31 @@ Looking for management tasks related to Data Loss Prevention? See [DLP Procedure
 ## Establish policies to protect sensitive data
 <a name="dlp_establish"> </a>
 
-The data loss prevention features can help you identify and monitor many categories of sensitive information that you have defined within the conditions of your policies, such as private identification numbers or credit card numbers. You have the option of defining your own custom policies and mail flow rules, or you can use the DLP policy templates that are included in Exchange to get started quickly. A *policy template* is a model that includes a range of conditions, rules, and actions that you can choose from to create and save an actual DLP policy that will help you inspect messages. For more information about the included policy templates, see [DLP Policy Templates Supplied in Exchange](https://technet.microsoft.com/library/7e1917ab-1920-4a52-97d1-7dfe2add6198.aspx).
+The data loss prevention features can help you identify and monitor many categories of sensitive information that you have defined within the conditions of your policies, such as private identification numbers or credit card numbers. You have the option of defining your own custom policies and mail flow rules, or you can use the DLP policy templates that are included in Exchange to get started quickly. A *policy template* is a model that includes a range of conditions, rules, and actions that you can choose from to create and save an actual DLP policy that will help you inspect messages. For more information about the included policy templates, see [DLP Policy Templates Supplied in Exchange](https://docs.microsoft.com/Exchange/built-in-dlp-policy-templates-exchange-2013-help).
 
 There are three different methods that you can use to implement DLP:
 
-- **Apply an out-of-the-box template supplied in Exchange**: The quickest way to start using DLP policies is to create and implement a new policy by using a template. This saves you the effort of building a new set of rules from nothing. You need to know what type of data you want to check for or which compliance regulation you're attempting to address. You also need to know your organization's expectations for processing this data. For more information, see [DLP Policy Templates Supplied in Exchange](https://technet.microsoft.com/library/7e1917ab-1920-4a52-97d1-7dfe2add6198.aspx) and [Create a DLP Policy From a Template](https://technet.microsoft.com/library/4432ef8b-6108-48d3-b2af-43ef5b40d2bc.aspx).
+- **Apply an out-of-the-box template supplied in Exchange**: The quickest way to start using DLP policies is to create and implement a new policy by using a template. This saves you the effort of building a new set of rules from nothing. You need to know what type of data you want to check for or which compliance regulation you're attempting to address. You also need to know your organization's expectations for processing this data. For more information, see [DLP Policy Templates Supplied in Exchange](https://docs.microsoft.com/Exchange/built-in-dlp-policy-templates-exchange-2013-help) and [Create a DLP Policy From a Template](https://technet.microsoft.com/library/4432ef8b-6108-48d3-b2af-43ef5b40d2bc.aspx).
 
-- **Import a pre-built policy file from outside your organization**: You can import policies that were created by independent software vendors. In this way, you can extend the DLP solution to meet your business requirements. For more information, see [Define Your Own DLP Templates and Information Types](https://technet.microsoft.com/library/f4622dba-3347-4758-b4a2-f01b043c908c.aspx) and [Import a DLP Policy From a File](https://technet.microsoft.com/library/83f49dbd-f9b1-498e-b548-1529c5e1ccdb.aspx).
+- **Import a pre-built policy file from outside your organization**: You can import policies that were created by independent software vendors. In this way, you can extend the DLP solution to meet your business requirements. For more information, see [Define Your Own DLP Templates and Information Types](https://docs.microsoft.com/Exchange/define-your-own-dlp-templates-and-information-types-exchange-2013-help) and [Import a DLP Policy From a File](https://docs.microsoft.com/Exchange/import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help).
 
 - **Create a custom policy without any pre-existing conditions**: Your enterprise may have its own requirements for monitoring certain types of data that's known to exist within a messaging system. You can create a custom policy entirely on your own to find and act on your own unique message data. You need to know the requirements and constraints of the environment where the DLP policy will be enforced to create effective custom policies. For more information, see [Create a Custom DLP Policy](https://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx).
 
-After you add a policy, you can review and change its rules, deactivate the policy, or remove it completely. For more information, see [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx).
+After you add a policy, you can review and change its rules, deactivate the policy, or remove it completely. For more information, see [Manage DLP Policies](https://docs.microsoft.com/Exchange/manage-dlp-policies-exchange-2013-help).
 
 ## Sensitive information types in DLP policies
 <a name="dlp_senstypes"> </a>
 
 When you create or change DLP policies, you can include rules that look for sensitive information. The sensitive information types that are listed in the topic [Sensitive information types in Exchange Server](sensitive-information-types.md) are available for you to use in your policies. You can customize the conditions within a policy, such as how many times something has to be found before an action is taken, or the action to take. For more information about creating DLP policies see, [Create a Custom DLP Policy](https://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about mail flow rules, see [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
 
-To make it easy for you to use rules that look for sensitive information, Exchange comes with policy templates that already include some of the sensitive information types. You can't add conditions for all of the sensitive information types, because the templates are designed to help you focus on the most common types of compliance-related data within your organization. For more information about the pre-built templates, see [DLP Policy Templates Supplied in Exchange](https://technet.microsoft.com/library/7e1917ab-1920-4a52-97d1-7dfe2add6198.aspx).
+To make it easy for you to use rules that look for sensitive information, Exchange comes with policy templates that already include some of the sensitive information types. You can't add conditions for all of the sensitive information types, because the templates are designed to help you focus on the most common types of compliance-related data within your organization. For more information about the pre-built templates, see [DLP Policy Templates Supplied in Exchange](https://docs.microsoft.com/Exchange/built-in-dlp-policy-templates-exchange-2013-help).
 
  You can create many DLP policies for your organization, and enable them all so that many different types of information are looked for. You can also create a DLP policy that isn't based on an existing template. To create such a policy, see [Create a Custom DLP Policy](https://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about the available sensitive information types, see [Sensitive information types in Exchange Server](sensitive-information-types.md).
 
 ## Detecting sensitive form data with Document Fingerprinting
 <a name="dlp_fingerprinting"> </a>
 
-Exchange lets you use [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange) to easily create a sensitive information type that's based on a standard form. To learn how to protect form data, see [Protect Form Data with Document Fingerprinting](https://technet.microsoft.com/library/110c839b-7693-42f6-aa5d-58ce64f4c357.aspx).
+Exchange lets you use [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange) to easily create a sensitive information type that's based on a standard form.
 
 ## Policy Tips notify users about sensitive content expectations
 <a name="dlp_tips"> </a>
@@ -86,7 +86,7 @@ You can still apply traditional message classifications to messages, and you can
 ## Information about DLP-processed messages
 <a name="dlp_information"> </a>
 
-To see information about messages that contain DLP policy detections in your environment, see [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) and [Create incident reports for DLP policy detections](https://docs.microsoft.com/exchange/create-incident-reports-for-dlp-policy-detections-exchange-2013-help). Data related to DLP detections is highly integrated in the delivery reports.
+To see information about messages that contain DLP policy detections in your environment, see [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help) and [Create incident reports for DLP policy detections](https://docs.microsoft.com/exchange/create-incident-reports-for-dlp-policy-detections-exchange-2013-help). Data related to DLP detections is highly integrated in the delivery reports.
 
 ## For more information
 <a name="dlp_moreinfo"> </a>
@@ -95,6 +95,6 @@ To see information about messages that contain DLP policy detections in your env
 
 - [DLP Procedures](https://docs.microsoft.com/exchange/dlp-procedures-exchange-2013-help)
 
-- [DLP policy detection reports](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
+- [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help))
 
 - [Document Fingerprinting](https://docs.microsoft.com/exchange/overview-of-document-fingerprinting-in-exchange)

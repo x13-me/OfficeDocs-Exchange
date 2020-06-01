@@ -60,7 +60,7 @@ $b = Get-ThrottlingPolicy ITStaffPolicy
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
-For more information about syntax and parameters, see [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\)) and [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231\(v=exchg.150\)).
+For more information about syntax and parameters, see [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-ThrottlingPolicy) and [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/Set-ThrottlingPolicyAssociation).
 
 ## How do you know this worked?
 

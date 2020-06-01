@@ -98,7 +98,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -115,7 +115,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -132,7 +132,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -148,7 +148,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -675,8 +675,8 @@ The following table provides guidance on volume configurations.
 <td><p>Windows BitLocker (volume encryption)</p></td>
 <td><p>Windows BitLocker is a data protection feature in Windows Server 2008. BitLocker protects against data theft or exposure on computers that are lost or stolen, and it offers more secure data deletion when computers are decommissioned.</p></td>
 <td><p>Supported: All Exchange database and log files.</p></td>
-<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
-<p>For more information about Windows 7 BitLocker encryption, see <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
+<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
+<p>For more information about Windows 7 BitLocker encryption, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee449438(v=ws.10)">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Server Message Block (SMB) 3.0</p></td>

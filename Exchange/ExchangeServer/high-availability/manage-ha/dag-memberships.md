@@ -91,6 +91,6 @@ To verify that you've successfully managed DAG membership, do one of the followi
 
 ## For more information
 
-[Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/add-databaseavailabilitygroupserver)
+[Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/add-databaseavailabilitygroupserver)
 
-[Remove-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-databaseavailabilitygroupserver)
+[Remove-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/remove-databaseavailabilitygroupserver)

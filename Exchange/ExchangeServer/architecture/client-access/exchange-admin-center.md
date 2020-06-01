@@ -67,7 +67,7 @@ These examples show you how to find the internal and external URL values for the
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 
-For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-ecpvirtualdirectory).
+For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/get-ecpvirtualdirectory).
 
 In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
 
@@ -140,7 +140,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md)
 
-  - [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
+  - [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help)
 
   - [Email address policies in Exchange Server](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
 
@@ -178,13 +178,11 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage database availability groups](../../high-availability/manage-ha/manage-dags.md)
 
-  - [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
+  - [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help)
 
   - [Certificate procedures in Exchange Server](certificate-procedures.md)
 
 - **Hybrid**: Set up and configure a Hybrid organization.
-
-- **Tools**: Check your Exchange server with the Office 365 Best Practices Analyzer. For more information, see [About the Office 365 Best Practices Analyzer for Exchange Server](https://go.microsoft.com/p/?linkid=9839202).
 
 ### 3: Tabs
 

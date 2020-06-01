@@ -67,7 +67,7 @@ In Exchange Online PowerShell, creating an Outlook on the web mailbox policy is 
    New-OwaMailboxPolicy -Name Policy1
    ```
 
-    For detailed syntax and parameter information, see [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/new-owamailboxpolicy).
+    For detailed syntax and parameter information, see [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy).
 
 2. Modify the default settings of the policy.
 
