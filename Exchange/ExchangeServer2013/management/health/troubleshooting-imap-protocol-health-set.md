@@ -31,6 +31,6 @@ For more information about the IMAP health set, see [Troubleshooting IMAP Health
 
 [POP3 and IMAP4](https://technet.microsoft.com/library/jj657728\(v=exchg.150\))
 
-[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/library/bb124489\(v=exchg.150\))
+[Enable IMAP4 in Exchange 2013](https://docs.microsoft.com/exchange/enable-imap4-in-exchange-2013-exchange-2013-help)
 
 [Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-ImapConnectivity)

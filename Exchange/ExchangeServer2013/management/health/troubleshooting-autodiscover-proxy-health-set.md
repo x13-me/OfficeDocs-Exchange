@@ -144,4 +144,4 @@ To troubleshoot this issue, follow these steps:
 
 [What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
 
-[Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\))
+[Autodiscover service](https://docs.microsoft.com/exchange/autodiscover-service-for-exchange-2013)
