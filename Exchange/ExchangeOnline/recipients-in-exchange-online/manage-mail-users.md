@@ -335,11 +335,7 @@ In standalone EOP, directory synchronization is available for customers with on-
 
   - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
-<<<<<<< HEAD
-   - **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid Microsoft 365 or Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. >
-=======
   - **End user access to quarantine**: To access their quarantined messages, recipients must have a valid user ID and password in the service. For more information about quarantine, see [Find and release quarantined messages as a user](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
->>>>>>> master
 
   - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them in the service. Note that [dynamic distribution groups](manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) can't be synchronized via directory synchronization.
 
