@@ -38,7 +38,7 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
 - If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled in the Client Access services on Mailbox servers to reduce the attack surface of your organization.
 
-- Exchange Online requires Windows authentication for the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory in the Client Access (frontend) services.
+- Exchange Online requires Windows authentication for the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory in the Client Access (front end) services.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
