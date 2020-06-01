@@ -65,7 +65,7 @@ In order to configure server-to-server authentication for an on-premises impleme
   **Note**: Copying and pasting the code into a text editor like Notepad and saving it with a .ps1 extension makes it easier to run Shell scripts.
 
   ```powershell
-  # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
+  # Make sure to update the following $tenantDomain with your Office 365 organization domain.
 
   $tenantDomain = "Fabrikam.com"
 
@@ -133,7 +133,7 @@ In order to configure server-to-server authentication for an on-premises impleme
 > [!NOTE]
 > Before you continue, the Azure Active Directory Module for Windows PowerShell cmdlets is required. If the Azure Active Directory Module for Windows PowerShell cmdlets (previously known as the Microsoft Online Services Module for Windows PowerShell) hasn't been installed, you can install it from <A href="https://aka.ms/aadposh">Manage Azure AD using Windows PowerShell</A>.
 
-- **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises**: Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 tenant that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator user name and password of the Office 365 tenant domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
+- **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises**: Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 organization that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator username and password of the Office 365 organization domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
 
   ```powershell
   # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
@@ -152,7 +152,7 @@ In order to configure server-to-server authentication for an on-premises impleme
       $binCert = $cer.GetRawCertData();
       $credValue = [System.Convert]::ToBase64String($binCert);
 
-      Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
+      Write-Host "Please enter the administrator username and password of the Office 365 organization domain..."
 
       Connect-MsolService;
       Import-Module msonlineextended;
@@ -170,7 +170,7 @@ In order to configure server-to-server authentication for an on-premises impleme
 
   The results should resemble the following output:
 
-  > Please enter the administrator user name and password of the Office 365 tenant domain... <br/> Adding a key to Service Principal... <br/> Complete.
+  > Please enter the administrator username and password of the Office 365 organization domain... <br/> Adding a key to Service Principal... <br/> Complete.
 
 ## Enable push notifications proxying
 

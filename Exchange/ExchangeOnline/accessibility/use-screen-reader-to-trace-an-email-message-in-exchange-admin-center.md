@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To trace a message, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management, Compliance Management, and Help Desk admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To trace a message, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management, Compliance Management, and Help Desk admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Create a new message trace
 

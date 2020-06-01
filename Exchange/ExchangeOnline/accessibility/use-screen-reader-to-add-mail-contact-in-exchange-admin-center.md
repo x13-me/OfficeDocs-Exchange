@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To add a new mail contact, [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Recipient Management](https://go.microsoft.com/fwlink/p/?LinkId=798822) admin group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To add a new mail contact, [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Recipient Management](https://go.microsoft.com/fwlink/p/?LinkId=798822) admin group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Use the EAC to create a mail contact
 

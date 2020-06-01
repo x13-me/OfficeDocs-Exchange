@@ -15,18 +15,18 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: 120a7832-d2d3-47d7-b305-918360c2ef66
 ms.reviewer:
-description: "There are many paths to migrate data from an on-premises email organization to Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments, For performance information about other migration methods, see Office 365 migration performance and best practices."
+description: "There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning a migration to Microsoft 365 or Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments. For performance information about other migration methods, see Microsoft 365 and Office 365 migration performance and best practices."
 ---
 
 # Performance factors and best practices for hybrid migrations
 
-There are many paths to migrate data from an on-premises email organization to Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments, For performance information about other migration methods, see [Office 365 migration performance and best practices](https://go.microsoft.com/fwlink/p/?LinkId=623651).
+There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning a migration to Microsoft 365 or Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments. For performance information about other migration methods, see [Microsoft 365 and Office 365 migration performance and best practices](https://go.microsoft.com/fwlink/p/?LinkId=623651).
 
 ## Performance factors and best practices for hybrid migrations
 
-Hybrid deployment migration supports the smooth migration between on-premises Exchange servers and Exchange Online in Office 365.
+Hybrid deployment migration supports the smooth migration between on-premises Exchange servers and Exchange Online in Microsoft 365 or Office 365.
 
-Hybrid deployment migration is by far the fastest migration method to migrate mailbox data to Office 365. We have seen up to 100 GB/hour throughput during real customer deployments The follow table provides a list of factors that apply to native Office 365 hybrid migration scenarios.
+Hybrid deployment migration is by far the fastest migration method to migrate mailbox data to Microsoft 365 or Office 365. We have seen up to 100 GB/hour throughput during real customer deployments. The follow table provides a list of factors that apply to native Microsoft 365 and Office 365 hybrid migration scenarios.
 
 If your on-premises environment contains multiple sites in geographically spread locations, you can improve migration performance by creating geographically close migration endpoints. This is because as in such a scenario the migration uses Microsoft's network compared to using a centralized migration endpoint that uses the your on-premises network.
 
@@ -65,13 +65,13 @@ For example, in real customer migrations, we have achieved consistent 30 GB/hour
 
 ### Factor 3: Migration engine
 
-Hybrid deployment migration uses native Office 365 tools. It's subject to Office 365 migration service throttling.
+Hybrid deployment migration uses native Microsoft 365 and Office 365 tools. It's subject to Microsoft 365 and Office 365 migration service throttling.
 
 #### Exchange 2003 vs. later versions of Exchange
 
 There is a key difference for the end-user experience when the migration is from Exchange 2003. Unlike later versions of Exchange, Exchange 2003 end users cannot access their mailboxes when their data is being migrated. Therefore, Exchange 2003 customers are usually more concerned about when to schedule migrations and the time required to migrate, especially when migration performance is low because of large mailbox sizes or a slow network.
 
-Exchange 2003 migration is also very sensitive to interruptions. For example, in a real customer migration, during the migration of a 10-GB mailbox, a service incident occurred when the migration of the mailbox was 50 percent complete. The Office 365 client access server, which was processing the data migration, had to be restarted to resolve the issue. In this case, the migration of that mailbox had to be restarted, which meant that the customer had to migrate all 10 GB of data again. The migration couldn't resume from the point when it stopped. However, Exchange 2010, and later versions of Exchange, are able to resume migrations after interruptions.
+Exchange 2003 migration is also very sensitive to interruptions. For example, in a real customer migration, during the migration of a 10GB mailbox, a service incident occurred when the migration of the mailbox was 50 percent complete. The Office 365 client access server, which was processing the data migration, had to be restarted to resolve the issue. In this case, the migration of that mailbox had to be restarted, which meant that the customer had to migrate all 10GB of data again. The migration couldn't resume from the point when it stopped. However, Exchange 2010, and later versions of Exchange, are able to resume migrations after interruptions.
 
 #### Best practice
 
@@ -79,13 +79,13 @@ Some customers choose to do two-hop migrations for large and sensitive Exchange 
 
 - **First hop**: Migrate mailboxes from Exchange 2003 to an Exchange 2010 or later server, which is usually the hybrid server. The first hop is an offline move, but it's usually a very fast migration over a local network.
 
-- **Second hop**: Migrate mailboxes from Exchange 2010 or later to Office 365.
+- **Second hop**: Migrate mailboxes from Exchange 2010 or later to Microsoft 365 or Office 365.
 
 The second hop is an online move, which provides a better user experience and fault tolerance. This two-hop approach requires an Exchange license for the temporary on-premises user mailbox.
 
 #### Mailbox Replication Service Proxy (MRSProxy)
 
-MRS Proxy is the on-premises migration feature that works with the Mailbox Replication Service running on the Office 365 side. For more information, see [Understanding Move Requests](https://technet.microsoft.com/library/dd298174.aspx).
+MRS Proxy is the on-premises migration feature that works with the Mailbox Replication Service running on the Microsoft 365 and Office 365 side. For more information, see [Understanding Move Requests](https://technet.microsoft.com/library/dd298174.aspx).
 
 #### Best practice*
 
@@ -108,4 +108,4 @@ For more information about move requests, see [New-MoveRequest](https://docs.mic
 
 ### Factor 5: Office 365 service
 
-Office 365 resource health-based throttling affects migrations using the Office 365 hybrid deployment migrations. See the Office 365 resource health-based throttling section above for more details.
+Microsoft 365 and Office 365 resource health-based throttling affects migrations using the Microsoft 365 or Office 365 hybrid deployment migrations. See the [Factor 3: Migration engine](#factor-3-migration-engine) section above for more details.
