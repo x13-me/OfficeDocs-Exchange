@@ -88,7 +88,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
     ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
 
-4. [Sign in to the Microsoft 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
+4. [Sign in to the Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
     ![username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
 
@@ -208,7 +208,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
 
-- If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Office 365 email address in the **EmailAddress** column.
+- If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
 #### Verify a successful mailbox migration to Office 365
 
@@ -218,7 +218,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 
-  - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Office 365 user to verify that you can send email.
+  - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Microsoft 365 or Office 365 user to verify that you can send email.
 
   - Choose **Outlook**, and check that your email messages and folders are all there.
 

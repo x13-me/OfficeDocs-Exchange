@@ -90,7 +90,7 @@ SharePoint also uses Microsoft Search Foundation for content indexing and queryi
 
 In on-premises deployments, before you can use eDiscovery Center in SharePoint to search Exchange mailboxes, you must establish trust between the two applications. In Exchange Server and SharePoint 2013, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
 
-For step-by step instructions for setting up an eDiscovery Center in an Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
+For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
 
 ## eDiscovery in an Exchange hybrid deployment
 <a name="oauth"> </a>
@@ -298,7 +298,7 @@ The default throttling policy contains the following throttling parameters.
 |DiscoverySearchTimeoutPeriod|The number of minutes that an In-Place eDiscovery search will run before it times out.|10 minutes|
 
 > [!NOTE]
-> <sup>1</sup> If you initiate an eDiscovery search from the eDiscovery Center in SharePoint Online in an Microsoft 365 or Office 365 organization, you can search a maximum of 1,500 mailboxes in a single search.
+> <sup>1</sup> If you initiate an eDiscovery search from the eDiscovery Center in SharePoint Online in a Microsoft 365 or Office 365 organization, you can search a maximum of 1,500 mailboxes in a single search.
 
 In Exchange Server, you can change the default values for these parameters to suit your requirements or create additional throttling policies and assign them to users with delegated Discovery Management permission. In Exchange Online, the default values for these throttling parameters can't be changed.
 

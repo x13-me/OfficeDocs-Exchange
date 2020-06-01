@@ -29,7 +29,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
 - Replaced DirSync content with content supporting Azure Active Directory connect for Exchange 2013-based hybrid scenarios
 
-- Updated Exchange 2013-based hybrid scenarios to support new Office 365 portal design
+- Updated Exchange 2013-based hybrid scenarios to support new Microsoft 365 admin center design
 
 - Removed Exchange 2003 deployment options from Exchange 2010-based hybrid scenario
 

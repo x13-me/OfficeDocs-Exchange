@@ -327,7 +327,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
-   - `Credential` is your Exchange Online administrative user name and password.
+   - `Credential` is your Exchange Online administrative username and password.
 
    - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
 

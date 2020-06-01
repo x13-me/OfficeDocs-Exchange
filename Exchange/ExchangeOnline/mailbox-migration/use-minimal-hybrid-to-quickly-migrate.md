@@ -88,7 +88,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
     By default the wizard connects to the Exchange server running the latest version.
 
-4. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Office 365 tenant choose **next**, and then choose **next** again once the connections and credentials have validated.
+4. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Office 365 organization choose **next**, and then choose **next** again once the connections and credentials have validated.
 
 5. On the **Hybrid Features** page, select **Minimal Hybrid Configuration** \> **next**.
 
@@ -107,7 +107,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
     After synchronization is completed, you will be taken to the Office 365 **Data migration** page where you can see all of your users that were synchronized to Office 365.
 
-    After the one-time synchronization is done, directory synchronization is turned off for your Office 365 tenant.
+    After the one-time synchronization is done, directory synchronization is turned off for your Office 365 organization.
 
 ![On the User Provisioning page select Synchronize my users and passwords one time](media/8595f8d4-70d1-48f9-8e20-5106936dc148.png)
 
