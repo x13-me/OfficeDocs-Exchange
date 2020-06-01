@@ -96,7 +96,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 
 These are the important issues to consider when you use ABPs in your organization:
 
-- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://technet.microsoft.com/library/a1d277a0-5437-40af-aade-e4730a0d1308.aspx).
+- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books).
 
 - A user that's assigned an ABP needs to exist in the GAL that's specified for the ABP.
 

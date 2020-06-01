@@ -132,4 +132,4 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
-[Exchange admin center in Exchange 2013](https://technet.microsoft.com/library/jj150562\(v=exchg.150\))
+[Exchange admin center in Exchange 2013](https://docs.microsoft.com/Exchange/exchange-admin-center-in-exchange-2013-exchange-2013-help)
