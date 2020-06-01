@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To add a new equipment mailbox, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management admin role group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md)
+To add a new equipment mailbox, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management admin role group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md)
 
 ## Add a new equipment mailbox
 

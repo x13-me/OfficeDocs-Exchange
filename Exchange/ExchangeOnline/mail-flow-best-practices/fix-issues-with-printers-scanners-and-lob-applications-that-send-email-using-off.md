@@ -108,9 +108,9 @@ Below are the three configuration options to help you identify which one is in u
 
 This can be caused by a number of issues:
 
-1. Make sure that you entered the correct user name and password.
+1. Make sure that you entered the correct username and password.
 
-2. Try logging into OWA with the printer's user name and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
+2. Try logging into OWA with the printer's username and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
 
 3. Check that your device or application supports TLS version 1.0 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.0 or above.
 
@@ -139,7 +139,7 @@ This can be caused by a number of issues.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 tenant, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
+This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
 
 ### My emails are not sent to recipients who are not in my organization
 

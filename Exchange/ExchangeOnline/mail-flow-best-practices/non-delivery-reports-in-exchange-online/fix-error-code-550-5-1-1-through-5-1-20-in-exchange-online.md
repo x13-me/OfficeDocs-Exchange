@@ -121,11 +121,11 @@ To learn more, see [Backscatter in EOP](https://docs.microsoft.com/microsoft-365
 
 If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are 4 solutions you can try. You might not need to try all of them to get the message sent successfully.
 
-### Solution 1: Check the Office 365 Message Center for configuration problems or service-wide issues
+### Solution 1: Check the Microsoft 365 admin center for configuration problems or service-wide issues
 
-For Office 365 accounts, the Office 365 portal provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
+For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
 
-Log in to an administrator account on the Office 365 portal at [https://portal.office.com](https://portal.office.com), and from the **Dashboard**, do the following:
+Log in to an administrator account on the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com), and from the **Dashboard**, do the following:
 
 1. Check the **Message Center** to see if your organization has a known configuration issue.
 

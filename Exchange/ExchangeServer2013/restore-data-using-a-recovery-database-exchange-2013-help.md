@@ -31,9 +31,9 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
 
 - Some backup applications have the ability to restore Exchange data directly to a recovery database. Windows Server Backup can restore only file-level backups to a recovery database. It cannot be used to restore application-level backups to a recovery database.
 
-- The database and log files containing the recovered data must be restored or copied into the RDB folder structure.
+- The database and log files containing the recovered data must be restored or copied into the RDB folder structure. Do not rename the .edb files.
 
-- The database must be in a clean shutdown state. Because an RDB is an alternate restore location for all databases, all restored databases will be in a dirty shutdown state. You must use **Eseutil /R** to put restored databases into a clean shutdown state.
+- The database must be in a clean shutdown state. If the previously restored databases is in a dirty shutdown state. You must use **Eseutil /R** to put restored databases into a clean shutdown state. If you are running Exchange 2019 and utilizing a MCDB you must use **Eseutil /R /i**
 
 ## Use the Shell to recover data using a recovery database
 

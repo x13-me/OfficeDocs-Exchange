@@ -26,7 +26,7 @@ You can create user mailboxes in Exchange Server by using the Exchange admin cen
 
 |**Property**|**Required or optional**|**Description**|
 |:-----|:-----|:-----|
-|Alias|Optional|The Exchange alias (also known as the *mail nickname*) for the mailbox. The maximum length is 64 characters. Valid characters are letters, numbers and ASCII text characters that are allowed in email addresses. For example, periods are allowed, but each period must be surrounded by other valid characters (for example, pilar.pinilla).  <br/>  The alias value is used to generate the primary email address (_\<alias\>_@ _\<domain\>_). If you don't specify an alias value, the user name part of the account name (user principal name) is used.  <br/> The alias value must be unique.  <br/> **Note**: Don't use apostrophes (') or quotation marks (") in the alias. Although these characters are allowed, they might cause problems later.|
+|Alias|Optional|The Exchange alias (also known as the *mail nickname*) for the mailbox. The maximum length is 64 characters. Valid characters are letters, numbers and ASCII text characters that are allowed in email addresses. For example, periods are allowed, but each period must be surrounded by other valid characters (for example, pilar.pinilla).  <br/>  The alias value is used to generate the primary email address (_\<alias\>_@ _\<domain\>_). If you don't specify an alias value, the username part of the account name (user principal name) is used.  <br/> The alias value must be unique.  <br/> **Note**: Don't use apostrophes (') or quotation marks (") in the alias. Although these characters are allowed, they might cause problems later.|
 |Display name|EAC: Required  <br/> Exchange Management Shell: Optional|Identifies the mailbox in the EAC, and in address lists in Outlook and Outlook on the web (formerly known as Outlook Web App). The maximum length is 256 characters. Spaces and other text characters are allowed.  <br/> In the EAC, the display name is populated by the values that you enter for the first name, middle initial, and last name, but you can specify a custom value.  <br/> In the Exchange Management Shell, if you don't specify a value for the display name, the value of the **Name** property is used.  <br/> The display name value doesn't need to be unique, but having multiple mailboxes with the same display name would be confusing.|
 |Name|Required|Specifies the name of the object in Active Directory. Only administrators see this value in Exchange or Active Directory management tools. The maximum length is 64 characters. Spaces and other text characters are allowed.  <br/> The name value must be unique.|
 
@@ -163,7 +163,7 @@ When you mailbox-enable a user account, you can only select existing Active Dire
 
      - Don't use apostrophes (') or quotation marks ("). Although these characters are allowed, they might cause problems later.
 
-     - If this value is different than the user name part of the user principal name, the user's email address and account name will be different (important if the email domain and the Active Directory domain are the same).
+     - If this value is different than the username part of the user principal name, the user's email address and account name will be different (important if the email domain and the Active Directory domain are the same).
 
    - **Existing user** or **New user**: Verify **Existing user** is selected, and then click **Browse** to select an available account.
 

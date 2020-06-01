@@ -41,7 +41,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To run audit reports, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management and Records Management admin role groups. To run In-Place eDiscovery or In-Place Hold reports, check that you are assigned to the Discovery Management role group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To run audit reports, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management and Records Management admin role groups. To run In-Place eDiscovery or In-Place Hold reports, check that you are assigned to the Discovery Management role group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Find data to troubleshoot configuration and security issues
 

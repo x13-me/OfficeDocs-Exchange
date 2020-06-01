@@ -297,7 +297,7 @@ When you delete a cutover migration batch, the migration service cleans up any r
 
 4. Verify that the migration batch is no longer listed on the migration dashboard.
 
-## Step 7: Assign licenses to Office 365 users
+## Step 7: Assign licenses to Microsoft 365 and Office 365 users
 
 **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
