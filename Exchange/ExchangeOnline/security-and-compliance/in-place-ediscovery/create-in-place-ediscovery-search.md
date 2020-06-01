@@ -29,7 +29,7 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. So in Exchange Online, you must have a licensed Exchange Online (Plan 2) mailbox to create eDiscovery searches. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Microsoft 365 or Office 365 organization so that you can search Exchange Online mailboxes. Or, if you sign in with an account that only exists in Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online (Plan 2) license.
 
