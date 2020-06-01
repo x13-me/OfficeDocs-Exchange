@@ -21,7 +21,7 @@ You can use the Shell to enable or disable single item recovery on a mailbox. In
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Retention and legal holds" entry in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Retention and legal holds" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - You can't use the Exchange admin center (EAC) to enable or disable single item recovery.
 

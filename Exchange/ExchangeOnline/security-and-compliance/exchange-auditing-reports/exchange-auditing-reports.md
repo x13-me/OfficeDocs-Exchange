@@ -65,8 +65,6 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
   - [View the administrator audit log](view-administrator-audit-log.md)
 
-  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
-
 - **Run the external admin audit log report**: Actions performed by Microsoft datacenter administrators or delegated admins are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
 
 ## Configure audit logging

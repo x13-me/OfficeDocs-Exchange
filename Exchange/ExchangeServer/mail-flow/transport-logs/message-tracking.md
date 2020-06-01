@@ -179,7 +179,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |**MAILBOXRULE**|The event source was an Inbox rule. For more information, see [Inbox rules](https://go.microsoft.com/fwlink/p/?LinkID=285479).|
 |**MEETINGMESSAGEPROCESSOR**|The event source was the meeting message processor, which updates calendars based on meeting updates.|
 |**ORAR**|The event source was an Originator Requested Alternate Recipient (ORAR). You can enable or disable support for ORAR on Receive connectors using the _OrarEnabled_ parameter on the **New-ReceiveConnector** or **Set-ReceiveConnector** cmdlets.|
-|**PICKUP**|The event source was the Pickup directory. For more information, see [Pickup Directory and Replay Directory](https://technet.microsoft.com/library/ae191700-953f-411c-906f-dc90feec3d5a.aspx).|
+|**PICKUP**|The event source was the Pickup directory. For more information, see [Pickup Directory and Replay Directory](https://docs.microsoft.com/exchange/pickup-directory-and-replay-directory-exchange-2013-help).|
 |**POISONMESSAGE**|The event source was the poison message identifier. For more information about poison messages and the poison message queue, see [Queues and messages in queues](../../mail-flow/queues/queues.md)|
 |**PUBLICFOLDER**|The event source was a mail-enabled public folder.|
 |**QUEUE**|The event source was a queue.|

@@ -50,7 +50,7 @@ The rules can also be used in the exception part of a rule definition. Their use
 
 [Data loss prevention](data-loss-prevention.md)
 
-[Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
+[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
 
 [Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 

@@ -220,7 +220,7 @@ There are two types of logging available for In-Place eDiscovery searches:
 > [!NOTE]
 > When using the Shell to create or modify an In-Place eDiscovery search, you can also disable logging.
 
-Besides the search log included when copying search results to a discovery mailbox, Exchange also logs cmdlets used by the EAC or the Shell to create, modify or remove In-Place eDiscovery searches. This information is logged in the admin audit log entries. For details, see [Administrator Audit Logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
+Besides the search log included when copying search results to a discovery mailbox, Exchange also logs cmdlets used by the EAC or the Shell to create, modify or remove In-Place eDiscovery searches. This information is logged in the admin audit log entries. For details, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
 ## In-Place eDiscovery and In-Place Hold
 
