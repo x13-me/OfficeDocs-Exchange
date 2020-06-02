@@ -62,9 +62,9 @@ Now that we've talked about the new features in Exchange 2013, it's time to star
 
 For detailed information about how to develop a strong planning strategy, see:
 
-- [Planning and Deployment](https://technet.microsoft.com/library/aa998636\(v=exchg.150\))
+- [Planning and deployment](https://docs.microsoft.com/exchange/planning-and-deployment-for-exchange-2013-installation-instructions)
 
-- [Active Directory](../active-directory-exchange-2013-help.md)
+- [Active Directory](https://docs.microsoft.com/Exchange/active-directory-exchange-2013-help)
 
 - [Exchange 2013 Storage Configuration Options](https://docs.microsoft.com/exchange/exchange-2013-storage-configuration-options-exchange-2013-help)
 

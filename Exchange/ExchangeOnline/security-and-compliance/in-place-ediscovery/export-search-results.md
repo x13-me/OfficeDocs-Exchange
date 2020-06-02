@@ -26,7 +26,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - Estimated time to complete: Time will vary based on the amount and size of the search results that will be exported.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - The computer you use to export search results to a PST file must meet the following system requirements:
 

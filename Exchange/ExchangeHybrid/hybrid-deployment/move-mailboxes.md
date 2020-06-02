@@ -37,7 +37,7 @@ For more information about migrating on-premises Exchange organizations to Excha
 
 - Estimated time to complete: 10 minutes to configure the migration batch, but total time to complete the migration depends on the number of mailboxes included in each migration batch.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/recipient-permissions) topic.
 
 - Hybrid deployment is configured between your on-premises and Exchange Online organizations.
 
