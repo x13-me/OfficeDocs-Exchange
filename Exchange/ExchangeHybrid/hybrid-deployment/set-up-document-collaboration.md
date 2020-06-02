@@ -67,7 +67,7 @@ Verify that the following prerequisite steps have been completed, and then use t
 - The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
-    > OAuth between Exchange 2016 and Microsoft 365 or Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
+    > OAuth between Exchange 2016 and Microsoft 365 or Office 365 needs to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
@@ -79,7 +79,7 @@ Perform the following steps:
 1. Configure the default Outlook on the web mailbox policy so that sets the OneDrive for Business host URL.
 
    > [!NOTE]
-   > You can go to the Microsoft 365 or Office 365 SharePoint Online Tenant Admin to retrieve the OneDrive for Business host URL. For example, https://contoso-my.sharepoint.com is a My Site Host URL in the Contoso Microsoft 365 or Office 365 organization. Even though the Outlook on the web mailbox policy that comes with Exchange 2016 is called "Default," it isn't automatically applied to any mailboxes unless you either make it the default policy, or assign it directly to a mailbox.
+   > You can go to the Microsoft 365 or Office 365 SharePoint Online Tenant Admin to retrieve the OneDrive for Business host URL. For example, https://contoso-my.sharepoint.com is a My Site Host URL in Contoso's Microsoft 365 or Office 365 organization. Even though the Outlook on the web mailbox policy that comes with Exchange 2016 is called "Default," it isn't automatically applied to any mailboxes unless you either make it the default policy, or assign it directly to a mailbox.
 
    Using the following example as a basis, use the Exchange Management Shell to configure the internal and external MySite URL on the Default Outlook on the web mailbox policy:
 

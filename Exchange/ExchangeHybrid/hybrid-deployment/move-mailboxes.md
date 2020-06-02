@@ -135,7 +135,7 @@ After your mailbox moves have completed, we recommend removing the completed mig
 
 To remove a completed migration batch:
 
-1. Open the EAC and navigate to **Microsoft 365** or  **Office 365** \> **Recipients** \> **Migrations**.
+1. Open the EAC and navigate to **Microsoft 365** or **Office 365** \> **Recipients** \> **Migrations**.
 
 2. Click a completed migration batch, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
 
