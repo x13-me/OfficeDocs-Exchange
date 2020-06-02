@@ -1,5 +1,5 @@
 ---
-title: "Simplify the Outlook Web App URL for Office 365 Hybrid"
+title: "Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
@@ -17,13 +17,13 @@ ms.reviewer:
 description: "Learn how to configure a URL for Outlook on the web (Outlook Web App) for cloud mailbox users in a hybrid environment."
 ---
 
-# Simplify the Outlook Web App URL for Office 365 Hybrid
+# Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid
 
 Learn how to configure a URL for Outlook on the web (Outlook Web App) for cloud mailbox users in a hybrid environment.
 
-A major concern for organizations that move to Office 365 from on-premises Exchange is the user experience. Users need uninterrupted access to their mailboxes regardless of where or when their mailbox is moved. With that in mind, the Outlook on the web (formerly known as Outlook Web App) coexistence story is important.
+A major concern for organizations that move to Microsoft 365 or Office 365 from on-premises Exchange is the user experience. Users need uninterrupted access to their mailboxes regardless of where or when their mailbox is moved. With that in mind, the Outlook on the web (formerly known as Outlook Web App) coexistence story is important.
 
-Consider the following scenario: a company uses a hybrid deployment to move some of their mailboxes from on-premises Exchange to Office 365. On Friday before the move, the users accessed their on-premises mailboxes by using the URL https://mail.contoso.com/owa. On Monday after the move, those same users now get an error when they try to access their mailboxes by using that URL.
+Consider the following scenario: a company uses a hybrid deployment to move some of their mailboxes from on-premises Exchange to Microsoft 365 or Office 365. On Friday before the move, the users accessed their on-premises mailboxes by using the URL https://mail.contoso.com/owa. On Monday after the move, those same users now get an error when they try to access their mailboxes by using that URL.
 
 To allow the affected users to connect to their mailboxes by using Outlook on the web, you have two options:
 
@@ -84,4 +84,4 @@ The authentication prompt experience that users can expect is described in the f
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
 > [!NOTE]
-> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Microsoft 365 or Office 365 guidance.
