@@ -60,7 +60,7 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
   - [View the administrator audit log](view-administrator-audit-log-exchange-2013-help.md)
 
-  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
+  - [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md)
 
 ## Configure audit logging
 

@@ -31,7 +31,7 @@ It's important to note the terminology differences between Active Directory and 
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use the Shell to create or rename a distribution group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see:
 

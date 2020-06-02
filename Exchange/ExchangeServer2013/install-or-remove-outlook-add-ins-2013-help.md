@@ -28,7 +28,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Apps for Outlook" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Apps for Outlook" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 

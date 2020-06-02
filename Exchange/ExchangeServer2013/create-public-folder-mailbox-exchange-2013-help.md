@@ -30,7 +30,7 @@ For additional management tasks related to public folders in Exchange 2013, see 
 
   Before you can create public folders in Exchange 2013, you need to migrate your legacy public folders to Exchange 2013. To do this, follow the steps in [Migrate Public Folders to Exchange 2013 From Previous Versions](https://technet.microsoft.com/library/16773895-e9c3-4013-983f-683e5d14b221.aspx). These steps will show you how to create a public folder mailbox that can be used to store your migrated public folders.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

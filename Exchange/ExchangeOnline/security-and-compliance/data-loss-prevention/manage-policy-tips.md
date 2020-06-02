@@ -28,7 +28,7 @@ Policy Tips are informative notices that are displayed to email senders while th
 
 - Estimated time to complete each procedure: 30 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Policy Tips will only show up for email senders when the following conditions are met:
 

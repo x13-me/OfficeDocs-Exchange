@@ -26,7 +26,7 @@ You can use Exchange Online PowerShell to enable or disable single item recovery
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Retention and legal holds" entry in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Retention policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can't use the Exchange admin center (EAC) to enable or disable single item recovery.
 
