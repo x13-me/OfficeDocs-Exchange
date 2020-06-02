@@ -23,7 +23,7 @@ When you create a dial plan, you can configure the primary and secondary dial by
 > [!NOTE]
 > If **None** is selected as the secondary way for callers to search for names, only the primary way of searching for names will be available to callers who want to locate users. If you configure both the primary and secondary ways that callers can search for names, callers will be prompted for both ways.
 
-For additional management tasks related to UM dial plans, see [UM dial plan procedures in Exchange Online](um-dial-plan-procedures.md).
+For additional management tasks related to UM dial plans, see  [UM dial plan procedures in Exchange Online](../connect-voice-mail-system/um-dial-plan-procedures.md).
 
 ## What do you need to know before you begin?
 

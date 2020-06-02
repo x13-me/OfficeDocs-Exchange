@@ -206,7 +206,7 @@ Learn more at: [Anti-spam and anti-malware protection in EOP](https://docs.micro
 
 Public folders are supported in the cloud and on-premises public folders can be migrated to the cloud. Additionally, public folders in the cloud can be moved to the on-premises Exchange organization. Both on-premises and cloud users can access public folders located in either organization using Outlook on the web, Outlook 2016, Outlook 2013, or Outlook 2010 SP2 or newer. Existing on-premises public folder configuration and access for on-premises mailboxes doesn't change when you configure a hybrid deployment.
 
-Learn more at: [Public folders](../ExchangeServer/collaboration/public-folders/public-folders.md).
+Learn more at: [Public folders](https://docs.microsoft.com/Exchange/collaboration/public-folders/public-folders).
 
 ### Accessibility
 
