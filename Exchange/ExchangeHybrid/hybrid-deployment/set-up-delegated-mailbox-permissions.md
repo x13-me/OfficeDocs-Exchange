@@ -14,12 +14,12 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: a2a10cb3-4557-4ff5-8191-c653522f4512
 ms.reviewer:
-description: "Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Office 365 support the Full Access and Send on Behalf delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version."
+description: "Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Microsoft 365 or Office 365 support the Full Access and Send on Behalf delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version."
 ---
 
 # Configure Exchange to support delegated mailbox permissions in a hybrid deployment
 
-Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Office 365 support the **Full Access** and **Send on Behalf** delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version.
+Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Microsoft 365 or Office 365 support the **Full Access** and **Send on Behalf** delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version.
 
 - **Exchange 2016**: Additional configuration is required.
 
@@ -33,14 +33,14 @@ The following sections step you through the configuration of Exchange 2013 and E
 
 ## Exchange 2013 And Exchange 2016
 
-What you need to do to enable support for delegated mailbox permissions depends on a few factors. If you moved mailboxes to Office 365 and at that time:
+What you need to do to enable support for delegated mailbox permissions depends on a few factors. If you moved mailboxes to Microsoft 365 or Office 365 and at that time:
 
 |**The following was installed...**|**And ACLable object synchronization at the organization was...**|**Then you need to...**|
 |:-----|:-----|:-----|
 |Exchange 2013 CU9 or earlier|This feature isn't available in Exchange 2013 CU9 and earlier.|Manually configure each mailbox to support ACLs|
-|Exchange 2013 CU10 or later|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
+|Exchange 2013 CU10 or later|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Microsoft 365 or Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Microsoft 365 or Office 365 after ACLable object synchronization is enabled at the organization level.|
 |Exchange 2013 CU10 or later|Enabled|No additional configuration is needed|
-|Exchange 2016|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
+|Exchange 2016|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Microsoft 365 or Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Microsoft 365 or Office 365 after ACLable object synchronization is enabled at the organization level.|
 |Exchange 2016|Enabled|No additional configuration is needed|
 
 ### Enable ACLable object synchronization
@@ -57,14 +57,14 @@ To enable ACLable object synchronization at the organization level, do the follo
    Set-OrganizationConfig -ACLableSyncedObjectEnabled $True
    ```
 
-After you do this, any mailboxes that you move to Office 365 will be properly configured to support delegated mailbox permissions. If mailboxes were moved to Office 365 prior to you completing these steps, you'll need to manually enable ACLs on those mailboxes using the steps in [Enable ACLs on remote mailboxes](#enable-acls-on-remote-mailboxes).
+After you do this, any mailboxes that you move to Microsoft 365 or Office 365 will be properly configured to support delegated mailbox permissions. If mailboxes were moved to Microsoft 365 or Office 365 prior to you completing these steps, you'll need to manually enable ACLs on those mailboxes using the steps in [Enable ACLs on remote mailboxes](#enable-acls-on-remote-mailboxes).
 
 > [!IMPORTANT]
-> ACLs aren't enabled on remote mailboxes created in Office 365. If you create a remote mailbox in Office 365, you'll need to follow the steps in the Enable ACLs on remote mailboxes section to enable ACLs on that remote mailbox. To avoid this extra step, we recommend that you create the mailbox on an on-premises Exchange server and then move the mailbox to Office 365.
+> ACLs aren't enabled on remote mailboxes created in Microsoft 365 or Office 365. If you create a remote mailbox in Microsoft 365 or Office 365, you'll need to follow the steps in the Enable ACLs on remote mailboxes section to enable ACLs on that remote mailbox. To avoid this extra step, we recommend that you create the mailbox on an on-premises Exchange server and then move the mailbox to Microsoft 365 or Office 365.
 
 ### Enable ACLs on remote mailboxes
 
-To enable ACLs on mailboxes moved to Office 365 before ACLable object synchronization was enabled at the organization level, do the following.
+To enable ACLs on mailboxes moved to Microsoft 365 or Office 365 before ACLable object synchronization was enabled at the organization level, do the following.
 
 1. Open the Exchange Management Shell on an Exchange 2013 or Exchange 2016 server running the latest available CU, or the immediately previous CU.
 
@@ -74,7 +74,7 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
    Get-AdUser <UserMailbox's Identity> | Set-AdObject -Replace @{msExchRecipientDisplayType=-1073741818}
    ```
 
-3. To enable ACLs on all mailboxes moved to Office 365, run the following command:
+3. To enable ACLs on all mailboxes moved to Microsoft 365 or Office 365, run the following command:
 
    ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | where {$_.RecipientTypeDetails -eq "RemoteUserMailbox"} | foreach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
@@ -91,11 +91,11 @@ To enable ACLs on mailboxes moved to Office 365 before ACLable object synchroniz
 
 ## Exchange 2010
 
-Exchange 2010 SP3 servers support the configuration of ACLs on remote mailboxes; however, this configuration needs to be set manually on each user mailbox. Unlike newer versions of Exchange, Exchange 2010 doesn't provide the ability to set this feature at the organization level. You need to follow the upcoming steps on any user mailboxes that you've previously moved to Office 365, and on any user mailboxes that you'll move from an Exchange 2010 SP3 server to Office 365 in the future.
+Exchange 2010 SP3 servers support the configuration of ACLs on remote mailboxes; however, this configuration needs to be set manually on each user mailbox. Unlike newer versions of Exchange, Exchange 2010 doesn't provide the ability to set this feature at the organization level. You need to follow the upcoming steps on any user mailboxes that you've previously moved to Microsoft 365 or Office 365, and on any user mailboxes that you'll move from an Exchange 2010 SP3 server to Microsoft 365 or Office 365 in the future.
 
 ### Enable ACLs on remote mailboxes
 
-To enable ACLs on mailboxes moved to Office 365, do the following.
+To enable ACLs on mailboxes moved to Microsoft 365 or Office 365, do the following.
 
 1. Open the Exchange Management Shell on a server running the latest available Exchange 2010 SP3 RU, or the immediately previous RU.
 
@@ -105,7 +105,7 @@ To enable ACLs on mailboxes moved to Office 365, do the following.
    Get-AdUser <Identity> | Set-AdObject -Replace @{msExchRecipientDisplayType=-1073741818}
    ```
 
-3. To enable ACLs on all mailboxes moved to Office 365, run the following command.
+3. To enable ACLs on all mailboxes moved to Microsoft 365 or Office 365, run the following command.
 
    ```PowerShell
    Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
