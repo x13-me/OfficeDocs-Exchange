@@ -80,13 +80,11 @@ For additional information on the .NET regex engine which is used for processing
 
 7. Click **Save** to finish modifying the policy and save your changes.
 
-DLP policy templates are one type of feature Microsoft Exchange that can help you design and apply a robust policy and compliance system for your messaging environment. For more information about compliance features, see [Messaging Policy and Compliance](https://technet.microsoft.com/library/65f20a20-27a4-4f6e-9b27-f8705d65b8d9.aspx) (Exchange 2016) or [Security and compliance for Exchange Online](../../security-and-compliance/security-and-compliance.md).
+DLP policy templates are one type of feature Exchange Online that can help you design and apply a robust policy and compliance system for your messaging environment. For more information about compliance features, see [Security and compliance for Exchange Online](../../security-and-compliance/security-and-compliance.md).
 
 ## For more information
 
 [Data loss prevention](data-loss-prevention.md)
-
-[Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) Exchange 2016
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md) Exchange Online
 

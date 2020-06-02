@@ -28,13 +28,13 @@ IRM uses Active Directory Rights Management Services (AD RMS), which is a compon
 
 Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](https://technet.microsoft.com/library/dd638140(v=exchg.141).aspx).
 
-Learn more about IRM in Exchange 2013 and Exchange 2016 at [Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
+Learn more about IRM in Exchange Server at [Information Rights Management](https://docs.microsoft.com/Exchange/policy-and-compliance/information-rights-management).
 
 Learn more about AD RMS at [Active Directory Rights Management Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=215243).
 
 ## Differences between IRM in Exchange On-premises and Exchange Online
 
-IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Understanding Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx))
+IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Information Rights Management](https://docs.microsoft.com/Exchange/policy-and-compliance/information-rights-management))
 
 **Available IRM features**
 

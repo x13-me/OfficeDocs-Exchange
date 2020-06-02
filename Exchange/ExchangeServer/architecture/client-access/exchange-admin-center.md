@@ -158,9 +158,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Unified Messaging**: Manage UM dial plans and UM IP gateways. (UM is not available in Exchange 2019.) For more information, see the following topics:
 
-  - [UM Dial Plans](https://technet.microsoft.com/library/ed7afc03-94af-4b23-8745-6a61f203c149.aspx)
+  - [UM Dial Plans](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
-  - [UM IP Gateways](https://technet.microsoft.com/library/991d77e0-3995-44ab-bedf-52ff7a0301ab.aspx)
+  - [UM IP Gateways](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
 - **Servers**: View and manage server-specific settings, databases, database availability groups (DAGs), virtual directories, and certificates. For more information, see the following topics:
 

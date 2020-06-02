@@ -32,7 +32,7 @@ For steps to implement specific messaging policies, see the following topics:
 
 - [Common message approval scenarios](https://technet.microsoft.com/library/5c13a07e-c21d-4502-a9f9-fb801197e1dd.aspx)
 
-- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx)
+- [Using mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
 ## Mail flow rule components
 
@@ -85,7 +85,7 @@ Mail flow rules are applied by a transport agent on Mailbox servers and Edge Tra
 |**Transport Rule agent on Mailbox servers**|The **OnResolvedMessage** categorizer event. <br/> In Exchange 2010, the Transport Rule agent was invoked on the **OnRoutedMessage** categorizer event. The change to **OnResolvedMessage** allowed new rule actions that can change how a message is routed (for example, require TLS).|In Active Directory. Rules are available to all Mailbox servers in the Active Directory forest.|
 |**Edge Rule agent on Edge Transport servers**|The **OnEndOfData** SMTP event|In the local instance of Active Directory Lightweight Directory Services (AD LDS) on the server. Rules are only applied to messages that flow through the local server.|
 
-For more information about transport agents, see [Transport Agents](https://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
+For more information about transport agents, see [Transport Agents](https://docs.microsoft.com/exchange/transport-agents-exchange-2013-help).
 
 ### Differences in processing based on message type
 

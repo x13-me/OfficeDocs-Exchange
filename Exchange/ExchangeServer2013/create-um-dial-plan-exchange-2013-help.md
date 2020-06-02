@@ -21,7 +21,7 @@ A Unified Messaging (UM) dial plan contains configuration information related to
 
 Each time you create a UM dial plan, a UM mailbox policy is also created. The UM mailbox policy is named \< _DialPlanName_\> Default Policy.
 
-For additional management tasks related to UM dial plans, see [UM Dial Plan Procedures](https://technet.microsoft.com/library/1bda77c8-c4e2-4ae0-a001-76ae029bf843.aspx).
+For additional management tasks related to UM dial plans, see [UM dial plan procedures in Exchange Server](um-dial-plan-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

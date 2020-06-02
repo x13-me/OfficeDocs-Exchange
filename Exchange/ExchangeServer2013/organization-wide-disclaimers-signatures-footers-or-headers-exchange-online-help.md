@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Organization-wide disclaimers, signatures, footers, or headers
+# Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 

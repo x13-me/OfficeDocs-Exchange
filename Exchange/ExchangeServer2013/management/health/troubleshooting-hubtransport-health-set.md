@@ -527,7 +527,7 @@ The **HubTransport** service is monitored using the following probes and monitor
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## User Action
 

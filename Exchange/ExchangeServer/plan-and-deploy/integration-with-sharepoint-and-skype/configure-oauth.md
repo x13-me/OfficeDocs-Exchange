@@ -69,6 +69,6 @@ To verify that you have successfully configured an enterprise partner applicatio
 
 ## Hybrid and on-premises deployments
 
-- In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2016 organization and the Exchange Online organization. For more information, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx).
+- In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2016 organization and the Exchange Online organization. For more information, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help).
 
 - In on-premises deployments, you can configure server-to-server authentication between Exchange 2016 and SharePoint 2016 so administrators and compliance officers can search Exchange 2016 by using the SharePoint 2016 eDiscovery Center.. For more information, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help).

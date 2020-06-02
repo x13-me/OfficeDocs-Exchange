@@ -291,7 +291,7 @@ For more information about preparing your forest for cross-forest moves, see the
 
 - [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md)
 
-- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](https://technet.microsoft.com/library/f35ac7a5-bb84-4653-b6d0-65906e93627b.aspx)
+- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](https://docs.microsoft.com/exchange/prepare-mailboxes-for-cross-forest-moves-using-sample-code-exchange-2013-help)
 
 - [Prepare mailboxes for cross-forest moves using the Exchange Management Shell](prep-mailboxes-for-cross-forest-moves-in-powershell.md)
 
