@@ -45,7 +45,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox**.
 
-3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://technet.microsoft.com/library/51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174.aspx).
+3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://docs.microsoft.com/Exchange/recipients/create-user-mailboxes).
 
 4. Click **More options** to enable a cloud-based archive mailbox.
 

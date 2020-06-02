@@ -83,7 +83,7 @@ $UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 
-For more information about configuring which actions are logged, see [Enable or disable mailbox audit logging for a mailbox](https://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx).
+For more information about configuring which actions are logged, see [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md).
 
 ### Give users access to Auditing reports
 

@@ -243,8 +243,6 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 [Policy Tips](policy-tips.md)
 
-[Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
-
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange 2010 MailTips](https://go.microsoft.com/fwlink/p/?LinkId=265179)

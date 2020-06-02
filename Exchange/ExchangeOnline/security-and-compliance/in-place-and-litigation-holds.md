@@ -85,12 +85,6 @@ When a mailbox is placed on one or more In-Place Holds and on Litigation Hold (w
 > [!NOTE]
 > When you place a mailbox on In-Place Hold or Litigation Hold, the hold is placed on both the primary and the archive mailbox. If you place an on-premises primary mailbox on hold in an Exchange hybrid deployment, the cloud-based archive mailbox (if enabled) is also placed on hold.
 
-For more information, see:
-
-- [Place a mailbox on Litigation Hold](https://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
-
-- [Place all mailboxes on hold](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx)
-
 ## Placing a mailbox on In-Place Hold
 
 Authorized users that have been added to the Discovery Management role-based access control (RBAC) role group or assigned the Legal Hold and Mailbox Search management roles can place mailbox users on In-Place Hold. You can delegate the task to records managers, compliance officers, or attorneys in your organization's legal department, while assigning the least privileges. To learn more about assigning the Discovery Management role group, see [Assign eDiscovery permissions in Exchange](in-place-ediscovery/assign-ediscovery-permissions.md).
@@ -113,7 +107,7 @@ The result is that any message (related to the synchronization of the public fol
 
 ## Holds and the Recoverable Items folder
 
-In-Place Hold and Litigation Hold uses the Recoverable Items folder to preserve items. The Recoverable Items folder replaces the feature informally known as the dumpster in previous versions of Exchange. The Recoverable Items folder is hidden from the default view of Outlook, Outlook on the web (formerly known as Outlook Web App), and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+In-Place Hold and Litigation Hold uses the Recoverable Items folder to preserve items. The Recoverable Items folder replaces the feature informally known as the dumpster in previous versions of Exchange. The Recoverable Items folder is hidden from the default view of Outlook, Outlook on the web (formerly known as Outlook Web App), and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder in Exchange Online](recoverable-items-folder/recoverable-items-folder.md).
 
 By default, when a user deletes a message from a folder other than the Deleted Items folder, the message is moved to the Deleted Items folder. This is known as a move. When a user soft deletes an item (accomplished by pressing the SHIFT and DELETE keys) or deletes an item from the Deleted Items folder, the message is moved to the Recoverable Items folder, thereby disappearing from the user's view.
 

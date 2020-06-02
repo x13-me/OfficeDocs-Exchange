@@ -20,7 +20,7 @@ Before you can create a public folder, you must first create a public folder mai
 > [!NOTE]
 > For more information about the storage quotas and limits for public folders, see [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 
-For additional management tasks related to public folders in Exchange 2013, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
+For additional management tasks related to public folders in Exchange 2013, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

@@ -170,7 +170,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging (not available in Exchange 2019)**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](https://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx).
+- **Unified Messaging (not available in Exchange 2019)**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
 
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.

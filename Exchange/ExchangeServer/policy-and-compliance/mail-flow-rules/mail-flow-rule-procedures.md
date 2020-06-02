@@ -42,7 +42,7 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
 - Creating mail flow rules is mostly about the scenarios that you want to fulfill. For examples, see the following topics:
 
-  - [Use mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx)
+  - [Use mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
   - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
 

@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can search the administrator audit logs to discover who made changes to organization, server, and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
-If you want to search the mailbox audit log, see [Mailbox Audit Logging](https://technet.microsoft.com/library/29b67d58-eef9-4ad4-863f-562405ea8794.aspx).
+If you want to search the mailbox audit log, see [Mailbox audit logging](mailbox-audit-logging-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

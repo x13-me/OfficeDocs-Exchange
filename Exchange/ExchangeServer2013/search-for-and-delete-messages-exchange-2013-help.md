@@ -35,7 +35,7 @@ As an additional safeguard, you can first copy the messages to another mailbox b
 
 - If the mailbox from which you want to delete messages has single item recovery enabled, you must first disable the feature. For more information, see [Enable or disable single item recovery for a mailbox](enable-or-disable-single-item-recovery-exchange-2013-help.md).
 
-- If the mailbox from which you want to delete messages is placed on hold, we recommend that you check with your records management or legal department before removing the hold and deleting the mailbox content. After you obtain approval, follow the steps listed in the topic [Clean Up the Recoverable Items Folder](https://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- If the mailbox from which you want to delete messages is placed on hold, we recommend that you check with your records management or legal department before removing the hold and deleting the mailbox content. After you obtain approval, follow the steps listed in the topic [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
 - You can search a maximum of 10,000 mailboxes using the **Search-Mailbox** cmdlet.
 

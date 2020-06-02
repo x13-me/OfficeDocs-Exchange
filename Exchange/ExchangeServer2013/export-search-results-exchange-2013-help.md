@@ -95,7 +95,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
   - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md#estimate-preview-and-copy-search-results)
 
-  - [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
+  - [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)
 
 - To export eDiscovery search results from the eDiscovery Center in SharePoint, see [Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?LinkId=324757).
 
