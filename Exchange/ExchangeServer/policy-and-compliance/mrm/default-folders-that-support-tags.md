@@ -52,7 +52,7 @@ Retention tags are classified into the following three types based on who can ap
 |**Type of retention tag**|**Applied...**|**Applied by...**|**Available actions...**|**Details**|
 |:-----|:-----|:-----|:-----|:-----|
 |Default policy tag (DPT)  <br/> |Automatically to entire mailbox  <br/> A DPT applies to *untagged* items, which are mailbox items that don't have a retention tag applied directly or by inheritance from the folder.  <br/> |Administrator  <br/> |Move to archive  <br/> Delete and allow recovery  <br/> Permanently delete  <br/> |Users can't change DPTs applied to a mailbox.  <br/> |
-|Retention policy tag (RPT)  <br/> |Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](https://technet.microsoft.com/library/d2e2064f-4102-4018-b688-504d09da6d39.aspx).  <br/> |Administrator  <br/> |Delete and allow recovery  <br/> Permanently delete  <br/> |Users can't change the RPT applied to a default folder.  <br/> |
+|Retention policy tag (RPT)  <br/> |Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](https://docs.microsoft.com/Exchange/default-folders-exchange-2013-help).  <br/> |Administrator  <br/> |Delete and allow recovery  <br/> Permanently delete  <br/> |Users can't change the RPT applied to a default folder.  <br/> |
 |Personal tag  <br/> |Manually to items and folders  <br/> Users can automate tagging by using Inbox rules to either move a message to a folder that has a particular tag or to apply a personal tag to the message.  <br/> |Users  <br/> |Move to archive  <br/> Delete and allow recovery  <br/> Permanently delete  <br/> |Personal tags allow your users to determine how long an item should be retained. For example, the mailbox can have a DPT to delete items in seven years, but a user can create an exception for items such as newsletters and automated notifications by applying a personal tag to delete them in three days.  <br/> |
 
 ### More about personal tags
@@ -118,7 +118,7 @@ Exchange Setup creates the retention policy **Default MRM Policy**. The policy i
 
 You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention action, disable a tag or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the [Managed Folder Assistant](retention-tags-and-retention-policies.md#MFA).
 
-For more details, including a list of retention tags linked to the policy, see [Default Retention Policy](https://technet.microsoft.com/library/bcf31b2d-463b-4623-b488-c8ac40f14f62.aspx).
+For more details, including a list of retention tags linked to the policy, see [Default Retention Policy](https://docs.microsoft.com/Exchange/default-retention-policy-exchange-2013-help).
 
 ## Managed Folder Assistant
 <a name="MFA"> </a>

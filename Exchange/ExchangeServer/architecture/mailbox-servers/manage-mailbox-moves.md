@@ -28,7 +28,7 @@ The following two services process your move request to move mailboxes:
 
 The procedures in this topic will help you with on-premises mailbox moves. You can use the Exchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
 
-For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451.aspx). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
+For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156451(v=exchg.150)). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
 
 ## What do you need to know before you begin?
 
