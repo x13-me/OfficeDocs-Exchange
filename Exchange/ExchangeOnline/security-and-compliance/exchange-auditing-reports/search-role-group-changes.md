@@ -20,9 +20,7 @@ manager: serdars
 
 # Search the role group changes or administrator audit logs in Exchange Online
 
-You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
-
-If you want to search the mailbox audit log, see [Mailbox Audit Logging](https://technet.microsoft.com/library/29b67d58-eef9-4ad4-863f-562405ea8794.aspx).
+You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [View the administrator audit log](view-administrator-audit-log.md).
 
 > [!TIP]
 > In Exchange Online, you can use the EAC to view entries in the administrator audit log. For more information, see [View the administrator audit log](view-administrator-audit-log.md).

@@ -30,7 +30,7 @@ manager: serdars
 
 Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [import their own email](mailbox-migration.md#Import), contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [work with a partner to migrate email](mailbox-migration.md#Partner).
 
-Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/p/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration.
+Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](office-365-migration-best-practices.md) for Exchange Online to make sure you get the performance and behavior you expect after migration.
 
 See [Decide on a migration path](decide-on-a-migration-path.md) or [Exchange migration advisors](https://aka.ms/office365setup) for help with choosing the best option for your organization.
 

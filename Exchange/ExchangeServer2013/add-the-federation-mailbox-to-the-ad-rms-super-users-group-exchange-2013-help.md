@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-For the following Microsoft Exchange Server 2013 Information Rights Management (IRM) features to be enabled, you must add the Federation mailbox (a system mailbox created by Exchange 2013 Setup) to the super users group on your organization's [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/library/hh831364.aspx) cluster:
+For the following Microsoft Exchange Server 2013 Information Rights Management (IRM) features to be enabled, you must add the Federation mailbox (a system mailbox created by Exchange 2013 Setup) to the super users group on your organization's [Active Directory Rights Management Services (AD RMS)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)) cluster:
 
 - IRM in Microsoft Office Outlook Web App
 
@@ -30,7 +30,7 @@ For the following Microsoft Exchange Server 2013 Information Rights Management (
 You can configure a mail-enabled distribution group as a super users group in AD RMS. Members of the distribution group are granted an owner use license when they request a license from the AD RMS cluster. This allows them to decrypt all RMS-protected content published by that cluster. Whether you use an existing distribution group or create a distribution group and configure it as the super users group in AD RMS, we recommend that you dedicate the distribution group for this purpose and configure the appropriate settings to approve, audit, and monitor membership changes.
 
 > [!WARNING]
-> Configuring a super users group in AD RMS allows group members to decrypt IRM-protected content. We recommend that you take adequate measures to control and monitor group membership and enable auditing to track membership changes. You can also limit unwanted changes to group membership by configuring the group as a restricted group using Group Policy. For details, see <A href="https://technet.microsoft.com/library/cc756802(v=ws.10).aspx">Restricted Groups Policy Settings</A>.
+> Configuring a super users group in AD RMS allows group members to decrypt IRM-protected content. We recommend that you take adequate measures to control and monitor group membership and enable auditing to track membership changes.
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 

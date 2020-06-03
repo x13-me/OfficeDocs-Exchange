@@ -54,7 +54,7 @@ Before we get into the planning steps for your upgrade to Exchange 2013, let's f
 
 - Exchange 2013 introduces the concept of batch moves, which allows the ability to move multiple mailboxes in large batches. The new move architecture is built on top of MRS (Mailbox Replication service) moves with enhanced management capability.
 
-These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\)).
+These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help).
 
 ## Planning your upgrade
 
@@ -62,9 +62,9 @@ Now that we've talked about the new features in Exchange 2013, it's time to star
 
 For detailed information about how to develop a strong planning strategy, see:
 
-- [Planning and Deployment](https://technet.microsoft.com/library/aa998636\(v=exchg.150\))
+- [Planning and deployment](https://docs.microsoft.com/exchange/planning-and-deployment-for-exchange-2013-installation-instructions)
 
-- [Active Directory](../active-directory-exchange-2013-help.md)
+- [Active Directory](https://docs.microsoft.com/Exchange/active-directory-exchange-2013-help)
 
 - [Exchange 2013 Storage Configuration Options](https://docs.microsoft.com/exchange/exchange-2013-storage-configuration-options-exchange-2013-help)
 

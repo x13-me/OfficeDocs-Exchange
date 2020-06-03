@@ -113,4 +113,4 @@ Here are some common problems and resolutions:
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)

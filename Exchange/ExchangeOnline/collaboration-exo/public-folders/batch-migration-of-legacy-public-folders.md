@@ -50,8 +50,6 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
 
 [Step 1: Download the migration scripts](#step-1-download-the-migration-scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location.
 
-For additional management tasks related to public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
-
 ## What versions of Exchange are supported for migrating public folders to Office 365 and Exchange Online?
 
 Exchange supports moving your public folders to Office 365 and Exchange Online from the following legacy versions of Exchange Server:
@@ -66,7 +64,7 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 
 - The Exchange 2010 server needs to be running Exchange 2010 SP3 RU8 or later.
 
-- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
+- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 - In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212).
 

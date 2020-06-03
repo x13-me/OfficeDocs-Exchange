@@ -25,13 +25,13 @@ You can configure more than one email address for the same mailbox. The addition
 > [!IMPORTANT]
 > If you're using Office 365 for business, you should add or remove email addresses for user mailboxes in the [Add another email alias for a user](https://support.office.com/article/0b0bd900-68b1-4bf5-808b-5d240a7739f4)
 
-For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients in Exchange Online](../recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 

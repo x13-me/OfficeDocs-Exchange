@@ -18,7 +18,7 @@ manager: serdars
 
 # Manage role group members
 
- To learn about role groups in Exchange Server, see [Understanding Management Role Groups](https://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
+ To learn about role groups in Exchange Server, see [Understanding Management Role Groups](https://docs.microsoft.com/exchange/understanding-management-role-groups-exchange-2013-help).
 
 For additional management tasks related to role groups, see [Permissions](permissions.md).
 

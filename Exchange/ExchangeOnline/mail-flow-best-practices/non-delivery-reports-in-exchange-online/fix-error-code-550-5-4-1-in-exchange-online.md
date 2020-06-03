@@ -83,7 +83,7 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 For more information, see Microsoft Knowledge Base article [KB2827473](https://go.microsoft.com/fwlink/p/?LinkId=328236).
 
-For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange 2013 Hybrid Deployments](https://technet.microsoft.com/library/jj659050.aspx).
+For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
 
 ### Service issues in Exchange Online
 

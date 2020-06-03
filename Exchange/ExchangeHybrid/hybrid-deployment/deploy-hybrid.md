@@ -114,9 +114,9 @@ For detailed configuration steps, see [Configure OAuth Authentication Between Ex
 
 For more information about Exchange security and compliance features that use OAuth authentication, see:
 
-- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](https://technet.microsoft.com/library/deb882b1-1ae2-40f3-a71c-423fafe3d66a.aspx)
+- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help)
 
-- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
+- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)
 
 ## How do you know this worked?
 

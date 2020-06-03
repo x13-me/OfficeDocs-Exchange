@@ -29,7 +29,7 @@ Public folders can also be used as an archiving method for distribution groups. 
 
 Public folders aren't designed for the following purposes:
 
-- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) as your archiving solution.
+- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes) as your archiving solution.
 
 - **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://products.office.com/SharePoint/sharepoint-online-collaboration-software) as your documentation sharing solution.
 
@@ -41,7 +41,7 @@ For a list of public folder management tasks, see [Public folder procedures in O
 
 For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
 
-Looking for the Exchange Server version of this topic? See [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
+Looking for the Exchange Server version of this topic? See [Public folders in Office 365 and Exchange Online](public-folders.md).
 
 ## Public folder architecture
 

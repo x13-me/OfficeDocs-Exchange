@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using transport rules in Exchange.
 
-For additional examples showing how to block specific attachments, see [Using transport rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx).
+For additional examples showing how to block specific attachments, see [Use transport rules to inspect message attachments](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
 The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add filters.
 

@@ -42,11 +42,11 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
 - Creating mail flow rules is mostly about the scenarios that you want to fulfill. For examples, see the following topics:
 
-  - [Use mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx)
+  - [Use mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
-  - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
+  - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help)
 
-  - [Manage message approval in Exchange Server](https://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx)
+  - [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help)
 
 - Data Loss Prevention (DLP) policies are collections of mail flow rules. To create DLP policies, see [Exchange Server DLP Procedures](https://docs.microsoft.com/exchange/dlp-procedures-exchange-2013-help).
 
@@ -78,7 +78,7 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
 
    - **Enforce**: This turns on the rule and it starts processing messages immediately. All actions on the rule will be performed. This is the default value.
 
-   - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions (**Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. DLP is required to use this mode. To learn more, see [Policy Tips](https://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).
+   - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions (**Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. DLP is required to use this mode. To learn more, see [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).
 
    - **Test without Policy Tips**: For DLP policies, only the **Generate incident report and send it to** action will be enforced. No actions related to message delivery are performed.
 
@@ -493,19 +493,3 @@ For detailed syntax and parameter information, see [Import-TransportRuleCollecti
   - [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
 
   - [Mail flow rule actions in Exchange Server](actions.md)
-
-- Resources for Exchange Online:
-
-  - [Mail flow rules (transport rules) in Exchange Online](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
-
-  - [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
-
-  - [Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
-
-  - [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-
-- Resources for Exchange Online Protection:
-
-  - [Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/office365/SecurityCompliance/eop/mail-flow-rules-transport-rules-0)
-
-  - [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
