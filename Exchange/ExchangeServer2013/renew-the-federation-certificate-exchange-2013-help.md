@@ -188,4 +188,4 @@ If the federation certificate has already expired, you need to remove all federa
    Remove-FederationTrust "Microsoft Federation Gateway"
    ```
 
-5. Recreate the federation trust. For instructions, see [x-Create a Federation Trust](https://technet.microsoft.com/library/dd335198\(v=exchg.150\)).
+5. Recreate the federation trust. For instructions, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).

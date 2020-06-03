@@ -20,7 +20,7 @@ manager: serdars
 
 # Manage mail-enabled security groups
 
-A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 

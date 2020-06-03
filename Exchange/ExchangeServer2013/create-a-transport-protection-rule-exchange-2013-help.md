@@ -30,7 +30,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-- A server running [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/library/hh831364.aspx) must be available in your organization and contain existing RMS templates.
+- A server running [Active Directory Rights Management Services (AD RMS)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)) must be available in your organization and contain existing RMS templates.
 
 - If you configure transport protection rules to protect messages using IRM, and you also use journaling, consider enabling journal report decryption to allow the Journaling agent to save an unencrypted copy of the message in the journal report. To learn more, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
 

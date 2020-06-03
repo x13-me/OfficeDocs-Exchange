@@ -141,7 +141,7 @@ To view a rules report, in the Microsoft 365 admin center, select **Reports**.
 
 ![Report showing rule usage](../../media/TA_EX_RuleReport.png)
 
-To learn more, see [View mail protection reports](https://go.microsoft.com/fwlink/p/?LinkId=402958).
+To learn more, see [View mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
 ## Need more help?
 
@@ -150,5 +150,3 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
 [Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)
-
-[Mail flow rules (transport rules) in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)

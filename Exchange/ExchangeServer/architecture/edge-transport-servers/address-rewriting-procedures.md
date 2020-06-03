@@ -40,7 +40,7 @@ For more information about address rewriting, see [Address rewriting on Edge Tra
 
 - You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
-- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](https://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx).
+- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](https://docs.microsoft.com/exchange/whatif-confirm-and-validateonly-switches-exchange-2013-help).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 

@@ -135,7 +135,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx) for help resolving issues.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [Validate connectors in Office 365](validate-connectors.md) for help resolving issues.
 
 ### 3. Change your MX record to redirect your mail flow from the Internet to Office 365
 

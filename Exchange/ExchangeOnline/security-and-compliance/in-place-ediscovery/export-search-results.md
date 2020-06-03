@@ -96,11 +96,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - The name of the search is the first part of the filename for each file that is exported. Also, the date and time of the export request is appended to the filename of each PST file and the results log.
 
-- For more information about de-duplication and unsearchable items, see:
-
-  - [Estimate, preview, and copy search results](in-place-ediscovery.md#estimate-preview-and-copy-search-results)
-
-  - [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
+- For more information about de-duplication and unsearchable items, see [Estimate, preview, and copy search results](in-place-ediscovery.md#estimate-preview-and-copy-search-results).
 
 - To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?LinkId=324757).
 

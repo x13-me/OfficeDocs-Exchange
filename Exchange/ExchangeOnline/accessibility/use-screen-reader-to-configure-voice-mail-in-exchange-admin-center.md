@@ -22,7 +22,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Use a screen reader to configure voice mail in the Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to specify options and enable voicemail and other voice features for Exchange Online users. Learn more about [voicemail in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=798792).
+You can use your screen reader in the Exchange admin center (EAC) to specify options and enable voicemail and other voice features for Exchange Online users. Learn more about [voicemail in Exchange Online](../voice-mail-unified-messaging/voice-mail-unified-messaging.md).
 
 ## Get started
 
@@ -50,7 +50,7 @@ To configure voicemail in Exchange Online, [Use a screen reader to open the Exch
 
 With Unified Messaging (UM) in Office 365, administrators can manage voice messaging and email messaging from a single platform. Likewise, users can read or listen to their voicemail as well as email messages in their Inbox or use Outlook Voice Access from any telephone.
 
-Before you configure voicemail for Exchange Online users, you or another admin must create and configure a UM dial plan; you can do both in the EAC. A UM dial plan contains configuration information related to your telephony network, and establishes a link from users' telephone extension numbers enabled for voicemail to their Outlook mailboxes. This configuration information includes extension length, dial plan protocol type, audio language, Outlook Voice Access, voicemail settings, dialing rules, and more. Learn how to [create a UM dial plan](https://go.microsoft.com/fwlink/p/?LinkId=798793) and [manage a UM dial plan](https://go.microsoft.com/fwlink/p/?LinkId=798794).
+Before you configure voicemail for Exchange Online users, you or another admin must create and configure a UM dial plan; you can do both in the EAC. A UM dial plan contains configuration information related to your telephony network, and establishes a link from users' telephone extension numbers enabled for voicemail to their Outlook mailboxes. This configuration information includes extension length, dial plan protocol type, audio language, Outlook Voice Access, voicemail settings, dialing rules, and more. Learn how to [create a UM dial plan](../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md)) and [manage a UM dial plan](../voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan.md).
 
 ## Enable voice features for a user
 

@@ -56,7 +56,7 @@ Using this new model, In-Place Hold allows you to create granular hold policies 
 - **Query-based hold** If your organization preserves items based on specified query parameters, you can use a query-based In-Place Hold. You can specify query parameters such as keywords, start and end dates, sender and recipient addresses, and message types. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved.
 
    > [!IMPORTANT]
-   > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more details about unsearchable item, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+   > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more details about unsearchable item, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
 
 - **Time-based hold**: Both In-Place Hold and Litigation Hold allow you to specify a duration of time for which to hold items. The duration is calculated from the date a mailbox item is received or created.
 
@@ -95,7 +95,7 @@ Many organizations require that users be informed when they're placed on hold. A
 
 ## Holds and the Recoverable Items folder
 
-In-Place Hold and Litigation Hold uses the Recoverable Items folder to preserve items. The Recoverable Items folder replaces the feature informally known as the dumpster in previous versions of Exchange. The Recoverable Items folder is hidden from the default view of Outlook, Outlook Web App, and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+In-Place Hold and Litigation Hold uses the Recoverable Items folder to preserve items. The Recoverable Items folder replaces the feature informally known as the dumpster in previous versions of Exchange. The Recoverable Items folder is hidden from the default view of Outlook, Outlook Web App, and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
 By default, when a user deletes a message from a folder other than the Deleted Items folder, the message is moved to the Deleted Items folder. This is known as a move. When a user soft deletes an item (accomplished by pressing the SHIFT and DELETE keys) or deletes an item from the Deleted Items folder, the message is moved to the Recoverable Items folder, thereby disappearing from the user's view.
 

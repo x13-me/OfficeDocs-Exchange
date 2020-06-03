@@ -175,7 +175,7 @@ Through the Autodiscover service, Outlook finds a new connection point made up o
 
 - Outlook Anywhere server settings
 
-You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain. In addition, you may need to set IIS Authentication Methods. You can learn more about that in [Setting Up Standard Authentication Methods for Outlook Web App](https://technet.microsoft.com/library/f4ae771b-de25-47e4-963f-4b1e43f8b3d4.aspx).
+You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain.
 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|

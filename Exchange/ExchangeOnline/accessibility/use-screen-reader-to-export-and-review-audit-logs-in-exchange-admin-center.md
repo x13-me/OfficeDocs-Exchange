@@ -47,7 +47,7 @@ To export and review mailbox audit logs, [Use a screen reader to open the Exchan
 
 ### Configure mailbox audit logging
 
-Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in Exchange Online PowerShell. For more information, go to [Export mailbox audit logs](https://go.microsoft.com/fwlink/p/?LinkId=798935).
+Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in Exchange Online PowerShell. For more information, go to [Export mailbox audit logs in Exchange Online](../security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs.md).
 
 ## Export a mailbox audit log
 

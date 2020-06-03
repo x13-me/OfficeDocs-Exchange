@@ -62,8 +62,4 @@ You can use the Deployment Assistant for the following deployment scenarios:
     > [!IMPORTANT]
     > If you have an Exchange 2003 on-premises organization and want to configure a new hybrid deployment with Office 365, you must add one or more servers running Exchange 2010 Server Service Pack 3, not Exchange 2013 servers, to your on-premises organization. To do that, we strongly recommend that you use the Exchange 2010 hybrid deployment option in the <A href="https://technet.microsoft.com/exdeploy2010">Exchange Server Deployment Assistant</A>.
 
-- **Cloud only**
-
-    For more information about this scenario, see [Understanding Cloud-Only Deployments](https://technet.microsoft.com/library/jj938005\(v=exchg.150\)).
-
 In addition to the above Exchange 2013 deployment scenarios, the Deployment Assistant also has deployment scenarios for Exchange 2010.

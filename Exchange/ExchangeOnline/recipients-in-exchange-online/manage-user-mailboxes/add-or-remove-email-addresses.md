@@ -25,7 +25,7 @@ You can configure more than one email address for the same mailbox. The addition
 > [!IMPORTANT]
 > If you're using Office 365 for business, you should add or remove email addresses for user mailboxes in the [Add another email alias for a user](https://support.office.com/article/0b0bd900-68b1-4bf5-808b-5d240a7739f4)
 
-For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients in Exchange Online](../recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 

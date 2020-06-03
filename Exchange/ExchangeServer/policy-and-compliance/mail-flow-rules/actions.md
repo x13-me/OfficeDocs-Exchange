@@ -26,8 +26,6 @@ For more information about mail flow rules in Exchange Server, including how mul
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
 
-For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx).
-
 ## Actions for mail flow rules on Mailbox servers
 
 The actions that are available in mail flow rules on Mailbox servers are described in the following table. Valid values for each property are described in [Property values](#property-values)[Property values] section.
@@ -40,7 +38,7 @@ The actions that are available in mail flow rules on Mailbox servers are describ
 
 |**Action in the EAC**|**Action parameter in the Exchange Management Shell**|**Property**|**Description**|**Available in**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Forward the message for approval to these people** <br/><br/> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](https://technet.microsoft.com/library/5c13a07e-c21d-4502-a9f9-fb801197e1dd.aspx). You can't use a distribution group as a moderator.|Exchange 2010 or later|
+|**Forward the message for approval to these people** <br/><br/> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](https://docs.microsoft.com/Exchange/common-message-approval-scenarios-exchange-2013-help). You can't use a distribution group as a moderator.|Exchange 2010 or later|
 |**Forward the message for approval to the sender's manager** <br/><br/> **Forward the message for approval** \> **to the sender's manager**|_ModerateMessageByManager_|n/a|Forwards the message to the sender's manager for approval. <br/><br/> This action only works if the sender's **Manager** attribute is defined in Active Directory. Otherwise, the message is delivered to the recipients without moderation.|Exchange 2010 or later|
 |**Redirect the message to these recipients** <br/><br/> **Redirect the message to** \> **these recipients**|_RedirectMessageTo_|`Addresses`|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|Exchange 2010 or later|
 |**Reject the message with the explanation** <br/><br/> **Block the message** \> **reject the message and include an explanation**|_RejectMessageReasonText_|`String`|Returns the message to the sender in a non-delivery report (also known as an NDR or bounce message) with the specified text as the rejection reason. The recipient doesn't receive the original message or notification. <br/><br/> The default enhanced status code that's used is `5.7.1`. <br/><br/> When you create or modify the rule in the Exchange Management Shell, you can specify the DSN code by using the _RejectMessageEnhancedStatusCode_ parameter.|Exchange 2010 or later|
@@ -111,5 +109,3 @@ The property values that are used for actions in mail flow rules are described i
 ## For more information
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
-
-[Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online

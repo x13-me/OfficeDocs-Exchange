@@ -77,10 +77,10 @@ The following table describes the version and location combinations of user mail
 
 ## Step 2: Make remote public folders discoverable
 
-1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/library/bb124778(v=exchg.141).aspx).
+1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124778(v=exchg.141)).
 
    > [!NOTE]
-   > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247(v=exchg.141).aspx).
+   > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141)).
 
 2. Create an empty mailbox database on each public folder server.
 

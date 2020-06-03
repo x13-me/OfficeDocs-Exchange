@@ -20,7 +20,7 @@ manager: serdars
 
 # Create and manage room mailboxes
 
-A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 For info about another type of resource mailbox, check out [Manage equipment mailboxes](manage-equipment-mailboxes.md).
 

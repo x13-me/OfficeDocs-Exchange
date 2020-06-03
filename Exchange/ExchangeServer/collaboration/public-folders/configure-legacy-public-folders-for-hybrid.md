@@ -82,10 +82,10 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 ## Step 2: Make remote public folders discoverable
 
-1. If your public folders are on Exchange 2010 servers, you must install Client Access services on all mailbox servers that have a public folder database. This enables the Exchange RpcClientAccess service to run, which enables all clients to access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/library/bb124778(v=exchg.141).aspx).
+1. If your public folders are on Exchange 2010 servers, you must install Client Access services on all mailbox servers that have a public folder database. This enables the Exchange RpcClientAccess service to run, which enables all clients to access public folders. For more information, see [Install Exchange Server 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124778(v=exchg.141)).
 
    > [!NOTE]
-   > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247(v=exchg.141).aspx).
+   > This server doesn't have to be part of the Client Access load balancing. For more information, see [Understanding Load Balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141)).
 
 2. Create an empty mailbox database on each public folder server.
 

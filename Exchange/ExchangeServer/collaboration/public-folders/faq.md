@@ -139,7 +139,7 @@ You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/m
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help).
 
 ## Does mailbox audit logging work against public folders?
 
