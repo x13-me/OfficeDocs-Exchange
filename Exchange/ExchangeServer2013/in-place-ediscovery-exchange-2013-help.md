@@ -273,12 +273,14 @@ In Exchange Server 2013, you can change the default values for these parameters 
 
 The following table contains links to topics that will help you learn about and manage In-Place eDiscovery.
 
+
+
 |**Topic**|**Description**|
 |:-----|:-----|
 |[Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions-exchange-2013-help.md)|Learn how to give a user access to use In-Place eDiscovery in the EAC to search Exchange mailboxes. Adding a user to the Discovery Management role group also allows the person to use the eDiscovery Center in SharePoint 2013 to search Exchange mailboxes.|
 |[Create a discovery mailbox](create-a-discovery-mailbox-exchange-2013-help.md)|Learn how to use the Shell to create a discovery mailbox and assign access permissions.|
 |[Create an In-Place eDiscovery search](create-in-place-ediscovery-search-exchange-2013-help.md)|Learn how to create an In-Place eDiscovery search, and how to estimate and preview eDiscovery search results.|
-|[Message properties and search operators for In-Place eDiscovery](https://go.microsoft.com/fwlink/p/?LinkId=506799)|Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.|
+|[Message properties indexed by Exchange Search](message-properties-indexed-by-exchange-search-exchange-2013-help.md)|Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.|
 |[Start or stop an In-Place eDiscovery search](start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md)|Learn how to start, stop, and restart eDiscovery searches.|
 |[Modify an In-Place eDiscovery search](modify-an-in-place-ediscovery-search-exchange-2013-help.md)|Learn how to modify an existing eDiscovery search.|
 |[Copy eDiscovery search results to a discovery mailbox](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)|Learn how to copy the results of an eDiscovery search to a discovery mailbox.|

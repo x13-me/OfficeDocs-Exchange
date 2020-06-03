@@ -280,7 +280,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop)
 
-[Configure email forwarding for a mailbox](https://go.microsoft.com/fwlink/p/?linkid=833531)
+[Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md)
 
 [Synchronizing your directory with Office 365 is easy](https://go.microsoft.com/fwlink/p/?linkid=833532)
 

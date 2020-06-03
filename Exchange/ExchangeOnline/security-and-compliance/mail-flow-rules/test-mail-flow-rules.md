@@ -141,7 +141,7 @@ To view a rules report, in the Microsoft 365 admin center, select **Reports**.
 
 ![Report showing rule usage](../../media/TA_EX_RuleReport.png)
 
-To learn more, see [View mail protection reports](https://go.microsoft.com/fwlink/p/?LinkId=402958).
+To learn more, see [View mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
 ## Need more help?
 

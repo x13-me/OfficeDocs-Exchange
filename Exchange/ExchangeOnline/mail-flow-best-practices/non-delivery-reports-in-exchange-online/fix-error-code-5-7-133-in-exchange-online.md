@@ -87,4 +87,4 @@ To configure the group's allowed senders list, open the EAC do the following ste
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Create and manage distribution groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=613635).
+[Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
