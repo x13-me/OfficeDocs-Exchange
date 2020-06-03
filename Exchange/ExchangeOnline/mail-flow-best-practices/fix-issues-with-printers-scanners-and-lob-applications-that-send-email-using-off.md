@@ -135,7 +135,7 @@ This can be caused by a number of issues.
 
 1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
@@ -161,7 +161,7 @@ This can be caused by a number of issues.
 
 1. A common reason for issues with Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Emails are no longer being sent to external recipients
 

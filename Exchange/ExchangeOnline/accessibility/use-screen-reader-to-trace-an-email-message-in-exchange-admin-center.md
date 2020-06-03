@@ -116,4 +116,4 @@ It might take a few minutes to a few hours for message trace results to return. 
 8. To close the **pending or completed traces** page, tab to the **Close** button and press Enter.
 
    > [!NOTE]
-   > For more information, refer to [Run a Message Trace and View Results](https://go.microsoft.com/fwlink/p/?LinkId=799440).
+   > For more information, refer to [Trace an email message](../monitoring/trace-an-email-message/trace-an-email-message.md).

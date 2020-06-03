@@ -25,7 +25,7 @@ Use keyboard shortcuts and your screen reader to add or edit a mailbox's display
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to perform this task. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Microsoft 365 or Office 365 subscription plan and admin role to perform this task. Then, open the EAC and get started.
 
 ### Use your browser and keyboard to navigate in the EAC
 
@@ -33,7 +33,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results, when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=786972).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows](https://go.microsoft.com/fwlink/p/?LinkId=798796) for Office 365.
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows](https://go.microsoft.com/fwlink/p/?LinkId=798796) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
