@@ -44,8 +44,6 @@ For more information about remote move requests, see the following topics:
 
 - [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest)
 
-For more information about remote mailbox moves and remote legacy moves, see [Move Mailboxes to Exchange 2016](https://technet.microsoft.com/library/mt473797.aspx).
-
 The remainder of this topic describes the mail user Active Directory attributes that are required for a mailbox move. These attributes are configured for you when you use either the code or the script to prepare for the mailbox move. However, you can manually copy these attributes using an Active Directory editor.
 
 ## Active Directory user attributes required for a mailbox move

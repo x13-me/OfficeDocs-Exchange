@@ -180,4 +180,4 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
 </ul>
 
 
-<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://technet.microsoft.com/library/bb124558(EXCHG.141).aspx">Exchange Server 2010</a> and <a href="https://technet.microsoft.com/library/bb124558(v=exchg.150).aspx">Exchange Server 2013</a> is also available on TechNet.
+<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124558(v=exchg.141)">Exchange Server 2010</a> and <a href="https://docs.microsoft.com/Exchange/exchange-server-2013-exchange-2013-help">Exchange Server 2013</a> is also available.

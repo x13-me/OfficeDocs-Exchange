@@ -232,6 +232,6 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 [Policy Tips](policy-tips-exchange-2013-help.md)
 
-[Transport rules](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
 [Exchange 2010 MailTips](https://go.microsoft.com/fwlink/p/?LinkId=265179)

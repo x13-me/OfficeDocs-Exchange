@@ -27,7 +27,7 @@ The following figure illustrates the relationship between the linked user accoun
 ![Trust relationship between forests with linked mailboxes, linked mailbox Exchange, Exchange linked mailbox](../media/66033cd3-9501-45f6-bfaa-823f7f25d687.png)
 
 > [!NOTE]
-> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see [Learn more about setting up a forest trust to support linked mailboxes](https://technet.microsoft.com/library/jj156983.aspx).
+> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see [Learn more about setting up a forest trust to support linked mailboxes](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156983(v=exchg.150)).
 
 ## What do you need to know before you begin?
 
@@ -125,7 +125,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 After you create a linked mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
 
-You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage User Mailboxes](https://technet.microsoft.com/library/957ca61c-1fa1-42ab-a0e6-8488e4782566.aspx) topic.
+You can also change properties for multiple linked mailboxes at the same time. For more information, see [Bulk edit user mailboxes](user-mailboxes/user-mailboxes.md#bulk-edit-user-mailboxes).
 
 > [!IMPORTANT]
 > The estimated time to complete this task will vary based on the number of properties you want to view or change.
