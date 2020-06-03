@@ -107,8 +107,6 @@ The property values that are used for actions in mail flow rules are described i
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
-[Mail flow rule actions in Exchange Server](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
-
 [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
 
 [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption)

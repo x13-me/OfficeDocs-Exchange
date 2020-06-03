@@ -282,7 +282,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-    1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/library/ee662309.aspx) cmdlet.
+    1. Add the File Server role using the Add Roles and Features Wizard or the [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature) cmdlet.
 
     2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 

@@ -24,8 +24,6 @@ Public folders are designed for shared access and provide an easy and effective 
 
 If you want users on the internet to send mail to a mail-enabled public folder, you need to set addition permissions using the **Add-PublicFolderClientPermission** cmdlet.
 
-For additional management tasks related to managing public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
-
 For additional management tasks related to public folders, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).
 
 ## What do you need to know before you begin?

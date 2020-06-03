@@ -161,4 +161,4 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 [Exchange Server 2013 Management Pack Guide](https://docs.microsoft.com/exchange/management/exchange-server-2013-management-pack-guide)
 
-[Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\))
+[Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help)

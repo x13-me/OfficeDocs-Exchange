@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange organization and can access resources. For more information, see [Recipients](recipients-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 

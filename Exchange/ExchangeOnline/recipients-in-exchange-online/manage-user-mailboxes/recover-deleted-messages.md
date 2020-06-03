@@ -105,13 +105,9 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
 ## More information
 
-- The ability to recover deleted items is enabled by single item recovery, which lets an administrator recover a message that's been purged by a user or by retention policy as long as the deleted item retention period hasn't expired for that item. To learn more about single item recovery, see [Recoverable Items Folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+- The ability to recover deleted items is enabled by single item recovery, which lets an administrator recover a message that's been purged by a user or by retention policy as long as the deleted item retention period hasn't expired for that item. To learn more about single item recovery, see [Recoverable Items folder in Exchange Online](../../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
 
-- An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. You can change this setting to a maximum of 30 days. In Exchange Server, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
-
-  - [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md)
-
-  - [Configure Deleted Item Retention and Recoverable Items Quotas](https://technet.microsoft.com/library/de7d667a-1c93-4364-a4f9-2aa5e3678b12.aspx)
+- An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. You can change this setting to a maximum of 30 days. For more information, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md).
 
 - As previously explained, you can also use the In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox).
 
@@ -125,4 +121,4 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
 - This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch) cmdlet in Windows PowerShell.
 
-- In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search and delete messages](https://technet.microsoft.com/library/8c36bb03-e716-4fdd-9958-4aa7a2a1db42.aspx).
+- In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).

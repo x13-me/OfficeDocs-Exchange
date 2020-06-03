@@ -75,7 +75,7 @@ If you no longer require certain types of mailbox actions to be audited, you sho
 
 You can use the following methods to search mailbox audit log entries:
 
-- **Synchronously search a single mailbox**: You can use the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet to synchronously search mailbox audit log entries for a single mailbox. The cmdlet displays search results in the Exchange Management Shell window. For details, see [Search Mailbox Audit Log for a Mailbox](https://technet.microsoft.com/library/5b518a08-3b51-4ba3-bfbd-0e35cc5ff374.aspx).
+- **Synchronously search a single mailbox**: You can use the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet to synchronously search mailbox audit log entries for a single mailbox. The cmdlet displays search results in the Exchange Management Shell window. For details, see [Search Mailbox Audit Log for a Mailbox](https://docs.microsoft.com/exchange/search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help).
 
 - **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) cmdlet. For details, see [Create a Mailbox Audit Log Search](https://docs.microsoft.com/exchange/create-a-mailbox-audit-log-search-exchange-2013-help).
 

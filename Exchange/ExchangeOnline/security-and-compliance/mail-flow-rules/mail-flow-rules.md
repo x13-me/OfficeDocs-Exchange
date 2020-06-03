@@ -126,7 +126,7 @@ There are several types of messages that pass through an organization. The follo
 
 [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
 
-[Organization-wide Disclaimers, Signatures, Footers, or Headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx)
+[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 [Manage message approval](manage-message-approval.md)
 

@@ -319,8 +319,8 @@ You must use the Exchange Management Shell to import or export a transport rule 
 
 ## Need more help?
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Transport Rule Conditions](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
+[Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+[Transport rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)
