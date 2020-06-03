@@ -21,7 +21,7 @@ ms.service: exchange-online
 
 # Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online
 
-Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a *mail contact*: a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients](https://go.microsoft.com/fwlink/p/?LinkId=798820) TechNet article.
+Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a *mail contact*: a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients in Exchange Online](../recipients-in-exchange-online/recipients-in-exchange-online.md) article.
 
 ## Get started
 
@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To add a new mail contact, [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Recipient Management](https://go.microsoft.com/fwlink/p/?LinkId=798822) admin group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To add a new mail contact, [Use a screen reader to open the Exchange admin center in Exchange Online](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management and Recipient Management admin role group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Use the EAC to create a mail contact
 

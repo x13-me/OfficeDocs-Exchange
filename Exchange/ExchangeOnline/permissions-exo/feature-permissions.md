@@ -65,6 +65,7 @@ You can use the features in the following table to manage your Exchange Online o
 |Mobile devices|Organization Management <br/><br/> Recipient Management
 |Organization configuration|Organization Management|
 |Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management|
+|Permissions and delegation|Organization Management|
 |Public folders|Organization Management <br/> Public Folder Management <br/> Mail-enabled public folders require Recipient Management|
 |POP3 and IMAP4 permissions|Organization Management|
 |Quarantine|Organization Management <br/><br/> Hygiene Management|

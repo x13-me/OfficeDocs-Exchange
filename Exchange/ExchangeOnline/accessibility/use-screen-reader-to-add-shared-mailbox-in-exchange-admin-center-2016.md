@@ -21,7 +21,7 @@ ms.service: exchange-online
 
 # Use a screen reader to add a new shared mailbox in the Exchange admin center in Exchange Online
 
-You can use your screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=798937).
+You can use your screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](../collaboration-exo/shared-mailboxes.md).
 
 ## Get started
 
