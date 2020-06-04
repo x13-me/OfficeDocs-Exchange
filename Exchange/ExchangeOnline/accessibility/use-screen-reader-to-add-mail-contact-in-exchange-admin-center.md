@@ -61,7 +61,7 @@ To add a new mail contact, [Use a screen reader to open the Exchange admin cente
 
 6. Tab to the following boxes, and complete the contact information:
 
-   **Note**: Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name..
+   **Note**: Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name.
 
    - **First name**. Type the contact's first name.
 
