@@ -27,7 +27,7 @@ When you use move request to move mailboxes, the move requests are processed by 
 
 - Microsoft Exchange Mailbox Replication Proxy
 
-For more information about the Mailbox replication server and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451\(v=exchg.150\)).
+For more information about the Mailbox replication server and proxy, see [Learn more about MRS Proxy](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156451(v=exchg.150)).
 
 For more information about mailbox moves, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 

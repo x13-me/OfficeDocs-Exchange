@@ -57,7 +57,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 ### Domain configuration issues
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
 
 2. Click **Domains** and verify your domain appears in the list as **Active**.
 
@@ -65,7 +65,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 If you control of the DNS records for your Office 365 domain, you can also check the status of the domain in the Exchange admin center (EAC) by following these steps:
 
-1. In the Office 365 portal, click **Admin** \> **Exchange**.
+1. In the Microsoft 365 admin center, click **Admin** \> **Exchange**.
 
 2. Click **Mail flow** \> **Accepted domains**.
 
@@ -83,13 +83,13 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 For more information, see Microsoft Knowledge Base article [KB2827473](https://go.microsoft.com/fwlink/p/?LinkId=328236).
 
-For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange 2013 Hybrid Deployments](https://technet.microsoft.com/library/jj659050.aspx).
+For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
 
 ### Service issues in Exchange Online
 
 A service issue in Office 365 might be causing the problem. To check the status of Office 365, do the following steps:
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
 
 2. Click **Service health** to see an overview of any issues.
 

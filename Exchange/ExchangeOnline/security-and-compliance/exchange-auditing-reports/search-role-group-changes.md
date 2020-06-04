@@ -20,9 +20,7 @@ manager: serdars
 
 # Search the role group changes or administrator audit logs in Exchange Online
 
-You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
-
-If you want to search the mailbox audit log, see [Mailbox Audit Logging](https://technet.microsoft.com/library/29b67d58-eef9-4ad4-863f-562405ea8794.aspx).
+You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [View the administrator audit log](view-administrator-audit-log.md).
 
 > [!TIP]
 > In Exchange Online, you can use the EAC to view entries in the administrator audit log. For more information, see [View the administrator audit log](view-administrator-audit-log.md).
@@ -31,7 +29,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 
 - Estimated time to complete each procedure: less than 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 

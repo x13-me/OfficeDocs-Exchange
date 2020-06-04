@@ -93,7 +93,7 @@ By default, an Exchange organization is enabled for IRM, but to apply IRM protec
 
 - **Automatically in Outlook**: Administrators can create Outlook protection rules to automatically IRM-protect messages. Outlook protection rules are automatically deployed to Outlook clients, and IRM-protection is applied by Outlook when the user is composing a message. For more information, see [Outlook Protection Rules](https://docs.microsoft.com/exchange/outlook-protection-rules-exchange-2013-help).
 
-- **Automatically on Mailbox servers**: Administrators can create mail flow rules (also known as transport rules) to automatically IRM-protect messages that match specified conditions. For more information, see [Understanding Transport Protection Rules](https://technet.microsoft.com/library/9bd6d049-165e-4e51-a79f-3b8ff409da55.aspx).
+- **Automatically on Mailbox servers**: Administrators can create mail flow rules (also known as transport rules) to automatically IRM-protect messages that match specified conditions. For more information, see [Understanding Transport Protection Rules](https://docs.microsoft.com/exchange/transport-protection-rules-exchange-2013-help).
 
     > [!NOTE]
     > IRM protection isn't applied again to messages that are already IRM-protected. For example, if a user IRM-protects a message in Outlook or Outlook on the web, a transport protection rule won't apply IRM protection to the same message.
@@ -106,14 +106,14 @@ This table describes the scenarios for sending messages, and whether IRM protect
 |:-----|:-----|:-----|
 |Sending messages within the same on-premises Exchange organization|Yes|For the requirements, see the [IRM requirements](#irm-requirements) section later in this topic.|
 |Sending messages between different Active Directory forests in an on-premises organization.|Yes|For the requirements, see [Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests](https://go.microsoft.com/fwlink/p/?linkId=199009).|
-|Sending messages between an on-premises Exchange organization and an Microsoft 365 or Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange hybrid deployments](https://docs.microsoft.com/exchange/irm).|
+|Sending messages between an on-premises Exchange organization and a Microsoft 365 or Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange hybrid deployments](https://docs.microsoft.com/exchange/irm).|
 |Sending messages to external recipients|No|Exchange doesn't include a solution for sending IRM-protected messages to external recipients in non-federated organizations. To create a federated trust between two Active Directory forests by using Active Directory Federation Services (AD FS), see [Understanding AD RMS Trust Policies](https://go.microsoft.com/fwlink/p/?linkId=182909).|
 
 ## Decrypt IRM-protected messages to enforce messaging policies
 
 To enforce messaging policies and for regulatory compliance, Exchange needs access to the content of encrypted messages. To meet eDiscovery requirements due to litigation, regulatory audits, or internal investigations, a designated auditor must also be able to search encrypted messages. To help with these tasks, Exchange includes the following decryption features:
 
-- **Transport decryption**: Allows access to message content by the transport agents that are installed on Exchange servers. For more information, see [Understanding Transport Decryption](https://technet.microsoft.com/library/4267c46d-f488-404d-a5cb-51f9127461c0.aspx).
+- **Transport decryption**: Allows access to message content by the transport agents that are installed on Exchange servers. For more information, see [Understanding Transport Decryption](https://docs.microsoft.com/exchange/transport-decryption-exchange-2013-help).
 
 - **Journal report decryption**: Allows standard or premium journaling to save a clear-text copy of IRM-protected messages in journal reports. For more information, see [Enable journal report decryption](journaling/journaling-procedures.md#enable-journal-report-decryption).
 
@@ -140,7 +140,7 @@ The built-in transport agents that are associated with IRM are described in this
 |RMS Protocol Decryption Agent|No|**OnEndOfData**|Decrypts IRM-protected messages to allow access to the message content by transport agents.|
 |Transport Rule Agent|Yes|**OnRoutedMessage**|Flags messages that match the conditions in a transport protection rule to be IRM-protected by the RMS Encryption agent.|
 
-For more information about transport agents, see [Transport Agents](https://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
+For more information about transport agents, see [Transport Agents](https://docs.microsoft.com/exchange/transport-agents-exchange-2013-help).
 
 ## IRM requirements
 

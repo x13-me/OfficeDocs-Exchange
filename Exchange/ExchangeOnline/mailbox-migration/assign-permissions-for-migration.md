@@ -78,7 +78,7 @@ For information about migrating mailboxes to Office 365 by using different migra
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipient Permissions](https://go.microsoft.com/fwlink/p/?LinkID=534105) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 ## Assign the FullAccess permission
 <a name="bkmk_fullaccess"> </a>

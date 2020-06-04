@@ -43,7 +43,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 ### Open the EAC, and confirm your admin role
 
-To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/p/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management and Records Management admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Set up public folders
 
@@ -132,11 +132,11 @@ After you create a public folder, specify the users who can access it. Also spec
 
 ## Create a distribution group
 
-Another method for facilitating and configuring collaboration in Exchange Online is a distribution group: a collection of two or more recipients that appears in the shared address book. When an email message is sent to a distribution group, it's received by all members of the group. Distribution groups can be organized by a particular discussion subject (such as "Resource Management Best Practices") or by users who share a common work structure (as in, a workgroup or project team) that requires them to communicate frequently. [Use a screen reader to create a new distribution group in the Exchange admin center](use-screen-reader-to-create-distribution-group-in-exchange-admin-center.md). [Learn more about managing distribution groups](https://go.microsoft.com/fwlink/p/?LinkId=613635).
+Another method for facilitating and configuring collaboration in Exchange Online is a distribution group: a collection of two or more recipients that appears in the shared address book. When an email message is sent to a distribution group, it's received by all members of the group. Distribution groups can be organized by a particular discussion subject (such as "Resource Management Best Practices") or by users who share a common work structure (as in, a workgroup or project team) that requires them to communicate frequently. [Use a screen reader to create a new distribution group in the Exchange admin center](use-screen-reader-to-create-distribution-group-in-exchange-admin-center.md). [Learn more about managing distribution groups](../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
 
 ## Work with a shared mailbox
 
-Shared mailboxes make it easy for a group of people to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a group member replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not by the group member. [Use a screen reader to add a new shared mailbox in the Exchange admin center 2016](use-screen-reader-to-add-shared-mailbox-in-exchange-admin-center-2016.md). [Learn more about shared mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=798937).
+Shared mailboxes make it easy for a group of people to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a group member replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not by the group member. [Use a screen reader to add a new shared mailbox in the Exchange admin center 2016](use-screen-reader-to-add-shared-mailbox-in-exchange-admin-center-2016.md). [Learn more about shared mailboxes](../collaboration-exo/shared-mailboxes.md).
 
 ## Accessibility Information
 

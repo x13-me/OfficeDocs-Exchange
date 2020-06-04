@@ -33,7 +33,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 - For information about the new features you'll get when you upgrade to Exchange 2013 from previous versions of Exchange, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-- For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?linkid=512549).
+- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates).
 
 |**Version**|**Blog pst**|
 |:-----|:-----|

@@ -19,15 +19,15 @@ _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 features are designed to help improve the security of your messaging environment. Generally, for Exchange 2013, the following conditions are true:
 
-  - Accounts that are used by Exchange 2013 have the minimum rights that are required to perform the given task sets.
+- Accounts that are used by Exchange 2013 have the minimum rights that are required to perform the given task sets.
 
-  - By default, services are started only when they are required.
+- By default, services are started only when they are required.
 
-  - Access control list (ACL) rights for Exchange objects are minimized.
+- Access control list (ACL) rights for Exchange objects are minimized.
 
-  - Administrative permissions are set according to the scope of change on the object that a given modification requires.
+- Administrative permissions are set according to the scope of change on the object that a given modification requires.
 
-  - By default, all internal default message paths are encrypted.
+- By default, all internal default message paths are encrypted.
 
 This topic lists steps that we recommend you take to harden the messaging environment before you install Microsoft Exchange. We recommend that you refer to this checklist every time that you install a new Exchange server role.
 
@@ -46,7 +46,7 @@ Before installing Exchange 2013, perform the following procedures.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Run <a href="https://go.microsoft.com/fwlink/p/?linkid=54836">Microsoft Update</a>.</p></td>
+<td><p>Run Microsoft Update.</p></td>
 <td><p> </p></td>
 </tr>
 <tr class="even">

@@ -73,7 +73,7 @@ Consider the following before you implement an Exchange hybrid deployment:
 
 A hybrid deployment involves several different services and components:
 
-- **Exchange servers**: At least one Exchange server needs to be configured in your on-premises organization if you want to configure a hybrid deployment. If you're running Exchange 2013 or older, you need to install at least one server running the Mailbox and Client Access roles. If you're running Exchange 2016 or newer, at least one server running the Mailbox role needs to be installed. If needed, Exchange Edge Transport servers can also be installed in a perimeter network and support secure mail flow with Office 365.
+- **Exchange servers**: At least one Exchange server needs to be configured in your on-premises organization if you want to configure a hybrid deployment. If you're running Exchange 2013 or older, you need to install at least one server running the Mailbox and Client Access roles. If you're running Exchange 2016 or newer, at least one server running the Mailbox role needs to be installed. If needed, Exchange Edge Transport servers can also be installed in a perimeter network and support secure mail flow with Microsoft 365 or Office 365.
 
    > [!NOTE]
    > We don't support the installation of Exchange servers running the Mailbox or Client Access server roles in a perimeter network.
@@ -96,7 +96,7 @@ A hybrid deployment involves several different services and components:
 
 Take a look at the following scenario. It's an example topology that provides an overview of a typical Exchange 2016 deployment. Contoso, Ltd. is a single-forest, single-domain organization with two domain controllers and one Exchange 2016 server installed. Remote Contoso users use Outlook on the web to connect to Exchange 2016 over the Internet to check their mailboxes and access their Outlook calendar.
 
-![On-premises Exchange deployment before hybrid deployment with Office 365 is configured](media/dad133ae-d18a-42ec-8f0a-dd1de391200e.png)
+![On-premises Exchange deployment before hybrid deployment with Microsoft 365 or Office 365 is configured](media/dad133ae-d18a-42ec-8f0a-dd1de391200e.png)
 
 Let's say that you're the network administrator for Contoso, and you're interested in configuring a hybrid deployment. You deploy and configure a required Azure AD Connect server and you also decide to use the Azure AD Connect password synchronization feature to let users use the same credentials for both their on-premises network account and their Microsoft 365 or Office 365 account. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
 
@@ -110,7 +110,7 @@ Let's say that you're the network administrator for Contoso, and you're interest
 
 - On-premises and Exchange Online users use the same URL to connect to their mailboxes over the Internet.
 
-![On-premises Exchange deployment after hybrid deployment with Office 365 is configured](media/e8681849-f15d-4d0e-b77e-6105b6096c4b.png)
+![On-premises Exchange deployment after hybrid deployment with Microsoft 365 or Office 365 is configured](media/e8681849-f15d-4d0e-b77e-6105b6096c4b.png)
 
 If you compare Contoso's existing organization configuration and the hybrid deployment configuration, you'll see that configuring a hybrid deployment has added servers and services that support additional communication and features that are shared between the on-premises and Exchange Online organizations. Here's an overview of the changes that a hybrid deployment has made from the initial on-premises Exchange organization.
 
@@ -161,7 +161,7 @@ Before moving mailboxes to the cloud, you should:
 
 - Calculate the average expected transfer speed, and plan your mailbox moves accordingly.
 
-Learn more at: [Networking](https://go.microsoft.com/fwlink/p/?LinkId=280178)
+Learn more at: [Networking](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/networking).
 
 ### Unified Messaging
 
@@ -190,7 +190,7 @@ Learn more at: [Mobile Phones](https://go.microsoft.com/fwlink/p/?linkId=206387)
 
 ### Client requirements
 
-We recommend that your clients use Outlook 2016 or Outlook 2013 for the best experience and performance in the hybrid deployment. Pre-Outlook 2010 clients aren't supported in hybrid deployments or with Office 365.
+We recommend that your clients use Outlook 2016 or Outlook 2013 for the best experience and performance in the hybrid deployment. Pre-Outlook 2010 clients aren't supported in hybrid deployments or with Microsoft 365 or Office 365.
 
 ### Licensing for Microsoft 365 and Office 365
 
@@ -206,7 +206,7 @@ Learn more at: [Anti-spam and anti-malware protection in EOP](https://docs.micro
 
 Public folders are supported in the cloud and on-premises public folders can be migrated to the cloud. Additionally, public folders in the cloud can be moved to the on-premises Exchange organization. Both on-premises and cloud users can access public folders located in either organization using Outlook on the web, Outlook 2016, Outlook 2013, or Outlook 2010 SP2 or newer. Existing on-premises public folder configuration and access for on-premises mailboxes doesn't change when you configure a hybrid deployment.
 
-Learn more at: [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx)
+Learn more at: [Public folders](https://docs.microsoft.com/Exchange/collaboration/public-folders/public-folders).
 
 ### Accessibility
 
@@ -242,7 +242,7 @@ The following list provides you with definitions of the core components associat
 
  **Exchange 2013-based hybrid deployment**
 
-> A hybrid deployment configured using Exchange 2013 on-premises servers as the connecting endpoint for the Office 365 and Exchange Online services. A hybrid deployment option for on-premises Exchange 2013, Exchange 2010, and Exchange 2007 organizations.
+> A hybrid deployment configured using Exchange 2013 on-premises servers as the connecting endpoint for the Microsoft 365, Office 365, and Exchange Online services. A hybrid deployment option for on-premises Exchange 2013, Exchange 2010, and Exchange 2007 organizations.
 
  **Exchange 2016-based hybrid deployment**
 

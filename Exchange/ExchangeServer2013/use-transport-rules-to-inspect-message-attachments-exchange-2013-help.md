@@ -308,10 +308,8 @@ DLP policies and attachment-related conditions can help you enforce your busines
 
 ## For more information
 
-[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention in Exchange 2013](data-loss-prevention-exchange-2013-help.md)
 
 [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
 [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
-
-[Use transport rules to inspect message attachments](https://technet.microsoft.com/library/jj919236\(v=exchg.150\)) in Exchange Online

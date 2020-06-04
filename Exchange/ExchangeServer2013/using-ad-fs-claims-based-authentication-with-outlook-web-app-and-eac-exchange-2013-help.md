@@ -157,24 +157,24 @@ When you are setting up Exchange 2013 SP1, AD FS, and Web Application Proxy, fol
 
 - **Web Application Proxy**
 
-     - SSL certificate used for service communications
+  - SSL certificate used for service communications
 
-        - Subject name: **owa.contoso.com**
+    - Subject name: **owa.contoso.com**
 
-        - Subject Alternative Name (SAN): None
+    - Subject Alternative Name (SAN): None
 
-   > [!NOTE]
-   > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
+    > [!NOTE]
+    > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
 
-     - AD FS Proxy SSL certificate
+    - AD FS Proxy SSL certificate
 
-        - Subject name: **adfs.contoso.com** (AD FS deployment name)
+      - Subject name: **adfs.contoso.com** (AD FS deployment name)
 
-        - Subject Alternative Name (SAN): None
+      - Subject Alternative Name (SAN): None
 
-     - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
+    - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
 
-See the certificate requirements section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/?linkid=392699) for more information about certificates.
+See the certificate requirements section in [AD FS Requirements](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) for more information about certificates.
 
 > [!NOTE]
 > An SSL encryption certificate is still needed for Outlook Web App and EAC even if you have an SSL certificate for AD FS. The SSL certificate is used on the OWA and ECP virtual directories.
@@ -565,7 +565,7 @@ To test the AD FS claims for Outlook Web App:
 
 - In the browser window, if you get a certificate error, just continue on to the Outlook Web App website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-- Type your user name (domain\\user) and password, and then click **Sign in**.
+- Type your username (domain\\user) and password, and then click **Sign in**.
 
 Outlook Web App will load in the window.
 
@@ -575,7 +575,7 @@ To test the AD FS claims for EAC:
 
 2. In the browser window, if you get a certificate error, just continue on to the ECP website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-3. Type your user name (domain\\user) and password, and then click **Sign in**.
+3. Type your username (domain\\user) and password, and then click **Sign in**.
 
 4. EAC should load in the window.
 

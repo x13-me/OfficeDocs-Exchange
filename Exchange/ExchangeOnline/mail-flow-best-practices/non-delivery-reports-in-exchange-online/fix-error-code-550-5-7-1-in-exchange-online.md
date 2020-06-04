@@ -57,7 +57,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
+  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
    To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
@@ -79,7 +79,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=330039).
+  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
    To resolve the issue for the sender, approve their message, or add them to the group.
 
@@ -133,7 +133,7 @@ To remove the restriction on the sender's source email system, forward the NDR m
 
 If your domain isn't fully enrolled in Office 365, try the following steps:
 
-- Verify your domain appears as **Active** in the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+- Verify your domain appears as **Active** in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
 
 - For information about adding your domain to Office 365, see [Domains in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
 
@@ -159,7 +159,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
 - If your domain is part of a hybrid deployment between on-premises Exchange and Exchange Online, the Hybrid Configuration Wizard should automatically configure the required connectors for mail flow. Even so, you can use the steps in this section to verify the connector settings.
 
-  1. Open the Office 365 portal at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
+  1. Open the Microsoft 365 admin center at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
 
   2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
 

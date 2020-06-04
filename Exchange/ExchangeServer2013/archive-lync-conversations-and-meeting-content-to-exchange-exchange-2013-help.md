@@ -30,7 +30,7 @@ See the following topics for step-by-step instructions for placing a user on hol
 
 - [Place a mailbox on Litigation Hold](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)
 
-For additional management tasks related to archiving, see [Manage In-Place Archives in Exchange 2013](https://technet.microsoft.com/library/49ef4a3e-d209-4fb2-80a3-6132b0f69bd0.aspx).
+For additional management tasks related to archiving, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md).
 
 ## More information
 

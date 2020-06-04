@@ -91,7 +91,7 @@ The following steps are necessary to prepare your organization for the migration
 
 3. Rename any public folders that contain a backslash (**\\**) in their name. Otherwise, those public folders may not get migrated correctly.
 
-4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
+4. You need to have the migration feature **PAW** enabled for your Office 365 organization. To verify this, run the following command in Exchange Online PowerShell:
 
    ```PowerShell
    Get-MigrationConfig
@@ -199,7 +199,7 @@ In the following command:
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-- **Credential** is the Exchange Online user name and password.
+- **Credential** is the Exchange Online username and password.
 
 ```PowerShell
 .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
@@ -222,7 +222,7 @@ In the following command:
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-- **Credential** is the Exchange Online user name and password.
+- **Credential** is the Exchange Online username and password.
 
 ```PowerShell
 .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
@@ -378,7 +378,7 @@ On your Exchange 2016 or Exchange 2019 server, run the following command. In thi
 
 - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-- **Credential** is the Exchange Online user name and password.
+- **Credential** is the Exchange Online username and password.
 
 ```PowerShell
 .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)

@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 organization administrator or a compliance officer signed in to an user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>
@@ -83,8 +83,8 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use eDi
 
 ## More information
 
-  - You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
+- You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
 
-  - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
+- You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
-  - You can configure an Exchange hybrid deployment using the Hybrid Configuration Wizard in Exchange 2013. For a customized, step-by-step hybrid deployment configuration checklist, see the [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
+- You can configure an Exchange hybrid deployment using the Mail migration advisor. For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).

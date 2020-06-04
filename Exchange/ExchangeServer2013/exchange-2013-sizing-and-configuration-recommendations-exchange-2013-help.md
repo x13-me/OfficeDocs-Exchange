@@ -164,9 +164,9 @@ For all protocols, Exchange 2013 does not require session affinity between a giv
 
 A hardware or software load balancer should be used to manage all inbound traffic to Client Access servers. The selection of the target server can be determined with methods such as "round-robin," in which each inbound connection goes to the next target server in a circular list, or with "least connections," in which the load balancer sends each new connection to the server that has the fewest established connections at that time. These methods are detailed further in [Load balancing](load-balancing-exchange-2013-help.md). You should also consider the following:
 
-  - Round-robin has the problem of slow convergence with long-lived connections (like RPC/HTTP). As new computers are brought online, the balance of connections served across the target computers will take a very long time to converge.
+- Round-robin has the problem of slow convergence with long-lived connections (like RPC/HTTP). As new computers are brought online, the balance of connections served across the target computers will take a very long time to converge.
 
-  - With the "least connections" method, be mindful it's possible for a Client Access server to become overloaded and unresponsive during a Client Access server outage or during patching maintenance. In the context of Exchange performance, authentication is an expensive operation.
+- With the "least connections" method, be mindful it's possible for a Client Access server to become overloaded and unresponsive during a Client Access server outage or during patching maintenance. In the context of Exchange performance, authentication is an expensive operation.
 
 Due to a number of limitations with Windows Network Load Balancing (NLB) in an Exchange 2013 environment, detailed in [Load balancing](load-balancing-exchange-2013-help.md), we do not recommend using Windows NLB.
 
@@ -180,7 +180,7 @@ Configure the DB copy activation preference and the "MaximumPreferredActiveDatab
 
 The RedistributeActiveDatabases.ps1 script will rebalance active databases across the DAG nodes.
 
-Consider enforcing strict item count limits that match Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](https://go.microsoft.com/fwlink/p/?linkid=398779).
+Consider enforcing strict item count limits that match Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limit).
 
 ## Pagefile
 
@@ -194,13 +194,13 @@ If you need to get a full kernel dump, then use Microsoft Knowledge Base article
 
 ## Outlook Mode
 
-Cached mode is recommended. To understand the benefit of using cached mode, see [Choose between Cached Exchange Mode and Online Mode for Outlook 2013](https://go.microsoft.com/fwlink/p/?linkid=524045).
+Cached mode is recommended. To understand the benefit of using cached mode, see [Choose between Cached Exchange Mode and Online Mode for Outlook 2013](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode).
 
 It is important to note that performance can be affected by both server add-ins and Outlook third-party add-ins. When using online mode, clients can expect some performance issues from third-party add-ins, high item counts, restricted views, the number of users accessing the mailbox, among other factors. Legacy clients can experience more impact by high item counts and performance than Outlook 2013 will.
 
 If the primary reason that an organization has Outlook configured in online mode is for security concerns, consider using BitLocker instead.
 
-Outlook 2013 offers a new "Sync Slider" feature to minimize the download time and the size of the OST file. Please refer to [Configure Cached Exchange Mode in Outlook 2013](https://go.microsoft.com/fwlink/p/?linkid=390456) for more information.
+Outlook 2013 offers a new "Sync Slider" feature to minimize the download time and the size of the OST file. Please refer to [Configure Cached Exchange Mode in Outlook 2013](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode) for more information.
 
 Check monthly for Outlook clients updates that are supported in your environment.
 
@@ -208,12 +208,12 @@ Check monthly for Outlook clients updates that are supported in your environment
 
 As a best practice, uninstall or disable third-party software while troubleshooting Exchange performance. The following list contains the types of third-party software that Microsoft support has most often seen affecting Exchange 2013 performance.
 
-  - Anti-virus solutions
+- Anti-virus solutions
 
-  - Intrusion prevention software
+- Intrusion prevention software
 
-  - Backup software
+- Backup software
 
-  - Auditing software, for both files and users
+- Auditing software, for both files and users
 
-  - Archiving solutions
+- Archiving solutions

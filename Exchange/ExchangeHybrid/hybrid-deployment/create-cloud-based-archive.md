@@ -29,7 +29,7 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 - The user account must be assigned an Exchange Online Archiving for Exchange Server license. The steps for assigning a license are included in the procedures in Step 1.
 
-- After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Office 365. By default, directory synchronization runs once every 30 minutes.
+- After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Microsoft 365 or Office 365. By default, directory synchronization runs once every 30 minutes.
 
 ## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox
 
@@ -45,7 +45,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox**.
 
-3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://technet.microsoft.com/library/51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174.aspx).
+3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://docs.microsoft.com/Exchange/recipients/create-user-mailboxes).
 
 4. Click **More options** to enable a cloud-based archive mailbox.
 
@@ -57,7 +57,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
    Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
-7. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Office 365.
+7. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Microsoft 365 or Office 365.
 
     > [!TIP]
     > In the Microsoft 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
@@ -155,7 +155,7 @@ After directory synchronization provisions the cloud-based archive, the _Archive
 
 ## (Optional) Run directory synchronization
 
-As previously explained, the cloud-base archive mailbox is created by the process of directory synchronization. By default, your on-premises Active Directory is synchronized with Azure AD in Office 365 once every 30 minutes. You can see when the last time directory synchronization occurred by going to **Health** \> **Directory sync status** in the Microsoft 365 admin center.
+As previously explained, the cloud-base archive mailbox is created by the process of directory synchronization. By default, your on-premises Active Directory is synchronized with Azure AD in Microsoft 365 or Office 365 once every 30 minutes. You can see when the last time directory synchronization occurred by going to **Health** \> **Directory sync status** in the Microsoft 365 admin center.
 
 Sometimes you may want to start directory synchronization to provision the cloud-based archive mailbox before the next scheduled synchronization. You can do this by running the following PowerShell command on the server where Azure AD Connect is installed.
 

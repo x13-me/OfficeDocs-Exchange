@@ -27,7 +27,7 @@ This article provides a comparison of public folders and Microsoft 365 Groups, a
 
 ## What are public folders?
 
-[Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx) contain different kinds of data and are organized in a hierarchical structure.
+[Public Folders](public-folders.md) contain different kinds of data and are organized in a hierarchical structure.
 
 Public folders are not recommended for the following situations:
 
@@ -122,8 +122,8 @@ Select the appropriate link below for step-by-step instructions on running a bat
 
 - [Use batch migration to migrate Exchange Online public folders to Microsoft 365 Groups](batch-migration-of-exchange-online-public-folders.md)
 
-- [Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups](https://technet.microsoft.com/library/mt843875(v=exchg.150).aspx)
+- [Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help)
 
-- [Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups](https://technet.microsoft.com/library/mt843873(v=exchg.150).aspx)
+- [Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help)
 
 - [Use batch migration to migrate Exchange 2016 public folders to Microsoft 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups)
