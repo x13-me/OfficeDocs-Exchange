@@ -24,7 +24,7 @@ ms.service: exchange-online
 Exchange Online includes spam filtering capabilities that help protect your network from spam transferred through email. Administrators do not need to set up or maintain these filtering technologies, which are enabled by default. However, administrators can make company-specific filtering customizations in the Exchange admin center (EAC), all using a screen reader and keyboard shortcuts.
 
 > [!NOTE]
-> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ## Get started
 
@@ -36,17 +36,25 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
 Exchange Online is included in several different subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 or Office 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Microsoft 365 or Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Hygiene Management](https://docs.microsoft.com/exchange/hygiene-management-exchange-2013-help) admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+=======
 To complete the tasks covered in this topic, see [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management and Hygiene Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+>>>>>>> 7f93456690c21615934b270f29f5c34bfa89f72d
+=======
+To complete the tasks covered in this topic, see [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the Organization Management and Hygiene Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+>>>>>>> d06c7e27f5b0dcf2644b792db0af336216d17ae9
 
 ## Customize your spam filter settings
 

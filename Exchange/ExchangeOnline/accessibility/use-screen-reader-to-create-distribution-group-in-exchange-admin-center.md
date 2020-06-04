@@ -25,7 +25,7 @@ Using a screen reader and keyboard shortcuts, you can create a new distribution 
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Microsoft 365 or Office 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
 
 **Notes**:
 
@@ -45,7 +45,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 

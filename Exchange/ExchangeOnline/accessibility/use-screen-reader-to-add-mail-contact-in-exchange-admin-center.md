@@ -25,7 +25,7 @@ Using a screen reader with Exchange Online, you can use the Exchange admin cente
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Microsoft 365 or Office 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
 
 ### Use your browser and keyboard to navigate in the EAC
 
@@ -33,13 +33,13 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
 Exchange Online is included in several different subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 or Office 365 business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 

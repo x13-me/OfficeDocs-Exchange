@@ -6,7 +6,7 @@ ms.author: v-mapenn
 ms.assetid: 3d8f2b49-c27e-40c9-808b-4bc48f3cdb07
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) that use Office 365 Message Encryption (OME) to encrypt and decrypt messages in Exchange Online.
+description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) that use Microsoft 365 or Office 365 Message Encryption to encrypt and decrypt messages in Exchange Online.
 title: Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
@@ -21,13 +21,13 @@ ms.service: exchange-online
 
 # Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online
 
-In the Exchange admin center (EAC) in Exchange Online, you can create mail flow rules (also known as transport rules) to enable or disable Office 365 Message Encryption. This lets you encrypt outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
+In the Exchange admin center (EAC) in Exchange Online, you can create mail flow rules (also known as transport rules) to enable or disable Microsoft 365 or Office 365 Message Encryption. This lets you encrypt outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
- **Note**: To learn more about message encryption, go to [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption). Your organization must have [Set up new Office 365 Message Encryption capabilities](https://docs.microsoft.com/Office365/securitycompliance/set-up-new-message-encryption-capabilities) to complete the tasks in this topic.
+ **Note**: To learn more about message encryption, go to [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption). Your organization must have [Set up new Microsoft 365 or Office 365 Message Encryption capabilities](https://docs.microsoft.com/Office365/securitycompliance/set-up-new-message-encryption-capabilities) to complete the tasks in this topic.
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to perform this task. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Microsoft 365 or Office 365 subscription plan and admin role to perform this task. Then, open the EAC and get started.
 
 ### Use your browser and keyboard to navigate in the EAC
 
@@ -35,7 +35,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -88,7 +88,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
    1. In the **Do the following** drop-down box, to select the **Modify the message security** option, press the Down Arrow key until you hear "Modify the message security." Press Enter.
 
-   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Apply Office 365 Message Encryption** option, press the Down Arrow key until you hear "Apply Office 365 Message Encryption." Press Enter.
+   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Apply Microsoft 365 or Office 365 Message Encryption** option, press the Down Arrow key until you hear "Apply Microsoft 365 or Office 365 Message Encryption." Press Enter.
 
 10. To save the new rule, move the focus to the **Save** button by pressing the Tab key until you hear "Save button." Press Enter.
 
@@ -130,7 +130,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
    1. In the **Do the following** drop-down box, to select the **Modify the message security** option, press the Down Arrow key until you hear "Modify the message security." Press Enter.
 
-   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Remove Office 365 Message Encryption** option, press the Down Arrow key until you hear "Remove Office 365 Message Encryption." Press Enter.
+   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Remove Microsoft 365 or Office 365 Message Encryption** option, press the Down Arrow key until you hear "Remove Microsoft 365 or Office 365 Message Encryption." Press Enter.
 
 10. To save the new rule, move the focus to the **Save** button by pressing the Tab key until you hear "Save button." Press Enter.
 
