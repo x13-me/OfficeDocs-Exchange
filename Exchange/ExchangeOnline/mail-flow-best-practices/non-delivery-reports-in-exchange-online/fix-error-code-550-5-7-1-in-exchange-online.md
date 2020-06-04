@@ -57,7 +57,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
+  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
    To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
@@ -79,7 +79,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=330039).
+  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
    To resolve the issue for the sender, approve their message, or add them to the group.
 

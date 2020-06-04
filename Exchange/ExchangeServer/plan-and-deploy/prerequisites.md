@@ -33,7 +33,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 >
 > - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
 >
-> - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://aka.ms/EDA).
+> - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/).
 
 ## What do you need to know before you begin?
 

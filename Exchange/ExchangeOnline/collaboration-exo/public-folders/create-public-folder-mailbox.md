@@ -23,7 +23,7 @@ manager: serdars
 Before you can create a public folder, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information plus the content for public folders. The first public folder mailbox you create will be the primary hierarchy mailbox, which contains the only writable copy of the hierarchy. Any additional public folder mailboxes you create will be secondary mailboxes, which contain a read-only copy of the hierarchy.
 
 > [!NOTE]
-> For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
+> For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 For additional management tasks related to public folders in Exchange Online, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).
 
