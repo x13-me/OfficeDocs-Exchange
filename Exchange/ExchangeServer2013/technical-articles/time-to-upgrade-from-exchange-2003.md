@@ -82,7 +82,7 @@ You've got two options to consider when upgrading your Exchange 2003 organizatio
 
 - Upgrade your current on-premises organization.
 
-To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](https://aka.ms/eda).
+To help simplify your deployment, whether you're moving your organization to the cloud or upgrading your on-premises organization, we created the Exchange Server Deployment Assistants (ExDeploy) to help guide you through the upgrade process. For more information about the ExDeploy tools, see [Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/).
 
 ## Go to the cloud with Office 365
 
