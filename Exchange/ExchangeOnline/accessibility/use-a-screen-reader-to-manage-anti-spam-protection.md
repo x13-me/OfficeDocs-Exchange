@@ -87,11 +87,11 @@ To complete the steps for spam filter customizations covered in this topic, move
 
 2. To move the focus to each of the following three elements of the user interface, press the Tab key:
 
- - The **Name** column. You hear "Name, Column header..
+   - The **Name** column. You hear "Name, Column header..
 
- - The list of spam filters in the **Name** column. You hear the name of the first spam filter followed by "Button..
+   - The list of spam filters in the **Name** column. You hear the name of the first spam filter followed by "Button..
 
- - The first spam filter in the list. You hear the name of the first spam filter followed by "Row."
+   - The first spam filter in the list. You hear the name of the first spam filter followed by "Row."
 
 3. To move the focus to one of your spam filters, press the Up Arrow or Down arrow key until you hear the name of the filter you want to edit. Press Enter.
 
