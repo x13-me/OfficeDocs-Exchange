@@ -92,7 +92,7 @@ Listed below are software load balancers that have been tested by the vendor and
 
 ## Featured resources
 
-[Exchange Server Deployment Assistant](https://aka.ms/EDA)
+[Exchange Server Deployment Assistant](https://assistants.microsoft.com/)
 
 [Experience Exchange Server 2010 through virtual labs](https://technet.microsoft.com/virtuallabs?id=y/gsi96hjlm)
 

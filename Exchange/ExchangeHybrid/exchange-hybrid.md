@@ -161,7 +161,7 @@ Before moving mailboxes to the cloud, you should:
 
 - Calculate the average expected transfer speed, and plan your mailbox moves accordingly.
 
-Learn more at: [Networking](https://go.microsoft.com/fwlink/p/?LinkId=280178)
+Learn more at: [Networking](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/networking).
 
 ### Unified Messaging
 

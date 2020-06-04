@@ -359,18 +359,10 @@ For information about how to export a mail flow rule collection to an XML file, 
 
 ## Need more help?
 
-Resources for Exchange Online:
-
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md)
 
 [Mail flow rule actions in Exchange Online](mail-flow-rule-actions.md)
 
-[Journal, Transport, and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-
-Resources for Exchange Online Protection:
-
-[Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)
-
-[Journal, Transport, and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -249,7 +249,7 @@ Depending on the migration method, you can try the following verification tests:
 
 - **IMAP migrations**: Prepopulate a source mailbox with sample data. Then from the internet (outside your on-premises network), connect to the source mailbox by using a standard IMAP email client such as Microsoft Outlook, and then measure network performance by determining how long it takes to download all the data from the source mailbox. The throughput should be similar to what customers can get by using the IMAP migration tool in Office 365, given that there are no other constraints.
 
-- **Cutover and staged Exchange migrations**: Prepopulate a source mailbox with sample data. Then, from the internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cache mode](https://go.microsoft.com/fwlink/p/?LinkId=623596). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
+- **Cutover and staged Exchange migrations**: Prepopulate a source mailbox with sample data. Then, from the internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cached mode](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
 
 There is some overhead during an actual IMAP, cutover, or staged Exchange migration. The actual throughput, however, should be similar to the results of these verification tests.
 
@@ -376,7 +376,7 @@ Note that the client and service process times are similar, but solution A takes
 
 For third-party migration solutions that use the RPC over HTTP Protocol, here's a good way to measure potential migration performance:
 
-1. From the migration server, connect to the Office 365 mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you aren't connecting by using [cache mode](https://go.microsoft.com/fwlink/p/?LinkID=623596).
+1. From the migration server, connect to the Office 365 mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you aren't connecting by using [cached mode](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode).
 
 2. Import a large .pst file with sample data to the Office 365 mailbox.
 
