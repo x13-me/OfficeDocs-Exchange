@@ -61,7 +61,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
 6. As the focus moves to the **Apply this rule if** drop-down box, you hear "Apply this rule if, Combo box." Press the Down Arrow or Up Arrow key until you hear the condition you want to select. Press Enter. As the focus moves to the first user interface (UI) element in the pop-up window that opens for the selected condition, you hear the name of the pop-up window followed by the name of the first UI element in the window. The following table gives you an overview of the UI elements in each condition's pop-up window.
 .
-   |**Condition**|**UI elements in the condition's pop-up window**|
+   |Condition|UI elements in the condition's pop-up window|
    |:-----|:-----|
    |• The sender is <br/>• The recipient is <br/>• The sender is a member of <br/>• The recipient is a member of|• **Search**, **Refresh**, and **More** buttons. <br/>• **Display Name** and **Email Address** column headers. <br/>• List of names and email addresses. <br/>• **Add** button and text box that includes the selected names. <br/>• **Check names** button and text box in which you type the name you want to check. <br/>• **OK** and **Cancel** buttons.|
    |• The sender is located <br/>• The recipient is located|• Drop-down box that opens a list of locations. <br/>• OK and Cancel buttons.|
@@ -75,7 +75,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
 8. As the focus moves to the **Do the following** drop-down box, you hear "Do the following, Combo box." Press the Down Arrow or Up Arrow key until you hear the action you want to select. Press Enter. As the focus moves to the first UI element in the pop-up window that opens for the selected action, you hear the name of the pop-up window followed by the name of the first UI element in the window. The following table gives you an overview of the UI elements in each action's pop-up window.
 
-   |**Action**|**UI elements in the pop-up window**|
+   |Action|UI elements in the pop-up window|
    |:-----|:-----|
    |• Forward the message for approval to <br/>• Redirect the message to <br/>• Bcc the message to|• **Search**, **Refresh**, and **More** buttons. <br/>• **Display Name** and **Email Address** column headers. <br/>• List of names and email addresses. <br/>• **Add** button and text box that includes the selected names. <br/>• **Check names** button and text box in which you type the name you want to check. <br/>• **OK** and **Cancel** buttons.|
    |Reject the message with the explanation|• Text box in which you type the explanation OK <br/>• **OK** and **Cancel** buttons.|
