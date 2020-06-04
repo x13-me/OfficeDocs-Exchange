@@ -110,6 +110,18 @@ Here are some examples of the conditions and exceptions you can use.
 
 For a complete list of conditions and exceptions that you can use to target the disclaimer, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
 
+## Limitations of organization wide signatures
+
+You can't do the following with Exchange Server signatures:
+  
+- Insert the signature directly under the latest email reply or forward
+    
+- Display server-side email signatures in users' Sent Items folders
+    
+- Skip lines which contain variables that couldn't be updated (e.g. because the value wasn't provided for a user)
+    
+To gain these and other capabilities, use a third-party tool. Please do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities.
+
 ## For more information
 <a name="MoreInfo"> </a>
 
