@@ -29,7 +29,7 @@ manager: serdars
 Deciding on the best migration path of your users' email to Office 365 can be difficult. This article gives guidance based on your current email system and other factors, such as how quickly you want to migrate to Office 365. Your migration performance will vary based on your network, mailbox size, migration speed, and so on.
 
 > [!IMPORTANT]
-> This topic is intended for global administrators. If you want to migrate email for a single account, see [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) instead.
+> This topic is intended for global administrators. If you want to migrate email for a single account, see [Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) instead.
 
 ## How do I decide which method to use?
 
@@ -43,7 +43,7 @@ You, as global administrator, can migrate mailboxes from an [Exchange Server](de
 For migrations from an existing on-premises Exchange Server environment, you can migrate all email, calendar items, tasks and contacts from user mailboxes to Office 365. The available methods are [cutover](cutover-migration-to-office-365.md), [staged](perform-a-staged-migration/perform-a-staged-migration.md), and [Exchange Hybrid](https://docs.microsoft.com/exchange/mail-migration-jump) migrations. These migration methods copy over all mail data, including contacts, calendar items, and tasks. You can also use the Internet Message Access Protocol ([IMAP](migrating-imap-mailboxes/migrating-imap-mailboxes.md)) migration from Exchange servers, and if your Exchange server is older than Exchange 2003, IMAP migration is your only option. Note that IMAP migration will copy over only email data.
 
 > [!IMPORTANT]
-> Staged and Exchange Hybrid migrations require that you also set up directory synchronization. For more information, see [Office 365 integration with on-premises environments](https://support.office.com/article/263faf8d-aa21-428b-aed3-2021837a4b65).
+> Staged and Exchange Hybrid migrations require that you also set up directory synchronization. For more information, see [Office 365 integration with on-premises environments](https://docs.microsoft.com/office365/enterprise/office-365-integration).
 
 For migration recommendations, expand one of the following sections based on your source system:
 
