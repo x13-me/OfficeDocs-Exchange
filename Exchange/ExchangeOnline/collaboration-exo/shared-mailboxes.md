@@ -72,7 +72,7 @@ To learn how users can access and use shared mailboxes, check out the following:
 
 - [Open and use a shared mailbox in Outlook on the web for business](https://go.microsoft.com/fwlink/p/?LinkId=834766)
 
-- [Open and use a shared mailbox in Outlook mobile](https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f)
+- [Open and use a shared mailbox in Outlook mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f)
 
 ## Use Exchange Online PowerShell to create a shared mailbox
 
