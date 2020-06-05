@@ -114,7 +114,7 @@ For a complete list of conditions and exceptions that you can use to target the 
 
 You can't do the following with Exchange Server signatures:
   
-- Insert the signature directly under the latest email reply or forward
+- Insert the signature directly under the latest email reply or forward.
     
 - Display server-side email signatures in users' Sent Items folders
     
