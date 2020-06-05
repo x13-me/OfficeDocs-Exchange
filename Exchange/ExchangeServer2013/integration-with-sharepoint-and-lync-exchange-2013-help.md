@@ -27,9 +27,9 @@ Archiving of email and documents, preserving them for the duration required to m
 
 With Lync Server 2013 deployed in an organization with Exchange 2013, you can configure Lync to archive instant messaging and on-line meeting content such as shared presentations or documents in the user's Exchange 2013 mailbox. Archiving Lync data in Exchange 2013 allows you to apply retention policies to it. Archived Lync content also surfaces in any eDiscovery searches. For more details about Lync Archiving and how to deploy it, see the following topics:
 
-  - [Planning for Archiving](https://go.microsoft.com/fwlink/p/?linkid=265005)
+- [Planning for Archiving](https://docs.microsoft.com/lyncserver/lync-server-2013-planning-for-archiving)
 
-  - [Deploying Archiving](https://go.microsoft.com/fwlink/p/?linkid=265006)
+- [Deploying Archiving](https://docs.microsoft.com/lyncserver/lync-server-2013-deploying-archiving)
 
 ## Search Exchange, SharePoint and Lync data using the SharePoint 2013 eDiscovery Center
 
@@ -37,15 +37,15 @@ Exchange 2013 allows SharePoint 2013 to search Exchange mailbox content using Fe
 
 For more details, see the following topics:
 
-  - [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+- [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
+- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
 
-  - [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
+- [Configure eDiscovery in SharePoint 2013](https://docs.microsoft.com/SharePoint/governance/configure-ediscovery-0)
 
-  - [What's new in eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=275091)
+- [What's new in eDiscovery in SharePoint Server 2013](https://support.microsoft.com/office/2229681c-8a19-4efb-a59a-fc9ece9e9557)
 
-  - [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md)
+- [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md)
 
 ## Site mailboxes
 
@@ -55,15 +55,15 @@ Under the covers of a site mailbox, the content is kept where it belongs. Exchan
 
 Site mailboxes are provisioned and managed from SharePoint 2013. For more details, see the following topics:.
 
-  - [Site mailboxes](site-mailboxes-exchange-2013-help.md)
+- [Site mailboxes](site-mailboxes-exchange-2013-help.md)
 
-  - [Configure site mailboxes in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkid=258264)
+- [Configure site mailboxes in SharePoint Server 2013](https://docs.microsoft.com/SharePoint/administration/configure-site-mailboxes-in-sharepoint)
 
 ## Unified contact store
 
 Unified contact store (UCS) is a feature that provides a consistent contact experience across Microsoft Office products. This feature enables users to store all contact information in their Exchange 2013 mailbox so that the same contact information is available globally across Lync, Exchange, Outlook and Outlook Web App.
 
-After Lync Server 2013 is installed in an environment with Exchange 2013 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from Lync Server 2013 to Exchange 2013. For details, see [Planning and Deploying Unified Contact Store](https://go.microsoft.com/fwlink/p/?linkid=275092).
+After Lync Server 2013 is installed in an environment with Exchange 2013 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from Lync Server 2013 to Exchange 2013. For details, see [Planning and Deploying Unified Contact Store](https://docs.microsoft.com/lyncserver/lync-server-2013-planning-and-deploying-unified-contact-store).
 
 ## User photos
 

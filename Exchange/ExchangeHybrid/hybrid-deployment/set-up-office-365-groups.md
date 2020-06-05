@@ -76,9 +76,9 @@ Before you start, make sure that you've done the following:
 
 ## Configure a group domain
 
-The primary SMTP domain of an Office 365 Group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](https://support.office.com/article/Multi-domain-support-for-Office-365-Groups-Admin-help-7cf5655d-e523-4bc3-a93b-3ccebf44a01a).
+The primary SMTP domain of an Office 365 Group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
-1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Office 365, check out [Add users and domains to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Office 365, check out [Add users and domains to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Office 365.
 
@@ -93,7 +93,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1<sup/>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
+   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group.
@@ -174,4 +174,4 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as an Office 365 Group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
-- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to Office 365's AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to Office 365's AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to Office 365's AutoDiscover URL. Check out [Multi-domain support for Microsoft 365 Groups](https://support.office.com/article/Multi-domain-support-for-Office-365-Groups-Admin-help-7cf5655d-e523-4bc3-a93b-3ccebf44a01a) for more details.
+- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to Office 365's AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to Office 365's AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to Office 365's AutoDiscover URL. Check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.

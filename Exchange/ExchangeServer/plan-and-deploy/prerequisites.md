@@ -33,7 +33,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 >
 > - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
 >
-> - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://aka.ms/EDA).
+> - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/).
 
 ## What do you need to know before you begin?
 
@@ -73,7 +73,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -108,7 +108,7 @@ When you use one of these options, you don't need to restart the computer after 
 
 1. Install the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -187,7 +187,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -222,7 +222,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
@@ -254,7 +254,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -278,7 +278,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -304,7 +304,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -334,7 +334,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 ### Exchange 2016 management tools on Windows 8.1
 
-1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
 2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 

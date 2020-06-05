@@ -38,7 +38,7 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 
 - Estimated time to complete: 5 minutes
 
-- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](https://go.microsoft.com/fwlink/p/?linkid=282082). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
+- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
 
 - You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 

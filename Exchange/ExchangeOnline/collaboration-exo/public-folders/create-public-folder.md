@@ -27,7 +27,7 @@ Public folders are designed for shared access and provide an easy and effective 
 By default, a public folder inherits the settings of its parent folder, including the permissions settings.
 
 > [!NOTE]
-> For more information about the storage quotas and limits for public folders in Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
+> For more information about the storage quotas and limits for public folders in Exchange Online, see [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## What do you need to know before you begin?
 

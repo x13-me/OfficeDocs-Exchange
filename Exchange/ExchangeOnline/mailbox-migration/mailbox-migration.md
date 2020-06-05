@@ -30,7 +30,7 @@ manager: serdars
 
 Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [import their own email](mailbox-migration.md#Import), contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [work with a partner to migrate email](mailbox-migration.md#Partner).
 
-Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](office-365-migration-best-practices.md) for Exchange Online to make sure you get the performance and behavior you expect after migration.
+Before you start an email migration, review [limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and [best practices](office-365-migration-best-practices.md) for Exchange Online to make sure you get the performance and behavior you expect after migration.
 
 See [Decide on a migration path](decide-on-a-migration-path.md) or [Exchange migration advisors](https://aka.ms/office365setup) for help with choosing the best option for your organization.
 
@@ -71,7 +71,7 @@ There are three types of email migrations that can be made from an Exchange Serv
 
   - You have Exchange 2013.
 
-    For more information, see [Plan an Exchange Online hybrid deployment in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=517633).
+    For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).
 
 ## Use Office 365 Import Service to migrate PST-files
 <a name="StagedorCutover"> </a>
@@ -98,7 +98,7 @@ To migrate email from another mail system, see [Migrate your IMAP mailboxes to O
 ## Have users import their own email
 <a name="Import"> </a>
 
-Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) to learn how.
+Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 ![A user can import email, contacts, and calendar information to Office 365.](media/86255b6b-a1bf-413d-b3f2-95ad43a628c0.png)
 

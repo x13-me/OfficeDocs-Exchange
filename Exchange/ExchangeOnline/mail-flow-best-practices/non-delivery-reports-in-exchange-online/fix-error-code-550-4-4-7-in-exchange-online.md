@@ -69,7 +69,7 @@ If the admins in the destination domain determine the problem isn't on their end
 
 Here are some steps for you to try:
 
-- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://support.office.com/article/854b6b2b-0255-4089-8019-b765cff70377.aspx).
+- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/dns-basics).
 
 - **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
