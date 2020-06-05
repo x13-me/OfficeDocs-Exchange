@@ -40,7 +40,7 @@ If you want to learn about the types of recipients that are available in Exchang
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
-- If you're using room or equipment mailboxes in Office 365, see [this article](https://support.office.com/article/9f518a6d-1e2c-4d44-93f3-e19013a1552b).
+- If you're using room or equipment mailboxes in Office 365, see [this article](https://docs.microsoft.com/microsoft-365/admin/manage/room-and-equipment-mailboxes).
 
 > [!IMPORTANT]
 > If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud. > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

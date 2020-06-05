@@ -23,7 +23,7 @@ The *site mailbox* is a new concept in Microsoft Exchange 2013 that attempts to 
 
 Site mailboxes require Exchange 2013 and SharePoint Server 2013 integration and configuration. For more information about how to configure your Exchange 2013 organization to work with your SharePoint Server 2013 organization, see the following topics:
 
-- [Configure site mailboxes in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkid=258264).
+- [Configure site mailboxes in SharePoint Server 2013](https://docs.microsoft.com/SharePoint/administration/configure-site-mailboxes-in-sharepoint).
 
 - [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md)
 
