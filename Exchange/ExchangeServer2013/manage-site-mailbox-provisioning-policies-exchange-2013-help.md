@@ -80,7 +80,7 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -Proh
 
 ## Configure a site mailbox name prefix
 
-When a new site mailbox is created, by default its email address will have a prefix. The email address prefix allows you to easily search for and query site mailboxes and may help users recognize them as well. If you choose, you can disable the prefix, or change the prefix for your tenant in Office 365 or for a given forest in an on-premises deployment. With the default prefix behavior, if your site mailbox is created in Office 365, the default prefix is **SMO-**. Alternatively, if your site mailbox is created in your on-premises deployment, the prefix is **SM-**. The default behavior differs between these premises so that hybrid customers will not experience conflicts if site mailboxes are created in both locations and are then synced cross-premises.
+When a new site mailbox is created, by default its email address will have a prefix. The email address prefix allows you to easily search for and query site mailboxes and may help users recognize them as well. If you choose, you can disable the prefix, or change the prefix for your organization in Microsoft 365 or Office 365 or for a given forest in an on-premises deployment. With the default prefix behavior, if your site mailbox is created in Microsoft 365 or Office 365, the default prefix is **SMO-**. Alternatively, if your site mailbox is created in your on-premises deployment, the prefix is **SM-**. The default behavior differs between these premises so that hybrid customers will not experience conflicts if site mailboxes are created in both locations and are then synced cross-premises.
 
 This example disables the prefix naming by setting the *DefaultAliasPrefixEnabled* parameter to $false.
 
@@ -98,7 +98,7 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -Defau
 ```
 
 > [!NOTE]
-> In the case of a hybrid deployment where you have Exchange on-premises and in Office 365, all cloud-based site mailboxes are created with the prefix <STRONG>SMO-</STRONG>. The prefixes are different in Office 365 and Exchange on-premises so that hybrid customers will not experience conflicts if site mailboxes are created in both locations and are then synced cross-premises.The AliasPrefix parameter takes precedence over the DefaultAliasPrefixEnabled parameter; therefore, if the <EM>AliasPrefix</EM> parameter is set to a valid, non-null string, each new site mailbox will have that string prepended to the alias.
+> In the case of a hybrid deployment where you have Exchange on-premises and in Microsoft 365 or Office 365, all cloud-based site mailboxes are created with the prefix <STRONG>SMO-</STRONG>. The prefixes are different in Microsoft 365 or Office 365 and Exchange on-premises so that hybrid customers will not experience conflicts if site mailboxes are created in both locations and are then synced cross-premises.The AliasPrefix parameter takes precedence over the DefaultAliasPrefixEnabled parameter; therefore, if the <EM>AliasPrefix</EM> parameter is set to a valid, non-null string, each new site mailbox will have that string prepended to the alias.
 
 ## Delete a site mailbox provisioning policy
 

@@ -73,7 +73,7 @@ The following list shows the types of moves that support migration endpoints:
 
   - **Cross-forest move**: Move mailboxes between two different on-premises Exchange forests. Cross-forest moves require the use of a Exchange RemoteMove endpoint.
 
-  - **Remote move**: In a hybrid deployment, a remote move involves *onboarding* or *offboarding* migrations. Remote moves require the use of a RemoteMove endpoint. Onboarding moves mailboxes from an on-premises Exchange organization to Exchange Online in Microsoft Office 365, and uses a RemoteMove endpoint as the source endpoint of the migration batch. Offboarding moves mailboxes from Exchange Online in Office 365 to an on-premises Exchange organization and uses a Exchange RemoteMove endpoint as the target endpoint of the migration batch.
+  - **Remote move**: In a hybrid deployment, a remote move involves *onboarding* or *offboarding* migrations. Remote moves require the use of a RemoteMove endpoint. Onboarding moves mailboxes from an on-premises Exchange organization to Exchange Online in Microsoft 365 or Office 365, and uses a RemoteMove endpoint as the source endpoint of the migration batch. Offboarding moves mailboxes from Exchange Online in Microsoft 365 or Office 365 to an on-premises Exchange organization and uses a Exchange RemoteMove endpoint as the target endpoint of the migration batch.
 
 The following table shows the migration endpoint types and values that you can manage in Exchange 2013.
 

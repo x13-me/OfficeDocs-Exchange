@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 The check(s) on this page will help identify some of the most common configuration challenges. You can use the automatic check(s) below to validate your configuration and help you update your environment.
 
-You'll be asked to sign-in on a new page.  If you already have an user account select **sign-in**.  You won't need an Azure ID account. You might be asked for a user account again when the checks run. Use your username@youroffice365login.domain and your password.
+You'll be asked to sign-in on a new page.  If you already have an user account select **sign-in**.  You won't need an Azure ID account. You might be asked for a user account again when the checks run. Use your *user name*\@*your Microsoft 365 or Office 365 login.domain* and your password.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ We'll check to see if you have the necessary pre-requisites on your Windows 7 x6
 <tr class="even">
 <td><p>Third-party Tools</p></td>
 <td><p>Im not sure what third-party integrations/applications I have installed in my messaging environment</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
 </tr>
 </tbody>
 </table>
