@@ -116,7 +116,7 @@ You can't do the following with Exchange Server signatures:
   
 - Insert the signature directly under the latest email reply or forward.
     
-- Display server-side email signatures in users' Sent Items folders
+- Display server-side email signatures in users' Sent Items folders.
     
 - Skip lines which contain variables that couldn't be updated (e.g. because the value wasn't provided for a user)
     
