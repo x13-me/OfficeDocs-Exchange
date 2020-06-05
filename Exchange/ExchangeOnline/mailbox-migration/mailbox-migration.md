@@ -98,7 +98,7 @@ To migrate email from another mail system, see [Migrate your IMAP mailboxes to O
 ## Have users import their own email
 <a name="Import"> </a>
 
-Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) to learn how.
+Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 ![A user can import email, contacts, and calendar information to Office 365.](media/86255b6b-a1bf-413d-b3f2-95ad43a628c0.png)
 

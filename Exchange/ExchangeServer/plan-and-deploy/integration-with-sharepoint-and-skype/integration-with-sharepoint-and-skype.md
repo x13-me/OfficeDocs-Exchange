@@ -43,9 +43,9 @@ Exchange 2016, SharePoint Server 2016, and Skype for Business Server use the sta
 
 With Exchange 2016 and Lync Server 2013 deployed in an organization, you can configure Skype for Business to archive instant message and on-line meeting content, including shared presentations or documents in the user's Exchange 2016 mailbox. Archiving Skype for Business data in Exchange 2016 allows you to apply retention policies to the data. Archived Skype for Business content also surfaces in any eDiscovery searches. For more details about Skype for Business archiving and how to deploy it, see the following topics:
 
-- [Planning for Archiving](https://go.microsoft.com/fwlink/p/?LinkId=265005)
+- [Planning for Archiving](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/archiving/archiving)
 
-- [Deploying Archiving](https://go.microsoft.com/fwlink/p/?LinkId=265006)
+- [Deploying Archiving](https://docs.microsoft.com/SkypeForBusiness/deploy/deploy-archiving/deploy-archiving)
 
 ## Preserve documents in SharePoint Server 2016
 
@@ -59,9 +59,9 @@ For more details on eDiscovery see the following topics:
 
 - [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md)
 
-- [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
+- [Configure eDiscovery in SharePoint Server](https://docs.microsoft.com/SharePoint/governance/configure-ediscovery-0)
 
-- [What's new in eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkId=275091)
+- [What's new in eDiscovery in SharePoint Server](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2016)
 
 - [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help)
 
@@ -142,7 +142,7 @@ You can provision and manage site mailboxes from SharePoint Server 2016. For mor
 
 - [Site Mailboxes](https://docs.microsoft.com/exchange/site-mailboxes-exchange-2013-help)
 
-- [Configure email integration for a SharePoint Server farm](hhttps://docs.microsoft.com/SharePoint/administration/configure-email-integration)
+- [Configure email integration for a SharePoint Server farm](https://docs.microsoft.com/SharePoint/administration/configure-email-integration)
 
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>
@@ -157,7 +157,7 @@ A user's contacts are automatically migrated to the Exchange 2016 server when th
 
 - Logs in by using a Skype for Business rich client.
 
-After you have installed SharePoint Server 2016 in an environment with Exchange 2016 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from SharePoint 2016 or Lync Server 2013 to Exchange 2016. For details, see [Planning and Deploying Unified Contact Store](https://go.microsoft.com/fwlink/p/?LinkId=275092).
+After you have installed SharePoint Server 2016 in an environment with Exchange 2016 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from SharePoint 2016 or Skype for Business Server 2015 to Exchange 2016. For details, see [Planning and Deploying Unified Contact Store](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/integrate-with-exchange/unified-contact-store).
 
 ## Manage access to high-resolution user photos
 <a name="BKMK_OAuth"> </a>
