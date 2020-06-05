@@ -118,7 +118,7 @@ You can't do the following with Exchange Server signatures:
     
 - Display server-side email signatures in users' Sent Items folders.
     
-- Skip lines which contain variables that couldn't be updated (e.g. because the value wasn't provided for a user)
+- Skip lines which contain variables that couldn't be updated (for example if the value wasn't provided for a user).
     
 To gain these and other capabilities, use a third-party tool. Please do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities.
 
