@@ -27,7 +27,7 @@ This topic shows you how to get public folders configured and running in a new o
 > [!NOTE]
 > For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 > 
-> OWA for devices refers to the old *"OWA for Android"* and *"OWA for iPhone/iPad"* applications that have since been deprecated. For more details, see [Microsoft OWA mobile apps are being retired](https://support.office.com/article/076ec122-4576-4900-bc26-937f84d25a4b).
+> OWA for devices refers to the old *"OWA for Android"* and *"OWA for iPhone/iPad"* applications that have since been deprecated. For more details, see [Microsoft OWA mobile apps are being retired](https://support.microsoft.com/office/076ec122-4576-4900-bc26-937f84d25a4b).
 > 
 > The procedure in this article guides you through the process of creating public folders for the first time.
 

@@ -59,7 +59,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 6. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify ownership.
 
-    You can also find the instructions in [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166).
+    You can also find the instructions in [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
     After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
@@ -118,7 +118,7 @@ After Azure AD connect synchronizes your users and their passwords to Office 365
 
 The status on the **Data migration** page indicates that a license is needed as shown in the figure.
 
-In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ![User status on the Data migration page indicate if a user needs a license](media/f0f211f2-be43-493e-bf6b-e9279c76d03e.png)
 

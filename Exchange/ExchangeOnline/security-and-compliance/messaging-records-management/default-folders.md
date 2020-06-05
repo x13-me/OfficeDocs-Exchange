@@ -46,7 +46,7 @@ You can create RPTs for the default folders shown in the following table.
 |RSS Feeds|This default folder contains RSS feeds.|
 |Recoverable Items|This is a hidden folder in the Non-IPM sub-tree. It contains the Deletions, Versions, Purges, DiscoveryHolds, and Audits sub-folders. Retention tags for this folder move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox. You can assign only the **Move To Archive** retention action to tags for this folder. To learn more, see [Recoverable Items folder in Exchange Online](../recoverable-items-folder/recoverable-items-folder.md).|
 |Sent Items|This default folder is used to store messages that have been submitted to a Hub Transport server.|
-|Sync Issues|This folder contains synchronization logs. To learn more, see [Synchronization error folders](https://go.microsoft.com/fwlink/p/?linkId=198215).|
+|Sync Issues|This folder contains synchronization logs.|
 |Tasks|This default folder is used to store tasks. To create an RPT for the Tasks folder, you have to use Exchange Online PowerShell. For more information, see [New-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/new-retentionpolicytag). After the RPT for the Tasks folder is created, you can manage it by using the Exchange admin center.|
 
 ## More Info

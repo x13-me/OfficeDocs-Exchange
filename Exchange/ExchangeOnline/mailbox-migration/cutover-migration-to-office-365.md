@@ -92,7 +92,7 @@ Expand the sections below and follow the steps.
 Before you migrate mailboxes to Office 365 by using a cutover migration, there are a few changes to your Exchange Server environment you must complete first.
 
 > [!NOTE]
-> If you have turned on directory synchronization, you need to turn it off before you can perform a cutover migration. You can do this by using PowerShell. For instructions, see [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+> If you have turned on directory synchronization, you need to turn it off before you can perform a cutover migration. You can do this by using PowerShell. For instructions, see [Turn off directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
 
 1. **Configure Outlook Anywhere on your on-premises Exchange Server**: The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. Outlook Anywhere is automatically configured for Exchange 2013. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following:
 
@@ -154,7 +154,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 6. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify ownership.
 
-   You can also find the instructions in [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx).
+   You can also find the instructions in [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
    After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
@@ -266,7 +266,7 @@ Most email systems ask for an update each hour if a short interval such as 3,600
 
 The place to change the TTL setting is on your email system's MX record. This lives on your public-facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 seconds or less.
 
-If you need some help configuring your DNS settings, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx).
+If you need some help configuring your DNS settings, see [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## Step 5: Route your email directly to Office 365
 
@@ -299,7 +299,7 @@ When you delete a cutover migration batch, the migration service cleans up any r
 
 ## Step 7: Assign licenses to Microsoft 365 and Office 365 users
 
-**Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+**Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ## Complete post migration tasks
 
@@ -319,7 +319,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 
    - **Target:** autodiscover.outlook.com
 
-   For more information, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b).
+   For more information, see [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 2. **Decommission on-premises Exchange Servers**: After you've verified that all email is being routed directly to the Office 365 mailboxes, and no longer need to maintain your on-premises email organization or don't plan on implementing a single sign-on solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
 
