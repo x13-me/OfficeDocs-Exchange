@@ -31,7 +31,7 @@ Public folders aren't designed to do the following:
 
 - **Data archiving** Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) as your archiving solution.
 
-- **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) as your documentation sharing solution.
+- **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://docs.microsoft.com/sharepoint/) as your documentation sharing solution.
 
 To learn more about public folders and other collaboration methods in Exchange 2013, see [Collaboration](collaboration-exchange-2013-help.md).
 
