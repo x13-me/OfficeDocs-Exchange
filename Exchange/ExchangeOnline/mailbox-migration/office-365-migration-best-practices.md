@@ -129,7 +129,7 @@ The following table provides a list of common factors that affect migration perf
 
 This section describes best practices for improving network performance during migration. The discussion is general because the biggest impact on network performance during migration is related to third-party hardware and Internet service providers (ISPs).
 
-Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365](https://support.office.com/article/12cd632c-d672-4782-b0ce-beb82b511525) to learn more about Support and Recovery Assistant.
+Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [About the Microsoft Support and Recovery Assistant](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f) to learn more about Support and Recovery Assistant.
 
 |**Factor**|**Description**|**Best practices**|
 |:-----|:-----|:-----|
