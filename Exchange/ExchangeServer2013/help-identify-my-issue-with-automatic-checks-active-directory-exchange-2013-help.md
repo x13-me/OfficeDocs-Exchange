@@ -48,7 +48,7 @@ If you already have an user account, select **Sign In**. You don't need an Azure
 <tr class="even">
 <td><p>Third-Party Tools</p></td>
 <td><p>I'm not sure what third-party integrations/applications I have installed in my messaging environment.</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery</a></p></td>
+<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Shared Mailboxes</p></td>
