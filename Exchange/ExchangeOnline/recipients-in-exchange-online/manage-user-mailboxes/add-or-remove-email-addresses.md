@@ -23,7 +23,7 @@ manager: serdars
 You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 
 > [!IMPORTANT]
-> If you're using Office 365 for business, you should add or remove email addresses for user mailboxes in the [Add another email alias for a user](https://support.office.com/article/0b0bd900-68b1-4bf5-808b-5d240a7739f4)
+> If you're using Office 365 for business, you should add or remove email addresses for user mailboxes in the [Add another email alias for a user](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user)
 
 For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients in Exchange Online](../recipients-in-exchange-online.md).
 

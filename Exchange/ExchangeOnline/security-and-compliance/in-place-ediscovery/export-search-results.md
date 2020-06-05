@@ -98,7 +98,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - For more information about de-duplication and unsearchable items, see [Estimate, preview, and copy search results](in-place-ediscovery.md#estimate-preview-and-copy-search-results).
 
-- To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?LinkId=324757).
+- To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center).
 
 ## Troubleshooting
 

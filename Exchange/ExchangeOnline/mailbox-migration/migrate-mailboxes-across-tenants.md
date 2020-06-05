@@ -56,7 +56,7 @@ For Outlook 2010 or above, you only need to [remove the Outlook user profile](ht
 
 For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
-For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
+For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.microsoft.com/office/3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
 
 #### Tenant preparation and licensing
 
