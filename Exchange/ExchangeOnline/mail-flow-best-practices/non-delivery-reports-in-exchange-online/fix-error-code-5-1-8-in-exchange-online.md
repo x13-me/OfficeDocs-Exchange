@@ -45,7 +45,7 @@ The sending account might be compromised. You'll need to:
 
 - [Go to the SCC Restricted Users page](https://protection.office.com/?hash=restrictedusers) to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
 
-- To help prevent future account compromises, follow the recommendations in [Security best practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3.aspx).
+- To help prevent future account compromises, follow the recommendations in [Security best practices for Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices).
 
 ## Still need help with error code 5.1.8?
 

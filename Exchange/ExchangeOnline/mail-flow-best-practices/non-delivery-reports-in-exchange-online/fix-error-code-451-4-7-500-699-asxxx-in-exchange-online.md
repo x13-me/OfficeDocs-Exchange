@@ -58,7 +58,7 @@ To remove throttling for these messages, you need to configure a connector:
 After you set up a connector, you can [validate your connectors in Office 365](../use-connectors-to-configure-mail-flow/validate-connectors.md).
 
 > [!NOTE]
-> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611.aspx) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a.aspx).
+> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
 
 ## Still need help with error code 451 4.7.500-699 (ASxxx)?
 
