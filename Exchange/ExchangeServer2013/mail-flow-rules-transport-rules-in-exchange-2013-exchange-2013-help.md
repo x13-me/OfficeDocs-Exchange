@@ -253,7 +253,7 @@ Whenever the Transport service on a Mailbox server or Edge Transport server dete
 
 There are two mixed environment scenarios that are common in Exchange 2013:
 
-- **Hybrid deployments where part of your organization resides in no Microsoft 365 or Office 365**
+- **Hybrid deployments where part of your organization resides in Microsoft 365 or Office 365**
 
   In a hybrid environment, there's no replication of rules between your on-premises Exchange organization and Microsoft 365 or Office 365. Therefore, when you create a rule in Exchange, you need to create a matching rule in Microsoft 365 or Office 365. Rules you create in Microsoft 365 or Office 365 are stored in the cloud, whereas the rules you create in your on-premises organization are stored locally in Active Directory. When you manage rules in a hybrid environment, you need to keep the two sets of rules synchronized by making the change in both places, or making the change in one environment and then exporting the rules and importing them in the other environment.
 
