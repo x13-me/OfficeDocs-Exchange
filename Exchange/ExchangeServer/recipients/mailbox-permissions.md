@@ -39,7 +39,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 - You need to be assigned permissions before you can perform the procedures in this topic. To see what permissions you need, see the "Recipient provisioning permissions" entry in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
