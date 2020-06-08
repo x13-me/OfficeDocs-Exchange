@@ -76,7 +76,7 @@ The test environment will act as your "proof of concept" for your new Exchange d
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Hyper-V technologies in Windows Server. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://go.microsoft.com/fwlink/p/?LinkId=117704). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
+For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
 
 ## Deploy Exchange 2016 or Exchange 2019
 
