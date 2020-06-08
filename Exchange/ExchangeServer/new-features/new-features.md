@@ -187,7 +187,7 @@ Exchange 2019 includes the following improvements to In-Place Archiving, retenti
 
   - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
 
-  - [New-ComplianceSearch](://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
   - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/remove-compliancesearch)
 
