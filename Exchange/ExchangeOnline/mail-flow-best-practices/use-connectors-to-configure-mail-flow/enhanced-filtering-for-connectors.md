@@ -72,7 +72,7 @@ Using the previous example, you would configure the IP address of the third-part
 
 - To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center).
 
-- The cmdlets to manage inbound connectors are available in Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- The cmdlets to manage inbound connectors are available in Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 

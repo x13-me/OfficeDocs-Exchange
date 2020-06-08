@@ -214,6 +214,6 @@ The following table contains links to topics that will help you learn about and 
 |[Manage equipment mailboxes](equipment-mailboxes.md)|Learn how to create equipment mailboxes, configure booking and scheduling options, and manage other mailbox properties.|
 |[Disconnected mailboxes](disconnected-mailboxes/disconnected-mailboxes.md)|Learn about the two types of disconnected mailboxes and how to work with them.|
 |[Custom attributes](mailbox-custom-attributes.md)|Learn how to add information about a recipient by using custom attributes.|
-|[Filters in recipient Shell commands](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
+|[Filters in recipient Shell commands](https://docs.microsoft.com/powershell/exchange/recipient-filters)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
 |[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
 |[Automatic Mailbox Distribution](https://docs.microsoft.com/exchange/automatic-mailbox-distribution-exchange-2013-help)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|

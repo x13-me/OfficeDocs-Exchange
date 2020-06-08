@@ -51,7 +51,7 @@ The first step is to create and run a Compliance Search to find the message that
 
 In this example, the commands will create and start a search of all mailboxes in the organization for a message that contains the words "Update your account information" in the subject line.
 
-1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Run the following commands.
 
@@ -106,7 +106,7 @@ After you've created and refined a Compliance Search to return the message that 
 
 In this example, the command will delete the search results returned by a Compliance Search named "Remove Phishing Message".
 
-1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Run the following command.
 

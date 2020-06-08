@@ -113,7 +113,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 As previously explained, there might be a delay between the time that you enable a cloud-based archive mailbox and when the cloud-based archive mailbox is created. This is because directory synchronization has to run to create the cloud-based archive mailbox. Here are some ways to verify that the cloud-based archive mailbox has been created.
 
-In your Exchange Online organization, run the following PowerShell command to display properties related to an on-premises user's cloud-based archive mailbox. To connect to Exchange Online using remote PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+In your Exchange Online organization, run the following PowerShell command to display properties related to an on-premises user's cloud-based archive mailbox. To connect to Exchange Online using remote PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```PowerShell
 Get-MailUser <cloud mail user> | FL *archive*

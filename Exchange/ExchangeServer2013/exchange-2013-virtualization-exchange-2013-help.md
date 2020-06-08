@@ -68,7 +68,7 @@ For deployments of Exchange 2013:
 
 The minimum disk space requirements for each host machine are as follows:
 
-- Host machines in some hardware virtualization applications may require storage space for an operating system and its components. For example, when running Windows Server 2008 R2 with Hyper-V, you will need a minimum of 10 GB to meet the requirements for Windows Server 2008. For more details, see [Windows Server 2008 R2 System Requirements](https://go.microsoft.com/fwlink/p/?linkid=125378). Additional storage space is also required to support the operating system's paging file, management software, and crash recovery (dump) files.
+- Host machines in some hardware virtualization applications may require storage space for an operating system and its components. For example, when running Windows Server 2008 R2 with Hyper-V, you will need a minimum of 10 GB to meet the requirements for Windows Server 2008. For more details, see [Windows Server 2008 R2 System Requirements](https://docs.microsoft.com/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2). Additional storage space is also required to support the operating system's paging file, management software, and crash recovery (dump) files.
 
 - Some hypervisors maintain files on the host machine that are unique to each guest virtual machine. For example, in a Hyper-V environment, a temporary memory storage file (BIN file) is created and maintained for each guest machine. The size of each BIN file is equal to the amount of memory allocated to the guest machine. In addition, other files may also be created and maintained on the host machine for each guest machine.
 
