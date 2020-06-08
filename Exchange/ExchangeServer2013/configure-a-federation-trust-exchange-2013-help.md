@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system. By configuring a federation trust, you can configure federated sharing with other federated Exchange organizations to share calendar free/busy information among recipients. Federated sharing can be configured between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up sharing with an Office 365 organization.
+A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system. By configuring a federation trust, you can configure federated sharing with other federated Exchange organizations to share calendar free/busy information among recipients. Federated sharing can be configured between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up sharing with a Microsoft 365 or Office 365 organization.
 
 > [!NOTE]
 > Creating a federation trust is one of several steps in setting up federated sharing in your Exchange organization. To review all the steps, see <A href="configure-federated-sharing-exchange-2013-help.md">Configure federated sharing</A>.
@@ -25,7 +25,7 @@ A federation trust establishes a trust relationship between a Microsoft Exchange
 For additional management tasks related to federation, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Microsoft 365 or Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Microsoft 365 or Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 
@@ -39,7 +39,7 @@ For additional management tasks related to federation, see [Federation procedure
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-- Both Exchange organizations in a federated sharing relationship must use the same Azure AD authentication system for their federation trusts. This requirement applies when configuring federated sharing between two on-premises Exchange organizations or between an on-premises Exchange organization and an Exchange organization hosted by [Office 365](https://go.microsoft.com/fwlink/?linkid=392576).
+- Both Exchange organizations in a federated sharing relationship must use the same Azure AD authentication system for their federation trusts. This requirement applies when configuring federated sharing between two on-premises Exchange organizations or between an on-premises Exchange organization and an Exchange organization hosted by [Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/?linkid=392576).
 
 - When you create a federation trust with the Azure AD authentication system for your Exchange 2013 organization, the federation trust will use the business instance of the Azure AD authentication system. However, other federated Exchange organizations with previous versions of Exchange and existing federation trusts may be using either the business or consumer instance of the Azure AD authentication system.
 
@@ -49,7 +49,7 @@ For additional management tasks related to federation, see [Federation procedure
 
   - Exchange 2010 SP1 or later organizations by using the **New Federation Trust** wizard and self-signed certificates for a federation trust.
 
-  - Exchange organizations hosted by Office 365, such as the Exchange Online.
+  - Exchange organizations hosted by Microsoft 365 or Office 365, such as the Exchange Online.
 
     The following Exchange organizations use the consumer instance of the Azure AD authentication system by default:
 
