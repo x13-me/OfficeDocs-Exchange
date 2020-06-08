@@ -67,7 +67,7 @@ The test environment will act as your "proof of concept" for your new Exchange 2
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Windows Server 2008 R2 or Windows Server 2012 Hyper-V technologies. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://go.microsoft.com/fwlink/p/?linkid=117704). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
 ## Deploying an installation of Exchange 2013
 
