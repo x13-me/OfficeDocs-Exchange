@@ -248,6 +248,6 @@ For on-premises and hybrid deployments, Exchange Unified Messaging can be deploy
 
 - [Integrate Exchange 2013 UM with Lync Server](https://docs.microsoft.com/exchange/deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help)
 
-- [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
+- [Microsoft Lync Server 2013](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013)
 
 To find out more about the Microsoft Unified Communications Open Interoperability Program for enterprise telephony infrastructure, including finding qualified SIP PSTN gateways and IP PBXs and the process for telephony infrastructure vendors to join and participate in the program, see [Microsoft Unified Communications Open Interoperability Program](https://docs.microsoft.com/SkypeForBusiness/lync-cert/qualified-lync-apps).

@@ -591,7 +591,7 @@ For on-premises Exchange 2013 SP1 deployments, deploying and configuring Active 
 
 - Something only the user is (for example, a biometric characteristic, such as a fingerprint)
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392707) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
 
 In the Windows Server 2012 R2 AD FS role service, the federation service functions as a security token service, provides the security tokens that are used with claims, and gives you the ability to support multifactor authentication. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://go.microsoft.com/fwlink/?linkid=392709).
 
