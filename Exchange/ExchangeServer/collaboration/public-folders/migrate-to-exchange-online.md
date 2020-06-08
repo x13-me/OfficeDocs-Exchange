@@ -335,7 +335,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
 
 >[!NOTE]
-> Use [Sync MEPF Script troubleshooting](https://aka.ms/SyncMEPF) in case you see any errors during execution of `Sync-ModernMailPublicFolders.ps1` script
+> Use [Sync MEPF Script troubleshooting](https://aka.ms/SyncMEPF) in case you see any errors during execution of the `Sync-ModernMailPublicFolders.ps1` script.
 
 2. In Exchange Online PowerShell, pass the credential of a user who has administrator permissions in the Exchange 2013, Exchange 2016, or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
 
