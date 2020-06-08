@@ -48,9 +48,9 @@ You can use the following cmdlets in Exchange Online PowerShell or Exchange Onli
 
 [Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
