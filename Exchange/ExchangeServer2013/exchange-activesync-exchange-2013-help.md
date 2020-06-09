@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. You'll learn about the features of Exchange ActiveSync including security features, the things you can manage, how to make it secure, and how to avoid problems synching to Windows Phone 7.
 
 > [!TIP]
-> This topic is for admins. Want to set up your Windows Phone, iOS, or Android device to access your Office 365 or Exchange Server mailbox? Check out the following topics.
+> This topic is for admins. Want to set up your Windows Phone, iOS, or Android device to access your Microsoft 365 or Office 365 or Exchange Server mailbox? Check out the following topics.
 > <UL>
 > <LI>
 > <P><A href="https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417">Set up email on Windows Phone</A></P>

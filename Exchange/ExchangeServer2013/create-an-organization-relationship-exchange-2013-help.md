@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Set up an organization relationship to share calendar information with an external business partner. You can configure an organization relationship between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up an organization relationship between your on-premises Exchange organization and an Office 365 organization.
+Set up an organization relationship to share calendar information with an external business partner. You can configure an organization relationship between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up an organization relationship between your on-premises Exchange organization and a Microsoft 365 or Office 365 organization.
 
 > [!IMPORTANT]
 > Creating an organization relationship is one of several steps in setting up federated sharing in your Exchange organization and requires the configuration of a federation trust for your on-premises Exchange organization.
@@ -44,7 +44,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 3. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
-4. In the **Domains to share with** box, type the federated domain or federated subdomain for the Office 365 or Exchange on-premises organization you want to let see your calendars. If you need to enter multiple domains for the external organization, separate the domains with a comma. For example, **contoso.com, service.contoso.com**.
+4. In the **Domains to share with** box, type the federated domain or federated subdomain for the Microsoft 365 or Office 365 or Exchange on-premises organization you want to let see your calendars. If you need to enter multiple domains for the external organization, separate the domains with a comma. For example, **contoso.com, service.contoso.com**.
 
 5. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
 
