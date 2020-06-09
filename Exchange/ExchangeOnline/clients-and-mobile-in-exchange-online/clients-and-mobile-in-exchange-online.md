@@ -22,13 +22,13 @@ manager: serdars
 
 Many different clients can be used to access information in an Exchange Online mailbox. These clients include desktop programs such as Microsoft Outlook, Outlook on the web (formerly known as Outlook Web App), and mobile clients such as phones, tablets, and other mobile devices. Each of these clients offers a variety of features.
 
-The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that can be used to access an Office 365 mailbox.
+The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that can be used to access an Office 365 or Microsoft 365 mailbox.
 
 |**Topic**|**Description**|
 |:-----|:-----|
 |[Exchange ActiveSync in Exchange Online](exchange-activesync/exchange-activesync.md)|Learn about Exchange ActiveSync, the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
 |[Mobile device mailbox policies in Exchange Online](exchange-activesync/mobile-device-mailbox-policies.md)||
-|[POP3 and IMAP4](pop3-and-imap4/pop3-and-imap4.md)|Learn about how you can use the POP3 and IMAP4 protocols to provide users access to a number of the features in their Office 365 mailbox. These client protocols can be used on desktop email applications and on many mobile phones and devices.|
+|[POP3 and IMAP4](pop3-and-imap4/pop3-and-imap4.md)|Learn about how you can use the POP3 and IMAP4 protocols to provide users access to a number of the features in their Office 365 or Microsoft 365 mailbox. These client protocols can be used on desktop email applications and on many mobile phones and devices.|
 ||[Outlook for iOS and Android in Exchange Online](outlook-for-ios-and-android/outlook-for-ios-and-android.md)|
 |[Outlook on the web in Exchange Online](outlook-on-the-web/outlook-on-the-web.md)|Learn about Outlook on the web, which provides users access to their Exchange Online mailbox through a web browser.|
 |[Mobile access in Exchange Online](mobile-access/mobile-access.md)||
