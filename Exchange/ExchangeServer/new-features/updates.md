@@ -60,8 +60,8 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2016 CU4|[Released: December 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=837801)|
 |Exchange 2016 CU3|[Released: September 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=827208)|
 |Exchange 2016 CU2|[Released: June 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=808655)|
-|Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=747752)|
-|Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://go.microsoft.com/fwlink/p/?LinkId=747751)|
+|Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2016-quarterly-exchange-updates/ba-p/604375)|
+|Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-2016-forged-in-the-cloud-now-available-on/ba-p/604085)|
 
 For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 ::: moniker-end

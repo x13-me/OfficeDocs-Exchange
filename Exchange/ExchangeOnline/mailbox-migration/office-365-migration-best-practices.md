@@ -129,7 +129,7 @@ The following table provides a list of common factors that affect migration perf
 
 This section describes best practices for improving network performance during migration. The discussion is general because the biggest impact on network performance during migration is related to third-party hardware and Internet service providers (ISPs).
 
-Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365](https://support.office.com/article/12cd632c-d672-4782-b0ce-beb82b511525) to learn more about Support and Recovery Assistant.
+Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [About the Microsoft Support and Recovery Assistant](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f) to learn more about Support and Recovery Assistant.
 
 |**Factor**|**Description**|**Best practices**|
 |:-----|:-----|:-----|
@@ -137,7 +137,7 @@ Use the Exchange Analyzer to get a deeper understanding of your network connecti
 |Network stability|A fast network doesn't always result in fast migrations. If the network isn't stable, data transfer takes longer because of error correction. Depending on the migration type, error correction can significantly affect migration performance.|Network hardware and driver issues often cause network stability problems. Work with your hardware vendors to understand your network devices and apply the vendor's latest recommended drivers and software updates.|
 |Network delays|Intrusion detection functionality configured on a network firewall often causes significant network delays and affects migration performance. <br/> Migrating data to Office 365 mailboxes relies on your internet connection. Internet delays affect overall migration performance. <br/> Also, users in the same company might have cloud mailboxes that reside in datacenters in different geographical locations. Depending on the customer's ISP, migration performance may vary.|Evaluate network delays to all potential Microsoft datacenters to help ensure that the result is consistent. (This also helps ensure a consistent experience for end users.) Work with your ISP to address internet-related issues. <br/> Add IP addresses for Microsoft datacenter servers to your allow list, or bypass all migration-related traffic from your network firewall. For more information about the Office 365 IP ranges, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).|
 
-For a deeper analysis of migrations within your environment, check out our [move analysis blog post](https://go.microsoft.com/fwlink/p/?LinkId=399457). The post includes a script to help you analyze move requests.
+For a deeper analysis of migrations within your environment, check out our [move analysis blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134). The post includes a script to help you analyze move requests.
 
 ## Office 365 throttling
 
