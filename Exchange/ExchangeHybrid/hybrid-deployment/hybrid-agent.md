@@ -183,7 +183,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 During the update phase, the HCW creates a migration endpoint with the custom URL created in step 8.3 above. It will also set the `TargetSharingEPR` value on the Organization Relationship and/or the IntraOrganization Connector object on the Microsoft 365 or Office 365 side to this value. The new URL is used to send requests from your Microsoft 365 or Office 365 organization to your on-premises Exchange organization for free/busy and migrations.
 
-You can view the specific values configured for each of these by running **Get-MigrationEndpoint** and **Get-OrganizationRelationship** from an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to your Microsoft 365 or Office 365 organization.
+You can view the specific values configured for each of these by running **Get-MigrationEndpoint** and **Get-OrganizationRelationship** from an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to your Microsoft 365 or Office 365 organization.
 
 The following example shows the output that you might see when you run the **Get-MigrationEndpoint** and **Get-OrganizationRelationship** cmdlets:
 
@@ -371,7 +371,7 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 ### Migration
 
-1. Open an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to your Microsoft 365 or Office 365 organization.
+1. Open an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to your Microsoft 365 or Office 365 organization.
 
 2. Replace \<your customguid\> with the unique endpoint GUID value as described in [Direct your Hybrid Agent(s) to the load balancer instead of a specific server](#direct-your-hybrid-agents-to-the-load-balancer-instead-of-a-specific-server) and run the following command:
 

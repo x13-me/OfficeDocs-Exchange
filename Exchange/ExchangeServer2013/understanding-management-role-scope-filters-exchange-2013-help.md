@@ -127,7 +127,7 @@ The following table shows an example with values, which indicates when the compl
 
 ## Filterable recipient properties
 
-You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipientfilter-properties). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
+You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
 
 ## Filterable server properties
 

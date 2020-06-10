@@ -111,4 +111,4 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell)
+[Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)

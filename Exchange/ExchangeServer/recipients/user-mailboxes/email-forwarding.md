@@ -47,7 +47,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the Exchange Management Shell to set up mail forwarding
 
-Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) topics for more details on the cmdlets used here.
+Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) topics for more details on the cmdlets used here.
 
 This example delivers email to the mailbox of Douglas Kohn and also forwards all mail sent to Douglas Kohn to an external email address, douglaskohn.parents@fineartschool.net.
 
