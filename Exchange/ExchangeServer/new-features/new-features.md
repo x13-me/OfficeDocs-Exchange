@@ -129,7 +129,7 @@ For more information, see [MAPI over HTTP in Exchange Server](../clients/mapi-ov
 
 #### Document collaboration
 
-Exchange 2019, along with SharePoint Server 2019, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Office 365.
+Exchange 2019, along with SharePoint Server 2019, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Microsoft 365 or Office 365.
 
 For more information about SharePoint Server 2019, see [New and improved features in SharePoint Server 2019](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2019).
 
@@ -143,11 +143,11 @@ Exchange 2019 also brings the following improvements to document collaboration:
 
 - Most Recently Used lists populated with both local and online files.
 
-### Office 365 hybrid
+### Microsoft 365 or Office 365 hybrid
 
 The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is moving to become a cloud-based application. When you choose to configure a hybrid deployment in Exchange 2019, you'll be prompted to download and install the wizard as a small app. The wizard will function the same in previous versions of Exchange, with a few new benefits:
 
-- The wizard can be updated quickly to support changes in the Office 365 service.
+- The wizard can be updated quickly to support changes in the Microsoft 365 or Office 365 service.
 
 - The wizard can be updated to account for issues detected when customers try to configure a hybrid deployment.
 
@@ -155,9 +155,9 @@ The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is mo
 
 - The same wizard will be used by everyone configuring a hybrid deployment who's running Exchange 2013 or later.
 
-In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
+In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
 
-Exchange ActiveSync clients will be seamlessly redirected to Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
+Exchange ActiveSync clients will be seamlessly redirected to Microsoft 365 or Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
 
 ### Messaging policy and compliance
 
@@ -238,7 +238,7 @@ When you update to Exchange 2016 Cumulative Update 1 (CU1) from Exchange 2016 RT
 
 [Document collaboration](new-features.md#DocCollab2013)
 
-[Office 365 hybrid](new-features.md#O3652013)
+[Microsoft 365 or Office 365 hybrid](new-features.md#O3652013)
 
 [Messaging policy and compliance](new-features.md#Compliance2013)
 
@@ -320,7 +320,7 @@ For more information, see [MAPI over HTTP in Exchange 2016](../clients/mapi-over
 #### Document collaboration
 <a name="DocCollab2013"> </a>
 
-Exchange 2016, along with SharePoint Server 2016, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Office 365.
+Exchange 2016, along with SharePoint Server 2016, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Microsoft 365 and Office 365.
 
 For more information about SharePoint Server 2016, see [New and improved features in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2016).
 
@@ -334,12 +334,12 @@ Exchange 2016 also brings the following improvements to document collaboration:
 
 - Most Recently Used lists populated with both local and online files.
 
-### Office 365 hybrid
+### Microsoft 365 or Office 365 hybrid
 <a name="O3652013"> </a>
 
 The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is moving to become a cloud-based application. When you choose to configure a hybrid deployment in Exchange 2016, you'll be prompted to download and install the wizard as a small app. The wizard will function the same in previous versions of Exchange, with a few new benefits:
 
-- The wizard can be updated quickly to support changes in the Office 365 service.
+- The wizard can be updated quickly to support changes in the Microsoft 365 or Office 365 service.
 
 - The wizard can be updated to account for issues detected when customers try to configure a hybrid deployment.
 
@@ -347,9 +347,9 @@ The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is mo
 
 - The same wizard will be used by everyone configuring a hybrid deployment who's running Exchange 2013 or Exchange 2016.
 
-In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
+In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
 
-Exchange ActiveSync clients will be seamlessly redirected to Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
+Exchange ActiveSync clients will be seamlessly redirected to Microsoft 365 or Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
 
 ### Messaging policy and compliance
 <a name="Compliance2013"> </a>
@@ -413,7 +413,7 @@ Another advantage of the new architecture is that search scalability is improved
 
 [Setup](new-features.md#Setup2010)
 
-[Office 365 hybrid](new-features.md#O3652010)
+[Microsoft 365 or Office 365 hybrid](new-features.md#O3652010)
 
 [Messaging policy and compliance](new-features.md#Compliance2010)
 
@@ -514,12 +514,12 @@ Setup has been completely rewritten so that installing Exchange 2016 and making 
 
 For more information, see [Planning and deployment](../plan-and-deploy/plan-and-deploy.md).
 
-### Office 365 hybrid
+### Microsoft 365 or Office 365 hybrid
 <a name="O3652010"> </a>
 
 The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is moving to become a cloud-based application. When you choose to configure a hybrid deployment in Exchange 2016, you'll be prompted to download and install the wizard as a small app. The wizard will function the same in previous versions of Exchange, with a few new benefits:
 
-- The wizard can be updated quickly to support changes in the Office 365 service.
+- The wizard can be updated quickly to support changes in the Microsoft 365 or Office 365 service.
 
 - The wizard can be updated to account for issues that are encountered when customers try to configure a hybrid deployment.
 
@@ -527,9 +527,9 @@ The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is mo
 
 - The same wizard will be used by everyone who's configuring a hybrid deployment with Exchange 2013 or Exchange 2016.
 
-In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Office 365 organization.
+In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization.
 
-Exchange ActiveSync clients will be seamlessly redirected to Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
+Exchange ActiveSync clients will be seamlessly redirected to Microsoft 365 or Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
 
 ### Messaging policy and compliance
 <a name="Compliance2010"> </a>
@@ -763,7 +763,7 @@ For more information, see [MAPI over HTTP in Exchange 2016](../clients/mapi-over
 #### Document collaboration
 <a name="DocCollab2010"> </a>
 
-Exchange 2016, along with SharePoint Server 2016, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Office 365.
+Exchange 2016, along with SharePoint Server 2016, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Microsoft 365 or Office 365.
 
 For more information about SharePoint Server 2016, see [New and improved features in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2016).
 

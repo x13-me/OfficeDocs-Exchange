@@ -39,7 +39,7 @@ The PA is designed with several business requirements in mind, such as the requi
 
 - Increase availability by optimizing around failure domains and reducing complexity
 
-The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Office 365 where you no longer must deploy or manage a large number of servers.
+The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Microsoft 365 or Office 365 where you no longer must deploy or manage a large number of servers.
 
 The PA removes complexity and redundancy where necessary to drive the architecture to a predictable recovery model: when a failure occurs, another copy of the affected database is activated.
 
@@ -227,6 +227,6 @@ At a minimum, you will want to deploy an Office Online Server (OOS) farm with at
 
 ## Summary
 
-Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Office 365.
+Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Microsoft 365 or Office 365.
 
 By aligning with the Preferred Architecture you will take advantage of these changes and provide the best on-premises user experience possible. You will continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.

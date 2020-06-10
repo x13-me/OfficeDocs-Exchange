@@ -43,7 +43,7 @@ For more information about the support lifecycle for specific versions of Exchan
 
 ## Exchange Server 2007 End-of life
 
-Exchange 2007 reached end of support on April 11, 2017, per the [Microsoft Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy). There will be no new security updates, non-security updates, free or paid assisted support options, or online technical content updates. Furthermore, as adoption of Office 365 accelerates and cloud usage increases, custom support options for Office products will not be available. This includes Exchange Server, as well as Microsoft Office, SharePoint Server, Office Communications Server, Lync Server, Skype for Business Server, Project Server, and Visio. At this time, we encourage customers to complete their migration and upgrade plans. We recommend that customers leverage deployment benefits provided by Microsoft and Microsoft Certified Partners including [Microsoft FastTrack](https://www.microsoft.com/fasttrack/) for cloud migrations, and [Software Assurance Planning Services](https://partner.microsoft.com/marketing/planning-services) for on-premises upgrades.
+Exchange 2007 reached end of support on April 11, 2017, per the [Microsoft Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy). There will be no new security updates, non-security updates, free or paid assisted support options, or online technical content updates. Furthermore, as adoption of Microsoft 365 or Office 365 accelerates and cloud usage increases, custom support options for Office products will not be available. This includes Exchange Server, as well as Microsoft Office, SharePoint Server, Office Communications Server, Lync Server, Skype for Business Server, Project Server, and Visio. At this time, we encourage customers to complete their migration and upgrade plans. We recommend that customers leverage deployment benefits provided by Microsoft and Microsoft Certified Partners including [Microsoft FastTrack](https://www.microsoft.com/fasttrack/) for cloud migrations, and [Software Assurance Planning Services](https://partner.microsoft.com/marketing/planning-services) for on-premises upgrades.
 
 ## Supported operating system platforms
 
@@ -176,7 +176,7 @@ The following tables identify the mail clients that are supported for use togeth
 |Outlook 2013|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|
 |Outlook 2010|Not supported|Supported<sup>1</sup>|Supported<sup>2</sup>|Supported|
 |Outlook 2007|Not supported|Not supported|Supported<sup>3</sup>|Supported|
-|Outlook for Mac for Office 365|Not supported|Supported<sup>1</sup>|Supported|Supported|
+|Outlook for Mac for Microsoft 365 or Office 365|Not supported|Supported<sup>1</sup>|Supported|Supported|
 |Entourage 2008 (EWS)|Not supported|Supported<sup>4</sup>|Supported<sup>4</sup>|Supported<sup>4</sup>|
 
 <sup>1</sup> Requires the latest Office service pack and the latest public update.

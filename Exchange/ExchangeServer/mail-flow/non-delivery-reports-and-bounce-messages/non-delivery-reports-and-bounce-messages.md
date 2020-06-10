@@ -24,7 +24,7 @@ The information that's included in NDRs is designed to be easy to read and helpf
 
 For procedures related to NDRs in Exchange Server, see [Procedures for DSNs and NDRs in Exchange Server](ndr-procedures.md).
 
-If you need help with NDRs in Office 365 or Exchange Online, see [Email non-delivery reports in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+If you need help with NDRs in Microsoft 365 or Office 365 or Exchange Online, see [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 ## Information in NDRs
 
@@ -97,7 +97,7 @@ Enhanced status codes are defined in RFC 3463, and use the syntax _\<class\>_. _
 The following tables contain the enhanced status codes that are returned in NDRs for the most common message delivery failures.
 
 > [!NOTE]
-> For information about enhanced status codes in Office 365 and hybrid environments, see [Email non-delivery reports in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524931).
+> For information about enhanced status codes in Microsoft 365 or Office 365 and hybrid environments, see [Email non-delivery reports in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524931).
 
 ### Temporary delivery failures
 

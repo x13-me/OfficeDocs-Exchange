@@ -23,14 +23,14 @@ title: Configure legacy on-premises public folders for a hybrid deployment
 
 In a hybrid deployment, your users can be in Exchange Online, Exchange on-premises, or both, and your public folders are either in Exchange Online or Exchange on-premises. Public folders can only reside in one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
 
-This article describes how to synchronize mail-enabled public folders when your users are in Office 365 and your Exchange 2010 SP3 or later version public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange on-premises public folders.
+This article describes how to synchronize mail-enabled public folders when your users are in Microsoft 365 or Office 365 and your Exchange 2010 SP3 or later version public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange on-premises public folders.
 
 > [!NOTE]
 > This topic refers to the Exchange 2010 SP3 or later servers as the *legacy Exchange server*.
 
 You will use the following scripts to sync your mail-enabled public folders. The scripts are initiated by a Windows task that runs in the on-premises environment:
 
-- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to O365. The script will create, update, or delete mail-enabled public folder objects on O365 Active Directory based on what exists in the local on-premises Exchange deployment.
+- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Microsoft 365 or Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to Microsoft 365 or  Office 365. The script will create, update, or delete mail-enabled public folder objects on Microsoft 365 or Office 365 Active Directory based on what exists in the local on-premises Exchange deployment.
 
 - `SyncMailPublicFolders.strings.psd1`: This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script.
 
@@ -54,7 +54,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 - These instructions assume that Outlook Anywhere is enabled and functional on the on-premises legacy Exchange servers. For information on how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
 
-- Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
+- Implementing legacy public folder coexistence for a hybrid deployment of Exchange with Microsoft 365 or Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Microsoft 365 or Office 365, and other attributes.
 
 - These instructions assume your Exchange Online organization has been upgraded to a version that supports public folders.
 
@@ -68,7 +68,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
   - To download the November 2012 Outlook update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007) and download in preferred language.
 
-- Outlook 2016 for Mac and Outlook for Mac for Office 365 are supported for cross-premises public folders if the following conditions are true:
+- Outlook 2016 for Mac and Outlook for Mac for Microsoft 365 or Office 365 are supported for cross-premises public folders if the following conditions are true:
 
   - The April 2016 update for Outlook 2016 for Mac is installed.
 
@@ -139,13 +139,13 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command.
 
-1. On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
+1. On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to Microsoft 365 or Office 365.
 
    ```PowerShell
    Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
-   Where `Credential` is your Microsoft 365 or  name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
+   Where `Credential` is your Microsoft 365 or Office 365 name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
 
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` parameter. We also recommend that you run this script daily to synchronize your mail-enabled public folders.
@@ -162,10 +162,10 @@ Run the following command in Exchange Online PowerShell. To learn how to use Win
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 
-You must wait until Active Directory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to force directory synchronization, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
+You must wait until Active Directory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to force directory synchronization, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler). Microsoft 365 or Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
 
 > [!IMPORTANT]
-> An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy, Exchange 2016, or Exchange 2019 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.
+> An Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy, Exchange 2016, or Exchange 2019 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.
 
 ## How do I know this worked?
 
