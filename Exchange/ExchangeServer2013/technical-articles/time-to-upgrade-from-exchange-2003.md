@@ -17,12 +17,12 @@ mtps_version: v=EXCHG.150
 
 As many of you may already know, support for Microsoft Exchange Server 2003 will soon be coming to an end. Each product that Microsoft releases has a lifecycle that determines how long we maintain and support the product. Exchange 2003 mainstream support is already over. And, **Exchange Server 2003 extended support ends on April 8, 2014**.
 
-April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](https://go.microsoft.com/fwlink/p/?linkid=299102). Since then, we've released Exchange Server 2013 and released more new features in Microsoft Office 365.
+April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](https://docs.microsoft.com/previous-versions/office/exchange-server-2010-technical-article/hh145599(v=exchg.141)). Since then, we've released Exchange Server 2013 and released more new features in Microsoft 365 and Office 365.
 
-To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
+To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Microsoft 365 or Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
 
 > [!NOTE]
-> For more information about specific versions of Exchange 2003, see the <A href="https://go.microsoft.com/fwlink/p/?linkid=217503">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
+> For more information about specific versions of Exchange 2003, see the <A href="https://support.microsoft.com/lifecycle/search/">Microsoft Support Lifecycle Search</A> page, and enter "Exchange Server 2003" in the <STRONG>Product Name</STRONG> field.
 
 ## What's new in Exchange 2013
 
@@ -78,7 +78,7 @@ Before you can upgrade to Exchange 2013, your organization must meet certain req
 
 You've got two options to consider when upgrading your Exchange 2003 organization from Exchange 2003 to Exchange 2013:
 
-- Move your Exchange organization to the cloud with Office 365, or
+- Move your Exchange organization to the cloud with Microsoft 365 or Office 365, or
 
 - Upgrade your current on-premises organization.
 
@@ -86,9 +86,9 @@ To help simplify your deployment, whether you're moving your organization to the
 
 ## Go to the cloud with Office 365
 
-Have you heard of Microsoft Office 365 yet? Office 365 delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. Office 365 combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
+Have you heard of Microsoft 365 or Office 365 yet? It delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. It combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Microsoft 365 and Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
 
-To use Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://docs.microsoft.com/exchange/exchange-server-deployment-assistant-exchange-2013-help). To learn more about Office 365, see [Office 365](https://go.microsoft.com/fwlink/p/?linkid=203981).
+To use Microsoft 365 or Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://docs.microsoft.com/exchange/exchange-server-deployment-assistant-exchange-2013-help). To learn more, see [Powerful tools to support your enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
 
 ## Upgrade to Exchange 2013 on-premises
 
