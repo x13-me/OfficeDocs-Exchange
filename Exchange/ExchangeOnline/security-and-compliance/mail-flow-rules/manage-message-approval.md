@@ -93,4 +93,4 @@ By default, one arbitration mailbox is used for each Exchange organization. If y
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
-[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)

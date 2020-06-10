@@ -156,7 +156,7 @@ The final step in this procedure is to configure the Exchange Online organizatio
 
 You will point to all of the proxy public folder mailboxes that you created in [Step 2: Make remote public folders discoverable](#step-2-make-remote-public-folders-discoverable) to enable theExchange Online organization to access the on-premises public folders.
 
-Run the following command in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Run the following command in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3

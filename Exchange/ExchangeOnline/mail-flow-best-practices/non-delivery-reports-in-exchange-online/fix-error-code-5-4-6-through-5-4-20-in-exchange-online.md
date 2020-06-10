@@ -67,7 +67,7 @@ To fix the problem, configure a dedicated outbound connector that uses smart hos
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
-This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell):
+This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
 ```powershell
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises

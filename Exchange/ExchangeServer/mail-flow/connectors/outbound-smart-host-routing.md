@@ -93,7 +93,7 @@ After you create the Send connector, it appears in the Send connector list.
 
 ## Use the Exchange Management Shell to create a Send connector that uses smart host routing
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
