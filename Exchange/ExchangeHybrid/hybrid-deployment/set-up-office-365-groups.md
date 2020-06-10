@@ -56,7 +56,7 @@ Before you start, make sure that you've done the following:
 
 4. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**.
 
-5. Select **Group writeback (Preview)** and then click **Next**.
+5. Select **Group writeback** and then click **Next**.
 
 6. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Microsoft 365 or Office 365 to your on-premises organization, and then click **Next**.
 
@@ -90,7 +90,7 @@ The primary SMTP domain of an Microsoft 365 or Office 365 Group is called a grou
 
    |**DNS record name**|**DNS record type**|**DNS record value**|
    |:-----|:-----|:-----|
-   |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1<sup/>|
+   |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
    <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Microsoft 365 or Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
@@ -146,7 +146,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 ## Known issues
 <a name="KnownIssues"> </a>
 
-- **Older versions of Azure AD connect won't install DSACLS.exe**: You need to install RSAT or the lastest Version of Azure AD Connect to manage permissions on groups (if required).
+- **Older versions of Azure AD connect won't install DSACLS.exe**: You need to install RSAT or the latest Version of Azure AD Connect to manage permissions on groups (if required).
 
 - **Groups don't appear for mailboxes moved to Microsoft 365 or Office 365**: When a user is moved from your on-premises Exchange organization to Microsoft 365 or Office 365, groups won't appear in the left navigation pane in Outlook or Outlook on the web. To fix the issue, remove the mailbox from any groups of which it is a member, and re-add it to each group.
 
