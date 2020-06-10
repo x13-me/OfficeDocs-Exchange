@@ -154,7 +154,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 10 for Exchange Server 2010 SP3|June 17, 2015|14.3.248.2|14.03.0248.002|
 |Update Rollup 9 for Exchange Server 2010 SP3|March 17, 2015|14.3.235.1|14.03.0235.001|
 |Update Rollup 8 v2 for Exchange Server 2010 SP3|December 12, 2014|14.3.224.2|14.03.0224.002|
-|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://go.microsoft.com/fwlink/p/?LinkId=518202))|December 9, 2014|14.3.224.1|14.03.0224.001|
+|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-releases-december-2014/ba-p/584630))|December 9, 2014|14.3.224.1|14.03.0224.001|
 |Update Rollup 7 for Exchange Server 2010 SP3|August 26, 2014|14.3.210.2|14.03.0210.002|
 |Update Rollup 6 for Exchange Server 2010 SP3|May 27, 2014|14.3.195.1|14.03.0195.001|
 |Update Rollup 5 for Exchange Server 2010 SP3|February 24, 2014|14.3.181.6|14.03.0181.006|
