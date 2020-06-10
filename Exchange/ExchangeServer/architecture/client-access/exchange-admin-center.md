@@ -84,7 +84,7 @@ The section describes the user interface elements that are common across the EAC
 
 ### 1: Cross-premises navigation
 
-The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the **Office 365** link takes you to a page that compares plans and pricing for Office 365 services.
+The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the **Office 365** link takes you to a page that compares plans and pricing for Microsoft 365 and Office 365 services.
 
 ### 2: Feature pane
 
@@ -186,7 +186,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 ### 3: Tabs
 
-The tabs are your second level of navigation. Typically, each feature pane contains multiple tabs that represent complete features. However, the **Tools** and **Hybrid** panes each contain only one tab: the **Checks** tab to install and run the Office 365 Best Practices Analyzer, or the **Setup** tab that allows you to run the Hybrid Configuration Wizard, or modify the settings of your existing hybrid deployment.
+The tabs are your second level of navigation. Typically, each feature pane contains multiple tabs that represent complete features. However, the **Tools** and **Hybrid** panes each contain only one tab: the **Checks** tab to install and run the Microsoft 365 and Office 365 Best Practices Analyzer, or the **Setup** tab that allows you to run the Hybrid Configuration Wizard, or modify the settings of your existing hybrid deployment.
 
 ### 4: Toolbar
 

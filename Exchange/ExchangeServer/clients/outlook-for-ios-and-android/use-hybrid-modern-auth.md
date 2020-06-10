@@ -18,7 +18,7 @@ manager: serdars
 
 # Using hybrid Modern Authentication with Outlook for iOS and Android
 
-The Outlook app for iOS and Android is designed as the best way to experience Office 365 on your mobile device by leveraging Microsoft services to help find, plan, and prioritize your daily life and work. Outlook provides the security, privacy, and support you need while protecting corporate data via capabilities such as Azure Active Directory conditional access and Intune app protection policies. The following sections provide an overview of the hybrid Modern Authentication architecture, the required pre-requisites for its deployment, and how to securely deploy Outlook for iOS and Android for Exchange on-premises mailboxes.
+The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by leveraging Microsoft services to help find, plan, and prioritize your daily life and work. Outlook provides the security, privacy, and support you need while protecting corporate data via capabilities such as Azure Active Directory conditional access and Intune app protection policies. The following sections provide an overview of the hybrid Modern Authentication architecture, the required pre-requisites for its deployment, and how to securely deploy Outlook for iOS and Android for Exchange on-premises mailboxes.
 
 ## Microsoft Cloud architecture for hybrid Exchange Server customers
 
@@ -28,13 +28,13 @@ For Exchange Server mailboxes, Outlook for iOS and Android's architecture is bui
 
 ![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
 
-Within the Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization which is protected by a TLS-secured connection end-to-end, between Office 365 and the app.
+Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization which is protected by a TLS-secured connection end-to-end, between Microsoft 365 or Office 365 and the app.
 
 The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status in your Exchange Online tenant. This data will be removed automatically from Exchange Online after 30 days when the account is deleted in Azure Active Directory.
 
 Data synchronization between the on-premises environment and Exchange Online happens independent of user behavior. This ensures that we can send new messages to the devices very quickly.
 
-Processing information in the Microsoft Cloud enables advanced features and capabilities, such as the categorization of email for the Focused Inbox, customized experience for travel and calendar, and improved search speed. Relying on the cloud for intensive processing and minimizing the resources required from users' devices enhances the app's performance and stability. Lastly, it allows Outlook to build features that work across all email accounts, regardless of the technological capabilities of the underlying servers (such as different versions of Exchange Server, or Office 365).
+Processing information in the Microsoft Cloud enables advanced features and capabilities, such as the categorization of email for the Focused Inbox, customized experience for travel and calendar, and improved search speed. Relying on the cloud for intensive processing and minimizing the resources required from users' devices enhances the app's performance and stability. Lastly, it allows Outlook to build features that work across all email accounts, regardless of the technological capabilities of the underlying servers (such as different versions of Exchange Server, Microsoft 365, or Office 365).
 
 Specifically, this new architecture has the following improvements:
 
@@ -46,18 +46,18 @@ Specifically, this new architecture has the following improvements:
 
 4. **Provides Unique Device IDs**: Each Outlook connection is uniquely registered in Microsoft Intune and can therefore be managed as a unique connection.
 
-5. **Unlocks new features on iOS and Android**: This update enables the Outlook app to take advantage of native Office 365 features that are not supported in Exchange on-premises today, such as leveraging full Exchange Online search and Focused Inbox. These features will only be available when using Outlook for iOS and Android.
+5. **Unlocks new features on iOS and Android**: This update enables the Outlook app to take advantage of native Microsoft 365 or Office 365 features that are not supported in Exchange on-premises today, such as leveraging full Exchange Online search and Focused Inbox. These features will only be available when using Outlook for iOS and Android.
 
 > [!NOTE]
 > Device management through the on-premises Exchange admin center (EAC) is not possible. Intune is required to manage mobile devices.
 
 ## Data security, access, and auditing controls
 
-With on-premises data being synchronized with Exchange Online, customers have questions about how the data is protected in Exchange Online. [Encryption in the Microsoft Cloud](https://aka.ms/office365ce) discusses how BitLocker is used for volume-level encryption. [Service Encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) is supported in the Outlook for iOS and Android architecture, but note that the user must have an Office 365 Enterprise E5 license (or the corresponding versions of those plans for Government or Education) to have an encryption policy assigned using the set-mailuser cmdlet.
+With on-premises data being synchronized with Exchange Online, customers have questions about how the data is protected in Exchange Online. [Encryption in the Microsoft Cloud](https://aka.ms/office365ce) discusses how BitLocker is used for volume-level encryption. [Service Encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) is supported in the Outlook for iOS and Android architecture, but note that the user must have a Microsoft 365 or Office 365 Enterprise E5 license (or the corresponding versions of those plans for Government or Education) to have an encryption policy assigned using the set-mailuser cmdlet.
 
-By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Office 365. [Office 365 Administrative Access Controls](https://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
+By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Microsoft 365 or Office 365. [Administrative Access Controls](https://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
 
-[ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Office 365 has implemented.
+[ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Microsoft 365 or Office 365 has implemented.
 
 ## Connection flow
 
