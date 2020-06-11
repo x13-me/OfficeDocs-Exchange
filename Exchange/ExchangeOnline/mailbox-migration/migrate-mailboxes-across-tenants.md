@@ -29,7 +29,7 @@ localization_priority: Priority
    > [!NOTE]
    > At this time, a built-in tenant to tenant migration option is not available.
 
-This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
+This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
 
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 organizations. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 organization.
 
@@ -70,7 +70,7 @@ The source tenant is the Fabrikam Office 365 organization from which you are mig
 
 To create the resources in the target (Contoso) tenant:
 
-1. If the [Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=626003) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation.
+1. If the [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation.
 
    1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
 
@@ -156,7 +156,7 @@ The primary email domain, fabrikam.com, must be removed from all objects in the 
 
 7. Use Windows PowerShell command Get-MsolUser -DomainName Fabrikam.com to retrieve a list of all objects that are still using the domain and blocking removal.
 
-8. For common domain removal issues, see [You get an error message when you try to remove a domain from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=393489).
+8. For common domain removal issues, see [You get an error message when you try to remove a domain from Office 365](https://docs.microsoft.com/office365/troubleshoot/administration/error-remove-domain-from-office-365).
 
 #### Target tenant preparation
 

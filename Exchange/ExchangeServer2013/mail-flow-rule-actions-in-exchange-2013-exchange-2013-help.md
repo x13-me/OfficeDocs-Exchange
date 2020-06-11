@@ -209,7 +209,7 @@ The actions that are available in transport rules on Mailbox servers are describ
 <td><p><em>ApplyRightsProtectionTemplate</em></p></td>
 <td><p><code>RMSTemplate</code></p></td>
 <td><p>Applies the specified Rights Management Services (RMS) template to the message.</p>
-<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>.</p></td>
+<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview">Exchange licensing FAQs</a>.</p></td>
 <td><p>Exchange 2010 or later</p></td>
 </tr>
 <tr class="even">
@@ -593,7 +593,7 @@ The property values that are used for actions in transport rules are described i
 <td><p>Specifies the Rights Management Services (RMS) template that's applied to the message.</p>
 <p>In the EAC, you select the RMS template from a list.</p>
 <p>In the Exchange Management Shell, use the <strong>Get-RMSTemplate</strong> cmdlet to see the RMS templates that are available.</p>
-<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>.</p></td>
+<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview">Exchange licensing FAQs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><code>SCLValue</code></p></td>
