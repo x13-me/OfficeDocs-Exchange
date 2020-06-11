@@ -90,7 +90,7 @@ A hybrid deployment involves several different services and components:
 
 - **Azure Active Directory synchronization**: Azure AD synchronization uses Azure AD Connect to replicate on-premises Active Directory information for mail-enabled objects to the cloud to support the unified global address list (GAL) and user authentication. Organizations configuring a hybrid deployment need to deploy Azure AD Connect on a separate, on-premises server to synchronize your on-premises Active Directory with Microsoft 365 or Office 365.
 
-   Learn more at: [Prerequisites for Azure AD Connect](https://go.microsoft.com/fwlink/p/?linkID=203007).
+   Learn more at: [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
 ## Hybrid deployment example
 
@@ -186,7 +186,7 @@ Learn more at: [IRM in Exchange hybrid deployments](irm.md)
 
 Mobile devices are supported in a hybrid deployment. If Exchange ActiveSync is already enabled on your existing servers, they'll continue to redirect requests from mobile devices to mailboxes located on the on-premises Mailbox server. For mobile devices connecting to existing mailboxes that are moved from the on-premises organization to the cloud, Exchange ActiveSync profiles will automatically be updated to connect to the cloud on most phones. All mobile devices that support Exchange ActiveSync should be compatible with a hybrid deployment.
 
-Learn more at: [Mobile Phones](https://go.microsoft.com/fwlink/p/?linkId=206387)
+Learn more at: [Exchange ActiveSync](https://docs.microsoft.com/Exchange/clients/exchange-activesync/exchange-activesync).
 
 ### Client requirements
 
