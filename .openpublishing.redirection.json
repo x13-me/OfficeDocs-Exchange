@@ -165,6 +165,16 @@
         "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/create-virtual-directory.md",
         "redirect_url": "https://docs.microsoft.com/Exchange/create-virtual-directory-exchange-2013-help",
         "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help",
+        "redirect_document_id": true
       }
     ]
 }
