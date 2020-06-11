@@ -57,7 +57,7 @@ Use the following links to access information to help you plan the deployment of
 
 - [Multi-tenancy in Exchange 2013](multi-tenancy-in-exchange-2013-exchange-2013-help.md): Read this topic to learn more about how you can configure Exchange 2013 to host multiple and discrete organizations or business units that ordinarily don't share email, data, users, global address lists (GALs), or other commonly used Exchange objects.
 
-- [Exchange Development Technologies](https://go.microsoft.com/fwlink/p/?linkid=268448): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
+- [Exchange Development Technologies](https://docs.microsoft.com/exchange/client-developer/exchange-server-development): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
 
 ## Establish a test environment
 
@@ -103,7 +103,7 @@ You can use different types and modes of Exchange 2013 Setup to install and main
 
 ## Exchange editions and versions
 
-Exchange 2013 is available in two server editions: Standard Edition and Enterprise Edition. These are licensing editions that are defined by a product key. For more information, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+Exchange 2013 is available in two server editions: Standard Edition and Enterprise Edition. These are licensing editions that are defined by a product key. For more information, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 ## Types of Exchange Setup
 
