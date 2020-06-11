@@ -23,7 +23,7 @@ You can include additional text in the email message that's sent when a fax mess
 > [!NOTE]
 > The custom text that accompanies a fax message is limited to 512 characters, and can include simple HTML text.
 
-For more information about fax partners, see [Microsoft PinPoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+For more information about fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 For additional management tasks related to faxing, see [Faxing procedures](faxing-procedures.md).
 

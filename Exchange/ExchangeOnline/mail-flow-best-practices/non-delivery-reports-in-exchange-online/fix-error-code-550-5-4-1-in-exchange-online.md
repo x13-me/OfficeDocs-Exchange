@@ -81,7 +81,7 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 - Verify the configuration of the Send connectors and Receive connectors in your on-premises Exchange organization that are used for hybrid. These connectors are configured automatically by the Hybrid Configuration Wizard, and the wizard might need to be run again by your Exchange administrator.
 
-For more information, see Microsoft Knowledge Base article [KB2827473](https://go.microsoft.com/fwlink/p/?LinkId=328236).
+For more information, see [this topic](https://docs.microsoft.com/office365/troubleshoot/antispam/relay-access-denied-ndr).
 
 For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
 

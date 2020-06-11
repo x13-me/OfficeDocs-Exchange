@@ -59,7 +59,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?linkId=836274">
+        <a href="/Exchange/new-features/build-numbers-and-release-dates">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

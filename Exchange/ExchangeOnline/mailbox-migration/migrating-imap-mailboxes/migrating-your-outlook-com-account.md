@@ -65,7 +65,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 6. On your mobile device, download the Microsoft Authenticator from your app store.
 
-    Choose on of the links take you to the Microsoft Authenticator for [Windows Phone](https://go.microsoft.com/fwlink/p/?LinkId=722777), [Android](https://go.microsoft.com/fwlink/p/?LinkId=722778) or [iOS](https://go.microsoft.com/fwlink/p/?LinkId=722779).
+    Choose on of the links take you to the Microsoft Authenticator for [Windows Phone](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6), [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator) or [iOS](https://apps.apple.com/app/azure-authenticator/id983156458).
 
 7. Open the Microsoft Authenticator app on your mobile device, and choose **+**. Scan the code on the **Set up an authenticator app** page.
 
