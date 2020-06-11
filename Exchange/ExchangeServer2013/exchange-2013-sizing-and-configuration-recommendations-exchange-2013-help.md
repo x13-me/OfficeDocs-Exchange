@@ -190,7 +190,7 @@ The pagefile should not be hosted on the same drive as Exchange database files o
 
 It is imperative that you use a fixed size pagefile and not allow Windows to manage the size. Growing the page file can be a very performance-intensive task and can cause issues when Exchange is under stress.
 
-If you need to get a full kernel dump, then use Microsoft Knowledge Base article 969028, [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=524044), for dedicated dump file.
+If you need to get a full kernel dump, see [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump).
 
 ## Outlook Mode
 

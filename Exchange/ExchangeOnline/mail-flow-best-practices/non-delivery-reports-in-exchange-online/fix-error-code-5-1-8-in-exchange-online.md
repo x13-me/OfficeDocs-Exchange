@@ -33,7 +33,7 @@ You received this NDR with error code 5.1.8 because your account has been blocke
 
 ## I got this bounce message. How do I fix it?
 
-First, you need to reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://go.microsoft.com/fwlink/p/?linkid=861995).
+First, you need to reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 Then, you need to tell your email admin that you think your account has been compromised. Your admin will need to unblock your account before you can send email again.
 
