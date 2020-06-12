@@ -42,7 +42,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 1. Sign in to Outlook.com or Hotmail.com at <https://outlook.live.com/owa/>.
 
-2. Go to the [Security settings](https://go.microsoft.com/fwlink/p/?LinkId=239676) page. Enter your password if prompted.
+2. Go to the [Security settings](https://account.live.com/Proofs/Manage) page. Enter your password if prompted.
 
     If you want to navigate to the Security settings page, in Outlook.com click or tap your profile picture on the upper right \> **View account** and on the Account page, On your **Account** page, choose **Security** on the blue bar and then, **more security options**.
 

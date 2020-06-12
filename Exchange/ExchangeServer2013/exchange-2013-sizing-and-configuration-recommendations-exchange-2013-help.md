@@ -96,29 +96,29 @@ If you are unable to install .NET 4.5.2, refer to Microsoft Knowledge Base artic
 
 The Exchange performance team recommends installing all of the following performance-related hot fixes.
 
-  - [Update that improves cluster resiliency in Windows Server 2012 is available](https://go.microsoft.com/fwlink/p/?linkid=524088)
+- [Update that improves cluster resiliency in Windows Server 2012 is available](https://support.microsoft.com/help/2838669)
 
-  - [Recommended hotfixes and updates for Windows Server 2012-based failover clusters](https://go.microsoft.com/fwlink/p/?linkid=524089)
+- [Recommended hotfixes and updates for Windows Server 2012-based failover clusters](https://support.microsoft.com/help/2784261)
 
-  - [Recommended hotfixes and updates for Windows Server 2012 R2-based failover clusters](https://go.microsoft.com/fwlink/p/?linkid=524090)
+- [Recommended hotfixes and updates for Windows Server 2012 R2-based failover clusters](https://support.microsoft.com/help/2920151)
 
-  - [Incorrect RSS processor assignment on a Windows 8 or Windows Server 2012-based computer that has multi-core processors](https://go.microsoft.com/fwlink/p/?linkid=324140)
+- [Incorrect RSS processor assignment on a Windows 8 or Windows Server 2012-based computer that has multi-core processors](https://support.microsoft.com/help/2846837)
 
-  - [Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://go.microsoft.com/fwlink/p/?linkid=312962)
+- [Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://support.microsoft.com/help/2995145)
 
-  - [Outlook connectivity issue if SSLOffloading is "True" in Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=524091)
+- [Outlook connectivity issue if SSLOffloading is "True" in Exchange 2013](https://support.microsoft.com/help/2925281)
 
-  - [Long server connection for Outlook after a database failover in Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524092)
+- [Long server connection for Outlook after a database failover in Exchange Server 2013](https://support.microsoft.com/help/2928803)
 
-  - [Slow performance in Outlook Web App when Lync is integrated with Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524093)
+- [Slow performance in Outlook Web App when Lync is integrated with Exchange Server 2013](https://support.microsoft.com/help/2962434)
 
-  - [EMS takes a long time to execute the first command in an Exchange Server 2013 Cumulative Update 5 environment](https://go.microsoft.com/fwlink/p/?linkid=524094)
+- [EMS takes a long time to execute the first command in an Exchange Server 2013 Cumulative Update 5 environment](https://support.microsoft.com/help/2986779)
 
-  - [Message routing latency if IPv6 is enabled in Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524095)
+- [Message routing latency if IPv6 is enabled in Exchange Server 2013](https://support.microsoft.com/help/2963590)
 
-  - [High CPU usage by an application that depends on a Microsoft LDAP client in WIndows Server 2008 R2 SP1](https://go.microsoft.com/fwlink/p/?linkid=530287)
+- [High CPU usage by an application that depends on a Microsoft LDAP client in WIndows Server 2008 R2 SP1](https://support.microsoft.com/help/3004383)
 
-  - [CPU usage is high when you use RPC over HTTP protocol in Windows 8.1 or Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?linkid=619127)
+- [CPU usage is high when you use RPC over HTTP protocol in Windows 8.1 or Windows Server 2012 R2](https://support.microsoft.com/help/3041832)
 
 ## Networking
 
