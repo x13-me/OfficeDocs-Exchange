@@ -8,7 +8,7 @@ ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Use Exchange Online PowerShell to display Microsoft 365 or Office 365 mailbox information
+title: Use Exchange Online PowerShell to display mailbox information
 search.appverid: MET150
 ms.collection:
 - Ent_O365
