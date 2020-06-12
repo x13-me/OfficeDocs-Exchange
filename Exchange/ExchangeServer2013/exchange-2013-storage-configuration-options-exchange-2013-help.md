@@ -705,17 +705,17 @@ The following table provides guidance on volume configurations.
 <td><p>ReFS is a newly engineered file system for Windows Server 2012 that is built on the foundations of NTFS. ReFS maintains high degree of compatibility with NTFS while providing enhanced data verification and auto-correction techniques as well as an integrated end-to-end resiliency to corruptions especially when used in conjunction with the storage spaces feature. For more information on ReFS, see <a href="https://docs.microsoft.com/windows-server/storage/refs/refs-overview">Resilient File System Overview</a>.</p></td>
 <td><p>Supported for volumes containing Exchange database files, log files and content indexing files. If deploying on Windows Server 2012, ensure the following hotfixes are installed on Windows Server 2012:</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717874">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717877">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717879">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2822241">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2884597">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2894875">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
 </ul>
 <p>ReFS is not supported for OS volumes.</p>
 <p>Best practice: Data integrity features must be disabled for the Exchange database (.edb) files or the volume that hosts these files.</p></td>
 <td><p>Supported for volumes containing Exchange database files, log files and content indexing files. If deploying on Windows Server 2012, ensure the following hotfixes are installed on Windows Server 2012:</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717874">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717877">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717879">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2822241">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2884597">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2894875">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
 </ul>
 <p>ReFS is not supported for OS volumes.</p>
 <p>Best practice: Data integrity features must be disabled for the Exchange database (.edb) files or the volume that hosts these files.</p></td>

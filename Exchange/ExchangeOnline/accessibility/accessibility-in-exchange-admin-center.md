@@ -31,9 +31,9 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016.
 
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=786972).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/15363/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=798796).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://support.microsoft.com/help/17479).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -61,7 +61,7 @@ The bottom of the main window is a status bar which indicates how many records a
 
 ## Use a screen reader and keyboard shortcuts
 
-The EAC includes accessible names that can be read by a screen reader as you work in the application. You can use Narrator, the built-in screen reader in Windows, or a third-party screen reader, such as [JAWS](https://go.microsoft.com/fwlink/p/?LinkId=787625). For more information, refer to [Get started using a screen reader in the Exchange admin center](get-started-using-screen-reader.md). You can also use [Windows Speech Recognition](https://go.microsoft.com/fwlink/p/?LinkId=746227) or a third-party speech tool to give voice commands to the EAC.
+The EAC includes accessible names that can be read by a screen reader as you work in the application. You can use Narrator, the built-in screen reader in Windows, or a third-party screen reader, such as [JAWS](https://go.microsoft.com/fwlink/p/?LinkId=787625). For more information, refer to [Get started using a screen reader in the Exchange admin center](get-started-using-screen-reader.md). You can also use [Windows Speech Recognition](https://support.microsoft.com/help/14213) or a third-party speech tool to give voice commands to the EAC.
 
 To navigate in the EAC and to cycle through groups of screen elements, press Ctrl+F6 (forward) or Ctrl+Shift+F6 (backward). To cycle through screen elements, including lists of items, press the Tab key (forward) or Shift+Tab (backward). To select an item, press Enter. To browse within menus or lists, press the Up Arrow key or the Down Arrow key, and then, to make a selection, press Enter. To exit a menu or mode, press Esc. For more details, go to [Keyboard shortcuts for the Exchange admin center](keyboard-shortcuts-in-admin-center.md).
 
