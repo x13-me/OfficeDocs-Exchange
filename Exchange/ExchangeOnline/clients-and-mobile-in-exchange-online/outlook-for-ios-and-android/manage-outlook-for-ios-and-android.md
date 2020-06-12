@@ -82,7 +82,7 @@ Outlook for iOS and Android fully supports the capabilities provided by MDM for 
 
 For detailed information on MDM, see the following resources:
 
-- [Overview built-in Mobile Device Management for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=623837).
+- [Overview built-in Mobile Device Management for Office 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 - [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 

@@ -92,7 +92,7 @@ Deep content analysis is a cornerstone of DLP in Exchange. [Document Fingerprint
 
 ### DLP sensitive information types for new regions
 
-Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information types covering an increased set of regions, which makes it easier to start using the DLP features. Exchange 2013 SP1 adds region support for Poland, Finland and Taiwan. To learn more about the new DLP sensitive information types, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information types covering an increased set of regions, which makes it easier to start using the DLP features. Exchange 2013 SP1 adds region support for Poland, Finland and Taiwan. To learn more about the new DLP sensitive information types, see [What the sensitive information types in Exchange 2013 look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md).
 
 ### Using AD FS claims-based authentication with Outlook Web App and ECP
 
