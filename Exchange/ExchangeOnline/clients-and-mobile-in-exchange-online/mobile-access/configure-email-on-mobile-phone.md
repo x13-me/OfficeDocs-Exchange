@@ -29,7 +29,7 @@ You can configure a mobile phone, such as a Windows Phone, to use Microsoft Exch
 - Exchange ActiveSync is enabled in your organization.
 
 > [!NOTE]
-> For device-specific information about setting up Microsoft Exchange-based email on a phone or tablet, see [Set up a mobile device using Office 365 for business](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+> For device-specific information about setting up Microsoft Exchange-based email on a phone or tablet, see [Set up a mobile device](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Configure a mobile phone to use Exchange ActiveSync
 
