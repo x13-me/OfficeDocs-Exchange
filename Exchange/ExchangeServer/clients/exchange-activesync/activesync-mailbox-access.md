@@ -30,7 +30,7 @@ For information about setting up email on your mobile device, see these topics:
 
 - [Set up Office apps and email on Android](https://go.microsoft.com/fwlink/p/?linkid=525632)
 
-- [Set up Office apps and email on Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=396654)
+- [Set up Office apps and email on Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
 
 For additional management tasks related to user access to mailboxes, see these topics:
 
