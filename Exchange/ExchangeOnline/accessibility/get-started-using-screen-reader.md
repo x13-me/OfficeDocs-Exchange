@@ -31,9 +31,9 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
 
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -57,7 +57,7 @@ The EAC works with the Narrator and JAWS screen readers, among others. These scr
 
 - If your screen reader stops reading, press Alt+Tab to leave the current window, and then press Alt+Tab again to return to it. This resets the focus on the current window to get your screen reader to read the window properly.
 
-For more information about Narrator, refer to [Hear text read aloud with Narrator](https://go.microsoft.com/fwlink/p/?LinkID=798799). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/p/?LinkId=787625).
+For more information about Narrator, refer to [Hear text read aloud with Narrator](https://support.microsoft.com/help/14234). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/p/?LinkId=787625).
 
 ## Do more tasks with the EAC and a screen reader
 

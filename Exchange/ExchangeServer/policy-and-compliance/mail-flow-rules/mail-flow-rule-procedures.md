@@ -44,7 +44,7 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
   - [Use mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
-  - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help)
+  - [Organization-wide disclaimers, signatures, footers, or headers in Exchange Server](signatures.md)
 
   - [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help)
 

@@ -153,7 +153,7 @@ By default, an Exchange organization is enabled for IRM. To actually implement I
 |Outlook|AD RMS templates for protecting messages are available in Outlook 2007 or later. <br/> Outlook protection rules in Exchange require Outlook 2010 or later.|
 |Exchange ActiveSync|IRM is available on mobile applications and devices that support Exchange ActiveSync protocol version 14.1 or later, and the included **RightsManagementInformation** tag (both introduced in Exchange 2010 Service Pack 1). Users with supported devices can use ActiveSync to view, reply to, forward, and create IRM-protected messages without connecting to a computer to activate the device for IRM. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](https://docs.microsoft.com/exchange/information-rights-management-in-exchange-activesync-exchange-2013-help).|
 
-Exchange IRM features support Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Microsoft partners](https://go.microsoft.com/fwlink/p/?linkId=210336).
+Exchange IRM features support Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, search for Information Protection and Control Partners on the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Configure and test IRM
 
@@ -183,5 +183,5 @@ For more information, see [Test-IRMConfiguration](https://docs.microsoft.com/pow
 
 The Azure Rights Management connector (RMS connector) is an optional application that enhances data protection for your Exchange server by employing the cloud-based Azure Rights Management (Azure RMS) service. Once you install the RMS connector, it provides continuous data protection during the lifetime of the information. And, because these services are customizable, you can define the level of protection that you need. For example, you can limit email message access to specific users, or set view-only rights for certain messages.
 
-To learn more about the RMS connector and how to install it, see [Deploying the Azure Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432).
+To learn more about the RMS connector and how to install it, see [Deploying the Azure Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).
 ::: moniker-end
