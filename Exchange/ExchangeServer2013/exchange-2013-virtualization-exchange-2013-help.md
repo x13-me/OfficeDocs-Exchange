@@ -62,7 +62,7 @@ For deployments of Exchange 2013:
 
   In addition, it's possible that guest virtual machines may be prevented from directly communicating with Fibre Channel or SCSI host bus adapters (HBAs) installed in the host machine. In this event, you must configure the adapters in the host machine's operating system and present the logical unit numbers (LUNs) to guest virtual machines as either a virtual disk or a pass-through disk.
 
-- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (otherwise known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third-party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?linkid=799723).
+- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (otherwise known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third-party providers as well. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](https://docs.microsoft.com/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
 
 ## Host machine storage requirements
 

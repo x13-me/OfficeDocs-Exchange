@@ -34,7 +34,7 @@ For additional management tasks related to archiving, see [Manage In-Place Archi
 
 ## More information
 
-- Archiving of Lync content occurs on the server, independent of whether the user has Lync client configured to [save Lync IM conversations in the Conversation History folder](https://go.microsoft.com/fwlink/p/?LinkId=400589).
+- Archiving of Lync content occurs on the server, independent of whether the user has Lync client configured to [save Lync IM conversations in the Conversation History folder](https://support.microsoft.com/office/55cd03a1-b7a5-4c03-9be0-044cbc615642).
 
 - Archiving of Lync content begins after the user is placed on Litigation Hold or In-Place Hold. To ensure user's Lync communications are archived from the time their account is created, place the account on hold immediately after it's created.
 

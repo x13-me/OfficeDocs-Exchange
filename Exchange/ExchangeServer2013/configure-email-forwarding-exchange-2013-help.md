@@ -61,7 +61,7 @@ To make sure that you've successfully configured email forwarding, do one of the
 
 This topic is for admins. If you want to forward your own email to another recipient, check out the following topics:
 
-- [Forward email to another email account](https://go.microsoft.com/fwlink/p/?LinkId=510866)
+- [Forward email to another email account](https://support.microsoft.com/office/ecafbc06-e812-4b9e-a7af-5074a9c7abd0)
 
 - [Manage email messages by using rules](https://go.microsoft.com/fwlink/p/?LinkId=510869)
 

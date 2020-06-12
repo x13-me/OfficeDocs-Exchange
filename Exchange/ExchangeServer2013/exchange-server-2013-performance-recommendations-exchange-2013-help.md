@@ -68,4 +68,4 @@ More about Exchange 2013 architectural changes, and background information on ot
 
 [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md)
 
-[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](https://go.microsoft.com/fwlink/p/?linkid=169626)
+[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](https://docs.microsoft.com/archive/blogs/tmarq/asp-net-thread-usage-on-iis-7-5-iis-7-0-and-iis-6-0)
