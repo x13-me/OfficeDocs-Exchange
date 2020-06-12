@@ -27,7 +27,7 @@ Each CU is a full installation of Exchange that includes all updates and changes
 ::: moniker range="exchserver-2019"
 |**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2019 CU6|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/xxxxxxx)|
+|Exchange 2019 CU6|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
 |Exchange 2019 CU5|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2019 CU4|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2019 CU3|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
@@ -46,7 +46,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2016 CU17|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/xxxxxxx)|
+|Exchange 2016 CU17|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
 |Exchange 2016 CU16|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2016 CU15|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2016 CU14|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
