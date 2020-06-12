@@ -24,7 +24,7 @@ Exchange provides the following journaling options:
 
 - **Standard journaling**: Journal all messages that are sent to and received by mailboxes on a specific mailbox database. To journal all messages in your organization, you need to configure journaling on all mailbox databases on all Exchange servers.
 
-- **Premium journaling**: Use *journal rules* to journal messages based on recipients (all recipients or specified recipients), and scope (internal messages, external messages, or all messages). Premium journaling requires Exchange Enterprise client access licenses (CALs). For more information about CALs, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+- **Premium journaling**: Use *journal rules* to journal messages based on recipients (all recipients or specified recipients), and scope (internal messages, external messages, or all messages). Premium journaling requires Exchange Enterprise client access licenses (CALs). For more information about CALs, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 To configure journaling, see [Journaling procedures in Exchange Server](journaling-procedures.md).
 
@@ -157,4 +157,4 @@ Because journal rules are stored in Active Directory, they're read and applied b
 
 ## Troubleshooting
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612). If you're having trouble with the alternate journaling mailbox, see [KB2829319](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612). If you're having trouble with the alternate journaling mailbox, see [KB2829319](https://support.microsoft.com/help/2829319).

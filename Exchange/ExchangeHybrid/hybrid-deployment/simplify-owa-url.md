@@ -84,4 +84,4 @@ The authentication prompt experience that users can expect is described in the f
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
 > [!NOTE]
-> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in [KB2535227}(https://support.microsoft.com/help/2535227), and that AD FS is configured per the general Office 365 guidance.

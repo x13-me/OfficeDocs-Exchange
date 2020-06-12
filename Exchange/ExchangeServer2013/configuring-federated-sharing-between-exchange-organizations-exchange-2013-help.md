@@ -78,7 +78,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 tenant service organization.
 
@@ -123,7 +123,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 tenant service organization.
 
