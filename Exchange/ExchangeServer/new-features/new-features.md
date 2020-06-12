@@ -155,7 +155,7 @@ The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is mo
 
 - The same wizard will be used by everyone configuring a hybrid deployment who's running Exchange 2013 or later.
 
-In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
+In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 Exchange ActiveSync clients will be seamlessly redirected to Microsoft 365 or Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
 
@@ -347,7 +347,7 @@ The Hybrid Configuration Wizard (HCW) that was included with Exchange 2013 is mo
 
 - The same wizard will be used by everyone configuring a hybrid deployment who's running Exchange 2013 or Exchange 2016.
 
-In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527969).
+In addition to Hybrid Configuration Wizard improvements, multi-forest hybrid deployments are being simplified with Azure Active Directory Connect (AADConnect). AADConnect introduces management agents that will make it significantly easier to synchronize multiple on-premises Active Directory forests with a single Microsoft 365 or Office 365 organization. For more information about AADConnect, see [Integrating your on-premises identities with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 Exchange ActiveSync clients will be seamlessly redirected to Microsoft 365 or Office 365 when a user's mailbox is moved to Exchange Online. To support this, ActiveSync clients need to support HTTP 451 redirect. When a client is redirected, the profile on the device is updated with the URL of the Exchange Online service. This means the client will no longer attempt to contact the on-premises Exchange server when trying to find the mailbox.
 
@@ -566,7 +566,7 @@ For more information, see [Mail flow rules in Exchange 2016](../policy-and-compl
 
 The Azure Rights Management connector (also known as the Microsoft Rights Management connector or RMS connector) is an optional application that helps you enhance data protection for your Exchange 2016 server by connecting to the cloud-based Azure Rights Management service (also known as Microsoft Rights Management or Azure RMS). Once you install the RMS connector, it provides continuous data protection throughout the life span of the information and because these services are customizable, you can define the level of protection you need. For example, you can limit email message access to specific users or set view-only rights for certain messages.
 
-For more information, see [Deploying the Azure Rights Management connector](https://go.microsoft.com/fwlink/p/?LinkId=330432).
+For more information, see [Deploying the Azure Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).
 
 #### In-place Archiving, retention, and eDiscovery
 <a name="Archiving2010"> </a>

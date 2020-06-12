@@ -32,7 +32,7 @@ The following table lists the client applications that can be used to access arc
 |Exchange ActiveSync|No|
 
 > [!NOTE]
-> • In-Place Archiving is a premium feature and requires an Exchange Enterprise client access license (CAL). For details about how to license Exchange, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?LinkId=237292). <br/>• For details about the versions of Outlook that are required to access an archive mailbox, see [Outlook license requirements for Exchange features](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+> • In-Place Archiving is a premium feature and requires an Exchange Enterprise client access license (CAL). For details about how to license Exchange, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview). <br/>• For details about the versions of Outlook that are required to access an archive mailbox, see [Outlook license requirements for Exchange features](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
 ## Moving messages to the archive mailbox
 
