@@ -148,9 +148,13 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 1. If your device or application can send from a static public IP address, obtain this IP address and make a note of it. You can share your static IP address with other devices and users, but don't share the IP address with anyone outside of your company. Your device or application can send from a dynamic or shared IP address but messages are more prone to antispam filtering.
 
-2. [Sign in to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-3. Make sure your domain (for example, contoso.com) is selected. Click **Manage DNS**, and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to contoso-com.mail.protection.outlook.com, as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value, which we refer to as your MX endpoint.
+3. Go to **Settings** \> **Domains**, select your domain (for example, contoso.com), and find the MX record.
+
+   The MX record will have a **Points to address or value** value that looks similar to `contoso-com.mail.protection.outlook.com`.
+
+   Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 
@@ -250,9 +254,13 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 1. Obtain the public (static) IP address that the device or application with send from. A dynamic IP address isn't supported or allowed. You can share your static IP address with other devices and users, but don't share the IP address with anyone outside of your company. Make a note of this IP address for later.
 
-2. [Sign in to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-3. Select **Domains**. Make sure your domain, such as contoso.com, is selected. Click **Manage DNS** and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to cohowineinc-com.mail.protection.outlook.com as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value. You'll need this later.
+3. Go to **Settings** \> **Domains**, select your domain (for example, contoso.com), and find the MX record.
+
+   The MX record will have a **Points to address or value** value that looks similar to `contoso-com.mail.protection.outlook.com`.
+
+   Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 
