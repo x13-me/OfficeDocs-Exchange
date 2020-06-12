@@ -72,7 +72,7 @@ The minimum disk space requirements for each host machine are as follows:
 
 - Some hypervisors maintain files on the host machine that are unique to each guest virtual machine. For example, in a Hyper-V environment, a temporary memory storage file (BIN file) is created and maintained for each guest machine. The size of each BIN file is equal to the amount of memory allocated to the guest machine. In addition, other files may also be created and maintained on the host machine for each guest machine.
 
-- If your host machine is running Windows Server 2012 Hyper-V or Hyper-V 2012, and you are configuring a host-based failover cluster that will host Exchange Mailbox servers in a database availability group, then we recommend following the guidance documented in Microsoft Knowledge Base article, [2872325, Guest Cluster nodes in Hyper-V may not be able to create or join](https://support.microsoft.com/kb/2872325).
+- If your host machine is running Windows Server 2012 Hyper-V or Hyper-V 2012, and you are configuring a host-based failover cluster that will host Exchange Mailbox servers in a database availability group, then we recommend following the guidance documented in the Microsoft Knowledge Base article, [KB2872325](https://support.microsoft.com/help/2872325).
 
 ## Exchange storage requirements
 
