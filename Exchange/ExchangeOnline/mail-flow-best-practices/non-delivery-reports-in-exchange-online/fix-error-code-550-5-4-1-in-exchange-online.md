@@ -57,7 +57,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 ### Domain configuration issues
 
-1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Domains** and verify your domain appears in the list as **Active**.
 
@@ -89,7 +89,7 @@ For more information about transport routing in hybrid deployments, see [Transpo
 
 A service issue in Office 365 might be causing the problem. To check the status of Office 365, do the following steps:
 
-1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Service health** to see an overview of any issues.
 
@@ -115,7 +115,7 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
