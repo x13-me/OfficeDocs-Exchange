@@ -79,7 +79,7 @@ One way to test is to sign in as both the sender and recipient of a test message
 
 - If you don't have access to multiple accounts in your organization, you can test in an [Office 365 trial account](https://go.microsoft.com/fwlink/p/?LinkId=402791) or create a few temporary fake users in your organization.
 
-- Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://support.microsoft.com/en-us/help/4026200), or a different computer, device, or web browser for each user.
+- Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://support.microsoft.com/help/4026200), or a different computer, device, or web browser for each user.
 
 ### Look at the message trace
 
