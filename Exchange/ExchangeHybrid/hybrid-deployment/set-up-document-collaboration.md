@@ -72,7 +72,7 @@ Verify that the following prerequisite steps have been completed, and then use t
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
     > [!NOTE]
-    > See [Set up OneDrive for Business in Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627455) for more information.
+    > See [Set up OneDrive for Business in Microsoft 365 or Office 365](https://docs.microsoft.com/onedrive/onedrive) for more information.
 
 Perform the following steps:
 

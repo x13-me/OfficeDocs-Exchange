@@ -144,7 +144,7 @@ To remove a completed migration batch:
 ## Step 5: Re-enable offline access for Outlook on the web
 <a name="bkmk_step5owa"> </a>
 
-Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://go.microsoft.com/fwlink/p/?LinkId=286942).
+Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://support.microsoft.com/office/3214839c-0604-4162-8a97-6856b4c27b36).
 
 ## How do you know this worked?
 <a name="bkmk_how"> </a>

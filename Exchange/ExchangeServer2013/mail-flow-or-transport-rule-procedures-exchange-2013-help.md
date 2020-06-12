@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can begin using transport rules by using the following procedures. To learn about concepts and objectives for transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md): Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using transport rules.
+[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md): Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using transport rules.
 
 [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email): Information to help you comply with your organization's email policies.
 

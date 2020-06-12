@@ -26,8 +26,6 @@ To set up a disclaimer, you create a transport rule that includes the conditions
 > <LI>
 > <P>If you want the information to be added only to outgoing messages, you must add a condition such as recipients located outside the organization. By default, transport rules are applied to both incoming and outgoing messages.</P></LI></UL>
 
-Looking for procedures? See [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md).
-
 ## Examples
 
 Here are a few ideas for how to use disclaimers.
@@ -231,7 +229,5 @@ The following list describes each fallback action:
 - **Ignore**: If the disclaimer can't be inserted into the original message, Exchange delivers the original message unmodified. No disclaimer is added.
 
 ## For more information
-
-[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
 [Transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
