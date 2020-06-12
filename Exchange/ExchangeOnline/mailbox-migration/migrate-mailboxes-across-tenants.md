@@ -119,7 +119,7 @@ Next, you'll schedule the TTL test.
 
 1. In DNS, change the TTL value on the MX record for the primary email domain you wish to transfer to a small number (i.e. 5 minutes). If the TTL cannot be lowered to 5 minutes, make note of the lowest value. Example, if the lowest value is 4 hours, the MX record will have to be changed 4 hours before your migration begins.
 
-2. [Mx Lookup](https://go.microsoft.com/fwlink/p/?LinkId=393487) can be used to verify MX and DNS changes.
+2. [Mx Lookup](https://mxtoolbox.com/) can be used to verify MX and DNS changes.
 
 #### Disable directory sync in source tenant
 
@@ -136,7 +136,7 @@ Change your primary MX record from Office 365 to domain that is not reachable, i
 > [!TIP]
 > If your TTL is short, for example, five minutes, this step can be done at the end of the work day to cause less disruption. If you have a larger TTL, you must change the MX record ahead of time to allow the TTL to expire. Example, a four hour TTL must be changed before 2 PM if you plan to begin migrations at 6 PM.
 
-Verify your MX and DNS changes if necessary. Nslookup or a service like [MxToolbox](https://go.microsoft.com/fwlink/p/?LinkId=393487) can be used to verify MX and DNS changes.
+Verify your MX and DNS changes if necessary. Nslookup or a service like [MxToolbox](https://mxtoolbox.com/) can be used to verify MX and DNS changes.
 
 #### Source tenant preparation
 

@@ -125,21 +125,11 @@ If the steps in the previous section don't solve the issue for the sender, the s
 
 For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
 
-Log in to an administrator account on the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com), and from the **Dashboard**, do the following:
+Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the **Home** page, do the following items:
 
 1. Check the **Message Center** to see if your organization has a known configuration issue.
 
-   1. Choose **Message center**.
-
-   2. Select **View all**.
-
-   3. Select **Prevent or fix issues**, and perform any relevant suggested actions.
-
-2. Check if there's a current service issue in Office 365 affecting the user's account.
-
-   1. Choose **Service health** to see an overview of any issues.
-
-   2. Select **View all** to get more details about all known issues.
+2. Go to **Health** \> **Service health** to see if there's a current service issue in Office 365 affecting the user's account.
 
 3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Office 365.
 
@@ -176,7 +166,7 @@ For more information, see [Configure email forwarding for a mailbox](../../recip
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
