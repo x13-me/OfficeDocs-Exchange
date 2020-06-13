@@ -20,13 +20,13 @@ ms.custom: seo-marvel-apr2020
 
 # Securing Outlook for iOS and Android in Exchange Online
 
-Outlook for iOS and Android provides users the fast, intuitive email and calendar experience that users expect from a modern mobile app, while being the only app to provide support for the best features of Office 365.
+Outlook for iOS and Android provides users the fast, intuitive email and calendar experience that users expect from a modern mobile app, while being the only app to provide support for the best features of Microsoft 365 or Office 365.
 
 Protecting company or organizational data on users' mobile devices is extremely important. Begin by reviewing [Setting up Outlook for iOS and Android](#setting-up-outlook-for-ios-and-android), to ensure your users have all the required apps installed. After that, choose one of the following options to secure your devices and your organization's data:
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Microsoft 365 or Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 
@@ -63,7 +63,7 @@ Once the app is installed, users can follow these steps to add their corporate e
 > [!IMPORTANT]
 > The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
-The richest and broadest protection capabilities for Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
+The richest and broadest protection capabilities for Microsoft 365 or Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
 
 > [!NOTE]
 > While the Enterprise Mobility + Security suite subscription includes both Microsoft Intune and Azure Active Directory Premium, customers can purchase Microsoft Intune licenses and Azure Active Directory Premium licenses separately. All users must be licensed in order to leverage the conditional access and Intune app protection policies that are discussed in this article.
@@ -72,12 +72,12 @@ The richest and broadest protection capabilities for Office 365 data are availab
 
 When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365 or Office 365" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
-2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
    The above policies leverage the grant control [Require app protection policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
 
@@ -115,26 +115,26 @@ For more information on the available settings, see [Android app protection poli
 > [!IMPORTANT]
 > To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/mem/intune/fundamentals/end-user-mam-apps-android).
 
-## Leveraging Mobile Device Management for Office 365
+## Leveraging Mobile Device Management
 
-If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM) for Office 365. This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
+If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM) for Microsoft 365 or Office 365. This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-An global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+An global admin must complete the following steps to activate and set up MDM for Microsoft 365 or Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
-1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
+1. Activating MDM for Microsoft 365 or Office 365 by following steps in the Security & Compliance Center.
 
-2. Setting up MDM for Office 365 by, for example, creating an APNs certificate to manage iOS devices, and by adding a Domain Name System (DNS) record for your domain to support Windows phones.
+2. Setting up MDM for Microsoft 365 or Office 365 by, for example, creating an APNs certificate to manage iOS devices, and by adding a Domain Name System (DNS) record for your domain to support Windows phones.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
 > [!NOTE]
-> Policies and access rules created in MDM for Office 365 will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM for Office 365, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
+> Policies and access rules created in MDM for Microsoft 365 or Office 365 will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM for Microsoft 365 or Office 365, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
 
 ## Leveraging Exchange Online mobile device policies
 
-If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM for Office 365 functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
+If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM for Microsoft 365 or Office 365 functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
 
 ### Mobile device mailbox policy
 
@@ -338,12 +338,12 @@ Set-CASMailbox jane@contoso.com -OutlookMobileEnabled $false
 
 ### Managing add-ins
 
-Outlook for iOS and Android lets users integrate popular apps and services with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and mobile. Since add-ins are managed via Office 365, users are able to share data and messages between Outlook for iOS and Android and the unmanaged add-in (even when the account is managed by an Intune App Protection policy), unless add-ins are turned off for the user within the M365 admin center.
+Outlook for iOS and Android lets users integrate popular apps and services with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and mobile. Since add-ins are managed via Microsoft 365 or Office 365, users are able to share data and messages between Outlook for iOS and Android and the unmanaged add-in (even when the account is managed by an Intune App Protection policy), unless add-ins are turned off for the user within the Microsoft 365 admin center.
 
-If you want to stop your end users from accessing and installing Outlook add-ins (which affects all Outlook clients), execute the following changes to roles in the M365 admin center:
+If you want to stop your end users from accessing and installing Outlook add-ins (which affects all Outlook clients), execute the following changes to roles in the Microsoft 365 admin center:
 
 - To prevent users from installing Office Store add-ins, remove the My Marketplace role from them.
 - To prevent users from side loading add-ins, remove the My Custom Apps role from them.
 - To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
 
-For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Manage deployment of Office 365 add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins).
+For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins).
