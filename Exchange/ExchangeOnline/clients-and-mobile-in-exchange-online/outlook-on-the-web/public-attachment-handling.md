@@ -50,7 +50,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
   - [Checklist: Use AD FS to implement and manage single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=281821)
 
-  - [Setting Up Single Sign On with Office 365 using AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=329949 )
+  - [Setting Up Single Sign On using AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=329949 )
 
   - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
