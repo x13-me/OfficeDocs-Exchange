@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Admins can learn how to integrate Office 365 with a third-party service that affects mail flow.
+description: Admins can learn how to integrate Microsoft 365 or Office 365 with a third-party service that affects mail flow.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -8,7 +8,7 @@ ms.assetid: 7c5b7408-bfa2-4695-a6b7-21ddc8084d52
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Scenario Integrate Office 365 with an email add-on service
+title: Scenario Integrate Microsoft 365 or Office 365 with an email add-on service
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,9 +16,9 @@ manager: serdars
 
 ---
 
-# Scenario: Integrate Office 365 with an email add-on service
+# Scenario: Integrate Microsoft 365 or Office 365 with an email add-on service
 
-Many third-party cloud service solutions provide add-on services for Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so you can use the service.
+Many third-party cloud service solutions provide add-on services for Microsoft 365 or Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Microsoft 365 or Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so you can use the service.
 
 This topic describes the best practices for how your organization can use a third-party email add-on service by examining a fictional service named Contoso Signature Service. This fictional service runs in Azure and provides custom email signatures (note that the service could be deployed in a cloud environment other than Azure). The mail flow and a high-level summary of the service are shown in the following diagram.
 
@@ -26,22 +26,22 @@ This topic describes the best practices for how your organization can use a thir
 
 1. When a user in your Microsoft 365 or Office 365 organization composes and sends a message, the message is diverted to Contoso Signature Service by using a connector and a mail flow rule (also known as a transport rule) that you create.
 
-   Connections from Office 365 to Contoso Signature Service are encrypted by TLS, because you configure the certificate domain name for the service in the connector settings (for example, smtp.contososignatureservice.com).
+   Connections from Microsoft 365 or Office 365 to Contoso Signature Service are encrypted by TLS, because you configure the certificate domain name for the service in the connector settings (for example, smtp.contososignatureservice.com).
 
 2. Contoso Signature Service accepts the message and adds an email signature to the message. The service also stamps the message with a custom header to indicate the message has been processed.
 
-3. Contoso Signature Service routes the message back to Office 365. A connector that you create accepts the incoming messages from Contoso Signature Service.
+3. Contoso Signature Service routes the message back to Microsoft 365 or Office 365. A connector that you create accepts the incoming messages from Contoso Signature Service.
 
-   - Contoso Signature Service uses smart host routing to route messages back to the region where your Microsoft 365 or Office 365 organization is located. For example, if your Office 365 domain is fabrikam.onmicrosoft.com, the destination smart host is fabrikam.mail.protection.outlook.com.
+   - Contoso Signature Service uses smart host routing to route messages back to the region where your Microsoft 365 or Office 365 organization is located. For example, if your Microsoft 365 or Office 365 domain is fabrikam.onmicrosoft.com, the destination smart host is fabrikam.mail.protection.outlook.com.
 
    - Contoso Signature Service provides a unique certificate domain name for each customer. You configure this domain name as an accepted domain in your Microsoft 365 or Office 365 organization, and in the connector settings (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
-4. Office 365 sends the message with the customized signature to the original recipients.
+4. Microsoft 365 or Office 365 sends the message with the customized signature to the original recipients.
 
-The rest of this topic explains how to configure mail flow in Office 365 to work with the email add-on service.
+The rest of this topic explains how to configure mail flow in Microsoft 365 or Office 365 to work with the email add-on service.
 
 > [!NOTE]
-> These elements are required for any email add-on service that you want to integrate with your Microsoft 365 or Office 365 organization. You need to work with the email add-on service provider to configure their required settings in Office 365.
+> These elements are required for any email add-on service that you want to integrate with your Microsoft 365 or Office 365 organization. You need to work with the email add-on service provider to configure their required settings in Microsoft 365 or Office 365.
 
 ## What do you need to know before you begin?
 
@@ -60,7 +60,7 @@ The rest of this topic explains how to configure mail flow in Office 365 to work
 
 The important settings for the connector are:
 
-- From Office 365 to the email add-on service.
+- From Microsoft 365 or Office 365 to the email add-on service.
 
 - Uses smart host routing to the email add-on service.
 
@@ -74,11 +74,11 @@ The important settings for the connector are:
 
 2. The new connector wizard opens. On the **Select your mail flow scenario** page, configure these settings:
 
-   - **From**: **Office 365**
+   - **From**: **Microsoft 365** or **Office 365**
 
    - **To**: **Your organization's email server**
 
-   ![In the new connector wizard, select From \> Office 365 and To \> Your organization's email server.](../../media/852fbdf3-6829-413a-9d08-63421efd10c6.png)
+   ![In the new connector wizard, select From \> Microsoft 365 or Office 365 and To \> Your organization's email server.](../../media/852fbdf3-6829-413a-9d08-63421efd10c6.png)
 
    When you're finished, click **Next**.
 
@@ -104,7 +104,7 @@ The important settings for the connector are:
 
    ![In the new connector wizard, enter the smart host destination for the connector.](../../media/d24e4a9f-bab4-4300-9a8c-c17432fedb5c.png)
 
-6. On the **How should Office 365 connect to your email server?** page, configure these settings:
+6. On the **How should Microsoft 365 or Office 365 connect to your email server?** page, configure these settings:
 
    - Verify **Always use Transport Layer Security (TLS) to secure the connection (recommended)** is selected.
 
@@ -112,7 +112,7 @@ The important settings for the connector are:
 
    - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, smtp.contososignatureservice.com).
 
-   ![In the new connector wizard, use TLS and identify the certificate domain name for connections to Office 365](../../media/2ce67ff7-c6d1-49ae-9790-28c27396ab18.png)
+   ![In the new connector wizard, use TLS and identify the certificate domain name for connections to Microsoft 365 or Office 365](../../media/2ce67ff7-c6d1-49ae-9790-28c27396ab18.png)
 
    When you're finished, click **Next**.
 
@@ -120,7 +120,7 @@ The important settings for the connector are:
 
    ![In the new connector wizard, verify the settings.](../../media/58bf30f3-456b-4671-a9bf-cca682d7dfda.png)
 
-8. On the **Validate this connector** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Office 365 to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
+8. On the **Validate this connector** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Microsoft 365 or Office 365 to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
 
    ![In the new connector wizard, enter an email address to validate the connector.](../../media/8bf14376-b2dd-4b7c-a379-4274fd042dae.png)
 
@@ -234,7 +234,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
   Get-TransportRule -Identity "<Rule Name>" | Format-List Name,FromScope,RouteMessageOutboundConnector,ExceptIfHeaderContainsMessageHeader,ExceptIfHeaderContainsWords,StopRuleProcessing
   ```
 
-## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Office 365
+## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Microsoft 365 or Office 365
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), click **Setup** \> **Domains**, and then click **Add domain**.
 
@@ -248,13 +248,13 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
    ![The TXT proof of domain ownership record for the custom certificate domain.](../../media/fd0ab875-925d-46ea-96fd-00924e6f298f.png)
 
-For more information, see [Add your domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)
+For more information, see [Add your domain to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)
 
 ## Step 4: Create an inbound connector to receive messages from the email add-on service
 
 The important settings for the connector are:
 
-- From the email add-on service to Office 365.
+- From the email add-on service to Microsoft 365 or Office 365.
 
 - TLS encryption and certificate verification is based on the custom certificate domain name that you configured as an accepted domain in the previous step.
 
@@ -268,15 +268,15 @@ The important settings for the connector are:
 
    - **From** **Your organization's email server**
 
-   - **To** **Office 365**
+   - **To** **Microsoft 365** or **Office 365**
 
-   ![In the new connector wizard, select From \> Your organization's email server and From \> Office 365.](../../media/ec97de50-53a0-4392-9096-15a5c15fa238.png)
+   ![In the new connector wizard, select From \> Your organization's email server and From \> Microsoft 365 or Office 365.](../../media/ec97de50-53a0-4392-9096-15a5c15fa238.png)
 
    When you're finished, click **Next**.
 
 3. On the next page, configure these settings:
 
-   - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Office 365).
+   - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Microsoft 365 or Office 365).
 
    - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
 
@@ -288,7 +288,7 @@ The important settings for the connector are:
 
    When you're finished, click **Next**.
 
-4. On the **How should Office 365 identify email from your email server?** page, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+4. On the **How should Microsoft 365 or Office 365 identify email from your email server?** page, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
    ![In the new connector wizard, specify the unique certificate domain name that the email add-on service gave to you.](../../media/ee7a3e8f-51de-4451-8563-0f25656bddc1.png)
 

@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Learn how to use enhanced filtering for connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Office 365.
+description: Learn how to use enhanced filtering for connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Microsoft 365 or Office 365.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -19,7 +19,7 @@ manager: serdars
 
 # Enhanced Filtering for Connectors in Exchange Online
 
-Properly configured inbound connectors are a trusted source of incoming mail to Office 365. But in complex routing scenarios where email for your Office 365 domain is routed somewhere else first, the source of the inbound connector isn't necessarily the true indicator of where the message came from. These complex routing scenarios include:
+Properly configured inbound connectors are a trusted source of incoming mail to Microsoft 365 or Office 365. But in complex routing scenarios where email for your Microsoft 365 or Office 365 domain is routed somewhere else first, the source of the inbound connector isn't necessarily the true indicator of where the message came from. These complex routing scenarios include:
 
 - Third-party cloud filtering services
 
@@ -27,32 +27,32 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 - Hybrid environments (e.g., on-premises Exchange)
 
-Enhanced Filtering for Connectors (also known as "skip listing") allows you to filter email based on the actual source of messages that arrive over the inbound connector. For more information about connectors in Exchange Online, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
+Enhanced Filtering for Connectors (also known as "skip listing") allows you to filter email based on the actual source of messages that arrive over the inbound connector. For more information about connectors in Exchange Online, see [Configure mail flow using connectors](use-connectors-to-configure-mail-flow.md).
 
 ## Scenarios
 
-The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premise mailboxes will still not be filtered by Exchange Online Protection. The only way to get full Exchange Online Protection scanning on all mailboxes is to [move your MX record to Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
+The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premise mailboxes will still not be filtered by Exchange Online Protection. The only way to get full Exchange Online Protection scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
 
-Enhanced Filtering for Connectors is meant to show the value of Exchange Online Protection (EOP) and Advanced Threat Protection (ATP). If you have enabled Enhanced Filtering, we recommend that you move the MX record to Office 365 after testing is done. Although it is possible to keep Enhanced Filtering enabled as a permanent solution, it is not recommended; it adds complexity to your environment and sending the mail directly to Office 365 reduces that complexity. For example, some hosts might invalidate DKIM signatures, causing false positives; when two systems are responsible for protection, determining which one acted on the message to correct the problem is more complicated.
+Enhanced Filtering for Connectors is meant to show the value of Exchange Online Protection (EOP) and Advanced Threat Protection (ATP). If you have enabled Enhanced Filtering, we recommend that you move the MX record to Microsoft 365 or Office 365 after testing is done. Although it is possible to keep Enhanced Filtering enabled as a permanent solution, it is not recommended; it adds complexity to your environment and sending the mail directly to Microsoft 365 or Office 365 reduces that complexity. For example, some hosts might invalidate DKIM signatures, causing false positives; when two systems are responsible for protection, determining which one acted on the message to correct the problem is more complicated.
 
 ## About complex routing
 
-Although we recommend that you point your MX record to Office 365, we realize that there are legitimate business reasons to route your email to somewhere other than Office 365 first. A common scenario resembles the following diagram:
+Although we recommend that you point your MX record to Microsoft 365 or Office 365, we realize that there are legitimate business reasons to route your email to somewhere other than Microsoft 365 or Office 365 first. A common scenario resembles the following diagram:
 
-![Mail flow diagram showing inbound email from the internet to a third-party filtering service to Office 365 and from outbound mail from Office 365 to the internet.](../../media/a8ee0cd5-6a4c-4e57-9030-0f233def25f3v2.png)
+![Mail flow diagram showing inbound email from the internet to a third-party filtering service to Microsoft 365 or Office 365 and from outbound mail from Microsoft 365 or Office 365 to the internet.](../../media/a8ee0cd5-6a4c-4e57-9030-0f233def25f3v2.png)
 
 In this example, the source of the incoming messages is somewhere on the internet. Since the MX record points to a third-party filter, the message goes there first, is processed, and is then sent to the Exchange Online mailbox.
 
-When the message comes into Office 365, Exchange Online Protection (EOP) believes that the third-party filter is the source of the message. This isn't a limitation of Office 365; it's simply how SMTP works.
+When the message comes into Microsoft 365 or Office 365, Exchange Online Protection (EOP) believes that the third-party filter is the source of the message. This isn't a limitation of Microsoft 365 or Office 365; it's simply how SMTP works.
 
 > [!IMPORTANT]
 > Do not put another scanning service or host _after_ Exchange Online Protection (EOP). Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization; when the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](https://docs.microsoft.com/exchange/transport-options) should not be used to introduce non-Exchange servers into the mail flow path.  
 
 ## What happens when you enable Enhanced Filtering for Connectors?
 
-In complex routing scenarios where you must point your MX record to something other than Office 365, Enhanced Filtering for Connectors allows EOP to overlook, or skip, your internal (trusted) IP addresses to find the last known external (untrusted) IP address of the message. This previous IP should be the actual source IP address of the message. This feature is known as _skip listing_.
+In complex routing scenarios where you must point your MX record to something other than Microsoft 365 or Office 365, Enhanced Filtering for Connectors allows EOP to overlook, or skip, your internal (trusted) IP addresses to find the last known external (untrusted) IP address of the message. This previous IP should be the actual source IP address of the message. This feature is known as _skip listing_.
 
-Using the previous example, you would configure the IP address of the third-party filter in Enhanced Filtering for Connectors, and Office 365 will take care of the rest. The following table describes what connections look like before and after your enable Enhanced Filtering for Connector:
+Using the previous example, you would configure the IP address of the third-party filter in Enhanced Filtering for Connectors, and Microsoft 365 or Office 365 will take care of the rest. The following table describes what connections look like before and after your enable Enhanced Filtering for Connector:
 
 ||||
 |---|---|---|
@@ -68,13 +68,13 @@ Using the previous example, you would configure the IP address of the third-part
 
 - You apply Enhanced Filtering for Connectors individually on each inbound connector.
 
-- You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
+- You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Microsoft 365 or Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
 
-- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center).
+- To open the Microsoft 365 compliance center, see [Microsoft 365 compliance center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center).
 
 - The cmdlets to manage inbound connectors are available in Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- The account you use for the procedures needs to be an Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+- The account you use for the procedures needs to be a Microsoft 365 or Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in security and compliance centers](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
 ### Use the Security & Compliance Center to configure Enhanced Filtering for Connectors on an inbound connector
 
@@ -156,7 +156,7 @@ For detailed syntax and parameter information, see [Set-InboundConnector](https:
 
 ## How to measure success
 
-The ultimate goal of Enhanced Filtering is actually to show administrators that changing the MX record to EOP is not only possible but also better. It simplifies the mail flow in your environment and it allows you to see the value of using EOP, which you already purchased as part of Office 365.  This can easily be measured using variety of reports available in the [Reports dashboard](https://protection.office.com/insightdashboard).
+The ultimate goal of Enhanced Filtering is actually to show administrators that changing the MX record to EOP is not only possible but also better. It simplifies the mail flow in your environment and it allows you to see the value of using EOP, which you already purchased as part of Microsoft 365 or Office 365.  This can easily be measured using variety of reports available in the [Reports dashboard](https://protection.office.com/insightdashboard).
 
 You can [view these email security reports in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/view-email-security-reports):
 
@@ -166,6 +166,6 @@ You can [view these email security reports in the Security & Compliance Center](
 
 ## See also
 
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
+[Mail flow best practices for Exchange Online, Microsoft 365, and Office 365 (overview)](../mail-flow-best-practices.md)
 
-[Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md)
+[Configure mail flow using connector](use-connectors-to-configure-mail-flow.md)
