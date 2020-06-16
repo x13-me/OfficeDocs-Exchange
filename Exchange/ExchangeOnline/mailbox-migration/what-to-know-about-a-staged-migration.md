@@ -75,7 +75,7 @@ Here's a description of the staged migration shown in the illustration.
 
 3. The administrator creates and runs a staged migration batch by using the migration dashboard in the Exchange admin center.
 
-   See how-to steps in [Connect Office 365 to your email system](perform-a-staged-migration/perform-a-staged-migration.md#connect-office-365-to-your-email-system), [Migrate your mailboxes](perform-a-staged-migration/perform-a-staged-migration.md#migrate-your-mailboxes), and [Start the staged migration batch](perform-a-staged-migration/perform-a-staged-migration.md#start-the-staged-migration-batch).
+   See how-to steps in [Connect Office 365 to your email system](perform-a-staged-migration/perform-a-staged-migration.md#connect-microsoft-365-or-office-365-to-your-email-system), [Migrate your mailboxes](perform-a-staged-migration/perform-a-staged-migration.md#migrate-your-mailboxes), and [Start the staged migration batch](perform-a-staged-migration/perform-a-staged-migration.md#start-the-staged-migration-batch).
 
     After the administrator starts the migration batch, Exchange Online does the following:
 
@@ -117,7 +117,7 @@ Here's a description of the staged migration shown in the illustration.
 
     - Create an Autodiscover Domain Name System (DNS) record for your Microsoft 365 or Office 365 organization.
 
-    See how-to steps in [Route your email directly to Microsoft 365 or Office 365](perform-a-staged-migration/perform-a-staged-migration.md#route-your-email-directly-to-office-365) and [Complete post migration tasks](perform-a-staged-migration/perform-a-staged-migration.md#complete-post-migration-tasks).
+    See how-to steps in [Route your email directly to Microsoft 365 or Office 365](perform-a-staged-migration/perform-a-staged-migration.md#route-your-email-directly-to-microsoft-365-or-office-365) and [Complete post migration tasks](perform-a-staged-migration/perform-a-staged-migration.md#complete-post-migration-tasks).
 
     The administrator can decommission the on-premises Exchange Servers (optional).
 
