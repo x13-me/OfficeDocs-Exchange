@@ -37,7 +37,7 @@ Make sure all client and desktop computers have installed the Windows DST update
 
 2. If you're running Microsoft 365 or Office 365, update any servers that interact with the authentication system, such as DirSync or AD FS servers. These servers must be updated to ensure uptime.
 
-**Note**: If you're updating server clusters, make sure you follow the usual process for updating clusters. You update the passive server first, fail over to the passive server (which becomes active), and then update the formerly active (now passive) server. For more information about how to update server clusters and high-availability server clusters, see Update Exchange Server Clusters and High Availability Servers and [How to update Windows Server failover clusters](https://support.microsoft.com/kb/174799).
+**Note**: If you're updating server clusters, make sure you follow the usual process for updating clusters. You update the passive server first, fail over to the passive server (which becomes active), and then update the formerly active (now passive) server. For more information about how to update server clusters and high-availability server clusters, see [How to update Windows Server failover clusters](https://support.microsoft.com/help/174799).
 
 ## Step 3: Update Exchange and Outlook, where necessary, on client and desktop computers
 
