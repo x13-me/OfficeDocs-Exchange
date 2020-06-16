@@ -5,8 +5,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
 ms.reviewer: 
-description: Learn how to do an Express migration of on-premises Exchange mailboxes to Office 365..
-title: Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365
+description: Learn how to do an Express migration of on-premises Exchange mailboxes to Microsoft 365 or Office 365.
+title: Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -26,9 +26,9 @@ manager: serdars
 
 ---
 
-# Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365
+# Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365
 
-You can use the minimal hybrid, also known as express migration, option in the Exchange Hybrid Configuration Wizard to migrate the contents of user mailboxes to Office 365 over a course of couple of weeks or less.
+You can use the minimal hybrid, also known as express migration, option in the Exchange Hybrid Configuration Wizard to migrate the contents of user mailboxes to Microsoft 365 or Office 365 over a course of couple of weeks or less.
 
 ## Pre-requisites
 
@@ -45,7 +45,7 @@ Use minimal hybrid to migrate emails if you:
 
 During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run an express migration, the on-premises domain must be a verified domain in your Microsoft 365 or Office 365 organization.
 
-1. Sign in to Office 365 with your work or school account.
+1. Sign in to Microsoft 365 or Office 365 with your work or school account.
 
 2. Choose **Setup** \> **Domains**.
 
@@ -63,7 +63,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
     After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
-7. In the Office 365 domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
+7. In the Microsoft 365 or Office 365 domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
 
     If the verification fails at first, wait awhile, and try again.
 
@@ -74,11 +74,11 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 ## Step 2: Start express migration
 <a name="Initiate"> </a>
 
-On a computer that is domain joined to your on-premises organization, sign in to your Office 365 account by using your global admin credentials, and start the Exchange Hybrid Configuration Wizard on the **Data migration** page of the Office 365 admin page.
+On a computer that is domain joined to your on-premises organization, sign in to your Microsoft 365 or Office 365 account by using your global admin credentials, and start the Exchange Hybrid Configuration Wizard on the **Data migration** page of the Microsoft 365 admin center.
 
 1. In the Microsoft 365 Admin center, go to **Setup** \> **Data migration**.
 
-    ![Go to Users \> Data migration on the Office 365 Admin page](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
+    ![Go to Users \> Data migration in the admin center](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
 
 2. **Migration** page, under **Select your data service**, choose **Exchange**.
 
@@ -88,7 +88,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
     By default the wizard connects to the Exchange server running the latest version.
 
-4. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Office 365 organization choose **next**, and then choose **next** again once the connections and credentials have validated.
+4. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Microsoft 365 or Office 365 organization choose **next**, and then choose **next** again once the connections and credentials have validated.
 
 5. On the **Hybrid Features** page, select **Minimal Hybrid Configuration** \> **next**.
 
@@ -96,29 +96,29 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
 6. On the **Ready for Update** page, choose **update** to prepare the on-premises mailboxes for migration.
 
-## Step 3: Run directory synchronization to create users in Office 365
+## Step 3: Run directory synchronization to create users in Microsoft 365 or Office 365
 <a name="dirsync"> </a>
 
 1. On the **User Provisioning** page, select **Synchronize my users and passwords one time**.
 
-    At this point you are prompted to download and install the **Azure AD Connect wizard** to synchronize your users from on-premises to Office 365.
+    At this point you are prompted to download and install the **Azure AD Connect wizard** to synchronize your users from on-premises to Microsoft 365 or Office 365.
 
 2. Once Azure AD Connect has downloaded, run it and choose the **default options for [Express settings](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)**.
 
-    After synchronization is completed, you will be taken to the Office 365 **Data migration** page where you can see all of your users that were synchronized to Office 365.
+    After synchronization is completed, you will be taken to the **Data migration** page where you can see all of your users that were synchronized to Microsoft 365 or Office 365.
 
-    After the one-time synchronization is done, directory synchronization is turned off for your Office 365 organization.
+    After the one-time synchronization is done, directory synchronization is turned off for your Microsoft 365 or Office 365 organization.
 
 ![On the User Provisioning page select Synchronize my users and passwords one time](media/8595f8d4-70d1-48f9-8e20-5106936dc148.png)
 
-## Step 4: Give Office 365 licences to your users
+## Step 4: Give Microsoft 365 or Office 365 licences to your users
 <a name="licences"> </a>
 
-After Azure AD connect synchronizes your users and their passwords to Office 365, you have to assign Office 365 licenses them so that they have a cloud mailbox to which to migrate their on-premises mailbox data.
+After Azure AD connect synchronizes your users and their passwords to Microsoft 365 or Office 365, you have to assign Microsoft 365 or Office 365 licenses them so that they have a cloud mailbox to which to migrate their on-premises mailbox data.
 
 The status on the **Data migration** page indicates that a license is needed as shown in the figure.
 
-In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ![User status on the Data migration page indicate if a user needs a license](media/f0f211f2-be43-493e-bf6b-e9279c76d03e.png)
 
@@ -140,12 +140,12 @@ After you assign licences to your users you can go to the Data migration page to
 ## Step 6: Update DNS records
 <a name="DNS"> </a>
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 Admin center go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 Admin center go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
 
 ## See also
 <a name="DNS"> </a>
 
-[Office 365 migration performance and best practices](office-365-migration-best-practices.md)
+[Microsoft 365 and Office 365 migration performance and best practices](office-365-migration-best-practices.md)
 
 [How to decommission Exchange servers in a Hybrid environment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange)
 

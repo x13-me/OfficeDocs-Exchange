@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
+description: Exchange Online in Microsoft 365 and Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,11 +20,11 @@ manager: serdars
 
 # Permissions in Exchange Online
 
-Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
+Exchange Online in Microsoft 365 and Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
 
 RBAC is also the permissions model that's used in Microsoft Exchange Server. Most of the links in this topic refer to topics that reference Exchange Server. The concepts in those topics also apply to Exchange Online.
 
-For information about permissions across Office 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+For information about permissions across Microsoft 365 or Office 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 > [!NOTE]
 > Several RBAC features and concepts aren't discussed in this topic because they're advanced features. If the functionality discussed in this topic doesn't meet your needs, and you want to further customize your permissions model, see [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help).
@@ -75,7 +75,7 @@ Exchange Online includes several built-in role groups, each one providing permis
 |:-----|:-----|
 |Discovery Management|Administrators or users who are members of the Discovery Management role group can perform searches of mailboxes in the Exchange Online organization for data that meets specific criteria and can also configure legal holds on mailboxes.|
 |Help Desk|The Help Desk role group, by default, enables members to view and modify the Outlook on the web (formerly known as Outlook Web App) options of any user in the organization. These options might include modifying the user's display name, address, and phone number. They don't include options that aren't available in Outlook on the web options, such as modifying the size of a mailbox or configuring the mailbox database on which a mailbox is located.|
-|Help Desk Administrators (**HelpdeskAdmins\_**_\<unique value\>_)|The Help Desk Administrators role group doesn't have any roles assigned to it. However, it's a member of the View-Only Organization Management role group and inherits the permissions provided by that role group. <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Password administrator Office 365 role.|
+|Help Desk Administrators (**HelpdeskAdmins\_**_\<unique value\>_)|The Help Desk Administrators role group doesn't have any roles assigned to it. However, it's a member of the View-Only Organization Management role group and inherits the permissions provided by that role group. <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Password administrator Microsoft 365 or Office 365 role.|
 |Organization Management|Administrators who are members of the Organization Management role group have administrative access to the entire Exchange Online organization and can perform almost any task against any Exchange Online object, with some exceptions, such as the `Discovery Management` role. <br/> **Important**: Because the Organization Management role group is a powerful role, only users that perform organizational-level administrative tasks that can potentially impact the entire Exchange Online organization should be members of this role group.|
 |Recipient Management|Administrators who are members of the Recipient Management role group have administrative access to create or modify Exchange Online recipients within the Exchange Online organization.|
 |Records Management|Users who are members of the Records Management role group can configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|
@@ -108,16 +108,16 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
 The Default Role Assignment Policy role assignment policy is included with Exchange Online. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
-## Office 365 permissions in Exchange Online
+## Microsoft 365 or Office 365 permissions in Exchange Online
 
-When you create a user in Office 365, you can choose whether to assign various administrative roles, such as Global administrator, Service administrator, Password administrator, and so on, to the user. Some, but not all, Office 365 roles grant the user administrative permissions in Exchange Online.
+When you create a user in Microsoft 365 or Office 365, you can choose whether to assign various administrative roles, such as Global administrator, Service administrator, Password administrator, and so on, to the user. Some, but not all, Microsoft 365 and Office 365 roles grant the user administrative permissions in Exchange Online.
 
 > [!NOTE]
-> The user that was used to create your Office 365 organization is automatically assigned to the Global administrator Office 365 role.
+> The user that was used to create your Microsoft 365 or Office 365 organization is automatically assigned to the Global administrator Microsoft 365 or Office 365 role.
 
-The following table lists the Office 365 roles and the Exchange Online role group they correspond to.
+The following table lists the Microsoft 365 or Office 365 roles and the Exchange Online role group they correspond to.
 
-|**Office 365 role**|**Exchange Online role group**|
+|**Microsoft 365 or Office 365 role**|**Exchange Online role group**|
 |:-----|:-----|
 |Global administrator|Organization Management <br/><br/> **Note**: The Global administrator role and the Organization Management role group are tied together using a special Company Administrator role group. The Company Administrator role group is managed internally by Exchange Online and can't be modified directly.|
 |Billing administrator|No corresponding Exchange Online role group.|
@@ -127,9 +127,9 @@ The following table lists the Office 365 roles and the Exchange Online role grou
 
 For a description of the Exchange Online role groups, see the table "Built-in role groups" in [Role groups](#role-groups).
 
-When you add a user to either the Global administrator or Password administrator Office 365 roles, the user is granted the rights provided by the respective Exchange Online role group. Other Office 365 roles don't have a corresponding Exchange Online role group and won't grant administrative permissions in Exchange Online. For more information about assigning an Office 365 role to a user, see [Assigning admin roles](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+When you add a user to either the Global administrator or Password administrator Microsoft 365 or Office 365 roles, the user is granted the rights provided by the respective Exchange Online role group. Other Microsoft 365 or Office 365 roles don't have a corresponding Exchange Online role group and won't grant administrative permissions in Exchange Online. For more information about assigning a Microsoft 365 or Office 365 role to a user, see [Assigning admin roles](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
-Users can be granted administrative rights in Exchange Online without adding them to Office 365 roles. This is done by adding the user as a member of an Exchange Online role group. When a user is added directly to an Exchange Online role group, they'll receive the permissions granted by that role group in Exchange Online. However, they won't be granted any permissions to other Office 365 components. They'll have administrative permissions only in Exchange Online. Users can be added to any of the role groups listed in the "Built-in role groups table" in [Role groups](#role-groups) with the exception of the Company Administrator and Help Desk Administrators role groups. For more information about adding a user directly to an Exchange Online role group, see [Work with role groups](#work-with-role-groups).
+Users can be granted administrative rights in Exchange Online without adding them to Microsoft 365 or Office 365 roles. This is done by adding the user as a member of an Exchange Online role group. When a user is added directly to an Exchange Online role group, they'll receive the permissions granted by that role group in Exchange Online. However, they won't be granted any permissions to other Microsoft 365 or Office 365 components. They'll have administrative permissions only in Exchange Online. Users can be added to any of the role groups listed in the "Built-in role groups table" in [Role groups](#role-groups) with the exception of the Company Administrator and Help Desk Administrators role groups. For more information about adding a user directly to an Exchange Online role group, see [Work with role groups](#work-with-role-groups).
 
 ## Work with role groups
 

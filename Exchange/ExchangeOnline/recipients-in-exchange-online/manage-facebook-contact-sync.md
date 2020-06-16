@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Facebook contact synchronization lets people set up a connection between their Facebook account and their Office 365 account by using Outlook on the web After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
+description: Facebook contact synchronization lets people set up a connection between their Facebook account and their Microsoft 365 or Office 365 account by using Outlook on the web After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Microsoft 365 or Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
 ms.topic: article
 author: mattpennathe3rd
 f1.keywords:
@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage Facebook contact sync in your organization
 
-Facebook contact synchronization lets people set up a connection between their Facebook account and their Office 365 account by using Outlook on the web (formerly known as Outlook Web App). After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
+Facebook contact synchronization lets people set up a connection between their Facebook account and their Microsoft 365 or Office 365 account by using Outlook on the web (formerly known as Outlook Web App). After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Microsoft 365 or Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
 
 > [!TIP]
 > 
@@ -36,7 +36,7 @@ You turn Facebook contact sync on or off for users in your organization by using
 
 ## For more information
 
-The information for each Facebook friend is stored as a read-only contact record in the Facebook folder in People. The information that's synchronized between Facebook and Outlook on the web includes first name, last name, all phone numbers, all email addresses, and all street addresses. Facebook contacts are stored in the user's mailbox and are retained in accordance with the Office 365 service agreement.
+The information for each Facebook friend is stored as a read-only contact record in the Facebook folder in People. The information that's synchronized between Facebook and Outlook on the web includes first name, last name, all phone numbers, all email addresses, and all street addresses. Facebook contacts are stored in the user's mailbox and are retained in accordance with the Microsoft 365 or Office 365 service agreement.
 
 During the Outlook on the web and Facebook connection setup, the contacts in the user's default contacts folder are uploaded to Facebook as part of a one-time synchronization with Facebook. Facebook uses this contact information as part of the "People you may know" friend suggestions on Facebook. The one-time upload of information also allows Facebook to include the information for your users' Outlook on the web contacts in Facebook applications that your users may choose to use, for example, mobile phone applications.
 

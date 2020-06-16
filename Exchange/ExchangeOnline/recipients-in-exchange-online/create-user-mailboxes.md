@@ -46,7 +46,7 @@ You can use the Microsoft 365 admin center to create a new user account. When yo
 
 ## Use Exchange Online PowerShell to create a new mailbox
 
-This example creates an Exchange Online mailbox and user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365.
+This example creates an Exchange Online mailbox and user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Microsoft 365 or Office 365.
 
 ```PowerShell
 New-Mailbox -Alias hollyh -Name hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -MicrosoftOnlineServicesID hollyh@corp.contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true

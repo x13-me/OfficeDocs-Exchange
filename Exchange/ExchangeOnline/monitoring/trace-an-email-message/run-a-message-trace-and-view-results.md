@@ -21,11 +21,11 @@ manager: serdars
 # Run a message trace and view the results in the Exchange admin center
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 Security Center. For more information, see [Message trace in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc).
+> Message trace is available in the Microsoft 365 security center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
-For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as an Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
+For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 
 ## What do you need to know before you begin?
@@ -39,7 +39,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're an Office 365 for business admin, you can [contact Office 365 for business support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
 
 
 ## Run a message trace

@@ -5,8 +5,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 83bc0b69-de47-4cc4-a57d-47e478e4894e
 ms.reviewer: 
-description: You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Office 365 over time by using a staged migration.
-title: Perform a staged migration of email to Office 365
+description: You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Microsoft 365 or Office 365 over time by using a staged migration.
+title: Perform a staged migration of email
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,13 +25,13 @@ manager: serdars
 
 ---
 
-# Perform a staged migration of email to Office 365
+# Perform a staged migration of email
 
-You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Office 365 over time by using a staged migration.
+You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Microsoft 365 or Office 365 over time by using a staged migration.
 
-This article walks you through the tasks involved with for a staged email migration. [What you need to know about a staged email migration to Office 365](../what-to-know-about-a-staged-migration.md) gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
+This article walks you through the tasks involved with for a staged email migration. [What you need to know about a staged email migration](../what-to-know-about-a-staged-migration.md) gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
 
-For Windows PowerShell steps, see [Use PowerShell to perform a staged migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365).
+For Windows PowerShell steps, see [Use PowerShell to perform a staged migration](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365).
 
 ## Migration Tasks
 
@@ -41,11 +41,11 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 2. [Verify you own the domain](#verify-you-own-the-domain)
 
-3. [Use directory synchronization to create users in Office 365](#use-directory-synchronization-to-create-users-in-office-365)
+3. [Use directory synchronization to create users](#use-directory-synchronization-to-create-users-in-office-365)
 
 4. [Create a list of mailboxes to migrate](#create-a-list-of-mailboxes-to-migrate)
 
-5. [Connect Office 365 to your email system](#connect-office-365-to-your-email-system)
+5. [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system)
 
 6. [Migrate your mailboxes](#migrate-your-mailboxes)
 
@@ -53,7 +53,7 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 8. [Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email](#convert-on-premises-mailboxes-to-mail-enabled-users-so-that-migrated-users-can-get-to-their-email)
 
-9. [Route your email directly to Office 365](#route-your-email-directly-to-office-365)
+9. [Route your email directly to Microsoft 365 or Office 365](#route-your-email-directly-to-office-365)
 
 10. [Delete the staged migration batch](#delete-the-staged-migration-batch)
 
@@ -61,7 +61,7 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 ## Prepare for a staged migration
 
-Before you migrate mailboxes to Office 365 by using a staged migration, there are a few changes you must make first to your Exchange Server environment.
+Before you migrate mailboxes to Microsoft 365 or Office 365 by using a staged migration, there are a few changes you must make first to your Exchange Server environment.
 
 **To prepare for a staged migration**:
 
@@ -80,9 +80,9 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
 
    - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://docs.microsoft.com/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
-   - Wait for the connection to automatically be tested when you [Connect Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
+   - Wait for the connection to automatically be tested when you [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
 
-3. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you [Connect Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
+3. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
 
 4. To migrate the mailboxes, the admin must have one of the following permission sets:
 
@@ -92,26 +92,26 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
 
    - Be assigned the **Receive As** permission on the on-premises mailbox database that stores user mailboxes, and the **WriteProperty** permission to modify the **TargetAddress** property on the on-premises user accounts.
 
-    For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Office 365](../assign-permissions-for-migration.md).
+    For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365](../assign-permissions-for-migration.md).
 
 5. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://go.microsoft.com/fwlink/p/?LinkId=521891).
 
 ## Verify you own the domain
 
-During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Office 365 mailbox. To run a staged migration, the on-premises domain must be verified as a domain you own in your Microsoft 365 or Office 365 organization.
+During the migration, the Simple Mail Transfer Protocol (SMTP) address of each on-premises mailbox is used to create the email address for a new Microsoft 365 or Office 365 mailbox. To run a staged migration, the on-premises domain must be verified as a domain you own in your Microsoft 365 or Office 365 organization.
 
 **Use the domains wizard to verify you own the on-premises domain**:
 
-1. Sign in to Office 365 with your work or school account.
+1. Sign in to Microsoft 365 or Office 365 with your work or school account.
 
    > [!NOTE]
-   > You must be a global admin in Office 365 to complete these steps.
+   > You must be a global admin in Microsoft 365 or Office 365 to complete these steps.
 
 2. Choose **Setup** \> **Domains**.
 
 3. On the **Manage domains** page, click **Add domain** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to start the domain wizard.
 
-4. On the **Add a domain to Office 365** page, choose **Specify a domain name and confirm ownership**.
+4. On the **Add a domain to Microsoft 365 or Office 365** page, choose **Specify a domain name and confirm ownership**.
 
 5. Type the *domain name* (for example, Contoso.com) you use for your on-premises Exchange organization, and then choose **Next**.
 
@@ -119,17 +119,17 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 7. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify domain ownership.
 
-   You can also find the TXT or MX value specific to your Office 365 organization by following instructions in [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   You can also find the TXT or MX value specific to your Microsoft 365 or Office 365 organization by following instructions in [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
-8. In the Office 365 domain wizard choose **done, verify now**, and you should see a verification page. Choose **Finish**.
+8. In the Microsoft 365 or Office 365 domain wizard choose **done, verify now**, and you should see a verification page. Choose **Finish**.
 
    If you do not see the verification page, wait awhile, and try again.
 
    Do not continue to the next step in the domain wizard. You now have verified that you own the on-premises Exchange organization domain, and are ready to continue with an email migration.
 
-## Use directory synchronization to create users in Office 365
+## Use directory synchronization to create users in Microsoft 365 or Office 365
 
 You use directory synchronization to create all the on-premises users in your Microsoft 365 or Office 365 organization.
 
@@ -137,14 +137,14 @@ You will need to license the users after they're created. You have 30 days to ad
 
 **To create new users**:
 
-You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365. After mailboxes are migrated to Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) .
+You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Microsoft 365 or Office 365. After mailboxes are migrated to Microsoft 365 or Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) .
 
 ## Create a list of mailboxes to migrate
 
-After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you'll use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file (used by Office 365 to run the migration) contains information about an on-premises mailbox.
+After you identify the users whose on-premises mailboxes you want to migrate to Microsoft 365 or Office 365, you'll use a comma-separated value (CSV) file to create a migration batch. Each row in the CSV file (used by Microsoft 365 or Office 365 to run the migration) contains information about an on-premises mailbox.
 
 > [!NOTE]
-> There isn't a limit for the number of mailboxes that you can migrate to Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch.
+> There isn't a limit for the number of mailboxes that you can migrate to Microsoft 365 or Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch.
 
 ### Supported attributes
 
@@ -152,13 +152,13 @@ The CSV file for a staged migration supports the following three attributes. Eac
 
 |**Attribute**|**Description**|**Required?**|
 |:-----|:-----|:-----|
-|EmailAddress|Specifies the primary SMTP email address, for example, pilarp@contoso.com, for on-premises mailboxes. <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Microsoft 365 or Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.|Required|
+|EmailAddress|Specifies the primary SMTP email address, for example, pilarp@contoso.com, for on-premises mailboxes. <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Microsoft 365 or Office 365. For example, if the on-premises domain is named contoso.com but the Microsoft 365 or Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.|Required|
 |Password|The password to be set for the new Microsoft 365 or Office 365 mailbox. Any password restrictions that are applied to your Microsoft 365 or Office 365 organization also apply to the passwords included in the CSV file.|Optional|
-|ForceChangePassword|Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. Note that if you've implemented a single sign-on solution by deploying Active Directory Federation Services (AD FS) 2.0 (AD FS 2.0) or greater in your on-premises organization, you must use **False** for the value of the **ForceChangePassword** attribute.|Optional|
+|ForceChangePassword|Specifies whether a user must change the password the first time they sign in to their new Microsoft 365 or Office 365 mailbox. Use **True** or **False** for the value of this parameter. Note that if you've implemented a single sign-on solution by deploying Active Directory Federation Services (AD FS) 2.0 (AD FS 2.0) or greater in your on-premises organization, you must use **False** for the value of the **ForceChangePassword** attribute.|Optional|
 
 ### CSV file format
 
-Here's an example of the format for the CSV file. In this example, three on-premises mailboxes are migrated to Office 365.
+Here's an example of the format for the CSV file. In this example, three on-premises mailboxes are migrated to Microsoft 365 or Office 365.
 
 The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
 
@@ -176,9 +176,9 @@ Use any text editor, or an application like Excel, to create the CSV file. Save 
 > [!NOTE]
 > If the CSV file contains non-ASCII or special characters, save the CSV file with UTF-8 or other Unicode encoding. Depending on the application, saving the CSV file with UTF-8 or other Unicode encoding may be easier when the system locale of the computer matches the language used in the CSV file.
 
-## Connect Office 365 to your email system
+## Connect Microsoft 365 or Office 365 to your email system
 
-A migration endpoint contains the settings and credentials needed to connect the on-premises server that hosts the mailboxes you're migrating with Office 365. For a staged migration, you create an Outlook Anywhere migration endpoint. One migration endpoint is created to use for all of your migration batches.
+A migration endpoint contains the settings and credentials needed to connect the on-premises server that hosts the mailboxes you're migrating with Microsoft 365 or Office 365. For a staged migration, you create an Outlook Anywhere migration endpoint. One migration endpoint is created to use for all of your migration batches.
 
 **To create a migration endpoint**:
 
@@ -196,15 +196,15 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter the following information:
 
-   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox.
+   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox.
 
-   - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
+   - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Microsoft 365 or Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 
    - **Password of account with privileges**: Type the *password* for the account with privileges that is the administrator account.
 
 7. Choose **Next** and then do one of the following:
 
-   - If Office 365 successfully connects to the source server, the connection settings are displayed. Choose **Next**.
+   - If Microsoft 365 or Office 365 successfully connects to the source server, the connection settings are displayed. Choose **Next**.
 
     ![Confirmed connection for Outlook Anywhere endpoint.](../media/eea5e4c3-73b9-44be-abbe-e7387aea578a.JPG)
 
@@ -224,7 +224,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 ## Migrate your mailboxes
 
-You create and then run a migration batch to migrate mailboxes to Office 365.
+You create and then run a migration batch to migrate mailboxes to Microsoft 365 or Office 365.
 
 ### Create a staged migration batch
 
@@ -242,7 +242,7 @@ For a staged migration, you migrate mailboxes in batches: one batch for each CSV
 
 4. On the **Select the users** page, choose **Browse** and select the CSV file to use for this migration batch.
 
-   After you select a CSV file, Office 365 checks the CSV file to make sure that:
+   After you select a CSV file, Microsoft 365 or Office 365 checks the CSV file to make sure that:
 
    - It isn't empty.
 
@@ -296,9 +296,9 @@ You can also verify that the users get created in the Microsoft 365 admin center
 
 ## Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email
 
-After you have successfully migrated a batch of mailboxes, you need some way to let users get to their mail. A user whose mailbox has been migrated now has both a mailbox on-premises and one in Office 365. Users who have a mailbox in Office 365 will stop receiving new mail in their on-premises mailbox.
+After you have successfully migrated a batch of mailboxes, you need some way to let users get to their mail. A user whose mailbox has been migrated now has both a mailbox on-premises and one in Microsoft 365 or Office 365. Users who have a mailbox in Microsoft 365 or Office 365 will stop receiving new mail in their on-premises mailbox.
 
-Because you are not done with your migrations, you are not yet ready to direct all users to Office 365 for their email. So what do you do for those people who have both? What you can do is change the on-premises mailboxes that you've already migrated to mail-enabled users. When you change from a mailbox to a mail-enabled user, you can direct the user to Office 365 for their email instead of going to their on-premises mailbox.
+Because you are not done with your migrations, you are not yet ready to direct all users to Microsoft 365 or Office 365 for their email. So what do you do for those people who have both? What you can do is change the on-premises mailboxes that you've already migrated to mail-enabled users. When you change from a mailbox to a mail-enabled user, you can direct the user to Microsoft 365 or Office 365 for their email instead of going to their on-premises mailbox.
 
 Another important reason to convert on-premises mailboxes to mail-enabled users is to retain proxy addresses from the Exchange Online mailboxes by copying proxy addresses to the mail-enabled users. This lets you manage cloud-based users from your on-premises organization by using Active Directory. Also, if you decide to decommission your on-premises Exchange organization after all mailboxes are migrated to Exchange Online, the proxy addresses you've copied to the mail-enabled users will remain in your on-premises Active Directory.
 
@@ -312,11 +312,11 @@ For more information and to download scripts that you can run to convert mailbox
 
 You can run batches simultaneously or one by one. Do what is convenient for your schedule and ability to help people as they complete their migration. Remember, each migration batch has a limit of 2,000 mailboxes.
 
-When you're done migrating everyone to Office 365, you'll be ready to start sending email directly to Office 365 and decommissioning your old email system.
+When you're done migrating everyone to Microsoft 365 or Office 365, you'll be ready to start sending email directly to Microsoft 365 or Office 365 and decommissioning your old email system.
 
 ## Optional: Reduce email delays
 
-You don't need to do this task, but if you skip it, it might take longer for email to start showing up in the new Office 365 mailboxes.
+You don't need to do this task, but if you skip it, it might take longer for email to start showing up in the new Microsoft 365 or Office 365 mailboxes.
 
 When people outside of your organization send you email, their email systems don't double-check where to send that email every time. Instead, their systems save the location of your email system based on a setting in your DNS server known as a time-to-live (TTL). If you change the location of your email system before the TTL expires, they'll try to send you email at the old location first before figuring out that the location changed. This can result in a mail delivery delay. One way to avoid this is to lower the TTL that your DNS server gives to servers outside of your organization. This will make the other organizations refresh the location of your email system more often.
 
@@ -326,9 +326,9 @@ Using a short interval, such as 3,600 seconds (one hour) or less, means that mos
 
 If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-## Route your email directly to Office 365
+## Route your email directly to Microsoft 365 or Office 365
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises email system. Now that the email migration to Office 365 is complete for all of your users, it's time to point your MX record to Office 365. This helps ensure that incoming email is delivered to your Office 365mailboxes. Moving the MX record also let you turn off your old email system when you are ready.
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises email system. Now that the email migration to Microsoft 365 or Office 365 is complete for all of your users, it's time to point your MX record to Microsoft 365 or Office 365. This helps ensure that incoming email is delivered to your Microsoft 365 or Office 365 mailboxes. Moving the MX record also let you turn off your old email system when you are ready.
 
 For many DNS providers, we have [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided [general MX record instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
 
@@ -336,11 +336,11 @@ It can take up to 72 hours for the email systems of your customers and partners 
 
 ## Delete the staged migration batch
 
-After you change the MX record and verify that all email is being routed to Office 365 mailboxes, you can delete the staged migration batches. Verify the following before you delete a migration batch:
+After you change the MX record and verify that all email is being routed to Microsoft 365 or Office 365 mailboxes, you can delete the staged migration batches. Verify the following before you delete a migration batch:
 
-- All users in the batch are using their Office 365 mailboxes. After the batch is deleted, mail sent to mailboxes on the on-premises Exchange Server isn't copied to the corresponding Office 365 mailboxes.
+- All users in the batch are using their Microsoft 365 or Office 365 mailboxes. After the batch is deleted, mail sent to mailboxes on the on-premises Exchange Server isn't copied to the corresponding Microsoft 365 or Office 365 mailboxes.
 
-- Office 365 mailboxes were synchronized at least once after mail began being sent directly to them. To do this, make sure that the value in the **Last Synced Time** box for the migration batch is more recent than when mail started being routed directly to Office 365 mailboxes.
+- Microsoft 365 or Office 365 mailboxes were synchronized at least once after mail began being sent directly to them. To do this, make sure that the value in the **Last Synced Time** box for the migration batch is more recent than when mail started being routed directly to Microsoft 365 or Office 365 mailboxes.
 
 When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and then deletes the migration batch. The batch is removed from the list of migration batches on the migration dashboard.
 
@@ -358,23 +358,23 @@ When you delete a staged migration batch, the migration service cleans up any re
 
 ## Complete post migration tasks
 
-After migrating mailboxes to Office 365, there are post-migration tasks that must be completed.
+After migrating mailboxes to Microsoft 365 or Office 365, there are post-migration tasks that must be completed.
 
 **To complete post-migration tasks**:
 
-1. **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+1. **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
-2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Microsoft 365 or Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 or Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
+2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Microsoft 365 or Office 365, you can configure an Autodiscover DNS record for your Microsoft 365 or Office 365 organization to enable users to easily connect to their new Microsoft 365 or Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 or Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
-   Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
+   Microsoft 365 or Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
 
    - **Alias**:autodiscover
 
    - **Target**:autodiscover.outlook.com
 
-    For more information, see [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    For more information, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-3. **Decommission on-premises Exchange servers**: After you've verified that all email is being routed directly to the Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange.
+3. **Decommission on-premises Exchange servers**: After you've verified that all email is being routed directly to the Microsoft 365 or Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange.
 
    For more information, see the following:
 
@@ -387,6 +387,6 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 
 ## See also
 
-[What you need to know about a staged email migration to Office 365](../what-to-know-about-a-staged-migration.md)
+[What you need to know about a staged email migration to Microsoft 365 or Office 365](../what-to-know-about-a-staged-migration.md)
 
-[Ways to migrate email to Office 365](../mailbox-migration.md)
+[Ways to migrate email to Microsoft 365 or Office 365](../mailbox-migration.md)
