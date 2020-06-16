@@ -113,7 +113,7 @@
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
       "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
@@ -153,7 +153,7 @@
     {
       "source_path": "outlook/mobile/resources.md",
       "redirect_url": "https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/change-address-book-generation-schedule.md",
