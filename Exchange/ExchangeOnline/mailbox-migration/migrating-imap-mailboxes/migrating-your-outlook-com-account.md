@@ -5,8 +5,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.reviewer: 
-description: Learn how to prepare your hotmail.com or outlook.com account for migration to Office 365
-title: Migrating your Outlook.com account to Office 365
+description: Learn how to prepare your hotmail.com or outlook.com account for migration to Microsoft 365 or Office 365
+title: Migrating your Outlook.com account to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -28,15 +28,15 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# Migrating your Outlook.com account to Office 365
+# Migrating your Outlook.com account to Microsoft 365 or Office 365
 
-If you are migrating your Outlook.com or Hotmail.com account to Office 365, you'll need to enable two-step verification (also known as two-factor authentication).
+If you are migrating your Outlook.com or Hotmail.com account to Microsoft 365 or Office 365, you'll need to enable two-step verification (also known as two-factor authentication).
 
 Two-step verification helps protect you by making it more difficult for someone else to sign in to your email account. It uses two different forms of identity: your password, and a contact method. Even if someone else finds your password, they'll be stopped if they don't have access to your other devices or accounts.
 
 You set up two-step verification with an email address, phone number, or authenticator app. When you sign in on a new device or from a new location, we'll send you a security code that you enter on the sign-in page as a second form of authentication in addition to your password.
 
-After you have setup two-step verification, you can also obtain an app password that you will have to use in order to use Internet Message Access Protocol (IMAP) migration to copy email from your Outlook.com or Hotmail.com account to your Office 365 for business account. If your Office 365 admin is moving email messages from your Outlook.com or Hotmail.com account to Office 365 on your behalf, you'll need to give him your app password.
+After you have setup two-step verification, you can also obtain an app password that you will have to use in order to use Internet Message Access Protocol (IMAP) migration to copy email from your Outlook.com or Hotmail.com account to your Microsoft 365 or Office 365 for business account. If your Microsoft 365 or Office 365 admin is moving email messages from your Outlook.com or Hotmail.com account to Microsoft 365 or Office 365 on your behalf, you'll need to give him your app password.
 
 ## Turn on two-step verification and create an app password in Outlook.com or Hotmail.com
 
@@ -61,7 +61,7 @@ After you have setup two-step verification, you can also obtain an app password 
     > [!IMPORTANT]
     > Even though the page indicates this is for Windows Phone 8 (or earlier), **this list contains the app password your admin needs** to migrate you hotmail.com or outlook.com email to Office 365 for business. You will need this app password even if you set up two-step verification by using an Android or iPhone.
 
-    This is also the app password you or your admin will use to [migrate your hotmail.com or outlook.com](imap-migration-in-the-admin-center.md) email to Office 365 for business.
+    This is also the app password you or your admin will use to [migrate your hotmail.com or outlook.com](imap-migration-in-the-admin-center.md) email to Microsoft 365 or Office 365 for business.
 
 6. On your mobile device, download the Microsoft Authenticator from your app store.
 
