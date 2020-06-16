@@ -41,11 +41,11 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 2. [Verify you own the domain](#verify-you-own-the-domain)
 
-3. [Use directory synchronization to create users](#use-directory-synchronization-to-create-users-in-office-365)
+3. [Use directory synchronization to create users](#use-directory-synchronization-to-create-users-in-microsoft-365-or-office-365)
 
 4. [Create a list of mailboxes to migrate](#create-a-list-of-mailboxes-to-migrate)
 
-5. [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system)
+5. [Connect Microsoft 365 or Office 365 to your email system](#connect-microsoft-365-or-office-365-to-your-email-system)
 
 6. [Migrate your mailboxes](#migrate-your-mailboxes)
 
@@ -53,7 +53,7 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 8. [Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email](#convert-on-premises-mailboxes-to-mail-enabled-users-so-that-migrated-users-can-get-to-their-email)
 
-9. [Route your email directly to Microsoft 365 or Office 365](#route-your-email-directly-to-office-365)
+9. [Route your email directly to Microsoft 365 or Office 365](#route-your-email-directly-to-microsoft-365-or-office-365)
 
 10. [Delete the staged migration batch](#delete-the-staged-migration-batch)
 
@@ -80,9 +80,9 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a staged mi
 
    - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://docs.microsoft.com/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
-   - Wait for the connection to automatically be tested when you [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
+   - Wait for the connection to automatically be tested when you [Connect Microsoft 365 or Office 365 to your email system](#connect-microsoft-365-or-office-365-to-your-email-system) later in this procedure.
 
-3. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you [Connect Microsoft 365 or Office 365 to your email system](#connect-office-365-to-your-email-system) later in this procedure.
+3. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you [Connect Microsoft 365 or Office 365 to your email system](#connect-microsoft-365-or-office-365-to-your-email-system) later in this procedure.
 
 4. To migrate the mailboxes, the admin must have one of the following permission sets:
 
