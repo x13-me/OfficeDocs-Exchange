@@ -30,7 +30,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
@@ -184,11 +184,8 @@ In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and chan
 For more information, see the following topics:
 
 - [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
-
 - [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
-
 - [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
-
 - [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using Exchange Online PowerShell to change mail contact properties:

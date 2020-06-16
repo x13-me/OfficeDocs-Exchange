@@ -44,7 +44,7 @@ Here are some tips for optimizing an IMAP migration:
 
     For more information, see:
 
-  - Exchange 2013: [Set connection limits for IMAP4](https://go.microsoft.com/fwlink/p/?LinkId=623631)
+  - Exchange 2013: [Set connection limits for IMAP4](https://docs.microsoft.com/exchange/set-connection-limits-for-imap4-exchange-2013-help)
 
   - Exchange 2010: [View or Configure IMAP4 Properties](https://go.microsoft.com/fwlink/p/?LinkId=183037)
 

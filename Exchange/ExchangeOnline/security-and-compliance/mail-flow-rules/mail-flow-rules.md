@@ -132,4 +132,4 @@ There are several types of messages that pass through an organization. The follo
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
-[Transport and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

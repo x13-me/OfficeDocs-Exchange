@@ -26,8 +26,6 @@ To set up a disclaimer, you create a transport rule that includes the conditions
 > <LI>
 > <P>If you want the information to be added only to outgoing messages, you must add a condition such as recipients located outside the organization. By default, transport rules are applied to both incoming and outgoing messages.</P></LI></UL>
 
-Looking for procedures? See [Add an email disclaimer, legal disclaimer, common signature, or email footer or header](https://technet.microsoft.com/library/dn600323\(v=exchg.150\)).
-
 ## Examples
 
 Here are a few ideas for how to use disclaimers.
@@ -156,13 +154,7 @@ Here are some examples of the conditions and exceptions you can use.
 </tbody>
 </table>
 
-For a complete list of transport rule conditions you can use to target the disclaimer, see one of the following:
-
-- [Transport rule conditions (predicates)](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) (Exchange Online)
-
-- [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md) (Exchange 2013)
-
-- [Transport rule conditions (predicates)](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) (Exchange Online Protection)
+For a complete list of transport rule conditions you can use to target the disclaimer, see [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
 ## Formatting your disclaimer
 
@@ -238,10 +230,4 @@ The following list describes each fallback action:
 
 ## For more information
 
-[Add an email disclaimer, legal disclaimer, common signature, or email footer or header](https://technet.microsoft.com/library/dn600323\(v=exchg.150\))
-
-[Transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
-
-[Mail flow rules in Exchange Online](https://technet.microsoft.com/library/jj919238\(v=exchg.150\)) (Exchange Online)
-
-[Mail flow rules in standalone EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0) (Exchange Online Protection)
+[Transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)

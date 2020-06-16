@@ -25,7 +25,7 @@ You can use the EAC or Exchange Online PowerShell to place restrictions on wheth
 > [!IMPORTANT]
 > Message delivery restrictions do not impact mailbox permissions. A user with Full Access permissions on a mailbox will still be able to update the contents in that mailbox, such as by copying messages into the mailbox, even if that user has been restricted.
 
-The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients in Exchange Online](../recipients-in-exchange-online.md).
 
 For additional management tasks related to recipients, see the following topics:
 

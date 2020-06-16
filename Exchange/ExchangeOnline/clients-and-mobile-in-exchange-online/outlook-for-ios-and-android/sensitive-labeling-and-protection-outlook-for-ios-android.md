@@ -49,7 +49,7 @@ For information on how to create and define sensitivity labels, as well as, publ
 
 ## Using Sensitivity Labeling with Outlook for iOS and Android
 
-For information on the end user experience, see [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9). 
+For information on the end user experience, see [Apply sensitivity labels to your documents and email within Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ## Understanding S/MIME
 
@@ -99,7 +99,7 @@ Outlook for iOS and Outlook for Android both support manual certificate delivery
 
 ![Screenshots showing manual certificate installation on iOS.](../../media/sensitive-manual-certificate.png)
 
-A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.office.com/article/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
+A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.microsoft.com/office/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
 
 > [!IMPORTANT]
 > When exporting the certificate, ensure that the exported certificate is password-protected with a strong password.

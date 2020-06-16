@@ -45,7 +45,7 @@ The URL of the EAC is controlled by the Internet Information Services (IIS) virt
 
     **Note**: External users who connect to Outlook on the web (formerly known as Outlook Web App) also need access to the EAC to access their own **Options** page. You can disable external administrator access to the EAC while still allowing users to access their **Options** page in Outlook on the web. For more information, see [Turn off access to the Exchange admin center](disable-exchange-admin-center-access.md).
 
-The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 These examples show you how to find the internal and external URL values for the EAC virtual directories in your organization:
 
@@ -197,7 +197,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Add icon](../../media/ITPro_EAC_AddIcon.png)|Add, New|Create a new object.  <br/>  Some of these icons have an associated down arrow you can click to show additional objects you can create. For example, in **Recipients** \> **Mailboxes**, clicking the down arrow displays **User mailbox** and **Linked mailbox** as additional options.|
 |![Edit icon](../../media/ITPro_EAC_EditIcon.png)|Edit|Edit an object.|
 |![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
-|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects. Check out [Advanced search](https://technet.microsoft.com/library/cf4251f9-e4ec-44d7-97c2-c5cdd67ce60c.aspx) for more search options.|
+|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects.|
 |![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)|Refresh|Refresh the list view.|
 |![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Disable**, **Add/Remove columns**, **Export data to a CSV file**, **Connect a mailbox**, and **Advanced search**.|
 |![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.png)           <br/> ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)|Up arrow and down arrow|Move an object up or down in the list, when the order is important.  <br/> For example, in **Mail flow** \> **Email address policies** click the up arrow to move the policy higher in the list, which increases the priority of the policy by specifying which policy is applied first.  <br/> You can also use these arrows to navigate the public folder hierarchy and to move rules up or down in the list view.|
@@ -255,7 +255,7 @@ The levels of support for operating system and browser combinations that you can
 
   - **Supported**: All functionality and features are supported and have been fully tested.
 
-  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://go.microsoft.com/fwlink/p/?LinkId=823717).
+  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://docs.microsoft.com/lifecycle/announcements/internet-explorer-dotnet-framework-support).
 
   - **n/a**: The browser and operating system combination isn't possible. For example, an older browser on a newer operating system, or vice-versa.
 

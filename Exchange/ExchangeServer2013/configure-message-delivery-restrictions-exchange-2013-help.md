@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can use the EAC or the Shell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 
-The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients](recipients-exchange-2013-help.md).
 
 For additional management tasks related to recipients, see the following topics:
 

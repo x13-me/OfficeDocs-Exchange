@@ -31,9 +31,9 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
 
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://support.microsoft.com/help/17479).
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -47,7 +47,7 @@ To export and review mailbox audit logs, [Use a screen reader to open the Exchan
 
 ### Configure mailbox audit logging
 
-Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in Exchange Online PowerShell. For more information, go to [Export mailbox audit logs](https://go.microsoft.com/fwlink/p/?LinkId=798935).
+Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in Exchange Online PowerShell. For more information, go to [Export mailbox audit logs in Exchange Online](../security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs.md).
 
 ## Export a mailbox audit log
 

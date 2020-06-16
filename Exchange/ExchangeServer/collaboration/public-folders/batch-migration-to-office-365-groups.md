@@ -34,11 +34,11 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - In Exchange Server, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
 
-- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Microsoft 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842).
+- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Microsoft 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](../../architecture/mailbox-servers/mrs-proxy-endpoint.md) for details.
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Only public folders of type calendar and mail can be migrated to Microsoft 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
@@ -87,7 +87,7 @@ The following steps are necessary to prepare your organization for the migration
 
 1. Compile a list of public folders (mail and calendar types) that you want to migrate to Microsoft 365 Groups.
 
-2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) to understand the settings a group must have. If a public folder that you're migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
+2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) to understand the settings a group must have. If a public folder that you're migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
 
 3. Rename any public folders that contain a backslash (**\\**) in their name. Otherwise, those public folders may not get migrated correctly.
 

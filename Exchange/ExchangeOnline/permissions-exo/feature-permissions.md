@@ -65,6 +65,7 @@ You can use the features in the following table to manage your Exchange Online o
 |Mobile devices|Organization Management <br/><br/> Recipient Management
 |Organization configuration|Organization Management|
 |Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management|
+|Permissions and delegation|Organization Management|
 |Public folders|Organization Management <br/> Public Folder Management <br/> Mail-enabled public folders require Recipient Management|
 |POP3 and IMAP4 permissions|Organization Management|
 |Quarantine|Organization Management <br/><br/> Hygiene Management|
@@ -77,4 +78,4 @@ You can use the features in the following table to manage your Exchange Online o
 |View reports|Organization Management: Users have access to mailbox reports and mail protection reports. <br/><br/> View-Only Organization Management: Users have access to mailbox reports. <br/><br/> View-Only Recipients: Users have access to mail protection reports. <br/><br/> Compliance Management: Users have access to mail protection reports and Data Loss Prevention (DLP) reports (if their subscription has DLP capabilities).|
 
 > [!NOTE]
-> To find the permissions that are required to run any Exchange Online cmdlet, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+> To find the permissions that are required to run any Exchange Online cmdlet, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).

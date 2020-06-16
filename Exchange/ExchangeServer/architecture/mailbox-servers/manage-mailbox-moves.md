@@ -28,13 +28,13 @@ The following two services process your move request to move mailboxes:
 
 The procedures in this topic will help you with on-premises mailbox moves. You can use the Exchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
 
-For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451.aspx). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
+For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156451(v=exchg.150)). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 20 minutes
 
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions " entry in [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md).
 
