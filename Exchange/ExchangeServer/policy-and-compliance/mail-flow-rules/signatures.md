@@ -112,15 +112,15 @@ For a complete list of conditions and exceptions that you can use to target the 
 
 ## Limitations of organization wide signatures
 
-You can't do the following with Exchange Server signatures:
+Exchange Server signatures can't fulfill the following scenarios:
   
 - Insert the signature directly under the latest email reply or forward.
     
 - Display server-side email signatures in users' Sent Items folders.
     
-- Skip lines which contain variables that couldn't be updated (for example if the value wasn't provided for a user).
+- Skip lines which contain variables that couldn't be updated (for example, if the value wasn't provided for a user).
     
-To gain these and other capabilities, use a third-party tool. Please do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities.
+To gain these and other capabilities, use a third-party tool. Do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities.
 
 ## For more information
 <a name="MoreInfo"> </a>
