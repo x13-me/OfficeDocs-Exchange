@@ -43,7 +43,7 @@ To learn more about soft-deleted mailboxes and perform other related management 
 
   ```powershell
   $dbs = Get-MailboxDatabase
-  dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,DisconnectReason,DisconnectDate
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,DisconnectReason,DisconnectDate
   ```
 
   The soft-deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `SoftDeleted`. If the mailbox has been purged from the database, the command won't return any results.
