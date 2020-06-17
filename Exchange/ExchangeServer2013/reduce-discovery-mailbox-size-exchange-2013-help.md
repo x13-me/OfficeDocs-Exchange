@@ -23,7 +23,7 @@ In Exchange Server 2013, the maximum size of discovery mailboxes, which are used
 
 - They're not supported.
 
-- They can't be migrated to Office 365.
+- They can't be migrated to Microsoft 365 or Office 365.
 
 - If they're discovery mailboxes in Exchange Server 2010, they can't be upgraded to Exchange Server 2013.
 

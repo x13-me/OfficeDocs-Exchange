@@ -19,7 +19,7 @@ You can view, change, or remove existing data loss prevention (DLP) policies in 
 
 For additional management tasks related to DLP, see [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
-For more information about the Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
+For more information about the Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## What do you need to know before you begin?
 
