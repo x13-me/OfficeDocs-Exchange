@@ -30,9 +30,9 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -175,7 +175,7 @@ This example creates a mail contact for Debra Garcia
 New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -Alias dgarcia
 ```
 
-For detailed syntax and parameter information, see [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailcontact).
+For detailed syntax and parameter information, see [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/new-mailcontact).
 
 ### Use Exchange Online PowerShell to modify mail contacts
 
@@ -183,10 +183,10 @@ In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and chan
 
 For more information, see the following topics:
 
-- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-contact)
-- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact)
-- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailcontact)
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using Exchange Online PowerShell to change mail contact properties:
 
@@ -224,7 +224,7 @@ This example remove the mail contact for Pilar Pinilla:
 Remove-MailContact -Identity "Pilar Pinilla"
 ```
 
-For detailed syntax and parameter information, see [Remove-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailcontact).
+For detailed syntax and parameter information, see [Remove-MailContact](https://docs.microsoft.com/powershell/module/exchange/remove-mailcontact).
 
 ## How do you know these procedures worked?
 

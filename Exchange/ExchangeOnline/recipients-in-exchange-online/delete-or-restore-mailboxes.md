@@ -59,15 +59,15 @@ The above scenarios assume that the user mailbox isn't in any of the hold states
 
 When you delete an user account, the corresponding Exchange Online mailbox is deleted and removed from the list of mailboxes in the EAC. After the user account is deleted, it's listed on the **Deleted Users** page in the Microsoft 365 admin center. It can be recovered within 30 days after being deleted. After 30 days, the user account and mailbox are permanently deleted and not recoverable.
 
-To delete an Office 365 work or school account, see [Delete or restore users](https://go.microsoft.com/fwlink/p/?LinkId=279162).
+To delete an Office 365 work or school account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 ### Use Exchange Online PowerShell to delete a mailbox
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
-When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Office 365 user is deleted and removed from the list of users in the Microsoft 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
+When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Microsoft 365 or Office 365 user is deleted and removed from the list of users in the Microsoft 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
 
 This example deletes an Exchange Online mailbox and the corresponding user account for Walter Harp.
 
@@ -113,7 +113,7 @@ When you delete a mailbox, Exchange Online retains the mailbox and all its conte
 
 If the mailbox was deleted by deleting the corresponding user account, you can restore the mailbox by restoring the user account in the Microsoft 365 admin center.
 
-To restore an user account, see [Delete or restore users](https://go.microsoft.com/fwlink/p/?LinkId=279162).
+To restore an user account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 ### Use Exchange Online PowerShell to restore a user account
 
@@ -143,7 +143,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
 
 ## Restoring a user in a hybrid deployment
 
-For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure AD user that was associated with the mailbox has been hard-deleted from Azure AD, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Microsoft 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkID=809310) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
+For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure AD user that was associated with the mailbox has been hard-deleted from Azure AD, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Microsoft 365 Groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-office-365-groups) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
 
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
 

@@ -102,15 +102,15 @@ Below are the three configuration options to help you identify which one is in u
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
-   For more information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
+   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
 
 ### I receive an authentication error when my device tries to send email
 
 This can be caused by a number of issues:
 
-1. Make sure that you entered the correct user name and password.
+1. Make sure that you entered the correct username and password.
 
-2. Try logging into OWA with the printer's user name and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
+2. Try logging into OWA with the printer's username and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
 
 3. Check that your device or application supports TLS version 1.0 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.0 or above.
 
@@ -135,11 +135,11 @@ This can be caused by a number of issues.
 
 1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 tenant, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
+This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
 
 ### My emails are not sent to recipients who are not in my organization
 
@@ -161,7 +161,7 @@ This can be caused by a number of issues.
 
 1. A common reason for issues with Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Office 365 uses block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://go.microsoft.com/fwlink/?linkid=830792). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Emails are no longer being sent to external recipients
 

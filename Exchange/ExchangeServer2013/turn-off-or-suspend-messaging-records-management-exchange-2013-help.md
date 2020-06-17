@@ -61,7 +61,7 @@ $tags -= "Deleted Items - 3 Days"
 Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
 ```
 
-For detailed syntax and parameter information, see [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Get-RetentionPolicy) and [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionPolicy).
+For detailed syntax and parameter information, see [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicy) and [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-RetentionPolicy).
 
 ## Remove retention policies from mailboxes
 
@@ -87,7 +87,7 @@ This Shell example removes the retention policy Corp-Finance from all mailbox us
 Get-Mailbox -ResultSize unlimited -Filter "RetentionPolicy -eq 'Corp-Finance'" | Set-Mailbox -RetentionPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox).
 
 ## Turn off MRM permanently for an entire organization
 
@@ -121,8 +121,8 @@ Remove-RetentionPolicy Corp-Users
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Get-RetentionPolicyTag)
+- [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicyTag)
 
-- [Remove-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Remove-RetentionPolicyTag)
+- [Remove-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicyTag)
 
-- [Remove-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Remove-RetentionPolicy)
+- [Remove-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicy)

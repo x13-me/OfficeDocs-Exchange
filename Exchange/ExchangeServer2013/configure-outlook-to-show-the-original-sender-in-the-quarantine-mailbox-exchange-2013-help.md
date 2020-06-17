@@ -31,7 +31,7 @@ By default, you can't select these fields in Microsoft Outlook. Before you can a
 
 - This procedure requires that you've configured the anti-spam quarantine mailbox. For more information, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
 
-- To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://go.microsoft.com/fwlink/p/?linkid=178975).
+- To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://support.office.com/article/f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
