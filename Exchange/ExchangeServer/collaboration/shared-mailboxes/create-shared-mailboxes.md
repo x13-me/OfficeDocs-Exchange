@@ -22,7 +22,7 @@ If your organization uses a hybrid Exchange environment, you should use the on-p
 
 ## Use the EAC to create a shared mailbox
 
-For information on limitations, automapping, and getting your users set up, see [Create a shared mailbox](https://support.office.com/article/871a246d-3acd-4bba-948e-5de8be0544c9).
+For information on limitations, automapping, and getting your users set up, see [Create a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 

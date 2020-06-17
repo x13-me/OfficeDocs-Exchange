@@ -787,7 +787,7 @@
       - name: Common attachment blocking scenarios for transport rules
         href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
       - name: Organization-wide disclaimers, signatures, footers, or headers
-        href: ../organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
+        href: ../organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md
       - name: Transport rule procedures
         href: ../mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
@@ -816,7 +816,7 @@
       - name: Integrating sensitive information rules with transport rules
         href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules
       - name: What the sensitive information types look for
-        href: ../what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
+        href: ../what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md
       - name: DLP policy templates
         href: https://docs.microsoft.com/en-us/office365/securitycompliance/what-the-dlp-policy-templates-include
         items:

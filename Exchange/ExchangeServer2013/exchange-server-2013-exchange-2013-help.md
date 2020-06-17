@@ -79,7 +79,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 
 - [High availability and site resilience](high-availability-and-site-resilience-exchange-2013-help.md)
 
-- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell)
+- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)
 
 - [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md)
 
@@ -88,7 +88,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 - [About Exchange documentation](https://docs.microsoft.com/exchange/about-exchange-documentation)
 
 > [!NOTE]
-> Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</A>
+> Check out our other Exchange content:<BR><A href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</A><BR><A href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange Server Hybrid Deployments</A><BR><A href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</A>
 
 ## Tell us what you think
 
