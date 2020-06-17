@@ -39,6 +39,6 @@ Mail flow issues can also happen when your MX record is not setup correctly. To 
 
 [Set up connectors to route mail between Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md)
 
-[Fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
+[Validate connectors in Office 365](use-connectors-to-configure-mail-flow/validate-connectors.md)
 
 [When do I need a connector?](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md#when-do-i-need-a-connector)

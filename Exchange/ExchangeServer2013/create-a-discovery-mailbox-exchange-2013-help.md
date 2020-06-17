@@ -26,7 +26,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery-exchange-201
 
 - Estimated time to complete: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Creating discovery mailboxes" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Creating discovery mailboxes" entry in [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 - Discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased.
 

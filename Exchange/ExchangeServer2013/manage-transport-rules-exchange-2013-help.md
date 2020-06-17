@@ -44,7 +44,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
 - When a rule is listed as **version 14**, this means that the rule is based on an Exchange Server 2010 transport rule format. All options are available for these rules.
 
@@ -98,7 +98,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?LinkId=402769).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?).
 
       Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
@@ -319,8 +319,8 @@ You must use the Exchange Management Shell to import or export a transport rule 
 
 ## Need more help?
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Transport Rule Conditions](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
+[Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+[Transport rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)

@@ -26,7 +26,7 @@ For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Serve
 
 - Estimated time to complete: 5 minutes.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - The procedures in this topic don't apply to the Administrator mailbox, because you can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
 
@@ -119,7 +119,7 @@ You can use the **Get-Mailbox**, **Get-User**, or **Get-Content** cmdlets to ide
 
 - Use the _OrganizationalUnit_ parameter to filter the mailboxes by organizational unit (OU).
 
-- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/filter-properties).
+- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties).
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 

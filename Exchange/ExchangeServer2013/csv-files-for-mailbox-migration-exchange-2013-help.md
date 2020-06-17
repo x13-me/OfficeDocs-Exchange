@@ -265,7 +265,7 @@ The following table describes the supported attributes for a CSV file for cross-
 
 ## Staged Exchange migrations
 
-You have to use a CSV file to identify the group of users for a migration batch when you want to use a staged Exchange migration to migrate Exchange 2003 and Exchange 2007 on-premises mailboxes to Exchange Online. There isn't a limit for the number of mailboxes that you can migrate to the cloud using a staged Exchange migration. However, the CSV file for a migration batch can contain a maximum of 1,000 rows. To migrate more than 1,000 mailboxes, you have to create additional CSV files, and then use each one to create a new migration batch. For more information about staged Exchange migrations, see [Migrate mailboxes to Exchange Online with a staged migration](https://technet.microsoft.com/library/jj874018\(v=exchg.150\)).
+You have to use a CSV file to identify the group of users for a migration batch when you want to use a staged Exchange migration to migrate Exchange 2003 and Exchange 2007 on-premises mailboxes to Exchange Online. There isn't a limit for the number of mailboxes that you can migrate to the cloud using a staged Exchange migration. However, the CSV file for a migration batch can contain a maximum of 1,000 rows. To migrate more than 1,000 mailboxes, you have to create additional CSV files, and then use each one to create a new migration batch. For more information about staged Exchange migrations, see [Migrate mailboxes to Exchange Online with a staged migration](https://docs.microsoft.com/exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 The following table describes the supported attributes for a CSV file for a staged Exchange migration.
 
@@ -298,7 +298,7 @@ The following table describes the supported attributes for a CSV file for a stag
 <td><p>This password is set on the user account when the corresponding mail-enabled user in Exchange Online is converted to a mailbox during the migration.</p></td>
 </tr>
 <tr class="odd">
-<td><p>ForceChangePassword</p></td>
+<t[CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)d><p>ForceChangePassword</p></td>
 <td><p>Optional</p></td>
 <td><p><code>True</code> or <code>False</code></p></td>
 <td><p>Specifies whether a user must change the password the first time they sign in to their Exchange Online mailbox.</p>
@@ -317,7 +317,7 @@ A CSV file for an IMAP migration batch can have maximum of 50,000 rows. But it's
 
 - [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)
 
-- [CSV files for IMAP migration batches](https://technet.microsoft.com/library/jj200730\(v=exchg.150\))
+- [CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)
 
 The following table describes the supported attributes for a CSV file for an IMAP migration.
 
@@ -347,7 +347,7 @@ The following table describes the supported attributes for a CSV file for an IMA
 <td><p>UserName</p></td>
 <td><p>Required</p></td>
 <td><p>String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.</p></td>
-<td><p>Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see <a href="https://technet.microsoft.com/library/jj200730(v=exchg.150)">CSV files for IMAP migration batches</a>.</p></td>
+<td><p>Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see <a href="https://docs.microsoft.com/Exchange/csv-files-for-mailbox-migration-exchange-2013-help">CSV files for IMAP migration batches</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Password</p></td>

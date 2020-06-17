@@ -115,7 +115,7 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Outlook Anywhere (RPC over HTTP)|Used by Outlook 2016 and earlier.|*AllowBasicAuthRpc*|
 |Authenticated SMTP|Used by POP and IMAP client's to send email messages.|*AllowBasicAuthSmtp*|
 |Exchange Web Services (EWS)|A programming interface that's used by Outlook, Outlook for Mac, and third-party apps.|*AllowBasicAuthWebServices*|
-|PowerShell|Used to connect to Exchange Online with remote PowerShell. If you block Basic authentication for Exchange Online PowerShell, you need to use the Exchange Online PowerShell Module to connect. For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).|*AllowBasicAuthPowerShell*|
+|PowerShell|Used to connect to Exchange Online with remote PowerShell. If you block Basic authentication for Exchange Online PowerShell, you need to use the Exchange Online PowerShell Module to connect. For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).|*AllowBasicAuthPowerShell*|
 
 Typically, when you block Basic authentication for a user, we recommend that you block Basic authentication for all protocols. However, you can use the *AllowBasicAuth\** parameters (switches) on the **New-AuthenticationPolicy** and **Set-AuthenticationPolicy** cmdlets to selectively allow or block Basic authentication for specific protocols.
 
@@ -134,9 +134,9 @@ For email clients and apps that don't support modern authentication, you need to
 
 ### What do you need to know before you begin?
 
-- Verify that modern authentication is enabled in your Exchange Online organization (it's enabled by default). For more information, see [Enable or disable modern authentication in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662).
+- Verify that modern authentication is enabled in your Exchange Online organization (it's enabled by default). For more information, see [Enable or disable modern authentication for Outlook in Exchange Online](enable-or-disable-modern-authentication-in-exchange-online.md).
 
-- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://support.office.com/article/472c2322-23a4-4014-8f02-bbc09ad62213).
+- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
 
 - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
 

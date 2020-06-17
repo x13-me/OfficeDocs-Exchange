@@ -50,8 +50,6 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
 
 [Step 1: Download the migration scripts](#step-1-download-the-migration-scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location.
 
-For additional management tasks related to public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
-
 ## What versions of Exchange are supported for migrating public folders to Office 365 and Exchange Online?
 
 Exchange supports moving your public folders to Office 365 and Exchange Online from the following legacy versions of Exchange Server:
@@ -66,11 +64,11 @@ You can't migrate public folders directly from Exchange 2003 or Exchange 2007. I
 
 - The Exchange 2010 server needs to be running Exchange 2010 SP3 RU8 or later.
 
-- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
+- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 - In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212).
 
-- Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller. Or, we recommend that you divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information. **Note**: If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to increase them with the `DefaultPublicFolderIssueWarningQuota` and `DefaultPublicFolderProhibitPostQuota` parameters.
+- Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller. Or, we recommend that you divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) for more information. **Note**: If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to increase them with the `DefaultPublicFolderIssueWarningQuota` and `DefaultPublicFolderProhibitPostQuota` parameters.
 
 If you use a firewall and access control lists (ACLs), ensure that the [IP ranges used by Office 365 in your region](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) are permitted through your firewall.
 
@@ -80,7 +78,7 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 - Outlook Anywhere needs to be enabled on the legacy Exchange server. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249).
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
 
@@ -215,7 +213,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-- [get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
 - [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
@@ -365,7 +363,7 @@ _Mapping.csv_ is the file generated by the `PublicFoldertoMailboxMapGenerator.ps
    .\Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
-   `Credential` is your Office 365 username and password. `CsvSummaryFile` is the file path to where you would like to log, in .CSV format, synchronization operations and errors.
+   `Credential` is your Microsoft 365 or Office 365 username and password. `CsvSummaryFile` is the file path to where you would like to log, in .CSV format, synchronization operations and errors.
 
    > [!NOTE]
    > We recommend that you first simulate the actions that the script would take before actually executing it, which you can do by running the script with a `-WhatIf` parameter.
