@@ -133,11 +133,11 @@ To remove the restriction on the sender's source email system, forward the NDR m
 
 If your domain isn't fully enrolled in Office 365, try the following steps:
 
-- Verify your domain appears as **Active** in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+- Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
 
 - For information about adding your domain to Office 365, see [Domains in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
 
-- To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://go.microsoft.com/fwlink/p/?LinkId=328237).
+- To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
 ### Your domain's MX record has a problem
 
@@ -187,7 +187,7 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

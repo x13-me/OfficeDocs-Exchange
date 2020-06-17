@@ -21,13 +21,13 @@ Exchange 2013 is more demanding of system resources than previous versions of Ex
 
 ## Exchange 2013 Sizing
 
-Correctly sizing Exchange 2013 is one of the most effective ways of preventing performance problems. The Exchange 2013 Server Role Requirements Calculator is available [here](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-2013-server-role-requirements-calculator/ba-p/593922). The latest version is 9.1. To use this calculator correctly, you must consult the guidance in the [Exchange 2013 Server Role Requirements Calculator](https://go.microsoft.com/fwlink/p/?linkid=386677) and [Sizing Exchange 2013 Deployments](https://go.microsoft.com/fwlink/p/?linkid=301990) blog posts.
+Correctly sizing Exchange 2013 is one of the most effective ways of preventing performance problems. The Exchange 2013 Server Role Requirements Calculator is available [here](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-2013-server-role-requirements-calculator/ba-p/593922). The latest version is 9.1. To use this calculator correctly, you must consult the guidance in the [Exchange 2013 Server Role Requirements Calculator](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-2013-server-role-requirements-calculator/ba-p/593922) and [Sizing Exchange 2013 Deployments](https://techcommunity.microsoft.com/t5/exchange-team-blog/ask-the-perf-guy-sizing-exchange-2013-deployments/ba-p/594229) blog posts.
 
 It's important to start with the calculator prior to purchasing and deploying your hardware; you should first determine your overall resource requirements based on the calculator results. You can use the calculator to input your organization's demands, and use the results for guidance on how to scale your hardware. The calculator doesn't tell you how many servers to use, but it will allow you to estimate the impact of an Exchange workload on a given set of servers. You should experiment with different configurations to see how it affects performance, in order to meet the hardware and business needs specific to your environment.
 
 To simplify deployments and get the best use of hardware, the Exchange product group recommends multi-role servers. Using multi-role severs gives you better availability at the Client Access server (CAS) layer, as there are more Client Access servers available to handle requests during a failure scenario. The key design consideration for Exchange 2013 is to utilize "smaller" commodity type servers (scaling out instead of scaling up). Design and testing was done with two socket computers containing up to twenty processor cores, with up to 96 gigabytes (GB) of RAM. If your hardware is larger than this, you should consider other options, such as using that hardware for other needs and buying smaller servers for your Exchange 2013 environment, or virtualizing.
 
-It is preferable to build more servers (scaling out) than it is to add resources to existing, larger servers (scaling up). Scaling out allows your environment to take advantage of the built-in high availability features in Exchange 2013. To understand why this configuration is recommended, please review in detail the posts [The Preferred Architecture](https://go.microsoft.com/fwlink/p/?linkid=523782) and [Site Resilience Impact on Availability](https://go.microsoft.com/fwlink/p/?linkid=523845).
+It is preferable to build more servers (scaling out) than it is to add resources to existing, larger servers (scaling up). Scaling out allows your environment to take advantage of the built-in high availability features in Exchange 2013. To understand why this configuration is recommended, please review in detail the posts [The Preferred Architecture](https://techcommunity.microsoft.com/t5/exchange-team-blog/the-preferred-architecture/ba-p/586755) and [Site Resilience Impact on Availability](https://techcommunity.microsoft.com/t5/exchange-team-blog/site-resilience-impact-on-availability/ba-p/586180).
 
 The calculator does not take into account third-party products running on Exchange servers, or products that interact with Exchange (including internally developed applications), which means you must be sure to account for them during your sizing. Lync Server, for example, and third-party Exchange Web Services (EWS) applications and ActiveSync devices can all significantly increase CPU requirements per user. You can reference third-party product documentation for information on how it will affect Exchange. Creating a performance baseline for Exchange prior to implementing third-party solutions is recommended.
 
@@ -96,29 +96,29 @@ If you are unable to install .NET 4.5.2, refer to Microsoft Knowledge Base artic
 
 The Exchange performance team recommends installing all of the following performance-related hot fixes.
 
-  - [Update that improves cluster resiliency in Windows Server 2012 is available](https://go.microsoft.com/fwlink/p/?linkid=524088)
+- [Update that improves cluster resiliency in Windows Server 2012 is available](https://support.microsoft.com/help/2838669)
 
-  - [Recommended hotfixes and updates for Windows Server 2012-based failover clusters](https://go.microsoft.com/fwlink/p/?linkid=524089)
+- [Recommended hotfixes and updates for Windows Server 2012-based failover clusters](https://support.microsoft.com/help/2784261)
 
-  - [Recommended hotfixes and updates for Windows Server 2012 R2-based failover clusters](https://go.microsoft.com/fwlink/p/?linkid=524090)
+- [Recommended hotfixes and updates for Windows Server 2012 R2-based failover clusters](https://support.microsoft.com/help/2920151)
 
-  - [Incorrect RSS processor assignment on a Windows 8 or Windows Server 2012-based computer that has multi-core processors](https://go.microsoft.com/fwlink/p/?linkid=324140)
+- [Incorrect RSS processor assignment on a Windows 8 or Windows Server 2012-based computer that has multi-core processors](https://support.microsoft.com/help/2846837)
 
-  - [Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://go.microsoft.com/fwlink/p/?linkid=312962)
+- [Performance issues or delays when you connect to Exchange Server 2013 that is running in Windows Server](https://support.microsoft.com/help/2995145)
 
-  - [Outlook connectivity issue if SSLOffloading is "True" in Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=524091)
+- [Outlook connectivity issue if SSLOffloading is "True" in Exchange 2013](https://support.microsoft.com/help/2925281)
 
-  - [Long server connection for Outlook after a database failover in Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524092)
+- [Long server connection for Outlook after a database failover in Exchange Server 2013](https://support.microsoft.com/help/2928803)
 
-  - [Slow performance in Outlook Web App when Lync is integrated with Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524093)
+- [Slow performance in Outlook Web App when Lync is integrated with Exchange Server 2013](https://support.microsoft.com/help/2962434)
 
-  - [EMS takes a long time to execute the first command in an Exchange Server 2013 Cumulative Update 5 environment](https://go.microsoft.com/fwlink/p/?linkid=524094)
+- [EMS takes a long time to execute the first command in an Exchange Server 2013 Cumulative Update 5 environment](https://support.microsoft.com/help/2986779)
 
-  - [Message routing latency if IPv6 is enabled in Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=524095)
+- [Message routing latency if IPv6 is enabled in Exchange Server 2013](https://support.microsoft.com/help/2963590)
 
-  - [High CPU usage by an application that depends on a Microsoft LDAP client in WIndows Server 2008 R2 SP1](https://go.microsoft.com/fwlink/p/?linkid=530287)
+- [High CPU usage by an application that depends on a Microsoft LDAP client in WIndows Server 2008 R2 SP1](https://support.microsoft.com/help/3004383)
 
-  - [CPU usage is high when you use RPC over HTTP protocol in Windows 8.1 or Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?linkid=619127)
+- [CPU usage is high when you use RPC over HTTP protocol in Windows 8.1 or Windows Server 2012 R2](https://support.microsoft.com/help/3041832)
 
 ## Networking
 
@@ -190,7 +190,7 @@ The pagefile should not be hosted on the same drive as Exchange database files o
 
 It is imperative that you use a fixed size pagefile and not allow Windows to manage the size. Growing the page file can be a very performance-intensive task and can cause issues when Exchange is under stress.
 
-If you need to get a full kernel dump, then use Microsoft Knowledge Base article 969028, [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=524044), for dedicated dump file.
+If you need to get a full kernel dump, see [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump).
 
 ## Outlook Mode
 

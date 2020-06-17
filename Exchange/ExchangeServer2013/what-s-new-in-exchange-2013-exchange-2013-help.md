@@ -174,7 +174,7 @@ To learn more about these features see:
 
 [Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432)
+[Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)
 
 ## In-place Archiving, retention, and eDiscovery
 

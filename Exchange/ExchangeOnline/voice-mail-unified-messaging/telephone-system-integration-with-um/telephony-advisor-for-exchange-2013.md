@@ -28,7 +28,7 @@ The other sections in this topic cover the supported VoIP gateways for Unified M
 
 It's challenging to create guidelines for deploying telephony networks. They can be very different from one another because they can include VoIP gateways, IP PBXs, and PBXs with different configuration settings, firmware, and requirements. However, several resources are available to help you successfully deploy Unified Messaging:
 
-- **Unified Messaging specialists**: UM specialists are systems integrators who have received technical training about Exchange Unified Messaging conducted by the Exchange engineering team. To help ensure a smooth transition to Unified Messaging from legacy voice mail systems, Microsoft recommends that all customers engage a UM specialist. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
+- **Unified Messaging specialists**: UM specialists are systems integrators who have received technical training about Exchange Unified Messaging conducted by the Exchange engineering team. To help ensure a smooth transition to Unified Messaging from legacy voice mail systems, Microsoft recommends that all customers engage a UM specialist. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 - **Configuration Notes for Supported VoIP Gateways, IP PBXs and PBXs**: These configuration notes contain settings and other information that's very useful when you're configuring VoIP gateways, IP PBXs, and PBXs to communicate with the Unified Messaging servers that are on your network. For more information, see [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](configuration-notes-for-voip-gateways.md).
 
@@ -248,6 +248,6 @@ For on-premises and hybrid deployments, Exchange Unified Messaging can be deploy
 
 - [Integrate Exchange 2013 UM with Lync Server](https://docs.microsoft.com/exchange/deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help)
 
-- [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
+- [Microsoft Lync Server 2013](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013)
 
 To find out more about the Microsoft Unified Communications Open Interoperability Program for enterprise telephony infrastructure, including finding qualified SIP PSTN gateways and IP PBXs and the process for telephony infrastructure vendors to join and participate in the program, see [Microsoft Unified Communications Open Interoperability Program](https://docs.microsoft.com/SkypeForBusiness/lync-cert/qualified-lync-apps).
