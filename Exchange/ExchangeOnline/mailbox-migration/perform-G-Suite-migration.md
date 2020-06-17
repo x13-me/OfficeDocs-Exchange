@@ -94,7 +94,7 @@ Additional migration limitations are described in the following table:
 
    ![Create a project](../media/gsuite-mig-1-newproject.png)
 
-3. Click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
+Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
 
    ![Create service account](../media/gsuite-mig-2-newservice.png)
 
