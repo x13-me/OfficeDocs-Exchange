@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Microsoft 365 or Office 365 organization and can access resources. For more information, see Recipients.
+description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange, Microsoft 365, or Office 365 organization and can access resources. For more information, see Recipients.
 ms.topic: article
 author: mattpennathe3rd
 f1.keywords:
@@ -23,17 +23,17 @@ manager: serdars
 
 In Exchange Online organizations, mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Microsoft 365 organization and can access resources. For more information about mail contacts and mail users, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
-You manage mail users in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes; standalone Exchange Online Protection (EOP) in organizations without Exchange Online mailboxes).
+You manage mail users in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes.
 
 ## What do you need to know before you begin?
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - When you create mail users in EOP PowerShell, you might encounter throttling. Also, the EOP PowerShell cmdlets use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -208,21 +208,21 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 
 In Exchange Online PowerShell, you use the following cmdlets to manage mail users:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
-- [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser)
-- [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailuser)
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser)
+- [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
+- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 In standalone EOP PowerShell, you use the following cmdlets:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
-- **[Set-EOPUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopuser)**
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailuser)
-- **[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)**
-- **[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)**
-- **[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)**
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- **[Set-EOPUser](https://docs.microsoft.com/powershell/module/exchange/set-eopuser)**
+- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- **[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)**
+- **[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)**
+- **[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)**
 
 The examples in this section are written for Exchange Online PowerShell, but you can use them in standalone EOP PowerShell by substituting the corresponding EOP cmdlet.
 
@@ -243,6 +243,14 @@ This example creates a mail user for Rene Valdes:
 ```PowerShell
 New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@fabrikam.com -FirstName Rene -LastName Valdes -MicrosoftOnlineServicesID renev@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force)
 ```
+
+For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser).
+
+### Use Exchange Online PowerShell to modify mail users
+
+In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
+
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
 - [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
@@ -295,7 +303,7 @@ This example remove the mail user for Pilar Pinilla:
 Remove-MailUser -Identity "Pilar Pinilla"
 ```
 
-For detailed syntax and parameter information, see [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-mailuser)
+For detailed syntax and parameter information, see [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
 
 ## How do you know these procedures worked?
 

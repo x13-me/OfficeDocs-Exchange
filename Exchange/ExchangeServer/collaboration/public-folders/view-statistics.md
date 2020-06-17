@@ -23,8 +23,6 @@ You can use the Exchange Management Shell to retrieve statistics about a public 
 > [!NOTE]
 > While you can view some of the quota and usage information in the Exchange admin center (EAC), this information is incomplete, and we recommend that you use the Exchange Management Shell to view public folder statistics. To view quota and usage information for public folders by navigating to **Public Folders** \> **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox usage**.
 
-For additional management tasks related to managing public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
-
 For additional management tasks related to public folders, see [Public Folder Procedures in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/public-folder-procedures).
 
 ## What do you need to know before you begin?
@@ -107,8 +105,4 @@ This example exports the output of the cmdlet to the PFItemStats.csv file that i
 Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,LastModificationTime,HasAttachments,ItemType,MessageSize | Export-CSV C:\PFItemStats.csv
 ```
 
-<<<<<<< Updated upstream
-For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics).
-=======
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics).
->>>>>>> Stashed changes

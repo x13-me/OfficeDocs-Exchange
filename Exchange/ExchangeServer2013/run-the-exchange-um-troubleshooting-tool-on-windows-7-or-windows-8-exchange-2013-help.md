@@ -85,7 +85,7 @@ The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Sh
    $cred=Get-Credential
    ```
 
-7. In the **Windows PowerShell Credential Request** window, type the domain\\user name and password, and then click **OK**.
+7. In the **Windows PowerShell Credential Request** window, type the domain\\username and password, and then click **OK**.
 
 8. In the **Microsoft Exchange 2010 UM Troubleshooting Tool** window, specify the necessary cmdlet parameters to test for call flow. For example:
 
