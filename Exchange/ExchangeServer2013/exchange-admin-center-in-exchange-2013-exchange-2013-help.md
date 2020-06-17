@@ -113,7 +113,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 <tr class="even">
 <td><p><img src="images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif" title="Search icon" alt="Search icon" /></p></td>
 <td><p>Search</p></td>
-<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find. Check out <a href="https://technet.microsoft.com/library/jj156853(v=exchg.150)">[Recipients &gt; ] Advanced search</a> for more search options.</p></td>
+<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find.</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="Refresh Icon" alt="Refresh Icon" /></p></td>

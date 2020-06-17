@@ -45,7 +45,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 3. On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
     > [!NOTE]
-    > If you leave this box blank, the value from the user name portion of the <STRONG>User logon name</STRONG> is used for the email alias.
+    > If you leave this box blank, the value from the username portion of the <STRONG>User logon name</STRONG> is used for the email alias.
 
 4. Select one of the following options:
 
@@ -74,10 +74,10 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the desired OU, and then click **OK**.
 
-   - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can't use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren't supported.
+   - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a username on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can't use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren't supported.
 
         > [!NOTE]
-        > If the value for the user name is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
+        > If the value for the username is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
 
    - **\* New Password**: Use this box to type the password that the user must use to sign in to his or her mailbox.
 
@@ -153,7 +153,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 3. On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
     > [!NOTE]
-    > If you leave this box blank, the value from the user name portion of the <STRONG>User logon name</STRONG> is used for the email alias.
+    > If you leave this box blank, the value from the username portion of the <STRONG>User logon name</STRONG> is used for the email alias.
 
 4. Click **Existing user**.
 

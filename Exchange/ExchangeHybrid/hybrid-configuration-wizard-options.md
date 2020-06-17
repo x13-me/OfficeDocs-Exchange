@@ -56,7 +56,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 
 ## Related topics
 
-- [Exchange deployment assistant](https://aka.ms/EDA)
+- [Exchange deployment assistant](https://assistants.microsoft.com/)
 
 - [Exchange Server hybrid deployments](exchange-hybrid.md)
 
