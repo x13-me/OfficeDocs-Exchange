@@ -163,4 +163,4 @@ Sometimes you may want to start directory synchronization to provision the cloud
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
 
-For more information, see [Azure AD Connect sync: Scheduler](https://go.microsoft.com/fwlink/p/?linkid=836813).
+For more information, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).

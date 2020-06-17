@@ -62,7 +62,14 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
    ```
 
    > [!NOTE]
-   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
+   > 
+   > - Use http, not https.
+   > 
+   > - The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL.
+   > 
+   > - You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
+   
+After you apply this setting, the users can continue using the current Outlook on the web URL to access their on-premises mailboxes. In the previous example, the value is <https://mail.contoso.com/owa>.
 
 ## Multiple authentication prompts
 
@@ -84,4 +91,4 @@ The authentication prompt experience that users can expect is described in the f
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
 > [!NOTE]
-> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in [KB2535227}(https://support.microsoft.com/help/2535227), and that AD FS is configured per the general Office 365 guidance.

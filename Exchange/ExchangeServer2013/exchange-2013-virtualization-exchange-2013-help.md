@@ -62,7 +62,7 @@ For deployments of Exchange 2013:
 
   In addition, it's possible that guest virtual machines may be prevented from directly communicating with Fibre Channel or SCSI host bus adapters (HBAs) installed in the host machine. In this event, you must configure the adapters in the host machine's operating system and present the logical unit numbers (LUNs) to guest virtual machines as either a virtual disk or a pass-through disk.
 
-- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (otherwise known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third-party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?linkid=799723).
+- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (otherwise known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third-party providers as well. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](https://docs.microsoft.com/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
 
 ## Host machine storage requirements
 
@@ -72,7 +72,7 @@ The minimum disk space requirements for each host machine are as follows:
 
 - Some hypervisors maintain files on the host machine that are unique to each guest virtual machine. For example, in a Hyper-V environment, a temporary memory storage file (BIN file) is created and maintained for each guest machine. The size of each BIN file is equal to the amount of memory allocated to the guest machine. In addition, other files may also be created and maintained on the host machine for each guest machine.
 
-- If your host machine is running Windows Server 2012 Hyper-V or Hyper-V 2012, and you are configuring a host-based failover cluster that will host Exchange Mailbox servers in a database availability group, then we recommend following the guidance documented in Microsoft Knowledge Base article, [2872325, Guest Cluster nodes in Hyper-V may not be able to create or join](https://support.microsoft.com/kb/2872325).
+- If your host machine is running Windows Server 2012 Hyper-V or Hyper-V 2012, and you are configuring a host-based failover cluster that will host Exchange Mailbox servers in a database availability group, then we recommend following the guidance documented in the Microsoft Knowledge Base article, [KB2872325](https://support.microsoft.com/help/2872325).
 
 ## Exchange storage requirements
 

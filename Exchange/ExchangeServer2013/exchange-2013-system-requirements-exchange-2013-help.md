@@ -367,7 +367,7 @@ Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
 - Outlook for Mac 2011
 
-For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://go.microsoft.com/fwlink/p/?linkid=513459).
+For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
 
 > [!IMPORTANT]
 > We strongly recommend that you install the latest available service packs and updates available so that your users receive the best possible experience when connecting to Exchange.

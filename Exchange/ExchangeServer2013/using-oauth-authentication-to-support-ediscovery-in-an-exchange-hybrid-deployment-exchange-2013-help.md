@@ -19,9 +19,9 @@ _**Applies to:** Exchange Server 2013_
 
 To successfully perform cross-premises eDiscovery searches in an Exchange 2013 hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication supports the following eDiscovery scenarios in an Exchange hybrid deployment:
 
-  - Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
+- Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
 
-  - Search on-premises and cloud-based mailboxes in the same eDiscovery search.
+- Search on-premises and cloud-based mailboxes in the same eDiscovery search.
 
 For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 organization administrator or a compliance officer signed in to an user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by a Microsoft 365 or Office 365 tenant administrator or a compliance officer signed in to a Microsoft 365 or Office 365 user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>
