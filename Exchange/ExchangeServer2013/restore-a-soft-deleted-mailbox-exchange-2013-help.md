@@ -43,7 +43,7 @@ To learn more about soft-deleted mailboxes and perform other related management 
 
   ```powershell
   $dbs = Get-MailboxDatabase
-  dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,DisconnectReason,DisconnectDate
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,DisconnectReason,DisconnectDate
   ```
 
   The soft-deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `SoftDeleted`. If the mailbox has been purged from the database, the command won't return any results.
@@ -84,7 +84,7 @@ This example restores Pilar Pinilla's soft-deleted archive mailbox, which is ide
 New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/New-MailboxRestoreRequest).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest).
 
 ## How do you know this worked?
 
@@ -94,6 +94,6 @@ For more information, see:
 
 - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-- [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxRestoreRequest)
+- [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequest)
 
-- [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxRestoreRequestStatistics)
+- [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequestStatistics)
