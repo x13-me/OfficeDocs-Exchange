@@ -127,7 +127,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
    - Mail that comes from Exchange Online and is destined for the internet is first sent to your on-premises servers, then comes back to Exchange Online, and is then delivered to the internet. Line 4 represents this path in the scenario 2 diagram.
 
-   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](https://technet.microsoft.com/library/da605a78-5429-4de8-8b04-bc4c45a41ba1.aspx).
+   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-options).
 
 You don't need connectors in the following scenarios unless one of your partners has special requirements, such as enforcing TLS with a bank.
 

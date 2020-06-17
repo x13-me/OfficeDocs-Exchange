@@ -28,7 +28,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 
 - Client Access services on Mailbox servers provide authentication and proxy services for internal and external client connections.
 
-- Outlook configures services with only the user name and password.
+- Outlook configures services with only the username and password.
 
 > [!NOTE]
 > If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
@@ -46,7 +46,7 @@ The SCP object is also created in Active Directory at the same time as the Autod
  You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](https://docs.microsoft.com/powershell/module/exchange/set-clientaccessservice).
 
 > [!IMPORTANT]
-> You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+> You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).
 
 Autodiscover makes it easy to retrieve the information that you need to connect to mailboxes on Exchange servers. SCP objects locate those Autodiscover servers or endpoints appropriate for the user you're retrieving settings for. And SCP objects in AD DS provide an easy way for domain-joined clients to look up Autodiscover servers.
 
@@ -175,7 +175,7 @@ Through the Autodiscover service, Outlook finds a new connection point made up o
 
 - Outlook Anywhere server settings
 
-You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain. In addition, you may need to set IIS Authentication Methods. You can learn more about that in [Setting Up Standard Authentication Methods for Outlook Web App](https://technet.microsoft.com/library/f4ae771b-de25-47e4-963f-4b1e43f8b3d4.aspx).
+You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain.
 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|

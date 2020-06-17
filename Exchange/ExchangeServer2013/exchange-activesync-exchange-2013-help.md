@@ -23,7 +23,7 @@ Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. Yo
 > This topic is for admins. Want to set up your Windows Phone, iOS, or Android device to access your Office 365 or Exchange Server mailbox? Check out the following topics.
 > <UL>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=615415">Set up email on Windows Phone</A></P>
+> <P><A href="https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417">Set up email on Windows Phone</A></P>
 > <LI>
 > <P><A href="https://go.microsoft.com/fwlink/p/?linkid=615414">Set up email on iPhone, iPad, or iPod Touch</A></P>
 > <LI>

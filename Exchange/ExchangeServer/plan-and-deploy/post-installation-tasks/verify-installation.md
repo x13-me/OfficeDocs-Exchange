@@ -26,7 +26,7 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exch
 
 ## Run Get-ExchangeServer
 
-To verify that Exchange installed successfully, run the following commands in the Exchange Management Shell. To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To verify that Exchange installed successfully, run the following commands in the Exchange Management Shell. To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 This command returns a summary list of the names, Active Directory sites, Exchange server roles, Exchange editions, and Exchange versions of all Exchange servers in the organization.
 

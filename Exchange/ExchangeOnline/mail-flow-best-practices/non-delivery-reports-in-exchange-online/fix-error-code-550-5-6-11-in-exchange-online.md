@@ -42,7 +42,7 @@ Office 365 used to remove bare line feeds from messages to enable delivery to ol
 
 If you received this NDR as a result of a message that you sent, you can try the following steps fix the problem:
 
-1. Send the message using a different email program that doesn't add bare line feeds to messages, such as [Outlook on the web](https://support.office.com/article/a096dc77-d053-4e04-864d-c278e5712ef9.aspx) (formerly known as Outlook Web App).
+1. Send the message using a different email program that doesn't add bare line feeds to messages, such as [Outlook on the web](https://support.microsoft.com/office/a096dc77-d053-4e04-864d-c278e5712ef9) (formerly known as Outlook Web App).
 
 2. If the original message contained an attachment, try sending the message without the attachment.
 
@@ -68,7 +68,7 @@ A _bare line feed_ is a single line feed character (LF or ASCII 10) that isn't i
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

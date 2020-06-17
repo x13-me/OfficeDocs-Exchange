@@ -27,7 +27,7 @@ Client Access Rules allow or block Exchange admin center (EAC) or remote PowerSh
 
 - Estimated time to complete each procedure: less than 5 minutes.
 
-- The procedures in this topic are only available in the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) or [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell).
+- The procedures in this topic are only available in the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) or [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md).
 
